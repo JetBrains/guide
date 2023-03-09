@@ -1,7 +1,7 @@
 schemaVersion: 2.2.0
 attributes:
   space:
-    instanceType: xlarge
+    instanceType: large
     editor:
       type: WebStorm
       vmoptions:
