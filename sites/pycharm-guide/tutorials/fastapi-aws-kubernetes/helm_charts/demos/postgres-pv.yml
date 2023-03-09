@@ -1,0 +1,10 @@
+local:
+  path: /run/desktop/mnt/host/e/postgres-data   # <-- if running with Docker desktop in windows
+nodeAffinity:
+  required:
+    nodeSelectorTerms:
+      - matchExpressions:
+          - key: kubernetes.io/hostname
+            operator: In
+            values:
+              - docker-desktop    # <-- name of the node (docker-desktop, eks, minikube) etc.

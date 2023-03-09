@@ -1,0 +1,68 @@
+
+{
+  "siteLogo": "jetbrains-simple.svg",
+  "siteTitle": "PyCharm Guide",
+  "siteDescription": "",
+  "siteUrl": "https://www.jetbrains.com/pycharm/guide",
+  "copyright": "Copyright © 2000–2022 <a href=\"https://www.jetbrains.com/\">JetBrains</a> s.r.o.",
+  "start": {
+    "items": [
+      {
+        "accent": "success",
+        "cssClass": "documentation",
+        "href": "/tips/",
+        "label": "Tips",
+        "icon": "fas fa-play-circle"
+      },
+      {
+        "accent": "info",
+        "cssClass": "documentation",
+        "href": "/tutorials/",
+        "label": "Tutorials",
+        "icon": "fas fa-tasks"
+      },
+      {
+        "accent": "warning",
+        "cssClass": "documentation",
+        "href": "/playlists/",
+        "label": "Playlists",
+        "icon": "fas fa-list"
+      },
+      {
+        "accent": "danger",
+        "cssClass": "documentation",
+        "href": "/technologies/",
+        "label": "Technologies",
+        "icon": "fas fa-project-diagram"
+      },
+      {
+        "accent": "danger",
+        "cssClass": "documentation",
+        "href": "/topics/",
+        "label": "Topics",
+        "icon": "fas fa-project-diagram"
+      }
+    ]
+  },
+  "end": {
+    "buttons": [
+      {
+        "accent": "light",
+        "href": "https://www.jetbrains.com/pycharm/download/",
+        "label": "Get PyCharm"
+      }
+    ],
+    "links": [
+      {
+        "color": "light",
+        "href": "https://github.com/jetbrains/jetbrains_guide",
+        "icon": "github"
+      },
+      {
+        "color": "55acee",
+        "href": "https://twitter.com/pycharm",
+        "icon": "twitter"
+      }
+    ]
+  }
+}
