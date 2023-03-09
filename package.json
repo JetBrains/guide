@@ -10,6 +10,7 @@
     "build:webstorm": "npm run clean && npm run test && cd sites/webstorm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js",
     "clean": "rimraf .11ty-vite sites/pycharm-guide/_site sites/pycharm-guide/.11ty-vite sites/webstorm-guide/_site",
     "test": "vitest run",
+    "optipng-windows": "FOR /F %I in ('dir /b/s *.png') do optipng %I",
     "COMMENT": "// TODO DO WE NEED THESE SCRIPTS BELOW?",
     "incremental": "node --require esbuild-register node_modules/@11ty/eleventy/cmd.js --incremental --serve --watch",
     "debug-start": "DEBUG=Eleventy* node --require esbuild-register node_modules/@11ty/eleventy/cmd.js --serve --watch",
