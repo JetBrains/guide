@@ -1,8 +1,6 @@
 ---
 eleventyExcludeFromCollections: true
 title: Technologies
-subtitle: All the info about technologies TODO
+subtitle: Jump to all available learning resources on specific technologies, such as libraries, languages, and frameworks.
 layout: "references/technology/TechnologiesLayout.11ty.tsx"
---- 
-
-We could have some content in here which becomes a customizable part of the body.
+---
