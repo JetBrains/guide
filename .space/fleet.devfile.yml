@@ -15,6 +15,8 @@ attributes:
         branchFilter:
           include:
             - 'refs/heads/main'
+      script: |
+        npm install
 components:
   - name: dev-container
     container:
