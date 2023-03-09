@@ -12,6 +12,7 @@ export const absolutifyPaths = (options: CustomPluginOptions = {}): Plugin => {
       // @ts-ignore
       let newHtml = html.replaceAll(anchor, (match, args) => {
         if (args.startsWith(prefix)) return;
+        if (args.startsWith("http://") || args.startsWith("https://")) return match;
         return match.replace("/", `${prefix}/`);
       });
       return newHtml;
