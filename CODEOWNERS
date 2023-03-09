@@ -32,6 +32,6 @@ CODEOWNERS "Project Admin"
 
 # Specific files and folders
 .space.kts "Maarten.Balliauw"
-src/* "Paul.Everitt" "Khalid.Abuhakmeh"
-public/* "Paul.Everitt" "Khalid.Abuhakmeh"
-_includes/* "Paul.Everitt" "Khalid.Abuhakmeh"
+src/* "Paul.Everitt" "KhalidAbuhakmeh"
+public/* "Paul.Everitt" "KhalidAbuhakmeh"
+_includes/* "Paul.Everitt" "KhalidAbuhakmeh"
