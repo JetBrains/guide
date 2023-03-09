@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2021",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "jsx": "react",                                      /* Specify what JSX code is generated. */
+    "jsxFactory": "h",                                   /* Specify the JSX factory function used when targeting React JSX emit, e.g. 'React.createElement' or 'h' */
+    "jsxFragmentFactory": "h.Fragment",
+    "module": "es2022",                                /* Specify what module code is generated. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+
+
+    "useDefineForClassFields": true,
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "Node",
+    "strict": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src",
+    "_includes",
+    "node_modules/vitest/globals.d.ts"
+  ]
+}
