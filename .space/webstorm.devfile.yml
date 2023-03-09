@@ -1,0 +1,27 @@
+schemaVersion: 2.2.0
+attributes:
+  space:
+    instanceType: xlarge
+    editor:
+      type: WebStorm
+      vmoptions:
+        - '-Xms2048m'
+        - '-Xmx4096m'
+    warmup:
+      startOn:
+      - type: schedule
+        cron: '0 20 * * *'
+      - type: gitPush
+        branchFilter:
+          include:
+            - 'refs/heads/main'
+components:
+  - name: dev-container
+    container:
+      image: registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-rd-ws:latest
+#components:
+#  - name: image-build
+#    image:
+#      imageName: guide-rd-ws:latest
+#      dockerfile:
+#        uri: .space/webstorm/Dockerfile

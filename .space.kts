@@ -6,6 +6,33 @@ job("Build WebStorm Guide") {
     runJobForSite("webstorm", "WebStorm Guide", "webstorm-guide")
 }
 
+job("Remote development images") {
+    startOn {
+        gitPush {
+            enabled = false // keep as manual build for now
+
+            branchFilter {
+                +"refs/heads/main"
+            }
+
+            pathFilter {
+                +".space/Dockerfile"
+            }
+        }
+    }
+
+    host {
+        dockerBuildPush {
+            context = "."
+            file = ".space/webstorm/Dockerfile"
+            labels["vendor"] = "JetBrains"
+            tags {
+                +"registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-rd-ws:latest"
+            }
+        }
+    }
+}
+
 fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory: String) {
     startOn {
         gitPush {
