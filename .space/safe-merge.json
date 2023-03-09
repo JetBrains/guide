@@ -1,0 +1,31 @@
+{
+    "version": "1.0",
+    "builds": [
+        {
+            "job": {
+                "name": "Build PyCharm Guide"
+            },
+            "changed-files": [
+                "/sites/webstorm-guide/**",
+                "/_includes/**",
+                "/src/**",
+                "/public/assets/**",
+                "/package.json",
+                "/package-lock.json"
+            ]
+        },
+        {
+            "job": {
+                "name": "Build WebStorm Guide"
+            },
+            "changed-files": [
+                "/sites/webstorm-guide/**",
+                "/_includes/**",
+                "/src/**",
+                "/public/assets/**",
+                "/package.json",
+                "/package-lock.json"
+            ]
+        }
+    ]
+}
