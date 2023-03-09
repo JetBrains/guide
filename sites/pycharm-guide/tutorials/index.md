@@ -1,8 +1,6 @@
 ---
 eleventyExcludeFromCollections: true
 title: Tutorials
-subtitle: All the info about tutorials TODO
+subtitle: Learn how to work with technologies using detailed, multi-step lessons accompanied by code samples, instructions, and videos.
 layout: "resources/tutorial/TutorialsLayout.11ty.tsx"
 ---
-
-We could have some content in here which becomes a customizable part of the body.
