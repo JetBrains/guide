@@ -46,29 +46,12 @@ export function BaseLayout(
           defer
           src="https://use.fontawesome.com/releases/v6.0.0-beta3/js/all.js"
         ></script>
-        <link
-          href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
-          rel="stylesheet"
-        />
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.21.2/video-js.min.css"
-          rel="stylesheet"
-        />
-        <script defer src="https://unpkg.com/lunr/lunr.js"></script>
         <script defer src="/assets/js/site.js" type="module"></script>
       </head>
       <body>
         <Navbar site={site}></Navbar>
         {children}
         <Footer copyright={copyright}></Footer>
-        <script
-          defer
-          src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.21.2/video.min.js"
-        />
-        <script
-          defer
-          src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.min.js"
-        />
       </body>
     </html>
   );
