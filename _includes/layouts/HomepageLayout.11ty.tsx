@@ -10,7 +10,7 @@ export function HomepageLayout(
   this: LayoutContext,
   data: HomepageLayoutData
 ): JSX.Element {
-  const splashStyle = "background: url('/assets/pycharm_splash.svg') center center; background-repeat: 'no-repeat'; background-size: 1500";
+  const splashStyle = `background: url("/assets/pycharm_splash.svg") center center; background-repeat: no-repeat; background-size: cover`;
   const tips = this.getResources("tip").slice(0, 10);
   const listing = (
     <>
@@ -22,7 +22,7 @@ export function HomepageLayout(
   return (
     <BaseLayout {...data}>
       <div className="content">
-        <section className="hero is-medium" style={splashStyle}>
+        <section className="hero is-medium" style={`${splashStyle}`}>
           <div className="hero-body">
             <div className="container">
               <h1 className="title">PyCharm Guide</h1>
