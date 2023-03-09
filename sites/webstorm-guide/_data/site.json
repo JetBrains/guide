@@ -1,7 +1,9 @@
 {
   "siteLogo": "jetbrains-simple.svg",
   "siteTitle": "WebStorm Guide",
-  "copyright": "Copyright © 2000–2022 <a href=\"https://www.jetbrains.com/\">JetBrains</a> s.r.o.",
+  "siteDescription": "",
+  "siteUrl": "https://www.jetbrains.com/webstorm/guide",
+  "copyright": "Copyright © 2000–2023 <a href=\"https://www.jetbrains.com/\">JetBrains</a> s.r.o.",
   "start": {
     "items": [
       {
