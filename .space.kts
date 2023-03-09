@@ -90,22 +90,24 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
 
         kotlinScript { api ->
             val gitBranch = api.gitBranch()
-            val cleanGitBranch = gitBranch.replace("refs/heads/", "").replace("/", "-")
-            val siteName = if (cleanGitBranch == "main") {
-                siteShortName
-            } else {
-                "$siteShortName-$cleanGitBranch"
-            }
+            if (gitBranch.startsWith("refs/heads/")) {
+                val cleanGitBranch = gitBranch.replace("refs/heads/", "").replace("/", "-")
+                val siteName = "preview-" + if (cleanGitBranch == "main") {
+                    siteShortName
+                } else {
+                    "$siteShortName-$cleanGitBranch"
+                }
 
-            api.space().experimentalApi.hosting.publishSite(
+                api.space().experimentalApi.hosting.publishSite(
                     siteSource = "_site",
                     siteName = siteName,
                     siteSettings = HostingSiteSettings(
-                            public = true,
-                            labels = listOf(siteShortName, cleanGitBranch),
-                            description = siteLongName
+                        public = true,
+                        labels = listOf(siteShortName, cleanGitBranch),
+                        description = siteLongName
                     )
-            )
+                )
+            }
         }
     }
 }
