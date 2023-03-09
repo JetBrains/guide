@@ -1,7 +1,7 @@
 import { Plugin } from "vite";
 import { CustomPluginOptions } from "rollup";
 
-const anchor = new RegExp('<[a|link][^>]+href="(.*?)"[^>]*>', "g");
+const anchor = new RegExp('<[a|link][^>]+(href="(?<href>.*?)")[^>]*>', "g");
 export const absolutifyPaths = (options: CustomPluginOptions = {}): Plugin => {
   const { prefix } = options;
   return {
@@ -10,10 +10,12 @@ export const absolutifyPaths = (options: CustomPluginOptions = {}): Plugin => {
     apply: "build",
     transformIndexHtml: (html) => {
       // @ts-ignore
-      let newHtml = html.replaceAll(anchor, (match, args) => {
-        if (args.startsWith(prefix)) return;
-        if (args.startsWith("http://") || args.startsWith("https://")) return match;
-        return match.replace("/", `${prefix}/`);
+      let newHtml = html.replaceAll(anchor, (match, href, args) => {
+        if (href.startsWith(prefix)) return match;
+        if (href.startsWith("http://") || args.startsWith("https://")) return match;
+
+        const absolutifiedHref = href.replace("/", `${prefix}/`);
+        return match.replace(href, absolutifiedHref);
       });
       return newHtml;
     },
