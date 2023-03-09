@@ -9,25 +9,40 @@ job("Build WebStorm Guide") {
 job("Remote development images") {
     startOn {
         gitPush {
-            enabled = false // keep as manual build for now
+            enabled = true
 
             branchFilter {
                 +"refs/heads/main"
             }
 
             pathFilter {
-                +".space/Dockerfile"
+                +".space/*.devfile.yml"
+                +".space/webstorm/Dockerfile"
+                +".space/fleet/Dockerfile"
             }
         }
     }
 
-    host {
-        dockerBuildPush {
-            context = "."
-            file = ".space/webstorm/Dockerfile"
-            labels["vendor"] = "JetBrains"
-            tags {
-                +"registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-rd-ws:latest"
+    parallel {
+        host {
+            dockerBuildPush {
+                context = "."
+                file = ".space/webstorm/Dockerfile"
+                labels["vendor"] = "JetBrains"
+                tags {
+                    +"registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-rd-ws:latest"
+                }
+            }
+        }
+
+        host {
+            dockerBuildPush {
+                context = "."
+                file = ".space/fleet/Dockerfile"
+                labels["vendor"] = "JetBrains"
+                tags {
+                    +"registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-rd-fleet:latest"
+                }
             }
         }
     }
