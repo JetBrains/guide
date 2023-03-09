@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Run all tests",
+            "type": "command",
+            "program": "npm",
+            "args": ["run", "test"]
+        },
+        {
+            "name": "Run PyCharm Guide",
+            "type": "command",
+            "program": "npm",
+            "args": ["run", "dev:pycharm"]
+        },
+        {
+            "name": "Run WebStorm Guide",
+            "type": "command",
+            "program": "npm",
+            "args": ["run", "dev:webstorm"]
+        }
+    ]
+}
