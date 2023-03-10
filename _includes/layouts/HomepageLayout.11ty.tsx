@@ -22,7 +22,7 @@ export function HomepageLayout(
   return (
     <BaseLayout {...data}>
       <div className="content">
-        <section className="hero is-medium" style={`${splashStyle}`}>
+        <section className="hero is-medium" style={splashStyle}>
           <div className="hero-body">
             <div className="container">
               <h1 className="title">PyCharm Guide</h1>
