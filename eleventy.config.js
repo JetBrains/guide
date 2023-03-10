@@ -6,6 +6,7 @@ const { resolve } = require("path");
 const commandLineArgs = require("command-line-args");
 const { ViteImageOptimizer } = require("vite-plugin-image-optimizer");
 const { absolutifyPaths } = require("./src/absolutifyPaths");
+const purgeCss = require("@fullhuman/postcss-purgecss")
 
 const options = commandLineArgs([
   { name: "config", type: String },
@@ -36,11 +37,25 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(EleventyVitePlugin, {
     viteOptions: {
+      css: {
+        postcss : {
+          plugins: [
+            purgeCss({
+              content: [
+                // for development
+                './_site/**/*.html',
+                // for production builds
+                './.11ty-vite/**/*.html'
+              ]
+            })
+          ]
+        }
+      },
       plugins: [
         // ViteImageOptimizer(),
         absolutifyPaths({
           prefix: options.pathprefix,
-        }),
+        })
       ],
       base: options.pathprefix,
       assetsInclude: ["**/demos/**"],
