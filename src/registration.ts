@@ -61,8 +61,6 @@ export async function resolveAllCollections({
         all: [],
     };
 
-    const allResources: ResourceCollection = new Map();
-    const allReferences: ReferenceCollection = new Map();
 
     for (const {data, page} of allCollectionItems) {
         const resourceType = getResourceType(data, page);
@@ -71,13 +69,13 @@ export async function resolveAllCollections({
                 const resourceClass = resourceCollections[resourceType];
                 // @ts-ignore
                 const resource = await new resourceClass({data, page}).init();
-                allResources.set(page.url, resource);
+                allCollections.allResources.set(page.url, resource);
             } else if (referenceCollections[data.resourceType]) {
                 const referenceClass = referenceCollections[resourceType];
                 // @ts-ignore
                 const reference = await new referenceClass({data, page}).init();
                 const resolvedLabel = `${referenceClass.joinKey}:${reference.label}`;
-                allReferences.set(resolvedLabel, reference);
+                allCollections.allReferences.set(resolvedLabel, reference);
             } else {
                 console.warn(`Unregistered resource type: ${resourceType}`);
             }
@@ -87,12 +85,10 @@ export async function resolveAllCollections({
         }
     }
 
-    allCollections.allResources = allResources;
-    allCollections.allReferences = allReferences;
     allCollections.all = [];
 
     // With this in place, we can de-reference resources.
-    Array.from(allResources.values()).map((resource) =>
+    Array.from(allCollections.allResources.values()).map((resource) =>
         resource.resolve(allCollections)
     );
 
