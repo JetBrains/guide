@@ -48,7 +48,8 @@
     "video.js": "^7.21.3",
     "videojs-youtube": "^2.6.1",
     "lunr" : "^2.3.9",
-    "prism-themes": "^1.9.0"
+    "prism-themes": "^1.9.0",
+    "@fullhuman/postcss-purgecss": "^5.0.0"
   },
   "volta": {
     "node": "19.6.0"
