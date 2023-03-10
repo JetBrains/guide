@@ -14,14 +14,11 @@ export function BaseLayout(
   this: LayoutContext,
   data: BaseLayoutProps
 ): JSX.Element {
-  const { children, site } = data;
+  // @ts-ignore
+  const { children, subtitle, site, longVideo, shortVideo } = data;
   const { siteTitle, copyright } = site;
-  // @ts-ignore
-  const { longVideo, shortVideo } = data;
 
-  // @ts-ignore
-  const { subtitle } = data;
-  return (
+  return "<!doctype html>" + (
     <html lang="en">
       <head>
         <meta charset="utf-8" />
