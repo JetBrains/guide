@@ -10,7 +10,7 @@ export function HomepageLayout(
   this: LayoutContext,
   data: HomepageLayoutData
 ): JSX.Element {
-  const splashStyle = `background: url("/assets/pycharm_splash.svg") center center; background-repeat: no-repeat; background-size: cover`;
+  const splashStyle = `background: url('/assets/pycharm_splash.svg') center center; background-repeat: no-repeat; background-size: cover`;
   const tips = this.getResources("tip").slice(0, 10);
   const listing = (
     <>
