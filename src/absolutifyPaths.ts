@@ -11,11 +11,15 @@ export const absolutifyPaths = (options: CustomPluginOptions = {}): Plugin => {
     transformIndexHtml: (html) => {
       // @ts-ignore
       let newHtml = html.replaceAll(anchor, (match, href) => {
+        // already good
         if (href.startsWith(prefix)) return match;
+        // absolute urls
         if (href.startsWith("http://") || href.startsWith("https://")) return match;
+        // relative paths
+        if (href.startsWith('.')) return match;
 
-        const absolutifiedHref = href.replace("/", `${prefix}/`);
-        return match.replace(href, absolutifiedHref);
+        const updatedHref = href.replace("/", `${prefix}/`);
+        return match.replace(href, updatedHref);
       });
       return newHtml;
     },
