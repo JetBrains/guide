@@ -17,6 +17,9 @@ export function BaseLayout(
   const { children, site } = data;
   const { siteTitle, copyright } = site;
   // @ts-ignore
+  const { longVideo, shortVideo } = data;
+
+  // @ts-ignore
   const { subtitle } = data;
   return (
     <html lang="en">
@@ -42,11 +45,10 @@ export function BaseLayout(
         <meta property="og:image:alt" content="" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@jetbrains" />
-        <script
-          defer
-          src="https://use.fontawesome.com/releases/v6.0.0-beta3/js/all.js"
-        ></script>
         <script defer src="/assets/js/site.js" type="module"></script>
+        {(longVideo || shortVideo) &&
+        <script defer src="/assets/js/video.js" type="module"></script>}
+        <script defer src="https://use.fontawesome.com/releases/v6.0.0-beta3/js/all.js"></script>
       </head>
       <body>
         <Navbar site={site}></Navbar>
