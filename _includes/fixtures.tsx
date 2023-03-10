@@ -368,7 +368,7 @@ export const tutorialFrontmatters: TutorialFrontmatter[] = [
     title: "Another Tutorial",
     resourceType: "tutorial",
     author: "sa",
-    date,
+    date: laterDate,
     thumbnail: "thumbnail.png",
     tutorialItems: [],
   },

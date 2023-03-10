@@ -21,5 +21,5 @@ test("should render AuthorLayout", () => {
     name: "Resource",
   });
   expect(links.length).to.equal(8);
-  expect(links[0].href).to.equal("/tips/some-tip/");
+  expect(links[5].href).to.equal("/tutorials/some-tutorial/third-tutorialstep/");
 });

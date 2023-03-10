@@ -9,7 +9,7 @@ import { Technology } from "../references/technology/TechnologyModels";
 import { Topic } from "../references/topic/TopicModels";
 import { References } from "../../src/ReferenceModels";
 
-const tip = Array.from(fixtures.resolvedCollections.allResources.values())[0];
+const tip = Array.from(fixtures.resolvedCollections.allResources.values())[2];
 const references = tip.references as References;
 export const tipSidebarProps: TipSidebarProps = {
   displayDate: tip.displayDate,
@@ -32,8 +32,8 @@ test("TipSidebar", () => {
   expect(screen.getByText("Some Author")).to.exist;
 
   // Technologies, Products, Topics
-  // expect(screen.getByText(fixtures.technologies[0].title)).to.exist;
-  expect(screen.getByText(fixtures.products[0].title)).to.exist;
+  expect(screen.getByText(fixtures.technologies[0].title)).to.exist;
+  // expect(screen.getByText(fixtures.products[1].title)).to.exist;
   // expect(screen.getByText(fixtures.topics[0].title)).to.exist;
 
   // Doclinks

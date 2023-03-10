@@ -61,6 +61,9 @@ export async function resolveAllCollections({
         all: [],
     };
 
+    // Keep an intermediate resource array that we can then sort
+    // before making the ordered map.
+    const intermediateResources: Resource[] = [];
 
     for (const {data, page} of allCollectionItems) {
         const resourceType = getResourceType(data, page);
@@ -69,7 +72,7 @@ export async function resolveAllCollections({
                 const resourceClass = resourceCollections[resourceType];
                 // @ts-ignore
                 const resource = await new resourceClass({data, page}).init();
-                allCollections.allResources.set(page.url, resource);
+                intermediateResources.push(resource);
             } else if (referenceCollections[data.resourceType]) {
                 const referenceClass = referenceCollections[resourceType];
                 // @ts-ignore
@@ -84,6 +87,10 @@ export async function resolveAllCollections({
             throw err;
         }
     }
+
+    // Sort the resources then assign to the map
+    intermediateResources.sort((a: any, b: any) => b.date - a.date);
+    intermediateResources.forEach(resource => allCollections.allResources.set(resource.url, resource))
 
     allCollections.all = [];
 
