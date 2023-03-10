@@ -38,6 +38,7 @@ import {
  */
 const content = `<p>Hello <em id="world">world</em>.</p>`;
 const date = new Date(Date.UTC(2023, 1, 11));
+const laterDate = new Date(Date.UTC(2023, 1, 22));
 
 const children: string[] = [
   h("", {
@@ -58,7 +59,7 @@ const tipFrontmatters: TipFrontmatter[] = [
   },
   {
     title: "Another Tip",
-    date,
+    date: laterDate,
     resourceType: "tip",
     author: "aa",
     technologies: ["st", "at"],
@@ -367,7 +368,7 @@ export const tutorialFrontmatters: TutorialFrontmatter[] = [
     title: "Another Tutorial",
     resourceType: "tutorial",
     author: "sa",
-    date,
+    date: laterDate,
     thumbnail: "thumbnail.png",
     tutorialItems: [],
   },

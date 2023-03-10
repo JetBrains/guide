@@ -19,5 +19,5 @@ test("should render TopicLayout", () => {
     name: "Resource",
   });
   expect(links.length).to.equal(2);
-  expect(links[0].href).to.equal("/tips/some-tip/");
+  expect(links[1].href).to.equal("/tips/some-tip/");
 });

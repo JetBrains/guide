@@ -23,5 +23,5 @@ test("should render TipsLayout", () => {
   const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
     name: "Resource",
   });
-  expect(links[0].href).to.equal("/tips/some-tip/");
+  expect(links[6].href).to.equal("/tutorials/some-tutorial/third-tutorialstep/");
 });
