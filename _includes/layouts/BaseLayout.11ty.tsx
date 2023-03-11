@@ -3,6 +3,8 @@ import h, {JSX} from "vhtml";
 import Navbar from "../navbar/Navbar.11ty";
 import Footer from "../footer/Footer.11ty";
 import {LayoutContext, LayoutProps} from "../../src/models";
+import { MetaOpenGraphImage } from "../../src/plugins/metaOpenGraphImagePlugin";
+import { Resource } from "../../src/ResourceModels";
 
 export type BaseLayoutProps = {
     children: string[];
@@ -15,8 +17,15 @@ export function BaseLayout(
     data: BaseLayoutProps
 ): JSX.Element {
     // @ts-ignore
-    const {children, subtitle, site, longVideo, shortVideo} = data;
-    const {siteTitle, copyright} = site;
+    const {children, title, subtitle, site, longVideo, shortVideo, resourceType, collections} = data;
+    const {siteTitle, copyright, siteUrl } = site;
+
+    // determine if there's an og:image
+    let cardThumbnail;
+    if (resourceType) {
+        const resource = collections.allResources.get(data.page.url) as Resource;
+        cardThumbnail = resource?.cardThumbnail;
+    }
 
     return "<!doctype html>" + (
         <html lang="en">
@@ -29,17 +38,13 @@ export function BaseLayout(
             <link rel="stylesheet" href="/assets/guide.css"/>
             <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
             <link rel="shortcut icon" href="/assets/favicon.ico"/>
-            <meta property="og:title" content={data.title}/>
+            <meta property="og:title" content={title}/>
             <meta property="og:description" content={subtitle}/>
-            {/*<meta*/}
-            {/*  property="og:image"*/}
-            {/*  content={`${siteUrl}__VITE_ASSET__6d742142__`}*/}
-            {/*/>*/}
             <meta property="og:type" content="article"/>
             <meta property="article:published_time" content="2023-02-17"/>
             <meta property="article:author" content=""/>
             <meta property="article:section" content=""/>
-            <meta property="og:image:alt" content=""/>
+            {cardThumbnail && <meta property="og:image:alt" content={title} /> }
             <meta name="twitter:card" content="summary"/>
             <meta name="twitter:site" content="@jetbrains"/>
             <script defer src="/assets/js/site.js" type="module"></script>
@@ -57,6 +62,7 @@ export function BaseLayout(
         <Navbar site={site}></Navbar>
         {children}
         <Footer copyright={copyright}></Footer>
+        {cardThumbnail && <MetaOpenGraphImage siteUrl={siteUrl} src={cardThumbnail} />}
         </body>
         </html>
     );

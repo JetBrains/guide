@@ -103,7 +103,6 @@ export function PlaylistLayout(
       sidebar={[sidebar]}
       {...data}
     >
-      <img data-meta={data.site.siteUrl} src={playlist.cardThumbnail} style="display:none" />
       <main>{main}</main>
     </SidebarLayout>
   );
