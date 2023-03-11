@@ -1,11 +1,12 @@
 import { Plugin } from "vite";
 import { CustomPluginOptions } from "rollup";
 
-const anchor = new RegExp('<[a|link][^>]+href="(?<href>.*?)"[^>]*>', "g");
-export const absolutifyPaths = (options: CustomPluginOptions = {}): Plugin => {
+export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {
+  const anchor = new RegExp("<[a|link][^>]+href=\"(?<href>.*?)\"[^>]*>", "g");
   const { prefix } = options;
+
   return {
-    name: "absolutify-paths",
+    name: "absolute-paths",
     enforce: "post",
     apply: "build",
     transformIndexHtml: (html) => {
@@ -16,12 +17,13 @@ export const absolutifyPaths = (options: CustomPluginOptions = {}): Plugin => {
         // absolute urls
         if (href.startsWith("http://") || href.startsWith("https://")) return match;
         // relative paths
-        if (href.startsWith('.')) return match;
+        if (href.startsWith(".")) return match;
 
         const updatedHref = href.replace("/", `${prefix}/`);
         return match.replace(href, updatedHref);
       });
       return newHtml;
-    },
+    }
   };
 };
+

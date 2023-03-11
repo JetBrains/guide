@@ -5,7 +5,8 @@ const { registerIncludes } = require("./_includes/config");
 const { resolve } = require("path");
 const commandLineArgs = require("command-line-args");
 const { ViteImageOptimizer } = require("vite-plugin-image-optimizer");
-const { absolutifyPaths } = require("./src/absolutifyPaths");
+const { absolutePaths } = require("./src/plugins/absolutePaths");
+const { metaOpenGraphImageTag } = require("./src/plugins/metaOpenGraphImageTag");
 const purgeCss = require("@fullhuman/postcss-purgecss")
 
 const options = commandLineArgs([
@@ -53,9 +54,10 @@ module.exports = function (eleventyConfig) {
       },
       plugins: [
         // ViteImageOptimizer(),
-        absolutifyPaths({
+        absolutePaths({
           prefix: options.pathprefix,
-        })
+        }),
+        metaOpenGraphImageTag()
       ],
       base: options.pathprefix,
       assetsInclude: ["**/demos/**"],

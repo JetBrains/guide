@@ -95,6 +95,7 @@ export function PlaylistLayout(
     </Sidebar>
   );
 
+  // data-meta will be processed out
   return (
     <SidebarLayout
       pageTitle={playlist.title}
@@ -102,6 +103,7 @@ export function PlaylistLayout(
       sidebar={[sidebar]}
       {...data}
     >
+      <img data-meta={data.site.siteUrl} src={playlist.cardThumbnail} style="display:none" />
       <main>{main}</main>
     </SidebarLayout>
   );

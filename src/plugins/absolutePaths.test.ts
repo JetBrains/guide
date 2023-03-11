@@ -1,8 +1,8 @@
 import {expect, test} from "vitest";
-import {absolutifyPaths} from "./absolutifyPaths";
+import {absolutePaths} from "./absolutePaths";
 
 const transform = function (html: string) : string {
-  const plugin = absolutifyPaths({
+  const plugin = absolutePaths({
     prefix: "/pycharm/guide"
   });
   // @ts-ignore
@@ -10,9 +10,9 @@ const transform = function (html: string) : string {
 }
 
 test("replaces a root path in anchor", () => {
-  const content = `<a href="/">test</a>`;
+  const content = `<a href="/public">test</a>`;
   const actual = transform(content);
-  expect(actual).to.equal(`<a href="/pycharm/guide/">test</a>`);
+  expect(actual).to.equal(`<a href="/pycharm/guide/public">test</a>`);
 });
 
 test("replaces a root path in anchor", () => {
@@ -38,3 +38,4 @@ test("ignores relative paths", () => {
   const actual = transform(content);
   expect(actual).to.equal(content);
 })
+

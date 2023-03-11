@@ -54,6 +54,7 @@ export const ResourceFrontmatter = Type.Intersect([
     subtitle: Type.Optional(Type.String()),
     technologies: Type.Optional(Type.Array(Type.String())),
     thumbnail: Type.String(),
+    cardThumbnail: Type.Optional(Type.String()),
     topics: Type.Optional(Type.Array(Type.String())),
   }),
 ]);
@@ -68,6 +69,7 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
   subtitle?: string;
   technologies?: string[];
   thumbnail: string;
+  cardThumbnail?: string;
   topics?: string[];
   references?: References;
   static frontmatterSchema = ResourceFrontmatter;
@@ -92,6 +94,10 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
     this.technologies = data.technologies;
     this.thumbnail = path.join(page.url, data.thumbnail);
     this.topics = data.topics;
+
+    if (data.cardThumbnail) {
+      this.cardThumbnail = path.join(page.url, data.cardThumbnail);
+    }
   }
 
   async init(): Promise<this> {
