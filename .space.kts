@@ -78,7 +78,6 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
                 mkdir -p /mnt/space/share/_site/$siteShortName
                 cp -r sites/$siteDirectory/_site/ /mnt/space/share/_site/$siteShortName
                 mv /mnt/space/share/_site/$siteShortName/_site /mnt/space/share/_site/$siteShortName/guide
-                echo "<html><body><a href=\"/$siteShortName/guide\">$siteLongName</a></body></html>" /mnt/space/share/_site/index.html
             """.trimIndent()
         }
     }
@@ -98,6 +97,9 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
                 } else {
                     "$siteShortName-$cleanGitBranch"
                 }
+
+                File("/mnt/space/share/_site/index.html")
+                	.writeText("<html><body><a href=\"/$siteShortName/guide\">$siteLongName</a></body></html>")
 
                 api.space().experimentalApi.hosting.publishSite(
                     siteSource = "_site",
