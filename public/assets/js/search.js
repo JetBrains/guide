@@ -8,6 +8,14 @@ let lunrIndex;
 let documents;
 
 if (searchButton) {
+
+  document.addEventListener("click", function(event) {
+    // If user clicks inside the element, do nothing
+    if (event.target.closest(`#${searchDropdown.id}`)) return
+    // If user clicks outside the element, hide it!
+    searchDropdown.classList.remove("is-active");
+  })
+
   searchButton.addEventListener("click", async () => {
 
     if (searchDropdown) {
@@ -41,6 +49,12 @@ if (searchButton) {
 if (searchInput) {
   searchInput.addEventListener("keyup", (evt) => {
     let query = searchInput.value;
+
+    if (evt.key === "Escape") {
+      searchDropdown.classList.remove("is-active");
+      return;
+    }
+
     let results = findSearchResults(query);
     searchResults.innerHTML = "";
     searchResults.innerHTML = results;
@@ -77,3 +91,14 @@ function findSearchResults(query) {
 
   return `<div class="panel-block">${description}</div>\n${list.join("")}`;
 }
+
+if (!Element.prototype.matches) Element.prototype.matches = Element.prototype.msMatchesSelector;
+if (!Element.prototype.closest) Element.prototype.closest = function (selector) {
+  let el = this;
+  while (el) {
+    if (el.matches(selector)) {
+      return el;
+    }
+    el = el.parentElement;
+  }
+};
