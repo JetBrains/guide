@@ -33,6 +33,7 @@ module.exports = function (eleventyConfig) {
     .then((r) => {})
     .catch((e) => console.log(e));
 
+  eleventyConfig.addGlobalData("commandLineArgs", options);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
 

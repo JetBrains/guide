@@ -1,13 +1,15 @@
 import { LayoutContext, LayoutProps } from "../src/models";
+import path from "upath";
 
 export function LunrLayout(this: LayoutContext, data: LayoutProps): string {
-  const { collections } = data;
+  const { collections, commandLineArgs } = data;
+  const { pathprefix } = commandLineArgs;
 
   const results = Array.from(collections.allResources.values()).map((value) => {
     return {
       title: value.title,
       subtitle: value.subtitle,
-      url: value.url,
+      url: pathprefix ? path.join(pathprefix, value.url) : value.url
     };
   });
 
