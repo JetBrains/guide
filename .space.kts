@@ -6,6 +6,33 @@ job("Build WebStorm Guide") {
     compileAndDeployToSpace("webstorm", "WebStorm Guide", "webstorm-guide")
 }
 
+job("Cleanup obsolete Space Hosting") {
+    startOn {
+        gitPush { enabled = false }
+        gitBranchDeleted { enabled = true }
+        codeReviewClosed { enabled = true }
+    }
+
+    container(image = "amazoncorretto:17", displayName = "Remove site") {
+        resources {
+            cpu = 2.cpu
+            memory = 8.gb
+        }
+
+        kotlinScript { api ->
+            val gitBranch = api.gitBranch()
+            if (gitBranch.startsWith("refs/heads/") && !gitBranch.startsWith("refs/heads/main")) {
+                val cleanGitBranch = gitBranch.replace("refs/heads/", "").replace("/", "-")
+                val siteName = "preview-$siteShortName-$cleanGitBranch"
+
+                api.space().experimentalApi.hosting.deleteSite(
+                    siteName = siteName
+                )
+            }
+        }
+    }
+}
+
 job("Remote development images") {
     startOn {
         gitPush {
