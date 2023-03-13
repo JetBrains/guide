@@ -2,7 +2,6 @@ const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { registerIncludes } = require("./_includes/config");
-const { resolve } = require("path");
 const commandLineArgs = require("command-line-args");
 const { ViteImageOptimizer } = require("vite-plugin-image-optimizer");
 const { absolutePaths } = require("./src/plugins/absolutePaths");
