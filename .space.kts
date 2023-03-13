@@ -98,7 +98,7 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
                     "$siteShortName-$cleanGitBranch"
                 }
 
-                File("/mnt/space/share/_site/index.html")
+                java.io.File("/mnt/space/share/_site/index.html")
                 	.writeText("<html><body><a href=\"/$siteShortName/guide\">$siteLongName</a></body></html>")
 
                 api.space().experimentalApi.hosting.publishSite(
