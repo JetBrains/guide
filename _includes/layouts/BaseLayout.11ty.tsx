@@ -19,6 +19,8 @@ export function BaseLayout(
     // @ts-ignore
     const {children, title, subtitle, site, longVideo, shortVideo, resourceType, collections} = data;
     const {siteTitle, copyright, siteUrl } = site;
+    // TODO This is a hack. Bake it into the contract.
+    const hasVideo = (longVideo || shortVideo) || resourceType == "playlist";
 
     // determine if there's an og:image
     let cardThumbnail;
@@ -48,7 +50,7 @@ export function BaseLayout(
             <meta name="twitter:card" content="summary"/>
             <meta name="twitter:site" content="@jetbrains"/>
             <script defer src="/assets/js/site.js" type="module"></script>
-            {(longVideo || shortVideo) &&
+            {hasVideo &&
                 <>
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.21.2/video-js.min.css"
                           rel="stylesheet"/>

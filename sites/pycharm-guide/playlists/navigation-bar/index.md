@@ -8,6 +8,7 @@ author: pwe
 subtitle: Move around files with keyboard, without wasting screen UI space
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
+longVideo: true
 playlistItems:
     - /tips/navbar-activate/
     - /tips/navbar-navigate-files/

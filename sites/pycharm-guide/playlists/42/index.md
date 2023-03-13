@@ -8,6 +8,7 @@ author: pwe
 subtitle: Become an IDE champ with these bite-sized tips and tricks.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
+longVideo: true
 playlistItems:
     - /tips/find-action/
     - /tips/reduce-clutter/
