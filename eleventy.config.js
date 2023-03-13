@@ -11,6 +11,7 @@ const purgeCss = require("@fullhuman/postcss-purgecss")
 
 const options = commandLineArgs([
   { name: "config", type: String },
+  { name: "incremental", type: Boolean, defaultOption: false },
   { name: "pathprefix", type: String, defaultOption: "/" },
   { name: "serve", type: Boolean, defaultOption: false },
   { name: "watch", type: Boolean, defaultOption: false },
@@ -24,9 +25,7 @@ module.exports = function (eleventyConfig) {
     { "../../public/assets": "assets" },
     { overwrite: true }
   );
-  eleventyConfig.addWatchTarget("../../public/assets");
-  eleventyConfig.addWatchTarget("../../_includes");
-  eleventyConfig.ignores.add("**/_site/**");
+
   eleventyConfig.ignores.add("**/demos/**");
 
   registerIncludes({ eleventyConfig })
@@ -39,6 +38,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(EleventyVitePlugin, {
     viteOptions: {
+      clearScreen: true,
+      appType: "mpa",
       css: {
         postcss : {
           plugins: [
@@ -88,7 +89,7 @@ module.exports = function (eleventyConfig) {
       input: "./",
       includes: "../../_includes",
       layouts: "../../_includes",
-      output: "./_site",
+      output: "./_site"
     },
   };
 };
