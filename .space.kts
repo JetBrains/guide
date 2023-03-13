@@ -1,9 +1,9 @@
 job("Build PyCharm Guide") {
-    runJobForSite("pycharm", "PyCharm Guide", "pycharm-guide")
+    compileAndDeployToSpace("pycharm", "PyCharm Guide", "pycharm-guide")
 }
 
 job("Build WebStorm Guide") {
-    runJobForSite("webstorm", "WebStorm Guide", "webstorm-guide")
+    compileAndDeployToSpace("webstorm", "WebStorm Guide", "webstorm-guide")
 }
 
 job("Remote development images") {
@@ -48,7 +48,7 @@ job("Remote development images") {
     }
 }
 
-fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory: String) {
+fun Job.compileAndDeployToSpace(siteShortName: String, siteLongName: String, siteDirectory: String) {
     startOn {
         gitPush {
             pathFilter {
