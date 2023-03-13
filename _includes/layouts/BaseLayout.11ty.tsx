@@ -3,8 +3,8 @@ import h, {JSX} from "vhtml";
 import Navbar from "../navbar/Navbar.11ty";
 import Footer from "../footer/Footer.11ty";
 import {LayoutContext, LayoutProps} from "../../src/models";
-import { MetaOpenGraphImage } from "../../src/plugins/metaOpenGraphImagePlugin";
-import { Resource } from "../../src/ResourceModels";
+import {MetaOpenGraphImage} from "../../src/plugins/metaOpenGraphImagePlugin";
+import {Resource} from "../../src/ResourceModels";
 
 export type BaseLayoutProps = {
     children: string[];
@@ -18,7 +18,7 @@ export function BaseLayout(
 ): JSX.Element {
     // @ts-ignore
     const {children, title, subtitle, site, longVideo, shortVideo, resourceType, collections} = data;
-    const {siteTitle, copyright, siteUrl } = site;
+    const {siteTitle, copyright, siteUrl} = site;
 
     // determine if there's an og:image
     let cardThumbnail;
@@ -38,13 +38,16 @@ export function BaseLayout(
             <link rel="stylesheet" href="/assets/guide.css"/>
             <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
             <link rel="shortcut icon" href="/assets/favicon.ico"/>
+            <link rel="alternate" type="application/rss+xml"
+                  title={`${title} RSS Feed`}
+                  href="/rss.xml"/>
             <meta property="og:title" content={title}/>
             <meta property="og:description" content={subtitle}/>
             <meta property="og:type" content="article"/>
             <meta property="article:published_time" content="2023-02-17"/>
             <meta property="article:author" content=""/>
             <meta property="article:section" content=""/>
-            {cardThumbnail && <meta property="og:image:alt" content={title} /> }
+            {cardThumbnail && <meta property="og:image:alt" content={title}/>}
             <meta name="twitter:card" content="summary"/>
             <meta name="twitter:site" content="@jetbrains"/>
             <script defer src="/assets/js/site.js" type="module"></script>
@@ -62,7 +65,7 @@ export function BaseLayout(
         <Navbar site={site}></Navbar>
         {children}
         <Footer copyright={copyright}></Footer>
-        {cardThumbnail && <MetaOpenGraphImage siteUrl={siteUrl} src={cardThumbnail} />}
+        {cardThumbnail && <MetaOpenGraphImage siteUrl={siteUrl} src={cardThumbnail}/>}
         </body>
         </html>
     );
