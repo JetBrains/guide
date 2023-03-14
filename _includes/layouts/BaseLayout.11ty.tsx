@@ -40,6 +40,7 @@ export function BaseLayout(
             <link rel="stylesheet" href="/assets/guide.css"/>
             <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
             <link rel="shortcut icon" href="/assets/favicon.ico"/>
+            <link rel="alternate" type="application/rss+xml" title={`${title} RSS Feed`} href="/rss.xml"/>
             <meta property="og:title" content={title}/>
             <meta property="og:description" content={subtitle}/>
             <meta property="og:type" content="article"/>
