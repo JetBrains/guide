@@ -56,7 +56,6 @@ export function BaseLayout(
                     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.min.js"/>
                 </>
             }
-            <script defer src="https://use.fontawesome.com/releases/v6.0.0-beta3/js/all.js"></script>
         </head>
         <body>
         <Navbar site={site}></Navbar>
