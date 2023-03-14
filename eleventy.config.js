@@ -36,6 +36,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addPlugin(EleventyVitePlugin, {
+    assetsInclude: ['**/rss.xml'],
     viteOptions: {
       clearScreen: true,
       appType: "mpa",
