@@ -1,8 +1,9 @@
 import { Plugin } from "vite";
 import { CustomPluginOptions } from "rollup";
+import { parse } from "node-html-parser";
+import path from "upath";
 
 export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {
-  const anchor = new RegExp("<[a|link][^>]+href=\"(?<href>.*?)\"[^>]*>", "g");
   const { prefix } = options;
 
   return {
@@ -10,19 +11,29 @@ export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {
     enforce: "post",
     apply: "build",
     transformIndexHtml: (html) => {
-      // @ts-ignore
-      let newHtml = html.replaceAll(anchor, (match, href) => {
-        // already good
-        if (href.startsWith(prefix)) return match;
-        // absolute urls
-        if (href.startsWith("http://") || href.startsWith("https://")) return match;
-        // relative paths
-        if (href.startsWith(".")) return match;
+      const doc = parse(html);
 
-        const updatedHref = href.replace("/", `${prefix}/`);
-        return match.replace(href, updatedHref);
+      // @ts-ignore
+      const anchors = doc.getElementsByTagName("a");
+      const links = doc.getElementsByTagName("link");
+
+      const targets = anchors.concat(links);
+
+      targets.forEach((element) => {
+        const href = element.attrs["href"];
+        // already good
+        if (href.startsWith(prefix)) return;
+        // absolute urls
+        if (href.startsWith("http://") || href.startsWith("https://")) return;
+        // relative paths
+        if (href.startsWith(".")) return;
+        // anchor link
+        if (href.startsWith("#")) return;
+
+        element.setAttribute("href", path.join(prefix, href));
       });
-      return newHtml;
+
+      return doc.toString();
     }
   };
 };

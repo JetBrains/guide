@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev:pycharm": "cd sites/pycharm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --serve --watch",
+    "dev:pycharm": "cd sites/pycharm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --incremental --config=../../eleventy.config.js --serve --watch",
     "build:pycharm": "npm run clean && npm run test && cd sites/pycharm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --pathprefix=/pycharm/guide",
     "dev:webstorm": "cd sites/webstorm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --serve --watch",
     "build:webstorm": "npm run clean && npm run test && cd sites/webstorm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --pathprefix=/webstorm/guide",
@@ -47,7 +47,9 @@
     "vite-plugin-image-optimizer": "^1.1.0",
     "lunr" : "^2.3.9",
     "prism-themes": "^1.9.0",
-    "@fullhuman/postcss-purgecss": "^5.0.0"
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "node-html-parser": "^6.1.5",
+    "@fortawesome/fontawesome-free": "^6.3.0"
   },
   "volta": {
     "node": "19.6.0"

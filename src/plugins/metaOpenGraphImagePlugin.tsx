@@ -1,30 +1,30 @@
 // @ts-ignore
 import h, {JSX} from "vhtml";
 import { Plugin } from "vite";
+import { parse} from "node-html-parser"
 
 export const metaOpenGraphImagePlugin = (): Plugin => {
-  const img = new RegExp(/<img[^>].*data-meta="(?<siteUrl>[^"]+)".*src="(?<src>[^"]+)"[^>]*>/);
-
   return {
     name: "meta-open-graph-image",
     enforce: "post",
     apply: "build",
     transformIndexHtml: (html) => {
-      const images = html.match(img);
-      if (images && images.groups) {
-        const original = images[0];
-        const siteUrl = images[1]
-        const src = images[2];
-        return html
-          .replace(original, "")
-          .replace(
-            `<head>`,
-            `<head><meta property="og:image" content="${siteUrl}${src}">`
-          );
-        return html;
-      } else {
-        return html;
+      const doc = parse(html);
+      const image = doc.querySelector("img[data-meta]");
+
+      if (image) {
+        const head = doc.getElementsByTagName("head")[0];
+        const siteUrl = image.attrs["data-meta"]
+        const src = image.attrs["src"];
+        const meta = parse(`<meta property="og:image" content="${siteUrl}${src}">`);
+        head.appendChild(meta);
+        image.remove()
+
+        return doc.toString()
       }
+
+      return html;
+
     }
   };
 };
@@ -45,7 +45,7 @@ export function MetaOpenGraphImage({siteUrl, src} : MetaOpenGraphImageProps): JS
     // since we're dealing with assets, VITE will add the
     // appropriate prefix, so we only need the root url
     // @ts-ignore
-    return <img lazy data-meta={getRootUrl(siteUrl)} src={src} style="display:none" />
+    return <img alt="" lazy data-meta={getRootUrl(siteUrl)} src={src} style="display:none" />
   }
 
   return "";

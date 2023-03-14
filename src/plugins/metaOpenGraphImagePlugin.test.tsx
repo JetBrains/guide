@@ -30,7 +30,7 @@ test("can get host url from site url", () => {
 
 test("component jsx returns and image tag", () => {
   const html = <MetaOpenGraphImage siteUrl={`https://example.com`} src={`/card.png`} />
-  expect(html).to.be.equal(`<img lazy="true" data-meta="https://example.com" src="/card.png" style="display:none">`)
+  expect(html).to.be.equal(`<img alt="" lazy="true" data-meta="https://example.com" src="/card.png" style="display:none">`)
 })
 
 test("component handles null or undefined src values", () => {

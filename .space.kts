@@ -91,7 +91,7 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
         kotlinScript { api ->
             val gitBranch = api.gitBranch()
             if (gitBranch.startsWith("refs/heads/")) {
-                val cleanGitBranch = gitBranch.replace("refs/heads/", "").replace("/", "-")
+                val cleanGitBranch = gitBranch.replace("refs/heads/", "").replace("/", "-").replace("_", "-")
                 val siteName = "preview-" + if (cleanGitBranch == "main") {
                     siteShortName
                 } else {
