@@ -14,10 +14,10 @@ export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {
       const doc = parse(html);
 
       // @ts-ignore
-      const anchors = doc.getElementsByTagName("a")
-      const links = doc.getElementsByTagName("link")
+      const anchors = doc.getElementsByTagName("a");
+      const links = doc.getElementsByTagName("link");
 
-      const targets = anchors.concat(links)
+      const targets = anchors.concat(links);
 
       targets.forEach((element) => {
         const href = element.attrs["href"];
@@ -30,10 +30,10 @@ export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {
         // anchor link
         if (href.startsWith("#")) return;
 
-        element.setAttribute("href", path.join(prefix, href))
+        element.setAttribute("href", path.join(prefix, href));
       });
 
-      return doc.toString()
+      return doc.toString();
     }
   };
 };
