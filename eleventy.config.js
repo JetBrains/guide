@@ -55,7 +55,7 @@ module.exports = function (eleventyConfig) {
         }
       },
       plugins: [
-        // ViteImageOptimizer(),
+        ViteImageOptimizer(),
         absolutePaths({
           prefix: options.pathprefix,
         }),
