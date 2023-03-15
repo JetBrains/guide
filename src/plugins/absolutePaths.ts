@@ -29,6 +29,8 @@ export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {
         if (href.startsWith(".")) return;
         // anchor link
         if (href.startsWith("#")) return;
+        // ignore VITE ASSETS
+        if (href.startsWith("__VITE_ASSET__")) return;
 
         element.setAttribute("href", path.join(prefix, href));
       });

@@ -39,3 +39,8 @@ test("ignores relative paths", () => {
   expect(actual).to.equal(content);
 })
 
+test("ignores if src includes __VITE_ASSET__", () => {
+  const content = `<link rel="icon" href="__VITE_ASSET__123456789__" type="image/x-icon">`
+  const actual = transform(content);
+  expect(actual).to.be.equal(content);
+})
