@@ -1,3 +1,5 @@
+import java.io.File
+
 job("Build PyCharm Guide") {
     runJobForSite("pycharm", "PyCharm Guide", "pycharm-guide")
 }
@@ -64,22 +66,12 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
 
     container(image = "node:18-bullseye", displayName = "Build site") {
         resources {
-            cpu = 2.cpu
-            memory = 4.gb
+            cpu = 4.cpu
+            memory = 8.gb
         }
 
-        //cache {
-        //    storeKey = "npm-{{ hashFiles('package.json') }}"
-        //    localPath = "node_modules"
-        //}
-
-        //cache {
-        //    storeKey = "assets-$siteDirectory-{{ hashFiles('package.json') }}"
-        //    localPath = "sites/$siteDirectory/_site/assets"
-        //}
-
         shellScript {
-            content = """
+            content = """                
                 ## Build site
                 npm install
                 npm run build:$siteShortName
@@ -108,7 +100,7 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
                     "$siteShortName-$cleanGitBranch"
                 }
 
-                java.io.File("/mnt/space/share/_site/index.html")
+                File("/mnt/space/share/_site/index.html")
                 	.writeText("<html><body><a href=\"/$siteShortName/guide\">$siteLongName</a></body></html>")
 
                 api.space().experimentalApi.hosting.publishSite(
