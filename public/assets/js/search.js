@@ -68,9 +68,7 @@ function findSearchResults(query) {
       return page.url === result.ref;
     });
   });
-
-  console.log(results);
-
+  
   const description =
     results.length === 0
       ? "<p>No results have been found</p>"
