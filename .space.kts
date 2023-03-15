@@ -68,6 +68,16 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
             memory = 4.gb
         }
 
+        cache {
+            storeKey = "npm-{{ hashFiles('package.json') }}"
+            localPath = "node_modules"
+        }
+
+        cache {
+            storeKey = "assets-$siteDirectory-{{ hashFiles('package.json') }}"
+            localPath = "sites/$siteDirectory/_site/assets"
+        }
+
         shellScript {
             content = """
                 ## Build site
