@@ -73,10 +73,10 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
             localPath = "node_modules"
         }
 
-        cache {
-            storeKey = "assets-$siteDirectory-{{ hashFiles('package.json') }}"
-            localPath = "sites/$siteDirectory/_site/assets"
-        }
+        //cache {
+        //    storeKey = "assets-$siteDirectory-{{ hashFiles('package.json') }}"
+        //    localPath = "sites/$siteDirectory/_site/assets"
+        //}
 
         shellScript {
             content = """
