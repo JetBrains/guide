@@ -49,7 +49,10 @@ module.exports = function (eleventyConfig) {
                 './_site/**/*.html',
                 // for production builds
                 './.11ty-vite/**/*.html'
-              ]
+              ],
+              safelist: {
+                deep: [/plyr.*/]
+              }
             })
           ]
         }

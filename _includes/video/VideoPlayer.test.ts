@@ -10,8 +10,7 @@ const props: VideoPlayerProps = {
 
 test("VideoPlayer", () => {
   document.body.innerHTML = VideoPlayer(props);
-  const video: HTMLMediaElement = screen.getByLabelText("video player");
-
-  expect(video.innerHTML).contains(props.source)
-  expect(video.getAttribute("poster")).to.equal(props.poster)
+  const video: HTMLMediaElement = screen.getByTitle("Video Player");
+  expect(video.outerHTML).contains(props.source)
+  expect(video.dataset.plyrEmbedId).to.contain(props.source)
 });
