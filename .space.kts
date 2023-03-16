@@ -1,11 +1,22 @@
 import java.io.File
 
+val nodeJsContainerImage = "node:18-bullseye"
+val jdkContainerImage = "amazoncorretto:17"
+
 job("Build PyCharm Guide") {
     runJobForSite("pycharm", "PyCharm Guide", "pycharm-guide")
 }
 
 job("Build WebStorm Guide") {
     runJobForSite("webstorm", "WebStorm Guide", "webstorm-guide")
+}
+
+job("Run tests") {
+    startOn {
+        gitPush { enabled = true }
+    }
+
+    runTests()
 }
 
 job("Remote development images") {
@@ -64,7 +75,32 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
         }
     }
 
-    container(image = "node:18-bullseye", displayName = "Build site") {
+    parallel {
+        runTests()
+        buildSite(siteShortName, siteDirectory)
+    }
+    deploySite(siteShortName, siteLongName, siteDirectory)
+}
+
+fun StepsScope.runTests() {
+    container(image = nodeJsContainerImage, displayName = "Run tests") {
+        resources {
+            cpu = 4.cpu
+            memory = 4.gb
+        }
+
+        shellScript {
+            content = """                
+                ## Run tests
+                npm install
+                npm run test
+            """.trimIndent()
+        }
+    }
+}
+
+fun StepsScope.buildSite(siteShortName: String, siteDirectory: String) {
+    container(image = nodeJsContainerImage, displayName = "Build site") {
         resources {
             cpu = 4.cpu
             memory = 8.gb
@@ -83,8 +119,10 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
             """.trimIndent()
         }
     }
+}
 
-    container(image = "amazoncorretto:17", displayName = "Publish site") {
+fun StepsScope.deploySite(siteShortName: String, siteLongName: String, siteDirectory: String) {
+    container(image = jdkContainerImage, displayName = "Publish site") {
         resources {
             cpu = 2.cpu
             memory = 8.gb
@@ -101,16 +139,16 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
                 }
 
                 File("/mnt/space/share/_site/index.html")
-                	.writeText("<html><body><a href=\"/$siteShortName/guide\">$siteLongName</a></body></html>")
+                        .writeText("<html><body><a href=\"/$siteShortName/guide\">$siteLongName</a></body></html>")
 
                 api.space().experimentalApi.hosting.publishSite(
-                    siteSource = "_site",
-                    siteName = siteName,
-                    siteSettings = HostingSiteSettings(
-                        public = true,
-                        labels = listOf(siteShortName, cleanGitBranch),
-                        description = siteLongName
-                    )
+                        siteSource = "_site",
+                        siteName = siteName,
+                        siteSettings = HostingSiteSettings(
+                                public = true,
+                                labels = listOf(siteShortName, cleanGitBranch),
+                                description = siteLongName
+                        )
                 )
             }
         }
