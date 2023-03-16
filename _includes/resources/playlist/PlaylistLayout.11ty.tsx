@@ -10,7 +10,6 @@ import SidebarPublished, {
 } from "../../sidebar/SidebarPublished.11ty";
 import { Author } from "../../references/author/AuthorModels";
 import SidebarPlaylists from "../../sidebar/SidebarPlaylists.11ty";
-import path from "upath";
 
 export type PlaylistLayoutData = LayoutProps & PlaylistFrontmatter;
 
@@ -19,7 +18,6 @@ export function PlaylistLayout(
   data: PlaylistLayoutData
 ): JSX.Element {
   const { collections, content, page } = data;
-  const { pathprefix } = data.commandLineArgs;
   const playlist = collections.allResources.get(page.url) as Playlist;
   if (!playlist) {
     throw new Error(`Playlist "${page.url}" not in collection`);
@@ -36,9 +34,7 @@ export function PlaylistLayout(
         dangerouslySetInnerHTML={{ __html: content }}
       ></div>
       {playlist.playlistResources.map((item: any, index: number) => {
-        // todo: consider moving this to object model
-        const itemUrl = pathprefix ? path.join(pathprefix, item.url) : item.url;
-        const thisItem = all.find((allItem) => allItem.page.url === itemUrl);
+        const thisItem = all.find((i) => i.page.url === item.url);
         const itemContent = thisItem ? thisItem.content : "";
         const isVisible = index == 0 ? "" : "display:none";
         return (
