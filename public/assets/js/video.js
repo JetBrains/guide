@@ -1,8 +1,8 @@
 import Plyr from "plyr";
 
 const onVisible = function (element, callback) {
-  const options = {
-    root: document.documentElement,
+  const  options = {
+    root: document,
   };
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
@@ -16,7 +16,7 @@ const videos = Array.from(document.querySelectorAll(".video-player"));
 videos.forEach((video) => {
   onVisible(video, (entry, observer) => {
     if (entry.intersectionRatio > 0) {
-      const plyr = new Plyr(entry.target);
+      new Plyr(entry.target);
       observer.unobserve(entry.target);
     }
   });
