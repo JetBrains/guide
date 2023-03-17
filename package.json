@@ -5,20 +5,13 @@
   "type": "module",
   "scripts": {
     "dev:pycharm": "cd sites/pycharm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --incremental --config=../../eleventy.config.js --serve --watch",
-    "build:pycharm": "npm run clean && cd sites/pycharm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --pathprefix=/pycharm/guide",
+    "build:pycharm": "npm run clean:pycharm && cd sites/pycharm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --pathprefix=/pycharm/guide",
+    "clean:pycharm": "rimraf .11ty-vite sites/pycharm-guide/_site sites/pycharm-guide/.11ty-vite",
     "dev:webstorm": "cd sites/webstorm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --serve --watch",
-    "build:webstorm": "npm run clean && npm run test && cd sites/webstorm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --pathprefix=/webstorm/guide",
-    "clean": "rimraf .11ty-vite sites/pycharm-guide/_site sites/pycharm-guide/.11ty-vite sites/webstorm-guide/_site sites/webstorm-guide/.11ty-vite",
-    "test": "vitest run",
-    "optipng-windows": "FOR /F %I in ('dir /b/s *.png') do optipng %I",
-    "COMMENT": "// TODO DO WE NEED THESE SCRIPTS BELOW?",
-    "incremental": "node --require esbuild-register node_modules/@11ty/eleventy/cmd.js --incremental --serve --watch",
-    "debug-start": "DEBUG=Eleventy* node --require esbuild-register node_modules/@11ty/eleventy/cmd.js --serve --watch",
-    "debug-start-windows": "set DEBUG=Eleventy* & node --require esbuild-register node_modules/@11ty/eleventy/cmd.js --serve --watch",
-    "build": "node --require esbuild-register node_modules/@11ty/eleventy/cmd.js && npm run assets",
-    "debug-build": "DEBUG=Eleventy* node --require esbuild-register node_modules/@11ty/eleventy/cmd.js",
-    "benchmark-build": "DEBUG=Eleventy:Benchmark* node --require esbuild-register node_modules/@11ty/eleventy/cmd.js",
-    "preview": "vite preview"
+    "build:webstorm": "npm run clean:webstorm && cd sites/webstorm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --pathprefix=/webstorm/guide",
+    "clean:webstorm": "rimraf sites/webstorm-guide/_site sites/webstorm-guide/.11ty-vite",
+    "clean": "npm run clean:pycharm && npm run clean:webstorm",
+    "test": "vitest run"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
