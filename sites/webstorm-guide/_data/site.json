@@ -4,6 +4,7 @@
   "siteDescription": "",
   "siteUrl": "https://www.jetbrains.com/webstorm/guide",
   "copyright": "Copyright © 2000–2023 <a href=\"https://www.jetbrains.com/\">JetBrains</a> s.r.o.",
+  "googleTagManagerId" : "GTM-5P98",
   "start": {
     "items": [
       {
