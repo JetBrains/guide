@@ -80,7 +80,7 @@ export function BaseLayout(
           <meta name="twitter:site" content="@jetbrains" />
           <script defer src="/assets/js/site.js" type="module"></script>
           {hasVideo && (
-            <script src="/assets/js/video.js" type="module"></script>
+            <script defer src="/assets/js/video.js" type="module"></script>
           )}
           <GoogleTagManagerHeadScript
             googleTagManagerId={site.googleTagManagerId}
