@@ -5,8 +5,9 @@ title: Configuring a Remote Python Interpreter
 technologies: []
 topics: []
 author: hs
-subtitle: TO BE ADDED
+subtitle: How to work with a remote Python interpreter
 thumbnail: thumbnail.png
+videoBottom: true
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/6RlgQBB1UDU

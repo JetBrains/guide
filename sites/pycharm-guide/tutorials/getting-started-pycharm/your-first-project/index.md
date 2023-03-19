@@ -5,8 +5,9 @@ title: Your First Project
 technologies: []
 topics: []
 author: hs
-subtitle: TO BE ADDED
+subtitle: New to PyCharm? Start here
 thumbnail: thumbnail.png
+videoBottom: true
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/W5p8v4yhxjk

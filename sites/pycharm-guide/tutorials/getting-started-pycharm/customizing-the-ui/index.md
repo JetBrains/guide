@@ -5,8 +5,9 @@ title: Customizing the UI
 technologies: []
 topics: []
 author: hs
-subtitle: TO BE ADDED
+subtitle: How to configure your UI exactly as you want it
 thumbnail: thumbnail.png
+videoBottom: true
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/N2uo4RbGycM

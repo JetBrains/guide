@@ -5,8 +5,9 @@ title: Configuring a Local Python Interpreter
 technologies: []
 topics: []
 author: hs
-subtitle: TO BE ADDED
+subtitle: How to set up a local Python interpreter for your project
 thumbnail: thumbnail.png
+videoBottom: true
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/GTtpypvLoeY

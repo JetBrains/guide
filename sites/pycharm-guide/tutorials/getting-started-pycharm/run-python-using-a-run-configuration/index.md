@@ -5,8 +5,9 @@ title: Run Python Using a Run Configuration
 technologies: []
 topics: []
 author: hs
-subtitle: TO BE ADDED
+subtitle: How to use run you code in PyCharm
 thumbnail: thumbnail.png
+videoBottom: true
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/FOdQa364sLM

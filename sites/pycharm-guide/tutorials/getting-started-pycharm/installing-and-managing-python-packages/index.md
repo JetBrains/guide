@@ -5,8 +5,9 @@ title: Installing and Managing Python Packages
 technologies: []
 topics: []
 author: hs
-subtitle: TO BE ADDED
+subtitle: How to work with Python packages in your project
 thumbnail: thumbnail.png
+videoBottom: true
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/EanHxYTYGio

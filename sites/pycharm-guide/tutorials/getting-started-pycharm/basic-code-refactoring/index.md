@@ -5,8 +5,9 @@ title: Basic Code Refactoring
 technologies: []
 topics: []
 author: hs
-subtitle: Get more productive and less error prone with refactorings
+subtitle: Get more productive and less error-prone with refactorings
 thumbnail: thumbnail.png
+videoBottom: true
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/4kzEbqaT2DY

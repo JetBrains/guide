@@ -5,8 +5,9 @@ title: Installation and Setup
 technologies: []
 topics: []
 author: hs
-subtitle: TO BE ADDED
+subtitle: How to install and set up PyCharm
 thumbnail: thumbnail.png
+videoBottom: true
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/2EB8siO-_OM

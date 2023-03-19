@@ -5,8 +5,9 @@ title: Understanding the UI
 technologies: []
 topics: []
 author: hs
-subtitle: TO BE ADDED
+subtitle: Finding your way around the user interface of PyCharm
 thumbnail: thumbnail.png
+videoBottom: true
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/QInZSbPbnnY
