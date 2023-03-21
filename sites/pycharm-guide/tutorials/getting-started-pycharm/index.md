@@ -23,14 +23,7 @@ tutorialItems:
 
 ---
 
-AWS Lambda lets you run code without provisioning or managing servers.
- It is similar when it comes to PyCharm, which helps developers to build, ship and deploy serverless functions.
-
-This tutorial helps to understand how we can easily write serverless functions and easily deploy through PyCharm.
-
-*Note: We'll be using PyCharm Professional Edition for all the steps in this tutorial. 
-We will also be using MongoDB database as our primary datastore. For that we will be
-relying on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).*
+This tutorial will take you through installing and setting up PyCharm, customising the user interface, configuring your Python interpreters, managing your Python packages, getting assistance writing your code, and then running, refactoring and debugging your code.
 
 ## Sample code
 This is the code that will be using in this tutorial:

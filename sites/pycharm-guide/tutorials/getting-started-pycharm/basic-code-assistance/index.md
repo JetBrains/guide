@@ -5,7 +5,7 @@ title: Basic Code Assistance
 technologies: []
 topics: []
 author: hs
-subtitle: Learn about syntax highlighting and how to get code assistance
+subtitle: Learn about syntax highlighting and how to get code assistance.
 thumbnail: thumbnail.png
 videoBottom: true
 longVideo:
@@ -17,25 +17,25 @@ In the previous step, we saw how PyCharm makes it easy to work with your project
 
 ## Code Completion
 
-First off, let’s talk about context-aware code completion, where the IDE uses all kinds of smarts to help you finish your typing. Live templates are one such example. The keyboard shortcut is (**⌘J** | **Ctrl+J**) but PyCharm will invoke them by default when you start typing some code that matches a Live Template. You can find a list of Live Templates in your Preferences/Settings (**⌘,** | **Ctrl+Alt+S**) and you can also [add your own](https://www.jetbrains.com/help/pycharm/creating-and-editing-live-templates.html).
+First off, let’s talk about context-aware code completion, where the IDE uses all kinds of smarts to help you finish your typing. Live Templates are one such example. The keyboard shortcut is (**⌘J** | **Ctrl+J**) but PyCharm will invoke them by default when you start typing some code that matches a Live Template. You can find a list of Live Templates in your Preferences/Settings (**⌘,** | **Ctrl+Alt+S**) and you can also [add your own](https://www.jetbrains.com/help/pycharm/creating-and-editing-live-templates.html).
 
-<img src="live_templates.png" alt="Live Templates" width="500"/>
+<img src="live_templates.png" alt="Live Templates" width="400"/>
 
-PyCharm also offers you basic and type-based smart completion. For example, if we start typing something here, PyCharm prompts with options to complete my code, so we won’t need to type the full line. For example, if you have this code in the above class and type in `C`, PyCharm will offer you `Car`.
+PyCharm also offers you basic and type-based smart completion. For example, if we start typing something, PyCharm prompts with options to complete your code, so you won’t need to type the full line. For example, if you have this code in the above class and type in `C`, PyCharm will offer you `Car`.
 
-<img src="basic-completion.png" alt="Basic Code Completion" width="500"/>
+<img src="basic-completion.png" alt="Basic Code Completion" width="400"/>
 
-If it’s the correct completion, as it is in this case, we can just press *Enter*, and PyCharm will complete the line for you. If the correct completion is in the list, but not selected, we can use the arrows in your keyboard to go up and down to select it and then press `Enter`. And finally, if the correct completion is not in the list yes, we can keep typing until PyCharm figures it out for you.
+If it’s the correct completion, as it is in this case, we can press *Enter*, and PyCharm will complete the line for you. If the correct completion is in the list, but not selected, you can use the arrows in your keyboard to go up and down to select it and then press **Enter**. And finally, if the correct completion is not in the list yes, you can keep typing until PyCharm figures it out for you.
 
 Code completion is not only available for classes, but also for methods. We created a variable called `bmw` that instantiates from the `Car` class. If we want to use one of its methods, we can write `bmw` plus `dot` and PyCharm will offer [basic completion](https://www.jetbrains.com/help/pycharm/auto-completing-code.html#basic_completion) for the available methods.
 
-Here's a cool tip - while `Enter` adds the suggested completion, you can also press `tab` to switch an existing one for the new one, saving you time.
+Here's a cool tip - while **Enter** adds the suggested completion, you can also press **tab** to switch an existing one for the new one, saving you time.
 
 Code completion is also available for keywords. Let’s say you want to import a package. If you start typing `i` at the top of your file, PyCharm will immediately offer `import` as a possible completion.
 
 <img src="import-basic-completion.png" alt="Import Basic Code Completion" width="500"/>
 
-The cool thing about code completion is that you can also use it in many other places, including method parameters, Dictionaries, Django templates, inside f-strings, and much, much more. Check out [the documentation](https://www.jetbrains.com/help/pycharm/auto-completing-code.html) for more details.
+The cool thing about code completion is that you can also use it in many other places, including method parameters, Dictionaries, Django templates, inside f-strings, and much  more. Check out [the documentation](https://www.jetbrains.com/help/pycharm/auto-completing-code.html) for more details.
 
 That’s cool, but how does PyCharm do it? We just saw a very simple example, but sometimes you will be working within much more complex projects with multiple inter-dependencies. How can PyCharm understand what class you are about to instantiate, what method you are about to call, and so on?
 
@@ -45,34 +45,32 @@ So next time you hear your laptop fans right after you open a new project, have 
 
 ## Syntax Highlighting
 
-Another productivity booster that you might take for granted is syntax highlighting.
+Another productivity booster that you might take for granted is syntax highlighting. In this scre=ipt, PyCharm automatically detects keywords such as `def`, `for`, `while`, as well as class names, parameters, etc, and renders them in different colors.
 
-As you can see in our script, PyCharm automatically detects keywords such as `def`, `for`, `while`, as well as class names, parameters, etc, and renders them in different colors.
-
-<img src="editor-colours.png" alt="Colours in the editor" width="500"/>
+<img src="editor-colours.png" alt="Colours in the editor" width="400"/>
 
 This makes it easier for you to scan your code, quickly recognize errors, and have a better overview of your code structure. You can update the color scheme if you prefer. To see how, [check out the documentation](https://www.jetbrains.com/help/pycharm/configuring-colors-and-fonts.html).
 
 ## Code Intentions
 One of the most important features for improving your code quality is what we call intention actions. As you work in the editor, PyCharm continually analyzes your code to find ways to optimize it and detect errors. Whenever the IDE finds possible improvements it shows a yellow bulb icon next to the current line.
 
-Here, for instance, we added `if sudden == True`. Although it's valid syntax, it can be optimized, so PyCharm shows you the yellow bulb right away. To access the intention action available for this line of code, we can click the light bulb or use the (*Alt+Enter* | *⌥⏎*) keyboard shortcut.
+Here, for instance, we added `if sudden == True`. Although it's valid syntax, it can be optimized, so PyCharm shows you the yellow bulb right away. To access the intention action available for this line of code, you can click the light bulb or use the (*Alt+Enter* | *⌥⏎*) keyboard shortcut.
 
 PyCharm will offer to **Replace boolean expression with sudden**. Intention actions cover a wide range of situations from warnings, to optimizations, to automation.
 
-Let’s say I want to invert this `if` condition. If I position my caret here (show) PyCharm offers to handle it for me and I accept. 
+Let’s say you want to invert this `if` condition. If you position my caret here (show) PyCharm offers to handle it for you. 
 
-<img src="invert-if-condition.png" alt="Invert if condition" width="500"/>
+<img src="invert-if-condition.png" alt="Invert if condition" width="400"/>
 
 I can also undo this to go back to the way the code was if I want to. 
 
 We've looked at warnings, but sometimes there are errors and PyCharm can also find any problems within your code. In this case, whenever it happens, the light bulb color will be red. This is a signal that a quick-fix is available and to check possible solutions you can use the same commands as before.
 
-We can see one example of a quick fix if we try to use a package without installing it first. Let’s change our car from bmw to tesla and add `web_page` as a property of the `class Car`. Now, let’s create a quick method to fetch the Tesla website, assuming that the car needs this information to work.
+We can see one example of a quick fix if we try to use a package without installing it first. Let’s change our car from `bmw` to `tesla` and add `web_page` as a property of the class `Car`. Now, let’s create a quick method to fetch the Tesla website, assuming that the car needs this information to work.
 
-I’ve written the method mentioning the package `requests` but I haven’t installed it yet. Let’s see what PyCharm offers us, using (*Alt+Enter* | *⌥⏎*) this time.
+We’ve written the method mentioning the package `requests` but haven’t installed it yet. Let’s see what PyCharm offers us, using (**⌥⏎** | **Alt+Enter**) this time.
 
-<img src="error-intentions.png" alt="Error intentions" width="500"/>
+<img src="error-intentions.png" alt="Error intentions" width="400"/>
 
 `Install and import package requests` sounds like what we need, so this is what we'll select it. As you see, PyCharm not only installed the package inside my virtual environment, but it also auto-imported it to my script! The red squiggly and the light bulb are gone, and the code should run smoothly now.
 
@@ -86,11 +84,11 @@ When PyCharm finds warnings or errors, besides light bulbs and squiggly lines, i
 
 If you don't want to scroll down your entire file searching for problems, though, the second quick way to spot problems is by checking the Problems widget. 
 
-<img src="problems-widget.png" alt="Problems Widget" width="500"/>
+<img src="problems-widget.png" alt="Problems Widget" width="300"/>
 
 It summarizes errors and warnings and lets you quickly navigate to the Problems Tool window (**⌘6** | **Alt+1**) to have a better description of what is going on. Here we can see the error and quickly navigate to the line where it happens. We can also look across our entire project. 
 
-<img src="problems-tool-window.png" alt="Problems Tool Window" width="500"/>
+<img src="problems-tool-window.png" alt="Problems Tool Window" width="400"/>
 
 Let’s fix this error and use the [code reformat action](https://www.jetbrains.com/help/pycharm/reformat-and-rearrange-code.html#reformat_file) (**⌥⌘L** | **Ctrl+Alt+L**) to put everything in the right place. Now the errors and warnings are gone, and the file is formatted following PEP-8 conventions.
 

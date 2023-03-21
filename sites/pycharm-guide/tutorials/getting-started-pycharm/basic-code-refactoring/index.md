@@ -5,7 +5,7 @@ title: Basic Code Refactoring
 technologies: []
 topics: []
 author: hs
-subtitle: Get more productive and less error-prone with refactorings
+subtitle: Get more productive and less error-prone with refactorings.
 thumbnail: thumbnail.png
 videoBottom: true
 longVideo:
@@ -15,21 +15,21 @@ longVideo:
 
 In the previous step, we saw how PyCharm can run your Python code.
 
-In this step, we are going to talk about refactoring. Ever wish your IDE could…do your work for you?
+In this step, we are going to talk about refactoring. Ever wish your IDE could do your work for you?
 
 ## Change Signature
-How many times does your work involve changing the signature of a given method? As easy as it can sound, changing a method signature can have a deep impact in your code and break your program in multiple places. The Change Signature refactoring helps you safely change a method signature, including changing its name; adding, removing, and reordering parameters; and assigning default values to the parameters.
+How many times does your work involve changing the signature of a given method? As easy as it sounds, changing a method signature can have a deep impact in your code and break your program in multiple places. The *change signature* refactoring helps you safely change a method signature, including changing its name; adding, removing, and reordering parameters; and assigning default values to the parameters.
 
 Let’s start by changing its signature of a method name. We will add a new parameter here. The easiest approach is to do it inline. When you do this, PyCharm already gives you a yellow light bulb and a refactoring indication in the gutter. To access it use (**⌥⏎** | **Alt+Enter**).
 
-<img src="update-usages.png" alt="Update Usages" width="300"/>
+<img src="update-usages.png" alt="Update Usages" width="400"/>
 
-The first option is **Update usages to reflect signature change...**. When we click it, PyCharm will show us the previous and current method signature, and require a default value so we won’t break our program. At this point PyCharm is using its knowledge of your project acquired during indexing to add the default value to all your current method calls.
+The first option is **Update usages to reflect signature change...**. When you click it, PyCharm will show you the previous and current method signature, and require a default value so it won’t break our program. At this point PyCharm is using its knowledge of your project acquired during indexing to add the default value to all your current method calls.
 
-PyCharm will update all the usages in your project so you don't have to go hunting for other places to update. Your code will still compile. 
+PyCharm will update all the usages in your project, so you don't have to go hunting for other places to update. Your code will still compile. 
 
 ## Rename
-Renaming is another common type of refactoring. You first write your code, get everything working, and then start making names more meaningful. This is when refactoring rename comes in handy. As with signature changes, ‘Rename’ can also be done in place.
+Renaming is another common type of refactoring. You first write your code, get everything working, and then start making names more meaningful. This is when the rename refactoring comes in handy. As with signature changes, *rename* can also be done in place.
 
 Let’s just go ahead and change this method name. We can also use (**⌥⏎** | **Alt+Enter**) to invoke the context menu.
 
@@ -42,7 +42,7 @@ Inplace refactorings are great, but PyCharm can also help you with much more rob
 
 To extract a method you can either use (**⌥⌘M** |**Ctrl+Alt+M**), or the **Refactor This** menu which is (**⌃T**| **Ctrl+Alt+Shift+T**). Let’s take this code fragment as an example. Let's select it, and invoke the ‘Refactor this’ men and choose **Extract Method**.
 
-<img src="refactor-this.png" alt="Refactor This" width="200"/>
+<img src="refactor-this.png" alt="Refactor This" width="300"/>
 
 We can now give the new method a name and click **OK**. PyCharm will now create a function in the class with the name we gave and called it from the previous place. 
 
@@ -55,3 +55,6 @@ Of course, your code will still run exactly as it did before!
 These are three common refactoring techniques that will automate your workflow and minimize your chances of bugs. PyCharm has many more robust refactoring capabilities, so, after experimenting with these basic ones make sure to [try the others](https://www.jetbrains.com/help/pycharm/refactoring-source-code.html).
 
 In the next step we will see how to perform basic testing in PyCharm.
+
+## Video
+You can also check out the video for this step from our Getting Started series on YouTube:
