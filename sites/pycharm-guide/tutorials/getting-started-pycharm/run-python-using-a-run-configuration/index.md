@@ -24,11 +24,11 @@ To run your script, you can right-click anywhere inside the editor and click **R
 
 The temporary Run Configuration created by PyCharm is now available in the top bar and can now be reused every time you want to run this script again with the **Play** button.
 
-<img src="run-configuration.png" alt="Run Configuration" width="400"/>
+<img src="run-configuration.png" alt="Run Configuration" width="600"/>
 
 Alternatively If you scroll down, you can see that we have an `if __name__ == '__main__'` block, and it has a *play* icon in the gutter. This is another shortcut to create a temporary Run Configuration. When you click it, a context menu shows up, and the first option says **Run <name of your script>**.
 
-<img src="main-block-run.png" alt="keymap" width="300"/>
+<img src="main-block-run.png" alt="keymap" width="400"/>
 
 Using the **Play** button will also create a temporary Run Configuration as well as displaying the output inside the Run tool window.
 
@@ -37,11 +37,11 @@ Let’s look at explicitly creating a Run Configuration. The previous scenario a
 
 In an empty Django project, you can see that the Run Configurations button already shows the project name and a *Django* logo. This is because PyCharm professional has already created a basic Run Configuration, special for Django.
 
-<img src="django-run-configuration.png" alt="Django Run Configuration" width="300"/>
+<img src="django-run-configuration.png" alt="Django Run Configuration" width="400"/>
 
 When you click the **play** button, PyCharm launches the Django project, including a webserver, so you can click the link in the Run tool window and see your Django project.
 
-<img src="django-project-run-tool-window.png" alt="Django Run Tool Window" width="400"/>
+<img src="django-project-run-tool-window.png" alt="Django Run Tool Window" width="500"/>
 
 PyCharm Professional also creates configurations for your Flask projects, FastAPI projects, and projects based on other frameworks.
 
@@ -50,11 +50,11 @@ Many times in your development workflow you will need to configure different sta
 
 The easiest way to do it is by transforming a temporary Run Configuration into a permanent one by clicking the drop-down menu and selecting **Save project name Configuration**.
 
-<img src="save-main-configuration.png" alt="Save project configuration" width="200"/>
+<img src="save-main-configuration.png" alt="Save project configuration" width="400"/>
 
 You can also use pre-configured templates to create your Run Configurations by opening the **Edit configurations** dialog and clicking on the **plus** button. You can then choose the target you are creating Run Configurations for. Each template has specific fields that are necessary for configuring different targets.
 
-<img src="edit-configurations.png" alt="Editing Run Configurations" width="400"/>
+<img src="edit-configurations.png" alt="Editing Run Configurations" width="600"/>
 
 ## Conclusion
 We saw how to quickly run our Python scripts with temporary Run Configurations, and why sometimes it is handy to create permanent ones.

@@ -29,7 +29,7 @@ When you create a new project, you need to choose between creating a new interpr
 
 The first thing you will need to define is what kind of Python packaging manager you want to use. PyCharm comes with support for virtualenv, Pipenv, Conda and Poetry out of the box. Let's use virtualenv. PyCharm will automatically identify the location where the `venv` folder will be created.
 
-<img src="virtualenv_interpreter.png" alt="virtualenv_interpreter" width="500"/>
+<img src="virtualenv_interpreter.png" alt="virtualenv_interpreter" width="700"/>
 
 This new interpreter will be based on an existing one. In my case, this is Python 3.10. You can also choose another base interpreter from the list, or click the three dots to find another Python executable in your file system.
 
@@ -44,7 +44,7 @@ That’s how you create a new virtual environment in PyCharm when setting up a n
 
 From the New Project screen, click **Previously configured interpreter**. If you already have interpreters previously configured you can just pick the one you would like to use from this dropdown. If you see a no interpreter message here you can click the three dots.
 
-<img src="existing-interpreter.png" alt="Existing Interpreter" width="500"/>
+<img src="existing-interpreter.png" alt="Existing Interpreter" width="700"/>
 
 Then, select it from the different options, including virtualenv environments, conda environments, pipenv interpreters, or even your system interpreter.
 
@@ -53,7 +53,7 @@ The second place you can configure your interpreter is when you clone a project 
 
 We can paste the repository URL in and accept the generated choice for the directory to clone into, and click **Clone**.
 
-<img src="clone-project.png" alt="Clone project" width="300"/>
+<img src="clone-project.png" alt="Clone project" width="600"/>
 
 PyCharm opens a new project in that directory and starts cloning the repository. Once the clone has finished, PyCharm makes a project interpreter, based on your default Python, and starts installing the packages in your `requirements` file. 
 

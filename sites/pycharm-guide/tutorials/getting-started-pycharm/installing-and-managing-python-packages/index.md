@@ -33,7 +33,7 @@ If you click the package name, the PyPi documentation for this package is shown 
 
 To install the package, you can click **Install** which will use the latest stable version of the package. You don't need to install it using the command line. You can also select a specific version to install if you need to.
 
-<img src="requests-package.png" alt="Requests package" width="500"/>
+<img src="requests-package.png" alt="Requests package" width="800"/>
 
 If you now check your list of installed packages, *requests* is there, ready to be imported and used in our scripts. You might also want to delete a package. In this case, you need to click the three dots and then select **Delete package**.
 
@@ -46,7 +46,7 @@ We've covered how to install packages from PyPi, but you might also want to inst
 - Add packages from your local disk
   - You can provide the local path to your package directory or an archive.
 
-<img src="add-repository-packages.png" alt="Add repository packages" width="300"/>
+<img src="add-repository-packages.png" alt="Add repository packages" width="500"/>
 
 In both cases, you can select the **-e** checkbox to install the package in *editable* mode.
 

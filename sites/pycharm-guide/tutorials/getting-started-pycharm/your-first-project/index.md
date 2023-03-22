@@ -30,7 +30,7 @@ Now, back to where we left off on the Welcome screen and the “Projects” tab.
 
 There are three available options on this screen.
 
-<img src="welcome.png" alt="Welcome screen" width="500"/>
+<img src="welcome.png" alt="Welcome screen" width="700"/>
 
 First, you can get an existing project from version control like GitHub, for example. You could then paste a repository URL in and click **Clone**.
 
@@ -53,7 +53,7 @@ PyCharm takes care of this part by creating and activating a virtual environment
 
 We already have Python 3.10 installed as my default Python. PyCharm detected it, so we can click **Create**.
 
-<img src="starting-project.png" alt="Starting a project" width="500"/>
+<img src="starting-project.png" alt="Starting a project" width="800"/>
 
 PyCharm will now create a new Django project for you as well as creating and activating a virtual environment, downloading all the required dependencies, generating an empty Django project with configuration files, creating run and debug configurations, and more.
 

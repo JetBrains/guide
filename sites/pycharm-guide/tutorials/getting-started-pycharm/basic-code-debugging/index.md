@@ -22,7 +22,7 @@ Everything starts with a breakpoint. Breakpoints are markers that tell the debug
 
 In this example we are adding a breakpoint to this `if` statement inside our loop, so the program will suspend the execution on each iteration. We can run the program with the debugger by clicking the little *bug* button at the top of PyCharm. This runs the currently-selected configuration, but under the debugger.
 
-<img src="debug_icon.png" alt="Debug Icon" width="400"/>
+<img src="debug_icon.png" alt="Debug Icon" width="700"/>
 
 This project was made from the Flask project template, so it had a Flask Run Configuration made from the start. Another way to run the program with the debugger is to right-click inside the editor and select **Debug name** and PyCharm will create a temporary Run Configuration and run it for you.
 
@@ -36,18 +36,18 @@ On the left side we have a few buttons. This is where you can:
 - Resume your program to move forward with its execution
 - Stop your program button when you are done with debugging and want the program to terminate
 
-<img src="debug-left-menu.png" alt="Debug left-menu" width="200"/>
+<img src="debug-left-menu.png" alt="Debug left-menu" width="300"/>
 
 On the top there are two main areas:
 - Debugger & Console tabs
 - The buttons to help us control the execution
 
-<img src="control-execution.png" alt="Control Execution" width="300"/>
+<img src="control-execution.png" alt="Control Execution" width="400"/>
 
 ## Debugger and Console Tab
 The debugger has a lot of power available to you. On the **Debugger** tab you can see the stack frames that represent the current state of the program on the left side, and the variables panel with local values at that execution point on the right.
 
-<img src="debugger-frame.png" alt="Debugger Frame" width="400"/>
+<img src="debugger-frame.png" alt="Debugger Frame" width="700"/>
 
 The stack frame on the left acts like a history of your program’s current state. New frames are added to the top of the stack each time a method is called, and removed when its execution is complete.
 
@@ -57,28 +57,28 @@ Stack frames from code outside your project like libraries, for instance, are in
 
 Let’s select the most recent frame. We can use the variable panel to see the current value assigned to any variables in our program. In this case, we can see that the value 65 is assigned to our ‘R’ variable.
 
-<img src="r-variable.png" alt="R Variable" width="400"/>
+<img src="r-variable.png" alt="R Variable" width="700"/>
 
 If you don't want the distraction of looking away from your code, you can also see the values in the editor, as code comments.
 
 While in the current context, you can also play around with your variables to obtain additional details about the program state or test different scenarios at runtime. For example, you can see the value of ‘R+30’.
 
-<img src="r-plus-30.png" alt="R plus 30" width="400"/>
+<img src="r-plus-30.png" alt="R plus 30" width="700"/>
 
 Finally, we can click the Console tab to get the full Python console in the context of this point of the execution. Here you can start using the interactive prompt in the context of the current breakpoint and line. For example, let’s see R+30 again.
 
-<img src="r-plus-30-console.png" alt="R Plus 30 console" width="400"/>
+<img src="r-plus-30-console.png" alt="R Plus 30 console" width="700"/>
 
 ## Step Through
 Sometimes, you need to walk through the execution of your code. This time, instead of having our breakpoint in the `if` statement, we will move it to the outer function, where we call `highest_random`. Once the breakpoint is hit and the execution stops, we can walk into the inner function by using **Step Into**.
 
-<img src="step-into.png" alt="Step Into" width="500"/>
+<img src="step-into.png" alt="Step Into" width="700"/>
 
 If  we click **Step Over**, we are going to walk through the execution line by line.
 
 If you then say **Step Into**, PyCharm will take you into Python’s Random `randint` function. In some cases this can be useful, but most of the time you are trying to solve problems in your own code. Let's stop and restart the debug session, and instead of **Step Into**, let's use PyCharm’s **Step Into My Code**.
 
-<img src="step-into-my-code.png" alt="Step Into My Code" width="500"/>
+<img src="step-into-my-code.png" alt="Step Into My Code" width="700"/>
 
 Now, even if we keep clicking, PyCharm won’t head into any library code, only code in my own project.
 

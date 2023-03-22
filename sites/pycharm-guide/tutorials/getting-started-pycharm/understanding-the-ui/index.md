@@ -22,7 +22,7 @@ When a file is open, it appears in a tab in the editor. When you double-click an
 
 Inside the editor, on the right-hand side of it, you can see the inspection widget, which you can use to view all the problems in the current file and navigate between them. 
 
-<img src="inspections-widget.png" alt="Inspections Widget" width="100"/>
+<img src="inspections-widget.png" alt="Inspections Widget" width="200"/>
 
 You can also see errors and warnings in the scrollbars. In the left-hand side of the editor, the gutter shows you your line numbers, icons and allows you to performs several actions such as adding or removing breakpoints by clicking the gutter.
 
@@ -35,7 +35,7 @@ The Terminal tool window lets you work with the built-in terminal. The Python Pa
 
 The Python Console tool window is an interactive Python console that lets you execute Python commands and scripts line by line, in the context of your project interpreter. It’s good for exploration.
 
-<img src="python-console.png" alt="keymap" width="500"/>
+<img src="python-console.png" alt="keymap" width="800"/>
 
 At the very bottom of the IDE, you can find the Status Bar. It’s a small yet very handy piece of the UI. First, the quick access button. It lets you quickly switch between the tool windows and allows you to hide and show the tool window bar. The right hand side of the status bar contains several useful status bar widgets including the project settings, version control information and your project interpreter setup.
 

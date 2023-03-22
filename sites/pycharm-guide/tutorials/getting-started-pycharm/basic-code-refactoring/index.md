@@ -22,7 +22,7 @@ How many times does your work involve changing the signature of a given method? 
 
 Let’s start by changing its signature of a method name. We will add a new parameter here. The easiest approach is to do it inline. When you do this, PyCharm already gives you a yellow light bulb and a refactoring indication in the gutter. To access it use (**⌥⏎** | **Alt+Enter**).
 
-<img src="update-usages.png" alt="Update Usages" width="400"/>
+<img src="update-usages.png" alt="Update Usages" width="600"/>
 
 The first option is **Update usages to reflect signature change...**. When you click it, PyCharm will show you the previous and current method signature, and require a default value so it won’t break our program. At this point PyCharm is using its knowledge of your project acquired during indexing to add the default value to all your current method calls.
 
@@ -33,7 +33,7 @@ Renaming is another common type of refactoring. You first write your code, get e
 
 Let’s just go ahead and change this method name. We can also use (**⌥⏎** | **Alt+Enter**) to invoke the context menu.
 
-<img src="rename.png" alt="Rename" width="300"/>
+<img src="rename.png" alt="Rename" width="600"/>
 
 We'll use the first option which is **Update usages to reflect signature change…**. The change is reflected in the code that calls this function. PyCharm will also find usages in other code in your project. For example, we have another file that imports this function and calls it.
 
@@ -42,11 +42,11 @@ Inplace refactorings are great, but PyCharm can also help you with much more rob
 
 To extract a method you can either use (**⌥⌘M** |**Ctrl+Alt+M**), or the **Refactor This** menu which is (**⌃T**| **Ctrl+Alt+Shift+T**). Let’s take this code fragment as an example. Let's select it, and invoke the ‘Refactor this’ men and choose **Extract Method**.
 
-<img src="refactor-this.png" alt="Refactor This" width="300"/>
+<img src="refactor-this.png" alt="Refactor This" width="400"/>
 
 We can now give the new method a name and click **OK**. PyCharm will now create a function in the class with the name we gave and called it from the previous place. 
 
-<img src="refactored.png" alt="refactored" width="200"/>
+<img src="refactored.png" alt="refactored" width="400"/>
 
 Of course, your code will still run exactly as it did before!
 

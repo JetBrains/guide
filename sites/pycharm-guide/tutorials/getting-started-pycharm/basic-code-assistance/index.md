@@ -19,11 +19,11 @@ In the previous step, we saw how PyCharm makes it easy to work with your project
 
 First off, let’s talk about context-aware code completion, where the IDE uses all kinds of smarts to help you finish your typing. Live Templates are one such example. The keyboard shortcut is (**⌘J** | **Ctrl+J**) but PyCharm will invoke them by default when you start typing some code that matches a Live Template. You can find a list of Live Templates in your Preferences/Settings (**⌘,** | **Ctrl+Alt+S**) and you can also [add your own](https://www.jetbrains.com/help/pycharm/creating-and-editing-live-templates.html).
 
-<img src="live_templates.png" alt="Live Templates" width="400"/>
+<img src="live_templates.png" alt="Live Templates" width="700"/>
 
 PyCharm also offers you basic and type-based smart completion. For example, if we start typing something, PyCharm prompts with options to complete your code, so you won’t need to type the full line. For example, if you have this code in the above class and type in `C`, PyCharm will offer you `Car`.
 
-<img src="basic-completion.png" alt="Basic Code Completion" width="400"/>
+<img src="basic-completion.png" alt="Basic Code Completion" width="700"/>
 
 If it’s the correct completion, as it is in this case, we can press *Enter*, and PyCharm will complete the line for you. If the correct completion is in the list, but not selected, you can use the arrows in your keyboard to go up and down to select it and then press **Enter**. And finally, if the correct completion is not in the list yes, you can keep typing until PyCharm figures it out for you.
 
@@ -33,7 +33,7 @@ Here's a cool tip - while **Enter** adds the suggested completion, you can also 
 
 Code completion is also available for keywords. Let’s say you want to import a package. If you start typing `i` at the top of your file, PyCharm will immediately offer `import` as a possible completion.
 
-<img src="import-basic-completion.png" alt="Import Basic Code Completion" width="500"/>
+<img src="import-basic-completion.png" alt="Import Basic Code Completion" width="700"/>
 
 The cool thing about code completion is that you can also use it in many other places, including method parameters, Dictionaries, Django templates, inside f-strings, and much  more. Check out [the documentation](https://www.jetbrains.com/help/pycharm/auto-completing-code.html) for more details.
 
@@ -47,7 +47,7 @@ So next time you hear your laptop fans right after you open a new project, have 
 
 Another productivity booster that you might take for granted is syntax highlighting. In this scre=ipt, PyCharm automatically detects keywords such as `def`, `for`, `while`, as well as class names, parameters, etc, and renders them in different colors.
 
-<img src="editor-colours.png" alt="Colours in the editor" width="400"/>
+<img src="editor-colours.png" alt="Colours in the editor" width="700"/>
 
 This makes it easier for you to scan your code, quickly recognize errors, and have a better overview of your code structure. You can update the color scheme if you prefer. To see how, [check out the documentation](https://www.jetbrains.com/help/pycharm/configuring-colors-and-fonts.html).
 
@@ -60,7 +60,7 @@ PyCharm will offer to **Replace boolean expression with sudden**. Intention acti
 
 Let’s say you want to invert this `if` condition. If you position my caret here (show) PyCharm offers to handle it for you. 
 
-<img src="invert-if-condition.png" alt="Invert if condition" width="400"/>
+<img src="invert-if-condition.png" alt="Invert if condition" width="700"/>
 
 I can also undo this to go back to the way the code was if I want to. 
 
@@ -70,7 +70,7 @@ We can see one example of a quick fix if we try to use a package without install
 
 We’ve written the method mentioning the package `requests` but haven’t installed it yet. Let’s see what PyCharm offers us, using (**⌥⏎** | **Alt+Enter**) this time.
 
-<img src="error-intentions.png" alt="Error intentions" width="400"/>
+<img src="error-intentions.png" alt="Error intentions" width="700"/>
 
 `Install and import package requests` sounds like what we need, so this is what we'll select it. As you see, PyCharm not only installed the package inside my virtual environment, but it also auto-imported it to my script! The red squiggly and the light bulb are gone, and the code should run smoothly now.
 
@@ -84,11 +84,11 @@ When PyCharm finds warnings or errors, besides light bulbs and squiggly lines, i
 
 If you don't want to scroll down your entire file searching for problems, though, the second quick way to spot problems is by checking the Problems widget. 
 
-<img src="problems-widget.png" alt="Problems Widget" width="300"/>
+<img src="problems-widget.png" alt="Problems Widget" width="700"/>
 
 It summarizes errors and warnings and lets you quickly navigate to the Problems Tool window (**⌘6** | **Alt+1**) to have a better description of what is going on. Here we can see the error and quickly navigate to the line where it happens. We can also look across our entire project. 
 
-<img src="problems-tool-window.png" alt="Problems Tool Window" width="400"/>
+<img src="problems-tool-window.png" alt="Problems Tool Window" width="700"/>
 
 Let’s fix this error and use the [code reformat action](https://www.jetbrains.com/help/pycharm/reformat-and-rearrange-code.html#reformat_file) (**⌥⌘L** | **Ctrl+Alt+L**) to put everything in the right place. Now the errors and warnings are gone, and the file is formatted following PEP-8 conventions.
 
