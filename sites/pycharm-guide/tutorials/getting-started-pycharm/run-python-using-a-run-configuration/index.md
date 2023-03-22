@@ -24,7 +24,7 @@ To run your script, you can right-click anywhere inside the editor and click **R
 
 The temporary Run Configuration created by PyCharm is now available in the top bar and can now be reused every time you want to run this script again with the **Play** button.
 
-<img src="run-configuration.png" alt="Run Configuration" width="600"/>
+<img src="run-configuration.png" alt="Run Configuration" width="700"/>
 
 Alternatively If you scroll down, you can see that we have an `if __name__ == '__main__'` block, and it has a *play* icon in the gutter. This is another shortcut to create a temporary Run Configuration. When you click it, a context menu shows up, and the first option says **Run &lt; name of your script &gt;**.
 
@@ -54,7 +54,7 @@ The easiest way to do it is by transforming a temporary Run Configuration into a
 
 You can also use pre-configured templates to create your Run Configurations by opening the **Edit configurations** dialog and clicking on the **plus** button. You can then choose the target you are creating Run Configurations for. Each template has specific fields that are necessary for configuring different targets.
 
-<img src="edit-configurations.png" alt="Editing Run Configurations" width="600"/>
+<img src="edit-configurations.png" alt="Editing Run Configurations" width="700"/>
 
 ## Conclusion
 We saw how to quickly run our Python scripts with temporary Run Configurations, and why sometimes it is handy to create permanent ones.

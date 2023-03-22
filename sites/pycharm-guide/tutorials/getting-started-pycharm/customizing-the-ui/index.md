@@ -22,7 +22,7 @@ The very first thing you may want to do is change the UI theme. To do that, go t
 
 Let’s install one of the most popular themes, ”Dark Purple Theme”. PyCharm has now installed and switched to the community plugin for the Dark Purple theme.
 
-<img src="dark_purple_theme.png" alt="Dark purple theme" width="500"/>
+<img src="dark_purple_theme.png" alt="Dark purple theme" width="700"/>
 
 What if you want to quickly check what the other themes you’ve installed look like? You can go back to Preferences/Settings and change the current theme in **Appearance & Behavior** > **Appearance** or the switcher (**⌃\`** | **Ctrl+`**) to cycle through the themes.
 
@@ -31,7 +31,7 @@ What if you don’t want it to look like an IDE at all? Let’s see how to get a
 
 You can also reposition tool windows and put them where you want them including having them floating on top of the editor or detached completely so that you can view it independently on a different monitor. If you don't like it you can always re-dock it. Another thing you can do to reduce clutter is to hide some UI elements. First, you can customize the Status Bar by right-clicking it and removing any widgets you’re not using.
 
-<img src="status-bar.png" alt="Remove status bar widgets" width="500"/>
+<img src="status-bar.png" alt="Remove status bar widgets" width="700"/>
 
 If you click the quick access button located on the bottom-right of the status bar to remove tool individual tool windows, or better still you can use the shortcuts to toggle them on and off. The most common ones are:
 
@@ -47,7 +47,7 @@ You can modify your keymap in your Preferences/Settings (**⌘** | **Ctrl+Alt+S*
 
 Let’s say you want to know what shortcut is assigned to the *Event Log* action, which is under Tool Windows. This action doesn't have a key binding by default, but you can add one.
 
-<img src="keymap.png" alt="keymap" width="500"/>
+<img src="keymap.png" alt="keymap" width="700"/>
 
 Enter the keys you want to associate with the action and then when you use those keys it will invoke the action, in this case our Event Log.
 
@@ -60,7 +60,7 @@ Apart from theming and keymaps, there are lots of other things you may want to c
 
 You can also change things like your code style by searching for "python", then go to the Python section and make your changes there. For example, you can change the *Hard wrapping* setting to wrap lines at 79 characters to follow the PEP-8 convention.
 
-<img src="hard-wrap-line.png" alt="Hard wrap line" width="500"/>
+<img src="hard-wrap-line.png" alt="Hard wrap line" width="700"/>
 
 The Settings/Preferences window has many options that let you make the IDE look however you want.
 
