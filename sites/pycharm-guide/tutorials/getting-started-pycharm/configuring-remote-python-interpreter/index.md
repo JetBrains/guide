@@ -50,7 +50,7 @@ You can now run this code, but remotely, over SSH. If you want to select an exis
 ## Docker
 Another way you can configure a remote interpreter in PyCharm is with Docker containers. Docker also requires some pre-configuration, so, in order to follow the next steps make sure that you have Docker installed.
 
-In your Preferences/Settings (**⌘** | **Ctrl+Alt+S**) search for *docker* and select *Docker for <your OS here>*. It is under **Build, Execution, Deployment > Docker**.
+In your Preferences/Settings (**⌘** | **Ctrl+Alt+S**) search for *docker* and select *Docker for &lt; your OS here &gt;*. It is under **Build, Execution, Deployment > Docker**.
 
 For this example, I have already created a PyCharm project called *QuadraticEquation* and added a file called `solver.py`. The project has a local interpreter configured inside a virtual environment. Let’s configure a Docker-based remote interpreter for this project.
 
@@ -102,7 +102,7 @@ In the Add Interpreter dialog, select WSL from the list. Let's select the Linux 
 
 <img src="add-wsl.png" alt="Add WSL" width="700"/>
 
-Click **OK** and PyCharm will add the interpreter to the project and set the path mappings. When working in WSL it’s also good to configure your terminal in WSL. You can do this from your Preferences/Settings (**⌘** | **Ctrl+Alt+S**) by searching for *terminal* under **Tools > Terminal**.
+Click **OK** and PyCharm will add the interpreter to the project and set the path mappings. When working in WSL it’s also good to configure your terminal in WSL. You can do this from your Preferences/Settings (**⌘** | **Ctrl+Alt+S**) by searching for *terminal* under **Tools &lt; Terminal**.
 
 Select the subsystem path from the dropdown in the *Shell path* field and click **OK**. Type *wsl.exe* in the Shell path field and click **OK**. You now have a WSL-based Python environment and interpreter to use for this project, just like our other kinds of interpreters.
 

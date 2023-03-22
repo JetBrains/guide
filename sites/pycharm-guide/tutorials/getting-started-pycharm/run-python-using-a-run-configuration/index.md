@@ -26,7 +26,7 @@ The temporary Run Configuration created by PyCharm is now available in the top b
 
 <img src="run-configuration.png" alt="Run Configuration" width="600"/>
 
-Alternatively If you scroll down, you can see that we have an `if __name__ == '__main__'` block, and it has a *play* icon in the gutter. This is another shortcut to create a temporary Run Configuration. When you click it, a context menu shows up, and the first option says **Run <name of your script>**.
+Alternatively If you scroll down, you can see that we have an `if __name__ == '__main__'` block, and it has a *play* icon in the gutter. This is another shortcut to create a temporary Run Configuration. When you click it, a context menu shows up, and the first option says **Run &lt; name of your script &gt;**.
 
 <img src="main-block-run.png" alt="keymap" width="400"/>
 
