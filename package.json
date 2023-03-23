@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev:pycharm": "cd sites/pycharm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --incremental --config=../../eleventy.config.js --serve --watch",
+    "dev:pycharm": "cd sites/pycharm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --serve --incremental",
     "build:pycharm": "npm run clean:pycharm && cd sites/pycharm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --pathprefix=/pycharm/guide",
     "clean:pycharm": "rimraf .11ty-vite sites/pycharm-guide/_site sites/pycharm-guide/.11ty-vite",
     "dev:webstorm": "cd sites/webstorm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --serve --watch",
@@ -45,7 +45,10 @@
     "@fortawesome/fontawesome-free": "^6.3.0",
     "sharp" : "^0.31.3",
     "svgo" : "^3.0.2",
-    "plyr": "^3.7.7"
+    "plyr": "^3.7.7",
+    "sass": "^1.59.3",
+    "bulma": "^0.9.4",
+    "bulma-o-steps" : "^1.1.0"
   },
   "volta": {
     "node": "19.6.0"
