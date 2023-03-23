@@ -60,7 +60,7 @@ export function BaseLayout(
           <title>
             {data.title} - {siteTitle}
           </title>
-          <link rel="stylesheet" href="/assets/guide.css" />
+          <link rel="stylesheet" href="/assets/site.scss" />
           <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
           <link rel="shortcut icon" href="/assets/favicon.ico" />
           <link
