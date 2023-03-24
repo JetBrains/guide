@@ -74,7 +74,7 @@ Sometimes, you need to walk through the execution of your code. This time, inste
 
 <img src="step-into.png" alt="Step Into" width="700"/>
 
-If  we click **Step Over**, we are going to walk through the execution line by line.
+If we click **Step Over**, we are going to walk through the execution line by line.
 
 If you then say **Step Into**, PyCharm will take you into Python’s Random `randint` function. In some cases this can be useful, but most of the time you are trying to solve problems in your own code. Let's stop and restart the debug session, and instead of **Step Into**, let's use PyCharm’s **Step Into My Code**.
 

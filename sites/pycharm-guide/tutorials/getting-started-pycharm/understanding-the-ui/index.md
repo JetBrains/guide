@@ -20,11 +20,11 @@ Gosh, there’s a lot on the screen. How is this UI laid out? What do each of th
 ## The Editor
 When a file is open, it appears in a tab in the editor. When you double-click another file another tab opens. As you can imagine you can close and organize them individually, in many ways.
 
-Inside the editor, on the right-hand side of it, you can see the inspection widget, which you can use to view all the problems in the current file and navigate between them. 
+Inside the editor, on the right-hand side, you can see the inspection widget, which you can use to view all the problems in the current file and navigate between each issue. 
 
 <img src="inspections-widget.png" alt="Inspections Widget" width="200"/>
 
-You can also see errors and warnings in the scrollbars. In the left-hand side of the editor, the gutter shows you your line numbers, icons and allows you to performs several actions such as adding or removing breakpoints by clicking the gutter.
+You can also see errors and warnings in the scrollbars. In the left-hand side of the editor, the gutter shows your line numbers, icons and allows you to perform several actions such as adding or removing breakpoints by clicking the gutter.
 
 You can right-click anywhere in the editor pane to invoke the context menu, which shows the list of actions available in the current context. For some actions, you’ll get popups that let you click through to perform an action. At the bottom of the editor pane, you can also see breadcrumbs. These show the names of the classes, variables, functions, methods, and tags in the file that is currently open. You can use these to navigate quickly through the source code.
 

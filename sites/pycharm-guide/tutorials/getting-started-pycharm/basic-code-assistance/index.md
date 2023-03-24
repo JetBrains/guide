@@ -13,7 +13,7 @@ longVideo:
   url: https://youtu.be/MCsDfAsxG-Q
 ---
 
-In the previous step, we saw how PyCharm makes it easy to work with your project’s Python packages. In this step, we are going to talk about one of the most important reasons to use PyCharm - code assistance. Can the IDE make me more productive?
+In the previous step, we saw how PyCharm makes it easy to work with your project’s Python packages. In this step, we are going to talk about one of the most important reasons to use PyCharm - code assistance. 
 
 ## Code Completion
 
@@ -35,9 +35,9 @@ Code completion is also available for keywords. Let’s say you want to import a
 
 <img src="import-basic-completion.png" alt="Import Basic Code Completion" width="700"/>
 
-The cool thing about code completion is that you can also use it in many other places, including method parameters, Dictionaries, Django templates, inside f-strings, and much  more. Check out [the documentation](https://www.jetbrains.com/help/pycharm/auto-completing-code.html) for more details.
+The cool thing about code completion is that you can also use it in many other places, including method parameters, Dictionaries, Django templates, inside f-strings, and much more. Check out [the PyCharm documentation](https://www.jetbrains.com/help/pycharm/auto-completing-code.html) for more details.
 
-That’s cool, but how does PyCharm do it? We just saw a very simple example, but sometimes you will be working within much more complex projects with multiple inter-dependencies. How can PyCharm understand what class you are about to instantiate, what method you are about to call, and so on?
+That’s cool, but how does PyCharm do it? We just saw a simplified example, but sometimes you will be working within much more complex projects with multiple inter-dependencies. How can PyCharm understand what class you are about to instantiate, what method you are about to call, and so on?
 
 PyCharm examines the code of your entire project and creates a virtual map. This makes PyCharm fully aware of your code and allows actions like code completion to be performed immediately. The process of reading your entire project is called ‘indexing’ and it happens when you open your project, switch between branches, load or unload plugins, or after large external file updates.
 
@@ -49,7 +49,7 @@ Another productivity booster that you might take for granted is syntax highlight
 
 <img src="editor-colours.png" alt="Colours in the editor" width="700"/>
 
-This makes it easier for you to scan your code, quickly recognize errors, and have a better overview of your code structure. You can update the color scheme if you prefer. To see how, [check out the documentation](https://www.jetbrains.com/help/pycharm/configuring-colors-and-fonts.html).
+This makes it easier for you to scan your code, quickly recognize errors, and have a better overview of your code structure. You can update the color scheme if you prefer. To see how, [check out the PyCharm documentation](https://www.jetbrains.com/help/pycharm/configuring-colors-and-fonts.html).
 
 ## Code Intentions
 One of the most important features for improving your code quality is what we call intention actions. As you work in the editor, PyCharm continually analyzes your code to find ways to optimize it and detect errors. Whenever the IDE finds possible improvements it shows a yellow bulb icon next to the current line.

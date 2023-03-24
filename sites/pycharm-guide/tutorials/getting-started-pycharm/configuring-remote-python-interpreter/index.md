@@ -67,7 +67,7 @@ Now it’s time to run our code inside the container. To do that, click the gutt
 <img src="services-window.png" alt="Services Window" width="800"/>
 
 ## Docker Compose
-If you like to run multiple containers instead of one at a time, you could use Docker compose to configure remote Python interpreters in PyCharm.
+If you want to run multiple containers instead of one at a time, you could use Docker compose to configure remote Python interpreters in PyCharm.
 
 In this example we are going to use a Django application with a PostgreSQL database running in a separate container. Let's start by cloning the project from GitHub. In this example we created two containers, one for the database and one for the application, and have Docker Compose linking them together.
 
@@ -92,7 +92,7 @@ We need to update our ‘HOST’ to 0.0.0.0 and click **OK**.
 To run it click the **play** button, wait until everything is launched, and then click the link to open it in the default browser. That’s it, we configured a set of services to run under Docker Compose, integrated into the IDE’s tooling, then successfully launched our app.
 
 ## WSL
-the last way to configure a remote interpreter in PyCharm is using the Windows subsystem for Linux - WSL. This is available for Windows users-only.
+The last way to configure a remote interpreter in PyCharm is using the Windows subsystem for Linux - WSL. This is available for Windows users-only.
 
 First, you need to do some prep from your side. Make sure you have Python installed on your computer and install the Windows Subsystem for Linux and initialize your Linux distribution. You also need to ensure that you have *rsync* installed.
 

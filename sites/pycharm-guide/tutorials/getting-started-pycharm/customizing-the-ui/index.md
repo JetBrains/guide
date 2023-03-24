@@ -18,7 +18,7 @@ In the previous step, we took a tour of the PyCharm UI, in all its IDE glory.
 Did you know you can strip down PyCharm’s IDE UI? Add a new theme and customize the keymap? Even install plugins?
 
 ## Themes
-The very first thing you may want to do is change the UI theme. To do that, go to Preferences/Settings (**⌘** | **Ctrl+Alt+S**) and navigate to the **Appearance** section on the left. You can see that PyCharm comes with some predefined themes, but there’s also a variety of custom ones to choose from. Let’s look in the **Plugins** section and search the marketplace for “theme”.
+The very first thing you may want to do is change the UI theme. To do that, go to Preferences/Settings (**⌘** | **Ctrl+Alt+S**) and navigate to the **Appearance** section on the left. You can see that PyCharm comes with some preinstalled themes, but there’s also a variety of custom ones to choose from. Let’s look in the **Plugins** section and search the marketplace for “theme”.
 
 Let’s install one of the most popular themes, ”Dark Purple Theme”. PyCharm has now installed and switched to the community plugin for the Dark Purple theme.
 
@@ -56,7 +56,7 @@ If you don't know a shortcut, you can also find out what it is in the keymap set
 Of course, you can also change your entire keymap and install plugins for custom keymaps as well. Keeping your hands on the keyboard means customizing it to work the way you want and that's what PyCharm allows you to do.
 
 ## Other Customizations
-Apart from theming and keymaps, there are lots of other things you may want to customize. If you don’t know where a specific setting you want to change is, you can use Find Actions (**⌘⇧A** | **Ctrl+Shift+A**) to find it. For example, perhaps we want to change the default font.
+Apart from theming and keymaps, there are lots of other things you may want to customize. If you don’t know where to find a specific setting, you can use Find Actions (**⌘⇧A** | **Ctrl+Shift+A**) to find it. For example, perhaps we want to change the default font.
 
 You can also change things like your code style by searching for "python", then go to the Python section and make your changes there. For example, you can change the *Hard wrapping* setting to wrap lines at 79 characters to follow the PEP-8 convention.
 

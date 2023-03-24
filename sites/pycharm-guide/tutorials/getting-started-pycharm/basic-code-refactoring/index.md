@@ -26,7 +26,7 @@ Let’s start by changing its signature of a method name. We will add a new para
 
 The first option is **Update usages to reflect signature change...**. When you click it, PyCharm will show you the previous and current method signature, and require a default value so it won’t break our program. At this point PyCharm is using its knowledge of your project acquired during indexing to add the default value to all your current method calls.
 
-PyCharm will update all the usages in your project, so you don't have to go hunting for other places to update. Your code will still compile. 
+PyCharm will update all the usages in your project, so you don't have to go hunting for other places to update. Thankfully, your code will still compile. 
 
 ## Rename
 Renaming is another common type of refactoring. You first write your code, get everything working, and then start making names more meaningful. This is when the rename refactoring comes in handy. As with signature changes, *rename* can also be done in place.

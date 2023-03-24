@@ -39,7 +39,7 @@ In an empty Django project, you can see that the Run Configurations button alrea
 
 <img src="django-run-configuration.png" alt="Django Run Configuration" width="400"/>
 
-When you click the **play** button, PyCharm launches the Django project, including a webserver, so you can click the link in the Run tool window and see your Django project.
+When you click the **play** button, PyCharm launches the Django project, including a web server, so you can click the link in the Run tool window and see your Django project.
 
 <img src="django-project-run-tool-window.png" alt="Django Run Tool Window" width="500"/>
 
@@ -52,7 +52,7 @@ The easiest way to do it is by transforming a temporary Run Configuration into a
 
 <img src="save-main-configuration.png" alt="Save project configuration" width="400"/>
 
-You can also use pre-configured templates to create your Run Configurations by opening the **Edit configurations** dialog and clicking on the **plus** button. You can then choose the target you are creating Run Configurations for. Each template has specific fields that are necessary for configuring different targets.
+You can also use pre-configured templates to create your Run Configurations by opening the **Edit configurations** dialog and clicking on the **plus** button. You can then choose the target you are creating Run Configurations for. You can then choose the Run Configuration targets.
 
 <img src="edit-configurations.png" alt="Editing Run Configurations" width="700"/>
 
