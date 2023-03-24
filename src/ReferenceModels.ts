@@ -5,8 +5,8 @@ import { Static, Type } from "@sinclair/typebox";
 export const ReferenceFrontmatter = Type.Intersect([
   BaseFrontmatter,
   Type.Object({
-    label: Type.Optional(Type.String()), // Can be inferred from parentDir
-    subtitle: Type.Optional(Type.String()),
+    label: Type.Optional(Type.String({ description: "Label of this resource" })), // Can be inferred from parentDir
+    subtitle: Type.Optional(Type.String({ description: "Subtitle of this resource" })),
   }),
 ]);
 export type ReferenceFrontmatter = Static<typeof ReferenceFrontmatter>;

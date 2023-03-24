@@ -6,31 +6,31 @@ import path from "upath";
 export const TipFrontmatter = Type.Intersect([
   ResourceFrontmatter,
   Type.Object({
-    leadin: Type.Optional(Type.String()),
+    leadin: Type.Optional(Type.String({ description: "Tip leadin text" })),
     animatedGif: Type.Optional(
       Type.Object({
-        file: Type.String(),
-        width: Type.Number(),
-        height: Type.Number(),
-      })
+        file: Type.String({ description: "File name of the animated GIF" }),
+        width: Type.Number({ description: "Width the animated GIF should be rendered" }),
+        height: Type.Number({ description: "Height the animated GIF should be rendered" }),
+      }, { description: "Animated GIF to show in this tip" })
     ),
-    screenshot: Type.Optional(Type.String()),
+    screenshot: Type.Optional(Type.String({ description: "File name of a screenshot to show in this tip" })),
     shortVideo: Type.Optional(
       Type.Object({
-        url: Type.String(),
-        posterNumber: Type.Optional(Type.String()),
-        poster: Type.Optional(Type.String()),
-      })
+        url: Type.String({ description: "URL of the video" }),
+        posterNumber: Type.Optional(Type.String({ description: "Poster number to render" })),
+        poster: Type.Optional(Type.String({ description: "File name of a poster to show for this video" })),
+      }, { description: "Short video to show in this tip" })
     ),
     longVideo: Type.Optional(
       Type.Object({
-        url: Type.String(),
-        posterNumber: Type.Optional(Type.String()),
-        poster: Type.Optional(Type.String()),
-      })
+        url: Type.String({ description: "URL of the video" }),
+        posterNumber: Type.Optional(Type.String({ description: "Poster number to render" })),
+        poster: Type.Optional(Type.String({ description: "File name of a poster to show for this video" })),
+      }, { description: "Long video to show in this tip" })
     ),
-    hasBody: Type.Optional(Type.Boolean()),
-    seealso: Type.Optional(Type.Any()),
+    hasBody: Type.Optional(Type.Boolean({ description: "True if body text should be rendered; false otherwise" })),
+    seealso: Type.Optional(Type.Any({ description: "Item(s) to show in the See Also section of this tip" })),
   }),
 ]);
 export type TipFrontmatter = Static<typeof TipFrontmatter>;

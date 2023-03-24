@@ -8,9 +8,9 @@ import { TutorialStep } from "./TutorialStepModels";
 export const TutorialFrontmatter = Type.Intersect([
   ResourceFrontmatter,
   Type.Object({
-    thumbnail: Type.Optional(Type.String()),
-    tutorialItems: Type.Array(Type.String()),
-    videoBottom: Type.Optional(Type.Boolean()),
+    thumbnail: Type.Optional(Type.String({ description: "File name of a thumbnail for this tutorial" })),
+    tutorialItems: Type.Array(Type.String({ description: "Tutorial step(s) that are part of this tutorial" })),
+    videoBottom: Type.Optional(Type.Boolean({ description: "True if video should be rendered at the bottom; false otherwise" })),
   }),
 ]);
 export type TutorialFrontmatter = Static<typeof TutorialFrontmatter>;

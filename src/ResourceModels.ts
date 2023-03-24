@@ -9,8 +9,8 @@ import { DateTime } from "luxon";
 const slugify = require("@sindresorhus/slugify");
 
 export const BaseFrontmatter = Type.Object({
-  resourceType: Type.String(),
-  title: Type.String(),
+  resourceType: Type.Optional(Type.String({ description: "Resource type. Should not be specified manually" })),
+  title: Type.String({ description: "Title of this resource" }),
 });
 export type BaseFrontmatter = Static<typeof BaseFrontmatter>;
 
@@ -28,7 +28,7 @@ export class BaseEntity implements BaseFrontmatter {
   static frontmatterSchema = BaseFrontmatter;
 
   constructor({ data, page }: { data: BaseFrontmatter; page: EleventyPage }) {
-    this.resourceType = data.resourceType;
+    this.resourceType = data.resourceType as string;
     this.slug = page.fileSlug;
     this.title = data.title;
     this.url = page.url;
@@ -48,14 +48,14 @@ export class BaseEntity implements BaseFrontmatter {
 export const ResourceFrontmatter = Type.Intersect([
   BaseFrontmatter,
   Type.Object({
-    author: Type.String(),
-    date: Type.Date(),
-    products: Type.Optional(Type.Array(Type.String())),
-    subtitle: Type.Optional(Type.String()),
-    technologies: Type.Optional(Type.Array(Type.String())),
-    thumbnail: Type.String(),
-    cardThumbnail: Type.Optional(Type.String()),
-    topics: Type.Optional(Type.Array(Type.String())),
+    author: Type.String({ description: "Author of this resource" }),
+    date: Type.Date({ description: "Date this resource was published", ['format']: "date", ['type']: "string" }),
+    products: Type.Optional(Type.Array(Type.String({ description: "Product related to this resource" }))),
+    subtitle: Type.Optional(Type.String({ description: "Subtitle of this resource" })),
+    technologies: Type.Optional(Type.Array(Type.String(), { description: "Technologies related to this resource" })),
+    thumbnail: Type.String({ description: "File name of the thumbnail for this resource" }),
+    cardThumbnail: Type.Optional(Type.String({ description: "File name of the card thumbnail for this resource" })),
+    topics: Type.Optional(Type.Array(Type.String(), { description: "Topics related to this resource" })),
   }),
 ]);
 export type ResourceFrontmatter = Static<typeof ResourceFrontmatter>;

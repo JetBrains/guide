@@ -27,7 +27,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.ignores.add("**/demos/**");
 
-  registerIncludes({ eleventyConfig })
+  registerIncludes({ eleventyConfig }, process.cwd())
     .then((r) => {})
     .catch((e) => console.log(e));
 

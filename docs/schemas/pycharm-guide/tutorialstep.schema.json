@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://www.jetbrains.com/guide/tutorialstep.schema.json",
+  "title": "JetBrains Guide TutorialStep",
+  "properties": {
+    "title": {
+      "description": "Title of this resource",
+      "type": "string"
+    },
+    "author": {
+      "enum": [
+        "mm",
+        "ni",
+        "pwe",
+        "wht"
+      ],
+      "description": "Author of this resource"
+    },
+    "date": {
+      "description": "Date this resource was published",
+      "format": "date",
+      "type": "string"
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "description": "Product related to this resource",
+        "type": "string"
+      }
+    },
+    "subtitle": {
+      "description": "Subtitle of this resource",
+      "type": "string"
+    },
+    "technologies": {
+      "description": "Technologies related to this resource",
+      "type": "array",
+      "items": {
+        "enum": [
+          "angular",
+          "aws",
+          "cra",
+          "django",
+          "fastapi",
+          "jest",
+          "kubernetes",
+          "nodejs",
+          "pytest",
+          "react",
+          "sphinx",
+          "typescript"
+        ]
+      }
+    },
+    "thumbnail": {
+      "description": "File name of the thumbnail for this resource",
+      "type": "string"
+    },
+    "cardThumbnail": {
+      "description": "File name of the card thumbnail for this resource",
+      "type": "string"
+    },
+    "topics": {
+      "description": "Topics related to this resource",
+      "type": "array",
+      "items": {
+        "enum": [
+          "coverage",
+          "database",
+          "debugging",
+          "editing",
+          "ide",
+          "javascript",
+          "navigation",
+          "navigationbar",
+          "python",
+          "running",
+          "speedsearch",
+          "testing",
+          "vcs",
+          "web"
+        ]
+      }
+    },
+    "videoBottom": {
+      "description": "True if video should be rendered at the bottom; false otherwise",
+      "type": "boolean"
+    },
+    "longVideo": {
+      "description": "Long video to show in this tip",
+      "type": "object",
+      "properties": {
+        "url": {
+          "description": "URL of the video",
+          "type": "string"
+        },
+        "posterNumber": {
+          "description": "Poster number to render",
+          "type": "string"
+        },
+        "poster": {
+          "description": "File name of a poster to show for this video",
+          "type": "string"
+        }
+      },
+      "required": [
+        "url"
+      ]
+    }
+  },
+  "type": "object",
+  "required": [
+    "title",
+    "author",
+    "date",
+    "thumbnail"
+  ]
+}

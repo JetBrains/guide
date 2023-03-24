@@ -7,13 +7,13 @@ import { Tutorial } from "./TutorialModels";
 export const TutorialStepFrontmatter = Type.Intersect([
   ResourceFrontmatter,
   Type.Object({
-    videoBottom: Type.Optional(Type.Boolean()),
+    videoBottom: Type.Optional(Type.Boolean({ description: "True if video should be rendered at the bottom; false otherwise" })),
     longVideo: Type.Optional(
       Type.Object({
-        url: Type.String(),
-        posterNumber: Type.Optional(Type.String()),
-        poster: Type.Optional(Type.String()),
-      })
+        url: Type.String({ description: "URL of the video" }),
+        posterNumber: Type.Optional(Type.String({ description: "Poster number to render" })),
+        poster: Type.Optional(Type.String({ description: "File name of a poster to show for this video" })),
+      }, { description: "Long video to show in this tip" })
     ),
   }),
 ]);

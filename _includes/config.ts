@@ -6,14 +6,17 @@ import {
 } from "../src/registration";
 import {Resource} from "../src/ResourceModels";
 import {ReferenceFrontmatter} from "../src/ReferenceModels";
-import {Author} from "./references/author/AuthorModels";
-import {Product} from "./references/product/ProductModels";
-import {Technology} from "./references/technology/TechnologyModels";
-import {Topic} from "./references/topic/TopicModels";
-import {Tip} from "./resources/tip/TipModels";
-import {Tutorial} from "./resources/tutorial/TutorialModels";
-import {TutorialStep} from "./resources/tutorial/TutorialStepModels";
-import {Playlist} from "./resources/playlist/PlaylistModels";
+import {Author, AuthorFrontmatter} from "./references/author/AuthorModels";
+import {Product, ProductFrontmatter} from "./references/product/ProductModels";
+import {Technology, TechnologyFrontmatter} from "./references/technology/TechnologyModels";
+import {Topic, TopicFrontmatter} from "./references/topic/TopicModels";
+import {Tip, TipFrontmatter} from "./resources/tip/TipModels";
+import {Tutorial, TutorialFrontmatter} from "./resources/tutorial/TutorialModels";
+import {TutorialStep, TutorialStepFrontmatter} from "./resources/tutorial/TutorialStepModels";
+import {Playlist, PlaylistFrontmatter} from "./resources/playlist/PlaylistModels";
+import {dumpSchemas} from "../src/schemas";
+import path from "upath";
+import * as fs from "fs";
 
 export const resourceCollections = {
     playlist: Playlist,
@@ -28,11 +31,12 @@ export const referenceCollections = {
     topic: Topic,
 };
 
+
 export const rootPath = "sites/webstorm-pycharm-webstorm-guide";
 
 export async function registerIncludes({
                                            eleventyConfig,
-                                       }: RegisterIncludesProps) {
+                                       }: RegisterIncludesProps, sitePath: string) {
     let allCollections: any;
 
     eleventyConfig.addExtension(["11ty.jsx", "11ty.ts", "11ty.tsx"], {
@@ -49,7 +53,8 @@ export async function registerIncludes({
 
     let allResourcesList: Resource[];
     let allReferencesList: ReferenceFrontmatter[];
-    eleventyConfig.addCollection(
+    eleventyConfig.
+    addCollection(
         `allResources`,
         async function (collectionApi: CollectionApi) {
             // Get all the collection results
@@ -62,6 +67,21 @@ export async function registerIncludes({
             // Update closure value so we can add function
             allResourcesList = Array.from(allCollections.allResources.values());
             allReferencesList = Array.from(allCollections.allReferences.values());
+
+            // Generate JSON Schemas
+            const schemas = {
+              "Tip": TipFrontmatter,
+              "Tutorial": TutorialFrontmatter,
+              "TutorialStep": TutorialStepFrontmatter,
+              "Playlist": PlaylistFrontmatter,
+              "Author": AuthorFrontmatter,
+              "Technology": TechnologyFrontmatter,
+              "Topic": TopicFrontmatter,
+              "Product": ProductFrontmatter,
+            };
+            const schemasOutputPath = path.join("..", "..", "docs", "schemas", path.basename(sitePath));
+            fs.mkdirSync(schemasOutputPath, { recursive: true });
+            await dumpSchemas(schemas, allReferencesList, schemasOutputPath);
 
             return allCollections.allResources;
         }

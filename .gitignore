@@ -27,3 +27,4 @@ _site
 public/assets/img
 /coverage/
 sites/*/.11ty-vite
+.idea/jsonSchemas.yml
