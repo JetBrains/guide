@@ -156,7 +156,7 @@ test("should start at another value", () => {
 As before, our test fails, but before that, our IDE warns us that we have violated the `<Counter />` contract. 
 In fact, we probably figured that out as we typed -- no autocompletion on a `start` prop for the component.
 
-![No Start Prop Allowed](screenshots/red_squiggly_start.png)
+![No Start Prop Allowed](./screenshots/red_squiggly_start.png)
 
 We'll fix the type definition in `Counter.tsx` to allow this prop -- a number -- to be passed to the component:
 

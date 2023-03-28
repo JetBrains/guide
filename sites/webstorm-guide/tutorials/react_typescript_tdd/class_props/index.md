@@ -75,7 +75,7 @@ export class Counter extends Component {
 Back in our test, click on `<Counter/>` and hit `Alt-Enter` to resolve the import. 
 Save the file and see that your test passes:
 
-![First Tests](screenshots/first_tests.png)
+![First Tests](./screenshots/first_tests.png)
 
 Not a bad first step.
 

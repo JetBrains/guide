@@ -1,6 +1,6 @@
 ---
 date: 2020-03-16
-title: Adding script Tag
+title: Adding <script> Tag
 subtitle: Get help when adding the script element.
 technologies: [html]
 topics: []
@@ -15,5 +15,5 @@ animatedGif:
   width: 600
   height: 300
 leadin: |
-  Drag the script file to your HTML code and drop it there to quickly add the `script` tag.
+  Drag the script file to your HTML code and drop it there to quickly add the `<script>` tag.
   

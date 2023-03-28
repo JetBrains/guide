@@ -8,16 +8,14 @@ let lunrIndex;
 let documents;
 
 if (searchButton) {
-
-  document.addEventListener("click", function(event) {
+  document.addEventListener("click", function (event) {
     // If user clicks inside the element, do nothing
-    if (event.target.closest(`#${searchDropdown.id}`)) return
+    if (event.target.closest(`#${searchDropdown.id}`)) return;
     // If user clicks outside the element, hide it!
     searchDropdown.classList.remove("is-active");
-  })
+  });
 
   searchButton.addEventListener("click", async () => {
-
     if (searchDropdown) {
       searchDropdown.classList.toggle("is-active");
       if (searchDropdown.classList.contains("is-active")) {
@@ -31,18 +29,19 @@ if (searchButton) {
       const json = await response.json();
       documents = json.results;
 
+      console.log(documents);
+
       // load lunar search index
-      lunrIndex = lunr(function() {
+      lunrIndex = lunr(function () {
         this.ref("url");
         this.field("title");
         this.field("subtitle");
 
-        documents.forEach(function(doc, index) {
+        documents.forEach(function (doc, index) {
           this.add(doc);
         }, this);
       });
     }
-
   });
 }
 
@@ -63,18 +62,18 @@ if (searchInput) {
 
 function findSearchResults(query) {
   const limit = 10;
-  let results = lunrIndex.search(query).map(function(result) {
-    return documents.find(function(page) {
+  let results = lunrIndex.search(query).map(function (result) {
+    return documents.find(function (page) {
       return page.url === result.ref;
     });
   });
-  
+
   const description =
     results.length === 0
       ? "<p>No results have been found</p>"
       : `<p>Showing ${Math.min(limit, results.length)} of ${
-        results.length
-      } results</p>
+          results.length
+        } results</p>
     `;
 
   const list = results.slice(0, limit).map((result) => {
@@ -90,13 +89,15 @@ function findSearchResults(query) {
   return `<div class="panel-block">${description}</div>\n${list.join("")}`;
 }
 
-if (!Element.prototype.matches) Element.prototype.matches = Element.prototype.msMatchesSelector;
-if (!Element.prototype.closest) Element.prototype.closest = function (selector) {
-  let el = this;
-  while (el) {
-    if (el.matches(selector)) {
-      return el;
+if (!Element.prototype.matches)
+  Element.prototype.matches = Element.prototype.msMatchesSelector;
+if (!Element.prototype.closest)
+  Element.prototype.closest = function (selector) {
+    let el = this;
+    while (el) {
+      if (el.matches(selector)) {
+        return el;
+      }
+      el = el.parentElement;
     }
-    el = el.parentElement;
-  }
-};
+  };

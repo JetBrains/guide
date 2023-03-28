@@ -7,7 +7,7 @@
     "dev:pycharm": "cd sites/pycharm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --serve --incremental",
     "build:pycharm": "npm run clean:pycharm && cd sites/pycharm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --pathprefix=/pycharm/guide",
     "clean:pycharm": "rimraf .11ty-vite sites/pycharm-guide/_site sites/pycharm-guide/.11ty-vite",
-    "dev:webstorm": "cd sites/webstorm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --serve --watch",
+    "dev:webstorm": "cd sites/webstorm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --serve --incremental",
     "build:webstorm": "npm run clean:webstorm && cd sites/webstorm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --pathprefix=/webstorm/guide",
     "clean:webstorm": "rimraf sites/webstorm-guide/_site sites/webstorm-guide/.11ty-vite",
     "clean": "npm run clean:pycharm && npm run clean:webstorm",

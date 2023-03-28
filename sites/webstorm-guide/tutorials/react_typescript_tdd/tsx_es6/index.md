@@ -98,13 +98,13 @@ export function Heading() {
 As a note, since so much of React is about refactoring big components into small "presentation" components, the IDE can automate this.
 Instead of typing the above, we could just select `<h1>Hello React</h1>`, invoked Refactor, and chosen `Extract Component`.
 
-![Extract Component](screenshots/extract_component.png)
+![Extract Component](./screenshots/extract_component.png)
 
 With this component in place, we can now go back to the test and import it.
 Instead of doing so manually, click on `<Heading />`, hit `Alt-Enter`, and choose `Add import statement`.
 When you save, the test re-runs, and now both tests pass:
 
-![Tests Pass](screenshots/tests_pass.png)
+![Tests Pass](./screenshots/tests_pass.png)
 
 Note that our `App` component isn't yet using this.
 Change the `App` to call the component:
@@ -139,7 +139,7 @@ test("renders heading with argument", () => {
 Thanks to TypeScript and the IDE, we "failed faster": it immediately told us, with a red-squiggly, that we violated the contract.
 `Heading` doesn't take a `name` prop.
 
-![Red Squiggly](screenshots/red_squiggly.png)
+![Red Squiggly](./screenshots/red_squiggly.png)
 
 Let's head to the `Heading` component and fix it:
 
@@ -241,7 +241,7 @@ This is another frequent task which the IDE can automate.
 Click somewhere in `Heading`, open the Refactor menu, and select `Move`.
 You will get a dialog like this:
 
-![Move Members](screenshots/move.png)
+![Move Members](./screenshots/move.png)
 
 Make sure to choose `HeadingProps` as part of the move, and optionally do a preview first.
 Once done, the IDE will make the following changes for you:
@@ -287,7 +287,7 @@ export default App;
 We have one more step we can take with "single responsibility principle": move the `Heading` tests to their own `Heading.test.tsx` file.
 When you do so, the test runner will now show two "suites" of tests, from `Heading.test.tsx` and `App.test.tsx`:
 
-![Two Suites](screenshots/two_suites.png)
+![Two Suites](./screenshots/two_suites.png)
 
 ## JSX/TSX
 
@@ -311,7 +311,7 @@ Error:(6, 14) TS2322: Type '{ children: string[]; class: string; }' is not assig
 Also, the IDE refuses to autocomplete on `class`. 
 It does, though, autocomplete on `className`, the JSX/TSX equivalent:
 
-![Autocomplete](screenshots/class_name.png)
+![Autocomplete](./screenshots/class_name.png)
 
 Accepting the autocomplete shows that the IDE fills in `{}` for an attribute value instead of double-quotes. 
 What's the difference? 

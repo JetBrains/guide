@@ -10,15 +10,7 @@ export type ResourceCardProps = {
   resource: Resource;
 };
 const ResourceCard = ({
-  resource: {
-    url,
-    title,
-    resourceType,
-    displayDate,
-    subtitle,
-    thumbnail,
-    references,
-  },
+  resource: { url, title, displayDate, subtitle, thumbnail, references },
 }: ResourceCardProps): JSX.Element => {
   // @ts-ignore
   const { author, products, technologies, topics } = references;
@@ -34,9 +26,7 @@ const ResourceCard = ({
           <div className="content">
             <div className="content bio-resourcecard-props">
               <a aria-label={`Resource`} href={url}>
-                <strong>
-                  {title} {resourceType && <small>({resourceType})</small>}
-                </strong>
+                <strong>{title}</strong>
               </a>
               {subtitle && <div style="min-height: 2.2rem">{subtitle}</div>}
             </div>

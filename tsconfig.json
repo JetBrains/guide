@@ -25,6 +25,7 @@
     "src",
     "_includes",
     "public",
-    "node_modules/vitest/globals.d.ts"
+    "node_modules/vitest/globals.d.ts",
+    "sites/*/index*.tsx"
   ]
 }

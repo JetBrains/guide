@@ -19,4 +19,3 @@ animatedGif:
 leadin: |
   Want to take a brief look at the currently available run configurations before using one of them? 
   Press *Ctrl+Alt+R* on macOS or *Alt+Shift+F10* on Windows/Linux and select the run configuration you want to use from the list.
----

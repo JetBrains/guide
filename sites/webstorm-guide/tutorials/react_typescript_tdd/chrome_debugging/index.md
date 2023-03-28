@@ -29,12 +29,12 @@ It's possible the IDE has already generated a `Debug Application` run config for
 If not, add a new run configuration of type `JavaScript Debug` and supply a `Name:` such as `Debug Application`.
 As we saw in the first section, the webpack development server runs on port 3000, so provide the run configuration a `URL:` of `http://localhost:3000`. Finally, choose Chrome in the `Browser:` field.
 
-![JavaScript Debug Run Configuration Type](screenshots/run_configuration.png)
+![JavaScript Debug Run Configuration Type](./screenshots/run_configuration.png)
 
 Click `Ok` to save this new run configuration, then run it by clicking the green play button in the toolbar.
 Presuming that your npm `start` is *still running*, you should see a browser launched.
 
-![Run npm start browser](screenshots/run_start_browser.png)
+![Run npm start browser](./screenshots/run_start_browser.png)
 
 This is an isolated Chrome instance running in a cleared profile, with no history nor cookies.
 Finish up by closing that new browser window.
@@ -48,7 +48,7 @@ Then, re-run the `JavaScript Debug` configuration you just made, but this time, 
 Chrome should pop up.
 Reload the URL and focus shifts to the IDE, with execution stopped on the line of the breakpoint.
 
-![Stop At Breakpoint](screenshots/stop_execution.png)
+![Stop At Breakpoint](./screenshots/stop_execution.png)
 
 You can do the same debugging tasks as before:
 

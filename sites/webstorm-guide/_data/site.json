@@ -1,10 +1,10 @@
 {
   "siteLogo": "jetbrains-simple.svg",
   "siteTitle": "WebStorm Guide",
-  "siteDescription": "",
+  "siteDescription": "Be more productive and write high-quality code faster with a series of tips and tricks",
   "siteUrl": "https://www.jetbrains.com/webstorm/guide",
   "copyright": "Copyright © 2000–2023 <a href=\"https://www.jetbrains.com/\">JetBrains</a> s.r.o.",
-  "googleTagManagerId" : "GTM-5P98",
+  "googleTagManagerId": "GTM-5P98",
   "start": {
     "items": [
       {
@@ -22,13 +22,6 @@
         "icon": "fas fa-tasks"
       },
       {
-        "accent": "warning",
-        "cssClass": "documentation",
-        "href": "/playlists/",
-        "label": "Playlists",
-        "icon": "fas fa-list"
-      },
-      {
         "accent": "danger",
         "cssClass": "documentation",
         "href": "/technologies/",
@@ -41,6 +34,13 @@
         "href": "/topics/",
         "label": "Topics",
         "icon": "fas fa-project-diagram"
+      },
+      {
+        "accent": "warning",
+        "cssClass": "documentation",
+        "href": "/about/",
+        "label": "About",
+        "icon": "fas fa-file"
       }
     ]
   },
@@ -48,8 +48,8 @@
     "buttons": [
       {
         "accent": "light",
-        "href": "https://www.jetbrains.com/pycharm/download/",
-        "label": "Get PyCharm"
+        "href": "https://www.jetbrains.com/webstorm/download/",
+        "label": "Get WebStorm"
       }
     ],
     "links": [
@@ -60,7 +60,7 @@
       },
       {
         "color": "55acee",
-        "href": "https://twitter.com/pycharm",
+        "href": "https://twitter.com/WebStormIDE",
         "icon": "twitter"
       }
     ]

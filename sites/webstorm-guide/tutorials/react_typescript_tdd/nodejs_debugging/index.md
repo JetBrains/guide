@@ -129,7 +129,7 @@ In the last `generates a label` test, change the `result` to `const result = lab
 
 First, note that TypeScript warned that the supplied value was not assignable to a string:
 
-![TypeScript Error](screenshots/ts_error.png)
+![TypeScript Error](./screenshots/ts_error.png)
 
 This is the *beauty* of TypeScript. 
 Especially in test-writing, it helps you "fail faster".
@@ -140,7 +140,7 @@ Let's go ahead and debug this.
 See the red squiggly under `label`?
 Hover over it and you will get an inline panel showing more information:
 
-![Red Squiggly](screenshots/red_squiggly.png)
+![Red Squiggly](./screenshots/red_squiggly.png)
 
 One of the options provided by this inline panel: `Debug 'generates a label'`.
 This does several things:
@@ -153,11 +153,11 @@ Click the `Step Into` button in the debugger to step into our function call.
 Execution stops in our function.
 We can inspect the local values and see that `name` is `42`.
 
-![Stop at Breakpoint](screenshots/stop_at_breakpoint.png)
+![Stop at Breakpoint](./screenshots/stop_at_breakpoint.png)
 
 We can now poke and prod our code interactively, in the execution context where it fails. 
 
-![Evaluate Expression](screenshots/evaluate_expression.png)
+![Evaluate Expression](./screenshots/evaluate_expression.png)
 
 This is a very productive development cycle: write tests, when stuck, use the debugger. 
 No flailing around with `console.log` in a browser's dev tools window.

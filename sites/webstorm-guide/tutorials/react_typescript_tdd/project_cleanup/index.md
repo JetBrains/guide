@@ -87,7 +87,7 @@ function App() {
 In the IDE, you can quickly generate markup using [Emmet](../../../technologies/emmet). 
 Highlight the existing `div` to replace and enter `div>h1<enter>Hello React`:
 
-![Use Emmet to generate HTML markup](screenshots/emmet.png)
+![Use Emmet to generate HTML markup](./screenshots/emmet.png)
 
 We have an ESLint `Unused import` error on line 2, which we can see by hovering over the gray squiggly line: `Unused import logo from "./logo.svg"`
 
@@ -104,7 +104,7 @@ While you're at it:
 With the IDE, when you do a delete, you're actually doing a "Safe Delete", with the option to look for places in the project where you might have used it.
 Give it a try by starting the delete process on `index.css`. The IDE will warn you:
 
-![Safe Delete](screenshots/safe_delete.png)
+![Safe Delete](./screenshots/safe_delete.png)
 
 ## More IDE Goodies
 
@@ -119,12 +119,12 @@ import { Component } from "react";
 
 The IDE tells you about the error, with a red squiggly on the `<div>` in the JSX.
 
-![Get warnings on missing imports](screenshots/missing_import.png)
+![Get warnings on missing imports](./screenshots/missing_import.png)
 
 Click on the red squiggly, then `Alt-Enter` and choose `Import default 'React' from module "react"`. 
 The IDE generates the proper import:
 
-![Let the IDE generate missing imports](screenshots/add_import.png)
+![Let the IDE generate missing imports](./screenshots/add_import.png)
 
 Once finished, invoke `Optimize Imports` (`Ctrl-Alt-O` for Win/Linux and macOS) to get rid of the `Component` import.
 
@@ -144,7 +144,7 @@ Bleh.
 Can't we let the IDE do it for me? 
 Click on `App` in `function App` and hit `Ctrl-T`, then choose `Rename` to Refactor Rename the function to `MyApp`:
 
-![Let the IDE rename symbols](screenshots/refactor_rename.png)
+![Let the IDE rename symbols](./screenshots/refactor_rename.png)
 
 In the tool window showing you the consequences, choose `Do Refactor`.
 
