@@ -58,7 +58,7 @@
       "type": "string"
     },
     "cardThumbnail": {
-      "description": "File name of the card thumbnail for this resource",
+      "description": "File name of the social card thumbnail for this resource",
       "type": "string"
     },
     "topics": {

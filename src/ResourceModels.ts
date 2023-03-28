@@ -54,7 +54,7 @@ export const ResourceFrontmatter = Type.Intersect([
     subtitle: Type.Optional(Type.String({ description: "Subtitle of this resource" })),
     technologies: Type.Optional(Type.Array(Type.String(), { description: "Technologies related to this resource" })),
     thumbnail: Type.String({ description: "File name of the thumbnail for this resource" }),
-    cardThumbnail: Type.Optional(Type.String({ description: "File name of the card thumbnail for this resource" })),
+    cardThumbnail: Type.Optional(Type.String({ description: "File name of the social card thumbnail for this resource" })),
     topics: Type.Optional(Type.Array(Type.String(), { description: "Topics related to this resource" })),
   }),
 ]);
