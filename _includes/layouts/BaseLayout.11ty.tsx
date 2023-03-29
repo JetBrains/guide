@@ -17,7 +17,7 @@ export type BaseLayoutProps = {
   subtitle?: string;
   longVideo?: object;
   shortVideo?: object;
-  resourceType: string;
+  resourceType?: string;
 } & LayoutProps;
 
 export function BaseLayout(
@@ -38,7 +38,7 @@ export function BaseLayout(
   const { siteTitle, copyright, siteUrl } = site;
 
   // TODO This is a hack. Bake it into the contract.
-  const hasVideo = longVideo || shortVideo || resourceType == "playlist";
+  const hasVideo = longVideo || shortVideo || (resourceType && resourceType == "playlist");
 
   // determine if there's an og:image
   let cardThumbnail;
