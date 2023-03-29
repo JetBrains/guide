@@ -132,7 +132,7 @@ fun StepsScope.deploySite(siteShortName: String, siteLongName: String, siteDirec
             val gitBranch = api.gitBranch()
             if (gitBranch.startsWith("refs/heads/")) {
                 val cleanGitBranch = gitBranch.replace("refs/heads/", "").replace("/", "-").replace("_", "-")
-                val siteName = "preview-" + if (cleanGitBranch == "main") {
+                val siteName = if (cleanGitBranch == "main") {
                     siteShortName
                 } else {
                     "$siteShortName-$cleanGitBranch"
