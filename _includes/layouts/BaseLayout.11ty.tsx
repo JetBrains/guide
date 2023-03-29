@@ -14,7 +14,7 @@ export type BaseLayoutProps = {
   children: string[];
   site: any;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   longVideo?: string;
   shortVideo?: string;
   resourceType: string;
@@ -70,7 +70,7 @@ export function BaseLayout(
             href="/rss.xml"
           />
           <meta property="og:title" content={title} />
-          <meta property="og:description" content={subtitle} />
+          {subtitle && <meta property="og:description" content={subtitle}/>}
           <meta property="og:type" content="article" />
           <meta property="article:published_time" content="2023-02-17" />
           <meta property="article:author" content="" />
