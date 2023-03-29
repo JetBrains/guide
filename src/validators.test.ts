@@ -29,6 +29,6 @@ test("validates bad frontmatter", () => {
   const frontmatter = { age: 49 };
   const validation = () =>
     validateFrontmatter(TipFrontmatter, frontmatter, "tip1.md");
-  expect(validation).toThrow("Expected required");
+  expect(validation).toThrow("Validation failure");
   expect(validation).toThrow("tip1.md");
 });
