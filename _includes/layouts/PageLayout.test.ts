@@ -9,8 +9,9 @@ test("should render PageLayout", () => {
         ...baseRenderData,
         ...tip0.data,
         page: tip0.page,
+        content: "<p>Hello world</p>"
     };
 
     document.body.innerHTML = PageLayout.call(fixtures.context, pageLayoutData);
-    expect(screen.getByText("world")).to.exist;
+    expect(screen.getByText("Hello world")).to.exist;
 });

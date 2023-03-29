@@ -737,7 +737,7 @@ const site = {
 export const commandLineArgs = {pathprefix: undefined};
 
 export const baseRenderData = {
-    collections,
+    collections: resolvedCollections,
     commandLineArgs,
     content: "",
     site,
