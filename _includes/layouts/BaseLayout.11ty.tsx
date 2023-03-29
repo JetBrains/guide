@@ -15,8 +15,8 @@ export type BaseLayoutProps = {
   site: any;
   title: string;
   subtitle?: string;
-  longVideo?: string;
-  shortVideo?: string;
+  longVideo?: object;
+  shortVideo?: object;
   resourceType: string;
 } & LayoutProps;
 
