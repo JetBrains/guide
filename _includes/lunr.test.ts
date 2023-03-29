@@ -1,14 +1,11 @@
-import { expect, test } from "vitest";
-import { LunrLayout} from "./lunr.11ty";
-import fixtures from "./fixtures";
-import { LayoutProps } from "../src/models";
+import {expect, test} from "vitest";
+import {LunrLayout} from "./lunr.11ty";
+import {baseRenderData} from "./fixtures";
+import {LayoutProps} from "../src/models";
 
 const data : LayoutProps = {
-  collections: fixtures.collections,
-  commandLineArgs: { pathprefix: undefined },
+  ...baseRenderData,
   page : { url : "/lunr_index.json", date: new Date(), fileSlug: "lunr_index.json" },
-  site : fixtures.site,
-  content: ''
 }
 
 test("can generate lunr.json", () => {

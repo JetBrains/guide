@@ -1,17 +1,14 @@
-import { expect, test } from "vitest";
+import {expect, test} from "vitest";
 
-import { BaseLayout, BaseLayoutProps } from "./BaseLayout.11ty";
-import fixtures from "../fixtures";
-import { SiteCollections } from "../models";
+import {BaseLayout, BaseLayoutProps} from "./BaseLayout.11ty";
+import fixtures, {baseRenderData} from "../fixtures";
 
 const tip0 = fixtures.tipItems[0];
 const renderProps: BaseLayoutProps = {
+  ...baseRenderData,
   ...tip0.data,
   page: tip0.page,
-  collections: fixtures.resolvedCollections as SiteCollections,
-  content: fixtures.content,
   children: [],
-  site: fixtures.site,
 };
 
 test("BaseLayout", () => {

@@ -1,20 +1,18 @@
-import { expect, test } from "vitest";
-import { screen } from "@testing-library/dom";
+import {expect, test} from "vitest";
+import {screen} from "@testing-library/dom";
 
-import { ProductLayout, ProductLayoutProps } from "./ProductLayout.11ty";
-import fixtures from "../../fixtures";
+import {ProductLayout, ProductLayoutProps} from "./ProductLayout.11ty";
+import fixtures, {baseRenderData} from "../../fixtures";
 
 test("should render ProductLayout", () => {
   const renderProps: ProductLayoutProps = {
-    collections: fixtures.collections,
-    content: fixtures.content,
+    ...baseRenderData,
     ...fixtures.productItems[0].data,
     page: {
       fileSlug: fixtures.products[0].slug,
       url: "some-url",
       date: fixtures.date,
     },
-    site: fixtures.site,
   };
   fixtures.context.getResources = () =>
     Array.from(fixtures.resolvedCollections.allResources.values());
