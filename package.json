@@ -18,7 +18,7 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
     "@11ty/eleventy-plugin-vite": "^4.0.0",
-    "@sinclair/typebox": "^0.25.24",
+    "@sinclair/typebox": "^0.26.8",
     "@testing-library/dom": "^8.20.0",
     "@types/luxon": "^3.2.0",
     "@types/markdown-it": "^12.2.3",
