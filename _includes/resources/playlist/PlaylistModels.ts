@@ -14,7 +14,7 @@ export type PlaylistFrontmatter = Static<typeof PlaylistFrontmatter>;
 export class Playlist extends Resource implements PlaylistFrontmatter {
   playlistItems: string[];
   playlistResources: Resource[];
-  static frontmatterSchema = PlaylistFrontmatter;
+  static frontmatterSchema: any = PlaylistFrontmatter;
 
   constructor({
     data,

@@ -13,7 +13,7 @@ export type AuthorFrontmatter = Static<typeof AuthorFrontmatter>;
 
 export class Author extends Reference implements AuthorFrontmatter {
   thumbnail: string;
-  static frontmatterSchema = AuthorFrontmatter;
+  static frontmatterSchema: any = AuthorFrontmatter;
   static joinKey = "author"; // What field on resource? Used in label namespace.
 
   constructor({ data, page }: { data: AuthorFrontmatter; page: EleventyPage }) {

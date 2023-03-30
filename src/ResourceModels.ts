@@ -9,7 +9,11 @@ import { DateTime } from "luxon";
 const slugify = require("@sindresorhus/slugify");
 
 export const BaseFrontmatter = Type.Object({
-  resourceType: Type.Optional(Type.String({ description: "Resource type. Should not be specified manually" })),
+  resourceType: Type.Optional(
+    Type.String({
+      description: "Resource type. Should not be specified manually",
+    })
+  ),
   title: Type.String({ description: "Title of this resource" }),
 });
 export type BaseFrontmatter = Static<typeof BaseFrontmatter>;
@@ -49,13 +53,37 @@ export const ResourceFrontmatter = Type.Intersect([
   BaseFrontmatter,
   Type.Object({
     author: Type.String({ description: "Author of this resource" }),
-    date: Type.Date({ description: "Date this resource was published", ['format']: "date", ['type']: "string" }),
-    products: Type.Optional(Type.Array(Type.String({ description: "Product related to this resource" }))),
-    subtitle: Type.Optional(Type.String({ description: "Subtitle of this resource" })),
-    technologies: Type.Optional(Type.Array(Type.String(), { description: "Technologies related to this resource" })),
-    thumbnail: Type.String({ description: "File name of the thumbnail for this resource" }),
-    cardThumbnail: Type.Optional(Type.String({ description: "File name of the social card thumbnail for this resource" })),
-    topics: Type.Optional(Type.Array(Type.String(), { description: "Topics related to this resource" })),
+    date: Type.Date({
+      description: "Date this resource was published",
+      ["format"]: "date",
+      ["type"]: "string",
+    }),
+    products: Type.Optional(
+      Type.Array(
+        Type.String({ description: "Product related to this resource" })
+      )
+    ),
+    subtitle: Type.Optional(
+      Type.String({ description: "Subtitle of this resource" })
+    ),
+    technologies: Type.Optional(
+      Type.Array(Type.String(), {
+        description: "Technologies related to this resource",
+      })
+    ),
+    thumbnail: Type.String({
+      description: "File name of the thumbnail for this resource",
+    }),
+    cardThumbnail: Type.Optional(
+      Type.String({
+        description: "File name of the social card thumbnail for this resource",
+      })
+    ),
+    topics: Type.Optional(
+      Type.Array(Type.String(), {
+        description: "Topics related to this resource",
+      })
+    ),
   }),
 ]);
 export type ResourceFrontmatter = Static<typeof ResourceFrontmatter>;
@@ -72,7 +100,7 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
   cardThumbnail?: string;
   topics?: string[];
   references?: References;
-  static frontmatterSchema = ResourceFrontmatter;
+  static frontmatterSchema: any = ResourceFrontmatter;
   static referenceFields = ["author", "products", "technologies", "topics"];
 
   constructor({

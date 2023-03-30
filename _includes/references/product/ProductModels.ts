@@ -13,7 +13,7 @@ export type ProductFrontmatter = Static<typeof ProductFrontmatter>;
 
 export class Product extends Reference implements ProductFrontmatter {
   logo: string;
-  static frontmatterSchema = ProductFrontmatter;
+  static frontmatterSchema: any = ProductFrontmatter;
   static joinKey = "products"; // What field on resource? Used in label namespace.
 
   constructor({

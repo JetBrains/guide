@@ -8,7 +8,7 @@ export type VideoPlayerProps = {
 };
 
 // @ts-ignore
-// todo: poster isn't really required because YouTube has thumbnails
+// TODO: poster isn't really required because YouTube has thumbnails
 const VideoPlayer = ({ source, start, end }: VideoPlayerProps): JSX.Element => {
   return (
     <div

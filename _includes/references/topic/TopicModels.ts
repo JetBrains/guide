@@ -14,7 +14,7 @@ export type TopicFrontmatter = Static<typeof TopicFrontmatter>;
 export class Topic extends Reference implements TopicFrontmatter {
   accent: string;
   icon: string;
-  static frontmatterSchema = TopicFrontmatter;
+  static frontmatterSchema: any = TopicFrontmatter;
   static joinKey = "topics"; // What field on resource? Used in label namespace.
 
   constructor({ data, page }: { data: TopicFrontmatter; page: EleventyPage }) {
