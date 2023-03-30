@@ -67,13 +67,16 @@ export async function resolveAllCollections({
 
     for (const {data, page} of allCollectionItems) {
         const resourceType = getResourceType(data, page);
+        if (resourceType == undefined) {
+            throw new Error(`Missing resourceType for ${page.url}`)
+        }
         try {
-            if (resourceCollections[data.resourceType]) {
+            if (resourceCollections[data.resourceType!]) {
                 const resourceClass = resourceCollections[resourceType];
                 // @ts-ignore
                 const resource = await new resourceClass({data, page}).init();
                 intermediateResources.push(resource);
-            } else if (referenceCollections[data.resourceType]) {
+            } else if (referenceCollections[data.resourceType!]) {
                 const referenceClass = referenceCollections[resourceType];
                 // @ts-ignore
                 const reference = await new referenceClass({data, page}).init();
