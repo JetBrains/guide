@@ -1,7 +1,7 @@
 import Plyr from "plyr";
 
 const onVisible = function (element, callback) {
-  const  options = {
+  const options = {
     root: document,
   };
   const observer = new IntersectionObserver((entries, observer) => {
@@ -16,7 +16,27 @@ const videos = Array.from(document.querySelectorAll(".video-player"));
 videos.forEach((video) => {
   onVisible(video, (entry, observer) => {
     if (entry.intersectionRatio > 0) {
-      new Plyr(entry.target);
+      const start = parseInt(entry.target.dataset.plyrStart);
+      const end = parseInt(entry.target.dataset.plyrEnd);
+      const hasStart = !isNaN(start);
+      const hasEnd = !isNaN(end);
+
+      let config = {};
+      const plyr = new Plyr(entry.target, config);
+
+      plyr.on("playing", () => {
+        if (hasStart && plyr.currentTime < start) {
+          plyr.currentTime = start;
+        }
+      });
+
+      plyr.on("timeupdate", () => {
+        if (hasEnd && plyr.currentTime >= end) {
+          plyr.currentTime = hasStart ? start : 0;
+          plyr.stop();
+        }
+      });
+
       observer.unobserve(entry.target);
     }
   });

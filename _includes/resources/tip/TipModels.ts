@@ -27,6 +27,8 @@ export const TipFrontmatter = Type.Intersect([
         url: Type.String({ description: "URL of the video" }),
         posterNumber: Type.Optional(Type.String({ description: "Poster number to render" })),
         poster: Type.Optional(Type.String({ description: "File name of a poster to show for this video" })),
+        start: Type.Optional(Type.Number({ description: "Where to start the video in seconds" })),
+        end: Type.Optional(Type.Number({ description: "Where to stop the video in seconds" }))
       }, { description: "Long video to show in this tip" })
     ),
     hasBody: Type.Optional(Type.Boolean({ description: "True if body text should be rendered; false otherwise" })),

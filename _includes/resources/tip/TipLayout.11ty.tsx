@@ -117,6 +117,8 @@ export function TipLayout(
               <VideoPlayer
                 source={tip.longVideo.url}
                 poster={tip.longVideo.poster}
+                start={tip.longVideo.start}
+                end={tip.longVideo.end}
               />
             </div>
           )}
