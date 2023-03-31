@@ -2,100 +2,95 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "$id": "https://www.jetbrains.com/guide/playlist.schema.json",
   "title": "JetBrains Guide Playlist",
-  "properties": {
-    "title": {
-      "description": "Title of this resource",
-      "type": "string"
+  "properties": [],
+  "allOf": [
+    {
+      "type": "object",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "resourceType": {
+              "description": "Resource type. Should not be specified manually",
+              "type": "string"
+            },
+            "title": {
+              "description": "Title of this resource",
+              "type": "string"
+            }
+          },
+          "required": [
+            "title"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "author": {
+              "description": "Author of this resource",
+              "type": "string"
+            },
+            "date": {
+              "description": "Date this resource was published",
+              "format": "date",
+              "type": "object",
+              "instanceOf": "Date"
+            },
+            "products": {
+              "type": "array",
+              "items": {
+                "description": "Product related to this resource",
+                "type": "string"
+              }
+            },
+            "subtitle": {
+              "description": "Subtitle of this resource",
+              "type": "string"
+            },
+            "technologies": {
+              "description": "Technologies related to this resource",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "thumbnail": {
+              "description": "File name of the thumbnail for this resource",
+              "type": "string"
+            },
+            "cardThumbnail": {
+              "description": "File name of the social card thumbnail for this resource",
+              "type": "string"
+            },
+            "topics": {
+              "description": "Topics related to this resource",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "author",
+            "date",
+            "thumbnail"
+          ]
+        }
+      ]
     },
-    "author": {
-      "enum": [
-        "hs",
-        "mm",
-        "ni",
-        "pwe",
-        "wht"
-      ],
-      "description": "Author of this resource"
-    },
-    "date": {
-      "description": "Date this resource was published",
-      "format": "date",
-      "type": "string"
-    },
-    "products": {
-      "type": "array",
-      "items": {
-        "description": "Product related to this resource",
-        "type": "string"
-      }
-    },
-    "subtitle": {
-      "description": "Subtitle of this resource",
-      "type": "string"
-    },
-    "technologies": {
-      "description": "Technologies related to this resource",
-      "type": "array",
-      "items": {
-        "enum": [
-          "angular",
-          "aws",
-          "cra",
-          "django",
-          "fastapi",
-          "jest",
-          "kubernetes",
-          "nodejs",
-          "pytest",
-          "react",
-          "sphinx",
-          "typescript"
-        ]
-      }
-    },
-    "thumbnail": {
-      "description": "File name of the thumbnail for this resource",
-      "type": "string"
-    },
-    "cardThumbnail": {
-      "description": "File name of the social card thumbnail for this resource",
-      "type": "string"
-    },
-    "topics": {
-      "description": "Topics related to this resource",
-      "type": "array",
-      "items": {
-        "enum": [
-          "coverage",
-          "database",
-          "debugging",
-          "editing",
-          "ide",
-          "javascript",
-          "navigation",
-          "navigationbar",
-          "python",
-          "running",
-          "speedsearch",
-          "testing",
-          "vcs",
-          "web"
-        ]
-      }
-    },
-    "playlistItems": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+    {
+      "type": "object",
+      "properties": {
+        "playlistItems": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "playlistItems"
+      ]
     }
-  },
-  "type": "object",
-  "required": [
-    "title",
-    "author",
-    "date",
-    "thumbnail",
-    "playlistItems"
   ]
 }

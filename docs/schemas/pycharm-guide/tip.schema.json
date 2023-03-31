@@ -2,173 +2,174 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "$id": "https://www.jetbrains.com/guide/tip.schema.json",
   "title": "JetBrains Guide Tip",
-  "properties": {
-    "title": {
-      "description": "Title of this resource",
-      "type": "string"
-    },
-    "author": {
-      "enum": [
-        "hs",
-        "mm",
-        "ni",
-        "pwe",
-        "wht"
-      ],
-      "description": "Author of this resource"
-    },
-    "date": {
-      "description": "Date this resource was published",
-      "format": "date",
-      "type": "string"
-    },
-    "products": {
-      "type": "array",
-      "items": {
-        "description": "Product related to this resource",
-        "type": "string"
-      }
-    },
-    "subtitle": {
-      "description": "Subtitle of this resource",
-      "type": "string"
-    },
-    "technologies": {
-      "description": "Technologies related to this resource",
-      "type": "array",
-      "items": {
-        "enum": [
-          "angular",
-          "aws",
-          "cra",
-          "django",
-          "fastapi",
-          "jest",
-          "kubernetes",
-          "nodejs",
-          "pytest",
-          "react",
-          "sphinx",
-          "typescript"
-        ]
-      }
-    },
-    "thumbnail": {
-      "description": "File name of the thumbnail for this resource",
-      "type": "string"
-    },
-    "cardThumbnail": {
-      "description": "File name of the social card thumbnail for this resource",
-      "type": "string"
-    },
-    "topics": {
-      "description": "Topics related to this resource",
-      "type": "array",
-      "items": {
-        "enum": [
-          "coverage",
-          "database",
-          "debugging",
-          "editing",
-          "ide",
-          "javascript",
-          "navigation",
-          "navigationbar",
-          "python",
-          "running",
-          "speedsearch",
-          "testing",
-          "vcs",
-          "web"
-        ]
-      }
-    },
-    "leadin": {
-      "description": "Tip leadin text",
-      "type": "string"
-    },
-    "animatedGif": {
-      "description": "Animated GIF to show in this tip",
+  "properties": [],
+  "allOf": [
+    {
       "type": "object",
-      "properties": {
-        "file": {
-          "description": "File name of the animated GIF",
-          "type": "string"
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "resourceType": {
+              "description": "Resource type. Should not be specified manually",
+              "type": "string"
+            },
+            "title": {
+              "description": "Title of this resource",
+              "type": "string"
+            }
+          },
+          "required": [
+            "title"
+          ]
         },
-        "width": {
-          "description": "Width the animated GIF should be rendered",
-          "type": "number"
-        },
-        "height": {
-          "description": "Height the animated GIF should be rendered",
-          "type": "number"
+        {
+          "type": "object",
+          "properties": {
+            "author": {
+              "description": "Author of this resource",
+              "type": "string"
+            },
+            "date": {
+              "description": "Date this resource was published",
+              "format": "date",
+              "type": "object",
+              "instanceOf": "Date"
+            },
+            "products": {
+              "type": "array",
+              "items": {
+                "description": "Product related to this resource",
+                "type": "string"
+              }
+            },
+            "subtitle": {
+              "description": "Subtitle of this resource",
+              "type": "string"
+            },
+            "technologies": {
+              "description": "Technologies related to this resource",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "thumbnail": {
+              "description": "File name of the thumbnail for this resource",
+              "type": "string"
+            },
+            "cardThumbnail": {
+              "description": "File name of the social card thumbnail for this resource",
+              "type": "string"
+            },
+            "topics": {
+              "description": "Topics related to this resource",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "author",
+            "date",
+            "thumbnail"
+          ]
         }
-      },
-      "required": [
-        "file",
-        "width",
-        "height"
       ]
     },
-    "screenshot": {
-      "description": "File name of a screenshot to show in this tip",
-      "type": "string"
-    },
-    "shortVideo": {
-      "description": "Short video to show in this tip",
+    {
       "type": "object",
       "properties": {
-        "url": {
-          "description": "URL of the video",
+        "leadin": {
+          "description": "Tip leadin text",
           "type": "string"
         },
-        "posterNumber": {
-          "description": "Poster number to render",
+        "animatedGif": {
+          "description": "Animated GIF to show in this tip",
+          "type": "object",
+          "properties": {
+            "file": {
+              "description": "File name of the animated GIF",
+              "type": "string"
+            },
+            "width": {
+              "description": "Width the animated GIF should be rendered",
+              "type": "number"
+            },
+            "height": {
+              "description": "Height the animated GIF should be rendered",
+              "type": "number"
+            }
+          },
+          "required": [
+            "file",
+            "width",
+            "height"
+          ]
+        },
+        "screenshot": {
+          "description": "File name of a screenshot to show in this tip",
           "type": "string"
         },
-        "poster": {
-          "description": "File name of a poster to show for this video",
-          "type": "string"
+        "shortVideo": {
+          "description": "Short video to show in this tip",
+          "type": "object",
+          "properties": {
+            "url": {
+              "description": "URL of the video",
+              "type": "string"
+            },
+            "posterNumber": {
+              "description": "Poster number to render",
+              "type": "string"
+            },
+            "poster": {
+              "description": "File name of a poster to show for this video",
+              "type": "string"
+            }
+          },
+          "required": [
+            "url"
+          ]
+        },
+        "longVideo": {
+          "description": "Long video to show in this tip",
+          "type": "object",
+          "properties": {
+            "url": {
+              "description": "URL of the video",
+              "type": "string"
+            },
+            "posterNumber": {
+              "description": "Poster number to render",
+              "type": "string"
+            },
+            "poster": {
+              "description": "File name of a poster to show for this video",
+              "type": "string"
+            },
+            "start": {
+              "description": "Where to start the video in seconds",
+              "type": "number"
+            },
+            "end": {
+              "description": "Where to stop the video in seconds",
+              "type": "number"
+            }
+          },
+          "required": [
+            "url"
+          ]
+        },
+        "hasBody": {
+          "description": "True if body text should be rendered; false otherwise",
+          "type": "boolean"
+        },
+        "seealso": {
+          "description": "Item(s) to show in the See Also section of this tip"
         }
-      },
-      "required": [
-        "url"
-      ]
-    },
-    "longVideo": {
-      "description": "Long video to show in this tip",
-      "type": "object",
-      "properties": {
-        "url": {
-          "description": "URL of the video",
-          "type": "string"
-        },
-        "posterNumber": {
-          "description": "Poster number to render",
-          "type": "string"
-        },
-        "poster": {
-          "description": "File name of a poster to show for this video",
-          "type": "string"
-        }
-      },
-      "required": [
-        "url"
-      ]
-    },
-    "hasBody": {
-      "description": "True if body text should be rendered; false otherwise",
-      "type": "boolean"
-    },
-    "seealso": {
-      "description": "Item(s) to show in the See Also section of this tip"
+      }
     }
-  },
-  "type": "object",
-  "required": [
-    "title",
-    "author",
-    "date",
-    "thumbnail"
   ]
 }
