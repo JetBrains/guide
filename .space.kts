@@ -106,13 +106,25 @@ fun StepsScope.buildSite(siteShortName: String, siteDirectory: String) {
             memory = 8.gb
         }
 
+        cache {
+            storeKey = "assets-$siteDirectory"
+            localPath = "sites/$siteDirectory/_site/assets/"
+        }
+
         shellScript {
-            content = """                
+            content = """
+                ## Capture working directory
+                cwd=${'$'}(pwd)
+                
+                ## Fix permissions on cached assets
+                chmod 0666 -R sites/$siteDirectory/_site/assets/
+                
                 ## Build site
                 npm install
                 npm run build:$siteShortName
-
-                ## Copy site to share
+                cd ${'$'}cwd
+                
+                ## Move site to share
                 mkdir -p /mnt/space/share/_site/$siteShortName
                 cp -r sites/$siteDirectory/_site/ /mnt/space/share/_site/$siteShortName
                 mv /mnt/space/share/_site/$siteShortName/_site /mnt/space/share/_site/$siteShortName/guide
