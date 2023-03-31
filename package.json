@@ -48,7 +48,8 @@
     "plyr": "^3.7.7",
     "sass": "^1.59.3",
     "bulma": "^0.9.4",
-    "bulma-o-steps": "^1.1.0"
+    "bulma-o-steps": "^1.1.0",
+    "freezeframe": "^5.0.2"
   },
   "volta": {
     "node": "19.6.0"

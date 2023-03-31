@@ -65,12 +65,15 @@ export function TipLayout(
     <div className="mb-6">
       <div className="columns">
         {tip.animatedGif && (
-          <img
-            src={tip.animatedGif.file}
-            alt="Tip Screenshot"
-            width="600"
-            style="object-fit: contain; object-position: top"
-          />
+          <div className="column is-three-fifths">
+            <img
+              src={tip.animatedGif.file}
+              alt="Tip Screenshot"
+              width="600"
+              class="animated-gif"
+              style="object-fit: contain; object-position: top"
+            />
+          </div>
         )}
         {tip.screenshot && (
           <img
@@ -90,11 +93,26 @@ export function TipLayout(
         )}
         <div
           className="column content"
-          style="display: flex; justify-content: space-between; flex-direction: column">
+          style="display: flex; justify-content: space-between; flex-direction: column"
+        >
           {leadin && <div dangerouslySetInnerHTML={{ __html: leadin }} />}
           <div>
-            <a href="#in-depth" className="button is-light" style="width: auto;">Learn More</a>
-            {tip.longVideo && <a href="#full-video" className="button is-light" style="width: auto; margin-left: 0.5em;">Full Video</a> }
+            <a
+              href="#in-depth"
+              className="button is-light"
+              style="width: auto;"
+            >
+              Learn More
+            </a>
+            {tip.longVideo && (
+              <a
+                href="#full-video"
+                className="button is-light"
+                style="width: auto; margin-left: 0.5em;"
+              >
+                Full Video
+              </a>
+            )}
           </div>
         </div>
       </div>
@@ -124,7 +142,7 @@ export function TipLayout(
           )}
         </>
       )}
-      {tip.seealso && <SeeAlso items={tip.seealso} /> }
+      {tip.seealso && <SeeAlso items={tip.seealso} />}
     </div>
   );
 
