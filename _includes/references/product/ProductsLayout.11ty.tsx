@@ -25,7 +25,7 @@ export function ProductsLayout(
         >
           <h2 className="bd-link-name">
             <figure className="bd-link-figure">
-              <div className="image is-rounded is-64x64">
+              <div className="image is-64x64">
                 <Thumbnail
                   src={product.logo}
                   alt={`${product.title} image`}
