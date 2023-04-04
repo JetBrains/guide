@@ -4,6 +4,7 @@ import { ReferenceLayout } from "../../layouts/ReferenceLayout.11y";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import { Product, ProductFrontmatter } from "./ProductModels";
 import { Resource } from "../../../src/ResourceModels";
+import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 
 export type ProductLayoutProps = LayoutProps & ProductFrontmatter;
 
@@ -24,9 +25,9 @@ export function ProductLayout(
   );
 
   const figure = (
-    <div className="image is-rounded is-96x96">
+    <div className="image is-96x96">
       <img
-        alt=""
+        alt={product.title}
         className="bio-resourcecard-logo"
         height="96"
         width="96"
@@ -35,15 +36,13 @@ export function ProductLayout(
     </div>
   );
   const listing = (
-    <ul>
-      {linkedResources.map((resource) => (
-        <li>
-          <a aria-label="Resource" href={resource.url}>
-            {resource.title}
-          </a>
-        </li>
-      ))}
-    </ul>
+    <div>
+      <ul>
+        {linkedResources.map((resource) => (
+          <ResourceCard resource={resource}></ResourceCard>
+        ))}
+      </ul>
+    </div>
   );
   const contentDiv = <div dangerouslySetInnerHTML={{ __html: content }} />;
 
