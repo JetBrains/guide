@@ -29,6 +29,8 @@ export function TutorialStepLayout(
     <VideoPlayer
       source={tutorialStep.longVideo.url}
       poster={tutorialStep.longVideo.poster}
+      start={tutorialStep.longVideo.start}
+      end={tutorialStep.longVideo.end}
     />
   );
 
