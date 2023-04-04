@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "demos:pycharm": "node copy-demos.js 'sites/pycharm-guide'",
-    "demos:webstorm": "node copy-demos.js 'sites/webstorm-guide'",
+    "demos:pycharm": "copyfiles -e './_site' -f './sites/pycharm-guide/**/demos/*' -u 2 ./sites/pycharm-guide/_site -f false --verbose",
+    "demos:webstorm": "copyfiles -e './_site' -f './sites/webstorm-guide/**/demos/*' -u 2 ./sites/webstorm-guide/_site -f false --verbose",
     "dev:pycharm": "cd sites/pycharm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --serve --incremental",
     "build:pycharm": "cd sites/pycharm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --pathprefix=/pycharm/guide && npm run demos:pycharm",
     "clean:pycharm": "rimraf .11ty-vite sites/pycharm-guide/_site sites/pycharm-guide/.11ty-vite",
@@ -35,7 +35,6 @@
     "copyfiles": "^2.4.1",
     "esbuild-register": "^3.3.2",
     "freezeframe": "^5.0.2",
-    "fast-glob": "^3.2.12",
     "happy-dom": "^8.2.2",
     "lunr": "^2.3.9",
     "node-html-parser": "^6.1.5",
