@@ -1,0 +1,77 @@
+{
+  "siteLogo": "jetbrains-simple.svg",
+  "siteTitle": ".NET Tools Guide",
+  "siteDescription": "",
+  "siteUrl": "https://www.jetbrains.com/dotnet/guide",
+  "copyright": "Copyright © 2000–2023 <a href=\"https://www.jetbrains.com/\">JetBrains</a> s.r.o.",
+  "googleTagManagerId" : "GTM-5P98",
+  "start": {
+    "items": [
+      {
+        "accent": "success",
+        "cssClass": "documentation",
+        "href": "/tips/",
+        "label": "Tips",
+        "icon": "fas fa-play-circle"
+      },
+      {
+        "accent": "info",
+        "cssClass": "documentation",
+        "href": "/products/",
+        "label": "Products",
+        "icon": "fas fa-box-open"
+      },
+      {
+        "accent": "info",
+        "cssClass": "documentation",
+        "href": "/tutorials/",
+        "label": "Tutorials",
+        "icon": "fas fa-tasks"
+      },
+      {
+        "accent": "warning",
+        "cssClass": "documentation",
+        "href": "/playlists/",
+        "label": "Playlists",
+        "icon": "fas fa-list"
+      },
+      {
+        "accent": "danger",
+        "cssClass": "documentation",
+        "href": "/technologies/",
+        "label": "Technologies",
+        "icon": "fas fa-project-diagram"
+      },
+      {
+        "accent": "danger",
+        "cssClass": "documentation",
+        "href": "/topics/",
+        "label": "Topics",
+        "icon": "fas fa-project-diagram"
+      },
+      {
+        "accent": "info",
+        "cssClass": "documentation",
+        "href": "/about/",
+        "label": "About",
+        "icon": "fas fa-file"
+      }
+    ]
+  },
+  "end": {
+    "buttons": [
+      {
+        "accent": "light",
+        "href": "https://www.jetbrains.com/dotnet/promo/tools/",
+        "label": "Get JetBrains .NET Tools"
+      }
+    ],
+    "links": [
+      {
+        "color": "light",
+        "href": "https://github.com/jetbrains/jetbrains_guide/",
+        "icon": "github"
+      }
+    ]
+  }
+}

@@ -35,6 +35,12 @@ videos.forEach((video) => {
 
       const plyr = new Plyr(entry.target, config);
 
+      plyr.on("ready", () => {
+        if (hasStart) {
+          plyr.currentTime = start;
+        }
+      });
+
       plyr.on("playing", () => {
         if (hasStart && plyr.currentTime < start) {
           plyr.currentTime = start;
@@ -44,7 +50,10 @@ videos.forEach((video) => {
       plyr.on("timeupdate", () => {
         if (hasEnd && plyr.currentTime >= end) {
           plyr.currentTime = hasStart ? start : 0;
-          plyr.stop();
+
+          if (plyr.currentTime >= end && plyr.currentTime < end + 2)
+            plyr.stop();
+          setTimeout(plyr.stop, 1000);
         }
       });
 

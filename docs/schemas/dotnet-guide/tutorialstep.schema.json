@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://www.jetbrains.com/guide/tutorialstep.schema.json",
+  "title": "JetBrains Guide TutorialStep",
+  "properties": {},
+  "allOf": [
+    {
+      "type": "object",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "resourceType": {
+              "description": "Resource type. Should not be specified manually",
+              "type": "string"
+            },
+            "title": {
+              "description": "Title of this resource",
+              "type": "string"
+            }
+          },
+          "required": [
+            "title"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "author": {
+              "description": "Author of this resource",
+              "type": "string"
+            },
+            "date": {
+              "description": "Date this resource was published",
+              "format": "date",
+              "type": "object",
+              "instanceOf": "Date"
+            },
+            "products": {
+              "type": "array",
+              "items": {
+                "description": "Product related to this resource",
+                "type": "string"
+              }
+            },
+            "subtitle": {
+              "description": "Subtitle of this resource",
+              "type": "string"
+            },
+            "technologies": {
+              "description": "Technologies related to this resource",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "thumbnail": {
+              "description": "File name of the thumbnail for this resource",
+              "type": "string"
+            },
+            "cardThumbnail": {
+              "description": "File name of the social card thumbnail for this resource",
+              "type": "string"
+            },
+            "topics": {
+              "description": "Topics related to this resource",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "author",
+            "date",
+            "thumbnail"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "videoBottom": {
+          "description": "True if video should be rendered at the bottom; false otherwise",
+          "type": "boolean"
+        },
+        "longVideo": {
+          "description": "Long video to show in this tutorial step",
+          "type": "object",
+          "properties": {
+            "url": {
+              "description": "URL of the video",
+              "type": "string"
+            },
+            "posterNumber": {
+              "description": "Poster number to render",
+              "type": "string"
+            },
+            "poster": {
+              "description": "File name of a poster to show for this video",
+              "type": "string"
+            },
+            "start": {
+              "description": "Where to start the video in seconds",
+              "type": "number"
+            },
+            "end": {
+              "description": "Where to stop the video in seconds",
+              "type": "number"
+            }
+          },
+          "required": [
+            "url"
+          ]
+        }
+      }
+    }
+  ]
+}
