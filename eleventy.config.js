@@ -19,7 +19,6 @@ const options = commandLineArgs([
 ]);
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyVitePlugin, {
-    assetsInclude: ["**/rss.xml"],
     viteOptions: {
       clearScreen: true,
       appType: "mpa",
@@ -48,7 +47,6 @@ module.exports = function (eleventyConfig) {
         metaOpenGraphImagePlugin(),
       ],
       base: options.pathprefix,
-      assetsInclude: ["**/demos/**"],
       server: {
         mode: "development",
         middlewareMode: true,
@@ -70,11 +68,10 @@ module.exports = function (eleventyConfig) {
     { "../../public/assets": "assets" },
     { overwrite: true }
   );
-
   eleventyConfig.ignores.add("**/demos/**");
 
   registerIncludes({ eleventyConfig }, process.cwd())
-    .then((r) => {})
+    .then((_) => {})
     .catch((e) => console.log(e));
 
   eleventyConfig.addGlobalData("commandLineArgs", options);
