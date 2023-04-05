@@ -97,13 +97,14 @@ export function TipLayout(
         >
           {leadin && <div dangerouslySetInnerHTML={{ __html: leadin }} />}
           <div>
-            <a
+            {content && (<a
               href="#in-depth"
               className="button is-light"
               style="width: auto;"
             >
               Learn More
             </a>
+            )}
             {tip.longVideo && (
               <a
                 href="#full-video"
