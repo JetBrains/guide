@@ -1,3 +1,5 @@
+import Freezeframe from "freezeframe";
+
 const playlistItemToggles = document.querySelectorAll(".playlist-item-toggle");
 const playlistItems = document.querySelectorAll(".playlist-item");
 

@@ -1,16 +1,5 @@
 import Plyr from "plyr";
-
-const onVisible = function (element, callback) {
-  const options = {
-    root: document,
-  };
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      callback(entry, observer);
-    });
-  }, options);
-  observer.observe(element);
-};
+import { onVisible } from "./utils.js";
 
 const videos = Array.from(document.querySelectorAll(".video-player"));
 videos.forEach((video) => {
