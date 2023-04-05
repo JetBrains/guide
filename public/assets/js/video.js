@@ -22,6 +22,17 @@ videos.forEach((video) => {
       const hasEnd = !isNaN(end);
 
       let config = {};
+
+      if (hasStart && hasEnd) {
+        config.markers = {
+          enabled: true,
+          points: [
+            { time: start, label: "start of clip" },
+            { time: end, label: "end of clip" },
+          ],
+        };
+      }
+
       const plyr = new Plyr(entry.target, config);
 
       plyr.on("playing", () => {
