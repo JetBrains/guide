@@ -36,11 +36,11 @@
         "icon": "fas fa-list"
       },
       {
-        "accent": "danger",
+        "accent": "primary",
         "cssClass": "documentation",
         "href": "/technologies/",
         "label": "Technologies",
-        "icon": "fas fa-project-diagram"
+        "icon": "fas fa-robot"
       },
       {
         "accent": "danger",

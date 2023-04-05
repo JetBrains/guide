@@ -17,13 +17,9 @@ function NavbarSearch(): JSX.Element {
               </span>
             </button>
           </div>
-          <div
-            className="dropdown-menu"
-            id="search-menu"
-            role="search"
-          >
+          <div className="dropdown-menu" id="search-menu" role="search">
             <div className="dropdown-content">
-              <nav className="panel is-shadowless" style="width:600px">
+              <nav className="panel is-shadowless">
                 <div className="panel-block has-text-centered ">
                   <p className="control has-icons-left">
                     <input
