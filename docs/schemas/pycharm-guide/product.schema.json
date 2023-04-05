@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "$id": "https://www.jetbrains.com/guide/product.schema.json",
   "title": "JetBrains Guide Product",
-  "properties": [],
+  "properties": {},
   "allOf": [
     {
       "type": "object",

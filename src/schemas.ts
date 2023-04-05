@@ -28,7 +28,7 @@ export async function dumpSchemas(schemas: { [key: string]: object },
     for (const [key, schema] of Object.entries(schemas)) {
         const thisSchema = {
             ...getPreamble(key),
-            ...{"properties": []},
+            ...{"properties": { }},
             ...schema,
         };
 
