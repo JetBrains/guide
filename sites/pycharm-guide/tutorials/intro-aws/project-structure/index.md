@@ -2,7 +2,8 @@
 type: TutorialStep
 date: 2021-01-29
 title: Exploring Project Structure
-technologies: [aws]topics: []
+technologies: [aws]
+topics: []
 author: mm
 subtitle: Launching up project in PyCharm Professional, installing plugin and exploring the project layout. 
 thumbnail: ../thumbnail.png

@@ -50,9 +50,9 @@ We will follow two installation approaches
 
 1. Directly running the command in the terminal
 
-```
-pip install djangorestframework-simplejwt
-```
+    ```
+    pip install djangorestframework-simplejwt
+    ```
 
 2. Installing through Jetbrains IDE
 

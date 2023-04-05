@@ -2,7 +2,8 @@
 type: TutorialStep
 date: 2021-01-29
 title: Deploying Functions
-technologies: [aws]topics: []
+technologies: [aws]
+topics: []
 author: mm
 subtitle: Use PyCharm Professional to deploy your Lambda APIs.
 thumbnail: ../thumbnail.png

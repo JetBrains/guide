@@ -2,7 +2,8 @@
 type: TutorialStep
 date: 2021-01-29
 title: Background on Serverless
-technologies: [aws]topics: []
+technologies: [aws]
+topics: []
 author: mm
 subtitle: Introduce Microservices, AWS SAM (Serverless Application Model)
 thumbnail: ../thumbnail.png
