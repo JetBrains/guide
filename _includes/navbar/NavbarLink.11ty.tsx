@@ -8,9 +8,10 @@ export type NavbarLinkProps = {
   icon: string;
 };
 const NavbarLink = ({ href, color, icon }: NavbarLinkProps): JSX.Element => {
+  const style = `color: #${color}`;
   return (
     <a className="navbar-item is-hidden-touch" href={href} target="_blank">
-      <span className="icon" style={`{ color: #${color} }`}>
+      <span className="icon" style={style}>
         <i className={`fab fa-lg fa-${icon}`} aria-label={`${icon} Icon`} />
       </span>
     </a>

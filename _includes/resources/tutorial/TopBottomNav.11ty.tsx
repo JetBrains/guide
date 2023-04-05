@@ -39,12 +39,12 @@ export const TopNav = ({ parent, currentStep }: TopNavProps): JSX.Element => {
     currentStep
   );
   return (
-    <div style={`marginBottom: '1em'`}>
-      <div className={`mb-4`}>
+    <div style="margin-bottom: 1em">
+      <div className="mb-4">
         <a
           href={`${parent.url}`}
           className="topnav-previous is-size-7"
-          style={`border: "none" `}
+          style="border: 'none'"
           title={parent.title}
         >
           <span className="icon">
@@ -56,7 +56,7 @@ export const TopNav = ({ parent, currentStep }: TopNavProps): JSX.Element => {
           aria-label="Parent Tutorial"
           href={parent.url}
           className="topnav-previous is-size-7"
-          style={`border: "none" `}
+          style="border: 'none'"
           title={parent.title}
         >
           <span>Up to {parent.title}</span>
@@ -68,20 +68,20 @@ export const TopNav = ({ parent, currentStep }: TopNavProps): JSX.Element => {
             <a
               href={previous.url}
               className="topnav-previous button"
-              style={`border: 0`}
+              style="border: 0"
               title={previous.title}
               aria-label="Top Previous Step"
             >
               <span className="icon">
                 <i className="fas fa-arrow-left" />
               </span>
-              <span style={`paddingLeft: '1em' `}>Previous</span>
+              <span style="padding-left: 1em">Previous</span>
             </a>
           )}
         </div>
         <div className="column has-text-centered is-one-half is-full-mobile">
           <div className="dropdown is-hoverable">
-            <div className="dropdown-trigger" style={`width: '20rem' `}>
+            <div className="dropdown-trigger" style="width: 20rem">
               <button className="button" aria-controls="dropdown-menu2">
                 <span>
                   {currentIndex + 1} of {parent.tutorialSteps.length}
@@ -117,11 +117,11 @@ export const TopNav = ({ parent, currentStep }: TopNavProps): JSX.Element => {
             <a
               href={next.url}
               className="topnav-previous button"
-              style={`border: 0`}
+              style="border: 0"
               title={next.title}
               aria-label="Top Next Step"
             >
-              <span style={`paddingLeft: '1em' `}>Next</span>
+              <span style="padding-left: 1em">Next</span>
               <span className="icon">
                 <i className="fas fa-arrow-right" />
               </span>
