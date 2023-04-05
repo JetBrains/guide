@@ -5,6 +5,7 @@ import { Tip, TipFrontmatter } from "./TipModels";
 import { SidebarLayout } from "../../layouts/SidebarLayout.11ty";
 import { Author } from "../../references/author/AuthorModels";
 import MarkdownIt from "markdown-it";
+import prism from "markdown-it-prism";
 import VideoPlayer from "../../video/VideoPlayer.11ty";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import TipSidebar from "../../sidebar/TipSidebar.11ty";
@@ -44,6 +45,7 @@ export function TipLayout(
     // TODO Convert this to `this.renderMarkdown` to preserve a
     // Markdown instance.
     const md = new MarkdownIt("commonmark");
+    md.use(prism);
     leadin = md.render(tip.leadin as string);
   }
 

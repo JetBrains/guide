@@ -37,6 +37,7 @@
     "freezeframe": "^5.0.2",
     "happy-dom": "^8.2.2",
     "lunr": "^2.3.9",
+    "markdown-it-prism": "^2.3.0",
     "node-html-parser": "^6.1.5",
     "patch-package": "^6.5.1",
     "plyr": "^3.7.7",
