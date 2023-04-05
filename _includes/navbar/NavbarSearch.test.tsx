@@ -19,7 +19,7 @@ test("NavbarSearch exists", () => {
 });
 
 test("searchbox and results should not be visible by default", () => {
-  const searchbox = screen.getByRole("textbox", { name: "Search" });
+  const searchbox = screen.getByRole("searchbox", { name: "Search" });
   expect(searchbox).to.exist;
 });
 

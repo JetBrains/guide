@@ -20,7 +20,7 @@ function NavbarSearch(): JSX.Element {
           <div
             className="dropdown-menu"
             id="search-menu"
-            aria-role="search-results"
+            role="search"
           >
             <div className="dropdown-content">
               <nav className="panel is-shadowless" style="width:600px">
@@ -28,6 +28,7 @@ function NavbarSearch(): JSX.Element {
                   <p className="control has-icons-left">
                     <input
                       id="searchbox-input"
+                      role="searchbox"
                       aria-label="Search"
                       className="input"
                       type="text"
