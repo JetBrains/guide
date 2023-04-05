@@ -13,7 +13,7 @@ test("NavbarLink", () => {
 
   expect(result.href).to.equal("https://github.com/jetbrains/jetbrains_guide");
   const span = result.querySelector("span") as HTMLSpanElement;
-  expect(span.getAttribute("style")).to.equal("{ color: #light }");
+  expect(span.getAttribute("style")).to.equal("color: #light");
   const i = span.querySelector("i") as HTMLElement;
   expect(i.className).to.equal("fab fa-lg fa-github");
 
