@@ -36,6 +36,8 @@ export interface LayoutContext {
   getResources(resourceType?: string): Resource[];
 
   getReferences(resourceType?: string): ReferenceFrontmatter[];
+
+  renderMarkdown(content: string): string;
 }
 
 export type LayoutProps = {
@@ -52,4 +54,4 @@ export type LayoutProps = {
 
 export type CommandLineArgs = {
   pathprefix?: string;
-}
+};
