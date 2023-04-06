@@ -48,18 +48,6 @@
         "href": "/about/",
         "label": "About",
         "icon": "fas fa-file"
-      },
-      {
-        "label": "Skip",
-        "items": [
-          {
-            "href": "/authors/",
-            "label": "Authors",
-            "icon": "fas fa-users",
-            "accent": "success",
-            "description": "Resource listing organized by author"
-          }
-        ]
       }
     ]
   },
