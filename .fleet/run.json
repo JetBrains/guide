@@ -7,6 +7,12 @@
             "args": ["run", "test"]
         },
         {
+            "name": "Run IntelliJ Guide",
+            "type": "command",
+            "program": "npm",
+            "args": ["run", "dev:intellij"]
+        },
+        {
             "name": "Run PyCharm Guide",
             "type": "command",
             "program": "npm",
