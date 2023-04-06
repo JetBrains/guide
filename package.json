@@ -9,7 +9,7 @@
     "clean:dotnet": "rimraf sites/dotnet-guide/_site sites/dotnet-guide/.11ty-vite",
     "demos:dotnet": "copyfiles -e './_site' -f './sites/dotnet-guide/**/demos/*' -u 2 ./sites/dotnet-guide/_site -f false --verbose",
     "dev:intellij": "cd sites/intellij-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --serve --incremental",
-    "build:intellij": "cd sites/intellij-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --pathprefix=/intellij/guide && npm run demos:intellij",
+    "build:intellij": "cd sites/intellij-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --pathprefix=/idea/guide && npm run demos:intellij",
     "clean:intellij": "rimraf sites/intellij-guide/_site sites/intellij-guide/.11ty-vite",
     "demos:intellij": "copyfiles -e './_site' -f './sites/intellij-guide/**/demos/*' -u 2 ./sites/intellijt-guide/_site -f false --verbose",
     "dev:pycharm": "cd sites/pycharm-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --serve --incremental",
