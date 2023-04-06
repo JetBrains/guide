@@ -1,5 +1,6 @@
 ---
 resourceType: tutorial
+layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2022-09-12
 title: Resolving Conflicts During Git Merge
 technologies: []

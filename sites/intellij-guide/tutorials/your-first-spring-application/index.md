@@ -1,5 +1,6 @@
 ---
 resourceType: tutorial
+layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2021-05-20
 title: Your First Spring Boot Application
 technologies: [java, spring]

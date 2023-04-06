@@ -1,5 +1,6 @@
 ---
 resourceType: tutorial
+layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2022-05-12
 title: Working with Apache Tomcat in IntelliJ IDEA
 technologies: [tomcat]

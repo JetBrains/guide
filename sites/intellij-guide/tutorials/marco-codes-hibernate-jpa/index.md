@@ -1,5 +1,6 @@
 ---
 resourceType: tutorial
+layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2022-11-16
 title: Marco Codes - Hibernate & JPA Tutorial
 technologies: [junit]

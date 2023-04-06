@@ -1,5 +1,6 @@
 ---
 resourceType: tutorial
+layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2021-06-02
 title: Getting Started with Spring Data JPA
 technologies: [java, spring]

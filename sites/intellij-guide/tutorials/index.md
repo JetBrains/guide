@@ -1,5 +1,5 @@
 ---
-resourceType: Tutorial
+resourceType: Tutorials
 eleventyExcludeFromCollections: true
 title: Tutorials
 subtitle: Learn how to work with technologies using detailed, multi-step lessons accompanied by code samples, instructions, and videos.

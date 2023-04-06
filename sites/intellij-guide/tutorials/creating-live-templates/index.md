@@ -1,5 +1,6 @@
 ---
 resourceType: tutorial
+layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2022-04-01
 title: Writing Less Code With Live Templates
 technologies: [java]

@@ -1,5 +1,6 @@
 ---
 resourceType: tutorial
+layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2021-05-20
 title: Writing Tests with Spock
 technologies: [java, groovy]

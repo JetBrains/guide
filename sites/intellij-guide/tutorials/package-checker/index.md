@@ -1,5 +1,6 @@
 ---
 resourceType: tutorial
+layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2023-01-27
 title: Package Checker
 technologies: [gradle, maven]

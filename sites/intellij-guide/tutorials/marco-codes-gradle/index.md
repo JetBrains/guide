@@ -1,5 +1,6 @@
 ---
 resourceType: tutorial
+layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2022-09-24
 title: Marco Codes - Gradle
 technologies: [gradle]

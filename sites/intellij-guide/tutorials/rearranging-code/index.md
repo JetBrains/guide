@@ -1,5 +1,6 @@
 ---
 resourceType: tutorial
+layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2021-09-20
 title: Rearranging Code in IntelliJ IDEA
 technologies: [java]

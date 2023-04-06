@@ -1,5 +1,6 @@
 ---
 resourceType: tutorial
+layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2022-11-13
 title: Marco Codes - Building a Text Editor
 technologies: [java]

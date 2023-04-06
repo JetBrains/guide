@@ -1,5 +1,6 @@
 ---
 resourceType: tutorial
+layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2022-12-02
 title: Viewing dependencies
 technologies: [gradle, maven]

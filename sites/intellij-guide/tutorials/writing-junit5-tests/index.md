@@ -1,5 +1,6 @@
 ---
 resourceType: tutorial
+layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2021-01-01
 title: Writing JUnit 5 Tests
 technologies: [java, junit]
