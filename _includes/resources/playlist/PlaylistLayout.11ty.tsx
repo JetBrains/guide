@@ -46,6 +46,7 @@ export function PlaylistLayout(
                 src={item.animatedGif.file}
                 alt="Tip Screenshot"
                 width="600"
+                class="animated-gif"
                 style="object-fit: contain; object-position: top"
               />
             )}

@@ -3,6 +3,10 @@ import java.io.File
 val nodeJsContainerImage = "node:18-bullseye"
 val jdkContainerImage = "amazoncorretto:17"
 
+job("Build .NET Guide") {
+    runJobForSite("dotnet", ".NET Tools Guide", "dotnet-guide")
+}
+
 job("Build PyCharm Guide") {
     runJobForSite("pycharm", "PyCharm Guide", "pycharm-guide")
 }

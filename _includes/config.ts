@@ -136,7 +136,7 @@ export async function registerIncludes(
   // centralize Markdown configuration
   const md = new MarkdownIt("commonmark", {
     html: true,
-    breaks: true,
+    breaks: false,
     linkify: true,
   }).use(prism);
 

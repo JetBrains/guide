@@ -60,46 +60,39 @@ export function TipLayout(
   const main = (
     <div className="mb-6">
       <div className="columns">
-        {tip.animatedGif && (
-          <div className="column is-three-fifths">
+        <div className="column is-half">
+          {tip.animatedGif && (
             <img
               src={tip.animatedGif.file}
               alt="Tip Screenshot"
-              width="600"
               class="animated-gif"
+            />
+          )}
+          {tip.screenshot && (
+            <img
+              src={tip.screenshot}
+              alt="Tip Screenshot"
               style="object-fit: contain; object-position: top"
             />
-          </div>
-        )}
-        {tip.screenshot && (
-          <img
-            src={tip.screenshot}
-            alt="Tip Screenshot"
-            width="600"
-            style="object-fit: contain; object-position: top"
-          />
-        )}
-        {tip.shortVideo && (
-          <div className="column is-three-fifths">
+          )}
+          {tip.shortVideo && (
             <VideoPlayer
               source={tip.shortVideo.url}
               poster={tip.shortVideo.poster}
             />
-          </div>
-        )}
-        <div
-          className="column content"
-          style="display: flex; justify-content: space-between; flex-direction: column"
-        >
+          )}
+        </div>
+        <div className="column is-half content">
           {leadin && <div dangerouslySetInnerHTML={{ __html: leadin }} />}
           <div>
-            {content && (<a
-              href="#in-depth"
-              className="button is-light"
-              style="width: auto;"
-            >
-              Learn More
-            </a>
+            {content && (
+              <a
+                href="#in-depth"
+                className="button is-light"
+                style="width: auto;"
+              >
+                Learn More
+              </a>
             )}
             {tip.longVideo && (
               <a

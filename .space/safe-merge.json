@@ -3,10 +3,23 @@
     "builds": [
         {
             "job": {
+                "name": "Build .NET Guide"
+            },
+            "changed-files": [
+                "/sites/dotnet-guide/**",
+                "/_includes/**",
+                "/src/**",
+                "/public/assets/**",
+                "/package.json",
+                "/package-lock.json"
+            ]
+        },
+        {
+            "job": {
                 "name": "Build PyCharm Guide"
             },
             "changed-files": [
-                "/sites/webstorm-guide/**",
+                "/sites/pycharm-guide/**",
                 "/_includes/**",
                 "/src/**",
                 "/public/assets/**",

@@ -33,7 +33,7 @@ module.exports = function (eleventyConfig) {
                 "./.11ty-vite/**/*.html",
               ],
               safelist: {
-                deep: [/plyr.*/, /is-active/],
+                deep: [/plyr.*/, /is-active/, /fa-robot/],
               },
             }),
           ],

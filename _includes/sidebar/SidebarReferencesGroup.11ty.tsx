@@ -28,7 +28,7 @@ const SidebarReferencesGroup = ({
             {references.map((reference) => (
               <a
                 href={reference.url}
-                style="display: inline-block; margin: 0 0.2rem"
+                style="display: inline-block; margin: 0.2rem 0.2rem"
                 className="bio-page-sidebar-references-href"
               >
                 <span
