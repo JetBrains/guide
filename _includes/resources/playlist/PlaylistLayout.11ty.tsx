@@ -10,8 +10,48 @@ import SidebarPublished, {
 } from "../../sidebar/SidebarPublished.11ty";
 import { Author } from "../../references/author/AuthorModels";
 import SidebarPlaylists from "../../sidebar/SidebarPlaylists.11ty";
+import { parse } from "node-html-parser";
+import path from "upath";
 
 export type PlaylistLayoutData = LayoutProps & PlaylistFrontmatter;
+
+function relativize(originalUrl: string, content: string) {
+  const prefix = `../../${originalUrl}`;
+  const doc = parse(content);
+
+  // @ts-ignore
+  const anchors = doc.getElementsByTagName("a");
+  const imgs = doc.getElementsByTagName("img");
+
+  function rewriteAttribute(element: HTMLElement, attribute: string) {
+    // @ts-ignore
+    const href = element.attrs[attribute];
+    // already good
+    if (href.startsWith(prefix)) return;
+    // absolute urls
+    if (href.startsWith("http://") || href.startsWith("https://")) return;
+    // relative paths
+    if (href.startsWith(".")) return;
+    // anchor link
+    if (href.startsWith("#")) return;
+    // ignore VITE ASSETS
+    if (href.startsWith("__VITE_ASSET__")) return;
+
+    element.setAttribute(attribute, path.join(prefix, href));
+  }
+
+  anchors.forEach((element) => {
+    // @ts-ignore
+    rewriteAttribute(element, "href");
+  });
+
+  imgs.forEach((element) => {
+    // @ts-ignore
+    rewriteAttribute(element, "src");
+  });
+
+  return doc.toString();
+}
 
 export function PlaylistLayout(
   this: LayoutContext,
@@ -35,7 +75,7 @@ export function PlaylistLayout(
       ></div>
       {playlist.playlistResources.map((item: any, index: number) => {
         const thisItem = all.find((i) => i.page.url === item.url);
-        const itemContent = thisItem ? thisItem.content : "";
+        const itemContent = thisItem ? relativize(thisItem.page.url, thisItem.content) : "";
         const isVisible = index == 0 ? "" : "display:none";
         return (
           <div id={item.anchor} style={isVisible} class="playlist-item">
