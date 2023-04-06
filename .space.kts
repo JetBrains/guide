@@ -7,6 +7,10 @@ job("Build .NET Guide") {
     runJobForSite("dotnet", ".NET Tools Guide", "dotnet-guide", "dotnet")
 }
 
+job("Build GoLand Guide") {
+    runJobForSite("goland", "GoLand Guide", "goland-guide")
+}
+
 job("Build PyCharm Guide") {
     runJobForSite("pycharm", "PyCharm Guide", "pycharm-guide", "pycharm")
 }
