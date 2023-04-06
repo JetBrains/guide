@@ -22,11 +22,11 @@
         "icon": "fas fa-tasks"
       },
       {
-        "accent": "danger",
+        "accent": "success",
         "cssClass": "documentation",
         "href": "/technologies/",
         "label": "Technologies",
-        "icon": "fas fa-project-diagram"
+        "icon": "fas fa-robot"
       },
       {
         "accent": "danger",
