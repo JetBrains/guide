@@ -4,19 +4,19 @@ val nodeJsContainerImage = "node:18-bullseye"
 val jdkContainerImage = "amazoncorretto:17"
 
 job("Build .NET Guide") {
-    runJobForSite("dotnet", ".NET Tools Guide", "dotnet-guide")
+    runJobForSite("dotnet", ".NET Tools Guide", "dotnet-guide", "dotnet")
 }
 
 job("Build IntelliJ Guide") {
-    runJobForSite("idea", "IntelliJ Guide", "intellij-guide")
+    runJobForSite("intellij", "IntelliJ Guide", "intellij-guide", "idea")
 }
 
 job("Build PyCharm Guide") {
-    runJobForSite("pycharm", "PyCharm Guide", "pycharm-guide")
+    runJobForSite("pycharm", "PyCharm Guide", "pycharm-guide", "pycharm")
 }
 
 job("Build WebStorm Guide") {
-    runJobForSite("webstorm", "WebStorm Guide", "webstorm-guide")
+    runJobForSite("webstorm", "WebStorm Guide", "webstorm-guide", "webstorm")
 }
 
 job("Run tests") {
@@ -69,7 +69,7 @@ job("Remote development images") {
     }
 }
 
-fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory: String) {
+fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory: String, siteWebPath: String) {
     startOn {
         gitPush {
             pathFilter {
@@ -85,9 +85,9 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
 
     parallel {
         runTests()
-        buildSite(siteShortName, siteDirectory)
+        buildSite(siteShortName, siteDirectory, siteWebPath)
     }
-    deploySite(siteShortName, siteLongName, siteDirectory)
+    deploySite(siteShortName, siteLongName, siteDirectory, siteWebPath)
 }
 
 fun StepsScope.runTests() {
@@ -98,7 +98,7 @@ fun StepsScope.runTests() {
         }
 
         shellScript {
-            content = """                
+            content = """
                 ## Run tests
                 npm install
                 npm run test
@@ -107,7 +107,7 @@ fun StepsScope.runTests() {
     }
 }
 
-fun StepsScope.buildSite(siteShortName: String, siteDirectory: String) {
+fun StepsScope.buildSite(siteShortName: String, siteDirectory: String, siteWebPath: String) {
     container(image = nodeJsContainerImage, displayName = "Build site") {
         resources {
             cpu = 4.cpu
@@ -123,25 +123,25 @@ fun StepsScope.buildSite(siteShortName: String, siteDirectory: String) {
             content = """
                 ## Capture working directory
                 cwd=${'$'}(pwd)
-                
+
                 ## Fix permissions on cached assets
                 chmod 0666 -R sites/$siteDirectory/_site/assets/
-                
+
                 ## Build site
                 npm install
                 npm run build:$siteShortName
                 cd ${'$'}cwd
-                
+
                 ## Move site to share
-                mkdir -p /mnt/space/share/_site/$siteShortName
-                cp -r sites/$siteDirectory/_site/ /mnt/space/share/_site/$siteShortName
-                mv /mnt/space/share/_site/$siteShortName/_site /mnt/space/share/_site/$siteShortName/guide
+                mkdir -p /mnt/space/share/_site/$siteWebPath
+                cp -r sites/$siteDirectory/_site/ /mnt/space/share/_site/$siteWebPath
+                mv /mnt/space/share/_site/$siteWebPath/_site /mnt/space/share/_site/$siteWebPath/guide
             """.trimIndent()
         }
     }
 }
 
-fun StepsScope.deploySite(siteShortName: String, siteLongName: String, siteDirectory: String) {
+fun StepsScope.deploySite(siteShortName: String, siteLongName: String, siteDirectory: String, siteWebPath: String) {
     container(image = jdkContainerImage, displayName = "Publish site") {
         resources {
             cpu = 2.cpu
@@ -159,7 +159,7 @@ fun StepsScope.deploySite(siteShortName: String, siteLongName: String, siteDirec
                 }
 
                 File("/mnt/space/share/_site/index.html")
-                        .writeText("<html><body><a href=\"/$siteShortName/guide\">$siteLongName</a></body></html>")
+                        .writeText("<html><body><a href=\"/$siteWebPath/guide\">$siteLongName</a></body></html>")
 
                 api.space().experimentalApi.hosting.publishSite(
                         siteSource = "_site",
