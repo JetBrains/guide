@@ -33,8 +33,7 @@
             "date": {
               "description": "Date this resource was published",
               "format": "date",
-              "type": "object",
-              "instanceOf": "Date"
+              "type": "string"
             },
             "products": {
               "type": "array",
