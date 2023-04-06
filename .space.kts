@@ -12,11 +12,11 @@ job("Build IntelliJ Guide") {
 }
 
 job("Build PyCharm Guide") {
-    runJobForSite("pycharm", "PyCharm Guide", "pycharm-guide", "pycharm")
+    runJobForSite("pycharm", "PyCharm Guide", "pycharm-guide")
 }
 
 job("Build WebStorm Guide") {
-    runJobForSite("webstorm", "WebStorm Guide", "webstorm-guide", "webstorm")
+    runJobForSite("webstorm", "WebStorm Guide", "webstorm-guide")
 }
 
 job("Run tests") {
