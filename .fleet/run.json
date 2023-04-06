@@ -7,6 +7,18 @@
             "args": ["run", "test"]
         },
         {
+            "name": "Run .NET Guide",
+            "type": "command",
+            "program": "npm",
+            "args": ["run", "dev:dotnet"]
+        },
+        {
+            "name": "Run GoLand Guide",
+            "type": "command",
+            "program": "npm",
+            "args": ["run", "dev:goland"]
+        },
+        {
             "name": "Run PyCharm Guide",
             "type": "command",
             "program": "npm",
