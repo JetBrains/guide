@@ -1,4 +1,5 @@
 ---
+resourceType: tutorial
 date: 2022-11-08
 title: Marco Codes - JDBC
 technologies: []
@@ -7,9 +8,9 @@ author: hs
 subtitle: JDBC nice n easy 
 thumbnail: ./thumbnail.png
 tutorialItems:
-  - /tutorials/marco-codes-jdbc/introduction/
-  - /tutorials/marco-codes-jdbc/h2-jdbc-drivermanager/
-  - /tutorials/marco-codes-jdbc/sql-commands/
-  - /tutorials/marco-codes-jdbc/datasource-connection-hikaricp-libraries/
+  - ./introduction/
+  - ./h2-jdbc-drivermanager/
+  - ./sql-commands/
+  - ./datasource-connection-hikaricp-libraries/
 
 ---

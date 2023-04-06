@@ -1,4 +1,5 @@
 ---
+resourceType: tutorial
 date: 2021-10-13
 title: Sharing your Project on GitHub
 technologies: [git]
@@ -7,10 +8,10 @@ author: hs
 subtitle: How you can share a local project to GitHub
 thumbnail: ./thumbnail.png
 tutorialItems:
-  - /tutorials/sharing-project-on-github/introduction/
-  - /tutorials/sharing-project-on-github/sharing-project-quick-approach/
-  - /tutorials/sharing-project-on-github/sharing-project-multi-step-approach/
-  - /tutorials/sharing-project-on-github/summary-and-shortcuts/
+  - ./introduction/
+  - ./sharing-project-quick-approach/
+  - ./sharing-project-multi-step-approach/
+  - ./summary-and-shortcuts/
 
 ---
 
