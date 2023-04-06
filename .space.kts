@@ -8,7 +8,7 @@ job("Build .NET Guide") {
 }
 
 job("Build GoLand Guide") {
-    runJobForSite("goland", "GoLand Guide", "goland-guide")
+    runJobForSite("go", "GoLand Guide", "goland-guide")
 }
 
 job("Build PyCharm Guide") {
