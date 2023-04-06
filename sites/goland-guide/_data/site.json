@@ -1,0 +1,71 @@
+{
+  "siteLogo": "jetbrains-simple.svg",
+  "siteTitle": "GoLand Guide",
+  "siteDescription": "",
+  "siteUrl": "https://www.jetbrains.com/go/guide",
+  "copyright": "Copyright © 2000–2023 <a href=\"https://www.jetbrains.com/\">JetBrains</a> s.r.o.",
+  "googleTagManagerId" : "GTM-5P98",
+  "start": {
+    "items": [
+      {
+        "accent": "success",
+        "cssClass": "documentation",
+        "href": "/tips/",
+        "label": "Tips",
+        "icon": "fas fa-play-circle"
+      },
+      {
+        "accent": "warning",
+        "cssClass": "documentation",
+        "href": "/playlists/",
+        "label": "Playlists",
+        "icon": "fas fa-list"
+      },
+      {
+        "accent": "danger",
+        "cssClass": "documentation",
+        "href": "/topics/",
+        "label": "Topics",
+        "icon": "fas fa-project-diagram"
+      },
+      {
+        "accent": "success",
+        "cssClass": "documentation",
+        "href": "/technologies/",
+        "label": "Technologies",
+        "icon": "fas fa-robot"
+      }
+    ]
+  },
+  "end": {
+    "buttons": [
+      {
+        "accent": "light",
+        "href": "https://www.jetbrains.com/go/download/",
+        "label": "Get GoLand"
+      }
+    ],
+    "links": [
+      {
+        "color": "FFFFFF",
+        "href": "https://blog.jetbrains.com/go",
+        "icon": "fas fa-blog"
+      },
+      {
+        "color": "FFFFFF",
+        "href": "https://www.jetbrains.com/help/go",
+        "icon": "fa fa-question"
+      },
+      {
+        "color": "light",
+        "href": "https://github.com/jetbrains/jetbrains_guide",
+        "icon": "github"
+      },
+      {
+        "color": "55acee",
+        "href": "https://twitter.com/GoLandIDE",
+        "icon": "twitter"
+      }
+    ]
+  }
+}

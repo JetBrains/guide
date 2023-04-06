@@ -1,0 +1,4 @@
+{
+  "resourceType": "technology",
+  "layout": "references/technology/TechnologyLayout.11ty.tsx"
+}
