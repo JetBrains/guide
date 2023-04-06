@@ -29,9 +29,9 @@ if (searchButton) {
       const json = await response.json();
       documents = json.results;
 
-      console.log(documents);
+      console.log("Loaded " + documents.length + " document(s).");
 
-      // load lunar search index
+      // load lunr search index
       lunrIndex = lunr(function () {
         this.ref("url");
         this.field("title");
@@ -67,6 +67,10 @@ function findSearchResults(query) {
       return page.url === result.ref;
     });
   });
+
+  if (results.length === 0 && query.indexOf("*") < 0) {
+    return findSearchResults(query + "*");
+  }
 
   const description =
     results.length === 0
