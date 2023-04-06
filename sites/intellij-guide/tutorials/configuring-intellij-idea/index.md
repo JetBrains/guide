@@ -1,5 +1,6 @@
 ---
 resourceType: tutorial
+layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2021-05-14
 title: Configuring your project structure and IntelliJ IDEA preferences/settings
 technologies: []
