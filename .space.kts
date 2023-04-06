@@ -8,7 +8,7 @@ job("Build .NET Guide") {
 }
 
 job("Build GoLand Guide") {
-    runJobForSite("go", "GoLand Guide", "goland-guide")
+    runJobForSite("goland", "GoLand Guide", "goland-guide", "go")
 }
 
 job("Build PyCharm Guide") {
@@ -98,7 +98,7 @@ fun StepsScope.runTests() {
         }
 
         shellScript {
-            content = """                
+            content = """
                 ## Run tests
                 npm install
                 npm run test
@@ -123,15 +123,15 @@ fun StepsScope.buildSite(siteShortName: String, siteDirectory: String, siteWebPa
             content = """
                 ## Capture working directory
                 cwd=${'$'}(pwd)
-                
+
                 ## Fix permissions on cached assets
                 chmod 0666 -R sites/$siteDirectory/_site/assets/
-                
+
                 ## Build site
                 npm install
                 npm run build:$siteShortName
                 cd ${'$'}cwd
-                
+
                 ## Move site to share
                 mkdir -p /mnt/space/share/_site/$siteWebPath
                 cp -r sites/$siteDirectory/_site/ /mnt/space/share/_site/$siteWebPath
