@@ -11,7 +11,7 @@ export class IntellijAbout {
   data() {
     return {
       title: "About",
-      subtitle: "About the .NET Tools Guide",
+      subtitle: "About the IntelliJ Guide",
       layout: "",
     };
   }
@@ -28,7 +28,7 @@ export class IntellijAbout {
                     >
                         <header
                             class="bd-header"
-                            style="background: url('/assets/intellij-idea-beam.svg') center center; background-repeat: no-repeat; background-size: cover"
+                            style="background: url('/assets/intellij-splash.svg') center center; background-repeat: no-repeat; background-size: cover"
                         >
                             <article class="media">
                                 <div class="media-content">

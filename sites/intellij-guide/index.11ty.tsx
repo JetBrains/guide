@@ -22,14 +22,14 @@ export class IntelliJHomepage {
         <div class="content">
           <section
             class="hero is-medium"
-            style="background: url('/assets/intellij-splash.svg') center center; background-repeat: no-repeat; background-size: cover"
+            style="background: url('/assets/intellij-idea-beam.svg') center center; background-repeat: no-repeat; background-size: cover;"
           >
             <div className="hero-body">
               <div className="container">
-                <h1 className="title">{data.title}</h1>
+                <h1 className="title" style="color: white;">{data.title}</h1>
                 <div className="columns">
                   <div className="column is-two-thirds">
-                    <p className="is-size-4">
+                    <p className="is-size-4" style="color: white;">
                       Find out how you can be more productive with a series of
                       tips and tricks.
                     </p>
