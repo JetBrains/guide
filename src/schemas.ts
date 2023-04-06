@@ -2,6 +2,19 @@ import {writeFile} from 'node:fs/promises';
 import path from "upath";
 import {ReferenceFrontmatter} from "./ReferenceModels";
 
+// Some feature flags to opt-in/opt-out of, depending how far we want to go with JSON schemas:
+const featureFlags = {
+    // traverse JSON schema's "allOf" node in addition to the schema's own "properties" node
+    "traverseAllOfProperties": true,
+
+    // rewrite date properties in a format WebStorm can work with (hey have to be strings)
+    "rewriteDateProperties": true,
+
+    // rewrite reference properties to an enum - this enables code completion for topics, authors, ...
+    // false is recommended when one schema is shared across all sites
+    "rewriteReferenceProperties": false
+};
+
 function getPreamble(resourceType: string) {
     return {
         "$schema": "http://json-schema.org/draft-04/schema#",
@@ -17,6 +30,39 @@ function extractReferences(allReferencesList: ReferenceFrontmatter[],
       .map(r => r.label) as string[]
 }
 
+function determinePropertiesToTraverse(schema: object): object[] {
+    const propertiesToTraverse = [ ];
+    if ("properties" in schema) {
+        propertiesToTraverse.push(schema.properties);
+    }
+    if ("allOf" in schema) {
+        // @ts-ignore
+        for (const allOf of schema.allOf) {
+            if ("properties" in allOf) {
+                propertiesToTraverse.push(allOf.properties);
+            }
+            if ("allOf" in allOf) {
+                // @ts-ignore
+                const nestedProperties = determinePropertiesToTraverse(allOf.allOf);
+                propertiesToTraverse.push(...nestedProperties);
+            }
+        }
+    }
+    if (Array.isArray(schema)) {
+        for (const allOf of schema) {
+            if ("properties" in allOf) {
+                propertiesToTraverse.push(allOf.properties);
+            }
+            if ("allOf" in allOf) {
+                // @ts-ignore
+                const nestedProperties = determinePropertiesToTraverse(allOf.allOf);
+                propertiesToTraverse.push(...nestedProperties);
+            }
+        }
+    }
+    return propertiesToTraverse;
+}
+
 export async function dumpSchemas(schemas: { [key: string]: object },
                                   allReferencesList: ReferenceFrontmatter[],
                                   outputPath: string
@@ -29,6 +75,7 @@ export async function dumpSchemas(schemas: { [key: string]: object },
         const thisSchema = {
             ...getPreamble(key),
             ...{"properties": { }},
+            ...{"allOf": [ ]},
             ...schema,
         };
 
@@ -39,47 +86,57 @@ export async function dumpSchemas(schemas: { [key: string]: object },
             delete thisSchema.properties["resourceType"];
         }
 
-        // Rewrite author to an enum
-        if ("author" in thisSchema.properties) {
-            // @ts-ignore
-            thisSchema.properties["author"] = {
-                "enum": authors,
-                // @ts-ignore
-                "description": thisSchema.properties["author"]["description"]
-            };
-        }
+        const propertiesToTraverse = featureFlags.traverseAllOfProperties
+            ? determinePropertiesToTraverse(thisSchema)
+            : [ thisSchema.properties ];
 
-        // Rewrite topics open array to an array of enum
-        if ("topics" in thisSchema.properties) {
+        for (const properties of propertiesToTraverse) {
+            // Rewrite author to an enum
             // @ts-ignore
-            thisSchema.properties["topics"]["items"] = { "enum": topics };
-            // @ts-ignore
-            if ("type" in thisSchema.properties["topics"]["items"]) {
+            if (featureFlags.rewriteReferenceProperties && "author" in properties) {
                 // @ts-ignore
-                delete thisSchema.properties["topics"]["items"]["type"];
+                properties["author"] = {
+                    "enum": authors,
+                    // @ts-ignore
+                    "description": properties["author"]["description"]
+                };
             }
-        }
 
-        // Rewrite technologies open array to an array of enum
-        if ("technologies" in thisSchema.properties) {
+            // Rewrite topics open array to an array of enum
             // @ts-ignore
-            thisSchema.properties["technologies"]["items"] = { "enum": technologies };
-            // @ts-ignore
-            if ("type" in thisSchema.properties["technologies"]["items"]) {
+            if (featureFlags.rewriteReferenceProperties && "topics" in properties) {
                 // @ts-ignore
-                delete thisSchema.properties["technologies"]["items"]["type"];
+                properties["topics"]["items"] = { "enum": topics };
+                // @ts-ignore
+                if ("type" in properties["topics"]["items"]) {
+                    // @ts-ignore
+                    delete properties["topics"]["items"]["type"];
+                }
             }
-        }
 
-        // Rewrite date to be a string with date format
-        if ("date" in thisSchema.properties) {
+            // Rewrite technologies open array to an array of enum
             // @ts-ignore
-            thisSchema.properties["date"]["type"] = "string";
+            if (featureFlags.rewriteReferenceProperties && "technologies" in properties) {
+                // @ts-ignore
+                properties["technologies"]["items"] = { "enum": technologies };
+                // @ts-ignore
+                if ("type" in properties["technologies"]["items"]) {
+                    // @ts-ignore
+                    delete properties["technologies"]["items"]["type"];
+                }
+            }
+
+            // Rewrite date to be a string with date format
             // @ts-ignore
-            thisSchema.properties["date"]["format"] = "date";
-            // @ts-ignore
-            if ("instanceOf" in thisSchema.properties["date"]) {
-                delete thisSchema.properties["date"]["instanceOf"];
+            if (featureFlags.rewriteDateProperties && "date" in properties) {
+                // @ts-ignore
+                properties["date"]["type"] = "string";
+                // @ts-ignore
+                properties["date"]["format"] = "date";
+                // @ts-ignore
+                if ("instanceOf" in properties["date"]) {
+                    delete properties["date"]["instanceOf"];
+                }
             }
         }
 
