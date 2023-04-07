@@ -25,7 +25,7 @@ We will stick to introducing component state and modeling it in TypeScript.
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/class_state).
+[in the repository](https://github.com/jetbrains/guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/class_state).
 
 ## Always Start With a Test
 

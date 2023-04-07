@@ -724,7 +724,7 @@ const site = {
     links: [
       {
         color: "light",
-        href: "https://github.com/jetbrains/jetbrains_guide",
+        href: "https://github.com/jetbrains/guide",
         icon: "github",
       },
       {

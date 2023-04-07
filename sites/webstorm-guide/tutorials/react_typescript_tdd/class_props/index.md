@@ -27,7 +27,7 @@ We'll do state in the next step, followed by event handlers.
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/class_props).
+[in the repository](https://github.com/jetbrains/guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/class_props).
 
 ## First a Test
 

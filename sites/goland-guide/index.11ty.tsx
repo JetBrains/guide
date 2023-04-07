@@ -63,10 +63,10 @@ export class GoLandHomepage {
 
                     <h2>Sharing Feedback and Contributing</h2>
                     <p>The GoLand Guide is also an open project, with <a
-                      href="https://github.com/JetBrains/jetbrains_guide">a repository in GitHub</a> that
+                      href="https://github.com/jetbrains/guide">a repository in GitHub</a> that
                       hosts all the content. We write all the content in Markdown and render a static site.
                       If you'd like to contribute to it, please refer to the <a
-                        href="https://github.com/JetBrains/jetbrains_guide/blob/master/README.md">README</a>&nbsp;for more information.
+                        href="https://github.com/jetbrains/guide/blob/master/README.md">README</a>&nbsp;for more information.
                     </p>
                   </div>
                 </div>

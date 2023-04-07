@@ -23,7 +23,7 @@ more of a look.
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/tsx_es6/).
+[in the repository](https://github.com/jetbrains/guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/tsx_es6/).
 
 ## Cleanup
 

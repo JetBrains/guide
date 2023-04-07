@@ -55,12 +55,12 @@ export class WebStormAbout {
                     </p>
                     <h2>Sharing Feedback and Contributing</h2>
                     <p>
-                      If you have any ideas about how to make this Guide better or want to share your feedback with us, feel free to fill out <a href="https://forms.gle/eenYd4sngtV4rQ3f7">this short survey</a>. <a href="https://github.com/JetBrains/jetbrains_guide/issues">If you want to report an issue, you can do it here</a>.
+                      If you have any ideas about how to make this Guide better or want to share your feedback with us, feel free to fill out <a href="https://forms.gle/eenYd4sngtV4rQ3f7">this short survey</a>. <a href="https://github.com/jetbrains/guide/issues">If you want to report an issue, you can do it here</a>.
                     </p>
                     <p>
-                      The WebStorm Guide is also an open project, with <a href="https://github.com/JetBrains/jetbrains_guide">a repository in GitHub</a>
+                      The WebStorm Guide is also an open project, with <a href="https://github.com/jetbrains/guide">a repository in GitHub</a>
                       that hosts all the content. We write all the content in Markdown and use Gatsby to render a static site.
-                      <strong style="padding-left: 0.2rem; padding-right: 0.2rem">We encourage you to contribute to the Guide if you have any ideas!</strong> Please refer to the <a href="https://github.com/JetBrains/jetbrains_guide/blob/master/README.md">README</a> for more information.
+                      <strong style="padding-left: 0.2rem; padding-right: 0.2rem">We encourage you to contribute to the Guide if you have any ideas!</strong> Please refer to the <a href="https://github.com/jetbrains/guide/blob/master/README.md">README</a> for more information.
                     </p>
                   </div>
                 </div>

@@ -11,7 +11,7 @@ test("NavbarLink", () => {
   const result = screen.getByRole("link") as HTMLAnchorElement;
   expect(result).to.exist;
 
-  expect(result.href).to.equal("https://github.com/jetbrains/jetbrains_guide");
+  expect(result.href).to.equal("https://github.com/jetbrains/guide");
   const span = result.querySelector("span") as HTMLSpanElement;
   expect(span.getAttribute("style")).to.equal("color: #light");
   const i = span.querySelector("i") as HTMLElement;
