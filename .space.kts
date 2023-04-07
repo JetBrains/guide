@@ -11,12 +11,16 @@ job("Build IntelliJ Guide") {
     runJobForSite("intellij", "IntelliJ Guide", "intellij-guide", "idea")
 }
 
+job("Build GoLand Guide") {
+    runJobForSite("goland", "GoLand Guide", "goland-guide", "go")
+}
+
 job("Build PyCharm Guide") {
-    runJobForSite("pycharm", "PyCharm Guide", "pycharm-guide")
+    runJobForSite("pycharm", "PyCharm Guide", "pycharm-guide", "pycharm")
 }
 
 job("Build WebStorm Guide") {
-    runJobForSite("webstorm", "WebStorm Guide", "webstorm-guide")
+    runJobForSite("webstorm", "WebStorm Guide", "webstorm-guide", "webstorm")
 }
 
 job("Run tests") {
@@ -174,4 +178,3 @@ fun StepsScope.deploySite(siteShortName: String, siteLongName: String, siteDirec
         }
     }
 }
-

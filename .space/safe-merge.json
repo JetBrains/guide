@@ -16,6 +16,19 @@
         },
         {
             "job": {
+                "name": "Build GoLand Guide"
+            },
+            "changed-files": [
+                "/sites/goland-guide/**",
+                "/_includes/**",
+                "/src/**",
+                "/public/assets/**",
+                "/package.json",
+                "/package-lock.json"
+            ]
+        },
+        {
+            "job": {
                 "name": "Build IntelliJ Guide"
             },
             "changed-files": [

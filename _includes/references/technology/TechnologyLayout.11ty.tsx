@@ -26,7 +26,7 @@ export function TechnologyLayout(
   ) as Resource[];
 
   const figure = (
-    <div className="image is-rounded is-96x96">
+    <div className="image is-96x96">
       <img className="bio-resourcecard-logo" src={technology.logo} alt="Logo" />
     </div>
   );

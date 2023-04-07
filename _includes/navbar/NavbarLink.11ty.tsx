@@ -9,10 +9,14 @@ export type NavbarLinkProps = {
 };
 const NavbarLink = ({ href, color, icon }: NavbarLinkProps): JSX.Element => {
   const style = `color: #${color}`;
+  const iconClass = icon.indexOf('fas') >= 0
+    ? `fa-lg ${icon}` // fully-specified icon? use it as-is (with a fa-lg format)
+    : `fab fa-lg fa-${icon}`; // shorthand icon? use defaults
+
   return (
     <a className="navbar-item is-hidden-touch" href={href} target="_blank">
       <span className="icon" style={style}>
-        <i className={`fab fa-lg fa-${icon}`} aria-label={`${icon} Icon`} />
+        <i className={`${iconClass}`} aria-label={`${icon} Icon`} />
       </span>
     </a>
   );
