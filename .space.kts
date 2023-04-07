@@ -25,7 +25,13 @@ job("Build WebStorm Guide") {
 
 job("Run tests") {
     startOn {
-        gitPush { enabled = true }
+        gitPush {
+            enabled = true
+
+            branchFilter {
+                -"refs/pull/*"
+            }
+        }
     }
 
     runTests()
@@ -38,6 +44,7 @@ job("Remote development images") {
 
             branchFilter {
                 +"refs/heads/main"
+                -"refs/pull/*"
             }
 
             pathFilter {
@@ -76,6 +83,12 @@ job("Remote development images") {
 fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory: String, siteWebPath: String) {
     startOn {
         gitPush {
+            enabled = true
+
+            branchFilter {
+                -"refs/pull/*"
+            }
+            
             pathFilter {
                 +"sites/$siteDirectory/**"
                 +"_includes/**"
