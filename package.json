@@ -48,6 +48,7 @@
     "esbuild-register": "^3.3.2",
     "freezeframe": "^5.0.2",
     "happy-dom": "^9.2.1",
+    "html-entities": "^2.3.3",
     "lunr": "^2.3.9",
     "markdown-it-prism": "^2.3.0",
     "node-html-parser": "^6.1.5",

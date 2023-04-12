@@ -1,5 +1,6 @@
 import { LayoutContext, LayoutProps } from "../src/models";
 import path from "upath";
+import { encode } from "html-entities";
 
 export function RssLayout (
   this: LayoutContext,
@@ -14,9 +15,9 @@ export function RssLayout (
   collections.allResources.forEach(page => {
     items +=
       `<item>
-        <title>${page.title}</title>
+        <title>${encode(page.title, { level: 'xml'})}</title>
         <link>${path.join(siteUrl, page.url)}</link>
-        <description>${page.subtitle}</description>
+        <description>${encode(page.subtitle, { level: 'xml'})}</description>
         <category>${page.resourceType}</category>
         <author>${page.references?.author.title}</author>        
         <pubDate>${page.date.toUTCString()}</pubDate>        
