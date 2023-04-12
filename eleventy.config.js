@@ -56,6 +56,18 @@ module.exports = function (eleventyConfig) {
       },
       build: {
         mode: "production",
+        rollupOptions: {
+          output: {
+            assetFileNames: (info) => {
+              if (info.name.includes("rss.xml")) {
+                // don't modify the rss.xml file name
+                return "[name][extname]";
+              } else {
+                return "assets/[name]-[hash][extname]";
+              }
+            },
+          },
+        },
       },
     },
   });
