@@ -29,6 +29,7 @@ job("Run tests") {
             enabled = true
 
             branchFilter {
+                -"refs/merge/*"
                 -"refs/pull/*"
             }
         }
@@ -44,6 +45,7 @@ job("Remote development images") {
 
             branchFilter {
                 +"refs/heads/main"
+                -"refs/merge/*"
                 -"refs/pull/*"
             }
 
@@ -86,6 +88,7 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
             enabled = true
 
             branchFilter {
+                -"refs/merge/*"
                 -"refs/pull/*"
             }
             
