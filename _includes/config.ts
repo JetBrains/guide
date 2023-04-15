@@ -1,4 +1,3 @@
-import { Assertions, TestCases } from "../src/TestCases";
 import {
   CollectionApi,
   getAllCollections,
@@ -59,14 +58,6 @@ export async function registerIncludes(
   eleventyConfig.addExtension(["11ty.jsx", "11ty.ts", "11ty.tsx"], {
     key: "11ty.js",
   });
-
-  const testCases = new TestCases();
-  eleventyConfig.addJavaScriptFunction(
-    "addTestCase",
-    (url: string, assertions: Assertions) => {
-      testCases.add(url, assertions);
-    }
-  );
 
   let allResourcesList: Resource[];
   let allReferencesList: ReferenceFrontmatter[];

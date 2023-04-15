@@ -1,5 +1,4 @@
 import { Static, Type } from "@sinclair/typebox";
-import { Assertions } from "./TestCases";
 import { BaseFrontmatter, Resource } from "./ResourceModels";
 import { ReferenceFrontmatter } from "./ReferenceModels";
 import { SiteCollections } from "../_includes/models";
@@ -31,8 +30,6 @@ export interface LayoutContext {
   /**
    * Used by view renders to grab the `this` object
    */
-  addTestCase(url: string, assertions: Assertions): void;
-
   getResources(resourceType?: string): Resource[];
 
   getReferences(resourceType?: string): ReferenceFrontmatter[];
