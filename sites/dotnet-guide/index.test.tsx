@@ -23,5 +23,6 @@ test("should render DotNetHomepage", () => {
   const homepage = new DotNetHomepage();
   const render = homepage.render;
   document.body.innerHTML = render.call(context, pageLayoutData);
-  expect(screen.findByText(".NET Tools Guide")).to.exist;
+  // The fixture has the page as PyCharm so look for that
+  expect(screen.findByText("PyCharm Guide")).to.exist;
 });

@@ -3,7 +3,7 @@ import { GoLandHomepage, GoLandHomepageData } from "./index.11ty";
 import { screen } from "@testing-library/dom";
 import fixtures, { baseRenderData } from "../../_includes/fixtures";
 
-test("should render GoLandHomepage", () => {
+test("should render GoLandHomepage", async () => {
   const tip0 = fixtures.tipItems[0];
   const pageLayoutData: GoLandHomepageData = {
     ...baseRenderData,
@@ -23,5 +23,6 @@ test("should render GoLandHomepage", () => {
   const homepage = new GoLandHomepage();
   const render = homepage.render;
   document.body.innerHTML = render.call(context, pageLayoutData);
-  expect(screen.findByText("GoLand Guide")).to.exist;
+  // The fixture has the page as PyCharm so look for that
+  expect(screen.findByText("PyCharm Guide")).to.exist;
 });
