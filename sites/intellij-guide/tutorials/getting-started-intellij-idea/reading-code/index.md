@@ -30,7 +30,7 @@ You can click on this to open the Problems tool window or use (**⌘6** | **Alt+
 
 ## Moving Between Errors
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UfN8iWKHvt0" >
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q26Cc6V7zKk" >
 </iframe>
 
 Errors are hard to avoid at times but it's much easier to address them as they happen in IntelliJ IDEA and keep your code green and compiling. You can use (**F2** | **F2**) to navigate to the next error in your code or (**⇧F2** | **Shift+F2**) to navigate to the previous error.
@@ -39,7 +39,7 @@ You can also use the Problem Window (**⌘6** | **Alt+6**) to see all the errors
 
 ## Getting Hints in Your Code
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UfN8iWKHvt0" >
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PDGufzpXVFU" >
 </iframe>
 
 Inlay hints are IntelliJ IDEA's way of *decorating* your code with extra information to fill in some of the blanks you might have. They appear in light grey text and are highly configurable. They're especially helpful to understand code which has hard-to-decipher parameter names!
@@ -54,7 +54,7 @@ Inlay hints that IntelliJ IDEA can provide include:
 
 ## Understanding Gutter Information
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UfN8iWKHvt0" >
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pa-bgScptXE" >
 </iframe>
 
 Gutter icons are often overlooked because they're just *there* but I urge you to look again, especially if you're a visual learner and perhaps haven't mastered *all* keyboard shortcuts yet. 
@@ -69,7 +69,7 @@ Gutter icons can show you:
 
 ## Interpreting Scrollbars
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UfN8iWKHvt0" >
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dG_Ug83Mg94" >
 </iframe>
 
 Scrollbars is another feature that we perhaps need to take a second look at. IntelliJ IDEA gives us two scrollbars, one on the left, as you would expect and one on the right. 
