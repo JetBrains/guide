@@ -10,7 +10,7 @@ seealso:
   href: https://www.jetbrains.com/help/webstorm/navigating-through-the-source-code.html#
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-screenshot: ./tip.png
+screenshot: ./tip.gif
 leadin: |
-  Tick the _Show method separators_ box in _Preferences/Settings | Editor | General | Appearance_ to add separators between functions and class methods, which will make your code easier to read.
+  You can select the _Show method separators_ box in _Preferences/Settings | Editor | General | Appearance_ to add separators between functions and class methods, which will make your code easier to read.
  

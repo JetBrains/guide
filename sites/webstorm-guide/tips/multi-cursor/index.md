@@ -1,7 +1,7 @@
 ---
 date: 2023-01-27
 title: Editing Code with Multiple Cursors
-subtitle: Use multiple cursors to make changes to your code faster.
+subtitle: How to use multiple cursors to code faster.
 technologies: []
 topics: [editing]
 author: er
@@ -20,5 +20,5 @@ leadin: |
   Multi-cursor selection in WebStorm:
   - Select next occurrence of the current word or selection: _⌃G_ on macOS and _Alt+J_ on Windows and Linux.
   - Select all occurrences: _⌃⌘G_ / _Shift+Ctrl+Alt+J_.
-  - To add or remove multiple carets, you can also press and hold the _⌃_ /_Alt_ key, then click at the next location of the caret. You can also make a multiple selection by holding _Shift+Alt_ and dragging the caret.
-  - To delete all the carets, press the _Escape_ key.
+  - To add or remove multiple carets, you can also press and hold the _⌃_ /_Alt_ key, then click to add a new caret. You can also make a multiple selection by holding _Shift+Alt_ and dragging the caret.
+  - To remove all the carets, press the _Escape_ key.

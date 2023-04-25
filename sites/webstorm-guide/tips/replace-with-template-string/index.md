@@ -1,7 +1,7 @@
 ---
 date: 2023-01-27
 title: Replace with Template String
-subtitle: How to replace a regular string with a template literal ion WebStorm.
+subtitle: How to replace a regular string with a template literal in WebStorm.
 technologies: [javascript]
 topics: [editing]
 author: er

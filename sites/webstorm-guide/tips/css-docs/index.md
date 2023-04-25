@@ -12,4 +12,4 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
 leadin: |
-  Want to know more about a CSS property? Hover over it or press _F1_ / _Ctrl+Q_ to see its description from MDN, information about its values and the browsers that support this property.
+  Want to know more about a CSS property? Hover over it or press _F1_ / _Ctrl+Q_ to see its description from MDN, information about its values, and which browsers support this property.
