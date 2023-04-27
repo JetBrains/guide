@@ -138,7 +138,9 @@ export async function registerIncludes(
     html: true,
     breaks: false,
     linkify: true,
-  }).use(prism);
+  })
+    .use(prism)
+    .enable("table");
 
   // custom markdown renderer
   eleventyConfig.setLibrary("md", md);
