@@ -80,7 +80,7 @@ export class GoLandHomepage {
                 <div className="column is-four-fifths-desktop bio-resourcecards"
                      dangerouslySetInnerHTML={{ __html: listing }}>
                 </div>
-                <div className="column is-one-fifth-desktop bio-sidebar-page">
+                <div className="column is-one-fifth-desktop is-hidden-touch bio-sidebar-page">
                   <aside className="bd-side bio-page-sidebar">
                     <p className="menu-label bio-page-sidebar-published">Browse...</p>
                     <ul className="menu-list pt-0">
