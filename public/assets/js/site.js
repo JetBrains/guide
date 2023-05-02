@@ -1,4 +1,5 @@
 import "./burger.js";
-import "./playlist";
-import "./search";
-import "./gifs";
+import "./playlist.js";
+import "./search.js";
+import "./gifs.js";
+import "./layout.js";

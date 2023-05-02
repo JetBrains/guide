@@ -28,9 +28,9 @@ const SidebarPublished = ({
             </figure>
             <div className="media-content">
               <div className="content">
-                <div className="bio-page-sidebar-published-date">
+                <time className="bio-page-sidebar-published-date" datetime={displayDate}>
                   {displayDate}
-                </div>
+                </time>
                 <div>by:</div>
                 <a aria-label="Author Sidebar" href={author.url}>
                   {author.title}

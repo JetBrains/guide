@@ -87,9 +87,9 @@ const ResourceCard = ({
               <div className="level-right">
                 <div className="level-item">
                   <div className="level-right is-size-7 has-text-grey">
-                    <span className="level-item bio-common-card-published">
+                    <time className="level-item bio-common-card-published" datetime={displayDate}>
                       {displayDate}
-                    </span>
+                    </time>
                   </div>
                 </div>
               </div>
