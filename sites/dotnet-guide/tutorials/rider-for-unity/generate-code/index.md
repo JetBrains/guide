@@ -27,3 +27,4 @@ Unity-specific live templates:
 ### See Also
 
 - [More about Rider for Unity...](https://www.jetbrains.com/lp/dotnet-unity/)
+- [Learn Unity with JetBrains Academy](https://hyperskill.org/tracks/36)

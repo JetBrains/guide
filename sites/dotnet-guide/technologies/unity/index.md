@@ -5,4 +5,10 @@ logo: ./unity.png
 website: https://www.unity.com/
 ---
 
-Unity products give content creators the tools to not just entertain but to create innovative RT3D experiences and deliver better processes for almost every industry. 
+Unity products give content creators the tools to not just entertain but to create innovative RT3D experiences and deliver better processes for almost every industry.
+
+---
+
+**🎮 Dive into game development and create your first Unity project with the new JetBrains Academy track. [Read more](https://hyperskill.org/tracks/36).**
+
+---

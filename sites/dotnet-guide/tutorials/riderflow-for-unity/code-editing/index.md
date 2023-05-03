@@ -27,3 +27,4 @@ For a more profound editor with code completion, quick-fixes, and rich refactori
 - [Smart Editor - Documentation](https://www.jetbrains.com/help/riderflow/smart-editor.html)
 - [RiderFlow on JetBrains.com](https://www.jetbrains.com/riderflow/)
 - [RiderFlow in the Unity Asset Store](https://assetstore.unity.com/packages/tools/level-design/riderflow-218574)
+- [Learn Unity with JetBrains Academy](https://hyperskill.org/tracks/36)

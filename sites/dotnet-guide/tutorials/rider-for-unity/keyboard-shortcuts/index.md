@@ -26,3 +26,4 @@ Rider is looking at your code and scanning it, and tries to find and suggest fix
 - [Rider Essentials - Inspections and Quick-Fixes](https://www.jetbrains.com/dotnet/guide/tutorials/rider-essentials/inspections-quick-fixes/)
 - [Rider Essentials - Navigation in a code base with Rider](https://www.jetbrains.com/dotnet/guide/tutorials/rider-essentials/navigation/)
 - [More about Rider for Unity...](https://www.jetbrains.com/lp/dotnet-unity/)
+- [Learn Unity with JetBrains Academy](https://hyperskill.org/tracks/36)
