@@ -26,4 +26,4 @@ You can see all of your assets and expand to any of these folders and see our wh
 
 - [Download Rider](https://www.jetbrains.com/rider/download/)
 - [More about Rider for Unity...](https://www.jetbrains.com/lp/dotnet-unity/)
-- [Learn Unity with JetBrains Academy](https://hyperskill.org/tracks/36)
+- [Learn Unity with JetBrains Academy](https://hyperskill.org/tracks/36?utm=rider_guide)
