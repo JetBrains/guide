@@ -25,7 +25,8 @@
     "clean:webstorm": "rimraf sites/webstorm-guide/_site sites/webstorm-guide/.11ty-vite",
     "demos:webstorm": "copyfiles -e './_site' -f './sites/webstorm-guide/**/demos/*' -u 2 ./sites/webstorm-guide/_site -f false --verbose",
     "clean": "npm run clean:dotnet && npm run clean:goland && npm run clean:intellij && npm run clean:pycharm && npm run clean:webstorm",
-    "test": "vitest run"
+    "test": "vitest run",
+    "broken-link-checker": "node ./src/scanner.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
@@ -41,6 +42,7 @@
     "@types/vhtml": "^2.2.4",
     "@types/video.js": "^7.3.50",
     "@vitest/coverage-c8": "^0.30.1",
+    "broken-link-checker": "^0.7.8",
     "bulma": "^0.9.4",
     "bulma-o-steps": "^1.1.0",
     "command-line-args": "^5.2.1",
