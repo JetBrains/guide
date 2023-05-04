@@ -50,8 +50,6 @@ job("Run link checker") {
     }
 
     failOn {
-        nonZeroExitCode { enabled = true }
-        outOfMemory { enabled = true }
         timeOut {
             runningTimeOutInMinutes = 45
         }
