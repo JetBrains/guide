@@ -1,7 +1,7 @@
 schemaVersion: 2.2.0
 attributes:
   space:
-    instanceType: large
+    instanceType: regular
     editor:
       type: Fleet
       vmoptions:
