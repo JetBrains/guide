@@ -30,5 +30,4 @@ Let’s try performing another action that Rider can help you with: extracting a
 
 - [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/jetbrains/guide/main/sites/dotnet-guide/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.
 - [.NET Guide - Refactoring](https://www.jetbrains.com/dotnet/guide/topics/refactoring/)
-- [WebStorm Guide - Refactoring](https://www.jetbrains.com/webstorm/guide/topics/refactoring/)
 - [Inplace Refactorings](https://www.jetbrains.com/help/rider/Refactorings__Inplace_Refactorings.html#change_signature)

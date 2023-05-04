@@ -12,6 +12,6 @@ running tests, using frameworks as xUnit, NUnit, and MSTest.
 ## See Also
 
 - [Unit Testing in ReSharper/Rider](https://www.jetbrains.com/help/rider/Unit_Testing__Index.html)
-- [xUnit](https://xunit.github.io/)
+- [xUnit](https://xunit.net/)
 - [NUnit](https://nunit.org/)
 - [MSTest](https://docs.microsoft.com/en-us/previous-versions/ms243147(v=vs.90)?redirectedfrom=MSDN)
