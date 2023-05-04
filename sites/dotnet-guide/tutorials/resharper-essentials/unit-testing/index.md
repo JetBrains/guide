@@ -74,6 +74,6 @@ Using these approaches, you can assert an application meets certain performance 
 - [Speed up creation of unit tests](https://www.jetbrains.com/help/resharper/Speed_up_Creation_of_Unit_Tests.html)
 - [Unit Test Sessions](https://www.jetbrains.com/help/resharper/Using_Unit_Test_Sessions.html)
 - [Unit testing memory leaks using dotMemory Unit](https://blog.jetbrains.com/dotnet/2018/10/04/unit-testing-memory-leaks-using-dotmemory-unit/)
-- [xUnit](https://xunit.github.io/)
+- [xUnit](https://xunit.net/)
 - [NUnit](https://nunit.org/)
 - [MSTest](https://docs.microsoft.com/en-us/previous-versions/ms243147(v=vs.90)?redirectedfrom=MSDN)

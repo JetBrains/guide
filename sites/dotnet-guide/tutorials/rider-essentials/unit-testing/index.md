@@ -37,6 +37,6 @@ more tests to cover all cases.
 
 - [Unit Testing in ReSharper/Rider](https://www.jetbrains.com/help/rider/Unit_Testing__Index.html)
 - [Getting Started with Unit Testing](https://www.jetbrains.com/help/rider/Getting_Started_with_Unit_Testing.html)
-- [xUnit](https://xunit.github.io/)
+- [xUnit](https://xunit.net/)
 - [NUnit](https://nunit.org/)
 - [MSTest](https://docs.microsoft.com/en-us/previous-versions/ms243147(v=vs.90)?redirectedfrom=MSDN)
