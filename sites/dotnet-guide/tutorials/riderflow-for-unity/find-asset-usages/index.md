@@ -35,4 +35,4 @@ To stop highlighting usages, press <kbd>Escape</kbd> when the Scene view is focu
 - [Find Usages - Documentation](https://www.jetbrains.com/help/riderflow/find-usages.html)
 - [RiderFlow on JetBrains.com](https://www.jetbrains.com/riderflow/)
 - [RiderFlow in the Unity Asset Store](https://assetstore.unity.com/packages/tools/level-design/riderflow-218574)
-- [Learn Unity with JetBrains Academy](https://hyperskill.org/tracks/36)
+- [Learn Unity with JetBrains Academy](https://hyperskill.org/tracks/36?utm=rider_guide)

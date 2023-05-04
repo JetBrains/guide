@@ -34,4 +34,4 @@ You will see several tabs in the popup window:
 - [Search Everywhere - Documentation](https://www.jetbrains.com/help/riderflow/search-everywhere.html)
 - [RiderFlow on JetBrains.com](https://www.jetbrains.com/riderflow/)
 - [RiderFlow in the Unity Asset Store](https://assetstore.unity.com/packages/tools/level-design/riderflow-218574)
-- [Learn Unity with JetBrains Academy](https://hyperskill.org/tracks/36)
+- [Learn Unity with JetBrains Academy](https://hyperskill.org/tracks/36?utm=rider_guide)

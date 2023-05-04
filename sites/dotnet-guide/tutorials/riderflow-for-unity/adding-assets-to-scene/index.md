@@ -27,4 +27,4 @@ Note that the search window stays open and allows you to drag assets from your s
 - [Search tool - Documentation](https://www.jetbrains.com/help/riderflow/scene-view-management-toolbar.html#search-tool)
 - [RiderFlow on JetBrains.com](https://www.jetbrains.com/riderflow/)
 - [RiderFlow in the Unity Asset Store](https://assetstore.unity.com/packages/tools/level-design/riderflow-218574)
-- [Learn Unity with JetBrains Academy](https://hyperskill.org/tracks/36)
+- [Learn Unity with JetBrains Academy](https://hyperskill.org/tracks/36?utm=rider_guide)
