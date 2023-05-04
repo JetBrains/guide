@@ -31,7 +31,7 @@ function relativize(originalUrl: string, content: string) {
     // absolute urls
     if (href.startsWith("http://") || href.startsWith("https://")) return;
     // relative paths
-    if (href.startsWith(".")) return;
+    if (href.startsWith(".") && !href.startsWith("../")) return;
     // anchor link
     if (href.startsWith("#")) return;
     // ignore VITE ASSETS
