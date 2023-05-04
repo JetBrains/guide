@@ -38,6 +38,34 @@ job("Run tests") {
     runTests()
 }
 
+job("Run link checker") {
+    startOn {
+        gitPush {
+            enabled = false
+        }
+
+        schedule {
+            cron("0 13 * * 1")
+        }
+    }
+
+    failOn {
+        nonZeroExitCode { enabled = true }
+        outOfMemory { enabled = true }
+        timeOut {
+            runningTimeOutInMinutes = 45
+        }
+    }
+
+    parallel {
+        runLinkChecker("https://www.jetbrains.com/dotnet/guide/")
+        runLinkChecker("https://www.jetbrains.com/go/guide/")
+        runLinkChecker("https://www.jetbrains.com/idea/guide/")
+        runLinkChecker("https://www.jetbrains.com/pycharm/guide/")
+        runLinkChecker("https://www.jetbrains.com/webstorm/guide/")
+    }
+}
+
 job("Remote development images") {
     startOn {
         gitPush {
@@ -108,6 +136,23 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
         buildSite(siteShortName, siteDirectory, siteWebPath)
     }
     deploySite(siteShortName, siteLongName, siteDirectory, siteWebPath)
+}
+
+fun StepsScope.runLinkChecker(targetUrl: String) {
+    container(image = nodeJsContainerImage, displayName = "Run link checker - $targetUrl") {
+        resources {
+            cpu = 4.cpu
+            memory = 4.gb
+        }
+
+        shellScript {
+            content = """
+            ## Run tests
+            npm install
+            npm run broken-link-checker $targetUrl
+            """.trimIndent()
+        }
+    }
 }
 
 fun StepsScope.runTests() {
