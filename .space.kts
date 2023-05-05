@@ -55,13 +55,7 @@ job("Run link checker") {
         }
     }
 
-    parallel {
-        runLinkChecker("https://www.jetbrains.com/dotnet/guide/")
-        runLinkChecker("https://www.jetbrains.com/go/guide/")
-        runLinkChecker("https://www.jetbrains.com/idea/guide/")
-        runLinkChecker("https://www.jetbrains.com/pycharm/guide/")
-        runLinkChecker("https://www.jetbrains.com/webstorm/guide/")
-    }
+    runLinkChecker("https://www.jetbrains.com/dotnet/guide/ https://www.jetbrains.com/go/guide/ https://www.jetbrains.com/idea/guide/ https://www.jetbrains.com/pycharm/guide/ https://www.jetbrains.com/webstorm/guide/")
 }
 
 job("Remote development images") {
