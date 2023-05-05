@@ -4,7 +4,7 @@ title: Disable ESLint Rules for Current Line
 technologies: []
 topics: [editing]
 author: er
-subtitle: Learn how to temporarily disable an ESLint rule in one click.
+subtitle: How to temporarily disable an ESLint rule in WebStorm.
 seealso:
 - title: Working with ESLint in WebStorm
   href: https://www.jetbrains.com/help/webstorm/eslint.html

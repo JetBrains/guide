@@ -1,7 +1,7 @@
 ---
-date: 2020-06-19
+date: 2023-02-19
 title: Create New Files and Folders
-subtitle: Use the _New_ popup to add files and folders faster.
+subtitle: Use the New popup to add files and folders faster.
 technologies: []
 topics: [editing]
 author: er

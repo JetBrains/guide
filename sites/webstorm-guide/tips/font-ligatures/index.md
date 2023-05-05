@@ -12,4 +12,4 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
 leadin: |
-  If the font you're using in your JetBrains IDE supports ligatures, you can turn them on in _Preferences / Settings | Editor | Font_. 
+  If the font you're using in WebStorm supports ligatures, you can turn them on in _Preferences / Settings | Editor | Font_. 

@@ -20,4 +20,4 @@ leadin: |
   1. Click the _Create New Project_ button.
   2. Select _Angular CLI_ from the list.
   3. Name your new project and press _Create_.
-  WebStorm will use the Angular CLI installed globally on your machine or the latest version via npx.
+  WebStorm will create a new project using the Angular CLI installed globally on your machine or the latest version via npx.
