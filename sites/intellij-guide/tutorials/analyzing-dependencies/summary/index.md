@@ -36,7 +36,6 @@ Here are the IntelliJ IDEA shortcuts that we used.
 - [(docs) JetBrains - Gradle Dependency Analyzer](https://www.jetbrains.com/help/idea/work-with-gradle-dependency-diagram.html#dependency_analyzer)
 - [(docs) JetBrains - View Maven dependencies as a diagram](https://www.jetbrains.com/help/idea/work-with-maven-dependencies.html#maven_dependency_diagram)
 - [(docs) JetBrains - View dependencies as a diagram](https://www.jetbrains.com/help/idea/work-with-gradle-dependency-diagram.html#gradle_diagram)
-- [(code) JetBrains - intellij-samples](https://github.com/JetBrains/intellij-samples)
 - [(code) Spring PetClinic](https://github.com/spring-projects/spring-petclinic)
 - [(book) Getting to Know IntelliJ IDEA - Trisha Gee & Helen Scott](https://leanpub.com/gettingtoknowIntelliJIDEA)
 
