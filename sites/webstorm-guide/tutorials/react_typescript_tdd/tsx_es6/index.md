@@ -191,7 +191,7 @@ export function Heading({ name }: HeadingProps) {
 ```
 
 As a note, many React examples use TypeScript *interfaces* for props, instead of types.
-This tutorial follows the [rationale for types](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/types_or_interfaces) as explained in the [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app).
+This tutorial follows the [rationale for types](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example/#types-or-interfaces) as explained in the [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app).
 Namely:
 
 - Use `interface` for public APIs because they are more expressive
