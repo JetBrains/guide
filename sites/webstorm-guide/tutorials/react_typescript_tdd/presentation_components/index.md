@@ -23,7 +23,7 @@ Let's make it a *presentation component* by moving the state up to the container
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/jetbrains/guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/presentation_components/).
+[in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/presentation_components/).
 
 ## Counter State
 

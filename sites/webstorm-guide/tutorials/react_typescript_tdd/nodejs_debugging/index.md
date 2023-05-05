@@ -22,7 +22,7 @@ Instead, let's show how the IDE's *debugger*, combined with TDD, can make this i
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/jetbrains/guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/nodejs_debugging/).
+[in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/nodejs_debugging/).
 
 ## Cleanup
 
