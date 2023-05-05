@@ -32,11 +32,11 @@ Here are the IntelliJ IDEA shortcuts that we used.
 - [(video) JetBrains - IntelliJ IDEA: Viewing Dependencies](https://www.youtube.com/watch?v=1wnsc8hYM4c)
 - [(video) JetBrains - IntelliJ IDEA: Managing Dependencies](https://www.youtube.com/watch?v=nqb9yAecM9Y)
 - [(video) JetBrains - IntelliJ IDEA: Analyzing Dependencies](https://www.youtube.com/watch?v=La3Cp-O05eQ)
+- [(video) JetBrains – IntelliJ IDEA Ultimate: Package Checker](https://www.youtube.com/watch?v=RWtN4WNQsX4)
 - [(docs) JetBrains - Maven Dependency Analyzer](https://www.jetbrains.com/help/idea/work-with-maven-dependencies.html#dependency_analyzer)
 - [(docs) JetBrains - Gradle Dependency Analyzer](https://www.jetbrains.com/help/idea/work-with-gradle-dependency-diagram.html#dependency_analyzer)
 - [(docs) JetBrains - View Maven dependencies as a diagram](https://www.jetbrains.com/help/idea/work-with-maven-dependencies.html#maven_dependency_diagram)
 - [(docs) JetBrains - View dependencies as a diagram](https://www.jetbrains.com/help/idea/work-with-gradle-dependency-diagram.html#gradle_diagram)
-- [(code) JetBrains - intellij-samples](https://github.com/JetBrains/intellij-samples)
 - [(code) Spring PetClinic](https://github.com/spring-projects/spring-petclinic)
 - [(book) Getting to Know IntelliJ IDEA - Trisha Gee & Helen Scott](https://leanpub.com/gettingtoknowIntelliJIDEA)
 
