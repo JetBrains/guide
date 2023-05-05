@@ -24,7 +24,7 @@ const siteChecker = new SiteChecker(
         excludeExternalLinks: false,
         requestMethod: "get",
         acceptedSchemes: ["http", "https"],
-        excludedKeywords: ["localhost", "twitter", "mvnrepository"], // these sites usually fail when running automated checks
+        excludedKeywords: ["localhost", "twitter", "mvnrepository", "mysql.com"], // these sites usually fail when running automated checks
         userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'
     },
     {
