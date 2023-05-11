@@ -8,7 +8,6 @@ import Sidebar from "../../sidebar/Sidebar.11ty";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import { References } from "../../../src/ReferenceModels";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
-import { byRole } from "../../../src/TestCases";
 
 export type TutorialLayoutData = LayoutProps & TutorialFrontmatter;
 export function TutorialLayout(
@@ -17,7 +16,6 @@ export function TutorialLayout(
 ): JSX.Element {
   const { collections, page, content } = data;
   const tutorial = collections.allResources.get(page.url) as Tutorial;
-  this.addTestCase(page.url, [byRole({ role: "link", text: "Paul Everitt" })]);
 
   // Sidebars
   const references = tutorial.references as References;

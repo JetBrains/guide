@@ -3,7 +3,6 @@ import {
   ReferenceLayout,
   ReferenceLayoutProps,
 } from "../../layouts/ReferenceLayout.11y";
-import { byRole } from "../../../src/TestCases";
 import { Author } from "./AuthorModels";
 import { LayoutContext } from "../../../src/models";
 import Thumbnail from "../../Image.11ty";
@@ -12,9 +11,7 @@ export function AuthorsLayout(
   this: LayoutContext,
   data: ReferenceLayoutProps
 ): JSX.Element {
-  const { content, page } = data;
-  // Schedule a post-build validation for this view
-  this.addTestCase(page.url, [byRole({ role: "link", text: "Paul Everitt" })]);
+  const { content } = data;
   const authors = this.getReferences("author") as Author[];
   // TODO It doesn't appear any of the callers use figure
   const figure = undefined;

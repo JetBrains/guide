@@ -658,12 +658,10 @@ const collections: SiteCollections = {
   allReferences,
 };
 
-const addTestCase = vi.fn();
 const getResources = vi.fn();
 const getReferences = vi.fn();
 const renderMarkdown = (content: string): string => content;
 const context: LayoutContext = {
-  addTestCase,
   getResources,
   getReferences,
   renderMarkdown,

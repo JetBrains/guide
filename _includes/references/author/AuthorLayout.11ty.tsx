@@ -14,8 +14,6 @@ export function AuthorLayout(
   this: LayoutContext,
   data: ReferenceLayoutProps
 ): JSX.Element {
-  // TODO Get a better test here
-  // this.addTestCase(page.url, [byRole({ role: "link", text: "Paul Everitt" })]);
   const { collections, content, page } = data;
   const author = collections.allReferences.get(
     `author:${page.fileSlug}`
