@@ -12,7 +12,10 @@ export function ProductsLayout(
   data: ProductsLayoutData
 ): JSX.Element {
   const { content } = data;
-  const products = this.getReferences("product") as Product[];
+  const products = this.getReferences({
+    resourceType: "product",
+    channel: data.site.channel,
+  }) as Product[];
   const figure = undefined;
   const listing = (
     <nav className="bd-links bio-resourcecards">

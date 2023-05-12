@@ -33,6 +33,7 @@ import path from "upath";
 import * as fs from "fs";
 import MarkdownIt from "markdown-it";
 import prism from "markdown-it-prism";
+import { getReferences, getResources, QueryFilter } from "./queries";
 
 export const resourceCollections = {
   playlist: Playlist,
@@ -107,21 +108,12 @@ export async function registerIncludes(
   // Query helpers
   eleventyConfig.addJavaScriptFunction(
     "getResources",
-    (resourceType?: string): Resource[] => {
-      if (!resourceType) return allResourcesList;
-      return allResourcesList.filter(
-        (resource) => resource.resourceType === resourceType
-      );
-    }
+    (filter: QueryFilter): Resource[] => getResources(allResourcesList, filter)
   );
   eleventyConfig.addJavaScriptFunction(
     "getReferences",
-    (resourceType?: string): ReferenceFrontmatter[] => {
-      if (!resourceType) return allReferencesList;
-      return allReferencesList.filter(
-        (reference) => reference.resourceType === resourceType
-      );
-    }
+    (filter: QueryFilter): ReferenceFrontmatter[] =>
+      getReferences(allReferencesList, filter)
   );
 
   // centralize Markdown configuration
@@ -138,8 +130,7 @@ export async function registerIncludes(
   eleventyConfig.addJavaScriptFunction(
     "renderMarkdown",
     (content: string): string => {
-      const result = md.render(content);
-      return result;
+      return md.render(content);
     }
   );
 }

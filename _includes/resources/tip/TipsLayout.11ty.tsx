@@ -11,7 +11,10 @@ export function TipsLayout(
   data: ReferenceLayoutProps
 ): JSX.Element {
   const { content } = data;
-  const tips = this.getResources("tip");
+  const tips = this.getResources({
+    resourceType: "tip",
+    channel: data.site.channel,
+  });
   const figure = undefined;
   const listing = (
     <>

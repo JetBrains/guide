@@ -11,7 +11,10 @@ export function PlaylistsLayout(
   data: PlaylistsLayoutProps
 ): JSX.Element {
   const { content } = data;
-  const playlists = this.getResources("playlist");
+  const playlists = this.getResources({
+    resourceType: "playlist",
+    channel: data.site.channel,
+  });
   const figure = undefined;
   const listing = (
     <>

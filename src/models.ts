@@ -2,6 +2,7 @@ import { Static, Type } from "@sinclair/typebox";
 import { BaseFrontmatter, Resource } from "./ResourceModels";
 import { ReferenceFrontmatter } from "./ReferenceModels";
 import { SiteCollections } from "../_includes/models";
+import { QueryFilter } from "../_includes/queries";
 
 export const EleventyPage = Type.Object({
   // The common, page-oriented data 11ty passes in when it reads a Markdown file
@@ -30,9 +31,9 @@ export interface LayoutContext {
   /**
    * Used by view renders to grab the `this` object
    */
-  getResources(resourceType?: string): Resource[];
+  getResources(filter: QueryFilter): Resource[];
 
-  getReferences(resourceType?: string): ReferenceFrontmatter[];
+  getReferences(filter: QueryFilter): ReferenceFrontmatter[];
 
   renderMarkdown(content: string): string;
 }

@@ -10,7 +10,10 @@ export function TopicsLayout(
   this: LayoutContext,
   data: ReferenceLayoutProps
 ): JSX.Element {
-  const topics = this.getReferences("topic") as Topic[];
+  const topics = this.getReferences({
+    resourceType: "topic",
+    channel: data.site.channel,
+  }) as Topic[];
   const figure = undefined;
   const listing = (
     <nav className="bd-links bio-resourcecards">

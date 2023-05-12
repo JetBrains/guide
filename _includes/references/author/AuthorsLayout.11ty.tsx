@@ -12,7 +12,10 @@ export function AuthorsLayout(
   data: ReferenceLayoutProps
 ): JSX.Element {
   const { content } = data;
-  const authors = this.getReferences("author") as Author[];
+  const authors = this.getReferences({
+    resourceType: "author",
+    channel: data.site.channel,
+  }) as Author[];
   // TODO It doesn't appear any of the callers use figure
   const figure = undefined;
   const listing = (

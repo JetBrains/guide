@@ -4,7 +4,8 @@ import { LayoutContext, LayoutProps } from "../../src/models";
 import { BaseFrontmatter } from "../../src/ResourceModels";
 import ResourceCard from "../../_includes/resourcecard/ResourceCard.11ty";
 
-export type DotNetHomepageData = LayoutProps & BaseFrontmatter & { subtitle?: string };
+export type DotNetHomepageData = LayoutProps &
+  BaseFrontmatter & { subtitle?: string };
 
 export class DotNetHomepage {
   data() {
@@ -16,7 +17,9 @@ export class DotNetHomepage {
   }
 
   render(this: LayoutContext, data: DotNetHomepageData): JSX.Element {
-    const tips = this.getResources().slice(0, 15);
+    const tips = this.getResources({
+      channel: data.site.channel,
+    }).slice(0, 15);
     const listing = (
       <>
         {tips.map((tip) => {
@@ -42,12 +45,15 @@ export class DotNetHomepage {
             <div className="container">
               <h2 className="title">Recent Tips &amp; Tutorials</h2>
               <div className="columns">
-                <div className="column is-four-fifths-desktop bio-resourcecards"
-                     dangerouslySetInnerHTML={{ __html: listing }}>
-                </div>
+                <div
+                  className="column is-four-fifths-desktop bio-resourcecards"
+                  dangerouslySetInnerHTML={{ __html: listing }}
+                ></div>
                 <div className="column is-one-fifth-desktop is-hidden-touch bio-sidebar-page">
                   <aside className="bd-side bio-page-sidebar">
-                    <p className="menu-label bio-page-sidebar-published">Browse...</p>
+                    <p className="menu-label bio-page-sidebar-published">
+                      Browse...
+                    </p>
                     <ul className="menu-list pt-0">
                       <li>
                         <a href="/tutorials/">

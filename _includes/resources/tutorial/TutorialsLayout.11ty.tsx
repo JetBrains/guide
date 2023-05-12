@@ -10,7 +10,10 @@ export function TutorialsLayout(
   this: LayoutContext,
   data: ReferenceLayoutProps
 ): JSX.Element {
-  const tutorials = this.getResources("tutorial");
+  const tutorials = this.getResources({
+    resourceType: "tutorial",
+    channel: data.site.channel,
+  });
   const figure = undefined;
   const listing = (
     <>

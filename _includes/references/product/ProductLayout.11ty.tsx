@@ -20,7 +20,9 @@ export function ProductLayout(
     throw new Error(`Product "${page.fileSlug}" not in collection`);
   }
 
-  const linkedResources: Resource[] = this.getResources().filter(
+  const linkedResources: Resource[] = this.getResources({
+    channel: data.site.channel,
+  }).filter(
     (ci) => ci.products && ci.products.includes(product.label as string)
   );
 

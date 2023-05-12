@@ -11,7 +11,10 @@ export function TechnologiesLayout(
   data: ReferenceLayoutProps
 ): JSX.Element {
   const { content } = data;
-  const technologies = this.getReferences("technology") as Technology[];
+  const technologies = this.getReferences({
+    resourceType: "technology",
+    channel: data.site.channel,
+  }) as Technology[];
 
   const figure = undefined;
   const listing = (

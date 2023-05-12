@@ -10,6 +10,10 @@
         {
           "type": "object",
           "properties": {
+            "channel": {
+              "description": "Optional subsite for this resource",
+              "type": "string"
+            },
             "resourceType": {
               "description": "Resource type. Should not be specified manually",
               "type": "string"
