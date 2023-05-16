@@ -8,7 +8,7 @@ author: pwe
 subtitle: Get your feature branch caught up with changes on the main branch.
 seealso:
   - title: Apply changes from one Git branch to another
-    href: https://www.jetbrains.com/help/idea/apply-changes-from-one-branch-to-another.html
+    href: https://www.jetbrains.com/help/go/apply-changes-from-one-branch-to-another.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
