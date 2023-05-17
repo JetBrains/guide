@@ -5,6 +5,7 @@ import { LayoutContext, LayoutProps } from "../../../src/models";
 import { Product, ProductFrontmatter } from "./ProductModels";
 import { Resource } from "../../../src/ResourceModels";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
+import fixtures from "../../fixtures";
 
 export type ProductLayoutProps = LayoutProps & ProductFrontmatter;
 
@@ -14,7 +15,7 @@ export function ProductLayout(
 ): JSX.Element {
   const { collections, content, page } = data;
   const product = collections.allReferences.get(
-    `products:${page.fileSlug}`
+    `${fixtures.channel}:products:${page.fileSlug}`
   ) as Product;
   if (!product) {
     throw new Error(`Product "${page.fileSlug}" not in collection`);

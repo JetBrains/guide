@@ -6,7 +6,7 @@ import fixtures from "../fixtures";
 import { Tutorial } from "../resources/tutorial/TutorialModels";
 
 test("SidebarSteps", () => {
-  const url = "/tutorials/some-tutorial/";
+  const url = `/${fixtures.channel}/tutorials/some-tutorial/`;
   const tutorial = fixtures.resolvedCollections.allResources.get(
     url
   ) as Tutorial;

@@ -5,6 +5,7 @@ import { Resource } from "../../../src/ResourceModels";
 import { Technology, TechnologyFrontmatter } from "./TechnologyModels";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { ReferenceLayout } from "../../layouts/ReferenceLayout.11y";
+import fixtures from "../../fixtures";
 
 export type TechnologyLayoutProps = LayoutProps & TechnologyFrontmatter;
 
@@ -14,7 +15,7 @@ export function TechnologyLayout(
 ): JSX.Element {
   const { collections, content, page } = data;
   const technology = collections.allReferences.get(
-    `technologies:${page.fileSlug}`
+    `${fixtures.channel}:technologies:${page.fileSlug}`
   ) as Technology;
   if (!technology) {
     throw new Error(`Technology "${page.fileSlug}" not in collection`);

@@ -6,7 +6,7 @@ import fixtures from "../../fixtures";
 import { Tutorial } from "./TutorialModels";
 
 const parent = fixtures.resolvedCollections.allResources.get(
-  "/tutorials/some-tutorial/"
+  `/${fixtures.channel}/tutorials/some-tutorial/`
 ) as Tutorial;
 export const topNavProps: TopNavProps = {
   parent,

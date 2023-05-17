@@ -15,14 +15,20 @@ const mockCollectionApi: CollectionApi = {
 };
 
 test("should start with unresolved references on tips", () => {
-  const tip0 = fixtures.collections.allResources.get("/tips/some-tip/");
+  const tip0 = fixtures.collections.allResources.get(
+    `/${fixtures.channel}/tips/some-tip/`
+  );
   expect(tip0).to.exist;
   expect(tip0 && tip0.references).to.be.undefined;
 });
 
 test("a resource and a reference exist in fixture data", () => {
-  const tip0 = fixtures.collections.allResources.get("/tips/some-tip/");
-  const author0 = fixtures.collections.allReferences.get("author:sa");
+  const tip0 = fixtures.collections.allResources.get(
+    `/${fixtures.channel}/tips/some-tip/`
+  );
+  const author0 = fixtures.collections.allReferences.get(
+    `${fixtures.channel}:author:sa`
+  );
   expect(tip0).to.exist;
   expect(author0).to.exist;
 });
@@ -41,20 +47,22 @@ test("should construct collections", async () => {
   // Authors
   const authorItem0 = fixtures.authorItems[0];
   const thisAuthor0 = allReferences.get(
-    `author:${authorItem0.data.label}`
+    `${fixtures.channel}:author:${authorItem0.data.label}`
   ) as AuthorFrontmatter;
   expect(thisAuthor0).to.exist;
   expect(thisAuthor0.title).to.equal(authorItem0.data.title);
 
   // Topics
   const topic0Item = fixtures.topicItems[0];
-  const thisTopic0 = allReferences.get(`topics:${topic0Item.data.label}`);
+  const thisTopic0 = allReferences.get(
+    `${fixtures.channel}:topics:${topic0Item.data.label}`
+  );
   expect(thisTopic0 && thisTopic0.title).to.equal(topic0Item.data.title);
 
   // Technologies
   const technology0Item = fixtures.technologyItems[0];
   const technology0 = allReferences.get(
-    `technologies:${technology0Item.data.label}`
+    `${fixtures.channel}:technologies:${technology0Item.data.label}`
   );
   expect(technology0 && technology0.title).to.equal(technology0Item.data.title);
 
@@ -70,7 +78,9 @@ describe("Resolve References", () => {
   const authorItem0 = fixtures.authorItems[0];
   const authorItem1 = fixtures.authorItems[1];
   let resource: Tip;
-  const tip0 = fixtures.collections.allResources.get("/tips/some-tip/") as Tip;
+  const tip0 = fixtures.collections.allResources.get(
+    `/${fixtures.channel}/tips/some-tip/`
+  ) as Tip;
   expect(tip0).to.exist;
 
   beforeEach(() => {
@@ -78,7 +88,7 @@ describe("Resolve References", () => {
   });
 
   test("allReferences should exist", () => {
-    expect(allReferences.get("author:sa")).to.exist;
+    expect(allReferences.get(`${fixtures.channel}:author:sa`)).to.exist;
   });
 
   test("should throw error for undefined field", () => {
@@ -95,7 +105,7 @@ describe("Resolve References", () => {
     const resolver = () =>
       resolveReference({ fieldName, resource, allReferences });
     expect(resolver).toThrowError(
-      `Resource "/tips/some-tip/" has unresolved reference "products:xxx"`
+      `Resource "/pycharm/tips/some-tip/" has unresolved reference "pycharm:products:xxx"`
     );
   });
 
@@ -106,13 +116,13 @@ describe("Resolve References", () => {
     const resolver = () =>
       resolveReference({ fieldName, resource, allReferences });
     expect(resolver).toThrowError(
-      `Resource "/tips/some-tip/" has unresolved reference "author:xxx"`
+      `Resource "/pycharm/tips/some-tip/" has unresolved reference "pycharm:author:xxx"`
     );
   });
 
   test("resolve a set of references", () => {
     const tip0 = fixtures.collections.allResources.get(
-      "/tips/some-tip/"
+      `/${fixtures.channel}/tips/some-tip/`
     ) as Tip;
     expect(tip0).to.exist;
     expect(tip0.references).not.to.exist;
@@ -130,7 +140,7 @@ describe("Resolve References", () => {
   test("resolve a missing products", () => {
     // Get a tip with no products in frontmatter
     const tip1 = fixtures.collections.allResources.get(
-      "/tips/another-tip/"
+      "/pycharm/tips/another-tip/"
     ) as Tip;
     expect(tip1).to.exist;
     expect(tip1.references).not.to.exist;

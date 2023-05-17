@@ -1,8 +1,8 @@
-import {expect, test} from "vitest";
-import {screen} from "@testing-library/dom";
+import { expect, test } from "vitest";
+import { screen } from "@testing-library/dom";
 
-import {ProductLayout, ProductLayoutProps} from "./ProductLayout.11ty";
-import fixtures, {baseRenderData} from "../../fixtures";
+import { ProductLayout, ProductLayoutProps } from "./ProductLayout.11ty";
+import fixtures, { baseRenderData } from "../../fixtures";
 
 test("should render ProductLayout", () => {
   const renderProps: ProductLayoutProps = {
@@ -21,5 +21,5 @@ test("should render ProductLayout", () => {
     name: "Resource",
   });
   expect(links.length).to.equal(1);
-  expect(links[0].href).to.equal("/tips/some-tip/");
+  expect(links[0].href).to.equal(`/${fixtures.channel}/tips/some-tip/`);
 });

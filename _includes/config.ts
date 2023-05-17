@@ -48,7 +48,7 @@ export const referenceCollections = {
   topic: Topic,
 };
 
-export const rootPath = "sites/webstorm-pycharm-webstorm-guide";
+export const rootPath = "sites/webstorm";
 
 export async function registerIncludes(
   { eleventyConfig }: RegisterIncludesProps,

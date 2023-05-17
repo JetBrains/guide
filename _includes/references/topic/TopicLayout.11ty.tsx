@@ -5,6 +5,7 @@ import { LayoutContext, LayoutProps } from "../../../src/models";
 import { Resource } from "../../../src/ResourceModels";
 import { Topic, TopicFrontmatter } from "./TopicModels";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
+import fixtures from "../../fixtures";
 
 export type TopicLayoutData = LayoutProps & TopicFrontmatter;
 
@@ -14,7 +15,7 @@ export function TopicLayout(
 ): JSX.Element {
   const { collections, content, page } = data;
   const topic = collections.allReferences.get(
-    `topics:${page.fileSlug}`
+    `${fixtures.channel}:topics:${page.fileSlug}`
   ) as Topic;
   if (!topic) {
     throw new Error(`Topic "${page.fileSlug}" not in collection`);

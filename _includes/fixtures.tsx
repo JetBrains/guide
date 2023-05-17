@@ -39,6 +39,7 @@ import {
 const content = `<p>Hello <em id="world">world</em>.</p>`;
 const date = new Date(Date.UTC(2023, 1, 11));
 const laterDate = new Date(Date.UTC(2023, 1, 22));
+const channel = "pycharm";
 
 const children: string[] = [
   h("", {
@@ -48,6 +49,7 @@ const children: string[] = [
 
 const tipFrontmatters: TipFrontmatter[] = [
   {
+    channel,
     title: "Some Tip",
     date,
     resourceType: "tip",
@@ -58,6 +60,7 @@ const tipFrontmatters: TipFrontmatter[] = [
     thumbnail: "thumbnail.png",
   },
   {
+    channel,
     title: "Another Tip",
     date: laterDate,
     resourceType: "tip",
@@ -78,7 +81,7 @@ const tipItems: {
     data: { ...tipFrontmatters[0] },
     page: {
       fileSlug: "some-tip",
-      url: "/tips/some-tip/",
+      url: `/${channel}/tips/some-tip/`,
       inputPath: `${rootPath}/tips/some-tip/index.md`,
       date,
     },
@@ -88,7 +91,7 @@ const tipItems: {
     data: { ...tipFrontmatters[1] },
     page: {
       fileSlug: "another-tip",
-      url: "/tips/another-tip/",
+      url: `/${channel}/tips/another-tip/`,
       inputPath: `${rootPath}/tips/another-tip/index.md`,
       date,
     },
@@ -114,12 +117,14 @@ const tipDatas: {
 
 const authorsFrontmatters: AuthorFrontmatter[] = [
   {
+    channel,
     title: "Some Author",
     resourceType: "author",
     label: "sa",
     thumbnail: "sa.png",
   },
   {
+    channel,
     title: "Another Author",
     resourceType: "author",
     label: "aa",
@@ -137,7 +142,7 @@ const authorItems: {
     data: { ...authorsFrontmatters[0] },
     page: {
       fileSlug: "sa",
-      url: "/authors/sa/",
+      url: `/${channel}/authors/sa/`,
       inputPath: `${rootPath}/authors/sa/index.md`,
       date,
     },
@@ -147,8 +152,8 @@ const authorItems: {
     data: { ...authorsFrontmatters[1] },
     page: {
       fileSlug: "aa",
-      url: "/authors/aa/",
-      inputPath: "./sites/webstorm-pycharm-webstorm-guide/authors/aa/index.md",
+      url: `/${channel}/authors/aa/`,
+      inputPath: "./sites/webstorm/authors/aa/index.md",
       date,
     },
   },
@@ -173,12 +178,14 @@ const authorDatas: {
 
 const technologyFrontmatters: TechnologyFrontmatter[] = [
   {
+    channel,
     title: "Some Technology",
     resourceType: "technology",
     label: "st",
     logo: "stlogo.svg",
   },
   {
+    channel,
     title: "Another Technology",
     resourceType: "technology",
     label: "at",
@@ -196,7 +203,7 @@ const technologyItems: {
     data: { ...technologyFrontmatters[0] },
     page: {
       fileSlug: "st",
-      url: "/technologies/st/",
+      url: `/${channel}/technologies/st/`,
       inputPath: `${rootPath}/technologies/st/index.md`,
       date,
     },
@@ -206,7 +213,7 @@ const technologyItems: {
     data: { ...technologyFrontmatters[1] },
     page: {
       fileSlug: "at",
-      url: "/technologies/at/",
+      url: `/${channel}/technologies/at/`,
       inputPath: `${rootPath}/technologies/at/index.md`,
       date,
     },
@@ -232,6 +239,7 @@ const technologyDatas: {
 
 const topicFrontmatters: TopicFrontmatter[] = [
   {
+    channel,
     title: "Some Topic",
     resourceType: "topic",
     label: "st",
@@ -239,6 +247,7 @@ const topicFrontmatters: TopicFrontmatter[] = [
     icon: "st-icon.png",
   },
   {
+    channel,
     title: "Another Topic",
     resourceType: "topic",
     label: "at",
@@ -257,7 +266,7 @@ const topicItems: {
     data: { ...topicFrontmatters[0] },
     page: {
       fileSlug: "at",
-      url: "/topics/at/",
+      url: `/${channel}/topics/at/`,
       inputPath: `${rootPath}/topics/at/index.md`,
       date,
     },
@@ -267,7 +276,7 @@ const topicItems: {
     data: { ...topicFrontmatters[1] },
     page: {
       fileSlug: "sp",
-      url: "/products/sp/",
+      url: `/${channel}/products/sp/`,
       inputPath: `${rootPath}/products/sp/index.md`,
       date,
     },
@@ -293,12 +302,14 @@ const topicDatas: {
 
 const productFrontmatters: ProductFrontmatter[] = [
   {
+    channel,
     title: "Some Product",
     resourceType: "product",
     label: "sp",
     logo: "some.png",
   },
   {
+    channel,
     title: "Another Product",
     resourceType: "product",
     label: "ap",
@@ -317,7 +328,7 @@ const productItems: {
     data: { ...productFrontmatters[0] },
     page: {
       fileSlug: "sp",
-      url: "/products/sp/",
+      url: `/${channel}/products/sp/`,
       inputPath: `${rootPath}/products/sp/index.md`,
       date,
     },
@@ -327,7 +338,7 @@ const productItems: {
     data: { ...productFrontmatters[1] },
     page: {
       fileSlug: "ap",
-      url: "/topics/ap/",
+      url: `/${channel}/topics/ap/`,
       inputPath: `${rootPath}/topics/ap/index.md`,
       date,
     },
@@ -353,6 +364,7 @@ const productDatas: {
 
 export const tutorialFrontmatters: TutorialFrontmatter[] = [
   {
+    channel,
     title: "Some Tutorial",
     resourceType: "tutorial",
     author: "sa",
@@ -365,6 +377,7 @@ export const tutorialFrontmatters: TutorialFrontmatter[] = [
     ],
   },
   {
+    channel,
     title: "Another Tutorial",
     resourceType: "tutorial",
     author: "sa",
@@ -384,7 +397,7 @@ export const tutorialItems: {
     data: { ...tutorialFrontmatters[0] },
     page: {
       fileSlug: "some-tutorial",
-      url: "/tutorials/some-tutorial/",
+      url: `/${channel}/tutorials/some-tutorial/`,
       inputPath: `${rootPath}/tutorials/some-tutorial/index.md`,
       date,
     },
@@ -394,7 +407,7 @@ export const tutorialItems: {
     data: { ...tutorialFrontmatters[1] },
     page: {
       fileSlug: "another-tutorial",
-      url: "/tutorials/another-tutorial/",
+      url: `/${channel}/tutorials/another-tutorial/`,
       inputPath: `${rootPath}/tutorials/another-tutorial/index.md`,
       date,
     },
@@ -420,6 +433,7 @@ export const tutorialDatas: {
 
 export const tutorialStepFrontmatters: TutorialStepFrontmatter[] = [
   {
+    channel,
     title: "Some Tutorial Step",
     resourceType: "tutorialstep",
     author: "sa",
@@ -427,6 +441,7 @@ export const tutorialStepFrontmatters: TutorialStepFrontmatter[] = [
     thumbnail: "thumbnail.png",
   },
   {
+    channel,
     title: "Another Tutorial Step",
     resourceType: "tutorialstep",
     author: "sa",
@@ -434,6 +449,7 @@ export const tutorialStepFrontmatters: TutorialStepFrontmatter[] = [
     date,
   },
   {
+    channel,
     title: "Third Tutorial Step",
     resourceType: "tutorialstep",
     author: "sa",
@@ -452,7 +468,7 @@ export const tutorialStepItems: {
     data: { ...tutorialStepFrontmatters[0] },
     page: {
       fileSlug: "some-tutorialstep",
-      url: "/tutorials/some-tutorial/some-tutorialstep/",
+      url: `/${channel}/tutorials/some-tutorial/some-tutorialstep/`,
       inputPath: `${rootPath}/tutorials/some-tutorial/some-tutorialstep/index.md`,
       date,
     },
@@ -462,7 +478,7 @@ export const tutorialStepItems: {
     data: { ...tutorialStepFrontmatters[1] },
     page: {
       fileSlug: "another-tutorialstep",
-      url: "/tutorials/some-tutorial/another-tutorialstep/",
+      url: `/${channel}/tutorials/some-tutorial/another-tutorialstep/`,
       inputPath: `${rootPath}/tutorials/some-tutorial/another-tutorialstep/index.md`,
       date,
     },
@@ -472,7 +488,7 @@ export const tutorialStepItems: {
     data: { ...tutorialStepFrontmatters[2] },
     page: {
       fileSlug: "third-tutorialstep",
-      url: "/tutorials/some-tutorial/third-tutorialstep/",
+      url: `/${channel}/tutorials/some-tutorial/third-tutorialstep/`,
       inputPath: `${rootPath}/tutorials/some-tutorial/third-tutorialstep/index.md`,
       date,
     },
@@ -508,14 +524,16 @@ export const tutorialStepDatas: {
 
 export const playlistFrontmatters: PlaylistFrontmatter[] = [
   {
+    channel,
     title: "Some Playlist",
     resourceType: "playlist",
     author: "sa",
     date,
     thumbnail: "thumbnail.png",
-    playlistItems: ["/tips/some-tip/"],
+    playlistItems: [`/${channel}/tips/some-tip/`],
   },
   {
+    channel,
     title: "Another Playlist",
     resourceType: "playlist",
     author: "sa",
@@ -535,7 +553,7 @@ export const playlistItems: {
     data: { ...playlistFrontmatters[0] },
     page: {
       fileSlug: "some-playlist",
-      url: "/playlists/some-playlist/",
+      url: `/${channel}/playlists/some-playlist/`,
       inputPath: `${rootPath}/playlists/some-playlist/index.md`,
       date,
     },
@@ -545,7 +563,7 @@ export const playlistItems: {
     data: { ...playlistFrontmatters[1] },
     page: {
       fileSlug: "another-playlist",
-      url: "/playlists/another-playlist/",
+      url: `/${channel}/playlists/another-playlist/`,
       inputPath: `${rootPath}/playlists/another-playlist/index.md`,
       date,
     },
@@ -639,9 +657,10 @@ const allResources: ResourceCollection = new Map();
 
 const allReferences: ReferenceCollection = new Map();
 [...authors, ...products, ...technologies, ...topics].forEach((reference) => {
+  const { channel, label } = reference;
   // @ts-ignore
   const joinKey = reference.constructor.joinKey;
-  const key = `${joinKey}:${reference.label}`;
+  const key = `${channel}:${joinKey}:${label}`;
   return allReferences.set(key, reference);
 });
 
@@ -747,6 +766,7 @@ export const baseRenderData = {
 const fixtures = {
   authors,
   authorItems,
+  channel,
   children,
   collections,
   content,
