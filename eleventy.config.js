@@ -11,9 +11,8 @@ const {
 const purgeCss = require("@fullhuman/postcss-purgecss");
 
 const options = commandLineArgs([
-  { name: "config", type: String },
   { name: "incremental", type: Boolean, defaultOption: false },
-  { name: "pathprefix", type: String, defaultOption: "/" },
+  // { name: "pathprefix", type: String, defaultOption: "/" },
   { name: "serve", type: Boolean, defaultOption: false },
   { name: "watch", type: Boolean, defaultOption: false },
 ]);
@@ -40,7 +39,8 @@ module.exports = function (eleventyConfig) {
                   /has-background-info-light/,
                   /tag/,
                   /is-warning/,
-                  /is-pulled-right/],
+                  /is-pulled-right/,
+                ],
               },
             }),
           ],
@@ -83,10 +83,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./!(_site)**/*.{gif,jpg,png,svg,jpeg}", {
     overwrite: true,
   });
-  eleventyConfig.addPassthroughCopy(
-    { "../../public/assets": "assets" },
-    { overwrite: true }
-  );
+  // eleventyConfig.addPassthroughCopy(
+  //   { "../public/assets": "assets" },
+  //   { overwrite: true }
+  // );
   eleventyConfig.ignores.add("**/demos/**");
 
   registerIncludes({ eleventyConfig }, process.cwd())
@@ -99,9 +99,9 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      input: "./",
-      includes: "../../_includes",
-      layouts: "../../_includes",
+      input: "./sites",
+      includes: "../_includes",
+      layouts: "../_includes",
       output: "./_site",
     },
   };

@@ -1,5 +1,6 @@
 {
   "channel": "goland",
+  "channelPath": "/goland-guide",
   "siteLogo": "jetbrains-simple.svg",
   "siteTitle": "GoLand Guide",
   "siteDescription": "Be more productive and write high-quality code faster with a series of tips and tricks",

@@ -14,6 +14,7 @@ export type PlaylistFrontmatter = Static<typeof PlaylistFrontmatter>;
 export class Playlist extends Resource implements PlaylistFrontmatter {
   playlistItems: string[];
   playlistResources: Resource[];
+  channelPath: string;
   static frontmatterSchema: any = PlaylistFrontmatter;
 
   constructor({
@@ -26,6 +27,7 @@ export class Playlist extends Resource implements PlaylistFrontmatter {
     super({ data, page });
     this.playlistItems = data.playlistItems;
     this.playlistResources = [];
+    this.channelPath = data.site.channelPath;
   }
 
   resolve(allCollections: AllCollections) {
@@ -34,7 +36,7 @@ export class Playlist extends Resource implements PlaylistFrontmatter {
 
     // then call this
     this.playlistItems.forEach((pi) => {
-      const playlistResource = allResources.get(pi);
+      const playlistResource = allResources.get(`${this.channelPath}${pi}`);
       if (playlistResource) {
         this.playlistResources.push(playlistResource);
       } else {
