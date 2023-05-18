@@ -9,17 +9,17 @@ subtitle: Our handpicked top shortcuts
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
-    - /tips/alt-enter/
-    - /tips/search-everywhere/
-    - /tips/escape-focus-editor/
-    - /tips/smart-completion/
-    - /tips/complete-statement/
-    - /tips/f2/
-    - /tips/reformat-file/
-    - /tips/recent-files/
-    - /tips/recent-locations/
-    - /tips/run-anything/
-    - /tips/run-and-terminate-process/
+    - /intellij/tips/alt-enter/
+    - /intellij/tips/search-everywhere/
+    - /intellij/tips/escape-focus-editor/
+    - /intellij/tips/smart-completion/
+    - /intellij/tips/complete-statement/
+    - /intellij/tips/f2/
+    - /intellij/tips/reformat-file/
+    - /intellij/tips/recent-files/
+    - /intellij/tips/recent-locations/
+    - /intellij/tips/run-anything/
+    - /intellij/tips/run-and-terminate-process/
 
 
 ---

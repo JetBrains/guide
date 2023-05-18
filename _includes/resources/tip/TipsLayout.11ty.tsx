@@ -13,7 +13,7 @@ export function TipsLayout(
   const { content } = data;
   const tips = this.getResources({
     resourceType: "tip",
-    channel: data.site.channel,
+    channel: data.channel,
   });
   const figure = undefined;
   const listing = (

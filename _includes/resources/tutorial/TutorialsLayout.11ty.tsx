@@ -12,7 +12,7 @@ export function TutorialsLayout(
 ): JSX.Element {
   const tutorials = this.getResources({
     resourceType: "tutorial",
-    channel: data.site.channel,
+    channel: data.channel,
   });
   const figure = undefined;
   const listing = (

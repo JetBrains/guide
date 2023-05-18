@@ -12,7 +12,7 @@ export function TopicsLayout(
 ): JSX.Element {
   const topics = this.getReferences({
     resourceType: "topic",
-    channel: data.site.channel,
+    channel: data.channel,
   }) as Topic[];
   const figure = undefined;
   const listing = (

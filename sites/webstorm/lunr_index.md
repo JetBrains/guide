@@ -1,5 +1,5 @@
 ---
-permalink: lunr_index.json
+permalink: /webstorm/lunr_index.json
 layout: 'lunr.11ty.ts'
 eleventyExcludeFromCollections: true
 ---

@@ -9,15 +9,15 @@ subtitle: Get up to speed on Java 16 with our top tips.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
-    - /tips/create-record/
-    - /tips/convert-to-record/
-    - /tips/convert-from-record/
-    - /tips/pattern-matching-for-instanceof/
-    - /tips/deprecation-warnings/
-    - /tips/new-methods-on-streams/
-    - /tips/turn-on-preview-features/
-    - /tips/create-a-correct-sealed-parent/
-    - /tips/create-a-correct-sealed-child/
+    - /intellij/tips/create-record/
+    - /intellij/tips/convert-to-record/
+    - /intellij/tips/convert-from-record/
+    - /intellij/tips/pattern-matching-for-instanceof/
+    - /intellij/tips/deprecation-warnings/
+    - /intellij/tips/new-methods-on-streams/
+    - /intellij/tips/turn-on-preview-features/
+    - /intellij/tips/create-a-correct-sealed-parent/
+    - /intellij/tips/create-a-correct-sealed-child/
 
 ---
 

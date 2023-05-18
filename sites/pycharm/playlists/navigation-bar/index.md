@@ -10,12 +10,12 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 longVideo: true
 playlistItems:
-    - /tips/navbar-activate/
-    - /tips/navbar-navigate-files/
-    - /tips/navbar-open-file/
-    - /tips/navbar-create-file/
-    - /tips/navbar-speed-search/
-    - /tips/navbar-find-in-path/
+    - /pycharm/tips/navbar-activate/
+    - /pycharm/tips/navbar-navigate-files/
+    - /pycharm/tips/navbar-open-file/
+    - /pycharm/tips/navbar-create-file/
+    - /pycharm/tips/navbar-speed-search/
+    - /pycharm/tips/navbar-find-in-path/
 ---
 
 We want to get you into the flow of development. No UI distractions, hands 

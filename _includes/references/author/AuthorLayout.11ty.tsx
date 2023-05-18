@@ -9,7 +9,6 @@ import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Resource } from "../../../src/ResourceModels";
 import { Author } from "./AuthorModels";
-import fixtures from "../../fixtures";
 
 export function AuthorLayout(
   this: LayoutContext,
@@ -17,7 +16,7 @@ export function AuthorLayout(
 ): JSX.Element {
   const { collections, content, page } = data;
   const author = collections.allReferences.get(
-    `${fixtures.channel}:author:${page.fileSlug}`
+    `${data.channel}:author:${page.fileSlug}`
   ) as Author;
   if (!author) {
     throw new Error(`Author "${page.fileSlug}" not in collection`);

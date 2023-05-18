@@ -9,36 +9,36 @@ subtitle: A selection of useful features from GoLand 2020.3
 thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 playlistItems:
-    - /tips/go-116-retract-directive/
-    - /tips/dump-goroutines/
-    - /tips/stop-remote-process/
-    - /tips/inline-watches-in-debugger/
-    - /tips/run-test-in-table-test/
-    - /tips/navigate-test-in-table-test/
-    - /tips/test-name-completion-in-testify/
-    - /tips/run-individual-testify-test-suites/
-    - /tips/rerun-testify-subtest/
-    - /tips/assert-completion-in-testify/
-    - /tips/inspect-detect-incorrect-usage-of-println-like-function/
-    - /tips/inspect-context-cancel-func-usage/
-    - /tips/better-time-format-completion/
-    - /tips/variable-shadowing-display/
-    - /tips/live-template-for-go-test-function/
-    - /tips/live-template-for-go-bench-function/
-    - /tips/live-template-for-for-loop-in-bench-function/
-    - /tips/drag-and-drop-editor-tabs/
-    - /tips/open-file-in-split-editor/
-    - /tips/preview-file-contents/
-    - /tips/sync-ide-theme-with-os-theme/
-    - /tips/simple-math-in-search-everywhere/
-    - /tips/tailwind-css-support/
-    - /tips/vue3-support/
-    - /tips/mongodb-query-using-sql/
-    - /tips/write-sql-queries-in-go/
-    - /tips/mermaid-js-support-in-markdown/
-    - /tips/download-kubernetes-pod-log/
-    - /tips/open-console-in-kubernetes/
-    - /tips/open-shell-in-kubernetes/
+    - /goland/tips/go-116-retract-directive/
+    - /goland/tips/dump-goroutines/
+    - /goland/tips/stop-remote-process/
+    - /goland/tips/inline-watches-in-debugger/
+    - /goland/tips/run-test-in-table-test/
+    - /goland/tips/navigate-test-in-table-test/
+    - /goland/tips/test-name-completion-in-testify/
+    - /goland/tips/run-individual-testify-test-suites/
+    - /goland/tips/rerun-testify-subtest/
+    - /goland/tips/assert-completion-in-testify/
+    - /goland/tips/inspect-detect-incorrect-usage-of-println-like-function/
+    - /goland/tips/inspect-context-cancel-func-usage/
+    - /goland/tips/better-time-format-completion/
+    - /goland/tips/variable-shadowing-display/
+    - /goland/tips/live-template-for-go-test-function/
+    - /goland/tips/live-template-for-go-bench-function/
+    - /goland/tips/live-template-for-for-loop-in-bench-function/
+    - /goland/tips/drag-and-drop-editor-tabs/
+    - /goland/tips/open-file-in-split-editor/
+    - /goland/tips/preview-file-contents/
+    - /goland/tips/sync-ide-theme-with-os-theme/
+    - /goland/tips/simple-math-in-search-everywhere/
+    - /goland/tips/tailwind-css-support/
+    - /goland/tips/vue3-support/
+    - /goland/tips/mongodb-query-using-sql/
+    - /goland/tips/write-sql-queries-in-go/
+    - /goland/tips/mermaid-js-support-in-markdown/
+    - /goland/tips/download-kubernetes-pod-log/
+    - /goland/tips/open-console-in-kubernetes/
+    - /goland/tips/open-shell-in-kubernetes/
 
 ---
 

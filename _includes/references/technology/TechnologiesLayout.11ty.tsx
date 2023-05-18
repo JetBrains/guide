@@ -13,7 +13,7 @@ export function TechnologiesLayout(
   const { content } = data;
   const technologies = this.getReferences({
     resourceType: "technology",
-    channel: data.site.channel,
+    channel: data.channel,
   }) as Technology[];
 
   const figure = undefined;

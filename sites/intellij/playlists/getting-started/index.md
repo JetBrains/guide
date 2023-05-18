@@ -9,15 +9,15 @@ subtitle: Tips for getting started with IntelliJ IDEA
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
-    - /tips/welcome-screen/
-    - /tips/download-jdk/
-    - /tips/turn-off-tabs/
-    - /tips/new-class/
-    - /tips/navigate-to-test/
-    - /tips/search-everywhere/
-    - /tips/run-current-context/
-    - /tips/run-targets/
-    - /tips/commit-changes/
+    - /intellij/tips/welcome-screen/
+    - /intellij/tips/download-jdk/
+    - /intellij/tips/turn-off-tabs/
+    - /intellij/tips/new-class/
+    - /intellij/tips/navigate-to-test/
+    - /intellij/tips/search-everywhere/
+    - /intellij/tips/run-current-context/
+    - /intellij/tips/run-targets/
+    - /intellij/tips/commit-changes/
     
 ---
 

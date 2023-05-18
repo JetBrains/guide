@@ -1,5 +1,5 @@
 ---
-permalink: rss.xml
+permalink: /dotnet/rss.xml
 layout: 'rss.11ty.tsx'
 eleventyExcludeFromCollections: true
 ---
