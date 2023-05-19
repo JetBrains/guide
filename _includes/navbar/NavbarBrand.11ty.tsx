@@ -2,6 +2,7 @@
 import h, { JSX } from "vhtml";
 
 export type NavbarBrandProps = {
+  channel: string;
   siteLogo: string;
   siteTitle: string;
 };
@@ -9,11 +10,12 @@ export type NavbarBrandProps = {
 const NavbarBrand = ({
   siteLogo,
   siteTitle,
+  channel,
 }: NavbarBrandProps): JSX.Element => {
   return (
     <>
       <div className="navbar-brand">
-        <a href={`/`} className="navbar-item bio-navbar-brand">
+        <a href={`/${channel}/`} className="navbar-item bio-navbar-brand">
           <img
             src={`/assets/${siteLogo}`}
             className="bio-navbar-logo-image"
@@ -22,7 +24,7 @@ const NavbarBrand = ({
             height="28"
           />
         </a>
-        <a href={`/`} className="navbar-item bio-navbar-brand">
+        <a href={`/${channel}/`} className="navbar-item bio-navbar-brand">
           {siteTitle}
         </a>
         <div

@@ -6,13 +6,14 @@ import NavbarEnd from "./NavbarEnd.11ty";
 
 type NavbarProps = {
   site: any;
+  channel: string;
 };
 
-const Navbar = ({ site }: NavbarProps): JSX.Element => {
+const Navbar = ({ site, channel }: NavbarProps): JSX.Element => {
   return (
     <nav id="navbar" className="navbar is-spaced is-dark">
       <div className="container">
-        <NavbarBrand {...site}></NavbarBrand>
+        <NavbarBrand channel={channel} {...site}></NavbarBrand>
         <div id="navMenuIndex" className="navbar-menu">
           {site.start && <NavbarStart items={site.start.items}></NavbarStart>}
           {site.end && (
