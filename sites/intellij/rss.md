@@ -1,5 +1,5 @@
 ---
-permalink: /intellij/rss.xml
+permalink: /public/intellij/rss.xml
 layout: 'rss.11ty.tsx'
 eleventyExcludeFromCollections: true
 ---

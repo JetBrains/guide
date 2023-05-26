@@ -1,42 +1,43 @@
 import { Plugin } from "vite";
 import { CustomPluginOptions } from "rollup";
 import { parse } from "node-html-parser";
-import path from "upath";
 
-export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {
-  const { prefix } = options;
+export const absolutePaths = (_: CustomPluginOptions = {}): Plugin => ({
+  name: "absolute-paths",
+  enforce: "post",
+  apply: "build",
+  transformIndexHtml: (html) => {
+    const doc = parse(html);
 
-  return {
-    name: "absolute-paths",
-    enforce: "post",
-    apply: "build",
-    transformIndexHtml: (html) => {
-      const doc = parse(html);
+    const meta = doc.querySelector("meta[property=root]");
+    const prefix = meta?.attrs["content"] as string;
+    const channel = meta?.attrs["data-channel"] as string;
 
-      // @ts-ignore
-      const anchors = doc.getElementsByTagName("a");
-      const links = doc.getElementsByTagName("link");
+    meta?.remove();
 
-      const targets = anchors.concat(links);
+    // @ts-ignore
+    const anchors = doc.getElementsByTagName("a");
+    const links = doc.getElementsByTagName("link");
 
-      targets.forEach((element) => {
-        const href = element.attrs["href"];
-        // already good
-        if (href.startsWith(prefix)) return;
-        // absolute urls
-        if (href.startsWith("http://") || href.startsWith("https://")) return;
-        // relative paths
-        if (href.startsWith(".")) return;
-        // anchor link
-        if (href.startsWith("#")) return;
-        // ignore VITE ASSETS
-        if (href.startsWith("__VITE_ASSET__")) return;
+    const targets = anchors.concat(links);
 
-        element.setAttribute("href", path.join(prefix, href));
-      });
+    targets.forEach((element) => {
+      const href = element.attrs["href"];
+      // already good
+      if (href.startsWith(prefix)) return;
+      // absolute urls
+      if (href.startsWith("http://") || href.startsWith("https://")) return;
+      // relative paths
+      if (href.startsWith(".")) return;
+      // anchor link
+      if (href.startsWith("#")) return;
+      // ignore VITE ASSETS
+      if (href.startsWith("__VITE_ASSET__")) return;
 
-      return doc.toString();
-    }
-  };
-};
+      const newHref = href.replace(`/${channel}/`, prefix);
+      element.setAttribute("href", newHref);
+    });
 
+    return doc.toString();
+  },
+});

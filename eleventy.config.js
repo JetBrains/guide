@@ -47,10 +47,8 @@ module.exports = function (eleventyConfig) {
         },
       },
       plugins: [
-        ViteImageOptimizer(),
-        absolutePaths({
-          prefix: options.pathprefix,
-        }),
+        // ViteImageOptimizer(),
+        absolutePaths(),
         metaOpenGraphImagePlugin(),
       ],
       base: options.pathprefix,
@@ -66,12 +64,7 @@ module.exports = function (eleventyConfig) {
         rollupOptions: {
           output: {
             assetFileNames: (info) => {
-              if (info.name.includes("rss.xml")) {
-                // don't modify the rss.xml file name
-                return "[name][extname]";
-              } else {
-                return "assets/[name]-[hash][extname]";
-              }
+              return "assets/[name]-[hash][extname]";
             },
           },
         },

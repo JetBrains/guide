@@ -1,5 +1,5 @@
 ---
-permalink: /intellij/lunr_index.json
+permalink: /public/intellij/lunr_index.json
 layout: 'lunr.11ty.ts'
 eleventyExcludeFromCollections: true
 ---

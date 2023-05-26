@@ -1,5 +1,5 @@
 ---
-permalink: /dotnet/lunr_index.json
+permalink: /public/dotnet/lunr_index.json
 layout: 'lunr.11ty.ts'
 eleventyExcludeFromCollections: true
 ---

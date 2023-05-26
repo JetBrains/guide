@@ -47,9 +47,4 @@ export type LayoutProps = {
   };
   site: any;
   content: string;
-  commandLineArgs: CommandLineArgs;
-};
-
-export type CommandLineArgs = {
-  pathprefix?: string;
 };

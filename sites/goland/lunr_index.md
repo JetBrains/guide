@@ -1,5 +1,5 @@
 ---
-permalink: /goland/lunr_index.json
+permalink: /public/goland/lunr_index.json
 layout: 'lunr.11ty.ts'
 eleventyExcludeFromCollections: true
 ---

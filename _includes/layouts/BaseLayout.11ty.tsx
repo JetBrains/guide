@@ -18,6 +18,7 @@ export type BaseLayoutProps = {
   longVideo?: object;
   shortVideo?: object;
   resourceType?: string;
+  channel: string;
 } & LayoutProps;
 
 export function BaseLayout(
@@ -34,11 +35,13 @@ export function BaseLayout(
     shortVideo,
     resourceType,
     collections,
+    channel,
   } = data;
   const { siteTitle, copyright, siteUrl } = site;
 
   // TODO This is a hack. Bake it into the contract.
-  const hasVideo = longVideo || shortVideo || (resourceType && resourceType == "playlist");
+  const hasVideo =
+    longVideo || shortVideo || (resourceType && resourceType == "playlist");
 
   // determine if there's an og:image
   let cardThumbnail;
@@ -67,10 +70,15 @@ export function BaseLayout(
             rel="alternate"
             type="application/rss+xml"
             title={`${title} RSS Feed`}
-            href="/rss.xml"
+            href={`/${channel}/rss.xml`}
+          />
+          <meta
+            property="root"
+            content={`/${channel}/guide/`}
+            data-channel={channel}
           />
           <meta property="og:title" content={title} />
-          {subtitle && <meta property="og:description" content={subtitle}/>}
+          {subtitle && <meta property="og:description" content={subtitle} />}
           <meta property="og:type" content="article" />
           <meta property="article:published_time" content="2023-02-17" />
           <meta property="article:author" content="" />
@@ -90,7 +98,7 @@ export function BaseLayout(
           <GoogleTagManagerBodyNoScript
             googleTagManagerId={site.googleTagManagerId}
           />
-          <Navbar site={site}></Navbar>
+          <Navbar site={site} channel={channel}></Navbar>
           {children}
           <Footer copyright={copyright}></Footer>
           {cardThumbnail && (

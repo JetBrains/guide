@@ -1,22 +1,23 @@
-import {expect, test} from "vitest";
-import {absolutePaths} from "./absolutePaths";
+import { expect, test } from "vitest";
+import { absolutePaths } from "./absolutePaths";
 
-const transform = function (html: string) : string {
-  const plugin = absolutePaths({
-    prefix: "/pycharm/guide"
-  });
+const transform = function (html: string): string {
+  const plugin = absolutePaths();
+
+  html = `<meta property="root" content="/pycharm/guide/" data-channel="pycharm" />${html}`;
+
   // @ts-ignore
-  return plugin.transformIndexHtml(html) ;
-}
+  return plugin.transformIndexHtml(html);
+};
 
 test("replaces a root path in anchor", () => {
-  const content = `<a href="/public">test</a>`;
+  const content = `<a href="/pycharm/public">test</a>`;
   const actual = transform(content);
   expect(actual).to.equal(`<a href="/pycharm/guide/public">test</a>`);
 });
 
 test("replaces a root path in anchor", () => {
-  const content = `<a href="/tips">test</a>`;
+  const content = `<a href="/pycharm/tips">test</a>`;
   const actual = transform(content);
   expect(actual).to.equal(`<a href="/pycharm/guide/tips">test</a>`);
 });
@@ -28,7 +29,7 @@ test("ignores already rooted path", () => {
 });
 
 test("ignores already rooted path", () => {
-  const content = `<a href="/tips">test</a>`;
+  const content = `<a href="/pycharm/tips">test</a>`;
   const actual = transform(content);
   expect(actual).to.equal(`<a href="/pycharm/guide/tips">test</a>`);
 });
@@ -37,10 +38,10 @@ test("ignores relative paths", () => {
   const content = `<a href="../tips">test</a>`;
   const actual = transform(content);
   expect(actual).to.equal(content);
-})
+});
 
 test("ignores if src includes __VITE_ASSET__", () => {
-  const content = `<link rel="icon" href="__VITE_ASSET__123456789__" type="image/x-icon">`
+  const content = `<link rel="icon" href="__VITE_ASSET__123456789__" type="image/x-icon">`;
   const actual = transform(content);
   expect(actual).to.be.equal(content);
-})
+});

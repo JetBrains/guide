@@ -1,5 +1,5 @@
 ---
-permalink: /pycharm/lunr_index.json
+permalink: /public/pycharm/lunr_index.json
 layout: 'lunr.11ty.ts'
 eleventyExcludeFromCollections: true
 ---
