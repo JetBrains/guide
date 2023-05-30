@@ -1,7 +1,7 @@
 ---
 resourceType: tutorial
 layout: "resources/tutorial/TutorialLayout.11ty.tsx"
-date: 2023-24-05
+date: 2023-06-01
 title: Blazor Essentials
 technologies: [blazor, asp.net, .net, csharp]
 topics: [web, data]

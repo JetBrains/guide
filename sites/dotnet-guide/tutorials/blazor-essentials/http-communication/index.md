@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2022-11-04
+date: 2023-06-01
 title: HTTP Communication and APIs
 technologies: [.net]
 topics: [web]
