@@ -20,7 +20,7 @@ Using `<EditForm>` enables you manage forms with familiar `Model.Property` synta
 
 Just as with HTML forms, you must put form fields between the `<EditForm>` tags, and you need to denote some action for the form to take when the user submits it. 
 
-```html 
+```cs 
 <EditForm Model="@todo" OnSubmit="@HandleValidSubmit">
   <!-- form fields -->
 </EditForm>
@@ -30,7 +30,7 @@ Blazor controls are identified by their `Input` prefix. For example, `<InputText
 
 Buttons can be `<button>` elements, `<input>` elements with a `type=button` or `type=submit`, an `a` tag, or a custom component. Other form controls can also be custom built. To use the control, just call the Blazor control by its name using HTML tag style syntax. See [Blazor components](/tutorials/components) for more on components.
 
-```html 
+```cs 
 <EditForm Model="@todo" OnSubmit="@HandleValidSubmit">
     <div class="form-group m-3">
         <label for="todo-item">To do: </label>
@@ -66,7 +66,7 @@ The data annotations applied to the model are used by Blazor validators. To enab
 
 If you prefer to display error messages for a specific input on the form, then use the `ValidationMessage` component.
 
-```html
+```cs
 <DataAnnotationsValidator />
 <ValidationSummary />
 ```

@@ -17,7 +17,7 @@ In a similar fashion to previous ASP.NET frameworks, Blazor uses routing to map 
 
 Use the Router component in `App.razor` to configure app-wide routes. At app startup, the runtime looks in the Router component’s assembly for route information for those components in the app that have a `RouteAttribute` (pages). The `RouteView` receives the `RouteData` plus any route parameters from the `Router`. It Renders the specified component with its layout, including any further nested layouts. The following `Router` component is included in Blazor WebAssembly and Blazor Server project templates.
 
-```xml
+```cs
 <Router AppAssembly="@typeof(Program).Assembly" PreferExactMatches="@true">
     <Found Context="routeData">
          <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)"/>
@@ -70,7 +70,7 @@ The catch-all page will accept anything through this parameter.
 ## Route Templates
 The `Router` component is where to set the routing for a Blazor Server app. This code is found in `App.razor`. As shown in the following sample, the Router breaks paths into found and not found, and the `NotFound` component defines a message to display for `404` errors.
 
-```xml
+```cs
 <Router AppAssembly="@typeof(App).Assembly">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)"/>

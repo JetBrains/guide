@@ -51,7 +51,7 @@ When writing your own JavaScript, it should go in its own file under the `wwwroo
 
 The body of the `Pages\_Host.cshtml` file should look similar to the following, with the script references just before the body ends. This is the only place you should put `<script>` tags.
 
-```html
+```cs
 <body>
     <!-- body -->
 	<script src="_framework/blazor.webassembly.js"></script>

@@ -21,7 +21,7 @@ IDEs with this functionality are a graphical way to call the CLI and pass argume
 
 *Rider IDE*
 
-[PIC OF RIDER NEW PROJECT]
+![New Blazor project](1-new-project.png)
 
 Blazor projects contain references ASP.NET libraries needed to develop a web app. 
 A complete Blazor solution can be contained within a single project. However, enterprise web apps may include other projects. 

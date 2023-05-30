@@ -38,7 +38,7 @@ Any time you have a hierarchy or nesting of components (virtually every UI frame
 
 The following code from the `Message` component (in `Message.razor`) renders the message. Inside the `div` elements are references to the `@MessageText` parameter. Notice in the `@code` section of the component that the `MessageText` property is both public and decorated with the `Parameter` attribute, so it matches the `MessageText` attribute in the call.  
 
-```html
+```cs
 <div class="row">
 	<div class="col">
     	<div class="alert">@MessageText</div>
@@ -56,7 +56,7 @@ You can do this by applying the `@ref` attribute to the component's declaration,
 
 Take a look at the `Logger` component declaration and the call to its `log` method below. This code is found in a calling page, such as `Index.razor`:
 
-```html
+```cs
 
 <button @onclick="@(() => logger?.Log(5))">Log</button>
 
