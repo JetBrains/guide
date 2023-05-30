@@ -1,10 +1,10 @@
 ---
 type: TutorialStep
 date: 2023-06-01
-title: Introduction to Blazor 
-technologies: [.net]
+title: Introduction to Blazor
+technologies: [.net,asp.net]
 topics: [web]
-products: [rider]
+products: [rider,resharper]
 author: rachelappel
 subtitle: Is Blazor right for your app?
 thumbnail: ./thumbnail.png

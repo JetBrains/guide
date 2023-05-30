@@ -2,9 +2,9 @@
 type: TutorialStep
 date: 2023-06-01
 title: Blazor components
-technologies: [.net]
+technologies: [.net,asp.net]
 topics: [web]
-products: [rider]
+products: [rider,resharper]
 author: rachelappel
 subtitle: Use components for a modular Blazor application.
 thumbnail: ./thumbnail.png

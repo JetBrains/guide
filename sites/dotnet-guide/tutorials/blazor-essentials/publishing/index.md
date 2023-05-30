@@ -2,9 +2,9 @@
 type: TutorialStep
 date: 2023-06-01
 title: Publishing Blazor Apps
-technologies: [.net]
+technologies: [.net,asp.net]
 topics: [web]
-products: [rider]
+products: [rider,resharper]
 author: rachelappel
 subtitle: Publish a Blazor app to Azure
 thumbnail: ./thumbnail.png

@@ -2,9 +2,9 @@
 type: TutorialStep
 date: 2023-06-01
 title: HTTP Communication and APIs
-technologies: [.net]
+technologies: [.net,asp.net]
 topics: [web]
-products: [rider]
+products: [rider,resharper]
 author: rachelappel
 subtitle: Understand how to work with HTTP within the context of a Blazor app.
 thumbnail: ./thumbnail.png

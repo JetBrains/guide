@@ -2,9 +2,9 @@
 type: TutorialStep
 date: 2023-06-01
 title: JavaScript interop
-technologies: [.net]
+technologies: [.net,asp.net]
 topics: [web]
-products: [rider]
+products: [rider,resharper]
 author: rachelappel
 subtitle: Extend Blazor apps with JavaScript
 thumbnail: ./thumbnail.png

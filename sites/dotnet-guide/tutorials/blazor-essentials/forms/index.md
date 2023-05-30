@@ -2,9 +2,9 @@
 type: TutorialStep
 date: 2023-06-01
 title: Forms in Blazor
-technologies: [.net]
+technologies: [.net,asp.net]
 topics: [web]
-products: [rider]
+products: [rider,resharper]
 author: rachelappel
 subtitle: View and edit data in forms
 thumbnail: ./thumbnail.png

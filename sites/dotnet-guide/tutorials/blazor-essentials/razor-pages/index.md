@@ -2,9 +2,9 @@
 type: TutorialStep
 date: 2023-06-01
 title: Razor Pages
-technologies: [.net]
+technologies: [.net,asp.net]
 topics: [web]
-products: [rider]
+products: [rider,resharper]
 author: rachelappel
 subtitle: Build a UI using Razor Pages in Blazor.
 thumbnail: ./thumbnail.png
