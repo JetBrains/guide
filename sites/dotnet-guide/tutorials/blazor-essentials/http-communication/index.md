@@ -10,7 +10,7 @@ subtitle: Understand how to work with HTTP within the context of a Blazor app.
 thumbnail: ./thumbnail.png
 ---
 
-Communication between a Blazor client app and an API is done via HTTP using [JSON](https://www.json.org/json-en.html). 
+Communication between a Blazor client app and an API is typically done via HTTP using [JSON](https://www.json.org/json-en.html). Using GraphQL, Protobuf or other technologies is possible as well, but let's focus on working with a JSON-based API in this tutorial.
 
 ## API/server-side communication
 For the purposes of HTTP Communication in Blazor apps, APIs accept and return JSON (mostly, though it's possible to use XML or a custom format). A nice feature of .NET and Blazor is that they contain classes that help us send and receive data between clients and APIs. 
@@ -26,41 +26,12 @@ If you're accessing an API through a service layer that uses `HttpClient` in you
 `builder.Services.AddSingleton<ToDoService>();`
 
 
-```cs 
-@code {
-     private List<ToDo>? ToDos = new List<ToDo>();
-    private bool error;
-    private bool shouldRender;
-    private HttpClient Http;
-    
-    protected override async Task OnInitializedAsync()
-    {
-        var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:7275/api/ToDos");
-        request.Headers.Add("Accept", "application/json");
-        request.Headers.Add("User-Agent", "ToDoList");
-        
-        var client = ClientFactory.CreateClient();
-        var response = await client.SendAsync(request);
-
-        if (response.IsSuccessStatusCode)
-        {
-            await using var responseStream = await response.Content.ReadAsStreamAsync();            
-            ToDos = await response.Content.ReadFromJsonAsync<List<ToDo>>();                       
-        }
-        else
-        {
-            error = true;
-        }
-        shouldRender = true;
-    }
-``` 
-
-
 > **Tip**
+> 
 > Rider is an excellent tool for working with APIs and JSON data. Open the Endpoints Tool Window through the **View | Tool Windows | Endpoints** menu option. From there you can navigate to the code behind the endpoint and make, manage, and save calls to endpoints. The **Endpoints Tool Window** gives a great look at the various endpoints in your solution.
 > 
-
-![Endpoints Window](1-endpoins-window.png)
+> 
+> ![Endpoints Window](1-endpoins-window.png)
 
 ## Conclusion
 Accessing an API from a client app is a popular and mature approach to app building. ASP.NET has supported this method of development by providing a framework and runtime with a middleware layer so that each project can be built to spec. Blazor enables ASP.NET developers to create the client side without as much JavaScript as there otherwise might be.

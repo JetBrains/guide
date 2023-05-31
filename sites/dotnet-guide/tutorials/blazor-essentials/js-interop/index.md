@@ -15,7 +15,7 @@ thumbnail: ./thumbnail.png
 A key feature of Blazor is that there's very little need for JavaScript. But there will be occasions that you do need it. However, you can’t simply toss some JavaScript into a page or Blazor produces an error. JavaScript must be included and used in a specific way for Blazor to function because Blazor creates dynamic components and using JavaScript in traditional ways works outside of this model. However, it’s straightforward to use JavaScript in Blazor, and you also get the benefit of being able to call JavaScript from C# and C# from JavaScript - not just calling JavaScript in response to a DOM event.
 
 ## Call JavaScript Code
-The first step necessary for writing JavaScript in Blazor is to inject the `IJSRuntime` service into the Blazor component you want to run JavaScript in. This can go under the `@page` directive. If you are using a `.razor`/`.razor.cs` pair, import the `Microsoft.JSIntero`p namespace in the `razor.cs` file.
+The first step necessary for writing JavaScript in Blazor is to inject the `IJSRuntime` service into the Blazor component you want to run JavaScript in. This can go under the `@page` directive. If you are using a `.razor`/`.razor.cs` pair, import the `Microsoft.JSInterop` namespace in the `razor.cs` file.
 
 `@inject IJSRuntime js;`
 

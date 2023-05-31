@@ -11,15 +11,18 @@ thumbnail: ./thumbnail.png
 ---
 
 ## Publish a Blazor App
+
 There are many ways to publish Blazor apps, and software in general. 
+
 Publishing using IDE tools is a straightforward way to get the app up and running quickly, especially for solo developers. 
-However, if you’re working on a team, the team may have a deployment process in place, or even a DevOps person or team that creates the procedures and steps around deployment. 
-For teams who are using CI/CD (Continuous Integration/Continuous Delivery), [TeamCity](https://www.jetbrains.com/teamcity/) is a general-purpose CI/CD solution that allows the most flexibility any kind of workflow. 
+However, if you’re working on a team, the team may have a deployment process in place, or even a DevOps person or team that creates the procedures and steps around deployment. For teams who are using CI/CD (Continuous Integration/Continuous Delivery), [TeamCity](https://www.jetbrains.com/teamcity/) is a general-purpose CI/CD solution that allows the most flexibility any kind of workflow. 
+
 For the purposes of this tutorial, we’ll look at publishing using the [Azure toolkit for Rider](https://plugins.jetbrains.com/plugin/11220-azure-toolkit-for-rider).
 
 ## Deployment Considerations
 Blazor Server and Blazor WebAssembly have slightly different ways of working so there are a few considerations based on which project type you have. 
 However, when [Blazor United](https://github.com/dotnet/aspnetcore/issues/46636) ships these two Blazor paradigms will have merged. For Blazor WASM, keep in mind that the Blazor app, its dependencies, and the .NET runtime are downloaded to the browser in parallel. Then the browser executes the app on its UI thread. Blazor server apps run in a manner that is more similar to the way ASP.NET MVC or Razor Pages apps run with SignalR. That is, Blazor apps execute on the server from within an ASP.NET Core app. Any UI updates, JavaScript calls and other communications are performed with SignalR in the background.
+
 Additionally, you must consider that structure of the overall solution. You may have multiple projects in a solution which need deployment. You may also have a database to deploy.
 Databases and Web API projects can be deployed right along with your Blazor projects. For this tutorial, however, we'll assume the database and API have already been deployed. We'll publish just the Blazor app to Azure. 
 

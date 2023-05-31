@@ -15,7 +15,7 @@ In a similar fashion to previous ASP.NET frameworks, Blazor uses routing to map 
 
 ## Configure Blazor Routing
 
-Use the Router component in `App.razor` to configure app-wide routes. At app startup, the runtime looks in the Router component’s assembly for route information for those components in the app that have a `RouteAttribute` (pages). The `RouteView` receives the `RouteData` plus any route parameters from the `Router`. It Renders the specified component with its layout, including any further nested layouts. The following `Router` component is included in Blazor WebAssembly and Blazor Server project templates.
+Use the `Router` component in `App.razor` to configure app-wide routes. At app startup, the runtime looks in the Router component’s assembly for route information for those components in the app that have a `RouteAttribute` (pages). The `RouteView` receives the `RouteData` plus any route parameters from the `Router`. It renders the specified component with its layout, including any further nested layouts. The following `Router` component is included in Blazor WebAssembly and Blazor Server project templates.
 
 ```cs
 <Router AppAssembly="@typeof(Program).Assembly" PreferExactMatches="@true">
@@ -30,9 +30,13 @@ Use the Router component in `App.razor` to configure app-wide routes. At app sta
 </Router>
 ```
 In addition to routing, a default layout can be set for components that don't specify a layout with the `@layout` directive. A good strategy is to use the default layout for all pages, except for the few that require a different layout, such as an error page. 
-In pages like an error page, you can set a specific layout by setting the `@layout` page directive. For example, the following code sets the layout for an error page (e.g., `ErrorPage.Razor`).
+In pages like an error page, you can set a specific layout by setting the `@layout` page directive. For example, the following code sets the layout for an error page (e.g., in `ErrorPage.Razor`):
 
-`@layout ErrorLayout`
+```cs
+@layout ErrorLayout
+
+<!-- rest of code -->
+```
 
 
 ## Page Routing

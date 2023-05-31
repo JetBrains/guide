@@ -13,20 +13,26 @@ thumbnail: ./thumbnail.png
 Blazor’s Razor Components are at the heart of Blazor development. A component is a piece of a user interface with processing logic to enable dynamic behavior. 
 ## Component Lifecycle
 
-There are several events that you can tap into to access data or perform UI operations on your components. Each event except for ShouldRender has a corresponding async event. In general, it’s better to use async operations for scalability and a smoother responding UI.
+There are several events that you can tap into to access data or perform UI operations on your components. Each event except for `ShouldRender` has a corresponding async event. In general, it’s better to use async operations for scalability and a smoother responding UI.
 
-* `OnInitialized`/`OnInitializedAsync` - Use these events to fetch data and present the user interface.
-* `OnParametersSet`/`OnParametersSetAsync` - This event runs when the component has received all parameters. It executes every time the parameters are updated.
-* `OnAfterRender`/`OnAfterRenderAsync` - Once the component has finished rendering and all HTML has been displayed, this event is raised. This is the time to manipulate DOM elements.
-* `ShouldRender`/`ShouldRender` is called each time a component is rendered. Override and use this to manipulate UI refreshes by setting the return value of `ShouldRender` to true.
+* `OnInitialized`/`OnInitializedAsync` – Use these events to fetch data and present the user interface.
+* `OnParametersSet`/`OnParametersSetAsync` – This event runs when the component has received all parameters. It executes every time the parameters are updated.
+* `OnAfterRender`/`OnAfterRenderAsync` – Once the component has finished rendering and all HTML has been displayed, this event is raised. This is the time to manipulate DOM elements.
+* `ShouldRender`/`ShouldRender` – Called each time a component is rendered. Override and use this to manipulate UI refreshes by setting the return value of `ShouldRender` to true.
 
 With these events you can manage the lifecycle of a component as needed. Note that some events are only raised upon the first time a client accesses a page. 
 Additionally, there is a workflow to how components are rendered. Keep in mind, a page is a component and each page in an app will likely contain multiple components. 
 For more in-depth knowledge on the component lifecycle, visit Microsoft's [ASP.NET Core Razor component lifecycle](https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle) documentation.
 
 ## Data Binding
-Data binding enables us to synchronize data between a component and a data store. Data binding can be one-way or two-way. One-way data binding is simply setting the value of a DOM element to some value in a property or variable, often from a data store, or simply displaying the value of a property or variable. Two-way data binding means that the DOM element that is data bound participates in the `HTTP POST` Request when data is sent to an API. Two-way data binding is done by using the `@bind` or `@bind-Value` attributes in an element. You may bind to a property or to an event.
-We'll revisit data binding in the lesson on [Forms](/tutorials/blazor-essentials/forms/) in Blazor.
+
+Data binding enables us to synchronize data between a component and a data store. Data binding can be one-way or two-way.
+
+One-way data binding is simply setting the value of a DOM element to some value in a property or variable, often from a data store, or simply displaying the value of a property or variable.
+
+Two-way data binding means that the DOM element that is data bound participates in the `HTTP POST` request when data is sent to an API. Two-way data binding is done by using the `@bind` or `@bind-Value` attributes in an element. You may bind to a property or to an event.
+
+We'll revisit data binding in the [Forms tutorial step](../forms/) in Blazor.
 
 ## Passing Parameters to Components
 

@@ -18,7 +18,7 @@ Many apps will just receive and send data between the Blazor client and an API. 
 Your data model may be located in a shared library project, or exposed through an API, depending on the project's needs. Data models are created with POCOs (Plain Old C# Classes). In .NET, developers generally use Entity Framework to map POCOs to their corresponding database objects. The members of the classes are often marked with attributes that denote a specific database constraint such as making a field required, imposing a length, or data type (See [Entity Framework](#entity-framework)). 
 For the purposes of this guide demo, we're keeping it small and simple by using only the following classes:
 
-`ToDo`: This is the to do item.
+The `ToDo` class: This is the to do item.
 
 ```cs
 public class ToDo
@@ -32,7 +32,7 @@ public class ToDo
 }
 ```
 
-`User`: The owner of the to do item. 
+The `User` class: The owner of the to do item. 
 
 ```cs
 public class User

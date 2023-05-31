@@ -6,12 +6,12 @@ technologies: [.net,asp.net]
 topics: [web]
 products: [rider,resharper]
 author: rachelappel
-subtitle: Is Blazor right for your app?
+subtitle: Is Blazor the right choice for your application?
 thumbnail: ./thumbnail.png
 ---
 
 ## Blazor overview
-[Blazor](https://learn.microsoft.com/en-us/aspnet/core/blazor/?WT.mc_id=dotnet-35129-website&view=aspnetcore-7.0) is a [SPA](https://en.wikipedia.org/wiki/Single-page_application) web framework that is part of the [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet) framework. 
+[Blazor](https://learn.microsoft.com/en-us/aspnet/core/blazor/?WT.mc_id=dotnet-35129-website&view=aspnetcore-7.0) is a [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) web framework that is part of the [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet) framework.
 Blazor enables you to create progressive web apps using C#, having significantly less reliance on JavaScript that was necessary in previous versions of ASP.NET. This model is intended to make Blazor appealing to current C# developers, since they can focus less on JavaScript and write more in C# for full-stack development. Blazor apps are built with reusable UI components that may be shared within or across applications. Blazor components include anything that is a UI element, such as an entire page, dialog, part of a page, data entry form, or more. Components access data through an API or other server-side endpoint through HTTP. JavaScript developers are familiar with this programming model in which the client-side code calls APIs to retrieve and send data. However, in Blazor, both the server-side code (APIs, models, etc...) and the client are written in C#. This enables Blazor developers to do full-stack development all in .NET, though it’s also possible to write JavaScript if desired.
 
 

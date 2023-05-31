@@ -13,11 +13,11 @@ thumbnail: ./thumbnail.png
 ## Razor pages
 
 UIs built with Blazor contain a collection of components built with Razor Pages. "Component" is a generic term for a class, page, or any programmable unit in Blazor that contains C#, HTML, and CSS. All Blazor components are files that have a `.razor` extension.
-But is one distinct difference between pages and components: Pages start with the `@page` directive that designates them as an entire web page and supplies routing information. Components don't use the `@page` directive. 
+
+But there is one distinct difference between pages and components: Pages start with the `@page` directive that designates them as an entire web page and supplies routing information. Components don't use the `@page` directive. 
 This is because components with the `@page` directive are used a complete HTML page, where a component is a block of code that runs inside a page.  
 
-There's [more on routing](http://localhost:8000/tutorials/blazor-essentials/routing/) later in these tutorials. But for now, the `@page` directive tells the host how to route page requests to Razor Pages. `@page "/"` marks a page as the default page (often called `Index.razor`). A page with a directive of `@page "/ToDoList"` maps to the physical `Pages\ToDoList.razor` file and routes HTTP requests to `<application-root>/ToDoList`.
-There's [more on routing](http://localhost:8000/tutorials/blazor-essentials/routing/) later in these tutorials. But for now, the `@page` directive tells the host how to route page requests to Razor Pages. `@page "/"` marks a page as the default page (often called `Index.razor`). A page with a directive of `@page "/ToDoList"` maps to the physical `Pages\ToDoList.razor` file and routes HTTP requests to `<application-root>/ToDoList`.hosts
+There's [more on routing](../routing/) later in these tutorials. But for now, the `@page` directive tells the host how to route page requests to Razor Pages. `@page "/"` marks a page as the default page (often called `Index.razor`). A page with a directive of `@page "/ToDoList"` maps to the physical `Pages\ToDoList.razor` file and routes HTTP requests to `<application-root>/ToDoList`.
 
 There are two approaches to adding code to Blazor pages and components. The first approach is using the `.razor` file itself and placing the code inside a `@code` block after the HTML code. 
 If you’re wondering if this could make the pages more difficult to read and maintain - yes, that can be the case. This is especially true for large enterprise applications. Doing everything in-page tends to work better for small pages or small apps.
@@ -96,7 +96,7 @@ public string? MessageStyle { get; set; }
 }
 ```
 
-There's more on Blazor components in the [next tutorial](https://https://www.jetbrains.com/dotnet/guide/tutorials/blazor-essentials/components).
+There's more on Blazor components in the [next tutorial step](../components).
 
 ## Layouts
 
