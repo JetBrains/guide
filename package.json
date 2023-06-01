@@ -26,7 +26,8 @@
     "demos:webstorm": "copyfiles -e './_site' -f './sites/webstorm-guide/**/demos/*' -u 2 ./sites/webstorm-guide/_site -f false --verbose",
     "clean": "npm run clean:dotnet && npm run clean:goland && npm run clean:intellij && npm run clean:pycharm && npm run clean:webstorm",
     "test": "vitest run",
-    "broken-link-checker": "node ./src/scanner.js"
+    "broken-link-checker": "node ./src/scanner.js",
+    "preinstall": "node node_modules/npm-force-resolutions/index.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
@@ -54,6 +55,7 @@
     "lunr": "^2.3.9",
     "markdown-it-prism": "^2.3.0",
     "node-html-parser": "^6.1.5",
+    "npm-force-resolutions": "^0.0.10",
     "patch-package": "^6.5.1",
     "plyr": "^3.7.8",
     "prettier": "^2.8.7",
@@ -68,6 +70,10 @@
     "vite": "^4.2.1",
     "vite-plugin-image-optimizer": "^1.1.2",
     "vitest": "^0.30.1"
+  },
+  "resolutions": {
+    "nunjucks": "3.2.4",
+    "robots-txt-guard": "1.0.2"
   },
   "volta": {
     "node": "19.6.0"
