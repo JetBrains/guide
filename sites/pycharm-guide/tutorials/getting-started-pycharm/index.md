@@ -20,6 +20,8 @@ tutorialItems:
   - ./run-python-using-a-run-configuration/
   - ./basic-code-refactoring/
   - ./basic-code-debugging/
+  - ./basic-testing/
+  - ./productive-coding/
 
 ---
 
