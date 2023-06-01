@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2023-06-01
 title: Razor Pages
-technologies: [.net,asp.net]
+technologies: [blazor,.net,asp.net]
 topics: [web]
 products: [rider,resharper]
 author: rachelappel

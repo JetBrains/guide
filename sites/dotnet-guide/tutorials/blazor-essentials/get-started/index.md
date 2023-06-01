@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2023-06-01
 title: Get Started using Blazor 
-technologies: [.net,asp.net]
+technologies: [blazor,.net,asp.net]
 topics: [web]
 products: [rider,resharper]
 author: rachelappel
