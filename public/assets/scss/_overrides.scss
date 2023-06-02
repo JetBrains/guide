@@ -1,0 +1,103 @@
+// Overrides
+.button {
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 24px;
+
+  &.is-small {
+    border-radius: 16px;
+    font-size: 0.85rem;
+  }
+}
+
+.tag {
+  line-height: 24px !important;
+}
+
+.button {
+  transition: all 200ms ease;
+
+  &.is-active,
+  &.is-focused,
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 2px rgba($button-active-border-color, 0.3);
+  }
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    $color-invert: nth($pair, 2);
+
+    &.is-#{$name} {
+      &.is-active,
+      &.is-focused,
+      &:active,
+      &:focus {
+        box-shadow: 0 0 0 2px rgba($color, 0.3);
+      }
+    }
+  }
+}
+
+.title, .subtitle, h1, h2, h3, h4, h5, h6 {
+  font-family: $family-sans-serif;
+}
+
+.title, h1 {
+   font-weight: $weight-bold !important;
+   font-size: 43px;
+   line-height: 49px;
+ }
+
+.subtitle, h2 {
+  font-weight: $weight-medium !important;
+  font-size: 35px;
+  line-height: 42px;
+}
+
+.subtitle {
+  color: $subtitle-color;
+}
+
+h3 {
+  font-weight: $weight-medium !important;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h4, h5, h6 {
+  font-weight: $weight-medium !important;
+}
+
+.hero {
+  h1 {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  h2 {
+    font-size: 43px;
+    line-height: 49px;
+  }
+}
+
+.card {
+  $card-border-color: $grey-darker;
+  box-shadow: 0 0 1px $grey-light;
+
+  .card-header {
+    box-shadow: none;
+    border-bottom: 1px solid $grey-lighter;
+  }
+}
+
+div.steps-content {
+  padding-top: 2px !important;
+}
+
+div.dropdown-menu {
+  width: 100% !important;
+
+  a.dropdown-item, button.dropdown-item {
+    padding-right: 1rem !important;
+  }
+}

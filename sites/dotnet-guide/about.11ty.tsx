@@ -27,7 +27,7 @@ export class DotNetAbout {
           >
             <header
               className="bd-header"
-              style="background: url('/assets/dotnet_splash.png') center center; background-repeat: no-repeat; background-size: cover"
+              style="background: url('/assets/dotnet_splash.png') center center; background-repeat: no-repeat; background-size: cover;"
             >
               <article className="media">
                 <div className="media-content">

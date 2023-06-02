@@ -1,0 +1,115 @@
+// Fonts - Copied from https://github.com/JetBrains/RescUI/blob/master/components/typography/src/font-jb-sans-auto.css
+@font-face {
+  font-family: 'JetBrains Sans';
+  src: url('https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Light.woff2') format('woff2'), url('https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JetBrains Sans';
+  src: url('https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Regular.woff2') format('woff2'), url('https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JetBrains Sans';
+  src: url('https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-SemiBold.woff2') format('woff2'), url('https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: 'JetBrains Sans';
+    src: url('https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans.woff2') format('woff2 supports variations'),
+    url('https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans.woff2') format('woff2-variations'),
+    url('https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans.woff') format('woff-variations');
+    font-weight: 100 900;
+    font-style: normal;
+  }
+}
+
+// Colors - Copied from https://github.com/JetBrains/RescUI/blob/master/components/colors/src/simple-vars.p.css
+$black:         #19191C;
+
+$grey-darker:   #252528;
+$grey-dark:     #474749;
+$grey:          #8C8C8E;
+$grey-light:    #D1D1D2;
+$grey-lighter:  #E8E8E8;
+$grey-lightest: #F4F4F4;
+
+$white:         #FFFFFF;
+
+$orange:        #FC801D;
+$yellow:        #F3C033;
+$green:         #21D789;
+$turquoise:     #28B8A0;
+$cyan:          #6B57FF;
+$blue:          #087CFA;
+$purple:        #AF1DF5;
+$red:           #F45C4A;
+
+// Typography - Inspired on https://github.com/JetBrains/RescUI/blob/master/components/typography/src/internal-config.p.css
+$rs-family-gotham: 'Gotham SSm A', 'Gotham SSm B', Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+$rs-family-inter: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+
+$family-sans-serif: 'JetBrains Sans', Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+$family-monospace: 'JetBrains Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+
+$size-1: 3rem !default;
+$size-2: 2.5rem !default;
+$size-3: 2rem !default;
+$size-4: 1.5rem !default;
+$size-5: 1.25rem !default;
+$size-6: 1rem !default;
+$size-7: 0.75rem !default;
+
+$weight-light: 320;
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semibold: 530;
+$weight-bold: 700;
+
+// Spacing
+$block-spacing: 1.5rem !default;
+
+// Miscellaneous
+$easing: ease-out !default;
+$radius-small: 2px !default;
+$radius: 4px !default;
+$radius-large: 6px !default;
+$radius-rounded: 9999px !default;
+$speed: 86ms !default;
+
+// Overrides
+$primary: $blue !default;
+$link: $blue !default;
+$info: $blue !default;
+$success: $green !default;
+$warning: $yellow !default;
+$danger: $red;
+$subtitle-color: $grey-dark;
+$body-size: 16px;
+
+/*
+$family-heading: "JetBrains Sans", Inter, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+
+$body-size: 16px;
+
+$family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$family-sans-serif: "JetBrains Sans", Inter, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+
+$navbar-height: 3rem;
+$navbar-item-hover-color: $link;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-active-color: $link;
+$navbar-item-active-background-color: transparent;
+
+$navbar-dropdown-item-hover-color: $link;
+$navbar-dropdown-item-hover-background-color: transparent;
+$navbar-dropdown-item-active-color: $link;
+$navbar-dropdown-item-active-background-color: transparent;
+
+//$box-shadow: 0 0 1px $grey-light;
+
+$control-height: 2.273em;*/

@@ -18,8 +18,8 @@ const NavbarBrand = ({
             src={`/assets/${siteLogo}`}
             className="bio-navbar-logo-image"
             alt="Logo"
-            width="28"
-            height="28"
+            width="48"
+            height="48"
           />
         </a>
         <a href={`/`} className="navbar-item bio-navbar-brand">
