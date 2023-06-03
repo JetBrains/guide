@@ -93,24 +93,24 @@ pre.prism-code div.token-line.highlight-line {
    font-size: 0.75rem;
  }
 
- /* has colors */
+/* has colors */
 .has-text-primary {
-  color: #00d1b2 !important;
+  color: $blue !important;
 }
 .has-text-success {
-  color: #48c774!important;
+  color: $green !important;
 }
 .has-text-info {
-  color: #3298dc!important;
+  color: $blue !important;
 }
 .has-text-danger {
-  color: #f14668!important;
+  color: $red !important;
 }
 .has-text-warning {
-  color: #ffdd57!important;
+  color: $yellow !important;
 }
 .has-text-dark {
-  color: #363636!important;
+  color: $black !important;
 }
 
 /* plr css */
