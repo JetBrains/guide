@@ -4,17 +4,14 @@ import h, { JSX } from "vhtml";
 export type SidebarStepProps = {
   label: string;
   target: string;
-  marker: number;
   isActive: boolean;
 };
 const SidebarStep = ({
   label,
   target,
-  marker,
   isActive,
 }: SidebarStepProps): JSX.Element => {
   const listClass = isActive ? "is-active" : "";
-  const markerClass = isActive ? "is-info" : "is-primary";
   return (
     <li className={`steps-segment ${listClass}`} style="flex-grow: 0">
       <a
@@ -23,7 +20,6 @@ const SidebarStep = ({
         className="has-text-dark"
         aria-label="Tutorial Step"
       >
-        <span className={`steps-marker ${markerClass}`}>{marker}</span>
         <div className="steps-content">
           <p>{label}</p>
         </div>

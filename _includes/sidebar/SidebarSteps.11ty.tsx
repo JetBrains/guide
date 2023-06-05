@@ -23,11 +23,10 @@ const SidebarSteps = ({
               Tutorial Steps
             </p>
             <ul className="steps has-content-centered is-vertical is-small">
-              {steps.map((step, index) => (
+              {steps.map((step) => (
                 <SidebarStep
                   label={step.title}
                   target={step.url}
-                  marker={index + 1}
                   isActive={step.url === tutorialStep.url}
                 />
               ))}
