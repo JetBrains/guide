@@ -52,12 +52,12 @@ const TipSidebar = ({
       <SidebarPublished {...published} />
       <SidebarReferencesGroup
         reftype={`technologies`}
-        accent={`danger`}
+        accent={`info`}
         references={technologies}
       />
       <SidebarReferencesGroup
         reftype={`products`}
-        accent={`info`}
+        accent={`warning`}
         references={products}
       />
       <SidebarReferencesGroup

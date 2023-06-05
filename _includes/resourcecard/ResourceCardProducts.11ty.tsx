@@ -17,8 +17,8 @@ const ResourceCardProducts = ({
     <>
       {items.map((product) => (
         <span className="bio-common-card-references">
-          <span className="tag is-rounded is-info is-light">
-            <a href={product.url} className="has-text-info">
+          <span className="tag is-rounded is-warning is-light">
+            <a href={product.url} className="has-text-warning">
               {product.label}
             </a>
           </span>
