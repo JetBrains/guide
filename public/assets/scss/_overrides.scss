@@ -102,3 +102,22 @@ div.dropdown-menu {
     padding-right: 1rem !important;
   }
 }
+
+div.bio-page-sidebar-references-group ul.menu-list {
+  border-left: 1px solid $grey-light;
+  list-style: none;
+
+  li {
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    &:hover {
+      background-color: $grey-lighter;
+
+      a {
+        background-color: $grey-lighter;
+      }
+    }
+  }
+}

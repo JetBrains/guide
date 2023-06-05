@@ -88,7 +88,7 @@ export function TipLayout(
             {content && (
               <a
                 href="#in-depth"
-                className="button is-light"
+                className="button is-info"
                 style="width: auto;"
               >
                 Learn More
