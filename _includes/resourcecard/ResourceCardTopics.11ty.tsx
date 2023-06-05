@@ -4,6 +4,7 @@ import h, { JSX } from "vhtml";
 export type ResourceCardTopic = {
   label: string;
   slug: string;
+  url: string;
 };
 
 export type ResourceCardTopics = ResourceCardTopic[];
@@ -15,8 +16,8 @@ const ResourceCardTopics = ({ items }: ResourceCardTopicProps): JSX.Element => {
     <>
       {items.map((topic) => (
         <span className="bio-common-card-references">
-          <span className="tag is-rounded">
-            <a href={topic.slug} className="has-text-primary">
+          <span className="tag is-rounded is-success is-light">
+            <a href={topic.url} className="has-text-success">
               {topic.label}
             </a>
           </span>

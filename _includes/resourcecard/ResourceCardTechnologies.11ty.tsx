@@ -4,6 +4,7 @@ import h, { JSX } from "vhtml";
 export type ResourceCardTechnology = {
   label: string;
   slug: string;
+  url: string;
 };
 
 export type ResourceCardTechnologiesProps = {
@@ -16,8 +17,8 @@ const ResourceCardTechnologies = ({
     <>
       {items.map((technology) => (
         <span className="bio-common-card-references">
-          <span className="tag is-rounded">
-            <a href={technology.slug} className="has-text-danger">
+          <span className="tag is-rounded is-danger is-light">
+            <a href={technology.url} className="has-text-danger">
               {technology.label}
             </a>
           </span>
