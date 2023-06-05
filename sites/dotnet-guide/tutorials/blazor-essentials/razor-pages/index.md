@@ -118,5 +118,5 @@ It's flexible so you can choose to put the code inside a single Razor page or sp
 ## See Also
 
 - [Blazor Project Structure](https://learn.microsoft.com/en-us/aspnet/core/blazor/project-structure?view=aspnetcore-7.0)
-- [Blazor Components](https://docs.microsoft.com/en-us/aspnet/core/blazor/components/layouts?view=aspnetcore-5.0) 
+- [Blazor Components](https://learn.microsoft.com/en-us/aspnet/core/blazor/components/?view=aspnetcore-7.0) 
 - [Razor Syntax](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-7.0)
