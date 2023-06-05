@@ -57,7 +57,7 @@ export function TutorialStepLayout(
               label={step.title}
               target={step.url}
               marker={index + 1}
-              isActive={step == tutorialStep}
+              isActive={step.url === tutorialStep.url}
             />
           ))}
         </ul>

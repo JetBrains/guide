@@ -4,7 +4,6 @@
 @import "variables";
 //@import "bulma";
 @import "bulma/css/bulma.min.css";
-@import "bulma-o-steps/bulma-steps.min.css";
 
 @import "bulmaio/bulmaio";
 
@@ -15,6 +14,7 @@
 
 // Now get the related files
 @import "Navbar";
+@import "Steps";
 
 .bio-page-sidebar {
   font-size: $size-small;

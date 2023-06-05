@@ -1,0 +1,40 @@
+ul.steps {
+  .steps-marker {
+    display: none;
+    //display: inline-block;
+    //font-weight: $weight-semibold;
+  }
+
+  li.steps-segment {
+    background-color: $grey-lightest;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 8px 0;
+    border-right: 22px solid transparent;
+    border-left: 22px solid transparent;
+    text-decoration: none;
+    text-overflow: ellipsis;
+
+    &:hover {
+      background-color: $grey-light;
+    }
+  }
+
+  li.steps-segment.is-active {
+    background-color: $blue;
+    color: $white;
+
+    a {
+      color: $white !important;
+
+      .steps-content {
+
+      }
+    }
+  }
+}
+
+div.steps-content {
+  padding-top: 2px !important;
+}

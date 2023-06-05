@@ -14,21 +14,27 @@ const SidebarPlaylists = ({
         <>
           <p className="menu-label">Playlist Resources</p>
           <ul className="steps has-content-centered is-vertical is-small">
-            {playlistResources.map((item, index) => (
-              <li className="steps-segment" style="flex-grow: 0">
-                <a
-                  aria-label="Playlist Item"
-                  className="has-text-dark playlist-item-toggle"
-                  style="width: auto"
-                  href={`#${item.anchor}`}
-                >
-                  <span className="steps-marker is-primary">{index + 1}</span>
-                  <div className="steps-content">
-                    <p> {item.title}</p>
-                  </div>
-                </a>
-              </li>
-            ))}
+            {playlistResources.map((item, index) => {
+              const isActive = false; // TODO: This all needs to be updated to re-use <SidebarStep /> at some point
+              const listClass = isActive ? "is-active" : "";
+              const markerClass = isActive ? "is-info" : "is-primary";
+
+              return (
+                <li className={`steps-segment ${listClass}`} style="flex-grow: 0">
+                  <a
+                    aria-label="Playlist Item"
+                    className="has-text-dark playlist-item-toggle"
+                    style="width: auto"
+                    href={`#${item.anchor}`}
+                  >
+                    <span className={`steps-marker ${markerClass}`}>{index + 1}</span>
+                    <div className="steps-content">
+                      <p>{item.title}</p>
+                    </div>
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </>
       )}

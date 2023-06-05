@@ -83,7 +83,7 @@ export function TipLayout(
           )}
         </div>
         <div className="column is-half content">
-          {leadin && <div dangerouslySetInnerHTML={{ __html: leadin }} />}
+          {leadin && <div dangerouslySetInnerHTML={{ __html: leadin }} class="mb-4" />}
           <div>
             {content && (
               <a

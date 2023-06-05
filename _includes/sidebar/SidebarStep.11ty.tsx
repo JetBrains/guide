@@ -13,9 +13,10 @@ const SidebarStep = ({
   marker,
   isActive,
 }: SidebarStepProps): JSX.Element => {
+  const listClass = isActive ? "is-active" : "";
   const markerClass = isActive ? "is-info" : "is-primary";
   return (
-    <li className={`steps-segment is-active`} style="flex-grow: 0">
+    <li className={`steps-segment ${listClass}`} style="flex-grow: 0">
       <a
         href={target}
         style="width: auto"
