@@ -32,7 +32,7 @@ const SidebarReferencesGroup = ({
                 className="bio-page-sidebar-references-href"
               >
                 <span
-                  className={`tag bio-page-sidebar-references-label has-text-${accent}`}
+                  className={`tag is-rounded bio-page-sidebar-references-label is-${accent} is-light`}
                 >
                   {reference.title}
                 </span>

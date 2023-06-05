@@ -7,9 +7,9 @@ import ResourceCardProducts, {
 
 const props: ResourceCardProductsProps = {
   items: [
-    { label: "Some Label 1", slug: "/some-slug-1" },
-    { label: "Some Label 2", slug: "/some-slug-2" },
-    { label: "Some Label 3", slug: "/some-slug-3" },
+    { label: "Some Label 1", slug: "/some-slug-1", url: "/guide/some-slug-1" },
+    { label: "Some Label 2", slug: "/some-slug-2", url: "/guide/some-slug-2" },
+    { label: "Some Label 3", slug: "/some-slug-3", url: "/guide/some-slug-3" },
   ],
 };
 
@@ -17,5 +17,5 @@ test("ResourceCardProduct", () => {
   document.body.innerHTML = ResourceCardProducts(props);
   expect(screen.getByText("Some Label 1")).to.exist;
   const links: HTMLLinkElement[] = screen.getAllByRole("link");
-  expect(links[0].href).to.equal("/some-slug-1");
+  expect(links[0].href).to.equal("/guide/some-slug-1");
 });

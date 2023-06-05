@@ -2,9 +2,9 @@
 import h, { JSX } from "vhtml";
 import { Resource } from "../../src/ResourceModels";
 import Thumbnail from "../Image.11ty";
-import { Product } from "../references/product/ProductModels";
-import { Technology } from "../references/technology/TechnologyModels";
-import { Topic } from "../references/topic/TopicModels";
+import ResourceCardProducts from "./ResourceCardProducts.11ty";
+import ResourceCardTechnologies from "./ResourceCardTechnologies.11ty";
+import ResourceCardTopics from "./ResourceCardTopics.11ty";
 
 export type ResourceCardProps = {
   resource: Resource;
@@ -55,33 +55,9 @@ const ResourceCard = ({
                 )}
 
                 <div className="level-item tags">
-                  {products.map((product: Product) => (
-                    <span className="bio-common-card-references">
-                      <span className="tag is-rounded">
-                        <a href={product.url} className="has-text-info">
-                          {product.label}
-                        </a>
-                      </span>
-                    </span>
-                  ))}
-                  {technologies.map((technology: Technology) => (
-                    <span className="bio-common-card-references">
-                      <span className="tag is-rounded">
-                        <a href={technology.url} className="has-text-danger">
-                          {technology.label}
-                        </a>
-                      </span>
-                    </span>
-                  ))}
-                  {topics.map((topic: Topic) => (
-                    <span className="bio-common-card-references">
-                      <span className="tag is-rounded">
-                        <a href={topic.url} className="has-text-primary">
-                          {topic.label}
-                        </a>
-                      </span>
-                    </span>
-                  ))}
+                  <ResourceCardTechnologies items={technologies} />
+                  <ResourceCardProducts items={products} />
+                  <ResourceCardTopics items={topics} />
                 </div>
               </div>
               <div className="level-right">

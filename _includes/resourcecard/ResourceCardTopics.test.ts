@@ -7,14 +7,14 @@ import ResourceCardTopics, {
 
 const props: ResourceCardTopicProps = {
   items: [
-    { label: "Some Label 1", slug: "/some-slug-1" },
-    { label: "Some Label 2", slug: "/some-slug-2" },
-    { label: "Some Label 3", slug: "/some-slug-3" },
+    { label: "Some Label 1", slug: "/some-slug-1", url: "/guide/some-slug-1" },
+    { label: "Some Label 2", slug: "/some-slug-2", url: "/guide/some-slug-2" },
+    { label: "Some Label 3", slug: "/some-slug-3", url: "/guide/some-slug-3" },
   ],
 };
 
 test("ResourceCardTopic", () => {
   document.body.innerHTML = ResourceCardTopics(props);
   const results: HTMLAnchorElement[] = screen.getAllByRole("link");
-  expect(results[0].href).to.equal("/some-slug-1");
+  expect(results[0].href).to.equal("/guide/some-slug-1");
 });

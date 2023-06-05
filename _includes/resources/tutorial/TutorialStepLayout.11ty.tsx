@@ -52,12 +52,11 @@ export function TutorialStepLayout(
       >
         <p className="menu-label bio-page-sidebar-published">Tutorial Steps</p>
         <ul className="steps has-content-centered is-vertical is-small">
-          {parent.tutorialSteps.map((step, index) => (
+          {parent.tutorialSteps.map((step) => (
             <SidebarStep
               label={step.title}
               target={step.url}
-              marker={index + 1}
-              isActive={step == tutorialStep}
+              isActive={step.url === tutorialStep.url}
             />
           ))}
         </ul>

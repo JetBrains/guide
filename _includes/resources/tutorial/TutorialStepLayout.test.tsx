@@ -25,10 +25,8 @@ test("should render TutorialStepLayout", () => {
   expect(cards).to.exist;
   if (cards) {
     expect(cards.length).to.equal(3);
-    const spans0 = cards[0].getElementsByClassName("steps-marker");
-    expect(spans0[0].className).to.equal("steps-marker is-info");
-    const spans1 = cards[1].getElementsByClassName("steps-marker");
-    expect(spans1[0].className).to.equal("steps-marker is-primary");
+    const spans0 = cards[0].getElementsByClassName("steps-content");
+    expect(spans0.length).to.equal(1);
   }
 
   // Top navigation

@@ -29,9 +29,9 @@ export class GoLandHomepage {
         <div class="content">
           <section
             class="hero is-medium"
-            style="background: url('/assets/goland_splash.svg') center center; background-repeat: no-repeat; background-size: cover"
+            style="background: url('/assets/goland_splash.svg') center center; background-repeat: no-repeat; background-size: cover;"
           >
-            <div class="hero-body">
+            <div class="hero-body" style="text-shadow: #FFF 0 0 10px">
               <div class="container">
                 <h1 class="title">{data.title}</h1>
                 <h2 className="subtitle">{data.subtitle}</h2>

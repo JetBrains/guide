@@ -5,7 +5,6 @@ window.addEventListener("load", function (event) {
     document.querySelectorAll('time.bio-common-card-published')
         .forEach(element => {
             const resourceDate = new Date(element.attributes["datetime"].value);
-            console.log(resourceDate);
             if (resourceDate > referenceDate) {
                 element.closest(".bio-resourcecard").classList.add("has-background-info-light");
                 element.closest(".content").insertAdjacentHTML("afterbegin", '<span class="tag is-warning is-pulled-right">New</span>');
