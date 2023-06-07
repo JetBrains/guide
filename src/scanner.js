@@ -5,6 +5,17 @@ const verbose = false;
 let brokenLinksCount = 0;
 let timeout = null;
 
+// URLs that are considered valid (e.g. returning 403 on automated scanning)
+const safelist = [
+  // IDEA Guide
+  "https://mvnrepository.com/",
+  "https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine",
+
+  // .NET Guide
+  "https://blazor-university.com/forms/handling-form-submission/",
+  "https://www.mysql.com/"
+];
+
 const finish = () => {
   if (brokenLinksCount > 0) {
     console.log(`FOUND ${brokenLinksCount} BROKEN LINKS`);
@@ -24,7 +35,7 @@ const siteChecker = new SiteChecker(
         excludeExternalLinks: false,
         requestMethod: "get",
         acceptedSchemes: ["http", "https"],
-        excludedKeywords: ["localhost", "twitter", "mvnrepository", "mysql.com"], // these sites usually fail when running automated checks
+        excludedKeywords: ["localhost", "twitter"],
         userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'
     },
     {
@@ -33,8 +44,9 @@ const siteChecker = new SiteChecker(
         },
         "link": (result, customData) => {
             // Print result
-            if (result.broken) {
-                if (result.http.response && ![undefined, 200, 301, 308].includes(result.http.response.statusCode)) {
+          const isInSafelist = safelist.includes(result.url.original);
+          if (result.broken && !isInSafelist) {
+                if (result.http.response && ![undefined, 200, 301, 302, 308].includes(result.http.response.statusCode)) {
                     console.log(`${result.base.original}: ${result.http.response.statusCode} => ${result.url.original} ${result.brokenReason}`);
                     console.log(`Broken link is in tag: '${result.html.tag}'`);
                     console.log(`${reasons[result.brokenReason]}`);

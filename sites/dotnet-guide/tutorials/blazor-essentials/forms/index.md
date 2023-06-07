@@ -28,7 +28,7 @@ Just as with HTML forms, you must put form fields between the `<EditForm>` tags,
 
 Blazor controls are identified by their `Input` prefix. For example, `<InputText>`, `<InputCheckbox>`, and `<InputDate>` all render corresponding HTML form controls (textbox, checkbox, and date inputs, respectively). Both HTML and Blazor controls are bindable. 
 
-Buttons can be `<button>` elements, `<input>` elements with a `type=button` or `type=submit`, an `a` tag, or a custom component. Other form controls can also be custom built. To use the control, just call the Blazor control by its name using HTML tag style syntax. See [Blazor components](/tutorials/components) for more on components.
+Buttons can be `<button>` elements, `<input>` elements with a `type=button` or `type=submit`, an `a` tag, or a custom component. Other form controls can also be custom built. To use the control, just call the Blazor control by its name using HTML tag style syntax. See [Blazor components](../components) for more on components.
 
 ```cs 
 <EditForm Model="@todo" OnSubmit="@HandleValidSubmit">
