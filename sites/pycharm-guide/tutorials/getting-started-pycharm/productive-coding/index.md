@@ -92,8 +92,6 @@ To use Search Everywhere, use (**⇧⇧** | **Shift+Shift**) and start typing th
 
 As you tab along the top of the dialog you can filter what you’re looking for, including Git commits.
 
-![git-commits.png](git-commits.png)
-
 You can also do basic calculations in PyCharm within the Search Everywhere dialog.
 
 ![basic-calculations.png](basic-calculations.png)
