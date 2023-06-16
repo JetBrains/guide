@@ -7,10 +7,10 @@ export type QueryFilter = {
 
 export function getResources(
   allResourcesList: Resource[],
-  { resourceType }: QueryFilter
+  filter: QueryFilter
 ): Resource[] {
   let resources = allResourcesList;
-
+  const resourceType = filter && filter.resourceType;
   if (resourceType) {
     resources = resources.filter((r) => r.resourceType == resourceType);
   }
