@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "dev:unified": "node --require esbuild-register ./node_modules/@11ty/eleventy/cmd.js --config=./eleventy.config.js --serve --incremental",
+    "build:unified": "node --require esbuild-register ./node_modules/@11ty/eleventy/cmd.js && npm run demos:unified",
+    "demos:unified": "copyfiles -e './_site/dotnet' -f './sites/dotnet/**/demos/*' -f false --verbose && copyfiles -e './_site/goland' -f './sites/goland/**/demos/*' -f false --verbose && copyfiles -e './_site/intellij' -f './sites/intellij/**/demos/*' -f false --verbose && copyfiles -e './_site/pycharm' -f './sites/pycharm/**/demos/*' -f false --verbose && copyfiles -e './_site/webstorm' -f './sites/webstorm/**/demos/*' -f false --verbose",
     "dev:dotnet": "cd sites/dotnet-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --serve --incremental",
     "build:dotnet": "cd sites/dotnet-guide && node --require esbuild-register ../../node_modules/@11ty/eleventy/cmd.js --config=../../eleventy.config.js --pathprefix=/dotnet/guide && npm run demos:dotnet",
     "clean:dotnet": "rimraf sites/dotnet-guide/_site sites/dotnet-guide/.11ty-vite",

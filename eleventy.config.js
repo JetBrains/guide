@@ -40,7 +40,8 @@ module.exports = function (eleventyConfig) {
                   /has-background-info-light/,
                   /tag/,
                   /is-warning/,
-                  /is-pulled-right/],
+                  /is-pulled-right/,
+                ],
               },
             }),
           ],
@@ -99,9 +100,9 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      input: "./",
-      includes: "../../_includes",
-      layouts: "../../_includes",
+      input: "./sites",
+      includes: "../_includes",
+      layouts: "../_includes",
       output: "./_site",
     },
   };
