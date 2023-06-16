@@ -9,31 +9,31 @@ subtitle: Learn some of the most useful Editing features of GoLand.
 thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 playlistItems:
-    - /tips/implement-an-interface/
-    - /tips/structure-tags/
-    - /tips/custom-structure-tags/
-    - /tips/generate-a-test-for-an-element/
-    - /tips/expanding-shrinking-selection/
-    - /tips/multiple-selections/
-    - /tips/select-all-occurrences-in-a-file/
-    - /tips/navigate-to-file/
-    - /tips/navigate-between-opened-files-using-the-switcher/
-    - /tips/recent-files/
-    - /tips/recent-locations/
-    - /tips/jump-to-the-navigation-bar/
-    - /tips/structure-popup/
-    - /tips/select-in/
-    - /tips/go-to-from-a-test/
-    - /tips/type-hierarchy/
-    - /tips/call-hierarchy/
-    - /tips/show-usages/
-    - /tips/compare-with-clipboard/
-    - /tips/paste-from-history/
-    - /tips/switch-to-the-editor/
-    - /tips/hide-all-tool-windows/
-    - /tips/speed-typing/
-    - /tips/search-everywhere/
-    - /tips/local-history/
+    - /goland/tips/implement-an-interface/
+    - /goland/tips/structure-tags/
+    - /goland/tips/custom-structure-tags/
+    - /goland/tips/generate-a-test-for-an-element/
+    - /goland/tips/expanding-shrinking-selection/
+    - /goland/tips/multiple-selections/
+    - /goland/tips/select-all-occurrences-in-a-file/
+    - /goland/tips/navigate-to-file/
+    - /goland/tips/navigate-between-opened-files-using-the-switcher/
+    - /goland/tips/recent-files/
+    - /goland/tips/recent-locations/
+    - /goland/tips/jump-to-the-navigation-bar/
+    - /goland/tips/structure-popup/
+    - /goland/tips/select-in/
+    - /goland/tips/go-to-from-a-test/
+    - /goland/tips/type-hierarchy/
+    - /goland/tips/call-hierarchy/
+    - /goland/tips/show-usages/
+    - /goland/tips/compare-with-clipboard/
+    - /goland/tips/paste-from-history/
+    - /goland/tips/switch-to-the-editor/
+    - /goland/tips/hide-all-tool-windows/
+    - /goland/tips/speed-typing/
+    - /goland/tips/search-everywhere/
+    - /goland/tips/local-history/
 
 ---
 

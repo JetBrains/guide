@@ -9,24 +9,24 @@ subtitle: A selection of useful features from GoLand 2021.1
 thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 playlistItems:
-    - /tips/run-targets-wsl/
-    - /tips/go-embed-support/
-    - /tips/test-bench-fatal-calls/
-    - /tips/add-keys-to-struct-field-tags/
-    - /tips/change-struct-tag-style/
-    - /tips/json-to-go-struct-type/
-    - /tips/add-json-fields-to-struct-types/
-    - /tips/quickly-handle-go-error/
-    - /tips/create-missing-struct-type-with-all-fields/
-    - /tips/create-getters-and-setters/
-    - /tips/extract-type-refactoring/
-    - /tips/rename-go-module-name/
-    - /tips/handle-go-errors-with-postfix-completion/
-    - /tips/get-container-and-tag-completion-for-docker-files/
-    - /tips/check-apis-from-the-ide/
-    - /tips/builtin-html-preview/
-    - /tips/kubernetes-convert-resources-format/
-    - /tips/kubernetes-delete-resource-from-run-button/
+    - /goland/tips/run-targets-wsl/
+    - /goland/tips/go-embed-support/
+    - /goland/tips/test-bench-fatal-calls/
+    - /goland/tips/add-keys-to-struct-field-tags/
+    - /goland/tips/change-struct-tag-style/
+    - /goland/tips/json-to-go-struct-type/
+    - /goland/tips/add-json-fields-to-struct-types/
+    - /goland/tips/quickly-handle-go-error/
+    - /goland/tips/create-missing-struct-type-with-all-fields/
+    - /goland/tips/create-getters-and-setters/
+    - /goland/tips/extract-type-refactoring/
+    - /goland/tips/rename-go-module-name/
+    - /goland/tips/handle-go-errors-with-postfix-completion/
+    - /goland/tips/get-container-and-tag-completion-for-docker-files/
+    - /goland/tips/check-apis-from-the-ide/
+    - /goland/tips/builtin-html-preview/
+    - /goland/tips/kubernetes-convert-resources-format/
+    - /goland/tips/kubernetes-delete-resource-from-run-button/
 
 ---
 

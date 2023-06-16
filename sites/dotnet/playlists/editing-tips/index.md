@@ -10,15 +10,15 @@ subtitle: Know everything there is to know about editing code.
 thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 playlistItems:
-    - /tips/move-code/
-    - /tips/create-variable/
-    - /tips/cleanup-namespaces/
-    - /tips/collection-iteration/
-    - /tips/column-align/
-    - /tips/csharp8-support/
-    - /tips/json-schema/
-    - /tips/expand-shrink-selection/
-    - /tips/occurrence-selection/
+    - /dotnet/tips/move-code/
+    - /dotnet/tips/create-variable/
+    - /dotnet/tips/cleanup-namespaces/
+    - /dotnet/tips/collection-iteration/
+    - /dotnet/tips/column-align/
+    - /dotnet/tips/csharp8-support/
+    - /dotnet/tips/json-schema/
+    - /dotnet/tips/expand-shrink-selection/
+    - /dotnet/tips/occurrence-selection/
 
 ---
 

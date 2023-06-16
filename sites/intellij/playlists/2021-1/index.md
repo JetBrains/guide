@@ -9,26 +9,26 @@ subtitle: Tips to get you productive with the new or improved features in Intell
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
-    - /tips/commit-inspection-profile/
-    - /tips/data-flow-analysis/
-    - /tips/html-real-time-preview/
-    - /tips/evaluate-json-path-expressions/
-    - /tips/kotlin-prevent-illegal-package-dependencies/
-    - /tips/uml-diagrams-for-kotlin/
-    - /tips/run-targets/
-    - /tips/profiler-basics/
-    - /tips/change-font-weight/
-    - /tips/space-basics/
-    - /tips/space-code-reviews/
-    - /tips/create-record/
-    - /tips/convert-to-record/
-    - /tips/convert-from-record/
-    - /tips/pattern-matching-for-instanceof/
-    - /tips/deprecation-warnings/
-    - /tips/new-methods-on-streams/
-    - /tips/turn-on-preview-features/
-    - /tips/create-a-correct-sealed-parent/
-    - /tips/create-a-correct-sealed-child/
+    - /intellij/tips/commit-inspection-profile/
+    - /intellij/tips/data-flow-analysis/
+    - /intellij/tips/html-real-time-preview/
+    - /intellij/tips/evaluate-json-path-expressions/
+    - /intellij/tips/kotlin-prevent-illegal-package-dependencies/
+    - /intellij/tips/uml-diagrams-for-kotlin/
+    - /intellij/tips/run-targets/
+    - /intellij/tips/profiler-basics/
+    - /intellij/tips/change-font-weight/
+    - /intellij/tips/space-basics/
+    - /intellij/tips/space-code-reviews/
+    - /intellij/tips/create-record/
+    - /intellij/tips/convert-to-record/
+    - /intellij/tips/convert-from-record/
+    - /intellij/tips/pattern-matching-for-instanceof/
+    - /intellij/tips/deprecation-warnings/
+    - /intellij/tips/new-methods-on-streams/
+    - /intellij/tips/turn-on-preview-features/
+    - /intellij/tips/create-a-correct-sealed-parent/
+    - /intellij/tips/create-a-correct-sealed-child/
 
 ---
 

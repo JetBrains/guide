@@ -9,21 +9,21 @@ subtitle: Know everything there is to know about Code Completion.
 thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 playlistItems:
-    - /tips/basic-code-completion/
-    - /tips/smart-code-completion/
-    - /tips/cyclic-expand-word/
-    - /tips/method-like-completion-for-functions/
-    - /tips/postfix-completion/
-    - /tips/live-templates/
-    - /tips/complete-current-statement/
-    - /tips/partial-match-completion/
-    - /tips/parameter-info/
-    - /tips/completion-for-non-imported-go-modules/
-    - /tips/code-completion-in-evaluate-expression-and-watches/
-    - /tips/code-completion-in-run-configurations/
-    - /tips/completion-with-the-tab-key/
-    - /tips/code-completion-in-language-injections/
-    - /tips/exclude-from-imports-and-completion/
+    - /goland/tips/basic-code-completion/
+    - /goland/tips/smart-code-completion/
+    - /goland/tips/cyclic-expand-word/
+    - /goland/tips/method-like-completion-for-functions/
+    - /goland/tips/postfix-completion/
+    - /goland/tips/live-templates/
+    - /goland/tips/complete-current-statement/
+    - /goland/tips/partial-match-completion/
+    - /goland/tips/parameter-info/
+    - /goland/tips/completion-for-non-imported-go-modules/
+    - /goland/tips/code-completion-in-evaluate-expression-and-watches/
+    - /goland/tips/code-completion-in-run-configurations/
+    - /goland/tips/completion-with-the-tab-key/
+    - /goland/tips/code-completion-in-language-injections/
+    - /goland/tips/exclude-from-imports-and-completion/
 
 ---
 

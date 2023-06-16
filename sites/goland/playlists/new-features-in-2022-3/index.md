@@ -9,11 +9,11 @@ subtitle: A selection of useful features from GoLand 2022.3.
 cardThumbnail: ./card.png
 thumbnail: ./thumbnail.png
 playlistItems:
-    - /tips/code-vision-in-editor/
-    - /tips/generate-a-test-for-generic-function/
-    - /tips/generate-go-work/
-    - /tips/quick-documentation-go-doc-comments/
-    - /tips/integrated-go-playground/
+    - /goland/tips/code-vision-in-editor/
+    - /goland/tips/generate-a-test-for-generic-function/
+    - /goland/tips/generate-go-work/
+    - /goland/tips/quick-documentation-go-doc-comments/
+    - /goland/tips/integrated-go-playground/
 ---
 
 For more information about what's new in GoLand 2022.3, check out our [What's New Page](https://jetbrains.com/go/whatsnew) or browse the tips below.

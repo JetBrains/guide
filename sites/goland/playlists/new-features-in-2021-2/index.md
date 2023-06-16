@@ -9,36 +9,36 @@ subtitle: A selection of useful features from GoLand 2021.2
 cardThumbnail: ./card.png
 thumbnail: ./thumbnail.png
 playlistItems:
-    - /tips/go-1-17-convert-slice-to-array-pointer/
-    - /tips/run-gofmt-after-builtin-formatter/
-    - /tips/load-gomod-changes-manually/
-    - /tips/better-go-version-handling/
-    - /tips/unused-dependency-in-go-mod-inspection/
-    - /tips/better-view-of-attached-projects/
-    - /tips/web-reload-browser-pages-on-save/
-    - /tips/web-completion-for-parameter-types-based-on-function-calls/
-    - /tips/web-arrow-function-live-template/
-    - /tips/web-support-for-typescript-in-jsdoc/
-    - /tips/web-react-refactor-names-in-usestate-hooks/
-    - /tips/web-react-completion-for-classnames-clsx-libraries/
-    - /tips/vcs-sign-commit-with-gpg/
-    - /tips/vcs-run-tests-before-commit/
-    - /tips/vcs-run-inspections-before-commit/
-    - /tips/vcs-cleanup-code-before-commit/
-    - /tips/containers-quick-documentation-in-dockerfile-and-docker-compose/
-    - /tips/containers-restart-a-running-container/
-    - /tips/containers-pause-and-unpause/
-    - /tips/containers-port-mapping-inspection/
-    - /tips/containers-shm-size-inspection/
-    - /tips/containers-device_cgroup_rules-values-inspection/
-    - /tips/kubernetes-configure-custom-namespaces-manually/
-    - /tips/run-actions-on-save/
-    - /tips/cleanup-unused-ide-directories/
-    - /tips/text-search-in-local-history/
-    - /tips/terminal-cursor-shape/
-    - /tips/terminal-select-shell/
-    - /tips/new-scratch-file-from-selection/
-    - /tips/remove-scratch-file-when-closing/
+    - /goland/tips/go-1-17-convert-slice-to-array-pointer/
+    - /goland/tips/run-gofmt-after-builtin-formatter/
+    - /goland/tips/load-gomod-changes-manually/
+    - /goland/tips/better-go-version-handling/
+    - /goland/tips/unused-dependency-in-go-mod-inspection/
+    - /goland/tips/better-view-of-attached-projects/
+    - /goland/tips/web-reload-browser-pages-on-save/
+    - /goland/tips/web-completion-for-parameter-types-based-on-function-calls/
+    - /goland/tips/web-arrow-function-live-template/
+    - /goland/tips/web-support-for-typescript-in-jsdoc/
+    - /goland/tips/web-react-refactor-names-in-usestate-hooks/
+    - /goland/tips/web-react-completion-for-classnames-clsx-libraries/
+    - /goland/tips/vcs-sign-commit-with-gpg/
+    - /goland/tips/vcs-run-tests-before-commit/
+    - /goland/tips/vcs-run-inspections-before-commit/
+    - /goland/tips/vcs-cleanup-code-before-commit/
+    - /goland/tips/containers-quick-documentation-in-dockerfile-and-docker-compose/
+    - /goland/tips/containers-restart-a-running-container/
+    - /goland/tips/containers-pause-and-unpause/
+    - /goland/tips/containers-port-mapping-inspection/
+    - /goland/tips/containers-shm-size-inspection/
+    - /goland/tips/containers-device_cgroup_rules-values-inspection/
+    - /goland/tips/kubernetes-configure-custom-namespaces-manually/
+    - /goland/tips/run-actions-on-save/
+    - /goland/tips/cleanup-unused-ide-directories/
+    - /goland/tips/text-search-in-local-history/
+    - /goland/tips/terminal-cursor-shape/
+    - /goland/tips/terminal-select-shell/
+    - /goland/tips/new-scratch-file-from-selection/
+    - /goland/tips/remove-scratch-file-when-closing/
 
 ---
 

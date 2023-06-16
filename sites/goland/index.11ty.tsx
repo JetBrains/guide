@@ -5,7 +5,9 @@ import { BaseFrontmatter } from "../../src/ResourceModels";
 import ResourceCard from "../../_includes/resourcecard/ResourceCard.11ty";
 
 export type GoLandHomepageData = LayoutProps &
-  BaseFrontmatter & { subtitle?: string };
+  BaseFrontmatter & {
+    subtitle?: string;
+  };
 
 export class GoLandHomepage {
   data() {
@@ -17,9 +19,7 @@ export class GoLandHomepage {
   }
 
   render(this: LayoutContext, data: GoLandHomepageData): JSX.Element {
-    const tips = this.getResources({
-      channel: data.site.channel,
-    }).slice(0, 15);
+    const tips = this.getResources().slice(0, 15);
     const listing = (
       <>
         {tips.map((tip) => {

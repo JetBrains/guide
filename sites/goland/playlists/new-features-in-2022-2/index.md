@@ -9,14 +9,14 @@ subtitle: A selection of useful features from GoLand 2022.2.
 cardThumbnail: ./card.png
 thumbnail: ./thumbnail.png
 playlistItems:
-    - /tips/rename-constants-that-use-names-of-builtin-constants/
-    - /tips/workspaces-group-use-directives/
-    - /tips/run-tests-fuzzing/
-    - /tips/run-anything/
-    - /tips/quick-documentation/
-    - /tips/delete-type-parameter-with-empty-parameter-list/
-    - /tips/convert-empty-interfaces-to-any/
-    - /tips/change-font-size-from-keyboard/
+    - /goland/tips/rename-constants-that-use-names-of-builtin-constants/
+    - /goland/tips/workspaces-group-use-directives/
+    - /goland/tips/run-tests-fuzzing/
+    - /goland/tips/run-anything/
+    - /goland/tips/quick-documentation/
+    - /goland/tips/delete-type-parameter-with-empty-parameter-list/
+    - /goland/tips/convert-empty-interfaces-to-any/
+    - /goland/tips/change-font-size-from-keyboard/
 
 ---
 
