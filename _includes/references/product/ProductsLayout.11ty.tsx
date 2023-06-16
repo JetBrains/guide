@@ -14,7 +14,6 @@ export function ProductsLayout(
   const { content } = data;
   const products = this.getReferences({
     resourceType: "product",
-    channel: data.site.channel,
   }) as Product[];
   const figure = undefined;
   const listing = (

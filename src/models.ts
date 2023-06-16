@@ -31,7 +31,7 @@ export interface LayoutContext {
   /**
    * Used by view renders to grab the `this` object
    */
-  getResources(filter: QueryFilter): Resource[];
+  getResources(filter?: QueryFilter): Resource[];
 
   getReferences(filter: QueryFilter): ReferenceFrontmatter[];
 

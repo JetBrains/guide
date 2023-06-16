@@ -20,9 +20,7 @@ export function TechnologyLayout(
     throw new Error(`Technology "${page.fileSlug}" not in collection`);
   }
 
-  const linkedResources = this.getResources({
-    channel: data.site.channel,
-  }).filter(
+  const linkedResources = this.getResources().filter(
     (ci) =>
       ci.technologies && ci.technologies.includes(technology.label as string)
   ) as Resource[];

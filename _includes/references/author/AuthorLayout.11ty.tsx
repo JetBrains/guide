@@ -22,9 +22,9 @@ export function AuthorLayout(
     throw new Error(`Author "${page.fileSlug}" not in collection`);
   }
 
-  const linkedResources: Resource[] = this.getResources({
-    channel: data.site.channel,
-  }).filter((ci) => ci.author === author.label);
+  const linkedResources: Resource[] = this.getResources().filter(
+    (ci) => ci.author === author.label
+  );
 
   const figure = (
     <div className="image is-rounded is-96x96">

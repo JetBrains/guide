@@ -9,11 +9,6 @@ import { DateTime } from "luxon";
 const slugify = require("@sindresorhus/slugify");
 
 export const BaseFrontmatter = Type.Object({
-  channel: Type.Optional(
-    Type.String({
-      description: "Optional subsite for this resource",
-    })
-  ),
   resourceType: Type.Optional(
     Type.String({
       description: "Resource type. Should not be specified manually",
@@ -30,7 +25,6 @@ export type BaseItem = {
 };
 
 export class BaseEntity implements BaseFrontmatter {
-  channel?: string;
   resourceType: string;
   slug: string;
   title: string;
@@ -38,7 +32,6 @@ export class BaseEntity implements BaseFrontmatter {
   static frontmatterSchema = BaseFrontmatter;
 
   constructor({ data, page }: { data: BaseFrontmatter; page: EleventyPage }) {
-    this.channel = data.channel;
     this.resourceType = data.resourceType as string;
     this.slug = page.fileSlug;
     this.title = data.title;

@@ -13,7 +13,6 @@ export function PlaylistsLayout(
   const { content } = data;
   const playlists = this.getResources({
     resourceType: "playlist",
-    channel: data.site.channel,
   });
   const figure = undefined;
   const listing = (

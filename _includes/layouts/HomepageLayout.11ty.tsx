@@ -13,7 +13,6 @@ export function HomepageLayout(
   const splashStyle = `background: url('/assets/pycharm_splash.svg') center center; background-repeat: no-repeat; background-size: cover`;
   const tips = this.getResources({
     resourceType: "tip",
-    channel: data.site.channel,
   }).slice(0, 10);
   const listing = (
     <>

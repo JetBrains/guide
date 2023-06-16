@@ -20,9 +20,7 @@ export function TopicLayout(
     throw new Error(`Topic "${page.fileSlug}" not in collection`);
   }
 
-  const linkedResources = this.getResources({
-    channel: data.site.channel,
-  }).filter(
+  const linkedResources = this.getResources().filter(
     (ci) => ci.topics && ci.topics.includes(topic.label as string)
   ) as Resource[];
 
