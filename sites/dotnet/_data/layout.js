@@ -1,1 +1,0 @@
-module.exports = "layouts/PageLayout.11ty.tsx";
