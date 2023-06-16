@@ -1,1 +1,8 @@
-{}
+{
+  "site": {
+    "copyright": "Copyright © 2000–2023 <a href=\"https://www.jetbrains.com/\">JetBrains</a> s.r.o.",
+    "siteTitle": "JetBrains Guide",
+    "siteUrl": "https://www.jetbrains.com/guide",
+    "siteDescription": "Be more productive and write high-quality code faster with a series of tips and tricks"
+  }
+}
