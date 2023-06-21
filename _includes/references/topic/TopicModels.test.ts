@@ -19,11 +19,18 @@ const page: EleventyPage = {
 };
 
 test("construct a topic", async () => {
-  const topic = new Topic({ data, page });
+  // With a FontAwesome icon and accent color
+  const topic = new Topic({
+    data,
+    page,
+  });
   expect(topic.title).to.equal("Some Topic");
 });
 
 test("construct a topic from factory", async () => {
-  const topic = await new Topic({ data, page }).init();
+  const topic = await new Topic({
+    data,
+    page,
+  }).init();
   expect(topic.title).to.equal("Some Topic");
 });

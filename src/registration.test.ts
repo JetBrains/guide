@@ -51,13 +51,6 @@ test("should construct collections", async () => {
   const thisTopic0 = allReferences.get(`topics:${topic0Item.data.label}`);
   expect(thisTopic0 && thisTopic0.title).to.equal(topic0Item.data.title);
 
-  // Technologies
-  const technology0Item = fixtures.technologyItems[0];
-  const technology0 = allReferences.get(
-    `technologies:${technology0Item.data.label}`
-  );
-  expect(technology0 && technology0.title).to.equal(technology0Item.data.title);
-
   // Let's look at references
   const refs = thisTip0.references;
   expect(refs).to.exist;
@@ -89,7 +82,7 @@ describe("Resolve References", () => {
   });
 
   test("should throw error for undefined label in array", () => {
-    expect(resource.products && resource.products.length).to.be.gt(0);
+    expect(resource.topics && resource.topics.length).to.be.gt(0);
     const fieldName = "products";
     resource.products = ["xxx", "yyy"];
     const resolver = () =>
@@ -121,9 +114,9 @@ describe("Resolve References", () => {
     if (tip0.references) {
       const refAuthor = tip0.references.author;
       expect(refAuthor.title).to.equal(authorItem0.data.title);
-      const refProducts = tip0.references.products;
-      const productItem0 = fixtures.productItems[0];
-      expect(refProducts[0].title).to.equal(productItem0.data.title);
+      const referencedTopics = tip0.references.topics;
+      const theTopic = fixtures.topicItems[0];
+      expect(referencedTopics[0].title).to.equal(theTopic.data.title);
     }
   });
 

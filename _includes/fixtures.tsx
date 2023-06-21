@@ -2,15 +2,7 @@ import h from "vhtml";
 import { Tip, TipFrontmatter } from "./resources/tip/TipModels";
 import { Author, AuthorFrontmatter } from "./references/author/AuthorModels";
 import { SiteCollections } from "./models";
-import {
-  Technology,
-  TechnologyFrontmatter,
-} from "./references/technology/TechnologyModels";
 import { Topic, TopicFrontmatter } from "./references/topic/TopicModels";
-import {
-  Product,
-  ProductFrontmatter,
-} from "./references/product/ProductModels";
 import { referenceCollections, resourceCollections, rootPath } from "./config";
 import { vi } from "vitest";
 import { EleventyPage, LayoutContext } from "../src/models";
@@ -52,9 +44,7 @@ const tipFrontmatters: TipFrontmatter[] = [
     date,
     resourceType: "tip",
     author: "sa",
-    products: ["sp", "ap"],
-    technologies: ["ste", "ate"],
-    topics: ["sto", "ato"],
+    topics: ["sto", "ato", "sp", "ap", "ste", "ate"],
     thumbnail: "thumbnail.png",
   },
   {
@@ -62,8 +52,7 @@ const tipFrontmatters: TipFrontmatter[] = [
     date: laterDate,
     resourceType: "tip",
     author: "aa",
-    technologies: ["ste", "ate"],
-    topics: ["sto", "ato"],
+    topics: ["sto", "ato", "ste", "ate"],
     thumbnail: "aa.png",
   },
 ];
@@ -171,65 +160,6 @@ const authorDatas: {
   },
 ];
 
-const technologyFrontmatters: TechnologyFrontmatter[] = [
-  {
-    title: "Some Technology",
-    resourceType: "technology",
-    label: "ste",
-    logo: "stlogo.svg",
-  },
-  {
-    title: "Another Technology",
-    resourceType: "technology",
-    label: "ate",
-    logo: "atlogo.svg",
-  },
-];
-// This is data shaped like the collection API sends it: data/page/content.
-const technologyItems: {
-  content: string;
-  data: TechnologyFrontmatter;
-  page: EleventyPage;
-}[] = [
-  {
-    content,
-    data: { ...technologyFrontmatters[0] },
-    page: {
-      fileSlug: "ste",
-      url: "/technologies/ste/",
-      inputPath: `${rootPath}/technologies/ste/index.md`,
-      date,
-    },
-  },
-  {
-    content,
-    data: { ...technologyFrontmatters[1] },
-    page: {
-      fileSlug: "ate",
-      url: "/technologies/ate/",
-      inputPath: `${rootPath}/technologies/ate/index.md`,
-      date,
-    },
-  },
-];
-// This is data shaped like on our side.
-const technologyDatas: {
-  data: TechnologyFrontmatter;
-  page: EleventyPage;
-  content: string;
-}[] = [
-  {
-    content,
-    data: { ...technologyItems[0].data },
-    page: technologyItems[0].page,
-  },
-  {
-    content,
-    data: { ...technologyItems[1].data },
-    page: technologyItems[1].page,
-  },
-];
-
 const topicFrontmatters: TopicFrontmatter[] = [
   {
     title: "Some Topic",
@@ -244,6 +174,30 @@ const topicFrontmatters: TopicFrontmatter[] = [
     label: "ato",
     accent: "at-accent",
     icon: "at-icon.png",
+  },
+  {
+    title: "Some Technology",
+    resourceType: "topic",
+    label: "ste",
+    logo: "stlogo.svg",
+  },
+  {
+    title: "Another Technology",
+    resourceType: "topic",
+    label: "ate",
+    logo: "atlogo.svg",
+  },
+  {
+    title: "Some Product",
+    resourceType: "topic",
+    label: "sp",
+    logo: "some.png",
+  },
+  {
+    title: "Another Product",
+    resourceType: "topic",
+    label: "ap",
+    logo: "another.png",
   },
 ];
 // This is data shaped like the collection API sends it: data/page/content.
@@ -272,6 +226,46 @@ const topicItems: {
       date,
     },
   },
+  {
+    content,
+    data: { ...topicFrontmatters[2] },
+    page: {
+      fileSlug: "ste",
+      url: "/topics/ste/",
+      inputPath: `${rootPath}/topics/ste/index.md`,
+      date,
+    },
+  },
+  {
+    content,
+    data: { ...topicFrontmatters[3] },
+    page: {
+      fileSlug: "ate",
+      url: "/topics/ate/",
+      inputPath: `${rootPath}/topics/ate/index.md`,
+      date,
+    },
+  },
+  {
+    content,
+    data: { ...topicFrontmatters[4] },
+    page: {
+      fileSlug: "sp",
+      url: "/topics/sp/",
+      inputPath: `${rootPath}/topics/sp/index.md`,
+      date,
+    },
+  },
+  {
+    content,
+    data: { ...topicFrontmatters[5] },
+    page: {
+      fileSlug: "ap",
+      url: "/topics/ap/",
+      inputPath: `${rootPath}/topics/ap/index.md`,
+      date,
+    },
+  },
 ];
 // This is data shaped like on our side.
 const topicDatas: {
@@ -289,65 +283,25 @@ const topicDatas: {
     data: { ...topicItems[1].data },
     page: topicItems[1].page,
   },
-];
-
-const productFrontmatters: ProductFrontmatter[] = [
-  {
-    title: "Some Product",
-    resourceType: "product",
-    label: "sp",
-    logo: "some.png",
-  },
-  {
-    title: "Another Product",
-    resourceType: "product",
-    label: "ap",
-    logo: "another.png",
-  },
-];
-
-// This is data shaped like the collection API sends it: data/page/content.
-const productItems: {
-  content: string;
-  data: ProductFrontmatter;
-  page: EleventyPage;
-}[] = [
   {
     content,
-    data: { ...productFrontmatters[0] },
-    page: {
-      fileSlug: "sp",
-      url: "/products/sp/",
-      inputPath: `${rootPath}/products/sp/index.md`,
-      date,
-    },
+    data: { ...topicItems[2].data },
+    page: topicItems[2].page,
   },
   {
     content,
-    data: { ...productFrontmatters[1] },
-    page: {
-      fileSlug: "ap",
-      url: "/products/ap/",
-      inputPath: `${rootPath}/products/ap/index.md`,
-      date,
-    },
-  },
-];
-// This is data shaped like on our side.
-const productDatas: {
-  data: ProductFrontmatter;
-  page: EleventyPage;
-  content: string;
-}[] = [
-  {
-    content,
-    data: { ...productItems[0].data },
-    page: productItems[0].page,
+    data: { ...topicItems[3].data },
+    page: topicItems[3].page,
   },
   {
     content,
-    data: { ...productItems[1].data },
-    page: productItems[1].page,
+    data: { ...topicItems[4].data },
+    page: topicItems[4].page,
+  },
+  {
+    content,
+    data: { ...topicItems[5].data },
+    page: topicItems[5].page,
   },
 ];
 
@@ -576,59 +530,67 @@ const all: BaseItem[] = [
   ...tutorialItems,
   ...tutorialStepItems,
   ...authorItems,
-  ...productItems,
-  ...technologyItems,
   ...topicItems,
   ...playlistItems,
 ];
 
 const authors = await Promise.all(
   authorDatas.map(
-    async (ref) => await new Author({ data: ref.data, page: ref.page }).init()
-  )
-);
-
-const technologies = await Promise.all(
-  technologyDatas.map(
     async (ref) =>
-      await new Technology({ data: ref.data, page: ref.page }).init()
+      await new Author({
+        data: ref.data,
+        page: ref.page,
+      }).init()
   )
 );
 
 const topics = await Promise.all(
   topicDatas.map(
-    async (ref) => await new Topic({ data: ref.data, page: ref.page }).init()
-  )
-);
-
-const products = await Promise.all(
-  productDatas.map(
-    async (ref) => await new Product({ data: ref.data, page: ref.page }).init()
+    async (ref) =>
+      await new Topic({
+        data: ref.data,
+        page: ref.page,
+      }).init()
   )
 );
 
 const tips = await Promise.all(
   tipDatas.map(
-    async (ref) => await new Tip({ data: ref.data, page: ref.page }).init()
+    async (ref) =>
+      await new Tip({
+        data: ref.data,
+        page: ref.page,
+      }).init()
   )
 );
 
 const tutorials = await Promise.all(
   tutorialDatas.map(
-    async (ref) => await new Tutorial({ data: ref.data, page: ref.page }).init()
+    async (ref) =>
+      await new Tutorial({
+        data: ref.data,
+        page: ref.page,
+      }).init()
   )
 );
 
 const tutorialSteps = await Promise.all(
   tutorialStepDatas.map(
     async (ref) =>
-      await new TutorialStep({ data: ref.data, page: ref.page }).init()
+      await new TutorialStep({
+        data: ref.data,
+        page: ref.page,
+      }).init()
   )
 );
 
 const playlists = await Promise.all(
   playlistDatas.map(
-    async (ref) => await new Playlist({ data: ref.data, page: ref.page }).init()
+    async (ref) =>
+      await new Playlist({
+        data: ref.data,
+        page: ref.page,
+      }).init()
   )
 );
 
@@ -638,7 +600,7 @@ const allResources: ResourceCollection = new Map();
 );
 
 const allReferences: ReferenceCollection = new Map();
-[...authors, ...products, ...technologies, ...topics].forEach((reference) => {
+[...authors, ...topics].forEach((reference) => {
   // @ts-ignore
   const joinKey = reference.constructor.joinKey;
   const key = `${joinKey}:${reference.label}`;
@@ -751,14 +713,10 @@ const fixtures = {
   collections,
   content,
   date,
-  technologies,
-  technologyItems,
   tips,
   tipItems,
   topics,
   topicItems,
-  products,
-  productItems,
   tutorials,
   tutorialItems,
   tutorialSteps,
