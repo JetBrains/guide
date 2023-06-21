@@ -101,7 +101,7 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
   topics?: string[];
   references?: References;
   static frontmatterSchema: any = ResourceFrontmatter;
-  static referenceFields = ["author", "products", "technologies", "topics"];
+  static referenceFields = ["author", "topics"];
 
   constructor({
     data,

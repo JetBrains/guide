@@ -1,4 +1,4 @@
 {
-  "resourceType": "technology",
-  "layout": "references/technology/TechnologyLayout.11ty.tsx"
+  "resourceType": "topic",
+  "layout": "references/topic/TopicLayout.11ty.tsx"
 }
