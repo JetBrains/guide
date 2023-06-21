@@ -9,15 +9,11 @@ import Sidebar from "./Sidebar.11ty";
 import SidebarReferencesGroup from "./SidebarReferencesGroup.11ty";
 import SidebarDoclinks from "./SidebarDoclinks.11ty";
 import { Author } from "../references/author/AuthorModels";
-import { Product } from "../references/product/ProductModels";
 import { Topic } from "../references/topic/TopicModels";
-import { Technology } from "../references/technology/TechnologyModels";
 
 export type TipSidebarProps = {
   displayDate: string;
   author: Author;
-  products: Product[];
-  technologies: Technology[];
   topics: Topic[];
   hasBody?: boolean;
   seealsos?: SeeAlsos;
@@ -28,9 +24,7 @@ const TipSidebar = ({
   hasBody,
   displayDate,
   longVideo,
-  products,
   seealsos,
-  technologies,
   topics,
 }: TipSidebarProps): JSX.Element => {
   const published: SidebarPublishedProps = {
@@ -39,27 +33,26 @@ const TipSidebar = ({
   };
   const links: SidebarDoclinkProps[] = [];
   if (hasBody) {
-    links.push({ label: "In Depth", target: "in-depth" });
+    links.push({
+      label: "In Depth",
+      target: "in-depth",
+    });
   }
   if (seealsos) {
-    links.push({ label: "See Also", target: "see-also" });
+    links.push({
+      label: "See Also",
+      target: "see-also",
+    });
   }
   if (longVideo) {
-    links.push({ label: "Full Video", target: "full-video" });
+    links.push({
+      label: "Full Video",
+      target: "full-video",
+    });
   }
   return (
     <Sidebar>
       <SidebarPublished {...published} />
-      <SidebarReferencesGroup
-        reftype={`technologies`}
-        accent={`danger`}
-        references={technologies}
-      />
-      <SidebarReferencesGroup
-        reftype={`products`}
-        accent={`info`}
-        references={products}
-      />
       <SidebarReferencesGroup
         reftype={`topics`}
         accent={`success`}

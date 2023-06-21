@@ -9,8 +9,6 @@ const data: PlaylistFrontmatter = {
   date: fixtures.date,
   resourceType: "playlist",
   author: "sa",
-  products: ["sp", "ap"],
-  technologies: ["st", "at"],
   topics: ["st", "at"],
   thumbnail: "thumbnail.png",
   playlistItems: [],

@@ -7,8 +7,6 @@ import { Author } from "../../references/author/AuthorModels";
 import VideoPlayer from "../../video/VideoPlayer.11ty";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import TipSidebar from "../../sidebar/TipSidebar.11ty";
-import { Product } from "../../references/product/ProductModels";
-import { Technology } from "../../references/technology/TechnologyModels";
 import { Topic } from "../../references/topic/TopicModels";
 
 export type TipLayoutData = LayoutProps & TipFrontmatter;
@@ -30,9 +28,6 @@ export function TipLayout(
   if (!author) {
     throw new Error(`Author "${tip.author}" not in collection`);
   }
-  const technologies = tip.references.technologies
-    ? (tip.references.technologies as Technology[])
-    : [];
   const topics = tip.references.topics
     ? (tip.references.topics as Topic[])
     : [];
@@ -47,8 +42,6 @@ export function TipLayout(
     <TipSidebar
       displayDate={tip.displayDate}
       author={author}
-      products={tip.references.products as Product[]}
-      technologies={technologies}
       topics={topics}
       hasBody={tip.hasBody}
       seealsos={tip.seealso}

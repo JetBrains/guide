@@ -2,8 +2,6 @@
 import h, { JSX } from "vhtml";
 import { Resource } from "../../src/ResourceModels";
 import Thumbnail from "../Image.11ty";
-import { Product } from "../references/product/ProductModels";
-import { Technology } from "../references/technology/TechnologyModels";
 import { Topic } from "../references/topic/TopicModels";
 
 export type ResourceCardProps = {
@@ -13,7 +11,7 @@ const ResourceCard = ({
   resource: { url, title, displayDate, subtitle, thumbnail, references },
 }: ResourceCardProps): JSX.Element => {
   // @ts-ignore
-  const { author, products, technologies, topics } = references;
+  const { author, topics } = references;
   return (
     <div className="bio-resourcecard box">
       <article className="media">
@@ -55,24 +53,6 @@ const ResourceCard = ({
                 )}
 
                 <div className="level-item tags">
-                  {products.map((product: Product) => (
-                    <span className="bio-common-card-references">
-                      <span className="tag is-rounded">
-                        <a href={product.url} className="has-text-info">
-                          {product.label}
-                        </a>
-                      </span>
-                    </span>
-                  ))}
-                  {technologies.map((technology: Technology) => (
-                    <span className="bio-common-card-references">
-                      <span className="tag is-rounded">
-                        <a href={technology.url} className="has-text-danger">
-                          {technology.label}
-                        </a>
-                      </span>
-                    </span>
-                  ))}
                   {topics.map((topic: Topic) => (
                     <span className="bio-common-card-references">
                       <span className="tag is-rounded">
@@ -87,7 +67,10 @@ const ResourceCard = ({
               <div className="level-right">
                 <div className="level-item">
                   <div className="level-right is-size-7 has-text-grey">
-                    <time className="level-item bio-common-card-published" datetime={displayDate}>
+                    <time
+                      className="level-item bio-common-card-published"
+                      datetime={displayDate}
+                    >
                       {displayDate}
                     </time>
                   </div>

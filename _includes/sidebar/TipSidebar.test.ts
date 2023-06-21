@@ -4,8 +4,6 @@ import { screen } from "@testing-library/dom";
 import TipSidebar, { TipSidebarProps } from "./TipSidebar.11ty";
 import fixtures from "../fixtures";
 import { Author } from "../references/author/AuthorModels";
-import { Product } from "../references/product/ProductModels";
-import { Technology } from "../references/technology/TechnologyModels";
 import { Topic } from "../references/topic/TopicModels";
 import { References } from "../../src/ReferenceModels";
 
@@ -15,8 +13,6 @@ export const tipSidebarProps: TipSidebarProps = {
   displayDate: tip.displayDate,
   author: references.author as Author,
   hasBody: true,
-  products: references.products as Product[],
-  technologies: references.technologies as Technology[],
   topics: references.topics as Topic[],
   longVideo: "something",
   seealsos: [
@@ -31,12 +27,10 @@ test("TipSidebar", () => {
   // Published
   expect(screen.getByText("Some Author")).to.exist;
 
-  // Technologies, Products, Topics
-  expect(screen.getByText(fixtures.technologies[0].title)).to.exist;
-  // expect(screen.getByText(fixtures.products[1].title)).to.exist;
-  // expect(screen.getByText(fixtures.topics[0].title)).to.exist;
+  // Topics
+  expect(screen.getByText(fixtures.topics[0].title)).to.exist;
 
-  // Doclinks
+  // Doc links
   expect(screen.getByText("In Depth")).to.exist;
   expect(screen.getByText("See Also")).to.exist;
 });

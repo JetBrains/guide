@@ -9,8 +9,6 @@ const data: TipFrontmatter = {
   date: fixtures.date,
   resourceType: "tip",
   author: "sa",
-  products: ["sp", "ap"],
-  technologies: ["st", "at"],
   topics: ["st", "at"],
   thumbnail: "thumbnail.png",
 };

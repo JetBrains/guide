@@ -34,7 +34,7 @@ test("should NOT have resolved references", () => {
   expect(tip0 && tip0.references).not.to.exist;
 });
 test("should have resolved references", () => {
-  const { tipItems, authorItems, topicItems, technologyItems } = fixtures;
+  const { tipItems, authorItems, topicItems } = fixtures;
   const { resolvedCollections } = fixtures;
   const tip0 = resolvedCollections.allResources.get(tipItems[0].page.url);
   if (tip0 && tip0.references) {

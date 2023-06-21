@@ -6,14 +6,6 @@ import {
 import { Resource } from "../src/ResourceModels";
 import { ReferenceFrontmatter } from "../src/ReferenceModels";
 import { Author, AuthorFrontmatter } from "./references/author/AuthorModels";
-import {
-  Product,
-  ProductFrontmatter,
-} from "./references/product/ProductModels";
-import {
-  Technology,
-  TechnologyFrontmatter,
-} from "./references/technology/TechnologyModels";
 import { Topic, TopicFrontmatter } from "./references/topic/TopicModels";
 import { Tip, TipFrontmatter } from "./resources/tip/TipModels";
 import {
@@ -43,8 +35,6 @@ export const resourceCollections = {
 };
 export const referenceCollections = {
   author: Author,
-  product: Product,
-  technology: Technology,
   topic: Topic,
 };
 
@@ -83,9 +73,7 @@ export async function registerIncludes(
         TutorialStep: TutorialStepFrontmatter,
         Playlist: PlaylistFrontmatter,
         Author: AuthorFrontmatter,
-        Technology: TechnologyFrontmatter,
         Topic: TopicFrontmatter,
-        Product: ProductFrontmatter,
       };
       const schemasOutputPath = path.join(
         "..",

@@ -13,8 +13,8 @@ const data: TopicFrontmatter = {
 };
 const page: EleventyPage = {
   fileSlug: "sa",
-  url: "/technologies/st/",
-  inputPath: `${rootPath}/technologies/st/index.md`,
+  url: "/topics/st/",
+  inputPath: `${rootPath}/topics/st/index.md`,
   date: fixtures.date,
 };
 
