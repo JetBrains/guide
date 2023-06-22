@@ -6,7 +6,6 @@ import {
   getRoot,
   MarkdownFrontmatter,
   parseFrontmatter,
-  writeCleanResources,
 } from "./cleaner";
 
 describe("Content Cleaning", () => {
@@ -79,9 +78,9 @@ describe("Content Cleaning", () => {
   });
 });
 
-test("actually execute the cleaning", () => {
+test.skip("actually execute the cleaning", () => {
   // TODO Should not have to execute as a test, but the
   //   whole TS/ESM thing interfered with running from
   //   package.json or the command line.
-  writeCleanResources();
+  // writeCleanResources();
 });

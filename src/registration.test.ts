@@ -132,7 +132,7 @@ describe("Resolve References", () => {
     if (tip1.references) {
       const refAuthor = tip1.references.author;
       expect(refAuthor.title).to.equal(authorItem1.data.title);
-      expect(tip1.references.products).to.exist;
+      expect(tip1.references.topics).to.exist;
     }
   });
 });

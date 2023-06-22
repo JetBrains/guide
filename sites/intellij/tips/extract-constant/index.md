@@ -23,7 +23,6 @@ leadin: >
   (macOS), or **Ctrl+Alt+C** (Windows/Linux), to extract it.
 
 
-  Extracting constants can be useful in improving the readability of your
-  code.
+  Extracting constants can be useful in improving the readability of your code.
 ---
 
