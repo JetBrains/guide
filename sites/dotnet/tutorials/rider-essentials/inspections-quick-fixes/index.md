@@ -2,15 +2,20 @@
 type: TutorialStep
 date: 2020-07-15
 title: Inspections and Quick-Fixes in Rider
-technologies: [.net, csharp]
-topics: [completion, inspections]
-products: [rider]
+topics:
+  - .net
+  - completion
+  - csharp
+  - inspections
+  - rider
 author: matkoch
-subtitle: Dive into inspections and quick-fixes, nullability inspections, the Heap Allocations Viewer plugin, and more!
+subtitle: >-
+  Dive into inspections and quick-fixes, nullability inspections, the Heap
+  Allocations Viewer plugin, and more!
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/Cqvxrj9aq_E
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/Cqvxrj9aq_E'
 ---
 
 ### Inspections, Quick-Fixes and Context Actions

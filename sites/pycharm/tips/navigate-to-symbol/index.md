@@ -2,25 +2,27 @@
 hasBody: true
 date: 2018-11-08
 title: Navigate to Symbol
-technologies: []
-topics: [navigation]
+topics:
+  - navigation
 author: pwe
-subtitle: Navigate your project by code, not files.
+subtitle: 'Navigate your project by code, not files.'
 seealso:
   - title: Navigating by Name
-    href: https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#9a8d021a
+    href: >-
+      https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#9a8d021a
   - title: Navigating Tips and Tricks
-    href: https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#tips
+    href: >-
+      https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#tips
   - title: Navigation in Source Code
-    href: https://www.jetbrains.com/help/pycharm/navigation-in-source-code.html
+    href: 'https://www.jetbrains.com/help/pycharm/navigation-in-source-code.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=Wto7hdfx-Sg
+  url: 'https://www.youtube.com/watch?v=Wto7hdfx-Sg'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/1QoP0U8xg98
+  url: 'https://youtu.be/1QoP0U8xg98'
 leadin: |
   *The best way to move around the code in your project.*
 

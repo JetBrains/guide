@@ -2,11 +2,17 @@
 type: TutorialStep
 date: 2021-03-29
 title: Working With Databases
-technologies: [.net,csharp]
-products: [rider,resharper]
-topics: [ide, data]
+topics:
+  - .net
+  - csharp
+  - data
+  - ide
+  - resharper
+  - rider
 author: khalidabuhakmeh
-subtitle: Effectively working with databases in Rider from a Visual Studio + ReSharper user's perspective.
+subtitle: >-
+  Effectively working with databases in Rider from a Visual Studio + ReSharper
+  user's perspective.
 thumbnail: ./thumbnail.png
 ---
 

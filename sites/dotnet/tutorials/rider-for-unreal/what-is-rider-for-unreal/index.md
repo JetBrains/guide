@@ -2,17 +2,19 @@
 type: TutorialStep
 date: 2023-04-04
 title: What is Rider for Unreal?
-technologies: [unreal]
-topics: [gaming,ide]
-products: [rider]
+topics:
+  - gaming
+  - ide
+  - rider
+  - unreal
 author: citizenmatt
 subtitle: Learn about using Rider for your Unreal Engine games.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=_bvrngxZYds
-    start: 187
-    end: 475
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
+  start: 187
+  end: 475
 ---
 
 Rider is a fast and powerful IDE for cross-platform Unreal Engine development. Rider gives you insights on Blueprints, assists with the reflection mechanism, and helps ensure good coding style and accuracy.

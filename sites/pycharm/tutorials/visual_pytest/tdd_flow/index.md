@@ -2,14 +2,17 @@
 type: TutorialStep
 date: 2020-06-10
 title: Getting Into the TDD Flow
-technologies: [pytest]
-topics: [testing]
+topics:
+  - pytest
+  - testing
 author: pwe
-subtitle: Setup your PyCharm project to help get into the flow of Test-Driven Development (TDD).
+subtitle: >-
+  Setup your PyCharm project to help get into the flow of Test-Driven
+  Development (TDD).
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/kwj6Hk1kJYU
+  url: 'https://youtu.be/kwj6Hk1kJYU'
 ---
 
 Players have parents, also known as guardians. 

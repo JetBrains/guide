@@ -1,15 +1,17 @@
 ---
 date: 2021-05-24
-title: 'Convert JSON to Go types via copy-paste'
-technologies: [go]
-topics: [editing]
+title: Convert JSON to Go types via copy-paste
+topics:
+  - editing
+  - go
 author: dlsniper
-subtitle: 'Converting a JSON response to a Go type has never been faster than this'
+subtitle: Converting a JSON response to a Go type has never been faster than this
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=SQAWOeLYwr4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=24
+  url: >-
+    https://www.youtube.com/watch?v=SQAWOeLYwr4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=24
 leadin: |
   **How to use:**
   Copy your JSON data in the clipboard then paste it in an empty 
@@ -20,3 +22,4 @@ leadin: |
 
   <span class="tag is-rounded">New in 2021.1</span>
 ---
+

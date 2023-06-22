@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2022-10-03
 title: Shortcuts
-technologies: []
 topics: []
 author: md
 subtitle: Ways to learn shortcuts
 thumbnail: ./thumbnail.png
-
 ---
 
 We recommend using shortcuts as much as possible when presenting. This is easier to do during a presentation than using a mouse or trackpad, especially if you get nervous and your hands might get slippery. There are several ways to learn shortcuts.

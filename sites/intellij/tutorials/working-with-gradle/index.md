@@ -1,10 +1,12 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-05-14
 title: Working with Gradle
-technologies: [java, gradle]
-topics: [build]
+topics:
+  - build
+  - gradle
+  - java
 author: tg
 subtitle: Understand how IntelliJ IDEA integrates with Gradle.
 thumbnail: ./thumbnail.png

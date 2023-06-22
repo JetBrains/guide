@@ -1,13 +1,18 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2020-05-27
 title: Getting Started With ASP.NET
-technologies: [asp.net]
-topics: [web, ide]
-products: [rider,resharper]
+topics:
+  - asp.net
+  - ide
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
-subtitle: A set of short videos to understand the basic landscape of an ASP.NET Application.
+subtitle: >-
+  A set of short videos to understand the basic landscape of an ASP.NET
+  Application.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./get-started-aspnet/

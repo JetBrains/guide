@@ -2,23 +2,24 @@
 hasBody: true
 date: 2018-11-04
 title: Better Autocomplete Results in Angular Templates
-technologies: [angular]
-topics: [editing]
+topics:
+  - angular
+  - editing
 author: pwe
 subtitle: Narrow the universe of Angular template completions to those that matter.
 seealso:
   - title: PyCharm Help for Angular
-    href: https://www.jetbrains.com/help/pycharm/angular.html
+    href: 'https://www.jetbrains.com/help/pycharm/angular.html'
   - title: WebStorm Blog Post Announcing Improvements
-    href: https://blog.jetbrains.com/webstorm/2018/09/webstorm-2018-3-eap-3/
+    href: 'https://blog.jetbrains.com/webstorm/2018/09/webstorm-2018-3-eap-3/'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=YhCMWZfQP-w
+  url: 'https://www.youtube.com/watch?v=YhCMWZfQP-w'
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=JUmIiZpazic
+  url: 'https://www.youtube.com/watch?v=JUmIiZpazic'
 leadin: |
   *Angular template autocomplete gives tons of choices. Which one is best?*
 

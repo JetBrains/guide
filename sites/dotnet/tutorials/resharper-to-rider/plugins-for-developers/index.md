@@ -2,11 +2,16 @@
 type: TutorialStep
 date: 2021-03-29
 title: Plugins
-technologies: [.net,csharp]
-products: [rider,resharper]
-topics: [ide]
+topics:
+  - .net
+  - csharp
+  - ide
+  - resharper
+  - rider
 author: khalidabuhakmeh
-subtitle: Learn the basics of the Rider plugin marketplace from a Visual Studio + ReSharper user's perspective.
+subtitle: >-
+  Learn the basics of the Rider plugin marketplace from a Visual Studio +
+  ReSharper user's perspective.
 thumbnail: ./thumbnail.png
 ---
 

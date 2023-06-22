@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2022-10-03
 title: Summary and Shortcuts
-technologies: []
 topics: []
 author: md
 subtitle: Presenting with IntelliJ IDEA Summary
 thumbnail: ./thumbnail.png
-
 ---
 
 Now we know several tricks that will level up our presentation skills with IntelliJ IDEA.

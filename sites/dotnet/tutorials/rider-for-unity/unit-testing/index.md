@@ -2,17 +2,20 @@
 type: TutorialStep
 date: 2023-04-04
 title: Unit testing
-technologies: [.net,unity]
-topics: [gaming,testing]
-products: [rider]
+topics:
+  - .net
+  - gaming
+  - rider
+  - testing
+  - unity
 author: citizenmatt
 subtitle: What is RiderFlow? And where to find it?
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=gNTOFr_TQCg
-    start: 2413
-    end: 2625
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
+  start: 2413
+  end: 2625
 ---
 
 To work with Unity tests, use the [Unit Tests window](https://www.jetbrains.com/help/rider/Reference_Windows_Unit_Tests.html).

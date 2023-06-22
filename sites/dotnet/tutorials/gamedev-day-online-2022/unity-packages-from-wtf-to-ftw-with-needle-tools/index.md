@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2022-10-27
 title: 'Unity Packages: From WTF to FTW with Needle Tools'
-technologies: [.net,unity]
-products: [rider,resharper]
-topics: [gaming]
+topics:
+  - .net
+  - gaming
+  - resharper
+  - rider
+  - unity
 author: maartenba
 subtitle: Felix Herbst
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./thumbnail.png
-    url: https://youtu.be/zSfrC_MskxI
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/zSfrC_MskxI'
 ---
 
 Love them or hate them, Unity packages are quite a topic. Used correctly, they can bring everything with project creation, feature development, and asset management to the next level. Learn how Needle structures, uses, and maintains packages to turn the engine up to 11. We’ll go from “what’s a package in Unity” to “crazy things you can do with them” in short succession.

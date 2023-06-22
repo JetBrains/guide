@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-06-02
 title: Calling a Custom Query
-technologies: []
 topics: []
 author: da
 subtitle: Query the database for employees with spaces in their last name.
 thumbnail: ./thumbnail.png
-
 ---
 
 Let's say we want to query the database for all employees that have a space in their last name.

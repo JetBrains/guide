@@ -2,14 +2,13 @@
 type: TutorialStep
 date: 2021-08-09
 title: Final Steps
-technologies: []
 topics: []
 author: hs
 subtitle: Wrapping the migration up
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/F8UTTTDtbH0?start=808
+  url: 'https://youtu.be/F8UTTTDtbH0?start=808'
 ---
 Now we've removed all references to JUnit 4 classes and functionality, we can remove the vintage engine and use just the modern JUnit 5 test engine. Load the maven changes with **⇧⌘I** (macOS), or **Ctrl+Shift+O** (Windows/Linux) and rebuild the project **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux), to see it all compiles.   
 

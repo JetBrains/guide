@@ -2,14 +2,13 @@
 type: TutorialStep
 date: 2021-01-01
 title: Creating and running a test
-technologies: []
 topics: []
 author: hs
 subtitle: Getting a JUnit 5 Test running
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/we3zJE3hlWE?start=102
+  url: 'https://youtu.be/we3zJE3hlWE?start=102'
 ---
 
 ## Creating a running a Junit 5 Test

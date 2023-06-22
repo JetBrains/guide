@@ -2,15 +2,19 @@
 type: TutorialStep
 date: 2021-10-04
 title: Class Components With State
-technologies: [react, typescript, jest]
-topics: []
+topics:
+  - jest
+  - react
+  - typescript
 author: pwe
-subtitle: Make a very simple class component with local counter state, then make a type definition for that state.
+subtitle: >-
+  Make a very simple class component with local counter state, then make a type
+  definition for that state.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/21-VMTmiV8E
+  url: 'https://youtu.be/21-VMTmiV8E'
 ---
 
 In [Class Components With Props](../class_props/) we made a `Counter` child component using a class, with one property passed in. 

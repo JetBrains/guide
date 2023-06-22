@@ -2,15 +2,17 @@
 type: TutorialStep
 date: 2021-03-01
 title: Navigating Code with ReSharper
-technologies: [.net, csharp]
-topics: [navigation]
-products: [resharper]
+topics:
+  - .net
+  - csharp
+  - navigation
+  - resharper
 author: citizenmatt
 subtitle: Let's look at some fast and easy ways to navigate around a code base.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/-LlVzyzO3mA
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/-LlVzyzO3mA'
 ---
 
 ### Navigating Code in ReSharper

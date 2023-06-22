@@ -2,10 +2,10 @@
 type: TutorialStep
 date: 2021-05-13
 title: Linking Between Sites with Intersphinx
-technologies: [sphinx]
-topics: []
+topics:
+  - sphinx
 author: pwe
-subtitle: Rich structure and linking, between sites.
+subtitle: 'Rich structure and linking, between sites.'
 thumbnail: thumbnail.png
 ---
 

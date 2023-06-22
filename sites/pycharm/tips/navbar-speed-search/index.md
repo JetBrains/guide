@@ -2,32 +2,37 @@
 hasBody: true
 date: 2019-01-23
 title: Narrow Navigation Bar With Speed Search
-technologies: []
-topics: [navigation, navigationbar, speedsearch]
+topics:
+  - navigation
+  - navigationbar
+  - speedsearch
 author: pwe
-subtitle: Narrow and select from a long folder listing Navigation Bar by typing a speed search.
+subtitle: >-
+  Narrow and select from a long folder listing Navigation Bar by typing a speed
+  search.
 seealso:
   - title: Speed Search in Tool Windows
-    href: https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html
+    href: >-
+      https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html
   - title: Navigation bar
-    href: https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
+    href: >-
+      https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
   - title: Navigating Tips and Tricks
-    href: https://www.jetbrains.com/help/pycharm/navigation-bar.html
+    href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=PRPGmkGrMGI
+  url: 'https://www.youtube.com/watch?v=PRPGmkGrMGI'
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=lr1IX8qAqdU
+  url: 'https://www.youtube.com/watch?v=lr1IX8qAqdU'
 leadin: |
-    *Want to quickly select a file in a directory, without the mouse?*
+  *Want to quickly select a file in a directory, without the mouse?*
 
-    Want to really move fast through listings? Speed search is the all-purpose 
-    facility for narrowing to what you're looking for. Parts of strings, 
-    punctuation, file extensions...whatever it takes to filter down the list.
-
+  Want to really move fast through listings? Speed search is the all-purpose 
+  facility for narrowing to what you're looking for. Parts of strings, 
+  punctuation, file extensions...whatever it takes to filter down the list.
 ---
 
 We've discussed getting into the flow by reducing UI clutter and being 

@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2022-10-03
 title: Find action
-technologies: []
 topics: []
 author: md
 subtitle: How to find any action when and where you need it
 thumbnail: ./thumbnail.png
-
 ---
 
 If you want to do something, but don't remember the shortcut or menu option, use **Find Action**.

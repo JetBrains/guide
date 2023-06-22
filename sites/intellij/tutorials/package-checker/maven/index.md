@@ -2,12 +2,15 @@
 type: TutorialStep
 date: 2023-01-27
 title: Maven projects
-technologies: [maven]
-topics: [build,packagesearch,security,ultimate]
+topics:
+  - build
+  - maven
+  - packagesearch
+  - security
+  - ultimate
 author: md
 subtitle: View vulnerable dependencies in Maven projects
 thumbnail: ./thumbnail.png
-
 ---
 
 There are several ways to view known vulnerabilities for the dependencies to your project.

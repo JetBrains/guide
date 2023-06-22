@@ -2,15 +2,19 @@
 type: TutorialStep
 date: 2020-07-15
 title: Debugging code with Rider
-technologies: [.net, csharp]
-topics: [debugging]
-products: [rider]
+topics:
+  - .net
+  - csharp
+  - debugging
+  - rider
 author: khalidabuhakmeh
-subtitle: Examine the runtime behavior of your application, identify problematic code, run through code step by step.
+subtitle: >-
+  Examine the runtime behavior of your application, identify problematic code,
+  run through code step by step.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/F3yN9HirSQo
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/F3yN9HirSQo'
 ---
 
 ### Step through Code, Inspect what is Going On

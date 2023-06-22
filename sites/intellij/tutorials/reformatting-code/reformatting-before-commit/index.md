@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-09-06
 title: Reformatting code before you commit it
-technologies: []
 topics: []
 author: hs
 subtitle: Ensure your code is always reformatted before you commit it to VCS
 thumbnail: ./thumbnail.png
-
 ---
 
 ## Reformatting Before Commit  

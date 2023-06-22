@@ -1,10 +1,10 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2022-09-15
 title: Marco Codes - SSH
-technologies: []
-topics: [security]
+topics:
+  - security
 author: hs
 subtitle: Working with SSH
 thumbnail: ./thumbnail.png
@@ -15,5 +15,5 @@ tutorialItems:
   - ./github-git-keys/
   - ./ssh-forwarding-tunnels-agents/
   - ./summary/
-
 ---
+

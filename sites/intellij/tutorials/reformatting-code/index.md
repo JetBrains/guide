@@ -1,10 +1,12 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-09-06
 title: Reformatting Code in IntelliJ IDEA
-technologies: [java]
-topics: [settings, tricks]
+topics:
+  - java
+  - settings
+  - tricks
 author: hs
 subtitle: Why and how you can reformat code in your projects
 thumbnail: ./thumbnail.png
@@ -20,5 +22,5 @@ tutorialItems:
   - ./working-with-editor-configs/
   - ./reformatting-example/
   - ./summary/
-
 ---
+

@@ -2,15 +2,16 @@
 type: TutorialStep
 date: 2021-10-04
 title: Debugging During Testing With NodeJS
-technologies: [nodejs, jest]
-topics: []
+topics:
+  - jest
+  - nodejs
 author: pwe
 subtitle: Use the visual debugger in the IDE for smarter TDD.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/r1kwXZnO8gw
+  url: 'https://youtu.be/r1kwXZnO8gw'
 ---
 
 In the [previous step](../testing/) we used testing as a way to develop our component without switching to a browser.

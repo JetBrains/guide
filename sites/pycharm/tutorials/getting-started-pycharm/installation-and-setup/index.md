@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2023-03-30
 title: Installation and Setup
-technologies: []
 topics: []
 author: hs
 subtitle: How to install and set up PyCharm.
@@ -10,7 +9,7 @@ thumbnail: thumbnail.png
 videoBottom: true
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/2EB8siO-_OM
+  url: 'https://youtu.be/2EB8siO-_OM'
 ---
 
 Let’s find and download PyCharm Professional Edition which we’ll be using in this series. PyCharm has a free 1-month trial, but feel free to follow along with your PyCharm Community Edition if you prefer.

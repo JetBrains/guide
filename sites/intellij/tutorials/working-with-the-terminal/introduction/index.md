@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-08-30
 title: Introduction
-technologies: []
 topics: []
 author: hs
 subtitle: Let's take a tour of the Terminal Window in IntelliJ IDEA
 thumbnail: ./thumbnail.png
-
 ---
 ## Using the Terminal in IntelliJ IDEA  
 In this tutorial we’re going to take a look at IntelliJ IDEA’s built-in terminal. This performs the same function as your operating system’s terminal or command feature, but using the terminal inside IntelliJ IDEA has a number of benefits.

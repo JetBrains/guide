@@ -2,28 +2,28 @@
 hasBody: true
 date: 2019-04-15
 title: Conditional Breakpoints
-technologies: []
-topics: [debugging]
+topics:
+  - debugging
 author: pwe
 subtitle: Speed up your debugging by stopping execution only when you want to.
 seealso:
   - title: Breakpoint properties
-    href: https://www.jetbrains.com/help/pycharm/using-breakpoints.html#breakpoint-properties
+    href: >-
+      https://www.jetbrains.com/help/pycharm/using-breakpoints.html#breakpoint-properties
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=hlffBFXtb6g
+  url: 'https://www.youtube.com/watch?v=hlffBFXtb6g'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/aIlXb2QpxXc
+  url: 'https://youtu.be/aIlXb2QpxXc'
 leadin: |
-    *Stop stepping.*    
+  *Stop stepping.*    
 
-    Have a breakpoint in a loop and find yourself clicking `Continue` 
-    repeatedly? Change your breakpoint to only stop when a condition is 
-    met.
-
+  Have a breakpoint in a loop and find yourself clicking `Continue` 
+  repeatedly? Change your breakpoint to only stop when a condition is 
+  met.
 ---
 
 Debugging? Super-useful. Visual debugging? Super-super-useful. Stepping 

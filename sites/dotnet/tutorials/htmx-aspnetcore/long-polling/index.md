@@ -2,15 +2,21 @@
 type: TutorialStep
 date: 2022-04-27
 title: Long-Polling to get recent updates
-technologies: [.net, asp.net]
-products: [rider,resharper]
-topics: [data,web,editing,inspections]
+topics:
+  - .net
+  - asp.net
+  - data
+  - editing
+  - inspections
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
 subtitle: Retrieve updated information from the server
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./poster.png
-    url: https://youtu.be/3id6dBL73-A
+  poster: ./poster.png
+  url: 'https://youtu.be/3id6dBL73-A'
 ---
 
 Long polling is a technique to retrieve updated information from the server at a known time interval. Upon receiving new information, you can swap it into a known target element, and a user perceives that information is updating in near real-time. The method has its advantages and drawbacks.

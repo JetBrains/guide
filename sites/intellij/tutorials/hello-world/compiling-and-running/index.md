@@ -1,15 +1,14 @@
 ---
 type: TutorialStep
-date: 2021-25-08
+date: 2023-01-08
 title: Compiling and Running
-technologies: []
 topics: []
 author: hs
 subtitle: Use IntelliJ IDEA to run your Hello World application.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/H_XxH66lm3U?start=371
+  url: 'https://youtu.be/H_XxH66lm3U?start=371'
 ---
 
 

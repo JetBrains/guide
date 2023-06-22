@@ -1,6 +1,6 @@
 ---
 title: Build
-subtitle: Work effectively with build tools like Maven and Gradle. 
+subtitle: Work effectively with build tools like Maven and Gradle.
 accent: primary
 icon: fas fa-hammer
 ---

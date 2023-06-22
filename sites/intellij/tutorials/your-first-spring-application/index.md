@@ -1,12 +1,19 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-05-20
 title: Your First Spring Boot Application
-technologies: [java, spring]
-topics: [gettingstarted, ultimate]
+topics:
+  - gettingstarted
+  - java
+  - spring
+  - ultimate
 author: hs
-subtitle: In this tutorial we will use IntelliJ IDEA to create your first "Hello World" Spring Boot application. We'll also discuss what's in your project and why. Spring Boot is a way to create Spring applications easily with some abstractions, some of which we'll touch on in this tutorial. 
+subtitle: >-
+  In this tutorial we will use IntelliJ IDEA to create your first "Hello World"
+  Spring Boot application. We'll also discuss what's in your project and why.
+  Spring Boot is a way to create Spring applications easily with some
+  abstractions, some of which we'll touch on in this tutorial.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./creating-spring-boot-application/

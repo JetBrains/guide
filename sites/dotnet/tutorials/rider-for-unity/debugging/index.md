@@ -2,17 +2,24 @@
 type: TutorialStep
 date: 2023-04-04
 title: Debugging Unity games
-technologies: [.net,unity]
-topics: [gaming,ide,editing,debugging]
-products: [rider]
+topics:
+  - .net
+  - debugging
+  - editing
+  - gaming
+  - ide
+  - rider
+  - unity
 author: citizenmatt
-subtitle: Suspend execution and inspect variables. Use pausepoints to visually inspect your scene.
+subtitle: >-
+  Suspend execution and inspect variables. Use pausepoints to visually inspect
+  your scene.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=gNTOFr_TQCg
-    start: 2044
-    end: 2413
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
+  start: 2044
+  end: 2413
 ---
 
 Developing in Unity, you need to live in two worlds – the Unity Editor and your C# editor.

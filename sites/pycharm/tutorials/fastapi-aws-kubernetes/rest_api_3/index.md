@@ -2,14 +2,17 @@
 type: TutorialStep
 date: 2022-01-02
 title: REST API - Part III
-technologies: [fastapi, kubernetes, aws]
-topics: [python]
+topics:
+  - aws
+  - fastapi
+  - kubernetes
+  - python
 author: mm
 subtitle: Performing CRUD operations in Products & Category Module.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://www.youtube.com/watch?v=KsTKgi26CgU
+  url: 'https://www.youtube.com/watch?v=KsTKgi26CgU'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.

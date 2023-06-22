@@ -1,23 +1,25 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-05-13
 title: Static Sites With Sphinx and Markdown
-technologies: [sphinx]
-topics: []
+topics:
+  - sphinx
 author: pwe
-subtitle: Sphinx is great for docs. But it's also great for information-rich websites. With MyST, you can use Markdown with Sphinx.
+subtitle: >-
+  Sphinx is great for docs. But it's also great for information-rich websites.
+  With MyST, you can use Markdown with Sphinx.
 thumbnail: ./thumbnail.jpeg
 tutorialItems:
-- ./setup/
-- ./basic_formatting/
-- ./more_authoring/
-- ./linking/
-- ./documentation/
-- ./intersphinx/
-- ./customizing/
-- ./design/
-- ./advanced/
+  - ./setup/
+  - ./basic_formatting/
+  - ./more_authoring/
+  - ./linking/
+  - ./documentation/
+  - ./intersphinx/
+  - ./customizing/
+  - ./design/
+  - ./advanced/
 ---
 
 Everybody knows [Sphinx](https://www.sphinx-doc.org/en/master/) for documenting projects, Python and otherwise.

@@ -2,15 +2,16 @@
 type: TutorialStep
 date: 2020-06-05
 title: Basics of Entity Framework Core
-technologies: [.net]
-products: [rider]
-topics: [data]
+topics:
+  - .net
+  - data
+  - rider
 author: khalidabuhakmeh
 subtitle: Working with databases using an object relational mapper
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/F699iNw5Wao    
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/F699iNw5Wao'
 ---
 
 Entity Framework Core is what's known as an **Object Relational Mapper** (ORM). Created by Microsoft, the library allows developers to work abstractly with their database. The library comes with two distinct parts: the ORM and the CLI tools. Entity Framework Core supports an array of database options, with the most popular being SQL Server.

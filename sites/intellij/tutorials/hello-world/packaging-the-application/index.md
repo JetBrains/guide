@@ -1,15 +1,14 @@
 ---
 type: TutorialStep
-date: 2021-24-08
+date: 2022-12-08
 title: Packaging the Application
-technologies: []
 topics: []
 author: hs
 subtitle: We can package the application into a Java ARchive file (JAR).
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/H_XxH66lm3U?start=494
+  url: 'https://youtu.be/H_XxH66lm3U?start=494'
 ---
 
 When the code is ready, we can [package our application in a JAR](https://www.jetbrains.com/help/idea/compiling-applications.html#package_into_jar). JAR files are often used to deploy an application to the production server. Once a JAR file has been built, it is called an artifact. Let's take look at how to create artifacts in IntelliJ IDEA. 

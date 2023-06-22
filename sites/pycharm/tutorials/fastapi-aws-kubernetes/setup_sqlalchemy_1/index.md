@@ -2,14 +2,17 @@
 type: TutorialStep
 date: 2022-01-02
 title: Database Setup - Part I
-technologies: [fastapi, kubernetes, aws]
-topics: [python]
+topics:
+  - aws
+  - fastapi
+  - kubernetes
+  - python
 author: mm
 subtitle: Configuring database connection with SQLAlchemy and FastAPI.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://www.youtube.com/watch?v=aOy_pcNnjjM
+  url: 'https://www.youtube.com/watch?v=aOy_pcNnjjM'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.

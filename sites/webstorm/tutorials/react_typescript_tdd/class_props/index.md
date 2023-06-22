@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2021-10-04
 title: Class Components With Props
-technologies: [react, typescript]
-topics: []
+topics:
+  - react
+  - typescript
 author: pwe
-subtitle: Make a simple class component with a single prop, again with a TypeScript interface describing the props.
+subtitle: >-
+  Make a simple class component with a single prop, again with a TypeScript
+  interface describing the props.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/HYmoeUF9ZH0
+  url: 'https://youtu.be/HYmoeUF9ZH0'
 ---
 
 In the previous step we made a "dumb" presentational component with one property.

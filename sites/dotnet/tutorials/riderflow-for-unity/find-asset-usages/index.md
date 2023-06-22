@@ -2,17 +2,20 @@
 type: TutorialStep
 date: 2023-04-02
 title: Find and Show Asset Usages
-technologies: [.net,unity]
-topics: [gaming,navigation]
-products: [riderflow]
+topics:
+  - .net
+  - gaming
+  - navigation
+  - riderflow
+  - unity
 author: citizenmatt
 subtitle: Visually understand the scene structure and where an asset is used.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=75r6TRwCc_o
-    start: 1046
-    end: 1170
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=75r6TRwCc_o'
+  start: 1046
+  end: 1170
 ---
 
 ### Find Usages

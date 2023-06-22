@@ -1,12 +1,14 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-04-09
 title: Developing Django Application using AWS
-technologies: [django,aws]
-topics: [python]
+topics:
+  - aws
+  - django
+  - python
 author: mm
-subtitle: Run, build, test and deploy Django Application in PyCharm using NICE DCV.
+subtitle: 'Run, build, test and deploy Django Application in PyCharm using NICE DCV.'
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2021-05-12
 title: Best Practices for Using async and await
-technologies: [.net]
-products: [rider,resharper]
-topics: [editing, ide]
+topics:
+  - .net
+  - editing
+  - ide
+  - resharper
+  - rider
 author: maartenba
 subtitle: Damir Arh
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/4JHwBX_qQE0
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/4JHwBX_qQE0'
 ---
 
 The async and await keywords have been a part of the C# programming language for a long time. Despite that, they still hide traps that not only beginners but also more experienced developers occasionally fall into.

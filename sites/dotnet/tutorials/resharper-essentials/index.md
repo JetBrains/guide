@@ -1,13 +1,16 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-03-01
 title: ReSharper Essentials
-technologies: [.net]
-topics: [ide]
-products: [resharper]
+topics:
+  - .net
+  - ide
+  - resharper
 author: maartenba
-subtitle: Together with our developer advocates, learn how ReSharper can help you write better code, faster.
+subtitle: >-
+  Together with our developer advocates, learn how ReSharper can help you write
+  better code, faster.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

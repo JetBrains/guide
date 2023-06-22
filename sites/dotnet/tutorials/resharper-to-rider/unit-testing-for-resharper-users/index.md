@@ -2,11 +2,17 @@
 type: TutorialStep
 date: 2021-03-29
 title: Unit Testing For ReSharper Users
-technologies: [.net,csharp]
-products: [rider, resharper, dotcover]
-topics: [ide]
+topics:
+  - .net
+  - csharp
+  - dotcover
+  - ide
+  - resharper
+  - rider
 author: khalidabuhakmeh
-subtitle: Learn the basics of the unit testing in Rider from a Visual Studio + ReSharper user's perspective.
+subtitle: >-
+  Learn the basics of the unit testing in Rider from a Visual Studio + ReSharper
+  user's perspective.
 thumbnail: ./thumbnail.png
 ---
 

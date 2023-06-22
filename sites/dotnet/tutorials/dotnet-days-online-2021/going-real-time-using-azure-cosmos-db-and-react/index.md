@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2021-05-11
 title: Going Real Time Using Azure CosmosDB and React
-technologies: [.net]
-products: [rider,resharper]
-topics: [web, ide]
+topics:
+  - .net
+  - ide
+  - resharper
+  - rider
+  - web
 author: maartenba
 subtitle: Olena Borzenko
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/NbkiKdHV0KQ
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/NbkiKdHV0KQ'
 ---
 
 Traditionally, when building SPA applications it feels a lot like we are looking at the moon. On the light side, we have the shiny and pretty UI, which everyone knows and loves. On the dark side, there is the complicated server-side logic behind the scenes we need to manage.

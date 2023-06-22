@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2021-06-20
 title: Summary
-technologies: []
 topics: []
 author: hs
 subtitle: Summary and shortcuts we used

@@ -1,16 +1,16 @@
 ---
 type: TutorialStep
 date: 2022-11-16
-title: Basic CRUD, HQL Queries, JPA and Criteria API
-technologies: []
+title: 'Basic CRUD, HQL Queries, JPA and Criteria API'
 topics: []
 author: hs
-subtitle: Overview of everything from CRUD, executing queries and using JPA with Hibernate
+subtitle: >-
+  Overview of everything from CRUD, executing queries and using JPA with
+  Hibernate
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=xHminZ9Dxm4&start=497s
-
+  url: 'https://www.youtube.com/watch?v=xHminZ9Dxm4&start=497s'
 ---
 
 ## Intermediate Hibernate

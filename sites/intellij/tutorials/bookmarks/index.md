@@ -1,10 +1,10 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2023-02-06
 title: Bookmarks
-technologies: []
-topics: [tricks]
+topics:
+  - tricks
 author: md
 subtitle: Using bookmarks in IntelliJ IDEA
 thumbnail: ./thumbnail.png

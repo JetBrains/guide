@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2023-03-30
 title: Installing and Managing Python Packages
-technologies: []
 topics: []
 author: hs
 subtitle: How to work with Python packages in your project.
@@ -10,7 +9,7 @@ thumbnail: thumbnail.png
 videoBottom: true
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/EanHxYTYGio
+  url: 'https://youtu.be/EanHxYTYGio'
 ---
 
 In the previous step, we set up a Python interpreter for our project. But sometimes our project depends on Python packages and getting those setup can be tricky.

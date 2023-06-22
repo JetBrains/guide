@@ -1,15 +1,15 @@
 ---
 type: TutorialStep
 date: 2021-01-29
-title: Writing REST APIs 
-technologies: [aws]
-topics: []
+title: Writing REST APIs
+topics:
+  - aws
 author: mm
-subtitle: Beginning CRUD (Create, Read, Update, Delete) Operations
+subtitle: 'Beginning CRUD (Create, Read, Update, Delete) Operations'
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/3imrJukMeMQ
+  url: 'https://youtu.be/3imrJukMeMQ'
 ---
 
 Hello everyone, today I will be working on APIs basically focusing in CRUD operations.

@@ -2,14 +2,13 @@
 type: TutorialStep
 date: 2022-09-15
 title: Getting started with SSH
-technologies: []
 topics: []
 author: hs
-subtitle: SSH with the AWS GUI, the command line, SSH-Keygen, Authorized_Keys & SCP
+subtitle: 'SSH with the AWS GUI, the command line, SSH-Keygen, Authorized_Keys & SCP'
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=UnM4QAumuCQ&start=174s
+  url: 'https://www.youtube.com/watch?v=UnM4QAumuCQ&start=174s'
 ---
 
 # SSH Basics

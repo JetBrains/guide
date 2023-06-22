@@ -2,17 +2,21 @@
 type: TutorialStep
 date: 2023-04-02
 title: Replace Assets
-technologies: [.net,unity]
-topics: [gaming,refactoring,editing]
-products: [riderflow]
+topics:
+  - .net
+  - editing
+  - gaming
+  - refactoring
+  - riderflow
+  - unity
 author: citizenmatt
-subtitle: Replace assets on your scene. It's like refactoring, but visually!
+subtitle: 'Replace assets on your scene. It''s like refactoring, but visually!'
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=75r6TRwCc_o
-    start: 1170
-    end: 1266
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=75r6TRwCc_o'
+  start: 1170
+  end: 1266
 ---
 
 Replace objects refactoring is a unique RiderFlow feature that allows you to quickly replace one or more objects in a scene and automatically update any references.

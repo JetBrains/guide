@@ -2,14 +2,17 @@
 type: TutorialStep
 date: 2022-01-02
 title: References
-technologies: [fastapi, kubernetes, aws]
-topics: [python]
+topics:
+  - aws
+  - fastapi
+  - kubernetes
+  - python
 author: mm
 subtitle: Reference materials which helped to prepare this tutorial.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://www.youtube.com/watch?v=U2TAmZKeCRQ
+  url: 'https://www.youtube.com/watch?v=U2TAmZKeCRQ'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.

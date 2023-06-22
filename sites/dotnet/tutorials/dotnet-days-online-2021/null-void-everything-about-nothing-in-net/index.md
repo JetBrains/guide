@@ -2,15 +2,19 @@
 type: TutorialStep
 date: 2021-05-12
 title: Null & Void – Everything About Nothing in .NET
-technologies: [.net,csharp]
-products: [rider,resharper]
-topics: [editing, ide]
+topics:
+  - .net
+  - csharp
+  - editing
+  - ide
+  - resharper
+  - rider
 author: maartenba
 subtitle: Stefan Pölz
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/h7uVMKPHGtM
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/h7uVMKPHGtM'
 ---
 
 System.NullReferenceException: 'Object reference not set to an instance of an object.'

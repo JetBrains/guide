@@ -1,15 +1,14 @@
 ---
 type: TutorialStep
-date: 2021-24-08
+date: 2022-12-08
 title: Creating a Run Configuration
-technologies: []
 topics: []
 author: hs
 subtitle: Using an IntelliJ IDEA run configuration for the JAR file we created.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/H_XxH66lm3U?start=611
+  url: 'https://youtu.be/H_XxH66lm3U?start=611'
 ---
 
 Now you've created your JAR file, you need to run it to check that the behaviour is the same as running your main method in your `HelloWorld.java` file. To run your Java application as a JAR, you can create a new [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html). 

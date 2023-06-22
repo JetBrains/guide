@@ -2,15 +2,20 @@
 type: TutorialStep
 date: 2021-05-11
 title: C# Source Generators in Action
-technologies: [.net,csharp]
-products: [rider,resharper]
-topics: [editing, completion, ide]
+topics:
+  - .net
+  - completion
+  - csharp
+  - editing
+  - ide
+  - resharper
+  - rider
 author: maartenba
 subtitle: Andrey Dyatlov
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/052xutD86uI
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/052xutD86uI'
 ---
 
 C# 9 introduced the long-awaited compiler integrated code generation capability. If you've dreamed of getting rid of thousands of lines of code or have always wanted to try metaprogramming, now it's easier than ever!

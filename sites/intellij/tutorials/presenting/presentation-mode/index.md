@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2022-10-03
 title: Using Presentation Mode
-technologies: []
 topics: []
 author: md
 subtitle: How to enter and exit Presentation Mode
 thumbnail: ./thumbnail.png
-
 ---
 
 When presenting, you can use **Presentation Mode**. The IDE switches to full screen and everything is hidden except for the main editor window. The font size is increased, so it is easier to read from a distance. 

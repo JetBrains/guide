@@ -2,14 +2,17 @@
 type: TutorialStep
 date: 2022-01-02
 title: REST API - Part V
-technologies: [fastapi, kubernetes, aws]
-topics: [python]
+topics:
+  - aws
+  - fastapi
+  - kubernetes
+  - python
 author: mm
 subtitle: Performing CRUD operations in Orders along with placing a new order.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://www.youtube.com/watch?v=2CRq3FxVvQA
+  url: 'https://www.youtube.com/watch?v=2CRq3FxVvQA'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.

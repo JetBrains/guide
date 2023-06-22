@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-11-09
 title: Summary and Shortcuts
-technologies: []
 topics: []
 author: md
 subtitle: Git interactive rebase Summary
 thumbnail: ./thumbnail.png
-
 ---
 
 ## Summary 

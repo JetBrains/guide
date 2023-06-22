@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2023-03-30
 title: Configuring a Local Python Interpreter
-technologies: []
 topics: []
 author: hs
 subtitle: How to set up a local Python interpreter for your project.
@@ -10,7 +9,7 @@ thumbnail: thumbnail.png
 videoBottom: true
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/GTtpypvLoeY
+  url: 'https://youtu.be/GTtpypvLoeY'
 ---
 
 In the previous step, we customized the IDE. In this step we're going to learn how to set up a Python interpreter using PyCharm.

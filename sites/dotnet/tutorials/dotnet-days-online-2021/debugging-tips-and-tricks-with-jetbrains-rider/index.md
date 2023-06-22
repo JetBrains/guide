@@ -2,15 +2,19 @@
 type: TutorialStep
 date: 2021-05-12
 title: Debugging Tips and Tricks with JetBrains Rider
-technologies: [.net]
-products: [rider,resharper]
-topics: [debugging, running, ide]
+topics:
+  - .net
+  - debugging
+  - ide
+  - resharper
+  - rider
+  - running
 author: maartenba
 subtitle: Joseph Guadagno
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/KM27QGVwgas
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/KM27QGVwgas'
 ---
 
 Debugging issues within applications is challenging! In this session, I'll show how debugging works and demonstrate the many ways that JetBrains Rider enables you to find those annoying issues. I'll explain the run/debug configurations, what application breakpoints are and to make them conditional, or how breakpoints can be skipped altogether. While we are in a breakpoint, we'll explore the many ways to navigate through the code but skipping lines, running to line, jumping in, and using methods. Once we find an issue, we'll look at how we can inspect the values in memory and even change them.

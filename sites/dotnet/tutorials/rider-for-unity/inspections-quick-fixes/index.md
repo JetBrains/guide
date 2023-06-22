@@ -2,17 +2,22 @@
 type: TutorialStep
 date: 2023-04-04
 title: Inspections and quick-fixes for Unity code
-technologies: [.net,unity]
-topics: [gaming,ide,editing,inspections]
-products: [rider]
+topics:
+  - .net
+  - editing
+  - gaming
+  - ide
+  - inspections
+  - rider
+  - unity
 author: citizenmatt
-subtitle: Rider helps you write better code, faster.
+subtitle: 'Rider helps you write better code, faster.'
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=gNTOFr_TQCg
-    start: 848
-    end: 2044
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
+  start: 848
+  end: 2044
 ---
 
 Unity support in Rider ships with several inspections designed to help you find issues with your code before you run it.

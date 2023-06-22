@@ -2,32 +2,33 @@
 hasBody: true
 date: 2019-01-20
 title: Activate Navigation Bar
-technologies: []
-topics: [navigation, navigationbar]
+topics:
+  - navigation
+  - navigationbar
 author: pwe
-subtitle: Bring up the Navigation Bar as needed, let it disappear when finished.
+subtitle: 'Bring up the Navigation Bar as needed, let it disappear when finished.'
 seealso:
   - title: Navigation bar
-    href: https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
+    href: >-
+      https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
   - title: Navigating Tips and Tricks
-    href: https://www.jetbrains.com/help/pycharm/navigation-bar.html
+    href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=xDvTpGSqKyo
+  url: 'https://www.youtube.com/watch?v=xDvTpGSqKyo'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/-uyCSK6gvp4
+  url: 'https://youtu.be/-uyCSK6gvp4'
 leadin: |
   *The no-distraction way to work with your files.*
-  
+
   Minimal UI means no project tool window or Navigation Bar.  But 
   how do you then move around files?
-  
+
   Bring the Navigation Bar up as-needed, without the mouse. Do 
   what you need, then the popup disappears.
-
 ---
 
 Getting into the flow means stripping down your UI distraction (turn off the 

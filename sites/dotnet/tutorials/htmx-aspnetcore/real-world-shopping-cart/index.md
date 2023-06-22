@@ -2,15 +2,21 @@
 type: TutorialStep
 date: 2022-04-27
 title: Real-world shopping cart and conclusion
-technologies: [.net, asp.net]
-products: [rider,resharper]
-topics: [data,web,editing,inspections]
+topics:
+  - .net
+  - asp.net
+  - data
+  - editing
+  - inspections
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
 subtitle: See all HTMX techniques come together
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./poster.png
-    url: https://youtu.be/r_FLABoSkOg
+  poster: ./poster.png
+  url: 'https://youtu.be/r_FLABoSkOg'
 ---
 
 While we've gone through the mechanics of HTMX and some of its features, this series is by no means an exhaustive list. HTMX continues to be under active development and new features added with each new release. You can't learn everything, but That's what I like about HTMX, you don't have to. You can build unique experiences using a small subset of its capabilities. Unlike many other frontend approaches, you opt into the features you need, when you need them.

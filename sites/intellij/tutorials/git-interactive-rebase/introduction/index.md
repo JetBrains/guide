@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2022-08-12
 title: Introduction to Git interactive rebase
-technologies: []
 topics: []
 author: md
 subtitle: What is Git interactive rebase and why would you use it?
 thumbnail: ./thumbnail.png
-
 ---
 
 This guide tutorial will cover how to clean up your Git commit history with Git interactive rebase, both via the UI and from the command line.

@@ -2,15 +2,13 @@
 type: TutorialStep
 date: 2021-08-30
 title: Run IDE features from the terminal
-technologies: []
 topics: []
 author: hs
 subtitle: Running highlighted commands in the terminal
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url:  https://youtu.be/tlEkrWU0d1M?start=327
-
+  url: 'https://youtu.be/tlEkrWU0d1M?start=327'
 ---
 ## Running Commands in the Terminal
 You may notice that some commands in the terminal window are highlighted. This is a [feature in IntelliJ IDEA 2020.2](https://www.jetbrains.com/help/idea/terminal-emulator.html#smart-command-execution) that shows that the command could be run in the IDE, meaning we don’t need to use the command line.

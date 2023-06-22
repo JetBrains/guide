@@ -2,25 +2,25 @@
 hasBody: true
 date: 2022-10-20
 title: Undo Last Commit
-technologies: []
-topics: [vcs,]
+topics:
+  - vcs
 author: pwe
 subtitle: Undo a commit...without misery.
 seealso:
   - title: Undo the last commit
-    href: https://www.jetbrains.com/help/go/undo-changes.html#revert-last-commit
+    href: 'https://www.jetbrains.com/help/go/undo-changes.html#revert-last-commit'
   - title: Manage changelists
-    href: https://www.jetbrains.com/help/go/managing-changelists.html
+    href: 'https://www.jetbrains.com/help/go/managing-changelists.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-    poster: ./poster_short.png
-    url:  https://youtu.be/sAXyAivHeb0
+  poster: ./poster_short.png
+  url: 'https://youtu.be/sAXyAivHeb0'
 leadin: |
-    *You botched your last commit.*    
+  *You botched your last commit.*    
 
-    You want to fix it, but you haven’t memorized the Git voodoo chant.
-    Good news. If you haven’t pushed yet, the IDE can make this really easy.
+  You want to fix it, but you haven’t memorized the Git voodoo chant.
+  Good news. If you haven’t pushed yet, the IDE can make this really easy.
 ---
 First go to the Git tool window and make sure you’re on the log tab.
 

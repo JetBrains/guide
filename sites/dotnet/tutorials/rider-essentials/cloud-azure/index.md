@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2020-07-15
 title: Cloud (Azure) in Rider
-technologies: [.net, csharp]
-topics: [web, debugging]
-products: [rider]
+topics:
+  - .net
+  - csharp
+  - debugging
+  - rider
+  - web
 author: rachelappel
-subtitle: Using the Azure plugin in Rider, and working with Azure Functions.
+subtitle: 'Using the Azure plugin in Rider, and working with Azure Functions.'
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/9zxUywlFXmY
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/9zxUywlFXmY'
 ---
 
 ### Cloud Support

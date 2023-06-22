@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-09-20
 title: Moving Statements Around
-technologies: []
 topics: []
 author: hs
 subtitle: Moving a statements up and down within their scope
 thumbnail: ./thumbnail.png
-
 ---
 
 ## Moving a Statement Up or Down in Your Class

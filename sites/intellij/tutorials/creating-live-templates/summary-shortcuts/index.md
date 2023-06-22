@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2022-04-18
 title: Summary Shortcuts
-technologies: []
 topics: []
 author: hs
 subtitle: Live Template summary and shortcuts used
 thumbnail: ./thumbnail.png
-
 ---
 
 ## Summary

@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2023-02-03
 title: Customising your IntelliJ IDEA Environment
-technologies: []
 topics: []
 author: hs
 subtitle: Use IntelliJ IDEA to create a new package and class.

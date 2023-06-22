@@ -2,27 +2,26 @@
 hasBody: true
 date: 2019-04-15
 title: Run From Keyboard
-technologies: []
-topics: [editing]
+topics:
+  - editing
 author: pwe
 subtitle: Use the keyboard to select and run a run configuration.
 seealso:
   - title: Running
-    href: https://www.jetbrains.com/help/pycharm/running-code.html
+    href: 'https://www.jetbrains.com/help/pycharm/running-code.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=dGOuR1RXlIk
+  url: 'https://www.youtube.com/watch?v=dGOuR1RXlIk'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/oSEMKeUVjlE
+  url: 'https://youtu.be/oSEMKeUVjlE'
 leadin: |
-    *Run one of your configurations, without the keyboard.*    
+  *Run one of your configurations, without the keyboard.*    
 
-    Need to run a recent run configuration, and don't want to use the 
-    mouse? Use this action and its keybinding.
-
+  Need to run a recent run configuration, and don't want to use the 
+  mouse? Use this action and its keybinding.
 ---
 
 These tips have a recurring theme: use your keyboard, not your mouse. Running 

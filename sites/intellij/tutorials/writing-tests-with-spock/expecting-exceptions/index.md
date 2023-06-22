@@ -2,14 +2,16 @@
 type: TutorialStep
 date: 2021-05-20
 title: Expecting Exceptions
-technologies: []
-topics: [testing]
+topics:
+  - testing
 author: tg
-subtitle: Tests don't check just the happy paths, sometimes we want to say we're expecting a specific Exception.
+subtitle: >-
+  Tests don't check just the happy paths, sometimes we want to say we're
+  expecting a specific Exception.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/i5Qu3qYOfsM?start=657
+  url: 'https://youtu.be/i5Qu3qYOfsM?start=657'
 ---
 
 Testing isn't just about testing the happy paths. We should also check the exceptional cases.

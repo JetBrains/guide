@@ -2,14 +2,17 @@
 type: TutorialStep
 date: 2020-06-10
 title: Jump to Error
-technologies: [pytest]
-topics: [testing]
+topics:
+  - pytest
+  - testing
 author: pwe
-subtitle: Writing code means writing broken code. Click a link in a traceback to open a file on the line of the error.
+subtitle: >-
+  Writing code means writing broken code. Click a link in a traceback to open a
+  file on the line of the error.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/U2ex-V51-PY
+  url: 'https://youtu.be/U2ex-V51-PY'
 ---
 
 Since we have `Guardian` now, let's hook it up to allow adding a `Guardian` to a `Player`.

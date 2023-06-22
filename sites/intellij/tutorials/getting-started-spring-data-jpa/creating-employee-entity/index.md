@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-06-02
 title: Creating an Employee Entity
-technologies: []
 topics: []
 author: da
 subtitle: Create a JPA entity representing an Employee.
 thumbnail: ./thumbnail.png
-
 ---
 
 An Entity is a Java class representing data you want to insert into a database. For our application, we will create an Employee entity that we will use to insert Employee data into an Employee table in our database.

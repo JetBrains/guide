@@ -1,18 +1,22 @@
 ---
 type: TutorialStep
 date: 2023-04-04
-title: Editing, code completion, inspections
-technologies: [unreal]
-topics: [gaming,ide,editing,inspections]
-products: [rider]
+title: 'Editing, code completion, inspections'
+topics:
+  - editing
+  - gaming
+  - ide
+  - inspections
+  - rider
+  - unreal
 author: citizenmatt
 subtitle: Let's explore what the coding experience is like!
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=_bvrngxZYds
-    start: 648
-    end: 1553
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
+  start: 648
+  end: 1553
 ---
 
 Rider for Unreal Engine operates on Windows, macOS, and Linux. It is powered by [ReSharper C++](https://www.jetbrains.com/resharper-cpp/), which offers cutting-edge native support for modern C++. Users benefit from its 1300+ code inspections, 290+ quick-fixes, solution-wide refactoring, and code generation abilities. Rider also automatically adds missing #includes for you. This all happens without compromising the speed or responsiveness of the IDE.

@@ -1,10 +1,11 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2023-02-03
 title: Getting started with IntelliJ IDEA
-technologies: [java]
-topics: [gettingstarted]
+topics:
+  - gettingstarted
+  - java
 author: hs
 subtitle: My favourite tips for all new starters in IntelliJ IDEA
 thumbnail: ./thumbnail.png
@@ -21,3 +22,4 @@ tutorialItems:
   - ./testing-code/
   - ./seeing-how-far-youve-come/
 ---
+

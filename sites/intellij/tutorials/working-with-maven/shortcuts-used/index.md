@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2021-08-11
 title: Shortcuts
-technologies: []
 topics: []
 author: tg
 subtitle: Shortcuts used in the tutorial

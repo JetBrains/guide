@@ -1,10 +1,10 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2022-11-13
 title: Marco Codes - Building a Text Editor
-technologies: [java]
-topics: []
+topics:
+  - java
 author: hs
 subtitle: How to build a terminal-based text editor with Java
 thumbnail: ./thumbnail.png
@@ -26,3 +26,4 @@ tutorialItems:
   - ./macos-windows-support/
   - ./summary/
 ---
+

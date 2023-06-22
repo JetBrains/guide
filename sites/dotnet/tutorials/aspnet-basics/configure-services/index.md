@@ -2,15 +2,17 @@
 type: TutorialStep
 date: 2020-05-27
 title: Dependency Injection and ConfigureServices
-technologies: [asp.net]
-products: [rider,resharper]
-topics: [web]
+topics:
+  - asp.net
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
 subtitle: Registering ASP.NET services and instances
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=a32WK_wyM2E&feature=youtu.be
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=a32WK_wyM2E&feature=youtu.be'
 ---
 
 We'll be focusing on the `ConfigureServices` method and performing registration through the `IServiceCollection` interface.

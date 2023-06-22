@@ -2,12 +2,14 @@
 type: TutorialStep
 date: 2023-01-06
 title: Remove dependencies
-technologies: [gradle, maven]
-topics: [build,packagesearch]
+topics:
+  - build
+  - gradle
+  - maven
+  - packagesearch
 author: md
 subtitle: Remove dependencies using Package Search
 thumbnail: ./thumbnail.png
-
 ---
 
 Finally, we can remove dependencies we no longer need. In the Dependencies tool window, let's remove jackson-databind from the Java module. We select the dependency we want to remove (jackson-databind) and in the Dependency details pane on the right, click the **More** button (three dots) and select **Remove**.

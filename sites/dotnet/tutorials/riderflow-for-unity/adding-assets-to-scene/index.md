@@ -2,17 +2,23 @@
 type: TutorialStep
 date: 2023-04-02
 title: Adding assets to a scene
-technologies: [.net,unity]
-topics: [gaming,ide,editing]
-products: [riderflow]
+topics:
+  - .net
+  - editing
+  - gaming
+  - ide
+  - riderflow
+  - unity
 author: citizenmatt
-subtitle: The scene view management toolbar can search assets that you can use in your scene.
+subtitle: >-
+  The scene view management toolbar can search assets that you can use in your
+  scene.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=75r6TRwCc_o
-    start: 884
-    end: 1046
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=75r6TRwCc_o'
+  start: 884
+  end: 1046
 ---
 
 The scene view management toolbar is your compass for navigating complex scenes!

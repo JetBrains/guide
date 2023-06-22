@@ -1,13 +1,16 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2020-07-15
 title: Rider Essentials
-technologies: [.net]
-topics: [ide]
-products: [rider]
+topics:
+  - .net
+  - ide
+  - rider
 author: maartenba
-subtitle: Our developer advocates show their favourite tips and tricks, uncovering how they work with Rider.
+subtitle: >-
+  Our developer advocates show their favourite tips and tricks, uncovering how
+  they work with Rider.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

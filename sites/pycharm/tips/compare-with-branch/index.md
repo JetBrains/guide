@@ -2,18 +2,19 @@
 hasBody: true
 date: 2022-12-15
 title: Compare With Branch
-technologies: []
-topics: [vcs,]
+topics:
+  - vcs
 author: pwe
 subtitle: See the changes in another branch's commits.
 seealso:
-- title: Compare branches
-  href: https://www.jetbrains.com/help/pycharm/manage-branches.html#compare_branches
+  - title: Compare branches
+    href: >-
+      https://www.jetbrains.com/help/pycharm/manage-branches.html#compare_branches
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url:  https://youtu.be/oGbAj89ttZw
+  url: 'https://youtu.be/oGbAj89ttZw'
 leadin: |
   *You want to merge -- but what's in those commits?*
 

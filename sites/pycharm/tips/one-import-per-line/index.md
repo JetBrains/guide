@@ -2,30 +2,39 @@
 hasBody: true
 date: 2018-11-06
 title: One Import Per Line Preference
-technologies: []
-topics: [editing]
+topics:
+  - editing
 author: pwe
-subtitle: Tell PyCharm to put each import on a separate line when it cleans up your imports.
+subtitle: >-
+  Tell PyCharm to put each import on a separate line when it cleans up your
+  imports.
 seealso:
   - title: Code Style Preferences for Python Imports
-    href: https://www.jetbrains.com/help/pycharm/2018.3/code-style-python.html#imports
+    href: >-
+      https://www.jetbrains.com/help/pycharm/2018.3/code-style-python.html#imports
   - title: Optimize Imports
-    href: https://www.jetbrains.com/help/pycharm/2018.3/creating-and-optimizing-imports.html#optimize-imports-in-project
+    href: >-
+      https://www.jetbrains.com/help/pycharm/2018.3/creating-and-optimizing-imports.html#optimize-imports-in-project
   - title: YouTrack Feature Ticket for One-Per-Line
-    href: https://youtrack.jetbrains.com/issue/PY-20100
+    href: 'https://youtrack.jetbrains.com/issue/PY-20100'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=EvKXVp4BXGk
+  url: 'https://www.youtube.com/watch?v=EvKXVp4BXGk'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/XB4SnJ4XmUs
-leadin: |
+  url: 'https://youtu.be/XB4SnJ4XmUs'
+leadin: >
   *Don't waste time manually putting imports one-per-line. Let your tool do it.*
 
-  Switching between files...we all do this, all the time. Use the ``Recent Files`` 
-  action to quickly jump between the files you are working on. Moral of the story? 
+
+  Switching between files...we all do this, all the time. Use the ``Recent
+  Files`` 
+
+  action to quickly jump between the files you are working on. Moral of the
+  story? 
+
   Let PyCharm be your janitor.
 ---
 

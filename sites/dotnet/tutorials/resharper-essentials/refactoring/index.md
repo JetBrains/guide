@@ -2,15 +2,17 @@
 type: TutorialStep
 date: 2021-03-01
 title: Refactoring Code with ReSharper
-technologies: [.net, csharp]
-topics: [refactoring]
-products: [rider]
+topics:
+  - .net
+  - csharp
+  - refactoring
+  - rider
 author: rachelappel
-subtitle: How to safely refactor code, without breaking the build? Let's have a look.
+subtitle: 'How to safely refactor code, without breaking the build? Let''s have a look.'
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/vd9BvAPVmEI
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/vd9BvAPVmEI'
 ---
 
 ### Refactoring

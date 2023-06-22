@@ -2,14 +2,16 @@
 type: TutorialStep
 date: 2021-04-09
 title: Exploring Project Structure & Creating Django App
-technologies: [django,aws]
-topics: [python]
+topics:
+  - aws
+  - django
+  - python
 author: mm
-subtitle: Create a new app, define models, and explore the project's structure.
+subtitle: 'Create a new app, define models, and explore the project''s structure.'
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/OIOJk_KZe8g
+  url: 'https://youtu.be/OIOJk_KZe8g'
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, we

@@ -2,15 +2,19 @@
 type: TutorialStep
 date: 2022-10-25
 title: Let's Build an incremental source generator with Roslyn
-technologies: [.net,csharp]
-products: [rider,resharper]
-topics: [editing,ide]
+topics:
+  - .net
+  - csharp
+  - editing
+  - ide
+  - resharper
+  - rider
 author: maartenba
 subtitle: Stefan Pölz
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./thumbnail.png
-    url: https://youtu.be/azJm_Y2nbAI
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/azJm_Y2nbAI'
 ---
 
 (Incremental) source generators allow us to trade in a bit of compile time for better performance during runtime: instead of resorting to general-purpose types and methods, we may utilize auto-generated variants optimized specifically for our user code. With these at our fingertips, we can facilitate high-performance scenarios by, for example, using a Reflection-free source. If nothing else, this Roslyn-based metaprogramming relieves authors of writing repetitive patterns over and over again.

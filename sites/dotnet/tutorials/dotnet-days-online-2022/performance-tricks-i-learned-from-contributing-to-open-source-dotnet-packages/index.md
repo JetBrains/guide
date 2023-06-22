@@ -2,15 +2,21 @@
 type: TutorialStep
 date: 2022-10-25
 title: Performance tricks I learned from contributing to open source .NET packages
-technologies: [.net,csharp]
-products: [rider,resharper,dotmemory,dottrace]
-topics: [profiling,editing]
+topics:
+  - .net
+  - csharp
+  - dotmemory
+  - dottrace
+  - editing
+  - profiling
+  - resharper
+  - rider
 author: maartenba
 subtitle: Daniel Marbach
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./thumbnail.png
-    url: https://youtu.be/NELaITuylDg
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/NELaITuylDg'
 ---
 
 As a practical learner, I've found that performance optimizations are my biggest challenge and that I've learned the most helpful tricks from them, mostly by trial and error. It turns out the Azure .NET SDK is a perfect “playground” for learning those tricks – it's maintained by people who care and give feedback.

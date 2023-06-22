@@ -1,10 +1,11 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2022-08-04
 title: Marco Codes - Maven
-technologies: [maven]
-topics: [build]
+topics:
+  - build
+  - maven
 author: hs
 subtitle: Working with Maven in your projects
 thumbnail: ./thumbnail.png
@@ -18,3 +19,4 @@ tutorialItems:
   - ./maven-repositories/
   - ./multi-module-projects/
 ---
+

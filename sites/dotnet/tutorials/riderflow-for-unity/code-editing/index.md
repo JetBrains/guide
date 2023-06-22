@@ -2,17 +2,21 @@
 type: TutorialStep
 date: 2023-04-02
 title: Code Editing
-technologies: [.net,unity]
-topics: [gaming,ide,editing]
-products: [riderflow]
+topics:
+  - .net
+  - editing
+  - gaming
+  - ide
+  - riderflow
+  - unity
 author: citizenmatt
 subtitle: Dive deeper into code with the smart editor in Unity!
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=75r6TRwCc_o
-    start: 1266
-    end: 1416
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=75r6TRwCc_o'
+  start: 1266
+  end: 1416
 ---
 
 RiderFlow comes with a simple editor designed for small, quick changes in your C# script files.

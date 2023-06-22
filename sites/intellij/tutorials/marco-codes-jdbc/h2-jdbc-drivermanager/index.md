@@ -2,15 +2,13 @@
 type: TutorialStep
 date: 2022-11-08
 title: H2 Database and JDBC
-technologies: []
 topics: []
 author: hs
 subtitle: Working with an H2 Database and JDBC
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=KgXq2UBNEhA&start=65s
-
+  url: 'https://www.youtube.com/watch?v=KgXq2UBNEhA&start=65s'
 ---
 
 ## H2 and JDBC

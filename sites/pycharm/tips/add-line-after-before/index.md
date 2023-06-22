@@ -2,27 +2,28 @@
 hasBody: true
 date: 2019-03-09
 title: Add Line After/Before
-technologies: []
-topics: [editing]
+topics:
+  - editing
 author: pwe
-subtitle: Smart-add a line, from the middle of a line, after or before the current line.
+subtitle: 'Smart-add a line, from the middle of a line, after or before the current line.'
 seealso:
-- title: Adding, Deleting and Moving Code Elements
-  href: https://www.jetbrains.com/help/pycharm/adding-deleting-and-moving-lines.html
+  - title: 'Adding, Deleting and Moving Code Elements'
+    href: >-
+      https://www.jetbrains.com/help/pycharm/adding-deleting-and-moving-lines.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=aPufd3UPEHU
+  url: 'https://www.youtube.com/watch?v=aPufd3UPEHU'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/pHmv6RzKrDk
+  url: 'https://youtu.be/pHmv6RzKrDk'
 leadin: |
-    *Language-aware line adding, no muss no fuss.*    
+  *Language-aware line adding, no muss no fuss.*    
 
-    It seems like a simple thing but many forget about it. You 
-    want a new line, so you first move to the end of the current 
-    line and press Enter. A line above? Worse. There's a better way.
+  It seems like a simple thing but many forget about it. You 
+  want a new line, so you first move to the end of the current 
+  line and press Enter. A line above? Worse. There's a better way.
 ---
 
 It's easy to overlook, but we frequently add a line of code while in the 

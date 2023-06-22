@@ -2,27 +2,31 @@
 hasBody: true
 date: 2021-05-28
 title: F2
-technologies: [java]
-topics: [editing, inspections]
+topics:
+  - editing
+  - inspections
+  - java
 author: tg
-subtitle: Quickly move to the next (or previous) error or warning in the file. 
+subtitle: Quickly move to the next (or previous) error or warning in the file.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/9TlIOdfli80
+  url: 'https://youtu.be/9TlIOdfli80'
 seealso:
-  - title: "(video) IntelliJ IDEA Pro Tips: Move to the Next Issue"
-    href: https://www.youtube.com/watch?v=9nAvkNBYZwY
+  - title: '(video) IntelliJ IDEA Pro Tips: Move to the Next Issue'
+    href: 'https://www.youtube.com/watch?v=9nAvkNBYZwY'
   - title: (documentation) IntelliJ IDEA Help - Navigate between errors or warnings
-    href: https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#navigate-errors-warnings
+    href: >-
+      https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#navigate-errors-warnings
   - title: (blog) IntelliJ IDEA Blog - Top 15 IntelliJ IDEA Shortcuts
-    href: https://blog.jetbrains.com/idea/2020/03/top-15-intellij-idea-shortcuts/
+    href: 'https://blog.jetbrains.com/idea/2020/03/top-15-intellij-idea-shortcuts/'
   - title: (guide) IntelliJ IDEA Guide - Alt+Enter
     href: ../alt-enter/
-leadin: |
-  When you open a source file in the editor, you may see warnings or errors in this file. You can quickly step through to check all these issues without having to use the mouse, just press **F2**.
-
+leadin: >
+  When you open a source file in the editor, you may see warnings or errors in
+  this file. You can quickly step through to check all these issues without
+  having to use the mouse, just press **F2**.
 ---
 
   While you're coding, you may want to jump to the next error or warning (**F2**) or the last one (**Shift+F2**). This way, you can quickly hop to the next thing that needs fixing or addressing without having to move your hand to the mouse.

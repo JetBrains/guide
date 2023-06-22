@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2022-10-26
 title: F# for Performance Critical Code
-technologies: [.net,fsharp]
-products: [dottrace]
-topics: [editing,profiling]
+topics:
+  - .net
+  - dottrace
+  - editing
+  - fsharp
+  - profiling
 author: maartenba
 subtitle: Matthew Crews
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./thumbnail.png
-    url: https://youtu.be/NZ5Lwzrdoe8
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/NZ5Lwzrdoe8'
 ---
 
 F# is a language that stretches across many boundaries (web, backend, domain modeling, etc.) and paradigms (functional, imperative, procedural, object-based) while being simple, succinct, and performant.

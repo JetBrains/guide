@@ -2,14 +2,14 @@
 type: TutorialStep
 date: 2021-05-14
 title: Group ID and version number
-technologies: [gradle]
-topics: []
+topics:
+  - gradle
 author: tg
 subtitle: How to set up or change a project's group ID and version number.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/6V6G3RyxEMk?start=537
+  url: 'https://youtu.be/6V6G3RyxEMk?start=537'
 ---
 
 Now we've covered the basics of a new Gradle project, let's go back and look at how to set the [groupID and version](https://maven.apache.org/guides/mini/guide-naming-conventions.html) of a new project.

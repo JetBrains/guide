@@ -2,18 +2,20 @@
 hasBody: true
 date: 2018-11-07
 title: LiveEdit HTML and CSS
-technologies: []
-topics: [editing]
+topics:
+  - editing
 author: pwe
-subtitle: With the LiveEdit plugin, open HTML and CSS in Chrome, over HTTP, and see updates as you save.
+subtitle: >-
+  With the LiveEdit plugin, open HTML and CSS in Chrome, over HTTP, and see
+  updates as you save.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=rGms9nsfdTM
+  url: 'https://www.youtube.com/watch?v=rGms9nsfdTM'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/xf90Ko64hRc
+  url: 'https://youtu.be/xf90Ko64hRc'
 leadin: |
   *Tired of starting a server a reloading your browser to see file changes?*
 

@@ -2,27 +2,27 @@
 hasBody: true
 date: 2018-11-01
 title: Find Action
-technologies: []
-topics: [navigation]
+topics:
+  - navigation
 author: pwe
 subtitle: Skip memorizing keyboard shortcuts and speed search for actions instead.
 seealso:
   - title: Navigating to Action
-    href: https://www.jetbrains.com/help/pycharm/2017.3/navigating-to-action.html#Navigate_to_Action.xml
+    href: >-
+      https://www.jetbrains.com/help/pycharm/2017.3/navigating-to-action.html#Navigate_to_Action.xml
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=iTJi6IojKms
+  url: 'https://www.youtube.com/watch?v=iTJi6IojKms'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/ESYmaaX5Tzg
+  url: 'https://youtu.be/ESYmaaX5Tzg'
 leadin: |
   *Actions, keyboard, speed search.*
 
   Want to use your keyboard but can't memorize all the shortcuts? Find 
   actions by search, using speed typing.
-
 ---
 
 This is it, the biggest tip.

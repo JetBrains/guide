@@ -2,14 +2,13 @@
 type: TutorialStep
 date: 2021-05-20
 title: A Simple Assertion
-technologies: []
 topics: []
 author: tg
 subtitle: Writing our first Spock test
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/i5Qu3qYOfsM?start=197
+  url: 'https://youtu.be/i5Qu3qYOfsM?start=197'
 ---
 
 Let's start by writing a very simple test, so we can see what Spock tests look like.

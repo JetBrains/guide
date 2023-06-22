@@ -2,14 +2,17 @@
 type: TutorialStep
 date: 2022-01-01
 title: Introduction
-technologies: [fastapi, kubernetes, aws]
-topics: [python]
+topics:
+  - aws
+  - fastapi
+  - kubernetes
+  - python
 author: mm
-subtitle: Introducing FastAPI,  a modern, fast (high-performance), web framework.
+subtitle: 'Introducing FastAPI,  a modern, fast (high-performance), web framework.'
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://www.youtube.com/watch?v=iCVEhVI07Ig
+  url: 'https://www.youtube.com/watch?v=iCVEhVI07Ig'
 ---
 
 Hello everyone, Welcome to the PyCharm FastAPI tutorial series.

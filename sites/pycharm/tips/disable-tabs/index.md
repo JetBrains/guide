@@ -2,23 +2,23 @@
 hasBody: true
 date: 2018-11-04
 title: Disable Tabs
-technologies: []
-topics: [ide]
+topics:
+  - ide
 author: pwe
 subtitle: Save space and stay keyboard-centric by turning off the tabs.
 seealso:
   - title: Managing Editor Tabs
-    href: https://www.jetbrains.com/help/pycharm/managing-editor-tabs.html
+    href: 'https://www.jetbrains.com/help/pycharm/managing-editor-tabs.html'
   - title: No Tabs in IntelliJ IDEA
-    href: https://hadihariri.com/2014/06/24/no-tabs-in-intellij-idea/
+    href: 'https://hadihariri.com/2014/06/24/no-tabs-in-intellij-idea/'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=nBF9tT787B0
+  url: 'https://www.youtube.com/watch?v=nBF9tT787B0'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/k7P__ZhUv-g
+  url: 'https://youtu.be/k7P__ZhUv-g'
 leadin: |
   *Want a cleaner UI with less noise to juggle in your head?*
 

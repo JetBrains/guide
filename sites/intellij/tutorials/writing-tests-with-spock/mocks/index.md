@@ -2,14 +2,17 @@
 type: TutorialStep
 date: 2021-05-20
 title: Mocks
-technologies: []
-topics: [testing]
+topics:
+  - testing
 author: tg
-subtitle: Mocks are a useful testing tool. We can provide "empty" objects, so we don't have to initialise the whole application to test a section, and we can use mocks to check our code is making the calls we expect. 
+subtitle: >-
+  Mocks are a useful testing tool. We can provide "empty" objects, so we don't
+  have to initialise the whole application to test a section, and we can use
+  mocks to check our code is making the calls we expect.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/i5Qu3qYOfsM?start=1290
+  url: 'https://youtu.be/i5Qu3qYOfsM?start=1290'
 ---
 
 Sometimes we need to mock out classes or APIs to assert the expected behaviour. [Mocking is built in to Spock](https://spockframework.org/spock/docs/2.0/all_in_one.html#interaction-based-testing), we don't need a separate library or framework for Mock support. It's also possible to mock concrete classes. If you're used to other Mocking frameworks you might expect to only be able to mock Java interfaces, but Spock lets us easily [create a mock](http://spockframework.org/spock/docs/2.0/all_in_one.html#_creating_mock_objects) from a concrete class.

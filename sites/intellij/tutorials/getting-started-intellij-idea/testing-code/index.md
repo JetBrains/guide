@@ -2,12 +2,12 @@
 type: TutorialStep
 date: 2023-02-03
 title: Testing code
-technologies: []
 topics: []
 author: hs
-subtitle: Testing is an important part of the development workflow, irrespective of where you do it in the process.
+subtitle: >-
+  Testing is an important part of the development workflow, irrespective of
+  where you do it in the process.
 thumbnail: ./thumbnail.png
-
 ---
 
 Writing tests for our code is another task you're likely to be looking to your IDE to support you with. IntelliJ IDEA can generate your tests for you with its Code Generation capabilities but there's a couple more tips that I recommend you check out when working with tests in IntelliJ IDEA. We will look at:

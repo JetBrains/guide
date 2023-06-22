@@ -1,16 +1,19 @@
 ---
 type: TutorialStep
 date: 2022-10-26
-title: "Chaos Engineering: unleash the monkeys"
-technologies: [.net]
-products: [rider,resharper]
-topics: [editing,debugging]
+title: 'Chaos Engineering: unleash the monkeys'
+topics:
+  - .net
+  - debugging
+  - editing
+  - resharper
+  - rider
 author: maartenba
 subtitle: Jacob Duijzer
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./thumbnail.png
-    url: https://youtu.be/3ycHJwx0Itg
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/3ycHJwx0Itg'
 ---
 
 Large online organizations like Netflix, Amazon, and LinkedIn have already been doing it for years: Chaos Engineering, i.e. injecting chaos into their production environments. And while it might sound scary (and it will be in the beginning), even you can apply some chaos to your applications. In this talk, I will demonstrate how to create chaos and how to apply resilience to work around it and create a more stable platform.

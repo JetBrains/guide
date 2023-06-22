@@ -1,12 +1,17 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-10-04
-title: React, TypeScript, and TDD
-technologies: [typescript, jest, react]
-topics: [testing]
+title: 'React, TypeScript, and TDD'
+topics:
+  - jest
+  - react
+  - testing
+  - typescript
 author: pwe
-subtitle: How to write React applications in TypeScript using TDD, highlighting features of the IDE
+subtitle: >-
+  How to write React applications in TypeScript using TDD, highlighting features
+  of the IDE
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./project_setup/

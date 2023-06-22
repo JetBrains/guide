@@ -1,13 +1,19 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2023-04-02
 title: Design and Manage Scenes With RiderFlow
-technologies: [.net,unity]
-topics: [gaming,ide,editing]
-products: [riderflow]
+topics:
+  - .net
+  - editing
+  - gaming
+  - ide
+  - riderflow
+  - unity
 author: maartenba
-subtitle: We'll walk you through the best tips for RiderFlow to help speed up your Unity development!
+subtitle: >-
+  We'll walk you through the best tips for RiderFlow to help speed up your Unity
+  development!
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introducing-riderflow/

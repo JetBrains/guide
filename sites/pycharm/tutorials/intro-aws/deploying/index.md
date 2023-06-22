@@ -2,14 +2,14 @@
 type: TutorialStep
 date: 2021-01-29
 title: Deploying Functions
-technologies: [aws]
-topics: []
+topics:
+  - aws
 author: mm
 subtitle: Use PyCharm Professional to deploy your Lambda APIs.
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/mqNTLSOcSOw
+  url: 'https://youtu.be/mqNTLSOcSOw'
 ---
 
 In this tutorial we are going to deploy our functions in AWS and test it through Postman.

@@ -2,10 +2,11 @@
 type: TutorialStep
 date: 2021-05-20
 title: Shortcuts used
-technologies: []
 topics: []
 author: tg
-subtitle: Finally, let's summarise the shortcuts we've learnt and see links to further information.
+subtitle: >-
+  Finally, let's summarise the shortcuts we've learnt and see links to further
+  information.
 thumbnail: ./thumbnail.png
 ---
 

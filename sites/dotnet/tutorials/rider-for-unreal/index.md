@@ -1,11 +1,14 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2023-04-04
 title: Creating Games With Unreal Editor and JetBrains Rider
-technologies: [unreal]
-topics: [gaming,ide,editing]
-products: [rider]
+topics:
+  - editing
+  - gaming
+  - ide
+  - rider
+  - unreal
 author: maartenba
 subtitle: JetBrains Rider is the best scripting editor for Unity – let's find out why!
 thumbnail: ./thumbnail.png

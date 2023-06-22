@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2021-10-13
 title: Summary and Shortcuts
-technologies: []
 topics: []
 author: hs
 subtitle: Everything we covered in this tutorial including help links and shortcuts.

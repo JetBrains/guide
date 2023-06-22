@@ -2,15 +2,21 @@
 type: TutorialStep
 date: 2020-07-15
 title: Unit Testing with Rider
-technologies: [.net, csharp]
-topics: [testing, inspections]
-products: [rider, dotcover]
+topics:
+  - .net
+  - csharp
+  - dotcover
+  - inspections
+  - rider
+  - testing
 author: maartenba
-subtitle: Learn how Rider can help make sure code behaves as expected, with continuous testing and code coverage.
+subtitle: >-
+  Learn how Rider can help make sure code behaves as expected, with continuous
+  testing and code coverage.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/lr0I5w2apSI
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/lr0I5w2apSI'
 ---
 
 ### Testing our Code

@@ -2,15 +2,13 @@
 type: TutorialStep
 date: 2022-11-08
 title: DataSource and Connection Pools
-technologies: []
 topics: []
 author: hs
 subtitle: Connecting to databases and more
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=KgXq2UBNEhA&start=1052s
-
+  url: 'https://www.youtube.com/watch?v=KgXq2UBNEhA&start=1052s'
 ---
 
 ## DataSource, Connection Pools, HikariCP and Library Landscape

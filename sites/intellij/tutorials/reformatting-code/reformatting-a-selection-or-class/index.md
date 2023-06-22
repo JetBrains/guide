@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2021-09-06
 title: Reformatting a selection of code or class
-technologies: []
 topics: []
 author: hs
 subtitle: Use keyboard shortcuts to quickly reformat some code in your project

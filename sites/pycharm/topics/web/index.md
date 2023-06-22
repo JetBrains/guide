@@ -1,6 +1,6 @@
 ---
 title: Web
-subtitle: IDE support for HTML, CSS, and other web technologies.
+subtitle: 'IDE support for HTML, CSS, and other web technologies.'
 accent: primary
 icon: fas fa-globe
 ---

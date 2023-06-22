@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2022-10-03
 title: Tool windows
-technologies: []
 topics: []
 author: md
 subtitle: Using tool windows with shortcuts
 thumbnail: ./thumbnail.png
-
 ---
 
 We recommend closing all unused windows so we can focus on the code we're looking at. Use **Command + Shift + F12** (on Mac) or **Control+Shift+F12** (on Windows/Linux) to hide all tool windows. 

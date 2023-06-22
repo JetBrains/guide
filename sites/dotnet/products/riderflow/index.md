@@ -2,7 +2,7 @@
 title: RiderFlow
 subtitle: Scenery tool to build and manage your 3D space.
 logo: ./logo.png
-website: https://www.jetbrains.com/riderflow/
+website: 'https://www.jetbrains.com/riderflow/'
 ---
 
 RiderFlow is a free plugin for the Unity Editor that helps you gain a deeper understanding of scenes.

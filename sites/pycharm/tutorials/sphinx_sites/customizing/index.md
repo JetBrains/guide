@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-13
 title: Customizing Your Site
-technologies: [sphinx]
-topics: []
+topics:
+  - sphinx
 author: pwe
 subtitle: Adjust Sphinx knobs using the configuration file.
 thumbnail: thumbnail.png

@@ -2,22 +2,24 @@
 label: new-features-in-goland-2022-2
 date: 2022-07-16
 title: New Features in GoLand 2022.2
-technologies: [go]
-topics: [quick-fixes,generics,settings]
+topics:
+  - generics
+  - go
+  - quick-fixes
+  - settings
 author: ap
 subtitle: A selection of useful features from GoLand 2022.2.
 cardThumbnail: ./card.png
 thumbnail: ./thumbnail.png
 playlistItems:
-    - /goland/tips/rename-constants-that-use-names-of-builtin-constants/
-    - /goland/tips/workspaces-group-use-directives/
-    - /goland/tips/run-tests-fuzzing/
-    - /goland/tips/run-anything/
-    - /goland/tips/quick-documentation/
-    - /goland/tips/delete-type-parameter-with-empty-parameter-list/
-    - /goland/tips/convert-empty-interfaces-to-any/
-    - /goland/tips/change-font-size-from-keyboard/
-
+  - /goland/tips/rename-constants-that-use-names-of-builtin-constants/
+  - /goland/tips/workspaces-group-use-directives/
+  - /goland/tips/run-tests-fuzzing/
+  - /goland/tips/run-anything/
+  - /goland/tips/quick-documentation/
+  - /goland/tips/delete-type-parameter-with-empty-parameter-list/
+  - /goland/tips/convert-empty-interfaces-to-any/
+  - /goland/tips/change-font-size-from-keyboard/
 ---
 
 For more information about what's new in GoLand 2022.2, check out our [What's New Page](https://jetbrains.com/go/whatsnew) or browse the tips below.

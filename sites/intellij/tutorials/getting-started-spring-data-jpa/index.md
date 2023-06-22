@@ -1,12 +1,17 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-06-02
 title: Getting Started with Spring Data JPA
-technologies: [java, spring]
-topics: [gettingstarted, ultimate]
+topics:
+  - gettingstarted
+  - java
+  - spring
+  - ultimate
 author: da
-subtitle: Learn how to use Spring Data JPA to store and retrieve data from your database.
+subtitle: >-
+  Learn how to use Spring Data JPA to store and retrieve data from your
+  database.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

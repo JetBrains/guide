@@ -1,12 +1,16 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-05-20
 title: Writing Tests with Spock
-technologies: [java, groovy]
-topics: [testing]
+topics:
+  - groovy
+  - java
+  - testing
 author: tg
-subtitle: Learn about the Spock testing framework by creating a project that uses Spock to unit test Java code
+subtitle: >-
+  Learn about the Spock testing framework by creating a project that uses Spock
+  to unit test Java code
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/
@@ -29,3 +33,4 @@ tutorialItems:
   - ./specifications-as-documentation/
   - ./shortcuts-used/
 ---
+

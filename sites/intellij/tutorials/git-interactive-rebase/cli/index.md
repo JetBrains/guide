@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2022-08-12
 title: From the Command Line
-technologies: []
 topics: []
 author: md
 subtitle: Using Git interactive rebase from the command line
 thumbnail: ./thumbnail.png
-
 ---
 
 Let's take a look at how to use Git interactive rebase from the command line.

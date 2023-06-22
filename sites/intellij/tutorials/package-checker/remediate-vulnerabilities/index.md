@@ -2,12 +2,16 @@
 type: TutorialStep
 date: 2023-01-27
 title: Remediate dependencies
-technologies: [gradle, maven]
-topics: [build,packagesearch,security,ultimate]
+topics:
+  - build
+  - gradle
+  - maven
+  - packagesearch
+  - security
+  - ultimate
 author: md
 subtitle: Remediate dependencies using IntelliJ IDEA Ultimate
 thumbnail: ./thumbnail.png
-
 ---
 
 Finally, we can remediate these vulnerabilities. We can click **Copy safe version to clipboard** in the Vulnerable Dependencies tool window details pane to copy the safe version and paste it into our build file.

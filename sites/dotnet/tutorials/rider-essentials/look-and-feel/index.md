@@ -2,15 +2,20 @@
 type: TutorialStep
 date: 2020-07-15
 title: Customize the Look and Feel of Rider
-technologies: [.net, csharp]
-topics: [ide, inspections]
-products: [rider]
+topics:
+  - .net
+  - csharp
+  - ide
+  - inspections
+  - rider
 author: matkoch
-subtitle: Customize the look and feel of Rider, and make the editor work the way you want.
+subtitle: >-
+  Customize the look and feel of Rider, and make the editor work the way you
+  want.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/I3wlWFUPpAc
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/I3wlWFUPpAc'
 ---
 
 ### Customizing Rider theme

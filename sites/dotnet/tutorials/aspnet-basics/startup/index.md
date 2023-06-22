@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2020-05-27
 title: Startup Class Walkthrough
-technologies: [asp.net]
-products: [rider,resharper]
-topics: [ide, web]
+topics:
+  - asp.net
+  - ide
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
 subtitle: The beginning of all ASP.NET applications
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=7wOOrnLxuy4
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=7wOOrnLxuy4'
 ---
 
 At the heart of every ASP.NET Core project lies the `Startup` class,

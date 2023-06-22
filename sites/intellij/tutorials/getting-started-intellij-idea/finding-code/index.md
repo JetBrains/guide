@@ -1,13 +1,13 @@
 ---
 type: TutorialStep
 date: 2023-02-03
-title: Finding code 
-technologies: []
+title: Finding code
 topics: []
 author: hs
-subtitle: We often need to find something in our project and there are several ways to achieve that depending on the use case.
+subtitle: >-
+  We often need to find something in our project and there are several ways to
+  achieve that depending on the use case.
 thumbnail: ./thumbnail.png
-
 ---
 
 Searching and finding files and code can be achieved in IntelliJ IDEA through various mechanisms. They all have their own strengths and knowing when to use which one will save you time when you need to find a *needle in a haystack*! We will look at:

@@ -2,12 +2,13 @@
 type: TutorialStep
 date: 2022-12-02
 title: Build tool window
-technologies: [gradle, maven]
-topics: [build]
+topics:
+  - build
+  - gradle
+  - maven
 author: md
 subtitle: View dependencies in the build tool window
 thumbnail: ./thumbnail.png
-
 ---
 
 To see direct dependencies and their transitive dependencies, we can look in the Build tool window. 

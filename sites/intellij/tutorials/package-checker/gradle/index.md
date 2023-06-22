@@ -2,12 +2,15 @@
 type: TutorialStep
 date: 2023-01-27
 title: Gradle projects
-technologies: [gradle]
-topics: [build,packagesearch,security,ultimate]
+topics:
+  - build
+  - gradle
+  - packagesearch
+  - security
+  - ultimate
 author: md
 subtitle: View vulnerable dependencies in Gradle projects
 thumbnail: ./thumbnail.png
-
 ---
 
 In a Gradle project, all of your project's dependencies are declared in the build.gradle. When we open the build.gradle file for a project which contains vulnerable dependencies, we see that several dependencies are highlighted.

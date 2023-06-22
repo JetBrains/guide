@@ -2,17 +2,21 @@
 type: TutorialStep
 date: 2023-04-04
 title: Generate code
-technologies: [.net,unity]
-topics: [gaming,ide,editing]
-products: [rider]
+topics:
+  - .net
+  - editing
+  - gaming
+  - ide
+  - rider
+  - unity
 author: citizenmatt
-subtitle: Rider helps with boiler-plate code, code completion, and more.
+subtitle: 'Rider helps with boiler-plate code, code completion, and more.'
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=gNTOFr_TQCg
-    start: 693
-    end: 848
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
+  start: 693
+  end: 848
 ---
 
 Rider makes it easy to **generate Unity event functions**, either using the *Generate* menu or simply by typing, with autocompletion.

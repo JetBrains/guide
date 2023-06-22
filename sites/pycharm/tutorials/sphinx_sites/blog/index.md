@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2021-04-16
 title: Adding a Blog
-technologies: []
 topics: []
 author: pwe
 subtitle: Let's change the look on the website with new templates.

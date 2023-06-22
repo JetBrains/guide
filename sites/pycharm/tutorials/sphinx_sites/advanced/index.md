@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-13
 title: Advanced Usage
-technologies: [sphinx]
-topics: []
+topics:
+  - sphinx
 author: pwe
 subtitle: MyST has a lot more to offer than just Markdown-in-Sphinx.
 thumbnail: thumbnail.png

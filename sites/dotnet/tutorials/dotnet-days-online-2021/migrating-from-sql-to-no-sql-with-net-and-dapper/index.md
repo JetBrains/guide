@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2021-05-11
 title: Migrating from SQL to NoSQL with .NET and Dapper
-technologies: [.net]
-products: [rider,resharper]
-topics: [data, ide]
+topics:
+  - .net
+  - data
+  - ide
+  - resharper
+  - rider
 author: maartenba
 subtitle: Matthew Groves
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/ltXWsuqg_mo
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/ltXWsuqg_mo'
 ---
 
 Databases are like languages—it's very useful to know more than one. NoSQL databases promise better performance, scaling, lower cost of ownership, and flexibility for many use cases. With recent advances in NoSQL, including ACID transactions, SQL queries, scopes, collections, and more, making the jump to NoSQL is becoming more straightforward. In this session, I will demonstrate my work-in-progress open source tool to automatically migrate SQL Server's AdventureWorks sample (including tables, data, indexes, users, and even queries) over to a NoSQL database (Couchbase). I'll discuss the trade-offs, benefits, pros and cons. After this short session, you'll have taken a huge leap to learning a new technology.

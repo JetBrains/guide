@@ -2,20 +2,21 @@
 hasBody: true
 date: 2022-12-09
 title: Browse Branch's Commits
-technologies: []
-topics: [vcs,]
+topics:
+  - vcs
 author: pwe
 subtitle: Review the changes in main before bringing them to your branch.
 seealso:
-- title: Sync with a remote Git repository
-  href: https://www.jetbrains.com/help/pycharm/sync-with-a-remote-repository.html
-- title: Update your project
-  href: https://www.jetbrains.com/help/pycharm/sync-with-a-remote-repository.html#update
+  - title: Sync with a remote Git repository
+    href: 'https://www.jetbrains.com/help/pycharm/sync-with-a-remote-repository.html'
+  - title: Update your project
+    href: >-
+      https://www.jetbrains.com/help/pycharm/sync-with-a-remote-repository.html#update
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url:  https://www.youtube.com/watch?v=LJt_XQZWZvs
+  url: 'https://www.youtube.com/watch?v=LJt_XQZWZvs'
 leadin: |
   *Look before you leap.*
 

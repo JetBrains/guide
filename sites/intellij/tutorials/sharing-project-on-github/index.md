@@ -1,10 +1,11 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-10-13
 title: Sharing your Project on GitHub
-technologies: [git]
-topics: [vcs]
+topics:
+  - git
+  - vcs
 author: hs
 subtitle: How you can share a local project to GitHub
 thumbnail: ./thumbnail.png
@@ -13,7 +14,6 @@ tutorialItems:
   - ./sharing-project-quick-approach/
   - ./sharing-project-multi-step-approach/
   - ./summary-and-shortcuts/
-
 ---
 
 In this tutorial, we’re going to look at how to share code that we’ve written on our local machine to a repository on [GitHub](https://github.com/).

@@ -1,10 +1,10 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2022-07-23
 title: Marco Codes - Spring Boot
-technologies: []
-topics: [ultimate]
+topics:
+  - ultimate
 author: hs
 subtitle: Spring Boot Nice n Easy
 thumbnail: ./thumbnail.png
@@ -24,5 +24,5 @@ tutorialItems:
   - ./spring-data-jdbc-repositories/
   - ./packaging-and-deployment/
   - ./the-end-and-next-steps/
-
 ---
+

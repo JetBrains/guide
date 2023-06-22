@@ -2,26 +2,27 @@
 hasBody: true
 date: 2022-12-15
 title: See Unsynced Commits
-technologies: []
-topics: [vcs,]
+topics:
+  - vcs
 author: pwe
 subtitle: See what's happening on that other branch.
 seealso:
   - title: Sync with a remote Git repository
-    href: https://www.jetbrains.com/help/webstorm/sync-with-a-remote-repository.html
+    href: 'https://www.jetbrains.com/help/webstorm/sync-with-a-remote-repository.html'
   - title: Explicitly check for incoming commits on remotes
-    href: https://www.jetbrains.com/help/webstorm/settings-version-control-git.html#66be8a1d
+    href: >-
+      https://www.jetbrains.com/help/webstorm/settings-version-control-git.html#66be8a1d
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-    poster: ./poster_short.png
-    url:  https://youtu.be/K6v4tAmXfLs
+  poster: ./poster_short.png
+  url: 'https://youtu.be/K6v4tAmXfLs'
 leadin: |
-    *Don't let other work trample on yours.*    
+  *Don't let other work trample on yours.*    
 
-    You're on a feature branch.
-    But work continues on main, and it might overlap with yours.
-    Let the IDE warn you when other branches have commits. 
+  You're on a feature branch.
+  But work continues on main, and it might overlap with yours.
+  Let the IDE warn you when other branches have commits.
 ---
 ## The Problem
 

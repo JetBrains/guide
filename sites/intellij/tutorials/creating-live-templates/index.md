@@ -1,10 +1,11 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2022-04-01
 title: Writing Less Code With Live Templates
-technologies: [java]
-topics: [livetemplates]
+topics:
+  - java
+  - livetemplates
 author: hs
 subtitle: How you can use live templates to get IntelliJ IDEA to write more code for you
 thumbnail: ./thumbnail.png

@@ -2,14 +2,15 @@
 type: TutorialStep
 date: 2020-06-10
 title: Testing Exceptions
-technologies: [pytest]
-topics: [testing]
+topics:
+  - pytest
+  - testing
 author: pwe
 subtitle: Write tests which ensure exceptions are raised when expected.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/eBO2FmoeLKw
+  url: 'https://youtu.be/eBO2FmoeLKw'
 ---
 
 In the previous step we showed how to debug a problem.

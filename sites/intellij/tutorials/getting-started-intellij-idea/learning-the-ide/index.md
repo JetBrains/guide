@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2023-02-03
 title: Learning the IDE
-technologies: []
 topics: []
 author: hs
 subtitle: Features inside the IDE to help get you up to speed quickly.
 thumbnail: ./thumbnail.png
-
 ---
 
 The Feature Trainer is bundled with IntelliJ IDEA and is a powerful tool that users who are new to the IDE can work through to help them go faster, quicker. We will look at:

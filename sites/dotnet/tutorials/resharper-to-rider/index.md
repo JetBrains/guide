@@ -1,15 +1,17 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-03-29
 title: Moving from Visual Studio to JetBrains Rider
-technologies: [.net]
-topics: [ide]
-products: [rider,resharper]
+topics:
+  - .net
+  - ide
+  - resharper
+  - rider
 author: khalidabuhakmeh
 subtitle: A jumpstart guide for Visual Studio + ReSharper users wanting to try Rider.
 thumbnail: ./thumbnail.png
-tutorialItems: 
+tutorialItems:
   - ./getting-started-for-resharper-users/
   - ./rider-debugger-for-resharper-users/
   - ./working-with-databases/

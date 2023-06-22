@@ -2,15 +2,20 @@
 type: TutorialStep
 date: 2020-07-15
 title: Version Control in Rider
-technologies: [.net, csharp]
-topics: [ide, vcs]
-products: [rider]
+topics:
+  - .net
+  - csharp
+  - ide
+  - rider
+  - vcs
 author: matkoch
-subtitle: Working with Git, commit code, rebase and switch branches. Let's explore version control (VCS)!
+subtitle: >-
+  Working with Git, commit code, rebase and switch branches. Let's explore
+  version control (VCS)!
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/_fTwymtpg78
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/_fTwymtpg78'
 ---
 
 ### Commit Changes

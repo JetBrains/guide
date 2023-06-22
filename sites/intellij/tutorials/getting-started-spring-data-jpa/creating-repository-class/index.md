@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-06-02
 title: Creating a Repository Interface
-technologies: []
 topics: []
 author: da
 subtitle: Create a Spring Data repository for CRUD operations.
 thumbnail: ./thumbnail.png
-
 ---
 
 Now that we've created our Employee entity, we need a way to perform our CRUD (Create, Read, Update, Delete) operations. Luckily, Spring Data JPA provides all the basic operations through Repositories. Let's see how they work.

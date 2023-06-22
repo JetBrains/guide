@@ -1,13 +1,18 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2020-12-02
 title: Web Fundamentals in Rider
-technologies: [asp.net, javascript]
-topics: [web,ide]
-products: [rider]
+topics:
+  - asp.net
+  - ide
+  - javascript
+  - rider
+  - web
 author: pwe
-subtitle: Learn how Rider helps you with web applications to build full-stack apps with ease.
+subtitle: >-
+  Learn how Rider helps you with web applications to build full-stack apps with
+  ease.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

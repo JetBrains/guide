@@ -2,14 +2,16 @@
 type: TutorialStep
 date: 2021-01-29
 title: Project Setup
-technologies: [aws]
-topics: []
+topics:
+  - aws
 author: mm
-subtitle: Install AWS SAM (Serverless Application Model), AWS CLI & finally PyCharm Plugin AWS Toolkit.
+subtitle: >-
+  Install AWS SAM (Serverless Application Model), AWS CLI & finally PyCharm
+  Plugin AWS Toolkit.
 thumbnail: ../thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/o4LdbOjarC0
+  url: 'https://youtu.be/o4LdbOjarC0'
 ---
 
 In this tutorial step, let's install all the required dependencies.

@@ -2,28 +2,29 @@
 hasBody: true
 date: 2019-04-18
 title: Speed Up Coverage with Configuration File
-technologies: []
-topics: [testing]
+topics:
+  - testing
 author: pwe
-subtitle: Speed up your "visual coverage" with a config file and correct working directory.
+subtitle: >-
+  Speed up your "visual coverage" with a config file and correct working
+  directory.
 seealso:
   - title: Coverage configuration files
-    href: https://coverage.readthedocs.io/en/coverage-5.0.4/config.html
+    href: 'https://coverage.readthedocs.io/en/coverage-5.0.4/config.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=PaQ5xTGFE1k
+  url: 'https://www.youtube.com/watch?v=PaQ5xTGFE1k'
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=OCH_gPfrvzw
+  url: 'https://www.youtube.com/watch?v=OCH_gPfrvzw'
 leadin: |
-    *Coverage is good, fast coverage is better.*    
+  *Coverage is good, fast coverage is better.*    
 
-    Python's `coverage` tool will by default measure in lots of places.
-    Like your dependencies and tests. Speed up coverage reporting 
-    by restricting where `coverage` will look.
-
+  Python's `coverage` tool will by default measure in lots of places.
+  Like your dependencies and tests. Speed up coverage reporting 
+  by restricting where `coverage` will look.
 ---
 
 Coverage is a boon: it lets you know how much of your code has tests and 

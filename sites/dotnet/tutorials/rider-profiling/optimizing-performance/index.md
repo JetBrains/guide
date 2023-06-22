@@ -2,15 +2,21 @@
 type: TutorialStep
 date: 2020-07-06
 title: Optimize Performance with Rider
-technologies: [.net, csharp]
-topics: [ide, profiling]
-products: [rider, dottrace]
+topics:
+  - .net
+  - csharp
+  - dottrace
+  - ide
+  - profiling
+  - rider
 author: maartenba
-subtitle: Let's try to optimize the Sudoku solver by profiling, and then optimizing code based on the performance snapshot.
+subtitle: >-
+  Let's try to optimize the Sudoku solver by profiling, and then optimizing code
+  based on the performance snapshot.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/P__B5MII4h8
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/P__B5MII4h8'
 ---
 
 ### Measure Performance with Sampling

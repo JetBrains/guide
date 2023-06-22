@@ -1,12 +1,12 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-01-29
 title: Developing Serverless APIs using AWS Toolkit
-technologies: [aws]
-topics: []
+topics:
+  - aws
 author: mm
-subtitle: Run, build, and deploy serverless functions in PyCharm.
+subtitle: 'Run, build, and deploy serverless functions in PyCharm.'
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./background/

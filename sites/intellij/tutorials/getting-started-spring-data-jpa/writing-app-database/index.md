@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-06-02
 title: Writing from your Application to the Database
-technologies: []
 topics: []
 author: da
 subtitle: Insert four employees into the database.
 thumbnail: ./thumbnail.png
-
 ---
 
 Now that we have our Employee entity, repository and database configuration, we are ready to write our application logic. Let's say we want to insert four employees to our database. We'll navigate to the `SpringDataJpaApplication` class that was created for our Spring Boot application (**Shift**+**Shift** to search for class).

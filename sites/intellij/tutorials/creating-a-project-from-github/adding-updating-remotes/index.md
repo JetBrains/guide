@@ -2,14 +2,13 @@
 type: TutorialStep
 date: 2021-11-09
 title: Adding and Updating Remotes
-technologies: []
 topics: []
 author: hs
 subtitle: Managing your remotes for your repository
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/aBVOAnygcZw?start=173
+  url: 'https://youtu.be/aBVOAnygcZw?start=173'
 ---
 
 When you're working with open source projects on GitHub, it's common to have more than one remote associated with a repository. If you go back to the intellij-samples project that we cloned from GitHub, we can see that this is actually a fork of another repository. 

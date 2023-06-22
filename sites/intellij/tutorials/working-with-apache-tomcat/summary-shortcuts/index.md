@@ -1,8 +1,7 @@
 ---
 type: TutorialStep
 date: 2022-05-10
-title: Summary and Shortcuts 
-technologies: []
+title: Summary and Shortcuts
 topics: []
 author: hs
 subtitle: Summary of working with Apache Tomcat in IntelliJ IDEA and shortcuts used

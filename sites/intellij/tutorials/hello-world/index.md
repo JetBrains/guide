@@ -1,12 +1,15 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-08-24
 title: Hello World in IntelliJ IDEA
-technologies: [java]
-topics: [gettingstarted]
+topics:
+  - gettingstarted
+  - java
 author: hs
-subtitle: Create a new Java application and JAR file that prints `Hello World` to the console. 
+subtitle: >-
+  Create a new Java application and JAR file that prints `Hello World` to the
+  console.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./creating-a-new-project/
@@ -17,3 +20,4 @@ tutorialItems:
   - ./making-a-change/
   - ./summary-and-shortcuts/
 ---
+

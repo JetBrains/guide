@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2021-08-09
 title: Introduction
-technologies: []
 topics: []
 author: hs
 subtitle: Introduction to Migrating JUnit 4 to JUnit 5

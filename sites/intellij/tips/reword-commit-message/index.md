@@ -2,24 +2,25 @@
 hasBody: true
 date: 2022-10-06
 title: Edit Commit Message
-technologies: []
-topics: [vcs]
+topics:
+  - vcs
 author: pwe
-subtitle: Edit the wording in your last commit message, after you committed.
+subtitle: 'Edit the wording in your last commit message, after you committed.'
 seealso:
   - title: Edit a commit message
-    href: https://www.jetbrains.com/help/idea/edit-project-history.html#reword-commit
+    href: >-
+      https://www.jetbrains.com/help/idea/edit-project-history.html#reword-commit
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/qjaCu9BYeUg
+  url: 'https://youtu.be/qjaCu9BYeUg'
 leadin: |
-    *Fix that message.*    
+  *Fix that message.*    
 
-    It always happens: as soon as you click `Commit`, you spot the typo 
-    in the message or remember a change. Use the VCS Log's `Reword` to 
-    fix it.
+  It always happens: as soon as you click `Commit`, you spot the typo 
+  in the message or remember a change. Use the VCS Log's `Reword` to 
+  fix it.
 ---
 
 That last commit message…(sigh)...had a typo.

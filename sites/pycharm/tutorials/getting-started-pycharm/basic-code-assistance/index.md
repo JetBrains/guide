@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2023-03-30
 title: Basic Code Assistance
-technologies: []
 topics: []
 author: hs
 subtitle: Learn about syntax highlighting and how to get code assistance.
@@ -10,7 +9,7 @@ thumbnail: thumbnail.png
 videoBottom: true
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/MCsDfAsxG-Q
+  url: 'https://youtu.be/MCsDfAsxG-Q'
 ---
 
 In the previous step, we saw how PyCharm makes it easy to work with your project’s Python packages. In this step, we are going to talk about one of the most important reasons to use PyCharm - code assistance. 

@@ -2,15 +2,15 @@
 type: TutorialStep
 date: 2022-10-25
 title: Remote Pairing
-technologies: [.net]
-products: []
-topics: [ide]
+topics:
+  - .net
+  - ide
 author: maartenba
 subtitle: Lorraine Steyn
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./thumbnail.png
-    url: https://youtu.be/zhYasPE1adQ
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/zhYasPE1adQ'
 ---
 
 Remote pairing is a fabulous combination of highly engaging remote development with high people engagement and collaboration. In this live demo, we will take you through a variety of pairing tools and talk about the challenges and successes of remote pairing in each one.

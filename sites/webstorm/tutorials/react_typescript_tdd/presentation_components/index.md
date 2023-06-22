@@ -2,15 +2,19 @@
 type: TutorialStep
 date: 2021-10-04
 title: Presentation and Container Components
-technologies: [react, typescript, jest]
-topics: []
+topics:
+  - jest
+  - react
+  - typescript
 author: pwe
-subtitle: Follow the React pattern of container/presentation components by refactoring the code and tests.
+subtitle: >-
+  Follow the React pattern of container/presentation components by refactoring
+  the code and tests.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/SnCGW6JUo4E
+  url: 'https://youtu.be/SnCGW6JUo4E'
 ---
 
 React encourages a separation of concerns.

@@ -2,14 +2,16 @@
 type: TutorialStep
 date: 2021-05-20
 title: Verify All
-technologies: []
-topics: [testing]
+topics:
+  - testing
 author: tg
-subtitle: Test frameworks often stop the test at the first failure. Find out how to run all conditions to see which pass and which fail. 
+subtitle: >-
+  Test frameworks often stop the test at the first failure. Find out how to run
+  all conditions to see which pass and which fail.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/i5Qu3qYOfsM?start=1893
+  url: 'https://youtu.be/i5Qu3qYOfsM?start=1893'
 ---
 
 Let's look at how to make sure all our assertions are run, regardless of whether one of them fails. Try this test (note that with string method names we can easily add quotes and other special characters).

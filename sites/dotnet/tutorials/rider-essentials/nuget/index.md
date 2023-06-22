@@ -2,15 +2,20 @@
 type: TutorialStep
 date: 2020-07-15
 title: NuGet Tool Window in Rider
-technologies: [.net, csharp]
-topics: [ide, editing]
-products: [rider]
+topics:
+  - .net
+  - csharp
+  - editing
+  - ide
+  - rider
 author: maartenba
-subtitle: Working with NuGet, including search with typos, CamelHumps, Update All, and more! 
+subtitle: >-
+  Working with NuGet, including search with typos, CamelHumps, Update All, and
+  more!
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/lnDQEcFWZIA
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/lnDQEcFWZIA'
 ---
 
 ### Managing Package References in Rider

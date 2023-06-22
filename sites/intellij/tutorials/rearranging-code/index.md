@@ -1,12 +1,14 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-09-20
 title: Rearranging Code in IntelliJ IDEA
-technologies: [java]
-topics: [settings, tricks]
+topics:
+  - java
+  - settings
+  - tricks
 author: hs
-subtitle: How you can rearrange code in your classes and projects 
+subtitle: How you can rearrange code in your classes and projects
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/
@@ -15,3 +17,4 @@ tutorialItems:
   - ./example-of-rearranging-code/
   - ./summary/
 ---
+

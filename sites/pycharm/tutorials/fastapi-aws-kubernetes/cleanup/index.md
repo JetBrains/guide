@@ -2,14 +2,17 @@
 type: TutorialStep
 date: 2022-01-02
 title: Cleanup
-technologies: [fastapi, kubernetes, aws]
-topics: [python]
+topics:
+  - aws
+  - fastapi
+  - kubernetes
+  - python
 author: mm
-subtitle: Cleaning up stack (removing RDS, EKS, ElastiCache, LoadBalancer, Route53).
+subtitle: 'Cleaning up stack (removing RDS, EKS, ElastiCache, LoadBalancer, Route53).'
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://www.youtube.com/watch?v=aba-RWIHR28
+  url: 'https://www.youtube.com/watch?v=aba-RWIHR28'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. 

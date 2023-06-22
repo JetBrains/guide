@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2022-10-03
 title: Font
-technologies: []
 topics: []
 author: md
 subtitle: Configuring font and font size
 thumbnail: ./thumbnail.png
-
 ---
 
 To configure font and font size, go to **Preferences > Editor > Font**. We can select the font we want to use, and set the font size.

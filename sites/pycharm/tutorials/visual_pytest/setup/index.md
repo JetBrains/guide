@@ -2,14 +2,17 @@
 type: TutorialStep
 date: 2020-06-10
 title: Project Setup
-technologies: [pytest]
-topics: [testing]
+topics:
+  - pytest
+  - testing
 author: pwe
-subtitle: Make a PyCharm project and virtual environment with dependencies, then configure PyCharm to use pytest.
+subtitle: >-
+  Make a PyCharm project and virtual environment with dependencies, then
+  configure PyCharm to use pytest.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/mLYTP41H8U0
+  url: 'https://youtu.be/mLYTP41H8U0'
 ---
 
 Python has projects and PyCharm does as well.

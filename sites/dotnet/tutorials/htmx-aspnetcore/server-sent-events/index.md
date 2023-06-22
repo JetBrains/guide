@@ -2,15 +2,21 @@
 type: TutorialStep
 date: 2022-04-27
 title: Server-sent events for realtime updates
-technologies: [.net, asp.net]
-products: [rider,resharper]
-topics: [data,web,editing,inspections]
+topics:
+  - .net
+  - asp.net
+  - data
+  - editing
+  - inspections
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
 subtitle: Send messages to clients in realtime
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./poster.png
-    url: https://youtu.be/SSC2rQ1UlTY
+  poster: ./poster.png
+  url: 'https://youtu.be/SSC2rQ1UlTY'
 ---
 
 In the previous sample, we saw that we could poll our server for updated information. While an acceptable approach, it's still a client calling the server without knowing any updated information is available. What if we only want to contact the server when there is new data to retrieve?

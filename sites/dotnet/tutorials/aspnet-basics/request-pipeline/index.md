@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2020-05-27
 title: Request Pipeline
-technologies: [asp.net]
-products: [rider,resharper]
-topics: [ide, web]
+topics:
+  - asp.net
+  - ide
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
 subtitle: Configuring our HTTP handlers in Startup
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/XRaUj6Y2Gi0
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/XRaUj6Y2Gi0'
 ---
 
 The `Configure` method in `Startup` outlines the runtime behavior of our web application. Here, we can register middleware and determine the path our requests will take.

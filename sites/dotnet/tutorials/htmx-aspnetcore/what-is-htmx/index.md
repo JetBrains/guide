@@ -2,15 +2,21 @@
 type: TutorialStep
 date: 2022-04-27
 title: What is HTMX?
-technologies: [.net, asp.net]
-products: [rider,resharper]
-topics: [data,web,editing,inspections]
+topics:
+  - .net
+  - asp.net
+  - data
+  - editing
+  - inspections
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
 subtitle: Understanding the spirit of the HTMX library
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./poster.png
-    url: https://youtu.be/J9vubzONlqo
+  poster: ./poster.png
+  url: 'https://youtu.be/J9vubzONlqo'
 ---
 
 Most client-side JavaScript stacks assume that you will adopt all the philosophies and strategies as part of the development process: State management, routing, UI rendering, and asset management. The less you deviate from the prescribed happy path, the more likely you are to succeed, or at least that's the idea. While the approach works, it mostly ignores the strengths found within your server-side technology of choice. In the case of this series, we're talking about the improvements in ASP.NET Core and the decades of improvements that have gone into .NET to make it a solid choice. Picking a frontend library can sometimes feel like the proverbial ["throwing the baby out with the bathwater"](https://en.wikipedia.org/wiki/Don%27t_throw_the_baby_out_with_the_bathwater).

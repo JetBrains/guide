@@ -2,14 +2,13 @@
 type: TutorialStep
 date: 2021-08-09
 title: Other approaches to consider
-technologies: []
 topics: []
 author: hs
 subtitle: There are other approaches that you can consider for migration
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/F8UTTTDtbH0?start=771
+  url: 'https://youtu.be/F8UTTTDtbH0?start=771'
 ---
 
 To finish removing references to JUnit 4 classes, we could do [Find in Files](https://www.jetbrains.com/help/idea/finding-and-replacing-text-in-project.html) search for `org.junit`. This will show up everything, including our new Jupiter classes. We could try an expression to capture that the next character after the dot needs to be an upper case letter: `org.JUnit.[A-Z]`. This is a regular expression, we need to toggle the case-sensitive option, and we need to make sure we specify searching [with a regular expression](https://www.jetbrains.com/help/idea/finding-and-replacing-text-in-project.html#limit_search). 

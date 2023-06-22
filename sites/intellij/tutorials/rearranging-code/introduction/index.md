@@ -2,10 +2,9 @@
 type: TutorialStep
 date: 2021-09-20
 title: Introduction
-technologies: []
 topics: []
 author: hs
-subtitle: This tutorial will cover rearranging code at a class and project level. 
+subtitle: This tutorial will cover rearranging code at a class and project level.
 thumbnail: ./thumbnail.png
 ---
 

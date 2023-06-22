@@ -2,14 +2,15 @@
 type: TutorialStep
 date: 2021-05-14
 title: Tour of a Gradle project
-technologies: [gradle]
-topics: [interface]
+topics:
+  - gradle
+  - interface
 author: tg
 subtitle: Take a look around a standard Gradle project to understand it better.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/6V6G3RyxEMk?start=139
+  url: 'https://youtu.be/6V6G3RyxEMk?start=139'
 ---
 
 Let's take a look at our Gradle project. 

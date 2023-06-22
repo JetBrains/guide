@@ -2,15 +2,17 @@
 type: TutorialStep
 date: 2021-10-04
 title: TSX and ES6
-technologies: [react]
-topics: []
+topics:
+  - react
 author: pwe
-subtitle: Using React and TypeScript means good JSX and ES6+ support in the IDE. This section shows some useful features from both.
+subtitle: >-
+  Using React and TypeScript means good JSX and ES6+ support in the IDE. This
+  section shows some useful features from both.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/JXrZDUzkc2Q
+  url: 'https://youtu.be/JXrZDUzkc2Q'
 ---
 
 TypeScript is a JavaScript superset with a compiler that enforces the types.

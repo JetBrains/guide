@@ -2,25 +2,26 @@
 hasBody: true
 date: 2018-12-01
 title: Reformat Code
-technologies: []
-topics: [editing]
+topics:
+  - editing
 author: pwe
 subtitle: Tell PyCharm to clean up indentation and other code style in your file.
 seealso:
   - title: Reformatting Source Code
-    href: https://www.jetbrains.com/help/pycharm/reformatting-source-code.html
+    href: 'https://www.jetbrains.com/help/pycharm/reformatting-source-code.html'
   - title: Code Style - Python
-    href: https://www.jetbrains.com/help/pycharm/code-style-python.html
+    href: 'https://www.jetbrains.com/help/pycharm/code-style-python.html'
   - title: Reformat and rearrange code
-    href: https://www.jetbrains.com/help/pycharm/basic-editing-procedures.html#reformat_rearrange_code
+    href: >-
+      https://www.jetbrains.com/help/pycharm/basic-editing-procedures.html#reformat_rearrange_code
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=EP_twi6rDOY
+  url: 'https://www.youtube.com/watch?v=EP_twi6rDOY'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/0WfDm3KQ-Cw
+  url: 'https://youtu.be/0WfDm3KQ-Cw'
 leadin: |
   *If re-indenting your code or fixing long lines doesn't 
   sound fun, let PyCharm do it for you.*

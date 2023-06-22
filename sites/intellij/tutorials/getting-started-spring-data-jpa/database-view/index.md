@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-06-02
 title: Creating a Data Source
-technologies: []
 topics: []
 author: da
-subtitle: In the Database View, create a data source for our database.
+subtitle: 'In the Database View, create a data source for our database.'
 thumbnail: ./thumbnail.png
-
 ---
 
 Whenever you're working with databases in your projects, it's very useful to create a data source connection to your database in IntelliJ IDEA. It allows you to easily interact with your database right within your IDE. Let's do that for our [H2](https://www.h2database.com/html/main.html) database. If you're using a different database, you can use similar steps, or you can follow the instructions outlined in the IntelliJ IDEA [database connection help page](https://www.jetbrains.com/help/idea/connecting-to-a-database.html). Note that this feature is only available in [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/features/editions_comparison_matrix.html).

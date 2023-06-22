@@ -2,15 +2,19 @@
 type: TutorialStep
 date: 2021-03-01
 title: Debugging Applications with ReSharper
-technologies: [.net, csharp]
-topics: [debugging]
-products: [resharper]
+topics:
+  - .net
+  - csharp
+  - debugging
+  - resharper
 author: khalidabuhakmeh
-subtitle: What is your code doing? Identify problematic code, and run code step-by-step with the debugger.
+subtitle: >-
+  What is your code doing? Identify problematic code, and run code step-by-step
+  with the debugger.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/ZIEiWWz60Z4
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/ZIEiWWz60Z4'
 ---
 
 ### A Better Debugging Experience

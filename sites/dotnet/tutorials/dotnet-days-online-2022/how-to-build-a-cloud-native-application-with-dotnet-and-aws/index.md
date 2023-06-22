@@ -2,15 +2,20 @@
 type: TutorialStep
 date: 2022-10-26
 title: How to build a cloud native application with .NET and AWS
-technologies: [.net,containers]
-products: [rider]
-topics: [editing,debugging,ide,web]
+topics:
+  - .net
+  - containers
+  - debugging
+  - editing
+  - ide
+  - rider
+  - web
 author: maartenba
 subtitle: François Bouteruche
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./thumbnail.png
-    url: https://youtu.be/loqPXKDwbp4
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/loqPXKDwbp4'
 ---
 
 .NET has a long history on AWS. It has been supported for more than 11 years. The AWS SDK for .NET was the first-ever AWS SDK released.

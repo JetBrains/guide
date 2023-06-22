@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-05-14
 title: Introduction
-technologies: []
 topics: []
 author: tg
 subtitle: Introduction to working with Gradle and Gradle projects in IntelliJ IDEA
 thumbnail: ./thumbnail.png
-
 ---
 
 In this tutorial, we're going to look at how to work with Gradle projects in IntelliJ IDEA. We'll cover working with both new and existing projects, and see some IntelliJ IDEA features that make it easier to work with Gradle projects.

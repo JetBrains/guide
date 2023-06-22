@@ -2,14 +2,14 @@
 type: TutorialStep
 date: 2021-05-14
 title: Gradle dependencies
-technologies: [gradle]
-topics: []
+topics:
+  - gradle
 author: tg
 subtitle: Add or update dependencies in your build.gradle file.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/6V6G3RyxEMk?start=348
+  url: 'https://youtu.be/6V6G3RyxEMk?start=348'
 ---
 
 Let's look at Gradle dependencies in a bit more detail. We can add a new dependency upon an external library using **⌘N** (macOS) or **Alt+Insert** (Windows/Linux), and selecting "Add Maven Artifact Dependency". 

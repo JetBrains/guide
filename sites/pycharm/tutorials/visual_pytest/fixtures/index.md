@@ -2,14 +2,15 @@
 type: TutorialStep
 date: 2020-06-10
 title: Test Fixtures
-technologies: [pytest]
-topics: [testing]
+topics:
+  - pytest
+  - testing
 author: pwe
 subtitle: Make your tests more focused by moving sample data to pytest fixtures.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/lidTnXTFssM
+  url: 'https://youtu.be/lidTnXTFssM'
 ---
 
 Each test recreates `Player` and `Guardian` instances, which is repetitive and distracts from the test's purpose.

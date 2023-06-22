@@ -2,15 +2,17 @@
 type: TutorialStep
 date: 2020-07-15
 title: Navigation in a code base with Rider
-technologies: [.net, csharp]
-topics: [navigation]
-products: [rider]
+topics:
+  - .net
+  - csharp
+  - navigation
+  - rider
 author: rachelappel
 subtitle: How to navigate around a code base? Let's look at some easy ways of doing so.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/yZ_KkSBJD7g
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/yZ_KkSBJD7g'
 ---
 
 ### Navigating Code in Rider

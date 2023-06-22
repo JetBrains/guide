@@ -2,14 +2,17 @@
 type: TutorialStep
 date: 2022-01-02
 title: Celery & Redis
-technologies: [fastapi, kubernetes, aws]
-topics: [python]
+topics:
+  - aws
+  - fastapi
+  - kubernetes
+  - python
 author: mm
 subtitle: Configuring Celery & Redis with FastAPI.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://www.youtube.com/watch?v=RWxnQW1bU3E
+  url: 'https://www.youtube.com/watch?v=RWxnQW1bU3E'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. 

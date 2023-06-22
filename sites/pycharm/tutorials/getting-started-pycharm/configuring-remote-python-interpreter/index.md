@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2023-03-30
 title: Configuring a Remote Python Interpreter
-technologies: []
 topics: []
 author: hs
 subtitle: How to work with a remote Python interpreter.
@@ -10,7 +9,7 @@ thumbnail: thumbnail.png
 videoBottom: true
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/6RlgQBB1UDU
+  url: 'https://youtu.be/6RlgQBB1UDU'
 ---
 
 We just looked at configuring a local interpreter. But we don’t always have a “local” environment. Sometimes – and increasingly often – our environment is *over there*.

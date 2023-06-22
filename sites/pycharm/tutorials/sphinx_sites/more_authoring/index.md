@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-13
 title: More Authoring
-technologies: [sphinx]
-topics: []
+topics:
+  - sphinx
 author: pwe
 subtitle: Simple Markdown stuff is cool. The cool Markdown stuff is double cool.
 thumbnail: thumbnail.png

@@ -2,14 +2,15 @@
 type: TutorialStep
 date: 2021-05-14
 title: The Gradle Tool Window
-technologies: [gradle]
-topics: [build]
+topics:
+  - build
+  - gradle
 author: tg
 subtitle: How to find the Gradle tool window.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/6V6G3RyxEMk?start=713
+  url: 'https://youtu.be/6V6G3RyxEMk?start=713'
 ---
 
 The [Gradle Tool Window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html) is a very useful way to work with Gradle in IntelliJ IDEA. Let's look at how to get to it.

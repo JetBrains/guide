@@ -2,15 +2,19 @@
 type: TutorialStep
 date: 2021-03-01
 title: Introduction
-technologies: [.net, csharp]
-topics: [ide, editing, inspections]
-products: [resharper]
+topics:
+  - .net
+  - csharp
+  - editing
+  - ide
+  - inspections
+  - resharper
 author: maartenba
 subtitle: Introduction to the ReSharper Essentials series.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/4APs6Vg5s4I
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/4APs6Vg5s4I'
 ---
 
 ReSharper is an extension for Visual Studio. It helps you write and refactor code, and analyzes your code to detect potential issues, resulting in a better code base overall.

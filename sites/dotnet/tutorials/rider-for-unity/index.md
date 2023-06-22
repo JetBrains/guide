@@ -1,11 +1,15 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2023-04-04
 title: Creating Games With Unity - Scripting Logic With Rider
-technologies: [.net,unity]
-topics: [gaming,ide,editing]
-products: [rider]
+topics:
+  - .net
+  - editing
+  - gaming
+  - ide
+  - rider
+  - unity
 author: maartenba
 subtitle: JetBrains Rider is the best scripting editor for Unity – let's find out why!
 thumbnail: ./thumbnail.png

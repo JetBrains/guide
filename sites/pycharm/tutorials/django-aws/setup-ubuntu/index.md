@@ -2,14 +2,16 @@
 type: TutorialStep
 date: 2021-04-09
 title: Setup Ubuntu Desktop in AWS using NICE DCV
-technologies: [django,aws]
-topics: [python]
+topics:
+  - aws
+  - django
+  - python
 author: mm
 subtitle: Configure security group and launch a new instance.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/mwIKy8JnJ7A
+  url: 'https://youtu.be/mwIKy8JnJ7A'
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial

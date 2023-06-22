@@ -2,20 +2,22 @@
 label: B
 date: 2019-02-04
 title: Navigation Bar Intro
-technologies: [pytest]
-topics: [navigation, navigationbar]
+topics:
+  - navigation
+  - navigationbar
+  - pytest
 author: pwe
-subtitle: Move around files with keyboard, without wasting screen UI space
+subtitle: 'Move around files with keyboard, without wasting screen UI space'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 longVideo: true
 playlistItems:
-    - /pycharm/tips/navbar-activate/
-    - /pycharm/tips/navbar-navigate-files/
-    - /pycharm/tips/navbar-open-file/
-    - /pycharm/tips/navbar-create-file/
-    - /pycharm/tips/navbar-speed-search/
-    - /pycharm/tips/navbar-find-in-path/
+  - /pycharm/tips/navbar-activate/
+  - /pycharm/tips/navbar-navigate-files/
+  - /pycharm/tips/navbar-open-file/
+  - /pycharm/tips/navbar-create-file/
+  - /pycharm/tips/navbar-speed-search/
+  - /pycharm/tips/navbar-find-in-path/
 ---
 
 We want to get you into the flow of development. No UI distractions, hands 

@@ -1,16 +1,22 @@
 ---
 type: TutorialStep
 date: 2022-04-27
-title: Hello, HTMX!
-technologies: [.net, asp.net]
-products: [rider,resharper]
-topics: [data,web,editing,inspections]
+title: 'Hello, HTMX!'
+topics:
+  - .net
+  - asp.net
+  - data
+  - editing
+  - inspections
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
-subtitle: No series is complete without a "Hello, World" sample
+subtitle: 'No series is complete without a "Hello, World" sample'
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./poster.png
-    url: https://youtu.be/-GG_7oBv0dY
+  poster: ./poster.png
+  url: 'https://youtu.be/-GG_7oBv0dY'
 ---
 
 What would a video series be without a "Hello, World!" example. Starting on our page, we have a button. Our goal is to click the button and change the HTML element that says "Change Me" into displaying hello world.

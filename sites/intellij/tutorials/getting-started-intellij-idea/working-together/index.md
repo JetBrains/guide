@@ -2,12 +2,12 @@
 type: TutorialStep
 date: 2023-02-03
 title: Working together
-technologies: []
 topics: []
 author: hs
-subtitle: Pairing with another is a great way to show off your skills and help others be awesome
+subtitle: >-
+  Pairing with another is a great way to show off your skills and help others be
+  awesome
 thumbnail: ./thumbnail.png
-
 ---
 
 **This tutorial uses the new user interface throughout. You can access it from your Settings/Preferences (**⌘,** | **Ctrl+Alt+S**) and then search for "new UI". IntelliJ IDEA will then ask to restart and away you go!**

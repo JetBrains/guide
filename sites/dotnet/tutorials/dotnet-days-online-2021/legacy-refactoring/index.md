@@ -2,15 +2,17 @@
 type: TutorialStep
 date: 2021-05-12
 title: Legacy Refactoring
-technologies: [.net]
-products: [rider,resharper]
-topics: [refactoring]
+topics:
+  - .net
+  - refactoring
+  - resharper
+  - rider
 author: maartenba
 subtitle: Lorraine Steyn
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/VaeZW1RISAY
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/VaeZW1RISAY'
 ---
 
 This will be a talk on strategies we have employed to "rescue" legacy code, and how you prevent your system from becoming the Big Ball of Mud. It's not code specific, but it is aimed at developers.

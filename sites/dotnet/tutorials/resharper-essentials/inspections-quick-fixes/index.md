@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2021-03-01
 title: Inspections and Quick-Fixes in ReSharper
-technologies: [.net, csharp]
-topics: [completion, inspections]
-products: [resharper]
+topics:
+  - .net
+  - completion
+  - csharp
+  - inspections
+  - resharper
 author: matkoch
-subtitle: Helping you write better code, faster, and automatically fixes code issues.
+subtitle: 'Helping you write better code, faster, and automatically fixes code issues.'
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./poster.png
-    url: https://youtu.be/RgDGJ9H63n4
+  poster: ./poster.png
+  url: 'https://youtu.be/RgDGJ9H63n4'
 ---
 
 ### What are Inspections and Quick-Fixes?

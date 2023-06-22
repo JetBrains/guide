@@ -1,16 +1,19 @@
 ---
 type: TutorialStep
 date: 2022-10-26
-title: "REST, GraphQL and gRPC: A Comparison"
-technologies: [.net,asp.net]
-products: [rider,resharper]
-topics: [web]
+title: 'REST, GraphQL and gRPC: A Comparison'
+topics:
+  - .net
+  - asp.net
+  - resharper
+  - rider
+  - web
 author: maartenba
 subtitle: Poornima Nayar
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./thumbnail.png
-    url: https://youtu.be/y7_gJXrVzLk
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/y7_gJXrVzLk'
 ---
 
 No matter the industry, applications need to talk to each other. So, developers often build bridges – Application Programming Interfaces (APIs) – to allow one system to communicate with another.

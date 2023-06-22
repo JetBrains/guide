@@ -2,14 +2,15 @@
 type: TutorialStep
 date: 2021-05-14
 title: Summary - Configuring IntelliJ IDEA
-technologies: []
 topics: []
 author: hs
-subtitle: Both Project Structure and Preferences/Settings provide ways to make IntelliJ IDEA your own 
+subtitle: >-
+  Both Project Structure and Preferences/Settings provide ways to make IntelliJ
+  IDEA your own
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/FtGS81ZNTE0
+  url: 'https://youtu.be/FtGS81ZNTE0'
 ---
 
 ## Summary - Configuring IntelliJ IDEA

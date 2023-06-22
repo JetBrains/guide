@@ -2,18 +2,21 @@
 label: new-features-in-goland-2022-3
 date: 2022-11-14
 title: New Features in GoLand 2022.3
-technologies: [go]
-topics: [quick-fixes,generics,settings]
+topics:
+  - generics
+  - go
+  - quick-fixes
+  - settings
 author: ap
 subtitle: A selection of useful features from GoLand 2022.3.
 cardThumbnail: ./card.png
 thumbnail: ./thumbnail.png
 playlistItems:
-    - /goland/tips/code-vision-in-editor/
-    - /goland/tips/generate-a-test-for-generic-function/
-    - /goland/tips/generate-go-work/
-    - /goland/tips/quick-documentation-go-doc-comments/
-    - /goland/tips/integrated-go-playground/
+  - /goland/tips/code-vision-in-editor/
+  - /goland/tips/generate-a-test-for-generic-function/
+  - /goland/tips/generate-go-work/
+  - /goland/tips/quick-documentation-go-doc-comments/
+  - /goland/tips/integrated-go-playground/
 ---
 
 For more information about what's new in GoLand 2022.3, check out our [What's New Page](https://jetbrains.com/go/whatsnew) or browse the tips below.

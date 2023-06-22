@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2021-09-20
 title: Example of Moving Code Around
-technologies: []
 topics: []
 author: hs
 subtitle: Invoking Rearrange Code on a Class and Viewing the results

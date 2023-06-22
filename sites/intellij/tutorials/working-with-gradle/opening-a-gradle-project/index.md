@@ -2,14 +2,15 @@
 type: TutorialStep
 date: 2021-05-14
 title: Opening a Gradle project
-technologies: [gradle]
-topics: [gettingstarted]
+topics:
+  - gettingstarted
+  - gradle
 author: tg
 subtitle: What you need to know to get started with an existing Gradle project
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/6V6G3RyxEMk?start=586
+  url: 'https://youtu.be/6V6G3RyxEMk?start=586'
 ---
 
 We've covered creating new Gradle projects, let's look at what's probably the more common case, importing existing Gradle projects into IntelliJ IDEA.

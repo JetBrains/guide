@@ -2,12 +2,11 @@
 type: TutorialStep
 date: 2023-02-06
 title: Summary and Shortcuts
-technologies: []
-topics: [tricks]
+topics:
+  - tricks
 author: md
 subtitle: Using bookmarks in IntelliJ IDEA Summary
 thumbnail: ./thumbnail.png
-
 ---
 
 As we've seen, bookmarks allow us to "save" certain interesting locations in the code base, so we can easily go back to them later. Now we know how to create bookmarks and how to navigate to bookmarks we have created.

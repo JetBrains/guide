@@ -2,15 +2,19 @@
 type: TutorialStep
 date: 2022-10-26
 title: Message processing failed! But what's the root cause?
-technologies: [.net,csharp]
-products: [rider,resharper]
-topics: [ide,debugging]
+topics:
+  - .net
+  - csharp
+  - debugging
+  - ide
+  - resharper
+  - rider
 author: maartenba
 subtitle: Laila Bougria
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./thumbnail.png
-    url: https://youtu.be/LdpBOG0e5tY
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/LdpBOG0e5tY'
 ---
 
 Teams that are new to building and maintaining distributed systems with messaging are faced with challenges when it comes to investigating failure scenarios. With messages flowing through the system, it's hard to quickly identify where a failure originates from and why it's occurring. Without a call stack to guide you, we need other techniques to keep a good overview.

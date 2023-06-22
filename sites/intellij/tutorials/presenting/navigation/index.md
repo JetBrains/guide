@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2022-10-03
 title: Navigation
-technologies: []
 topics: []
 author: md
 subtitle: Shortcuts to navigate a project
 thumbnail: ./thumbnail.png
-
 ---
 
 We can use several shortcuts to navigate around a project:

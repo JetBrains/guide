@@ -1,28 +1,38 @@
 ---
 date: 2020-10-15
-title: 'Install and import'
-technologies: [go]
-topics: [editing]
+title: Install and import
+topics:
+  - editing
+  - go
 author: dlsniper
 subtitle: 'While typing a symbol, let GoLand install it and generate the import.'
 seealso:
-  - title: 'Creating and Optimizing Imports'
+  - title: Creating and Optimizing Imports
     href: 'https://www.jetbrains.com/help/go/creating-and-optimizing-imports.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=pd4_YckrM18&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=59
-leadin: |
-    *Type the symbol, let your IDE install the package and write the import.*
+  url: >-
+    https://www.youtube.com/watch?v=pd4_YckrM18&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=59
+leadin: >
+  *Type the symbol, let your IDE install the package and write the import.*
 
-    GoLand can generate your import for you, even when you haven't installed the package.
-  
-    **How to use:**
 
-    Press _Alt + Enter on Windows/Linux_ or _⌥ + Enter on macOS_ to invoke
-    the list of quick-fixes on the red import line and select
-    **Sync packages of <project\>** to import the package into your project.
+  GoLand can generate your import for you, even when you haven't installed the
+  package.
 
-    <span class="tag is-rounded">New in 2017.3</span>
+
+  **How to use:**
+
+
+  Press _Alt + Enter on Windows/Linux_ or _⌥ + Enter on macOS_ to invoke
+
+  the list of quick-fixes on the red import line and select
+
+  **Sync packages of <project\>** to import the package into your project.
+
+
+  <span class="tag is-rounded">New in 2017.3</span>
 ---
+

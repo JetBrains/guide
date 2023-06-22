@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2023-02-03
 title: Navigating code
-technologies: []
 topics: []
 author: hs
 subtitle: Tips to help you navigate through your codebase.
 thumbnail: ./thumbnail.png
-
 ---
 
 Navigating code is a crucial skill that we can get faster at with our IDE by using the various keyboard shortcuts to move around the codebase based on recent context, what something in the code does, or to move backwards and forwards based on our movements in time. We will look at:

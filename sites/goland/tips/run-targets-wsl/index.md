@@ -1,15 +1,19 @@
 ---
 date: 2021-05-24
-title: 'Run Target support via WSL'
-technologies: [go]
-topics: [running, debugging, debugging]
+title: Run Target support via WSL
+topics:
+  - debugging
+  - debugging
+  - go
+  - running
 author: dlsniper
-subtitle: 'Run your application or tests in Windows Subsystem for Linux (WSL) with ease'
+subtitle: Run your application or tests in Windows Subsystem for Linux (WSL) with ease
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=bjukeT3p0Mc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=108
+  url: >-
+    https://www.youtube.com/watch?v=bjukeT3p0Mc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=108
 leadin: |
   Run Targets are a new IDE feature that allows you to run code
   in environments where GoLand is not installed.
@@ -20,7 +24,7 @@ leadin: |
 
   If not targets exist, then click on the *Manage Targets*, next
   to the *Run on* field.
-  
+
   Then, click on the _+_ button and select in which environment
   you want to run the application or test.
 
@@ -42,3 +46,4 @@ leadin: |
 
   <span class="tag is-rounded">New in 2021.1</span>
 ---
+

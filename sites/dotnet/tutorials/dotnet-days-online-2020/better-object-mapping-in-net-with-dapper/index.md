@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2020-05-14
 title: Better Object Mapping in .NET with Dapper
-technologies: [.net]
-products: [rider,resharper]
-topics: [web, ide]
+topics:
+  - .net
+  - ide
+  - resharper
+  - rider
+  - web
 author: maartenba
 subtitle: Kevin Griffin
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/glhRrF49M-Q
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/glhRrF49M-Q'
 ---
 
 When people talk about using ORMs (Object Relational Mappers) like Entity Framework or nHibernate in their projects, often they are only looking for one fundamental feature: the ability to map SQL output to a C# object. Large ORM-based solutions add additional complexity, and black-box much of what is happening behind the scenes. 

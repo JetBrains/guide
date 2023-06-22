@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-06-02
 title: Configuring your Database
-technologies: []
 topics: []
 author: da
 subtitle: Configure the application to connect to our database.
 thumbnail: ./thumbnail.png
-
 ---
 
 At this point, we can use the default in-memory database that Spring Boot creates for us. However, the default database functionality is limited and doesn't allow data to stay around after the application terminates so let's go ahead and configure a database.

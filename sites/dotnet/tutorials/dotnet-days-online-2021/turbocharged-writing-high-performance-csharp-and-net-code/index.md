@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2021-05-11
 title: Turbocharged - Writing High-performance C# and .NET code
-technologies: [.net,csharp]
-products: [rider,resharper]
-topics: [ide]
+topics:
+  - .net
+  - csharp
+  - ide
+  - resharper
+  - rider
 author: maartenba
 subtitle: Steve Gordon
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/g8MYUfplpt8
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/g8MYUfplpt8'
 ---
 
 In this session, you'll learn how to write C# code which executes faster and allocates less. This session is packed with practical examples and demos of where the latest high-performance APIs and language features can be applied in your applications.

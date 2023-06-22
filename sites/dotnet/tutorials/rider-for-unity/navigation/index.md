@@ -2,17 +2,21 @@
 type: TutorialStep
 date: 2023-04-04
 title: Navigating around a Unity project
-technologies: [.net,unity]
-topics: [gaming,ide,navigation]
-products: [rider]
+topics:
+  - .net
+  - gaming
+  - ide
+  - navigation
+  - rider
+  - unity
 author: citizenmatt
-subtitle: Find your way around your code base, asset usages, and more.
+subtitle: 'Find your way around your code base, asset usages, and more.'
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=gNTOFr_TQCg
-    start: 528
-    end: 693
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
+  start: 528
+  end: 693
 ---
 
 Easily find your code, and easily find the assets that are referencing your code!

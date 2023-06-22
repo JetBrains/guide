@@ -1,13 +1,18 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2022-04-27
 title: HTMX for ASP.NET Core Developers
-technologies: [asp.net]
-topics: [web, ide]
-products: [rider,resharper]
+topics:
+  - asp.net
+  - ide
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
-subtitle: A set of videos explaining what HTMX is, and how ASP.NET Core developers can use it to create rich client-side experiences.
+subtitle: >-
+  A set of videos explaining what HTMX is, and how ASP.NET Core developers can
+  use it to create rich client-side experiences.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

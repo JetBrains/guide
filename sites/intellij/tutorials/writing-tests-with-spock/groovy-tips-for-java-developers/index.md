@@ -2,14 +2,16 @@
 type: TutorialStep
 date: 2021-05-20
 title: Groovy Tips for Java Developers
-technologies: [groovy]
-topics: []
+topics:
+  - groovy
 author: tg
-subtitle: Groovy's syntax and functionality might be unusual for Java developers to begin with, but it can be very helpful for testing. 
+subtitle: >-
+  Groovy's syntax and functionality might be unusual for Java developers to
+  begin with, but it can be very helpful for testing.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/i5Qu3qYOfsM?start=486
+  url: 'https://youtu.be/i5Qu3qYOfsM?start=486'
 ---
 Before going further with Spock examples, let's take a look at some things which might look odd if we're used to using [Java](../../../technologies/java) to test Java code.
 

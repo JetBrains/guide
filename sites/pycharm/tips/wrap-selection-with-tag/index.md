@@ -2,27 +2,27 @@
 hasBody: true
 date: 2019-04-17
 title: Wrap Selection With Tag
-technologies: []
-topics: [web, ]
+topics:
+  - web
 author: pwe
 subtitle: Use the keyboard to put a wrapper tag around a selection of code.
 seealso:
   - title: Surround code fragments
-    href: https://www.jetbrains.com/help/pycharm/surrounding-blocks-of-code-with-language-constructs.html#Surrounding_Blocks_of_Code_with_Language_Constructs.xml
+    href: >-
+      https://www.jetbrains.com/help/pycharm/surrounding-blocks-of-code-with-language-constructs.html#Surrounding_Blocks_of_Code_with_Language_Constructs.xml
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=rj7g7SNPQas
+  url: 'https://www.youtube.com/watch?v=rj7g7SNPQas'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/GK7DEI6zOB8
+  url: 'https://youtu.be/GK7DEI6zOB8'
 leadin: |
-    *HTML tag surrounding, the easy way.*    
+  *HTML tag surrounding, the easy way.*    
 
-    You need a `div` around a block. Use the keyboard not just for 
-    selection, but also for adding the tag to surround with.
-
+  You need a `div` around a block. Use the keyboard not just for 
+  selection, but also for adding the tag to surround with.
 ---
 
 You're in an HTML file, working on a nice block of markup, and realize your 

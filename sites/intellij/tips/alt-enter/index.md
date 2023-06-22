@@ -2,27 +2,32 @@
 hasBody: true
 date: 2021-05-28
 title: Alt+Enter
-technologies: [java]
-topics: [editing, inspections]
+topics:
+  - editing
+  - inspections
+  - java
 author: tg
-subtitle: Context Actions are available from most places in the code. 
+subtitle: Context Actions are available from most places in the code.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/73w_X5Bfq7U
+  url: 'https://youtu.be/73w_X5Bfq7U'
 seealso:
   - title: (video) IntelliJ IDEA Pro Tips Alt Enter
-    href: https://www.youtube.com/watch?v=pWHgNm6aGdo
-  - title: (blog) IntelliJ IDEA Blog - Alt+Enter, the Problem-solving Shortcut
-    href: https://blog.jetbrains.com/idea/2020/08/alt-enter-the-problem-solving-shortcut/
+    href: 'https://www.youtube.com/watch?v=pWHgNm6aGdo'
+  - title: '(blog) IntelliJ IDEA Blog - Alt+Enter, the Problem-solving Shortcut'
+    href: >-
+      https://blog.jetbrains.com/idea/2020/08/alt-enter-the-problem-solving-shortcut/
   - title: (documentation) IntelliJ IDEA Help - Inspections
-    href: https://www.jetbrains.com/help/idea/inspections-settings.html
+    href: 'https://www.jetbrains.com/help/idea/inspections-settings.html'
   - title: (documentation) IntelliJ IDEA Help - Intention Actions
-    href: https://www.jetbrains.com/help/idea/intention-actions.html
-leadin: |
-  IntelliJ IDEA offers intelligent suggestions most places in the code. It can offer fixes for compiler errors and inspection warnings. It can even use intentions to suggest other ways in which you could write code even if there's no warning or error.
-
+    href: 'https://www.jetbrains.com/help/idea/intention-actions.html'
+leadin: >
+  IntelliJ IDEA offers intelligent suggestions most places in the code. It can
+  offer fixes for compiler errors and inspection warnings. It can even use
+  intentions to suggest other ways in which you could write code even if there's
+  no warning or error.
 ---
 
   IntelliJ IDEA lets you know that it has suggestions for you with a light-bulb on the left-hand side of the code. This light-bulb is red for errors, and yellow for other suggestions.

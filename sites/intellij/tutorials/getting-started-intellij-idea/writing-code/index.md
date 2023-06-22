@@ -2,10 +2,11 @@
 type: TutorialStep
 date: 2023-02-03
 title: Writing code
-technologies: []
 topics: []
 author: hs
-subtitle: IntelliJ IDEA can help you to write code quickly and efficiently while minimising compilation errors.
+subtitle: >-
+  IntelliJ IDEA can help you to write code quickly and efficiently while
+  minimising compilation errors.
 thumbnail: ./thumbnail.png
 ---
 

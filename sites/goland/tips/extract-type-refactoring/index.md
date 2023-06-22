@@ -1,15 +1,19 @@
 ---
 date: 2021-05-24
-title: 'Extract Type Refactoring'
-technologies: [go]
-topics: [refactoring]
+title: Extract Type Refactoring
+topics:
+  - go
+  - refactoring
 author: dlsniper
-subtitle: 'Extract a type into its own definition and improve the  reusability in your code'
+subtitle: >-
+  Extract a type into its own definition and improve the  reusability in your
+  code
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=fFJi3OSSWns&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=44
+  url: >-
+    https://www.youtube.com/watch?v=fFJi3OSSWns&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=44
 leadin: |
   If you have an anonymous type defined, you can extract it into a
   standalone type and reuse it across your code.
@@ -25,3 +29,4 @@ leadin: |
 
   <span class="tag is-rounded">New in 2021.1</span>
 ---
+

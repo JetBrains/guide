@@ -2,17 +2,20 @@
 type: TutorialStep
 date: 2023-04-02
 title: Search Everywhere
-technologies: [.net,unity]
-topics: [gaming,navigation]
-products: [riderflow]
+topics:
+  - .net
+  - gaming
+  - navigation
+  - riderflow
+  - unity
 author: citizenmatt
 subtitle: Quickly search throughout your project. For anything!
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=75r6TRwCc_o
-    start: 405
-    end: 602
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=75r6TRwCc_o'
+  start: 405
+  end: 602
 ---
 
 Use a simple shortcut to bring up the search pop-up window and look for GameObjects in scenes, files, and actions in the Unity Editor.

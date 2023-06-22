@@ -2,15 +2,21 @@
 type: TutorialStep
 date: 2022-04-27
 title: ASP.NET Core Razor TagHelpers for HTMX
-technologies: [.net, asp.net]
-products: [rider,resharper]
-topics: [data,web,editing,inspections]
+topics:
+  - .net
+  - asp.net
+  - data
+  - editing
+  - inspections
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
 subtitle: Simplify integration of HTMX in ASP.NET Core apps
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./poster.png
-    url: https://youtu.be/MQ35KMg1Wnk
+  poster: ./poster.png
+  url: 'https://youtu.be/MQ35KMg1Wnk'
 ---
 
 So far in this video series, we've leaned on HTMX to power a range of user scenarios. It may seem like an obvious statement, but HTMX relies on our ability to generate ASP.NET Core links to endpoints. So far, we've used the `UrlHelper` class, but the ASP.NET Core class' use with our HTMX attribute definitions can add unwanted noise to already crowded HTML elements. Luckily for ASP.NET Core developers, we can use TagHelpers. With TagHelpers, we can process HTML elements before we render them to the client. Let's take a look at a before and after using [HTMX.NET](https://www.nuget.org/packages?q=htmx+owner%3Akhalidabuhakmeh) and the included TagHelpers.

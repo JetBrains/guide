@@ -1,12 +1,14 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2022-09-12
 title: Resolving Conflicts During Git Merge
-technologies: []
-topics: [settings]
+topics:
+  - settings
 author: hs
-subtitle: How to recognise and subsequently resolve conflicts when performing a merge using Git
+subtitle: >-
+  How to recognise and subsequently resolve conflicts when performing a merge
+  using Git
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./git-merge-dialog/

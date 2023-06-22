@@ -2,12 +2,13 @@
 type: TutorialStep
 date: 2022-12-02
 title: Summary and Shortcuts
-technologies: [gradle, maven]
-topics: [build]
+topics:
+  - build
+  - gradle
+  - maven
 author: md
 subtitle: View dependencies in IntelliJ IDEA Summary
 thumbnail: ./thumbnail.png
-
 ---
 
 Now we know the different ways in which we can view our project's dependencies in IntelliJ IDEA, and the different focus for each view.

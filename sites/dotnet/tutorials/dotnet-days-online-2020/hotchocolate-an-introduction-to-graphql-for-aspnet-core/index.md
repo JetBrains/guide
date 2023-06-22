@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2020-05-14
 title: HotChocolate - An Introduction to GraphQL for ASP.NET Core
-technologies: [.net]
-products: [rider,resharper]
-topics: [web, ide]
+topics:
+  - .net
+  - ide
+  - resharper
+  - rider
+  - web
 author: maartenba
 subtitle: Michael Staib
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/Yy9wOhiWBJg
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/Yy9wOhiWBJg'
 ---
 
 GraphQL is a great way to expose your APIs and it has changed the way we think about consuming data over HTTP. Not only does GraphQL give us the power to ask for exactly what we want but it also exposes data in a way that is more aligned with the way we think about data.

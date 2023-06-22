@@ -1,7 +1,7 @@
 ---
 title: Web
 subtitle: Popular programming languages that build the modern Web
-website: https://jetbrains.com/webstorm
+website: 'https://jetbrains.com/webstorm'
 logo: ./web.png
 ---
 

@@ -1,16 +1,19 @@
 ---
 type: TutorialStep
 date: 2020-05-13
-title: From C# to Python – 10 Things I Learned Along the Way 
-technologies: [.net]
-products: [rider,resharper]
-topics: [web, ide]
+title: From C# to Python – 10 Things I Learned Along the Way
+topics:
+  - .net
+  - ide
+  - resharper
+  - rider
+  - web
 author: maartenba
 subtitle: Tess Ferrandez
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/LDVVvwoVtLY
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/LDVVvwoVtLY'
 ---
 
 Sooner or later you will probably use Python in one of your projects, either for data science or scripting. Python is a very easy language to learn. It is very versatile, and non-prescriptive. This is its strength, but unfortunately it makes it incredibly easy to fall into pitfalls of writing code and structuring projects in a way that is hard to read, maintain, and test. 

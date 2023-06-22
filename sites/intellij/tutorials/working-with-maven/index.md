@@ -1,10 +1,12 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-08-11
 title: Working with Maven
-technologies: [java, maven]
-topics: [build]
+topics:
+  - build
+  - java
+  - maven
 author: tg
 subtitle: Understand how IntelliJ IDEA integrates with Maven.
 thumbnail: ./thumbnail.png

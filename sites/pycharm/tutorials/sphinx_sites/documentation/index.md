@@ -2,10 +2,10 @@
 type: TutorialStep
 date: 2021-05-13
 title: Documenting Code
-technologies: [sphinx]
-topics: []
+topics:
+  - sphinx
 author: pwe
-subtitle: Pages which include source code, either directly or linking to modules.
+subtitle: 'Pages which include source code, either directly or linking to modules.'
 thumbnail: thumbnail.png
 ---
 

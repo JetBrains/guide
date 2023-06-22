@@ -2,17 +2,21 @@
 type: TutorialStep
 date: 2023-04-02
 title: Introducing RiderFlow
-technologies: [.net,unity]
-topics: [gaming,ide,editing]
-products: [riderflow]
+topics:
+  - .net
+  - editing
+  - gaming
+  - ide
+  - riderflow
+  - unity
 author: citizenmatt
 subtitle: What is RiderFlow? And where to find it?
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=75r6TRwCc_o
-    start: 301
-    end: 405
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=75r6TRwCc_o'
+  start: 301
+  end: 405
 ---
 
 RiderFlow for Unity is a scenery tool to build and manage your 3D space.

@@ -2,14 +2,15 @@
 type: TutorialStep
 date: 2021-05-20
 title: With
-technologies: []
 topics: []
 author: tg
-subtitle:  Sometimes we want to check more than one value on an object. We can use `with` to do this.
+subtitle: >-
+  Sometimes we want to check more than one value on an object. We can use `with`
+  to do this.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/i5Qu3qYOfsM?start=1834
+  url: 'https://youtu.be/i5Qu3qYOfsM?start=1834'
 ---
 
 Let's look at one approach to testing multiple properties of a single object. We can change the previous test to the following:

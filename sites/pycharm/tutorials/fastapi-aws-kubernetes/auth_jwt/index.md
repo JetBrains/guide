@@ -2,14 +2,17 @@
 type: TutorialStep
 date: 2022-01-02
 title: Authentication
-technologies: [fastapi, kubernetes, aws]
-topics: [python]
+topics:
+  - aws
+  - fastapi
+  - kubernetes
+  - python
 author: mm
 subtitle: Integrating FastAPI with JWT Tokens.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://www.youtube.com/watch?v=88ka51diyUc
+  url: 'https://www.youtube.com/watch?v=88ka51diyUc'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.

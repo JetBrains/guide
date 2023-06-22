@@ -2,28 +2,27 @@
 hasBody: true
 date: 2019-03-12
 title: Rename a File and Its References
-technologies: []
-topics: [editing]
+topics:
+  - editing
 author: pwe
 subtitle: Change your mind on a file name and the IDE makes all the changes for you.
 seealso:
-- title: Renaming a file or directory
-  href: https://www.jetbrains.com/help/pycharm/rename-refactorings.html
+  - title: Renaming a file or directory
+    href: 'https://www.jetbrains.com/help/pycharm/rename-refactorings.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=ES03Kbf0Aio
+  url: 'https://www.youtube.com/watch?v=ES03Kbf0Aio'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/IqPm9RYTNBM
+  url: 'https://youtu.be/IqPm9RYTNBM'
 leadin: |
-    *Rename files with peace of mind.*    
+  *Rename files with peace of mind.*    
 
-    Changed your mind about what you named a file but terrified of all 
-    the places it might be used? You might not remember, but the IDE does. 
-    Let the Rename Refactoring do the work, safely and quickly.
-
+  Changed your mind about what you named a file but terrified of all 
+  the places it might be used? You might not remember, but the IDE does. 
+  Let the Rename Refactoring do the work, safely and quickly.
 ---
 
 You made a file. You tried to choose the right filename. You then used it 

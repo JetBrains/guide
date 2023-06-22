@@ -1,12 +1,15 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2020-06-10
 title: Visual Testing with pytest
-technologies: [pytest]
-topics: [testing]
+topics:
+  - pytest
+  - testing
 author: pwe
-subtitle: Test writing is productive and fun with PyCharm as a visual testing tool atop pytest.
+subtitle: >-
+  Test writing is productive and fun with PyCharm as a visual testing tool atop
+  pytest.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./background/

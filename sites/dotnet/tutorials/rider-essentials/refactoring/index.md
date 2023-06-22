@@ -2,15 +2,17 @@
 type: TutorialStep
 date: 2020-07-15
 title: Refactoring code in Rider
-technologies: [.net, csharp]
-topics: [refactoring]
-products: [rider]
+topics:
+  - .net
+  - csharp
+  - refactoring
+  - rider
 author: rachelappel
-subtitle: Learn how to safely refactor code, without breaking the build.
+subtitle: 'Learn how to safely refactor code, without breaking the build.'
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/kGXj_LY2pU4
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/kGXj_LY2pU4'
 ---
 
 ### Refactoring your Code

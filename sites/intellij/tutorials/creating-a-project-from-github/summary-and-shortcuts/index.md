@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2021-11-09
 title: Summary and Shortcuts
-technologies: []
 topics: []
 author: hs
 subtitle: Creating a Project from GitHub Summary

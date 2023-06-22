@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-09-06
 title: Reformatting code you've changed
-technologies: []
 topics: []
 author: hs
 subtitle: How you can reformat only code you've edited
 thumbnail: ./thumbnail.png
-
 ---
 
 ### Reformatting Only Code You Have Changed

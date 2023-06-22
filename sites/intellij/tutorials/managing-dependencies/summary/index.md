@@ -2,12 +2,14 @@
 type: TutorialStep
 date: 2023-01-06
 title: Summary and Shortcuts
-technologies: [gradle, maven]
-topics: [build,packagesearch]
+topics:
+  - build
+  - gradle
+  - maven
+  - packagesearch
 author: md
 subtitle: Managing dependencies in IntelliJ IDEA Summary
 thumbnail: ./thumbnail.png
-
 ---
 
 Now we know the different ways in which we can view our project's dependencies in IntelliJ IDEA, and the different focus for each view.

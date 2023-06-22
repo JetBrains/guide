@@ -2,12 +2,13 @@
 type: TutorialStep
 date: 2023-05-05
 title: Dependency Diagram
-technologies: [gradle, maven]
-topics: [build]
+topics:
+  - build
+  - gradle
+  - maven
 author: md
 subtitle: Using the Dependency Diagram in IntelliJ IDEA Ultimate
 thumbnail: ./thumbnail.png
-
 ---
 
 If you are using IntelliJ IDEA Ultimate, you can also view your dependencies as a diagram. 

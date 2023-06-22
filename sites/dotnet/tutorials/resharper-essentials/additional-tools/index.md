@@ -2,15 +2,21 @@
 type: TutorialStep
 date: 2021-03-01
 title: Additional Tools
-technologies: [.net, csharp]
-topics: [editing, ide, inspections]
-products: [resharper]
+topics:
+  - .net
+  - csharp
+  - editing
+  - ide
+  - inspections
+  - resharper
 author: maartenba
-subtitle: There's more in ReSharper! Architecture diagrams, localization manager, build tools, ...
+subtitle: >-
+  There's more in ReSharper! Architecture diagrams, localization manager, build
+  tools, ...
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/4VC20lc_92o
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/4VC20lc_92o'
 ---
 
 ### Architecture Diagrams

@@ -2,17 +2,21 @@
 type: TutorialStep
 date: 2023-04-04
 title: Keyboard shortcuts - Shift+Shift and Alt+Enter
-technologies: [.net,unity]
-topics: [gaming,ide,editing]
-products: [rider]
+topics:
+  - .net
+  - editing
+  - gaming
+  - ide
+  - rider
+  - unity
 author: citizenmatt
 subtitle: The two keyboard shortcuts that get you places!
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=gNTOFr_TQCg
-    start: 315
-    end: 528
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
+  start: 315
+  end: 528
 ---
 
 There are two keyboard shortcuts that I want to teach you today: <kbd>Shift+Shift</kbd> to open up **Search Everywhere**, and <kbd>Alt+Enter</kbd>.

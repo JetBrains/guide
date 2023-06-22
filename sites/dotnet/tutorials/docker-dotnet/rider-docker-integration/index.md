@@ -2,11 +2,16 @@
 type: TutorialStep
 date: 2021-04-26
 title: JetBrains Rider's Docker Integrations
-technologies: [.net, containers]
-products: [rider,resharper]
-topics: [data]
+topics:
+  - .net
+  - containers
+  - data
+  - resharper
+  - rider
 author: khalidabuhakmeh
-subtitle: Learn about Rider's convenient Docker features that make working with containers feel like an ocean breeze.
+subtitle: >-
+  Learn about Rider's convenient Docker features that make working with
+  containers feel like an ocean breeze.
 thumbnail: ./thumbnail.png
 ---
 

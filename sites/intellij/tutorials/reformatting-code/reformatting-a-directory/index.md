@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-09-06
 title: Reformatting code in a directory
-technologies: []
 topics: []
 author: hs
 subtitle: How to reformat code directory by directory
 thumbnail: ./thumbnail.png
-
 ---
 
 ### Reformatting a Whole Directory

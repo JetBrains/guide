@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2022-10-03
 title: Presentation Assistant plugin
-technologies: []
 topics: []
 author: md
 subtitle: How to install and configure the Presentation Assistant plugin
 thumbnail: ./thumbnail.png
-
 ---
 
 Our first tip is to use the Presentation Assistant plugin. The Presentation Assistant plugin will show which shortcuts are being used.

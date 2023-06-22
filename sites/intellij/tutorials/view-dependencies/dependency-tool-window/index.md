@@ -2,12 +2,13 @@
 type: TutorialStep
 date: 2022-12-02
 title: Dependency tool window
-technologies: [gradle, maven]
-topics: [build]
+topics:
+  - build
+  - gradle
+  - maven
 author: md
 subtitle: View dependencies in the dependency tool window
 thumbnail: ./thumbnail.png
-
 ---
 
 Finally, we can view and manage dependencies in the Dependencies tool window. The Dependencies tool window becomes available when the current project has at least one supported module. All types of dependencies are supported for Maven. For Gradle only a top level `dependencies { }` block is supported in the build script.

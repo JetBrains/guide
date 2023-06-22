@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-09-06
 title: Reformatting with Alt + Enter
-technologies: []
 topics: []
 author: hs
 subtitle: Using intention actions on a selection to change the code style settings
 thumbnail: ./thumbnail.png
-
 ---
 
 ## Reformat with Intention Actions 

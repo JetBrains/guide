@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2022-05-10
 title: New Apache Tomcat Application
-technologies: []
 topics: []
 author: hs
 subtitle: How to create a new application that uses Apache Tomcat

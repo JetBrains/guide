@@ -2,14 +2,16 @@
 type: TutorialStep
 date: 2021-04-09
 title: Creating a new Django Project in PyCharm
-technologies: [django,aws]
-topics: [python]
+topics:
+  - aws
+  - django
+  - python
 author: mm
 subtitle: Create a virtual environment and install Python dependencies.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/2w3OHXLWfL4
+  url: 'https://youtu.be/2w3OHXLWfL4'
 ---
 
 Hello everyone, welcome to the Django tutorial series. 

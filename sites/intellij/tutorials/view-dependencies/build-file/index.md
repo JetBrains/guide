@@ -2,12 +2,13 @@
 type: TutorialStep
 date: 2022-12-02
 title: Dependency management config file
-technologies: [gradle, maven]
-topics: [build]
+topics:
+  - build
+  - gradle
+  - maven
 author: md
 subtitle: View dependencies in the dependency management config file
 thumbnail: ./thumbnail.png
-
 ---
 
 You can find direct dependencies in the dependency management config file. Direct dependencies are the dependencies that your project depends on directly. They are declared in the dependency management config file.

@@ -2,28 +2,29 @@
 hasBody: true
 date: 2019-04-17
 title: Create a Project from GitHub
-technologies: []
-topics: [vcs]
+topics:
+  - vcs
 author: pwe
 subtitle: Let PyCharm do the work to clone and setup a project hosted on GitHub.
 seealso:
   - title: Check out a project
-    href: https://www.jetbrains.com/help/pycharm/manage-projects-hosted-on-github.html#clone-from-GitHub
+    href: >-
+      https://www.jetbrains.com/help/pycharm/manage-projects-hosted-on-github.html#clone-from-GitHub
   - title: PyCharm Help for GitHub
-    href: https://www.jetbrains.com/help/pycharm/github.html  
+    href: 'https://www.jetbrains.com/help/pycharm/github.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=uTKt4Ur4zuk
+  url: 'https://www.youtube.com/watch?v=uTKt4Ur4zuk'
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=ukbvdF5wqPQ
+  url: 'https://www.youtube.com/watch?v=ukbvdF5wqPQ'
 leadin: |
-    *From repo to project in no time.*    
+  *From repo to project in no time.*    
 
-    You need to evaluate a project. You need to get a fork. You're always  
-    getting code. Let PyCharm do the clone and make the project.
+  You need to evaluate a project. You need to get a fork. You're always  
+  getting code. Let PyCharm do the clone and make the project.
 ---
 
 We all consume a lot of code. Alas, it's a number of steps to get all that 

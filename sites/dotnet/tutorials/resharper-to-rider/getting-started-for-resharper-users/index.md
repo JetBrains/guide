@@ -2,9 +2,12 @@
 type: TutorialStep
 date: 2021-10-12
 title: Getting Started
-technologies: [.net,csharp]
-products: [rider,resharper]
-topics: [ide]
+topics:
+  - .net
+  - csharp
+  - ide
+  - resharper
+  - rider
 author: khalidabuhakmeh
 subtitle: Learn to create and run your first solution in Rider
 thumbnail: ./thumbnail.png

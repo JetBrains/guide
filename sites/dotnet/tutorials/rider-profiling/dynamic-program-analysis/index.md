@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2020-07-06
 title: Dynamic Program Analysis (DPA)
-technologies: [.net, csharp]
-topics: [ide, profiling]
-products: [rider]
+topics:
+  - .net
+  - csharp
+  - ide
+  - profiling
+  - rider
 author: maartenba
-subtitle: Rider automatically analyzes memory of your applications, all the time!
+subtitle: 'Rider automatically analyzes memory of your applications, all the time!'
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/u-SrE8kQBI0
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/u-SrE8kQBI0'
 ---
 
 ### Dynamic Program Analysis (DPA)

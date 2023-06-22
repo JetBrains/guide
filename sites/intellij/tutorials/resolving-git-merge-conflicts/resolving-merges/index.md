@@ -2,14 +2,13 @@
 type: TutorialStep
 date: 2022-09-12
 title: Resolving Merges
-technologies: []
 topics: []
 author: hs
 subtitle: Using the diff view to resolve merge conflicts
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/WgipWkaU2MM?start=136
+  url: 'https://youtu.be/WgipWkaU2MM?start=136'
 ---
 
 ## Resolving Merges

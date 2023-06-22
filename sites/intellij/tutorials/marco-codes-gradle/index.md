@@ -1,10 +1,11 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2022-09-24
 title: Marco Codes - Gradle
-technologies: [gradle]
-topics: [build]
+topics:
+  - build
+  - gradle
 author: hs
 subtitle: Working with Maven in your projects
 thumbnail: ./thumbnail.png
@@ -18,5 +19,5 @@ tutorialItems:
   - ./plugins-repositories/
   - ./modifying-tasks-issues/
   - ./new-projects-gradle-init/
-
 ---
+

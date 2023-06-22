@@ -2,14 +2,13 @@
 type: TutorialStep
 date: 2021-08-09
 title: Manual migration for more complex cases
-technologies: []
 topics: []
 author: hs
 subtitle: Migrating more complex uses cases from JUnit 4 to JUnit 5
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/F8UTTTDtbH0?start=566
+  url: 'https://youtu.be/F8UTTTDtbH0?start=566'
 ---
 
 If the tests in the project are fairly straightforward ones, this automatic migration should take care of most of the tasks that need to happen.  However, not all cases can be managed automatically.

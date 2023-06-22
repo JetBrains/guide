@@ -2,14 +2,15 @@
 type: TutorialStep
 date: 2021-05-14
 title: Configuring Project Structure
-technologies: []
 topics: []
 author: hs
-subtitle: The Project Structure is where you can change your Java SDK, Language Level and more
+subtitle: >-
+  The Project Structure is where you can change your Java SDK, Language Level
+  and more
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/hBOm1XMEgXg
+  url: 'https://youtu.be/hBOm1XMEgXg'
 ---
 
 ## Configuring the Project Structure

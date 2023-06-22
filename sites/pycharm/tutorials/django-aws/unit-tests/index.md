@@ -2,14 +2,16 @@
 type: TutorialStep
 date: 2021-04-09
 title: Unit Tests
-technologies: [django,aws]
-topics: [python]
+topics:
+  - aws
+  - django
+  - python
 author: mm
 subtitle: Writing and running unit tests in Django
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/cP5vv9M0VFQ
+  url: 'https://youtu.be/cP5vv9M0VFQ'
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial we are going to focus on Unit Tests.

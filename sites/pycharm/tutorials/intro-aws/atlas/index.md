@@ -2,14 +2,16 @@
 type: TutorialStep
 date: 2021-01-29
 title: Setting Up a Database in MongoDB Atlas
-technologies: [aws]
-topics: []
+topics:
+  - aws
 author: mm
-subtitle: Connect MongoDB smoothly by connecting through Pycharm Professional to explore the database GUI.
+subtitle: >-
+  Connect MongoDB smoothly by connecting through Pycharm Professional to explore
+  the database GUI.
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/TfwDOKRiYQ4
+  url: 'https://youtu.be/TfwDOKRiYQ4'
 ---
 
 In this tutorial we are going create a MongoDB Cluster and connect through PyCharm Professional.

@@ -2,14 +2,13 @@
 type: TutorialStep
 date: 2022-03-30
 title: Setting the scene
-technologies: []
 topics: []
 author: hs
-subtitle: Downloading the project and running the application 
+subtitle: Downloading the project and running the application
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/mukr2Q_zBm4?start=42
+  url: 'https://youtu.be/mukr2Q_zBm4?start=42'
 ---
 
 Since you're reading this, you probably need to transition your application from Java EE to Jakarta EE. If you want the history on this change, check out [this helpful blog post](https://blogs.oracle.com/javamagazine/post/transition-from-java-ee-to-jakarta-ee) from Java Magazine. Fundamentally the *Java Persistence API* was renamed to *Jakarta Persistence API* meaning that the `javax` namespace changed to `jakarta` for frameworks whose APIs have moved to Jakarta EE (which is not all).

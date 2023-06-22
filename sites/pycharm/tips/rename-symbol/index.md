@@ -2,27 +2,26 @@
 hasBody: true
 date: 2019-03-12
 title: Rename Symbol
-technologies: []
-topics: [editing]
+topics:
+  - editing
 author: pwe
-subtitle: Change a variable name, class name, or other symbol, across the project.
+subtitle: 'Change a variable name, class name, or other symbol, across the project.'
 seealso:
-- title: Renaming a symbol
-  href: https://www.jetbrains.com/help/pycharm/rename-refactorings.html
+  - title: Renaming a symbol
+    href: 'https://www.jetbrains.com/help/pycharm/rename-refactorings.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=RV8ZP_UoXhE
+  url: 'https://www.youtube.com/watch?v=RV8ZP_UoXhE'
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=Qa7rLYyUnco
+  url: 'https://www.youtube.com/watch?v=Qa7rLYyUnco'
 leadin: |
-    *Refactor names like a ninja.*    
+  *Refactor names like a ninja.*    
 
-    Put your cursor on a symbol and refactor it. All usages in the 
-    project change with it.
-
+  Put your cursor on a symbol and refactor it. All usages in the 
+  project change with it.
 ---
 
 You wrote a function which you use all over the place in a project. Or a 

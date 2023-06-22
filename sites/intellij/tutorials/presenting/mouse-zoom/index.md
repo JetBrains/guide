@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2022-10-03
 title: Mouse Zoom
-technologies: []
 topics: []
 author: md
 subtitle: How to enable mouse zoom

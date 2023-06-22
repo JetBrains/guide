@@ -2,21 +2,22 @@
 hasBody: true
 date: 2022-12-09
 title: Browse Branch's Commits
-technologies: []
-topics: [vcs,]
-products: [rider]
+topics:
+  - rider
+  - vcs
 author: pwe
 subtitle: Review the changes in main before bringing them to your branch.
 seealso:
-- title: Sync with a remote Git repository
-  href: https://www.jetbrains.com/help/rider/Sync_with_a_remote_repository.html
-- title: Update your project
-  href: https://www.jetbrains.com/help/rider/Sync_with_a_remote_repository.html#update
+  - title: Sync with a remote Git repository
+    href: 'https://www.jetbrains.com/help/rider/Sync_with_a_remote_repository.html'
+  - title: Update your project
+    href: >-
+      https://www.jetbrains.com/help/rider/Sync_with_a_remote_repository.html#update
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url:  https://www.youtube.com/watch?v=tnz2I9rxrfk
+  url: 'https://www.youtube.com/watch?v=tnz2I9rxrfk'
 leadin: |
   *Look before you leap.*
 

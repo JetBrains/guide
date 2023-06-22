@@ -2,14 +2,14 @@
 type: TutorialStep
 date: 2021-05-14
 title: Gradle Settings
-technologies: [gradle]
-topics: []
+topics:
+  - gradle
 author: tg
 subtitle: Where to change IntelliJ IDEA's settings fo Gradle.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/6V6G3RyxEMk?start=1013
+  url: 'https://youtu.be/6V6G3RyxEMk?start=1013'
 ---
 
 Let's look at some more useful Gradle settings in IntelliJ IDEA.

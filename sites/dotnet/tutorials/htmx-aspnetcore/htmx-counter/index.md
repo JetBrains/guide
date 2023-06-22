@@ -2,15 +2,21 @@
 type: TutorialStep
 date: 2022-04-27
 title: HTMX state management
-technologies: [.net, asp.net]
-products: [rider,resharper]
-topics: [data,web,editing,inspections]
+topics:
+  - .net
+  - asp.net
+  - data
+  - editing
+  - inspections
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
 subtitle: Maintaining state across requests
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./poster.png
-    url: https://youtu.be/tDJrwKKqGgg
+  poster: ./poster.png
+  url: 'https://youtu.be/tDJrwKKqGgg'
 ---
 
 Rather than managing states on the client, HTMX relies heavily on the server to keep our state in order. Let's be honest, persisting state is a task suited best for a server back-end. While we could store state on the client, in a server environment we have secure access to a wonderful array database technologies. 

@@ -2,12 +2,16 @@
 type: TutorialStep
 date: 2023-01-27
 title: Summary and Shortcuts
-technologies: [gradle, maven]
-topics: [build,packagesearch,security,ultimate]
+topics:
+  - build
+  - gradle
+  - maven
+  - packagesearch
+  - security
+  - ultimate
 author: md
 subtitle: Find and fix vulnerabilities inside IntelliJ IDEA Ultimate Summary
 thumbnail: ./thumbnail.png
-
 ---
 
 Now we know the different ways in which we can view vulnerable dependencies in our project inside IntelliJ IDEA Ultimate, how to get more information about these vulnerabilities, and the different ways we can remediate them if a new version of the dependency is available.

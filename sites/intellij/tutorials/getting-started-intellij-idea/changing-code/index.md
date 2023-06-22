@@ -2,12 +2,12 @@
 type: TutorialStep
 date: 2023-02-03
 title: Changing code
-technologies: []
 topics: []
 author: hs
-subtitle: Code is rarely a write-once activity, we often need to go back and change it multiple times.
+subtitle: >-
+  Code is rarely a write-once activity, we often need to go back and change it
+  multiple times.
 thumbnail: ./thumbnail.png
-
 ---
 
 Changing code is more common than writing code and IntelliJ IDEA can support you here as well. The tips listed here are just a few of the most helpful ones to get you started and also to potentially come to your assistance if things don't go the way you think! We will look at:

@@ -2,17 +2,22 @@
 type: TutorialStep
 date: 2023-04-04
 title: Navigating your project
-technologies: [unreal]
-topics: [gaming,ide,navigation]
-products: [rider]
+topics:
+  - gaming
+  - ide
+  - navigation
+  - rider
+  - unreal
 author: citizenmatt
-subtitle: Use Search Everywhere to helps you find code, functions, blueprint usages, and more.
+subtitle: >-
+  Use Search Everywhere to helps you find code, functions, blueprint usages, and
+  more.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=_bvrngxZYds
-    start: 475
-    end: 646
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
+  start: 475
+  end: 646
 ---
 
 Using **Search Everywhere** (<kbd>Shift+Shift</kbd>), you can quickly find anything in your project.

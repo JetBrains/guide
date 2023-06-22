@@ -2,11 +2,14 @@
 type: TutorialStep
 date: 2021-04-26
 title: ASP.NET Core Development with Docker
-technologies: [.net, containers]
-products: [rider,resharper]
-topics: [data]
+topics:
+  - .net
+  - containers
+  - data
+  - resharper
+  - rider
 author: khalidabuhakmeh
-subtitle: Learn how Docker can work with your current ASP.NET Core development process. 
+subtitle: Learn how Docker can work with your current ASP.NET Core development process.
 thumbnail: ./thumbnail.png
 ---
 

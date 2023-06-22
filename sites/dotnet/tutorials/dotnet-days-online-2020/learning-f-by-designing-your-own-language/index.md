@@ -2,15 +2,19 @@
 type: TutorialStep
 date: 2020-05-14
 title: Learning F# by Designing Your Own Language
-technologies: [.net,fsharp]
-products: [rider,resharper]
-topics: [web, ide]
+topics:
+  - .net
+  - fsharp
+  - ide
+  - resharper
+  - rider
+  - web
 author: maartenba
 subtitle: Oleksii Holub
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/34C_7halqGw
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/34C_7halqGw'
 ---
 
 F# or any functional language can be daunting to learn. In most cases, the hardest part is to get started. Most people who are unfamiliar with F# often ask, "What kind of project would it make sense to write in it?" Well, the answer is "anything really", but it's better to start with something where functional paradigms really shine. 

@@ -2,14 +2,16 @@
 type: TutorialStep
 date: 2021-04-09
 title: Secure REST APIs with JWT
-technologies: [django,aws]
-topics: [python]
+topics:
+  - aws
+  - django
+  - python
 author: mm
 subtitle: Using Simple JWT authentication plugin for the Django REST Framework
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/lzloMbTVHuw
+  url: 'https://youtu.be/lzloMbTVHuw'
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial, 

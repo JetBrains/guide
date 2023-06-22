@@ -2,56 +2,61 @@
 label: A
 date: 2019-04-30
 title: 42 Tips and Tricks
-technologies: [pytest]
-topics: [editing,navigation, debugging, javascript, web]
+topics:
+  - debugging
+  - editing
+  - javascript
+  - navigation
+  - pytest
+  - web
 author: pwe
 subtitle: Become an IDE champ with these bite-sized tips and tricks.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 longVideo: true
 playlistItems:
-    - /pycharm/tips/find-action/
-    - /pycharm/tips/reduce-clutter/
-    - /pycharm/tips/disable-tabs/
-    - /pycharm/tips/recent-files/
-    - /pycharm/tips/jump-to-tool/
-    - /pycharm/tips/navigate-to-symbol/
-    - /pycharm/tips/navigate-to-file/
-    - /pycharm/tips/back-and-forth/
-    - /pycharm/tips/navbar-activate/
-    - /pycharm/tips/navbar-navigate-files/
-    - /pycharm/tips/navbar-open-file/
-    - /pycharm/tips/navbar-speed-search/
-    - /pycharm/tips/navbar-create-file/
-    - /pycharm/tips/navbar-find-in-path/
-    - /pycharm/tips/add-line-after-before/
-    - /pycharm/tips/make-extend-selection/
-    - /pycharm/tips/move-block/
-    - /pycharm/tips/reformat-code/
-    - /pycharm/tips/optimize-imports/
-    - /pycharm/tips/generate-imports-while-typing/
-    - /pycharm/tips/install-and-import/
-    - /pycharm/tips/constructor-fields/
-    - /pycharm/tips/rename-file/
-    - /pycharm/tips/rename-symbol/
-    - /pycharm/tips/quick-docs/
-    - /pycharm/tips/parameter-info/
-    - /pycharm/tips/run-from-keyboard/
-    - /pycharm/tips/conditional-breakpoints/
-    - /pycharm/tips/evaluate-expression/
-    - /pycharm/tips/split-screen-without-tabs/
-    - /pycharm/tips/run-single-test/
-    - /pycharm/tips/auto-run-tests/
-    - /pycharm/tips/spot-coverage-in-gutter/
-    - /pycharm/tips/local-history/
-    - /pycharm/tips/create-project-from-github/
-    - /pycharm/tips/put-project-under-vcs/
-    - /pycharm/tips/reword-commit-message/
-    - /pycharm/tips/undo-last-commit/
-    - /pycharm/tips/partial-commit/
-    - /pycharm/tips/run-npm-scripts/
-    - /pycharm/tips/wrap-selection-with-tag/
-    - /pycharm/tips/create-sqlite-connection/
+  - /pycharm/tips/find-action/
+  - /pycharm/tips/reduce-clutter/
+  - /pycharm/tips/disable-tabs/
+  - /pycharm/tips/recent-files/
+  - /pycharm/tips/jump-to-tool/
+  - /pycharm/tips/navigate-to-symbol/
+  - /pycharm/tips/navigate-to-file/
+  - /pycharm/tips/back-and-forth/
+  - /pycharm/tips/navbar-activate/
+  - /pycharm/tips/navbar-navigate-files/
+  - /pycharm/tips/navbar-open-file/
+  - /pycharm/tips/navbar-speed-search/
+  - /pycharm/tips/navbar-create-file/
+  - /pycharm/tips/navbar-find-in-path/
+  - /pycharm/tips/add-line-after-before/
+  - /pycharm/tips/make-extend-selection/
+  - /pycharm/tips/move-block/
+  - /pycharm/tips/reformat-code/
+  - /pycharm/tips/optimize-imports/
+  - /pycharm/tips/generate-imports-while-typing/
+  - /pycharm/tips/install-and-import/
+  - /pycharm/tips/constructor-fields/
+  - /pycharm/tips/rename-file/
+  - /pycharm/tips/rename-symbol/
+  - /pycharm/tips/quick-docs/
+  - /pycharm/tips/parameter-info/
+  - /pycharm/tips/run-from-keyboard/
+  - /pycharm/tips/conditional-breakpoints/
+  - /pycharm/tips/evaluate-expression/
+  - /pycharm/tips/split-screen-without-tabs/
+  - /pycharm/tips/run-single-test/
+  - /pycharm/tips/auto-run-tests/
+  - /pycharm/tips/spot-coverage-in-gutter/
+  - /pycharm/tips/local-history/
+  - /pycharm/tips/create-project-from-github/
+  - /pycharm/tips/put-project-under-vcs/
+  - /pycharm/tips/reword-commit-message/
+  - /pycharm/tips/undo-last-commit/
+  - /pycharm/tips/partial-commit/
+  - /pycharm/tips/run-npm-scripts/
+  - /pycharm/tips/wrap-selection-with-tag/
+  - /pycharm/tips/create-sqlite-connection/
 ---
 
 Development is about focus and flow. Learning your tool helps you get 

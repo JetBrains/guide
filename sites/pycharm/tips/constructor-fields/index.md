@@ -2,24 +2,23 @@
 hasBody: true
 date: 2019-03-18
 title: Adding Fields In a Constructor
-technologies: []
-topics: [editing]
+topics:
+  - editing
 author: pwe
 subtitle: Let your IDE add constructor arguments to your instance.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=JBMFA3lYSqY
+  url: 'https://www.youtube.com/watch?v=JBMFA3lYSqY'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/cJ0tP9kxoYk
+  url: 'https://youtu.be/cJ0tP9kxoYk'
 leadin: |
-    *Use a Quick Fix to generate instance attribute assignment.*    
+  *Use a Quick Fix to generate instance attribute assignment.*    
 
-    Put your cursor on a constructor argument, hit `Alt-Enter`, 
-    and let the IDE generate the line for assigning to `self`.
-
+  Put your cursor on a constructor argument, hit `Alt-Enter`, 
+  and let the IDE generate the line for assigning to `self`.
 ---
 
 It's one of those chores...your class has an `__init__` with some arguments 

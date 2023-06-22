@@ -2,32 +2,34 @@
 hasBody: true
 date: 2019-03-10
 title: Make and Extend Selection Using Keyboard
-technologies: []
-topics: [editing]
+topics:
+  - editing
 author: pwe
 subtitle: Use the keyboard to select blocks of code then extend/shrink the selection.
 seealso:
   - title: Selecting with navigation keys
-    href: https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#select_with_navigation_keys
+    href: >-
+      https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#select_with_navigation_keys
   - title: Extending selection
-    href: https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#extend_selection  
+    href: >-
+      https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#extend_selection
   - title: Shrinking selection
-    href: https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#shrink_selection  
+    href: >-
+      https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#shrink_selection
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=cktFGEXPGks
+  url: 'https://www.youtube.com/watch?v=cktFGEXPGks'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/mvZg7TaRjCM
+  url: 'https://youtu.be/mvZg7TaRjCM'
 leadin: |
-    *Want to select code and remain keyboard-centric?*
+  *Want to select code and remain keyboard-centric?*
 
-    PyCharm has actions and keybindings to quickly select code, 
-    semantically, through scopes and across languages. Extend 
-    and shrink selections with ease. 
-
+  PyCharm has actions and keybindings to quickly select code, 
+  semantically, through scopes and across languages. Extend 
+  and shrink selections with ease.
 ---
 
 In coding, we select code and operate on it. For example, move it to 

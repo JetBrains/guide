@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2022-10-27
 title: Unreal Engine Game Optimization on a Budget
-technologies: [unreal]
-products: [rider,resharper]
-topics: [gaming,profiling]
+topics:
+  - gaming
+  - profiling
+  - resharper
+  - rider
+  - unreal
 author: maartenba
 subtitle: Tom Looman
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./thumbnail.png
-    url: https://youtu.be/G51QWcitCII
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/G51QWcitCII'
 ---
 
 Unreal Engine is built to work for a wide range of projects and platforms out of the box. It’s up to you to make it run within the budget for your specific needs. In this talk, Tom Looman shows how to identify performance issues and optimize your game projects on a budget.

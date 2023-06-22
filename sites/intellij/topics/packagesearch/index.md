@@ -1,6 +1,6 @@
 ---
-title: Package Search 
-subtitle: Search, evaluate, and manage dependencies in IDE easily.
+title: Package Search
+subtitle: 'Search, evaluate, and manage dependencies in IDE easily.'
 accent: primary
 icon: fas fa-layer-group
 ---

@@ -2,14 +2,15 @@
 type: TutorialStep
 date: 2021-05-20
 title: Helper Methods
-technologies: []
 topics: []
 author: tg
-subtitle: Sometimes we need to move test code into a separate method. In this section, we look at some tips for this. 
+subtitle: >-
+  Sometimes we need to move test code into a separate method. In this section,
+  we look at some tips for this.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/i5Qu3qYOfsM?start=1716
+  url: 'https://youtu.be/i5Qu3qYOfsM?start=1716'
 ---
 
 When tests get big, we may want to split out large parts of code, or common code, into [helper methods](http://spockframework.org/spock/docs/2.0/all_in_one.html#_helper_methods).

@@ -2,12 +2,13 @@
 type: TutorialStep
 date: 2023-05-05
 title: Summary and Shortcuts
-technologies: [ gradle, maven ]
-topics: [ build ]
+topics:
+  - build
+  - gradle
+  - maven
 author: md
 subtitle: Analyzing dependencies in IntelliJ IDEA Summary
 thumbnail: ./thumbnail.png
-
 ---
 
 Now we know several ways to analyze our project's dependencies in IntelliJ IDEA.

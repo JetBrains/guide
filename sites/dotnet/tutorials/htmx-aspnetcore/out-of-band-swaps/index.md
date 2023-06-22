@@ -2,15 +2,21 @@
 type: TutorialStep
 date: 2022-04-27
 title: Out-of-band swaps with HTMX
-technologies: [.net, asp.net]
-products: [rider,resharper]
-topics: [data,web,editing,inspections]
+topics:
+  - .net
+  - asp.net
+  - data
+  - editing
+  - inspections
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
 subtitle: Swap and replace any HTML element
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./poster.png
-    url: https://youtu.be/IDNdm-1x5SM
+  poster: ./poster.png
+  url: 'https://youtu.be/IDNdm-1x5SM'
 ---
 
 HTMX works on the philosophy of **[Locality of Behavior](https://htmx.org/essays/locality-of-behaviour/)**. Adopting this philosophy means we will define HTMX definitions and the result of the behavior as close to each other as possible. The more relative everything is, the more decipherable our application is to developers needing to maintain and adapt our codebase.

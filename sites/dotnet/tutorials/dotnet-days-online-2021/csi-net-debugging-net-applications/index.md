@@ -2,15 +2,17 @@
 type: TutorialStep
 date: 2021-05-11
 title: CSI .NET – Debugging .NET Applications
-technologies: [.net]
-products: [rider,resharper]
-topics: [debugging]
+topics:
+  - .net
+  - debugging
+  - resharper
+  - rider
 author: maartenba
 subtitle: Tess Ferrandez-Norlander
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/z2B8OruMT6s
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/z2B8OruMT6s'
 ---
 
 Memory leaks, hangs, and crashes are very hard to troubleshoot, especially if they don't happen on your machine.

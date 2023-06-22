@@ -2,12 +2,14 @@
 type: TutorialStep
 date: 2023-01-06
 title: Upgrade dependencies
-technologies: [gradle, maven]
-topics: [build,packagesearch]
+topics:
+  - build
+  - gradle
+  - maven
+  - packagesearch
 author: md
 subtitle: Upgrade dependencies using Package Search
 thumbnail: ./thumbnail.png
-
 ---
 
 We will also need to keep our dependencies up to date. To show you how IntelliJ IDEA can help, we are using this extremely outdated project as an example. In the pom.xml below, we see that several dependencies are marked with squiggly lines underneath them.

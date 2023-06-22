@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2022-10-03
 title: Theme
-technologies: []
 topics: []
 author: md
 subtitle: Selecting a theme
 thumbnail: ./thumbnail.png
-
 ---
 
 By default, IntelliJ IDEA uses the Darcula theme. To change it, go to **Preferences > Appearance & Behavior > Appearance**.

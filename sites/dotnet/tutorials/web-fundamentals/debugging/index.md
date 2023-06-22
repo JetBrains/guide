@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2020-12-01
 title: Debugging code
-technologies: [asp.net, javascript]
-topics: [web,debugging]
-products: [rider]
+topics:
+  - asp.net
+  - debugging
+  - javascript
+  - rider
+  - web
 author: pwe
-subtitle: What's your code doing? Step through code with the debugger, and find out. 
+subtitle: 'What''s your code doing? Step through code with the debugger, and find out.'
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./poster.png
-    url: https://youtu.be/10HzlZSEqVQ
+  poster: ./poster.png
+  url: 'https://youtu.be/10HzlZSEqVQ'
 ---
 
 Even the best codebases have bugs. For JavaScript developers, our IDEs bundle WebStorm’s debugger. Let’s take a look at its key features.

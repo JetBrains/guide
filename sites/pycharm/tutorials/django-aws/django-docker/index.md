@@ -2,14 +2,16 @@
 type: TutorialStep
 date: 2021-04-09
 title: Exploring Django with Docker
-technologies: [django,aws]
-topics: [python]
+topics:
+  - aws
+  - django
+  - python
 author: mm
 subtitle: Building and running Django Containers through Docker
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/q_cZO1WBWCw
+  url: 'https://youtu.be/q_cZO1WBWCw'
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, we are going to deploy our application inside a Docker Container. 

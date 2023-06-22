@@ -2,12 +2,16 @@
 type: TutorialStep
 date: 2023-01-27
 title: Vulnerable Dependencies tool window
-technologies: [gradle, maven]
-topics: [build,packagesearch,security,ultimate]
+topics:
+  - build
+  - gradle
+  - maven
+  - packagesearch
+  - security
+  - ultimate
 author: md
 subtitle: View vulnerable dependencies in the Vulnerable Dependencies tool window
 thumbnail: ./thumbnail.png
-
 ---
 
 We can also open the Vulnerable Dependencies tool window without having to open the files where our dependencies are declared. To open the Vulnerable Dependencies tool window straight from the main menu, go to **Code** > **Analyze Code** > **Show Vulnerable Dependencies**.

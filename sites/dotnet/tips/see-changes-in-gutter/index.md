@@ -2,26 +2,27 @@
 hasBody: true
 date: 2022-12-02
 title: See VCS Changed Lines In Gutter
-technologies: []
-topics: [editing, vcs]
+topics:
+  - editing
+  - rider
+  - vcs
 author: pwe
-products: [rider]
 subtitle: Quickly spot which parts of your file have changed since the last commit.
 seealso:
   - title: Tracking changes to a file in the editor
-    href: https://www.jetbrains.com/help/rider/Viewing_Changes_Information.html#local_changes
+    href: >-
+      https://www.jetbrains.com/help/rider/Viewing_Changes_Information.html#local_changes
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=wp86DkW0VLA
+  url: 'https://www.youtube.com/watch?v=wp86DkW0VLA'
 leadin: |
-    *Visually scan to see a file's changes.*    
+  *Visually scan to see a file's changes.*    
 
-    Working with a version-controlled file and want to see which lines 
-    have been added or changed since the last commit? Watch the color 
-    codes in the gutter and click for more info.
-
+  Working with a version-controlled file and want to see which lines 
+  have been added or changed since the last commit? Watch the color 
+  codes in the gutter and click for more info.
 ---
 We've all been there.
 

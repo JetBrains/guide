@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2021-09-06
 title: Introduction
-technologies: []
 topics: []
 author: hs
 subtitle: When and why you may want to use code formatting

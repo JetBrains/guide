@@ -2,29 +2,29 @@
 hasBody: true
 date: 2019-03-11
 title: View Parameter Info
-technologies: []
-topics: [editing]
+topics:
+  - editing
 author: pwe
 subtitle: Quickly see function arguments and argument types.
 seealso:
   - title: Use quick pop-ups
-    href: https://www.jetbrains.com/help/pycharm/basic-editing-procedures.html#quick_popups
+    href: >-
+      https://www.jetbrains.com/help/pycharm/basic-editing-procedures.html#quick_popups
   - title: Viewing Inline Documentation
-    href: https://www.jetbrains.com/help/pycharm/inline-documentation.html
+    href: 'https://www.jetbrains.com/help/pycharm/inline-documentation.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=t3MfWwXmATg
+  url: 'https://www.youtube.com/watch?v=t3MfWwXmATg'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/hfWhDwp7zz8
+  url: 'https://youtu.be/hfWhDwp7zz8'
 leadin: |
-    *See what's needed in a function, as you type, without disruption.*    
+  *See what's needed in a function, as you type, without disruption.*    
 
-    Have a function with lots of arguments? `Parameter Info` gives just 
-    the basics without using lots of real estate.
-
+  Have a function with lots of arguments? `Parameter Info` gives just 
+  the basics without using lots of real estate.
 ---
 
 Some functions or classes -- well, let's admit it, they are kind of chatty. 

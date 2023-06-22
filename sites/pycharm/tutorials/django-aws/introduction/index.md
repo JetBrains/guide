@@ -2,14 +2,16 @@
 type: TutorialStep
 date: 2021-04-09
 title: Introduction
-technologies: [django,aws]
-topics: [python]
+topics:
+  - aws
+  - django
+  - python
 author: mm
-subtitle: Introducing Django, a high-level python web framework.
+subtitle: 'Introducing Django, a high-level python web framework.'
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/ze8ukid9owU
+  url: 'https://youtu.be/ze8ukid9owU'
 ---
 
 Hello everyone, welcome to part one of the AWS Django tutorial series. 

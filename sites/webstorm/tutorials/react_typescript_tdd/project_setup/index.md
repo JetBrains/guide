@@ -2,15 +2,17 @@
 type: TutorialStep
 date: 2021-10-04
 title: Project Setup
-technologies: [cra, jest, typescript]
-topics: []
+topics:
+  - cra
+  - jest
+  - typescript
 author: pwe
 subtitle: Create a React+TypeScript project with the create-react-app scaffolding tool.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/wm8WdAB64gw
+  url: 'https://youtu.be/wm8WdAB64gw'
 ---
 
 React has become very popular, as has TypeScript. 

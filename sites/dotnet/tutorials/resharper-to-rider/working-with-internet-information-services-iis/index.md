@@ -2,11 +2,18 @@
 type: TutorialStep
 date: 2021-03-29
 title: Working With IIS and IIS Express
-technologies: [.net,csharp,asp.net]
-products: [rider,resharper]
-topics: [ide, data]
+topics:
+  - .net
+  - asp.net
+  - csharp
+  - data
+  - ide
+  - resharper
+  - rider
 author: khalidabuhakmeh
-subtitle: Effectively working with ASP.NET Core and IIS in Rider from a Visual Studio + ReSharper user's perspective.
+subtitle: >-
+  Effectively working with ASP.NET Core and IIS in Rider from a Visual Studio +
+  ReSharper user's perspective.
 thumbnail: ./thumbnail.png
 ---
 

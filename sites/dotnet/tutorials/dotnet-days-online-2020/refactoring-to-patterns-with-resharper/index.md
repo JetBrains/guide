@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2020-05-13
 title: Refactoring to Patterns with ReSharper
-technologies: [.net]
-products: [rider,resharper]
-topics: [web, ide]
+topics:
+  - .net
+  - ide
+  - resharper
+  - rider
+  - web
 author: maartenba
 subtitle: Zoran Horvat
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/_n3u5SjC7t4
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/_n3u5SjC7t4'
 ---
 
 From the Gang of Four, we learned to value flexible designs. From Martin Fowler, Kent Beck, and others, we learned to actually flex the design and to value the axes of change. These two concepts – design patterns and refactoring – have been around for over two decades, and yet the combination of the two systems never got a grip in the industry. Why so? 

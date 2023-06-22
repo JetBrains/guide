@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-09-20
 title: Moving Lines Around
-technologies: []
 topics: []
 author: hs
-subtitle: Moving a line, paragraph or selection up and down 
+subtitle: 'Moving a line, paragraph or selection up and down'
 thumbnail: ./thumbnail.png
-
 ---
 
 ## Moving Content Up or Down in Your Class

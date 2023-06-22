@@ -1,16 +1,23 @@
 ---
 type: TutorialStep
 date: 2020-07-15
-title: Shortcuts, Editing, and Completion in Rider
-technologies: [.net, csharp]
-topics: [completion, editing, inspections, navigation]
-products: [rider]
+title: 'Shortcuts, Editing, and Completion in Rider'
+topics:
+  - .net
+  - completion
+  - csharp
+  - editing
+  - inspections
+  - navigation
+  - rider
 author: citizenmatt
-subtitle: Where to start? Let's learn the two most important shortcuts, editing, and code completion.
+subtitle: >-
+  Where to start? Let's learn the two most important shortcuts, editing, and
+  code completion.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/ztQ9ez1bFNg
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/ztQ9ez1bFNg'
 ---
 
 ### Keyboard Shortcuts

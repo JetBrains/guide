@@ -2,14 +2,15 @@
 type: TutorialStep
 date: 2021-05-14
 title: Sharing IntelliJ IDEA Settings
-technologies: []
 topics: []
 author: hs
-subtitle: You can share settings across your own instances of IntelliJ IDEA or with your colleagues
+subtitle: >-
+  You can share settings across your own instances of IntelliJ IDEA or with your
+  colleagues
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/pnKBkblUV84
+  url: 'https://youtu.be/pnKBkblUV84'
 ---
 
 ## Sharing IntelliJ IDEA Settings

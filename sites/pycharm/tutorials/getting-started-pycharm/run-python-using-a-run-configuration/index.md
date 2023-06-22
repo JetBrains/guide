@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2023-03-30
 title: Run Python Using a Run Configuration
-technologies: []
 topics: []
 author: hs
 subtitle: How to run you code in PyCharm.
@@ -10,7 +9,7 @@ thumbnail: thumbnail.png
 videoBottom: true
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/FOdQa364sLM
+  url: 'https://youtu.be/FOdQa364sLM'
 ---
 
 In the previous step, we saw how PyCharm makes coding productive.

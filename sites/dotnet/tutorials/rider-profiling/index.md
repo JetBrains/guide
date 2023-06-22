@@ -1,13 +1,18 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2020-07-06
 title: Profiling in Rider
-technologies: [.net]
-topics: [ide, profiling]
-products: [rider, dottrace]
+topics:
+  - .net
+  - dottrace
+  - ide
+  - profiling
+  - rider
 author: maartenba
-subtitle: Explore performance and memory profiling options in Rider, and optimize an existing application.
+subtitle: >-
+  Explore performance and memory profiling options in Rider, and optimize an
+  existing application.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

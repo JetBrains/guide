@@ -2,25 +2,29 @@
 hasBody: true
 date: 2018-12-04
 title: Install and import
-technologies: []
-topics: [python]
+topics:
+  - python
 author: pwe
-subtitle: While typing a symbol, let PyCharm install it and generate the import.
+subtitle: 'While typing a symbol, let PyCharm install it and generate the import.'
 seealso:
   - title: Creating and Optimizing Imports
-    href: https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html
+    href: >-
+      https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=rMUIDc3sSpw
+  url: 'https://www.youtube.com/watch?v=rMUIDc3sSpw'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/ulT1LSWFqqE
-leadin: |
+  url: 'https://youtu.be/ulT1LSWFqqE'
+leadin: >
   *Type the symbol, let your IDE install the package and write the import.*
 
-  IDEs are great at janitorial work. PyCharm can generate your import for you, even 
+
+  IDEs are great at janitorial work. PyCharm can generate your import for you,
+  even 
+
   when you haven't installed the  package.
 ---
 

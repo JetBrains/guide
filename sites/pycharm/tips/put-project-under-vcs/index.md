@@ -2,27 +2,29 @@
 hasBody: true
 date: 2019-04-17
 title: Put New Project Under Version Control
-technologies: []
-topics: [vcs]
+topics:
+  - vcs
 author: pwe
-subtitle: The fastest way to register a new project directory under local version control.
+subtitle: >-
+  The fastest way to register a new project directory under local version
+  control.
 seealso:
   - title: Enable Version Control Integration Dialog
-    href: https://www.jetbrains.com/help/pycharm/enable-version-control-integration-dialog.html#Enable_Version_Control_Integration_Dialog.xml
+    href: >-
+      https://www.jetbrains.com/help/pycharm/enable-version-control-integration-dialog.html#Enable_Version_Control_Integration_Dialog.xml
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=jlpfzJZ7RZM
+  url: 'https://www.youtube.com/watch?v=jlpfzJZ7RZM'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/36RFkThiZug
+  url: 'https://youtu.be/36RFkThiZug'
 leadin: |
-    *Work safely via VCS, via keyboard.*    
+  *Work safely via VCS, via keyboard.*    
 
-    You started a new project or opened a local directory and it's not 
-    yet under VCS. Here's the fastest way to do so, from the keyboard.
-
+  You started a new project or opened a local directory and it's not 
+  yet under VCS. Here's the fastest way to do so, from the keyboard.
 ---
 
 You have a new project, or opened a project not under version control. First 

@@ -1,23 +1,23 @@
 ---
 date: 2022-11-22
 title: Fix Your Work with Amend Commit
-technologies: []
-topics: [vcs]
-products: [rider]
+topics:
+  - rider
+  - vcs
 author: pwe
-subtitle: Put some missing work back into your last commit, before you push.
+subtitle: 'Put some missing work back into your last commit, before you push.'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/8sSlWDiwdkc
+  url: 'https://youtu.be/8sSlWDiwdkc'
 hasBody: true
 leadin: |
-    *You committed too soon.*
+  *You committed too soon.*
 
-    You're so eager to commit that you left something out. Use the IDE's 
-    friendly "Amend Commit" feature to put the work back in, as if it 
-    was there in the first place.
+  You're so eager to commit that you left something out. Use the IDE's 
+  friendly "Amend Commit" feature to put the work back in, as if it 
+  was there in the first place.
 ---
 
 You’re finishing some work...whew!!! 

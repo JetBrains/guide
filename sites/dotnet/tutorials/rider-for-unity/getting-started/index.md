@@ -2,17 +2,21 @@
 type: TutorialStep
 date: 2023-04-02
 title: Getting Started with Rider for Unity
-technologies: [.net,unity]
-topics: [gaming,ide,editing]
-products: [rider]
+topics:
+  - .net
+  - editing
+  - gaming
+  - ide
+  - rider
+  - unity
 author: citizenmatt
 subtitle: What is Rider? And how to start using it with Unity?
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=gNTOFr_TQCg
-    start: 162
-    end: 315
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
+  start: 162
+  end: 315
 ---
 
 Rider has Unity support built in, and the very first time you open a Unity solution it will automatically configure Unity to use Rider as the default editor for C# scripts and shader files.

@@ -2,23 +2,36 @@
 hasBody: true
 date: 2021-09-24
 title: Resolve Merge Conflicts in VCS
-technologies: [git]
-topics: [vcs, editing]
+topics:
+  - editing
+  - git
+  - vcs
 author: vb
-subtitle: Use VCS options in IntelliJ IDEA to resolve merge conflicts visually in the editor
+subtitle: >-
+  Use VCS options in IntelliJ IDEA to resolve merge conflicts visually in the
+  editor
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/GvAUA-jD9d0 
+  url: 'https://youtu.be/GvAUA-jD9d0'
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Resolving Merge Conflicts
-    href: https://www.jetbrains.com/help/idea/resolving-conflicts.html
-leadin: |
-  Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Resolve Conflicts_ to open the **Conflicts** dialog which helps you to visually resolve merge conflicts between two different versions of the code.
-  - You can use the option available in the **Merge Revisions** dialog and **you should carefully review** before you accept or ignore code changes as well as resolving conflicts. This dialog visually helps you to review and resolve merge conflicts.
-  - **Note:** The **Resolve Conflicts** option from the Search Everywhere dialog will only display the **Conflicts** dialog when there are merge conflicts in your code, otherwise you will get an error. 
-  
+    href: 'https://www.jetbrains.com/help/idea/resolving-conflicts.html'
+leadin: >
+  Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search
+  Everywhere dialog. You can now search for _Resolve Conflicts_ to open the
+  **Conflicts** dialog which helps you to visually resolve merge conflicts
+  between two different versions of the code.
+
+  - You can use the option available in the **Merge Revisions** dialog and **you
+  should carefully review** before you accept or ignore code changes as well as
+  resolving conflicts. This dialog visually helps you to review and resolve
+  merge conflicts.
+
+  - **Note:** The **Resolve Conflicts** option from the Search Everywhere dialog
+  will only display the **Conflicts** dialog when there are merge conflicts in
+  your code, otherwise you will get an error.
 ---
 
 ## Resolving Conflicts Using Git Toolbar Options

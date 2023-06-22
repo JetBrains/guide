@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2022-10-03
 title: Soft-wrap
-technologies: []
 topics: []
 author: md
 subtitle: Use soft-wrap to prevent horizontal scrolling
 thumbnail: ./thumbnail.png
-
 ---
 
 When using a file that has long lines, we can prevent horizontal scrolling by using soft-wrap. Let's use **Find Action** to enable soft-wrap. Press **⇧⌘A** (on Mac) or **Control+Shift+A** (on Windows/Linux) to open the Find Action dialog, and search for "soft-wrap".

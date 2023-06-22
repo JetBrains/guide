@@ -1,16 +1,14 @@
 ---
 type: TutorialStep
 date: 2021-08-30
-title: Opening more terminal sessions 
-technologies: []
+title: Opening more terminal sessions
 topics: []
 author: hs
 subtitle: You can run more than one terminal inside your IDE
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url:  https://youtu.be/tlEkrWU0d1M?start=74
-
+  url: 'https://youtu.be/tlEkrWU0d1M?start=74'
 ---
 ## Opening Multiple Terminal Sessions
 We can [open a second terminal tab](https://www.jetbrains.com/help/idea/terminal-emulator.html#new_session) with **⌘T** on macOS, or **Ctrl+Shift+T** on Windows and Linux, to run the MongoDB shell as a new command:

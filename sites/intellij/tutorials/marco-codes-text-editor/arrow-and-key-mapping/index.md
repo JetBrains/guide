@@ -1,16 +1,14 @@
 ---
 type: TutorialStep
 date: 2022-11-13
-title: The Problem with Arrow Up & Down and Key Mappings 
-technologies: []
+title: The Problem with Arrow Up & Down and Key Mappings
 topics: []
 author: hs
 subtitle: Arrow motion & How to map 3 or 4 keys to 1
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=HwPjeb2xnEo&start=58s
-
+  url: 'https://www.youtube.com/watch?v=HwPjeb2xnEo&start=58s'
 ---
 
 ## Arrow Key Handling

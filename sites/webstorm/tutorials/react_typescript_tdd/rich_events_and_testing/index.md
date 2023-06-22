@@ -2,15 +2,19 @@
 type: TutorialStep
 date: 2021-10-04
 title: Rich Events and Testing
-technologies: [react, typescript, jest]
-topics: []
+topics:
+  - jest
+  - react
+  - typescript
 author: pwe
-subtitle: Add event handling to a stateful class component by first writing tests during development.
+subtitle: >-
+  Add event handling to a stateful class component by first writing tests during
+  development.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/OO7OmA5UlQM
+  url: 'https://youtu.be/OO7OmA5UlQM'
 ---
 
 Our counter component has local state, but doesn't respond to clicks.

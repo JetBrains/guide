@@ -1,11 +1,14 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-05-11
 title: JetBrains .NET Days Online 2021
-technologies: [.net]
-topics: [web, ide]
-products: [rider,resharper]
+topics:
+  - .net
+  - ide
+  - resharper
+  - rider
+  - web
 author: maartenba
 subtitle: Session recordings of JetBrains .NET Days Online 2021.
 thumbnail: ./thumbnail.png
@@ -24,7 +27,6 @@ tutorialItems:
   - ./null-void-everything-about-nothing-in-net/
   - ./best-practices-for-using-async-and-await/
   - ./debugging-tips-and-tricks-with-jetbrains-rider/
-
 ---
 
 On May 11–12, 2021, we held a free virtual event: JetBrains .NET Days Online 2021.

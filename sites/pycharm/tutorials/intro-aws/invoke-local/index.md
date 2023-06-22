@@ -2,14 +2,14 @@
 type: TutorialStep
 date: 2021-01-29
 title: Invoking Functions Locally
-technologies: [aws]
-topics: []
+topics:
+  - aws
 author: mm
 subtitle: Execute Lambda function inside a container through PyCharm Professional.
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/xEnKghx6fuk
+  url: 'https://youtu.be/xEnKghx6fuk'
 ---
 
 In this tutorial we are going to run our lambda functions inside a *local* container.

@@ -2,9 +2,13 @@
 type: TutorialStep
 date: 2021-01-29
 title: Comparing Rider's Toolbar with Visual Studio
-technologies: [.net,csharp]
-products: [rider,resharper]
-topics: [ide, data]
+topics:
+  - .net
+  - csharp
+  - data
+  - ide
+  - resharper
+  - rider
 author: khalidabuhakmeh
 subtitle: Learn how Rider's toolbar UI compares with the toolbar found in Visual Studio.
 thumbnail: ./thumbnail.png

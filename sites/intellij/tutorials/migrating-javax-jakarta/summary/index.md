@@ -2,14 +2,13 @@
 type: TutorialStep
 date: 2022-03-30
 title: Summary and shortcuts used
-technologies: []
 topics: []
 author: hs
-subtitle: Summary and shortcuts used 
+subtitle: Summary and shortcuts used
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/mukr2Q_zBm4?start=956
+  url: 'https://youtu.be/mukr2Q_zBm4?start=956'
 ---
 
 ## Summary

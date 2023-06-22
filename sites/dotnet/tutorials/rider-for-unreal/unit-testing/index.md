@@ -2,17 +2,21 @@
 type: TutorialStep
 date: 2023-04-04
 title: Unit testing
-technologies: [unreal]
-topics: [gaming,testing]
-products: [rider]
+topics:
+  - gaming
+  - rider
+  - testing
+  - unreal
 author: citizenmatt
-subtitle: The Unreal Engine testing framework is built in and works without additional configuration.
+subtitle: >-
+  The Unreal Engine testing framework is built in and works without additional
+  configuration.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=_bvrngxZYds
-    start: 2240
-    end: 2346
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
+  start: 2240
+  end: 2346
 ---
 
 JetBrains Rider includes support for the [Unreal Engine testing framework](https://docs.unrealengine.com/4.27/en-US/TestingAndOptimization/Automation/). To work with Unreal Engine tests, use the [Unit Tests window](https://www.jetbrains.com/help/rider/Reference_Windows_Unit_Tests.html). In this tool window you can review the results of the tests, reruns failed, and all or specific tests.

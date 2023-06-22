@@ -2,26 +2,27 @@
 hasBody: true
 date: 2018-12-05
 title: Run Single Test
-technologies: [pytest]
-topics: [testing]
+topics:
+  - pytest
+  - testing
 author: pwe
 subtitle: Speed up testing by focusing on one test.
 seealso:
   - title: Performing Tests
-    href: https://www.jetbrains.com/help/pycharm/performing-tests.html
+    href: 'https://www.jetbrains.com/help/pycharm/performing-tests.html'
   - title: Test Runner Tab
-    href: https://www.jetbrains.com/help/pycharm/test-runner-tab.html
+    href: 'https://www.jetbrains.com/help/pycharm/test-runner-tab.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=BWY9mNdX5R8
+  url: 'https://www.youtube.com/watch?v=BWY9mNdX5R8'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/-3SS0s-Y420
+  url: 'https://youtu.be/-3SS0s-Y420'
 leadin: |
   *Get into TDD flow by focusing on one test.*
-  
+
   Want to focus your testing on just one test? PyCharm has 
   many ways to tell the test runner and UI: "Just this."
 ---

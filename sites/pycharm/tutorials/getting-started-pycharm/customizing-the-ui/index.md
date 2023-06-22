@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2023-03-30
 title: Customizing the UI
-technologies: []
 topics: []
 author: hs
 subtitle: How to configure your UI exactly as you want it.
@@ -10,7 +9,7 @@ thumbnail: thumbnail.png
 videoBottom: true
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/N2uo4RbGycM
+  url: 'https://youtu.be/N2uo4RbGycM'
 ---
 
 In the previous step, we took a tour of the PyCharm UI, in all its IDE glory.

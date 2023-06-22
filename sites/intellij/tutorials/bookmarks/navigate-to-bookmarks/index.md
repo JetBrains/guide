@@ -2,12 +2,11 @@
 type: TutorialStep
 date: 2023-02-06
 title: Navigate to bookmarks
-technologies: []
-topics: [tricks]
+topics:
+  - tricks
 author: md
 subtitle: How to navigate to created bookmarks
 thumbnail: ./thumbnail.png
-
 ---
 
 There are several options to navigate to the bookmarks we have created.

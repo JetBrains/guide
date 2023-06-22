@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2022-05-10
 title: Working with Tomcat
-technologies: []
 topics: []
 author: hs
 subtitle: Working with Tomcat in IntelliJ IDEA

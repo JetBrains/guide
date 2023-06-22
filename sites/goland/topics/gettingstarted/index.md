@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-subtitle: If you're new to GoLand or a technology, start here.
+subtitle: 'If you''re new to GoLand or a technology, start here.'
 accent: primary
 icon: fas fa-graduation-cap
 ---

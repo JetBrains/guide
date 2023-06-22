@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2021-10-13
 title: Introduction
-technologies: []
 topics: []
 author: hs
 subtitle: Two ways you can share your local repository with GitHub

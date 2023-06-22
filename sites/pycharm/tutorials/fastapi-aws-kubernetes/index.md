@@ -1,10 +1,13 @@
 ---
 resourceType: tutorial
-layout: "resources/tutorial/TutorialLayout.11ty.tsx"
+layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2022-01-01
 title: Developing FastAPI Application using K8s & AWS
-technologies: [fastapi, kubernetes, aws]
-topics: [python]
+topics:
+  - aws
+  - fastapi
+  - kubernetes
+  - python
 author: mm
 subtitle: Build seamless FastAPI applications in PyCharm through Kubernetes & AWS.
 thumbnail: ./thumbnail.png

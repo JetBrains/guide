@@ -2,9 +2,15 @@
 type: TutorialStep
 date: 2022-04-27
 title: Introduction
-technologies: [.net, asp.net]
-products: [rider,resharper]
-topics: [data,web,editing,inspections]
+topics:
+  - .net
+  - asp.net
+  - data
+  - editing
+  - inspections
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
 subtitle: Giving context to HTMX
 thumbnail: ./thumbnail.png

@@ -2,14 +2,15 @@
 type: TutorialStep
 date: 2021-05-14
 title: Gradle Wrapper
-technologies: [gradle]
-topics: [build]
+topics:
+  - build
+  - gradle
 author: tg
 subtitle: Useful information for working with projects that use the Gradle Wrapper.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/6V6G3RyxEMk?start=1105
+  url: 'https://youtu.be/6V6G3RyxEMk?start=1105'
 ---
 
 In this last step, we'll look at how to configure the [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html).

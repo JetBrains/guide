@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-13
 title: Simple Markdown in Sphinx
-technologies: [sphinx]
-topics: []
+topics:
+  - sphinx
 author: pwe
 subtitle: Markdown is a simple formatting language. Let's see it in use in Sphinx.
 thumbnail: thumbnail.png

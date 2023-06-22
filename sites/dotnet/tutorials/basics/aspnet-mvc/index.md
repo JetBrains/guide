@@ -2,15 +2,17 @@
 type: TutorialStep
 date: 2020-06-05
 title: Basics of ASP.NET MVC
-technologies: [asp.net]
-products: [rider,resharper]
-topics: [web]
+topics:
+  - asp.net
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
-subtitle: A complete MVC pipeline with routes, models, views, and controllers.
+subtitle: 'A complete MVC pipeline with routes, models, views, and controllers.'
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/7IniT0P13_I
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/7IniT0P13_I'
 ---
 
 In an ASP.NET MVC application, we have three crucial components: Model, View, Controller. The pattern is popular across many other ecosystems, and ASP.NET MVC is a particular flavor developed for .NET developers. 

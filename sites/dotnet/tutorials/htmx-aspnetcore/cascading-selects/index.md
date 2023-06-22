@@ -2,15 +2,21 @@
 type: TutorialStep
 date: 2022-04-27
 title: HTMX cascading selects
-technologies: [.net, asp.net]
-products: [rider,resharper]
-topics: [data,web,editing,inspections]
+topics:
+  - .net
+  - asp.net
+  - data
+  - editing
+  - inspections
+  - resharper
+  - rider
+  - web
 author: khalidabuhakmeh
 subtitle: One thing leads to another
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./poster.png
-    url: https://youtu.be/Yp-BPi_fgMM
+  poster: ./poster.png
+  url: 'https://youtu.be/Yp-BPi_fgMM'
 ---
 
 It's a typical pattern in web development to have a value in one `select` element affect the options in another. For example, you might have seen this interaction used on car shopping sites, where you can change the vehicle make to see the possible models. As common as it is to see this technique used, it can quickly become challenging to implement. What if we have multiple levels? What if the dataset is too large to include on the initial request? What if we need validation? How would you implement it with the knowledge you have today? Well, if you have no idea, then I have a solution for you.

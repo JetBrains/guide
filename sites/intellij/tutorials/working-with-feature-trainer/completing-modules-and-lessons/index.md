@@ -2,14 +2,16 @@
 type: TutorialStep
 date: 2021-04-11
 title: Modules and Lessons
-technologies: []
 topics: []
 author: hs
-subtitle: Modules are logical groupings of lessons. Each lesson can be completed in any order and restarted as many times are you like. Lessons will help you to associate actions and keyboard shortcuts with functionality in the IDE.
+subtitle: >-
+  Modules are logical groupings of lessons. Each lesson can be completed in any
+  order and restarted as many times are you like. Lessons will help you to
+  associate actions and keyboard shortcuts with functionality in the IDE.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/gY7Ei3tQ9q0
+  url: 'https://youtu.be/gY7Ei3tQ9q0'
 ---
 
 ## How can I work with modules and lessons?

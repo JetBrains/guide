@@ -2,29 +2,34 @@
 hasBody: true
 date: 2019-04-17
 title: Split Screen Without Tabs
-technologies: []
-topics: [editing, testing]
+topics:
+  - editing
+  - testing
 author: pwe
 subtitle: Get your code and tests side-by-side without resorting to tabs.
 seealso:
   - title: Splitting and unsplitting editor window
-    href: https://www.jetbrains.com/help/pycharm/managing-editor-tabs.html#splitting-and-unsplitting-editor-window
+    href: >-
+      https://www.jetbrains.com/help/pycharm/managing-editor-tabs.html#splitting-and-unsplitting-editor-window
   - title: Tabs and split windows
-    href: https://www.jetbrains.com/help/pycharm/migrating-from-text-editors.html#tabs_split_windows
+    href: >-
+      https://www.jetbrains.com/help/pycharm/migrating-from-text-editors.html#tabs_split_windows
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=-yiOTOK1xVY
+  url: 'https://www.youtube.com/watch?v=-yiOTOK1xVY'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/VcqbOtn1s0w
-leadin: |
-    *Get into TDD focus with side-by-side editors.*    
+  url: 'https://youtu.be/VcqbOtn1s0w'
+leadin: >
+  *Get into TDD focus with side-by-side editors.*    
 
-    Testing means three things: code that you're testing, the code for the test, 
-    and the output from the test runner. Arrange all 3 to get into the testing flow.
 
+  Testing means three things: code that you're testing, the code for the test, 
+
+  and the output from the test runner. Arrange all 3 to get into the testing
+  flow.
 ---
 
 As discussed previously, disabling tabs and focusing on the keyboard helps 

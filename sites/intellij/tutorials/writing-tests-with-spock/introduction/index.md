@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-05-20
 title: Introduction
-technologies: []
 topics: []
 author: tg
 subtitle: Introduction to the tutorial and links to further reading.
 thumbnail: ./thumbnail.png
-
 ---
 In this tutorial we're going to use the Spock framework to create and run unit tests.
 

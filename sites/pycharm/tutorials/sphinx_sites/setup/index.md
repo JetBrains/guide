@@ -2,10 +2,12 @@
 type: TutorialStep
 date: 2021-05-13
 title: Sphinx Setup
-technologies: [sphinx]
-topics: []
+topics:
+  - sphinx
 author: pwe
-subtitle: Make a project and virtual environment with dependencies, then make a simple Sphinx website.
+subtitle: >-
+  Make a project and virtual environment with dependencies, then make a simple
+  Sphinx website.
 thumbnail: thumbnail.png
 ---
 

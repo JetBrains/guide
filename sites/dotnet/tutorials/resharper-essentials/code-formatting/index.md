@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2021-03-01
 title: Code Formatting
-technologies: [.net, csharp]
-topics: [editing,ide]
-products: [resharper]
+topics:
+  - .net
+  - csharp
+  - editing
+  - ide
+  - resharper
 author: citizenmatt
 subtitle: Format and reformat code for consistency in your solution.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/QpeTw4p3aeU
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/QpeTw4p3aeU'
 ---
 
 ### Format and Reformat Code

@@ -2,12 +2,12 @@
 type: TutorialStep
 date: 2023-02-03
 title: Reading code
-technologies: []
 topics: []
 author: hs
-subtitle: We spend more time reading code than writing it so it makes sense to invest effort in learning how the IDE can help us here.
+subtitle: >-
+  We spend more time reading code than writing it so it makes sense to invest
+  effort in learning how the IDE can help us here.
 thumbnail: ./thumbnail.png
-
 ---
 
 Reading code is a crucial skill that we acquire as we go through our careers. IntelliJ IDEA can help you to read code and understand what it does with various mechanisms that you can tailor to the level of *support* that you want. We will look at:

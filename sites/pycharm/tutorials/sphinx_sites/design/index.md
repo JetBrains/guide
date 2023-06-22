@@ -2,12 +2,12 @@
 type: TutorialStep
 date: 2021-05-13
 title: Making a New Site Design
-technologies: [sphinx]
-topics: []
+topics:
+  - sphinx
 author: pwe
 subtitle: Let's change the look on the website with custom templates.
 thumbnail: thumbnail.png
-templateEngineOverride: "md"
+templateEngineOverride: md
 ---
 
 Schlockchain has a website, with content, structure, and linking.

@@ -1,15 +1,17 @@
 ---
 type: TutorialStep
 date: 2021-04-09
-title: Implementing Rest APIs 
-technologies: [django,aws]
-topics: [python]
+title: Implementing Rest APIs
+topics:
+  - aws
+  - django
+  - python
 author: mm
-subtitle: Writing CRUD (Create, Read, Update, Delete) in Django Rest Framework.
+subtitle: 'Writing CRUD (Create, Read, Update, Delete) in Django Rest Framework.'
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/JXXIG6Qy4A4
+  url: 'https://youtu.be/JXXIG6Qy4A4'
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step,

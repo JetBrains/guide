@@ -2,14 +2,14 @@
 type: TutorialStep
 date: 2021-05-14
 title: Setting an abbreviation
-technologies: []
-topics: [tricks]
+topics:
+  - tricks
 author: tg
 subtitle: Use a unique abbreviation to quickly navigate to the Gradle tool window
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/6V6G3RyxEMk?start=767
+  url: 'https://youtu.be/6V6G3RyxEMk?start=767'
 ---
 
 You may have noticed that there are a lot of results when we type "Gradle" into any of the search options. We may want to provide a way to quickly access the Gradle tool window.

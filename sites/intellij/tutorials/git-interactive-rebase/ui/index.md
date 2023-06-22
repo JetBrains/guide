@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2022-08-12
 title: From the UI
-technologies: []
 topics: []
 author: md
 subtitle: Using Git interactive rebase in the UI
 thumbnail: ./thumbnail.png
-
 ---
 
 We can use Git Interactive Rebase in IntelliJ IDEA as follows:

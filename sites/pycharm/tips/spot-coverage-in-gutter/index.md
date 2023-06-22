@@ -2,30 +2,30 @@
 hasBody: true
 date: 2019-04-17
 title: Spot Coverage Gaps Using the Gutter
-technologies: []
-topics: [testing]
+topics:
+  - testing
 author: pwe
 subtitle: Let the IDE help you spot coverage gaps in your testing.
 seealso:
   - title: Viewing Code Coverage Results
-    href: https://www.jetbrains.com/help/pycharm/viewing-code-coverage-results.html
+    href: 'https://www.jetbrains.com/help/pycharm/viewing-code-coverage-results.html'
   - title: Configuring Code Coverage Measurement
-    href: https://www.jetbrains.com/help/pycharm/configuring-code-coverage-measurement.html
+    href: >-
+      https://www.jetbrains.com/help/pycharm/configuring-code-coverage-measurement.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=hdJFr7UMPgI
+  url: 'https://www.youtube.com/watch?v=hdJFr7UMPgI'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/HQ_bqOBXZ5w
+  url: 'https://youtu.be/HQ_bqOBXZ5w'
 leadin: |
-    *Visual coverage to the rescue.*    
+  *Visual coverage to the rescue.*    
 
-    You know you need good tests. You know that means code coverage, but 
-    it's fiddly to set up and not integrated into your flow. Meet 
-    visual coverage.
-
+  You know you need good tests. You know that means code coverage, but 
+  it's fiddly to set up and not integrated into your flow. Meet 
+  visual coverage.
 ---
 
 *Note: Code coverage is a 

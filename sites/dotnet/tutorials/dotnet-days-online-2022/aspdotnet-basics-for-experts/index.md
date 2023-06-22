@@ -2,15 +2,20 @@
 type: TutorialStep
 date: 2022-10-25
 title: ASP.NET Basics for Experts
-technologies: [.net,asp.net]
-products: [rider,resharper]
-topics: [web,editing,ide]
+topics:
+  - .net
+  - asp.net
+  - editing
+  - ide
+  - resharper
+  - rider
+  - web
 author: maartenba
 subtitle: Layla Porter
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./thumbnail.png
-    url: https://youtu.be/cGCBRrwai2I
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/cGCBRrwai2I'
 ---
 
 People love to stay in their comfort zone and do what they've always done. But what if you could take your web applications to the next level just by getting the fundamentals right?

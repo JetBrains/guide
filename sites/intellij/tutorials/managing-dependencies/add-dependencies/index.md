@@ -2,12 +2,14 @@
 type: TutorialStep
 date: 2023-01-06
 title: Add dependencies
-technologies: [gradle, maven]
-topics: [build,packagesearch]
+topics:
+  - build
+  - gradle
+  - maven
+  - packagesearch
 author: md
 subtitle: Different ways to add dependencies in IntelliJ IDEA
 thumbnail: ./thumbnail.png
-
 ---
 
 There are several ways to add new dependencies to your project.

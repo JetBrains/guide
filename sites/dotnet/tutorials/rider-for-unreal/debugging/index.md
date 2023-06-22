@@ -2,17 +2,22 @@
 type: TutorialStep
 date: 2023-04-04
 title: Debugging Unreal Engine with Rider
-technologies: [unreal]
-topics: [gaming,ide,debugging]
-products: [rider]
+topics:
+  - debugging
+  - gaming
+  - ide
+  - rider
+  - unreal
 author: citizenmatt
-subtitle: Use the Unreal Editor log and the debugger to see what's going on in your game.
+subtitle: >-
+  Use the Unreal Editor log and the debugger to see what's going on in your
+  game.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://www.youtube.com/watch?v=_bvrngxZYds
-    start: 1812
-    end: 2239
+longVideo:
+  poster: ./poster.png
+  url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
+  start: 1812
+  end: 2239
 ---
 
 ### Unreal Editor log

@@ -2,14 +2,16 @@
 type: TutorialStep
 date: 2021-05-20
 title: Data Tables
-technologies: []
-topics: [testing]
+topics:
+  - testing
 author: tg
-subtitle: Data tables offer the same functionality as data pipes, but this syntax can sometimes be more readable for more complex sets of data.
+subtitle: >-
+  Data tables offer the same functionality as data pipes, but this syntax can
+  sometimes be more readable for more complex sets of data.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/i5Qu3qYOfsM?start=1122
+  url: 'https://youtu.be/i5Qu3qYOfsM?start=1122'
 ---
 
 Data pipes are a nice way to specify a limited set of data to test. Spock also supports [Data Tables](http://spockframework.org/spock/docs/2.0/all_in_one.html#data-tables) for more complex data driven testing.

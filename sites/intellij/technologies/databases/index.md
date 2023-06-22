@@ -1,7 +1,7 @@
 ---
 title: Databases
-subtitle: Store, organize, and retrieve the data belonging to your application 
-website: https://jetbrains.com/datagrip
+subtitle: 'Store, organize, and retrieve the data belonging to your application'
+website: 'https://jetbrains.com/datagrip'
 logo: ./databases.png
 ---
 

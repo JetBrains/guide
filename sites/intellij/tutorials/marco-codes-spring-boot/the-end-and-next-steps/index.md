@@ -2,14 +2,13 @@
 type: TutorialStep
 date: 2022-07-23
 title: The End & Next Steps
-technologies: []
 topics: []
 author: hs
 subtitle: References used in the video
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=4558s
+  url: 'https://www.youtube.com/watch?v=QuvS_VLbGko&start=4558s'
 ---
 
 ## The End & Next Steps

@@ -2,15 +2,21 @@
 type: TutorialStep
 date: 2020-07-06
 title: Conclusion - Profiling in Rider
-technologies: [.net, csharp]
-topics: [ide, profiling]
-products: [rider, dottrace]
+topics:
+  - .net
+  - csharp
+  - dottrace
+  - ide
+  - profiling
+  - rider
 author: maartenba
-subtitle: What have we learned? Profiling, profiler modes, optimizing code, DPA, and more. Let's summarize!
+subtitle: >-
+  What have we learned? Profiling, profiler modes, optimizing code, DPA, and
+  more. Let's summarize!
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/2C6Nx7jJegg
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/2C6Nx7jJegg'
 ---
 
 ### Optimizing Application Performance with Rider

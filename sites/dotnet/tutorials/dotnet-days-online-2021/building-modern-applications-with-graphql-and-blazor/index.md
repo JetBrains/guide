@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2021-05-11
 title: Building Modern Applications with GraphQL and Blazor
-technologies: [.net]
-products: [rider,resharper]
-topics: [web, data]
+topics:
+  - .net
+  - data
+  - resharper
+  - rider
+  - web
 author: maartenba
 subtitle: Michael Staib
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/P7y-OxeSkZ8
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/P7y-OxeSkZ8'
 ---
 
 Blazor and GraphQL combined will revolutionize how we build rich SPA applications with pure .NET.

@@ -2,15 +2,17 @@
 type: TutorialStep
 date: 2021-10-04
 title: Debugging TSX With Chrome
-technologies: [react]
-topics: []
+topics:
+  - react
 author: pwe
-subtitle: Sometimes you need to debug in the browser. Use the IDE to remote control Chrome during debugging.
+subtitle: >-
+  Sometimes you need to debug in the browser. Use the IDE to remote control
+  Chrome during debugging.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/dvmZi_DWu9I
+  url: 'https://youtu.be/dvmZi_DWu9I'
 ---
 
 As discussed in [Debugging During Testing With NodeJS](../nodejs_debugging/), testing and debugging under NodeJS is very productive. 

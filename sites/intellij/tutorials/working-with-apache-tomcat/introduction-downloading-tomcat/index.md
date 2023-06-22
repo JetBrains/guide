@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2022-05-10
 title: Introduction
-technologies: []
 topics: []
 author: hs
 subtitle: Introduction and downloading Apache Tomcat

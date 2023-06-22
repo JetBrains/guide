@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2023-03-30
 title: Your First Project
-technologies: []
 topics: []
 author: hs
 subtitle: New to PyCharm? Start here!
@@ -10,7 +9,7 @@ thumbnail: thumbnail.png
 videoBottom: true
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/W5p8v4yhxjk
+  url: 'https://youtu.be/W5p8v4yhxjk'
 ---
 
 In the previous step, we stopped on the Welcome Screen’s Projects tab.

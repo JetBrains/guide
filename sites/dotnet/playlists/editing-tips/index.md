@@ -2,24 +2,28 @@
 label: editing-tips
 date: 2020-01-29
 title: Editing Tips & Tricks
-technologies: [.net]
-products: [rider, resharper]
-topics: [completion, editing, inspections, ide]
+topics:
+  - .net
+  - completion
+  - editing
+  - ide
+  - inspections
+  - resharper
+  - rider
 author: maartenba
-subtitle: Know everything there is to know about editing code. 
+subtitle: Know everything there is to know about editing code.
 thumbnail: ./thumbnail.png
-cardThumbnail: './card.png'
+cardThumbnail: ./card.png
 playlistItems:
-    - /dotnet/tips/move-code/
-    - /dotnet/tips/create-variable/
-    - /dotnet/tips/cleanup-namespaces/
-    - /dotnet/tips/collection-iteration/
-    - /dotnet/tips/column-align/
-    - /dotnet/tips/csharp8-support/
-    - /dotnet/tips/json-schema/
-    - /dotnet/tips/expand-shrink-selection/
-    - /dotnet/tips/occurrence-selection/
-
+  - /dotnet/tips/move-code/
+  - /dotnet/tips/create-variable/
+  - /dotnet/tips/cleanup-namespaces/
+  - /dotnet/tips/collection-iteration/
+  - /dotnet/tips/column-align/
+  - /dotnet/tips/csharp8-support/
+  - /dotnet/tips/json-schema/
+  - /dotnet/tips/expand-shrink-selection/
+  - /dotnet/tips/occurrence-selection/
 ---
 
 

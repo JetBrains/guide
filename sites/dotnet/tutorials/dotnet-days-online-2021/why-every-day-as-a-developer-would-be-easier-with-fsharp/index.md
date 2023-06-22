@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2021-05-12
 title: Why Every Day as a Developer Would Be Easier with F#
-technologies: [.net,fsharp]
-products: [rider,resharper]
-topics: [ide]
+topics:
+  - .net
+  - fsharp
+  - ide
+  - resharper
+  - rider
 author: maartenba
 subtitle: Urs Enzler
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/q3Ies_XTo_s
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/q3Ies_XTo_s'
 ---
 
 Those who develop with .NET probably do so with C#. But F#, in particular, has great potential to make daily work easier. Everything that C# can do can also be done with F#, and often in a more lightweight and less error-prone way. If you want to see where the differences are and why F# is a good programming language for normal software development, come to this session! And don't worry, the talk is free of functional programming jargon – I promise!

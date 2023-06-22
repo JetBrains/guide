@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2023-04-04
 title: Working with Blueprints
-technologies: [unreal]
-topics: [gaming,editing,navigation]
-products: [rider]
+topics:
+  - editing
+  - gaming
+  - navigation
+  - rider
+  - unreal
 author: citizenmatt
-subtitle: Navigate back-and-forth between code an blueprints, find usages, ...
+subtitle: 'Navigate back-and-forth between code an blueprints, find usages, ...'
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster.png
-  url: https://www.youtube.com/watch?v=_bvrngxZYds
+  url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
   start: 1553
   end: 1811
 ---

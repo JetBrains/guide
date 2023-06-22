@@ -2,13 +2,12 @@
 type: TutorialStep
 date: 2023-02-03
 title: Understanding code
-technologies: []
 topics: []
 author: hs
-subtitle: Understanding code can be challenging, especially if you're new to the codebase.
+subtitle: >-
+  Understanding code can be challenging, especially if you're new to the
+  codebase.
 thumbnail: ./thumbnail.png
-
-
 ---
 
 Once we know how to navigate and get the IDE to help us read the code, the next step is to really understand that code. Again the IDE can help us here depending on our existing context and what we're looking to achieve. We will look at:

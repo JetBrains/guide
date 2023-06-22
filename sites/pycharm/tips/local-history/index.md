@@ -2,28 +2,29 @@
 hasBody: true
 date: 2022-10-13
 title: Use Local History to Avoid Disaster
-technologies: []
-topics: [vcs]
+topics:
+  - vcs
 author: pwe
-subtitle: Use the IDE's built-in history facility to recover changes when VCS can't help you.
+subtitle: >-
+  Use the IDE's built-in history facility to recover changes when VCS can't help
+  you.
 seealso:
   - title: Local History
-    href: https://www.jetbrains.com/help/pycharm/local-history.html#local_history.xml
+    href: >-
+      https://www.jetbrains.com/help/pycharm/local-history.html#local_history.xml
   - title: Retention period for Local History
-    href: https://www.jetbrains.com/help/pycharm/local-history.html#retention  
+    href: 'https://www.jetbrains.com/help/pycharm/local-history.html#retention'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/QZumMOtf6Hc
-
+  url: 'https://youtu.be/QZumMOtf6Hc'
 leadin: |
-    *Movies aren't the only things with time machines.*    
+  *Movies aren't the only things with time machines.*    
 
-    You mistakenly made a big change or deleted a file, and either you 
-    aren't under version control or the change was since your last commit. Local 
-    History to the rescue.
-
+  You mistakenly made a big change or deleted a file, and either you 
+  aren't under version control or the change was since your last commit. Local 
+  History to the rescue.
 ---
 
 You’re in your repo. You add a file. 

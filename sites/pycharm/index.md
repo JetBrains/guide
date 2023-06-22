@@ -1,5 +1,5 @@
 ---
-layout: "layouts/HomepageLayout.11ty.tsx"
+layout: layouts/HomepageLayout.11ty.tsx
 title: PyCharm Guide
 ---
 

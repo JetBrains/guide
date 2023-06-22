@@ -2,14 +2,18 @@
 type: TutorialStep
 date: 2021-04-09
 title: Integrating Sentry Application Monitoring
-technologies: [django,aws]
-topics: [python]
+topics:
+  - aws
+  - django
+  - python
 author: mm
-subtitle: Track errors & monitor performance in all major languages & frameworks with Sentry
+subtitle: >-
+  Track errors & monitor performance in all major languages & frameworks with
+  Sentry
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/1Sc7T_muccQ
+  url: 'https://youtu.be/1Sc7T_muccQ'
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, 

@@ -1,15 +1,14 @@
 ---
 type: TutorialStep
-date: 2021-25-08
+date: 2023-01-08
 title: Creating a new project
-technologies: []
 topics: []
 author: hs
 subtitle: Using the New Project Wizard to create a new project.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/H_XxH66lm3U?start=25
+  url: 'https://youtu.be/H_XxH66lm3U?start=25'
 ---
 
 In this walk-through, you will create, run and package a simple Java application that prints "Hello World" to the system output. You will also see some IntelliJ IDEA features that can boost your productivity, for example, coding assistance and supplementary tools. All the features in this tutorial are available in both IntelliJ IDEA Community edition and IntelliJ IDEA Ultimate.

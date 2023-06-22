@@ -2,25 +2,32 @@
 hasBody: true
 date: 2021-12-03
 title: Manage VCS Changelists in IntelliJ IDEA
-technologies: [git]
-topics: [vcs, refactoring, interface]
+topics:
+  - git
+  - interface
+  - refactoring
+  - vcs
 author: vb
 subtitle: Group and commit changes related to certain tasks
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/gg3yi-yc2ys
+  url: 'https://youtu.be/gg3yi-yc2ys'
 seealso:
   - title: (video) Version Control with IntelliJ IDEA
-    href: https://www.youtube.com/watch?v=-S3Q_-b52rA
+    href: 'https://www.youtube.com/watch?v=-S3Q_-b52rA'
   - title: (documentation) IntelliJ IDEA Help - Manage Changelists
-    href: https://www.jetbrains.com/help/idea/managing-changelists.html
-leadin: |
-  Select the files or changed lines in a file which you want to group together for certain tasks and use **⌘⇧M** (macOS) or **Alt+Shift+M** (Windows/Linux) to bring up the **Move Files to Another Changelist** dialog. 
-  
-  You can give it a name to create a new changelist or choose from an existing changelist. IntelliJ IDEA will restore the selected changes in the corresponding changelist.
+    href: 'https://www.jetbrains.com/help/idea/managing-changelists.html'
+leadin: >
+  Select the files or changed lines in a file which you want to group together
+  for certain tasks and use **⌘⇧M** (macOS) or **Alt+Shift+M** (Windows/Linux)
+  to bring up the **Move Files to Another Changelist** dialog. 
 
+
+  You can give it a name to create a new changelist or choose from an existing
+  changelist. IntelliJ IDEA will restore the selected changes in the
+  corresponding changelist.
 ---
 
 ## Default Active Changelist

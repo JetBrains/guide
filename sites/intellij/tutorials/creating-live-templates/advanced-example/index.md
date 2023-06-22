@@ -1,16 +1,14 @@
 ---
 type: TutorialStep
 date: 2022-04-18
-title: Advanced Example 
-technologies: []
+title: Advanced Example
 topics: []
 author: hs
-subtitle: Creating a Live Template to add a JUnit test 
+subtitle: Creating a Live Template to add a JUnit test
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/Sio9MdSqXZo?start=392
-
+  url: 'https://youtu.be/Sio9MdSqXZo?start=392'
 ---
 
 In this example, we're going to create a Live Template to insert the code construct for a new JUnit test. We're going to base this Live Template on existing code:

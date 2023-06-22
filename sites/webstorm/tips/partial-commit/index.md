@@ -2,24 +2,24 @@
 hasBody: true
 date: 2022-11-23
 title: Only Commit Some Changes
-technologies: []
-topics: [vcs]
+topics:
+  - vcs
 author: pwe
 subtitle: Unselect files or changed regions within files during the commit process.
 seealso:
   - title: Commit part of a file
-    href: https://www.jetbrains.com/help/webstorm/commit-and-push-changes.html?partial_commit
+    href: >-
+      https://www.jetbrains.com/help/webstorm/commit-and-push-changes.html?partial_commit
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/OlFg1g3hcLs
+  url: 'https://youtu.be/OlFg1g3hcLs'
 leadin: |
-    *Time to commit but not everything is ready?*    
+  *Time to commit but not everything is ready?*    
 
-    You've done a lot of work. Perhaps overlapping, perhaps some unfinished. 
-    Let the IDE help you leave files or parts of a file out of the commit.
-
+  You've done a lot of work. Perhaps overlapping, perhaps some unfinished. 
+  Let the IDE help you leave files or parts of a file out of the commit.
 ---
 
 You’ve done a lot of work, but not all the changes should go in one commit. 

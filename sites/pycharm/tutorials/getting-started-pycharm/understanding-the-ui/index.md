@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2023-03-30
 title: Understanding the UI
-technologies: []
 topics: []
 author: hs
 subtitle: Finding your way around the user interface of PyCharm.
@@ -10,7 +9,7 @@ thumbnail: thumbnail.png
 videoBottom: true
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/QInZSbPbnnY
+  url: 'https://youtu.be/QInZSbPbnnY'
 ---
 
 In the previous step, we looked at starting a project, which means we had PyCharm open and looked at the IDE.

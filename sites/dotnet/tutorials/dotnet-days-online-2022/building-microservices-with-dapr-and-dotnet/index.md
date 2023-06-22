@@ -2,15 +2,18 @@
 type: TutorialStep
 date: 2022-10-25
 title: Building Microservices with Dapr and .NET
-technologies: [.net,containers]
-products: [rider]
-topics: [running,ide]
+topics:
+  - .net
+  - containers
+  - ide
+  - rider
+  - running
 author: maartenba
 subtitle: Cecil Phillip
 thumbnail: ./thumbnail.png
 longVideo:
-    poster: ./thumbnail.png
-    url: https://youtu.be/VumVciZtLjc
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/VumVciZtLjc'
 ---
 
 Building distributed applications is not an easy thing to do. Breaking down your application into a collection of focused services comes with a completely different set of challenges. This is where DAPR can help us out. It provides a runtime and a collection of building blocks that can be used with any language or on any cloud. In this session, we’ll dive into DAPR, discuss the various building blocks it supports, and see some demos of how you can make use of it in your .NET applications.

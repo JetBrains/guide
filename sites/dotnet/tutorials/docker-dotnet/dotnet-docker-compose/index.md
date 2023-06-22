@@ -2,9 +2,12 @@
 type: TutorialStep
 date: 2021-04-26
 title: Docker Compose and Multiple Containers
-technologies: [.net, containers]
-products: [rider,resharper]
-topics: [data]
+topics:
+  - .net
+  - containers
+  - data
+  - resharper
+  - rider
 author: khalidabuhakmeh
 subtitle: Learn to use multiple containers to run a complete ASP.NET Solution.
 thumbnail: ./thumbnail.png

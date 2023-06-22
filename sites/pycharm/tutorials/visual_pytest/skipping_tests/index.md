@@ -2,14 +2,15 @@
 type: TutorialStep
 date: 2020-06-10
 title: Skipping Tests
-technologies: [pytest]
-topics: [testing]
+topics:
+  - pytest
+  - testing
 author: pwe
-subtitle: During refactoring, use pytest's markers to ignore certain breaking tests.
+subtitle: 'During refactoring, use pytest''s markers to ignore certain breaking tests.'
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/rEYQrMY8Ux4
+  url: 'https://youtu.be/rEYQrMY8Ux4'
 ---
 
 Sometimes you want to overhaul a chunk of code and don't want to stare at a broken test. 

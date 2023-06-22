@@ -2,7 +2,6 @@
 type: TutorialStep
 date: 2021-08-09
 title: Shortcuts
-technologies: []
 topics: []
 author: hs
 subtitle: A list of shortcuts used in the tutorial

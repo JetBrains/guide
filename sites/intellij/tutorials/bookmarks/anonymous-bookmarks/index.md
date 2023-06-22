@@ -2,12 +2,11 @@
 type: TutorialStep
 date: 2023-02-06
 title: Add anonymous bookmarks
-technologies: []
-topics: [tricks]
+topics:
+  - tricks
 author: md
 subtitle: How to add bookmarks without an identifier
 thumbnail: ./thumbnail.png
-
 ---
 
 We can bookmark a line by pressing **F3** (on macOS) or **F11** (on Windows/Linux). This shortcut creates an anonymous line bookmark, marked with a Bookmark icon. If we don't remember the shortcut, we can right-click the gutter next to the line of code we want to bookmark and select **Add Bookmark**.

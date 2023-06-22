@@ -2,11 +2,16 @@
 type: TutorialStep
 date: 2021-04-26
 title: Common Docker Terminology
-technologies: [.net, containers]
-products: [rider,resharper]
-topics: [data]
+topics:
+  - .net
+  - containers
+  - data
+  - resharper
+  - rider
 author: khalidabuhakmeh
-subtitle: Common terms and phrases .NET developers will encounter when working with Docker.
+subtitle: >-
+  Common terms and phrases .NET developers will encounter when working with
+  Docker.
 thumbnail: ./thumbnail.png
 ---
 

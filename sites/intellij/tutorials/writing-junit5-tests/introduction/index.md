@@ -2,12 +2,10 @@
 type: TutorialStep
 date: 2021-01-01
 title: Introduction
-technologies: []
 topics: []
 author: hs
 subtitle: Introduction to writing JUnit 5 Tests
 thumbnail: ./thumbnail.png
-
 ---
 
 In this tutorial we’re going to look at features of JUnit 5 that can make it easier for us to write effective and readable automated tests.

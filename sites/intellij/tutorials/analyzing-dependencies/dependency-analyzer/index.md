@@ -2,12 +2,13 @@
 type: TutorialStep
 date: 2023-05-05
 title: Dependency Analyzer
-technologies: [gradle, maven]
-topics: [build]
+topics:
+  - build
+  - gradle
+  - maven
 author: md
 subtitle: Using the Dependency Analyzer in IntelliJ IDEA
 thumbnail: ./thumbnail.png
-
 ---
 
 We can view our dependencies in the Maven or Gradle tool window. Here, we can expand dependencies to show their transitive dependencies, or collapse them again.

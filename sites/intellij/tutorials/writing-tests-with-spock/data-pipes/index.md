@@ -2,14 +2,16 @@
 type: TutorialStep
 date: 2021-05-20
 title: Data Pipes
-technologies: []
-topics: [testing]
+topics:
+  - testing
 author: tg
-subtitle: Often we want to test the same set of criteria with different sets of data. Data pipes is one mechanism to do this.
+subtitle: >-
+  Often we want to test the same set of criteria with different sets of data.
+  Data pipes is one mechanism to do this.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/i5Qu3qYOfsM?start=829
+  url: 'https://youtu.be/i5Qu3qYOfsM?start=829'
 ---
 
 When we're testing a particular path, we sometimes want to check that a known set of values leads to the same result.

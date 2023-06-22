@@ -2,15 +2,21 @@
 type: TutorialStep
 date: 2020-07-06
 title: Profiling Modes
-technologies: [.net, csharp]
-topics: [ide, profiling]
-products: [rider, dottrace]
+topics:
+  - .net
+  - csharp
+  - dottrace
+  - ide
+  - profiling
+  - rider
 author: maartenba
-subtitle: What are the differences between Sampling, Tracing, Line-by-Line, and Timeline profiling?
+subtitle: >-
+  What are the differences between Sampling, Tracing, Line-by-Line, and Timeline
+  profiling?
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/6dD74hFW82s
+longVideo:
+  poster: ./poster.png
+  url: 'https://youtu.be/6dD74hFW82s'
 ---
 
 ### Sampling, Tracing, Line-by-Line, and Timeline

@@ -2,10 +2,9 @@
 type: TutorialStep
 date: 2022-09-12
 title: Summary
-technologies: []
 topics: []
 author: hs
-subtitle: Summary 
+subtitle: Summary
 thumbnail: ./thumbnail.png
 ---
 

@@ -2,10 +2,10 @@
 type: TutorialStep
 date: 2021-05-13
 title: Linking
-technologies: [sphinx]
-topics: []
+topics:
+  - sphinx
 author: pwe
-subtitle: Sphinx turns links into structure, which turns out to be very valuable.
+subtitle: 'Sphinx turns links into structure, which turns out to be very valuable.'
 thumbnail: thumbnail.png
 ---
 

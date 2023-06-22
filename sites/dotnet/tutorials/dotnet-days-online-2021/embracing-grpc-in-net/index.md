@@ -2,15 +2,19 @@
 type: TutorialStep
 date: 2021-05-11
 title: Embracing gRPC in .NET
-technologies: [.net]
-products: [rider,resharper]
-topics: [data, web, editing]
+topics:
+  - .net
+  - data
+  - editing
+  - resharper
+  - rider
+  - web
 author: maartenba
 subtitle: Irina Scurtu
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/d8S9jh6Xj6Y
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/d8S9jh6Xj6Y'
 ---
 
 With an increasing need for scalability and performance dictated by the modern web, it is becoming harder and harder to choose an API paradigm that is suitable for service to service communication.

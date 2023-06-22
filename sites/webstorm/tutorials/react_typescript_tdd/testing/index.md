@@ -2,15 +2,16 @@
 type: TutorialStep
 date: 2021-10-04
 title: Testing
-technologies: [react, jest]
-topics: []
+topics:
+  - jest
+  - react
 author: pwe
 subtitle: Test-first development with Jest in the IDE.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/Y_TGIsFnvo4
+  url: 'https://youtu.be/Y_TGIsFnvo4'
 ---
 
 

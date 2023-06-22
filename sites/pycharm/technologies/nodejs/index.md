@@ -1,8 +1,8 @@
 ---
 title: Node.js
-subtitle: JavaScript outside of the browser, on the command-line or server-side
+subtitle: 'JavaScript outside of the browser, on the command-line or server-side'
 logo: ./nodejs-icon.svg
-website: https://nodejs.org
+website: 'https://nodejs.org'
 ---
 
 [Node.js](https://nodejs.org) is a JavaScript runtime built on Chrome's V8 JavaScript engine. It

@@ -2,29 +2,32 @@
 hasBody: true
 date: 2019-04-15
 title: Auto-Run Tests
-technologies: []
-topics: [testing]
+topics:
+  - testing
 author: pwe
-subtitle: Get into testing mode by telling PyCharm to automatically re-run tests as you type.
+subtitle: >-
+  Get into testing mode by telling PyCharm to automatically re-run tests as you
+  type.
 seealso:
   - title: Running tests automatically
-    href: https://www.jetbrains.com/help/pycharm/testing-your-first-python-application.html#run-test-automatically
+    href: >-
+      https://www.jetbrains.com/help/pycharm/testing-your-first-python-application.html#run-test-automatically
   - title: Test Runner Tab
-    href: https://www.jetbrains.com/help/pycharm/test-runner-tab.html#Test_Runner_Tab.xml
+    href: >-
+      https://www.jetbrains.com/help/pycharm/test-runner-tab.html#Test_Runner_Tab.xml
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=VNNEXUl_FWM
+  url: 'https://www.youtube.com/watch?v=VNNEXUl_FWM'
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/4kHncS_gPX0
+  url: 'https://youtu.be/4kHncS_gPX0'
 leadin: |
-    *Hands-free TDD mode.*    
+  *Hands-free TDD mode.*    
 
-    Test-driven development (TDD) means always run your tests. PyCharm 
-    makes that easy
-
+  Test-driven development (TDD) means always run your tests. PyCharm 
+  makes that easy
 ---
 
 TDD, or test-driven development, means "always be testing." In fact, the 

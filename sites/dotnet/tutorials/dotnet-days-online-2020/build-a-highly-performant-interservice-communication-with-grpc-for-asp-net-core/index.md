@@ -1,16 +1,21 @@
 ---
 type: TutorialStep
 date: 2020-05-13
-title: Build a Highly Performant Interservice Communication with gRPC for ASP NET Core
-technologies: [.net]
-products: [rider,resharper]
-topics: [web, ide]
+title: >-
+  Build a Highly Performant Interservice Communication with gRPC for ASP NET
+  Core
+topics:
+  - .net
+  - ide
+  - resharper
+  - rider
+  - web
 author: maartenba
 subtitle: Riccardo Terrell
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./thumbnail.png
-    url: https://youtu.be/uD-5v2Qd5Go
+longVideo:
+  poster: ./thumbnail.png
+  url: 'https://youtu.be/uD-5v2Qd5Go'
 ---
 
 In this session, we introduce gRPC as a modern high-performance RPC framework for ASP.NET Core and for interservice communication. We look at the difference between gRPC and REST-based communication by exploring the pros and cons that these technologies offer; for example, gRPC uses HTTP/2 as base transport protocol and ProtoBuf encoding for efficient and fast communication.

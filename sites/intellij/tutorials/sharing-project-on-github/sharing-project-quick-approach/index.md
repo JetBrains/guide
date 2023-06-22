@@ -2,14 +2,15 @@
 type: TutorialStep
 date: 2021-10-13
 title: Sharing your project on GitHub - The quick approach
-technologies: []
 topics: []
 author: hs
-subtitle: How to enable version control for your project and share it to GitHub in one step
+subtitle: >-
+  How to enable version control for your project and share it to GitHub in one
+  step
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/4ukhZvOmAtk?start=10
+  url: 'https://youtu.be/4ukhZvOmAtk?start=10'
 ---
 
 ## Creating a Local Repository and Sharing it to GitHub in One Step
