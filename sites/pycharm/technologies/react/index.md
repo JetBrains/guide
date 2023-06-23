@@ -3,6 +3,7 @@ title: React
 subtitle: A JavaScript library for building user interfaces
 logo: ./react-original.svg
 website: 'https://reactjs.org'
+topicType: technology
 ---
 
 React makes it painless to create interactive UIs. Design simple views for

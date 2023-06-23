@@ -5,5 +5,6 @@ subtitle: >-
   handle everything from small to very large projects with speed and efficiency.
 logo: git.png
 website: 'https://git-scm.com/'
+topicType: technology
 ---
 

@@ -6,6 +6,7 @@ import {
   getRoot,
   MarkdownFrontmatter,
   parseFrontmatter,
+  writeTopicType,
 } from "./cleaner";
 
 describe("Content Cleaning", () => {
@@ -59,6 +60,7 @@ describe("Content Cleaning", () => {
     expect(results.topics).toEqual(expected);
     expect(results.technologies).toBeUndefined();
   });
+
   test("combine products into topics and sort", () => {
     const fm: MarkdownFrontmatter = {
       products: ["p1", "p3", "p2"],
@@ -70,11 +72,22 @@ describe("Content Cleaning", () => {
     expect(results.technologies).toBeUndefined();
   });
 
+  test("migrated products and technologies get the topicType assigned", () => {
+    const fm: MarkdownFrontmatter = {
+      products: ["p1", "p3", "p2"],
+      topics: ["to1"],
+    };
+    const filePath = "/foo/products/tip1/index.md";
+    const results = writeTopicType(filePath, fm);
+    expect(results.topicType).toEqual("product");
+  });
+
   test("cleans all resources and prepares for writing to disk", () => {
     const markdownResources = parseFrontmatter(pyCharmTipFiles);
     const results = cleanAllResources(markdownResources);
     const first = Object.values(results)[0];
     expect(first).not.toContain("topics: ");
+    expect(first).not.toContain("topicType");
   });
 });
 

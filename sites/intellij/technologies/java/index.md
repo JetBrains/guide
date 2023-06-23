@@ -5,5 +5,6 @@ subtitle: >-
   developers write once and run anywhere.
 logo: duke.png
 website: 'https://openjdk.java.net/'
+topicType: technology
 ---
 

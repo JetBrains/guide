@@ -5,6 +5,7 @@ subtitle: >-
   reliable, and efficient software.
 website: 'https://golang.org'
 logo: ./go.png
+topicType: technology
 ---
 
 Go is an open source project developed by a team at Google and many contributors from the open source community.

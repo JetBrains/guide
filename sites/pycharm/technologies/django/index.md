@@ -3,6 +3,7 @@ title: Django
 subtitle: The web framework for perfectionists with deadlines
 logo: ./django-plain.svg
 website: 'https://www.djangoproject.com'
+topicType: technology
 ---
 
 Django is a high-level Python Web framework that encourages rapid development and

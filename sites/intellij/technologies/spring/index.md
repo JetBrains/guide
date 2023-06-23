@@ -6,5 +6,6 @@ subtitle: >-
   deployment platform.
 logo: spring.png
 website: 'https://spring.io/'
+topicType: technology
 ---
 

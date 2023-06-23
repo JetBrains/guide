@@ -33,9 +33,11 @@ export function getAllFiles(dirPath: string, arrayOfFiles: string[]) {
 
 export type MarkdownFrontmatter = {
   products?: string[];
+  resourceType?: string;
   technologies?: string[];
   title?: string;
   topics?: string[];
+  topicType?: string;
 };
 
 export type MarkdownResources = {
@@ -59,7 +61,7 @@ export function parseFrontmatter(filePaths: string[]): MarkdownResources {
   return results;
 }
 
-export function cleanCategories(fm: MarkdownFrontmatter) {
+export function cleanCategories(fm: MarkdownFrontmatter): MarkdownFrontmatter {
   let topics: string[] = fm.topics ? fm.topics : [];
   if (fm.technologies) {
     topics = [...fm.technologies, ...topics];
@@ -79,6 +81,18 @@ export function cleanCategories(fm: MarkdownFrontmatter) {
   return fm;
 }
 
+export function writeTopicType(
+  filePath: string,
+  fm: MarkdownFrontmatter
+): MarkdownFrontmatter {
+  if (filePath.includes("/products/")) {
+    fm.topicType = "product";
+  } else if (filePath.includes("/technologies/")) {
+    fm.topicType = "technology";
+  }
+  return fm;
+}
+
 export function cleanAllResources(resources: MarkdownResources): {
   [key: string]: string;
 } {
@@ -91,6 +105,7 @@ export function cleanAllResources(resources: MarkdownResources): {
 
     // Run each cleanup on this file
     fm = cleanCategories(markdown.frontmatter);
+    fm = writeTopicType(filePath, fm);
 
     // Now make a string to later write to disk
     const cleanString1 = matter.stringify(markdown.content, fm);

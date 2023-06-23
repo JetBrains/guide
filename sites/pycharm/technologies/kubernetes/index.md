@@ -3,6 +3,7 @@ title: Kubernetes
 subtitle: open-source container-orchestration system
 logo: ./kubernetes_logo.svg
 website: 'https://kubernetes.io'
+topicType: technology
 ---
 
 Kubernetes, also known as K8s, is an open-source system

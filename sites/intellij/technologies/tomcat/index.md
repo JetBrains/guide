@@ -7,5 +7,6 @@ subtitle: >-
   specifications are part of the Jakarta EE platform.
 logo: tomcat.png
 website: 'https://tomcat.apache.org/'
+topicType: technology
 ---
 

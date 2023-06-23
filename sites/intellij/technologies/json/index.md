@@ -5,6 +5,7 @@ subtitle: >-
   data objects.
 logo: json.svg
 website: 'https://www.json.org/json-en.html'
+topicType: technology
 ---
 
 JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write, and it is easy for machines to parse and generate. 

@@ -5,6 +5,7 @@ subtitle: >-
   language
 website: 'https://jetbrains.com'
 logo: ./platform.png
+topicType: technology
 ---
 
 The technologies are part of the greater IntelliJ Platform, the underlaying technology behind all of our IDEs. The technologies, features, and functionalities found here are shared among all our IDEs and work with more than a specific programming language.
