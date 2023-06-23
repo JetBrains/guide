@@ -58,18 +58,8 @@ export const ResourceFrontmatter = Type.Intersect([
       ["format"]: "date",
       ["type"]: "string",
     }),
-    products: Type.Optional(
-      Type.Array(
-        Type.String({ description: "Product related to this resource" })
-      )
-    ),
     subtitle: Type.Optional(
       Type.String({ description: "Subtitle of this resource" })
-    ),
-    technologies: Type.Optional(
-      Type.Array(Type.String(), {
-        description: "Technologies related to this resource",
-      })
     ),
     thumbnail: Type.String({
       description: "File name of the thumbnail for this resource",
@@ -93,9 +83,7 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
   author: string;
   date: Date;
   displayDate: string;
-  products?: string[];
   subtitle?: string;
-  technologies?: string[];
   thumbnail: string;
   cardThumbnail?: string;
   topics?: string[];
@@ -117,9 +105,7 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
     this.author = data.author;
     this.date = new Date(data.date);
     this.displayDate = displayDate;
-    this.products = data.products;
     this.subtitle = data.subtitle;
-    this.technologies = data.technologies;
     this.thumbnail = path.join(page.url, data.thumbnail);
     this.topics = data.topics;
 

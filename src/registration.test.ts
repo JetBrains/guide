@@ -61,7 +61,6 @@ describe("Resolve References", () => {
   const allCollections = fixtures.collections;
   const allReferences = fixtures.collections.allReferences;
   const authorItem0 = fixtures.authorItems[0];
-  const authorItem1 = fixtures.authorItems[1];
   let resource: Tip;
   const tip0 = fixtures.collections.allResources.get("/tips/some-tip/") as Tip;
   expect(tip0).to.exist;
@@ -83,12 +82,12 @@ describe("Resolve References", () => {
 
   test("should throw error for undefined label in array", () => {
     expect(resource.topics && resource.topics.length).to.be.gt(0);
-    const fieldName = "products";
-    resource.products = ["xxx", "yyy"];
+    const fieldName = "topics";
+    resource.topics = ["xxx", "yyy"];
     const resolver = () =>
       resolveReference({ fieldName, resource, allReferences });
     expect(resolver).toThrowError(
-      `Resource "/tips/some-tip/" has unresolved reference "products:xxx"`
+      `Resource "/tips/some-tip/" has unresolved reference "topics:xxx"`
     );
   });
 
@@ -117,22 +116,6 @@ describe("Resolve References", () => {
       const referencedTopics = tip0.references.topics;
       const theTopic = fixtures.topicItems[0];
       expect(referencedTopics[0].title).to.equal(theTopic.data.title);
-    }
-  });
-
-  test("resolve a missing products", () => {
-    // Get a tip with no products in frontmatter
-    const tip1 = fixtures.collections.allResources.get(
-      "/tips/another-tip/"
-    ) as Tip;
-    expect(tip1).to.exist;
-    expect(tip1.references).not.to.exist;
-    tip1.resolve(allCollections);
-    expect(tip1.references).to.exist;
-    if (tip1.references) {
-      const refAuthor = tip1.references.author;
-      expect(refAuthor.title).to.equal(authorItem1.data.title);
-      expect(tip1.references.topics).to.exist;
     }
   });
 });

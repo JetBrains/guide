@@ -18,10 +18,8 @@ const data: ResourceFrontmatter = {
   ...baseFrontmatter,
   author: "sa",
   date: new Date(Date.UTC(2023, 1, 11)),
-  products: ["sp", "ap"],
-  technologies: ["st", "at"],
   thumbnail: "thumbnail.png",
-  topics: ["st", "at"],
+  topics: ["st", "at", "sp", "ap"],
 };
 const page: EleventyPage = {
   fileSlug: "some-tip",
