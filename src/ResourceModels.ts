@@ -1,7 +1,7 @@
 import { Static, Type } from "@sinclair/typebox";
 import { EleventyPage } from "./models";
 import path from "upath";
-import { ReferenceFrontmatter, References } from "./ReferenceModels";
+import { Reference, References } from "./ReferenceModels";
 import { AllCollections, resolveReference } from "./registration";
 import { validateFrontmatter } from "./validators";
 import { DateTime } from "luxon";
@@ -153,7 +153,7 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
 }
 
 export type ResourceCollection = Map<string, Resource>;
-export type ReferenceCollection = Map<string, ReferenceFrontmatter>;
+export type ReferenceCollection = Map<string, Reference>;
 
 export function getResourceType(data: any, page: EleventyPage): string {
   /* Determine the resource type based on some policies */

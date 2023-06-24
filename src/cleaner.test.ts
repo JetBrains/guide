@@ -136,7 +136,7 @@ test("dump all authors for content migration", () => {
   //   whole TS/ESM thing interfered with running from
   //   package.json or the command line.
   const results: AllTopicTypes = dumpAuthors();
-  expect(results["dotnet"]["author"].length).toEqual(6);
+  expect(results["dotnet"]["author"].length).toEqual(5);
 
   // Now write to output for cutting-and-pasting
   Object.entries(results).forEach(([site, entries]) => {

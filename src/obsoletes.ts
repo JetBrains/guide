@@ -13,14 +13,14 @@ export function getObsoletes(
   allResources: ResourceCollection
 ): Obsoletes {
   const obsoletes: Obsoletes = {};
-  allReferences.forEach((reference, path) => {
+  allReferences.forEach((reference) => {
     if (reference.obsoletes && reference.obsoletes.length) {
-      obsoletes[path] = reference.obsoletes;
+      obsoletes[reference.url] = reference.obsoletes;
     }
   });
-  allResources.forEach((resource, path) => {
+  allResources.forEach((resource) => {
     if (resource.obsoletes && resource.obsoletes.length) {
-      obsoletes[path] = resource.obsoletes;
+      obsoletes[resource.url] = resource.obsoletes;
     }
   });
   return obsoletes;
