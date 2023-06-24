@@ -18,6 +18,11 @@ export const BaseFrontmatter = Type.Object({
   subtitle: Type.Optional(
     Type.String({ description: "Subtitle of this resource" })
   ),
+  obsoletes: Type.Optional(
+    Type.Array(Type.String(), {
+      description: "Paths that should redirect to this resource",
+    })
+  ),
 });
 export type BaseFrontmatter = Static<typeof BaseFrontmatter>;
 
@@ -32,6 +37,7 @@ export class BaseEntity implements BaseFrontmatter {
   slug: string;
   title: string;
   subtitle?: string;
+  obsoletes?: string[];
   url: string;
   static frontmatterSchema = BaseFrontmatter;
 
@@ -40,6 +46,7 @@ export class BaseEntity implements BaseFrontmatter {
     this.slug = page.fileSlug;
     this.title = data.title;
     this.subtitle = data.subtitle;
+    this.obsoletes = data.obsoletes;
     this.url = page.url;
 
     // @ts-ignore

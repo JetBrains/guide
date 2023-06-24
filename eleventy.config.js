@@ -18,6 +18,8 @@ const options = commandLineArgs([
   { name: "watch", type: Boolean, defaultOption: false },
 ]);
 module.exports = function (eleventyConfig) {
+  // Stop logging every file that gets written
+  eleventyConfig.setQuietMode(true);
   eleventyConfig.addPlugin(EleventyVitePlugin, {
     viteOptions: {
       clearScreen: true,

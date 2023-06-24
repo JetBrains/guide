@@ -26,6 +26,7 @@ import * as fs from "fs";
 import MarkdownIt from "markdown-it";
 import prism from "markdown-it-prism";
 import { getReferences, getResources, QueryFilter } from "./queries";
+import { dumpObsoletes } from "../src/obsoletes";
 
 export const resourceCollections = {
   playlist: Playlist,
@@ -85,6 +86,8 @@ export async function registerIncludes(
       fs.mkdirSync(schemasOutputPath, { recursive: true });
       await dumpSchemas(schemas, allReferencesList, schemasOutputPath);
 
+      // Dump an obsoletes.json file to later generate redirects
+      dumpObsoletes(allCollections.allReferences, allCollections.allResources);
       return allCollections.allResources;
     }
   );

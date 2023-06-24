@@ -46,6 +46,7 @@ const tipFrontmatters: TipFrontmatter[] = [
     author: "sa",
     topics: ["sto", "ato", "sp", "ap", "ste", "ate"],
     thumbnail: "thumbnail.png",
+    obsoletes: ["/oldtips/tip1/", "/oldtips/tip2/"],
   },
   {
     title: "Another Tip",
@@ -726,6 +727,6 @@ const fixtures = {
   all,
   context,
   site,
-  resolvedCollections: resolvedCollections,
+  resolvedCollections,
 };
 export default fixtures;
