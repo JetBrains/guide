@@ -15,6 +15,9 @@ export const BaseFrontmatter = Type.Object({
     })
   ),
   title: Type.String({ description: "Title of this resource" }),
+  subtitle: Type.Optional(
+    Type.String({ description: "Subtitle of this resource" })
+  ),
 });
 export type BaseFrontmatter = Static<typeof BaseFrontmatter>;
 
@@ -28,6 +31,7 @@ export class BaseEntity implements BaseFrontmatter {
   resourceType: string;
   slug: string;
   title: string;
+  subtitle?: string;
   url: string;
   static frontmatterSchema = BaseFrontmatter;
 
@@ -35,6 +39,7 @@ export class BaseEntity implements BaseFrontmatter {
     this.resourceType = data.resourceType as string;
     this.slug = page.fileSlug;
     this.title = data.title;
+    this.subtitle = data.subtitle;
     this.url = page.url;
 
     // @ts-ignore
@@ -58,9 +63,6 @@ export const ResourceFrontmatter = Type.Intersect([
       ["format"]: "date",
       ["type"]: "string",
     }),
-    subtitle: Type.Optional(
-      Type.String({ description: "Subtitle of this resource" })
-    ),
     thumbnail: Type.String({
       description: "File name of the thumbnail for this resource",
     }),
@@ -83,7 +85,6 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
   author: string;
   date: Date;
   displayDate: string;
-  subtitle?: string;
   thumbnail: string;
   cardThumbnail?: string;
   topics?: string[];
@@ -105,7 +106,6 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
     this.author = data.author;
     this.date = new Date(data.date);
     this.displayDate = displayDate;
-    this.subtitle = data.subtitle;
     this.thumbnail = path.join(page.url, data.thumbnail);
     this.topics = data.topics;
 

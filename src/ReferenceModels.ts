@@ -8,16 +8,12 @@ export const ReferenceFrontmatter = Type.Intersect([
     label: Type.Optional(
       Type.String({ description: "Label of this resource" })
     ), // Can be inferred from parentDir
-    subtitle: Type.Optional(
-      Type.String({ description: "Subtitle of this resource" })
-    ),
   }),
 ]);
 export type ReferenceFrontmatter = Static<typeof ReferenceFrontmatter>;
 
 export class Reference extends BaseEntity implements ReferenceFrontmatter {
   label: string;
-  subtitle?: string;
   static joinKey = "references"; // What field on resource? Used in label namespace.
 
   constructor({
@@ -29,14 +25,8 @@ export class Reference extends BaseEntity implements ReferenceFrontmatter {
   }) {
     super({ data, page });
     this.label = data.label ? data.label : page.fileSlug;
-    this.subtitle = data.subtitle;
   }
 }
-
-// export type Reference = {
-//   linkedResources: Resource[];
-// } & ReferenceFrontmatter &
-//   BaseEntity;
 
 export async function getReference(
   data: any,
