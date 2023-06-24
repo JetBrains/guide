@@ -86,7 +86,7 @@ function App() {
 }
 ```
 
-In the IDE, you can quickly generate markup using [Emmet](../../../technologies/emmet). 
+In the IDE, you can quickly generate markup using [Emmet](../../../topics/emmet). 
 Highlight the existing `div` to replace and enter `div>h1<enter>Hello React`:
 
 ![Use Emmet to generate HTML markup](./screenshots/emmet.png)

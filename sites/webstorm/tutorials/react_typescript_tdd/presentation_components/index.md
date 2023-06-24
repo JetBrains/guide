@@ -149,7 +149,7 @@ For example, in the first test:
   );
 ```
 
-We are using [Jest](../../../technologies/jest) mock functions to create a disposable arrow
+We are using [Jest](../../../topics/jest) mock functions to create a disposable arrow
 function which we passed in as a prop.
 
 Do this for both tests:

@@ -1,10 +1,18 @@
 /**
  * Utilities for loading site content and cleaning
  */
-import { normalize } from "upath";
+import path, { normalize } from "upath";
 import * as fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
+
+export const guideSites = [
+  "dotnet",
+  "goland",
+  "intellij",
+  "pycharm",
+  "webstorm",
+];
 
 export function getRoot(): string {
   return normalize(`${__dirname}/../sites`);
@@ -32,6 +40,7 @@ export function getAllFiles(dirPath: string, arrayOfFiles: string[]) {
 }
 
 export type MarkdownFrontmatter = {
+  label?: string;
   products?: string[];
   resourceType?: string;
   technologies?: string[];
@@ -127,4 +136,54 @@ export function writeCleanResources(): void {
   Object.entries(cleanedResources).forEach(([filePath, markdown]) => {
     fs.writeFileSync(filePath, markdown, { flag: "w+" });
   });
+}
+
+type TopicTypes = {
+  [key: string]: string[];
+};
+export type AllTopicTypes = {
+  [key: string]: TopicTypes;
+};
+
+export function dumpTopics(): AllTopicTypes {
+  /* Utility function to get a content migration spreadsheet of topics */
+  const allTopicTypes: AllTopicTypes = {};
+  guideSites.forEach((site) => {
+    allTopicTypes[site] = {
+      product: [],
+      technology: [],
+      topic: [],
+    };
+    const topics = normalize(`${__dirname}/../sites/${site}/topics`);
+    const resourceFiles = getAllFiles(topics, []);
+    const markdownResources = parseFrontmatter(resourceFiles);
+    Object.entries(markdownResources).forEach(([filePath, markdown]) => {
+      const label = filePath.split(path.sep)[10];
+      if (label !== "index.md") {
+        const topicType = markdown.frontmatter.topicType;
+        const key = topicType ? topicType : "topic";
+        allTopicTypes[site][key].push(label);
+      }
+    });
+  });
+  return allTopicTypes;
+}
+export function dumpAuthors(): AllTopicTypes {
+  /* Utility function to get a content migration spreadsheet of authors */
+  const allAuthorTypes: AllTopicTypes = {};
+  guideSites.forEach((site) => {
+    allAuthorTypes[site] = {
+      author: [],
+    };
+    const authors = normalize(`${__dirname}/../sites/${site}/authors`);
+    const resourceFiles = getAllFiles(authors, []);
+    const markdownResources = parseFrontmatter(resourceFiles);
+    Object.keys(markdownResources).forEach((filePath) => {
+      const label = filePath.split(path.sep)[10];
+      if (label !== "index.md") {
+        allAuthorTypes[site]["author"].push(label);
+      }
+    });
+  });
+  return allAuthorTypes;
 }

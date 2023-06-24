@@ -1,9 +1,13 @@
 import { describe, expect, test } from "vitest";
 import {
+  AllTopicTypes,
   cleanAllResources,
   cleanCategories,
+  dumpAuthors,
+  dumpTopics,
   getAllFiles,
   getRoot,
+  guideSites,
   MarkdownFrontmatter,
   parseFrontmatter,
   writeTopicType,
@@ -96,4 +100,62 @@ test.skip("actually execute the cleaning", () => {
   //   whole TS/ESM thing interfered with running from
   //   package.json or the command line.
   // writeCleanResources();
+});
+
+test("dump all topics for content migration", () => {
+  // TODO Should not have to execute as a test, but the
+  //   whole TS/ESM thing interfered with running from
+  //   package.json or the command line.
+  const results: AllTopicTypes = dumpTopics();
+  expect(results["dotnet"]["product"].length).toEqual(6);
+
+  // Now write to output for cutting-and-pasting
+  Object.entries(results).forEach(([site, entries]) => {
+    console.log(`\n${site}\n=====`);
+    Object.entries(entries).forEach(([topicType, values]) => {
+      console.log(`\n${topicType}\n----------`);
+      values.sort().forEach((value) => {
+        // Brute force!! Get a count of how many times this value appears
+        // in all the sites. If over one, flag as duplicate.
+        let count = 0;
+        guideSites.forEach((site) => {
+          const labels = results[site][topicType];
+          if (labels.includes(value)) {
+            count = count + 1;
+          }
+        });
+        const flag = count > 1 ? ` (${count})` : "";
+        console.log(`${value}${flag}`);
+      });
+    });
+  });
+});
+
+test("dump all authors for content migration", () => {
+  // TODO Should not have to execute as a test, but the
+  //   whole TS/ESM thing interfered with running from
+  //   package.json or the command line.
+  const results: AllTopicTypes = dumpAuthors();
+  expect(results["dotnet"]["author"].length).toEqual(6);
+
+  // Now write to output for cutting-and-pasting
+  Object.entries(results).forEach(([site, entries]) => {
+    console.log(`\n${site}\n=====`);
+    Object.entries(entries).forEach(([topicType, values]) => {
+      console.log(`\n${topicType}\n----------`);
+      values.sort().forEach((value) => {
+        // Brute force!! Get a count of how many times this value appears
+        // in all the sites. If over one, flag as duplicate.
+        let count = 0;
+        guideSites.forEach((site) => {
+          const labels = results[site][topicType];
+          if (labels.includes(value)) {
+            count = count + 1;
+          }
+        });
+        const flag = count > 1 ? ` (${count})` : "";
+        console.log(`${value}${flag}`);
+      });
+    });
+  });
 });
