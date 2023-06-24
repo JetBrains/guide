@@ -1,5 +1,14 @@
 import { vi } from "vitest";
 
+// @ts-ignore
+const happyDOMSettings = window.happyDOM.settings;
+happyDOMSettings.disableJavaScriptFileLoading = true;
+happyDOMSettings.disableJavaScriptEvaluation = true;
+happyDOMSettings.disableCSSFileLoading = true;
+happyDOMSettings.disableIframePageLoading = true;
+happyDOMSettings.disableComputedStyleRendering = true;
+happyDOMSettings.enableFileSystemHttpRequests = true;
+
 // import Image from "@11ty/eleventy-img";
 vi.mock("@11ty/eleventy-img", () => {
   const mockImage = vi.fn();
