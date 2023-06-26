@@ -102,7 +102,7 @@ test.skip("actually execute the cleaning", () => {
   // writeCleanResources();
 });
 
-test("dump all topics for content migration", () => {
+test.skip("dump all topics for content migration", () => {
   // TODO Should not have to execute as a test, but the
   //   whole TS/ESM thing interfered with running from
   //   package.json or the command line.
@@ -131,7 +131,7 @@ test("dump all topics for content migration", () => {
   });
 });
 
-test("dump all authors for content migration", () => {
+test.skip("dump all authors for content migration", () => {
   // TODO Should not have to execute as a test, but the
   //   whole TS/ESM thing interfered with running from
   //   package.json or the command line.
