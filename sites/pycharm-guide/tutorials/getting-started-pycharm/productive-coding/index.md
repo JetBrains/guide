@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2023-06-05
+date: 2023-06-27
 title: Productive Coding in PyCharm
 technologies: []
 topics: []
@@ -10,7 +10,7 @@ thumbnail: thumbnail.png
 videoBottom: true
 longVideo:
   poster: poster_long.png
-  url: https://youtu.be/MCsDfAsxG-Q
+  url: https://youtu.be/OoxLZILN-uI
 ---
 
 In the previous step, we saw how you can use PyCharm to get help with writing your tests. In this step, we're going to look at some tips for your productivity. 
