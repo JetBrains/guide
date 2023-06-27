@@ -58,7 +58,7 @@ Our next stop on this tour is *Surround With*. Consider this Python code for the
 
 We can use *Surround With* and then select `try/finally` and PyCharm will fill in the code construct for us.
 
-![after-try-finally .png](after-try-finally%20.png)
+![after-try-finally .png](after-try-finally.png)
 
 How about this HTML code here.
 
@@ -72,7 +72,7 @@ Let’s say you want to hide this code so you can focus on a smaller subset of t
 
 ![editor-fold.png](editor-fold.png)
 
-Once again use “surround with” and this time select <Editor Fold>There are more contexts that you can use surround with in including XML, HTML and Javascript. 
+Once again use “surround with” and this time select &lt;Editor Fold&gt;There are more contexts that you can use surround with in including XML, HTML and Javascript. 
 
 ## TODO List
 
