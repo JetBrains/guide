@@ -4,14 +4,14 @@ function handler(event) {
     var request = event.request;
     var headers = request.headers;
     var uri = event["request"]["uri"]
-    var BASE_URL = "https://d11nedkd3onyk7.cloudfront.net/jetbrains/guide/"
+    var BASE_URL = "https://jetbrains.com/guide/"
     var JB_PRODUCTS = {
         "pycharm": "pycharm",
         "goland": "goland",
         "webstorm": "webstorm"
     }
 
-    var data = uri.split("/")
+    var data = uri.split("/")  // pycharm/guide/author/pwe/index
     data = data.filter((str) => str !== '');
 
     var product_name = data[0].toLowerCase();
