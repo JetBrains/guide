@@ -1,9 +1,8 @@
-/* This function is still under development */
 function handler(event) {
-    console.log(helloWorld());
     var request = event.request;
     var headers = request.headers;
     var uri = event["request"]["uri"]
+    //var BASE_URL = "https://d11nedkd3onyk7.cloudfront.net/jetbrains/guide/"
     var BASE_URL = "https://jetbrains.com/guide/"
     var JB_PRODUCTS = {
         "pycharm": "pycharm",
@@ -11,8 +10,11 @@ function handler(event) {
         "webstorm": "webstorm"
     }
 
-    var data = uri.split("/")  // pycharm/guide/author/pwe/index
+    uri = uri.replace(/^.*\/\/[^\/]+/, '') // remove domain name.
+
+    var data = uri.split("/")
     data = data.filter((str) => str !== '');
+
 
     var product_name = data[0].toLowerCase();
     if (data.length > 0) {
