@@ -19,7 +19,7 @@ describe("Content Cleaning", () => {
   const pyCharmTipFiles = getAllFiles(pycharmTipRoot, []).slice(0, 10);
 
   test("get the root of the site as a path", () => {
-    expect(root).to.contain("guide/sites");
+    expect(root).to.contain("guide/site");
   });
   test("recursively load a list of file paths", () => {
     // Walking everything can be slow, let's pick a subset

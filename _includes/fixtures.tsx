@@ -138,7 +138,7 @@ const authorItems: {
     page: {
       fileSlug: "aa",
       url: "/authors/aa/",
-      inputPath: "./sites/webstorm-pycharm-webstorm-guide/authors/aa/index.md",
+      inputPath: "./site/webstorm-pycharm-webstorm-guide/authors/aa/index.md",
       date,
     },
   },

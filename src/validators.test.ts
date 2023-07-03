@@ -4,7 +4,7 @@ import { sitesDir, validateFrontmatter } from "./validators";
 import { TipFrontmatter } from "../_includes/resources/tip/TipModels";
 
 test("defines the sitesDir", () => {
-  expect(path.basename(sitesDir)).to.equal("sites");
+  expect(path.basename(sitesDir)).to.equal("site");
 });
 
 test("validates good frontmatter", () => {
@@ -18,7 +18,7 @@ test("validates good frontmatter", () => {
     date: new Date(),
     resourceType: "some-resourcetype",
     thumbnail: "thumbnail.png",
-    inputFolder: "sites/webstorm-pycharm-webstorm-guide/tips/some-slug/",
+    inputFolder: "site/webstorm-pycharm-webstorm-guide/tips/some-slug/",
   };
   const validation = () =>
     validateFrontmatter(TipFrontmatter, frontmatter, "tip1.md");

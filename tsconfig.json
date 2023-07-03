@@ -25,7 +25,7 @@
     "_includes",
     "public",
     "node_modules/vitest/globals.d.ts",
-    "sites/*/index*.tsx"
+    "site/*/index*.tsx"
   ],
   "ts-node": {
     "esm": true,

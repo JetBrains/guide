@@ -15,7 +15,7 @@ export const guideSites = [
 ];
 
 export function getRoot(): string {
-  return normalize(`${__dirname}/../sites`);
+  return normalize(`${__dirname}/../site`);
 }
 
 export function getAllFiles(dirPath: string, arrayOfFiles: string[]) {
