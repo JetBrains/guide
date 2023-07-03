@@ -88,7 +88,7 @@ export async function registerIncludes(
 
       // Dump an obsoletes.json file to later generate redirects
       // dumpObsoletes(allCollections.allReferences, allCollections.allResources);
-      // return allCollections.allResources;
+      return allCollections.allResources;
     }
   );
 
