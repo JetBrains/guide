@@ -87,8 +87,8 @@ export async function registerIncludes(
       await dumpSchemas(schemas, allReferencesList, schemasOutputPath);
 
       // Dump an obsoletes.json file to later generate redirects
-      dumpObsoletes(allCollections.allReferences, allCollections.allResources);
-      return allCollections.allResources;
+      // dumpObsoletes(allCollections.allReferences, allCollections.allResources);
+      // return allCollections.allResources;
     }
   );
 
