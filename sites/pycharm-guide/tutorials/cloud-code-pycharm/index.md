@@ -2,7 +2,7 @@
 resourceType: tutorial
 layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2023-07-05
-title: Creating a new project in PyCharm
+title: Remote Development in PyCharm Professional Using Google Cloud Code
 technologies: [kubernetes,django]
 topics: [python]
 author: mm
@@ -12,6 +12,7 @@ tutorialItems:
   - ./introduction/
   - ./prerequisites/
   - ./project-setup/
+  - ./rest-todo-app/
 
 
 ---
