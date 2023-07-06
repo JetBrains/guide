@@ -10,6 +10,7 @@ subtitle: Leverage Cloud Code and PyCharm to enhance and optimize your developer
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/
+  - ./prerequisites/
 
 
 ---
