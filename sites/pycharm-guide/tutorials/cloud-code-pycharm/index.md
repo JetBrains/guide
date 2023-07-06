@@ -2,7 +2,7 @@
 resourceType: tutorial
 layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2023-07-05
-title: Remote Development in PyCharm using Cloud Code
+title: Creating a new project in PyCharm
 technologies: [kubernetes,django]
 topics: [python]
 author: mm
@@ -11,6 +11,7 @@ thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/
   - ./prerequisites/
+  - ./project-setup/
 
 
 ---
