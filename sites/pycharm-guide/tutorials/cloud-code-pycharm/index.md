@@ -13,6 +13,7 @@ tutorialItems:
   - ./prerequisites/
   - ./project-setup/
   - ./rest-todo-app/
+  - ./google-kubernetes-engine/
 
 
 ---
