@@ -14,11 +14,357 @@ longVideo:
   end: 30
 ---
 
-## Creating a new cluster
-
-We’re now going to set up Google Kubernetes Engine (GKE). Before we start, ensure you 
-have a valid Gmail account then visit the following URL: [console.cloud.google.com](https://console.cloud.google.com/).
+## Building and running your application
 
 
-![gke1](./images/screen73.png)
+Our cluster has been successfully created. Let’s now connect to it and verify that everything is working properly.
 
+Click on **cluster-1**.
+
+
+![run-gke-1](./images/screen122.png)
+
+Follow the steps below: 
+* Click on **Connect**.
+* Copy the command.
+* Click on **Run in Cloud Shell**.
+
+Note that you need to execute the command on your local machine as well.
+
+![run-gke-2](./images/screen123.png)
+
+A Cloud Shell will then be initialized and the command will be copied to the terminal.
+
+After you press **Enter**, click on **Authorize**.
+
+![run-gke-3](./images/screen124.png)
+
+Next, run the following command:
+
+```bash
+kubectl get nodes
+```
+
+This will generate a list of the three nodes currently running in the GKE cluster.
+
+![run-gke-4](./images/screen125.png)
+
+Now, I’ll try to run a simple Nginx pod, just to verify that everything is working as expected.
+
+![run-gke-5](./images/screen126.png)
+
+The Nginx pod is running perfectly, so we can now move over to the PyCharm Terminal.
+
+![run-gke-6](./images/screen127.png)
+
+Now run the same command that you ran previously in the Cloud Shell in your PyCharm Terminal.
+
+This will be initialized and create a **kubeconfig** entry for the GKE cluster.
+
+![run-gke-7](./images/screen128.png)
+
+I’m now going to run the following command:  
+
+```bash
+kubectl config get-contexts
+```
+
+This will generate a list of multiple clusters. We currently have two clusters attached: One is a 
+local Kubernetes cluster running through Docker Desktop, and the other is the GKE Cluster, 
+which is currently selected, as shown by the asterisk (*) .
+
+![run-gke-8](./images/screen129.png)
+
+You can now easily check the list of nodes in the cluster by running the following command:
+
+```bash
+kubectl get nodes
+```
+
+![run-gke-9](./images/screen130.png)
+
+Now let’s move ahead and edit our configuration.
+
+![run-gke-10](./images/screen131.png)
+
+Click on **Choose Artifact Registry Repository**.
+
+![run-gke-11](./images/screen132.png)
+
+Now click on the three dots icon to select the Google Cloud project.
+
+![run-gke-12](./images/screen133.png)
+
+The project will be detected automatically. You just need to select **jetbrains** and then click **OK**
+
+![run-gke-13](./images/screen134.png)
+
+Click on the **Refresh** icon and the repository name will appear. You may remember that we created this earlier in Artifact Registry. 
+
+Next, go ahead and click **OK**.
+
+![run-gke-14](./images/screen135.png)
+
+Under **Build / Deploy**, make sure to choose **Google Cloud Build**. The Docker image will now be built directly in Cloud Build instead of running locally.
+
+![run-gke-15](./images/screen136.png)
+
+Once you’ve done this, click **Apply** and then **OK**.
+
+
+Now go to the Google Cloud console and search for Cloud Build.
+
+![run-gke-16](./images/screen137.png)
+
+You’ll need the API enabled to use Cloud Build in your project, so go ahead and enable it as shown below.
+
+![run-gke-17](./images/screen138.png)
+
+
+Now we need to obtain user access credentials via a web flow and put them in the well-known location for Application Default Credentials (ADC).
+
+
+Run the following command in the terminal: 
+
+```bash
+gcloud auth application-default login
+```
+![run-gke-18](./images/screen139.png)
+
+This is something you will often encounter when working with gcloud authentication. The 
+following resource might come in handy in such situations: [stackoverflow.com/questions/53306131](https://stackoverflow.com/questions/53306131/difference-between-gcloud-auth-application-default-login-and-gcloud-auth-logi)
+
+Here are some of the use cases discussed in the answer to the question above:
+
+**Interacting with GCP via gcloud:**
+
+```bash
+gcloud auth login
+```
+This obtains your credentials and stores them in `~/.config/gcloud/`. Now you can run gcloud commands from your terminal and it will find your credentials automatically. Any code or SDK will not automatically pick up your credentials in this case.
+
+Reference: [cloud.google.com/sdk/gcloud/reference/auth/login](https://cloud.google.com/sdk/gcloud/reference/auth/login).
+
+**Interacting with GCP via an SDK:**
+```bash
+gcloud auth application-default login
+```
+
+This obtains your credentials via a web flow and stores them in _“the well-known location for Application Default Credentials”_. Now any code or SDK you run will be able to find the credentials automatically. This is a good stand-in when you want to locally test code that would normally run on a server and use a server-side credentials file.
+
+Reference: [cloud.google.com/sdk/gcloud/reference/auth/application-default/login.](https://cloud.google.com/sdk/gcloud/reference/auth/application-default/login)
+
+Once authenticated, you’ll receive a message like this in the terminal.
+
+
+![run-gke-19](./images/screen140.png)
+
+Click on the **Play** button to start the build process.
+
+![run-gke-20](./images/screen141.png)
+
+The build process has been initiated and is being executed in Google Cloud Build.
+
+![run-gke-21](./images/screen142.png)
+
+![run-gke-22](./images/screen143.png)
+
+If you wish, you can also execute it locally through Docker Desktop or Minikube.
+
+The application completed the following steps: 
+
+* Performed build.
+* Pushed image to registry.
+* Deployed pods and exposed service through LoadBalancer.
+* Proxied through localhost at port **4503**.
+
+![run-gke-23](./images/screen144.png)
+
+Success! The page has loaded, and we can now see how the UI is going to look:
+
+![run-gke-24](./images/screen145.png)
+
+As you can see, a Django pod is running in the default namespace. 
+
+![run-gke-25](./images/screen146.png)
+
+You can see the pod IP is private, and it's being exposed through the LoadBalancer service on IP 34.100.240.93.
+
+![run-gke-26](./images/screen147.png)
+
+You can open this IP directly in the browser or via a proxy with no difference in functionality. You’re now directly
+connected with the public-facing load balancer.
+
+![run-gke-27](./images/screen148.png)
+
+
+If you stop the running process, then the deployment and service will be deleted and the IP released. In this 
+case, if you run the application again, you’ll receive a new LoadBalancer IP.
+
+![run-gke-28](./images/screen149.png)
+
+
+Next, go ahead and add the line **db.sqlite3** to the **.dockerignore** file. This is because we are going to use
+MySQL and I don’t want this file to be added to my image.
+
+![run-gke-29](./images/screen150.png)
+
+Make sure to copy the private IP address of the cloud database we created earlier.
+
+![run-gke-30](./images/screen151.png)
+
+Open the `settings.py` file, add the following code under **DATABASES**, and make sure to change 
+the host to the private IP we just copied.
+
+![run-gke-31](./images/screen152.png)
+
+It’s essential that you consistently employ a robust password 
+and avoid utilizing hardcoded text within the codebase. Instead, consider 
+passing data through environment variables or utilizing services such 
+as Google Cloud's Secret Manager or HashiCorp Vault.
+
+Now, open the `requirements.txt` file and add `mysqlclient`. Make sure to add a new version to avoid 
+compatibility issues, otherwise the latest version will always be selected.
+
+
+![run-gke-32](./images/screen153.png)
+
+For the latest version, follow the documentation at [pypi.org/project/mysqlclient](https://pypi.org/project/mysqlclient/).
+
+Now open the Dockerfile and add the following lines to install MySQL Connector.
+
+![run-gke-33](./images/screen154.png)
+
+After you’ve made the necessary changes, re-run the application.
+
+![run-gke-34](./images/screen155.png)
+
+Once your app is up and running, you need to get inside the container and perform the database migration.
+
+Run the following command: 
+
+```bash
+kubectl exec -it <pod_name> – sh
+```
+
+![run-gke-35](./images/screen156.png)
+
+And for database migration, run this command: 
+
+```bash
+python manage.py migrate
+```
+
+![run-gke-36](./images/screen157.png)
+
+As you can see, the migration is being performed successfully.
+
+![run-gke-37](./images/screen158.png)
+
+As we already mentioned, we’ve re-run the application, which means the public-facing **LoadBalancer** IP has been changed.
+
+![run-gke-38](./images/screen159.png)
+
+Our migration is now complete and the application is running fine. Now let’s test our APIs.
+
+I’ll perform all the **CRUD** operations as follows:
+
+* The `POST` operation.
+
+![run-gke-39](./images/screen160.png)
+
+
+* The `GET` operation.
+
+![run-gke-40](./images/screen161.png)
+
+* The `GET` operation by ID.
+
+![run-gke-41](./images/screen162.png)
+
+* The `PUT` operation by ID.
+
+![run-gke-42](./images/screen163.png)
+
+* The `DELETE` operation by ID.
+
+With the `DELETE` method, we don’t receive any response, and the status code we get is **HTTP 204 No Content**.
+
+
+![run-gke-43](./images/screen164.png)
+
+
+This is how the `TODO` list is going to look in the browser:
+
+![run-gke-44](./images/screen165.png)
+
+Now, let’s go inside PyCharm and explore the features provided by the Cloud Code plugin.
+
+Click on the **CloudSQL icon** on the right-hand sidebar.
+
+![run-gke-45](./images/screen166.png)
+
+Now click on `cloud-sample-db`. You’ll see that we don’t have a public IP address. To view the 
+list of tables and the database information, we need to enable the public IP and access it externally.
+
+![run-gke-46](./images/screen167.png)
+
+Go over to CloudSQL in the Google Cloud console.
+
+Click on `cloud-sample-db` and then on **Edit**.
+
+![run-gke-47](./images/screen168.png)
+
+Now, under **Connections**, tick the **Public IP** checkbox.
+
+![run-gke-48](./images/screen169.png)
+
+Under **Authorized Networks**: 
+* Create a new network.
+* Provide a CIDR notation of 0.0.0.0/0.
+
+This will allow you to access your database from anywhere in the world. However, this
+is also a fairly high security risk and leaves you vulnerable to hackers. Please follow 
+the defense-in-depth approach and limit the network security to your organization's network or VPN.
+
+![run-gke-49](./images/screen170.png)
+
+Once that’s done, apply the changes. It will take a few minutes to update the configuration.
+
+Finally, you’ll see the public IP address appear in the UI.
+
+![run-gke-50](./images/screen171.png)
+
+Now move back over to PyCharm and reload the Google Cloud database. You’ll now be able to see the public IP on your screen.
+
+![run-gke-51](./images/screen172.png)
+
+Double-click on `cloud-sample-db` to start installing the Cloud SQL dependencies.
+
+![run-gke-52](./images/screen173.png)
+
+Once your instance is connected, click on **Create new data source**.
+
+![run-gke-53](./images/screen174.png)
+
+You don’t have to configure anything here. Just make sure to download the missing driver files.
+
+![run-gke-54](./images/screen175.png)
+
+Once the driver is successfully installed, click on **Test Connection**. This is to verify that everything is working as expected.
+
+![run-gke-55](./images/screen176.png)
+
+Now click on **Schemas**, tick the **helloworld_db** checkbox, and then click on **Apply** followed by **OK**.
+
+![run-gke-56](./images/screen177.png)
+
+After a few seconds, the entire schema will be loaded. You can see in the image below that the tables have been retrieved successfully.
+
+![run-gke-57](./images/screen178.png)
+
+Double-click on the table `todo_todolist`, and you’ll see the table rows and columns appear.
+
+![run-gke-58](./images/screen179.png)
+
+## Cloud Domains
