@@ -299,6 +299,3 @@ I’ll now click on **Step Into My Code**.
 
 And there you have it! We’ve successfully captured the data passing through the serializer. That’s how Cloud Code simplifies the debugging process.
 
-
-
-
