@@ -9,7 +9,7 @@ subtitle: Lorem Ipsum
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://www.youtube.com/watch?v=Wgyz3TZ8twc
+  url: https://www.youtube.com/watch?v=cqIz9aR8bMk
 ---
 
 # Project Setup 

@@ -14,6 +14,7 @@ tutorialItems:
   - ./project-setup/
   - ./rest-todo-app/
   - ./google-kubernetes-engine/
+  - ./running-apps-gke/
 
 
 ---
