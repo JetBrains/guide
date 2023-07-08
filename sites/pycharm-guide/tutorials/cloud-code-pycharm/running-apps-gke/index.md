@@ -368,3 +368,207 @@ Double-click on the table `todo_todolist`, and you’ll see the table rows and c
 ![run-gke-58](./images/screen179.png)
 
 ## Cloud Domains
+
+We’ll now go ahead and search for **“Cloud Domains”**. If you’re using it for the first time, be sure to enable the API.
+
+![run-gke-59](./images/screen180.png)
+
+Click on **Cloud DNS** on the left-hand sidebar.
+
+![run-gke-60](./images/screen181.png)
+
+Then click on **Create Zone**.
+
+![run-gke-61](./images/screen182.png)
+
+I’m now going to register a DNS record of the `mukul.click` domain. This domain was purchased 
+from a third-party domain registrar.
+
+Provide the necessary details as shown in the image below. You’ll need to provide your 
+own domain name under the DNS name.
+
+
+![run-gke-62](./images/screen183.png)
+
+The DNS records have now been successfully created!
+
+Go ahead and click on the NS version of `mukul.click`.
+
+Note: Your NS is going to be different.
+
+![run-gke-63](./images/screen184.png)
+
+Below you can see the four DNS records which need to be updated in the third-party domain registry.
+
+![run-gke-64](./images/screen185.png)
+
+As you can see, the domain is registered with Namecheap, and I’ve already updated the DNS. Just 
+for your information, DNS propagation takes around 24–48 hours, though occasionally it can be done more quickly.
+ 
+If you purchased yours from GoDaddy or some other registrar, then the process 
+will be the same, but the UI will be different.
+
+![run-gke-65](./images/screen186.png)
+
+Now go to **VPC networks**.
+
+![run-gke-66](./images/screen187.png)
+
+Under IP addresses, click on **External IP Addresses**.
+
+First, we need to create a static public IP address that we 
+are going to use with the ingress. You’ll therefore need to 
+point your domain to the static external IP.
+
+![run-gke-67](./images/screen188.png)
+
+Go ahead and click on **Reserve External Static IP Address**.
+
+![run-gke-68](./images/screen189.png)
+
+This is the UI where you can create a static IP address. I’m instead going to create my static address using the CLI.
+
+![run-gke-69](./images/screen190.png)
+
+Run the following command in the terminal:
+
+```bash
+gcloud compute addresses create ingress-gke-webapp–global
+```
+![run-gke-70](./images/screen191.png)
+
+After refreshing the page, you’ll see the newly created static IP `ingress-gke-webapp`.
+
+![run-gke-71](./images/screen192.png)
+
+Go to PyCharm and open the `hello.service.yaml` file.
+
+* Change type to **NodePort**.
+* Change port to **8080**.
+
+Please note that to work with the ingress the service type has to be NodePort.
+
+![run-gke-72](./images/screen193.png)
+
+Under the **Project** root, create an **ingress** folder, and then create an `ingress.yml` file under it.
+
+![run-gke-73](./images/screen194.png)
+
+Click on **PyCharm | Settings**.
+
+![run-gke-74](./images/screen195.png)
+
+Under **Plugins**, click **Install for Kubernetes**.
+
+This plugin is going to be helpful when working with Kubernetes manifests.
+
+![run-gke-75](./images/screen196.png)
+
+Pay special attention to line 7. You need to provide a custom annotation to use the public static IP that we created earlier.
+
+![run-gke-76](./images/screen197.png)
+
+Next, create a **ManagedCertificate** object. This resource specifies the domains for the SSL certificate. Wildcard domains are not supported.
+
+![run-gke-77](./images/screen198.png)
+
+Reference: [cloud.google.com/kubernetes-engine/docs/how-to/managed-certs#gcloud](https://cloud.google.com/kubernetes-engine/docs/how-to/managed-certs#gcloud)
+
+Now you need to annotate the managed certificate in `ingress.yaml`.
+
+![run-gke-78](./images/screen199.png)
+
+Next, we’re going to create a **FrontendConfig** object. **FrontendConfig** can only be used with external ingresses.
+
+In effect, this **FrontendConfig** redirects all requests from HTTP to HTTPS.
+
+Reference: [Associating FrontendConfig with your Ingress](https://cloud.google.com/kubernetes-engine/docs/how-to/ingress-configuration#associating_frontendconfig_with_your_ingress)
+
+
+![run-gke-79](./images/screen200.png)
+
+After that, you’ll need to annotate it in the ingress file.
+
+![run-gke-80](./images/screen201.png)
+
+Now go ahead and create a new record in Cloud DNS.
+
+![run-gke-81](./images/screen202.png)
+
+Next, I’m going to create a new record for `demo.mukul.click`, and under the IPv4 address I’ll provide the public static IP address that we created earlier.
+
+Once I’m done, I just click on **Create**.
+
+![run-gke-82](./images/screen203.png)
+
+The record has now been successfully created.
+
+![run-gke-83](./images/screen204.png)
+
+Next I’ll perform an `nslookup` to cross-verify. Everything seems to be working properly.
+
+![run-gke-84](./images/screen205.png)
+
+I’ll now go ahead and apply all the manifests created under the ingress directory. 
+
+![run-gke-85](./images/screen206.png)
+
+As you can see, the ingress and managed certificates are under provisioning, and it will 
+be a couple of minutes before they’re active.
+
+![run-gke-86](./images/screen207.png)
+![run-gke-87](./images/screen208.png)
+
+Meanwhile, you can run your application. This means that we only need to wait for the ingress and the certificate to be provisioned.
+
+![run-gke-88](./images/screen209.png)
+
+It took a reasonable amount of time for the certificate to be provisioned. For managed certificates, it will take around 60 minutes. Occasionally it may take less than 15 minutes.
+
+![run-gke-89](./images/screen210.png)
+
+Now let’s open the browser and visit `demo.mukul.click`.
+
+Excellent! HTTPS redirect is now active.
+
+![run-gke-90](./images/screen211.png)
+
+I'll once again perform some basic CRUD operations. 
+
+![run-gke-91](./images/screen212.png)
+
+This is the `GET` request but with the newly registered domain.
+
+![run-gke-92](./images/screen213.png)
+
+Next, I’ll try to make a small modification to the `POST` request by adding an extra statement. You should be able to see this in line 18.
+
+Previously it read “Data Received!”
+
+Now, I’ve appended “Thank You” to it.
+
+Finally, as soon as I save the file, the build process is triggered.
+
+![run-gke-93](./images/screen214.png)
+
+Once the build and deployment are done, go to Postman and perform the `POST` request.
+
+I just performed the `POST` request, and you can see how the return response has been changed.
+
+Everything is working fine.
+
+![run-gke-94](./images/screen215.png)
+
+Now, I’ll perform a `DELETE` operation, for which I’ll receive a **204 No Content** response.
+
+![run-gke-95](./images/screen216.png)
+
+And there we have it. Our full walk-through of 
+working with the Google Cloud Code plugin is complete. I hope you found it helpful! 🙂
+
+With this knowledge, you should now be able to focus on 
+development while the Google Cloud Code plugin does the heavy lifting.
+
+
+
+
