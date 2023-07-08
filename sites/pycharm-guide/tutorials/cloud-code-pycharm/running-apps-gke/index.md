@@ -569,6 +569,87 @@ working with the Google Cloud Code plugin is complete. I hope you found it helpf
 With this knowledge, you should now be able to focus on 
 development while the Google Cloud Code plugin does the heavy lifting.
 
+## Bonus: Cloud Run
+
+[Cloud Run](https://cloud.google.com/run) is a managed compute platform that lets you run containers directly on top of Google's scalable infrastructure. You can deploy code written in any programming language on Cloud Run, provided that you can build a container image from it.
+
+
+This won’t be a deep-dive tutorial, I’ll just be providing a brief overview of how Cloud Run works in general.
+
+Let’s begin by creating a new project.
+
+
+![run-gke-96](./images/screen217.png)
+
+Give the project the custom name **helloworld-cloudrun**.
+
+Select the **Python (Django): Cloud Run** sample project and click **Create**.
+
+![run-gke-97](./images/screen218.png)
+
+You can follow the instructions in the **README** file, which includes all the steps required to run the project.
+
+![run-gke-98](./images/screen219.png)
+
+Several default views have already been created, including **homepage** and **aboutpage**.
+
+![run-gke-99](./images/screen220.png)
+
+Now, let’s go ahead and try to modify the **[Run/Debug Configuration](https://www.jetbrains.com/help/pycharm/run-debug-configuration.html#services-tool-window)**.
+
+Click on **Run | Edit Configurations**
+
+For **Authentication**, make sure to tick the **Allow unauthenticated invocations** checkbox.
+
+![run-gke-100](./images/screen221.png)
+
+Under **Build Settings**, select **Cloud Build**.
+
+![run-gke-101](./images/screen222.png)
+
+Set **Region** to **asia-south1**.
+
+![run-gke-102](./images/screen223.png)
+
+Under **Advanced revision settings**, change **Maximum number of instances** to **3**.
+
+Note that if you don’t downsize the instances, you might get a compute quota limit error from GCP.
+
+![run-gke-103](./images/screen224.png)
+
+Now go ahead and run the project.
+
+![run-gke-104](./images/screen225.png)
+
+You can see in the terminal that the build process has been initiated.
+
+![run-gke-105](./images/screen226.png)
+
+Just wait a couple of minutes. Once everything is done, you’ll
+receive a working URL as shown on the screenshot below.
+
+![run-gke-106](./images/screen227.png)
+
+The app has been deployed, and it’s working perfectly. You should be able to see that it’s even SSL secured.
+
+![run-gke-107](./images/screen228.png)
+
+This is the response from the `aboutpage` view.
+
+![run-gke-108](./images/screen229.png)
+
+If you’d like to dig deeper, you can visit Cloud Run in your GCP console.
+
+![run-gke-109](./images/screen230.png)
+
+And that’s by no means all. Cloud Run can also capture Django logs seamlessly.
+
+![run-gke-110](./images/screen231.png)
+
+Cloud Run is a managed platform and has a wide range of functionalities. For the
+best experience, I highly recommend following the instructions provided in the
+official documentation published by Google. I hope you enjoyed this brief tutorial.
+
 
 
 
