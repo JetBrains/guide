@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2023-07-10
 title: Installing the Google Cloud Code plugin and the Google Cloud SDK
-technologies: [kubernetes,django]
+technologies: [kubernetes,django,gcp]
 topics: [python]
 author: mm
 subtitle: Lorem Ipsum

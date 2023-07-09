@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2023-07-10
 title: Google Kubernetes Engine
-technologies: [kubernetes,django]
+technologies: [kubernetes,django,gcp]
 topics: [python]
 author: mm
 subtitle: Lorem Ipsum

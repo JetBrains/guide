@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2023-07-10
 title: Running applications in GKE
-technologies: [kubernetes,django]
+technologies: [kubernetes,django,gcp]
 topics: [python]
 author: mm
 subtitle: Lorem Ipsum
