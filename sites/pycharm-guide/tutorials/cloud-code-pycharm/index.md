@@ -3,7 +3,7 @@ resourceType: tutorial
 layout: "resources/tutorial/TutorialLayout.11ty.tsx"
 date: 2023-07-10
 title: Remote Development in PyCharm Professional Using Google Cloud Code
-technologies: [kubernetes,django]
+technologies: [kubernetes,django,gcp]
 topics: [python]
 author: mm
 subtitle: Leverage Cloud Code and PyCharm to enhance and optimize your developer productivity.
