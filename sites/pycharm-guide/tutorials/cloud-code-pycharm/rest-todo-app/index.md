@@ -10,6 +10,8 @@ thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=cqIz9aR8bMk
+  start: 776
+  end: 1545
 ---
 
 In this section, our main focus will be on writing CRUD APIs. 

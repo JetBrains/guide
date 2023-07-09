@@ -10,6 +10,8 @@ thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=cqIz9aR8bMk
+  start: 192
+  end: 412
 ---
 
 # Prerequisites 

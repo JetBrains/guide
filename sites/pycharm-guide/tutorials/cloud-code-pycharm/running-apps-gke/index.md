@@ -10,8 +10,8 @@ thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=cqIz9aR8bMk
-  start: 20
-  end: 30
+  start: 2005
+  end: 3500
 ---
 
 ## Building and running your application

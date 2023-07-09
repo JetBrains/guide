@@ -10,8 +10,8 @@ thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=cqIz9aR8bMk
-  start: 20
-  end: 30
+  start: 1546
+  end: 2004
 ---
 
 ## Creating a new cluster

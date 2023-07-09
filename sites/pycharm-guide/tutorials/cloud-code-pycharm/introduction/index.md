@@ -10,6 +10,8 @@ thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=cqIz9aR8bMk
+  start: 0
+  end: 192
 ---
 
 # Remote development 
