@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2023-07-05
+date: 2023-07-10
 title: Running applications in GKE
 technologies: [kubernetes,django]
 topics: [python]

@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2023-07-05
+date: 2023-07-10
 title: Creating CRUD APIs (TODO App)
 technologies: [kubernetes,django]
 topics: [python]

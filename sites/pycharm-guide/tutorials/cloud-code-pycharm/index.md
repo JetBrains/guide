@@ -1,7 +1,7 @@
 ---
 resourceType: tutorial
 layout: "resources/tutorial/TutorialLayout.11ty.tsx"
-date: 2023-07-05
+date: 2023-07-10
 title: Remote Development in PyCharm Professional Using Google Cloud Code
 technologies: [kubernetes,django]
 topics: [python]
