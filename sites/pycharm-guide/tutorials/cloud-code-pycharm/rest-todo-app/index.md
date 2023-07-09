@@ -5,7 +5,7 @@ title: Creating CRUD APIs (TODO App)
 technologies: [kubernetes,django,gcp]
 topics: [python]
 author: mm
-subtitle: Lorem Ipsum
+subtitle: Building APIs with Django Rest Framework
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png

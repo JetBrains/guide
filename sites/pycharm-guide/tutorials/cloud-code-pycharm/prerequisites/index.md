@@ -5,7 +5,7 @@ title: Installing the Google Cloud Code plugin and the Google Cloud SDK
 technologies: [kubernetes,django,gcp]
 topics: [python]
 author: mm
-subtitle: Lorem Ipsum
+subtitle: Simplifying Setup with GCloud SDK and Cloud Code Plugin
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png

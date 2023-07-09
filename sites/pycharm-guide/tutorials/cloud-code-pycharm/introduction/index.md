@@ -5,7 +5,7 @@ title: Introduction
 technologies: [kubernetes,django,gcp]
 topics: [python]
 author: mm
-subtitle: Lorem Ipsum
+subtitle: Breaking Barriers - Revolutionizing Development through Remote Collaboration
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png

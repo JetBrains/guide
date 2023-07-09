@@ -5,7 +5,7 @@ title: Google Kubernetes Engine
 technologies: [kubernetes,django,gcp]
 topics: [python]
 author: mm
-subtitle: Lorem Ipsum
+subtitle: Harnessing the Power of Google Kubernetes Engine
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png

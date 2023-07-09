@@ -5,7 +5,7 @@ title: Creating a new project in PyCharm
 technologies: [kubernetes,django,gcp]
 topics: [python]
 author: mm
-subtitle: Lorem Ipsum
+subtitle: Initiating Projects with PyCharm's New Project Creation
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png

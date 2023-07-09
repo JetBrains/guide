@@ -5,7 +5,7 @@ title: Running applications in GKE
 technologies: [kubernetes,django,gcp]
 topics: [python]
 author: mm
-subtitle: Lorem Ipsum
+subtitle: Running Applications and Securing Domains with SSL Certificates in GKE
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
