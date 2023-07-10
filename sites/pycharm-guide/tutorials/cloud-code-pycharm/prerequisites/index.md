@@ -55,12 +55,11 @@ To learn more about `gke-gcloud-auth-plugin`, click the link below:
 [https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke](https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke)
 
 
-For this tutorial, we will be using [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+For this tutorial, we’ll be using [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 
 ![docker_desktop1](./images/docker_desktop1.png)
 
-
-Make sure to **Enable Kubernetes**. The Kubernetes server runs locally within your Docker instance, and is a single-node cluster.
+Make sure to **Enable Kubernetes**. The Kubernetes server runs locally within your Docker instance and is a single-node cluster. 
 
 ![docker_desktop2](./images/docker_desktop2.png)
 
@@ -103,13 +102,13 @@ Great! The SDK has now been successfully configured.
 
 ![screen8](./images/screen8.png)
 
-If you are not aware of how to create a new project in Google Cloud, then it’s quite simple.
+If you don’t know how to create a new project in Google Cloud, it’s quite simple.
 
 Goto - [https://cloud.google.com/console](https://cloud.google.com/console)
 
 ![gcp_new_project1](./images/gcp_new_project1.png)
 
-Click on the hamburger icon and hover over to Dashboard
+Click on the hamburger icon and hover over the Dashboard.
 
 ![gcp_new_project2](./images/gcp_new_project_2.png)
 
@@ -117,12 +116,12 @@ Click on **Create Project**
 
 Provide the **Project Name**.
 
-**Note**: For our use case I have already created the project “**jetbrains-387607**”
+**Note**: For our use case, I have already created the project **“jetbrains-387607”**
 
 ![gcp_new_project3](./images/gcp_new_project_3.png)
 ![gcp_new_project4](./images/gcp_new_project_4.png)
 
-It will take few second to initialize and finally your new project will up and running.
+It will take a few seconds to initialize, and then your new project will be up and running.
 
 ![gcp_new_project5](./images/gcp_new_project_5.png)
 
@@ -152,6 +151,6 @@ For our tutorial, we will be using **23.5.1-222** version.
 
 ![jetbrains_plugin2](./images/jb_plugin2.png)
 
-To stay updated on the latest releases and updates made to Cloud Code, you can visit the following link: [https://github.com/GoogleCloudPlatform/cloud-code-intellij/releases](https://github.com/GoogleCloudPlatform/cloud-code-intellij/releases).
+To keep abreast of the latest releases and updates made to Cloud Code, visit the following link: [https://github.com/GoogleCloudPlatform/cloud-code-intellij/releases](https://github.com/GoogleCloudPlatform/cloud-code-intellij/releases).
 
 ![jetbrains_plugin3](./images/jb_plugin3.png)

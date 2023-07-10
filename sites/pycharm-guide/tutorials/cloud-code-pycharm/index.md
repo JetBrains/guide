@@ -19,4 +19,5 @@ tutorialItems:
 
 ---
 
-In this tutorial, you’ll learn how to build and run your applications both in a local Kubernetes cluster (Docker Desktop or Minikube) and remotely in Google Kubernetes Engine. This will allow you to focus on coding, as the Google Cloud Code plugin will take care of the rest.
+In this tutorial, you’ll learn how to build and run your applications both in a local Kubernetes cluster (Docker Desktop or Minikube) and remotely in Google Kubernetes Engine. This will allow you to focus on coding, with the Google Cloud Code plugin taking care of the rest.
+
