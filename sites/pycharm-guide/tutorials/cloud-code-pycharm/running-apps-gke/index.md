@@ -218,10 +218,10 @@ the host to the private IP we just copied.
 
 ![run-gke-31](./images/screen152.png)
 
-It’s essential that you consistently employ a robust password 
-and avoid utilizing hardcoded text within the codebase. Instead, consider 
-passing data through environment variables or utilizing services such 
-as Google Cloud's Secret Manager or HashiCorp Vault.
+It’s essential that you consistently employ a robust password and avoid utilizing hardcoded
+text within the codebase. Instead, consider passing data through environment variables or utilizing
+services such as Google Cloud's Secret Manager or HashiCorp Vault.
+
 
 Now, open the `requirements.txt` file and add `mysqlclient`. Make sure to add a new version to avoid 
 compatibility issues, otherwise the latest version will always be selected.
