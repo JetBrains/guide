@@ -5,7 +5,9 @@ import { LayoutContext, LayoutProps } from "../../src/models";
 import { BaseFrontmatter } from "../../src/ResourceModels";
 
 export type IntellijAboutData = LayoutProps &
-  BaseFrontmatter & { subtitle: string };
+  BaseFrontmatter & {
+    subtitle: string;
+  };
 
 export class IntellijAbout {
   data() {
@@ -13,6 +15,7 @@ export class IntellijAbout {
       title: "About",
       subtitle: "About the IntelliJ Guide",
       layout: "",
+      eleventyExcludeFromCollections: true,
     };
   }
 

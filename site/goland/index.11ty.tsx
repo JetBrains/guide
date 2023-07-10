@@ -15,6 +15,7 @@ export class GoLandHomepage {
       title: "GoLand Guide",
       subtitle: "The Hitchhiker's Guide to GoLand",
       layout: "",
+      eleventyExcludeFromCollections: true,
     };
   }
 

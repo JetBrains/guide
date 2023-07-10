@@ -11,6 +11,7 @@ export class WebStormHomepage {
       title: "WebStorm Guide",
       subtitle: "Learning resources",
       layout: "",
+      eleventyExcludeFromCollections: true,
     };
   }
 

@@ -13,6 +13,7 @@ export class IntelliJHomepage {
       subtitle:
         "Learning resources for IntelliJ IDEA and related technologies.",
       layout: "",
+      eleventyExcludeFromCollections: true,
     };
   }
 
@@ -26,7 +27,9 @@ export class IntelliJHomepage {
           >
             <div className="hero-body">
               <div className="container">
-                <h1 className="title" style="color: white;">{data.title}</h1>
+                <h1 className="title" style="color: white;">
+                  {data.title}
+                </h1>
                 <div className="columns">
                   <div className="column is-two-thirds">
                     <p className="is-size-4" style="color: white;">

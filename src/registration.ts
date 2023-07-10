@@ -21,8 +21,12 @@ export type RegisterIncludesProps = {
 
 export type GetAllCollectionsProps = {
   collectionApi: CollectionApi;
-  resourceCollections: { [key: string]: any };
-  referenceCollections: { [key: string]: any };
+  resourceCollections: {
+    [key: string]: any;
+  };
+  referenceCollections: {
+    [key: string]: any;
+  };
 };
 
 export type AllCollections = {
@@ -49,8 +53,12 @@ export async function getAllCollections({
 
 export type ResolveAllCollections = {
   allCollectionItems: EleventyCollectionItem[];
-  resourceCollections: { [key: string]: any };
-  referenceCollections: { [key: string]: any };
+  resourceCollections: {
+    [key: string]: any;
+  };
+  referenceCollections: {
+    [key: string]: any;
+  };
 };
 
 export async function resolveAllCollections({
@@ -78,12 +86,18 @@ export async function resolveAllCollections({
       if (resourceCollections[data.resourceType!]) {
         const resourceClass = resourceCollections[resourceType];
         // @ts-ignore
-        const resource = await new resourceClass({ data, page }).init();
+        const resource = await new resourceClass({
+          data,
+          page,
+        }).init();
         intermediateResources.push(resource);
       } else if (referenceCollections[data.resourceType!]) {
         const referenceClass = referenceCollections[resourceType];
         // @ts-ignore
-        const reference = await new referenceClass({ data, page }).init();
+        const reference = await new referenceClass({
+          data,
+          page,
+        }).init();
         const resolvedLabel = `${referenceClass.joinKey}:${reference.label}`;
         allCollections.allReferences.set(resolvedLabel, reference);
       } else {

@@ -15,6 +15,7 @@ export class DotNetHomepage {
       title: ".NET Tools Guide",
       subtitle: "Learning resources for ReSharper, Rider and more.",
       layout: "",
+      eleventyExcludeFromCollections: true,
     };
   }
 

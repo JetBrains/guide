@@ -12,6 +12,7 @@ export class WebStormAbout {
       title: "WebStorm Guide",
       subtitle: "About the WebStorm Guide",
       layout: "",
+      eleventyExcludeFromCollections: true,
     };
   }
 

@@ -38,7 +38,8 @@ export function BaseLayout(
   const { siteTitle, copyright, siteUrl } = site;
 
   // TODO This is a hack. Bake it into the contract.
-  const hasVideo = longVideo || shortVideo || (resourceType && resourceType == "playlist");
+  const hasVideo =
+    longVideo || shortVideo || (resourceType && resourceType == "playlist");
 
   // determine if there's an og:image
   let cardThumbnail;
@@ -70,7 +71,7 @@ export function BaseLayout(
             href="/rss.xml"
           />
           <meta property="og:title" content={title} />
-          {subtitle && <meta property="og:description" content={subtitle}/>}
+          {subtitle && <meta property="og:description" content={subtitle} />}
           <meta property="og:type" content="article" />
           <meta property="article:published_time" content="2023-02-17" />
           <meta property="article:author" content="" />
