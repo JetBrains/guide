@@ -68,7 +68,7 @@ export function BaseLayout(
             rel="alternate"
             type="application/rss+xml"
             title={`${title} RSS Feed`}
-            href="/rss.xml"
+            href={`/rss.xml`}
           />
           <meta property="og:title" content={title} />
           {subtitle && <meta property="og:description" content={subtitle} />}
