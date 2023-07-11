@@ -15,6 +15,7 @@ export class DotNetAbout {
       title: "About",
       subtitle: "About the .NET Tools Guide",
       layout: "",
+      eleventyExcludeFromCollections: true,
     };
   }
 
