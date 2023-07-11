@@ -32,6 +32,6 @@ export function dumpObsoletes(
 ): void {
   const obsoletes = getObsoletes(allReferences, allResources);
   const content = JSON.stringify(obsoletes);
-  const target = `${__dirname}/../obsoletes.json`;
+  const target = `${__dirname}/../public/obsoletes.json`;
   fs.writeFileSync(target, content, { flag: "w+" });
 }

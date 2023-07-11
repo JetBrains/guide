@@ -90,6 +90,10 @@ module.exports = function (eleventyConfig) {
     { "../../public/assets": "assets" },
     { overwrite: true }
   );
+  eleventyConfig.addPassthroughCopy(
+    { "../../public/obsoletes.json": "obsoletes.json" },
+    { overwrite: true }
+  );
   eleventyConfig.ignores.add("**/demos/**");
 
   registerIncludes({ eleventyConfig }, process.cwd())

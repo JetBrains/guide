@@ -28,3 +28,4 @@ public/assets/img
 /coverage/
 site/*/.11ty-vite
 .idea/jsonSchemas.yml
+public/obsoletes.json
