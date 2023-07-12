@@ -2,12 +2,11 @@
 import h, { JSX } from "vhtml";
 import SeeAlso from "../../seealso/SeeAlso.11ty";
 import { Tip, TipFrontmatter } from "./TipModels";
-import { SidebarLayout } from "../../layouts/SidebarLayout.11ty";
 import { Author } from "../../references/author/AuthorModels";
 import VideoPlayer from "../../video/VideoPlayer.11ty";
 import { LayoutContext, LayoutProps } from "../../../src/models";
-import TipSidebar from "../../sidebar/TipSidebar.11ty";
 import { Topic } from "../../references/topic/TopicModels";
+import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 
 export type TipLayoutData = LayoutProps & TipFrontmatter;
 
@@ -38,106 +37,122 @@ export function TipLayout(
     leadin = this.renderMarkdown(tip.leadin);
   }
 
-  const sidebar = (
-    <TipSidebar
-      displayDate={tip.displayDate}
-      author={author}
-      topics={topics}
-      hasBody={tip.hasBody}
-      seealsos={tip.seealso}
-      longVideo={tip.longVideo}
-    />
-  );
-
   // Main content
   const main = (
-    <div className="mb-6">
-      <div className="columns">
-        <div className="column is-half">
-          {tip.animatedGif && (
-            <img
-              src={tip.animatedGif.file}
-              alt="Tip Screenshot"
-              class="animated-gif"
-            />
-          )}
-          {tip.screenshot && (
-            <img
-              src={tip.screenshot}
-              alt="Tip Screenshot"
-              style="object-fit: contain; object-position: top"
-            />
-          )}
-          {tip.shortVideo && (
-            <VideoPlayer
-              source={tip.shortVideo.url}
-              poster={tip.shortVideo.poster}
-            />
-          )}
-        </div>
-        <div className="column is-half content">
-          {leadin && <div dangerouslySetInnerHTML={{ __html: leadin }} />}
-          <div>
-            {content && (
-              <a
-                href="#in-depth"
-                className="button is-light"
-                style="width: auto;"
-              >
-                Learn More
-              </a>
-            )}
-            {tip.longVideo && (
-              <a
-                href="#full-video"
-                className="button is-light"
-                style="width: auto; margin-left: 0.5em;"
-              >
-                Full Video
-              </a>
-            )}
+    <div class="section">
+      <div class="container">
+        <div className="columns is-multiline">
+          <div class="column">
+            <main class="content">
+              <h2 class="title is-size-1">{tip.title}</h2>
+              {tip.subtitle && (<h3 class="subtitle is-size-4 pt-1 has-text-grey">{tip.subtitle}</h3>)}
+
+              <article class="media author mb-4">
+                <div class="p-2 is-32x32 media-left">
+                  <a href={author.url}>
+                    <figure class="image is-32x32 m-0">
+                      <img src={author.thumbnail} alt={author.title} loading="lazy" class="avatar" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p class="m-0">
+                      <a href={author.url}>{author.title}</a>
+                    </p>
+                    <time class="m-0 has-text-grey-dark" datetime={tip.displayDate}>{tip.displayDate}</time>
+                  </div>
+                </div>
+              </article>
+              <article class="tags mb-4">
+                <div class="content p-2 m-0">
+                  {topics.map((topic: Topic) => (
+                    <a class="tag is-info is-light" href={topic.url}>{topic.label}</a>
+                  ))}
+                </div>
+              </article>
+
+              {tip.animatedGif && (
+                <img
+                  src={tip.animatedGif.file}
+                  alt="Tip Screenshot"
+                  class="animated-gif"
+                />
+              )}
+              {tip.screenshot && (
+                <img
+                  src={tip.screenshot}
+                  alt="Tip Screenshot"
+                  style="object-fit: contain; object-position: top"
+                />
+              )}
+              {tip.shortVideo && (
+                <VideoPlayer
+                  source={tip.shortVideo.url}
+                  poster={tip.shortVideo.poster}
+                />
+              )}
+
+              {leadin && <div dangerouslySetInnerHTML={{ __html: leadin }} />}
+
+              {content && (
+                <>
+                  <header id="in-depth" class="is-size-3 is-bold mb-3">
+                    In Depth
+                  </header>
+                  <div class="columns">
+                    <div
+                      class="column is-11-desktop content"
+                      dangerouslySetInnerHTML={{ __html: content }}
+                    />
+                  </div>
+                  {tip.longVideo && (
+                    <div class="mb-3">
+                      <header id="full-video" class="is-size-3 is-bold mb-3">
+                        Full Video
+                      </header>
+                      <VideoPlayer
+                        source={tip.longVideo.url}
+                        poster={tip.longVideo.poster}
+                        start={tip.longVideo.start}
+                        end={tip.longVideo.end}
+                      />
+                    </div>
+                  )}
+                </>
+              )}
+              {tip.seealso && <SeeAlso items={tip.seealso} />}
+          </main>
           </div>
-        </div>
-      </div>
-      {content && (
-        <>
-          <header id="in-depth" className="is-size-3 is-bold mb-3">
-            In Depth
-          </header>
-          <div className="columns">
-            <div
-              className="column is-11-desktop content"
-              dangerouslySetInnerHTML={{ __html: content }}
-            />
-          </div>
-          {tip.longVideo && (
-            <div className="mb-3">
-              <header id="full-video" className="is-size-3 is-bold mb-3">
-                Full Video
-              </header>
-              <VideoPlayer
-                source={tip.longVideo.url}
-                poster={tip.longVideo.poster}
-                start={tip.longVideo.start}
-                end={tip.longVideo.end}
-              />
+
+          {(content || tip.longVideo) && (
+            <div class="column is-hidden-touch is-3">
+              <aside class="menu">
+                <p class="menu-label">ON THIS PAGE</p>
+                <ul class="menu-list on-this-page">
+                  {content && (<li><a href="#in-depth">Learn More</a></li>)}
+                  {tip.longVideo && (<li><a href="#full-video">Full Video</a></li>)}
+                </ul>
+              </aside>
             </div>
           )}
-        </>
-      )}
-      {tip.seealso && <SeeAlso items={tip.seealso} />}
+
+          {(!content && !tip.longVideo) && (
+          <div class="column is-hidden-touch is-3"></div>
+        )}
+        </div>
+      </div>
     </div>
   );
 
   return (
-    <SidebarLayout
-      pageTitle={tip.title}
+    <BaseLayout
+      title={tip.title}
       subtitle={tip.subtitle}
-      sidebar={[sidebar]}
       {...data}
     >
-      <main>{main}</main>
-    </SidebarLayout>
+      {main}
+    </BaseLayout>
   );
 }
 
