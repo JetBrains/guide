@@ -17,6 +17,12 @@ export function getResources(
 
   return resources;
 }
+export function getResource(
+  allResourcesList: Resource[],
+  url: string
+): Resource {
+  return allResourcesList.filter((r) => r.url == url)[0];
+}
 
 export function getReferences(
   allReferencesList: ReferenceFrontmatter[],

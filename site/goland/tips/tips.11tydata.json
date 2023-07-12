@@ -1,4 +1,5 @@
 {
   "resourceType": "tip",
-  "layout": "resources/tip/TipLayout.11ty.tsx"
+  "layout": "resources/tip/TipLayout.11ty.tsx",
+  "tags": "tip"
 }

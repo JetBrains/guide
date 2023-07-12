@@ -25,7 +25,12 @@ import path from "upath";
 import * as fs from "fs";
 import MarkdownIt from "markdown-it";
 import prism from "markdown-it-prism";
-import { getReferences, getResources, QueryFilter } from "./queries";
+import {
+  getReferences,
+  getResource,
+  getResources,
+  QueryFilter,
+} from "./queries";
 import { dumpObsoletes } from "../src/obsoletes";
 
 export const resourceCollections = {
@@ -100,6 +105,10 @@ export async function registerIncludes(
   eleventyConfig.addJavaScriptFunction(
     "getResources",
     (filter: QueryFilter): Resource[] => getResources(allResourcesList, filter)
+  );
+  eleventyConfig.addJavaScriptFunction(
+    "getResource",
+    (url: string): Resource => getResource(allResourcesList, url)
   );
   eleventyConfig.addJavaScriptFunction(
     "getReferences",

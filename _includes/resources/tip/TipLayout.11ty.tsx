@@ -101,7 +101,7 @@ export function TipLayout(
                 </>
               )}
               {tip.seealso && <SeeAlso items={tip.seealso} />}
-          </main>
+            </main>
           </div>
 
           {(content || tip.longVideo) && (
@@ -109,30 +109,30 @@ export function TipLayout(
               <aside class="menu">
                 <p class="menu-label">ON THIS PAGE</p>
                 <ul class="menu-list on-this-page">
-                  {content && (<li><a href="#in-depth">Learn More</a></li>)}
-                  {tip.longVideo && (<li><a href="#full-video">Full Video</a></li>)}
+                  {content && (
+                    <li>
+                      <a href="#in-depth">Learn More</a>
+                    </li>
+                  )}
+                  {tip.longVideo && (
+                    <li>
+                      <a href="#full-video">Full Video</a>
+                    </li>
+                  )}
                 </ul>
               </aside>
             </div>
           )}
 
-          {(!content && !tip.longVideo) && (
-          <div class="column is-hidden-touch is-3"></div>
-        )}
+          {!content && !tip.longVideo && (
+            <div class="column is-hidden-touch is-3"></div>
+          )}
         </div>
       </div>
     </div>
   );
 
-  return (
-    <BaseLayout
-      title={tip.title}
-      subtitle={tip.subtitle}
-      {...data}
-    >
-      {main}
-    </BaseLayout>
-  );
+  return <BaseLayout {...data}>{main}</BaseLayout>;
 }
 
 export const render = TipLayout;
