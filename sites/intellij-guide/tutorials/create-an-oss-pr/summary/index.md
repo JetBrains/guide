@@ -27,6 +27,7 @@ Here are the IntelliJ IDEA shortcuts that we used.
 
 ### Related Links
 
+- [(video) Contributing to open source software: Creating a pull request](https://www.youtube.com/watch?v=xPOPjGbv_TY)
 - [(video) How I Started Contributing to Open Source and Why You Should Too, by Marit van Dijk](https://www.youtube.com/watch?v=GAqfMNB-YBU)
 - [(video) IntelliJ IDEA. Cloning a Project from GitHub](https://www.youtube.com/watch?v=aBVOAnygcZw)
 - [(video) IntelliJ IDEA. GitHub Pull Requests](https://www.youtube.com/watch?v=MoXxF3aWW8k)
