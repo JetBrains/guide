@@ -8,6 +8,9 @@ import { BottomNav, TopNav } from "./TopBottomNav.11ty";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import { Topic } from "../../references/topic/TopicModels";
 import { References } from "../../../src/ReferenceModels";
+import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
+import ArticleAuthor from "../common/ArticleAuthor.11ty";
+import ArticleTopics from "../common/ArticleTopics.11ty";
 
 export type TutorialStepLayoutData = LayoutProps & TutorialStepFrontmatter;
 
@@ -53,26 +56,10 @@ export function TutorialStepLayout(
   const videoBottom = tutorialStep.videoBottom;
   const main = (
     <>
-      <h2 class="title is-size-1">{tutorialStep.title}</h2>
-      {tutorialStep.subtitle && (<h3 class="subtitle is-size-4 pt-1 has-text-grey">{tutorialStep.subtitle}</h3>)}
+      <ArticleTitleSubtitle title={tutorialStep.title} subtitle={tutorialStep.subtitle} />
+      <ArticleAuthor author={references.author} displayDate={tutorialStep.displayDate} />
+      <ArticleTopics topics={references.topics} />
 
-      <article class="media author mb-4">
-        <div class="p-2 is-32x32 media-left">
-          <a href={references.author.url}>
-            <figure class="image is-32x32 m-0">
-              <img src={references.author.thumbnail} alt={references.author.title} loading="lazy" class="avatar" />
-            </figure>
-          </a>
-        </div>
-        <div class="media-content">
-          <div class="content">
-            <p class="m-0">
-              <a href={references.author.url}>{references.author.title}</a>
-            </p>
-            <time class="m-0 has-text-grey-dark" datetime={tutorialStep.displayDate}>{tutorialStep.displayDate}</time>
-          </div>
-        </div>
-      </article>
       <article class="tags mb-4">
         <div class="content p-2 m-0">
           {references.topics.map((topic: Topic) => (

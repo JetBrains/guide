@@ -10,6 +10,9 @@ import { References } from "../../../src/ReferenceModels";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import { Topic } from "../../references/topic/TopicModels";
+import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
+import ArticleAuthor from "../common/ArticleAuthor.11ty";
+import ArticleTopics from "../common/ArticleTopics.11ty";
 
 export type TutorialLayoutData = LayoutProps & TutorialFrontmatter;
 export function TutorialLayout(
@@ -45,33 +48,9 @@ export function TutorialLayout(
 
   const main = (
     <>
-      <h2 class="title is-size-1">{tutorial.title}</h2>
-      {tutorial.subtitle && (<h3 class="subtitle is-size-4 pt-1 has-text-grey">{tutorial.subtitle}</h3>)}
-
-      <article className="media author mb-4">
-        <div className="p-2 is-32x32 media-left">
-          <a href={references.author.url}>
-            <figure className="image is-32x32 m-0">
-              <img src={references.author.thumbnail} alt={references.author.title} loading="lazy" className="avatar" />
-            </figure>
-          </a>
-        </div>
-        <div className="media-content">
-          <div className="content">
-            <p className="m-0">
-              <a href={references.author.url}>{references.author.title}</a>
-            </p>
-            <time className="m-0 has-text-grey-dark" datetime={tutorial.displayDate}>{tutorial.displayDate}</time>
-          </div>
-        </div>
-      </article>
-      <article className="tags mb-4">
-        <div className="content p-2 m-0">
-          {references.topics.map((topic: Topic) => (
-            <a className="tag is-info is-light" href={topic.url}>{topic.label}</a>
-          ))}
-        </div>
-      </article>
+      <ArticleTitleSubtitle title={tutorial.title} subtitle={tutorial.subtitle} />
+      <ArticleAuthor author={references.author} displayDate={tutorial.displayDate} />
+      <ArticleTopics topics={references.topics} />
 
       {content ? (<div class="mb-4" dangerouslySetInnerHTML={{ __html: content }}></div>) : null}
       {listing && <div className="columns is-multiline"

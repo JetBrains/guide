@@ -2,6 +2,7 @@
 import h, { JSX } from "vhtml";
 import { Resource } from "../../src/ResourceModels";
 import { Topic } from "../references/topic/TopicModels";
+import TopicTag from "../references/topic/TopicTag.11ty";
 
 export type ResourceCardProps = {
   resource: Resource;
@@ -27,7 +28,7 @@ const ResourceCard = ({
           <div class="container p-4">
             <div class="tags mb-2">
               {topics.map((topic: Topic) => (
-                <a class="tag is-info is-light" href={topic.url}>{topic.label}</a>
+                <TopicTag topic={topic} />
               ))}
             </div>
 

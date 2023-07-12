@@ -7,6 +7,9 @@ import VideoPlayer from "../../video/VideoPlayer.11ty";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import { Topic } from "../../references/topic/TopicModels";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
+import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
+import ArticleAuthor from "../common/ArticleAuthor.11ty";
+import ArticleTopics from "../common/ArticleTopics.11ty";
 
 export type TipLayoutData = LayoutProps & TipFrontmatter;
 
@@ -44,33 +47,9 @@ export function TipLayout(
         <div className="columns is-multiline">
           <div class="column">
             <main class="content">
-              <h2 class="title is-size-1">{tip.title}</h2>
-              {tip.subtitle && (<h3 class="subtitle is-size-4 pt-1 has-text-grey">{tip.subtitle}</h3>)}
-
-              <article class="media author mb-4">
-                <div class="p-2 is-32x32 media-left">
-                  <a href={author.url}>
-                    <figure class="image is-32x32 m-0">
-                      <img src={author.thumbnail} alt={author.title} loading="lazy" class="avatar" />
-                    </figure>
-                  </a>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p class="m-0">
-                      <a href={author.url}>{author.title}</a>
-                    </p>
-                    <time class="m-0 has-text-grey-dark" datetime={tip.displayDate}>{tip.displayDate}</time>
-                  </div>
-                </div>
-              </article>
-              <article class="tags mb-4">
-                <div class="content p-2 m-0">
-                  {topics.map((topic: Topic) => (
-                    <a class="tag is-info is-light" href={topic.url}>{topic.label}</a>
-                  ))}
-                </div>
-              </article>
+              <ArticleTitleSubtitle title={tip.title} subtitle={tip.subtitle} />
+              <ArticleAuthor author={author} displayDate={tip.displayDate} />
+              <ArticleTopics topics={topics} />
 
               {tip.animatedGif && (
                 <img
