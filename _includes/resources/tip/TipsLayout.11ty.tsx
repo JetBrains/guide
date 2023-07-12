@@ -17,19 +17,13 @@ export class TipsLayout {
       pagination: {
         data: "collections.tip",
         size: 10,
-        // before: (paginationData: any) => {
-        //   return paginationData.filter((item: EleventyCollectionItem) => {
-        //     return item.data.resourceType === "tip";
-        //   });
-        // },
       },
     };
   }
 
   render(this: LayoutContext, data: ReferenceLayoutProps): JSX.Element {
-    const { content } = data;
-    // const firstPath = data.pagination.items[0].page.url;
-    const tips: Tip[] = data.pagination.items.map((t: any) => {
+    const { content, pagination } = data;
+    const tips: Tip[] = pagination.items.map((t: any) => {
       return this.getResource(t.url) as Tip;
     });
 
@@ -39,6 +33,23 @@ export class TipsLayout {
         {tips.map((tip) => {
           return <ResourceCard resource={tip}></ResourceCard>;
         })}
+        <nav aria-labelledby="my-pagination">
+          <h2 id="my-pagination">This is my Pagination</h2>
+          <ol>
+            {pagination.pages.map((_: any, index: number) => {
+              const page = index + 1;
+              const href = pagination.hrefs[index];
+              const isCurrent = pagination.page == index;
+              return (
+                <li>
+                  <a href={href} aria-current={isCurrent}>
+                    Page {page}
+                  </a>
+                </li>
+              );
+            })}
+          </ol>
+        </nav>
       </>
     );
     return (
