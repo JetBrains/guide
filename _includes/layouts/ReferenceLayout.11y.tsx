@@ -2,6 +2,7 @@ import h, { JSX } from "vhtml";
 import { BaseLayout } from "./BaseLayout.11ty";
 import { ReferenceFrontmatter } from "../../src/ReferenceModels";
 import { LayoutProps } from "../../src/models";
+import Pagination from "../Pagination.11ty";
 
 export type ReferenceLayoutProps = {
   content?: string;
@@ -12,7 +13,7 @@ export type ReferenceLayoutProps = {
   ReferenceFrontmatter;
 
 export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
-  const { content, figure, listing } = data;
+  const { content, figure, listing, pagination } = data;
   const safeListing = (
     <div
       class="columns is-multiline"
@@ -49,7 +50,11 @@ export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
       </section>
 
       <section class="section">
-        <div class="container">{safeListing}</div>
+        <div class="container">
+          {pagination && <Pagination pagination={pagination} />}
+          {safeListing}
+          {pagination && <Pagination pagination={pagination} />}
+        </div>
       </section>
     </BaseLayout>
   );

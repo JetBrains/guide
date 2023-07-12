@@ -33,23 +33,6 @@ export class TipsLayout {
         {tips.map((tip) => {
           return <ResourceCard resource={tip}></ResourceCard>;
         })}
-        <nav aria-labelledby="my-pagination">
-          <h2 id="my-pagination">This is my Pagination</h2>
-          <ol>
-            {pagination.pages.map((_: any, index: number) => {
-              const page = index + 1;
-              const href = pagination.hrefs[index];
-              const isCurrent = pagination.page == index;
-              return (
-                <li>
-                  <a href={href} aria-current={isCurrent}>
-                    Page {page}
-                  </a>
-                </li>
-              );
-            })}
-          </ol>
-        </nav>
       </>
     );
     return (
