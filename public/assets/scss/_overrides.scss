@@ -1,0 +1,56 @@
+.navbar-link.is-active,
+.navbar-link:focus,
+.navbar-link:hover,
+a.navbar-item.is-active,
+a.navbar-item:focus,
+a.navbar-item:hover {
+  background-color: $black;
+  color: $white;
+}
+footer.pagefooter a,
+footer.pagefooter a:hover {
+    color: $grey-light !important;
+}
+button.has-text-light svg,
+footer.pagefooter svg {
+  fill: $grey-light;
+}
+.card.is-equal-height {
+  height: 100%;
+  display: flex;
+  flex-direction: column
+}
+.card.is-equal-height .card-content {
+  height: 100%
+}
+.card.is-equal-height .card-footer {
+  margin-top: auto
+}
+.menu-list.on-this-page a {
+  border-left: 2px solid $grey-light;
+}
+.menu-list.on-this-page a.is-active {
+  border-left: 4px solid $blue;
+}
+a.navbar-item:focus-within {
+  background-color: $black;
+  color: $white;
+}
+.navbar-link:focus-within {
+  background-color: $black;
+  color: $white;
+}
+.navbar-secondary {
+  border-bottom: 1px solid $grey-light;
+}
+.navbar-secondary .navbar-burger a:hover,
+.navbar-secondary .navbar-end a:hover {
+  background-color: $white;
+}
+.navbar-secondary .navbar-brand a {
+  color: $grey-darker;
+}
+.navbar-secondary .navbar-brand a:hover {
+  color: $grey-darker;
+  background-color: $white;
+}

@@ -1,20 +1,18 @@
-// noinspection ES6UnusedImports
 import h, { JSX } from "vhtml";
+import Icon from "../icons/Icon.11ty";
 
 function NavbarSearch(): JSX.Element {
   return (
     <div className="navbar-item navbar-search">
-      <div className="control">
+      <div className="buttons">
         <div id="search-dropdown" className="dropdown is-right">
           <div className="dropdown-trigger">
             <button
               id="search"
-              className="button is-black"
+              className="button is-dark has-text-light"
               aria-label="Trigger Searchbox"
             >
-              <span className="icon">
-                <i className="fas fa-search" />
-              </span>
+              <Icon name={`search`} />
             </button>
           </div>
           <div className="dropdown-menu" id="search-menu" role="search">

@@ -1,7 +1,6 @@
 // noinspection ES6UnusedImports
 import h, { JSX } from "vhtml";
 import { Resource } from "../../src/ResourceModels";
-import Thumbnail from "../Image.11ty";
 import { Topic } from "../references/topic/TopicModels";
 
 export type ResourceCardProps = {
@@ -13,73 +12,45 @@ const ResourceCard = ({
   // @ts-ignore
   const { author, topics } = references;
   return (
-    <div className="bio-resourcecard box">
-      <article className="media">
-        <div className="media-left">
-          <figure className="image is-64x64">
-            <Thumbnail src={thumbnail} alt="Logo" />
-          </figure>
+    <div class="column is-half-tablet is-one-third-desktop">
+      <div class="card is-equal-height">
+        <div class="card-image">
+          <a href={url}>
+            <figure class="image is-1by1"><img src={thumbnail} alt={title} /></figure>
+          </a>
         </div>
-        <div className="media-content is-clipped">
-          <div className="content">
-            <div className="content bio-resourcecard-props">
-              <a aria-label={`Resource`} href={url}>
-                <strong>{title}</strong>
-              </a>
-              {subtitle && <div style="min-height: 2.2rem">{subtitle}</div>}
+        <div class="card-content">
+          <a class="title" aria-label={`Resource`} href={url}>{title}</a>
+          {subtitle && (<div class="content mt-2">{subtitle}</div>)}
+        </div>
+        <footer class="card-footer">
+          <div class="container p-4">
+            <div class="tags mb-2">
+              {topics.map((topic: Topic) => (
+                <a class="tag is-info is-light" href={topic.url}>{topic.label}</a>
+              ))}
             </div>
-            <nav className="level">
-              <div className="level-left">
-                {thumbnail && (
-                  <a className="level-item bio-card-author" href={author.url}>
-                    <figure
-                      className="image is-rounded is-24x24"
-                      style="margin-left: 0.2rem; margin-right: 0.2rem"
-                    >
-                      {thumbnail && (
-                        <div className="image is-rounded is-24x24">
-                          <Thumbnail
-                            src={author.thumbnail}
-                            alt={author.title}
-                            className={"bio-resourcecard-logo"}
-                          />
-                        </div>
-                      )}
-                    </figure>
-                    <span className="bio-card-author-label">
-                      {author.title}
-                    </span>
-                  </a>
-                )}
 
-                <div className="level-item tags">
-                  {topics.map((topic: Topic) => (
-                    <span className="bio-common-card-references">
-                      <span className="tag is-rounded">
-                        <a href={topic.url} className="has-text-primary">
-                          {topic.label}
-                        </a>
-                      </span>
-                    </span>
-                  ))}
+            <div class="media author">
+              <div class="p-2 media-left">
+                <a href={author.url}>
+                  <figure class="image m-0 is-24x24">
+                    <img src={author.thumbnail} alt={author.title} loading="lazy" class="avatar" />
+                  </figure>
+                </a>
+              </div>
+              <div class="media-content">
+                <div class="content is-size-7">
+                  <p class="m-0">
+                    <a href={author.url}>{author.title}</a>
+                  </p>
+                  <time class="m-0 has-text-grey-dark" datetime={displayDate}>{displayDate}</time>
                 </div>
               </div>
-              <div className="level-right">
-                <div className="level-item">
-                  <div className="level-right is-size-7 has-text-grey">
-                    <time
-                      className="level-item bio-common-card-published"
-                      datetime={displayDate}
-                    >
-                      {displayDate}
-                    </time>
-                  </div>
-                </div>
-              </div>
-            </nav>
+            </div>
           </div>
-        </div>
-      </article>
+        </footer>
+      </div>
     </div>
   );
 };

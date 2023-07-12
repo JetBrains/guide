@@ -13,49 +13,32 @@ export type ReferenceLayoutProps = {
 export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
   const { content, figure, listing } = data;
   const safeListing = (
-    <div
-      className="column is-three-quarters-desktop bio-resourcecards"
-      dangerouslySetInnerHTML={{ __html: listing[0] }}
-    />
+    <div class="columns is-multiline"
+         dangerouslySetInnerHTML={{ __html: listing[0] }} />
   );
 
   return (
     <BaseLayout {...data}>
-      <main className="bd-main bulmaio-body">
-        <div className="bd-main-container container">
-          <div className="bd-duo">
-            <div className="bd-lead">
-              <header className="bd-header">
-                <article className="media">
-                  {figure && <figure className="media-left">{figure}</figure>}
-                  <div className="media-content">
-                    <div className="content">
-                      <div className="bd-header-titles">
-                        <h1 className="title">{data.title}</h1>
-                        {data.subtitle && (
-                          <p className="subtitle is-4">{data.subtitle}</p>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </header>
-
-              {content && (
-                <div className="columns">
-                  <div className="column is-three-quarters-desktop">
-                    <div
-                      className="bd-content content"
-                      dangerouslySetInnerHTML={{ __html: content }}
-                    />
-                  </div>
-                </div>
-              )}
-              <div className="columns">{safeListing}</div>
+      <section class="section">
+        <div class="container">
+          <div class="is-flex">
+            {figure && (<span class="mr-4">
+              <figure class="image is-128x128">{figure}</figure>
+            </span>)}
+            <div>
+              <h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold">{data.title}</h1>
+              {data.subtitle && (<p class="subtitle has-text-grey mb-5">{data.subtitle}</p>)}
             </div>
           </div>
+          {content && (<div class="content pt-2" dangerouslySetInnerHTML={{ __html: content }}></div>)}
         </div>
-      </main>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          {safeListing}
+        </div>
+      </section>
     </BaseLayout>
   );
 }
