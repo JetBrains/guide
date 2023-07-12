@@ -1,15 +1,10 @@
 // noinspection ES6UnusedImports
 import h, { JSX } from "vhtml";
 import { Tutorial, TutorialFrontmatter } from "./TutorialModels";
-import { SidebarLayout } from "../../layouts/SidebarLayout.11ty";
-import { Author } from "../../references/author/AuthorModels";
-import SidebarPublished from "../../sidebar/SidebarPublished.11ty";
-import Sidebar from "../../sidebar/Sidebar.11ty";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import { References } from "../../../src/ReferenceModels";
-import ResourceCard from "../../resourcecard/ResourceCard.11ty";
+import ResourceCard, { ResourceCardOrientation } from "../../resourcecard/ResourceCard.11ty";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
-import { Topic } from "../../references/topic/TopicModels";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
@@ -41,7 +36,7 @@ export function TutorialLayout(
   const listing = (
     <>
       {tutorial.tutorialSteps.map((resource) => (
-        <ResourceCard resource={resource} />
+        <ResourceCard resource={resource} orientation={ResourceCardOrientation.Landscape} />
       ))}
     </>
   );
@@ -64,12 +59,14 @@ export function TutorialLayout(
       {...data}
     >
       <div class="section">
-        <div class="columns is-multiline">
-          {sidebarSteps}
-          <div class="column">
-            <main class="content">
-              {main}
-            </main>
+        <div class="container">
+          <div class="columns is-multiline">
+            {sidebarSteps}
+            <div class="column">
+              <main class="content">
+                {main}
+              </main>
+            </div>
           </div>
         </div>
       </div>

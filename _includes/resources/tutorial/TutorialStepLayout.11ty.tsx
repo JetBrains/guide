@@ -60,14 +60,6 @@ export function TutorialStepLayout(
       <ArticleAuthor author={references.author} displayDate={tutorialStep.displayDate} />
       <ArticleTopics topics={references.topics} />
 
-      <article class="tags mb-4">
-        <div class="content p-2 m-0">
-          {references.topics.map((topic: Topic) => (
-            <a class="tag is-info is-light" href={topic.url}>{topic.label}</a>
-          ))}
-        </div>
-      </article>
-
       {longVideo && !videoBottom && (
         <div class="mb-4">{longVideo}</div>
       )}
@@ -95,15 +87,19 @@ export function TutorialStepLayout(
       subtitle={tutorialStep.subtitle}
       {...data}
     >
-      <div class="section">
-        <div class="columns is-multiline">
-          {sidebarSteps}
-          <div class="column">
-            <main class="content">
-              {topNav}
-              {main}
-              {bottomNav}
-            </main>
+      <div className="section">
+        <div className="container">
+          <div class="columns is-multiline">
+            {sidebarSteps}
+            <div class="column">
+              <main class="content">
+                {topNav}
+                <hr/>
+                {main}
+                <hr/>
+                {bottomNav}
+              </main>
+            </div>
           </div>
         </div>
       </div>
