@@ -42,7 +42,7 @@ test("should construct collections", async () => {
   const authorItem0 = fixtures.authorItems[0];
   const thisAuthor0 = allReferences.get(
     `author:${authorItem0.data.label}`
-  ) as AuthorFrontmatter;
+  ) as unknown as AuthorFrontmatter;
   expect(thisAuthor0).to.exist;
   expect(thisAuthor0.title).to.equal(authorItem0.data.title);
 

@@ -9,6 +9,7 @@ test("should render DotNetHomepage", () => {
     ...baseRenderData,
     ...tip0.data,
     page: tip0.page,
+    title: "IntelliJ IDEA Home Page",
   };
 
   const resolvedResources = Array.from(
@@ -24,5 +25,6 @@ test("should render DotNetHomepage", () => {
   const render = homepage.render;
   document.body.innerHTML = render.call(context, pageLayoutData);
   // The fixture has the page as PyCharm so look for that
-  expect(screen.findByText("PyCharm Guide")).to.exist;
+  expect(screen.findByText("IntelliJ IDEA Home Page - JetBrains Guide")).to
+    .exist;
 });

@@ -3,13 +3,16 @@ import h, { JSX } from "vhtml";
 import { Tutorial, TutorialFrontmatter } from "./TutorialModels";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import { References } from "../../../src/ReferenceModels";
-import ResourceCard, { ResourceCardOrientation } from "../../resourcecard/ResourceCard.11ty";
+import ResourceCard, {
+  ResourceCardOrientation,
+} from "../../resourcecard/ResourceCard.11ty";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 
 export type TutorialLayoutData = LayoutProps & TutorialFrontmatter;
+
 export function TutorialLayout(
   this: LayoutContext,
   data: TutorialLayoutData
@@ -25,7 +28,9 @@ export function TutorialLayout(
         <p class="menu-label">Tutorial</p>
         <ul class="menu-list">
           {tutorial.tutorialSteps.map((step) => (
-            <li><a href={step.url}>{step.title}</a></li>
+            <li>
+              <a href={step.url}>{step.title}</a>
+            </li>
           ))}
         </ul>
       </aside>
@@ -36,36 +41,45 @@ export function TutorialLayout(
   const listing = (
     <>
       {tutorial.tutorialSteps.map((resource) => (
-        <ResourceCard resource={resource} orientation={ResourceCardOrientation.Landscape} />
+        <ResourceCard
+          resource={resource}
+          orientation={ResourceCardOrientation.Landscape}
+        />
       ))}
     </>
   );
 
   const main = (
     <>
-      <ArticleTitleSubtitle title={tutorial.title} subtitle={tutorial.subtitle} />
-      <ArticleAuthor author={references.author} displayDate={tutorial.displayDate} />
+      <ArticleTitleSubtitle
+        title={tutorial.title}
+        subtitle={tutorial.subtitle}
+      />
+      <ArticleAuthor
+        author={references.author}
+        displayDate={tutorial.displayDate}
+      />
       <ArticleTopics topics={references.topics} />
 
-      {content ? (<div class="mb-4" dangerouslySetInnerHTML={{ __html: content }}></div>) : null}
-      {listing && <div className="columns is-multiline"
-                       dangerouslySetInnerHTML={{ __html: listing }} />}
+      {content ? (
+        <div class="mb-4" dangerouslySetInnerHTML={{ __html: content }}></div>
+      ) : null}
+      {listing && (
+        <div
+          className="columns is-multiline"
+          dangerouslySetInnerHTML={{ __html: listing }}
+        />
+      )}
     </>
   );
   return (
-    <BaseLayout
-      title={tutorial.title}
-      subtitle={tutorial.subtitle}
-      {...data}
-    >
+    <BaseLayout {...data}>
       <div class="section">
         <div class="container">
           <div class="columns is-multiline">
             {sidebarSteps}
             <div class="column">
-              <main class="content">
-                {main}
-              </main>
+              <main class="content">{main}</main>
             </div>
           </div>
         </div>

@@ -24,6 +24,7 @@ import {
   Playlist,
   PlaylistFrontmatter,
 } from "./resources/playlist/PlaylistModels";
+import { PaginationProps } from "./pagination/Pagination.11ty";
 
 /**
  * Reusable test data``
@@ -622,17 +623,19 @@ const collections: SiteCollections = {
 };
 
 const getResources = vi.fn();
+const getResource = vi.fn();
 const getReferences = vi.fn();
 const renderMarkdown = (content: string): string => content;
 const context: LayoutContext = {
   getResources,
+  getResource,
   getReferences,
   renderMarkdown,
 };
 
 const site = {
   siteLogo: "jetbrains-simple.svg",
-  siteTitle: "PyCharm Guide",
+  siteTitle: "JetBrains Guide",
   copyright:
     'Copyright © 2000–2022 <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.',
   start: {
@@ -706,6 +709,19 @@ export const baseRenderData = {
   site,
 };
 
+const paginationProps: PaginationProps = {
+  pagination: {
+    items: tipItems,
+    pageNumber: 0,
+    hrefs: tipItems.map((ti) => ti.page.url),
+    href: {
+      next: "tip5",
+      previous: "tip3",
+      first: "tip0",
+      last: "tip6",
+    },
+  },
+};
 // Now assemble for export
 const fixtures = {
   authors,
@@ -714,6 +730,7 @@ const fixtures = {
   collections,
   content,
   date,
+  paginationProps,
   tips,
   tipItems,
   topics,

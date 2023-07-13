@@ -6,7 +6,6 @@ import VideoPlayer from "../../video/VideoPlayer.11ty";
 import { Tutorial } from "./TutorialModels";
 import { BottomNav, TopNav } from "./TopBottomNav.11ty";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
-import { Topic } from "../../references/topic/TopicModels";
 import { References } from "../../../src/ReferenceModels";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
@@ -44,7 +43,14 @@ export function TutorialStepLayout(
           <p class="menu-label">Tutorial</p>
           <ul class="menu-list">
             {parent.tutorialSteps.map((step) => (
-              <li><a class={step == tutorialStep ? 'is-active' : ''} href={step.url}>{step.title}</a></li>
+              <li>
+                <a
+                  class={step == tutorialStep ? "is-active" : ""}
+                  href={step.url}
+                >
+                  {step.title}
+                </a>
+              </li>
             ))}
           </ul>
         </aside>
@@ -56,17 +62,21 @@ export function TutorialStepLayout(
   const videoBottom = tutorialStep.videoBottom;
   const main = (
     <>
-      <ArticleTitleSubtitle title={tutorialStep.title} subtitle={tutorialStep.subtitle} />
-      <ArticleAuthor author={references.author} displayDate={tutorialStep.displayDate} />
+      <ArticleTitleSubtitle
+        title={tutorialStep.title}
+        subtitle={tutorialStep.subtitle}
+      />
+      <ArticleAuthor
+        author={references.author}
+        displayDate={tutorialStep.displayDate}
+      />
       <ArticleTopics topics={references.topics} />
 
-      {longVideo && !videoBottom && (
-        <div class="mb-4">{longVideo}</div>
-      )}
-      {content ? (<div dangerouslySetInnerHTML={{ __html: content }}></div>) : null}
-      {longVideo && videoBottom && (
-        <div class="mb-4">{longVideo}</div>
-      )}
+      {longVideo && !videoBottom && <div class="mb-4">{longVideo}</div>}
+      {content ? (
+        <div dangerouslySetInnerHTML={{ __html: content }}></div>
+      ) : null}
+      {longVideo && videoBottom && <div class="mb-4">{longVideo}</div>}
     </>
   );
 
@@ -82,11 +92,7 @@ export function TutorialStepLayout(
   }
 
   return (
-    <BaseLayout
-      title={tutorialStep.title}
-      subtitle={tutorialStep.subtitle}
-      {...data}
-    >
+    <BaseLayout subtitle={tutorialStep.subtitle} {...data}>
       <div className="section">
         <div className="container">
           <div class="columns is-multiline">
@@ -94,9 +100,9 @@ export function TutorialStepLayout(
             <div class="column">
               <main class="content">
                 {topNav}
-                <hr/>
+                <hr />
                 {main}
-                <hr/>
+                <hr />
                 {bottomNav}
               </main>
             </div>

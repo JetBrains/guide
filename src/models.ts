@@ -3,6 +3,7 @@ import { BaseFrontmatter, Resource } from "./ResourceModels";
 import { ReferenceFrontmatter } from "./ReferenceModels";
 import { SiteCollections } from "../_includes/models";
 import { QueryFilter } from "../_includes/queries";
+import { PaginationData } from "../_includes/pagination/Pagination.11ty";
 
 export const EleventyPage = Type.Object({
   // The common, page-oriented data 11ty passes in when it reads a Markdown file
@@ -41,14 +42,15 @@ export interface LayoutContext {
 
 export type LayoutProps = {
   collections: SiteCollections;
+  commandLineArgs: CommandLineArgs;
+  content: string;
   page: {
     fileSlug: string;
     url: string;
     date: Date;
   };
+  pagination?: PaginationData;
   site: any;
-  content: string;
-  commandLineArgs: CommandLineArgs;
 };
 
 export type CommandLineArgs = {

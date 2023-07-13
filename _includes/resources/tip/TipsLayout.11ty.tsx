@@ -23,7 +23,8 @@ export class TipsLayout {
 
   render(this: LayoutContext, data: ReferenceLayoutProps): JSX.Element {
     const { content, pagination } = data;
-    const tips: Tip[] = pagination.items.map((t: any) => {
+    const paginationItems = pagination ? pagination.items : [];
+    const tips: Tip[] = paginationItems.map((t: any) => {
       return this.getResource(t.url) as Tip;
     });
 

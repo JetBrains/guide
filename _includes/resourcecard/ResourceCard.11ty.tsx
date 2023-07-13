@@ -3,6 +3,7 @@ import h, { JSX } from "vhtml";
 import { Resource } from "../../src/ResourceModels";
 import { Topic } from "../references/topic/TopicModels";
 import TopicTag from "../references/topic/TopicTag.11ty";
+import { AuthorFrontmatter } from "../references/author/AuthorModels";
 
 export enum ResourceCardOrientation {
   Portrait = 0,
@@ -14,9 +15,19 @@ export type ResourceCardProps = {
   orientation?: ResourceCardOrientation;
 };
 
+export const AuthorIcon = (author: AuthorFrontmatter) => (
+  <img
+    src={author.thumbnail}
+    alt={author.title}
+    // @ts-ignore
+    loading="lazy"
+    className="avatar"
+  />
+);
+
 const ResourceCard = ({
   resource: { url, title, displayDate, subtitle, thumbnail, references },
-  orientation
+  orientation,
 }: ResourceCardProps): JSX.Element => {
   // @ts-ignore
   const { author, topics } = references;
@@ -27,12 +38,16 @@ const ResourceCard = ({
         <div class="card is-equal-height">
           <div class="card-image">
             <a href={url}>
-              <figure class="image is-1by1"><img src={thumbnail} alt={title} /></figure>
+              <figure class="image is-1by1">
+                <img src={thumbnail} alt={title} />
+              </figure>
             </a>
           </div>
           <div class="card-content">
-            <a class="title" aria-label={`Resource`} href={url}>{title}</a>
-            {subtitle && (<div class="content mt-2">{subtitle}</div>)}
+            <a class="title" aria-label={`Resource`} href={url}>
+              {title}
+            </a>
+            {subtitle && <div class="content mt-2">{subtitle}</div>}
           </div>
           <footer class="card-footer">
             <div class="container p-4">
@@ -46,7 +61,7 @@ const ResourceCard = ({
                 <div class="p-2 media-left">
                   <a href={author.url}>
                     <figure class="image m-0 is-24x24">
-                      <img src={author.thumbnail} alt={author.title} loading="lazy" class="avatar" />
+                      <AuthorIcon {...author} />
                     </figure>
                   </a>
                 </div>
@@ -55,7 +70,9 @@ const ResourceCard = ({
                     <p class="m-0">
                       <a href={author.url}>{author.title}</a>
                     </p>
-                    <time class="m-0 has-text-grey-dark" datetime={displayDate}>{displayDate}</time>
+                    <time class="m-0 has-text-grey-dark" datetime={displayDate}>
+                      {displayDate}
+                    </time>
                   </div>
                 </div>
               </div>
@@ -71,11 +88,15 @@ const ResourceCard = ({
           <div class="card-content">
             <article class="media">
               <figure class="media-left m-0 mr-4 is-hidden-mobile">
-                <a href={url}><img class="image is-128x128" src={thumbnail} alt={title} /></a>
+                <a href={url}>
+                  <img class="image is-128x128" src={thumbnail} alt={title} />
+                </a>
               </figure>
               <div class="media-content">
-                <a class="title" aria-label={`Resource`} href={url}>{title}</a>
-                {subtitle && (<div class="content mt-2">{subtitle}</div>)}
+                <a class="title" aria-label={`Resource`} href={url}>
+                  {title}
+                </a>
+                {subtitle && <div class="content mt-2">{subtitle}</div>}
 
                 <footer>
                   <div>
@@ -89,7 +110,7 @@ const ResourceCard = ({
                       <div class="p-2 media-left">
                         <a href={author.url}>
                           <figure class="image m-0 is-24x24">
-                            <img src={author.thumbnail} alt={author.title} loading="lazy" class="avatar" />
+                            <AuthorIcon {...author} />
                           </figure>
                         </a>
                       </div>
@@ -98,7 +119,12 @@ const ResourceCard = ({
                           <p class="m-0">
                             <a href={author.url}>{author.title}</a>
                           </p>
-                          <time class="m-0 has-text-grey-dark" datetime={displayDate}>{displayDate}</time>
+                          <time
+                            class="m-0 has-text-grey-dark"
+                            datetime={displayDate}
+                          >
+                            {displayDate}
+                          </time>
                         </div>
                       </div>
                     </div>

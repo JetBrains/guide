@@ -11,6 +11,7 @@ const page: EleventyPage = {
   fileSlug: "some-page",
   url: "/tips/some-page/",
   inputPath: `${rootPath}/some-page.md`,
+  date: new Date(Date.UTC(2023, 1, 11)),
 };
 
 test("construct a page", async () => {

@@ -10,13 +10,11 @@ export function PageLayout(
   this: LayoutContext,
   data: PageLayoutData
 ): JSX.Element {
-  const pageTitle = "XXXXXXXXXX";
-  // Main content
-  const main = <div>Hello content</div>;
-
   return (
-    <BaseLayout {...data} title={pageTitle}>
-      <main>{main}</main>
+    <BaseLayout {...data}>
+      <main>
+        <div>Hello content</div>
+      </main>
     </BaseLayout>
   );
 }

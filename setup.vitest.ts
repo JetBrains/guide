@@ -7,7 +7,7 @@ happyDOMSettings.disableJavaScriptEvaluation = true;
 happyDOMSettings.disableCSSFileLoading = true;
 happyDOMSettings.disableIframePageLoading = true;
 happyDOMSettings.disableComputedStyleRendering = true;
-happyDOMSettings.enableFileSystemHttpRequests = true;
+happyDOMSettings.enableFileSystemHttpRequests = false;
 
 // import Image from "@11ty/eleventy-img";
 vi.mock("@11ty/eleventy-img", () => {

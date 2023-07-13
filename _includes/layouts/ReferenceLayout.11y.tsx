@@ -2,13 +2,12 @@ import h, { JSX } from "vhtml";
 import { BaseLayout } from "./BaseLayout.11ty";
 import { ReferenceFrontmatter } from "../../src/ReferenceModels";
 import { LayoutProps } from "../../src/models";
-import Pagination from "../Pagination.11ty";
+import Pagination from "../pagination/Pagination.11ty";
 
 export type ReferenceLayoutProps = {
   content?: string;
   figure?: string[];
   listing: string[];
-  pagination?: any;
 } & LayoutProps &
   ReferenceFrontmatter;
 
@@ -21,6 +20,15 @@ export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
     />
   );
 
+  const pages = (
+    <section class="section" aria-label="Pagination">
+      <div class="container">
+        {pagination && <Pagination pagination={pagination} />}
+        {safeListing}
+        {pagination && <Pagination pagination={pagination} />}
+      </div>
+    </section>
+  );
   return (
     <BaseLayout {...data}>
       <section class="section">
@@ -49,13 +57,7 @@ export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          {pagination && <Pagination pagination={pagination} />}
-          {safeListing}
-          {pagination && <Pagination pagination={pagination} />}
-        </div>
-      </section>
+      {pages}
     </BaseLayout>
   );
 }

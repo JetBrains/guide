@@ -1,20 +1,28 @@
 import h from "vhtml";
-import {expect, it} from "vitest";
-import {ReferenceLayout, ReferenceLayoutProps} from "./ReferenceLayout.11y";
-import {screen} from "@testing-library/dom";
-import fixtures, {baseRenderData} from "../fixtures";
+import { expect, test } from "vitest";
+import { ReferenceLayout, ReferenceLayoutProps } from "./ReferenceLayout.11y";
+import { screen } from "@testing-library/dom";
+import fixtures, { baseRenderData } from "../fixtures";
 
-it("make a ReferenceLayout", () => {
-  const tip0 = fixtures.tipItems[0];
-  const renderProps: ReferenceLayoutProps = {
-    ...baseRenderData,
-    ...tip0.data,
-    page: tip0.page,
-    listing: ["<p>Some Title</p>"],
-  };
+const tip0 = fixtures.tipItems[0];
+let renderProps: ReferenceLayoutProps = {
+  ...baseRenderData,
+  ...tip0.data,
+  page: tip0.page,
+  listing: ["<p>Some Title</p>"],
+  pagination: fixtures.paginationProps.pagination,
+};
 
+test("make a ReferenceLayout", () => {
   document.body.innerHTML = (
     <ReferenceLayout {...renderProps}></ReferenceLayout>
   );
   expect(screen.getByText("Some Title")).to.exist;
+});
+
+test("does not show empty pagination", () => {
+  document.body.innerHTML = (
+    <ReferenceLayout {...renderProps}></ReferenceLayout>
+  );
+  expect(screen.getByLabelText("Pagination")).to.exist;
 });

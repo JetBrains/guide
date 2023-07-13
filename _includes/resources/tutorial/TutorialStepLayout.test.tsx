@@ -21,15 +21,8 @@ test("should render TutorialStepLayout", () => {
   );
 
   // Make sure sidebar steps renders correctly
-  const cards = screen.getAllByRole("link", { name: "Tutorial Step" });
-  expect(cards).to.exist;
-  if (cards) {
-    expect(cards.length).to.equal(3);
-    const spans0 = cards[0].getElementsByClassName("steps-marker");
-    expect(spans0[0].className).to.equal("steps-marker is-info");
-    const spans1 = cards[1].getElementsByClassName("steps-marker");
-    expect(spans1[0].className).to.equal("steps-marker is-primary");
-  }
-
-  // Top navigation
+  const link: HTMLAnchorElement = screen.getByRole("link", {
+    name: `Another Tutorial Step`,
+  });
+  expect(link.href).to.equal("/tutorials/some-tutorial/another-tutorialstep/");
 });

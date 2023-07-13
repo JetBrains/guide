@@ -12,7 +12,6 @@ import {
 
 export type BaseLayoutProps = {
   children: string[];
-  site: any;
   title: string;
   subtitle?: string;
   longVideo?: object;
@@ -29,13 +28,22 @@ export function BaseLayout(
     children,
     title,
     subtitle,
-    site,
     longVideo,
     shortVideo,
     resourceType,
     collections,
   } = data;
-  const { siteTitle, copyright, siteUrl } = site;
+
+  // Happy DOM throws a DOMException for external script/css even though
+  // we do the settings to suppress it. Vite catches the exception but
+  // logs it. We can't handle the exception and it pollutes the test output.
+  // Let's detect if we're running in a test, then later, wrap the
+  // <link> and <script> to suppress.
+  let isNotTest = true;
+  // @ts-ignore
+  if (typeof window != "undefined" && window.happyDOM) {
+    isNotTest = false;
+  }
 
   // TODO This is a hack. Bake it into the contract.
   const hasVideo =
@@ -48,6 +56,8 @@ export function BaseLayout(
     cardThumbnail = resource?.cardThumbnail;
   }
 
+  const copyright = `Copyright © 2000–2023 <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.`;
+
   return (
     "<!doctype html>" +
     (
@@ -58,10 +68,16 @@ export function BaseLayout(
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
-          <title>
-            {data.title} - {siteTitle}
-          </title>
-          <link rel="stylesheet" href="/assets/site.scss" />
+          <title>{data.title} - JetBrains Guide</title>
+          {isNotTest && (
+            <>
+              <link rel="stylesheet" href="/assets/site.scss" />
+              <script defer src="/assets/js/site.js" type="module"></script>
+              {hasVideo && (
+                <script defer src="/assets/js/video.js" type="module"></script>
+              )}
+            </>
+          )}
           <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
           <link rel="shortcut icon" href="/assets/favicon.ico" />
           <link
@@ -79,23 +95,18 @@ export function BaseLayout(
           {cardThumbnail && <meta property="og:image:alt" content={title} />}
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@jetbrains" />
-          <script defer src="/assets/js/site.js" type="module"></script>
-          {hasVideo && (
-            <script defer src="/assets/js/video.js" type="module"></script>
-          )}
-          <GoogleTagManagerHeadScript
-            googleTagManagerId={site.googleTagManagerId}
-          />
+          <GoogleTagManagerHeadScript googleTagManagerId="GTM-5P98" />
         </head>
         <body>
-          <GoogleTagManagerBodyNoScript
-            googleTagManagerId={site.googleTagManagerId}
-          />
-          <Navbar site={site}></Navbar>
+          <GoogleTagManagerBodyNoScript googleTagManagerId="GTM-5P98" />
+          <Navbar />
           {children}
           <Footer copyright={copyright}></Footer>
           {cardThumbnail && (
-            <MetaOpenGraphImage siteUrl={siteUrl} src={cardThumbnail} />
+            <MetaOpenGraphImage
+              siteUrl="https://www.jetbrains.com/guide/"
+              src={cardThumbnail}
+            />
           )}
         </body>
       </html>
