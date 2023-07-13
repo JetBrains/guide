@@ -3,24 +3,8 @@ import java.io.File
 val nodeJsContainerImage = "node:18-bullseye"
 val jdkContainerImage = "amazoncorretto:17"
 
-job("Build .NET Guide") {
-    runJobForSite("dotnet", ".NET Tools Guide", "dotnet-guide", "dotnet")
-}
-
-job("Build IntelliJ Guide") {
-    runJobForSite("intellij", "IntelliJ Guide", "intellij-guide", "idea")
-}
-
-job("Build GoLand Guide") {
-    runJobForSite("goland", "GoLand Guide", "goland-guide", "go")
-}
-
-job("Build PyCharm Guide") {
-    runJobForSite("pycharm", "PyCharm Guide", "pycharm-guide", "pycharm")
-}
-
-job("Build WebStorm Guide") {
-    runJobForSite("webstorm", "WebStorm Guide", "webstorm-guide", "webstorm")
+job("Build Guide") {
+    buildAndDeployStaging()
 }
 
 job("Run tests") {
@@ -102,7 +86,7 @@ job("Remote development images") {
     }
 }
 
-fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory: String, siteWebPath: String) {
+fun Job.buildAndDeployStaging() {
     startOn {
         gitPush {
             enabled = true
@@ -113,7 +97,7 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
             }
             
             pathFilter {
-                +"sites/$siteDirectory/**"
+                +"site/**"
                 +"_includes/**"
                 +"src/**"
                 +"public/assets/**"
@@ -125,9 +109,9 @@ fun Job.runJobForSite(siteShortName: String, siteLongName: String, siteDirectory
 
     parallel {
         runTests()
-        buildSite(siteShortName, siteDirectory, siteWebPath)
+        buildSite()
     }
-    deploySite(siteShortName, siteLongName, siteDirectory, siteWebPath)
+    deploySite()
 }
 
 fun StepsScope.runLinkChecker(targetUrl: String) {
@@ -164,7 +148,7 @@ fun StepsScope.runTests() {
     }
 }
 
-fun StepsScope.buildSite(siteShortName: String, siteDirectory: String, siteWebPath: String) {
+fun StepsScope.buildSite() {
     container(image = nodeJsContainerImage, displayName = "Build site") {
         resources {
             cpu = 4.cpu
@@ -172,8 +156,8 @@ fun StepsScope.buildSite(siteShortName: String, siteDirectory: String, siteWebPa
         }
 
         cache {
-            storeKey = "assets-$siteDirectory"
-            localPath = "sites/$siteDirectory/_site/assets/"
+            storeKey = "assets-guide"
+            localPath = "_site/assets/"
         }
 
         shellScript {
@@ -182,23 +166,23 @@ fun StepsScope.buildSite(siteShortName: String, siteDirectory: String, siteWebPa
                 cwd=${'$'}(pwd)
 
                 ## Fix permissions on cached assets
-                chmod 0666 -R sites/$siteDirectory/_site/assets/
+                chmod 0666 -R _site/assets/
+                mkdir -R .11ty-vite/assets/
+                cp _site/assets .11ty-vite/
 
                 ## Build site
                 npm install
-                npm run build:$siteShortName
+                npm run build
                 cd ${'$'}cwd
 
                 ## Move site to share
-                mkdir -p /mnt/space/share/_site/$siteWebPath
-                cp -r sites/$siteDirectory/_site/ /mnt/space/share/_site/$siteWebPath
-                mv /mnt/space/share/_site/$siteWebPath/_site /mnt/space/share/_site/$siteWebPath/guide
+                cp -r _site/ /mnt/space/share
             """.trimIndent()
         }
     }
 }
 
-fun StepsScope.deploySite(siteShortName: String, siteLongName: String, siteDirectory: String, siteWebPath: String) {
+fun StepsScope.deploySite() {
     container(image = jdkContainerImage, displayName = "Publish site") {
         resources {
             cpu = 2.cpu
@@ -210,21 +194,18 @@ fun StepsScope.deploySite(siteShortName: String, siteLongName: String, siteDirec
             if (gitBranch.startsWith("refs/heads/")) {
                 val cleanGitBranch = gitBranch.replace("refs/heads/", "").replace("/", "-").replace("_", "-")
                 val siteName = if (cleanGitBranch == "main") {
-                    siteShortName
+                    "unified"
                 } else {
-                    "$siteShortName-$cleanGitBranch"
+                    "unified-$cleanGitBranch"
                 }
-
-                File("/mnt/space/share/_site/index.html")
-                        .writeText("<html><body><a href=\"/$siteWebPath/guide\">$siteLongName</a></body></html>")
 
                 api.space().experimentalApi.hosting.publishSite(
                         siteSource = "_site",
                         siteName = siteName,
                         siteSettings = HostingSiteSettings(
                                 public = true,
-                                labels = listOf(siteShortName, cleanGitBranch),
-                                description = siteLongName
+                                labels = listOf("unified", cleanGitBranch),
+                                description = "JetBrains Guide"
                         )
                 )
             }
