@@ -14,7 +14,6 @@ test("should render TopicsLayout", () => {
       fileSlug: "some-slug",
       date: fixtures.date,
     },
-    site: fixtures.site,
   };
   fixtures.context.getReferences = () => fixtures.topics;
   document.body.innerHTML = TopicsLayout.call(

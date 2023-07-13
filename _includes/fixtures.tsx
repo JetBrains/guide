@@ -633,80 +633,12 @@ const context: LayoutContext = {
   renderMarkdown,
 };
 
-const site = {
-  siteLogo: "jetbrains-simple.svg",
-  siteTitle: "JetBrains Guide",
-  copyright:
-    'Copyright © 2000–2022 <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.',
-  start: {
-    items: [
-      {
-        accent: "success",
-        cssClass: "documentation",
-        href: "/webstorm/pycharm-webstorm-guide/tips/",
-        label: "Tips",
-        icon: "fas fa-play-circle",
-      },
-      {
-        accent: "info",
-        cssClass: "documentation",
-        href: "/webstorm/pycharm-webstorm-guide/tutorials/",
-        label: "Tutorials",
-        icon: "fas fa-tasks",
-      },
-      {
-        accent: "warning",
-        cssClass: "documentation",
-        href: "/webstorm/pycharm-webstorm-guide/playlists/",
-        label: "Playlists",
-        icon: "fas fa-list",
-      },
-      {
-        accent: "danger",
-        cssClass: "documentation",
-        href: "/webstorm/pycharm-webstorm-guide/technologies/",
-        label: "Technologies",
-        icon: "fas fa-project-diagram",
-      },
-      {
-        accent: "danger",
-        cssClass: "documentation",
-        href: "/webstorm/pycharm-webstorm-guide/topics/",
-        label: "Topics",
-        icon: "fas fa-project-diagram",
-      },
-    ],
-  },
-  end: {
-    buttons: [
-      {
-        accent: "light",
-        href: "https://www.jetbrains.com/pycharm/download/",
-        label: "Get PyCharm",
-      },
-    ],
-    links: [
-      {
-        color: "light",
-        href: "https://github.com/jetbrains/guide",
-        icon: "github",
-      },
-      {
-        color: "55acee",
-        href: "https://twitter.com/pycharm",
-        icon: "twitter",
-      },
-    ],
-  },
-};
-
 export const commandLineArgs = { pathprefix: undefined };
 
 export const baseRenderData = {
   collections: resolvedCollections,
   commandLineArgs,
   content: "",
-  site,
 };
 
 const paginationProps: PaginationProps = {
@@ -743,7 +675,6 @@ const fixtures = {
   playlistItems,
   all,
   context,
-  site,
   resolvedCollections,
 };
 export default fixtures;

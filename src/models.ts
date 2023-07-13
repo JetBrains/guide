@@ -50,7 +50,6 @@ export type LayoutProps = {
     date: Date;
   };
   pagination?: PaginationData;
-  site: any;
 };
 
 export type CommandLineArgs = {

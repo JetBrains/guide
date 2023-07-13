@@ -11,7 +11,6 @@ test("should render TutorialLayout", () => {
     content: fixtures.content,
     ...fixtures.tutorialItems[0].data,
     page: fixtures.tutorialItems[0].page,
-    site: fixtures.site,
   };
   document.body.innerHTML = TutorialLayout.call(
     fixtures.context,
