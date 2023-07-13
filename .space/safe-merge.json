@@ -1,70 +1,18 @@
 {
-    "version": "1.0",
-    "builds": [
-        {
-            "job": {
-                "name": "Build .NET Guide"
-            },
-            "changed-files": [
-                "/sites/dotnet-guide/**",
-                "/_includes/**",
-                "/src/**",
-                "/public/assets/**",
-                "/package.json",
-                "/package-lock.json"
-            ]
-        },
-        {
-            "job": {
-                "name": "Build GoLand Guide"
-            },
-            "changed-files": [
-                "/sites/goland-guide/**",
-                "/_includes/**",
-                "/src/**",
-                "/public/assets/**",
-                "/package.json",
-                "/package-lock.json"
-            ]
-        },
-        {
-            "job": {
-                "name": "Build IntelliJ Guide"
-            },
-            "changed-files": [
-                "/sites/intellij-guide/**",
-                "/_includes/**",
-                "/src/**",
-                "/public/assets/**",
-                "/package.json",
-                "/package-lock.json"
-            ]
-        },
-        {
-            "job": {
-                "name": "Build PyCharm Guide"
-            },
-            "changed-files": [
-                "/sites/pycharm-guide/**",
-                "/_includes/**",
-                "/src/**",
-                "/public/assets/**",
-                "/package.json",
-                "/package-lock.json"
-            ]
-        },
-        {
-            "job": {
-                "name": "Build WebStorm Guide"
-            },
-            "changed-files": [
-                "/sites/webstorm-guide/**",
-                "/_includes/**",
-                "/src/**",
-                "/public/assets/**",
-                "/package.json",
-                "/package-lock.json"
-            ]
-        }
-    ]
+  "version": "1.0",
+  "builds": [
+    {
+      "job": {
+        "name": "Build JetBrains Guide"
+      },
+      "changed-files": [
+        "/site/**",
+        "/_includes/**",
+        "/src/**",
+        "/public/assets/**",
+        "/package.json",
+        "/package-lock.json"
+      ]
+    }
+  ]
 }
