@@ -38,15 +38,15 @@ export class GoLandHomepage {
             <div class="hero-body">
               <div class="container">
                 <h1 class="title">{data.title}</h1>
-                <h2 className="subtitle">{data.subtitle}</h2>
+                <h2 class="subtitle">{data.subtitle}</h2>
               </div>
             </div>
           </section>
-          <section className={"section has-background-light"}>
-            <div className="bd-main-container container">
-              <div className="columns">
-                <div className="column is-three-quarters-desktop">
-                  <div className="bd-content content">
+          <section class={"section has-background-light"}>
+            <div class="bd-main-container container">
+              <div class="columns">
+                <div class="column is-three-quarters-desktop">
+                  <div class="bd-content content">
                     <h2>Learn something new, quickly</h2>
 
                     <p>
@@ -94,40 +94,40 @@ export class GoLandHomepage {
               </div>
             </div>
           </section>
-          <section className="section has-background-light">
-            <div className="container">
-              <h2 className="title">Recent Tips</h2>
-              <div className="columns">
+          <section class="section has-background-light">
+            <div class="container">
+              <h2 class="title">Recent Tips</h2>
+              <div class="columns">
                 <div
-                  className="column is-four-fifths-desktop bio-resourcecards"
+                  class="column is-four-fifths-desktop bio-resourcecards"
                   dangerouslySetInnerHTML={{ __html: listing }}
                 ></div>
-                <div className="column is-one-fifth-desktop is-hidden-touch bio-sidebar-page">
-                  <aside className="bd-side bio-page-sidebar">
-                    <p className="menu-label bio-page-sidebar-published">
+                <div class="column is-one-fifth-desktop is-hidden-touch bio-sidebar-page">
+                  <aside class="bd-side bio-page-sidebar">
+                    <p class="menu-label bio-page-sidebar-published">
                       Browse...
                     </p>
-                    <ul className="menu-list pt-0">
+                    <ul class="menu-list pt-0">
                       <li>
                         <a href="/playlists/">
-                          <span className="icon">
-                            <i className="fas fa-arrow-right" />
+                          <span class="icon">
+                            <i class="fas fa-arrow-right" />
                           </span>
                           Playlists
                         </a>
                       </li>
                       <li>
                         <a href="/topics/">
-                          <span className="icon">
-                            <i className="fas fa-arrow-right" />
+                          <span class="icon">
+                            <i class="fas fa-arrow-right" />
                           </span>
                           Topics
                         </a>
                       </li>
                       <li>
                         <a href="/technologies/">
-                          <span className="icon">
-                            <i className="fas fa-arrow-right" />
+                          <span class="icon">
+                            <i class="fas fa-arrow-right" />
                           </span>
                           Technologies
                         </a>

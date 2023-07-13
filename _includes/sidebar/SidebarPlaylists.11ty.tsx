@@ -9,21 +9,21 @@ const SidebarPlaylists = ({
   playlistResources,
 }: SidebarPlaylistsProps): JSX.Element => {
   return (
-    <div className="bio-page-sidebar-references-group" style="margin-top: 1rem">
+    <div class="bio-page-sidebar-references-group" style="margin-top: 1rem">
       {playlistResources && playlistResources.length > 0 && (
         <>
-          <p className="menu-label">Playlist Resources</p>
-          <ul className="steps has-content-centered is-vertical is-small">
+          <p class="menu-label">Playlist Resources</p>
+          <ul class="steps has-content-centered is-vertical is-small">
             {playlistResources.map((item, index) => (
-              <li className="steps-segment" style="flex-grow: 0">
+              <li class="steps-segment" style="flex-grow: 0">
                 <a
                   aria-label="Playlist Item"
-                  className="has-text-dark playlist-item-toggle"
+                  class="has-text-dark playlist-item-toggle"
                   style="width: auto"
                   href={`#${item.anchor}`}
                 >
-                  <span className="steps-marker is-primary">{index + 1}</span>
-                  <div className="steps-content">
+                  <span class="steps-marker is-primary">{index + 1}</span>
+                  <div class="steps-content">
                     <p> {item.title}</p>
                   </div>
                 </a>

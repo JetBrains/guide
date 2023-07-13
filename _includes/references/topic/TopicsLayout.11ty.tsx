@@ -15,19 +15,19 @@ export function TopicsLayout(
   }) as Topic[];
   const figure = undefined;
   const listing = (
-    <nav className="bd-links bio-resourcecards">
+    <nav class="bd-links bio-resourcecards">
       {topics.map((topic) => (
         <a
           aria-label={`Topic`}
-          className="bd-link"
+          class="bd-link"
           href={topic.url}
           title={topic.title}
         >
-          <h2 className="bd-link-name">
-            <figure className="bd-link-figure">
+          <h2 class="bd-link-name">
+            <figure class="bd-link-figure">
               <span
                 data-testid={`sto-accent`}
-                className={`bd-link-icon has-text-${topic.accent}`}
+                class={`bd-link-icon has-text-${topic.accent}`}
               >
                 <i data-testid={`sto-icon`} className={topic.icon} />
               </span>

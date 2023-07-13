@@ -20,11 +20,11 @@ export function SidebarLayout(
   const { pageTitle, subtitle, bottomNav, topNav, sidebar, children } = data;
   return (
     <BaseLayout {...data} title={pageTitle}>
-      <div className="bd-main bulmaio-body">
-        <div className="bd-side-background" />
-        <div className="bd-main-container container">
-          <div className="bd-duo">
-            <div className="bd-lead">
+      <div class="bd-main bulmaio-body">
+        <div class="bd-side-background" />
+        <div class="bd-main-container container">
+          <div class="bd-duo">
+            <div class="bd-lead">
               {topNav}
               <Heading title={pageTitle} subtitle={subtitle} />
               {children}

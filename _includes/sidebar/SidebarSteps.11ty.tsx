@@ -14,15 +14,15 @@ const SidebarSteps = ({
   {
     return (
       <div
-        className="bio-page-sidebar-references-group"
+        class="bio-page-sidebar-references-group"
         style="margin-top: 1rem"
       >
         {steps.length > 0 && (
           <>
-            <p className="menu-label bio-page-sidebar-published">
+            <p class="menu-label bio-page-sidebar-published">
               Tutorial Steps
             </p>
-            <ul className="steps has-content-centered is-vertical is-small">
+            <ul class="steps has-content-centered is-vertical is-small">
               {steps.map((step, index) => (
                 <SidebarStep
                   label={step.title}

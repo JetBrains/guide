@@ -44,7 +44,7 @@ export function TipLayout(
   const main = (
     <div class="section">
       <div class="container">
-        <div className="columns is-multiline">
+        <div class="columns is-multiline">
           <div class="column">
             <main class="content">
               <ArticleTitleSubtitle title={tip.title} subtitle={tip.subtitle} />

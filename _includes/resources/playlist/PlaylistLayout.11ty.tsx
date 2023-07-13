@@ -69,7 +69,7 @@ export function PlaylistLayout(
   const main = (
     <>
       <div
-        className="content"
+        class="content"
         style="margin-bottom: 3rem"
         dangerouslySetInnerHTML={{ __html: content }}
       ></div>

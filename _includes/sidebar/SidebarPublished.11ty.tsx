@@ -12,13 +12,13 @@ const SidebarPublished = ({
   author,
 }: SidebarPublishedProps): JSX.Element => {
   return (
-    <div className="bio-page-sidenav-published-heading">
-      <p className="menu-label bio-page-sidebar-published">Published</p>
-      <ul className="menu-list">
+    <div class="bio-page-sidenav-published-heading">
+      <p class="menu-label bio-page-sidebar-published">Published</p>
+      <ul class="menu-list">
         <li>
-          <article className="media">
-            <figure className="media-left">
-              <div className="image is-rounded is-48x48">
+          <article class="media">
+            <figure class="media-left">
+              <div class="image is-rounded is-48x48">
                 <Thumbnail
                   src={author.thumbnail}
                   alt={`${author.title} Thumbnail`}
@@ -26,9 +26,9 @@ const SidebarPublished = ({
                 />
               </div>
             </figure>
-            <div className="media-content">
-              <div className="content">
-                <time className="bio-page-sidebar-published-date" datetime={displayDate}>
+            <div class="media-content">
+              <div class="content">
+                <time class="bio-page-sidebar-published-date" datetime={displayDate}>
                   {displayDate}
                 </time>
                 <div>by:</div>

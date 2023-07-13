@@ -25,14 +25,14 @@ export class IntelliJHomepage {
             class="hero is-medium"
             style="background: url('/assets/intellij-idea-beam.svg') center center; background-repeat: no-repeat; background-size: cover;"
           >
-            <div className="hero-body">
-              <div className="container">
-                <h1 className="title" style="color: white;">
+            <div class="hero-body">
+              <div class="container">
+                <h1 class="title" style="color: white;">
                   {data.title}
                 </h1>
-                <div className="columns">
-                  <div className="column is-two-thirds">
-                    <p className="is-size-4" style="color: white;">
+                <div class="columns">
+                  <div class="column is-two-thirds">
+                    <p class="is-size-4" style="color: white;">
                       Find out how you can be more productive with a series of
                       tips and tricks.
                     </p>
@@ -41,28 +41,28 @@ export class IntelliJHomepage {
               </div>
             </div>
           </section>
-          <section className="section has-background-light">
-            <div className="container">
-              <h1 className="title">Learn Something New Quickly</h1>
+          <section class="section has-background-light">
+            <div class="container">
+              <h1 class="title">Learn Something New Quickly</h1>
               <div>
-                <div className="is-size-5">
+                <div class="is-size-5">
                   To start learning, jump to the section you find most
                   interesting from two broad categories:
                 </div>
 
-                <div className="container" style="margin-top: 2rem">
-                  <div className="columns">
-                    <div className="column">
+                <div class="container" style="margin-top: 2rem">
+                  <div class="columns">
+                    <div class="column">
                       <a href="/tips/">
-                        <div className="card">
-                          <div className="card-content">
-                            <div className="media">
-                              <div className="media-content">
-                                <h1 className="is-size-4">Tips</h1>
+                        <div class="card">
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-content">
+                                <h1 class="is-size-4">Tips</h1>
                               </div>
                             </div>
-                            <div className="content">
-                              <p className="is-size-5">
+                            <div class="content">
+                              <p class="is-size-5">
                                 Go through handy tips and tricks grouped by
                                 topics and technologies.
                               </p>
@@ -71,17 +71,17 @@ export class IntelliJHomepage {
                         </div>
                       </a>
                     </div>
-                    <div className="column">
+                    <div class="column">
                       <a href="/tutorials/">
-                        <div className="card">
-                          <div className="card-content">
-                            <div className="media">
-                              <div className="media-content">
-                                <h1 className="is-size-4">Tutorials</h1>
+                        <div class="card">
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-content">
+                                <h1 class="is-size-4">Tutorials</h1>
                               </div>
                             </div>
-                            <div className="content">
-                              <p className="is-size-5">
+                            <div class="content">
+                              <p class="is-size-5">
                                 Explore our step-by-step tutorials grouped by
                                 topics and technologies.
                               </p>

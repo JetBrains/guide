@@ -93,8 +93,8 @@ export function TutorialStepLayout(
 
   return (
     <BaseLayout subtitle={tutorialStep.subtitle} {...data}>
-      <div className="section">
-        <div className="container">
+      <div class="section">
+        <div class="container">
           <div class="columns is-multiline">
             {sidebarSteps}
             <div class="column">

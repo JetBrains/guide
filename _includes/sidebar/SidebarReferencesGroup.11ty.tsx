@@ -13,13 +13,13 @@ const SidebarReferencesGroup = ({
   references,
 }: SidebarReferencesGroupProps): JSX.Element => {
   return (
-    <div className="bio-page-sidebar-references-group">
+    <div class="bio-page-sidebar-references-group">
       {references.length > 0 && (
         <>
-          <p className="menu-label" style="margin-top: 1rem">
+          <p class="menu-label" style="margin-top: 1rem">
             <span
               style="text-transform: uppercase"
-              className="bio-page-sidebar-references-reftype"
+              class="bio-page-sidebar-references-reftype"
             >
               {reftype}
             </span>
@@ -29,10 +29,10 @@ const SidebarReferencesGroup = ({
               <a
                 href={reference.url}
                 style="display: inline-block; margin: 0.2rem 0.2rem"
-                className="bio-page-sidebar-references-href"
+                class="bio-page-sidebar-references-href"
               >
                 <span
-                  className={`tag bio-page-sidebar-references-label has-text-${accent}`}
+                  class={`tag bio-page-sidebar-references-label has-text-${accent}`}
                 >
                   {reference.title}
                 </span>

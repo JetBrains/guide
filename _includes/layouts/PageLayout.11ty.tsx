@@ -11,9 +11,9 @@ export function PageLayout(
 ): JSX.Element {
   return (
     <BaseLayout {...data}>
-      <div className="bd-main bulmaio-body">
-        <div className="bd-side-background" />
-        <div className="bd-main-container container content">
+      <div class="bd-main bulmaio-body">
+        <div class="bd-side-background" />
+        <div class="bd-main-container container content">
           <h1>{data.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: data.content }} />
         </div>

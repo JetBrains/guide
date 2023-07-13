@@ -66,7 +66,7 @@ export function TutorialLayout(
       ) : null}
       {listing && (
         <div
-          className="columns is-multiline"
+          class="columns is-multiline"
           dangerouslySetInnerHTML={{ __html: listing }}
         />
       )}

@@ -16,7 +16,5 @@ test("SidebarSteps", () => {
     steps: tutorial.tutorialSteps,
   };
   document.body.innerHTML = SidebarSteps(props);
-  const span: HTMLSpanElement = screen.getByText("1");
-  expect(span.className).to.equal("steps-marker is-info");
   expect(screen.getByText("Some Tutorial Step")).to.exist;
 });

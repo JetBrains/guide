@@ -7,10 +7,10 @@ export type HeadingProps = {
 };
 const Heading = ({ title, subtitle }: HeadingProps): JSX.Element => {
   return (
-    <header className="bd-header" style="min-height: 100px">
-      <div className="bd-header-titles">
-        <h1 className="title">{title}</h1>
-        {subtitle && <p className="subtitle is-4">{subtitle}</p>}
+    <header class="bd-header" style="min-height: 100px">
+      <div class="bd-header-titles">
+        <h1 class="title">{title}</h1>
+        {subtitle && <p class="subtitle is-4">{subtitle}</p>}
       </div>
     </header>
   );

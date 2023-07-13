@@ -16,9 +16,9 @@ export function AuthorsLayout(
     resourceType: "author",
   }) as Author[];
   const listing = (
-    <nav className="bd-links bio-resourcecards">
+    <nav class="bd-links bio-resourcecards">
       {authors.map((author) => (
-        <a aria-label={`Author`} className="bd-link" href={author.url}>
+        <a aria-label={`Author`} class="bd-link" href={author.url}>
           <h2 className="bd-link-name">
             <figure className="bd-link-figure">
               <div className="image is-rounded is-64x64">

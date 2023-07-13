@@ -3,10 +3,10 @@ import NavbarSearch from "./NavbarSearch.11ty";
 
 const Navbar = (): JSX.Element => {
   return (
-    <nav className="navbar is-dark">
-      <div className="container">
-        <div className="navbar-brand">
-          <a className="navbar-item p-0" href="https://www.jetbrains.com/">
+    <nav class="navbar is-dark">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item p-0" href="https://www.jetbrains.com/">
             <img
               src="/assets/jetbrains-simple.svg"
               alt="JetBrains"
@@ -15,29 +15,29 @@ const Navbar = (): JSX.Element => {
             />
           </a>
           <a
-            className="navbar-item has-text-weight-semibold is-size-5"
+            class="navbar-item has-text-weight-semibold is-size-5"
             href="https://www.jetbrains.com/guide/"
           >
             Guide
           </a>
-          <a className="navbar-burger" role="button" aria-label="menu">
+          <a class="navbar-burger" role="button" aria-label="menu">
             <span />
             <span />
             <span />
           </a>
         </div>
-        <div className="navbar-menu has-background-dark">
-          <div className="navbar-end">
-            <a className="navbar-item has-text-grey-light" href="/tips/">
+        <div class="navbar-menu has-background-dark">
+          <div class="navbar-end">
+            <a class="navbar-item has-text-grey-light" href="/tips/">
               Tips
             </a>
-            <a className="navbar-item has-text-grey-light" href="/tutorials/">
+            <a class="navbar-item has-text-grey-light" href="/tutorials/">
               Tutorials
             </a>
-            <a className="navbar-item has-text-grey-light" href="/topics/">
+            <a class="navbar-item has-text-grey-light" href="/topics/">
               Topics
             </a>
-            <a className="navbar-item has-text-grey-light" href="/playlists/">
+            <a class="navbar-item has-text-grey-light" href="/playlists/">
               Playlists
             </a>
           </div>

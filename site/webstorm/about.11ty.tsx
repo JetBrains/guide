@@ -21,30 +21,30 @@ export class WebStormAbout {
     // prettier-ignore
     return (
       <BaseLayout {...data}>
-        <main className="bd-main bulmaio-body">
+        <main class="bd-main bulmaio-body">
           <div
-            className="bd-main-container container"
+            class="bd-main-container container"
             style="margin-bottom: 2rem"
           >
             <header
-              className="bd-header"
+              class="bd-header"
               style="background: url('/assets/webstorm-beam.svg') center center; background-repeat: no-repeat; background-size: cover"
             >
-              <article className="media">
-                <div className="media-content">
-                  <div className="content">
-                    <div className="bd-header-titles">
-                      <h1 className="title">{data.title}</h1>
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <div class="bd-header-titles">
+                      <h1 class="title">{data.title}</h1>
                     </div>
                   </div>
                 </div>
               </article>
             </header>
 
-            <div className="columns">
-              <div className="column is-three-quarters-desktop">
-                <div className="bd-content content">
-                  <div className="content">
+            <div class="columns">
+              <div class="column is-three-quarters-desktop">
+                <div class="bd-content content">
+                  <div class="content">
                     <p>
                       Have you ever found a tip about how to do a specific thing in a JetBrains IDE faster and caught yourself thinking, “Wow, I didn’t know about that, I wonder what other productivity boosters I’ve missed?”
                     </p>

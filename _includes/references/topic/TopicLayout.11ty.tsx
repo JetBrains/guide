@@ -25,7 +25,7 @@ export function TopicLayout(
   ) as Resource[];
 
   const figure = (
-    <figure className="media-left">
+    <figure class="media-left">
       <span className={`icon is-large has-text-${topic.accent}`}>
         <i className={`${topic.icon} fa-3x`} />
       </span>

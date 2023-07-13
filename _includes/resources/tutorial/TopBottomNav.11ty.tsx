@@ -40,40 +40,40 @@ export const TopNav = ({ parent, currentStep }: TopNavProps): JSX.Element => {
   );
   return (
     <div style="margin-bottom: 1em">
-      <div className="mb-4">
+      <div class="mb-4">
         <a
           href={`${parent.url}`}
-          className="topnav-previous is-size-7"
+          class="topnav-previous is-size-7"
           style="border: 'none'"
           title={parent.title}
         >
-          <span className="icon">
-            <i className="fas fa-arrow-up" />
+          <span class="icon">
+            <i class="fas fa-arrow-up" />
           </span>
         </a>
 
         <a
           aria-label="Parent Tutorial"
           href={parent.url}
-          className="topnav-previous is-size-7"
+          class="topnav-previous is-size-7"
           style="border: 'none'"
           title={parent.title}
         >
           <span>Up to {parent.title}</span>
         </a>
       </div>
-      <div className="columns">
-        <div className="column has-text-left is-one-quarter-desktop is-hidden-mobile">
+      <div class="columns">
+        <div class="column has-text-left is-one-quarter-desktop is-hidden-mobile">
           {previous && (
             <a
               href={previous.url}
-              className="topnav-previous button"
+              class="topnav-previous button"
               style="border: 0"
               title={previous.title}
               aria-label="Top Previous Step"
             >
-              <span className="icon">
-                <i className="fas fa-arrow-left" />
+              <span class="icon">
+                <i class="fas fa-arrow-left" />
               </span>
               <span style="padding-left: 1em">Previous</span>
             </a>

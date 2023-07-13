@@ -24,31 +24,31 @@ export class GoLandAbout {
     // prettier-ignore
     return (
             <BaseLayout {...data}>
-                <main className="bd-main bulmaio-body">
+                <main class="bd-main bulmaio-body">
                     <div
-                        className="bd-main-container container"
+                        class="bd-main-container container"
                         style="margin-bottom: 2rem"
                     >
                         <header
-                            className="bd-header"
+                            class="bd-header"
                             style="background: url('/assets/goland_splash.svg') center center; background-repeat: no-repeat; background-size: cover"
                         >
-                            <article className="media">
-                                <div className="media-content">
-                                    <div className="content">
-                                        <div className="bd-header-titles">
-                                            <h1 className="title">{data.title}</h1>
-                                            <p className="subtitle is-4">{data.subtitle}</p>
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <div class="bd-header-titles">
+                                            <h1 class="title">{data.title}</h1>
+                                            <p class="subtitle is-4">{data.subtitle}</p>
                                         </div>
                                     </div>
                                 </div>
                             </article>
                         </header>
 
-                        <div className="columns">
-                            <div className="column is-three-quarters-desktop">
-                                <div className="bd-content content">
-                                    <div className="content">
+                        <div class="columns">
+                            <div class="column is-three-quarters-desktop">
+                                <div class="bd-content content">
+                                    <div class="content">
                                         <h2>Learn something new, quickly</h2>
                                         <p>JetBrains tools like <a href="https://www.jetbrains.com/go/">GoLand</a> are
                                             powerful developer productivity tools. What is the best way to learn how to
