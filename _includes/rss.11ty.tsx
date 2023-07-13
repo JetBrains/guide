@@ -5,7 +5,6 @@ import { encode } from "html-entities";
 export function RssLayout(this: LayoutContext, data: LayoutProps): string {
   const { collections, page } = data;
 
-  // TODO: limit this to stuff and order it
   let items = "";
   collections.allResources.forEach((page) => {
     items += `<item>

@@ -15,8 +15,6 @@ export function AuthorsLayout(
   const authors = this.getReferences({
     resourceType: "author",
   }) as Author[];
-  // TODO It doesn't appear any of the callers use figure
-  const figure = undefined;
   const listing = (
     <nav className="bd-links bio-resourcecards">
       {authors.map((author) => (
@@ -44,7 +42,6 @@ export function AuthorsLayout(
   return (
     <ReferenceLayout
       {...data}
-      figure={figure}
       listing={[listing]}
       content={content}
     />

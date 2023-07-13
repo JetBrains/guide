@@ -2,11 +2,6 @@ import { Reference, ReferenceFrontmatter } from "../../../src/ReferenceModels";
 import { Static, Type } from "@sinclair/typebox";
 import { EleventyPage } from "../../../src/models";
 
-// TODO Can we make topicTypes an enum?
-// enum TopicTypes {
-//   product = "product",
-//   technology = "technology",
-// }
 export const TopicFrontmatter = Type.Intersect([
   ReferenceFrontmatter,
   Type.Object({
