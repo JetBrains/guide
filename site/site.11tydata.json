@@ -1,4 +1,4 @@
 {
   "resourceType": "page",
-  "layout": "layouts/PageLayout.11ty.tsx"
+  "layout": "resources/page/PageLayout.11ty.tsx"
 }

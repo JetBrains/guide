@@ -1,4 +1,3 @@
-// noinspection ES6UnusedImports
 import h, { JSX } from "vhtml";
 import SidebarStep from "./SidebarStep.11ty";
 import { TutorialStep } from "../resources/tutorial/TutorialStepModels";

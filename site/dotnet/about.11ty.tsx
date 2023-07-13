@@ -1,8 +1,7 @@
-// noinspection ES6UnusedImports
-import h, { JSX } from "vhtml";
-import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
-import { LayoutContext, LayoutProps } from "../../src/models";
-import { BaseFrontmatter } from "../../src/ResourceModels";
+import h, {JSX} from "vhtml";
+import {BaseLayout} from "../../_includes/layouts/BaseLayout.11ty";
+import {LayoutContext, LayoutProps} from "../../src/models";
+import {BaseFrontmatter} from "../../src/ResourceModels";
 
 export type DotNetAboutData = LayoutProps &
   BaseFrontmatter & {
@@ -23,7 +22,7 @@ export class DotNetAbout {
     // don't let prettier mess this content up by stripping spaces
     // prettier-ignore
     return (
-            <BaseLayout {...data} site={data.site}>
+            <BaseLayout {...data}>
                 <main class="bd-main bulmaio-body">
                     <div
                         class="bd-main-container container"

@@ -1,4 +1,3 @@
-// noinspection ES6UnusedImports
 import h, { JSX } from "vhtml";
 import SidebarDoclink, { SidebarDoclinkProps } from "./SidebarDoclink.11ty";
 

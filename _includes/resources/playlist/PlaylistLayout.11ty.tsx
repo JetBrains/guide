@@ -1,4 +1,3 @@
-// noinspection ES6UnusedImports
 import h, { JSX } from "vhtml";
 import { Playlist, PlaylistFrontmatter } from "./PlaylistModels";
 import { SidebarLayout } from "../../layouts/SidebarLayout.11ty";

@@ -1,4 +1,3 @@
-// noinspection ES6UnusedImports
 import h, { JSX } from "vhtml";
 import Thumbnail from "../Image.11ty";
 import { Author } from "../references/author/AuthorModels";

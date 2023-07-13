@@ -32,8 +32,10 @@ import {
   QueryFilter,
 } from "./queries";
 import { dumpObsoletes } from "../src/obsoletes";
+import {Page} from "./resources/page/PageModels";
 
 export const resourceCollections = {
+  page: Page,
   playlist: Playlist,
   tip: Tip,
   tutorial: Tutorial,

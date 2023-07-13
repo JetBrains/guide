@@ -1,4 +1,3 @@
-// noinspection ES6UnusedImports
 import h, { JSX } from "vhtml";
 import { Resource } from "../../src/ResourceModels";
 import { Topic } from "../references/topic/TopicModels";

@@ -1,4 +1,3 @@
-// noinspection ES6UnusedImports
 import h, { JSX } from "vhtml";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import { TutorialStep, TutorialStepFrontmatter } from "./TutorialStepModels";

@@ -1,4 +1,3 @@
-// noinspection ES6UnusedImports
 import h, { JSX } from "vhtml";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import { LayoutContext, LayoutProps } from "../../src/models";

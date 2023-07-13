@@ -2,16 +2,20 @@ import { expect, test } from "vitest";
 import { Page, PageFrontmatter } from "./PageModels";
 import { EleventyPage } from "../../../src/models";
 import { rootPath } from "../../config";
+import fixtures from "../../fixtures";
 
 const data: PageFrontmatter = {
   title: "Some Page",
   resourceType: "page",
+  author: "sa",
+  date: fixtures.date,
+  thumbnail: "thumbnail.png",
 };
 const page: EleventyPage = {
   fileSlug: "some-page",
   url: "/tips/some-page/",
   inputPath: `${rootPath}/some-page.md`,
-  date: new Date(Date.UTC(2023, 1, 11)),
+  date: fixtures.date,
 };
 
 test("construct a page", async () => {
