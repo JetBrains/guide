@@ -21,6 +21,8 @@ export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {
 
       targets.forEach((element) => {
         const href = element.attrs["href"];
+        // no value
+        if (!href) return;
         // already good
         if (href.startsWith(prefix)) return;
         // absolute urls
@@ -32,7 +34,9 @@ export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {
         // ignore VITE ASSETS
         if (href.startsWith("__VITE_ASSET__")) return;
 
-        element.setAttribute("href", path.join(prefix, href));
+        if (prefix && href) {
+          element.setAttribute("href", path.join(prefix, href));
+        }
       });
 
       return doc.toString();

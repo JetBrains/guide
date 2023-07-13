@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "node --require esbuild-register ./node_modules/@11ty/eleventy/cmd.js --config=./eleventy.config.js --serve --incremental",
-    "build": "node --require esbuild-register ./node_modules/@11ty/eleventy/cmd.js && npm run demos:unified",
-    "demos": "copyfiles -e './_site/dotnet' -f './sites/dotnet/**/demos/*' -f false --verbose && copyfiles -e './_site/goland' -f './sites/goland/**/demos/*' -f false --verbose && copyfiles -e './_site/intellij' -f './sites/intellij/**/demos/*' -f false --verbose && copyfiles -e './_site/pycharm' -f './sites/pycharm/**/demos/*' -f false --verbose && copyfiles -e './_site/webstorm' -f './sites/webstorm/**/demos/*' -f false --verbose",
+    "build": "node --require esbuild-register ./node_modules/@11ty/eleventy/cmd.js && npm run demos",
+    "demos": "copyfiles -e './_site/dotnet' -f './site/dotnet/**/demos/*' -f false --verbose && copyfiles -e './_site/goland' -f './site/goland/**/demos/*' -f false --verbose && copyfiles -e './_site/intellij' -f './site/intellij/**/demos/*' -f false --verbose && copyfiles -e './_site/pycharm' -f './site/pycharm/**/demos/*' -f false --verbose && copyfiles -e './_site/webstorm' -f './site/webstorm/**/demos/*' -f false --verbose",
     "clean": "rimraf _site .11ty-vite",
     "test": "vitest run",
     "broken-link-checker": "node ./src/scanner.js"
