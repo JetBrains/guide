@@ -3,18 +3,17 @@ import {LayoutContext, LayoutProps} from "../../src/models";
 import {PageFrontmatter} from "../resources/page/PageModels";
 import {BaseLayout} from "./BaseLayout.11ty";
 
-export type PageLayoutData = LayoutProps & PageFrontmatter;
+export type HomepageLayoutProps = LayoutProps & PageFrontmatter;
 
-export function PageLayout(
+export function HomepageLayout(
     this: LayoutContext,
-    data: PageLayoutData
+    data: HomepageLayoutProps
 ): JSX.Element {
     return (
         <BaseLayout {...data}>
             <section className="section">
                 <div className="container">
                     <main class="content">
-                        <h1>{data.title}</h1>
                         <div dangerouslySetInnerHTML={{__html: data.content}}/>
                     </main>
                 </div>
@@ -23,4 +22,4 @@ export function PageLayout(
     );
 }
 
-export const render = PageLayout;
+export const render = HomepageLayout;

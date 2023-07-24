@@ -20,7 +20,7 @@ export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
     />
   );
 
-  const pages = (
+  const pages =  (
     <section class="section" aria-label="Pagination">
       <div class="container">
         {pagination && <Pagination pagination={pagination} />}

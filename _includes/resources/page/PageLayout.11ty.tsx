@@ -13,9 +13,7 @@ export function PageLayout(
         <BaseLayout {...data}>
             <section className="section">
                 <div className="container">
-
                     <main class="content">
-                        <h1>{data.title}</h1>
                         <div dangerouslySetInnerHTML={{__html: data.content}}/>
                     </main>
                 </div>
