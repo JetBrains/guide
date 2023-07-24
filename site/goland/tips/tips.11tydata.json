@@ -1,5 +1,5 @@
 {
   "resourceType": "tip",
   "layout": "resources/tip/TipLayout.11ty.tsx",
-  "tags": "tip"
+  "tags": ["tip", "goland_tip"]
 }

@@ -13,11 +13,7 @@ export class TipsLayout {
       eleventyExcludeFromCollections: true,
       title: "Tips",
       subtitle:
-        "Visual, standalone, bite-sized learning resources organized into different categories.",
-      pagination: {
-        data: "collections.tip",
-        size: 10,
-      },
+        "Visual, standalone, bite-sized learning resources organized into different categories."
     };
   }
 
