@@ -9,6 +9,7 @@ subtitle: This is a three-part series dedicated to three different methods of bu
 thumbnail: ./thumbnail.png
 tutorialItems:
 - ./stdlib/
+- ./gorilla-mux/
 
 ---
 
