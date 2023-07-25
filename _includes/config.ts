@@ -33,6 +33,7 @@ import {
 } from "./queries";
 import { dumpObsoletes } from "../src/obsoletes";
 import {Page} from "./resources/page/PageModels";
+import {Article} from "./resources/article/ArticleModels";
 
 export const resourceCollections = {
   page: Page,
@@ -40,6 +41,7 @@ export const resourceCollections = {
   tip: Tip,
   tutorial: Tutorial,
   tutorialstep: TutorialStep,
+  article: Article
 };
 export const referenceCollections = {
   author: Author,
