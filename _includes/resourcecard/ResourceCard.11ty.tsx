@@ -37,7 +37,7 @@ const ResourceCard = ({
         <div class="card is-equal-height">
           <div class="card-image">
             <a href={url}>
-              <figure class="image is-1by1">
+              <figure class="image is-16by9 is-cover-top">
                 <img src={thumbnail} alt={title} />
               </figure>
             </a>
