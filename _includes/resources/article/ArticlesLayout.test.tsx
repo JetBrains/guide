@@ -18,11 +18,15 @@ test("should render ArticlesLayout", () => {
     };
     fixtures.context.getResources = () =>
         Array.from(fixtures.resolvedCollections.allResources.values());
+    const firstArticleURL = fixtures.articles[0].url;
+    fixtures.context.getResource = () => fixtures.resolvedCollections.allResources.get(firstArticleURL)!;
     const articlesLayout = new ArticlesLayout();
-    document.body.innerHTML = articlesLayout.render.call(fixtures.context, renderProps);
-    // TODO Make fixture data for articles to allow uncommenting this
-    // const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
-    //     name: "Resource",
-    // });
-    // expect(links[6].href).to.equal("/tutorials/some-tutorial/third-tutorialstep/");
+    document.body.innerHTML = articlesLayout.render.call(
+        fixtures.context,
+        renderProps
+    );
+    const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
+        name: "Resource",
+    });
+    expect(links[0].href).to.equal("/articles/some-article/");
 });

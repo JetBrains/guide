@@ -10,11 +10,11 @@ import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 
-export type TipLayoutData = LayoutProps & ArticleFrontmatter;
+export type ArticleLayoutData = LayoutProps & ArticleFrontmatter;
 
 export function ArticleLayout(
     this: LayoutContext,
-    data: TipLayoutData
+    data: ArticleLayoutData
 ): JSX.Element {
   const { collections, content, page } = data;
   const article = collections.allResources.get(page.url) as Article;

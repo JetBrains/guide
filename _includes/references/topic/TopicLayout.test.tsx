@@ -16,6 +16,6 @@ test("should render TopicLayout", () => {
     const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
         name: "Resource",
     });
-    expect(links.length).to.equal(2);
+    expect(links.length).to.equal(3);
     expect(links[1].href).to.equal("/tips/some-tip/");
 });
