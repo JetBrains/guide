@@ -25,6 +25,7 @@ import {
   PlaylistFrontmatter,
 } from "./resources/playlist/PlaylistModels";
 import { PaginationProps } from "./pagination/Pagination.11ty";
+import {Article, ArticleFrontmatter} from "./resources/article/ArticleModels";
 
 /**
  * Reusable test data``
@@ -85,6 +86,23 @@ const tipItems: {
     },
   },
 ];
+
+const articleItems: {
+  content: string;
+  data: ArticleFrontmatter;
+  page: EleventyPage;
+}[] = [
+  {
+    content,
+    data: { ...tipFrontmatters[0] },
+    page: {
+      fileSlug: "some-article",
+      url: "/articles/some-article/",
+      inputPath: `${rootPath}/articles/some-article/index.md`,
+      date,
+    },
+  },
+];
 // This is data shaped like on our side.
 const tipDatas: {
   data: TipFrontmatter;
@@ -101,6 +119,18 @@ const tipDatas: {
     data: { ...tipItems[1].data },
     page: tipItems[1].page,
   },
+];
+
+const articleDatas: {
+  data: TipFrontmatter;
+  page: EleventyPage;
+  content: string;
+}[] = [
+  {
+    content,
+    data: { ...articleItems[0].data },
+    page: articleItems[0].page,
+  }
 ];
 
 const authorsFrontmatters: AuthorFrontmatter[] = [
@@ -534,6 +564,7 @@ const all: BaseItem[] = [
   ...authorItems,
   ...topicItems,
   ...playlistItems,
+  ...articleItems
 ];
 
 const authors = await Promise.all(
@@ -564,6 +595,16 @@ const tips = await Promise.all(
         page: ref.page,
       }).init()
   )
+);
+
+const articles = await Promise.all(
+    articleDatas.map(
+        async (ref) =>
+            await new Article({
+              data: ref.data,
+              page: ref.page,
+            }).init()
+    )
 );
 
 const tutorials = await Promise.all(
@@ -641,11 +682,13 @@ export const baseRenderData = {
   content: "",
 };
 
+const paginationItems = [...tipItems, ...articleItems] as const
+
 const paginationProps: PaginationProps = {
   pagination: {
-    items: tipItems,
+    items: [...paginationItems],
     pageNumber: 0,
-    hrefs: tipItems.map((ti) => ti.page.url),
+    hrefs: paginationItems.map((ti) =>  ti.page.url),
     href: {
       next: "tip5",
       previous: "tip3",
@@ -656,6 +699,7 @@ const paginationProps: PaginationProps = {
 };
 // Now assemble for export
 const fixtures = {
+  articles,
   authors,
   authorItems,
   children,

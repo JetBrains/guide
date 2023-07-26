@@ -1,8 +1,8 @@
-import {expect, test} from "vitest";
+import { expect, test } from "vitest";
+import { screen } from "@testing-library/dom";
+import fixtures, { baseRenderData } from "../../fixtures";
+import { ReferenceLayoutProps } from "../../layouts/ReferenceLayout.11y";
 import {ArticlesLayout} from "./ArticlesLayout.11ty";
-import {screen} from "@testing-library/dom";
-import fixtures, {baseRenderData} from "../../fixtures";
-import {ReferenceLayoutProps} from "../../layouts/ReferenceLayout.11y";
 
 test("should render ArticlesLayout", () => {
     const renderProps: ReferenceLayoutProps = {
@@ -15,12 +15,19 @@ test("should render ArticlesLayout", () => {
             url: "url",
             date: fixtures.date,
         },
+        pagination: fixtures.paginationProps.pagination,
     };
     fixtures.context.getResources = () =>
         Array.from(fixtures.resolvedCollections.allResources.values());
-    document.body.innerHTML = ArticlesLayout.call(fixtures.context, renderProps);
+    const firstArticleURL = fixtures.articles[0].url;
+    fixtures.context.getResource = () => fixtures.resolvedCollections.allResources.get(firstArticleURL)!;
+    const articlesLayout = new ArticlesLayout();
+    document.body.innerHTML = articlesLayout.render.call(
+        fixtures.context,
+        renderProps
+    );
     const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
         name: "Resource",
     });
-    expect(links[6].href).to.equal("/tutorials/some-tutorial/third-tutorialstep/");
+    expect(links[0].href).to.equal("/articles/some-article/");
 });

@@ -20,7 +20,7 @@ export class ArticlesLayout {
   render(this: LayoutContext, data: ReferenceLayoutProps): JSX.Element {
     const { content, pagination } = data;
     const paginationItems = pagination ? pagination.items : [];
-    const articles: Article[] = paginationItems.map((t: any) => {
+    const articles: Article[] = paginationItems.map((t) => {
       return this.getResource(t.url) as Article;
     });
 
