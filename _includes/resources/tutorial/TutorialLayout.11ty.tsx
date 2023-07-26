@@ -9,6 +9,7 @@ import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
+import { TopNav } from "./TopBottomNav.11ty";
 
 export type TutorialLayoutData = LayoutProps & TutorialFrontmatter;
 
@@ -28,7 +29,12 @@ export function TutorialLayout(
         <ul class="menu-list">
           {tutorial.tutorialSteps.map((step) => (
             <li>
-              <a href={step.url}>{step.title}</a>
+              <a
+                aria-label="Tutorial Step"
+                href={step.url}
+              >
+                {step.title}
+              </a>
             </li>
           ))}
         </ul>
@@ -47,6 +53,9 @@ export function TutorialLayout(
       ))}
     </>
   );
+
+  // Top nav
+  let topNav = <TopNav parent={tutorial}></TopNav>;
 
   const main = (
     <>
@@ -73,6 +82,7 @@ export function TutorialLayout(
   );
   return (
     <BaseLayout {...data}>
+      {topNav}
       <div class="section">
         <div class="container">
           <div class="columns is-multiline">

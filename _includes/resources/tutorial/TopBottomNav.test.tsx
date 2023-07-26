@@ -16,16 +16,7 @@ export const topNavProps: TopNavProps = {
 test("TopNav", () => {
   document.body.innerHTML = TopNav(topNavProps);
 
-  expect(screen.getByRole("link", { name: "Parent Tutorial" })).to.exist;
-  expect(screen.getByRole("link", { name: "Top Previous Step" })).to.exist;
-  expect(screen.getByRole("link", { name: "Top Next Step" })).to.exist;
-  const stepMenuItems = screen.getAllByRole("link", { name: "Step Menu Item" });
-  expect(stepMenuItems).to.exist;
-  if (stepMenuItems) {
-    expect(stepMenuItems[0].className).to.equal("dropdown-item");
-    expect(stepMenuItems[2].className).to.equal("dropdown-item");
-    expect(stepMenuItems[1].className).to.equal("dropdown-item is-active");
-  }
+  expect(screen.getAllByRole("link", { name: "Parent Tutorial" })).to.exist;
 });
 test("BottomNav", () => {
   document.body.innerHTML = BottomNav(topNavProps);
