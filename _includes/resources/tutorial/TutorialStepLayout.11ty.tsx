@@ -57,7 +57,7 @@ export function TutorialStepLayout(
     );
   }
 
-  // Main
+  // Main content
   const videoBottom = tutorialStep.videoBottom;
   const main = (
     <>
@@ -92,14 +92,13 @@ export function TutorialStepLayout(
 
   return (
     <BaseLayout subtitle={tutorialStep.subtitle} {...data}>
+      {topNav}
       <div class="section">
         <div class="container">
           <div class="columns is-multiline">
             {sidebarSteps}
-            <div class="column">
+            <div class="column is-9">
               <main class="content">
-                {topNav}
-                <hr />
                 {main}
                 <hr />
                 {bottomNav}
