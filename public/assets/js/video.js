@@ -5,10 +5,12 @@ const videos = Array.from(document.querySelectorAll(".video-player"));
 videos.forEach((video) => {
   onVisible(video, (entry, observer) => {
     if (entry.intersectionRatio > 0) {
-      const start = parseInt(entry.target.dataset.plyrStart);
-      const end = parseInt(entry.target.dataset.plyrEnd);
+
+      const start = parseInt(entry.target.dataset.start);
+      const end = parseInt(entry.target.dataset.end);
       const hasStart = !isNaN(start);
       const hasEnd = !isNaN(end);
+      let lastSeekingTimeStamp = -1
 
       let config = {};
 
@@ -30,21 +32,18 @@ videos.forEach((video) => {
         }
       });
 
-      plyr.on("playing", () => {
-        if (hasStart && plyr.currentTime < start) {
-          plyr.currentTime = start;
-        }
-      });
-
       plyr.on("timeupdate", () => {
-        if (hasEnd && plyr.currentTime >= end) {
-          plyr.currentTime = hasStart ? start : 0;
-
-          if (plyr.currentTime >= end && plyr.currentTime < end + 2)
-            plyr.stop();
-          setTimeout(plyr.stop, 1000);
-        }
+        if (plyr.currentTime >= end && !hasSkipped())
+          plyr.stop();
       });
+
+      plyr.on("seeked", event => {
+        lastSeekingTimeStamp = event.detail.plyr.currentTime;
+      })
+
+      const hasSkipped = () => {
+        return hasStart && hasEnd && lastSeekingTimeStamp >= 0 && (lastSeekingTimeStamp < start || lastSeekingTimeStamp > end)
+      }
 
       observer.unobserve(entry.target);
     }
