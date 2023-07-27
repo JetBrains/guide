@@ -69,8 +69,8 @@ export function PlaylistLayout(
     <div className="container">
       <div className="navbar-brand">
         <div className="navbar-item is-size-5 has-text-weight-semibold pl-0">
-          <a href={`${playlist.url}`} aria-label="Parent Tutorial" className="is-hidden-touch">{playlist.title}</a>
-          <a href={`${playlist.url}`} aria-label="Parent Tutorial" className="is-hidden-desktop ml-5">{playlist.title}</a>
+          <a href={`${playlist.url}`} aria-label="Parent Playlist" className="is-hidden-touch">{playlist.title}</a>
+          <a href={`${playlist.url}`} aria-label="Parent Playlist" className="is-hidden-desktop ml-5">{playlist.title}</a>
         </div>
       </div>
     </div>
@@ -146,7 +146,7 @@ export function PlaylistLayout(
   const sidebarSteps = (
     <div className="column is-3 is-full-touch">
       <aside className="menu">
-        <p className="menu-label">Tutorial</p>
+        <p className="menu-label">Playlist</p>
         <ul className="menu-list playlist-toggles">
           {playlist.playlistResources.map((step) => (
             <li>
