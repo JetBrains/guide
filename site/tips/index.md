@@ -7,6 +7,6 @@ subtitle: >-
 layout: resources/tip/TipsLayout.11ty.tsx
 pagination:
   data: "collections.tip"
-  size: 10
+  size: 12
 ---
 
