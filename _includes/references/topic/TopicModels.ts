@@ -1,6 +1,7 @@
 import { Reference, ReferenceFrontmatter } from "../../../src/ReferenceModels";
 import { Static, Type } from "@sinclair/typebox";
 import { EleventyPage } from "../../../src/models";
+import path from "upath";
 
 export const TopicFrontmatter = Type.Intersect([
   ReferenceFrontmatter,
@@ -31,5 +32,8 @@ export class Topic extends Reference implements TopicFrontmatter {
     this.accent = data.accent;
     // font-awesome string
     this.icon = data.icon;
+    if (data.logo) {
+      this.logo = path.join(page.url, data.logo);
+    }
   }
 }

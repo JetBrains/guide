@@ -13,39 +13,51 @@ export function TopicsLayout(
   const topics = this.getReferences({
     resourceType: "topic",
   }) as Topic[];
-  const figure = undefined;
   const listing = (
-    <nav class="bd-links bio-resourcecards">
-      {topics.map((topic) => (
-        <a
-          aria-label={`Topic`}
-          class="bd-link"
-          href={topic.url}
-          title={topic.title}
-        >
-          <h2 class="bd-link-name">
-            <figure class="bd-link-figure">
-              <span
-                data-testid={`sto-accent`}
-                class={`bd-link-icon has-text-${topic.accent}`}
-              >
-                <i data-testid={`sto-icon`} className={topic.icon} />
-              </span>
-            </figure>
-            {topic.title}
-          </h2>
-          {topic.subtitle && (
-            <p className="bd-link-subtitle">{topic.subtitle}</p>
-          )}
-        </a>
-      ))}
-    </nav>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-multiline">
+          {topics.map((topic) => {
+            let figure: string;
+            if (topic.icon) {
+              figure = (<i class={`${topic.icon} has-text-${topic.accent} fa-5x`} />);
+            } else if (topic.logo) {
+              figure = (<img src={topic.logo} alt={topic.title} />);
+            } else {
+              figure = (<i class={`fas fa-file has-text-${topic.accent} fa-5x`} />);
+            }
+
+            return (
+              <div class="column is-6 is-4-desktop mb-5">
+                <div class="is-flex">
+                  <span class="mr-4">
+                    <a href={topic.url}>
+                      <figure class="image is-128x128">
+                        {figure}
+                      </figure>
+                    </a>
+                  </span>
+                  <div>
+                    <a href={topic.url} aria-label={`Topic`} class="is-size-5 has-text-weight-bold mb-2 title">
+                      {topic.title}
+                    </a>
+                    {topic.subtitle && (
+                      <p class="has-text-grey-dark">{topic.subtitle}</p>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
   );
 
   return (
     <ReferenceLayout
       {...data}
-      figure={figure}
+      figure={undefined}
       listing={[listing]}
       content={data.content}
     />

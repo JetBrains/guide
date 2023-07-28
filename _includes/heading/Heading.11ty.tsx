@@ -6,12 +6,16 @@ export type HeadingProps = {
 };
 const Heading = ({ title, subtitle }: HeadingProps): JSX.Element => {
   return (
-    <header class="bd-header" style="min-height: 100px">
-      <div class="bd-header-titles">
-        <h1 class="title">{title}</h1>
-        {subtitle && <p class="subtitle is-4">{subtitle}</p>}
+    <section class="section">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-8">
+            <h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold">{title}</h1>
+            {subtitle && <p class="subtitle has-text-grey mb-5">{subtitle}</p>}
+          </div>
+        </div>
       </div>
-    </header>
+    </section>
   );
 };
 
