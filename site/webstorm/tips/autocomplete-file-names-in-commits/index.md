@@ -3,7 +3,7 @@ date: 2023-01-27
 title: Autocomplete File Names in Commits
 topics:
   - vcs
-author: ed
+author: pwe
 subtitle: How to reference filenames in a commit in WebStorm.
 seealso:
   - title: Renaming Files

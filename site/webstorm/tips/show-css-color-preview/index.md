@@ -4,7 +4,7 @@ title: Show CSS Color Preview
 topics:
   - css
   - editing
-author: ed
+author: pwe
 subtitle: How to display a CSS color in the background in WebStorm.
 seealso:
   - title: Working with style sheets
