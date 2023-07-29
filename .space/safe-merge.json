@@ -3,7 +3,7 @@
   "builds": [
     {
       "job": {
-        "name": "Build JetBrains Guide"
+        "name": "Build Guide"
       },
       "changed-files": [
         "/site/**",

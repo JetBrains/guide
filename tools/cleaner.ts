@@ -12,7 +12,7 @@ export const guideSites = [
   "intellij",
   "pycharm",
   "webstorm",
-];
+] as const;
 
 export function getRoot(): string {
   return normalize(`${__dirname}/../site`);
@@ -102,13 +102,11 @@ export function writeTopicType(
   return fm;
 }
 
-export function cleanAllResources(resources: MarkdownResources): {
-  [key: string]: string;
-} {
+export function cleanAllResources(
+  resources: MarkdownResources
+): Record<string, string> {
   /* For all Markdown resources, clean them up and return string for disk  */
-  const results: {
-    [key: string]: string;
-  } = {};
+  const results: Record<string, string> = {};
   Object.entries(resources).forEach(([filePath, markdown]) => {
     let fm: MarkdownFrontmatter;
 

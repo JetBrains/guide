@@ -1,16 +1,14 @@
 import h, { JSX } from "vhtml";
 import { Playlist, PlaylistFrontmatter } from "./PlaylistModels";
-import { SidebarLayout } from "../../layouts/SidebarLayout.11ty";
 import { LayoutContext, LayoutProps } from "../../../src/models";
-import Sidebar from "../../sidebar/Sidebar.11ty";
 import VideoPlayer from "../../video/VideoPlayer.11ty";
-import SidebarPublished, {
-  SidebarPublishedProps,
-} from "../../sidebar/SidebarPublished.11ty";
-import { Author } from "../../references/author/AuthorModels";
-import SidebarPlaylists from "../../sidebar/SidebarPlaylists.11ty";
 import { parse } from "node-html-parser";
 import path from "upath";
+import { BaseLayout } from "../../layouts/BaseLayout.11ty";
+import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
+import ArticleAuthor from "../common/ArticleAuthor.11ty";
+import ArticleTopics from "../common/ArticleTopics.11ty";
+import { Author } from "../../references/author/AuthorModels";
 
 export type PlaylistLayoutData = LayoutProps & PlaylistFrontmatter;
 
@@ -25,6 +23,8 @@ function relativize(originalUrl: string, content: string) {
   function rewriteAttribute(element: HTMLElement, attribute: string) {
     // @ts-ignore
     const href = element.attrs[attribute];
+    // no value
+    if (!href) return;
     // already good
     if (href.startsWith(prefix)) return;
     // absolute urls
@@ -64,11 +64,37 @@ export function PlaylistLayout(
 
   const { all } = data.collections;
 
+  // Top nav
+  let topNav = <nav className="navbar navbar-secondary">
+    <div className="container">
+      <div className="navbar-brand">
+        <div className="navbar-item is-size-5 has-text-weight-semibold pl-0">
+          <a href={`${playlist.url}`} aria-label="Parent Playlist" className="is-hidden-touch">{playlist.title}</a>
+          <a href={`${playlist.url}`} aria-label="Parent Playlist" className="is-hidden-desktop ml-5">{playlist.title}</a>
+        </div>
+      </div>
+    </div>
+  </nav>;
+
   // Main content
+  const author = playlist.references?.author as Author;
+  if (!author) {
+    throw new Error(`Author "${playlist.author}" not in collection`);
+  }
   const main = (
     <>
+      <ArticleTitleSubtitle
+        title={playlist.title}
+        subtitle={playlist.subtitle}
+      />
+      <ArticleAuthor
+        author={author}
+        displayDate={playlist.displayDate}
+      />
+      {playlist.references?.topics &&
+        <ArticleTopics topics={playlist.references?.topics} />}
       <div
-        class="content"
+        className="content"
         style="margin-bottom: 3rem"
         dangerouslySetInnerHTML={{ __html: content }}
       ></div>
@@ -117,27 +143,28 @@ export function PlaylistLayout(
   );
 
   // Sidebar
-  const author = playlist.references?.author as Author;
-  if (!author) {
-    throw new Error(`Author "${playlist.author}" not in collection`);
-  }
-  const published: SidebarPublishedProps = {
-    author,
-    displayDate: playlist.displayDate,
-  };
-
-  const sidebar = (
-    <Sidebar>
-      <SidebarPublished {...published} />
-      <SidebarPlaylists
-        playlistResources={playlist.playlistResources}
-      ></SidebarPlaylists>
-    </Sidebar>
+  const sidebarSteps = (
+    <div className="column is-3 is-full-touch">
+      <aside className="menu">
+        <p className="menu-label">Playlist</p>
+        <ul className="menu-list playlist-toggles">
+          {playlist.playlistResources.map((step) => (
+            <li>
+              <a
+                aria-label="Playlist Item"
+                href={`#${step.anchor}`}
+              >
+                {step.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    </div>
   );
 
-  // data-meta will be processed out
-  return (
-    <SidebarLayout
+  /*
+      <SidebarLayout
       pageTitle={playlist.title}
       subtitle={playlist.subtitle}
       sidebar={[sidebar]}
@@ -145,6 +172,24 @@ export function PlaylistLayout(
     >
       <main>{main}</main>
     </SidebarLayout>
+   */
+  // data-meta will be processed out
+  return (
+  <BaseLayout subtitle={playlist.subtitle} {...data}>
+    {topNav}
+    <div class="section">
+      <div class="container">
+        <div class="columns is-multiline">
+          {sidebarSteps}
+          <div class="column is-9">
+            <main class="content">
+              {main}
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </BaseLayout>
   );
 }
 

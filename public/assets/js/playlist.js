@@ -1,6 +1,4 @@
-import Freezeframe from "freezeframe";
-
-const playlistItemToggles = document.querySelectorAll(".playlist-item-toggle");
+const playlistItemToggles = document.querySelectorAll(".playlist-toggles a");
 const playlistItems = document.querySelectorAll(".playlist-item");
 
 if (playlistItemToggles.length > 0) {
@@ -10,12 +8,11 @@ if (playlistItemToggles.length > 0) {
     ? window.location.hash
     : playlistItemToggles[0].href;
   playlistItemToggles.forEach(function (el) {
-    const span = el.querySelector(".steps-marker");
     el.addEventListener("click", function (e) {
       e.preventDefault();
       history.replaceState({}, "", el.href);
       resetPlaylistItemToggles();
-      span.classList.add("is-info");
+      el.classList.add("is-active");
       playlistItems.forEach((playlistItem) => {
         playlistItem.style.display = "none";
         if (el.href.endsWith(playlistItem.id)) {
@@ -27,7 +24,7 @@ if (playlistItemToggles.length > 0) {
     });
     if (el.href.endsWith(thisAnchor)) {
       // el.click();
-      span.classList.add("is-info");
+      el.classList.add("is-active");
       playlistItems.forEach((playlistItem) => {
         playlistItem.style.display = "none";
         if (el.href.endsWith(playlistItem.id)) {
@@ -42,7 +39,6 @@ if (playlistItemToggles.length > 0) {
 
 function resetPlaylistItemToggles() {
   playlistItemToggles.forEach(function (el) {
-    const span = el.querySelector(".steps-marker");
-    span.classList.remove("is-info");
+    el.classList.remove("is-active");
   });
 }

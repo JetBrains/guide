@@ -9,7 +9,8 @@
     "demos": "copyfiles -e './_site/dotnet' -f './site/dotnet/**/demos/*' -f false --verbose && copyfiles -e './_site/goland' -f './site/goland/**/demos/*' -f false --verbose && copyfiles -e './_site/intellij' -f './site/intellij/**/demos/*' -f false --verbose && copyfiles -e './_site/pycharm' -f './site/pycharm/**/demos/*' -f false --verbose && copyfiles -e './_site/webstorm' -f './site/webstorm/**/demos/*' -f false --verbose",
     "clean": "rimraf _site .11ty-vite",
     "test": "vitest run",
-    "broken-link-checker": "node ./src/scanner.js"
+    "broken-link-checker": "node ./src/scanner.js",
+    "tools": "./tools/index.ts"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
@@ -26,9 +27,11 @@
     "@types/markdown-it": "^12.2.3",
     "@types/vhtml": "^2.2.4",
     "@types/video.js": "^7.3.50",
+    "@types/yargs": "^17.0.24",
     "@vitest/coverage-c8": "^0.30.1",
     "broken-link-checker": "^0.7.8",
     "bulma": "^0.9.4",
+    "chalk": "^5.3.0",
     "command-line-args": "^5.2.1",
     "copyfiles": "^2.4.1",
     "esbuild-register": "^3.3.2",
@@ -52,7 +55,8 @@
     "vhtml": "^2.2.0",
     "vite": "4.3.9",
     "vite-plugin-image-optimizer": "^1.1.2",
-    "vitest": "^0.30.1"
+    "vitest": "^0.30.1",
+    "yargs": "^17.7.2"
   },
   "volta": {
     "node": "19.6.0"

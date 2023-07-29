@@ -4,19 +4,19 @@ import { TutorialStep } from "./TutorialStepModels";
 
 export type TopNavProps = {
   parent: Tutorial;
-  currentStep: TutorialStep;
+  currentStep?: TutorialStep | null;
 };
 
 type Paging = {
   previous?: TutorialStep | null;
   next?: TutorialStep | null;
-  current: TutorialStep;
+  current: TutorialStep | null;
   currentIndex: number;
 };
 
 function getPagingElements(
   parent: Tutorial,
-  currentStep: TutorialStep
+  currentStep: TutorialStep | null
 ): Paging {
   const siblings = parent.tutorialSteps;
   const currentSlugIndex = siblings.findIndex((s) => s == currentStep);
@@ -32,136 +32,51 @@ function getPagingElements(
   };
 }
 
-export const TopNav = ({ parent, currentStep }: TopNavProps): JSX.Element => {
-  const { previous, next, currentIndex } = getPagingElements(
-    parent,
-    currentStep
-  );
+export const TopNav = ({ parent }: TopNavProps): JSX.Element => {
   return (
-    <div style="margin-bottom: 1em">
-      <div class="mb-4">
-        <a
-          href={`${parent.url}`}
-          class="topnav-previous is-size-7"
-          style="border: 'none'"
-          title={parent.title}
-        >
-          <span class="icon">
-            <i class="fas fa-arrow-up" />
-          </span>
-        </a>
-
-        <a
-          aria-label="Parent Tutorial"
-          href={parent.url}
-          class="topnav-previous is-size-7"
-          style="border: 'none'"
-          title={parent.title}
-        >
-          <span>Up to {parent.title}</span>
-        </a>
-      </div>
-      <div class="columns">
-        <div class="column has-text-left is-one-quarter-desktop is-hidden-mobile">
-          {previous && (
-            <a
-              href={previous.url}
-              class="topnav-previous button"
-              style="border: 0"
-              title={previous.title}
-              aria-label="Top Previous Step"
-            >
-              <span class="icon">
-                <i class="fas fa-arrow-left" />
-              </span>
-              <span style="padding-left: 1em">Previous</span>
-            </a>
-          )}
-        </div>
-        <div className="column has-text-centered is-one-half is-full-mobile">
-          <div className="dropdown is-hoverable">
-            <div className="dropdown-trigger" style="width: 20rem">
-              <button className="button" aria-controls="dropdown-menu2">
-                <span>
-                  {currentIndex + 1} of {parent.tutorialSteps.length}
-                </span>
-                <span className="icon is-small">
-                  <i className="fas fa-angle-down" />
-                </span>
-              </button>
-            </div>
-            <div className="dropdown-menu" id="dropdown-menu2" role="menu">
-              <div className="dropdown-content">
-                <div className="dropdown-item">
-                  <strong className="is-size-5">{parent.title}</strong>
-                </div>
-                <hr className="dropdown-divider" />
-                {parent.tutorialSteps.map((entry) => (
-                  <a
-                    href={entry.url}
-                    aria-label="Step Menu Item"
-                    className={`dropdown-item${
-                      entry == currentStep ? " is-active" : ""
-                    }`}
-                  >
-                    {entry.title}
-                  </a>
-                ))}
-              </div>
-            </div>
+    <nav class="navbar navbar-secondary">
+      <div class="container">
+        <div class="navbar-brand">
+          <div class="navbar-item is-size-5 has-text-weight-semibold pl-0">
+            <a href={`${parent.url}`} aria-label="Parent Tutorial" class="is-hidden-touch">{parent.title}</a>
+            <a href={`${parent.url}`} aria-label="Parent Tutorial" class="is-hidden-desktop ml-5">{parent.title}</a>
           </div>
         </div>
-        <div className="column has-text-right is-one-quarter-desktop is-hidden-mobile">
-          {next && (
-            <a
-              href={next.url}
-              className="topnav-previous button"
-              style="border: 0"
-              title={next.title}
-              aria-label="Top Next Step"
-            >
-              <span style="padding-left: 1em">Next</span>
-              <span className="icon">
-                <i className="fas fa-arrow-right" />
-              </span>
-            </a>
-          )}
-        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 export const BottomNav = ({
   parent,
-  currentStep,
+  currentStep = null,
 }: TopNavProps): JSX.Element => {
   const { previous, next } = getPagingElements(parent, currentStep);
   return (
-    <div className="columns is-size-10 is-size-6">
-      <div className="column has-text-left">
+    <div class="columns is-size-10 is-size-6">
+      <div class="column has-text-left">
         {previous && (
           <a
             href={previous.url}
-            className="bottomnav-previous is-small"
+            class="bottomnav-previous is-small"
             aria-label="Bottom Previous Step"
           >
-            <span className="icon" title={previous.title}>
-              <i className="fas fa-arrow-left" />
+            <span class="icon" title={previous.title}>
+              <i class="fas fa-arrow-left" />
             </span>
             <span style="padding-left: 1em">{previous.title}</span>
           </a>
         )}
       </div>
-      <div className="column has-text-right">
+      <div class="column has-text-right">
         {next && (
           <a
             href={next.url}
-            className="bottomnav-next is-small"
+            class="bottomnav-next is-small"
             aria-label="Bottom Next Step"
           >
             <span style="padding-right: 1em">{next.title}</span>
-            <span className="icon" title={next.title}>
-              <i className="fas fa-arrow-right" />
+            <span class="icon" title={next.title}>
+              <i class="fas fa-arrow-right" />
             </span>
           </a>
         )}

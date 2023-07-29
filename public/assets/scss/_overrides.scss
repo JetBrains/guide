@@ -46,6 +46,7 @@ a.navbar-item:focus-within {
 .navbar-secondary .navbar-burger a:hover,
 .navbar-secondary .navbar-end a:hover {
   background-color: $white;
+  color: $primary;
 }
 .navbar-secondary .navbar-brand a {
   color: $grey-darker;
@@ -53,4 +54,8 @@ a.navbar-item:focus-within {
 .navbar-secondary .navbar-brand a:hover {
   color: $grey-darker;
   background-color: $white;
+}
+.image.is-cover-top img {
+  object-fit: cover;
+  object-position: top;
 }

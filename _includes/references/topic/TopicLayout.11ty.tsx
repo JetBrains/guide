@@ -23,13 +23,12 @@ export function TopicLayout(
     (ci) => ci.topics && ci.topics.includes(topic.label as string)
   ) as Resource[];
 
-  const figure = (
-    <figure class="media-left">
-      <span className={`icon is-large has-text-${topic.accent}`}>
-        <i className={`${topic.icon} fa-3x`} />
-      </span>
-    </figure>
-  );
+  let figure = "";
+  if (topic.icon) {
+    figure = (<i class={`${topic.icon} has-text-${topic.accent} fa-7x`} />);
+  } else if (topic.logo) {
+    figure = (<img src={topic.logo} alt={topic.title} />);
+  }
   const listing = (
     <>
       {linkedResources.map((resource) => (
