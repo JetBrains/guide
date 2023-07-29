@@ -1,8 +1,8 @@
-import {expect, test} from "vitest";
+import { expect, test } from "vitest";
+import { screen } from "@testing-library/dom";
+import fixtures, { baseRenderData } from "../../fixtures";
+import { ReferenceLayoutProps } from "../../layouts/ReferenceLayout.11y";
 import {ArticlesLayout} from "./ArticlesLayout.11ty";
-import {screen} from "@testing-library/dom";
-import fixtures, {baseRenderData} from "../../fixtures";
-import {ReferenceLayoutProps} from "../../layouts/ReferenceLayout.11y";
 
 test("should render ArticlesLayout", () => {
     const renderProps: ReferenceLayoutProps = {
@@ -15,6 +15,7 @@ test("should render ArticlesLayout", () => {
             url: "url",
             date: fixtures.date,
         },
+        pagination: fixtures.paginationProps.pagination,
     };
     fixtures.context.getResources = () =>
         Array.from(fixtures.resolvedCollections.allResources.values());
