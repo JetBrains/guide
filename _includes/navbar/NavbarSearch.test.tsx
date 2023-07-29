@@ -8,7 +8,6 @@ beforeEach(() => {
     <>
       <div id="navbarBurger"></div>
       <NavbarSearch />
-      <script src="../../public/assets/js/search.js"></script>
     </>
   );
 });
