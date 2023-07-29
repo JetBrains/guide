@@ -6,4 +6,5 @@ website: 'https://facebook.github.io/jest/'
 topicType: technology
 ---
 
-Jest is a JavaScript testing framework with a focus on simplicity. It works with projects using Babel, TypeScript, Node, React, Angular, and Vue.
+Jest is a JavaScript testing framework with a focus on simplicity. It works with projects using Babel, TypeScript, Node,
+React, Angular, and Vue.
