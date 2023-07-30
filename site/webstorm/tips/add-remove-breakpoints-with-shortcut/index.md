@@ -4,7 +4,7 @@ title: Add and Remove Breakpoints Quickly
 subtitle: How to toggle breakpoints without using the mouse.
 topics:
   - javascript
-  - running-debugging
+  - running
 author: er
 seealso:
   - title: How to debug with WebStorm

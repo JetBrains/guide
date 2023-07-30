@@ -4,7 +4,7 @@ title: See Return Values in Variables View
 subtitle: See what value a method returns.
 topics:
   - javascript
-  - running-debugging
+  - running
 author: er
 seealso:
   - title: WebStorm 2019.3 EAP

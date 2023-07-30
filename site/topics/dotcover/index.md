@@ -4,6 +4,7 @@ subtitle: The .NET Unit Test Runner and Code Coverage Tool.
 logo: ./logo.png
 website: 'https://www.jetbrains.com/dotcover/'
 topicType: product
+obsoletes: ["/dotnet/topics/dotcover/"]
 ---
 
 JetBrains dotCover is a .NET unit test runner and code coverage tool that integrates with Visual Studio and JetBrains Rider.

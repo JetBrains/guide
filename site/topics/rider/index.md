@@ -4,6 +4,7 @@ subtitle: 'Fast & powerful, cross platform .NET IDE.'
 logo: ./logo.png
 website: 'https://www.jetbrains.com/rider/'
 topicType: product
+obsoletes: ["/dotnet/topics/rider/"]
 ---
 
 JetBrains Rider is a cross-platform .NET IDE based on the IntelliJ platform and ReSharper.
