@@ -99,9 +99,9 @@ const ResourceCard = ({
         <div class="card is-equal-height">
           <div class="card-content">
             <article class="media">
-              <figure class="media-left m-0 mr-4 is-hidden-mobile">
+              <figure class="media-left m-0 mr-4 is-hidden-mobile is-contained image is-128x128">
                 <a href={url}>
-                  <img class="image is-128x128" src={thumbnail} alt={title} />
+                  <img class="" src={thumbnail} alt={title} />
                 </a>
               </figure>
               <div class="media-content">
