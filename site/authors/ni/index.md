@@ -1,6 +1,5 @@
 ---
 title: Nafiul Islam
-subtitle: JetBrains Developer Advocate
+subtitle: Python Developer Advocate
 thumbnail: ./nafiul.jpg
 ---
-

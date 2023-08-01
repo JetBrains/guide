@@ -5,7 +5,6 @@ import {
 } from "../../layouts/ReferenceLayout.11y";
 import { Author } from "./AuthorModels";
 import { LayoutContext } from "../../../src/models";
-import Thumbnail from "../../Image.11ty";
 
 export function AuthorsLayout(
   this: LayoutContext,
@@ -16,27 +15,36 @@ export function AuthorsLayout(
     resourceType: "author",
   }) as Author[];
   const listing = (
-    <nav class="bd-links bio-resourcecards">
-      {authors.map((author) => (
-        <a aria-label={`Author`} class="bd-link" href={author.url}>
-          <h2 className="bd-link-name">
-            <figure className="bd-link-figure">
-              <div className="image is-rounded is-64x64">
-                <Thumbnail
-                  src={author.thumbnail}
-                  alt={`${author.title} image`}
-                  className="bio-resourcecard-logo"
-                />
-              </div>
-            </figure>
-            {author.title}
-          </h2>
-          {author.subtitle && (
-            <p className="bd-link-subtitle">{author.subtitle}</p>
-          )}
-        </a>
-      ))}
-    </nav>
+      <section class="section">
+        <div class="container">
+          <div class="columns is-multiline">
+            {authors.map((author) => {
+              return (
+                  <div class="column is-6 is-4-desktop mb-5">
+                    <div class="is-flex">
+                      <span class="mr-4">
+                        <a href={author.url}>
+                          <figure class="image is-1by1 is-128x128">
+                            <img src={author.thumbnail} alt={author.title}/>
+                          </figure>
+                        </a>
+                      </span>
+                      <div>
+                        <a href={author.url} aria-label={`Author`}
+                           class="is-size-5 has-text-weight-bold mb-2 title">
+                          {author.title}
+                        </a>
+                        {author.subtitle && (
+                            <p class="has-text-grey-dark">{author.subtitle}</p>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
   );
 
   return (

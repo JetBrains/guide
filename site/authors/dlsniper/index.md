@@ -1,7 +1,5 @@
 ---
 title: Florin Pățan
-subtitle: GoLand Developer Advocate at JetBrains
+subtitle: Developer in Go and a big fan of GoLand
 thumbnail: ./dlsniper.jpg
 ---
-
-Florin is the GoLand Developer Advocate at JetBrains.

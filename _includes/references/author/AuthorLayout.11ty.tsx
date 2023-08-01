@@ -3,7 +3,6 @@ import {
   ReferenceLayout,
   ReferenceLayoutProps,
 } from "../../layouts/ReferenceLayout.11y";
-import Thumbnail from "../../Image.11ty";
 import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Resource } from "../../../src/ResourceModels";
@@ -26,13 +25,7 @@ export function AuthorLayout(
   );
 
   const figure = (
-    <div className="image is-rounded is-96x96">
-      <Thumbnail
-        src={author.thumbnail}
-        className={"bio-resourcecard-logo"}
-        alt={author.title}
-      />
-    </div>
+      <img src={author.thumbnail} alt={author.title} />
   );
   const listing = (
     <>
