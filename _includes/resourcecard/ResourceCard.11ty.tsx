@@ -1,8 +1,19 @@
 import h, { JSX } from "vhtml";
+// @ts-ignore
+import ConsistentHash from "consistent-hash";
 import { Resource } from "../../src/ResourceModels";
 import { Topic } from "../references/topic/TopicModels";
 import TopicTag from "../references/topic/TopicTag.11ty";
 import { AuthorFrontmatter } from "../references/author/AuthorModels";
+
+const glowColorHashRing = new ConsistentHash({ range: 100003, weight: 80, distribution: "uniform" });
+glowColorHashRing.add('has-glow-magenta');
+glowColorHashRing.add('has-glow-pink');
+glowColorHashRing.add('has-glow-fresh-green');
+glowColorHashRing.add('has-glow-cold-green');
+glowColorHashRing.add('has-glow-orange');
+glowColorHashRing.add('has-glow-red');
+glowColorHashRing.add('has-glow-purple');
 
 export enum ResourceCardOrientation {
   Portrait = 0,
@@ -32,12 +43,14 @@ const ResourceCard = ({
   const { author, topics } = references;
 
   if (orientation == null || orientation == ResourceCardOrientation.Portrait) {
+    const glowCssClass = glowColorHashRing.get(title);
+
     return (
       <div class="column is-half-tablet is-one-third-desktop">
         <div class="card is-equal-height">
           <div class="card-image">
             <a href={url}>
-              <figure class="image is-16by9 is-cover-top">
+              <figure class={`image is-16by9 is-contained ${glowCssClass}`}>
                 <img src={thumbnail} alt={title} />
               </figure>
             </a>

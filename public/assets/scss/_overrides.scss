@@ -59,3 +59,29 @@ a.navbar-item:focus-within {
   object-fit: cover;
   object-position: top;
 }
+.image.is-contained img {
+  object-fit: contain;
+}
+
+/* Glows from https://rescui.dev/components/use-glow-hover/presets/ */
+.has-glow-magenta {
+  background: radial-gradient(circle, rgb(255, 69, 237) 12%, rgba(255, 69, 237, 0)) no-repeat border-box border-box rgb(8, 124, 250);
+}
+.has-glow-pink {
+  background: radial-gradient(circle, rgb(228, 74, 144) 12%, rgba(228, 74, 144, 0)) no-repeat border-box border-box rgb(103, 92, 233);
+}
+.has-glow-fresh-green {
+  background: radial-gradient(circle, rgb(117, 214, 75) 12%, rgba(117, 214, 75, 0)) no-repeat border-box border-box rgb(40, 184, 160);
+}
+.has-glow-cold-green {
+  background: radial-gradient(circle, rgb(59, 234, 98) 12%, rgba(59, 234, 98, 0)) no-repeat border-box border-box rgb(8, 124, 250);
+}
+.has-glow-orange {
+  background: radial-gradient(circle, rgb(253, 182, 13) 12%, rgba(253, 182, 13, 0)) no-repeat border-box border-box rgb(255, 49, 140);
+}
+.has-glow-red {
+  background: radial-gradient(circle, rgb(221, 18, 101) 12%, rgba(221, 18, 101, 0)) no-repeat border-box border-box rgb(247, 103, 7);
+}
+.has-glow-purple {
+  background: radial-gradient(circle, rgb(107, 87, 255) 12%, rgba(107, 87, 255, 0)) no-repeat border-box border-box rgb(40, 184, 160);
+}
