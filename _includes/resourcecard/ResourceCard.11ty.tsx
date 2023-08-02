@@ -56,7 +56,7 @@ const ResourceCard = ({
             </a>
           </div>
           <div class="card-content">
-            <a class="title" aria-label={`Resource`} href={url}>
+            <a class="title is-size-4" aria-label={`Resource`} href={url}>
               {title}
             </a>
             {subtitle && <div class="content mt-2">{subtitle}</div>}
@@ -105,7 +105,7 @@ const ResourceCard = ({
                 </a>
               </figure>
               <div class="media-content">
-                <a class="title" aria-label={`Resource`} href={url}>
+                <a class="title is-size-4" aria-label={`Resource`} href={url}>
                   {title}
                 </a>
                 {subtitle && <div class="content mt-2">{subtitle}</div>}
