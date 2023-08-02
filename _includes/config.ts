@@ -86,8 +86,6 @@ export async function registerIncludes(
         Topic: TopicFrontmatter,
       };
       const schemasOutputPath = path.join(
-        "..",
-        "..",
         "docs",
         "schemas",
         path.basename(sitePath)

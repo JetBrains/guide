@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "$id": "https://www.jetbrains.com/guide/product.schema.json",
-  "title": "JetBrains Guide Product",
+  "$id": "https://www.jetbrains.com/guide/topic.schema.json",
+  "title": "JetBrains Guide Topic",
   "properties": {},
   "allOf": [
     {
@@ -17,6 +17,17 @@
             "title": {
               "description": "Title of this resource",
               "type": "string"
+            },
+            "subtitle": {
+              "description": "Subtitle of this resource",
+              "type": "string"
+            },
+            "obsoletes": {
+              "description": "Paths that should redirect to this resource",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
             }
           },
           "required": [
@@ -29,10 +40,6 @@
             "label": {
               "description": "Label of this resource",
               "type": "string"
-            },
-            "subtitle": {
-              "description": "Subtitle of this resource",
-              "type": "string"
             }
           }
         }
@@ -41,13 +48,19 @@
     {
       "type": "object",
       "properties": {
+        "accent": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
         "logo": {
           "type": "string"
+        },
+        "topicType": {
+          "type": "string"
         }
-      },
-      "required": [
-        "logo"
-      ]
+      }
     }
   ]
 }

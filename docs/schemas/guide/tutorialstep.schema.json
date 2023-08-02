@@ -17,6 +17,17 @@
             "title": {
               "description": "Title of this resource",
               "type": "string"
+            },
+            "subtitle": {
+              "description": "Subtitle of this resource",
+              "type": "string"
+            },
+            "obsoletes": {
+              "description": "Paths that should redirect to this resource",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
             }
           },
           "required": [
@@ -34,24 +45,6 @@
               "description": "Date this resource was published",
               "format": "date",
               "type": "string"
-            },
-            "products": {
-              "type": "array",
-              "items": {
-                "description": "Product related to this resource",
-                "type": "string"
-              }
-            },
-            "subtitle": {
-              "description": "Subtitle of this resource",
-              "type": "string"
-            },
-            "technologies": {
-              "description": "Technologies related to this resource",
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
             },
             "thumbnail": {
               "description": "File name of the thumbnail for this resource",
@@ -71,8 +64,7 @@
           },
           "required": [
             "author",
-            "date",
-            "thumbnail"
+            "date"
           ]
         }
       ]

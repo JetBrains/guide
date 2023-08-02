@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "$id": "https://www.jetbrains.com/guide/tutorial.schema.json",
-  "title": "JetBrains Guide Tutorial",
+  "$id": "https://www.jetbrains.com/guide/playlist.schema.json",
+  "title": "JetBrains Guide Playlist",
   "properties": {},
   "allOf": [
     {
@@ -17,6 +17,17 @@
             "title": {
               "description": "Title of this resource",
               "type": "string"
+            },
+            "subtitle": {
+              "description": "Subtitle of this resource",
+              "type": "string"
+            },
+            "obsoletes": {
+              "description": "Paths that should redirect to this resource",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
             }
           },
           "required": [
@@ -34,24 +45,6 @@
               "description": "Date this resource was published",
               "format": "date",
               "type": "string"
-            },
-            "products": {
-              "type": "array",
-              "items": {
-                "description": "Product related to this resource",
-                "type": "string"
-              }
-            },
-            "subtitle": {
-              "description": "Subtitle of this resource",
-              "type": "string"
-            },
-            "technologies": {
-              "description": "Technologies related to this resource",
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
             },
             "thumbnail": {
               "description": "File name of the thumbnail for this resource",
@@ -71,8 +64,7 @@
           },
           "required": [
             "author",
-            "date",
-            "thumbnail"
+            "date"
           ]
         }
       ]
@@ -80,24 +72,15 @@
     {
       "type": "object",
       "properties": {
-        "thumbnail": {
-          "description": "File name of a thumbnail for this tutorial",
-          "type": "string"
-        },
-        "tutorialItems": {
+        "playlistItems": {
           "type": "array",
           "items": {
-            "description": "Tutorial step(s) that are part of this tutorial",
             "type": "string"
           }
-        },
-        "videoBottom": {
-          "description": "True if video should be rendered at the bottom; false otherwise",
-          "type": "boolean"
         }
       },
       "required": [
-        "tutorialItems"
+        "playlistItems"
       ]
     }
   ]
