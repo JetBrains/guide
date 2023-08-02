@@ -11,7 +11,7 @@ export class IntellijAbout {
   data() {
     return {
       title: "About",
-      subtitle: "About the IntelliJ Guide",
+      subtitle: "About the IntelliJ IDEA Guide",
       layout: "",
     };
   }
