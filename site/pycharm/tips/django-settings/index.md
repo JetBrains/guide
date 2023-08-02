@@ -4,7 +4,7 @@ title: Autocomplete Django Settings Strings
 topics:
   - django
   - editing
-author: pwe
+author: ni
 subtitle: >-
   Use autocomplete when typing a string in the apps section of your settings
   file.

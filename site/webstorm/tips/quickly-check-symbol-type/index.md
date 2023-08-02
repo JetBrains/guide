@@ -3,7 +3,7 @@ date: 2021-06-11
 title: Quickly Check Symbol Type
 topics:
   - editing
-author: pwe
+author: ed
 subtitle: Here's how to get information about the type of a symbol.
 seealso:
   - title: Check Documentation in JavaScript

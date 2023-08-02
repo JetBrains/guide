@@ -3,7 +3,7 @@ date: 2021-06-11
 title: Monitor Incoming and Outgoing Commits
 topics:
   - vcs
-author: pwe
+author: ed
 subtitle: Want to know if your branch has new commits? Here's how.
 seealso:
   - title: Managing branches
