@@ -3,7 +3,7 @@ date: 2023-01-27
 title: Evaluate Expressions When Debugging
 topics:
   - javascript
-  - running-debugging
+  - running
 author: er
 subtitle: How to check the value of an expression in WebStorm.
 seealso:

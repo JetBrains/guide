@@ -3,7 +3,7 @@ date: 2023-02-02
 title: Share Run Configurations
 subtitle: How to export and share your project’s run configurations in WebStorm.
 topics:
-  - running-debugging
+  - running
 author: er
 seealso:
   - title: WebStorm 2020.1 - What's New

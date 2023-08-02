@@ -2,7 +2,7 @@
 date: 2020-05-26
 title: Run npm Scripts Swiftly
 topics:
-  - running-debugging
+  - running
 author: er
 subtitle: WebStorm lets you run npm scripts right from the gutter.
 seealso:

@@ -2,7 +2,7 @@
 date: 2020-09-24
 title: Database Visualization
 topics:
-  - database
+  - databases
   - django
 author: mm
 subtitle: Visualize the structure of a database with diagrams

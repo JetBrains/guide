@@ -3,7 +3,7 @@ date: 2020-06-26
 title: Getting Helpful Suggestions
 topics:
   - javascript
-  - running-debugging
+  - running
 author: er
 subtitle: >-
   Look out for suggestions from WebStorm! They can help you not to forget about

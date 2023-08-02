@@ -1,5 +1,6 @@
 ---
 title: Ebenezer Don
-subtitle: WebStorm Developer Advocate at JetBrains
+subtitle: Web Developer
 thumbnail: ./ed.jpg
+obsoletes: ["/webstorm/authors/ed/"]
 ---
