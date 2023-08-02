@@ -26,7 +26,7 @@ We can search for "spock" in the artifact search, and add the [latest version of
 
 This is a test dependency so make sure the declaration is `testImplementation`.
 
-We also need a dependency on [Groovy](../../../topics/groovy), since Spock tests are written in Groovy. Follow the same steps for adding a new Maven artifact dependency, search for Groovy and add a dependency on Groovy 3.0.8. For now, we're only going to use Groovy for testing, so we'll declare this as `testImplementation` too.
+We also need a dependency on [Groovy](../../../../topics/groovy), since Spock tests are written in Groovy. Follow the same steps for adding a new Maven artifact dependency, search for Groovy and add a dependency on Groovy 3.0.8. For now, we're only going to use Groovy for testing, so we'll declare this as `testImplementation` too.
 
 You can delete the other JUnit dependencies since we don't need them, your `build.gradle` dependencies should look like:
 

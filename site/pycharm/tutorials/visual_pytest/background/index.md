@@ -44,7 +44,7 @@ Tests let you know which promises that "next big thing" broke, thus giving you f
 
 What are tests and how do you run them? 
 In programming languages, you adopt a testing framework, in which you write code with certain instructions in them which then gets run by the framework.
-For Python, the current favorite is [pytest](../../../topics/pytest).
+For Python, the current favorite is [pytest](../../../../topics/pytest).
 
 As a mature ecosystem, `pytest` has lots of resources to help you get started. 
 RealPython has [a primer on testing in general](https://realpython.com/python-testing/) as well as (paid) [course on pytest](https://realpython.com/courses/test-driven-development-pytest/). 

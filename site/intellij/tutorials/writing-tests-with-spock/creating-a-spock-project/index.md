@@ -25,7 +25,7 @@ From the new project window, we can choose any of:
 
 ![](./01-new-project.png)
 
-Spock is a [Groovy](../../../topics/groovy) testing framework, although we're going to use it to test Java code, so we could select Groovy as an additional library to add right at the start. However, we can also add Groovy later on so I'm not going to select it here.
+Spock is a [Groovy](../../../../topics/groovy) testing framework, although we're going to use it to test Java code, so we could select Groovy as an additional library to add right at the start. However, we can also add Groovy later on so I'm not going to select it here.
 
 We're using JDK 11 for this project, but there's no functionality here that requires 11, you can use whichever version you're comfortable with.
 
