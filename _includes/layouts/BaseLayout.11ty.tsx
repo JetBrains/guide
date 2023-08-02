@@ -56,7 +56,8 @@ export function BaseLayout(
     cardThumbnail = resource?.cardThumbnail;
   }
 
-  const copyright = `Copyright © 2000–2023 <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.`;
+  const year = new Date().getFullYear();
+  const copyright = `Copyright © 2000–${year} <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.`;
 
   return (
     "<!doctype html>" +
