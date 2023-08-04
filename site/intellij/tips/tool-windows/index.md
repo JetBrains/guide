@@ -1,5 +1,4 @@
 ---
-hasBody: false
 date: 2021-05-28
 title: Opening Tool Windows
 topics:
@@ -27,16 +26,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/idea/project-tool-window.html'
   - title: (documentation) IntelliJ IDEA Blog - Top 15 IntelliJ IDEA Shortcuts
     href: 'https://blog.jetbrains.com/idea/2020/03/top-15-intellij-idea-shortcuts/'
-leadin: >
-  The fastest way to move around the IDE is with the keyboard. Most tool windows
-  have a simple numeric shortcut, for example the project tool window is **⌘1**
-  (macOS), or **Alt+1** (Windows/Linux). For those that don't have a keyboard
-  shortcut, you can open these by using [Find Action](../find-actions), or
-  [Search Everywhere](../search-everywhere).
-
-
-  Don't forget, you can easily search any dialog or window in IntelliJ IDEA
-  simply by typing the thing you want to search for.
 ---
+The fastest way to move around the IDE is with the keyboard. Most tool windows
+have a simple numeric shortcut, for example the project tool window is **⌘1**
+(macOS), or **Alt+1** (Windows/Linux). For those that don't have a keyboard
+shortcut, you can open these by using [Find Action](../find-actions), or
+[Search Everywhere](../search-everywhere).
 
+
+Don't forget, you can easily search any dialog or window in IntelliJ IDEA
+simply by typing the thing you want to search for.
 
