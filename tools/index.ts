@@ -1,6 +1,6 @@
 #!/usr/bin/env vite-node --script
 
-import { writeCleanResources } from "./cleaner";
+import { generateLeadInReport, writeCleanResources } from "./cleaner";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 import chalk from "chalk";
@@ -31,6 +31,28 @@ yargs(hideBin(process.argv))
         console.log(success("Clean up script successful 🎉🎉🎉"));
       } catch (e) {
         console.log(error("error executing cleanup script"));
+        if (args.debug) {
+          console.log(info(e));
+        }
+      }
+    }
+  )
+  .command(
+    "leadin",
+    "run leadin script",
+    {
+      debug: {
+        alias: "d",
+        default: false,
+      },
+    },
+    (args) => {
+      try {
+        console.log(info("Going to run leadin script"));
+        generateLeadInReport();
+        console.log(success("Leadin up script successful 🎉🎉🎉"));
+      } catch (e) {
+        console.log(error("error executing leadin script", e));
         if (args.debug) {
           console.log(info(e));
         }

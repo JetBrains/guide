@@ -124,6 +124,48 @@ export function cleanAllResources(
   return results;
 }
 
+export function generateLeadInReport(): void {
+  const root = getRoot();
+  const resourceFiles = getAllFiles(root, []);
+  const markdownResources = getLeadInFiles(resourceFiles);
+  const csv = markdownResources
+    .map((x) => `${x.author},./${x.path}`)
+    .join("\n");
+  fs.writeFile("leadin.csv", csv, (err) => {
+    if (err) return console.log(err);
+    console.log("FILE SUCCESSFULLY WRITTEN!\n");
+  });
+}
+
+const getLeadInFiles = (filePaths: string[]) => {
+  return filePaths
+    .map((markdownFilename: string) => {
+      const tipMatter = matter.read(markdownFilename);
+      const frontmatter = tipMatter.data;
+      if (frontmatter.author) {
+        const authorMatter = matter.read(
+          `${process.cwd()}/site/authors/${frontmatter.author}/index.md`
+        );
+        return {
+          author: authorMatter?.data?.title ?? frontmatter.author,
+          path: path.relative(process.cwd(), markdownFilename),
+          leadin: frontmatter.leadin,
+          content: tipMatter.content,
+        };
+      } else {
+        return {
+          author: frontmatter.author,
+          path: markdownFilename,
+          leadin: frontmatter.leadin,
+          content: tipMatter.content,
+        };
+      }
+    })
+    .filter(
+      (x) =>
+        x.leadin !== undefined && x.content !== undefined && x.content !== "\n"
+    );
+};
 export function writeCleanResources(): void {
   /* Crawl the tree and write files for all cleaned up resources */
   const root = getRoot();
