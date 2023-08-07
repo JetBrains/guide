@@ -68,7 +68,7 @@ You'll be implementing the same application in this tutorial, and you can use th
 
 ## Building a REST API with gorilla/mux
 
-The code for this tutorial and the code from the previous tutorial are available on [GitHub](https://github.com/xNok/go-rest-demo). The `store` code used for the same recipes will be shared between both tutorials. So, if you haven't completed the first one, just grab all the code under `/pkg` that contains the shared business logic (in [`/pkg/recipes/`](https://github.com/xNok/go-rest-demo/tree/main/pkg/recipes)).
+The code for this tutorial and the code from the previous tutorial are available on [GitHub](https://github.com/JetBrains/go-code-samples/tree/main/go-rest-demo/cmd). The `store` code used for the same recipes will be shared between both tutorials. So, if you haven't completed the first one, just grab all the code under `/pkg` that contains the shared business logic (in [`/pkg/recipes/`](https://github.com/JetBrains/go-code-samples/tree/main/go-rest-demo/pkg/recipes)).
 
 ### Getting started with gorilla/mux
 
@@ -286,9 +286,9 @@ w.WriteHeader(http.StatusOK)
 w.Write(jsonBytes)
 ```
 
-These five snippets of code cover all you need to implement the five handler functions. Try to implement them by yourself, and consult the [solution](https://github.com/xNok/go-rest-demo/blob/main/cmd/gorilla/main.go) if you get stuck.
+These five snippets of code cover all you need to implement the five handler functions. Try to implement them by yourself, and consult the [solution](https://github.com/JetBrains/go-code-samples/blob/main/go-rest-demo/cmd/gorilla/main.go) if you get stuck.
 
-Once you are done with your implementation, you can test it using either `httptest` as demonstrated in the first tutorial or the [GoLand HTTP file tests](https://blog.jetbrains.com/go/2022/02/17/goland-2022-1-eap-3-is-out-with-new-features-for-working-with-microservices/#tests-in-http-files). You can find the test script [here](https://github.com/xNok/go-rest-demo/blob/main/cmd/gorilla/main_test.http).
+Once you are done with your implementation, you can test it using either `httptest` as demonstrated in the first tutorial or the [GoLand HTTP file tests](https://blog.jetbrains.com/go/2022/02/17/goland-2022-1-eap-3-is-out-with-new-features-for-working-with-microservices/#tests-in-http-files). You can find the test script [here](https://github.com/JetBrains/go-code-samples/blob/main/go-rest-demo/cmd/gorilla/main_test.http).
 
 
 ![Using GoLand HTTP file tests](./assets/check-http.gif)

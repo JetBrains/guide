@@ -17,7 +17,7 @@ REST APIs provide a convenient and efficient way for clients to access data and 
 
 This article is the first in a three-part series dedicated to three different methods of building a Go REST API. It focuses on using the standard library, a simple and native way to create HTTP servers. The second article uses the gorilla/mux framework, which provides a more sophisticated way of creating HTTP servers with features like middleware and routing. The third article uses the Gin framework, which provides a comprehensive solution for creating REST applications.
 
-Each article walks you through the basics of building a web application by using and creating a small REST API. This application will help you compare the different frameworks throughout the series. You can find the code for all three parts of the series in [this repository]( https://github.com/xNok/go-rest-demo).
+Each article walks you through the basics of building a web application by using and creating a small REST API. This application will help you compare the different frameworks throughout the series. You can find the code for all three parts of the series in [this repository](https://github.com/JetBrains/go-code-samples/tree/main/go-rest-demo).
 
 In this article, you'll create a small REST API with the standard library. You'll start by creating a simple "Hello World" server to understand the concept behind HTTP servers and routing requests, then complete the demo REST API.
 
@@ -240,7 +240,7 @@ func NewRecipesHandler(s recipeStore) *RecipesHandler {
 }
 ```
 
-Implementing storage is not one of this tutorial's objectives, so for test purposes, you can use [`recipeMemStore.go`](https://github.com/xNok/go-rest-demo/blob/main/pkg/recipes/recipeMemStore.go) to save the data in a map. If you choose to use this proposed implementation, simply copy the `recipeMemStore.go` file to your project in the `recipes` package.
+Implementing storage is not one of this tutorial's objectives, so for test purposes, you can use [`recipeMemStore.go`](https://github.com/JetBrains/go-code-samples/blob/main/go-rest-demo/pkg/recipes/recipeMemStore.go) to save the data in a map. If you choose to use this proposed implementation, simply copy the `recipeMemStore.go` file to your project in the `recipes` package.
 
 Update your main function to instantiate the store and `RecipesHandler`:
 
@@ -334,7 +334,7 @@ func (h *RecipesHandler) CreateRecipe(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
-You can run the server and quickly test the endpoint with GoLand's [Generate Request tool](https://blog.jetbrains.com/go/2022/02/17/goland-2022-1-eap-3-is-out-with-new-features-for-working-with-microservices/#generate-a-request). This time, you need to add a JSON payload that represents the recipe you need to create. Try using the recipe payload for ["Ham and Cheese Toasties"](https://github.com/xNok/go-rest-demo/blob/main/testdata/ham_and_cheese_recipe.json):
+You can run the server and quickly test the endpoint with GoLand's [Generate Request tool](https://blog.jetbrains.com/go/2022/02/17/goland-2022-1-eap-3-is-out-with-new-features-for-working-with-microservices/#generate-a-request). This time, you need to add a JSON payload that represents the recipe you need to create. Try using the recipe payload for ["Ham and Cheese Toasties"](https://github.com/JetBrains/go-code-samples/blob/main/go-rest-demo/testdata/ham_and_cheese_recipe.json):
 
 ![Test create endpoint](./assets/03-create-recipe.png)
 
@@ -554,7 +554,7 @@ In the above code, you execute the following steps:
 2. Instantiate `RecipesHandler`
 3. Load the test data using the helper function `readTestData`
 
-Note that you also create an `io.Reader` version of the test data using `bytes.NewReader`, because you need it to create an HTTP request. You can find an example in the [`testdata` folder](https://github.com/xNok/go-rest-demo/tree/main/testdata).
+Note that you also create an `io.Reader` version of the test data using `bytes.NewReader`, because you need it to create an HTTP request. You can find an example in the [`testdata` folder](https://github.com/JetBrains/go-code-samples/tree/main/go-rest-demo/testdata).
 
 With the test set up, you can use the `httptest` package to create a test request with `httptest.NewRequest` and a test response receiver with `httptest.NewRecorder()`. Then, call `recipesHandler.ServeHTTP` with those parameters:
 
@@ -657,7 +657,7 @@ func TestRecipesHandlerCRUD_Integration(t *testing.T) {
 }
 ```
 
-If you need to review the code or play with the sample application, you'll find everything you require for that in [this GitHub repository](https://github.com/xNok/go-rest-demo).
+If you need to review the code or play with the sample application, you'll find everything you require for that in [this GitHub repository](https://github.com/JetBrains/go-code-samples/tree/main/go-rest-demo).
 
 ## Disadvantages of the standard library approach
 
