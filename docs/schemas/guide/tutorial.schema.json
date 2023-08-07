@@ -75,6 +75,13 @@
               "description": "File name of the social card thumbnail for this resource",
               "type": "string"
             },
+            "tags": {
+              "description": "11ty tag data",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
             "topics": {
               "description": "Topics related to this resource",
               "type": "array",
