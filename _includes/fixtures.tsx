@@ -25,7 +25,7 @@ import {
   PlaylistFrontmatter,
 } from "./resources/playlist/PlaylistModels";
 import { PaginationProps } from "./pagination/Pagination.11ty";
-import {Article, ArticleFrontmatter} from "./resources/article/ArticleModels";
+import { Article, ArticleFrontmatter } from "./resources/article/ArticleModels";
 
 /**
  * Reusable test data``
@@ -55,6 +55,7 @@ const tipFrontmatters: TipFrontmatter[] = [
     date: laterDate,
     resourceType: "tip",
     author: "aa",
+    tags: ["tag1", "tag2"],
     topics: ["sto", "ato", "ste", "ate"],
     thumbnail: "aa.png",
   },
@@ -130,7 +131,7 @@ const articleDatas: {
     content,
     data: { ...articleItems[0].data },
     page: articleItems[0].page,
-  }
+  },
 ];
 
 const authorsFrontmatters: AuthorFrontmatter[] = [
@@ -564,7 +565,7 @@ const all: BaseItem[] = [
   ...authorItems,
   ...topicItems,
   ...playlistItems,
-  ...articleItems
+  ...articleItems,
 ];
 
 const authors = await Promise.all(
@@ -598,13 +599,13 @@ const tips = await Promise.all(
 );
 
 const articles = await Promise.all(
-    articleDatas.map(
-        async (ref) =>
-            await new Article({
-              data: ref.data,
-              page: ref.page,
-            }).init()
-    )
+  articleDatas.map(
+    async (ref) =>
+      await new Article({
+        data: ref.data,
+        page: ref.page,
+      }).init()
+  )
 );
 
 const tutorials = await Promise.all(
@@ -682,13 +683,13 @@ export const baseRenderData = {
   content: "",
 };
 
-const paginationItems = [...tipItems, ...articleItems] as const
+const paginationItems = [...tipItems, ...articleItems] as const;
 
 const paginationProps: PaginationProps = {
   pagination: {
     items: [...paginationItems],
     pageNumber: 0,
-    hrefs: paginationItems.map((ti) =>  ti.page.url),
+    hrefs: paginationItems.map((ti) => ti.page.url),
     href: {
       next: "tip5",
       previous: "tip3",
