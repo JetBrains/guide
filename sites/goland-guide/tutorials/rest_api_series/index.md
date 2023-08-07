@@ -10,6 +10,7 @@ thumbnail: ./thumbnail.png
 tutorialItems:
 - ./stdlib/
 - ./gorilla-mux/
+- ./gin/
 
 ---
 
