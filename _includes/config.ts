@@ -3,7 +3,7 @@ import {
   getAllCollections,
   RegisterIncludesProps,
 } from "../src/registration";
-import { Resource } from "../src/ResourceModels";
+import { Resource, ResourceFrontmatter } from "../src/ResourceModels";
 import { ReferenceFrontmatter } from "../src/ReferenceModels";
 import { Author, AuthorFrontmatter } from "./references/author/AuthorModels";
 import { Topic, TopicFrontmatter } from "./references/topic/TopicModels";
@@ -84,6 +84,7 @@ export async function registerIncludes(
         Playlist: PlaylistFrontmatter,
         Author: AuthorFrontmatter,
         Topic: TopicFrontmatter,
+        Resource: ResourceFrontmatter
       };
       const schemasOutputPath = path.join(
         "docs",
