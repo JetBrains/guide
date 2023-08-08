@@ -7,6 +7,26 @@ job("Build Guide") {
     buildAndDeployStaging()
 }
 
+job("Build Guide (Docker)") {
+    startOn {
+        gitPush {
+            enabled = false
+        }
+    }
+
+    host(displayName = "Build application container") {
+        dockerBuildPush {
+            push = false
+            context = "."
+            file = "./Dockerfile"
+            labels["vendor"] = "JetBrains"
+            tags {
+                +"guide-nginx:latest"
+            }
+        }
+    }
+}
+
 job("Run tests") {
     startOn {
         gitPush {
