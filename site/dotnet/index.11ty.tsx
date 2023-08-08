@@ -37,8 +37,10 @@ export class DotNetHomepage {
         >
           <div class="hero-body">
             <div class="container">
-              <h1 class="title">{data.title}</h1>
-              <p class="subtitle">{data.subtitle}</p>
+              <h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
+                {data.title}
+              </h1>
+              <p class="subtitle has-text-grey mb-5">{data.subtitle}</p>
             </div>
           </div>
         </section>
