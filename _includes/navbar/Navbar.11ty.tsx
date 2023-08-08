@@ -1,7 +1,11 @@
 import h, { JSX } from "vhtml";
 import NavbarSearch from "./NavbarSearch.11ty";
+import { Channel } from "../layouts/BaseLayout.11ty";
 
-const Navbar = (): JSX.Element => {
+export type NavbarProps = {
+  channel?: Channel;
+};
+const Navbar = ({ channel }: NavbarProps): JSX.Element => {
   return (
     <nav class="navbar is-dark">
       <div class="container">
@@ -20,6 +24,17 @@ const Navbar = (): JSX.Element => {
           >
             Guide
           </a>
+          {channel && (
+            <a
+              class="navbar-item has-text-weight-semibold is-size-5 is-active"
+              style={channel.style}
+              href={channel.url}
+            >
+              <i class="fa fa-television pr-1"></i>
+              {channel.name}
+            </a>
+          )}
+
           <a class="navbar-burger" role="button" aria-label="menu">
             <span />
             <span />

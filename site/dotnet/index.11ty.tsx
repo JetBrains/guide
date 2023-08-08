@@ -4,12 +4,12 @@ import { LayoutContext, LayoutProps } from "../../src/models";
 import { BaseFrontmatter } from "../../src/ResourceModels";
 import SectionListing from "../../_includes/sectionlisting/SectionListing.11ty";
 
-export type DotNetHomepageData = LayoutProps &
+type DotNetHomepageData = LayoutProps &
   BaseFrontmatter & {
     subtitle?: string;
   };
 
-export class DotNetHomepage {
+class DotNetHomepage {
   data() {
     return {
       title: ".NET Tools Guide",
@@ -44,19 +44,27 @@ export class DotNetHomepage {
             </div>
           </div>
         </section>
-        <SectionListing
-          title={`Recent Tips`}
-          resources={tips}
-          moreLink={`/dotnet/tips/`}
-        />
-        <section class="container">
-          <hr />
-        </section>
-        <SectionListing
-          title={`Recent Tutorials`}
-          resources={tutorials}
-          moreLink={`/dotnet/tutorials/`}
-        />
+        {tips && (
+          <SectionListing
+            title={`Recent Tips`}
+            resources={tips}
+            moreLink={`/dotnet/tips/`}
+          />
+        )}
+        {tutorials.length !== 0 ? (
+          <>
+            <section class="container">
+              <hr />
+            </section>
+            <SectionListing
+              title={`Recent Tutorials`}
+              resources={tutorials}
+              moreLink={`/dotnet/tutorials/`}
+            />
+          </>
+        ) : (
+          ""
+        )}
       </BaseLayout>
     );
   }

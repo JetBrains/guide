@@ -10,12 +10,19 @@ import {
   GoogleTagManagerBodyNoScript,
 } from "../googleTagManager.11ty";
 
+export type Channel = {
+  name: string;
+  url: string;
+  style?: string;
+};
+
 export type BaseLayoutProps = {
   children: string[];
   title: string;
   subtitle?: string;
   video?: string | { url: string; start: number; end: number };
   resourceType?: string;
+  channel?: Channel;
 } & LayoutProps;
 
 export function BaseLayout(
@@ -23,7 +30,15 @@ export function BaseLayout(
   data: BaseLayoutProps
 ): JSX.Element {
   // @ts-ignore
-  const { children, title, subtitle, video, resourceType, collections } = data;
+  const {
+    children,
+    title,
+    subtitle,
+    video,
+    resourceType,
+    collections,
+    channel,
+  } = data;
 
   // Happy DOM throws a DOMException for external script/css even though
   // we do the settings to suppress it. Vite catches the exception but
@@ -90,7 +105,7 @@ export function BaseLayout(
         </head>
         <body>
           <GoogleTagManagerBodyNoScript googleTagManagerId="GTM-5P98" />
-          <Navbar />
+          <Navbar channel={channel} />
           {children}
           <Footer copyright={copyright}></Footer>
           {cardThumbnail && (
