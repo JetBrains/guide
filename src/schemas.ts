@@ -12,12 +12,12 @@ const featureFlags = {
 
   // rewrite reference properties to an enum - this enables code completion for topics, authors, ...
   // false is recommended when one schema is shared across all sites
-  rewriteReferenceProperties: false,
+  rewriteReferenceProperties: true,
 };
 
 function getPreamble(resourceType: string) {
   return {
-    $schema: "http://json-schema.org/draft-04/schema#",
+    $schema: "http://json-schema.org/draft-07/schema#",
     $id: `https://www.jetbrains.com/guide/${resourceType.toLowerCase()}.schema.json`,
     title: `JetBrains Guide ${resourceType}`,
   };
