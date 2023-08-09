@@ -1,5 +1,4 @@
 ---
-hasBody: false
 date: 2021-05-31
 title: Postfix Completion
 topics:
@@ -27,21 +26,19 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Create custom postfix templates
     href: >-
       https://www.jetbrains.com/help/idea/auto-completing-code.html#reference.custom.postfix.templates
-leadin: >
-  Postfix completion is designed so that you append some abbreviation to the end
-  of your code, and IntelliJ IDEA will know to generate more valid code. Type
-  your code, followed by a postfix abbreviation like _.sout_ or _.var_, and see
-  IntelliJ IDEA generate code at the start of your expression.
-
-
-  To see a full list of postfix abbreviations for your code, type "." (dot) and
-  press the "up" arrow on the dropdown list of suggestions. The postfix
-  completions can be found at the bottom of the code suggestions list.
-
-
-  Find all available abbreviations **[Preferences/Settings | Editor | General |
-  Postfix
-  Completion](https://www.jetbrains.com/help/idea/settings-postfix-completion.html)**.
 ---
+
+Postfix completion is designed so that you append some abbreviation to the end
+of your code, and IntelliJ IDEA will know to generate more valid code. Type
+your code, followed by a postfix abbreviation like _.sout_ or _.var_, and see
+IntelliJ IDEA generate code at the start of your expression.
+
+To see a full list of postfix abbreviations for your code, type "." (dot) and
+press the "up" arrow on the dropdown list of suggestions. The postfix
+completions can be found at the bottom of the code suggestions list.
+
+Find all available abbreviations **[Preferences/Settings | Editor | General |
+Postfix
+Completion](https://www.jetbrains.com/help/idea/settings-postfix-completion.html)**.
 
 ---

@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2021-09-27
 title: Distraction Free Mode in IntelliJ IDEA
 topics:
@@ -17,16 +16,16 @@ shortVideo:
 seealso:
   - title: (documentation) IntelliJ IDEA Help - IDE viewing modes
     href: 'https://www.jetbrains.com/help/idea/ide-viewing-modes.html'
-leadin: >
-  Use **^\`** (macOS), or **Ctrl+\`** (Windows/Linux), to bring up the **Quick
-  Switch Scheme** dialog. 
-
-
-  You can now press **4** or use the arrow keys to scroll to **4** and select
-  _View Mode_ to see list of view modes available. Now press **2** or click on
-  **Enter Distraction Free Mode** to display just your editor window and focus
-  on coding.
 ---
+
+Use **^\`** (macOS), or **Ctrl+\`** (Windows/Linux), to bring up the **Quick
+Switch Scheme** dialog.
+
+
+You can now press **4** or use the arrow keys to scroll to **4** and select
+_View Mode_ to see list of view modes available. Now press **2** or click on
+**Enter Distraction Free Mode** to display just your editor window and focus
+on coding.
 
 ## Alternative Ways of Entering Distraction Free Mode 
 
