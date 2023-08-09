@@ -2,100 +2,118 @@ import h, { JSX } from "vhtml";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import { LayoutContext, LayoutProps } from "../../src/models";
 import { BaseFrontmatter } from "../../src/ResourceModels";
+import SectionListing from "../../_includes/pageelements/SectionListing.11ty";
+import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
 
 export type IntelliJHomepageData = LayoutProps &
-  BaseFrontmatter & { subtitle?: string };
+  BaseFrontmatter & {
+    subtitle?: string;
+  };
 
 export class IntelliJHomepage {
   data() {
     return {
       title: "IntelliJ IDEA Guide",
-      subtitle:
-        "Learning resources for IntelliJ IDEA and related technologies.",
       layout: "",
       eleventyExcludeFromCollections: true,
     };
   }
 
   render(this: LayoutContext, data: IntelliJHomepageData): JSX.Element {
+    const tips = this.getResources({
+      resourceType: "tip",
+      tag: "intellij_tip",
+      limit: 3,
+    });
+
+    const tutorials = this.getResources({
+      resourceType: "tutorial",
+      tag: "intellij_tutorial",
+      limit: 3,
+    });
+
+    const playlists = this.getResources({
+      resourceType: "playlist",
+      tag: "intellij_playlist",
+      limit: 3,
+    });
+
     return (
       <BaseLayout {...data}>
-        <div class="content">
-          <section
-            class="hero is-medium"
-            style="background: url('/assets/intellij-idea-beam.svg') center center; background-repeat: no-repeat; background-size: cover;"
-          >
-            <div class="hero-body">
-              <div class="container">
-                <h1 class="title" style="color: white;">
-                  {data.title}
-                </h1>
-                <div class="columns">
-                  <div class="column is-two-thirds">
-                    <p class="is-size-4" style="color: white;">
-                      Find out how you can be more productive with a series of
-                      tips and tricks.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="section has-background-light">
-            <div class="container">
-              <h1 class="title">Learn Something New Quickly</h1>
-              <div>
-                <div class="is-size-5">
-                  To start learning, jump to the section you find most
-                  interesting from two broad categories:
-                </div>
+        <HeroSection
+          title="IntelliJ IDEA Guide"
+          subtitle="Learning resources for IntelliJ IDEA and related technologies."
+          image="/assets/intellij-idea-beam.svg"
+        />
+        {tips && (
+          <SectionListing
+            title={`Recent Tips`}
+            resources={tips}
+            moreLink={`/intellij/tips/`}
+          />
+        )}
+        <section className="section has-background-grey-lighter">
+          <div className="columns">
+            <div className="column is-three-quarters-desktop">
+              <div className="bd-content content">
+                <div className="content">
+                  <p>
+                    JetBrains tools like IntelliJ IDEA are powerful developer
+                    productivity tools. What is the best way to learn how to
+                    harness that power?
+                  </p>
 
-                <div class="container" style="margin-top: 2rem">
-                  <div class="columns">
-                    <div class="column">
-                      <a href="/tips/">
-                        <div class="card">
-                          <div class="card-content">
-                            <div class="media">
-                              <div class="media-content">
-                                <h1 class="is-size-4">Tips</h1>
-                              </div>
-                            </div>
-                            <div class="content">
-                              <p class="is-size-5">
-                                Go through handy tips and tricks grouped by
-                                topics and technologies.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="column">
-                      <a href="/tutorials/">
-                        <div class="card">
-                          <div class="card-content">
-                            <div class="media">
-                              <div class="media-content">
-                                <h1 class="is-size-4">Tutorials</h1>
-                              </div>
-                            </div>
-                            <div class="content">
-                              <p class="is-size-5">
-                                Explore our step-by-step tutorials grouped by
-                                topics and technologies.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
+                  <p>
+                    You can find useful information on our
+                    <a href="https://twitter.com/intellijidea"> Twitter page</a>
+                    , or our
+                    <a href="https://blog.jetbrains.com/idea/">product blog</a>.
+                    Plus, the
+                    <a href="https://www.jetbrains.com/idea/">documentation</a>
+                    is always there to help.
+                  </p>
+
+                  <p>
+                    We have also created the IntelliJ IDEA Guide, a collection
+                    of bite-sized visual resources, organized to help spark your
+                    learning. We hope it helps you get into the flow and excel
+                    at what you do.
+                  </p>
+                  <h2>Sharing Feedback and Contributing</h2>
+                  <p>
+                    The IntelliJ IDEA Guide is also an open project, with
+                    <a href="https://github.com/jetbrains/guide">
+                      a repository in GitHub
+                    </a>
+                    that hosts all the content. We write all the content in
+                    Markdown and render a static site. If you'd like to
+                    contribute to it, please refer to the
+                    <a href="https://github.com/jetbrains/guide/blob/master/README.md">
+                      README
+                    </a>
+                    for more information.
+                  </p>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+        {tutorials && (
+          <SectionListing
+            title={`Recent Tutorials`}
+            resources={tutorials}
+            moreLink={`/intellij/playlists/`}
+            separator={true}
+          />
+        )}
+        {playlists && (
+          <SectionListing
+            title={`Recent Playlists`}
+            resources={playlists}
+            moreLink={`/intellij/playlists/`}
+            separator={true}
+          />
+        )}
       </BaseLayout>
     );
   }

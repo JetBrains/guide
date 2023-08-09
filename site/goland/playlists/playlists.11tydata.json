@@ -1,4 +1,5 @@
 {
   "resourceType": "playlist",
-  "layout": "resources/playlist/PlaylistLayout.11ty.tsx"
+  "layout": "resources/playlist/PlaylistLayout.11ty.tsx",
+  "tags": ["playlist", "goland_playlist"]
 }

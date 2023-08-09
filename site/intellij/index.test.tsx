@@ -1,8 +1,7 @@
 import { expect, test } from "vitest";
-import { IntelliJHomepage, IntelliJHomepageData } from "./index.11ty";
 import { screen } from "@testing-library/dom";
 import fixtures, { baseRenderData } from "../../_includes/fixtures";
-
+import { IntelliJHomepageData, IntelliJHomepage } from "./index.11ty";
 test("should render DotNetHomepage", () => {
   const tip0 = fixtures.tipItems[0];
   const pageLayoutData: IntelliJHomepageData = {

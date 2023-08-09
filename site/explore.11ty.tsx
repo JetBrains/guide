@@ -1,3 +1,4 @@
+// noinspection ES6UnusedImports
 import h, { JSX } from "vhtml";
 import { LayoutContext, LayoutProps } from "../src/models";
 import { PageFrontmatter } from "../_includes/resources/page/PageModels";
@@ -83,14 +84,14 @@ export class ExplorePage {
                           </figure>
                         </a>
                         <a
-                          href="/go/"
+                          href="/goland/"
                           class="is-size-5 has-text-weight-bold title"
                         >
                           GoLand
                         </a>
                       </div>
                       <div class="column mb-1 is-6 py-5">
-                        <a href="/idea/">
+                        <a href="/intellij/">
                           <figure class="image is-48x48 mb-1">
                             <Logo
                               product="intellij-idea"

@@ -23,5 +23,5 @@ test("should render WebStormHomepage", () => {
   const homepage = new WebStormHomepage();
   const render = homepage.render;
   document.body.innerHTML = render.call(context, pageLayoutData);
-  expect(screen.getByText("Learn Something New Quickly")).to.exist;
+  expect(screen.getByText("WebStorm Guide")).to.exist;
 });
