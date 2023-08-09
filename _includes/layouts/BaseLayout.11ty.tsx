@@ -6,14 +6,19 @@ import { LayoutContext, LayoutProps } from "../../src/models";
 import { MetaOpenGraphImage } from "../../src/plugins/metaOpenGraphImagePlugin";
 import { Resource } from "../../src/ResourceModels";
 import {
-  GoogleTagManagerHeadScript,
   GoogleTagManagerBodyNoScript,
+  GoogleTagManagerHeadScript,
 } from "../googleTagManager.11ty";
+
+export type SubnavItem = {
+  text: string;
+  url: string;
+};
 
 export type Channel = {
   name: string;
   url: string;
-  style?: string;
+  subnav?: SubnavItem[];
 };
 
 export type BaseLayoutProps = {
@@ -42,7 +47,7 @@ export function BaseLayout(
 
   // Happy DOM throws a DOMException for external script/css even though
   // we do the settings to suppress it. Vite catches the exception but
-  // logs it. We can't handle the exception and it pollutes the test output.
+  // logs it. We can't handle the exception, and it pollutes the test output.
   // Let's detect if we're running in a test, then later, wrap the
   // <link> and <script> to suppress.
   let isNotTest = true;
@@ -64,6 +69,31 @@ export function BaseLayout(
   const year = new Date().getFullYear();
   const copyright = `Copyright © 2000–${year} <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.`;
 
+  const subnav = !channel?.subnav ? (
+    ""
+  ) : (
+    <nav class="navbar navbar-secondary">
+      <div class="container">
+        <div class="navbar-brand">
+          <div class="navbar-item is-size-5 has-text-weight-semibold pl-0">
+            <a href="#" class="is-hidden-touch">
+              {channel.name}
+            </a>
+            <a href="#" className="is-hidden-desktop ml-5">
+              {channel.name}
+            </a>
+          </div>
+        </div>
+        <div className="navbar-end is-hidden-touch">
+          {channel.subnav.map((channel) => (
+            <a className="navbar-item" href={channel.url}>
+              {channel.text}
+            </a>
+          ))}
+        </div>
+      </div>
+    </nav>
+  );
   return (
     "<!doctype html>" +
     (
@@ -105,7 +135,8 @@ export function BaseLayout(
         </head>
         <body>
           <GoogleTagManagerBodyNoScript googleTagManagerId="GTM-5P98" />
-          <Navbar channel={channel} />
+          <Navbar />
+          {subnav}
           {children}
           <Footer copyright={copyright}></Footer>
           {cardThumbnail && (

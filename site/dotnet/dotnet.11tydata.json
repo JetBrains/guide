@@ -2,5 +2,10 @@
   "channel": {
     "name": ".NET",
     "url": "/dotnet/",
-    "style": "background-color: #512bd4 !important; color: white !important;"
-  }}
+    "subnav": [
+      { "text":  "dotUltimate", "url":  "https://www.jetbrains.com/dotnet/" },
+      { "text":  ".NET Blog", "url":  "https://blog.jetbrains.com/dotnet/" },
+      { "text":  "Docs", "url":  "https://www.jetbrains.com/help/" }
+    ]
+  }
+}
