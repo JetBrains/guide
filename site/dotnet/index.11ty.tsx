@@ -4,6 +4,8 @@ import { LayoutContext, LayoutProps } from "../../src/models";
 import { BaseFrontmatter } from "../../src/ResourceModels";
 import SectionListing from "../../_includes/pageelements/SectionListing.11ty";
 import BlockquoteSection from "../../_includes/pageelements/BlockquoteSection.11ty";
+import CallToActionSection from "../../_includes/pageelements/CallToActionSection.11ty";
+import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
 
 export type DotNetHomepageData = LayoutProps &
   BaseFrontmatter & {
@@ -13,8 +15,6 @@ export type DotNetHomepageData = LayoutProps &
 export class DotNetHomepage {
   data() {
     return {
-      title: ".NET Tools Guide",
-      subtitle: "Learning resources for ReSharper, Rider and more.",
       layout: "",
       eleventyExcludeFromCollections: true,
     };
@@ -34,32 +34,16 @@ export class DotNetHomepage {
 
     return (
       <BaseLayout {...data}>
-        <section
-          class="hero is-medium"
-          style="background: url('/assets/dotnet_splash.png') center center; background-repeat: no-repeat; background-size: cover"
-        >
-          <div class="hero-body">
-            <div class="container">
-              <h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
-                {data.title}
-              </h1>
-              <p class="subtitle has-text-grey mb-5">{data.subtitle}</p>
-            </div>
-          </div>
-        </section>
+        <HeroSection
+          title=".NET Tools Guide"
+          subtitle="Learning resources for ReSharper, Rider and more."
+          image="/assets/dotnet_splash.png"
+        />
         {tips && (
           <SectionListing
             title={`Recent Tips`}
             resources={tips}
             moreLink={`/dotnet/tips/`}
-          />
-        )}
-        {tips && (
-          <SectionListing
-            title={`Recent Tips`}
-            resources={tips}
-            moreLink={`/dotnet/tips/`}
-            separator={true}
           />
         )}
         <BlockquoteSection
@@ -87,6 +71,12 @@ export class DotNetHomepage {
             moreLink={`/dotnet/tutorials/`}
           />
         )}
+        <CallToActionSection
+          title="Use your IDE on your favorite cloud platform."
+          message="Experience a new compact application that connects you to lorem ipsum garbage stuff hey!"
+          url="#"
+          imageUrl="https://static.shuffle.dev/uploads/files/30/30bcf69416b378dce9b87d07a3491e56c3e9fdc6/Gateway-1680x1100.webp"
+        />
       </BaseLayout>
     );
   }

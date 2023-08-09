@@ -9,8 +9,6 @@ const data: ArticleFrontmatter = {
   date: fixtures.date,
   resourceType: "article",
   author: "sa",
-  products: ["sp", "ap"],
-  technologies: ["st", "at"],
   topics: ["st", "at"],
   thumbnail: "thumbnail.png",
 };
