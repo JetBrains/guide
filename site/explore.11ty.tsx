@@ -19,9 +19,7 @@ export class ExplorePage {
   }
 
   render(this: LayoutContext, data: ExplorePageProps): JSX.Element {
-    const latestContent = this.getResources({ resourceType: "tip" }).concat(
-      this.getResources({ resourceType: "tutorial", limit: 9 })
-    );
+    const latestContent = this.getResources({ limit: 12 });
 
     return (
       <BaseLayout {...data}>

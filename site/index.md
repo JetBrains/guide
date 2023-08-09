@@ -4,7 +4,8 @@ title: Homepage
 subtitle: "Be more productive and write high-quality code faster with a series of tips and tricks"
 layout: "resources/page/PageLayout.11ty.tsx"
 author: pwe
-date: 2023-07-01
+date: 2018-07-01
+eleventyExcludeFromCollections: true
 ---
 
 # {{ title }} - Hello World
