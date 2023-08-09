@@ -20,7 +20,7 @@ export class GoLandHomepage {
   }
 
   render(this: LayoutContext, data: GoLandHomepageData): JSX.Element {
-    const tips = this.getResources().slice(0, 15);
+    const tips = this.getResources({ limit: 15 });
     const listing = (
       <>
         {tips.map((tip) => {

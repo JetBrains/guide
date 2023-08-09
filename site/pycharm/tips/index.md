@@ -7,6 +7,7 @@ subtitle: >-
 layout: resources/tip/TipsLayout.11ty.tsx
 pagination:
   data: "collections.pycharm_tip"
-  size: 12  
+  size: 12
+  reverse: true
 ---
 

@@ -3,7 +3,7 @@ import { Resource } from "../src/ResourceModels";
 import fixtures from "./fixtures";
 import { getResources, QueryFilter } from "./queries";
 
-describe("getResource filtering", () => {
+describe("getResources filtering", () => {
   let resources: Resource[];
   beforeEach(() => {
     resources = Array.from(fixtures.resolvedCollections.allResources.values());
@@ -13,6 +13,12 @@ describe("getResource filtering", () => {
     const filter: QueryFilter = {};
     const result = getResources(resources, filter);
     expect(result).to.have.length(resources.length);
+  });
+
+  it("sorts reverse on date", () => {
+    const filter: QueryFilter = {};
+    const result = getResources(resources, filter);
+    expect(result && result[0].url).to.equal(resources[0].url);
   });
 
   it("filters on resourceType", () => {
@@ -26,8 +32,27 @@ describe("getResource filtering", () => {
     const result = getResources(resources, filter);
     expect(result).to.have.length(1);
   });
-  it("filters on both", () => {
+
+  it("returns null when nothing matches", () => {
+    const filter: QueryFilter = { tag: "tagXXX" };
+    const result = getResources(resources, filter);
+    expect(result).to.be.null;
+  });
+
+  it("limits results", () => {
+    const filter: QueryFilter = { limit: 2 };
+    const result = getResources(resources, filter);
+    expect(result).to.have.length(2);
+  });
+
+  it("filters on resourceType and tag", () => {
     const filter: QueryFilter = { resourceType: "tip", tag: "tag1" };
+    const result = getResources(resources, filter);
+    expect(result).to.have.length(1);
+  });
+
+  it("filters on resourceType and tag and limit", () => {
+    const filter: QueryFilter = { resourceType: "tip", tag: "tag1", limit: 1 };
     const result = getResources(resources, filter);
     expect(result).to.have.length(1);
   });

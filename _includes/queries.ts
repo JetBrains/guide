@@ -4,12 +4,13 @@ import { ReferenceFrontmatter } from "../src/ReferenceModels";
 export type QueryFilter = {
   resourceType?: string;
   tag?: string;
+  limit?: number;
 };
 
 export function getResources(
   allResourcesList: Resource[],
   filter: QueryFilter
-): Resource[] {
+): Resource[] | null {
   let resources = allResourcesList;
   const resourceType = filter && filter.resourceType;
   if (resourceType) {
@@ -20,6 +21,17 @@ export function getResources(
     resources = resources.filter((r) => r.tags?.includes(tag));
   }
 
+  const limit = filter && filter.limit;
+  if (limit) {
+    resources = resources.slice(0, limit);
+  }
+
+  if (resources.length == 0) {
+    return null;
+  }
+
+  // Sort in reverse date order
+  resources.sort((a, b) => b.date.getTime() - a.date.getTime());
   return resources;
 }
 
@@ -33,11 +45,15 @@ export function getResource(
 export function getReferences(
   allReferencesList: ReferenceFrontmatter[],
   { resourceType }: QueryFilter
-): ReferenceFrontmatter[] {
+): ReferenceFrontmatter[] | null {
   let references = allReferencesList;
 
   if (resourceType) {
     references = references.filter((r) => r.resourceType == resourceType);
+  }
+
+  if (references.length == 0) {
+    return null;
   }
 
   return references;

@@ -32,8 +32,8 @@ import {
   QueryFilter,
 } from "./queries";
 import { dumpObsoletes } from "../src/obsoletes";
-import {Page} from "./resources/page/PageModels";
-import {Article} from "./resources/article/ArticleModels";
+import { Page } from "./resources/page/PageModels";
+import { Article } from "./resources/article/ArticleModels";
 
 export const resourceCollections = {
   page: Page,
@@ -41,7 +41,7 @@ export const resourceCollections = {
   tip: Tip,
   tutorial: Tutorial,
   tutorialstep: TutorialStep,
-  article: Article
+  article: Article,
 };
 export const referenceCollections = {
   author: Author,
@@ -107,7 +107,8 @@ export async function registerIncludes(
   // Query helpers
   eleventyConfig.addJavaScriptFunction(
     "getResources",
-    (filter: QueryFilter): Resource[] => getResources(allResourcesList, filter)
+    (filter: QueryFilter): Resource[] | null =>
+      getResources(allResourcesList, filter)
   );
   eleventyConfig.addJavaScriptFunction(
     "getResource",
@@ -115,7 +116,7 @@ export async function registerIncludes(
   );
   eleventyConfig.addJavaScriptFunction(
     "getReferences",
-    (filter: QueryFilter): ReferenceFrontmatter[] =>
+    (filter: QueryFilter): ReferenceFrontmatter[] | null =>
       getReferences(allReferencesList, filter)
   );
 
