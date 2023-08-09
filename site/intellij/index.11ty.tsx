@@ -42,7 +42,9 @@ export class IntelliJHomepage {
       <BaseLayout {...data}>
         <HeroSection
           title="IntelliJ IDEA Guide"
+          titleColor="has-text-white"
           subtitle="Learning resources for IntelliJ IDEA and related technologies."
+          subtitleColor="has-text-light"
           image="/assets/intellij-idea-beam.svg"
         />
         {tips && (
