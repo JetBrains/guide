@@ -3,6 +3,7 @@ import { ReferenceLayout } from "../../layouts/ReferenceLayout.11y";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { BaseFrontmatter } from "../../../src/ResourceModels";
+import { Playlist } from "./PlaylistModels";
 
 export type PlaylistsLayoutProps = LayoutProps & BaseFrontmatter;
 
@@ -10,9 +11,10 @@ export function PlaylistsLayout(
   this: LayoutContext,
   data: PlaylistsLayoutProps
 ): JSX.Element {
-  const { content } = data;
-  const playlists = this.getResources({
-    resourceType: "playlist",
+  const { content, pagination } = data;
+  const paginationItems = pagination ? pagination.items : [];
+  const playlists: Playlist[] = paginationItems.map((p: any) => {
+    return this.getResource(p.url) as Playlist;
   });
   const figure = undefined;
   const listing = (

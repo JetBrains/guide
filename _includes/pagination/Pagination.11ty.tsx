@@ -27,8 +27,9 @@ const Pagination = ({ pagination }: PaginationProps): JSX.Element => {
     </li>
   );
   const current = pagination.href;
+  const hasPages = pagination.hrefs.length > 1;
 
-  return (
+  return hasPages ? (
     <nav className="pagination" role="navigation" aria-label="pagination">
       <a
         className={`pagination-previous ${
@@ -106,6 +107,8 @@ const Pagination = ({ pagination }: PaginationProps): JSX.Element => {
         )}
       </ul>
     </nav>
+  ) : (
+    ""
   );
 };
 

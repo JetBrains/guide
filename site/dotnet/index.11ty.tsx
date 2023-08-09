@@ -26,9 +26,10 @@ export class DotNetHomepage {
       tag: "dotnet_tip",
       limit: 3,
     });
-    const tutorials = this.getResources({
-      resourceType: "tutorial",
-      tag: "dotnet_tip",
+
+    const playlists = this.getResources({
+      resourceType: "playlist",
+      tag: "dotnet_playlist",
       limit: 3,
     });
 
@@ -64,13 +65,14 @@ export class DotNetHomepage {
           </p>
         </BlockquoteSection>
 
-        {tutorials && (
+        {playlists && (
           <SectionListing
-            title={`Recent Tutorials`}
-            resources={tutorials}
-            moreLink={`/dotnet/tutorials/`}
+            title={`Recent Playlists`}
+            resources={playlists}
+            moreLink={`/dotnet/playlists/`}
           />
         )}
+
         <CallToActionSection
           title="Use your IDE on your favorite cloud platform."
           message="Experience a new compact application that connects you to lorem ipsum garbage stuff hey!"
