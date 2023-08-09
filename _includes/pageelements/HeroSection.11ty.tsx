@@ -13,7 +13,7 @@ function HeroSection({ title, subtitle, image }: HeroSectionProps) {
       <div class="hero-body">
         <div class="container">
           <h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold">{title}</h1>
-          <p class="subtitle has-text-grey mb-5">{subtitle}</p>
+          <p class="subtitle mb-5">{subtitle}</p>
         </div>
       </div>
     </section>
