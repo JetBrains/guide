@@ -76,17 +76,17 @@ export function BaseLayout(
       <div class="container">
         <div class="navbar-brand">
           <div class="navbar-item is-size-5 has-text-weight-semibold pl-0">
-            <a href="#" class="is-hidden-touch">
+            <a href={channel.url} class="is-hidden-touch">
               {channel.name}
             </a>
-            <a href="#" className="is-hidden-desktop ml-5">
+            <a href={channel.url} class="is-hidden-desktop ml-5">
               {channel.name}
             </a>
           </div>
         </div>
-        <div className="navbar-end is-hidden-touch">
+        <div class="navbar-end is-hidden-touch">
           {channel.subnav.map((channel) => (
-            <a className="navbar-item" href={channel.url}>
+            <a class="navbar-item" href={channel.url}>
               {channel.text}
             </a>
           ))}

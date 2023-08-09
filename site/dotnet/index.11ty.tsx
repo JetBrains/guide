@@ -2,14 +2,15 @@ import h, { JSX } from "vhtml";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import { LayoutContext, LayoutProps } from "../../src/models";
 import { BaseFrontmatter } from "../../src/ResourceModels";
-import SectionListing from "../../_includes/sectionlisting/SectionListing.11ty";
+import SectionListing from "../../_includes/pageelements/SectionListing.11ty";
+import BlockquoteSection from "../../_includes/pageelements/BlockquoteSection.11ty";
 
-type DotNetHomepageData = LayoutProps &
+export type DotNetHomepageData = LayoutProps &
   BaseFrontmatter & {
     subtitle?: string;
   };
 
-class DotNetHomepage {
+export class DotNetHomepage {
   data() {
     return {
       title: ".NET Tools Guide",
@@ -23,11 +24,13 @@ class DotNetHomepage {
     const tips = this.getResources({
       resourceType: "tip",
       tag: "dotnet_tip",
-    }).slice(0, 3);
+      limit: 3,
+    });
     const tutorials = this.getResources({
       resourceType: "tutorial",
       tag: "dotnet_tip",
-    }).slice(0, 3);
+      limit: 3,
+    });
 
     return (
       <BaseLayout {...data}>
@@ -51,19 +54,38 @@ class DotNetHomepage {
             moreLink={`/dotnet/tips/`}
           />
         )}
-        {tutorials.length !== 0 ? (
-          <>
-            <section class="container">
-              <hr />
-            </section>
-            <SectionListing
-              title={`Recent Tutorials`}
-              resources={tutorials}
-              moreLink={`/dotnet/tutorials/`}
-            />
-          </>
-        ) : (
-          ""
+        {tips && (
+          <SectionListing
+            title={`Recent Tips`}
+            resources={tips}
+            moreLink={`/dotnet/tips/`}
+            separator={true}
+          />
+        )}
+        <BlockquoteSection
+          name="Michael Kennedy"
+          title="Host"
+          imageSrc="https://www.jetbrains.com/pycharm/img/user-imgs/img-michael-kennedy.png"
+        >
+          <p className="subtitle has-text-grey">
+            I'm in the unique position of asking over 100 industry experts the
+            following question on my Talk Python To Me podcast. "When you write
+            some Python code, what editor do you open up?" While the answers
+            vary, it is frequently PyCharm. The reasons the guests give are
+            usually the same reasons I've been a PyCharm advocate for years.
+          </p>
+          <p className="subtitle has-text-grey">
+            That's just a few reasons I open PyCharm daily to build my web
+            properties and manage the software that runs my business.
+          </p>
+        </BlockquoteSection>
+
+        {tutorials && (
+          <SectionListing
+            title={`Recent Tutorials`}
+            resources={tutorials}
+            moreLink={`/dotnet/tutorials/`}
+          />
         )}
       </BaseLayout>
     );

@@ -6,7 +6,7 @@ import fixtures from "../fixtures";
 test("SectionListing exists", () => {
   const resources = Array.from(
     fixtures.resolvedCollections.allResources.values()
-  ).slice(0, 2);
+  );
 
   const props: SectionListingProps = {
     title: "Some Title",

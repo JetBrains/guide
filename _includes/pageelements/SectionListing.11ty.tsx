@@ -7,6 +7,7 @@ export type SectionListingProps = {
   subtitle?: string;
   moreLink?: string;
   resources: Resource[];
+  separator?: boolean;
 };
 
 function SectionListing({
@@ -14,6 +15,7 @@ function SectionListing({
   subtitle,
   moreLink,
   resources,
+  separator,
 }: SectionListingProps) {
   /* A reusable component for section-style paginated ResourceCard listings */
   const listing = (
@@ -25,20 +27,28 @@ function SectionListing({
   );
 
   return (
-    <section class="section">
-      <div class="columns is-vcentered is-mobile">
-        <div class="column is-8">
-          <h2 class="mt-2 mb-4 is-size-1 has-text-weight-bold">{title}</h2>
-          {subtitle && <p class="subtitle has-text-grey mb-5">{subtitle}</p>}
+    <>
+      {separator && (
+        <section className="container">
+          <hr />
+        </section>
+      )}
+
+      <section className="section">
+        <div class="columns is-vcentered is-mobile">
+          <div class="column is-8">
+            <h2 class="mt-2 mb-4 is-size-1 has-text-weight-bold">{title}</h2>
+            {subtitle && <p class="subtitle has-text-grey mb-5">{subtitle}</p>}
+          </div>
+          <div class="column has-text-right">
+            <a class="button is-rounded is-outlined" href={moreLink}>
+              All...
+            </a>
+          </div>
         </div>
-        <div class="column has-text-right">
-          <a class="button is-rounded is-outlined" href={moreLink}>
-            All...
-          </a>
-        </div>
-      </div>
-      <div class="container">{listing}</div>
-    </section>
+        <div class="container">{listing}</div>
+      </section>
+    </>
   );
 }
 
