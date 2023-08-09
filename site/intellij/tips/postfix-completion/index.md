@@ -40,5 +40,3 @@ completions can be found at the bottom of the code suggestions list.
 Find all available abbreviations **[Preferences/Settings | Editor | General |
 Postfix
 Completion](https://www.jetbrains.com/help/idea/settings-postfix-completion.html)**.
-
----

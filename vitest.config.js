@@ -9,6 +9,7 @@ export default defineConfig({
       "./src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}",
       "./_includes/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}",
       "./site/*/index.test.tsx",
+      "./tools/**/*.{test,spec}.{js,ts,mjs,mts}",
     ],
   },
 });

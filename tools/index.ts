@@ -1,6 +1,6 @@
 #!/usr/bin/env vite-node --script
 
-import { generateLeadInReport, writeCleanResources } from "./cleaner";
+import { migrateFrontMatter, writeCleanResources } from "./cleaner";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 import chalk from "chalk";
@@ -38,8 +38,8 @@ yargs(hideBin(process.argv))
     }
   )
   .command(
-    "leadin",
-    "run leadin script",
+    "migrate-frontmatter",
+    "migrate old gatsby frontmatter",
     {
       debug: {
         alias: "d",
@@ -48,11 +48,11 @@ yargs(hideBin(process.argv))
     },
     (args) => {
       try {
-        console.log(info("Going to run leadin script"));
-        generateLeadInReport();
-        console.log(success("Leadin up script successful 🎉🎉🎉"));
+        console.log(info("Going to clean frontmatter"));
+        migrateFrontMatter();
+        console.log(success("cleaning up frontmatter successful 🎉🎉🎉"));
       } catch (e) {
-        console.log(error("error executing leadin script", e));
+        console.log(error("error executing frontmatter migration script"));
         if (args.debug) {
           console.log(info(e));
         }

@@ -65,16 +65,30 @@ export function PlaylistLayout(
   const { all } = data.collections;
 
   // Top nav
-  let topNav = <nav className="navbar navbar-secondary">
-    <div className="container">
-      <div className="navbar-brand">
-        <div className="navbar-item is-size-5 has-text-weight-semibold pl-0">
-          <a href={`${playlist.url}`} aria-label="Parent Playlist" className="is-hidden-touch">{playlist.title}</a>
-          <a href={`${playlist.url}`} aria-label="Parent Playlist" className="is-hidden-desktop ml-5">{playlist.title}</a>
+  let topNav = (
+    <nav className="navbar navbar-secondary">
+      <div className="container">
+        <div className="navbar-brand">
+          <div className="navbar-item is-size-5 has-text-weight-semibold pl-0">
+            <a
+              href={`${playlist.url}`}
+              aria-label="Parent Playlist"
+              className="is-hidden-touch"
+            >
+              {playlist.title}
+            </a>
+            <a
+              href={`${playlist.url}`}
+              aria-label="Parent Playlist"
+              className="is-hidden-desktop ml-5"
+            >
+              {playlist.title}
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>;
+    </nav>
+  );
 
   // Main content
   const author = playlist.references?.author as Author;
@@ -87,12 +101,10 @@ export function PlaylistLayout(
         title={playlist.title}
         subtitle={playlist.subtitle}
       />
-      <ArticleAuthor
-        author={author}
-        displayDate={playlist.displayDate}
-      />
-      {playlist.references?.topics &&
-        <ArticleTopics topics={playlist.references?.topics} />}
+      <ArticleAuthor author={author} displayDate={playlist.displayDate} />
+      {playlist.references?.topics && (
+        <ArticleTopics topics={playlist.references?.topics} />
+      )}
       <div
         className="content"
         style="margin-bottom: 3rem"
@@ -100,7 +112,9 @@ export function PlaylistLayout(
       ></div>
       {playlist.playlistResources.map((item: any, index: number) => {
         const thisItem = all.find((i) => i.page.url === item.url);
-        const itemContent = thisItem ? relativize(thisItem.page.url, thisItem.content) : "";
+        const itemContent = thisItem
+          ? relativize(thisItem.page.url, thisItem.content)
+          : "";
         const isVisible = index == 0 ? "" : "display:none";
         return (
           <div id={item.anchor} style={isVisible} class="playlist-item">
@@ -123,12 +137,7 @@ export function PlaylistLayout(
                 style="object-fit: contain; object-position: top"
               />
             )}
-            {item.shortVideo && (
-              <VideoPlayer
-                source={item.shortVideo.url}
-                poster={item.shortVideo?.poster}
-              ></VideoPlayer>
-            )}
+            {item.video && <VideoPlayer source={item.video}></VideoPlayer>}
             {itemContent && (
               <div
                 class="content"
@@ -150,10 +159,7 @@ export function PlaylistLayout(
         <ul className="menu-list playlist-toggles">
           {playlist.playlistResources.map((step) => (
             <li>
-              <a
-                aria-label="Playlist Item"
-                href={`#${step.anchor}`}
-              >
+              <a aria-label="Playlist Item" href={`#${step.anchor}`}>
                 {step.title}
               </a>
             </li>
@@ -175,21 +181,19 @@ export function PlaylistLayout(
    */
   // data-meta will be processed out
   return (
-  <BaseLayout subtitle={playlist.subtitle} {...data}>
-    {topNav}
-    <div class="section">
-      <div class="container">
-        <div class="columns is-multiline">
-          {sidebarSteps}
-          <div class="column is-9">
-            <main class="content">
-              {main}
-            </main>
+    <BaseLayout subtitle={playlist.subtitle} {...data}>
+      {topNav}
+      <div class="section">
+        <div class="container">
+          <div class="columns is-multiline">
+            {sidebarSteps}
+            <div class="column is-9">
+              <main class="content">{main}</main>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </BaseLayout>
+    </BaseLayout>
   );
 }
 

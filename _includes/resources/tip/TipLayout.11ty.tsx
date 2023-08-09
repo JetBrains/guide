@@ -33,12 +33,6 @@ export function TipLayout(
     ? (tip.references.topics as Topic[])
     : [];
 
-  // If there is a tip.leadin, markdown convert it
-  let leadin;
-  if (tip.leadin) {
-    leadin = this.renderMarkdown(tip.leadin);
-  }
-
   // Main content
   const main = (
     <div class="section">
@@ -64,14 +58,7 @@ export function TipLayout(
                   style="object-fit: contain; object-position: top"
                 />
               )}
-              {tip.shortVideo && (
-                <VideoPlayer
-                  source={tip.shortVideo.url}
-                  poster={tip.shortVideo.poster}
-                />
-              )}
-
-              {leadin && <div dangerouslySetInnerHTML={{ __html: leadin }} />}
+              {tip.video && <VideoPlayer source={tip.video} />}
 
               {content && (
                 <>
@@ -84,48 +71,11 @@ export function TipLayout(
                       dangerouslySetInnerHTML={{ __html: content }}
                     />
                   </div>
-                  {tip.longVideo && (
-                    <div class="mb-3">
-                      <header id="full-video" class="is-size-3 is-bold mb-3">
-                        Full Video
-                      </header>
-                      <VideoPlayer
-                        source={tip.longVideo.url}
-                        poster={tip.longVideo.poster}
-                        start={tip.longVideo.start}
-                        end={tip.longVideo.end}
-                      />
-                    </div>
-                  )}
                 </>
               )}
               {tip.seealso && <SeeAlso items={tip.seealso} />}
             </main>
           </div>
-
-          {(content || tip.longVideo) && (
-            <div class="column is-hidden-touch is-3">
-              <aside class="menu">
-                <p class="menu-label">ON THIS PAGE</p>
-                <ul class="menu-list on-this-page">
-                  {content && (
-                    <li>
-                      <a href="#in-depth">Learn More</a>
-                    </li>
-                  )}
-                  {tip.longVideo && (
-                    <li>
-                      <a href="#full-video">Full Video</a>
-                    </li>
-                  )}
-                </ul>
-              </aside>
-            </div>
-          )}
-
-          {!content && !tip.longVideo && (
-            <div class="column is-hidden-touch is-3"></div>
-          )}
         </div>
       </div>
     </div>

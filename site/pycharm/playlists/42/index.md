@@ -13,7 +13,6 @@ author: pwe
 subtitle: Become an IDE champ with these bite-sized tips and tricks.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-longVideo: true
 playlistItems:
   - /pycharm/tips/find-action/
   - /pycharm/tips/reduce-clutter/

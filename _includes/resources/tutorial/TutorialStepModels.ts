@@ -7,22 +7,37 @@ import { Tutorial } from "./TutorialModels";
 export const TutorialStepFrontmatter = Type.Intersect([
   ResourceFrontmatter,
   Type.Object({
-    videoBottom: Type.Optional(Type.Boolean({ description: "True if video should be rendered at the bottom; false otherwise" })),
-    longVideo: Type.Optional(
-      Type.Object({
-        url: Type.String({ description: "URL of the video" }),
-        posterNumber: Type.Optional(Type.String({ description: "Poster number to render" })),
-        poster: Type.Optional(Type.String({ description: "File name of a poster to show for this video" })),
-        start: Type.Optional(Type.Number({ description: "Where to start the video in seconds" })),
-        end: Type.Optional(Type.Number({ description: "Where to stop the video in seconds" }))
-      }, { description: "Long video to show in this tutorial step" })
+    videoBottom: Type.Optional(
+      Type.Boolean({
+        description:
+          "True if video should be rendered at the bottom; false otherwise",
+      })
+    ),
+    video: Type.Optional(
+      Type.Union([
+        Type.String({
+          description: "YouTube URL to the video",
+        }),
+        Type.Object(
+          {
+            url: Type.String({ description: "YouTube URL to the video" }),
+            start: Type.Number({
+              description: "start time for the video",
+            }),
+            end: Type.Number({
+              description: "end time for the video",
+            }),
+          },
+          { description: "Animated GIF to show in this tip" }
+        ),
+      ])
     ),
   }),
 ]);
 export type TutorialStepFrontmatter = Static<typeof TutorialStepFrontmatter>;
 
 export class TutorialStep extends Resource implements TutorialStepFrontmatter {
-  longVideo: TutorialStepFrontmatter["longVideo"];
+  video: TutorialStepFrontmatter["video"];
   parentTutorial?: Tutorial;
   videoBottom: boolean;
   static frontmatterSchema = TutorialStepFrontmatter;
@@ -35,7 +50,7 @@ export class TutorialStep extends Resource implements TutorialStepFrontmatter {
     page: EleventyPage;
   }) {
     super({ data, page });
-    this.longVideo = data.longVideo;
+    this.video = data.video;
     this.videoBottom = !!data.videoBottom;
   }
 

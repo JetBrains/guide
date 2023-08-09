@@ -1,4 +1,4 @@
-import { describe, expect, test } from "vitest";
+import { afterEach, beforeEach, describe, expect, test, vi } from "vitest";
 import {
   AllTopicTypes,
   cleanAllResources,
@@ -9,7 +9,11 @@ import {
   getRoot,
   guideSites,
   MarkdownFrontmatter,
+  migrateLeadInAttribute,
+  migrateVideoFrontmatter,
   parseFrontmatter,
+  pipe,
+  removeHasBodyAttribute,
   writeTopicType,
 } from "./cleaner";
 
@@ -157,5 +161,168 @@ test.skip("dump all authors for content migration", () => {
         console.log(`${value}${flag}`);
       });
     });
+  });
+});
+
+test("remove old leadin attribute", () => {
+  const markdown = [
+    {
+      path: "./",
+      frontmatter: { leadin: "Some fance leadin" },
+      isChanged: false,
+      content: "This is some meaningful content here",
+    },
+  ];
+  const [result] = migrateLeadInAttribute(markdown);
+  expect(result.frontmatter.leadin).toBeUndefined();
+  expect(result.isChanged).toBeTruthy();
+  expect(result.content).toEqual("This is some meaningful content here");
+});
+
+test("move old leadin to content", () => {
+  const markdown = [
+    {
+      path: "./",
+      frontmatter: { leadin: "Some fance leadin" },
+      isChanged: false,
+      content: "",
+    },
+  ];
+  const [result] = migrateLeadInAttribute(markdown);
+  expect(result.frontmatter.leadin).toBeUndefined();
+  expect(result.isChanged).toBeTruthy();
+  expect(result.content).toEqual("Some fance leadin");
+});
+
+test("migrate old hasBody Attribute", () => {
+  const markdown = [
+    {
+      path: "./",
+      frontmatter: { hasBody: true },
+      isChanged: false,
+      content: "This is some meaningful content here",
+    },
+  ];
+  const [result] = removeHasBodyAttribute(markdown);
+  expect(result.frontmatter.hasBody).toBeUndefined();
+  expect(result.isChanged).toBeTruthy();
+});
+
+test("migrateFrontMatter shall return unchanged files when there are no changes", () => {
+  const markdown = [
+    {
+      path: "./",
+      frontmatter: {},
+      isChanged: false,
+      content: "This is some meaningful content here",
+    },
+  ];
+  const [result] = removeHasBodyAttribute(markdown);
+  expect(result.isChanged).toBeFalsy();
+});
+
+test("remove leading and hasbody should work together", () => {
+  const markdown = [
+    {
+      path: "./",
+      frontmatter: { leadin: "some fancy leadin", hasBody: false },
+      isChanged: false,
+      content: "This is some meaningful content here",
+    },
+  ];
+  const [result] = pipe(
+    migrateLeadInAttribute,
+    removeHasBodyAttribute
+  )(markdown);
+  expect(result.frontmatter.leadin).toBeUndefined();
+  expect(result.frontmatter.hasBody).toBeUndefined();
+  expect(result.isChanged).toBeTruthy();
+});
+
+describe("short and longvideo", () => {
+  beforeEach(() => {
+    vi.mock("node:fs", async () => {
+      const actual: any = await vi.importActual("node:fs");
+      return {
+        ...actual,
+        unlinkSync: vi.fn().mockReturnValue(undefined),
+        existsSync: vi.fn().mockReturnValue(true),
+      };
+    });
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
+  test("remove video and delete poster", async () => {
+    const markdown = [
+      {
+        path: "./path/someotherFolder/index.md",
+        frontmatter: {
+          shortVideo: { poster: "./somePath.png", url: "youtube.com" },
+        },
+        isChanged: false,
+        content: "",
+      },
+    ];
+    const { unlinkSync } = await import("node:fs");
+    const [result] = migrateVideoFrontmatter(markdown);
+    expect(result.frontmatter.shortVideo).toBeUndefined();
+    expect(result.frontmatter.video).toEqual("youtube.com");
+    expect(result.isChanged).toBeTruthy();
+    result.onWrite?.();
+    expect(unlinkSync).toHaveBeenCalledWith(
+      "path/someotherFolder/somePath.png"
+    );
+  });
+
+  test("migrate start and end", async () => {
+    const markdown = [
+      {
+        path: "./path/someotherFolder/index.md",
+        frontmatter: {
+          shortVideo: {
+            poster: "./somePath.png",
+            url: "youtube.com",
+            start: 100,
+            end: 200,
+          },
+        },
+        isChanged: false,
+        content: "",
+      },
+    ];
+    const [result] = migrateVideoFrontmatter(markdown);
+    expect(result.frontmatter.shortVideo).toBeUndefined();
+    expect(result.frontmatter.video?.url).toEqual("youtube.com");
+    expect(result.frontmatter.video?.start).toEqual(100);
+    expect(result.frontmatter.video?.end).toEqual(200);
+    expect(result.isChanged).toBeTruthy();
+  });
+
+  test("should use longVideo if long and short is maintained", async () => {
+    const markdown = [
+      {
+        path: "./path/someotherFolder/index.md",
+        frontmatter: {
+          shortVideo: {
+            poster: "./somePath.png",
+            url: "youtube.com",
+          },
+          longVideo: {
+            poster: "./somePath.png",
+            url: "someOtherYoutubeLink.com",
+          },
+        },
+        isChanged: false,
+        content: "",
+      },
+    ];
+    const [result] = migrateVideoFrontmatter(markdown);
+    expect(result.frontmatter.shortVideo).toBeUndefined();
+    expect(result.frontmatter.longVideo).toBeUndefined();
+    expect(result.frontmatter.video).toEqual("someOtherYoutubeLink.com");
+    expect(result.isChanged).toBeTruthy();
   });
 });

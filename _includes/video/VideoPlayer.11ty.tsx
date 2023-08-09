@@ -1,15 +1,15 @@
 import h, { JSX } from "vhtml";
 
 export type VideoPlayerProps = {
-  source: string;
-  poster?: string;
-  start?: number;
-  end?: number;
+  source: string | { url: string; start: number; end: number };
 };
 
 // @ts-ignore
-// TODO: poster isn't really required because YouTube has thumbnails
-const VideoPlayer = ({ source, start, end }: VideoPlayerProps): JSX.Element => {
+const VideoPlayer = ({ source }: VideoPlayerProps): JSX.Element => {
+  const { url, start, end } =
+    typeof source === "string"
+      ? { url: source, start: undefined, end: undefined }
+      : { url: source.url, start: source.start, end: source.end };
   return (
     <div
       title="Video Player"
@@ -17,7 +17,7 @@ const VideoPlayer = ({ source, start, end }: VideoPlayerProps): JSX.Element => {
       data-start={start}
       data-end={end}
       data-plyr-provider="youtube"
-      data-plyr-embed-id={`${source}?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1`}
+      data-plyr-embed-id={`${url}?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1`}
     ></div>
   );
 };

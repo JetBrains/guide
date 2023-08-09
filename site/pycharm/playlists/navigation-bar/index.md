@@ -10,7 +10,6 @@ author: pwe
 subtitle: 'Move around files with keyboard, without wasting screen UI space'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-longVideo: true
 playlistItems:
   - /pycharm/tips/navbar-activate/
   - /pycharm/tips/navbar-navigate-files/

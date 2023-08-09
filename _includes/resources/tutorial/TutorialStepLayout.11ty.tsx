@@ -21,14 +21,9 @@ export function TutorialStepLayout(
   const parent = tutorialStep.parentTutorial as Tutorial;
   const references = tutorialStep.references as References;
 
-  // Long video
-  const longVideo = tutorialStep.longVideo && (
-    <VideoPlayer
-      source={tutorialStep.longVideo.url}
-      poster={tutorialStep.longVideo.poster}
-      start={tutorialStep.longVideo.start}
-      end={tutorialStep.longVideo.end}
-    />
+  // video
+  const video = tutorialStep.video && (
+    <VideoPlayer source={tutorialStep.video} />
   );
 
   // Sidebars
@@ -71,11 +66,11 @@ export function TutorialStepLayout(
       />
       <ArticleTopics topics={references.topics} />
 
-      {longVideo && !videoBottom && <div class="mb-4">{longVideo}</div>}
+      {video && !videoBottom && <div class="mb-4">{video}</div>}
       {content ? (
         <div dangerouslySetInnerHTML={{ __html: content }}></div>
       ) : null}
-      {longVideo && videoBottom && <div class="mb-4">{longVideo}</div>}
+      {video && videoBottom && <div class="mb-4">{video}</div>}
     </>
   );
 

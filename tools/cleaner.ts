@@ -18,7 +18,11 @@ export function getRoot(): string {
   return normalize(`${__dirname}/../site`);
 }
 
-export function getAllFiles(dirPath: string, arrayOfFiles: string[]) {
+export function getAllFiles(
+  dirPath: string,
+  arrayOfFiles: string[],
+  fileExtension = [".md"]
+) {
   const files = fs.readdirSync(dirPath);
   const excludeDirs = ["demos", "_site"];
 
@@ -30,7 +34,7 @@ export function getAllFiles(dirPath: string, arrayOfFiles: string[]) {
         arrayOfFiles = getAllFiles(dirPath + "/" + file, arrayOfFiles);
       }
     } else {
-      if (file.endsWith(".md")) {
+      if (fileExtension.find((extension) => file.endsWith(extension))) {
         arrayOfFiles.push(join(dirPath, "/", file));
       }
     }
@@ -39,7 +43,16 @@ export function getAllFiles(dirPath: string, arrayOfFiles: string[]) {
   return arrayOfFiles;
 }
 
+type VideoRef = {
+  poster: string;
+  url: string;
+  start?: number;
+  end?: number;
+};
+
 export type MarkdownFrontmatter = {
+  thumbnail?: string;
+  cardThumbnail?: string;
   label?: string;
   products?: string[];
   resourceType?: string;
@@ -47,12 +60,24 @@ export type MarkdownFrontmatter = {
   title?: string;
   topics?: string[];
   topicType?: string;
+  shortVideo?: VideoRef;
+  longVideo?: VideoRef;
+  video?: string | { url: string; start: number; end: number };
+  /**
+   * @deprecated this is from old guides, and just listed here for intellisense
+   */
+  leadin?: string;
+  /**
+   * @deprecated this is from old guides, and just listed here for intellisense
+   */
+  hasBody?: boolean;
 };
 
 export type MarkdownResources = {
   [key: string]: {
     frontmatter: MarkdownFrontmatter;
     content: string;
+    isChanged: boolean;
   };
 };
 
@@ -65,6 +90,7 @@ export function parseFrontmatter(filePaths: string[]): MarkdownResources {
     results[markdownFilename] = {
       frontmatter,
       content,
+      isChanged: false,
     };
   });
   return results;
@@ -107,65 +133,142 @@ export function cleanAllResources(
 ): Record<string, string> {
   /* For all Markdown resources, clean them up and return string for disk  */
   const results: Record<string, string> = {};
-  Object.entries(resources).forEach(([filePath, markdown]) => {
-    let fm: MarkdownFrontmatter;
-
-    // Run each cleanup on this file
-    fm = cleanCategories(markdown.frontmatter);
-    fm = writeTopicType(filePath, fm);
-
-    // Now make a string to later write to disk
-    const cleanString1 = matter.stringify(markdown.content, fm);
-    // js-yaml converts simple dates to date-times. It would be
-    // better to https://github.com/jonschlinkert/gray-matter/issues/62
-    // For now, just remove T00:00:00.000Z
-    results[filePath] = cleanString1.replace("T00:00:00.000Z", "");
+  Object.entries(resources).forEach((markdownRecord) => {
+    results[markdownRecord[0]] = cleanResource(markdownRecord);
   });
   return results;
 }
 
-export function generateLeadInReport(): void {
-  const root = getRoot();
-  const resourceFiles = getAllFiles(root, []);
-  const markdownResources = getLeadInFiles(resourceFiles);
-  const csv = markdownResources
-    .map((x) => `${x.author},./${x.path}`)
-    .join("\n");
-  fs.writeFile("leadin.csv", csv, (err) => {
-    if (err) return console.log(err);
-    console.log("FILE SUCCESSFULLY WRITTEN!\n");
+export const cleanResource = (
+  document: Markdown | [string, MarkdownResources[string]]
+) => {
+  const [filePath, markdown] = Array.isArray(document)
+    ? document
+    : [
+        document.path,
+        { frontmatter: document.frontmatter, content: document.content },
+      ];
+  let fm: MarkdownFrontmatter;
+  fm = cleanCategories(markdown.frontmatter);
+  fm = writeTopicType(filePath, fm);
+
+  // Now make a string to later write to disk
+  let cleanString1;
+  cleanString1 = matter.stringify(markdown.content, fm);
+  // js-yaml converts simple dates to date-times. It would be
+  // better to https://github.com/jonschlinkert/gray-matter/issues/62
+  // For now, just remove T00:00:00.000Z
+  return cleanString1.replace("T00:00:00.000Z", "");
+};
+
+export const getMarkdownFiles = (
+  dir = getRoot(),
+  files: string[] = []
+): Markdown[] => {
+  return getAllFiles(dir, files).map((markdownFilename) => {
+    const tipMatter = matter.read(markdownFilename);
+    const frontmatter = tipMatter.data;
+    const content = tipMatter.content;
+    return { path: markdownFilename, content, frontmatter, isChanged: false };
+  });
+};
+
+export const migrateFrontMatter = () => {
+  const allMarkdownFiles = getMarkdownFiles();
+
+  const markdowns = pipe(
+    migrateLeadInAttribute,
+    removeHasBodyAttribute,
+    migrateVideoFrontmatter
+  )(allMarkdownFiles);
+
+  writeMarkdownDocuments(markdowns);
+};
+
+export const writeMarkdownDocuments = (documents: Markdown[]) => {
+  documents
+    .filter((x) => x.isChanged)
+    .forEach((document) => {
+      const cleanedFileContent = cleanResource(document);
+      document.onWrite?.();
+      fs.writeFileSync(document.path, cleanedFileContent, { flag: "w+" });
+    });
+};
+
+export const removeHasBodyAttribute = (documents: Markdown[]): Markdown[] => {
+  return documents.map((document) => {
+    if (typeof document.frontmatter.hasBody === "undefined") {
+      return document;
+    }
+    delete document.frontmatter.hasBody;
+    return { ...document, isChanged: true };
+  });
+};
+
+export const migrateVideoFrontmatter = (documents: Markdown[]): Markdown[] => {
+  return documents.map((document) => {
+    if (!document.frontmatter.shortVideo && !document.frontmatter.longVideo) {
+      return document;
+    }
+    const oldDocument = structuredClone(document);
+    const videoRef =
+      document.frontmatter.longVideo ?? document.frontmatter.shortVideo;
+    const hasStart = !!videoRef?.start;
+    const video =
+      hasStart && videoRef
+        ? { url: videoRef.url, start: videoRef.start!, end: videoRef.end! }
+        : videoRef?.url;
+    delete document.frontmatter.shortVideo;
+    delete document.frontmatter.longVideo;
+    return {
+      ...document,
+      isChanged: true,
+      frontmatter: { ...document.frontmatter, video },
+      onWrite: () => {
+        const { longVideo, shortVideo } = oldDocument.frontmatter;
+        [longVideo, shortVideo].forEach((video) => {
+          if (
+            video &&
+            ![
+              oldDocument.frontmatter.thumbnail,
+              oldDocument.frontmatter.cardThumbnail,
+            ].includes(video.poster)
+          ) {
+            const resolvedPath = path.normalize(
+              `${path.dirname(oldDocument.path)}/${video.poster}`
+            );
+            if (fs.existsSync(resolvedPath)) {
+              fs.unlinkSync(resolvedPath);
+            }
+          }
+        });
+      },
+    };
+  });
+};
+
+export function migrateLeadInAttribute(documents: Markdown[]): Markdown[] {
+  return documents.map((document) => {
+    if (!document.frontmatter.leadin) {
+      return document;
+    }
+    const hasContent = document.content && document.content !== "\n";
+    const oldLeadin = document.frontmatter.leadin;
+    delete document.frontmatter.leadin;
+    return {
+      ...document,
+      content: !hasContent ? oldLeadin : document.content,
+      isChanged: true,
+    };
   });
 }
 
-const getLeadInFiles = (filePaths: string[]) => {
-  return filePaths
-    .map((markdownFilename: string) => {
-      const tipMatter = matter.read(markdownFilename);
-      const frontmatter = tipMatter.data;
-      if (frontmatter.author) {
-        const authorMatter = matter.read(
-          `${process.cwd()}/site/authors/${frontmatter.author}/index.md`
-        );
-        return {
-          author: authorMatter?.data?.title ?? frontmatter.author,
-          path: path.relative(process.cwd(), markdownFilename),
-          leadin: frontmatter.leadin,
-          content: tipMatter.content,
-        };
-      } else {
-        return {
-          author: frontmatter.author,
-          path: markdownFilename,
-          leadin: frontmatter.leadin,
-          content: tipMatter.content,
-        };
-      }
-    })
-    .filter(
-      (x) =>
-        x.leadin !== undefined && x.content !== undefined && x.content !== "\n"
-    );
-};
+// if (
+//     document.path.includes("site/intellij/tips/postfix-completion/index.md")
+// ) {
+//   console.log({ document });
+// }
+
 export function writeCleanResources(): void {
   /* Crawl the tree and write files for all cleaned up resources */
   const root = getRoot();
@@ -227,3 +330,17 @@ export function dumpAuthors(): AllTopicTypes {
   });
   return allAuthorTypes;
 }
+
+type Markdown = {
+  path: string;
+  frontmatter: MarkdownFrontmatter;
+  content: string;
+  isChanged: boolean;
+  onWrite?: () => void;
+};
+
+type MarkdownTransducer = (markdowns: Markdown[]) => Markdown[];
+export const pipe = (...fns: MarkdownTransducer[]) => {
+  return (markdowns: Markdown[]) =>
+    fns.reduce((prev, fn) => fn(prev), markdowns);
+};

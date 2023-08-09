@@ -14,8 +14,7 @@ export type BaseLayoutProps = {
   children: string[];
   title: string;
   subtitle?: string;
-  longVideo?: object;
-  shortVideo?: object;
+  video?: string | { url: string; start: number; end: number };
   resourceType?: string;
 } & LayoutProps;
 
@@ -24,15 +23,7 @@ export function BaseLayout(
   data: BaseLayoutProps
 ): JSX.Element {
   // @ts-ignore
-  const {
-    children,
-    title,
-    subtitle,
-    longVideo,
-    shortVideo,
-    resourceType,
-    collections,
-  } = data;
+  const { children, title, subtitle, video, resourceType, collections } = data;
 
   // Happy DOM throws a DOMException for external script/css even though
   // we do the settings to suppress it. Vite catches the exception but
@@ -46,8 +37,7 @@ export function BaseLayout(
   }
 
   // TODO This is a hack. Bake it into the contract.
-  const hasVideo =
-    longVideo || shortVideo || (resourceType && resourceType == "playlist");
+  const hasVideo = !!video || (!!resourceType && resourceType == "playlist");
 
   // determine if there's an og:image
   let cardThumbnail;
