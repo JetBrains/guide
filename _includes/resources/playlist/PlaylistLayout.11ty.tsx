@@ -66,21 +66,21 @@ export function PlaylistLayout(
 
   // Top nav
   let topNav = (
-    <nav className="navbar navbar-secondary">
-      <div className="container">
-        <div className="navbar-brand">
-          <div className="navbar-item is-size-5 has-text-weight-semibold pl-0">
+    <nav class="navbar navbar-secondary">
+      <div class="container">
+        <div class="navbar-brand">
+          <div class="navbar-item is-size-5 has-text-weight-semibold pl-0">
             <a
               href={`${playlist.url}`}
               aria-label="Parent Playlist"
-              className="is-hidden-touch"
+              class="is-hidden-touch"
             >
               {playlist.title}
             </a>
             <a
               href={`${playlist.url}`}
               aria-label="Parent Playlist"
-              className="is-hidden-desktop ml-5"
+              class="is-hidden-desktop ml-5"
             >
               {playlist.title}
             </a>
@@ -106,7 +106,7 @@ export function PlaylistLayout(
         <ArticleTopics topics={playlist.references?.topics} />
       )}
       <div
-        className="content"
+        class="content"
         style="margin-bottom: 3rem"
         dangerouslySetInnerHTML={{ __html: content }}
       ></div>
@@ -118,8 +118,8 @@ export function PlaylistLayout(
         const isVisible = index == 0 ? "" : "display:none";
         return (
           <div id={item.anchor} style={isVisible} class="playlist-item">
-            <h2 className="is-size-2">{item.title}</h2>
-            {item.subtitle && <p className="subtitle is-4">{item.subtitle}</p>}
+            <h2 class="is-size-2">{item.title}</h2>
+            {item.subtitle && <p class="subtitle is-4">{item.subtitle}</p>}
             {item.animatedGif && (
               <img
                 src={item.animatedGif.file}
@@ -137,7 +137,11 @@ export function PlaylistLayout(
                 style="object-fit: contain; object-position: top"
               />
             )}
-            {item.video && <VideoPlayer source={item.video}></VideoPlayer>}
+            {item.video && (
+              <VideoPlayer
+                source={item.video}
+              ></VideoPlayer>
+            )}
             {itemContent && (
               <div
                 class="content"
@@ -153,10 +157,10 @@ export function PlaylistLayout(
 
   // Sidebar
   const sidebarSteps = (
-    <div className="column is-3 is-full-touch">
-      <aside className="menu">
-        <p className="menu-label">Playlist</p>
-        <ul className="menu-list playlist-toggles">
+    <div class="column is-3 is-full-touch">
+      <aside class="menu">
+        <p class="menu-label">Playlist</p>
+        <ul class="menu-list playlist-toggles">
           {playlist.playlistResources.map((step) => (
             <li>
               <a aria-label="Playlist Item" href={`#${step.anchor}`}>
@@ -169,16 +173,6 @@ export function PlaylistLayout(
     </div>
   );
 
-  /*
-      <SidebarLayout
-      pageTitle={playlist.title}
-      subtitle={playlist.subtitle}
-      sidebar={[sidebar]}
-      {...data}
-    >
-      <main>{main}</main>
-    </SidebarLayout>
-   */
   // data-meta will be processed out
   return (
     <BaseLayout subtitle={playlist.subtitle} {...data}>

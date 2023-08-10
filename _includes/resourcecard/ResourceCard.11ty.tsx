@@ -6,14 +6,18 @@ import { Topic } from "../references/topic/TopicModels";
 import TopicTag from "../references/topic/TopicTag.11ty";
 import { AuthorFrontmatter } from "../references/author/AuthorModels";
 
-const glowColorHashRing = new ConsistentHash({ range: 100003, weight: 80, distribution: "uniform" });
-glowColorHashRing.add('has-glow-magenta');
-glowColorHashRing.add('has-glow-pink');
-glowColorHashRing.add('has-glow-fresh-green');
-glowColorHashRing.add('has-glow-cold-green');
-glowColorHashRing.add('has-glow-orange');
-glowColorHashRing.add('has-glow-red');
-glowColorHashRing.add('has-glow-purple');
+const glowColorHashRing = new ConsistentHash({
+  range: 100003,
+  weight: 80,
+  distribution: "uniform",
+});
+glowColorHashRing.add("has-glow-magenta");
+glowColorHashRing.add("has-glow-pink");
+glowColorHashRing.add("has-glow-fresh-green");
+glowColorHashRing.add("has-glow-cold-green");
+glowColorHashRing.add("has-glow-orange");
+glowColorHashRing.add("has-glow-red");
+glowColorHashRing.add("has-glow-purple");
 
 export enum ResourceCardOrientation {
   Portrait = 0,
@@ -31,7 +35,7 @@ export const AuthorIcon = (author: AuthorFrontmatter) => (
     alt={author.title}
     // @ts-ignore
     loading="lazy"
-    className="avatar"
+    class="avatar"
   />
 );
 

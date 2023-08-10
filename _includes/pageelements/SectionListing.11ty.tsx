@@ -29,12 +29,12 @@ function SectionListing({
   return (
     <>
       {separator && (
-        <section className="container">
+        <section class="container">
           <hr />
         </section>
       )}
 
-      <section className="section">
+      <section class="section">
         <div class="columns is-vcentered is-mobile">
           <div class="column is-8">
             <h2 class="mt-2 mb-4 is-size-1 has-text-weight-bold">{title}</h2>

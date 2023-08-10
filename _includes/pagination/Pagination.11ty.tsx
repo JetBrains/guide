@@ -23,31 +23,29 @@ type Href = {
 const Pagination = ({ pagination }: PaginationProps): JSX.Element => {
   const ellipsis = (
     <li>
-      <span className="pagination-ellipsis">&hellip;</span>
+      <span class="pagination-ellipsis">&hellip;</span>
     </li>
   );
   const current = pagination.href;
   const hasPages = pagination.hrefs.length > 1;
 
   return hasPages ? (
-    <nav className="pagination" role="navigation" aria-label="pagination">
+    <nav class="pagination" role="navigation" aria-label="pagination">
       <a
-        className={`pagination-previous ${
-          current.previous ? "" : "is-disabled"
-        }`}
+        class={`pagination-previous ${current.previous ? "" : "is-disabled"}`}
         aria-disabled={!current.previous}
         href={current.previous}
       >
         Previous
       </a>
       <a
-        className={`pagination-next ${current.next ? "" : "is-disabled"}`}
+        class={`pagination-next ${current.next ? "" : "is-disabled"}`}
         aria-disabled={!current.next}
         href={current.next}
       >
         Next
       </a>
-      <ul className="pagination-list is-centered">
+      <ul class="pagination-list is-centered">
         {pagination.pageNumber > 1 && (
           <li>
             <a
@@ -63,7 +61,7 @@ const Pagination = ({ pagination }: PaginationProps): JSX.Element => {
         {current.previous && (
           <li>
             <a
-              className={`pagination-link`}
+              class={`pagination-link`}
               href={current.previous}
               aria-label={`Goto page ${pagination.pageNumber}`}
             >
@@ -73,7 +71,7 @@ const Pagination = ({ pagination }: PaginationProps): JSX.Element => {
         )}
         <li>
           <a
-            className={`pagination-link is-current`}
+            class={`pagination-link is-current`}
             href={pagination.hrefs[pagination.pageNumber]}
             aria-label={`Goto page ${pagination.pageNumber + 1}`}
             aria-current={true}
@@ -84,7 +82,7 @@ const Pagination = ({ pagination }: PaginationProps): JSX.Element => {
         {current.next && (
           <li>
             <a
-              className={`pagination-link`}
+              class={`pagination-link`}
               href={current.next}
               aria-label={`Goto page ${pagination.pageNumber + 2}`}
               aria-current={true}
