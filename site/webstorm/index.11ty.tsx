@@ -36,7 +36,7 @@ export class WebStormHomepage {
       <BaseLayout {...data}>
         <HeroSection
           title="WebStorm Guide"
-          subtitleColor="has-text-black"
+          subtitleExtraClass="has-text-black"
           subtitle="Using WebStorm or any other JetBrains IDE with JavaScript support? Explore a collection of learning resources to increase your
         productivity and start making amazing JavaScript apps faster."
           image="/assets/webstorm-beam.svg"

@@ -2,17 +2,17 @@ import h from "vhtml";
 
 export type HeroSectionProps = {
   title: string;
-  titleColor?: string;
+  titleExtraClass?: string;
   subtitle: string;
-  subtitleColor?: string;
+  subtitleExtraClass?: string;
   image: string;
 };
 
 function HeroSection({
   title,
-  titleColor,
+  titleExtraClass,
   subtitle,
-  subtitleColor,
+  subtitleExtraClass,
   image,
 }: HeroSectionProps) {
   const style = `background: url('${image}') center center; background-repeat: no-repeat; background-size: cover`;
@@ -22,12 +22,12 @@ function HeroSection({
         <div class="container">
           <h1
             class={`mt-2 mb-4 is-size-1 has-text-weight-bold ${
-              titleColor || ""
+              titleExtraClass || ""
             }`}
           >
             {title}
           </h1>
-          <p class={`subtitle mb-5 ${subtitleColor || "has-text-grey"}`}>
+          <p class={`subtitle mb-5 ${subtitleExtraClass || "has-text-grey"}`}>
             {subtitle}
           </p>
         </div>
