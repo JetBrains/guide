@@ -23,20 +23,6 @@ export class ExplorePage {
 
     return (
       <BaseLayout {...data}>
-        <nav class="navbar navbar-secondary">
-          <div class="container">
-            <div class="navbar-brand">
-              <div class="navbar-item is-size-5 has-text-weight-semibold pl-0">
-                <a href="/explore/" class="is-hidden-touch">
-                  Explore
-                </a>
-                <a href="/explore/" class="is-hidden-desktop ml-5">
-                  Explore
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
         <div class="section">
           <div class="container">
             <div class="columns is-multiline is-flex-direction-row-reverse">
