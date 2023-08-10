@@ -1,29 +1,34 @@
-import {expect, test} from "vitest";
-import {TutorialsLayout} from "./TutorialsLayout.11ty";
-import {screen} from "@testing-library/dom";
-import fixtures, {baseRenderData} from "../../fixtures";
-import {ReferenceLayoutProps} from "../../layouts/ReferenceLayout.11y";
+import { expect, test } from "vitest";
+import { TutorialsLayout } from "./TutorialsLayout.11ty";
+import { screen } from "@testing-library/dom";
+import fixtures, { baseRenderData } from "../../fixtures";
+import { ReferenceLayoutProps } from "../../layouts/ReferenceLayout.11y";
 
 test("should render TutorialsLayout", () => {
-    const tutorialsLayoutData: ReferenceLayoutProps = {
-        ...baseRenderData,
-        listing: [""],
-        title: "Some Title",
-        resourceType: "tutorials",
-        page: {
-            fileSlug: "slug",
-            url: "url",
-            date: fixtures.date,
-        },
-    };
-    fixtures.context.getResources = () =>
-        Array.from(fixtures.resolvedCollections.allResources.values());
-    document.body.innerHTML = TutorialsLayout.call(
-        fixtures.context,
-        tutorialsLayoutData
-    );
-    const links = screen.getAllByRole("link", {
-        name: "Resource",
-    });
-    expect(links).to.exist;
+  const tutorialsLayoutData: ReferenceLayoutProps = {
+    ...baseRenderData,
+    listing: [""],
+    title: "Some Title",
+    resourceType: "tutorials",
+    page: {
+      fileSlug: "slug",
+      url: "url",
+      date: fixtures.date,
+    },
+    pagination: fixtures.paginationProps.pagination,
+  };
+  fixtures.context.getResources = () =>
+    Array.from(fixtures.resolvedCollections.allResources.values());
+  const firstTutorialURL = fixtures.tips[0].url;
+  fixtures.context.getResource = () =>
+    fixtures.resolvedCollections.allResources.get(firstTutorialURL)!;
+  const tutorialsLayout = new TutorialsLayout();
+  document.body.innerHTML = tutorialsLayout.render.call(
+    fixtures.context,
+    tutorialsLayoutData
+  );
+  const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
+    name: "Resource",
+  });
+  expect(links[0].href).to.equal("/tips/some-tip/");
 });
