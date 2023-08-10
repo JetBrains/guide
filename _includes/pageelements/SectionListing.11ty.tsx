@@ -42,7 +42,7 @@ function SectionListing({
           </div>
           <div class="column has-text-right">
             <a class="button is-rounded is-outlined" href={moreLink}>
-              All...
+              More...
             </a>
           </div>
         </div>

@@ -145,7 +145,7 @@ export class ExplorePage {
                       </div>
                       <div class="column has-text-right">
                         <a class="button is-rounded is-outlined" href="#">
-                          All...
+                          More...
                         </a>
                       </div>
                     </div>
