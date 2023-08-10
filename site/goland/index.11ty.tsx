@@ -49,10 +49,10 @@ export class GoLandHomepage {
 
         <section class="section has-background-grey-lighter">
           <div class="container">
-            <div className="columns">
-              <div className="column is-three-quarters-desktop">
-                <div className="bd-content content">
-                  <div className="content">
+            <div class="columns">
+              <div class="column is-three-quarters-desktop">
+                <div class="bd-content content">
+                  <div class="content">
                     <h2>Learn something new, quickly</h2>
 
                     <p>

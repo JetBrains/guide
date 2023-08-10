@@ -48,12 +48,12 @@ export class WebStormHomepage {
             moreLink={`/webstorm/tips/`}
           />
         )}
-        <section className="section has-background-grey-lighter">
+        <section class="section has-background-grey-lighter">
           <div class="container">
-            <div className="columns">
-              <div className="column is-three-quarters-desktop">
-                <div className="bd-content content">
-                  <div className="content">
+            <div class="columns">
+              <div class="column is-three-quarters-desktop">
+                <div class="bd-content content">
+                  <div class="content">
                     <p>
                       Have you ever found a tip about how to do a specific thing
                       in a JetBrains IDE faster and caught yourself thinking,
