@@ -2,7 +2,7 @@ import h, { JSX } from "vhtml";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import { LayoutContext, LayoutProps } from "../../src/models";
 import { BaseFrontmatter } from "../../src/ResourceModels";
-import SectionListing from "../../_includes/pageelements/SectionListing.11ty";
+import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
 
 export type PyCharmHomepageData = LayoutProps &
@@ -46,14 +46,14 @@ export class PyCharmHomepage {
           image="/assets/pycharm_splash.svg"
         />
         {tips && (
-          <SectionListing
+          <ListingSection
             title={`Recent Tips`}
             resources={tips}
             moreLink={`/pycharm/tips/`}
           />
         )}
         {tutorials && (
-          <SectionListing
+          <ListingSection
             title={`Recent Tutorials`}
             resources={tutorials}
             moreLink={`/pycharm/playlists/`}
@@ -61,7 +61,7 @@ export class PyCharmHomepage {
           />
         )}
         {playlists && (
-          <SectionListing
+          <ListingSection
             title={`Recent Playlists`}
             resources={playlists}
             moreLink={`/pycharm/playlists/`}

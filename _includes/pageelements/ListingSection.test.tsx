@@ -1,6 +1,6 @@
 import { expect, test } from "vitest";
 import { screen } from "@testing-library/dom";
-import SectionListing, { SectionListingProps } from "./SectionListing.11ty";
+import ListingSection, { ListingSectionProps } from "./ListingSection.11ty";
 import fixtures from "../fixtures";
 
 test("SectionListing exists", () => {
@@ -8,13 +8,13 @@ test("SectionListing exists", () => {
     fixtures.resolvedCollections.allResources.values()
   );
 
-  const props: SectionListingProps = {
+  const props: ListingSectionProps = {
     title: "Some Title",
     subtitle: "Some Subtitle",
     moreLink: "/more/link",
     resources,
   };
-  document.body.innerHTML = SectionListing(props);
+  document.body.innerHTML = ListingSection(props);
   expect(screen.getByText("Some Title")).to.exist;
   expect(screen.getByText("Some Subtitle")).to.exist;
   expect(screen.getByRole("link", { name: "Another Tip" })).to.exist;
