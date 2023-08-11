@@ -23,20 +23,6 @@ export class ExplorePage {
 
     return (
       <BaseLayout {...data}>
-        <nav class="navbar navbar-secondary">
-          <div class="container">
-            <div class="navbar-brand">
-              <div class="navbar-item is-size-5 has-text-weight-semibold pl-0">
-                <a href="/explore/" class="is-hidden-touch">
-                  Explore
-                </a>
-                <a href="/explore/" class="is-hidden-desktop ml-5">
-                  Explore
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
         <div class="section">
           <div class="container">
             <div class="columns is-multiline is-flex-direction-row-reverse">
@@ -54,7 +40,7 @@ export class ExplorePage {
                     <div class="buttons mt-6">
                       <a
                         class="button is-rounded is-primary is-outlined"
-                        href="#"
+                        href="/latest/"
                       >
                         Browse...
                       </a>
@@ -99,7 +85,7 @@ export class ExplorePage {
                           </figure>
                         </a>
                         <a
-                          href="/idea/"
+                          href="/intellij/"
                           class="is-size-5 has-text-weight-bold title"
                         >
                           IntelliJ IDEA
@@ -144,7 +130,10 @@ export class ExplorePage {
                         </h1>
                       </div>
                       <div class="column has-text-right">
-                        <a class="button is-rounded is-outlined" href="#">
+                        <a
+                          class="button is-rounded is-outlined"
+                          href="/latest/"
+                        >
                           More...
                         </a>
                       </div>
@@ -168,10 +157,10 @@ export class ExplorePage {
                       <a href="/dotnet/">.NET</a>
                     </li>
                     <li>
-                      <a href="/go/">GoLand</a>
+                      <a href="/goland/">GoLand</a>
                     </li>
                     <li>
-                      <a href="/idea/">IntelliJ IDEA</a>
+                      <a href="/intellij/">IntelliJ IDEA</a>
                     </li>
                     <li>
                       <a href="/pycharm/">PyCharm</a>
@@ -184,7 +173,7 @@ export class ExplorePage {
                   <p class="menu-label">What's new?</p>
                   <ul class="menu-list">
                     <li>
-                      <a>Latest</a>
+                      <a href="/latest/">Latest</a>
                     </li>
                   </ul>
 

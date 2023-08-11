@@ -183,33 +183,35 @@
           "description": "True if video should be rendered at the bottom; false otherwise",
           "type": "boolean"
         },
-        "longVideo": {
-          "description": "Long video to show in this tutorial step",
-          "type": "object",
-          "properties": {
-            "url": {
-              "description": "URL of the video",
+        "video": {
+          "anyOf": [
+            {
+              "description": "YouTube URL to the video",
               "type": "string"
             },
-            "posterNumber": {
-              "description": "Poster number to render",
-              "type": "string"
-            },
-            "poster": {
-              "description": "File name of a poster to show for this video",
-              "type": "string"
-            },
-            "start": {
-              "description": "Where to start the video in seconds",
-              "type": "number"
-            },
-            "end": {
-              "description": "Where to stop the video in seconds",
-              "type": "number"
+            {
+              "description": "Animated GIF to show in this tip",
+              "type": "object",
+              "properties": {
+                "url": {
+                  "description": "YouTube URL to the video",
+                  "type": "string"
+                },
+                "start": {
+                  "description": "start time for the video",
+                  "type": "number"
+                },
+                "end": {
+                  "description": "end time for the video",
+                  "type": "number"
+                }
+              },
+              "required": [
+                "url",
+                "start",
+                "end"
+              ]
             }
-          },
-          "required": [
-            "url"
           ]
         }
       }
