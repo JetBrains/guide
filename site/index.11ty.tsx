@@ -3,7 +3,10 @@ import h, { JSX } from "vhtml";
 import { LayoutContext, LayoutProps } from "../src/models";
 import { PageFrontmatter } from "../_includes/resources/page/PageModels";
 import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
-import ResourceCard, { ResourceCardOrientation } from "../_includes/resourcecard/ResourceCard.11ty";
+import ResourceCard, {
+  ResourceCardOrientation,
+} from "../_includes/resourcecard/ResourceCard.11ty";
+import FeaturedResource from "../_includes/pageelements/FeaturedResource.11ty";
 
 export type IndexPageProps = LayoutProps & PageFrontmatter;
 
@@ -18,7 +21,10 @@ export class IndexPage {
   }
 
   render(this: LayoutContext, data: IndexPageProps): JSX.Element {
-    const featuredResource = this.getResources({ resourceType: 'tutorial', limit: 1 })[0];
+    const featuredResource = this.getResources({
+      resourceType: "tutorial",
+      limit: 1,
+    })[0];
     const latestContent = this.getResources({ limit: 12 });
 
     return (
@@ -27,22 +33,29 @@ export class IndexPage {
           <div className="container">
             <div className="columns is-multiline">
               <div className="column is-8">
-                <h1 className="mt-2 mb-4 is-size-1 has-text-weight-bold">Welcome to the JetBrains Guide</h1>
+                <h1 className="mt-2 mb-4 is-size-1 has-text-weight-bold">
+                  Welcome to the JetBrains Guide
+                </h1>
                 <p className="subtitle mb-5 has-text-dark">
-                  Learn about technologies and become a badass developer. We have tips, tutorials, videos, articles and much, much more!
+                  Learn about technologies and become a badass developer. We
+                  have tips, tutorials, videos, articles and much, much more!
                 </p>
               </div>
             </div>
           </div>
         </section>
-        <section className="section pt-0 pb-0">
-          <div className="container hero">
-            <div className="hero-body">
-              <h2 className="title mb-6 is-size-1 is-size-3-mobile has-text-weight-bold">Featured {featuredResource.resourceType}</h2>
-              <ResourceCard resource={featuredResource} orientation={ResourceCardOrientation.Landscape} />
-            </div>
-          </div>
-        </section>
+        <FeaturedResource resource={featuredResource}>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip.
+          </p>{" "}
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </FeaturedResource>
         <section className="section has-background-grey-lighter">
           <div className="container">
             <div className="columns">
@@ -99,7 +112,6 @@ export class IndexPage {
             </div>
           </div>
         </section>
-        {/*TODO PAUL perhaps a heading? or not?*/}
         <section class="section">
           <div className="container">
             <div className="columns is-multiline">
@@ -107,7 +119,7 @@ export class IndexPage {
                 <div className="columns is-vcentered is-mobile">
                   <div className="column is-8">
                     <h1 className="mt-2 mb-4 is-size-1 has-text-weight-bold">
-                      Latest
+                      Latest Resources
                     </h1>
                   </div>
                   <div className="column has-text-right">
@@ -118,9 +130,7 @@ export class IndexPage {
                 </div>
                 <div className="columns is-multiline">
                   {latestContent.map((resource) => {
-                    return (
-                      <ResourceCard resource={resource}></ResourceCard>
-                    );
+                    return <ResourceCard resource={resource}></ResourceCard>;
                   })}
                 </div>
               </div>
