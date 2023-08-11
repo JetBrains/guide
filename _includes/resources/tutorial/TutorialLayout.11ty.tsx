@@ -9,7 +9,6 @@ import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
-import { TopNav } from "./TopBottomNav.11ty";
 
 export type TutorialLayoutData = LayoutProps & TutorialFrontmatter;
 
@@ -54,8 +53,12 @@ export function TutorialLayout(
     </>
   );
 
-  // Top nav
-  let topNav = <TopNav parent={tutorial}></TopNav>;
+  // Breadcrumbs
+  let breadcrumbs = (<nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      <li class="is-active"><a href={tutorial.url}>{tutorial.title}</a></li>
+    </ul>
+  </nav>)
 
   const main = (
     <>
@@ -82,12 +85,12 @@ export function TutorialLayout(
   );
   return (
     <BaseLayout {...data}>
-      {topNav}
       <div class="section">
         <div class="container">
           <div class="columns is-multiline">
             {sidebarSteps}
             <div class="column">
+              {breadcrumbs}
               <main class="content">{main}</main>
             </div>
           </div>

@@ -3,7 +3,7 @@ import { LayoutContext, LayoutProps } from "../../../src/models";
 import { TutorialStep, TutorialStepFrontmatter } from "./TutorialStepModels";
 import VideoPlayer from "../../video/VideoPlayer.11ty";
 import { Tutorial } from "./TutorialModels";
-import { BottomNav, TopNav } from "./TopBottomNav.11ty";
+import { BottomNav } from "./TopBottomNav.11ty";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import { References } from "../../../src/ReferenceModels";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
@@ -74,25 +74,33 @@ export function TutorialStepLayout(
     </>
   );
 
-  // Top/Bottom nav
-  let topNav, bottomNav;
+  // Breadcrumbs
+  let breadcrumbs = "";
   if (parent) {
-    topNav = <TopNav parent={parent} currentStep={tutorialStep}></TopNav>;
+    breadcrumbs = (<nav class="breadcrumb" aria-label="breadcrumbs">
+      <ul>
+        <li><a href={parent.url}>{parent.title}</a></li>
+        <li class="is-active"><a href={tutorialStep.url}>{tutorialStep.title}</a></li>
+      </ul>
+    </nav>)
+  }
+
+  // Bottom nav
+  let bottomNav = "";
+  if (parent) {
     bottomNav = (
       <BottomNav parent={parent} currentStep={tutorialStep}></BottomNav>
     );
-  } else {
-    topNav = bottomNav = "";
   }
 
   return (
     <BaseLayout subtitle={tutorialStep.subtitle} {...data}>
-      {topNav}
       <div class="section">
         <div class="container">
           <div class="columns is-multiline">
             {sidebarSteps}
             <div class="column is-9">
+              {breadcrumbs}
               <main class="content">
                 {main}
                 <hr />

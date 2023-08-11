@@ -30,4 +30,4 @@ site/*/.11ty-vite
 .idea/jsonSchemas.yml
 public/obsoletes.json
 .11ty-vite
-docs/schemas/guide/
+docs/*/*.schema.json

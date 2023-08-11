@@ -64,32 +64,6 @@ export function PlaylistLayout(
 
   const { all } = data.collections;
 
-  // Top nav
-  let topNav = (
-    <nav class="navbar navbar-secondary">
-      <div class="container">
-        <div class="navbar-brand">
-          <div class="navbar-item is-size-5 has-text-weight-semibold pl-0">
-            <a
-              href={`${playlist.url}`}
-              aria-label="Parent Playlist"
-              class="is-hidden-touch"
-            >
-              {playlist.title}
-            </a>
-            <a
-              href={`${playlist.url}`}
-              aria-label="Parent Playlist"
-              class="is-hidden-desktop ml-5"
-            >
-              {playlist.title}
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
-
   // Main content
   const author = playlist.references?.author as Author;
   if (!author) {
@@ -176,7 +150,6 @@ export function PlaylistLayout(
   // data-meta will be processed out
   return (
     <BaseLayout subtitle={playlist.subtitle} {...data}>
-      {topNav}
       <div class="section">
         <div class="container">
           <div class="columns is-multiline">
