@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jetbrains-guide-deployment
+  namespace: jetbrains-guide
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: jetbrains-guide
+  template:
+    metadata:
+      labels:
+        app: jetbrains-guide
+    spec:
+      volumes:
+        - name: nginx
+          configMap:
+            name: nginx-conf-cm
+      containers:
+      - name: jetbrains-guide
+        image: guide:latest
+        imagePullPolicy: Never # Make to Always in prod, using local images set to Never
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+        volumeMounts:
+          - mountPath: /etc/nginx/nginx.conf
+            subPath: nginx.conf
+            readOnly: true
+            name: nginx
