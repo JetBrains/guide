@@ -44,13 +44,18 @@ export function TipLayout(
               <ArticleAuthor author={author} displayDate={tip.displayDate} />
               <ArticleTopics topics={topics} />
 
-              {tip.animatedGif && (
-                <img
-                  src={tip.animatedGif.file}
-                  alt="Tip Screenshot"
-                  class="animated-gif"
-                />
-              )}
+              {tip.animatedGif &&
+                (tip.animatedGif.file.endsWith(".webm") ? (
+                  <video controls>
+                    <source src={tip.animatedGif.file} />
+                  </video>
+                ) : (
+                  <img
+                    src={tip.animatedGif.file}
+                    alt="Tip Screenshot"
+                    className="animated-gif"
+                  />
+                ))}
               {tip.screenshot && (
                 <img
                   src={tip.screenshot}

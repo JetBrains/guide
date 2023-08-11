@@ -15,7 +15,7 @@ subtitle: There is no escape!
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./screenshot.gif
+  file: ./screenshot.webm
   width: 600
   height: 294
 leadin: >
