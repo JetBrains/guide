@@ -12,7 +12,7 @@ const featureFlags = {
 
   // rewrite reference properties to an enum - this enables code completion for topics, authors, ...
   // false is recommended when one schema is shared across all sites
-  rewriteReferenceProperties: false,
+  rewriteReferenceProperties: true,
 };
 
 function getPreamble(resourceType: string) {
