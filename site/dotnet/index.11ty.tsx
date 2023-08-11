@@ -34,6 +34,12 @@ export class DotNetHomepage {
       limit: 3,
     });
 
+    const tutorials = this.getResources({
+      resourceType: "tutorial",
+      tag: "dotnet_tutorial",
+      limit: 3,
+    });
+
     return (
       <BaseLayout {...data}>
         <HeroSection
@@ -123,6 +129,14 @@ export class DotNetHomepage {
             properties and manage the software that runs my business.
           </p>
         </BlockquoteSection>
+
+        {tutorials && (
+          <ListingSection
+            title={`Recent Tutorials`}
+            resources={tutorials}
+            moreLink={`/dotnet/tutorials/`}
+          />
+        )}
 
         {playlists && (
           <ListingSection
