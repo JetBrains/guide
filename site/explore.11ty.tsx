@@ -4,7 +4,7 @@ import { LayoutContext, LayoutProps } from "../src/models";
 import { PageFrontmatter } from "../_includes/resources/page/PageModels";
 import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
 import Logo from "../_includes/logos/Logo.11ty";
-import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
+import ListingSection from "../_includes/pageelements/ListingSection.11ty";
 
 export type ExplorePageProps = LayoutProps & PageFrontmatter;
 
@@ -121,32 +121,11 @@ export class ExplorePage {
                   </div>
                 </div>
 
-                <div class="columns is-multiline">
-                  <div class="column is-12">
-                    <div class="columns is-vcentered is-mobile">
-                      <div class="column is-8">
-                        <h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
-                          Latest
-                        </h1>
-                      </div>
-                      <div class="column has-text-right">
-                        <a
-                          class="button is-rounded is-outlined"
-                          href="/latest/"
-                        >
-                          More...
-                        </a>
-                      </div>
-                    </div>
-                    <div class="columns is-multiline">
-                      {latestContent.map((resource) => {
-                        return (
-                          <ResourceCard resource={resource}></ResourceCard>
-                        );
-                      })}
-                    </div>
-                  </div>
-                </div>
+                <ListingSection
+                  title="Latest"
+                  resources={latestContent}
+                  moreLink="/latest/"
+                />
               </div>
 
               <div class="column is-full-touch is-3">

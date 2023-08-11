@@ -3,9 +3,9 @@ import h, { JSX } from "vhtml";
 import { LayoutContext, LayoutProps } from "../src/models";
 import { PageFrontmatter } from "../_includes/resources/page/PageModels";
 import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
-import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
 import FeaturedResource from "../_includes/pageelements/FeaturedResource.11ty";
 import MultiColumnSection from "../_includes/pageelements/MultiColumnSection";
+import ListingSection from "../_includes/pageelements/ListingSection.11ty";
 
 export type IndexPageProps = LayoutProps & PageFrontmatter;
 
@@ -101,31 +101,11 @@ export class IndexPage {
           </div>
         </MultiColumnSection>
 
-        <section class="section">
-          <div class="container">
-            <div class="columns is-multiline">
-              <div class="column is-12">
-                <div class="columns is-vcentered is-mobile">
-                  <div class="column is-8">
-                    <h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
-                      Latest Resources
-                    </h1>
-                  </div>
-                  <div class="column has-text-right">
-                    <a class="button is-rounded is-outlined" href="#">
-                      More...
-                    </a>
-                  </div>
-                </div>
-                <div class="columns is-multiline">
-                  {latestContent.map((resource) => {
-                    return <ResourceCard resource={resource}></ResourceCard>;
-                  })}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ListingSection
+          title="Latest"
+          resources={latestContent}
+          moreLink="/latest/"
+        />
       </BaseLayout>
     );
   }
