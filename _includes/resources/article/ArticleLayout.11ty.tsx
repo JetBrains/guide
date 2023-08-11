@@ -9,6 +9,7 @@ import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
+import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
 
 export type ArticleLayoutData = LayoutProps & ArticleFrontmatter;
 
@@ -50,13 +51,7 @@ export function ArticleLayout(
               />
               <ArticleTopics topics={topics} />
 
-              {article.animatedGif && (
-                <img
-                  src={article.animatedGif.file}
-                  alt="Article Screenshot"
-                  class="animated-gif"
-                />
-              )}
+              {article.animatedGif && <AnimatedGif {...article.animatedGif} />}
               {article.screenshot && (
                 <img
                   src={article.screenshot}
