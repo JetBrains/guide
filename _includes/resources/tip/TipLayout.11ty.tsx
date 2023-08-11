@@ -57,17 +57,12 @@ export function TipLayout(
               {tip.video && <VideoPlayer source={tip.video} />}
 
               {content && (
-                <>
-                  <header id="in-depth" class="is-size-3 is-bold mb-3">
-                    In Depth
-                  </header>
-                  <div class="columns">
-                    <div
-                      class="column is-11-desktop content"
-                      dangerouslySetInnerHTML={{ __html: content }}
-                    />
-                  </div>
-                </>
+                <div class="columns mt-2">
+                  <div
+                    class="column is-11-desktop content"
+                    dangerouslySetInnerHTML={{ __html: content }}
+                  />
+                </div>
               )}
               {tip.seealso && <SeeAlso items={tip.seealso} />}
             </main>
