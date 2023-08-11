@@ -3,10 +3,9 @@ import h, { JSX } from "vhtml";
 import { LayoutContext, LayoutProps } from "../src/models";
 import { PageFrontmatter } from "../_includes/resources/page/PageModels";
 import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
-import ResourceCard, {
-  ResourceCardOrientation,
-} from "../_includes/resourcecard/ResourceCard.11ty";
+import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
 import FeaturedResource from "../_includes/pageelements/FeaturedResource.11ty";
+import MultiColumnSection from "../_includes/pageelements/MultiColumnSection";
 
 export type IndexPageProps = LayoutProps & PageFrontmatter;
 
@@ -29,14 +28,14 @@ export class IndexPage {
 
     return (
       <BaseLayout {...data}>
-        <section className="section has-glow-cold-green">
-          <div className="container">
-            <div className="columns is-multiline">
-              <div className="column is-8">
-                <h1 className="mt-2 mb-4 is-size-1 has-text-weight-bold">
+        <section class="section has-glow-cold-green">
+          <div class="container">
+            <div class="columns is-multiline">
+              <div class="column is-8">
+                <h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
                   Welcome to the JetBrains Guide
                 </h1>
-                <p className="subtitle mb-5 has-text-dark">
+                <p class="subtitle mb-5 has-text-dark">
                   Learn about technologies and become a badass developer. We
                   have tips, tutorials, videos, articles and much, much more!
                 </p>
@@ -56,79 +55,69 @@ export class IndexPage {
             cillum dolore eu fugiat nulla pariatur.
           </p>
         </FeaturedResource>
-        <section className="section has-background-grey-lighter">
-          <div className="container">
-            <div className="columns">
-              <div className="column is-three-quarters-desktop">
-                <div className="content">
-                  <h2>Learn something new, quickly</h2>
-                  <p>
-                    JetBrains tools included in the{" "}
-                    <a href="https://www.jetbrains.com/dotnet/">
-                      dotUltimate pack
-                    </a>{" "}
-                    are powerful developer productivity tools. What is the best
-                    way to learn how to harness that power?
-                  </p>
-                  <p>
-                    You can find useful information on our Twitter accounts,{" "}
-                    <a href="https://twitter.com/ReSharper">@ReSharper</a> and{" "}
-                    <a href="https://twitter.com/JetBrainsRider">
-                      @JetBrainsRider
-                    </a>{" "}
-                    , or our{" "}
-                    <a href="https://blog.jetbrains.com/dotnet/">
-                      product blog
-                    </a>
-                    . Plus, the{" "}
-                    <a href="https://www.jetbrains.com/resharper/documentation/documentation.html">
-                      documentation
-                    </a>{" "}
-                    is always there to help. However, wouldn't it be better if
-                    you had everything you needed to learn in one place?
-                  </p>
-                  <p>
-                    We have created the .NET Tools Guide, a collection of
-                    bite-sized visual resources, organized to help spark your
-                    learning. We hope it helps you get into the flow and excel
-                    at what you do.
-                  </p>
-                  <h2>Sharing Feedback and Contributing</h2>
-                  <p>
-                    The .NET Tools Guide is also an open project, with{" "}
-                    <a href="https://github.com/jetbrains/guide">
-                      a repository in GitHub
-                    </a>{" "}
-                    that hosts all the content. We write all the content in
-                    Markdown and render a static site. If you'd like to
-                    contribute to it, please refer to the{" "}
-                    <a href="https://github.com/jetbrains/guide/blob/master/README.md">
-                      README
-                    </a>{" "}
-                    for more information.
-                  </p>
-                </div>
-              </div>
-            </div>
+        <MultiColumnSection>
+          <div>
+            <h2>Learn something new, quickly</h2>
+            <p>
+              JetBrains tools included in the{" "}
+              <a href="https://www.jetbrains.com/dotnet/">dotUltimate pack</a>{" "}
+              are powerful developer productivity tools. What is the best way to
+              learn how to harness that power?
+            </p>
+            <p>
+              You can find useful information on our Twitter accounts,{" "}
+              <a href="https://twitter.com/ReSharper">@ReSharper</a> and{" "}
+              <a href="https://twitter.com/JetBrainsRider">@JetBrainsRider</a> ,
+              or our{" "}
+              <a href="https://blog.jetbrains.com/dotnet/">product blog</a>.
+              Plus, the{" "}
+              <a href="https://www.jetbrains.com/resharper/documentation/documentation.html">
+                documentation
+              </a>{" "}
+              is always there to help. However, wouldn't it be better if you had
+              everything you needed to learn in one place?
+            </p>
+            <p>
+              We have created the .NET Tools Guide, a collection of bite-sized
+              visual resources, organized to help spark your learning. We hope
+              it helps you get into the flow and excel at what you do.
+            </p>
           </div>
-        </section>
+          <div>
+            <h2>Sharing Feedback and Contributing</h2>
+            <p>
+              The .NET Tools Guide is also an open project, with{" "}
+              <a href="https://github.com/jetbrains/guide">
+                a repository in GitHub
+              </a>{" "}
+              that hosts all the content. We write all the content in Markdown
+              and render a static site. If you'd like to contribute to it,
+              please refer to the{" "}
+              <a href="https://github.com/jetbrains/guide/blob/master/README.md">
+                README
+              </a>{" "}
+              for more information.
+            </p>
+          </div>
+        </MultiColumnSection>
+
         <section class="section">
-          <div className="container">
-            <div className="columns is-multiline">
-              <div className="column is-12">
-                <div className="columns is-vcentered is-mobile">
-                  <div className="column is-8">
-                    <h1 className="mt-2 mb-4 is-size-1 has-text-weight-bold">
+          <div class="container">
+            <div class="columns is-multiline">
+              <div class="column is-12">
+                <div class="columns is-vcentered is-mobile">
+                  <div class="column is-8">
+                    <h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
                       Latest Resources
                     </h1>
                   </div>
-                  <div className="column has-text-right">
-                    <a className="button is-rounded is-outlined" href="#">
+                  <div class="column has-text-right">
+                    <a class="button is-rounded is-outlined" href="#">
                       More...
                     </a>
                   </div>
                 </div>
-                <div className="columns is-multiline">
+                <div class="columns is-multiline">
                   {latestContent.map((resource) => {
                     return <ResourceCard resource={resource}></ResourceCard>;
                   })}
