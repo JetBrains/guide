@@ -28,12 +28,6 @@ export class DotNetHomepage {
       limit: 3,
     });
 
-    const playlists = this.getResources({
-      resourceType: "playlist",
-      tag: "dotnet_playlist",
-      limit: 3,
-    });
-
     const tutorials = this.getResources({
       resourceType: "tutorial",
       tag: "dotnet_tutorial",
