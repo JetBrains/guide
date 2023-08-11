@@ -125,8 +125,7 @@ export class WebStormHomepage {
           <ListingSection
             title={`Recent Tutorials`}
             resources={tutorials}
-            moreLink={`/webstorm/playlists/`}
-            separator={true}
+            moreLink={`/webstorm/tutorials/`}
           />
         )}
       </BaseLayout>

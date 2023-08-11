@@ -56,7 +56,7 @@ export class PyCharmHomepage {
           <ListingSection
             title={`Recent Tutorials`}
             resources={tutorials}
-            moreLink={`/pycharm/playlists/`}
+            moreLink={`/pycharm/tutorials/`}
             separator={true}
           />
         )}

@@ -62,7 +62,7 @@ export class ExplorePage {
                         </a>
                       </div>
                       <div class="column mb-1 is-6 py-5">
-                        <a href="/go/">
+                        <a href="/goland/">
                           <figure class="image is-48x48 mb-1">
                             <Logo product="goland" width={48} height={48} />
                           </figure>

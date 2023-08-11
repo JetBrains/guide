@@ -105,7 +105,6 @@ export class IntelliJHomepage {
             title={`Recent Tutorials`}
             resources={tutorials}
             moreLink={`/intellij/playlists/`}
-            separator={true}
           />
         )}
         {playlists && (
