@@ -138,14 +138,6 @@ export class DotNetHomepage {
           />
         )}
 
-        {playlists && (
-          <ListingSection
-            title={`Recent Playlists`}
-            resources={playlists}
-            moreLink={`/dotnet/playlists/`}
-          />
-        )}
-
         <CallToActionSection
           title="Use your IDE on your favorite cloud platform."
           message="Experience a new compact application that connects you to lorem ipsum garbage stuff hey!"
