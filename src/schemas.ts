@@ -78,7 +78,7 @@ export async function dumpSchemas(
       ...getPreamble(key),
       ...{ properties: {} },
       ...{ allOf: [] },
-      ...schema,
+      ...JSON.parse(JSON.stringify(schema)),
     };
 
     const resourceTypeName = key.toLowerCase();
