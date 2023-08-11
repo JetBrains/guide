@@ -10,7 +10,7 @@ subtitle: Quick ways to navigate to other solutions
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./open-recent-projects.gif
+  file: ./open-recent-projects.webm
   width: 540
   height: 540
 ---

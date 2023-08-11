@@ -11,7 +11,7 @@ subtitle: Your next VCS action at hand!
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./guide.gif
+  file: ./guide.webm
   width: 500
   height: 324
 ---

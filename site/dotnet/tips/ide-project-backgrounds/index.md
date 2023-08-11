@@ -10,7 +10,7 @@ subtitle: Personally style your IDE and Projects with custom background images
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./ide-project-backgrounds.gif
+  file: ./ide-project-backgrounds.webm
   width: 540
   height: 540
 ---

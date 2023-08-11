@@ -12,7 +12,7 @@ subtitle: There's no faster way to iterate!
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./guide.gif
+  file: ./guide.webm
   width: 643
   height: 375
 ---

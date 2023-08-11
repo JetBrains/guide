@@ -13,7 +13,7 @@ subtitle: Master all the C# 8 language features!
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./guide.gif
+  file: ./guide.webm
   width: 500
   height: 256
 ---

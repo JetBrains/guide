@@ -9,6 +9,7 @@ import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import { Author } from "../../references/author/AuthorModels";
+import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
 
 export type PlaylistLayoutData = LayoutProps & PlaylistFrontmatter;
 
@@ -95,11 +96,9 @@ export function PlaylistLayout(
             <h2 class="is-size-2">{item.title}</h2>
             {item.subtitle && <p class="subtitle is-4">{item.subtitle}</p>}
             {item.animatedGif && (
-              <img
-                src={item.animatedGif.file}
-                alt="Tip Screenshot"
+              <AnimatedGif
+                {...item.animatedGif}
                 width="600"
-                class="animated-gif"
                 style="object-fit: contain; object-position: top"
               />
             )}
@@ -111,11 +110,7 @@ export function PlaylistLayout(
                 style="object-fit: contain; object-position: top"
               />
             )}
-            {item.video && (
-              <VideoPlayer
-                source={item.video}
-              ></VideoPlayer>
-            )}
+            {item.video && <VideoPlayer source={item.video}></VideoPlayer>}
             {itemContent && (
               <div
                 class="content"

@@ -13,7 +13,7 @@ subtitle: 'Run your tests in the background, while you code.'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./tip.gif
+  file: ./tip.webm
   width: 640
   height: 360
 ---

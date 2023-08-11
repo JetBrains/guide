@@ -11,7 +11,7 @@ subtitle: Easily read common code in column-style layout!
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./guide.gif
+  file: ./guide.webm
   width: 540
   height: 298
 ---

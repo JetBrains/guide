@@ -13,7 +13,7 @@ subtitle: Find areas of your code base that may need better test coverage.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./tip.gif
+  file: ./tip.webm
   width: 640
   height: 360
 ---

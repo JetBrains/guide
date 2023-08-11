@@ -11,7 +11,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./tip.gif
+  file: ./tip.webm
   width: 600
   height: 265
 ---

@@ -10,7 +10,7 @@ subtitle: Keep your projects organized for an efficient experience
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./manage-projects.gif
+  file: ./manage-projects.webm
   width: 600
   height: 300
 ---

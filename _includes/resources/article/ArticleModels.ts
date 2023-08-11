@@ -9,7 +9,9 @@ export const ArticleFrontmatter = Type.Intersect([
     animatedGif: Type.Optional(
       Type.Object(
         {
-          file: Type.String({ description: "File name of the animated GIF" }),
+          file: Type.String({
+            description: "File name of the animated GIF, can be webm or gif",
+          }),
           width: Type.Number({
             description: "Width the animated GIF should be rendered",
           }),

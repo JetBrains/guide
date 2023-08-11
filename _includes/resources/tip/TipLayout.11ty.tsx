@@ -9,6 +9,7 @@ import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
+import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
 
 export type TipLayoutData = LayoutProps & TipFrontmatter;
 
@@ -44,13 +45,8 @@ export function TipLayout(
               <ArticleAuthor author={author} displayDate={tip.displayDate} />
               <ArticleTopics topics={topics} />
 
-              {tip.animatedGif && (
-                <img
-                  src={tip.animatedGif.file}
-                  alt="Tip Screenshot"
-                  class="animated-gif"
-                />
-              )}
+              {tip.animatedGif && <AnimatedGif {...tip.animatedGif} />}
+
               {tip.screenshot && (
                 <img
                   src={tip.screenshot}

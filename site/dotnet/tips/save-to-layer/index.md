@@ -12,7 +12,7 @@ subtitle: Save settings to the scope you need them!
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./guide.gif
+  file: ./guide.webm
   width: 500
   height: 314
 ---

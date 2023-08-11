@@ -12,7 +12,7 @@ subtitle: Move code the smart way!
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./31-move-code.gif
+  file: ./31-move-code.webm
   height: 400
   width: 500
 ---
