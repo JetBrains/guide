@@ -130,7 +130,10 @@ export class ExplorePage {
                         </h1>
                       </div>
                       <div class="column has-text-right">
-                        <a class="button is-rounded is-outlined" href="#">
+                        <a
+                          class="button is-rounded is-outlined"
+                          href="/latest/"
+                        >
                           More...
                         </a>
                       </div>

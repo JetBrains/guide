@@ -19,6 +19,7 @@ export class LatestLayout {
         data: "collections.all",
         size: 12,
         reverse: true,
+        flag: 99,
         before: function (paginationData: any[], fullData: any) {
           const results: Resource[] = [];
           const allResources = fullData.collections.allResources;
