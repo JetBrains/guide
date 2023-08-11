@@ -84,7 +84,7 @@ export async function registerIncludes(
         Playlist: PlaylistFrontmatter,
         Author: AuthorFrontmatter,
         Topic: TopicFrontmatter,
-        Resource: ResourceFrontmatter
+        Resource: ResourceFrontmatter,
       };
       const schemasOutputPath = path.join(
         "docs",

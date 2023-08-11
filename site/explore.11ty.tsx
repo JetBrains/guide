@@ -37,14 +37,14 @@ export class ExplorePage {
                       skills?
                     </p>
 
-                    <div class="buttons mt-6">
-                      <a
-                        class="button is-rounded is-primary is-outlined"
-                        href="#"
-                      >
-                        Browse...
-                      </a>
-                    </div>
+                    {/*<div class="buttons mt-6">*/}
+                    {/*  <a*/}
+                    {/*    class="button is-rounded is-primary is-outlined"*/}
+                    {/*    href="#"*/}
+                    {/*  >*/}
+                    {/*    Browse...*/}
+                    {/*  </a>*/}
+                    {/*</div>*/}
                   </div>
                   <div class="column is-12 is-6-desktop">
                     <div class="columns is-multiline is-mobile">
@@ -154,7 +154,7 @@ export class ExplorePage {
                       <a href="/dotnet/">.NET</a>
                     </li>
                     <li>
-                      <a href="/go/">GoLand</a>
+                      <a href="/goland/">GoLand</a>
                     </li>
                     <li>
                       <a href="/idea/">IntelliJ IDEA</a>
@@ -170,7 +170,7 @@ export class ExplorePage {
                   <p class="menu-label">What's new?</p>
                   <ul class="menu-list">
                     <li>
-                      <a>Latest</a>
+                      <a href="/latest/">Latest</a>
                     </li>
                   </ul>
 
