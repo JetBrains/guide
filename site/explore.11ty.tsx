@@ -12,7 +12,7 @@ export class ExplorePage {
   data() {
     return {
       title: "Explore",
-      subtitle: "About the .NET Tools Guide",
+      subtitle: "Explore the JetBrains Guide",
       layout: "",
       eleventyExcludeFromCollections: true,
     };
