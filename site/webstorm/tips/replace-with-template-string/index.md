@@ -16,8 +16,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Want to use a template string (aka template literal) instead of a regular
-  string? Press _⌥Enter / Alt+Enter_ and select _Replace with template string_.
 ---
-
+Want to use a template string (aka template literal) instead of a regular string? Press _⌥Enter / Alt+Enter_ and select _Replace with template string_.

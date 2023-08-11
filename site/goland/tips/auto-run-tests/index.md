@@ -16,18 +16,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/go/test-runner-tab.html#Test_Runner_Tab.xml'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./thumbnail.png
-  url: >-
-    https://www.youtube.com/watch?v=1DMiHVvRdZc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=3
-leadin: |
-  Test-driven development (TDD) means always run your tests.
-
-  GoLand makes that easy by automatically running tests after
-  a small period of wait time.
-
-  You can also configure the wait time to suit your style.
-
-  <span class="tag is-rounded">New in 2017.3</span>
+video: >-
+  https://www.youtube.com/watch?v=1DMiHVvRdZc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=3
 ---
+Test-driven development (TDD) means always run your tests.
 
+GoLand makes that easy by automatically running tests after
+a small period of wait time.
+
+You can also configure the wait time to suit your style.
+
+<span class="tag is-rounded">New in 2017.3</span>

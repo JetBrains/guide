@@ -11,9 +11,7 @@ topics:
 author: maartenba
 subtitle: Olena Borzenko
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/NbkiKdHV0KQ'
+video: 'https://youtu.be/NbkiKdHV0KQ'
 ---
 
 Traditionally, when building SPA applications it feels a lot like we are looking at the moon. On the light side, we have the shiny and pretty UI, which everyone knows and loves. On the dark side, there is the complicated server-side logic behind the scenes we need to manage.

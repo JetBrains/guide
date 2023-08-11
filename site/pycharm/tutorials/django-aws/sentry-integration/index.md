@@ -11,9 +11,7 @@ subtitle: >-
   Track errors & monitor performance in all major languages & frameworks with
   Sentry
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://youtu.be/1Sc7T_muccQ'
+video: 'https://youtu.be/1Sc7T_muccQ'
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, 

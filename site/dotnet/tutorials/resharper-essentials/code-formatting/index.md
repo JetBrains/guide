@@ -11,9 +11,7 @@ topics:
 author: citizenmatt
 subtitle: Format and reformat code for consistency in your solution.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/QpeTw4p3aeU'
+video: 'https://youtu.be/QpeTw4p3aeU'
 ---
 
 ### Format and Reformat Code

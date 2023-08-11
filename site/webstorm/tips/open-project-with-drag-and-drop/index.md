@@ -17,8 +17,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Did you know that you can drag and drop a folder from your file manager or
-  desktop onto the WebStorm _Welcome_ screen to open it?
 ---
-
+Did you know that you can drag and drop a folder from your file manager or desktop onto the WebStorm _Welcome_ screen to open it?

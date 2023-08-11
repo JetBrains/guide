@@ -11,9 +11,7 @@ topics:
 author: maartenba
 subtitle: Poornima Nayar
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/y7_gJXrVzLk'
+video: 'https://youtu.be/y7_gJXrVzLk'
 ---
 
 No matter the industry, applications need to talk to each other. So, developers often build bridges – Application Programming Interfaces (APIs) – to allow one system to communicate with another.

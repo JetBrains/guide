@@ -14,11 +14,6 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 320
-leadin: >
-  Created a file, then added a class and realized you want to use a different
-  file name? 
-
-  Press *Alt+Enter* on the class name to rename the file so that it matches
-  class name.
 ---
-
+Created a file, then added a class and realized you want to use a different file name? 
+Press *Alt+Enter* on the class name to rename the file so that it matches class name.

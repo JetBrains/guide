@@ -13,8 +13,7 @@ subtitle: >-
   Use the Unreal Editor log and the debugger to see what's going on in your
   game.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
+video:
   url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
   start: 1812
   end: 2239

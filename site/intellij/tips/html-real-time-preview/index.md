@@ -7,9 +7,6 @@ author: tg
 subtitle: See what your changes look like as you make them
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/3XkXEi5TcuQ='
 seealso:
   - title: (video) Inline Method Refactoring in IntelliJ IDEA
     href: 'https://www.youtube.com/watch?v=uYsFlbXJbog'
@@ -20,8 +17,6 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Preview output of HTML files
     href: >-
       https://www.jetbrains.com/help/idea/editing-html-files.html#ws_html_preview_output
-leadin: >
-  IntelliJ IDEA comes with a built-in preview for HTML, so we can get a good
-  idea of what our changes will look like as we're making them.
+video: 'https://youtu.be/3XkXEi5TcuQ='
 ---
-
+IntelliJ IDEA comes with a built-in preview for HTML, so we can get a good idea of what our changes will look like as we're making them.

@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Maven directory structure and your pom.xml file
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=Xatr8AZLOsE&start=372s'
+video: 'https://www.youtube.com/watch?v=Xatr8AZLOsE&start=372s'
 ---
 
 # `Pom.xml` file

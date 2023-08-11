@@ -11,15 +11,8 @@ seealso:
     href: 'https://www.jetbrains.com/help/datagrip/creating-diagrams.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://youtu.be/_vPIrbFm7Hs'
-leadin: >
-  *PyCharm Professional comes with all database features from JetBrains
-  DataGrip.*    
-
-
-  DataGrip helps to seamlessly connect/manage/create with different databases
-  and helps boost developer productivity.
+video: 'https://youtu.be/_vPIrbFm7Hs'
 ---
+*PyCharm Professional comes with all database features from JetBrains DataGrip.*    
 
+DataGrip helps to seamlessly connect/manage/create with different databases and helps boost developer productivity.

@@ -15,9 +15,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Need to launch tools like npm and Yarn, open recent projects, or start a run
-  configuration? You can do it all from one place using the *Run Anything*
-  action (*Ctrl+Ctrl*).
 ---
-
+Need to launch tools like npm and Yarn, open recent projects, or start a run configuration? You can do it all from one place using the *Run Anything* action (*Ctrl+Ctrl*).

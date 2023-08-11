@@ -16,10 +16,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  With the *Add Carets to Ends of Selected Lines* action, you can quickly place
-  carets at the end of each selected line. To try it, select some code and press
-  *⌥⇧G / Alt+Shift+G*. Press the *Escape* key when you’re ready to exit the
-  multi-caret editing mode.
 ---
-
+With the *Add Carets to Ends of Selected Lines* action, you can quickly place carets at the end of each selected line. To try it, select some code and press *⌥⇧G / Alt+Shift+G*. Press the *Escape* key when you’re ready to exit the multi-caret editing mode.

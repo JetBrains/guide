@@ -15,8 +15,6 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: |
-  Use the *Structure* tool window (*Cmd+7/Alt+7*) to get an overview of 
-  the currently opened file and for quick navigation.
 ---
-
+Use the *Structure* tool window (*Cmd+7/Alt+7*) to get an overview of 
+the currently opened file and for quick navigation.

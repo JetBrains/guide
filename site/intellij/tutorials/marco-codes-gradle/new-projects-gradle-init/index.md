@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: How to create new Gradle projects
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=gKPMKRnnbXU&start=1120s'
+video: 'https://www.youtube.com/watch?v=gKPMKRnnbXU&start=1120s'
 ---
 
 # Creating new Gradle Project

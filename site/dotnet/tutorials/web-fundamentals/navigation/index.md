@@ -12,9 +12,7 @@ topics:
 author: pwe
 subtitle: How can you find what you want? Let's look at navigating around a code base.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/qd7OboZCW6E'
+video: 'https://youtu.be/qd7OboZCW6E'
 ---
 
 Rider provides loads of ways to navigate efficiently across your codebase, and the IDE itself. Let’s take a look at some of them.

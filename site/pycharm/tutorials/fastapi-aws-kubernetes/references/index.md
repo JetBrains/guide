@@ -10,9 +10,7 @@ topics:
 author: mm
 subtitle: Reference materials which helped to prepare this tutorial.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=U2TAmZKeCRQ'
+video: 'https://www.youtube.com/watch?v=U2TAmZKeCRQ'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.

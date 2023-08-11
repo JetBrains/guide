@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-04-15
 title: Auto-Run Tests
 topics:
@@ -17,17 +16,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/test-runner-tab.html#Test_Runner_Tab.xml
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=VNNEXUl_FWM'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/4kHncS_gPX0'
-leadin: |
-  *Hands-free TDD mode.*    
-
-  Test-driven development (TDD) means always run your tests. PyCharm 
-  makes that easy
+video: 'https://youtu.be/4kHncS_gPX0'
 ---
 
 TDD, or test-driven development, means "always be testing." In fact, the 

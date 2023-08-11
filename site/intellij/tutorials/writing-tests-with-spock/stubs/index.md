@@ -10,9 +10,7 @@ subtitle: >-
   application code. They can provide simple interfaces, so we don't have to
   initialise the whole application to test a section.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/i5Qu3qYOfsM?start=1544'
+video: 'https://youtu.be/i5Qu3qYOfsM?start=1544'
 ---
 
 Mocks are useful for checking calls out of our code, [Stubs](http://spockframework.org/spock/docs/2.0/all_in_one.html#_stubbing) are useful for providing data or values into the code we're testing.

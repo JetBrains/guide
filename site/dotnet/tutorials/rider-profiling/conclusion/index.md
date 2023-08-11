@@ -14,9 +14,7 @@ subtitle: >-
   What have we learned? Profiling, profiler modes, optimizing code, DPA, and
   more. Let's summarize!
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/2C6Nx7jJegg'
+video: 'https://youtu.be/2C6Nx7jJegg'
 ---
 
 ### Optimizing Application Performance with Rider

@@ -10,9 +10,7 @@ subtitle: >-
   Make a PyCharm project and virtual environment with dependencies, then
   configure PyCharm to use pytest.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://youtu.be/mLYTP41H8U0'
+video: 'https://youtu.be/mLYTP41H8U0'
 ---
 
 Python has projects and PyCharm does as well.

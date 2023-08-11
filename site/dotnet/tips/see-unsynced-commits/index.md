@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2022-12-15
 title: See Unsynced Commits
 topics:
@@ -15,15 +14,7 @@ seealso:
       https://www.jetbrains.com/help/rider/Settings_Version_Control_Git.html#90206995
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://youtu.be/K6v4tAmXfLs'
-leadin: |
-  *Don't let other work trample on yours.*    
-
-  You're on a feature branch.
-  But work continues on main, and it might overlap with yours.
-  Let the IDE warn you when other branches have commits.
+video: 'https://youtu.be/K6v4tAmXfLs'
 ---
 ## The Problem
 

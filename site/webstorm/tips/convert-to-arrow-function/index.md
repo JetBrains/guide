@@ -16,13 +16,7 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Instead of manually converting a function to a variable holding an arrow
-  function, let WebStorm 
-
-  do that for you: press *Alt+Enter* on the name in the function definition and
-  select the 
-
-  corresponding intention.
 ---
-
+Instead of manually converting a function to a variable holding an arrow function, let WebStorm 
+do that for you: press *Alt+Enter* on the name in the function definition and select the 
+corresponding intention.

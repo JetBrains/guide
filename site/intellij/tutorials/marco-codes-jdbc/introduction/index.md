@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Overview
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=KgXq2UBNEhA'
+video: 'https://www.youtube.com/watch?v=KgXq2UBNEhA'
 ---
 
 ## Introduction

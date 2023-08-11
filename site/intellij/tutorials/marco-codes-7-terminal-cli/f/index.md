@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Enough said! f%&!
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/6FFNeDiRGK0&start=320s'
+video: 'https://youtu.be/6FFNeDiRGK0&start=320s'
 ---
 
 ## f%&!

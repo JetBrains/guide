@@ -9,9 +9,7 @@ topics:
 author: mm
 subtitle: Writing and running BDD tests using Behave
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://youtu.be/0XUr1mXGRbk'
+video: 'https://youtu.be/0XUr1mXGRbk'
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, we are going to work on Behavior-driven development (or BDD) testing. It is an agile software development technique that encourages collaboration between developers, QA and non-technical or business participants in a software project.

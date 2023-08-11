@@ -14,9 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Swap and replace any HTML element
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/IDNdm-1x5SM'
+video: 'https://youtu.be/IDNdm-1x5SM'
 ---
 
 HTMX works on the philosophy of **[Locality of Behavior](https://htmx.org/essays/locality-of-behaviour/)**. Adopting this philosophy means we will define HTMX definitions and the result of the behavior as close to each other as possible. The more relative everything is, the more decipherable our application is to developers needing to maintain and adapt our codebase.

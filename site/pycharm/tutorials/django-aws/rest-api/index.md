@@ -9,9 +9,7 @@ topics:
 author: mm
 subtitle: 'Writing CRUD (Create, Read, Update, Delete) in Django Rest Framework.'
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://youtu.be/JXXIG6Qy4A4'
+video: 'https://youtu.be/JXXIG6Qy4A4'
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step,

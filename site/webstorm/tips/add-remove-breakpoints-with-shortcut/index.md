@@ -17,8 +17,6 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: |
-  Want to add or remove a breakpoint to the current line without using a mouse?
-  Just press _⌘F8_ on macOS or _Ctrl+F8_ on Windows/Linux.
 ---
-
+Want to add or remove a breakpoint to the current line without using a mouse?
+Just press _⌘F8_ on macOS or _Ctrl+F8_ on Windows/Linux.

@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Getting a JUnit 5 Test running
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/we3zJE3hlWE?start=102'
+video: 'https://youtu.be/we3zJE3hlWE?start=102'
 ---
 
 ## Creating a running a Junit 5 Test

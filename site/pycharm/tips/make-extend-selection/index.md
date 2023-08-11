@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-03-10
 title: Make and Extend Selection Using Keyboard
 topics:
@@ -18,18 +17,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#shrink_selection
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=cktFGEXPGks'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/mvZg7TaRjCM'
-leadin: |
-  *Want to select code and remain keyboard-centric?*
-
-  PyCharm has actions and keybindings to quickly select code, 
-  semantically, through scopes and across languages. Extend 
-  and shrink selections with ease.
+video: 'https://youtu.be/mvZg7TaRjCM'
 ---
 
 In coding, we select code and operate on it. For example, move it to 

@@ -18,10 +18,8 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: |
-  The quick way to find the current file in the *Project* tool window.
-
-  - Focus on the file opened in the editor and press *⌥F1 / Alt+F1*.
-  - In the popup that appears, select *Project View* and press *Enter*.
 ---
+The quick way to find the current file in the *Project* tool window.
 
+- Focus on the file opened in the editor and press *⌥F1 / Alt+F1*.
+- In the popup that appears, select *Project View* and press *Enter*.

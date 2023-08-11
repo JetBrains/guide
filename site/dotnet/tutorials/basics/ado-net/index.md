@@ -10,9 +10,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: 'Working with databases using DbConnection, DbCommand, and DbDataReader'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/BxCrzUIm5kU'
+video: 'https://youtu.be/BxCrzUIm5kU'
 ---
 
 ADO.NET is a data service for .NET developers. In the older version of the .NET framework, Microsoft packaged it along with other libraries. More recently, the ADO.NET libraries ship in NuGet packages, with `System.Data.SqlClient` being specifically for SQL Server access. ADO.NET is a low-level interface to our data storage of choice, and its use depends heavily on our understanding of SQL.

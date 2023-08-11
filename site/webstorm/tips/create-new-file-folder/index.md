@@ -18,12 +18,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Focus on the [_Project_ tool
-  window](https://www.jetbrains.com/help/webstorm/project-tool-window.html) and
-  press _⌘+N / Alt+Insert_ - WebStorm will open the _New_ popup. Use this popup
-  to add a new file quickly. You can also create a new folder for that new file:
-  type the name of the folder (or folders) and then add `/` before the file
-  name.
 ---
-
+Focus on the [_Project_ tool window](https://www.jetbrains.com/help/webstorm/project-tool-window.html) and press _⌘+N / Alt+Insert_ - WebStorm will open the _New_ popup. Use this popup to add a new file quickly. You can also create a new folder for that new file: type the name of the folder (or folders) and then add `/` before the file name.

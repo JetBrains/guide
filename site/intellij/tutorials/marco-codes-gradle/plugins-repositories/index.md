@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Managing plugins and working with respositories
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=gKPMKRnnbXU&start=920s'
+video: 'https://www.youtube.com/watch?v=gKPMKRnnbXU&start=920s'
 ---
 
 # Plugin Repositories

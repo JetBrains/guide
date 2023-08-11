@@ -10,26 +10,15 @@ subtitle: >-
   enjoyable
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./thumbnail.png
-  url: >-
-    https://www.youtube.com/watch?v=UKtT9tbt0Xg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=28
-leadin: >
-  The IDE will show you completion suggestions based on the type used in the
-  function call for the parameters in the function body.
-
-
-  **How to use:**
-
-
-  You don't need to do anything to use this feature as the IDE will
-  automatically infer the code suggestions based on what you typed already.
-
-
-  **Pro tip:** Use the Smart Type Completion, _Ctrl + Shift + Space on
-  Windows/Linux_ or _^ + ⇧ + Space on macOS_, to narrow-down the list further.
-
-
-  <span class="tag is-rounded">New in 2021.2</span>
+video: >-
+  https://www.youtube.com/watch?v=UKtT9tbt0Xg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=28
 ---
+The IDE will show you completion suggestions based on the type used in the function call for the parameters in the function body.
 
+**How to use:**
+
+You don't need to do anything to use this feature as the IDE will automatically infer the code suggestions based on what you typed already.
+
+**Pro tip:** Use the Smart Type Completion, _Ctrl + Shift + Space on Windows/Linux_ or _^ + ⇧ + Space on macOS_, to narrow-down the list further.
+
+<span class="tag is-rounded">New in 2021.2</span>

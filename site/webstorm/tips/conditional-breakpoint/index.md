@@ -13,9 +13,5 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
-leadin: >
-  Right-click on a breakpoint to configure its behavior: for instance, you can
-  add a condition so that the execution will only be stopped when that condition
-  is met.
 ---
-
+Right-click on a breakpoint to configure its behavior: for instance, you can add a condition so that the execution will only be stopped when that condition is met.

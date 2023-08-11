@@ -8,14 +8,12 @@ author: hs
 subtitle: Visualize the flow of data through a stream
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/rVFqXZNoq-s'
 seealso:
   - title: (video) Pro Tip Debugging Java Streams
     href: 'https://www.youtube.com/watch?v=BeJu9bMPLGU'
   - title: (documentation) Analyze Stream Operations in IntelliJ IDEA
     href: 'https://www.jetbrains.com/help/idea/analyze-java-stream-operations.html'
+video: 'https://youtu.be/rVFqXZNoq-s'
 ---
 
 Debugging stream operations is easier if you can visualize the flow of data

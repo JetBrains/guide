@@ -10,9 +10,7 @@ topics:
 author: mm
 subtitle: Integrating FastAPI with JWT Tokens.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=88ka51diyUc'
+video: 'https://www.youtube.com/watch?v=88ka51diyUc'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.

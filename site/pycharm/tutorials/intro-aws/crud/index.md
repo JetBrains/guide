@@ -7,9 +7,7 @@ topics:
 author: mm
 subtitle: 'Beginning CRUD (Create, Read, Update, Delete) Operations'
 thumbnail: ../thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/3imrJukMeMQ'
+video: 'https://youtu.be/3imrJukMeMQ'
 ---
 
 Hello everyone, today I will be working on APIs basically focusing in CRUD operations.

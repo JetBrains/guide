@@ -10,9 +10,7 @@ topics:
 author: mm
 subtitle: Setting up database migrations with Alembic.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=CWm40_n0eu8'
+video: 'https://www.youtube.com/watch?v=CWm40_n0eu8'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. In this tutorial we are going to connect FastAPI with Postgres. 

@@ -7,9 +7,7 @@ author: hs
 subtitle: Get more productive and less error-prone with refactorings.
 thumbnail: thumbnail.png
 videoBottom: true
-longVideo:
-  poster: poster_long.png
-  url: 'https://youtu.be/4kzEbqaT2DY'
+video: 'https://youtu.be/4kzEbqaT2DY'
 ---
 
 In the previous step, we saw how PyCharm can run your Python code.

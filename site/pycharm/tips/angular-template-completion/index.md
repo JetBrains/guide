@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2018-11-04
 title: Better Autocomplete Results in Angular Templates
 topics:
@@ -14,18 +13,7 @@ seealso:
     href: 'https://blog.jetbrains.com/webstorm/2018/09/webstorm-2018-3-eap-3/'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=YhCMWZfQP-w'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=JUmIiZpazic'
-leadin: |
-  *Angular template autocomplete gives tons of choices. Which one is best?*
-
-  There's a difference between mediocre autocomplete and "you read my mind." 
-  PyCharm Professional's inclusion of WebStorm inherits its ongoing efforts 
-  to provide helpful autocompletion.
+video: 'https://www.youtube.com/watch?v=JUmIiZpazic'
 ---
 
 When you're writing Angular applications and working in templates, you're

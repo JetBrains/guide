@@ -18,9 +18,5 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
-leadin: >
-  Feel like having something cute in the background while coding? Set a custom
-  background picture in *Preferences/Settings | Appearance & Behavior | 
-  Appearance | Background Image…*
 ---
-
+Feel like having something cute in the background while coding? Set a custom background picture in *Preferences/Settings | Appearance & Behavior |  Appearance | Background Image…*

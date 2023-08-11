@@ -13,22 +13,13 @@ seealso:
     href: 'https://www.jetbrains.com/help/go/navigation-bar.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./thumbnail.png
-  url: >-
-    https://www.youtube.com/watch?v=xfrzu-GMvjU&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=11
-leadin: >
-  Use the **Navigation Bar** to move around files, even when the whole UI is
-  hidden away.
-
-
-  **How to use:**
-
-
-  Bring the **Navigation Bar**, _Alt + Home on Windows/Linux_ or _⌘ + ↑ on
-  macOS_.
-
-
-  <span class="tag is-rounded">New in 2017.3</span>
+video: >-
+  https://www.youtube.com/watch?v=xfrzu-GMvjU&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=11
 ---
+Use the **Navigation Bar** to move around files, even when the whole UI is hidden away.
 
+**How to use:**
+
+Bring the **Navigation Bar**, _Alt + Home on Windows/Linux_ or _⌘ + ↑ on macOS_.
+
+<span class="tag is-rounded">New in 2017.3</span>

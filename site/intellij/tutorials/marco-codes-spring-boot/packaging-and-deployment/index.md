@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Creating a .jar file and executing it
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=QuvS_VLbGko&start=4437s'
+video: 'https://www.youtube.com/watch?v=QuvS_VLbGko&start=4437s'
 ---
 
 ## What's in the video?

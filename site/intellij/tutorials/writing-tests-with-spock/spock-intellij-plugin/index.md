@@ -7,9 +7,7 @@ topics:
 author: tg
 subtitle: Add the Spock plugin to IntelliJ IDEA to get some extra help in the IDE.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/i5Qu3qYOfsM?start=617'
+video: 'https://youtu.be/i5Qu3qYOfsM?start=617'
 ---
 We've seen that we can write, run and refactor Spock tests in IntelliJ IDEA. We can also [install a plugin](https://plugins.jetbrains.com/plugin/7114-spock-framework-enhancements) for extra support, if we want (note: this is written and supported by a third party, it's _not_ a JetBrains plugin). It adds some helpful behaviour, like syntax highlighting for the labels, and inspections to help us see if we're using the labels correctly.
 

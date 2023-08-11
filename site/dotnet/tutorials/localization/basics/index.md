@@ -12,9 +12,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: 'Working with Cultures, Resources, & Apps'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/ieNmK6zAYns'
+video: 'https://youtu.be/ieNmK6zAYns'
 ---
 
 Localization is the process of modifying our application to fit within a particular culture. We can think of culture as the customs, language, and social constructs of a specific nation, people, or social group. When attempting to localize an application, we should keep in mind all the presentational elements: language, images, and colors are a few examples. Language, the way we communicate thoughts, is ideally where most folks would start.

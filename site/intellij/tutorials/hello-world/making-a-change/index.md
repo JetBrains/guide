@@ -8,9 +8,7 @@ subtitle: >-
   Editing the output of our Hello World application to check it's working as we
   expect.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/H_XxH66lm3U?start=747'
+video: 'https://youtu.be/H_XxH66lm3U?start=747'
 ---
 
 Let's go ahead and make a change to the Java file and see if you get a new message printed out when you run your _HelloWorld JAR_ configuration again.

@@ -8,9 +8,7 @@ subtitle: >-
   You can share settings across your own instances of IntelliJ IDEA or with your
   colleagues
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/pnKBkblUV84'
+video: 'https://youtu.be/pnKBkblUV84'
 ---
 
 ## Sharing IntelliJ IDEA Settings

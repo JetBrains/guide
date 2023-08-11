@@ -13,9 +13,7 @@ subtitle: >-
   Working with NuGet, including search with typos, CamelHumps, Update All, and
   more!
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/lnDQEcFWZIA'
+video: 'https://youtu.be/lnDQEcFWZIA'
 ---
 
 ### Managing Package References in Rider

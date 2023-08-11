@@ -12,8 +12,7 @@ topics:
 author: citizenmatt
 subtitle: 'Find your way around your code base, asset usages, and more.'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
+video:
   url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
   start: 528
   end: 693

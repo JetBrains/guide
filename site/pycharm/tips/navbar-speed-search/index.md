@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-01-23
 title: Narrow Navigation Bar With Speed Search
 topics:
@@ -21,18 +20,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=PRPGmkGrMGI'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=lr1IX8qAqdU'
-leadin: |
-  *Want to quickly select a file in a directory, without the mouse?*
-
-  Want to really move fast through listings? Speed search is the all-purpose 
-  facility for narrowing to what you're looking for. Parts of strings, 
-  punctuation, file extensions...whatever it takes to filter down the list.
+video: 'https://www.youtube.com/watch?v=lr1IX8qAqdU'
 ---
 
 We've discussed getting into the flow by reducing UI clutter and being 

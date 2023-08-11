@@ -11,9 +11,7 @@ topics:
 author: maartenba
 subtitle: Martin Beeby
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/EF3n4Qn1Pwc'
+video: 'https://youtu.be/EF3n4Qn1Pwc'
 ---
 
 In this demonstration-heavy session, we illustrate our latest techniques, tools, and libraries for developing a .NET application on AWS. From within Rider, we will look at different ways to run your .NET applications and show you how to integrate with various AWS services, including Logging, Managed SQL Server, and Machine Learning Models. We will cover ways to build and run serverless and containerized applications as well as show you how you can move legacy .NET apps to the cloud. 

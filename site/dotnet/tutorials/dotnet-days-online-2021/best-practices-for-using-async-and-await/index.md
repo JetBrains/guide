@@ -11,9 +11,7 @@ topics:
 author: maartenba
 subtitle: Damir Arh
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/4JHwBX_qQE0'
+video: 'https://youtu.be/4JHwBX_qQE0'
 ---
 
 The async and await keywords have been a part of the C# programming language for a long time. Despite that, they still hide traps that not only beginners but also more experienced developers occasionally fall into.

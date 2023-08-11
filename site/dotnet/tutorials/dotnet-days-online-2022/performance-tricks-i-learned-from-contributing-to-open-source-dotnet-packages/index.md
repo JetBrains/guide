@@ -14,9 +14,7 @@ topics:
 author: maartenba
 subtitle: Daniel Marbach
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/NELaITuylDg'
+video: 'https://youtu.be/NELaITuylDg'
 ---
 
 As a practical learner, I've found that performance optimizations are my biggest challenge and that I've learned the most helpful tricks from them, mostly by trial and error. It turns out the Azure .NET SDK is a perfect “playground” for learning those tricks – it's maintained by people who care and give feedback.

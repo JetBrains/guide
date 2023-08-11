@@ -11,9 +11,7 @@ topics:
 author: pwe
 subtitle: 'What''s your code doing? Step through code with the debugger, and find out.'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/10HzlZSEqVQ'
+video: 'https://youtu.be/10HzlZSEqVQ'
 ---
 
 Even the best codebases have bugs. For JavaScript developers, our IDEs bundle WebStorm’s debugger. Let’s take a look at its key features.

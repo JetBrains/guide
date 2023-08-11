@@ -15,9 +15,7 @@ subtitle: >-
   Let's dive into the most important productivity shortcuts, editing, and code
   completion.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/yvrheKkjOa4'
+video: 'https://youtu.be/yvrheKkjOa4'
 ---
 
 ### Get Going with ReSharper and <kbd>Alt-Enter</kbd>

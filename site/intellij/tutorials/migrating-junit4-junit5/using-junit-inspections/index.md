@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Using JUnit 5 Inspections to migrate
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/F8UTTTDtbH0?start=247'
+video: 'https://youtu.be/F8UTTTDtbH0?start=247'
 ---
 
 Use **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) to load IntelliJ IDEA preferences and type in 'inspections'. [IntelliJ IDEA's inspections](https://www.jetbrains.com/help/idea/code-inspection.html#access-inspections-and-settings) can be very helpful for migrating code. In particular there are a number of inspections for JUnit tests.

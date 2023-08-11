@@ -8,9 +8,7 @@ subtitle: >-
   Gradlew Clean, Gradlew Test, Gradle's Smart Features and Build.Gradle
   explained
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=gKPMKRnnbXU&start=421s'
+video: 'https://www.youtube.com/watch?v=gKPMKRnnbXU&start=421s'
 ---
 
 # Gradle Basics

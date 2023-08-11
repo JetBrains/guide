@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2018-12-05
 title: Run Single Test
 topics:
@@ -14,17 +13,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/test-runner-tab.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=BWY9mNdX5R8'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/-3SS0s-Y420'
-leadin: |
-  *Get into TDD flow by focusing on one test.*
-
-  Want to focus your testing on just one test? PyCharm has 
-  many ways to tell the test runner and UI: "Just this."
+video: 'https://youtu.be/-3SS0s-Y420'
 ---
 
 You're doing test-driven development (TDD) and you're in "the flow".

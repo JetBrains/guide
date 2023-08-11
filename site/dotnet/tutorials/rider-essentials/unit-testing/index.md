@@ -14,9 +14,7 @@ subtitle: >-
   Learn how Rider can help make sure code behaves as expected, with continuous
   testing and code coverage.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/lr0I5w2apSI'
+video: 'https://youtu.be/lr0I5w2apSI'
 ---
 
 ### Testing our Code

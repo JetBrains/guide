@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Working with Dependency Injection
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=QuvS_VLbGko&start=2595s'
+video: 'https://www.youtube.com/watch?v=QuvS_VLbGko&start=2595s'
 ---
 
 ## What's in the video?

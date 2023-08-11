@@ -14,9 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Live updates based on your search query
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/6DtVIlVOhMY'
+video: 'https://youtu.be/6DtVIlVOhMY'
 ---
 
 Search as you type is a user-expected staple of a modern user interface. You enter a few characters, to see the matching results so far. In this section, we'll implement a seemingly complex UX pattern, but as you'll see it's pretty straightforward to build with HTMX. While we're using an in-memory collection here, you can substitute your favorite backend search engine technology: Elasticsearch, RediSearch, or PostgreSQL.

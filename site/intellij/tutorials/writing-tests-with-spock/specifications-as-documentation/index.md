@@ -8,9 +8,7 @@ subtitle: >-
   Spock tests don't just tell the computer how to test the application, they can
   help developers understand what the application is supposed to do.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/i5Qu3qYOfsM?start=2057'
+video: 'https://youtu.be/i5Qu3qYOfsM?start=2057'
 ---
 
 Let's take a look at [one last feature](http://spockframework.org/spock/docs/2.0/all_in_one.html#specifications_as_documentation) to help document the requirements via tests.

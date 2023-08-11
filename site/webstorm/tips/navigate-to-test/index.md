@@ -17,9 +17,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  With *Go to Symbol*, you can quickly navigate to a test: press *Alt+Cmd+O* on
-  macOS or *Ctrl+Alt+Shift+N* on Windows and Linux and start typing the name of
-  a test/suite of tests.
 ---
-
+With *Go to Symbol*, you can quickly navigate to a test: press *Alt+Cmd+O* on macOS or *Ctrl+Alt+Shift+N* on Windows and Linux and start typing the name of a test/suite of tests.

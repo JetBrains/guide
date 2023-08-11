@@ -20,7 +20,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: |
-  Use *Alt+Enter* to switch between different color formats in CSS.
 ---
-
+Use *Alt+Enter* to switch between different color formats in CSS.

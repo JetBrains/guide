@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Testing that exceptions are correctly thrown
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/we3zJE3hlWE?start=917'
+video: 'https://youtu.be/we3zJE3hlWE?start=917'
 ---
 
 ## Checking exceptions

@@ -16,8 +16,6 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 200
-leadin: |
-  Did you know that WebStorm can do some math for you? Press *Alt+Enter* on 
-  an arithmetic expression and select *Compute constant value*.
 ---
-
+Did you know that WebStorm can do some math for you? Press *Alt+Enter* on 
+an arithmetic expression and select *Compute constant value*.

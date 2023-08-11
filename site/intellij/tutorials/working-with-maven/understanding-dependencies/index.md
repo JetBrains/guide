@@ -7,9 +7,7 @@ topics:
 author: tg
 subtitle: Adding and visualising dependencies
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./generate-dependency.png
-  url: 'https://youtu.be/pt3uB0sd5kY?start=81'
+video: 'https://youtu.be/pt3uB0sd5kY?start=81'
 ---
 
 We can easily add new dependencies with the **Generate** option from the Code menu, or using **⌘N** (macOS), or **Alt+Insert** (Windows/Linux). 

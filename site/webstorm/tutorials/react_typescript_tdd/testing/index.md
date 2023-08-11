@@ -9,9 +9,7 @@ author: pwe
 subtitle: Test-first development with Jest in the IDE.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/Y_TGIsFnvo4'
+video: 'https://youtu.be/Y_TGIsFnvo4'
 ---
 
 

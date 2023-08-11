@@ -8,9 +8,7 @@ subtitle: >-
   The Project Structure is where you can change your Java SDK, Language Level
   and more
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/hBOm1XMEgXg'
+video: 'https://youtu.be/hBOm1XMEgXg'
 ---
 
 ## Configuring the Project Structure

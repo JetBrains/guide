@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2022-10-13
 title: Use Local History to Avoid Disaster
 topics:
@@ -16,15 +15,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/local-history.html#retention'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://youtu.be/QZumMOtf6Hc'
-leadin: |
-  *Movies aren't the only things with time machines.*    
-
-  You mistakenly made a big change or deleted a file, and either you 
-  aren't under version control or the change was since your last commit. Local 
-  History to the rescue.
+video: 'https://youtu.be/QZumMOtf6Hc'
 ---
 
 You’re in your repo. You add a file. 

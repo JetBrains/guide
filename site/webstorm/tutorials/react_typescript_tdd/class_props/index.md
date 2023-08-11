@@ -11,9 +11,7 @@ subtitle: >-
   interface describing the props.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/HYmoeUF9ZH0'
+video: 'https://youtu.be/HYmoeUF9ZH0'
 ---
 
 In the previous step we made a "dumb" presentational component with one property.

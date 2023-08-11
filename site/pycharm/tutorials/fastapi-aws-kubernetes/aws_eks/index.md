@@ -12,9 +12,7 @@ subtitle: >-
   Deploying application using EKS, RDS, ElastiCache, Route53 & AWS Certificate
   Manager.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=fAb6OW9Uur4'
+video: 'https://www.youtube.com/watch?v=fAb6OW9Uur4'
 ---
 
 

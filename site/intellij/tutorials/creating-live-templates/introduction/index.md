@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: What are Live Templates and why might you want to use them?
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/Sio9MdSqXZo?start=32'
+video: 'https://youtu.be/Sio9MdSqXZo?start=32'
 ---
 
 You can type less code with [Live Templates](https://www.jetbrains.com/help/idea/using-live-templates.html) because they allow you to use abbreviations to create common code constructs, so you can save your fingers. 

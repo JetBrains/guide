@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2022-10-30
 title: See VCS Changed Lines In Gutter
 topics:
@@ -13,15 +12,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/viewing-changes-information.html#local_changes
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=80W3BGaIt_s'
-leadin: |
-  *Visually scan to see a file's changes.*    
-
-  Working with a version-controlled file and want to see which lines 
-  have been added or changed since the last commit? Watch the color 
-  codes in the gutter and click for more info.
+video: 'https://www.youtube.com/watch?v=80W3BGaIt_s'
 ---
 We've all been there.
 

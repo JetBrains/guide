@@ -10,9 +10,6 @@ subtitle: >-
   placement for you.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/m6iY4p2rBoc'
 seealso:
   - title: (video) Why Do Developers Love IntelliJ IDEA?
     href: 'https://www.youtube.com/watch?v=xiT4rEbC56k'
@@ -21,10 +18,6 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Statement Completion
     href: >-
       https://www.jetbrains.com/help/idea/auto-completing-code.html#statements_completion
-leadin: >
-  You should get in the habit of using statement completion because it's a great
-  way to keep your code compiling. You can use the keyboard shortcut **⇧⌘⏎**
-  (macOS), **Ctrl+Shift+Enter** (Windows) to add your semicolons, finish your
-  methods and more.
+video: 'https://youtu.be/m6iY4p2rBoc'
 ---
-
+You should get in the habit of using statement completion because it's a great way to keep your code compiling. You can use the keyboard shortcut **⇧⌘⏎** (macOS), **Ctrl+Shift+Enter** (Windows) to add your semicolons, finish your methods and more.

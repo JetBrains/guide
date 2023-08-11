@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-01-25
 title: Find In Path With Navigation Bar
 topics:
@@ -18,18 +17,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=X3_dfC_P3tM'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/AlFEEDMpW8c'
-leadin: |
-  *Need a fast way to find files in a path, without disrupting your flow?*
-
-  Closed the Project Tool and need to find a file somewhere in the project 
-  tree? Activate the Navigation Bar, navigate to the target, and use Find 
-  in Path from the keyboard.
+video: 'https://youtu.be/AlFEEDMpW8c'
 ---
 
 You want to find a file at a path in your project tree. But you've turned 

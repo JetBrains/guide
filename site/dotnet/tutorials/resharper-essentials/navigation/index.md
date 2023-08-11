@@ -10,9 +10,7 @@ topics:
 author: citizenmatt
 subtitle: Let's look at some fast and easy ways to navigate around a code base.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/-LlVzyzO3mA'
+video: 'https://youtu.be/-LlVzyzO3mA'
 ---
 
 ### Navigating Code in ReSharper

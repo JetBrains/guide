@@ -15,9 +15,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  You can jump to a specific line in a file right from the *Go to file* popup
-  (*Cmd+Shift+O* on macOS or *Ctrl+Shift+N* on Windows and Linux) – just add
-  :<line number> after the file name.
 ---
-
+You can jump to a specific line in a file right from the *Go to file* popup (*Cmd+Shift+O* on macOS or *Ctrl+Shift+N* on Windows and Linux) – just add :<line number> after the file name.

@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2018-12-03
 title: Generate Imports While Typing
 topics:
@@ -16,20 +15,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/auto-completing-code.html#basic_completion
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=jTG49IdhETw'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=N4gm5mEZ1R8'
-leadin: |
-  *Tired of stopping your coding to go write an import?*
-
-  Type what you want, let PyCharm do the rest.
-
-  You could scroll up, type your import, find where you were, and resume. 
-  Instead, just type your symbol and let Python make the import. No 
-  distractions.
+video: 'https://www.youtube.com/watch?v=N4gm5mEZ1R8'
 ---
 
 This is the right way to do imports.

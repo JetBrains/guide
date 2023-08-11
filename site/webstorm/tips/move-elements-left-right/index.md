@@ -15,12 +15,7 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  You can swap function parameters, attributes in tags, and elements in objects,
-  arrays and boolean expressions using *Move Element Left/Right*:
-
-  - *Alt+Shift+Cmd+Left/Right* on macOS
-
-  - *Alt+Shift+Ctrl+Left/Right* on Windows and Linux
 ---
-
+You can swap function parameters, attributes in tags, and elements in objects, arrays and boolean expressions using *Move Element Left/Right*:
+- *Alt+Shift+Cmd+Left/Right* on macOS
+- *Alt+Shift+Ctrl+Left/Right* on Windows and Linux

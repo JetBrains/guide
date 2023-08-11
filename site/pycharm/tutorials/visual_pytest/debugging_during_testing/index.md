@@ -11,9 +11,7 @@ subtitle: >-
   When writing tests, use the PyCharm "visual debugger" to interactively poke
   around in the context of a problem.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/feBYCeOk4As'
+video: 'https://youtu.be/feBYCeOk4As'
 ---
 
 Primary guardian, great! 

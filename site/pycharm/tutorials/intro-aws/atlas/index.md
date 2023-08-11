@@ -9,9 +9,7 @@ subtitle: >-
   Connect MongoDB smoothly by connecting through Pycharm Professional to explore
   the database GUI.
 thumbnail: ../thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/TfwDOKRiYQ4'
+video: 'https://youtu.be/TfwDOKRiYQ4'
 ---
 
 In this tutorial we are going create a MongoDB Cluster and connect through PyCharm Professional.

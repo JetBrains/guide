@@ -14,13 +14,7 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  How to select a code fragment without a single click: use *Ctrl+W/⌥↑* to
-  expand 
-
-  the selected area and *Shift+Ctrl+W/⌥↓* to shrink it. WebStorm will keep the
-  semantics 
-
-  of your source code in mind when doing that.
 ---
-
+How to select a code fragment without a single click: use *Ctrl+W/⌥↑* to expand 
+the selected area and *Shift+Ctrl+W/⌥↓* to shrink it. WebStorm will keep the semantics 
+of your source code in mind when doing that.

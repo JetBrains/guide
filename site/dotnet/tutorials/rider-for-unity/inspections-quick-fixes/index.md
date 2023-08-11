@@ -13,8 +13,7 @@ topics:
 author: citizenmatt
 subtitle: 'Rider helps you write better code, faster.'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
+video:
   url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
   start: 848
   end: 2044

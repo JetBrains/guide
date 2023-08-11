@@ -17,14 +17,12 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: |
-  How to quickly create a code snippet:
-
-    1. Select the code you find yourself using often.
-    2. Press *Cmd/Ctrl+Shift+A* and type *Save as Live Template*.
-    3. Add the abbreviation and description.
-    4. Save the code snippet.
-
-  You can modify your code snippet by adding variables to it.
 ---
+How to quickly create a code snippet:
 
+  1. Select the code you find yourself using often.
+  2. Press *Cmd/Ctrl+Shift+A* and type *Save as Live Template*.
+  3. Add the abbreviation and description.
+  4. Save the code snippet.
+
+You can modify your code snippet by adding variables to it.

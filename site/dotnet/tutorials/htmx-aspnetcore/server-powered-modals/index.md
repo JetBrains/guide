@@ -14,9 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Create modal dialogs on the server
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/Bzcx96Mkd0w'
+video: 'https://youtu.be/Bzcx96Mkd0w'
 ---
 
 Modals are a powerful way to get a user's attention when you're acknowledging their action. A modal typically contains the most important information represented with a sense of urgency. If you're a modal fan, we'll recreate a typical newsletter signup form with a follow-up modal confirmation to display our user's input, in this case, their email address. In true HTMX fashion, we'll be generating our modal server-side.

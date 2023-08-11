@@ -13,9 +13,7 @@ subtitle: >-
   Customize the look and feel of Rider, and make the editor work the way you
   want.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/I3wlWFUPpAc'
+video: 'https://youtu.be/I3wlWFUPpAc'
 ---
 
 ### Customizing Rider theme

@@ -14,9 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Add keyboard shortcuts to make your web an app
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/irhA5yInaRE'
+video: 'https://youtu.be/irhA5yInaRE'
 ---
 
 Over the internet's evolution, web applications have seen a transformation from read-only pages to now providing experiences that rival native desktop applications. One of the significant attributes that power users look for in their applications is keyboard shortcuts. Keyboard shortcuts can reduce the time it takes to perform an action and increase the productivity of repetitive tasks. As developers, we likely have a few keyboard shortcuts that come to mind, and ReSharper and Rider users are likely familiar with the `Alt+Enter` keyboard shortcut. Keyboard shortcuts are awesome.

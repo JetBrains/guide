@@ -9,12 +9,6 @@ subtitle: >-
   of time you spend moving the cursor around while you're coding.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/Er8a5mUuNRA'
-longVideo:
-  poster: ./code_completion.jpeg
-  url: 'https://youtu.be/jTud6GIqVgk'
 seealso:
   - title: (video) Code Completion in IntelliJ IDEA
     href: 'https://www.youtube.com/watch?v=jTud6GIqVgk'
@@ -26,6 +20,7 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Create custom postfix templates
     href: >-
       https://www.jetbrains.com/help/idea/auto-completing-code.html#reference.custom.postfix.templates
+video: 'https://youtu.be/jTud6GIqVgk'
 ---
 
 Postfix completion is designed so that you append some abbreviation to the end

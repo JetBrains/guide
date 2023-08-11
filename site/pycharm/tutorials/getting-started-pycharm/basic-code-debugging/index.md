@@ -7,9 +7,7 @@ author: hs
 subtitle: How to use PyCharm's debugger effectively.
 thumbnail: thumbnail.png
 videoBottom: true
-longVideo:
-  poster: poster_long.png
-  url: 'https://youtu.be/j0Wz_uBaDmo'
+video: 'https://youtu.be/j0Wz_uBaDmo'
 ---
 
 In the previous step, we saw how PyCharm refactoring can save you time by doing work for you.

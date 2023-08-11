@@ -11,9 +11,7 @@ topics:
 author: maartenba
 subtitle: Chris Klug
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/Iy6WS4mWlx4'
+video: 'https://youtu.be/Iy6WS4mWlx4'
 ---
 
 There are a lot of cool and usable new features being added to C#. However, way too many of us are too busy building stuff, and fixing/creating bugs, to have the time to sit down and take it all in. So why not let Chris Klug walk you through his top 10 new features that have been added in C# version 6 to 9?

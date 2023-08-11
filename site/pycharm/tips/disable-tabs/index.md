@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2018-11-04
 title: Disable Tabs
 topics:
@@ -13,21 +12,7 @@ seealso:
     href: 'https://hadihariri.com/2014/06/24/no-tabs-in-intellij-idea/'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=nBF9tT787B0'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/k7P__ZhUv-g'
-leadin: |
-  *Want a cleaner UI with less noise to juggle in your head?*
-
-  There are better choices for moving between files than tabs. 
-  Let's turn them off.
-
-  Tabs are a great way to focus on the few files for a task. But 
-  they have some downsides. Try disabling your tabs as a first step 
-  towards a more-focused, keyboard-centric workflow.
+video: 'https://youtu.be/k7P__ZhUv-g'
 ---
 
 People love tabs. It's the default way in PyCharm to jump around

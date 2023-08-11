@@ -11,9 +11,7 @@ topics:
 author: maartenba
 subtitle: Tom Looman
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/G51QWcitCII'
+video: 'https://youtu.be/G51QWcitCII'
 ---
 
 Unreal Engine is built to work for a wide range of projects and platforms out of the box. It’s up to you to make it run within the budget for your specific needs. In this talk, Tom Looman shows how to identify performance issues and optimize your game projects on a budget.

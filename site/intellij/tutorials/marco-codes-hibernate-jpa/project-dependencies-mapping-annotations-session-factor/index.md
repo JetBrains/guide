@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: The basics of Hibernate
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=xHminZ9Dxm4&start=111s'
+video: 'https://www.youtube.com/watch?v=xHminZ9Dxm4&start=111s'
 ---
 
 ## Hibernate Basics

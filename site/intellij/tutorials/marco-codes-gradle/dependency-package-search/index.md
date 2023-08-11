@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: 'Dependency Scopes, Adding Dependencies and Package Search'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=gKPMKRnnbXU&start=666s'
+video: 'https://www.youtube.com/watch?v=gKPMKRnnbXU&start=666s'
 ---
 
 # Dependencies

@@ -9,9 +9,7 @@ topics:
 author: mm
 subtitle: Connect Postgres with our Django Application.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://youtu.be/r90CNlorK78'
+video: 'https://youtu.be/r90CNlorK78'
 ---
 
 Hello everyone, welcome to the Django tutorial series. 

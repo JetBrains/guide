@@ -12,8 +12,6 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.jpeg
-leadin: |
-  Hold the *Cmd/Ctrl* key and hover over a package name in *package.json* to 
-  see its description and the latest available version.
 ---
-
+Hold the *Cmd/Ctrl* key and hover over a package name in *package.json* to 
+see its description and the latest available version.

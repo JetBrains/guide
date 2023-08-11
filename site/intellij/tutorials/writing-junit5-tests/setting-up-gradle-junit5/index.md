@@ -7,9 +7,7 @@ topics:
 author: hs
 subtitle: Laying the foundations for Writing JUnit 5 Tests
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/we3zJE3hlWE?start=11'
+video: 'https://youtu.be/we3zJE3hlWE?start=11'
 ---
 
 ## Setting up Gradle for JUnit 5

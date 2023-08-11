@@ -14,8 +14,5 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
-leadin: >
-  For a failed test, you can see the error message from the test runner on
-  hover. Press *Alt+Shift+Enter* to immediately start debugging the test.
 ---
-
+For a failed test, you can see the error message from the test runner on hover. Press *Alt+Shift+Enter* to immediately start debugging the test.

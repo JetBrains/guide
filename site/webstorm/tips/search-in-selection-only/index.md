@@ -15,13 +15,7 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  When looking for text in a file, you can limit the search to only the selected
-  part of code:
-
-  - Select a code fragment, hit *Cmd/Ctrl+F*, and enter your search query.
-
-  - Alternatively, press *Cmd/Ctrl+F*, type your search query, then select the
-  code, and click the *In Selection* icon.
 ---
-
+When looking for text in a file, you can limit the search to only the selected part of code:
+- Select a code fragment, hit *Cmd/Ctrl+F*, and enter your search query.
+- Alternatively, press *Cmd/Ctrl+F*, type your search query, then select the code, and click the *In Selection* icon.

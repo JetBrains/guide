@@ -15,8 +15,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  With the *Extract ruleset* intention (*Alt+Enter*), you can quickly move
-  selected declarations to a new ruleset in the same file.
 ---
-
+With the *Extract ruleset* intention (*Alt+Enter*), you can quickly move selected declarations to a new ruleset in the same file.

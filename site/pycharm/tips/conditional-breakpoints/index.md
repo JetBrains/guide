@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-04-15
 title: Conditional Breakpoints
 topics:
@@ -12,18 +11,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/using-breakpoints.html#breakpoint-properties
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=hlffBFXtb6g'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/aIlXb2QpxXc'
-leadin: |
-  *Stop stepping.*    
-
-  Have a breakpoint in a loop and find yourself clicking `Continue` 
-  repeatedly? Change your breakpoint to only stop when a condition is 
-  met.
+video: 'https://youtu.be/aIlXb2QpxXc'
 ---
 
 Debugging? Super-useful. Visual debugging? Super-super-useful. Stepping 

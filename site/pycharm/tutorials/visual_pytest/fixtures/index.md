@@ -8,9 +8,7 @@ topics:
 author: pwe
 subtitle: Make your tests more focused by moving sample data to pytest fixtures.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/lidTnXTFssM'
+video: 'https://youtu.be/lidTnXTFssM'
 ---
 
 Each test recreates `Player` and `Guardian` instances, which is repetitive and distracts from the test's purpose.

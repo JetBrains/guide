@@ -12,9 +12,7 @@ topics:
 author: maartenba
 subtitle: Introduction to the Rider Essentials series.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/bMh3ayCmi5w'
+video: 'https://youtu.be/bMh3ayCmi5w'
 ---
 
 Let's start by setting some expectations. In the Rider Essentials series, JetBrains .NET developer advocates Rachel, Khalid, Matthias, Matt and Maarten, will show you their favourite tips and tricks, uncovering how they work with Rider.

@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2022-12-02
 title: See VCS Changed Lines In Gutter
 topics:
@@ -14,15 +13,7 @@ seealso:
       https://www.jetbrains.com/help/rider/Viewing_Changes_Information.html#local_changes
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=wp86DkW0VLA'
-leadin: |
-  *Visually scan to see a file's changes.*    
-
-  Working with a version-controlled file and want to see which lines 
-  have been added or changed since the last commit? Watch the color 
-  codes in the gutter and click for more info.
+video: 'https://www.youtube.com/watch?v=wp86DkW0VLA'
 ---
 We've all been there.
 

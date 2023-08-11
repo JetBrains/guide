@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-03-12
 title: Rename Symbol
 topics:
@@ -11,17 +10,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/rename-refactorings.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=RV8ZP_UoXhE'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=Qa7rLYyUnco'
-leadin: |
-  *Refactor names like a ninja.*    
-
-  Put your cursor on a symbol and refactor it. All usages in the 
-  project change with it.
+video: 'https://www.youtube.com/watch?v=Qa7rLYyUnco'
 ---
 
 You wrote a function which you use all over the place in a project. Or a 

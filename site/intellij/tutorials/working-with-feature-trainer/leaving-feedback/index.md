@@ -8,9 +8,7 @@ subtitle: >-
   Feedback from you is really helpful for us and will enable us to provide more
   modules and lessons in the IDE Feature Trainer.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/Uxwi4ibDoHE'
+video: 'https://youtu.be/Uxwi4ibDoHE'
 ---
 
 ## We Want to Hear Your Feedback

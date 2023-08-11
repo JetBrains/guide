@@ -10,9 +10,7 @@ topics:
 author: maartenba
 subtitle: Introduction to the Web Fundamentals in Rider series.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/Ai33sb9W_fE'
+video: 'https://youtu.be/Ai33sb9W_fE'
 ---
 
 While [Rider is a .NET IDE](https://www.jetbrains.com/rider/), it integrates other tools such as [DataGrip](https://www.jetbrains.com/datagrip/) for database development, and [WebStorm](https://www.jetbrains.com/webstorm/) for web development.

@@ -10,9 +10,7 @@ topics:
 author: mm
 subtitle: 'Introducing FastAPI,  a modern, fast (high-performance), web framework.'
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=iCVEhVI07Ig'
+video: 'https://www.youtube.com/watch?v=iCVEhVI07Ig'
 ---
 
 Hello everyone, Welcome to the PyCharm FastAPI tutorial series.

@@ -9,9 +9,7 @@ subtitle: >-
   Launching up project in PyCharm Professional, installing plugin and exploring
   the project layout.
 thumbnail: ../thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/yQd2N2tYN0c'
+video: 'https://youtu.be/yQd2N2tYN0c'
 ---
 
 In this tutorial step, we will be setting up the new project and exploring the project structure.

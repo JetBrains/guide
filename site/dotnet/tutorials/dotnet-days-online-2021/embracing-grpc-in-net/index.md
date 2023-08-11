@@ -12,9 +12,7 @@ topics:
 author: maartenba
 subtitle: Irina Scurtu
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/d8S9jh6Xj6Y'
+video: 'https://youtu.be/d8S9jh6Xj6Y'
 ---
 
 With an increasing need for scalability and performance dictated by the modern web, it is becoming harder and harder to choose an API paradigm that is suitable for service to service communication.

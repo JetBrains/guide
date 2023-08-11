@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: What Spring Boot's Projects look like
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=QuvS_VLbGko&start=3429s'
+video: 'https://www.youtube.com/watch?v=QuvS_VLbGko&start=3429s'
 ---
 
 ## What's in the video?

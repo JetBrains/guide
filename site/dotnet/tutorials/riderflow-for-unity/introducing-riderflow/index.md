@@ -12,8 +12,7 @@ topics:
 author: citizenmatt
 subtitle: What is RiderFlow? And where to find it?
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
+video:
   url: 'https://www.youtube.com/watch?v=75r6TRwCc_o'
   start: 301
   end: 405

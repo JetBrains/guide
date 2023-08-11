@@ -15,9 +15,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Did you know that you can extract a type alias in your TypeScript code using a
-  familiar shortcut for the *Extract variable* refactoring: *Cmd+Alt+V* on macOS
-  and *Ctrl+Alt+V* on Windows and Linux.
 ---
-
+Did you know that you can extract a type alias in your TypeScript code using a familiar shortcut for the *Extract variable* refactoring: *Cmd+Alt+V* on macOS and *Ctrl+Alt+V* on Windows and Linux.

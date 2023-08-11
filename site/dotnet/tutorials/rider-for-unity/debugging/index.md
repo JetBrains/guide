@@ -15,8 +15,7 @@ subtitle: >-
   Suspend execution and inspect variables. Use pausepoints to visually inspect
   your scene.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
+video:
   url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
   start: 2044
   end: 2413

@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Making your code more readable
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/we3zJE3hlWE?start=391'
+video: 'https://youtu.be/we3zJE3hlWE?start=391'
 ---
 
 ## Helpful Test Names for Display

@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2022-12-15
 title: Compare With Branch
 topics:
@@ -12,14 +11,7 @@ seealso:
       https://www.jetbrains.com/help/webstorm/manage-branches.html#compare_branches
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=7Rjl1Cerbl0'
-leadin: |
-  *You want to merge -- but what's in those commits?*
-
-  You see the commits from the main branch.
-  What changes do they contain?
+video: 'https://www.youtube.com/watch?v=7Rjl1Cerbl0'
 ---
 ## The Problem
 

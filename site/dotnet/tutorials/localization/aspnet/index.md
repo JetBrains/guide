@@ -14,9 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: 'Working with Cultures, Resources, & ASP.NET'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/smCuu3TrVUc'
+video: 'https://youtu.be/smCuu3TrVUc'
 ---
 
 Localization has been around since .NET 1.1. Looking at the interfaces of `ResourceManager` and `CultureInfo`, along with the static nature of resource access, its easy to see the ties to legacy client technology **WinForms**. With the release of ASP.NET Core, developers have new tools to work with localization in the realm of server-based web apps.

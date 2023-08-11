@@ -12,9 +12,7 @@ subtitle: >-
   development.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/OO7OmA5UlQM'
+video: 'https://youtu.be/OO7OmA5UlQM'
 ---
 
 Our counter component has local state, but doesn't respond to clicks.

@@ -10,9 +10,7 @@ topics:
 author: rachelappel
 subtitle: 'How to safely refactor code, without breaking the build? Let''s have a look.'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/vd9BvAPVmEI'
+video: 'https://youtu.be/vd9BvAPVmEI'
 ---
 
 ### Refactoring

@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2018-12-04
 title: Install and import
 topics:
@@ -12,20 +11,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=rMUIDc3sSpw'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/ulT1LSWFqqE'
-leadin: >
-  *Type the symbol, let your IDE install the package and write the import.*
-
-
-  IDEs are great at janitorial work. PyCharm can generate your import for you,
-  even 
-
-  when you haven't installed the  package.
+video: 'https://youtu.be/ulT1LSWFqqE'
 ---
 
 You're writing code and want to import a package, and want PyCharm to generate the

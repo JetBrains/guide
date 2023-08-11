@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2022-10-05
 title: Edit Commit Message
 topics:
@@ -12,15 +11,7 @@ seealso:
       https://www.jetbrains.com/help/webstorm/edit-project-history.html#reword-commit
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://youtu.be/qjaCu9BYeUg'
-leadin: |
-  *Fix that message.*    
-
-  It always happens: as soon as you click `Commit`, you spot the typo 
-  in the message or remember a change. Use the VCS Log's `Reword` to 
-  fix it.
+video: 'https://youtu.be/qjaCu9BYeUg'
 ---
 
 That last commit message…(sigh)...had a typo.

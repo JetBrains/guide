@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Configure parameters and how tests are run
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/we3zJE3hlWE?start=224'
+video: 'https://youtu.be/we3zJE3hlWE?start=224'
 ---
 
 ## Optional Configuration

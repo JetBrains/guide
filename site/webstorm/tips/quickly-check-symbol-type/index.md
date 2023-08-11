@@ -11,8 +11,5 @@ seealso:
 thumbnail: ./thumbnail.jpg
 cardThumbnail: ./card.png
 screenshot: ./card.jpg
-leadin: >
-  In TypeScript, press Cmd on macOS or Ctrl on Windows and Linux and hover over
-  a symbol to see its type.
 ---
-
+In TypeScript, press Cmd on macOS or Ctrl on Windows and Linux and hover over a symbol to see its type.

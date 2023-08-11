@@ -14,9 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Streaming infinite content to your users
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/v4XeB_wiJ8E'
+video: 'https://youtu.be/v4XeB_wiJ8E'
 ---
 
 Infinite scroll patterns are popular on social media sites, where the app represents content as a continuous stream of information. As a user, you'll likely never see the beginning or end of the stream, but you can scrub through a short window of the entire stream. If you're interested in implementing this pattern, well, you're in luck. 

@@ -18,12 +18,7 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Want to create a new type alias in your TypeScript code? Invoke the *Refactor
-  This* popup with *Ctrl+T* on macOS or *Ctrl+Alt+Shift+T* on Windows/Linux,
-  then select *Extract Type Alias*.
-
-
-  For object types, you can also use *Extract Interface*.
 ---
+Want to create a new type alias in your TypeScript code? Invoke the *Refactor This* popup with *Ctrl+T* on macOS or *Ctrl+Alt+Shift+T* on Windows/Linux, then select *Extract Type Alias*.
 
+For object types, you can also use *Extract Interface*.

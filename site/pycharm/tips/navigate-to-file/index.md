@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2018-11-07
 title: Navigate to File
 topics:
@@ -15,17 +14,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#tips
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=cYMbEP0oY0s'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/0NFMM143Y5w'
-leadin: |
-  *Opening files doesn't have to mean the Project Tool or mouse.*
-
-  If you know the name -- or parts of the name -- of the file, 
-  open it quickly with ``Navigate to File`` and speed search.
+video: 'https://youtu.be/0NFMM143Y5w'
 ---
 
 Navigating your project files is a chore. Expanding folders and

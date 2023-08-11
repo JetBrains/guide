@@ -12,8 +12,7 @@ subtitle: >-
   The Unreal Engine testing framework is built in and works without additional
   configuration.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
+video:
   url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
   start: 2240
   end: 2346

@@ -13,9 +13,5 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
-leadin: >
-  To quickly add a new dependency to your project, add an import statement
-  first, then press _⌥Enter / Alt+Enter_, and click _Install and add to
-  dependencies/devDependencies in package.json_.
 ---
-
+To quickly add a new dependency to your project, add an import statement first, then press _⌥Enter / Alt+Enter_, and click _Install and add to dependencies/devDependencies in package.json_.

@@ -15,9 +15,7 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: |
-  In WebStorm, you can comment and uncomment blocks of code with _⌘⇧/_ 
-  on macOS and _Ctrl+Shift+/_ on Windows/Linux. To do the same for lines, 
-  use _⌘/_ or _Ctrl+/_.
 ---
-
+In WebStorm, you can comment and uncomment blocks of code with _⌘⇧/_ 
+on macOS and _Ctrl+Shift+/_ on Windows/Linux. To do the same for lines, 
+use _⌘/_ or _Ctrl+/_.

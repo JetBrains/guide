@@ -13,9 +13,7 @@ topics:
 author: maartenba
 subtitle: François Bouteruche
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/loqPXKDwbp4'
+video: 'https://youtu.be/loqPXKDwbp4'
 ---
 
 .NET has a long history on AWS. It has been supported for more than 11 years. The AWS SDK for .NET was the first-ever AWS SDK released.

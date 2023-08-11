@@ -17,10 +17,8 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: |
-  Want to inject a code fragment in a language different from the 
-  main language of the file, like an HTML string in a JavaScript 
-  file? Press *Alt+Enter*, select *Inject Language or Reference*, and 
-  then pick a language from the list.
 ---
-
+Want to inject a code fragment in a language different from the 
+main language of the file, like an HTML string in a JavaScript 
+file? Press *Alt+Enter*, select *Inject Language or Reference*, and 
+then pick a language from the list.

@@ -8,9 +8,6 @@ author: hs
 subtitle: How to reformat a file or section of code
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/oaQbMZj3EyA'
 seealso:
   - title: (video) Code Formatting in IntelliJ IDEA
     href: 'https://www.youtube.com/watch?v=vjVWjocENLg'
@@ -19,12 +16,8 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Reformat a File
     href: >-
       https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#reformat_file
-leadin: >
-  Sometimes code formatting can get out of sync, but there's an easy fix in
-  IntelliJ IDEA. You can use **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux)
-  to reformat a selection of code according to your reformat settings. 
-   
-  You can also display the Reformat File dialog with **⌥⇧⌘L** (macOS), or
-  **Ctrl+Alt+Shift+L** (Windows/Linux).
+video: 'https://youtu.be/oaQbMZj3EyA'
 ---
-
+Sometimes code formatting can get out of sync, but there's an easy fix in IntelliJ IDEA. You can use **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) to reformat a selection of code according to your reformat settings. 
+ 
+You can also display the Reformat File dialog with **⌥⇧⌘L** (macOS), or **Ctrl+Alt+Shift+L** (Windows/Linux).

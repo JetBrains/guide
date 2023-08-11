@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2022-11-23
 title: Only Commit Some Changes
 topics:
@@ -12,14 +11,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/rider/Commit_and_push_changes.html#push'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://youtu.be/OlFg1g3hcLs'
-leadin: |
-  *Time to commit but not everything is ready?*    
-
-  You've done a lot of work. Perhaps overlapping, perhaps some unfinished. 
-  Let the IDE help you leave files or parts of a file out of the commit.
+video: 'https://youtu.be/OlFg1g3hcLs'
 ---
 
 You’ve done a lot of work, but not all the changes should go in one commit. 

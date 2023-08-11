@@ -8,9 +8,6 @@ author: hs
 subtitle: Extract code to a variable
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/rnJRe-lIaTI'
 seealso:
   - title: (video) IntelliJ IDEA Everyday Refactorings
     href: 'https://www.youtube.com/watch?v=rPq7fBo5JVs'
@@ -18,11 +15,8 @@ seealso:
     href: 'https://www.youtube.com/watch?v=HgWU25YwDfc'
   - title: (documentation) IntelliJ IDEA Help - Extract Variable
     href: 'https://www.jetbrains.com/help/idea/extract-variable.html'
-leadin: >
-  Highlight the code you want to extract to a variable and press **⌥⌘V**
-  (macOS), or **Ctrl+Alt+V** (Windows/Linux), to extract it.
-
-
-  Extracting parameters can be useful in improving the readability of your code.
+video: 'https://youtu.be/rnJRe-lIaTI'
 ---
+Highlight the code you want to extract to a variable and press **⌥⌘V** (macOS), or **Ctrl+Alt+V** (Windows/Linux), to extract it.
 
+Extracting parameters can be useful in improving the readability of your code.

@@ -9,9 +9,7 @@ topics:
 author: mm
 subtitle: 'Create a new app, define models, and explore the project''s structure.'
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://youtu.be/OIOJk_KZe8g'
+video: 'https://youtu.be/OIOJk_KZe8g'
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, we

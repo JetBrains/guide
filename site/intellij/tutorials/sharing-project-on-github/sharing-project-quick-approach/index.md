@@ -8,9 +8,7 @@ subtitle: >-
   How to enable version control for your project and share it to GitHub in one
   step
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/4ukhZvOmAtk?start=10'
+video: 'https://youtu.be/4ukhZvOmAtk?start=10'
 ---
 
 ## Creating a Local Repository and Sharing it to GitHub in One Step

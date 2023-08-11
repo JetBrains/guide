@@ -10,9 +10,7 @@ topics:
 author: maartenba
 subtitle: Tess Ferrandez-Norlander
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/z2B8OruMT6s'
+video: 'https://youtu.be/z2B8OruMT6s'
 ---
 
 Memory leaks, hangs, and crashes are very hard to troubleshoot, especially if they don't happen on your machine.

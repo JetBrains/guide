@@ -12,9 +12,7 @@ subtitle: >-
   the code and tests.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/SnCGW6JUo4E'
+video: 'https://youtu.be/SnCGW6JUo4E'
 ---
 
 React encourages a separation of concerns.

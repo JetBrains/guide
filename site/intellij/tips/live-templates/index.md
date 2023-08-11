@@ -9,12 +9,6 @@ author: tg
 subtitle: Use Live Templates to auto-complete common code structures for you
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/RyJ0ucK8mFo'
-longVideo:
-  poster: ./live_templates.jpeg
-  url: 'https://youtu.be/ffBeoE6NBSs'
 seealso:
   - title: (video) IntelliJ IDEA Write Code Faster Using Live Templates
     href: 'https://www.youtube.com/watch?v=ffBeoE6NBSs&t=56s'
@@ -27,6 +21,7 @@ seealso:
       https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html
   - title: (documentation) IntelliJ IDEA Guide - Create a Custom Test Live Template
     href: ../../tutorials/writing-junit5-tests/live-templates-tip/
+video: 'https://youtu.be/ffBeoE6NBSs'
 ---
 
 Live Templates reduce the amount of code you need to type for the more common

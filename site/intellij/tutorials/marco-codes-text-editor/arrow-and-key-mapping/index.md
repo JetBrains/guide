@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Arrow motion & How to map 3 or 4 keys to 1
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=HwPjeb2xnEo&start=58s'
+video: 'https://www.youtube.com/watch?v=HwPjeb2xnEo&start=58s'
 ---
 
 ## Arrow Key Handling

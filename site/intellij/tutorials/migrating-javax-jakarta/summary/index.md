@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Summary and shortcuts used
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/mukr2Q_zBm4?start=956'
+video: 'https://youtu.be/mukr2Q_zBm4?start=956'
 ---
 
 ## Summary

@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-01-21
 title: Navigate Files With Navigation Bar
 topics:
@@ -17,22 +16,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=vQTYCuBd9u4'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/i9l5YuDgJOw'
-leadin: >
-  *The no-distraction way to move around your project tree.*
-
-
-  Move up, down, and around in the Navigation Bar, from the cozy confines of
-  the 
-
-  mouse. Get to the file or directory you want, then do what you need...open a 
-
-  file, make a new directory, find in path at the location.
+video: 'https://youtu.be/i9l5YuDgJOw'
 ---
 
 We've discussed "getting into the flow"...strip down the IDE to focus and don't 

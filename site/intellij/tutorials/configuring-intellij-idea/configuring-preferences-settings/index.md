@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: There are lots of ways to make IntelliJ IDEA your own
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/xWiKJEVRFlc'
+video: 'https://youtu.be/xWiKJEVRFlc'
 ---
 
 ## Configuring IntelliJ IDEA 

@@ -15,10 +15,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  With the *Show Method Return Values* option added to the debugger, you can see
-  what value the method returns without using console.log or invoking the
-  *Evaluate Expression* dialog. To turn this option on, click the gear icon on
-  the debugger’s left pane.
 ---
-
+With the *Show Method Return Values* option added to the debugger, you can see what value the method returns without using console.log or invoking the *Evaluate Expression* dialog. To turn this option on, click the gear icon on the debugger’s left pane.

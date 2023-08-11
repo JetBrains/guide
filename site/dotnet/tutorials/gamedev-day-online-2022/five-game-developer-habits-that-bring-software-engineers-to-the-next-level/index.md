@@ -11,9 +11,7 @@ topics:
 author: maartenba
 subtitle: 'Alexander Chatzizacharias, Erik Pronk'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/DOACRR4z8JM'
+video: 'https://youtu.be/DOACRR4z8JM'
 ---
 
 In the eyes of many people, software engineering and game development are two sides of the same coin. While this is true for some aspects of both fields, there are some key differences that make each a unique experience. During this talk we will discuss these differences between how game developers work and how software engineers work. We will explore some distinctions between methodologies within the two fields and how people handle them. To conclude, we will dive into what both fields can learn from each other so that developers can elevate themselves to the next level.

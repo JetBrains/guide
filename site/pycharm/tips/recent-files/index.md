@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2018-11-04
 title: Jump to Recent File
 topics:
@@ -15,20 +14,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=zvtNVldsj4I'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=bepgM6KMQpw'
-leadin: |
-  *Want the easiest way to jump between files?*
-
-  Mouseless == navigating files by keyboard.
-
-  Switching between files...we all do this, all the time. 
-  Use the ``Recent Files`` action to quickly jump between 
-  the files you are working on.
+video: 'https://www.youtube.com/watch?v=bepgM6KMQpw'
 ---
 
 It's hard to divorce the mouse. "How do I jump between files?" The

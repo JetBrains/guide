@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: SQL commands and SQL injection
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=KgXq2UBNEhA&start=610s'
+video: 'https://www.youtube.com/watch?v=KgXq2UBNEhA&start=610s'
 ---
 
 ## SQL Commands

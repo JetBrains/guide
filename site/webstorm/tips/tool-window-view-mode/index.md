@@ -17,13 +17,7 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Did you know that you can change the default view mode of any tool window? For
-  example, you can make a tool window visible only when active and detach it
-  from the tool window bar.
-
-
-  Learn more about view modes: <a
-  href="https://www.jetbrains.com/help/webstorm/viewing-modes.html">https://www.jetbrains.com/help/webstorm/viewing-modes.html</a>
 ---
+Did you know that you can change the default view mode of any tool window? For example, you can make a tool window visible only when active and detach it from the tool window bar.
 
+Learn more about view modes: <a href="https://www.jetbrains.com/help/webstorm/viewing-modes.html">https://www.jetbrains.com/help/webstorm/viewing-modes.html</a>

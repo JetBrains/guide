@@ -8,9 +8,7 @@ author: tg
 subtitle: Inspections can guide us to use new Java features
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/qCfuQkddCEM'
+video: 'https://youtu.be/qCfuQkddCEM'
 ---
 
 If our code uses an instanceof followed by a cast, IntelliJ IDEA highlights

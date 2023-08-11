@@ -8,9 +8,6 @@ author: md
 subtitle: Navigate to any of the files that you recently had open
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/YEybfDZGOOI'
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Recent files
     href: >-
@@ -19,10 +16,6 @@ seealso:
     href: 'https://www.youtube.com/watch?v=crnEBqbBWuo'
   - title: (video) Navigation in IntelliJ IDEA
     href: 'https://www.youtube.com/watch?v=1UHsJyCq1SU'
-leadin: >
-  View Recent Files using ⌘**E** (MacOS) or **Ctrl+E** (Windows). Instead of
-  using the project window for navigating to a file, use "View Recent Files" to
-  find a recently viewed file. We can search in this dialog and even open tool
-  windows.
+video: 'https://youtu.be/YEybfDZGOOI'
 ---
-
+View Recent Files using ⌘**E** (MacOS) or **Ctrl+E** (Windows). Instead of using the project window for navigating to a file, use "View Recent Files" to find a recently viewed file. We can search in this dialog and even open tool windows.

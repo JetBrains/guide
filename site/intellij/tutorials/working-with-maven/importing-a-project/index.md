@@ -10,9 +10,7 @@ subtitle: >-
   IntelliJ IDEA understands projects that use Maven and can import them with
   minimal configuration
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/pt3uB0sd5kY?start=3'
+video: 'https://youtu.be/pt3uB0sd5kY?start=3'
 ---
 
 

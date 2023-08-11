@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-01-22
 title: Open File With Navigation Bar
 topics:
@@ -17,18 +16,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=G1K1hIW4msM'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/JQE95x7t4aU'
-leadin: |
-  *Need a fast, no-distraction way to open a file in your project tree?*
-
-  When you need to browse to a directory to find and open file, the 
-  Navigation Bar is your best bet. Keyboard-first, use the cursor 
-  keys to select, then press enter.
+video: 'https://youtu.be/JQE95x7t4aU'
 ---
 
 If you've closed the Project Tool window and hidden the Navigation 

@@ -10,9 +10,7 @@ topics:
 author: mm
 subtitle: Writing K8s manifests & deploying in minikube.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=WC4e3Yq8k8A'
+video: 'https://www.youtube.com/watch?v=WC4e3Yq8k8A'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. 

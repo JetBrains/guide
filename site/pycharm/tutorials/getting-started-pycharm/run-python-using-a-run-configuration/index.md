@@ -7,9 +7,7 @@ author: hs
 subtitle: How to run you code in PyCharm.
 thumbnail: thumbnail.png
 videoBottom: true
-longVideo:
-  poster: poster_long.png
-  url: 'https://youtu.be/FOdQa364sLM'
+video: 'https://youtu.be/FOdQa364sLM'
 ---
 
 In the previous step, we saw how PyCharm makes coding productive.

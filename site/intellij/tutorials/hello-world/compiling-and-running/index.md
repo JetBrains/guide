@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Use IntelliJ IDEA to run your Hello World application.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/H_XxH66lm3U?start=371'
+video: 'https://youtu.be/H_XxH66lm3U?start=371'
 ---
 
 

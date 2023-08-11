@@ -13,8 +13,7 @@ subtitle: >-
   Use Search Everywhere to helps you find code, functions, blueprint usages, and
   more.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
+video:
   url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
   start: 475
   end: 646

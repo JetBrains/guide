@@ -10,9 +10,5 @@ subtitle: >-
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
-leadin: >
-  IntelliJ IDEA shows deprecated methods that are marked for removal with a red
-  strikethrough. JDK 16 has marked the wrapper class constructors for removal,
-  so you'll see these with a red strikethrough in IntelliJ IDEA.
 ---
-
+IntelliJ IDEA shows deprecated methods that are marked for removal with a red strikethrough. JDK 16 has marked the wrapper class constructors for removal, so you'll see these with a red strikethrough in IntelliJ IDEA.

@@ -10,9 +10,7 @@ topics:
 author: mm
 subtitle: Performing CRUD operations in Products & Category Module.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=KsTKgi26CgU'
+video: 'https://www.youtube.com/watch?v=KsTKgi26CgU'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.

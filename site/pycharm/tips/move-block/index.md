@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-03-11
 title: Move Block Up/Down Using Keyboard
 topics:
@@ -12,17 +11,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/adding-deleting-and-moving-lines.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=0Rqp7M_u5tE'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=TxlOhgpiKhY'
-leadin: |
-  *Move lines and blocks, up or down, using the keyboard.*    
-
-  When you're in the flow, you want to re-arrange code fast. 
-  Use this tip to move code around without cut-and-paste.
+video: 'https://www.youtube.com/watch?v=TxlOhgpiKhY'
 ---
 
 We want to operate on code in the editor fast. Using Cut-and-Paste is 

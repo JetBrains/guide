@@ -10,10 +10,8 @@ topics:
 author: mm
 subtitle: Combine your K8s manifests into a single package using Helm Charts.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=wQJ6NBpHY0s'
 templateEngineOverride: md
+video: 'https://www.youtube.com/watch?v=wQJ6NBpHY0s'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.

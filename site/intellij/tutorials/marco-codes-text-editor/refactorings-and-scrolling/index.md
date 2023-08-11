@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Tidying up and tweaking
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=HwPjeb2xnEo&start=1091s'
+video: 'https://www.youtube.com/watch?v=HwPjeb2xnEo&start=1091s'
 ---
 
 ## Refactoring and Scrolling

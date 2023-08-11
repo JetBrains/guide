@@ -17,21 +17,17 @@ seealso:
     href: 'https://www.jetbrains.com/help/go/navigation-bar.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./thumbnail.png
-  url: >-
-    https://www.youtube.com/watch?v=tkJQmxhMPP0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=38
-leadin: |
-  *Want to create files without interrupting your flow?*
-
-  Want to create a file somewhere in your project tree, without the mouse?
-
-  **How to use:**
-
-  Use the _Navigation Bar_, Alt + Home on Windows/Linux_ or _⌘ + ↑ on macOS_,
-  to get to a directory then use the keyboard to make and open a new file at
-  the target, with _Alt + Insert on Windows/Linux_ or _⌘ + N on macOS_.
-
-  <span class="tag is-rounded">New in 2017.3</span>
+video: >-
+  https://www.youtube.com/watch?v=tkJQmxhMPP0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=38
 ---
+*Want to create files without interrupting your flow?*
 
+Want to create a file somewhere in your project tree, without the mouse?
+
+**How to use:**
+
+Use the _Navigation Bar_, Alt + Home on Windows/Linux_ or _⌘ + ↑ on macOS_,
+to get to a directory then use the keyboard to make and open a new file at
+the target, with _Alt + Insert on Windows/Linux_ or _⌘ + N on macOS_.
+
+<span class="tag is-rounded">New in 2017.3</span>

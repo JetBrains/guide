@@ -8,9 +8,7 @@ topics:
 author: tg
 subtitle: 'The Maven Tool Window gives you access to goals, dependencies, and more.'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./maven-window.png
-  url: 'https://youtu.be/pt3uB0sd5kY?start=3'
+video: 'https://youtu.be/pt3uB0sd5kY?start=3'
 ---
 
 You can use **⌘E** (macOS), or **Ctrl+E** (Windows/Linux) again to navigate to the Maven window, and here we can see the dependencies of this project.

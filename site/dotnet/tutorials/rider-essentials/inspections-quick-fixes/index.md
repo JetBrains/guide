@@ -13,9 +13,7 @@ subtitle: >-
   Dive into inspections and quick-fixes, nullability inspections, the Heap
   Allocations Viewer plugin, and more!
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/Cqvxrj9aq_E'
+video: 'https://youtu.be/Cqvxrj9aq_E'
 ---
 
 ### Inspections, Quick-Fixes and Context Actions

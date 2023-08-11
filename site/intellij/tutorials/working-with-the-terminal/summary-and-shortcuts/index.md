@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Everything we covered in this tutorial including help links and shortcuts.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/tlEkrWU0d1M?start=423'
+video: 'https://youtu.be/tlEkrWU0d1M?start=423'
 ---
 
 ## Summary

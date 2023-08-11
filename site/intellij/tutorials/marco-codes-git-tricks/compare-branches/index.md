@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Comparing branches
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/Ase_X9p6exw&start=314'
+video: 'https://youtu.be/Ase_X9p6exw&start=314'
 ---
 
 ## Compare Branches

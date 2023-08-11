@@ -19,14 +19,7 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Reading JSDoc comments in the editor can be a challenge because of all the
-  tags you have to wade through. To make it a bit easier, you can try rendering
-  those comments in the editor.
-
-
-  To try this feature out, click the icon in the gutter, next to the comments,
-  and you’ll see documentation comments displayed without any distractions. You
-  can also right-click to adjust the font size for better readability.
 ---
+Reading JSDoc comments in the editor can be a challenge because of all the tags you have to wade through. To make it a bit easier, you can try rendering those comments in the editor.
 
+To try this feature out, click the icon in the gutter, next to the comments, and you’ll see documentation comments displayed without any distractions. You can also right-click to adjust the font size for better readability.

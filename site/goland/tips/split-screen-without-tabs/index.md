@@ -15,20 +15,16 @@ seealso:
       https://www.jetbrains.com/help/go/migrating-from-text-editors.html#tabs_split_windows
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./thumbnail.png
-  url: >-
-    https://www.youtube.com/watch?v=bPiX6d4nYY8&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=149
-leadin: |
-  You can view multiple files at the same time using
-  **Split Horizontal** and **Split Vertical**.
-
-  **How to use:**
-
-  Invoke the **Split Horizontal** or **Split Vertical** via
-  **Find Action**, _Ctrl + Shift + A on Windows/Linux_ or
-  _⌘ + ⇧ + A on macOS_, then type the action names you need.
-
-  <span class="tag is-rounded">New in 2017.3</span>
+video: >-
+  https://www.youtube.com/watch?v=bPiX6d4nYY8&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=149
 ---
+You can view multiple files at the same time using
+**Split Horizontal** and **Split Vertical**.
 
+**How to use:**
+
+Invoke the **Split Horizontal** or **Split Vertical** via
+**Find Action**, _Ctrl + Shift + A on Windows/Linux_ or
+_⌘ + ⇧ + A on macOS_, then type the action names you need.
+
+<span class="tag is-rounded">New in 2017.3</span>

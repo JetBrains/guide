@@ -14,10 +14,6 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
-leadin: >
-  Need to quickly look up the names of parameters in methods and functions?
-  Place the caret 
-
-  anywhere within the call of a method or function and press *Cmd+P/Ctrl+P*.
 ---
-
+Need to quickly look up the names of parameters in methods and functions? Place the caret 
+anywhere within the call of a method or function and press *Cmd+P/Ctrl+P*.

@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2018-11-07
 title: LiveEdit HTML and CSS
 topics:
@@ -10,19 +9,7 @@ subtitle: >-
   updates as you save.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=rGms9nsfdTM'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/xf90Ko64hRc'
-leadin: |
-  *Tired of starting a server a reloading your browser to see file changes?*
-
-  Install the LiveEdit plugin and easily view HTML and CSS, including changes.
-
-  The LiveEdit plugin for PyCharm Professional (not bundled) is easy 
-  to install and gives a great editing experience for HTML and CSS.
+video: 'https://youtu.be/xf90Ko64hRc'
 ---
 
 PyCharm Professional bundles WebStorm and, with the optional LiveEdit plugin,

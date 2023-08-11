@@ -8,9 +8,7 @@ subtitle: >-
   Both Project Structure and Preferences/Settings provide ways to make IntelliJ
   IDEA your own
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/FtGS81ZNTE0'
+video: 'https://youtu.be/FtGS81ZNTE0'
 ---
 
 ## Summary - Configuring IntelliJ IDEA

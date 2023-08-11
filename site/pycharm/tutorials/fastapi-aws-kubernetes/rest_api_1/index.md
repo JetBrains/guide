@@ -10,9 +10,7 @@ topics:
 author: mm
 subtitle: Implementing a REST API for User modules using Pydantic & API Router.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=cj8yw1u__D0'
+video: 'https://www.youtube.com/watch?v=cj8yw1u__D0'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. 

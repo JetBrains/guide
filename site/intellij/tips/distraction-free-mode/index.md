@@ -10,12 +10,10 @@ subtitle: >-
   occupies the entire main window with the source code centered.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/fO8oDVBsHWA'
 seealso:
   - title: (documentation) IntelliJ IDEA Help - IDE viewing modes
     href: 'https://www.jetbrains.com/help/idea/ide-viewing-modes.html'
+video: 'https://youtu.be/fO8oDVBsHWA'
 ---
 
 Use **^\`** (macOS), or **Ctrl+\`** (Windows/Linux), to bring up the **Quick

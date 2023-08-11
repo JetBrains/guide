@@ -7,9 +7,7 @@ topics:
 author: tg
 subtitle: Understand how IntelliJ IDEA deals with Gradle's source set directories
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/6V6G3RyxEMk?start=490'
+video: 'https://youtu.be/6V6G3RyxEMk?start=490'
 ---
 
 Gradle has the concept of [source sets](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.SourceSet.html

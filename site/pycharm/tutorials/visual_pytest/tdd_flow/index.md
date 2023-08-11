@@ -10,9 +10,7 @@ subtitle: >-
   Setup your PyCharm project to help get into the flow of Test-Driven
   Development (TDD).
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/kwj6Hk1kJYU'
+video: 'https://youtu.be/kwj6Hk1kJYU'
 ---
 
 Players have parents, also known as guardians. 

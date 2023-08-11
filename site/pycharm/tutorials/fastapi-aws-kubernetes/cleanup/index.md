@@ -10,9 +10,7 @@ topics:
 author: mm
 subtitle: 'Cleaning up stack (removing RDS, EKS, ElastiCache, LoadBalancer, Route53).'
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=aba-RWIHR28'
+video: 'https://www.youtube.com/watch?v=aba-RWIHR28'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. 

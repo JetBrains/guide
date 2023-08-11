@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-04-17
 title: Put New Project Under Version Control
 topics:
@@ -14,17 +13,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/enable-version-control-integration-dialog.html#Enable_Version_Control_Integration_Dialog.xml
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=jlpfzJZ7RZM'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/36RFkThiZug'
-leadin: |
-  *Work safely via VCS, via keyboard.*    
-
-  You started a new project or opened a local directory and it's not 
-  yet under VCS. Here's the fastest way to do so, from the keyboard.
+video: 'https://youtu.be/36RFkThiZug'
 ---
 
 You have a new project, or opened a project not under version control. First 

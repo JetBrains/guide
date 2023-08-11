@@ -8,9 +8,7 @@ topics:
 author: pwe
 subtitle: Write tests which ensure exceptions are raised when expected.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/eBO2FmoeLKw'
+video: 'https://youtu.be/eBO2FmoeLKw'
 ---
 
 In the previous step we showed how to debug a problem.

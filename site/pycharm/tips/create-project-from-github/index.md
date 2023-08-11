@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-04-17
 title: Create a Project from GitHub
 topics:
@@ -14,17 +13,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/github.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=uTKt4Ur4zuk'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=ukbvdF5wqPQ'
-leadin: |
-  *From repo to project in no time.*    
-
-  You need to evaluate a project. You need to get a fork. You're always  
-  getting code. Let PyCharm do the clone and make the project.
+video: 'https://www.youtube.com/watch?v=ukbvdF5wqPQ'
 ---
 
 We all consume a lot of code. Alas, it's a number of steps to get all that 

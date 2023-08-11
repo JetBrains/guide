@@ -9,9 +9,7 @@ subtitle: >-
   Groovy's syntax and functionality might be unusual for Java developers to
   begin with, but it can be very helpful for testing.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/i5Qu3qYOfsM?start=486'
+video: 'https://youtu.be/i5Qu3qYOfsM?start=486'
 ---
 Before going further with Spock examples, let's take a look at some things which might look odd if we're used to using [Java](../../../../topics/java) to test Java code.
 

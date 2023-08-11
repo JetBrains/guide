@@ -16,9 +16,7 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: |
-  Need to add `console.log()`?
-  Type `log` and press _⇥ / Tab_.
-  Or first add the value, then type `.log` and press _⇥ / Tab_.
 ---
-
+Need to add `console.log()`?
+Type `log` and press _⇥ / Tab_.
+Or first add the value, then type `.log` and press _⇥ / Tab_.

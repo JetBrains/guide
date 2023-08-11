@@ -12,8 +12,7 @@ topics:
 author: citizenmatt
 subtitle: Dive deeper into code with the smart editor in Unity!
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
+video:
   url: 'https://www.youtube.com/watch?v=75r6TRwCc_o'
   start: 1266
   end: 1416

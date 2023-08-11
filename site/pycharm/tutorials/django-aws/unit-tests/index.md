@@ -9,9 +9,7 @@ topics:
 author: mm
 subtitle: Writing and running unit tests in Django
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://youtu.be/cP5vv9M0VFQ'
+video: 'https://youtu.be/cP5vv9M0VFQ'
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial we are going to focus on Unit Tests.

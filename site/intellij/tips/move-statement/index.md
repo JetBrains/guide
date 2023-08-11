@@ -8,21 +8,14 @@ author: hs
 subtitle: Move a statement around within your method
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/TZdeOOhTHlc'
 seealso:
   - title: (video) Editor Tips and Tricks in IntelliJ IDEA
     href: 'https://www.youtube.com/watch?v=JEpeHNsWIMk'
   - title: (documentation) IntelliJ IDEA Help - Move statements
     href: >-
       https://www.jetbrains.com/help/idea/working-with-source-code.html#editor_statement_select
-leadin: >
-  You can use **⇧⌘↑** (macOS), or **Ctrl+Shift+Up Arrow** (Windows/Linux), to
-  move a line up. To move a statement down use **⇧⌘↓** (macOS), or
-  **Ctrl+Shift+Down Arrow** (Windows/Linux).   
-   
-  This shortcut factors in scope. You cannot move a statement outside of the
-  scope its contained within.
+video: 'https://youtu.be/TZdeOOhTHlc'
 ---
-
+You can use **⇧⌘↑** (macOS), or **Ctrl+Shift+Up Arrow** (Windows/Linux), to move a line up. To move a statement down use **⇧⌘↓** (macOS), or **Ctrl+Shift+Down Arrow** (Windows/Linux).   
+ 
+This shortcut factors in scope. You cannot move a statement outside of the scope its contained within.

@@ -8,9 +8,7 @@ topics:
 author: tg
 subtitle: Add Spock framework dependencies to the project
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/i5Qu3qYOfsM?start=75'
+video: 'https://youtu.be/i5Qu3qYOfsM?start=75'
 ---
 
 Now the basics of the project have been created, let's take a closer look and set up the dependencies we need.

@@ -10,25 +10,13 @@ subtitle: >-
   help you.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./thumbnail.png
-  url: >-
-    https://www.youtube.com/watch?v=GFmVCdhNYX4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=142
-leadin: >
-  **How to use:**
-
-
-  Open any JS file and start using any Vue.js 3 related code. The IDE will
-  provide you assistance with code completion, refactoring, find usages, and
-  more.
-
-
-  **Note:** You must install the
-  [_Vue.js_](https://plugins.jetbrains.com/plugin/9442-vue-js) support plugin
-  from the IDE Marketplace via _Settings/Preferences | Plugins | Marketplace_
-  for this functionality to work.
-
-
-  <span class="tag is-rounded">New in 2020.3</span>
+video: >-
+  https://www.youtube.com/watch?v=GFmVCdhNYX4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=142
 ---
+**How to use:**
 
+Open any JS file and start using any Vue.js 3 related code. The IDE will provide you assistance with code completion, refactoring, find usages, and more.
+
+**Note:** You must install the [_Vue.js_](https://plugins.jetbrains.com/plugin/9442-vue-js) support plugin from the IDE Marketplace via _Settings/Preferences | Plugins | Marketplace_ for this functionality to work.
+
+<span class="tag is-rounded">New in 2020.3</span>

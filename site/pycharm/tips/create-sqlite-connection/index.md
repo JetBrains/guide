@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-04-17
 title: Create SQLite Database Connection By Drag-and-Drop
 topics:
@@ -14,18 +13,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/connecting-to-a-database.html#connect-to-sqlite
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=-xBE-Dm3HWE'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/U2sAgysf1Hc'
-leadin: |
-  *Working with a local SQLite database, the easy way.*    
-
-  Using the integrated Database tool means configuring a connection. 
-  For SQLite it's simple: use drag-and-drop and let the IDE figure out 
-  the details.
+video: 'https://youtu.be/U2sAgysf1Hc'
 ---
 
 PyCharm Professional's Database tool, courtesy of 

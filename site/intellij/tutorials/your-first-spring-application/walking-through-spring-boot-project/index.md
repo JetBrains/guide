@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Let's take a look at what IntelliJ IDEA has created for us and why.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/XkO1ana4nqI'
+video: 'https://youtu.be/XkO1ana4nqI'
 ---
 
 ## Project Walk-through

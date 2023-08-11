@@ -13,9 +13,7 @@ topics:
 author: maartenba
 subtitle: Layla Porter
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/cGCBRrwai2I'
+video: 'https://youtu.be/cGCBRrwai2I'
 ---
 
 People love to stay in their comfort zone and do what they've always done. But what if you could take your web applications to the next level just by getting the fundamentals right?

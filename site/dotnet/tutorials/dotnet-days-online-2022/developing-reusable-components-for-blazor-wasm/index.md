@@ -13,9 +13,7 @@ topics:
 author: maartenba
 subtitle: Emanuele Bartolesi
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/s2Y9ESWZbgc'
+video: 'https://youtu.be/s2Y9ESWZbgc'
 ---
 
 One of the best features of Blazor is the option to turn pieces of user interface code into reusable UI controls. This feature increases your productivity, especially when you have created a lot of reusable components for different projects.

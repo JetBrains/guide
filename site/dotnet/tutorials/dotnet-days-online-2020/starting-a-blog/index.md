@@ -11,9 +11,7 @@ topics:
 author: maartenba
 subtitle: Khalid Abuhakmeh
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/qjTJI6jbc4s'
+video: 'https://youtu.be/qjTJI6jbc4s'
 ---
 
 Khalid Abuhakmeh walks us through building a blogging platform utilizing a static site generator, free online services, coming up with ideas, and promoting content. 

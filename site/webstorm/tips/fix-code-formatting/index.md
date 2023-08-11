@@ -14,7 +14,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 265
-leadin: |
-  Press *Ctrl+Alt+L/Cmd+Alt+L* to automatically fix code formatting in a file.
 ---
-
+Press *Ctrl+Alt+L/Cmd+Alt+L* to automatically fix code formatting in a file.

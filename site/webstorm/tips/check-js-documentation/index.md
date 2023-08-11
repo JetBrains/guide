@@ -18,11 +18,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Need to quickly check docs for the standard JavaScript methods and other
-  symbols but don’t feel like googling? Hover over a symbol or press *F1* to
-  invoke the *Documentation* popup. If needed, you can also go to the
-  corresponding MDN page for more details right from there (make sure to press
-  *F1* to see the MDN link).
 ---
-
+Need to quickly check docs for the standard JavaScript methods and other symbols but don’t feel like googling? Hover over a symbol or press *F1* to invoke the *Documentation* popup. If needed, you can also go to the corresponding MDN page for more details right from there (make sure to press *F1* to see the MDN link).

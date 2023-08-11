@@ -8,9 +8,7 @@ topics:
 author: pwe
 subtitle: Write a simple test and run it in PyCharm's visual test runner.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/I1ssiDEa2S4'
+video: 'https://youtu.be/I1ssiDEa2S4'
 ---
 
 Getting started with pytest is quite easy.

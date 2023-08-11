@@ -11,9 +11,7 @@ topics:
 author: matkoch
 subtitle: 'Helping you write better code, faster, and automatically fixes code issues.'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/RgDGJ9H63n4'
+video: 'https://youtu.be/RgDGJ9H63n4'
 ---
 
 ### What are Inspections and Quick-Fixes?

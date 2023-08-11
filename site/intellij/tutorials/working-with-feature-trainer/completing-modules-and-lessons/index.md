@@ -9,9 +9,7 @@ subtitle: >-
   order and restarted as many times are you like. Lessons will help you to
   associate actions and keyboard shortcuts with functionality in the IDE.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/gY7Ei3tQ9q0'
+video: 'https://youtu.be/gY7Ei3tQ9q0'
 ---
 
 ## How can I work with modules and lessons?

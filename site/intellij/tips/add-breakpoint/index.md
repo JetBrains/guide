@@ -9,9 +9,6 @@ author: hs
 subtitle: Easily add breakpoints from the run window
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/hHDsG-sdb3U'
 seealso:
   - title: (video) Inline Method Refactoring in IntelliJ IDEA
     href: 'https://www.youtube.com/watch?v=uYsFlbXJbog'
@@ -21,8 +18,6 @@ seealso:
     href: 'https://www.youtube.com/watch?v=HgWU25YwDfc'
   - title: (documentation) IntelliJ IDEA Help - Breakpoints
     href: 'https://www.jetbrains.com/help/idea/using-breakpoints.html'
-leadin: >
-  When you run your code and get an unhandled exception, you can click _Create
-  breakpoint_ in the Run window to debug it.
+video: 'https://youtu.be/hHDsG-sdb3U'
 ---
-
+When you run your code and get an unhandled exception, you can click _Create breakpoint_ in the Run window to debug it.

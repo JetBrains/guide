@@ -12,8 +12,7 @@ topics:
 author: citizenmatt
 subtitle: 'Replace assets on your scene. It''s like refactoring, but visually!'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
+video:
   url: 'https://www.youtube.com/watch?v=75r6TRwCc_o'
   start: 1170
   end: 1266

@@ -17,13 +17,7 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Need some placeholder text in your code? Type *lorem* and press *Tab*. If
-  needed, you can add the text together with a tag: just add a tag name and *>*
-  before *lorem*.
-
-
-  If you want to generate a specific number of words, add a number after
-  *lorem*, e.g. lorem5, then press *Tab*.
 ---
+Need some placeholder text in your code? Type *lorem* and press *Tab*. If needed, you can add the text together with a tag: just add a tag name and *>* before *lorem*.
 
+If you want to generate a specific number of words, add a number after *lorem*, e.g. lorem5, then press *Tab*.

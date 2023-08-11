@@ -10,9 +10,7 @@ topics:
 author: mm
 subtitle: Performing CRUD operations in our User module.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=FDaC6OkvIU8'
+video: 'https://www.youtube.com/watch?v=FDaC6OkvIU8'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.

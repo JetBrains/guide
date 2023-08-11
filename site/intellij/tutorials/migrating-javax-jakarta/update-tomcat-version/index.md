@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: How the project is set up in Docker and upgrading Tomcat
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/mukr2Q_zBm4?start=88'
+video: 'https://youtu.be/mukr2Q_zBm4?start=88'
 ---
 
 This project uses Docker so you can update the version of Tomcat from 9 to 10 in your `Dockerfile`:

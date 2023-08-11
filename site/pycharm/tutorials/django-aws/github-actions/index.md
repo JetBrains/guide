@@ -9,9 +9,7 @@ topics:
 author: mm
 subtitle: Deploy Docker Image to AWS ECR through GitHub Actions
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://youtu.be/WFGTQnvhf5Q'
+video: 'https://youtu.be/WFGTQnvhf5Q'
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, we are going to build, tag and push our docker image to Amazon Elastic Container Registry through GitHub Actions. 

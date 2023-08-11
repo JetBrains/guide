@@ -14,8 +14,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Drag the script file to your HTML code and drop it there to quickly add the
-  `<script>` tag.
 ---
-
+Drag the script file to your HTML code and drop it there to quickly add the `<script>` tag.

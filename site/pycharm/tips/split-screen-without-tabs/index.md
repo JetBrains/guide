@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-04-17
 title: Split Screen Without Tabs
 topics:
@@ -16,20 +15,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/migrating-from-text-editors.html#tabs_split_windows
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=-yiOTOK1xVY'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/VcqbOtn1s0w'
-leadin: >
-  *Get into TDD focus with side-by-side editors.*    
-
-
-  Testing means three things: code that you're testing, the code for the test, 
-
-  and the output from the test runner. Arrange all 3 to get into the testing
-  flow.
+video: 'https://youtu.be/VcqbOtn1s0w'
 ---
 
 As discussed previously, disabling tabs and focusing on the keyboard helps 

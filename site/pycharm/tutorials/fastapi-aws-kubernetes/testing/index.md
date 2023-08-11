@@ -10,9 +10,7 @@ topics:
 author: mm
 subtitle: Writing Unit Tests using Pytest & Asyncio.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=uk7EcDIZEfY'
+video: 'https://www.youtube.com/watch?v=uk7EcDIZEfY'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.

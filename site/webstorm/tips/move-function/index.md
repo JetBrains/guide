@@ -18,13 +18,7 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Want to move a function to a separate file? 
-
-  You can use the *Move function* quick fix (*Alt+Enter*) that creates a new
-  file named after this function. 
-
-  Or use the *Move...* refactoring if you want to select a different target
-  file.
 ---
-
+Want to move a function to a separate file? 
+You can use the *Move function* quick fix (*Alt+Enter*) that creates a new file named after this function. 
+Or use the *Move...* refactoring if you want to select a different target file.

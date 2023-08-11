@@ -10,9 +10,7 @@ topics:
 author: maartenba
 subtitle: Lorraine Steyn
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/VaeZW1RISAY'
+video: 'https://youtu.be/VaeZW1RISAY'
 ---
 
 This will be a talk on strategies we have employed to "rescue" legacy code, and how you prevent your system from becoming the Big Ball of Mud. It's not code specific, but it is aimed at developers.

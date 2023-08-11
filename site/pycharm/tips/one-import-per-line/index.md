@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2018-11-06
 title: One Import Per Line Preference
 topics:
@@ -19,23 +18,7 @@ seealso:
     href: 'https://youtrack.jetbrains.com/issue/PY-20100'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=EvKXVp4BXGk'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/XB4SnJ4XmUs'
-leadin: >
-  *Don't waste time manually putting imports one-per-line. Let your tool do it.*
-
-
-  Switching between files...we all do this, all the time. Use the ``Recent
-  Files`` 
-
-  action to quickly jump between the files you are working on. Moral of the
-  story? 
-
-  Let PyCharm be your janitor.
+video: 'https://youtu.be/XB4SnJ4XmUs'
 ---
 
 Writing Python code means importing stuff. Lots of code can mean lots

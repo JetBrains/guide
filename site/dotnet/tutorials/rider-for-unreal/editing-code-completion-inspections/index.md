@@ -12,8 +12,7 @@ topics:
 author: citizenmatt
 subtitle: Let's explore what the coding experience is like!
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
+video:
   url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
   start: 648
   end: 1553

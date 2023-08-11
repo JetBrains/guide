@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Implementing horizontal scrolling
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=72Dt_U9DQh4&start=373s'
+video: 'https://www.youtube.com/watch?v=72Dt_U9DQh4&start=373s'
 ---
 
 ## Horizontal Scrolling

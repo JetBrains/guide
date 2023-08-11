@@ -10,9 +10,7 @@ topics:
 author: mm
 subtitle: Configuring Celery & Redis with FastAPI.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=RWxnQW1bU3E'
+video: 'https://www.youtube.com/watch?v=RWxnQW1bU3E'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. 

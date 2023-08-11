@@ -11,28 +11,17 @@ seealso:
     href: 'https://www.jetbrains.com/help/go/creating-and-optimizing-imports.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./thumbnail.png
-  url: >-
-    https://www.youtube.com/watch?v=pd4_YckrM18&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=59
-leadin: >
-  *Type the symbol, let your IDE install the package and write the import.*
-
-
-  GoLand can generate your import for you, even when you haven't installed the
-  package.
-
-
-  **How to use:**
-
-
-  Press _Alt + Enter on Windows/Linux_ or _⌥ + Enter on macOS_ to invoke
-
-  the list of quick-fixes on the red import line and select
-
-  **Sync packages of <project\>** to import the package into your project.
-
-
-  <span class="tag is-rounded">New in 2017.3</span>
+video: >-
+  https://www.youtube.com/watch?v=pd4_YckrM18&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=59
 ---
+*Type the symbol, let your IDE install the package and write the import.*
 
+GoLand can generate your import for you, even when you haven't installed the package.
+
+**How to use:**
+
+Press _Alt + Enter on Windows/Linux_ or _⌥ + Enter on macOS_ to invoke
+the list of quick-fixes on the red import line and select
+**Sync packages of <project\>** to import the package into your project.
+
+<span class="tag is-rounded">New in 2017.3</span>

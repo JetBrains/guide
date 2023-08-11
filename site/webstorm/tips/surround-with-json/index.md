@@ -15,8 +15,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Use the Surround with action (*Alt+Cmd+T/Ctrl+Alt+T*) in JSON to quickly
-  surround items with braces, brackets, or quotation marks.
 ---
-
+Use the Surround with action (*Alt+Cmd+T/Ctrl+Alt+T*) in JSON to quickly surround items with braces, brackets, or quotation marks.

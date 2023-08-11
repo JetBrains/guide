@@ -11,9 +11,7 @@ topics:
 author: pwe
 subtitle: How to run your code and see the results? Let's explore.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/F2rMM6Z7H_Q'
+video: 'https://youtu.be/F2rMM6Z7H_Q'
 ---
 
 With Rider, you can run entire apps and specific scripts right where you create your code. Regardless of what you want to run, the principles are the same. Let’s see what they are.

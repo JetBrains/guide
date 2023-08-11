@@ -9,9 +9,6 @@ author: tg
 subtitle: Context Actions are available from most places in the code.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/73w_X5Bfq7U'
 seealso:
   - title: (video) IntelliJ IDEA Pro Tips Alt Enter
     href: 'https://www.youtube.com/watch?v=pWHgNm6aGdo'
@@ -22,6 +19,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/idea/inspections-settings.html'
   - title: (documentation) IntelliJ IDEA Help - Intention Actions
     href: 'https://www.jetbrains.com/help/idea/intention-actions.html'
+video: 'https://youtu.be/73w_X5Bfq7U'
 ---
 
 IntelliJ IDEA offers intelligent suggestions most places in the code. It can

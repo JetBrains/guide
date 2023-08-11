@@ -14,8 +14,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  If you want to temporarily disable an ESLint rule, WebStorm can help you with
-  that. Hover over the warning and select _Suppress for current line_.
 ---
-
+If you want to temporarily disable an ESLint rule, WebStorm can help you with that. Hover over the warning and select _Suppress for current line_.

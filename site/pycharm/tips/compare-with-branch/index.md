@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2022-12-15
 title: Compare With Branch
 topics:
@@ -12,14 +11,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/manage-branches.html#compare_branches
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://youtu.be/oGbAj89ttZw'
-leadin: |
-  *You want to merge -- but what's in those commits?*
-
-  You see the commits from the main branch.
-  What changes do they contain?
+video: 'https://youtu.be/oGbAj89ttZw'
 ---
 ## The Problem
 

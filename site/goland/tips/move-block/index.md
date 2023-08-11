@@ -11,30 +11,18 @@ seealso:
     href: 'https://www.jetbrains.com/help/go/adding-deleting-and-moving-lines.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./thumbnail.png
-  url: >-
-    https://www.youtube.com/watch?v=1ip3lu6wgSc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=84
-leadin: >
-  *Move lines and blocks, up or down, using the keyboard.*
-
-
-  When you're in the flow, you want to re-arrange code fast.
-
-  Use this tip to move code around without cut-and-paste.
-
-
-  **How to use:**
-
-
-  **Move Statement Up** with _Ctrl + Shift + ↑ on Windows/Linux_ or _⌘ + ⇧ + ↑
-  on macOS_.
-
-
-  **Move Statement Down** with _Ctrl + Shift + ↓ on Windows/Linux_ or _⌘ + ⇧ + ↓
-  on macOS_.  
-
-
-  <span class="tag is-rounded">New in 2017.3</span>
+video: >-
+  https://www.youtube.com/watch?v=1ip3lu6wgSc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=84
 ---
+*Move lines and blocks, up or down, using the keyboard.*
 
+When you're in the flow, you want to re-arrange code fast.
+Use this tip to move code around without cut-and-paste.
+
+**How to use:**
+
+**Move Statement Up** with _Ctrl + Shift + ↑ on Windows/Linux_ or _⌘ + ⇧ + ↑ on macOS_.
+
+**Move Statement Down** with _Ctrl + Shift + ↓ on Windows/Linux_ or _⌘ + ⇧ + ↓ on macOS_.  
+
+<span class="tag is-rounded">New in 2017.3</span>

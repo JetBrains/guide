@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2018-12-02
 title: Optimize Imports
 topics:
@@ -17,18 +16,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=6uOgL_AmSnc'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/lNm5ISUZqCE'
-leadin: |
-  *Unsorted imports. Unused imports. No problem -- Optimize Imports.*
-
-  PyCharm's ``Optimize Imports`` action is every Python developer's 
-  second-best friend. Along with ``Reformat Code``, keeping your 
-  code quality tools happy is a piece of cake.
+video: 'https://youtu.be/lNm5ISUZqCE'
 ---
 
 PyCharm automates many "gardening" tasks when writing Python code. Managing your

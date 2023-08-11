@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Connecting to databases and more
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=KgXq2UBNEhA&start=1052s'
+video: 'https://www.youtube.com/watch?v=KgXq2UBNEhA&start=1052s'
 ---
 
 ## DataSource, Connection Pools, HikariCP and Library Landscape

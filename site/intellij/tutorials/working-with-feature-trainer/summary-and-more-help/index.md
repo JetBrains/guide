@@ -9,9 +9,7 @@ subtitle: >-
   keyboard shortcuts in IntelliJ IDEA. You do not need to complete the modules
   or lessons in order, allowing you to fit your learning around your schedule.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/gs_MiITZf_o'
+video: 'https://youtu.be/gs_MiITZf_o'
 ---
 
 ## More Resources

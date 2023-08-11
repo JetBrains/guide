@@ -10,9 +10,7 @@ subtitle: >-
   the IDE, and tour a few more features.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/b0KrB31hN5k'
+video: 'https://youtu.be/b0KrB31hN5k'
 ---
 
 In our [previous step](../project_setup/) we generated a project then 

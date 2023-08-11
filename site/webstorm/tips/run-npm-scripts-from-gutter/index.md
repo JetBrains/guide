@@ -15,8 +15,6 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: |
-  Have *package.json* opened in the editor and want to start a npm script? 
-  Click on the *Run* icon next to the script name and select *Run*.
 ---
-
+Have *package.json* opened in the editor and want to start a npm script? 
+Click on the *Run* icon next to the script name and select *Run*.

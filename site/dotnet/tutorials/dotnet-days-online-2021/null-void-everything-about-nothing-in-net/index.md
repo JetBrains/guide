@@ -12,9 +12,7 @@ topics:
 author: maartenba
 subtitle: Stefan Pölz
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/h7uVMKPHGtM'
+video: 'https://youtu.be/h7uVMKPHGtM'
 ---
 
 System.NullReferenceException: 'Object reference not set to an instance of an object.'

@@ -14,8 +14,6 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: |
-  You can preview images right from the Project view – just press *Alt+Space* 
-  on macOS or *Ctrl+Shift+I* on Windows and Linux.
 ---
-
+You can preview images right from the Project view – just press *Alt+Space* 
+on macOS or *Ctrl+Shift+I* on Windows and Linux.

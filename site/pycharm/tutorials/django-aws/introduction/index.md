@@ -9,9 +9,7 @@ topics:
 author: mm
 subtitle: 'Introducing Django, a high-level python web framework.'
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://youtu.be/ze8ukid9owU'
+video: 'https://youtu.be/ze8ukid9owU'
 ---
 
 Hello everyone, welcome to part one of the AWS Django tutorial series. 

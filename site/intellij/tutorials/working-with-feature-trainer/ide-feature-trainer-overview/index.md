@@ -9,9 +9,7 @@ subtitle: >-
   The IDE Feature Trainer is a bundled plugin that's available within IntelliJ
   IDEA and other IDEs including PyCharm, RubyMine, AppCode, and GoLand.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/TohPVj6DOJQ'
+video: 'https://youtu.be/TohPVj6DOJQ'
 ---
 
 ## IDE Feature Trainer Overview

@@ -14,9 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Asynchronous rendering of tabs on the server
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/gCqi60M-QYs'
+video: 'https://youtu.be/gCqi60M-QYs'
 ---
 
 Tabs are commonplace in most user interfaces, and you can indeed implement the pattern without HTMX. However, there are circumstances where it makes sense to reconsider implementing the UI pattern with HTMX. One instance is when each tab can have an enormous amount of information that your users do not always access. Hypothetically, why slow down the initial page load for 100% of users, by including a tab that only 1% of users access? 

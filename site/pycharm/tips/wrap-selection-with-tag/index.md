@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-04-17
 title: Wrap Selection With Tag
 topics:
@@ -12,17 +11,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/surrounding-blocks-of-code-with-language-constructs.html#Surrounding_Blocks_of_Code_with_Language_Constructs.xml
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=rj7g7SNPQas'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/GK7DEI6zOB8'
-leadin: |
-  *HTML tag surrounding, the easy way.*    
-
-  You need a `div` around a block. Use the keyboard not just for 
-  selection, but also for adding the tag to surround with.
+video: 'https://youtu.be/GK7DEI6zOB8'
 ---
 
 You're in an HTML file, working on a nice block of markup, and realize your 

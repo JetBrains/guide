@@ -17,10 +17,6 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  With the _Optimize Imports_ action (_⌃⌥O_ / _Ctrl+Alt+O_), you can quickly
-  remove any unused imports, merge 
-
-  imports from the same module, and optionally sort the import statements.
 ---
-
+With the _Optimize Imports_ action (_⌃⌥O_ / _Ctrl+Alt+O_), you can quickly remove any unused imports, merge 
+imports from the same module, and optionally sort the import statements.

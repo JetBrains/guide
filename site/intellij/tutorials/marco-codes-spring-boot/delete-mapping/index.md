@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Creating and testing @DeleteMapping
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=QuvS_VLbGko&start=1348s'
+video: 'https://www.youtube.com/watch?v=QuvS_VLbGko&start=1348s'
 ---
 
 ## What's in the video?

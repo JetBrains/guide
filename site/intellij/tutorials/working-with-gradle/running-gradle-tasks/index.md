@@ -8,9 +8,7 @@ topics:
 author: tg
 subtitle: There are several convenient ways to run Gradle tasks from IntelliJ IDEA.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/6V6G3RyxEMk?start=824'
+video: 'https://youtu.be/6V6G3RyxEMk?start=824'
 ---
 
 We saw earlier that we can navigate to a specific [Gradle task](https://docs.gradle.org/current/userguide/more_about_tasks.html) in a specific Gradle project in the [Gradle Tool Window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html), and we can double-click that task to get IntelliJ IDEA to run it.

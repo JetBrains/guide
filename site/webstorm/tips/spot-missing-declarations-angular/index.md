@@ -18,9 +18,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  With *Ctrl+Cmd+Up* on macOS or *Ctrl+Alt+Home* on Windows and Linux, you can
-  quickly jump between the Angular component's template, test, style and
-  TypeScript files.
 ---
-
+With *Ctrl+Cmd+Up* on macOS or *Ctrl+Alt+Home* on Windows and Linux, you can quickly jump between the Angular component's template, test, style and TypeScript files.

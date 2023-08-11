@@ -10,9 +10,7 @@ topics:
 author: maartenba
 subtitle: Ben UI
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/1n3oIfI7nBM'
+video: 'https://youtu.be/1n3oIfI7nBM'
 ---
 
 Game developers should be good at crafting the UI, shouldn’t they? This talk will dig into game UI goals and how best to attain them. It will give you hints of a good UI design and how to guide the users visually. Unreal Engine has an option to create a beautiful UI using Blueprints, but at times you might find yourself limited by its options, and you’ll have to fall back on good old C++.

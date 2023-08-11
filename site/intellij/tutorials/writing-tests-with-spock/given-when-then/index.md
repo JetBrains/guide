@@ -7,9 +7,7 @@ topics:
 author: tg
 subtitle: See how Spock tests are usually structured.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/i5Qu3qYOfsM?start=386'
+video: 'https://youtu.be/i5Qu3qYOfsM?start=386'
 ---
 
 One of the most powerful features of Spock is how descriptive it is. It's not just for testing code, it's for describing and documenting expected behaviour.

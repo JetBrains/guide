@@ -12,39 +12,23 @@ seealso:
       https://blog.jetbrains.com/go/2018/12/07/refactorings-in-goland-rename-refactoring/
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./thumbnail.png
-  url: >-
-    https://www.youtube.com/watch?v=CriTJ6kmeaQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=104
-leadin: >
-  Do you want to select all the occurrences of a piece of code?
-
-
-  **How to use:**
-
-
-  Press _Ctrl + Alt + Shift + J on Windows/Linux_, and _⌘ + ^ + G on macOS_.
-
-
-  After the selection is complete, you can start editing all the fragments
-
-  as if they were all the same one.
-
-
-  **Pro tip:**
-
-
-  If you plan to use this feature to rename something,
-
-  then you should have a look at our [Rename
-  refactoring](https://blog.jetbrains.com/go/2018/12/07/refactorings-in-goland-rename-refactoring/),
-  which is designed
-
-  to work safely across multiple packages, not just at the file level,
-
-  with full preview and undo support.
-
-
-  <span class="tag is-rounded">New in 2017.3</span>
+video: >-
+  https://www.youtube.com/watch?v=CriTJ6kmeaQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=104
 ---
+Do you want to select all the occurrences of a piece of code?
 
+**How to use:**
+
+Press _Ctrl + Alt + Shift + J on Windows/Linux_, and _⌘ + ^ + G on macOS_.
+
+After the selection is complete, you can start editing all the fragments
+as if they were all the same one.
+
+**Pro tip:**
+
+If you plan to use this feature to rename something,
+then you should have a look at our [Rename refactoring](https://blog.jetbrains.com/go/2018/12/07/refactorings-in-goland-rename-refactoring/), which is designed
+to work safely across multiple packages, not just at the file level,
+with full preview and undo support.
+
+<span class="tag is-rounded">New in 2017.3</span>

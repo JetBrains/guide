@@ -8,9 +8,7 @@ topics:
 author: maartenba
 subtitle: Lorraine Steyn
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/zhYasPE1adQ'
+video: 'https://youtu.be/zhYasPE1adQ'
 ---
 
 Remote pairing is a fabulous combination of highly engaging remote development with high people engagement and collaboration. In this live demo, we will take you through a variety of pairing tools and talk about the challenges and successes of remote pairing in each one.

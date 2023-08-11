@@ -18,8 +18,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  WebStorm can automatically add an import for a symbol even if you’re using
-  default exports.
 ---
-
+WebStorm can automatically add an import for a symbol even if you’re using default exports.

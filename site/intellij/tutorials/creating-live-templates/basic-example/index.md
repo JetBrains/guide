@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Creating a Live Template to add a `private void method`
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/Sio9MdSqXZo?start=147'
+video: 'https://youtu.be/Sio9MdSqXZo?start=147'
 ---
 
 In this example, we're going to create a Live Template to insert the code construct for `private void method`:

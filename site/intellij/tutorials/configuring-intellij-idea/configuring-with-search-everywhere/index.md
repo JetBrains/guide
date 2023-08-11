@@ -8,9 +8,7 @@ subtitle: >-
   As well as the Preferences/settings dialog you can use Search Everywhere to
   make IntelliJ IDEA your own
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/DR0bJZWLLqE'
+video: 'https://youtu.be/DR0bJZWLLqE'
 ---
 
 ## Configuring IntelliJ IDEA with Search Everywhere

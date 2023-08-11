@@ -14,9 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Maintaining state across requests
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/tDJrwKKqGgg'
+video: 'https://youtu.be/tDJrwKKqGgg'
 ---
 
 Rather than managing states on the client, HTMX relies heavily on the server to keep our state in order. Let's be honest, persisting state is a task suited best for a server back-end. While we could store state on the client, in a server environment we have secure access to a wonderful array database technologies. 

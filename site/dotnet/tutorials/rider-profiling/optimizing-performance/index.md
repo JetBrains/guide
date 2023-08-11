@@ -14,9 +14,7 @@ subtitle: >-
   Let's try to optimize the Sudoku solver by profiling, and then optimizing code
   based on the performance snapshot.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/P__B5MII4h8'
+video: 'https://youtu.be/P__B5MII4h8'
 ---
 
 ### Measure Performance with Sampling

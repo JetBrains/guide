@@ -14,9 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: 'Validate models on the server, display results on the client'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/aGQAHQm4_nU'
+video: 'https://youtu.be/aGQAHQm4_nU'
 ---
 
 Client-side validation can help users fix problems before making a request, but client-side validation is often insufficient to do complete state validation. What do I mean by "insufficient"? By design, clients rarely have all information necessary to determine if a user's input will pass server-side validation. A typical example is a user registration form. While a username may follow the client-side criteria for a valid username, newcomers won't know whether their registration will be successful until the server performs checks determining the uniqueness of the username against all existing users.

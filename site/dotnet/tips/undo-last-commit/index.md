@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2022-10-21
 title: Undo Last Commit
 topics:
@@ -15,14 +14,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/rider/Managing_Changelists.html#0'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://youtu.be/sAXyAivHeb0'
-leadin: |
-  *You botched your last commit.*    
-
-  You want to fix it, but you haven’t memorized the Git voodoo chant.
-  Good news. If you haven’t pushed yet, the IDE can make this really easy.
+video: 'https://youtu.be/sAXyAivHeb0'
 ---
 First go to the Git tool window and make sure you’re on the log tab.
 

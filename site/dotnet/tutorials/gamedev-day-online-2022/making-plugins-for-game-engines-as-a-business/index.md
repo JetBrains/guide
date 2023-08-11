@@ -11,9 +11,7 @@ topics:
 author: maartenba
 subtitle: 'Alexander Pirogov, Victor Careil'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/--y6CLG1JP8'
+video: 'https://youtu.be/--y6CLG1JP8'
 ---
 
 In the game development world, we often talk about creating games. But creating plugins for game engines can also be a lucrative undertaking! In this interview, Alexandr Pirogov talks to Victor Careil, Founder & Lead Developer of Voxel Plugin, about why plugins are created for game engines, how it is different from crafting games, how to make plugins universal and applicable to different game genres, and finally, how to make a business out of it!

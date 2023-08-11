@@ -10,9 +10,7 @@ subtitle: >-
   Introduce testing, pytest, and how it all fits into PyCharm, along with a
   scenario to work on.
 thumbnail: ../thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/dAbpPklX7wo'
+video: 'https://youtu.be/dAbpPklX7wo'
 ---
 
 "Visual Testing with `pytest`" means three things: the field of testing and test-driven development (TDD), `pytest` as a testing tool, and PyCharm as a visual frontend.

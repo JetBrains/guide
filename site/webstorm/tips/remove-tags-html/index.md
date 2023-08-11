@@ -15,8 +15,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  For HTML tags, you can press _⌥Enter / Alt+Enter_ and select _Remove tag_
-  instead of removing an opening tag and then a closing tag.
 ---
-
+For HTML tags, you can press _⌥Enter / Alt+Enter_ and select _Remove tag_ instead of removing an opening tag and then a closing tag.

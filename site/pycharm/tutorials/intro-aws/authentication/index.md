@@ -7,9 +7,7 @@ topics:
 author: mm
 subtitle: Adding Custom Authorizers in Lambda functions
 thumbnail: ../thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/Q6uZ2HHIYQM'
+video: 'https://youtu.be/Q6uZ2HHIYQM'
 ---
 
 For this tutorial we are going to protect our APIs from unauthorized access by 

@@ -19,11 +19,6 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Press *Cmd/Ctrl+Alt+J* and select *Emmet* to surround a block of code with an
-  Emmet template. 
-
-  This also allows you to wrap individual lines if you’re using * in the
-  abbreviation.
 ---
-
+Press *Cmd/Ctrl+Alt+J* and select *Emmet* to surround a block of code with an Emmet template. 
+This also allows you to wrap individual lines if you’re using * in the abbreviation.

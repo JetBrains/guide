@@ -8,9 +8,7 @@ subtitle: >-
   Spock supports a range of different test labels to help you write the most
   readable tests
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/i5Qu3qYOfsM?start=573'
+video: 'https://youtu.be/i5Qu3qYOfsM?start=573'
 ---
 We've seen `expect` and we've seen `given, when and then`, but Spock provides a lot of flexibility around which labels to use and when. It's all about creating descriptive tests.
 

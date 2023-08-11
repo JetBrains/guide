@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-03-11
 title: View Parameter Info
 topics:
@@ -14,17 +13,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/inline-documentation.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=t3MfWwXmATg'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/hfWhDwp7zz8'
-leadin: |
-  *See what's needed in a function, as you type, without disruption.*    
-
-  Have a function with lots of arguments? `Parameter Info` gives just 
-  the basics without using lots of real estate.
+video: 'https://youtu.be/hfWhDwp7zz8'
 ---
 
 Some functions or classes -- well, let's admit it, they are kind of chatty. 

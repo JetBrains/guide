@@ -13,21 +13,12 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
-leadin: >
-  You can get quick information for any symbol right from the editor by means of
-  the _Quick Documentation_ feature.
-
-  It shows you code documentation in a popup as you hover the mouse over code
-  elements or use a corresponding shortcut.
-
-
-  **How to use:**
-
-
-  To see documentation about an element in your code, hover the mouse over the
-  element, or click it and press `Ctrl + Q` on Windows/Linux or `F1` on macOS.
-
-
-  <span class="tag is-rounded">New in 2022.2</span>
 ---
+You can get quick information for any symbol right from the editor by means of the _Quick Documentation_ feature.
+It shows you code documentation in a popup as you hover the mouse over code elements or use a corresponding shortcut.
 
+**How to use:**
+
+To see documentation about an element in your code, hover the mouse over the element, or click it and press `Ctrl + Q` on Windows/Linux or `F1` on macOS.
+
+<span class="tag is-rounded">New in 2022.2</span>

@@ -15,7 +15,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: |
-  Delete an entire line of code with *Cmd+Delete/Ctrl+Y*.
 ---
-
+Delete an entire line of code with *Cmd+Delete/Ctrl+Y*.

@@ -8,9 +8,7 @@ subtitle: >-
   GitHub & SSH Keys, Git Windows OpenSSH Config and Multiple Git Keys
   (Personal/Work)
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=UnM4QAumuCQ&start=1160s'
+video: 'https://www.youtube.com/watch?v=UnM4QAumuCQ&start=1160s'
 ---
 
 # Keys

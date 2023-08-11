@@ -14,9 +14,7 @@ subtitle: >-
   There's more in ReSharper! Architecture diagrams, localization manager, build
   tools, ...
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/4VC20lc_92o'
+video: 'https://youtu.be/4VC20lc_92o'
 ---
 
 ### Architecture Diagrams

@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2023-02-08
 title: Extract Variable
 topics:
@@ -10,9 +9,6 @@ author: md
 subtitle: Extract code to a variable
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/cT4ntaPr_uQ'
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Extract Variable
     href: >-
@@ -22,9 +18,6 @@ seealso:
       https://www.jetbrains.com/help/idea/extract-variable-refactoring-dialog.html
   - title: (documentation) IntelliJ IDEA Help - Code refactoring
     href: 'https://www.jetbrains.com/help/idea/refactoring-source-code.html'
-leadin: >
-  The Extract Variable refactoring wraps a selected expression into a variable.
-  Select an expression and press **⌥⌘V** (on Mac) or **Ctrl+Alt+V** (on
-  Windows/Linux).
+video: 'https://youtu.be/cT4ntaPr_uQ'
 ---
-
+The Extract Variable refactoring wraps a selected expression into a variable. Select an expression and press **⌥⌘V** (on Mac) or **Ctrl+Alt+V** (on Windows/Linux).

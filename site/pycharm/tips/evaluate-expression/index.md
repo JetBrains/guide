@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-04-15
 title: Evaluate Expression During Debugging
 topics:
@@ -11,17 +10,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/evaluating-expressions.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=9WjQmiMxch4'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/U2sAgysf1Hc'
-leadin: |
-  *Get the right answer in the right context, easily, no typing.*    
-
-  Stopped at breakpoint and want to see a result, either typed in 
-  or from a line fragment? Evaluate Expression to the rescue.
+video: 'https://youtu.be/U2sAgysf1Hc'
 ---
 
 Debugging means poking around, usually at a point in the execution. You 

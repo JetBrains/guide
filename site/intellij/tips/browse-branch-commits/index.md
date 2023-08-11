@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2022-12-09
 title: Browse Branch's Commits
 topics:
@@ -14,14 +13,7 @@ seealso:
       https://www.jetbrains.com/help/idea/sync-with-a-remote-repository.html#update
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=tnz2I9rxrfk'
-leadin: |
-  *Look before you leap.*
-
-  You're on a feature branch but main has commits.
-  Let's take a look at them before doing anything dangerous.
+video: 'https://www.youtube.com/watch?v=tnz2I9rxrfk'
 ---
 ## The Problem
 

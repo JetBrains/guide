@@ -10,9 +10,7 @@ topics:
 author: mm
 subtitle: Setting up FastAPI project type in PyCharm Professional.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=_AFwFvGnEpY'
+video: 'https://www.youtube.com/watch?v=_AFwFvGnEpY'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.

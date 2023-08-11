@@ -14,8 +14,7 @@ subtitle: >-
   The scene view management toolbar can search assets that you can use in your
   scene.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
+video:
   url: 'https://www.youtube.com/watch?v=75r6TRwCc_o'
   start: 884
   end: 1046

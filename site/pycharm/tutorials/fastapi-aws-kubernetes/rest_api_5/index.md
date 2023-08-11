@@ -10,9 +10,7 @@ topics:
 author: mm
 subtitle: Performing CRUD operations in Orders along with placing a new order.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=2CRq3FxVvQA'
+video: 'https://www.youtube.com/watch?v=2CRq3FxVvQA'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.

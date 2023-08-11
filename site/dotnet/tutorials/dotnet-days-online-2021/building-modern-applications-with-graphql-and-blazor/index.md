@@ -11,9 +11,7 @@ topics:
 author: maartenba
 subtitle: Michael Staib
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/P7y-OxeSkZ8'
+video: 'https://youtu.be/P7y-OxeSkZ8'
 ---
 
 Blazor and GraphQL combined will revolutionize how we build rich SPA applications with pure .NET.

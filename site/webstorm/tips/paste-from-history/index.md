@@ -15,9 +15,7 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: |
-  With WebStorm, you can quickly access your clipboard history with 
-  *Ctrl+Shift+V/Cmd+Shift+V* and paste any of the recent items copied 
-  there into an opened file.
 ---
-
+With WebStorm, you can quickly access your clipboard history with 
+*Ctrl+Shift+V/Cmd+Shift+V* and paste any of the recent items copied 
+there into an opened file.

@@ -10,9 +10,7 @@ topics:
 author: mm
 subtitle: Performing CRUD operations in Orders & Cart Module.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://www.youtube.com/watch?v=hRYNGvBm8dk'
+video: 'https://www.youtube.com/watch?v=hRYNGvBm8dk'
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.

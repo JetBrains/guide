@@ -11,8 +11,7 @@ topics:
 author: citizenmatt
 subtitle: 'Navigate back-and-forth between code an blueprints, find usages, ...'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
+video:
   url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
   start: 1553
   end: 1811

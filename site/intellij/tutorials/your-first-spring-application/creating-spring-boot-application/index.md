@@ -8,9 +8,7 @@ subtitle: >-
   Using the IntelliJ IDEA New Project Wizard to create your Spring project and
   select dependencies.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/4fRx1rA83jE'
+video: 'https://youtu.be/4fRx1rA83jE'
 ---
 
 ## Create your Spring Project

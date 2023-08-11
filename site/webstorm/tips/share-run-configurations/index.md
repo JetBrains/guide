@@ -16,17 +16,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
-leadin: >
-  You can make it easier for members of your team to work on your project by
-  sharing your run configuration with them. This way, they’ll be able to run the
-  project code using the same configuration settings regardless of what
-  operating system they’re using.
-
-
-  To share a run configuration, open it in the [Run/Debug Configurations
-  dialog](https://www.jetbrains.com/help/webstorm/run-debug-configurations-dialog.html),
-  then select the _Store as project file_ checkbox and specify the path to the
-  folder where the `*.run.xml` file with the selected run configuration will be
-  stored.
 ---
+You can make it easier for members of your team to work on your project by sharing your run configuration with them. This way, they’ll be able to run the project code using the same configuration settings regardless of what operating system they’re using.
 
+To share a run configuration, open it in the [Run/Debug Configurations dialog](https://www.jetbrains.com/help/webstorm/run-debug-configurations-dialog.html), then select the _Store as project file_ checkbox and specify the path to the folder where the `*.run.xml` file with the selected run configuration will be stored.

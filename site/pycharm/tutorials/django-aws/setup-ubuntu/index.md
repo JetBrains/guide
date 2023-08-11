@@ -9,9 +9,7 @@ topics:
 author: mm
 subtitle: Configure security group and launch a new instance.
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://youtu.be/mwIKy8JnJ7A'
+video: 'https://youtu.be/mwIKy8JnJ7A'
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial

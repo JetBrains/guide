@@ -7,9 +7,7 @@ topics:
 author: mm
 subtitle: Use PyCharm Professional to deploy your Lambda APIs.
 thumbnail: ../thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/mqNTLSOcSOw'
+video: 'https://youtu.be/mqNTLSOcSOw'
 ---
 
 In this tutorial we are going to deploy our functions in AWS and test it through Postman.

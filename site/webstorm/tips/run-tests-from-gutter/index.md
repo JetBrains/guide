@@ -17,10 +17,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  If you want to run or debug a single test, the easiest way to do that is to
-  click the icon on the left of that test in the editor. This icon also shows
-  you the test status for the tests you’ve run recently (red for failed and
-  green for successfully passed).
 ---
-
+If you want to run or debug a single test, the easiest way to do that is to click the icon on the left of that test in the editor. This icon also shows you the test status for the tests you’ve run recently (red for failed and green for successfully passed).

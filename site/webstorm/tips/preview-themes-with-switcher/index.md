@@ -17,9 +17,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Use the *Switch* popup to preview a theme before changing it. Press *Ctrl+`*
-  and go to *Theme*, then choose the theme that you like and press *Enter* to
-  apply it.
 ---
-
+Use the *Switch* popup to preview a theme before changing it. Press *Ctrl+`* and go to *Theme*, then choose the theme that you like and press *Enter* to apply it.

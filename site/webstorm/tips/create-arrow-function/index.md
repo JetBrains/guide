@@ -19,8 +19,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Arrow functions? Yes, please! Press _⌥Enter / Alt+Enter_ to convert a function
-  to an arrow function.
 ---
-
+Arrow functions? Yes, please! Press _⌥Enter / Alt+Enter_ to convert a function to an arrow function.

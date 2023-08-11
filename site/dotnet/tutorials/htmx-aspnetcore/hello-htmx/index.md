@@ -14,9 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: 'No series is complete without a "Hello, World" sample'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/-GG_7oBv0dY'
+video: 'https://youtu.be/-GG_7oBv0dY'
 ---
 
 What would a video series be without a "Hello, World!" example. Starting on our page, we have a button. Our goal is to click the button and change the HTML element that says "Change Me" into displaying hello world.

@@ -9,12 +9,6 @@ subtitle: >-
   find items in the window.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/aXaqOp2Tyt0'
-longVideo:
-  poster: ./navigation.jpeg
-  url: 'https://youtu.be/1UHsJyCq1SU'
 seealso:
   - title: (video) Navigation in IntelliJ IDEA
     href: 'https://www.youtube.com/watch?v=1UHsJyCq1SU'
@@ -26,6 +20,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/idea/project-tool-window.html'
   - title: (documentation) IntelliJ IDEA Blog - Top 15 IntelliJ IDEA Shortcuts
     href: 'https://blog.jetbrains.com/idea/2020/03/top-15-intellij-idea-shortcuts/'
+video: 'https://youtu.be/1UHsJyCq1SU'
 ---
 The fastest way to move around the IDE is with the keyboard. Most tool windows
 have a simple numeric shortcut, for example the project tool window is **⌘1**

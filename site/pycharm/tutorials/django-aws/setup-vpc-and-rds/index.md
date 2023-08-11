@@ -9,9 +9,7 @@ topics:
 author: mm
 subtitle: 'Setup VPC, Subnets, Route Tables, Internet Gateway and Relational Database.'
 thumbnail: thumbnail.png
-longVideo:
-  poster: poster_long.png
-  url: 'https://youtu.be/MpAbI2HUmZE'
+video: 'https://youtu.be/MpAbI2HUmZE'
 ---
 
 Hello everyone, welcome to the Django tutorial series. 

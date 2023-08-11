@@ -15,7 +15,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: |
-  Use *Ctrl+Shift+J* in WebStorm to join lines or blocks of code.
 ---
-
+Use *Ctrl+Shift+J* in WebStorm to join lines or blocks of code.

@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: An introduction to ripgrep
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/6FFNeDiRGK0&start=123s'
+video: 'https://youtu.be/6FFNeDiRGK0&start=123s'
 ---
 
 ## ripgrep

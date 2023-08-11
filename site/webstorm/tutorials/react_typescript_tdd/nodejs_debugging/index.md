@@ -9,9 +9,7 @@ author: pwe
 subtitle: Use the visual debugger in the IDE for smarter TDD.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/r1kwXZnO8gw'
+video: 'https://youtu.be/r1kwXZnO8gw'
 ---
 
 In the [previous step](../testing/) we used testing as a way to develop our component without switching to a browser.

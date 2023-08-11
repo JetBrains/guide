@@ -10,9 +10,7 @@ subtitle: >-
   section shows some useful features from both.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/JXrZDUzkc2Q'
+video: 'https://youtu.be/JXrZDUzkc2Q'
 ---
 
 TypeScript is a JavaScript superset with a compiler that enforces the types.

@@ -13,13 +13,8 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
-leadin: >
-  The easy way to add gutter icons to *Zen* and *Distraction-free* modes:
-
-
-  - Right-click to the left of your code and select *Configure Gutter Icons*.
-
-  - In the dialog that appears, tick *Show gutter icons*, selecting the ones you
-  want to be shown if needed, and click *OK*.
 ---
+The easy way to add gutter icons to *Zen* and *Distraction-free* modes:
 
+- Right-click to the left of your code and select *Configure Gutter Icons*.
+- In the dialog that appears, tick *Show gutter icons*, selecting the ones you want to be shown if needed, and click *OK*.

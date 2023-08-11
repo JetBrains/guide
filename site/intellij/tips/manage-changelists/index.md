@@ -10,14 +10,12 @@ author: vb
 subtitle: Group and commit changes related to certain tasks
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/gg3yi-yc2ys'
 seealso:
   - title: (video) Version Control with IntelliJ IDEA
     href: 'https://www.youtube.com/watch?v=-S3Q_-b52rA'
   - title: (documentation) IntelliJ IDEA Help - Manage Changelists
     href: 'https://www.jetbrains.com/help/idea/managing-changelists.html'
+video: 'https://youtu.be/gg3yi-yc2ys'
 ---
 
 Select the files or changed lines in a file which you want to group together

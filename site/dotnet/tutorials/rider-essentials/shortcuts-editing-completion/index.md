@@ -15,9 +15,7 @@ subtitle: >-
   Where to start? Let's learn the two most important shortcuts, editing, and
   code completion.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/ztQ9ez1bFNg'
+video: 'https://youtu.be/ztQ9ez1bFNg'
 ---
 
 ### Keyboard Shortcuts

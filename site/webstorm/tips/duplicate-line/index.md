@@ -15,7 +15,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: |
-  Use *Ctrl+D/Cmd+D* to quickly duplicate a line or block in WebStorm.
 ---
-
+Use *Ctrl+D/Cmd+D* to quickly duplicate a line or block in WebStorm.

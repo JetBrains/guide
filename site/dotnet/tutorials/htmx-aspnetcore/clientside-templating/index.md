@@ -14,9 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: 'Generate HTML on the client, based on JSON'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
-  url: 'https://youtu.be/wo1IMqsN6kU'
+video: 'https://youtu.be/wo1IMqsN6kU'
 ---
 
 HTMX recognizes that some development teams have likely invested substantially in building JSON over HTTP APIs, whether it's REST or GraphQL. Rather than rebuilding a backend that serves HTML exclusively, developers might find themselves in a situation where they need to call multiple backends providing different functionality. Therefore, when working with JSON on the client, we first need to choose a templating language.

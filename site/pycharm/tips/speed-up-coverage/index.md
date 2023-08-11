@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2019-04-18
 title: Speed Up Coverage with Configuration File
 topics:
@@ -13,18 +12,7 @@ seealso:
     href: 'https://coverage.readthedocs.io/en/coverage-5.0.4/config.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=PaQ5xTGFE1k'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=OCH_gPfrvzw'
-leadin: |
-  *Coverage is good, fast coverage is better.*    
-
-  Python's `coverage` tool will by default measure in lots of places.
-  Like your dependencies and tests. Speed up coverage reporting 
-  by restricting where `coverage` will look.
+video: 'https://www.youtube.com/watch?v=OCH_gPfrvzw'
 ---
 
 Coverage is a boon: it lets you know how much of your code has tests and 

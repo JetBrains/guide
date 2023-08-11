@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: 'Gradlew Build, Gradle Wrapper and settings.gradle'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=gKPMKRnnbXU&start=64s'
+video: 'https://www.youtube.com/watch?v=gKPMKRnnbXU&start=64s'
 ---
 
 # Getting Started

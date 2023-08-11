@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Rebasing commits
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/Ase_X9p6exw&start=13s'
+video: 'https://youtu.be/Ase_X9p6exw&start=13s'
 ---
 
 ## Git Rebase

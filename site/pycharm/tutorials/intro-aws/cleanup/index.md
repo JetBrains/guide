@@ -7,9 +7,7 @@ topics:
 author: mm
 subtitle: Removing Resources from AWS Console
 thumbnail: ../thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/IKRmrQ47ATg'
+video: 'https://youtu.be/IKRmrQ47ATg'
 ---
 
 In this tutorial step, we will be removing all the services used during the tutorial.

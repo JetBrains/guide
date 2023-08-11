@@ -16,10 +16,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Enable soft wraps for the file types that tend to have lots of long lines
-  (*Preferences/Settings | Editor | General > Soft-wrap files*). With the soft
-  wrapping on, the IDE will display those lines wrapped in the editor without
-  adding line breaks.
 ---
-
+Enable soft wraps for the file types that tend to have lots of long lines (*Preferences/Settings | Editor | General > Soft-wrap files*). With the soft wrapping on, the IDE will display those lines wrapped in the editor without adding line breaks.

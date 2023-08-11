@@ -12,8 +12,7 @@ topics:
 author: citizenmatt
 subtitle: 'Rider helps with boiler-plate code, code completion, and more.'
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
+video:
   url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
   start: 693
   end: 848

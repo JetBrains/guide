@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: The role of ANSI escape codes
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/kT4JYQi9w4w'
+video: 'https://youtu.be/kT4JYQi9w4w'
 ---
 
 

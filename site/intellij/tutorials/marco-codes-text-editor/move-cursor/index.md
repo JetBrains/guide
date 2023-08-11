@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Drawing and cursor
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=HwPjeb2xnEo&start=503s'
+video: 'https://www.youtube.com/watch?v=HwPjeb2xnEo&start=503s'
 ---
 
 ## How to Move your Cursor

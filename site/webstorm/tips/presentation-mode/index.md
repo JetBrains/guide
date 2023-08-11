@@ -19,9 +19,5 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: >
-  Whenever you’re presenting at conferences or company events, use the
-  *Presentation* mode which makes it easier for the audience to see what’s going
-  on in the editor (*Ctrl + ` | View Mode | Enter/Exit Presentation Mode*).
 ---
-
+Whenever you’re presenting at conferences or company events, use the *Presentation* mode which makes it easier for the audience to see what’s going on in the editor (*Ctrl + ` | View Mode | Enter/Exit Presentation Mode*).

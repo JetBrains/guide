@@ -9,9 +9,7 @@ subtitle: >-
   Writing unit tests of our functions that we deploy to AWS Lambda, to ensure
   everything works.
 thumbnail: ../thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/NbXOiUjyMhI'
+video: 'https://youtu.be/NbXOiUjyMhI'
 ---
 
 In this tutorial we are going to work on Unit Tests.

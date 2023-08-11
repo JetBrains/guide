@@ -10,12 +10,10 @@ subtitle: >-
   window.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./thumbnail.png
-  url: 'https://youtu.be/k2aEBenPTnM'
 seealso:
   - title: IntelliJ IDEA - Database Tool Window
     href: 'https://www.jetbrains.com/help/idea/database-tool-window.html'
+video: 'https://youtu.be/k2aEBenPTnM'
 ---
 
 Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search

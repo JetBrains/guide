@@ -6,9 +6,7 @@ topics: []
 author: hs
 subtitle: Let IntelliJ IDEA migrate as many tests as possible automatically
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/F8UTTTDtbH0?start=452'
+video: 'https://youtu.be/F8UTTTDtbH0?start=452'
 ---
 
 Now we understand the individual steps to migrate a test, we can be a bit more ambitious with our migration. Let's try to automatically migrate all our tests. Use Find Action with **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux),  and type Migrate, to see migration options for the code. IntelliJ IDEA offers the option to migrate the code from JUnit 4 to 5.

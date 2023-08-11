@@ -19,9 +19,7 @@ animatedGif:
   file: ./tip.gif
   width: 600
   height: 300
-leadin: |
-  Clean code is nice, and so is clean grammar! WebStorm 
-  can help you avoid mistakes when adding comments, commit messages, 
-  and various language constructs.
 ---
-
+Clean code is nice, and so is clean grammar! WebStorm 
+can help you avoid mistakes when adding comments, commit messages, 
+and various language constructs.

@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2018-11-08
 title: Navigate to Symbol
 topics:
@@ -17,21 +16,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/navigation-in-source-code.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=Wto7hdfx-Sg'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/1QoP0U8xg98'
-leadin: |
-  *The best way to move around the code in your project.*
-
-  Want to get from A to B? Don't think of B as files. Think 
-  in terms of code.
-
-  We are hardwired to think of moving around the "files" in our 
-  project. But we have a smart IDE that makes it fast to jump to 
-  the symbols in our code.
+video: 'https://youtu.be/1QoP0U8xg98'
 ---
 
 Decades of old habits make us think of files, with their deeply-nested

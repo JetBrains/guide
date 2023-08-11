@@ -12,8 +12,7 @@ topics:
 author: citizenmatt
 subtitle: The two keyboard shortcuts that get you places!
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster.png
+video:
   url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
   start: 315
   end: 528

@@ -7,9 +7,7 @@ topics:
 author: hs
 subtitle: Adding JUnit 5 Dependencies
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://youtu.be/F8UTTTDtbH0?start=44'
+video: 'https://youtu.be/F8UTTTDtbH0?start=44'
 ---
 
 This project is currently using JUnit 4.13, but these guidelines apply to any version of JUnit 4.  We also have a dependency on Hamcrest. We need to edit our Maven pom.xml file.

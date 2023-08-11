@@ -8,9 +8,6 @@ author: hs
 subtitle: Inline a method
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./tip.png
-  url: 'https://youtu.be/wSuqsDyX2nc'
 seealso:
   - title: (video) Inline Method Refactoring in IntelliJ IDEA
     href: 'https://www.youtube.com/watch?v=uYsFlbXJbog'
@@ -20,10 +17,8 @@ seealso:
     href: 'https://www.youtube.com/watch?v=HgWU25YwDfc'
   - title: IntelliJ IDEA Help - Inline
     href: 'https://www.jetbrains.com/help/idea/inline.html'
-leadin: >
-  Press **⌥⌘N** (macOS), or **Ctrl+Alt+N** (Windows/Linux), to inline a method. 
-   
-  You can inline methods, variables, fields, and constants with the same
-  shortcut.
+video: 'https://youtu.be/wSuqsDyX2nc'
 ---
-
+Press **⌥⌘N** (macOS), or **Ctrl+Alt+N** (Windows/Linux), to inline a method. 
+ 
+You can inline methods, variables, fields, and constants with the same shortcut.

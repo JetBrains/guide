@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2018-11-04
 title: Reduce Clutter by Disabling Tools
 topics:
@@ -11,21 +10,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/configuring-menus-and-toolbars.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: 'https://www.youtube.com/watch?v=JkZ66NgI0r8'
-longVideo:
-  poster: ./poster_long.png
-  url: 'https://www.youtube.com/watch?v=wDYJx-mkPpw'
-leadin: |
-  *You don't have to use all those tools. Let's turn them off.*
-
-  By default, PyCharm has lots of features visible and available. 
-  As you learn your way around, you want to give more space to 
-  the editor and focus on your coding.
-
-  In this tip we disable a number of default toolbars and then 
-  hide the file browser.
+video: 'https://www.youtube.com/watch?v=wDYJx-mkPpw'
 ---
 
 People associate IDEs with busy UIs filled with buttons and knobs
