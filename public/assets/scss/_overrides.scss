@@ -63,7 +63,7 @@ a.navbar-item:focus-within {
   object-fit: contain;
 }
 
-/* Glows from https://rescui.dev/components/use-glow-hover/presets/ */
+/* Glows and gradients from https://rescui.dev/components/use-glow-hover/presets/ */
 .has-glow-magenta {
   background: radial-gradient(circle, rgb(255, 69, 237) 12%, rgba(255, 69, 237, 0)) no-repeat border-box border-box rgb(8, 124, 250);
 }
@@ -84,4 +84,26 @@ a.navbar-item:focus-within {
 }
 .has-glow-purple {
   background: radial-gradient(circle, rgb(107, 87, 255) 12%, rgba(107, 87, 255, 0)) no-repeat border-box border-box rgb(40, 184, 160);
+}
+
+.has-gradient-magenta {
+  background: linear-gradient(200deg, rgb(255, 69, 237) 12%, rgba(255, 69, 237, 0)) no-repeat border-box border-box rgb(8, 124, 250);
+}
+.has-gradient-pink {
+  background: linear-gradient(200deg, rgb(228, 74, 144) 12%, rgba(228, 74, 144, 0)) no-repeat border-box border-box rgb(103, 92, 233);
+}
+.has-gradient-fresh-green {
+  background: linear-gradient(200deg, rgb(117, 214, 75) 12%, rgba(117, 214, 75, 0)) no-repeat border-box border-box rgb(40, 184, 160);
+}
+.has-gradient-cold-green {
+  background: linear-gradient(200deg, rgb(59, 234, 98) 12%, rgba(59, 234, 98, 0)) no-repeat border-box border-box rgb(8, 124, 250);
+}
+.has-gradient-orange {
+  background: linear-gradient(200deg, rgb(253, 182, 13) 12%, rgba(253, 182, 13, 0)) no-repeat border-box border-box rgb(255, 49, 140);
+}
+.has-gradient-red {
+  background: linear-gradient(200deg, rgb(221, 18, 101) 12%, rgba(221, 18, 101, 0)) no-repeat border-box border-box rgb(247, 103, 7);
+}
+.has-gradient-purple {
+  background: linear-gradient(200deg, rgb(107, 87, 255) 12%, rgba(107, 87, 255, 0)) no-repeat border-box border-box rgb(40, 184, 160);
 }

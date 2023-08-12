@@ -13,7 +13,7 @@ export class IndexPage {
   data() {
     return {
       title: "JetBrains Guide",
-      subtitle: "Learn about technologies and become a badass developer.", // TODO PAUL
+      subtitle: "Learn about technologies and become a badass developer.",
       layout: "",
       eleventyExcludeFromCollections: true,
     };
@@ -28,14 +28,14 @@ export class IndexPage {
 
     return (
       <BaseLayout {...data}>
-        <section class="section has-glow-cold-green">
+        <section class="section has-gradient-purple">
           <div class="container">
             <div class="columns is-multiline">
               <div class="column is-8">
-                <h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
+                <h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold has-text-white">
                   Welcome to the JetBrains Guide
                 </h1>
-                <p class="subtitle mb-5 has-text-dark">
+                <p class="subtitle mb-5 has-text-white">
                   Learn about technologies and become a badass developer. We
                   have tips, tutorials, videos, articles and much, much more!
                 </p>

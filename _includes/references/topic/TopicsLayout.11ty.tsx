@@ -32,7 +32,7 @@ export function TopicsLayout(
                 <div class="is-flex">
                   <span class="mr-4">
                     <a href={topic.url}>
-                      <figure class="image is-128x128">
+                      <figure class="image is-128x128 has-text-centered">
                         {figure}
                       </figure>
                     </a>

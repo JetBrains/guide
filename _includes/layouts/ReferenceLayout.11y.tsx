@@ -36,7 +36,7 @@ export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
           <div class="is-flex">
             {figure && (
               <span class="mr-4">
-                <figure class="image is-128x128">{figure}</figure>
+                <figure class="image is-128x128 has-text-centered">{figure}</figure>
               </span>
             )}
             <div>
