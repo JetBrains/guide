@@ -20,7 +20,7 @@ test("make a ChannelLayout", () => {
       <div>Some Child</div>
     </ChannelLayout>
   );
-  expect(screen.getByText("Some Channel")).to.exist;
+  expect(screen.getByRole("link", { name: "Channel" })).to.exist;
   expect(screen.getByText("First Link")).to.exist;
   expect(screen.getByText("Some Child")).to.exist;
 });

@@ -4,15 +4,11 @@ import ListingSection, { ListingSectionProps } from "./ListingSection.11ty";
 import fixtures from "../fixtures";
 
 test("SectionListing exists", () => {
-  const resources = Array.from(
-    fixtures.resolvedCollections.allResources.values()
-  );
-
   const props: ListingSectionProps = {
     title: "Some Title",
     subtitle: "Some Subtitle",
     moreLink: "/more/link",
-    resources,
+    resources: fixtures.resolvedResources,
   };
   document.body.innerHTML = ListingSection(props);
   expect(screen.getByText("Some Title")).to.exist;

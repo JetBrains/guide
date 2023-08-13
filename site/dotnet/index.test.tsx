@@ -11,19 +11,16 @@ test("should render DotNetHomepage", () => {
     page: channelItem.page,
   };
 
-  const r = fixtures.resolvedResources;
-
   const context = {
     ...fixtures.context,
     // TODO Find any const resolvedResources Array.from in tests
     getResource: () => fixtures.channels[0],
-    getResources: () => fixtures.resolvedResources,
   };
 
   const homepage = new DotNetHomepage();
-  const render = homepage.render;
-  document.body.innerHTML = render.call(context, pageLayoutData);
-  expect(screen.findByText(".NET Home Page - JetBrains Guide")).to.exist;
-  expect(screen.findByText(".NET")).to.exist;
-  expect(screen.findByText("First Link")).to.exist;
+  document.body.innerHTML = homepage.render.call(context, pageLayoutData);
+  const subnavTitle: HTMLAnchorElement = screen.getByRole("link", {
+    name: "Channel",
+  });
+  expect(subnavTitle.href).to.equal(pageLayoutData.page.url);
 });

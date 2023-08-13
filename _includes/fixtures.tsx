@@ -737,14 +737,14 @@ const collections: SiteCollections = {
   allReferences,
 };
 
-const getResources = vi.fn();
 const getResource = vi.fn();
-const getReferences = vi.fn();
 const renderMarkdown = (content: string): string => content;
 const context: LayoutContext = {
-  getResources,
+  getResources: () =>
+    Array.from(fixtures.resolvedCollections.allResources.values()),
   getResource,
-  getReferences,
+  getReferences: () =>
+    Array.from(fixtures.resolvedCollections.allReferences.values()),
   renderMarkdown,
 };
 

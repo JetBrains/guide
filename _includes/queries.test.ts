@@ -6,7 +6,7 @@ import { getResources, QueryFilter } from "./queries";
 describe("getResources filtering", () => {
   let resources: Resource[];
   beforeEach(() => {
-    resources = Array.from(fixtures.resolvedCollections.allResources.values());
+    resources = fixtures.resolvedResources;
   });
 
   it("does no filtering", () => {
