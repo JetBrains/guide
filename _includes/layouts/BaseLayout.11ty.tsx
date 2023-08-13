@@ -9,6 +9,7 @@ import {
   GoogleTagManagerBodyNoScript,
   GoogleTagManagerHeadScript,
 } from "../googleTagManager.11ty";
+import Subnav from "../navbar/Subnav.11ty";
 
 export type SubnavItem = {
   text: string;
@@ -19,7 +20,13 @@ export type BaseLayoutProps = {
   children: string[];
   title: string;
   subtitle?: string;
-  video?: string | { url: string; start: number; end: number };
+  video?:
+    | string
+    | {
+        url: string;
+        start: number;
+        end: number;
+      };
   resourceType?: string;
 } & LayoutProps;
 
@@ -45,10 +52,13 @@ export function BaseLayout(
   const hasVideo = !!video || (!!resourceType && resourceType == "playlist");
 
   // determine if there's an og:image
-  let cardThumbnail;
+  let cardThumbnail, channel;
   if (resourceType) {
     const resource = collections.allResources.get(data.page.url) as Resource;
     cardThumbnail = resource?.cardThumbnail;
+    if (resourceType == "channel") {
+      channel = resource;
+    }
   }
 
   const year = new Date().getFullYear();
@@ -96,6 +106,7 @@ export function BaseLayout(
         <body>
           <GoogleTagManagerBodyNoScript googleTagManagerId="GTM-5P98" />
           <Navbar />
+          {channel && <Subnav channel={channel} />}
           {children}
           <Footer copyright={copyright}></Footer>
           {cardThumbnail && (

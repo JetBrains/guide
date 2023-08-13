@@ -4,11 +4,8 @@ import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import BlockquoteSection from "../../_includes/pageelements/BlockquoteSection.11ty";
 import CallToActionSection from "../../_includes/pageelements/CallToActionSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
-import { ChannelLayout } from "../../_includes/layouts/ChannelLayout.11ty";
-import {
-  Channel,
-  ChannelFrontmatter,
-} from "../../_includes/resources/channel/ChannelModels";
+import { ChannelFrontmatter } from "../../_includes/resources/channel/ChannelModels";
+import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 
 export type DotNetHomepageData = {} & LayoutProps & ChannelFrontmatter;
 
@@ -29,7 +26,6 @@ export class DotNetHomepage {
   }
 
   render(this: LayoutContext, data: DotNetHomepageData): JSX.Element {
-    const channel = this.getResource(data.page.url) as Channel;
     const tips = this.getResources({
       resourceType: "tip",
       tag: "dotnet_tip",
@@ -43,7 +39,7 @@ export class DotNetHomepage {
     });
 
     return (
-      <ChannelLayout channel={channel} {...data}>
+      <BaseLayout {...data}>
         <HeroSection
           title=".NET Tools Guide"
           subtitle="Learning resources for ReSharper, Rider and more."
@@ -146,7 +142,7 @@ export class DotNetHomepage {
           url="#"
           imageUrl="https://static.shuffle.dev/uploads/files/30/30bcf69416b378dce9b87d07a3491e56c3e9fdc6/Gateway-1680x1100.webp"
         />
-      </ChannelLayout>
+      </BaseLayout>
     );
   }
 }
