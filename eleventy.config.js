@@ -50,7 +50,12 @@ module.exports = function (eleventyConfig) {
         },
       },
       plugins: [
-        ViteImageOptimizer({ exclude: /\.gif$/i }),
+        ViteImageOptimizer({
+          exclude: /\.gif$/i,
+          ansiColors: false,
+          cache: true,
+          cacheLocation: '.assets-cache'
+        }),
         absolutePaths({
           prefix: options.pathprefix,
         }),
@@ -85,9 +90,7 @@ module.exports = function (eleventyConfig) {
   // These are all relative to the input directory at the end
   eleventyConfig.addPassthroughCopy(
     "./!(_site)**/*.{gif,jpg,png,svg,jpeg,webm}",
-    {
-      overwrite: true,
-    }
+    { overwrite: true }
   );
   eleventyConfig.addPassthroughCopy(
     { "../../public/assets": "assets" },

@@ -156,8 +156,8 @@ fun StepsScope.buildSite() {
         }
 
         cache {
-            storeKey = "assets-guide"
-            localPath = "_site/assets/"
+            storeKey = "guide-assets-cache"
+            localPath = ".assets-cache/"
         }
 
         shellScript {
@@ -166,9 +166,7 @@ fun StepsScope.buildSite() {
                 cwd=${'$'}(pwd)
 
                 ## Fix permissions on cached assets
-                chmod 0666 -R _site/assets/
-                mkdir -R .11ty-vite/assets/
-                cp _site/assets .11ty-vite/
+                chmod 0666 -R .assets-cache/
 
                 ## Build site
                 npm install
