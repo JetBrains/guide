@@ -27,6 +27,12 @@ describe("getResources filtering", () => {
     expect(result).to.have.length(3);
   });
 
+  it("filters on channel", () => {
+    const filter: QueryFilter = { channel: "/channels/some-channel/" };
+    const result = getResources(resources, filter);
+    expect(result).to.have.length(2);
+  });
+
   it("filters on tag", () => {
     const filter: QueryFilter = { tag: "tag1" };
     const result = getResources(resources, filter);
