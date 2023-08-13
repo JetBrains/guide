@@ -1,0 +1,102 @@
+import h, { JSX } from "vhtml";
+import {
+  EleventyCollectionItem,
+  LayoutContext,
+  LayoutProps,
+} from "../../src/models";
+import ResourceCard from "../resourcecard/ResourceCard.11ty";
+import { ResourceFrontmatter } from "../../src/ResourceModels";
+import { BaseLayout } from "./BaseLayout.11ty";
+import Pagination from "../pagination/Pagination.11ty";
+
+type ListingLayoutProps = {
+  content?: string;
+  figure?: string[];
+  listing: string[];
+} & LayoutProps &
+  ResourceFrontmatter;
+
+class ListingLayout {
+  data() {
+    return {
+      eleventyExcludeFromCollections: true,
+      pagination: {
+        data: "collections.all",
+        size: 12,
+        reverse: true,
+        before: function (
+          paginationData: any[],
+          fullData: any
+        ): EleventyCollectionItem[] {
+          // Get pagination.resourceType and pagination.channel, if present
+          const { resourceType, channel } = fullData.pagination;
+          return paginationData
+            .filter((item: EleventyCollectionItem) => {
+              return !(resourceType && resourceType != item.data.resourceType);
+            })
+            .filter((item: EleventyCollectionItem) => {
+              return !(channel && channel != item.data.channel);
+            });
+        },
+      },
+    };
+  }
+
+  render(this: LayoutContext, data: ListingLayoutProps): JSX.Element {
+    const { content, figure, pagination } = data;
+    const paginationItems = pagination ? pagination.items : [];
+    const resources = paginationItems.map((r: any) => {
+      return this.getResource(r.url);
+    });
+
+    const pages = (
+      <section class="section" aria-label="Pagination">
+        <div class="container">
+          {pagination && <Pagination pagination={pagination} />}
+          <div class="columns is-multiline">
+            <>
+              {resources.map((resource) => {
+                return <ResourceCard resource={resource}></ResourceCard>;
+              })}
+            </>
+          </div>
+          {pagination && <Pagination pagination={pagination} />}
+        </div>
+      </section>
+    );
+
+    return (
+      <BaseLayout {...data}>
+        <section class="section">
+          <div class="container">
+            <div class="is-flex">
+              {figure && (
+                <span class="mr-4">
+                  <figure class="image is-128x128">{figure}</figure>
+                </span>
+              )}
+              <div>
+                <h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
+                  {data.title}
+                </h1>
+                {data.subtitle && (
+                  <p class="subtitle has-text-grey mb-5">{data.subtitle}</p>
+                )}
+              </div>
+            </div>
+            {content && (
+              <div
+                class="content pt-2"
+                dangerouslySetInnerHTML={{ __html: content }}
+              ></div>
+            )}
+          </div>
+        </section>
+
+        {pages}
+      </BaseLayout>
+    );
+  }
+}
+
+module.exports = ListingLayout;
