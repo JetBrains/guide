@@ -29,7 +29,8 @@ class ListingLayout {
           fullData: any
         ): EleventyCollectionItem[] {
           // Get pagination.resourceType and pagination.channel, if present
-          const { resourceType, channel } = fullData.pagination;
+          const resourceType = fullData.pagination.resourceType;
+          const channel = fullData.channel;
           return paginationData
             .filter((item: EleventyCollectionItem) => {
               return !(resourceType && resourceType != item.data.resourceType);
