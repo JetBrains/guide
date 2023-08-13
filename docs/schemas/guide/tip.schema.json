@@ -184,7 +184,7 @@
           "type": "object",
           "properties": {
             "file": {
-              "description": "File name of the animated GIF",
+              "description": "File name of the animated GIF, can be webm or gif",
               "type": "string"
             },
             "width": {

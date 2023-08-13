@@ -15,19 +15,12 @@ export type SubnavItem = {
   url: string;
 };
 
-export type Channel = {
-  name: string;
-  url: string;
-  subnav?: SubnavItem[];
-};
-
 export type BaseLayoutProps = {
   children: string[];
   title: string;
   subtitle?: string;
   video?: string | { url: string; start: number; end: number };
   resourceType?: string;
-  channel?: Channel;
 } & LayoutProps;
 
 export function BaseLayout(
@@ -35,15 +28,7 @@ export function BaseLayout(
   data: BaseLayoutProps
 ): JSX.Element {
   // @ts-ignore
-  const {
-    children,
-    title,
-    subtitle,
-    video,
-    resourceType,
-    collections,
-    channel,
-  } = data;
+  const { children, title, subtitle, video, resourceType, collections } = data;
 
   // Happy DOM throws a DOMException for external script/css even though
   // we do the settings to suppress it. Vite catches the exception but
@@ -69,31 +54,6 @@ export function BaseLayout(
   const year = new Date().getFullYear();
   const copyright = `Copyright © 2000–${year} <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.`;
 
-  const subnav = !channel?.subnav ? (
-    ""
-  ) : (
-    <nav class="navbar navbar-secondary">
-      <div class="container">
-        <div class="navbar-brand">
-          <div class="navbar-item is-size-5 has-text-weight-semibold pl-0">
-            <a href={channel.url} class="is-hidden-touch">
-              {channel.name}
-            </a>
-            <a href={channel.url} class="is-hidden-desktop ml-5">
-              {channel.name}
-            </a>
-          </div>
-        </div>
-        <div class="navbar-end is-hidden-touch">
-          {channel.subnav.map((channel) => (
-            <a class="navbar-item" href={channel.url}>
-              {channel.text}
-            </a>
-          ))}
-        </div>
-      </div>
-    </nav>
-  );
   return (
     "<!doctype html>" +
     (
@@ -136,7 +96,6 @@ export function BaseLayout(
         <body>
           <GoogleTagManagerBodyNoScript googleTagManagerId="GTM-5P98" />
           <Navbar />
-          {subnav}
           {children}
           <Footer copyright={copyright}></Footer>
           {cardThumbnail && (

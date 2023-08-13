@@ -1,36 +1,38 @@
 import h, { JSX } from "vhtml";
-import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import { LayoutContext, LayoutProps } from "../../src/models";
-import { BaseFrontmatter } from "../../src/ResourceModels";
 import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import BlockquoteSection from "../../_includes/pageelements/BlockquoteSection.11ty";
 import CallToActionSection from "../../_includes/pageelements/CallToActionSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
+import { ChannelLayout } from "../../_includes/layouts/ChannelLayout.11ty";
+import {
+  Channel,
+  ChannelFrontmatter,
+} from "../../_includes/resources/channel/ChannelModels";
 
-export type DotNetHomepageData = LayoutProps &
-  BaseFrontmatter & {
-    subtitle?: string;
-  };
+export type DotNetHomepageData = {} & LayoutProps & ChannelFrontmatter;
 
 export class DotNetHomepage {
   data() {
     return {
       title: ".NET Guide",
       layout: "",
-      eleventyExcludeFromCollections: true,
+      resourceType: "channel",
+      date: new Date(Date.UTC(2020, 1, 11)),
+      author: "khalidabuhakmeh",
+      subnav: [
+        { title: "dotUltimate", url: "https://www.jetbrains.com/dotnet/" },
+        { title: ".NET Blog", url: "https://blog.jetbrains.com/dotnet/" },
+        { title: "Docs", url: "https://www.jetbrains.com/help/" },
+      ],
     };
   }
 
   render(this: LayoutContext, data: DotNetHomepageData): JSX.Element {
+    const channel = this.getResource(data.page.url) as Channel;
     const tips = this.getResources({
       resourceType: "tip",
       tag: "dotnet_tip",
-      limit: 3,
-    });
-
-    const playlists = this.getResources({
-      resourceType: "playlist",
-      tag: "dotnet_playlist",
       limit: 3,
     });
 
@@ -41,7 +43,7 @@ export class DotNetHomepage {
     });
 
     return (
-      <BaseLayout {...data}>
+      <ChannelLayout channel={channel} {...data}>
         <HeroSection
           title=".NET Tools Guide"
           subtitle="Learning resources for ReSharper, Rider and more."
@@ -144,7 +146,7 @@ export class DotNetHomepage {
           url="#"
           imageUrl="https://static.shuffle.dev/uploads/files/30/30bcf69416b378dce9b87d07a3491e56c3e9fdc6/Gateway-1680x1100.webp"
         />
-      </BaseLayout>
+      </ChannelLayout>
     );
   }
 }
