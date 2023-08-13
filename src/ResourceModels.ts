@@ -23,6 +23,9 @@ export const BaseFrontmatter = Type.Object({
       description: "Paths that should redirect to this resource",
     })
   ),
+  channel: Type.Optional(
+    Type.String({ description: "Possible channel this resource is in" })
+  ),
 });
 export type BaseFrontmatter = Static<typeof BaseFrontmatter>;
 
@@ -39,6 +42,7 @@ export class BaseEntity implements BaseFrontmatter {
   subtitle?: string;
   obsoletes?: string[];
   url: string;
+  channel?: string;
   static frontmatterSchema = BaseFrontmatter;
 
   constructor({ data, page }: { data: BaseFrontmatter; page: EleventyPage }) {
@@ -48,6 +52,7 @@ export class BaseEntity implements BaseFrontmatter {
     this.subtitle = data.subtitle;
     this.obsoletes = data.obsoletes;
     this.url = page.url;
+    this.channel = data.channel;
 
     // @ts-ignore
     const frontmatter = this.constructor.frontmatterSchema;
@@ -100,7 +105,6 @@ export type ResourceFrontmatter = Static<typeof ResourceFrontmatter>;
 export class Resource extends BaseEntity implements ResourceFrontmatter {
   anchor: string; // Playlist items need unique identifier
   author: string;
-  channel?: string;
   date: Date;
   displayDate: string;
   thumbnail?: string;
@@ -123,7 +127,6 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
     const displayDate = thisDate.toFormat("yyyy-LL-dd");
     this.anchor = slugify(this.url);
     this.author = data.author;
-    this.channel = data.channel;
     this.date = new Date(data.date);
     this.displayDate = displayDate;
     if (data.thumbnail) {
@@ -142,7 +145,7 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
   }
 
   resolve(allCollections: AllCollections): void {
-    const { allReferences } = allCollections;
+    const { allReferences, allResources } = allCollections;
     // @ts-ignore
     const fieldNames: string[] = this.constructor.referenceFields;
 
@@ -156,6 +159,7 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
           fieldName,
           resource: this,
           allReferences,
+          allResources,
         });
       } else {
         // Only array references things should be empty;

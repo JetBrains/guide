@@ -28,6 +28,10 @@
               "items": {
                 "type": "string"
               }
+            },
+            "channel": {
+              "description": "Possible channel this resource is in",
+              "type": "string"
             }
           },
           "required": [

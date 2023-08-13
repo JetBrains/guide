@@ -1,27 +1,27 @@
 import { expect, test } from "vitest";
-import { WebStormHomepage, WebStormHomepageData } from "./index.11ty";
 import { screen } from "@testing-library/dom";
 import fixtures, { baseRenderData } from "../../_includes/fixtures";
+import { ChannelHomepageData } from "../../_includes/resources/channel/ChannelModels";
 
+// @ts-ignore
+import WebStormHomepage from "./index.11ty";
 test("should render WebStormHomepage", () => {
-  const tip0 = fixtures.tipItems[0];
-  const pageLayoutData: WebStormHomepageData = {
+  const channelItem = fixtures.channelItems[0];
+  const pageLayoutData: ChannelHomepageData = {
     ...baseRenderData,
-    ...tip0.data,
-    page: tip0.page,
+    ...channelItem.data,
+    page: channelItem.page,
   };
-
-  const resolvedResources = Array.from(
-    fixtures.resolvedCollections.allResources.values()
-  );
 
   const context = {
     ...fixtures.context,
-    getResources: () => resolvedResources,
+    getResource: () => fixtures.channels[0],
   };
 
   const homepage = new WebStormHomepage();
-  const render = homepage.render;
-  document.body.innerHTML = render.call(context, pageLayoutData);
-  expect(screen.getByText("WebStorm Guide")).to.exist;
+  document.body.innerHTML = homepage.render.call(context, pageLayoutData);
+  const subnavTitle: HTMLAnchorElement = screen.getByRole("link", {
+    name: "Channel",
+  });
+  expect(subnavTitle.href).to.equal(pageLayoutData.page.url);
 });

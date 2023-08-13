@@ -10,11 +10,7 @@ import {
   GoogleTagManagerHeadScript,
 } from "../googleTagManager.11ty";
 import Subnav from "../navbar/Subnav.11ty";
-
-export type SubnavItem = {
-  text: string;
-  url: string;
-};
+import { Channel } from "../resources/channel/ChannelModels";
 
 export type BaseLayoutProps = {
   children: string[];
@@ -28,6 +24,7 @@ export type BaseLayoutProps = {
         end: number;
       };
   resourceType?: string;
+  channel?: string;
 } & LayoutProps;
 
 export function BaseLayout(
@@ -58,6 +55,10 @@ export function BaseLayout(
     cardThumbnail = resource?.cardThumbnail;
     if (resourceType == "channel") {
       channel = resource;
+    } else if (resource && resource.references) {
+      channel = resource.references.channel;
+    } else if (data.channel) {
+      channel = collections.allResources.get(data.channel) as Channel;
     }
   }
 

@@ -16,6 +16,7 @@ test("should render TipsLayout", () => {
       date: fixtures.date,
     },
     pagination: fixtures.paginationProps.pagination,
+    channel: "/channels/some-channel/",
   };
   const firstTipURL = fixtures.tips[0].url;
   fixtures.context.getResource = () =>
@@ -29,4 +30,10 @@ test("should render TipsLayout", () => {
     name: "Resource",
   });
   expect(links[0].href).to.equal("/tips/some-tip/");
+
+  // Look for channel stuff
+  const subnavTitle: HTMLAnchorElement = screen.getByRole("link", {
+    name: "Channel",
+  });
+  expect(subnavTitle.text).to.equal("Some Channel");
 });

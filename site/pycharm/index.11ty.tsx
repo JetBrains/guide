@@ -1,25 +1,32 @@
 import h, { JSX } from "vhtml";
-import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
-import { LayoutContext, LayoutProps } from "../../src/models";
-import { BaseFrontmatter } from "../../src/ResourceModels";
+import { LayoutContext } from "../../src/models";
 import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
+import {
+  ChannelFrontmatter,
+  ChannelHomepageData,
+} from "../../_includes/resources/channel/ChannelModels";
+import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 
-export type PyCharmHomepageData = LayoutProps &
-  BaseFrontmatter & {
-    subtitle?: string;
-  };
+const subnav: ChannelFrontmatter["subnav"] = [
+  { title: "PyCharm", url: "https://www.jetbrains.com/pycharm/" },
+  { title: "IDEA Blog", url: "https://blog.jetbrains.com/pycharm/" },
+  { title: "Docs", url: "https://www.jetbrains.com/help/" },
+];
 
-export class PyCharmHomepage {
+class PyCharmHomepage {
   data() {
     return {
       title: "PyCharm Guide",
       layout: "",
-      eleventyExcludeFromCollections: true,
+      resourceType: "channel",
+      date: new Date(Date.UTC(2020, 1, 11)),
+      author: "pwe",
+      subnav,
     };
   }
 
-  render(this: LayoutContext, data: PyCharmHomepageData): JSX.Element {
+  render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
     const tips = this.getResources({
       resourceType: "tip",
       tag: "pycharm_tip",

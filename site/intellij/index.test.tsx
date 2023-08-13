@@ -1,29 +1,27 @@
 import { expect, test } from "vitest";
 import { screen } from "@testing-library/dom";
 import fixtures, { baseRenderData } from "../../_includes/fixtures";
-import { IntelliJHomepageData, IntelliJHomepage } from "./index.11ty";
-test("should render DotNetHomepage", () => {
-  const tip0 = fixtures.tipItems[0];
-  const pageLayoutData: IntelliJHomepageData = {
-    ...baseRenderData,
-    ...tip0.data,
-    page: tip0.page,
-    title: "IntelliJ IDEA Home Page",
-  };
+import { ChannelHomepageData } from "../../_includes/resources/channel/ChannelModels";
 
-  const resolvedResources = Array.from(
-    fixtures.resolvedCollections.allResources.values()
-  );
+// @ts-ignore
+import IntelliJHomepage from "./index.11ty";
+test("should render IntelliJHomepage", () => {
+  const channelItem = fixtures.channelItems[0];
+  const pageLayoutData: ChannelHomepageData = {
+    ...baseRenderData,
+    ...channelItem.data,
+    page: channelItem.page,
+  };
 
   const context = {
     ...fixtures.context,
-    getResources: () => resolvedResources,
+    getResource: () => fixtures.channels[0],
   };
 
   const homepage = new IntelliJHomepage();
-  const render = homepage.render;
-  document.body.innerHTML = render.call(context, pageLayoutData);
-  // The fixture has the page as PyCharm so look for that
-  expect(screen.findByText("IntelliJ IDEA Home Page - JetBrains Guide")).to
-    .exist;
+  document.body.innerHTML = homepage.render.call(context, pageLayoutData);
+  const subnavTitle: HTMLAnchorElement = screen.getByRole("link", {
+    name: "Channel",
+  });
+  expect(subnavTitle.href).to.equal(pageLayoutData.page.url);
 });

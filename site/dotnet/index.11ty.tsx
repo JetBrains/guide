@@ -4,9 +4,18 @@ import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import BlockquoteSection from "../../_includes/pageelements/BlockquoteSection.11ty";
 import CallToActionSection from "../../_includes/pageelements/CallToActionSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
-import { ChannelHomepageData } from "../../_includes/resources/channel/ChannelModels";
+import {
+  ChannelFrontmatter,
+  ChannelHomepageData,
+} from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import MultiColumnSection from "../../_includes/pageelements/MultiColumnSection";
+
+const subnav: ChannelFrontmatter["subnav"] = [
+  { title: "dotUltimate", url: "https://www.jetbrains.com/dotnet/" },
+  { title: ".NET Blog", url: "https://blog.jetbrains.com/dotnet/" },
+  { title: "Docs", url: "https://www.jetbrains.com/help/" },
+];
 
 class DotNetHomepage {
   data() {
@@ -16,11 +25,7 @@ class DotNetHomepage {
       resourceType: "channel",
       date: new Date(Date.UTC(2020, 1, 11)),
       author: "khalidabuhakmeh",
-      subnav: [
-        { title: "dotUltimate", url: "https://www.jetbrains.com/dotnet/" },
-        { title: ".NET Blog", url: "https://blog.jetbrains.com/dotnet/" },
-        { title: "Docs", url: "https://www.jetbrains.com/help/" },
-      ],
+      subnav,
     };
   }
 

@@ -50,6 +50,7 @@ const tipFrontmatters: TipFrontmatter[] = [
     topics: ["sto", "ato", "sp", "ap", "ste", "ate"],
     thumbnail: "thumbnail.png",
     obsoletes: ["/oldtips/tip1/", "/oldtips/tip2/"],
+    channel: "/channels/some-channel/",
   },
   {
     title: "Another Tip",

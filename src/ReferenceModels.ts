@@ -1,6 +1,7 @@
 import { BaseEntity, BaseFrontmatter } from "./ResourceModels";
 import { EleventyPage } from "./models";
 import { Static, Type } from "@sinclair/typebox";
+import { Channel } from "../_includes/resources/channel/ChannelModels";
 
 export const ReferenceFrontmatter = Type.Intersect([
   BaseFrontmatter,
@@ -38,5 +39,6 @@ export async function getReference(
 
 export type References = {
   author: Reference;
+  channel?: Channel;
   topics: Reference[];
 };
