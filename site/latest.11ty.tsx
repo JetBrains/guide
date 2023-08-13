@@ -8,7 +8,7 @@ import {
 import { Resource } from "../src/ResourceModels";
 import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
 
-export class LatestLayout {
+class LatestLayout {
   data() {
     return {
       eleventyExcludeFromCollections: true,

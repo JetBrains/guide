@@ -1,5 +1,6 @@
 import { expect, test } from "vitest";
-import { TutorialsLayout } from "./TutorialsLayout.11ty";
+// @ts-ignore
+import TutorialsLayout from "./TutorialsLayout.11ty";
 import { screen } from "@testing-library/dom";
 import fixtures, { baseRenderData } from "../../fixtures";
 import { ReferenceLayoutProps } from "../../layouts/ReferenceLayout.11y";

@@ -7,13 +7,13 @@ import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Tip } from "./TipModels";
 
-export class TipsLayout {
+class TipsLayout {
   data() {
     return {
       eleventyExcludeFromCollections: true,
       title: "Tips",
       subtitle:
-        "Visual, standalone, bite-sized learning resources organized into different categories."
+        "Visual, standalone, bite-sized learning resources organized into different categories.",
     };
   }
 
