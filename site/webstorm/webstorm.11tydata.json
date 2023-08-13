@@ -1,11 +1,3 @@
 {
-  "channel": {
-    "name": "WebStorm",
-    "url": "/webstorm/",
-    "subnav": [
-      { "text":  "WebStorm", "url":  "https://www.jetbrains.com/webstorm/" },
-      { "text":  "WebStorm Blog", "url":  "https://blog.jetbrains.com/webstorm/" },
-      { "text":  "Docs", "url":  "https://www.jetbrains.com/help/" }
-    ]
-  }
+  "channel": "WebStorm"
 }

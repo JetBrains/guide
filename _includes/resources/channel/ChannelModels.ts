@@ -1,6 +1,6 @@
 import { Static, Type } from "@sinclair/typebox";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
-import { EleventyPage } from "../../../src/models";
+import { EleventyPage, LayoutProps } from "../../../src/models";
 
 export const ChannelFrontmatter = Type.Intersect([
   ResourceFrontmatter,
@@ -43,3 +43,8 @@ export class Channel extends Resource implements ChannelFrontmatter {
     return this;
   }
 }
+
+// The following type is helpful for re-use in
+// channel homepage views.
+
+export type ChannelHomepageData = {} & LayoutProps & ChannelFrontmatter;

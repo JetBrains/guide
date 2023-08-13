@@ -65,6 +65,9 @@ export const ResourceFrontmatter = Type.Intersect([
   BaseFrontmatter,
   Type.Object({
     author: Type.String({ description: "Author of this resource" }),
+    channel: Type.Optional(
+      Type.String({ description: "Possible channel this resource is in" })
+    ),
     date: Type.Date({
       description: "Date this resource was published",
       ["format"]: "date",
@@ -97,6 +100,7 @@ export type ResourceFrontmatter = Static<typeof ResourceFrontmatter>;
 export class Resource extends BaseEntity implements ResourceFrontmatter {
   anchor: string; // Playlist items need unique identifier
   author: string;
+  channel?: string;
   date: Date;
   displayDate: string;
   thumbnail?: string;
@@ -105,7 +109,7 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
   topics?: string[];
   references?: References;
   static frontmatterSchema: any = ResourceFrontmatter;
-  static referenceFields = ["author", "topics"];
+  static referenceFields = ["author", "channel", "topics"];
 
   constructor({
     data,
@@ -119,6 +123,7 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
     const displayDate = thisDate.toFormat("yyyy-LL-dd");
     this.anchor = slugify(this.url);
     this.author = data.author;
+    this.channel = data.channel;
     this.date = new Date(data.date);
     this.displayDate = displayDate;
     if (data.thumbnail) {
