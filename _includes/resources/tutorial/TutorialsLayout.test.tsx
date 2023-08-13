@@ -17,8 +17,6 @@ test("should render TutorialsLayout", () => {
     },
     pagination: fixtures.paginationProps.pagination,
   };
-  fixtures.context.getResources = () =>
-    Array.from(fixtures.resolvedCollections.allResources.values());
   const firstTutorialURL = fixtures.tips[0].url;
   fixtures.context.getResource = () =>
     fixtures.resolvedCollections.allResources.get(firstTutorialURL)!;

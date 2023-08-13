@@ -13,7 +13,6 @@ test("should render DotNetHomepage", () => {
 
   const context = {
     ...fixtures.context,
-    // TODO Find any const resolvedResources Array.from in tests
     getResource: () => fixtures.channels[0],
   };
 

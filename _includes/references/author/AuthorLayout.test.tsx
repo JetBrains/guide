@@ -12,8 +12,6 @@ test("should render AuthorLayout", () => {
     page: fixtures.authorItems[0].page,
     listing: [""],
   };
-  fixtures.context.getResources = () =>
-    Array.from(fixtures.resolvedCollections.allResources.values());
   document.body.innerHTML = AuthorLayout.call(fixtures.context, renderProps);
   const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
     name: "Resource",

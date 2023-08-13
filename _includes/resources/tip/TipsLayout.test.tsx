@@ -17,8 +17,6 @@ test("should render TipsLayout", () => {
     },
     pagination: fixtures.paginationProps.pagination,
   };
-  fixtures.context.getResources = () =>
-    Array.from(fixtures.resolvedCollections.allResources.values());
   const firstTipURL = fixtures.tips[0].url;
   fixtures.context.getResource = () =>
     fixtures.resolvedCollections.allResources.get(firstTipURL)!;
