@@ -1,5 +1,4 @@
 {
   "resourceType": "tip",
-  "layout": "resources/tip/TipLayout.11ty.tsx",
-  "tags": ["tip", "webstorm_tip"]
+  "layout": "resources/tip/TipLayout.11ty.tsx"
 }

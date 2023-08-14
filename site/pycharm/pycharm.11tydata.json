@@ -1,11 +1,3 @@
 {
-  "channel": {
-    "name": "PyCharm",
-    "url": "/pycharm/",
-    "subnav": [
-      { "text":  "PyCharm", "url":  "https://www.jetbrains.com/pycharm/" },
-      { "text":  "IDEA Blog", "url":  "https://blog.jetbrains.com/pycharm/" },
-      { "text":  "Docs", "url":  "https://www.jetbrains.com/help/" }
-    ]
-  }
+  "channel": "/pycharm/"
 }

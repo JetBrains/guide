@@ -1,11 +1,3 @@
 {
-  "channel": {
-    "name": "IntelliJ IDEA",
-    "url": "/intellij/",
-    "subnav": [
-      { "text":  "IntelliJ IDEA", "url":  "https://www.jetbrains.com/idea/" },
-      { "text":  "IDEA Blog", "url":  "https://blog.jetbrains.com/idea/" },
-      { "text":  "Docs", "url":  "https://www.jetbrains.com/help/" }
-    ]
-  }
+  "channel": "/intellij/"
 }

@@ -1,11 +1,10 @@
 ---
-eleventyExcludeFromCollections: true
+author: pwe
+date: 2020-01-01
+layout: layouts/ListingLayout.11ty.tsx
 title: Articles
 subtitle: Narrative resources such as blog posts.
-layout: resources/tip/TipsLayout.11ty.tsx
 pagination:
-  data: "collections.article"
-  size: 12
-  reverse: true
+    resourceType: article
 ---
 

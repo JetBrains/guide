@@ -7,7 +7,7 @@ import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Tutorial } from "./TutorialModels";
 
-export class TutorialsLayout {
+class TutorialsLayout {
   data() {
     return {
       eleventyExcludeFromCollections: true,

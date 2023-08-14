@@ -5,9 +5,7 @@ import ResourceCard from "./ResourceCard.11ty";
 import fixtures from "../fixtures";
 
 test("ResourceCard", () => {
-  const resource = Array.from(
-    fixtures.resolvedCollections.allResources.values()
-  )[0];
+  const resource = fixtures.resolvedResources[0];
 
   document.body.innerHTML = ResourceCard({ resource });
   const links: HTMLAnchorElement[] = screen.getAllByRole("link", {

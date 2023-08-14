@@ -6,9 +6,9 @@ import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
 import Logo from "../_includes/logos/Logo.11ty";
 import ListingSection from "../_includes/pageelements/ListingSection.11ty";
 
-export type ExplorePageProps = LayoutProps & PageFrontmatter;
+type ExplorePageProps = LayoutProps & PageFrontmatter;
 
-export class ExplorePage {
+class ExplorePage {
   data() {
     return {
       title: "Explore",

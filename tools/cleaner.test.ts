@@ -295,8 +295,11 @@ describe("short and longvideo", () => {
     ];
     const [result] = migrateVideoFrontmatter(markdown);
     expect(result.frontmatter.shortVideo).toBeUndefined();
+    // @ts-ignore
     expect(result.frontmatter.video?.url).toEqual("youtube.com");
+    // @ts-ignore
     expect(result.frontmatter.video?.start).toEqual(100);
+    // @ts-ignore
     expect(result.frontmatter.video?.end).toEqual(200);
     expect(result.isChanged).toBeTruthy();
   });

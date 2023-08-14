@@ -1,13 +1,13 @@
 ---
-eleventyExcludeFromCollections: true
+author: pwe
+date: 2020-01-01
+layout: layouts/ListingLayout.11ty.tsx
 title: Tips
 subtitle: >-
   Visual, standalone, bite-sized learning resources organized into different
   categories.
-layout: resources/tip/TipsLayout.11ty.tsx
 pagination:
-  data: "collections.dotnet_tip"
-  size: 12
-  reverse: true
+  resourceType: tip
+  channel: /dotnet/
 ---
 

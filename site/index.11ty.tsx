@@ -7,9 +7,9 @@ import FeaturedResource from "../_includes/pageelements/FeaturedResource.11ty";
 import MultiColumnSection from "../_includes/pageelements/MultiColumnSection";
 import ListingSection from "../_includes/pageelements/ListingSection.11ty";
 
-export type IndexPageProps = LayoutProps & PageFrontmatter;
+type IndexPageProps = LayoutProps & PageFrontmatter;
 
-export class IndexPage {
+class IndexPage {
   data() {
     return {
       title: "JetBrains Guide",

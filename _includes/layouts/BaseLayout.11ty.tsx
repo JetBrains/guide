@@ -9,25 +9,22 @@ import {
   GoogleTagManagerBodyNoScript,
   GoogleTagManagerHeadScript,
 } from "../googleTagManager.11ty";
-
-export type SubnavItem = {
-  text: string;
-  url: string;
-};
-
-export type Channel = {
-  name: string;
-  url: string;
-  subnav?: SubnavItem[];
-};
+import Subnav from "../navbar/Subnav.11ty";
+import { Channel } from "../resources/channel/ChannelModels";
 
 export type BaseLayoutProps = {
   children: string[];
   title: string;
   subtitle?: string;
-  video?: string | { url: string; start: number; end: number };
+  video?:
+    | string
+    | {
+        url: string;
+        start: number;
+        end: number;
+      };
   resourceType?: string;
-  channel?: Channel;
+  channel?: string;
 } & LayoutProps;
 
 export function BaseLayout(
@@ -35,15 +32,7 @@ export function BaseLayout(
   data: BaseLayoutProps
 ): JSX.Element {
   // @ts-ignore
-  const {
-    children,
-    title,
-    subtitle,
-    video,
-    resourceType,
-    collections,
-    channel,
-  } = data;
+  const { children, title, subtitle, video, resourceType, collections } = data;
 
   // Happy DOM throws a DOMException for external script/css even though
   // we do the settings to suppress it. Vite catches the exception but
@@ -60,40 +49,22 @@ export function BaseLayout(
   const hasVideo = !!video || (!!resourceType && resourceType == "playlist");
 
   // determine if there's an og:image
-  let cardThumbnail;
+  let cardThumbnail, channel;
   if (resourceType) {
     const resource = collections.allResources.get(data.page.url) as Resource;
     cardThumbnail = resource?.cardThumbnail;
+    if (resourceType == "channel") {
+      channel = resource;
+    } else if (resource && resource.references) {
+      channel = resource.references.channel;
+    } else if (data.channel) {
+      channel = collections.allResources.get(data.channel) as Channel;
+    }
   }
 
   const year = new Date().getFullYear();
   const copyright = `Copyright © 2000–${year} <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.`;
 
-  const subnav = !channel?.subnav ? (
-    ""
-  ) : (
-    <nav class="navbar navbar-secondary">
-      <div class="container">
-        <div class="navbar-brand">
-          <div class="navbar-item is-size-5 has-text-weight-semibold pl-0">
-            <a href={channel.url} class="is-hidden-touch">
-              {channel.name}
-            </a>
-            <a href={channel.url} class="is-hidden-desktop ml-5">
-              {channel.name}
-            </a>
-          </div>
-        </div>
-        <div class="navbar-end is-hidden-touch">
-          {channel.subnav.map((channel) => (
-            <a class="navbar-item" href={channel.url}>
-              {channel.text}
-            </a>
-          ))}
-        </div>
-      </div>
-    </nav>
-  );
   return (
     "<!doctype html>" +
     (
@@ -136,7 +107,7 @@ export function BaseLayout(
         <body>
           <GoogleTagManagerBodyNoScript googleTagManagerId="GTM-5P98" />
           <Navbar />
-          {subnav}
+          {channel && <Subnav channel={channel} />}
           {children}
           <Footer copyright={copyright}></Footer>
           {cardThumbnail && (

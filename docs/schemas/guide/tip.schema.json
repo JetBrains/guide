@@ -28,6 +28,10 @@
               "items": {
                 "type": "string"
               }
+            },
+            "channel": {
+              "description": "Possible channel this resource is in",
+              "type": "string"
             }
           },
           "required": [
@@ -61,6 +65,10 @@
                 "wht"
               ],
               "description": "Author of this resource"
+            },
+            "channel": {
+              "description": "Possible channel this resource is in",
+              "type": "string"
             },
             "date": {
               "description": "Date this resource was published",
@@ -184,7 +192,7 @@
           "type": "object",
           "properties": {
             "file": {
-              "description": "File name of the animated GIF",
+              "description": "File name of the animated GIF, can be webm or gif",
               "type": "string"
             },
             "width": {

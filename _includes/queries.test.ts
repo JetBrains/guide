@@ -6,7 +6,7 @@ import { getResources, QueryFilter } from "./queries";
 describe("getResources filtering", () => {
   let resources: Resource[];
   beforeEach(() => {
-    resources = Array.from(fixtures.resolvedCollections.allResources.values());
+    resources = fixtures.resolvedResources;
   });
 
   it("does no filtering", () => {
@@ -25,6 +25,12 @@ describe("getResources filtering", () => {
     const filter: QueryFilter = { resourceType: "tip" };
     const result = getResources(resources, filter);
     expect(result).to.have.length(3);
+  });
+
+  it("filters on channel", () => {
+    const filter: QueryFilter = { channel: "/channels/some-channel/" };
+    const result = getResources(resources, filter);
+    expect(result).to.have.length(2);
   });
 
   it("filters on tag", () => {

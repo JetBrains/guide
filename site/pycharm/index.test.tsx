@@ -4,8 +4,8 @@ import fixtures, { baseRenderData } from "../../_includes/fixtures";
 import { ChannelHomepageData } from "../../_includes/resources/channel/ChannelModels";
 
 // @ts-ignore
-import DotNetHomepage from "./index.11ty";
-test("should render DotNetHomepage", () => {
+import PyCharmHomepage from "./index.11ty";
+test("should render PyCharmHomepage", () => {
   const channelItem = fixtures.channelItems[0];
   const pageLayoutData: ChannelHomepageData = {
     ...baseRenderData,
@@ -18,7 +18,7 @@ test("should render DotNetHomepage", () => {
     getResource: () => fixtures.channels[0],
   };
 
-  const homepage = new DotNetHomepage();
+  const homepage = new PyCharmHomepage();
   document.body.innerHTML = homepage.render.call(context, pageLayoutData);
   const subnavTitle: HTMLAnchorElement = screen.getByRole("link", {
     name: "Channel",

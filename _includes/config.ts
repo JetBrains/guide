@@ -34,8 +34,10 @@ import {
 import { dumpObsoletes } from "../src/obsoletes";
 import { Page } from "./resources/page/PageModels";
 import { Article } from "./resources/article/ArticleModels";
+import { Channel } from "./resources/channel/ChannelModels";
 
 export const resourceCollections = {
+  channel: Channel,
   page: Page,
   playlist: Playlist,
   tip: Tip,

@@ -23,6 +23,9 @@ export const BaseFrontmatter = Type.Object({
       description: "Paths that should redirect to this resource",
     })
   ),
+  channel: Type.Optional(
+    Type.String({ description: "Possible channel this resource is in" })
+  ),
 });
 export type BaseFrontmatter = Static<typeof BaseFrontmatter>;
 
@@ -39,6 +42,7 @@ export class BaseEntity implements BaseFrontmatter {
   subtitle?: string;
   obsoletes?: string[];
   url: string;
+  channel?: string;
   static frontmatterSchema = BaseFrontmatter;
 
   constructor({ data, page }: { data: BaseFrontmatter; page: EleventyPage }) {
@@ -48,6 +52,7 @@ export class BaseEntity implements BaseFrontmatter {
     this.subtitle = data.subtitle;
     this.obsoletes = data.obsoletes;
     this.url = page.url;
+    this.channel = data.channel;
 
     // @ts-ignore
     const frontmatter = this.constructor.frontmatterSchema;
@@ -65,6 +70,9 @@ export const ResourceFrontmatter = Type.Intersect([
   BaseFrontmatter,
   Type.Object({
     author: Type.String({ description: "Author of this resource" }),
+    channel: Type.Optional(
+      Type.String({ description: "Possible channel this resource is in" })
+    ),
     date: Type.Date({
       description: "Date this resource was published",
       ["format"]: "date",
@@ -105,7 +113,7 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
   topics?: string[];
   references?: References;
   static frontmatterSchema: any = ResourceFrontmatter;
-  static referenceFields = ["author", "topics"];
+  static referenceFields = ["author", "channel", "topics"];
 
   constructor({
     data,
@@ -137,7 +145,7 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
   }
 
   resolve(allCollections: AllCollections): void {
-    const { allReferences } = allCollections;
+    const { allReferences, allResources } = allCollections;
     // @ts-ignore
     const fieldNames: string[] = this.constructor.referenceFields;
 
@@ -151,6 +159,7 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
           fieldName,
           resource: this,
           allReferences,
+          allResources,
         });
       } else {
         // Only array references things should be empty;

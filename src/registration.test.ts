@@ -60,6 +60,7 @@ test("should construct collections", async () => {
 describe("Resolve References", () => {
   const allCollections = fixtures.collections;
   const allReferences = fixtures.collections.allReferences;
+  const allResources = fixtures.collections.allResources;
   const authorItem0 = fixtures.authorItems[0];
   let resource: Tip;
   const tip0 = fixtures.collections.allResources.get("/tips/some-tip/") as Tip;
@@ -76,7 +77,7 @@ describe("Resolve References", () => {
   test("should throw error for undefined field", () => {
     const fieldName = "xxx";
     const resolver = () =>
-      resolveReference({ fieldName, resource, allReferences });
+      resolveReference({ fieldName, resource, allReferences, allResources });
     expect(resolver).toThrowError(`No reference field "xxx" on resource`);
   });
 
@@ -85,7 +86,7 @@ describe("Resolve References", () => {
     const fieldName = "topics";
     resource.topics = ["xxx", "yyy"];
     const resolver = () =>
-      resolveReference({ fieldName, resource, allReferences });
+      resolveReference({ fieldName, resource, allReferences, allResources });
     expect(resolver).toThrowError(
       `Resource "/tips/some-tip/" has unresolved reference "topics:xxx"`
     );
@@ -96,7 +97,7 @@ describe("Resolve References", () => {
     const fieldName = "author";
     resource.author = "xxx";
     const resolver = () =>
-      resolveReference({ fieldName, resource, allReferences });
+      resolveReference({ fieldName, resource, allReferences, allResources });
     expect(resolver).toThrowError(
       `Resource "/tips/some-tip/" has unresolved reference "author:xxx"`
     );

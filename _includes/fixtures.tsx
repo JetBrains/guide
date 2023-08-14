@@ -26,6 +26,7 @@ import {
 } from "./resources/playlist/PlaylistModels";
 import { PaginationProps } from "./pagination/Pagination.11ty";
 import { Article, ArticleFrontmatter } from "./resources/article/ArticleModels";
+import { Channel, ChannelFrontmatter } from "./resources/channel/ChannelModels";
 
 /**
  * Reusable test data``
@@ -49,6 +50,7 @@ const tipFrontmatters: TipFrontmatter[] = [
     topics: ["sto", "ato", "sp", "ap", "ste", "ate"],
     thumbnail: "thumbnail.png",
     obsoletes: ["/oldtips/tip1/", "/oldtips/tip2/"],
+    channel: "/channels/some-channel/",
   },
   {
     title: "Another Tip",
@@ -88,22 +90,6 @@ const tipItems: {
   },
 ];
 
-const articleItems: {
-  content: string;
-  data: ArticleFrontmatter;
-  page: EleventyPage;
-}[] = [
-  {
-    content,
-    data: { ...tipFrontmatters[0] },
-    page: {
-      fileSlug: "some-article",
-      url: "/articles/some-article/",
-      inputPath: `${rootPath}/articles/some-article/index.md`,
-      date,
-    },
-  },
-];
 // This is data shaped like on our side.
 const tipDatas: {
   data: TipFrontmatter;
@@ -119,6 +105,102 @@ const tipDatas: {
     content,
     data: { ...tipItems[1].data },
     page: tipItems[1].page,
+  },
+];
+
+const tips = await Promise.all(
+  tipDatas.map(
+    async (ref) =>
+      await new Tip({
+        data: ref.data,
+        page: ref.page,
+      }).init()
+  )
+);
+
+const channelFrontmatters: ChannelFrontmatter[] = [
+  {
+    title: "Some Channel",
+    date,
+    resourceType: "channel",
+    author: "sa",
+    thumbnail: "thumbnail.png",
+    subnav: [{ title: "First Link", url: "/first/" }],
+  },
+  {
+    title: "Another Channel",
+    date: laterDate,
+    resourceType: "channel",
+    author: "aa",
+    thumbnail: "aa.png",
+  },
+];
+const channelItems: {
+  content: string;
+  data: ChannelFrontmatter;
+  page: EleventyPage;
+}[] = [
+  {
+    content,
+    data: { ...channelFrontmatters[0] },
+    page: {
+      fileSlug: "some-channel",
+      url: "/channels/some-channel/",
+      inputPath: `${rootPath}/channels/some-channel/index.md`,
+      date,
+    },
+  },
+  {
+    content,
+    data: { ...channelFrontmatters[1] },
+    page: {
+      fileSlug: "another-channel",
+      url: "/channels/another-channel/",
+      inputPath: `${rootPath}/channels/another-channel/index.md`,
+      date,
+    },
+  },
+];
+const channelDatas: {
+  data: ChannelFrontmatter;
+  page: EleventyPage;
+  content: string;
+}[] = [
+  {
+    content,
+    data: { ...channelItems[0].data },
+    page: channelItems[0].page,
+  },
+  {
+    content,
+    data: { ...channelItems[1].data },
+    page: channelItems[1].page,
+  },
+];
+const channels = await Promise.all(
+  channelDatas.map(
+    async (ref) =>
+      await new Channel({
+        data: ref.data,
+        page: ref.page,
+      }).init()
+  )
+);
+
+const articleItems: {
+  content: string;
+  data: ArticleFrontmatter;
+  page: EleventyPage;
+}[] = [
+  {
+    content,
+    data: { ...tipFrontmatters[0] },
+    page: {
+      fileSlug: "some-article",
+      url: "/articles/some-article/",
+      inputPath: `${rootPath}/articles/some-article/index.md`,
+      date,
+    },
   },
 ];
 
@@ -566,6 +648,7 @@ const all: BaseItem[] = [
   ...topicItems,
   ...playlistItems,
   ...articleItems,
+  ...channelItems,
 ];
 
 const authors = await Promise.all(
@@ -582,16 +665,6 @@ const topics = await Promise.all(
   topicDatas.map(
     async (ref) =>
       await new Topic({
-        data: ref.data,
-        page: ref.page,
-      }).init()
-  )
-);
-
-const tips = await Promise.all(
-  tipDatas.map(
-    async (ref) =>
-      await new Tip({
         data: ref.data,
         page: ref.page,
       }).init()
@@ -639,8 +712,8 @@ const playlists = await Promise.all(
 );
 
 const allResources: ResourceCollection = new Map();
-[...tips, ...tutorials, ...tutorialSteps, ...playlists].forEach((resource) =>
-  allResources.set(resource.url, resource)
+[...tips, ...tutorials, ...tutorialSteps, ...playlists, ...channels].forEach(
+  (resource) => allResources.set(resource.url, resource)
 );
 
 const allReferences: ReferenceCollection = new Map();
@@ -658,20 +731,21 @@ const resolvedCollections = await resolveAllCollections({
   resourceCollections,
   referenceCollections,
 });
+const resolvedResources = Array.from(resolvedCollections.allResources.values());
 const collections: SiteCollections = {
   all,
   allResources,
   allReferences,
 };
 
-const getResources = vi.fn();
 const getResource = vi.fn();
-const getReferences = vi.fn();
 const renderMarkdown = (content: string): string => content;
 const context: LayoutContext = {
-  getResources,
+  getResources: () =>
+    Array.from(fixtures.resolvedCollections.allResources.values()),
   getResource,
-  getReferences,
+  getReferences: () =>
+    Array.from(fixtures.resolvedCollections.allReferences.values()),
   renderMarkdown,
 };
 
@@ -708,6 +782,8 @@ const fixtures = {
   content,
   date,
   paginationProps,
+  channels,
+  channelItems,
   tips,
   tipItems,
   topics,
@@ -721,5 +797,6 @@ const fixtures = {
   all,
   context,
   resolvedCollections,
+  resolvedResources,
 };
 export default fixtures;

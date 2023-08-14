@@ -1,29 +1,27 @@
 import { expect, test } from "vitest";
-import { GoLandHomepage, GoLandHomepageData } from "./index.11ty";
 import { screen } from "@testing-library/dom";
 import fixtures, { baseRenderData } from "../../_includes/fixtures";
+import { ChannelHomepageData } from "../../_includes/resources/channel/ChannelModels";
 
-test("should render GoLandHomepage", async () => {
-  const tip0 = fixtures.tipItems[0];
-  const pageLayoutData: GoLandHomepageData = {
+// @ts-ignore
+import GoLandHomepage from "./index.11ty";
+test("should render GoLandHomepage", () => {
+  const channelItem = fixtures.channelItems[0];
+  const pageLayoutData: ChannelHomepageData = {
     ...baseRenderData,
-    ...tip0.data,
-    page: tip0.page,
-    title: "GoLand Home Page",
+    ...channelItem.data,
+    page: channelItem.page,
   };
-
-  const resolvedResources = Array.from(
-    fixtures.resolvedCollections.allResources.values()
-  );
 
   const context = {
     ...fixtures.context,
-    getResources: () => resolvedResources,
+    getResource: () => fixtures.channels[0],
   };
 
   const homepage = new GoLandHomepage();
-  const render = homepage.render;
-  document.body.innerHTML = render.call(context, pageLayoutData);
-  // The fixture has the page as PyCharm so look for that
-  expect(screen.findByText("GoLand Home Page - JetBrains Guide")).to.exist;
+  document.body.innerHTML = homepage.render.call(context, pageLayoutData);
+  const subnavTitle: HTMLAnchorElement = screen.getByRole("link", {
+    name: "Channel",
+  });
+  expect(subnavTitle.href).to.equal(pageLayoutData.page.url);
 });

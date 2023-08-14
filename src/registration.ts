@@ -129,12 +129,14 @@ export type ResolveReferenceProps = {
   fieldName: string;
   resource: Resource;
   allReferences: ReferenceCollection;
+  allResources: ResourceCollection;
 };
 
 export function resolveReference({
   fieldName,
   resource,
   allReferences,
+  allResources,
 }: ResolveReferenceProps): ReferenceFrontmatter | ReferenceFrontmatter[] {
   /* Return the matching reference or references  */
 
@@ -162,7 +164,14 @@ export function resolveReference({
   } else {
     // Single-value reference like author
     const resolvedLabel = `${fieldName}:${thisFieldValue}`;
+
+    // TODO Re-invent references, so any resource can refer to any
+    //   For now, allow resources to point at a channel.
     const reference = allReferences.get(resolvedLabel);
+    if (!reference && fieldName == "channel") {
+      const channel = allResources.get(thisFieldValue);
+      if (channel) return channel;
+    }
     if (!reference) {
       throw new Error(
         `Resource "${resource.url}" has unresolved reference "${resolvedLabel}"`

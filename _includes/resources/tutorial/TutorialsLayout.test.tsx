@@ -1,5 +1,6 @@
 import { expect, test } from "vitest";
-import { TutorialsLayout } from "./TutorialsLayout.11ty";
+// @ts-ignore
+import TutorialsLayout from "./TutorialsLayout.11ty";
 import { screen } from "@testing-library/dom";
 import fixtures, { baseRenderData } from "../../fixtures";
 import { ReferenceLayoutProps } from "../../layouts/ReferenceLayout.11y";
@@ -17,8 +18,6 @@ test("should render TutorialsLayout", () => {
     },
     pagination: fixtures.paginationProps.pagination,
   };
-  fixtures.context.getResources = () =>
-    Array.from(fixtures.resolvedCollections.allResources.values());
   const firstTutorialURL = fixtures.tips[0].url;
   fixtures.context.getResource = () =>
     fixtures.resolvedCollections.allResources.get(firstTutorialURL)!;
