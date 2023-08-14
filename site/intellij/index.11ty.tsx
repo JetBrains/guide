@@ -3,63 +3,69 @@ import { LayoutContext } from "../../src/models";
 import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
 import {
+  Channel,
   ChannelFrontmatter,
   ChannelHomepageData,
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import MultiColumnSection from "../../_includes/pageelements/MultiColumnSection";
 
-const subnav: ChannelFrontmatter["subnav"] = [
-  { title: "IntelliJ IDEA", url: "https://www.jetbrains.com/idea/" },
-  { title: "IDEA Blog", url: "https://blog.jetbrains.com/idea/" },
-  { title: "Docs", url: "https://www.jetbrains.com/help/" },
-];
+const frontmatter: ChannelFrontmatter = {
+  title: "IntelliJ IDEA Guide",
+  subtitle: "Learning resources for IntelliJ IDEA and related technologies.",
+  resourceType: "channel",
+  date: new Date(Date.UTC(2020, 1, 11)),
+  author: "hs",
+  thumbnail: "/assets/intellij-idea-beam.svg",
+  subnav: [
+    { title: "IntelliJ IDEA", url: "https://www.jetbrains.com/idea/" },
+    { title: "IDEA Blog", url: "https://blog.jetbrains.com/idea/" },
+    { title: "Docs", url: "https://www.jetbrains.com/help/" },
+  ],
+};
 
 class IntelliJHomepage {
   data() {
     return {
-      title: "IntelliJ IDEA Guide",
       layout: "",
-      resourceType: "channel",
-      date: new Date(Date.UTC(2020, 1, 11)),
-      author: "hs",
-      subnav,
+      ...frontmatter,
     };
   }
 
   render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
+    const channel: Channel = this.getResource(data.page.url) as Channel;
     const tips = this.getResources({
       resourceType: "tip",
-      channel: "/intellij/",
+      channel: channel.url,
       limit: 3,
     });
 
     const tutorials = this.getResources({
       resourceType: "tutorial",
-      channel: "/intellij/",
+      channel: channel.url,
       limit: 3,
     });
 
     const playlists = this.getResources({
       resourceType: "playlist",
-      channel: "/intellij/",
+      channel: channel.url,
       limit: 3,
     });
 
     return (
       <BaseLayout {...data}>
         <HeroSection
-          title="IntelliJ IDEA Guide"
+          title={channel.title}
           titleExtraClass="has-text-white"
-          subtitle="Learning resources for IntelliJ IDEA and related technologies."
+          subtitle={channel.subtitle!}
           subtitleExtraClass="has-text-light"
-          image="/assets/intellij-idea-beam.svg"
+          image={channel.thumbnail!}
         />
         {tips && (
           <ListingSection
             title={`Recent Tips`}
             resources={tips}
-            moreLink={`/intellij/tips/`}
+            moreLink={`${channel.url}tips/`}
           />
         )}
 
@@ -109,14 +115,14 @@ class IntelliJHomepage {
           <ListingSection
             title={`Recent Tutorials`}
             resources={tutorials}
-            moreLink={`/intellij/playlists/`}
+            moreLink={`${channel.url}playlists/`}
           />
         )}
         {playlists && (
           <ListingSection
             title={`Recent Playlists`}
             resources={playlists}
-            moreLink={`/intellij/playlists/`}
+            moreLink={`${channel.url}playlists/`}
             separator={true}
           />
         )}

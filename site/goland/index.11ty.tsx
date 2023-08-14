@@ -3,55 +3,61 @@ import { LayoutContext } from "../../src/models";
 import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
 import {
+  Channel,
   ChannelFrontmatter,
   ChannelHomepageData,
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import MultiColumnSection from "../../_includes/pageelements/MultiColumnSection";
 
-const subnav: ChannelFrontmatter["subnav"] = [
-  { title: "GoLand", url: "https://www.jetbrains.com/go/" },
-  { title: "Go Blog", url: "https://blog.jetbrains.com/go/" },
-  { title: "Docs", url: "https://www.jetbrains.com/help/" },
-];
+const frontmatter: ChannelFrontmatter = {
+  title: "GoLand Guide",
+  subtitle: "The Hitchhiker's Guide to GoLand",
+  resourceType: "channel",
+  date: new Date(Date.UTC(2020, 1, 11)),
+  author: "pwe",
+  thumbnail: "/assets/goland_splash.svg",
+  subnav: [
+    { title: "GoLand", url: "https://www.jetbrains.com/go/" },
+    { title: "Go Blog", url: "https://blog.jetbrains.com/go/" },
+    { title: "Docs", url: "https://www.jetbrains.com/help/" },
+  ],
+};
 
 class GoLandHomepage {
   data() {
     return {
-      title: "GoLand Guide",
       layout: "",
-      resourceType: "channel",
-      date: new Date(Date.UTC(2020, 1, 11)),
-      author: "pwe",
-      subnav,
+      ...frontmatter,
     };
   }
 
   render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
+    const channel: Channel = this.getResource(data.page.url) as Channel;
     const tips = this.getResources({
       resourceType: "tip",
-      channel: "/goland/",
+      channel: channel.url,
       limit: 3,
     });
 
     const playlists = this.getResources({
       resourceType: "playlist",
-      channel: "/goland/",
+      channel: channel.url,
       limit: 3,
     });
 
     return (
       <BaseLayout {...data}>
         <HeroSection
-          title="GoLand Guide"
-          subtitle="The Hitchhiker's Guide to GoLand"
-          image="/assets/goland_splash.svg"
+          title={channel.title}
+          subtitle={channel.subtitle!}
+          image={channel.thumbnail!}
         />
         {tips && (
           <ListingSection
             title={`Recent Tips`}
             resources={tips}
-            moreLink={`/goland/tips/`}
+            moreLink={`${channel.url}tips/`}
           />
         )}
         <MultiColumnSection>
@@ -102,7 +108,7 @@ class GoLandHomepage {
           <ListingSection
             title={`Recent Playlists`}
             resources={playlists}
-            moreLink={`/goland/playlists/`}
+            moreLink={`${channel.url}playlists/`}
           />
         )}
       </BaseLayout>

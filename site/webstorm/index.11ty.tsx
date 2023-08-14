@@ -3,57 +3,63 @@ import { LayoutContext } from "../../src/models";
 import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
 import {
+  Channel,
   ChannelFrontmatter,
   ChannelHomepageData,
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import MultiColumnSection from "../../_includes/pageelements/MultiColumnSection";
 
-const subnav: ChannelFrontmatter["subnav"] = [
-  { title: "WebStorm", url: "https://www.jetbrains.com/webstorm/" },
-  { title: "WebStorm Blog", url: "https://blog.jetbrains.com/webstorm/" },
-  { title: "Docs", url: "https://www.jetbrains.com/help/" },
-];
+const frontmatter: ChannelFrontmatter = {
+  title: "WebStorm Guide",
+  subtitle:
+    "Using WebStorm or any other JetBrains IDE with JavaScript support? Explore a collection of learning resources to increase your productivity and start making amazing JavaScript apps faster.",
+  resourceType: "channel",
+  date: new Date(Date.UTC(2020, 1, 11)),
+  author: "pwe",
+  thumbnail: "/assets/webstorm-beam.svg",
+  subnav: [
+    { title: "WebStorm", url: "https://www.jetbrains.com/webstorm/" },
+    { title: "WebStorm Blog", url: "https://blog.jetbrains.com/webstorm/" },
+    { title: "Docs", url: "https://www.jetbrains.com/help/" },
+  ],
+};
 
 class WebStormHomepage {
   data() {
     return {
-      title: "WebStorm Guide",
       layout: "",
-      resourceType: "channel",
-      date: new Date(Date.UTC(2020, 1, 11)),
-      author: "pwe",
-      subnav,
+      ...frontmatter,
     };
   }
 
   render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
+    const channel: Channel = this.getResource(data.page.url) as Channel;
     const tips = this.getResources({
       resourceType: "tip",
-      channel: "/webstorm/",
+      channel: channel.url,
       limit: 3,
     });
 
     const tutorials = this.getResources({
       resourceType: "tutorial",
-      channel: "/webstorm/",
+      channel: channel.url,
       limit: 3,
     });
 
     return (
       <BaseLayout {...data}>
         <HeroSection
-          title="WebStorm Guide"
+          title={channel.title}
+          subtitle={channel.subtitle!}
           subtitleExtraClass="has-text-black"
-          subtitle="Using WebStorm or any other JetBrains IDE with JavaScript support? Explore a collection of learning resources to increase your
-        productivity and start making amazing JavaScript apps faster."
-          image="/assets/webstorm-beam.svg"
+          image={channel.thumbnail!}
         />
         {tips && (
           <ListingSection
             title={`Recent Tips`}
             resources={tips}
-            moreLink={`/webstorm/tips/`}
+            moreLink={`${channel.url}tips/`}
           />
         )}
 
@@ -125,7 +131,7 @@ class WebStormHomepage {
           <ListingSection
             title={`Recent Tutorials`}
             resources={tutorials}
-            moreLink={`/webstorm/tutorials/`}
+            moreLink={`${channel.url}tutorials/`}
           />
         )}
       </BaseLayout>

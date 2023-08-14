@@ -6,6 +6,6 @@ title: Channels
 subtitle: >-
   Storytelling about important technologies and features.
 pagination:
-  resourceType: tip
+  resourceType: channel 
 ---
 
