@@ -30,13 +30,13 @@ class GoLandHomepage {
   render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
     const tips = this.getResources({
       resourceType: "tip",
-      tag: "goland_tip",
+      channel: "/goland/",
       limit: 3,
     });
 
     const playlists = this.getResources({
       resourceType: "playlist",
-      tag: "goland_playlist",
+      channel: "/goland/",
       limit: 3,
     });
 

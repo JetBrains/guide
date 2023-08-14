@@ -30,13 +30,13 @@ class WebStormHomepage {
   render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
     const tips = this.getResources({
       resourceType: "tip",
-      tag: "webstorm_tip",
+      channel: "/webstorm/",
       limit: 3,
     });
 
     const tutorials = this.getResources({
       resourceType: "tutorial",
-      tag: "webstorm_tutorial",
+      channel: "/webstorm/",
       limit: 3,
     });
 

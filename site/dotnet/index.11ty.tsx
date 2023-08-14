@@ -32,13 +32,13 @@ class DotNetHomepage {
   render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
     const tips = this.getResources({
       resourceType: "tip",
-      tag: "dotnet_tip",
+      channel: "/dotnet/",
       limit: 3,
     });
 
     const tutorials = this.getResources({
       resourceType: "tutorial",
-      tag: "dotnet_tutorial",
+      channel: "/dotnet/",
       limit: 3,
     });
 

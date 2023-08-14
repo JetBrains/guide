@@ -29,19 +29,19 @@ class PyCharmHomepage {
   render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
     const tips = this.getResources({
       resourceType: "tip",
-      tag: "pycharm_tip",
+      channel: "/pycharm/",
       limit: 3,
     });
 
     const tutorials = this.getResources({
       resourceType: "tutorial",
-      tag: "pycharm_tutorial",
+      channel: "/pycharm/",
       limit: 3,
     });
 
     const playlists = this.getResources({
       resourceType: "playlist",
-      tag: "pycharm_playlist",
+      channel: "/pycharm/",
       limit: 3,
     });
 

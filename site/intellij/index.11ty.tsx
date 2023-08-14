@@ -30,19 +30,19 @@ class IntelliJHomepage {
   render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
     const tips = this.getResources({
       resourceType: "tip",
-      tag: "intellij_tip",
+      channel: "/intellij/",
       limit: 3,
     });
 
     const tutorials = this.getResources({
       resourceType: "tutorial",
-      tag: "intellij_tutorial",
+      channel: "/intellij/",
       limit: 3,
     });
 
     const playlists = this.getResources({
       resourceType: "playlist",
-      tag: "intellij_playlist",
+      channel: "/intellij/",
       limit: 3,
     });
 
