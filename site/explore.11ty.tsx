@@ -40,7 +40,7 @@ class ExplorePage {
                     <div class="buttons mt-6">
                       <a
                         class="button is-rounded is-primary is-outlined"
-                        href="/latest/"
+                        href="/channels/"
                       >
                         Browse...
                       </a>
@@ -162,16 +162,19 @@ class ExplorePage {
                       <a href="/articles/">Articles</a>
                     </li>
                     <li>
-                      <a href="/tutorials/">Tutorials</a>
-                    </li>
-                    <li>
-                      <a href="/tips/">Tips</a>
+                      <a href="/channels/">Channels</a>
                     </li>
                     <li>
                       <a href="/playlists/">Playlists</a>
                     </li>
                     <li>
+                      <a href="/tips/">Tips</a>
+                    </li>
+                    <li>
                       <a href="/topics/">Topics</a>
+                    </li>
+                    <li>
+                      <a href="/tutorials/">Tutorials</a>
                     </li>
                   </ul>
                 </aside>

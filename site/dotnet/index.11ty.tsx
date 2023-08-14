@@ -5,55 +5,61 @@ import BlockquoteSection from "../../_includes/pageelements/BlockquoteSection.11
 import CallToActionSection from "../../_includes/pageelements/CallToActionSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
 import {
+  Channel,
   ChannelFrontmatter,
   ChannelHomepageData,
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import MultiColumnSection from "../../_includes/pageelements/MultiColumnSection";
 
-const subnav: ChannelFrontmatter["subnav"] = [
-  { title: "dotUltimate", url: "https://www.jetbrains.com/dotnet/" },
-  { title: ".NET Blog", url: "https://blog.jetbrains.com/dotnet/" },
-  { title: "Docs", url: "https://www.jetbrains.com/help/" },
-];
+const frontmatter: ChannelFrontmatter = {
+  title: ".NET Tools Guide",
+  subtitle: "Learning resources for ReSharper, Rider and more.",
+  resourceType: "channel",
+  date: new Date(Date.UTC(2020, 1, 11)),
+  author: "maartenba",
+  thumbnail: "/assets/dotnet_splash.png",
+  subnav: [
+    { title: "dotUltimate", url: "https://www.jetbrains.com/dotnet/" },
+    { title: ".NET Blog", url: "https://blog.jetbrains.com/dotnet/" },
+    { title: "Docs", url: "https://www.jetbrains.com/help/" },
+  ],
+};
 
 class DotNetHomepage {
   data() {
     return {
-      title: ".NET Guide",
       layout: "",
-      resourceType: "channel",
-      date: new Date(Date.UTC(2020, 1, 11)),
-      author: "maartenba",
-      subnav,
+      ...frontmatter,
     };
   }
 
   render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
+    const channel: Channel = this.getResource(data.page.url) as Channel;
     const tips = this.getResources({
       resourceType: "tip",
-      channel: "/dotnet/",
+      channel: channel.url,
       limit: 3,
     });
 
     const tutorials = this.getResources({
       resourceType: "tutorial",
-      channel: "/dotnet/",
+      channel: channel.url,
       limit: 3,
     });
 
     return (
       <BaseLayout {...data}>
         <HeroSection
-          title=".NET Tools Guide"
-          subtitle="Learning resources for ReSharper, Rider and more."
-          image="/assets/dotnet_splash.png"
+          title={channel.title}
+          subtitle={channel.subtitle!}
+          image={channel.thumbnail!}
         />
         {tips && (
           <ListingSection
             title={`Recent Tips`}
             resources={tips}
-            moreLink={`/dotnet/tips/`}
+            moreLink={`${channel.url}tips/`}
           />
         )}
         <MultiColumnSection>
@@ -124,7 +130,7 @@ class DotNetHomepage {
           <ListingSection
             title={`Recent Tutorials`}
             resources={tutorials}
-            moreLink={`/dotnet/tutorials/`}
+            moreLink={`${channel.url}tutorials/`}
           />
         )}
 
