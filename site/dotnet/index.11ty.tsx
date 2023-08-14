@@ -24,7 +24,7 @@ class DotNetHomepage {
       layout: "",
       resourceType: "channel",
       date: new Date(Date.UTC(2020, 1, 11)),
-      author: "khalidabuhakmeh",
+      author: "maartenba",
       subnav,
     };
   }
