@@ -7,6 +7,7 @@ subtitle: >-
   Visual, standalone, bite-sized learning resources organized into different
   categories.
 pagination:
+    channel: /pycharm/
     resourceType: tip
 ---
 

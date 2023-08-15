@@ -8,5 +8,6 @@ subtitle: >-
   categories.
 pagination:
     resourceType: tip
+    channel: /webstorm/
 ---
 
