@@ -1,4 +1,5 @@
 ---
+eleventyExcludeFromCollections: true
 title: Tips
 author: pwe
 date: 2020-01-01

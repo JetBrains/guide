@@ -1,4 +1,5 @@
 ---
+eleventyExcludeFromCollections: true
 author: pwe
 date: 2020-01-01
 layout: layouts/ListingLayout.11ty.tsx

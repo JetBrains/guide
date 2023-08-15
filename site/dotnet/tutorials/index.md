@@ -1,4 +1,5 @@
 ---
+eleventyExcludeFromCollections: true
 title: Tutorials
 author: maartenba
 date: 2020-01-01
