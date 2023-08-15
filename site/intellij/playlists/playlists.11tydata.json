@@ -1,5 +1,4 @@
 {
   "resourceType": "playlist",
-  "layout": "resources/playlist/PlaylistLayout.11ty.tsx",
-  "tags": ["playlist", "intellij_playlist"]
+  "layout": "resources/playlist/PlaylistLayout.11ty.tsx"
 }

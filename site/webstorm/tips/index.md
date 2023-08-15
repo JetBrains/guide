@@ -1,4 +1,5 @@
 ---
+eleventyExcludeFromCollections: true
 author: pwe
 date: 2020-01-01
 layout: layouts/ListingLayout.11ty.tsx
@@ -8,5 +9,6 @@ subtitle: >-
   categories.
 pagination:
     resourceType: tip
+    channel: /webstorm/
 ---
 

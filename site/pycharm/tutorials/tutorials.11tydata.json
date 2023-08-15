@@ -1,5 +1,4 @@
 {
   "resourceType": "tutorialstep",
-  "layout": "resources/tutorial/TutorialStepLayout.11ty.tsx",
-  "tags": ["tutorial", "pycharm_tutorial"]
+  "layout": "resources/tutorial/TutorialStepLayout.11ty.tsx"
 }

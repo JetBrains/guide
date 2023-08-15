@@ -4,10 +4,11 @@ title: Tutorials
 subtitle: >-
   Learn how to work with technologies using detailed, multi-step lessons
   accompanied by code samples, instructions, and videos.
-layout: resources/tutorial/TutorialsLayout.11ty.tsx
+author: pwe
+date: 2020-01-01
+layout: layouts/ListingLayout.11ty.tsx
 pagination:
-  data: "collections.webstorm_tutorial"
-  size: 12
-  reverse: true
+  resourceType: tutorial
+  channel: /webstorm/
 ---
 

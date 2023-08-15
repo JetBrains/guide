@@ -1,4 +1,5 @@
 ---
+eleventyExcludeFromCollections: true
 title: Tips
 subtitle: >-
   Visual, standalone, bite-sized learning resources organized into different
