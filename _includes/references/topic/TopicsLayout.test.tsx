@@ -23,5 +23,5 @@ test("should render TopicsLayout", () => {
   const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
     name: "Topic",
   });
-  expect(links[0].href).to.equal("/topics/ato/");
+  expect(links[0].href).to.equal("/topics/ap/");
 });

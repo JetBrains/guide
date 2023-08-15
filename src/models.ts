@@ -1,6 +1,6 @@
 import { Static, Type } from "@sinclair/typebox";
 import { BaseFrontmatter, Resource } from "./ResourceModels";
-import { ReferenceFrontmatter } from "./ReferenceModels";
+import { Reference, ReferenceFrontmatter } from "./ReferenceModels";
 import { SiteCollections } from "../_includes/models";
 import { QueryFilter } from "../_includes/queries";
 import { PaginationData } from "../_includes/pagination/Pagination.11ty";
@@ -36,6 +36,7 @@ export interface LayoutContext {
   getResource(url: string): Resource;
 
   getReferences(filter: QueryFilter): ReferenceFrontmatter[];
+  getReference(url: string): Reference;
 
   renderMarkdown(content: string): string;
 }

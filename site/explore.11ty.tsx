@@ -162,6 +162,9 @@ class ExplorePage {
                       <a href="/articles/">Articles</a>
                     </li>
                     <li>
+                      <a href="/authors/">Authors</a>
+                    </li>
+                    <li>
                       <a href="/channels/">Channels</a>
                     </li>
                     <li>

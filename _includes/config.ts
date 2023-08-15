@@ -4,7 +4,7 @@ import {
   RegisterIncludesProps,
 } from "../src/registration";
 import { Resource, ResourceFrontmatter } from "../src/ResourceModels";
-import { ReferenceFrontmatter } from "../src/ReferenceModels";
+import { Reference, ReferenceFrontmatter } from "../src/ReferenceModels";
 import { Author, AuthorFrontmatter } from "./references/author/AuthorModels";
 import { Topic, TopicFrontmatter } from "./references/topic/TopicModels";
 import { Tip, TipFrontmatter } from "./resources/tip/TipModels";
@@ -26,6 +26,7 @@ import * as fs from "fs";
 import MarkdownIt from "markdown-it";
 import prism from "markdown-it-prism";
 import {
+  getReference,
   getReferences,
   getResource,
   getResources,
@@ -63,7 +64,7 @@ export async function registerIncludes(
   });
 
   let allResourcesList: Resource[];
-  let allReferencesList: ReferenceFrontmatter[];
+  let allReferencesList: Reference[];
   eleventyConfig.addCollection(
     `allResources`,
     async function (collectionApi: CollectionApi) {
@@ -120,6 +121,10 @@ export async function registerIncludes(
     "getReferences",
     (filter: QueryFilter): ReferenceFrontmatter[] | null =>
       getReferences(allReferencesList, filter)
+  );
+  eleventyConfig.addJavaScriptFunction(
+    "getReference",
+    (url: string): Reference => getReference(allReferencesList, url)
   );
 
   // centralize Markdown configuration

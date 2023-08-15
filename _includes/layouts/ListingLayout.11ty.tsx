@@ -8,6 +8,14 @@ import ResourceCard from "../resourcecard/ResourceCard.11ty";
 import { ResourceFrontmatter } from "../../src/ResourceModels";
 import { BaseLayout } from "./BaseLayout.11ty";
 import Pagination from "../pagination/Pagination.11ty";
+import { sortByFrontmatter } from "../queries";
+
+type FullData = {
+  pagination: {
+    resourceType?: string;
+    sortBy?: string;
+  };
+} & ResourceFrontmatter;
 
 type ListingLayoutProps = {
   content?: string;
@@ -25,19 +33,23 @@ class ListingLayout {
         size: 12,
         reverse: true,
         before: function (
-          paginationData: any[],
-          fullData: any
+          paginationData: EleventyCollectionItem[],
+          fullData: FullData
         ): EleventyCollectionItem[] {
           // Get pagination.resourceType and pagination.channel, if present
-          const resourceType = fullData.pagination.resourceType;
+          const { resourceType } = fullData.pagination;
+          const { sortBy }: { sortBy?: string } = fullData.pagination;
           const channel = fullData.channel;
-          return paginationData
-            .filter((item: EleventyCollectionItem) => {
+          const result = paginationData
+            .filter((item) => {
               return !(resourceType && resourceType != item.data.resourceType);
             })
-            .filter((item: EleventyCollectionItem) => {
+            .filter((item) => {
               return !(channel && channel != item.data.channel);
             });
+
+          sortByFrontmatter(result, sortBy);
+          return result;
         },
       },
     };

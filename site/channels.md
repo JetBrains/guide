@@ -8,5 +8,6 @@ subtitle: >-
   Storytelling about important technologies and features.
 pagination:
   resourceType: channel 
+  sortBy: title
 ---
 

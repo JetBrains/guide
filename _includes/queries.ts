@@ -1,5 +1,6 @@
 import { Resource } from "../src/ResourceModels";
-import { ReferenceFrontmatter } from "../src/ReferenceModels";
+import { Reference, ReferenceFrontmatter } from "../src/ReferenceModels";
+import { EleventyCollectionItem } from "../src/models";
 
 export type QueryFilter = {
   channel?: string;
@@ -49,6 +50,13 @@ export function getResource(
   return allResourcesList.filter((r) => r.url == url)[0];
 }
 
+export function getReference(
+  allReferencesList: Reference[],
+  url: string
+): Reference {
+  return allReferencesList.filter((r) => r.url == url)[0];
+}
+
 export function getReferences(
   allReferencesList: ReferenceFrontmatter[],
   { resourceType }: QueryFilter
@@ -64,4 +72,37 @@ export function getReferences(
   }
 
   return references;
+}
+
+export function sortByFrontmatter(
+  items: EleventyCollectionItem[],
+  sortByOption?: string
+) {
+  if (!sortByOption) {
+    return;
+  }
+
+  let sortOrder = 1;
+  if (sortByOption[0] === "-") {
+    sortOrder = -1;
+    sortByOption = sortByOption.substring(1);
+  }
+
+  switch (sortByOption) {
+    case "title":
+      items.sort((a, b) => {
+        const aTitle = a.data.title.toLowerCase();
+        const bTitle = b.data.title.toLowerCase();
+        return (aTitle > bTitle ? -1 : bTitle > aTitle ? 1 : 0) * sortOrder;
+      });
+      break;
+    case "date":
+      items.sort((a, b) => {
+        let result = a.page.date.getTime() - b.page.date.getTime();
+        return result * sortOrder;
+      });
+      break;
+    default:
+      break;
+  }
 }

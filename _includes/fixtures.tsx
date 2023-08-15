@@ -732,6 +732,9 @@ const resolvedCollections = await resolveAllCollections({
   referenceCollections,
 });
 const resolvedResources = Array.from(resolvedCollections.allResources.values());
+const resolvedReferences = Array.from(
+  resolvedCollections.allReferences.values()
+);
 const collections: SiteCollections = {
   all,
   allResources,
@@ -739,11 +742,13 @@ const collections: SiteCollections = {
 };
 
 const getResource = vi.fn();
+const getReference = vi.fn();
 const renderMarkdown = (content: string): string => content;
 const context: LayoutContext = {
   getResources: () =>
     Array.from(fixtures.resolvedCollections.allResources.values()),
   getResource,
+  getReference,
   getReferences: () =>
     Array.from(fixtures.resolvedCollections.allReferences.values()),
   renderMarkdown,
@@ -798,5 +803,6 @@ const fixtures = {
   context,
   resolvedCollections,
   resolvedResources,
+  resolvedReferences,
 };
 export default fixtures;

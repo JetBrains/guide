@@ -13,6 +13,13 @@ export function TopicsLayout(
   const topics = this.getReferences({
     resourceType: "topic",
   }) as Topic[];
+
+  topics.sort((a, b) => {
+    const aTitle = a.title.toLowerCase();
+    const bTitle = b.title.toLowerCase();
+    return aTitle < bTitle ? -1 : bTitle < aTitle ? 1 : 0;
+  });
+
   const listing = (
     <section class="section">
       <div class="container">
@@ -20,11 +27,15 @@ export function TopicsLayout(
           {topics.map((topic) => {
             let figure: string;
             if (topic.icon) {
-              figure = (<i class={`${topic.icon} has-text-${topic.accent} fa-5x`} />);
+              figure = (
+                <i class={`${topic.icon} has-text-${topic.accent} fa-5x`} />
+              );
             } else if (topic.logo) {
-              figure = (<img src={topic.logo} alt={topic.title} />);
+              figure = <img src={topic.logo} alt={topic.title} />;
             } else {
-              figure = (<i class={`fas fa-file has-text-${topic.accent} fa-5x`} />);
+              figure = (
+                <i class={`fas fa-file has-text-${topic.accent} fa-5x`} />
+              );
             }
 
             return (
@@ -38,7 +49,11 @@ export function TopicsLayout(
                     </a>
                   </span>
                   <div>
-                    <a href={topic.url} aria-label={`Topic`} class="is-size-5 has-text-weight-bold mb-2 title">
+                    <a
+                      href={topic.url}
+                      aria-label={`Topic`}
+                      class="is-size-5 has-text-weight-bold mb-2 title"
+                    >
                       {topic.title}
                     </a>
                     {topic.subtitle && (
