@@ -14,10 +14,7 @@ const Navbar = (): JSX.Element => {
               height="72"
             />
           </a>
-          <a
-            class="navbar-item has-text-weight-semibold is-size-5"
-            href="https://www.jetbrains.com/"
-          >
+          <a class="navbar-item has-text-weight-semibold is-size-5" href="/">
             Guide
           </a>
 
