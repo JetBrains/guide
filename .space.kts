@@ -245,7 +245,7 @@ fun StepsScope.buildSiteDockerImage(dockerfile: String) {
             file = dockerfile
             labels["vendor"] = "JetBrains"
 
-            val imageName = "registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-prod-nginx"
+            val imageName = "registry.jetbrains.team/p/jetbrains-guide/containers/guide-prod-nginx"
             tags {
                 +"$imageName:0.0.${"$"}JB_SPACE_EXECUTION_NUMBER"
                 +"$imageName:latest"
