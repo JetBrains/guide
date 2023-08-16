@@ -8,6 +8,7 @@ export type ListingSectionProps = {
   moreLink?: string;
   resources: Resource[];
   separator?: boolean;
+  isSection?: boolean;
 };
 
 function ListingSection({
@@ -16,6 +17,7 @@ function ListingSection({
   moreLink,
   resources,
   separator,
+  isSection = true,
 }: ListingSectionProps) {
   /* A reusable component for section-style paginated ResourceCard listings */
   const listing = (
@@ -26,6 +28,31 @@ function ListingSection({
     </div>
   );
 
+  const container = (
+    <div className="container">
+      <div className="columns is-vcentered is-mobile">
+        <div className="column is-8">
+          <h2 className="mt-2 mb-4 is-size-1 has-text-weight-bold">{title}</h2>
+          {subtitle && (
+            <p className="subtitle has-text-grey mb-5">{subtitle}</p>
+          )}
+        </div>
+        <div className="column has-text-right">
+          <a className="button is-rounded is-outlined" href={moreLink}>
+            More...
+          </a>
+        </div>
+      </div>
+      <div className="container">{listing}</div>
+    </div>
+  );
+
+  const result = isSection ? (
+    <section class="section">{container}</section>
+  ) : (
+    container
+  );
+
   return (
     <>
       {separator && (
@@ -33,25 +60,7 @@ function ListingSection({
           <hr />
         </section>
       )}
-
-      <section class="section">
-        <div class="container">
-          <div class="columns is-vcentered is-mobile">
-            <div class="column is-8">
-              <h2 class="mt-2 mb-4 is-size-1 has-text-weight-bold">{title}</h2>
-              {subtitle && (
-                <p class="subtitle has-text-grey mb-5">{subtitle}</p>
-              )}
-            </div>
-            <div class="column has-text-right">
-              <a class="button is-rounded is-outlined" href={moreLink}>
-                More...
-              </a>
-            </div>
-          </div>
-          <div class="container">{listing}</div>
-        </div>
-      </section>
+      {result}
     </>
   );
 }

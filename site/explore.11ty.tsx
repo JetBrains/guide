@@ -125,6 +125,7 @@ class ExplorePage {
                   title="Latest"
                   resources={latestContent}
                   moreLink="/latest/"
+                  isSection={false}
                 />
               </div>
 
