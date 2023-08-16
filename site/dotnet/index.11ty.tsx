@@ -17,7 +17,7 @@ const frontmatter: ChannelFrontmatter = {
 	date: new Date(Date.UTC(2020, 1, 11)),
 	author: "maartenba",
 	thumbnail: "thumbnail.png",
-	hero: "/assets/dotnet_splash.png",
+	hero: "/assets/dotnet_splash.svg",
 	subnav: [
 		{ title: "dotUltimate", url: "https://www.jetbrains.com/dotnet/" },
 		{ title: ".NET Blog", url: "https://blog.jetbrains.com/dotnet/" },
