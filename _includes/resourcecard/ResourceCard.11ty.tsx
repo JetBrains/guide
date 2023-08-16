@@ -51,7 +51,7 @@ const ResourceCard = ({
 
     return (
       <div class="column is-half-tablet is-one-third-desktop">
-        <div class="card is-equal-height">
+        <div class="card is-equal-height has-box-hover">
           <div class="card-image">
             <a href={url}>
               <figure class={`image is-16by9 is-contained ${glowCssClass}`}>
@@ -59,8 +59,8 @@ const ResourceCard = ({
               </figure>
             </a>
           </div>
-          <div class="card-content">
-            <a class="title is-size-4" aria-label={`Resource`} href={url}>
+          <div class="card-content has-position-relative">
+            <a class="title is-size-4 is-stretched-link" aria-label={`Resource`} href={url}>
               {title}
             </a>
             {subtitle && <div class="content mt-2">{subtitle}</div>}

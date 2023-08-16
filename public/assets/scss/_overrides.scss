@@ -26,6 +26,11 @@ footer.pagefooter svg {
 .card.is-equal-height .card-footer {
   margin-top: auto
 }
+.has-box-hover {
+  &:hover {
+    outline: 1px solid $grey-light;
+  }
+}
 .menu-list.on-this-page a {
   border-left: 2px solid $grey-light;
 }
@@ -65,6 +70,22 @@ a.navbar-item:focus-within {
 .card-image:first-child img {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+/* Inspired by https://getbootstrap.com/docs/5.3/helpers/stretched-link/ */
+.has-position-relative {
+  position: relative;
+}
+.is-stretched-link {
+  &::#{after} {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+  }
 }
 
 /* Glows and gradients from https://rescui.dev/components/use-glow-hover/presets/ */

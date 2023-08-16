@@ -40,7 +40,7 @@ export function TopicsLayout(
 
 						return (
 							<div class="column is-6 is-4-desktop mb-5">
-								<div class="is-flex">
+								<div class="is-flex has-position-relative">
 									<span class="mr-4">
 										<a href={topic.url}>
 											<figure class="image is-128x128 has-text-centered">
@@ -52,7 +52,7 @@ export function TopicsLayout(
 										<a
 											href={topic.url}
 											aria-label={`Topic`}
-											class="is-size-5 has-text-weight-bold mb-2 title"
+											class="is-size-5 has-text-weight-bold mb-2 title is-stretched-link"
 										>
 											{topic.title}
 										</a>
