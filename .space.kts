@@ -240,7 +240,7 @@ fun StepsScope.buildSiteDockerImage(dockerfile: String) {
         }
 
         dockerBuildPush {
-            push = false
+            push = true
             context = "."
             file = dockerfile
             labels["vendor"] = "JetBrains"
