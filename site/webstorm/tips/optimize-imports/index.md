@@ -18,5 +18,5 @@ animatedGif:
   width: 600
   height: 300
 ---
-With the _Optimize Imports_ action (_⌃⌥O_ / _Ctrl+Alt+O_), you can quickly remove any unused imports, merge 
+With the _Optimize Imports_ action (_⌃⌥O_ / _Ctrl+Alt+O_), you can quickly remove any unused imports, merge
 imports from the same module, and optionally sort the import statements.

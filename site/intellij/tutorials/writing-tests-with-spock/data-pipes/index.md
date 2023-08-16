@@ -119,6 +119,6 @@ def "should be able to create a polygon with #sides sides"() {
 }
 ```
 
-Now we've seen how to write Spock tests that use data pipes to input lots of different values to a test. This means we can test and document the expected behaviour of the code under many conditions. 
+Now we've seen how to write Spock tests that use data pipes to input lots of different values to a test. This means we can test and document the expected behaviour of the code under many conditions.
 
 Next, we'll look at data tables, another mechanism to do the same thing.

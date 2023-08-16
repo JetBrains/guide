@@ -17,5 +17,3 @@ video: 'https://www.youtube.com/watch?v=xHminZ9Dxm4&start=497s'
 * How to execute HQL queries with Hibernate.
 * How to use Hibernate's Criteria API for dynamic queries.
 * How to use JPA with Hibernate.
-
-

@@ -19,16 +19,15 @@ video: 'https://youtu.be/fO8oDVBsHWA'
 Use **^\`** (macOS), or **Ctrl+\`** (Windows/Linux), to bring up the **Quick
 Switch Scheme** dialog.
 
-
 You can now press **4** or use the arrow keys to scroll to **4** and select
 _View Mode_ to see list of view modes available. Now press **2** or click on
 **Enter Distraction Free Mode** to display just your editor window and focus
 on coding.
 
-## Alternative Ways of Entering Distraction Free Mode 
+## Alternative Ways of Entering Distraction Free Mode
 
 ### Using View Toolbar Options
-You can use the menu **View > Appearance** > **Enter Distraction Free Mode**. 
+You can use the menu **View > Appearance** > **Enter Distraction Free Mode**.
 
 ![Enter Distraction Free Mode using View Toolbar](distraction-free-mode-using-menu.png)
 
@@ -59,4 +58,4 @@ Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Sear
 
 ![Toggle Distraction Free Mode using Search Everywhere](exit-distraction-free-mode-searcheverywhere.png)
 
-Alternatively, you can use **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), to bring up the Find Actions dialog which will filter the Search Everywhere dialog to just Actions. 
+Alternatively, you can use **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), to bring up the Find Actions dialog which will filter the Search Everywhere dialog to just Actions.

@@ -32,9 +32,9 @@ After having a fundamental understanding of how GraphQL improves our data fetchi
 
 **Michael Staib, Developer, ChilliCream**
 
-Michael is a Microsoft MVP and the author of the Hot Chocolate project (https://github.com/ChilliCream/hotchocolate), a platform for building GraphQL servers and clients in .NET. For the last three years, this open-source project has been his main focus.
+Michael is a Microsoft MVP and the author of the Hot Chocolate project (<https://github.com/ChilliCream/hotchocolate>), a platform for building GraphQL servers and clients in .NET. For the last three years, this open-source project has been his main focus.
 
-Apart from his work in the open-source community, Michael works as a consultant to help companies to move to GraphQL. You can read about the Hot Chocolate project on his blog https://chillicream.com/blog/.
+Apart from his work in the open-source community, Michael works as a consultant to help companies to move to GraphQL. You can read about the Hot Chocolate project on his blog <https://chillicream.com/blog/>.
 
-* Twitter: https://twitter.com/michael_staib
-* Blog: https://chillicream.com/blog/
+* Twitter: <https://twitter.com/michael_staib>
+* Blog: <https://chillicream.com/blog/>

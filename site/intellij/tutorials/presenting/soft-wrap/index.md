@@ -12,7 +12,7 @@ When using a file that has long lines, we can prevent horizontal scrolling by us
 
 ![Find action soft-wrap](find-action-softwrap.png)
 
-We get the option to turn on soft-wrap, which will be for this file only. You can click this option to turn soft-wrap on or off. 
+We get the option to turn on soft-wrap, which will be for this file only. You can click this option to turn soft-wrap on or off.
 
 ![Find action soft-wrap on](find-action-softwrap-on.png)
 

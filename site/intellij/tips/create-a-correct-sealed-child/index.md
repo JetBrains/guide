@@ -18,5 +18,4 @@ video: 'https://youtu.be/aTs-Jgye3wk'
 ---
 Sealed classes (first preview feature in Java 16) are a way to take control of the inheritance hierarchy of our classes. IntelliJ IDEA can let us know about problems in the classes that extend sealed classes, and suggest solutions.
 
-
 Experiment with Sealed Types, use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux) to see and accept suggestions.

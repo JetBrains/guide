@@ -18,7 +18,7 @@ We can also open the Vulnerable Dependencies tool window without having to open 
 
 ![Open Vulnerable Dependencies tool window from menu](open-from-menu.png)
 
-The Vulnerable Dependencies tool window shows all the vulnerable dependencies for the project. For each vulnerability, we can see an indication of the severity. There are two different views; the **flat view** shows all the vulnerable dependencies in this project and the **dependency hierarchy view** shows the dependency tree and the hierarchy between dependencies. 
+The Vulnerable Dependencies tool window shows all the vulnerable dependencies for the project. For each vulnerability, we can see an indication of the severity. There are two different views; the **flat view** shows all the vulnerable dependencies in this project and the **dependency hierarchy view** shows the dependency tree and the hierarchy between dependencies.
 
 ![Vulnerable Dependencies tool window flat view](flat-view.png)
 
@@ -28,7 +28,7 @@ When we click a specific dependency, we can see more information about the vulne
 
 ![Vulnerable Dependencies tool window details](details.png)
 
-To see all the dependencies of the project regardless of whether they're vulnerable or not, we can click the **Show safe** button on the top left of the Vulnerable Dependencies tool window. 
+To see all the dependencies of the project regardless of whether they're vulnerable or not, we can click the **Show safe** button on the top left of the Vulnerable Dependencies tool window.
 
 ![Show safe button](show-safe-button.png)
 

@@ -23,7 +23,7 @@ in a *Run Configuration*, then run that configuration.
 If not targets exist, then click on the *Manage Targets*, next
 to the *Run on* field.
 
-Then, click on the _+_ button and select in which environment
+Then, click on the *+* button and select in which environment
 you want to run the application or test.
 
 After the IDE introspects that environment, click on *Next*,
@@ -32,7 +32,7 @@ confirm the environment settings, and click on *OK*.
 Then select the newly created target in the *Run on* field.
 
 Configure any additional options, and, finally, run the
-configuration as with any other. 
+configuration as with any other.
 
 **Pro tip:** If you want to compile your sources in a remote
 environment, then select the *Build on remote environment* option

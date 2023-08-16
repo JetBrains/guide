@@ -18,9 +18,8 @@ You may also find these links useful:
 - [Run IDEA Features From the Terminal](https://blog.jetbrains.com/idea/2020/07/run-ide-features-from-the-terminal/)
 - [Terminal Help Documentation](https://www.jetbrains.com/help/idea/terminal-emulator.html/)
 
-
 ### Shortcuts Used
-Here are some of the shortcuts that we used and some additional ones that you can try out. 
+Here are some of the shortcuts that we used and some additional ones that you can try out.
 
 | Name                                                                                                      | macOS Shortcut   | Windows Shortcut       |
 |-----------------------------------------------------------------------------------------------------------|------------------|------------------------|

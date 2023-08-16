@@ -14,6 +14,6 @@ seealso:
     href: 'https://www.jetbrains.com/help/idea/creating-and-optimizing-imports.html'
 video: 'https://youtu.be/ukGjQxga6Wg'
 ---
-Use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to import static methods into classes to improve the readability of your code. 
+Use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to import static methods into classes to improve the readability of your code.
 
 This can be especially useful when you're migrating from older versions of testing frameworks and need to make multiple replacements in your class.

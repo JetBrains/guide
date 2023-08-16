@@ -27,7 +27,6 @@ Here are the IntelliJ IDEA shortcuts that we used.
 | Move down                                                                                        | **⌥ ⌘ ↓**        | **Ctrl+Alt+↓**           |
 | Move up                                                                                          | **⌥ ⌘ ↑**        | **Ctrl+Alt+↑**           |
 
-
 ### Related Links
 - [(video) JetBrains - Using bookmarks in IntelliJ IDEA](https://www.youtube.com/watch?v=2PG03drOEMk)
 - [(documentation) JetBrains IntelliJ IDEA – Bookmarks](https://www.jetbrains.com/help/idea/bookmarks.html)

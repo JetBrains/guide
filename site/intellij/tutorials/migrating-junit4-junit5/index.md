@@ -23,4 +23,3 @@ tutorialItems:
   - ./shortcuts-used/
 ---
 
-

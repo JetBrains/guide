@@ -78,7 +78,8 @@ We can state the steps that need to be run once at the beginning of the test cla
 @BeforeClass
 public static void beforeClass() {}
 ```
-###  Code to run before each individual test
+
+### Code to run before each individual test
 
 Often, we may want each test method to start with the same set of criteria, but not allow other tests to modify this. We can set up a clean state that every test will need with a method annotated with [`@Before`](https://junit.org/junit4/javadoc/4.13/org/junit/Before.html).
 
@@ -99,6 +100,7 @@ public void simpleTest() { }
 @Ignore
 public void ignoredTest() { }
 ```
+
 ### Code to run to clean up after each test
 In the same way we might want to set up clean data at the start of every test, we should also clean up after ourselves after every test. We can do this by annotating a method with [`@After`](https://junit.org/junit4/javadoc/4.13/org/junit/After.html).
 

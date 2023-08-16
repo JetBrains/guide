@@ -22,7 +22,7 @@ repeatedly? Change your breakpoint to only stop when a condition is met.
 
 **How to use:**
 
-Edit the breakpoint properties via _Ctrl + Shift + F8 on Windows/Linux_,
-or _⇧ + ⌘ + F8 on macOS_, then type in the **Condition** you want.
+Edit the breakpoint properties via *Ctrl + Shift + F8 on Windows/Linux*,
+or *⇧ + ⌘ + F8 on macOS*, then type in the **Condition** you want.
 
 <span class="tag is-rounded">New in 2017.3</span>

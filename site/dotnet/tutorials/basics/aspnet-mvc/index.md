@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 video: 'https://youtu.be/7IniT0P13_I'
 ---
 
-In an ASP.NET MVC application, we have three crucial components: Model, View, Controller. The pattern is popular across many other ecosystems, and ASP.NET MVC is a particular flavor developed for .NET developers. 
+In an ASP.NET MVC application, we have three crucial components: Model, View, Controller. The pattern is popular across many other ecosystems, and ASP.NET MVC is a particular flavor developed for .NET developers.
 
 To get started, we first need to make sure that we register ASP.NET MVC in our `Startup` class. In our `ConfigureServices` method, we find a registration call to `AddControllersWithViews`. In our `Configure` method, we find route registration in the form of a call to `endpoints.MapControllers()`. These calls ensure that the MVC pipeline will handle the incoming HTTP requests.
 
@@ -23,8 +23,7 @@ We follow up on the creation of our controller with a nested action of `Index`. 
 
 Next, we need to create a view called `Index` under the `/Views/Widgets` folder. The view will contain a form that will allow us to pass information from our browser client to a yet to be written endpoint of `Create`.  Those of us familiar with HTML should find it very similar to our previous experiences building HTML forms.
 
-
-Finally, we can create the `Create` endpoint in our `WidgetsController`. We need to remember to decorate our endpoints with a `Route` attribute. In this case, we want the path `/widgets/create`. This endpoint takes in a `CreateModel` that allows ASP.NET to bind our form data to our C# object. We can see the data comes from the form by using the parameter attribute of `FromForm`. For this basic demo, we'll store our form data in a static variable so it can survive past a single request. 
+Finally, we can create the `Create` endpoint in our `WidgetsController`. We need to remember to decorate our endpoints with a `Route` attribute. In this case, we want the path `/widgets/create`. This endpoint takes in a `CreateModel` that allows ASP.NET to bind our form data to our C# object. We can see the data comes from the form by using the parameter attribute of `FromForm`. For this basic demo, we'll store our form data in a static variable so it can survive past a single request.
 
 We also need to update our `IndexModel` to display the results of our `Name` on our original `Index` view.
 

@@ -33,4 +33,4 @@ She has previously worked in a service company based in Ukraine and took a part 
 She is passionate about new technologies, clean code, and best practices.
 In her free time, when she’s not spending it on hobbies, she likes to build demos around real-life use cases, share knowledge with others, and learn about the experience of others.
 
-* Twitter: https://twitter.com/borzenko_lena
+* Twitter: <https://twitter.com/borzenko_lena>

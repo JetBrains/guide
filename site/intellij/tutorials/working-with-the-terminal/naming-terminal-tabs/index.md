@@ -18,4 +18,3 @@ We can [move between the different tabs](https://www.jetbrains.com/help/idea/ter
 When we restart IntelliJ IDEA, our terminal session names and other settings will persist.
 
 ---
-

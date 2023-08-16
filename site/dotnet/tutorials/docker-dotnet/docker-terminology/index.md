@@ -44,7 +44,7 @@ Docker has become synonymous with containerization, and many developers will use
 
 > Docker takes away repetitive, mundane configuration tasks and is used throughout the development lifecycle for fast, easy and portable application development - desktop and cloud. Docker's comprehensive end to end platform includes UIs, CLIs, APIs and security that are engineered to work together across the entire application delivery lifecycle. --[Docker](https://docker.com)
 
-.NET developers can think of Docker in much the same way they think about the .NET Ecosystem's toolsets and languages. In comparison, an experienced .NET developer might tell a newcomer enthusiastically to **"learn .NET!" ** When what they might be recommending is to explore languages like C# or F#, build an ASP.NET application, or do some Xamarin mobile development.
+.NET developers can think of Docker in much the same way they think about the .NET Ecosystem's toolsets and languages. In comparison, an experienced .NET developer might tell a newcomer enthusiastically to **"learn .NET!"** When what they might be recommending is to explore languages like C# or F#, build an ASP.NET application, or do some Xamarin mobile development.
 
 For beginners, the first step of using Docker is installing **[Docker Desktop](https://www.docker.com/get-started)**. The Docker Desktop product will configure an environment ready to host containerized applications. All OSes will get a Linux virtual machine and the native ability to run host-specific containers. Windows users will be able to run Windows containers, and macOS users can run macOS containers.
 

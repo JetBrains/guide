@@ -6,6 +6,7 @@ subtitle: >-
 logo: junit5.png
 website: 'https://junit.org/junit5/docs/current/user-guide/'
 topicType: technology
-obsoletes: ["/intellij/topics/junit/"]
+obsoletes:
+  - /intellij/topics/junit/
 ---
 

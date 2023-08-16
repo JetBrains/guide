@@ -24,4 +24,4 @@ Over time, different API architectural styles have been released. Each of them h
 
 Poornima is a .NET developer with over 10 years of experience in .NET and Umbraco. She is passionate about learning new technologies and keeping herself up to date with the latest developments. Outside her work, Poornima enjoys music and is undergoing training in Indian Classical music. Based in Langley, UK, she has one young daughter and spends her spare time reading, cooking, and watching movies.
 
-* Twitter: https://twitter.com/PoornimaNayar
+* Twitter: <https://twitter.com/PoornimaNayar>

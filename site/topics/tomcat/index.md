@@ -8,6 +8,7 @@ subtitle: >-
 logo: tomcat.png
 website: 'https://tomcat.apache.org/'
 topicType: technology
-obsoletes: ["/intellij/topics/tomcat/"]
+obsoletes:
+  - /intellij/topics/tomcat/
 ---
 

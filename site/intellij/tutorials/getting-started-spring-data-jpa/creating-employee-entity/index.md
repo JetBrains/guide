@@ -10,13 +10,13 @@ thumbnail: ./thumbnail.png
 
 An Entity is a Java class representing data you want to insert into a database. For our application, we will create an Employee entity that we will use to insert Employee data into an Employee table in our database.
 
-In the **Project** window, we'll navigate to our `src/main/java` directory, select the `com.jetbrains.springdatajpaapp` package and press **Alt**+**Insert** for Windows/Linux or **⌘N** for macOS. Choose **Java Class** and then type in our entity name - `Employee`. Then, press **Enter**. 
+In the **Project** window, we'll navigate to our `src/main/java` directory, select the `com.jetbrains.springdatajpaapp` package and press **Alt**+**Insert** for Windows/Linux or **⌘N** for macOS. Choose **Java Class** and then type in our entity name - `Employee`. Then, press **Enter**.
 
 In the Employee class, we'll make it an entity by adding the `@Entity` annotation to our class definition and importing the `javax.persistence.Entity` package. Once you do that, you'll notice an error in your class.
 
 ![Employee Entity Error](./EmployeeEntity.png)
 
-As the error message indicates, entities must have a primary key which is specified by having a field annotated by the `@Id` annotation. We'll use the **Alt**+**Shift**+**Enter** shortcut so IntelliJ IDEA can add the ID for us which will result in a prompt to enter the ID field's information. We'll take the default *Name* and *Type*. You can select the *Field Access* checkbox (I prefer annotations on fields instead of the setter methods because I find it more readable). You can also select the *Generated* checkbox so you don't have to assign Employee Ids yourself. 
+As the error message indicates, entities must have a primary key which is specified by having a field annotated by the `@Id` annotation. We'll use the **Alt**+**Shift**+**Enter** shortcut so IntelliJ IDEA can add the ID for us which will result in a prompt to enter the ID field's information. We'll take the default *Name* and *Type*. You can select the *Field Access* checkbox (I prefer annotations on fields instead of the setter methods because I find it more readable). You can also select the *Generated* checkbox so you don't have to assign Employee Ids yourself.
 
 ![Add Employee ID](./AddIdAttribute.png)
 
@@ -28,7 +28,7 @@ Next, we'll generate our constructors by bringing up the *Generate* menu (**Alt*
 
 ![Generate Constructor](./GenerateConstructor.png)
 
-Then, we'll click **OK**. 
+Then, we'll click **OK**.
 
 You'll now notice that you have an error on your `Employee` class because you don't have a no-arg constructor. If you press **Alt+Enter** (Windows/Linux), or **⌥⏎** (macOS), on the error, IntelliJ IDEA offers to create it for you - let's go ahead and do that.
 
@@ -39,6 +39,7 @@ Finally, let's generate a `toString` method by bring up the *Generate* menu agai
 ## End Result
 
 Your final `Employee` entity should look similar to this (formatting may vary):
+
 ```java
 package com.jetbrains.springdatajpaapp;
 

@@ -21,7 +21,6 @@ Here are some helpful links for you to consider when you need to migrate your ap
 - [JetBrains documentation - Using JPA Console](https://www.jetbrains.com/help/idea/using-jpa-console.html)
 - [JetBrains plugins - Using JPA Buddy](https://plugins.jetbrains.com/plugin/15075-jpa-buddy)
 
-
 ## Shortcuts Used
 Here are the shortcuts that we used.
 

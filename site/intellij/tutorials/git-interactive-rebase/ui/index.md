@@ -12,7 +12,7 @@ We can use Git Interactive Rebase in IntelliJ IDEA as follows:
 
 In the Git history, identify the commit from where you want to clean up your history. That will be the oldest commit in the series of commits you want to clean up; in this example, the first failing test that we added.
 
-Right-click on the commit from where you want to clean up your history and select "**Interactively Rebase from Here...**". 
+Right-click on the commit from where you want to clean up your history and select "**Interactively Rebase from Here...**".
 
 ![Interactively Rebase from Here](interactively-rebase-from-here.png)
 

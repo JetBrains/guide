@@ -24,7 +24,7 @@ Let’s install one of the most popular themes, ”Dark Purple Theme”. PyCharm
 What if you want to quickly check what the other themes you’ve installed look like? You can go back to Preferences/Settings and change the current theme in **Appearance & Behavior** > **Appearance** or the switcher (**⌃\`** | **Ctrl+`**) to cycle through the themes.
 
 ## Layout
-What if you don’t want it to look like an IDE at all? Let’s see how to get a lean UI while keeping the IDE. For example, if you want to make your workspace less cluttered, you can use the same switcher (**⌃\`** | **Ctrl+`**) then select **4 View Mode** and select **Zen mode**. This can can be very helpful whenever you need to remove distractions and focus on your code. 
+What if you don’t want it to look like an IDE at all? Let’s see how to get a lean UI while keeping the IDE. For example, if you want to make your workspace less cluttered, you can use the same switcher (**⌃\`** | **Ctrl+`**) then select **4 View Mode** and select **Zen mode**. This can can be very helpful whenever you need to remove distractions and focus on your code.
 
 You can also reposition tool windows and put them where you want them including having them floating on top of the editor or detached completely so that you can view it independently on a different monitor. If you don't like it you can always re-dock it. Another thing you can do to reduce clutter is to hide some UI elements. First, you can customize the Status Bar by right-clicking it and removing any widgets you’re not using.
 

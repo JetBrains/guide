@@ -132,7 +132,7 @@ If it finds a problem, it will likely give you a very precise answer.
 If you stumble trying to find what's available in an inventory, Sphinx provides a [handy utility](https://docs.readthedocs.io/en/stable/guides/intersphinx.html#using-intersphinx) for dumping the remote inventory:
 
 ```bash
-$ python -msphinx.ext.intersphinx https://www.sphinx-doc.org/en/master/objects.inv
+python -msphinx.ext.intersphinx https://www.sphinx-doc.org/en/master/objects.inv
 ```
 
 ## Conclusion

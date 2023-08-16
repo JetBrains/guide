@@ -25,35 +25,35 @@ You go to git log but nothing!
 
 What’s up with that?
 
-The IDE checks regularly for remote changes. 
+The IDE checks regularly for remote changes.
 But it doesn't “fetch” the changes.
-Our IDE help pages explain all this. 
-Your local git is just as it was before the check. 
+Our IDE help pages explain all this.
+Your local git is just as it was before the check.
 And it certainly hasn't updated your working copy files.
 
 ## The Solution
 
-In Git terms, we want to “fetch changes”. 
+In Git terms, we want to “fetch changes”.
 This gets us the “new data from commits”, but “changes are not applied to your code.”
 
-How do you do a fetch? 
-If you prefer the keyboard, search-by-action and type fetch. 
-You can also: open the branches popup and click the blue down arrow. 
+How do you do a fetch?
+If you prefer the keyboard, search-by-action and type fetch.
+You can also: open the branches popup and click the blue down arrow.
 Or, go to the Git Menu and do a fetch from there.
 
 The Git Log timeline now tells you that origin/main – that kind of violet color – has two new commits in the swimlane view.
-We’re in the “ALL” branches view. 
-To emphasize our current state, double click to zoom on our local branch. 
-No evidence in the swimlanes of those two commits from origin/main. 
-Same for Local Main. 
+We’re in the “ALL” branches view.
+To emphasize our current state, double click to zoom on our local branch.
+No evidence in the swimlanes of those two commits from origin/main.
+Same for Local Main.
 
-But remote/main -- that shows the two commits. 
+But remote/main -- that shows the two commits.
 We finish by going back to the ALL view.
 
-That tells you about the commits. 
-But what about the changes in the commit? 
+That tells you about the commits.
+But what about the changes in the commit?
 Just click on the commit and get more detail, including a diff.
 
 But if you know you’re working alone, you can use the IDE’s “update” action, Cmd-T on Mac.
-It combines fetch and pull. 
+It combines fetch and pull.
 As explained in our help pages, update does several things at once.

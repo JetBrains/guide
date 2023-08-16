@@ -28,11 +28,10 @@ Join me and learn about the following topics and more!
 - Resiliency and circuit breakers with Polly
 - Discovery clients with Steeltoe OSS
 
-
 ### About the Presenter
 
 **Layla Porter** Live Coder, Microsoft MVP, GitHub Star
 
 Layla is a Developer Advocate at VMware serving the .NET community. She is a Live Coder on Twitch, a Microsoft MVP, a GitHub Star, and co-organiser of the MK .NET user group. Layla loves sharing knowledge whilst having fun. At her talks, there’s no such thing as a stupid question, and beginners are always welcome.
 
-* Twitter: https://twitter.com/laylacodesit
+* Twitter: <https://twitter.com/laylacodesit>

@@ -38,5 +38,3 @@ sources.
 Alternately, you can open **Database** tool window from the Sidebar of the IDE
 
 ![Open Database Tool Window from Sidebar](database-tool-from-sidebar.png)
-
-

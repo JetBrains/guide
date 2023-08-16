@@ -20,7 +20,7 @@ At the end of the day, There's no better feeling than delivering a great user ex
 
 What if you could use your existing ASP.NET Core knowledge to build immersive client experiences and avoid the headaches of complicated frontend frameworks? Well you can! This video series is for you, whether you're an experienced ASP.NET Core web developer looking to recapture the nostalgia of "getting stuff done" or new to ASP.NET Core feeling overwhelmed by learning both frontend and backend stacks.
 
-## Current Web Application Development 
+## Current Web Application Development
 
 As complex as the modern web may seem, most web applications rely on fundamentally the same behavior derived decades ago: a client initiates a request to a server, the server responds with a payload, and the client processes that information into a user interface. The `Request/Response` pattern is easy to understand, yet powerful enough to support most developer scenarios.
 

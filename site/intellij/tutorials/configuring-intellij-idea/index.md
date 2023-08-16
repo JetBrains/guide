@@ -18,4 +18,3 @@ tutorialItems:
   - ./configuring-summary/
 ---
 
-

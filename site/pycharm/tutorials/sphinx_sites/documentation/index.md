@@ -143,7 +143,6 @@ Want to highlight two lines?
 ```
 ~~~
 
-
 You can also use MyST's [YAML syntax for directive options](https://myst-parser.readthedocs.io/en/latest/api/directive.html?highlight=yaml#module-myst_parser.parse_directives) instead of the RST-style of key-value pairs:
 
 ~~~
@@ -257,7 +256,7 @@ sphinx-autodoc-typehints
 Then install from the requirements:
 
 ```bash
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Next, edit your `conf.py` file to enable both Sphinx extensions:
@@ -270,6 +269,7 @@ extensions = [
     # And any other extension
 ]
 ```
+
 *Note: Make sure to load `sphinx.ext.napoleon` before `sphinx_autodoc_typehints`.*
 When Sphinx renders the next time, our page with the `autodoc` directive now shows nice docstrings and type hints:
 

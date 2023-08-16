@@ -15,17 +15,17 @@ video: 'https://youtu.be/4ukhZvOmAtk?start=850'
 
 The first approach we looked at assumed that you want to do everything in a single step. However, sometimes you want to create a local Git repository for your project well before you publish it publicly on GitHub.
 
-Let’s assume you have a more complex project than Hello World and that you’re still in the process of writing the code. You don’t want to publish your project on GitHub just yet, but you do want to enable source control for it as you want to do small commits locally while you evolve the code. 
+Let’s assume you have a more complex project than Hello World and that you’re still in the process of writing the code. You don’t want to publish your project on GitHub just yet, but you do want to enable source control for it as you want to do small commits locally while you evolve the code.
 
 ### Creating a Local Repository
 
-You can check that your project isn't under version control by checking if you can see your Git tool window with **⌘9** (macOS), or **Alt+9** (Windows/Linux). If you can't see the Git tool window, your project is not yet a Git project. 
+You can check that your project isn't under version control by checking if you can see your Git tool window with **⌘9** (macOS), or **Alt+9** (Windows/Linux). If you can't see the Git tool window, your project is not yet a Git project.
 
-To use Git as the version control for an IntelliJ IDEA project, go to **VCS > Enable Version Control Integration** and select Git from the drop-down menu. 
+To use Git as the version control for an IntelliJ IDEA project, go to **VCS > Enable Version Control Integration** and select Git from the drop-down menu.
 
 ![Enable Version Control Integration](enable-version-control-integration.png)
 
-IntelliJ IDEA will now create a Git repository in the root directory of the project. We also now have access to the Git tool window with **⌘9** (macOS), or **Alt+9** (Windows/Linux). 
+IntelliJ IDEA will now create a Git repository in the root directory of the project. We also now have access to the Git tool window with **⌘9** (macOS), or **Alt+9** (Windows/Linux).
 
 If you open this, you can click on the [Console tab](https://www.jetbrains.com/help/idea/version-control-tool-window-console-tab.html) to see the Git commands that have been run and their result, or you can switch to the visual [Log tab](https://www.jetbrains.com/help/idea/log-tab.html). You can now also see that there's a `.git` folder in your project, either from the Project Window **⌘1** (macOS), **Alt+1** (Windows/Linux), or you can use IntelliJ IDEA’s terminal with **⌥F12** (macOS), or **Alt+F12** (Windows/Linux) to list the project’s files.
 
@@ -35,7 +35,7 @@ Now you’ve enabled Git, but you haven’t added anything to source control yet
 
 You can open the commit window using **⌘K** (macOS) **Ctrl+K** (Windows/Linux). The tutorial uses the [Commit Tool Window](https://www.jetbrains.com/help/idea/commit-and-push-changes.html#commit-tool-window), which was added in IntelliJ IDEA 2020.1. If you’re still using the old commit dialog, you can switch to the commit tool window in your Preferences/Settings  **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) and then search for _Use non-modal commit interface_.
 
-If you open up the unversioned files list in this Commit window you can see all the files in your project are listed because none of them have been added to Git yet. You probably don’t want to add everything to Git. There are some directories and files, like build output files, that we don’t need to put under source control. Seeing all the files in a single list like this might not be helpful, so we could opt to group the files, for example by directory or module. 
+If you open up the unversioned files list in this Commit window you can see all the files in your project are listed because none of them have been added to Git yet. You probably don’t want to add everything to Git. There are some directories and files, like build output files, that we don’t need to put under source control. Seeing all the files in a single list like this might not be helpful, so we could opt to group the files, for example by directory or module.
 
 ![Export By Directory](export-by-directory.png)
 

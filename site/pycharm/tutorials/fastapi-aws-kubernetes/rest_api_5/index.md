@@ -15,13 +15,11 @@ video: 'https://www.youtube.com/watch?v=2CRq3FxVvQA'
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-
 As you know we have covered most of our apis, we have completed working on the cart feature.
 
 Currently, we have some products in our cart. Now, we are going to place an order.
 
 Let’s move forward and complete the order module.
-
 
 # New Order
 
@@ -30,7 +28,6 @@ Same as usual I am going to create **models.py** file.
 Let me do the necessary imports.
 
 I will create two classes, ```Order``` and ```OrderDetails```.
-
 
 **models.py**
 
@@ -70,10 +67,8 @@ class OrderDetails(Base):
     created = Column(DateTime, default=datetime.now)
 ```
 
-The Order table will contain columns like ordering date, amount, order status, 
+The Order table will contain columns like ordering date, amount, order status,
 shipping address and foreign key relationship with user and order details.
-
-
 
 Order details table will contain foreign key relationships with order
 and products table along-with quantity and created date.
@@ -82,12 +77,12 @@ and products table along-with quantity and created date.
 
 ![step2](./steps/step2.png)
 
-Basically, we shouldn’t do ```CASCADE```, because in the future, if someone deletes 
-the product then order & order details will also get removed. But of course we don’t want 
-to do that because we need to preserve order information. It doesn't matter in the future 
-if the product gets removed from the system; the order information should be preserved. 
+Basically, we shouldn’t do ```CASCADE```, because in the future, if someone deletes
+the product then order & order details will also get removed. But of course we don’t want
+to do that because we need to preserve order information. It doesn't matter in the future
+if the product gets removed from the system; the order information should be preserved.
 
-This is a tutorial. We can ignore this scenario, but when working 
+This is a tutorial. We can ignore this scenario, but when working
 in a real-world scenario we need to store it which may be beneficial
 for future audit purposes.
 
@@ -97,7 +92,7 @@ Let me now register the model and generate the schema.
 
 ![step3](./steps/step3.png)
 
-For generating the schema, I will type the following command : 
+For generating the schema, I will type the following command :
 
 ```
 alembic revision --autogenerate
@@ -120,14 +115,12 @@ I am going to initialize the ```APIRouter``` and provide the tags name as ```Ord
 
 We are going to work on two apis :
 
-- one is returning the orders list 
+- one is returning the orders list
 - and the second one is initiating or placing a new order
-
 
 Placing a new order is not like we are going to
 use PayPal or going to do any live transaction. We are just going to
 do a demo of the order flow.
-
 
 So, let’s begin our first api on initiate order, or you can say placing order.  
 
@@ -190,7 +183,7 @@ class ShowOrder(BaseModel):
         orm_mode = True
 ```
 
-As you can see we created two classes ```ShowOrder``` and ```ShowOrderDetails```. ShowOrder 
+As you can see we created two classes ```ShowOrder``` and ```ShowOrderDetails```. ShowOrder
 will contain a list of OrderDetails, and OrderDetails will contain product information. You
 can recall the foreign key relationship with ```Order``` and ```OrderDetails```.  
 
@@ -200,9 +193,8 @@ Moving back to the router, we are going to create a service named ```initiate_or
 
 I will do the necessary imports.
 
-First, I am going to get user information. Currently, we are manually retrieving 
+First, I am going to get user information. Currently, we are manually retrieving
 through email but very soon we will change this implementation in our upcoming tutorial.
-
 
 **services.py**
 
@@ -260,14 +252,13 @@ Next, I will be retrieving cart items. Then, we are going to calculate the total
 
 After that we are going to initiate the new order. We will do bulk insert of our order details objects.
 
-Once the order has been successfully placed, we will send an email. 
-But pausing it for now, we will come back later and work on the implementation. 
+Once the order has been successfully placed, we will send an email.
+But pausing it for now, we will come back later and work on the implementation.
 
 After we have successfully sent the email, we will clear the cart items and return the new order instance.
 
-We are done with the implementation for placing an order. 
+We are done with the implementation for placing an order.
 Let’s come back to the router and work on the second api: getting a list of orders.
-
 
 **router.py**
 
@@ -298,7 +289,6 @@ I am going to register the router in the **main.py** file.
 
 I will come back to the swagger ui and refresh the page.
 
-
 ![step7](./steps/step7.png)
 
 You can see the two apis.
@@ -319,9 +309,9 @@ I am going to execute the **Initiate Order**.
 
 ![step11](./steps/step11.png)
 
-You can observe that the order has been successfully placed and the current status 
-is under processing. The response returned contains a nested schema which has order 
-id followed by order details and then product 
+You can observe that the order has been successfully placed and the current status
+is under processing. The response returned contains a nested schema which has order
+id followed by order details and then product
 information along-with detailed category information.
 
 Now, let’s check what’s coming in the order list.
@@ -339,7 +329,7 @@ You can see we finally got the response, it’s returning a list of orders which
 ![step14](./steps/step14.png)
 
 We have already purchased IPhone 13 whose product id was 1. Now we will purchase IPhone 12 whose product id is 2.
- 
+
 I am going to add the product to the cart.
 
 ![step15](./steps/step15.png)
@@ -349,7 +339,7 @@ We got one item in our cart. You can verify through get all cart items api.
 ![step16](./steps/step16.png)
 
 Now, let’s initiate the order.
- 
+
 ![step17](./steps/step17.png)
 
 Okay, the order got placed. If I try to do it again, it won’t happen. As you know, once an order is placed we are cleaning our items present in the cart.

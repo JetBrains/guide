@@ -24,4 +24,4 @@ The IDE Feature Trainer assumes no prior knowledge or context so it's a great wa
 
 ![feature-trainer.png](feature-trainer.png)
 
-There are several lessons including refactoring, running & debugging and Git to choose from. 
+There are several lessons including refactoring, running & debugging and Git to choose from.

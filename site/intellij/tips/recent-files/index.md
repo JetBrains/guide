@@ -18,6 +18,6 @@ seealso:
       https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#recent_files
 video: 'https://youtu.be/QJEEtaTV-Yg'
 ---
-Use **⌘E** (macOS), or **Ctrl+E** (Windows/Linux), or  to view the recent files and access windows that don't have shortcuts by typing them straight into the dialog. 
- 
+Use **⌘E** (macOS), or **Ctrl+E** (Windows/Linux), or  to view the recent files and access windows that don't have shortcuts by typing them straight into the dialog.
+
 You can filter the recent files list to files that you've changed by using the same shortcut again.

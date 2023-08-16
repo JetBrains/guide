@@ -62,6 +62,7 @@ private static void checkDefaultShape(Polygon polygon, Renderer renderer) {
     assert polygon.renderer == renderer
 }
 ```
+
 Now if you run the test with incorrect values in `checkDefaultShape`, it should fail.
 
 There's something else to be aware of too - it fails on the first assertion that fails, it never runs the assertion to check the polygon's renderer. Later we'll look at how to address that.

@@ -15,24 +15,24 @@ video: 'https://youtu.be/HYmoeUF9ZH0'
 ---
 
 In the previous step we made a "dumb" presentational component with one property.
-In React, components can have properties and state. 
+In React, components can have properties and state.
 When they have state (or when they need access to React's lifecycle methods), we use a class-based component instead.
 In recent years, React has made these available to functional components as well.
 
 We're going to build a stateful counter component.
 Each click increments the click count, with the current count value stored in local component state.
-The `<Counter/>` component will be passed in some props. 
-In this step, we'll show component props -- as done with a function in the previous step -- for class-based components. 
+The `<Counter/>` component will be passed in some props.
+In this step, we'll show component props -- as done with a function in the previous step -- for class-based components.
 We'll do state in the next step, followed by event handlers.
 
 ## Code
 
-The finished code for this tutorial step is 
+The finished code for this tutorial step is
 [in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/class_props).
 
 ## First a Test
 
-This tutorial series shows class-based component development using testing instead of a browser. 
+This tutorial series shows class-based component development using testing instead of a browser.
 Let's write a broken test first, then do the implementation which fixes the test.
 
 Make a new file called `Counter.test.tsx` with this test, to ensure we have a label and a current count:
@@ -73,7 +73,7 @@ export class Counter extends Component {
 }
 ```
 
-Back in our test, click on `<Counter/>` and hit `Alt-Enter` to resolve the import. 
+Back in our test, click on `<Counter/>` and hit `Alt-Enter` to resolve the import.
 Save the file and see that your test passes:
 
 ![First Tests](./screenshots/first_tests.png)
@@ -100,9 +100,9 @@ test("should render a counter with custom label", () => {
 });
 ```
 
-The test fails, which is good -- the label is still `Count`, not `Current`. 
-What's even better -- TypeScript helped us "fail faster". 
-Before running the test, it told us we broke the contract saying no properties were expected. 
+The test fails, which is good -- the label is still `Count`, not `Current`.
+What's even better -- TypeScript helped us "fail faster".
+Before running the test, it told us we broke the contract saying no properties were expected.
 Even better, our IDE visually warned us with a red squiggly.
 
 Let's now work on the implementation.
@@ -127,7 +127,7 @@ export class Counter extends Component<CounterProps> {
 The type definition says `label` can be optional.
 Can we define a default prop value, as we did for functions?
 Yes, and [a clever approach](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/default_props/) using destructuring and defaults comes into play:
- 
+
 ```typescript
 export class Counter extends Component<CounterProps> {
   render() {
@@ -142,7 +142,7 @@ export class Counter extends Component<CounterProps> {
     );
   }
 }
-``` 
+```
 
 Inside `render` we made a local `const` for the `label` value.
 Its value was "destructured" from the props, and when not in props, was given a default value.
@@ -167,7 +167,7 @@ render() {
 }
 ```
 
-Did you notice the autocompletion by the IDE, which knew there was a component with a name starting with those letters, somewhere in the project? 
+Did you notice the autocompletion by the IDE, which knew there was a component with a name starting with those letters, somewhere in the project?
 And when you accepted the completion, it generated the import?
 Also, the IDE helped on the available props and the types for those props.
 

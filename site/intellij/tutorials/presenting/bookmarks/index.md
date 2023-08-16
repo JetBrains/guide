@@ -8,7 +8,7 @@ subtitle: Using bookmarks for navigation
 thumbnail: ./thumbnail.png
 ---
 
-Another way to navigate through code, is to use bookmarks. Press **F3** (on Mac) or **F11** (on Windows/Linux) to create an anonymous line bookmark. 
+Another way to navigate through code, is to use bookmarks. Press **F3** (on Mac) or **F11** (on Windows/Linux) to create an anonymous line bookmark.
 
 ![Anonymous bookmark](anonymous-bookmark.png)
 

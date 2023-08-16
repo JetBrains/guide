@@ -18,7 +18,7 @@ video: 'https://youtu.be/yZ_KkSBJD7g'
 Regardless of the programming language used, Rider provides navigation in your projects. Navigation is available in C#,
 F#, VB.NET, JavaScript, TypeScript, CSS, HTML and many more languages, and works for settings, actions in the IDE, and more.
 
-JetBrains Rider enables you to find your way through the source code using the declarations, members, method calls, 
+JetBrains Rider enables you to find your way through the source code using the declarations, members, method calls,
 inheritance hierarchy, errors, and so on as well as through IDE items like actions, settings, and tool windows.
 
 The scope of navigation and search is not limited to files of just your solution: you can include

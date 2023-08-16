@@ -24,11 +24,11 @@ gives you support for Azure, and the [AWS Toolkit for Rider](https://aws.amazon.
 The Azure Toolkit for Rider brings Azure into Rider. It has an Azure Explorer, where you can browse web apps, function apps,
 virtual machines, databases, and storage accounts.
 
-Azure Cloud Shell support is there as well, so you can connect to a remote terminal in Azure and work with in from within Rider. 
+Azure Cloud Shell support is there as well, so you can connect to a remote terminal in Azure and work with in from within Rider.
 
 For Azure Functions, basic management of function apps is supported. Coding function apps is more fun with Rider: there
 are file templates to create new function triggers, you can debug functions, and invoke separate functions easily.
- 
+
 ### AWS Toolkit for Rider
 
 The AWS Toolkit for Rider is an open source plugin for Rider. It's not covered in this tutorial, but there are many

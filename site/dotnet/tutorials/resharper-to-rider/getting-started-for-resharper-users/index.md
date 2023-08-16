@@ -45,7 +45,6 @@ Using the import settings feature, you can expect to **import existing keymaps a
 
 If you'd prefer to start with a fresh installation, continue reading the following sections.
 
-
 ## Settings And Personalization
 
 Your development environment says a lot about your personality. Choose between a zen-like and clutter-free experience, a data-rich user experience with quickly accessible data, or any experience in-between.

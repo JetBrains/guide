@@ -15,7 +15,7 @@ In the previous step we showed how to debug a problem.
 Let's show how to write a test that *recreates* the problem -- *and* ensures our Python code handles it correctly -- by using `pytest` exception assertions.
 
 We'll then refactor the code to detect that situation and return `None`, writing tests before doing the refactoring.
- 
+
 # Testing Exceptions
 
 We start, as always, with a test.
@@ -30,6 +30,7 @@ def test_no_primary_guardian(player_one):
         player_one.primary_guardian
     assert 'list index out of range' == str(exc.value)
 ```
+
 As we type the code above, don't forget to use autocomplete to let PyCharm generate `import pytest` for you.
 
 This test uses a special context manager facility in `pytest`, in which you run a block of code that you expect to raise an exception, and let `pytest` handle it.
@@ -48,10 +49,10 @@ Or in this case, change that last test:
 {% include "./demos/test_player.py" %}
 ```
 
-Good news, the test fails. 
+Good news, the test fails.
 Remember to remove the now-unused `import pytest` via PyCharm's `Optimize Imports`.
 
-We now change our implementation in `player.py` to correctly return `None`. 
+We now change our implementation in `player.py` to correctly return `None`.
 While we're at it, let's put a return type on `primary_guardian`:
 
 ```python

@@ -11,7 +11,7 @@ subtitle: View dependencies in the build tool window
 thumbnail: ./thumbnail.png
 ---
 
-To see direct dependencies and their transitive dependencies, we can look in the Build tool window. 
+To see direct dependencies and their transitive dependencies, we can look in the Build tool window.
 There is no shortcut to open the Build tool window. We can open it by clicking **Quick Launch** in the bottom-left and selecting **Gradle**, or **Maven** depending on what we're using.
 ![Quick Launch Gradle](quick-launch-gradle.png)
 

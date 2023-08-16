@@ -18,6 +18,6 @@ seealso:
       https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#reformat_file
 video: 'https://youtu.be/oaQbMZj3EyA'
 ---
-Sometimes code formatting can get out of sync, but there's an easy fix in IntelliJ IDEA. You can use **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) to reformat a selection of code according to your reformat settings. 
- 
+Sometimes code formatting can get out of sync, but there's an easy fix in IntelliJ IDEA. You can use **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) to reformat a selection of code according to your reformat settings.
+
 You can also display the Reformat File dialog with **⌥⇧⌘L** (macOS), or **Ctrl+Alt+Shift+L** (Windows/Linux).

@@ -24,4 +24,3 @@ We want to check all our tests still work as before, so run them using **⌃⇧R
 There are no failed tests here and no indicator that anything went wrong so, can assume this migration worked as expected. You can now commit your changes if you want to.
 
 After the migration, you can see that the test classes have been changed.  We can go through each of the files to check the changes before we commit them. Use **⇧⌘]** (macOS), or **Ctrl+Right Arrow** (Windows/Linux), to move to the next file to compare so you can quickly check all the files. As these are mostly simple JUnit tests, most of the changes are a change to the imports to use the new JUnit Jupiter test annotation instead of the old JUnit test annotation.
-

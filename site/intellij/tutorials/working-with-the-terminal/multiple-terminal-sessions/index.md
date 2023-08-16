@@ -22,4 +22,3 @@ Running commands in different tabs is helpful, but sometimes two different proce
 ![Split Terminal View](split-terminal-view.png)
 
 ---
-

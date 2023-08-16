@@ -22,7 +22,7 @@ Let it give you a non-interrupting window, letting you get back to work.
 
 **How to use:**
 
-Invoke the **Quick Documentation** feature using _Ctrl + Q on Windows/Linux_
-or _F1 on macOS_, learn more about the different symbols you're working with.
+Invoke the **Quick Documentation** feature using *Ctrl + Q on Windows/Linux*
+or *F1 on macOS*, learn more about the different symbols you're working with.
 
 <span class="tag is-rounded">New in 2017.3</span>

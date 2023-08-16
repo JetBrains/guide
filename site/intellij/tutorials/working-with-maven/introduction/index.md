@@ -15,11 +15,11 @@ In this tutorial, we're going to look at how to work with Maven projects in Inte
 - IntelliJ IDEA Video - [Working with Maven in IntelliJ IDEA](https://youtu.be/pt3uB0sd5kY) - approx 5 mins
 - IntelliJ IDEA Webinar - [Using Maven in IntelliJ IDEA](https://youtu.be/D1sRK8JLCQ4) - 1 hour
 - IntelliJ IDEA Blog - [Maven and IntelliJ IDEA](https://blog.jetbrains.com/idea/2021/07/using-maven-in-intellij-idea/)
- 
+
 ### IntelliJ IDEA Help Documentation
- - [Maven](https://www.jetbrains.com/help/idea/maven-support.html)
- - [Maven tool window](https://www.jetbrains.com/help/idea/maven-projects-tool-window.html)
- - [New projects from the Welcome Screen](https://www.jetbrains.com/help/idea/new-project-wizard.html)
- - [Run anything](https://www.jetbrains.com/help/idea/running-anything.html) 
- - [Settings/Preferences dialog](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) and specifically [Maven settings](https://www.jetbrains.com/help/idea/maven.html)
- - [Configuring keyboard shortcuts](https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html#add-keyboard-shortcut)
+- [Maven](https://www.jetbrains.com/help/idea/maven-support.html)
+- [Maven tool window](https://www.jetbrains.com/help/idea/maven-projects-tool-window.html)
+- [New projects from the Welcome Screen](https://www.jetbrains.com/help/idea/new-project-wizard.html)
+- [Run anything](https://www.jetbrains.com/help/idea/running-anything.html)
+- [Settings/Preferences dialog](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) and specifically [Maven settings](https://www.jetbrains.com/help/idea/maven.html)
+- [Configuring keyboard shortcuts](https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html#add-keyboard-shortcut)

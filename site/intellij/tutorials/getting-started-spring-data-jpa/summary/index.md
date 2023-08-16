@@ -8,7 +8,7 @@ subtitle: 'Shortcuts, GitHub repository and other resources'
 thumbnail: ./thumbnail.png
 ---
 
-In this tutorial, we created a simple Spring Boot application that uses [Spring Data JPA](https://spring.io/projects/spring-data-jpa) to store and retrieve data from the database. 
+In this tutorial, we created a simple Spring Boot application that uses [Spring Data JPA](https://spring.io/projects/spring-data-jpa) to store and retrieve data from the database.
 
 Some helpful shortcuts mentioned in the tutorial:
 
@@ -19,7 +19,7 @@ Some helpful shortcuts mentioned in the tutorial:
 |Search everywhere|**Shift**+**Shift**| **Shift**+**Shift** |
 |Run your application|**Shift**+**F10** | **⌃R**              |
 
-You can find the final project created through this tutorial in this [GitHub repository](https://github.com/daliasheasha/SpringDataJPA). 
+You can find the final project created through this tutorial in this [GitHub repository](https://github.com/daliasheasha/SpringDataJPA).
 
 ## Help Links
 - [Spring.io: Spring Data JPA](https://spring.io/projects/spring-data-jpa)

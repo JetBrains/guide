@@ -13,6 +13,6 @@ video: >-
 ---
 **How to use:**
 
-Declare the type in the JSDoc section above your object/function call and watch the IDE be able to infer the properties and methods of the target object. 
+Declare the type in the JSDoc section above your object/function call and watch the IDE be able to infer the properties and methods of the target object.
 
 <span class="tag is-rounded">New in 2021.2</span>

@@ -3,7 +3,8 @@ title: Speed Search
 subtitle: Quickly find an item in a long list by typing to narrow.
 accent: primary
 icon: fas fa-search-location
-obsoletes: ["/pycharm/topics/speedsearch"]
+obsoletes:
+  - /pycharm/topics/speedsearch
 ---
 
 Want to quickly find a choice in a long list? Whether it's a file in the

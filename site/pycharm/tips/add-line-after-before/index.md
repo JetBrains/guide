@@ -14,9 +14,9 @@ cardThumbnail: ./card.png
 video: 'https://youtu.be/pHmv6RzKrDk'
 ---
 
-It's easy to overlook, but we frequently add a line of code while in the 
-middle of another line. Perhaps we were fixing something and want to 
-proceed to the next line. Perhaps we were on an import and want another 
+It's easy to overlook, but we frequently add a line of code while in the
+middle of another line. Perhaps we were fixing something and want to
+proceed to the next line. Perhaps we were on an import and want another
 import on the line above.
 
 It's tempting, for adding a line after, to treat this as a two-step process:
@@ -35,11 +35,11 @@ Adding a line above is worse:
 
 - Perhaps press tab a few times to get the indentation right
 
-Instead, use `Start New Line` (`Shift-Enter` Win/Linux/macOS). With your 
-cursor anywhere in the current line -- where you are just finishing an 
+Instead, use `Start New Line` (`Shift-Enter` Win/Linux/macOS). With your
+cursor anywhere in the current line -- where you are just finishing an
 edit -- you can then get an empty next line, with correct indentation.
 
-For a line above, use 
-`Start New Line Before Current` (`Ctrl-Alt-Enter` Win/Linux, 
-`Alt-Cmd-Enter` macOS.) You get a new line, indented appropriately for the 
+For a line above, use
+`Start New Line Before Current` (`Ctrl-Alt-Enter` Win/Linux,
+`Alt-Cmd-Enter` macOS.) You get a new line, indented appropriately for the
 language and context.

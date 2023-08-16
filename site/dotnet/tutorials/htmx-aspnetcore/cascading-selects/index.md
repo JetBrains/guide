@@ -86,7 +86,7 @@ public IActionResult OnGetLove()
 }
 ```
 
-Running our sample, we can see changing the `Cuisine` and `Food` selections update our UI as expected. 
+Running our sample, we can see changing the `Cuisine` and `Food` selections update our UI as expected.
 
 ![I Love Tacos! result](img_1.png)
 
@@ -94,4 +94,4 @@ From here, we could use the cascading select technique to infinity, making for a
 
 The approach outlined in this sample is one of many ways to accomplish this behavior. As you'll learn with HTMX, there usually is more than one right way to achieve your desired interaction. So, experiment with this sample and see if you can get the same behavior differently. Experiment with HTTP methods and swapping behaviors.
 
-In the following video, we'll implement a search-as-you-type experience. 
+In the following video, we'll implement a search-as-you-type experience.

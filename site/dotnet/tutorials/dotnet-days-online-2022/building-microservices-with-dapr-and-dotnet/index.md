@@ -22,5 +22,5 @@ Building distributed applications is not an easy thing to do. Breaking down your
 
 Cecil Phillip is a software developer who’s been around the .NET space for some time. Over his career, he’s worked in different roles and created software solutions for various industries such as finance, education, HR, and healthcare. Today, he's a Developer Advocate at Stripe, where he helps developers incorporate payment processing in their applications.
 
-* Twitter: https://twitter.com/cecilphillip
-* Blog: http://cecilphillip.com/
+* Twitter: <https://twitter.com/cecilphillip>
+* Blog: <http://cecilphillip.com/>

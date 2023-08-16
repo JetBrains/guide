@@ -20,7 +20,7 @@ Press **⌃⇧␣** (macOS), **Ctrl+Shift+Space** (Windows/Linux) to invoke smar
 
 Here are some places you can use it:
 - In the right part of assignment statements
-- In variable initializers 
+- In variable initializers
 - In return statements
 - In the list of arguments of a method call
 - After the new keyword in an object declaration

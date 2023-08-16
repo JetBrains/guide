@@ -54,7 +54,7 @@ In Sphinx these [are called sidebars](https://www.sphinx-doc.org/en/master/usage
 
 These are the defaults, but add them anyway at the end of `conf.py`:
 
-```python 
+```python
 html_sidebars = {
   '**': [
     "about.html",
@@ -70,7 +70,7 @@ These are the [sidebars available for the Alabaster theme](https://alabaster.rea
 
 Now try commenting those all out:
 
-```python 
+```python
 html_sidebars = {
   '**': [
     # 'about.html',
@@ -91,7 +91,7 @@ It's somewhat understandable: Sphinx is quite old, and new ideas have emerged wh
 
 Before proceeding, reset the sidebars:
 
-```python 
+```python
 html_sidebars = {
   '**': [
     "about.html",
@@ -123,7 +123,7 @@ sphinx-book-theme
 Then update from our dependencies:
 
 ```bash
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Just because it is installed doesn't mean our website is using it.
@@ -204,9 +204,9 @@ Let's see it in action.
 To start, download the SVG version of the Python logo and put it in the special `_static` folder in the same directory as `conf.py`:
 
 ```bash
-$ cd _static
-$ wget https://www.python.org/static/community_logos/python-logo-generic.svg
-$ cd ..
+cd _static
+wget https://www.python.org/static/community_logos/python-logo-generic.svg
+cd ..
 ```
 
 Now edit `conf.py` and add that filename as the value for the logo:
@@ -292,7 +292,6 @@ We can also override an existing sidebar simply by putting a file with the same 
 
 What's available inside the template?
 The Sphinx docs [cover this](https://www.sphinx-doc.org/en/master/templating.html) but let's do a quick example in `luv_sphinx.html`:
-
 
 ```
 <p>We <em>love</em> Sphinx for {{project}}!</p>

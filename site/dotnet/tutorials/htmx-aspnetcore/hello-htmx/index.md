@@ -40,7 +40,7 @@ public IActionResult OnGet()
 
 The ternary approach allows for the same endpoint to fallback gracefully. A call to the endpoint without HTMX results in a full page render. This can occur on clients that don't support JavaScript (not common) or have it disabled. The backend style can help reduce code duplication but may come with added complexity. The alternative to this approach is to have different endpoints for HTMX behaviors and initial HTTP requests. Both are fine approaches, and you should experiment with both techniques and see which one you like better.
 
-When done correctly, clicking the button will now change the target element. 
+When done correctly, clicking the button will now change the target element.
 
 ![A completed hello world sample with HTMX](complete.png)
 

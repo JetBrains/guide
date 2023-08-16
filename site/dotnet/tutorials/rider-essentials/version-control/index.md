@@ -53,8 +53,8 @@ There are also options to merge branches, or [perform a Git rebase](https://www.
 Sometimes you are in a project that's isn't yet under version control. Or, you've done a lot of work since your last commit.
 You then make a big change, or delete a chunk of code, and the **Undo** action not sufficient. Now what?
 
-[Local History](https://www.jetbrains.com/help/rider/local_history.html) constantly tracks all changes made, and 
-automatically maintains revisions for all meaningful changes. This gives you a detailed timeline of changes in project 
+[Local History](https://www.jetbrains.com/help/rider/local_history.html) constantly tracks all changes made, and
+automatically maintains revisions for all meaningful changes. This gives you a detailed timeline of changes in project
 structure and source code, with the ability to roll back to any point if necessary.
 
 Keep in mind it is not a replacement for proper version control. It does save the day when disaster strikes!

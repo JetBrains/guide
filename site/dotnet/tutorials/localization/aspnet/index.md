@@ -63,11 +63,11 @@ Finally, we add view localization to the services collection.
 
 ```csharp
  services
-	 .AddRazorPages()
-	 .AddViewLocalization();
+  .AddRazorPages()
+  .AddViewLocalization();
 ```
 
-The complete `ConfigureServices` method is below. 
+The complete `ConfigureServices` method is below.
 
 ```csharp
  public void ConfigureServices(IServiceCollection services)
@@ -195,7 +195,7 @@ The `IViewLocalizer` is the recommended approach for anyone localizing an ASP.NE
 
 ### Example Usage
 
-Here is an example of a Razor page utilizing all three interfaces. We can see that once injected, they all use an index operator to handle 
+Here is an example of a Razor page utilizing all three interfaces. We can see that once injected, they all use an index operator to handle
 
 ```csharp
 @page
@@ -247,7 +247,7 @@ The Razor view utilizes the `DisplayAttribute` to determine a `<label>` tag's va
 
 ## Conclusion
 
-With a few steps, we can understand the ideas behind localizing an ASP.NET application. We can transfer many of our existing skills regarding resource files to the new paradigm created for web applications. Once configured, the localization framework stays out of our way, allowing us to develop our app while also leaving room to expand our audience. 
+With a few steps, we can understand the ideas behind localizing an ASP.NET application. We can transfer many of our existing skills regarding resource files to the new paradigm created for web applications. Once configured, the localization framework stays out of our way, allowing us to develop our app while also leaving room to expand our audience.
 
 I hope this short tutorial has inspired you to localize your ASP.NET applications. Remember, you can **[access a working sample of the project seen in the video at this GitHub repository](https://github.com/khalidabuhakmeh/aspnetcore_localization_sample).**
 
@@ -255,7 +255,7 @@ I hope this short tutorial has inspired you to localize your ASP.NET application
 
 Some of the resources utilized to write this tutorial are listed below:
 
-- Mike Brind - https://www.mikesdotnetting.com/article/346/using-resource-files-in-razor-pages-localisation
-- .NET Core tutorials - https://dotnetcoretutorials.com/2017/06/22/request-culture-asp-net-core/
-- Microsoft Documentation - https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-3.1
-- Alan Edwardes - https://alanedwardes.com/blog/posts/country-code-to-flag-emoji-csharp/)
+- Mike Brind - <https://www.mikesdotnetting.com/article/346/using-resource-files-in-razor-pages-localisation>
+- .NET Core tutorials - <https://dotnetcoretutorials.com/2017/06/22/request-culture-asp-net-core/>
+- Microsoft Documentation - <https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-3.1>
+- Alan Edwardes - <https://alanedwardes.com/blog/posts/country-code-to-flag-emoji-csharp/>)

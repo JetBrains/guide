@@ -13,23 +13,23 @@ video: 'https://youtu.be/Y_TGIsFnvo4'
 ---
 
 
-We briefly saw the [Jest](../../../../topics/jest) test runner in [Project Setup](../project_setup/). 
+We briefly saw the [Jest](../../../../topics/jest) test runner in [Project Setup](../project_setup/).
 We modified an existing test but didn't dive into testing.
 
-In this tutorial step we start the process of test driven development. 
-After this step, we'll develop first in our Jest tests. 
+In this tutorial step we start the process of test driven development.
+After this step, we'll develop first in our Jest tests.
 Then, only at the end of development, we will look at the app in the browser.
 
 ## Code
 
-The finished code for this tutorial step is 
+The finished code for this tutorial step is
 [in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/testing).
 
 ## Pretty Jest
 
-Previously we ran our Jest tests as a generic npm run script, in the IDE's `npm` run tool window. 
-However, JetBrains IDEs have a dedicated run configuration type for Jest. 
-It's a fantastic, visual way to do testing. 
+Previously we ran our Jest tests as a generic npm run script, in the IDE's `npm` run tool window.
+However, JetBrains IDEs have a dedicated run configuration type for Jest.
+It's a fantastic, visual way to do testing.
 
 Let's switch to using that Jest run configuration, starting with the easy way.
 Open `App.test.tsx`, right-click in the editor body, and choose `Run 'App.test.tsx'`:
@@ -71,9 +71,9 @@ As a note, `getByText` is part of the [Testing Library](https://testing-library.
 
 ## Fail Faster
 
-Let's see a little TDD in action. 
-Open `src/App.test.tsx`. 
-We're going to show the cycle of fail-fix in action. 
+Let's see a little TDD in action.
+Open `src/App.test.tsx`.
+We're going to show the cycle of fail-fix in action.
 Define two constants, then compare them with a simple Jest assertion:
 
 ```typescript {5,6,7}
@@ -114,9 +114,9 @@ Let's stay *in the IDE* to focus on our code, and observe our code through tests
 
 First, let's get our code and our tests side-by-side.
 Use `Find Action` (`Shift-Ctrl-A` Win/Linux, macOS `Shift-Cmd-A`) and type in `Split Right`.
-This gives us a left and right side editor without needing tabs. 
-On the left, open `App.tsx` and keep `App.test.tsx` on the right. 
-We can now see `function App` alongside our tests. 
+This gives us a left and right side editor without needing tabs.
+On the left, open `App.tsx` and keep `App.test.tsx` on the right.
+We can now see `function App` alongside our tests.
 If you need more room, close the Project tool window.
 
 ![Component and Test side-by-side](./screenshots/side_by_side.png)
@@ -147,7 +147,7 @@ test("renders learn react link", () => {
   expect(linkElement).toBeInTheDocument();
 });
 ```
- 
+
 ## See Also
 
 - [Running Unit Tests on Jest](https://www.jetbrains.com/help/webstorm/running-unit-tests-on-jest.html)

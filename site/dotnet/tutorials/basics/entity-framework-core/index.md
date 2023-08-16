@@ -24,7 +24,7 @@ The tools package allows us to execute commands that help us structure our solut
 
 All data access in Entity Framework Core happens through a class that inherits from `DbContext`. In our project, we'll implement a `AcmeDataContext` which exposes a `DbSet<Person>` property of `People`. Entity Framework Core maps this C# class to our `People` table via conventions. With our context created, we can execute database commands like queries, inserts, and deletions.
 
-Entity Framework Core has trade-offs of performance overhead and increased memory usage compared to more tedious approaches like ADO.NET. Most developers are willing to make those trade-offs for increased developer productivity, a high-level database access abstraction, and unit testing options. 
+Entity Framework Core has trade-offs of performance overhead and increased memory usage compared to more tedious approaches like ADO.NET. Most developers are willing to make those trade-offs for increased developer productivity, a high-level database access abstraction, and unit testing options.
 
 ### Code Snippets
 

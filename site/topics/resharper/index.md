@@ -4,7 +4,8 @@ subtitle: The Visual Studio Extension for .NET Developers.
 logo: ./logo.png
 website: 'https://www.jetbrains.com/resharper/'
 topicType: product
-obsoletes: ["/dotnet/topics/resharper/"]
+obsoletes:
+  - /dotnet/topics/resharper/
 ---
 
 ReSharper makes Visual Studio a much better IDE! ReSharper extends Visual Studio with over 2200 on-the-fly code inspections for C#, VB.NET, ASP.NET, JavaScript, TypeScript and other technologies. For most inspections, ReSharper provides quick-fixes (light bulbs) to improve the code.

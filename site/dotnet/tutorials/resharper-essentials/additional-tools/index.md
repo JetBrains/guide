@@ -24,7 +24,7 @@ There's a [project dependency diagram](https://www.jetbrains.com/help/resharper/
 
 #### Project Dependency Diagram
 
-The project dependency diagram lets you visualize project dependencies in your solution, and explore its architecture. They help to analyze project coupling in a solution. You can open it from the **ReSharper \| Architecture ** menu.
+The project dependency diagram lets you visualize project dependencies in your solution, and explore its architecture. They help to analyze project coupling in a solution. You can open it from the **ReSharper \| Architecture** menu.
 
 The toolbar on the left shows your solution, solution folders, and projects. You can use it to filter which projects to include on the diagram.
 

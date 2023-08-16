@@ -3,7 +3,8 @@ title: Profiling
 subtitle: Analyze application performance and memory usage.
 accent: primary
 icon: fas fa-flag-checkered
-obsoletes: ["/dotnet/topics/profiling/"]
+obsoletes:
+  - /dotnet/topics/profiling/
 ---
 
 Detect performance and memory bottlenecks in a variety of .NET and .NET Core applications.

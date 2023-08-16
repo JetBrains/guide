@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 
 We're going to create a small web application that runs on Tomcat to demonstrate the integration in IntelliJ IDEA Ultimate:
 
-1. From the Welcome Screen select New Project. 
+1. From the Welcome Screen select New Project.
 2. If you have an existing project open, click **File > New**. Select **Java Enterprise** on the left-hand menu and enter the following details:
 
 | Field Name            | Description                                                                                                                                                                           |
@@ -28,7 +28,7 @@ We're going to create a small web application that runs on Tomcat to demonstrate
 
 ![New Tomcat Project](new-tomcat-project.png)
 
-3. Click **Next** to go to the next step in the tutorial and select Jakarta EE 9 from the Version drop-down. The Eclipse Jersey Server and Weld SE have been preselected for us because we selected REST service as the template in the previous step. 
+3. Click **Next** to go to the next step in the tutorial and select Jakarta EE 9 from the Version drop-down. The Eclipse Jersey Server and Weld SE have been preselected for us because we selected REST service as the template in the previous step.
 4. Click **Create** to set up the project. IntelliJ IDEA will now create our simple web application which will output “Hello, World!” when it receives a GET request.
 
 You can open the Services window with **⌘8** (macOS), **Alt+8** (Windows/Linux) to see the Tomcat server we just configured along with our web application.

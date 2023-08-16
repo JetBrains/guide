@@ -26,4 +26,4 @@ Roman Provazník is a Principal Technical Lead .NET & Architect of CN Group CZ, 
 
 As a big fan of the functional-first .NET language F#, he founded the Czech F# community which he loves to maintain and grow.
 
-* Twitter: https://twitter.com/dzoukr
+* Twitter: <https://twitter.com/dzoukr>

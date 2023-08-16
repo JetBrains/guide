@@ -15,6 +15,6 @@ animatedGif:
   width: 600
   height: 300
 ---
-Markers on the right editor gutter show you errors and warnings in your 
-file. You can hover over a marker to preview the code with the error. And 
+Markers on the right editor gutter show you errors and warnings in your
+file. You can hover over a marker to preview the code with the error. And
 on click, you will jump to that line.

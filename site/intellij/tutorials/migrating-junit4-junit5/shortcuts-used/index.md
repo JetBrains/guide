@@ -18,7 +18,7 @@ This tutorial includes some shortcuts, but many more were demonstrated [in the v
 | Run the current context - a single test if you're inside a method, or all tests in a package if a package is selected | **⌃⇧R**        | **Ctrl+Shift+F10** |
 | Commit changes                                                                                                        | **⌘0**         | **Ctrl+0**         |
 | IntelliJ IDEA Settings                                                                                                | **⌘,**         | **Ctrl+Alt+S**     |
-| Exclude changes from refactoring                                                                                      | **⌫**          | **Delete**         | 
+| Exclude changes from refactoring                                                                                      | **⌫**          | **Delete**         |
 | Include previously excluded changes                                                                                   | **⇧⌫**         | **Shift+Delete**   |
 | [Find action](https://www.jetbrains.com/help/idea/working-with-source-code.html#99e55be9)                             | **⌘⇧A**        | **Ctrl+Shift+A**   |
 | Find in Files                                                                                                         | **⇧⌘F**        | **Shift+Ctrl+F**   |

@@ -17,4 +17,3 @@ tutorialItems:
 ---
 
 In this tutorial, we’re going to look at what [Live Templates](https://www.jetbrains.com/help/idea/using-live-templates.html) are, how to access them and how you can create your own.
-

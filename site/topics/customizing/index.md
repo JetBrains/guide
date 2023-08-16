@@ -3,7 +3,8 @@ title: Customizing the IDE
 subtitle: Extend the built-in functionality and change the look and feel
 accent: primary
 icon: fas fa-sliders-h
-obsoletes: ["/webstorm/topics/customizing/"]
+obsoletes:
+  - /webstorm/topics/customizing/
 ---
 
 Don’t feel like using the defaults?

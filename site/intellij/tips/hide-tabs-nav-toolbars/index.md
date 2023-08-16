@@ -21,6 +21,6 @@ seealso:
       https://www.jetbrains.com/help/idea/customize-actions-menus-and-toolbars.html
 video: 'https://youtu.be/bPThFkyAGgs'
 ---
-Press **⇧⌘A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), for the Find Actions dialog. From here you can search for _Tab Placement_, _NBar_ and _TBar_ to turn on or off the tabs, Navigation Bar and Toolbar windows. 
+Press **⇧⌘A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), for the Find Actions dialog. From here you can search for _Tab Placement_, _NBar_ and _TBar_ to turn on or off the tabs, Navigation Bar and Toolbar windows.
 
 Note that CamelCase is supported for searching.

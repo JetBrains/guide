@@ -8,7 +8,6 @@ subtitle: >-
   Visual, standalone, bite-sized learning resources organized into different
   categories.
 pagination:
-    resourceType: tip
-    channel: /webstorm/
+  resourceType: tip
+  channel: /webstorm/
 ---
-

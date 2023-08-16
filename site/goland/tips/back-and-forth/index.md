@@ -15,7 +15,7 @@ video: >-
   https://www.youtube.com/watch?v=kC4cCmYEbGo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=11
 ---
 Use the **Navigate | Backward** and **Navigate | Forward** to go up and down
-the code path you are exploring while navigating from one symbol to another. 
+the code path you are exploring while navigating from one symbol to another.
 
 **How to use:**
 

@@ -20,7 +20,7 @@ video: >-
   https://www.youtube.com/watch?v=-yj17Ps678k&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=89
 ---
 **Reformat Code** makes it a piece of cake to fix style warnings
-and make your code formatted like _go fmt_ would.    
+and make your code formatted like _go fmt_ would.
 
 **How to use:**
 

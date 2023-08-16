@@ -3,7 +3,10 @@ title: Web Development
 subtitle: Working with web technologies.
 accent: primary
 icon: fas fa-globe
-obsoletes: ["/dotnet/topics/web/", "/intellij/topics/web/", "/pycharm/topics/web/", ]
+obsoletes:
+  - /dotnet/topics/web/
+  - /intellij/topics/web/
+  - /pycharm/topics/web/
 ---
 
 Our IDEs have powerful web development features based on the inclusion

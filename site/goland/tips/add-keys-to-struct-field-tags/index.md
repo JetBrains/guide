@@ -14,9 +14,9 @@ If you need to add keys to existing struct types, you can now do
 this quicker using the dedicated *Add key to tags* feature.
 
 **How to use:**
-Place the cursor on a struct type, then press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_.
+Place the cursor on a struct type, then press *Alt + Enter on Windows/Linux* or *⌥ + ⏎ on macOS*.
 
-From the *Context Actions* menu, select *Add key to tags*, and 
-start typing the key name. 
+From the *Context Actions* menu, select *Add key to tags*, and
+start typing the key name.
 
 <span class="tag is-rounded">New in 2021.1</span>

@@ -28,4 +28,4 @@ His primary focus is on .NET applications and has worked as a C# and VB develope
 
 Prior to joining AWS, Martin worked for Oracle and Microsoft as a developer evangelist and software development engineer.
 
-* Twitter: https://twitter.com/thebeebs
+* Twitter: <https://twitter.com/thebeebs>

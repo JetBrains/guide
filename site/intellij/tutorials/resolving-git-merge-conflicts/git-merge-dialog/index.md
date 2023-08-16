@@ -15,7 +15,7 @@ At some point in your career, probably many points, you'll have to resolve merge
 
 ![Merge feature branch into main IntelliJ IDEA popup](merge-into-main.png)
 
-When you press **⏎** (macOS), or **Enter** (Windows/Linux), IntelliJ IDEA opens a popup telling us there are merge conflicts. 
+When you press **⏎** (macOS), or **Enter** (Windows/Linux), IntelliJ IDEA opens a popup telling us there are merge conflicts.
 
 ![IntelliJ IDEA Conflicts dialog popup](conflicts-dialog.png)
 
@@ -25,7 +25,7 @@ The Conflicts dialog offers several options:
 - **Accept theirs** will apply the changes from the other branch (`feature`) and discard the changes from current branch (`main`).
 - **Merge** will open up the _Merge dialog_. We will focus on this option in this tutorial.
 
-If you are unsure about which is "yours" and which is "theirs", note that these are also visible in the table to the left of the buttons and the branch names are mentioned in brackets. 
+If you are unsure about which is "yours" and which is "theirs", note that these are also visible in the table to the left of the buttons and the branch names are mentioned in brackets.
 
 ![Yours and Theirs in the table headings](yours-theirs.png)
 
@@ -39,4 +39,4 @@ Alternatively, if you accidentally click **Close**, a _Merge Conflicts_ node wil
 
 ![Commit tool window file changes](changes-commit-tool-window.png)
 
-Click the arrow **>** to see the _Merge Conflicts_ node. You can click **Resolve** to reopen the _Conflicts_ dialog. 
+Click the arrow **>** to see the _Merge Conflicts_ node. You can click **Resolve** to reopen the _Conflicts_ dialog.

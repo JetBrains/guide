@@ -29,4 +29,4 @@ Daniel is a Software Engineer at Particular Software, the makers of NServiceBus,
 
 In his free time, Daniel enjoys weightlifting, dark-roasted coffee, playing with his son, and writing more code. At least until midnight, when his self-imposed router hack kicks in.
 
-* Twitter: https://twitter.com/danielmarbach
+* Twitter: <https://twitter.com/danielmarbach>

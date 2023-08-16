@@ -19,5 +19,5 @@ seealso:
 video: 'https://youtu.be/E7Q0U_b5nz4'
 ---
 Press **⌘1** (macOS), or **Alt+1** (Windows/Linux), to open the Project Window and then use **⌘N** (macOS), or **Alt+Insert** (Windows/Linux), to generate a new file.  
- 
+
 These same shortcuts will help you in many places where you need to generate code, such as constructors, getters and setters, toString methods and adding arguments to methods when you need to refactor.

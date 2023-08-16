@@ -302,4 +302,3 @@ There's a lot more that can be done, that should be done:
 - Meta tags and canonical links
 - Sidebars
 - Everything in Sphinx's `basic/layout.html`
-

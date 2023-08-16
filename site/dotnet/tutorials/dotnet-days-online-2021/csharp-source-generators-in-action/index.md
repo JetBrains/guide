@@ -34,4 +34,4 @@ As metaprogramming isn't new to C#, this talk will also cover how a source gener
 
 Andrey started his programming career with SCADA systems and industry equipment. He joined JetBrains 5 years ago, and works on the C# language support in ReSharper/Rider on everything from parser implementation to static analysis and refactorings. He is interested in static program analysis, type theory, and metaprogramming.
 
-* Twitter: https://twitter.com/a_tessenr
+* Twitter: <https://twitter.com/a_tessenr>

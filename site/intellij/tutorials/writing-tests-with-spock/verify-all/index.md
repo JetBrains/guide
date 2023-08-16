@@ -33,15 +33,15 @@ def "should demonstrate 'verifyAll'"() {
 
 We can replace our `with()` call with [verifyAll()](https://spockframework.org/spock/docs/2.0/all_in_one.html#_using_verifyall_to_assert_multiple_expectations_together) instead. Run this (the code above should fail) and see what happens - not only does the number of sides assertion fail, but the check on the renderer also fails.
 
-``` 
+```
 org.opentest4j.MultipleFailuresError: Multiple Failures (2 failures)
-	org.spockframework.runtime.SpockComparisonFailure: Condition not satisfied:
+ org.spockframework.runtime.SpockComparisonFailure: Condition not satisfied:
 
 numberOfSides == 5
 |             |
 4             false
 
-	org.spockframework.runtime.SpockComparisonFailure: Condition not satisfied:
+ org.spockframework.runtime.SpockComparisonFailure: Condition not satisfied:
 
 renderer == null
 |        |

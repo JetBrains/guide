@@ -27,4 +27,3 @@ def "should demonstrate given-when-then"() {
 The test should run successfully like before. We have the flexibility we need to label blocks of code in whichever way we think is most readable, so the tests are documenting the expected behaviour of the code.
 
 Now we've covered some tips on how to use labels to clearly define what's happening in the test. Next, we'll look at how the Spock IntelliJ IDEA Plugin can help.
-

@@ -12,7 +12,7 @@ video: 'https://youtu.be/lidTnXTFssM'
 ---
 
 Each test recreates `Player` and `Guardian` instances, which is repetitive and distracts from the test's purpose.
-[pytest fixtures](https://docs.pytest.org/en/latest/fixture.html) give a rich infrastructure for your test data. 
+[pytest fixtures](https://docs.pytest.org/en/latest/fixture.html) give a rich infrastructure for your test data.
 
 In this tutorial step we convert our tests to use fixtures, which we then share between files using ``conftest.py``.
 
@@ -121,7 +121,7 @@ We saw autocomplete.
 This is even more important with all the places that pytest can look for fixtures.
 
 Navigation is a big win, for the same reason.
-`Cmd-Click` (macOS) on a fixture name and PyCharm jumps to the fixture definition. 
+`Cmd-Click` (macOS) on a fixture name and PyCharm jumps to the fixture definition.
 Same applies for hover which reveals type information.
 
 ![Hover For Type Information](./hover.png)

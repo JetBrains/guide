@@ -11,7 +11,7 @@ video: 'https://youtu.be/kT4JYQi9w4w'
 
 
 
-## ANSI Escape Codes 
+## ANSI Escape Codes
 
 - What are ANSI Escape Codes?
 - How can you use them?

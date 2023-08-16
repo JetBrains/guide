@@ -13,6 +13,6 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: 'https://youtu.be/_vPIrbFm7Hs'
 ---
-*PyCharm Professional comes with all database features from JetBrains DataGrip.*    
+*PyCharm Professional comes with all database features from JetBrains DataGrip.*
 
 DataGrip helps to seamlessly connect/manage/create with different databases and helps boost developer productivity.

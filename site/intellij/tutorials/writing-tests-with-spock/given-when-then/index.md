@@ -73,5 +73,3 @@ Run this test to see if it passes. You should get an output like:
 Using these labels might look like it's doubling the number of lines of code for a test method, but remember that tests often have many more lines of code in them, and grouping them in this way helps describe what's happening.
 
 In this step, we covered some tips on writing tests using Spock. Now you know how to use labels to define the blocks of your tests
-
-

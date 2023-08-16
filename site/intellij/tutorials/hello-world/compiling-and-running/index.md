@@ -10,15 +10,15 @@ video: 'https://youtu.be/H_XxH66lm3U?start=371'
 ---
 
 
-Now you have written your 'HelloWorld.java' class, you need to compile and run it. IntelliJ IDEA can do this for you. There are lots of ways you can run an application but to start with, you can click the green arrows to the left of the method. These are known as [gutter icons](https://www.jetbrains.com/help/idea/settings-gutter-icons.html). 
+Now you have written your 'HelloWorld.java' class, you need to compile and run it. IntelliJ IDEA can do this for you. There are lots of ways you can run an application but to start with, you can click the green arrows to the left of the method. These are known as [gutter icons](https://www.jetbrains.com/help/idea/settings-gutter-icons.html).
 
-You'll notice that there are two green arrows. The top one is adjacent to the class, and it will run the class. Our class only contains Java's `main` method so that is all that it will run. However, if you're working with classes with multiple tests in for example, using this green run arrow will run all the tests in the class. 
+You'll notice that there are two green arrows. The top one is adjacent to the class, and it will run the class. Our class only contains Java's `main` method so that is all that it will run. However, if you're working with classes with multiple tests in for example, using this green run arrow will run all the tests in the class.
 
 The second green arrow is adjacent to Java's main method. Clicking this will run Java's main method. For the purpose of our application, both the green arrows do the same thing. When you click on the green arrow you'll get different options including debug, but we will just run it for now so select that option.
 
 ![Running the class from the gutter icons](running-class-arrows.png)
 
-IntelliJ IDEA will now compile the file into a class file and then run it. The output of the run is shown in the Run tool window at the bottom of your screen. 
+IntelliJ IDEA will now compile the file into a class file and then run it. The output of the run is shown in the Run tool window at the bottom of your screen.
 
 ### The Run Window
 
@@ -30,7 +30,7 @@ The first line shows the command that was used to run the program. We don't usua
 
 The second line in this window is the output of your program - the "Hello World" statement that you told it to print.
 
-The last line, which says `Process finished with exit code 0` shows the program ran without an error. 
+The last line, which says `Process finished with exit code 0` shows the program ran without an error.
 
 ### What IntelliJ IDEA Created
 
@@ -44,7 +44,6 @@ IntelliJ IDEA also created a [run configuration](https://www.jetbrains.com/help/
 
 ![Run configuration in the navigation bar](run-config-nav-bar.png)
 
-If you want to go back to the Run Window, you can use **Cmd**+**4** on macOS, or **Alt**+**4**  on Windows to open it and the same shortcut again to close it and return the focus back on the editor. 
+If you want to go back to the Run Window, you can use **Cmd**+**4** on macOS, or **Alt**+**4**  on Windows to open it and the same shortcut again to close it and return the focus back on the editor.
 
 ---
-

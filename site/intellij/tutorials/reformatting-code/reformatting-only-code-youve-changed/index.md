@@ -13,7 +13,7 @@ As we talked about in the previous step, you can use the keyboard shortcut **⌘
 
 ![Reformat Code from Find Actions](reformat-code-find-actions.png)
 
-Press **Enter** on the **Reformat Code** option to apply the current reformatting settings to your class. 
+Press **Enter** on the **Reformat Code** option to apply the current reformatting settings to your class.
 
 However, often you don’t want to reformat the whole file that you’re working on, particularly if this is a code base with inconsistent formatting. You don't want to commit a lot of white space changes as well as the feature or bug fix that you've done.  If you are working on a file with some inconsistently formatted code, but you’ve only changed a small part of it, using **Reformat Code** might change parts of the file you haven't touched. In this instance, you would ideally like to highlight the code you’ve changed and [just reformat that](../reformatting-a-selection-or-class), but that won’t work when your changes are scattered throughout the file.
 

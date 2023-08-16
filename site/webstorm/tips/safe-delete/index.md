@@ -15,6 +15,6 @@ animatedGif:
   width: 600
   height: 300
 ---
-When deleting a file, use the *Safe Delete* refactoring or tick the *Safe delete* 
-option in the Delete dialog. This way, WebStorm will double-check that the 
+When deleting a file, use the *Safe Delete* refactoring or tick the *Safe delete*
+option in the Delete dialog. This way, WebStorm will double-check that the
 selected file isn't imported anywhere in your project.

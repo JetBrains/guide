@@ -13,4 +13,4 @@ seealso:
     href: 'https://www.jetbrains.com/help/idea/settings-editor-general.html'
 video: 'https://youtu.be/8veVJRyjcK8'
 ---
-You can enable soft wrap for the editor with **⇧⇧** (macOS), or **Shift+Shift* (Windows/Linux), for the Search Everywhere dialogue, and then typing in _soft wrap_. You can also go to Preferences/Settings > Editor > General to enable Soft Wraps for more file types by default.
+You can enable soft wrap for the editor with **⇧⇧** (macOS), or **Shift+Shift* (Windows/Linux), for the Search Everywhere dialogue, and then typing in *soft wrap*. You can also go to Preferences/Settings > Editor > General to enable Soft Wraps for more file types by default.

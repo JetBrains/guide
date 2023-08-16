@@ -24,5 +24,5 @@ Invoking `Unselect Occurrence` removes the previously added selection; `Select A
 But remember: always give refactorings a try first! 🔧🤓
 
 ### See Also
-- https://www.jetbrains.com/help/rider/Multicursor.html
-- https://www.jetbrains.com/help/rider/Toggling_Case.html
+- <https://www.jetbrains.com/help/rider/Multicursor.html>
+- <https://www.jetbrains.com/help/rider/Toggling_Case.html>

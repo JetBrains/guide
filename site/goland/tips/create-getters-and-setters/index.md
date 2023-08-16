@@ -16,8 +16,8 @@ Add all the boilerplate code you need using the dedicated
 *Generate getter and setter* action.
 
 **How to use:**
-Select a struct type, then press _Alt + Enter on Windows/Linux_ or
-_⌥ + ⏎ on macOS_ and choose *Generate getter and setter* from the
+Select a struct type, then press *Alt + Enter on Windows/Linux* or
+*⌥ + ⏎ on macOS* and choose *Generate getter and setter* from the
 list of available actions.
 
 Choose which fields should have these methods generated, then press
@@ -26,7 +26,7 @@ Choose which fields should have these methods generated, then press
 Choose the receiver name and receiver type then continue working on
 your code as usual.
 
-**Pro tip:** You can choose either all fields, or select the 
+**Pro tip:** You can choose either all fields, or select the
 individual fields that need to have these methods generated.
 
 <span class="tag is-rounded">New in 2021.1</span>

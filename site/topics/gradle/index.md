@@ -6,7 +6,8 @@ subtitle: >-
 logo: gradle-elephant.svg
 website: 'https://gradle.org/'
 topicType: technology
-obsoletes: ["/intellij/topics/gradle/"]
+obsoletes:
+  - /intellij/topics/gradle/
 ---
 
 IntelliJ IDEA [integrates seamlessly with Gradle](https://www.jetbrains.com/help/idea/gradle.html), applying project settings from the build file and delegating build and test tasks to Gradle where appropriate.

@@ -32,7 +32,7 @@ As in previous steps, start with the following setup:
 
 ## Code
 
-The finished code for this tutorial step is 
+The finished code for this tutorial step is
 [in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/rich_events_and_testing).
 
 ## First Failing Test
@@ -63,7 +63,7 @@ Jest uses the [browser-like JSDOM environment](https://jestjs.io/docs/en/configu
 This new test fails: the number didn't increment. Which is good!
 
 What's really good: that was dead simple.
-In one line we automated doing a click and checking the result. 
+In one line we automated doing a click and checking the result.
 Much more pleasurable than switching to the browser and clicking everything in your app, on every change, to see if your change works without breaking the universe.
 
 ## `onClick` Handler
@@ -111,7 +111,7 @@ render() {
 
 The above was a bit of a lie: this isn't strictly a class *method*.
 It is a property that is an arrow function.
-This solves the issue of binding, allowing `this` to be bound to the component instance, not the event. 
+This solves the issue of binding, allowing `this` to be bound to the component instance, not the event.
 
 The `incrementCounter` arrow function actually gets an *event* passed in, which we aren't using.
 Let's add it in:
@@ -150,7 +150,7 @@ incrementCounter = (event: React.MouseEvent<HTMLElement>) => {
 
 Ugh, that's a lot of keystrokes.
 Is it worth it?
-Let's show why. 
+Let's show why.
 First, in`incrementCounter`, let's determine the value to increment by, first as a mistake:
 
 ```typescript {2,3}
@@ -176,7 +176,7 @@ Error:(28, 31) TS2365: Operator '+' cannot be applied to types
 'number' and 'boolean | 1'.
 ```
 
-We see that we have the order wrong on the ternary...a frequent, maddening, easy-to-miss error: 
+We see that we have the order wrong on the ternary...a frequent, maddening, easy-to-miss error:
 Here's the correct version:
 
 ```typescript
@@ -194,7 +194,7 @@ We need to simulate "modifiers" to an event: a shift pressed during a mouse even
 For simulating more complex events, we need to install [user-event](https://github.com/testing-library/user-event):
 
 ```bash
-$ npm install @testing-library/user-event @testing-library/dom --save-dev
+npm install @testing-library/user-event @testing-library/dom --save-dev
 ```
 
 *Note: After installing this, you might get a TypeScript error in `pretty-format/build/index.d.ts`.

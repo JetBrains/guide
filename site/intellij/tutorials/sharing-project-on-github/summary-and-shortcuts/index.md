@@ -11,7 +11,7 @@ thumbnail: ./thumbnail.png
 In this blog, we learned two ways to create a local Git repository for an existing IntelliJ IDEA project and then share the Project To GitHub.
 
 ### Shortcuts Used
-Here are some of the shortcuts that we used and some additional ones that you can try out. 
+Here are some of the shortcuts that we used and some additional ones that you can try out.
 
 | Name                                                                                             | macOS Shortcut | Windows Shortcut |
 |--------------------------------------------------------------------------------------------------|----------------|------------------|

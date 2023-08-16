@@ -94,8 +94,8 @@ Great! Now, let's run this application inside a container. We'll go through two 
 
 Having stepped through the `Dockerfile`, a common question newcomers to Docker might ask is:
 
-> Why is the `Dockerfile` definition running `dotnet restore` with just the project file, and only later is it running `dotnet build`? 
- 
+> Why is the `Dockerfile` definition running `dotnet restore` with just the project file, and only later is it running `dotnet build`?
+
 The reason lies in how Docker stores images. Each step in the `Dockerfile` is a separate read-only layer, and the Docker engine will only replace layers when there are changes. Updating code typically happens more than adding or updating package references, and separating the two ensures that a full package restore is only executed when that layer changes. The management of layers allows Docker to reuse and speed up image builds.
 
 ### Docker CLI
@@ -167,7 +167,6 @@ Let's set some command-line flags we had during our CLI experience. We need to c
 ![Clicking the Docker integration icons](./2-clicking-the-docker-chevrons.png)
 
 From the `Edit Run Configuration` dialog, we'll set the `Image tag` to `hello-docker` and add the build option of `--rm` for this straightforward example. If we don't see the build options, we can click the `Modify Options` and enable the text box.
-
 
 ![Setting the Docker image tag](./3-setting-the-image-tag.png)
 

@@ -28,7 +28,7 @@ When starting Visual Studio, developers will notice the **Server Explorer** tab.
 
 ![Visual Studio Server Explorer Database Connections](./1-visual-studio-server-explorer-connection.png)
 
-Within Rider, developers will find a **Database** tool window. 
+Within Rider, developers will find a **Database** tool window.
 
 ![JetBrains Rider database tool window](./2-jetbrains-rider-database-tool-window.png)
 

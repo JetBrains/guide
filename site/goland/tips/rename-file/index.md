@@ -21,7 +21,7 @@ the test and example files too? Let the IDE handle all this work.
 
 **How to use:**
 
-Invoke the **Rename Refactoring** via _Shift + F6 on Windows/Linux_ or _⇧ + F6 on macOS_,
+Invoke the **Rename Refactoring** via *Shift + F6 on Windows/Linux* or *⇧ + F6 on macOS*,
 and do the work, safely and quickly.
 
 <span class="tag is-rounded">New in 2017.3</span>

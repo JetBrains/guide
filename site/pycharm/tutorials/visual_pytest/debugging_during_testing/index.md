@@ -14,7 +14,7 @@ thumbnail: ./thumbnail.png
 video: 'https://youtu.be/feBYCeOk4As'
 ---
 
-Primary guardian, great! 
+Primary guardian, great!
 But what happens if there are no guardians yet?
 In this step we tackle that problem by combining two great features: visual *testing* with visual *debugging*.
 
@@ -56,7 +56,7 @@ Not smart.
 
 You could learn how to generate console output in `pytest`, but that would be the same issue -- writing debugging statements into your code which you might accidentally check in.
 
-The debugger was meant for this. 
+The debugger was meant for this.
 Fortunately PyCharm has a great "visual" debugger, tightly integrated with "visual testing."
 Let's use that.
 
@@ -78,7 +78,7 @@ Our `Variables` pane shows that `player_one` exists in the scope and we can take
 
 ![Expanded Variable in Debugger](./no_guardians.png)
 
-Aha, that's the problem! 
+Aha, that's the problem!
 But let's say we *still* couldn't spot it. We want to poke around interactively.
 
 Highlight `player_one.primary_guardian` in that line of code -- the one triggering the error -- then right click and choose `Evaluate Expression`.
@@ -97,4 +97,3 @@ Finish up by removing the `assert player_one.primary_guardian` line and clearing
 Close the debugger tool window by clicking on its `(x)`.
 
 The debugger is a fantastic tool when doing TDD -- not just when you have a problem, but whenever you want to explore.
-

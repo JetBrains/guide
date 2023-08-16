@@ -21,4 +21,4 @@ Game developers should be good at crafting the UI, shouldn’t they? This talk w
 
 Ben is a Lead Programmer at Brace Yourself Games. He created the UI for the city builder Industries of Titan and the action RPG Vampyr and likes to share what he learns on his website benui.ca.
 
-* Twitter: https://twitter.com/_benui
+* Twitter: <https://twitter.com/_benui>

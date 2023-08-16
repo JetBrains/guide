@@ -34,10 +34,10 @@ tutorialItems:
 
 [FastAPI](https://fastapi.tiangolo.com/) is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
 
-This tutorial will be entirely focused on [FastAPI](https://fastapi.tiangolo.com/) along-with playing with titans 
+This tutorial will be entirely focused on [FastAPI](https://fastapi.tiangolo.com/) along-with playing with titans
 like [Kubernetes](https://kubernetes.io/) & [Amazon Web Services](https://aws.amazon.com/).
 
-There are a lot of features we are going to cover: 
+There are a lot of features we are going to cover:
 
 * Working with SQLAlchemy & Alembic
 * Implementing APIs along-with securing with JSON Web Tokens (JWT)
@@ -46,6 +46,4 @@ There are a lot of features we are going to cover:
 * Helm Charts
 * Deploying Apps using Kubernetes & AWS EKS (Elastic Kubernetes Service)
 
-
 Note: *We'll be using PyCharm Professional Edition for all the steps in this tutorial.*
-

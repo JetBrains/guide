@@ -100,14 +100,14 @@ rinohtype
 Then, install the requirements:
 
 ```bash
-$ .venv/bin/pip install -r requirements.txt
+.venv/bin/pip install -r requirements.txt
 ```
 
 That's it...we can now use `rinoh` as a Sphinx build target:
 
 ```bash
-$ make rinoh
-$ open _build/rinoh/myamazingsite.pdf
+make rinoh
+open _build/rinoh/myamazingsite.pdf
 ```
 
 As you can see, the PDF has text, images, links, and a table of contents:

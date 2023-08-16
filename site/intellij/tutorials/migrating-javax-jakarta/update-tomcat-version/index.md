@@ -18,7 +18,7 @@ EXPOSE 8080
 CMD ["catalina.sh", "run"]
 ```
 
-Now your `Dockerfile` will look like this: 
+Now your `Dockerfile` will look like this:
 
 ```dockerfile
 FROM tomcat:10-jdk17

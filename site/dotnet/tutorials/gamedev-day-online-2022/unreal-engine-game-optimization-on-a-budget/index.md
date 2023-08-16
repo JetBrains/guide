@@ -22,4 +22,4 @@ Unreal Engine is built to work for a wide range of projects and platforms out of
 
 Tom Looman is a game developer and educator with over 10 years of Unreal Engine experience. In addition to working on AAA and indie games at studios including Epic Games, he writes tutorials and courses on Unreal Engine Game Development.
 
-* Twitter: https://twitter.com/t_looman
+* Twitter: <https://twitter.com/t_looman>

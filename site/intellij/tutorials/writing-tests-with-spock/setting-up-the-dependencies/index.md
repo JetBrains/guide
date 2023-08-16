@@ -19,8 +19,8 @@ IntelliJ IDEA adds JUnit 5 as the default testing framework, which is a logical 
 
 We can search for "spock" in the artifact search, and add the [latest version of the spock-core library](https://github.com/spockframework/spock/releases). This is currently Spock 2.0:
 
- - `org.spockframework:spock-core:2.0-groovy-3.0` if using Groovy 3
- - `org.spockframework:spock-core:2.0-groovy-2.5` if using Groovy 2
+- `org.spockframework:spock-core:2.0-groovy-3.0` if using Groovy 3
+- `org.spockframework:spock-core:2.0-groovy-2.5` if using Groovy 2
 
 This is a test dependency so make sure the declaration is `testImplementation`.
 
@@ -54,4 +54,3 @@ From the Project window, select the `test` folder and press  **⌘N** (macOS) or
 ![](./04-groovy-dir.png)
 
 Now you know how to set up your project to use Spock. Next, we're going to create our first Spock test.
-

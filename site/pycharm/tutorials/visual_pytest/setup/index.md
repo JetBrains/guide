@@ -18,7 +18,7 @@ In this tutorial step, let's make both, with a virtual environment, and set the 
 
 # New Project
 
-We'll let the IDE guide us through the process. 
+We'll let the IDE guide us through the process.
 First, we use `File -> New Project` to make a new project, in a directory:
 
 ![New Project Dialog](./new_project_dialog.png)
@@ -53,8 +53,9 @@ Our `setup.py` has the `packages` and `packages_dir` keys added in support of pu
 Now go to PyCharm's Terminal tool and type in the following:
 
 ```shell script
-$ pip install -e .[tests]
+pip install -e .[tests]
 ```
+
 This has two effects:
 
 - It makes this project an "editable install" by creating a directory named `src/laxleague.egg-info`
@@ -66,7 +67,7 @@ Python has a sordid history on this, though it is getting better.
 
 # Give Me Some Source
 
-But we don't have any source code yet. 
+But we don't have any source code yet.
 Let's put a file at `src/laxleague/player.py` containing an empty `Player` class:
 
 ```python

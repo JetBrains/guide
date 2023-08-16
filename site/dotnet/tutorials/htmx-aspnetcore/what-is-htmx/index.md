@@ -38,7 +38,6 @@ If this sounds appealing to you, please continue, I promise you won't be disappo
 
 I've provided [a sample project available on GitHub](https://github.com/khalidabuhakmeh/htmx-aspnetcore) for folks who want to follow along. We will use [.NET 6](https://dot.net), but all techniques and approaches should work on prior versions. The samples use Razor pages, but the server-side technology is swappable for any tech you prefer. We are also using Bootstrap 5, but HTMX is design library agnostic; I just wanted to make the samples look nice for you. Finally, we'll be using [HTMX.NET](https://nuget.org/packages/htmx), an optional library I developed to enhance the ASP.NET Core and HTMX experience.
 
-This video series will show techniques ASP.NET Core developers can utilize to enhance existing web applications. Like most technologies, there is always more than one solution. As you go through this video series and learn more, think about how you may solve previous examples in new ways. 
+This video series will show techniques ASP.NET Core developers can utilize to enhance existing web applications. Like most technologies, there is always more than one solution. As you go through this video series and learn more, think about how you may solve previous examples in new ways.
 
 Let's look at our first example, the obligatory "Hello World"!
-

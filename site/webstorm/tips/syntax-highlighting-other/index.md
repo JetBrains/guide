@@ -12,6 +12,6 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
-Need to occasionally look through some PHP or Python files in WebStorm? 
-Starting from v2019.2, syntax highlighting is available for these and many 
+Need to occasionally look through some PHP or Python files in WebStorm?
+Starting from v2019.2, syntax highlighting is available for these and many
 other languages out of the box.

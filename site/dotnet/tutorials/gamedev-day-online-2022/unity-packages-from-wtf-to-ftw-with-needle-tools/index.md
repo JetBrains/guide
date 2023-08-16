@@ -22,4 +22,4 @@ Love them or hate them, Unity packages are quite a topic. Used correctly, they c
 
 Felix has been creating award-winning VR and AR experiences for the last 13 years, many of which have been made with Unity. Being in that weird spot between designer and developer, he has a strong focus on editor tools, workflows, graphics development, and shaders. Co-Founder @needletools. Co-Founder @prefrontlcortex. Tech @amusevision.
 
-* Twitter: https://twitter.com/hybridherbst
+* Twitter: <https://twitter.com/hybridherbst>

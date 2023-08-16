@@ -16,4 +16,3 @@ We need to go to the [plugin settings](https://www.jetbrains.com/help/idea/manag
 Using this plugin is entirely optional, IntelliJ IDEA provides all the support you need to write and run Spock tests.
 
 Now you know how to install the Spock plugin to get extra information on the tests. Next, we'll see how Spock tests can be used to expect specific Exceptions in our application code.
-

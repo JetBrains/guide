@@ -29,8 +29,8 @@ Lorraine has presented on such varied topics as Domain-Driven-Design, compassion
 
 Lorraine is driven to find better ways of producing code, and then teaching the next generation of developers all our hard-won lessons!
 
-* Twitter: https://twitter.com/lor_krs
-* Blog: https://beingrealblog.wordpress.com/"
+* Twitter: <https://twitter.com/lor_krs>
+* Blog: <https://beingrealblog.wordpress.com/>"
 
 **Alain King** Problem solver at KRS
 
@@ -38,4 +38,4 @@ Alain is a Director and technical lead at KRS, with a love of training developer
 
 Alain has over 15 years of development experience to share, and if you're not careful, he will also talk about Lego!
 
-* Twitter: https://twitter.com/alainkingza
+* Twitter: <https://twitter.com/alainkingza>

@@ -29,8 +29,8 @@ Let's start from...well, the beginning: an empty directory, into which we will s
 First, let's make a new directory and change into it:
 
 ```bash
-$ mkdir schlockchain
-$ cd schlockchain
+mkdir schlockchain
+cd schlockchain
 ```
 
 *Note: We're using macOS/Linux/WSL command shell syntax in this tutorial.*
@@ -41,8 +41,8 @@ Let's make a new virtual environment, stored inside our project in the `.venv` d
 We'll then "activate" it, which changes our command path to first look in this virtual environment's `bin`:
 
 ```bash
-$ python3 -m venv .venv
-$ source .venv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
 `pip` is Python's package installer.
@@ -50,7 +50,7 @@ It's always good to update your `pip`.
 Note that in the following, thanks to the `source` line above, our shell is using `python3` from the virtual environment directory:
 
 ```bash
-$ pip install --upgrade pip
+pip install --upgrade pip
 ```
 
 Our new, blank Python project is now ready for a Sphinx installation.
@@ -68,7 +68,7 @@ sphinx
 We can now, using our activated shell, use `pip` to install our dependencies:
 
 ```bash
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Sphinx has a number of dependencies itself, so this might take a while to get all the packages.
@@ -134,10 +134,11 @@ Here's how our directory looks after running this:
 
 ```shell
 (.venv) schlockchain pauleveritt$ ls
-Makefile		_templates		make.bat
-_build			conf.py			requirements.txt
-_static			index.rst
+Makefile  _templates  make.bat
+_build   conf.py   requirements.txt
+_static   index.rst
 ```
+
 About some of these directory items:
 
 - `conf.py` is the [Sphinx configuration file](https://www.sphinx-doc.org/en/master/usage/configuration.html)
@@ -157,7 +158,7 @@ We are ready to build our site.
 On macOS or Linux, run the following to generate the site using the `html` "builder":
 
 ```bash
-$ make html
+make html
 ```
 
 (As `sphinx-quickstart` noted at the end, Sphinx supports different builders for different kinds of output.)
@@ -174,16 +175,17 @@ Before running `make html`, let's introduce the command `make clean` to remove t
 We'll then run `make html`:
 
 ```bash
-$ make clean
-$ make html
+make clean
+make html
 ```
+
 This time, no complaints about the `.venv` virtual environment directory, as Sphinx now ignores it.
 
 Just for fun, let's run the build again:
 
 ```bash
-$ make clean
-$ make html
+make clean
+make html
 ```
 
 Hmm, interesting, the second run's output says:
@@ -211,7 +213,7 @@ livereload
 Then run `pip` which comes from our virtual environment because we did the `source` above:
 
 ```bash
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 With the package now installed, create a file such as `run_livereload.py`, in the same directory as `conf.py`:
@@ -283,7 +285,7 @@ myst-parser
 With that in place, install it:
 
 ```bash
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Since `MyST` is a Sphinx extension, we need to "mystify" (enable) it in `conf.py`, our Sphinx configuration file.

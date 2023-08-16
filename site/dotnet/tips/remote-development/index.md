@@ -11,7 +11,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
-When starting JetBrains Rider, notice the **Remote Development** section on the right-hand side of the welcome screen, with two options: SSH and JetBrains Space. 
+When starting JetBrains Rider, notice the **Remote Development** section on the right-hand side of the welcome screen, with two options: SSH and JetBrains Space.
 If needed, you can install providers from partners like GitHub, GitPod, Google, Amazon, and Windows Subsystem for Linux (WSL).
 
 After authenticating to your remote server, you'll have the option to choose the JetBrains backend along with the solution file you'd like to open.

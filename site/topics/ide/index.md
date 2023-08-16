@@ -3,7 +3,9 @@ title: IDE
 subtitle: Become more productive with general IDE tips and features.
 accent: primary
 icon: far fa-lightbulb
-obsoletes: [ "/dotnet/topics/ide/", "/pycharm/topics/ide/" ]
+obsoletes:
+  - /dotnet/topics/ide/
+  - /pycharm/topics/ide/
 ---
 
 Our IDEs help you write better code, faster. In this topic, we will look at general tips and features, and learn more

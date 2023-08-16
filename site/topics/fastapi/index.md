@@ -4,7 +4,8 @@ subtitle: 'modern, fast (high-performance), web framework for building APIs'
 logo: ./fastapi.svg
 website: 'https://fastapi.tiangolo.com'
 topicType: technology
-obsoletes: ["/pycharm/topics/fastapi/"]
+obsoletes:
+  - /pycharm/topics/fastapi/
 ---
 
 FastAPI is a modern, fast (high-performance), web framework

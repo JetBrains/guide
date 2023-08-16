@@ -15,7 +15,7 @@ cardThumbnail: ./card.png
 video: 'https://youtu.be/21-VMTmiV8E'
 ---
 
-In [Class Components With Props](../class_props/) we made a `Counter` child component using a class, with one property passed in. 
+In [Class Components With Props](../class_props/) we made a `Counter` child component using a class, with one property passed in.
 We traditionally use classes for child components when they have state or need to use one of React's lifecycle methods (though that is changing with hooks.)
 
 That's the topic of this step.
@@ -26,12 +26,12 @@ We will stick to introducing component state and modeling it in TypeScript.
 
 ## Code
 
-The finished code for this tutorial step is 
+The finished code for this tutorial step is
 [in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/class_state).
 
 ## Always Start With a Test
 
-It's becoming our pattern: 
+It's becoming our pattern:
 
 - We write a *failing* test first
 
@@ -39,7 +39,7 @@ It's becoming our pattern:
 
 - Then wire it into the *parent* component
 
-To begin, have `Counter.tsx` in the left-hand tab and `Counter.test.tsx` in the right-hand tab. 
+To begin, have `Counter.tsx` in the left-hand tab and `Counter.test.tsx` in the right-hand tab.
 Also, stop the `start` process if it is running and make sure the `All Tests` Jest run config is running.
 
 Here's a `Counter.test.tsx` test to show that the counter starts at zero, which *fails*, because we have a static `<span>1</span>`:
@@ -52,7 +52,7 @@ test("should start at zero", () => {
 });
 ```
 
-Over in `Counter.tsx`, let's first write the type definition for our *state*. 
+Over in `Counter.tsx`, let's first write the type definition for our *state*.
 What does the local state look like?
 Pretty easy:
 
@@ -90,7 +90,7 @@ Two things changed in this:
 
 - We defined the initial class state as a "class variable"
 
-Note that, when tying in the JSX/TSX, we got autocompletion not only on `.state`, but also `.count`. 
+Note that, when tying in the JSX/TSX, we got autocompletion not only on `.state`, but also `.count`.
 That's part of the value of type definitions for state.
 
 ## Red-Squigglies For State Assignment
@@ -110,6 +110,7 @@ First, we'll move the initial state out of the class, into a module-scope variab
 const initialState = { count: 0 };
 export type CounterState = Readonly<typeof initialState>;
 ```
+
 The TypeScript [`readonly` modifier](https://www.typescriptlang.org/docs/handbook/classes.html#readonly-modifier) is like `public`, `private`, and `protected`.
 It tells the *compiler* (but not the runtime) to watch for code that tries to assign to the object.
 
@@ -155,7 +156,7 @@ test("should start at another value", () => {
 });
 ```
 
-As before, our test fails, but before that, our IDE warns us that we have violated the `<Counter />` contract. 
+As before, our test fails, but before that, our IDE warns us that we have violated the `<Counter />` contract.
 In fact, we probably figured that out as we typed -- no autocompletion on a `start` prop for the component.
 
 ![No Start Prop Allowed](./screenshots/red_squiggly_start.png)

@@ -17,10 +17,10 @@ video: >-
 *Language-aware line adding, no muss no fuss.*
 
 **How to use:**
-Press _Shift + Enter on Windows/Linux_ or _⇧ + Enter on macOS_,
-and you can add a line and place the cursor on it. 
+Press *Shift + Enter on Windows/Linux* or *⇧ + Enter on macOS*,
+and you can add a line and place the cursor on it.
 
-Press _Ctrl + Alt + Enter on Windows/Linux_ or _⌘ + ⌥ + Enter on macOS_
+Press *Ctrl + Alt + Enter on Windows/Linux* or *⌘ + ⌥ + Enter on macOS*
 to add a line above.
 
 <span class="tag is-rounded">New in 2017.3</span>

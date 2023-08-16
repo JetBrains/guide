@@ -20,5 +20,5 @@ animatedGif:
   width: 600
   height: 300
 ---
-Press *Cmd/Ctrl+Alt+J* and select *Emmet* to surround a block of code with an Emmet template. 
+Press *Cmd/Ctrl+Alt+J* and select *Emmet* to surround a block of code with an Emmet template.
 This also allows you to wrap individual lines if you’re using * in the abbreviation.

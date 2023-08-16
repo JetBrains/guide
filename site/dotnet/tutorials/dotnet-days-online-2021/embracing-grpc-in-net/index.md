@@ -29,7 +29,7 @@ In this session, we will look at how to use gRPC and its 4 models and what are t
 Microsoft MVP for Developer Technologies, Software Architect, and Microsoft Certified Trainer, always looking for the latest trends and best practices in architecture, .NET, and the world around it.
 Irina has more than 1000 hours of experience delivering training, workshops, and presentations, and is passionate about .NET and the world around it.
 
-She is the founder of DotNet Iasi User Group, where she tries to gather people that are willing to share their knowledge with others, and from time to time publishes articles on her blog: http://irina.codes
+She is the founder of DotNet Iasi User Group, where she tries to gather people that are willing to share their knowledge with others, and from time to time publishes articles on her blog: <http://irina.codes>
 
-* Twitter: https://twitter.com/irina_scurtu
-* Blog: https://irina.codes
+* Twitter: <https://twitter.com/irina_scurtu>
+* Blog: <https://irina.codes>

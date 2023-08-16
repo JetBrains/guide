@@ -40,5 +40,3 @@ Here are the IntelliJ IDEA shortcuts that we used.
 - [(docs) JetBrains - View dependencies as a diagram](https://www.jetbrains.com/help/idea/work-with-gradle-dependency-diagram.html#gradle_diagram)
 - [(code) Spring PetClinic](https://github.com/spring-projects/spring-petclinic)
 - [(book) Getting to Know IntelliJ IDEA - Trisha Gee & Helen Scott](https://leanpub.com/gettingtoknowIntelliJIDEA)
-
-

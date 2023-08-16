@@ -10,4 +10,3 @@ pagination:
   resourceType: tutorial
   channel: /pycharm/
 ---
-

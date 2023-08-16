@@ -51,7 +51,7 @@ to `jakarta`:
 </properties>
 ```
 
-Now let's rebuild our application again with **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux) and then run it with **⌃R** (macOS), **Shift+F10** (Windows/Linux). 
+Now let's rebuild our application again with **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux) and then run it with **⌃R** (macOS), **Shift+F10** (Windows/Linux).
 
 Your application should still be available at [localhost:8080/MyWebApp](localhost:8080/MyWebApp).
 

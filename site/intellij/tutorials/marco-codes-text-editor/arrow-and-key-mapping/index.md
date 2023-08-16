@@ -14,4 +14,3 @@ video: 'https://www.youtube.com/watch?v=HwPjeb2xnEo&start=58s'
 * What actually happens when you press Arrow Up/Down/Left/Right
 * How to handle complex keypress sequences in the application
 * How to map three or four key presses to one
-

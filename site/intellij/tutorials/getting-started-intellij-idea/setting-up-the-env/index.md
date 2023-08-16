@@ -16,7 +16,6 @@ IntelliJ IDEA is your IDE and, thankfully, we're all different! You probably wan
 
 ## Minimising the UI
 
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xfiE76fpgAo" >
 </iframe>
 
@@ -46,7 +45,7 @@ Shortcuts and abbreviations are a very personal choice that is often influenced 
 
 IntelliJ IDEA has a very rich set of keyboard shortcuts that you can take advantage of, but if you want to set your own up you can do that in the Preferences/Settings dialog (**⌘,** | **Ctrl+Alt+S**) and then search for "keymap". Find the action you want to assign a shortcut to from the list (again you can type directly into the list to filter it), then right-click on the shortcut and select **Add Keyboard Shortcut**. Now type in the shortcut you want. IntelliJ IDEA will notify you if it clashes with an existing keyboard shortcut. Once you press **OK** and return to your code, you can invoke your new keyboard shortcut.
 
-The steps for adding an abbreviation are somewhat similar to above, just select **Add Abbreviation** instead. Abbreviations are helpful when you want to jump to an action quickly without a shortcut, such as setting _mvn_ for the Maven tool window so it always appears first in the Search Everywhere dialog when you type in _mvn_. 
+The steps for adding an abbreviation are somewhat similar to above, just select **Add Abbreviation** instead. Abbreviations are helpful when you want to jump to an action quickly without a shortcut, such as setting *mvn* for the Maven tool window so it always appears first in the Search Everywhere dialog when you type in *mvn*.
 
 ## Viewing Notifications
 
@@ -54,4 +53,3 @@ The steps for adding an abbreviation are somewhat similar to above, just select 
 </iframe>
 
 IntelliJ IDEA is very communicative so it's worth training yourself to regularly check the Status Bar on the bottom of your IDE. This is where IntelliJ IDEA will notify you of information relating to your project including warnings, errors and when the IDE needs some action from you. You might also get a pop-up notification in some instances. You can access your Notifications Tool Window at any time by clicking on the little bell icon on the bottom-right of your screen in the new user interface or by using Recent Files (**⌘E** | **Ctrl+E**) and then typing in "notifications".
-

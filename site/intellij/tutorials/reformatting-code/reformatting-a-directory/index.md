@@ -13,7 +13,7 @@ Alternatively, you can [reformat a specific directory](https://www.jetbrains.com
 
 ![Options to reformat a directory](reformat-directory.png)
 
-Alternatively, you can select the directory and use **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) to display the same dialog. 
+Alternatively, you can select the directory and use **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) to display the same dialog.
 
 ## EditorConfig
 IntelliJ IDEA also supports [EditorConfig files](https://editorconfig.org/). In the next step of this tutorial we will take a look at why they're useful and how to use them.

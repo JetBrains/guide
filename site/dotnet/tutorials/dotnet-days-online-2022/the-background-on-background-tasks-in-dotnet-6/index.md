@@ -23,5 +23,5 @@ Need to run a task in the background in .NET 6? There are lots of scenarios for 
 
 Scott is a software consultant and primarily does web development using ASP.NET Core and JavaScript. His second dev passion behind web development is building DevOps pipelines and automating everything automatable. He’s a Friend of Redgate and co-organizes the Iowa .NET User Group. You can find Scott on Twitter or on his blog at [scottsauber.com](https://scottsauber.com).
 
-* Twitter: https://twitter.com/scottsauber
-* Blog: https://scottsauber.com
+* Twitter: <https://twitter.com/scottsauber>
+* Blog: <https://scottsauber.com>

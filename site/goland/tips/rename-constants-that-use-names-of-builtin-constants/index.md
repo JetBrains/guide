@@ -15,6 +15,6 @@ The inspection will be triggered if you try to assign a value to a constant with
 
 **How to use:**
 
-Place the cursor on a highlighted constant name, press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_, and select **Rename constant**. Type a new name and press _Enter_. 
+Place the cursor on a highlighted constant name, press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_, and select **Rename constant**. Type a new name and press _Enter_.
 
 <span class="tag is-rounded">New in 2022.2</span>

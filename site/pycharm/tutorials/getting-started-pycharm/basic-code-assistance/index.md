@@ -10,7 +10,7 @@ videoBottom: true
 video: 'https://youtu.be/MCsDfAsxG-Q'
 ---
 
-In the previous step, we saw how PyCharm makes it easy to work with your project’s Python packages. In this step, we are going to talk about one of the most important reasons to use PyCharm - code assistance. 
+In the previous step, we saw how PyCharm makes it easy to work with your project’s Python packages. In this step, we are going to talk about one of the most important reasons to use PyCharm - code assistance.
 
 ## Code Completion
 
@@ -55,11 +55,11 @@ Here, for instance, we added `if sudden == True`. Although it's valid syntax, it
 
 PyCharm will offer to **Replace boolean expression with sudden**. Intention actions cover a wide range of situations from warnings, to optimizations, to automation.
 
-Let’s say you want to invert this `if` condition. If you position my caret here (show) PyCharm offers to handle it for you. 
+Let’s say you want to invert this `if` condition. If you position my caret here (show) PyCharm offers to handle it for you.
 
 <img src="invert-if-condition.png" alt="Invert if condition" width="700"/>
 
-I can also undo this to go back to the way the code was if I want to. 
+I can also undo this to go back to the way the code was if I want to.
 
 We've looked at warnings, but sometimes there are errors and PyCharm can also find any problems within your code. In this case, whenever it happens, the light bulb color will be red. This is a signal that a quick-fix is available and to check possible solutions you can use the same commands as before.
 
@@ -79,11 +79,11 @@ But they happen. Let's take a look at two quick ways to spot them in a file.
 
 When PyCharm finds warnings or errors, besides light bulbs and squiggly lines, it also displays your errors in the scrollbar. Let’s see how it looks. Here is a file with a number of problems. As you can see, the stripes indicate where the problem was found. To see more information about the problem you can hover the stripe, or click it to navigate to the proper line.
 
-If you don't want to scroll down your entire file searching for problems, though, the second quick way to spot problems is by checking the Problems widget. 
+If you don't want to scroll down your entire file searching for problems, though, the second quick way to spot problems is by checking the Problems widget.
 
 <img src="problems-widget.png" alt="Problems Widget" width="700"/>
 
-It summarizes errors and warnings and lets you quickly navigate to the Problems Tool window (**⌘6** | **Alt+1**) to have a better description of what is going on. Here we can see the error and quickly navigate to the line where it happens. We can also look across our entire project. 
+It summarizes errors and warnings and lets you quickly navigate to the Problems Tool window (**⌘6** | **Alt+1**) to have a better description of what is going on. Here we can see the error and quickly navigate to the line where it happens. We can also look across our entire project.
 
 <img src="problems-tool-window.png" alt="Problems Tool Window" width="700"/>
 
@@ -91,7 +91,7 @@ Let’s fix this error and use the [code reformat action](https://www.jetbrains.
 
 ## Conclusion
 
-Congratulations! You just saw how to use PyCharm to help you write better code with fewer errors, but this is just the tip of the iceberg. 
+Congratulations! You just saw how to use PyCharm to help you write better code with fewer errors, but this is just the tip of the iceberg.
 
 In the next step, we’ll see how to use [Run Configurations](https://www.jetbrains.com/help/pycharm/run-debug-configuration.html) to run your Python scripts.
 

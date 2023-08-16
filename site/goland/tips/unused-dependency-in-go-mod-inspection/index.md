@@ -15,6 +15,6 @@ video: >-
 
 **How to use:**
 
-Open a _go.mod_ file and look out for dependency lines marked with grey.
+Open a *go.mod* file and look out for dependency lines marked with grey.
 
 <span class="tag is-rounded">New in 2021.2</span>

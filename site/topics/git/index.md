@@ -6,6 +6,7 @@ subtitle: >-
 logo: git.png
 website: 'https://git-scm.com/'
 topicType: technology
-obsoletes: ["/intellij/topics/git/"]
+obsoletes:
+  - /intellij/topics/git/
 ---
 

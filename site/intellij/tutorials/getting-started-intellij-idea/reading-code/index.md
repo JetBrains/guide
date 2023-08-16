@@ -47,22 +47,22 @@ Inlay hints are IntelliJ IDEA's way of *decorating* your code with extra informa
 Inlay hints that IntelliJ IDEA can provide include:
 - Who authored the code (without using Git Blame)
 - Related Problems
-- Usages 
+- Usages
 - Parameters
 
-... and more. You can configure them in your Preferences/Settings (**⌘,** | **Ctrl+Alt+S**) and searching for "inlay hints". 
+... and more. You can configure them in your Preferences/Settings (**⌘,** | **Ctrl+Alt+S**) and searching for "inlay hints".
 
 ## Understanding Gutter Information
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pa-bgScptXE" >
 </iframe>
 
-Gutter icons are often overlooked because they're just *there* but I urge you to look again, especially if you're a visual learner and perhaps haven't mastered *all* keyboard shortcuts yet. 
+Gutter icons are often overlooked because they're just *there* but I urge you to look again, especially if you're a visual learner and perhaps haven't mastered *all* keyboard shortcuts yet.
 
 Gutter icons can show you:
 - Annotations
 - Implementations
-- Overrides 
+- Overrides
 - Recursive calls
 
 ... and more. You can configure them in your Preferences/Settings (**⌘,** | **Ctrl+Alt+S**) and searching for "gutter".
@@ -72,7 +72,7 @@ Gutter icons can show you:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dG_Ug83Mg94" >
 </iframe>
 
-Scrollbars is another feature that we perhaps need to take a second look at. IntelliJ IDEA gives us two scrollbars, one on the left, as you would expect and one on the right. 
+Scrollbars is another feature that we perhaps need to take a second look at. IntelliJ IDEA gives us two scrollbars, one on the left, as you would expect and one on the right.
 
 The left-hand scrollbar gives us coloured bars to indicate changes in our code, that is when something has been added, removed or changed. Errors are also shown in red, although hopefully you won't have any of those!
 

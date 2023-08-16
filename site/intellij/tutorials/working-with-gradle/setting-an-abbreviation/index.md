@@ -12,9 +12,9 @@ video: 'https://youtu.be/6V6G3RyxEMk?start=767'
 
 You may have noticed that there are a lot of results when we type "Gradle" into any of the search options. We may want to provide a way to quickly access the Gradle tool window.
 
-You can, of course, [set a keyboard shortcut](https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html#add-keyboard-shortcut) for any IntelliJ IDEA action, and you may want to set one for opening the Gradle tool window. 
+You can, of course, [set a keyboard shortcut](https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html#add-keyboard-shortcut) for any IntelliJ IDEA action, and you may want to set one for opening the Gradle tool window.
 
-Alternatively, or even additionally, we can [add an abbreviation](https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html#add-abbreviation). 
+Alternatively, or even additionally, we can [add an abbreviation](https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html#add-abbreviation).
 
 On the Keymap page of the Settings/Preferences dialog, **⌘,** (macOS), or **Ctrl+Alt+S**  (Windows/Linux), right-click an action and select **Add Abbreviation**.
 

@@ -33,7 +33,7 @@ First, you can get an existing project from version control like GitHub, for exa
 
 Secondly, you can open a project stored on your machine by navigating to your local drive and finding a project you want to work on. Then, select it and click **Open**.
 
-Finally, you can create a new project which is what we will do in this tutorial. 
+Finally, you can create a new project which is what we will do in this tutorial.
 
 Now that we decided to create a new project, you can see the first difference between PyCharm Community and PyCharm Professional. If you are using PyCharm Professional you can take advantage of project types. Project types are pre-configured environments that automate the project-creation by setting technology-specific preferences, downloading dependencies, creating required files, etc.
 
@@ -57,7 +57,7 @@ PyCharm will now create a new Django project for you as well as creating and act
 If you close this project, you go back to the PyCharm Welcome Screen where you can see that the *Projects tab* has changed slightly. Now you see your recent projects, and this list will grow as you have more projects.
 
 ## Conclusion
-In this step we learned about projects, and how to start a new project in PyCharm. 
+In this step we learned about projects, and how to start a new project in PyCharm.
 
 In the next step, we are going to dive into PyCharm’s UI so you’ll feel more comfortable starting your code journey right away.
 

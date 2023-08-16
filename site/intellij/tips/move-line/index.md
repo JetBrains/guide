@@ -16,6 +16,6 @@ seealso:
       https://www.jetbrains.com/help/idea/working-with-source-code.html#editor_lines_code_blocks
 video: 'https://youtu.be/L_h8NJdYyj4'
 ---
-Press **⌥⇧↑** (macOS), or **Alt+Shift+Up Arrow** (Windows/Linux), to move a line up. To move a line down use **⌥⇧↓** (macOS), or **Alt+Shift+Down Arrow** (Windows/Linux).   
- 
+Press **⌥⇧↑** (macOS), or **Alt+Shift+Up Arrow** (Windows/Linux), to move a line up. To move a line down use **⌥⇧↓** (macOS), or **Alt+Shift+Down Arrow** (Windows/Linux).
+
 This shortcut does not factor in scope. You can move lines in and out of scope.

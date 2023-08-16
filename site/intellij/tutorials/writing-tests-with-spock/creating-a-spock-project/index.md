@@ -34,4 +34,3 @@ Call the project `spock-tutorial`, and save it to some useful location.
 IntelliJ IDEA creates the files for the project and initialises the structure of the project. It's using Gradle to build this skeleton project to make sure all dependencies are downloaded and set up.
 
 Now we have a simple Java project to play with, we can move onto the next step, adding Spock dependencies.
-

@@ -20,5 +20,4 @@ When you click the cog you'll see this dialog:
 Select the **Reformat Code** checkbox and press **OK** to always reformat your files prior to commit. This will apply to all your languages from your next commit.
 
 ## Reformatting a Whole Directory
-You may have decided to reformat your whole project directory by directory. We'll take a look at how to do this in the next step. 
-
+You may have decided to reformat your whole project directory by directory. We'll take a look at how to do this in the next step.

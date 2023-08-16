@@ -29,7 +29,7 @@ We can hide all tool windows (**⇧⌘F12** on macOS / **Control+Shift+F12** on 
 ## Viewing dependencies in the Dependency Analyzer
 ![Dependency Analyzer](dependency-analyzer.png)
 
-We can view the dependencies as a tree by clicking the **Show as Tree** button and **Expand** or **Collapse** them as needed by pressing the corresponding buttons. 
+We can view the dependencies as a tree by clicking the **Show as Tree** button and **Expand** or **Collapse** them as needed by pressing the corresponding buttons.
 
 ![Show as Tree](show-as-tree.png)
 
@@ -64,7 +64,3 @@ When we open the Dependency Analyzer from the Gradle tool window, the list of sc
 For more context, we can click a specific dependency and select **Open Maven Config** to open its pom.xml or **Go to Maven Dependency** to open the location in the pom.xml where this dependency is declared.
 
 ![Open Maven Config](open-maven-config.png)
-
-
-
-

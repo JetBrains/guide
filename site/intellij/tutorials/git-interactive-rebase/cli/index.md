@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 
 Let's take a look at how to use Git interactive rebase from the command line.
 
-In the Git history, identify the commit _just before_ the commit from where you want to clean up your history. In this example, that will be the last commit before we started adding the new feature. 
+In the Git history, identify the commit _just before_ the commit from where you want to clean up your history. In this example, that will be the last commit before we started adding the new feature.
 
 Find the commit hash for this commit in the "**Commit Details**" to the right of the Git history in the Git window and copy this commit hash. (Spoiler: the commit hash in this example is `34bb0f99`.)
 
@@ -32,7 +32,7 @@ We can do so by changing the order of the lines (individual commits) to reflect 
 
 In the editor in the terminal, switch to edit mode by pressing `I` to be able to edit this file.
 
-We can change the order of the lines by removing the commit we want to move from the list and inserting it in the place where we want it. 
+We can change the order of the lines by removing the commit we want to move from the list and inserting it in the place where we want it.
 
 In vi, we can do so as follows:
 * Place the cursor anywhere on the line you want to move (in this example the commit "Unrelated changes") and remove this line by typing `dd`.
@@ -66,12 +66,12 @@ In vi, press `esc` to exit edit mode and type `:wq` to save the file.
 The interactive rebase will be applied. In the Git log, we can see that multiple individual commits are now combined into one commit with one commit message.
 
 ### Drop a commit
-Finally, we want to drop the commit with a mistake that we made. In the terminal, type `git rebase -i 34bb0f99` to start rebasing. 
+Finally, we want to drop the commit with a mistake that we made. In the terminal, type `git rebase -i 34bb0f99` to start rebasing.
 
 To drop a commit, remove that commit from the list of commits. In this example, we will remove the commit "Mistake".
 
 In vi, we can remove a line by placing the cursor anywhere on the line we want to remove and typing `dd`.
-Alternatively, we can switch to edit mode by pressing `I` and removing the line manually. 
+Alternatively, we can switch to edit mode by pressing `I` and removing the line manually.
 Press `esc`to exit edit mode.
 
 ![Drop Commit](drop-commit.png)

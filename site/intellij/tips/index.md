@@ -11,4 +11,3 @@ pagination:
   resourceType: tip
   channel: /intellij/
 ---
-

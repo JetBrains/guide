@@ -25,4 +25,4 @@ While source generators (compatible with the .NET 5 SDK) potentially cause a slu
 
 Stefan’s passion is to practice clean code and test-driven development in order to build maintainable software in an ever-evolving team, supported by tools from the .NET ecosystem. Stefan loves to attend and speak at public developer events and author open source projects, complementing his expertise in professional software development.
 
-* Twitter: https://twitter.com/0x_F0
+* Twitter: <https://twitter.com/0x_F0>

@@ -6,6 +6,7 @@ subtitle: >-
 logo: duke.png
 website: 'https://openjdk.java.net/'
 topicType: technology
-obsoletes: ["/intellij/topics/java/"]
+obsoletes:
+  - /intellij/topics/java/
 ---
 

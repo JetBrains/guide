@@ -27,7 +27,7 @@ As we saw earlier, when we do make changes to a build file, we can reload those 
 
 ![Load changes](./load-gradle-changes.png)
 
-Sometimes we want to force a reload of the whole project, so that IntelliJ IDEA uses the Gradle settings to set up and build the project. This can be particularly useful after a large batch of external changes, or if the project is not behaving the way we expect. 
+Sometimes we want to force a reload of the whole project, so that IntelliJ IDEA uses the Gradle settings to set up and build the project. This can be particularly useful after a large batch of external changes, or if the project is not behaving the way we expect.
 
 ![Reload all projects](./reload-all-projects.png)
 

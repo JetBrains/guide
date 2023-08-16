@@ -4,7 +4,9 @@ subtitle: 'Automated deployment, scaling, and management of containerized applic
 logo: ./kubernetes.png
 website: 'https://kubernetes.io/'
 topicType: technology
-obsoletes: ["/goland/topics/kubernetes/", "/pycharm/topics/kubernetes/", ]
+obsoletes:
+  - /goland/topics/kubernetes/
+  - /pycharm/topics/kubernetes/
 ---
 
 Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of

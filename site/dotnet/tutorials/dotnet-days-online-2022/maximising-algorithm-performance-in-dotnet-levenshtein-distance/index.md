@@ -24,5 +24,5 @@ With performance tricks you may not know applied to an algorithm you may never h
 
 James is a programmer and entrepreneur with a love of cars, music, and technology.
 
-* Twitter: https://twitter.com/MrTurnerj
-* Blog: https://turnerj.com/blog
+* Twitter: <https://twitter.com/MrTurnerj>
+* Blog: <https://turnerj.com/blog>

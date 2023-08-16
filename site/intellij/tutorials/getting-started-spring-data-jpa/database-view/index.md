@@ -20,15 +20,15 @@ Next, we'll finish configuring the database. For our *User* and *Password* field
 
 ![Data Source myDB Config](./IJConfigMyDB.png)
 
-**Optional Step**: under the Options tab, enable the *Auto-disconnect after* setting and set it to disconnect after 3 seconds. This setting will disconnect the database in IntelliJ IDEA and release all locks allowing our application's process to continually connect and write to the database. This will prevent `database may already be in use` errors coming from your application. If you do this step, you may need to click on the Refresh button in the Database tool window to update your data source. 
+**Optional Step**: under the Options tab, enable the *Auto-disconnect after* setting and set it to disconnect after 3 seconds. This setting will disconnect the database in IntelliJ IDEA and release all locks allowing our application's process to continually connect and write to the database. This will prevent `database may already be in use` errors coming from your application. If you do this step, you may need to click on the Refresh button in the Database tool window to update your data source.
 
 Then we will click **Test Connection** to make sure our configuration is valid.
 
 ![Data Source Config Options](./IJConfigOptions.png)
 
-Once we click **OK**, we see a new data source for our H2 database. 
+Once we click **OK**, we see a new data source for our H2 database.
 
 ## End Result
-In the database view, we can now navigate to our Employee table and see all our employee data by double-clicking on the table. 
+In the database view, we can now navigate to our Employee table and see all our employee data by double-clicking on the table.
 
 ![Database View](./DatabaseView.png)

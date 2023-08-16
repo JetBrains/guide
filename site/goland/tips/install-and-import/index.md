@@ -20,7 +20,7 @@ GoLand can generate your import for you, even when you haven't installed the pac
 
 **How to use:**
 
-Press _Alt + Enter on Windows/Linux_ or _⌥ + Enter on macOS_ to invoke
+Press *Alt + Enter on Windows/Linux* or *⌥ + Enter on macOS* to invoke
 the list of quick-fixes on the red import line and select
 **Sync packages of <project\>** to import the package into your project.
 

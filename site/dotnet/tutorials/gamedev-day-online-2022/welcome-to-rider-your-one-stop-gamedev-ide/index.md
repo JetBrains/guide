@@ -24,4 +24,4 @@ Rider is a great tool for game development. It can quickly navigate around your 
 
 TODO
 
-* Twitter: https://twitter.com/citizenmatt
+* Twitter: <https://twitter.com/citizenmatt>

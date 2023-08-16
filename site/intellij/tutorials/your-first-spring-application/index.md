@@ -26,8 +26,8 @@ tutorialItems:
 **See Also - Marco Codes**
 
 In addition to this tutorial, we recommend you check out [Marco Codes - Spring Boot Tutorial - Crash Course](https://youtu.be/QuvS_VLbGko) to learn about:
-- Building a tiny Google Photos-like clone with Spring Boot 
+- Building a tiny Google Photos-like clone with Spring Boot
 - Spring's Dependency Injection and MVC frameworks
 - Validation and File Handling
 - Spring Data and Databases
-- Deploying your application 
+- Deploying your application

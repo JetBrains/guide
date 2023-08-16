@@ -21,7 +21,7 @@ Modals are a powerful way to get a user's attention when you're acknowledging th
 
 Note, this sample requires a bit of JavaScript compared to our previous work, but it's an excellent introduction to the events made available by HTMX. [Events](https://htmx.org/reference/#events) give us opportunities to execute JavaScript before, during, or after an HTMX request. In this case, we'll be easing our modal into view with some optional JavaScript. You could forgo the JavaScript for an immediate modal experience.
 
-This time, unlike our previous samples where we added HTMX attributes to individual elements, we'll be leveling up an HTML form with several inputs. By design, any input within an HTMX form will be included as a parameter on the subsequent HTTP request. 
+This time, unlike our previous samples where we added HTMX attributes to individual elements, we'll be leveling up an HTML form with several inputs. By design, any input within an HTMX form will be included as a parameter on the subsequent HTTP request.
 
 ![HTML Form rendered on page](img_1.png)
 

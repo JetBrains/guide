@@ -4,6 +4,7 @@ subtitle: A modern programming language that makes developers happier.
 logo: kotlin.jpg
 website: 'https://kotlinlang.org/'
 topicType: technology
-obsoletes: ["/intellij/topics/kotlin/"]
+obsoletes:
+  - /intellij/topics/kotlin/
 ---
 

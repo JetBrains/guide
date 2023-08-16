@@ -1,0 +1,7 @@
+.11ty-vite
+.run
+.space
+_site
+docs
+node_modules
+public

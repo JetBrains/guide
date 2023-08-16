@@ -20,4 +20,4 @@ To configure the Presentation Assistant plugin, go back to **Preferences** and g
 
 ![Configure Presentation Assistant](presentation-assistant-config.png)
 
-Here we can configure font size, duration, alignment, and which keymaps to show. We are using macOS, with Windows as the alternative keymap. We have also configured the Presentation Assistant plugin to show the shortcuts at the top of the screen. 
+Here we can configure font size, duration, alignment, and which keymaps to show. We are using macOS, with Windows as the alternative keymap. We have also configured the Presentation Assistant plugin to show the shortcuts at the top of the screen.

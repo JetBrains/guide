@@ -12,7 +12,7 @@ video: >-
   https://www.youtube.com/watch?v=SQAWOeLYwr4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=24
 ---
 **How to use:**
-Copy your JSON data in the clipboard then paste it in an empty 
+Copy your JSON data in the clipboard then paste it in an empty
 place in your code.
 
 When the IDE asks you about converting the JSON to a Go type, press

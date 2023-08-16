@@ -25,6 +25,7 @@ This tutorial will take you through installing and setting up PyCharm, customisi
 
 ## Sample code
 This is the code that we will be using in this tutorial:
+
 ```python
 class Car:
 

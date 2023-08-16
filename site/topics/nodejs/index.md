@@ -4,7 +4,9 @@ subtitle: 'JavaScript outside of the browser, on the command-line or server-side
 logo: ./nodejs-icon.svg
 website: 'https://nodejs.org'
 topicType: technology
-obsoletes: ["/pycharm/topics/nodejs/", "/webstorm/topics/nodejs/"]
+obsoletes:
+  - /pycharm/topics/nodejs/
+  - /webstorm/topics/nodejs/
 ---
 
 [Node.js](https://nodejs.org) is a JavaScript runtime built on the Chrome V8 JavaScript engine. It

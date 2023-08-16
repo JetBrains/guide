@@ -11,4 +11,4 @@ thumbnail: ./thumbnail.png
 # Further Reading
 
 * Final Notes
-* Cheat Sheet available here: https://www.marcobehler.com/guides/ssh-commands
+* Cheat Sheet available here: <https://www.marcobehler.com/guides/ssh-commands>

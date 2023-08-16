@@ -8,7 +8,7 @@ subtitle: Git interactive rebase Summary
 thumbnail: ./thumbnail.png
 ---
 
-## Summary 
+## Summary
 Now we know how to use git interactive rebase either from the UI or from the command line. Give them a try and use whichever way you prefer.
 
 ### IntelliJ IDEA Shortcuts Used
@@ -43,7 +43,6 @@ Here are the  shortcuts that we used.
 | Reinsert line (**note**: not in edit mode) | **p**    |
 | Write and quit                             | **:wq**  |
 | Force quit                                 | **:q!**  |
-
 
 ### Related Links
 - [(video) JetBrains Using Git Interactive Rebase](https://www.youtube.com/watch?v=bPX9VHjviEM)

@@ -17,6 +17,6 @@ animatedGif:
   width: 600
   height: 300
 ---
-Did you know that the *Find Action* popup (*Cmd/Ctrl+Shift+A*) not only lets you quickly 
-find actions you don’t know the shortcuts for but also helps toggle some of the IDE 
+Did you know that the *Find Action* popup (*Cmd/Ctrl+Shift+A*) not only lets you quickly
+find actions you don’t know the shortcuts for but also helps toggle some of the IDE
 configuration options?

@@ -59,4 +59,4 @@ private int replaceWithMapToInt() {
 This is much easier to read than the long line you started with!
 
 ## Summary
-Now we've looked at when and how you can reformat your code, let's summarise it all with further reading and the shortcuts we used. 
+Now we've looked at when and how you can reformat your code, let's summarise it all with further reading and the shortcuts we used.

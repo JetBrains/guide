@@ -36,6 +36,7 @@ This test mocks a [Renderer](https://github.com/trishagee/spock-testing-demo/blo
 ```groovy
 Renderer renderer = Mock()
 ```
+
 ...or if we prefer to use Groovy's `def` to define our variables, we'll need to pass the type in as an argument to the Mock method:
 
 ```groovy

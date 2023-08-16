@@ -16,15 +16,15 @@ If you need to change your Go module's name or upgrade it to a new major, then t
 **How to use:**
 Place the cursor under the module name in the *go.mod* file, then
 invoke the *Refactor this* feature, _Ctrl + Alt + Shift + T on
-Windows/Linux_, and _^ + T on macOS_.
+Windows/Linux_, and *^ + T on macOS*.
 
 Select *Rename* from the list and change the module according to
 your needs.
 
-**Pro tip:** You can preview the changes by clicking on the 
+**Pro tip:** You can preview the changes by clicking on the
 *Preview* button in the dialog or undo them with *Undo* operation.
 You can also undo the change later using the *Local history*
-feature. 
+feature.
 
 **Pro tip:** If you upgrade your module's import path to a new
 major version, don't forget to tag the release too.

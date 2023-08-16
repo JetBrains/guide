@@ -20,7 +20,7 @@ Let's do some background on these points.
 
 # Testing and TDD
 
-Writing code is fun. 
+Writing code is fun.
 But writing good code is hard.
 Over the years, Python and the community have embraced the concept of [unit testing](https://jeffknupp.com/blog/2013/12/09/improve-your-python-understanding-unit-testing/) as a way to ensure that the code you write works correctly, now and in the future.
 
@@ -28,7 +28,7 @@ But that's the "eat your vegetables" version.
 "Bleh, test writing."
 This leads to projects where tests are a chore done at the end to satisfy some mandate.
 
-There's another philosophy called "test-driven-development" (TDD) where you write your tests *as you write your code*. 
+There's another philosophy called "test-driven-development" (TDD) where you write your tests *as you write your code*.
 In fact, you write *failing* tests *before* you write your code, giving you time to think about what the code should do.
 Then, as you gradually implement your feature in code, your tests start to pass, and you have a feeling of success.
 I confess, I'm a big believer in this mode of development.
@@ -40,12 +40,12 @@ Tests let you know which promises that "next big thing" broke, thus giving you f
 
 # The `pytest` testing framework
 
-What are tests and how do you run them? 
+What are tests and how do you run them?
 In programming languages, you adopt a testing framework, in which you write code with certain instructions in them which then gets run by the framework.
 For Python, the current favorite is [pytest](../../../../topics/pytest).
 
-As a mature ecosystem, `pytest` has lots of resources to help you get started. 
-RealPython has [a primer on testing in general](https://realpython.com/python-testing/) as well as (paid) [course on pytest](https://realpython.com/courses/test-driven-development-pytest/). 
+As a mature ecosystem, `pytest` has lots of resources to help you get started.
+RealPython has [a primer on testing in general](https://realpython.com/python-testing/) as well as (paid) [course on pytest](https://realpython.com/courses/test-driven-development-pytest/).
 Brian Okken leads the pack with a [Python Testing with pytest](https://pragprog.com/book/bopytest/python-testing-with-pytest) book and a [Test&Code podcast]() on all things testing.
 
 The pace of progress in the `pytest` community can be overwhelming at times.

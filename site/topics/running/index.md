@@ -3,7 +3,12 @@ title: Running
 subtitle: 'Run your code in our configurable, visual run tool.'
 accent: primary
 icon: fas fa-play
-obsoletes: [ "/dotnet/topics/running/", "/goland/topics/running/", "/intellij/topics/running/", "/pycharm/topics/running/", "/webstorm/topics/running-debugging/" ]
+obsoletes:
+  - /dotnet/topics/running/
+  - /goland/topics/running/
+  - /intellij/topics/running/
+  - /pycharm/topics/running/
+  - /webstorm/topics/running-debugging/
 ---
 
 Writing applications means running code. Our IDEs help with launching our applications!

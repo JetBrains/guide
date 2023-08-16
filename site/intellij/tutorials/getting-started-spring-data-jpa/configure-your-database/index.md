@@ -20,7 +20,7 @@ Then, we need to specify our driver class name. We can similarly search for `dri
 
 ![Application Properties Driver Class](./ApplicationPropertiesDriverClass.png)
 
-Next, we'll similarly search for the `username` and `password` properties and set their values to `sa` and `password` respectively. 
+Next, we'll similarly search for the `username` and `password` properties and set their values to `sa` and `password` respectively.
 
 Finally, we don't want to create any tables manually so we will add the `spring.jpa.hibernate.ddl-auto` property and use code completion to see a list of possible values.
 

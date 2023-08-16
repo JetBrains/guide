@@ -15,6 +15,6 @@ animatedGif:
   width: 600
   height: 300
 ---
-With postfix completion, you can transform an already existing expression into another one 
-without moving the caret: simply type `.` and the abbreviation, then press *Tab*. Find 
+With postfix completion, you can transform an already existing expression into another one
+without moving the caret: simply type `.` and the abbreviation, then press *Tab*. Find
 available abbreviations in *Preferences/Settings | Editor | General | Postfix Completion*.

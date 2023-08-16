@@ -36,5 +36,4 @@ If we're calling a Java getter from Groovy code, we can miss out the "get" at th
 
 In this section, we covered some tips on using Groovy to write tests. Now you know how to read Groovy code and understand that it may behave differently to how a Java developer would expect.
 
-Next, we're going to go back to our tests and explore the labels in our tests a bit more. 
-
+Next, we're going to go back to our tests and explore the labels in our tests a bit more.

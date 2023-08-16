@@ -42,7 +42,7 @@ You should always use IntelliJ IDEA's refactoring capability when you're refacto
 Most teams have code standards that want to apply to all new code that is checked into version control. IntelliJ IDEA supports lots of formatting standards that you can access in your Preferences/Settings (**⌘,** | **Ctrl+Alt+S**) and then searching for "formatting" in **Editor > Java**. There are some different ways to apply those settings to your code; choose the best way at the time.
 
 To reformat a file or selection of code:
-Use (**⌥⌘L** | **Ctrl+Alt+L**) to reformat a file or selection of code according to the settings you have defined in your project. 
+Use (**⌥⌘L** | **Ctrl+Alt+L**) to reformat a file or selection of code according to the settings you have defined in your project.
 
 You can get additional reformat settings with (**⌥⇧⌘L** | **Ctrl+Shift+Alt+L**) which is useful because there's an option called **Only changes uncommitted to VCS** that you can select if you're working with a codebase where only changed or added code is adhering to a newer team-agreed formatting style. This is helpful to ensure you don't check in formatting changes in addition to changes in the codebase.
 
@@ -71,7 +71,7 @@ IntelliJ IDEA allows you to select code by scope which is helpful when you have 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TY_CqQYx4g0" >
 </iframe>
 
-Clipboard history is like your normal clipboard but multiple of them! IntelliJ IDEA keeps track of everything you copy inside the IDE and the last thing on your clipboard that you copied outside the IDE. You can search through your Clipboard history, paste a subset or paste multiple entries. 
+Clipboard history is like your normal clipboard but multiple of them! IntelliJ IDEA keeps track of everything you copy inside the IDE and the last thing on your clipboard that you copied outside the IDE. You can search through your Clipboard history, paste a subset or paste multiple entries.
 
 ## Using Local History
 

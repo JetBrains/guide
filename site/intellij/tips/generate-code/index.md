@@ -19,6 +19,6 @@ seealso:
     href: 'https://www.jetbrains.com/help/idea/generating-code.html'
 video: 'https://youtu.be/foKr1a9r250'
 ---
-You can generate new code quickly with **⌘N** (macOS), or **Alt+Insert** (Windows/Linux). For example, you can generate commonly used methods for Java beans in this way. 
+You can generate new code quickly with **⌘N** (macOS), or **Alt+Insert** (Windows/Linux). For example, you can generate commonly used methods for Java beans in this way.
 
 You can use the same shortcut to add a new parameter in the Change Signature dialog.

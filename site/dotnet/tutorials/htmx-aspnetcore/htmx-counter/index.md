@@ -17,7 +17,7 @@ thumbnail: ./thumbnail.png
 video: 'https://youtu.be/tDJrwKKqGgg'
 ---
 
-Rather than managing states on the client, HTMX relies heavily on the server to keep our state in order. Let's be honest, persisting state is a task suited best for a server back-end. While we could store state on the client, in a server environment we have secure access to a wonderful array database technologies. 
+Rather than managing states on the client, HTMX relies heavily on the server to keep our state in order. Let's be honest, persisting state is a task suited best for a server back-end. While we could store state on the client, in a server environment we have secure access to a wonderful array database technologies.
 
 In this example, we'll be enhancing our UI to keep track of an ever incrementing number, with each user click affecting state on the server. If you've built a form-based application, this sample will be very familiar to you.
 

@@ -17,7 +17,7 @@ Gosh, there’s a lot on the screen. How is this UI laid out? What do each of th
 ## The Editor
 When a file is open, it appears in a tab in the editor. When you double-click another file another tab opens. As you can imagine you can close and organize them individually, in many ways.
 
-Inside the editor, on the right-hand side, you can see the inspection widget, which you can use to view all the problems in the current file and navigate between each issue. 
+Inside the editor, on the right-hand side, you can see the inspection widget, which you can use to view all the problems in the current file and navigate between each issue.
 
 <img src="inspections-widget.png" alt="Inspections Widget" width="200"/>
 
@@ -40,7 +40,7 @@ At the top, you can also find your Navigation Bar. This serves as a quick altern
 
 You can also use the buttons that are to the right of the Navigation Bar to quickly perform some common actions, like running or debugging an app, updating a project or making a commit, running a search, and the like. Note that the toolbar might look different if your project isn’t under version control.
 
-This part of the UI also gives you access to Code With Me, PyCharm’s built-in functionality for collaborative development. From here you can enable access for guests and start collaborative sessions. 
+This part of the UI also gives you access to Code With Me, PyCharm’s built-in functionality for collaborative development. From here you can enable access for guests and start collaborative sessions.
 
 Finally, right above the Navigation bar, you’ll find the main menu. It has various actions and controls, including the Preferences/Settings and Help.
 

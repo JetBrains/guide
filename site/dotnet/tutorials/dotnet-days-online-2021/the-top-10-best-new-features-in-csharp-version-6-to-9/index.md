@@ -27,5 +27,5 @@ Chris Klug is a developer badass-as-a-service that either creates or solves prob
 
 For the last 15-something years, he has been solving problems for customers, and loving it. But if he gets to choose, he'll go to the beach and kitesurf every day!
 
-* Twitter: https://twitter.com/ZeroKoll
-* Blog: https://fearofoblivion.com/
+* Twitter: <https://twitter.com/ZeroKoll>
+* Blog: <https://fearofoblivion.com/>

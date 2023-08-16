@@ -23,7 +23,7 @@ Before we delve into the code, let's talk about the main components of .NET loca
 
 ## CultureInfo
 
-The [`CultureInfo` class](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo) provides the rules specific to a particular culture. 
+The [`CultureInfo` class](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo) provides the rules specific to a particular culture.
 
 > The information includes the names for the culture, the writing system, the calendar used, the sort order of strings, and formatting for dates and numbers. [-- Microsoft](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo)
 
@@ -84,7 +84,7 @@ In our editor, we'll notice that our `"Hello, World!"` string know shows a hint.
 
 ![Move to resource analyzer sees a string that can be moved to a resource and provides a quick fix](2-quick-fix.png)
 
-We'll see a **"Move to Resource"** dialog to set the options for our new resource value item. Let's change the name to `HelloWorld` to be more in line with C# idioms. When done, we should see our value in Rider's Localization Manager. 
+We'll see a **"Move to Resource"** dialog to set the options for our new resource value item. Let's change the name to `HelloWorld` to be more in line with C# idioms. When done, we should see our value in Rider's Localization Manager.
 
 ![Move to resource dialog helps store a string in a resource file](3-move-to-resource-dialog.png)
 
@@ -105,7 +105,7 @@ namespace HelloWorld
 }
 ```
 
-Let's get to some German. In the **Localization Manager**, we need to click the plus (+) symbol located over the left-hand pane. It is to the left of the phrase **"Group by"**. Clicking the icon, we see a dialog box with a text input. 
+Let's get to some German. In the **Localization Manager**, we need to click the plus (+) symbol located over the left-hand pane. It is to the left of the phrase **"Group by"**. Clicking the icon, we see a dialog box with a text input.
 
 ![Localization manager shows all resource strings and lets you edit them](4-localization-manager.png)
 

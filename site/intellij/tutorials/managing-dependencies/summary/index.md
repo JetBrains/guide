@@ -24,7 +24,6 @@ Here are the IntelliJ IDEA shortcuts that we used.
 | Invoke Package Search                                                                            | **⌘N**         | **Alt+Insert**           |
 | Context Actions                                                                                  | **⌥⏎**         | **Alt+Enter**            |
 
-
 ### Related Links
 - [(video) JetBrains - IntelliJ IDEA: Viewing Dependencies](https://www.youtube.com/watch?v=1wnsc8hYM4c)
 - [(video) JetBrains - IntelliJ IDEA: Managing Dependencies](https://www.youtube.com/watch?v=nqb9yAecM9Y)
@@ -35,5 +34,3 @@ Here are the IntelliJ IDEA shortcuts that we used.
 - [(code) JetBrains - intellij-samples](https://github.com/JetBrains/intellij-samples)
 - [(code) Spring PetClinic](https://github.com/spring-projects/spring-petclinic)
 - [(book) Getting to Know IntelliJ IDEA - Trisha Gee & Helen Scott](https://leanpub.com/gettingtoknowIntelliJIDEA)
-
-

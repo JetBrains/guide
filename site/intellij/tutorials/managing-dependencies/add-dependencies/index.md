@@ -102,7 +102,7 @@ If the version number is shown in red, that means IntelliJ IDEA hasn’t downloa
 
 Go back to the Dependencies tool window and clear the search box by clicking the **x** on the right-hand side. You’ll see the project’s dependencies are updated with your new dependency.
 
-Next, let's look for jackson-databind. We see that there are several versions available. Since we have selected **Only stable**, only stable versions are shown in the list. 
+Next, let's look for jackson-databind. We see that there are several versions available. Since we have selected **Only stable**, only stable versions are shown in the list.
 
 ![Jackson-Databind Versions](jackson-versions.png)
 
@@ -112,7 +112,7 @@ If we uncheck this option, we see that the list of versions also includes the re
 
 For production code, we probably want to use stable versions, so let's select the **Only stable** checkbox again. With this option enabled, IntelliJ IDEA will exclude any dependencies that have no stable versions, and hide them from the list. Now we can select the latest stable version and add this to our project. Let's also **Load Maven Changes** again.
 
-Finally, let's also add a new dependency to the Kotlin module. Let's switch to the Kotlin module and open the pom.xml for this module. Open the Dependencies Tool Window and search for Ktor. 
+Finally, let's also add a new dependency to the Kotlin module. Let's switch to the Kotlin module and open the pom.xml for this module. Open the Dependencies Tool Window and search for Ktor.
 
 ![Search Ktor](search-ktor.png)
 

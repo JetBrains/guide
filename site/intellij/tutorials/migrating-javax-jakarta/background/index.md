@@ -19,4 +19,4 @@ If you are following along, I recommend that you use IntelliJ IDEA Ultimate, how
 
 ![Gutter run icons](docker-compose-up.png)
 
-Now you should be able to navigate to [localhost:8080/MyWebApp](localhost:8080/MyWebApp) and see the application. If you enter a name and a fruit, your data should successfully be persisted to the database. This application, specifically the `javax` branch is running Tomcat 9.0 which uses the `javax` namespace. We're now going to start the migration to the `jakarta` namespace. 
+Now you should be able to navigate to [localhost:8080/MyWebApp](localhost:8080/MyWebApp) and see the application. If you enter a name and a fruit, your data should successfully be persisted to the database. This application, specifically the `javax` branch is running Tomcat 9.0 which uses the `javax` namespace. We're now going to start the migration to the `jakarta` namespace.

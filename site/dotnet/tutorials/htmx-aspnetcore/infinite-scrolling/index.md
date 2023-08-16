@@ -17,7 +17,7 @@ thumbnail: ./thumbnail.png
 video: 'https://youtu.be/v4XeB_wiJ8E'
 ---
 
-Infinite scroll patterns are popular on social media sites, where the app represents content as a continuous stream of information. As a user, you'll likely never see the beginning or end of the stream, but you can scrub through a short window of the entire stream. If you're interested in implementing this pattern, well, you're in luck. 
+Infinite scroll patterns are popular on social media sites, where the app represents content as a continuous stream of information. As a user, you'll likely never see the beginning or end of the stream, but you can scrub through a short window of the entire stream. If you're interested in implementing this pattern, well, you're in luck.
 
 So far in this video series, we've covered the most common triggers of `click` and `change`, but HTMX has [so many more options](https://htmx.org/attributes/hx-trigger/). We'll also be using the `hx-swap` value of `afterend` to keep our scrolling going and going and going. By the end of this section, our goal is to have an infinite collection of cards visible in our UI.
 
@@ -38,7 +38,7 @@ public class Scroll: PageModel
 }
 ```
 
-Remember, the ternary design is to support both the initial page load and subsequent requests to the same endpoint. I prefer this approach, but you could also separate the two behaviors of "full page load" and "partial page load" into distinct endpoints. 
+Remember, the ternary design is to support both the initial page load and subsequent requests to the same endpoint. I prefer this approach, but you could also separate the two behaviors of "full page load" and "partial page load" into distinct endpoints.
 
 As you may have noticed, we have a partial view of `_Cards`. Let's take a look at the Razor view.
 

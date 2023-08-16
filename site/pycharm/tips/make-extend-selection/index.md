@@ -20,26 +20,26 @@ cardThumbnail: ./card.png
 video: 'https://youtu.be/mvZg7TaRjCM'
 ---
 
-In coding, we select code and operate on it. For example, move it to 
+In coding, we select code and operate on it. For example, move it to
 another line, change its indentation, etc.
 
 You can use your mouse to make your selection. Or, use the keyboard.
 
-For example, use 
-`Move Caret to Previous Word with Selection` (`Shift-Ctrl-Left/Right` 
-Win/Linux, `Alt-Shift-Left/Right` macOS) to (a) move the cursor 
-forward or backward a word, while (b) expanding the selection along 
+For example, use
+`Move Caret to Previous Word with Selection` (`Shift-Ctrl-Left/Right`
+Win/Linux, `Alt-Shift-Left/Right` macOS) to (a) move the cursor
+forward or backward a word, while (b) expanding the selection along
 the way. Want to select three words? Do it three times.
 
-In Python code you frequently want to gradually expand a selection 
-from where the cursor is at: the symbol, then the substatement, 
+In Python code you frequently want to gradually expand a selection
+from where the cursor is at: the symbol, then the substatement,
 then the full statement, then the line, then the block, etc.
-`Extend Selection` (`Ctrl-W or Shift-Ctrl-W` Win/Linux, 
-`Alt-Up/Down` macOS) is ideal. It works semantically. Keep pressing it 
-until you get the selection you want. Go too far? Do the inverse to 
+`Extend Selection` (`Ctrl-W or Shift-Ctrl-W` Win/Linux,
+`Alt-Up/Down` macOS) is ideal. It works semantically. Keep pressing it
+until you get the selection you want. Go too far? Do the inverse to
 shrink the selection.
 
 Without using the mouse.
 
-Finally, PyCharm also [supports multiselection](https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#multiselection) 
-aka multiple carets. 
+Finally, PyCharm also [supports multiselection](https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#multiselection)
+aka multiple carets.

@@ -10,4 +10,3 @@ subtitle: >-
 pagination:
   resourceType: tip
 ---
-

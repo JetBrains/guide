@@ -11,7 +11,7 @@ subtitle: Using the Dependency Diagram in IntelliJ IDEA Ultimate
 thumbnail: ./thumbnail.png
 ---
 
-If you are using IntelliJ IDEA Ultimate, you can also view your dependencies as a diagram. 
+If you are using IntelliJ IDEA Ultimate, you can also view your dependencies as a diagram.
 
 ## Show Diagrams
 We can open diagrams either by right-clicking the project in the Project tool window and selecting **Diagrams | Show Diagrams**, or by using the shortcut **⌥ ⇧ ⌘ U** (on macOS) or **Ctrl+Alt+Shift+U** (on Windows/Linux). You'll notice this gives you several diagram options to choose from. In this case, we're interested in the **Gradle Dependencies**, so we select that one. We can hide all tool windows (**⇧⌘F12** on macOS / **Control+Shift+F12** on Windows/Linux), so we can focus on the diagram.

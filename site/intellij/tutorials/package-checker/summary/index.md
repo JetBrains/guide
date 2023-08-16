@@ -25,7 +25,6 @@ Here are the IntelliJ IDEA shortcuts that we used.
 | Context Actions                                                                                                        | **⌥⏎**         | **Alt+Enter**            |
 | [Load Maven Changes](https://www.jetbrains.com/help/idea/delegate-build-and-run-actions-to-maven.html?#maven_reimport) | **⌘⇧I**        | **Ctrl+Shift+O**         |
 
-
 ### Related Links
 - [(video) JetBrains - IntelliJ IDEA Ultimate: Package Checker](https://www.youtube.com/watch?v=RWtN4WNQsX4)
 - [(blog) JetBrains - Ensure Greater Software Security With Package Analysis by Checkmarx in IntelliJ IDEA](https://blog.jetbrains.com/idea/2022/04/ensure-greater-software-security-with-package-analysis-by-checkmarx-in-intellij-idea/)

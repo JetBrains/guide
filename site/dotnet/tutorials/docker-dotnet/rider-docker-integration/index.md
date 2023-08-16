@@ -79,7 +79,7 @@ From the **Port Bindings** tab, we can map an internal port to a host machine po
 
 As we learned in the **Common Terminology** section of this tutorial, volumes are persistent storage on the host. Even when deleting an existing container, the data stored in these volumes will carry on. We can attach new or existing volumes from the **Volume Bindings** tab.
 
-![Volume binding dialog](./11-volume-binding-dialog.png) 
+![Volume binding dialog](./11-volume-binding-dialog.png)
 
 ### File Explorer
 

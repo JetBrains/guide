@@ -16,7 +16,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
-If you’re using Bootstrap or another CSS library linked from a 
-CDN, you can get completion for the class names from that library – no 
-need to add its sources to the project. For this, press *Alt+Enter* on the 
+If you’re using Bootstrap or another CSS library linked from a
+CDN, you can get completion for the class names from that library – no
+need to add its sources to the project. For this, press *Alt+Enter* on the
 link in the HTML file and select *Download library*.

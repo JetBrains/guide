@@ -15,6 +15,6 @@ seealso:
     href: 'https://www.jetbrains.com/help/idea/searching-everywhere.html'
 video: 'https://youtu.be/c2i2n3wIbKU'
 ---
-Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can search across Classes, Files, Symbols and Actions. 
+Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can search across Classes, Files, Symbols and Actions.
 
 You can also use forward slash to filter the results to a specific area, such as _/editor_.

@@ -27,5 +27,5 @@ João Antunes works as a software engineer, mostly with .NET technologies, but h
 
 João loves exploring new technologies, discovering new fringe topics to investigate, and diving into over-engineering sessions, but he always tries to remember the basics and how they're essential to everything else.
 
-* Twitter: https://twitter.com/joaofbantunes
-* Blog: https://blog.codingmilitia.com/
+* Twitter: <https://twitter.com/joaofbantunes>
+* Blog: <https://blog.codingmilitia.com/>

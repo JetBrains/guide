@@ -3,7 +3,8 @@ title: Python
 subtitle: Work productively when coding Python.
 accent: primary
 icon: fab fa-python
-obsoletes: ["/pycharm/topics/python/"]
+obsoletes:
+  - /pycharm/topics/python/
 ---
 
 PyCharm is focused on productive Python development, with many IDE

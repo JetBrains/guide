@@ -29,5 +29,5 @@ Lorraine founded the software development company Khanyisa Real Systems (KRS) in
 
 Lorraine has presented on such varied topics as Domain-Driven-Design, compassionate leadership, clean code and refactoring, women in tech, and many Agile topics dear to her heart (often based in XP practices).
 
-* Twitter: https://twitter.com/lor_krs
-* Blog: https://beingrealblog.wordpress.com/
+* Twitter: <https://twitter.com/lor_krs>
+* Blog: <https://beingrealblog.wordpress.com/>

@@ -58,8 +58,8 @@ playlistItems:
   - /pycharm/tips/create-sqlite-connection/
 ---
 
-Development is about focus and flow. Learning your tool helps you get 
+Development is about focus and flow. Learning your tool helps you get
 into the flow and stay there.
 
-This playlist shows a variety of IDE tips and tricks from across the 
+This playlist shows a variety of IDE tips and tricks from across the
 major usages of PyCharm.

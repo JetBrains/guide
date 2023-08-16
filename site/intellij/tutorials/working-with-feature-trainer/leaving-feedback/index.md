@@ -14,4 +14,4 @@ video: 'https://youtu.be/Uxwi4ibDoHE'
 ## We Want to Hear Your Feedback
 The feedback survey will ask you a few questions such as which of our IDEs you were working with and your experience with them, and it will ask you for your feedback as well. You can optionally rank lessons that you liked the most and even vote for what you'd like to see in the Feature Trainer in a future release.  
 
-Please do take the time to provide us with your thoughts by clicking [Leave feedback](https://surveys.jetbrains.com/s3/features-trainer-feedback-java) at the bottom of the module list. 
+Please do take the time to provide us with your thoughts by clicking [Leave feedback](https://surveys.jetbrains.com/s3/features-trainer-feedback-java) at the bottom of the module list.

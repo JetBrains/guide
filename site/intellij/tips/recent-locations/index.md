@@ -19,5 +19,5 @@ seealso:
 video: 'https://youtu.be/Sk9mJel9KZM'
 ---
 Press **⇧⌘E** (macOS), or **Shift+Ctrl+E** (Windows/Linux), to view your recent locations.
- 
+
 You can filter the recent locations list to files that you've changed by using the same shortcut again.

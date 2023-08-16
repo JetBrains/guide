@@ -30,6 +30,6 @@ François is currently Senior Developer Advocate at Amazon Web Services, advocat
 
 Then he worked 3 years at Microsoft France, helping .NET developers – at customers’ companies, at ISVs, and in meetup communities – to get the most out of Microsoft Developer Tools. He joined Amazon Web Services in 2019 to help .NET developers using AWS Cloud to build, test, and deploy efficiently and securely on AWS Cloud.
 
-You can find more here: https://www.linkedin.com/in/francoisbouteruche
+You can find more here: <https://www.linkedin.com/in/francoisbouteruche>
 
-* Twitter: https://www.twitter.com/fbouteruche
+* Twitter: <https://www.twitter.com/fbouteruche>

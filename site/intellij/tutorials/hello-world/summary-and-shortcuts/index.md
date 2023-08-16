@@ -12,7 +12,7 @@ In this tutorial you used the [New Project Wizard](https://www.jetbrains.com/hel
 
 You created a class that printed `Hello World` to the console using both [Live Templates](https://www.jetbrains.com/help/idea/using-live-templates.html) and [Code Completion](https://www.jetbrains.com/help/idea/auto-completing-code.html).
 
-You [ran that project](https://www.jetbrains.com/help/idea/running-applications.html) using the [gutter icons](https://www.jetbrains.com/help/idea/settings-gutter-icons.html), and then you used the [Project Structure](https://www.jetbrains.com/help/idea/project-settings-and-structure.html) dialog to [package the application into a JAR file](https://www.jetbrains.com/help/idea/compiling-applications.html#package_into_jar). 
+You [ran that project](https://www.jetbrains.com/help/idea/running-applications.html) using the [gutter icons](https://www.jetbrains.com/help/idea/settings-gutter-icons.html), and then you used the [Project Structure](https://www.jetbrains.com/help/idea/project-settings-and-structure.html) dialog to [package the application into a JAR file](https://www.jetbrains.com/help/idea/compiling-applications.html#package_into_jar).
 
 You then created a new [Run Configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html) for the JAR file and [ran the application](https://www.jetbrains.com/help/idea/running-applications.html) again with the new run configuration.
 

@@ -26,5 +26,5 @@ While trying to manage the application, it will become apparent that it is not o
 
 Jacob is a Software Engineer with a passion for quality, testing, and sharing knowledge. He likes organizing Coding Dojos or even Code Retreats to help teams grow and learn to develop qualitative software.
 
-* Twitter: https://www.twitter.com/jacobduijzer
-* Blog: https://blog.duijzer.com
+* Twitter: <https://www.twitter.com/jacobduijzer>
+* Blog: <https://blog.duijzer.com>

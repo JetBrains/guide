@@ -16,17 +16,17 @@ cardThumbnail: ./card.png
 video: 'https://youtu.be/hfWhDwp7zz8'
 ---
 
-Some functions or classes -- well, let's admit it, they are kind of chatty. 
-They require lots of arguments, have lots of optional keyword arguments, 
+Some functions or classes -- well, let's admit it, they are kind of chatty.
+They require lots of arguments, have lots of optional keyword arguments,
 some with default values.
 
 So you stop, go look at the function, and come back to what you were doing.
 
-There's a better way. With your cursor in the parentheses, invoke 
-`Parameter Info` (`Ctrl-P` Win/Linux, `Cmd-P` macOS.) You get a tiny 
-popup with the positional and keyword arguments, along with any default 
-values. Bold is used to mark the current spot in the parameter list that 
+There's a better way. With your cursor in the parentheses, invoke
+`Parameter Info` (`Ctrl-P` Win/Linux, `Cmd-P` macOS.) You get a tiny
+popup with the positional and keyword arguments, along with any default
+values. Bold is used to mark the current spot in the parameter list that
 your cursor is at.
 
-You can invoke this before you type any parameters, after you've typed 
+You can invoke this before you type any parameters, after you've typed
 a few, or later if you come back to make a change.

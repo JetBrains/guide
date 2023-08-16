@@ -29,7 +29,7 @@ In addition to Recent Files, IntelliJ IDEA allows you to go to your Recent Locat
 
 Go To Declaration or Usages (**⌘B** | **Ctrl+B**) is a great way to answer the question "Where is this declared?" or "Where is this used?".
 
-Similarly, Go to Implementation (**⌘⌥B** | **Ctrl+Alt+B**) can tell you and subsequently take you to where a method has been implemented. 
+Similarly, Go to Implementation (**⌘⌥B** | **Ctrl+Alt+B**) can tell you and subsequently take you to where a method has been implemented.
 
 ## Navigating Forward and Backwards & Preview Tab
 

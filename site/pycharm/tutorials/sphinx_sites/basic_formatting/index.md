@@ -27,7 +27,7 @@ As you'd expect, bold and italics works fine. Add the following line:
 
 ```markdown
 We are **bold** and *innovative*.
-``` 
+```
 
 In your browser you should see this new paragraph with `<strong>` and `<em>` formatting:
 
@@ -125,7 +125,7 @@ While this works well, perhaps we want it served locally.
 Download that URL to a file named `python-logo.png`, in the same directory as `about_us.md`:
 
 ```bash
-$ wget https://www.python.org/static/community_logos/python-logo.png
+wget https://www.python.org/static/community_logos/python-logo.png
 ```
 
 Then change the line you added above to say this instead:

@@ -8,7 +8,7 @@ subtitle: Wrapping the migration up
 thumbnail: ./thumbnail.png
 video: 'https://youtu.be/F8UTTTDtbH0?start=808'
 ---
-Now we've removed all references to JUnit 4 classes and functionality, we can remove the vintage engine and use just the modern JUnit 5 test engine. Load the maven changes with **⇧⌘I** (macOS), or **Ctrl+Shift+O** (Windows/Linux) and rebuild the project **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux), to see it all compiles.   
+Now we've removed all references to JUnit 4 classes and functionality, we can remove the vintage engine and use just the modern JUnit 5 test engine. Load the maven changes with **⇧⌘I** (macOS), or **Ctrl+Shift+O** (Windows/Linux) and rebuild the project **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux), to see it all compiles.
 
 Check the tests still work and pass, for example by pressing **Ctrl** twice to bring up the Run Anything window. If you type _All_ you should see the "All Tests" run configuration and run all our project's tests.
 

@@ -22,7 +22,7 @@ In the game development world, we often talk about creating games. But creating 
 
 Alexander is a seasoned game developer who has worked as a UI developer on the FIFA series, Tools Tech Lead on World of Warships, Software Developer on Rainbow 6: Siege, and Team Lead on Injustice 2 Mobile.
 
-* Twitter: https://twitter.com/Pie_Daddy
+* Twitter: <https://twitter.com/Pie_Daddy>
 
 **Victor Careil** Founder & Lead Developer of Voxel Plugin
 
@@ -30,4 +30,4 @@ Victor Careil is the founder & lead developer of Voxel Plugin. Through Voxel Plu
 
 He's very passionate about enabling developers to harness the power of voxels to create unique games. On the side, he also made several contributions to Unreal Engine including the Material Named Reroute Nodes.
 
-* Twitter: https://twitter.com/Phyronnaz
+* Twitter: <https://twitter.com/Phyronnaz>

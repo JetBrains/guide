@@ -17,7 +17,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
-With the *Refactor* This popup, you don’t need to memorize all the refactorings 
-WebStorm has, or their shortcuts: press *Ctrl+T* on macOS or *Ctrl+Alt+Shift+T* 
-on Windows/Linux, and WebStorm will show you all the available refactorings 
+With the *Refactor* This popup, you don’t need to memorize all the refactorings
+WebStorm has, or their shortcuts: press *Ctrl+T* on macOS or *Ctrl+Alt+Shift+T*
+on Windows/Linux, and WebStorm will show you all the available refactorings
 in the current context.

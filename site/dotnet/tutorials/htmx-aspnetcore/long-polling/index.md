@@ -67,7 +67,7 @@ public class Polling: PageModel
 }
 ```
 
-The partial view powering the updates is old reliable Razor with C# logic and models. Running this sample, we can see the stock values moving up and down in value at a two-second interval. 
+The partial view powering the updates is old reliable Razor with C# logic and models. Running this sample, we can see the stock values moving up and down in value at a two-second interval.
 
 ![long polling working in page](img.png)
 

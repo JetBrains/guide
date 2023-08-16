@@ -15,7 +15,7 @@ seealso:
       https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html
 video: 'https://youtu.be/Y0LhKg2tJfQ'
 ---
-Press **⌘G** (macOS), or **F3** (Windows/Linux), to move to the next occurrence of a word. 
+Press **⌘G** (macOS), or **F3** (Windows/Linux), to move to the next occurrence of a word.
 
 **Pro tip:**
 

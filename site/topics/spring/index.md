@@ -7,6 +7,7 @@ subtitle: >-
 logo: spring.png
 website: 'https://spring.io/'
 topicType: technology
-obsoletes: ["/intellij/topics/spring/"]
+obsoletes:
+  - /intellij/topics/spring/
 ---
 

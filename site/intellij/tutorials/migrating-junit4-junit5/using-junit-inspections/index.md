@@ -146,6 +146,6 @@ IntelliJ IDEA makes all of these changes automatically. Like any IntelliJ IDEA r
 
 The `beforeClass` method is run once, each before and after method is run once per test, and the `afterClass` method is run once at the end, so the overall setup works as it did under JUnit 4. The  disabled test is still not run, and there are three passing tests, the same as before.
 
-Now we've made this small change and checked that the code behaves as expected we can check in these changes too. 
+Now we've made this small change and checked that the code behaves as expected we can check in these changes too.
 
 ![run_tests.png](run_tests.png)

@@ -21,4 +21,4 @@ If you format F# code in Rider, a tool called Fantomas will be called to process
 
 Hey there, I'm Florian Verdonck from Belgium. I work as a .NET consultant and I’m hugely passionate about F#. I frequently contribute to open source projects and I'm interested in developing my public speaking skills.
 
-Twitter: https://twitter.com/verdonckflorian
+Twitter: <https://twitter.com/verdonckflorian>

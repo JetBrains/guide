@@ -18,7 +18,7 @@ standalone type and reuse it across your code.
 
 **How to use:**
 Invoke the *Refactor this* feature, _Ctrl + Alt + Shift + T on
-Windows/Linux_, and _^ + T on macOS_, on the anonymous type, then
+Windows/Linux_, and *^ + T on macOS*, on the anonymous type, then
 select the *Extract type* from the list of available
 refactorings.
 

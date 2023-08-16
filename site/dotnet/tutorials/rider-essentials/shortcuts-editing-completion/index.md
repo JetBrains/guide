@@ -30,12 +30,12 @@ Windows, menus and pop-ups will show more keyboard shortcut hints, so you can le
 
 In case you are looking for a full overview, use these cheat sheets to master your Rider keyboard scheme of choice:
 
--   [Default Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_default_win_shortcuts.pdf)
--   [Mac OS X 10.5+ Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_macosx_shortcuts.pdf)
--   [ReSharper OSX Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_ReSharper_mac_shortcuts.pdf)
--   [ReSharper Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_ReSharper_win_shortcuts.pdf)
--   [Visual Studio Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_VS_win_shortcuts.pdf)
--   [Visual Studio OSX Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_VS_mac_shortcuts.pdf)
+- [Default Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_default_win_shortcuts.pdf)
+- [Mac OS X 10.5+ Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_macosx_shortcuts.pdf)
+- [ReSharper OSX Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_ReSharper_mac_shortcuts.pdf)
+- [ReSharper Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_ReSharper_win_shortcuts.pdf)
+- [Visual Studio Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_VS_win_shortcuts.pdf)
+- [Visual Studio OSX Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_VS_mac_shortcuts.pdf)
 
 ### Search Everywhere
 

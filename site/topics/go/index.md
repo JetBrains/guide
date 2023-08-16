@@ -6,7 +6,8 @@ subtitle: >-
 website: 'https://golang.org'
 logo: ./go.png
 topicType: technology
-obsoletes: ["/goland/topics/go/"]
+obsoletes:
+  - /goland/topics/go/
 ---
 
 Go is an open source project developed by a team at Google and many contributors from the open source community.

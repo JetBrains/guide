@@ -3,7 +3,8 @@ title: Navigation Bar
 subtitle: 'Breadcrumbs-style navigation tool, permanent or on-demand.'
 accent: primary
 icon: fas fa-bezier-curve
-obsoletes: ["/pycharm/topics/navigationbar/"]
+obsoletes:
+  - /pycharm/topics/navigationbar/
 ---
 
 The Navigation Bar is a quick alternative to the Project Tool Window. On

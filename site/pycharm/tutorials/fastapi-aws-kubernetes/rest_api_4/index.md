@@ -15,11 +15,10 @@ video: 'https://www.youtube.com/watch?v=hRYNGvBm8dk'
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-
 # ReDoc
 
 As you know FastAPI provides  automatic docs support using Swagger UI. There is one more
-docs page provided by FastAPI known as **[Redoc](https://github.com/Redocly/redoc)**. 
+docs page provided by FastAPI known as **[Redoc](https://github.com/Redocly/redoc)**.
 
 **Redoc** is an open-source tool for generating documentation from OpenAPI definitions.
 
@@ -27,13 +26,11 @@ Point to your browser to **/redoc** path.
 
 ![step1](./steps/step1.png)
 
-
 By default, Redoc offers a three-panel, responsive layout:
 
 - The left panel contains a search bar and navigation menu.
 - The central panel contains the documentation.
 - The right panel contains request and response examples.
-
 
 You can even disable the docs along with changing the docs url path.
 
@@ -43,10 +40,9 @@ You can even disable the docs along with changing the docs url path.
 
 ![step4](./steps/step4.png)
 
-
 # HTTPClient
 
-There is one more thing I would like to mention. You can test the APIs through 
+There is one more thing I would like to mention. You can test the APIs through
 PyCharm itself via [HTTPClient](https://www.jetbrains.com/help/pycharm/http-client-in-product-code-editor.html).
 
 Click on **Tools** → **HTTP Client** → **Create Request in HTTP Client**.
@@ -62,7 +58,6 @@ I am going to copy the `curl` request and try to run it.
 You can see we are receiving the response, this is something you can try out when working with PyCharm.
 
 ![step8](./steps/step8.png)
-
 
 # Cart
 
@@ -87,6 +82,7 @@ And CartItems will be storing cart id and product id. In this way, we will easil
 You can observe that we have created relationships with cart and product, also a foreign key mapping of user in cart model.
 
 **models.py**
+
 ```python
 from datetime import datetime
 
@@ -122,7 +118,6 @@ class CartItems(Base):
 Reference:
 - [Concepts of backref and back_populate in SQLAlchemy](https://stackoverflow.com/questions/51335298/concepts-of-backref-and-back-populate-in-sqlalchemy)
 
-
 Now, I will go to the user model and product model where I will create back populates with the cart and cart items.
 
 ![step11](./steps/step11.png)
@@ -131,7 +126,7 @@ Let’s move ahead and create the schema. Before that, don't forget to register 
 
 ![step12](./steps/step12.png)
 
-For migrate, I will type the below command : 
+For migrate, I will type the below command :
 
 ```
 alembic revision --autogenerate
@@ -141,14 +136,13 @@ alembic upgrade head
 The tables are reflecting in our database.
 
 You can observe the foreign key relationships. In cart items we have the foreign key
-with cart id and product id. 
+with cart id and product id.
 
 In the cart table we have a foreign key with user id.
 
 ![step13](./steps/step13.png)
 
-
-Our model part is done, let’s move to cart where we will be creating routes, 
+Our model part is done, let’s move to cart where we will be creating routes,
 services, schema etc.
 
 ![step14](./steps/step14.png)
@@ -159,13 +153,13 @@ We will create the **APIRouter** and provide the tag name as **Cart**.
 
 We will be creating three apis for our cart.
 
- - Adding product to the cart
- - Getting all the items present in the cart
- - Removing cart item by id
+- Adding product to the cart
+- Getting all the items present in the cart
+- Removing cart item by id
 
 Let’s begin by writing our first api, add product to the cart.
 
-We will be passing ```product_id``` and also validate whether that 
+We will be passing ```product_id``` and also validate whether that
 specific product exists in our database or not.
 
 **router.py**
@@ -184,7 +178,7 @@ or equal to 0. If so, then the item is out of stock.
 ![step15](./steps/step15.png)
 
 On line 18, we will try to get the user information. For now, as a workaround
-I will provide the email manually but in the upcoming videos when we will 
+I will provide the email manually but in the upcoming videos when we will
 be working on auth and jwt, I will get the user info from the token.
 
 Next, I will try to get cart information. If not present then we will create a new one.
@@ -192,7 +186,6 @@ Next, I will try to get cart information. If not present then we will create a n
 ![step16](./steps/step16.png)
 
 Now, I am going to create one more async function ```add_items``` in which I will pass cart id and product id.
-
 
 ![step17](./steps/step17.png)
 
@@ -227,7 +220,7 @@ We are done with the implementation, I am going to register the cart router.
 
 Let’s now test the api in swagger.
 
-I am going to pass a valid product id. 
+I am going to pass a valid product id.
 
 ![step19](./steps/step19.png)
 
@@ -239,9 +232,7 @@ I am going to re-verify the database whether a record has been added or not.
 
 Yes, it exists. You can see the cart id coming from the cart table as foreign key relationship.
 
-
 Let’s move on with the remaining two apis, get and remove items from the cart.
-
 
 I am going to create a Pydantic Schema which will be helpful for retrieving items from the cart.
 
@@ -250,8 +241,6 @@ I will create a class ```ShowCartItems``` which inherits the BaseModel.
 Products are going to fetch the information from the product schema.
 
 I will create one more class called ```ShowCart``` which is going to return the list of cart items.
-
-
 
 **schema.py**
 
@@ -310,9 +299,7 @@ async def remove_cart_item_by_id(cart_item_id: int,
     await remove_cart_item(cart_item_id, database)
 ```
 
-
 First, we need to get the user information, then the cart id of that specific user.
-
 
 **services.py**
 
@@ -330,19 +317,19 @@ We are done, let’s test it out.
 ![step25](./steps/step25.png)
 
 I am going to pass a valid cart item id.
-      
-![step26](./steps/step26.png)                                             
+
+![step26](./steps/step26.png)
 
 You can see the item has been deleted. Let me verify that.
 
-![step27](./steps/step27.png)                                             
+![step27](./steps/step27.png)
 
 As you can see, the "get all cart items" API has returned an empty list. That means
 our cart item was successfully deleted and now our cart is completely empty.
 
-![step28](./steps/step28.png)                                             
+![step28](./steps/step28.png)
 
-I hope you understand how cart functionality works. Instead of storing cart items 
+I hope you understand how cart functionality works. Instead of storing cart items
 in a database you can store cart items in memory like redis, you can play with
 that completely up to you.
 

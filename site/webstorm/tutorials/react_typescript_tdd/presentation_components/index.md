@@ -16,7 +16,7 @@ video: 'https://youtu.be/SnCGW6JUo4E'
 ---
 
 React encourages a separation of concerns.
-UI components, aka presentation components, aka dumb components, are created by the bushel and managed by container components, aka smart components. 
+UI components, aka presentation components, aka dumb components, are created by the bushel and managed by container components, aka smart components.
 The container maintains state, logic, and passes things into the presentation component.
 
 Our Counter component is, as originally intended, a *class component* with state.
@@ -24,7 +24,7 @@ Let's make it a *presentation component* by moving the state up to the container
 
 ## Code
 
-The finished code for this tutorial step is 
+The finished code for this tutorial step is
 [in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/presentation_components/).
 
 ## Counter State
@@ -42,7 +42,7 @@ export type CounterProps = {
 
 As soon as we do that, the universe starts breaking.
 TypeScript yells at us in every one of our tests, as our `<Counter/>` component is not passing in a required prop.
-Too bad, TypeScript, you'll have to wait. 
+Too bad, TypeScript, you'll have to wait.
 
 Next, let's change our `Counter` component to *not* have local state.
 Stateless presentation components are best done with stateless *functional* components.
@@ -193,15 +193,15 @@ test("should call the incrementer function", () => {
 });
 ```
 
-We are simply ensuring that clicking the value calls the callback. 
+We are simply ensuring that clicking the value calls the callback.
 We don't even care what it was called with.
 
 ## Dumb Component Gets a Little Smarter
 
 We deleted the final test because we don't really care how the calling happens.
 But is that strictly true?
-What if the *presentation* component took care of dissecting HTML event information, extracted the relevant data, and *then* called the callback? 
-That's a better division of responsibilities. 
+What if the *presentation* component took care of dissecting HTML event information, extracted the relevant data, and *then* called the callback?
+That's a better division of responsibilities.
 The container would then be truly UI-less for this functionality.
 
 First, let's change the contract.
@@ -265,7 +265,7 @@ Start by opening `App.tsx` and `App.test.tsx` side-by-side.
 
 First, this `<App/>` component will now have some state.
 We need a type definition for the counter's state.
-We just so happen to have one left behind in `Counter.tsx`. 
+We just so happen to have one left behind in `Counter.tsx`.
 *Remove the initialState and type definition* from that file and paste it into `App.tsx`:
 
 ```typescript

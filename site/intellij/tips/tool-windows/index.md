@@ -28,7 +28,5 @@ have a simple numeric shortcut, for example the project tool window is **⌘1**
 shortcut, you can open these by using [Find Action](../find-actions), or
 [Search Everywhere](../search-everywhere).
 
-
 Don't forget, you can easily search any dialog or window in IntelliJ IDEA
 simply by typing the thing you want to search for.
-

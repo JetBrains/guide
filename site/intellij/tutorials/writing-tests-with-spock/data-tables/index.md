@@ -41,7 +41,7 @@ There's a passing "test" for each of the rows in the data table, described with 
 
 Spock's [power assertions](http://spockframework.org/spock/docs/2.0/all_in_one.html#_assertions_with_explicit_messages_now_include_power_assertions_output) show the results of calculations, all the input values, and the comparison that failed. We can use this to fix the problem.
 
-``` 
+```
 Condition not satisfied:
 
 Math.max(a, b) == max
@@ -73,4 +73,3 @@ def "should use data tables for calculating max. Max of #a and #b is #max"() {
 ```
 
 Now you know how to design data tables to create more complex sets of input and output data. Next, let's look at Spock's built-in mocking.
-

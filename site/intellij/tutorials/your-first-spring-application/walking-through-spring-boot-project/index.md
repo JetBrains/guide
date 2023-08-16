@@ -23,7 +23,7 @@ Let's take a look around some aspects of the project. The easiest way to do this
 This folder has been created because Spring Boot uses the Maven wrapper when you create a Spring Boot project with the Maven build system. This means you don't have to install Maven locally to run your Spring Boot project. You should commit this project to version control, but you can ignore it from now on.
 
 ### The Maven pom.xml File
-This file is generated with the dependencies that you selected when we created this project. 
+This file is generated with the dependencies that you selected when we created this project.
 
 ```xml
 <dependencies>
@@ -39,10 +39,10 @@ This file is generated with the dependencies that you selected when we created t
   </dependency>
 </dependencies>
 ```
+
 The first dependency on ```spring-boot-starter-web``` is there because we selected **Spring Web** as a dependency. The second dependency on ```spring-boot-starter-test``` is something you get with any Spring application. It gives you the ability to create tests with various testing libraries.
 
-It's very easy to add dependencies to your ```pom.xml``` file once you have created your Project. Use **⌘N** (macOS), or **Alt+Ins** (Windows/Linux) and then browse for your dependency. However, for our demo, these are the only dependencies that we need. 
-
+It's very easy to add dependencies to your ```pom.xml``` file once you have created your Project. Use **⌘N** (macOS), or **Alt+Ins** (Windows/Linux) and then browse for your dependency. However, for our demo, these are the only dependencies that we need.
 
 ### The SpringHelloWorldDemoApplication.java File
 Inside your **main** > **java** > **com.example.helloworld** file structure you'll see your `HelloWorldApplication.java` file. Let's take a look in more detail.
@@ -85,7 +85,7 @@ We have the basics of our Spring Boot Application at this point. You can run it 
 
 ![Gutter icon to run the application](gutter-icon-run-application.png)
 
-The application will run using the Tomcat webserver. You can verify it's working by going to your web browser and typing `localhost:8080`. Port 8080 is the default port for Tomcat. 
+The application will run using the Tomcat webserver. You can verify it's working by going to your web browser and typing `localhost:8080`. Port 8080 is the default port for Tomcat.
 
 You should get a 404 response which will look similar to this:
 
@@ -93,4 +93,4 @@ You should get a 404 response which will look similar to this:
 
 We're getting this page because we have support for REST Controllers with the `spring-boot-starter-web` dependency, but we also need to create a controller and add a request mapping for that controller. We will do both of those things in the next step.  
 
-Lastly, before we do any more development it's a good idea to stop your server from running. You can do this with **⌘F2** (macOS), or **Ctrl**+**F2** on Windows and Linux. 
+Lastly, before we do any more development it's a good idea to stop your server from running. You can do this with **⌘F2** (macOS), or **Ctrl**+**F2** on Windows and Linux.

@@ -18,7 +18,7 @@ Those who develop with .NET probably do so with C#. But F#, in particular, has g
 
 ### Resources
 
-* [Slides used in this presentation(https://www.dropbox.com/s/203mmhxldm71ryf/Why%20every%20day%20as%20a%20developer%20would%20be%20easier%20with%20F%23.pdf?dl=1)
+* [Slides used in this presentation(<https://www.dropbox.com/s/203mmhxldm71ryf/Why%20every%20day%20as%20a%20developer%20would%20be%20easier%20with%20F%23.pdf?dl=1>)
 
 ### About the Presenter
 
@@ -26,5 +26,5 @@ Those who develop with .NET probably do so with C#. But F#, in particular, has g
 
 Urs Enzler is a .NET developer since .NET was born. As a software architect, he builds flexible, reliable, and maintainable software together with his team.
 
-* Twitter: https://twitter.com/ursenzler
-* Blog: https://www.planetgeek.ch/
+* Twitter: <https://twitter.com/ursenzler>
+* Blog: <https://www.planetgeek.ch/>

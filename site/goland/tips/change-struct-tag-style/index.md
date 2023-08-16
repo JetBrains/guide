@@ -20,10 +20,10 @@ struct in a few steps.
 **How to use:**
 
 Place the cursor on a struct field, then invoke the
-*Context Actions* menu via _Alt + Enter on Windows/Linux_
-or _⌥ + ⏎ on macOS_.
+*Context Actions* menu via *Alt + Enter on Windows/Linux*
+or *⌥ + ⏎ on macOS*.
 
-Select the *Change field name style in tags*, and choose 
+Select the *Change field name style in tags*, and choose
 between one of the four styles available.
 
 <span class="tag is-rounded">New in 2021.1</span>

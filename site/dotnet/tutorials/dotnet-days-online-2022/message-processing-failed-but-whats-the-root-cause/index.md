@@ -25,4 +25,4 @@ In this session, we'll navigate how modeling techniques, integration testing, an
 
 Laila Bougria is a software engineer at Particular Software, makers of NServiceBus. She's passionate about software and always looking for patterns, both in code and in yarn. In her free time she loves to knit or crochet and spend time with her kids playing whatever the day brings!
 
-* Twitter: https://twitter.com/noctovis
+* Twitter: <https://twitter.com/noctovis>

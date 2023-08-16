@@ -17,7 +17,7 @@ Let's learn how to configure remote interpreters – SSH, Docker, Docker Compose
 ## New Interpreter
 As discussed in the previous step, to run your Python code you’ll need to configure at least one Python interpreter. In this step, we’re going to cover technologies for remote interpreters.
 
-For all of these options, make sure you have Python downloaded and installed on your machine, as well as the technology you want to use. 
+For all of these options, make sure you have Python downloaded and installed on your machine, as well as the technology you want to use.
 
 To setup a remote Python interpreter, you can either:
 - Click the Python Interpreter widget in the Status Bar and choose ‘Add Interpreter’.
@@ -68,7 +68,7 @@ If you want to run multiple containers instead of one at a time, you could use D
 
 In this example we are going to use a Django application with a PostgreSQL database running in a separate container. Let's start by cloning the project from GitHub. In this example we created two containers, one for the database and one for the application, and have Docker Compose linking them together.
 
-This repository already has a `Dockerfile` and a `docker-compose.yml` file. We are creating two services, one web and one database. With these files in place we can start configuring Docker Compose. 
+This repository already has a `Dockerfile` and a `docker-compose.yml` file. We are creating two services, one web and one database. With these files in place we can start configuring Docker Compose.
 
 In your Preferences/Settings (**⌘** | **Ctrl+Alt+S**) search for *docker* and select *Docker for &lt; your OS here &gt;*. It should be under **Build, Execution, Deployment > Docker**. It might already be configured from the earlier step. On your Status Bar click the current interpreter name and select **Add Interpreter** then select *Docker Compose* from the list.
 

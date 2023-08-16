@@ -15,9 +15,9 @@ video: >-
 ---
 **How to use:**
 Press _. (dot)_ after the function/method call and continue to
-type the *varCheckError*, or simply *vce*, postfix completion.
+type the _varCheckError_, or simply _vce_, postfix completion.
 
-It will surround your code with the appropriate boilerplate to 
+It will surround your code with the appropriate boilerplate to
 create any missing variables that are returned and handle the error
 checking part for you.
 

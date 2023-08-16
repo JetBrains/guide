@@ -3,7 +3,8 @@ title: Gaming
 subtitle: A smarter way to write code for games.
 accent: primary
 icon: fas fa-gamepad
-obsoletes: ["/dotnet/topics/gaming/"]
+obsoletes:
+  - /dotnet/topics/gaming/
 ---
 
 JetBrains Rider provides powerful support for game developers.

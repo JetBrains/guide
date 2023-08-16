@@ -20,13 +20,13 @@ Press **⌥⏎** (macOS) or **Alt+Enter** (Windows/Linux) and choose "Replace wi
 
 ```java
 public class PatternMatchingSwitch {
-	
-	void outputValueInUpperCase(Object obj) {
-		if (obj instanceof String) {
-			String s = (String) obj;
-			System.out.println(s);
-		}
-	}
+ 
+ void outputValueInUpperCase(Object obj) {
+  if (obj instanceof String) {
+   String s = (String) obj;
+   System.out.println(s);
+  }
+ }
 }
 ```
 

@@ -15,5 +15,5 @@ animatedGif:
   width: 600
   height: 300
 ---
-WebStorm will take care of commas when you move lines up and down in JSON, 
+WebStorm will take care of commas when you move lines up and down in JSON,
 JavaScript or TypeScript using *Shift+Cmd+Up/Down / Ctrl+Shift+Up/Down*.

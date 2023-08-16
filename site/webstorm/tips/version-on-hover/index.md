@@ -13,5 +13,5 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.jpeg
 ---
-Hold the *Cmd/Ctrl* key and hover over a package name in *package.json* to 
+Hold the *Cmd/Ctrl* key and hover over a package name in *package.json* to
 see its description and the latest available version.

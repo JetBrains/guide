@@ -26,7 +26,7 @@ When you open PyCharm for the first time, you are presented with the Welcome Scr
 
 <img src="welcome-screen.png" alt="Welcome Screen" width="700"/>
 
-From PyCharm's Welcome Screen, there are four main sections you can explore. 
+From PyCharm's Welcome Screen, there are four main sections you can explore.
 
 On the **Learn PyCharm** tab you can use the links to jump to documentation pages and other resources, and you can also enroll in the interactive [Feature Trainer](https://www.jetbrains.com/help/pycharm/feature-trainer.html) which is designed to quickly teach you some productivity boosters in PyCharm.
 

@@ -15,7 +15,7 @@ video: >-
 Place the cursor on a type that's not yet defined but used.
 
 Then, press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_
-and select the *Create type* action.
+and select the _Create type_ action.
 
 A type will be created. It will include all the fields too.
 
