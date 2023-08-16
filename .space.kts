@@ -212,7 +212,7 @@ fun StepsScope.deploySite() {
                     "unified-$cleanGitBranch"
                 }
 
-                File("${'$'}JB_SPACE_FILE_SHARE_PATH/_site/index.html")
+                File("/mnt/space/share/_site/index.html")
                     .writeText("<html><body><a href=\"/guide\">Explore JetBrains Guides</a></body></html>")
 
                 api.space().experimentalApi.hosting.publishSite(
