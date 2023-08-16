@@ -194,7 +194,9 @@ fun StepsScope.buildSite() {
                 cd ${'$'}cwd
 
                 ## Move site to share
-                cp -r _site/ /mnt/space/share
+                mkdir -p /mnt/space/share/_site
+                cp -r _site/ /mnt/space/share/_site
+                mv /mnt/space/share/_site/_site /mnt/space/share/_site/guide
             """.trimIndent()
         }
     }
@@ -216,6 +218,9 @@ fun StepsScope.deploySite() {
                 } else {
                     "unified-$cleanGitBranch"
                 }
+
+                File("/mnt/space/share/_site/index.html")
+                    .writeText("<html><body><a href=\"/guide\">Explore JetBrains Guides</a></body></html>")
 
                 api.space().experimentalApi.hosting.publishSite(
                         siteSource = "_site",
