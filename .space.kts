@@ -235,7 +235,7 @@ fun StepsScope.buildSiteDockerImage(dockerfile: String) {
             content = """
                  ## Copy site from share
                  mkdir -p _site
-                 cp -r ${'$'}JB_SPACE_FILE_SHARE_PATH/_site/ _site/
+                 cp -r ${'$'}JB_SPACE_FILE_SHARE_PATH/_site/ ./
             """
         }
 

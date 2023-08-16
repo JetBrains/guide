@@ -1,2 +1,2 @@
 FROM nginx:alpine
-COPY ./_site /usr/share/nginx/html/guide
+COPY ./_site/guide /usr/share/nginx/html
