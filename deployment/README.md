@@ -2,7 +2,6 @@
 
 ### Software Installation
 
-
 - [x] [Docker](https://www.docker.com/) - Docker helps developers bring their ideas to life by conquering the complexity of app development.
 
 
@@ -14,9 +13,7 @@
 Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application.
 
 ### Build Image
-
-- `docker build -t guide .`
-
+- `docker build -t guide -f Dockerfile-FullBuild.`
 
 ### Apply K8s Manifests
 
@@ -36,7 +33,3 @@ Kubernetes applications — Helm Charts help you define, install, and upgrade ev
 - If you want to test out using local docker image, make sure in the `deployment.yaml` file `imagePullPolicy` is set to `Never`
 
 The service is exposed through `NodePort` on port `30004`
-
-
-
-
