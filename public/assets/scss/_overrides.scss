@@ -62,6 +62,10 @@ a.navbar-item:focus-within {
 .image.is-contained img {
   object-fit: contain;
 }
+.card-image:first-child img {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 
 /* Glows and gradients from https://rescui.dev/components/use-glow-hover/presets/ */
 .has-glow-magenta {

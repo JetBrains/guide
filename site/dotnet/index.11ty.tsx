@@ -16,7 +16,8 @@ const frontmatter: ChannelFrontmatter = {
   resourceType: "channel",
   date: new Date(Date.UTC(2020, 1, 11)),
   author: "maartenba",
-  thumbnail: "/assets/dotnet_splash.png",
+  thumbnail: "thumbnail.png",
+  hero: "/assets/dotnet_splash.png",
   subnav: [
     { title: "dotUltimate", url: "https://www.jetbrains.com/dotnet/" },
     { title: ".NET Blog", url: "https://blog.jetbrains.com/dotnet/" },
@@ -51,7 +52,7 @@ class DotNetHomepage {
         <HeroSection
           title={channel.title}
           subtitle={channel.subtitle!}
-          image={channel.thumbnail!}
+          image={channel.hero!}
         />
         {tips && (
           <ListingSection

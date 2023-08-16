@@ -5,6 +5,13 @@ import { EleventyPage, LayoutProps } from "../../../src/models";
 export const ChannelFrontmatter = Type.Intersect([
   ResourceFrontmatter,
   Type.Object({
+    hero: Type.Optional(
+      Type.String({
+        description: "File name of the hero image",
+      })
+    )
+  }),
+  Type.Object({
     subnav: Type.Optional(
       Type.Array(
         Type.Object({
@@ -22,6 +29,8 @@ export const ChannelFrontmatter = Type.Intersect([
 export type ChannelFrontmatter = Static<typeof ChannelFrontmatter>;
 
 export class Channel extends Resource implements ChannelFrontmatter {
+
+  hero?: string;
   subnav?: ChannelFrontmatter["subnav"];
   static frontmatterSchema = ChannelFrontmatter;
 
@@ -36,6 +45,7 @@ export class Channel extends Resource implements ChannelFrontmatter {
       data,
       page,
     });
+    this.hero = data.hero;
     this.subnav = data.subnav;
   }
 

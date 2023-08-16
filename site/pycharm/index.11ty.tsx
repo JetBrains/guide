@@ -15,7 +15,8 @@ const frontmatter: ChannelFrontmatter = {
   resourceType: "channel",
   date: new Date(Date.UTC(2020, 1, 11)),
   author: "pwe",
-  thumbnail: "/assets/pycharm_splash.svg",
+  thumbnail: "thumbnail.png",
+  hero: "/assets/pycharm_splash.svg",
   subnav: [
     { title: "PyCharm", url: "https://www.jetbrains.com/pycharm/" },
     { title: "IDEA Blog", url: "https://blog.jetbrains.com/pycharm/" },
@@ -56,7 +57,7 @@ class PyCharmHomepage {
         <HeroSection
           title={channel.title}
           subtitle={channel.subtitle!}
-          image={channel.thumbnail!}
+          image={channel.hero!}
         />
         {tips && (
           <ListingSection

@@ -16,7 +16,8 @@ const frontmatter: ChannelFrontmatter = {
   resourceType: "channel",
   date: new Date(Date.UTC(2020, 1, 11)),
   author: "hs",
-  thumbnail: "/assets/intellij-idea-beam.svg",
+  thumbnail: "thumbnail.png",
+  hero: "/assets/intellij-idea-beam.svg",
   subnav: [
     { title: "IntelliJ IDEA", url: "https://www.jetbrains.com/idea/" },
     { title: "IDEA Blog", url: "https://blog.jetbrains.com/idea/" },
@@ -59,7 +60,7 @@ class IntelliJHomepage {
           titleExtraClass="has-text-white"
           subtitle={channel.subtitle!}
           subtitleExtraClass="has-text-light"
-          image={channel.thumbnail!}
+          image={channel.hero!}
         />
         {tips && (
           <ListingSection

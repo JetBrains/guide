@@ -17,7 +17,8 @@ const frontmatter: ChannelFrontmatter = {
   resourceType: "channel",
   date: new Date(Date.UTC(2020, 1, 11)),
   author: "pwe",
-  thumbnail: "/assets/webstorm-beam.svg",
+  thumbnail: "thumbnail.png",
+  hero: "/assets/webstorm-beam.svg",
   subnav: [
     { title: "WebStorm", url: "https://www.jetbrains.com/webstorm/" },
     { title: "WebStorm Blog", url: "https://blog.jetbrains.com/webstorm/" },
@@ -53,7 +54,7 @@ class WebStormHomepage {
           title={channel.title}
           subtitle={channel.subtitle!}
           subtitleExtraClass="has-text-black"
-          image={channel.thumbnail!}
+          image={channel.hero!}
         />
         {tips && (
           <ListingSection

@@ -16,7 +16,8 @@ const frontmatter: ChannelFrontmatter = {
   resourceType: "channel",
   date: new Date(Date.UTC(2020, 1, 11)),
   author: "pwe",
-  thumbnail: "/assets/goland_splash.svg",
+  thumbnail: "thumbnail.png",
+  hero: "/assets/goland_splash.svg",
   subnav: [
     { title: "GoLand", url: "https://www.jetbrains.com/go/" },
     { title: "Go Blog", url: "https://blog.jetbrains.com/go/" },
@@ -51,7 +52,7 @@ class GoLandHomepage {
         <HeroSection
           title={channel.title}
           subtitle={channel.subtitle!}
-          image={channel.thumbnail!}
+          image={channel.hero!}
         />
         {tips && (
           <ListingSection
