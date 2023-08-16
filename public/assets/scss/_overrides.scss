@@ -67,10 +67,6 @@ a.navbar-item:focus-within {
 .image.is-contained img {
   object-fit: contain;
 }
-.card-image:first-child img {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
 
 /* Inspired by https://getbootstrap.com/docs/5.3/helpers/stretched-link/ */
 .has-position-relative {

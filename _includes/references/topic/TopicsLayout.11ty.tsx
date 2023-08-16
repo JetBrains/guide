@@ -39,7 +39,7 @@ export function TopicsLayout(
 						}
 
 						return (
-							<div class="column is-6 is-4-desktop mb-5">
+							<div class="column is-6 is-4-desktop mb-5 has-box-hover">
 								<div class="is-flex has-position-relative">
 									<span class="mr-4">
 										<a href={topic.url}>
