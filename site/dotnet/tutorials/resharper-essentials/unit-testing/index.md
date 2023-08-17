@@ -23,7 +23,7 @@ video: "https://youtu.be/Y2u0K_tLmcU"
 ### Testing our Code
 
 Unit tests help make sure code behaves as expected. ReSharper assists with writing and running tests.
-It has a [test runner](https://www.jetbrains.com/help/resharper/Unit_Testing__Index.html) that supports .NET testing frameworks like xUnit, NUnit, and MSTest, and several popular JavaScript/TypeScript frameworks like QUnit and Jasmine.
+It has a [test runner](https://www.jetbrains.com/help/resharper/Unit_Testing__Index.html) that supports .NET testing frameworks like xUnit, NUnit, and MSTest.
 
 ### Exploring Unit Tests
 

@@ -47,6 +47,12 @@ class GoLandHomepage {
 			limit: 3,
 		});
 
+		const tutorials = this.getResources({
+			resourceType: "tutorial",
+			channel: channel.url,
+			limit: 3,
+		});
+
 		return (
 			<BaseLayout {...data}>
 				<HeroSection
@@ -105,11 +111,19 @@ class GoLandHomepage {
 					</div>
 				</MultiColumnSection>
 
+				{tutorials && (
+					<ListingSection
+						title={`Recent Tutorials`}
+						resources={tutorials}
+						moreLink={`${channel.url}tutorials/`}
+					/>
+				)}
 				{playlists && (
 					<ListingSection
 						title={`Recent Playlists`}
 						resources={playlists}
 						moreLink={`${channel.url}playlists/`}
+						separator={true}
 					/>
 				)}
 			</BaseLayout>

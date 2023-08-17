@@ -57,6 +57,7 @@
             "pwe",
             "rachelappel",
             "sf",
+            "svk",
             "tg",
             "vb",
             "wht"
@@ -96,6 +97,7 @@
               "angular",
               "asp.net",
               "aws",
+              "blazor",
               "build",
               "completion",
               "containers",

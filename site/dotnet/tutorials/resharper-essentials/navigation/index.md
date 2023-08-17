@@ -15,8 +15,7 @@ video: "https://youtu.be/-LlVzyzO3mA"
 
 ### Navigating Code in ReSharper
 
-No matter which programming language you use, ReSharper helps you navigate your Visual Studio solutions.
-ReSharper lets you navigate C#, F#, VB.NET, JavaScript, TypeScript, CSS, HTML and many more languages, and even provides Go-to-Text to quickly find string literals in your code files.
+No matter which programming language you use, ReSharper helps you navigate your Visual Studio solutions. ReSharper lets you navigate C#, F#, VB.NET, HTML, and many more languages, and even provides Go-to-Text to quickly find string literals in your code files.
 
 Using [Search Everywhere](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_Type.html), triggered by the <kbd>Ctrl+T</kbd> keyboard shortcut, you can navigate to types, symbols, files, string literals in source and textual files, recent edits, recent files, and recently viewed methods.
 ReSharper also [searches in referenced libraries and NuGet packages](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Navigating_to_External_Sources.html), and can decompile code or download symbol information to show external source code.
