@@ -1,8 +1,8 @@
 ---
 title: Kubernetes
-subtitle: 'Automated deployment, scaling, and management of containerized applications'
+subtitle: "Automated deployment, scaling, and management of containerized applications"
 logo: ./kubernetes.png
-website: 'https://kubernetes.io/'
+website: "https://kubernetes.io/"
 topicType: technology
 obsoletes:
   - /goland/topics/kubernetes/

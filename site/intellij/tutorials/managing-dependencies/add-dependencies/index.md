@@ -15,6 +15,7 @@ thumbnail: ./thumbnail.png
 There are several ways to add new dependencies to your project.
 
 ## From the build file using copy-paste
+
 You have probably copied a dependency from [Maven Repository](https://mvnrepository.com/) (or another website) and pasted into your build file.
 
 For example, we can copy the Gradle format for this dependency and paste it into our build.gradle file.
@@ -32,6 +33,7 @@ Or, if we are using Maven, we can copy the Maven xml format into our pom.xml.
 Did you know that if you copy-paste a Maven XML dependency into your build.gradle file, IntelliJ IDEA automatically turns it into the correct format for Gradle?
 
 ## From the build file using code completion
+
 We can also add dependencies to our build file using code completion. For example, let's add a new dependency to our pom.xml.
 
 ![Code completion in pom.xml](pom-xml-code-completion-1.png)

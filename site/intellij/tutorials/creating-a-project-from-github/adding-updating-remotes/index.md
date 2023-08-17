@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Managing your remotes for your repository
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/aBVOAnygcZw?start=173'
+video: "https://youtu.be/aBVOAnygcZw?start=173"
 ---
 
 When you're working with open source projects on GitHub, it's common to have more than one remote associated with a repository. If you go back to the intellij-samples project that we cloned from GitHub, we can see that this is actually a fork of another repository.
@@ -36,4 +36,5 @@ When you have pressed **OK** on your new remote, the Git Remotes dialog will sho
 Like most features in IntelliJ IDEA, there's more than one way to open the Manage Remotes dialog. You can also right-click on the _Remote_ node in the branches tree of the Git Log tool window, and select **Manage Remotes**.
 
 ### Related YouTube Links
+
 - [Adding a Project to Git and GitHub](https://www.youtube.com/watch?v=mf2-MOl0VXY)

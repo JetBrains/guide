@@ -6,14 +6,14 @@ topics: []
 author: hs
 subtitle: Creating a Live Template to add a `private void method`
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/Sio9MdSqXZo?start=147'
+video: "https://youtu.be/Sio9MdSqXZo?start=147"
 ---
 
 In this example, we're going to create a Live Template to insert the code construct for `private void method`:
 
 ```java
 private void <methodName>(<optional arguments>) {
-  
+
 }
 ```
 
@@ -40,7 +40,7 @@ private void $METHOD_NAME$($ARGS$) {
 [Variables](https://www.jetbrains.com/help/idea/template-variables.html) start and end with the $ (dollar) sign and are used to capture your input when you use the Live Template. You can name your variables in any way you like, however the $END$ [variable is pre-defined](https://www.jetbrains.com/help/idea/template-variables.html#pdtv) in IntelliJ IDEA and determines where the caret lands at the end of your Live Template:
 
 | Code          | Meaning                                |
-|---------------|----------------------------------------|
+| ------------- | -------------------------------------- |
 | $METHOD_NAME$ | Variable for the name of the method    |
 | $ARGS$        | Variable for method arguments          |
 | $END$         | Variable for the carets final location |

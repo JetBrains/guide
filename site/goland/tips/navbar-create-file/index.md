@@ -10,24 +10,25 @@ subtitle: >-
   tree.
 seealso:
   - title: Creating Files from Templates
-    href: 'https://www.jetbrains.com/help/go/creating-files-from-templates.html'
+    href: "https://www.jetbrains.com/help/go/creating-files-from-templates.html"
   - title: Navigation bar
-    href: 'https://www.jetbrains.com/help/go/part-4-using-the-navigation-bar.html'
+    href: "https://www.jetbrains.com/help/go/part-4-using-the-navigation-bar.html"
   - title: Navigating Tips and Tricks
-    href: 'https://www.jetbrains.com/help/go/navigation-bar.html'
+    href: "https://www.jetbrains.com/help/go/navigation-bar.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=tkJQmxhMPP0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=38
 ---
-*Want to create files without interrupting your flow?*
+
+_Want to create files without interrupting your flow?_
 
 Want to create a file somewhere in your project tree, without the mouse?
 
 **How to use:**
 
-Use the *Navigation Bar*, Alt + Home on Windows/Linux_or_⌘ + ↑ on macOS_,
+Use the _Navigation Bar_, Alt + Home on Windows/Linux*or*⌘ + ↑ on macOS*,
 to get to a directory then use the keyboard to make and open a new file at
-the target, with_Alt + Insert on Windows/Linux_or_⌘ + N on macOS_.
+the target, with_Alt + Insert on Windows/Linux_or*⌘ + N on macOS\_.
 
 <span class="tag is-rounded">New in 2017.3</span>

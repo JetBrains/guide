@@ -2,7 +2,7 @@
 title: Amazon AWS
 subtitle: Amazon Web Services (AWS) is a secure cloud services platform
 logo: ./aws_logo.svg
-website: 'https://aws.amazon.com'
+website: "https://aws.amazon.com"
 topicType: technology
 obsoletes:
   - /pycharm/topics/aws/

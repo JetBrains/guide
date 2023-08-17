@@ -10,15 +10,15 @@ subtitle: >-
   tree.
 seealso:
   - title: Creating Files from Templates
-    href: 'https://www.jetbrains.com/help/pycharm/creating-files-from-templates.html'
+    href: "https://www.jetbrains.com/help/pycharm/creating-files-from-templates.html"
   - title: Navigation bar
     href: >-
       https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
   - title: Navigating Tips and Tricks
-    href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
+    href: "https://www.jetbrains.com/help/pycharm/navigation-bar.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/h6s20RMLIXk'
+video: "https://youtu.be/h6s20RMLIXk"
 ---
 
 How can I create a file if I've turned off the Project Tool? Let the
@@ -27,8 +27,8 @@ Navigation Bar be your one-stop replacement for the Project Tool.
 First, get to the target directory:
 
 - Activate the Navigation Bar with
-`Navigate -> Jump to Navigation Bar` (`Alt-Home` Win/Linux,
-`Cmd-Up` macOS)
+  `Navigate -> Jump to Navigation Bar` (`Alt-Home` Win/Linux,
+  `Cmd-Up` macOS)
 
 - Use the cursor keys to get to the target directory
 

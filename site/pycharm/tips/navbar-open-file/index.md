@@ -13,10 +13,10 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
   - title: Navigating Tips and Tricks
-    href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
+    href: "https://www.jetbrains.com/help/pycharm/navigation-bar.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/JQE95x7t4aU'
+video: "https://youtu.be/JQE95x7t4aU"
 ---
 
 If you've closed the Project Tool window and hidden the Navigation
@@ -28,8 +28,8 @@ But other times, you want to browse instead of search.
 As shown previously, use the Navigation Bar to select a file:
 
 - Activate the Navigation Bar with
-`Navigate -> Jump to Navigation Bar` (`Alt-Home` Win/Linux,
-`Cmd-Up` macOS)
+  `Navigate -> Jump to Navigation Bar` (`Alt-Home` Win/Linux,
+  `Cmd-Up` macOS)
 
 - Use the cursor keys to get to the target directory
 
@@ -40,7 +40,7 @@ open your file. Clicking with the mouse also works.
 
 As a note, this is a very common pattern for jumping to a file in
 the current directory. In this case, you don't have to press
-`Left` to go up to the directory. Even though the  current file selected,
+`Left` to go up to the directory. Even though the current file selected,
 you can still press `Down` or better still, just start speed searching.
 
 Opening the file isn't the only operation you can do on a selected

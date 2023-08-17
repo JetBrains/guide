@@ -10,10 +10,10 @@ author: ap
 subtitle: Analyze your codebase and highlight known vulnerabilities in go.mod
 seealso:
   - title: Vulnerability checker
-    href: 'https://www.jetbrains.com/help/go/vulnerability-checker.html'
+    href: "https://www.jetbrains.com/help/go/vulnerability-checker.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/IAyrykPc8gc'
+video: "https://youtu.be/IAyrykPc8gc"
 ---
 
 Along with packages that have vulnerabilities in _go.mod_, GoLand highlights method calls from packages with known vulnerabilities right in your editor.

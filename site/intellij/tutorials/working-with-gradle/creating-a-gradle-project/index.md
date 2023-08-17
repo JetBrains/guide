@@ -8,7 +8,7 @@ topics:
 author: tg
 subtitle: Start by creating a brand-new project that uses Gradle as the build tool.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/6V6G3RyxEMk?start=17'
+video: "https://youtu.be/6V6G3RyxEMk?start=17"
 ---
 
 First, let's look at creating a new Gradle project. We can choose ["New Project" from the Welcome Screen](https://www.jetbrains.com/help/idea/new-project-wizard.html), or choose New Project from the File menu if we already have an IntelliJ IDEA project open, either will bring up the New Project window.

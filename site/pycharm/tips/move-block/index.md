@@ -6,12 +6,12 @@ topics:
 author: pwe
 subtitle: Use the keyboard to move a line or selection up or down in your file.
 seealso:
-  - title: 'Adding, Deleting and Moving Code Elements'
+  - title: "Adding, Deleting and Moving Code Elements"
     href: >-
       https://www.jetbrains.com/help/pycharm/adding-deleting-and-moving-lines.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://www.youtube.com/watch?v=TxlOhgpiKhY'
+video: "https://www.youtube.com/watch?v=TxlOhgpiKhY"
 ---
 
 We want to operate on code in the editor fast. Using Cut-and-Paste is

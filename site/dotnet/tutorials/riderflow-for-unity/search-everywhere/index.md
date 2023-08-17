@@ -12,7 +12,7 @@ author: citizenmatt
 subtitle: Quickly search throughout your project. For anything!
 thumbnail: ./thumbnail.png
 video:
-  url: 'https://www.youtube.com/watch?v=75r6TRwCc_o'
+  url: "https://www.youtube.com/watch?v=75r6TRwCc_o"
   start: 405
   end: 602
 ---
@@ -26,10 +26,11 @@ You can use the slider in the **Results** window to change the view. The slider 
 Click on an item to highlight it in the editor and navigate.
 
 You will see several tabs in the popup window:
-* All: Search everywhere.
-* Hierarchy: Search GameObjects in Scenes.
-* Files: Search for assets (scripts, prefabs, models, materials, etc.).
-* Actions: Search throughout the Unity interface for all actions you can invoke.
+
+- All: Search everywhere.
+- Hierarchy: Search GameObjects in Scenes.
+- Files: Search for assets (scripts, prefabs, models, materials, etc.).
+- Actions: Search throughout the Unity interface for all actions you can invoke.
 
 ### See Also
 

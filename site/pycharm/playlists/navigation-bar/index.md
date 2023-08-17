@@ -7,7 +7,7 @@ topics:
   - navigationbar
   - pytest
 author: pwe
-subtitle: 'Move around files with keyboard, without wasting screen UI space'
+subtitle: "Move around files with keyboard, without wasting screen UI space"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:

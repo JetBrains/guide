@@ -12,6 +12,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=cPn30TtZRO0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=30
 ---
+
 GoLand provides code completion suggestions for all modules in the modules
 cache as you type.
 

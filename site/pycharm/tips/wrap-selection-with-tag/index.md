@@ -11,7 +11,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/surrounding-blocks-of-code-with-language-constructs.html#Surrounding_Blocks_of_Code_with_Language_Constructs.xml
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/GK7DEI6zOB8'
+video: "https://youtu.be/GK7DEI6zOB8"
 ---
 
 You're in an HTML file, working on a nice block of markup, and realize your

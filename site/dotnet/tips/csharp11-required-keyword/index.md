@@ -19,6 +19,7 @@ animatedGif:
   width: 600
   height: 200
 ---
+
 In C# 11, when a member is declared as `required`, the compiler will issue an error when the member is not set at creation:
 
 ```csharp
@@ -37,4 +38,5 @@ ReSharper and Rider fully support the `required` keyword: it is recognized in yo
 They also provide code analysis and quick-fixes to initialize the required fields and properties.
 
 ### See Also
+
 - [Required Keyword, Checked Operators, nameof Operator Scope (blog post)](https://blog.jetbrains.com/dotnet/2023/03/06/required-keyword-checked-operators-nameof-operator-scope-using-csharp-11-in-rider-and-resharper/)

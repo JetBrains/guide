@@ -3,7 +3,7 @@ title: Databases
 subtitle: Integrated visual database tool for PyCharm
 accent: primary
 icon: fas fa-database
-website: 'https://jetbrains.com/datagrip'
+website: "https://jetbrains.com/datagrip"
 topicType: technology
 obsoletes:
   - /goland/topics/databases/

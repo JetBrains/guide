@@ -8,10 +8,10 @@ subtitle: >-
   GitHub & SSH Keys, Git Windows OpenSSH Config and Multiple Git Keys
   (Personal/Work)
 thumbnail: ./thumbnail.png
-video: 'https://www.youtube.com/watch?v=UnM4QAumuCQ&start=1160s'
+video: "https://www.youtube.com/watch?v=UnM4QAumuCQ&start=1160s"
 ---
 
 # Keys
 
-* The best way to work with GitHub & SSH Keys
-* How to use Windows' OpenSSH config to manage multiple GitHub Keys
+- The best way to work with GitHub & SSH Keys
+- How to use Windows' OpenSSH config to manage multiple GitHub Keys

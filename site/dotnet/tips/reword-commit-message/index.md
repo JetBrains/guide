@@ -6,14 +6,14 @@ topics:
   - rider
   - vcs
 author: pwe
-subtitle: 'Edit the wording in your last commit message, after you committed.'
+subtitle: "Edit the wording in your last commit message, after you committed."
 seealso:
   - title: Edit a commit message
     href: >-
       https://www.jetbrains.com/help/rider/Edit_project_history.html#reword-commit
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/qjaCu9BYeUg'
+video: "https://youtu.be/qjaCu9BYeUg"
 ---
 
 That last commit message…(sigh)...had a typo.

@@ -8,13 +8,13 @@ topics:
 author: pwe
 subtitle: Make your tests more focused by moving sample data to pytest fixtures.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/lidTnXTFssM'
+video: "https://youtu.be/lidTnXTFssM"
 ---
 
 Each test recreates `Player` and `Guardian` instances, which is repetitive and distracts from the test's purpose.
 [pytest fixtures](https://docs.pytest.org/en/latest/fixture.html) give a rich infrastructure for your test data.
 
-In this tutorial step we convert our tests to use fixtures, which we then share between files using ``conftest.py``.
+In this tutorial step we convert our tests to use fixtures, which we then share between files using `conftest.py`.
 
 # Make a `Player` Once
 
@@ -22,9 +22,9 @@ We have a `Player` instance that we currently make in four of our tests.
 It's the same instance with the same arguments.
 It would be nice to avoid repetition and let our tests focus on the logic under test, instead of setting up a baseline of test data.
 
-Let's make a `pytest` fixture named ``player_one`` which constructs and returns a ``Player``:
+Let's make a `pytest` fixture named `player_one` which constructs and returns a `Player`:
 
-```python  {1,6-8}
+```python {1,6-8}
 import pytest
 from laxleague.guardian import Guardian
 from laxleague.player import Player
@@ -36,7 +36,7 @@ def player_one() -> Player:
 ```
 
 This fixture can now be used as an argument to your tests.
-``pytest`` will find the "appropriate" (more on this later) fixture with that name, invoke it, and pass in the result:
+`pytest` will find the "appropriate" (more on this later) fixture with that name, invoke it, and pass in the result:
 
 ```python
 def test_construction(player_one):
@@ -46,7 +46,7 @@ def test_construction(player_one):
 ```
 
 Our tests still pass.
-We then make the same change in the other tests, taking the ``player_one`` fixture as an argument instead of constructing a `Player` in the test body.
+We then make the same change in the other tests, taking the `player_one` fixture as an argument instead of constructing a `Player` in the test body.
 
 Let's next make a fixture to hold the `Guardian` list:
 
@@ -71,7 +71,7 @@ def guardians() -> Tuple[Guardian, ...]:
     return g1, g2, g3
 ```
 
-After converting all the tests to use these fixtures, our ``test_player.py`` looks like the following:
+After converting all the tests to use these fixtures, our `test_player.py` looks like the following:
 
 ```python
 {% include "./demos/test_player01.py" %}
@@ -88,7 +88,7 @@ Next we give `test_guardian.py` the same treatment:
 ```
 
 Hmm, something looks wrong.
-We said fixtures helped *avoid* repetition, but this `guardians` fixture is the same as the one in `test_player.py`.
+We said fixtures helped _avoid_ repetition, but this `guardians` fixture is the same as the one in `test_player.py`.
 That's repetition.
 Is there a way to move fixtures out of tests, then share them between tests?
 

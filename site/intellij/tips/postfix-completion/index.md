@@ -11,16 +11,16 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (video) Code Completion in IntelliJ IDEA
-    href: 'https://www.youtube.com/watch?v=jTud6GIqVgk'
+    href: "https://www.youtube.com/watch?v=jTud6GIqVgk"
   - title: (video) Tips for Writing Code
-    href: 'https://www.youtube.com/watch?v=_Y1y8k-OTCQ&t=7s'
+    href: "https://www.youtube.com/watch?v=_Y1y8k-OTCQ&t=7s"
   - title: (documentation) IntelliJ IDEA Help - Postfix Completion
     href: >-
       https://www.jetbrains.com/help/idea/auto-completing-code.html#postfix_completion
   - title: (documentation) IntelliJ IDEA Help - Create custom postfix templates
     href: >-
       https://www.jetbrains.com/help/idea/auto-completing-code.html#reference.custom.postfix.templates
-video: 'https://youtu.be/jTud6GIqVgk'
+video: "https://youtu.be/jTud6GIqVgk"
 ---
 
 Postfix completion is designed so that you append some abbreviation to the end

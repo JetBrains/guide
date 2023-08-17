@@ -13,7 +13,7 @@ topics:
 author: maartenba
 subtitle: Roman Provazník
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/2xLnUhnv_wY'
+video: "https://youtu.be/2xLnUhnv_wY"
 ---
 
 In this talk, I'll walk you through an amazing journey that started more than two years ago. We wanted to use artificial intelligence to predict the most fuel-efficient way to operate a vessel in the North and Baltic Seas, lowering carbon footprint. We were able to develop a robust solution with the right choice of cloud-based services combined with a subtle and effective .NET language. I'm going to show you how all this was possible.
@@ -26,4 +26,4 @@ Roman Provazník is a Principal Technical Lead .NET & Architect of CN Group CZ, 
 
 As a big fan of the functional-first .NET language F#, he founded the Czech F# community which he loves to maintain and grow.
 
-* Twitter: <https://twitter.com/dzoukr>
+- Twitter: <https://twitter.com/dzoukr>

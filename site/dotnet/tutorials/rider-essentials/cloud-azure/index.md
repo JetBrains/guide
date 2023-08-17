@@ -9,9 +9,9 @@ topics:
   - rider
   - web
 author: rachelappel
-subtitle: 'Using the Azure plugin in Rider, and working with Azure Functions.'
+subtitle: "Using the Azure plugin in Rider, and working with Azure Functions."
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/9zxUywlFXmY'
+video: "https://youtu.be/9zxUywlFXmY"
 ---
 
 ### Cloud Support

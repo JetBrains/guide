@@ -10,7 +10,7 @@ author: pwe
 subtitle: Create a React+TypeScript project with the create-react-app scaffolding tool.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/wm8WdAB64gw'
+video: "https://youtu.be/wm8WdAB64gw"
 ---
 
 React has become very popular, as has TypeScript.
@@ -43,13 +43,13 @@ If you are using a JetBrains IDE that includes [WebStorm](https://www.jetbrains.
 
 You now have a working React+TypeScript project, toolchain, and hello-world style app.
 It's actually quite an achievement.
-Assembling all of this, and *keeping* it assembled, is an incredible effort.
+Assembling all of this, and _keeping_ it assembled, is an incredible effort.
 `create-react-app` has shifted that off your shoulders, onto their shoulders.
 
 ## Show Me a Page
 
 Let's see this React+TypeScript app in our browser.
-``npm`` scripts make it easy to discover commands that are common to a project.
+`npm` scripts make it easy to discover commands that are common to a project.
 The most common?
 Starting the dev server, which compiles the universe, serves a page over HTTP, and helpfully opens your browser:
 
@@ -85,8 +85,8 @@ Now, in `package.json`, click the green play icon in the gutter by the `start` r
 ![Running the npm start script](./screenshots/package_json_start.png)
 
 As you can see, the generated `package.json` is quite compact.
-The genius of `create-react-app` lies in moving a bunch of "What the hell is this?" configuration files, into *its* packages.
-Thus, *they* own those decisions and complexity.
+The genius of `create-react-app` lies in moving a bunch of "What the hell is this?" configuration files, into _its_ packages.
+Thus, _they_ own those decisions and complexity.
 You can then upgrade those packages and gain new/fixed wiring of all the JavaScript build tools.
 
 ## Production Build
@@ -105,7 +105,7 @@ Thus, you can copy the site to a static hosting site, as-is.
 Running this in the IDE's UI, instead of the terminal, is easy: just click on `build` in the `npm` tool window, or better still, use the gutter icon in `package.json`.
 
 The IDE should mark the new `build` directory as "excluded" giving it a different color in the folder listing.
-If not, right-click on the new ``build`` directory and ``Mark Directory As | Excluded``.
+If not, right-click on the new `build` directory and `Mark Directory As | Excluded`.
 This prevents the IDE from indexing the contents of that directory.
 
 ## This Is Only a Test

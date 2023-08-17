@@ -10,7 +10,7 @@ subtitle: >-
   Writing code means writing broken code. Click a link in a traceback to open a
   file on the line of the error.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/U2ex-V51-PY'
+video: "https://youtu.be/U2ex-V51-PY"
 ---
 
 Since we have `Guardian` now, let's hook it up to allow adding a `Guardian` to a `Player`.
@@ -76,7 +76,7 @@ Let's start with a test in `test_player.py`:
 ```
 
 We first need to ensure, in `test_construction`, that we have an empty list for `player.guardians`.
-Then, in the new test `test_add_guardian`, we make both a player *and* a guardian, add the guardian to the player, and test the result.
+Then, in the new test `test_add_guardian`, we make both a player _and_ a guardian, add the guardian to the player, and test the result.
 This means we also import `Guardian` in this test.
 
 Both tests fail:
@@ -116,7 +116,7 @@ Pretend for a moment that we made a typo. Do the following:
 
 ![Jump To Error](./jump_to_error.png)
 
-When writing code under testing, you will *constantly* make mistakes and generate exceptions.
+When writing code under testing, you will _constantly_ make mistakes and generate exceptions.
 PyCharm's handy exception links let you jump right to the error.
 
 # The Benefit of Type Hints When Writing Tests
@@ -138,7 +138,6 @@ What does "fail faster" mean?
 
 - Or, have your IDE prompt, via autocomplete, what is valid before you
   type it
-  
 - All of this, in TDD, as you are a consumer of your own code
 
 Let's see it in action. Our `Player` dataclass says that `guardians` is a `list`, but a list of what?

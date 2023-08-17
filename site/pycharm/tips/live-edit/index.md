@@ -9,7 +9,7 @@ subtitle: >-
   updates as you save.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/xf90Ko64hRc'
+video: "https://youtu.be/xf90Ko64hRc"
 ---
 
 PyCharm Professional bundles WebStorm and, with the optional LiveEdit plugin,

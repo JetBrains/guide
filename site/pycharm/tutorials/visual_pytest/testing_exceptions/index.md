@@ -8,11 +8,11 @@ topics:
 author: pwe
 subtitle: Write tests which ensure exceptions are raised when expected.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/eBO2FmoeLKw'
+video: "https://youtu.be/eBO2FmoeLKw"
 ---
 
 In the previous step we showed how to debug a problem.
-Let's show how to write a test that *recreates* the problem -- *and* ensures our Python code handles it correctly -- by using `pytest` exception assertions.
+Let's show how to write a test that _recreates_ the problem -- _and_ ensures our Python code handles it correctly -- by using `pytest` exception assertions.
 
 We'll then refactor the code to detect that situation and return `None`, writing tests before doing the refactoring.
 
@@ -34,10 +34,11 @@ def test_no_primary_guardian(player_one):
 As we type the code above, don't forget to use autocomplete to let PyCharm generate `import pytest` for you.
 
 This test uses a special context manager facility in `pytest`, in which you run a block of code that you expect to raise an exception, and let `pytest` handle it.
-You test will *fail* if the exception is not raised.
+You test will _fail_ if the exception is not raised.
 The context manager optionally lets you add `as exc` to then do some asserts after the block, about the nature of the exception value.
 
 # Return `None` Instead
+
 x
 Perhaps we decide that raising an exception isn't a good pattern.
 Instead, we want to detect if `self.guardians` is empty, and if so, return `None`.

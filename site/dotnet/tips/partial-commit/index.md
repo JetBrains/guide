@@ -8,10 +8,10 @@ author: pwe
 subtitle: Unselect files or changed regions within files during the commit process.
 seealso:
   - title: Commit part of a file
-    href: 'https://www.jetbrains.com/help/rider/Commit_and_push_changes.html#push'
+    href: "https://www.jetbrains.com/help/rider/Commit_and_push_changes.html#push"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/OlFg1g3hcLs'
+video: "https://youtu.be/OlFg1g3hcLs"
 ---
 
 You’ve done a lot of work, but not all the changes should go in one commit.

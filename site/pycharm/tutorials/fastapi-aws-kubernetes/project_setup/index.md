@@ -10,7 +10,7 @@ topics:
 author: mm
 subtitle: Setting up FastAPI project type in PyCharm Professional.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=_AFwFvGnEpY'
+video: "https://www.youtube.com/watch?v=_AFwFvGnEpY"
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
@@ -19,7 +19,7 @@ In this tutorial we are going to set up the FastAPI project with PyCharm. We are
 going to use the PyCharm Professional EAP **2021.3** which includes a FastAPI project type. EAP stands
 for **Early Access Program** but very soon it will be part of the stable release.
 
-* **Note**: Just for your information, I am running this entire project in a virtual machine  through VMWare workstation which has Ubuntu 20.04 LTS
+- **Note**: Just for your information, I am running this entire project in a virtual machine through VMWare workstation which has Ubuntu 20.04 LTS
 
 # Virtual Environment
 
@@ -79,19 +79,19 @@ the interpreter like Docker, remote SSH, WSL etc.
 
 Once the interpreter has been configured, I am going to click on **Create**.
 
-Our project got successfully bootstrapped. PyCharm has generated two files:  ```main.py``` and ```test_main.http```
+Our project got successfully bootstrapped. PyCharm has generated two files: `main.py` and `test_main.http`
 
 ![step6](./steps/step6.png)
 
-The ```main.py``` contains two apis : ```root``` and ```say_hello```
+The `main.py` contains two apis : `root` and `say_hello`
 
-The ```root``` is going to return a json response with a message
-hello world and the ```say_hello``` function returns a string
+The `root` is going to return a json response with a message
+hello world and the `say_hello` function returns a string
 which accepts a parameter name from the user.
 
 If you have observed then you can see that it took only 8 lines of code to write our first API.
 
-The ```test_main.http``` contains the FastAPI endpoints where you can test your rest apis,
+The `test_main.http` contains the FastAPI endpoints where you can test your rest apis,
 something similar to [Newman](https://github.com/postmanlabs/newman) CLI.
 
 ![step7](./steps/step7.png)
@@ -148,7 +148,7 @@ expose docs to the outside world.
 
 You can see now it's showing Not Found, this is really cool.
 
-You can change path name in ```docs_url``` to point towards a
+You can change path name in `docs_url` to point towards a
 different path name, completely up to you.
 
 ![step17](./steps/step17.png)

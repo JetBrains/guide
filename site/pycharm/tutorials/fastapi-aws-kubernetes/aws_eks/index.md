@@ -12,9 +12,8 @@ subtitle: >-
   Deploying application using EKS, RDS, ElastiCache, Route53 & AWS Certificate
   Manager.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=fAb6OW9Uur4'
+video: "https://www.youtube.com/watch?v=fAb6OW9Uur4"
 ---
-
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
@@ -41,6 +40,7 @@ follow that easily or there are tons of articles available on how to do that.
 ![step3](./steps/step3.png)
 
 References :
+
 - [https://eksctl.io/](https://eksctl.io/)
 - [https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html)
 
@@ -73,10 +73,10 @@ We have successfully configured.
 # Elastic Container Registry (ECR)
 
 Next, we will go to ECR which is the [Elastic Container Registry](https://aws.amazon.com/ecr/). We will push our
- Docker image to our ECR repository. I am actually trying to cover the use case when some people out
+Docker image to our ECR repository. I am actually trying to cover the use case when some people out
 there want to work with a private registry instead of using a public registry like DockerHub.
 
-I will create a repository and name it  **fastapi-ecommerce*. Visibility is going to be **private**.
+I will create a repository and name it **fastapi-ecommerce\*. Visibility is going to be **private\*\*.
 
 ![step9](./steps/step9.png)
 
@@ -117,7 +117,7 @@ Yes, the image is appearing now and the total size is around 179 MB.
 # Key Pairs
 
 Now, I will create a private key **PEM** file, which will be used to get inside the EC2 machine. We won’t be
-getting inside any particular instance, as we will be handling everything through Kubernetes.  But this can be
+getting inside any particular instance, as we will be handling everything through Kubernetes. But this can be
 used for many kinds of scenarios like debugging, checking something particular in the machine.
 
 I will open **Key Pairs** which are going to appear in the **EC2 Dashboard** under **Network & Security**.
@@ -170,8 +170,8 @@ managedNodeGroups:
     volumeSize: 20
     privateNetworking: true
     iam:
-      attachPolicyARNs:  # Reference: https://eksctl.io/usage/iam-policies/
-        - arn:aws:iam::<REPLACE_THIS_NUMBER>:policy/SES_EKS_Policy   # <-- custom policy
+      attachPolicyARNs: # Reference: https://eksctl.io/usage/iam-policies/
+        - arn:aws:iam::<REPLACE_THIS_NUMBER>:policy/SES_EKS_Policy # <-- custom policy
         - arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy
         - arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly
         - arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy
@@ -212,11 +212,11 @@ smoothly with the cluster.
 
 If a nodegroup includes the **attachPolicyARNs** it must also include the default node policies, like:
 
-- ```AmazonEKSWorkerNodePolicy```
-- ```AmazonEKS_CNI_Policy```
-- ```AmazonEC2ContainerRegistryReadOnly```
+- `AmazonEKSWorkerNodePolicy`
+- `AmazonEKS_CNI_Policy`
+- `AmazonEC2ContainerRegistryReadOnly`
 
-Carefully observe line number 19 the ```SES EKS Policy```, this is not the default policy,
+Carefully observe line number 19 the `SES EKS Policy`, this is not the default policy,
 instead it’s a custom policy which we have created to grant permission to send email through SES. Hang tight,
 I will show you in a while. Your ARN number is going to be different so make to sure replace that otherwise the
 cluster creation will fail.
@@ -225,14 +225,14 @@ cluster creation will fail.
 
 ```json
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": "ses:SendRawEmail",
-            "Resource": "*"
-        }
-    ]
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": "ses:SendRawEmail",
+			"Resource": "*"
+		}
+	]
 }
 ```
 
@@ -264,9 +264,9 @@ I will type:
 eksctl create cluster -f cluster.yml --auto-kubeconfig
 ```
 
-* ```auto-kubeconfig``` is going to save the config file under the directory ```.kube/eksctl/clusters```
-* The filename will be set as the cluster name which you have provided
-* Cluster creation process will take somewhere around 15-20 minutes
+- `auto-kubeconfig` is going to save the config file under the directory `.kube/eksctl/clusters`
+- The filename will be set as the cluster name which you have provided
+- Cluster creation process will take somewhere around 15-20 minutes
 
 ![step30](./steps/step30.png)
 
@@ -293,7 +293,7 @@ completely private, you can observe the internal IP and there is no external IP 
 
 # OIDC
 
-Next, we are going to approve the OIDC provider.  To use IAM roles for service accounts,
+Next, we are going to approve the OIDC provider. To use IAM roles for service accounts,
 an IAM OIDC provider must exist for your cluster.
 
 User authentication for Amazon EKS clusters can also be performed from [OpenID Connect](https://openid.net/connect/) (OIDC) Identity Provider (IDP). This
@@ -308,6 +308,7 @@ eksctl utils associate-iam-oidc-provider --region ap-south-1 --cluster fastapi-d
 ```
 
 Reference:
+
 - [https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html](https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html)
 - [https://eksctl.io/usage/iamserviceaccounts/](https://eksctl.io/usage/iamserviceaccounts/)
 
@@ -342,7 +343,7 @@ Next we will move to RDS where we will be creating our **Subnet Group**.
 
 ![step41](./steps/step41.png)
 
-I will be providing the VPC subnet private IP addresses from the  three availability zones:
+I will be providing the VPC subnet private IP addresses from the three availability zones:
 
 - ap-south-1a
 - ap-south-1b
@@ -475,7 +476,6 @@ metadata:
     app.kubernetes.io/name: alb-ingress-controller
   name: alb-ingress-controller
   namespace: kube-system
-...
 ```
 
 Kubernetes [service accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) are Kubernetes resources,
@@ -483,6 +483,7 @@ created and managed using the Kubernetes API. They are meant to be used by in-cl
 to authenticate to the Kubernetes API server or external services.
 
 Reference:
+
 - [https://kubernetes.io/docs/reference/access-authn-authz/rbac/](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 
 Next, I will go to IAM and create an **AWS Load Balancer Policy**.
@@ -495,144 +496,137 @@ I already have the IAM policy file, you can take it directly from my repository 
 
 ```json
 {
-"Version": "2012-10-17",
-"Statement": [
-{
-"Effect": "Allow",
-"Action": [
-"acm:DescribeCertificate",
-"acm:ListCertificates",
-"acm:GetCertificate"
-],
-"Resource": "*"
-},
-{
-"Effect": "Allow",
-"Action": [
-"ec2:AuthorizeSecurityGroupIngress",
-"ec2:CreateSecurityGroup",
-"ec2:CreateTags",
-"ec2:DeleteTags",
-"ec2:DeleteSecurityGroup",
-"ec2:DescribeAccountAttributes",
-"ec2:DescribeAddresses",
-"ec2:DescribeInstances",
-"ec2:DescribeInstanceStatus",
-"ec2:DescribeInternetGateways",
-"ec2:DescribeNetworkInterfaces",
-"ec2:DescribeSecurityGroups",
-"ec2:DescribeSubnets",
-"ec2:DescribeTags",
-"ec2:DescribeVpcs",
-"ec2:ModifyInstanceAttribute",
-"ec2:ModifyNetworkInterfaceAttribute",
-"ec2:RevokeSecurityGroupIngress"
-],
-"Resource": "*"
-},
-{
-"Effect": "Allow",
-"Action": [
-"elasticloadbalancing:AddListenerCertificates",
-"elasticloadbalancing:AddTags",
-"elasticloadbalancing:CreateListener",
-"elasticloadbalancing:CreateLoadBalancer",
-"elasticloadbalancing:CreateRule",
-"elasticloadbalancing:CreateTargetGroup",
-"elasticloadbalancing:DeleteListener",
-"elasticloadbalancing:DeleteLoadBalancer",
-"elasticloadbalancing:DeleteRule",
-"elasticloadbalancing:DeleteTargetGroup",
-"elasticloadbalancing:DeregisterTargets",
-"elasticloadbalancing:DescribeListenerCertificates",
-"elasticloadbalancing:DescribeListeners",
-"elasticloadbalancing:DescribeLoadBalancers",
-"elasticloadbalancing:DescribeLoadBalancerAttributes",
-"elasticloadbalancing:DescribeRules",
-"elasticloadbalancing:DescribeSSLPolicies",
-"elasticloadbalancing:DescribeTags",
-"elasticloadbalancing:DescribeTargetGroups",
-"elasticloadbalancing:DescribeTargetGroupAttributes",
-"elasticloadbalancing:DescribeTargetHealth",
-"elasticloadbalancing:ModifyListener",
-"elasticloadbalancing:ModifyLoadBalancerAttributes",
-"elasticloadbalancing:ModifyRule",
-"elasticloadbalancing:ModifyTargetGroup",
-"elasticloadbalancing:ModifyTargetGroupAttributes",
-"elasticloadbalancing:RegisterTargets",
-"elasticloadbalancing:RemoveListenerCertificates",
-"elasticloadbalancing:RemoveTags",
-"elasticloadbalancing:SetIpAddressType",
-"elasticloadbalancing:SetSecurityGroups",
-"elasticloadbalancing:SetSubnets",
-"elasticloadbalancing:SetWebAcl"
-],
-"Resource": "*"
-},
-{
-"Effect": "Allow",
-"Action": [
-"iam:CreateServiceLinkedRole",
-"iam:GetServerCertificate",
-"iam:ListServerCertificates"
-],
-"Resource": "*"
-},
-{
-"Effect": "Allow",
-"Action": [
-"cognito-idp:DescribeUserPoolClient"
-],
-"Resource": "*"
-},
-{
-"Effect": "Allow",
-"Action": [
-"waf-regional:GetWebACLForResource",
-"waf-regional:GetWebACL",
-"waf-regional:AssociateWebACL",
-"waf-regional:DisassociateWebACL"
-],
-"Resource": "*"
-},
-{
-"Effect": "Allow",
-"Action": [
-"tag:GetResources",
-"tag:TagResources"
-],
-"Resource": "*"
-},
-{
-"Effect": "Allow",
-"Action": [
-"waf:GetWebACL"
-],
-"Resource": "*"
-},
-{
-"Effect": "Allow",
-"Action": [
-"wafv2:GetWebACL",
-"wafv2:GetWebACLForResource",
-"wafv2:AssociateWebACL",
-"wafv2:DisassociateWebACL"
-],
-"Resource": "*"
-},
-{
-"Effect": "Allow",
-"Action": [
-"shield:DescribeProtection",
-"shield:GetSubscriptionState",
-"shield:DeleteProtection",
-"shield:CreateProtection",
-"shield:DescribeSubscription",
-"shield:ListProtections"
-],
-"Resource": "*"
-}
-]
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"acm:DescribeCertificate",
+				"acm:ListCertificates",
+				"acm:GetCertificate"
+			],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"ec2:AuthorizeSecurityGroupIngress",
+				"ec2:CreateSecurityGroup",
+				"ec2:CreateTags",
+				"ec2:DeleteTags",
+				"ec2:DeleteSecurityGroup",
+				"ec2:DescribeAccountAttributes",
+				"ec2:DescribeAddresses",
+				"ec2:DescribeInstances",
+				"ec2:DescribeInstanceStatus",
+				"ec2:DescribeInternetGateways",
+				"ec2:DescribeNetworkInterfaces",
+				"ec2:DescribeSecurityGroups",
+				"ec2:DescribeSubnets",
+				"ec2:DescribeTags",
+				"ec2:DescribeVpcs",
+				"ec2:ModifyInstanceAttribute",
+				"ec2:ModifyNetworkInterfaceAttribute",
+				"ec2:RevokeSecurityGroupIngress"
+			],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"elasticloadbalancing:AddListenerCertificates",
+				"elasticloadbalancing:AddTags",
+				"elasticloadbalancing:CreateListener",
+				"elasticloadbalancing:CreateLoadBalancer",
+				"elasticloadbalancing:CreateRule",
+				"elasticloadbalancing:CreateTargetGroup",
+				"elasticloadbalancing:DeleteListener",
+				"elasticloadbalancing:DeleteLoadBalancer",
+				"elasticloadbalancing:DeleteRule",
+				"elasticloadbalancing:DeleteTargetGroup",
+				"elasticloadbalancing:DeregisterTargets",
+				"elasticloadbalancing:DescribeListenerCertificates",
+				"elasticloadbalancing:DescribeListeners",
+				"elasticloadbalancing:DescribeLoadBalancers",
+				"elasticloadbalancing:DescribeLoadBalancerAttributes",
+				"elasticloadbalancing:DescribeRules",
+				"elasticloadbalancing:DescribeSSLPolicies",
+				"elasticloadbalancing:DescribeTags",
+				"elasticloadbalancing:DescribeTargetGroups",
+				"elasticloadbalancing:DescribeTargetGroupAttributes",
+				"elasticloadbalancing:DescribeTargetHealth",
+				"elasticloadbalancing:ModifyListener",
+				"elasticloadbalancing:ModifyLoadBalancerAttributes",
+				"elasticloadbalancing:ModifyRule",
+				"elasticloadbalancing:ModifyTargetGroup",
+				"elasticloadbalancing:ModifyTargetGroupAttributes",
+				"elasticloadbalancing:RegisterTargets",
+				"elasticloadbalancing:RemoveListenerCertificates",
+				"elasticloadbalancing:RemoveTags",
+				"elasticloadbalancing:SetIpAddressType",
+				"elasticloadbalancing:SetSecurityGroups",
+				"elasticloadbalancing:SetSubnets",
+				"elasticloadbalancing:SetWebAcl"
+			],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"iam:CreateServiceLinkedRole",
+				"iam:GetServerCertificate",
+				"iam:ListServerCertificates"
+			],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": ["cognito-idp:DescribeUserPoolClient"],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"waf-regional:GetWebACLForResource",
+				"waf-regional:GetWebACL",
+				"waf-regional:AssociateWebACL",
+				"waf-regional:DisassociateWebACL"
+			],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": ["tag:GetResources", "tag:TagResources"],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": ["waf:GetWebACL"],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"wafv2:GetWebACL",
+				"wafv2:GetWebACLForResource",
+				"wafv2:AssociateWebACL",
+				"wafv2:DisassociateWebACL"
+			],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"shield:DescribeProtection",
+				"shield:GetSubscriptionState",
+				"shield:DeleteProtection",
+				"shield:CreateProtection",
+				"shield:DescribeSubscription",
+				"shield:ListProtections"
+			],
+			"Resource": "*"
+		}
+	]
 }
 ```
 
@@ -662,6 +656,7 @@ Next, I am going to create **IAM service account**. You can associate an IAM rol
 service account can then provide AWS permissions to the containers in any pod that uses that service account.
 
 Reference:
+
 - [https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html)
 
 ![step62](./steps/step62.png)
@@ -702,6 +697,7 @@ traffic routing and provides a bridge between Kubernetes services and external o
 ![step66](./steps/step66.png)
 
 Reference:
+
 - [https://kubernetes-sigs.github.io/aws-load-balancer-controller/](https://kubernetes-sigs.github.io/aws-load-balancer-controller/)
 - [https://aws.amazon.com/blogs/opensource/kubernetes-ingress-aws-alb-ingress-controller/](https://aws.amazon.com/blogs/opensource/kubernetes-ingress-aws-alb-ingress-controller/)
 
@@ -709,7 +705,7 @@ You can check out the website for more information related to deployment, config
 
 This project was formerly known as **"AWS ALB Ingress Controller"**, and later rebranded to **"AWS Load Balancer Controller"**.
 
-I will go ahead and apply the ingress controller.  A copy of this controller file is placed in my repository you can check for more reference.
+I will go ahead and apply the ingress controller. A copy of this controller file is placed in my repository you can check for more reference.
 
 ```bash
 $ kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/master/docs/examples/alb-ingress-controller.yaml --kubeconfig=<PATH_TO_CONFIG_FILE>
@@ -812,11 +808,11 @@ Under spec, I will provide the cluster name **fastapi-demo**.
 ![step68](./steps/step68.png)
 
 ```yaml
-    spec:
-      containers:
-      - args:
+spec:
+  containers:
+    - args:
         - --ingress-class=alb
-        - --cluster-name=fastapi-demo 
+        - --cluster-name=fastapi-demo
 ```
 
 Save and exit.
@@ -832,6 +828,7 @@ Looks fine.
 Next, after the controller we need to tag our subnets for subnet discovery by the load balancer.
 
 For more information, visit the below link:
+
 - [https://aws.amazon.com/premiumsupport/knowledge-center/eks-vpc-subnet-discovery/](https://aws.amazon.com/premiumsupport/knowledge-center/eks-vpc-subnet-discovery/)
 
 I will tag all the subnets. The **shared** value allows more than one cluster to use the subnet.
@@ -872,7 +869,7 @@ metadata:
   name: postgres-service
 spec:
   type: ExternalName
-  externalName:  <RDS_ENDPOINT_URL>
+  externalName: <RDS_ENDPOINT_URL>
 ```
 
 Services with type **ExternalName** work as other regular services, but when you want to access that service name,
@@ -897,7 +894,7 @@ metadata:
   name: redis-service
 spec:
   type: ExternalName
-  externalName:  <ELASTICACHE_ENDPOINT_URL>
+  externalName: <ELASTICACHE_ENDPOINT_URL>
 ```
 
 Let’s go to **ElastiCache** and create our redis instance.
@@ -967,8 +964,8 @@ spec:
           imagePullPolicy: Always
           name: sample-container
           envFrom:
-          - secretRef:
-              name: ecommerce-secret
+            - secretRef:
+                name: ecommerce-secret
           ports:
             - containerPort: 5000
               name: fastapi
@@ -1017,13 +1014,13 @@ metadata:
   labels:
     app: ecommerce
 data:
-  DATABASE_USERNAME: cG9zdGdyZXM=                 # postgres
-  DATABASE_PASSWORD: bXVrdWwxMjM=                 # mukul123
-  DATABASE_HOST: cG9zdGdyZXMtc2VydmljZQ==         # postgres-service
-  DATABASE_NAME: c2FtcGxl                         # sample
-  REDIS_HOST: cmVkaXMtc2VydmljZQ==                # redis-service
-  REDIS_PORT: NjM3OQ==                            # 6379
-  REDIS_DB: MA==                                  # 0
+  DATABASE_USERNAME: cG9zdGdyZXM= # postgres
+  DATABASE_PASSWORD: bXVrdWwxMjM= # mukul123
+  DATABASE_HOST: cG9zdGdyZXMtc2VydmljZQ== # postgres-service
+  DATABASE_NAME: c2FtcGxl # sample
+  REDIS_HOST: cmVkaXMtc2VydmljZQ== # redis-service
+  REDIS_PORT: NjM3OQ== # 6379
+  REDIS_DB: MA== # 0
 ```
 
 **eks/deploy/celery/deployment.yml**
@@ -1047,7 +1044,7 @@ spec:
     spec:
       containers:
         - image: 254501641575.dkr.ecr.ap-south-1.amazonaws.com/fastapi-ecommerce:latest
-          command: ['celery', '-A', 'main.celery', 'worker', '-l', 'info']
+          command: ["celery", "-A", "main.celery", "worker", "-l", "info"]
           envFrom:
             - secretRef:
                 name: celery-secret
@@ -1064,9 +1061,9 @@ metadata:
   labels:
     app: ecommerce
 data:
-  REDIS_HOST: cmVkaXMtc2VydmljZQ==      # redis-service
-  REDIS_PORT: NjM3OQ==                  # 6379
-  REDIS_DB: MA==                        # 0
+  REDIS_HOST: cmVkaXMtc2VydmljZQ== # redis-service
+  REDIS_PORT: NjM3OQ== # 6379
+  REDIS_DB: MA== # 0
 ```
 
 **eks/deploy/job/migration.yml**
@@ -1082,7 +1079,7 @@ spec:
       containers:
         - name: migration-container
           image: 254501641575.dkr.ecr.ap-south-1.amazonaws.com/fastapi-ecommerce:latest
-          command: ['alembic', 'upgrade', 'head']
+          command: ["alembic", "upgrade", "head"]
           envFrom:
             - secretRef:
                 name: ecommerce-secret
@@ -1120,11 +1117,11 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/healthcheck-protocol: HTTP
     alb.ingress.kubernetes.io/healthcheck-port: traffic-port
-    alb.ingress.kubernetes.io/healthcheck-interval-seconds: '15'
-    alb.ingress.kubernetes.io/healthcheck-timeout-seconds: '5'
-    alb.ingress.kubernetes.io/success-codes: '200'
-    alb.ingress.kubernetes.io/healthy-threshold-count: '2'
-    alb.ingress.kubernetes.io/unhealthy-threshold-count: '2'
+    alb.ingress.kubernetes.io/healthcheck-interval-seconds: "15"
+    alb.ingress.kubernetes.io/healthcheck-timeout-seconds: "5"
+    alb.ingress.kubernetes.io/success-codes: "200"
+    alb.ingress.kubernetes.io/healthy-threshold-count: "2"
+    alb.ingress.kubernetes.io/unhealthy-threshold-count: "2"
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}, {"HTTP":80}]'
     alb.ingress.kubernetes.io/certificate-arn: <REPLACE_CERTIFICATE_ARN>
     alb.ingress.kubernetes.io/ssl-policy: ELBSecurityPolicy-TLS-1-2-Ext-2018-06
@@ -1196,6 +1193,7 @@ We are not using the **[ttlSecondsAfterFinished](https://kubernetes.io/docs/conc
 If we use that then after a certain amount of seconds the job will be automatically removed.
 
 Reference:
+
 - [Automatic Clean-up for Finished Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/)
 
 Now, only one thing is remaining and that is the **ingress**. But to move ahead with that we need to make
@@ -1207,7 +1205,7 @@ I will now open Route53 and click on **Create hosted zone**.
 
 ![step93](./steps/step93.png)
 
-I will provide the domain name:  **mukul.xyz**, make sure the hosted zone should be a **public hosted zone**.
+I will provide the domain name: **mukul.xyz**, make sure the hosted zone should be a **public hosted zone**.
 
 ![step94](./steps/step94.png)
 
@@ -1379,24 +1377,21 @@ And now you can see our Pods, Deployments, Jobs which are running.
 
 ![step130](./steps/step130.png)
 
-* **Important** : Make sure your policy has the permission ```ses:SendEmail```, otherwise your email won't be sent.
+- **Important** : Make sure your policy has the permission `ses:SendEmail`, otherwise your email won't be sent.
 
 **SES_EKS_Policy**
 
 ```json
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "VisualEditor0",
-            "Effect": "Allow",
-            "Action": [
-                "ses:SendEmail",      
-                "ses:SendRawEmail"
-            ],
-            "Resource": "*"
-        }
-    ]
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "VisualEditor0",
+			"Effect": "Allow",
+			"Action": ["ses:SendEmail", "ses:SendRawEmail"],
+			"Resource": "*"
+		}
+	]
 }
 ```
 

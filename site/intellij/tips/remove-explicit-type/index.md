@@ -10,7 +10,8 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (video) IntelliJ IDEA Pro Tips Alt Enter
-    href: 'https://www.youtube.com/watch?v=pWHgNm6aGdo'
-video: 'https://youtu.be/tYpgbYzHpDU'
+    href: "https://www.youtube.com/watch?v=pWHgNm6aGdo"
+video: "https://youtu.be/tYpgbYzHpDU"
 ---
+
 In Kotlin, we can remove an explicit type specification with **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux).

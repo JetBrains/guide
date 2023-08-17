@@ -9,6 +9,7 @@ thumbnail: ./thumbnail.png
 ---
 
 Navigating code is a crucial skill that we can get faster at with our IDE by using the various keyboard shortcuts to move around the codebase based on recent context, what something in the code does, or to move backwards and forwards based on our movements in time. We will look at:
+
 - Viewing Recent Files and Locations
 - Going to a Declaration or Implementations
 - Navigating Forward and Backwards & Preview Tab
@@ -18,7 +19,7 @@ Navigating code is a crucial skill that we can get faster at with our IDE by usi
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dKac7GRjSVQ" >
 </iframe>
 
-You can think of Recent Files (**⌘E** | **Ctrl+E**) as your *working context*. Many users rely on Editor Tabs for this but you can turn them off and use Recent Files to navigate around the files that you've opened recently.
+You can think of Recent Files (**⌘E** | **Ctrl+E**) as your _working context_. Many users rely on Editor Tabs for this but you can turn them off and use Recent Files to navigate around the files that you've opened recently.
 
 In addition to Recent Files, IntelliJ IDEA allows you to go to your Recent Locations (**⌘⇧E** | **Ctrl+Shift+E**) which is most helpful when you are navigating around specific points in longer classes.
 

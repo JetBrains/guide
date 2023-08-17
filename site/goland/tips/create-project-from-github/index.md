@@ -11,13 +11,14 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/go/manage-projects-hosted-on-github.html#clone-from-GitHub
   - title: GoLand Help for GitHub
-    href: 'https://www.jetbrains.com/help/go/github.html'
+    href: "https://www.jetbrains.com/help/go/github.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=_Eoefq7Qf0k&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=22
 ---
-*From repo to project in no time.*
+
+_From repo to project in no time._
 
 You need to evaluate a project. You need to get a fork. You're always
 getting code. Let GoLand do the clone and make the project.

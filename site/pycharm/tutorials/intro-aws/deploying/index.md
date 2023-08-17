@@ -7,7 +7,7 @@ topics:
 author: mm
 subtitle: Use PyCharm Professional to deploy your Lambda APIs.
 thumbnail: ../thumbnail.png
-video: 'https://youtu.be/mqNTLSOcSOw'
+video: "https://youtu.be/mqNTLSOcSOw"
 ---
 
 In this tutorial we are going to deploy our functions in AWS and test it through Postman.
@@ -26,7 +26,7 @@ and **"AWSLambdaReadOnlyAccess"** on January 25, 2021.
 For this tutorial I have used **AdministratorAccess**, but to be honest
 it's not the recommended approach from point of security and access controls.
 
-* Please follow the [Security best practices in IAM (Identity & Access Management)](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
+- Please follow the [Security best practices in IAM (Identity & Access Management)](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 
 PyCharm Professional is already open, I will right click on the project **ServerlessDemo**,
 then at the bottom I click on **Deploy Serverless Application**.
@@ -42,7 +42,7 @@ Next, I will create an S3 bucket **serverless-pycharm-demo**, it will be created
 Make sure **“Require confirmation before deploying”**
 and **“build function inside a container”** are both checked.
 
-Then finally I will click on **Deploy**. It will take some time to build and package the application.  
+Then finally I will click on **Deploy**. It will take some time to build and package the application.
 
 ![deploy_step_4](steps/step4.png)
 
@@ -57,7 +57,7 @@ Okay, the stack has been successfully deployed. I will open the AWS Management C
 
 ![deploy_step_6](steps/step6.png)
 
-Let me give you brief idea what is API Gateway. *Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.*
+Let me give you brief idea what is API Gateway. _Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale._
 
 As you can see I am in the API Gateway Console, and it is displaying the **ServerlessDemoStack** which we created.
 

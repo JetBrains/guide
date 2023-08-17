@@ -10,7 +10,7 @@ subtitle: >-
   the IDE, and tour a few more features.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/b0KrB31hN5k'
+video: "https://youtu.be/b0KrB31hN5k"
 ---
 
 In our [previous step](../project_setup/) we generated a project then
@@ -50,7 +50,7 @@ In the world of React, ESLint has become very popular and `create-react-app` com
 TSLint was once popular for TypeScript projects, but they joined forces with Microsoft's TypeScript team and ESLint to combine the effort into ESLint.
 `create-react-app  --template typescript` generates a project with this new TypeScript-friendly ESLint.
 
-The [Prettier project](https://prettier.io) is a similar, but slightly different tool...it's a *code formatter* more than a linter.
+The [Prettier project](https://prettier.io) is a similar, but slightly different tool...it's a _code formatter_ more than a linter.
 It's gotten very popular and [our IDEs now have first-class support](https://www.jetbrains.com/help/webstorm/prettier.html#prettier_before_you_start).
 Let's setup Prettier as our code formatter, replacing the IDE's built-in code formatting.
 In fact, you can setup Prettier to work with ESLint.
@@ -76,11 +76,11 @@ First, change the `App` function to return a lot less markup:
 
 ```javascript
 function App() {
-  return (
-    <div>
-      <h1>Hello React</h1>
-    </div>
-  );
+	return (
+		<div>
+			<h1>Hello React</h1>
+		</div>
+	);
 }
 ```
 

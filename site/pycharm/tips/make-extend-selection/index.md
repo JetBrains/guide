@@ -17,7 +17,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#shrink_selection
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/mvZg7TaRjCM'
+video: "https://youtu.be/mvZg7TaRjCM"
 ---
 
 In coding, we select code and operate on it. For example, move it to

@@ -14,7 +14,7 @@ subtitle: >-
   game.
 thumbnail: ./thumbnail.png
 video:
-  url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
+  url: "https://www.youtube.com/watch?v=_bvrngxZYds"
   start: 1812
   end: 2239
 ---

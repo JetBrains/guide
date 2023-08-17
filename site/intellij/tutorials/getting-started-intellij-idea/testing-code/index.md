@@ -11,6 +11,7 @@ thumbnail: ./thumbnail.png
 ---
 
 Writing tests for our code is another task you're likely to be looking to your IDE to support you with. IntelliJ IDEA can generate your tests for you with its Code Generation capabilities but there's a couple more tips that I recommend you check out when working with tests in IntelliJ IDEA. We will look at:
+
 - Splitting Windows
 - Navigating to a Test
 

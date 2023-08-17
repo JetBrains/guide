@@ -11,13 +11,13 @@ seealso:
       https://www.jetbrains.com/help/pycharm/using-breakpoints.html#breakpoint-properties
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/aIlXb2QpxXc'
+video: "https://youtu.be/aIlXb2QpxXc"
 ---
 
 Debugging? Super-useful. Visual debugging? Super-super-useful. Stepping
 through a loop until the end, when your problem surfaces? Not so much.
 
-Take a step forward on your debugging zen with *conditional* breakpoints.
+Take a step forward on your debugging zen with _conditional_ breakpoints.
 
 Let's say you have a problem on a line in your code and you want to stop
 there and see what's happening. But the problem doesn't occur the first
@@ -34,7 +34,7 @@ In the `Condition` box, type in an expression, such as `age > 90`, that
 must be true for the breakpoint to be triggered. You can use any variable
 in scope at that line, and PyCharm autocomplete works in that box.
 
-When you then debug your code, that line will be passed over *until* the
+When you then debug your code, that line will be passed over _until_ the
 condition is met. When true, the debugger stops on that line, just like
 normal.
 

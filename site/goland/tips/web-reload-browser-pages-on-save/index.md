@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=2WyNe9P_tXE&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=88
 ---
+
 The IDE can automatically reload the page opened in a browser after you make changes to an HTML file, or the linked CSS and JavaScript files.
 
 **How to use:**

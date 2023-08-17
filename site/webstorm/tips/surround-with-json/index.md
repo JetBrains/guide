@@ -1,14 +1,14 @@
 ---
 date: 2020-05-26
 title: Using Surround With
-subtitle: 'Learn how to surround items with braces, brackets, or quotation marks in JSON.'
+subtitle: "Learn how to surround items with braces, brackets, or quotation marks in JSON."
 topics:
   - editing
   - javascript
 author: er
 seealso:
   - title: JSON in WebStorm
-    href: 'https://www.jetbrains.com/help/webstorm/json.html'
+    href: "https://www.jetbrains.com/help/webstorm/json.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -16,4 +16,5 @@ animatedGif:
   width: 600
   height: 300
 ---
-Use the Surround with action (*Alt+Cmd+T/Ctrl+Alt+T*) in JSON to quickly surround items with braces, brackets, or quotation marks.
+
+Use the Surround with action (_Alt+Cmd+T/Ctrl+Alt+T_) in JSON to quickly surround items with braces, brackets, or quotation marks.

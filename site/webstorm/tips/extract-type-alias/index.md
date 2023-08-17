@@ -8,7 +8,7 @@ topics:
 author: er
 seealso:
   - title: Refactoring source code
-    href: 'https://www.jetbrains.com/help/webstorm/refactoring-source-code.html#'
+    href: "https://www.jetbrains.com/help/webstorm/refactoring-source-code.html#"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -16,4 +16,5 @@ animatedGif:
   width: 600
   height: 300
 ---
-Did you know that you can extract a type alias in your TypeScript code using a familiar shortcut for the *Extract variable* refactoring: *Cmd+Alt+V* on macOS and *Ctrl+Alt+V* on Windows and Linux.
+
+Did you know that you can extract a type alias in your TypeScript code using a familiar shortcut for the _Extract variable_ refactoring: _Cmd+Alt+V_ on macOS and _Ctrl+Alt+V_ on Windows and Linux.

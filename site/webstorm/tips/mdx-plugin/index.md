@@ -9,9 +9,10 @@ subtitle: >-
   files.
 seealso:
   - title: MDX plugin
-    href: 'https://plugins.jetbrains.com/plugin/14944-mdx'
+    href: "https://plugins.jetbrains.com/plugin/14944-mdx"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.jpeg
 ---
-Working with [MDX](https://mdxjs.com/)? Install the MDX plugin from *Preferences/Settings | Plugins* to get syntax highlighting, code completion and auto imports for React components and JavaScript symbols in your *.mdx* files.
+
+Working with [MDX](https://mdxjs.com/)? Install the MDX plugin from _Preferences/Settings | Plugins_ to get syntax highlighting, code completion and auto imports for React components and JavaScript symbols in your _.mdx_ files.

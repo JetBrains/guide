@@ -6,4 +6,3 @@ icon: fas fa-database
 obsoletes:
   - /intellij/topics/postgreSQL
 ---
-

@@ -7,7 +7,7 @@ topics:
 author: mm
 subtitle: Adding Custom Authorizers in Lambda functions
 thumbnail: ../thumbnail.png
-video: 'https://youtu.be/Q6uZ2HHIYQM'
+video: "https://youtu.be/Q6uZ2HHIYQM"
 ---
 
 For this tutorial we are going to protect our APIs from unauthorized access by
@@ -50,7 +50,7 @@ The source code is available on Github at [https://github.com/mukulmantosh/Serve
 If you have observed the logic carefully, you will notice that I have slightly refactored the code according to my requirements.
 
 You can see line number **23**, that I am retrieving the authorization
-token from the headers. Watch at  line **30** I am calling a method **auth_token_decode**
+token from the headers. Watch at line **30** I am calling a method **auth_token_decode**
 which is going to check whether the token is valid or not. If the token is
 valid then the policy is going to allow all HTTP methods else all methods will
 be denied.
@@ -79,7 +79,7 @@ for **Amazon Resource Name**.
 It’s a naming convention to identify a resource.
 
 As you can see in the below image, **JWTAuthFunction** is going to process
-the authorization once we receive the tokens.  As usual, we are going to provide the
+the authorization once we receive the tokens. As usual, we are going to provide the
 handler, runtime etc. We are also using an environment variable
 called **SECRET_KEY** for encoding and decoding of our JWT Tokens.
 
@@ -91,7 +91,7 @@ function so each API will only work when a token is provided.
 Below I have provided the final code snippet how it is going to look like.
 
 ```yaml
-{% include "./demos/template.yaml" %}
+{ % include "./demos/template.yaml" % }
 ```
 
 As you can see in my screen for the **CreateUserAPI**, I am referring to

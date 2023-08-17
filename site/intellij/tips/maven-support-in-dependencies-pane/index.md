@@ -12,6 +12,7 @@ seealso:
   - title: IntelliJ IDEA Help - Package Search build system support
     href: >-
       https://www.jetbrains.com/help/idea/package-search-build-system-support-limitations.html#maven_support
-video: 'https://youtu.be/u2keaYbs1Vg'
+video: "https://youtu.be/u2keaYbs1Vg"
 ---
+
 You can search for libraries in the Dependencies tool window, and add them straight into your Maven POM file with a single click.

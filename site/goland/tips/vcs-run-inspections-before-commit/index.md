@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=thUuuSoOKoU&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=111
 ---
+
 Committing error-free code reduces the time it takes for reviews to go happen and makes everyone happy. Since not all errors may be caught by tests, you can choose to run Inspections before a commit. This will improve your chances to have fewer bugs in code.
 
 **How to use:**

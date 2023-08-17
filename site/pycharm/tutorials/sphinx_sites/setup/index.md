@@ -13,7 +13,7 @@ thumbnail: thumbnail.png
 
 Sphinx can be added to an existing Python application or library to provide documentation.
 But it can also be used as the project itself -- for example, a website.
-In this tutorial step we start a new *website* as a new Python project, using Sphinx.
+In this tutorial step we start a new _website_ as a new Python project, using Sphinx.
 
 # Scenario
 
@@ -33,7 +33,7 @@ mkdir schlockchain
 cd schlockchain
 ```
 
-*Note: We're using macOS/Linux/WSL command shell syntax in this tutorial.*
+_Note: We're using macOS/Linux/WSL command shell syntax in this tutorial._
 
 Python recommends that projects use a [virtual environment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) for isolation.
 Real Python has a [nice primer on virtual environments](https://realpython.com/python-virtual-environments-a-primer/) with the why, what, and how.
@@ -91,7 +91,7 @@ Sphinx ships with [a site generator command](https://www.sphinx-doc.org/en/maste
 Let's run it and answer some questions, accepting most of the defaults (note that `...` is to hide my directory path):
 
 ```bash
-$ sphinx-quickstart 
+$ sphinx-quickstart
 Welcome to the Sphinx 3.2.1 quickstart utility.
 
 Please enter values for the following settings (just press Enter to
@@ -102,12 +102,12 @@ Selected root path: .
 You have two options for placing the build directory for Sphinx output.
 Either, you use a directory "_build" within the root path, or you separate
 "source" and "build" directories within the root path.
-> Separate source and build directories (y/n) [n]: 
+> Separate source and build directories (y/n) [n]:
 
 The project name will occur in several places in the built documentation.
 > Project name: Schlockchain
 > Author name(s): Paul Everitt <pauleveritt@me.com>
-> Project release []: 
+> Project release []:
 
 If the documents are to be written in a language other than English,
 you can select a language here by its language code. Sphinx will then
@@ -115,7 +115,7 @@ translate text that it generates into that language.
 
 For a list of supported codes, see
 https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language.
-> Project language [en]: 
+> Project language [en]:
 
 Creating file /.../schlockchain/conf.py.
 Creating file /.../schlockchain/index.rst.
@@ -149,7 +149,7 @@ About some of these directory items:
 
 - Empty directories exist for `_build` (generated files), `_static` (custom site assets), and `_templates` (custom templates).
 
-*Note: If you are using an IDE such as PyCharm, mark the `_build` directory as ignored.*
+_Note: If you are using an IDE such as PyCharm, mark the `_build` directory as ignored._
 
 ## Building (and Rebuilding)
 
@@ -234,7 +234,7 @@ if __name__ == '__main__':
 When you execute this Python script, it starts a local web server at a URL:
 
 ```bash
-$ python ./run_livereload.py 
+$ python ./run_livereload.py
 [I 200910 13:47:15 server:335] Serving on http://127.0.0.1:5500
 [I 200910 13:47:15 handlers:62] Start watching changes
 [I 200910 13:47:15 handlers:64] Start detecting changes
@@ -302,7 +302,7 @@ Let's put it to use by starting an "About Us" page.
 
 # First Markdown Page
 
-Let's add  `about_us.md` file alongside `index.rst`:
+Let's add `about_us.md` file alongside `index.rst`:
 
 ```
 # About Us
@@ -314,7 +314,7 @@ When you save this file, our "livereload" script runs Sphinx.
 But Sphinx is mad: it knows there is a file on disk which isn't included in the site:
 
 ```
-[E 200910 14:03:24 server:94] b"/.../schlockchain/about_us.md: WARNING: 
+[E 200910 14:03:24 server:94] b"/.../schlockchain/about_us.md: WARNING:
 document isn't included in any toctree"
 ```
 
@@ -328,7 +328,7 @@ Sphinx works by linking files into the [toctree](https://www.sphinx-doc.org/en/m
    about_us
 ```
 
-*Note: Don't want to always make such manual entries? You can use globbing in the `toctree` directive, but this will result in an unordered content listing.*
+_Note: Don't want to always make such manual entries? You can use globbing in the `toctree` directive, but this will result in an unordered content listing._
 
 Our browser now shows a link to `About Us`:
 
@@ -362,7 +362,7 @@ Next, let's convert the `index.rst` page away from RST (reStructuredText) to Mar
 Start by renaming the file to `index.md`.
 Then replace its contents with the following:
 
-~~~
+````
 # Schlockchain Homepage
 
 Welcome to the future.
@@ -370,10 +370,10 @@ Welcome to the future.
 ```{toctree}
 :maxdepth: 2
 :caption: "Contents:"
-   
+
 about_us
 ```
-~~~
+````
 
 Two specific notes: `Contents` needs to be in quotes and the `toctree` options need to be de-dented.
 Also, you might need to restart your `livereload` script and/or reload your browser.

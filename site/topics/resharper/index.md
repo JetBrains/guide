@@ -2,7 +2,7 @@
 title: ReSharper
 subtitle: The Visual Studio Extension for .NET Developers.
 logo: ./logo.png
-website: 'https://www.jetbrains.com/resharper/'
+website: "https://www.jetbrains.com/resharper/"
 topicType: product
 obsoletes:
   - /dotnet/topics/resharper/
@@ -13,5 +13,6 @@ ReSharper makes Visual Studio a much better IDE! ReSharper extends Visual Studio
 Find and remove unused code? Migrate your code to the latest C# version? Convert loops to LINQ at will? Find and prevent possible exceptions? Use a common naming standard? All that and a lot more code improvements are made possible with ReSharper's code analysis.
 
 ## See Also
+
 - [ReSharper home page](https://www.jetbrains.com/resharper/)
 - [ReSharper documentation](https://www.jetbrains.com/resharper/documentation/documentation.html)

@@ -28,7 +28,7 @@ Rider can run all your favorite unit testing frameworks like **[NUnit](https://n
 
 ![Comparison between ReSharper and Rider unit testing icons](./editor-comparison.png)
 
-The difference working within the editor with individual test files is very similar. Where the experience differs is in the overview of all unit tests in an existing solution. ReSharper users would typically utilize two windows within Visual Studio: **Unit Test Explorer**, **Unit Test Sessions**.  Within Rider, users will find a consolidated experience in the **Unit Tests** tool window.
+The difference working within the editor with individual test files is very similar. Where the experience differs is in the overview of all unit tests in an existing solution. ReSharper users would typically utilize two windows within Visual Studio: **Unit Test Explorer**, **Unit Test Sessions**. Within Rider, users will find a consolidated experience in the **Unit Tests** tool window.
 
 ![Comparison between Unit Test Explorer windows and Rider Unit Tests](./unit-tests-explorer-comparison.png)
 
@@ -68,7 +68,7 @@ While the UI is slightly different between ReSharper and Rider, developers can f
 
 ## Debugging, Coverage, and Profiling
 
-Users with a **[dotUltimate license](https://www.jetbrains.com/dotUltimate)** will also have access to integrated tools like **[dotCover](https://www.jetbrains.com/dotCover)**, **[dotMemory](https://www.jetbrains.com/dotMemory)**, and **[dotTrace](https://www.jetbrains.com/dotTrace)**.  All these tools are available via the <kbd>Alt+Enter</kbd> shortcut menu, and within the **Unit Tests** window. Within Visual Studio, hitting <kbd>Alt+Enter</kbd> over our unit test reveals several options. Rider users will see the same options listed within the IDE, in a slightly different order:
+Users with a **[dotUltimate license](https://www.jetbrains.com/dotUltimate)** will also have access to integrated tools like **[dotCover](https://www.jetbrains.com/dotCover)**, **[dotMemory](https://www.jetbrains.com/dotMemory)**, and **[dotTrace](https://www.jetbrains.com/dotTrace)**. All these tools are available via the <kbd>Alt+Enter</kbd> shortcut menu, and within the **Unit Tests** window. Within Visual Studio, hitting <kbd>Alt+Enter</kbd> over our unit test reveals several options. Rider users will see the same options listed within the IDE, in a slightly different order:
 
 - **Run**
 - **Debug**

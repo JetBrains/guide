@@ -17,12 +17,13 @@ Filter by:
 - Typing a letter, causing the list to narrow
 
 - Typing another letter...if you now match only one choice, it's selected
-and you can press enter
+  and you can press enter
 
 - Press space and type the letter of another word in the option
 
 - Use punctuation such as forward-slash to mean directory separator and
-period to mean file extension
+  period to mean file extension
 
 ## See Also
+
 - [Speed Search in Tool Windows](https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html)

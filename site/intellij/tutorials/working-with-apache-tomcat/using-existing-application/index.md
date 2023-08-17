@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 
 If you’re not creating a new project from scratch and instead have an existing project that runs on Tomcat, you can configure IntelliJ IDEA Ultimate to connect to your existing Tomcat installation. Let's work with [this application](https://github.com/helenjoscott/MyWebApp) from GitHub:
 
-1. Clone the Project in IntelliJ IDEA and then go to **Run >  Edit Configurations**.
+1. Clone the Project in IntelliJ IDEA and then go to **Run > Edit Configurations**.
 2. Select the **+** button and then **Tomcat Server > Local** (because we are running our Apache Tomcat server on our machine) from the drop-down:
 
 ![Adding Apache Tomcat to Project](new_tomcat.png)
@@ -22,4 +22,4 @@ If you’re not creating a new project from scratch and instead have an existing
 7. Select `MyWebApp:war exploded` because that will allow you to update the application code without redeploying or restarting the server.
 8. Click **OK** to finish configuring the Run configuration.
 
-You can run the application with **^R** (macOS), or **Shift+F10**  (Windows/Linux) and IntelliJ IDEA will open our browser at the application’s root context which in this case displays an actual page because this app has an `index.jsp` file.
+You can run the application with **^R** (macOS), or **Shift+F10** (Windows/Linux) and IntelliJ IDEA will open our browser at the application’s root context which in this case displays an actual page because this app has an `index.jsp` file.

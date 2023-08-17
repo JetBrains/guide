@@ -6,16 +6,16 @@ topics:
   - build
   - maven
 author: tg
-subtitle: 'The Maven Tool Window gives you access to goals, dependencies, and more.'
+subtitle: "The Maven Tool Window gives you access to goals, dependencies, and more."
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/pt3uB0sd5kY?start=3'
+video: "https://youtu.be/pt3uB0sd5kY?start=3"
 ---
 
 You can use **⌘E** (macOS), or **Ctrl+E** (Windows/Linux) again to navigate to the Maven window, and here we can see the dependencies of this project.
 
 ![maven-window.png](maven-window.png)
 
-This window lists the goals and lifecycle phases.  We can run any of these by double-clicking on them, and we can see the familiar results of running a Maven phase in the run window, including dependencies being downloaded and tests being run.
+This window lists the goals and lifecycle phases. We can run any of these by double-clicking on them, and we can see the familiar results of running a Maven phase in the run window, including dependencies being downloaded and tests being run.
 
 ![](maven-install.png)
 
@@ -23,7 +23,7 @@ If the build was successful like the one in the screenshot above, you'll see Mav
 
 ![](target-directory.png)
 
-You can also run Maven goals via **Run Anything** (**⌃⌃** (macOS), or **Ctrl+Ctrl**  (Windows/Linux)).
+You can also run Maven goals via **Run Anything** (**⌃⌃** (macOS), or **Ctrl+Ctrl** (Windows/Linux)).
 
 ![](run-anything.png)
 
@@ -31,7 +31,7 @@ You can choose to enable or disable one or more [profiles from the Maven Window]
 
 There are a number of things you can do with your project from the Maven window, be sure to take a look at all the icons to see what they can do.
 
-Everything we've looked at so far has been in the free Community Edition of IntelliJ IDEA. IntelliJ Ultimate has some extra features.  One which may be particularly useful in understanding your Maven project is seeing the Dependencies as a diagram.
+Everything we've looked at so far has been in the free Community Edition of IntelliJ IDEA. IntelliJ Ultimate has some extra features. One which may be particularly useful in understanding your Maven project is seeing the Dependencies as a diagram.
 
 ![](show-diagram.png)
 

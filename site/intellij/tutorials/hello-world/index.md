@@ -20,4 +20,3 @@ tutorialItems:
   - ./making-a-change/
   - ./summary-and-shortcuts/
 ---
-

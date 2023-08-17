@@ -10,14 +10,15 @@ subtitle: >-
   Imports.
 seealso:
   - title: Optimizing Imports
-    href: 'https://www.jetbrains.com/help/go/optimizing-imports.html'
+    href: "https://www.jetbrains.com/help/go/optimizing-imports.html"
   - title: Creating and Optimizing Imports
-    href: 'https://www.jetbrains.com/help/go/creating-and-optimizing-imports.html'
+    href: "https://www.jetbrains.com/help/go/creating-and-optimizing-imports.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=6wZnk41gVEg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=73
 ---
+
 **Optimize Imports** helps you deal with unsorted imports and unused imports.
 
 **How to use:**

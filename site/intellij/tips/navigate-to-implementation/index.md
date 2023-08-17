@@ -10,17 +10,18 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (video) Navigation in IntelliJ IDEA
-    href: 'https://www.youtube.com/watch?v=1UHsJyCq1SU'
+    href: "https://www.youtube.com/watch?v=1UHsJyCq1SU"
   - title: (video) Top 5 IntelliJ IDEA Navigation Shortcuts
-    href: 'https://www.youtube.com/watch?v=crnEBqbBWuo'
+    href: "https://www.youtube.com/watch?v=crnEBqbBWuo"
   - title: (documentation) IntelliJ IDEA Help - Go to declaration and its type
     href: >-
       https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#go_to_declaration
   - title: (documentation) IntelliJ IDEA Help - Go to implementation
     href: >-
       https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#go_to_implementation
-video: 'https://youtu.be/SXW6IpP_uB0'
+video: "https://youtu.be/SXW6IpP_uB0"
 ---
+
 You can use **⌘B** (macOS), or **Ctrl+B** (Windows/Linux), to navigate to an implementation.
 
 If a method has multiple implementations, IntelliJ IDEA will list them, so you can choose the one that you want. If there is only one implementation, IntelliJ IDEA will take you straight to it.

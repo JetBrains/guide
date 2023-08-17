@@ -5,21 +5,21 @@ topics:
   - navigation
   - navigationbar
 author: pwe
-subtitle: 'Bring up the Navigation Bar as needed, let it disappear when finished.'
+subtitle: "Bring up the Navigation Bar as needed, let it disappear when finished."
 seealso:
   - title: Navigation bar
     href: >-
       https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
   - title: Navigating Tips and Tricks
-    href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
+    href: "https://www.jetbrains.com/help/pycharm/navigation-bar.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/-uyCSK6gvp4'
+video: "https://youtu.be/-uyCSK6gvp4"
 ---
 
 Getting into the flow means stripping down your UI distraction (turn off the
-`Project` window and `Navigation Bar`) then going *keyboard-centric* to avoid
-the mouse.  But you still need to get to your files, and sometimes you'd prefer
+`Project` window and `Navigation Bar`) then going _keyboard-centric_ to avoid
+the mouse. But you still need to get to your files, and sometimes you'd prefer
 to browse instead of use `Recent Files` or the `Find File` action.
 
 If you've uncluttered your UI by hiding the Navigation Bar, bring it back on demand.

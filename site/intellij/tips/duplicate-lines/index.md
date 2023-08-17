@@ -15,6 +15,7 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Lines of code
     href: >-
       https://www.jetbrains.com/help/idea/working-with-source-code.html#editor_lines_code_blocks
-video: 'https://youtu.be/XxODsdFFlcg'
+video: "https://youtu.be/XxODsdFFlcg"
 ---
+
 Press **⌘D** (on Mac) or **Ctrl+D** (on Windows/Linux) in the editor to duplicate a selected block, or the current line when no block is selected.

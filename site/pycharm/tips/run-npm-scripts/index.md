@@ -12,8 +12,9 @@ seealso:
       https://www.jetbrains.com/help/pycharm/installing-and-removing-external-software-using-node-package-manager.html#ws_npm_run_debug_scripts_from_npm_tool_window
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/Nv5vO2loJ_c'
+video: "https://youtu.be/Nv5vO2loJ_c"
 ---
+
 Modern web development means NodeJS tools which mean a `package.json` file.
 This file sometimes has helper scripts under the `scripts` key. Running
 these perform various project operations such as `build`.
@@ -27,7 +28,7 @@ several different paths to opening the `npm` tool window:
 
 - Cmd-E npm
 
-*Note: If you leave the tool window open, resize it to take less vertical space.*
+_Note: If you leave the tool window open, resize it to take less vertical space._
 
 Now that you can see the `npm` scripts, double-click on one to run that
 npm script in a run window at the bottom. Behind the scenes, this creates

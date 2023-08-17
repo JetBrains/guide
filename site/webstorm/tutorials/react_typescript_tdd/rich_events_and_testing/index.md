@@ -12,7 +12,7 @@ subtitle: >-
   development.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/OO7OmA5UlQM'
+video: "https://youtu.be/OO7OmA5UlQM"
 ---
 
 Our counter component has local state, but doesn't respond to clicks.
@@ -45,11 +45,11 @@ import { render, fireEvent } from "@testing-library/react";
 // ...
 
 test("should increment the count by one", () => {
-  const { getByTitle } = render(<Counter />);
-  const counter = getByTitle("Current Count");
-  expect(counter).toHaveTextContent("0");
-  fireEvent.click(counter);
-  expect(counter).toHaveTextContent("1");
+	const { getByTitle } = render(<Counter />);
+	const counter = getByTitle("Current Count");
+	expect(counter).toHaveTextContent("0");
+	fireEvent.click(counter);
+	expect(counter).toHaveTextContent("1");
 });
 ```
 
@@ -73,11 +73,11 @@ Let's head to `Counter.tsx` and add a click handler on the `<span>`:
 
 ```typescript
 <span
-    id="counter"
-    title="Current Count"
-    onClick={() => this.setState({ count: this.state.count + 1 })}
+	id="counter"
+	title="Current Count"
+	onClick={() => this.setState({ count: this.state.count + 1 })}
 >
-  {this.state.count}
+	{this.state.count}
 </span>
 ```
 
@@ -109,16 +109,16 @@ render() {
 }
 ```
 
-The above was a bit of a lie: this isn't strictly a class *method*.
+The above was a bit of a lie: this isn't strictly a class _method_.
 It is a property that is an arrow function.
 This solves the issue of binding, allowing `this` to be bound to the component instance, not the event.
 
-The `incrementCounter` arrow function actually gets an *event* passed in, which we aren't using.
+The `incrementCounter` arrow function actually gets an _event_ passed in, which we aren't using.
 Let's add it in:
 
 ```typescript
 incrementCounter = (event) => {
-  this.setState({count: this.state.count + 1});
+	this.setState({ count: this.state.count + 1 });
 };
 ```
 
@@ -133,7 +133,7 @@ That's easy enough to solve:
 
 ```typescript
 incrementCounter = (event: any) => {
-  this.setState({ count: this.state.count + 1 });
+	this.setState({ count: this.state.count + 1 });
 };
 ```
 
@@ -144,7 +144,7 @@ Let's put the correct typing on the argument:
 
 ```typescript
 incrementCounter = (event: React.MouseEvent<HTMLElement>) => {
-    this.setState({count: this.state.count + 1});
+	this.setState({ count: this.state.count + 1 });
 };
 ```
 
@@ -155,9 +155,9 @@ First, in`incrementCounter`, let's determine the value to increment by, first as
 
 ```typescript {2,3}
 incrementCounter = (event: React.MouseEvent<HTMLElement>) => {
-    const inc = 10 ? event.shiftKey : 1;
-    this.setState({count: this.state.count + inc});
-}
+	const inc = 10 ? event.shiftKey : 1;
+	this.setState({ count: this.state.count + inc });
+};
 ```
 
 TypeScript told us that we were trying to add a boolean to a number.
@@ -172,7 +172,7 @@ That's closer.
 TypeScript now moves the error to the correct line:
 
 ```shell script
-Error:(28, 31) TS2365: Operator '+' cannot be applied to types 
+Error:(28, 31) TS2365: Operator '+' cannot be applied to types
 'number' and 'boolean | 1'.
 ```
 
@@ -197,8 +197,8 @@ For simulating more complex events, we need to install [user-event](https://gith
 npm install @testing-library/user-event @testing-library/dom --save-dev
 ```
 
-*Note: After installing this, you might get a TypeScript error in `pretty-format/build/index.d.ts`.
-If so, go to your `package.json` and upgrade the `typescript` version to be `^3.8.3` then `npm install`.*
+_Note: After installing this, you might get a TypeScript error in `pretty-format/build/index.d.ts`.
+If so, go to your `package.json` and upgrade the `typescript` version to be `^3.8.3` then `npm install`._
 
 Once installed, we import `userEvent` at the top of `Counter.test.tsx`:
 
@@ -211,11 +211,11 @@ Clone the last test and change it to the following:
 
 ```typescript
 test("should increment the count by ten", () => {
-  const { getByTitle } = render(<Counter />);
-  const counter = getByTitle("Current Count");
-  expect(counter).toHaveTextContent("0");
-  userEvent.click(counter, { shiftKey: true });
-  expect(counter).toHaveTextContent("10");
+	const { getByTitle } = render(<Counter />);
+	const counter = getByTitle("Current Count");
+	expect(counter).toHaveTextContent("0");
+	userEvent.click(counter, { shiftKey: true });
+	expect(counter).toHaveTextContent("10");
 });
 ```
 

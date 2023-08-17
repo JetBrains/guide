@@ -5,9 +5,9 @@ title: Background on Serverless
 topics:
   - aws
 author: mm
-subtitle: 'Introduce Microservices, AWS SAM (Serverless Application Model)'
+subtitle: "Introduce Microservices, AWS SAM (Serverless Application Model)"
 thumbnail: ../thumbnail.png
-video: 'https://youtu.be/caW7eLThBwQ'
+video: "https://youtu.be/caW7eLThBwQ"
 ---
 
 Hello everyone, welcome to the part one of the AWS PyCharm tutorial series.

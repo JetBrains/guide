@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=GPu3L9sJJ3U&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=97
 ---
+
 **How to use:**
 
 On the _Project View_ tool window, locate the gear icon, then click on it and select **Enable Preview Tab** option. After that, click on a file in the _Project View_ and it will allow you to preview its contents without creating a new tab that you then need to close.

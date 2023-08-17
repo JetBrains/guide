@@ -5,12 +5,13 @@ topics:
   - platform
   - vcs
 author: dlsniper
-subtitle: 'Find exactly what you are looking for, even if you removed it'
+subtitle: "Find exactly what you are looking for, even if you removed it"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=eViFodqP-bM&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=120
 ---
+
 With the new _Search_ field to the _Local History_ dialog you quickly get to the necessary text in your revisions.
 
 **How to use:**

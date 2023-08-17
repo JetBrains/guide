@@ -11,7 +11,7 @@ subtitle: >-
   interface describing the props.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/HYmoeUF9ZH0'
+video: "https://youtu.be/HYmoeUF9ZH0"
 ---
 
 In the previous step we made a "dumb" presentational component with one property.
@@ -43,11 +43,11 @@ import { render } from "@testing-library/react";
 import { Counter } from "./Counter";
 
 test("should render a label and counter", () => {
-  const { getByTitle } = render(<Counter />);
-  const label = getByTitle("Count Label");
-  expect(label).toBeInTheDocument();
-  const count = getByTitle("Current Count");
-  expect(count).toBeInTheDocument();
+	const { getByTitle } = render(<Counter />);
+	const label = getByTitle("Count Label");
+	expect(label).toBeInTheDocument();
+	const count = getByTitle("Current Count");
+	expect(count).toBeInTheDocument();
 });
 ```
 
@@ -60,16 +60,16 @@ Now create a file `Counter.tsx`. We'll make it a very simple class to start:
 import React, { Component } from "react";
 
 export class Counter extends Component {
-  render() {
-    return (
-      <div>
-        <span title="Count Label">Count</span>
-        <span id="counter" title="Current Count">
-          1
-        </span>
-      </div>
-    );
-  }
+	render() {
+		return (
+			<div>
+				<span title="Count Label">Count</span>
+				<span id="counter" title="Current Count">
+					1
+				</span>
+			</div>
+		);
+	}
 }
 ```
 
@@ -84,7 +84,7 @@ Not a bad first step.
 
 As we did in the previous step, we'll use a consistent process:
 
-- Work first in the test by writing a *failing* test
+- Work first in the test by writing a _failing_ test
 
 - Then fix the `Counter` presentation component
 
@@ -94,9 +94,9 @@ Thus, let's add a test for the case of passing in a label:
 
 ```typescript
 test("should render a counter with custom label", () => {
-  const { getByTitle } = render(<Counter label={`Current`} />);
-  const label = getByTitle("Current Count");
-  expect(label).toBeInTheDocument();
+	const { getByTitle } = render(<Counter label={`Current`} />);
+	const label = getByTitle("Current Count");
+	expect(label).toBeInTheDocument();
 });
 ```
 
@@ -109,19 +109,17 @@ Let's now work on the implementation.
 Classes handle props with defaults a little differently:
 
 ```typescript
-export class Counter extends Component<{ label?: string }> {
-}
+export class Counter extends Component<{ label?: string }> {}
 ```
 
 `Component` is a "generic" type, with 0, 1, or 2 parameters in between the `<>`.
 We have one parameter...for the shape of the props.
-As we did in the previous step, let's move the *inline* prop definition to a standalone, exported type:
+As we did in the previous step, let's move the _inline_ prop definition to a standalone, exported type:
 
 ```typescript
 export type CounterProps = { label?: string };
 
-export class Counter extends Component<CounterProps> {
-}
+export class Counter extends Component<CounterProps> {}
 ```
 
 The type definition says `label` can be optional.
@@ -130,17 +128,17 @@ Yes, and [a clever approach](https://react-typescript-cheatsheet.netlify.app/doc
 
 ```typescript
 export class Counter extends Component<CounterProps> {
-  render() {
-    const { label = "Count" } = this.props;
-    return (
-      <div>
-        <span title="Count Label">{label}</span>
-        <span id="counter" title="Current Count">
-          1
-        </span>
-      </div>
-    );
-  }
+	render() {
+		const { label = "Count" } = this.props;
+		return (
+			<div>
+				<span title="Count Label">{label}</span>
+				<span id="counter" title="Current Count">
+					1
+				</span>
+			</div>
+		);
+	}
 }
 ```
 
@@ -176,11 +174,11 @@ Let's change the `renders hello react` test in `App.test.tsx` to look for the la
 
 ```typescript
 test("renders hello react", () => {
-  const { getByTitle, getByText } = render(<App />);
-  const linkElement = getByText(/hello react/i);
-  expect(linkElement).toBeInTheDocument();
-  const label = getByTitle("Count Label");
-  expect(label).toBeInTheDocument();
+	const { getByTitle, getByText } = render(<App />);
+	const linkElement = getByText(/hello react/i);
+	expect(linkElement).toBeInTheDocument();
+	const label = getByTitle("Count Label");
+	expect(label).toBeInTheDocument();
 });
 ```
 

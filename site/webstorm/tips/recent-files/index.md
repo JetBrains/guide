@@ -16,5 +16,6 @@ animatedGif:
   width: 600
   height: 300
 ---
+
 Want to reopen a file you’ve just closed, or go to a specific
-tool window? The *Recent Files* popup (*Cmd/Ctrl+E*) can help you do either.
+tool window? The _Recent Files_ popup (_Cmd/Ctrl+E_) can help you do either.

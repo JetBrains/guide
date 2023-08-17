@@ -9,9 +9,9 @@ topics:
   - profiling
   - rider
 author: maartenba
-subtitle: 'Rider automatically analyzes memory of your applications, all the time!'
+subtitle: "Rider automatically analyzes memory of your applications, all the time!"
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/u-SrE8kQBI0'
+video: "https://youtu.be/u-SrE8kQBI0"
 ---
 
 ### Dynamic Program Analysis (DPA)

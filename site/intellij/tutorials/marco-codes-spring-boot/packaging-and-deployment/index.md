@@ -6,10 +6,10 @@ topics: []
 author: hs
 subtitle: Creating a .jar file and executing it
 thumbnail: ./thumbnail.png
-video: 'https://www.youtube.com/watch?v=QuvS_VLbGko&start=4437s'
+video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=4437s"
 ---
 
 ## What's in the video?
 
-* How to package up the application into a .jar file
-* How to execute your application on the command line
+- How to package up the application into a .jar file
+- How to execute your application on the command line

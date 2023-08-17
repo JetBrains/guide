@@ -9,11 +9,12 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Scratch files
-    href: 'https://www.jetbrains.com/help/idea/scratches.html'
+    href: "https://www.jetbrains.com/help/idea/scratches.html"
   - title: (blog) IntelliJ IDEA Blog - Scratch Files and Scratch Buffers
-    href: 'https://blog.jetbrains.com/idea/2020/11/scratch-files-and-scratch-buffers/'
+    href: "https://blog.jetbrains.com/idea/2020/11/scratch-files-and-scratch-buffers/"
   - title: (video) IntelliJ IDEA - Scratch Files and Scratch Buffers
-    href: 'https://youtu.be/vVcPEcbRiNI'
-video: 'https://youtu.be/pdPxVqrKYIw'
+    href: "https://youtu.be/vVcPEcbRiNI"
+video: "https://youtu.be/pdPxVqrKYIw"
 ---
+
 Use **⇧⌘N** (macOS) or **Ctrl+Alt+Shift+Insert** (Windows/Linux) to create a new scratch file. If you have content selected, the new scratch file will contain that content.

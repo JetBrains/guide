@@ -10,4 +10,4 @@ thumbnail: ./thumbnail.png
 
 ## Introduction
 
-* An overview of 7 cool command line tools, not everyone knows.
+- An overview of 7 cool command line tools, not everyone knows.

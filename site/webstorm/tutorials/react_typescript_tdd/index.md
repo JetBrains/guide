@@ -2,7 +2,7 @@
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-10-04
-title: 'React, TypeScript, and TDD'
+title: "React, TypeScript, and TDD"
 topics:
   - jest
   - react

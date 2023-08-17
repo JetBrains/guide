@@ -13,7 +13,7 @@ subtitle: >-
   Dive into inspections and quick-fixes, nullability inspections, the Heap
   Allocations Viewer plugin, and more!
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/Cqvxrj9aq_E'
+video: "https://youtu.be/Cqvxrj9aq_E"
 ---
 
 ### Inspections, Quick-Fixes and Context Actions
@@ -27,10 +27,10 @@ It may show suggestions too, helping you improve code.
 
 Inspections can help you with many things:
 
-* [Spot errors before our application runs](https://blog.jetbrains.com/dotnet/2018/05/22/using-rider-spot-errors-application-runs/)
-* [Consistent code bases using Rider code analysis](https://blog.jetbrains.com/dotnet/2018/05/24/consistent-code-bases-using-rider-code-analysis/)
-* [Solution-wide analysis in Rider](https://blog.jetbrains.com/dotnet/2018/05/21/solution-wide-analysis-rider/)
-* [Learn best practices and language features using Rider code inspections](https://blog.jetbrains.com/dotnet/2018/05/23/learning-best-practices-language-features-using-rider-code-inspections/)
+- [Spot errors before our application runs](https://blog.jetbrains.com/dotnet/2018/05/22/using-rider-spot-errors-application-runs/)
+- [Consistent code bases using Rider code analysis](https://blog.jetbrains.com/dotnet/2018/05/24/consistent-code-bases-using-rider-code-analysis/)
+- [Solution-wide analysis in Rider](https://blog.jetbrains.com/dotnet/2018/05/21/solution-wide-analysis-rider/)
+- [Learn best practices and language features using Rider code inspections](https://blog.jetbrains.com/dotnet/2018/05/23/learning-best-practices-language-features-using-rider-code-inspections/)
 
 ### Learn Language Features - C#8 and Nullability
 

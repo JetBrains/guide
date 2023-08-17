@@ -12,7 +12,7 @@ topics:
 author: maartenba
 subtitle: Let's run a first profiling session on a Sudoku solver sample application.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/-1riV47hdqw'
+video: "https://youtu.be/-1riV47hdqw"
 ---
 
 ### Sudoku Solver

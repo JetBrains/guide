@@ -13,6 +13,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=3OYoV4mDC1s&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=67
 ---
+
 **How to use:**
 Press _. (dot)_ after the function/method call and continue to
 type the _varCheckError_, or simply _vce_, postfix completion.

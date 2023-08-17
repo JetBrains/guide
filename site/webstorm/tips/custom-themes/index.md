@@ -22,6 +22,7 @@ animatedGif:
   width: 600
   height: 300
 ---
+
 WebStorm comes with a few [predefined themes](https://www.jetbrains.com/help/webstorm/user-interface-themes.html), but there’s also a variety of custom options out there to choose from.
 
-To explore the custom themes that are available, go to *Preferences/Settings | Plugins* and search the marketplace for *theme*. If none of the existing themes suit your needs, you can also create your [own](https://jetbrains.org/intellij/sdk/docs/reference_guide/ui_themes/themes_intro.html).
+To explore the custom themes that are available, go to _Preferences/Settings | Plugins_ and search the marketplace for _theme_. If none of the existing themes suit your needs, you can also create your [own](https://jetbrains.org/intellij/sdk/docs/reference_guide/ui_themes/themes_intro.html).

@@ -8,7 +8,7 @@ topics:
 author: tg
 subtitle: Take a look around a standard Gradle project to understand it better.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/6V6G3RyxEMk?start=139'
+video: "https://youtu.be/6V6G3RyxEMk?start=139"
 ---
 
 Let's take a look at our Gradle project.
@@ -37,6 +37,6 @@ The Tasks section shows all the Gradle build tasks, grouped by type. We don't ha
 
 ![Build success](./build-successful.png)
 
-The [Run tool window](https://www.jetbrains.com/help/idea/run-tool-window.html)  opens, and we see the results of the `clean` task, including all the Gradle output, so we can see what was run and what the results were. We can use this to help us debug problems if there are any issues.
+The [Run tool window](https://www.jetbrains.com/help/idea/run-tool-window.html) opens, and we see the results of the `clean` task, including all the Gradle output, so we can see what was run and what the results were. We can use this to help us debug problems if there are any issues.
 
 Next, let's look at that `build.gradle` file in more detail.

@@ -18,4 +18,3 @@ tutorialItems:
   - ./working-with-tomcat/
   - ./summary-shortcuts/
 ---
-

@@ -14,7 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Live updates based on your search query
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/6DtVIlVOhMY'
+video: "https://youtu.be/6DtVIlVOhMY"
 ---
 
 Search as you type is a user-expected staple of a modern user interface. You enter a few characters, to see the matching results so far. In this section, we'll implement a seemingly complex UX pattern, but as you'll see it's pretty straightforward to build with HTMX. While we're using an in-memory collection here, you can substitute your favorite backend search engine technology: Elasticsearch, RediSearch, or PostgreSQL.
@@ -26,18 +26,10 @@ Our initial experience starts with a humble text box. We want to pass the value 
 Given our initial UI, the first step is to decorate our search `input` element with the necessary HTMX attributes of `hx-get`, `hx-target`, `hx-trigger`, and `hx-indicator`.
 
 ```html
-<input type="text"
-       asp-for="Query"
-       id="query"
-       autocomplete="off"
-       hx-get="@Url.Page("04_Search")"
-       hx-target="#results"
-       hx-trigger="keyup changed delay:250ms"
-       hx-indicator="#loading"
-       placeholder="Search"
-       class="form-control"
-       aria-label="Username"
-       aria-describedby="search-addon">
+<input type="text" asp-for="Query" id="query" autocomplete="off"
+hx-get="@Url.Page("04_Search")" hx-target="#results" hx-trigger="keyup changed
+delay:250ms" hx-indicator="#loading" placeholder="Search" class="form-control"
+aria-label="Username" aria-describedby="search-addon">
 ```
 
 The most notable attribute in this collection is `hx-trigger`. The default trigger for input elements is `change`, but we have set the trigger to `keyup changed delay:250ms` . HTMX will only trigger the `change` event only if the last keystroke occurs in over 250 milliseconds. A `keyup` event resets the timer, giving us debounce behavior, allowing us to limit the number of requests we issue to the server. Next, let's look at our serverside implementation.
@@ -49,11 +41,11 @@ public IActionResult OnGet()
         ? Games
         : Games.Where(g => g.ToString().Contains(Query, StringComparison.OrdinalIgnoreCase)).ToList();
 
-    if (!Request.IsHtmx()) 
+    if (!Request.IsHtmx())
         return Page();
-    
+
     Response.Htmx(h => {
-        // we want to push the current url 
+        // we want to push the current url
         // into the history
         h.Push(Request.GetEncodedUrl());
     });
@@ -71,26 +63,18 @@ There are a few notable elements in the C# method:
 We mentioned previously that partials are an important tool when building HTMX-powered applications. It allows us to reuse layout in HTTP and HTMX requests. Now let's look at the contents of our partial view. How complicated can it be?
 
 ```html
-@model Exercises.Pages.Search
-@{ ArgumentNullException.ThrowIfNull(Model); }
-
-@if (Model.Results is {} games)
-{
-    @foreach (var game in games)
-    {
-        <tr>
-            <td>@game.Year</td>
-            <td>@game.Publisher</td>
-            <td>@game.Console</td>
-            <td>@game.Name</td>
-        </tr>
-    }
-}
-else
-{
-    <tr>
-        <td colspan="4">No Results for "@Model.Query"</td>
-    </tr>
+@model Exercises.Pages.Search @{ ArgumentNullException.ThrowIfNull(Model); } @if
+(Model.Results is {} games) { @foreach (var game in games) {
+<tr>
+	<td>@game.Year</td>
+	<td>@game.Publisher</td>
+	<td>@game.Console</td>
+	<td>@game.Name</td>
+</tr>
+} } else {
+<tr>
+	<td colspan="4">No Results for "@Model.Query"</td>
+</tr>
 }
 ```
 

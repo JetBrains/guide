@@ -9,14 +9,14 @@ author: pwe
 subtitle: Use the visual debugger in the IDE for smarter TDD.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/r1kwXZnO8gw'
+video: "https://youtu.be/r1kwXZnO8gw"
 ---
 
 In the [previous step](../testing/) we used testing as a way to develop our component without switching to a browser.
 
 Sometimes, though, our code has problems that require investigation with a debugger.
 For React, that usually means a trip to the browser to set a breakpoint and use the Chrome developer tools.
-Instead, let's show how the IDE's *debugger*, combined with TDD, can make this investigation far more productive.
+Instead, let's show how the IDE's _debugger_, combined with TDD, can make this investigation far more productive.
 
 ## Code
 
@@ -32,9 +32,9 @@ Let's start by getting the test code reloaded into our brain by updating the tes
 
 ```typescript {1}
 test("renders hello react", () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/hello react/i);
-  expect(linkElement).toBeInTheDocument();
+	const { getByText } = render(<App />);
+	const linkElement = getByText(/hello react/i);
+	expect(linkElement).toBeInTheDocument();
 });
 ```
 
@@ -49,7 +49,7 @@ First, add a function in `App.tsx`, above the `App` function:
 
 ```javascript
 export function label() {
-  return "Hello React";
+	return "Hello React";
 }
 ```
 
@@ -66,8 +66,8 @@ Let's do that now by adding a second test in `App.test.tsx`:
 
 ```typescript
 test("generates a label", () => {
-  const result = label();
-  expect(result).toEqual("Hello React");
+	const result = label();
+	expect(result).toEqual("Hello React");
 });
 ```
 
@@ -85,8 +85,8 @@ The `generates a label` test needs its lines changed to:
 
 ```typescript {2,3}
 test("generates a label", () => {
-  const result = label("React");
-  expect(result).toEqual("Hello REACT");
+	const result = label("React");
+	expect(result).toEqual("Hello REACT");
 });
 ```
 
@@ -101,7 +101,7 @@ Now it's just a matter of changing the function to accept an argument, then uppe
 
 ```typescript {1,2}
 export function label(name) {
-  return `Hello ${name.toUpperCase()}`;
+	return `Hello ${name.toUpperCase()}`;
 }
 ```
 
@@ -112,7 +112,7 @@ Let's fix that:
 
 ```typescript {1}
 export function label(name: string) {
-  return `Hello ${name.toUpperCase()}`;
+	return `Hello ${name.toUpperCase()}`;
 }
 ```
 
@@ -130,7 +130,7 @@ First, note that TypeScript warned that the supplied value was not assignable to
 
 ![TypeScript Error](./screenshots/ts_error.png)
 
-This is the *beauty* of TypeScript.
+This is the _beauty_ of TypeScript.
 Especially in test-writing, it helps you "fail faster".
 Meaning, when paired with a smart IDE, it moves the failure directly under your eyeballs, in the most immediate location...the place where you typed it.
 Moreover, it provides very specific error messages.

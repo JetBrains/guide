@@ -19,5 +19,6 @@ animatedGif:
   width: 600
   height: 300
 ---
+
 You can move around the locations in the files you're working on faster with keyboard shortcuts.
 Press _⇧⌘⌫ / Ctrl+Shift+Delete_ or select _Navigate | Last Edit Location_ from the main menu to quickly jump to the code you last edited.

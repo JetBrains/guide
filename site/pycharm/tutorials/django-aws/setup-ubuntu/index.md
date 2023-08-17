@@ -9,7 +9,7 @@ topics:
 author: mm
 subtitle: Configure security group and launch a new instance.
 thumbnail: thumbnail.png
-video: 'https://youtu.be/mwIKy8JnJ7A'
+video: "https://youtu.be/mwIKy8JnJ7A"
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial
@@ -44,6 +44,7 @@ the principle of least-privilege. If you are interested to know more about
 AWS Security & Compliance, please follow the below reference.
 
 Reference:
+
 - [Best Practices for Security, Identity, & Compliance](https://aws.amazon.com/architecture/security-identity-compliance)
 
 Our security group has been successfully created. Now, I will move forward to edit the
@@ -70,7 +71,7 @@ I will click on the **Launch instance**.
 
 # NICE DCV
 
-According to Amazon - NICE  Desktop Cloud Visualization (DCV) is a high-performance remote display protocol that provides
+According to Amazon - NICE Desktop Cloud Visualization (DCV) is a high-performance remote display protocol that provides
 customers with a secure way to deliver remote desktops and application streaming from any cloud or
 data center to any device, over varying network conditions. With NICE DCV and Amazon EC2, customers
 can run graphics-intensive applications remotely on EC2 instances, and stream their user interface to
@@ -139,12 +140,13 @@ There are multiple ways to connect to your ec2 instance, which you might
 already be aware of. If not, please refer below the reference link.
 
 Reference:
+
 - [Connect to your Linux instance in AWS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html)
 
 ![aws_putty](steps/step13.png)
 
 The username of my ec2 instance is **ubuntu**, I will move forward
-setting up my new password by writing the command ```sudo passwd ubuntu```
+setting up my new password by writing the command `sudo passwd ubuntu`
 
 After you have set the password successfully, I will copy the public ipv4 address of my instance
 and paste it in the NICE DCV Client. The port number is optional but make sure the port 8443 is

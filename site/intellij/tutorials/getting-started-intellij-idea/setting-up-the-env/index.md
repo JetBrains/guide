@@ -9,6 +9,7 @@ thumbnail: ./thumbnail.png
 ---
 
 IntelliJ IDEA is your IDE and, thankfully, we're all different! You probably want to use the same code style as your team but there's a lot of customisation that you can do to ensure your IDE environment is exactly how you like it. We will take a look at some of them in this section. We will look at:
+
 - Minimising the UI
 - Changing the Theme and Installing Plugins
 - Assigning Shortcuts and Abbreviations
@@ -34,7 +35,7 @@ Themes are a very personal choice and IntelliJ IDEA supports both the Light and 
 
 The Preferences/Settings dialog (**⌘,** | **Ctrl+Alt+S**) is quite busy due to the immense number of things you can do and configure in IntelliJ IDEA. However, if you're new to the IDE, don't be intimidated. You can search this dialog just by typing in what you want, for example "plugins".
 
-If you are searching for new plugins for your project, make sure you're on the *Marketplace* tab, rather than the *Installed* tab otherwise you may not find what you're looking for!
+If you are searching for new plugins for your project, make sure you're on the _Marketplace_ tab, rather than the _Installed_ tab otherwise you may not find what you're looking for!
 
 ## Assigning Shortcuts and Abbreviations
 
@@ -45,7 +46,7 @@ Shortcuts and abbreviations are a very personal choice that is often influenced 
 
 IntelliJ IDEA has a very rich set of keyboard shortcuts that you can take advantage of, but if you want to set your own up you can do that in the Preferences/Settings dialog (**⌘,** | **Ctrl+Alt+S**) and then search for "keymap". Find the action you want to assign a shortcut to from the list (again you can type directly into the list to filter it), then right-click on the shortcut and select **Add Keyboard Shortcut**. Now type in the shortcut you want. IntelliJ IDEA will notify you if it clashes with an existing keyboard shortcut. Once you press **OK** and return to your code, you can invoke your new keyboard shortcut.
 
-The steps for adding an abbreviation are somewhat similar to above, just select **Add Abbreviation** instead. Abbreviations are helpful when you want to jump to an action quickly without a shortcut, such as setting *mvn* for the Maven tool window so it always appears first in the Search Everywhere dialog when you type in *mvn*.
+The steps for adding an abbreviation are somewhat similar to above, just select **Add Abbreviation** instead. Abbreviations are helpful when you want to jump to an action quickly without a shortcut, such as setting _mvn_ for the Maven tool window so it always appears first in the Search Everywhere dialog when you type in _mvn_.
 
 ## Viewing Notifications
 

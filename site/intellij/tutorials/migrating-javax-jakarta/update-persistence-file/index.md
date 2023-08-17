@@ -6,15 +6,15 @@ topics: []
 author: hs
 subtitle: Fixing the final `javax` references in your files
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/mukr2Q_zBm4?start=702'
+video: "https://youtu.be/mukr2Q_zBm4?start=702"
 ---
 
-Now if you do a search across your whole project with **⌘⇧F** (macOS), or **Crl+Shift+F** (Windows/Linux) for *javax* you will see that it still appears in your `persistence.xml` file.
+Now if you do a search across your whole project with **⌘⇧F** (macOS), or **Crl+Shift+F** (Windows/Linux) for _javax_ you will see that it still appears in your `persistence.xml` file.
 
 We need to update the `persistence.xml` file and change the namespace from:
 
 ```xml
-<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd" version="2.2">
 ```
 
@@ -55,4 +55,4 @@ Now let's rebuild our application again with **⌘F9** (macOS), or **Ctrl+F9** (
 
 Your application should still be available at [localhost:8080/MyWebApp](localhost:8080/MyWebApp).
 
-Your code should now be the same as the `jakarta` branch in the project. You can verify this by navigating to the *src* directory in IntelliJ IDEA then right-click and select **Git > Compare with Branch...** and select the `jakarta` branch.
+Your code should now be the same as the `jakarta` branch in the project. You can verify this by navigating to the _src_ directory in IntelliJ IDEA then right-click and select **Git > Compare with Branch...** and select the `jakarta` branch.

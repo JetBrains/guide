@@ -10,10 +10,10 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/basic-editing-procedures.html#quick_popups
   - title: Viewing Inline Documentation
-    href: 'https://www.jetbrains.com/help/pycharm/inline-documentation.html'
+    href: "https://www.jetbrains.com/help/pycharm/inline-documentation.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/hfWhDwp7zz8'
+video: "https://youtu.be/hfWhDwp7zz8"
 ---
 
 Some functions or classes -- well, let's admit it, they are kind of chatty.

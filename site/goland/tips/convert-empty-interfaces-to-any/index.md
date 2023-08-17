@@ -11,6 +11,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
+
 GoLand has an inspection that reports usages of empty interfaces used as a type or a type constraint. To fix such usages, try the **Replace with 'any'** intention action.
 
 **How to use:**

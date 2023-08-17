@@ -6,11 +6,11 @@ topics: []
 author: hs
 subtitle: Linking Hibernate with Spring Boot
 thumbnail: ./thumbnail.png
-video: 'https://www.youtube.com/watch?v=xHminZ9Dxm4&start=1342s'
+video: "https://www.youtube.com/watch?v=xHminZ9Dxm4&start=1342s"
 ---
 
 ## Hibernate/JPA and Spring Boot
 
-* How Hibernate works together with Spring Boot.
-* What is Spring Data JPA?
-* What is Spring Data JDBC?
+- How Hibernate works together with Spring Boot.
+- What is Spring Data JPA?
+- What is Spring Data JDBC?

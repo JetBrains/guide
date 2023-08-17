@@ -13,7 +13,7 @@ subtitle: >-
   Working with Git, commit code, rebase and switch branches. Let's explore
   version control (VCS)!
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/_fTwymtpg78'
+video: "https://youtu.be/_fTwymtpg78"
 ---
 
 ### Commit Changes

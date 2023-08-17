@@ -5,9 +5,9 @@ title: Setup and Teardown
 topics:
   - testing
 author: tg
-subtitle: 'See how to set up, or clean up, test classes and methods in Spock.'
+subtitle: "See how to set up, or clean up, test classes and methods in Spock."
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/i5Qu3qYOfsM?start=1947'
+video: "https://youtu.be/i5Qu3qYOfsM?start=1947"
 ---
 
 If you've used other testing frameworks, the concept of test or specification class [setup and tear down will be familiar](http://spockframework.org/spock/docs/2.0/all_in_one.html#_comparison_to_junit).

@@ -6,10 +6,10 @@ topics: []
 author: hs
 subtitle: Overview to the tutorial
 thumbnail: ./thumbnail.png
-video: 'https://www.youtube.com/watch?v=xHminZ9Dxm4'
+video: "https://www.youtube.com/watch?v=xHminZ9Dxm4"
 ---
 
 ## Introduction
 
-* What this video is about.
-* What is Hibernate?
+- What this video is about.
+- What is Hibernate?

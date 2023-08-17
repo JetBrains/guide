@@ -12,6 +12,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=EaBSAOcBXPc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=23
 ---
+
 **How to use:**
 Press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_ and select
 the _Convert multidocument YAML to List_ or

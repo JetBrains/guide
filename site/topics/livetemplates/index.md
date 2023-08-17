@@ -6,4 +6,3 @@ icon: fas fa-expand-alt
 obsoletes:
   - /intellij/topics/livetemplates/
 ---
-

@@ -10,6 +10,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
+
 **How to use:**
 
 Invoke _Search Everywhere_, _Shift + Shift_, and start typing the math operations you want to perform.

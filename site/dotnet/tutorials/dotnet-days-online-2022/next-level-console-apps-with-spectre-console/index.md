@@ -12,7 +12,7 @@ topics:
 author: maartenba
 subtitle: João Antunes
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/Bwo0Zr9MYXc'
+video: "https://youtu.be/Bwo0Zr9MYXc"
 ---
 
 Even if they're not our main focus, many of us regularly create console applications in .NET, be it to test some features, run some benchmarks, or automate some tasks. In all these use cases, we get the job done, but since it’s not the main focus of our day-to-day job, things end up a bit hacky and not as easy to use as they could be. What if I told you we can have our cake and eat it too? In other words, we can create these console applications to help us, but make them more user-friendly without too much hassle.
@@ -27,5 +27,5 @@ João Antunes works as a software engineer, mostly with .NET technologies, but h
 
 João loves exploring new technologies, discovering new fringe topics to investigate, and diving into over-engineering sessions, but he always tries to remember the basics and how they're essential to everything else.
 
-* Twitter: <https://twitter.com/joaofbantunes>
-* Blog: <https://blog.codingmilitia.com/>
+- Twitter: <https://twitter.com/joaofbantunes>
+- Blog: <https://blog.codingmilitia.com/>

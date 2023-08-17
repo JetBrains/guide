@@ -81,7 +81,7 @@ You can comment it out with leading `%` symbols:
 ## PDF
 
 Multi-format output has long been one of Sphinx's killer features.
-Want to produce HTML *and* PDF?
+Want to produce HTML _and_ PDF?
 No problem.
 
 However, that meant going through [LaTeX](https://en.wikipedia.org/wiki/LaTeX).

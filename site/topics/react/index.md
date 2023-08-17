@@ -2,7 +2,7 @@
 title: React
 subtitle: A JavaScript library for building user interfaces
 logo: ./react-original.svg
-website: 'https://reactjs.org'
+website: "https://reactjs.org"
 topicType: technology
 obsoletes:
   - /pycharm/topics/react/

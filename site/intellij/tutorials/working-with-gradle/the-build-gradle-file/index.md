@@ -9,7 +9,7 @@ subtitle: >-
   See how IntelliJ IDEA makes it easier to work with Gradle's configuration
   file.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/6V6G3RyxEMk?start=281'
+video: "https://youtu.be/6V6G3RyxEMk?start=281"
 ---
 
 Let's take a look at the build.gradle file IntelliJ IDEA generated for us.

@@ -11,7 +11,7 @@ topics:
 author: maartenba
 subtitle: Tess Ferrandez
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/LDVVvwoVtLY'
+video: "https://youtu.be/LDVVvwoVtLY"
 ---
 
 Sooner or later you will probably use Python in one of your projects, either for data science or scripting. Python is a very easy language to learn. It is very versatile, and non-prescriptive. This is its strength, but unfortunately it makes it incredibly easy to fall into pitfalls of writing code and structuring projects in a way that is hard to read, maintain, and test.

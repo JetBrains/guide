@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=tBWqmQ21eBI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=49
 ---
+
 Move the editor tabs to form what layout you need, whenever you need them to.
 
 **How to use:**

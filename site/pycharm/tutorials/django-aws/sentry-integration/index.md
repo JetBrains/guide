@@ -11,7 +11,7 @@ subtitle: >-
   Track errors & monitor performance in all major languages & frameworks with
   Sentry
 thumbnail: thumbnail.png
-video: 'https://youtu.be/1Sc7T_muccQ'
+video: "https://youtu.be/1Sc7T_muccQ"
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step,
@@ -95,7 +95,7 @@ along-with the filename, and the line number where the exception was caught.
 ![sentry_event_1](./steps/step10.png)
 
 This is something you definitely need in your production workflow to
-smoothly track your code,  along with performance issues.
+smoothly track your code, along with performance issues.
 
 ![sentry_event_2](./steps/step11.png)
 

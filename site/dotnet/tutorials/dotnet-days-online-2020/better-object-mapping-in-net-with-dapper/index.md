@@ -11,7 +11,7 @@ topics:
 author: maartenba
 subtitle: Kevin Griffin
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/glhRrF49M-Q'
+video: "https://youtu.be/glhRrF49M-Q"
 ---
 
 When people talk about using ORMs (Object Relational Mappers) like Entity Framework or nHibernate in their projects, often they are only looking for one fundamental feature: the ability to map SQL output to a C# object. Large ORM-based solutions add additional complexity, and black-box much of what is happening behind the scenes.

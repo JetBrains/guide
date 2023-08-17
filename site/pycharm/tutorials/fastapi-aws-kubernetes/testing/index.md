@@ -10,7 +10,7 @@ topics:
 author: mm
 subtitle: Writing Unit Tests using Pytest & Asyncio.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=uk7EcDIZEfY'
+video: "https://www.youtube.com/watch?v=uk7EcDIZEfY"
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
@@ -39,9 +39,10 @@ support for both HTTP/1.1 and HTTP/2.
 
 Do check the official documentation, it has tons of cool examples.
 
-Even if you don’t want to use asyncio, you can work with the ```TestClient``` which is backed by **Starlette**.
+Even if you don’t want to use asyncio, you can work with the `TestClient` which is backed by **Starlette**.
 
 Reference :
+
 - [https://fastapi.tiangolo.com/tutorial/testing/](https://fastapi.tiangolo.com/tutorial/testing/)
 
 There is an interesting article written by [Anthony Shaw](https://tonybaloney.github.io/) : **async test patterns for Pytest**, do check that out.
@@ -391,7 +392,7 @@ We are now done with the products, let’s test it out.
 
 Yes, all the seven apis have passed successfully.
 
-Next, we will complete the remaining modules like ```orders```, ```cart```, ```home``` and ```login```.
+Next, we will complete the remaining modules like `orders`, `cart`, `home` and `login`.
 
 Same kind of operation I will be doing, you can follow me.
 

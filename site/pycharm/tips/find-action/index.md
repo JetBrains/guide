@@ -11,7 +11,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/2017.3/navigating-to-action.html#Navigate_to_Action.xml
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/ESYmaaX5Tzg'
+video: "https://youtu.be/ESYmaaX5Tzg"
 ---
 
 This is it, the biggest tip.
@@ -27,7 +27,7 @@ Too much to remember!
 There's a better way: Don't.
 
 Instead, memorize one shortcut: `Find Action` (`Shift-Ctrl-A` Win/Linux,
-`Shift-Cmd-A` macOS). With your keyboard and one *highly-remembered*
+`Shift-Cmd-A` macOS). With your keyboard and one _highly-remembered_
 shortcut, you get fast access to all actions.
 
 Invoking `Find Action` pops up the `Find` panel with tabs for `All`,

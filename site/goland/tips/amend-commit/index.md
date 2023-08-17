@@ -4,10 +4,10 @@ title: Fix Your Work with Amend Commit
 topics:
   - vcs
 author: pwe
-subtitle: 'Put some missing work back into your last commit, before you push.'
+subtitle: "Put some missing work back into your last commit, before you push."
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/8sSlWDiwdkc'
+video: "https://youtu.be/8sSlWDiwdkc"
 ---
 
 You’re finishing some work…whew!!!
@@ -31,7 +31,7 @@ You want to declare victory with a commit!
 It is at this EXACT point that you remember one of those cleanup tasks.
 Maybe it’s: update the docs.
 
-Are you really going to do *another* commit? Or undo the last commit?
+Are you really going to do _another_ commit? Or undo the last commit?
 
 ## The Solution
 

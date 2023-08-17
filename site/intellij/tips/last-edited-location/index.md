@@ -13,8 +13,8 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#find_cursor_edit
   - title: (video)  IntelliJ IDEA YouTube - Navigation in IntelliJ IDEA
-    href: 'https://www.youtube.com/v/1UHsJyCq1SU'
-video: 'https://youtu.be/ErLxG_hTkwo'
+    href: "https://www.youtube.com/v/1UHsJyCq1SU"
+video: "https://youtu.be/ErLxG_hTkwo"
 ---
 
 Use **⇧⌘⌫** (macOS), **Ctrl+Shift+Backspace** (Windows/Linux) to navigate to the last edited location.

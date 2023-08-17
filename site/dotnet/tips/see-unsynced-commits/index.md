@@ -8,14 +8,15 @@ author: pwe
 subtitle: See what's happening on that other branch.
 seealso:
   - title: Sync with a remote Git repository
-    href: 'https://www.jetbrains.com/help/rider/Sync_with_a_remote_repository.html'
+    href: "https://www.jetbrains.com/help/rider/Sync_with_a_remote_repository.html"
   - title: Explicitly check for incoming commits on remotes
     href: >-
       https://www.jetbrains.com/help/rider/Settings_Version_Control_Git.html#90206995
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/K6v4tAmXfLs'
+video: "https://youtu.be/K6v4tAmXfLs"
 ---
+
 ## The Problem
 
 When you work on a feature, you create a feature branch.
@@ -32,7 +33,7 @@ You again wrap up your work with a commit, switch to main, and merge.
 
 All good.
 But while you were away, a colleague also merged something to main.
-Now, when *you* push -- Git is unhappy.
+Now, when _you_ push -- Git is unhappy.
 
 Does not spark joy.
 

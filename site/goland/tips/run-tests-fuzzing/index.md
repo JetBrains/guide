@@ -14,10 +14,11 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
+
 **Fuzz testing** allows you to check your code against the various generated data. If fuzz testing fails, you can always see the reason in the _testdata_ directory.
 
 **How to use:**
 
-In the __test_ file, click the **Run Test** icon in the gutter and navigate to **Run | go test -fuzz FuzzMyTest**.
+In the \__test_ file, click the **Run Test** icon in the gutter and navigate to **Run | go test -fuzz FuzzMyTest**.
 
 <span class="tag is-rounded">New in 2021.2</span>

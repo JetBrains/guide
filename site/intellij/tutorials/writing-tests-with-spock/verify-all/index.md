@@ -9,7 +9,7 @@ subtitle: >-
   Test frameworks often stop the test at the first failure. Find out how to run
   all conditions to see which pass and which fail.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/i5Qu3qYOfsM?start=1893'
+video: "https://youtu.be/i5Qu3qYOfsM?start=1893"
 ---
 
 Let's look at how to make sure all our assertions are run, regardless of whether one of them fails. Try this test (note that with string method names we can easily add quotes and other special characters).

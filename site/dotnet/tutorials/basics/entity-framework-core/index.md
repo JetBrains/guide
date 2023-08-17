@@ -9,7 +9,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Working with databases using an object relational mapper
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/F699iNw5Wao'
+video: "https://youtu.be/F699iNw5Wao"
 ---
 
 Entity Framework Core is what's known as an **Object Relational Mapper** (ORM). Created by Microsoft, the library allows developers to work abstractly with their database. The library comes with two distinct parts: the ORM and the CLI tools. Entity Framework Core supports an array of database options, with the most popular being SQL Server.
@@ -58,27 +58,27 @@ class Program
     static void Main(string[] args)
     {
       var db = new AcmeDataContext();
-    
+
       db.People.Add(new Person {Name = "Khalid"});
       db.SaveChanges();
-    
+
       // initial count
       Console.WriteLine($"# of people in the db: {db.People.Count()}");
-    
+
       var first = db.People.First();
-    
+
       Console.WriteLine($"first person: {first.Name}");
-    
+
       var startsWith = db
         .People
         .First(p => p.Name.StartsWith("kh"));
-    
+
       Console.WriteLine($"starts with kh: {startsWith.Name}");
-    
+
       // we can delete the person
       db.People.Remove(first);
       db.SaveChanges();
-    
+
       // final count
       Console.WriteLine($"# of people in the db: {db.People.Count()}");
     }
@@ -122,12 +122,12 @@ namespace BasicsOfEntityFrameworkCore
         public int Id { get; set; }
         public string Name { get; set; }
     }
-    
+
     public partial class AcmeDataContext : DbContext
     {
         public DbSet<Person> People { get; set; }
 
-        
+
         public AcmeDataContext()
         {
         }

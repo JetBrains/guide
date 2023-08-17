@@ -7,4 +7,3 @@ obsoletes:
   - /dotnet/topics/completion/
   - /goland/topics/completion/
 ---
-

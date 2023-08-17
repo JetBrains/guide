@@ -9,12 +9,13 @@ subtitle: >-
   Start by creating a new Java project which will be the basis for the rest of
   this tutorial.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/i5Qu3qYOfsM?start=10'
+video: "https://youtu.be/i5Qu3qYOfsM?start=10"
 ---
 
 Let's start by creating a new project that's going to contain Java project code, and use Spock to unit test that code.
 
 From the new project window, we can choose any of:
+
 - Java
 - Maven
 - Gradle

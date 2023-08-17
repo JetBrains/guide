@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2022-04-27
-title: 'Tabs, tabs, and more tabs with HTMX'
+title: "Tabs, tabs, and more tabs with HTMX"
 topics:
   - .net
   - asp.net
@@ -14,7 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Asynchronous rendering of tabs on the server
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/gCqi60M-QYs'
+video: "https://youtu.be/gCqi60M-QYs"
 ---
 
 Tabs are commonplace in most user interfaces, and you can indeed implement the pattern without HTMX. However, there are circumstances where it makes sense to reconsider implementing the UI pattern with HTMX. One instance is when each tab can have an enormous amount of information that your users do not always access. Hypothetically, why slow down the initial page load for 100% of users, by including a tab that only 1% of users access?
@@ -55,18 +55,18 @@ public class Tabs : PageModel
 {
     public IEnumerable<string> Items { get; }
         = new[] {"First", "Second", "Third"};
-    
+
     [BindProperty(Name = "tab", SupportsGet = true)]
     public string? Tab { get; set; }
 
-    public bool IsSelected(string name) => 
+    public bool IsSelected(string name) =>
         name.Equals(Tab?.Trim(), StringComparison.OrdinalIgnoreCase);
 
     public IActionResult OnGet()
     {
         // make sure we have a tab
         Tab = Items.Any(IsSelected) ? Tab : Items.First();
-        
+
         return Request.IsHtmx()
             ? Partial("_Tabs", this)
             : Page();

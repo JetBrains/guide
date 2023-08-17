@@ -7,9 +7,9 @@ topics:
   - django
   - python
 author: mm
-subtitle: 'Create a new app, define models, and explore the project''s structure.'
+subtitle: "Create a new app, define models, and explore the project's structure."
 thumbnail: thumbnail.png
-video: 'https://youtu.be/OIOJk_KZe8g'
+video: "https://youtu.be/OIOJk_KZe8g"
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, we
@@ -60,7 +60,7 @@ Let me explain first about the app structure.
 
 The **migrations** folder is where Django stores migrations, or changes to your database.
 
-**__**init**__.py** tells python that your organization app is a package.
+**\_\_**init**\_\_.py** tells python that your organization app is a package.
 
 **admin.py** is where you register your app’s models with the Django admin application.
 
@@ -102,7 +102,7 @@ singular and plural versions of the name, etc.
 We have defined **ordering** in the class Meta,
 basically calling objects **order_by** id descending.
 
-The **__**str**__** method in Python represents the class objects as a string.
+The **\_\_**str**\_\_** method in Python represents the class objects as a string.
 
 Next, I will create a new model called **BoardMember** which keeps a
 list of users who are part of the organization like director, shareholder etc.

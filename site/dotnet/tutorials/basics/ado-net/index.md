@@ -8,9 +8,9 @@ topics:
   - resharper
   - rider
 author: khalidabuhakmeh
-subtitle: 'Working with databases using DbConnection, DbCommand, and DbDataReader'
+subtitle: "Working with databases using DbConnection, DbCommand, and DbDataReader"
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/BxCrzUIm5kU'
+video: "https://youtu.be/BxCrzUIm5kU"
 ---
 
 ADO.NET is a data service for .NET developers. In the older version of the .NET framework, Microsoft packaged it along with other libraries. More recently, the ADO.NET libraries ship in NuGet packages, with `System.Data.SqlClient` being specifically for SQL Server access. ADO.NET is a low-level interface to our data storage of choice, and its use depends heavily on our understanding of SQL.
@@ -30,7 +30,7 @@ ADO.NET assumes very little for us, and it is the lowest level approach to data 
   using System.Data;
   using System.Data.SqlClient;
   using System.Threading.Tasks;
-  
+
   static class Program
   {
     static async Task Main(string[] args)
@@ -39,9 +39,9 @@ ADO.NET assumes very little for us, and it is the lowest level approach to data 
       // with an Id and a Name
       await using var connection =
         new SqlConnection("Server=localhost,11433;User=sa;Password=Pass123!;Database=basics;");
-      
+
       await connection.OpenAsync();
-      
+
       // insert into database
       var insert = connection.CreateCommand();
       insert.CommandType = CommandType.Text;
@@ -50,7 +50,7 @@ ADO.NET assumes very little for us, and it is the lowest level approach to data 
 
       var result = await insert.ExecuteNonQueryAsync();
       Console.WriteLine($"We executed an insert with a result of {result}");
-      
+
       // read from the database
       var query = connection.CreateCommand();
       query.CommandText = "select Id, Name from People";
@@ -63,7 +63,7 @@ ADO.NET assumes very little for us, and it is the lowest level approach to data 
           Console.WriteLine($"My name is {reader["Name"]}");
         }
       }
-      
+
       // clean up
       var truncate = connection.CreateCommand();
       truncate.CommandType = CommandType.Text;
@@ -71,8 +71,8 @@ ADO.NET assumes very little for us, and it is the lowest level approach to data 
       result = await truncate.ExecuteNonQueryAsync();
 
       Console.WriteLine($"We executed an insert with a result of {result}");
-      
-      // shut it down, shut it all down            
+
+      // shut it down, shut it all down
       await connection.CloseAsync();
 
       Console.WriteLine("Connection terminated 🤖");

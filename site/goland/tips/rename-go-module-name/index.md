@@ -11,19 +11,20 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=fnVaPcMHSWs&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=117
 ---
+
 If you need to change your Go module's name or upgrade it to a new major, then the **Rename refactoring** has you covered.
 
 **How to use:**
-Place the cursor under the module name in the *go.mod* file, then
-invoke the *Refactor this* feature, _Ctrl + Alt + Shift + T on
-Windows/Linux_, and *^ + T on macOS*.
+Place the cursor under the module name in the _go.mod_ file, then
+invoke the _Refactor this_ feature, _Ctrl + Alt + Shift + T on
+Windows/Linux_, and _^ + T on macOS_.
 
-Select *Rename* from the list and change the module according to
+Select _Rename_ from the list and change the module according to
 your needs.
 
 **Pro tip:** You can preview the changes by clicking on the
-*Preview* button in the dialog or undo them with *Undo* operation.
-You can also undo the change later using the *Local history*
+_Preview_ button in the dialog or undo them with _Undo_ operation.
+You can also undo the change later using the _Local history_
 feature.
 
 **Pro tip:** If you upgrade your module's import path to a new

@@ -11,16 +11,17 @@ author: mm
 subtitle: Combine your K8s manifests into a single package using Helm Charts.
 thumbnail: thumbnail.png
 templateEngineOverride: md
-video: 'https://www.youtube.com/watch?v=wQJ6NBpHY0s'
+video: "https://www.youtube.com/watch?v=wQJ6NBpHY0s"
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 # Helm
-In this tutorial we will be working with Helm. In simple terms, [Helm](https://helm.sh/) is a package manager for Kubernetes. It is a tool
-that streamlines installing and managing Kubernetes applications. Think of it like ```Apt/Yum/Homebrew``` for K8s.
 
-*Note: I will be showing a high-level use case of Helm. We won’t be getting deeper dive into Helm*
+In this tutorial we will be working with Helm. In simple terms, [Helm](https://helm.sh/) is a package manager for Kubernetes. It is a tool
+that streamlines installing and managing Kubernetes applications. Think of it like `Apt/Yum/Homebrew` for K8s.
+
+_Note: I will be showing a high-level use case of Helm. We won’t be getting deeper dive into Helm_
 
 # Installation
 
@@ -310,9 +311,9 @@ If apiVersion is v1 it's basically telling that it uses previous versions of Hel
 **Description** is something optional. You can give brief information about your application.
 
 Type of chart can be an **application** or **library** chart. As we are working on an application it’s going to be an application chart.
-According to Helm docs: *A library
+According to Helm docs: _A library
 chart is a type of Helm chart that defines chart primitives or definitions which can be shared by Helm templates in other charts.
-This allows users to share snippets of code that can be reused across charts, avoiding repetition and keeping charts DRY*.
+This allows users to share snippets of code that can be reused across charts, avoiding repetition and keeping charts DRY_.
 
 **Version** is basically pointing towards the chart version and appVersion is basically the application version.
 
@@ -335,15 +336,15 @@ it with our manifest files which we have defined earlier when we were working wi
 
 ![step35](./steps/step35.png)
 
-### _helpers.tpl
+### \_helpers.tpl
 
-You are going to find a unique file called **_helpers.tpl**. This is basically a named template writing in Go Templating Language.
+You are going to find a unique file called **\_helpers.tpl**. This is basically a named template writing in Go Templating Language.
 
 A named template is also referred to as partial or a subtemplate.
 
 ![step36](./steps/step36.png)
 
-Files whose name begins with an underscore **(_)** are actually rendered to Kubernetes object definitions,
+Files whose name begins with an underscore **(\_)** are actually rendered to Kubernetes object definitions,
 but are available everywhere within other chart templates for use.
 
 The Helm client and library is written in the **Go programming language**. The library uses the Kubernetes client
@@ -383,10 +384,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment-{{ include "fastapi-helm.fullname" . }}
-  namespace: {{ .Release.Namespace }}
+  namespace: { { .Release.Namespace } }
   labels:
     app: ecommerce
-    version: {{ .Chart.AppVersion}}
+    version: { { .Chart.AppVersion } }
 spec:
   replicas: 8
   selector:
@@ -399,7 +400,7 @@ spec:
     spec:
       containers:
         - image: "{{ .Values.nginxImage.repository }}:{{ .Values.nginxImage.tag | default .Chart.AppVersion }}"
-          imagePullPolicy: {{ .Values.nginxImage.pullPolicy }}
+          imagePullPolicy: { { .Values.nginxImage.pullPolicy } }
           name: nginx-container
           ports:
             - containerPort: 80
@@ -489,10 +490,12 @@ serviceAccount:
 
 podAnnotations: {}
 
-podSecurityContext: {}
+podSecurityContext:
+  {}
   # fsGroup: 2000
 
-securityContext: {}
+securityContext:
+  {}
   # capabilities:
   #   drop:
   #   - ALL
@@ -507,7 +510,8 @@ service:
 ingress:
   enabled: false
   className: ""
-  annotations: {}
+  annotations:
+    {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
@@ -520,7 +524,8 @@ ingress:
   #    hosts:
   #      - chart-example.local
 
-resources: {}
+resources:
+  {}
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
@@ -531,8 +536,6 @@ resources: {}
   # requests:
   #   cpu: 100m
   #   memory: 128Mi
-
-
 ```
 
 You can see how we import values through the templating syntax using the double curly braces.
@@ -609,28 +612,27 @@ I will open up my **Terminal** and move inside the **charts** folder.
 I will type:
 
 ```bash
-helm install myapp fastapi-helm 
+helm install myapp fastapi-helm
 ```
 
 I will provide the namespace. Even if you don’t have the specific namespace, nothing to worry you can
 directly create the namespace through Helm itself by passing **--create-namespace**.
 
-* Make sure before installing have a look into this file and update accordingly.
+- Make sure before installing have a look into this file and update accordingly.
 
 **charts/fastapi-helm/templates/postgres/postgres-pv.yml**
 
 ```yaml
-
-  local:
-    path: /run/desktop/mnt/host/e/postgres-data   # <-- if running with Docker desktop in windows
-  nodeAffinity:
-    required:
-      nodeSelectorTerms:
-        - matchExpressions:
-            - key: kubernetes.io/hostname
-              operator: In
-              values:
-                - docker-desktop    # <-- name of the node (docker-desktop, eks, minikube) etc.
+local:
+  path: /run/desktop/mnt/host/e/postgres-data # <-- if running with Docker desktop in windows
+nodeAffinity:
+  required:
+    nodeSelectorTerms:
+      - matchExpressions:
+          - key: kubernetes.io/hostname
+            operator: In
+            values:
+              - docker-desktop # <-- name of the node (docker-desktop, eks, minikube) etc.
 ```
 
 ![step40](./steps/step40.png)

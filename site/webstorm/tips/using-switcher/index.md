@@ -16,7 +16,8 @@ animatedGif:
   width: 600
   height: 300
 ---
+
 Did you know that you can swiftly jump to the last opened
-file with *Ctrl+Tab*? And, if you hold the *Ctrl* key and press *Tab*,
+file with _Ctrl+Tab_? And, if you hold the _Ctrl_ key and press _Tab_,
 you'll see the Switcher popup which you can use for jumping
-between tool windows and other recently opened files, also with *Tab*.
+between tool windows and other recently opened files, also with _Tab_.

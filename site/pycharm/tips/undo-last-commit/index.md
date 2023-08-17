@@ -10,11 +10,12 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/undo-changes.html#revert-last-commit
   - title: Manage changelists
-    href: 'https://www.jetbrains.com/help/pycharm/managing-changelists.html'
+    href: "https://www.jetbrains.com/help/pycharm/managing-changelists.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/sAXyAivHeb0'
+video: "https://youtu.be/sAXyAivHeb0"
 ---
+
 First go to the Git tool window and make sure you’re on the log tab.
 
 It shows the list of commits on the current branch.
@@ -28,6 +29,7 @@ Now the commit tool window says I have changes.
 And now that commit…never happened. Let’s look a little deeper.
 
 ## The Problem
+
 You are editing, say a Markdown file.
 Let’s leave the Commit tool window and Git tool window open, to see the updates as we go.
 
@@ -41,6 +43,7 @@ Nope, if you haven’t pushed to a “protected” branch, you can clean things 
 And the IDE puts a convenient UI atop the underlying Git command.
 
 ## The Solution
+
 In the Git tool window, find the most recent commit.
 It’s the one at the top.
 When we select it, we get more detail about the commit.

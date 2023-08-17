@@ -24,5 +24,6 @@ public CommandLineRunner run(EmployeeRepository repository) {
 ```
 
 ## End Result
+
 If you inserted the same data mentioned in the tutorial, you should the `Dalia` employee in the console output:
 ![Application Run Successfully](./ApplicationRunSuccess2.png)

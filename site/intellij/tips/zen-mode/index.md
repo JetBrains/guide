@@ -10,7 +10,8 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IDE Viewing Modes
-    href: 'https://www.jetbrains.com/help/idea/ide-viewing-modes.html'
-video: 'https://youtu.be/stw-IAkDJ68'
+    href: "https://www.jetbrains.com/help/idea/ide-viewing-modes.html"
+video: "https://youtu.be/stw-IAkDJ68"
 ---
-Zen mode helps you to hide everything except the editor. You can access Zen mode from the IntelliJ IDEA menu with **View > Appearance > Enter Zen Mode**. Alternatively you can use Find Actions **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux) and type in *zen mode* to enter or exit Zen Mode.
+
+Zen mode helps you to hide everything except the editor. You can access Zen mode from the IntelliJ IDEA menu with **View > Appearance > Enter Zen Mode**. Alternatively you can use Find Actions **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux) and type in _zen mode_ to enter or exit Zen Mode.

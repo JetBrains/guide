@@ -8,12 +8,12 @@ subtitle: >-
   Gradlew Clean, Gradlew Test, Gradle's Smart Features and Build.Gradle
   explained
 thumbnail: ./thumbnail.png
-video: 'https://www.youtube.com/watch?v=gKPMKRnnbXU&start=421s'
+video: "https://www.youtube.com/watch?v=gKPMKRnnbXU&start=421s"
 ---
 
 # Gradle Basics
 
-* What 'gradlew clean' does.
-* What 'gradlew test' does.
-* What makes gradle so smart.
-* An overview of the build.gradle file.
+- What 'gradlew clean' does.
+- What 'gradlew test' does.
+- What makes gradle so smart.
+- An overview of the build.gradle file.

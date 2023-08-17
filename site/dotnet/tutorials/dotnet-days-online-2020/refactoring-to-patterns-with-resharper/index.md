@@ -11,7 +11,7 @@ topics:
 author: maartenba
 subtitle: Zoran Horvat
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/_n3u5SjC7t4'
+video: "https://youtu.be/_n3u5SjC7t4"
 ---
 
 From the Gang of Four, we learned to value flexible designs. From Martin Fowler, Kent Beck, and others, we learned to actually flex the design and to value the axes of change. These two concepts – design patterns and refactoring – have been around for over two decades, and yet the combination of the two systems never got a grip in the industry. Why so?

@@ -13,7 +13,7 @@ subtitle: >-
   Working with NuGet, including search with typos, CamelHumps, Update All, and
   more!
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/lnDQEcFWZIA'
+video: "https://youtu.be/lnDQEcFWZIA"
 ---
 
 ### Managing Package References in Rider
@@ -22,7 +22,7 @@ To [manage NuGet packages in Rider](https://www.jetbrains.com/help/rider/Using_N
 window. It shows installed packages, and lets you search for available packages on [NuGet.org](https://www.nuget.org/)
 and other feeds.
 
-Search supports CamelHumps, so you can search for ***BDN*** instead of _**B**enchmark**D**ot**N**et_. Rider will also try
+Search supports CamelHumps, so you can search for **_BDN_** instead of _**B**enchmark**D**ot**N**et_. Rider will also try
 to find packages when you make a typo in the search query.
 
 ### Everything is a Filter

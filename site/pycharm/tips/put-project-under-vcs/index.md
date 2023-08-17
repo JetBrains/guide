@@ -13,7 +13,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/enable-version-control-integration-dialog.html#Enable_Version_Control_Integration_Dialog.xml
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/36RFkThiZug'
+video: "https://youtu.be/36RFkThiZug"
 ---
 
 You have a new project, or opened a project not under version control. First

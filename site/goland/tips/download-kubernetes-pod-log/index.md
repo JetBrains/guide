@@ -10,6 +10,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=9euuq6jTcpA&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=50
 ---
+
 **How to use:**
 
 Expand the Kubernetes cluster in which the pod resides, then the _Workloads | Pods_ section, select the pod that you need the log for, then right-click on the pod name and select _Download Log_.

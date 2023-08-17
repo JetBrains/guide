@@ -14,7 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Create modal dialogs on the server
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/Bzcx96Mkd0w'
+video: "https://youtu.be/Bzcx96Mkd0w"
 ---
 
 Modals are a powerful way to get a user's attention when you're acknowledging their action. A modal typically contains the most important information represented with a sense of urgency. If you're a modal fan, we'll recreate a typical newsletter signup form with a follow-up modal confirmation to display our user's input, in this case, their email address. In true HTMX fashion, we'll be generating our modal server-side.
@@ -57,43 +57,50 @@ So first, let's take a look at the HTML that will trigger our modal. In our news
 When the user submits the form, we'll receive an HTML response powered by the following Razor partial.
 
 ```html
-@model Exercises.Pages.NewsletterSignup
-@{ ArgumentNullException.ThrowIfNull(Model); }
+@model Exercises.Pages.NewsletterSignup @{
+ArgumentNullException.ThrowIfNull(Model); }
 
-<div id="modal-backdrop" class="modal-backdrop fade" style="display:block;"></div>
+<div
+	id="modal-backdrop"
+	class="modal-backdrop fade"
+	style="display:block;"
+></div>
 <div id="modal" class="modal fade" tabindex="-1" style="display:block;">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Hello From The Server</h5>
-            </div>
-            <div class="modal-body">
-                <p>
-                    Thanks for subscribing to our AMAZING NEWSLETTER!
-                </p>
-                <hr/>
-                <p>Expect amazing things to appear in your inbox at <code>@Model.Email</code>.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
-            </div>
-        </div>
-    </div>
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Hello From The Server</h5>
+			</div>
+			<div class="modal-body">
+				<p>Thanks for subscribing to our AMAZING NEWSLETTER!</p>
+				<hr />
+				<p>
+					Expect amazing things to appear in your inbox at
+					<code>@Model.Email</code>.
+				</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" onclick="closeModal()">
+					Close
+				</button>
+			</div>
+		</div>
+	</div>
 </div>
 ```
 
 Bootstrap modals are invisible by default, only being viewable when decorated with the `show` class. In this case, we exclude the CSS classes to ease them into the client's screen after the HTML is loaded. So let's look at that JavaScript now, and a peek at more HTMX event handlers.
 
 ```javascript
-let newsletter = document.getElementById('newsletter');
-newsletter.addEventListener('htmx:afterOnLoad', () => {
-    const backdrop = document.getElementById("modal-backdrop");
-    const modal = document.getElementById("modal");
-    
-    setTimeout(() => {
-        modal.classList.toggle("show")
-        backdrop.classList.toggle("show")
-    }, 10);
+let newsletter = document.getElementById("newsletter");
+newsletter.addEventListener("htmx:afterOnLoad", () => {
+	const backdrop = document.getElementById("modal-backdrop");
+	const modal = document.getElementById("modal");
+
+	setTimeout(() => {
+		modal.classList.toggle("show");
+		backdrop.classList.toggle("show");
+	}, 10);
 });
 ```
 

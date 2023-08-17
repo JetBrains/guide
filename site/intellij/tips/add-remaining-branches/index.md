@@ -8,6 +8,7 @@ author: hs
 subtitle: Use quick intentions to generate code automatically
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/7R1b5G3yx8U'
+video: "https://youtu.be/7R1b5G3yx8U"
 ---
+
 When a Kotlin expression requires us to cover all the possible options for a parameter, we can use **⌥⏎** (macOS), or **Alt+Return** (Windows/Linux), to generate all the branches automatically.

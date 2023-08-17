@@ -12,7 +12,7 @@ topics:
 author: maartenba
 subtitle: Irina Scurtu
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/d8S9jh6Xj6Y'
+video: "https://youtu.be/d8S9jh6Xj6Y"
 ---
 
 With an increasing need for scalability and performance dictated by the modern web, it is becoming harder and harder to choose an API paradigm that is suitable for service to service communication.
@@ -31,5 +31,5 @@ Irina has more than 1000 hours of experience delivering training, workshops, and
 
 She is the founder of DotNet Iasi User Group, where she tries to gather people that are willing to share their knowledge with others, and from time to time publishes articles on her blog: <http://irina.codes>
 
-* Twitter: <https://twitter.com/irina_scurtu>
-* Blog: <https://irina.codes>
+- Twitter: <https://twitter.com/irina_scurtu>
+- Blog: <https://irina.codes>

@@ -12,6 +12,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=B_jO9p3zxSI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=14
 ---
+
 GoLand provides code completion and analysis in injected strings for _SQL_ and
 _databases statements_, _JavaScript_, _CSS_, _HTML_, _XML_, and _RegExp_, etc.
 

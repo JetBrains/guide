@@ -8,14 +8,15 @@ author: dlsniper
 subtitle: Speed up testing by focusing on one test.
 seealso:
   - title: Performing Tests
-    href: 'https://www.jetbrains.com/help/go/performing-tests.html'
+    href: "https://www.jetbrains.com/help/go/performing-tests.html"
   - title: Test Runner Tab
-    href: 'https://www.jetbrains.com/help/go/test-runner-tab.html'
+    href: "https://www.jetbrains.com/help/go/test-runner-tab.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=OhNeN8diWb4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=109
 ---
+
 Want to focus your testing on just one test? Then you can
 launch the test under the cursor using a shortcut.
 

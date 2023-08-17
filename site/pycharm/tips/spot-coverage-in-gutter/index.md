@@ -7,17 +7,17 @@ author: pwe
 subtitle: Let the IDE help you spot coverage gaps in your testing.
 seealso:
   - title: Viewing Code Coverage Results
-    href: 'https://www.jetbrains.com/help/pycharm/viewing-code-coverage-results.html'
+    href: "https://www.jetbrains.com/help/pycharm/viewing-code-coverage-results.html"
   - title: Configuring Code Coverage Measurement
     href: >-
       https://www.jetbrains.com/help/pycharm/configuring-code-coverage-measurement.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/HQ_bqOBXZ5w'
+video: "https://youtu.be/HQ_bqOBXZ5w"
 ---
 
-*Note: Code coverage is a
-[PyCharm Professional feature](https://www.jetbrains.com/pycharm/features/editions_comparison_matrix.html).*
+_Note: Code coverage is a
+[PyCharm Professional feature](https://www.jetbrains.com/pycharm/features/editions_comparison_matrix.html)._
 
 Writing tests for your code is good, but how do you know when you've done
 enough testing? "Code coverage", via the

@@ -10,7 +10,8 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (video) Code Formatting in IntelliJ IDEA
-    href: 'https://www.youtube.com/watch?v=vjVWjocENLg'
-video: 'https://youtu.be/xgZ7Jgmbbp4'
+    href: "https://www.youtube.com/watch?v=vjVWjocENLg"
+video: "https://youtu.be/xgZ7Jgmbbp4"
 ---
-Select the text you want to surround then enter any of the following characters ```({[`"'``` them to the start and end of your selected text.
+
+Select the text you want to surround then enter any of the following characters `` ({[`"' `` them to the start and end of your selected text.

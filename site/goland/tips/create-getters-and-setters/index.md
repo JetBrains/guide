@@ -5,23 +5,24 @@ topics:
   - editing
   - go
 author: dlsniper
-subtitle: 'Generate the support code to access fields indirectly, via getters and setters'
+subtitle: "Generate the support code to access fields indirectly, via getters and setters"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=epLp9e8zC-A&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=40
 ---
+
 Do you need to access your struct fields via getters and setters?
 Add all the boilerplate code you need using the dedicated
-*Generate getter and setter* action.
+_Generate getter and setter_ action.
 
 **How to use:**
-Select a struct type, then press *Alt + Enter on Windows/Linux* or
-*⌥ + ⏎ on macOS* and choose *Generate getter and setter* from the
+Select a struct type, then press _Alt + Enter on Windows/Linux_ or
+_⌥ + ⏎ on macOS_ and choose _Generate getter and setter_ from the
 list of available actions.
 
 Choose which fields should have these methods generated, then press
-*OK* to generate them.
+_OK_ to generate them.
 
 Choose the receiver name and receiver type then continue working on
 your code as usual.

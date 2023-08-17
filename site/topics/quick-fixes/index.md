@@ -6,4 +6,3 @@ icon: fas fa-question-circle
 obsoletes:
   - /goland/topics/quick-fixes/
 ---
-

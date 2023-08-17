@@ -4,21 +4,21 @@ title: Evaluate Expression During Debugging
 topics:
   - debugging
 author: pwe
-subtitle: 'Select your code and execute it, in the right context.'
+subtitle: "Select your code and execute it, in the right context."
 seealso:
   - title: Evaluating Expressions
-    href: 'https://www.jetbrains.com/help/pycharm/evaluating-expressions.html'
+    href: "https://www.jetbrains.com/help/pycharm/evaluating-expressions.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/U2sAgysf1Hc'
+video: "https://youtu.be/U2sAgysf1Hc"
 ---
 
 Debugging means poking around, usually at a point in the execution. You
 set a breakpoint, fire up the debugger, and start pokin'.
 
 Sometimes "poking" means "typing in expressions and seeing the result
-values." This is where *Evaluate Expression* helps. It is a popup
-window where you can type in values and see the results, *in the scope*
+values." This is where _Evaluate Expression_ helps. It is a popup
+window where you can type in values and see the results, _in the scope_
 of the stopped line: all the values in that block, passed in, etc.
 
 There are several ways to get to the popup:
@@ -26,12 +26,12 @@ There are several ways to get to the popup:
 - Click the debug toolbar button to launch it
 
 - Invoke the `Evaluate Expression` action (`Ctrl-F8` Win/Linux,
-`Alt-F8` macOS)
+  `Alt-F8` macOS)
 
 - Right-click in the editor and choose `Evalute Expression`
 
 Note that, if you have a selection in the editor, that selection is
-filled into the `Evaluate Expression` input box. This is a *very* handy
+filled into the `Evaluate Expression` input box. This is a _very_ handy
 way to stop on a line, then execute part of that line, without retyping
 or even cut-and-paste. This also means `Evalute Expression` can be
 driven with the keyboard instead of the mouse.

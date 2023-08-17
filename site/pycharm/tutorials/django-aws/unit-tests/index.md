@@ -9,7 +9,7 @@ topics:
 author: mm
 subtitle: Writing and running unit tests in Django
 thumbnail: thumbnail.png
-video: 'https://youtu.be/cP5vv9M0VFQ'
+video: "https://youtu.be/cP5vv9M0VFQ"
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial we are going to focus on Unit Tests.
@@ -86,7 +86,7 @@ I will click on the **plus (+)** button and add Django tests. Make sure to repli
 
 I will click on **Apply** and then **OK**.
 
-Everything is done, Now I will click **Run** ⇒  **Run ‘DjangoUnitTests’**
+Everything is done, Now I will click **Run** ⇒ **Run ‘DjangoUnitTests’**
 
 ![django_test_configuration_3](steps/step9.png)
 
@@ -94,7 +94,7 @@ Our test case has failed: we received a 301 permanent redirect http response.
 
 ![django_test_error](steps/step10.png)
 
-I forgot to add forward slash in the login url ```/api/v1/user/login/``` at line number 17.
+I forgot to add forward slash in the login url `/api/v1/user/login/` at line number 17.
 
 ![django_test_fixing_error](steps/step11.png)
 

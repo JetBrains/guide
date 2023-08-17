@@ -11,7 +11,7 @@ topics:
 author: maartenba
 subtitle: Olena Borzenko
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/NbkiKdHV0KQ'
+video: "https://youtu.be/NbkiKdHV0KQ"
 ---
 
 Traditionally, when building SPA applications it feels a lot like we are looking at the moon. On the light side, we have the shiny and pretty UI, which everyone knows and loves. On the dark side, there is the complicated server-side logic behind the scenes we need to manage.
@@ -22,7 +22,7 @@ In this demo-rich session, we are going to build a real-time stock monitoring sy
 
 ### Resources
 
-* [Demo code](https://github.com/OlenaBorzenko/Demos/tree/main/GoingRealTimeWithSignalR)
+- [Demo code](https://github.com/OlenaBorzenko/Demos/tree/main/GoingRealTimeWithSignalR)
 
 ### About the Presenter
 
@@ -33,4 +33,4 @@ She has previously worked in a service company based in Ukraine and took a part 
 She is passionate about new technologies, clean code, and best practices.
 In her free time, when she’s not spending it on hobbies, she likes to build demos around real-life use cases, share knowledge with others, and learn about the experience of others.
 
-* Twitter: <https://twitter.com/borzenko_lena>
+- Twitter: <https://twitter.com/borzenko_lena>

@@ -19,6 +19,7 @@ animatedGif:
   width: 600
   height: 300
 ---
+
 By default, WebStorm displays the [status bar](https://www.jetbrains.com/help/webstorm/guided-tour-around-the-user-interface.html) at the bottom, so you can quickly review the overall project and IDE status, and get access to various settings.
 
 If you use the status bar every so often, you can decide on what exactly you’d like to see there. For this, right-click the status bar and untick each element you do not want to see on the status bar.

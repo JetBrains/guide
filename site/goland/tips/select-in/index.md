@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=X-e4Vnm4Yy4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=155
 ---
+
 The **Select in...** action helps you select the currently selected file in a particular tool window.
 
 It works in places such as the _Project_ or the _Changes view_ tool windows, and even in _Explorer/Finder_

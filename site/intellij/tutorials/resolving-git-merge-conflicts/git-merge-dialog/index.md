@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Working with the Git Merge dialog to resolve conflicts
 thumbnail: ./thumbnail.png
-video: 'https://www.youtube.com/watch?v=WgipWkaU2MM'
+video: "https://www.youtube.com/watch?v=WgipWkaU2MM"
 ---
 
 ## Git Merge Dialog

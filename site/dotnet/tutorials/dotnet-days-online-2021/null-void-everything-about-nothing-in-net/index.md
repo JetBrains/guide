@@ -12,7 +12,7 @@ topics:
 author: maartenba
 subtitle: Stefan Pölz
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/h7uVMKPHGtM'
+video: "https://youtu.be/h7uVMKPHGtM"
 ---
 
 System.NullReferenceException: 'Object reference not set to an instance of an object.'
@@ -31,7 +31,7 @@ Additionally, we will discover an alternative to null while still retaining the 
 
 ### Resources
 
-* [Slides and Try.NET notebook](https://github.com/Flash0ver/F0-Talks-NullVoid)
+- [Slides and Try.NET notebook](https://github.com/Flash0ver/F0-Talks-NullVoid)
 
 ### About the Presenter
 
@@ -39,4 +39,4 @@ Additionally, we will discover an alternative to null while still retaining the 
 
 My passion is to practice Clean Code and test-driven development in order to build maintainable software in an ever-evolving team, supported by tools from the .NET Ecosystem. I love to attend and speak at public developer events and author open-source projects, complementing my expertise in professional software development.
 
-* Twitter: <https://twitter.com/0x_F0>
+- Twitter: <https://twitter.com/0x_F0>

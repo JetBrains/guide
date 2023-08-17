@@ -10,7 +10,8 @@ subtitle: >-
 thumbnail: ./thumbnail.png
 ---
 
-Searching and finding files and code can be achieved in IntelliJ IDEA through various mechanisms. They all have their own strengths and knowing when to use which one will save you time when you need to find a *needle in a haystack*! We will look at:
+Searching and finding files and code can be achieved in IntelliJ IDEA through various mechanisms. They all have their own strengths and knowing when to use which one will save you time when you need to find a _needle in a haystack_! We will look at:
+
 - Searching Everywhere and Finding Actions
 - Finding in Files
 - Searching Structurally
@@ -20,9 +21,9 @@ Searching and finding files and code can be achieved in IntelliJ IDEA through va
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z8qKvNdY51g" >
 </iframe>
 
-Search Everywhere (**⇧⇧** | **Shift+Shift**) should be your go-to-shortcut if you know you want to find something, even if that *something* is an action. You can filter the criteria in this dialog as required.
+Search Everywhere (**⇧⇧** | **Shift+Shift**) should be your go-to-shortcut if you know you want to find something, even if that _something_ is an action. You can filter the criteria in this dialog as required.
 
-Find Action (**⌘⇧A** | **Ctrl+Shift+A**) also opens the Search Everywhere dialog but filters it to the *Actions* tab so if you know you're looking for an action, this way is likely to be faster for you.
+Find Action (**⌘⇧A** | **Ctrl+Shift+A**) also opens the Search Everywhere dialog but filters it to the _Actions_ tab so if you know you're looking for an action, this way is likely to be faster for you.
 
 ## Finding in Files
 

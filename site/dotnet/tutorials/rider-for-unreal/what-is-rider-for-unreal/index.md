@@ -11,7 +11,7 @@ author: citizenmatt
 subtitle: Learn about using Rider for your Unreal Engine games.
 thumbnail: ./thumbnail.png
 video:
-  url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
+  url: "https://www.youtube.com/watch?v=_bvrngxZYds"
   start: 187
   end: 475
 ---

@@ -8,12 +8,13 @@ author: dlsniper
 subtitle: Save space by turning off various toolbars and Project Tool.
 seealso:
   - title: Configuring Menus and Toolbars
-    href: 'https://www.jetbrains.com/help/go/configuring-menus-and-toolbars.html'
+    href: "https://www.jetbrains.com/help/go/configuring-menus-and-toolbars.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=6UheZkHpTeo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=91
 ---
+
 Use **View | Appearance: Tool Window Bars** to toggle all the IDE
 tool windows visibility.
 

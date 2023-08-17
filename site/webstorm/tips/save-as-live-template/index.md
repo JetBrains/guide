@@ -10,7 +10,7 @@ seealso:
     href: >-
       https://blog.jetbrains.com/webstorm/2018/01/using-and-creating-code-snippets/
   - title: Live templates in WebStorm
-    href: 'https://www.jetbrains.com/help/webstorm/using-live-templates.html'
+    href: "https://www.jetbrains.com/help/webstorm/using-live-templates.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -18,11 +18,12 @@ animatedGif:
   width: 600
   height: 300
 ---
+
 How to quickly create a code snippet:
 
-  1. Select the code you find yourself using often.
-  2. Press *Cmd/Ctrl+Shift+A* and type *Save as Live Template*.
-  3. Add the abbreviation and description.
-  4. Save the code snippet.
+1. Select the code you find yourself using often.
+2. Press _Cmd/Ctrl+Shift+A_ and type _Save as Live Template_.
+3. Add the abbreviation and description.
+4. Save the code snippet.
 
 You can modify your code snippet by adding variables to it.

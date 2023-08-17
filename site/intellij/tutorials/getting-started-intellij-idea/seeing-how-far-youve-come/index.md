@@ -4,11 +4,12 @@ date: 2023-02-03
 title: Seeing how far you've come
 topics: []
 author: hs
-subtitle: 'The Productivity Guide is a fun way to see what you know, and what you don''t!'
+subtitle: "The Productivity Guide is a fun way to see what you know, and what you don't!"
 thumbnail: ./thumbnail.png
 ---
 
 There may come a time when you either want to see your progress or perhaps identify areas where you want to learn more. The Productivity Guide is a great way to achieve both of those objectives. We will look at:
+
 - Your Usage Statistics
 
 ## Your Usage Statistics

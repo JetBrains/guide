@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=QU9WvVN1hCo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=83
 ---
+
 Multiple selections is a very powerful feature in the editor, that lets you quickly
 select and edit multiple pieces of code at once.
 

@@ -10,7 +10,7 @@ subtitle: >-
   section shows some useful features from both.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/JXrZDUzkc2Q'
+video: "https://youtu.be/JXrZDUzkc2Q"
 ---
 
 TypeScript is a JavaScript superset with a compiler that enforces the types.
@@ -40,9 +40,9 @@ import { render } from "@testing-library/react";
 import App from "./App";
 
 test("renders hello react", () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/hello react/i);
-  expect(linkElement).toBeInTheDocument();
+	const { getByText } = render(<App />);
+	const linkElement = getByText(/hello react/i);
+	expect(linkElement).toBeInTheDocument();
 });
 ```
 
@@ -52,18 +52,18 @@ Also, our component in `App.tsx`:
 import React from "react";
 
 function App() {
-  return (
-    <div>
-      <h1>Hello React</h1>
-    </div>
-  );
+	return (
+		<div>
+			<h1>Hello React</h1>
+		</div>
+	);
 }
 
 export default App;
 ```
 
 Make sure the test runner is still running and watching.
-Let's also *keep* the `start` task as we'll use it later in this step.
+Let's also _keep_ the `start` task as we'll use it later in this step.
 
 Our two tests pass.
 Let's see some ES6 and TSX.
@@ -78,9 +78,9 @@ In `App.test.tsx`, let's add a test for what will be our new component:
 
 ```typescript
 test("renders heading", () => {
-  const { getByText } = render(<Heading />);
-  const linkElement = getByText(/hello react/i);
-  expect(linkElement).toBeInTheDocument();
+	const { getByText } = render(<Heading />);
+	const linkElement = getByText(/hello react/i);
+	expect(linkElement).toBeInTheDocument();
 });
 ```
 
@@ -91,7 +91,7 @@ In `App.tsx` we'll add a `Heading` component:
 
 ```typescript
 export function Heading() {
-  return <h1>Hello React</h1>;
+	return <h1>Hello React</h1>;
 }
 ```
 
@@ -111,11 +111,11 @@ Change the `App` to call the component:
 
 ```typescript
 function App() {
-  return (
-    <div>
-      <Heading />
-    </div>
-  );
+	return (
+		<div>
+			<Heading />
+		</div>
+	);
 }
 ```
 
@@ -130,9 +130,9 @@ We'll first write a new test:
 
 ```typescript
 test("renders heading with argument", () => {
-  const { getByText } = render(<Heading name={`World`}/>);
-  const linkElement = getByText(/hello world/i);
-  expect(linkElement).toBeInTheDocument();
+	const { getByText } = render(<Heading name={`World`} />);
+	const linkElement = getByText(/hello world/i);
+	expect(linkElement).toBeInTheDocument();
 });
 ```
 
@@ -145,7 +145,7 @@ Let's head to the `Heading` component and fix it:
 
 ```typescript {1,2}
 export function Heading({ name }) {
-  return <h1>Hello {name}</h1>;
+	return <h1>Hello {name}</h1>;
 }
 ```
 
@@ -171,8 +171,8 @@ TypeScript combines nicely with React to power this.
 Let's express the props contract with TypeScript typing, first doing so inline:
 
 ```typescript
-export function Heading({ name }: {name: string}) {
-  return <h1>Hello {name}</h1>;
+export function Heading({ name }: { name: string }) {
+	return <h1>Hello {name}</h1>;
 }
 ```
 
@@ -186,11 +186,11 @@ Let's move the contract into a standalone type definition:
 type HeadingProps = { name: string };
 
 export function Heading({ name }: HeadingProps) {
-  return <h1>Hello {name}</h1>;
+	return <h1>Hello {name}</h1>;
 }
 ```
 
-As a note, many React examples use TypeScript *interfaces* for props, instead of types.
+As a note, many React examples use TypeScript _interfaces_ for props, instead of types.
 This tutorial follows the [rationale for types](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example/#types-or-interfaces) as explained in the [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app).
 Namely:
 
@@ -210,7 +210,7 @@ Fortunately, ES6 introduced default values for arguments:
 
 ```typescript {1}
 export function Heading({ name = "React" }: HeadingProps) {
-  return <h1>Hello {name}</h1>;
+	return <h1>Hello {name}</h1>;
 }
 ```
 
@@ -228,7 +228,7 @@ Making it optional is a one-character change:
 type HeadingProps = { name?: string };
 ```
 
-With this `?` added, all of our tests pass *and* TypeScript says we have obeyed all the contracts.
+With this `?` added, all of our tests pass _and_ TypeScript says we have obeyed all the contracts.
 
 ## Single Responsibility Principle
 
@@ -263,7 +263,7 @@ import React from "react";
 type HeadingProps = { name?: string };
 
 export function Heading({ name = "React" }: HeadingProps) {
-  return <h1>Hello {name}</h1>;
+	return <h1>Hello {name}</h1>;
 }
 ```
 
@@ -274,11 +274,11 @@ import React from "react";
 import { Heading } from "./Heading";
 
 function App() {
-  return (
-    <div>
-      <Heading />
-    </div>
-  );
+	return (
+		<div>
+			<Heading />
+		</div>
+	);
 }
 
 export default App;
@@ -323,7 +323,7 @@ For example, in the `App` component, `Ctrl-B` or `Cmd-B` on `Heading` and you wi
 
 You can go in the reverse direction as well.
 Click on the `Heading` then hit `Alt-F7`.
-This shows all the locations in your project which use that *symbol*, not the string.
+This shows all the locations in your project which use that _symbol_, not the string.
 This is useful when you want the change a name through refactoring.
 
 ## Fail Faster: TDD+TypeScript

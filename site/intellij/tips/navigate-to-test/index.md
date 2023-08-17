@@ -11,14 +11,15 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (video) Navigation in IntelliJ IDEA
-    href: 'https://www.youtube.com/watch?v=1UHsJyCq1SU'
+    href: "https://www.youtube.com/watch?v=1UHsJyCq1SU"
   - title: (video) Top 5 IntelliJ IDEA Navigation Shortcuts
-    href: 'https://www.youtube.com/watch?v=crnEBqbBWuo'
+    href: "https://www.youtube.com/watch?v=crnEBqbBWuo"
   - title: >-
       (documentation) IntelliJ IDEA Help - Navigate between test and test
       subject
     href: >-
       https://www.jetbrains.com/help/idea/navigating-between-test-and-test-subject.html
-video: 'https://youtu.be/cuIeDZhpvM0'
+video: "https://youtu.be/cuIeDZhpvM0"
 ---
+
 You can use **⇧⌘T** (macOS), or **Ctrl+Shift+T** (Windows/Linux), to navigate to a test class and back again.

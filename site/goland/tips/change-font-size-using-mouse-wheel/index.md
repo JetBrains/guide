@@ -10,6 +10,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
+
 **How to use:**
 
 Turn on the feature in `Settings/Preferences | Editor | General | Change font size with Ctrl+Mouse Wheel`. Then use _Ctrl + Mouse Wheel up or down_ to increase or decrease the font size of your editor.

@@ -14,6 +14,7 @@ animatedGif:
   width: 540
   height: 540
 ---
+
 **Working with multiple projects?** 🥵
 
 Whether it be system resource constraints or developer preference, some folks don't like having multiple Rider instances running simultaneously. The reality is we sometimes have to work across many solutions to solve a problem. Luckily, Rider gives developers an action to quickly switch between known projects.

@@ -8,7 +8,7 @@ topics:
 author: er
 seealso:
   - title: WebStorm 2019.3 EAP
-    href: 'https://blog.jetbrains.com/webstorm/2019/10/webstorm-2019-3-eap-4/'
+    href: "https://blog.jetbrains.com/webstorm/2019/10/webstorm-2019-3-eap-4/"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -16,4 +16,5 @@ animatedGif:
   width: 600
   height: 300
 ---
-With the *Show Method Return Values* option added to the debugger, you can see what value the method returns without using console.log or invoking the *Evaluate Expression* dialog. To turn this option on, click the gear icon on the debugger’s left pane.
+
+With the _Show Method Return Values_ option added to the debugger, you can see what value the method returns without using console.log or invoking the _Evaluate Expression_ dialog. To turn this option on, click the gear icon on the debugger’s left pane.

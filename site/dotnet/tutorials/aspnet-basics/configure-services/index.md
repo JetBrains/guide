@@ -10,7 +10,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Registering ASP.NET services and instances
 thumbnail: ./thumbnail.png
-video: 'https://www.youtube.com/watch?v=a32WK_wyM2E&feature=youtu.be'
+video: "https://www.youtube.com/watch?v=a32WK_wyM2E&feature=youtu.be"
 ---
 
 We'll be focusing on the `ConfigureServices` method and performing registration through the `IServiceCollection` interface.

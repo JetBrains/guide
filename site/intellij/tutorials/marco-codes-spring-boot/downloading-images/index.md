@@ -6,9 +6,9 @@ topics: []
 author: hs
 subtitle: Next steps for download
 thumbnail: ./thumbnail.png
-video: 'https://www.youtube.com/watch?v=QuvS_VLbGko&start=3099s'
+video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=3099s"
 ---
 
 ## What's in the video?
 
-* How to make images downloadable
+- How to make images downloadable

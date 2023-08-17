@@ -8,8 +8,9 @@ subtitle: >-
   Spock supports a range of different test labels to help you write the most
   readable tests
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/i5Qu3qYOfsM?start=573'
+video: "https://youtu.be/i5Qu3qYOfsM?start=573"
 ---
+
 We've seen `expect` and we've seen `given, when and then`, but Spock provides a lot of flexibility around which labels to use and when. It's all about creating descriptive tests.
 
 In our last test, it did look like the labels might add a lot of noise for such a short test. The setup, for example, is very simple, and we could inline this into the actual test itself. If you inline the setup code into the `when` block, you can remove the `given` label and just use [when and then](http://spockframework.org/spock/docs/2.0/all_in_one.html#_when_and_then_blocks).

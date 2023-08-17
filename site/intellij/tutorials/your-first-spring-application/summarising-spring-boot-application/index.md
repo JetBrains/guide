@@ -9,13 +9,14 @@ thumbnail: ./thumbnail.png
 ---
 
 ## Summary and Resources
+
 In this tutorial we used the [New Project Wizard](https://www.jetbrains.com/help/idea/new-project-wizard.html) in IntelliJ IDEA to create a Spring Boot project with the **Spring Web** dependency.
 
-We created a Spring Controller and served some text to the local Tomcat webserver. Finally, we added a test for our HTTP call.  
+We created a Spring Controller and served some text to the local Tomcat webserver. Finally, we added a test for our HTTP call.
 
 ### Resources
+
 - I referenced [this guide](https://spring.io/guides/gs/spring-boot/) to create this tutorial.
-  
 - The [New Project Wizard](https://www.jetbrains.com/help/idea/new-project-wizard.html) in IntelliJ IDEA Ultimate uses [Spring Initializr](https://start.spring.io/) to create the project behind the scenes.
 
 - There are lots of [guides](https://spring.io/guides) available on the Spring website that you can also have a play with. I recommend you work through more of them, especially if you're interested in Spring development and learning more.
@@ -25,4 +26,5 @@ We created a Spring Controller and served some text to the local Tomcat webserve
 - Finally, there are lots of [excellent blogs](https://www.marcobehler.com/guides) from [Marco Behler](https://twitter.com/MarcoBehler) that you can explore (all under the _Spring_ header).
 
 ### Related Links
+
 - [(video) Creating a Spring Boot "Hello World" Application with IntelliJ IDEA](https://www.youtube.com/watch?v=5kOGdZmpSDI)

@@ -11,15 +11,15 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (video) IntelliJ IDEA Pro Tips Alt Enter
-    href: 'https://www.youtube.com/watch?v=pWHgNm6aGdo'
-  - title: '(blog) IntelliJ IDEA Blog - Alt+Enter, the Problem-solving Shortcut'
+    href: "https://www.youtube.com/watch?v=pWHgNm6aGdo"
+  - title: "(blog) IntelliJ IDEA Blog - Alt+Enter, the Problem-solving Shortcut"
     href: >-
       https://blog.jetbrains.com/idea/2020/08/alt-enter-the-problem-solving-shortcut/
   - title: (documentation) IntelliJ IDEA Help - Inspections
-    href: 'https://www.jetbrains.com/help/idea/inspections-settings.html'
+    href: "https://www.jetbrains.com/help/idea/inspections-settings.html"
   - title: (documentation) IntelliJ IDEA Help - Intention Actions
-    href: 'https://www.jetbrains.com/help/idea/intention-actions.html'
-video: 'https://youtu.be/73w_X5Bfq7U'
+    href: "https://www.jetbrains.com/help/idea/intention-actions.html"
+video: "https://youtu.be/73w_X5Bfq7U"
 ---
 
 IntelliJ IDEA offers intelligent suggestions most places in the code. It can

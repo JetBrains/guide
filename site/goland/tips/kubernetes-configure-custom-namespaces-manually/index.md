@@ -11,6 +11,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
+
 If the plugin cannot automatically infer the available Kubernetes namespaces, now you can configure them manually. This will solve the problem when the user does not have the required permissions to perform namespace listing.
 
 **How to use:**

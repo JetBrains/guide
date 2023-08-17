@@ -10,6 +10,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
+
 If you have multiple `use` directives in your `go.work` file, you can merge them in a single one with a quick-fix.
 
 **How to use:**

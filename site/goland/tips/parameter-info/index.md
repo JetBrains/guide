@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=e0WVojUB020&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=134
 ---
+
 Have a function with lots of arguments? Or a struct with many fields?
 **Parameter Info** gives just the basics without using lots of real estate.
 

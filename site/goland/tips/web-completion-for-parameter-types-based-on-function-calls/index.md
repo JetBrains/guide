@@ -13,6 +13,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=UKtT9tbt0Xg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=28
 ---
+
 The IDE will show you completion suggestions based on the type used in the function call for the parameters in the function body.
 
 **How to use:**

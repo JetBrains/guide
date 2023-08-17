@@ -9,14 +9,14 @@ topics:
 author: mm
 subtitle: Writing and running BDD tests using Behave
 thumbnail: thumbnail.png
-video: 'https://youtu.be/0XUr1mXGRbk'
+video: "https://youtu.be/0XUr1mXGRbk"
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, we are going to work on Behavior-driven development (or BDD) testing. It is an agile software development technique that encourages collaboration between developers, QA and non-technical or business participants in a software project.
 
 Let me give you a small difference between Acceptance Testing & Behavioral-Driven Development.
 
-According to BrowserStack : In the Acceptance Test-Driven Development (ATDD) technique, a single acceptance test is written from the user’s perspective.  It mainly focuses on satisfying the functional behavior of the system.
+According to BrowserStack : In the Acceptance Test-Driven Development (ATDD) technique, a single acceptance test is written from the user’s perspective. It mainly focuses on satisfying the functional behavior of the system.
 
 Acceptance Test-Driven Development is very similar to Behavioral-Driven Development. However, a key difference between them is: BDD focuses more on the behavior of the feature, whereas Acceptance Test-Driven Development focuses on capturing the accurate requirements.
 
@@ -34,7 +34,7 @@ As of now I will be downloading the version **89** which is a stable release. Be
 
 If you are doing it for first time make sure to run the below given command.
 
-- ```sudo apt-get install unzip```
+- `sudo apt-get install unzip`
 
 ![chrome_driver_installation_1](steps/step3.png)
 
@@ -76,6 +76,7 @@ A feature file contain high level description of the test scenario in simple lan
 Gherkin is a plain English text language.
 
 Feature files consist of following components:
+
 - **Feature**: A feature would describe the current test script which has to be executed.
 - **Scenario**: Scenario describes the steps and expected outcome for a particular test case.
 - **Given**: It specifies the context of the text to be executed.
@@ -102,7 +103,7 @@ the outcomes against expected results.
 
 First, I am going to do the necessary imports. After that, I will begin implementing the step definition.
 
-Behave uses ```step_impl``` as the function name by default and accepts context as an argument. We will be
+Behave uses `step_impl` as the function name by default and accepts context as an argument. We will be
 using context to pass selenium information. Keep following along with me, you are going to enjoy it.
 
 ![behave_steps](steps/step12.png)
@@ -270,6 +271,7 @@ Looks like our test case has failed, let me fix it.
 ![behave_error_1](steps/step19.png)
 
 There are two issues I have identified.
+
 - First, I missed the ending square bracket at line number 24.
 - Second, our models are not registered in **admin.py**
 

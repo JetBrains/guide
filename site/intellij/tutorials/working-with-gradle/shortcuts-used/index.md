@@ -13,7 +13,7 @@ In this tutorial we saw an overview of the [support for Gradle projects](https:/
 Some helpful shortcuts mentioned in the tutorial and video:
 
 | Name                                                                                                                                                                                               | macOS Shortcut | Windows Shortcut |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|------------------|
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
 | Load Gradle changes                                                                                                                                                                                | **⇧⌘I**        | **Ctrl+Shift+O** |
 | Add a new dependency from inside the `build.gradle` file                                                                                                                                           | **⌘N**         | **Alt+Insert**   |
 | [Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) (can use this to open the [Gradle Tool Window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html)) | **⇧⇧**         | **Shift+Shift**  |
@@ -25,4 +25,5 @@ Some helpful shortcuts mentioned in the tutorial and video:
 There are links to more information on this tutorial's [introduction](../introduction).
 
 ### Related Links
+
 - [(video) Working with Gradle in IntelliJ IDEA](https://www.youtube.com/watch?v=6V6G3RyxEMk)

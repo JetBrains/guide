@@ -6,10 +6,10 @@ topics: []
 author: hs
 subtitle: Working with Gradle tasks and common Gradle issues
 thumbnail: ./thumbnail.png
-video: 'https://www.youtube.com/watch?v=gKPMKRnnbXU&start=1040s'
+video: "https://www.youtube.com/watch?v=gKPMKRnnbXU&start=1040s"
 ---
 
 # Modifying Gradle Tasks
 
-* How to modify Gradle tasks.
-* Common issues with Gradle that people encounter during builds.
+- How to modify Gradle tasks.
+- Common issues with Gradle that people encounter during builds.

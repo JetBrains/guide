@@ -14,7 +14,7 @@ subtitle: >-
   Learn how Rider can help make sure code behaves as expected, with continuous
   testing and code coverage.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/lr0I5w2apSI'
+video: "https://youtu.be/lr0I5w2apSI"
 ---
 
 ### Testing our Code
@@ -43,4 +43,4 @@ more tests to cover all cases.
 - [Getting Started with Unit Testing](https://www.jetbrains.com/help/rider/Getting_Started_with_Unit_Testing.html)
 - [xUnit](https://xunit.net/)
 - [NUnit](https://nunit.org/)
-- [MSTest](https://docs.microsoft.com/en-us/previous-versions/ms243147(v=vs.90)?redirectedfrom=MSDN)
+- [MSTest](<https://docs.microsoft.com/en-us/previous-versions/ms243147(v=vs.90)?redirectedfrom=MSDN>)

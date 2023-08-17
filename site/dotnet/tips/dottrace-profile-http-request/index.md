@@ -18,6 +18,7 @@ animatedGif:
   width: 640
   height: 360
 ---
+
 **Profiling meets event tracing!** 🤝
 
 Timeline profiling combines profiler data with event traces. What happens when an HTTP request is made?
@@ -25,5 +26,6 @@ Timeline profiling combines profiler data with event traces. What happens when a
 Filter profiling snapshots by allocations, exceptions, garbage collection, and combine that information with what's going on in file operations, LINQ queries, SQL calls, and so much more.
 
 ### See Also
+
 - [Profile .NET Core application](https://www.jetbrains.com/help/profiler/Profile_.NET_Core_Application.html)
-- [Trace an HTTP request](https://www.jetbrains.com/help/profiler/Get_Started_with_Timeline_Profiling_(Basic).html#http)
+- [Trace an HTTP request](<https://www.jetbrains.com/help/profiler/Get_Started_with_Timeline_Profiling_(Basic).html#http>)

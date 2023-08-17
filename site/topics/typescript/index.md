@@ -2,7 +2,7 @@
 title: TypeScript
 subtitle: JavaScript for any scale
 logo: ./typescript-plain.svg
-website: 'https://www.typescriptlang.org'
+website: "https://www.typescriptlang.org"
 topicType: technology
 obsoletes:
   - /pycharm/topics/typescript/

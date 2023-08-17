@@ -17,6 +17,7 @@ animatedGif:
   width: 500
   height: 256
 ---
+
 **How do these C# 8 features work again?** 🤔
 
 Learning new language constructs with Rider is just a matter of hitting **Alt-Enter**. Convert a `switch` statement to `switch` expression? Alt-Enter! Prefer compound assignments instead of simple assignments? Alt-Enter! Make use of `IAsyncDisposable` and `using` declarations? You know what – Alt-Enter! 🙃
@@ -26,6 +27,7 @@ Note that most **quick-fixes can be applied in scopes**, for instance in the cur
 Alt-Enter – Probably the most important shortcut 🤓
 
 ### See Also
+
 - [Indices, Ranges, and Null-coalescing Assignments](https://blog.jetbrains.com/dotnet/2019/04/24/indices-ranges-null-coalescing-assignments-look-new-language-features-c-8/)
 - [Switch Expressions and Pattern-Based Usings](https://blog.jetbrains.com/dotnet/2019/05/14/switch-expressions-pattern-based-usings-look-new-language-features-c-8/)
 - [Recursive Pattern Matching](https://blog.jetbrains.com/dotnet/2019/07/09/recursive-pattern-matching-look-new-language-features-c-8/)

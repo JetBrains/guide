@@ -9,19 +9,24 @@ thumbnail: ./thumbnail.png
 ---
 
 ## A Before and After Example of Code Rearrangement
+
 Let's modify the code arrangement settings for this example. Specifically we want to create a new rule that puts private methods at the bottom of each class.
 
 ### Modifying the Existing Rule Arrangement
+
 You can change your rule arrangement preferences with **⌘,** (macOS), **Ctrl+Alt+S** (Windows/Linux) and then searching for _arrangement_. Select **Editor > Code Style > Java** from the filtered list and then the **Arrangement** tab.
 
 ### Arrangement Settings/Preferences
+
 To change your code arrangement settings, use **⌘,** (macOS), **Ctrl+Shift+S** (Windows/Linux), to bring up the Preferences/Settings dialog. This dialog is searchable, so you can type in _arrangement_. This filters the dialog to **Code Style**. You can then select the language you're working with. In this tutorial we will use **Java**. Alternatively, you can navigate to **Editor > Code Style > Java**.
 
 The Arrangement tab is grouped into two areas:
+
 - [Grouping Rules](#grouping-rules)
 - [Matching Rules](#matching-rules)
 
 #### Grouping Rules
+
 IntelliJ IDEA allows you to group these three code elements:
 
 **Getters and Setters** is fairly self-explanatory. When this checkbox is selected, and you invoke rearrange code, your getters and setters will be grouped together in your class. This is enabled by default.
@@ -31,9 +36,11 @@ IntelliJ IDEA allows you to group these three code elements:
 **Dependent methods** has a drop-down that allows you to select breadth-first or depth-first for method coupling. You may have a use-case for this option, but for most Java code bases that have evolved over time, trying to keep _related_ methods together is not usually what you want to do. If you do choose to use this option then it will take priority over Matching Rules. We suggest you use this option or Matching Rules, not both. In our example we're going to use Matching Rules defined in the next section as this is a more common real-world scenario.
 
 #### Matching Rules
+
 This is where you can define how you'd like your classes to be ordered when you invoke rearrange code. You can select any line and move it up or down as required with the arrows in the top-right. You can also click the pencil icon to the right of each row to alter the rule and select a finer level of granularity.
 
 ### Adding a New Arrangement Rule
+
 To add our new rule, go down to rule 22 and press the **+** button. This will place the new rule below 22. Select Type: **method** and Modifier: **private**. You can give it a name if required but both the type and modifier are displayed so that may not be necessary for this example.
 
 ![New rule for private methods](new_arrangement_rule.png)
@@ -42,35 +49,35 @@ Now we've modified our [code arrangement](https://www.jetbrains.com/help/idea/re
 
 Given you can't scroll a screenshot, here is the order in text form, so you can see what's happening:
 
-|   |   |   |  | |  
-| ----------- | ----------- | ----------- | ----------- | ----------- |
-1 | field | public | static | final |
-2 | field | protected | static | final |
-3| field | package private | static | final|
-4| field | private | static | final|
-5| field | public | static | |
-6| field | protected | static | |
-7| field | package private | static | |
-8| field | private | static | |
-9| initializer block | static | | |
-10| field | public | final | |
-11| field | protected | final | |
-12| field | package private | final | |
-13| field | private | final | |
-14| field | public | | |
-15| field | protected | | |
-16| field | package private | | |
-17| field | private | | |
-18| field | | | |
-19| initializer block | | | |
-20| constructor | | | |
-21| method | static | | |
-22| method | | | |
-23| method | private | | |
-24| enum | | | |
-25| interface | | | |
-26| class | static | | |
-27| class | | | |
+|     |                   |                 |        |       |
+| --- | ----------------- | --------------- | ------ | ----- |
+| 1   | field             | public          | static | final |
+| 2   | field             | protected       | static | final |
+| 3   | field             | package private | static | final |
+| 4   | field             | private         | static | final |
+| 5   | field             | public          | static |       |
+| 6   | field             | protected       | static |       |
+| 7   | field             | package private | static |       |
+| 8   | field             | private         | static |       |
+| 9   | initializer block | static          |        |       |
+| 10  | field             | public          | final  |       |
+| 11  | field             | protected       | final  |       |
+| 12  | field             | package private | final  |       |
+| 13  | field             | private         | final  |       |
+| 14  | field             | public          |        |       |
+| 15  | field             | protected       |        |       |
+| 16  | field             | package private |        |       |
+| 17  | field             | private         |        |       |
+| 18  | field             |                 |        |       |
+| 19  | initializer block |                 |        |       |
+| 20  | constructor       |                 |        |       |
+| 21  | method            | static          |        |       |
+| 22  | method            |                 |        |       |
+| 23  | method            | private         |        |       |
+| 24  | enum              |                 |        |       |
+| 25  | interface         |                 |        |       |
+| 26  | class             | static          |        |       |
+| 27  | class             |                 |        |       |
 
 Here's the code that we're going to rearrange. As you can see, the getter and setter methods are not together, private methods are in the middle of the class and override methods are also scattered throughout the class.
 
@@ -182,6 +189,7 @@ Let's invoke [rearrange code](https://www.jetbrains.com/help/idea/reformat-and-r
 Press **Enter** on **Rearrange Code** option to apply the settings to the whole class.
 
 When you do this, the code will be rearranged (see below). Here is a list of changes:
+
 - All the fields have moved to the top of the class because that's what we specified in our grouping rows 1-8.
 - The getter and setter methods are grouped because IntelliJ IDEA has grouped them together from the grouping rules.
 - The Override methods have been grouped together because we specified we wanted to keep them together in the grouping rules). The Override methods are also implemented in the order they appear in the Object super class.
@@ -285,4 +293,5 @@ public class RearrangeCode {
 ```
 
 ## Rearranging Just Code You've Changed
+
 Now you've seen a worked example of rearranging a whole class, let's take a look at the use-case for only rearranging code that you've edited rather than the whole class.

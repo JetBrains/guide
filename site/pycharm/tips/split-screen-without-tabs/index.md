@@ -15,7 +15,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/migrating-from-text-editors.html#tabs_split_windows
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/VcqbOtn1s0w'
+video: "https://youtu.be/VcqbOtn1s0w"
 ---
 
 As discussed previously, disabling tabs and focusing on the keyboard helps

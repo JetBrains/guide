@@ -9,7 +9,7 @@ topics:
 author: mm
 subtitle: Cleaning up resources from AWS
 thumbnail: thumbnail.png
-video: 'https://youtu.be/8scGfh3D0Yc'
+video: "https://youtu.be/8scGfh3D0Yc"
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this final tutorial step, we are going to remove the

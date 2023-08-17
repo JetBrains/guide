@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=KjPmCoyTbQQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=101
 ---
+
 GoLand provides completion suggestions when you typed only a part of a
 word (any part, even characters from somewhere in the middle).
 

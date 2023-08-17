@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Creating a Live Template to add a JUnit test
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/Sio9MdSqXZo?start=392'
+video: "https://youtu.be/Sio9MdSqXZo?start=392"
 ---
 
 In this example, we're going to create a Live Template to insert the code construct for a new JUnit test. We're going to base this Live Template on existing code:

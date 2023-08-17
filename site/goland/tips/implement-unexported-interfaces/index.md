@@ -9,8 +9,9 @@ author: ap
 subtitle: Implement unexported interfaces by pressing Ctrl + I
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/WrKC9EFVu04'
+video: "https://youtu.be/WrKC9EFVu04"
 ---
+
 GoLand offers the option to quickly implement an interface using the
 _Implement methods_ action. Starting with GoLand 2023.1, this action works with exported and unexported interfaces.
 

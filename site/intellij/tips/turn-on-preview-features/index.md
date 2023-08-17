@@ -10,8 +10,9 @@ subtitle: >-
   IDEA.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/Svr-rcfJSyM'
+video: "https://youtu.be/Svr-rcfJSyM"
 ---
+
 If you want to use preview features in the latest versions of Java in IntelliJ IDEA, you need to set the language level to "Preview".
 
 Go to Project Structure, **⌘;** (macOS) or **Ctrl+Alt+Shift+S** (Windows/Linux), make sure you have the correct JDK selected, and pick the "Preview" option from the Language Level dropdown.

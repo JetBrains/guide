@@ -8,9 +8,9 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: 'A complete MVC pipeline with routes, models, views, and controllers.'
+subtitle: "A complete MVC pipeline with routes, models, views, and controllers."
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/7IniT0P13_I'
+video: "https://youtu.be/7IniT0P13_I"
 ---
 
 In an ASP.NET MVC application, we have three crucial components: Model, View, Controller. The pattern is popular across many other ecosystems, and ASP.NET MVC is a particular flavor developed for .NET developers.
@@ -21,7 +21,7 @@ All new endpoints will start with a `Controller` class. In our case, we're start
 
 We follow up on the creation of our controller with a nested action of `Index`. This endpoint will return our view to be rendered by the client. Additionally, we can back this view with an`IndexModel`. The model allows us to pass information to the view for display purposes.
 
-Next, we need to create a view called `Index` under the `/Views/Widgets` folder. The view will contain a form that will allow us to pass information from our browser client to a yet to be written endpoint of `Create`.  Those of us familiar with HTML should find it very similar to our previous experiences building HTML forms.
+Next, we need to create a view called `Index` under the `/Views/Widgets` folder. The view will contain a form that will allow us to pass information from our browser client to a yet to be written endpoint of `Create`. Those of us familiar with HTML should find it very similar to our previous experiences building HTML forms.
 
 Finally, we can create the `Create` endpoint in our `WidgetsController`. We need to remember to decorate our endpoints with a `Route` attribute. In this case, we want the path `/widgets/create`. This endpoint takes in a `CreateModel` that allows ASP.NET to bind our form data to our C# object. We can see the data comes from the form by using the parameter attribute of `FromForm`. For this basic demo, we'll store our form data in a static variable so it can survive past a single request.
 
@@ -67,29 +67,20 @@ public class WidgetsController : Controller
 The following view is located under `/Views/Widgets/Index.cshtml`.
 
 ```html
-@model IndexModel
-
-@{
-    ViewBag.Title = "title";
-    Layout = "_Layout";
-}
+@model IndexModel @{ ViewBag.Title = "title"; Layout = "_Layout"; }
 
 <h2>Widgets</h2>
 
-@if (Model.HasName)
-{
-    <p class="alert alert-info">
-         Hello, @Model.Name!
-    </p>
+@if (Model.HasName) {
+<p class="alert alert-info">Hello, @Model.Name!</p>
 }
 
-
 <form method="post" asp-action="Create">
-    <div class="form-group">
-        <label asp-for="Name"></label>
-        <input type="text" asp-for="Name">
-    </div>
-    <button type="submit" class="btn btn-primary">Save</button>
+	<div class="form-group">
+		<label asp-for="Name"></label>
+		<input type="text" asp-for="Name" />
+	</div>
+	<button type="submit" class="btn btn-primary">Save</button>
 </form>
 ```
 

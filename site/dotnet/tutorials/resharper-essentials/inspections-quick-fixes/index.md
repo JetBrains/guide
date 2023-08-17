@@ -9,9 +9,9 @@ topics:
   - inspections
   - resharper
 author: matkoch
-subtitle: 'Helping you write better code, faster, and automatically fixes code issues.'
+subtitle: "Helping you write better code, faster, and automatically fixes code issues."
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/RgDGJ9H63n4'
+video: "https://youtu.be/RgDGJ9H63n4"
 ---
 
 ### What are Inspections and Quick-Fixes?
@@ -30,10 +30,10 @@ When hovering an inspection, ReSharper will show you that a quick-fix is availab
 
 While ReSharper comes with a wide range of code inspections to notify us about redundancies in code, potential code quality issues or common practices, there are also a number of inspections that help with readability.
 
-* [Maintaining consistent code style with formatting inspections](https://blog.jetbrains.com/dotnet/2018/04/04/maintaining-consistent-code-style-formatting-inspections-resharper-2018-1/)
-* [Configuring inspection severities with EditorConfig](https://blog.jetbrains.com/dotnet/2018/04/05/configuring-inspection-severities-editorconfig/)
-* [Code style settings from Roslyn conventions in EditorConfig](https://blog.jetbrains.com/dotnet/2018/04/06/code-style-settings-roslyn-conventions-editorconfig/)
-* [StyleCop code style settings and inspections](https://blog.jetbrains.com/dotnet/2018/04/09/stylecop-code-style-settings-inspections/)
+- [Maintaining consistent code style with formatting inspections](https://blog.jetbrains.com/dotnet/2018/04/04/maintaining-consistent-code-style-formatting-inspections-resharper-2018-1/)
+- [Configuring inspection severities with EditorConfig](https://blog.jetbrains.com/dotnet/2018/04/05/configuring-inspection-severities-editorconfig/)
+- [Code style settings from Roslyn conventions in EditorConfig](https://blog.jetbrains.com/dotnet/2018/04/06/code-style-settings-roslyn-conventions-editorconfig/)
+- [StyleCop code style settings and inspections](https://blog.jetbrains.com/dotnet/2018/04/09/stylecop-code-style-settings-inspections/)
 
 ### Share Inspection Settings with the Team
 

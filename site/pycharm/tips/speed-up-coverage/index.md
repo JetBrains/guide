@@ -9,10 +9,10 @@ subtitle: >-
   directory.
 seealso:
   - title: Coverage configuration files
-    href: 'https://coverage.readthedocs.io/en/coverage-5.0.4/config.html'
+    href: "https://coverage.readthedocs.io/en/coverage-5.0.4/config.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://www.youtube.com/watch?v=OCH_gPfrvzw'
+video: "https://www.youtube.com/watch?v=OCH_gPfrvzw"
 ---
 
 Coverage is a boon: it lets you know how much of your code has tests and

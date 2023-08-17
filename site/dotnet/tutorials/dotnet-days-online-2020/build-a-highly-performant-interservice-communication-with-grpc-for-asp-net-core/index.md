@@ -13,7 +13,7 @@ topics:
 author: maartenba
 subtitle: Riccardo Terrell
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/uD-5v2Qd5Go'
+video: "https://youtu.be/uD-5v2Qd5Go"
 ---
 
 In this session, we introduce gRPC as a modern high-performance RPC framework for ASP.NET Core and for interservice communication. We look at the difference between gRPC and REST-based communication by exploring the pros and cons that these technologies offer; for example, gRPC uses HTTP/2 as base transport protocol and ProtoBuf encoding for efficient and fast communication.

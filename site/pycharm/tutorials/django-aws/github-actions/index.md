@@ -9,7 +9,7 @@ topics:
 author: mm
 subtitle: Deploy Docker Image to AWS ECR through GitHub Actions
 thumbnail: thumbnail.png
-video: 'https://youtu.be/WFGTQnvhf5Q'
+video: "https://youtu.be/WFGTQnvhf5Q"
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, we are going to build, tag and push our docker image to Amazon Elastic Container Registry through GitHub Actions.
@@ -20,7 +20,7 @@ your user base, and more.
 There are tons of alternative flavours you can try out.
 
 - [Jenkins](https://www.jenkins.io/)
-- [TeamCity](https://www.jetbrains.com/teamcity/)  
+- [TeamCity](https://www.jetbrains.com/teamcity/)
 - [CircleCI](https://circleci.com/)
 - [TravisCI](https://travis-ci.org/)
 
@@ -58,7 +58,7 @@ This is how the **manual.yml** file will look at the end.
 name: Deploy image to AWS ECR
 
 # Run this workflow every time a new tag is created
-on: 
+on:
   create:
     tags:
       - .*
@@ -76,11 +76,11 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
-          
+
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
-        
+
       - name: Check out code
         uses: actions/checkout@v2
       - name: Set Tag Number
@@ -92,7 +92,7 @@ jobs:
         run: |
           echo $RELEASE_VERSION
           echo ${{ steps.vars.outputs.tag }}
-        
+
       - name: Build, tag, and push image to Amazon ECR
         env:
           ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
@@ -102,8 +102,6 @@ jobs:
           docker build -t demo .
           docker tag demo:latest $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-          
-        
 ```
 
 To work with ECR we need to browse **aws-actions**, which contains starter templates for multiple services.
@@ -239,7 +237,7 @@ Great ! Our deployment is successful. Let me verify that in the ECR Console.
 
 ![build-success](./steps/step35.png)
 
-Yes, the 1.0 tag is reflecting in the repository.  
+Yes, the 1.0 tag is reflecting in the repository.
 
 ![build-success-ecr](./steps/step36.png)
 

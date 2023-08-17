@@ -74,7 +74,7 @@ WORKDIR "/src/HelloDocker"
 RUN dotnet build "HelloDocker.csproj" -c Release -o /app/build
 ```
 
-Note the use of the `AS` keyword. We're giving build steps intermediate image names so we can reference them throughout the containerization process.  The next few lines will use our previous `build` image to publish our project, assuming it succeeded to build.
+Note the use of the `AS` keyword. We're giving build steps intermediate image names so we can reference them throughout the containerization process. The next few lines will use our previous `build` image to publish our project, assuming it succeeded to build.
 
 ```
 FROM build AS publish
@@ -114,7 +114,7 @@ Running the command, we see the following output in our terminal.
 
 ```
 ➜ docker build -f HelloDocker/Dockerfile -t hello-docker --rm .
-[+] Building 4.7s (18/18) FINISHED                                                                                        
+[+] Building 4.7s (18/18) FINISHED
  => [internal] load build definition from Dockerfile                                                                 0.0s
  => => transferring dockerfile: 37B                                                                                  0.0s
  => [internal] load .dockerignore                                                                                    0.0s
@@ -132,11 +132,11 @@ Running the command, we see the following output in our terminal.
  => [build 6/7] WORKDIR /src/HelloDocker                                                                             0.0s
  => [build 7/7] RUN dotnet build "HelloDocker.csproj" -c Release -o /app/build                                       2.7s
  => [publish 1/1] RUN dotnet publish "HelloDocker.csproj" -c Release -o /app/publish                                 1.8s
- => CACHED [base 2/2] WORKDIR /app                                                                                   0.0s 
- => CACHED [final 1/2] WORKDIR /app                                                                                  0.0s 
- => CACHED [final 2/2] COPY --from=publish /app/publish .                                                            0.0s 
- => exporting to image                                                                                               0.0s 
- => => exporting layers                                                                                              0.0s 
+ => CACHED [base 2/2] WORKDIR /app                                                                                   0.0s
+ => CACHED [final 1/2] WORKDIR /app                                                                                  0.0s
+ => CACHED [final 2/2] COPY --from=publish /app/publish .                                                            0.0s
+ => exporting to image                                                                                               0.0s
+ => => exporting layers                                                                                              0.0s
  => => writing image sha256:b8ff862ff829ece58c3ac884c5bdc895795347caeefd12e7597ce8f2e9ac3912                         0.0s
  => => naming to docker.io/library/hello-docker                                                                      0.0s
 ```
@@ -170,7 +170,7 @@ From the `Edit Run Configuration` dialog, we'll set the `Image tag` to `hello-do
 
 ![Setting the Docker image tag](./3-setting-the-image-tag.png)
 
-Once we've applied our changes, we can run them either from the dialog or from the editor window using the chevrons.  We'll see our image along with the container in the **Services** tool window.
+Once we've applied our changes, we can run them either from the dialog or from the editor window using the chevrons. We'll see our image along with the container in the **Services** tool window.
 
 ![Image and running container in services window](./4-image-and-running-container.png)
 

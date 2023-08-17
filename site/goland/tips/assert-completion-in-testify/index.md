@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=NrG8jsuxb1U&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=7
 ---
+
 **How to use:**
 
 Type the _assert_ function call and let the IDE automatically fill the _testing.T_ parameter in the assert function call.

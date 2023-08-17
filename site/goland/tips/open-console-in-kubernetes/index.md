@@ -12,6 +12,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=5EvE7uZ38gU&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=76
 ---
+
 **How to use:**
 
 Select the pod you want from the _Kubernetes_ view in the _Services_ tool window, then click on the _Open Console_ button. A new tab will open and a console will be attached to the running process inside the pod.

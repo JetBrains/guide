@@ -13,6 +13,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=EN27C5oDbpg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=20
 ---
+
 **How to use:**
 Hover the cursor on the top right side of the IDE and click on the
 IDE icon next to the browsers ones.

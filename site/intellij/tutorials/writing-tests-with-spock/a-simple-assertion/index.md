@@ -6,12 +6,12 @@ topics: []
 author: tg
 subtitle: Writing our first Spock test
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/i5Qu3qYOfsM?start=197'
+video: "https://youtu.be/i5Qu3qYOfsM?start=197"
 ---
 
 Let's start by writing a very simple test, so we can see what Spock tests look like.
 
-From the [Project window](https://www.jetbrains.com/help/idea/project-tool-window.html), we can use the shortcut  **⌘N** (macOS) or **Alt+Insert** (Windows/Linux) to create a new file. Let's create a Groovy class, since Spock tests are Groovy classes:
+From the [Project window](https://www.jetbrains.com/help/idea/project-tool-window.html), we can use the shortcut **⌘N** (macOS) or **Alt+Insert** (Windows/Linux) to create a new file. Let's create a Groovy class, since Spock tests are Groovy classes:
 
 ![](./05-new-groovy-class.png)
 
@@ -31,7 +31,7 @@ class ExampleSpecification extends Specification {
 
 ```
 
-We can get IntelliJ IDEA to generate test methods for Spock specifications using  **⌘N** (macOS) or **Alt+Insert** (Windows/Linux) inside the class.
+We can get IntelliJ IDEA to generate test methods for Spock specifications using **⌘N** (macOS) or **Alt+Insert** (Windows/Linux) inside the class.
 
 ![](./07.png)
 

@@ -177,9 +177,9 @@ export const migrateFrontMatter = () => {
 	const allMarkdownFiles = getMarkdownFiles();
 
 	const markdowns = pipe(
-		// migrateLeadInAttribute,
-		// removeHasBodyAttribute,
-		// migrateVideoFrontmatter,
+		migrateLeadInAttribute,
+		removeHasBodyAttribute,
+		migrateVideoFrontmatter,
 		removeBlankLinesAtDocumentEnd
 	)(allMarkdownFiles);
 
@@ -270,16 +270,6 @@ export function removeBlankLinesAtDocumentEnd(
 	const pattern = /\n+$/; // Matches one or more newline characters at the end of the string
 	const replacement = "\n"; // Replace with a single newline character
 	return documents.map((document) => {
-		if (
-			document.path.includes(
-				"tutorials/resharper-to-rider/working-with-internet-information-services-iis"
-			)
-		) {
-			console.log(document.content);
-		}
-		if (!pattern.test(document.content)) {
-			return document;
-		}
 		return {
 			...document,
 			content: document.content.replace(pattern, replacement),
@@ -296,7 +286,11 @@ export function writeCleanResources(): void {
 	const cleanedResources = cleanAllResources(markdownResources);
 
 	Object.entries(cleanedResources).forEach(([filePath, markdown]) => {
-		fs.writeFileSync(filePath, markdown, { flag: "w+" });
+		const pattern = /\n+$/; // Matches one or more newline characters at the end of the string
+		const replacement = "\n"; // Replace with a single newline character
+
+		const m = markdown.replace(pattern, replacement);
+		fs.writeFileSync(filePath, m, { flag: "w+" });
 	});
 }
 

@@ -11,7 +11,7 @@ topics:
 author: maartenba
 subtitle: Michael Staib
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/Yy9wOhiWBJg'
+video: "https://youtu.be/Yy9wOhiWBJg"
 ---
 
 GraphQL is a great way to expose your APIs and it has changed the way we think about consuming data over HTTP. Not only does GraphQL give us the power to ask for exactly what we want but it also exposes data in a way that is more aligned with the way we think about data.

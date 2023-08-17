@@ -17,4 +17,3 @@ tutorialItems:
   - ./compare-branches/
   - ./merged-commits/
 ---
-

@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=tEIGlCXU7Zc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=140
 ---
+
 **How to use:**
 
 Open any CSS file and start typing either _@tailwind_ directives or CSS statements such as _@apply font-bold bg-blue-400;_

@@ -17,8 +17,9 @@ cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 seealso:
   - title: GoLand Documentation – Run Anything
-    href: 'https://www.jetbrains.com/help/go/2022.2/running-anything.html'
+    href: "https://www.jetbrains.com/help/go/2022.2/running-anything.html"
 ---
+
 Run Anything is a quick way to launch run/debug configurations, applications, scripts, commands, tasks, and open recent projects.
 
 **How to use:**

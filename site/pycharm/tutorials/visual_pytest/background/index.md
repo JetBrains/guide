@@ -10,11 +10,11 @@ subtitle: >-
   Introduce testing, pytest, and how it all fits into PyCharm, along with a
   scenario to work on.
 thumbnail: ../thumbnail.png
-video: 'https://youtu.be/dAbpPklX7wo'
+video: "https://youtu.be/dAbpPklX7wo"
 ---
 
 "Visual Testing with `pytest`" means three things: the field of testing and test-driven development (TDD), `pytest` as a testing tool, and PyCharm as a visual frontend.
-But what do *those* three things mean, and what are we going to work on?
+But what do _those_ three things mean, and what are we going to work on?
 
 Let's do some background on these points.
 
@@ -28,8 +28,8 @@ But that's the "eat your vegetables" version.
 "Bleh, test writing."
 This leads to projects where tests are a chore done at the end to satisfy some mandate.
 
-There's another philosophy called "test-driven-development" (TDD) where you write your tests *as you write your code*.
-In fact, you write *failing* tests *before* you write your code, giving you time to think about what the code should do.
+There's another philosophy called "test-driven-development" (TDD) where you write your tests _as you write your code_.
+In fact, you write _failing_ tests _before_ you write your code, giving you time to think about what the code should do.
 Then, as you gradually implement your feature in code, your tests start to pass, and you have a feeling of success.
 I confess, I'm a big believer in this mode of development.
 In my experience, it's quite a (dare I say) joyful way to code.

@@ -14,7 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Swap and replace any HTML element
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/IDNdm-1x5SM'
+video: "https://youtu.be/IDNdm-1x5SM"
 ---
 
 HTMX works on the philosophy of **[Locality of Behavior](https://htmx.org/essays/locality-of-behaviour/)**. Adopting this philosophy means we will define HTMX definitions and the result of the behavior as close to each other as possible. The more relative everything is, the more decipherable our application is to developers needing to maintain and adapt our codebase.
@@ -27,40 +27,68 @@ Since application shells are typically unique elements on the page, we can add i
 
 ```html
 <a id="cartNavbar" class="nav-link ms-10" aria-current="page" href="#">
-    <i class="fa fa-shopping-cart"></i>
-    Cart
-    <span class="badge bg-secondary">@Model.TotalItemsInCart</span>
+	<i class="fa fa-shopping-cart"></i>
+	Cart
+	<span class="badge bg-secondary">@Model.TotalItemsInCart</span>
 </a>
 ```
 
 HTMX can process responses before placing them into our target element. Therefore, we only need to add the `hx-swap-oob` attribute along with a value of `true` along with any additional HTML we need HTMX to swap into the DOM.
 
 ```html
-    <a id="cartNavbar" hx-swap-oob="true" class="nav-link ms-10" aria-current="page" href="#">
-        <i class="fa fa-shopping-cart"></i>
-        Cart
-        <span class="badge bg-secondary">4</span>
-    </a>
-<div id="shoppingItem" class="d-flex justify-content-center align-items-center container px-2 mt-4">
-    <div class="card">
-        <div class="top d-flex flex-row align-items-center bg-primary">
-            <h6 class="mb-0 mr-2">Organics by LaMana</h6> <i class="fa fa-opencart"></i>
-        </div>
-        <div class="middle">
-            <img alt="pineapple" src="https://i.imgur.com/b4nm7pc.png" width="300" class="mt-3">
-            <h5>Pineapple Green Packham</h5> <span>Each - approx 1.2KG</span>
-        </div>
-        <div class="bottom d-flex flex-row justify-content-center">
-            <form hx-swap="outerHTML" hx-target="#shoppingItem" hx-post="/examples/13-out-of-band-swaps?handler=AddToCart">
-                <div class="input-group mb-3">
-                    <input id="count" type="number" min="0" max="100" class="form-control" name="count" value="4">
-                    <button type="submit" class="btn btn-success btn-sm add">
-                        Add For <b>$1.75</b>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
+<a
+	id="cartNavbar"
+	hx-swap-oob="true"
+	class="nav-link ms-10"
+	aria-current="page"
+	href="#"
+>
+	<i class="fa fa-shopping-cart"></i>
+	Cart
+	<span class="badge bg-secondary">4</span>
+</a>
+<div
+	id="shoppingItem"
+	class="d-flex justify-content-center align-items-center container px-2 mt-4"
+>
+	<div class="card">
+		<div class="top d-flex flex-row align-items-center bg-primary">
+			<h6 class="mb-0 mr-2">Organics by LaMana</h6>
+			<i class="fa fa-opencart"></i>
+		</div>
+		<div class="middle">
+			<img
+				alt="pineapple"
+				src="https://i.imgur.com/b4nm7pc.png"
+				width="300"
+				class="mt-3"
+			/>
+			<h5>Pineapple Green Packham</h5>
+			<span>Each - approx 1.2KG</span>
+		</div>
+		<div class="bottom d-flex flex-row justify-content-center">
+			<form
+				hx-swap="outerHTML"
+				hx-target="#shoppingItem"
+				hx-post="/examples/13-out-of-band-swaps?handler=AddToCart"
+			>
+				<div class="input-group mb-3">
+					<input
+						id="count"
+						type="number"
+						min="0"
+						max="100"
+						class="form-control"
+						name="count"
+						value="4"
+					/>
+					<button type="submit" class="btn btn-success btn-sm add">
+						Add For <b>$1.75</b>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
 </div>
 ```
 

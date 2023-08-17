@@ -10,14 +10,14 @@ topics:
   - resharper
   - rider
 author: khalidabuhakmeh
-subtitle: 'Working with Cultures, Resources, & Apps'
+subtitle: "Working with Cultures, Resources, & Apps"
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/ieNmK6zAYns'
+video: "https://youtu.be/ieNmK6zAYns"
 ---
 
 Localization is the process of modifying our application to fit within a particular culture. We can think of culture as the customs, language, and social constructs of a specific nation, people, or social group. When attempting to localize an application, we should keep in mind all the presentational elements: language, images, and colors are a few examples. Language, the way we communicate thoughts, is ideally where most folks would start.
 
-This tutorial will show how to localize a **Hello, World** console application utilizing **Rider's Localization Manager**.  Let's aim to _keep it simple_. Many of the steps it takes to localize for one culture we can apply to all cultures.
+This tutorial will show how to localize a **Hello, World** console application utilizing **Rider's Localization Manager**. Let's aim to _keep it simple_. Many of the steps it takes to localize for one culture we can apply to all cultures.
 
 Before we delve into the code, let's talk about the main components of .NET localization. These building blocks have existed since .NET 1.1 and continue to be relevant in the latest versions of .NET Core.
 

@@ -8,7 +8,7 @@ subtitle: >-
   Sometimes we want to check more than one value on an object. We can use `with`
   to do this.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/i5Qu3qYOfsM?start=1834'
+video: "https://youtu.be/i5Qu3qYOfsM?start=1834"
 ---
 
 Let's look at one approach to testing multiple properties of a single object. We can change the previous test to the following:

@@ -13,8 +13,8 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Resolving Merge Conflicts
-    href: 'https://www.jetbrains.com/help/idea/resolving-conflicts.html'
-video: 'https://youtu.be/GvAUA-jD9d0'
+    href: "https://www.jetbrains.com/help/idea/resolving-conflicts.html"
+video: "https://youtu.be/GvAUA-jD9d0"
 ---
 
 Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search

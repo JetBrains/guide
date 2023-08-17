@@ -7,10 +7,10 @@ author: pwe
 subtitle: Use the keyboard to select and run a run configuration.
 seealso:
   - title: Running
-    href: 'https://www.jetbrains.com/help/pycharm/running-code.html'
+    href: "https://www.jetbrains.com/help/pycharm/running-code.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/oSEMKeUVjlE'
+video: "https://youtu.be/oSEMKeUVjlE"
 ---
 
 These tips have a recurring theme: use your keyboard, not your mouse. Running

@@ -12,7 +12,7 @@ subtitle: >-
   Examine the runtime behavior of your application, identify problematic code,
   run through code step by step.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/F3yN9HirSQo'
+video: "https://youtu.be/F3yN9HirSQo"
 ---
 
 ### Step through Code, Inspect what is Going On

@@ -7,12 +7,12 @@ topics:
 author: mm
 subtitle: Removing Resources from AWS Console
 thumbnail: ../thumbnail.png
-video: 'https://youtu.be/IKRmrQ47ATg'
+video: "https://youtu.be/IKRmrQ47ATg"
 ---
 
 In this tutorial step, we will be removing all the services used during the tutorial.
 
-* *If you are already aware how to remove resources from AWS then you can skip it.* (Optional)
+- _If you are already aware how to remove resources from AWS then you can skip it._ (Optional)
 
 # Cleanup
 

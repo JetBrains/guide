@@ -7,13 +7,13 @@ topics:
 author: tg
 subtitle: Understand how IntelliJ IDEA deals with Gradle's source set directories
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/6V6G3RyxEMk?start=490'
+video: "https://youtu.be/6V6G3RyxEMk?start=490"
 ---
 
-Gradle has the concept of [source sets](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.SourceSet.html
-) for where your code and test sources live.
+Gradle has the concept of [source sets](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.SourceSet.html) for where your code and test sources live.
 
 Some Gradle plugins come with default source sets, for example the Java plugin has a "main" source set where the default location is `src/main/java`. IntelliJ IDEA has automatically created the source set directories for the `java` plugin for this project, we can see:
+
 - `src/main/java`
 - `src/main/resources`
 - `src/test/java`

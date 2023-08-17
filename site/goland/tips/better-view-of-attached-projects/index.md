@@ -11,7 +11,8 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=Q1ts4UzK_AM&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=63
 ---
-*Stop switching between IDE windows and keep all your projects in the same window.*
+
+_Stop switching between IDE windows and keep all your projects in the same window._
 
 **How to use:**
 

@@ -10,7 +10,7 @@ topics:
 author: mm
 subtitle: Writing K8s manifests & deploying in minikube.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=WC4e3Yq8k8A'
+video: "https://www.youtube.com/watch?v=WC4e3Yq8k8A"
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
@@ -229,7 +229,7 @@ The build process is complete.
 ![step14](./steps/step14.png)
 
 Next, we need to host this Docker image, so we will deploy this image in DockerHub. [DockerHub](https://hub.docker.com/) is basically a
- Docker registry where you can store and share your Docker images, the same way you store code in GitHub repositories.
+Docker registry where you can store and share your Docker images, the same way you store code in GitHub repositories.
 
 As you can see I have already created the Docker repository, currently it is private but later, I will make it public.
 
@@ -294,6 +294,7 @@ First I will create a **namespace**. In Kubernetes, namespaces provide a mechani
 within a single cluster. Names of resources need to be unique within a namespace, but not across namespaces.
 
 Reference:
+
 - [https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/#not-all-objects-are-in-a-namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/#not-all-objects-are-in-a-namespace)
 
 ![step21](./steps/step21.png)
@@ -431,6 +432,7 @@ For example, liveness probes could catch a deadlock, where an application is run
 As you can observe we are using the **httpGet** request to check for path **/docs** to return 200 response at a period of 15 seconds.
 
 For your reference, read this documentation:
+
 - [Configure Liveness, Readiness and Startup Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
 
 Next, we are going to define the **memory limit** to 512MB and cpu and expect it won’t cross above that in case there is a memory leak.
@@ -460,10 +462,10 @@ metadata:
   labels:
     app: ecommerce
 data:
-  DATABASE_USERNAME: bXVrdWxtYW50b3No       # mukulmantosh
-  DATABASE_PASSWORD: bXVrdWwxMjM=           # mukul123
-  DATABASE_HOST: cG9zdGdyZXMtc2VydmljZQ==   # postgres-service
-  DATABASE_NAME: c2FtcGxlZGI=               # sampledb 
+  DATABASE_USERNAME: bXVrdWxtYW50b3No # mukulmantosh
+  DATABASE_PASSWORD: bXVrdWwxMjM= # mukul123
+  DATABASE_HOST: cG9zdGdyZXMtc2VydmljZQ== # postgres-service
+  DATABASE_NAME: c2FtcGxlZGI= # sampledb
 ```
 
 ## Service
@@ -508,6 +510,7 @@ There are many service type like:
 - **ExternalName**: Maps a service to a predefined externalName field by returning a value for the CNAME record.
 
 References:
+
 - [https://kubernetes.io/docs/concepts/services-networking/service/](https://kubernetes.io/docs/concepts/services-networking/service/)
 - [https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/](https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/)
 
@@ -574,8 +577,8 @@ We are using a volume mount to mount our configuration and replace the default c
 
 Next, we will define ConfigMap.
 
-According to Kubernetes documentation: *A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods
-can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume*.
+According to Kubernetes documentation: _A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods
+can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume_.
 
 If you observe carefully from line number 10 to 23 we are changing the nginx configuration
 and proxying the request to the backend application.
@@ -735,7 +738,7 @@ spec:
     - ReadWriteMany
   local:
     #path: /run/desktop/mnt/host/e/postgres-data   # <-- if running with docker desktop in windows
-     path: /data
+    path: /data
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -804,9 +807,9 @@ metadata:
   labels:
     app: ecommerce
 data:
-  POSTGRES_DB: c2FtcGxlZGI=  # sampledb
-  POSTGRES_USER: bXVrdWxtYW50b3No   # mukulmantosh
-  POSTGRES_PASSWORD: bXVrdWwxMjM=   # mukul123
+  POSTGRES_DB: c2FtcGxlZGI= # sampledb
+  POSTGRES_USER: bXVrdWxtYW50b3No # mukulmantosh
+  POSTGRES_PASSWORD: bXVrdWwxMjM= # mukul123
 ```
 
 **k8s/postgres/postgres-service.yml**
@@ -876,8 +879,6 @@ spec:
             requests:
               cpu: 70m
               memory: 200Mi
-
-
 ```
 
 The redis service will be running on port 6379.
@@ -898,7 +899,6 @@ spec:
   ports:
     - port: 6379
       targetPort: 6379
-
 ```
 
 We are done with redis, now we will move to celery.
@@ -932,21 +932,26 @@ spec:
       initContainers:
         - name: init-redis-service
           image: busybox:1.28
-          command: [ 'sh', '-c', "until nslookup redis-service.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local; do echo waiting for redis-service; sleep 2; done" ]
+          command:
+            [
+              "sh",
+              "-c",
+              "until nslookup redis-service.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local; do echo waiting for redis-service; sleep 2; done",
+            ]
 
       containers:
         - image: mukulmantosh/ecommerce-fastapi:latest
-          command: ['celery', '-A', 'main.celery', 'worker', '-l', 'info']
+          command: ["celery", "-A", "main.celery", "worker", "-l", "info"]
           envFrom:
             - secretRef:
                 name: celery-secret
           name: celery-container
-
 ```
 
 You can see that we are using a busybox image in our init containers just to do **nslookup** of whether our redis service is present or not. Don’t consider this as a health check.
 
 Reference:
+
 - [livenessProbe and readinessProbe for celery beat and workers](https://github.com/celery/celery/issues/4079)
 
 ![step29](./steps/step29.png)
@@ -966,9 +971,9 @@ metadata:
   labels:
     app: ecommerce
 data:
-  REDIS_HOST: cmVkaXMtc2VydmljZQo=  # redis-service
-  REDIS_PORT: NjM3OQo=              # 6379 
-  REDIS_DB: MAo=                    # 0
+  REDIS_HOST: cmVkaXMtc2VydmljZQo= # redis-service
+  REDIS_PORT: NjM3OQo= # 6379
+  REDIS_DB: MAo= # 0
 ```
 
 After we are done with celery, I will create a Job which will handle database migration.
@@ -1004,16 +1009,19 @@ spec:
       containers:
         - name: migration-container
           image: mukulmantosh/ecommerce-fastapi:latest
-          command: ['alembic', 'upgrade', 'head']
+          command: ["alembic", "upgrade", "head"]
           envFrom:
             - secretRef:
                 name: migration-secret
       initContainers:
         - name: init-postgres-service
           image: postgres:10.17
-          command: [ 'sh', '-c',
-              'until pg_isready -h postgres-service.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local -p 5432;
-          do echo waiting for database; sleep 2; done;' ]
+          command: [
+              "sh",
+              "-c",
+              "until pg_isready -h postgres-service.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local -p 5432;
+              do echo waiting for database; sleep 2; done;",
+            ]
       restartPolicy: OnFailure
   backoffLimit: 15
 ```
@@ -1029,10 +1037,10 @@ metadata:
   labels:
     app: ecommerce
 data:
-  DATABASE_USERNAME: bXVrdWxtYW50b3No              # mukulmantosh
-  DATABASE_PASSWORD: bXVrdWwxMjM=                  # mukul123
-  DATABASE_HOST: cG9zdGdyZXMtc2VydmljZQ==          # postgres-service
-  DATABASE_NAME: c2FtcGxlZGI=                      # sampledb
+  DATABASE_USERNAME: bXVrdWxtYW50b3No # mukulmantosh
+  DATABASE_PASSWORD: bXVrdWwxMjM= # mukul123
+  DATABASE_HOST: cG9zdGdyZXMtc2VydmljZQ== # postgres-service
+  DATABASE_NAME: c2FtcGxlZGI= # sampledb
 ```
 
 Finally, we have completed all modules which are required for Kubernetes.
@@ -1139,6 +1147,7 @@ If you are new to Kubernetes, then this video does not make any sense.
 But if you have already got an understanding of Kubernetes, then it would be very easy to conceptualize what I am trying to do.
 
 # Diagram
+
 This diagram will help you to visualize the K8s deployments and the interconnected services.
 
 ![step45](./steps/step45.png)

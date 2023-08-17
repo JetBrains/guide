@@ -6,9 +6,9 @@ topics:
   - pytest
   - testing
 author: pwe
-subtitle: 'During refactoring, use pytest''s markers to ignore certain breaking tests.'
+subtitle: "During refactoring, use pytest's markers to ignore certain breaking tests."
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/rEYQrMY8Ux4'
+video: "https://youtu.be/rEYQrMY8Ux4"
 ---
 
 Sometimes you want to overhaul a chunk of code and don't want to stare at a broken test.
@@ -73,7 +73,7 @@ Eager readers might have spotted a type hinting flaw: our code breaks the [Be li
 That is, our new method wants a `List`.
 When really, it will take a Python "iterable".
 
-For example, our test passes in a *list* of guardians. It's immutable.
+For example, our test passes in a _list_ of guardians. It's immutable.
 Might as well change it to be a tuple:
 
 ```
@@ -120,7 +120,7 @@ We're doing this as a Python "property", so add the following in `player.py`:
 {% include "./demos/player.py" %}
 ```
 
-*Tip: Use the `property` LiveTemplate in PyCharm to speed up the generation of a property.*
+_Tip: Use the `property` LiveTemplate in PyCharm to speed up the generation of a property._
 
 Remove the `@pytest.mark.skip` mark from `test_primary_guardian` and the test now passes.
 

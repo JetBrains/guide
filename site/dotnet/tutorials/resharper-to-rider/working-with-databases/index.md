@@ -52,7 +52,7 @@ Let's head back to Visual Studio and choose **Microsoft SQL Server** from the da
 
 ![Visual Studio database connection screen](./3-visual-studio-database-connection.png)
 
-Within Rider's **Database** tool window, let's add the same connection. We can enter the same values for **host (server name)**,  **authentication**, and **database name**. In a containerized world, developers will also appreciate the simplicity of setting the **port** value.
+Within Rider's **Database** tool window, let's add the same connection. We can enter the same values for **host (server name)**, **authentication**, and **database name**. In a containerized world, developers will also appreciate the simplicity of setting the **port** value.
 
 ![JetBrains Rider database connection dialog](./4-jetbrains-rider-database-connection.png)
 

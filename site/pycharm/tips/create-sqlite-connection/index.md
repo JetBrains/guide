@@ -13,7 +13,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/connecting-to-a-database.html#connect-to-sqlite
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/U2sAgysf1Hc'
+video: "https://youtu.be/U2sAgysf1Hc"
 ---
 
 PyCharm Professional's Database tool, courtesy of
@@ -29,8 +29,8 @@ the tables and columns in your project. Even refactoring those names.
 
 But creating a database connection means filling in some details. For
 a SQLite database, it's a lot easier. Just drag and drop your
-`.sqlite` db file onto the Database tool window. *Note: You might have
-to download the SQLite drivers.*
+`.sqlite` db file onto the Database tool window. _Note: You might have
+to download the SQLite drivers._
 
 Once done, your project has a database, you can browse the tables, and
 use the schema in your Python code's SQL strings.

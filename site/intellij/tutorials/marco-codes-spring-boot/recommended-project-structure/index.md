@@ -6,10 +6,10 @@ topics: []
 author: hs
 subtitle: What Spring Boot's Projects look like
 thumbnail: ./thumbnail.png
-video: 'https://www.youtube.com/watch?v=QuvS_VLbGko&start=3429s'
+video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=3429s"
 ---
 
 ## What's in the video?
 
-* What the recommended project structure for a Spring Boot project looks like
-* Recommended Java Packages
+- What the recommended project structure for a Spring Boot project looks like
+- Recommended Java Packages

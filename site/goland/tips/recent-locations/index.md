@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=2aI1BhIhjs4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=92
 ---
+
 The **Recent Locations** pop-up allows you to search for a specific change or recently viewed piece of code.
 
 **How to use:**

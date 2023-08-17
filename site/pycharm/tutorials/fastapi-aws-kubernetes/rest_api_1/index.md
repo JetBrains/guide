@@ -10,7 +10,7 @@ topics:
 author: mm
 subtitle: Implementing a REST API for User modules using Pydantic & API Router.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=cj8yw1u__D0'
+video: "https://www.youtube.com/watch?v=cj8yw1u__D0"
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
@@ -21,7 +21,7 @@ moving forward, I need to speak about Pydantic and its benefits.
 
 You might know that FastAPI & Typer use Pydantic. [Pydantic](https://pydantic-docs.helpmanual.io/) helps
 in data validation and settings management. It also enforces Python
-type hints during *runtime*. It’s extremely fast and easy to use as well!
+type hints during _runtime_. It’s extremely fast and easy to use as well!
 
 If you have already worked with serializers in [Django ReST Framework](https://www.django-rest-framework.org) and
 [marshmallow](https://github.com/marshmallow-code/marshmallow)
@@ -36,7 +36,7 @@ Keep in mind that Pydantic data class is a drop-in replacement.
 
 Coming to benchmarks, Pydantic is very fast compared to
 other validation libraries. You can observe that
-```django-rest-framework``` is **12.3x** slower along-with ```marshmallow``` which is **2.4x** slower.
+`django-rest-framework` is **12.3x** slower along-with `marshmallow` which is **2.4x** slower.
 
 You don’t need to install pydantic separately, it’s already bundled with FastAPI.
 
@@ -51,11 +51,11 @@ In the **schema.py** file, We are going to write our pydantic models.
 Let me do the necessary imports. I will create a class **User** which imports **BaseModel**.
 
 As from the pydantic documentation, The primary means of defining objects in
-pydantic is via models *(models are simply classes which inherit from BaseModel)*.
+pydantic is via models _(models are simply classes which inherit from BaseModel)_.
 
 ![step3](./steps/step3.png)
 
-As you can see we have created three fields: ```name```, ```email```, ```password```.
+As you can see we have created three fields: `name`, `email`, `password`.
 
 **Name** is `constr` which is basically a **Constrained Type**. It’s possible to
 define primitive types that have more constraints on their values. The
@@ -86,6 +86,7 @@ Image Credits : Pydantic
 Our schema has been successfully defined, now switch back to **router.py** file.
 
 # API Router
+
 Once your application starts growing up, you might need to place your
 path operations in a specific file like what we are going to do in our
 `router.py` file. This helps better organize your code and focus only on
@@ -94,10 +95,10 @@ the user routes.
 We are going to import the **APIRouter** and create an instance for it.
 
 I will also do the necessary imports apart from api router like
-```Depends```, ```status```, ```Response``` and ```HTTPException``` which
+`Depends`, `status`, `Response` and `HTTPException` which
 will be required.
 
-I am also going to do imports from ```sqlalchemy```, ```services```, ```validator```, ```schema``` etc.
+I am also going to do imports from `sqlalchemy`, `services`, `validator`, `schema` etc.
 
 Don’t worry about How I will be writing the implementation in the above files which I mentioned like services and validator.
 
@@ -109,7 +110,7 @@ It’s going to be prefixed with **“/user”** and I will also provide a tag n
 
 Let’s begin by creating our first api endpoint for our User Registration.
 
-I will create an async function ```create_user_registration``` in which I am going to pass two params,
+I will create an async function `create_user_registration` in which I am going to pass two params,
 one is a **request** which takes in User schema, the pydantic model which
 we defined earlier and the second one is the **database**, if you don’t
 mention anything in database it will accept it as query parameter
@@ -128,10 +129,10 @@ To overcome that we are going to use **Depends**, which is basically a
 
 We are going to inject the **get_db** connection.
 
-As per the FastAPI Documentation: *Dependency Injection means,
+As per the FastAPI Documentation: _Dependency Injection means,
 in programming, that there is a way for your
 code (in this case, your path operation functions) to declare
-things that it requires working and use: "dependencies"*.
+things that it requires working and use: "dependencies"_.
 
 This is very useful when you need to:
 
@@ -149,7 +150,7 @@ Moving ahead with our API creation, we need to first make sure to
 check whether email already exists in the database or not. If it
 exists then we won’t allow the user to register again with the same email address.
 
-I am going to create a ```verify_email_exist``` function which is going to take email and database.
+I am going to create a `verify_email_exist` function which is going to take email and database.
 
 ![step8](./steps/step8.png)
 
@@ -163,7 +164,7 @@ Let me come back to the router.
 If a user exists then I will raise an HTTPException with status 400 and a message.
 
 If the user is not present then I will move ahead and store the new record in the db.  
-I will write the business logic in services where I will create a function called ```new_user_register```.
+I will write the business logic in services where I will create a function called `new_user_register`.
 
 ![step9](./steps/step9.png)
 
@@ -199,7 +200,7 @@ The function is going to return a new User object.
 
 We are now going to commit and then refresh.
 
-Basically,```db.refresh``` means to expire and then immediately
+Basically,`db.refresh` means to expire and then immediately
 get the latest data for the object from the database. It involves
 an immediate database query, which you may consider unnecessarily expensive.
 
@@ -221,15 +222,15 @@ generated through PyCharm. We don’t need this anymore.
 Let me give a brief information to our API Docs, we can add more information. I am
 just sticking to only title and version.
 
-Now, we need to include the router. I will type ```app.include_router()```
+Now, we need to include the router. I will type `app.include_router()`
 
-I am going to import the user router and pass it in the ```include_router```.
+I am going to import the user router and pass it in the `include_router`.
 
 ![step14](./steps/step14.png)
 
 Registering our router is done. Let’s move ahead and start our server. Open the browser and navigate to docs.
 
-Looks like I missed something.  I missed adding the router decorator to our function.
+Looks like I missed something. I missed adding the router decorator to our function.
 
 ![step15](./steps/step15.png)
 
@@ -287,13 +288,13 @@ Before going ahead, there is an issue in storing password. Let me fix it quickly
 
 This issue has been already addressed. You can get the latest copy of the source code from GitHub.
 
-Replace ```self.password``` with ```password```
+Replace `self.password` with `password`
 
 ![step18](./steps/step18.png)
 
 I will try now to register.
 
-Yes, it works. Our user has been successfully registered.  
+Yes, it works. Our user has been successfully registered.
 
 ![step19](./steps/step19.png)
 

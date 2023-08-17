@@ -14,7 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Send messages to clients in realtime
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/SSC2rQ1UlTY'
+video: "https://youtu.be/SSC2rQ1UlTY"
 ---
 
 In the previous sample, we saw that we could poll our server for updated information. While an acceptable approach, it's still a client calling the server without knowing any updated information is available. What if we only want to contact the server when there is new data to retrieve?

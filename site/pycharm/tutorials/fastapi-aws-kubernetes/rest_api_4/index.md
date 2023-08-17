@@ -10,14 +10,14 @@ topics:
 author: mm
 subtitle: Performing CRUD operations in Orders & Cart Module.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=hRYNGvBm8dk'
+video: "https://www.youtube.com/watch?v=hRYNGvBm8dk"
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 # ReDoc
 
-As you know FastAPI provides  automatic docs support using Swagger UI. There is one more
+As you know FastAPI provides automatic docs support using Swagger UI. There is one more
 docs page provided by FastAPI known as **[Redoc](https://github.com/Redocly/redoc)**.
 
 **Redoc** is an open-source tool for generating documentation from OpenAPI definitions.
@@ -116,6 +116,7 @@ class CartItems(Base):
 ```
 
 Reference:
+
 - [Concepts of backref and back_populate in SQLAlchemy](https://stackoverflow.com/questions/51335298/concepts-of-backref-and-back-populate-in-sqlalchemy)
 
 Now, I will go to the user model and product model where I will create back populates with the cart and cart items.
@@ -159,14 +160,14 @@ We will be creating three apis for our cart.
 
 Let’s begin by writing our first api, add product to the cart.
 
-We will be passing ```product_id``` and also validate whether that
+We will be passing `product_id` and also validate whether that
 specific product exists in our database or not.
 
 **router.py**
 
 ```python
 @router.get('/add', status_code=status.HTTP_201_CREATED)
-async def add_product_to_cart(product_id: int, 
+async def add_product_to_cart(product_id: int,
                               database: Session = Depends(db.get_db)):
     result = await add_to_cart(product_id, database)
     return result
@@ -185,7 +186,7 @@ Next, I will try to get cart information. If not present then we will create a n
 
 ![step16](./steps/step16.png)
 
-Now, I am going to create one more async function ```add_items``` in which I will pass cart id and product id.
+Now, I am going to create one more async function `add_items` in which I will pass cart id and product id.
 
 ![step17](./steps/step17.png)
 
@@ -236,11 +237,11 @@ Let’s move on with the remaining two apis, get and remove items from the cart.
 
 I am going to create a Pydantic Schema which will be helpful for retrieving items from the cart.
 
-I will create a class ```ShowCartItems``` which inherits the BaseModel.
+I will create a class `ShowCartItems` which inherits the BaseModel.
 
 Products are going to fetch the information from the product schema.
 
-I will create one more class called ```ShowCart``` which is going to return the list of cart items.
+I will create one more class called `ShowCart` which is going to return the list of cart items.
 
 **schema.py**
 
@@ -294,7 +295,7 @@ In delete api there is no response in return, only the status code of 204.
 
 ```python
 @router.delete('/{cart_item_id}', status_code=status.HTTP_204_NO_CONTENT, response_class=Response)
-async def remove_cart_item_by_id(cart_item_id: int, 
+async def remove_cart_item_by_id(cart_item_id: int,
                                  database: Session = Depends(db.get_db)):
     await remove_cart_item(cart_item_id, database)
 ```

@@ -9,7 +9,7 @@ topics:
 author: er
 seealso:
   - title: Autocompleting code
-    href: 'https://www.jetbrains.com/help/webstorm/auto-completing-code.html#'
+    href: "https://www.jetbrains.com/help/webstorm/auto-completing-code.html#"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -17,4 +17,5 @@ animatedGif:
   width: 600
   height: 300
 ---
-After typing parentheses, trigger the Complete Current Statement action (*Shift+Cmd+Enter* on macOS and *Shift+Ctrl+Enter* on Windows and Linux) to add curly braces and move the cursor down to the beginning of the next row.
+
+After typing parentheses, trigger the Complete Current Statement action (_Shift+Cmd+Enter_ on macOS and _Shift+Ctrl+Enter_ on Windows and Linux) to add curly braces and move the cursor down to the beginning of the next row.

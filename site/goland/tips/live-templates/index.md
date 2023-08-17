@@ -12,6 +12,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=BnfxSUFD6-s&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=53
 ---
+
 **Live Templates** are great for reducing the time you spend writing
 frequently used portions of code, like variable and loop declarations,
 or test functions.

@@ -1,6 +1,6 @@
 ---
 date: 2021-05-24
-title: 'Support for go:embed directive'
+title: "Support for go:embed directive"
 topics:
   - editing
   - go
@@ -11,12 +11,13 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=Dv28uFbn7I0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=145
 ---
-Go 1.16 introduced a new feature called *go:embed*.
 
-This works using a compiler directive, *//go:embed*, and a
-variable, or more, of type *string*, *[]byte*, or *embed.FS*.
+Go 1.16 introduced a new feature called _go:embed_.
 
-If you want to embed a directory, then you must use the *embed.FS*
+This works using a compiler directive, _//go:embed_, and a
+variable, or more, of type _string_, _[]byte_, or _embed.FS_.
+
+If you want to embed a directory, then you must use the _embed.FS_
 type for the variable in which you need to embed the content.
 
 **How to use:**

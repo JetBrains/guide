@@ -7,4 +7,3 @@ obsoletes:
   - /goland/topics/tricks/
   - /intellij/topics/tricks/
 ---
-

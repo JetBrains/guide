@@ -7,7 +7,7 @@ topics:
 author: tg
 subtitle: Add or update dependencies in your build.gradle file.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/6V6G3RyxEMk?start=348'
+video: "https://youtu.be/6V6G3RyxEMk?start=348"
 ---
 
 Let's look at Gradle dependencies in a bit more detail. We can add a new dependency upon an external library using **⌘N** (macOS) or **Alt+Insert** (Windows/Linux), and selecting "Add Maven Artifact Dependency".
@@ -35,6 +35,7 @@ We should change this if we need to, for example if this needs to be `testImplem
 ![Build file changed](./build-file-changed.png)
 
 We can do this by:
+
 - Selecting one of the suggestions in the message;
 - Pressing on the Refresh Gradle icon in the top right,
 - Using the keyboard shortcut **⇧⌘I** (macOS), or **Ctrl+Shift+O** (Windows/Linux).
@@ -46,6 +47,7 @@ Alternatively, we may want to use IntelliJ IDEA's code completion for adding a n
 So we could add a new `testImplementation` dependency by starting to type the details. IntelliJ IDEA will even complete the group and artifact name. Try this out, by adding a new dependency on the `junit-jupiter-params` library. Once again you'll need to load these changes, e.g. with **⇧⌘I** (macOS), or **Ctrl+Shift+O** (Windows/Linux).
 
 ### Top Tip
+
 If you find you're not getting code completion for your libraries, or the results you expect in your Maven artifact search, there's a trick to help with that. Open the [Settings/Preferences dialog](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html), go to
 [Build, Execution, Deployment | Build Tools | Maven | Repositories](https://www.jetbrains.com/help/idea/maven-repositories.html).
 

@@ -13,6 +13,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=LODWfMNOYbk&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=139
 ---
+
 The _Type Hierarchy_ feature allows you to answer questions such as "What interfaces a type implements?" or "What the types are that implement an interface?"
 
 **How to use:**

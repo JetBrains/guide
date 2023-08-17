@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=P898NpT9OJs&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=103
 ---
+
 **How to use:**
 
 Remove all the contents of a scratch file the close it. The IDE will automatically remove it.

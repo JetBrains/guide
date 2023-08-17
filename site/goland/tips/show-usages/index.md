@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=jlP26JUFE4o&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=152
 ---
+
 The **Show usages** feature allows you to quickly answer the question "Where's this element used?"
 
 It will open a pop-up that you can quickly

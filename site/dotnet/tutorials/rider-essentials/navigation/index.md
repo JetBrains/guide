@@ -10,7 +10,7 @@ topics:
 author: rachelappel
 subtitle: How to navigate around a code base? Let's look at some easy ways of doing so.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/yZ_KkSBJD7g'
+video: "https://youtu.be/yZ_KkSBJD7g"
 ---
 
 ### Navigating Code in Rider
@@ -26,11 +26,11 @@ The scope of navigation and search is not limited to files of just your solution
 
 Some other options available are:
 
-* [Search by Name](https://www.jetbrains.com/help/rider/Navigation_and_Search__Search.html)
-* [Navigate from Symbols](https://www.jetbrains.com/help/rider/Navigation_and_Search__Navigation_from_Symbols.html)
-* [Navigate To](https://www.jetbrains.com/help/rider/Navigation_and_Search__Navigate_from_Here.html), a general-purpose shortcut that groups all navigation options available
-* [Find Usages](https://www.jetbrains.com/help/rider/Navigation_and_Search__Finding_Usages.html) of a particular symbol in the current file, project, solution, or referenced libraries
-* [Navigate Current Context](https://www.jetbrains.com/help/rider/Navigation_and_Search__Context_Dependent_Navigation.html)
+- [Search by Name](https://www.jetbrains.com/help/rider/Navigation_and_Search__Search.html)
+- [Navigate from Symbols](https://www.jetbrains.com/help/rider/Navigation_and_Search__Navigation_from_Symbols.html)
+- [Navigate To](https://www.jetbrains.com/help/rider/Navigation_and_Search__Navigate_from_Here.html), a general-purpose shortcut that groups all navigation options available
+- [Find Usages](https://www.jetbrains.com/help/rider/Navigation_and_Search__Finding_Usages.html) of a particular symbol in the current file, project, solution, or referenced libraries
+- [Navigate Current Context](https://www.jetbrains.com/help/rider/Navigation_and_Search__Context_Dependent_Navigation.html)
 
 The previous list is by no means complete. The [Rider web help on Navigation](https://www.jetbrains.com/help/rider/Navigation_and_Search__Index.html)
 has many more examples and use cases.

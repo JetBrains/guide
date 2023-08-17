@@ -12,10 +12,10 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/local-history.html#local_history.xml
   - title: Retention period for Local History
-    href: 'https://www.jetbrains.com/help/pycharm/local-history.html#retention'
+    href: "https://www.jetbrains.com/help/pycharm/local-history.html#retention"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/QZumMOtf6Hc'
+video: "https://youtu.be/QZumMOtf6Hc"
 ---
 
 You’re in your repo. You add a file.

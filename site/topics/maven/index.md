@@ -2,7 +2,7 @@
 title: Maven
 subtitle: A tool that can be used for building and managing any Java-based project.
 logo: maven-logo.png
-website: 'https://maven.apache.org/'
+website: "https://maven.apache.org/"
 topicType: technology
 obsoletes:
   - /intellij/topics/maven/

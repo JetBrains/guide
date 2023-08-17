@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Modifying your `pom.xml` file to use jakarta dependencies
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/mukr2Q_zBm4?start=307'
+video: "https://youtu.be/mukr2Q_zBm4?start=307"
 ---
 
 The first thing we need to do is update our dependencies. This project uses Maven so that's our `pom.xml` file. If you're using Gradle you need to update your `build.gradle` file.
@@ -18,7 +18,7 @@ Look for the following dependencies:
    <groupId>javax.servlet</groupId>
    <artifactId>javax.servlet-api</artifactId>
    <version>4.0.1</version>
-   <scope>provided</scope>  
+   <scope>provided</scope>
 </dependency>
 <dependency>
    <groupId>org.hibernate</groupId>

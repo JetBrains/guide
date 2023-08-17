@@ -4,7 +4,7 @@ subtitle: >-
   Gradle is an open-source build automation tool focused on flexibility and
   performance.
 logo: gradle-elephant.svg
-website: 'https://gradle.org/'
+website: "https://gradle.org/"
 topicType: technology
 obsoletes:
   - /intellij/topics/gradle/

@@ -10,6 +10,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=7VWXuLdrt54&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=86
 ---
+
 **How to use:**
 
 Turn on the _Mermaid_ option in _Settings/Preferences | Languages & Frameworks | Markdown_ under the _Markdown Extensions_ section. Then open any Markdown file and enjoy previewing _Mermaid.js_ diagrams.

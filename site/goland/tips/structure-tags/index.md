@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=I-XxOL4bFB0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=143
 ---
+
 GoLand helps you add struct tags using custom live templates built into the IDE.
 
 **How to use:**

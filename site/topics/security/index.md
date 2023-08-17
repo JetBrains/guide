@@ -6,4 +6,3 @@ icon: fas fa-lock
 obsoletes:
   - /intellij/topics/security/
 ---
-

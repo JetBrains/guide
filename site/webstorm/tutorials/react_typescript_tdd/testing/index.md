@@ -9,9 +9,8 @@ author: pwe
 subtitle: Test-first development with Jest in the IDE.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/Y_TGIsFnvo4'
+video: "https://youtu.be/Y_TGIsFnvo4"
 ---
-
 
 We briefly saw the [Jest](../../../../topics/jest) test runner in [Project Setup](../project_setup/).
 We modified an existing test but didn't dive into testing.
@@ -49,7 +48,7 @@ Let's fix the test, but first, setup an easier way to run Jest.
 
 This tutorial series talks about test-driven development (TDD), which implies running your tests frequently.
 When you forget to run your tests, you might be off-track for a long time.
-Let's setup Jest to re-run whenever anything changes by making a *permanent* run configuration in the IDE.
+Let's setup Jest to re-run whenever anything changes by making a _permanent_ run configuration in the IDE.
 
 Select `Run | Edit Configurations`, click `+`, and click on `Jest`.
 Accept the default `Name:` of `All Tests`. The only real field you need to supply is `Jest options:`.
@@ -78,12 +77,12 @@ Define two constants, then compare them with a simple Jest assertion:
 
 ```typescript {5,6,7}
 test("renders learn react link", () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/hello react/i);
-  expect(linkElement).toBeInTheDocument();
-  const actual = 1;
-  const expected = 2;
-  expect(actual).toEqual(expected);
+	const { getByText } = render(<App />);
+	const linkElement = getByText(/hello react/i);
+	expect(linkElement).toBeInTheDocument();
+	const actual = 1;
+	const expected = 2;
+	expect(actual).toEqual(expected);
 });
 ```
 
@@ -100,7 +99,7 @@ Even if the test tool window isn't open, you still get information about the tes
 - Integration into the scrolling "problems" panel in the top right
 - A squiggly under the place that failed
 
-In fact, you  get a hover inlay with plenty of information:
+In fact, you get a hover inlay with plenty of information:
 
 ![Hover Inlay](./screenshots/hover_inlay.png)
 
@@ -110,7 +109,7 @@ The Jest watcher spots the change, re-runs the test, and shows that all tests pa
 ## TDD Basics
 
 JavaScript development is usually a bunch of switching between the editor, the browser, the browser console, and a terminal window, with the build tools displaying messages. Let's use a better flow.
-Let's stay *in the IDE* to focus on our code, and observe our code through tests instead of a browser reload.
+Let's stay _in the IDE_ to focus on our code, and observe our code through tests instead of a browser reload.
 
 First, let's get our code and our tests side-by-side.
 Use `Find Action` (`Shift-Ctrl-A` Win/Linux, macOS `Shift-Cmd-A`) and type in `Split Right`.
@@ -129,7 +128,7 @@ A few moments later you will see that the test failed:
 
 Congratulations, you just did TDD!
 You made a change that caused a test to fail, and thus, the tests helped you code with confidence.
-Change the text back by *removing the comma* in `function App`.
+Change the text back by _removing the comma_ in `function App`.
 When you save, the test passes.
 Not only that...you changed your component without ever looking at nor reloading a browser.
 
@@ -142,9 +141,9 @@ import { render } from "@testing-library/react";
 import App from "./App";
 
 test("renders learn react link", () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/hello react/i);
-  expect(linkElement).toBeInTheDocument();
+	const { getByText } = render(<App />);
+	const linkElement = getByText(/hello react/i);
+	expect(linkElement).toBeInTheDocument();
 });
 ```
 

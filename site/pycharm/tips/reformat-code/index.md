@@ -7,15 +7,15 @@ author: pwe
 subtitle: Tell PyCharm to clean up indentation and other code style in your file.
 seealso:
   - title: Reformatting Source Code
-    href: 'https://www.jetbrains.com/help/pycharm/reformatting-source-code.html'
+    href: "https://www.jetbrains.com/help/pycharm/reformatting-source-code.html"
   - title: Code Style - Python
-    href: 'https://www.jetbrains.com/help/pycharm/code-style-python.html'
+    href: "https://www.jetbrains.com/help/pycharm/code-style-python.html"
   - title: Reformat and rearrange code
     href: >-
       https://www.jetbrains.com/help/pycharm/basic-editing-procedures.html#reformat_rearrange_code
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/0WfDm3KQ-Cw'
+video: "https://youtu.be/0WfDm3KQ-Cw"
 ---
 
 Perhaps you copy and pasted some code with a different line length than your

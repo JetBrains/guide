@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=jn0F8C-y5aw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=100
 ---
+
 The **Paste from History** feature you to use the (limited) history of everything you put in the clipboard.
 
 **How to use:**

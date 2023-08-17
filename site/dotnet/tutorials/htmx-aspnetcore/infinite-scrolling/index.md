@@ -14,7 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Streaming infinite content to your users
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/v4XeB_wiJ8E'
+video: "https://youtu.be/v4XeB_wiJ8E"
 ---
 
 Infinite scroll patterns are popular on social media sites, where the app represents content as a continuous stream of information. As a user, you'll likely never see the beginning or end of the stream, but you can scrub through a short window of the entire stream. If you're interested in implementing this pattern, well, you're in luck.
@@ -26,9 +26,9 @@ Let's start by looking at the C# implementation of the Razor page. If you've com
 ```csharp
 public class Scroll: PageModel
 {
-    [BindProperty(SupportsGet = true)] 
+    [BindProperty(SupportsGet = true)]
     public int Cursor { get; set; } = 1;
-    
+
     public IActionResult OnGet()
     {
         return Request.IsHtmx()
@@ -62,7 +62,7 @@ As you may have noticed, we have a partial view of `_Cards`. Let's take a look a
                 hx-swap="afterend"
             </text>
         }>
-        <img alt="random image" 
+        <img alt="random image"
              width="125"
              height="125"
              src="https://picsum.photos/125/125?cache=@DateTime.Now.Ticks" class="card-img-top"/>
@@ -75,11 +75,10 @@ As you may have noticed, we have a partial view of `_Cards`. Let's take a look a
 }
 ```
 
-For the sake of this demo, we're faking paging. Every request will generate a new set of elements from a `Cursor` value. Once we have the items, we loop through them, rendering our cards. Substitute your favorite database and paging mechanism if you're feeling adventurous. We need to trigger the next page load, and prime the trigger by adding HTMX attributes to the *last* card in the current page's collection.
+For the sake of this demo, we're faking paging. Every request will generate a new set of elements from a `Cursor` value. Once we have the items, we loop through them, rendering our cards. Substitute your favorite database and paging mechanism if you're feeling adventurous. We need to trigger the next page load, and prime the trigger by adding HTMX attributes to the _last_ card in the current page's collection.
 
 ```html
-hx-get="@Url.Page("05_Scroll", new {cursor = end + 1})"
-hx-trigger="revealed"
+hx-get="@Url.Page("05_Scroll", new {cursor = end + 1})" hx-trigger="revealed"
 hx-swap="afterend"
 ```
 

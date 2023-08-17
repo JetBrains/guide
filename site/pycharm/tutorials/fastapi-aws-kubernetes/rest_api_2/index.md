@@ -10,7 +10,7 @@ topics:
 author: mm
 subtitle: Performing CRUD operations in our User module.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=FDaC6OkvIU8'
+video: "https://www.youtube.com/watch?v=FDaC6OkvIU8"
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
@@ -24,7 +24,7 @@ or primary key.
 
 Back to our **router.py**
 
-I am going to create a function ```get_all_users``` which will return the list of all users from the database.
+I am going to create a function `get_all_users` which will return the list of all users from the database.
 
 ![step1](./steps/step1.png)
 
@@ -37,9 +37,9 @@ I will move to schema and create a class DisplayUser which inherits from BaseMod
 I will be returning **id**, **name** and **email**.
 
 We will be creating a Config class, which controls the behaviour of Pydantic,
-in this we are going to set the attribute ```orm_mode=True```, which basically
+in this we are going to set the attribute `orm_mode=True`, which basically
 is to map the ORM Objects defined in our models. As per the FastAPI
-Documentation, without ```orm_mode```, if you returned a SQLAlchemy
+Documentation, without `orm_mode`, if you returned a SQLAlchemy
 model from your path operation, it wouldn't include the relationship
 data...even if you declared those relationships in your Pydantic models.
 
@@ -48,7 +48,7 @@ it needs from attributes (instead of assuming a dict).
 
 You can visit this link for more information : [ORM Mode (aka Arbitrary Class Instances)](https://pydantic-docs.helpmanual.io/usage/models/#orm-mode-aka-arbitrary-class-instances)
 
-In our response model we are going to use ```List```, because we will return
+In our response model we are going to use `List`, because we will return
 a list of user objects instead of one object.
 
 ```python
@@ -57,7 +57,7 @@ async def get_all_user(database: Session = Depends(db.get_db), current_user: sch
     return await services.all_users(database)
 ```
 
-Let's go ahead and create our service for ```all_users```
+Let's go ahead and create our service for `all_users`
 
 ![step3](./steps/step3.png)
 
@@ -85,7 +85,7 @@ user information.
 
 ![step7](./steps/step7.png)
 
-The route is going to receive ```user_id``` which we will take in the path parameter.
+The route is going to receive `user_id` which we will take in the path parameter.
 
 ```python
 @router.get('/{user_id}', response_model=schema.DisplayUser)
@@ -94,11 +94,11 @@ async def get_user_by_id(user_id: int, database: Session = Depends(db.get_db),
     return await services.get_user_by_id(user_id, database)
 ```
 
-The response model will return ```DisplayUser```, we will be returning only one user, so there is no point in using a list.
+The response model will return `DisplayUser`, we will be returning only one user, so there is no point in using a list.
 
-I will create a new service ```get_user_by_id```, in which I will pass the user id and the database.
+I will create a new service `get_user_by_id`, in which I will pass the user id and the database.
 
-I will be using ```Optional``` because the user might be there in the db or not.
+I will be using `Optional` because the user might be there in the db or not.
 
 If the user is present that’s good I will return the user object else I will raise an exception.
 
@@ -114,7 +114,7 @@ async def get_user_by_id(user_id, database) -> Optional[models.User]:
 
 Looks good! Let me check in the browser again.
 
-Yes, it’s reflecting. I will try to send the ```user id``` of a specific user and test.
+Yes, it’s reflecting. I will try to send the `user id` of a specific user and test.
 
 ![step9](./steps/step9.png)
 
@@ -156,6 +156,7 @@ async def delete_user_by_id(user_id, database):
 To know more about custom response, visit this [link](https://fastapi.tiangolo.com/advanced/custom-response/#default-response-class).
 
 We successfully created the four endpoints:
+
 - user registration
 - listing
 - retrieving user by id

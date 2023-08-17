@@ -10,7 +10,7 @@ subtitle: >-
   Make a PyCharm project and virtual environment with dependencies, then
   configure PyCharm to use pytest.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/mLYTP41H8U0'
+video: "https://youtu.be/mLYTP41H8U0"
 ---
 
 Python has projects and PyCharm does as well.
@@ -34,7 +34,7 @@ After clicking `Create`, tell PyCharm to open the project in a new window.
 
 Why?
 
-Most Python packages put their tests *outside* of their source directories, to avoid accidentally shipping the tests (among other reasons.)
+Most Python packages put their tests _outside_ of their source directories, to avoid accidentally shipping the tests (among other reasons.)
 The tests thus need to import the package that you code is in, and that means a Python package.
 Fortunately this is [all explained quite well](https://docs.pytest.org/en/latest/goodpractices.html#tests-outside-application-code) in the `pytest` docs.
 
@@ -47,7 +47,7 @@ Add the following:
 
 Our source will now go in a `src/laxleague` directory so make sure to create it.
 
-Why the use of `src`?  It's a [general consensus best practice](https://hynek.me/articles/testing-packaging/) that avoids nasty surprises if you share your code or use it elsewhere.
+Why the use of `src`? It's a [general consensus best practice](https://hynek.me/articles/testing-packaging/) that avoids nasty surprises if you share your code or use it elsewhere.
 Our `setup.py` has the `packages` and `packages_dir` keys added in support of putting our code under `src`.
 
 Now go to PyCharm's Terminal tool and type in the following:

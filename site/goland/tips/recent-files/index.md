@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=OwMTgGz_OWQ&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=5&t=0s
 ---
+
 The **Recent Files** tool window allows you to quickly navigate around the recent open files list.
 
 **How to use:**

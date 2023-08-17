@@ -9,13 +9,15 @@ thumbnail: ./thumbnail.png
 ---
 
 ## Summary
+
 Now we know how to use git interactive rebase either from the UI or from the command line. Give them a try and use whichever way you prefer.
 
 ### IntelliJ IDEA Shortcuts Used
+
 Here are the IntelliJ IDEA shortcuts that we used.
 
 | Name                                                                                             | macOS Shortcut | Windows / Linux Shortcut |
-|--------------------------------------------------------------------------------------------------|----------------|--------------------------|
+| ------------------------------------------------------------------------------------------------ | -------------- | ------------------------ |
 | [Open the Git Tool Window](https://www.jetbrains.com/help/idea/version-control-tool-window.html) | **⌘9**         | **Alt+9**                |
 | Open the Commit Window                                                                           | **⌘0**         | **Alt+0**                |
 | [Open the Terminal](https://www.jetbrains.com/help/idea/terminal-emulator.html)                  | **⌥F12**       | **Alt+F12**              |
@@ -23,20 +25,22 @@ Here are the IntelliJ IDEA shortcuts that we used.
 | Edit commit message (in the Git Log)                                                             | **F2**         | **F2**                   |
 
 ### Git commands Used
+
 Here are the Git commands that we used.
 
-| Name                                                                                   | terminal command             |
-|----------------------------------------------------------------------------------------|------------------------------|
-| Git interactively rebase from a specific commit with commit hash, for example 11aa23bc | **git rebase -i 11aa23bc**   |
-| Use this commit                                                                        | **pick**                     |
-| Fixup this commit (add changes to previous commit under the same commit message)       | **fixup**                    |
-| Squash this commit (add changes to previous commit and combine commit messages)        | **squash**                   |
+| Name                                                                                   | terminal command           |
+| -------------------------------------------------------------------------------------- | -------------------------- |
+| Git interactively rebase from a specific commit with commit hash, for example 11aa23bc | **git rebase -i 11aa23bc** |
+| Use this commit                                                                        | **pick**                   |
+| Fixup this commit (add changes to previous commit under the same commit message)       | **fixup**                  |
+| Squash this commit (add changes to previous commit and combine commit messages)        | **squash**                 |
 
 ### vi Shortcuts Used
-Here are the  shortcuts that we used.
+
+Here are the shortcuts that we used.
 
 | Name                                       | Shortcut |
-|--------------------------------------------|----------|
+| ------------------------------------------ | -------- |
 | Open interactive (edit) mode               | **I**    |
 | Exit interactive (edit) mode               | **esc**  |
 | Remove line (**note**: not in edit mode)   | **dd**   |
@@ -45,6 +49,7 @@ Here are the  shortcuts that we used.
 | Force quit                                 | **:q!**  |
 
 ### Related Links
+
 - [(video) JetBrains Using Git Interactive Rebase](https://www.youtube.com/watch?v=bPX9VHjviEM)
 - [(docs) JetBrains - Edit project history by performing interactive rebase](https://www.jetbrains.com/help/idea/edit-project-history.html#interactive-rebase)
 - [(code) gitdemo project on GitHub](https://github.com/mlvandijk/gitdemo)

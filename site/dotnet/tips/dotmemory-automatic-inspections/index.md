@@ -15,6 +15,7 @@ animatedGif:
   width: 640
   height: 360
 ---
+
 **Memory profiling on auto-pilot** 👩‍✈️
 
 While profiling, dotMemory runs automatic inspections for common memory issues.
@@ -24,5 +25,6 @@ Get information on wasteful duplicate strings, sparse arrays holding more memory
 Always a great start to any memory investigation!
 
 ### See Also
+
 - [Inspections View](https://www.jetbrains.com/help/dotmemory/Snapshot_View.html)
 - [Automatic Inspections](https://www.jetbrains.com/help/dotmemory/Inspections.html)

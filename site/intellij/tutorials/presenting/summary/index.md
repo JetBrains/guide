@@ -11,10 +11,11 @@ thumbnail: ./thumbnail.png
 Now we know several tricks that will level up our presentation skills with IntelliJ IDEA.
 
 ### IntelliJ IDEA Shortcuts Used
+
 Here are the IntelliJ IDEA shortcuts that we used.
 
 | Name                                                                                             | macOS Shortcut | Windows / Linux Shortcut    |
-|--------------------------------------------------------------------------------------------------|----------------|-----------------------------|
+| ------------------------------------------------------------------------------------------------ | -------------- | --------------------------- |
 | [Open Preferences](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html)         | **⌘,**         | **Ctrl+Alt+S**              |
 | Open Quick Switch Scheme                                                                         | **⌃`**         | **Ctrl+`**                  |
 | Hide all windows                                                                                 | **⇧⌘F12**      | **Control+Shift+F12**       |
@@ -41,6 +42,7 @@ Here are the IntelliJ IDEA shortcuts that we used.
 | Save Mnemonic Bookmark                                                                           | **⏎**          | **Enter**                   |
 
 ### Related Links
+
 - [(video) JetBrains - Presenting with IntelliJ IDEA](https://www.youtube.com/watch?v=h-HGg9b6Dqw)
 - [(docs) JetBrains - Settings/Preferences](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html)
 - [(docs) JetBrains - Install plugins](https://www.jetbrains.com/help/idea/managing-plugins.html)

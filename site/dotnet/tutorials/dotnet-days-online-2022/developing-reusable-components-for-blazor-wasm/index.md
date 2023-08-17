@@ -13,7 +13,7 @@ topics:
 author: maartenba
 subtitle: Emanuele Bartolesi
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/s2Y9ESWZbgc'
+video: "https://youtu.be/s2Y9ESWZbgc"
 ---
 
 One of the best features of Blazor is the option to turn pieces of user interface code into reusable UI controls. This feature increases your productivity, especially when you have created a lot of reusable components for different projects.
@@ -32,5 +32,5 @@ He also became a Twitch Affiliate as a live coder, and you can follow him at <ht
 
 Since 2014 he has been a Microsoft MVP in the Developer Technologies category. Emanuele is also a GitHub Star as of 2022.
 
-* Twitter: <https://twitter.com/kasuken>
-* Blog: <https://dev.to/kasuken>
+- Twitter: <https://twitter.com/kasuken>
+- Blog: <https://dev.to/kasuken>

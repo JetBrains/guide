@@ -10,7 +10,7 @@ subtitle: >-
   Setup your PyCharm project to help get into the flow of Test-Driven
   Development (TDD).
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/kwj6Hk1kJYU'
+video: "https://youtu.be/kwj6Hk1kJYU"
 ---
 
 Players have parents, also known as guardians.
@@ -35,12 +35,12 @@ In that file, change the first test to `test_construction` to "get me into the f
 {% include "./demos/test_guardian01.py" %}
 ```
 
-Run the test by right-clicking in the editor *outside any block* and choosing to run it with `pytest` (bigger target area than the tab.)
+Run the test by right-clicking in the editor _outside any block_ and choosing to run it with `pytest` (bigger target area than the tab.)
 
 Yay, the test passes.
-Let's switch to running *all* of our tests.
+Let's switch to running _all_ of our tests.
 In the project tool window, right-click on `tests` and choose `Run 'pytest in tests'`.
-The test runner now shows a tab with `pytest in tests`, with 2 tests passing:  
+The test runner now shows a tab with `pytest in tests`, with 2 tests passing:
 
 ![All Tests](./all_tests.png)
 
@@ -72,12 +72,12 @@ In the tool window for the test output, click on the `Toggle auto-test` icon, tw
 ![Toggle Auto Run](./toggle_auto_run.png)
 
 With autorun enabled, next click the big green run arrow again.
-Now, all your tests run *automatically* two seconds (configurable) after you stop typing.
+Now, all your tests run _automatically_ two seconds (configurable) after you stop typing.
 
 One final point: you don't have to save changes to your code or tests.
 PyCharm has an auto-save virtual filesystem thingy.
 
-To see this autorun in action, change something in one of your `assert` statements, *without* saving.
+To see this autorun in action, change something in one of your `assert` statements, _without_ saving.
 After two seconds, you'll see the tests re-run, automatically.
 
 That's a nice start to a good TDD flow.
@@ -101,7 +101,7 @@ After two seconds, even without saving, our tests show as broken:
 ![Failing Tests](./test_fails.png)
 
 Of course it breaks: `Guardian` has no `__init__.py` constructor.
-Since it is the *code* we are writing tests for, the mistake is conveniently right there in our left tab.
+Since it is the _code_ we are writing tests for, the mistake is conveniently right there in our left tab.
 No need to think.
 Change `laxleague/guardian.py` to implement storing names on instances:
 

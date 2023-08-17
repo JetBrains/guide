@@ -2,7 +2,7 @@
 title: Containers
 subtitle: Create predictable environments that are isolated from other applications.
 logo: ./containers.png
-website: 'https://www.docker.com/'
+website: "https://www.docker.com/"
 topicType: technology
 obsoletes:
   - /goland/topics/containers/

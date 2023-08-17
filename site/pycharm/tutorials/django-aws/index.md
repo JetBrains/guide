@@ -8,7 +8,7 @@ topics:
   - django
   - python
 author: mm
-subtitle: 'Run, build, test and deploy Django Application in PyCharm using NICE DCV.'
+subtitle: "Run, build, test and deploy Django Application in PyCharm using NICE DCV."
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/
@@ -35,9 +35,9 @@ application streaming from any cloud or data center to any device.
 
 This is just the beginning, and we are going to explore a lot of cool stuffs.
 
-* Working with AWS RDS
-* Integrating Sentry
-* Securing APIs with JSON Web Tokens (JWT)
-* Playing with BDD Tests & lots more to come.
+- Working with AWS RDS
+- Integrating Sentry
+- Securing APIs with JSON Web Tokens (JWT)
+- Playing with BDD Tests & lots more to come.
 
-*Note: We'll be using PyCharm Professional Edition for all the steps in this tutorial.*
+_Note: We'll be using PyCharm Professional Edition for all the steps in this tutorial._

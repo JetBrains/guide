@@ -9,10 +9,11 @@ subtitle: >-
   keyboard shortcuts in IntelliJ IDEA. You do not need to complete the modules
   or lessons in order, allowing you to fit your learning around your schedule.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/gs_MiITZf_o'
+video: "https://youtu.be/gs_MiITZf_o"
 ---
 
 ## More Resources
+
 There are lots of places that you can get additional information and resources to help you learn your IDE:
 
 - [Help](https://www.jetbrains.com/help/idea/)
@@ -27,4 +28,5 @@ There are lots of places that you can get additional information and resources t
   - If you don't like the tip of the day to pop up when you load IntelliJ IDEA, you can click it here when you want to test your knowledge or learn something!
 
 ### Related Links
+
 - [(video) Learn IntelliJ IDEA](https://www.youtube.com/watch?v=vsUx-kod2O4)

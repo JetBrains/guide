@@ -9,7 +9,7 @@ topics:
 author: mm
 subtitle: Using Simple JWT authentication plugin for the Django REST Framework
 thumbnail: thumbnail.png
-video: 'https://youtu.be/lzloMbTVHuw'
+video: "https://youtu.be/lzloMbTVHuw"
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial,
@@ -25,7 +25,7 @@ To know more about JWT please visit the website [jwt.io](https://jwt.io/)
 
 # Installing JWT Package
 
-There are lots of JWT packages  available in the pypi repository. Previously
+There are lots of JWT packages available in the pypi repository. Previously
 I used to work with **djangorestframework-jwt**. This project is not being
 maintained. So, I am going to look for alternative options.
 
@@ -47,9 +47,9 @@ We will follow two installation approaches
 
 1. Directly running the command in the terminal
 
-    ```
-    pip install djangorestframework-simplejwt
-    ```
+   ```
+   pip install djangorestframework-simplejwt
+   ```
 
 2. Installing through Jetbrains IDE
 
@@ -71,16 +71,16 @@ Okay, the installation is successfully done. Let’s update our requirements.txt
 
 ![update_requirements](steps/step6.png)
 
-In ```settings.py```, add ```rest_framework_simplejwt.authentication.JWTAuthentication``` to the list of authentication classes:
+In `settings.py`, add `rest_framework_simplejwt.authentication.JWTAuthentication` to the list of authentication classes:
 
 You can see the below image, we have added JWT Authentication in our
 default authentication classes. The authentication schemes are always
 defined as a list of classes. The REST framework will attempt to authenticate
-with each class in the list, and will set ```request.user``` and ```request.auth``` using
+with each class in the list, and will set `request.user` and `request.auth` using
 the return value of the first class that successfully authenticates.
 
-If no class authenticates, ```request.user``` will be set to an instance of
-```AnonymousUser```, and ```request.auth``` will be set to ```None```.
+If no class authenticates, `request.user` will be set to an instance of
+`AnonymousUser`, and `request.auth` will be set to `None`.
 
 ```
 

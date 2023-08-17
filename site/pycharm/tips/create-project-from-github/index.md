@@ -10,10 +10,10 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/manage-projects-hosted-on-github.html#clone-from-GitHub
   - title: PyCharm Help for GitHub
-    href: 'https://www.jetbrains.com/help/pycharm/github.html'
+    href: "https://www.jetbrains.com/help/pycharm/github.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://www.youtube.com/watch?v=ukbvdF5wqPQ'
+video: "https://www.youtube.com/watch?v=ukbvdF5wqPQ"
 ---
 
 We all consume a lot of code. Alas, it's a number of steps to get all that

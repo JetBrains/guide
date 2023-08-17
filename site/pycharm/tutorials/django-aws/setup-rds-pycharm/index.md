@@ -9,7 +9,7 @@ topics:
 author: mm
 subtitle: Connect Postgres with our Django Application.
 thumbnail: thumbnail.png
-video: 'https://youtu.be/r90CNlorK78'
+video: "https://youtu.be/r90CNlorK78"
 ---
 
 Hello everyone, welcome to the Django tutorial series.
@@ -51,7 +51,7 @@ the connection has been successfully established.
 
 ![datagrip_postgres_4](steps/step4.png)
 
-This is optional, as we are currently connecting to our Postgres RDS instance *directly*
+This is optional, as we are currently connecting to our Postgres RDS instance _directly_
 inside an Ubuntu server because we have allowed ec2 security group
 to connect with the database. If we want to connect through our
 local development machine, then we need to perform SSH tunneling to securely
@@ -88,7 +88,7 @@ Django secret keys.
 ![django_db_settings_2](steps/step9.png)
 
 I can even pass **ALLOWED_HOSTS** in the environment variable. It's fine to
-use it directly. You can see I am passing an **asterisk(*)** which means
+use it directly. You can see I am passing an **asterisk(\*)** which means
 my application can be accessed from anywhere. It’s completely fine during
 development but definitely not a good practice when you are running an
 application in a production server. Make sure to provide permitted
@@ -98,6 +98,7 @@ Before deploying your application on the production server, make sure you
 follow the deployment checklist as provided in the Django documentation.
 
 Reference:
+
 - [Deployment checklist](https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/)
 - [Security in Django](https://docs.djangoproject.com/en/3.1/topics/security/)
 
@@ -106,7 +107,7 @@ replicate the same changes by adding the environment variables in my PyCharm IDE
 
 ![ide_env_variables](steps/step10.png)
 
-Don't forget to install PostgreSQL the database adapter by running the command ```pip install psycopg2```
+Don't forget to install PostgreSQL the database adapter by running the command `pip install psycopg2`
 
 ![db_adapter](steps/step11.png)
 

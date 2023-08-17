@@ -17,4 +17,3 @@ tutorialItems:
   - ./sharing-settings-intellij-idea/
   - ./configuring-summary/
 ---
-

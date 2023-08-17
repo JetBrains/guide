@@ -10,7 +10,7 @@ topics:
 author: mm
 subtitle: Performing CRUD operations in Products & Category Module.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=KsTKgi26CgU'
+video: "https://www.youtube.com/watch?v=KsTKgi26CgU"
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
@@ -27,7 +27,7 @@ I am going to create **models.py** file under products.
 
 I will be doing necessary imports.
 
-I am going to create a Category model which inherits from Base.  
+I am going to create a Category model which inherits from Base.
 
 Every product comes under a category. I will define two columns **id** and **name**.
 
@@ -36,6 +36,7 @@ Every product comes under a category. I will define two columns **id** and **nam
 Next, I am going to create a Product model.
 
 The columns which I will be defining will be :
+
 - id
 - name of the product
 - quantity basically referring to items in stock
@@ -47,12 +48,12 @@ every product comes under a category.
 
 ![step3](./steps/step3.png)
 
-I will do an import from ```sqlalchemy.orm``` import ```relationship```.
+I will do an import from `sqlalchemy.orm` import `relationship`.
 
-I will define relationships for products. The ```back_populates``` argument
+I will define relationships for products. The `back_populates` argument
 tells SQLAlchemy which column to link with when it joins the two tables
 
-In Product model, I will be defining ```category_id``` which is a ForeignKey referencing to ```category.id```
+In Product model, I will be defining `category_id` which is a ForeignKey referencing to `category.id`
 
 Basically, a foreign key is a set of attributes in a table that refers to the primary key of another table.
 
@@ -147,11 +148,11 @@ Let’s begin with our Create Category API.
 
 ![step8](./steps/step8.png)
 
-The ```create_category``` function accepts two parameters: ```request``` and ```database```, whatever is
+The `create_category` function accepts two parameters: `request` and `database`, whatever is
 coming in the request pydantic is going to take care of it. After getting the
 information, we will be committing this information into the database.
 
-I will create a new function : ```create_new_category``` where I will be writing the
+I will create a new function : `create_new_category` where I will be writing the
 business logic.
 
 I will do the necessary imports.
@@ -162,7 +163,7 @@ We will be adding the new category to the database session and finally committin
 
 ![step9](./steps/step9.png)
 
-We will also do ```database.refresh```, which basically means to expire
+We will also do `database.refresh`, which basically means to expire
 and then immediately get the latest data for the object from the database. It involves
 an immediate database query, which you may consider expensive.
 
@@ -228,8 +229,8 @@ it’s returning a list.
 
 Now, let's create our third api to retrieve category by id.
 
-The ```get_category_by_id``` will return a Category object from the database, it can
-be ```Optional``` as well. But I am leaving up to you.
+The `get_category_by_id` will return a Category object from the database, it can
+be `Optional` as well. But I am leaving up to you.
 
 **router.py**
 
@@ -308,7 +309,7 @@ If you want to break this router, then can you go forward with that. One for pro
 
 Let’s begin by creating our product API, but before that we need to create the pydantic schema.
 
-I will create a ```ProductBase``` class which will be reused later.
+I will create a `ProductBase` class which will be reused later.
 
 - Id is going to be int but optional.
 - Name will be string.
@@ -333,10 +334,10 @@ class Product(ProductBase):
     category_id: int
 ```
 
-I will create one more class ```Product``` which is going to
-inherit ```ProductBase```, in which I will have ```category_id``` as integer.
+I will create one more class `Product` which is going to
+inherit `ProductBase`, in which I will have `category_id` as integer.
 
-Coming back to the router, I will resume working on the ```create_product``` function.
+Coming back to the router, I will resume working on the `create_product` function.
 
 **router.py**
 
@@ -361,7 +362,7 @@ I will raise an exception if there is no category present else we will create ou
 Before inserting the product in the database, we need to make sure whether the specific
 category exists in the database or not. So, we are going to write a small validation for it.
 
-I am going to write a validator: ```verify_category_exist``` which will return the
+I am going to write a validator: `verify_category_exist` which will return the
 category object or None if not present.
 
 **validator.py**
@@ -434,7 +435,7 @@ how easy it is to develop an API when working with FastAPI.
 So, now I am going to create a pydantic schema for product listing. It will be a
 combination of products and categories.
 
-I will create a ```ProductListing``` class which inherits from ```ProductBase```.
+I will create a `ProductListing` class which inherits from `ProductBase`.
 
 **schema.py**
 
@@ -478,9 +479,9 @@ class ProductListing(ProductBase):
         orm_mode = True
 ```
 
-Category information will be coming from ```ListCategory``` class.
+Category information will be coming from `ListCategory` class.
 
-Response model is going to return schema ```ProductListing```.
+Response model is going to return schema `ProductListing`.
 
 **router.py**
 

@@ -13,7 +13,7 @@ In this tutorial we saw an overview of the [support for Maven projects](https://
 Some helpful shortcuts mentioned in the tutorial and video:
 
 | Name                                                                                                                                                                                                   | macOS Shortcut | Windows Shortcut |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|------------------|
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------- | ---------------- |
 | Load Maven changes                                                                                                                                                                                     | **⇧⌘I**        | **Ctrl+Shift+O** |
 | Add a new dependency from inside the `pom.xml` file                                                                                                                                                    | **⌘N**         | **Alt+Insert**   |
 | [Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) (can use this to open the [Maven Tool Window](https://www.jetbrains.com/help/idea/maven-projects-tool-window.html)) | **⇧⇧**         | **Shift+Shift**  |
@@ -25,5 +25,6 @@ Some helpful shortcuts mentioned in the tutorial and video:
 There are links to more information on this tutorial's [introduction](../introduction).
 
 ### Related Links
+
 - [(video) Working with Maven in IntelliJ IDEA](https://www.youtube.com/watch?v=pt3uB0sd5kY)
 - [(video) Using Maven in IntelliJ IDEA](https://www.youtube.com/watch?v=D1sRK8JLCQ4)

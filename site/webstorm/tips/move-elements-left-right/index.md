@@ -5,10 +5,10 @@ topics:
   - editing
   - javascript
 author: er
-subtitle: 'Quickly swap functions parameters, attributes in tags, and more.'
+subtitle: "Quickly swap functions parameters, attributes in tags, and more."
 seealso:
   - title: Write and edit source code
-    href: 'https://www.jetbrains.com/help/webstorm/working-with-source-code.html'
+    href: "https://www.jetbrains.com/help/webstorm/working-with-source-code.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -16,6 +16,8 @@ animatedGif:
   width: 600
   height: 300
 ---
-You can swap function parameters, attributes in tags, and elements in objects, arrays and boolean expressions using *Move Element Left/Right*:
-- *Alt+Shift+Cmd+Left/Right* on macOS
-- *Alt+Shift+Ctrl+Left/Right* on Windows and Linux
+
+You can swap function parameters, attributes in tags, and elements in objects, arrays and boolean expressions using _Move Element Left/Right_:
+
+- _Alt+Shift+Cmd+Left/Right_ on macOS
+- _Alt+Shift+Ctrl+Left/Right_ on Windows and Linux

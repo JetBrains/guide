@@ -12,8 +12,8 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - IDE viewing modes
-    href: 'https://www.jetbrains.com/help/idea/ide-viewing-modes.html'
-video: 'https://youtu.be/fO8oDVBsHWA'
+    href: "https://www.jetbrains.com/help/idea/ide-viewing-modes.html"
+video: "https://youtu.be/fO8oDVBsHWA"
 ---
 
 Use **^\`** (macOS), or **Ctrl+\`** (Windows/Linux), to bring up the **Quick
@@ -27,11 +27,13 @@ on coding.
 ## Alternative Ways of Entering Distraction Free Mode
 
 ### Using View Toolbar Options
+
 You can use the menu **View > Appearance** > **Enter Distraction Free Mode**.
 
 ![Enter Distraction Free Mode using View Toolbar](distraction-free-mode-using-menu.png)
 
 ### Using Search Everywhere
+
 Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Distraction_ and select **Enter Distraction Free Mode**.
 
 ![Enter Distraction Free Mode using Search Everywhere](distraction-free-mode-search-everywhere.png)

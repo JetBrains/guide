@@ -12,8 +12,9 @@ seealso:
       https://www.jetbrains.com/help/go/viewing-changes-information.html#local_changes
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://www.youtube.com/watch?v=wp86DkW0VLA'
+video: "https://www.youtube.com/watch?v=wp86DkW0VLA"
 ---
+
 We've all been there.
 
 I’m working hard. Adds... edits... deletes.
@@ -76,6 +77,6 @@ You can:
 - Launch a full diff
 - Copy that change region to the clipboard
 - Toggle highlighting the change
-- *se the changelist facility to move this change out-of-the-way.
+- \*se the changelist facility to move this change out-of-the-way.
 
 When you’re done, hit escape or click elsewhere to dismiss the panel, and you’re right back where you were.

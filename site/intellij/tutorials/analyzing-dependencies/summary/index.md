@@ -18,7 +18,7 @@ Now we know several ways to analyze our project's dependencies in IntelliJ IDEA.
 Here are the IntelliJ IDEA shortcuts that we used.
 
 | Name                                                                                             | macOS Shortcut | Windows / Linux Shortcut |
-|--------------------------------------------------------------------------------------------------|----------------|--------------------------|
+| ------------------------------------------------------------------------------------------------ | -------------- | ------------------------ |
 | Recent Files                                                                                     | **⌘E**         | **Ctrl+E**               |
 | Hide all windows / Restore windows                                                               | **⇧⌘F12**      | **Ctrl+Shift+F12**       |
 | Open / Close [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html) | **⌘1**         | **Alt+1**                |

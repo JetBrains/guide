@@ -8,7 +8,7 @@ topics:
 author: tg
 subtitle: What you need to know to get started with an existing Gradle project
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/6V6G3RyxEMk?start=586'
+video: "https://youtu.be/6V6G3RyxEMk?start=586"
 ---
 
 We've covered creating new Gradle projects, let's look at what's probably the more common case, importing existing Gradle projects into IntelliJ IDEA.

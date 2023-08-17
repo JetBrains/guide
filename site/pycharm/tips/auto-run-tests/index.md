@@ -16,7 +16,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/test-runner-tab.html#Test_Runner_Tab.xml
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/4kHncS_gPX0'
+video: "https://youtu.be/4kHncS_gPX0"
 ---
 
 TDD, or test-driven development, means "always be testing." In fact, the

@@ -11,11 +11,12 @@ seealso:
   - title: >-
       (video)IntelliJ IDEA + Space = Complete Environment for Collaborative
       Software Development
-    href: 'https://www.youtube.com/watch?v=iHSbWIW48uM'
+    href: "https://www.youtube.com/watch?v=iHSbWIW48uM"
   - title: (documentation) Space Help - Review code
-    href: 'https://www.jetbrains.com/help/space/space-plugin-for-ide.html#review-code'
-video: 'https://youtu.be/z1RnxBvF2Xk'
+    href: "https://www.jetbrains.com/help/space/space-plugin-for-ide.html#review-code"
+video: "https://youtu.be/z1RnxBvF2Xk"
 ---
+
 The bundled plugin for [JetBrains Space](https://www.jetbrains.com/space/) is really helpful for code reviews. You can perform the whole review, as an author or reviewer, inside the IDE.
 
 Open the Space Code Reviews tool window to see a list of reviews that need your attention. There are a number of pre-set searches here, for example you can look at all the closed reviews.

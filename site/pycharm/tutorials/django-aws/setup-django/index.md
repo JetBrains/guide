@@ -9,7 +9,7 @@ topics:
 author: mm
 subtitle: Create a virtual environment and install Python dependencies.
 thumbnail: thumbnail.png
-video: 'https://youtu.be/2w3OHXLWfL4'
+video: "https://youtu.be/2w3OHXLWfL4"
 ---
 
 Hello everyone, welcome to the Django tutorial series.

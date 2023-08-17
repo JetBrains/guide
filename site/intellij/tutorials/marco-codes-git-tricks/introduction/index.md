@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Overview of the tutorial
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/Ase_X9p6exw'
+video: "https://youtu.be/Ase_X9p6exw"
 ---
 
 ## Overview

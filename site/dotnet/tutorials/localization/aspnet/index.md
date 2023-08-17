@@ -12,9 +12,9 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: 'Working with Cultures, Resources, & ASP.NET'
+subtitle: "Working with Cultures, Resources, & ASP.NET"
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/smCuu3TrVUc'
+video: "https://youtu.be/smCuu3TrVUc"
 ---
 
 Localization has been around since .NET 1.1. Looking at the interfaces of `ResourceManager` and `CultureInfo`, along with the static nature of resource access, its easy to see the ties to legacy client technology **WinForms**. With the release of ASP.NET Core, developers have new tools to work with localization in the realm of server-based web apps.
@@ -46,7 +46,7 @@ We follow up on the call to add localization by configuring the `RequestLocaliza
      options.SetDefaultCulture("en-Us");
      options.AddSupportedUICultures("en-US", "de-DE", "ja-JP");
      options.FallBackToParentUICultures = true;
-     
+
      options
          .RequestCultureProviders
          .Remove(typeof(AcceptLanguageHeaderRequestCultureProvider));
@@ -76,22 +76,22 @@ The complete `ConfigureServices` method is below.
      {
         options.ResourcesPath = "Resources";
      });
-     
+
      services.Configure<RequestLocalizationOptions>(options =>
      {
          options.SetDefaultCulture("en-Us");
          options.AddSupportedUICultures("en-US", "de-DE", "ja-JP");
          options.FallBackToParentUICultures = true;
-         
+
          options
          .RequestCultureProviders
          .Remove(typeof(AcceptLanguageHeaderRequestCultureProvider));
      });
-     
+
      services
          .AddRazorPages()
          .AddViewLocalization();
-     
+
      services.AddScoped<RequestLocalizationCookiesMiddleware>();
  }
 ```
@@ -121,17 +121,17 @@ We need to ensure that we register the middleware before any middleware that req
          // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
          app.UseHsts();
      }
-     
+
      app.UseHttpsRedirection();
      app.UseStaticFiles();
      app.UseRequestLocalization();
-     
-     // will remember to write the cookie 
+
+     // will remember to write the cookie
      app.UseRequestLocalizationCookies();
-     
+
      app.UseRouting();
      app.UseAuthorization();
-     
+
      app.UseEndpoints(endpoints => { endpoints.MapRazorPages(); });
  }
 ```
@@ -202,24 +202,24 @@ Here is an example of a Razor page utilizing all three interfaces. We can see th
 @using Microsoft.Extensions.Localization
 @using Microsoft.AspNetCore.Mvc.Localization
 @model IndexModel
- 
+
 @inject IStringLocalizer<IndexModel> Localizer
 @inject IHtmlLocalizer<IndexModel> HtmlLocalizer
- 
+
 @* ViewLocalizer path is Resources.Pages.Index *@
 @inject IViewLocalizer ViewLocalizer
- 
+
 @{
  ViewData["Title"] = @Localizer["Home page"];
 }
- 
+
 <div class="text-center">
  <h1 class="display-4">@ViewLocalizer["Home page"]</h1>
  <p>
  @HtmlLocalizer["Learn"]
  </p>
 </div>
- 
+
 <form method="post" asp-page="Index">
  <div class="form-group">
  <label asp-for="Superhero" class="control-label"></label>
@@ -237,7 +237,7 @@ Localizing static content using the localization interfaces is straight-forward.
 ```csharp
 [Display(Name = "Superhero", ResourceType = typeof(Resources.Pages.IndexModel))]
 [Required(
-    ErrorMessageResourceName = nameof(Resources.Pages.IndexModel.SuperHeroFieldIsRequired), 
+    ErrorMessageResourceName = nameof(Resources.Pages.IndexModel.SuperHeroFieldIsRequired),
     ErrorMessageResourceType = typeof(Resources.Pages.IndexModel)
 )]
 public string Superhero { get; set; }

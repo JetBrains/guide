@@ -7,9 +7,9 @@ topics:
   - django
   - python
 author: mm
-subtitle: 'Writing CRUD (Create, Read, Update, Delete) in Django Rest Framework.'
+subtitle: "Writing CRUD (Create, Read, Update, Delete) in Django Rest Framework."
 thumbnail: thumbnail.png
-video: 'https://youtu.be/JXXIG6Qy4A4'
+video: "https://youtu.be/JXXIG6Qy4A4"
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step,
@@ -55,7 +55,7 @@ There are four major files under **v1/organization**:
 
 - **serializer.py** - According to DRF, serializers allow complex data such as querysets and model instances to be converted to native Python data types. These can then be easily rendered into JSON , XML or other content types.
 
-- **urls.py** -  It's where you define the mapping between URLs and views. You can also consider them as routes.
+- **urls.py** - It's where you define the mapping between URLs and views. You can also consider them as routes.
 
 - **validator.py** - We use this file to write our common validation code which can be later re-used.
 
@@ -63,6 +63,7 @@ There are four major files under **v1/organization**:
 
 Let us first start implementing our business logic in the views file.
 We will be writing our first API that will perform two operations:
+
 - Creating a new organization
 - Listing all the organizations
 
@@ -104,7 +105,7 @@ model instances and querysets.
 
 ![list_create_api_view_2](steps/step8.png)
 
-We will be using **__**all**__** in our fields attribute to display all fields
+We will be using **\_\_**all**\_\_** in our fields attribute to display all fields
 present in our model. It is strongly recommended that you explicitly set all
 fields that should be serialized using the fields attribute. This will make it
 less likely to result in unintentionally exposing data when your models change.
@@ -114,7 +115,7 @@ Coming back to our business logic, I will be adding **permission_classes**.
 [Permission](https://www.django-rest-framework.org/api-guide/permissions/) checks are always run at the very start of the view,
 before any other code is allowed to proceed. Permission checks will
 typically use the authentication information
-in the ```request.user``` and ```request.auth``` properties to
+in the `request.user` and `request.auth` properties to
 determine if the incoming request should be permitted.
 
 In our case we will be using **AllowAny**, basically anyone can access
@@ -149,10 +150,11 @@ is actually taken care by the serializer. This is one of the good points how ser
 the scenes.
 
 The three fields :
+
 - name
 - registration_code
 - established_on
-  
+
 The above fields are not null in our database table, so we require a mandatory value to be inserted.
 If any column has null set to true,
 then it won’t appear because it has now become optional. All this is taken care of by the ModelSerializer.
@@ -203,6 +205,7 @@ the function and paste it in the OrganizationAPI.
 
 I will do the necessary imports which are required. Next, I will do a minor modification in our
 response by adding three keys :
+
 - **status**
 - **message**
 - **data**
@@ -254,7 +257,7 @@ but I will provide a different value for the registration code.
 
 ![retrieve_update_destroy_postman_update](steps/step27.png)
 
-As you can see the below image,  RetrieveUpdateDestroyAPIView uses three mixins :
+As you can see the below image, RetrieveUpdateDestroyAPIView uses three mixins :
 **RetrieveModelMixin**, **UpdateModelMixin**, **DestroyModelMixin** and **GenericAPIView**.
 
 ![retrieve_update_destroy_override](steps/step28.png)

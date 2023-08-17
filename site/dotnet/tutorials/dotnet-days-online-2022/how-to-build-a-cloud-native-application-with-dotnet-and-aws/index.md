@@ -13,7 +13,7 @@ topics:
 author: maartenba
 subtitle: François Bouteruche
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/loqPXKDwbp4'
+video: "https://youtu.be/loqPXKDwbp4"
 ---
 
 .NET has a long history on AWS. It has been supported for more than 11 years. The AWS SDK for .NET was the first-ever AWS SDK released.
@@ -32,4 +32,4 @@ Then he worked 3 years at Microsoft France, helping .NET developers – at custo
 
 You can find more here: <https://www.linkedin.com/in/francoisbouteruche>
 
-* Twitter: <https://www.twitter.com/fbouteruche>
+- Twitter: <https://www.twitter.com/fbouteruche>

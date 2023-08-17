@@ -30,11 +30,12 @@ We can see details about a selected dependency in the dependency details pane.
 ![Dependency Details Pane](dependency-details-pane.png)
 
 The dependency details pane displays the information about the selected dependency, such as:
-* Repository or repositories where it's available, for example Maven Central
-* A description if it is available
-* GitHub information if the dependency sources are hosted on GitHub
-* The licence under which an open source library is available
-* A link to the project website, documentation and readme
-* List of usages in the current module.
-* Authors if available
-* Supported Kotlin or Multiplatform platforms if it is a Kotlin Multiplatform dependency
+
+- Repository or repositories where it's available, for example Maven Central
+- A description if it is available
+- GitHub information if the dependency sources are hosted on GitHub
+- The licence under which an open source library is available
+- A link to the project website, documentation and readme
+- List of usages in the current module.
+- Authors if available
+- Supported Kotlin or Multiplatform platforms if it is a Kotlin Multiplatform dependency

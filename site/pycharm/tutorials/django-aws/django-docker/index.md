@@ -9,7 +9,7 @@ topics:
 author: mm
 subtitle: Building and running Django Containers through Docker
 thumbnail: thumbnail.png
-video: 'https://youtu.be/q_cZO1WBWCw'
+video: "https://youtu.be/q_cZO1WBWCw"
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, we are going to deploy our application inside a Docker Container.
@@ -67,15 +67,16 @@ You may have observed that we are using the alpine image. One of the easiest ste
 smaller base images. Alpine is a lightweight linux distribution designed for security and resource efficiency.
 
 Next, I will be performing certain operations like :
+
 - Setting up environment variables
 - Installing Postgres
-- Copying  ```requirements.txt``` to our app path
-- Upgrading pip & installing python packages from our ```requirements.txt```
+- Copying `requirements.txt` to our app path
+- Upgrading pip & installing python packages from our `requirements.txt`
 - Copying the entire project.
 
 # Docker Compose
 
-I will be creating a new file called ```docker-compose.yml``` file. According to Docker: [Compose](https://docs.docker.com/compose/) is a
+I will be creating a new file called `docker-compose.yml` file. According to Docker: [Compose](https://docs.docker.com/compose/) is a
 tool for defining and running multi-container Docker applications. With Compose,
 you use a YAML file to configure your application's services. Then, with a single command, you create
 and start all the services from your configuration.
@@ -91,7 +92,7 @@ services expose.
 The final version is going to look like this :
 
 ```yaml
-version: '3.7'
+version: "3.7"
 services:
   nginx:
     container_name: dev_web
@@ -111,10 +112,10 @@ services:
     env_file: dev.env
     command: gunicorn SampleDemo.wsgi:application --bind 0.0.0.0:5000
     volumes:
-     - .:/app
-     - static_volume:/app/static
+      - .:/app
+      - static_volume:/app/static
     depends_on:
-     - db
+      - db
   db:
     container_name: dev_db
     image: postgres:12.0-alpine
@@ -129,7 +130,7 @@ volumes:
 
 - **nginx** : NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. [Igor Sysoev](https://en.wikipedia.org/wiki/Igor_Sysoev) originally wrote NGINX to solve the C10K problem, a term coined in 1999 to describe the difficulty that existing web servers experienced in handling large numbers (the 10K) of concurrent connections.
 
-- **web**: Under the web section we are going to run our Django application through Gunicorn. Gunicorn is a Python WSGI HTTP Server for UNIX. It's a pre-fork worker model. The Gunicorn server is broadly compatible with various web frameworks, simply implemented, light on server resources, and fairly speedy.  If you are using Django 3 then you can also go ahead with an ASGI server like Uvicorn which is based on uvloop and httptools, with an emphasis on speed.
+- **web**: Under the web section we are going to run our Django application through Gunicorn. Gunicorn is a Python WSGI HTTP Server for UNIX. It's a pre-fork worker model. The Gunicorn server is broadly compatible with various web frameworks, simply implemented, light on server resources, and fairly speedy. If you are using Django 3 then you can also go ahead with an ASGI server like Uvicorn which is based on uvloop and httptools, with an emphasis on speed.
 
 - **db**: The db section is self-explanatory. We are going to use [PostgreSQL](https://www.postgresql.org/) as our datastore.
 
@@ -164,9 +165,9 @@ server {
 }
 ```
 
-We are now done with the configuration. Let’s now create an environment file and name it as ```dev.env```
+We are now done with the configuration. Let’s now create an environment file and name it as `dev.env`
 
-For your reference please check on line number 18 in the compose file. You can see that the environment variables are being picked from the ```dev.env``` file.
+For your reference please check on line number 18 in the compose file. You can see that the environment variables are being picked from the `dev.env` file.
 
 ![env_file_compose](./steps/step5.png)
 
@@ -174,7 +175,7 @@ Make sure to typecast your **DJANGO_SECRET_KEY** to iInteger.
 
 ![django_secret_key_int](./steps/step6.png)
 
-Install the **[gunicorn](https://pypi.org/project/gunicorn/)** package and update your ```requirements.txt``` file.
+Install the **[gunicorn](https://pypi.org/project/gunicorn/)** package and update your `requirements.txt` file.
 
 ```
 pip install gunicorn
@@ -209,12 +210,12 @@ Our containers have been successfully created. As you can see on the screen, it�
 
 Let me execute the basic common commands.
 
-- ```python manage.py collectstatic``` --> This command (collects up all your static files from each of your app folders (including the static
-   files for the admin app) and from any other folders you specify in **settings.py**, and copies them into **STATIC_ROOT**.
+- `python manage.py collectstatic` --> This command (collects up all your static files from each of your app folders (including the static
+  files for the admin app) and from any other folders you specify in **settings.py**, and copies them into **STATIC_ROOT**.
 
-- ```python manage.py migrate``` --> Run database migration
+- `python manage.py migrate` --> Run database migration
 
-- ```python manage.py createsuperuser``` --> Next, I will create a superuser by running the command, but before that, make sure to migrate the tables in the database.
+- `python manage.py createsuperuser` --> Next, I will create a superuser by running the command, but before that, make sure to migrate the tables in the database.
 
 ![docker_execute_command](./steps/step10.png)
 
@@ -226,7 +227,7 @@ sudo docker-compose exec web python manage.py createsuperuser
 
 As we are using NGINX, that means it's running on default port 80. We don’t need to mention it explicitly.
 
-- Open the url ```http://localhost/admin``` and provide your credentials which you recently created.
+- Open the url `http://localhost/admin` and provide your credentials which you recently created.
 
 ![django_admin_docker](./steps/step11.png)
 

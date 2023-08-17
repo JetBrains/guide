@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Merging commits
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/Ase_X9p6exw&start=388'
+video: "https://youtu.be/Ase_X9p6exw&start=388"
 ---
 
 ## Merged Commits

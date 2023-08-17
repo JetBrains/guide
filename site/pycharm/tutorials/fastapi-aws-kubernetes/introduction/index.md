@@ -8,9 +8,9 @@ topics:
   - kubernetes
   - python
 author: mm
-subtitle: 'Introducing FastAPI,  a modern, fast (high-performance), web framework.'
+subtitle: "Introducing FastAPI,  a modern, fast (high-performance), web framework."
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=iCVEhVI07Ig'
+video: "https://www.youtube.com/watch?v=iCVEhVI07Ig"
 ---
 
 Hello everyone, Welcome to the PyCharm FastAPI tutorial series.
@@ -46,14 +46,14 @@ For reference, you can visit the website [fastapi.tiangolo.com](https://fastapi.
 
 FastAPI is developed by [Sebastian Ramirez](https://twitter.com/tiangolo), who is
 currently working in Forethought as a Staff Software Engineer. He has contributed
-code to countless open source projects like Typer & SQLModel as well as  related to
+code to countless open source projects like Typer & SQLModel as well as related to
 DevOps, Docker, Spark, Python, Angular and many more.
 
 # Kubernetes
 
 ![kubernetes-diagram](./container-flow.png)
 
-Image Credits :  [kubernetes.io](https://kubernetes.io/)
+Image Credits : [kubernetes.io](https://kubernetes.io/)
 
 It’s not going to be only FastAPI, we are also going to play with Kubernetes, also known as
 **K8s**.

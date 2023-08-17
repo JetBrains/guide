@@ -16,7 +16,7 @@ subtitle: >-
   your scene.
 thumbnail: ./thumbnail.png
 video:
-  url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
+  url: "https://www.youtube.com/watch?v=gNTOFr_TQCg"
   start: 2044
   end: 2413
 ---
@@ -29,7 +29,7 @@ You can then use the debugger to inspect your call stack, look at and change val
 Rider automatically shows you the active scene and all game objects on it.
 
 While debugging, you can’t use the Unity Editor to select or move game objects.
-However, Rider comes with a second type of breakpoint: the *pausepoint*.
+However, Rider comes with a second type of breakpoint: the _pausepoint_.
 
 Set a pausepoint in code, and when hit, it puts the Unity Editor into pause mode at the end of the current frame.
 The Editor is still fully responsive. You can’t look at values in Rider’s debugger, but you can now use the Unity Editor to select game objects,

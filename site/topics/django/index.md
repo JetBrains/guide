@@ -2,7 +2,7 @@
 title: Django
 subtitle: The web framework for perfectionists with deadlines
 logo: ./django-plain.svg
-website: 'https://www.djangoproject.com'
+website: "https://www.djangoproject.com"
 topicType: technology
 obsoletes:
   - /pycharm/topics/django/

@@ -8,7 +8,7 @@ topics:
 author: pwe
 subtitle: Write a simple test and run it in PyCharm's visual test runner.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/I1ssiDEa2S4'
+video: "https://youtu.be/I1ssiDEa2S4"
 ---
 
 Getting started with pytest is quite easy.
@@ -43,7 +43,7 @@ In `pytest`, tests [are discovered](https://docs.pytest.org/en/latest/goodpracti
 
 # Running Your Test
 
-Now that we have a test -- albeit simple -- let's see what it looks like to *run* it.
+Now that we have a test -- albeit simple -- let's see what it looks like to _run_ it.
 Right-click in the middle of the editor and choose `Run 'pytest in test_player.py'`:
 
 ![Run Tests via Context Menu](./context_menu.png)
@@ -83,21 +83,21 @@ These different ways will reflect your personal style (e.g.mouse vs. keyboard) o
 
 Here is a (non-exhaustive) list of ways that I run tests:
 
-- *Ctrl-R*.
-My most frequent fave.
-Re-runs the tests using the currently-selected run configuration.
-We'll use this for the rest of the tutorial.
+- _Ctrl-R_.
+  My most frequent fave.
+  Re-runs the tests using the currently-selected run configuration.
+  We'll use this for the rest of the tutorial.
 
-- *Specific test or suite*.
-Right-click in a test function or file.
+- _Specific test or suite_.
+  Right-click in a test function or file.
 
-- *Green arrow*. Click on green arrows in toolbar, gutter, tool window.
+- _Green arrow_. Click on green arrows in toolbar, gutter, tool window.
 
-- *Right-click*. Context menu in editor, tab, tool window, project tool folder.
+- _Right-click_. Context menu in editor, tab, tool window, project tool folder.
 
-- *Permanent run configuration*.
-All of the approaches above create *temporary* run configurations.
-I also make *permanent* run configurations for my top-level folders under `tests` such as `unit`.
+- _Permanent run configuration_.
+  All of the approaches above create _temporary_ run configurations.
+  I also make _permanent_ run configurations for my top-level folders under `tests` such as `unit`.
 
 # Test the Construction of an Instance
 
@@ -128,7 +128,7 @@ Simply: the import works, it's callable, and can be called.
 
 Remember that PyCharm can help you [generate the import of `Player` as you type](../../../tips/generate-imports-while-typing/).
 You don't need to stop your flow, go to the top, and write the import.
-Instead, type `Pla` and hit `Ctrl-Space-Space` to autocomplete *and* add the import line at the top, in the correctly-sorted location, combined with any existing import of the module.
+Instead, type `Pla` and hit `Ctrl-Space-Space` to autocomplete _and_ add the import line at the top, in the correctly-sorted location, combined with any existing import of the module.
 
 # Re-Running
 

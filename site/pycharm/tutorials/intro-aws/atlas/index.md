@@ -9,7 +9,7 @@ subtitle: >-
   Connect MongoDB smoothly by connecting through Pycharm Professional to explore
   the database GUI.
 thumbnail: ../thumbnail.png
-video: 'https://youtu.be/TfwDOKRiYQ4'
+video: "https://youtu.be/TfwDOKRiYQ4"
 ---
 
 In this tutorial we are going create a MongoDB Cluster and connect through PyCharm Professional.
@@ -70,7 +70,7 @@ and finally I will copy the **connection string**.
 
 ![atlas_step_6](steps/step6.png)
 
-I will click on the **Database** section. I will click on the + (plus) button,  hover to **Data Source** and then click on **MongoDB**.
+I will click on the **Database** section. I will click on the + (plus) button, hover to **Data Source** and then click on **MongoDB**.
 
 ![atlas_step_7](steps/step7.png)
 

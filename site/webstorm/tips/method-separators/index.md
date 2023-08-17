@@ -19,4 +19,5 @@ animatedGif:
   width: 600
   height: 300
 ---
+
 You can select the _Show method separators_ box in _Preferences/Settings | Editor | General | Appearance_ to add separators between functions and class methods, which will make your code easier to read.

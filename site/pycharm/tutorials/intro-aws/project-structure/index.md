@@ -9,7 +9,7 @@ subtitle: >-
   Launching up project in PyCharm Professional, installing plugin and exploring
   the project layout.
 thumbnail: ../thumbnail.png
-video: 'https://youtu.be/yQd2N2tYN0c'
+video: "https://youtu.be/yQd2N2tYN0c"
 ---
 
 In this tutorial step, we will be setting up the new project and exploring the project structure.
@@ -36,9 +36,9 @@ You are free to use virtual environment of your choice. I am sticking to **virtu
 
 There is something new added by the AWS plugin to the interface called **Package Type** which provides two options: **Zip** & **Archive**.
 
-**Zip* is basically archiving and storing it into Amazon S3
+**Zip\* is basically archiving and storing it into Amazon S3
 and **Image** is storing the Docker Images in AWS ECR
-also known as Amazon Elastic Container Registry. We are now good to go. I will click on **Create**, and we will
+also known as Amazon Elastic Container Registry. We are now good to go. I will click on **Create\*\*, and we will
 wait for a few minutes for the project to get initialized.
 
 # AWS Toolkit
@@ -98,7 +98,7 @@ that event you will be getting all information like the request body etc.
 
 ![explore_step_7](steps/step7.png)
 
-This is the sample response structure of the lambda function.  
+This is the sample response structure of the lambda function.
 
 ![explore_step_8](steps/step8.png)
 

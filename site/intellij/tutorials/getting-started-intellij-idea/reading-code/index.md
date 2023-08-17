@@ -10,7 +10,8 @@ subtitle: >-
 thumbnail: ./thumbnail.png
 ---
 
-Reading code is a crucial skill that we acquire as we go through our careers. IntelliJ IDEA can help you to read code and understand what it does with various mechanisms that you can tailor to the level of *support* that you want. We will look at:
+Reading code is a crucial skill that we acquire as we go through our careers. IntelliJ IDEA can help you to read code and understand what it does with various mechanisms that you can tailor to the level of _support_ that you want. We will look at:
+
 - Viewing Problems
 - Moving Between Errors
 - Getting Hints in Your Code
@@ -26,7 +27,7 @@ IntelliJ IDEA will tell you if your file has any warnings or errors in with the 
 
 ![inspections-widget.png](inspections-widget.png)
 
-You can click on this to open the Problems tool window or use (**⌘6** | **Alt+6**). You can navigate to each error by clicking on it or use **F2** to get to the next error and **Shift+F2** to go back to the previous error. Of course the goal is to keep your code always compiling but the Inspections Widget is very helpful to see the *state* of your file at a glance.
+You can click on this to open the Problems tool window or use (**⌘6** | **Alt+6**). You can navigate to each error by clicking on it or use **F2** to get to the next error and **Shift+F2** to go back to the previous error. Of course the goal is to keep your code always compiling but the Inspections Widget is very helpful to see the _state_ of your file at a glance.
 
 ## Moving Between Errors
 
@@ -42,9 +43,10 @@ You can also use the Problem Window (**⌘6** | **Alt+6**) to see all the errors
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PDGufzpXVFU" >
 </iframe>
 
-Inlay hints are IntelliJ IDEA's way of *decorating* your code with extra information to fill in some of the blanks you might have. They appear in light grey text and are highly configurable. They're especially helpful to understand code which has hard-to-decipher parameter names!
+Inlay hints are IntelliJ IDEA's way of _decorating_ your code with extra information to fill in some of the blanks you might have. They appear in light grey text and are highly configurable. They're especially helpful to understand code which has hard-to-decipher parameter names!
 
 Inlay hints that IntelliJ IDEA can provide include:
+
 - Who authored the code (without using Git Blame)
 - Related Problems
 - Usages
@@ -57,9 +59,10 @@ Inlay hints that IntelliJ IDEA can provide include:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pa-bgScptXE" >
 </iframe>
 
-Gutter icons are often overlooked because they're just *there* but I urge you to look again, especially if you're a visual learner and perhaps haven't mastered *all* keyboard shortcuts yet.
+Gutter icons are often overlooked because they're just _there_ but I urge you to look again, especially if you're a visual learner and perhaps haven't mastered _all_ keyboard shortcuts yet.
 
 Gutter icons can show you:
+
 - Annotations
 - Implementations
 - Overrides

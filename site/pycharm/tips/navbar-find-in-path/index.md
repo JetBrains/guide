@@ -14,10 +14,10 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
   - title: Navigating Tips and Tricks
-    href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
+    href: "https://www.jetbrains.com/help/pycharm/navigation-bar.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/AlFEEDMpW8c'
+video: "https://youtu.be/AlFEEDMpW8c"
 ---
 
 You want to find a file at a path in your project tree. But you've turned
@@ -27,8 +27,8 @@ turn it back off. But then you'll talk yourself into leaving it visible.
 Use the Navigation Bar instead:
 
 - Activate the Navigation Bar with
-`Navigate -> Jump to Navigation Bar` (`Alt-Home` Win/Linux,
-`Cmd-Up` macOS)
+  `Navigate -> Jump to Navigation Bar` (`Alt-Home` Win/Linux,
+  `Cmd-Up` macOS)
 
 - Use the cursor keys to get to the target directory
 
@@ -37,7 +37,7 @@ Use the Navigation Bar instead:
 Then, when your target is selected:
 
 - Invoke `Find in Path` (`Shift+Ctrl+F` Win/Lin, `Shift+Cmd+F` on macOS)
-to bring up the `Find in Path` dialog.
+  to bring up the `Find in Path` dialog.
 
 Just like you would in the Project Tool. Except, no permanent real estate
 lost and the Navigation Bar appears/disappears on command. All without

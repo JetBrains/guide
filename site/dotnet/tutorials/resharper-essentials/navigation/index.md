@@ -10,7 +10,7 @@ topics:
 author: citizenmatt
 subtitle: Let's look at some fast and easy ways to navigate around a code base.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/-LlVzyzO3mA'
+video: "https://youtu.be/-LlVzyzO3mA"
 ---
 
 ### Navigating Code in ReSharper
@@ -28,17 +28,17 @@ In a search, you can press <kbd>Shift+Enter</kbd> to open results in a separate 
 
 Some other options available are:
 
-* [Search Everywhere/Go to Type](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_Type.html)
-* [Go To File](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_File.html)
-* [Go To File Member](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_File_Member.html)
-* [Go To Symbol](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_Symbol.html)
-* [Go To Text](https://www.jetbrains.com/help/resharper/Navigation_and_Search_Go_to_Text.html)
+- [Search Everywhere/Go to Type](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_Type.html)
+- [Go To File](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_File.html)
+- [Go To File Member](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_File_Member.html)
+- [Go To Symbol](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_Symbol.html)
+- [Go To Text](https://www.jetbrains.com/help/resharper/Navigation_and_Search_Go_to_Text.html)
 
 This is not a complete list - check the [ReSharper web help on Navigation](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Index.html) for more examples and use cases.
 
 ### Navigate To menu
 
-The [Navigate To...](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Navigate_from_Here.html) action (<kbd>Alt+Backtick</kbd>) is a single shortcut for many navigation actions.  The list of navigation destinations is displayed depending on the current context.
+The [Navigate To...](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Navigate_from_Here.html) action (<kbd>Alt+Backtick</kbd>) is a single shortcut for many navigation actions. The list of navigation destinations is displayed depending on the current context.
 
 You can invoke **Navigate To** from code in the editor, and also in the Solution Explorer, the File Structure window and several other tool windows. Definitely try it out!
 

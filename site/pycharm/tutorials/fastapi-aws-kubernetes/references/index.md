@@ -10,7 +10,7 @@ topics:
 author: mm
 subtitle: Reference materials which helped to prepare this tutorial.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=U2TAmZKeCRQ'
+video: "https://www.youtube.com/watch?v=U2TAmZKeCRQ"
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
@@ -112,6 +112,7 @@ then definitely check out his courses in [Udemy](https://www.udemy.com/) or [Kod
 ![step7](./steps/step7.png)
 
 Sources:
+
 - [https://www.udemy.com/user/mumshad-mannambeth/](https://www.udemy.com/user/mumshad-mannambeth/)
 - [https://kodekloud.com/](https://kodekloud.com/)
 
@@ -126,6 +127,7 @@ knowledge about EKS.
 ![step8](./steps/step8.png)
 
 Sources:
+
 - [https://www.udemy.com/user/kalyan-reddy-9/](https://www.udemy.com/user/kalyan-reddy-9/)
 - [https://www.stacksimplify.com/](https://www.stacksimplify.com/)
 - [https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/](https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/)
@@ -153,6 +155,7 @@ co-founder of Kubernetes.
 The third edition: **Kubernetes: Up and Running, 3rd Edition** is coming soon.
 
 Sources:
+
 - [https://www.oreilly.com/library/view/kubernetes-up-and/9781492046523/](https://www.oreilly.com/library/view/kubernetes-up-and/9781492046523/)
 - [https://www.oreilly.com/library/view/kubernetes-up-and/9781098110192/](https://www.oreilly.com/library/view/kubernetes-up-and/9781098110192/)
 

@@ -10,13 +10,13 @@ subtitle: >-
   Imports.
 seealso:
   - title: Optimizing Imports
-    href: 'https://www.jetbrains.com/help/pycharm-edu/optimizing-imports.html'
+    href: "https://www.jetbrains.com/help/pycharm-edu/optimizing-imports.html"
   - title: Creating and Optimizing Imports
     href: >-
       https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/lNm5ISUZqCE'
+video: "https://youtu.be/lNm5ISUZqCE"
 ---
 
 PyCharm automates many "gardening" tasks when writing Python code. Managing your

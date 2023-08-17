@@ -4,10 +4,10 @@ title: Use Recent Files to Open Tool Window
 topics:
   - navigation
 author: pwe
-subtitle: 'From the Recent Files popup, open one of the IDE tool windows.'
+subtitle: "From the Recent Files popup, open one of the IDE tool windows."
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/ITV0HRKYnXI'
+video: "https://youtu.be/ITV0HRKYnXI"
 ---
 
 We advocated in previous tips to hide the project tools and use

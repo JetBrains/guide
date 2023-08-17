@@ -11,8 +11,9 @@ seealso:
       https://www.jetbrains.com/help/pycharm/manage-branches.html#compare_branches
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/oGbAj89ttZw'
+video: "https://youtu.be/oGbAj89ttZw"
 ---
+
 ## The Problem
 
 We saw how to [see that another branch has commits](../see-unsynced-commits).
@@ -27,7 +28,7 @@ One more thing though: what changes are included in those commits?
 ## The Solution
 
 We saw going to the Git Log, choosing a commit, and getting to a diff.
-This is against your local *branch*, not the uncommitted changes in your *working directory*.
+This is against your local _branch_, not the uncommitted changes in your _working directory_.
 But that’s not the branch.
 That’s a commit on the branch.
 If the branch had multiple commits, you could select all of them.
@@ -39,6 +40,6 @@ In the branches popup, select a branch, and choose “Compare With your-branch-n
 The top shows commits in “main”, since your branch last updated with it.
 The bottom has your commits, in your branch, not yet a part of main.
 
-That’s for *commits* on your branch.
-“Show Diff with Working Tree”, though, compares against the changes in your *working directory*.
+That’s for _commits_ on your branch.
+“Show Diff with Working Tree”, though, compares against the changes in your _working directory_.
 Use “Show Diff”, then navigate through the changes.

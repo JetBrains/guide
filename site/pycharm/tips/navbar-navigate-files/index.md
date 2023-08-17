@@ -13,10 +13,10 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
   - title: Navigating Tips and Tricks
-    href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
+    href: "https://www.jetbrains.com/help/pycharm/navigation-bar.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/i9l5YuDgJOw'
+video: "https://youtu.be/i9l5YuDgJOw"
 ---
 
 We've discussed "getting into the flow"...strip down the IDE to focus and don't

@@ -33,4 +33,3 @@ tutorialItems:
   - ./specifications-as-documentation/
   - ./shortcuts-used/
 ---
-

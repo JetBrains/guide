@@ -11,7 +11,7 @@ seealso:
       https://www.jetbrains.com/help/idea/commit-and-push-changes.html?partial_commit
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/OlFg1g3hcLs'
+video: "https://youtu.be/OlFg1g3hcLs"
 ---
 
 You’ve done a lot of work, but not all the changes should go in one commit.

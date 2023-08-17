@@ -6,4 +6,3 @@ icon: fas fa-file-code
 obsoletes:
   - /goland/topics/generics/
 ---
-

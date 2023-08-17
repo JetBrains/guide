@@ -16,4 +16,3 @@ tutorialItems:
   - ./hibernate-jpa-spring-boot/
   - ./summary/
 ---
-

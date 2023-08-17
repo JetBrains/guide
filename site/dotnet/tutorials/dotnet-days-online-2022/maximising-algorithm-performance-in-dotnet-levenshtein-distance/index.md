@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2022-10-25
-title: 'Maximising Algorithm Performance in .NET: Levenshtein Distance'
+title: "Maximising Algorithm Performance in .NET: Levenshtein Distance"
 topics:
   - .net
   - csharp
@@ -13,7 +13,7 @@ topics:
 author: maartenba
 subtitle: James Turner
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/-LEW0LgYvUo'
+video: "https://youtu.be/-LEW0LgYvUo"
 ---
 
 With performance tricks you may not know applied to an algorithm you may never have heard of before, be prepared to learn about my journey from different array structures to pointers and SIMD to threading, as we make the journey to maximum performance together.
@@ -24,5 +24,5 @@ With performance tricks you may not know applied to an algorithm you may never h
 
 James is a programmer and entrepreneur with a love of cars, music, and technology.
 
-* Twitter: <https://twitter.com/MrTurnerj>
-* Blog: <https://turnerj.com/blog>
+- Twitter: <https://twitter.com/MrTurnerj>
+- Blog: <https://turnerj.com/blog>

@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Using the diff view to resolve merge conflicts
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/WgipWkaU2MM?start=136'
+video: "https://youtu.be/WgipWkaU2MM?start=136"
 ---
 
 ## Resolving Merges

@@ -10,7 +10,7 @@ topics:
 author: mm
 subtitle: Performing CRUD operations in Orders along with placing a new order.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=2CRq3FxVvQA'
+video: "https://www.youtube.com/watch?v=2CRq3FxVvQA"
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
@@ -27,7 +27,7 @@ Same as usual I am going to create **models.py** file.
 
 Let me do the necessary imports.
 
-I will create two classes, ```Order``` and ```OrderDetails```.
+I will create two classes, `Order` and `OrderDetails`.
 
 **models.py**
 
@@ -77,7 +77,7 @@ and products table along-with quantity and created date.
 
 ![step2](./steps/step2.png)
 
-Basically, we shouldn’t do ```CASCADE```, because in the future, if someone deletes
+Basically, we shouldn’t do `CASCADE`, because in the future, if someone deletes
 the product then order & order details will also get removed. But of course we don’t want
 to do that because we need to preserve order information. It doesn't matter in the future
 if the product gets removed from the system; the order information should be preserved.
@@ -88,7 +88,7 @@ for future audit purposes.
 
 Let me go to the product and user model and create the references.
 
-Let me now register the model and generate the schema.  
+Let me now register the model and generate the schema.
 
 ![step3](./steps/step3.png)
 
@@ -109,7 +109,7 @@ Next, I am going to create the router file and do necessary imports.
 
 I will also create other two files: services and schema.
 
-I am going to initialize the ```APIRouter``` and provide the tags name as ```Orders```.
+I am going to initialize the `APIRouter` and provide the tags name as `Orders`.
 
 ![step5](./steps/step5.png)
 
@@ -122,7 +122,7 @@ Placing a new order is not like we are going to
 use PayPal or going to do any live transaction. We are just going to
 do a demo of the order flow.
 
-So, let’s begin our first api on initiate order, or you can say placing order.  
+So, let’s begin our first api on initiate order, or you can say placing order.
 
 **router.py**
 
@@ -149,7 +149,7 @@ async def initiate_order_processing(database: Session = Depends(db.get_db)):
     return result
 ```
 
-I am going to create a Pydantic schema for our ```ShowOrder``` class.
+I am going to create a Pydantic schema for our `ShowOrder` class.
 
 **schema.py**
 
@@ -183,13 +183,13 @@ class ShowOrder(BaseModel):
         orm_mode = True
 ```
 
-As you can see we created two classes ```ShowOrder``` and ```ShowOrderDetails```. ShowOrder
+As you can see we created two classes `ShowOrder` and `ShowOrderDetails`. ShowOrder
 will contain a list of OrderDetails, and OrderDetails will contain product information. You
-can recall the foreign key relationship with ```Order``` and ```OrderDetails```.  
+can recall the foreign key relationship with `Order` and `OrderDetails`.
 
 You can observe the nested linking between order, order details and products.
 
-Moving back to the router, we are going to create a service named ```initiate_order```.
+Moving back to the router, we are going to create a service named `initiate_order`.
 
 I will do the necessary imports.
 
@@ -271,7 +271,7 @@ async def orders_list(database: Session = Depends(db.get_db)):
 
 The response will be returning a list of orders present in the db.
 
-You can observe the ```get_order_listing``` function, it’s first going to retrieve user information
+You can observe the `get_order_listing` function, it’s first going to retrieve user information
 and after that it will return all order information for that specific user.
 
 **services.py**

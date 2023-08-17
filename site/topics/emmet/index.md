@@ -2,7 +2,7 @@
 title: Emmet
 subtitle: Shorthand system for HTML and CSS generation
 logo: ./emmet.svg
-website: 'https://emmet.io'
+website: "https://emmet.io"
 topicType: technology
 obsoletes:
   - /webstorm/topics/emmet/

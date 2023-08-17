@@ -8,7 +8,7 @@ subtitle: >-
   How to enable version control for your project locally first before sharing it
   to GitHub
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/4ukhZvOmAtk?start=850'
+video: "https://youtu.be/4ukhZvOmAtk?start=850"
 ---
 
 ## Creating a Local Repository First and Sharing it to GitHub Later
@@ -33,7 +33,7 @@ Now you’ve enabled Git, but you haven’t added anything to source control yet
 
 ### Making Your First Commit Locally
 
-You can open the commit window using **⌘K** (macOS) **Ctrl+K** (Windows/Linux). The tutorial uses the [Commit Tool Window](https://www.jetbrains.com/help/idea/commit-and-push-changes.html#commit-tool-window), which was added in IntelliJ IDEA 2020.1. If you’re still using the old commit dialog, you can switch to the commit tool window in your Preferences/Settings  **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) and then search for _Use non-modal commit interface_.
+You can open the commit window using **⌘K** (macOS) **Ctrl+K** (Windows/Linux). The tutorial uses the [Commit Tool Window](https://www.jetbrains.com/help/idea/commit-and-push-changes.html#commit-tool-window), which was added in IntelliJ IDEA 2020.1. If you’re still using the old commit dialog, you can switch to the commit tool window in your Preferences/Settings **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) and then search for _Use non-modal commit interface_.
 
 If you open up the unversioned files list in this Commit window you can see all the files in your project are listed because none of them have been added to Git yet. You probably don’t want to add everything to Git. There are some directories and files, like build output files, that we don’t need to put under source control. Seeing all the files in a single list like this might not be helpful, so we could opt to group the files, for example by directory or module.
 
@@ -49,7 +49,7 @@ Add a description for this commit describing what functionality these changes do
 
 So far you have been committing all these changes to your local Git repository. If you open the Log tab again with **⌘9** (macOS), or **Alt+9** (Windows/Linux), you can see this project only has local branches, which means all the code and the commit history is only saved on this local computer. Once you finished setting up your project and are ready to share it and its history publicly on GitHub, go to **Git > GitHub > Share Project on GitHub**.
 
-You can use IntelliJ IDEA to create a local Git repository and then share the project on GitHub by going to **VCS >  Share project on GitHub** in the menu.
+You can use IntelliJ IDEA to create a local Git repository and then share the project on GitHub by going to **VCS > Share project on GitHub** in the menu.
 
 ![Share Project on GitHub](share-project-on-github-alternative.png)
 

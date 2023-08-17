@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=TYF4sljOH4A&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=65
 ---
+
 GoLand offers the option to quickly implement an interface using the
 _Implement methods_ action.
 

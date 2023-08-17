@@ -10,13 +10,13 @@ subtitle: >-
   you.
 seealso:
   - title: Local History
-    href: 'https://www.jetbrains.com/help/rider/local_history.html'
+    href: "https://www.jetbrains.com/help/rider/local_history.html"
   - title: Retention period for Local History
     href: >-
       https://www.jetbrains.com/help/rider/local_history.html#local-history-retention
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/qBxu_PdDHFw'
+video: "https://youtu.be/qBxu_PdDHFw"
 ---
 
 You’re in your repo. You add a file.

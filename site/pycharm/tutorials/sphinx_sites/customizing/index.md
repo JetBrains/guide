@@ -230,7 +230,7 @@ Start by adding a file at `_static/custom.css`:
 
 ```css
 body {
-  font-size: xx-large;
+	font-size: xx-large;
 }
 ```
 
@@ -242,7 +242,7 @@ html_css_files = ["custom.css"]
 ```
 
 So far, so good, and fairly typically.
-But Sphinx also allows *templated* CSS, where your CSS files are actually processed by Jinja2.
+But Sphinx also allows _templated_ CSS, where your CSS files are actually processed by Jinja2.
 To say this file is a template, rename it to end in `_t`, meaning `_static/custom.css_t`.
 
 Everything works the same at this point: `custom.css` is the actual name that is generated.
@@ -267,7 +267,7 @@ First, add a file at `_templates/luv_sphinx.html` containing:
 <p>We <em>love</em> Sphinx!</p>
 ```
 
-Next, we tell Sphinx which sidebars we want, *in the order we want*, including our new template.
+Next, we tell Sphinx which sidebars we want, _in the order we want_, including our new template.
 We'll also specify where Sphinx should look for templates:
 
 ```python

@@ -5,9 +5,9 @@ title: Writing REST APIs
 topics:
   - aws
 author: mm
-subtitle: 'Beginning CRUD (Create, Read, Update, Delete) Operations'
+subtitle: "Beginning CRUD (Create, Read, Update, Delete) Operations"
 thumbnail: ../thumbnail.png
-video: 'https://youtu.be/3imrJukMeMQ'
+video: "https://youtu.be/3imrJukMeMQ"
 ---
 
 Hello everyone, today I will be working on APIs basically focusing in CRUD operations.
@@ -39,14 +39,14 @@ Let me give you brief idea about the packages which I am using in this project.
 
 `pymongo` & `dnspython` both are required dependencies for connecting to a MongoDB Database.
 
-`marshmallow`  module helps convert complex data types, such as objects, to and from native Python data types. This module is normally used with Flask but if you are coming from Django Rest Framework background you can compare it with serializers.
+`marshmallow` module helps convert complex data types, such as objects, to and from native Python data types. This module is normally used with Flask but if you are coming from Django Rest Framework background you can compare it with serializers.
 
-`pyjwt` is a Python library which allows you to encode and decode JSON Web Tokens (JWT).  We will be using the JWT module in the Login & Refresh Token APIs.
+`pyjwt` is a Python library which allows you to encode and decode JSON Web Tokens (JWT). We will be using the JWT module in the Login & Refresh Token APIs.
 
 `argon2` is a cryptographic hashing algorithm, most recommended for password hashing. It is also the winner of the 2015 Password Hashing Competition, a community-organized open competition to select a next generation hashing algorithm.
 It’s designed not to be easier to compute on custom hardware than it is to compute on an ordinary CPU.
 
-* Make sure to run `pip install -r requirements.txt`
+- Make sure to run `pip install -r requirements.txt`
 
 I will be creating different packages like (**create**,**read**, **update**, **delete**) under users.
 
@@ -115,7 +115,7 @@ After setting the memory limit, I am going to register the API.
 
 Please make sure **requirements.txt** is placed under the **user** directory, otherwise the build will fail.
 
-We are now ready to test our application.  Let me copy a sample snippet from `event.json`.
+We are now ready to test our application. Let me copy a sample snippet from `event.json`.
 I will be passing dummy information in the body to check whether my function is able to create a new user.
 
 ![crud_step_8](steps/step8.png)
@@ -169,7 +169,7 @@ We will register two APIs. One is **OrganizationUserRead** and **OrganizationUse
 ![crud_step_14](steps/step14.png)
 
 You can see both the APIs are pointing to the same business logic.
-In **ReadById**  we are passing **Id** as a
+In **ReadById** we are passing **Id** as a
 parameter for getting information for a particular user.
 
 Let’s test out the functionality.
@@ -187,11 +187,11 @@ As you can below in the console, we are receiving all users list.
 Now, I will try to retrieve information for a specific user. Let me first go to
 the **registrations** collection.
 
-I will copy the **_id** for the user **Mike Jones**.
+I will copy the **\_id** for the user **Mike Jones**.
 
 ![crud_step_17](steps/step17.png)
 
-I will then paste the **_id** it in the **pathParameters**. I will click on Apply and then OK.
+I will then paste the **\_id** it in the **pathParameters**. I will click on Apply and then OK.
 
 ![crud_step_18](steps/step18.png)
 

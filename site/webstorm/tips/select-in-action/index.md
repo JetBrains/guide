@@ -19,7 +19,8 @@ animatedGif:
   width: 600
   height: 300
 ---
-The quick way to find the current file in the *Project* tool window.
 
-- Focus on the file opened in the editor and press *⌥F1 / Alt+F1*.
-- In the popup that appears, select *Project View* and press *Enter*.
+The quick way to find the current file in the _Project_ tool window.
+
+- Focus on the file opened in the editor and press _⌥F1 / Alt+F1_.
+- In the popup that appears, select _Project View_ and press _Enter_.

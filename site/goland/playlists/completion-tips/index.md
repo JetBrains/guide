@@ -26,7 +26,6 @@ playlistItems:
   - /goland/tips/exclude-from-imports-and-completion/
 ---
 
-
 Code completion is one of the greatest benefits of using an IDE: it
 reduces the number of things that you need to memorize and helps avoid
 typos and other common mistakes. It is useful for both professional

@@ -10,7 +10,7 @@ topics:
 author: mm
 subtitle: Integrating FastAPI with JWT Tokens.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=88ka51diyUc'
+video: "https://www.youtube.com/watch?v=88ka51diyUc"
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
@@ -35,6 +35,7 @@ You can also clearly see the documentation covers the entire password flow. I st
 the FastAPI official documentation for reference.
 
 Reference:
+
 - <https://fastapi.tiangolo.com/tutorial/security/>
 
 Next, we will try to get the current logged-in user.
@@ -62,15 +63,15 @@ I will go to the **auth** folder and create the **router.py** file.
 
 Let me do the necessary imports.
 
-As you can see we have imported ```OAuth2PasswordRequestForm```, which is basically a dependent class which
-takes parameters:  ```grant_type```, ```username```, ```password```, ```client id``` and ```client secret```.
+As you can see we have imported `OAuth2PasswordRequestForm`, which is basically a dependent class which
+takes parameters: `grant_type`, `username`, `password`, `client id` and `client secret`.
 
 ![step6](./steps/step6.png)
 
-For your information, the **OAuth2** spec actually requires a field ```grant_type``` with a fixed value
-of password, but ```OAuth2PasswordRequestForm``` doesn't enforce it.
+For your information, the **OAuth2** spec actually requires a field `grant_type` with a fixed value
+of password, but `OAuth2PasswordRequestForm` doesn't enforce it.
 
-If you need to enforce it, use ```OAuth2PasswordRequestFormStrict``` instead of ```OAuth2PasswordRequestForm```.
+If you need to enforce it, use `OAuth2PasswordRequestFormStrict` instead of `OAuth2PasswordRequestForm`.
 
 I will initialize the **APIRouter** and set the tag name to **auth**.
 
@@ -95,7 +96,7 @@ For the secret key, I will provide a long random string.
 
 ![step10](./steps/step10.png)
 
-I will create a function called ```create_access_token``` where I will write the implementation to
+I will create a function called `create_access_token` where I will write the implementation to
 encode the data and generate the JWT token. This is something which I directly took from
 the FastAPI documentation.
 
@@ -127,13 +128,13 @@ def create_access_token(data: dict):
 
 Next, I will be creating a few pydantic classes.
 
-I will be creating three different classes: ```Login```, ```Token``` and ```TokenData```.
+I will be creating three different classes: `Login`, `Token` and `TokenData`.
 
 Login will be used for accepting parameters like username and password.
 
-Token class will accept ```token``` and ```token_type``` here we are basically referring to ```Bearer```.
+Token class will accept `token` and `token_type` here we are basically referring to `Bearer`.
 
-```TokenData``` which accepts email that too it's optional.
+`TokenData` which accepts email that too it's optional.
 
 ![step12](./steps/step12.png)
 
@@ -159,7 +160,7 @@ class TokenData(BaseModel):
     email: Optional[str] = None
 ```
 
-I will come back to jwt and create a new ```verify_token```. This function will be used to check whether
+I will come back to jwt and create a new `verify_token`. This function will be used to check whether
 the token which we are using is a valid token or not.
 
 ![step13](./steps/step13.png)
@@ -204,13 +205,13 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 ```
 
 If email is not present in the token then we will raise a credential exception
-which is actually going to be a ```HTTPException``` else we will be returning the ```TokenData```.
+which is actually going to be a `HTTPException` else we will be returning the `TokenData`.
 
-Next, we will create a variable ```oauth2_scheme``` in which we will initialize the ```OAuth2PasswordBearer```.
+Next, we will create a variable `oauth2_scheme` in which we will initialize the `OAuth2PasswordBearer`.
 
-```Oauth2_scheme``` will be used as a dependency when trying to get the current logged-in user.
+`Oauth2_scheme` will be used as a dependency when trying to get the current logged-in user.
 
-I will create the ```get_current_user``` function where I will verify the token.
+I will create the `get_current_user` function where I will verify the token.
 
 ![step14](./steps/step14.png)
 
@@ -274,7 +275,7 @@ can be also sync. Choice is yours.
 
 ![step15](./steps/step15.png)
 
-In request we are going to make ```OAuth2PasswordRequestForm``` as a dependency, so it will prompt us
+In request we are going to make `OAuth2PasswordRequestForm` as a dependency, so it will prompt us
 to provide username and password.
 
 I will check whether the user is present in the database or not, if it is not present I will raise an HTTP Exception.
@@ -326,7 +327,7 @@ I will go to **main.py** and register the auth router.
 
 After we registered the router successfully, I will go to the user module.
 
-I will open the router and import ```get_current_user```.
+I will open the router and import `get_current_user`.
 
 I will pass it in all of my apis as a dependency, excluding a few.
 
@@ -413,7 +414,7 @@ Now, if I try to execute then it will give me a list of all users.
 
 ![step22](./steps/step22.png)
 
-I will be passing the ```get_current_user``` dependency in all of my endpoints excluding few of them.
+I will be passing the `get_current_user` dependency in all of my endpoints excluding few of them.
 
 If you feel that you got stuck somewhere then watch the video along-with have a look on the [source code](https://github.com/mukulmantosh/FastAPI_EKS_Kubernetes).
 
@@ -428,9 +429,10 @@ apis to be not protected like load balancer health checks, but you want to take 
 [global dependency](https://fastapi.tiangolo.com/tutorial/dependencies/global-dependencies/).
 
 Then you should check this issue:
+
 - [https://github.com/tiangolo/fastapi/issues/2481](https://github.com/tiangolo/fastapi/issues/2481)
 
-I will also replace the manually provided emails with ```current_user.email```
+I will also replace the manually provided emails with `current_user.email`
 
 Example: **orders/services.py**
 

@@ -11,6 +11,7 @@ thumbnail: ./thumbnail.png
 ---
 
 Changing code is more common than writing code and IntelliJ IDEA can support you here as well. The tips listed here are just a few of the most helpful ones to get you started and also to potentially come to your assistance if things don't go the way you think! We will look at:
+
 - Refactoring Code
 - Reformatting Code
 - Working with Multiple Carets
@@ -28,6 +29,7 @@ We often want to go back and revisit code that either we wrote or someone else w
 IntelliJ IDEA supports a huge range of refactorings and associated keyboard shortcuts, but there's one shortcut you can use to invoke all refactorings which is (**⌃T** | **Ctrl+Alt+Shift+T**).
 
 Some of the more common refactorings are:
+
 - Rename
 - Change signature
 - Extract or inline a variable | field | parameter | method | constant

@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Using escape codes and placeholder icons
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/kT4JYQi9w4w&start=1239s'
+video: "https://youtu.be/kT4JYQi9w4w&start=1239s"
 ---
 
 ## Building The Text Viewer Skeleton

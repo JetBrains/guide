@@ -6,4 +6,3 @@ icon: fas fa-laptop-code
 obsoletes:
   - /intellij/topics/ultimate/
 ---
-

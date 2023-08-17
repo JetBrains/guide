@@ -6,9 +6,11 @@ topics: []
 author: hs
 subtitle: Helpful labels will help you to identify each terminal session at a glance
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/tlEkrWU0d1M?start=123'
+video: "https://youtu.be/tlEkrWU0d1M?start=123"
 ---
+
 ## Naming Your Terminal tabs
+
 We can run any type of command from the terminal window. For example, although IntelliJ IDEA has full integration with Gradle, sometimes we might want to check a build tool like Gradle or Maven runs correctly from the command line. We might sometimes do this with different Java versions or different arguments to those we’re using in the application. Given that we might be using a number of terminal sessions with a number of different processes or parameters, it’s useful to rename the tabs to something helpful. You can do this from the context menu, which you can open by right-clicking on the tab. That way we can easily reopen the one we’re interested in.
 
 ![Rename Terminal Tab](rename-tab.png)

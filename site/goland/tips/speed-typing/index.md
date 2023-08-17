@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=dNGyprUoLWQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=150
 ---
+
 **Speed Typing** is the ability to type anything in a list and have the results
 filtered.
 

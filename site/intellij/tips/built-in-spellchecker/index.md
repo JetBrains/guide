@@ -10,7 +10,8 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Spellchecking
-    href: 'https://www.jetbrains.com/help/idea/spellchecking.html'
-video: 'https://youtu.be/LWQsV7YRtg8'
+    href: "https://www.jetbrains.com/help/idea/spellchecking.html"
+video: "https://youtu.be/LWQsV7YRtg8"
 ---
+
 Use F2 (macOS/Windows/Linux) to navigate to the next error and then use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to get suggestions on how to fix the typo.

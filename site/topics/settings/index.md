@@ -9,4 +9,4 @@ obsoletes:
 ---
 
 You can configure our IDEs at the highest level for all projects, or on a per-project basis. Settings can be accessed
-with **⇧,** on macOS and  **Ctrl**+**Alt**+**S** on Windows and Linux.
+with **⇧,** on macOS and **Ctrl**+**Alt**+**S** on Windows and Linux.

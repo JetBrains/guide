@@ -14,6 +14,7 @@ animatedGif:
   width: 600
   height: 300
 ---
+
 **Too many projects to deal with?** 😱
 
 As developers, the appeal of technology draws us to work on many projects, sometimes a few too many. It can be overwhelming to find the project we were working on completing. Luckily, with Rider, we can organize our projects into categories that make sense to us.

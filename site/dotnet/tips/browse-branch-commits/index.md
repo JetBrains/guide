@@ -8,14 +8,15 @@ author: pwe
 subtitle: Review the changes in main before bringing them to your branch.
 seealso:
   - title: Sync with a remote Git repository
-    href: 'https://www.jetbrains.com/help/rider/Sync_with_a_remote_repository.html'
+    href: "https://www.jetbrains.com/help/rider/Sync_with_a_remote_repository.html"
   - title: Update your project
     href: >-
       https://www.jetbrains.com/help/rider/Sync_with_a_remote_repository.html#update
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://www.youtube.com/watch?v=tnz2I9rxrfk'
+video: "https://www.youtube.com/watch?v=tnz2I9rxrfk"
 ---
+
 ## The Problem
 
 You’re working on a feature branch.

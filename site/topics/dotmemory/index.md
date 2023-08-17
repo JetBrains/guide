@@ -2,7 +2,7 @@
 title: dotMemory
 subtitle: The .NET Memory Profiler.
 logo: ./logo.png
-website: 'https://www.jetbrains.com/dotmemory/'
+website: "https://www.jetbrains.com/dotmemory/"
 topicType: product
 obsoletes:
   - /dotnet/topics/dotmemory/
@@ -11,5 +11,6 @@ obsoletes:
 dotMemory allows you to analyze memory usage in a variety of .NET and .NET Core applications: desktop applications, Windows services, ASP.NET web applications, IIS, IIS Express, arbitrary .NET processes, and more.
 
 ## See Also
+
 - [dotMemory home page](https://www.jetbrains.com/dotmemory/)
 - [dotMemory documentation](https://www.jetbrains.com/dotmemory/documentation/)

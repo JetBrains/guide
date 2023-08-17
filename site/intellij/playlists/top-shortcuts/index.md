@@ -21,4 +21,3 @@ playlistItems:
   - /intellij/tips/run-anything/
   - /intellij/tips/run-and-terminate-process/
 ---
-

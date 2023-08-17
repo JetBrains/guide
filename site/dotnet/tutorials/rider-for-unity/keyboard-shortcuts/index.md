@@ -13,7 +13,7 @@ author: citizenmatt
 subtitle: The two keyboard shortcuts that get you places!
 thumbnail: ./thumbnail.png
 video:
-  url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
+  url: "https://www.youtube.com/watch?v=gNTOFr_TQCg"
   start: 315
   end: 528
 ---

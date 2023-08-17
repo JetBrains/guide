@@ -14,6 +14,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
+
 Type parameters with empty parameter lists are highlighted as errors. So, if you type _func printInt[](i int)_, GoLand will highlight _[]_ because the IDE expects type parameters here. In this case, you can either implement type parameters or delete square brackets. To delete square brackets, try the **Delete type parameters** quick-fix.
 
 **How to use:**

@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=dyUsxQJLFZQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=13
 ---
+
 When you're editing _Run/Debug Configurations_, code completion will
 automatically appear to help you, for example, type a package name.
 

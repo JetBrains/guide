@@ -11,7 +11,7 @@ thumbnail: ./thumbnail.png
 This tutorial includes some shortcuts, but many more were demonstrated [in the video](https://youtu.be/F8UTTTDtbH0) and not all of them were mentioned here:
 
 | Name                                                                                                                  | macOS Shortcut | Windows Shortcut   |
-|-----------------------------------------------------------------------------------------------------------------------|----------------|--------------------|
+| --------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ |
 | Add a new dependency from inside the Maven pom.xml file                                                               | **⌘N**         | **Alt+Insert**/    |
 | Load Maven configuration changes                                                                                      | **⇧⌘I**        | **Ctrl+Shift+O**   |
 | Rebuild a project                                                                                                     | **⌘F9**        | **Ctrl+F9**        |
@@ -25,4 +25,5 @@ This tutorial includes some shortcuts, but many more were demonstrated [in the v
 | Run Anything                                                                                                          | **⌃⌃**         | **Ctrl+Ctrl**/     |
 
 ### Related Links
+
 - [(video) Migrating from JUnit 4 to JUnit 5](https://www.youtube.com/watch?v=F8UTTTDtbH0)

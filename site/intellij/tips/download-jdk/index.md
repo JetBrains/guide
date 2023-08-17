@@ -10,9 +10,10 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (video) Creating your first Java application with IntelliJ IDEA
-    href: 'https://www.youtube.com/watch?v=H_XxH66lm3U'
+    href: "https://www.youtube.com/watch?v=H_XxH66lm3U"
   - title: IntelliJ IDEA Help - SDKs
-    href: 'https://www.jetbrains.com/help/idea/sdk.html'
-video: 'https://youtu.be/D-CGuIAANW0'
+    href: "https://www.jetbrains.com/help/idea/sdk.html"
+video: "https://youtu.be/D-CGuIAANW0"
 ---
+
 You can use the New Project Wizard to configure existing JDKs, or download new ones from different vendors.

@@ -10,7 +10,7 @@ topics:
 author: mm
 subtitle: Configuring Celery & Redis with FastAPI.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=RWxnQW1bU3E'
+video: "https://www.youtube.com/watch?v=RWxnQW1bU3E"
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
@@ -28,7 +28,7 @@ We will be using [Amazon SES](https://aws.amazon.com/ses/) also known as **Simpl
 [Redis](https://docs.celeryproject.org/en/stable/) as in-memory datastore.
 
 You can even use FastAPI [Background Tasks](https://fastapi.tiangolo.com/tutorial/background-tasks/), but
-if you are performing some heavy computation, then it's  better to go for Celery.
+if you are performing some heavy computation, then it's better to go for Celery.
 
 For sending email, the background tasks are good enough, but we intended to use Celery.
 
@@ -45,6 +45,7 @@ losing reputation and indeed your service might get stopped.
 Image Credits : Amazon Web Services (AWS)
 
 Follow the below link for more information :
+
 - [https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-email-concepts-process.html](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-email-concepts-process.html)
 - [https://docs.aws.amazon.com/ses/latest/DeveloperGuide/success-metrics.html](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/success-metrics.html)
 
@@ -111,9 +112,9 @@ Make sure to install the python redis package.
 
 ![step12](./steps/step12.png)
 
-Under ```celery.conf.imports``` we need to add our task file
+Under `celery.conf.imports` we need to add our task file
 
-The task file will import a shared task from celery which is going to process the ```send_email``` function.
+The task file will import a shared task from celery which is going to process the `send_email` function.
 
 **main.py**
 
@@ -144,7 +145,7 @@ worker to side-step Python’s [Global Interpreter Lock](https://docs.python.org
 
 ![step15](./steps/step15.png)
 
-You can observe that Celery is now listening to our registered tasks ```send_email```.
+You can observe that Celery is now listening to our registered tasks `send_email`.
 
 I need to complete the implementation for order notification.
 
@@ -256,6 +257,7 @@ def order_notification(recipient):
 The structure of sending email has been taken from the `boto3` official documentation.
 
 References:
+
 - [https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-using-sdk-python.html](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-using-sdk-python.html)
 - [https://boto3.amazonaws.com/v1/documentation/api/latest/guide/ses-template.html](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/ses-template.html)
 
@@ -278,6 +280,7 @@ Before moving ahead, make sure you have [AWS CLI](https://aws.amazon.com/cli/) i
 ![step19](./steps/step19.png)
 
 The installation process is documented in the below link.
+
 - [https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 Once the installation is complete, we need to set up the SMTP Credentials which is required for sending emails.
@@ -310,7 +313,7 @@ I will revoke this access key and create a new one. I hope you are already aware
 video. It will be helpful for you to navigate.
 
 The access keys shown in the image will be different than yours. Don't copy the access key which is
- shown in the image, because later we will delete these keys, and it stays invalid.
+shown in the image, because later we will delete these keys, and it stays invalid.
 
 ![step25](./steps/step25.png)
 

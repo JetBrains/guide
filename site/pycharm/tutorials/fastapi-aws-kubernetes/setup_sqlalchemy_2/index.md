@@ -10,7 +10,7 @@ topics:
 author: mm
 subtitle: Setting up database migrations with Alembic.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=CWm40_n0eu8'
+video: "https://www.youtube.com/watch?v=CWm40_n0eu8"
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. In this tutorial we are going to connect FastAPI with Postgres.
@@ -45,9 +45,9 @@ variables like the username, password etc.
 
 ![step4](./steps/step4.png)
 
-I will create the connection string and name the variable ```SQLALCHEMY_DATABASE_URL```
+I will create the connection string and name the variable `SQLALCHEMY_DATABASE_URL`
 
-Next, I will use the common functions like ```create_engine``` and ```sessionmaker```
+Next, I will use the common functions like `create_engine` and `sessionmaker`
 
 As per the SQLAlchemy documentation, the engine is the starting point for any
 SQLAlchemy application. It's the **“home base”** for the actual database and its db api.
@@ -55,15 +55,15 @@ SQLAlchemy application. It's the **“home base”** for the actual database and
 ![step5](./steps/step5.png)
 
 In order to interact with the database, a session object is required. The purpose
-of ```sessionmaker``` is to provide a factory for session objects with a fixed configuration.
+of `sessionmaker` is to provide a factory for session objects with a fixed configuration.
 
-The ```declarative_base``` characteristic is used to create a base class. This function is
-described in the ```sqlalchemy.Ext.Declarative``` module. Later we are going to inherit it to
+The `declarative_base` characteristic is used to create a base class. This function is
+described in the `sqlalchemy.Ext.Declarative` module. Later we are going to inherit it to
 create database models.
 
 ![step6](./steps/step6.png)
 
-At line 22, We will create an instance of a ```SessionLocal()```, which is actually a database session.
+At line 22, We will create an instance of a `SessionLocal()`, which is actually a database session.
 
 **Source Code** :
 
@@ -103,9 +103,9 @@ We are done with the db config part, next we need to deal with something called 
 
 It basically performs schema migrations whenever we add (or drop) tables or columns from our databases.
 
-According to the FastAPI docs: *A **"migration"** is the set of steps needed
+According to the FastAPI docs: _A **"migration"** is the set of steps needed
 whenever you change the structure of your SQLAlchemy models, add a new attribute, etc. to
-replicate those changes in the database, add a new column, a new table, etc.*
+replicate those changes in the database, add a new column, a new table, etc._
 
 To know more about migrations, check out this [link](https://fastapi.tiangolo.com/tutorial/sql-databases/).
 
@@ -136,18 +136,18 @@ We are going to update the database configuration in the **env.py** file.
 ![step9](./steps/step9.png)
 
 Again, I am going to do the necessary imports. Make sure to point target metadata to base metadata.
-  
+
 ![step10](./steps/step10.png)
 
-I will create a ```get_url``` function, where I will be returning the database connection string.
+I will create a `get_url` function, where I will be returning the database connection string.
 
 ![step11](./steps/step11.png)
 
-Make sure to update line number 52 with ```get_url``` function.
+Make sure to update line number 52 with `get_url` function.
 
 ![step12](./steps/step12.png)
 
-Comment the ```connectable``` variable which falls under ```run_migrations_online``` function.
+Comment the `connectable` variable which falls under `run_migrations_online` function.
 
 ![step13](./steps/step13.png)
 
@@ -176,7 +176,7 @@ fileConfig(config.config_file_name)
 # target_metadata = None
 
 from ecommerce import config as config_env
-from ecommerce.db import Base  
+from ecommerce.db import Base
 
 target_metadata = Base.metadata
 
@@ -254,7 +254,7 @@ I am going to create **models.py** file under **user** and perform necessary imp
 
 ![step15](./steps/step15.png)
 
-I am going to create a class called ```User``` which is going to inherit ```Base```. My table
+I am going to create a class called `User` which is going to inherit `Base`. My table
 name will be represented as **“users”**
 
 I will define the necessary columns like id, name, email, password.
@@ -293,7 +293,7 @@ Next, I will move to the hashing file and do the necessary imports from the pass
 
 ![step18](./steps/step18.png)
 
-I will create two functions ```verify_password``` and ```get_password_hash```. This is
+I will create two functions `verify_password` and `get_password_hash`. This is
 something which I have taken directly from the FastAPI [documentation](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/) -- you can
 also refer to that directly.
 
@@ -301,10 +301,10 @@ also refer to that directly.
 
 We are done with the hashing, next we will import this file in models.
 
-In ```__init__``` constructor, we are going to call the ```get_password_hash``` function which will return the encrypted password
+In `__init__` constructor, we are going to call the `get_password_hash` function which will return the encrypted password
 and this will be stored in the db.
 
-The ```check_password``` function will verify whether the plain-text password and encrypted password hash is valid or not.
+The `check_password` function will verify whether the plain-text password and encrypted password hash is valid or not.
 
 **models.py**
 
@@ -391,6 +391,6 @@ Yes, two new tables have been created. There is a table name called **alembic_ve
 basically keeps a history of all migrations applied. You can compare its similarity with
 the Django migrations table if you have previously worked with Django.
 
-Also, the user table has been migrated.  
+Also, the user table has been migrated.
 
-In the next tutorial, we will be focusing on writing REST APIs and performing CRUD operations.  
+In the next tutorial, we will be focusing on writing REST APIs and performing CRUD operations.

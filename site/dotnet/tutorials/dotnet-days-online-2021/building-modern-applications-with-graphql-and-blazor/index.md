@@ -11,7 +11,7 @@ topics:
 author: maartenba
 subtitle: Michael Staib
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/P7y-OxeSkZ8'
+video: "https://youtu.be/P7y-OxeSkZ8"
 ---
 
 Blazor and GraphQL combined will revolutionize how we build rich SPA applications with pure .NET.
@@ -25,8 +25,8 @@ After having a fundamental understanding of how GraphQL improves our data fetchi
 
 ### Resources
 
-* [Demo code](https://github.com/michaelstaib/PublicSpeaking/tree/master/jetbrains_net_days_2021)
-* [Slides used during presentation](https://slides.com/michaelingmarstaib/developer-week-building-modern-applications-with-graphql-and-blazor)
+- [Demo code](https://github.com/michaelstaib/PublicSpeaking/tree/master/jetbrains_net_days_2021)
+- [Slides used during presentation](https://slides.com/michaelingmarstaib/developer-week-building-modern-applications-with-graphql-and-blazor)
 
 ### About the Presenter
 
@@ -36,5 +36,5 @@ Michael is a Microsoft MVP and the author of the Hot Chocolate project (<https:/
 
 Apart from his work in the open-source community, Michael works as a consultant to help companies to move to GraphQL. You can read about the Hot Chocolate project on his blog <https://chillicream.com/blog/>.
 
-* Twitter: <https://twitter.com/michael_staib>
-* Blog: <https://chillicream.com/blog/>
+- Twitter: <https://twitter.com/michael_staib>
+- Blog: <https://chillicream.com/blog/>

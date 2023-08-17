@@ -15,4 +15,3 @@ tutorialItems:
   - ./resolving-merges/
   - ./summary/
 ---
-

@@ -9,12 +9,13 @@ subtitle: >-
   Install AWS SAM (Serverless Application Model), AWS CLI & finally PyCharm
   Plugin AWS Toolkit.
 thumbnail: ../thumbnail.png
-video: 'https://youtu.be/o4LdbOjarC0'
+video: "https://youtu.be/o4LdbOjarC0"
 ---
 
 In this tutorial step, let's install all the required dependencies.
 
 # AWS CLI
+
 Let's start first by downloading the AWS Command-Line Interface from `aws.amazon.com/cli`.
 As I am using a Windows machine, I will download the 64-bit installer.
 You can follow the same website if you are using Mac or Linux.
@@ -22,6 +23,7 @@ You can follow the same website if you are using Mac or Linux.
 ![AWS CLI](aws_cli.png)
 
 Before moving forward with AWS SAM, make sure you have installed following dependencies.
+
 - AWS CLI
 - [Docker](https://www.docker.com/)
 

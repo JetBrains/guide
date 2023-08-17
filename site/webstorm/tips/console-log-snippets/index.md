@@ -9,7 +9,7 @@ topics:
 author: er
 seealso:
   - title: Postfix completion in WebStorm
-    href: 'https://www.jetbrains.com/help/webstorm/settings-postfix-completion.html'
+    href: "https://www.jetbrains.com/help/webstorm/settings-postfix-completion.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -17,6 +17,7 @@ animatedGif:
   width: 600
   height: 300
 ---
+
 Need to add `console.log()`?
 Type `log` and press _⇥ / Tab_.
 Or first add the value, then type `.log` and press _⇥ / Tab_.

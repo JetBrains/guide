@@ -2,7 +2,7 @@
 title: Unity
 subtitle: Create games and more across devices and platforms.
 logo: ./unity.png
-website: 'https://www.unity.com/'
+website: "https://www.unity.com/"
 topicType: technology
 ---
 

@@ -19,4 +19,3 @@ tutorialItems:
   - ./remediate-vulnerabilities/
   - ./summary/
 ---
-

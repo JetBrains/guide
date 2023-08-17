@@ -11,7 +11,7 @@ topics:
 author: maartenba
 subtitle: Layla Porter
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/Jz-lg-gwc-0'
+video: "https://youtu.be/Jz-lg-gwc-0"
 ---
 
 Getting started with Test-Driven Development (#TDD) can be very challenging. It requires a different mindset and approach to writing and developing code. However, once you are in that mindset, it is very difficult not to write tests first.
