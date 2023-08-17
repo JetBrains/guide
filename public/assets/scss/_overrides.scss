@@ -47,6 +47,7 @@ a.navbar-item:focus-within {
 }
 .navbar-secondary {
   border-bottom: 1px solid $grey-light;
+  z-index: 0;
 }
 .navbar-secondary .navbar-burger a:hover,
 .navbar-secondary .navbar-end a:hover {
