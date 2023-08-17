@@ -179,8 +179,7 @@ export const migrateFrontMatter = () => {
 	const markdowns = pipe(
 		migrateLeadInAttribute,
 		removeHasBodyAttribute,
-		migrateVideoFrontmatter,
-		removeBlankLinesAtDocumentEnd
+		migrateVideoFrontmatter
 	)(allMarkdownFiles);
 
 	writeMarkdownDocuments(markdowns);
@@ -259,20 +258,6 @@ export function migrateLeadInAttribute(documents: Markdown[]): Markdown[] {
 		return {
 			...document,
 			content: !hasContent ? oldLeadin : document.content,
-			isChanged: true,
-		};
-	});
-}
-
-export function removeBlankLinesAtDocumentEnd(
-	documents: Markdown[]
-): Markdown[] {
-	const pattern = /\n+$/; // Matches one or more newline characters at the end of the string
-	const replacement = "\n"; // Replace with a single newline character
-	return documents.map((document) => {
-		return {
-			...document,
-			content: document.content.replace(pattern, replacement),
 			isChanged: true,
 		};
 	});
