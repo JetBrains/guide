@@ -51,13 +51,13 @@ The following code from the `Message` component (in `Message.razor`) renders the
 
 ```cs
 <div class="row">
-	<div class="col">
-    	<div class="alert">@MessageText</div>
-	</div>
+ <div class="col">
+     <div class="alert">@MessageText</div>
+ </div>
 </div>
 
 @code {
-	[Parameter] public string MessageText { get; set; }
+ [Parameter] public string MessageText { get; set; }
 }
 ```
 

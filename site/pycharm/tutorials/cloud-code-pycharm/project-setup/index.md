@@ -16,9 +16,9 @@ video:
   end: 776
 ---
 
-# Project Setup
+## Project Setup
 
-## Creating a new project
+### Creating a new project
 
 To create a new project, first click on **New Project**.
 

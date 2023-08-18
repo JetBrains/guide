@@ -14,7 +14,7 @@ topics:
 
 _This tutorial was created by an external contributor, <a href="https://github.com/xNok" target="_blank">Alexandre Couëdelo</a>_.
 
-# Go REST Guide: Gin Framework
+## Go REST Guide: Gin Framework
 
 This is the third article in a three-part series dedicated to different methods of building a Golang REST API. Part one started with the "default" solution using the standard library, and then part two added a router component called [`gorilla/mux`](https://github.com/gorilla/mux) to simplify some repetitive tasks. This final installment looks at how to build a REST API using a web framework called Gin.
 
@@ -116,9 +116,9 @@ As in the first two tutorials, you're going to build a small REST API to store y
 
 ## Defining a Recipes Handler
 
-    Similar to the "hello world" example, you need to define the handler functions and then associate each path from the table with the right handler.
+Similar to the "hello world" example, you need to define the handler functions and then associate each path from the table with the right handler.
 
-    All the handler functions will interact with data storage to perform the basic CRUD operations (create, read, update, and delete). To access the store from each handler function, you need to use a struct with the "store" as an attribute and define each handler as a method of that struct.
+All the handler functions will interact with data storage to perform the basic CRUD operations (create, read, update, and delete). To access the store from each handler function, you need to use a struct with the "store" as an attribute and define each handler as a method of that struct.
 
 First, define the `RecipesHandler` struct with an attribute `store` of type `recipeStore`:
 

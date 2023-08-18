@@ -13,7 +13,7 @@ thumbnail: thumbnail.png
 video: "https://www.youtube.com/watch?v=cqIz9aR8bMk"
 ---
 
-# Remote development
+## Remote development
 
 Remote development is an approach that allows developers to work from their home offices or anywhere in the world. This has been a feature of the industry for a long time already, but it has really gained traction over the last few years. With this approach, developers don't work locally on their laptop or desktop, but rather they are connected to another environment. This can be in the employer’s data center, a private cloud, or a CDE (cloud development environment).
 

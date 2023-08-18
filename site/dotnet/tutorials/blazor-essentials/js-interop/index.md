@@ -60,8 +60,8 @@ The body of the `Pages\_Host.cshtml` file should look similar to the following, 
 ```cs
 <body>
     <!-- body -->
-	<script src="_framework/blazor.webassembly.js"></script>
-	<script src="js/scripts.js"></script>
+ <script src="_framework/blazor.webassembly.js"></script>
+ <script src="js/scripts.js"></script>
 </body>
 ```
 

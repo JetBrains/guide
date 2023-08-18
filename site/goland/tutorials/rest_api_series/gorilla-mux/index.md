@@ -14,7 +14,7 @@ topics:
 
 _This tutorial was created by an external contributor, <a href="https://github.com/xNok" target="_blank">Alexandre Couëdelo</a>_.
 
-# Go REST Guide. gorilla/mux Router
+## Go REST Guide. gorilla/mux Router
 
 This is the second article in a three-part series dedicated to different methods of building a Golang REST API. Part one focused on creating a simple REST API using the `net/http` package from the standard library. This second installment demonstrates how to use a router for improved handling of requests when building REST APIs. The router matches URLs to handler functions and calls them accordingly, which helps reduce the code you need to write compared to using the standard library.
 

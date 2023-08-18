@@ -16,9 +16,9 @@ video:
   end: 412
 ---
 
-# Prerequisites
+## Prerequisites
 
-## Installation
+### Installation
 
 In this tutorial, we are going to install the Google Cloud SDK and the Google Cloud Code plugin.
 
@@ -61,7 +61,7 @@ Make sure to **Enable Kubernetes**. The Kubernetes server runs locally within yo
 
 ![docker_desktop2](./images/docker_desktop2.png)
 
-## Configuring the Google Cloud SDK with Google Project
+### Configuring the Google Cloud SDK with Google Project
 
 Now that we have the Google Cloud SDK installed, we need to configure it to talk to a specific project.
 
@@ -124,7 +124,7 @@ Now, let’s move to PyCharm and install the Google Cloud Code plugin.
 Make sure you’ve installed the latest version of PyCharm on your machine. Give a try and
 [download PyCharm](https://www.jetbrains.com/pycharm/download/) right now. For this tutorial, we’re using PyCharm 2023.1.2.
 
-## The Google Cloud Code plugin
+### The Google Cloud Code plugin
 
 Once you open PyCharm, click on the **Plugins** section.
 Search for “Google Cloud Code” and click **Install**.
