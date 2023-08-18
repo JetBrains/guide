@@ -77,12 +77,12 @@ Define two constants, then compare them with a simple Jest assertion:
 
 ```typescript {5,6,7}
 test("renders learn react link", () => {
-	const { getByText } = render(<App />);
-	const linkElement = getByText(/hello react/i);
-	expect(linkElement).toBeInTheDocument();
-	const actual = 1;
-	const expected = 2;
-	expect(actual).toEqual(expected);
+ const { getByText } = render(<App />);
+ const linkElement = getByText(/hello react/i);
+ expect(linkElement).toBeInTheDocument();
+ const actual = 1;
+ const expected = 2;
+ expect(actual).toEqual(expected);
 });
 ```
 
@@ -141,9 +141,9 @@ import { render } from "@testing-library/react";
 import App from "./App";
 
 test("renders learn react link", () => {
-	const { getByText } = render(<App />);
-	const linkElement = getByText(/hello react/i);
-	expect(linkElement).toBeInTheDocument();
+ const { getByText } = render(<App />);
+ const linkElement = getByText(/hello react/i);
+ expect(linkElement).toBeInTheDocument();
 });
 ```
 

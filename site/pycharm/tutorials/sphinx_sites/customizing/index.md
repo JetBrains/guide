@@ -230,7 +230,7 @@ Start by adding a file at `_static/custom.css`:
 
 ```css
 body {
-	font-size: xx-large;
+ font-size: xx-large;
 }
 ```
 

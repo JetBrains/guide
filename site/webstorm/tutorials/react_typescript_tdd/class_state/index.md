@@ -46,9 +46,9 @@ Here's a `Counter.test.tsx` test to show that the counter starts at zero, which 
 
 ```typescript
 test("should start at zero", () => {
-	const { getByTitle } = render(<Counter />);
-	const counter = getByTitle("Current Count");
-	expect(counter).toHaveTextContent("0");
+ const { getByTitle } = render(<Counter />);
+ const counter = getByTitle("Current Count");
+ expect(counter).toHaveTextContent("0");
 });
 ```
 
@@ -65,21 +65,21 @@ Then last, change the `<span>` to use the value from the state, instead of a har
 
 ```typescript
 export class Counter extends Component<CounterProps, CounterState> {
-	state: CounterState = {
-		count: 0,
-	};
+ state: CounterState = {
+  count: 0,
+ };
 
-	render() {
-		const { label = "Count" } = this.props;
-		return (
-			<div>
-				<span title="Count Label">{label}</span>
-				<span id="counter" title="Current Count">
-					{this.state.count}
-				</span>
-			</div>
-		);
-	}
+ render() {
+  const { label = "Count" } = this.props;
+  return (
+   <div>
+    <span title="Count Label">{label}</span>
+    <span id="counter" title="Current Count">
+     {this.state.count}
+    </span>
+   </div>
+  );
+ }
 }
 ```
 
@@ -118,19 +118,19 @@ To use this `initialState` in our component, replace the previous class property
 
 ```typescript {2}
 export class Counter extends Component<CounterProps, CounterState> {
-	readonly state: CounterState = initialState;
+ readonly state: CounterState = initialState;
 
-	render() {
-		const { label = "Count" } = this.props;
-		return (
-			<div>
-				<span title="Count Label">{label}</span>
-				<span id="counter" title="Current Count">
-					{this.state.count}
-				</span>
-			</div>
-		);
-	}
+ render() {
+  const { label = "Count" } = this.props;
+  return (
+   <div>
+    <span title="Count Label">{label}</span>
+    <span id="counter" title="Current Count">
+     {this.state.count}
+    </span>
+   </div>
+  );
+ }
 }
 ```
 
@@ -150,9 +150,9 @@ First, a failing test in `Counter.test.tsx`:
 
 ```typescript
 test("should start at another value", () => {
-	const { getByTitle } = render(<Counter start={10} />);
-	const counter = getByTitle("Current Count");
-	expect(counter).toHaveTextContent("10");
+ const { getByTitle } = render(<Counter start={10} />);
+ const counter = getByTitle("Current Count");
+ expect(counter).toHaveTextContent("10");
 });
 ```
 
@@ -165,8 +165,8 @@ We'll fix the type definition in `Counter.tsx` to allow this prop -- a number --
 
 ```typescript {3}
 export type CounterProps = {
-	label?: string;
-	start?: number;
+ label?: string;
+ start?: number;
 };
 ```
 
@@ -195,13 +195,13 @@ Let's open `App.test.tsx` and add a test of the count value:
 
 ```typescript {7,8}
 test("renders hello react", () => {
-	const { getByTitle, getByText } = render(<App />);
-	const linkElement = getByText(/hello react/i);
-	expect(linkElement).toBeInTheDocument();
-	const label = getByTitle("Count Label");
-	expect(label).toBeInTheDocument();
-	const counter = getByTitle("Current Count");
-	expect(counter).toHaveTextContent("0");
+ const { getByTitle, getByText } = render(<App />);
+ const linkElement = getByText(/hello react/i);
+ expect(linkElement).toBeInTheDocument();
+ const label = getByTitle("Count Label");
+ expect(label).toBeInTheDocument();
+ const counter = getByTitle("Current Count");
+ expect(counter).toHaveTextContent("0");
 });
 ```
 

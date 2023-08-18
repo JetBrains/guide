@@ -61,31 +61,31 @@ When the user submits the form, we'll receive an HTML response powered by the fo
 ArgumentNullException.ThrowIfNull(Model); }
 
 <div
-	id="modal-backdrop"
-	class="modal-backdrop fade"
-	style="display:block;"
+ id="modal-backdrop"
+ class="modal-backdrop fade"
+ style="display:block;"
 ></div>
 <div id="modal" class="modal fade" tabindex="-1" style="display:block;">
-	<div class="modal-dialog modal-dialog-centered">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title">Hello From The Server</h5>
-			</div>
-			<div class="modal-body">
-				<p>Thanks for subscribing to our AMAZING NEWSLETTER!</p>
-				<hr />
-				<p>
-					Expect amazing things to appear in your inbox at
-					<code>@Model.Email</code>.
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" onclick="closeModal()">
-					Close
-				</button>
-			</div>
-		</div>
-	</div>
+ <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+   <div class="modal-header">
+    <h5 class="modal-title">Hello From The Server</h5>
+   </div>
+   <div class="modal-body">
+    <p>Thanks for subscribing to our AMAZING NEWSLETTER!</p>
+    <hr />
+    <p>
+     Expect amazing things to appear in your inbox at
+     <code>@Model.Email</code>.
+    </p>
+   </div>
+   <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" onclick="closeModal()">
+     Close
+    </button>
+   </div>
+  </div>
+ </div>
 </div>
 ```
 
@@ -94,13 +94,13 @@ Bootstrap modals are invisible by default, only being viewable when decorated wi
 ```javascript
 let newsletter = document.getElementById("newsletter");
 newsletter.addEventListener("htmx:afterOnLoad", () => {
-	const backdrop = document.getElementById("modal-backdrop");
-	const modal = document.getElementById("modal");
+ const backdrop = document.getElementById("modal-backdrop");
+ const modal = document.getElementById("modal");
 
-	setTimeout(() => {
-		modal.classList.toggle("show");
-		backdrop.classList.toggle("show");
-	}, 10);
+ setTimeout(() => {
+  modal.classList.toggle("show");
+  backdrop.classList.toggle("show");
+ }, 10);
 });
 ```
 

@@ -32,9 +32,9 @@ Let's start by getting the test code reloaded into our brain by updating the tes
 
 ```typescript {1}
 test("renders hello react", () => {
-	const { getByText } = render(<App />);
-	const linkElement = getByText(/hello react/i);
-	expect(linkElement).toBeInTheDocument();
+ const { getByText } = render(<App />);
+ const linkElement = getByText(/hello react/i);
+ expect(linkElement).toBeInTheDocument();
 });
 ```
 
@@ -49,7 +49,7 @@ First, add a function in `App.tsx`, above the `App` function:
 
 ```javascript
 export function label() {
-	return "Hello React";
+ return "Hello React";
 }
 ```
 
@@ -66,8 +66,8 @@ Let's do that now by adding a second test in `App.test.tsx`:
 
 ```typescript
 test("generates a label", () => {
-	const result = label();
-	expect(result).toEqual("Hello React");
+ const result = label();
+ expect(result).toEqual("Hello React");
 });
 ```
 
@@ -85,8 +85,8 @@ The `generates a label` test needs its lines changed to:
 
 ```typescript {2,3}
 test("generates a label", () => {
-	const result = label("React");
-	expect(result).toEqual("Hello REACT");
+ const result = label("React");
+ expect(result).toEqual("Hello REACT");
 });
 ```
 
@@ -101,7 +101,7 @@ Now it's just a matter of changing the function to accept an argument, then uppe
 
 ```typescript {1,2}
 export function label(name) {
-	return `Hello ${name.toUpperCase()}`;
+ return `Hello ${name.toUpperCase()}`;
 }
 ```
 
@@ -112,7 +112,7 @@ Let's fix that:
 
 ```typescript {1}
 export function label(name: string) {
-	return `Hello ${name.toUpperCase()}`;
+ return `Hello ${name.toUpperCase()}`;
 }
 ```
 

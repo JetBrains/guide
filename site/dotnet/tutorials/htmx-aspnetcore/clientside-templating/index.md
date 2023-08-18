@@ -34,28 +34,28 @@ We then need to define our HTML element with three essential parts:
 
 ```html
 <div hx-ext="client-side-templates" class="card m-5 p-5 ms-0 text-center">
-	<div id="target">
-		<h2>Change Me!</h2>
-	</div>
+ <div id="target">
+  <h2>Change Me!</h2>
+ </div>
 
-	<!-- add htmx attributes to button -->
-	<!-- will get this page -->
-	<button
-		class="btn btn-primary btn-lg px-4"
-		hx-get
-		hx-page="13_ClientsideTemplates"
-		hx-page-handler="JSON"
-		mustache-template="foo"
-		hx-target="#target"
-	>
-		Click Me
-	</button>
+ <!-- add htmx attributes to button -->
+ <!-- will get this page -->
+ <button
+  class="btn btn-primary btn-lg px-4"
+  hx-get
+  hx-page="13_ClientsideTemplates"
+  hx-page-handler="JSON"
+  mustache-template="foo"
+  hx-target="#target"
+ >
+  Click Me
+ </button>
 
-	<template id="foo">
-		<p class="fs-1">
-			The Id is #{{id}} with the author, {{author}}, writing "{{title}}".
-		</p>
-	</template>
+ <template id="foo">
+  <p class="fs-1">
+   The Id is #{{id}} with the author, {{author}}, writing "{{title}}".
+  </p>
+ </template>
 </div>
 ```
 

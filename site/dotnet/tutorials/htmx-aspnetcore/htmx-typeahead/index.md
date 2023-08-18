@@ -66,14 +66,14 @@ We mentioned previously that partials are an important tool when building HTMX-p
 @model Exercises.Pages.Search @{ ArgumentNullException.ThrowIfNull(Model); } @if
 (Model.Results is {} games) { @foreach (var game in games) {
 <tr>
-	<td>@game.Year</td>
-	<td>@game.Publisher</td>
-	<td>@game.Console</td>
-	<td>@game.Name</td>
+ <td>@game.Year</td>
+ <td>@game.Publisher</td>
+ <td>@game.Console</td>
+ <td>@game.Name</td>
 </tr>
 } } else {
 <tr>
-	<td colspan="4">No Results for "@Model.Query"</td>
+ <td colspan="4">No Results for "@Model.Query"</td>
 </tr>
 }
 ```

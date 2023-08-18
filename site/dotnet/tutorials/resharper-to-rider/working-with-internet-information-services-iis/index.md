@@ -31,32 +31,32 @@ Visual Studio will read the `launchSettings.json` found under the `Properties` f
 
 ```json
 {
-	"iisSettings": {
-		"windowsAuthentication": false,
-		"anonymousAuthentication": true,
-		"iisExpress": {
-			"applicationUrl": "http://localhost:12613",
-			"sslPort": 44317
-		}
-	},
-	"profiles": {
-		"IIS Express": {
-			"commandName": "IISExpress",
-			"launchBrowser": true,
-			"environmentVariables": {
-				"ASPNETCORE_ENVIRONMENT": "Development"
-			}
-		},
-		"WebRider": {
-			"commandName": "Project",
-			"dotnetRunMessages": "true",
-			"launchBrowser": true,
-			"applicationUrl": "https://localhost:5001;http://localhost:5000",
-			"environmentVariables": {
-				"ASPNETCORE_ENVIRONMENT": "Development"
-			}
-		}
-	}
+ "iisSettings": {
+  "windowsAuthentication": false,
+  "anonymousAuthentication": true,
+  "iisExpress": {
+   "applicationUrl": "http://localhost:12613",
+   "sslPort": 44317
+  }
+ },
+ "profiles": {
+  "IIS Express": {
+   "commandName": "IISExpress",
+   "launchBrowser": true,
+   "environmentVariables": {
+    "ASPNETCORE_ENVIRONMENT": "Development"
+   }
+  },
+  "WebRider": {
+   "commandName": "Project",
+   "dotnetRunMessages": "true",
+   "launchBrowser": true,
+   "applicationUrl": "https://localhost:5001;http://localhost:5000",
+   "environmentVariables": {
+    "ASPNETCORE_ENVIRONMENT": "Development"
+   }
+  }
+ }
 }
 ```
 

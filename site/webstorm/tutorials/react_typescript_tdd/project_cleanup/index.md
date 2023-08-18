@@ -76,11 +76,11 @@ First, change the `App` function to return a lot less markup:
 
 ```javascript
 function App() {
-	return (
-		<div>
-			<h1>Hello React</h1>
-		</div>
-	);
+ return (
+  <div>
+   <h1>Hello React</h1>
+  </div>
+ );
 }
 ```
 
