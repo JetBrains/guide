@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: jb-guide-ingress
+  namespace: jb-guide-prod
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-labs-jb-gg-dns
+spec:
+  ingressClassName: nginx
+  tls:
+  - secretName: jb-guide-labs-jb-gg-tls
+    hosts:
+    - jb-guide.labs.jb.gg
+  rules:
+  - host: jb-guide.labs.jb.gg
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: jetbrains-guide-service
+            port:
+              number: 8080
