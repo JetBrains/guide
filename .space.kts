@@ -14,7 +14,7 @@ job("Build Guide (Docker)") {
         }
     }
 
-    buildSiteDockerImage("Dockerfile-FullBuild")
+    buildSiteDockerImage("Dockerfile-FullBuild", copySiteFromShare: false)
 }
 
 job("Run tests") {
@@ -123,7 +123,7 @@ fun Job.buildAndDeployStaging() {
     }
     parallel {
         deploySite()
-        buildSiteDockerImage("Dockerfile-FromBuildOutput")
+        buildSiteDockerImage("Dockerfile-FromBuildOutput", copySiteFromShare: true)
     }
 }
 
@@ -229,14 +229,16 @@ fun StepsScope.deploySite() {
     }
 }
 
-fun StepsScope.buildSiteDockerImage(dockerfile: String) {
+fun StepsScope.buildSiteDockerImage(dockerfile: String, copySiteFromShare: Boolean) {
     host(displayName = "Build application container") {
-        shellScript {
-            content = """
-                 ## Copy site from share
-                 mkdir -p _site
-                 cp -r ${'$'}JB_SPACE_FILE_SHARE_PATH/_site/ ./
-            """
+        if (copySiteFromShare) {
+          	shellScript {
+                content = """
+                     ## Copy site from share
+                     mkdir -p _site
+                     cp -r ${'$'}JB_SPACE_FILE_SHARE_PATH/_site/ ./
+                """
+        	}
         }
 
         dockerBuildPush {
