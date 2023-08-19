@@ -3,7 +3,7 @@ FROM node:20.5-alpine AS builder
 WORKDIR /app
 COPY package.json package-lock.json ./
 
-RUN npm install
+RUN npm install --no-cache
 COPY . .
 RUN npm run build
 
@@ -19,7 +19,6 @@ RUN apk --no-cache add shadow && usermod -u 10014 nginx && \
 
 RUN apk del shadow
 
-COPY --chown=nginx:nginx custom-nginx.conf /etc/nginx/conf.d/default.conf
 
 RUN chown -R nginx:nginx /usr/share/nginx/html && \
         chown -R nginx:nginx /var/cache/nginx && \
