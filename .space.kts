@@ -14,7 +14,7 @@ job("Build Guide (Docker)") {
         }
     }
 
-    buildSiteDockerImage("Dockerfile-FullBuild", copySiteFromShare: false)
+    buildSiteDockerImage("Dockerfile-FullBuild", copySiteFromShare = false, pushToRegistry = true)
 }
 
 job("Run tests") {
@@ -123,7 +123,7 @@ fun Job.buildAndDeployStaging() {
     }
     parallel {
         deploySite()
-        buildSiteDockerImage("Dockerfile-FromBuildOutput", copySiteFromShare: true)
+        buildSiteDockerImage("Dockerfile-FromBuildOutput", copySiteFromShare = true, pushToRegistry = false)
     }
 }
 
@@ -229,7 +229,7 @@ fun StepsScope.deploySite() {
     }
 }
 
-fun StepsScope.buildSiteDockerImage(dockerfile: String, copySiteFromShare: Boolean) {
+fun StepsScope.buildSiteDockerImage(dockerfile: String, copySiteFromShare: Boolean, pushToRegistry: Boolean) {
     host(displayName = "Build application container") {
         if (copySiteFromShare) {
           	shellScript {
@@ -242,7 +242,7 @@ fun StepsScope.buildSiteDockerImage(dockerfile: String, copySiteFromShare: Boole
         }
 
         dockerBuildPush {
-            push = true
+            push = pushToRegistry
             context = "."
             file = dockerfile
             labels["vendor"] = "JetBrains"
