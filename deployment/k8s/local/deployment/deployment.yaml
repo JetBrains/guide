@@ -25,6 +25,9 @@ spec:
         - name: redirect
           configMap:
             name: nginx-conf-redirect-cm
+        - name: nginx-main
+          configMap:
+            name: nginx-conf-main-cm
       containers:
       - name: jetbrains-guide
         image: guide:latest
@@ -65,4 +68,9 @@ spec:
           - mountPath: /etc/nginx/extra/redirect.conf
             subPath: redirect.conf
             name: redirect
+            readOnly: true
+
+          - mountPath: /etc/nginx/nginx.conf
+            subPath: nginx.conf
+            name: nginx-main
             readOnly: true

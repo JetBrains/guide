@@ -15,8 +15,12 @@ data:
         location / {
             root   /usr/share/nginx/html;
             index  index.html index.htm;
+            expires 30d;
+            add_header Cache-Control "public, no-transform";
+            add_header X-Frame-Options "SAMEORIGIN" always;
+            add_header X-Content-Type-Options "nosniff" always;
         }
-    
+      
         absolute_redirect off;
    
         include /etc/nginx/extra/redirect.conf;
