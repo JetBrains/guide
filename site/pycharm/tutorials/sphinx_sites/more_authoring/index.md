@@ -161,7 +161,7 @@ Add that, then use glob patterns in one or more lines of the content.
 ````
 
 One last note: perhaps you dislike this option-style syntax and want a YAML, frontmatter-style approach to directives.
-MyST [supports YAML for directive parsing](https://myst-parser.readthedocs.io/en/latest/api/directive.html?highlight=yaml#module-myst_parser.parse_directives).
+MyST [supports YAML for directive parsing](https://myst-parser.readthedocs.io/en/latest/syntax/roles-and-directives.html).
 
 ````
 ```{toctree}

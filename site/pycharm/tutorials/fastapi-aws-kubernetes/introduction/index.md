@@ -102,7 +102,7 @@ setting a three-node cluster along-with that, we will be also setting up [RDS](h
 
 ![helm](./helm.png)
 
-Image Credits: [CNCF](https://cncf-branding.netlify.app/projects/helm/)
+Image Credits: [CNCF](https://helm.sh/)
 
 Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application.
 Helm is a graduated project in the [CNCF (Cloud Native Computing Foundation)](https://www.cncf.io/) and is maintained by the [Helm community](https://github.com/helm/community).

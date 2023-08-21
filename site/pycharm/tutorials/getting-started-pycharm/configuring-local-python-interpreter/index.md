@@ -31,7 +31,7 @@ The first thing you will need to define is what kind of Python packaging manager
 
 This new interpreter will be based on an existing one. In my case, this is Python 3.10. You can also choose another base interpreter from the list, or click the three dots to find another Python executable in your file system.
 
-**Secondly** You can also create a virtualenv using Pipenv. Getting Pipenv [installed on your system is an extra step](https://pipenv.pypa.io/en/latest/install/). Once setup and visible to PyCharm, you can select it from the drop-down.
+**Secondly** You can also create a virtualenv using Pipenv. Getting Pipenv [installed on your system is an extra step](https://pipenv.pypa.io/en/latest/#install-pipenv-today). Once setup and visible to PyCharm, you can select it from the drop-down.
 
 **Finally**, you can also create a virtual environment using Conda. Make sure that Anaconda or Miniconda is downloaded and installed on your computer then pick Conda from the dropdown, check if the location is correct. Select the Python version, then ensure that the Conda executable path is correct. The environment will be automatically created within your Anaconda installation.
 

@@ -24,7 +24,7 @@ Together we have a look at the core problems that we are facing with the traditi
 
 After we have a better understanding of GraphQL, we explore how we can build a GraphQL API with Hot Chocolate on ASP.Net Core. We look at things like Prisma filters and how we can get your existing infrastructure under this new service layer. We merge data from different sources like you did not think was possible by using the power of the GraphQL resolver concept.
 
-HotChocolate and docs: <https://hotchocolate.io>
+HotChocolate and docs: <https://chillicream.com/docs/hotchocolate/>
 
 ### About the Presenter
 

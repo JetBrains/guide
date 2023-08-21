@@ -135,7 +135,7 @@ html_theme = "sphinx_book_theme"
 
 When you restart, you'll notice that Sphinx complained.
 It seems this theme doesn't support the same default `html_sidebar` values.
-Per the [Sphinx Book Theme](https://sphinx-book-theme.readthedocs.io/en/latest/configure.html#control-the-left-sidebar-items) docs on sidebars, we'll use their bundled sidebars:
+Per the [Sphinx Book Theme](https://sphinx-book-theme.readthedocs.io/en/stable/sections/sidebar-primary.html#control-the-left-sidebar-items) docs on sidebars, we'll use their bundled sidebars:
 
 ```python
 html_sidebars = {
@@ -147,7 +147,7 @@ We now see a new layout and style:
 
 ![Sphinx Book Theme](sphinx_book_theme.png)
 
-This theme has many [configuration options](https://sphinx-book-theme.readthedocs.io/en/latest/configure.html).
+This theme has many [configuration options](https://sphinx-book-theme.readthedocs.io/en/stable/components/index.html).
 This is true for many of the [themes available for Sphinx](https://sphinx-themes.org).
 
 There are many ways to [customize and even write your own themes](https://www.sphinx-doc.org/en/master/development/theming.html).
@@ -230,7 +230,7 @@ Start by adding a file at `_static/custom.css`:
 
 ```css
 body {
- font-size: xx-large;
+	font-size: xx-large;
 }
 ```
 
@@ -291,7 +291,7 @@ We'll now see that box appear, above the (now-pink) searchbox:
 We can also override an existing sidebar simply by putting a file with the same name, in our site's `_templates` directory.
 
 What's available inside the template?
-The Sphinx docs [cover this](https://www.sphinx-doc.org/en/master/templating.html) but let's do a quick example in `luv_sphinx.html`:
+The Sphinx docs [cover this](https://www.sphinx-doc.org/en/master/development/templating.html) but let's do a quick example in `luv_sphinx.html`:
 
 ```
 <p>We <em>love</em> Sphinx for {{project}}!</p>

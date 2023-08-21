@@ -115,8 +115,8 @@ As you can see, the PDF has text, images, links, and a table of contents:
 ![PDF](rinohtype.png)
 
 PDF is great, but it isn't the only target.
-Sphinx has [other builders](https://www.sphinx-doc.org/en/3.x/usage/builders/index.html) as well.
-You can even [make your own builder](https://www.sphinx-doc.org/en/3.x/extdev/builderapi.html#sphinx.builders.Builder).
+Sphinx has [other builders](https://www.sphinx-doc.org/en/master/usage/builders/index.html) as well.
+You can even [make your own builder](https://www.sphinx-doc.org/en/master/extdev/builderapi.html#sphinx.builders.Builder).
 
 ## Blogging
 
@@ -125,7 +125,7 @@ These posts are then processed into an XML file which is sent to special RSS/Ato
 
 For Sphinx, the [ABlog package](https://ablog.readthedocs.io/) provides such features.
 ABlog has been around a while and thus has quite a number of features, such as archive pages, custom sidebars, and commenting integration.
-In fact, it recently started supporting -- [MyST!](https://ablog.readthedocs.io/manual/markdown/)
+In fact, it recently started supporting -- [MyST!](https://ablog.readthedocs.io/en/stable/manual/markdown.html)
 
 ## Conclusion
 

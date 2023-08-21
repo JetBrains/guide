@@ -50,4 +50,4 @@ map <leader>v :action $Paste<CR>
 map <leader>x :action $Cut<CR>
 ```
 
-To see an index of supported commands in the IdeaVim Plug-in, click [here](https://github.com/JetBrains/ideavim/blob/master/src/com/maddyhome/idea/vim/package-info.java)
+To see an index of supported commands in the IdeaVim Plug-in, click [here](https://github.com/JetBrains/ideavim/wiki/set-commands)

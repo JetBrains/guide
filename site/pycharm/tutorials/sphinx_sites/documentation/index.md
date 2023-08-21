@@ -143,7 +143,7 @@ Want to highlight two lines?
 ```
 ````
 
-You can also use MyST's [YAML syntax for directive options](https://myst-parser.readthedocs.io/en/latest/api/directive.html?highlight=yaml#module-myst_parser.parse_directives) instead of the RST-style of key-value pairs:
+You can also use MyST's [YAML syntax for directive options](https://myst-parser.readthedocs.io/en/latest/syntax/roles-and-directives.html) instead of the RST-style of key-value pairs:
 
 ````
 ```{literalinclude} my_demo.py

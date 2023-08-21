@@ -13,7 +13,7 @@ thumbnail: ../python-logo.png
 - Add to requirements.txt
 - pip install etc.
 - Add to extensions
-- <https://ablog.readthedocs.io/manual/markdown/>
+- <https://ablog.readthedocs.io/en/stable/manual/markdown.html>
 
 ## Adding a Menu Button
 
