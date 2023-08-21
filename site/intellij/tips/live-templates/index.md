@@ -38,6 +38,6 @@ In the video, we saw:
 We also saw a custom live template. We walked through how to create this live template in
 the [JUnit 5 Tutorial](../../tutorials/writing-junit5-tests/live-templates-tip/).
 
-You can see a list of all available live templates in \* \*[Preferences/Settings | Editor | Live Templates](https://www.jetbrains.com/help/idea/settings-live-templates.html)\*\*.
+You can see a list of all available live templates in **[Preferences/Settings | Editor | Live Templates](https://www.jetbrains.com/help/idea/settings-live-templates.html)**.
 
 ---

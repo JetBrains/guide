@@ -76,7 +76,7 @@ Next, we will go to ECR which is the [Elastic Container Registry](https://aws.am
 Docker image to our ECR repository. I am actually trying to cover the use case when some people out
 there want to work with a private registry instead of using a public registry like DockerHub.
 
-I will create a repository and name it **fastapi-ecommerce\*. Visibility is going to be **private\*\*.
+I will create a repository and name it **fastapi-ecommerce**. Visibility is going to be **private**.
 
 ![step9](./steps/step9.png)
 

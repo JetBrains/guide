@@ -84,4 +84,4 @@ The test has begun. It will take a few minutes or less than that based on the ac
 
 Awesome ! The test has successfully passed. This was a basic glimpse of unit testing.
 If you are interested to know more about testing then refer to this interesting tutorial [Visual Testing with pytest](../visual_pytest/)
-written by [Paul Everitt](../../authors/pwe/).
+written by [Paul Everitt](/authors/pwe/).

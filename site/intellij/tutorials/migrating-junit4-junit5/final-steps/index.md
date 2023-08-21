@@ -17,4 +17,4 @@ Check the tests still work and pass, for example by pressing **Ctrl** twice to b
 
 If everything passes, you can be comfortable checking in these changes.
 
-We have successfully migrated all the tests in this project to JUnit 5. The first step was to migrate the project to run our JUnit 4 tests on the JUnit 5 platform. For many projects it may be enough to do this, and there may be no need to go all the way to removing the vintage engine. The most important thing is to be able to write and run tests in the new JUnit 5 style. We've covered the advantages of using JUnit 5 in [another tutorial](../../writing-junit5-tests).
+We have successfully migrated all the tests in this project to JUnit 5. The first step was to migrate the project to run our JUnit 4 tests on the JUnit 5 platform. For many projects it may be enough to do this, and there may be no need to go all the way to removing the vintage engine. The most important thing is to be able to write and run tests in the new JUnit 5 style. We've covered the advantages of using JUnit 5 in [another tutorial](../../writing-junit5-tests/).

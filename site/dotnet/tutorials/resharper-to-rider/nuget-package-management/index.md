@@ -54,7 +54,7 @@ As we've seen, the Rider NuGet Tool Window is more than capable of managing exis
 
 ![JetBrains Rider NuGet Type lookup](./7-rider-type-lookup.png)
 
-This feature is also available in the editor. We can recall types from memory and then use a quick action to \*_Find the type on NuGet.org..._, allowing us to stay in the flow and continue writing code.
+This feature is also available in the editor. We can recall types from memory and then use a quick action to _Find the type on NuGet.org..._, allowing us to stay in the flow and continue writing code.
 
 ![JetBrains Rider NuGet Type lookup in editor](./8-rider-type-lookup-editor.png)
 

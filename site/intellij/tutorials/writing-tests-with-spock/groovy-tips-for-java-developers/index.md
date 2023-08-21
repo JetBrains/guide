@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=486"
 ---
 
-Before going further with Spock examples, let's take a look at some things which might look odd if we're used to using [Java](../../../../topics/java) to test Java code.
+Before going further with Spock examples, let's take a look at some things which might look odd if we're used to using [Java](/topics/java/) to test Java code.
 
 ```groovy
 when:

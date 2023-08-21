@@ -77,6 +77,6 @@ You can:
 - Launch a full diff
 - Copy that change region to the clipboard
 - Toggle highlighting the change
-- \*se the changelist facility to move this change out-of-the-way.
+- Use the changelist facility to move this change out-of-the-way.
 
 When you’re done, hit escape or click elsewhere to dismiss the panel, and you’re right back where you were.
