@@ -25,12 +25,16 @@ const siteChecker = new SiteChecker(
 		requestMethod: "get",
 		acceptedSchemes: ["http", "https"],
 		excludedKeywords: [
+			// these sites usually fail when running automated checks
 			"localhost",
 			"twitter",
 			"linkedin",
+			"udemy.com",
+			"baeldung.com",
+			"linuxize.com",
 			"mvnrepository",
 			"mysql.com",
-		], // these sites usually fail when running automated checks
+		],
 		userAgent:
 			"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
 	},

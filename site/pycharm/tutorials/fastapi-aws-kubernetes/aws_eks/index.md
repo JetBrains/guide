@@ -1395,8 +1395,6 @@ And now you can see our Pods, Deployments, Jobs which are running.
 }
 ```
 
-![step131](./steps/step131.png)
-
 I hope you definitely like the video & tutorial and enjoy this long journey from development to deployment.
 
 Do check my next tutorials about reference materials which I have used when I was working on this tutorial. I will share

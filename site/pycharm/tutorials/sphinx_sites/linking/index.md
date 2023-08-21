@@ -145,7 +145,7 @@ But really, `:download:` (from the previous tutorial step) and `:ref:` are just 
 Much more can be done with linking.
 
 Have some content that is repeated across files, and you'd like to include it?
-MyST supports [including Markdown from another file](https://myst-parser.readthedocs.io/en/latest/using/howto.html#include-rst-files-into-a-markdown-file).
+MyST supports [including Markdown from another file](https://myst-parser.readthedocs.io/en/latest/faq/index.html#include-rst-files-into-a-markdown-file).
 
 Sphinx is most known for documentation via `autodoc`, which [generates roles that can then be linked to](https://www.sphinx-doc.org/en/master/usage/quickstart.html#autodoc) with special syntax.
 We will show this in the next tutorial step.

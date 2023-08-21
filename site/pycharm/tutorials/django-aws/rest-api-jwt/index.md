@@ -189,7 +189,7 @@ before your access token expires. If expired then you need to re-login again.
 valid or not. You are going to play with these APIs when you are
 trying to integrate with modern frontend applications.
 
-Make sure to install **[django-filter](https://django-filter.readthedocs.io/en/master/index.html)**, as we have included
+Make sure to install **[django-filter](https://django-filter.readthedocs.io/en/)**, as we have included
 it in the default filter backends in our rest framework settings.
 
 This is one of the common packages widely used which

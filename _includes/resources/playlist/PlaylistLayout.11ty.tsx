@@ -32,12 +32,16 @@ function relativize(originalUrl: string, content: string) {
 		if (href.startsWith("http://") || href.startsWith("https://")) return;
 		// relative paths
 		if (href.startsWith(".") && !href.startsWith("../")) return;
+		// root link
+		if (href.startsWith("/")) return;
 		// anchor link
 		if (href.startsWith("#")) return;
 		// ignore VITE ASSETS
 		if (href.startsWith("__VITE_ASSET__")) return;
 
-		element.setAttribute(attribute, path.join(prefix, href));
+		if (prefix && href) {
+			element.setAttribute(attribute, path.join(prefix, href));
+		}
 	}
 
 	anchors.forEach((element) => {

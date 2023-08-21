@@ -189,7 +189,7 @@ With this in place, you can use `autodoc` _directives_ in your Sphinx pages.
 Let's do that now.
 We have a page at `api.md` into which we'd like to include some module documentation.
 The [Sphinx docs on `autodoc`](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#directives) show that this is straightforward.
-For the MyST side, we need to use the escape hatch into reStructuredText directives, as explained in the [MyST How To](https://myst-parser.readthedocs.io/en/latest/using/howto.html?highlight=autodoc#use-sphinx-ext-autodoc-in-markdown-files):
+For the MyST side, we need to use the escape hatch into reStructuredText directives, as explained in the [MyST How To](https://myst-parser.readthedocs.io/en/latest/syntax/code_and_apis.html#sphinx-ext-autodoc):
 
 ````
 # About `MyDemo`
