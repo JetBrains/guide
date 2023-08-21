@@ -101,7 +101,7 @@ public string? MessageStyle { get; set; }
 }
 ```
 
-There's more on Blazor components in the [next tutorial step](../components).
+There's more on Blazor components in the [next tutorial step](../components/).
 
 ## Layouts
 
