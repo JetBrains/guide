@@ -14,7 +14,7 @@ job("Build Guide (Docker)") {
         }
     }
 
-    buildSiteDockerImage("Dockerfile-FullBuild", copySiteFromShare = false, pushToRegistry = true)
+    buildSiteDockerImage("Dockerfile", copySiteFromShare = false, pushToRegistry = true)
 }
 
 job("Run tests") {

@@ -13,7 +13,7 @@
 Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application.
 
 ### Build Image
-- `docker build -t guide -f Dockerfile-FullBuild.`
+- `docker build -t guide -f Dockerfile`
 
 ### Apply K8s Manifests
 
