@@ -31,4 +31,5 @@ site/*/.11ty-vite
 public/obsoletes.json
 .11ty-vite
 .assets-cache
-docs/*/*.schema.json
+docs/schemas/guide/*.schema.json
+docs/schemas/*
