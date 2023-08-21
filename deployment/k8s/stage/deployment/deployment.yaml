@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: jetbrains-guide-deployment
   namespace: jb-guide-prod
+  labels:
+    env: staging
 spec:
   replicas: 1
   selector:

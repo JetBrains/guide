@@ -3,6 +3,8 @@ kind: ConfigMap
 metadata:
   name: nginx-conf-cm
   namespace: jb-guide-prod
+  labels:
+    env: staging
 data:
   default.conf: |
     server {

@@ -1,18 +1,20 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: jb-guide-ingress
+  name: jb-guide-staging-ingress
   namespace: jb-guide-prod
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-labs-jb-gg-dns
+  labels:
+    env: staging
 spec:
   ingressClassName: nginx
   tls:
-  - secretName: jb-guide-labs-jb-gg-tls
+  - secretName: jb-guide-staging-labs-jb-gg-tls
     hosts:
-    - jb-guide.labs.jb.gg
+    - jb-guide-staging.labs.jb.gg
   rules:
-  - host: jb-guide.labs.jb.gg
+  - host: jb-guide-staging.labs.jb.gg
     http:
       paths:
       - path: /

@@ -3,6 +3,8 @@ kind: ConfigMap
 metadata:
   name: nginx-conf-redirect-cm
   namespace: jb-guide-prod
+  labels:
+    env: staging
 data:
   redirect.conf: |
    rewrite ^/product(.*)$ /guide/pycharm/tutorials/fastapi-aws-kubernetes/aws_eks/$1 redirect;
