@@ -19,8 +19,8 @@ const frontmatter: ChannelFrontmatter = {
 	thumbnail: "thumbnail.png",
 	hero: "/assets/intellij-idea-beam.svg",
 	subnav: [
-		{ title: "IntelliJ IDEA", url: "https://www.jetbrains.com/idea/" },
-		{ title: "IDEA Blog", url: "https://blog.jetbrains.com/idea/" },
+		{ title: "Download", url: "https://www.jetbrains.com/idea/" },
+		{ title: "Blog", url: "https://blog.jetbrains.com/idea/" },
 		{ title: "Docs", url: "https://www.jetbrains.com/help/" },
 	],
 };

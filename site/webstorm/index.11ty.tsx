@@ -20,8 +20,8 @@ const frontmatter: ChannelFrontmatter = {
 	thumbnail: "thumbnail.png",
 	hero: "/assets/webstorm-beam.svg",
 	subnav: [
-		{ title: "WebStorm", url: "https://www.jetbrains.com/webstorm/" },
-		{ title: "WebStorm Blog", url: "https://blog.jetbrains.com/webstorm/" },
+		{ title: "Download", url: "https://www.jetbrains.com/webstorm/" },
+		{ title: "Blog", url: "https://blog.jetbrains.com/webstorm/" },
 		{ title: "Docs", url: "https://www.jetbrains.com/help/" },
 	],
 };

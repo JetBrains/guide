@@ -19,8 +19,8 @@ const frontmatter: ChannelFrontmatter = {
 	thumbnail: "thumbnail.png",
 	hero: "/assets/goland_splash.svg",
 	subnav: [
-		{ title: "GoLand", url: "https://www.jetbrains.com/go/" },
-		{ title: "Go Blog", url: "https://blog.jetbrains.com/go/" },
+		{ title: "Download", url: "https://www.jetbrains.com/go/" },
+		{ title: "Blog", url: "https://blog.jetbrains.com/go/" },
 		{ title: "Docs", url: "https://www.jetbrains.com/help/" },
 	],
 };

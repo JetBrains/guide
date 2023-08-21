@@ -50,10 +50,12 @@ a.navbar-item:focus-within {
   z-index: 0;
 }
 .navbar-secondary .navbar-burger a:hover,
-.navbar-secondary .navbar-end a:hover {
+.navbar-secondary .navbar-end a:hover,
+.navbar-secondary a.navbar-item:focus {
   background-color: $white;
   color: $primary;
 }
+
 .navbar-secondary .navbar-brand a {
   color: $grey-darker;
 }

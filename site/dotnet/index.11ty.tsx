@@ -19,8 +19,8 @@ const frontmatter: ChannelFrontmatter = {
 	thumbnail: "thumbnail.png",
 	hero: "/assets/dotnet_splash.svg",
 	subnav: [
-		{ title: "dotUltimate", url: "https://www.jetbrains.com/dotnet/" },
-		{ title: ".NET Blog", url: "https://blog.jetbrains.com/dotnet/" },
+		{ title: "Download", url: "https://www.jetbrains.com/dotnet/" },
+		{ title: "Blog", url: "https://blog.jetbrains.com/dotnet/" },
 		{ title: "Docs", url: "https://www.jetbrains.com/help/" },
 	],
 };

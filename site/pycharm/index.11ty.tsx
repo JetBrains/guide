@@ -18,8 +18,8 @@ const frontmatter: ChannelFrontmatter = {
 	thumbnail: "thumbnail.png",
 	hero: "/assets/pycharm_splash.svg",
 	subnav: [
-		{ title: "PyCharm", url: "https://www.jetbrains.com/pycharm/" },
-		{ title: "IDEA Blog", url: "https://blog.jetbrains.com/pycharm/" },
+		{ title: "Download", url: "https://www.jetbrains.com/pycharm/" },
+		{ title: "Blog", url: "https://blog.jetbrains.com/pycharm/" },
 		{ title: "Docs", url: "https://www.jetbrains.com/help/" },
 	],
 };
