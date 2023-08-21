@@ -7,16 +7,6 @@ job("Build Guide") {
     buildAndDeployStaging()
 }
 
-job("Build Guide (Docker)") {
-    startOn {
-        gitPush {
-            enabled = false
-        }
-    }
-
-    buildSiteDockerImage("Dockerfile", copySiteFromShare = false, pushToRegistry = true)
-}
-
 job("Run tests") {
     startOn {
         gitPush {
@@ -123,7 +113,10 @@ fun Job.buildAndDeployStaging() {
     }
     parallel {
         deploySite()
-        buildSiteDockerImage("Dockerfile-FromBuildOutput", copySiteFromShare = true, pushToRegistry = false)
+        buildSiteDockerImage("Dockerfile",
+            imageName = "registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-dev-nginx",
+            copySiteFromShare = false,
+            pushToRegistry = false)
     }
 }
 
@@ -229,7 +222,7 @@ fun StepsScope.deploySite() {
     }
 }
 
-fun StepsScope.buildSiteDockerImage(dockerfile: String, copySiteFromShare: Boolean, pushToRegistry: Boolean) {
+fun StepsScope.buildSiteDockerImage(dockerfile: String, imageName: String, copySiteFromShare: Boolean, pushToRegistry: Boolean) {
     host(displayName = "Build application container") {
         if (copySiteFromShare) {
           	shellScript {
@@ -247,7 +240,6 @@ fun StepsScope.buildSiteDockerImage(dockerfile: String, copySiteFromShare: Boole
             file = dockerfile
             labels["vendor"] = "JetBrains"
 
-            val imageName = "registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-prod-nginx"
             tags {
                 +"$imageName:0.0.${"$"}JB_SPACE_EXECUTION_NUMBER"
                 +"$imageName:latest"
