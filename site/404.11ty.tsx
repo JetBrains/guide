@@ -10,7 +10,7 @@ type Http404PageProps = LayoutProps & PageFrontmatter;
 class Http404Page {
   data() {
     return {
-      title: "404 - Page Not Found",
+      title: "404 - Page Not Found NOPE",
       subtitle: "Uh-oh! The page could not be found",
       layout: "",
       eleventyExcludeFromCollections: true,
