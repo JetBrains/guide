@@ -6,8 +6,8 @@ metadata:
 data:
   default.conf: |
     server {
-        listen       80;
-        listen  [::]:80;
+        listen       8080;
+        listen  [::]:8080;
         server_name  localhost;
 
         #access_log  /var/log/nginx/host.access.log  main;
@@ -24,6 +24,12 @@ data:
             index  index.html index.htm;
             add_header X-Frame-Options "SAMEORIGIN" always;
             add_header X-Content-Type-Options "nosniff" always;
+        }
+    
+        error_page 404 /guide/404.html;
+          location = /guide/404.html {
+                root /usr/share/nginx/html;
+                internal;
         }
       
         absolute_redirect off;

@@ -28,6 +28,12 @@ data:
             add_header X-Content-Type-Options "nosniff" always;
         }
     
+        error_page 404 /guide/404.html;
+          location = /guide/404.html {
+                root /usr/share/nginx/html;
+                internal;
+        }    
+    
         absolute_redirect off;
    
         include /etc/nginx/extra/redirect.conf;

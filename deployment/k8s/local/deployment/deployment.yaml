@@ -15,9 +15,9 @@ spec:
     spec:
       securityContext:
         runAsNonRoot: true
-        runAsUser: 10014
-        runAsGroup: 10014
-        fsGroup: 10014
+        runAsUser: 101
+        runAsGroup: 101
+        fsGroup: 101
       volumes:
         - name: nginx
           configMap:
@@ -40,19 +40,25 @@ spec:
             memory: "512Mi"
             cpu: "500m"
         readinessProbe:
+          failureThreshold: 3
           httpGet:
-            port: 80
+            port: 8080
             path: /guide
           initialDelaySeconds: 5
           periodSeconds: 15
+          successThreshold: 1
+          timeoutSeconds: 1
         livenessProbe:
+          failureThreshold: 15
           httpGet:
-            port: 80
+            port: 8080
             path: /guide
           initialDelaySeconds: 5
           periodSeconds: 15
+          successThreshold: 1
+          timeoutSeconds: 15
         ports:
-        - containerPort: 80
+        - containerPort: 8080
         securityContext:
           allowPrivilegeEscalation: false
           capabilities:
