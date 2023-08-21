@@ -6,7 +6,7 @@ metadata:
   labels:
     env: staging
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: jetbrains-guide
@@ -19,9 +19,9 @@ spec:
         - name: space-registry-jetbrains-guide
       securityContext:
         runAsNonRoot: true
-        runAsUser: 10014
-        runAsGroup: 10014
-        fsGroup: 10014
+        runAsUser: 101
+        runAsGroup: 101
+        fsGroup: 101
       volumes:
         - name: nginx
           configMap:
@@ -38,23 +38,29 @@ spec:
         imagePullPolicy: Always
         resources:
           requests:
-            memory: "128Mi"
+            memory: "256Mi"
             cpu: "250m"
           limits:
             memory: "512Mi"
             cpu: "500m"
         readinessProbe:
+          failureThreshold: 3
           httpGet:
             port: 8080
             path: /guide/
           initialDelaySeconds: 5
           periodSeconds: 15
+          successThreshold: 1
+          timeoutSeconds: 1
         livenessProbe:
+          failureThreshold: 15
           httpGet:
             port: 8080
             path: /guide/
           initialDelaySeconds: 5
           periodSeconds: 15
+          successThreshold: 1
+          timeoutSeconds: 15
         ports:
         - containerPort: 8080
         securityContext:
