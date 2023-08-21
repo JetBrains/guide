@@ -10,18 +10,11 @@ RUN npm run build
 
 FROM nginx:alpine as final
 
-COPY --from=builder /app/_site/ /usr/share/nginx/html/guide
+COPY --from=builder --chown nginx:nginx /app/_site/ /usr/share/nginx/html/guide
 
 RUN mkdir -p /var/cache/nginx
 
-RUN apk --no-cache add shadow && usermod -u 10014 nginx && \
-    groupmod -g 10014 nginx
-
-RUN apk del shadow
-
-
-RUN chown -R nginx:nginx /usr/share/nginx/html && \
-        chown -R nginx:nginx /var/cache/nginx && \
+RUN chown -R nginx:nginx /var/cache/nginx && \
         chown -R nginx:nginx /var/log/nginx && \
         chown -R nginx:nginx /etc/nginx/conf.d
 RUN touch /var/run/nginx.pid && \
