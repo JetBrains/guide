@@ -5,7 +5,7 @@ logo: html5-plain.svg
 website: "https://developer.mozilla.org/en-US/docs/Web/HTML"
 topicType: technology
 obsoletes:
-  - /intellij/topics/html/
+  - /idea/topics/html/
   - /webstorm/topics/html/
 ---
 

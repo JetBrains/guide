@@ -9,13 +9,13 @@ subtitle: Tips for moving through and navigating your code base
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
-  - /intellij/tips/code-nav-fwd-back/
-  - /intellij/tips/navigate-to-implementation/
-  - /intellij/tips/find-usages/
-  - /intellij/tips/navigate-to-test/
-  - /intellij/tips/recent-files/
-  - /intellij/tips/recent-locations/
-  - /intellij/tips/f2/
+  - /idea/tips/code-nav-fwd-back/
+  - /idea/tips/navigate-to-implementation/
+  - /idea/tips/find-usages/
+  - /idea/tips/navigate-to-test/
+  - /idea/tips/recent-files/
+  - /idea/tips/recent-locations/
+  - /idea/tips/f2/
 ---
 
 There are two screencasts on Navigation which you may also find useful:

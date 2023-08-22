@@ -5,5 +5,5 @@ accent: primary
 icon: fas fa-plus
 obsoletes:
   - /goland/topics/latest/
-  - /intellij/topics/latest/
+  - /idea/topics/latest/
 ---

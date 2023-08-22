@@ -11,9 +11,9 @@ subtitle: Tips for using Search Everywhere (Shift+Shift)
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
-  - /intellij/tips/search-everywhere/
-  - /intellij/tips/find-actions/
-  - /intellij/tips/search-everywhere-calcs/
-  - /intellij/tips/search-everywhere-git-commits/
-  - /intellij/tips/search-camel-case/
+  - /idea/tips/search-everywhere/
+  - /idea/tips/find-actions/
+  - /idea/tips/search-everywhere-calcs/
+  - /idea/tips/search-everywhere-git-commits/
+  - /idea/tips/search-camel-case/
 ---

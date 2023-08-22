@@ -9,5 +9,5 @@ subtitle: >-
   categories.
 pagination:
   resourceType: tip
-  channel: /intellij/
+  channel: /idea/
 ---

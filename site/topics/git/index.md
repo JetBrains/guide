@@ -7,5 +7,5 @@ logo: git.png
 website: "https://git-scm.com/"
 topicType: technology
 obsoletes:
-  - /intellij/topics/git/
+  - /idea/topics/git/
 ---

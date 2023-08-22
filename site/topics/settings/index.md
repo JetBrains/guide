@@ -5,7 +5,7 @@ accent: primary
 icon: fas fa-cogs
 obsoletes:
   - /goland/topics/settings/
-  - /intellij/topics/settings/
+  - /idea/topics/settings/
 ---
 
 You can configure our IDEs at the highest level for all projects, or on a per-project basis. Settings can be accessed

@@ -75,7 +75,7 @@ class ExplorePage {
 												</a>
 											</div>
 											<div class="column mb-1 is-6 py-5">
-												<a href="/intellij/">
+												<a href="/idea/">
 													<figure class="image is-48x48 mb-1">
 														<Logo
 															product="intellij-idea"
@@ -85,7 +85,7 @@ class ExplorePage {
 													</figure>
 												</a>
 												<a
-													href="/intellij/"
+													href="/idea/"
 													class="is-size-5 has-text-weight-bold title"
 												>
 													IntelliJ IDEA
@@ -140,7 +140,7 @@ class ExplorePage {
 											<a href="/goland/">GoLand</a>
 										</li>
 										<li>
-											<a href="/intellij/">IntelliJ IDEA</a>
+											<a href="/idea/">IntelliJ IDEA</a>
 										</li>
 										<li>
 											<a href="/pycharm/">PyCharm</a>

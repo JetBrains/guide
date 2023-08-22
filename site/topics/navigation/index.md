@@ -6,7 +6,7 @@ icon: fas fa-map-marked
 obsoletes:
   - /dotnet/topics/navigation/
   - /goland/topics/navigation/
-  - /intellij/topics/navigation/
+  - /idea/topics/navigation/
   - /pycharm/topics/navigation/
   - /webstorm/topics/navigation/
 ---

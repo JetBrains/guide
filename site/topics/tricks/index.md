@@ -5,5 +5,5 @@ accent: primary
 icon: fas fa-magic
 obsoletes:
   - /goland/topics/tricks/
-  - /intellij/topics/tricks/
+  - /idea/topics/tricks/
 ---

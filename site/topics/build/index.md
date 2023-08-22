@@ -5,7 +5,7 @@ accent: primary
 icon: fas fa-hammer
 obsoletes:
   - /goland/topics/build/
-  - /intellij/topics/build/
+  - /idea/topics/build/
 ---
 
 Our IDEs integrate seamlessly with common build systems.

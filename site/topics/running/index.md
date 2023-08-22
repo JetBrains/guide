@@ -6,7 +6,7 @@ icon: fas fa-play
 obsoletes:
   - /dotnet/topics/running/
   - /goland/topics/running/
-  - /intellij/topics/running/
+  - /idea/topics/running/
   - /pycharm/topics/running/
   - /webstorm/topics/running-debugging/
 ---

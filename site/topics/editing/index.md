@@ -6,7 +6,7 @@ icon: fas fa-user-edit
 obsoletes:
   - /dotnet/topics/editing/
   - /goland/topics/editing/
-  - /intellij/topics/editing/
+  - /idea/topics/editing/
   - /pycharm/topics/editing/
   - /webstorm/topics/editing/
 ---

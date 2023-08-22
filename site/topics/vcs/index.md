@@ -6,7 +6,7 @@ icon: fas fa-code-branch
 obsoletes:
   - /dotnet/topics/vcs/
   - /goland/topics/vcs/
-  - /intellij/topics/vcs/
+  - /idea/topics/vcs/
   - /pycharm/topics/vcs/
   - /webstorm/topics/vcs/
 ---

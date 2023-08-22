@@ -5,7 +5,7 @@ logo: maven-logo.png
 website: "https://maven.apache.org/"
 topicType: technology
 obsoletes:
-  - /intellij/topics/maven/
+  - /idea/topics/maven/
 ---
 
 Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
