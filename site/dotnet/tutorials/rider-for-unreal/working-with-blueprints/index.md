@@ -9,10 +9,10 @@ topics:
   - rider
   - unreal
 author: citizenmatt
-subtitle: 'Navigate back-and-forth between code an blueprints, find usages, ...'
+subtitle: "Navigate back-and-forth between code an blueprints, find usages, ..."
 thumbnail: ./thumbnail.png
 video:
-  url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
+  url: "https://www.youtube.com/watch?v=_bvrngxZYds"
   start: 1553
   end: 1811
 ---

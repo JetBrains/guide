@@ -20,4 +20,3 @@ tutorialItems:
   - ./modifying-tasks-issues/
   - ./new-projects-gradle-init/
 ---
-

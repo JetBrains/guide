@@ -11,7 +11,8 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=C-eBw3dcq_4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=57
 ---
-Live templates are a great way to quickly write common/repeating code. Arrow functions are no exception from this, so we introduced the **arf** live template to create them. 
+
+Live templates are a great way to quickly write common/repeating code. Arrow functions are no exception from this, so we introduced the **arf** live template to create them.
 
 **How to use:**
 

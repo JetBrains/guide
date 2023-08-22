@@ -8,13 +8,14 @@ author: dlsniper
 subtitle: View arguments and documentation without interrupting your flow.
 seealso:
   - title: Viewing Inline Documentation
-    href: 'https://www.jetbrains.com/help/go/inline-documentation.html'
+    href: "https://www.jetbrains.com/help/go/inline-documentation.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=vGuov3VZeQw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=93
 ---
-*Want to learn what a symbol is about, without going to a browser?*
+
+_Want to learn what a symbol is about, without going to a browser?_
 
 The IDE knows the symbol, its argument names/types/defaults, the
 documentation it has.

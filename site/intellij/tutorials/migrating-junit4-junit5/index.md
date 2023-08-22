@@ -22,5 +22,3 @@ tutorialItems:
   - ./final-steps/
   - ./shortcuts-used/
 ---
-
-

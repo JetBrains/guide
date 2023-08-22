@@ -11,7 +11,7 @@ topics:
 author: maartenba
 subtitle: Martin Beeby
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/B14973mdD0g'
+video: "https://youtu.be/B14973mdD0g"
 ---
 
 Packaging software into containers gives your code everything needed to run with consistency from your laptop into production. But how do you run containers at scale in the cloud? In this session, learn how to run containerized .NET applications in production on AWS. We show you how to run containers on Kubernetes with Amazon Elastic Kubernetes Service (Amazon EKS). We also demonstrate the benefits of running .NET 5 Linux containers serverlessly with AWS Fargate. We cover core concepts and use demos to help you feel comfortable getting started with building and deploying .NET containerized applications on AWS.
@@ -28,4 +28,4 @@ His primary focus is on .NET applications and has worked as a C# and VB develope
 
 Prior to joining AWS, Martin worked for Oracle and Microsoft as a developer evangelist and software development engineer.
 
-* Twitter: https://twitter.com/thebeebs
+- Twitter: <https://twitter.com/thebeebs>

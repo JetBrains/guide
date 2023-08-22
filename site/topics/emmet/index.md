@@ -2,9 +2,10 @@
 title: Emmet
 subtitle: Shorthand system for HTML and CSS generation
 logo: ./emmet.svg
-website: 'https://emmet.io'
+website: "https://emmet.io"
 topicType: technology
-obsoletes: ["/webstorm/topics/emmet/"]
+obsoletes:
+  - /webstorm/topics/emmet/
 ---
 
 Emmet is a web-developer’s toolkit that can greatly improve your

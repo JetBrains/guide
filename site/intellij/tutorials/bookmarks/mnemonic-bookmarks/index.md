@@ -12,7 +12,7 @@ We can also create bookmarks that are assigned to a digit (0 to 9) or letter (A 
 
 ![Add Mnemonic Bookmark](add-mnemonic-bookmark-menu.png)
 
-Optionally, we can provide a description for the new bookmark. We can double-click the digit or letter we want to assign. 
+Optionally, we can provide a description for the new bookmark. We can double-click the digit or letter we want to assign.
 
 ![Add Mnemonic Bookmark](add-mnemonic-bookmark.png)
 

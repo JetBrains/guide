@@ -16,5 +16,3 @@ tutorialItems:
   - ./dependency-diagram/
   - ./summary/
 ---
-
-

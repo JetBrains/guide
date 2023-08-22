@@ -10,6 +10,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
+
 If you want to perform tasks on save, you can now use the **Actions on save** feature to reformat the source code, optimize imports, rearrange it, run cleanup, or even upload it to a specified sever.
 
 **How to use:**

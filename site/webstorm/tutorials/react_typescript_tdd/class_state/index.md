@@ -12,10 +12,10 @@ subtitle: >-
   definition for that state.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/21-VMTmiV8E'
+video: "https://youtu.be/21-VMTmiV8E"
 ---
 
-In [Class Components With Props](../class_props/) we made a `Counter` child component using a class, with one property passed in. 
+In [Class Components With Props](../class_props/) we made a `Counter` child component using a class, with one property passed in.
 We traditionally use classes for child components when they have state or need to use one of React's lifecycle methods (though that is changing with hooks.)
 
 That's the topic of this step.
@@ -26,33 +26,33 @@ We will stick to introducing component state and modeling it in TypeScript.
 
 ## Code
 
-The finished code for this tutorial step is 
+The finished code for this tutorial step is
 [in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/class_state).
 
 ## Always Start With a Test
 
-It's becoming our pattern: 
+It's becoming our pattern:
 
-- We write a *failing* test first
+- We write a _failing_ test first
 
-- Then *implement* the presentation component
+- Then _implement_ the presentation component
 
-- Then wire it into the *parent* component
+- Then wire it into the _parent_ component
 
-To begin, have `Counter.tsx` in the left-hand tab and `Counter.test.tsx` in the right-hand tab. 
+To begin, have `Counter.tsx` in the left-hand tab and `Counter.test.tsx` in the right-hand tab.
 Also, stop the `start` process if it is running and make sure the `All Tests` Jest run config is running.
 
-Here's a `Counter.test.tsx` test to show that the counter starts at zero, which *fails*, because we have a static `<span>1</span>`:
+Here's a `Counter.test.tsx` test to show that the counter starts at zero, which _fails_, because we have a static `<span>1</span>`:
 
 ```typescript
 test("should start at zero", () => {
-  const { getByTitle } = render(<Counter />);
-  const counter = getByTitle("Current Count");
-  expect(counter).toHaveTextContent("0");
+ const { getByTitle } = render(<Counter />);
+ const counter = getByTitle("Current Count");
+ expect(counter).toHaveTextContent("0");
 });
 ```
 
-Over in `Counter.tsx`, let's first write the type definition for our *state*. 
+Over in `Counter.tsx`, let's first write the type definition for our _state_.
 What does the local state look like?
 Pretty easy:
 
@@ -65,21 +65,21 @@ Then last, change the `<span>` to use the value from the state, instead of a har
 
 ```typescript
 export class Counter extends Component<CounterProps, CounterState> {
-  state: CounterState = {
-    count: 0,
-  };
+ state: CounterState = {
+  count: 0,
+ };
 
-  render() {
-    const { label = "Count" } = this.props;
-    return (
-      <div>
-        <span title="Count Label">{label}</span>
-        <span id="counter" title="Current Count">
-          {this.state.count}
-        </span>
-      </div>
-    );
-  }
+ render() {
+  const { label = "Count" } = this.props;
+  return (
+   <div>
+    <span title="Count Label">{label}</span>
+    <span id="counter" title="Current Count">
+     {this.state.count}
+    </span>
+   </div>
+  );
+ }
 }
 ```
 
@@ -90,7 +90,7 @@ Two things changed in this:
 
 - We defined the initial class state as a "class variable"
 
-Note that, when tying in the JSX/TSX, we got autocompletion not only on `.state`, but also `.count`. 
+Note that, when tying in the JSX/TSX, we got autocompletion not only on `.state`, but also `.count`.
 That's part of the value of type definitions for state.
 
 ## Red-Squigglies For State Assignment
@@ -102,7 +102,7 @@ Still, it's an easy mistake to make, and you won't find out until runtime.
 Can the TypeScript compiler help?
 Can we get a red-squiggly?
 You betcha!
-Let's introduce a *wee little bit* more complexity, to formalize type safety on "read only" state objects.
+Let's introduce a _wee little bit_ more complexity, to formalize type safety on "read only" state objects.
 
 First, we'll move the initial state out of the class, into a module-scope variable, then flag in the type definition that this is read-only.
 
@@ -110,26 +110,27 @@ First, we'll move the initial state out of the class, into a module-scope variab
 const initialState = { count: 0 };
 export type CounterState = Readonly<typeof initialState>;
 ```
+
 The TypeScript [`readonly` modifier](https://www.typescriptlang.org/docs/handbook/classes.html#readonly-modifier) is like `public`, `private`, and `protected`.
-It tells the *compiler* (but not the runtime) to watch for code that tries to assign to the object.
+It tells the _compiler_ (but not the runtime) to watch for code that tries to assign to the object.
 
 To use this `initialState` in our component, replace the previous class property:
 
 ```typescript {2}
 export class Counter extends Component<CounterProps, CounterState> {
-  readonly state: CounterState = initialState;
+ readonly state: CounterState = initialState;
 
-  render() {
-    const { label = "Count" } = this.props;
-    return (
-      <div>
-        <span title="Count Label">{label}</span>
-        <span id="counter" title="Current Count">
-          {this.state.count}
-        </span>
-      </div>
-    );
-  }
+ render() {
+  const { label = "Count" } = this.props;
+  return (
+   <div>
+    <span title="Count Label">{label}</span>
+    <span id="counter" title="Current Count">
+     {this.state.count}
+    </span>
+   </div>
+  );
+ }
 }
 ```
 
@@ -137,8 +138,8 @@ Our tests pass, so we're in good shape, and we've added type safety to detect a 
 
 ## Starting Value
 
-Sometimes we want a counter that starts somewhere besides zero and we'd like the *consumer* of the component -- the parent component -- to be in charge.
-Let's change `Counter` to allow passing in an *optional* prop for the starting value.
+Sometimes we want a counter that starts somewhere besides zero and we'd like the _consumer_ of the component -- the parent component -- to be in charge.
+Let's change `Counter` to allow passing in an _optional_ prop for the starting value.
 
 This change is going to be tricky.
 Props aren't available until we get to the instance, and our state is currently setup at the class level.
@@ -149,13 +150,13 @@ First, a failing test in `Counter.test.tsx`:
 
 ```typescript
 test("should start at another value", () => {
-  const { getByTitle } = render(<Counter start={10} />);
-  const counter = getByTitle("Current Count");
-  expect(counter).toHaveTextContent("10");
+ const { getByTitle } = render(<Counter start={10} />);
+ const counter = getByTitle("Current Count");
+ expect(counter).toHaveTextContent("10");
 });
 ```
 
-As before, our test fails, but before that, our IDE warns us that we have violated the `<Counter />` contract. 
+As before, our test fails, but before that, our IDE warns us that we have violated the `<Counter />` contract.
 In fact, we probably figured that out as we typed -- no autocompletion on a `start` prop for the component.
 
 ![No Start Prop Allowed](./screenshots/red_squiggly_start.png)
@@ -164,8 +165,8 @@ We'll fix the type definition in `Counter.tsx` to allow this prop -- a number --
 
 ```typescript {3}
 export type CounterProps = {
-  label?: string;
-  start?: number;
+ label?: string;
+ start?: number;
 };
 ```
 
@@ -194,13 +195,13 @@ Let's open `App.test.tsx` and add a test of the count value:
 
 ```typescript {7,8}
 test("renders hello react", () => {
-  const { getByTitle, getByText } = render(<App />);
-  const linkElement = getByText(/hello react/i);
-  expect(linkElement).toBeInTheDocument();
-  const label = getByTitle("Count Label");
-  expect(label).toBeInTheDocument();
-  const counter = getByTitle("Current Count");
-  expect(counter).toHaveTextContent("0");
+ const { getByTitle, getByText } = render(<App />);
+ const linkElement = getByText(/hello react/i);
+ expect(linkElement).toBeInTheDocument();
+ const label = getByTitle("Count Label");
+ expect(label).toBeInTheDocument();
+ const counter = getByTitle("Current Count");
+ expect(counter).toHaveTextContent("0");
 });
 ```
 

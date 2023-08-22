@@ -12,14 +12,14 @@ topics:
 author: maartenba
 subtitle: Let's run a first profiling session on a Sudoku solver sample application.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/-1riV47hdqw'
+video: "https://youtu.be/-1riV47hdqw"
 ---
 
 ### Sudoku Solver
 
 In this tutorial, you will make use of a [Sudoku solver application](https://github.com/JetBrains/DPA-demo). It reads
 a [Sudoku puzzle](https://en.wikipedia.org/wiki/Sudoku) from a text file, and then tries to solve it using a brute-force approach.
- 
+
 Internally, it iterates over every cell of a puzzle board, tries all combinations, and then verifies the solution.
 
 ```

@@ -10,7 +10,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: A complete Razor Pages pipeline.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/5K-uB_ei5VA'
+video: "https://youtu.be/5K-uB_ei5VA"
 ---
 
 Razor Pages is a newer, simplified web application programming model. It removes much of the ceremony of ASP.NET MVC by adopting a file-based routing approach. Each Razor Pages file found under the `Pages` directory equates to an endpoint. Razor Pages have an associated C# objected called the page model, which holds each page's behavior. Additionally, each page works on the limited semantics of HTML, only supporting `GET` and `POST` methods.
@@ -47,7 +47,7 @@ The following view is located under `/Pages/Index.cshtml`.
 <form method="post" asp-page="Index">
   <div class="form-group">
     <label asp-for="Name"></label>
-    <input asp-for="Name" class="form-control" placeholder="Enter Name" autocomplete="off" />    
+    <input asp-for="Name" class="form-control" placeholder="Enter Name" autocomplete="off" />
   </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
@@ -61,11 +61,11 @@ The following view is located under `/Pages/Index.cshtml.cs`. It may be visibly 
 public class IndexModel : PageModel
 {
     public string Name => (string)TempData[nameof(Name)];
-    
+
     public void OnGet()
     {
     }
-    
+
     public IActionResult OnPost([FromForm]string name)
     {
         TempData["Name"] = name;

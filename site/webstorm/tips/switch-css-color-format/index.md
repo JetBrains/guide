@@ -10,7 +10,7 @@ topics:
 author: er
 seealso:
   - title: Working with style sheets
-    href: 'https://www.jetbrains.com/help/webstorm/style-sheets.html#'
+    href: "https://www.jetbrains.com/help/webstorm/style-sheets.html#"
   - title: 10 WebStorm shortcuts you need to know
     href: >-
       https://blog.jetbrains.com/webstorm/2015/06/10-webstorm-shortcuts-you-need-to-know/
@@ -21,4 +21,5 @@ animatedGif:
   width: 600
   height: 300
 ---
-Use *Alt+Enter* to switch between different color formats in CSS.
+
+Use _Alt+Enter_ to switch between different color formats in CSS.

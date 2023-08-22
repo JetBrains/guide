@@ -15,6 +15,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=CriTJ6kmeaQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=104
 ---
+
 Do you want to select all the occurrences of a piece of code?
 
 **How to use:**

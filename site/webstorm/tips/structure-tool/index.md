@@ -16,5 +16,6 @@ animatedGif:
   width: 600
   height: 300
 ---
-Use the *Structure* tool window (*Cmd+7/Alt+7*) to get an overview of 
+
+Use the _Structure_ tool window (_Cmd+7/Alt+7_) to get an overview of
 the currently opened file and for quick navigation.

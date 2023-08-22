@@ -8,7 +8,7 @@ topics:
 author: er
 seealso:
   - title: JavaScript documentation look-up
-    href: 'https://www.jetbrains.com/help/webstorm/viewing-javascript-reference.html'
+    href: "https://www.jetbrains.com/help/webstorm/viewing-javascript-reference.html"
   - title: Webinar Recording - 42 WebStorm Tips and Tricks
     href: >-
       https://blog.jetbrains.com/webstorm/2020/05/webinar-recording-42-webstorm-tips-and-tricks/
@@ -19,4 +19,5 @@ animatedGif:
   width: 600
   height: 300
 ---
-Need to quickly check docs for the standard JavaScript methods and other symbols but don’t feel like googling? Hover over a symbol or press *F1* to invoke the *Documentation* popup. If needed, you can also go to the corresponding MDN page for more details right from there (make sure to press *F1* to see the MDN link).
+
+Need to quickly check docs for the standard JavaScript methods and other symbols but don’t feel like googling? Hover over a symbol or press _F1_ to invoke the _Documentation_ popup. If needed, you can also go to the corresponding MDN page for more details right from there (make sure to press _F1_ to see the MDN link).

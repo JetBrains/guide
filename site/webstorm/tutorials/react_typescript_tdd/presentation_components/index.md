@@ -12,19 +12,19 @@ subtitle: >-
   the code and tests.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/SnCGW6JUo4E'
+video: "https://youtu.be/SnCGW6JUo4E"
 ---
 
 React encourages a separation of concerns.
-UI components, aka presentation components, aka dumb components, are created by the bushel and managed by container components, aka smart components. 
+UI components, aka presentation components, aka dumb components, are created by the bushel and managed by container components, aka smart components.
 The container maintains state, logic, and passes things into the presentation component.
 
-Our Counter component is, as originally intended, a *class component* with state.
-Let's make it a *presentation component* by moving the state up to the container (App), as well as the incrementing logic.
+Our Counter component is, as originally intended, a _class component_ with state.
+Let's make it a _presentation component_ by moving the state up to the container (App), as well as the incrementing logic.
 
 ## Code
 
-The finished code for this tutorial step is 
+The finished code for this tutorial step is
 [in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/presentation_components/).
 
 ## Counter State
@@ -35,32 +35,32 @@ Also, the dumb child component will no longer decide the starting value, so remo
 
 ```typescript {3}
 export type CounterProps = {
-  label?: string;
-  count: number;
+ label?: string;
+ count: number;
 };
 ```
 
 As soon as we do that, the universe starts breaking.
 TypeScript yells at us in every one of our tests, as our `<Counter/>` component is not passing in a required prop.
-Too bad, TypeScript, you'll have to wait. 
+Too bad, TypeScript, you'll have to wait.
 
-Next, let's change our `Counter` component to *not* have local state.
-Stateless presentation components are best done with stateless *functional* components.
+Next, let's change our `Counter` component to _not_ have local state.
+Stateless presentation components are best done with stateless _functional_ components.
 Let's change `<Counter/>` to an SFC:
 
 ```typescript
 export const Counter = ({ label = "Count", count }: CounterProps) => {
-  return (
-    <div
-      className="counter"
-      // onClick={handleClick}
-    >
-      <span title="Count Label">{label}</span>
-      <span id="counter" title="Current Count">
-        {count}
-      </span>
-    </div>
-  );
+ return (
+  <div
+   className="counter"
+   // onClick={handleClick}
+  >
+   <span title="Count Label">{label}</span>
+   <span id="counter" title="Current Count">
+    {count}
+   </span>
+  </div>
+ );
 };
 ```
 
@@ -71,17 +71,17 @@ Let's fix the first two tests in `Counter.test.tsx`, to see if we are in the bal
 
 ```typescript {2,10}
 test("should render a label and counter", () => {
-  const { getByTitle } = render(<Counter count={0} />);
-  const label = getByTitle("Count Label");
-  expect(label).toBeInTheDocument();
-  const count = getByTitle("Current Count");
-  expect(count).toBeInTheDocument();
+ const { getByTitle } = render(<Counter count={0} />);
+ const label = getByTitle("Count Label");
+ expect(label).toBeInTheDocument();
+ const count = getByTitle("Current Count");
+ expect(count).toBeInTheDocument();
 });
 
 test("should render a counter with custom label", () => {
-  const { getByTitle } = render(<Counter label={`Current`} count={0} />);
-  const label = getByTitle("Current Count");
-  expect(label).toBeInTheDocument();
+ const { getByTitle } = render(<Counter label={`Current`} count={0} />);
+ const label = getByTitle("Current Count");
+ expect(label).toBeInTheDocument();
 });
 ```
 
@@ -96,7 +96,7 @@ It's passed in from the parent, which keeps track of the count state.
 So how do we handle clicks?
 
 It sounds weird, but...in the same way.
-We're going to *pass in an arrow function from the parent*.
+We're going to _pass in an arrow function from the parent_.
 Meaning, the parent contains all the logic for what happens when there is a click.
 All the child needs to know is "when the click event comes in, call the function that was passed to me as a prop."
 
@@ -105,30 +105,30 @@ First, since this click handler function will come in as a prop, we need to chan
 
 ```typescript {4}
 export type CounterProps = {
-  label?: string;
-  count: number;
-  onCounterIncrease: (event: React.MouseEvent<HTMLElement>) => void;
+ label?: string;
+ count: number;
+ onCounterIncrease: (event: React.MouseEvent<HTMLElement>) => void;
 };
 ```
 
-Now *that's* a type definition, baby. It captures quite a bit of the contract.
+Now _that's_ a type definition, baby. It captures quite a bit of the contract.
 
 Next, use ES6 object destructuring to "unpack" that from the props into the local scope, then refer to that prop in the `onClick` handler:
 
 ```typescript
 export const Counter = ({
-  label = "Count",
-  count,
-  onCounterIncrease,
+ label = "Count",
+ count,
+ onCounterIncrease,
 }: CounterProps) => {
-  return (
-    <div className="counter" onClick={onCounterIncrease}>
-      <span title="Count Label">{label}</span>
-      <span id="counter" title="Current Count">
-        {count}
-      </span>
-    </div>
-  );
+ return (
+  <div className="counter" onClick={onCounterIncrease}>
+   <span title="Count Label">{label}</span>
+   <span id="counter" title="Current Count">
+    {count}
+   </span>
+  </div>
+ );
 };
 ```
 
@@ -141,10 +141,10 @@ It's easy to fix these first two tests in `Counter.test.tsx`, because we aren't 
 For example, in the first test:
 
 ```typescript
-  const handler = jest.fn();
-  const { getByTitle } = render(
-    <Counter count={0} onCounterIncrease={handler} />
-  );
+const handler = jest.fn();
+const { getByTitle } = render(
+ <Counter count={0} onCounterIncrease={handler} />
+);
 ```
 
 We are using [Jest](../../../../topics/jest) mock functions to create a disposable arrow
@@ -154,23 +154,23 @@ Do this for both tests:
 
 ```typescript {2,4,13,15}
 test("should render a label and counter", () => {
-  const handler = jest.fn();
-  const { getByTitle } = render(
-    <Counter count={0} onCounterIncrease={handler} />
-  );
-  const label = getByTitle("Count Label");
-  expect(label).toBeInTheDocument();
-  const count = getByTitle("Current Count");
-  expect(count).toBeInTheDocument();
+ const handler = jest.fn();
+ const { getByTitle } = render(
+  <Counter count={0} onCounterIncrease={handler} />
+ );
+ const label = getByTitle("Count Label");
+ expect(label).toBeInTheDocument();
+ const count = getByTitle("Current Count");
+ expect(count).toBeInTheDocument();
 });
 
 test("should render a counter with custom label", () => {
-  const handler = jest.fn();
-  const { getByTitle } = render(
-    <Counter label={`Current`} count={0} onCounterIncrease={handler} />
-  );
-  const label = getByTitle("Current Count");
-  expect(label).toBeInTheDocument();
+ const handler = jest.fn();
+ const { getByTitle } = render(
+  <Counter label={`Current`} count={0} onCounterIncrease={handler} />
+ );
+ const label = getByTitle("Current Count");
+ expect(label).toBeInTheDocument();
 });
 ```
 
@@ -179,39 +179,39 @@ We need a "spy" that tells whether our passed-in handler gets called.
 Also, we don't test whether the value updates, since the container is responsible for that.
 In fact, we don't need to have a test for "shift-click", as that's part of the handler that will be passed in.
 
-Let's change the third test and *delete* the last test:
+Let's change the third test and _delete_ the last test:
 
 ```typescript
 test("should call the incrementer function", () => {
-  const handler = jest.fn();
-  const { getByTitle } = render(
-    <Counter count={0} onCounterIncrease={handler} />
-  );
-  const counter = getByTitle("Current Count");
-  fireEvent.click(counter);
-  expect(handler).toBeCalledTimes(1);
+ const handler = jest.fn();
+ const { getByTitle } = render(
+  <Counter count={0} onCounterIncrease={handler} />
+ );
+ const counter = getByTitle("Current Count");
+ fireEvent.click(counter);
+ expect(handler).toBeCalledTimes(1);
 });
 ```
 
-We are simply ensuring that clicking the value calls the callback. 
+We are simply ensuring that clicking the value calls the callback.
 We don't even care what it was called with.
 
 ## Dumb Component Gets a Little Smarter
 
 We deleted the final test because we don't really care how the calling happens.
 But is that strictly true?
-What if the *presentation* component took care of dissecting HTML event information, extracted the relevant data, and *then* called the callback? 
-That's a better division of responsibilities. 
+What if the _presentation_ component took care of dissecting HTML event information, extracted the relevant data, and _then_ called the callback?
+That's a better division of responsibilities.
 The container would then be truly UI-less for this functionality.
 
 First, let's change the contract.
-Our callback will be called *not* with the raw event, but with a *boolean* for the shift information:
+Our callback will be called _not_ with the raw event, but with a _boolean_ for the shift information:
 
 ```typescript {4}
 export type CounterProps = {
-  label?: string;
-  count: number;
-  onCounterIncrease: (isShift: boolean) => void;
+ label?: string;
+ count: number;
+ onCounterIncrease: (isShift: boolean) => void;
 };
 ```
 
@@ -222,21 +222,21 @@ Our functional component gains a local arrow function which does the extraction 
 
 ```typescript
 export const Counter: FC<CounterProps> = ({
-  label = "Count",
-  count,
-  onCounterIncrease,
+ label = "Count",
+ count,
+ onCounterIncrease,
 }: CounterProps) => {
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-    onCounterIncrease(event.shiftKey);
-  };
-  return (
-    <div className="counter" onClick={handleClick}>
-      <span title="Count Label">{label}</span>
-      <span id="counter" title="Current Count">
-        {count}
-      </span>
-    </div>
-  );
+ const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+  onCounterIncrease(event.shiftKey);
+ };
+ return (
+  <div className="counter" onClick={handleClick}>
+   <span title="Count Label">{label}</span>
+   <span id="counter" title="Current Count">
+    {count}
+   </span>
+  </div>
+ );
 };
 ```
 
@@ -244,13 +244,13 @@ Our third test can now change, to see if our "spy" was called with a boolean ins
 
 ```typescript {8}
 test("should call the incrementer function", () => {
-  const handler = jest.fn();
-  const { getByTitle } = render(
-    <Counter count={0} onCounterIncrease={handler} />
-  );
-  const counter = getByTitle("Current Count");
-  fireEvent.click(counter);
-  expect(handler).toBeCalledWith(false);
+ const handler = jest.fn();
+ const { getByTitle } = render(
+  <Counter count={0} onCounterIncrease={handler} />
+ );
+ const counter = getByTitle("Current Count");
+ fireEvent.click(counter);
+ expect(handler).toBeCalledWith(false);
 });
 ```
 
@@ -265,8 +265,8 @@ Start by opening `App.tsx` and `App.test.tsx` side-by-side.
 
 First, this `<App/>` component will now have some state.
 We need a type definition for the counter's state.
-We just so happen to have one left behind in `Counter.tsx`. 
-*Remove the initialState and type definition* from that file and paste it into `App.tsx`:
+We just so happen to have one left behind in `Counter.tsx`.
+_Remove the initialState and type definition_ from that file and paste it into `App.tsx`:
 
 ```typescript
 const initialState = { count: 0 };
@@ -290,13 +290,13 @@ Let's make a "method" (arrow function property) that updates the state.
 This arrow function will be the handler that's passed into `<Counter/>`.
 
 ```typescript
-  increment = (isShift: boolean) => {
-    const inc: number = isShift ? 10 : 1;
-    this.setState({ count: this.state.count + inc });
-  };
+increment = (isShift: boolean) => {
+ const inc: number = isShift ? 10 : 1;
+ this.setState({ count: this.state.count + inc });
+};
 ```
 
-Since it is an arrow function, it's `this` is bound to the component instance, *not* the event that will be triggered.
+Since it is an arrow function, it's `this` is bound to the component instance, _not_ the event that will be triggered.
 
 With this in place, we can now update the `render` function:
 
@@ -330,19 +330,19 @@ import userEvent from "@testing-library/user-event";
 // ...
 
 test("updates state when increment is called without shift", () => {
-  const { getByTitle } = render(<App />);
-  const counter = getByTitle("Current Count");
-  expect(counter).toHaveTextContent("0");
-  userEvent.click(counter);
-  expect(counter).toHaveTextContent("1");
+ const { getByTitle } = render(<App />);
+ const counter = getByTitle("Current Count");
+ expect(counter).toHaveTextContent("0");
+ userEvent.click(counter);
+ expect(counter).toHaveTextContent("1");
 });
 
 test("updates state when increment is called with shift", () => {
-  const { getByTitle } = render(<App />);
-  const counter = getByTitle("Current Count");
-  expect(counter).toHaveTextContent("0");
-  userEvent.click(counter, { shiftKey: true });
-  expect(counter).toHaveTextContent("10");
+ const { getByTitle } = render(<App />);
+ const counter = getByTitle("Current Count");
+ expect(counter).toHaveTextContent("0");
+ userEvent.click(counter, { shiftKey: true });
+ expect(counter).toHaveTextContent("10");
 });
 ```
 

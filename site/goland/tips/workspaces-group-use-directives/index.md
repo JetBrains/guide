@@ -10,10 +10,11 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
+
 If you have multiple `use` directives in your `go.work` file, you can merge them in a single one with a quick-fix.
 
 **How to use:**
 
-Place the cursor on a `use` directive, press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_, and select *Merge multiple use directives into one*. 
+Place the cursor on a `use` directive, press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_, and select _Merge multiple use directives into one_.
 
 <span class="tag is-rounded">New in 2022.2</span>

@@ -36,7 +36,6 @@ playlistItems:
   - /goland/tips/local-history/
 ---
 
-
 Editing code is a frequent activity that programmers do. However, editing is not
 only about typing the code but also navigation in a code-base.
 

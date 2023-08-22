@@ -5,7 +5,7 @@ topics:
   - go
   - navigation
 author: dlsniper
-subtitle: 'Search anything in the whole IDE, from identifiers, to file names, to settings'
+subtitle: "Search anything in the whole IDE, from identifiers, to file names, to settings"
 seealso:
   - title: Use quick pop-ups
     href: >-
@@ -15,6 +15,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=SHaP1ezxidc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=106
 ---
+
 **Search Everywhere** helps you search for anything – from IDE settings to parts of your code.
 
 **How to use:**

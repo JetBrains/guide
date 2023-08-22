@@ -15,7 +15,7 @@ thumbnail: ./thumbnail.png
 
 There are several ways to view known vulnerabilities for the dependencies to your project.
 
-In a Maven project, all of your project's dependencies are declared in the pom.xml. When we open the pom.xml file for a project which contains vulnerable dependencies, we see that several dependencies are highlighted. 
+In a Maven project, all of your project's dependencies are declared in the pom.xml. When we open the pom.xml file for a project which contains vulnerable dependencies, we see that several dependencies are highlighted.
 
 ![Maven pom.xml with vulnerable dependencies highlighted](pomxml-highlight.png)
 
@@ -28,4 +28,3 @@ Another way to see all the vulnerable packages is by right-clicking on the pom.x
 ![Open Vulnerable Dependencies tool window from pom.xml](open-from-pomxml.png)
 
 ![Vulnerable Dependencies tool window](vulnerable-dependencies-tool-window.png)
-

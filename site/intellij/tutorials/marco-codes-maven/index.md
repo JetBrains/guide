@@ -19,4 +19,3 @@ tutorialItems:
   - ./maven-repositories/
   - ./multi-module-projects/
 ---
-

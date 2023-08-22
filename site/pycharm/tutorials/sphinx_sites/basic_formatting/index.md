@@ -26,8 +26,8 @@ Let's visit our `http://127.0.0.1:5500/about_us.html` URL in the browser and edi
 As you'd expect, bold and italics works fine. Add the following line:
 
 ```markdown
-We are **bold** and *innovative*.
-``` 
+We are **bold** and _innovative_.
+```
 
 In your browser you should see this new paragraph with `<strong>` and `<em>` formatting:
 
@@ -35,11 +35,11 @@ In your browser you should see this new paragraph with `<strong>` and `<em>` for
 
 Preformatted text -- aka inline `<code>` and block `<pre>` -- also work as expected:
 
-~~~
+```
 Our `def mega_chain` function works really well:
 
     def mega_chain(): return
-~~~
+```
 
 Indentation with `>` also works as "quoted" text:
 
@@ -47,6 +47,7 @@ Indentation with `>` also works as "quoted" text:
 Investors say the best things about us:
 
 > I'm so glad I put my life savings in Schlockchain.
+>
 > > Said Nobody Ever
 ```
 
@@ -54,6 +55,7 @@ Both bulleted and numbered lists are supported:
 
 ```markdown
 We have a patented algorithm:
+
 - Glacially slow
 - Which melts glaciers
 
@@ -69,7 +71,7 @@ Want to link to the Python home page?
 Links follow the regular Markdown syntax:
 
 ```
-Schlockchain is written in [Python](https://www.python.org/) for some 
+Schlockchain is written in [Python](https://www.python.org/) for some
 data science or something reasons.
 ```
 
@@ -125,7 +127,7 @@ While this works well, perhaps we want it served locally.
 Download that URL to a file named `python-logo.png`, in the same directory as `about_us.md`:
 
 ```bash
-$ wget https://www.python.org/static/community_logos/python-logo.png
+wget https://www.python.org/static/community_logos/python-logo.png
 ```
 
 Then change the line you added above to say this instead:
@@ -134,7 +136,7 @@ Then change the line you added above to say this instead:
 ![Python Logo](python-logo.png)
 ```
 
-Hmm, *interesting*!
+Hmm, _interesting_!
 
 As part of the standard Markdown syntax, Sphinx copied that image to the build directory at `_build/html/_images`:
 
@@ -151,7 +153,7 @@ What, then, are [directives](https://www.sphinx-doc.org/en/master/usage/restruct
 These are reStructuredText "extensions" that take optional parameters and return some content -- HTML for the HTML builder, etc.
 They also have semantic meaning in the document.
 
-Directives are *blocks*.
+Directives are _blocks_.
 For inline extensions, RST provides [roles](https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html) which do some of the same things.
 
 ## What's The Meaning Of It All?
@@ -162,15 +164,15 @@ There are hundreds if not thousands of these.
 We'll show in the coming sections the rich engine underneath this syntax.
 But even for these simple "formatting" cases, there's more going on than you'd think:
 
-- *It's not just HTML*. Saying `I am *italic*.` generates `<em>`, right?
+- _It's not just HTML_. Saying `I am *italic*.` generates `<em>`, right?
   No, it actually generates an intermediate, semantic node which can, with other builders, do italics in PDF and more.
 
-- *Rich linking*. With Sphinx+MyST, when Markdown links to something, it isn't just generating an `<a href>`.
+- _Rich linking_. With Sphinx+MyST, when Markdown links to something, it isn't just generating an `<a href>`.
   At a minimum, you can get warned when you link to a target that doesn't exist.
   Moreover, each end of the link knows about the other, as we saw when Sphinx inserted the destination document's title.
 
-- *Rich headings*. A heading makes something big and bold, right?
-  Actually, it indicates *substructure* in a page, which can be put to use in many ways.
+- _Rich headings_. A heading makes something big and bold, right?
+  Actually, it indicates _substructure_ in a page, which can be put to use in many ways.
   The `toctree`, for example, can show not just child documents, but also headings in those documents, as clickable links.
   And further down, to sub-subheadings and beyond.
 

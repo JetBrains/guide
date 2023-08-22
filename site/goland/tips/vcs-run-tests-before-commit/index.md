@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=Uq79t_XpWkc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=122
 ---
+
 **How to use:**
 
 Invoke the _Commit_ feature using _Ctrl + K on Windows/Linux_ and _⌘ + K on macOS_, then select the _Commit options_ and check the **Run Tests** option, then select which test configuration you wish to run.

@@ -7,19 +7,21 @@ author: hs
 subtitle: How to work with a remote Python interpreter.
 thumbnail: thumbnail.png
 videoBottom: true
-video: 'https://youtu.be/6RlgQBB1UDU'
+video: "https://youtu.be/6RlgQBB1UDU"
 ---
 
-We just looked at configuring a local interpreter. But we don’t always have a “local” environment. Sometimes – and increasingly often – our environment is *over there*.
+We just looked at configuring a local interpreter. But we don’t always have a “local” environment. Sometimes – and increasingly often – our environment is _over there_.
 
 Let's learn how to configure remote interpreters – SSH, Docker, Docker Compose, WSL, etc. in PyCharm Professional.
 
 ## New Interpreter
+
 As discussed in the previous step, to run your Python code you’ll need to configure at least one Python interpreter. In this step, we’re going to cover technologies for remote interpreters.
 
-For all of these options, make sure you have Python downloaded and installed on your machine, as well as the technology you want to use. 
+For all of these options, make sure you have Python downloaded and installed on your machine, as well as the technology you want to use.
 
 To setup a remote Python interpreter, you can either:
+
 - Click the Python Interpreter widget in the Status Bar and choose ‘Add Interpreter’.
 - Go directly to the **Add Interpreter** screen in our Settings/Preferences (**⌘,** | **Ctrl+Alt+S**) then click the gear icon and select **Add**.
 
@@ -28,6 +30,7 @@ To setup a remote Python interpreter, you can either:
 Support for remote interpreters is part of PyCharm Professional’s offering. If you haven’t yet, I encourage you to try it now. [It has a free 30-day trial](https://www.jetbrains.com/pycharm/download/).
 
 ## SSH
+
 Let’s start with remote interpreters using SSH. From the Add Python Interpreter dialog, click **SSH Interpreter**. You need to choose to either configure a new server or select an existing one. To configure a new server, select **New server configuration** and specify the server information, including host, port, and username before you click **Next**.
 
 Next, we are going to provide authentication options to establish the connection. You can choose to connect with a password or with a key pair. We will use a password, then click **Next**.
@@ -45,13 +48,14 @@ You can now run this code, but remotely, over SSH. If you want to select an exis
 <img src="ssh-existing-server.png" alt="SSH Existing Server" width="700"/>
 
 ## Docker
+
 Another way you can configure a remote interpreter in PyCharm is with Docker containers. Docker also requires some pre-configuration, so, in order to follow the next steps make sure that you have Docker installed.
 
-In your Preferences/Settings (**⌘** | **Ctrl+Alt+S**) search for *docker* and select *Docker for &lt; your OS here &gt;*. It is under **Build, Execution, Deployment > Docker**.
+In your Preferences/Settings (**⌘** | **Ctrl+Alt+S**) search for _docker_ and select _Docker for &lt; your OS here &gt;_. It is under **Build, Execution, Deployment > Docker**.
 
-For this example, I have already created a PyCharm project called *QuadraticEquation* and added a file called `solver.py`. The project has a local interpreter configured inside a virtual environment. Let’s configure a Docker-based remote interpreter for this project.
+For this example, I have already created a PyCharm project called _QuadraticEquation_ and added a file called `solver.py`. The project has a local interpreter configured inside a virtual environment. Let’s configure a Docker-based remote interpreter for this project.
 
-Click **Add interpreter** to display the Add Python Interpreter dialog and select *Docker* as the server, and add *Python:latest* as the Image name.
+Click **Add interpreter** to display the Add Python Interpreter dialog and select _Docker_ as the server, and add _Python:latest_ as the Image name.
 
 <img src="docker-server.png" alt="Docker Server" width="700"/>
 
@@ -59,18 +63,19 @@ You can leave the Python interpreter path as is, and click **OK**. If you check 
 
 <img src="python-interpreter-status-bar.png" alt="Python Interpreter Status Bar" width="500"/>
 
-Now it’s time to run our code inside the container. To do that, click the gutter icon and select **Run Solver**. The script will be launched in the Run tool window, and here you can see the container ID where it is running. If you want to double-check it, go to the Services tool window, expand the *Containers* node, click **Properties** and here you can check the Container ID.
+Now it’s time to run our code inside the container. To do that, click the gutter icon and select **Run Solver**. The script will be launched in the Run tool window, and here you can see the container ID where it is running. If you want to double-check it, go to the Services tool window, expand the _Containers_ node, click **Properties** and here you can check the Container ID.
 
 <img src="services-window.png" alt="Services Window" width="800"/>
 
 ## Docker Compose
+
 If you want to run multiple containers instead of one at a time, you could use Docker compose to configure remote Python interpreters in PyCharm.
 
 In this example we are going to use a Django application with a PostgreSQL database running in a separate container. Let's start by cloning the project from GitHub. In this example we created two containers, one for the database and one for the application, and have Docker Compose linking them together.
 
-This repository already has a `Dockerfile` and a `docker-compose.yml` file. We are creating two services, one web and one database. With these files in place we can start configuring Docker Compose. 
+This repository already has a `Dockerfile` and a `docker-compose.yml` file. We are creating two services, one web and one database. With these files in place we can start configuring Docker Compose.
 
-In your Preferences/Settings (**⌘** | **Ctrl+Alt+S**) search for *docker* and select *Docker for &lt; your OS here &gt;*. It should be under **Build, Execution, Deployment > Docker**. It might already be configured from the earlier step. On your Status Bar click the current interpreter name and select **Add Interpreter** then select *Docker Compose* from the list.
+In your Preferences/Settings (**⌘** | **Ctrl+Alt+S**) search for _docker_ and select _Docker for &lt; your OS here &gt;_. It should be under **Build, Execution, Deployment > Docker**. It might already be configured from the earlier step. On your Status Bar click the current interpreter name and select **Add Interpreter** then select _Docker Compose_ from the list.
 
 For the server, select “Docker”. The configuration file is the `docker-compose.yml` file we created earlier. Service is the entry service declared inside your `docker-compose` file. In this case, we will use our web service. All other containers in the compose file will be started together with this one as if you started them with the command `docker-compose up` from the command line. In this case we will not configure any environmental variables or change the Python interpreter path.
 
@@ -89,9 +94,10 @@ We need to update our ‘HOST’ to 0.0.0.0 and click **OK**.
 To run it click the **play** button, wait until everything is launched, and then click the link to open it in the default browser. That’s it, we configured a set of services to run under Docker Compose, integrated into the IDE’s tooling, then successfully launched our app.
 
 ## WSL
+
 The last way to configure a remote interpreter in PyCharm is using the Windows subsystem for Linux - WSL. This is available for Windows users-only.
 
-First, you need to do some prep from your side. Make sure you have Python installed on your computer and install the Windows Subsystem for Linux and initialize your Linux distribution. You also need to ensure that you have *rsync* installed.
+First, you need to do some prep from your side. Make sure you have Python installed on your computer and install the Windows Subsystem for Linux and initialize your Linux distribution. You also need to ensure that you have _rsync_ installed.
 
 We’ll add a Python interpreter based on WSL. Let's click the Project interpreter in your Status Bar again and select **Add interpreter**.
 
@@ -99,16 +105,18 @@ In the Add Interpreter dialog, select WSL from the list. Let's select the Linux 
 
 <img src="add-wsl.png" alt="Add WSL" width="700"/>
 
-Click **OK** and PyCharm will add the interpreter to the project and set the path mappings. When working in WSL it’s also good to configure your terminal in WSL. You can do this from your Preferences/Settings (**⌘** | **Ctrl+Alt+S**) by searching for *terminal* under **Tools &lt; Terminal**.
+Click **OK** and PyCharm will add the interpreter to the project and set the path mappings. When working in WSL it’s also good to configure your terminal in WSL. You can do this from your Preferences/Settings (**⌘** | **Ctrl+Alt+S**) by searching for _terminal_ under **Tools &lt; Terminal**.
 
-Select the subsystem path from the dropdown in the *Shell path* field and click **OK**. Type *wsl.exe* in the Shell path field and click **OK**. You now have a WSL-based Python environment and interpreter to use for this project, just like our other kinds of interpreters.
+Select the subsystem path from the dropdown in the _Shell path_ field and click **OK**. Type _wsl.exe_ in the Shell path field and click **OK**. You now have a WSL-based Python environment and interpreter to use for this project, just like our other kinds of interpreters.
 
 <img src="terminal-configuration.png" alt="Terminal configuration" width="700"/>
 
 ## Conclusion
+
 And that’s it for configuring remote interpreters in PyCharm Professional!
 
 In the next step, we’ll see how to install and manage Python packages in PyCharm.
 
 ## Video
+
 You can also check out the video for this step from our Getting Started series on YouTube:

@@ -11,7 +11,8 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=ITCnQrd7Fco&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=32
 ---
-*Be on top of your dependencies and quickly locate unused modules with this inspection.*
+
+_Be on top of your dependencies and quickly locate unused modules with this inspection._
 
 **How to use:**
 

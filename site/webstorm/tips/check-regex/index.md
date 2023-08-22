@@ -19,7 +19,8 @@ animatedGif:
   width: 600
   height: 300
 ---
-In WebStorm, you can test regular expressions on the fly. For this, 
-place the caret at the expression you want to test, press *Alt+Enter*, 
-select *Check RegExp* and then try a few sample combinations in the 
+
+In WebStorm, you can test regular expressions on the fly. For this,
+place the caret at the expression you want to test, press _Alt+Enter_,
+select _Check RegExp_ and then try a few sample combinations in the
 appeared popup.

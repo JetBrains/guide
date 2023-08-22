@@ -7,6 +7,20 @@ job("Build Guide") {
     buildAndDeployStaging()
 }
 
+job("Run lint") {
+    startOn {
+        gitPush {
+            enabled = true
+
+            branchFilter {
+                -"refs/merge/*"
+                -"refs/pull/*"
+            }
+        }
+    }
+    runLint()
+}
+
 job("Run tests") {
     startOn {
         gitPush {
@@ -18,7 +32,6 @@ job("Run tests") {
             }
         }
     }
-
     runTests()
 }
 
@@ -108,6 +121,7 @@ fun Job.buildAndDeployStaging() {
     }
 
     parallel {
+        runLint()
         runTests()
         buildSite()
     }
@@ -149,6 +163,23 @@ fun StepsScope.runTests() {
                 ## Run tests
                 npm install
                 npm run test
+            """.trimIndent()
+        }
+    }
+}
+
+fun StepsScope.runLint() {
+    container(image = nodeJsContainerImage, displayName = "Run lint") {
+        resources {
+            cpu = 4.cpu
+            memory = 4.gb
+        }
+
+        shellScript {
+            content = """
+                ## Run linting
+                npm install
+                npm run lint
             """.trimIndent()
         }
     }

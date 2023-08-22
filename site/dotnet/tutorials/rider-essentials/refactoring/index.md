@@ -8,9 +8,9 @@ topics:
   - refactoring
   - rider
 author: rachelappel
-subtitle: 'Learn how to safely refactor code, without breaking the build.'
+subtitle: "Learn how to safely refactor code, without breaking the build."
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/kGXj_LY2pU4'
+video: "https://youtu.be/kGXj_LY2pU4"
 ---
 
 ### Refactoring your Code

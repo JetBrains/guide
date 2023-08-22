@@ -12,7 +12,7 @@ topics:
 author: maartenba
 subtitle: Stefan Pölz
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/azJm_Y2nbAI'
+video: "https://youtu.be/azJm_Y2nbAI"
 ---
 
 (Incremental) source generators allow us to trade in a bit of compile time for better performance during runtime: instead of resorting to general-purpose types and methods, we may utilize auto-generated variants optimized specifically for our user code. With these at our fingertips, we can facilitate high-performance scenarios by, for example, using a Reflection-free source. If nothing else, this Roslyn-based metaprogramming relieves authors of writing repetitive patterns over and over again.
@@ -25,4 +25,4 @@ While source generators (compatible with the .NET 5 SDK) potentially cause a slu
 
 Stefan’s passion is to practice clean code and test-driven development in order to build maintainable software in an ever-evolving team, supported by tools from the .NET ecosystem. Stefan loves to attend and speak at public developer events and author open source projects, complementing his expertise in professional software development.
 
-* Twitter: https://twitter.com/0x_F0
+- Twitter: <https://twitter.com/0x_F0>

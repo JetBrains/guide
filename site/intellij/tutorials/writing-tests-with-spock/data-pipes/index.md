@@ -9,7 +9,7 @@ subtitle: >-
   Often we want to test the same set of criteria with different sets of data.
   Data pipes is one mechanism to do this.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/i5Qu3qYOfsM?start=829'
+video: "https://youtu.be/i5Qu3qYOfsM?start=829"
 ---
 
 When we're testing a particular path, we sometimes want to check that a known set of values leads to the same result.
@@ -42,7 +42,7 @@ sides << [-1, 0, 1, 2]
 There are a couple of Groovy things to note here:
 
 - Firstly, Groovy supports [operator overloading](https://groovy-lang.org/operators.html#Operator-Overloading), so the left-shift operator (`<<`) here means "this is the pipeline of values to use in the test";
-- Secondly, Groovy has a [friendly syntax for creating lists of values](http://docs.groovy-lang.org/latest/html/documentation/working-with-collections.html#_list_literals), which is to simply put the values between square brackets.
+- Secondly, Groovy has a [friendly syntax for creating lists of values](httphttps://docs.groovy-lang.org/latest/html/documentation/working-with-collections.html#_list_literals), which is to simply put the values between square brackets.
 
 The `where` block says "run this test with each of the following values: a negative value, zero, one and two".
 
@@ -94,7 +94,7 @@ Create another test:
 def "should be able to create a polygon with #sides sides"() {
     when:
     def polygon = new Polygon(sides)
-    
+
     then:
     polygon.numberOfSides == sides
 
@@ -119,6 +119,6 @@ def "should be able to create a polygon with #sides sides"() {
 }
 ```
 
-Now we've seen how to write Spock tests that use data pipes to input lots of different values to a test. This means we can test and document the expected behaviour of the code under many conditions. 
+Now we've seen how to write Spock tests that use data pipes to input lots of different values to a test. This means we can test and document the expected behaviour of the code under many conditions.
 
 Next, we'll look at data tables, another mechanism to do the same thing.

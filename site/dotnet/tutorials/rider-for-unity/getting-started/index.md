@@ -13,7 +13,7 @@ author: citizenmatt
 subtitle: What is Rider? And how to start using it with Unity?
 thumbnail: ./thumbnail.png
 video:
-  url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
+  url: "https://www.youtube.com/watch?v=gNTOFr_TQCg"
   start: 162
   end: 315
 ---

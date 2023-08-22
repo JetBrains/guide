@@ -11,6 +11,7 @@ thumbnail: ./thumbnail.png
 ---
 
 Writing code is an integral part of our jobs and it's worth knowing what IntelliJ IDEA can do here to help you write great code. We will look at:
+
 - Completing Code
 - Generating Code
 - Running Anything
@@ -25,7 +26,7 @@ There are lots of different types of code completion in IntelliJ IDEA including 
 
 Basic completion should be available out-of-the-box, but if not you can use (**⌃␣** | **Ctrl+Space**) to invoke it. For smart or type-based matching completion use (**⌃⇧␣** | **Ctrl+Shift+Space**). It's worth getting use to using type-based matching completion in your code base as IntelliJ IDEA will offer you the type applicable to your current context.
 
-Statement completion (**⌘⇧⏎** | **Ctrl+Shift+Return**) is a great way to keep your code green and compiling. When you use this shortcut, IntelliJ IDEA will do the minimum needed to make your code compile. 
+Statement completion (**⌘⇧⏎** | **Ctrl+Shift+Return**) is a great way to keep your code green and compiling. When you use this shortcut, IntelliJ IDEA will do the minimum needed to make your code compile.
 
 Postfix completion allows you to keep typing forward. It's a more linguistically natural way of thinking and arguably more efficient to _type forward_ all the time.
 
@@ -41,7 +42,7 @@ IntelliJ IDEA is excellent at generating code constructs for you. It's always wo
 - equals and hashCode methods
 - override methods
 
-... and more. You can also use the same shortcut to generate new files in your Project tool window. 
+... and more. You can also use the same shortcut to generate new files in your Project tool window.
 
 ## Running Anything
 
@@ -55,6 +56,6 @@ Similarly to Search Everywhere, Run Anything (**⌃⌃** | **Ctrl+Ctrl**) allows
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4-TO8pNIuks" >
 </iframe>
 
-Managing dependencies is something that we're all likely to need to do sooner or later and IntelliJ IDEA supports multiple ways of achieving it. Many of you will be used to using IntelliJ IDEA's completion capabilities in the `pom.xml` or `build.gradle` file. 
+Managing dependencies is something that we're all likely to need to do sooner or later and IntelliJ IDEA supports multiple ways of achieving it. Many of you will be used to using IntelliJ IDEA's completion capabilities in the `pom.xml` or `build.gradle` file.
 
 IntelliJ IDEA has also introduced a Dependencies window which you can access with Search Everywhere (**⇧⇧** + **Shift+Shift**) and then by typing in "dependencies" and pressing Enter. In this window you can add, remove and update you dependencies. You can also take a look at [Package Search](https://package-search.jetbrains.com/) if you don't have the IDE open.

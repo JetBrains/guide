@@ -10,7 +10,7 @@ subtitle: >-
   have to initialise the whole application to test a section, and we can use
   mocks to check our code is making the calls we expect.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/i5Qu3qYOfsM?start=1290'
+video: "https://youtu.be/i5Qu3qYOfsM?start=1290"
 ---
 
 Sometimes we need to mock out classes or APIs to assert the expected behaviour. [Mocking is built in to Spock](https://spockframework.org/spock/docs/2.0/all_in_one.html#interaction-based-testing), we don't need a separate library or framework for Mock support. It's also possible to mock concrete classes. If you're used to other Mocking frameworks you might expect to only be able to mock Java interfaces, but Spock lets us easily [create a mock](http://spockframework.org/spock/docs/2.0/all_in_one.html#_creating_mock_objects) from a concrete class.
@@ -36,6 +36,7 @@ This test mocks a [Renderer](https://github.com/trishagee/spock-testing-demo/blo
 ```groovy
 Renderer renderer = Mock()
 ```
+
 ...or if we prefer to use Groovy's `def` to define our variables, we'll need to pass the type in as an argument to the Mock method:
 
 ```groovy

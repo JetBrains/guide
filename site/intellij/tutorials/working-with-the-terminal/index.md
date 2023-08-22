@@ -22,4 +22,3 @@ tutorialItems:
   - ./run-ide-features-from-the-terminal/
   - ./summary-and-shortcuts/
 ---
-

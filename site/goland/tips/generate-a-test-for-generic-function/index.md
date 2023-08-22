@@ -10,8 +10,9 @@ author: ap
 subtitle: Use a shortcut to generate test files for your generic functions.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/JL7BJ41u66w'
+video: "https://youtu.be/JL7BJ41u66w"
 ---
-You can now generate tests for functions with generic parameters. 
+
+You can now generate tests for functions with generic parameters.
 
 To generate a test for a generic function, click the function, press _Ctrl + Shift + T on Windows/Linux_ or _⌘ + ⇧ + T on macOS_, and select **Test for function** from the popup.

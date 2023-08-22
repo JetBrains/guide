@@ -12,7 +12,7 @@ subtitle: >-
   What is your code doing? Identify problematic code, and run code step-by-step
   with the debugger.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/ZIEiWWz60Z4'
+video: "https://youtu.be/ZIEiWWz60Z4"
 ---
 
 ### A Better Debugging Experience
@@ -37,11 +37,12 @@ You can also can choose which values get displayed inline, so you don't have to 
 When dealing with breakpoints, it's easy to forget when and where you placed them. ReSharper comes with [**Go to Breakpoints**](https://www.jetbrains.com/help/resharper/Navigation_and_Search_Navigating_Breakpoints.html) - you can trigger it using the <kbd>Ctrl+Alt+F9</kbd> shortcut.
 
 ReSharper also adds a custom breakpoints tool window, where you can:
-* Group breakpoints by file/folder/project/type/member
-* Type to search for breakpoints
-* Enable/disable, or remove breakpoints
-* See a preview of the code where you set the breakpoint
-* And more!
+
+- Group breakpoints by file/folder/project/type/member
+- Type to search for breakpoints
+- Enable/disable, or remove breakpoints
+- See a preview of the code where you set the breakpoint
+- And more!
 
 > **Tip:** To track a symbol across your solution, use the **Find Results** tool window and then **Set a Breakpoint** on all occurrences.
 

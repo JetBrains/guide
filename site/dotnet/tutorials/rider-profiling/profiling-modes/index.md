@@ -14,7 +14,7 @@ subtitle: >-
   What are the differences between Sampling, Tracing, Line-by-Line, and Timeline
   profiling?
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/6dD74hFW82s'
+video: "https://youtu.be/6dD74hFW82s"
 ---
 
 ### Sampling, Tracing, Line-by-Line, and Timeline
@@ -22,8 +22,8 @@ video: 'https://youtu.be/6dD74hFW82s'
 In the previous step, you profiled the Sudoku solver with the Timeline profiling mode. There are several other profiling
 modes in Rider: Sampling, Tracing, Line-by-Line, and Timeline.
 
-* Sampling and Timeline — Collects information about method execution times in your application. Timeline collects additional data about application events, distributed over time. This makes it easier to investigate UI freezes, garbage collection issues, thread starvation and so on.
-* Tracing and Line-by-Line — Collects information about the number of times a method in your application is called. Tracing does this at the method level, Line-by-Line tracks call numbers at the statement level.
+- Sampling and Timeline — Collects information about method execution times in your application. Timeline collects additional data about application events, distributed over time. This makes it easier to investigate UI freezes, garbage collection issues, thread starvation and so on.
+- Tracing and Line-by-Line — Collects information about the number of times a method in your application is called. Tracing does this at the method level, Line-by-Line tracks call numbers at the statement level.
 
 Generally, your profiling workflow starts with Sampling or Timeline profiling. These have low overhead, and come in handy
 to do most performance analysis on your application.

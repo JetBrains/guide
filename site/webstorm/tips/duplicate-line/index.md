@@ -16,4 +16,5 @@ animatedGif:
   width: 600
   height: 300
 ---
-Use *Ctrl+D/Cmd+D* to quickly duplicate a line or block in WebStorm.
+
+Use _Ctrl+D/Cmd+D_ to quickly duplicate a line or block in WebStorm.

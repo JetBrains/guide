@@ -8,7 +8,7 @@ author: dlsniper
 subtitle: Avoid interruption by letting GoLand generate your imports as you type.
 seealso:
   - title: Creating and Optimizing Imports
-    href: 'https://www.jetbrains.com/help/go/creating-and-optimizing-imports.html'
+    href: "https://www.jetbrains.com/help/go/creating-and-optimizing-imports.html"
   - title: Basic Completion
     href: >-
       https://www.jetbrains.com/help/go/auto-completing-code.html#basic_completion
@@ -17,7 +17,8 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=XTk7QlnVM5c&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=69
 ---
-*Tired of stopping your coding to go write an import?*
+
+_Tired of stopping your coding to go write an import?_
 
 Type what you want, let GoLand do the rest.
 

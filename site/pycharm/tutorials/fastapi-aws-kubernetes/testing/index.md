@@ -10,7 +10,7 @@ topics:
 author: mm
 subtitle: Writing Unit Tests using Pytest & Asyncio.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=uk7EcDIZEfY'
+video: "https://www.youtube.com/watch?v=uk7EcDIZEfY"
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
@@ -28,28 +28,26 @@ and concurrency library that works on top of either asyncio or [Trio](https://tr
 
 We won’t be working on anyio because our video was recorded earlier, and we will be using the **pytest-asyncio** module.
 
-
 pytest-asyncio is an Apache2 licensed library, written in Python, for testing asyncio code with pytest.
 
 Along with pytest we also use [HTTPX](https://github.com/projectdiscovery/httpx).
 
 ![step2](./steps/step2.png)
 
-
-HTTPX is a fully featured fast HTTP client for Python 3, which provides sync and async APIs, and 
+HTTPX is a fully featured fast HTTP client for Python 3, which provides sync and async APIs, and
 support for both HTTP/1.1 and HTTP/2.
 
 Do check the official documentation, it has tons of cool examples.
 
-Even if you don’t want to use asyncio, you can work with the ```TestClient``` which is backed by **Starlette**.
+Even if you don’t want to use asyncio, you can work with the `TestClient` which is backed by **Starlette**.
 
 Reference :
+
 - [https://fastapi.tiangolo.com/tutorial/testing/](https://fastapi.tiangolo.com/tutorial/testing/)
 
-There is an interesting article written by [Anthony Shaw](https://tonybaloney.github.io/) : **async test patterns for Pytest**, do check that out. 
+There is an interesting article written by [Anthony Shaw](https://tonybaloney.github.io/) : **async test patterns for Pytest**, do check that out.
 
 - [https://tonybaloney.github.io/posts/async-test-patterns-for-pytest-and-unittest.html](https://tonybaloney.github.io/posts/async-test-patterns-for-pytest-and-unittest.html)
-
 
 # Setting Up
 
@@ -57,12 +55,10 @@ Coming back to PyCharm, as you know for testing we need to have a separate test 
 
 I will create a new package called **tests**.
 
-I will create a new file under root and name it **conf_test_db**. Here we are going to set up 
+I will create a new file under root and name it **conf_test_db**. Here we are going to set up
 the engine for our test database.
 
-
 ![step3](./steps/step3.png)
-
 
 Let me do the necessary imports.
 
@@ -107,7 +103,7 @@ def override_get_db():
 app.dependency_overrides[get_db] = override_get_db
 ```
 
-As you can see we are trying to override the dependencies. 
+As you can see we are trying to override the dependencies.
 
 ![step5](./steps/step5.png)
 
@@ -117,16 +113,14 @@ You don't want the original dependency to run (nor any of the sub-dependencies i
 to provide a different dependency that will be used only during tests (possibly only some specific tests), and
 will provide a value that can be used where the value of the original dependency was used.
 
-
 Next, we will be creating a file name **conftest** under **tests** directory. This will contain the base config for our pytest.
-
 
 I will do necessary imports and along-with that I will create a pytest
 fixture which will create a dummy user before our test runs.
 
 ![step6](./steps/step6.png)
 
-The purpose of a test fixture is to ensure that there is a well known and fixed environment in 
+The purpose of a test fixture is to ensure that there is a well known and fixed environment in
 which tests are run so that results are repeatable.
 
 Examples of fixtures:
@@ -135,10 +129,9 @@ Examples of fixtures:
 - Copying a specific known set of files
 - Preparation of input data and set-up/creation of fake or mock objects
 
-
 ![step7](./steps/step7.png)
 
-You can see we have set auto use to True. As per pytest documentation, Sometimes you may want to have a 
+You can see we have set auto use to True. As per pytest documentation, Sometimes you may want to have a
 fixture (or even several) that you know all your tests will depend on. **“Autouse”** fixtures are a convenient
 way to make all tests automatically request them.
 
@@ -171,7 +164,6 @@ def create_dummy_user(tmpdir):
 
 We are done now with the configuration. Let’s begin our first test.
 
-
 # Begin Testing
 
 I will create different modules and place them under tests. We will begin first with users.
@@ -180,7 +172,7 @@ I will create different modules and place them under tests. We will begin first 
 
 I will do the necessary imports, and then I will create a function to test all users.
 
-I will retrieve the access token and pass it in the api headers. If everything is good then I 
+I will retrieve the access token and pass it in the api headers. If everything is good then I
 will get a 200 status code. It’s a very basic test of what I am trying to do.
 
 ![step9](./steps/step9.png)
@@ -219,7 +211,7 @@ I will click on the plus (+) sign and add pytest.
 
 ![step12](./steps/step12.png)
 
-I am going to provide a name and set target to custom and finally 
+I am going to provide a name and set target to custom and finally
 update the working directory. Make sure it’s pointing to the correct python interpreter.
 
 ![step13](./steps/step13.png)
@@ -237,7 +229,7 @@ Let’s cover the remaining modules.
 We will now write the unit test for the user registration.
 
 I am using a faker library, which helps me in getting dummy names, email, password etc. [Faker](https://faker.readthedocs.io/en/master/)
-is basically a Python package that generates fake data for you. 
+is basically a Python package that generates fake data for you.
 
 ```
 pip install Faker==8.12.0
@@ -309,7 +301,6 @@ async def test_delete_category():
 ```
 
 We are done with the category, next we will create a file for products where we will test the create and listing endpoints.
-
 
 **test_products.py**
 
@@ -401,7 +392,7 @@ We are now done with the products, let’s test it out.
 
 Yes, all the seven apis have passed successfully.
 
-Next, we will complete the remaining modules like ```orders```, ```cart```, ```home``` and ```login```.
+Next, we will complete the remaining modules like `orders`, `cart`, `home` and `login`.
 
 Same kind of operation I will be doing, you can follow me.
 
@@ -479,9 +470,9 @@ async def test_cart_listing():
 
 ![step20](./steps/step20.png)
 
-As you can see on line number 11, once you place an order successfully, you need to send an email. But this 
+As you can see on line number 11, once you place an order successfully, you need to send an email. But this
 is something we need to do on a live server, not during a test, so I will try to do a mock which basically is
-going to return true. 
+going to return true.
 
 Mocking means **creating a fake version of an external or internal service that can stand
 in for the real one**.
@@ -525,18 +516,16 @@ async def test_order_listing():
 
 We have finally completed all the unit tests. Let me run and check the results.
 
-Great! 13 of 13 tests have been successfully passed, and it was quite fast. 
+Great! 13 of 13 tests have been successfully passed, and it was quite fast.
 
 ![step21](./steps/step21.png)
 
-
-So, I hope you understand the testing flow. I do recommend checking the FastAPI pytest documentation 
+So, I hope you understand the testing flow. I do recommend checking the FastAPI pytest documentation
 if you want to get deeper into this topic.
 
+I also recommend checking out this book :
 
-I also recommend checking out this book : 
-
-[Python Testing with pytest](https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/), Second Edition 
+[Python Testing with pytest](https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/), Second Edition
 written by [Brian Okken](https://twitter.com/brianokken) which is expected to be released in 2022.
 
 ![step22](./steps/step22.jpg)
@@ -545,7 +534,4 @@ Image Credit: [The Pragmatic Bookshelf](https://pragprog.com/)
 
 There are lots of things which we did not cover, but it’s covered in this book. I hope you will enjoy it.
 
-
 I am going to see you in the next tutorial, where we will be focusing on deploying our application on Kubernetes.
-
-

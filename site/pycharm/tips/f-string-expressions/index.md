@@ -7,10 +7,10 @@ author: pwe
 subtitle: Bracket completion and syntax highlighting for f-string evaluated expressions.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://www.youtube.com/watch?v=OCddA6pSUOk'
+video: "https://www.youtube.com/watch?v=OCddA6pSUOk"
 ---
 
-*IDE features, inside your Python f-strings.*
+_IDE features, inside your Python f-strings._
 
 f-string evaluated expressions get completion on brackets and syntax highlighting.
 

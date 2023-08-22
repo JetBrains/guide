@@ -10,11 +10,12 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (video) CodeGeneration in IntelliJ IDEA
-    href: 'https://www.youtube.com/watch?v=btqCYUc3nFE'
-  - title: '(video) Helen''s Take On: Generating Code in IntelliJ IDEA'
-    href: 'https://www.youtube.com/watch?v=vF_18ZsM1lE'
+    href: "https://www.youtube.com/watch?v=btqCYUc3nFE"
+  - title: "(video) Helen's Take On: Generating Code in IntelliJ IDEA"
+    href: "https://www.youtube.com/watch?v=vF_18ZsM1lE"
   - title: (documentation) IntelliJ IDEA Help - Generate code
-    href: 'https://www.jetbrains.com/help/idea/generating-code.html'
-video: 'https://youtu.be/7614UdY614c'
+    href: "https://www.jetbrains.com/help/idea/generating-code.html"
+video: "https://youtu.be/7614UdY614c"
 ---
+
 Press **⌘N** (macOS), or **Alt**+**Ins** (Windows/Linux) to open the _Generate_ menu. The options you get will depend on the testing framework you are using in your project, for example, JUnit 5.

@@ -8,7 +8,7 @@ author: tg
 subtitle: Inspections can guide us to use new Java features
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/qCfuQkddCEM'
+video: "https://youtu.be/qCfuQkddCEM"
 ---
 
 If our code uses an instanceof followed by a cast, IntelliJ IDEA highlights
@@ -20,13 +20,13 @@ Press **⌥⏎** (macOS) or **Alt+Enter** (Windows/Linux) and choose "Replace wi
 
 ```java
 public class PatternMatchingSwitch {
-	
-	void outputValueInUpperCase(Object obj) {
-		if (obj instanceof String) {
-			String s = (String) obj;
-			System.out.println(s);
-		}
-	}
+
+ void outputValueInUpperCase(Object obj) {
+  if (obj instanceof String) {
+   String s = (String) obj;
+   System.out.println(s);
+  }
+ }
 }
 ```
 

@@ -19,6 +19,7 @@ animatedGif:
   width: 600
   height: 300
 ---
-The *Speed search* functionality can help you quickly find an item in various tool windows and popups.
 
-Open a tool window or a popup, start typing the name of the item you'd like to find, and you'll see the *Search for* field. The list will become more refined as you type.
+The _Speed search_ functionality can help you quickly find an item in various tool windows and popups.
+
+Open a tool window or a popup, start typing the name of the item you'd like to find, and you'll see the _Search for_ field. The list will become more refined as you type.

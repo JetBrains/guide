@@ -9,7 +9,7 @@ topics:
 author: er
 seealso:
   - title: How to use scratches
-    href: 'https://www.jetbrains.com/help/webstorm/scratches.html'
+    href: "https://www.jetbrains.com/help/webstorm/scratches.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -17,6 +17,7 @@ animatedGif:
   width: 600
   height: 300
 ---
-Need to make notes or draft up some code outside of the project context? Use scratches! Press 
-*Cmd+Shift+N* on macOS or *Ctrl+Shift+Alt+Insert* on Windows/Linux and then 
+
+Need to make notes or draft up some code outside of the project context? Use scratches! Press
+_Cmd+Shift+N_ on macOS or _Ctrl+Shift+Alt+Insert_ on Windows/Linux and then
 select the language of the scratch file.

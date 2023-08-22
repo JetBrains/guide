@@ -6,9 +6,9 @@ topics: []
 author: hs
 subtitle: Enough said! f%&!
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/6FFNeDiRGK0&start=320s'
+video: "https://youtu.be/6FFNeDiRGK0&start=320s"
 ---
 
-## f%&!
+## f%&
 
-* Magnificent app that corrects errors in previous console commands.
+- Magnificent app that corrects errors in previous console commands.

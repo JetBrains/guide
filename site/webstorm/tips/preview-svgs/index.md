@@ -7,7 +7,7 @@ topics:
 author: er
 seealso:
   - title: Settings for images in WebStorm
-    href: 'https://www.jetbrains.com/help/webstorm/settings-images.html'
+    href: "https://www.jetbrains.com/help/webstorm/settings-images.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -15,5 +15,6 @@ animatedGif:
   width: 600
   height: 300
 ---
-You can preview images right from the Project view – just press *Alt+Space* 
-on macOS or *Ctrl+Shift+I* on Windows and Linux.
+
+You can preview images right from the Project view – just press _Alt+Space_
+on macOS or _Ctrl+Shift+I_ on Windows and Linux.

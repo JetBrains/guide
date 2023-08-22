@@ -18,5 +18,3 @@ tutorialItems:
   - ./dependency-tool-window/
   - ./summary/
 ---
-
-

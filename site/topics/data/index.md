@@ -3,7 +3,8 @@ title: Data Access
 subtitle: Working with data storage mechanisms
 accent: primary
 icon: fas fa-database
-obsoletes: ["/dotnet/topics/data/"]
+obsoletes:
+  - /dotnet/topics/data/
 ---
 
 Data access is critical to many line-of-business applications. Whether it is a traditional SQL relational database or the latest in NoSQL storage, JetBrains can help with first-class tools.

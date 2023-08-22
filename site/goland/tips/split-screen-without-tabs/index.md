@@ -18,6 +18,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=bPiX6d4nYY8&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=149
 ---
+
 You can view multiple files at the same time using
 **Split Horizontal** and **Split Vertical**.
 

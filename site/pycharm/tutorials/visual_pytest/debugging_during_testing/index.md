@@ -11,14 +11,14 @@ subtitle: >-
   When writing tests, use the PyCharm "visual debugger" to interactively poke
   around in the context of a problem.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/feBYCeOk4As'
+video: "https://youtu.be/feBYCeOk4As"
 ---
 
-Primary guardian, great! 
+Primary guardian, great!
 But what happens if there are no guardians yet?
-In this step we tackle that problem by combining two great features: visual *testing* with visual *debugging*.
+In this step we tackle that problem by combining two great features: visual _testing_ with visual _debugging_.
 
-*Note: In the next tutorial step we do some coding for this situation.*
+_Note: In the next tutorial step we do some coding for this situation._
 
 # Guardian-less
 
@@ -51,12 +51,12 @@ def test_primary_guardian(player_one):
 
 Your tests run, but...nada.
 `pytest` is capturing output.
-Besides, you've now changed your *code* as part of investigating a problem.
+Besides, you've now changed your _code_ as part of investigating a problem.
 Not smart.
 
 You could learn how to generate console output in `pytest`, but that would be the same issue -- writing debugging statements into your code which you might accidentally check in.
 
-The debugger was meant for this. 
+The debugger was meant for this.
 Fortunately PyCharm has a great "visual" debugger, tightly integrated with "visual testing."
 Let's use that.
 
@@ -67,7 +67,7 @@ This adds a red circle to indicate a breakpoint at `assert player_one.primary_gu
 
 ![Set Breakpoint](./breakpoint.png)
 
-Let's now run that *one* test, but under the debugger, which itself will then run `pytest`.
+Let's now run that _one_ test, but under the debugger, which itself will then run `pytest`.
 Click the green triangle in the gutter to the left of `test_primary_guardian` and choose `Debug 'pytest for test_play...'.
 This brings up a new tool window in the bottom, running the debugger:
 
@@ -78,8 +78,8 @@ Our `Variables` pane shows that `player_one` exists in the scope and we can take
 
 ![Expanded Variable in Debugger](./no_guardians.png)
 
-Aha, that's the problem! 
-But let's say we *still* couldn't spot it. We want to poke around interactively.
+Aha, that's the problem!
+But let's say we _still_ couldn't spot it. We want to poke around interactively.
 
 Highlight `player_one.primary_guardian` in that line of code -- the one triggering the error -- then right click and choose `Evaluate Expression`.
 When you click the `Evaluate` button, you see the output:
@@ -97,4 +97,3 @@ Finish up by removing the `assert player_one.primary_guardian` line and clearing
 Close the debugger tool window by clicking on its `(x)`.
 
 The debugger is a fantastic tool when doing TDD -- not just when you have a problem, but whenever you want to explore.
-

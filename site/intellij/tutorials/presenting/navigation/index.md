@@ -14,7 +14,7 @@ We can **Find a class** using **⌘ O** (on Mac) or **Ctrl+N** (on Windows/Linux
 
 ![Find class](find-class.png)
 
-We can move the caret to a method and use **⌘ B** (on Mac) or **Ctrl+B** (on Windows/Linux) to go to the declaration or usages. 
+We can move the caret to a method and use **⌘ B** (on Mac) or **Ctrl+B** (on Windows/Linux) to go to the declaration or usages.
 
 ![Find usages](find-usages.png)
 

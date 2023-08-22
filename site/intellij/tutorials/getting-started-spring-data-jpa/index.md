@@ -28,6 +28,7 @@ tutorialItems:
 **See Also - Marco Codes**
 
 In addition to this tutorial, we recommend you check out [Marco Codes - JDBC Tutorial - Crash Course](https://www.youtube.com/watch?v=KgXq2UBNEhA) to learn about:
+
 - How to use JDBC, i.e. the basic API that every Java program uses to access databases
 - Understand what JDBC drivers are and where to get them
 - How to use an embedded H2 database, in addition to the usual suspects like MySQL or Postgres

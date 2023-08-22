@@ -10,15 +10,14 @@ topics:
 author: mm
 subtitle: Setting up database migrations with Alembic.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=CWm40_n0eu8'
+video: "https://www.youtube.com/watch?v=CWm40_n0eu8"
 ---
 
-Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. In this tutorial we are going to connect FastAPI with Postgres. 
-
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. In this tutorial we are going to connect FastAPI with Postgres.
 
 # DataGrip
 
-Before moving ahead, let us connect to our Postgres database via the 
+Before moving ahead, let us connect to our Postgres database via the
 [DataGrip](https://www.jetbrains.com/datagrip/) plugin which is already
 bundled in PyCharm Professional.
 
@@ -26,9 +25,7 @@ I will click on the Database Explorer, then click on **plus (+)** and I will cho
 
 ![step1](./steps/step1.png)
 
-
-I will provide necessary credentials like host, port, username, password & database name.     
-
+I will provide necessary credentials like host, port, username, password & database name.
 
 ![step2](./steps/step2.png)
 
@@ -40,40 +37,35 @@ Once the connection is successful, I will click on **Apply** and then **OK**.
 
 You can observe that there are no tables, so let’s begin by creating our database connection.
 
-
 # Database Connection
 
-I will create a **db.py** file and do the necessary imports from sqlalchemy and 
-the config file from where I will need the environment 
+I will create a **db.py** file and do the necessary imports from sqlalchemy and
+the config file from where I will need the environment
 variables like the username, password etc.
 
 ![step4](./steps/step4.png)
 
+I will create the connection string and name the variable `SQLALCHEMY_DATABASE_URL`
 
-I will create the connection string and name the variable ```SQLALCHEMY_DATABASE_URL```
+Next, I will use the common functions like `create_engine` and `sessionmaker`
 
-Next, I will use the common functions like ```create_engine``` and ```sessionmaker``` 
-
-As per the SQLAlchemy documentation, the engine is the starting point for any 
+As per the SQLAlchemy documentation, the engine is the starting point for any
 SQLAlchemy application. It's the **“home base”** for the actual database and its db api.
 
 ![step5](./steps/step5.png)
 
+In order to interact with the database, a session object is required. The purpose
+of `sessionmaker` is to provide a factory for session objects with a fixed configuration.
 
-In order to interact with the database, a session object is required. The purpose 
-of ```sessionmaker``` is to provide a factory for session objects with a fixed configuration. 
-
-
-The ```declarative_base``` characteristic is used to create a base class. This function is
-described in the ```sqlalchemy.Ext.Declarative``` module. Later we are going to inherit it to
+The `declarative_base` characteristic is used to create a base class. This function is
+described in the `sqlalchemy.Ext.Declarative` module. Later we are going to inherit it to
 create database models.
 
 ![step6](./steps/step6.png)
 
-At line 22, We will create an instance of a ```SessionLocal()```, which is actually a database session.
+At line 22, We will create an instance of a `SessionLocal()`, which is actually a database session.
 
-
-**Source Code** : 
+**Source Code** :
 
 ```python
 
@@ -107,18 +99,17 @@ def get_db():
 
 # Migrations
 
-We are done with the db config part, next we need to deal with something called **migrations**. 
+We are done with the db config part, next we need to deal with something called **migrations**.
 
 It basically performs schema migrations whenever we add (or drop) tables or columns from our databases.
 
-According to the FastAPI docs: *A **"migration"** is the set of steps needed
-whenever you change the structure of your SQLAlchemy models, add a new attribute, etc. to 
-replicate those changes in the database, add a new column, a new table, etc.*
+According to the FastAPI docs: _A **"migration"** is the set of steps needed
+whenever you change the structure of your SQLAlchemy models, add a new attribute, etc. to
+replicate those changes in the database, add a new column, a new table, etc._
 
 To know more about migrations, check out this [link](https://fastapi.tiangolo.com/tutorial/sql-databases/).
 
-
-For our tutorial, we will be using [Alembic](https://alembic.sqlalchemy.org/en/latest/). It is a widely used library for database 
+For our tutorial, we will be using [Alembic](https://alembic.sqlalchemy.org/en/latest/). It is a widely used library for database
 migrations. You might have already heard about it.
 
 Let’s begin by installing the package alembic with version 1.6.5, this is the version which we are going to use.
@@ -126,7 +117,6 @@ Let’s begin by installing the package alembic with version 1.6.5, this is the 
 ![step7](./steps/step7.png)
 
 After successfully installing alembic, we will move ahead with initializing the setup.
-
 
 # Alembic Setup
 
@@ -138,32 +128,28 @@ alembic init alembic
 
 ![step8](./steps/step8.png)
 
-
 It creates a directory named **alembic** in the project root, along-with few files and a
-subdirectory named **versions** which keeps track of migrations files. 
+subdirectory named **versions** which keeps track of migrations files.
 
 We are going to update the database configuration in the **env.py** file.
 
-
 ![step9](./steps/step9.png)
 
-
 Again, I am going to do the necessary imports. Make sure to point target metadata to base metadata.
-  
+
 ![step10](./steps/step10.png)
 
-I will create a ```get_url``` function, where I will be returning the database connection string.
+I will create a `get_url` function, where I will be returning the database connection string.
 
 ![step11](./steps/step11.png)
 
-Make sure to update line number 52 with ```get_url``` function.
+Make sure to update line number 52 with `get_url` function.
 
 ![step12](./steps/step12.png)
 
-Comment the ```connectable``` variable which falls under ```run_migrations_online``` function.
+Comment the `connectable` variable which falls under `run_migrations_online` function.
 
 ![step13](./steps/step13.png)
-
 
 **Source Code** :
 
@@ -190,7 +176,7 @@ fileConfig(config.config_file_name)
 # target_metadata = None
 
 from ecommerce import config as config_env
-from ecommerce.db import Base  
+from ecommerce.db import Base
 
 target_metadata = Base.metadata
 
@@ -260,7 +246,6 @@ else:
 
 We are done with the alembic setup. Next, we are going to create models for our user module.
 
-
 # User Model
 
 I am going to create **models.py** file under **user** and perform necessary imports.
@@ -269,12 +254,12 @@ I am going to create **models.py** file under **user** and perform necessary imp
 
 ![step15](./steps/step15.png)
 
-I am going to create a class called ```User``` which is going to inherit ```Base```. My table 
+I am going to create a class called `User` which is going to inherit `Base`. My table
 name will be represented as **“users”**
 
 I will define the necessary columns like id, name, email, password.
 
-- **“Id”** will be the primary key and gets auto-incremented on every new row insert. 
+- **“Id”** will be the primary key and gets auto-incremented on every new row insert.
 - **“Name”** will be a string with max length of 50.
 - **“Email”** will be a string but with a unique index.
 - **“Password”** will also be a string with max 255 characters.
@@ -283,17 +268,17 @@ I will define the necessary columns like id, name, email, password.
 
 We won’t be storing passwords as plain-text, it will be stored in encrypted format.
 
-For encrypting the password, I will create a separate file called **hashing**, where I will be writing the 
+For encrypting the password, I will create a separate file called **hashing**, where I will be writing the
 encryption logic.
 
-We are going to use the **passlib** package. You can see it has been mentioned in the FastAPI 
+We are going to use the **passlib** package. You can see it has been mentioned in the FastAPI
 documentation as well.
 
 ![step17](./steps/step17.png)
 
-We won’t be using bcrypt, instead we will use argon2. 
+We won’t be using bcrypt, instead we will use argon2.
 
-[Argon2](https://en.wikipedia.org/wiki/Argon2) is a modern ASIC resistant and GPU-resistant 
+[Argon2](https://en.wikipedia.org/wiki/Argon2) is a modern ASIC resistant and GPU-resistant
 secure key derivation function. It has better password cracking resistance.
 
 Let's install the package.
@@ -308,22 +293,21 @@ Next, I will move to the hashing file and do the necessary imports from the pass
 
 ![step18](./steps/step18.png)
 
-I will create two functions ```verify_password``` and ```get_password_hash```. This is
-something which I have taken directly from the FastAPI [documentation](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/) -- you can 
+I will create two functions `verify_password` and `get_password_hash`. This is
+something which I have taken directly from the FastAPI [documentation](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/) -- you can
 also refer to that directly.
 
 ![step19](./steps/step19.png)
 
-
 We are done with the hashing, next we will import this file in models.
 
-
-In ```__init__``` constructor, we are going to call the ```get_password_hash``` function which will return the encrypted password 
+In `__init__` constructor, we are going to call the `get_password_hash` function which will return the encrypted password
 and this will be stored in the db.
 
-The ```check_password``` function will verify whether the plain-text password and encrypted password hash is valid or not.
+The `check_password` function will verify whether the plain-text password and encrypted password hash is valid or not.
 
 **models.py**
+
 ```python
 
     def __init__(self, name, email, password, *args, **kwargs):
@@ -366,20 +350,16 @@ class User(Base):
 
 ```
 
-
 # Migrating New Changes
 
 We are done with the implementation for our user model. Next, we are going to create our first migration.
 
-
 But before that, I need to register the model in the environment (**env.py**), so it can be tracked easily.
-
 
 ![step20](./steps/step20.png)
 
-
 Once you have imported the user model in environment, go ahead to the Terminal and run the
-below command : 
+below command :
 
 ```
  alembic revision --autogenerate
@@ -387,12 +367,12 @@ below command :
 
 ![step21](./steps/step21.png)
 
-As you can see clearly, it has created a migration file 
+As you can see clearly, it has created a migration file
 which will be residing under the **versions** directory.
 
 ![step22](./steps/step22.png)
 
-The migration file has been created successfully. 
+The migration file has been created successfully.
 Let's move and migrate the new changes into our database.
 
 I will type the command:
@@ -403,20 +383,14 @@ alembic upgrade head
 
 ![step23](./steps/step23.png)
 
-
 Let me check in the **Database Explorer** and verify that new tables are appearing.
 
 ![step24](./steps/step24.png)
-
 
 Yes, two new tables have been created. There is a table name called **alembic_version**, which
 basically keeps a history of all migrations applied. You can compare its similarity with
 the Django migrations table if you have previously worked with Django.
 
-Also, the user table has been migrated.  
+Also, the user table has been migrated.
 
-In the next tutorial, we will be focusing on writing REST APIs and performing CRUD operations.  
-
-
-
-
+In the next tutorial, we will be focusing on writing REST APIs and performing CRUD operations.

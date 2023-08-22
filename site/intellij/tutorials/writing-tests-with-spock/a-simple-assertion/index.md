@@ -6,12 +6,12 @@ topics: []
 author: tg
 subtitle: Writing our first Spock test
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/i5Qu3qYOfsM?start=197'
+video: "https://youtu.be/i5Qu3qYOfsM?start=197"
 ---
 
 Let's start by writing a very simple test, so we can see what Spock tests look like.
 
-From the [Project window](https://www.jetbrains.com/help/idea/project-tool-window.html), we can use the shortcut  **⌘N** (macOS) or **Alt+Insert** (Windows/Linux) to create a new file. Let's create a Groovy class, since Spock tests are Groovy classes:
+From the [Project window](https://www.jetbrains.com/help/idea/project-tool-window.html), we can use the shortcut **⌘N** (macOS) or **Alt+Insert** (Windows/Linux) to create a new file. Let's create a Groovy class, since Spock tests are Groovy classes:
 
 ![](./05-new-groovy-class.png)
 
@@ -19,7 +19,7 @@ Create the package and directory structure by typing the full package name befor
 
 ![](./06-new-class-name.png)
 
-Spock tests are often called Specifications, so call the test `ExampleSpecification`, put it into whichever package makes sense for you. Make sure this class extends Spock's [Specification](http://spockframework.org/spock/docs/2.0/all_in_one.html#_specification) class. 
+Spock tests are often called Specifications, so call the test `ExampleSpecification`, put it into whichever package makes sense for you. Make sure this class extends Spock's [Specification](http://spockframework.org/spock/docs/2.0/all_in_one.html#_specification) class.
 
 ```groovy
 import spock.lang.Specification
@@ -30,7 +30,8 @@ class ExampleSpecification extends Specification {
 }
 
 ```
-We can get IntelliJ IDEA to generate test methods for Spock specifications using  **⌘N** (macOS) or **Alt+Insert** (Windows/Linux) inside the class.
+
+We can get IntelliJ IDEA to generate test methods for Spock specifications using **⌘N** (macOS) or **Alt+Insert** (Windows/Linux) inside the class.
 
 ![](./07.png)
 
@@ -76,4 +77,3 @@ By default, IntelliJ IDEA uses Gradle to run tests if it's a Gradle project. Thi
 Fix this test and rerun it to make sure it passes. You should see it's not using Gradle to run it, there shouldn't be any Gradle output in the test results window.
 
 Now you know how to create and run a simple Spock test. Next, we're going to look at how to write tests with Spock in more detail.
-

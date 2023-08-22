@@ -17,6 +17,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=9oGVEUWehy0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=4
 ---
+
 SQL queries are recognized automatically when these strings are used in popular SQL packages such as _database/sql_, _github.com/jmoiron/sqlx_, and _github.com/gobuffalo/pop_.
 
 The IDE automatically recognizes which databases are configured, their type, e.g. Postgres, MongoDB, etc., and provides all features available to query, refactor, or reference the database.

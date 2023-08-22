@@ -10,6 +10,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./card.png
 ---
+
 Make sure your code is always formatted with gofmt.
 
 **How to use:**

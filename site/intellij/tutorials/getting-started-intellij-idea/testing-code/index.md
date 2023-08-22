@@ -11,6 +11,7 @@ thumbnail: ./thumbnail.png
 ---
 
 Writing tests for our code is another task you're likely to be looking to your IDE to support you with. IntelliJ IDEA can generate your tests for you with its Code Generation capabilities but there's a couple more tips that I recommend you check out when working with tests in IntelliJ IDEA. We will look at:
+
 - Splitting Windows
 - Navigating to a Test
 
@@ -28,4 +29,4 @@ You can also hold down (**⇧** | **Shift**) and press Enter to open a file from
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ky-LGO0_iq4" >
 </iframe>
 
-You can use (**⇧⌘T** | **Ctrl+Shift+T**) to Navigate to Test and if IntelliJ IDEA can find a Test file that it thinks tests that file based on the name of your class it will navigate there. If there isn't a test file that IntelliJ IDEA can find, it will suggest creating a test and can add some of the code constructs for the tests as well. 
+You can use (**⇧⌘T** | **Ctrl+Shift+T**) to Navigate to Test and if IntelliJ IDEA can find a Test file that it thinks tests that file based on the name of your class it will navigate there. If there isn't a test file that IntelliJ IDEA can find, it will suggest creating a test and can add some of the code constructs for the tests as well.

@@ -18,7 +18,7 @@ Now we know several ways to analyze our project's dependencies in IntelliJ IDEA.
 Here are the IntelliJ IDEA shortcuts that we used.
 
 | Name                                                                                             | macOS Shortcut | Windows / Linux Shortcut |
-|--------------------------------------------------------------------------------------------------|----------------|--------------------------|
+| ------------------------------------------------------------------------------------------------ | -------------- | ------------------------ |
 | Recent Files                                                                                     | **⌘E**         | **Ctrl+E**               |
 | Hide all windows / Restore windows                                                               | **⇧⌘F12**      | **Ctrl+Shift+F12**       |
 | Open / Close [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html) | **⌘1**         | **Alt+1**                |
@@ -40,5 +40,3 @@ Here are the IntelliJ IDEA shortcuts that we used.
 - [(docs) JetBrains - View dependencies as a diagram](https://www.jetbrains.com/help/idea/work-with-gradle-dependency-diagram.html#gradle_diagram)
 - [(code) Spring PetClinic](https://github.com/spring-projects/spring-petclinic)
 - [(book) Getting to Know IntelliJ IDEA - Trisha Gee & Helen Scott](https://leanpub.com/gettingtoknowIntelliJIDEA)
-
-

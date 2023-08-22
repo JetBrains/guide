@@ -6,12 +6,12 @@ topics: []
 author: hs
 subtitle: Using JUnit 5 Inspections to migrate
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/F8UTTTDtbH0?start=247'
+video: "https://youtu.be/F8UTTTDtbH0?start=247"
 ---
 
 Use **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) to load IntelliJ IDEA preferences and type in 'inspections'. [IntelliJ IDEA's inspections](https://www.jetbrains.com/help/idea/code-inspection.html#access-inspections-and-settings) can be very helpful for migrating code. In particular there are a number of inspections for JUnit tests.
 
-To help with the migration, turn on 'JUnit 4 test can be JUnit 5' inspection.  You can only turn this on if you're using at least Java 8 and have JUnit 5 dependencies set up.
+To help with the migration, turn on 'JUnit 4 test can be JUnit 5' inspection. You can only turn this on if you're using at least Java 8 and have JUnit 5 dependencies set up.
 
 ![turn_on_inspection.png](turn_on_inspection.png)
 
@@ -73,7 +73,7 @@ The [refactoring preview](https://www.jetbrains.com/help/idea/refactoring-source
 
 ![refactoring_preview.png](refactoring_preview.png)
 
-If you want to exclude any of the tests from the refactor you can click **⌫**, or **Delete**. To include them again click **⇧⌫**, or **Shift+Delete**.   Press **Do Refactor** and let's see what the new code looks like.
+If you want to exclude any of the tests from the refactor you can click **⌫**, or **Delete**. To include them again click **⇧⌫**, or **Shift+Delete**. Press **Do Refactor** and let's see what the new code looks like.
 
 ```java
 public class JUnit4To5 {
@@ -144,8 +144,8 @@ Like the `Before` annotations, `After` is replaced with `AfterEach`, and `AfterC
 
 IntelliJ IDEA makes all of these changes automatically. Like any IntelliJ IDEA refactoring, you can see the class still compiles after you've done the refactoring by using **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux). Let's use **⌃⇧R** (macOS), or **Ctrl+Shift+F10** (Windows/Linux) to run the tests to make sure everything behaves the way we expect.
 
-The `beforeClass` method is run once, each before and after method is run once per test, and the `afterClass` method is run once at the end, so the overall setup works as it did under JUnit 4. The  disabled test is still not run, and there are three passing tests, the same as before.
+The `beforeClass` method is run once, each before and after method is run once per test, and the `afterClass` method is run once at the end, so the overall setup works as it did under JUnit 4. The disabled test is still not run, and there are three passing tests, the same as before.
 
-Now we've made this small change and checked that the code behaves as expected we can check in these changes too. 
+Now we've made this small change and checked that the code behaves as expected we can check in these changes too.
 
 ![run_tests.png](run_tests.png)

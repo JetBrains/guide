@@ -15,6 +15,7 @@ animatedGif:
   width: 500
   height: 274
 ---
+
 **Fiddling around trying to get the right selection?** 😭
 
 Using the `Expand Selection` and `Shrink Selection` actions is an effective way to select the right text fragments. Knowing how CSharp, JSON, XML, and other formats syntactically work, they will always lead us to the next logical element or construct. For instance, we can easily select strings, block statements, methods/classes, JSON properties, or just text paragraphs. This naturally improves how we can introduce variables, move code blocks, or just fix a typo in a single word.

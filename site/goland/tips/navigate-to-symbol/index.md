@@ -5,7 +5,7 @@ topics:
   - go
   - navigation
 author: dlsniper
-subtitle: 'Navigate your project by code, not files.'
+subtitle: "Navigate your project by code, not files."
 seealso:
   - title: Navigating by Name
     href: >-
@@ -14,12 +14,13 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/go/navigating-to-class-file-or-symbol-by-name.html#tips
   - title: Navigation in Source Code
-    href: 'https://www.jetbrains.com/help/go/navigation-in-source-code.html'
+    href: "https://www.jetbrains.com/help/go/navigation-in-source-code.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=FSo0-9oFXmE&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=78
 ---
+
 Use **Navigate to Symbol** to jump between symbols in your project
 and stop thinking about the file they are in.
 

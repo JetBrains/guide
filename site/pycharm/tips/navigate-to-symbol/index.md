@@ -4,7 +4,7 @@ title: Navigate to Symbol
 topics:
   - navigation
 author: pwe
-subtitle: 'Navigate your project by code, not files.'
+subtitle: "Navigate your project by code, not files."
 seealso:
   - title: Navigating by Name
     href: >-
@@ -13,10 +13,10 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#tips
   - title: Navigation in Source Code
-    href: 'https://www.jetbrains.com/help/pycharm/navigation-in-source-code.html'
+    href: "https://www.jetbrains.com/help/pycharm/navigation-in-source-code.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/1QoP0U8xg98'
+video: "https://youtu.be/1QoP0U8xg98"
 ---
 
 Decades of old habits make us think of files, with their deeply-nested

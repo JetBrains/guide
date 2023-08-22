@@ -15,7 +15,7 @@ subtitle: >-
   scene.
 thumbnail: ./thumbnail.png
 video:
-  url: 'https://www.youtube.com/watch?v=75r6TRwCc_o'
+  url: "https://www.youtube.com/watch?v=75r6TRwCc_o"
   start: 884
   end: 1046
 ---

@@ -11,7 +11,7 @@ thumbnail: ./thumbnail.png
 
 There are several options to navigate to the bookmarks we have created.
 
-To see all **line** bookmarks that we have in the code, we can open the **Bookmarks** popup by pressing **⌘ F3** (on macOS) or **Shift+F11** (on Windows/Linux) or go to **Edit | Bookmarks | Show Line Bookmarks**. 
+To see all **line** bookmarks that we have in the code, we can open the **Bookmarks** popup by pressing **⌘ F3** (on macOS) or **Shift+F11** (on Windows/Linux) or go to **Edit | Bookmarks | Show Line Bookmarks**.
 
 ![Show Line Bookmarks shortcut](show-line-bookmarks-shortcut.png)
 
@@ -27,7 +27,7 @@ To jump straight to a mnemonic bookmark, hold **^** (on macOS) or **Control** (o
 
 ![Assign Mnemonic](assign-mnemonic.png)
 
-To see all our bookmarks, we can open the **Bookmarks** tool window by pressing **⌘ 2** (on macOS) or **Alt+2** (on Windows/Linux), or by selecting **View | Tool Windows | Bookmarks** from the main menu. 
+To see all our bookmarks, we can open the **Bookmarks** tool window by pressing **⌘ 2** (on macOS) or **Alt+2** (on Windows/Linux), or by selecting **View | Tool Windows | Bookmarks** from the main menu.
 
 ![Open Bookmark Tool Window shortcut](open-bookmarks-tool-window-shortcut.png)
 
@@ -37,7 +37,7 @@ IntelliJ IDEA adds your bookmarks to the predefined list in the Bookmarks tool w
 
 ![Bookmark Tool Window options](options.png)
 
-Another option we do want to show you here is that you can create more lists. We can add a new list using the shortcut (**⌘ N** on macOS or **Alt+Insert** on Windows/Linux) or by clicking the **Create Bookmark List** button. We can add a name for the new list. 
+Another option we do want to show you here is that you can create more lists. We can add a new list using the shortcut (**⌘ N** on macOS or **Alt+Insert** on Windows/Linux) or by clicking the **Create Bookmark List** button. We can add a name for the new list.
 
 ![Create Bookmark List](create-bookmark-list.png)
 

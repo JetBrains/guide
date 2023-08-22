@@ -13,6 +13,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=ZdaWB9C4UdU&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=25
 ---
+
 **How to use:**
 
 To connect to a MongoDB database, head over to the _Database_ tool window on the the right side of the IDE and click on the _+_ (_New_) button. Select _Data Source_ then _MongoDB_ as the data source type. Customize the name of the data source, connection details, then click on the _Test_ link to ensure everything is ok.

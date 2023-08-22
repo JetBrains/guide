@@ -9,18 +9,18 @@ author: pwe
 subtitle: Use the visual debugger in the IDE for smarter TDD.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/r1kwXZnO8gw'
+video: "https://youtu.be/r1kwXZnO8gw"
 ---
 
 In the [previous step](../testing/) we used testing as a way to develop our component without switching to a browser.
 
 Sometimes, though, our code has problems that require investigation with a debugger.
-For React, that usually means a trip to the browser to set a breakpoint and use the Chrome developer tools. 
-Instead, let's show how the IDE's *debugger*, combined with TDD, can make this investigation far more productive.
+For React, that usually means a trip to the browser to set a breakpoint and use the Chrome developer tools.
+Instead, let's show how the IDE's _debugger_, combined with TDD, can make this investigation far more productive.
 
 ## Code
 
-The finished code for this tutorial step is 
+The finished code for this tutorial step is
 [in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/nodejs_debugging/).
 
 ## Cleanup
@@ -32,9 +32,9 @@ Let's start by getting the test code reloaded into our brain by updating the tes
 
 ```typescript {1}
 test("renders hello react", () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/hello react/i);
-  expect(linkElement).toBeInTheDocument();
+ const { getByText } = render(<App />);
+ const linkElement = getByText(/hello react/i);
+ expect(linkElement).toBeInTheDocument();
 });
 ```
 
@@ -42,14 +42,14 @@ Our test re-run, confirming that they still pass.
 
 ## Hello Parameter
 
-We will use TDD to make our component's greeting a bit more dynamic. 
+We will use TDD to make our component's greeting a bit more dynamic.
 Start in the side-by-side mode described in the previous section, with both `App.tsx` and `App.test.tsx` open.
 
 First, add a function in `App.tsx`, above the `App` function:
 
 ```javascript
 export function label() {
-  return "Hello React";
+ return "Hello React";
 }
 ```
 
@@ -60,33 +60,33 @@ Then, in `App`, change the `<h1>` to use the output of this function, using auto
 ```
 
 We didn't write a test first.
-That's sort of ok: we didn't change the rendering itself. 
-But we also didn't test the `label` function. 
+That's sort of ok: we didn't change the rendering itself.
+But we also didn't test the `label` function.
 Let's do that now by adding a second test in `App.test.tsx`:
 
 ```typescript
 test("generates a label", () => {
-  const result = label();
-  expect(result).toEqual("Hello React");
+ const result = label();
+ expect(result).toEqual("Hello React");
 });
 ```
 
 In this test we don't need a component with TSX and a fake DOM etc.
-It's a plain-old TypeScript function that returns a string. 
-Nice! 
+It's a plain-old TypeScript function that returns a string.
+Nice!
 But the test fails: we haven't imported `label`.
 Either do so manually or `Alt-Enter` on the red squiggly and do the import.
 
 Our second test passes and thus our `label` function has test coverage.
 
-Let's make the function slightly dynamic by passing in a name for the label, then converting that name to uppercase. 
+Let's make the function slightly dynamic by passing in a name for the label, then converting that name to uppercase.
 First, change our tests to the behavior we expect -- that is, use TDD!
 The `generates a label` test needs its lines changed to:
 
 ```typescript {2,3}
 test("generates a label", () => {
-  const result = label("React");
-  expect(result).toEqual("Hello REACT");
+ const result = label("React");
+ expect(result).toEqual("Hello REACT");
 });
 ```
 
@@ -101,18 +101,18 @@ Now it's just a matter of changing the function to accept an argument, then uppe
 
 ```typescript {1,2}
 export function label(name) {
-  return `Hello ${name.toUpperCase()}`;
+ return `Hello ${name.toUpperCase()}`;
 }
 ```
 
 Note that the IDE has a quick fix, via `Alt-Enter`, to convert the string to an ES6 template string (the backticks.)
 
-With that, our tests pass, but the TypeScript compiler is angry: the `name` argument doesn't have a supplied type. 
+With that, our tests pass, but the TypeScript compiler is angry: the `name` argument doesn't have a supplied type.
 Let's fix that:
 
 ```typescript {1}
 export function label(name: string) {
-  return `Hello ${name.toUpperCase()}`;
+ return `Hello ${name.toUpperCase()}`;
 }
 ```
 
@@ -130,7 +130,7 @@ First, note that TypeScript warned that the supplied value was not assignable to
 
 ![TypeScript Error](./screenshots/ts_error.png)
 
-This is the *beauty* of TypeScript. 
+This is the _beauty_ of TypeScript.
 Especially in test-writing, it helps you "fail faster".
 Meaning, when paired with a smart IDE, it moves the failure directly under your eyeballs, in the most immediate location...the place where you typed it.
 Moreover, it provides very specific error messages.
@@ -154,11 +154,11 @@ We can inspect the local values and see that `name` is `42`.
 
 ![Stop at Breakpoint](./screenshots/stop_at_breakpoint.png)
 
-We can now poke and prod our code interactively, in the execution context where it fails. 
+We can now poke and prod our code interactively, in the execution context where it fails.
 
 ![Evaluate Expression](./screenshots/evaluate_expression.png)
 
-This is a very productive development cycle: write tests, when stuck, use the debugger. 
+This is a very productive development cycle: write tests, when stuck, use the debugger.
 No flailing around with `console.log` in a browser's dev tools window.
 
 Let's clean up:
@@ -172,4 +172,3 @@ Let's clean up:
 - Re-open the Run Tool window
 
 As a note, in this step, the only two files that changed were `App.tsx` and `App.test.tsx`.
-

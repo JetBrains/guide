@@ -11,7 +11,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Configuring our HTTP handlers in Startup
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/XRaUj6Y2Gi0'
+video: "https://youtu.be/XRaUj6Y2Gi0"
 ---
 
 The `Configure` method in `Startup` outlines the runtime behavior of our web application. Here, we can register middleware and determine the path our requests will take.

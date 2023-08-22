@@ -13,11 +13,12 @@ seealso:
   - title: >-
       (video)IntelliJ IDEA + Space = Complete Environment for Collaborative
       Software Development
-    href: 'https://www.youtube.com/watch?v=iHSbWIW48uM'
+    href: "https://www.youtube.com/watch?v=iHSbWIW48uM"
   - title: (documentation) Space Help - Getting started
-    href: 'https://www.jetbrains.com/help/space/getting-started.html'
-video: 'https://youtu.be/xXyRb4VtItw'
+    href: "https://www.jetbrains.com/help/space/getting-started.html"
+video: "https://youtu.be/xXyRb4VtItw"
 ---
+
 The plugin for [JetBrains Space](https://www.jetbrains.com/space/), a new team collaboration tool, is bundled in IntelliJ IDEA. Log in to the team instance to access your projects.
 
 If you're logged in to Space, you can clone a repo via "Get from VCS", and you can configure where the code is cloned to.

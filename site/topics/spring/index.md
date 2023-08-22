@@ -5,8 +5,8 @@ subtitle: >-
   model for modern Java-based enterprise applications - on any kind of
   deployment platform.
 logo: spring.png
-website: 'https://spring.io/'
+website: "https://spring.io/"
 topicType: technology
-obsoletes: ["/intellij/topics/spring/"]
+obsoletes:
+  - /intellij/topics/spring/
 ---
-

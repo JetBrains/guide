@@ -13,6 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./13-cleanup-namespaces.png
 ---
+
 **You know that feeling, right?** 😣
 
 We're just about to commit our changes and then realize that we have some code smells or dead code left 😵 But there is nothing to worry about! Rider's integrated **side-by-side diff viewer** allows to fix them right from where we are and even in bulk!
@@ -20,6 +21,7 @@ We're just about to commit our changes and then realize that we have some code s
 Feel the magic of having VCS support in an IDE! 🥰
 
 ### See Also
+
 - [Introduction to code analysis in Rider](https://blog.jetbrains.com/dotnet/2018/05/17/introduction-code-analysis-rider/)
 - [Solution-wide analysis in Rider](https://blog.jetbrains.com/dotnet/2018/05/21/solution-wide-analysis-rider/)
 - [Using Rider to spot errors before our application runs](https://blog.jetbrains.com/dotnet/2018/05/22/using-rider-spot-errors-application-runs/)

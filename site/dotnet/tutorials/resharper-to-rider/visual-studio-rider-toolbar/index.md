@@ -45,4 +45,4 @@ The **Run Widget** is of particular interest as you'll be using it to run and de
 
 While the UI is fully customizable, Rider's development team has gone through the meticulous process of making all functionality accessible via shortcut keys. The **Search Everywhere** feature is beneficial, as it is only a <kbd>Shift+Shift</kbd> away from helping developers find the action they need.
 
-Moving from Visual Studio to Rider doesn't have to be a jarring experience. The Rider toolbar indeed has its difference, but folks using Rider tend to find the UI changes help improve their daily workflows. In combination with Rider's configuration options and advanced actions, developers can make Rider fit their needs no matter the development scenario. 
+Moving from Visual Studio to Rider doesn't have to be a jarring experience. The Rider toolbar indeed has its difference, but folks using Rider tend to find the UI changes help improve their daily workflows. In combination with Rider's configuration options and advanced actions, developers can make Rider fit their needs no matter the development scenario.

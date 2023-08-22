@@ -17,7 +17,7 @@ One example is this pom.xml in a Maven project.
 
 ![Pom.xml](pom-xml.png)
 
-Another example is the build.gradle in a Gradle project. 
+Another example is the build.gradle in a Gradle project.
 
 ![Gradle Build file](build-gradle.png)
 

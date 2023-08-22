@@ -16,4 +16,5 @@ animatedGif:
   width: 600
   height: 300
 ---
-Delete an entire line of code with *Cmd+Delete/Ctrl+Y*.
+
+Delete an entire line of code with _Cmd+Delete/Ctrl+Y_.

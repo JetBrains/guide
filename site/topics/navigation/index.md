@@ -3,7 +3,12 @@ title: Navigation
 subtitle: Productive ways to move around in your project.
 accent: primary
 icon: fas fa-map-marked
-obsoletes: ["/dotnet/topics/navigation/", "/goland/topics/navigation/", "/intellij/topics/navigation/", "/pycharm/topics/navigation/", "/webstorm/topics/navigation/", ]
+obsoletes:
+  - /dotnet/topics/navigation/
+  - /goland/topics/navigation/
+  - /intellij/topics/navigation/
+  - /pycharm/topics/navigation/
+  - /webstorm/topics/navigation/
 ---
 
 Our IDEs help you find your way through the source code using the declarations, members, method calls, inheritance

@@ -6,13 +6,13 @@ topics:
   - pytest
   - testing
 author: pwe
-subtitle: 'During refactoring, use pytest''s markers to ignore certain breaking tests.'
+subtitle: "During refactoring, use pytest's markers to ignore certain breaking tests."
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/rEYQrMY8Ux4'
+video: "https://youtu.be/rEYQrMY8Ux4"
 ---
 
-Sometimes you want to overhaul a chunk of code and don't want to stare at a broken test. 
-You could comment it out. 
+Sometimes you want to overhaul a chunk of code and don't want to stare at a broken test.
+You could comment it out.
 But `pytest` provides an easier (and more feature-ful) alternative for skipping tests.
 
 We'll show this in action while implementing:
@@ -56,24 +56,24 @@ Now when the tests run (automatically, thanks to `Toggle auto-test`), they don't
 
 ![Ignored Tests](./ignored_tests.png)
 
-With our failing test in place, let's implement the missing method. 
+With our failing test in place, let's implement the missing method.
 In `player.py`, clone the existing `add_guardian` method, then change its arguments and implementation:
 
 ```python
 {% include "./demos/player01.py" %}
 ```
 
-We can now remove the `skip` marker and the test passes. 
+We can now remove the `skip` marker and the test passes.
 Remember to remove the now-unused `pytest` import in `test_player.py` using `Optimize Imports`.
 
 # Some Typing Cleanup
 
 Eager readers might have spotted a type hinting flaw: our code breaks the [Be liberal in what you accept, and conservative in what you return](https://m.oursky.com/type-hints-better-type-at-python-28de692c3a4b) rule.
 
-That is, our new method wants a `List`. 
+That is, our new method wants a `List`.
 When really, it will take a Python "iterable".
 
-For example, our test passes in a *list* of guardians. It's immutable. 
+For example, our test passes in a _list_ of guardians. It's immutable.
 Might as well change it to be a tuple:
 
 ```
@@ -120,7 +120,7 @@ We're doing this as a Python "property", so add the following in `player.py`:
 {% include "./demos/player.py" %}
 ```
 
-*Tip: Use the `property` LiveTemplate in PyCharm to speed up the generation of a property.* 
+_Tip: Use the `property` LiveTemplate in PyCharm to speed up the generation of a property._
 
 Remove the `@pytest.mark.skip` mark from `test_primary_guardian` and the test now passes.
 

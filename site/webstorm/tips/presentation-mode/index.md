@@ -7,9 +7,9 @@ topics:
 author: er
 seealso:
   - title: Viewing modes in WebStorm
-    href: 'https://www.jetbrains.com/help/webstorm/ide-viewing-modes.html#'
+    href: "https://www.jetbrains.com/help/webstorm/ide-viewing-modes.html#"
   - title: Presentation Assistant
-    href: 'https://plugins.jetbrains.com/plugin/7345-presentation-assistant'
+    href: "https://plugins.jetbrains.com/plugin/7345-presentation-assistant"
   - title: Plugins for WebStorm You Need to Know About
     href: >-
       https://blog.jetbrains.com/webstorm/2020/05/plugins-for-webstorm-you-need-to-know-about/
@@ -20,4 +20,5 @@ animatedGif:
   width: 600
   height: 300
 ---
-Whenever you’re presenting at conferences or company events, use the *Presentation* mode which makes it easier for the audience to see what’s going on in the editor (*Ctrl + ` | View Mode | Enter/Exit Presentation Mode*).
+
+Whenever you’re presenting at conferences or company events, use the _Presentation_ mode which makes it easier for the audience to see what’s going on in the editor (_Ctrl + ` | View Mode | Enter/Exit Presentation Mode_).

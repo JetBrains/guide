@@ -56,7 +56,7 @@ namespace HelloDockerWeb
         {
             Configuration = configuration;
         }
-        
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IDbConnection>(_ => {
@@ -83,10 +83,10 @@ namespace HelloDockerWeb
                     var connection = context
                         .RequestServices
                         .GetRequiredService<IDbConnection>();
-                    
+
                     var result = await connection
                         .QueryFirstAsync<string>("Select @@version");
-                    
+
                     await context.Response.WriteAsync(result!);
                 });
             });
@@ -99,17 +99,17 @@ Finally, let's add a connection string to our yet-to-be-created database instanc
 
 ```json
 {
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft": "Warning",
-      "Microsoft.Hosting.Lifetime": "Information"
-    }
-  },
-  "AllowedHosts": "*",
-  "ConnectionStrings": {
-    "mssql" : "Server=mssql;Database=master;User Id=sa;Password=Pass123!;"
+ "Logging": {
+  "LogLevel": {
+   "Default": "Information",
+   "Microsoft": "Warning",
+   "Microsoft.Hosting.Lifetime": "Information"
   }
+ },
+ "AllowedHosts": "*",
+ "ConnectionStrings": {
+  "mssql": "Server=mssql;Database=master;User Id=sa;Password=Pass123!;"
+ }
 }
 ```
 
@@ -118,12 +118,12 @@ Our next step is to create a `docker-compose.yml` file in our project. As mentio
 ```yaml
 version: "3.3"
 services:
-  web:    
+  web:
     container_name: web
-    build:      
+    build:
       context: ..
       dockerfile: ./HelloDockerWeb/Dockerfile
-    depends_on: [ mssql ]        
+    depends_on: [mssql]
     ports:
       - "8080:80"
   mssql:
@@ -133,12 +133,12 @@ services:
     environment:
       SA_PASSWORD: "Pass123!"
       ACCEPT_EULA: "Y"
-    restart: unless-stopped    
+    restart: unless-stopped
     ports:
       # So we can access the database
       # From a tool like JetBrains Rider
       # Optional for this demo
-      - "11433:1433" 
+      - "11433:1433"
 ```
 
 As we can see, our Compose definition has two services.
@@ -196,10 +196,10 @@ The following service will use the `dotnet/sdk` image to run our application and
 web_develop:
   container_name: web_development
   image: "mcr.microsoft.com/dotnet/sdk:5.0"
-  depends_on: [ mssql ]
+  depends_on: [mssql]
   volumes:
     - ./:/app
-  command: dotnet watch --project ./app run --urls "http://0.0.0.0:80"    
+  command: dotnet watch --project ./app run --urls "http://0.0.0.0:80"
   ports:
     - "8081:80"
 ```

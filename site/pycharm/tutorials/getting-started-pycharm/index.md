@@ -19,12 +19,16 @@ tutorialItems:
   - ./run-python-using-a-run-configuration/
   - ./basic-code-refactoring/
   - ./basic-code-debugging/
+  - ./basic-testing/
+  - ./productive-coding/
 ---
 
 This tutorial will take you through installing and setting up PyCharm, customising the user interface, configuring your Python interpreters, managing your Python packages, getting assistance writing your code, and then running, refactoring and debugging your code.
 
 ## Sample code
+
 This is the code that we will be using in this tutorial:
+
 ```python
 class Car:
 

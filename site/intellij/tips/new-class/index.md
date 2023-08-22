@@ -10,14 +10,15 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Add items to your project
-    href: 'https://www.jetbrains.com/help/idea/add-items-to-project.html'
+    href: "https://www.jetbrains.com/help/idea/add-items-to-project.html"
   - title: >-
       (documentation) IntelliJ IDEA Blog - Your First Java Application
       (Tutorial)
     href: >-
       https://blog.jetbrains.com/idea/2020/04/tutorial-your-first-java-application
-video: 'https://youtu.be/E7Q0U_b5nz4'
+video: "https://youtu.be/E7Q0U_b5nz4"
 ---
-Press **⌘1** (macOS), or **Alt+1** (Windows/Linux), to open the Project Window and then use **⌘N** (macOS), or **Alt+Insert** (Windows/Linux), to generate a new file.  
- 
+
+Press **⌘1** (macOS), or **Alt+1** (Windows/Linux), to open the Project Window and then use **⌘N** (macOS), or **Alt+Insert** (Windows/Linux), to generate a new file.
+
 These same shortcuts will help you in many places where you need to generate code, such as constructors, getters and setters, toString methods and adding arguments to methods when you need to refactor.

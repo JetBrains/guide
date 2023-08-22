@@ -10,7 +10,8 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Run applications
-    href: 'https://www.jetbrains.com/help/idea/running-applications.html'
-video: 'https://youtu.be/Ww2pLAGtWrA'
+    href: "https://www.jetbrains.com/help/idea/running-applications.html"
+video: "https://youtu.be/Ww2pLAGtWrA"
 ---
+
 Press **⌃⇧R** (macOS), or **Ctrl+Shift+F10** (Windows/Linux), to run the file in its current context.

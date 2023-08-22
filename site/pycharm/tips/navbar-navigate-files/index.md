@@ -13,26 +13,26 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
   - title: Navigating Tips and Tricks
-    href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
+    href: "https://www.jetbrains.com/help/pycharm/navigation-bar.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/i9l5YuDgJOw'
+video: "https://youtu.be/i9l5YuDgJOw"
 ---
 
-We've discussed "getting into the flow"...strip down the IDE to focus and don't 
-take your hands off the keyboard. But if you've turned off your Project tool 
+We've discussed "getting into the flow"...strip down the IDE to focus and don't
+take your hands off the keyboard. But if you've turned off your Project tool
 window, how can you navigate files and directories?
 
-You could use the `Project` action (`Alt-1` Win/Linux, `Cmd-1` macOS) to bring 
-back the Project tool, do your work, and then hide it again. Instead, 
+You could use the `Project` action (`Alt-1` Win/Linux, `Cmd-1` macOS) to bring
+back the Project tool, do your work, and then hide it again. Instead,
 temporarily bring back the Navigation Bar then navigate it with the keyboard.
 
-You can use the left arrow to go up a directory and right arrow to go down 
-a directory. To see the contents of a directory, either press the down arrow 
-or press enter. With this you can get to any place in the tree, without 
+You can use the left arrow to go up a directory and right arrow to go down
+a directory. To see the contents of a directory, either press the down arrow
+or press enter. With this you can get to any place in the tree, without
 using the mouse.
 
-For looking at the directory the currently-edited file is in, this is even 
-easier. Activating the Navigation Bar makes the current file selected. You 
-don't have to press `Left` to select the parent directory. Just press 
+For looking at the directory the currently-edited file is in, this is even
+easier. Activating the Navigation Bar makes the current file selected. You
+don't have to press `Left` to select the parent directory. Just press
 `Down`.

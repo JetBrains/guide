@@ -7,7 +7,7 @@ author: hs
 subtitle: How to use PyCharm's debugger effectively.
 thumbnail: thumbnail.png
 videoBottom: true
-video: 'https://youtu.be/j0Wz_uBaDmo'
+video: "https://youtu.be/j0Wz_uBaDmo"
 ---
 
 In the previous step, we saw how PyCharm refactoring can save you time by doing work for you.
@@ -15,9 +15,10 @@ In the previous step, we saw how PyCharm refactoring can save you time by doing 
 In this step, we’ll look at PyCharm’s debugger, specifically how to use it to walk through your running code and to help you find and fix bugs.
 
 ## Breakpoints and Debug Session
+
 Everything starts with a breakpoint. Breakpoints are markers that tell the debugger to suspend the execution of a program. To add and remove breakpoints click the gutter in the line where you want to add them. You can also add a breakpoint from the keyboard by leaving the caret at the end of the line and pressing (**⌘F8**| **Ctrl+F8**).
 
-In this example we are adding a breakpoint to this `if` statement inside our loop, so the program will suspend the execution on each iteration. We can run the program with the debugger by clicking the little *bug* button at the top of PyCharm. This runs the currently-selected configuration, but under the debugger.
+In this example we are adding a breakpoint to this `if` statement inside our loop, so the program will suspend the execution on each iteration. We can run the program with the debugger by clicking the little _bug_ button at the top of PyCharm. This runs the currently-selected configuration, but under the debugger.
 
 <img src="debug_icon.png" alt="Debug Icon" width="700"/>
 
@@ -26,9 +27,11 @@ This project was made from the Flask project template, so it had a Flask Run Con
 When you run a project in PyCharm using the debugger, it will open the Debug tool window. When you click the URL in the Debug tool window, the execution is suspended, as the breakpoint was hit. You can now examine the program in its current state, control its execution, and test several scenarios at runtime.
 
 ## Debug Tool Window
+
 The Debug Tool Window has a few sections that are worth mentioning.
 
 On the left side we have a few buttons. This is where you can:
+
 - Re-run your application
 - Resume your program to move forward with its execution
 - Stop your program button when you are done with debugging and want the program to terminate
@@ -36,12 +39,14 @@ On the left side we have a few buttons. This is where you can:
 <img src="debug-left-menu.png" alt="Debug left-menu" width="300"/>
 
 On the top there are two main areas:
+
 - Debugger & Console tabs
 - The buttons to help us control the execution
 
 <img src="control-execution.png" alt="Control Execution" width="400"/>
 
 ## Debugger and Console Tab
+
 The debugger has a lot of power available to you. On the **Debugger** tab you can see the stack frames that represent the current state of the program on the left side, and the variables panel with local values at that execution point on the right.
 
 <img src="debugger-frame.png" alt="Debugger Frame" width="700"/>
@@ -67,6 +72,7 @@ Finally, we can click the Console tab to get the full Python console in the cont
 <img src="r-plus-30-console.png" alt="R Plus 30 console" width="700"/>
 
 ## Step Through
+
 Sometimes, you need to walk through the execution of your code. This time, instead of having our breakpoint in the `if` statement, we will move it to the outer function, where we call `highest_random`. Once the breakpoint is hit and the execution stops, we can walk into the inner function by using **Step Into**.
 
 <img src="step-into.png" alt="Step Into" width="700"/>
@@ -80,9 +86,11 @@ If you then say **Step Into**, PyCharm will take you into Python’s Random `ran
 Now, even if we keep clicking, PyCharm won’t head into any library code, only code in my own project.
 
 ## Conclusion
+
 In this step, we saw PyCharm’s star attraction, the debugger. We covered what you need to be productive: breakpoints, the tool window layout, evaluating variables and expressions, and stepping through code. Check the [documentation](https://www.jetbrains.com/help/pycharm/debugging-python-code.html) for an in-depth understanding of debugging capabilities in PyCharm.
 
 That's it, the end of the tutorial! We hope you found this useful and, that you enjoy using PyCharm!
 
 ## Video
+
 You can also check out the video for this step from our Getting Started series on YouTube:

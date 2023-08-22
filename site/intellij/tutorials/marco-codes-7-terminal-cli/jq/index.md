@@ -6,9 +6,9 @@ topics: []
 author: hs
 subtitle: An introduction to jq
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/6FFNeDiRGK0&start=252s'
+video: "https://youtu.be/6FFNeDiRGK0&start=252s"
 ---
 
 ## jq
 
-* jq is a lightweight and flexible command-line JSON processor.
+- jq is a lightweight and flexible command-line JSON processor.

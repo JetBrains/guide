@@ -10,8 +10,11 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=7VWXuLdrt54&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=86
 ---
+
 **How to use:**
 
 Turn on the _Mermaid_ option in _Settings/Preferences | Languages & Frameworks | Markdown_ under the _Markdown Extensions_ section. Then open any Markdown file and enjoy previewing _Mermaid.js_ diagrams.
+
+**Note:** You must install the [_Mermaid_](https://plugins.jetbrains.com/plugin/20146-mermaid) support plugin from the IDE Marketplace via _Settings/Preferences | Plugins | Marketplace_ for this functionality to work.
 
 <span class="tag is-rounded">New in 2020.3</span>

@@ -1,7 +1,7 @@
 import {
-  CollectionApi,
-  getAllCollections,
-  RegisterIncludesProps,
+	CollectionApi,
+	getAllCollections,
+	RegisterIncludesProps,
 } from "../src/registration";
 import { Resource, ResourceFrontmatter } from "../src/ResourceModels";
 import { Reference, ReferenceFrontmatter } from "../src/ReferenceModels";
@@ -9,16 +9,16 @@ import { Author, AuthorFrontmatter } from "./references/author/AuthorModels";
 import { Topic, TopicFrontmatter } from "./references/topic/TopicModels";
 import { Tip, TipFrontmatter } from "./resources/tip/TipModels";
 import {
-  Tutorial,
-  TutorialFrontmatter,
+	Tutorial,
+	TutorialFrontmatter,
 } from "./resources/tutorial/TutorialModels";
 import {
-  TutorialStep,
-  TutorialStepFrontmatter,
+	TutorialStep,
+	TutorialStepFrontmatter,
 } from "./resources/tutorial/TutorialStepModels";
 import {
-  Playlist,
-  PlaylistFrontmatter,
+	Playlist,
+	PlaylistFrontmatter,
 } from "./resources/playlist/PlaylistModels";
 import { dumpSchemas } from "../src/schemas";
 import path from "upath";
@@ -26,11 +26,11 @@ import * as fs from "fs";
 import MarkdownIt from "markdown-it";
 import prism from "markdown-it-prism";
 import {
-  getReference,
-  getReferences,
-  getResource,
-  getResources,
-  QueryFilter,
+	getReference,
+	getReferences,
+	getResource,
+	getResources,
+	QueryFilter,
 } from "./queries";
 import { dumpObsoletes } from "../src/obsoletes";
 import { Page } from "./resources/page/PageModels";
@@ -38,110 +38,110 @@ import { Article } from "./resources/article/ArticleModels";
 import { Channel } from "./resources/channel/ChannelModels";
 
 export const resourceCollections = {
-  channel: Channel,
-  page: Page,
-  playlist: Playlist,
-  tip: Tip,
-  tutorial: Tutorial,
-  tutorialstep: TutorialStep,
-  article: Article,
+	channel: Channel,
+	page: Page,
+	playlist: Playlist,
+	tip: Tip,
+	tutorial: Tutorial,
+	tutorialstep: TutorialStep,
+	article: Article,
 };
 export const referenceCollections = {
-  author: Author,
-  topic: Topic,
+	author: Author,
+	topic: Topic,
 };
 
 export const rootPath = "site/webstorm-pycharm-webstorm-guide";
 
 export async function registerIncludes(
-  { eleventyConfig }: RegisterIncludesProps,
-  sitePath: string
+	{ eleventyConfig }: RegisterIncludesProps,
+	sitePath: string
 ) {
-  let allCollections: any;
+	let allCollections: any;
 
-  eleventyConfig.addExtension(["11ty.jsx", "11ty.ts", "11ty.tsx"], {
-    key: "11ty.js",
-  });
+	eleventyConfig.addExtension(["11ty.jsx", "11ty.ts", "11ty.tsx"], {
+		key: "11ty.js",
+	});
 
-  let allResourcesList: Resource[];
-  let allReferencesList: Reference[];
-  eleventyConfig.addCollection(
-    `allResources`,
-    async function (collectionApi: CollectionApi) {
-      // Get all the collection results
-      allCollections = await getAllCollections({
-        collectionApi,
-        resourceCollections,
-        referenceCollections,
-      });
+	let allResourcesList: Resource[];
+	let allReferencesList: Reference[];
+	eleventyConfig.addCollection(
+		`allResources`,
+		async function (collectionApi: CollectionApi) {
+			// Get all the collection results
+			allCollections = await getAllCollections({
+				collectionApi,
+				resourceCollections,
+				referenceCollections,
+			});
 
-      // Update closure value so we can add function
-      allResourcesList = Array.from(allCollections.allResources.values());
-      allReferencesList = Array.from(allCollections.allReferences.values());
+			// Update closure value so we can add function
+			allResourcesList = Array.from(allCollections.allResources.values());
+			allReferencesList = Array.from(allCollections.allReferences.values());
 
-      // Generate JSON Schemas
-      const schemas = {
-        Tip: TipFrontmatter,
-        Tutorial: TutorialFrontmatter,
-        TutorialStep: TutorialStepFrontmatter,
-        Playlist: PlaylistFrontmatter,
-        Author: AuthorFrontmatter,
-        Topic: TopicFrontmatter,
-        Resource: ResourceFrontmatter,
-      };
-      const schemasOutputPath = path.join(
-        "docs",
-        "schemas",
-        path.basename(sitePath)
-      );
-      fs.mkdirSync(schemasOutputPath, { recursive: true });
-      await dumpSchemas(schemas, allReferencesList, schemasOutputPath);
+			// Generate JSON Schemas
+			const schemas = {
+				Tip: TipFrontmatter,
+				Tutorial: TutorialFrontmatter,
+				TutorialStep: TutorialStepFrontmatter,
+				Playlist: PlaylistFrontmatter,
+				Author: AuthorFrontmatter,
+				Topic: TopicFrontmatter,
+				Resource: ResourceFrontmatter,
+			};
+			const schemasOutputPath = path.join(
+				"docs",
+				"schemas",
+				path.basename(sitePath)
+			);
+			fs.mkdirSync(schemasOutputPath, { recursive: true });
+			await dumpSchemas(schemas, allReferencesList, schemasOutputPath);
 
-      // Dump an obsoletes.json file to later generate redirects
-      dumpObsoletes(allCollections.allReferences, allCollections.allResources);
-      return allCollections.allResources;
-    }
-  );
+			// Dump an obsoletes.json file to later generate redirects
+			dumpObsoletes(allCollections.allReferences, allCollections.allResources);
+			return allCollections.allResources;
+		}
+	);
 
-  eleventyConfig.addCollection("allReferences", function () {
-    return allCollections.allReferences;
-  });
+	eleventyConfig.addCollection("allReferences", function () {
+		return allCollections.allReferences;
+	});
 
-  // Query helpers
-  eleventyConfig.addJavaScriptFunction(
-    "getResources",
-    (filter: QueryFilter): Resource[] | null =>
-      getResources(allResourcesList, filter)
-  );
-  eleventyConfig.addJavaScriptFunction(
-    "getResource",
-    (url: string): Resource => getResource(allResourcesList, url)
-  );
-  eleventyConfig.addJavaScriptFunction(
-    "getReferences",
-    (filter: QueryFilter): ReferenceFrontmatter[] | null =>
-      getReferences(allReferencesList, filter)
-  );
-  eleventyConfig.addJavaScriptFunction(
-    "getReference",
-    (url: string): Reference => getReference(allReferencesList, url)
-  );
+	// Query helpers
+	eleventyConfig.addJavaScriptFunction(
+		"getResources",
+		(filter: QueryFilter): Resource[] | null =>
+			getResources(allResourcesList, filter)
+	);
+	eleventyConfig.addJavaScriptFunction(
+		"getResource",
+		(url: string): Resource => getResource(allResourcesList, url)
+	);
+	eleventyConfig.addJavaScriptFunction(
+		"getReferences",
+		(filter: QueryFilter): ReferenceFrontmatter[] | null =>
+			getReferences(allReferencesList, filter)
+	);
+	eleventyConfig.addJavaScriptFunction(
+		"getReference",
+		(url: string): Reference => getReference(allReferencesList, url)
+	);
 
-  // centralize Markdown configuration
-  const md = new MarkdownIt("commonmark", {
-    html: true,
-    breaks: false,
-    linkify: true,
-  })
-    .use(prism)
-    .enable("table");
+	// centralize Markdown configuration
+	const md = new MarkdownIt("commonmark", {
+		html: true,
+		breaks: false,
+		linkify: true,
+	})
+		.use(prism)
+		.enable("table");
 
-  // custom markdown renderer
-  eleventyConfig.setLibrary("md", md);
-  eleventyConfig.addJavaScriptFunction(
-    "renderMarkdown",
-    (content: string): string => {
-      return md.render(content);
-    }
-  );
+	// custom markdown renderer
+	eleventyConfig.setLibrary("md", md);
+	eleventyConfig.addJavaScriptFunction(
+		"renderMarkdown",
+		(content: string): string => {
+			return md.render(content);
+		}
+	);
 }

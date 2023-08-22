@@ -13,4 +13,3 @@ tutorialItems:
   - ./sql-commands/
   - ./datasource-connection-hikaricp-libraries/
 ---
-

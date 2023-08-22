@@ -10,10 +10,10 @@ topics:
   - rider
   - unity
 author: citizenmatt
-subtitle: 'Find your way around your code base, asset usages, and more.'
+subtitle: "Find your way around your code base, asset usages, and more."
 thumbnail: ./thumbnail.png
 video:
-  url: 'https://www.youtube.com/watch?v=gNTOFr_TQCg'
+  url: "https://www.youtube.com/watch?v=gNTOFr_TQCg"
   start: 528
   end: 693
 ---

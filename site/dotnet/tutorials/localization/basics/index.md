@@ -10,20 +10,20 @@ topics:
   - resharper
   - rider
 author: khalidabuhakmeh
-subtitle: 'Working with Cultures, Resources, & Apps'
+subtitle: "Working with Cultures, Resources, & Apps"
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/ieNmK6zAYns'
+video: "https://youtu.be/ieNmK6zAYns"
 ---
 
 Localization is the process of modifying our application to fit within a particular culture. We can think of culture as the customs, language, and social constructs of a specific nation, people, or social group. When attempting to localize an application, we should keep in mind all the presentational elements: language, images, and colors are a few examples. Language, the way we communicate thoughts, is ideally where most folks would start.
 
-This tutorial will show how to localize a **Hello, World** console application utilizing **Rider's Localization Manager**.  Let's aim to _keep it simple_. Many of the steps it takes to localize for one culture we can apply to all cultures.
+This tutorial will show how to localize a **Hello, World** console application utilizing **Rider's Localization Manager**. Let's aim to _keep it simple_. Many of the steps it takes to localize for one culture we can apply to all cultures.
 
 Before we delve into the code, let's talk about the main components of .NET localization. These building blocks have existed since .NET 1.1 and continue to be relevant in the latest versions of .NET Core.
 
 ## CultureInfo
 
-The [`CultureInfo` class](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo) provides the rules specific to a particular culture. 
+The [`CultureInfo` class](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo) provides the rules specific to a particular culture.
 
 > The information includes the names for the culture, the writing system, the calendar used, the sort order of strings, and formatting for dates and numbers. [-- Microsoft](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo)
 
@@ -84,7 +84,7 @@ In our editor, we'll notice that our `"Hello, World!"` string know shows a hint.
 
 ![Move to resource analyzer sees a string that can be moved to a resource and provides a quick fix](2-quick-fix.png)
 
-We'll see a **"Move to Resource"** dialog to set the options for our new resource value item. Let's change the name to `HelloWorld` to be more in line with C# idioms. When done, we should see our value in Rider's Localization Manager. 
+We'll see a **"Move to Resource"** dialog to set the options for our new resource value item. Let's change the name to `HelloWorld` to be more in line with C# idioms. When done, we should see our value in Rider's Localization Manager.
 
 ![Move to resource dialog helps store a string in a resource file](3-move-to-resource-dialog.png)
 
@@ -105,7 +105,7 @@ namespace HelloWorld
 }
 ```
 
-Let's get to some German. In the **Localization Manager**, we need to click the plus (+) symbol located over the left-hand pane. It is to the left of the phrase **"Group by"**. Clicking the icon, we see a dialog box with a text input. 
+Let's get to some German. In the **Localization Manager**, we need to click the plus (+) symbol located over the left-hand pane. It is to the left of the phrase **"Group by"**. Clicking the icon, we see a dialog box with a text input.
 
 ![Localization manager shows all resource strings and lets you edit them](4-localization-manager.png)
 

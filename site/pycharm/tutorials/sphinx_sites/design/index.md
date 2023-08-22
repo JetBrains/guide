@@ -54,24 +54,23 @@ Add a file at `_templates/layout.html`:
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-  </head>
-  <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
-    </div>
-  </section>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Hello Bulma!</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+		/>
+	</head>
+	<body>
+		<section class="section">
+			<div class="container">
+				<h1 class="title">Hello World</h1>
+				<p class="subtitle">My first website with <strong>Bulma</strong>!</p>
+			</div>
+		</section>
+	</body>
 </html>
 ```
 
@@ -80,7 +79,7 @@ With our look-and-feel started, we can now add the content structure to the temp
 ## Dynamic Page
 
 Although the file has a `.html` suffix, because it is in the magically-named `_templates` directory, it's actually a Jinja2 template.
-This means it can use the [template variables available in Sphinx](https://www.sphinx-doc.org/en/master/templating.html#global-variables).
+This means it can use the [template variables available in Sphinx](https://www.sphinx-doc.org/en/master/development/templating.html#global-variables).
 
 First, let's get the page title into the HTML `<title>`:
 
@@ -174,17 +173,17 @@ Next, open `_static/custom.css_t`, remove the contents, and add the following:
 
 ```css
 a.headerlink {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 a.brackets:before,
-span.brackets > a:before{
-    content: "[";
+span.brackets > a:before {
+	content: "[";
 }
 
 a.brackets:after,
 span.brackets > a:after {
-    content: "]";
+	content: "]";
 }
 
 h1:hover > a.headerlink,
@@ -197,7 +196,7 @@ dt:hover > a.headerlink,
 caption:hover > a.headerlink,
 p.caption:hover > a.headerlink,
 div.code-block-caption:hover > a.headerlink {
-    visibility: visible;
+	visibility: visible;
 }
 ```
 
@@ -302,4 +301,3 @@ There's a lot more that can be done, that should be done:
 - Meta tags and canonical links
 - Sidebars
 - Everything in Sphinx's `basic/layout.html`
-

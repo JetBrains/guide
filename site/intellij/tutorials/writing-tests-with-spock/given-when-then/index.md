@@ -1,13 +1,13 @@
 ---
 type: TutorialStep
 date: 2021-05-20
-title: 'Given, When and Then'
+title: "Given, When and Then"
 topics:
   - testing
 author: tg
 subtitle: See how Spock tests are usually structured.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/i5Qu3qYOfsM?start=386'
+video: "https://youtu.be/i5Qu3qYOfsM?start=386"
 ---
 
 One of the most powerful features of Spock is how descriptive it is. It's not just for testing code, it's for describing and documenting expected behaviour.
@@ -73,5 +73,3 @@ Run this test to see if it passes. You should get an output like:
 Using these labels might look like it's doubling the number of lines of code for a test method, but remember that tests often have many more lines of code in them, and grouping them in this way helps describe what's happening.
 
 In this step, we covered some tips on writing tests using Spock. Now you know how to use labels to define the blocks of your tests
-
-

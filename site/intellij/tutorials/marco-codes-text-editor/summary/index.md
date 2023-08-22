@@ -9,6 +9,7 @@ thumbnail: ./thumbnail.png
 ---
 
 ## Summary & Acknowledgements
+
 - A pat on the back
 - Further Readings
 - Acknowledgements

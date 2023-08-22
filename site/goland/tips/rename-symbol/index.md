@@ -5,16 +5,17 @@ topics:
   - platform
   - refactoring
 author: dlsniper
-subtitle: 'Change a variable name, class name, or other symbol, across the project.'
+subtitle: "Change a variable name, class name, or other symbol, across the project."
 seealso:
   - title: Renaming a symbol
-    href: 'https://www.jetbrains.com/help/go/rename-refactorings.html'
+    href: "https://www.jetbrains.com/help/go/rename-refactorings.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=SC1etcii7IE&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=118
 ---
-*Refactor names quickly, across all project at once.*
+
+_Refactor names quickly, across all project at once._
 
 Put your cursor on a symbol and refactor it.
 All usages in the project change with it.

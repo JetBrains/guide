@@ -10,6 +10,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=Vm7maCICcXk&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=154
 ---
+
 Use the shell that you need in each Terminal tabs with only a few clicks.
 
 **How to use:**

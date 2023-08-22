@@ -10,7 +10,7 @@ subtitle: >-
   Sometimes you may need to encourage IntelliJ IDEA to reload any changes from
   the Gradle configuration.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/6V6G3RyxEMk?start=917'
+video: "https://youtu.be/6V6G3RyxEMk?start=917"
 ---
 
 We saw that IntelliJ IDEA usually shows us when the Gradle build file or settings have changed, and that we need to trigger a reload of the Gradle settings so IntelliJ IDEA can use them. We can [configure the settings](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html) for how IntelliJ IDEA syncs with Gradle by pressing the settings icon in the [Gradle tool window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html), and selecting **Auto-Reload Settings**.
@@ -27,7 +27,7 @@ As we saw earlier, when we do make changes to a build file, we can reload those 
 
 ![Load changes](./load-gradle-changes.png)
 
-Sometimes we want to force a reload of the whole project, so that IntelliJ IDEA uses the Gradle settings to set up and build the project. This can be particularly useful after a large batch of external changes, or if the project is not behaving the way we expect. 
+Sometimes we want to force a reload of the whole project, so that IntelliJ IDEA uses the Gradle settings to set up and build the project. This can be particularly useful after a large batch of external changes, or if the project is not behaving the way we expect.
 
 ![Reload all projects](./reload-all-projects.png)
 

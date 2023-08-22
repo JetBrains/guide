@@ -8,7 +8,7 @@ topics:
 author: tg
 subtitle: Add Spock framework dependencies to the project
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/i5Qu3qYOfsM?start=75'
+video: "https://youtu.be/i5Qu3qYOfsM?start=75"
 ---
 
 Now the basics of the project have been created, let's take a closer look and set up the dependencies we need.
@@ -19,12 +19,12 @@ IntelliJ IDEA adds JUnit 5 as the default testing framework, which is a logical 
 
 We can search for "spock" in the artifact search, and add the [latest version of the spock-core library](https://github.com/spockframework/spock/releases). This is currently Spock 2.0:
 
- - `org.spockframework:spock-core:2.0-groovy-3.0` if using Groovy 3
- - `org.spockframework:spock-core:2.0-groovy-2.5` if using Groovy 2
+- `org.spockframework:spock-core:2.0-groovy-3.0` if using Groovy 3
+- `org.spockframework:spock-core:2.0-groovy-2.5` if using Groovy 2
 
 This is a test dependency so make sure the declaration is `testImplementation`.
 
-We also need a dependency on [Groovy](../../../../topics/groovy), since Spock tests are written in Groovy. Follow the same steps for adding a new Maven artifact dependency, search for Groovy and add a dependency on Groovy 3.0.8. For now, we're only going to use Groovy for testing, so we'll declare this as `testImplementation` too.
+We also need a dependency on [Groovy](/topics/groovy/), since Spock tests are written in Groovy. Follow the same steps for adding a new Maven artifact dependency, search for Groovy and add a dependency on Groovy 3.0.8. For now, we're only going to use Groovy for testing, so we'll declare this as `testImplementation` too.
 
 You can delete the other JUnit dependencies since we don't need them, your `build.gradle` dependencies should look like:
 
@@ -49,9 +49,8 @@ Now we can load all the Gradle changes with **⇧⌘I** (macOS), or **Ctrl+Shift
 
 With a mixed language project like this one, one way to organise the files is to keep Java code in the `java` folder and to create a `groovy` folder for Groovy code.
 
-From the Project window, select the `test` folder and press  **⌘N** (macOS) or **Alt+Insert** (Windows/Linux). Select "Directory", and start typing "groovy" in the **New Directory** dialog. IntelliJ IDEA should suggest "groovy" in the dropdown because we're using the Groovy plugin in Gradle.
+From the Project window, select the `test` folder and press **⌘N** (macOS) or **Alt+Insert** (Windows/Linux). Select "Directory", and start typing "groovy" in the **New Directory** dialog. IntelliJ IDEA should suggest "groovy" in the dropdown because we're using the Groovy plugin in Gradle.
 
 ![](./04-groovy-dir.png)
 
 Now you know how to set up your project to use Spock. Next, we're going to create our first Spock test.
-

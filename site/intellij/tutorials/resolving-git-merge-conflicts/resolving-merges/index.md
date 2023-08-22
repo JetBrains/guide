@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Using the diff view to resolve merge conflicts
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/WgipWkaU2MM?start=136'
+video: "https://youtu.be/WgipWkaU2MM?start=136"
 ---
 
 ## Resolving Merges
@@ -17,22 +17,22 @@ Back on the _Conflicts_ dialog, there are changes on both branches that we want 
 
 There are several changes:
 
-- a removed line is shown in grey 
-- lines that were added are shown in green 
-- lines that were changed are shown in blue; the changes made are highlighted 
+- a removed line is shown in grey
+- lines that were added are shown in green
+- lines that were changed are shown in blue; the changes made are highlighted
 - conflicts are shown in red
 
 For each change you can decide to ignore it by clicking the **x** or to accept it by clicking the arrows **>>**.
 
 You can use **⌘Z** (macOS), or **Ctrl+Z** on (Windows/Linux) to undo an action here if required.
 
-Depending on the number of changes, accepting or ignoring each change individual change might take some time. You can merge all non-conflicting changes automatically with **Apply All Non-Conflicting Changes**. 
+Depending on the number of changes, accepting or ignoring each change individual change might take some time. You can merge all non-conflicting changes automatically with **Apply All Non-Conflicting Changes**.
 
 Alternatively, you can use **Apply Non-Conflicting Changes from the Left Side** or **Apply Non-Conflicting Changes from the Right Side** to merge non-conflicting changes from the left/right parts of the dialog respectively. When you accept all the changes, the **Left/All/Right** buttons are unavailable as there are no more non-conflicting changes to apply. There is just one remaining conflict.
 
 ![Final conflict](final-conflict.png)
 
-Another way of resolving conflicts is to right-click on the highlighted conflict in the central pane and use the commands from the context menu. 
+Another way of resolving conflicts is to right-click on the highlighted conflict in the central pane and use the commands from the context menu.
 
 ![Merge conflict context menu](right-click-context-menu.png)
 
@@ -42,11 +42,11 @@ At this point, IntelliJ IDEA has concluded that all changes have been processed,
 
 ![Save changes and finish merging](save-changes-finish-merging.png)
 
-However, as we can see from the error highlighting this doesn't look quite right. The reason here is that both branches have added fields to this record, so we need to fix the brackets. 
+However, as we can see from the error highlighting this doesn't look quite right. The reason here is that both branches have added fields to this record, so we need to fix the brackets.
 
 ![Errors in the middle pane](errors-middle-pane.png)
 
-The middle pane is a fully-functional editor, so you can edit it here. 
+The middle pane is a fully-functional editor, so you can edit it here.
 
 ![Fixed the errors in the middle pane](errors-middle-pane-fixed.png)
 

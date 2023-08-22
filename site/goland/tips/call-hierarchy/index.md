@@ -11,11 +11,12 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=D86atdj1i9U&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=20
 ---
+
 **Call Hierarchy** allows you to quickly see all the places where a function or method is used.
 
 **How to use:**
 
-Press _Ctrl + Alt + H on Windows/Linux_, _⌥ + ^ + H on macOS_, and the 
+Press _Ctrl + Alt + H on Windows/Linux_, _⌥ + ^ + H on macOS_, and the
 _Call Hierarchy_ tool window will open up with all the places that the function is called inside.
 
 **Pro tip:**

@@ -10,14 +10,15 @@ subtitle: >-
   file.
 seealso:
   - title: PyCharm Django Support
-    href: 'https://www.jetbrains.com/help/pycharm/django-support7.html'
+    href: "https://www.jetbrains.com/help/pycharm/django-support7.html"
   - title: Code Navigation
-    href: 'https://www.jetbrains.com/help/pycharm/auto-completing-code.html'
+    href: "https://www.jetbrains.com/help/pycharm/auto-completing-code.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/Tc1n43evD_8'
+video: "https://youtu.be/Tc1n43evD_8"
 ---
-*PyCharm can autocomplete, even inside a Django string.*    
 
-Editing a magic string, such as the list of installed apps in Django's `settings.py`? 
+_PyCharm can autocomplete, even inside a Django string._
+
+Editing a magic string, such as the list of installed apps in Django's `settings.py`?
 PyCharm understands those and can autocomplete and navigate.

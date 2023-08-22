@@ -8,7 +8,7 @@ subtitle: >-
   Sometimes we need to move test code into a separate method. In this section,
   we look at some tips for this.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/i5Qu3qYOfsM?start=1716'
+video: "https://youtu.be/i5Qu3qYOfsM?start=1716"
 ---
 
 When tests get big, we may want to split out large parts of code, or common code, into [helper methods](http://spockframework.org/spock/docs/2.0/all_in_one.html#_helper_methods).
@@ -27,7 +27,7 @@ def "should use a helper method"() {
     then:
     polygon.numberOfSides == 4
     polygon.renderer == renderer
-    //could check lots of different values on this polygon... 
+    //could check lots of different values on this polygon...
 }
 
 ```
@@ -39,7 +39,7 @@ We may be tempted to move all these checks into their own method, especially if 
 ```groovy
 def "should use a helper method"() {
     //given... when... code
-    
+
     then:
     checkDefaultShape(polygon, renderer)
 }
@@ -62,6 +62,7 @@ private static void checkDefaultShape(Polygon polygon, Renderer renderer) {
     assert polygon.renderer == renderer
 }
 ```
+
 Now if you run the test with incorrect values in `checkDefaultShape`, it should fail.
 
 There's something else to be aware of too - it fails on the first assertion that fails, it never runs the assertion to check the polygon's renderer. Later we'll look at how to address that.

@@ -8,7 +8,7 @@ author: dlsniper
 subtitle: Let the IDE help you spot coverage gaps in your testing.
 seealso:
   - title: Viewing Code Coverage Results
-    href: 'https://www.jetbrains.com/help/go/viewing-code-coverage-results.html'
+    href: "https://www.jetbrains.com/help/go/viewing-code-coverage-results.html"
   - title: Configuring Code Coverage Measurement
     href: >-
       https://www.jetbrains.com/help/go/configuring-code-coverage-measurement.html
@@ -17,6 +17,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=yNTB96ybx6k&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=148
 ---
+
 GoLand offers a builtin feature to allow you to run the tests
 in your project and display the coverage in a tool window as a
 summary for a package (folder) and file, and for each file,

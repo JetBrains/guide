@@ -11,7 +11,8 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=wynrU83Ajns&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=52
 ---
-*Make all your changes then run _go list_ at the push of a button.*
+
+*Make all your changes then run*go list*at the push of a button.*
 
 **How to use:**
 

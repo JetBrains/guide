@@ -7,7 +7,7 @@ topics:
   - navigationbar
   - pytest
 author: pwe
-subtitle: 'Move around files with keyboard, without wasting screen UI space'
+subtitle: "Move around files with keyboard, without wasting screen UI space"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
@@ -19,11 +19,11 @@ playlistItems:
   - /pycharm/tips/navbar-find-in-path/
 ---
 
-We want to get you into the flow of development. No UI distractions, hands 
+We want to get you into the flow of development. No UI distractions, hands
 on the keyboard, moving quickly and efficiently through your work.
 
-Some times you need to work with files and directories. How can you stay 
+Some times you need to work with files and directories. How can you stay
 in the flow when navigating your files?
 
-This series of tips shows the Navigation Bar: activate it on demand, cursor 
+This series of tips shows the Navigation Bar: activate it on demand, cursor
 and speed type your way through listings, and do your operation.

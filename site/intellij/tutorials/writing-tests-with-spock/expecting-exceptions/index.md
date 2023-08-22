@@ -9,7 +9,7 @@ subtitle: >-
   Tests don't check just the happy paths, sometimes we want to say we're
   expecting a specific Exception.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/i5Qu3qYOfsM?start=657'
+video: "https://youtu.be/i5Qu3qYOfsM?start=657"
 ---
 
 Testing isn't just about testing the happy paths. We should also check the exceptional cases.
@@ -26,7 +26,7 @@ def "should expect Exceptions"() {
 }
 ```
 
-The `then` block checks that the correct Exception has been thrown. We do this by calling `thrown()` with the class of the Exception that we expect to be thrown. In our case, we expect a [TooFewSidesException](https://github.com/trishagee/spock-testing-demo/blob/main/src/main/java/com/mechanitis/demo/spock/TooFewSidesException.java) to have been thrown by the call to the constructor  (create this Exception in your project if you want this test to run correctly).
+The `then` block checks that the correct Exception has been thrown. We do this by calling `thrown()` with the class of the Exception that we expect to be thrown. In our case, we expect a [TooFewSidesException](https://github.com/trishagee/spock-testing-demo/blob/main/src/main/java/com/mechanitis/demo/spock/TooFewSidesException.java) to have been thrown by the call to the constructor (create this Exception in your project if you want this test to run correctly).
 
 Note that in Java, we'd normally have to add .class to the end of `TooFewSidesException` to define this is the type of exception. In Groovy we don't need this, but you can add it if you think it makes the code clearer:
 

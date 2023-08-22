@@ -14,7 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: One thing leads to another
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/Yp-BPi_fgMM'
+video: "https://youtu.be/Yp-BPi_fgMM"
 ---
 
 It's a typical pattern in web development to have a value in one `select` element affect the options in another. For example, you might have seen this interaction used on car shopping sites, where you can change the vehicle make to see the possible models. As common as it is to see this technique used, it can quickly become challenging to implement. What if we have multiple levels? What if the dataset is too large to include on the initial request? What if we need validation? How would you implement it with the knowledge you have today? Well, if you have no idea, then I have a solution for you.
@@ -26,8 +26,8 @@ Luckily, with HTMX, it's a _breeze_ to implement. In this sample, we'll have two
 Let's start with our first select element for `Cuisine`. We'll use the familiar attribute of `hx-get`. We'll be making a request and replacing the `option` elements in our second `Food` select element.
 
 ```html
-<select asp-for="Cuisine" 
-        asp-items="Model.CuisineItems" 
+<select asp-for="Cuisine"
+        asp-items="Model.CuisineItems"
         class="form-control"
         hx-get="@Url.Page("03_Selects", "Foods")"
         hx-swap="innerHTML"
@@ -54,10 +54,10 @@ public IActionResult OnGetFoods()
     if (Cuisine is { Length: > 0 } cuisine && cuisines.TryGetValue(cuisine, out var foods))
     {
         html.AppendLine("<option disabled selected>Select a food</option>");
-        foreach (var food in cuisines[Cuisine!]) 
+        foreach (var food in cuisines[Cuisine!])
         {
             html.AppendLine($"<option>{food}</option>");
-        }    
+        }
     }
 
     return Content(html.ToString(), "text/html");
@@ -86,7 +86,7 @@ public IActionResult OnGetLove()
 }
 ```
 
-Running our sample, we can see changing the `Cuisine` and `Food` selections update our UI as expected. 
+Running our sample, we can see changing the `Cuisine` and `Food` selections update our UI as expected.
 
 ![I Love Tacos! result](img_1.png)
 
@@ -94,4 +94,4 @@ From here, we could use the cascading select technique to infinity, making for a
 
 The approach outlined in this sample is one of many ways to accomplish this behavior. As you'll learn with HTMX, there usually is more than one right way to achieve your desired interaction. So, experiment with this sample and see if you can get the same behavior differently. Experiment with HTTP methods and swapping behaviors.
 
-In the following video, we'll implement a search-as-you-type experience. 
+In the following video, we'll implement a search-as-you-type experience.

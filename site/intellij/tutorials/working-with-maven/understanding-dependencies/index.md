@@ -7,10 +7,10 @@ topics:
 author: tg
 subtitle: Adding and visualising dependencies
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/pt3uB0sd5kY?start=81'
+video: "https://youtu.be/pt3uB0sd5kY?start=81"
 ---
 
-We can easily add new dependencies with the **Generate** option from the Code menu, or using **⌘N** (macOS), or **Alt+Insert** (Windows/Linux). 
+We can easily add new dependencies with the **Generate** option from the Code menu, or using **⌘N** (macOS), or **Alt+Insert** (Windows/Linux).
 
 ![generate-dependency.png](generate-dependency.png)
 
@@ -34,16 +34,10 @@ As you'd expect from IntelliJ IDEA, you get code-completion inside your `pom.xml
 
 ![pom-completion.png](pom-completion.png)
 
-You can see all your declared dependencies in the Maven window. Nested under those we've declared, you can see the dependencies they themselves rely on. 
+You can see all your declared dependencies in the Maven window. Nested under those we've declared, you can see the dependencies they themselves rely on.
 
 ![maven-window-dependencies.png](maven-window-dependencies.png)
 
 When you look in the project window, you can see all the Maven dependencies, regardless of whether they're declared by your project or pulled in as a transitive dependency.
 
 ![project-window.png](project-window.png)
-
-
-
-
-
-

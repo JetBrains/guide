@@ -4,10 +4,8 @@ author: pwe
 date: 2020-01-01
 layout: layouts/ListingLayout.11ty.tsx
 title: Channels
-subtitle: >-
-  Storytelling about important technologies and features.
+subtitle: Storytelling about important technologies and features.
 pagination:
-  resourceType: channel 
+  resourceType: channel
   sortBy: title
 ---
-

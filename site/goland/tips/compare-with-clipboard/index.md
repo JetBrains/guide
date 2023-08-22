@@ -5,12 +5,13 @@ topics:
   - editing
   - go
 author: dlsniper
-subtitle: 'Compare text, files or directories and even use the clipboard contents'
+subtitle: "Compare text, files or directories and even use the clipboard contents"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=VBhXtk11K3M&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=12
 ---
+
 GoLand has a built-in diff viewer for code, revisions, and even images.
 
 **How to use:**

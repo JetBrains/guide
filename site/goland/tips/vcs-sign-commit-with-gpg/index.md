@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=H63-Wa6DIfI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=152
 ---
+
 **How to use:**
 
 Configure the git client with the correct key. Then, head over to _Settings/Preferences | Version Control | Git_ and check the option **Configure GPG Key...** to turn on this feature.

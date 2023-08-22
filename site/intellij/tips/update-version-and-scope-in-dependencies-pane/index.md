@@ -6,12 +6,13 @@ topics:
   - maven
   - packagesearch
 author: sf
-subtitle: 'Upgrade, downgrade, and change scope easily'
+subtitle: "Upgrade, downgrade, and change scope easily"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: IntelliJ IDEA Help - Package Search
-    href: 'https://www.jetbrains.com/help/idea/package-search.html'
-video: 'https://youtu.be/uhl84zhqC_E'
+    href: "https://www.jetbrains.com/help/idea/package-search.html"
+video: "https://youtu.be/uhl84zhqC_E"
 ---
+
 Managing dependencies is hard, but with the built-in Dependencies tool window, you can upgrade, downgrade, remove existing dependencies, and change their scope.

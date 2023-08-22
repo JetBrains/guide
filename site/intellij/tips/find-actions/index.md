@@ -11,11 +11,12 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Keyboard shortcuts
-    href: 'https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html'
+    href: "https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html"
   - title: (blog) IntelliJ IDEA Blog - Top 15 IntelliJ IDEA Shortcuts
-    href: 'https://blog.jetbrains.com/idea/2020/03/top-15-intellij-idea-shortcuts/'
-video: 'https://youtu.be/yU89eOwABQ4'
+    href: "https://blog.jetbrains.com/idea/2020/03/top-15-intellij-idea-shortcuts/"
+video: "https://youtu.be/yU89eOwABQ4"
 ---
+
 You can use **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows and Linux), to display the Find Actions dialog and then use it to hide some of the interface, including the Tabs, Navigation Bar and Tool Windows.
 
 **Pro tip:**

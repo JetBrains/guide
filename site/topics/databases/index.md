@@ -3,9 +3,11 @@ title: Databases
 subtitle: Integrated visual database tool for PyCharm
 accent: primary
 icon: fas fa-database
-website: 'https://jetbrains.com/datagrip'
+website: "https://jetbrains.com/datagrip"
 topicType: technology
-obsoletes: ['/goland/topics/databases/','/intellij/databases/']
+obsoletes:
+  - /goland/topics/databases/
+  - /intellij/databases/
 ---
 
 Many projects work with relational databases and many of our IDEs make

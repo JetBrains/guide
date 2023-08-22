@@ -10,7 +10,7 @@ subtitle: >-
   section shows some useful features from both.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/JXrZDUzkc2Q'
+video: "https://youtu.be/JXrZDUzkc2Q"
 ---
 
 TypeScript is a JavaScript superset with a compiler that enforces the types.
@@ -22,13 +22,13 @@ more of a look.
 
 ## Code
 
-The finished code for this tutorial step is 
+The finished code for this tutorial step is
 [in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/tsx_es6/).
 
 ## Cleanup
 
 First, make sure our `All Tests` run config is running and watching our coding.
- 
+
 The previous steps made changes to the app to introduce topics.
 Let's clean up a little bit.
 
@@ -40,9 +40,9 @@ import { render } from "@testing-library/react";
 import App from "./App";
 
 test("renders hello react", () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/hello react/i);
-  expect(linkElement).toBeInTheDocument();
+ const { getByText } = render(<App />);
+ const linkElement = getByText(/hello react/i);
+ expect(linkElement).toBeInTheDocument();
 });
 ```
 
@@ -52,18 +52,18 @@ Also, our component in `App.tsx`:
 import React from "react";
 
 function App() {
-  return (
-    <div>
-      <h1>Hello React</h1>
-    </div>
-  );
+ return (
+  <div>
+   <h1>Hello React</h1>
+  </div>
+ );
 }
 
 export default App;
 ```
 
 Make sure the test runner is still running and watching.
-Let's also *keep* the `start` task as we'll use it later in this step.
+Let's also _keep_ the `start` task as we'll use it later in this step.
 
 Our two tests pass.
 Let's see some ES6 and TSX.
@@ -78,9 +78,9 @@ In `App.test.tsx`, let's add a test for what will be our new component:
 
 ```typescript
 test("renders heading", () => {
-  const { getByText } = render(<Heading />);
-  const linkElement = getByText(/hello react/i);
-  expect(linkElement).toBeInTheDocument();
+ const { getByText } = render(<Heading />);
+ const linkElement = getByText(/hello react/i);
+ expect(linkElement).toBeInTheDocument();
 });
 ```
 
@@ -91,7 +91,7 @@ In `App.tsx` we'll add a `Heading` component:
 
 ```typescript
 export function Heading() {
-  return <h1>Hello React</h1>;
+ return <h1>Hello React</h1>;
 }
 ```
 
@@ -111,11 +111,11 @@ Change the `App` to call the component:
 
 ```typescript
 function App() {
-  return (
-    <div>
-      <Heading />
-    </div>
-  );
+ return (
+  <div>
+   <Heading />
+  </div>
+ );
 }
 ```
 
@@ -130,9 +130,9 @@ We'll first write a new test:
 
 ```typescript
 test("renders heading with argument", () => {
-  const { getByText } = render(<Heading name={`World`}/>);
-  const linkElement = getByText(/hello world/i);
-  expect(linkElement).toBeInTheDocument();
+ const { getByText } = render(<Heading name={`World`} />);
+ const linkElement = getByText(/hello world/i);
+ expect(linkElement).toBeInTheDocument();
 });
 ```
 
@@ -145,7 +145,7 @@ Let's head to the `Heading` component and fix it:
 
 ```typescript {1,2}
 export function Heading({ name }) {
-  return <h1>Hello {name}</h1>;
+ return <h1>Hello {name}</h1>;
 }
 ```
 
@@ -171,8 +171,8 @@ TypeScript combines nicely with React to power this.
 Let's express the props contract with TypeScript typing, first doing so inline:
 
 ```typescript
-export function Heading({ name }: {name: string}) {
-  return <h1>Hello {name}</h1>;
+export function Heading({ name }: { name: string }) {
+ return <h1>Hello {name}</h1>;
 }
 ```
 
@@ -186,11 +186,11 @@ Let's move the contract into a standalone type definition:
 type HeadingProps = { name: string };
 
 export function Heading({ name }: HeadingProps) {
-  return <h1>Hello {name}</h1>;
+ return <h1>Hello {name}</h1>;
 }
 ```
 
-As a note, many React examples use TypeScript *interfaces* for props, instead of types.
+As a note, many React examples use TypeScript _interfaces_ for props, instead of types.
 This tutorial follows the [rationale for types](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example/#types-or-interfaces) as explained in the [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app).
 Namely:
 
@@ -210,7 +210,7 @@ Fortunately, ES6 introduced default values for arguments:
 
 ```typescript {1}
 export function Heading({ name = "React" }: HeadingProps) {
-  return <h1>Hello {name}</h1>;
+ return <h1>Hello {name}</h1>;
 }
 ```
 
@@ -228,7 +228,7 @@ Making it optional is a one-character change:
 type HeadingProps = { name?: string };
 ```
 
-With this `?` added, all of our tests pass *and* TypeScript says we have obeyed all the contracts.
+With this `?` added, all of our tests pass _and_ TypeScript says we have obeyed all the contracts.
 
 ## Single Responsibility Principle
 
@@ -263,7 +263,7 @@ import React from "react";
 type HeadingProps = { name?: string };
 
 export function Heading({ name = "React" }: HeadingProps) {
-  return <h1>Hello {name}</h1>;
+ return <h1>Hello {name}</h1>;
 }
 ```
 
@@ -274,11 +274,11 @@ import React from "react";
 import { Heading } from "./Heading";
 
 function App() {
-  return (
-    <div>
-      <Heading />
-    </div>
-  );
+ return (
+  <div>
+   <Heading />
+  </div>
+ );
 }
 
 export default App;
@@ -291,16 +291,16 @@ When you do so, the test runner will now show two "suites" of tests, from `Headi
 
 ## JSX/TSX
 
-React brought innovation to the concept of templating languages by extending JavaScript itself. 
-Your "JSX" templating is mixed directly into your JavaScript file and component. 
+React brought innovation to the concept of templating languages by extending JavaScript itself.
+Your "JSX" templating is mixed directly into your JavaScript file and component.
 TSX is the TypeScript flavor of JSX, with file extensions ending in `.tsx`.
 
-Our professional IDEs have first-class support for JSX and TSX. 
+Our professional IDEs have first-class support for JSX and TSX.
 What turns this on?
 In the project settings, look for `Languages & Frameworks -> JavaScript` which, for projects generated by the React App template, automatically sets the `JavaScript Language version:` to `React JSX`.
 
-The easiest way to see TSX in action? 
-Go to your `<h1>` and try to add `class=""`. 
+The easiest way to see TSX in action?
+Go to your `<h1>` and try to add `class=""`.
 TypeScript itself has JSX/TSX support in the compiler and gives a compiler error:
 
 ```
@@ -308,22 +308,22 @@ Error:(6, 14) TS2322: Type '{ children: string[]; class: string; }' is not assig
   Property 'class' does not exist on type 'DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>'.
 ```
 
-Also, the IDE refuses to autocomplete on `class`. 
+Also, the IDE refuses to autocomplete on `class`.
 It does, though, autocomplete on `className`, the JSX/TSX equivalent:
 
 ![Autocomplete](./screenshots/class_name.png)
 
-Accepting the autocomplete shows that the IDE fills in `{}` for an attribute value instead of double-quotes. 
-What's the difference? 
+Accepting the autocomplete shows that the IDE fills in `{}` for an attribute value instead of double-quotes.
+What's the difference?
 A double-quote contains a regular string, whereas brackets contain JavaScript expressions, which we saw above.
 
-In components you frequently navigate around between markup and code. 
-The IDE makes this easy. 
+In components you frequently navigate around between markup and code.
+The IDE makes this easy.
 For example, in the `App` component, `Ctrl-B` or `Cmd-B` on `Heading` and you will navigate to that component.
 
 You can go in the reverse direction as well.
 Click on the `Heading` then hit `Alt-F7`.
-This shows all the locations in your project which use that *symbol*, not the string.
+This shows all the locations in your project which use that _symbol_, not the string.
 This is useful when you want the change a name through refactoring.
 
 ## Fail Faster: TDD+TypeScript

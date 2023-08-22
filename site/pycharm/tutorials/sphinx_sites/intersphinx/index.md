@@ -5,12 +5,12 @@ title: Linking Between Sites with Intersphinx
 topics:
   - sphinx
 author: pwe
-subtitle: 'Rich structure and linking, between sites.'
+subtitle: "Rich structure and linking, between sites."
 thumbnail: thumbnail.png
 ---
 
-Perhaps you've gotten the point by now: Sphinx extracts a lot of *structure* in your site.
-But what about *other* sites?
+Perhaps you've gotten the point by now: Sphinx extracts a lot of _structure_ in your site.
+But what about _other_ sites?
 
 Wouldn't it be great if linking to structure in another site was almost as easy as linking in your own site?
 If the path changed, or disappeared, then you'd know?
@@ -41,7 +41,7 @@ First, enable the extention:
 extensions = [
     "sphinx.ext.intersphinx",
     # And any other extension
-]    
+]
 ```
 
 Next, we need to register the remote Sphinx sites that we'd like to include inventories from.
@@ -88,15 +88,15 @@ And as a whole, it puts remote links outside the cool realm of Sphinx roles mach
 
 Instead, MyST gives us a syntax for doing a link when the other end is a Sphinx-powered site.
 Once registered in `conf.py` as in the previous step, we can do our familiar linking.
-First, we can link to a *document*, such as the Sphinx page explaining roles:
+First, we can link to a _document_, such as the Sphinx page explaining roles:
 
 ```markdown
 Let's talk about the power of [Sphinx roles](sphinx:usage/restructuredtext/roles).
 ```
 
-We can also link to *roles* -- that is, places *within* a document.
+We can also link to _roles_ -- that is, places _within_ a document.
 For example, that page has a "role" set using `.. _ref-role:` before the heading `Cross-referencing arbitrary locations`.
-This means `ref-role` is a role *target* for a link:
+This means `ref-role` is a role _target_ for a link:
 
 ```markdown
 Let's talk about the power of [Sphinx roles](sphinx:ref-role).
@@ -132,7 +132,7 @@ If it finds a problem, it will likely give you a very precise answer.
 If you stumble trying to find what's available in an inventory, Sphinx provides a [handy utility](https://docs.readthedocs.io/en/stable/guides/intersphinx.html#using-intersphinx) for dumping the remote inventory:
 
 ```bash
-$ python -msphinx.ext.intersphinx https://www.sphinx-doc.org/en/master/objects.inv
+python -msphinx.ext.intersphinx https://www.sphinx-doc.org/en/master/objects.inv
 ```
 
 ## Conclusion

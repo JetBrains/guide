@@ -7,7 +7,7 @@ author: er
 subtitle: Get help with commas when moving lines up and down in JSON.
 seealso:
   - title: Working with JSON in WebStorm
-    href: 'https://www.jetbrains.com/help/webstorm/json.html'
+    href: "https://www.jetbrains.com/help/webstorm/json.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -15,5 +15,6 @@ animatedGif:
   width: 600
   height: 300
 ---
-WebStorm will take care of commas when you move lines up and down in JSON, 
-JavaScript or TypeScript using *Shift+Cmd+Up/Down / Ctrl+Shift+Up/Down*.
+
+WebStorm will take care of commas when you move lines up and down in JSON,
+JavaScript or TypeScript using _Shift+Cmd+Up/Down / Ctrl+Shift+Up/Down_.

@@ -8,12 +8,12 @@ author: pwe
 subtitle: Narrow the universe of Angular template completions to those that matter.
 seealso:
   - title: PyCharm Help for Angular
-    href: 'https://www.jetbrains.com/help/pycharm/angular.html'
+    href: "https://www.jetbrains.com/help/pycharm/angular.html"
   - title: WebStorm Blog Post Announcing Improvements
-    href: 'https://blog.jetbrains.com/webstorm/2018/09/webstorm-2018-3-eap-3/'
+    href: "https://blog.jetbrains.com/webstorm/2018/09/webstorm-2018-3-eap-3/"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://www.youtube.com/watch?v=JUmIiZpazic'
+video: "https://www.youtube.com/watch?v=JUmIiZpazic"
 ---
 
 When you're writing Angular applications and working in templates, you're

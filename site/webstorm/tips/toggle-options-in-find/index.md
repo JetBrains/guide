@@ -9,7 +9,7 @@ topics:
 author: er
 seealso:
   - title: How to search for a target
-    href: 'https://www.jetbrains.com/help/webstorm/searching-everywhere.html'
+    href: "https://www.jetbrains.com/help/webstorm/searching-everywhere.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -17,6 +17,7 @@ animatedGif:
   width: 600
   height: 300
 ---
-Did you know that the *Find Action* popup (*Cmd/Ctrl+Shift+A*) not only lets you quickly 
-find actions you don’t know the shortcuts for but also helps toggle some of the IDE 
+
+Did you know that the _Find Action_ popup (_Cmd/Ctrl+Shift+A_) not only lets you quickly
+find actions you don’t know the shortcuts for but also helps toggle some of the IDE
 configuration options?

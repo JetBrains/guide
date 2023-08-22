@@ -15,7 +15,8 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=lcSWPD_2-vw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=26
 ---
-*Stop stepping.*
+
+_Stop stepping._
 
 Have a breakpoint in a loop and find yourself clicking **Continue**
 repeatedly? Change your breakpoint to only stop when a condition is met.

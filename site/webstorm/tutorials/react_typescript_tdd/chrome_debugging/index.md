@@ -10,10 +10,10 @@ subtitle: >-
   Chrome during debugging.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/dvmZi_DWu9I'
+video: "https://youtu.be/dvmZi_DWu9I"
 ---
 
-As discussed in [Debugging During Testing With NodeJS](../nodejs_debugging/), testing and debugging under NodeJS is very productive. 
+As discussed in [Debugging During Testing With NodeJS](../nodejs_debugging/), testing and debugging under NodeJS is very productive.
 There are times, though, where you need a browser environment.
 Fortunately, JetBrains IDEs can remote-control the browser's execution, letting you stay inside the IDE.
 
@@ -32,7 +32,7 @@ As we saw in the first section, the webpack development server runs on port 3000
 ![JavaScript Debug Run Configuration Type](./screenshots/run_configuration.png)
 
 Click `Ok` to save this new run configuration, then run it by clicking the green play button in the toolbar.
-Presuming that your npm `start` is *still running*, you should see a browser launched.
+Presuming that your npm `start` is _still running_, you should see a browser launched.
 
 ![Run npm start browser](./screenshots/run_start_browser.png)
 

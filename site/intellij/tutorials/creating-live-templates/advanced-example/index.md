@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Creating a Live Template to add a JUnit test
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/Sio9MdSqXZo?start=392'
+video: "https://youtu.be/Sio9MdSqXZo?start=392"
 ---
 
 In this example, we're going to create a Live Template to insert the code construct for a new JUnit test. We're going to base this Live Template on existing code:
@@ -38,7 +38,7 @@ public void $METHOD_NAME$() {
 
 You can choose the name of your variables, but remember to keep the quotes for the Display Name and copy the method body to your clipboard.
 
-4. Press **Edit variables**. Give your $DISPLAY_NAME$ variable a default value such as `Display name for my test`. 
+4. Press **Edit variables**. Give your $DISPLAY_NAME$ variable a default value such as `Display name for my test`.
 5. For your $METHOD_NAME$ variable, use the [Expression](https://www.jetbrains.com/help/idea/template-variables.html) drop-down and select `camelCase(String)`.
 6. Pass your $DISPLAY_NAME$ String into your `camelCase` expression so that it reads `camelCase(DISPLAY_NAME)` - you do not need the dollar signs around your variable here. We will see how this works in a few steps.
 7. Lastly, in quotes, paste the body of your method that you placed on your clipboard earlier. Remove any errant preceding spaces and escape the quote marks correctly. Your final string should read `"Assertions.fail(\"Not implemented\")";`.

@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2022-04-27
-title: 'Server-side validation, client-side feel'
+title: "Server-side validation, client-side feel"
 topics:
   - .net
   - asp.net
@@ -12,14 +12,14 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: 'Validate models on the server, display results on the client'
+subtitle: "Validate models on the server, display results on the client"
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/aGQAHQm4_nU'
+video: "https://youtu.be/aGQAHQm4_nU"
 ---
 
 Client-side validation can help users fix problems before making a request, but client-side validation is often insufficient to do complete state validation. What do I mean by "insufficient"? By design, clients rarely have all information necessary to determine if a user's input will pass server-side validation. A typical example is a user registration form. While a username may follow the client-side criteria for a valid username, newcomers won't know whether their registration will be successful until the server performs checks determining the uniqueness of the username against all existing users.
 
-Generally, forms have input validation and state validation. State validation requires a combination of inputs and external data to determine validity. In these more complex scenarios, you can use HTMX to submit the form and leverage ASP.NET Core's sever-side validation mechanisms to highlight and display problems. The approach also means we can avoid creating incomplete client-side validation experiences that can quickly get out of sync with our server-side counterparts. 
+Generally, forms have input validation and state validation. State validation requires a combination of inputs and external data to determine validity. In these more complex scenarios, you can use HTMX to submit the form and leverage ASP.NET Core's sever-side validation mechanisms to highlight and display problems. The approach also means we can avoid creating incomplete client-side validation experiences that can quickly get out of sync with our server-side counterparts.
 
 I acknowledge this may be one of the more controversial ideas in this series. The idea of "no client-side validation" may be scary to many, but hopefully by the end of this section you may consider this approach an option. Let's have a look at how we can accomplish server-side form validation with a client-side feel.
 
@@ -46,7 +46,7 @@ public class FormValidation : PageModel
 }
 ```
 
-We're using the `Required` attribute, but we can use any validation provided by the Data Annotation library. Looking at the `OnPost` method, we see the ternary approach to rendering our page. It's important to limit the scope of our HTML responses to what is only necessary, so in this case,  we have refactored our `_Form` into a partial view. Let's see how we've implemented the form.
+We're using the `Required` attribute, but we can use any validation provided by the Data Annotation library. Looking at the `OnPost` method, we see the ternary approach to rendering our page. It's important to limit the scope of our HTML responses to what is only necessary, so in this case, we have refactored our `_Form` into a partial view. Let's see how we've implemented the form.
 
 ```html
 <form hx-post="@Url.Page("09_FormValidation")"
@@ -91,7 +91,7 @@ We have our form that uses `hx-post` to submit user input. Here we see our first
 
 ![The basic view of the asp.net core form](img.png)
 
-Let's try out the form. Submitting an empty form will enable the HTMX indicator and then display the validation messages. You'll notice that the page still has a client-side feel but with no need to sync serverside and client-side validation.  
+Let's try out the form. Submitting an empty form will enable the HTMX indicator and then display the validation messages. You'll notice that the page still has a client-side feel but with no need to sync serverside and client-side validation.
 
 ![With validation displayed on the form](img_1.png)
 

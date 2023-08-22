@@ -11,7 +11,7 @@ topics:
 author: maartenba
 subtitle: Matthew Crews
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/NZ5Lwzrdoe8'
+video: "https://youtu.be/NZ5Lwzrdoe8"
 ---
 
 F# is a language that stretches across many boundaries (web, backend, domain modeling, etc.) and paradigms (functional, imperative, procedural, object-based) while being simple, succinct, and performant.
@@ -26,5 +26,5 @@ We'll explore why chose F# as the language for our new Discrete-Rate Simulation 
 
 An industrial engineer turned developer, Matthew is obsessed with high-performance code to optimize the scheduling of manufacturing systems and supply chains.
 
-* Twitter: https://twitter.com/McCrews
-* Blog: https://matthewcrews.com/
+- Twitter: <https://twitter.com/McCrews>
+- Blog: <https://matthewcrews.com/>

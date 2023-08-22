@@ -1,6 +1,6 @@
 ---
 date: 2021-05-31
-title: 'Generate Overrides for equals(), hashCode() and toString()'
+title: "Generate Overrides for equals(), hashCode() and toString()"
 topics:
   - editing
   - java
@@ -10,12 +10,13 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (video) CodeGeneration in IntelliJ IDEA
-    href: 'https://www.youtube.com/watch?v=btqCYUc3nFE'
-  - title: '(video) Helen''s Take On: Generating Code in IntelliJ IDEA'
-    href: 'https://www.youtube.com/watch?v=vF_18ZsM1lE'
+    href: "https://www.youtube.com/watch?v=btqCYUc3nFE"
+  - title: "(video) Helen's Take On: Generating Code in IntelliJ IDEA"
+    href: "https://www.youtube.com/watch?v=vF_18ZsM1lE"
   - title: (documentation) IntelliJ IDEA Help - Generate Equals and HashCode Wizard
     href: >-
       https://www.jetbrains.com/help/idea/generate-equals-and-hashcode-wizard.html
-video: 'https://youtu.be/y4qCSsYKJoE'
+video: "https://youtu.be/y4qCSsYKJoE"
 ---
+
 You can use **⌘N** (macOS), or **Alt+Insert** (Windows/Linux) for the _Generate_ menu and then select `equals() and hashCode()`. You can also use the same shortcut again and select `toString()` to override that method as well.

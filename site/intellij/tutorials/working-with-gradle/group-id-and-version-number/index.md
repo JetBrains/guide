@@ -7,16 +7,16 @@ topics:
 author: tg
 subtitle: How to set up or change a project's group ID and version number.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/6V6G3RyxEMk?start=537'
+video: "https://youtu.be/6V6G3RyxEMk?start=537"
 ---
 
 Now we've covered the basics of a new Gradle project, let's go back and look at how to set the [groupID and version](https://maven.apache.org/guides/mini/guide-naming-conventions.html) of a new project.
 
-Let's follow the same steps we took earlier, creating a new Gradle project with Java and the Groovy DSL. 
+Let's follow the same steps we took earlier, creating a new Gradle project with Java and the Groovy DSL.
 
 ![Create another new project](./second-new-project.png)
 
-After we've entered the project name, e.g. "more-gradle", we can click on "artifact coordinates" to configure more settings for the project. 
+After we've entered the project name, e.g. "more-gradle", we can click on "artifact coordinates" to configure more settings for the project.
 
 ![Artifact co-ordinates](./artifact-coords.png)
 

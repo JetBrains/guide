@@ -17,7 +17,8 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=7z4FAU29_mQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=87
 ---
-*Work safely via VCS, via the keyboard.*
+
+_Work safely via VCS, via the keyboard._
 
 You started a new project or opened a local directory, and it's not
 yet under VCS. Here's the fastest way to do so, from the keyboard.

@@ -11,9 +11,10 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (video) Good Old Stream API - JetBrains Technology Day for Java
-    href: 'https://www.youtube.com/watch?v=nklbYYQpQi8'
+    href: "https://www.youtube.com/watch?v=nklbYYQpQi8"
   - title: (tip) Use new methods on the Streams API
-    href: 'https://www.jetbrains.com/idea/guide/tips/new-methods-on-streams/'
-video: 'https://youtu.be/sqt9iiyrpCg'
+    href: "https://www.jetbrains.com/idea/guide/tips/new-methods-on-streams/"
+video: "https://youtu.be/sqt9iiyrpCg"
 ---
+
 You don't need to type 'stream()', let IntelliJ IDEA do it for you.

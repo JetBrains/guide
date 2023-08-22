@@ -66,7 +66,7 @@ We can choose to run either configuration using Visual Studio's run button.
 
 From here, the running and debugging experience is what most developers would expect. Set a few breakpoints, step through code, and investigate in-memory values.
 
-Developers moving to Rider will have an equivalent experience with IIS Express. From the same solution, we can see that Rider understands the `launchSettings.json` file. 
+Developers moving to Rider will have an equivalent experience with IIS Express. From the same solution, we can see that Rider understands the `launchSettings.json` file.
 
 ![Rider web application with launch settings](./4-rider-web-application-with-launch-settings.png)
 
@@ -88,7 +88,7 @@ There are instances where developers would prefer to run a full IIS instance rat
 
 From Visual Studio, we'll likely right-click and select the **Publish** option. From the publish dialog, we can choose **IIS** and follow the instructions.
 
-From Rider, we can right-click the same project and select **Publish to IIS** or **Publish to folder**. 
+From Rider, we can right-click the same project and select **Publish to IIS** or **Publish to folder**.
 
 ![Rider publish to IIS from project menu](./8-rider-publish-to-iis.png)
 
@@ -115,7 +115,3 @@ From here, we should be able to step into our code as if we were running our app
 ## Conclusion
 
 Regardless of the hosting platform, Rider allows developers to write, deploy, and debug ASP.NET web applications with ease. Developers can find many of the concepts they've learned in Visual Studio within Rider's user interface.
-
-
-
- 

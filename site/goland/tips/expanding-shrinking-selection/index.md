@@ -5,7 +5,7 @@ topics:
   - editing
   - go
 author: dlsniper
-subtitle: 'Select portions of code that you need to, faster'
+subtitle: "Select portions of code that you need to, faster"
 seealso:
   - title: Use quick pop-ups
     href: >-
@@ -15,6 +15,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=VkCGQHH_iXw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=46
 ---
+
 Use **Extend Selection** to quickly select parts of your code using semantic knowledge about it.
 
 Selected too much, or using an already existing selection, and want to reduce the selection scope? Use the complimentary **Shrink Selection** feature.

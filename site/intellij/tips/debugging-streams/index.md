@@ -10,10 +10,10 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (video) Pro Tip Debugging Java Streams
-    href: 'https://www.youtube.com/watch?v=BeJu9bMPLGU'
+    href: "https://www.youtube.com/watch?v=BeJu9bMPLGU"
   - title: (documentation) Analyze Stream Operations in IntelliJ IDEA
-    href: 'https://www.jetbrains.com/help/idea/analyze-java-stream-operations.html'
-video: 'https://youtu.be/rVFqXZNoq-s'
+    href: "https://www.jetbrains.com/help/idea/analyze-java-stream-operations.html"
+video: "https://youtu.be/rVFqXZNoq-s"
 ---
 
 Debugging stream operations is easier if you can visualize the flow of data
@@ -32,4 +32,4 @@ allows you to tab through each method in the operation and see how the data is m
 the `distinct` method, we can see where we started on the left and over on the right with all our duplicates removed
 after the method has been run. In to the `sorted` method - now our values have been sorted in ascending order. You can
 also click the Flat Mode button which presents all the data on one screen, so you can see the whole stream operation in
-one place from start to finish, and you can map your data as it progresses through each operation in the stream.  
+one place from start to finish, and you can map your data as it progresses through each operation in the stream.

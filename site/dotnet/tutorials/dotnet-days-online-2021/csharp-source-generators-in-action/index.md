@@ -13,7 +13,7 @@ topics:
 author: maartenba
 subtitle: Andrey Dyatlov
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/052xutD86uI'
+video: "https://youtu.be/052xutD86uI"
 ---
 
 C# 9 introduced the long-awaited compiler integrated code generation capability. If you've dreamed of getting rid of thousands of lines of code or have always wanted to try metaprogramming, now it's easier than ever!
@@ -24,9 +24,9 @@ As metaprogramming isn't new to C#, this talk will also cover how a source gener
 
 ### Resources
 
-* [Source code for the first demo](https://github.com/TessenR/NotifyPropertyChangedDemo)
-* [Source code for the second demo](https://github.com/TessenR/BestPracticesSourceGeneratorsDemo)
-* [Useful links (existing generators, tutorials, how-to's, etc)](https://gist.github.com/TessenR/ab40df2d6e971a8d6e5c6c6295d85d11)
+- [Source code for the first demo](https://github.com/TessenR/NotifyPropertyChangedDemo)
+- [Source code for the second demo](https://github.com/TessenR/BestPracticesSourceGeneratorsDemo)
+- [Useful links (existing generators, tutorials, how-to's, etc)](https://gist.github.com/TessenR/ab40df2d6e971a8d6e5c6c6295d85d11)
 
 ### About the Presenter
 
@@ -34,4 +34,4 @@ As metaprogramming isn't new to C#, this talk will also cover how a source gener
 
 Andrey started his programming career with SCADA systems and industry equipment. He joined JetBrains 5 years ago, and works on the C# language support in ReSharper/Rider on everything from parser implementation to static analysis and refactorings. He is interested in static program analysis, type theory, and metaprogramming.
 
-* Twitter: https://twitter.com/a_tessenr
+- Twitter: <https://twitter.com/a_tessenr>

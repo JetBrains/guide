@@ -4,14 +4,14 @@ title: Install and import
 topics:
   - python
 author: pwe
-subtitle: 'While typing a symbol, let PyCharm install it and generate the import.'
+subtitle: "While typing a symbol, let PyCharm install it and generate the import."
 seealso:
   - title: Creating and Optimizing Imports
     href: >-
       https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/ulT1LSWFqqE'
+video: "https://youtu.be/ulT1LSWFqqE"
 ---
 
 You're writing code and want to import a package, and want PyCharm to generate the

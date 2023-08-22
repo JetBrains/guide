@@ -9,6 +9,7 @@ thumbnail: ./thumbnail.png
 ---
 
 The Feature Trainer is bundled with IntelliJ IDEA and is a powerful tool that users who are new to the IDE can work through to help them go faster, quicker. We will look at:
+
 - Learning the IDE
 
 ## Learning the IDE
@@ -24,4 +25,4 @@ The IDE Feature Trainer assumes no prior knowledge or context so it's a great wa
 
 ![feature-trainer.png](feature-trainer.png)
 
-There are several lessons including refactoring, running & debugging and Git to choose from. 
+There are several lessons including refactoring, running & debugging and Git to choose from.

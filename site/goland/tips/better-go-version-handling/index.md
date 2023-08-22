@@ -8,8 +8,9 @@ author: dlsniper
 subtitle: The IDE is aware of targeted Go versions
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/vUt-WAYY4cw'
+video: "https://youtu.be/vUt-WAYY4cw"
 ---
+
 The IDE now reads the _go_ directive in the _go.mod_ file when it analyzes files.
 
 **How to use:**

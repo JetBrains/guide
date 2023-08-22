@@ -11,6 +11,7 @@ thumbnail: ./thumbnail.png
 In this tutorial we’re going to look at features of JUnit 5 that can make it easier for us to write effective and readable automated tests.
 
 ## Other Resources
+
 - [JUnit docs](https://junit.org/junit5/docs/current/user-guide/)
 - [Migrating from JUnit 4 to JUnit 5 – blog, with embedded video](https://blog.jetbrains.com/idea/2020/08/migrating-from-junit-4-to-junit-5/)
 - [Unit Testing and Coverage in IntelliJ IDEA (video)](https://youtu.be/QDFI19lj4OM)

@@ -12,10 +12,11 @@ thumbnail: ./thumbnail.png
 As we've seen, bookmarks allow us to "save" certain interesting locations in the code base, so we can easily go back to them later. Now we know how to create bookmarks and how to navigate to bookmarks we have created.
 
 ### IntelliJ IDEA Shortcuts Used
+
 Here are the IntelliJ IDEA shortcuts that we used.
 
 | Name                                                                                             | macOS Shortcut   | Windows / Linux Shortcut |
-|--------------------------------------------------------------------------------------------------|------------------|--------------------------|
+| ------------------------------------------------------------------------------------------------ | ---------------- | ------------------------ |
 | Recent files                                                                                     | **⌘ E**          | **Ctrl+E**               |
 | Open / Close [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html) | **⌘ 1**          | **Alt+1**                |
 | Add anonymous bookmark                                                                           | **F3**           | **F11**                  |
@@ -27,8 +28,8 @@ Here are the IntelliJ IDEA shortcuts that we used.
 | Move down                                                                                        | **⌥ ⌘ ↓**        | **Ctrl+Alt+↓**           |
 | Move up                                                                                          | **⌥ ⌘ ↑**        | **Ctrl+Alt+↑**           |
 
-
 ### Related Links
+
 - [(video) JetBrains - Using bookmarks in IntelliJ IDEA](https://www.youtube.com/watch?v=2PG03drOEMk)
 - [(documentation) JetBrains IntelliJ IDEA – Bookmarks](https://www.jetbrains.com/help/idea/bookmarks.html)
 - [(guide) JetBrains IntelliJ IDEA Guide – Bookmarks](https://www.jetbrains.com/idea/guide/tutorials/presenting/bookmarks/)

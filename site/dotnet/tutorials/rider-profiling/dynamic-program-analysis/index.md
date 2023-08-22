@@ -9,15 +9,15 @@ topics:
   - profiling
   - rider
 author: maartenba
-subtitle: 'Rider automatically analyzes memory of your applications, all the time!'
+subtitle: "Rider automatically analyzes memory of your applications, all the time!"
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/u-SrE8kQBI0'
+video: "https://youtu.be/u-SrE8kQBI0"
 ---
 
 ### Dynamic Program Analysis (DPA)
 
 It's a good idea to regularly do exploratory profiling of your applications. That takes time, and as a result,
-profiling is often only done after an application starts misbehaving, in production. 
+profiling is often only done after an application starts misbehaving, in production.
 
 Dynamic Program Analysis (or DPA) performs automatic analysis of memory and allocations, and runs in the background of Rider.
 It checks your application for various memory allocation issues, such as closures and allocations to large and small object

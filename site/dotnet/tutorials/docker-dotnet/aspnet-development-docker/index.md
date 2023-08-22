@@ -70,7 +70,7 @@ Opening a browser and navigating to `http://localhost:8080` will also access our
 
 ![Running a web application inside of Docker](./7-hello-world.png)
 
-Let's try debugging our Docker container. First, let's change our response message. In our ` Startup.cs` file, let's change the message from `Hello World!` to `Hello Docker!`.
+Let's try debugging our Docker container. First, let's change our response message. In our `Startup.cs` file, let's change the message from `Hello World!` to `Hello Docker!`.
 
 ```csharp
 endpoints.MapGet("/", async context =>

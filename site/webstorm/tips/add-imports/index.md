@@ -11,7 +11,7 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/webstorm/settings-auto-import.html#typescript-javascript
   - title: Optimizing imports in WebStorm
-    href: 'https://blog.jetbrains.com/webstorm/2018/05/optimize-imports-in-webstorm/'
+    href: "https://blog.jetbrains.com/webstorm/2018/05/optimize-imports-in-webstorm/"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -19,4 +19,5 @@ animatedGif:
   width: 600
   height: 300
 ---
+
 WebStorm can automatically add an import for a symbol even if you’re using default exports.

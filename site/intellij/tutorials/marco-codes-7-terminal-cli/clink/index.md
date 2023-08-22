@@ -6,9 +6,9 @@ topics: []
 author: hs
 subtitle: An introduction to clink
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/6FFNeDiRGK0&start=82s'
+video: "https://youtu.be/6FFNeDiRGK0&start=82s"
 ---
 
 ## clink
 
-* Your Windows terminal on steroids.
+- Your Windows terminal on steroids.

@@ -3,7 +3,12 @@ title: Editing
 subtitle: Learning resources when writing code in the IDE's editor.
 accent: primary
 icon: fas fa-user-edit
-obsoletes: ["/dotnet/topics/editing/", "/goland/topics/editing/", "/intellij/topics/editing/", "/pycharm/topics/editing/", "/webstorm/topics/editing/", ]
+obsoletes:
+  - /dotnet/topics/editing/
+  - /goland/topics/editing/
+  - /intellij/topics/editing/
+  - /pycharm/topics/editing/
+  - /webstorm/topics/editing/
 ---
 
 With our IDEs, you can edit your code quickly and efficiently with a range of shortcuts to help you.

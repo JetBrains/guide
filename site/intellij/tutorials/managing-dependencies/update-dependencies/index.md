@@ -24,7 +24,7 @@ Alternatively, we can use Context Actions **⌥⏎** (on macOS) or **Alt+Enter**
 
 ![Context Actions](context-action.png)
 
-We can also upgrade our dependencies using the Dependencies tool window. The Dependencies tool window will tell us if there’s a newer version of a dependency, as we can see here. 
+We can also upgrade our dependencies using the Dependencies tool window. The Dependencies tool window will tell us if there’s a newer version of a dependency, as we can see here.
 
 ![Dependencies with newer versions](dependencies-with-upgrades.png)
 
@@ -39,4 +39,3 @@ We can also automatically upgrade a dependency to the latest version by clicking
 Or, we can even upgrade all our dependencies at once, by clicking the **Upgrade all** link.
 
 ![Upgrade all dependencies](upgrade-all.png)
-

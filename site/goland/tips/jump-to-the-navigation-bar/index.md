@@ -5,12 +5,13 @@ topics:
   - go
   - navigation
 author: dlsniper
-subtitle: 'Get an overview of your current location, and the project itself'
+subtitle: "Get an overview of your current location, and the project itself"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=5d0Iq_UxMeg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=58
 ---
+
 The **Navigation Bar** has a useful feature that can help you get an overview of both your current location and the
 structure of the project itself.
 

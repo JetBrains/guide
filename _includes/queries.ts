@@ -3,106 +3,106 @@ import { Reference, ReferenceFrontmatter } from "../src/ReferenceModels";
 import { EleventyCollectionItem } from "../src/models";
 
 export type QueryFilter = {
-  channel?: string;
-  limit?: number;
-  resourceType?: string;
-  tag?: string;
+	channel?: string;
+	limit?: number;
+	resourceType?: string;
+	tag?: string;
 };
 
 export function getResources(
-  allResourcesList: Resource[],
-  filter: QueryFilter
+	allResourcesList: Resource[],
+	filter: QueryFilter
 ): Resource[] | null {
-  let resources = allResourcesList;
-  const resourceType = filter && filter.resourceType;
-  if (resourceType) {
-    resources = resources.filter((r) => r.resourceType == resourceType);
-  }
+	let resources = allResourcesList;
+	const resourceType = filter && filter.resourceType;
+	if (resourceType) {
+		resources = resources.filter((r) => r.resourceType == resourceType);
+	}
 
-  const tag = filter && filter.tag;
-  if (tag) {
-    resources = resources.filter((r) => r.tags?.includes(tag));
-  }
+	const tag = filter && filter.tag;
+	if (tag) {
+		resources = resources.filter((r) => r.tags?.includes(tag));
+	}
 
-  const channel = filter && filter.channel;
-  if (channel) {
-    resources = resources.filter((r) => r.channel == channel);
-  }
+	const channel = filter && filter.channel;
+	if (channel) {
+		resources = resources.filter((r) => r.channel == channel);
+	}
 
-  const limit = filter && filter.limit;
-  if (limit) {
-    resources = resources.slice(0, limit);
-  }
+	const limit = filter && filter.limit;
+	if (limit) {
+		resources = resources.slice(0, limit);
+	}
 
-  if (resources.length == 0) {
-    return null;
-  }
+	if (resources.length == 0) {
+		return null;
+	}
 
-  // Sort in reverse date order
-  resources.sort((a, b) => b.date.getTime() - a.date.getTime());
-  return resources;
+	// Sort in reverse date order
+	resources.sort((a, b) => b.date.getTime() - a.date.getTime());
+	return resources;
 }
 
 export function getResource(
-  allResourcesList: Resource[],
-  url: string
+	allResourcesList: Resource[],
+	url: string
 ): Resource {
-  return allResourcesList.filter((r) => r.url == url)[0];
+	return allResourcesList.filter((r) => r.url == url)[0];
 }
 
 export function getReference(
-  allReferencesList: Reference[],
-  url: string
+	allReferencesList: Reference[],
+	url: string
 ): Reference {
-  return allReferencesList.filter((r) => r.url == url)[0];
+	return allReferencesList.filter((r) => r.url == url)[0];
 }
 
 export function getReferences(
-  allReferencesList: ReferenceFrontmatter[],
-  { resourceType }: QueryFilter
+	allReferencesList: ReferenceFrontmatter[],
+	{ resourceType }: QueryFilter
 ): ReferenceFrontmatter[] | null {
-  let references = allReferencesList;
+	let references = allReferencesList;
 
-  if (resourceType) {
-    references = references.filter((r) => r.resourceType == resourceType);
-  }
+	if (resourceType) {
+		references = references.filter((r) => r.resourceType == resourceType);
+	}
 
-  if (references.length == 0) {
-    return null;
-  }
+	if (references.length == 0) {
+		return null;
+	}
 
-  return references;
+	return references;
 }
 
 export function sortByFrontmatter(
-  items: EleventyCollectionItem[],
-  sortByOption?: string
+	items: EleventyCollectionItem[],
+	sortByOption?: string
 ) {
-  if (!sortByOption) {
-    return;
-  }
+	if (!sortByOption) {
+		return;
+	}
 
-  let sortOrder = 1;
-  if (sortByOption[0] === "-") {
-    sortOrder = -1;
-    sortByOption = sortByOption.substring(1);
-  }
+	let sortOrder = 1;
+	if (sortByOption[0] === "-") {
+		sortOrder = -1;
+		sortByOption = sortByOption.substring(1);
+	}
 
-  switch (sortByOption) {
-    case "title":
-      items.sort((a, b) => {
-        const aTitle = a.data.title.toLowerCase();
-        const bTitle = b.data.title.toLowerCase();
-        return (aTitle > bTitle ? -1 : bTitle > aTitle ? 1 : 0) * sortOrder;
-      });
-      break;
-    case "date":
-      items.sort((a, b) => {
-        let result = a.page.date.getTime() - b.page.date.getTime();
-        return result * sortOrder;
-      });
-      break;
-    default:
-      break;
-  }
+	switch (sortByOption) {
+		case "title":
+			items.sort((a, b) => {
+				const aTitle = a.data.title.toLowerCase();
+				const bTitle = b.data.title.toLowerCase();
+				return (aTitle > bTitle ? -1 : bTitle > aTitle ? 1 : 0) * sortOrder;
+			});
+			break;
+		case "date":
+			items.sort((a, b) => {
+				let result = a.page.date.getTime() - b.page.date.getTime();
+				return result * sortOrder;
+			});
+			break;
+		default:
+			break;
+	}
 }

@@ -45,12 +45,11 @@ Using the import settings feature, you can expect to **import existing keymaps a
 
 If you'd prefer to start with a fresh installation, continue reading the following sections.
 
-
 ## Settings And Personalization
 
 Your development environment says a lot about your personality. Choose between a zen-like and clutter-free experience, a data-rich user experience with quickly accessible data, or any experience in-between.
 
-When setting up your development environment, Rider will ask you to choose between two different themes: **Dark** and **Light**.  You can decide to change your preference at any time after the
+When setting up your development environment, Rider will ask you to choose between two different themes: **Dark** and **Light**. You can decide to change your preference at any time after the
 
 ![Setup for dark and light themes](./1-setup-start-dark-light.png)
 
@@ -84,6 +83,7 @@ The welcome screen is the first thing all Rider users will see. Many of the same
 Starting a new solution can be an exciting time for developers. Rider scans the development environment for available templates. Templates included items shipped with the .NET SDK. Additionally, Rider will display any community templates or display custom templates in the **New Solution** dialog. Note, for .NET Core and later SDKs, the templates displayed on the left-hand side will only be relevant to the SDK version picked by the user.
 
 Developers can choose where Rider will create a new solution, along with several other configuration options:
+
 - Source Control options
 - .NET SDK version
 - .NET programming language (C# or F#)

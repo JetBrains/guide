@@ -14,7 +14,7 @@ topics:
 author: maartenba
 subtitle: Daniel Marbach
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/NELaITuylDg'
+video: "https://youtu.be/NELaITuylDg"
 ---
 
 As a practical learner, I've found that performance optimizations are my biggest challenge and that I've learned the most helpful tricks from them, mostly by trial and error. It turns out the Azure .NET SDK is a perfect “playground” for learning those tricks – it's maintained by people who care and give feedback.
@@ -29,4 +29,4 @@ Daniel is a Software Engineer at Particular Software, the makers of NServiceBus,
 
 In his free time, Daniel enjoys weightlifting, dark-roasted coffee, playing with his son, and writing more code. At least until midnight, when his self-imposed router hack kicks in.
 
-* Twitter: https://twitter.com/danielmarbach
+- Twitter: <https://twitter.com/danielmarbach>

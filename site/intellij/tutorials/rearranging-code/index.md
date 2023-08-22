@@ -17,4 +17,3 @@ tutorialItems:
   - ./example-of-rearranging-code/
   - ./summary/
 ---
-

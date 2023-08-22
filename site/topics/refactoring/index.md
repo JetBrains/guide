@@ -1,9 +1,12 @@
 ---
 title: Refactoring
-subtitle: 'Keep your code solid, dry, and easy to maintain.'
+subtitle: "Keep your code solid, dry, and easy to maintain."
 accent: primary
 icon: fas fa-sync
-obsoletes: ["/dotnet/topics/refactoring/", "/goland/topics/refactoring/", "/dotnet/topics/refactoring/", ]
+obsoletes:
+  - /dotnet/topics/refactoring/
+  - /goland/topics/refactoring/
+  - /dotnet/topics/refactoring/
 ---
 
 Refactoring is a process of improving your source code without creating a new functionality.

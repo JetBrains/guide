@@ -13,7 +13,7 @@ subtitle: >-
   configuration.
 thumbnail: ./thumbnail.png
 video:
-  url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
+  url: "https://www.youtube.com/watch?v=_bvrngxZYds"
   start: 2240
   end: 2346
 ---
@@ -23,8 +23,9 @@ JetBrains Rider includes support for the [Unreal Engine testing framework](https
 The [Unreal Engine testing framework](https://docs.unrealengine.com/4.27/en-US/TestingAndOptimization/Automation/) is built in and the Engine tests work without any additional configuration.
 
 To get Unreal Engine plugin tests running in JetBrains Rider, you need to:
-1.  Index plugins by enabling **Index plugins** setting on the **Languages & Frameworks \| C++ \| Unreal Engine** page of JetBrains Rider settings.
-2.  Reference the plugin that includes the tests in the `.uproject` file.
+
+1. Index plugins by enabling **Index plugins** setting on the **Languages & Frameworks \| C++ \| Unreal Engine** page of JetBrains Rider settings.
+2. Reference the plugin that includes the tests in the `.uproject` file.
 
 In the [Unit Tests window](https://www.jetbrains.com/help/rider/Reference_Windows_Unit_Tests.html), you can explore all the existing categories in the current solution. The categories are defined by the flags passed to the tests. Use Group By switcher to change the grouping in the tool window.
 

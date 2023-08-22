@@ -16,4 +16,3 @@ tutorialItems:
   - ./leaving-feedback/
   - ./summary-and-more-help/
 ---
-

@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=SDV7K2H1HAM&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=96
 ---
+
 **How to use:**
 
 Connect to a MongoDB database from the IDE, then open a _Console_ to it and write a SQL query instead of using the MongoDB format.

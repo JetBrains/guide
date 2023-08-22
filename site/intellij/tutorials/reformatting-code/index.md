@@ -23,4 +23,3 @@ tutorialItems:
   - ./reformatting-example/
   - ./summary/
 ---
-

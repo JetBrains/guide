@@ -1,13 +1,11 @@
 ---
 title: Apache Tomcat
 subtitle: >-
-  The Apache Tomcat® software is an open source implementation of the Jakarta
-  Servlet, Jakarta Server Pages, Jakarta Expression Language, Jakarta WebSocket,
-  Jakarta Annotations and Jakarta Authentication specifications. These
-  specifications are part of the Jakarta EE platform.
-logo: tomcat.png
-website: 'https://tomcat.apache.org/'
+  Apache Tomcat® is a web server and servlet container for Java web
+  applications.
+logo: apache-tomcat-logo.svg
+website: "https://tomcat.apache.org/"
 topicType: technology
-obsoletes: ["/intellij/topics/tomcat/"]
+obsoletes:
+  - /intellij/topics/tomcat/
 ---
-

@@ -4,8 +4,8 @@ subtitle: >-
   Java is a general-purpose programming language intended to let application
   developers write once and run anywhere.
 logo: duke.png
-website: 'https://openjdk.java.net/'
+website: "https://openjdk.java.net/"
 topicType: technology
-obsoletes: ["/intellij/topics/java/"]
+obsoletes:
+  - /intellij/topics/java/
 ---
-

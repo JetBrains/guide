@@ -8,7 +8,7 @@ topics:
 author: er
 seealso:
   - title: Working with style sheets
-    href: 'https://www.jetbrains.com/help/webstorm/style-sheets.html#'
+    href: "https://www.jetbrains.com/help/webstorm/style-sheets.html#"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -16,4 +16,5 @@ animatedGif:
   width: 600
   height: 300
 ---
-With the *Extract ruleset* intention (*Alt+Enter*), you can quickly move selected declarations to a new ruleset in the same file.
+
+With the _Extract ruleset_ intention (_Alt+Enter_), you can quickly move selected declarations to a new ruleset in the same file.

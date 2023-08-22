@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Counting rows and columns and using the IOCTL API
 thumbnail: ./thumbnail.png
-video: 'https://www.youtube.com/watch?v=kT4JYQi9w4w&start=1498s'
+video: "https://www.youtube.com/watch?v=kT4JYQi9w4w&start=1498s"
 ---
 
 ## Getting Terminal Rows & Columns With The IOCTL API

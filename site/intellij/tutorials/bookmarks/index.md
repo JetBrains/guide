@@ -15,5 +15,3 @@ tutorialItems:
   - ./navigate-to-bookmarks/
   - ./summary/
 ---
-
-

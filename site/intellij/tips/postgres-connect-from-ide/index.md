@@ -12,8 +12,8 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: IntelliJ IDEA - Database Tool Window
-    href: 'https://www.jetbrains.com/help/idea/database-tool-window.html'
-video: 'https://youtu.be/k2aEBenPTnM'
+    href: "https://www.jetbrains.com/help/idea/database-tool-window.html"
+video: "https://youtu.be/k2aEBenPTnM"
 ---
 
 Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search
@@ -38,5 +38,3 @@ sources.
 Alternately, you can open **Database** tool window from the Sidebar of the IDE
 
 ![Open Database Tool Window from Sidebar](database-tool-from-sidebar.png)
-
-

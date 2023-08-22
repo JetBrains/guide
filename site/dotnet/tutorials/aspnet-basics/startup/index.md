@@ -11,7 +11,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: The beginning of all ASP.NET applications
 thumbnail: ./thumbnail.png
-video: 'https://www.youtube.com/watch?v=7wOOrnLxuy4'
+video: "https://www.youtube.com/watch?v=7wOOrnLxuy4"
 ---
 
 At the heart of every ASP.NET Core project lies the `Startup` class,

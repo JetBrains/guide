@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2023-04-04
-title: 'Editing, code completion, inspections'
+title: "Editing, code completion, inspections"
 topics:
   - editing
   - gaming
@@ -13,7 +13,7 @@ author: citizenmatt
 subtitle: Let's explore what the coding experience is like!
 thumbnail: ./thumbnail.png
 video:
-  url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
+  url: "https://www.youtube.com/watch?v=_bvrngxZYds"
   start: 648
   end: 1553
 ---

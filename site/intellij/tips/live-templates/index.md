@@ -11,17 +11,17 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (video) IntelliJ IDEA Write Code Faster Using Live Templates
-    href: 'https://www.youtube.com/watch?v=ffBeoE6NBSs&t=56s'
-  - title: '(video) IntelliJ IDEA Pro Tips: Live Templates'
-    href: 'https://www.youtube.com/watch?v=XhCNoN40QTU'
+    href: "https://www.youtube.com/watch?v=ffBeoE6NBSs&t=56s"
+  - title: "(video) IntelliJ IDEA Pro Tips: Live Templates"
+    href: "https://www.youtube.com/watch?v=XhCNoN40QTU"
   - title: (documentation) IntelliJ IDEA Help - Using Live Templates
-    href: 'https://www.jetbrains.com/help/idea/using-live-templates.html'
+    href: "https://www.jetbrains.com/help/idea/using-live-templates.html"
   - title: (documentation) IntelliJ IDEA Help - Creating Live Templates
     href: >-
       https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html
   - title: (documentation) IntelliJ IDEA Guide - Create a Custom Test Live Template
     href: ../../tutorials/writing-junit5-tests/live-templates-tip/
-video: 'https://youtu.be/ffBeoE6NBSs'
+video: "https://youtu.be/ffBeoE6NBSs"
 ---
 
 Live Templates reduce the amount of code you need to type for the more common
@@ -38,7 +38,6 @@ In the video, we saw:
 We also saw a custom live template. We walked through how to create this live template in
 the [JUnit 5 Tutorial](../../tutorials/writing-junit5-tests/live-templates-tip/).
 
-You can see a list of all available live templates in *
-*[Preferences/Settings | Editor | Live Templates](https://www.jetbrains.com/help/idea/settings-live-templates.html)**.
+You can see a list of all available live templates in **[Preferences/Settings | Editor | Live Templates](https://www.jetbrains.com/help/idea/settings-live-templates.html)**.
 
 ---

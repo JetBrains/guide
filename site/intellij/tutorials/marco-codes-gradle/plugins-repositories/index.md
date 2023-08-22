@@ -6,10 +6,10 @@ topics: []
 author: hs
 subtitle: Managing plugins and working with respositories
 thumbnail: ./thumbnail.png
-video: 'https://www.youtube.com/watch?v=gKPMKRnnbXU&start=920s'
+video: "https://www.youtube.com/watch?v=gKPMKRnnbXU&start=920s"
 ---
 
 # Plugin Repositories
 
-* What plugins are and how Gradle depends on them to do anything meaningful.
-* How Gradle uses repositories to download dependencies.
+- What plugins are and how Gradle depends on them to do anything meaningful.
+- How Gradle uses repositories to download dependencies.

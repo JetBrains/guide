@@ -9,9 +9,10 @@ subtitle: >-
   Groovy's syntax and functionality might be unusual for Java developers to
   begin with, but it can be very helpful for testing.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/i5Qu3qYOfsM?start=486'
+video: "https://youtu.be/i5Qu3qYOfsM?start=486"
 ---
-Before going further with Spock examples, let's take a look at some things which might look odd if we're used to using [Java](../../../../topics/java) to test Java code.
+
+Before going further with Spock examples, let's take a look at some things which might look odd if we're used to using [Java](/topics/java/) to test Java code.
 
 ```groovy
 when:
@@ -36,5 +37,4 @@ If we're calling a Java getter from Groovy code, we can miss out the "get" at th
 
 In this section, we covered some tips on using Groovy to write tests. Now you know how to read Groovy code and understand that it may behave differently to how a Java developer would expect.
 
-Next, we're going to go back to our tests and explore the labels in our tests a bit more. 
-
+Next, we're going to go back to our tests and explore the labels in our tests a bit more.

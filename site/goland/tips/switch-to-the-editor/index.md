@@ -11,7 +11,8 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=NNWMn6cUPTg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=141
 ---
-There are a lot of (tool) windows opening or appearing when using the IDE. 
+
+There are a lot of (tool) windows opening or appearing when using the IDE.
 
 How can we quickly get back to the editor?
 

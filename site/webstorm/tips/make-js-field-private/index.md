@@ -17,6 +17,7 @@ animatedGif:
   width: 600
   height: 300
 ---
+
 Using private fields in JavaScript classes?
-WebStorm can help you make private fields public and vice 
-versa – press *Alt+Enter* and select the corresponding action.
+WebStorm can help you make private fields public and vice
+versa – press _Alt+Enter_ and select the corresponding action.

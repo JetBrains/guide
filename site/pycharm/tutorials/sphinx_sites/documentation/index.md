@@ -5,7 +5,7 @@ title: Documenting Code
 topics:
   - sphinx
 author: pwe
-subtitle: 'Pages which include source code, either directly or linking to modules.'
+subtitle: "Pages which include source code, either directly or linking to modules."
 thumbnail: thumbnail.png
 ---
 
@@ -20,14 +20,14 @@ It is quite common in Markdown to just embed a code snippet in a page.
 Markdown calls these "fenced code blocks" (or code fences, or code blocks) as they use a triple backtick enclosing symbol.
 
 Sphinx has a concept of [code-blocks](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block).
-Thanks to MyST, we can combine these two and use *Markdown code fences* (triple backticks) to generate *Sphinx code blocks*:
+Thanks to MyST, we can combine these two and use _Markdown code fences_ (triple backticks) to generate _Sphinx code blocks_:
 
-~~~
+````
 ```
 def hello(name):
    return f'Hello {name}'
 ```
-~~~
+````
 
 This renders with syntax highlighting:
 
@@ -35,25 +35,25 @@ This renders with syntax highlighting:
 
 Of course you might want to tell Sphinx what language is the code block, to get the correct syntax highlighting.
 Sphinx uses [Pygments](https://pygments.org) for syntax highlighting, with `python3` is the default.
-But perhaps you want to show a *JavaScript* snippet.
+But perhaps you want to show a _JavaScript_ snippet.
 Just put the language after the first triple-backtick, from the [list of languages supported by Pygments](https://pygments.org/docs/lexers/):
 
-~~~
+````
 ```javascript
  function hello(msg) {return `Hello ${msg}`}
 ```
-~~~
+````
 
 Sphinx has a number of [options for code blocks](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block).
 This requires, though, a [more explicit MyST syntax](https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html) that connects into code blocks:
 
-~~~
+````
 ```{code-block} javascript
  function hello(msg) {
    return `Hello ${msg}`
  }
 ```
-~~~
+````
 
 As mentioned in [More Pages](../more_authoring/), this is a code fence, but with:
 
@@ -61,22 +61,22 @@ As mentioned in [More Pages](../more_authoring/), this is a code fence, but with
 - Something else after it.
 
 The stuff in the curly braces maps directly to a Sphinx/reST [directive](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html).
-The stuff on the same line, but after the curly braces, is an *argument* to that directive.
+The stuff on the same line, but after the curly braces, is an _argument_ to that directive.
 
-You can show line numbers by passing *options* to the directive:
+You can show line numbers by passing _options_ to the directive:
 
-~~~
+````
 ```{code-block} javascript
 :linenos:
  function hello(msg) {
    return `Hello ${msg}`
  }
 ```
-~~~
+````
 
 Here is the YAML version of passing the arguments to the `code-block` directive:
 
-~~~
+````
 ```{code-block} javascript
 ---
 linenos: true
@@ -85,11 +85,11 @@ linenos: true
    return `Hello ${msg}`
  }
 ```
-~~~
+````
 
 You can emphasize certain lines:
 
-~~~
+````
 ```{code-block} javascript
 ---
 linenos: true
@@ -99,7 +99,7 @@ emphasize-lines: 2
    return `Hello ${msg}`
  }
 ```
-~~~
+````
 
 When rendered, you get a highlighted line and line numbers:
 
@@ -110,7 +110,7 @@ Sphinx code blocks have [many useful options](https://www.sphinx-doc.org/en/mast
 ## Including Code From a File
 
 Inlining code snippets seems to be the dominant usage in Markdown.
-In Sphinx, though, it is more common to point your document at a *file* containing the code, then including the file's contents.
+In Sphinx, though, it is more common to point your document at a _file_ containing the code, then including the file's contents.
 Sphinx uses the [literalinclude](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-literalinclude) directive for this.
 
 Thanks to MyST, we also have a Markdown-friendly syntax for this, similar to what we just saw.
@@ -129,30 +129,29 @@ class MyDemo:
 
 We can directly include it, with syntax highlighting, using:
 
-~~~
+````
 ```{literalinclude} my_demo.py
 ```
-~~~
+````
 
 Sphinx's `literalinclude` has a number of options, many overlapping with `code-block`.
 Want to highlight two lines?
 
-~~~
+````
 ```{literalinclude} my_demo.py
 :emphasize-lines: 2-3
 ```
-~~~
+````
 
+You can also use MyST's [YAML syntax for directive options](https://myst-parser.readthedocs.io/en/latest/syntax/roles-and-directives.html) instead of the RST-style of key-value pairs:
 
-You can also use MyST's [YAML syntax for directive options](https://myst-parser.readthedocs.io/en/latest/api/directive.html?highlight=yaml#module-myst_parser.parse_directives) instead of the RST-style of key-value pairs:
-
-~~~
+````
 ```{literalinclude} my_demo.py
 ---
 emphasize-lines: 2-3
 ---
 ```
-~~~
+````
 
 The `literalinclude` options in Sphinx are quite powerful and productive to use.
 For example, you can use `start-after` and `end-before` to only include parts in between some matching text.
@@ -183,16 +182,16 @@ extensions = [
 ]
 ```
 
-With this in place, you can use `autodoc` *directives* in your Sphinx pages.
+With this in place, you can use `autodoc` _directives_ in your Sphinx pages.
 
 ## Documenting a Module
 
 Let's do that now.
 We have a page at `api.md` into which we'd like to include some module documentation.
 The [Sphinx docs on `autodoc`](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#directives) show that this is straightforward.
-For the MyST side, we need to use the escape hatch into reStructuredText directives, as explained in the [MyST How To](https://myst-parser.readthedocs.io/en/latest/using/howto.html?highlight=autodoc#use-sphinx-ext-autodoc-in-markdown-files):
+For the MyST side, we need to use the escape hatch into reStructuredText directives, as explained in the [MyST How To](https://myst-parser.readthedocs.io/en/latest/syntax/code_and_apis.html#sphinx-ext-autodoc):
 
-~~~
+````
 # About `MyDemo`
 
 Let's take a look at this Python class.
@@ -201,7 +200,7 @@ Let's take a look at this Python class.
 .. autoclass:: my_demo.MyDemo
   :members:
 ```
-~~~
+````
 
 In this example, documentation for the `MyDemo` class will be inserted into the `api` page.
 Here's what the rendered output looks like:
@@ -219,7 +218,7 @@ Let's change it to be a better-documented class:
 ```python
 class MyDemo:
     """ A *great* demo """
-    
+
     def __init__(self, name):
         self.name = name
 
@@ -240,7 +239,7 @@ Python docstrings are reStructuredText, but don't have any conventions about the
 For this, [NumPy](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard) and [Google](https://google.github.io/styleguide/pyguide.html#Comments) have popular style guides for Python docstrings.
 For these, the [Napolean extension](https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html) (bundled with Sphinx) can support either.
 
-The updated `MyClass` is  using the Google docstring style.
+The updated `MyClass` is using the Google docstring style.
 It also uses Python 3.6+ type hints.
 We now need to teach Sphinx to "interpret" these two new structures: formatted docstrings and type hints.
 
@@ -257,7 +256,7 @@ sphinx-autodoc-typehints
 Then install from the requirements:
 
 ```bash
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Next, edit your `conf.py` file to enable both Sphinx extensions:
@@ -270,7 +269,8 @@ extensions = [
     # And any other extension
 ]
 ```
-*Note: Make sure to load `sphinx.ext.napoleon` before `sphinx_autodoc_typehints`.*
+
+_Note: Make sure to load `sphinx.ext.napoleon` before `sphinx_autodoc_typehints`._
 When Sphinx renders the next time, our page with the `autodoc` directive now shows nice docstrings and type hints:
 
 ![Autodoc With Napoleon](autodoc_with_napoleon.png)
@@ -283,8 +283,8 @@ More?
 ## Referencing Symbols in Docs
 
 As with other things in Sphinx, `autodoc` isn't just about getting pretty pixels on the page.
-It's really about getting *structure* into Sphinx's "doctree".
-With `autodoc`, the symbols in your code become *roles* that we can link to.
+It's really about getting _structure_ into Sphinx's "doctree".
+With `autodoc`, the symbols in your code become _roles_ that we can link to.
 
 To see it in action, open `about_us.md` for editing.
 In this page, we want to talk about `MyClass` and link to it, using Markdown-friendly syntax.
@@ -313,7 +313,7 @@ As we can see in {py:class}`HW <my_demo.MyDemo>`, Python is fun!
 
 ## Conclusion
 
-There are lots, *lots* more features regarding Sphinx and including source code:
+There are lots, _lots_ more features regarding Sphinx and including source code:
 
 - Directive options with fine-tuned control...after all, it is used for Python itself.
 - Plugins which add extra features, such as the type hinting plugin.

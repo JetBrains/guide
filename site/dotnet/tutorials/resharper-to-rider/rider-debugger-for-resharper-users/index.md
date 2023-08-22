@@ -68,13 +68,13 @@ Within the Visual Studio UI, **autos**, **locals**, and **watches** are differen
 
 ### Immediate Window
 
-The immediate window is an essential experimentation tool for debugging sessions. It allows developers to evaluate expressions within the scope of the currently executing application.  Developers can execute code that declares a new variable, retrieves the value of an existing variable, or mutate any current state. The immediate window has all the same code completion features developers are used to within Rider's editor.
+The immediate window is an essential experimentation tool for debugging sessions. It allows developers to evaluate expressions within the scope of the currently executing application. Developers can execute code that declares a new variable, retrieves the value of an existing variable, or mutate any current state. The immediate window has all the same code completion features developers are used to within Rider's editor.
 
 [Read more about the **immediate window** at our official .NET blog.](https://blog.jetbrains.com/dotnet/2020/10/15/immediate-window-interact-with-your-code-while-debugging-in-rider/)
 
 ## Conclusion
 
-As mentioned previously, debugging will likely be the most considerable difference for folks moving from Visual Studio + ReSharper to Rider.  The Rider team has invested care and attention in fine-tuning the debugging experience for developers. Taking a few minutes to understand where debugging elements are can help save hundreds of hours during an application development lifecycle.
+As mentioned previously, debugging will likely be the most considerable difference for folks moving from Visual Studio + ReSharper to Rider. The Rider team has invested care and attention in fine-tuning the debugging experience for developers. Taking a few minutes to understand where debugging elements are can help save hundreds of hours during an application development lifecycle.
 
 ### See Also
 

@@ -10,7 +10,8 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Markdown
-    href: 'https://www.jetbrains.com/help/idea/markdown.html'
-video: 'https://youtu.be/2TxKxwKD_z0'
+    href: "https://www.jetbrains.com/help/idea/markdown.html"
+video: "https://youtu.be/2TxKxwKD_z0"
 ---
+
 When you paste an image from the clipboard into a markdown file, IntelliJ IDEA will add the PNG to the project and provide the syntax in the markdown for the image.

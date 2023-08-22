@@ -17,5 +17,6 @@ animatedGif:
   width: 600
   height: 200
 ---
-Did you know that WebStorm can do some math for you? Press *Alt+Enter* on 
-an arithmetic expression and select *Compute constant value*.
+
+Did you know that WebStorm can do some math for you? Press _Alt+Enter_ on
+an arithmetic expression and select _Compute constant value_.

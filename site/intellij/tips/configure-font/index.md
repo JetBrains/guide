@@ -5,12 +5,13 @@ topics:
   - settings
   - tricks
 author: md
-subtitle: 'Configure font, font size, and more'
+subtitle: "Configure font, font size, and more"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Font
-    href: 'https://www.jetbrains.com/help/idea/using-code-editor.html#font'
-video: 'https://youtu.be/TBX3qzu5DSo'
+    href: "https://www.jetbrains.com/help/idea/using-code-editor.html#font"
+video: "https://youtu.be/TBX3qzu5DSo"
 ---
+
 Open preferences **⌘,** (on Mac) or **Ctrl+Alt+S** (on Windows/Linux) and go to **Editor** | **Font** to configure font, font size, line distance, and enable ligatures if you want!

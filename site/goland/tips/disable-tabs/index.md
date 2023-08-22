@@ -8,15 +8,16 @@ author: dlsniper
 subtitle: Save space and stay keyboard-centric by turning off the tabs.
 seealso:
   - title: Managing Editor Tabs
-    href: 'https://www.jetbrains.com/help/go/managing-editor-tabs.html'
+    href: "https://www.jetbrains.com/help/go/managing-editor-tabs.html"
   - title: No Tabs in IntelliJ IDEA
-    href: 'https://hadihariri.com/2014/06/24/no-tabs-in-intellij-idea/'
+    href: "https://hadihariri.com/2014/06/24/no-tabs-in-intellij-idea/"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=A_vYG-GWmpw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=51
 ---
-*Want a cleaner UI with less noise to juggle in your head?*
+
+_Want a cleaner UI with less noise to juggle in your head?_
 
 There are better choices for moving between files than tabs.
 Let's turn them off.

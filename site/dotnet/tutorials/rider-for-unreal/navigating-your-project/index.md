@@ -14,7 +14,7 @@ subtitle: >-
   more.
 thumbnail: ./thumbnail.png
 video:
-  url: 'https://www.youtube.com/watch?v=_bvrngxZYds'
+  url: "https://www.youtube.com/watch?v=_bvrngxZYds"
   start: 475
   end: 646
 ---

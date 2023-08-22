@@ -17,4 +17,3 @@ playlistItems:
   - /intellij/tips/search-everywhere-git-commits/
   - /intellij/tips/search-camel-case/
 ---
-

@@ -7,7 +7,7 @@ topics:
 author: er
 seealso:
   - title: Using code editor
-    href: 'https://www.jetbrains.com/help/webstorm/using-code-editor.html'
+    href: "https://www.jetbrains.com/help/webstorm/using-code-editor.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -15,4 +15,5 @@ animatedGif:
   width: 600
   height: 300
 ---
+
 Drag the script file to your HTML code and drop it there to quickly add the `<script>` tag.

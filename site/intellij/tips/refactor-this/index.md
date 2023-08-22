@@ -12,9 +12,10 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/idea/refactoring-source-code.html#refactoring_invoke
   - title: (video) IntelliJ IDEA. Everyday Refactorings
-    href: 'https://www.youtube.com/watch?v=rPq7fBo5JVs'
+    href: "https://www.youtube.com/watch?v=rPq7fBo5JVs"
   - title: (blog) IntelliJ IDEA Blog. Top 15 IntelliJ IDEA Shortcuts
-    href: 'https://blog.jetbrains.com/idea/2020/03/top-15-intellij-idea-shortcuts/'
-video: 'https://youtu.be/iMWcPz_RWnU'
+    href: "https://blog.jetbrains.com/idea/2020/03/top-15-intellij-idea-shortcuts/"
+video: "https://youtu.be/iMWcPz_RWnU"
 ---
+
 Refactor This using **⌃T** (MacOS) or **Shift+Ctrl+Alt+T** (Windows). Most refactorings have their own shortcut, but this shows us refactoring options for the selection. Select the menu item by pressing its number instead of using arrow keys.

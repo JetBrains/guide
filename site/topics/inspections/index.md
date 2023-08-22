@@ -3,7 +3,9 @@ title: Inspections
 subtitle: Analyzing source code for common mistakes and potential improvements.
 accent: primary
 icon: fas fa-search
-obsoletes: [ "/goland/topics/inspections/", "/intellij/topics/inspections/" ]
+obsoletes:
+  - /goland/topics/inspections/
+  - /intellij/topics/inspections/
 ---
 
 Our IDEs help you analyze code on various levels, starting from a single statement in the editor

@@ -13,13 +13,14 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=fFJi3OSSWns&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=44
 ---
+
 If you have an anonymous type defined, you can extract it into a
 standalone type and reuse it across your code.
 
 **How to use:**
-Invoke the *Refactor this* feature, _Ctrl + Alt + Shift + T on
+Invoke the _Refactor this_ feature, _Ctrl + Alt + Shift + T on
 Windows/Linux_, and _^ + T on macOS_, on the anonymous type, then
-select the *Extract type* from the list of available
+select the _Extract type_ from the list of available
 refactorings.
 
 Give it a name and start reusing the newly created type in your

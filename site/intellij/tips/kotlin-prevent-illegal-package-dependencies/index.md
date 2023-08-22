@@ -12,7 +12,8 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Code inspections
-    href: 'https://www.jetbrains.com/help/idea/code-inspection.html'
-video: 'https://youtu.be/7-A0Fn4fgQ8'
+    href: "https://www.jetbrains.com/help/idea/code-inspection.html"
+video: "https://youtu.be/7-A0Fn4fgQ8"
 ---
+
 Kotlin developers can configure an inspection to define illegal package dependencies, which can prevent code from accidentally depending upon the wrong packages, for example the UI layer talking directly to the data access layer.

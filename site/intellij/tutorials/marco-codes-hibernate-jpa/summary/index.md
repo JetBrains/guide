@@ -10,4 +10,4 @@ thumbnail: ./thumbnail.png
 
 ## Further Reading
 
-* Next steps for you on your Hibernate/JPA journey
+- Next steps for you on your Hibernate/JPA journey

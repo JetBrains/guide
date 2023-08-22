@@ -9,9 +9,9 @@ topics:
   - rider
   - web
 author: pwe
-subtitle: 'Find out how Rider helps you write better code, faster.'
+subtitle: "Find out how Rider helps you write better code, faster."
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/gX8KgyzC-_A'
+video: "https://youtu.be/gX8KgyzC-_A"
 ---
 
 Rider is packed full of features that can help you write better code, faster. Let’s look at some of the most essential ones.

@@ -8,13 +8,13 @@ author: pwe
 subtitle: Use Recent Files to quickly jump to last-visited file.
 seealso:
   - title: Navigating to Recent File
-    href: 'https://www.jetbrains.com/help/pycharm/navigating-to-recent-file.html'
+    href: "https://www.jetbrains.com/help/pycharm/navigating-to-recent-file.html"
   - title: Speed Search in Tool Windows
     href: >-
       https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://www.youtube.com/watch?v=bepgM6KMQpw'
+video: "https://www.youtube.com/watch?v=bepgM6KMQpw"
 ---
 
 It's hard to divorce the mouse. "How do I jump between files?" The

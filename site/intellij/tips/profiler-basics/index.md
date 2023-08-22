@@ -10,13 +10,14 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (video) Profile Tools and IntelliJ IDEA Ultimate
-    href: 'https://www.youtube.com/watch?v=OQcyAtukps4'
+    href: "https://www.youtube.com/watch?v=OQcyAtukps4"
   - title: (video) A Simple Approach to Advanced JVM Profiling
-    href: 'https://www.youtube.com/watch?v=TDpbt4thECc'
+    href: "https://www.youtube.com/watch?v=TDpbt4thECc"
   - title: (documentation) IntelliJ IDEA Help - Profiling tools
-    href: 'https://www.jetbrains.com/help/idea/cpu-profiler.html'
-video: 'https://youtu.be/OQcyAtukps4'
+    href: "https://www.jetbrains.com/help/idea/cpu-profiler.html"
+video: "https://youtu.be/OQcyAtukps4"
 ---
+
 Access the profiler window using Find Action, **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), or via the quick access buttons, and it shows a list of running processes
 
 Click on a process to attach a profiler to it, for example a CPU profiler. The IDE will show the results, for example as a Flame Graph.

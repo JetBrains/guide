@@ -13,9 +13,10 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#recent_files
   - title: (video) Top 5 IntelliJ IDEA Navigation Shortcuts
-    href: 'https://www.youtube.com/watch?v=crnEBqbBWuo'
+    href: "https://www.youtube.com/watch?v=crnEBqbBWuo"
   - title: (video) Navigation in IntelliJ IDEA
-    href: 'https://www.youtube.com/watch?v=1UHsJyCq1SU'
-video: 'https://youtu.be/YEybfDZGOOI'
+    href: "https://www.youtube.com/watch?v=1UHsJyCq1SU"
+video: "https://youtu.be/YEybfDZGOOI"
 ---
+
 View Recent Files using ⌘**E** (MacOS) or **Ctrl+E** (Windows). Instead of using the project window for navigating to a file, use "View Recent Files" to find a recently viewed file. We can search in this dialog and even open tool windows.

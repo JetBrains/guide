@@ -54,7 +54,7 @@ In Sphinx these [are called sidebars](https://www.sphinx-doc.org/en/master/usage
 
 These are the defaults, but add them anyway at the end of `conf.py`:
 
-```python 
+```python
 html_sidebars = {
   '**': [
     "about.html",
@@ -70,7 +70,7 @@ These are the [sidebars available for the Alabaster theme](https://alabaster.rea
 
 Now try commenting those all out:
 
-```python 
+```python
 html_sidebars = {
   '**': [
     # 'about.html',
@@ -91,7 +91,7 @@ It's somewhat understandable: Sphinx is quite old, and new ideas have emerged wh
 
 Before proceeding, reset the sidebars:
 
-```python 
+```python
 html_sidebars = {
   '**': [
     "about.html",
@@ -123,7 +123,7 @@ sphinx-book-theme
 Then update from our dependencies:
 
 ```bash
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Just because it is installed doesn't mean our website is using it.
@@ -135,7 +135,7 @@ html_theme = "sphinx_book_theme"
 
 When you restart, you'll notice that Sphinx complained.
 It seems this theme doesn't support the same default `html_sidebar` values.
-Per the [Sphinx Book Theme](https://sphinx-book-theme.readthedocs.io/en/latest/configure.html#control-the-left-sidebar-items) docs on sidebars, we'll use their bundled sidebars:
+Per the [Sphinx Book Theme](https://sphinx-book-theme.readthedocs.io/en/stable/sections/sidebar-primary.html#control-the-left-sidebar-items) docs on sidebars, we'll use their bundled sidebars:
 
 ```python
 html_sidebars = {
@@ -147,7 +147,7 @@ We now see a new layout and style:
 
 ![Sphinx Book Theme](sphinx_book_theme.png)
 
-This theme has many [configuration options](https://sphinx-book-theme.readthedocs.io/en/latest/configure.html).
+This theme has many [configuration options](https://sphinx-book-theme.readthedocs.io/en/stable/components/index.html).
 This is true for many of the [themes available for Sphinx](https://sphinx-themes.org).
 
 There are many ways to [customize and even write your own themes](https://www.sphinx-doc.org/en/master/development/theming.html).
@@ -204,9 +204,9 @@ Let's see it in action.
 To start, download the SVG version of the Python logo and put it in the special `_static` folder in the same directory as `conf.py`:
 
 ```bash
-$ cd _static
-$ wget https://www.python.org/static/community_logos/python-logo-generic.svg
-$ cd ..
+cd _static
+wget https://www.python.org/static/community_logos/python-logo-generic.svg
+cd ..
 ```
 
 Now edit `conf.py` and add that filename as the value for the logo:
@@ -230,7 +230,7 @@ Start by adding a file at `_static/custom.css`:
 
 ```css
 body {
-  font-size: xx-large;
+	font-size: xx-large;
 }
 ```
 
@@ -242,7 +242,7 @@ html_css_files = ["custom.css"]
 ```
 
 So far, so good, and fairly typically.
-But Sphinx also allows *templated* CSS, where your CSS files are actually processed by Jinja2.
+But Sphinx also allows _templated_ CSS, where your CSS files are actually processed by Jinja2.
 To say this file is a template, rename it to end in `_t`, meaning `_static/custom.css_t`.
 
 Everything works the same at this point: `custom.css` is the actual name that is generated.
@@ -267,7 +267,7 @@ First, add a file at `_templates/luv_sphinx.html` containing:
 <p>We <em>love</em> Sphinx!</p>
 ```
 
-Next, we tell Sphinx which sidebars we want, *in the order we want*, including our new template.
+Next, we tell Sphinx which sidebars we want, _in the order we want_, including our new template.
 We'll also specify where Sphinx should look for templates:
 
 ```python
@@ -291,8 +291,7 @@ We'll now see that box appear, above the (now-pink) searchbox:
 We can also override an existing sidebar simply by putting a file with the same name, in our site's `_templates` directory.
 
 What's available inside the template?
-The Sphinx docs [cover this](https://www.sphinx-doc.org/en/master/templating.html) but let's do a quick example in `luv_sphinx.html`:
-
+The Sphinx docs [cover this](https://www.sphinx-doc.org/en/master/development/templating.html) but let's do a quick example in `luv_sphinx.html`:
 
 ```
 <p>We <em>love</em> Sphinx for {{project}}!</p>

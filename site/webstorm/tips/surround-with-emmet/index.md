@@ -8,11 +8,11 @@ author: er
 subtitle: Quickly surround a selection with rich markup using the Emmet toolkit.
 seealso:
   - title: Wrap with Abbreviation on Emmet site
-    href: 'https://docs.emmet.io/actions/wrap-with-abbreviation/'
+    href: "https://docs.emmet.io/actions/wrap-with-abbreviation/"
   - title: Emmet Support in WebStorm Help
-    href: 'https://www.jetbrains.com/help/webstorm/using-zen-coding-support.html'
+    href: "https://www.jetbrains.com/help/webstorm/using-zen-coding-support.html"
   - title: Emmet Cheat Sheet
-    href: 'https://docs.emmet.io/cheat-sheet/'
+    href: "https://docs.emmet.io/cheat-sheet/"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -20,5 +20,6 @@ animatedGif:
   width: 600
   height: 300
 ---
-Press *Cmd/Ctrl+Alt+J* and select *Emmet* to surround a block of code with an Emmet template. 
-This also allows you to wrap individual lines if you’re using * in the abbreviation.
+
+Press _Cmd/Ctrl+Alt+J_ and select _Emmet_ to surround a block of code with an Emmet template.
+This also allows you to wrap individual lines if you’re using \* in the abbreviation.

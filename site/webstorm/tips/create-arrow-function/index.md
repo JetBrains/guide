@@ -20,4 +20,5 @@ animatedGif:
   width: 600
   height: 300
 ---
+
 Arrow functions? Yes, please! Press _⌥Enter / Alt+Enter_ to convert a function to an arrow function.

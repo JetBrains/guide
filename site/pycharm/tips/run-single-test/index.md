@@ -8,12 +8,12 @@ author: pwe
 subtitle: Speed up testing by focusing on one test.
 seealso:
   - title: Performing Tests
-    href: 'https://www.jetbrains.com/help/pycharm/performing-tests.html'
+    href: "https://www.jetbrains.com/help/pycharm/performing-tests.html"
   - title: Test Runner Tab
-    href: 'https://www.jetbrains.com/help/pycharm/test-runner-tab.html'
+    href: "https://www.jetbrains.com/help/pycharm/test-runner-tab.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/-3SS0s-Y420'
+video: "https://youtu.be/-3SS0s-Y420"
 ---
 
 You're doing test-driven development (TDD) and you're in "the flow".

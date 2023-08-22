@@ -11,7 +11,7 @@ topics:
 author: maartenba
 subtitle: Steve Gordon
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/g8MYUfplpt8'
+video: "https://youtu.be/g8MYUfplpt8"
 ---
 
 In this session, you'll learn how to write C# code which executes faster and allocates less. This session is packed with practical examples and demos of where the latest high-performance APIs and language features can be applied in your applications.
@@ -26,7 +26,7 @@ This talk is for developers, who like Steve, are ready to begin their journey to
 
 ### Resources
 
-* [High performance .NET](https://bit.ly/highperfdotnet)
+- [High performance .NET](https://bit.ly/highperfdotnet)
 
 ### About the Presenter
 
@@ -34,5 +34,5 @@ This talk is for developers, who like Steve, are ready to begin their journey to
 
 Steve Gordon is a Pluralsight author, Microsoft MVP, and senior engineer based in the UK. He works for Elastic, maintaining their .NET client libraries. Steve is passionate about the community and all things .NET related, having worked with ASP.NET for over 16 years. Steve enjoys sharing his knowledge through his blog, in videos, and by presenting talks at user groups and conferences. Steve is excited to be a part of the .NET community and founded .NET South East, a .NET Meetup group based in Brighton. He enjoys contributing to and maintaining OSS projects. You can find Steve online at his blog www.stevejgordon.co.uk and on Twitter as @Steve Gordon.
 
-* Twitter: https://twitter.com/stevejgordon
-* Blog: https://www.stevejgordon.co.uk
+- Twitter: <https://twitter.com/stevejgordon>
+- Blog: <https://www.stevejgordon.co.uk>

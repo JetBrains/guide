@@ -14,7 +14,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: Retrieve updated information from the server
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/3id6dBL73-A'
+video: "https://youtu.be/3id6dBL73-A"
 ---
 
 Long polling is a technique to retrieve updated information from the server at a known time interval. Upon receiving new information, you can swap it into a known target element, and a user perceives that information is updating in near real-time. The method has its advantages and drawbacks.
@@ -67,7 +67,7 @@ public class Polling: PageModel
 }
 ```
 
-The partial view powering the updates is old reliable Razor with C# logic and models. Running this sample, we can see the stock values moving up and down in value at a two-second interval. 
+The partial view powering the updates is old reliable Razor with C# logic and models. Running this sample, we can see the stock values moving up and down in value at a two-second interval.
 
 ![long polling working in page](img.png)
 

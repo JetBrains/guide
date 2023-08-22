@@ -11,8 +11,9 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=oguhQ4fneik&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=93
 ---
+
 **How to use:**
 Press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_ on
-function call that returns an error and select *Handle error*.
+function call that returns an error and select _Handle error_.
 
 <span class="tag is-rounded">New in 2021.1</span>

@@ -10,6 +10,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
+
 **How to use:**
 
 Turn on the _Sync with OS_ setting under _Settings/Preferences | Appearance & Behavior | Appearance_. A gear icon will show up next to this option, giving you control over which theme to apply, when. The IDE will automatically apply your prefered themes, following the OS preferences.

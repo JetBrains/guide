@@ -11,15 +11,16 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/go/finding-and-replacing-text-in-project.html
   - title: Navigation bar
-    href: 'https://www.jetbrains.com/help/go/part-4-using-the-navigation-bar.html'
+    href: "https://www.jetbrains.com/help/go/part-4-using-the-navigation-bar.html"
   - title: Navigating Tips and Tricks
-    href: 'https://www.jetbrains.com/help/go/navigation-bar.html'
+    href: "https://www.jetbrains.com/help/go/navigation-bar.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=qx1LPa38M18&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=71
 ---
-*Need a fast way to find files in a path, without disrupting your flow?*
+
+_Need a fast way to find files in a path, without disrupting your flow?_
 
 Closed the _Project Tool Window_ and need to find a file somewhere in the project tree?
 

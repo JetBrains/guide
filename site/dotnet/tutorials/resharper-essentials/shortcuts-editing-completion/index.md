@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-03-01
-title: 'Shortcuts, Editing and Code Completion'
+title: "Shortcuts, Editing and Code Completion"
 topics:
   - .net
   - completion
@@ -15,7 +15,7 @@ subtitle: >-
   Let's dive into the most important productivity shortcuts, editing, and code
   completion.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/yvrheKkjOa4'
+video: "https://youtu.be/yvrheKkjOa4"
 ---
 
 ### Get Going with ReSharper and <kbd>Alt-Enter</kbd>

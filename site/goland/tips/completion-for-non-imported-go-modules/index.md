@@ -12,10 +12,11 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=cPn30TtZRO0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=30
 ---
-GoLand provides code completion suggestions for all modules in the modules 
+
+GoLand provides code completion suggestions for all modules in the modules
 cache as you type.
 
-Even if a module has never been imported and used in your project, GoLand is 
+Even if a module has never been imported and used in your project, GoLand is
 still aware of it and will take care of you.
 
 **How to use:**

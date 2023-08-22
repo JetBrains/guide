@@ -13,12 +13,13 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/go/testing-your-first-go-application.html#run-test-automatically
   - title: Test Runner Tab
-    href: 'https://www.jetbrains.com/help/go/test-runner-tab.html#Test_Runner_Tab.xml'
+    href: "https://www.jetbrains.com/help/go/test-runner-tab.html#Test_Runner_Tab.xml"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=1DMiHVvRdZc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=3
 ---
+
 Test-driven development (TDD) means always run your tests.
 
 GoLand makes that easy by automatically running tests after

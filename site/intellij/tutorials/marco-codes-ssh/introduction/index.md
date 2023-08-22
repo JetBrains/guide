@@ -6,9 +6,9 @@ topics: []
 author: hs
 subtitle: Introduction to SSH
 thumbnail: ./thumbnail.png
-video: 'https://www.youtube.com/watch?v=UnM4QAumuCQ&start=0s'
+video: "https://www.youtube.com/watch?v=UnM4QAumuCQ&start=0s"
 ---
 
 # SSH Overview
 
-* What you'll learn in this video
+- What you'll learn in this video

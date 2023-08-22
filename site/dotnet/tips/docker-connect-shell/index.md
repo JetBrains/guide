@@ -14,6 +14,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
+
 When using Docker in your development workflow, it is sometimes necessary to connect to a running Docker container to perform critical tasks or troubleshoot issues.
 For example, you may want to explore the file system, look at processes running in the container, tail a log file in the container, and more.
 

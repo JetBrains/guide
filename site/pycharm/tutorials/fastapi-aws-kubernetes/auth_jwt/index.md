@@ -10,16 +10,14 @@ topics:
 author: mm
 subtitle: Integrating FastAPI with JWT Tokens.
 thumbnail: thumbnail.png
-video: 'https://www.youtube.com/watch?v=88ka51diyUc'
+video: "https://www.youtube.com/watch?v=88ka51diyUc"
 ---
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 In this tutorial we are going to set up the authentication process by protecting our apis using JWT.
 
-We will cover the security part. You can also follow the FastAPI documentation. It has a clear and detailed explanation. 
-
-
+We will cover the security part. You can also follow the FastAPI documentation. It has a clear and detailed explanation.
 
 # Installing Dependencies
 
@@ -33,17 +31,16 @@ pip install python-multipart
 
 ![step2](./steps/step2.png)
 
-You can also clearly see the documentation covers the entire password flow. I strongly recommend checking 
+You can also clearly see the documentation covers the entire password flow. I strongly recommend checking
 the FastAPI official documentation for reference.
 
 Reference:
-- https://fastapi.tiangolo.com/tutorial/security/
 
+- <https://fastapi.tiangolo.com/tutorial/security/>
 
 Next, we will try to get the current logged-in user.
 
-
-There are some additional dependencies required for this setup, like the **python-jose** which will be used to 
+There are some additional dependencies required for this setup, like the **python-jose** which will be used to
 generate and verify JWT tokens.
 
 ![step3](./steps/step3.png)
@@ -54,37 +51,31 @@ generate and verify JWT tokens.
 
 Just for speeding up the installation process, clone **requirements.txt** from the source [code](https://github.com/mukulmantosh/FastAPI_EKS_Kubernetes).
 
-
-
 # JSON Web Tokens (JWT)
 
 To know about JWT, visit this [link](https://jwt.io/).
 
 Before beginning, I expect that you have already installed the Python dependencies.
 
-I will go to the **auth** folder and create the **router.py** file. 
+I will go to the **auth** folder and create the **router.py** file.
 
 ![step5](./steps/step5.png)
 
 Let me do the necessary imports.
 
-
-As you can see we have imported ```OAuth2PasswordRequestForm```, which is basically a dependent class which 
-takes parameters:  ```grant_type```, ```username```, ```password```, ```client id``` and ```client secret```.
+As you can see we have imported `OAuth2PasswordRequestForm`, which is basically a dependent class which
+takes parameters: `grant_type`, `username`, `password`, `client id` and `client secret`.
 
 ![step6](./steps/step6.png)
 
-For your information, the **OAuth2** spec actually requires a field ```grant_type``` with a fixed value 
-of password, but ```OAuth2PasswordRequestForm``` doesn't enforce it.
+For your information, the **OAuth2** spec actually requires a field `grant_type` with a fixed value
+of password, but `OAuth2PasswordRequestForm` doesn't enforce it.
 
-If you need to enforce it, use ```OAuth2PasswordRequestFormStrict``` instead of ```OAuth2PasswordRequestForm```.
-
+If you need to enforce it, use `OAuth2PasswordRequestFormStrict` instead of `OAuth2PasswordRequestForm`.
 
 I will initialize the **APIRouter** and set the tag name to **auth**.
 
-
 ![step7](./steps/step7.png)
-
 
 Next, I will create an endpoint for login. I will pause the implementation for some time.
 Before that, I need to create a jwt file where I will be creating and verifying tokens.
@@ -95,19 +86,18 @@ I am going to do the necessary imports.
 
 ![step9](./steps/step9.png)
 
-For creating a jwt token we need to have a secure secret key and 
+For creating a jwt token we need to have a secure secret key and
 algorithm which I will set to **HS256**. There are even more algorithms supported, do check
 the official documentation of [python-jose](https://python-jose.readthedocs.io/en/latest/).
 
-
 I will make sure that the token expires after 30 minutes.
 
-For the secret key, I will provide a long random string. 
+For the secret key, I will provide a long random string.
 
 ![step10](./steps/step10.png)
 
-I will create a function called ```create_access_token``` where I will write the implementation to 
-encode the data and generate the JWT token. This is something which I directly took from 
+I will create a function called `create_access_token` where I will write the implementation to
+encode the data and generate the JWT token. This is something which I directly took from
 the FastAPI documentation.
 
 ![step11](./steps/step11.png)
@@ -138,14 +128,13 @@ def create_access_token(data: dict):
 
 Next, I will be creating a few pydantic classes.
 
-I will be creating three different classes: ```Login```, ```Token``` and ```TokenData```.
+I will be creating three different classes: `Login`, `Token` and `TokenData`.
 
 Login will be used for accepting parameters like username and password.
 
-Token class will accept ```token``` and ```token_type``` here we are basically referring to ```Bearer```.
+Token class will accept `token` and `token_type` here we are basically referring to `Bearer`.
 
-```TokenData``` which accepts email that too it's optional.
-
+`TokenData` which accepts email that too it's optional.
 
 ![step12](./steps/step12.png)
 
@@ -171,7 +160,7 @@ class TokenData(BaseModel):
     email: Optional[str] = None
 ```
 
-I will come back to jwt and create a new ```verify_token```. This function will be used to check whether
+I will come back to jwt and create a new `verify_token`. This function will be used to check whether
 the token which we are using is a valid token or not.
 
 ![step13](./steps/step13.png)
@@ -216,15 +205,13 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 ```
 
 If email is not present in the token then we will raise a credential exception
-which is actually going to be a ```HTTPException``` else we will be returning the ```TokenData```.
+which is actually going to be a `HTTPException` else we will be returning the `TokenData`.
 
-Next, we will create a variable ```oauth2_scheme``` in which we will initialize the ```OAuth2PasswordBearer```.
+Next, we will create a variable `oauth2_scheme` in which we will initialize the `OAuth2PasswordBearer`.
 
-```Oauth2_scheme``` will be used as a dependency when trying to get the current logged-in user.
+`Oauth2_scheme` will be used as a dependency when trying to get the current logged-in user.
 
-
-I will create the ```get_current_user``` function where I will verify the token.
-
+I will create the `get_current_user` function where I will verify the token.
 
 ![step14](./steps/step14.png)
 
@@ -286,10 +273,9 @@ This is a standard API, not async. It is completely fine you can choose whatever
 for you. It’s not necessary that you need to define all of your APIs to async, even your apis
 can be also sync. Choice is yours.
 
-
 ![step15](./steps/step15.png)
 
-In request we are going to make ```OAuth2PasswordRequestForm``` as a dependency, so it will prompt us 
+In request we are going to make `OAuth2PasswordRequestForm` as a dependency, so it will prompt us
 to provide username and password.
 
 I will check whether the user is present in the database or not, if it is not present I will raise an HTTP Exception.
@@ -341,9 +327,9 @@ I will go to **main.py** and register the auth router.
 
 After we registered the router successfully, I will go to the user module.
 
-I will open the router and import ```get_current_user```.
+I will open the router and import `get_current_user`.
 
-I will pass it in all of my apis as a dependency, excluding a few. 
+I will pass it in all of my apis as a dependency, excluding a few.
 
 **user/router.py**
 
@@ -403,23 +389,18 @@ async def delete_user_by_id(user_id: int, database: Session = Depends(db.get_db)
 
 # Testing Auth
 
-Once everything is done, you will see in the Swagger UI that some of your endpoints are now protected and can't be 
+Once everything is done, you will see in the Swagger UI that some of your endpoints are now protected and can't be
 directly accessed.
 
-
 ![step17](./steps/step17.png)
-
 
 ![step18](./steps/step18.jpg)
 
 You can observe the lock symbol which means the endpoint is protected, and you need a valid token to access it.
 
-
 ![step19](./steps/step19.png)
 
-
 You can also observe that a link is appearing named **Authorize** with a lock sign.
-
 
 Once I click, it’s going to prompt me to enter a valid username and password.
 
@@ -433,8 +414,7 @@ Now, if I try to execute then it will give me a list of all users.
 
 ![step22](./steps/step22.png)
 
-
-I will be passing the ```get_current_user``` dependency in all of my endpoints excluding few of them.
+I will be passing the `get_current_user` dependency in all of my endpoints excluding few of them.
 
 If you feel that you got stuck somewhere then watch the video along-with have a look on the [source code](https://github.com/mukulmantosh/FastAPI_EKS_Kubernetes).
 
@@ -444,15 +424,15 @@ You can see now that the user module all apis except register all are having the
 
 ![step24](./steps/step24.png)
 
-There is an interesting discussion which I came across, and maybe you might want some of your 
-apis to be not protected like load balancer health checks, but you want to take the advantage of 
+There is an interesting discussion which I came across, and maybe you might want some of your
+apis to be not protected like load balancer health checks, but you want to take the advantage of
 [global dependency](https://fastapi.tiangolo.com/tutorial/dependencies/global-dependencies/).
 
 Then you should check this issue:
- - [https://github.com/tiangolo/fastapi/issues/2481](https://github.com/tiangolo/fastapi/issues/2481)
 
+- [https://github.com/tiangolo/fastapi/issues/2481](https://github.com/tiangolo/fastapi/issues/2481)
 
-I will also replace the manually provided emails with ```current_user.email```
+I will also replace the manually provided emails with `current_user.email`
 
 Example: **orders/services.py**
 
@@ -525,7 +505,6 @@ You can see now the item has been successfully added.
 
 ![step27](./steps/step27.png)
 
-
-So, I hope you got some understanding about the auth flow. If not then I would recommend checking the FastAPI docs which has a more detailed explanation. 
+So, I hope you got some understanding about the auth flow. If not then I would recommend checking the FastAPI docs which has a more detailed explanation.
 
 In the next tutorial, we will be focusing on testing using pytest and asyncio.

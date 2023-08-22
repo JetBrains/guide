@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=PJ8JmpMQTgI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=41
 ---
+
 **How to use:**
 
 Select a portion of the code, press _Alt+Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_, then choose _Create new scratch file from selection_ to quickly create a new scratch containing the same code.

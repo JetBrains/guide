@@ -6,13 +6,13 @@ topics: []
 author: hs
 subtitle: Creating and testing @RestController
 thumbnail: ./thumbnail.png
-video: 'https://www.youtube.com/watch?v=QuvS_VLbGko&start=641s'
+video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=641s"
 ---
 
 ## What's in the video?
 
-* Writing the first @RestController
-* Seeing the result in the browser
-* Reasoning about the REST endpoints for our Photo API
-* Create/Read/Update : CRUD
-* Creating a simple class modeling our domain
+- Writing the first @RestController
+- Seeing the result in the browser
+- Reasoning about the REST endpoints for our Photo API
+- Create/Read/Update : CRUD
+- Creating a simple class modeling our domain

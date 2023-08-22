@@ -1,8 +1,8 @@
 ---
 title: F#
 subtitle: Functional-first programming language for .NET.
-logo: ./F_Sharp_logo.png
-website: 'https://fsharp.org/'
+logo: ./fsharp-logo.svg
+website: "https://fsharp.org/"
 topicType: technology
 ---
 

@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2020-07-15
-title: 'Shortcuts, Editing, and Completion in Rider'
+title: "Shortcuts, Editing, and Completion in Rider"
 topics:
   - .net
   - completion
@@ -15,7 +15,7 @@ subtitle: >-
   Where to start? Let's learn the two most important shortcuts, editing, and
   code completion.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/ztQ9ez1bFNg'
+video: "https://youtu.be/ztQ9ez1bFNg"
 ---
 
 ### Keyboard Shortcuts
@@ -23,19 +23,19 @@ video: 'https://youtu.be/ztQ9ez1bFNg'
 Rider has many keyboard shortcuts, and they all depend on which operating system you are using. Don't be overwhelmed,
 there are two essential shortcuts that help you achieve anything in Rider! They work cross-platform, and across all JetBrains IDE's:
 
-* <kbd>Shift, Shift</kbd>, which brings up <b><a href="https://www.jetbrains.com/help/rider/Searching_Everywhere.html">Search Everywhere</a></b>. From here, you can navigate to types, symbols, files, recent files, actions, tool windows, run configurations, and preferences.
-* <kbd>Alt+Enter</kbd>, which brings up a contextual menu with all actions that apply.
+- <kbd>Shift, Shift</kbd>, which brings up <b><a href="https://www.jetbrains.com/help/rider/Searching_Everywhere.html">Search Everywhere</a></b>. From here, you can navigate to types, symbols, files, recent files, actions, tool windows, run configurations, and preferences.
+- <kbd>Alt+Enter</kbd>, which brings up a contextual menu with all actions that apply.
 
 Windows, menus and pop-ups will show more keyboard shortcut hints, so you can learn them along the way.
 
 In case you are looking for a full overview, use these cheat sheets to master your Rider keyboard scheme of choice:
 
--   [Default Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_default_win_shortcuts.pdf)
--   [Mac OS X 10.5+ Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_macosx_shortcuts.pdf)
--   [ReSharper OSX Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_ReSharper_mac_shortcuts.pdf)
--   [ReSharper Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_ReSharper_win_shortcuts.pdf)
--   [Visual Studio Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_VS_win_shortcuts.pdf)
--   [Visual Studio OSX Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_VS_mac_shortcuts.pdf)
+- [Default Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_default_win_shortcuts.pdf)
+- [Mac OS X 10.5+ Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_macosx_shortcuts.pdf)
+- [ReSharper OSX Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_ReSharper_mac_shortcuts.pdf)
+- [ReSharper Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_ReSharper_win_shortcuts.pdf)
+- [Visual Studio Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_VS_win_shortcuts.pdf)
+- [Visual Studio OSX Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_VS_mac_shortcuts.pdf)
 
 ### Search Everywhere
 

@@ -26,7 +26,6 @@ playlistItems:
   - /dotnet/tips/occurrence-selection/
 ---
 
-
 Editing code is a core activity in the IDE. ReSharper and Rider can help
 write clean code faster, and more efficiently.
 

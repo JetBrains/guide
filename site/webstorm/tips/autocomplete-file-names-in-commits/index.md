@@ -13,4 +13,5 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
+
 WebStorm makes it easy to reference the right file with autocompletion for filenames that were changed in the commit. So you can provide more meaningful commit messages.

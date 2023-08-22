@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=S7n7phgcb1o&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=66
 ---
+
 You can hide all the tool windows in the IDE and quickly switch to the
 editor via _Ctrl + Shift + F12 on Windows/Linux_, or _⌘ + ⇧ + F12 on macOS_.
 

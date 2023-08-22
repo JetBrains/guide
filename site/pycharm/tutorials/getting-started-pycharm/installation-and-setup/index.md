@@ -7,15 +7,17 @@ author: hs
 subtitle: How to install and set up PyCharm.
 thumbnail: thumbnail.png
 videoBottom: true
-video: 'https://youtu.be/2EB8siO-_OM'
+video: "https://youtu.be/2EB8siO-_OM"
 ---
 
 Let’s find and download PyCharm Professional Edition which we’ll be using in this series. PyCharm has a free 1-month trial, but feel free to follow along with your PyCharm Community Edition if you prefer.
 
 ## Finding and downloading
+
 Download PyCharm by clicking the [download button](https://www.jetbrains.com/pycharm/download).
 
 ## Installing
+
 These [instructions](https://www.jetbrains.com/help/pycharm/installation-guide.html#standalone) differ depending on your operating system.
 
 On the first launch of PyCharm Professional, you’ll be asked to log into your JetBrains account or start a free 30-day evaluation and that's it for installation!
@@ -26,7 +28,7 @@ When you open PyCharm for the first time, you are presented with the Welcome Scr
 
 <img src="welcome-screen.png" alt="Welcome Screen" width="700"/>
 
-From PyCharm's Welcome Screen, there are four main sections you can explore. 
+From PyCharm's Welcome Screen, there are four main sections you can explore.
 
 On the **Learn PyCharm** tab you can use the links to jump to documentation pages and other resources, and you can also enroll in the interactive [Feature Trainer](https://www.jetbrains.com/help/pycharm/feature-trainer.html) which is designed to quickly teach you some productivity boosters in PyCharm.
 
@@ -39,9 +41,11 @@ The **Customize** section lets you tweak some of the most commonly used settings
 Finally, on the **Projects** tab, you can create, open, or clone projects to start working with.
 
 ## Conclusion
+
 In this step we learned how to download and install PyCharm, and we also went through the Welcome Screen.
 
 In the next step, we’ll see how to start our first project in PyCharm.
 
 ## Video
+
 You can also check out the video for this step from our Getting Started series on YouTube:

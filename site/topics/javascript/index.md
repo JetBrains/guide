@@ -3,7 +3,8 @@ title: javascript
 subtitle: Support for server and browser JavaScript via WebStorm.
 accent: primary
 icon: fab fa-js-square
-obsoletes: ["/pycharm/topics/javascript/"]
+obsoletes:
+  - /pycharm/topics/javascript/
 ---
 
 Many of our IDEs have powerful JavaScript features based on the inclusion

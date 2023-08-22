@@ -11,6 +11,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
+
 Whenever you upgrade your IDE to a new major version, it leaves behind all its configuration, caches, logs, and other directories so you can return to it any time you want. However, you might not want to keep those old caches or logs for too long, as they can slowly add up. Don't worry, the IDE will help you do all the cleanup.
 
 **How to use:**

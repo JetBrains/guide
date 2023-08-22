@@ -14,7 +14,8 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=NEtGV-cfoJM&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=33
 ---
-Calling *t/b.Fatal\** methods from a goroutine is not advised as it
+
+Calling \*t/b.Fatal\*\* methods from a goroutine is not advised as it
 may produce unexpected behavior.
 
 **How to use:**

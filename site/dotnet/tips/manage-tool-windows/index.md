@@ -14,6 +14,7 @@ animatedGif:
   width: 500
   height: 333
 ---
+
 **Too little space to work with?** 🤨
 
 If you find yourself frequently resizing tool windows like for VCS or the terminal, then you should try one of the following:
@@ -24,5 +25,6 @@ If you find yourself frequently resizing tool windows like for VCS or the termin
 Try it now!️️ 🤓
 
 ### See Also
+
 - [Rider - Working with Tool Windows](https://www.jetbrains.com/help/rider/Tool_Windows.html)
 - [Rider - Window Layout Manager plugin](https://plugins.jetbrains.com/plugin/13005-window-layout-manager)

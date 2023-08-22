@@ -25,4 +25,3 @@ tutorialItems:
   - ./bookmarks/
   - ./summary/
 ---
-

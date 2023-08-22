@@ -10,7 +10,7 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/webstorm/creating-and-optimizing-imports.html
   - title: How to optimize imports
-    href: 'https://blog.jetbrains.com/webstorm/2018/05/optimize-imports-in-webstorm/'
+    href: "https://blog.jetbrains.com/webstorm/2018/05/optimize-imports-in-webstorm/"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
@@ -18,5 +18,6 @@ animatedGif:
   width: 600
   height: 300
 ---
-With the _Optimize Imports_ action (_⌃⌥O_ / _Ctrl+Alt+O_), you can quickly remove any unused imports, merge 
+
+With the _Optimize Imports_ action (_⌃⌥O_ / _Ctrl+Alt+O_), you can quickly remove any unused imports, merge
 imports from the same module, and optionally sort the import statements.

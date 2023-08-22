@@ -15,6 +15,7 @@ animatedGif:
   width: 540
   height: 298
 ---
+
 **Ad-hoc formatting or everywhere?** 📐
 
 Aligning properties in columns can greatly improve readability for DTOs or vector data types. We can also align binary expressions, invocations and many more constructs. However, often we don't want to apply such formatting across our whole code base, but in very particular cases. Using **formatter comments**, we can format our code just for a specific scope:
@@ -41,5 +42,6 @@ In order to determine the `setting_name` and `value`, we recommend to first chan
 May the formatting be with you! 🧙🏻
 
 ### See Also
+
 - ["Formatting" on the JetBrains .NET blog](https://blog.jetbrains.com/dotnet/?s=formatting)
 - [Format and Reformat Code](https://www.jetbrains.com/help/rider/Code_Formatting_Style.html)

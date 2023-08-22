@@ -12,6 +12,7 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Source code hierarchy
     href: >-
       https://www.jetbrains.com/help/idea/viewing-structure-and-hierarchy-of-the-source-code.html
-video: 'https://youtu.be/4rHMAWR0m9E'
+video: "https://youtu.be/4rHMAWR0m9E"
 ---
+
 Use **⌃H** (macOS) or **Ctrl+H** (Windows/Linux) to view the hierarchy of classes, methods, and calls and explore the structure of source files.

@@ -16,4 +16,5 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
-If dependencies in *package.json* changed after the update from Version Control, WebStorm will suggest running *npm* or *yarn install*.
+
+If dependencies in _package.json_ changed after the update from Version Control, WebStorm will suggest running _npm_ or _yarn install_.

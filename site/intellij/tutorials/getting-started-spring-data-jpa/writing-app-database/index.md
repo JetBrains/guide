@@ -13,6 +13,7 @@ Now that we have our Employee entity, repository and database configuration, we 
 **Exercise**: Take a few minutes to see if you can create a `insertFourEmployees(EmployeeRepository repository)` method that inserts employees using the `save()` method.
 
 Done? Here is what your method would look like:
+
 ```java
 private void insertFourEmployees(EmployeeRepository repository) {
     repository.save(new Employee("Dalia", "Abo Sheasha"));
@@ -37,6 +38,7 @@ public CommandLineRunner run(EmployeeRepository repository) {
 Let's run our application and see it in action. We'll press **Shift**+**F10** for Windows/Linux or **⌃R** for macOS.
 
 ## End Result
+
 Once our application starts, we can see the Console logs showing our Spring Boot application starting. Then, we can see the result of our `findAll` call which prints all our employees from the database.
 
 ![Application Run Successfully](./ApplicationRunSuccess.png)

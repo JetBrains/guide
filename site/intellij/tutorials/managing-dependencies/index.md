@@ -18,5 +18,3 @@ tutorialItems:
   - ./remove-dependencies/
   - ./summary/
 ---
-
-

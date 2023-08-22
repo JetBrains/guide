@@ -12,9 +12,9 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: 'Working with Cultures, Resources, & ASP.NET'
+subtitle: "Working with Cultures, Resources, & ASP.NET"
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/smCuu3TrVUc'
+video: "https://youtu.be/smCuu3TrVUc"
 ---
 
 Localization has been around since .NET 1.1. Looking at the interfaces of `ResourceManager` and `CultureInfo`, along with the static nature of resource access, its easy to see the ties to legacy client technology **WinForms**. With the release of ASP.NET Core, developers have new tools to work with localization in the realm of server-based web apps.
@@ -46,7 +46,7 @@ We follow up on the call to add localization by configuring the `RequestLocaliza
      options.SetDefaultCulture("en-Us");
      options.AddSupportedUICultures("en-US", "de-DE", "ja-JP");
      options.FallBackToParentUICultures = true;
-     
+
      options
          .RequestCultureProviders
          .Remove(typeof(AcceptLanguageHeaderRequestCultureProvider));
@@ -63,11 +63,11 @@ Finally, we add view localization to the services collection.
 
 ```csharp
  services
-	 .AddRazorPages()
-	 .AddViewLocalization();
+  .AddRazorPages()
+  .AddViewLocalization();
 ```
 
-The complete `ConfigureServices` method is below. 
+The complete `ConfigureServices` method is below.
 
 ```csharp
  public void ConfigureServices(IServiceCollection services)
@@ -76,22 +76,22 @@ The complete `ConfigureServices` method is below.
      {
         options.ResourcesPath = "Resources";
      });
-     
+
      services.Configure<RequestLocalizationOptions>(options =>
      {
          options.SetDefaultCulture("en-Us");
          options.AddSupportedUICultures("en-US", "de-DE", "ja-JP");
          options.FallBackToParentUICultures = true;
-         
+
          options
          .RequestCultureProviders
          .Remove(typeof(AcceptLanguageHeaderRequestCultureProvider));
      });
-     
+
      services
          .AddRazorPages()
          .AddViewLocalization();
-     
+
      services.AddScoped<RequestLocalizationCookiesMiddleware>();
  }
 ```
@@ -121,17 +121,17 @@ We need to ensure that we register the middleware before any middleware that req
          // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
          app.UseHsts();
      }
-     
+
      app.UseHttpsRedirection();
      app.UseStaticFiles();
      app.UseRequestLocalization();
-     
-     // will remember to write the cookie 
+
+     // will remember to write the cookie
      app.UseRequestLocalizationCookies();
-     
+
      app.UseRouting();
      app.UseAuthorization();
-     
+
      app.UseEndpoints(endpoints => { endpoints.MapRazorPages(); });
  }
 ```
@@ -195,31 +195,31 @@ The `IViewLocalizer` is the recommended approach for anyone localizing an ASP.NE
 
 ### Example Usage
 
-Here is an example of a Razor page utilizing all three interfaces. We can see that once injected, they all use an index operator to handle 
+Here is an example of a Razor page utilizing all three interfaces. We can see that once injected, they all use an index operator to handle
 
 ```csharp
 @page
 @using Microsoft.Extensions.Localization
 @using Microsoft.AspNetCore.Mvc.Localization
 @model IndexModel
- 
+
 @inject IStringLocalizer<IndexModel> Localizer
 @inject IHtmlLocalizer<IndexModel> HtmlLocalizer
- 
+
 @* ViewLocalizer path is Resources.Pages.Index *@
 @inject IViewLocalizer ViewLocalizer
- 
+
 @{
  ViewData["Title"] = @Localizer["Home page"];
 }
- 
+
 <div class="text-center">
  <h1 class="display-4">@ViewLocalizer["Home page"]</h1>
  <p>
  @HtmlLocalizer["Learn"]
  </p>
 </div>
- 
+
 <form method="post" asp-page="Index">
  <div class="form-group">
  <label asp-for="Superhero" class="control-label"></label>
@@ -237,7 +237,7 @@ Localizing static content using the localization interfaces is straight-forward.
 ```csharp
 [Display(Name = "Superhero", ResourceType = typeof(Resources.Pages.IndexModel))]
 [Required(
-    ErrorMessageResourceName = nameof(Resources.Pages.IndexModel.SuperHeroFieldIsRequired), 
+    ErrorMessageResourceName = nameof(Resources.Pages.IndexModel.SuperHeroFieldIsRequired),
     ErrorMessageResourceType = typeof(Resources.Pages.IndexModel)
 )]
 public string Superhero { get; set; }
@@ -247,7 +247,7 @@ The Razor view utilizes the `DisplayAttribute` to determine a `<label>` tag's va
 
 ## Conclusion
 
-With a few steps, we can understand the ideas behind localizing an ASP.NET application. We can transfer many of our existing skills regarding resource files to the new paradigm created for web applications. Once configured, the localization framework stays out of our way, allowing us to develop our app while also leaving room to expand our audience. 
+With a few steps, we can understand the ideas behind localizing an ASP.NET application. We can transfer many of our existing skills regarding resource files to the new paradigm created for web applications. Once configured, the localization framework stays out of our way, allowing us to develop our app while also leaving room to expand our audience.
 
 I hope this short tutorial has inspired you to localize your ASP.NET applications. Remember, you can **[access a working sample of the project seen in the video at this GitHub repository](https://github.com/khalidabuhakmeh/aspnetcore_localization_sample).**
 
@@ -255,7 +255,7 @@ I hope this short tutorial has inspired you to localize your ASP.NET application
 
 Some of the resources utilized to write this tutorial are listed below:
 
-- Mike Brind - https://www.mikesdotnetting.com/article/346/using-resource-files-in-razor-pages-localisation
-- .NET Core tutorials - https://dotnetcoretutorials.com/2017/06/22/request-culture-asp-net-core/
-- Microsoft Documentation - https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-3.1
-- Alan Edwardes - https://alanedwardes.com/blog/posts/country-code-to-flag-emoji-csharp/)
+- Mike Brind - <https://www.mikesdotnetting.com/article/346/using-resource-files-in-razor-pages-localisation>
+- .NET Core tutorials - <https://dotnetcoretutorials.com/2017/06/22/request-culture-asp-net-core/>
+- Microsoft Documentation - <https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-3.1>
+- Alan Edwardes - <https://alanedwardes.com/blog/posts/country-code-to-flag-emoji-csharp/>)

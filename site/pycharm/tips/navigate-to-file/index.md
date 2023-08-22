@@ -14,7 +14,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#tips
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/0NFMM143Y5w'
+video: "https://youtu.be/0NFMM143Y5w"
 ---
 
 Navigating your project files is a chore. Expanding folders and

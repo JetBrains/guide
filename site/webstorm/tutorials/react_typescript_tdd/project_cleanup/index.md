@@ -10,11 +10,11 @@ subtitle: >-
   the IDE, and tour a few more features.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-video: 'https://youtu.be/b0KrB31hN5k'
+video: "https://youtu.be/b0KrB31hN5k"
 ---
 
-In our [previous step](../project_setup/) we generated a project then 
-took a look around. We'll use that step as the starting point and do 
+In our [previous step](../project_setup/) we generated a project then
+took a look around. We'll use that step as the starting point and do
 some cleaning up:
 
 - Use the IDE to reformat code
@@ -25,17 +25,17 @@ Along the way we'll show some IDE features in action.
 
 ## Code
 
-The finished code for this tutorial step is 
+The finished code for this tutorial step is
 [in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/project_cleanup).
 
 ## Reformatting Code
 
-We currently have the test runner script running. 
-If you have it running via `npm run-script test` in a terminal window, terminate that process with `Ctrl-C` or the equivalent. 
+We currently have the test runner script running.
+If you have it running via `npm run-script test` in a terminal window, terminate that process with `Ctrl-C` or the equivalent.
 If you ran it in the IDE, close that tool window (and click `Terminate` on the dialog.)
 
 With the IDE, reformatting code is simple.
-In fact, it's something you will do constantly. 
+In fact, it's something you will do constantly.
 You currently have `App.tsx` open.
 Let's use the `Reformat Code` action (`Ctrl-Alt-L` Win/Linux, `Alt-Cmd-L` macOS) to set everything to proper indentation.
 
@@ -46,11 +46,11 @@ Open it and do the same `Reformat Code` operation there as well.
 
 This is a...complicated topic.
 
-In the world of React, ESLint has become very popular and `create-react-app` comes with ESLint preconfigured. 
+In the world of React, ESLint has become very popular and `create-react-app` comes with ESLint preconfigured.
 TSLint was once popular for TypeScript projects, but they joined forces with Microsoft's TypeScript team and ESLint to combine the effort into ESLint.
 `create-react-app  --template typescript` generates a project with this new TypeScript-friendly ESLint.
 
-The [Prettier project](https://prettier.io) is a similar, but slightly different tool...it's a *code formatter* more than a linter.
+The [Prettier project](https://prettier.io) is a similar, but slightly different tool...it's a _code formatter_ more than a linter.
 It's gotten very popular and [our IDEs now have first-class support](https://www.jetbrains.com/help/webstorm/prettier.html#prettier_before_you_start).
 Let's setup Prettier as our code formatter, replacing the IDE's built-in code formatting.
 In fact, you can setup Prettier to work with ESLint.
@@ -60,7 +60,7 @@ We'll start by adding some dev dependencies.
 Enter the following in the terminal:
 
 ```bash
-$ npm install --save-dev --save-exact prettier
+npm install --save-dev --save-exact prettier
 ```
 
 Next, in the IDE's Settings/Preferences, visit `Languages and Frameworks | JavaScript | Prettier`, and use the `On code reformatting`.
@@ -71,28 +71,28 @@ You'll see a Prettier-default code format: for example, single quotes changed to
 
 ## Clean Up, Clean Up
 
-In `App.tsx`, let's do some steps to make a simpler starting point for the rest of the series. 
+In `App.tsx`, let's do some steps to make a simpler starting point for the rest of the series.
 First, change the `App` function to return a lot less markup:
 
 ```javascript
 function App() {
-  return (
-    <div>
-      <h1>Hello React</h1>
-    </div>
-  );
+	return (
+		<div>
+			<h1>Hello React</h1>
+		</div>
+	);
 }
 ```
 
-In the IDE, you can quickly generate markup using [Emmet](../../../../topics/emmet). 
+In the IDE, you can quickly generate markup using [Emmet](/topics/emmet/).
 Highlight the existing `div` to replace and enter `div>h1<enter>Hello React`:
 
 ![Use Emmet to generate HTML markup](./screenshots/emmet.png)
 
 We have an ESLint `Unused import` error on line 2, which we can see by hovering over the gray squiggly line: `Unused import logo from "./logo.svg"`
 
-We could stop what we're doing, move to that line, and delete it. 
-But the IDE makes this easy with the `Optimize Imports` action (`Ctrl-Alt-O` for Win/Linux and macOS). 
+We could stop what we're doing, move to that line, and delete it.
+But the IDE makes this easy with the `Optimize Imports` action (`Ctrl-Alt-O` for Win/Linux and macOS).
 Invoke that and remove the unused import.
 
 While you're at it:
@@ -121,36 +121,36 @@ The IDE tells you about the error, with a red squiggly on the `<div>` in the JSX
 
 ![Get warnings on missing imports](./screenshots/missing_import.png)
 
-Click on the red squiggly, then `Alt-Enter` and choose `Import default 'React' from module "react"`. 
+Click on the red squiggly, then `Alt-Enter` and choose `Import default 'React' from module "react"`.
 The IDE generates the proper import:
 
 ![Let the IDE generate missing imports](./screenshots/add_import.png)
 
 Once finished, invoke `Optimize Imports` (`Ctrl-Alt-O` for Win/Linux and macOS) to get rid of the `Component` import.
 
-Let's say I wanted to rename `App`. 
-Where is it being used? 
-Right-click on the `App` symbol, then choose `Find Usages`. 
-A window pops up. 
-Turns out it's being used in a lot of places. 
+Let's say I wanted to rename `App`.
+Where is it being used?
+Right-click on the `App` symbol, then choose `Find Usages`.
+A window pops up.
+Turns out it's being used in a lot of places.
 Double-click on the usage in `index.tsx`.
 The IDE opens the file, moves to the line, and puts the cursor in the right spot.
 
-How about the other direction...you're sitting on the usage and want to go to the definition? 
+How about the other direction...you're sitting on the usage and want to go to the definition?
 Use `Cmd-B` to jump to the function that defines `App`.
 
-We could now start the process of renaming by visiting all the usages. 
+We could now start the process of renaming by visiting all the usages.
 Bleh.
-Can't we let the IDE do it for me? 
+Can't we let the IDE do it for me?
 Click on `App` in `function App` and hit `Ctrl-T`, then choose `Rename` to Refactor Rename the function to `MyApp`:
 
 ![Let the IDE rename symbols](./screenshots/refactor_rename.png)
 
 In the tool window showing you the consequences, choose `Do Refactor`.
 
-Oh no, that's not what I wanted! 
-Do I have to do another refactor? 
-Nope. 
-The IDE did all those operations in one editor transaction. 
+Oh no, that's not what I wanted!
+Do I have to do another refactor?
+Nope.
+The IDE did all those operations in one editor transaction.
 Just use Undo and say `Ok` on the dialog.
 Everything is back where it was.

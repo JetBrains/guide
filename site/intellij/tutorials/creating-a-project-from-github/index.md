@@ -18,4 +18,3 @@ tutorialItems:
 ---
 
 In this tutorial, we’re going to look at how we can create an IntelliJ IDEA project from the code in a [GitHub](https://github.com/) repository.
-

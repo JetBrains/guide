@@ -10,13 +10,14 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (video) IntelliJ IDEA Everyday Refactorings
-    href: 'https://www.youtube.com/watch?v=rPq7fBo5JVs'
+    href: "https://www.youtube.com/watch?v=rPq7fBo5JVs"
   - title: (video) IntelliJ IDEA 3 Ways to Simplify Your Code
-    href: 'https://www.youtube.com/watch?v=HgWU25YwDfc'
+    href: "https://www.youtube.com/watch?v=HgWU25YwDfc"
   - title: (documentation) IntelliJ IDEA Help - Extract Method
-    href: 'https://www.jetbrains.com/help/idea/extract-method.html'
-video: 'https://youtu.be/VwEK2_FohFw'
+    href: "https://www.jetbrains.com/help/idea/extract-method.html"
+video: "https://youtu.be/VwEK2_FohFw"
 ---
+
 Highlight the code you want to extract to a method and press **⌥⌘M** (macOS), or **Ctrl+Alt+M** (Windows/Linux), to extract it.
 
 Extracting code into a new method can be useful in improving the readability of your code.

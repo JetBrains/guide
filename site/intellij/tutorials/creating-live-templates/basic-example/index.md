@@ -6,14 +6,14 @@ topics: []
 author: hs
 subtitle: Creating a Live Template to add a `private void method`
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/Sio9MdSqXZo?start=147'
+video: "https://youtu.be/Sio9MdSqXZo?start=147"
 ---
 
 In this example, we're going to create a Live Template to insert the code construct for `private void method`:
 
 ```java
 private void <methodName>(<optional arguments>) {
-  
+
 }
 ```
 
@@ -23,7 +23,7 @@ private void <methodName>(<optional arguments>) {
 ![Settings and Preferences](settings-preferences.png)
 
 3. The Live Templates are grouped by language. For this example, select the **Java** node.
-4. Select the new icon on the right and then **1. Live Template**. 
+4. Select the new icon on the right and then **1. Live Template**.
 
 ![New Live Template option](new-live-template.png)
 
@@ -39,8 +39,8 @@ private void $METHOD_NAME$($ARGS$) {
 
 [Variables](https://www.jetbrains.com/help/idea/template-variables.html) start and end with the $ (dollar) sign and are used to capture your input when you use the Live Template. You can name your variables in any way you like, however the $END$ [variable is pre-defined](https://www.jetbrains.com/help/idea/template-variables.html#pdtv) in IntelliJ IDEA and determines where the caret lands at the end of your Live Template:
 
-| Code          | Meaning                                | 
-|---------------|----------------------------------------|
+| Code          | Meaning                                |
+| ------------- | -------------------------------------- |
 | $METHOD_NAME$ | Variable for the name of the method    |
 | $ARGS$        | Variable for method arguments          |
 | $END$         | Variable for the carets final location |
@@ -59,9 +59,9 @@ private void $METHOD_NAME$($ARGS$) {
 
 ![Invoking the private void method live template](prvm.png)
 
-11. Press **⏎** (macOS), **Enter** (Windows/Linux) to use the Live Template. The default value we entered for the variable $METHOD_NAME$ will be highlighted. Give your new method a name which overwrites the default value of `methodName` then press **Tab**. 
-12. Enter any arguments you want to pass in to your method and press **Tab** again. 
-13. Your caret will now be in the correct location inside your new method to start typing code. 
+11. Press **⏎** (macOS), **Enter** (Windows/Linux) to use the Live Template. The default value we entered for the variable $METHOD_NAME$ will be highlighted. Give your new method a name which overwrites the default value of `methodName` then press **Tab**.
+12. Enter any arguments you want to pass in to your method and press **Tab** again.
+13. Your caret will now be in the correct location inside your new method to start typing code.
 
 ![Private void method declaration](private-void-method.png)
 

@@ -11,7 +11,7 @@ topics:
 author: maartenba
 subtitle: Michael Staib
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/Yy9wOhiWBJg'
+video: "https://youtu.be/Yy9wOhiWBJg"
 ---
 
 GraphQL is a great way to expose your APIs and it has changed the way we think about consuming data over HTTP. Not only does GraphQL give us the power to ask for exactly what we want but it also exposes data in a way that is more aligned with the way we think about data.
@@ -24,7 +24,7 @@ Together we have a look at the core problems that we are facing with the traditi
 
 After we have a better understanding of GraphQL, we explore how we can build a GraphQL API with Hot Chocolate on ASP.Net Core. We look at things like Prisma filters and how we can get your existing infrastructure under this new service layer. We merge data from different sources like you did not think was possible by using the power of the GraphQL resolver concept.
 
-HotChocolate and docs: https://hotchocolate.io
+HotChocolate and docs: <https://chillicream.com/docs/hotchocolate/>
 
 ### About the Presenter
 
@@ -32,4 +32,4 @@ Michael Staib is the author of the Hot Chocolate project a platform for building
 
 Michael loves all things .NET since it came out in 2002 and when GraphQL came out in 2015 he started putting these amazing technologies together. He enjoys sharing his knowledge by speaking at .NET user groups and international conferences. Moreover, Michael is blogging about GraphQL in .NET.
 
-Michael is a Microsoft MVP and you can follow him on Twitter https://twitter.com/michael_staib
+Michael is a Microsoft MVP and you can follow him on Twitter <https://twitter.com/michael_staib>

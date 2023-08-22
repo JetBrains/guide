@@ -8,12 +8,13 @@ author: dlsniper
 subtitle: Skip memorizing keyboard shortcuts and speed search for actions instead.
 seealso:
   - title: Navigating to Action
-    href: 'https://www.jetbrains.com/help/go/searching-everywhere.html#search_actions'
+    href: "https://www.jetbrains.com/help/go/searching-everywhere.html#search_actions"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=sO2usSKhPLo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=42
 ---
+
 **Find Action** allows you to search IDE actions, using speed typing. This way you can stop memorizing all the shortcuts and focus on what matters.
 
 **How to use:**

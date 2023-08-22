@@ -8,7 +8,7 @@ subtitle: >-
   Sometimes we want to check more than one value on an object. We can use `with`
   to do this.
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/i5Qu3qYOfsM?start=1834'
+video: "https://youtu.be/i5Qu3qYOfsM?start=1834"
 ---
 
 Let's look at one approach to testing multiple properties of a single object. We can change the previous test to the following:
@@ -29,6 +29,7 @@ Let's look at one approach to testing multiple properties of a single object. We
     }
 }
 ```
+
 We can use Spock's [with()](https://spockframework.org/spock/docs/2.0/all_in_one.html#_using_with_for_expectations) and a closure to check multiple values on the `polygon`. Inside this closure, we don't have to say `polygon.`, we just assert the property matches the expected value.
 
 Note that in this test the mock Renderer created in the `given` block is called `mockRenderer` - this is so that it's clear that the `renderer` in the `with` block is `polygon.renderer`, not the renderer from the test scope.

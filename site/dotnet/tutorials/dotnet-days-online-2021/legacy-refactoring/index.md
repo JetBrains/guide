@@ -10,7 +10,7 @@ topics:
 author: maartenba
 subtitle: Lorraine Steyn
 thumbnail: ./thumbnail.png
-video: 'https://youtu.be/VaeZW1RISAY'
+video: "https://youtu.be/VaeZW1RISAY"
 ---
 
 This will be a talk on strategies we have employed to "rescue" legacy code, and how you prevent your system from becoming the Big Ball of Mud. It's not code specific, but it is aimed at developers.
@@ -29,5 +29,5 @@ Lorraine founded the software development company Khanyisa Real Systems (KRS) in
 
 Lorraine has presented on such varied topics as Domain-Driven-Design, compassionate leadership, clean code and refactoring, women in tech, and many Agile topics dear to her heart (often based in XP practices).
 
-* Twitter: https://twitter.com/lor_krs
-* Blog: https://beingrealblog.wordpress.com/
+- Twitter: <https://twitter.com/lor_krs>
+- Blog: <https://beingrealblog.wordpress.com/>

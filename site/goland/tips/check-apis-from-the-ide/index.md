@@ -11,11 +11,12 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=zDCaWadGP74&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=16&t=0s
 ---
+
 **How to use:**
-Create a file with *.http* extension in your project. Then, type 
+Create a file with _.http_ extension in your project. Then, type
 the request you want to make.
 
-Finally, press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_ 
-and use the *Run "address"* action from the menu.
+Finally, press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_
+and use the _Run "address"_ action from the menu.
 
 <span class="tag is-rounded">New in 2021.1</span>

@@ -11,6 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=q4C9vALS4oc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=70
 ---
+
 GoLand offers the option to quickly generate a test.
 
 **How to use:**
