@@ -160,9 +160,6 @@ class ExplorePage {
 									<p class="menu-label">Content</p>
 									<ul class="menu-list">
 										<li>
-											<a href="/articles/">Articles</a>
-										</li>
-										<li>
 											<a href="/authors/">Authors</a>
 										</li>
 										<li>
