@@ -1,5 +1,5 @@
 replicaCount: 2
-env: "local"
+env: "stage"
 
 image:
   repository: registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-prod-nginx
