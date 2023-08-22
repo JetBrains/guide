@@ -11,6 +11,8 @@ spec:
       app: jetbrains-guide-{{.Release.Name}}-{{.Values.env}}
   template:
     metadata:
+      annotations:
+        rollme: {{ randAlphaNum 100 | quote }}
       labels:
         app: jetbrains-guide-{{.Release.Name}}-{{.Values.env}}
     spec:
