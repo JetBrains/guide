@@ -2,11 +2,11 @@ replicaCount: 2
 env: "local"
 
 image:
-  repository: guide
-  pullPolicy: Never
+  repository: registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-prod-nginx
+  pullPolicy: Always
   tag: "latest"
 
-imagePullSecrets: []
+imagePullSecrets: [{name: space-registry-jetbrains-guide}]
 
 podSecurityContext:
   runAsNonRoot: true
