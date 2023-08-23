@@ -25,7 +25,7 @@ Here's what you need to get started:
 * Work on a branch that you create based on `main`
 * Open it with any JetBrains IDE (we tested with [WebStorm](https://www.jetbrains.com/webstorm/) and [Fleet](https://www.jetbrains.com/fleet/))
 * Run an `npm install` to ensure all dependencies are available on your machine
-* Run any of the `Run ... Guide` run configurations to launch a specific Guide (top toolbar, see [web help for more info](https://www.jetbrains.com/help/webstorm/running-applications.html))
+* Run the `Run Guide` run configuration to launch the Guide (top toolbar, see [web help for more info](https://www.jetbrains.com/help/webstorm/running-applications.html))
 * Wait until the application is up and running
 * Connect the browser to `http://localhost:8080/`
 * Start authoring, and see reloads in the browser
