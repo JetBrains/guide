@@ -1,0 +1,28 @@
+{{- if .Values.ingressRequired }}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{.Release.Name}}-ingress
+  annotations:
+    cert-manager.io/cluster-issuer: {{.Values.certManagerClusterIssuer}}
+  labels:
+    env: {{.Values.env}}
+spec:
+  ingressClassName: {{.Values.ingressClassName}}
+  tls:
+  - secretName: {{.Values.hostName}}-labs-jb-gg-tls
+    hosts:
+    - {{.Values.hostName}}.labs.jb.gg
+  rules:
+  - host: {{.Values.hostName}}.labs.jb.gg
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: {{.Release.Name}}-jetbrains-guide-service
+            port:
+              number: {{.Values.service.port}}
+
+  {{- end }}

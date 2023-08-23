@@ -95,7 +95,7 @@ if (process.argv.length >= 3) {
 		}
 	}
 } else {
-	// Go with defaults
+	// use defaults
 	siteChecker.enqueue("https://www.jetbrains.com/dotnet/guide/");
 	siteChecker.enqueue("https://www.jetbrains.com/go/guide/");
 	siteChecker.enqueue("https://www.jetbrains.com/idea/guide/");

@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "node --require esbuild-register ./node_modules/@11ty/eleventy/cmd.js --config=./eleventy.config.js --serve --incremental",
-		"build": "node --require esbuild-register ./node_modules/@11ty/eleventy/cmd.js && npm run demos",
+		"build": "node --require esbuild-register ./node_modules/@11ty/eleventy/cmd.js --pathprefix=/guide && npm run demos",
 		"demos": "copyfiles -e './_site/dotnet' -f './site/dotnet/**/demos/*' -f false --verbose && copyfiles -e './_site/goland' -f './site/goland/**/demos/*' -f false --verbose && copyfiles -e './_site/intellij' -f './site/intellij/**/demos/*' -f false --verbose && copyfiles -e './_site/pycharm' -f './site/pycharm/**/demos/*' -f false --verbose && copyfiles -e './_site/webstorm' -f './site/webstorm/**/demos/*' -f false --verbose",
 		"clean": "rimraf _site .11ty-vite .assets-cache",
 		"test": "vitest run",

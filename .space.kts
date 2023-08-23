@@ -1,6 +1,6 @@
 import java.io.File
 
-val nodeJsContainerImage = "node:18-bullseye"
+val nodeJsContainerImage = "node:18-alpine"
 val jdkContainerImage = "amazoncorretto:17"
 
 job("Build Guide") {
@@ -129,7 +129,13 @@ fun Job.buildAndDeployStaging() {
         runTests()
         buildSite()
     }
-    deploySite()
+    parallel {
+        deploySite()
+        buildSiteDockerImage("Dockerfile",
+            imageName = "registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-dev-nginx",
+            copySiteFromShare = false,
+            pushToRegistry = false)
+    }
 }
 
 fun StepsScope.runLinkChecker(targetUrl: String) {
@@ -209,7 +215,9 @@ fun StepsScope.buildSite() {
                 cd ${'$'}cwd
 
                 ## Move site to share
-                cp -r _site/ /mnt/space/share
+                mkdir -p ${'$'}JB_SPACE_FILE_SHARE_PATH/_site
+                cp -r _site/ ${'$'}JB_SPACE_FILE_SHARE_PATH/_site
+                mv ${'$'}JB_SPACE_FILE_SHARE_PATH/_site/_site ${'$'}JB_SPACE_FILE_SHARE_PATH/_site/guide
             """.trimIndent()
         }
     }
@@ -232,6 +240,9 @@ fun StepsScope.deploySite() {
                     "unified-$cleanGitBranch"
                 }
 
+                File("/mnt/space/share/_site/index.html")
+                    .writeText("<html><body><a href=\"/guide\">Explore JetBrains Guides</a></body></html>")
+
                 api.space().experimentalApi.hosting.publishSite(
                         siteSource = "_site",
                         siteName = siteName,
@@ -241,6 +252,32 @@ fun StepsScope.deploySite() {
                                 description = "JetBrains Guide"
                         )
                 )
+            }
+        }
+    }
+}
+
+fun StepsScope.buildSiteDockerImage(dockerfile: String, imageName: String, copySiteFromShare: Boolean, pushToRegistry: Boolean) {
+    host(displayName = "Build application container") {
+        if (copySiteFromShare) {
+          	shellScript {
+                content = """
+                     ## Copy site from share
+                     mkdir -p _site
+                     cp -r ${'$'}JB_SPACE_FILE_SHARE_PATH/_site/ ./
+                """
+        	}
+        }
+
+        dockerBuildPush {
+            push = pushToRegistry
+            context = "."
+            file = dockerfile
+            labels["vendor"] = "JetBrains"
+
+            tags {
+                +"$imageName:0.0.${"$"}JB_SPACE_EXECUTION_NUMBER"
+                +"$imageName:latest"
             }
         }
     }

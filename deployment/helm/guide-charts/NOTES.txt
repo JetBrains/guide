@@ -1,0 +1,14 @@
+Hello, JetBrains Guide is successfully installed.
+
+1. Get the application URL by running these commands:
+
+{{- if contains "local" .Values.env }}
+  export NODE_PORT=$(kubectl get --namespace {{ .Release.Namespace }} -o jsonpath="{.spec.ports[0].nodePort}" services jetbrains-guide-service)
+  export NODE_IP=$(kubectl get nodes --namespace {{ .Release.Namespace }} -o jsonpath="{.items[0].status.addresses[0].address}")
+  NOTE: It may take a few seconds for the application to be available.
+  echo "Visit http://127.0.0.1:30004 to use your application"
+{{- else if contains "stage" .Values.env }}
+     echo "Visit https://jb-guide-staging.labs.jb.gg/guide/"
+{{- else if contains "prod" .Values.env }}
+  echo "URL is yet to come"
+{{- end }}

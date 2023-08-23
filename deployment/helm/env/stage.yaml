@@ -1,0 +1,44 @@
+replicaCount: 1
+env: "stage"
+
+image:
+  repository: registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-prod-nginx
+  pullPolicy: Always
+  tag: "latest"
+
+imagePullSecrets: [{name: space-registry-jetbrains-guide}]
+containerPort: 8080
+
+podSecurityContext:
+  runAsNonRoot: true
+  runAsUser: 101
+  runAsGroup: 101
+  fsGroup: 101
+
+securityContext:
+  allowPrivilegeEscalation: false
+  capabilities:
+    drop:
+      - ALL
+      - NET_RAW
+
+resources:
+  requests:
+    memory: "256Mi"
+    cpu: "250m"
+  limits:
+    memory: "512Mi"
+    cpu: "500m"
+
+guideRedirect: rewrite ^/product(.*)$ /guide/pycharm/tutorials/fastapi-aws-kubernetes/aws_eks/$1 redirect;
+
+
+service:
+  port: 5001
+  nodePort: 30004
+
+#Ingress
+ingressRequired: true
+hostName: jb-guide-staging
+certManagerClusterIssuer: letsencrypt-labs-jb-gg-dns
+ingressClassName: nginx

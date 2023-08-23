@@ -1,0 +1,45 @@
+replicaCount: 4
+env: "local"
+
+image:
+  repository: guide
+  pullPolicy: Never
+  tag: "latest"
+
+imagePullSecrets: []
+containerPort: 8080
+
+
+podSecurityContext:
+  runAsNonRoot: true
+  runAsUser: 101
+  runAsGroup: 101
+  fsGroup: 101
+
+securityContext:
+  allowPrivilegeEscalation: false
+  capabilities:
+    drop:
+      - ALL
+      - NET_RAW
+
+resources:
+  requests:
+    memory: "256Mi"
+    cpu: "250m"
+  limits:
+    memory: "512Mi"
+    cpu: "500m"
+
+guideRedirect: "rewrite ^/check$ /guide/pycharm/tutorials/fastapi-aws-kubernetes/aws_eks/$1 redirect;"
+
+#Service
+service:
+  port: 5000
+  nodePort: 30004
+
+#Ingress
+ingressRequired: false
+hostName:
+certManagerClusterIssuer:
+ingressClassName:
