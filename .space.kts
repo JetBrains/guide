@@ -1,6 +1,6 @@
 import java.io.File
 
-val nodeJsContainerImage = "node:18-bullseye"
+val nodeJsContainerImage = "node:18-alpine"
 val jdkContainerImage = "amazoncorretto:17"
 
 job("Build Guide") {
