@@ -6,7 +6,6 @@ import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
 import FeaturedResource from "../_includes/pageelements/FeaturedResource.11ty";
 import MultiColumnSection from "../_includes/pageelements/MultiColumnSection";
 import ListingSection from "../_includes/pageelements/ListingSection.11ty";
-import Icon from "../_includes/icons/Icon.11ty";
 
 type IndexPageProps = LayoutProps & PageFrontmatter;
 
