@@ -13,9 +13,9 @@ const frontmatter: ChannelFrontmatter = {
 	subtitle:
 		"Learn the ins and outs of remote development: virtualization, containers, dev containers, and cloud.",
 	resourceType: "channel",
-	date: new Date(Date.UTC(2020, 1, 11)),
+	date: new Date(Date.UTC(2023, 8, 23)),
 	author: "pwe",
-	thumbnail: "thumbnail.png",
+	thumbnail: "thumbnail.svg",
 	hero: "/assets/remote_development.svg",
 	subnav: [
 		{
