@@ -31,3 +31,7 @@ resources:
 
 guideRedirect: "rewrite ^/check$ /guide/pycharm/tutorials/fastapi-aws-kubernetes/aws_eks/$1 redirect;"
 
+#Ingress
+hostName: jb-guide-staging
+certManagerClusterIssuer: letsencrypt-labs-jb-gg-dns
+ingressClassName: nginx

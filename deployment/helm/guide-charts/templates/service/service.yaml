@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: jetbrains-guide-service
+  name: {{.Release.Name}}-jetbrains-guide-service
   labels:
     env: {{.Values.env}}
 spec:
