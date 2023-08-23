@@ -7,8 +7,8 @@ metadata:
 data:
   default.conf: |
     server {
-        listen       8080;
-        listen  [::]:8080;
+        listen       {{.Values.containerPort}};
+        listen  [::]:{{.Values.containerPort}};
         server_name  localhost;
 
         #access_log  /var/log/nginx/host.access.log  main;

@@ -9,6 +9,6 @@ spec:
   selector:
     app: jetbrains-guide-{{.Release.Name}}-{{.Values.env}}
   ports:
-  - port: 8080
-    targetPort: 8080
-    nodePort: 30004
+  - port: {{.Values.service.port}}
+    targetPort: {{.Values.containerPort}}
+    nodePort: {{.Values.service.nodePort}}

@@ -7,6 +7,8 @@ image:
   tag: "latest"
 
 imagePullSecrets: []
+containerPort: 8080
+
 
 podSecurityContext:
   runAsNonRoot: true
@@ -31,7 +33,13 @@ resources:
 
 guideRedirect: "rewrite ^/check$ /guide/pycharm/tutorials/fastapi-aws-kubernetes/aws_eks/$1 redirect;"
 
+#Service
+service:
+  port: 5000
+  nodePort: 30004
+
 #Ingress
-hostName: jb-guide-staging
-certManagerClusterIssuer: letsencrypt-labs-jb-gg-dns
-ingressClassName: nginx
+ingressRequired: false
+hostName:
+certManagerClusterIssuer:
+ingressClassName:
