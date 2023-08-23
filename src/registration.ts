@@ -79,13 +79,10 @@ export async function resolveAllCollections({
 
 	for (const { data, page } of allCollectionItems) {
 		const resourceType = getResourceType(data, page);
-		if (resourceType == undefined) {
-			throw new Error(`Missing resourceType for ${page.url}`);
-		}
+
 		try {
 			if (resourceCollections[data.resourceType!]) {
 				const resourceClass = resourceCollections[resourceType];
-				// @ts-ignore
 				const resource = await new resourceClass({
 					data,
 					page,
@@ -93,7 +90,6 @@ export async function resolveAllCollections({
 				intermediateResources.push(resource);
 			} else if (referenceCollections[data.resourceType!]) {
 				const referenceClass = referenceCollections[resourceType];
-				// @ts-ignore
 				const reference = await new referenceClass({
 					data,
 					page,
@@ -126,7 +122,10 @@ export async function resolveAllCollections({
 }
 
 export type ResolveReferenceProps = {
-	fieldName: string;
+	fieldName: Exclude<
+		keyof Resource,
+		"date" | "resolve" | "init" | "references"
+	>;
 	resource: Resource;
 	allReferences: ReferenceCollection;
 	allResources: ResourceCollection;
@@ -140,7 +139,6 @@ export function resolveReference({
 }: ResolveReferenceProps): ReferenceFrontmatter | ReferenceFrontmatter[] {
 	/* Return the matching reference or references  */
 
-	// @ts-ignore
 	const thisFieldValue = resource[fieldName];
 	if (!thisFieldValue) {
 		// Never ask for a reference field that doesn't exist on resource.

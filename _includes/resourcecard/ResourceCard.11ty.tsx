@@ -1,10 +1,10 @@
 import h, { JSX } from "vhtml";
-// @ts-ignore
 import ConsistentHash from "consistent-hash";
 import { Resource } from "../../src/ResourceModels";
 import { Topic } from "../references/topic/TopicModels";
 import TopicTag from "../references/topic/TopicTag.11ty";
 import { AuthorFrontmatter } from "../references/author/AuthorModels";
+import { References } from "../../src/ReferenceModels";
 
 const glowColorHashRing = new ConsistentHash({
 	range: 100003,
@@ -29,15 +29,24 @@ export type ResourceCardProps = {
 	orientation?: ResourceCardOrientation;
 };
 
-export const AuthorIcon = (author: AuthorFrontmatter) => (
+const lazyLoading = "lazy" as const;
+
+export const AuthorIcon = (
+	author: Pick<AuthorFrontmatter, "thumbnail" | "title">
+) => (
 	<img
 		src={author.thumbnail}
 		alt={author.title}
-		// @ts-ignore
-		loading="lazy"
+		loading={lazyLoading}
 		class="avatar"
 	/>
 );
+
+function doesExist(resource: References | undefined): asserts resource {
+	if (!resource) {
+		throw new Error("Resource does not exist");
+	}
+}
 
 const ResourceCard = ({
 	resource: {
@@ -51,7 +60,7 @@ const ResourceCard = ({
 	},
 	orientation,
 }: ResourceCardProps): JSX.Element => {
-	// @ts-ignore
+	doesExist(references);
 	const { author, topics } = references;
 
 	if (orientation == null || orientation == ResourceCardOrientation.Portrait) {

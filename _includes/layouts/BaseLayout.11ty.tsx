@@ -1,4 +1,3 @@
-// @ts-ignore
 import h, { JSX } from "vhtml";
 import Navbar from "../navbar/Navbar.11ty";
 import Footer from "../footer/Footer.11ty";
@@ -31,7 +30,6 @@ export function BaseLayout(
 	this: LayoutContext,
 	data: BaseLayoutProps
 ): JSX.Element {
-	// @ts-ignore
 	const { children, title, subtitle, video, resourceType, collections } = data;
 
 	// Happy DOM throws a DOMException for external script/css even though
@@ -39,12 +37,7 @@ export function BaseLayout(
 	// logs it. We can't handle the exception, and it pollutes the test output.
 	// Let's detect if we're running in a test, then later, wrap the
 	// <link> and <script> to suppress.
-	let isNotTest = true;
-	// @ts-ignore
-	if (typeof window != "undefined" && window.happyDOM) {
-		isNotTest = false;
-	}
-
+	let isNotTest = !(typeof window != "undefined" && !!(window as any).happyDOM);
 	// TODO This is a hack. Bake it into the contract.
 	const hasVideo = !!video || (!!resourceType && resourceType == "playlist");
 

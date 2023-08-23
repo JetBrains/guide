@@ -13,7 +13,6 @@ export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {
 		transformIndexHtml: (html) => {
 			const doc = parse(html);
 
-			// @ts-ignore
 			const anchors = doc.getElementsByTagName("a");
 			const links = doc.getElementsByTagName("link");
 

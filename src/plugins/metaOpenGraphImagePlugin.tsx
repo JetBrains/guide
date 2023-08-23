@@ -1,4 +1,3 @@
-// @ts-ignore
 import h, { JSX } from "vhtml";
 import { Plugin } from "vite";
 import { parse } from "node-html-parser";
@@ -48,11 +47,11 @@ export function MetaOpenGraphImage({
 		// siteUrl might already have a prefix,
 		// since we're dealing with assets, VITE will add the
 		// appropriate prefix, so we only need the root url
-		// @ts-ignore
+		const loading = "lazy" as const;
 		return (
 			<img
 				alt=""
-				lazy
+				loading={loading}
 				data-meta={getRootUrl(siteUrl)}
 				src={src}
 				style="display:none"

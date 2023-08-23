@@ -40,7 +40,7 @@ test("component jsx returns and image tag", () => {
 		<MetaOpenGraphImage siteUrl={`https://example.com`} src={`/card.png`} />
 	);
 	expect(html).to.be.equal(
-		`<img alt="" lazy="true" data-meta="https://example.com" src="/card.png" style="display:none">`
+		`<img alt="" loading="lazy" data-meta="https://example.com" src="/card.png" style="display:none">`
 	);
 });
 

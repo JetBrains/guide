@@ -8,7 +8,6 @@ export type AnimatedGifProps = {
 	style?: JSX.StyleHTMLAttributes;
 };
 
-// @ts-ignore
 const AnimatedGif = (animatedGif: AnimatedGifProps): JSX.Element => {
 	return animatedGif.file.endsWith(".webm") ? (
 		<VideoPlayer source={animatedGif.file} />

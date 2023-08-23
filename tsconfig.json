@@ -6,7 +6,6 @@
 		"jsxFragmentFactory": "h.Fragment",
 		"module": "es2022" /* Specify what module code is generated. */,
 		"forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
-
 		"useDefineForClassFields": true,
 		"lib": ["ESNext", "DOM"],
 		"moduleResolution": "Node",
@@ -27,7 +26,8 @@
 		"node_modules/vitest/globals.d.ts",
 		"site/*.tsx",
 		"site/**/index*.tsx",
-		"site/**/*Layout.tsx"
+		"site/**/*Layout.tsx",
+		"customTypes"
 	],
 	"exclude": ["site/**/demos/**"],
 	"ts-node": {

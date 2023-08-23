@@ -4,7 +4,6 @@ export type VideoPlayerProps = {
 	source: string | { url: string; start: number; end: number };
 };
 
-// @ts-ignore
 const VideoPlayer = ({ source }: VideoPlayerProps): JSX.Element => {
 	const { url, start, end } =
 		typeof source === "string"

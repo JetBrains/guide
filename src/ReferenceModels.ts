@@ -38,7 +38,7 @@ export async function getReference(
 }
 
 export type References = {
-	author: Reference;
+	author: Reference & { thumbnail: string };
 	channel?: Channel;
 	topics: Reference[];
 };
