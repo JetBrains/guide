@@ -131,11 +131,11 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
 		this.displayDate = displayDate;
 		if (data.thumbnail) {
 			if (data.thumbnail.startsWith("/")) {
-        // If absolute URL, just use it
-        this.thumbnail = data.thumbnail;
-      } else {
-        this.thumbnail = path.join(page.url, data.thumbnail);
-      }
+				// If absolute URL, just use it
+				this.thumbnail = data.thumbnail;
+			} else {
+				this.thumbnail = path.join(page.url, data.thumbnail);
+			}
 		}
 		this.tags = data.tags;
 		this.topics = data.topics;

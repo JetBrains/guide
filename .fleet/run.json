@@ -1,40 +1,40 @@
 {
-    "configurations": [
-        {
-            "name": "Run all tests",
-            "type": "command",
-            "program": "npm",
-            "args": ["run", "test"]
-        },
-        {
-            "name": "Run .NET Guide",
-            "type": "command",
-            "program": "npm",
-            "args": ["run", "dev:dotnet"]
-        },
-        {
-            "name": "Run GoLand Guide",
-            "type": "command",
-            "program": "npm",
-            "args": ["run", "dev:goland"]
-        },
-        {
-            "name": "Run IntelliJ Guide",
-            "type": "command",
-            "program": "npm",
-            "args": ["run", "dev:intellij"]
-        },
-        {
-            "name": "Run PyCharm Guide",
-            "type": "command",
-            "program": "npm",
-            "args": ["run", "dev:pycharm"]
-        },
-        {
-            "name": "Run WebStorm Guide",
-            "type": "command",
-            "program": "npm",
-            "args": ["run", "dev:webstorm"]
-        }
-    ]
+	"configurations": [
+		{
+			"name": "Run all tests",
+			"type": "command",
+			"program": "npm",
+			"args": ["run", "test"]
+		},
+		{
+			"name": "Run .NET Guide",
+			"type": "command",
+			"program": "npm",
+			"args": ["run", "dev:dotnet"]
+		},
+		{
+			"name": "Run GoLand Guide",
+			"type": "command",
+			"program": "npm",
+			"args": ["run", "dev:goland"]
+		},
+		{
+			"name": "Run IntelliJ Guide",
+			"type": "command",
+			"program": "npm",
+			"args": ["run", "dev:intellij"]
+		},
+		{
+			"name": "Run PyCharm Guide",
+			"type": "command",
+			"program": "npm",
+			"args": ["run", "dev:pycharm"]
+		},
+		{
+			"name": "Run WebStorm Guide",
+			"type": "command",
+			"program": "npm",
+			"args": ["run", "dev:webstorm"]
+		}
+	]
 }

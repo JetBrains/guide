@@ -11,9 +11,10 @@
 		"test": "vitest run",
 		"broken-link-checker": "node ./src/scanner.js",
 		"tools": "./tools/index.ts",
-		"lint": "",
-		"lint:fix": "eslint ./ --fix",
-		"prepare": "husky install"
+		"lint": "eslint ./site",
+		"lint:fix": "eslint ./site --fix",
+		"prepare": "husky install",
+		"format": "prettier --write --ignore-unknown ./"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^2.0.1",

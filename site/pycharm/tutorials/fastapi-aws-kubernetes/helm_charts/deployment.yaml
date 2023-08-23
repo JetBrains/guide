@@ -2,10 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ecommerce-deployment-{{ include "fastapi-helm.fullname" . }}
-  namespace: {{ .Release.Namespace }}
+  namespace: { { .Release.Namespace } }
   labels:
     app: ecommerce
-    version: {{ .Chart.AppVersion}}
+    version: { { .Chart.AppVersion } }
 spec:
   replicas: 8
   selector:
@@ -19,9 +19,12 @@ spec:
       initContainers:
         - name: init-postgres-service
           image: postgres:10.17
-          command: ['sh', '-c',
-            'until pg_isready -h postgres-service.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local -p 5432;
-          do echo waiting for database; sleep 2; done;']
+          command: [
+              "sh",
+              "-c",
+              "until pg_isready -h postgres-service.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local -p 5432;
+              do echo waiting for database; sleep 2; done;",
+            ]
       containers:
         - image: mukulmantosh/ecommerce-fastapi:latest
           imagePullPolicy: Always

@@ -76,11 +76,11 @@ The following view is located under `/Views/Widgets/Index.cshtml`.
 }
 
 <form method="post" asp-action="Create">
- <div class="form-group">
-  <label asp-for="Name"></label>
-  <input type="text" asp-for="Name" />
- </div>
- <button type="submit" class="btn btn-primary">Save</button>
+	<div class="form-group">
+		<label asp-for="Name"></label>
+		<input type="text" asp-for="Name" />
+	</div>
+	<button type="submit" class="btn btn-primary">Save</button>
 </form>
 ```
 

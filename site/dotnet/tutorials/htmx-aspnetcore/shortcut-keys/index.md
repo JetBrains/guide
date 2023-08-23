@@ -56,36 +56,36 @@ We've implemented this toast notification as a separate endpoint which calls an 
 ArgumentNullException.ThrowIfNull(Model); }
 
 <div
- id="toast"
- class="toast show"
- role="alert"
- aria-live="assertive"
- aria-atomic="true"
+	id="toast"
+	class="toast show"
+	role="alert"
+	aria-live="assertive"
+	aria-atomic="true"
 >
- <div class="toast-header bg-primary text-white">
-  <img src="~/img/joystick.svg" class="rounded me-2" alt="joystick" />
-  <strong class="me-auto">Help Is On The Way</strong>
-  <small>@DateTime.Now.ToLongTimeString()</small>
-  <button
-   type="button"
-   class="btn-close"
-   _="on click remove #toast"
-   aria-label="Close"
-  ></button>
- </div>
- <div class="toast-body">
-  <h4 class="card-title">Hello!</h4>
-  <p>How Can I Help? You seem to need some assitance.</p>
-  <hr />
-  <figure class="text-center">
-   <blockquote class="blockquote">
-    <p>@Model.Text</p>
-   </blockquote>
-   <figcaption class="blockquote-footer">
-    @Model.Author from <cite title="Forbes.com">Forbes.com</cite>
-   </figcaption>
-  </figure>
- </div>
+	<div class="toast-header bg-primary text-white">
+		<img src="~/img/joystick.svg" class="rounded me-2" alt="joystick" />
+		<strong class="me-auto">Help Is On The Way</strong>
+		<small>@DateTime.Now.ToLongTimeString()</small>
+		<button
+			type="button"
+			class="btn-close"
+			_="on click remove #toast"
+			aria-label="Close"
+		></button>
+	</div>
+	<div class="toast-body">
+		<h4 class="card-title">Hello!</h4>
+		<p>How Can I Help? You seem to need some assitance.</p>
+		<hr />
+		<figure class="text-center">
+			<blockquote class="blockquote">
+				<p>@Model.Text</p>
+			</blockquote>
+			<figcaption class="blockquote-footer">
+				@Model.Author from <cite title="Forbes.com">Forbes.com</cite>
+			</figcaption>
+		</figure>
+	</div>
 </div>
 ```
 

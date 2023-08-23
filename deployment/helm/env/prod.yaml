@@ -6,7 +6,7 @@ image:
   pullPolicy: Always
   tag: "latest"
 
-imagePullSecrets: [{name: space-registry-jetbrains-guide}]
+imagePullSecrets: [{ name: space-registry-jetbrains-guide }]
 containerPort: 8080
 
 podSecurityContext:
@@ -31,7 +31,6 @@ resources:
     cpu: "500m"
 
 guideRedirect: rewrite ^/product(.*)$ /guide/pycharm/tutorials/fastapi-aws-kubernetes/aws_eks/$1 redirect;
-
 
 service:
   port: 5002

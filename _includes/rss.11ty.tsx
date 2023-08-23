@@ -3,11 +3,11 @@ import path from "upath";
 import { encode } from "html-entities";
 
 export function RssLayout(this: LayoutContext, data: LayoutProps): string {
-  const { collections, page } = data;
+	const { collections, page } = data;
 
-  let items = "";
-  collections.allResources.forEach((page) => {
-    items += `<item>
+	let items = "";
+	collections.allResources.forEach((page) => {
+		items += `<item>
         <title>${encode(page.title, { level: "xml" })}</title>
         <link>${path.join(`https://www.jetbrains.com/guide`, page.url)}</link>
         <description>${encode(page.subtitle, { level: "xml" })}</description>
@@ -15,11 +15,11 @@ export function RssLayout(this: LayoutContext, data: LayoutProps): string {
         <author>${page.references?.author.title}</author>        
         <pubDate>${page.date.toUTCString()}</pubDate>        
       </item>`;
-  });
+	});
 
-  const copyright = `Copyright © 2000–2023 <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.`;
+	const copyright = `Copyright © 2000–2023 <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.`;
 
-  return `<?xml version="1.0" encoding="utf-8"?>
+	return `<?xml version="1.0" encoding="utf-8"?>
   <rss version="2.0">
     <channel>
       <title>JetBrains Guide</title>

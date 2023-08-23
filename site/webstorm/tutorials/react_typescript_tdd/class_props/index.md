@@ -43,11 +43,11 @@ import { render } from "@testing-library/react";
 import { Counter } from "./Counter";
 
 test("should render a label and counter", () => {
- const { getByTitle } = render(<Counter />);
- const label = getByTitle("Count Label");
- expect(label).toBeInTheDocument();
- const count = getByTitle("Current Count");
- expect(count).toBeInTheDocument();
+	const { getByTitle } = render(<Counter />);
+	const label = getByTitle("Count Label");
+	expect(label).toBeInTheDocument();
+	const count = getByTitle("Current Count");
+	expect(count).toBeInTheDocument();
 });
 ```
 
@@ -60,16 +60,16 @@ Now create a file `Counter.tsx`. We'll make it a very simple class to start:
 import React, { Component } from "react";
 
 export class Counter extends Component {
- render() {
-  return (
-   <div>
-    <span title="Count Label">Count</span>
-    <span id="counter" title="Current Count">
-     1
-    </span>
-   </div>
-  );
- }
+	render() {
+		return (
+			<div>
+				<span title="Count Label">Count</span>
+				<span id="counter" title="Current Count">
+					1
+				</span>
+			</div>
+		);
+	}
 }
 ```
 
@@ -94,9 +94,9 @@ Thus, let's add a test for the case of passing in a label:
 
 ```typescript
 test("should render a counter with custom label", () => {
- const { getByTitle } = render(<Counter label={`Current`} />);
- const label = getByTitle("Current Count");
- expect(label).toBeInTheDocument();
+	const { getByTitle } = render(<Counter label={`Current`} />);
+	const label = getByTitle("Current Count");
+	expect(label).toBeInTheDocument();
 });
 ```
 
@@ -128,17 +128,17 @@ Yes, and [a clever approach](https://react-typescript-cheatsheet.netlify.app/doc
 
 ```typescript
 export class Counter extends Component<CounterProps> {
- render() {
-  const { label = "Count" } = this.props;
-  return (
-   <div>
-    <span title="Count Label">{label}</span>
-    <span id="counter" title="Current Count">
-     1
-    </span>
-   </div>
-  );
- }
+	render() {
+		const { label = "Count" } = this.props;
+		return (
+			<div>
+				<span title="Count Label">{label}</span>
+				<span id="counter" title="Current Count">
+					1
+				</span>
+			</div>
+		);
+	}
 }
 ```
 
@@ -174,11 +174,11 @@ Let's change the `renders hello react` test in `App.test.tsx` to look for the la
 
 ```typescript
 test("renders hello react", () => {
- const { getByTitle, getByText } = render(<App />);
- const linkElement = getByText(/hello react/i);
- expect(linkElement).toBeInTheDocument();
- const label = getByTitle("Count Label");
- expect(label).toBeInTheDocument();
+	const { getByTitle, getByText } = render(<App />);
+	const linkElement = getByText(/hello react/i);
+	expect(linkElement).toBeInTheDocument();
+	const label = getByTitle("Count Label");
+	expect(label).toBeInTheDocument();
 });
 ```
 

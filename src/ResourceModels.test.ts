@@ -1,9 +1,9 @@
 import { expect, test } from "vitest";
 import {
-  BaseEntity,
-  BaseFrontmatter,
-  Resource,
-  ResourceFrontmatter,
+	BaseEntity,
+	BaseFrontmatter,
+	Resource,
+	ResourceFrontmatter,
 } from "./ResourceModels";
 // import fixtures from "../_includes/fixtures";
 import { rootPath } from "../_includes/config";
@@ -11,41 +11,41 @@ import { EleventyPage } from "./models";
 import fixtures from "../_includes/fixtures";
 
 const baseFrontmatter: BaseFrontmatter = {
-  resourceType: "tip",
-  title: "Some Tip",
+	resourceType: "tip",
+	title: "Some Tip",
 };
 const data: ResourceFrontmatter = {
-  ...baseFrontmatter,
-  author: "sa",
-  date: new Date(Date.UTC(2023, 1, 11)),
-  thumbnail: "thumbnail.png",
-  topics: ["st", "at", "sp", "ap"],
+	...baseFrontmatter,
+	author: "sa",
+	date: new Date(Date.UTC(2023, 1, 11)),
+	thumbnail: "thumbnail.png",
+	topics: ["st", "at", "sp", "ap"],
 };
 const page: EleventyPage = {
-  fileSlug: "some-tip",
-  url: "/tips/some-tip/",
-  inputPath: `${rootPath}/tips/some-tip/index.md`,
-  date: fixtures.date,
+	fileSlug: "some-tip",
+	url: "/tips/some-tip/",
+	inputPath: `${rootPath}/tips/some-tip/index.md`,
+	date: fixtures.date,
 };
 
 test("construct a BaseEntity", () => {
-  const baseEntity = new BaseEntity({ data: baseFrontmatter, page });
-  expect(baseEntity).to.exist;
+	const baseEntity = new BaseEntity({ data: baseFrontmatter, page });
+	expect(baseEntity).to.exist;
 });
 test("construct a Resource", () => {
-  const resource = new Resource({ data, page });
-  resource.init();
-  expect(resource).to.exist;
+	const resource = new Resource({ data, page });
+	resource.init();
+	expect(resource).to.exist;
 });
 
 test("get a class attribute from base class", () => {
-  expect(BaseEntity.frontmatterSchema).to.equal(BaseFrontmatter);
+	expect(BaseEntity.frontmatterSchema).to.equal(BaseFrontmatter);
 });
 test("get a class attribute from base class", () => {
-  expect(Resource.frontmatterSchema).to.equal(ResourceFrontmatter);
+	expect(Resource.frontmatterSchema).to.equal(ResourceFrontmatter);
 });
 
 test("get a friendly date display format", () => {
-  const resource = new Resource({ data, page });
-  expect(resource.displayDate).to.equal("2023-02-11");
+	const resource = new Resource({ data, page });
+	expect(resource.displayDate).to.equal("2023-02-11");
 });

@@ -1,4 +1,4 @@
-AWSTemplateFormatVersion: '2010-09-09'
+AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 Description: >
   ServerlessDemo
@@ -16,7 +16,7 @@ Globals:
 
 Resources:
   MyApi:
-    Type: 'AWS::Serverless::Api'
+    Type: "AWS::Serverless::Api"
     Properties:
       StageName: Prod
       Auth:
@@ -26,14 +26,14 @@ Resources:
             FunctionArn: !GetAtt JWTAuthFunction.Arn
 
   JWTAuthFunction:
-    Type: 'AWS::Serverless::Function'
+    Type: "AWS::Serverless::Function"
     Properties:
       CodeUri: organizations/user/
       Handler: authorizer.app.lambda_handler
       Runtime: python3.8
 
   OrganizationUserCreate:
-    Type: 'AWS::Serverless::Function'
+    Type: "AWS::Serverless::Function"
     Properties:
       CodeUri: organizations/user/
       Handler: create.app.lambda_handler
@@ -43,13 +43,13 @@ Resources:
           Type: Api
           Properties:
             RestApiId: !Ref MyApi
-            Path: '/user'
+            Path: "/user"
             Method: POST
             Auth:
               Authorizer: NONE
 
   OrganizationUserRead:
-    Type: 'AWS::Serverless::Function'
+    Type: "AWS::Serverless::Function"
     Properties:
       CodeUri: organizations/user/
       Handler: read.app.lambda_handler
@@ -59,12 +59,11 @@ Resources:
           Type: Api
           Properties:
             RestApiId: !Ref MyApi
-            Path: '/user'
+            Path: "/user"
             Method: GET
 
-
   OrganizationUserReadById:
-    Type: 'AWS::Serverless::Function'
+    Type: "AWS::Serverless::Function"
     Properties:
       CodeUri: organizations/user/
       Handler: read.app.lambda_handler
@@ -74,12 +73,11 @@ Resources:
           Type: Api
           Properties:
             RestApiId: !Ref MyApi
-            Path: '/user/{Id}'
+            Path: "/user/{Id}"
             Method: GET
 
-
   OrganizationUserUpdateById:
-    Type: 'AWS::Serverless::Function'
+    Type: "AWS::Serverless::Function"
     Properties:
       CodeUri: organizations/user/
       Handler: update.app.lambda_handler
@@ -89,12 +87,11 @@ Resources:
           Type: Api
           Properties:
             RestApiId: !Ref MyApi
-            Path: '/user/{Id}'
+            Path: "/user/{Id}"
             Method: PUT
 
-
   OrganizationUserDeleteById:
-    Type: 'AWS::Serverless::Function'
+    Type: "AWS::Serverless::Function"
     Properties:
       CodeUri: organizations/user/
       Handler: delete.app.lambda_handler
@@ -104,11 +101,11 @@ Resources:
           Type: Api
           Properties:
             RestApiId: !Ref MyApi
-            Path: '/user/{Id}'
+            Path: "/user/{Id}"
             Method: DELETE
 
   OrganizationUserLogin:
-    Type: 'AWS::Serverless::Function'
+    Type: "AWS::Serverless::Function"
     Properties:
       CodeUri: organizations/user/
       Handler: login.app.lambda_handler
@@ -118,14 +115,13 @@ Resources:
           Type: Api
           Properties:
             RestApiId: !Ref MyApi
-            Path: '/user/login'
+            Path: "/user/login"
             Method: POST
             Auth:
               Authorizer: NONE
 
-
   OrganizationRefreshToken:
-    Type: 'AWS::Serverless::Function'
+    Type: "AWS::Serverless::Function"
     Properties:
       CodeUri: organizations/user/
       Handler: login.app.token_refresh
@@ -135,5 +131,5 @@ Resources:
           Type: Api
           Properties:
             RestApiId: !Ref MyApi
-            Path: '/user/refresh-token'
+            Path: "/user/refresh-token"
             Method: POST

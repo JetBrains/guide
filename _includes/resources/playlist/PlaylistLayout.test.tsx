@@ -6,15 +6,15 @@ import { SiteCollections } from "../../models";
 import { screen } from "@testing-library/dom";
 
 test("should render PlaylistLayout", () => {
-  const playlist0 = fixtures.playlistItems[0];
-  const renderProps: PlaylistLayoutData = {
-    ...playlist0.data,
-    page: playlist0.page,
-    collections: fixtures.resolvedCollections as SiteCollections,
-    content: fixtures.content,
-    commandLineArgs: { pathprefix: "/pycharm/guide" },
-  };
-  document.body.innerHTML = PlaylistLayout.call(fixtures.context, renderProps);
-  const playlistItems = screen.getAllByRole("link", { name: "Playlist Item" });
-  expect(playlistItems.length).to.equal(1);
+	const playlist0 = fixtures.playlistItems[0];
+	const renderProps: PlaylistLayoutData = {
+		...playlist0.data,
+		page: playlist0.page,
+		collections: fixtures.resolvedCollections as SiteCollections,
+		content: fixtures.content,
+		commandLineArgs: { pathprefix: "/pycharm/guide" },
+	};
+	document.body.innerHTML = PlaylistLayout.call(fixtures.context, renderProps);
+	const playlistItems = screen.getAllByRole("link", { name: "Playlist Item" });
+	expect(playlistItems.length).to.equal(1);
 });
