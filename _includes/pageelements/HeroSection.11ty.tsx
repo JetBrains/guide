@@ -6,7 +6,6 @@ export type HeroSectionProps = {
 	subtitle: string;
 	subtitleExtraClass?: string;
 	image: string;
-	extraStyle?: string;
 };
 
 function HeroSection({
@@ -15,9 +14,8 @@ function HeroSection({
 	subtitle,
 	subtitleExtraClass,
 	image,
-	extraStyle = "",
 }: HeroSectionProps) {
-	const style = `background: url('${image}') center center; background-repeat: no-repeat; background-size: cover; ${extraStyle}`;
+	const style = `background: url('${image}') center center; background-repeat: no-repeat; background-size: cover`;
 	return (
 		<section class="hero is-medium" style={style}>
 			<div class="hero-body">
