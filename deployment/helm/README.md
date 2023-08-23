@@ -69,3 +69,36 @@ If you're using custom `redirects` for configuring NGINX
 ```bash
 helm install guide --set-file guideRedirect=<path-to-file>.conf -f env/prod.yaml ./guide-charts
 ```
+
+### Installing Specific Version
+
+For Example:
+
+```bash
+helm install my-mongodb bitnami/mongodb --version 8.3.1
+```
+
+- `my-mongodb` is the application name.
+- `bitnami/mongodb` is the repo name.
+- `8.3.1` is the chart version not the app version.
+
+For Guide
+
+```bash
+helm install jb-guide <SPACE_HELM_URL> --version <CHART_VERSION>
+```
+
+## Packaging Helm Charts
+
+Run the following command:
+
+```bash
+cd deployment/helm
+helm package guide-charts
+```
+
+A file will be created, which will look similar to this `guide-charts-0.1.0.tgz`
+
+## Publishing Helm Charts
+
+To publish Helm Charts to external registries like JetBrains Space, follow this [link](https://www.jetbrains.com/help/space/helm-charts.html#publishing-helm-charts-to-external-registries).
