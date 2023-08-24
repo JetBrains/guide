@@ -5,7 +5,7 @@ import { EleventyCollectionItem } from "../src/models";
 export type QueryFilter = {
 	channel?: string;
 	limit?: number;
-	resourceType?: string;
+	resourceTypes?: string[];
 	tag?: string;
 };
 
@@ -14,9 +14,9 @@ export function getResources(
 	filter: QueryFilter
 ): Resource[] | null {
 	let resources = allResourcesList;
-	const resourceType = filter && filter.resourceType;
-	if (resourceType) {
-		resources = resources.filter((r) => r.resourceType == resourceType);
+	const types = filter && filter.resourceTypes;
+	if (types) {
+		resources = resources.filter((r) => types.includes(r.resourceType!));
 	}
 
 	const tag = filter && filter.tag;
@@ -59,12 +59,13 @@ export function getReference(
 
 export function getReferences(
 	allReferencesList: ReferenceFrontmatter[],
-	{ resourceType }: QueryFilter
+	{ resourceTypes }: QueryFilter
 ): ReferenceFrontmatter[] | null {
 	let references = allReferencesList;
-
-	if (resourceType) {
-		references = references.filter((r) => r.resourceType == resourceType);
+	if (resourceTypes) {
+		references = references.filter((r) =>
+			resourceTypes.includes(r.resourceType!)
+		);
 	}
 
 	if (references.length == 0) {

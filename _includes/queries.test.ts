@@ -39,7 +39,7 @@ describe("getResources filtering", () => {
 	});
 
 	it("filters on resourceType", () => {
-		const filter: QueryFilter = { resourceType: "tip" };
+		const filter: QueryFilter = { resourceTypes: ["tip"] };
 		const result = getResources(resources, filter);
 		expect(result).to.have.length(3);
 	});
@@ -69,13 +69,17 @@ describe("getResources filtering", () => {
 	});
 
 	it("filters on resourceType and tag", () => {
-		const filter: QueryFilter = { resourceType: "tip", tag: "tag1" };
+		const filter: QueryFilter = { resourceTypes: ["tip"], tag: "tag1" };
 		const result = getResources(resources, filter);
 		expect(result).to.have.length(1);
 	});
 
 	it("filters on resourceType and tag and limit", () => {
-		const filter: QueryFilter = { resourceType: "tip", tag: "tag1", limit: 1 };
+		const filter: QueryFilter = {
+			resourceTypes: ["tip"],
+			tag: "tag1",
+			limit: 1,
+		};
 		const result = getResources(resources, filter);
 		expect(result).to.have.length(1);
 	});

@@ -11,7 +11,7 @@ export function TopicsLayout(
 	data: ReferenceLayoutProps
 ): JSX.Element {
 	const topics = this.getReferences({
-		resourceType: "topic",
+		resourceTypes: ["topic"],
 	}) as Topic[];
 
 	topics.sort((a, b) => {
