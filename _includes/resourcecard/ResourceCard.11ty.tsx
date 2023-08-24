@@ -75,7 +75,7 @@ const ResourceCard = ({
 
 		return (
 			<div class={`column ${columnCssClass}`}>
-				<div class="card is-equal-height has-box-hover is-shadowless">
+				<div class="card is-equal-height has-box-outline has-box-hover is-shadowless">
 					<div class="card-image">
 						<a href={url}>
 							<figure class={`image is-16by9 is-contained ${glowCssClass}`}>
@@ -130,7 +130,7 @@ const ResourceCard = ({
 
 		return (
 			<div class={`column ${columnCssClass}`}>
-				<div class="card is-equal-height">
+				<div class="card is-equal-height has-box-outline has-box-hover is-shadowless has-background-white-bis">
 					<div class="card-content">
 						<article class="media">
 							<figure class="media-left m-0 mr-4 is-hidden-mobile is-contained image is-128x128">
@@ -139,14 +139,20 @@ const ResourceCard = ({
 								</a>
 							</figure>
 							<div class="media-content">
-								<a class="title is-size-4" aria-label={`Resource`} href={url}>
-									{title}
-								</a>
-								{subtitle && <div class="content clamp-3">{subtitle}</div>}
+								<div class="has-position-relative">
+									<a
+										class="title is-size-4 is-stretched-link"
+										aria-label={`Resource`}
+										href={url}
+									>
+										{title}
+									</a>
+									{subtitle && <div class="content clamp-3">{subtitle}</div>}
+								</div>
 
 								<footer>
 									<div>
-										<div class="tags mb-2">
+										<div class="tags my-2">
 											{topics.map((topic: Topic) => (
 												<TopicTag topic={topic} />
 											))}
