@@ -125,7 +125,7 @@ class DotNetHomepage {
 				)}
 				{eventPlaylists && (
 					<ListingSection
-						title={`JetBrains .NET events`}
+						title={`JetBrains .NET Events`}
 						resources={eventPlaylists}
 						separator={true}
 					/>
