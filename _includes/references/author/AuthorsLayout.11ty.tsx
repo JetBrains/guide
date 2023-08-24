@@ -12,7 +12,7 @@ export function AuthorsLayout(
 ): JSX.Element {
 	const { content } = data;
 	const authors = this.getReferences({
-		resourceType: "author",
+		resourceTypes: ["author"],
 	}) as Author[];
 	authors.sort((a, b) => {
 		const aTitle = a.title.toLowerCase();

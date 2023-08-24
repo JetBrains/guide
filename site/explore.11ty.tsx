@@ -19,7 +19,10 @@ class ExplorePage {
 	}
 
 	render(this: LayoutContext, data: ExplorePageProps): JSX.Element {
-		const latestContent = this.getResources({ limit: 12 });
+		const latestContent = this.getResources({
+			resourceTypes: ["tip", "tutorial", "playlist"],
+			limit: 12,
+		});
 
 		return (
 			<BaseLayout {...data}>
