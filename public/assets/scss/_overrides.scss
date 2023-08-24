@@ -26,11 +26,12 @@ footer.pagefooter svg {
 .card.is-equal-height .card-footer {
   margin-top: auto
 }
+.has-box-outline {
+  outline: 1px solid $grey-lighter;
+}
 .has-box-hover {
-  outline: 1px solid $grey-light;
-
   &:hover {
-    outline: 1px solid $grey;
+    outline: 1px solid $grey-light;
   }
 }
 .menu-list.on-this-page a {
