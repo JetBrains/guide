@@ -27,8 +27,10 @@ footer.pagefooter svg {
   margin-top: auto
 }
 .has-box-hover {
+  outline: 1px solid $grey-light;
+
   &:hover {
-    outline: 1px solid $grey-light;
+    outline: 1px solid $grey;
   }
 }
 .menu-list.on-this-page a {
@@ -73,6 +75,38 @@ a.navbar-item:focus-within {
 
 /* Fix Bulma + Prism conflicts */
 .token.number, .token.tag { all: inherit; }
+
+/* Clamp (inspired by https://blog.jetbrains.com/) */
+.clamp-1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+}
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+.clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+}
+.clamp-4 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+}
+.clamp-5 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+}
 
 /* Inspired by https://getbootstrap.com/docs/5.3/helpers/stretched-link/ */
 .has-position-relative {
