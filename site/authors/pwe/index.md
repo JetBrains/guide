@@ -5,7 +5,7 @@ thumbnail: ./pwe.jpg
 obsoletes:
   - /dotnet/authors/pwe/
   - /goland/authors/pwe/
-  - /intellij/authors/pwe/
+  - /idea/authors/pwe/
   - /pycharm/authors/pwe/
   - /webstorm/authors/pwe/
 ---

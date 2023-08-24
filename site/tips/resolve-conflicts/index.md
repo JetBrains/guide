@@ -13,7 +13,7 @@ cardThumbnail: ./card.png
 obsoletes:
   - /dotnet/tips/resolve-conflicts/
   - /goland/tips/resolve-conflicts/
-  - /intellij/tips/resolve-conflicts/
+  - /idea/tips/resolve-conflicts/
   - /pycharm/tips/resolve-conflicts/
   - /webstorm/tips/resolve-conflicts/
 video: "https://www.youtube.com/watch?v=mSfq1SoMocg"

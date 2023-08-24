@@ -5,7 +5,7 @@ accent: primary
 icon: fas fa-globe
 obsoletes:
   - /dotnet/topics/web/
-  - /intellij/topics/web/
+  - /idea/topics/web/
   - /pycharm/topics/web/
 ---
 

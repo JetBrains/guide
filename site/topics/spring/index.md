@@ -8,5 +8,5 @@ logo: spring.png
 website: "https://spring.io/"
 topicType: technology
 obsoletes:
-  - /intellij/topics/spring/
+  - /idea/topics/spring/
 ---

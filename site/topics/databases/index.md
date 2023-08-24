@@ -7,7 +7,7 @@ website: "https://jetbrains.com/datagrip"
 topicType: technology
 obsoletes:
   - /goland/topics/databases/
-  - /intellij/databases/
+  - /idea/databases/
 ---
 
 Many projects work with relational databases and many of our IDEs make

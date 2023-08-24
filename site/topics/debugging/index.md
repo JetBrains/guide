@@ -6,7 +6,7 @@ icon: fas fa-bug
 obsoletes:
   - /dotnet/topics/debugging/
   - /goland/topics/debugging/
-  - /intellij/topics/debugging/
+  - /idea/topics/debugging/
   - /pycharm/topics/debugging/
 ---
 

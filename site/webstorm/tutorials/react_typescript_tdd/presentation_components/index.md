@@ -35,8 +35,8 @@ Also, the dumb child component will no longer decide the starting value, so remo
 
 ```typescript {3}
 export type CounterProps = {
- label?: string;
- count: number;
+	label?: string;
+	count: number;
 };
 ```
 
@@ -50,17 +50,17 @@ Let's change `<Counter/>` to an SFC:
 
 ```typescript
 export const Counter = ({ label = "Count", count }: CounterProps) => {
- return (
-  <div
-   className="counter"
-   // onClick={handleClick}
-  >
-   <span title="Count Label">{label}</span>
-   <span id="counter" title="Current Count">
-    {count}
-   </span>
-  </div>
- );
+	return (
+		<div
+			className="counter"
+			// onClick={handleClick}
+		>
+			<span title="Count Label">{label}</span>
+			<span id="counter" title="Current Count">
+				{count}
+			</span>
+		</div>
+	);
 };
 ```
 
@@ -71,17 +71,17 @@ Let's fix the first two tests in `Counter.test.tsx`, to see if we are in the bal
 
 ```typescript {2,10}
 test("should render a label and counter", () => {
- const { getByTitle } = render(<Counter count={0} />);
- const label = getByTitle("Count Label");
- expect(label).toBeInTheDocument();
- const count = getByTitle("Current Count");
- expect(count).toBeInTheDocument();
+	const { getByTitle } = render(<Counter count={0} />);
+	const label = getByTitle("Count Label");
+	expect(label).toBeInTheDocument();
+	const count = getByTitle("Current Count");
+	expect(count).toBeInTheDocument();
 });
 
 test("should render a counter with custom label", () => {
- const { getByTitle } = render(<Counter label={`Current`} count={0} />);
- const label = getByTitle("Current Count");
- expect(label).toBeInTheDocument();
+	const { getByTitle } = render(<Counter label={`Current`} count={0} />);
+	const label = getByTitle("Current Count");
+	expect(label).toBeInTheDocument();
 });
 ```
 
@@ -105,9 +105,9 @@ First, since this click handler function will come in as a prop, we need to chan
 
 ```typescript {4}
 export type CounterProps = {
- label?: string;
- count: number;
- onCounterIncrease: (event: React.MouseEvent<HTMLElement>) => void;
+	label?: string;
+	count: number;
+	onCounterIncrease: (event: React.MouseEvent<HTMLElement>) => void;
 };
 ```
 
@@ -117,18 +117,18 @@ Next, use ES6 object destructuring to "unpack" that from the props into the loca
 
 ```typescript
 export const Counter = ({
- label = "Count",
- count,
- onCounterIncrease,
+	label = "Count",
+	count,
+	onCounterIncrease,
 }: CounterProps) => {
- return (
-  <div className="counter" onClick={onCounterIncrease}>
-   <span title="Count Label">{label}</span>
-   <span id="counter" title="Current Count">
-    {count}
-   </span>
-  </div>
- );
+	return (
+		<div className="counter" onClick={onCounterIncrease}>
+			<span title="Count Label">{label}</span>
+			<span id="counter" title="Current Count">
+				{count}
+			</span>
+		</div>
+	);
 };
 ```
 
@@ -143,7 +143,7 @@ For example, in the first test:
 ```typescript
 const handler = jest.fn();
 const { getByTitle } = render(
- <Counter count={0} onCounterIncrease={handler} />
+	<Counter count={0} onCounterIncrease={handler} />
 );
 ```
 
@@ -154,23 +154,23 @@ Do this for both tests:
 
 ```typescript {2,4,13,15}
 test("should render a label and counter", () => {
- const handler = jest.fn();
- const { getByTitle } = render(
-  <Counter count={0} onCounterIncrease={handler} />
- );
- const label = getByTitle("Count Label");
- expect(label).toBeInTheDocument();
- const count = getByTitle("Current Count");
- expect(count).toBeInTheDocument();
+	const handler = jest.fn();
+	const { getByTitle } = render(
+		<Counter count={0} onCounterIncrease={handler} />
+	);
+	const label = getByTitle("Count Label");
+	expect(label).toBeInTheDocument();
+	const count = getByTitle("Current Count");
+	expect(count).toBeInTheDocument();
 });
 
 test("should render a counter with custom label", () => {
- const handler = jest.fn();
- const { getByTitle } = render(
-  <Counter label={`Current`} count={0} onCounterIncrease={handler} />
- );
- const label = getByTitle("Current Count");
- expect(label).toBeInTheDocument();
+	const handler = jest.fn();
+	const { getByTitle } = render(
+		<Counter label={`Current`} count={0} onCounterIncrease={handler} />
+	);
+	const label = getByTitle("Current Count");
+	expect(label).toBeInTheDocument();
 });
 ```
 
@@ -183,13 +183,13 @@ Let's change the third test and _delete_ the last test:
 
 ```typescript
 test("should call the incrementer function", () => {
- const handler = jest.fn();
- const { getByTitle } = render(
-  <Counter count={0} onCounterIncrease={handler} />
- );
- const counter = getByTitle("Current Count");
- fireEvent.click(counter);
- expect(handler).toBeCalledTimes(1);
+	const handler = jest.fn();
+	const { getByTitle } = render(
+		<Counter count={0} onCounterIncrease={handler} />
+	);
+	const counter = getByTitle("Current Count");
+	fireEvent.click(counter);
+	expect(handler).toBeCalledTimes(1);
 });
 ```
 
@@ -209,9 +209,9 @@ Our callback will be called _not_ with the raw event, but with a _boolean_ for t
 
 ```typescript {4}
 export type CounterProps = {
- label?: string;
- count: number;
- onCounterIncrease: (isShift: boolean) => void;
+	label?: string;
+	count: number;
+	onCounterIncrease: (isShift: boolean) => void;
 };
 ```
 
@@ -222,21 +222,21 @@ Our functional component gains a local arrow function which does the extraction 
 
 ```typescript
 export const Counter: FC<CounterProps> = ({
- label = "Count",
- count,
- onCounterIncrease,
+	label = "Count",
+	count,
+	onCounterIncrease,
 }: CounterProps) => {
- const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-  onCounterIncrease(event.shiftKey);
- };
- return (
-  <div className="counter" onClick={handleClick}>
-   <span title="Count Label">{label}</span>
-   <span id="counter" title="Current Count">
-    {count}
-   </span>
-  </div>
- );
+	const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+		onCounterIncrease(event.shiftKey);
+	};
+	return (
+		<div className="counter" onClick={handleClick}>
+			<span title="Count Label">{label}</span>
+			<span id="counter" title="Current Count">
+				{count}
+			</span>
+		</div>
+	);
 };
 ```
 
@@ -244,13 +244,13 @@ Our third test can now change, to see if our "spy" was called with a boolean ins
 
 ```typescript {8}
 test("should call the incrementer function", () => {
- const handler = jest.fn();
- const { getByTitle } = render(
-  <Counter count={0} onCounterIncrease={handler} />
- );
- const counter = getByTitle("Current Count");
- fireEvent.click(counter);
- expect(handler).toBeCalledWith(false);
+	const handler = jest.fn();
+	const { getByTitle } = render(
+		<Counter count={0} onCounterIncrease={handler} />
+	);
+	const counter = getByTitle("Current Count");
+	fireEvent.click(counter);
+	expect(handler).toBeCalledWith(false);
 });
 ```
 
@@ -291,8 +291,8 @@ This arrow function will be the handler that's passed into `<Counter/>`.
 
 ```typescript
 increment = (isShift: boolean) => {
- const inc: number = isShift ? 10 : 1;
- this.setState({ count: this.state.count + inc });
+	const inc: number = isShift ? 10 : 1;
+	this.setState({ count: this.state.count + inc });
 };
 ```
 
@@ -330,19 +330,19 @@ import userEvent from "@testing-library/user-event";
 // ...
 
 test("updates state when increment is called without shift", () => {
- const { getByTitle } = render(<App />);
- const counter = getByTitle("Current Count");
- expect(counter).toHaveTextContent("0");
- userEvent.click(counter);
- expect(counter).toHaveTextContent("1");
+	const { getByTitle } = render(<App />);
+	const counter = getByTitle("Current Count");
+	expect(counter).toHaveTextContent("0");
+	userEvent.click(counter);
+	expect(counter).toHaveTextContent("1");
 });
 
 test("updates state when increment is called with shift", () => {
- const { getByTitle } = render(<App />);
- const counter = getByTitle("Current Count");
- expect(counter).toHaveTextContent("0");
- userEvent.click(counter, { shiftKey: true });
- expect(counter).toHaveTextContent("10");
+	const { getByTitle } = render(<App />);
+	const counter = getByTitle("Current Count");
+	expect(counter).toHaveTextContent("0");
+	userEvent.click(counter, { shiftKey: true });
+	expect(counter).toHaveTextContent("10");
 });
 ```
 

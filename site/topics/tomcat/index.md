@@ -7,5 +7,5 @@ logo: apache-tomcat-logo.svg
 website: "https://tomcat.apache.org/"
 topicType: technology
 obsoletes:
-  - /intellij/topics/tomcat/
+  - /idea/topics/tomcat/
 ---

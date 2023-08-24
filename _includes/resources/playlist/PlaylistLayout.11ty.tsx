@@ -2,7 +2,7 @@ import h, { JSX } from "vhtml";
 import { Playlist, PlaylistFrontmatter } from "./PlaylistModels";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import VideoPlayer from "../../video/VideoPlayer.11ty";
-import { parse } from "node-html-parser";
+import { parse, HTMLElement } from "node-html-parser";
 import path from "upath";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
@@ -17,12 +17,10 @@ function relativize(originalUrl: string, content: string) {
 	const prefix = originalUrl; //`../../${originalUrl}`;
 	const doc = parse(content);
 
-	// @ts-ignore
 	const anchors = doc.getElementsByTagName("a");
 	const imgs = doc.getElementsByTagName("img");
 
 	function rewriteAttribute(element: HTMLElement, attribute: string) {
-		// @ts-ignore
 		const href = element.attrs[attribute];
 		// no value
 		if (!href) return;
@@ -34,7 +32,7 @@ function relativize(originalUrl: string, content: string) {
 		if (href.startsWith(".") && !href.startsWith("../")) return;
 		// root link
 		if (href.startsWith("/")) return;
-		// anchor link
+		//anchor link
 		if (href.startsWith("#")) return;
 		// ignore VITE ASSETS
 		if (href.startsWith("__VITE_ASSET__")) return;
@@ -45,12 +43,10 @@ function relativize(originalUrl: string, content: string) {
 	}
 
 	anchors.forEach((element) => {
-		// @ts-ignore
 		rewriteAttribute(element, "href");
 	});
 
 	imgs.forEach((element) => {
-		// @ts-ignore
 		rewriteAttribute(element, "src");
 	});
 

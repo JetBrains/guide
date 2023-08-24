@@ -6,7 +6,7 @@ icon: fas fa-chart-bar
 obsoletes:
   - /dotnet/topics/testing/
   - /goland/topics/testing/
-  - /intellij/topics/testing/
+  - /idea/topics/testing/
   - /pycharm/topics/testing/
   - /webstorm/topics/testing/
 ---

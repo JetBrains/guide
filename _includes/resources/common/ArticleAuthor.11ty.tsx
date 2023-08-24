@@ -4,37 +4,37 @@ import { Reference } from "../../../src/ReferenceModels";
 import { AuthorIcon } from "../../resourcecard/ResourceCard.11ty";
 
 export type ArticleAuthorProps = {
-  author: Author | Reference;
-  displayDate: string;
+	author: Author | Reference;
+	displayDate: string;
 };
 
 const ArticleTitleSubtitle = ({
-  author,
-  displayDate,
+	author,
+	displayDate,
 }: ArticleAuthorProps): JSX.Element => {
-  return (
-    <article class="media author mb-4">
-      {author instanceof Author && (
-        <div class="p-2 is-32x32 media-left">
-          <a href={author.url}>
-            <figure class="image is-32x32 m-0">
-              <AuthorIcon {...author} />
-            </figure>
-          </a>
-        </div>
-      )}
-      <div class="media-content">
-        <div class="content">
-          <p class="m-0">
-            <a href={author.url}>{author.title}</a>
-          </p>
-          <time class="m-0 has-text-grey-dark" datetime={displayDate}>
-            {displayDate}
-          </time>
-        </div>
-      </div>
-    </article>
-  );
+	return (
+		<article class="media author mb-4">
+			{author instanceof Author && (
+				<div class="p-2 is-32x32 media-left">
+					<a href={author.url}>
+						<figure class="image is-32x32 m-0">
+							<AuthorIcon {...author} />
+						</figure>
+					</a>
+				</div>
+			)}
+			<div class="media-content">
+				<div class="content">
+					<p class="m-0">
+						<a href={author.url}>{author.title}</a>
+					</p>
+					<time class="m-0 has-text-grey-dark" datetime={displayDate}>
+						{displayDate}
+					</time>
+				</div>
+			</div>
+		</article>
+	);
 };
 
 export default ArticleTitleSubtitle;

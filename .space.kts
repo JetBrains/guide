@@ -13,6 +13,7 @@ job("Run lint") {
             enabled = true
 
             branchFilter {
+                -"refs/deploys/*"
                 -"refs/merge/*"
                 -"refs/pull/*"
             }
@@ -27,6 +28,7 @@ job("Run tests") {
             enabled = true
 
             branchFilter {
+                -"refs/deploys/*"
                 -"refs/merge/*"
                 -"refs/pull/*"
             }
@@ -62,6 +64,7 @@ job("Remote development images") {
 
             branchFilter {
                 +"refs/heads/main"
+                -"refs/deploys/*"
                 -"refs/merge/*"
                 -"refs/pull/*"
             }
@@ -105,6 +108,7 @@ fun Job.buildAndDeployStaging() {
             enabled = true
 
             branchFilter {
+                -"refs/deploys/*"
                 -"refs/merge/*"
                 -"refs/pull/*"
             }

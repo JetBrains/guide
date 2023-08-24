@@ -5,3 +5,4 @@ _site
 docs
 node_modules
 public
+**/*.yaml

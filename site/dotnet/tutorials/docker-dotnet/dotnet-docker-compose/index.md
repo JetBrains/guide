@@ -99,17 +99,17 @@ Finally, let's add a connection string to our yet-to-be-created database instanc
 
 ```json
 {
- "Logging": {
-  "LogLevel": {
-   "Default": "Information",
-   "Microsoft": "Warning",
-   "Microsoft.Hosting.Lifetime": "Information"
-  }
- },
- "AllowedHosts": "*",
- "ConnectionStrings": {
-  "mssql": "Server=mssql;Database=master;User Id=sa;Password=Pass123!;"
- }
+	"Logging": {
+		"LogLevel": {
+			"Default": "Information",
+			"Microsoft": "Warning",
+			"Microsoft.Hosting.Lifetime": "Information"
+		}
+	},
+	"AllowedHosts": "*",
+	"ConnectionStrings": {
+		"mssql": "Server=mssql;Database=master;User Id=sa;Password=Pass123!;"
+	}
 }
 ```
 

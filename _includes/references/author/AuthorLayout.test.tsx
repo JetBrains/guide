@@ -6,18 +6,18 @@ import fixtures, { baseRenderData } from "../../fixtures";
 import { ReferenceLayoutProps } from "../../layouts/ReferenceLayout.11y";
 
 test("should render AuthorLayout", () => {
-  const renderProps: ReferenceLayoutProps = {
-    ...baseRenderData,
-    ...fixtures.authorItems[0].data,
-    page: fixtures.authorItems[0].page,
-    listing: [""],
-  };
-  document.body.innerHTML = AuthorLayout.call(fixtures.context, renderProps);
-  const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
-    name: "Resource",
-  });
-  expect(links.length).to.equal(10);
-  expect(links[5].href).to.equal(
-    "/tutorials/some-tutorial/third-tutorialstep/"
-  );
+	const renderProps: ReferenceLayoutProps = {
+		...baseRenderData,
+		...fixtures.authorItems[0].data,
+		page: fixtures.authorItems[0].page,
+		listing: [""],
+	};
+	document.body.innerHTML = AuthorLayout.call(fixtures.context, renderProps);
+	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
+		name: "Resource",
+	});
+	expect(links.length).to.equal(10);
+	expect(links[5].href).to.equal(
+		"/tutorials/some-tutorial/third-tutorialstep/"
+	);
 });

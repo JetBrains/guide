@@ -47,12 +47,12 @@ playlistItems:
   - /pycharm/tips/run-single-test/
   - /pycharm/tips/auto-run-tests/
   - /pycharm/tips/spot-coverage-in-gutter/
-  - /pycharm/tips/local-history/
+  - /tips/local-history/
   - /pycharm/tips/create-project-from-github/
   - /pycharm/tips/put-project-under-vcs/
-  - /pycharm/tips/reword-commit-message/
-  - /pycharm/tips/undo-last-commit/
-  - /pycharm/tips/partial-commit/
+  - /tips/reword-commit-message/
+  - /tips/undo-last-commit/
+  - /tips/partial-commit/
   - /pycharm/tips/run-npm-scripts/
   - /pycharm/tips/wrap-selection-with-tag/
   - /pycharm/tips/create-sqlite-connection/

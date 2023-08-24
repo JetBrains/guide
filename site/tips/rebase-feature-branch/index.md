@@ -15,7 +15,7 @@ video: "https://www.youtube.com/watch?v=cFlulVc7Y1Q"
 obsoletes:
   - /dotnet/tips/rebase-feature-branch/
   - /goland/tips/rebase-feature-branch/
-  - /intellij/tips/rebase-feature-branch/
+  - /idea/tips/rebase-feature-branch/
   - /pycharm/tips/rebase-feature-branch/
   - /webstorm/tips/rebase-feature-branch/
 ---

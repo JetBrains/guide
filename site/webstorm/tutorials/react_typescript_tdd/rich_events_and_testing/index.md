@@ -45,11 +45,11 @@ import { render, fireEvent } from "@testing-library/react";
 // ...
 
 test("should increment the count by one", () => {
- const { getByTitle } = render(<Counter />);
- const counter = getByTitle("Current Count");
- expect(counter).toHaveTextContent("0");
- fireEvent.click(counter);
- expect(counter).toHaveTextContent("1");
+	const { getByTitle } = render(<Counter />);
+	const counter = getByTitle("Current Count");
+	expect(counter).toHaveTextContent("0");
+	fireEvent.click(counter);
+	expect(counter).toHaveTextContent("1");
 });
 ```
 
@@ -73,11 +73,11 @@ Let's head to `Counter.tsx` and add a click handler on the `<span>`:
 
 ```typescript
 <span
- id="counter"
- title="Current Count"
- onClick={() => this.setState({ count: this.state.count + 1 })}
+	id="counter"
+	title="Current Count"
+	onClick={() => this.setState({ count: this.state.count + 1 })}
 >
- {this.state.count}
+	{this.state.count}
 </span>
 ```
 
@@ -118,7 +118,7 @@ Let's add it in:
 
 ```typescript
 incrementCounter = (event) => {
- this.setState({ count: this.state.count + 1 });
+	this.setState({ count: this.state.count + 1 });
 };
 ```
 
@@ -133,7 +133,7 @@ That's easy enough to solve:
 
 ```typescript
 incrementCounter = (event: any) => {
- this.setState({ count: this.state.count + 1 });
+	this.setState({ count: this.state.count + 1 });
 };
 ```
 
@@ -144,7 +144,7 @@ Let's put the correct typing on the argument:
 
 ```typescript
 incrementCounter = (event: React.MouseEvent<HTMLElement>) => {
- this.setState({ count: this.state.count + 1 });
+	this.setState({ count: this.state.count + 1 });
 };
 ```
 
@@ -155,8 +155,8 @@ First, in`incrementCounter`, let's determine the value to increment by, first as
 
 ```typescript {2,3}
 incrementCounter = (event: React.MouseEvent<HTMLElement>) => {
- const inc = 10 ? event.shiftKey : 1;
- this.setState({ count: this.state.count + inc });
+	const inc = 10 ? event.shiftKey : 1;
+	this.setState({ count: this.state.count + inc });
 };
 ```
 
@@ -211,11 +211,11 @@ Clone the last test and change it to the following:
 
 ```typescript
 test("should increment the count by ten", () => {
- const { getByTitle } = render(<Counter />);
- const counter = getByTitle("Current Count");
- expect(counter).toHaveTextContent("0");
- userEvent.click(counter, { shiftKey: true });
- expect(counter).toHaveTextContent("10");
+	const { getByTitle } = render(<Counter />);
+	const counter = getByTitle("Current Count");
+	expect(counter).toHaveTextContent("0");
+	userEvent.click(counter, { shiftKey: true });
+	expect(counter).toHaveTextContent("10");
 });
 ```
 

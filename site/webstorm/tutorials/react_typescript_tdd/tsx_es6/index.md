@@ -40,9 +40,9 @@ import { render } from "@testing-library/react";
 import App from "./App";
 
 test("renders hello react", () => {
- const { getByText } = render(<App />);
- const linkElement = getByText(/hello react/i);
- expect(linkElement).toBeInTheDocument();
+	const { getByText } = render(<App />);
+	const linkElement = getByText(/hello react/i);
+	expect(linkElement).toBeInTheDocument();
 });
 ```
 
@@ -52,11 +52,11 @@ Also, our component in `App.tsx`:
 import React from "react";
 
 function App() {
- return (
-  <div>
-   <h1>Hello React</h1>
-  </div>
- );
+	return (
+		<div>
+			<h1>Hello React</h1>
+		</div>
+	);
 }
 
 export default App;
@@ -78,9 +78,9 @@ In `App.test.tsx`, let's add a test for what will be our new component:
 
 ```typescript
 test("renders heading", () => {
- const { getByText } = render(<Heading />);
- const linkElement = getByText(/hello react/i);
- expect(linkElement).toBeInTheDocument();
+	const { getByText } = render(<Heading />);
+	const linkElement = getByText(/hello react/i);
+	expect(linkElement).toBeInTheDocument();
 });
 ```
 
@@ -91,7 +91,7 @@ In `App.tsx` we'll add a `Heading` component:
 
 ```typescript
 export function Heading() {
- return <h1>Hello React</h1>;
+	return <h1>Hello React</h1>;
 }
 ```
 
@@ -111,11 +111,11 @@ Change the `App` to call the component:
 
 ```typescript
 function App() {
- return (
-  <div>
-   <Heading />
-  </div>
- );
+	return (
+		<div>
+			<Heading />
+		</div>
+	);
 }
 ```
 
@@ -130,9 +130,9 @@ We'll first write a new test:
 
 ```typescript
 test("renders heading with argument", () => {
- const { getByText } = render(<Heading name={`World`} />);
- const linkElement = getByText(/hello world/i);
- expect(linkElement).toBeInTheDocument();
+	const { getByText } = render(<Heading name={`World`} />);
+	const linkElement = getByText(/hello world/i);
+	expect(linkElement).toBeInTheDocument();
 });
 ```
 
@@ -145,7 +145,7 @@ Let's head to the `Heading` component and fix it:
 
 ```typescript {1,2}
 export function Heading({ name }) {
- return <h1>Hello {name}</h1>;
+	return <h1>Hello {name}</h1>;
 }
 ```
 
@@ -172,7 +172,7 @@ Let's express the props contract with TypeScript typing, first doing so inline:
 
 ```typescript
 export function Heading({ name }: { name: string }) {
- return <h1>Hello {name}</h1>;
+	return <h1>Hello {name}</h1>;
 }
 ```
 
@@ -186,7 +186,7 @@ Let's move the contract into a standalone type definition:
 type HeadingProps = { name: string };
 
 export function Heading({ name }: HeadingProps) {
- return <h1>Hello {name}</h1>;
+	return <h1>Hello {name}</h1>;
 }
 ```
 
@@ -210,7 +210,7 @@ Fortunately, ES6 introduced default values for arguments:
 
 ```typescript {1}
 export function Heading({ name = "React" }: HeadingProps) {
- return <h1>Hello {name}</h1>;
+	return <h1>Hello {name}</h1>;
 }
 ```
 
@@ -263,7 +263,7 @@ import React from "react";
 type HeadingProps = { name?: string };
 
 export function Heading({ name = "React" }: HeadingProps) {
- return <h1>Hello {name}</h1>;
+	return <h1>Hello {name}</h1>;
 }
 ```
 
@@ -274,11 +274,11 @@ import React from "react";
 import { Heading } from "./Heading";
 
 function App() {
- return (
-  <div>
-   <Heading />
-  </div>
- );
+	return (
+		<div>
+			<Heading />
+		</div>
+	);
 }
 
 export default App;

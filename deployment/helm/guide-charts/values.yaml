@@ -9,7 +9,6 @@ image:
 imagePullSecrets: []
 containerPort: 8080
 
-
 podSecurityContext:
   runAsNonRoot: true
   runAsUser: 101

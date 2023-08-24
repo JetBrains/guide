@@ -5,7 +5,7 @@ accent: primary
 icon: fas fa-search
 obsoletes:
   - /goland/topics/inspections/
-  - /intellij/topics/inspections/
+  - /idea/topics/inspections/
 ---
 
 Our IDEs help you analyze code on various levels, starting from a single statement in the editor

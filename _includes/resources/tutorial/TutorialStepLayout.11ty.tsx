@@ -13,105 +13,111 @@ import ArticleTopics from "../common/ArticleTopics.11ty";
 export type TutorialStepLayoutData = LayoutProps & TutorialStepFrontmatter;
 
 export function TutorialStepLayout(
-  this: LayoutContext,
-  data: TutorialStepLayoutData
+	this: LayoutContext,
+	data: TutorialStepLayoutData
 ): JSX.Element {
-  const { collections, content, page } = data;
-  const tutorialStep = collections.allResources.get(page.url) as TutorialStep;
-  const parent = tutorialStep.parentTutorial as Tutorial;
-  const references = tutorialStep.references as References;
+	const { collections, content, page } = data;
+	const tutorialStep = collections.allResources.get(page.url) as TutorialStep;
+	const parent = tutorialStep.parentTutorial as Tutorial;
+	const references = tutorialStep.references as References;
 
-  // video
-  const video = tutorialStep.video && (
-    <VideoPlayer source={tutorialStep.video} />
-  );
+	// video
+	const video = tutorialStep.video && (
+		<VideoPlayer source={tutorialStep.video} />
+	);
 
-  // Sidebars
-  let sidebarSteps = "";
-  if (parent) {
-    // Sometimes a tutorialstep might be "in-progress" and not
-    // yet linked into the tutorial
-    sidebarSteps = parent.tutorialSteps && (
-      <div class="column is-3 is-full-touch">
-        <aside class="menu">
-          <p class="menu-label">Tutorial</p>
-          <ul class="menu-list">
-            {parent.tutorialSteps.map((step) => (
-              <li>
-                <a
-                  class={step == tutorialStep ? "is-active" : ""}
-                  href={step.url}
-                >
-                  {step.title}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </aside>
-      </div>
-    );
-  }
+	// Sidebars
+	let sidebarSteps = "";
+	if (parent) {
+		// Sometimes a tutorialstep might be "in-progress" and not
+		// yet linked into the tutorial
+		sidebarSteps = parent.tutorialSteps && (
+			<div class="column is-3 is-full-touch">
+				<aside class="menu">
+					<p class="menu-label">Tutorial</p>
+					<ul class="menu-list">
+						{parent.tutorialSteps.map((step) => (
+							<li>
+								<a
+									class={step == tutorialStep ? "is-active" : ""}
+									href={step.url}
+								>
+									{step.title}
+								</a>
+							</li>
+						))}
+					</ul>
+				</aside>
+			</div>
+		);
+	}
 
-  // Main content
-  const videoBottom = tutorialStep.videoBottom;
-  const main = (
-    <>
-      <ArticleTitleSubtitle
-        title={tutorialStep.title}
-        subtitle={tutorialStep.subtitle}
-      />
-      <ArticleAuthor
-        author={references.author}
-        displayDate={tutorialStep.displayDate}
-      />
-      <ArticleTopics topics={references.topics} />
+	// Main content
+	const videoBottom = tutorialStep.videoBottom;
+	const main = (
+		<>
+			<ArticleTitleSubtitle
+				title={tutorialStep.title}
+				subtitle={tutorialStep.subtitle}
+			/>
+			<ArticleAuthor
+				author={references.author}
+				displayDate={tutorialStep.displayDate}
+			/>
+			<ArticleTopics topics={references.topics} />
 
-      {video && !videoBottom && <div class="mb-4">{video}</div>}
-      {content ? (
-        <div dangerouslySetInnerHTML={{ __html: content }}></div>
-      ) : null}
-      {video && videoBottom && <div class="mb-4">{video}</div>}
-    </>
-  );
+			{video && !videoBottom && <div class="mb-4">{video}</div>}
+			{content ? (
+				<div dangerouslySetInnerHTML={{ __html: content }}></div>
+			) : null}
+			{video && videoBottom && <div class="mb-4">{video}</div>}
+		</>
+	);
 
-  // Breadcrumbs
-  let breadcrumbs = "";
-  if (parent) {
-    breadcrumbs = (<nav class="breadcrumb" aria-label="breadcrumbs">
-      <ul>
-        <li><a href={parent.url}>{parent.title}</a></li>
-        <li class="is-active"><a href={tutorialStep.url}>{tutorialStep.title}</a></li>
-      </ul>
-    </nav>)
-  }
+	// Breadcrumbs
+	let breadcrumbs = "";
+	if (parent) {
+		breadcrumbs = (
+			<nav class="breadcrumb" aria-label="breadcrumbs">
+				<ul>
+					<li>
+						<a href={parent.url}>{parent.title}</a>
+					</li>
+					<li class="is-active">
+						<a href={tutorialStep.url}>{tutorialStep.title}</a>
+					</li>
+				</ul>
+			</nav>
+		);
+	}
 
-  // Bottom nav
-  let bottomNav = "";
-  if (parent) {
-    bottomNav = (
-      <BottomNav parent={parent} currentStep={tutorialStep}></BottomNav>
-    );
-  }
+	// Bottom nav
+	let bottomNav = "";
+	if (parent) {
+		bottomNav = (
+			<BottomNav parent={parent} currentStep={tutorialStep}></BottomNav>
+		);
+	}
 
-  return (
-    <BaseLayout subtitle={tutorialStep.subtitle} {...data}>
-      <div class="section">
-        <div class="container">
-          <div class="columns is-multiline">
-            {sidebarSteps}
-            <div class="column is-9">
-              {breadcrumbs}
-              <main class="content">
-                {main}
-                <hr />
-                {bottomNav}
-              </main>
-            </div>
-          </div>
-        </div>
-      </div>
-    </BaseLayout>
-  );
+	return (
+		<BaseLayout subtitle={tutorialStep.subtitle} {...data}>
+			<div class="section">
+				<div class="container">
+					<div class="columns is-multiline">
+						{sidebarSteps}
+						<div class="column is-9">
+							{breadcrumbs}
+							<main class="content">
+								{main}
+								<hr />
+								{bottomNav}
+							</main>
+						</div>
+					</div>
+				</div>
+			</div>
+		</BaseLayout>
+	);
 }
 
 export const render = TutorialStepLayout;

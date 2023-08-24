@@ -1,5 +1,0 @@
-{
-  "resourceType": "tutorialstep",
-  "layout": "resources/tutorial/TutorialStepLayout.11ty.tsx",
-  "tags": ["tutorial", "intellij_tutorial"]
-}

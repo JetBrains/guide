@@ -54,9 +54,7 @@ export class BaseEntity implements BaseFrontmatter {
 		this.url = page.url;
 		this.channel = data.channel;
 
-		// @ts-ignore
-		const frontmatter = this.constructor.frontmatterSchema;
-		validateFrontmatter(frontmatter, data, page.url);
+		validateFrontmatter(BaseEntity.frontmatterSchema, data, page.url);
 	}
 
 	async init(): Promise<this> {
@@ -113,7 +111,7 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
 	topics?: string[];
 	references?: References;
 	static frontmatterSchema: any = ResourceFrontmatter;
-	static referenceFields = ["author", "channel", "topics"];
+	static referenceFields = ["author", "channel", "topics"] as const;
 
 	constructor({
 		data,
@@ -131,11 +129,11 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
 		this.displayDate = displayDate;
 		if (data.thumbnail) {
 			if (data.thumbnail.startsWith("/")) {
-        // If absolute URL, just use it
-        this.thumbnail = data.thumbnail;
-      } else {
-        this.thumbnail = path.join(page.url, data.thumbnail);
-      }
+				// If absolute URL, just use it
+				this.thumbnail = data.thumbnail;
+			} else {
+				this.thumbnail = path.join(page.url, data.thumbnail);
+			}
 		}
 		this.tags = data.tags;
 		this.topics = data.topics;
@@ -151,46 +149,33 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
 
 	resolve(allCollections: AllCollections): void {
 		const { allReferences, allResources } = allCollections;
-		// @ts-ignore
-		const fieldNames: string[] = this.constructor.referenceFields;
 
-		// @ts-ignore
-		const references: References = {};
-		for (const fieldName of fieldNames) {
-			// @ts-ignore
-			if (this[fieldName]) {
-				// @ts-ignore
-				references[fieldName] = resolveReference({
-					fieldName,
-					resource: this,
-					allReferences,
-					allResources,
-				});
-			} else {
-				// Only array references things should be empty;
-				// @ts-ignore
-				references[fieldName] = [];
-			}
-		}
-
-		this.references = references;
+		this.references = Resource.referenceFields.reduce((acc, fieldName) => {
+			return {
+				...acc,
+				[fieldName]: this[fieldName]
+					? resolveReference({
+							fieldName,
+							resource: this,
+							allReferences,
+							allResources,
+					  })
+					: [],
+			};
+		}, {} as References);
 	}
 }
 
 export type ResourceCollection = Map<string, Resource>;
 export type ReferenceCollection = Map<string, Reference>;
 
-export function getResourceType(data: any, page: EleventyPage): string {
-	/* Determine the resource type based on some policies */
-	if (data.resourceType) {
-		return data.resourceType;
-	}
-
-	// The data cascade should return a resourceType
-	try {
-		return data.resourceType;
-	} catch (e) {
+export function getResourceType<T>(
+	data: { resourceType?: T },
+	page: EleventyPage
+): T {
+	if (!data.resourceType) {
 		const msg = `Page at "${page.url} does not have a resourceType`;
 		throw new Error(msg);
 	}
+	return data.resourceType;
 }

@@ -33,7 +33,7 @@ playlistItems:
   - /goland/tips/hide-all-tool-windows/
   - /goland/tips/speed-typing/
   - /goland/tips/search-everywhere/
-  - /goland/tips/local-history/
+  - /tips/local-history/
 ---
 
 Editing code is a frequent activity that programmers do. However, editing is not

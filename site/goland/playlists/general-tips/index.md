@@ -40,10 +40,10 @@ playlistItems:
   - /goland/tips/run-tests-with-coverage/
   - /goland/tips/create-project-from-github/
   - /goland/tips/put-project-under-vcs/
-  - /goland/tips/reword-commit-message/
-  - /goland/tips/undo-last-commit/
-  - /goland/tips/partial-commit/
-  - /goland/tips/local-history/
+  - /tips/reword-commit-message/
+  - /tips/undo-last-commit/
+  - /tips/partial-commit/
+  - /tips/local-history/
 ---
 
 Development is about focus and flow. Learning your tool helps you get

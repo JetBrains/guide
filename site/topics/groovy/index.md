@@ -5,5 +5,5 @@ logo: groovy.svg
 website: "https://groovy-lang.org/"
 topicType: technology
 obsoletes:
-  - /intellij/topics/groovy/
+  - /idea/topics/groovy/
 ---

@@ -6,7 +6,8 @@ module.exports = {
 			extends: ["plugin:markdownlint/recommended", "prettier"],
 			rules: {
 				"markdownlint/md014": "warn",
-				// consistency rules
+				// consistency/styling rules
+				"markdownlint/md010": "off",
 				"markdownlint/md004": "off",
 				"markdownlint/md013": "off",
 				"markdownlint/md022": "off",

@@ -14,7 +14,7 @@ cardThumbnail: ./card.png
 obsoletes:
   - /dotnet/tips/move-aside-stash/
   - /goland/tips/move-aside-stash/
-  - /intellij/tips/move-aside-stash/
+  - /idea/tips/move-aside-stash/
   - /pycharm/tips/move-aside-stash/
   - /webstorm/tips/move-aside-stash/
 video: "https://www.youtube.com/watch?v=rQXUSI50uhs"
