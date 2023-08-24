@@ -27,6 +27,7 @@ export enum ResourceCardOrientation {
 export type ResourceCardProps = {
 	resource: Resource;
 	orientation?: ResourceCardOrientation;
+	columnClassName?: string;
 };
 
 const lazyLoading = "lazy" as const;
@@ -59,6 +60,7 @@ const ResourceCard = ({
 		references,
 	},
 	orientation,
+	columnClassName,
 }: ResourceCardProps): JSX.Element => {
 	doesExist(references);
 	const { author, topics } = references;
@@ -67,9 +69,13 @@ const ResourceCard = ({
 		const glowCssClass =
 			resourceType != "channel" ? glowColorHashRing.get(title) : "";
 
+		const columnCssClass = columnClassName
+			? columnClassName
+			: "is-half-tablet is-one-quarter-desktop";
+
 		return (
-			<div class="column is-half-tablet is-one-third-desktop">
-				<div class="card is-equal-height has-box-hover">
+			<div class={`column ${columnCssClass}`}>
+				<div class="card is-equal-height has-box-hover is-shadowless">
 					<div class="card-image">
 						<a href={url}>
 							<figure class={`image is-16by9 is-contained ${glowCssClass}`}>
@@ -79,17 +85,17 @@ const ResourceCard = ({
 					</div>
 					<div class="card-content has-position-relative">
 						<a
-							class="title is-size-4 is-stretched-link"
+							class="title is-size-5 is-stretched-link clamp-2 mb-1"
 							aria-label={`Resource`}
 							href={url}
 						>
 							{title}
 						</a>
-						{subtitle && <div class="content mt-2">{subtitle}</div>}
+						{subtitle && <div class="content clamp-5">{subtitle}</div>}
 					</div>
 					<footer class="card-footer">
 						<div class="container p-4">
-							<div class="tags mb-2">
+							<div class="tags mb-2 clamp-2">
 								{topics.map((topic: Topic) => (
 									<TopicTag topic={topic} />
 								))}
@@ -120,8 +126,10 @@ const ResourceCard = ({
 			</div>
 		);
 	} else {
+		const columnCssClass = columnClassName ? columnClassName : "is-12";
+
 		return (
-			<div class="column is-12">
+			<div class={`column ${columnCssClass}`}>
 				<div class="card is-equal-height">
 					<div class="card-content">
 						<article class="media">
@@ -134,7 +142,7 @@ const ResourceCard = ({
 								<a class="title is-size-4" aria-label={`Resource`} href={url}>
 									{title}
 								</a>
-								{subtitle && <div class="content mt-2">{subtitle}</div>}
+								{subtitle && <div class="content clamp-3">{subtitle}</div>}
 
 								<footer>
 									<div>

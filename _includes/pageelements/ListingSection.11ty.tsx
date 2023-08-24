@@ -20,10 +20,19 @@ function ListingSection({
 	isSection = true,
 }: ListingSectionProps) {
 	/* A reusable component for section-style paginated ResourceCard listings */
+	const columnClassName = isSection
+		? undefined
+		: "is-half-tablet is-one-third-desktop";
+
 	const listing = (
 		<div class="columns is-multiline">
 			{resources.map((resource) => {
-				return <ResourceCard resource={resource}></ResourceCard>;
+				return (
+					<ResourceCard
+						resource={resource}
+						columnClassName={columnClassName}
+					></ResourceCard>
+				);
 			})}
 		</div>
 	);
