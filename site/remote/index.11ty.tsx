@@ -44,11 +44,11 @@ class RemoteHomepage {
 			<BaseLayout {...data}>
 				<HeroSection
 					title={channel.title}
-					titleExtraClass="has-text-white"
+					titleExtraClass="has-text-white has-text-shadow"
 					subtitle={channel.subtitle!}
-					subtitleExtraClass="has-text-white"
+					subtitleExtraClass="has-text-white has-text-shadow"
 					image={channel.hero!}
-					extraStyle="background-color:#27282c"
+					extraStyle="background-color:#27282c; background-position: left;"
 				/>
 				<section class="section">
 					<div class="container">

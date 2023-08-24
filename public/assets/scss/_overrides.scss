@@ -134,3 +134,6 @@ a.navbar-item:focus-within {
 .has-gradient-purple {
   background: linear-gradient(200deg, rgb(107, 87, 255) 12%, rgba(107, 87, 255, 0)) no-repeat border-box border-box rgb(40, 184, 160);
 }
+.has-text-shadow {
+  text-shadow: 2px 2px 4px black;
+}
