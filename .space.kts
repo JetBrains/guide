@@ -7,6 +7,19 @@ job("Build Guide") {
     buildAndDeployStaging()
 }
 
+job("Build Guide (Docker)") {
+    startOn {
+        gitPush {
+            enabled = false
+        }
+    }
+
+    buildSiteDockerImage("Dockerfile",
+        imageName = "registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-dev-nginx",
+        copySiteFromShare = false,
+        pushToRegistry = false)
+}
+
 job("Run lint") {
     startOn {
         gitPush {
@@ -19,6 +32,7 @@ job("Run lint") {
             }
         }
     }
+
     runLint()
 }
 
@@ -34,6 +48,7 @@ job("Run tests") {
             }
         }
     }
+
     runTests()
 }
 
@@ -131,10 +146,6 @@ fun Job.buildAndDeployStaging() {
     }
     parallel {
         deploySite()
-        buildSiteDockerImage("Dockerfile",
-            imageName = "registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-dev-nginx",
-            copySiteFromShare = false,
-            pushToRegistry = false)
     }
 }
 
