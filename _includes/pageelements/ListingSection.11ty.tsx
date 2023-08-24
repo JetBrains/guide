@@ -46,11 +46,13 @@ function ListingSection({
 						<p className="subtitle has-text-grey mb-5">{subtitle}</p>
 					)}
 				</div>
-				<div className="column has-text-right">
-					<a className="button is-rounded is-outlined" href={moreLink}>
-						More...
-					</a>
-				</div>
+				{moreLink && (
+					<div className="column has-text-right">
+						<a className="button is-rounded is-outlined" href={moreLink}>
+							More...
+						</a>
+					</div>
+				)}
 			</div>
 			<div className="container">{listing}</div>
 		</div>

@@ -38,19 +38,19 @@ class GoLandHomepage {
 		const tips = this.getResources({
 			resourceTypes: ["tip"],
 			channel: channel.url,
-			limit: 3,
+			limit: 4,
 		});
 
 		const playlists = this.getResources({
 			resourceTypes: ["playlist"],
 			channel: channel.url,
-			limit: 3,
+			limit: 4,
 		});
 
 		const tutorials = this.getResources({
 			resourceTypes: ["tutorial"],
 			channel: channel.url,
-			limit: 3,
+			limit: 4,
 		});
 
 		return (

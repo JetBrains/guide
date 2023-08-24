@@ -38,13 +38,22 @@ class DotNetHomepage {
 		const tips = this.getResources({
 			resourceTypes: ["tip"],
 			channel: channel.url,
-			limit: 3,
+			limit: 4,
 		});
+
+		const eventPlaylists = this.getResources({
+			resourceTypes: ["playlist"],
+			channel: channel.url,
+			limit: 4,
+		}).filter(
+			(r) =>
+				r.slug.indexOf("day-online") >= 0 || r.slug.indexOf("days-online") >= 0
+		);
 
 		const tutorials = this.getResources({
 			resourceTypes: ["tutorial"],
 			channel: channel.url,
-			limit: 3,
+			limit: 4,
 		});
 
 		return (
@@ -112,6 +121,13 @@ class DotNetHomepage {
 						title={`Recent Tutorials`}
 						resources={tutorials}
 						moreLink={`${channel.url}tutorials/`}
+					/>
+				)}
+				{eventPlaylists && (
+					<ListingSection
+						title={`JetBrains .NET events`}
+						resources={eventPlaylists}
+						separator={true}
 					/>
 				)}
 			</BaseLayout>
