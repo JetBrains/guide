@@ -4,6 +4,7 @@ import { migrateFrontMatter, writeCleanResources } from "./cleaner";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 import chalk from "chalk";
+import { dumpObsoletes } from "./obsoletes";
 
 const info = chalk.hex("#087CFA");
 const success = chalk.hex("#21D789");
@@ -52,6 +53,29 @@ yargs(hideBin(process.argv))
 				console.log(success("cleaning up frontmatter successful 🎉🎉🎉"));
 			} catch (e) {
 				console.log(error("error executing frontmatter migration script"));
+				if (args.debug) {
+					console.log(info(e));
+				}
+			}
+		}
+	)
+	.command(
+		"dump-obsoletes",
+		"dump obsoletes for nginx to be picked up",
+		{
+			debug: {
+				alias: "d",
+				default: false,
+			},
+		},
+		(args) => {
+			try {
+				console.log(info("Going to write nginx rules for obsolete documents"));
+
+				dumpObsoletes();
+				console.log(success("nginx rules written successful 🎉🎉🎉"));
+			} catch (e) {
+				console.log(error("error writing nginx rules"));
 				if (args.debug) {
 					console.log(info(e));
 				}
