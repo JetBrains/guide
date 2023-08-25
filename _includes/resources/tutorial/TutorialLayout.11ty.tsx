@@ -50,6 +50,9 @@ export function TutorialLayout(
 		</>
 	);
 
+	const firstTutorialStep =
+		tutorial.tutorialSteps.length > 0 ? tutorial.tutorialSteps[0] : undefined;
+
 	// Breadcrumbs
 	let breadcrumbs = (
 		<nav class="breadcrumb" aria-label="breadcrumbs">
@@ -75,6 +78,16 @@ export function TutorialLayout(
 
 			{content ? (
 				<div class="mb-4" dangerouslySetInnerHTML={{ __html: content }}></div>
+			) : null}
+			{firstTutorialStep ? (
+				<div class="mb-5">
+					<a
+						className="button is-rounded is-primary"
+						href={firstTutorialStep.url}
+					>
+						Start learning &raquo;
+					</a>
+				</div>
 			) : null}
 			{listing && (
 				<div
