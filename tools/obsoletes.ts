@@ -18,7 +18,10 @@ export function getObsoletes(markdownDocuments: Markdown[]): string[] {
 			const { obsoletes } = frontmatter;
 			if (obsoletes && obsoletes.length > 0) {
 				let [redirectTo] = filePath
-					.relative(filePath.join(__dirname, ".."), path.replace(/\/+$/, ""))
+					.relative(
+						filePath.join(__dirname, "../site"),
+						path.replace(/\/+$/, "")
+					)
 					.split("/index.md");
 
 				obsoletes.forEach((data) => {
