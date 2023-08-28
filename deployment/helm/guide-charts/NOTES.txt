@@ -10,5 +10,5 @@ Hello, JetBrains Guide is successfully installed.
 {{- else if contains "stage" .Values.env }}
      echo "Visit https://jb-guide-staging.labs.jb.gg/guide/"
 {{- else if contains "prod" .Values.env }}
-  echo "URL is yet to come"
+  echo "Visit https://jb-guide-prod.labs.jb.gg/guide/"
 {{- end }}
