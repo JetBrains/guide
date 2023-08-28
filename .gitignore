@@ -33,3 +33,4 @@ public/obsoletes.json
 .assets-cache
 docs/schemas/guide/*.schema.json
 docs/schemas/*
+redirect.conf
