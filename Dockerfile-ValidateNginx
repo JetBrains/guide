@@ -1,0 +1,16 @@
+FROM nginx:latest
+
+# Install cURL
+RUN apt-get update && apt-get install -y curl
+
+# Copy the Nginx configuration file to the container
+COPY deployment/redirect-test/files/nginx.conf /etc/nginx/nginx.conf
+COPY deployment/redirect-test/files/default.conf /etc/nginx/conf.d/default.conf
+COPY deployment/helm/redirect.conf /etc/nginx/extra/redirect.conf
+
+# Copy a script to validate and start Nginx
+COPY deployment/redirect-test/files/validate.sh /usr/local/bin/validate.sh
+RUN chmod +x /usr/local/bin/validate.sh
+
+# Entrypoint command to validate the configuration, start Nginx, and check response
+ENTRYPOINT ["validate.sh"]
