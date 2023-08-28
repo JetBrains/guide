@@ -5,17 +5,19 @@ import {
 	cleanCategories,
 	dumpAuthors,
 	dumpTopics,
-	getAllFiles,
-	getRoot,
-	guideSites,
-	MarkdownFrontmatter,
 	migrateLeadInAttribute,
 	migrateVideoFrontmatter,
-	parseFrontmatter,
 	pipe,
 	removeHasBodyAttribute,
 	writeTopicType,
 } from "./cleaner";
+import {
+	getAllFiles,
+	getRoot,
+	guideSites,
+	MarkdownFrontmatter,
+	parseFrontmatter,
+} from "./file.utils";
 
 describe("Content Cleaning", () => {
 	const root = getRoot();

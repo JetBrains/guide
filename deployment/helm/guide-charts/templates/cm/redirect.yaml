@@ -6,5 +6,5 @@ metadata:
     env: {{.Values.env}}
 data:
   redirect.conf: |-
-  {{ toYaml .Values.guideRedirect  | indent 4 | replace "|" ""}}
+  {{ toYaml .Values.guideRedirect  | indent 4 | replace "|" "" | replace "+" ""}}
 

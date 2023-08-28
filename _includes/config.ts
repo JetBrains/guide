@@ -32,7 +32,7 @@ import {
 	getResources,
 	QueryFilter,
 } from "./queries";
-import { dumpObsoletes } from "../src/obsoletes";
+import { dumpObsoletes } from "../tools/obsoletes";
 import { Page } from "./resources/page/PageModels";
 import { Article } from "./resources/article/ArticleModels";
 import { Channel } from "./resources/channel/ChannelModels";
@@ -97,8 +97,6 @@ export async function registerIncludes(
 			fs.mkdirSync(schemasOutputPath, { recursive: true });
 			await dumpSchemas(schemas, allReferencesList, schemasOutputPath);
 
-			// Dump an obsoletes.json file to later generate redirects
-			dumpObsoletes(allCollections.allReferences, allCollections.allResources);
 			return allCollections.allResources;
 		}
 	);

@@ -1,4 +1,4 @@
-replicaCount: 4
+replicaCount: 1
 env: "local"
 
 image:

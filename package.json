@@ -10,7 +10,7 @@
 		"clean": "rimraf _site .11ty-vite .assets-cache",
 		"test": "vitest run",
 		"broken-link-checker": "node ./src/scanner.js",
-		"tools": "./tools/index.ts",
+		"tools": "vite-node --script ./tools/index.ts",
 		"lint": "eslint ./site",
 		"lint:fix": "eslint ./site --fix",
 		"prepare": "husky install",
