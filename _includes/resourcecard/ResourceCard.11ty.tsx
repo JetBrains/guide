@@ -28,6 +28,8 @@ export type ResourceCardProps = {
 	resource: Resource;
 	orientation?: ResourceCardOrientation;
 	columnClassName?: string;
+	hasShadow?: boolean;
+	includeCardFooter?: boolean;
 };
 
 const lazyLoading = "lazy" as const;
@@ -61,6 +63,8 @@ const ResourceCard = ({
 	},
 	orientation,
 	columnClassName,
+	hasShadow = false,
+	includeCardFooter = true,
 }: ResourceCardProps): JSX.Element => {
 	doesExist(references);
 	const { author, topics } = references;
@@ -73,9 +77,13 @@ const ResourceCard = ({
 			? columnClassName
 			: "is-half-tablet is-one-quarter-desktop";
 
+		const cardCssClass = hasShadow ? "" : "is-shadowless";
+
 		return (
 			<div class={`column ${columnCssClass}`}>
-				<div class="card is-equal-height has-box-outline has-box-hover is-shadowless">
+				<div
+					class={`card is-equal-height has-box-outline has-box-hover ${cardCssClass}`}
+				>
 					<div class="card-image">
 						<a href={url}>
 							<figure class={`image is-16by9 is-contained ${glowCssClass}`}>
@@ -93,35 +101,40 @@ const ResourceCard = ({
 						</a>
 						{subtitle && <div class="content clamp-5">{subtitle}</div>}
 					</div>
-					<footer class="card-footer">
-						<div class="container p-4">
-							<div class="tags mb-2 clamp-2">
-								{topics.map((topic: Topic) => (
-									<TopicTag topic={topic} />
-								))}
-							</div>
-
-							<div class="media author">
-								<div class="p-2 media-left">
-									<a href={author.url}>
-										<figure class="image m-0 is-24x24">
-											<AuthorIcon {...author} />
-										</figure>
-									</a>
+					{includeCardFooter && (
+						<footer class="card-footer">
+							<div class="container p-4">
+								<div class="tags mb-2 clamp-2">
+									{topics.map((topic: Topic) => (
+										<TopicTag topic={topic} />
+									))}
 								</div>
-								<div class="media-content">
-									<div class="content is-size-7">
-										<p class="m-0">
-											<a href={author.url}>{author.title}</a>
-										</p>
-										<time class="m-0 has-text-grey-dark" datetime={displayDate}>
-											{displayDate}
-										</time>
+
+								<div class="media author">
+									<div class="p-2 media-left">
+										<a href={author.url}>
+											<figure class="image m-0 is-24x24">
+												<AuthorIcon {...author} />
+											</figure>
+										</a>
+									</div>
+									<div class="media-content">
+										<div class="content is-size-7">
+											<p class="m-0">
+												<a href={author.url}>{author.title}</a>
+											</p>
+											<time
+												class="m-0 has-text-grey-dark"
+												datetime={displayDate}
+											>
+												{displayDate}
+											</time>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</footer>
+						</footer>
+					)}
 				</div>
 			</div>
 		);
@@ -150,38 +163,40 @@ const ResourceCard = ({
 									{subtitle && <div class="content clamp-3">{subtitle}</div>}
 								</div>
 
-								<footer>
-									<div>
-										<div class="tags my-2">
-											{topics.map((topic: Topic) => (
-												<TopicTag topic={topic} />
-											))}
-										</div>
-
-										<div class="media author">
-											<div class="p-2 media-left">
-												<a href={author.url}>
-													<figure class="image m-0 is-24x24">
-														<AuthorIcon {...author} />
-													</figure>
-												</a>
+								{includeCardFooter && (
+									<footer>
+										<div>
+											<div class="tags my-2">
+												{topics.map((topic: Topic) => (
+													<TopicTag topic={topic} />
+												))}
 											</div>
-											<div class="media-content">
-												<div class="content is-size-7">
-													<p class="m-0">
-														<a href={author.url}>{author.title}</a>
-													</p>
-													<time
-														class="m-0 has-text-grey-dark"
-														datetime={displayDate}
-													>
-														{displayDate}
-													</time>
+
+											<div class="media author">
+												<div class="p-2 media-left">
+													<a href={author.url}>
+														<figure class="image m-0 is-24x24">
+															<AuthorIcon {...author} />
+														</figure>
+													</a>
+												</div>
+												<div class="media-content">
+													<div class="content is-size-7">
+														<p class="m-0">
+															<a href={author.url}>{author.title}</a>
+														</p>
+														<time
+															class="m-0 has-text-grey-dark"
+															datetime={displayDate}
+														>
+															{displayDate}
+														</time>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-								</footer>
+									</footer>
+								)}
 							</div>
 						</article>
 					</div>

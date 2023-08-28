@@ -9,6 +9,7 @@ export type ListingSectionProps = {
 	resources: Resource[];
 	separator?: boolean;
 	isSection?: boolean;
+	includeCardFooter?: boolean;
 };
 
 function ListingSection({
@@ -18,6 +19,7 @@ function ListingSection({
 	resources,
 	separator,
 	isSection = true,
+	includeCardFooter = true,
 }: ListingSectionProps) {
 	/* A reusable component for section-style paginated ResourceCard listings */
 	const columnClassName = isSection
@@ -31,6 +33,7 @@ function ListingSection({
 					<ResourceCard
 						resource={resource}
 						columnClassName={columnClassName}
+						includeCardFooter={includeCardFooter}
 					></ResourceCard>
 				);
 			})}

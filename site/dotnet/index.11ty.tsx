@@ -9,6 +9,13 @@ import {
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import MultiColumnSection from "../../_includes/pageelements/MultiColumnSection";
+import FeaturedResource from "../../_includes/pageelements/FeaturedResource.11ty";
+import { Topic } from "../../_includes/references/topic/TopicModels";
+import {
+	PLAYLIST_RESOURCE,
+	TIP_RESOURCE,
+	TUTORIAL_RESOURCE,
+} from "../../src/resourceType";
 
 const frontmatter: ChannelFrontmatter = {
 	title: ".NET Tools Guide",
@@ -35,26 +42,59 @@ class DotNetHomepage {
 
 	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
+
+		const topics = (
+			this.getReferences({
+				resourceTypes: ["topic"],
+			}) as Topic[]
+		).filter(
+			(r) =>
+				r.label.indexOf("blazor") >= 0 ||
+				r.label.indexOf("csharp") >= 0 ||
+				r.label.indexOf("fsharp") >= 0 ||
+				r.label.indexOf(".net") >= 0 ||
+				r.label.indexOf("asp.net") >= 0 ||
+				r.label.indexOf("gaming") >= 0
+		);
+
 		const tips = this.getResources({
-			resourceTypes: ["tip"],
+			resourceTypes: [TIP_RESOURCE],
 			channel: channel.url,
 			limit: 4,
+		});
+
+		const tutorials = this.getResources({
+			resourceTypes: [TUTORIAL_RESOURCE],
+			channel: channel.url,
+			limit: 4,
+		});
+
+		const refactoringTips = this.getResources({
+			resourceTypes: [TIP_RESOURCE],
+			channel: channel.url,
+			limit: 4,
+			customFilter: (r) => r.topics?.includes("refactoring") == true,
+		});
+
+		const aspNetTutorials = this.getResources({
+			resourceTypes: [TUTORIAL_RESOURCE],
+			channel: channel.url,
+			limit: 4,
+			customFilter: (r) =>
+				r.topics?.includes("asp.net") == true &&
+				r.topics?.includes("docker") == false,
+			sorter: (a, b) => (a.date > b.date ? 1 : -1),
 		});
 
 		const eventPlaylists = this.getResources({
-			resourceTypes: ["playlist"],
+			resourceTypes: [PLAYLIST_RESOURCE],
 			channel: channel.url,
 			limit: 4,
-		}).filter(
-			(r) =>
-				r.slug.indexOf("day-online") >= 0 || r.slug.indexOf("days-online") >= 0
-		);
-
-		const tutorials = this.getResources({
-			resourceTypes: ["tutorial"],
-			channel: channel.url,
-			limit: 4,
+			customFilter: (r) =>
+				r.slug.indexOf("day-online") >= 0 || r.slug.indexOf("days-online") >= 0,
 		});
+
+		const dockerTutorial = this.getResource("/dotnet/tutorials/docker-dotnet/");
 
 		return (
 			<BaseLayout {...data}>
@@ -63,69 +103,113 @@ class DotNetHomepage {
 					subtitle={channel.subtitle!}
 					image={channel.hero!}
 				/>
-				{tips && (
-					<ListingSection
-						title={`Recent Tips`}
-						resources={tips}
-						moreLink={`${channel.url}tips/`}
-					/>
-				)}
 				<MultiColumnSection>
 					<div>
-						<h2>Learn something new, quickly</h2>
+						<h2 class="title">Learn something new, quickly</h2>
 						<p>
-							JetBrains tools included in the{" "}
-							<a href="https://www.jetbrains.com/dotnet/">dotUltimate pack</a>{" "}
-							are powerful developer productivity tools. What is the best way to
-							learn how to harness that power?
+							We have created the JetBrains Guide, a collection of resources to
+							help you understand a topic or technology. We hope it helps you
+							get into the flow and excel at what you do.
 						</p>
-						<p>
-							You can find useful information on our Twitter accounts,{" "}
-							<a href="https://twitter.com/ReSharper">@ReSharper</a> and{" "}
-							<a href="https://twitter.com/JetBrainsRider">@JetBrainsRider</a> ,
-							or our{" "}
-							<a href="https://blog.jetbrains.com/dotnet/">product blog</a>.
-							Plus, the{" "}
-							<a href="https://www.jetbrains.com/resharper/documentation/documentation.html">
-								documentation
-							</a>{" "}
-							is always there to help. However, wouldn't it be better if you had
-							everything you needed to learn in one place?
-						</p>
-						<p>
-							We have created the .NET Tools Guide, a collection of bite-sized
-							visual resources, organized to help spark your learning. We hope
-							it helps you get into the flow and excel at what you do.
-						</p>
+						<p></p>
 					</div>
-					<div>
-						<h2>Sharing Feedback and Contributing</h2>
-						<p>
-							The .NET Tools Guide is also an open project, with{" "}
-							<a href="https://github.com/jetbrains/guide">
-								a repository in GitHub
-							</a>{" "}
-							that hosts all the content. We write all the content in Markdown
-							and render a static site. If you'd like to contribute to it,
-							please refer to the{" "}
-							<a href="https://github.com/jetbrains/guide/blob/master/README.md">
-								README
-							</a>{" "}
-							for more information.
-						</p>
+					<div class="columns is-multiline">
+						{topics.map((topic) => {
+							let figure: string;
+							if (topic.icon) {
+								figure = (
+									<i class={`${topic.icon} has-text-${topic.accent} fa-3x`} />
+								);
+							} else if (topic.logo) {
+								figure = <img src={topic.logo} alt={topic.title} />;
+							} else {
+								figure = (
+									<i class={`fas fa-file has-text-${topic.accent} fa-5x`} />
+								);
+							}
+
+							return (
+								<div className="column mb-1 is-6 is-4-desktop py-5 has-box-hover has-position-relative">
+									<a href={topic.url}>
+										<figure className="image is-48x48 m-0 mb-1">
+											{figure}
+										</figure>
+									</a>
+									<a
+										href={topic.url}
+										aria-label={`Topic`}
+										className="is-size-5 has-text-weight-bold title is-stretched-link"
+									>
+										{topic.title}
+									</a>
+								</div>
+							);
+						})}
 					</div>
 				</MultiColumnSection>
+
+				<FeaturedResource resource={dockerTutorial}>
+					<p>
+						Many software development teams are containerizing their .NET
+						applications. While Docker and containerization open the doors to
+						cloud-native and planet-scale applications, containerization is not
+						only about that!
+					</p>{" "}
+					<p>
+						With Docker containers, you can package your .NET apps and
+						dependencies into portable containers that serve as the unit of
+						deployment, no matter where you want to run the application.
+						Containers make sure deployment happens in a well-known environment.
+					</p>{" "}
+					<p>
+						This tutorial aims to inform .NET developers who may have heard
+						about Docker but aren't sure what it is, why they should care, and
+						how it fits into developing their distributed .NET applications.
+					</p>
+				</FeaturedResource>
+
+				{aspNetTutorials && (
+					<ListingSection
+						title={`Learn ASP.NET Core`}
+						subtitle={`Tutorials that help you build amazing web experiences with .NET.`}
+						resources={aspNetTutorials}
+						moreLink={`${channel.url}technologies/asp.net/`}
+						separator={true}
+						includeCardFooter={false}
+					/>
+				)}
+
+				{refactoringTips && (
+					<ListingSection
+						title={`Learn about refactoring`}
+						resources={refactoringTips}
+						moreLink={`/topics/refactoring/`}
+						separator={true}
+						includeCardFooter={false}
+					/>
+				)}
 
 				{tutorials && (
 					<ListingSection
 						title={`Recent Tutorials`}
 						resources={tutorials}
 						moreLink={`${channel.url}tutorials/`}
+						separator={true}
 					/>
 				)}
+
+				{tips && (
+					<ListingSection
+						title={`Recent Tips`}
+						resources={tips}
+						moreLink={`${channel.url}tips/`}
+						separator={false}
+					/>
+				)}
+
 				{eventPlaylists && (
 					<ListingSection
-						title={`JetBrains .NET Events`}
+						title={`Past Events`}
 						resources={eventPlaylists}
 						separator={true}
 					/>

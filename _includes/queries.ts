@@ -8,6 +8,8 @@ export type QueryFilter = {
 	limit?: number;
 	resourceTypes?: RESOURCE_TYPES | POSSIBLE_RESOURCE_TYPES;
 	tag?: string;
+	customFilter?: (resource: Resource) => boolean;
+	sorter?: (a: Resource, b: Resource) => number;
 };
 
 export function getResources(
@@ -35,6 +37,11 @@ export function getResources(
 		resources = resources.filter((r) => r.channel == channel);
 	}
 
+	const customFilter = filter && filter.customFilter;
+	if (customFilter) {
+		resources = resources.filter(customFilter);
+	}
+
 	const limit = filter && filter.limit;
 	if (limit) {
 		resources = resources.slice(0, limit);
@@ -44,8 +51,14 @@ export function getResources(
 		return null;
 	}
 
-	// Sort in reverse date order
-	resources.sort((a, b) => b.date.getTime() - a.date.getTime());
+	const sorter = filter && filter.sorter;
+	if (sorter) {
+		// Sort by custom sorter
+		resources.sort(sorter);
+	} else {
+		// Sort in reverse date order
+		resources.sort((a, b) => b.date.getTime() - a.date.getTime());
+	}
 	return resources;
 }
 
