@@ -3,7 +3,7 @@
 Run the following command
 
 ```bash
-docker build -f Dockerfile-RebuildTemp -t redirect-test . && docker run --rm redirect-test
+docker build -f Dockerfile-ValidateNginx -t redirect-test . && docker run --rm redirect-test
 ```
 
 This is going to run an NGINX container with custom
