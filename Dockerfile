@@ -8,7 +8,7 @@ COPY . .
 RUN npm run build
 
 
-FROM nginx:alpine as final
+FROM nginx:stable-alpine as final
 
 COPY --from=builder --chown=nginx:nginx /app/_site/ /usr/share/nginx/html/guide
 
