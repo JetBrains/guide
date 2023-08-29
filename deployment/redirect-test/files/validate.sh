@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Validate the Nginx configuration
 nginx -t -c /etc/nginx/nginx.conf
