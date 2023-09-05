@@ -5,14 +5,20 @@ import { Reference, References } from "./ReferenceModels";
 import { AllCollections, resolveReference } from "./registration";
 import { validateFrontmatter } from "./validators";
 import { DateTime } from "luxon";
+import { ALL_RESOURCES, RESOURCE_TYPES } from "./resourceType";
 
 const slugify = require("@sindresorhus/slugify");
 
 export const BaseFrontmatter = Type.Object({
-	resourceType: Type.Optional(
-		Type.String({
+	resourceType: Type.Union(
+		[
+			...ALL_RESOURCES.map((x) => Type.Literal(x)),
+			Type.Literal("author"),
+			Type.Literal("topic"),
+		],
+		{
 			description: "Resource type. Should not be specified manually",
-		})
+		}
 	),
 	title: Type.String({ description: "Title of this resource" }),
 	subtitle: Type.Optional(
@@ -35,8 +41,8 @@ export type BaseItem = {
 	page: EleventyPage;
 };
 
-export class BaseEntity implements BaseFrontmatter {
-	resourceType: string;
+export class BaseEntity<T extends RESOURCE_TYPES> implements BaseFrontmatter {
+	resourceType: T;
 	slug: string;
 	title: string;
 	subtitle?: string;
@@ -46,7 +52,7 @@ export class BaseEntity implements BaseFrontmatter {
 	static frontmatterSchema = BaseFrontmatter;
 
 	constructor({ data, page }: { data: BaseFrontmatter; page: EleventyPage }) {
-		this.resourceType = data.resourceType as string;
+		this.resourceType = data.resourceType as T;
 		this.slug = page.fileSlug;
 		this.title = data.title;
 		this.subtitle = data.subtitle;
@@ -100,7 +106,10 @@ export const ResourceFrontmatter = Type.Intersect([
 ]);
 export type ResourceFrontmatter = Static<typeof ResourceFrontmatter>;
 
-export class Resource extends BaseEntity implements ResourceFrontmatter {
+export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
+	extends BaseEntity<T>
+	implements ResourceFrontmatter
+{
 	anchor: string; // Playlist items need unique identifier
 	author: string;
 	date: Date;
@@ -143,9 +152,9 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
 		}
 	}
 
-	async init(): Promise<this> {
-		return this;
-	}
+	// async init(): Promise<this> {
+	// 	return this;
+	// }
 
 	resolve(allCollections: AllCollections): void {
 		const { allReferences, allResources } = allCollections;
@@ -169,7 +178,7 @@ export class Resource extends BaseEntity implements ResourceFrontmatter {
 export type ResourceCollection = Map<string, Resource>;
 export type ReferenceCollection = Map<string, Reference>;
 
-export function getResourceType<T>(
+export function getResourceType<T extends RESOURCE_TYPES>(
 	data: { resourceType?: T },
 	page: EleventyPage
 ): T {

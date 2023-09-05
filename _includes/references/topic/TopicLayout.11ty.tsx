@@ -1,7 +1,6 @@
 import h, { JSX } from "vhtml";
 import { ReferenceLayout } from "../../layouts/ReferenceLayout.11y";
 import { LayoutContext, LayoutProps } from "../../../src/models";
-import { Resource } from "../../../src/ResourceModels";
 import { Topic, TopicFrontmatter } from "./TopicModels";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 
@@ -20,8 +19,8 @@ export function TopicLayout(
 	}
 
 	const linkedResources = this.getResources().filter(
-		(ci) => ci.topics && ci.topics.includes(topic.label as string)
-	) as Resource[];
+		(ci) => ci.topics && ci.topics.includes(topic.label)
+	);
 
 	let figure = "";
 	if (topic.icon) {

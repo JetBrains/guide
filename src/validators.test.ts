@@ -16,7 +16,7 @@ test("validates good frontmatter", () => {
 		slug: "some-slug",
 		url: "/tips/some-slug",
 		date: new Date(),
-		resourceType: "some-resourcetype",
+		resourceType: "tip",
 		thumbnail: "thumbnail.png",
 		inputFolder: "site/webstorm-pycharm-webstorm-guide/tips/some-slug/",
 	};

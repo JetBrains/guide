@@ -12,7 +12,44 @@
           "properties": {
             "resourceType": {
               "description": "Resource type. Should not be specified manually",
-              "type": "string"
+              "anyOf": [
+                {
+                  "const": "tip",
+                  "type": "string"
+                },
+                {
+                  "const": "article",
+                  "type": "string"
+                },
+                {
+                  "const": "tutorial",
+                  "type": "string"
+                },
+                {
+                  "const": "tutorialstep",
+                  "type": "string"
+                },
+                {
+                  "const": "playlist",
+                  "type": "string"
+                },
+                {
+                  "const": "channel",
+                  "type": "string"
+                },
+                {
+                  "const": "page",
+                  "type": "string"
+                },
+                {
+                  "const": "author",
+                  "type": "string"
+                },
+                {
+                  "const": "topic",
+                  "type": "string"
+                }
+              ]
             },
             "title": {
               "description": "Title of this resource",
@@ -35,6 +72,7 @@
             }
           },
           "required": [
+            "resourceType",
             "title"
           ]
         },

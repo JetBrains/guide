@@ -3,7 +3,11 @@ import {
 	getAllCollections,
 	RegisterIncludesProps,
 } from "../src/registration";
-import { Resource, ResourceFrontmatter } from "../src/ResourceModels";
+import {
+	BaseEntity,
+	Resource,
+	ResourceFrontmatter,
+} from "../src/ResourceModels";
 import { Reference, ReferenceFrontmatter } from "../src/ReferenceModels";
 import { Author, AuthorFrontmatter } from "./references/author/AuthorModels";
 import { Topic, TopicFrontmatter } from "./references/topic/TopicModels";
@@ -36,8 +40,12 @@ import { dumpObsoletes } from "../tools/obsoletes";
 import { Page } from "./resources/page/PageModels";
 import { Article } from "./resources/article/ArticleModels";
 import { Channel } from "./resources/channel/ChannelModels";
+import { RESOURCE_TYPES } from "../src/resourceType";
 
-export const resourceCollections = {
+export const resourceCollections: Record<
+	RESOURCE_TYPES,
+	new (...args: any[]) => BaseEntity<RESOURCE_TYPES>
+> = {
 	channel: Channel,
 	page: Page,
 	playlist: Playlist,
@@ -45,7 +53,8 @@ export const resourceCollections = {
 	tutorial: Tutorial,
 	tutorialstep: TutorialStep,
 	article: Article,
-};
+} as const;
+
 export const referenceCollections = {
 	author: Author,
 	topic: Topic,

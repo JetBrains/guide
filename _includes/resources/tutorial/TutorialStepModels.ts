@@ -3,6 +3,7 @@ import { validateFrontmatter } from "../../../src/validators";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { EleventyPage } from "../../../src/models";
 import { Tutorial } from "./TutorialModels";
+import { TUTORIAL_STEP_RESOURCE_TYPE } from "../../../src/resourceType";
 
 export const TutorialStepFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -36,7 +37,10 @@ export const TutorialStepFrontmatter = Type.Intersect([
 ]);
 export type TutorialStepFrontmatter = Static<typeof TutorialStepFrontmatter>;
 
-export class TutorialStep extends Resource implements TutorialStepFrontmatter {
+export class TutorialStep
+	extends Resource<TUTORIAL_STEP_RESOURCE_TYPE>
+	implements TutorialStepFrontmatter
+{
 	video: TutorialStepFrontmatter["video"];
 	parentTutorial?: Tutorial;
 	videoBottom: boolean;

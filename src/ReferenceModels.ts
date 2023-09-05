@@ -2,6 +2,7 @@ import { BaseEntity, BaseFrontmatter } from "./ResourceModels";
 import { EleventyPage } from "./models";
 import { Static, Type } from "@sinclair/typebox";
 import { Channel } from "../_includes/resources/channel/ChannelModels";
+import { RESOURCE_TYPES } from "./resourceType";
 
 export const ReferenceFrontmatter = Type.Intersect([
 	BaseFrontmatter,
@@ -13,7 +14,10 @@ export const ReferenceFrontmatter = Type.Intersect([
 ]);
 export type ReferenceFrontmatter = Static<typeof ReferenceFrontmatter>;
 
-export class Reference extends BaseEntity implements ReferenceFrontmatter {
+export class Reference<T extends RESOURCE_TYPES = RESOURCE_TYPES>
+	extends BaseEntity<T>
+	implements ReferenceFrontmatter
+{
 	label: string;
 	static joinKey = "references"; // What field on resource? Used in label namespace.
 

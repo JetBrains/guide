@@ -2,6 +2,7 @@ import { Static, Type } from "@sinclair/typebox";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { EleventyPage } from "../../../src/models";
 import path from "upath";
+import { ARTICLE_RESOURCE_TYPE } from "../../../src/resourceType";
 
 export const ArticleFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -55,7 +56,10 @@ export const ArticleFrontmatter = Type.Intersect([
 ]);
 export type ArticleFrontmatter = Static<typeof ArticleFrontmatter>;
 
-export class Article extends Resource implements ArticleFrontmatter {
+export class Article
+	extends Resource<ARTICLE_RESOURCE_TYPE>
+	implements ArticleFrontmatter
+{
 	animatedGif?: ArticleFrontmatter["animatedGif"];
 	video?: ArticleFrontmatter["video"];
 	screenshot?: ArticleFrontmatter["screenshot"];

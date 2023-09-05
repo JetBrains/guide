@@ -5,7 +5,6 @@ import {
 } from "../../layouts/ReferenceLayout.11y";
 import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
-import { Resource } from "../../../src/ResourceModels";
 import { Author } from "./AuthorModels";
 
 export function AuthorLayout(
@@ -20,7 +19,7 @@ export function AuthorLayout(
 		throw new Error(`Author "${page.fileSlug}" not in collection`);
 	}
 
-	const linkedResources: Resource[] = this.getResources().filter(
+	const linkedResources = this.getResources().filter(
 		(ci) => ci.author === author.label
 	);
 

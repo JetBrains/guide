@@ -2,6 +2,7 @@ import { Static, Type } from "@sinclair/typebox";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { EleventyPage } from "../../../src/models";
 import { AllCollections } from "../../../src/registration";
+import { PLAYLIST_RESOURCE_TYPE } from "../../../src/resourceType";
 
 export const PlaylistFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -11,7 +12,10 @@ export const PlaylistFrontmatter = Type.Intersect([
 ]);
 export type PlaylistFrontmatter = Static<typeof PlaylistFrontmatter>;
 
-export class Playlist extends Resource implements PlaylistFrontmatter {
+export class Playlist
+	extends Resource<PLAYLIST_RESOURCE_TYPE>
+	implements PlaylistFrontmatter
+{
 	playlistItems: string[];
 	playlistResources: Resource[];
 	static frontmatterSchema: any = PlaylistFrontmatter;

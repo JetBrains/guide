@@ -1,11 +1,12 @@
 import { Resource } from "../src/ResourceModels";
 import { Reference, ReferenceFrontmatter } from "../src/ReferenceModels";
 import { EleventyCollectionItem } from "../src/models";
+import { POSSIBLE_RESOURCE_TYPES, RESOURCE_TYPES } from "../src/resourceType";
 
 export type QueryFilter = {
 	channel?: string;
 	limit?: number;
-	resourceTypes?: string[];
+	resourceTypes?: RESOURCE_TYPES | POSSIBLE_RESOURCE_TYPES;
 	tag?: string;
 };
 
@@ -14,7 +15,12 @@ export function getResources(
 	filter: QueryFilter
 ): Resource[] | null {
 	let resources = allResourcesList;
-	const types = filter && filter.resourceTypes;
+	const types =
+		filter && filter.resourceTypes != null
+			? Array.isArray(filter.resourceTypes)
+				? [...filter.resourceTypes]
+				: [filter.resourceTypes]
+			: undefined;
 	if (types) {
 		resources = resources.filter((r) => types.includes(r.resourceType!));
 	}

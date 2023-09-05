@@ -1,6 +1,7 @@
 import { Static, Type } from "@sinclair/typebox";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { EleventyPage, LayoutProps } from "../../../src/models";
+import { CHANNEL_RESOURCE_TYPE } from "../../../src/resourceType";
 
 export const ChannelFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -28,7 +29,10 @@ export const ChannelFrontmatter = Type.Intersect([
 ]);
 export type ChannelFrontmatter = Static<typeof ChannelFrontmatter>;
 
-export class Channel extends Resource implements ChannelFrontmatter {
+export class Channel
+	extends Resource<CHANNEL_RESOURCE_TYPE>
+	implements ChannelFrontmatter
+{
 	hero?: string;
 	subnav?: ChannelFrontmatter["subnav"];
 	static frontmatterSchema = ChannelFrontmatter;
@@ -47,10 +51,10 @@ export class Channel extends Resource implements ChannelFrontmatter {
 		this.hero = data.hero;
 		this.subnav = data.subnav;
 	}
-
-	async init(): Promise<this> {
-		return this;
-	}
+	//
+	// async init(): Promise<this> {
+	// 	return this;
+	// }
 }
 
 // The following type is helpful for re-use in

@@ -226,6 +226,7 @@ fun StepsScope.buildSite() {
                 cd ${'$'}cwd
 
                 ## Move site to share
+                rm -rf _site/.assets-cache/
                 mkdir -p ${'$'}JB_SPACE_FILE_SHARE_PATH/_site
                 cp -r _site/ ${'$'}JB_SPACE_FILE_SHARE_PATH/_site
                 mv ${'$'}JB_SPACE_FILE_SHARE_PATH/_site/_site ${'$'}JB_SPACE_FILE_SHARE_PATH/_site/guide
@@ -240,6 +241,8 @@ fun StepsScope.deploySite() {
             cpu = 2.cpu
             memory = 8.gb
         }
+
+        env["SPACE_AUTOMATION_SCRIPT_RUNNER_OPTS"] = "-Xms512m -Xmx7192m"
 
         kotlinScript { api ->
             val gitBranch = api.gitBranch()

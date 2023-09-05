@@ -2,6 +2,7 @@ import { Static, Type } from "@sinclair/typebox";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { EleventyPage } from "../../../src/models";
 import path from "upath";
+import { TIP_RESOURCE_TYPE } from "../../../src/resourceType";
 
 export const TipFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -55,7 +56,7 @@ export const TipFrontmatter = Type.Intersect([
 ]);
 export type TipFrontmatter = Static<typeof TipFrontmatter>;
 
-export class Tip extends Resource implements TipFrontmatter {
+export class Tip extends Resource<TIP_RESOURCE_TYPE> implements TipFrontmatter {
 	animatedGif?: TipFrontmatter["animatedGif"];
 	screenshot?: TipFrontmatter["screenshot"];
 	seealso?: any;

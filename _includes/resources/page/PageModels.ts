@@ -1,11 +1,15 @@
 import { Static, Type } from "@sinclair/typebox";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { EleventyPage } from "../../../src/models";
+import { PAGE_RESOURCE_TYPE } from "../../../src/resourceType";
 
 export const PageFrontmatter = Type.Intersect([ResourceFrontmatter]);
 export type PageFrontmatter = Static<typeof PageFrontmatter>;
 
-export class Page extends Resource implements PageFrontmatter {
+export class Page
+	extends Resource<PAGE_RESOURCE_TYPE>
+	implements PageFrontmatter
+{
 	static frontmatterSchema = PageFrontmatter;
 
 	constructor({ data, page }: { data: PageFrontmatter; page: EleventyPage }) {

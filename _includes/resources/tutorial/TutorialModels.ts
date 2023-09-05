@@ -1,5 +1,6 @@
 import { Static, Type } from "@sinclair/typebox";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
+import { TUTORIAL_RESOURCE_TYPE } from "../../../src/resourceType";
 import { EleventyPage } from "../../../src/models";
 import path from "upath";
 import { AllCollections } from "../../../src/registration";
@@ -26,7 +27,10 @@ export const TutorialFrontmatter = Type.Intersect([
 ]);
 export type TutorialFrontmatter = Static<typeof TutorialFrontmatter>;
 
-export class Tutorial extends Resource implements TutorialFrontmatter {
+export class Tutorial
+	extends Resource<TUTORIAL_RESOURCE_TYPE>
+	implements TutorialFrontmatter
+{
 	tutorialItems: string[];
 	tutorialSteps: TutorialStep[];
 	videoBottom: boolean;
