@@ -57,6 +57,13 @@ class IndexPage {
 						the flow.
 					</p>
 				</FeaturedResource>
+
+				<ListingSection
+					title="Latest"
+					resources={latestContent}
+					moreLink="/latest/"
+				/>
+
 				<MultiColumnSection>
 					<div>
 						<h2>Learn something new, quickly</h2>
@@ -83,12 +90,6 @@ class IndexPage {
 						</p>
 					</div>
 				</MultiColumnSection>
-
-				<ListingSection
-					title="Latest"
-					resources={latestContent}
-					moreLink="/latest/"
-				/>
 			</BaseLayout>
 		);
 	}
