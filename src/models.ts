@@ -2,7 +2,7 @@ import { Static, Type } from "@sinclair/typebox";
 import { BaseFrontmatter, Resource } from "./ResourceModels";
 import { Reference, ReferenceFrontmatter } from "./ReferenceModels";
 import { SiteCollections } from "../_includes/models";
-import { QueryFilter } from "../_includes/queries";
+import { QueryFilter, ReferencesQueryFilter } from "../_includes/queries";
 import { PaginationData } from "../_includes/pagination/Pagination.11ty";
 
 export const EleventyPage = Type.Object({
@@ -35,7 +35,7 @@ export interface LayoutContext {
 	getResources(filter?: QueryFilter): Resource[];
 	getResource(url: string): Resource;
 
-	getReferences(filter: QueryFilter): ReferenceFrontmatter[];
+	getReferences(filter: ReferencesQueryFilter): ReferenceFrontmatter[];
 	getReference(url: string): Reference;
 
 	renderMarkdown(content: string): string;

@@ -35,6 +35,7 @@ import {
 	getResource,
 	getResources,
 	QueryFilter,
+	ReferencesQueryFilter,
 } from "./queries";
 import { dumpObsoletes } from "../tools/obsoletes";
 import { Page } from "./resources/page/PageModels";
@@ -126,7 +127,7 @@ export async function registerIncludes(
 	);
 	eleventyConfig.addJavaScriptFunction(
 		"getReferences",
-		(filter: QueryFilter): ReferenceFrontmatter[] | null =>
+		(filter: ReferencesQueryFilter): ReferenceFrontmatter[] | null =>
 			getReferences(allReferencesList, filter)
 	);
 	eleventyConfig.addJavaScriptFunction(

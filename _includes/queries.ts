@@ -12,6 +12,11 @@ export type QueryFilter = {
 	sorter?: (a: Resource, b: Resource) => number;
 };
 
+export type ReferencesQueryFilter = {
+	resourceTypes?: RESOURCE_TYPES | POSSIBLE_RESOURCE_TYPES;
+	customFilter?: (reference: ReferenceFrontmatter) => boolean;
+};
+
 export function getResources(
 	allResourcesList: Resource[],
 	filter: QueryFilter
@@ -78,13 +83,22 @@ export function getReference(
 
 export function getReferences(
 	allReferencesList: ReferenceFrontmatter[],
-	{ resourceTypes }: QueryFilter
+	filter: ReferencesQueryFilter
 ): ReferenceFrontmatter[] | null {
 	let references = allReferencesList;
-	if (resourceTypes) {
-		references = references.filter((r) =>
-			resourceTypes.includes(r.resourceType!)
-		);
+	const types =
+		filter && filter.resourceTypes != null
+			? Array.isArray(filter.resourceTypes)
+				? [...filter.resourceTypes]
+				: [filter.resourceTypes]
+			: undefined;
+	if (types) {
+		references = references.filter((r) => types.includes(r.resourceType!));
+	}
+
+	const customFilter = filter && filter.customFilter;
+	if (customFilter) {
+		references = references.filter(customFilter);
 	}
 
 	if (references.length == 0) {

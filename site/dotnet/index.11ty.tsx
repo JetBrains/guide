@@ -43,19 +43,17 @@ class DotNetHomepage {
 	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
-		const topics = (
-			this.getReferences({
-				resourceTypes: ["topic"],
-			}) as Topic[]
-		).filter(
-			(r) =>
-				r.label.indexOf("blazor") >= 0 ||
-				r.label.indexOf("csharp") >= 0 ||
-				r.label.indexOf("fsharp") >= 0 ||
-				r.label.indexOf(".net") >= 0 ||
-				r.label.indexOf("asp.net") >= 0 ||
-				r.label.indexOf("gaming") >= 0
-		);
+		const topics = this.getReferences({
+			resourceTypes: ["topic"],
+			customFilter: (r) =>
+				r.label != undefined &&
+				(r.label.indexOf("blazor") >= 0 ||
+					r.label.indexOf("csharp") >= 0 ||
+					r.label.indexOf("fsharp") >= 0 ||
+					r.label.indexOf(".net") >= 0 ||
+					r.label.indexOf("asp.net") >= 0 ||
+					r.label.indexOf("gaming") >= 0),
+		}) as Topic[];
 
 		const tips = this.getResources({
 			resourceTypes: [TIP_RESOURCE],
@@ -118,28 +116,26 @@ class DotNetHomepage {
 							let figure: string;
 							if (topic.icon) {
 								figure = (
-									<i class={`${topic.icon} has-text-${topic.accent} fa-3x`} />
+									<i class={`${topic.icon} has-text-${topic.accent} fa-2x`} />
 								);
 							} else if (topic.logo) {
 								figure = <img src={topic.logo} alt={topic.title} />;
 							} else {
 								figure = (
-									<i class={`fas fa-file has-text-${topic.accent} fa-5x`} />
+									<i class={`fas fa-file has-text-${topic.accent} fa-2x`} />
 								);
 							}
 
 							return (
-								<div className="column mb-1 is-6 is-4-desktop py-5 has-box-hover has-position-relative">
-									<a href={topic.url}>
-										<figure className="image is-48x48 m-0 mb-1">
-											{figure}
-										</figure>
-									</a>
+								<div className="column mb-1 is-6 is-4-desktop py-5 has-box-hover has-text-centered has-position-relative">
 									<a
 										href={topic.url}
 										aria-label={`Topic`}
 										className="is-size-5 has-text-weight-bold title is-stretched-link"
 									>
+										<figure className="image is-48x48 mb-1 mx-auto">
+											{figure}
+										</figure>
 										{topic.title}
 									</a>
 								</div>
