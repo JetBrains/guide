@@ -29,11 +29,8 @@ const Navbar = (): JSX.Element => {
 						<a class="navbar-item has-text-grey-light" href="/explore/">
 							Explore
 						</a>
-						<a class="navbar-item has-text-grey-light" href="/tips/">
-							Tips
-						</a>
-						<a class="navbar-item has-text-grey-light" href="/tutorials/">
-							Tutorials
+						<a class="navbar-item has-text-grey-light" href="/channels/">
+							Channels
 						</a>
 						<a class="navbar-item has-text-grey-light" href="/topics/">
 							Topics
