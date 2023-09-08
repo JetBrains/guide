@@ -15,6 +15,7 @@ attributes:
         branchFilter:
           include:
             - 'refs/heads/main'
+            - 'refs/heads/g4'
       script: |
         npm install
 components:
