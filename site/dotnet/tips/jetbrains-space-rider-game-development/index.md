@@ -2,7 +2,7 @@
 date: 2023-04-24
 title: JetBrains Space and JetBrains Rider
 topics:
-  - gaming
+  - gamedev
   - ide
   - rider
   - unity

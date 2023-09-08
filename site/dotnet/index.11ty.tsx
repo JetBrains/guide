@@ -51,8 +51,7 @@ class DotNetHomepage {
 					r.label.indexOf("csharp") >= 0 ||
 					r.label.indexOf("fsharp") >= 0 ||
 					r.label.indexOf(".net") >= 0 ||
-					r.label.indexOf("asp.net") >= 0 ||
-					r.label.indexOf("gaming") >= 0),
+					r.label.indexOf("asp.net") >= 0),
 		}) as Topic[];
 
 		const tips = this.getResources({

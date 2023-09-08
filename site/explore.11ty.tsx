@@ -140,6 +140,9 @@ class ExplorePage {
 											<a href="/dotnet/">.NET</a>
 										</li>
 										<li>
+											<a href="/gamedev/">Game Development</a>
+										</li>
+										<li>
 											<a href="/goland/">GoLand</a>
 										</li>
 										<li>
