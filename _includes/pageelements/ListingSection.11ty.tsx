@@ -5,26 +5,32 @@ import h from "vhtml";
 export type ListingSectionProps = {
 	title: string;
 	subtitle?: string;
+	anchor?: string;
 	moreLink?: string;
 	resources: Resource[];
 	separator?: boolean;
 	isSection?: boolean;
 	includeCardFooter?: boolean;
+	sectionExtraClass?: string;
 };
 
 function ListingSection({
 	title,
 	subtitle,
+	anchor,
 	moreLink,
 	resources,
 	separator,
 	isSection = true,
 	includeCardFooter = true,
+	sectionExtraClass,
 }: ListingSectionProps) {
 	/* A reusable component for section-style paginated ResourceCard listings */
 	const columnClassName = isSection
 		? undefined
 		: "is-half-tablet is-one-third-desktop";
+
+	const sectionClassName = sectionExtraClass ? sectionExtraClass : "";
 
 	const listing = (
 		<div class="columns is-multiline">
@@ -41,7 +47,7 @@ function ListingSection({
 	);
 
 	const container = (
-		<div className="container">
+		<div className="container" id={anchor}>
 			<div className="columns is-vcentered is-mobile">
 				<div className="column is-8">
 					<h2 className="mt-2 mb-4 is-size-1 has-text-weight-bold">{title}</h2>
@@ -62,7 +68,7 @@ function ListingSection({
 	);
 
 	const result = isSection ? (
-		<section class="section">{container}</section>
+		<section class={`section ${sectionClassName}`}>{container}</section>
 	) : (
 		container
 	);

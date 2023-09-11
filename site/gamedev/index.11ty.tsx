@@ -13,13 +13,12 @@ import {
 	TIP_RESOURCE,
 	TUTORIAL_RESOURCE,
 } from "../../src/resourceType";
-import ResourceCard from "../../_includes/resourcecard/ResourceCard.11ty";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Game Development",
 	subtitle: "Learn how to build games with Unity and Unreal Engine.",
 	resourceType: "channel",
-	date: new Date(Date.UTC(2020, 1, 11)),
+	date: new Date(Date.UTC(2023, 9, 11)),
 	author: "maartenba",
 	thumbnail: "thumbnail.png",
 	hero: "/assets/gamedev_splash.svg",
@@ -84,56 +83,37 @@ class GameDevHomepage {
 					subtitle={channel.subtitle!}
 					subtitleExtraClass={"has-text-white"}
 					image={channel.hero!}
+					extraContent={
+						<div className="buttons are-medium">
+							<a href="#learn-unity" className="button is-rounded">
+								Learn Unity
+							</a>
+							<a href="#learn-unreal-engine" className="button is-rounded">
+								Learn Unreal Engine
+							</a>
+						</div>
+					}
 				/>
 
-				<section className="section has-background-grey-lighter">
-					<div className="container">
-						<div className="columns">
-							<div className="column">
-								<h2 className="mt-2 mb-4 is-size-1-desktop is-size-2-touch has-text-weight-bold">
-									Learn Unity
-								</h2>
-								<p className="subtitle has-text-grey mb-5">
-									Level up your game development workflow.
-								</p>
-								{unityTutorials && (
-									<div className="columns is-multiline">
-										{unityTutorials.map((resource) => {
-											return (
-												<ResourceCard
-													resource={resource}
-													columnClassName="is-6"
-													includeCardFooter={false}
-												></ResourceCard>
-											);
-										})}
-									</div>
-								)}
-							</div>
-							<div className="column">
-								<h2 className="mt-2 mb-4 is-size-1-desktop is-size-2-touch has-text-weight-bold">
-									Learn Unreal Engine
-								</h2>
-								<p className="subtitle has-text-grey mb-5">
-									Build games with Unreal Engine.
-								</p>
-								{unrealTutorials && (
-									<div className="columns is-multiline">
-										{unrealTutorials.map((resource) => {
-											return (
-												<ResourceCard
-													resource={resource}
-													columnClassName="is-6"
-													includeCardFooter={false}
-												></ResourceCard>
-											);
-										})}
-									</div>
-								)}
-							</div>
-						</div>
-					</div>
-				</section>
+				{unityTutorials && (
+					<ListingSection
+						title={`Learn Unity`}
+						anchor={"learn-unity"}
+						resources={unityTutorials}
+						includeCardFooter={false}
+						separator={false}
+					/>
+				)}
+
+				{unrealTutorials && (
+					<ListingSection
+						title={`Learn Unreal Engine`}
+						anchor={"learn-unreal-engine"}
+						resources={unrealTutorials}
+						includeCardFooter={false}
+						separator={true}
+					/>
+				)}
 
 				{tips && (
 					<ListingSection
@@ -141,6 +121,7 @@ class GameDevHomepage {
 						resources={tips}
 						moreLink={`${channel.url}tips/`}
 						separator={false}
+						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
 
@@ -148,7 +129,7 @@ class GameDevHomepage {
 					<ListingSection
 						title={`Past Events`}
 						resources={eventPlaylists}
-						separator={true}
+						separator={false}
 					/>
 				)}
 			</BaseLayout>
