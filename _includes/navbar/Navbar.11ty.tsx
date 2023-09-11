@@ -26,14 +26,14 @@ const Navbar = (): JSX.Element => {
 				</div>
 				<div class="navbar-menu has-background-dark">
 					<div class="navbar-end">
-						<a class="navbar-item has-text-grey-light" href="/explore/">
-							Explore
-						</a>
 						<a class="navbar-item has-text-grey-light" href="/channels/">
 							Channels
 						</a>
 						<a class="navbar-item has-text-grey-light" href="/topics/">
 							Topics
+						</a>
+						<a class="navbar-item has-text-grey-light" href="/explore/">
+							Explore
 						</a>
 					</div>
 					<NavbarSearch />
