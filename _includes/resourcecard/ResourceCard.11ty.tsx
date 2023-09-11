@@ -101,9 +101,11 @@ const ResourceCard = ({
 						>
 							{title}
 						</a>
-						{subtitle && <div class="content clamp-5">{subtitle}</div>}
+						{subtitle && !compactMode && (
+							<div class="content clamp-5">{subtitle}</div>
+						)}
 					</div>
-					{includeCardFooter && (
+					{includeCardFooter && !compactMode && (
 						<footer class="card-footer">
 							<div class="container p-4">
 								<div class="tags mb-2 clamp-2">
