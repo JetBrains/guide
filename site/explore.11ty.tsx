@@ -3,8 +3,8 @@ import h, { JSX } from "vhtml";
 import { LayoutContext, LayoutProps } from "../src/models";
 import { PageFrontmatter } from "../_includes/resources/page/PageModels";
 import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
-import Logo from "../_includes/logos/Logo.11ty";
 import ListingSection from "../_includes/pageelements/ListingSection.11ty";
+import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
 
 type ExplorePageProps = LayoutProps & PageFrontmatter;
 
@@ -24,14 +24,20 @@ class ExplorePage {
 			limit: 12,
 		});
 
+		const channels = [
+			this.getResource("/remote/"),
+			this.getResource("/gamedev/"),
+			this.getResource("/dotnet/"),
+		];
+
 		return (
 			<BaseLayout {...data}>
 				<div class="section">
 					<div class="container">
 						<div class="columns is-multiline is-flex-direction-row-reverse">
 							<div class="column">
-								<div class="columns is-multiline">
-									<div class="column is-12 is-5-desktop mb-5 mr-auto">
+								<div class="columns">
+									<div class="column is-four-fifths mb-5 mr-auto">
 										<h2 class="title mb-6 is-size-1 is-size-3-mobile has-text-weight-bold">
 											Explore our channels
 										</h2>
@@ -39,93 +45,27 @@ class ExplorePage {
 											Looking to learn something new, or refresh your existing
 											skills?
 										</p>
-
-										<div class="buttons mt-6">
-											<a
-												class="button is-rounded is-primary is-outlined"
-												href="/channels/"
-											>
-												Browse...
-											</a>
-										</div>
 									</div>
-									<div class="column is-12 is-6-desktop">
-										<div class="columns is-multiline is-mobile">
-											<div class="column mb-1 is-6 py-5">
-												<a href="/dotnet/">
-													<figure class="image is-48x48 mb-1">
-														<Logo product="resharper" width={48} height={48} />
-													</figure>
-												</a>
-												<a
-													href="/dotnet/"
-													class="is-size-5 has-text-weight-bold title"
-												>
-													.NET
-												</a>
-											</div>
-											<div class="column mb-1 is-6 py-5">
-												<a href="/goland/">
-													<figure class="image is-48x48 mb-1">
-														<Logo product="goland" width={48} height={48} />
-													</figure>
-												</a>
-												<a
-													href="/goland/"
-													class="is-size-5 has-text-weight-bold title"
-												>
-													GoLand
-												</a>
-											</div>
-											<div class="column mb-1 is-6 py-5">
-												<a href="/idea/">
-													<figure class="image is-48x48 mb-1">
-														<Logo
-															product="intellij-idea"
-															width={48}
-															height={48}
-														/>
-													</figure>
-												</a>
-												<a
-													href="/idea/"
-													class="is-size-5 has-text-weight-bold title"
-												>
-													IntelliJ IDEA
-												</a>
-											</div>
-											<div class="column mb-1 is-6 py-5">
-												<a href="/pycharm/">
-													<figure class="image is-48x48 mb-1">
-														<Logo product="pycharm" width={48} height={48} />
-													</figure>
-												</a>
-												<a
-													href="/pycharm/"
-													class="is-size-5 has-text-weight-bold title"
-												>
-													PyCharm
-												</a>
-											</div>
-											<div class="column mb-1 is-6 py-5">
-												<a href="/webstorm/">
-													<figure class="image is-48x48 mb-1">
-														<Logo product="webstorm" width={48} height={48} />
-													</figure>
-												</a>
-												<a
-													href="/webstorm/"
-													class="is-size-5 has-text-weight-bold title"
-												>
-													WebStorm
-												</a>
-											</div>
-										</div>
+									<div class="column has-text-right">
+										<a
+											class="button is-rounded is-outlined"
+											href={`/channels/`}
+										>
+											More...
+										</a>
 									</div>
 								</div>
 
+								<div class="columns is-multiline">
+									{channels.map((channel) => {
+										return (
+											<ResourceCard compactMode={true} resource={channel} />
+										);
+									})}
+								</div>
+
 								<ListingSection
-									title="Latest"
+									title="Latest content"
 									resources={latestContent}
 									moreLink="/latest/"
 									isSection={false}
@@ -137,10 +77,13 @@ class ExplorePage {
 									<p class="menu-label">Channels</p>
 									<ul class="menu-list">
 										<li>
-											<a href="/dotnet/">.NET</a>
+											<a href="/remote/">Remote Development</a>
 										</li>
 										<li>
-											<a href="/gamedev/">Game Development</a>
+											<li>
+												<a href="/gamedev/">Game Development</a>
+											</li>
+											<a href="/dotnet/">.NET</a>
 										</li>
 										<li>
 											<a href="/goland/">GoLand</a>

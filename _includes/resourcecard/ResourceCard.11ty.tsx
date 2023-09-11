@@ -30,6 +30,7 @@ export type ResourceCardProps = {
 	columnClassName?: string;
 	hasShadow?: boolean;
 	includeCardFooter?: boolean;
+	compactMode?: boolean;
 };
 
 const lazyLoading = "lazy" as const;
@@ -65,6 +66,7 @@ const ResourceCard = ({
 	columnClassName,
 	hasShadow = false,
 	includeCardFooter = true,
+	compactMode = false,
 }: ResourceCardProps): JSX.Element => {
 	doesExist(references);
 	const { author, topics } = references;
