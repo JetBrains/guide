@@ -3,6 +3,8 @@ title: javascript
 subtitle: Support for server and browser JavaScript via WebStorm.
 accent: primary
 icon: fab fa-js-square
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /pycharm/topics/javascript/
 ---

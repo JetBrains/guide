@@ -3,7 +3,7 @@ import { Link, LinkFrontmatter } from "./LinkModels";
 import { Author } from "../../references/author/AuthorModels";
 import VideoPlayer from "../../video/VideoPlayer.11ty";
 import { LayoutContext, LayoutProps } from "../../../src/models";
-import { Topic } from "../../references/topic/TopicModels";
+import { Topic } from "../../resources/topic/TopicModels";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
@@ -16,7 +16,7 @@ export function LinkLayout(
 	data: LinkLayoutData
 ): JSX.Element {
 	const { collections, content, page } = data;
-	const link = collections.allResources.get(page.url) as Link;
+	const link = collections.resourceMap.get(page.url) as Link;
 	if (!link) {
 		throw new Error(`Link "${page.url}" not in collection`);
 	}

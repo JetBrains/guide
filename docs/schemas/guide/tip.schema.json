@@ -118,10 +118,6 @@
               "format": "date",
               "type": "string"
             },
-            "thumbnail": {
-              "description": "File name of the thumbnail for this resource",
-              "type": "string"
-            },
             "cardThumbnail": {
               "description": "File name of the social card thumbnail for this resource",
               "type": "string"
@@ -232,33 +228,18 @@
     {
       "type": "object",
       "properties": {
-        "animatedGif": {
-          "description": "Animated GIF to show in this tip",
-          "type": "object",
-          "properties": {
-            "file": {
-              "description": "File name of the animated GIF, can be webm or gif",
-              "type": "string"
-            },
-            "width": {
-              "description": "Width the animated GIF should be rendered",
-              "type": "number"
-            },
-            "height": {
-              "description": "Height the animated GIF should be rendered",
-              "type": "number"
-            }
-          },
-          "required": [
-            "file",
-            "width",
-            "height"
-          ]
-        },
-        "screenshot": {
-          "description": "File name of a screenshot to show in this tip",
+        "thumbnail": {
+          "description": "Path to thumbnail image.",
           "type": "string"
-        },
+        }
+      },
+      "required": [
+        "thumbnail"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
         "video": {
           "anyOf": [
             {
@@ -289,6 +270,38 @@
               ]
             }
           ]
+        }
+      }
+    },
+    {
+      "type": "object",
+      "properties": {
+        "animatedGif": {
+          "description": "Animated GIF to show in this tip",
+          "type": "object",
+          "properties": {
+            "file": {
+              "description": "File name of the animated GIF, can be webm or gif",
+              "type": "string"
+            },
+            "width": {
+              "description": "Width the animated GIF should be rendered",
+              "type": "number"
+            },
+            "height": {
+              "description": "Height the animated GIF should be rendered",
+              "type": "number"
+            }
+          },
+          "required": [
+            "file",
+            "width",
+            "height"
+          ]
+        },
+        "screenshot": {
+          "description": "File name of a screenshot to show in this tip",
+          "type": "string"
         },
         "seealso": {
           "description": "Item(s) to show in the See Also section of this tip"

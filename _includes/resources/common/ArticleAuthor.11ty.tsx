@@ -1,10 +1,10 @@
 import h, { JSX } from "vhtml";
-import { Author } from "../../references/author/AuthorModels";
-import { Reference } from "../../../src/ReferenceModels";
+import { Resource } from "../../../src/ResourceModels";
+import { Author } from "../author/AuthorModels";
 import { AuthorIcon } from "../../resourcecard/ResourceCard.11ty";
 
 export type ArticleAuthorProps = {
-	author: Author | Reference;
+	author: Author | Resource;
 	displayDate: string;
 };
 

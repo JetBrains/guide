@@ -1,10 +1,10 @@
 import h, { JSX } from "vhtml";
 import ConsistentHash from "consistent-hash";
 import { Resource } from "../../src/ResourceModels";
-import { Topic } from "../references/topic/TopicModels";
-import TopicTag from "../references/topic/TopicTag.11ty";
-import { AuthorFrontmatter } from "../references/author/AuthorModels";
-import { References } from "../../src/ReferenceModels";
+import { Topic } from "../resources/topic/TopicModels";
+import TopicTag from "../resources/topic/TopicTag.11ty";
+import { AuthorFrontmatter } from "../resources/author/AuthorModels";
+import { References } from "../../src/ResourceModels";
 
 const glowColorHashRing = new ConsistentHash({
 	range: 100003,
@@ -59,6 +59,8 @@ const ResourceCard = ({
 		title,
 		displayDate,
 		subtitle,
+		// TODO JNW Resource no longer has thumbnail
+		// @ts-ignore
 		thumbnail,
 		references,
 	},

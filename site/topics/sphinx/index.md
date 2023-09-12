@@ -4,6 +4,8 @@ subtitle: Python static site generator for documentation and more
 logo: ./sphinxdoc.png
 website: "https://www.sphinx-doc.org/en/master/"
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /pycharm/topics/sphinx/
 ---

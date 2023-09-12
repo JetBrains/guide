@@ -4,6 +4,8 @@ subtitle: The Visual Studio Extension for .NET Developers.
 logo: ./logo.png
 website: "https://www.jetbrains.com/resharper/"
 topicType: product
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /dotnet/topics/resharper/
 ---

@@ -4,6 +4,8 @@ subtitle: Create predictable environments that are isolated from other applicati
 logo: ./containers.png
 website: "https://www.docker.com/"
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /goland/topics/containers/
 ---

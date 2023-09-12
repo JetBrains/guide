@@ -5,11 +5,10 @@ import { EleventyCollectionItem } from "./models";
 import { UserConfig } from "@11ty/eleventy";
 import {
 	getResourceType,
-	ReferenceCollection,
 	Resource,
-	ResourceCollection,
+	ResourceFrontmatter,
+	ResourceMap,
 } from "./ResourceModels";
-import { ReferenceFrontmatter } from "./ReferenceModels";
 
 export type CollectionApi = {
 	getAll(): EleventyCollectionItem[];
@@ -19,124 +18,100 @@ export type RegisterIncludesProps = {
 	eleventyConfig: UserConfig;
 };
 
-export type GetAllCollectionsProps = {
-	collectionApi: CollectionApi;
-	resourceCollections: {
-		[key: string]: any;
-	};
-	referenceCollections: {
+type MakeResource = {
+	item: EleventyCollectionItem;
+	resourceClasses: {
+		// TODO JNW Shouldn't return any
 		[key: string]: any;
 	};
 };
 
-export type AllCollections = {
-	allResources: ResourceCollection;
-	allReferences: ReferenceCollection;
-	all: EleventyCollectionItem[];
+export function makeResource({ item, resourceClasses }: MakeResource) {
+	const { data, page } = item;
+	const resourceType = getResourceType(data, page);
+	const resourceClass = resourceClasses[resourceType];
+	return new resourceClass({ data, page });
+}
+
+export type MakeResources = {
+	collectionItems: EleventyCollectionItem[];
+	resourceClasses: {
+		[key: string]: any;
+	};
 };
 
-export async function getAllCollections({
-	collectionApi,
-	resourceCollections,
-	referenceCollections,
-}: GetAllCollectionsProps) {
-	const allCollectionItems: EleventyCollectionItem[] = collectionApi
-		.getAll()
-		.filter((ci) => ci.data.resourceType);
-
-	return await resolveAllCollections({
-		allCollectionItems,
-		resourceCollections,
-		referenceCollections,
+export function makeResources({
+	collectionItems,
+	resourceClasses,
+}: MakeResources): Resource[] {
+	/* Process Eleventy collections.all and filter things with resource type */
+	const allResourceItems: EleventyCollectionItem[] = collectionItems.filter(
+		(ci) => ci.data.resourceType
+	);
+	return allResourceItems.map((item) => {
+		return makeResource({ item, resourceClasses });
 	});
 }
 
-export type ResolveAllCollections = {
-	allCollectionItems: EleventyCollectionItem[];
-	resourceCollections: {
-		[key: string]: any;
-	};
-	referenceCollections: {
+export function makeResourceMap(resources: Resource[]): ResourceMap {
+	/* Make mapping of resources with correct keys (URL vs. label) */
+	const allResources = new Map();
+
+	resources.forEach((resource) => {
+		let key: string;
+		// @ts-ignore
+		if (resource.label) {
+			// References use the label as the key instead of the url
+			// @ts-ignore
+			key = `${resource.constructor.joinKey}:${resource.label}`;
+		} else {
+			key = resource.url;
+		}
+		allResources.set(key, resource);
+	});
+	return allResources;
+}
+
+export function resolveResourceMap(resourceMap: ResourceMap): ResourceMap {
+	/* Make mapping of resources with correct keys (URL vs. label) */
+
+	Array.from(resourceMap.values()).map((resource) =>
+		resource.resolve(resourceMap)
+	);
+
+	return resourceMap;
+}
+
+export type GetResourceMap = {
+	collectionApi: CollectionApi;
+	resourceClasses: {
 		[key: string]: any;
 	};
 };
 
-export async function resolveAllCollections({
-	allCollectionItems,
-	resourceCollections,
-	referenceCollections,
-}: ResolveAllCollections) {
-	// This what we'll return
-	const allCollections: AllCollections = {
-		allResources: new Map(),
-		allReferences: new Map(),
-		all: [],
-	};
-
-	// Keep an intermediate resource array that we can then sort
-	// before making the ordered map.
-	const intermediateResources: Resource[] = [];
-
-	for (const { data, page } of allCollectionItems) {
-		const resourceType = getResourceType(data, page);
-
-		try {
-			if (resourceCollections[data.resourceType!]) {
-				const resourceClass = resourceCollections[resourceType];
-				const resource = await new resourceClass({
-					data,
-					page,
-				}).init();
-				intermediateResources.push(resource);
-			} else if (referenceCollections[data.resourceType!]) {
-				const referenceClass = referenceCollections[resourceType];
-				const reference = await new referenceClass({
-					data,
-					page,
-				}).init();
-				const resolvedLabel = `${referenceClass.joinKey}:${reference.label}`;
-				allCollections.allReferences.set(resolvedLabel, reference);
-			} else {
-				console.warn(`Unregistered resource type: ${resourceType}`);
-			}
-		} catch (err) {
-			console.error(`Failed to create resource/reference at ${page.url}`);
-			throw err;
-		}
-	}
-
-	// Sort the resources then assign to the map
-	intermediateResources.sort((a: any, b: any) => b.date - a.date);
-	intermediateResources.forEach((resource) =>
-		allCollections.allResources.set(resource.url, resource)
-	);
-
-	allCollections.all = [];
-
-	// With this in place, we can de-reference resources.
-	Array.from(allCollections.allResources.values()).map((resource) =>
-		resource.resolve(allCollections)
-	);
-
-	return allCollections;
+export function getResourceMap({
+	collectionApi,
+	resourceClasses,
+}: GetResourceMap): ResourceMap {
+	/* Called from config with the collection API, then calls helpers here */
+	const collectionItems = collectionApi.getAll();
+	const resources = makeResources({ collectionItems, resourceClasses });
+	const resourceMap = makeResourceMap(resources);
+	resolveResourceMap(resourceMap);
+	return resourceMap;
 }
 
 export type ResolveReferenceProps = {
-	fieldName: Exclude<
-		keyof Resource,
-		"date" | "resolve" | "init" | "references"
-	>;
+	fieldName: Exclude<keyof Resource, "date" | "resolve" | "references">;
 	resource: Resource;
-	allReferences: ReferenceCollection;
-	allResources: ResourceCollection;
+	resourceMap: ResourceMap;
 };
 
 export function resolveReference({
 	fieldName,
 	resource,
-	allReferences,
-	allResources,
-}: ResolveReferenceProps): ReferenceFrontmatter | ReferenceFrontmatter[] {
+	resourceMap,
+}: ResolveReferenceProps): ResourceFrontmatter | ResourceFrontmatter[] {
 	/* Return the matching reference or references  */
 
 	const thisFieldValue = resource[fieldName];
@@ -151,7 +126,7 @@ export function resolveReference({
 		// resource.author is a single value, but resource.topics etc. array
 		return thisFieldValue.map((label) => {
 			const resolvedLabel = `${fieldName}:${label}`;
-			const reference = allReferences.get(resolvedLabel);
+			const reference = resourceMap.get(resolvedLabel);
 			if (!reference) {
 				throw new Error(
 					`Resource "${resource.url}" has unresolved reference "${resolvedLabel}"`
@@ -163,11 +138,9 @@ export function resolveReference({
 		// Single-value reference like author
 		const resolvedLabel = `${fieldName}:${thisFieldValue}`;
 
-		// TODO Re-invent references, so any resource can refer to any
-		//   For now, allow resources to point at a channel.
-		const reference = allReferences.get(resolvedLabel);
+		const reference = resourceMap.get(resolvedLabel);
 		if (!reference && fieldName == "channel") {
-			const channel = allResources.get(thisFieldValue);
+			const channel = resourceMap.get(thisFieldValue);
 			if (channel) return channel;
 		}
 		if (!reference) {

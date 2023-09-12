@@ -118,10 +118,6 @@
               "format": "date",
               "type": "string"
             },
-            "thumbnail": {
-              "description": "File name of the thumbnail for this resource",
-              "type": "string"
-            },
             "cardThumbnail": {
               "description": "File name of the social card thumbnail for this resource",
               "type": "string"
@@ -227,6 +223,18 @@
             "date"
           ]
         }
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "thumbnail": {
+          "description": "Path to thumbnail image.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "thumbnail"
       ]
     },
     {

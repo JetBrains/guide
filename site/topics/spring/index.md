@@ -7,6 +7,8 @@ subtitle: >-
 logo: spring.png
 website: "https://spring.io/"
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /idea/topics/spring/
 ---

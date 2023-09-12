@@ -118,10 +118,6 @@
               "format": "date",
               "type": "string"
             },
-            "thumbnail": {
-              "description": "File name of the thumbnail for this resource",
-              "type": "string"
-            },
             "cardThumbnail": {
               "description": "File name of the social card thumbnail for this resource",
               "type": "string"
@@ -232,10 +228,27 @@
     {
       "type": "object",
       "properties": {
+        "thumbnail": {
+          "description": "Path to thumbnail image.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "thumbnail"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
         "videoBottom": {
           "description": "True if video should be rendered at the bottom; false otherwise",
           "type": "boolean"
-        },
+        }
+      }
+    },
+    {
+      "type": "object",
+      "properties": {
         "video": {
           "anyOf": [
             {

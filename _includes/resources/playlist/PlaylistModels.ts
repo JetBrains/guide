@@ -1,11 +1,17 @@
 import { Static, Type } from "@sinclair/typebox";
-import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
+import {
+	getThumbnailPath,
+	Resource,
+	ResourceFrontmatter,
+	ResourceMap,
+} from "../../../src/ResourceModels";
 import { EleventyPage } from "../../../src/models";
-import { AllCollections } from "../../../src/registration";
+import { ThumbnailField } from "../commonModels";
 import { PLAYLIST_RESOURCE_TYPE } from "../../../src/resourceType";
 
 export const PlaylistFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
+	ThumbnailField,
 	Type.Object({
 		playlistItems: Type.Array(Type.String()),
 	}),
@@ -18,6 +24,7 @@ export class Playlist
 {
 	playlistItems: string[];
 	playlistResources: Resource[];
+	thumbnail: PlaylistFrontmatter["thumbnail"];
 	static frontmatterSchema: any = PlaylistFrontmatter;
 
 	constructor({
@@ -30,11 +37,11 @@ export class Playlist
 		super({ data, page });
 		this.playlistItems = data.playlistItems;
 		this.playlistResources = [];
+		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);
 	}
 
-	resolve(allCollections: AllCollections) {
-		super.resolve(allCollections);
-		const { allResources } = allCollections;
+	resolve(allResources: ResourceMap) {
+		super.resolve(allResources);
 
 		// then call this
 		this.playlistItems.forEach((pi) => {

@@ -20,7 +20,7 @@ test("should render TutorialsLayout", () => {
 	};
 	const firstTutorialURL = fixtures.tips[0].url;
 	fixtures.context.getResource = () =>
-		fixtures.resolvedCollections.allResources.get(firstTutorialURL)!;
+		fixtures.resourceMap.get(firstTutorialURL)!;
 	const tutorialsLayout = new TutorialsLayout();
 	document.body.innerHTML = tutorialsLayout.render.call(
 		fixtures.context,

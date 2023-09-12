@@ -21,10 +21,10 @@ class LatestLayout {
 				reverse: true,
 				before: function (paginationData: any[], fullData: any) {
 					const results: Resource[] = [];
-					const allResources = fullData.collections.allResources;
+					const { resourceMap } = fullData.collections;
 					let thisItem: any;
 					paginationData.forEach((item: any) => {
-						thisItem = allResources.get(item.url);
+						thisItem = resourceMap.get(item.url);
 						if (thisItem) {
 							results.push(thisItem);
 						}

@@ -4,6 +4,8 @@ subtitle: A tool that can be used for building and managing any Java-based proje
 logo: maven-logo.png
 website: "https://maven.apache.org/"
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /idea/topics/maven/
 ---

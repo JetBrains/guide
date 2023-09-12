@@ -1,7 +1,6 @@
 import { expect, test } from "vitest";
 import { Tip, TipFrontmatter } from "./TipModels";
 import { EleventyPage } from "../../../src/models";
-import { rootPath } from "../../config";
 import fixtures from "../../fixtures";
 
 const data: TipFrontmatter = {
@@ -15,11 +14,11 @@ const data: TipFrontmatter = {
 const page: EleventyPage = {
 	fileSlug: "some-tip",
 	url: "/tips/some-tip/",
-	inputPath: `${rootPath}/tips/some-tip/index.md`,
+	inputPath: `/tips/some-tip/index.md`,
 	date: fixtures.date,
 };
 
-test("construct a tip", async () => {
-	const tip = await new Tip({ data, page }).init();
+test("construct a tip", () => {
+	const tip = new Tip({ data, page });
 	expect(tip.title).to.equal("Some Tip");
 });

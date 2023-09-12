@@ -1,5 +1,4 @@
 import { Resource } from "../src/ResourceModels";
-import { Reference, ReferenceFrontmatter } from "../src/ReferenceModels";
 import { EleventyCollectionItem } from "../src/models";
 import { POSSIBLE_RESOURCE_TYPES, RESOURCE_TYPES } from "../src/resourceType";
 
@@ -10,11 +9,6 @@ export type QueryFilter = {
 	tag?: string;
 	customFilter?: (resource: Resource) => boolean;
 	sorter?: (a: Resource, b: Resource) => number;
-};
-
-export type ReferencesQueryFilter = {
-	resourceTypes?: RESOURCE_TYPES | POSSIBLE_RESOURCE_TYPES;
-	customFilter?: (reference: ReferenceFrontmatter) => boolean;
 };
 
 export function getResources(
@@ -67,45 +61,9 @@ export function getResources(
 	return resources;
 }
 
-export function getResource(
-	allResourcesList: Resource[],
-	url: string
-): Resource {
-	return allResourcesList.filter((r) => r.url == url)[0];
-}
-
-export function getReference(
-	allReferencesList: Reference[],
-	url: string
-): Reference {
-	return allReferencesList.filter((r) => r.url == url)[0];
-}
-
-export function getReferences(
-	allReferencesList: ReferenceFrontmatter[],
-	filter: ReferencesQueryFilter
-): ReferenceFrontmatter[] | null {
-	let references = allReferencesList;
-	const types =
-		filter && filter.resourceTypes != null
-			? Array.isArray(filter.resourceTypes)
-				? [...filter.resourceTypes]
-				: [filter.resourceTypes]
-			: undefined;
-	if (types) {
-		references = references.filter((r) => types.includes(r.resourceType!));
-	}
-
-	const customFilter = filter && filter.customFilter;
-	if (customFilter) {
-		references = references.filter(customFilter);
-	}
-
-	if (references.length == 0) {
-		return null;
-	}
-
-	return references;
+// TODO PWE Get rid of this and just use collections.resourceMap
+export function getResource(resources: Resource[], url: string): Resource {
+	return resources.filter((r) => r.url == url)[0];
 }
 
 export function sortByFrontmatter(

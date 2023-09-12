@@ -2,5 +2,5 @@
 eleventyExcludeFromCollections: true
 title: Authors
 subtitle: Resources organized by author.
-layout: references/author/AuthorsLayout.11ty.tsx
+layout: resources/author/AuthorsLayout.11ty.tsx
 ---

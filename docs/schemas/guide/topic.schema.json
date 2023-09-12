@@ -83,13 +83,156 @@
         {
           "type": "object",
           "properties": {
-            "label": {
-              "description": "Label of this resource",
+            "author": {
+              "enum": [
+                "ap",
+                "citizenmatt",
+                "da",
+                "dlsniper",
+                "dw",
+                "ed",
+                "er",
+                "hs",
+                "khalidabuhakmeh",
+                "maartenba",
+                "matkoch",
+                "md",
+                "mm",
+                "ni",
+                "pwe",
+                "rachelappel",
+                "sf",
+                "svk",
+                "tg",
+                "vb",
+                "wht"
+              ],
+              "description": "Author of this resource"
+            },
+            "channel": {
+              "description": "Possible channel this resource is in",
               "type": "string"
+            },
+            "date": {
+              "description": "Date this resource was published",
+              "format": "date",
+              "type": "string"
+            },
+            "cardThumbnail": {
+              "description": "File name of the social card thumbnail for this resource",
+              "type": "string"
+            },
+            "tags": {
+              "description": "11ty tag data",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "topics": {
+              "description": "Topics related to this resource",
+              "type": "array",
+              "items": {
+                "enum": [
+                  ".net",
+                  "angular",
+                  "asp.net",
+                  "aws",
+                  "blazor",
+                  "build",
+                  "completion",
+                  "containers",
+                  "coverage",
+                  "cra",
+                  "csharp",
+                  "css",
+                  "customizing",
+                  "data",
+                  "databases",
+                  "debugging",
+                  "django",
+                  "dotcover",
+                  "dotmemory",
+                  "dottrace",
+                  "editing",
+                  "emmet",
+                  "fastapi",
+                  "fsharp",
+                  "gaming",
+                  "gcp",
+                  "generics",
+                  "gettingstarted",
+                  "git",
+                  "go",
+                  "gradle",
+                  "groovy",
+                  "html",
+                  "ide",
+                  "inspections",
+                  "interface",
+                  "java",
+                  "javascript",
+                  "jest",
+                  "json",
+                  "junit",
+                  "kotlin",
+                  "kubernetes",
+                  "latest",
+                  "livetemplates",
+                  "markup",
+                  "maven",
+                  "mongodb",
+                  "navigation",
+                  "navigationbar",
+                  "nodejs",
+                  "packagesearch",
+                  "platform",
+                  "plugins",
+                  "postgreSQL",
+                  "profiling",
+                  "pytest",
+                  "python",
+                  "quick-fixes",
+                  "react",
+                  "refactoring",
+                  "resharper",
+                  "rider",
+                  "riderflow",
+                  "running",
+                  "security",
+                  "settings",
+                  "speedsearch",
+                  "sphinx",
+                  "spring",
+                  "testing",
+                  "tomcat",
+                  "tricks",
+                  "typescript",
+                  "ui",
+                  "ultimate",
+                  "unity",
+                  "unreal",
+                  "vcs",
+                  "web"
+                ]
+              }
             }
-          }
+          },
+          "required": [
+            "author",
+            "date"
+          ]
         }
       ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "label": {
+          "description": "Label of this resource",
+          "type": "string"
+        }
+      }
     },
     {
       "type": "object",

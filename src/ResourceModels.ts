@@ -1,91 +1,61 @@
 import { Static, Type } from "@sinclair/typebox";
 import { EleventyPage } from "./models";
 import path from "upath";
-import { Reference, References } from "./ReferenceModels";
-import { AllCollections, resolveReference } from "./registration";
+import { resolveReference } from "./registration";
 import { validateFrontmatter } from "./validators";
 import { DateTime } from "luxon";
 import { ALL_RESOURCES, RESOURCE_TYPES } from "./resourceType";
+import { Author } from "../_includes/resources/author/AuthorModels";
+import { Channel } from "../_includes/resources/channel/ChannelModels";
+import { Topic } from "../_includes/resources/topic/TopicModels";
 
-const slugify = require("@sindresorhus/slugify");
+import slugify from "@sindresorhus/slugify";
 
-export const BaseFrontmatter = Type.Object({
-	resourceType: Type.Union(
-		[
-			...ALL_RESOURCES.map((x) => Type.Literal(x)),
-			Type.Literal("author"),
-			Type.Literal("topic"),
-		],
-		{
-			description: "Resource type. Should not be specified manually",
-		}
-	),
-	title: Type.String({ description: "Title of this resource" }),
-	subtitle: Type.Optional(
-		Type.String({ description: "Subtitle of this resource" })
-	),
-	obsoletes: Type.Optional(
-		Type.Array(Type.String(), {
-			description: "Paths that should redirect to this resource",
-		})
-	),
-	channel: Type.Optional(
-		Type.String({ description: "Possible channel this resource is in" })
-	),
-});
-export type BaseFrontmatter = Static<typeof BaseFrontmatter>;
-
-export type BaseItem = {
-	content: string;
-	data: BaseFrontmatter;
-	page: EleventyPage;
-};
-
-export class BaseEntity<T extends RESOURCE_TYPES> implements BaseFrontmatter {
-	resourceType: T;
-	slug: string;
-	title: string;
-	subtitle?: string;
-	obsoletes?: string[];
-	url: string;
-	channel?: string;
-	static frontmatterSchema = BaseFrontmatter;
-
-	constructor({ data, page }: { data: BaseFrontmatter; page: EleventyPage }) {
-		this.resourceType = data.resourceType as T;
-		this.slug = page.fileSlug;
-		this.title = data.title;
-		this.subtitle = data.subtitle;
-		this.obsoletes = data.obsoletes;
-		this.url = page.url;
-		this.channel = data.channel;
-
-		validateFrontmatter(BaseEntity.frontmatterSchema, data, page.url);
-	}
-
-	async init(): Promise<this> {
-		return this;
+export function getThumbnailPath(
+	dataThumbnail: string,
+	pageURL: string
+): string {
+	// If absolute URL, just use it
+	if (dataThumbnail.startsWith("/")) {
+		return dataThumbnail;
+	} else {
+		return path.join(pageURL, dataThumbnail);
 	}
 }
 
-// TODO Get rid of slug in models if it isn't used
+export const BaseFrontmatter = Type.Object({});
+export type BaseFrontmatter = Static<typeof BaseFrontmatter>;
 
 export const ResourceFrontmatter = Type.Intersect([
-	BaseFrontmatter,
 	Type.Object({
-		author: Type.String({ description: "Author of this resource" }),
-		channel: Type.Optional(
-			Type.String({ description: "Possible channel this resource is in" })
+		resourceType: Type.Union(
+			[
+				...ALL_RESOURCES.map((x) => Type.Literal(x)),
+				Type.Literal("author"),
+				Type.Literal("topic"),
+			],
+			{
+				description: "Resource type. Should not be specified manually",
+			}
 		),
+		title: Type.String({ description: "Title of this resource" }),
+		subtitle: Type.Optional(
+			Type.String({ description: "Subtitle of this resource" })
+		),
+		obsoletes: Type.Optional(
+			Type.Array(Type.String(), {
+				description: "Paths that should redirect to this resource",
+			})
+		),
+		// TODO JNW Sucks to have author on an Author
+		author: Type.String({ description: "Author of this resource" }),
 		date: Type.Date({
 			description: "Date this resource was published",
 			["format"]: "date",
 			["type"]: "string",
 		}),
-		thumbnail: Type.Optional(
-			Type.String({
-				description: "File name of the thumbnail for this resource",
-			})
+		channel: Type.Optional(
+			Type.String({ description: "Possible channel this resource is in" })
 		),
 		cardThumbnail: Type.Optional(
 			Type.String({
@@ -106,20 +76,39 @@ export const ResourceFrontmatter = Type.Intersect([
 ]);
 export type ResourceFrontmatter = Static<typeof ResourceFrontmatter>;
 
+export type ResourceItem = {
+	content: string;
+	data: ResourceFrontmatter;
+	page: EleventyPage;
+};
+
+export type References = {
+	author: Author;
+	channel?: Channel;
+	topics: Topic[];
+};
+
 export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
-	extends BaseEntity<T>
 	implements ResourceFrontmatter
 {
-	anchor: string; // Playlist items need unique identifier
+	resourceType: T;
 	author: string;
 	date: Date;
+	slug: string;
+	title: string;
+	subtitle?: string;
+	obsoletes?: string[];
+	url: string;
+	channel?: string;
+	// TODO: JNW figure out why any is necessary here
+	static frontmatterSchema: any = ResourceFrontmatter;
+
+	anchor: string; // Playlist items need unique identifier
 	displayDate: string;
-	thumbnail?: string;
 	cardThumbnail?: string;
 	tags?: string[];
 	topics?: string[];
 	references?: References;
-	static frontmatterSchema: any = ResourceFrontmatter;
 	static referenceFields = ["author", "channel", "topics"] as const;
 
 	constructor({
@@ -129,21 +118,20 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 		data: ResourceFrontmatter;
 		page: EleventyPage;
 	}) {
-		super({ data, page });
+		this.resourceType = data.resourceType as T;
+		this.slug = page.fileSlug;
+		this.title = data.title;
+		this.subtitle = data.subtitle;
+		this.obsoletes = data.obsoletes;
+		this.url = page.url;
+		this.channel = data.channel;
+		this.author = data.author;
+		this.date = new Date(data.date);
+
 		const thisDate = DateTime.fromJSDate(data.date, { zone: "utc" });
 		const displayDate = thisDate.toFormat("yyyy-LL-dd");
 		this.anchor = slugify(this.url);
-		this.author = data.author;
-		this.date = new Date(data.date);
 		this.displayDate = displayDate;
-		if (data.thumbnail) {
-			if (data.thumbnail.startsWith("/")) {
-				// If absolute URL, just use it
-				this.thumbnail = data.thumbnail;
-			} else {
-				this.thumbnail = path.join(page.url, data.thumbnail);
-			}
-		}
 		this.tags = data.tags;
 		this.topics = data.topics;
 
@@ -152,12 +140,11 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 		}
 	}
 
-	// async init(): Promise<this> {
-	// 	return this;
-	// }
-
-	resolve(allCollections: AllCollections): void {
-		const { allReferences, allResources } = allCollections;
+	resolve(resourceMap: ResourceMap): void {
+		// TODO JNW Why does TS think frontmatterSchema is not a part of
+		//    this.constructor?
+		// @ts-ignore
+		validateFrontmatter(this.constructor.frontmatterSchema, this, this.url);
 
 		this.references = Resource.referenceFields.reduce((acc, fieldName) => {
 			return {
@@ -166,8 +153,7 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 					? resolveReference({
 							fieldName,
 							resource: this,
-							allReferences,
-							allResources,
+							resourceMap,
 					  })
 					: [],
 			};
@@ -175,8 +161,7 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 	}
 }
 
-export type ResourceCollection = Map<string, Resource>;
-export type ReferenceCollection = Map<string, Reference>;
+export type ResourceMap = Map<string, Resource<RESOURCE_TYPES>>;
 
 export function getResourceType<T extends RESOURCE_TYPES>(
 	data: { resourceType?: T },

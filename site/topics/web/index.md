@@ -3,6 +3,8 @@ title: Web Development
 subtitle: Working with web technologies.
 accent: primary
 icon: fas fa-globe
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /dotnet/topics/web/
   - /idea/topics/web/

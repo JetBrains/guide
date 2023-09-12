@@ -6,6 +6,8 @@ subtitle: >-
 logo: apache-tomcat-logo.svg
 website: "https://tomcat.apache.org/"
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /idea/topics/tomcat/
 ---

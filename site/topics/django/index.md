@@ -4,6 +4,8 @@ subtitle: The web framework for perfectionists with deadlines
 logo: ./django-plain.svg
 website: "https://www.djangoproject.com"
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /pycharm/topics/django/
 ---

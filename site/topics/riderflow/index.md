@@ -4,6 +4,8 @@ subtitle: Scenery tool to build and manage your 3D space.
 logo: ./logo.png
 website: "https://www.jetbrains.com/riderflow/"
 topicType: product
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /dotnet/topics/riderflow/
 ---

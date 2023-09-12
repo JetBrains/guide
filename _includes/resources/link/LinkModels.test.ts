@@ -20,8 +20,8 @@ const page: EleventyPage = {
 	date: fixtures.date,
 };
 
-test("construct a link", async () => {
-	const link = await new Link({ data, page }).init();
+test("construct a link", () => {
+	const link = new Link({ data, page });
 	expect(link.title).to.equal(data.title);
 	expect(link.linkURL).to.equal(data.linkURL);
 });

@@ -11,7 +11,7 @@ test("resolve an array of child paths", () => {
 
 test("resolve parent/child tutorials and steps", () => {
 	const { tutorialItems } = fixtures;
-	const tutorial0 = fixtures.resolvedCollections.allResources.get(
+	const tutorial0 = fixtures.resourceMap.get(
 		tutorialItems[0].page.url
 	) as Tutorial;
 	expect(tutorial0).to.exist;

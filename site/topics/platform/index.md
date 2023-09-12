@@ -6,6 +6,8 @@ subtitle: >-
 website: "https://jetbrains.com"
 logo: ./platform.png
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /goland/topics/platform/
 ---

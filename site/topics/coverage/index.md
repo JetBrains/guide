@@ -3,6 +3,8 @@ title: Coverage
 subtitle: Ensure that your Python code has good tests
 accent: primary
 icon: fas fa-chart-bar
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /pycharm/topics/coverage/
 ---

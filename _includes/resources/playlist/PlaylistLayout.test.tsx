@@ -1,16 +1,15 @@
 import { expect, test } from "vitest";
 
 import { PlaylistLayout, PlaylistLayoutData } from "./PlaylistLayout.11ty";
-import fixtures from "../../fixtures";
-import { SiteCollections } from "../../models";
+import fixtures, { baseRenderData } from "../../fixtures";
 import { screen } from "@testing-library/dom";
 
 test("should render PlaylistLayout", () => {
 	const playlist0 = fixtures.playlistItems[0];
 	const renderProps: PlaylistLayoutData = {
+		...baseRenderData,
 		...playlist0.data,
 		page: playlist0.page,
-		collections: fixtures.resolvedCollections as SiteCollections,
 		content: fixtures.content,
 		commandLineArgs: { pathprefix: "/pycharm/guide" },
 	};

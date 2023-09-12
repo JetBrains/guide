@@ -3,6 +3,8 @@ title: Navigation Bar
 subtitle: "Breadcrumbs-style navigation tool, permanent or on-demand."
 accent: primary
 icon: fas fa-bezier-curve
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /pycharm/topics/navigationbar/
 ---

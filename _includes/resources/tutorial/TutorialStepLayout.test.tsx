@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import fixtures from "../../fixtures";
+import fixtures, { baseRenderData } from "../../fixtures";
 import {
 	TutorialStepLayout,
 	TutorialStepLayoutData,
@@ -9,7 +9,7 @@ import { screen } from "@testing-library/dom";
 test("should render TutorialStepLayout", () => {
 	// @ts-ignore
 	const tutorialStepLayoutData: TutorialStepLayoutData = {
-		collections: { ...fixtures.resolvedCollections, all: fixtures.all },
+		...baseRenderData,
 		content: fixtures.content,
 		...fixtures.tutorialStepItems[0].data,
 		page: fixtures.tutorialStepItems[0].page,

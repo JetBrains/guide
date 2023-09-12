@@ -10,12 +10,12 @@ import {
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import MultiColumnSection from "../../_includes/pageelements/MultiColumnSection";
 import FeaturedResource from "../../_includes/pageelements/FeaturedResource.11ty";
-import { Topic } from "../../_includes/references/topic/TopicModels";
 import {
 	PLAYLIST_RESOURCE,
 	TIP_RESOURCE,
 	TUTORIAL_RESOURCE,
 } from "../../src/resourceType";
+import { Topic } from "../../_includes/resources/topic/TopicModels";
 
 const frontmatter: ChannelFrontmatter = {
 	title: ".NET Tools Guide",
@@ -43,8 +43,9 @@ class DotNetHomepage {
 	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
-		const topics = this.getReferences({
+		const topics = this.getResources({
 			resourceTypes: ["topic"],
+			channel: channel.url,
 			customFilter: (r) =>
 				r.label != undefined &&
 				(r.label.indexOf("blazor") >= 0 ||

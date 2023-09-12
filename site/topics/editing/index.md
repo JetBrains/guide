@@ -3,6 +3,8 @@ title: Editing
 subtitle: Learning resources when writing code in the IDE's editor.
 accent: primary
 icon: fas fa-user-edit
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /dotnet/topics/editing/
   - /goland/topics/editing/

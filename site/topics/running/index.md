@@ -3,6 +3,8 @@ title: Running
 subtitle: "Run your code in our configurable, visual run tool."
 accent: primary
 icon: fas fa-play
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /dotnet/topics/running/
   - /goland/topics/running/

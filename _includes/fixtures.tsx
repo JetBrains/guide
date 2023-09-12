@@ -1,17 +1,10 @@
 import h from "vhtml";
 import { Tip, TipFrontmatter } from "./resources/tip/TipModels";
-import { Author, AuthorFrontmatter } from "./references/author/AuthorModels";
-import { SiteCollections } from "./models";
-import { Topic, TopicFrontmatter } from "./references/topic/TopicModels";
-import { referenceCollections, resourceCollections, rootPath } from "./config";
+import { Author, AuthorFrontmatter } from "./resources/author/AuthorModels";
+import { Topic, TopicFrontmatter } from "./resources/topic/TopicModels";
 import { vi } from "vitest";
 import { EleventyPage, LayoutContext } from "../src/models";
-import {
-	BaseItem,
-	ReferenceCollection,
-	ResourceCollection,
-} from "../src/ResourceModels";
-import { resolveAllCollections } from "../src/registration";
+import { ResourceItem } from "../src/ResourceModels";
 import {
 	Tutorial,
 	TutorialFrontmatter,
@@ -27,10 +20,16 @@ import {
 import { PaginationProps } from "./pagination/Pagination.11ty";
 import { Article, ArticleFrontmatter } from "./resources/article/ArticleModels";
 import { Channel, ChannelFrontmatter } from "./resources/channel/ChannelModels";
+import {
+	makeResourceMap,
+	makeResources,
+	resolveResourceMap,
+} from "../src/registration";
+import { resourceClasses, rootPath } from "./config";
 import { Link, LinkFrontmatter } from "./resources/link/LinkModels";
 
 /**
- * Reusable test data``
+ * Reusable test data
  */
 const content = `<p>Hello <em id="world">world</em>.</p>`;
 const date = new Date(Date.UTC(2023, 1, 11));
@@ -75,7 +74,7 @@ const tipItems: {
 		page: {
 			fileSlug: "some-tip",
 			url: "/tips/some-tip/",
-			inputPath: `${rootPath}/tips/some-tip/index.md`,
+			inputPath: `/tips/some-tip/index.md`,
 			date,
 		},
 	},
@@ -85,7 +84,7 @@ const tipItems: {
 		page: {
 			fileSlug: "another-tip",
 			url: "/tips/another-tip/",
-			inputPath: `${rootPath}/tips/another-tip/index.md`,
+			inputPath: `/tips/another-tip/index.md`,
 			date,
 		},
 	},
@@ -108,14 +107,12 @@ const tipDatas: {
 	},
 ];
 
-const tips = await Promise.all(
-	tipDatas.map(
-		async (ref) =>
-			await new Tip({
-				data: ref.data,
-				page: ref.page,
-			}).init()
-	)
+const tips = tipDatas.map(
+	(ref) =>
+		new Tip({
+			data: ref.data,
+			page: ref.page,
+		})
 );
 
 const linkFrontmatters: LinkFrontmatter[] = [
@@ -126,6 +123,7 @@ const linkFrontmatters: LinkFrontmatter[] = [
 		author: "sa",
 		topics: ["sto", "ato", "sp", "ap", "ste", "ate"],
 		thumbnail: "thumbnail.png",
+		linkURL: "http://some.jetbrains.link",
 	},
 	{
 		title: "Another Link",
@@ -134,6 +132,7 @@ const linkFrontmatters: LinkFrontmatter[] = [
 		author: "aa",
 		topics: ["sto", "ato", "ste", "ate"],
 		thumbnail: "aa.png",
+		linkURL: "http://another.jetbrains.link",
 	},
 ];
 const linkItems: {
@@ -185,7 +184,7 @@ const links = await Promise.all(
 			await new Link({
 				data: ref.data,
 				page: ref.page,
-			}).init()
+			})
 	)
 );
 
@@ -217,7 +216,7 @@ const channelItems: {
 		page: {
 			fileSlug: "some-channel",
 			url: "/channels/some-channel/",
-			inputPath: `${rootPath}/channels/some-channel/index.md`,
+			inputPath: `/channels/some-channel/index.md`,
 			date,
 		},
 	},
@@ -227,7 +226,7 @@ const channelItems: {
 		page: {
 			fileSlug: "another-channel",
 			url: "/channels/another-channel/",
-			inputPath: `${rootPath}/channels/another-channel/index.md`,
+			inputPath: `/channels/another-channel/index.md`,
 			date,
 		},
 	},
@@ -248,14 +247,12 @@ const channelDatas: {
 		page: channelItems[1].page,
 	},
 ];
-const channels = await Promise.all(
-	channelDatas.map(
-		async (ref) =>
-			await new Channel({
-				data: ref.data,
-				page: ref.page,
-			}).init()
-	)
+const channels = channelDatas.map(
+	(ref) =>
+		new Channel({
+			data: ref.data,
+			page: ref.page,
+		})
 );
 
 const articleItems: {
@@ -269,7 +266,7 @@ const articleItems: {
 		page: {
 			fileSlug: "some-article",
 			url: "/articles/some-article/",
-			inputPath: `${rootPath}/articles/some-article/index.md`,
+			inputPath: `/articles/some-article/index.md`,
 			date,
 		},
 	},
@@ -289,12 +286,16 @@ const articleDatas: {
 
 const authorsFrontmatters: AuthorFrontmatter[] = [
 	{
+		date: date,
+		author: "sa",
 		title: "Some Author",
 		resourceType: "author",
 		label: "sa",
 		thumbnail: "sa.png",
 	},
 	{
+		date: date,
+		author: "sa",
 		title: "Another Author",
 		resourceType: "author",
 		label: "aa",
@@ -313,7 +314,7 @@ const authorItems: {
 		page: {
 			fileSlug: "sa",
 			url: "/authors/sa/",
-			inputPath: `${rootPath}/authors/sa/index.md`,
+			inputPath: `/authors/sa/index.md`,
 			date,
 		},
 	},
@@ -348,6 +349,8 @@ const authorDatas: {
 
 const topicFrontmatters: TopicFrontmatter[] = [
 	{
+		date: date,
+		author: "sa",
 		title: "Some Topic",
 		resourceType: "topic",
 		label: "sto",
@@ -355,6 +358,8 @@ const topicFrontmatters: TopicFrontmatter[] = [
 		icon: "st-icon.png",
 	},
 	{
+		date: date,
+		author: "sa",
 		title: "Another Topic",
 		resourceType: "topic",
 		label: "ato",
@@ -362,24 +367,32 @@ const topicFrontmatters: TopicFrontmatter[] = [
 		icon: "at-icon.png",
 	},
 	{
+		date: date,
+		author: "sa",
 		title: "Some Technology",
 		resourceType: "topic",
 		label: "ste",
 		logo: "stlogo.svg",
 	},
 	{
+		date: date,
+		author: "sa",
 		title: "Another Technology",
 		resourceType: "topic",
 		label: "ate",
 		logo: "atlogo.svg",
 	},
 	{
+		date: date,
+		author: "sa",
 		title: "Some Product",
 		resourceType: "topic",
 		label: "sp",
 		logo: "some.png",
 	},
 	{
+		date: date,
+		author: "sa",
 		title: "Another Product",
 		resourceType: "topic",
 		label: "ap",
@@ -398,7 +411,7 @@ const topicItems: {
 		page: {
 			fileSlug: "ato",
 			url: "/topics/ato/",
-			inputPath: `${rootPath}/topics/ato/index.md`,
+			inputPath: `/topics/ato/index.md`,
 			date,
 		},
 	},
@@ -408,7 +421,7 @@ const topicItems: {
 		page: {
 			fileSlug: "sto",
 			url: "/topics/sto/",
-			inputPath: `${rootPath}/products/sto/index.md`,
+			inputPath: `/products/sto/index.md`,
 			date,
 		},
 	},
@@ -418,7 +431,7 @@ const topicItems: {
 		page: {
 			fileSlug: "ste",
 			url: "/topics/ste/",
-			inputPath: `${rootPath}/topics/ste/index.md`,
+			inputPath: `/topics/ste/index.md`,
 			date,
 		},
 	},
@@ -428,7 +441,7 @@ const topicItems: {
 		page: {
 			fileSlug: "ate",
 			url: "/topics/ate/",
-			inputPath: `${rootPath}/topics/ate/index.md`,
+			inputPath: `/topics/ate/index.md`,
 			date,
 		},
 	},
@@ -438,7 +451,7 @@ const topicItems: {
 		page: {
 			fileSlug: "sp",
 			url: "/topics/sp/",
-			inputPath: `${rootPath}/topics/sp/index.md`,
+			inputPath: `/topics/sp/index.md`,
 			date,
 		},
 	},
@@ -448,7 +461,7 @@ const topicItems: {
 		page: {
 			fileSlug: "ap",
 			url: "/topics/ap/",
-			inputPath: `${rootPath}/topics/ap/index.md`,
+			inputPath: `/topics/ap/index.md`,
 			date,
 		},
 	},
@@ -525,7 +538,7 @@ export const tutorialItems: {
 		page: {
 			fileSlug: "some-tutorial",
 			url: "/tutorials/some-tutorial/",
-			inputPath: `${rootPath}/tutorials/some-tutorial/index.md`,
+			inputPath: `/tutorials/some-tutorial/index.md`,
 			date,
 		},
 	},
@@ -535,7 +548,7 @@ export const tutorialItems: {
 		page: {
 			fileSlug: "another-tutorial",
 			url: "/tutorials/another-tutorial/",
-			inputPath: `${rootPath}/tutorials/another-tutorial/index.md`,
+			inputPath: `/tutorials/another-tutorial/index.md`,
 			date,
 		},
 	},
@@ -593,7 +606,7 @@ export const tutorialStepItems: {
 		page: {
 			fileSlug: "some-tutorialstep",
 			url: "/tutorials/some-tutorial/some-tutorialstep/",
-			inputPath: `${rootPath}/tutorials/some-tutorial/some-tutorialstep/index.md`,
+			inputPath: `/tutorials/some-tutorial/some-tutorialstep/index.md`,
 			date,
 		},
 	},
@@ -603,7 +616,7 @@ export const tutorialStepItems: {
 		page: {
 			fileSlug: "another-tutorialstep",
 			url: "/tutorials/some-tutorial/another-tutorialstep/",
-			inputPath: `${rootPath}/tutorials/some-tutorial/another-tutorialstep/index.md`,
+			inputPath: `/tutorials/some-tutorial/another-tutorialstep/index.md`,
 			date,
 		},
 	},
@@ -613,7 +626,7 @@ export const tutorialStepItems: {
 		page: {
 			fileSlug: "third-tutorialstep",
 			url: "/tutorials/some-tutorial/third-tutorialstep/",
-			inputPath: `${rootPath}/tutorials/some-tutorial/third-tutorialstep/index.md`,
+			inputPath: `/tutorials/some-tutorial/third-tutorialstep/index.md`,
 			date,
 		},
 	},
@@ -676,7 +689,7 @@ export const playlistItems: {
 		page: {
 			fileSlug: "some-playlist",
 			url: "/playlists/some-playlist/",
-			inputPath: `${rootPath}/playlists/some-playlist/index.md`,
+			inputPath: `/playlists/some-playlist/index.md`,
 			date,
 		},
 	},
@@ -686,7 +699,7 @@ export const playlistItems: {
 		page: {
 			fileSlug: "another-playlist",
 			url: "/playlists/another-playlist/",
-			inputPath: `${rootPath}/playlists/another-playlist/index.md`,
+			inputPath: `/playlists/another-playlist/index.md`,
 			date,
 		},
 	},
@@ -711,7 +724,7 @@ export const playlistDatas: {
 
 // This data structure matches collections.all
 // https://www.11ty.dev/docs/collections/#collection-item-data-structure
-const all: BaseItem[] = [
+const all: ResourceItem[] = [
 	...tipItems,
 	...tutorialItems,
 	...tutorialStepItems,
@@ -723,64 +736,52 @@ const all: BaseItem[] = [
 	...linkItems,
 ];
 
-const authors = await Promise.all(
-	authorDatas.map(
-		async (ref) =>
-			await new Author({
-				data: ref.data,
-				page: ref.page,
-			}).init()
-	)
+const authors = authorDatas.map(
+	(ref) =>
+		new Author({
+			data: ref.data,
+			page: ref.page,
+		})
 );
 
-const topics = await Promise.all(
-	topicDatas.map(
-		async (ref) =>
-			await new Topic({
-				data: ref.data,
-				page: ref.page,
-			}).init()
-	)
+const topics = topicDatas.map(
+	(ref) =>
+		new Topic({
+			data: ref.data,
+			page: ref.page,
+		})
 );
 
-const articles = await Promise.all(
-	articleDatas.map(
-		async (ref) =>
-			await new Article({
-				data: ref.data,
-				page: ref.page,
-			}).init()
-	)
+const articles = articleDatas.map(
+	(ref) =>
+		new Article({
+			data: ref.data,
+			page: ref.page,
+		})
 );
 
-const tutorials = await Promise.all(
-	tutorialDatas.map(
-		async (ref) =>
-			await new Tutorial({
-				data: ref.data,
-				page: ref.page,
-			}).init()
-	)
+const tutorials = tutorialDatas.map(
+	(ref) =>
+		new Tutorial({
+			data: ref.data,
+			page: ref.page,
+		})
 );
 
-const tutorialSteps = await Promise.all(
-	tutorialStepDatas.map(
-		async (ref) =>
-			await new TutorialStep({
-				data: ref.data,
-				page: ref.page,
-			}).init()
-	)
+const tutorialSteps = tutorialStepDatas.map(
+	(ref) =>
+		new TutorialStep({
+			data: ref.data,
+			page: ref.page,
+		})
 );
 
-const playlists = await Promise.all(
-	playlistDatas.map(
-		async (ref) =>
-			await new Playlist({
-				data: ref.data,
-				page: ref.page,
-			}).init()
-	)
+const playlists = playlistDatas.map(
+	(ref) =>
+		new Playlist({
+			data: ref.data,
+			page: ref.page,
+		})
 );
 
 const allResources: ResourceCollection = new Map();
@@ -793,48 +794,30 @@ const allResources: ResourceCollection = new Map();
 	...links,
 ].forEach((resource) => allResources.set(resource.url, resource));
 
-const allReferences: ReferenceCollection = new Map();
-[...authors, ...topics].forEach((reference) => {
-	// @ts-ignore
-	const joinKey = reference.constructor.joinKey;
-	const key = `${joinKey}:${reference.label}`;
-	return allReferences.set(key, reference);
+const resources = makeResources({
+	collectionItems: all,
+	resourceClasses,
 });
-
-// Make duplicates as resolved collections
-const clonedCollectionItems = structuredClone(all);
-const resolvedCollections = await resolveAllCollections({
-	allCollectionItems: clonedCollectionItems,
-	resourceCollections,
-	referenceCollections,
-});
-const resolvedResources = Array.from(resolvedCollections.allResources.values());
-const resolvedReferences = Array.from(
-	resolvedCollections.allReferences.values()
-);
-const collections: SiteCollections = {
-	all,
-	allResources,
-	allReferences,
-};
+const resourceMap = makeResourceMap(resources);
+resolveResourceMap(resourceMap);
 
 const getResource = vi.fn();
-const getReference = vi.fn();
 const renderMarkdown = (content: string): string => content;
 const context: LayoutContext = {
-	getResources: () =>
-		Array.from(fixtures.resolvedCollections.allResources.values()),
+	getResources: () => resources,
 	getResource,
-	getReference,
-	getReferences: () =>
-		Array.from(fixtures.resolvedCollections.allReferences.values()),
 	renderMarkdown,
 };
 
 export const commandLineArgs = { pathprefix: undefined };
 
 export const baseRenderData = {
-	collections: resolvedCollections,
+	author: "sa",
+	date,
+	collections: {
+		all,
+		resourceMap,
+	},
 	commandLineArgs,
 	content: "",
 };
@@ -860,7 +843,7 @@ const fixtures = {
 	authors,
 	authorItems,
 	children,
-	collections,
+	// collections,
 	content,
 	date,
 	paginationProps,
@@ -880,8 +863,7 @@ const fixtures = {
 	playlistItems,
 	all,
 	context,
-	resolvedCollections,
-	resolvedResources,
-	resolvedReferences,
+	resources,
+	resourceMap,
 };
 export default fixtures;

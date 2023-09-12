@@ -4,6 +4,8 @@ subtitle: Shorthand system for HTML and CSS generation
 logo: ./emmet.svg
 website: "https://emmet.io"
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /webstorm/topics/emmet/
 ---

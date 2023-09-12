@@ -4,6 +4,8 @@ subtitle: The .NET Unit Test Runner and Code Coverage Tool.
 logo: ./logo.png
 website: "https://www.jetbrains.com/dotcover/"
 topicType: product
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /dotnet/topics/dotcover/
 ---

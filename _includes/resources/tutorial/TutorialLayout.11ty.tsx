@@ -1,7 +1,6 @@
 import h, { JSX } from "vhtml";
 import { Tutorial, TutorialFrontmatter } from "./TutorialModels";
 import { LayoutContext, LayoutProps } from "../../../src/models";
-import { References } from "../../../src/ReferenceModels";
 import ResourceCard, {
 	ResourceCardOrientation,
 } from "../../resourcecard/ResourceCard.11ty";
@@ -17,8 +16,8 @@ export function TutorialLayout(
 	data: TutorialLayoutData
 ): JSX.Element {
 	const { collections, page, content } = data;
-	const tutorial = collections.allResources.get(page.url) as Tutorial;
-	const references = tutorial.references as References;
+	const tutorial = collections.resourceMap.get(page.url) as Tutorial;
+	const references = tutorial.references;
 
 	// Sidebars
 	let sidebarSteps = tutorial.tutorialSteps && (
@@ -71,10 +70,10 @@ export function TutorialLayout(
 				subtitle={tutorial.subtitle}
 			/>
 			<ArticleAuthor
-				author={references.author}
+				author={references!.author}
 				displayDate={tutorial.displayDate}
 			/>
-			<ArticleTopics topics={references.topics} />
+			<ArticleTopics topics={references!.topics} />
 
 			{content ? (
 				<div class="mb-4" dangerouslySetInnerHTML={{ __html: content }}></div>

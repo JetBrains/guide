@@ -16,11 +16,11 @@ test("should render PlaylistLayout", () => {
 		},
 		pagination: fixtures.paginationProps.pagination,
 	};
-	fixtures.context.getResource = () =>
-		Array.from(fixtures.resolvedCollections.allResources.values())[0];
+	const firstResource = Array.from(fixtures.resourceMap.values())[0];
+	fixtures.context.getResource = () => firstResource;
 	document.body.innerHTML = PlaylistsLayout.call(fixtures.context, renderProps);
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: "Resource",
 	});
-	expect(links[0].href).to.equal("/tips/another-tip/");
+	expect(links[0].href).to.equal(firstResource.url);
 });

@@ -8,7 +8,7 @@ test("SectionListing exists", () => {
 		title: "Some Title",
 		subtitle: "Some Subtitle",
 		moreLink: "/more/link",
-		resources: fixtures.resolvedResources,
+		resources: fixtures.resources,
 	};
 	document.body.innerHTML = ListingSection(props);
 	expect(screen.getByText("Some Title")).to.exist;

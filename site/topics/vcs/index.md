@@ -3,6 +3,8 @@ title: Version Control
 subtitle: "Integrated, visual version control across your project."
 accent: primary
 icon: fas fa-code-branch
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /dotnet/topics/vcs/
   - /goland/topics/vcs/

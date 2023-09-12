@@ -6,6 +6,8 @@ subtitle: >-
 logo: json.svg
 website: "https://www.json.org/json-en.html"
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /idea/topics/json/
 ---

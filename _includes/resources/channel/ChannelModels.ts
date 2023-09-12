@@ -1,10 +1,16 @@
 import { Static, Type } from "@sinclair/typebox";
-import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
+import {
+	getThumbnailPath,
+	Resource,
+	ResourceFrontmatter,
+} from "../../../src/ResourceModels";
 import { EleventyPage, LayoutProps } from "../../../src/models";
 import { CHANNEL_RESOURCE_TYPE } from "../../../src/resourceType";
+import { ThumbnailField } from "../commonModels";
 
 export const ChannelFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
+	ThumbnailField,
 	Type.Object({
 		hero: Type.Optional(
 			Type.String({
@@ -35,6 +41,7 @@ export class Channel
 {
 	hero?: string;
 	subnav?: ChannelFrontmatter["subnav"];
+	thumbnail: ChannelFrontmatter["thumbnail"];
 	static frontmatterSchema = ChannelFrontmatter;
 
 	constructor({
@@ -50,11 +57,8 @@ export class Channel
 		});
 		this.hero = data.hero;
 		this.subnav = data.subnav;
+		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);
 	}
-	//
-	// async init(): Promise<this> {
-	// 	return this;
-	// }
 }
 
 // The following type is helpful for re-use in

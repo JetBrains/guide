@@ -1,11 +1,18 @@
 import { Static, Type } from "@sinclair/typebox";
-import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
+import {
+	getThumbnailPath,
+	Resource,
+	ResourceFrontmatter,
+} from "../../../src/ResourceModels";
 import { EleventyPage } from "../../../src/models";
 import path from "upath";
 import { ARTICLE_RESOURCE_TYPE } from "../../../src/resourceType";
+import { ThumbnailField, VideoField } from "../commonModels";
 
 export const ArticleFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
+	ThumbnailField,
+	VideoField,
 	Type.Object({
 		animatedGif: Type.Optional(
 			Type.Object(
@@ -28,25 +35,6 @@ export const ArticleFrontmatter = Type.Intersect([
 				description: "File name of a screenshot to show in this tip",
 			})
 		),
-		video: Type.Optional(
-			Type.Union([
-				Type.String({
-					description: "YouTube URL to the video",
-				}),
-				Type.Object(
-					{
-						url: Type.String({ description: "YouTube URL to the video" }),
-						start: Type.Number({
-							description: "start time for the video",
-						}),
-						end: Type.Number({
-							description: "end time for the video",
-						}),
-					},
-					{ description: "Animated GIF to show in this tip" }
-				),
-			])
-		),
 		seealso: Type.Optional(
 			Type.Any({
 				description: "Item(s) to show in the See Also section of this tip",
@@ -61,9 +49,10 @@ export class Article
 	implements ArticleFrontmatter
 {
 	animatedGif?: ArticleFrontmatter["animatedGif"];
-	video?: ArticleFrontmatter["video"];
 	screenshot?: ArticleFrontmatter["screenshot"];
 	seealso?: any;
+	thumbnail: ArticleFrontmatter["thumbnail"];
+	video?: ArticleFrontmatter["video"];
 	static frontmatterSchema = ArticleFrontmatter;
 
 	constructor({
@@ -83,5 +72,6 @@ export class Article
 			? path.join(page.url, data.screenshot)
 			: undefined;
 		this.seealso = data.seealso;
+		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);
 	}
 }

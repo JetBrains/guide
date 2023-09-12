@@ -1,10 +1,10 @@
 import h, { JSX } from "vhtml";
 import SeeAlso from "../../seealso/SeeAlso.11ty";
 import { Tip, TipFrontmatter } from "./TipModels";
-import { Author } from "../../references/author/AuthorModels";
+import { Author } from "../author/AuthorModels";
 import VideoPlayer from "../../video/VideoPlayer.11ty";
 import { LayoutContext, LayoutProps } from "../../../src/models";
-import { Topic } from "../../references/topic/TopicModels";
+import { Topic } from "../topic/TopicModels";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
@@ -18,7 +18,7 @@ export function TipLayout(
 	data: TipLayoutData
 ): JSX.Element {
 	const { collections, content, page } = data;
-	const tip = collections.allResources.get(page.url) as Tip;
+	const tip = collections.resourceMap.get(page.url) as Tip;
 	if (!tip) {
 		throw new Error(`Tip "${page.url}" not in collection`);
 	}

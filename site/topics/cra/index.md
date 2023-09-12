@@ -4,6 +4,8 @@ subtitle: Create React apps with no build configuration
 logo: ./react-original.svg
 website: "https://github.com/facebook/create-react-app"
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /pycharm/topics/cra/
   - /webstorm/topics/cra/

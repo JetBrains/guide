@@ -3,6 +3,8 @@ title: Navigation
 subtitle: Productive ways to move around in your project.
 accent: primary
 icon: fas fa-map-marked
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /dotnet/topics/navigation/
   - /goland/topics/navigation/

@@ -19,7 +19,7 @@ test("should render ArticlesLayout", () => {
 	};
 	const firstArticleURL = fixtures.articles[0].url;
 	fixtures.context.getResource = () =>
-		fixtures.resolvedCollections.allResources.get(firstArticleURL)!;
+		fixtures.resourceMap.get(firstArticleURL)!;
 	const articlesLayout = new ArticlesLayout();
 	document.body.innerHTML = articlesLayout.render.call(
 		fixtures.context,

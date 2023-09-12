@@ -1,39 +1,20 @@
 import { Static, Type } from "@sinclair/typebox";
 import { validateFrontmatter } from "../../../src/validators";
-import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
+import {
+	getThumbnailPath,
+	Resource,
+	ResourceFrontmatter,
+} from "../../../src/ResourceModels";
 import { EleventyPage } from "../../../src/models";
 import { Tutorial } from "./TutorialModels";
+import { ThumbnailField, VideoBottomField, VideoField } from "../commonModels";
 import { TUTORIAL_STEP_RESOURCE_TYPE } from "../../../src/resourceType";
 
 export const TutorialStepFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
-	Type.Object({
-		videoBottom: Type.Optional(
-			Type.Boolean({
-				description:
-					"True if video should be rendered at the bottom; false otherwise",
-			})
-		),
-		video: Type.Optional(
-			Type.Union([
-				Type.String({
-					description: "YouTube URL to the video",
-				}),
-				Type.Object(
-					{
-						url: Type.String({ description: "YouTube URL to the video" }),
-						start: Type.Number({
-							description: "start time for the video",
-						}),
-						end: Type.Number({
-							description: "end time for the video",
-						}),
-					},
-					{ description: "Animated GIF to show in this tip" }
-				),
-			])
-		),
-	}),
+	ThumbnailField,
+	VideoBottomField,
+	VideoField,
 ]);
 export type TutorialStepFrontmatter = Static<typeof TutorialStepFrontmatter>;
 
@@ -41,6 +22,7 @@ export class TutorialStep
 	extends Resource<TUTORIAL_STEP_RESOURCE_TYPE>
 	implements TutorialStepFrontmatter
 {
+	thumbnail: TutorialStepFrontmatter["thumbnail"];
 	video: TutorialStepFrontmatter["video"];
 	parentTutorial?: Tutorial;
 	videoBottom: boolean;
@@ -56,6 +38,7 @@ export class TutorialStep
 		super({ data, page });
 		this.video = data.video;
 		this.videoBottom = !!data.videoBottom;
+		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);
 	}
 
 	// resolve(allCollections: AllCollections): void {
@@ -74,6 +57,5 @@ export async function getTutorialStep(
 ): Promise<TutorialStep> {
 	validateFrontmatter(TutorialStepFrontmatter, data, page.url);
 	const tutorialStep = new TutorialStep({ data, page });
-	await tutorialStep.init();
 	return tutorialStep;
 }

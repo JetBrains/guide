@@ -2,7 +2,6 @@ import { beforeEach, describe, expect, it, test } from "vitest";
 import { Resource } from "../src/ResourceModels";
 import fixtures from "./fixtures";
 import {
-	getReference,
 	getResource,
 	getResources,
 	QueryFilter,
@@ -11,19 +10,14 @@ import {
 import { EleventyCollectionItem } from "../src/models";
 
 it("gets a resource by path", () => {
-	const result = getResource(fixtures.resolvedResources, "/tips/some-tip/");
+	const result = getResource(fixtures.resources, "/tips/some-tip/");
 	expect(result.url).to.equal("/tips/some-tip/");
-});
-
-it("gets a reference by path", () => {
-	const result = getReference(fixtures.resolvedReferences, "/authors/sa/");
-	expect(result.url).to.equal("/authors/sa/");
 });
 
 describe("getResources filtering", () => {
 	let resources: Resource[];
 	beforeEach(() => {
-		resources = fixtures.resolvedResources;
+		resources = fixtures.resources;
 	});
 
 	it("does no filtering", () => {

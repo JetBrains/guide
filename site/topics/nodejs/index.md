@@ -4,6 +4,8 @@ subtitle: "JavaScript outside of the browser, on the command-line or server-side
 logo: ./nodejs-icon.svg
 website: "https://nodejs.org"
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /pycharm/topics/nodejs/
   - /webstorm/topics/nodejs/

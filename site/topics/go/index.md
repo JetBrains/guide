@@ -6,6 +6,8 @@ subtitle: >-
 website: "https://golang.org"
 logo: ./go-gopher.svg
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /goland/topics/go/
 ---

@@ -21,6 +21,12 @@ export type PAGE_RESOURCE_TYPE = typeof PAGE_RESOURCE;
 
 export const LINK_RESOURCE = "link";
 export type LINK_RESOURCE_TYPE = typeof LINK_RESOURCE;
+export const AUTHOR_RESOURCE = "author";
+export type AUTHOR_RESOURCE_TYPE = typeof AUTHOR_RESOURCE;
+
+export const TOPIC_RESOURCE = "topic";
+export type TOPIC_RESOURCE_TYPE = typeof TOPIC_RESOURCE;
+
 export const ALL_RESOURCES = [
 	TIP_RESOURCE,
 	ARTICLE_RESOURCE,
@@ -30,12 +36,12 @@ export const ALL_RESOURCES = [
 	CHANNEL_RESOURCE,
 	PAGE_RESOURCE,
 	LINK_RESOURCE,
+	TOPIC_RESOURCE,
+	AUTHOR_RESOURCE,
 ] as const;
 
-export type POTENTIAL_RESOURCE_TYPES = Array<typeof ALL_RESOURCES>;
+export type ALL_RESOURCE_TYPES = Array<typeof ALL_RESOURCES>;
 
 export type RESOURCE_TYPES = (typeof ALL_RESOURCES)[number];
 
-export type POSSIBLE_RESOURCE_TYPES = Array<
-	RESOURCE_TYPES | "author" | "topic"
->;
+export type POSSIBLE_RESOURCE_TYPES = Array<RESOURCE_TYPES>;

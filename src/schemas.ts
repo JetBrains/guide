@@ -1,6 +1,7 @@
 import { writeFile } from "node:fs/promises";
 import path from "upath";
-import { ReferenceFrontmatter } from "./ReferenceModels";
+import { TopicFrontmatter } from "../_includes/resources/topic/TopicModels";
+import { ResourceMap } from "./ResourceModels";
 
 // Some feature flags to opt-in/opt-out of, depending how far we want to go with JSON schemas:
 const featureFlags = {
@@ -24,7 +25,9 @@ function getPreamble(resourceType: string) {
 }
 
 function extractReferences(
-	allReferencesList: ReferenceFrontmatter[],
+	// TODO JNW replace this with `ResourceFrontmatter` and a type guard
+	//   so r.label below works.
+	allReferencesList: TopicFrontmatter[],
 	resourceType: string
 ): string[] {
 	return allReferencesList
@@ -80,11 +83,12 @@ function hasProperty<T extends string>(
 
 export async function dumpSchemas<T extends ObjectMap>(
 	schemas: T,
-	allReferencesList: ReferenceFrontmatter[],
+	resourceMap: ResourceMap,
 	outputPath: string
 ) {
-	const authors = extractReferences(allReferencesList, "author").sort();
-	const topics = extractReferences(allReferencesList, "topic").sort();
+	const resources = Array.from(resourceMap.values());
+	const authors = extractReferences(resources, "author").sort();
+	const topics = extractReferences(resources, "topic").sort();
 
 	for (const [key, schema] of Object.entries(schemas)) {
 		const thisSchema: Schema<T> = {

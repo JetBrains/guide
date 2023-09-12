@@ -12,7 +12,7 @@ export function AuthorLayout(
 	data: ReferenceLayoutProps
 ): JSX.Element {
 	const { collections, content, page } = data;
-	const author = collections.allReferences.get(
+	const author = collections.resourceMap.get(
 		`author:${page.fileSlug}`
 	) as Author;
 	if (!author) {

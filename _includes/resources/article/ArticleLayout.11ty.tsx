@@ -1,10 +1,10 @@
 import h, { JSX } from "vhtml";
 import SeeAlso from "../../seealso/SeeAlso.11ty";
 import { Article, ArticleFrontmatter } from "./ArticleModels";
-import { Author } from "../../references/author/AuthorModels";
+import { Author } from "../author/AuthorModels";
 import VideoPlayer from "../../video/VideoPlayer.11ty";
 import { LayoutContext, LayoutProps } from "../../../src/models";
-import { Topic } from "../../references/topic/TopicModels";
+import { Topic } from "../topic/TopicModels";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
@@ -18,7 +18,7 @@ export function ArticleLayout(
 	data: ArticleLayoutData
 ): JSX.Element {
 	const { collections, content, page } = data;
-	const article = collections.allResources.get(page.url) as Article;
+	const article = collections.resourceMap.get(page.url) as Article;
 	if (!article) {
 		throw new Error(`Article "${page.url}" not in collection`);
 	}

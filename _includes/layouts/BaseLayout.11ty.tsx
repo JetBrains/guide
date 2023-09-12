@@ -22,7 +22,7 @@ export type BaseLayoutProps = {
 				start: number;
 				end: number;
 		  };
-	resourceType?: string;
+	resourceType: string;
 	channel?: string;
 } & LayoutProps;
 
@@ -44,14 +44,14 @@ export function BaseLayout(
 	// determine if there's an og:image
 	let cardThumbnail, channel;
 	if (resourceType) {
-		const resource = collections.allResources.get(data.page.url) as Resource;
+		const resource = collections.resourceMap.get(data.page.url) as Resource;
 		cardThumbnail = resource?.cardThumbnail;
 		if (resourceType == "channel") {
-			channel = resource;
+			channel = resource as Channel;
 		} else if (resource && resource.references) {
 			channel = resource.references.channel;
 		} else if (data.channel) {
-			channel = collections.allResources.get(data.channel) as Channel;
+			channel = collections.resourceMap.get(data.channel) as Channel;
 		}
 	}
 

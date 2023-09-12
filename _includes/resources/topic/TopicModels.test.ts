@@ -1,10 +1,11 @@
 import { expect, test } from "vitest";
 import { EleventyPage } from "../../../src/models";
-import { rootPath } from "../../config";
 import { Topic, TopicFrontmatter } from "./TopicModels";
 import fixtures from "../../fixtures";
 
 const data: TopicFrontmatter = {
+	date: fixtures.date,
+	author: "sa",
 	accent: "some accent",
 	icon: "some-icon.png",
 	label: "sa",
@@ -14,7 +15,7 @@ const data: TopicFrontmatter = {
 const page: EleventyPage = {
 	fileSlug: "sa",
 	url: "/topics/st/",
-	inputPath: `${rootPath}/topics/st/index.md`,
+	inputPath: `/topics/st/index.md`,
 	date: fixtures.date,
 };
 
@@ -27,10 +28,10 @@ test("construct a topic", async () => {
 	expect(topic.title).to.equal("Some Topic");
 });
 
-test("construct a topic from factory", async () => {
-	const topic = await new Topic({
+test("construct a topic from factory", () => {
+	const topic = new Topic({
 		data,
 		page,
-	}).init();
+	});
 	expect(topic.title).to.equal("Some Topic");
 });

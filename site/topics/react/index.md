@@ -4,6 +4,8 @@ subtitle: A JavaScript library for building user interfaces
 logo: ./react-original.svg
 website: "https://reactjs.org"
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /pycharm/topics/react/
   - /webstorm/topics/react/

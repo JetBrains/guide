@@ -6,7 +6,7 @@ export function RssLayout(this: LayoutContext, data: LayoutProps): string {
 	const { collections, page } = data;
 
 	let items = "";
-	collections.allResources.forEach((page) => {
+	collections.resourceMap.forEach((page) => {
 		items += `<item>
         <title>${encode(page.title, { level: "xml" })}</title>
         <link>${path.join(`https://www.jetbrains.com/guide`, page.url)}</link>

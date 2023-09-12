@@ -6,4 +6,6 @@ subtitle: >-
 logo: ./blazor.png
 website: "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor"
 topicType: technology
+author: maartenba
+date: 2020-01-01
 ---

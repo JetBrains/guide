@@ -6,6 +6,8 @@ subtitle: >-
 logo: gradle-elephant.svg
 website: "https://gradle.org/"
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /idea/topics/gradle/
 ---

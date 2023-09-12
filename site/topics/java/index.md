@@ -6,6 +6,8 @@ subtitle: >-
 logo: duke.png
 website: "https://openjdk.java.net/"
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /idea/topics/java/
 ---

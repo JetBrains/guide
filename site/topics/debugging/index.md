@@ -3,6 +3,8 @@ title: Debugging
 subtitle: Investigate errors and trace code execution with our visual debugger.
 accent: primary
 icon: fas fa-bug
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /dotnet/topics/debugging/
   - /goland/topics/debugging/

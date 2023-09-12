@@ -1,15 +1,15 @@
 import h, { JSX } from "vhtml";
 import { BaseLayout } from "./BaseLayout.11ty";
-import { ReferenceFrontmatter } from "../../src/ReferenceModels";
 import { LayoutProps } from "../../src/models";
 import Pagination from "../pagination/Pagination.11ty";
+import { ResourceFrontmatter } from "../../src/ResourceModels";
 
 export type ReferenceLayoutProps = {
 	content?: string;
 	figure?: string[];
 	listing: string[];
 } & LayoutProps &
-	ReferenceFrontmatter;
+	ResourceFrontmatter;
 
 export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
 	const { content, figure, listing, pagination } = data;

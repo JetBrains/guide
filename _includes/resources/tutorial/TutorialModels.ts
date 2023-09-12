@@ -1,26 +1,24 @@
 import { Static, Type } from "@sinclair/typebox";
-import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
+import {
+	getThumbnailPath,
+	Resource,
+	ResourceFrontmatter,
+	ResourceMap,
+} from "../../../src/ResourceModels";
 import { TUTORIAL_RESOURCE_TYPE } from "../../../src/resourceType";
 import { EleventyPage } from "../../../src/models";
 import path from "upath";
-import { AllCollections } from "../../../src/registration";
 import { TutorialStep } from "./TutorialStepModels";
+import { ThumbnailField, VideoBottomField } from "../commonModels";
 
 export const TutorialFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
+	ThumbnailField,
+	VideoBottomField,
 	Type.Object({
-		thumbnail: Type.Optional(
-			Type.String({ description: "File name of a thumbnail for this tutorial" })
-		),
 		tutorialItems: Type.Array(
 			Type.String({
 				description: "Tutorial step(s) that are part of this tutorial",
-			})
-		),
-		videoBottom: Type.Optional(
-			Type.Boolean({
-				description:
-					"True if video should be rendered at the bottom; false otherwise",
 			})
 		),
 	}),
@@ -31,6 +29,7 @@ export class Tutorial
 	extends Resource<TUTORIAL_RESOURCE_TYPE>
 	implements TutorialFrontmatter
 {
+	thumbnail: TutorialFrontmatter["thumbnail"];
 	tutorialItems: string[];
 	tutorialSteps: TutorialStep[];
 	videoBottom: boolean;
@@ -47,11 +46,11 @@ export class Tutorial
 		this.tutorialItems = data.tutorialItems;
 		this.tutorialSteps = [];
 		this.videoBottom = !!data.videoBottom;
+		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);
 	}
 
-	resolve(allCollections: AllCollections) {
-		super.resolve(allCollections);
-		const { allResources } = allCollections;
+	resolve(allResources: ResourceMap) {
+		super.resolve(allResources);
 
 		// then call this
 		this.tutorialItems.forEach((ti) => {

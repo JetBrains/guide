@@ -10,7 +10,7 @@ export function TopicsLayout(
 	this: LayoutContext,
 	data: ReferenceLayoutProps
 ): JSX.Element {
-	const topics = this.getReferences({
+	const topics = this.getResources({
 		resourceTypes: ["topic"],
 	}) as Topic[];
 

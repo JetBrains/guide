@@ -5,7 +5,7 @@ export function LunrLayout(this: LayoutContext, data: LayoutProps): string {
 	const { collections, commandLineArgs } = data;
 	const { pathprefix } = commandLineArgs;
 
-	const results = Array.from(collections.allResources.values()).map((value) => {
+	const results = Array.from(collections.resourceMap.values()).map((value) => {
 		return {
 			title: value.title,
 			subtitle: value.subtitle,

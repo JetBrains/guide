@@ -1,10 +1,9 @@
 import h, { JSX } from "vhtml";
-import { Reference } from "../../../src/ReferenceModels";
-import { Topic } from "../../references/topic/TopicModels";
-import TopicTag from "../../references/topic/TopicTag.11ty";
+import { Topic } from "../topic/TopicModels";
+import TopicTag from "../topic/TopicTag.11ty";
 
 export type ArticleTopicsProps = {
-	topics: Reference[];
+	topics: Topic[];
 };
 
 const ArticleTopics = ({ topics }: ArticleTopicsProps): JSX.Element => {

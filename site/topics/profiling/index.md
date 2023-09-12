@@ -3,6 +3,8 @@ title: Profiling
 subtitle: Analyze application performance and memory usage.
 accent: primary
 icon: fas fa-flag-checkered
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /dotnet/topics/profiling/
 ---

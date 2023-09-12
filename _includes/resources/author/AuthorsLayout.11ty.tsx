@@ -11,7 +11,7 @@ export function AuthorsLayout(
 	data: ReferenceLayoutProps
 ): JSX.Element {
 	const { content } = data;
-	const authors = this.getReferences({
+	const authors = this.getResources({
 		resourceTypes: ["author"],
 	}) as Author[];
 	authors.sort((a, b) => {

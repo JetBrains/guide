@@ -3,6 +3,8 @@ title: GameDev
 subtitle: A smarter way to write code for games.
 accent: primary
 icon: fas fa-gamepad
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /dotnet/topics/gaming/
 ---

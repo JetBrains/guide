@@ -4,6 +4,8 @@ subtitle: Mature full-featured Python testing tool that helps you write better p
 logo: ./pytest.png
 website: "https://docs.pytest.org/en/latest/"
 topicType: technology
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /pycharm/topics/pytest/
 ---

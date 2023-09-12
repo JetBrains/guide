@@ -5,7 +5,6 @@ import VideoPlayer from "../../video/VideoPlayer.11ty";
 import { Tutorial } from "./TutorialModels";
 import { BottomNav } from "./TopBottomNav.11ty";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
-import { References } from "../../../src/ReferenceModels";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
@@ -17,9 +16,9 @@ export function TutorialStepLayout(
 	data: TutorialStepLayoutData
 ): JSX.Element {
 	const { collections, content, page } = data;
-	const tutorialStep = collections.allResources.get(page.url) as TutorialStep;
+	const tutorialStep = collections.resourceMap.get(page.url) as TutorialStep;
 	const parent = tutorialStep.parentTutorial as Tutorial;
-	const references = tutorialStep.references as References;
+	const references = tutorialStep.references;
 
 	// video
 	const video = tutorialStep.video && (
@@ -61,10 +60,10 @@ export function TutorialStepLayout(
 				subtitle={tutorialStep.subtitle}
 			/>
 			<ArticleAuthor
-				author={references.author}
+				author={references!.author}
 				displayDate={tutorialStep.displayDate}
 			/>
-			<ArticleTopics topics={references.topics} />
+			<ArticleTopics topics={references!.topics} />
 
 			{video && !videoBottom && <div class="mb-4">{video}</div>}
 			{content ? (

@@ -3,6 +3,8 @@ title: IDE
 subtitle: Become more productive with general IDE tips and features.
 accent: primary
 icon: far fa-lightbulb
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /dotnet/topics/ide/
   - /pycharm/topics/ide/

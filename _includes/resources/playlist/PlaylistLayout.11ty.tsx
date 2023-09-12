@@ -8,7 +8,7 @@ import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
-import { Author } from "../../references/author/AuthorModels";
+import { Author } from "../author/AuthorModels";
 import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
 
 export type PlaylistLayoutData = LayoutProps & PlaylistFrontmatter;
@@ -58,7 +58,7 @@ export function PlaylistLayout(
 	data: PlaylistLayoutData
 ): JSX.Element {
 	const { collections, content, page } = data;
-	const playlist = collections.allResources.get(page.url) as Playlist;
+	const playlist = collections.resourceMap.get(page.url) as Playlist;
 	if (!playlist) {
 		throw new Error(`Playlist "${page.url}" not in collection`);
 	}

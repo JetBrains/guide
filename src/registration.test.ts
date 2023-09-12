@@ -1,122 +1,68 @@
-import { beforeEach, describe, expect, test } from "vitest";
+import { expect, test } from "vitest";
 import fixtures from "../_includes/fixtures";
 import {
 	CollectionApi,
-	getAllCollections,
-	resolveReference,
+	getResourceMap,
+	makeResource,
+	makeResourceMap,
+	makeResources,
+	resolveResourceMap,
 } from "./registration";
-import { referenceCollections, resourceCollections } from "../_includes/config";
-import { Tip } from "../_includes/resources/tip/TipModels";
-import { AuthorFrontmatter } from "../_includes/references/author/AuthorModels";
+import { resourceClasses } from "../_includes/config";
 
 const mockCollectionApi: CollectionApi = {
 	getAll: () => fixtures.all,
 	getFilteredByTag: () => fixtures.all,
 };
 
-test("should start with unresolved references on tips", () => {
-	const tip0 = fixtures.collections.allResources.get("/tips/some-tip/");
-	expect(tip0).to.exist;
-	expect(tip0 && tip0.references).to.be.undefined;
+test("make a resource from 11ty collection item data", () => {
+	const item = fixtures.tipItems[0];
+	const result = makeResource({ item, resourceClasses });
+	expect(result.title).to.equal(item.data.title);
 });
 
-test("a resource and a reference exist in fixture data", () => {
-	const tip0 = fixtures.collections.allResources.get("/tips/some-tip/");
-	const author0 = fixtures.collections.allReferences.get("author:sa");
-	expect(tip0).to.exist;
-	expect(author0).to.exist;
+test("make resources from 11ty collection item data", () => {
+	const collectionItems = fixtures.all;
+	const result = makeResources({
+		collectionItems,
+		resourceClasses,
+	});
+	expect(result[0].title).to.equal(collectionItems[0].data.title);
 });
 
-test("should construct collections", async () => {
-	const { allReferences, allResources } = await getAllCollections({
+test("initialize 11ty collection items into a map with correct keys", () => {
+	const collectionItems = fixtures.all;
+	const resources = makeResources({
+		collectionItems,
+		resourceClasses,
+	});
+	const resourceCollection = makeResourceMap(resources);
+	expect(resourceCollection.get("/tips/some-tip/")).to.exist;
+	expect(resourceCollection.get("author:sa")).to.exist;
+	expect(resourceCollection.get("topics:sto")).to.exist;
+});
+
+test("resolve the references in a resource map", () => {
+	const collectionItems = fixtures.all;
+	const resources = makeResources({
+		collectionItems,
+		resourceClasses,
+	});
+	const resourceMap = makeResourceMap(resources);
+	resolveResourceMap(resourceMap);
+	const tip = resourceMap.get("/tips/some-tip/");
+	expect(tip && tip.references && tip.references.author.url).to.equal(
+		"/authors/sa/"
+	);
+});
+
+test("simulate config calling with the collection API", () => {
+	const resourceMap = getResourceMap({
 		collectionApi: mockCollectionApi,
-		resourceCollections,
-		referenceCollections,
+		resourceClasses,
 	});
-	expect(allResources).to.exist;
-	const tipItem0 = fixtures.tipItems[0];
-	const thisTip0 = allResources.get(tipItem0.page.url) as Tip;
-	expect(thisTip0).to.exist;
-
-	// Authors
-	const authorItem0 = fixtures.authorItems[0];
-	const thisAuthor0 = allReferences.get(
-		`author:${authorItem0.data.label}`
-	) as unknown as AuthorFrontmatter;
-	expect(thisAuthor0).to.exist;
-	expect(thisAuthor0.title).to.equal(authorItem0.data.title);
-
-	// Topics
-	const topic0Item = fixtures.topicItems[0];
-	const thisTopic0 = allReferences.get(`topics:${topic0Item.data.label}`);
-	expect(thisTopic0 && thisTopic0.title).to.equal(topic0Item.data.title);
-
-	// Let's look at references
-	const refs = thisTip0.references;
-	expect(refs).to.exist;
-	expect(refs && refs.author.title).to.equal(authorItem0.data.title);
-});
-
-describe("Resolve References", () => {
-	const allCollections = fixtures.collections;
-	const allReferences = fixtures.collections.allReferences;
-	const allResources = fixtures.collections.allResources;
-	const authorItem0 = fixtures.authorItems[0];
-	let resource: Tip;
-	const tip0 = fixtures.collections.allResources.get("/tips/some-tip/") as Tip;
-	expect(tip0).to.exist;
-
-	beforeEach(() => {
-		resource = structuredClone(tip0);
-	});
-
-	test("allReferences should exist", () => {
-		expect(allReferences.get("author:sa")).to.exist;
-	});
-
-	test("should throw error for undefined field", () => {
-		const fieldName = "xxx";
-		const resolver = () =>
-			resolveReference({ fieldName, resource, allReferences, allResources });
-		expect(resolver).toThrowError(`No reference field "xxx" on resource`);
-	});
-
-	test("should throw error for undefined label in array", () => {
-		expect(resource.topics && resource.topics.length).to.be.gt(0);
-		const fieldName = "topics";
-		resource.topics = ["xxx", "yyy"];
-		const resolver = () =>
-			resolveReference({ fieldName, resource, allReferences, allResources });
-		expect(resolver).toThrowError(
-			`Resource "/tips/some-tip/" has unresolved reference "topics:xxx"`
-		);
-	});
-
-	test("should throw error for undefined label in value", () => {
-		expect(resource.author).to.exist;
-		const fieldName = "author";
-		resource.author = "xxx";
-		const resolver = () =>
-			resolveReference({ fieldName, resource, allReferences, allResources });
-		expect(resolver).toThrowError(
-			`Resource "/tips/some-tip/" has unresolved reference "author:xxx"`
-		);
-	});
-
-	test("resolve a set of references", () => {
-		const tip0 = fixtures.collections.allResources.get(
-			"/tips/some-tip/"
-		) as Tip;
-		expect(tip0).to.exist;
-		expect(tip0.references).not.to.exist;
-		tip0.resolve(allCollections);
-		expect(tip0.references).to.exist;
-		if (tip0.references) {
-			const refAuthor = tip0.references.author;
-			expect(refAuthor.title).to.equal(authorItem0.data.title);
-			const referencedTopics = tip0.references.topics;
-			const theTopic = fixtures.topicItems[0];
-			expect(referencedTopics[0].title).to.equal(theTopic.data.title);
-		}
-	});
+	const tip = resourceMap.get("/tips/some-tip/");
+	expect(tip && tip.references && tip.references.author.url).to.equal(
+		"/authors/sa/"
+	);
 });

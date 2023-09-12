@@ -7,7 +7,7 @@ import fixtures from "../../fixtures";
 test("should render TutorialLayout", () => {
 	const tutorialLayoutData: TutorialLayoutData = {
 		commandLineArgs: { pathprefix: "/pycharm/guide" },
-		collections: { ...fixtures.resolvedCollections },
+		collections: { ...fixtures },
 		content: fixtures.content,
 		...fixtures.tutorialItems[0].data,
 		page: fixtures.tutorialItems[0].page,

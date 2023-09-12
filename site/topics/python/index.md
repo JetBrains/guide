@@ -3,6 +3,8 @@ title: Python
 subtitle: Work productively when coding Python.
 accent: primary
 icon: fab fa-python
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /pycharm/topics/python/
 ---

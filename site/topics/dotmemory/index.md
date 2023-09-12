@@ -4,6 +4,8 @@ subtitle: The .NET Memory Profiler.
 logo: ./logo.png
 website: "https://www.jetbrains.com/dotmemory/"
 topicType: product
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /dotnet/topics/dotmemory/
 ---

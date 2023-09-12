@@ -1,5 +1,5 @@
 import h, { JSX } from "vhtml";
-import { Topic } from "../../references/topic/TopicModels";
+import { Topic } from "./TopicModels";
 
 export type TopicTagProps = {
 	topic: Topic;

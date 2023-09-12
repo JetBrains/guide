@@ -11,9 +11,7 @@ export function TopicLayout(
 	data: TopicLayoutData
 ): JSX.Element {
 	const { collections, content, page } = data;
-	const topic = collections.allReferences.get(
-		`topics:${page.fileSlug}`
-	) as Topic;
+	const topic = collections.resourceMap.get(`topics:${page.fileSlug}`) as Topic;
 	if (!topic) {
 		throw new Error(`Topic "${page.fileSlug}" not in collection`);
 	}

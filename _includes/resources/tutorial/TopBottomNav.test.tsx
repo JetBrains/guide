@@ -5,7 +5,7 @@ import { BottomNav, TopNav, TopNavProps } from "./TopBottomNav.11ty";
 import fixtures from "../../fixtures";
 import { Tutorial } from "./TutorialModels";
 
-const parent = fixtures.resolvedCollections.allResources.get(
+const parent = fixtures.resourceMap.get(
 	"/tutorials/some-tutorial/"
 ) as Tutorial;
 export const topNavProps: TopNavProps = {

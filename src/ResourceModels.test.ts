@@ -1,45 +1,38 @@
 import { expect, test } from "vitest";
-import {
-	BaseEntity,
-	BaseFrontmatter,
-	Resource,
-	ResourceFrontmatter,
-} from "./ResourceModels";
-// import fixtures from "../_includes/fixtures";
-import { rootPath } from "../_includes/config";
+import { Resource, ResourceFrontmatter } from "./ResourceModels";
 import { EleventyPage } from "./models";
 import fixtures from "../_includes/fixtures";
 
-const baseFrontmatter: BaseFrontmatter = {
+const resourceFrontmatter: ResourceFrontmatter = {
+	date: fixtures.date,
+	author: "sa",
 	resourceType: "tip",
 	title: "Some Tip",
 };
 const data: ResourceFrontmatter = {
-	...baseFrontmatter,
+	...resourceFrontmatter,
 	author: "sa",
 	date: new Date(Date.UTC(2023, 1, 11)),
-	thumbnail: "thumbnail.png",
 	topics: ["st", "at", "sp", "ap"],
 };
 const page: EleventyPage = {
 	fileSlug: "some-tip",
 	url: "/tips/some-tip/",
-	inputPath: `${rootPath}/tips/some-tip/index.md`,
+	inputPath: `/tips/some-tip/index.md`,
 	date: fixtures.date,
 };
 
 test("construct a BaseEntity", () => {
-	const baseEntity = new BaseEntity({ data: baseFrontmatter, page });
+	const baseEntity = new Resource({ data: resourceFrontmatter, page });
 	expect(baseEntity).to.exist;
 });
 test("construct a Resource", () => {
 	const resource = new Resource({ data, page });
-	resource.init();
 	expect(resource).to.exist;
 });
 
 test("get a class attribute from base class", () => {
-	expect(BaseEntity.frontmatterSchema).to.equal(BaseFrontmatter);
+	expect(Resource.frontmatterSchema).to.equal(ResourceFrontmatter);
 });
 test("get a class attribute from base class", () => {
 	expect(Resource.frontmatterSchema).to.equal(ResourceFrontmatter);

@@ -16,7 +16,6 @@ test("should render AuthorsLayout", () => {
 			date: fixtures.date,
 		},
 	};
-	fixtures.context.getReferences = () => fixtures.authors;
 	document.body.innerHTML = AuthorsLayout.call(fixtures.context, renderProps);
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: "Author",

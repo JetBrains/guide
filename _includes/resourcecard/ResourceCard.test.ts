@@ -5,11 +5,11 @@ import ResourceCard from "./ResourceCard.11ty";
 import fixtures from "../fixtures";
 
 test("ResourceCard", () => {
-	const resource = fixtures.resolvedResources[0];
+	const resource = fixtures.resources[0];
 
 	document.body.innerHTML = ResourceCard({ resource });
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: "Resource",
 	});
-	expect(links[0].href).to.equal(fixtures.tips[1].url);
+	expect(links[0].href).to.equal(fixtures.tips[0].url);
 });

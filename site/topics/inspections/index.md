@@ -3,6 +3,8 @@ title: Inspections
 subtitle: Analyzing source code for common mistakes and potential improvements.
 accent: primary
 icon: fas fa-search
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /goland/topics/inspections/
   - /idea/topics/inspections/

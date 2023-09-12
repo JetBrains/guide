@@ -2,6 +2,8 @@
 title: Paul Everitt
 subtitle: PyCharm Developer Advocate at JetBrains
 thumbnail: ./pwe.jpg
+author: pwe
+date: 2020-01-01
 obsoletes:
   - /dotnet/authors/pwe/
   - /goland/authors/pwe/

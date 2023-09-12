@@ -2,10 +2,10 @@ import h, { JSX } from "vhtml";
 import { ReferenceLayout } from "../../layouts/ReferenceLayout.11y";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
-import { BaseFrontmatter } from "../../../src/ResourceModels";
+import { ResourceFrontmatter } from "../../../src/ResourceModels";
 import { Playlist } from "./PlaylistModels";
 
-export type PlaylistsLayoutProps = LayoutProps & BaseFrontmatter;
+export type PlaylistsLayoutProps = LayoutProps & ResourceFrontmatter;
 
 export function PlaylistsLayout(
 	this: LayoutContext,
