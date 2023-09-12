@@ -27,6 +27,7 @@ import {
 import { PaginationProps } from "./pagination/Pagination.11ty";
 import { Article, ArticleFrontmatter } from "./resources/article/ArticleModels";
 import { Channel, ChannelFrontmatter } from "./resources/channel/ChannelModels";
+import { Link, LinkFrontmatter } from "./resources/link/LinkModels";
 
 /**
  * Reusable test data``
@@ -111,6 +112,77 @@ const tips = await Promise.all(
 	tipDatas.map(
 		async (ref) =>
 			await new Tip({
+				data: ref.data,
+				page: ref.page,
+			}).init()
+	)
+);
+
+const linkFrontmatters: LinkFrontmatter[] = [
+	{
+		title: "Some Link",
+		date,
+		resourceType: "link",
+		author: "sa",
+		topics: ["sto", "ato", "sp", "ap", "ste", "ate"],
+		thumbnail: "thumbnail.png",
+	},
+	{
+		title: "Another Link",
+		date: laterDate,
+		resourceType: "link",
+		author: "aa",
+		topics: ["sto", "ato", "ste", "ate"],
+		thumbnail: "aa.png",
+	},
+];
+const linkItems: {
+	content: string;
+	data: LinkFrontmatter;
+	page: EleventyPage;
+}[] = [
+	{
+		content,
+		data: { ...linkFrontmatters[0] },
+		page: {
+			fileSlug: "some-link",
+			url: "/links/some-link/",
+			inputPath: `${rootPath}/links/some-link/index.md`,
+			date,
+		},
+	},
+	{
+		content,
+		data: { ...linkFrontmatters[1] },
+		page: {
+			fileSlug: "another-link",
+			url: "/links/another-link/",
+			inputPath: `${rootPath}/links/another-link/index.md`,
+			date,
+		},
+	},
+];
+const linkDatas: {
+	data: LinkFrontmatter;
+	page: EleventyPage;
+	content: string;
+}[] = [
+	{
+		content,
+		data: { ...linkItems[0].data },
+		page: linkItems[0].page,
+	},
+	{
+		content,
+		data: { ...linkItems[1].data },
+		page: linkItems[1].page,
+	},
+];
+
+const links = await Promise.all(
+	linkDatas.map(
+		async (ref) =>
+			await new Link({
 				data: ref.data,
 				page: ref.page,
 			}).init()
@@ -648,6 +720,7 @@ const all: BaseItem[] = [
 	...playlistItems,
 	...articleItems,
 	...channelItems,
+	...linkItems,
 ];
 
 const authors = await Promise.all(
@@ -711,9 +784,14 @@ const playlists = await Promise.all(
 );
 
 const allResources: ResourceCollection = new Map();
-[...tips, ...tutorials, ...tutorialSteps, ...playlists, ...channels].forEach(
-	(resource) => allResources.set(resource.url, resource)
-);
+[
+	...tips,
+	...tutorials,
+	...tutorialSteps,
+	...playlists,
+	...channels,
+	...links,
+].forEach((resource) => allResources.set(resource.url, resource));
 
 const allReferences: ReferenceCollection = new Map();
 [...authors, ...topics].forEach((reference) => {
@@ -790,6 +868,8 @@ const fixtures = {
 	channelItems,
 	tips,
 	tipItems,
+	links,
+	linkItems,
 	topics,
 	topicItems,
 	tutorials,

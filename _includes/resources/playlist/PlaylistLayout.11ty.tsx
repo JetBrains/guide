@@ -111,6 +111,11 @@ export function PlaylistLayout(
 							/>
 						)}
 						{item.video && <VideoPlayer source={item.video}></VideoPlayer>}
+						{item.linkURL && (
+							<div>
+								<a href={item.linkURL}>View at original site</a>
+							</div>
+						)}
 						{itemContent && (
 							<div
 								class="content"

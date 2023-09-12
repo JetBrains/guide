@@ -19,6 +19,8 @@ export type CHANNEL_RESOURCE_TYPE = typeof CHANNEL_RESOURCE;
 export const PAGE_RESOURCE = "page";
 export type PAGE_RESOURCE_TYPE = typeof PAGE_RESOURCE;
 
+export const LINK_RESOURCE = "link";
+export type LINK_RESOURCE_TYPE = typeof LINK_RESOURCE;
 export const ALL_RESOURCES = [
 	TIP_RESOURCE,
 	ARTICLE_RESOURCE,
@@ -27,6 +29,7 @@ export const ALL_RESOURCES = [
 	PLAYLIST_RESOURCE,
 	CHANNEL_RESOURCE,
 	PAGE_RESOURCE,
+	LINK_RESOURCE,
 ] as const;
 
 export type POTENTIAL_RESOURCE_TYPES = Array<typeof ALL_RESOURCES>;

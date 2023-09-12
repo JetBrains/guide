@@ -12,6 +12,7 @@ topics:
 author: maartenba
 subtitle: Andrey Dyatlov
 thumbnail: ./thumbnail.png
+linkURL: "https://youtu.be/052xutD86uI"
 video: "https://youtu.be/052xutD86uI"
 obsoletes:
   - /dotnet/tutorials/dotnet-days-online-2021/csharp-source-generators-in-action/

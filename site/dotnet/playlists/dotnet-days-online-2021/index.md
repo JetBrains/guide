@@ -11,7 +11,7 @@ author: maartenba
 subtitle: Session recordings of JetBrains .NET Days Online 2021.
 thumbnail: ./thumbnail.png
 playlistItems:
-  - /dotnet/tips/csharp-source-generators-in-action/
+  - /dotnet/links/csharp-source-generators-in-action/
   - /dotnet/tips/csi-net-debugging-net-applications/
   - /dotnet/tips/turbocharged-writing-high-performance-csharp-and-net-code/
   - /dotnet/tips/going-real-time-using-azure-cosmos-db-and-react/

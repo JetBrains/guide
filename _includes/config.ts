@@ -42,6 +42,7 @@ import { Page } from "./resources/page/PageModels";
 import { Article } from "./resources/article/ArticleModels";
 import { Channel } from "./resources/channel/ChannelModels";
 import { RESOURCE_TYPES } from "../src/resourceType";
+import { Link } from "./resources/link/LinkModels";
 
 export const resourceCollections: Record<
 	RESOURCE_TYPES,
@@ -54,8 +55,8 @@ export const resourceCollections: Record<
 	tutorial: Tutorial,
 	tutorialstep: TutorialStep,
 	article: Article,
+	link: Link,
 } as const;
-
 export const referenceCollections = {
 	author: Author,
 	topic: Topic,

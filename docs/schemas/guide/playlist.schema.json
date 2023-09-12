@@ -42,6 +42,10 @@
                   "type": "string"
                 },
                 {
+                  "const": "link",
+                  "type": "string"
+                },
+                {
                   "const": "author",
                   "type": "string"
                 },
