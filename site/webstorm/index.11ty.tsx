@@ -58,7 +58,7 @@ class WebStormHomepage {
 				/>
 				{tips && (
 					<ListingSection
-						title={`Recent Tips`}
+						title={`Recent tips`}
 						resources={tips}
 						moreLink={`${channel.url}tips/`}
 					/>
@@ -95,7 +95,7 @@ class WebStormHomepage {
 						</p>
 					</div>
 					<div>
-						<h2>Sharing Feedback and Contributing</h2>
+						<h2>Sharing feedback and contributing</h2>
 						<p>
 							If you have any ideas about how to make this Guide better or want
 							to share your feedback with us, feel free to fill out
@@ -130,7 +130,7 @@ class WebStormHomepage {
 
 				{tutorials && (
 					<ListingSection
-						title={`Recent Tutorials`}
+						title={`Recent tutorials`}
 						resources={tutorials}
 						moreLink={`${channel.url}tutorials/`}
 					/>

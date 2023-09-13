@@ -61,14 +61,14 @@ class PyCharmHomepage {
 				/>
 				{tips && (
 					<ListingSection
-						title={`Recent Tips`}
+						title={`Recent tips`}
 						resources={tips}
 						moreLink={`${channel.url}tips/`}
 					/>
 				)}
 				{tutorials && (
 					<ListingSection
-						title={`Recent Tutorials`}
+						title={`Recent tutorials`}
 						resources={tutorials}
 						moreLink={`${channel.url}tutorials/`}
 						separator={true}
@@ -76,7 +76,7 @@ class PyCharmHomepage {
 				)}
 				{playlists && (
 					<ListingSection
-						title={`Recent Playlists`}
+						title={`Recent playlists`}
 						resources={playlists}
 						moreLink={`${channel.url}playlists/`}
 						separator={true}

@@ -46,6 +46,10 @@ export function LinkLayout(
 							<ArticleAuthor author={author} displayDate={link.displayDate} />
 							<ArticleTopics topics={topics} />
 
+							<p>
+								<a href={link.linkURL}>Visit original page</a>
+							</p>
+
 							{link.screenshot && (
 								<img
 									src={link.screenshot}
