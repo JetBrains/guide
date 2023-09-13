@@ -89,7 +89,7 @@ class RemoteHomepage {
 									</ul>
 								</p>
 								<p>Let’s take a look at each of these in more depth.</p>
-								<h2>Local Virtualization</h2>
+								<h2>Local virtualization</h2>
 								<p>
 									Working directly on a local computer has been the standard
 									development approach for decades. As mentioned above, this
@@ -187,7 +187,7 @@ class RemoteHomepage {
 									integration with all of these, making them a natural part of
 									development.
 								</p>
-								<h2>Development Containers</h2>
+								<h2>Development containers</h2>
 								<p>
 									Containers help run your <em>application</em> during
 									development. But development involves developer tools and
@@ -242,7 +242,7 @@ class RemoteHomepage {
 									environment for your projects. Dev Containers can be run
 									remotely via an SSH connection or locally using Docker.
 								</p>
-								<h2>Cloud-based Development</h2>
+								<h2>Cloud-based development</h2>
 								<p>
 									Containerization – and especially dev containers – helps
 									manage development workflows. What if a company wants to move

@@ -64,7 +64,7 @@ class IntelliJHomepage {
 				/>
 				{tips && (
 					<ListingSection
-						title={`Recent Tips`}
+						title={`Recent tips`}
 						resources={tips}
 						moreLink={`${channel.url}tips/`}
 					/>
@@ -95,7 +95,7 @@ class IntelliJHomepage {
 						</p>
 					</div>
 					<div>
-						<h2>Sharing Feedback and Contributing</h2>
+						<h2>Sharing feedback and contributing</h2>
 						<p>
 							The IntelliJ IDEA Guide is also an open project, with{" "}
 							<a href="https://github.com/jetbrains/guide">
@@ -114,14 +114,14 @@ class IntelliJHomepage {
 
 				{tutorials && (
 					<ListingSection
-						title={`Recent Tutorials`}
+						title={`Recent tutorials`}
 						resources={tutorials}
 						moreLink={`${channel.url}playlists/`}
 					/>
 				)}
 				{playlists && (
 					<ListingSection
-						title={`Recent Playlists`}
+						title={`Recent playlists`}
 						resources={playlists}
 						moreLink={`${channel.url}playlists/`}
 						separator={true}

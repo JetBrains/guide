@@ -117,7 +117,7 @@ class GameDevHomepage {
 
 				{tips && (
 					<ListingSection
-						title={`Recent Tips`}
+						title={`Recent tips`}
 						resources={tips}
 						moreLink={`${channel.url}tips/`}
 						separator={false}
@@ -127,7 +127,7 @@ class GameDevHomepage {
 
 				{eventPlaylists && (
 					<ListingSection
-						title={`Past Events`}
+						title={`Past events`}
 						resources={eventPlaylists}
 						separator={false}
 					/>

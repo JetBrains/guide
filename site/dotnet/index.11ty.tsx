@@ -187,7 +187,7 @@ class DotNetHomepage {
 
 				{tutorials && (
 					<ListingSection
-						title={`Recent Tutorials`}
+						title={`Recent tutorials`}
 						resources={tutorials}
 						moreLink={`${channel.url}tutorials/`}
 						separator={true}
@@ -196,7 +196,7 @@ class DotNetHomepage {
 
 				{tips && (
 					<ListingSection
-						title={`Recent Tips`}
+						title={`Recent tips`}
 						resources={tips}
 						moreLink={`${channel.url}tips/`}
 						separator={false}

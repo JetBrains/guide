@@ -74,7 +74,7 @@ class IndexPage {
 						</p>
 					</div>
 					<div>
-						<h2>Sharing Feedback and Contributing</h2>
+						<h2>Sharing feedback and contributing</h2>
 						<p>
 							The JetBrains Guide is also an open project, with{" "}
 							<a href="https://github.com/jetbrains/guide">
