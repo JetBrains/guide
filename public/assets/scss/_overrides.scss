@@ -74,6 +74,11 @@ a.navbar-item:focus-within {
   object-fit: contain;
 }
 
+a.link-external:after {
+  content: "\2197";
+  display: inline;
+}
+
 /* Fix Bulma + Prism conflicts */
 .token.number, .token.tag { all: inherit; }
 
