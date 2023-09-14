@@ -91,7 +91,7 @@ const ResourceCard = ({
 					<div class="card-image">
 						<a href={url}>
 							<figure class={`image is-16by9 is-contained ${glowCssClass}`}>
-								<img src={thumbnail} alt={title} />
+								{thumbnail && <img src={thumbnail} alt={title} />}
 							</figure>
 						</a>
 					</div>
