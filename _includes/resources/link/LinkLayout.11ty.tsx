@@ -3,7 +3,7 @@ import { Link, LinkFrontmatter } from "./LinkModels";
 import { Author } from "../../references/author/AuthorModels";
 import VideoPlayer from "../../video/VideoPlayer.11ty";
 import { LayoutContext, LayoutProps } from "../../../src/models";
-import { Topic } from "../../resources/topic/TopicModels";
+import { Topic } from "../topic/TopicModels";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
@@ -47,7 +47,10 @@ export function LinkLayout(
 							<ArticleTopics topics={topics} />
 
 							<p>
-								<a href={link.linkURL}>Visit original page</a>
+								<a href={link.linkURL} class="link-external">
+									Visit original page
+								</a>
+								{(link.screenshot || link.video || content) && <hr />}
 							</p>
 
 							{link.screenshot && (
