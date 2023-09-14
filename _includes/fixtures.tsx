@@ -4,7 +4,7 @@ import { Author, AuthorFrontmatter } from "./resources/author/AuthorModels";
 import { Topic, TopicFrontmatter } from "./resources/topic/TopicModels";
 import { vi } from "vitest";
 import { EleventyPage, LayoutContext } from "../src/models";
-import { ResourceItem } from "../src/ResourceModels";
+import { Resource, ResourceItem } from "../src/ResourceModels";
 import {
 	Tutorial,
 	TutorialFrontmatter,
@@ -25,7 +25,7 @@ import {
 	makeResources,
 	resolveResourceMap,
 } from "../src/registration";
-import { resourceClasses, rootPath } from "./config";
+import { resourceClasses } from "./config";
 import { Link, LinkFrontmatter } from "./resources/link/LinkModels";
 
 /**
@@ -146,7 +146,7 @@ const linkItems: {
 		page: {
 			fileSlug: "some-link",
 			url: "/links/some-link/",
-			inputPath: `${rootPath}/links/some-link/index.md`,
+			inputPath: `/links/some-link/index.md`,
 			date,
 		},
 	},
@@ -156,7 +156,7 @@ const linkItems: {
 		page: {
 			fileSlug: "another-link",
 			url: "/links/another-link/",
-			inputPath: `${rootPath}/links/another-link/index.md`,
+			inputPath: `/links/another-link/index.md`,
 			date,
 		},
 	},
@@ -784,7 +784,7 @@ const playlists = playlistDatas.map(
 		})
 );
 
-const allResources: ResourceCollection = new Map();
+const allResources = new Map<string, Resource>();
 [
 	...tips,
 	...tutorials,
@@ -804,7 +804,7 @@ resolveResourceMap(resourceMap);
 const getResource = vi.fn();
 const renderMarkdown = (content: string): string => content;
 const context: LayoutContext = {
-	getResources: () => resources,
+	getResources: () => resources as any,
 	getResource,
 	renderMarkdown,
 };

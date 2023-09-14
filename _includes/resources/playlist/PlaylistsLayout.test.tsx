@@ -8,7 +8,7 @@ test("should render PlaylistLayout", () => {
 	const renderProps: PlaylistsLayoutProps = {
 		...baseRenderData,
 		title,
-		resourceType: "playlists",
+		resourceType: "playlists" as any,
 		page: {
 			fileSlug: "slug",
 			url: "url",

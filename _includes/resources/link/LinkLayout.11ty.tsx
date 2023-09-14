@@ -1,6 +1,6 @@
 import h, { JSX } from "vhtml";
 import { Link, LinkFrontmatter } from "./LinkModels";
-import { Author } from "../../references/author/AuthorModels";
+import { Author } from "../../resources/author/AuthorModels";
 import VideoPlayer from "../../video/VideoPlayer.11ty";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import { Topic } from "../topic/TopicModels";

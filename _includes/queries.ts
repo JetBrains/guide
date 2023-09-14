@@ -1,20 +1,48 @@
 import { Resource } from "../src/ResourceModels";
 import { EleventyCollectionItem } from "../src/models";
 import { POSSIBLE_RESOURCE_TYPES, RESOURCE_TYPES } from "../src/resourceType";
+import { ResourceMapType } from "./config";
 
-export type QueryFilter = {
+export type RESOURCE_MODELS_BY_TYPE<
+	RESOURCE extends RESOURCE_TYPES | POSSIBLE_RESOURCE_TYPES =
+		| RESOURCE_TYPES
+		| POSSIBLE_RESOURCE_TYPES
+> = RESOURCE extends keyof ResourceMapType
+	? Array<ResourceMapType[RESOURCE]>
+	: RESOURCE extends Array<RESOURCE_TYPES>
+	? Array<ResourceMapType[RESOURCE[number]]>
+	: Resource[];
+
+export type RESOURCE_MODEL_BY_TYPE<
+	T extends RESOURCE_TYPES | POSSIBLE_RESOURCE_TYPES
+> = T extends keyof ResourceMapType
+	? ResourceMapType[T]
+	: T extends Array<RESOURCE_TYPES>
+	? ResourceMapType[T[number]]
+	: Resource;
+
+export type QueryFilter<
+	T extends RESOURCE_TYPES | POSSIBLE_RESOURCE_TYPES =
+		| RESOURCE_TYPES
+		| POSSIBLE_RESOURCE_TYPES
+> = {
 	channel?: string;
 	limit?: number;
-	resourceTypes?: RESOURCE_TYPES | POSSIBLE_RESOURCE_TYPES;
+	resourceTypes?: T;
 	tag?: string;
-	customFilter?: (resource: Resource) => boolean;
-	sorter?: (a: Resource, b: Resource) => number;
+	customFilter?: (resource: RESOURCE_MODEL_BY_TYPE<T>) => boolean;
+	sorter?: (
+		a: RESOURCE_MODEL_BY_TYPE<T>,
+		b: RESOURCE_MODEL_BY_TYPE<T>
+	) => number;
 };
 
-export function getResources(
+export function getResources<
+	T extends RESOURCE_TYPES | POSSIBLE_RESOURCE_TYPES
+>(
 	allResourcesList: Resource[],
-	filter: QueryFilter
-): Resource[] | null {
+	filter: QueryFilter<T>
+): RESOURCE_MODELS_BY_TYPE<T> | null {
 	let resources = allResourcesList;
 	const types =
 		filter && filter.resourceTypes != null
@@ -38,7 +66,9 @@ export function getResources(
 
 	const customFilter = filter && filter.customFilter;
 	if (customFilter) {
-		resources = resources.filter(customFilter);
+		resources = resources.filter((x) =>
+			customFilter(x as RESOURCE_MODEL_BY_TYPE<T>)
+		);
 	}
 
 	const limit = filter && filter.limit;
@@ -53,12 +83,14 @@ export function getResources(
 	const sorter = filter && filter.sorter;
 	if (sorter) {
 		// Sort by custom sorter
-		resources.sort(sorter);
+		resources.sort((a, b) =>
+			sorter(a as RESOURCE_MODEL_BY_TYPE<T>, b as RESOURCE_MODEL_BY_TYPE<T>)
+		);
 	} else {
 		// Sort in reverse date order
 		resources.sort((a, b) => b.date.getTime() - a.date.getTime());
 	}
-	return resources;
+	return resources as RESOURCE_MODELS_BY_TYPE<T>;
 }
 
 // TODO PWE Get rid of this and just use collections.resourceMap

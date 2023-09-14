@@ -1,8 +1,9 @@
 import { Static, Type } from "@sinclair/typebox";
 import { ResourceFrontmatter, Resource } from "./ResourceModels";
 import { SiteCollections } from "../_includes/models";
-import { QueryFilter } from "../_includes/queries";
+import { RESOURCE_MODELS_BY_TYPE, QueryFilter } from "../_includes/queries";
 import { PaginationData } from "../_includes/pagination/Pagination.11ty";
+import { POSSIBLE_RESOURCE_TYPES, RESOURCE_TYPES } from "./resourceType";
 
 export const EleventyPage = Type.Object({
 	// The common, page-oriented data 11ty passes in when it reads a Markdown file
@@ -30,9 +31,13 @@ export type Collections = {
 export interface LayoutContext {
 	/**
 	 * Used by view renders to grab the `this` object
+	 * Type credits go to Andrey
+	 * getResources("topic") => Topic[]
+	 * getResources(["topic", "author"]) => Array<Topic | Author>
 	 */
-	// TODO JNW improve typings with Generics
-	getResources(filter?: QueryFilter): Resource[];
+	getResources<T extends RESOURCE_TYPES | POSSIBLE_RESOURCE_TYPES>(
+		filter?: QueryFilter<T>
+	): RESOURCE_MODELS_BY_TYPE<T>;
 	getResource(url: string): Resource;
 	renderMarkdown(content: string): string;
 }

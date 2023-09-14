@@ -10,7 +10,7 @@ test("should render TutorialsLayout", () => {
 		...baseRenderData,
 		listing: [""],
 		title: "Some Title",
-		resourceType: "tutorials",
+		resourceType: "tutorials" as any,
 		page: {
 			fileSlug: "slug",
 			url: "url",

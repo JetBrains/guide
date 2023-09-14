@@ -19,13 +19,30 @@ import path from "upath";
 import * as fs from "fs";
 import MarkdownIt from "markdown-it";
 import prism from "markdown-it-prism";
-import { getResource, getResources, QueryFilter } from "./queries";
+import {
+	RESOURCE_MODELS_BY_TYPE,
+	getResource,
+	getResources,
+	QueryFilter,
+} from "./queries";
 import { Page } from "./resources/page/PageModels";
 import { Article } from "./resources/article/ArticleModels";
 import { Channel } from "./resources/channel/ChannelModels";
 import { RESOURCE_TYPES } from "../src/resourceType";
 import { Link } from "./resources/link/LinkModels";
 
+export type ResourceMapType = {
+	channel: Channel;
+	page: Page;
+	playlist: Playlist;
+	tip: Tip;
+	tutorial: Tutorial;
+	tutorialstep: TutorialStep;
+	article: Article;
+	author: Author;
+	topic: Topic;
+	link: Link;
+};
 export const resourceClasses: Record<
 	RESOURCE_TYPES,
 	new (...args: any[]) => Resource<RESOURCE_TYPES>
@@ -62,7 +79,7 @@ export async function registerIncludes(
 
 			// Generate JSON Schemas
 			const schemas: ResourceFrontmatter[] = Object.values(resourceClasses).map(
-				(resourceClass) => resourceClass.frontmatterSchema
+				(resourceClass: any) => resourceClass.frontmatterSchema
 			);
 			const schemasOutputPath = path.join(
 				"docs",
@@ -79,7 +96,8 @@ export async function registerIncludes(
 	// Query helpers
 	eleventyConfig.addJavaScriptFunction(
 		"getResources",
-		(filter: QueryFilter): Resource[] | null => getResources(resources, filter)
+		(filter: QueryFilter): RESOURCE_MODELS_BY_TYPE | null =>
+			getResources(resources, filter)
 	);
 	eleventyConfig.addJavaScriptFunction(
 		"getResource",

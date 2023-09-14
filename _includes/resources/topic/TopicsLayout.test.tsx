@@ -15,7 +15,7 @@ test("should render TopicsLayout", () => {
 			date: fixtures.date,
 		},
 	};
-	fixtures.context.getResources = () => fixtures.topics;
+	fixtures.context.getResources = () => fixtures.topics as any;
 	document.body.innerHTML = TopicsLayout.call(
 		fixtures.context,
 		topicsLayoutProps

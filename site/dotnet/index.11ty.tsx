@@ -15,7 +15,6 @@ import {
 	TIP_RESOURCE,
 	TUTORIAL_RESOURCE,
 } from "../../src/resourceType";
-import { Topic } from "../../_includes/resources/topic/TopicModels";
 
 const frontmatter: ChannelFrontmatter = {
 	title: ".NET Tools Guide",
@@ -44,7 +43,7 @@ class DotNetHomepage {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
 		const topics = this.getResources({
-			resourceTypes: ["topic"],
+			resourceTypes: "topic",
 			channel: channel.url,
 			limit: 6,
 			customFilter: (r) =>
@@ -54,7 +53,7 @@ class DotNetHomepage {
 					r.label.indexOf("fsharp") >= 0 ||
 					r.label.indexOf(".net") >= 0 ||
 					r.label.indexOf("asp.net") >= 0),
-		}) as Topic[];
+		});
 
 		const tips = this.getResources({
 			resourceTypes: [TIP_RESOURCE],

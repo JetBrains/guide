@@ -8,7 +8,7 @@ test("should render ArticlesLayout", () => {
 	const renderProps: ReferenceLayoutProps = {
 		...baseRenderData,
 		title: "These Articles",
-		resourceType: "articles",
+		resourceType: "articles" as any,
 		listing: [],
 		page: {
 			fileSlug: "slug",

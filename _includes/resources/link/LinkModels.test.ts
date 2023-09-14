@@ -1,7 +1,6 @@
 import { expect, test } from "vitest";
 import { Link, LinkFrontmatter } from "./LinkModels";
 import { EleventyPage } from "../../../src/models";
-import { rootPath } from "../../config";
 import fixtures from "../../fixtures";
 
 const data: LinkFrontmatter = {
@@ -16,7 +15,7 @@ const data: LinkFrontmatter = {
 const page: EleventyPage = {
 	fileSlug: "some-link",
 	url: "/links/some-link/",
-	inputPath: `${rootPath}/links/some-link/index.md`,
+	inputPath: `/links/some-link/index.md`,
 	date: fixtures.date,
 };
 
