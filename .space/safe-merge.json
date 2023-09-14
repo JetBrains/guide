@@ -1,6 +1,10 @@
 {
   "version": "1.0",
-  "builds": [
+    "retry-policy": {
+        "num-retries": 3,
+        "reuse-merge": true
+    },
+    "builds": [
     {
       "job": {
         "name": "Build Guide"
@@ -9,7 +13,7 @@
         "/site/**",
         "/_includes/**",
         "/src/**",
-        "/public/assets/**",
+        "/public/**",
         "/package.json",
         "/package-lock.json"
       ]
