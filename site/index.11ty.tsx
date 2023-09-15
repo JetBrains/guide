@@ -103,7 +103,7 @@ class IndexPage {
 								);
 
 								return (
-									<div class="column has-background-light m-3 is-6 is-2-desktop py-5 has-box-hover has-text-centered has-position-relative">
+									<div class="column has-background-white m-4 is-5 is-2-desktop py-5 has-box-hover has-text-centered has-position-relative">
 										<a
 											href={channel.url}
 											aria-label={`Topic`}
