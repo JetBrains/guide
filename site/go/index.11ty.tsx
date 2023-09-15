@@ -11,8 +11,8 @@ import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import MultiColumnSection from "../../_includes/pageelements/MultiColumnSection";
 
 const frontmatter: ChannelFrontmatter = {
-	title: "GoLand Guide",
-	subtitle: "The Hitchhiker's Guide to GoLand",
+	title: "Go",
+	subtitle: "The Hitchhiker's Guide to Go",
 	resourceType: "channel",
 	date: new Date(Date.UTC(2020, 1, 11)),
 	author: "pwe",
@@ -25,7 +25,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class GoLandHomepage {
+class GoHomepage {
 	data() {
 		return {
 			layout: "",
@@ -131,4 +131,4 @@ class GoLandHomepage {
 	}
 }
 
-module.exports = GoLandHomepage;
+module.exports = GoHomepage;
