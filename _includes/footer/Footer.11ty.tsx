@@ -67,7 +67,7 @@ const Footer = ({ copyright }: FooterProps): JSX.Element => {
 						<a
 							class="mr-4 is-inline-block"
 							href="https://www.twitter.com/JetBrains"
-							title="JetBrains on Twitter"
+							title="JetBrains on X"
 						>
 							<Icon name={`twitter`} />
 						</a>
