@@ -20,12 +20,7 @@ export function TopicLayout(
 		(ci) => ci.topics && ci.topics.includes(topic.label)
 	);
 
-	let figure = "";
-	if (topic.icon) {
-		figure = <i class={`${topic.icon} has-text-${topic.accent} fa-7x`} />;
-	} else if (topic.logo) {
-		figure = <img src={topic.logo} alt={topic.title} />;
-	}
+	const figure = topic.getThumbnail();
 	const listing = (
 		<>
 			{linkedResources.map((resource) => (

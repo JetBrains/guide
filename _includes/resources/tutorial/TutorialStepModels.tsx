@@ -9,6 +9,7 @@ import { EleventyPage } from "../../../src/models";
 import { Tutorial } from "./TutorialModels";
 import { ThumbnailField, VideoBottomField, VideoField } from "../commonModels";
 import { TUTORIAL_STEP_RESOURCE_TYPE } from "../../../src/resourceType";
+import h from "vhtml";
 
 export const TutorialStepFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -41,14 +42,9 @@ export class TutorialStep
 		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);
 	}
 
-	// resolve(allCollections: AllCollections): void {
-	//   super.resolve(allCollections);
-	//   if (!this.parentTutorial) {
-	//     throw new Error(
-	//       `Tutorial Step ${this.url} has no assigned parentTutorial`
-	//     );
-	//   }
-	// }
+	getThumbnail(): string {
+		return <img src={this.thumbnail} alt={this.title} />;
+	}
 }
 
 export async function getTutorialStep(
