@@ -41,7 +41,7 @@ class IndexPage {
 		const communities = [
 			// TODO: These need updating if/when we rename channels to be technology focused.
 			this.getResource("/gamedev/"),
-			this.getResource("/topics/django/"), // TODO: topics have an icon or logo or accent, ResourceCard does not account for this and will not render a nice image). Ideally we standardize on thumbnail for everything.
+			this.getResource("/topics/django/"),
 			this.getResource("/topics/kotlin/"),
 		];
 
@@ -137,7 +137,6 @@ class IndexPage {
 								</a>
 							</div>
 						</div>
-						{/* TODO PWE: Copied from TopicsLayout.11ty.tsx */}
 						<div class="columns is-multiline">
 							{topicsForNewestResources.map((topic) => {
 								let figure: string;
