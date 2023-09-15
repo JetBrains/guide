@@ -53,18 +53,9 @@ function doesExist(resource: References | undefined): asserts resource {
 }
 
 const ResourceCard = ({
-	resource: {
-		resourceType,
-		url,
-		title,
-		displayDate,
-		subtitle,
-		// TODO JNW Resource no longer has thumbnail
-		// @ts-ignore
-		thumbnail,
-		references,
-	},
+	resource: { resourceType, url, title, displayDate, subtitle, references },
 	orientation,
+	resource,
 	columnClassName,
 	hasShadow = false,
 	includeCardFooter = true,
@@ -72,6 +63,7 @@ const ResourceCard = ({
 }: ResourceCardProps): JSX.Element => {
 	doesExist(references);
 	const { author, topics } = references;
+	const thumbnail = resource.getThumbnail();
 
 	if (orientation == null || orientation == ResourceCardOrientation.Portrait) {
 		const glowCssClass =
@@ -91,7 +83,7 @@ const ResourceCard = ({
 					<div class="card-image">
 						<a href={url}>
 							<figure class={`image is-16by9 is-contained ${glowCssClass}`}>
-								{thumbnail && <img src={thumbnail} alt={title} />}
+								{thumbnail}
 							</figure>
 						</a>
 					</div>
