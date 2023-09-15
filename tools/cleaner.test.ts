@@ -21,19 +21,19 @@ import {
 
 describe("Content Cleaning", () => {
 	const root = getRoot();
-	const pycharmTipRoot = `${root}/pycharm/tips`;
-	const pyCharmTipFiles = getAllFiles(pycharmTipRoot, []).slice(0, 10);
+	const pythonTipRoot = `${root}/python/tips`;
+	const pythonTipFiles = getAllFiles(pythonTipRoot, []).slice(0, 10);
 
 	test("get the root of the site as a path", () => {
 		expect(root).to.contain("/site");
 	});
 	test("recursively load a list of file paths", () => {
 		// Walking everything can be slow, let's pick a subset
-		expect(pyCharmTipFiles.length).to.be.gt(9);
+		expect(pythonTipFiles.length).to.be.gt(9);
 	});
 
 	test("convert file paths to parsed frontmatter", () => {
-		const results = parseFrontmatter(pyCharmTipFiles);
+		const results = parseFrontmatter(pythonTipFiles);
 		const first = Object.values(results)[0];
 		expect(first.frontmatter.title).to.exist;
 	});
@@ -93,7 +93,7 @@ describe("Content Cleaning", () => {
 	});
 
 	test("cleans all resources and prepares for writing to disk", () => {
-		const markdownResources = parseFrontmatter(pyCharmTipFiles);
+		const markdownResources = parseFrontmatter(pythonTipFiles);
 		const results = cleanAllResources(markdownResources);
 		const first = Object.values(results)[0];
 		expect(first).not.toContain("topics: ");

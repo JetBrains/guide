@@ -34,10 +34,10 @@ class IndexPage {
 		const channels = [
 			// TODO: These need updating if/when we rename channels to be technology focused.
 			this.getResource("/dotnet/"),
-			this.getResource("/goland/"),
-			this.getResource("/idea/"),
-			this.getResource("/pycharm/"),
-			this.getResource("/webstorm/"),
+			this.getResource("/go/"),
+			this.getResource("/java/"),
+			this.getResource("/python/"),
+			this.getResource("/webjs/"),
 		];
 		const communities = [
 			// TODO: These need updating if/when we rename channels to be technology focused.
@@ -58,7 +58,7 @@ class IndexPage {
 			limit: 60,
 		})
 			.flatMap((r) => r.topics)
-			.slice(0, 20) as string[];
+			.slice(0, 20);
 
 		const topicsForNewestResources = this.getResources({
 			resourceTypes: [TOPIC_RESOURCE],
@@ -66,7 +66,7 @@ class IndexPage {
 				topicNamesForNewestResources.includes(r.slug) &&
 				(!r.topicType || r.topicType != "product"),
 			limit: 6,
-		}) as Topic[];
+		});
 
 		return (
 			<BaseLayout {...data}>
