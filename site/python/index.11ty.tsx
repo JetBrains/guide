@@ -10,8 +10,8 @@ import {
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 
 const frontmatter: ChannelFrontmatter = {
-	title: "PyCharm Guide",
-	subtitle: "Well-organized collection of learning resources for PyCharm.",
+	title: "Python",
+	subtitle: "Well-organized collection of learning resources for Python.",
 	resourceType: "channel",
 	date: new Date(Date.UTC(2020, 1, 11)),
 	author: "pwe",
@@ -24,7 +24,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class PyCharmHomepage {
+class PythonHomepage {
 	data() {
 		return {
 			layout: "",
@@ -87,4 +87,4 @@ class PyCharmHomepage {
 	}
 }
 
-module.exports = PyCharmHomepage;
+module.exports = PythonHomepage;
