@@ -8,6 +8,7 @@ import {
 import { EleventyPage } from "../../../src/models";
 import { ThumbnailField } from "../commonModels";
 import { PLAYLIST_RESOURCE_TYPE } from "../../../src/resourceType";
+import h from "vhtml";
 
 export const PlaylistFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -52,5 +53,9 @@ export class Playlist
 				throw new Error(`Playlist resource ${pi} not found in ${this.url}`);
 			}
 		});
+	}
+
+	getThumbnail(): string {
+		return <img src={this.thumbnail} alt={this.title} />;
 	}
 }

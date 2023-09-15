@@ -1,3 +1,4 @@
+import h from "vhtml";
 import { Static, Type } from "@sinclair/typebox";
 import { EleventyPage } from "./models";
 import path from "upath";
@@ -158,6 +159,11 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 					: [],
 			};
 		}, {} as References);
+	}
+
+	getThumbnail(): string {
+		const defaultThumbnail = "/assets/jetbrains-simple.svg";
+		return <img src={defaultThumbnail} alt={this.title} />;
 	}
 }
 

@@ -4,6 +4,7 @@ import { EleventyPage } from "../../../src/models";
 import { LabelField, ThumbnailField } from "../commonModels";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { AUTHOR_RESOURCE_TYPE } from "../../../src/resourceType";
+import h from "vhtml";
 
 export const AuthorFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -25,5 +26,9 @@ export class Author
 		super({ data, page });
 		this.label = data.label ? data.label : page.fileSlug;
 		this.thumbnail = path.join(page.url, data.thumbnail);
+	}
+
+	getThumbnail(): string {
+		return <img src={this.thumbnail} alt={this.title} />;
 	}
 }

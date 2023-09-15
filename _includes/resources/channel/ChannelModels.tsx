@@ -7,6 +7,7 @@ import {
 import { EleventyPage, LayoutProps } from "../../../src/models";
 import { CHANNEL_RESOURCE_TYPE } from "../../../src/resourceType";
 import { ThumbnailField } from "../commonModels";
+import h from "vhtml";
 
 export const ChannelFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -58,6 +59,10 @@ export class Channel
 		this.hero = data.hero;
 		this.subnav = data.subnav;
 		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);
+	}
+
+	getThumbnail(): string {
+		return <img src={this.thumbnail} alt={this.title} />;
 	}
 }
 

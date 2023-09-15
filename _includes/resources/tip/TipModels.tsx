@@ -8,6 +8,7 @@ import { EleventyPage } from "../../../src/models";
 import path from "upath";
 import { ThumbnailField, VideoField } from "../commonModels";
 import { TIP_RESOURCE_TYPE } from "../../../src/resourceType";
+import h from "vhtml";
 
 export const TipFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -64,5 +65,8 @@ export class Tip extends Resource<TIP_RESOURCE_TYPE> implements TipFrontmatter {
 			: undefined;
 		this.seealso = data.seealso;
 		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);
+	}
+	getThumbnail(): string {
+		return <img src={this.thumbnail} alt={this.title} />;
 	}
 }

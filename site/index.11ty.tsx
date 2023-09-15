@@ -32,7 +32,6 @@ class IndexPage {
 	render(this: LayoutContext, data: IndexPageProps): JSX.Element {
 		const featuredChannel = this.getResource("/remote/");
 		const channels = [
-			// TODO: These need updating if/when we rename channels to be technology focused.
 			this.getResource("/dotnet/"),
 			this.getResource("/go/"),
 			this.getResource("/java/"),
@@ -98,10 +97,7 @@ class IndexPage {
 					<div class="container">
 						<div class="columns is-multiline is-centered">
 							{channels.map((channel) => {
-								const figure = (
-									<img src={channel.thumbnail} alt={channel.title} />
-								);
-
+								const figure = channel.getThumbnail();
 								return (
 									<div class="column has-background-white m-4 is-5 is-2-desktop py-5 has-box-hover has-text-centered has-position-relative">
 										<a

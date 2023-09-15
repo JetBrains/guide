@@ -9,6 +9,7 @@ import path from "upath";
 import { VideoType } from "../common/VideoProp";
 import { LINK_RESOURCE_TYPE } from "../../../src/resourceType";
 import { ThumbnailField } from "../commonModels";
+import h from "vhtml";
 
 export const LinkFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -45,5 +46,9 @@ export class Link
 		this.screenshot = data.screenshot
 			? path.join(page.url, data.screenshot)
 			: undefined;
+	}
+
+	getThumbnail(): string {
+		return <img src={this.thumbnail} alt={this.title} />;
 	}
 }

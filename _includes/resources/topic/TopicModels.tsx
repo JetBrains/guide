@@ -4,6 +4,7 @@ import path from "upath";
 import { IconField, LabelField } from "../commonModels";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { TOPIC_RESOURCE_TYPE } from "../../../src/resourceType";
+import h from "vhtml";
 
 export const TopicFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -12,7 +13,6 @@ export const TopicFrontmatter = Type.Intersect([
 ]);
 export type TopicFrontmatter = Static<typeof TopicFrontmatter>;
 
-// TODO PWE Get rid of Reference base class
 export class Topic
 	extends Resource<TOPIC_RESOURCE_TYPE>
 	implements TopicFrontmatter
@@ -38,6 +38,14 @@ export class Topic
 		this.icon = data.icon;
 		if (data.logo) {
 			this.logo = path.join(page.url, data.logo);
+		}
+	}
+
+	getThumbnail(): string {
+		if (this.logo) {
+			return <img src={this.logo} alt={this.title} />;
+		} else {
+			return <i class={`${this.icon} has-text-${this.accent} fa-5x`} />;
 		}
 	}
 }

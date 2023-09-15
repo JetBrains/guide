@@ -10,6 +10,7 @@ import { EleventyPage } from "../../../src/models";
 import path from "upath";
 import { TutorialStep } from "./TutorialStepModels";
 import { ThumbnailField, VideoBottomField } from "../commonModels";
+import h from "vhtml";
 
 export const TutorialFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -63,6 +64,10 @@ export class Tutorial
 				throw new Error(`Tutorial step ${url} not found in ${this.url}`);
 			}
 		});
+	}
+
+	getThumbnail(): string {
+		return <img src={this.thumbnail} alt={this.title} />;
 	}
 }
 
