@@ -6,7 +6,6 @@ import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
 import MultiColumnSection from "../_includes/pageelements/MultiColumnSection";
 import ListingSection from "../_includes/pageelements/ListingSection.11ty";
 import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
-import { Topic } from "../_includes/resources/topic/TopicModels";
 import {
 	ARTICLE_RESOURCE,
 	LINK_RESOURCE,
