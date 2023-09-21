@@ -13,12 +13,12 @@ author: maartenba
 subtitle: Session recordings of JetBrains GameDev Day Online 2022.
 thumbnail: ./thumbnail.png
 playlistItems:
-  - /gamedev/tips/five-game-developer-habits-that-bring-software-engineers-to-the-next-level/
-  - /gamedev/tips/making-plugins-for-game-engines-as-a-business/
-  - /gamedev/tips/unreal-engine-game-optimization-on-a-budget/
-  - /gamedev/tips/welcome-to-rider-your-one-stop-gamedev-ide/
-  - /gamedev/tips/unity-packages-from-wtf-to-ftw-with-needle-tools/
-  - /gamedev/tips/making-uis-with-cplusplus-in-unreal-engine/
+  - /gamedev/links/five-game-developer-habits-that-bring-software-engineers-to-the-next-level/
+  - /gamedev/links/making-plugins-for-game-engines-as-a-business/
+  - /gamedev/links/unreal-engine-game-optimization-on-a-budget/
+  - /gamedev/links/welcome-to-rider-your-one-stop-gamedev-ide/
+  - /gamedev/links/unity-packages-from-wtf-to-ftw-with-needle-tools/
+  - /gamedev/links/making-uis-with-cplusplus-in-unreal-engine/
 obsoletes:
   - /dotnet/tutorials/gamedev-day-online-2022/
 ---

@@ -12,19 +12,19 @@ subtitle: Session recordings of JetBrains .NET Days Online 2021.
 thumbnail: ./thumbnail.png
 playlistItems:
   - /dotnet/links/csharp-source-generators-in-action/
-  - /dotnet/tips/csi-net-debugging-net-applications/
-  - /dotnet/tips/turbocharged-writing-high-performance-csharp-and-net-code/
-  - /dotnet/tips/going-real-time-using-azure-cosmos-db-and-react/
-  - /dotnet/tips/embracing-grpc-in-net/
-  - /dotnet/tips/building-modern-applications-with-graphql-and-blazor/
-  - /dotnet/tips/migrating-from-sql-to-no-sql-with-net-and-dapper/
-  - /dotnet/tips/the-top-10-best-new-features-in-csharp-version-6-to-9/
-  - /dotnet/tips/why-every-day-as-a-developer-would-be-easier-with-fsharp/
-  - /dotnet/tips/containerize-net-apps-and-deploy-to-kubernetes/
-  - /dotnet/tips/legacy-refactoring/
-  - /dotnet/tips/null-void-everything-about-nothing-in-net/
-  - /dotnet/tips/best-practices-for-using-async-and-await/
-  - /dotnet/tips/debugging-tips-and-tricks-with-jetbrains-rider/
+  - /dotnet/links/csi-net-debugging-net-applications/
+  - /dotnet/links/turbocharged-writing-high-performance-csharp-and-net-code/
+  - /dotnet/links/going-real-time-using-azure-cosmos-db-and-react/
+  - /dotnet/links/embracing-grpc-in-net/
+  - /dotnet/links/building-modern-applications-with-graphql-and-blazor/
+  - /dotnet/links/migrating-from-sql-to-no-sql-with-net-and-dapper/
+  - /dotnet/links/the-top-10-best-new-features-in-csharp-version-6-to-9/
+  - /dotnet/links/why-every-day-as-a-developer-would-be-easier-with-fsharp/
+  - /dotnet/links/containerize-net-apps-and-deploy-to-kubernetes/
+  - /dotnet/links/legacy-refactoring/
+  - /dotnet/links/null-void-everything-about-nothing-in-net/
+  - /dotnet/links/best-practices-for-using-async-and-await/
+  - /dotnet/links/debugging-tips-and-tricks-with-jetbrains-rider/
 obsoletes:
   - /dotnet/tutorials/dotnet-days-online-2021/
 ---
