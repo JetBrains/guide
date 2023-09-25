@@ -121,3 +121,6 @@ div.bio-page-sidebar-references-group ul.menu-list {
     }
   }
 }
+
+/* Fix Bulma + Prism conflicts */
+.token.number, .token.tag { all: inherit; }
