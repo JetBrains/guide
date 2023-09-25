@@ -194,7 +194,7 @@ const channelFrontmatters: ChannelFrontmatter[] = [
 		date,
 		resourceType: "channel",
 		author: "sa",
-		thumbnail: "thumbnail.png",
+		logo: "thumbnail.png",
 		subnav: [{ title: "First Link", url: "/first/" }],
 	},
 	{
@@ -202,7 +202,7 @@ const channelFrontmatters: ChannelFrontmatter[] = [
 		date: laterDate,
 		resourceType: "channel",
 		author: "aa",
-		thumbnail: "aa.png",
+		logo: "aa.png",
 	},
 ];
 const channelItems: {

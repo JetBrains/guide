@@ -16,7 +16,8 @@ const frontmatter: ChannelFrontmatter = {
 	resourceType: "channel",
 	date: new Date(Date.UTC(2020, 1, 11)),
 	author: "hs",
-	thumbnail: "thumbnail.png",
+	accent: "primary",
+	icon: "fa-brands fa-java",
 	hero: "/assets/intellij-idea-beam.svg",
 	subnav: [
 		{ title: "Download", url: "https://www.jetbrains.com/idea/" },

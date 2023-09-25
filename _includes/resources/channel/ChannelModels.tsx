@@ -1,17 +1,14 @@
 import { Static, Type } from "@sinclair/typebox";
-import {
-	getThumbnailPath,
-	Resource,
-	ResourceFrontmatter,
-} from "../../../src/ResourceModels";
+import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { EleventyPage, LayoutProps } from "../../../src/models";
 import { CHANNEL_RESOURCE_TYPE } from "../../../src/resourceType";
-import { ThumbnailField } from "../commonModels";
+import { IconField } from "../commonModels";
 import h from "vhtml";
+import path from "upath";
 
 export const ChannelFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
-	ThumbnailField,
+	Type.Optional(IconField),
 	Type.Object({
 		hero: Type.Optional(
 			Type.String({
@@ -42,7 +39,9 @@ export class Channel
 {
 	hero?: string;
 	subnav?: ChannelFrontmatter["subnav"];
-	thumbnail: ChannelFrontmatter["thumbnail"];
+	accent?: string;
+	icon?: string;
+	logo?: string;
 	static frontmatterSchema = ChannelFrontmatter;
 
 	constructor({
@@ -58,11 +57,29 @@ export class Channel
 		});
 		this.hero = data.hero;
 		this.subnav = data.subnav;
-		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);
+		if (data.logo) {
+			this.logo = path.join(page.url, data.logo);
+		}
+		if (data.accent) {
+			this.accent = data.accent;
+			this.icon = data.icon;
+		}
 	}
 
 	getThumbnail(): string {
-		return <img src={this.thumbnail} alt={this.title} />;
+		if (this.logo) {
+			return <img src={this.logo} alt={this.title} />;
+		} else {
+			return <i class={`${this.icon} has-text-${this.accent} fa-5x`} />;
+		}
+	}
+
+	getBoxThumbnail(): string {
+		if (this.logo) {
+			return <img src={this.logo} alt={this.title} />;
+		} else {
+			return <i class={`${this.icon} has-text-${this.accent} fa-2x`} />;
+		}
 	}
 }
 

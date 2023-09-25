@@ -15,7 +15,8 @@ const frontmatter: ChannelFrontmatter = {
 	resourceType: "channel",
 	date: new Date(Date.UTC(2020, 1, 11)),
 	author: "pwe",
-	thumbnail: "thumbnail.png",
+	accent: "primary",
+	icon: "fa-brands fa-python",
 	hero: "/assets/pycharm_splash.svg",
 	subnav: [
 		{ title: "Download", url: "https://www.jetbrains.com/pycharm/" },

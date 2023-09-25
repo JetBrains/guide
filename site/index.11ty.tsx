@@ -6,15 +6,10 @@ import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
 import MultiColumnSection from "../_includes/pageelements/MultiColumnSection";
 import ListingSection from "../_includes/pageelements/ListingSection.11ty";
 import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
-import {
-	ARTICLE_RESOURCE,
-	LINK_RESOURCE,
-	PLAYLIST_RESOURCE,
-	TIP_RESOURCE,
-	TOPIC_RESOURCE,
-	TUTORIAL_RESOURCE,
-	TUTORIAL_STEP_RESOURCE,
-} from "../src/resourceType";
+import { CHANNEL_RESOURCE } from "../src/resourceType";
+import { Resource } from "../src/ResourceModels";
+import { Channel } from "../_includes/resources/channel/ChannelModels";
+import { Topic } from "../_includes/resources/topic/TopicModels";
 
 type IndexPageProps = LayoutProps & PageFrontmatter;
 
@@ -44,31 +39,19 @@ class IndexPage {
 			this.getResource("/topics/kotlin/"),
 		];
 
-		const topicNamesForNewestResources = this.getResources({
-			resourceTypes: [
-				TIP_RESOURCE,
-				ARTICLE_RESOURCE,
-				TUTORIAL_RESOURCE,
-				TUTORIAL_STEP_RESOURCE,
-				PLAYLIST_RESOURCE,
-				LINK_RESOURCE,
-			],
-			limit: 60,
-		})
-			.flatMap((r) => r.topics)
-			.slice(0, 20);
-
-		const topicsForNewestResources = this.getResources({
-			resourceTypes: [TOPIC_RESOURCE],
-			customFilter: (r) =>
-				topicNamesForNewestResources.includes(r.slug) &&
-				(!r.topicType || r.topicType != "product"),
-			limit: 6,
-		});
+		const hotTopics = [
+			// TODO: These need updating if/when we rename channels to be technology focused.
+			this.getResource("/topics/django/"),
+			this.getResource("/topics/editing/"),
+			this.getResource("/topics/git/"),
+			this.getResource("/topics/go/"),
+			this.getResource("/topics/gcp/"),
+			this.getResource("/topics/refactoring/"),
+		] as Topic[];
 
 		return (
 			<BaseLayout {...data}>
-				<section class="section has-gradient-purple">
+				<section className="section has-gradient-purple">
 					<div class="container">
 						<div class="columns is-multiline">
 							<div class="column is-7">
@@ -89,40 +72,43 @@ class IndexPage {
 						</div>
 					</div>
 				</section>
-				{/* TODO PWE: Copied from dotnet/index.11ty.tsx with adaptations:
-				 * thumbnail property is used for the image here vs. cardThumbnail in the dotnet index page
-				 * CSS classnames for the column are different on this page vs. dotnet index page*/}
-				<section class="section has-background-dark">
+
+				<section className="section has-background-grey-darker">
 					<div class="container">
 						<div class="columns is-multiline is-centered">
-							{channels.map((channel) => {
-								const figure = channel.getThumbnail();
-								return (
-									<div class="column has-background-white m-4 is-5 is-2-desktop py-5 has-box-hover has-text-centered has-position-relative">
-										<a
-											href={channel.url}
-											aria-label={`Topic`}
-											class="is-size-5 has-text-weight-bold title is-stretched-link"
-										>
-											<figure class="image is-48x48 mb-1 mx-auto">
-												{figure}
-											</figure>
-											{channel.title}
-										</a>
-									</div>
-								);
-							})}
+							{channels
+								.filter(
+									(resource: Resource): resource is Channel =>
+										resource.resourceType === CHANNEL_RESOURCE
+								)
+								.map((channel) => {
+									const figure = channel.getBoxThumbnail();
+									return (
+										<div class="column has-background-white m-4 is-5 is-2-desktop py-5 has-box-hover has-text-centered has-position-relative">
+											<a
+												href={channel.url}
+												aria-label={`Topic`}
+												class="is-size-5 has-text-weight-bold title is-stretched-link"
+											>
+												<figure class="image is-48x48 mb-1 mx-auto">
+													{figure}
+												</figure>
+												{channel.title}
+											</a>
+										</div>
+									);
+								})}
 						</div>
 					</div>
 				</section>
 
 				<ListingSection title={"Communities"} resources={communities} />
 
-				<section class="container">
+				<section className="container">
 					<hr />
 				</section>
 
-				<section class="section">
+				<section className="section">
 					<div class="container">
 						<div class="columns is-vcentered is-mobile">
 							<div class="column is-8">
@@ -137,7 +123,7 @@ class IndexPage {
 							</div>
 						</div>
 						<div class="columns is-multiline">
-							{topicsForNewestResources.map((topic) => {
+							{hotTopics.map((topic) => {
 								let figure: string;
 								if (topic.icon) {
 									figure = (

@@ -71,11 +71,6 @@ export function getResources<
 		);
 	}
 
-	const limit = filter && filter.limit;
-	if (limit) {
-		resources = resources.slice(0, limit);
-	}
-
 	if (resources.length == 0) {
 		return null;
 	}
@@ -90,6 +85,12 @@ export function getResources<
 		// Sort in reverse date order
 		resources.sort((a, b) => b.date.getTime() - a.date.getTime());
 	}
+
+	const limit = filter && filter.limit;
+	if (limit) {
+		resources = resources.slice(0, limit);
+	}
+
 	return resources as RESOURCE_MODELS_BY_TYPE<T>;
 }
 
