@@ -34,6 +34,13 @@ footer.pagefooter svg {
     outline: 1px solid $grey-light;
   }
 }
+.is-16by9 i {
+  bottom: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 26%;
+}
 .menu-list.on-this-page a {
   border-left: 2px solid $grey-light;
 }

@@ -64,10 +64,16 @@ const ResourceCard = ({
 	doesExist(references);
 	const { author, topics } = references;
 	const thumbnail = resource.getThumbnail();
+	const isThumbnailImage = thumbnail.indexOf("<img") >= 0;
+	const thumbnailFigureCss = isThumbnailImage
+		? "is-16by9 is-contained"
+		: "is-16by9 has-text-centered";
 
 	if (orientation == null || orientation == ResourceCardOrientation.Portrait) {
 		const glowCssClass =
-			resourceType != "channel" ? glowColorHashRing.get(title) : "";
+			resourceType != "channel" || !isThumbnailImage
+				? glowColorHashRing.get(title)
+				: "";
 
 		const columnCssClass = columnClassName
 			? columnClassName
@@ -82,7 +88,7 @@ const ResourceCard = ({
 				>
 					<div class="card-image">
 						<a href={url}>
-							<figure class={`image is-16by9 is-contained ${glowCssClass}`}>
+							<figure class={`image ${thumbnailFigureCss} ${glowCssClass}`}>
 								{thumbnail}
 							</figure>
 						</a>
