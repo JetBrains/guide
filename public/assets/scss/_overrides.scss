@@ -34,12 +34,28 @@ footer.pagefooter svg {
     outline: 1px solid $grey-light;
   }
 }
-.is-16by9 i {
+.is-16by9 i { /* ResourceCard with icon */
   bottom: auto;
   left: 0;
   position: absolute;
   right: 0;
-  top: 26%;
+  top: 24%;
+
+  @include touch {
+    top: 24%;
+  }
+  @include desktop-only {
+    top: 16%;
+  }
+  @include widescreen {
+    top: 24%;
+  }
+
+  &.fa-5x {
+    @include touch {
+      font-size: 8em;
+    }
+  }
 }
 .menu-list.on-this-page a {
   border-left: 2px solid $grey-light;
