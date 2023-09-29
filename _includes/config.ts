@@ -78,8 +78,11 @@ export async function registerIncludes(
 			resources = Array.from(resourceMap.values());
 
 			// Generate JSON Schemas
-			const schemas: ResourceFrontmatter[] = Object.values(resourceClasses).map(
-				(resourceClass: any) => resourceClass.frontmatterSchema
+			const schemas = Object.entries(resourceClasses).reduce(
+				(acc, [key, resourceClass]: [string, any]) => {
+					return { ...acc, [key]: resourceClass.frontmatterSchema };
+				},
+				{}
 			);
 			const schemasOutputPath = path.join(
 				"docs",
