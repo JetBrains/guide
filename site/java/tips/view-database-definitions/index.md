@@ -5,6 +5,7 @@ topics:
   - editing
   - java
   - ultimate
+  - databases
 author: hs
 subtitle: View the definitions of database entities quickly in the Database Tool Window
 thumbnail: ./thumbnail.png

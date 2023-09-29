@@ -9,7 +9,7 @@ author: pwe
 date: 2020-01-01
 obsoletes:
   - /goland/topics/databases/
-  - /idea/databases/
+  - /idea/topics/databases/
 ---
 
 Many projects work with relational databases and many of our IDEs make

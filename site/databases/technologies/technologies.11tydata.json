@@ -1,0 +1,4 @@
+{
+	"resourceType": "topic",
+	"layout": "resources/topic/TopicLayout.11ty.tsx"
+}
