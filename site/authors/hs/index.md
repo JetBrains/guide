@@ -1,6 +1,6 @@
 ---
 title: Helen Scott
-subtitle: Java Developer Advocate
+subtitle: Developer Advocate
 thumbnail: ./hs.jpg
 author: hs
 date: 2020-01-01
