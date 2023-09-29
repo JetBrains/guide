@@ -25,8 +25,6 @@ function getPreamble(resourceType: string) {
 }
 
 function extractReferences(
-	// TODO JNW replace this with `ResourceFrontmatter` and a type guard
-	//   so r.label below works.
 	allReferencesList: TopicFrontmatter[],
 	resourceType: string
 ): string[] {

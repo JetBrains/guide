@@ -25,19 +25,7 @@ export function TopicsLayout(
 			<div class="container">
 				<div class="columns is-multiline">
 					{topics.map((topic) => {
-						let figure: string;
-						if (topic.icon) {
-							figure = (
-								<i class={`${topic.icon} has-text-${topic.accent} fa-5x`} />
-							);
-						} else if (topic.logo) {
-							figure = <img src={topic.logo} alt={topic.title} />;
-						} else {
-							figure = (
-								<i class={`fas fa-file has-text-${topic.accent} fa-5x`} />
-							);
-						}
-
+						const figure = topic.getThumbnail();
 						return (
 							<div class="column is-6 is-4-desktop mb-5 has-box-hover">
 								<div class="is-flex has-position-relative">

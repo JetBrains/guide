@@ -122,6 +122,12 @@ export function resolveReference({
 		);
 	}
 
+	if (typeof thisFieldValue === "function") {
+		throw new Error(
+			`Cannot get value from method "${fieldName}" on resource ${resource.url}`
+		);
+	}
+
 	if (Array.isArray(thisFieldValue)) {
 		// resource.author is a single value, but resource.topics etc. array
 		return thisFieldValue.map((label) => {

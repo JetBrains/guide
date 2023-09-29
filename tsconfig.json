@@ -27,7 +27,8 @@
 		"site/*.tsx",
 		"site/**/index*.tsx",
 		"site/**/*Layout.tsx",
-		"customTypes"
+		"customTypes",
+		"tools/*.ts"
 	],
 	"exclude": ["site/**/demos/**"],
 	"ts-node": {

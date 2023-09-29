@@ -3,9 +3,13 @@ import h, { JSX } from "vhtml";
 import { LayoutContext, LayoutProps } from "../src/models";
 import { PageFrontmatter } from "../_includes/resources/page/PageModels";
 import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
-import FeaturedResource from "../_includes/pageelements/FeaturedResource.11ty";
 import MultiColumnSection from "../_includes/pageelements/MultiColumnSection";
 import ListingSection from "../_includes/pageelements/ListingSection.11ty";
+import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
+import { CHANNEL_RESOURCE } from "../src/resourceType";
+import { Resource } from "../src/ResourceModels";
+import { Channel } from "../_includes/resources/channel/ChannelModels";
+import { Topic } from "../_includes/resources/topic/TopicModels";
 
 type IndexPageProps = LayoutProps & PageFrontmatter;
 
@@ -20,20 +24,37 @@ class IndexPage {
 	}
 
 	render(this: LayoutContext, data: IndexPageProps): JSX.Element {
-		const featuredResource = this.getResource(
-			"/idea/tutorials/gitlab-merge-requests/"
-		);
-		const latestContent = this.getResources({
-			resourceTypes: ["tip", "tutorial", "playlist"],
-			limit: 12,
-		});
+		const featuredChannel = this.getResource("/remote/");
+		const channels = [
+			this.getResource("/dotnet/"),
+			this.getResource("/go/"),
+			this.getResource("/java/"),
+			this.getResource("/python/"),
+			this.getResource("/webjs/"),
+		];
+		const communities = [
+			// TODO: These need updating if/when we rename channels to be technology focused.
+			this.getResource("/gamedev/"),
+			this.getResource("/topics/django/"),
+			this.getResource("/topics/kotlin/"),
+		];
+
+		const hotTopics = [
+			// TODO: These need updating if/when we rename channels to be technology focused.
+			this.getResource("/topics/django/"),
+			this.getResource("/topics/editing/"),
+			this.getResource("/topics/git/"),
+			this.getResource("/topics/go/"),
+			this.getResource("/topics/gcp/"),
+			this.getResource("/topics/refactoring/"),
+		] as Topic[];
 
 		return (
 			<BaseLayout {...data}>
-				<section class="section has-gradient-purple">
+				<section className="section has-gradient-purple">
 					<div class="container">
 						<div class="columns is-multiline">
-							<div class="column is-8">
+							<div class="column is-7">
 								<h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold has-text-white">
 									Welcome to the JetBrains Guide
 								</h1>
@@ -42,27 +63,109 @@ class IndexPage {
 									have tips, tutorials, videos, articles and much, much more!
 								</p>
 							</div>
+							<ResourceCard
+								columnClassName={"is-3 is-offset-2 has-shadow"}
+								compactMode={true}
+								hasShadow={true}
+								resource={featuredChannel}
+							/>
 						</div>
 					</div>
 				</section>
-				<FeaturedResource resource={featuredResource}>
-					<p>
-						You're working hard on a branch. Then, a colleague finishes some
-						work. Congratulations -- you have a GitLab merge request. How do you
-						productively, efficiently process it with the least distraction?
-					</p>{" "}
-					<p>
-						The IDE can help! JetBrains IDEs have GitLab integration. Learn how
-						to process that merge request, in the IDE, and quickly get back in
-						the flow.
-					</p>
-				</FeaturedResource>
 
-				<ListingSection
-					title="Latest"
-					resources={latestContent}
-					moreLink="/latest/"
-				/>
+				<section className="section has-background-grey-darker">
+					<div class="container">
+						<div class="columns is-multiline is-centered">
+							{channels
+								.filter(
+									(resource: Resource): resource is Channel =>
+										resource.resourceType === CHANNEL_RESOURCE
+								)
+								.map((channel) => {
+									const figure = channel.getBoxThumbnail();
+									return (
+										<div class="column has-background-white m-4 is-5 is-2-desktop py-5 has-box-hover has-text-centered has-position-relative">
+											<a
+												href={channel.url}
+												aria-label={`Topic`}
+												class="is-size-5 has-text-weight-bold title is-stretched-link"
+											>
+												<figure class="image is-48x48 mb-1 mx-auto">
+													{figure}
+												</figure>
+												{channel.title}
+											</a>
+										</div>
+									);
+								})}
+						</div>
+					</div>
+				</section>
+
+				<ListingSection title={"Communities"} resources={communities} />
+
+				<section className="container">
+					<hr />
+				</section>
+
+				<section className="section">
+					<div class="container">
+						<div class="columns is-vcentered is-mobile">
+							<div class="column is-8">
+								<h2 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
+									Hot topics
+								</h2>
+							</div>
+							<div class="column has-text-right">
+								<a class="button is-rounded is-outlined" href="/topics/">
+									More...
+								</a>
+							</div>
+						</div>
+						<div class="columns is-multiline">
+							{hotTopics.map((topic) => {
+								let figure: string;
+								if (topic.icon) {
+									figure = (
+										<i class={`${topic.icon} has-text-${topic.accent} fa-5x`} />
+									);
+								} else if (topic.logo) {
+									figure = <img src={topic.logo} alt={topic.title} />;
+								} else {
+									figure = (
+										<i class={`fas fa-file has-text-${topic.accent} fa-5x`} />
+									);
+								}
+
+								return (
+									<div class="column is-6 is-4-desktop mb-5 has-box-hover">
+										<div class="is-flex has-position-relative">
+											<span class="mr-4">
+												<a href={topic.url}>
+													<figure class="image is-128x128 has-text-centered">
+														{figure}
+													</figure>
+												</a>
+											</span>
+											<div>
+												<a
+													href={topic.url}
+													aria-label={`Topic`}
+													class="is-size-5 has-text-weight-bold mb-2 title is-stretched-link"
+												>
+													{topic.title}
+												</a>
+												{topic.subtitle && (
+													<p class="has-text-grey-dark">{topic.subtitle}</p>
+												)}
+											</div>
+										</div>
+									</div>
+								);
+							})}
+						</div>
+					</div>
+				</section>
 
 				<MultiColumnSection>
 					<div>

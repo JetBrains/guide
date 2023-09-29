@@ -1,10 +1,7 @@
 import { afterEach, beforeEach, describe, expect, test, vi } from "vitest";
 import {
-	AllTopicTypes,
 	cleanAllResources,
 	cleanCategories,
-	dumpAuthors,
-	dumpTopics,
 	migrateLeadInAttribute,
 	migrateVideoFrontmatter,
 	pipe,
@@ -14,26 +11,25 @@ import {
 import {
 	getAllFiles,
 	getRoot,
-	guideSites,
 	MarkdownFrontmatter,
 	parseFrontmatter,
 } from "./file.utils";
 
 describe("Content Cleaning", () => {
 	const root = getRoot();
-	const pycharmTipRoot = `${root}/pycharm/tips`;
-	const pyCharmTipFiles = getAllFiles(pycharmTipRoot, []).slice(0, 10);
+	const pythonTipRoot = `${root}/python/tips`;
+	const pythonTipFiles = getAllFiles(pythonTipRoot, []).slice(0, 10);
 
 	test("get the root of the site as a path", () => {
 		expect(root).to.contain("/site");
 	});
 	test("recursively load a list of file paths", () => {
 		// Walking everything can be slow, let's pick a subset
-		expect(pyCharmTipFiles.length).to.be.gt(9);
+		expect(pythonTipFiles.length).to.be.gt(9);
 	});
 
 	test("convert file paths to parsed frontmatter", () => {
-		const results = parseFrontmatter(pyCharmTipFiles);
+		const results = parseFrontmatter(pythonTipFiles);
 		const first = Object.values(results)[0];
 		expect(first.frontmatter.title).to.exist;
 	});
@@ -93,76 +89,11 @@ describe("Content Cleaning", () => {
 	});
 
 	test("cleans all resources and prepares for writing to disk", () => {
-		const markdownResources = parseFrontmatter(pyCharmTipFiles);
+		const markdownResources = parseFrontmatter(pythonTipFiles);
 		const results = cleanAllResources(markdownResources);
 		const first = Object.values(results)[0];
 		expect(first).not.toContain("topics: ");
 		expect(first).not.toContain("topicType");
-	});
-});
-
-test.skip("actually execute the cleaning", () => {
-	// TODO Should not have to execute as a test, but the
-	//   whole TS/ESM thing interfered with running from
-	//   package.json or the command line.
-	// writeCleanResources();
-});
-
-test.skip("dump all topics for content migration", () => {
-	// TODO Should not have to execute as a test, but the
-	//   whole TS/ESM thing interfered with running from
-	//   package.json or the command line.
-	const results: AllTopicTypes = dumpTopics();
-	expect(results["dotnet"]["product"].length).toEqual(6);
-
-	// Now write to output for cutting-and-pasting
-	Object.entries(results).forEach(([site, entries]) => {
-		console.log(`\n${site}\n=====`);
-		Object.entries(entries).forEach(([topicType, values]) => {
-			console.log(`\n${topicType}\n----------`);
-			values.sort().forEach((value) => {
-				// Brute force!! Get a count of how many times this value appears
-				// in all the sites. If over one, flag as duplicate.
-				let count = 0;
-				guideSites.forEach((site) => {
-					const labels = results[site][topicType];
-					if (labels.includes(value)) {
-						count = count + 1;
-					}
-				});
-				const flag = count > 1 ? ` (${count})` : "";
-				console.log(`${value}${flag}`);
-			});
-		});
-	});
-});
-
-test.skip("dump all authors for content migration", () => {
-	// TODO Should not have to execute as a test, but the
-	//   whole TS/ESM thing interfered with running from
-	//   package.json or the command line.
-	const results: AllTopicTypes = dumpAuthors();
-	expect(results["dotnet"]["author"].length).toEqual(5);
-
-	// Now write to output for cutting-and-pasting
-	Object.entries(results).forEach(([site, entries]) => {
-		console.log(`\n${site}\n=====`);
-		Object.entries(entries).forEach(([topicType, values]) => {
-			console.log(`\n${topicType}\n----------`);
-			values.sort().forEach((value) => {
-				// Brute force!! Get a count of how many times this value appears
-				// in all the sites. If over one, flag as duplicate.
-				let count = 0;
-				guideSites.forEach((site) => {
-					const labels = results[site][topicType];
-					if (labels.includes(value)) {
-						count = count + 1;
-					}
-				});
-				const flag = count > 1 ? ` (${count})` : "";
-				console.log(`${value}${flag}`);
-			});
-		});
 	});
 });
 

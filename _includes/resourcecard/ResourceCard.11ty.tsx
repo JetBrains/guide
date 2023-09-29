@@ -8,7 +8,7 @@ import { References } from "../../src/ResourceModels";
 
 const glowColorHashRing = new ConsistentHash({
 	range: 100003,
-	weight: 80,
+	weight: 85,
 	distribution: "uniform",
 });
 glowColorHashRing.add("has-glow-magenta");
@@ -53,18 +53,9 @@ function doesExist(resource: References | undefined): asserts resource {
 }
 
 const ResourceCard = ({
-	resource: {
-		resourceType,
-		url,
-		title,
-		displayDate,
-		subtitle,
-		// TODO JNW Resource no longer has thumbnail
-		// @ts-ignore
-		thumbnail,
-		references,
-	},
+	resource: { resourceType, url, title, displayDate, subtitle, references },
 	orientation,
+	resource,
 	columnClassName,
 	hasShadow = false,
 	includeCardFooter = true,
@@ -72,11 +63,26 @@ const ResourceCard = ({
 }: ResourceCardProps): JSX.Element => {
 	doesExist(references);
 	const { author, topics } = references;
+	let thumbnail = resource.getThumbnail();
 
 	if (orientation == null || orientation == ResourceCardOrientation.Portrait) {
-		const glowCssClass =
-			resourceType != "channel" ? glowColorHashRing.get(title) : "";
+		// Thumbnail
+		const isThumbnailImage = thumbnail.indexOf("<img") >= 0;
+		const thumbnailFigureCss = isThumbnailImage
+			? "is-16by9 is-contained"
+			: "is-16by9 has-text-centered";
 
+		// Glow
+		const glowCssClass =
+			resourceType != "channel" || !isThumbnailImage
+				? glowColorHashRing.get(title)
+				: "";
+		if (!isThumbnailImage && glowCssClass != "") {
+			// when using glow, make sure icon-based thumbnails are shown with white text
+			thumbnail = thumbnail.replace("has-text-primary", "has-text-white");
+		}
+
+		// Custom CSS classes
 		const columnCssClass = columnClassName
 			? columnClassName
 			: "is-half-tablet is-one-quarter-desktop";
@@ -90,9 +96,10 @@ const ResourceCard = ({
 				>
 					<div class="card-image">
 						<a href={url}>
-							<figure class={`image is-16by9 is-contained ${glowCssClass}`}>
-								<img src={thumbnail} alt={title} />
-							</figure>
+							<figure
+								class={`image ${thumbnailFigureCss} ${glowCssClass}`}
+								dangerouslySetInnerHTML={{ __html: thumbnail }}
+							></figure>
 						</a>
 					</div>
 					<div class="card-content has-position-relative">

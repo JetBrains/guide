@@ -22,7 +22,7 @@ const frontmatter: ChannelFrontmatter = {
 	resourceType: "channel",
 	date: new Date(Date.UTC(2020, 1, 11)),
 	author: "maartenba",
-	thumbnail: "thumbnail.png",
+	logo: "thumbnail.png",
 	hero: "/assets/dotnet_splash.svg",
 	subnav: [
 		{ title: "Download", url: "https://www.jetbrains.com/dotnet/" },

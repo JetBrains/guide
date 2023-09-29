@@ -8,7 +8,7 @@ const data: ChannelFrontmatter = {
 	resourceType: "channel",
 	author: "sa",
 	date: fixtures.date,
-	thumbnail: "thumbnail.png",
+	logo: "thumbnail.png",
 };
 const page: EleventyPage = {
 	fileSlug: "some-page",
