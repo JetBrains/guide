@@ -57,6 +57,7 @@ export const resourceClasses: Record<
 	author: Author,
 	topic: Topic,
 	link: Link,
+	resource: Resource,
 } as const;
 
 export async function registerIncludes(

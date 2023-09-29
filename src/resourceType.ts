@@ -27,6 +27,9 @@ export type AUTHOR_RESOURCE_TYPE = typeof AUTHOR_RESOURCE;
 export const TOPIC_RESOURCE = "topic";
 export type TOPIC_RESOURCE_TYPE = typeof TOPIC_RESOURCE;
 
+export const RESOURCE = "resource";
+export type RESOURCE_TYPE = typeof RESOURCE;
+
 export const ALL_RESOURCES = [
 	TIP_RESOURCE,
 	ARTICLE_RESOURCE,
@@ -38,6 +41,7 @@ export const ALL_RESOURCES = [
 	LINK_RESOURCE,
 	TOPIC_RESOURCE,
 	AUTHOR_RESOURCE,
+	RESOURCE,
 ] as const;
 
 export type ALL_RESOURCE_TYPES = Array<typeof ALL_RESOURCES>;
