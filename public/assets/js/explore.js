@@ -19,7 +19,6 @@ export class ExploreViewModel {
 	constructor (facetMenuNode, listingNode) {
 		this.facetMenuNode = facetMenuNode;
 		this.listingNode = listingNode;
-		this.flag = 0;
 
 		// Set click handler for the whole menu
 		facetMenuNode.addEventListener("click", () => {
@@ -28,6 +27,46 @@ export class ExploreViewModel {
 	}
 
 	toggleFacet (event)  {
-		this.flag = 9;
 	}
 }
+
+// class ExploreDataStructure {
+//
+// 	constructor(results) {
+// 		this.results = results;
+// 		this.filters = {
+// 			resourceTypes : [],
+// 			channels: [],
+// 			topics: []
+// 		};
+// 	}
+//
+// 	render() {
+//
+// 		// counts
+// 		// filtering
+//
+// 		let result =
+// 			this.results
+// 			.filter(r => this.filters.resourceTypes.contains(r.resourceType))
+//
+// 		let counts = {};
+// 		for(const r in result) {
+// 			// count all the resourceTypes
+// 			// count all the topics
+// 			// count all the channels
+// 			count[r.resourceType] = count[] ? count[r.resourceType]++ : 1;
+// 			count[r.channel] = 1;
+//
+//
+// 		}
+//
+// 		this.results.count(r => r.resourceType == 'tip')
+//
+// 		return {
+//
+// 		}
+//
+// 	}
+//
+// }

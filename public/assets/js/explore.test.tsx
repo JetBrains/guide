@@ -16,7 +16,7 @@ describe("Faceted Browse", () => {
 		document.body.innerHTML = <body>
 		<div id="facetMenu">
 			<div data-facet-group="channel">
-				<a id="q7" href="#" class="" data-facet-key="python">Python (<span>10</span>)</a>
+				<a id="q7" href="python">Python</a>
 			</div>
 		</div>
 		<div id="listing"></div>
@@ -30,6 +30,12 @@ describe("Faceted Browse", () => {
 	});
 
 	test("construct view model", () => {
+		const vm: ExploreViewModel = new ExploreViewModel(facetMenuNode, listingNode);
+		expect(vm.facetMenuNode).to.exist;
+		expect(vm.listingNode).to.exist;
+	});
+
+	test("clicking a menu item toggles it", () => {
 		const vm = new ExploreViewModel(facetMenuNode, listingNode);
 		expect(vm.flag).to.equal(0);
 		const target = screen.getByRole("link");

@@ -10,6 +10,9 @@ export function LunrLayout(this: LayoutContext, data: LayoutProps): string {
 			title: value.title,
 			subtitle: value.subtitle,
 			url: pathprefix ? path.join(pathprefix, value.url) : value.url,
+			topics: value.topics,
+			channel: value.channel,
+			resourceType: value.resourceType,
 		};
 	});
 
