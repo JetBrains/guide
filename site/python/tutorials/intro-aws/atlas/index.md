@@ -4,6 +4,8 @@ date: 2021-01-29
 title: Setting Up a Database in MongoDB Atlas
 topics:
   - aws
+  - databases
+  - mongodb
 author: mm
 subtitle: >-
   Connect MongoDB smoothly by connecting through Pycharm Professional to explore

@@ -1,6 +1,6 @@
 ---
 title: Databases
-subtitle: Integrated visual database tool for PyCharm
+subtitle: Working with relational databases.
 accent: primary
 icon: fas fa-database
 website: "https://jetbrains.com/datagrip"
