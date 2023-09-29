@@ -14,3 +14,20 @@ export function renderCards(document, jsonResources) {
 		target.appendChild(clone);
 	});
 }
+
+export class ExploreViewModel {
+	constructor (facetMenuNode, listingNode) {
+		this.facetMenuNode = facetMenuNode;
+		this.listingNode = listingNode;
+		this.flag = 0;
+
+		// Set click handler for the whole menu
+		facetMenuNode.addEventListener("click", () => {
+			this.toggleFacet();
+		})
+	}
+
+	toggleFacet (event)  {
+		this.flag = 9;
+	}
+}

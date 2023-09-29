@@ -6,6 +6,45 @@ import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
 import ListingSection from "../_includes/pageelements/ListingSection.11ty";
 import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
 
+type ExploreMenuItem = {
+	href: string;
+	label: string;
+};
+
+type ExploreGroup = {
+	label?: string;
+	items: ExploreMenuItem[];
+};
+
+const exploreMenu: ExploreGroup[] = [
+	{
+		label: "Channels",
+		items: [
+			{ href: "/remote/", label: "Remote Development" },
+			{ href: "/gamedev/", label: "Game Development" },
+			{ href: "/dotnet/", label: ".NET" },
+			{ href: "/goland/", label: "GoLand" },
+			{ href: "/idea/", label: "IntelliJ IDEA" },
+			{ href: "/pycharm/", label: "PyCharm" },
+			{ href: "/webstorm/", label: "WebStorm" },
+		],
+	},
+	{
+		items: [{ href: "/latest/", label: "Latest" }],
+	},
+	{
+		items: [
+			{ href: "/articles/", label: "Articles" },
+			{ href: "/playlists/", label: "Playlists" },
+			{ href: "/tips/", label: "Tips" },
+			{ href: "/tutorials/", label: "Tutorials" },
+		],
+	},
+	{
+		items: [{ href: "/topics/", label: "Topics" }],
+	},
+];
+
 type ExplorePageProps = LayoutProps & PageFrontmatter;
 
 class ExplorePage {
@@ -73,6 +112,25 @@ class ExplorePage {
 							</div>
 
 							<div class="column is-full-touch is-3">
+								<aside class="menu">
+									{exploreMenu.map((menuGroup) => {
+										return (
+											<>
+												{menuGroup.label && (
+													<p class="menu-label">{menuGroup.label}</p>
+												)}
+												<ul class="menu-list">
+													{menuGroup.items.map((item) => (
+														<li>
+															<a href={item.href}>{item.label}</a>
+														</li>
+													))}
+												</ul>
+											</>
+										);
+									})}
+								</aside>
+
 								<aside class="menu">
 									<p class="menu-label">Channels</p>
 									<ul class="menu-list">
