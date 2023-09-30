@@ -3,11 +3,7 @@ import {
 	getResourceMap,
 	RegisterIncludesProps,
 } from "../src/registration";
-import {
-	ResourceFrontmatter,
-	Resource,
-	ResourceMap,
-} from "../src/ResourceModels";
+import { Resource, ResourceMap } from "../src/ResourceModels";
 import { Author } from "./resources/author/AuthorModels";
 import { Topic } from "./resources/topic/TopicModels";
 import { Tip } from "./resources/tip/TipModels";
@@ -20,10 +16,10 @@ import * as fs from "fs";
 import MarkdownIt from "markdown-it";
 import prism from "markdown-it-prism";
 import {
-	RESOURCE_MODELS_BY_TYPE,
 	getResource,
 	getResources,
 	QueryFilter,
+	RESOURCE_MODELS_BY_TYPE,
 } from "./queries";
 import { Page } from "./resources/page/PageModels";
 import { Article } from "./resources/article/ArticleModels";
