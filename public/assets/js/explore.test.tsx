@@ -1,101 +1,124 @@
 import h from "vhtml";
-import { describe, beforeEach, expect, test } from "vitest";
+import { beforeEach, describe, expect, test } from "vitest";
 import { screen } from "@testing-library/dom";
 
 // @ts-ignore
-import { renderCards, ExploreViewModel } from "./explore";
+import { ExploreViewModel, renderCards } from "./explore";
 import ResourceCard from "../../../_includes/resourcecard/ResourceCard.11ty";
 import fixtures from "../../../_includes/fixtures";
 
 describe("Faceted Browse", () => {
 	const firstTip = fixtures.resources[0];
 	const resourceCard = <ResourceCard resource={firstTip} />;
-	let facetMenuNode: any, listingNode: any;
+	let cardTemplate, facetMenuNode, listingNode, evm: ExploreViewModel;
+	const lunrResources = fixtures.resources.map(resource => {
+		return {
+			title: resource.title,
+			channel: "anotherchannel",
+			topics: ["topicx", "topicy", "topicz"]
+		};
+	});
+
+	// Set some facets
+	lunrResources[0].channel = "python";
+	lunrResources[1].channel = "python";
+	lunrResources[0].topics = ["topic100", "topic200"];
+	lunrResources[2].channel = "django";
+
 	beforeEach(() => {
 		// Make a ResourceCard string with dummy data
-		document.body.innerHTML = <body>
+		document.body.innerHTML = (<body>
 		<div id="facetMenu">
-			<div data-facet-group="channel">
-				<a id="q7" href="python">Python</a>
+			<div data-facet-group="ecosystems">
+				<a href="#" data-facet-value="go">Go</a>
+				<a href="#" data-facet-value="java">Java</a>
+				<a href="#" data-facet-value="python">Python</a>
+			</div>
+			<div data-facet-group="communities">
+				<a href="#" data-facet-value="databases">Databases</a>
+				<a href="#" data-facet-value="django">Django</a>
+				<a href="#" data-facet-value="testing">Testing</a>
+			</div>
+			<div data-facet-group="topics">
+				<a href="#" data-facet-value="topic100">Topic 100</a>
+				<a href="#" data-facet-value="topic200">Topic 200</a>
+				<a href="#" data-facet-value="topic300">Topic 300</a>
 			</div>
 		</div>
 		<div id="listing"></div>
-		<template id="resourceCard">
+		<template id="cardTemplate">
 			${resourceCard}
 		</template>
-		</body>
+		</body>)
 		;
+		cardTemplate = document.getElementById("cardTemplate");
 		facetMenuNode = document.getElementById("facetMenu");
 		listingNode = document.getElementById("listing");
+		evm = new ExploreViewModel(cardTemplate, facetMenuNode, listingNode, lunrResources);
 	});
 
 	test("construct view model", () => {
-		const vm: ExploreViewModel = new ExploreViewModel(facetMenuNode, listingNode);
-		expect(vm.facetMenuNode).to.exist;
-		expect(vm.listingNode).to.exist;
+		expect(evm.templateNode).to.exist;
+		expect(evm.facetMenuNode).to.exist;
+		expect(evm.listingNode).to.exist;
+		expect(evm.lunrResources.length).to.equal(lunrResources.length);
 	});
 
 	test("clicking a menu item toggles it", () => {
-		const vm = new ExploreViewModel(facetMenuNode, listingNode);
-		expect(vm.flag).to.equal(0);
-		const target = screen.getByRole("link");
+		const target = screen.getAllByRole("link")[0];
 		target.click();
-		expect(vm.flag).to.equal(9);
-		target.toggle("selected");
+		expect(target.classList.contains("selected")).to.be.true;
+		target.click();
+		expect(target.classList.contains("selected")).not.to.be.true;
 	});
 
-	// test("attach to page", () => {
-	//
-	// 	const jsonResources = fixtures.resources.map(resource => {
-	// 		return {
-	// 			title: resource.title
-	// 		};
-	// 	});
-	// 	renderCards(document, jsonResources);
-	// 	const resourceCards = screen.getAllByRole("link", { name: "Resource" });
-	// 	expect(resourceCards.length).to.equal(jsonResources.length);
-	// 	expect(resourceCards[0].textContent).to.equal(jsonResources[0].title);
-	// 	expect(resourceCards[21].textContent).to.equal(jsonResources[21].title);
-	// });
+	test("get initial selected facets", () => {
+		let facets = evm.getSelectedFacets();
+		expect(facets.ecosystems.length).to.equal(0);
+		expect(facets.communities.length).to.equal(0);
+		// Mark all as selected
+		evm.facetMenuNode.querySelectorAll("a").forEach((a: HTMLElement) => a.classList.add("selected"));
+		facets = evm.getSelectedFacets();
+		expect(facets.ecosystems.length).to.equal(3);
+		expect(facets.communities.length).to.equal(3);
+	});
 
-	// test("khalid crazy pseudocode (Jan is going to hate this)", () => {
-	//
-	// 	// step 0. modify lunr.json [x]
-	// 	// step 1. import lunr.json [ ]
-	// 	// step 2. enhance the json object with functionality
-	// 	// step 3. use this model in the UI
-	//
-	// 	const data = {
-	// 		filter: {
-	// 			topics: [""],
-	// 			resourceTypes: [""],
-	// 			channels: [""]
-	// 		},
-	// 		results: [],
-	// 		filtered : () => {
-	// 			return {
-	// 				resources : [], // order by date
-	// 				totalCount: 0,
-	// 				counts: {
-	// 					"key" : 0
-	// 					// ...
-	// 				}
-	// 			}
-	// 		}
-	// 	};
-	//
-	// 	data.filter.topics.push('click');
-	// 	data.filtered(); // used for rendering
-	//
-	// });
+	test("render initial json resources", () => {
+		evm.renderCards(lunrResources);
+		const resourceCards = screen.getAllByRole("link", { name: "Resource" });
+		expect(resourceCards.length).to.equal(lunrResources.length);
+		expect(resourceCards[0].textContent).to.equal(lunrResources[0].title);
+		expect(resourceCards[21].textContent).to.equal(lunrResources[21].title);
+	});
 
-	/*
-	- Load the initial set of facets with correct counts
-	- Handle a click
-	  * Adjust the facet selection
-	  * Update the counts
-	  * Redraw the results
-	*  */
+	test("filter one facet group, one facet", () => {
+		const selectedFacets = {
+			communities: [],
+			ecosystems: ["python"],
+			topics: []
+		};
+		const filteredResources = evm.filterResources(selectedFacets);
+		expect(filteredResources.length).to.equal(2);
+	});
 
+	test("filter two facet groups, one facet", () => {
+		const selectedFacets = {
+			communities: [],
+			ecosystems: ["python"],
+			topics: ["topic100"]
+		};
+		const filteredResources = evm.filterResources(selectedFacets);
+		expect(filteredResources.length).to.equal(1);
+	});
+
+	test("filter once community, one eco, one topic", () => {
+		const selectedFacets = {
+			communities: ["django"],
+			ecosystems: ["python"],
+			topics: ["topic100"]
+		};
+		const filteredResources = evm.filterResources(selectedFacets);
+		expect(filteredResources.length).to.equal(1);
+	});
 
 });
