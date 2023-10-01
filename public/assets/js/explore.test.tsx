@@ -30,12 +30,10 @@ describe("Faceted Browse", () => {
 		// Make a ResourceCard string with dummy data
 		document.body.innerHTML = (<body>
 		<div id="facetMenu">
-			<div data-facet-group="ecosystems">
+			<div data-facet-group="channels">
 				<a href="#" data-facet-value="go">Go</a>
 				<a href="#" data-facet-value="java">Java</a>
 				<a href="#" data-facet-value="python">Python</a>
-			</div>
-			<div data-facet-group="communities">
 				<a href="#" data-facet-value="databases">Databases</a>
 				<a href="#" data-facet-value="django">Django</a>
 				<a href="#" data-facet-value="testing">Testing</a>
@@ -75,13 +73,11 @@ describe("Faceted Browse", () => {
 
 	test("get initial selected facets", () => {
 		let facets = evm.getSelectedFacets();
-		expect(facets.ecosystems.length).to.equal(0);
-		expect(facets.communities.length).to.equal(0);
+		expect(facets.channels.length).to.equal(0);
 		// Mark all as selected
 		evm.facetMenuNode.querySelectorAll("a").forEach((a: HTMLElement) => a.classList.add("selected"));
 		facets = evm.getSelectedFacets();
-		expect(facets.ecosystems.length).to.equal(3);
-		expect(facets.communities.length).to.equal(3);
+		expect(facets.channels.length).to.equal(6);
 	});
 
 	test("render initial json resources", () => {
@@ -94,8 +90,7 @@ describe("Faceted Browse", () => {
 
 	test("filter one facet group, one facet", () => {
 		const selectedFacets = {
-			communities: [],
-			ecosystems: ["python"],
+			channels: ["python"],
 			topics: []
 		};
 		const filteredResources = evm.filterResources(selectedFacets);
@@ -104,8 +99,7 @@ describe("Faceted Browse", () => {
 
 	test("filter two facet groups, one facet", () => {
 		const selectedFacets = {
-			communities: [],
-			ecosystems: ["python"],
+			channels: ["python"],
 			topics: ["topic100"]
 		};
 		const filteredResources = evm.filterResources(selectedFacets);
@@ -114,8 +108,7 @@ describe("Faceted Browse", () => {
 
 	test("filter once community, one eco, one topic", () => {
 		const selectedFacets = {
-			communities: ["django"],
-			ecosystems: ["python"],
+			channels: ["python"],
 			topics: ["topic100"]
 		};
 		const filteredResources = evm.filterResources(selectedFacets);

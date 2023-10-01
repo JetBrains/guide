@@ -43,8 +43,7 @@ export class ExploreViewModel {
 	getSelectedFacets() {
 		const facetGroups = this.facetMenuNode.querySelectorAll("div[data-facet-group]");
 		const results = {
-			communities: [],
-			ecosystems: [],
+			channels: [],
 			topics: []
 		};
 		let facetGroupKey, selections;
@@ -73,16 +72,12 @@ export class ExploreViewModel {
 		const selectedResources = this.filterResources(selectedFacets);
 
 		// Re-render
-		debugger;
 		this.renderCards(selectedResources);
 	}
 
 	filterResources(selectedFacets) {
-		const { communities, ecosystems, topics } = selectedFacets;
+		const { channels, topics } = selectedFacets;
 
-		// Communities and ecosystems are both kinds of channels. Union
-		// these two piles of selections to allow "or"
-		const channels = [...communities, ...ecosystems];
 		return this.lunrResources.filter(resource => {
 			if (channels.length && !channels.includes(resource.channel)) {
 				return false;
