@@ -3,17 +3,17 @@ import { beforeEach, describe, expect, test } from "vitest";
 import { screen } from "@testing-library/dom";
 
 // @ts-ignore
-import { ExploreViewModel, renderCards } from "./explore";
-import ResourceCard from "../../../_includes/resourcecard/ResourceCard.11ty";
-import fixtures from "../../../_includes/fixtures";
+import { ExploreViewModel, renderCards } from "../public/assets/js/evm";
+import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
+import fixtures from "../_includes/fixtures";
 
 const firstTip = fixtures.resources[0];
 const resourceCard = <ResourceCard resource={firstTip} />;
-const lunrResources = fixtures.resources.map(resource => {
+const lunrResources = fixtures.resources.map((resource) => {
 	return {
 		title: resource.title,
 		channel: "anotherchannel",
-		topics: ["topicx", "topicy", "topicz"]
+		topics: ["topicx", "topicy", "topicz"],
 	};
 });
 
@@ -28,32 +28,54 @@ describe("Faceted Browse", () => {
 
 	beforeEach(() => {
 		// Make a ResourceCard string with dummy data
-		document.body.innerHTML = (<body>
-		<div id="facetMenu">
-			<div data-facet-group="channels">
-				<a href="#" data-facet-value="go">Go</a>
-				<a href="#" data-facet-value="java">Java</a>
-				<a href="#" data-facet-value="python">Python</a>
-				<a href="#" data-facet-value="databases">Databases</a>
-				<a href="#" data-facet-value="django">Django</a>
-				<a href="#" data-facet-value="testing">Testing</a>
-			</div>
-			<div data-facet-group="topics">
-				<a href="#" data-facet-value="topic100">Topic 100</a>
-				<a href="#" data-facet-value="topic200">Topic 200</a>
-				<a href="#" data-facet-value="topic300">Topic 300</a>
-			</div>
-		</div>
-		<div id="listing"></div>
-		<template id="cardTemplate">
-			${resourceCard}
-		</template>
-		</body>)
-		;
+		document.body.innerHTML = (
+			<body>
+				<div id="facetMenu">
+					<div data-facet-group="channels">
+						<a href="#" data-facet-value="go">
+							Go
+						</a>
+						<a href="#" data-facet-value="java">
+							Java
+						</a>
+						<a href="#" data-facet-value="python">
+							Python
+						</a>
+						<a href="#" data-facet-value="databases">
+							Databases
+						</a>
+						<a href="#" data-facet-value="django">
+							Django
+						</a>
+						<a href="#" data-facet-value="testing">
+							Testing
+						</a>
+					</div>
+					<div data-facet-group="topics">
+						<a href="#" data-facet-value="topic100">
+							Topic 100
+						</a>
+						<a href="#" data-facet-value="topic200">
+							Topic 200
+						</a>
+						<a href="#" data-facet-value="topic300">
+							Topic 300
+						</a>
+					</div>
+				</div>
+				<div id="listing"></div>
+				<template id="cardTemplate">${resourceCard}</template>
+			</body>
+		);
 		cardTemplate = document.getElementById("cardTemplate");
 		facetMenuNode = document.getElementById("facetMenu");
 		listingNode = document.getElementById("listing");
-		evm = new ExploreViewModel(cardTemplate, facetMenuNode, listingNode, lunrResources);
+		evm = new ExploreViewModel(
+			cardTemplate,
+			facetMenuNode,
+			listingNode,
+			lunrResources
+		);
 	});
 
 	test("construct view model", () => {
@@ -75,7 +97,9 @@ describe("Faceted Browse", () => {
 		let facets = evm.getSelectedFacets();
 		expect(facets.channels.length).to.equal(0);
 		// Mark all as selected
-		evm.facetMenuNode.querySelectorAll("a").forEach((a: HTMLElement) => a.classList.add("selected"));
+		evm.facetMenuNode
+			.querySelectorAll("a")
+			.forEach((a: HTMLElement) => a.classList.add("selected"));
 		facets = evm.getSelectedFacets();
 		expect(facets.channels.length).to.equal(6);
 	});
@@ -91,7 +115,7 @@ describe("Faceted Browse", () => {
 	test("filter one facet group, one facet", () => {
 		const selectedFacets = {
 			channels: ["python"],
-			topics: []
+			topics: [],
 		};
 		const filteredResources = evm.filterResources(selectedFacets);
 		expect(filteredResources.length).to.equal(2);
@@ -100,7 +124,7 @@ describe("Faceted Browse", () => {
 	test("filter two facet groups, one facet", () => {
 		const selectedFacets = {
 			channels: ["python"],
-			topics: ["topic100"]
+			topics: ["topic100"],
 		};
 		const filteredResources = evm.filterResources(selectedFacets);
 		expect(filteredResources.length).to.equal(1);
@@ -109,38 +133,47 @@ describe("Faceted Browse", () => {
 	test("filter once community, one eco, one topic", () => {
 		const selectedFacets = {
 			channels: ["python"],
-			topics: ["topic100"]
+			topics: ["topic100"],
 		};
 		const filteredResources = evm.filterResources(selectedFacets);
 		expect(filteredResources.length).to.equal(1);
 	});
-
 });
 
 test("throw exceptions if facets not found", () => {
-	document.body.innerHTML = (<body>
-	<div id="facetMenu">
-		<div data-facet-group="xxx">
-			<a href="#" data-facet-value="go">Go</a>
-		</div>
-		<div data-facet-group="yyy">
-			<a href="#" data-facet-value="databases">Databases</a>
-		</div>
-		<div data-facet-group="zzz">
-			<a href="#" data-facet-value="topic100">Topic 100</a>
-		</div>
-	</div>
-	<div id="listing"></div>
-	<template id="cardTemplate">
-		${resourceCard}
-	</template>
-	</body>)
-	;
+	document.body.innerHTML = (
+		<body>
+			<div id="facetMenu">
+				<div data-facet-group="xxx">
+					<a href="#" data-facet-value="go">
+						Go
+					</a>
+				</div>
+				<div data-facet-group="yyy">
+					<a href="#" data-facet-value="databases">
+						Databases
+					</a>
+				</div>
+				<div data-facet-group="zzz">
+					<a href="#" data-facet-value="topic100">
+						Topic 100
+					</a>
+				</div>
+			</div>
+			<div id="listing"></div>
+			<template id="cardTemplate">${resourceCard}</template>
+		</body>
+	);
 	const cardTemplate = document.getElementById("cardTemplate");
 	const facetMenuNode = document.getElementById("facetMenu");
 	const listingNode = document.getElementById("listing");
-	expect(() => new ExploreViewModel(cardTemplate, facetMenuNode, listingNode, lunrResources)).toThrowError(
-		`Missing facet group "channels"`,
-	);
-
+	expect(
+		() =>
+			new ExploreViewModel(
+				cardTemplate,
+				facetMenuNode,
+				listingNode,
+				lunrResources
+			)
+	).toThrowError(`Missing facet group "channels"`);
 });

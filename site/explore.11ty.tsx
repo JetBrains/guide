@@ -196,7 +196,7 @@ class ExplorePage {
 						</div>
 					</div>
 				</div>
-				<script type="module" src="/assets/js/explore.js" async></script>
+				<script type="module" src="/assets/js/evm.js" async></script>
 			</BaseLayout>
 		);
 	}
