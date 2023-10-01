@@ -7,17 +7,18 @@ import { ExploreViewModel, renderCards } from "./explore";
 import ResourceCard from "../../../_includes/resourcecard/ResourceCard.11ty";
 import fixtures from "../../../_includes/fixtures";
 
+const firstTip = fixtures.resources[0];
+const resourceCard = <ResourceCard resource={firstTip} />;
+const lunrResources = fixtures.resources.map(resource => {
+	return {
+		title: resource.title,
+		channel: "anotherchannel",
+		topics: ["topicx", "topicy", "topicz"]
+	};
+});
+
 describe("Faceted Browse", () => {
-	const firstTip = fixtures.resources[0];
-	const resourceCard = <ResourceCard resource={firstTip} />;
 	let cardTemplate, facetMenuNode, listingNode, evm: ExploreViewModel;
-	const lunrResources = fixtures.resources.map(resource => {
-		return {
-			title: resource.title,
-			channel: "anotherchannel",
-			topics: ["topicx", "topicy", "topicz"]
-		};
-	});
 
 	// Set some facets
 	lunrResources[0].channel = "python";
@@ -120,5 +121,33 @@ describe("Faceted Browse", () => {
 		const filteredResources = evm.filterResources(selectedFacets);
 		expect(filteredResources.length).to.equal(1);
 	});
+
+});
+
+test("throw exceptions if facets not found", () => {
+	document.body.innerHTML = (<body>
+	<div id="facetMenu">
+		<div data-facet-group="xxx">
+			<a href="#" data-facet-value="go">Go</a>
+		</div>
+		<div data-facet-group="yyy">
+			<a href="#" data-facet-value="databases">Databases</a>
+		</div>
+		<div data-facet-group="zzz">
+			<a href="#" data-facet-value="topic100">Topic 100</a>
+		</div>
+	</div>
+	<div id="listing"></div>
+	<template id="cardTemplate">
+		${resourceCard}
+	</template>
+	</body>)
+	;
+	const cardTemplate = document.getElementById("cardTemplate");
+	const facetMenuNode = document.getElementById("facetMenu");
+	const listingNode = document.getElementById("listing");
+	expect(() => new ExploreViewModel(cardTemplate, facetMenuNode, listingNode, lunrResources)).toThrowError(
+		`Missing facet group "channels"`,
+	);
 
 });

@@ -63,12 +63,14 @@ class ExplorePage {
 			limit: 12,
 		});
 
-		const channels = [
-			this.getResource("/remote/"),
-			this.getResource("/gamedev/"),
-			this.getResource("/dotnet/"),
-		];
+		// const channels = [
+		// 	this.getResource("/remote/"),
+		// 	this.getResource("/gamedev/"),
+		// 	this.getResource("/dotnet/"),
+		// ];
 
+		const dummyChannel = this.getResource("/remote/");
+		const resourceCard = <ResourceCard resource={dummyChannel} />;
 		return (
 			<BaseLayout {...data}>
 				<div class="section">
@@ -96,11 +98,12 @@ class ExplorePage {
 								</div>
 
 								<div class="columns is-multiline">
-									{channels.map((channel) => {
-										return (
-											<ResourceCard compactMode={true} resource={channel} />
-										);
-									})}
+									<div id="listing"></div>
+									{/*{channels.map((channel) => {*/}
+									{/*	return (*/}
+									{/*		<ResourceCard compactMode={true} resource={channel} />*/}
+									{/*	);*/}
+									{/*})}*/}
 								</div>
 
 								<ListingSection
@@ -112,23 +115,26 @@ class ExplorePage {
 							</div>
 
 							<div class="column is-full-touch is-3">
-								<aside class="menu">
+								<aside class="menu" id="facetMenu">
 									{exploreMenu.map((menuGroup) => {
 										return (
 											<>
 												{menuGroup.label && (
 													<p class="menu-label">{menuGroup.label}</p>
 												)}
-												<ul class="menu-list">
+												<ul class="menu-list" data-facet-group="ecosystems">
 													{menuGroup.items.map((item) => (
 														<li>
-															<a href={item.href}>{item.label}</a>
+															<a href="#" data-facet-value={item.href}>
+																{item.label}
+															</a>
 														</li>
 													))}
 												</ul>
 											</>
 										);
 									})}
+									<template id="cardTemplate">${resourceCard}</template>
 								</aside>
 
 								<aside class="menu">
@@ -190,6 +196,7 @@ class ExplorePage {
 						</div>
 					</div>
 				</div>
+				<script type="module" src="/assets/js/explore.js" async></script>
 			</BaseLayout>
 		);
 	}

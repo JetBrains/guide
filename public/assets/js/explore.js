@@ -25,10 +25,19 @@ export class ExploreViewModel {
 		this.listingNode = listingNode;
 		this.lunrResources = lunrResources;
 
+		// Some checks to ensure the markup matches the contract
+		if (!facetMenuNode.querySelector(`div[data-facet-group="channels"]`)) {
+			throw new Error(`Missing facet group "channels"`)
+		}
+		if (!facetMenuNode.querySelector(`div[data-facet-group="topics"]`)) {
+			throw new Error(`Missing facet group "topics"`)
+		}
+
 		// Set click handler for the whole menu
 		this.facetMenuNode.addEventListener("click", (evt) => {
 			this.handleClick(evt);
 		});
+
 	}
 
 	getSelectedFacets() {
@@ -36,7 +45,7 @@ export class ExploreViewModel {
 		const results = {
 			communities: [],
 			ecosystems: [],
-			topics: [],
+			topics: []
 		};
 		let facetGroupKey, selections;
 		facetGroups.forEach(fg => {
@@ -44,12 +53,12 @@ export class ExploreViewModel {
 			// Get the selected items
 			selections = fg.querySelectorAll("a.selected");
 			results[facetGroupKey] = selections.map(a => a.dataset["facet-value"]);
-		})
+		});
 		return results;
 	}
 
 	handleClick(event) {
-		event.preventDefault()
+		event.preventDefault();
 		const target = event.target;
 		if (target.classList.contains("selected")) {
 			target.classList.remove("selected");
@@ -64,6 +73,7 @@ export class ExploreViewModel {
 		const selectedResources = this.filterResources(selectedFacets);
 
 		// Re-render
+		debugger;
 		this.renderCards(selectedResources);
 	}
 
@@ -98,4 +108,15 @@ export class ExploreViewModel {
 			this.listingNode.appendChild(clone);
 		});
 	}
+}
+
+if (!window.happyDOM) {
+	// We are in a browser, not in a test. Go get the lunr JSON, and wire up the class.
+	const jsonUrl = new URL("/lunr_index.json", import.meta.url).href;
+	const response = await fetch(jsonUrl);
+	const jsonResources = await response.json();
+	const templateNode = document.querySelector("#cardTemplate");
+	const facetNode = document.querySelector("#facetMenu");
+	const listingNode = document.querySelector("#listing");
+	new ExploreViewModel(templateNode, facetNode, listingNode, jsonResources.results);
 }
