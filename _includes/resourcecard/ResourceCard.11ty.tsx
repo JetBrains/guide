@@ -40,6 +40,7 @@ export type ResourceCardProps = {
 	hasShadow?: boolean;
 	includeCardFooter?: boolean;
 	compactMode?: boolean;
+	includeContentType?: boolean;
 };
 
 const lazyLoading = "lazy" as const;
@@ -105,6 +106,7 @@ const ResourceCard = ({
 	hasShadow = false,
 	includeCardFooter = true,
 	compactMode = false,
+	includeContentType = true,
 }: ResourceCardProps): JSX.Element => {
 	doesExist(references);
 	const { author, topics } = references;
@@ -151,7 +153,7 @@ const ResourceCard = ({
 						</a>
 					</div>
 					<div class="card-content has-position-relative">
-						{contentType && !compactMode && (
+						{contentType && includeContentType && !compactMode && (
 							<p className="subtitle is-size-7 is-uppercase">{contentType}</p>
 						)}
 						<a
