@@ -1,10 +1,19 @@
 import h, { JSX } from "vhtml";
 import ConsistentHash from "consistent-hash";
-import { Resource } from "../../src/ResourceModels";
+import { References, Resource } from "../../src/ResourceModels";
 import { Topic } from "../resources/topic/TopicModels";
 import TopicTag from "../resources/topic/TopicTag.11ty";
 import { AuthorFrontmatter } from "../resources/author/AuthorModels";
-import { References } from "../../src/ResourceModels";
+import {
+	ARTICLE_RESOURCE,
+	CHANNEL_RESOURCE,
+	LINK_RESOURCE,
+	PLAYLIST_RESOURCE,
+	TIP_RESOURCE,
+	TUTORIAL_RESOURCE,
+	TUTORIAL_STEP_RESOURCE,
+} from "../../src/resourceType";
+import { Link } from "../resources/link/LinkModels";
 
 const glowColorHashRing = new ConsistentHash({
 	range: 100003,
@@ -52,6 +61,42 @@ function doesExist(resource: References | undefined): asserts resource {
 	}
 }
 
+function describeContentType(resourceType: string, resource: Resource) {
+	let contentType = "";
+	switch (resourceType) {
+		case TIP_RESOURCE:
+		case ARTICLE_RESOURCE:
+		case TUTORIAL_RESOURCE:
+		case PLAYLIST_RESOURCE:
+		case CHANNEL_RESOURCE:
+			contentType = resourceType;
+			break;
+		case TUTORIAL_STEP_RESOURCE:
+			contentType = "Part of tutorial";
+			break;
+		case LINK_RESOURCE:
+			contentType = resourceType;
+			const linkResource = resource as Link;
+			if (
+				linkResource.linkURL.indexOf("youtube.com") >= 0 ||
+				linkResource.linkURL.indexOf("youtu.be") >= 0
+			) {
+				contentType = "YouTube";
+			} else if (linkResource.linkURL.indexOf("blog.jetbrains.com") >= 0) {
+				contentType = "JetBrains Blog";
+			} else if (
+				linkResource.linkURL.indexOf("jetbrains.com") >= 0 &&
+				linkResource.linkURL.indexOf("help") >= 0
+			) {
+				contentType = "Documentation";
+			} else if (linkResource.linkURL.indexOf("medium.com") >= 0) {
+				contentType = "Medium";
+			}
+			break;
+	}
+	return contentType;
+}
+
 const ResourceCard = ({
 	resource: { resourceType, url, title, displayDate, subtitle, references },
 	orientation,
@@ -74,8 +119,8 @@ const ResourceCard = ({
 
 		// Glow
 		const glowCssClass =
-			resourceType != "channel" || !isThumbnailImage
-				? glowColorHashRing.get(title)
+			resourceType != CHANNEL_RESOURCE || !isThumbnailImage
+				? glowColorHashRing.get(title + displayDate)
 				: "";
 		if (!isThumbnailImage && glowCssClass != "") {
 			// when using glow, make sure icon-based thumbnails are shown with white text
@@ -88,6 +133,9 @@ const ResourceCard = ({
 			: "is-half-tablet is-one-quarter-desktop";
 
 		const cardCssClass = hasShadow ? "" : "is-shadowless";
+
+		// Content type
+		const contentType = describeContentType(resourceType, resource);
 
 		return (
 			<div class={`column ${columnCssClass}`}>
@@ -103,6 +151,9 @@ const ResourceCard = ({
 						</a>
 					</div>
 					<div class="card-content has-position-relative">
+						{contentType && !compactMode && (
+							<p className="subtitle is-size-7 is-uppercase">{contentType}</p>
+						)}
 						<a
 							class="title is-size-5 is-stretched-link clamp-2 mb-1"
 							aria-label={`Resource`}
@@ -117,7 +168,7 @@ const ResourceCard = ({
 					{includeCardFooter && !compactMode && (
 						<footer class="card-footer">
 							<div class="container p-4">
-								<div class="tags mb-2 clamp-2">
+								<div class="tags mb-2 clamp-1">
 									{topics.map((topic: Topic) => (
 										<TopicTag topic={topic} />
 									))}
