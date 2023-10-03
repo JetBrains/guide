@@ -65,7 +65,7 @@ class JavaHomepage {
 				/>
 				{tips && (
 					<ListingSection
-						title={`Recent tips`}
+						title={`Latest tips`}
 						resources={tips}
 						moreLink={`${channel.url}tips/`}
 					/>
@@ -115,7 +115,7 @@ class JavaHomepage {
 
 				{tutorials && (
 					<ListingSection
-						title={`Recent tutorials`}
+						title={`Latest tutorials`}
 						resources={tutorials}
 						moreLink={`${channel.url}playlists/`}
 					/>

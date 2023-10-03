@@ -12,6 +12,7 @@ export type ListingSectionProps = {
 	isSection?: boolean;
 	includeCardFooter?: boolean;
 	sectionExtraClass?: string;
+	includeContentType?: boolean;
 };
 
 function ListingSection({
@@ -24,6 +25,7 @@ function ListingSection({
 	isSection = true,
 	includeCardFooter = true,
 	sectionExtraClass,
+	includeContentType = false,
 }: ListingSectionProps) {
 	/* A reusable component for section-style paginated ResourceCard listings */
 	const columnClassName = isSection
@@ -40,6 +42,7 @@ function ListingSection({
 						resource={resource}
 						columnClassName={columnClassName}
 						includeCardFooter={includeCardFooter}
+						includeContentType={includeContentType}
 					></ResourceCard>
 				);
 			})}

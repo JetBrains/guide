@@ -59,7 +59,7 @@ class WebStormHomepage {
 				/>
 				{tips && (
 					<ListingSection
-						title={`Recent tips`}
+						title={`Latest tips`}
 						resources={tips}
 						moreLink={`${channel.url}tips/`}
 					/>
@@ -131,7 +131,7 @@ class WebStormHomepage {
 
 				{tutorials && (
 					<ListingSection
-						title={`Recent tutorials`}
+						title={`Latest tutorials`}
 						resources={tutorials}
 						moreLink={`${channel.url}tutorials/`}
 					/>
