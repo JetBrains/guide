@@ -9,23 +9,24 @@ import {
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import MultiColumnSection from "../../_includes/pageelements/MultiColumnSection";
-import FeaturedResource from "../../_includes/pageelements/FeaturedResource.11ty";
 import {
 	PLAYLIST_RESOURCE,
 	TIP_RESOURCE,
 	TUTORIAL_RESOURCE,
+	TUTORIAL_STEP_RESOURCE,
 } from "../../src/resourceType";
 
 const frontmatter: ChannelFrontmatter = {
-	title: ".NET Tools Guide",
-	subtitle: "Learning resources for ReSharper, Rider and more.",
+	title: ".NET",
+	subtitle:
+		"A learning journey into .NET\nand tools like ReSharper, Rider and more.",
 	resourceType: "channel",
-	date: new Date(Date.UTC(2020, 1, 11)),
+	date: new Date(Date.UTC(2023, 10, 3)),
 	author: "maartenba",
 	logo: "thumbnail.png",
 	hero: "/assets/dotnet_splash.svg",
 	subnav: [
-		{ title: "Download", url: "https://www.jetbrains.com/dotnet/" },
+		{ title: "Downloads", url: "https://www.jetbrains.com/dotnet/" },
 		{ title: "Blog", url: "https://blog.jetbrains.com/dotnet/" },
 		{ title: "Docs", url: "https://www.jetbrains.com/help/" },
 	],
@@ -84,6 +85,16 @@ class DotNetHomepage {
 			sorter: (a, b) => (a.date > b.date ? 1 : -1),
 		});
 
+		const profilingContent = this.getResources({
+			resourceTypes: [TIP_RESOURCE, TUTORIAL_RESOURCE, TUTORIAL_STEP_RESOURCE],
+			limit: 4,
+			customFilter: (r) =>
+				r.topics?.includes(".net") == true &&
+				r.topics?.includes("profiling") == true,
+			sorter: (a, b) =>
+				a.slug.indexOf("rider-profiling") >= 0 || a.date > b.date ? -1 : 1,
+		});
+
 		const eventPlaylists = this.getResources({
 			resourceTypes: [PLAYLIST_RESOURCE],
 			channel: channel.url,
@@ -91,8 +102,6 @@ class DotNetHomepage {
 			customFilter: (r) =>
 				r.slug.indexOf("day-online") >= 0 || r.slug.indexOf("days-online") >= 0,
 		});
-
-		const dockerTutorial = this.getResource("/dotnet/tutorials/docker-dotnet/");
 
 		return (
 			<BaseLayout {...data}>
@@ -137,33 +146,13 @@ class DotNetHomepage {
 					</div>
 				</MultiColumnSection>
 
-				<FeaturedResource resource={dockerTutorial}>
-					<p>
-						Many software development teams are containerizing their .NET
-						applications. While Docker and containerization open the doors to
-						cloud-native and planet-scale applications, containerization is not
-						only about that!
-					</p>{" "}
-					<p>
-						With Docker containers, you can package your .NET apps and
-						dependencies into portable containers that serve as the unit of
-						deployment, no matter where you want to run the application.
-						Containers make sure deployment happens in a well-known environment.
-					</p>{" "}
-					<p>
-						This tutorial aims to inform .NET developers who may have heard
-						about Docker but aren't sure what it is, why they should care, and
-						how it fits into developing their distributed .NET applications.
-					</p>
-				</FeaturedResource>
-
 				{aspNetTutorials && (
 					<ListingSection
 						title={`Learn ASP.NET Core`}
 						subtitle={`Tutorials that help you build amazing web experiences with .NET.`}
 						resources={aspNetTutorials}
 						moreLink={`${channel.url}technologies/asp.net/`}
-						separator={true}
+						separator={false}
 						includeCardFooter={false}
 					/>
 				)}
@@ -178,18 +167,29 @@ class DotNetHomepage {
 					/>
 				)}
 
+				{profilingContent && (
+					<ListingSection
+						title={`Make your .NET apps faster!`}
+						resources={profilingContent}
+						moreLink={`/topics/profiling/`}
+						separator={false}
+						includeCardFooter={false}
+						sectionExtraClass={"has-background-grey-lighter"}
+					/>
+				)}
+
 				{tutorials && (
 					<ListingSection
-						title={`Recent tutorials`}
+						title={`Latest tutorials`}
 						resources={tutorials}
 						moreLink={`${channel.url}tutorials/`}
-						separator={true}
+						separator={false}
 					/>
 				)}
 
 				{tips && (
 					<ListingSection
-						title={`Recent tips`}
+						title={`Latest tips`}
 						resources={tips}
 						moreLink={`${channel.url}tips/`}
 						separator={false}
@@ -198,9 +198,11 @@ class DotNetHomepage {
 
 				{eventPlaylists && (
 					<ListingSection
-						title={`Past Events`}
+						title={`Event recordings`}
 						resources={eventPlaylists}
-						separator={true}
+						separator={false}
+						includeCardFooter={false}
+						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
 			</BaseLayout>
