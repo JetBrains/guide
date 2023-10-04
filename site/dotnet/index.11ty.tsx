@@ -174,6 +174,7 @@ class DotNetHomepage {
 						moreLink={`/topics/profiling/`}
 						separator={false}
 						includeCardFooter={false}
+						includeContentType={true}
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
