@@ -20,7 +20,7 @@ How to recreate a classic 90s game using .NET and F# using the same techniques (
 
 James Randall, CTO at Blackdot Solutions, loves bikes, his dog, and doing fun things with code. By day, James is an engineering manager who creates OSInt software using .NET, TypeScript, and the cloud. By night, he enjoys sinking himself into personal coding projects and creating fun interactive things.
 
-- https://www.jamesdrandall.com
-- https://github.com/JamesRandall/fsharp-wolfenstein
-- https://github.com/JamesRandall/fsharp-simpleraycaster
-- https://github.com/JamesRandall/fsharp-simpleraycaster-textured
+- [Website](https://www.jamesdrandall.com)
+- [Code - Wolfenstein 3D clone in F#](https://github.com/JamesRandall/fsharp-wolfenstein)
+- [Code - Raycaster](https://github.com/JamesRandall/fsharp-simpleraycaster)
+- [Code - Textured raycaster](https://github.com/JamesRandall/fsharp-simpleraycaster-textured)

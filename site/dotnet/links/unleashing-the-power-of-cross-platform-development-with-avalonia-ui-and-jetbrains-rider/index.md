@@ -22,5 +22,5 @@ Whether you're an experienced .NET developer or just starting your journey, this
 
 Mike's career has revolved around helping developers create cross-platform apps, initially using Qt, before joining Xamarin in 2013 and later joining Microsoft. He's now leading Avalonia UI as CEO, continuing his goals of enabling developers to build better apps for every platform using .NET.
 
-- https://avaloniaui.net/
-- https://twitter.com/MikeCodesDotNET
+- [Avalonia UI](https://avaloniaui.net/)
+- [Twitter](https://twitter.com/MikeCodesDotNET)

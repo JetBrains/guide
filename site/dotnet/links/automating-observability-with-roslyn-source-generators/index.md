@@ -23,4 +23,4 @@ Join Denis in a fun coding session, where we will automate the process of instru
 
 Denis Ekart is a Lead Software Engineer at 13|37. He is a highly driven and innovative engineer with nearly a decade of professional experience in software design and development. His primary interests include designing and building performant cloud-native solutions. He has extensive knowledge and understanding of the .NET ecosystem, including ample experience in cloud technologies such as Microsoft Azure.
 
-- https://denace.dev/
+- [Website](https://denace.dev/)

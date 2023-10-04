@@ -21,5 +21,5 @@ In this session, I’ll show you how to get started with microservice architectu
 
 Layla Porter is a Developer Advocate at VMware serving the .NET community. She makes videos and livecodes on YouTube. She is a Microsoft MVP, a GitHub Star, Progress Ninja, and the founder of the #WomenOfDotNet Initiative. Layla loves sharing knowledge whilst having fun. No question is stupid, and beginners are always welcome.
 
-- https://bit.ly/understanding-microservices-23
-- https://www.layla.dev/
+- [Slides](https://bit.ly/understanding-microservices-23)
+- [Website](https://www.layla.dev/)

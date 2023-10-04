@@ -23,4 +23,4 @@ This talk is essential for .NET developers working with Blazor WASM and anyone i
 
 Andrii Rublov, Software Developer, JetBrains. Andrii is a software engineer whose main interest is creating tooling for programming languages. He’s also active in game development. Andrii likes to stay busy: he actively contributes to various open-source projects in his spare time. But having numerous pet projects on his plate never stops him from diving into new ones. He is the creator of the EF Core and MonoGame plugins for JetBrains Rider.
 
-- https://docs.google.com/presentation/d/1f_nY2_MnafiEO7jJl-pZzWdMFFfSWYchMjQwqueYgIY/edit?usp=sharing
+- [Slides](https://docs.google.com/presentation/d/1f_nY2_MnafiEO7jJl-pZzWdMFFfSWYchMjQwqueYgIY/edit?usp=sharing)

@@ -25,7 +25,7 @@ Developers working with EF Core will learn to store data in JSON columns and how
 
 Tech Lead, Space International. Giorgi is a software developer with more than a decade of experience. He works mainly with C#, ASP.NET Core, REST, GraphQL, MAUI, Xamarin, Entity Framework Core, AWS, Azure, and SQL Server. He has also worked with many other frameworks and systems such as ASP.NET MVC, ASP.NET Web API, WCF, Avalonia, WinForms, Oracle, and many more. Giorgi is an open-source author and contributor on GitHub, InfoQ Editor, and a member of the .NET Foundation.
 
-- https://github.com/Giorgi/EF-Core-Demos
-- https://github.com/Giorgi/
-- https://twitter.com/GioDalakishvili
-- https://www.giorgi.dev/
+- [Demo code](https://github.com/Giorgi/EF-Core-Demos)
+- [GitHub](https://github.com/Giorgi/)
+- [Twitter](https://twitter.com/GioDalakishvili)
+- [Website](https://www.giorgi.dev/)

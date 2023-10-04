@@ -21,7 +21,7 @@ We need to understand how to choose the right observability signal for each use 
 
 Laila Bougria is a software engineer at Particular Software, maker of NServiceBus, and a Microsoft Azure MVP. She's passionate about software and always looking for patterns, both in code and in yarn. When she’s not working, she loves to knit or crochet and spend time with her kids playing whatever the day brings!
 
-- https://www.linkedin.com/in/lailabougria
-- https://hachyderm.io/@noctovis
-- https://twitter.com/noctovis
-- https://github.com/lailabougria/talks/tree/main/how-to-effectively-spy-on-your-systems
+- [LinkedIn](https://www.linkedin.com/in/lailabougria)
+- [Mastodon](https://hachyderm.io/@noctovis)
+- [Twitter](https://twitter.com/noctovis)
+- [Slides](https://github.com/lailabougria/talks/tree/main/how-to-effectively-spy-on-your-systems)

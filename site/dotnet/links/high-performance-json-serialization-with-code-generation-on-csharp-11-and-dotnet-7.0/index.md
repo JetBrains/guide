@@ -21,4 +21,4 @@ In this talk, you will see how features added to recent versions of C# can drama
 
 Ian Griffiths, Technical Fellow, endjin. Ian started using computers when he was six. He has worked in various aspects of computing, including computer networking, embedded real-time systems, broadcast television systems, medical imaging, and all forms of cloud computing.
 
-- https://github.com/corvus-dotnet/Corvus.JsonSchema
+- [Project on GitHub](https://github.com/corvus-dotnet/Corvus.JsonSchema)
