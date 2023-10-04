@@ -25,7 +25,8 @@ job("Run lint") {
         gitPush {
             enabled = true
 
-            branchFilter {
+            anyRefMatching {
+                +"refs/heads/*"
                 -"refs/deploys/*"
                 -"refs/merge/*"
                 -"refs/pull/*"
@@ -41,7 +42,8 @@ job("Run tests") {
         gitPush {
             enabled = true
 
-            branchFilter {
+            anyRefMatching {
+                +"refs/heads/*"
                 -"refs/deploys/*"
                 -"refs/merge/*"
                 -"refs/pull/*"
@@ -77,7 +79,7 @@ job("Remote development images") {
         gitPush {
             enabled = true
 
-            branchFilter {
+            anyRefMatching {
                 +"refs/heads/main"
                 -"refs/deploys/*"
                 -"refs/merge/*"
@@ -122,7 +124,8 @@ fun Job.buildAndDeployStaging() {
         gitPush {
             enabled = true
 
-            branchFilter {
+            anyRefMatching {
+                +"refs/heads/*"
                 -"refs/deploys/*"
                 -"refs/merge/*"
                 -"refs/pull/*"
