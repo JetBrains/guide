@@ -23,7 +23,11 @@ function FeaturedResource({ resource, children }: FeaturedResourceProps) {
 							</a>
 						</div>
 					</div>
-					<ResourceCard resource={resource} hasShadow={true} />
+					<ResourceCard
+						resource={resource}
+						hasShadow={true}
+						includeContentType={false}
+					/>
 				</div>
 			</div>
 		</section>

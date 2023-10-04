@@ -20,6 +20,7 @@ function HeroSection({
 	extraContent = "",
 }: HeroSectionProps) {
 	const style = `background: url('${image}') center center; background-repeat: no-repeat; background-size: cover; ${extraStyle}`;
+	const subtitleHtml = subtitle ? subtitle.replace("\n", "<br/>") : "";
 	return (
 		<section class="hero is-medium" style={style}>
 			<div class="hero-body">
@@ -31,9 +32,10 @@ function HeroSection({
 					>
 						{title}
 					</h1>
-					<p class={`subtitle mb-5 ${subtitleExtraClass || "has-text-grey"}`}>
-						{subtitle}
-					</p>
+					<p
+						class={`subtitle mb-5 ${subtitleExtraClass || "has-text-grey"}`}
+						dangerouslySetInnerHTML={{ __html: subtitleHtml }}
+					></p>
 					{extraContent}
 				</div>
 			</div>

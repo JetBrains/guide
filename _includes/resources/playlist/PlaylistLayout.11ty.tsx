@@ -112,14 +112,15 @@ export function PlaylistLayout(
 						)}
 						{item.video && <VideoPlayer source={item.video}></VideoPlayer>}
 						{item.linkURL && (
-							<div>
-								<a href={item.linkURL}>View at original site</a>
-							</div>
+							<p class={item.video ? "mt-4" : ""}>
+								<a href={item.linkURL} class="link-external">
+									View at original site
+								</a>
+							</p>
 						)}
 						{itemContent && (
 							<div
-								class="content"
-								style="margin-top: 3rem"
+								class="content mt-4"
 								dangerouslySetInnerHTML={{ __html: itemContent }}
 							></div>
 						)}

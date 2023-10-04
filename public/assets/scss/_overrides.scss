@@ -98,7 +98,7 @@ a.navbar-item:focus-within {
 }
 
 a.link-external:after {
-  content: "\2197";
+  content: " \2197";
   display: inline;
 }
 
@@ -106,35 +106,34 @@ a.link-external:after {
 .token.number, .token.tag { all: inherit; }
 
 /* Clamp (inspired by https://blog.jetbrains.com/) */
-.clamp-1 {
+.clamp {
+  display: block;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  position: relative;
   overflow: hidden;
-  -webkit-line-clamp: 1;
-}
-.clamp-2 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
-}
-.clamp-3 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 3;
-}
-.clamp-4 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 4;
-}
-.clamp-5 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 5;
+  text-overflow: ellipsis;
+
+  &.clamp-1 {
+    -webkit-line-clamp: 1;
+  }
+  &.clamp-2 {
+    -webkit-line-clamp: 2;
+  }
+  &.clamp-3 {
+    -webkit-line-clamp: 3;
+  }
+  &.clamp-4 {
+    -webkit-line-clamp: 4;
+  }
+  &.clamp-5 {
+    -webkit-line-clamp: 5;
+  }
+
+  /* Hack to make clamp work on Safari */
+  & > a.tag {
+    margin-right: 0 !important;
+  }
 }
 
 /* Inspired by https://getbootstrap.com/docs/5.3/helpers/stretched-link/ */

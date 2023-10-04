@@ -68,7 +68,9 @@ class ListingLayout {
 					{pagination && <Pagination pagination={pagination} />}
 					<div class="columns is-multiline">
 						{resources.map((resource) => {
-							return <ResourceCard resource={resource} />;
+							return (
+								<ResourceCard resource={resource} includeContentType={false} />
+							);
 						})}
 					</div>
 					{pagination && <Pagination pagination={pagination} />}

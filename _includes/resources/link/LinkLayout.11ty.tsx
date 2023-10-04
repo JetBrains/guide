@@ -48,7 +48,7 @@ export function LinkLayout(
 
 							<p>
 								<a href={link.linkURL} class="link-external">
-									Visit original page
+									View at original site
 								</a>
 								{(link.screenshot || link.video || content) && <hr />}
 							</p>

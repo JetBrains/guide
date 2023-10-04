@@ -101,7 +101,8 @@ class GameDevHomepage {
 						anchor={"learn-unity"}
 						resources={unityTutorials}
 						includeCardFooter={false}
-						separator={false}
+						separator={true}
+						includeContentType={true}
 					/>
 				)}
 
@@ -112,12 +113,13 @@ class GameDevHomepage {
 						resources={unrealTutorials}
 						includeCardFooter={false}
 						separator={true}
+						includeContentType={true}
 					/>
 				)}
 
 				{tips && (
 					<ListingSection
-						title={`Recent tips`}
+						title={`Latest tips`}
 						resources={tips}
 						moreLink={`${channel.url}tips/`}
 						separator={false}
