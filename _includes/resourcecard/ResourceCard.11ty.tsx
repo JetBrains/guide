@@ -157,20 +157,20 @@ const ResourceCard = ({
 							<p className="subtitle is-size-7 is-uppercase">{contentType}</p>
 						)}
 						<a
-							class="title is-size-5 is-stretched-link clamp-2 mb-1"
+							class="title is-size-5 is-stretched-link clamp clamp-2 mb-1"
 							aria-label={`Resource`}
 							href={url}
 						>
 							{title}
 						</a>
 						{subtitle && !compactMode && (
-							<div class="content clamp-5">{subtitle}</div>
+							<div class="content clamp clamp-5">{subtitle}</div>
 						)}
 					</div>
 					{includeCardFooter && !compactMode && (
 						<footer class="card-footer">
 							<div class="container p-4">
-								<div class="tags mb-2 clamp-1">
+								<div class="tags mb-2 clamp clamp-1">
 									{topics.map((topic: Topic) => (
 										<TopicTag topic={topic} />
 									))}
@@ -226,7 +226,9 @@ const ResourceCard = ({
 									>
 										{title}
 									</a>
-									{subtitle && <div class="content clamp-3">{subtitle}</div>}
+									{subtitle && (
+										<div class="content clamp clamp-3">{subtitle}</div>
+									)}
 								</div>
 
 								{includeCardFooter && (
