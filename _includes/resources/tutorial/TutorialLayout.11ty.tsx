@@ -1,13 +1,11 @@
 import h, { JSX } from "vhtml";
 import { Tutorial, TutorialFrontmatter } from "./TutorialModels";
 import { LayoutContext, LayoutProps } from "../../../src/models";
-import ResourceCard, {
-	ResourceCardOrientation,
-} from "../../resourcecard/ResourceCard.11ty";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
+import HorizontalResourceCard from "../../resourcecard/HorizontalResourceCard.11ty";
 
 export type TutorialLayoutData = LayoutProps & TutorialFrontmatter;
 
@@ -41,10 +39,7 @@ export function TutorialLayout(
 	const listing = (
 		<>
 			{tutorial.tutorialSteps.map((resource) => (
-				<ResourceCard
-					resource={resource}
-					orientation={ResourceCardOrientation.Landscape}
-				/>
+				<HorizontalResourceCard resource={resource} />
 			))}
 		</>
 	);
