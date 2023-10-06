@@ -163,7 +163,14 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 
 	getThumbnail(): string {
 		const defaultThumbnail = "/assets/jetbrains-simple.svg";
-		return <img src={defaultThumbnail} alt={this.title} />;
+		return (
+			<img
+				data-template-src="thumbnail"
+				data-template-alt="title"
+				src={defaultThumbnail}
+				alt={this.title}
+			/>
+		);
 	}
 }
 

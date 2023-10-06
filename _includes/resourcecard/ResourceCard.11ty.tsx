@@ -13,7 +13,7 @@ import {
 	TUTORIAL_STEP_RESOURCE,
 } from "../../src/resourceType";
 import { Link } from "../resources/link/LinkModels";
-import { AuthorIcon11ty, doesExist } from "./Utilities.11ty";
+import { AuthorIcon, doesExist } from "./Utilities.11ty";
 
 const glowColorHashRing = new ConsistentHash({
 	range: 100003,
@@ -118,7 +118,7 @@ const ResourceCard = ({
 				class={`card is-equal-height has-box-outline has-box-hover ${cardCssClass}`}
 			>
 				<div class="card-image">
-					<a href={url}>
+					<a href={url} data-template-href="url">
 						<figure
 							class={`image ${thumbnailFigureCss} ${glowCssClass}`}
 							dangerouslySetInnerHTML={{ __html: thumbnail }}
@@ -127,11 +127,18 @@ const ResourceCard = ({
 				</div>
 				<div class="card-content has-position-relative">
 					{contentType && includeContentType && !compactMode && (
-						<p className="subtitle is-size-7 is-uppercase">{contentType}</p>
+						<p
+							className="subtitle is-size-7 is-uppercase"
+							// TODO Paul remember this might be "Medium" etc. for Link
+							data-template="contentType" // TODO Paul this should be replaced in explore as well
+						>
+							{contentType}
+						</p>
 					)}
 					<a
 						class="title is-size-5 is-stretched-link clamp clamp-2 mb-1"
 						aria-label={`Resource`}
+						data-template="title"
 						href={url}
 					>
 						{title}
@@ -151,18 +158,28 @@ const ResourceCard = ({
 
 							<div class="media author">
 								<div class="p-2 media-left">
-									<a href={author.url}>
+									<a href={author.url} data-template-href="authorURL">
 										<figure class="image m-0 is-24x24">
-											<AuthorIcon11ty {...author} />
+											<AuthorIcon {...author} />
 										</figure>
 									</a>
 								</div>
 								<div class="media-content">
 									<div class="content is-size-7">
 										<p class="m-0">
-											<a href={author.url}>{author.title}</a>
+											<a
+												href={author.url}
+												data-template-href="authorURL"
+												data-template="author"
+											>
+												{author.title}
+											</a>
 										</p>
-										<time class="m-0 has-text-grey-dark" datetime={displayDate}>
+										<time
+											class="m-0 has-text-grey-dark"
+											datetime={displayDate}
+											data-template-datetime="datetime"
+										>
 											{displayDate}
 										</time>
 									</div>

@@ -67,6 +67,13 @@ export class Tip extends Resource<TIP_RESOURCE_TYPE> implements TipFrontmatter {
 		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);
 	}
 	getThumbnail(): string {
-		return <img src={this.thumbnail} alt={this.title} />;
+		return (
+			<img
+				data-template-src="thumbnail"
+				data-template-alt="title"
+				src={this.thumbnail}
+				alt={this.title}
+			/>
+		);
 	}
 }

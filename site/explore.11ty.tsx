@@ -6,42 +6,52 @@ import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
 import ListingSection from "../_includes/pageelements/ListingSection.11ty";
 import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
 
+// Happy DOM throws a DOMException for external script/css even though
+// we do the settings to suppress it. Vite catches the exception but
+// logs it. We can't handle the exception, and it pollutes the test output.
+// Let's detect if we're running in a test, then later, wrap the
+// <link> and <script> to suppress.
+const isNotTest = !(typeof window != "undefined" && !!(window as any).happyDOM);
+
 type ExploreMenuItem = {
 	href: string;
 	label: string;
 };
 
 type ExploreGroup = {
-	label?: string;
+	label: string;
+	facetGroup: string;
 	items: ExploreMenuItem[];
 };
 
 const exploreMenu: ExploreGroup[] = [
 	{
 		label: "Channels",
+		facetGroup: "channels",
 		items: [
 			{ href: "/remote/", label: "Remote Development" },
 			{ href: "/gamedev/", label: "Game Development" },
 			{ href: "/dotnet/", label: ".NET" },
-			{ href: "/goland/", label: "GoLand" },
-			{ href: "/idea/", label: "IntelliJ IDEA" },
-			{ href: "/pycharm/", label: "PyCharm" },
-			{ href: "/webstorm/", label: "WebStorm" },
+			{ href: "/go/", label: "Go" },
+			{ href: "/java/", label: "Java" },
+			{ href: "/python/", label: "Python" },
+			{ href: "/webjs/", label: "Web and JavaScript" },
 		],
 	},
 	{
-		items: [{ href: "/latest/", label: "Latest" }],
+		label: "Topics",
+		facetGroup: "topics",
+		items: [{ href: "/topics/", label: "Topics" }],
 	},
 	{
+		label: "Resources",
+		facetGroup: "resources",
 		items: [
 			{ href: "/articles/", label: "Articles" },
 			{ href: "/playlists/", label: "Playlists" },
 			{ href: "/tips/", label: "Tips" },
 			{ href: "/tutorials/", label: "Tutorials" },
 		],
-	},
-	{
-		items: [{ href: "/topics/", label: "Topics" }],
 	},
 ];
 
@@ -63,14 +73,13 @@ class ExplorePage {
 			limit: 12,
 		});
 
-		// const channels = [
-		// 	this.getResource("/remote/"),
-		// 	this.getResource("/gamedev/"),
-		// 	this.getResource("/dotnet/"),
-		// ];
-
 		const dummyChannel = this.getResource("/remote/");
-		const resourceCard = <ResourceCard resource={dummyChannel} />;
+		const resourceCard = (
+			<ResourceCard
+				resource={dummyChannel}
+				columnClassName={"is-half-tablet is-one-third-desktop"}
+			/>
+		);
 		return (
 			<BaseLayout {...data}>
 				<div class="section">
@@ -97,14 +106,7 @@ class ExplorePage {
 									</div>
 								</div>
 
-								<div class="columns is-multiline">
-									<div id="listing"></div>
-									{/*{channels.map((channel) => {*/}
-									{/*	return (*/}
-									{/*		<ResourceCard compactMode={true} resource={channel} />*/}
-									{/*	);*/}
-									{/*})}*/}
-								</div>
+								<div class="columns is-multiline" id="listing"></div>
 
 								<ListingSection
 									title="Latest content"
@@ -118,9 +120,14 @@ class ExplorePage {
 								<aside class="menu" id="facetMenu">
 									{exploreMenu.map((menuGroup) => {
 										return (
-											<>
+											<div data-facet-group={menuGroup.facetGroup}>
 												{menuGroup.label && (
-													<p class="menu-label">{menuGroup.label}</p>
+													<p
+														class="menu-label"
+														title={`${menuGroup.label} Group`}
+													>
+														{menuGroup.label}
+													</p>
 												)}
 												<ul class="menu-list" data-facet-group="ecosystems">
 													{menuGroup.items.map((item) => (
@@ -131,10 +138,10 @@ class ExplorePage {
 														</li>
 													))}
 												</ul>
-											</>
+											</div>
 										);
 									})}
-									<template id="cardTemplate">${resourceCard}</template>
+									<template id="cardTemplate">{resourceCard}</template>
 								</aside>
 
 								<aside class="menu">
@@ -196,7 +203,11 @@ class ExplorePage {
 						</div>
 					</div>
 				</div>
-				<script type="module" src="/assets/js/evm.js" async></script>
+				{isNotTest ? (
+					<script type="module" src="/assets/js/evm.js" async></script>
+				) : (
+					<></>
+				)}
 			</BaseLayout>
 		);
 	}

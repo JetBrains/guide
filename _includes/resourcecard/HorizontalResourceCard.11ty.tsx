@@ -2,7 +2,7 @@ import h, { JSX } from "vhtml";
 import { Resource } from "../../src/ResourceModels";
 import { Topic } from "../resources/topic/TopicModels";
 import TopicTag from "../resources/topic/TopicTag.11ty";
-import { AuthorIcon11ty, doesExist } from "./Utilities.11ty";
+import { AuthorIcon, doesExist } from "./Utilities.11ty";
 
 export type HorizontalResourceCardProps = {
 	resource: Resource;
@@ -59,7 +59,7 @@ const HorizontalResourceCard = ({
 											<div class="p-2 media-left">
 												<a href={author.url}>
 													<figure class="image m-0 is-24x24">
-														<AuthorIcon11ty {...author} />
+														<AuthorIcon {...author} />
 													</figure>
 												</a>
 											</div>

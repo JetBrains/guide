@@ -2,7 +2,7 @@ import h, { JSX } from "vhtml";
 import { Resource } from "../../../src/ResourceModels";
 import { Author } from "../author/AuthorModels";
 
-import { AuthorIcon11ty } from "../../resourcecard/Utilities.11ty";
+import { AuthorIcon } from "../../resourcecard/Utilities.11ty";
 
 export type ArticleAuthorProps = {
 	author: Author | Resource;
@@ -19,7 +19,7 @@ const ArticleTitleSubtitle = ({
 				<div class="p-2 is-32x32 media-left">
 					<a href={author.url}>
 						<figure class="image is-32x32 m-0">
-							<AuthorIcon11ty {...author} />
+							<AuthorIcon {...author} />
 						</figure>
 					</a>
 				</div>

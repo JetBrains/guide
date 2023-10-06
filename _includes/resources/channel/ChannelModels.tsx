@@ -68,7 +68,14 @@ export class Channel
 
 	getThumbnail(): string {
 		if (this.logo) {
-			return <img src={this.logo} alt={this.title} />;
+			return (
+				<img
+					data-template-src="thumbnail"
+					data-template-alt="title"
+					src={this.logo}
+					alt={this.title}
+				/>
+			);
 		} else {
 			return <i class={`${this.icon} has-text-${this.accent} fa-5x`} />;
 		}
@@ -76,7 +83,14 @@ export class Channel
 
 	getBoxThumbnail(): string {
 		if (this.logo) {
-			return <img src={this.logo} alt={this.title} />;
+			return (
+				<img
+					data-template-src="thumbnail"
+					data-template-alt="title"
+					src={this.logo}
+					alt={this.title}
+				/>
+			);
 		} else {
 			return <i class={`${this.icon} has-text-${this.accent} fa-2x`} />;
 		}

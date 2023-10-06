@@ -1,23 +1,4 @@
-export function renderCards(document, jsonResources) {
-	// Define the fields to merge
-	const FIELDS = ["title"];
-
-	const template = document.querySelector("#resourceCard");
-	const target = document.querySelector("#output");
-	let clone, thisField;
-	jsonResources.forEach(resource => {
-		clone = template.content.cloneNode(true);
-		FIELDS.forEach(field => {
-			thisField = clone.querySelector(`[data-template="${field}"]`);
-			thisField.textContent = resource.title;
-		});
-		target.appendChild(clone);
-	});
-}
-
 export class ExploreViewModel {
-	// Define the fields to merge
-	mergeFields = ["title"];
 
 	constructor(templateNode, facetMenuNode, listingNode, lunrResources) {
 		this.templateNode = templateNode;
@@ -27,10 +8,13 @@ export class ExploreViewModel {
 
 		// Some checks to ensure the markup matches the contract
 		if (!facetMenuNode.querySelector(`div[data-facet-group="channels"]`)) {
-			throw new Error(`Missing facet group "channels"`)
+			throw new Error(`Missing facet group "channels"`);
 		}
 		if (!facetMenuNode.querySelector(`div[data-facet-group="topics"]`)) {
-			throw new Error(`Missing facet group "topics"`)
+			throw new Error(`Missing facet group "topics"`);
+		}
+		if (!facetMenuNode.querySelector(`div[data-facet-group="resources"]`)) {
+			throw new Error(`Missing facet group "resources"`);
 		}
 
 		// Set click handler for the whole menu
@@ -44,14 +28,15 @@ export class ExploreViewModel {
 		const facetGroups = this.facetMenuNode.querySelectorAll("div[data-facet-group]");
 		const results = {
 			channels: [],
-			topics: []
+			topics: [],
+			resources: []
 		};
 		let facetGroupKey, selections;
 		facetGroups.forEach(fg => {
-			facetGroupKey = fg.dataset["facet-group"];
+			facetGroupKey = fg.dataset.facetGroup;
 			// Get the selected items
-			selections = fg.querySelectorAll("a.selected");
-			results[facetGroupKey] = selections.map(a => a.dataset["facet-value"]);
+			selections = fg.querySelectorAll("a.is-active");
+			results[facetGroupKey] = Array.from(selections).map(a => a.dataset.facetValue);
 		});
 		return results;
 	}
@@ -59,10 +44,10 @@ export class ExploreViewModel {
 	handleClick(event) {
 		event.preventDefault();
 		const target = event.target;
-		if (target.classList.contains("selected")) {
-			target.classList.remove("selected");
+		if (target.classList.contains("is-active")) {
+			target.classList.remove("is-active");
 		} else {
-			target.classList.add("selected");
+			target.classList.add("is-active");
 		}
 
 		// Get the currently-selected facets
@@ -76,10 +61,13 @@ export class ExploreViewModel {
 	}
 
 	filterResources(selectedFacets) {
-		const { channels, topics } = selectedFacets;
+		const { channels, resources, topics } = selectedFacets;
 
 		return this.lunrResources.filter(resource => {
 			if (channels.length && !channels.includes(resource.channel)) {
+				return false;
+			}
+			if (resources.length && !resources.includes(resource.resourceType)) {
 				return false;
 			}
 			if (topics.length) {
@@ -94,24 +82,54 @@ export class ExploreViewModel {
 
 	renderCards(filteredResources) {
 		let clone, thisField;
+		let results = [];
+		this.listingNode.replaceChildren();
 		filteredResources.forEach(resource => {
 			clone = this.templateNode.content.cloneNode(true);
-			this.mergeFields.forEach(field => {
-				thisField = clone.querySelector(`[data-template="${field}"]`);
-				thisField.textContent = resource.title;
+			// const mergeNodes = clone.querySelectorAll("*");
+			const merges = [...clone.querySelectorAll("*")]
+				.map(t => [...t.attributes])
+				.reduce((curr, value) => curr.concat(value))
+				.filter(({ name }) => name.startsWith("data-template"))
+				.map(attr => {
+					return {
+						operation: attr.name.split("data-template")[1].slice(1),
+						value: attr.value,
+						node: attr.ownerElement
+					};
+				});
+			merges.forEach(merge => {
+				const { operation, value, node } = merge;
+				if (operation === "") {
+					// Special case, no "suffix", means change the text content
+					node.textContent = resource[value];
+				} else {
+					node.setAttribute(operation, resource[value]);
+					if (operation === "src") {
+						console.log(operation, value, resource[value])
+					}
+				}
 			});
 			this.listingNode.appendChild(clone);
 		});
 	}
 }
 
+// We are in a browser, not in a test. Go get the lunr JSON, and wire up the class.
 if (!window.happyDOM) {
-	// We are in a browser, not in a test. Go get the lunr JSON, and wire up the class.
-	const jsonUrl = new URL("/lunr_index.json", import.meta.url).href;
-	const response = await fetch(jsonUrl);
-	const jsonResources = await response.json();
 	const templateNode = document.querySelector("#cardTemplate");
 	const facetNode = document.querySelector("#facetMenu");
 	const listingNode = document.querySelector("#listing");
-	new ExploreViewModel(templateNode, facetNode, listingNode, jsonResources.results);
+	const jsonURL = new URL("/lunr.json", import.meta.url).href;
+	fetch(jsonURL).then(response => {
+		const jsonResources = response.json();
+		jsonResources.then(rj => {
+			new ExploreViewModel(templateNode, facetNode, listingNode, rj.results);
+		});
+	});
 }
+
+// TODO
+// Standardize a resource card to avoid whackiness e.g. glow
+// Figure out logo thumbnail for Channel models (logo -> thumbnail)
+
