@@ -14,7 +14,7 @@ import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
 const isNotTest = !(typeof window != "undefined" && !!(window as any).happyDOM);
 
 type ExploreMenuItem = {
-	href: string;
+	value: string;
 	label: string;
 };
 
@@ -29,28 +29,37 @@ const exploreMenu: ExploreGroup[] = [
 		label: "Channels",
 		facetGroup: "channels",
 		items: [
-			{ href: "/remote/", label: "Remote Development" },
-			{ href: "/gamedev/", label: "Game Development" },
-			{ href: "/dotnet/", label: ".NET" },
-			{ href: "/go/", label: "Go" },
-			{ href: "/java/", label: "Java" },
-			{ href: "/python/", label: "Python" },
-			{ href: "/webjs/", label: "Web and JavaScript" },
+			{ value: "/remote/", label: "Remote Development" },
+			{ value: "/gamedev/", label: "Game Development" },
+			{ value: "/dotnet/", label: ".NET" },
+			{ value: "/go/", label: "Go" },
+			{ value: "/java/", label: "Java" },
+			{ value: "/python/", label: "Python" },
+			{ value: "/webjs/", label: "Web and JavaScript" },
 		],
 	},
 	{
-		label: "Topics",
+		label: "Top Topics",
 		facetGroup: "topics",
-		items: [{ href: "/topics/", label: "Topics" }],
+		items: [
+			{ value: "aws", label: "AWS" },
+			{ value: "debugging", label: "Debugging" },
+			{ value: "git", label: "Git" },
+			{ value: "ide", label: "IDE" },
+			{ value: "security", label: "Security" },
+			{ value: "tricks", label: "Tricks" },
+			{ value: "typescript", label: "TypeScript" },
+			{ value: "web", label: "Web" },
+		],
 	},
 	{
 		label: "Resources",
 		facetGroup: "resources",
 		items: [
-			{ href: "/articles/", label: "Articles" },
-			{ href: "/playlists/", label: "Playlists" },
-			{ href: "/tips/", label: "Tips" },
-			{ href: "/tutorials/", label: "Tutorials" },
+			{ value: "article", label: "Articles" },
+			{ value: "playlist", label: "Playlists" },
+			{ value: "tip", label: "Tips" },
+			{ value: "tutorial", label: "Tutorials" },
 		],
 	},
 ];
@@ -89,30 +98,31 @@ class ExplorePage {
 								<div class="columns">
 									<div class="column is-four-fifths mb-5 mr-auto">
 										<h2 class="title mb-6 is-size-1 is-size-3-mobile has-text-weight-bold">
-											Explore our channels
+											Explore the JetBrains Guide
 										</h2>
 										<p class="subtitle has-text-grey">
 											Looking to learn something new, or refresh your existing
 											skills?
 										</p>
 									</div>
-									<div class="column has-text-right">
-										<a
-											class="button is-rounded is-outlined"
-											href={`/channels/`}
-										>
-											More...
-										</a>
-									</div>
 								</div>
-
-								<div class="columns is-multiline" id="listing"></div>
-
+								<div
+									style="display: none"
+									class="columns is-multiline"
+									id="listing"
+								></div>
+								<div
+									style="display: none"
+									class="columns is-multiline"
+									id="listing-no-results"
+								></div>
 								<ListingSection
 									title="Latest content"
 									resources={latestContent}
 									moreLink="/latest/"
 									isSection={false}
+									includeContentType={true}
+									anchor="latest-content"
 								/>
 							</div>
 
@@ -120,84 +130,34 @@ class ExplorePage {
 								<aside class="menu" id="facetMenu">
 									{exploreMenu.map((menuGroup) => {
 										return (
-											<div data-facet-group={menuGroup.facetGroup}>
+											<>
 												{menuGroup.label && (
 													<p
-														class="menu-label"
 														title={`${menuGroup.label} Group`}
+														class="menu-label"
 													>
 														{menuGroup.label}
 													</p>
 												)}
-												<ul class="menu-list" data-facet-group="ecosystems">
+												<ul
+													class="menu-list"
+													data-facet-group={menuGroup.facetGroup}
+												>
 													{menuGroup.items.map((item) => (
 														<li>
-															<a href="#" data-facet-value={item.href}>
-																{item.label}
+															<a>
+																<label class="checkbox">
+																	<input type="checkbox" value={item.value} />{" "}
+																	{item.label}
+																</label>
 															</a>
 														</li>
 													))}
 												</ul>
-											</div>
+											</>
 										);
 									})}
 									<template id="cardTemplate">{resourceCard}</template>
-								</aside>
-
-								<aside class="menu">
-									<p class="menu-label">Channels</p>
-									<ul class="menu-list">
-										<li>
-											<a href="/remote/">Remote Development</a>
-										</li>
-										<li>
-											<li>
-												<a href="/gamedev/">Game Development</a>
-											</li>
-											<a href="/dotnet/">.NET</a>
-										</li>
-										<li>
-											<a href="/goland/">GoLand</a>
-										</li>
-										<li>
-											<a href="/idea/">IntelliJ IDEA</a>
-										</li>
-										<li>
-											<a href="/pycharm/">PyCharm</a>
-										</li>
-										<li>
-											<a href="/webstorm/">WebStorm</a>
-										</li>
-									</ul>
-
-									<p class="menu-label">What's new?</p>
-									<ul class="menu-list">
-										<li>
-											<a href="/latest/">Latest</a>
-										</li>
-									</ul>
-
-									<p class="menu-label">Content</p>
-									<ul class="menu-list">
-										<li>
-											<a href="/authors/">Authors</a>
-										</li>
-										<li>
-											<a href="/channels/">Channels</a>
-										</li>
-										<li>
-											<a href="/playlists/">Playlists</a>
-										</li>
-										<li>
-											<a href="/tips/">Tips</a>
-										</li>
-										<li>
-											<a href="/topics/">Topics</a>
-										</li>
-										<li>
-											<a href="/tutorials/">Tutorials</a>
-										</li>
-									</ul>
 								</aside>
 							</div>
 						</div>

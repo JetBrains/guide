@@ -1,63 +1,75 @@
 export class ExploreViewModel {
 
-	constructor(templateNode, facetMenuNode, listingNode, lunrResources) {
+	constructor(templateNode, facetMenuNode, listingNode, lunrResources, latestContent, noResults) {
 		this.templateNode = templateNode;
 		this.facetMenuNode = facetMenuNode;
 		this.listingNode = listingNode;
 		this.lunrResources = lunrResources;
+		this.latestContent = latestContent;
+		this.noResults = noResults;
 
 		// Some checks to ensure the markup matches the contract
-		if (!facetMenuNode.querySelector(`div[data-facet-group="channels"]`)) {
+		if (!facetMenuNode.querySelector(`[data-facet-group="channels"]`)) {
 			throw new Error(`Missing facet group "channels"`);
 		}
-		if (!facetMenuNode.querySelector(`div[data-facet-group="topics"]`)) {
+		if (!facetMenuNode.querySelector(`[data-facet-group="topics"]`)) {
 			throw new Error(`Missing facet group "topics"`);
 		}
-		if (!facetMenuNode.querySelector(`div[data-facet-group="resources"]`)) {
+		if (!facetMenuNode.querySelector(`[data-facet-group="resources"]`)) {
 			throw new Error(`Missing facet group "resources"`);
 		}
 
 		// Set click handler for the whole menu
-		this.facetMenuNode.addEventListener("click", (evt) => {
-			this.handleClick(evt);
+		this.facetMenuNode.addEventListener("change", (evt) => {
+			this.handleSelection(evt);
 		});
 
 	}
 
 	getSelectedFacets() {
-		const facetGroups = this.facetMenuNode.querySelectorAll("div[data-facet-group]");
+		const facetGroups = this.facetMenuNode.querySelectorAll("[data-facet-group]");
 		const results = {
 			channels: [],
 			topics: [],
 			resources: []
 		};
 		let facetGroupKey, selections;
+		let resultCounts = 0;
 		facetGroups.forEach(fg => {
 			facetGroupKey = fg.dataset.facetGroup;
 			// Get the selected items
-			selections = fg.querySelectorAll("a.is-active");
-			results[facetGroupKey] = Array.from(selections).map(a => a.dataset.facetValue);
+			selections = fg.querySelectorAll("input:checked");
+			results[facetGroupKey] = Array.from(selections).map(input => input.value);
+			resultCounts += results[facetGroupKey].length;
 		});
-		return results;
+		return resultCounts > 0 ? results : null;
 	}
 
-	handleClick(event) {
-		event.preventDefault();
-		const target = event.target;
-		if (target.classList.contains("is-active")) {
-			target.classList.remove("is-active");
-		} else {
-			target.classList.add("is-active");
-		}
+	handleSelection(event) {
+		// Turn off the 3 boxes, then turn on the used one.
+		this.listingNode.style.display = "none";
+		this.latestContent.style.display = "none";
 
 		// Get the currently-selected facets
 		const selectedFacets = this.getSelectedFacets();
+		if (selectedFacets == null) {
+			// No facets selected, restore the default listing
+			this.latestContent.style.display = "block";
+			return;
+		}
 
 		// Filter the list of resources
 		const selectedResources = this.filterResources(selectedFacets);
+		if (selectedResources.length > 0) {
+			this.listingNode.style.display = "block";
+			// Re-render
+			this.renderCards(selectedResources);
+			return;
+		}
 
-		// Re-render
-		this.renderCards(selectedResources);
+		// We have selected facets, but there were no results. Show
+		// the no results box.
+		this.noResults.style.display = "block";
 	}
 
 	filterResources(selectedFacets) {
@@ -106,7 +118,7 @@ export class ExploreViewModel {
 				} else {
 					node.setAttribute(operation, resource[value]);
 					if (operation === "src") {
-						console.log(operation, value, resource[value])
+						console.log(operation, value, resource[value]);
 					}
 				}
 			});
@@ -120,11 +132,13 @@ if (!window.happyDOM) {
 	const templateNode = document.querySelector("#cardTemplate");
 	const facetNode = document.querySelector("#facetMenu");
 	const listingNode = document.querySelector("#listing");
+	const latestContent = document.querySelector("#latest-content");
+	const noResults = document.querySelector("#listing-no-results");
 	const jsonURL = new URL("/lunr.json", import.meta.url).href;
 	fetch(jsonURL).then(response => {
 		const jsonResources = response.json();
 		jsonResources.then(rj => {
-			new ExploreViewModel(templateNode, facetNode, listingNode, rj.results);
+			new ExploreViewModel(templateNode, facetNode, listingNode, rj.results, latestContent, noResults);
 		});
 	});
 }
