@@ -115,7 +115,18 @@ class ExplorePage {
 									style="display: none"
 									class="columns is-multiline"
 									id="listing-no-results"
-								></div>
+								>
+									<div className="columns is-vcentered is-mobile">
+										<div className="column">
+											<h2 className="mt-2 mb-4 is-size-1 has-text-weight-bold">
+												No matching content
+											</h2>
+											<p className="subtitle has-text-grey mb-5">
+												Please try refining your filters.
+											</p>
+										</div>
+									</div>
+								</div>
 								<ListingSection
 									title="Latest content"
 									resources={latestContent}
@@ -145,12 +156,10 @@ class ExplorePage {
 												>
 													{menuGroup.items.map((item) => (
 														<li>
-															<a>
-																<label class="checkbox">
-																	<input type="checkbox" value={item.value} />{" "}
-																	{item.label}
-																</label>
-															</a>
+															<label class="checkbox">
+																<input type="checkbox" value={item.value} />{" "}
+																{item.label}
+															</label>
 														</li>
 													))}
 												</ul>

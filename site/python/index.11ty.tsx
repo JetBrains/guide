@@ -18,6 +18,7 @@ const frontmatter: ChannelFrontmatter = {
 	accent: "primary",
 	icon: "fa-brands fa-python",
 	hero: "/assets/pycharm_splash.svg",
+	logo: "thumbnail.png",
 	subnav: [
 		{ title: "Download", url: "https://www.jetbrains.com/pycharm/" },
 		{ title: "Blog", url: "https://blog.jetbrains.com/pycharm/" },

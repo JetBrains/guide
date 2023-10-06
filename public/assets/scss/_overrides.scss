@@ -199,3 +199,16 @@ a.link-external:after {
 .has-text-shadow {
   text-shadow: 2px 2px 4px black;
 }
+
+#facetMenu label {
+  border-radius: 2px;
+  color: #474749;
+  display: block;
+  padding: 0.5em 0.75em;
+}
+
+#facetMenu label:hover {
+  background-color: $grey-light;
+}
+
+

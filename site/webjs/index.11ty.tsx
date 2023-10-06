@@ -20,6 +20,7 @@ const frontmatter: ChannelFrontmatter = {
 	accent: "primary",
 	icon: "fa-brands fa-js",
 	hero: "/assets/webstorm-beam.svg",
+	logo: "thumbnail.png",
 	subnav: [
 		{ title: "Download", url: "https://www.jetbrains.com/webstorm/" },
 		{ title: "Blog", url: "https://blog.jetbrains.com/webstorm/" },

@@ -49,19 +49,20 @@ export class ExploreViewModel {
 		// Turn off the 3 boxes, then turn on the used one.
 		this.listingNode.style.display = "none";
 		this.latestContent.style.display = "none";
+		this.noResults.style.display = "none";
 
 		// Get the currently-selected facets
 		const selectedFacets = this.getSelectedFacets();
 		if (selectedFacets == null) {
 			// No facets selected, restore the default listing
-			this.latestContent.style.display = "block";
+			this.latestContent.style.display = "";
 			return;
 		}
 
 		// Filter the list of resources
 		const selectedResources = this.filterResources(selectedFacets);
 		if (selectedResources.length > 0) {
-			this.listingNode.style.display = "block";
+			this.listingNode.style.display = "";
 			// Re-render
 			this.renderCards(selectedResources);
 			return;
@@ -69,7 +70,7 @@ export class ExploreViewModel {
 
 		// We have selected facets, but there were no results. Show
 		// the no results box.
-		this.noResults.style.display = "block";
+		this.noResults.style.display = "";
 	}
 
 	filterResources(selectedFacets) {
@@ -85,7 +86,7 @@ export class ExploreViewModel {
 			if (topics.length) {
 				// Get intersection of selected topics and this resource's
 				// topics array. If there is any overlap, it's true.
-				return topics.filter(topic => resource.topics.includes(topic)).length > 0;
+				return topics.filter(topic => resource.topics?.includes(topic)).length > 0;
 			}
 
 			return true;
@@ -117,9 +118,6 @@ export class ExploreViewModel {
 					node.textContent = resource[value];
 				} else {
 					node.setAttribute(operation, resource[value]);
-					if (operation === "src") {
-						console.log(operation, value, resource[value]);
-					}
 				}
 			});
 			this.listingNode.appendChild(clone);
