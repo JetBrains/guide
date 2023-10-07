@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { LunrLayout } from "./lunr.11ty";
+import { LunrBase } from "./lunr.11ty";
 import { baseRenderData } from "./fixtures";
 import { LayoutProps } from "../src/models";
 
@@ -14,17 +14,13 @@ const data: LayoutProps = {
 
 test("can generate lunr.json", () => {
 	// @ts-ignore
-	const result = LunrLayout(data);
-	const json = JSON.parse(result);
-
-	expect(json.results.length).to.be.greaterThan(0);
+	const lb = new LunrBase();
+	const results = lb.getRecords(data.collections, "/somepath/");
+	expect(results.length).to.be.greaterThan(0);
 });
 
 test("can generate lunr.json with path prefix", () => {
-	data.commandLineArgs.pathprefix = "/pycharm/guide";
-	// @ts-ignore
-	const result = LunrLayout(data);
-	const json = JSON.parse(result);
-
-	expect(json.results[0].url).to.contain(data.commandLineArgs.pathprefix);
+	const lb = new LunrBase();
+	const results = lb.getRecords(data.collections, "/somepath/");
+	expect(results[0].url).to.equal("/somepath/tips/some-tip/");
 });

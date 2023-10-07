@@ -1,14 +1,13 @@
 import path from "upath";
 import { ChannelHomepageData } from "./resources/channel/ChannelModels";
+import { SiteCollections } from "./models";
 
 export class LunrBase {
 	data() {
 		return {};
 	}
 
-	getRecords(data: ChannelHomepageData) {
-		const { collections, commandLineArgs } = data;
-		const { pathprefix } = commandLineArgs;
+	getRecords(collections: SiteCollections, pathprefix: string | undefined) {
 		return Array.from(collections.resourceMap.values()).map((value) => {
 			const url = pathprefix ? path.join(pathprefix, value.url) : value.url;
 			const authorURL = pathprefix

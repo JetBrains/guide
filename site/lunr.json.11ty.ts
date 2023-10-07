@@ -12,7 +12,9 @@ class LunrJson extends LunrBase {
 	}
 
 	render(data: ReferenceLayoutProps) {
-		const results = this.getRecords(data);
+		const { collections, commandLineArgs } = data;
+		const { pathprefix } = commandLineArgs;
+		const results = this.getRecords(collections, pathprefix);
 		return JSON.stringify({ results });
 	}
 }

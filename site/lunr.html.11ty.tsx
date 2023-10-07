@@ -13,7 +13,9 @@ class LunrHtml extends LunrBase {
 	}
 
 	render(data: ReferenceLayoutProps): JSX.Element {
-		const records = this.getRecords(data);
+		const { collections, commandLineArgs } = data;
+		const { pathprefix } = commandLineArgs;
+		const records = this.getRecords(collections, pathprefix);
 		return (
 			<div>
 				{records.map((record) => (
