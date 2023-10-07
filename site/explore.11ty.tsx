@@ -112,13 +112,13 @@ class ExplorePage {
 									id="listing"
 								></div>
 								<div
+									class="container"
 									style="display: none"
-									class="columns is-multiline"
 									id="listing-no-results"
 								>
-									<div className="columns is-vcentered is-mobile">
-										<div className="column">
-											<h2 className="mt-2 mb-4 is-size-1 has-text-weight-bold">
+									<div class="columns is-vcentered is-mobile">
+										<div class="column">
+											<h2 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
 												No matching content
 											</h2>
 											<p className="subtitle has-text-grey mb-5">
