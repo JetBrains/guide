@@ -43,6 +43,8 @@ module.exports = function (eleventyConfig) {
 									/tag/,
 									/is-warning/,
 									/is-pulled-right/,
+									/has-glow.*/,
+									/has-gradient.*/,
 								],
 							},
 						}),
