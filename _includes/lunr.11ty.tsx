@@ -1,5 +1,4 @@
 import path from "upath";
-import { ChannelHomepageData } from "./resources/channel/ChannelModels";
 import { SiteCollections } from "./models";
 
 export class LunrBase {

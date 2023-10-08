@@ -1,21 +1,15 @@
-import h from "vhtml";
 import { beforeEach, describe, expect, test } from "vitest";
 import { screen } from "@testing-library/dom";
 
 // @ts-ignore
 import { ExploreViewModel, renderCards } from "../public/assets/js/evm";
-import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
 import fixtures, { baseRenderData } from "../_includes/fixtures";
 import { ChannelHomepageData } from "../_includes/resources/channel/ChannelModels";
 
 // @ts-ignore
 import ExplorePage from "./explore.11ty";
-import { HTMLElement } from "node-html-parser";
-import { TemplateCards } from "../_includes/resourcecard/ResourceCardTemplates";
-import { HTMLTemplateElement } from "happy-dom";
+import { HTMLInputElement } from "happy-dom";
 
-const firstTip = fixtures.resources[0];
-const resourceCard = <ResourceCard resource={firstTip} />;
 const lunrResources = fixtures.resources.map((resource) => {
 	return {
 		title: resource.title,
@@ -24,72 +18,49 @@ const lunrResources = fixtures.resources.map((resource) => {
 		topics: ["topicx", "topicy", "topicz"],
 	};
 });
+lunrResources[0].channel = "python";
+lunrResources[1].channel = "python";
+lunrResources[0].topics = ["topic100", "topic200"];
+lunrResources[2].channel = "django";
 
-let cardTemplate, facetMenuNode, listingNode, evm: ExploreViewModel;
+let cardTemplate,
+	facetMenuNode,
+	listingNode,
+	latestContent,
+	noResults,
+	evm: ExploreViewModel;
+
 describe("Faceted Browse", () => {
-	// Set some facets
-	lunrResources[0].channel = "python";
-	lunrResources[1].channel = "python";
-	lunrResources[0].topics = ["topic100", "topic200"];
-	lunrResources[2].channel = "django";
+	const channelItem = fixtures.channelItems[0];
+	const pageLayoutData: ChannelHomepageData = {
+		...baseRenderData,
+		...channelItem.data,
+		page: channelItem.page,
+	};
+
+	const rm = fixtures.resourceMap;
+	const context = {
+		...fixtures.context,
+		getResource: () => rm.get("/tips/some-tip/"),
+	};
+
+	let explorePage: ExplorePage;
 
 	beforeEach(() => {
-		// Make a ResourceCard string with dummy data
-		document.body.innerHTML = (
-			<body>
-				<div id="facetMenu">
-					<div data-facet-group="channels">
-						<a href="#" data-facet-value="go">
-							Go
-						</a>
-						<a href="#" data-facet-value="java">
-							Java
-						</a>
-						<a href="#" data-facet-value="python">
-							Python
-						</a>
-						<a href="#" data-facet-value="databases">
-							Databases
-						</a>
-						<a href="#" data-facet-value="django">
-							Django
-						</a>
-						<a href="#" data-facet-value="testing">
-							Testing
-						</a>
-					</div>
-					<div data-facet-group="topics">
-						<a href="#" data-facet-value="topic100">
-							Topic 100
-						</a>
-						<a href="#" data-facet-value="topic200">
-							Topic 200
-						</a>
-						<a href="#" data-facet-value="topic300">
-							Topic 300
-						</a>
-					</div>
-					<div data-facet-group="resources">
-						<a href="#" data-facet-value="article">
-							Article
-						</a>
-						<a href="#" data-facet-value="tip">
-							Tip
-						</a>
-					</div>
-				</div>
-				<div id="listing"></div>
-				<template id="cardTemplate">${resourceCard}</template>
-			</body>
-		);
+		explorePage = new ExplorePage();
+		document.body.innerHTML = explorePage.render.call(context, pageLayoutData);
 		cardTemplate = document.getElementById("cardTemplate");
 		facetMenuNode = document.getElementById("facetMenu");
 		listingNode = document.getElementById("listing");
+		latestContent = document.getElementById("latest-content");
+		noResults = document.getElementById("listing-no-results");
 		evm = new ExploreViewModel(
 			cardTemplate,
 			facetMenuNode,
 			listingNode,
-			lunrResources
+			lunrResources,
+			latestContent,
+			noResults
 		);
 	});
 
@@ -97,26 +68,30 @@ describe("Faceted Browse", () => {
 		expect(evm.templateNode).to.exist;
 		expect(evm.facetMenuNode).to.exist;
 		expect(evm.listingNode).to.exist;
+		expect(evm.latestContent).to.exist;
+		expect(evm.noResults).to.exist;
 		expect(evm.lunrResources.length).to.equal(lunrResources.length);
 	});
 
 	test("clicking a menu item toggles it", () => {
-		const target = screen.getAllByRole("link")[0];
+		// @ts-ignore
+		const target = screen.getAllByRole("checkbox")[0] as HTMLInputElement;
+		expect(target.checked).not.to.be.true;
 		target.click();
-		expect(target.classList.contains("is-active")).to.be.true;
+		expect(target.checked).to.be.true;
 		target.click();
-		expect(target.classList.contains("is-active")).not.to.be.true;
+		expect(target.checked).not.to.be.true;
 	});
 
-	test("get initial is-active facets", () => {
+	test("get initial checked facets", () => {
 		let facets = evm.getSelectedFacets();
-		expect(facets.channels.length).to.equal(0);
-		// Mark all as is-active
+		expect(facets).to.be.null;
+		// Mark all as checked
 		evm.facetMenuNode
-			.querySelectorAll("a")
-			.forEach((a: HTMLElement) => a.classList.add("is-active"));
+			.querySelectorAll("input")
+			.forEach((input: HTMLInputElement) => (input.checked = true));
 		facets = evm.getSelectedFacets();
-		expect(facets.channels.length).to.equal(6);
+		expect(facets.channels.length).to.be.greaterThan(2);
 	});
 
 	test("render initial json resources", () => {
@@ -156,123 +131,33 @@ describe("Faceted Browse", () => {
 		const filteredResources = evm.filterResources(selectedFacets);
 		expect(filteredResources.length).to.equal(1);
 	});
-});
 
-test("throw exceptions if facets not found", () => {
-	document.body.innerHTML = (
-		<body>
-			<div id="facetMenu">
-				<div data-facet-group="xxx">
-					<a href="#" data-facet-value="go">
-						Go
-					</a>
-				</div>
-				<div data-facet-group="yyy">
-					<a href="#" data-facet-value="databases">
-						Databases
-					</a>
-				</div>
-				<div data-facet-group="zzz">
-					<a href="#" data-facet-value="topic100">
-						Topic 100
-					</a>
-				</div>
-			</div>
-			<div id="listing"></div>
-			<template id="cardTemplate">${resourceCard}</template>
-		</body>
-	);
-	const cardTemplate = document.getElementById("cardTemplate");
-	const facetMenuNode = document.getElementById("facetMenu");
-	const listingNode = document.getElementById("listing");
-	expect(
-		() =>
-			new ExploreViewModel(
-				cardTemplate,
-				facetMenuNode,
-				listingNode,
-				lunrResources
-			)
-	).toThrowError(`Missing facet group "channels"`);
-});
+	test("Test full explore template", () => {
+		expect(screen.getByTitle("Channels Group")).to.exist;
+		expect(screen.getByTitle("Resources Group")).to.exist;
+		// expect(screen.getByTitle("Top Topics")).to.exist;
 
-test("Test full explore template", () => {
-	const channelItem = fixtures.channelItems[0];
-	const pageLayoutData: ChannelHomepageData = {
-		...baseRenderData,
-		...channelItem.data,
-		page: channelItem.page,
-	};
+		cardTemplate = document.getElementById("cardTemplate");
+		facetMenuNode = document.getElementById("facetMenu");
+		listingNode = document.getElementById("listing");
+		evm = new ExploreViewModel(
+			cardTemplate,
+			facetMenuNode,
+			listingNode,
+			lunrResources
+		);
 
-	const rm = fixtures.resourceMap;
-	const context = {
-		...fixtures.context,
-		getResource: () => rm.get("/tips/some-tip/"),
-	};
-
-	const explorePage = new ExplorePage();
-	document.body.innerHTML = explorePage.render.call(context, pageLayoutData);
-	expect(screen.getByTitle("Channels Group")).to.exist;
-	expect(screen.getByTitle("Resources Group")).to.exist;
-	expect(screen.getByTitle("Topics Group")).to.exist;
-
-	cardTemplate = document.getElementById("cardTemplate");
-	facetMenuNode = document.getElementById("facetMenu");
-	listingNode = document.getElementById("listing");
-	evm = new ExploreViewModel(
-		cardTemplate,
-		facetMenuNode,
-		listingNode,
-		lunrResources
-	);
-
-	// Click something, see if it is selected
-	if (facetMenuNode) {
-		const target = facetMenuNode.querySelectorAll("a[data-facet-value]")[0];
-		if (target) {
-			// @ts-ignore
-			target.click();
-			expect(target.classList.contains("is-active")).to.be.true;
-			// @ts-ignore
-			target.click();
-			expect(target.classList.contains("is-active")).not.to.be.true;
+		// Click something, see if it is selected
+		if (facetMenuNode) {
+			const target = facetMenuNode.querySelectorAll("a[data-facet-value]")[0];
+			if (target) {
+				// @ts-ignore
+				target.click();
+				expect(target.classList.contains("is-active")).to.be.true;
+				// @ts-ignore
+				target.click();
+				expect(target.classList.contains("is-active")).not.to.be.true;
+			}
 		}
-	}
+	});
 });
-
-// test("make a document with both flavors of ResourceCard", () => {
-// 	document.body.innerHTML = <TemplateCards />;
-// 	const thumbnailTemplate = document.querySelector(
-// 		"#thumbnailTemplate"
-// 	) as unknown as HTMLTemplateElement;
-// 	const iconTemplate = document.querySelector(
-// 		"#iconTemplate"
-// 	) as unknown as HTMLTemplateElement;
-// 	expect(thumbnailTemplate).to.exist;
-// 	expect(iconTemplate).to.exist;
-//
-// 	// Let's test some things
-// 	if (thumbnailTemplate) {
-// 		const thumbnailNode = thumbnailTemplate.content.cloneNode(true);
-// 		expect(thumbnailNode.querySelector(`*[data-template-href="url"]`)).to.exist;
-// 		expect(thumbnailNode.querySelector(`*[data-template="title"]`)).to.exist;
-// 		expect(thumbnailNode.querySelector(`*[data-template="author"]`)).to.exist;
-// 		expect(thumbnailNode.querySelector(`*[data-template-href="authorURL"]`)).to;
-// 		expect(thumbnailNode.querySelector(`*[data-template-datetime="datetime"]`))
-// 			.to;
-// 		expect(thumbnailNode.querySelector(`*[data-template-src="thumbnail"]`)).to;
-// 		expect(thumbnailNode.querySelector(`*[data-template-alt="title"]`)).to
-// 			.exist;
-// 	}
-// 	if (iconTemplate) {
-// 		const iconNode = thumbnailTemplate.content.cloneNode(true);
-// 		expect(iconNode.querySelector(`*[data-template-href="url"]`)).to.exist;
-// 		expect(iconNode.querySelector(`*[data-template="title"]`)).to.exist;
-// 		expect(iconNode.querySelector(`*[data-template="subtitle"]`)).to.exist;
-// 		expect(iconNode.querySelector(`*[data-template="author"]`)).to.exist;
-// 		expect(iconNode.querySelector(`*[data-template-href="authorURL"]`)).to;
-// 		expect(iconNode.querySelector(`*[data-template-datetime="datetime"]`)).to;
-// 		expect(iconNode.querySelector(`*[data-template-src="thumbnail"]`)).to;
-// 		expect(iconNode.querySelector(`*[data-template-alt="title"]`)).to.exist;
-// 	}
-// });

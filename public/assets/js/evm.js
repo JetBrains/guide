@@ -8,16 +8,6 @@ export class ExploreViewModel {
 		this.latestContent = latestContent;
 		this.noResults = noResults;
 
-		// Some checks to ensure the markup matches the contract
-		if (!facetMenuNode.querySelector(`[data-facet-group="channels"]`)) {
-			throw new Error(`Missing facet group "channels"`);
-		}
-		if (!facetMenuNode.querySelector(`[data-facet-group="topics"]`)) {
-			throw new Error(`Missing facet group "topics"`);
-		}
-		if (!facetMenuNode.querySelector(`[data-facet-group="resources"]`)) {
-			throw new Error(`Missing facet group "resources"`);
-		}
 
 		// Set click handler for the whole menu
 		this.facetMenuNode.addEventListener("change", (evt) => {
@@ -140,8 +130,3 @@ if (!window.happyDOM) {
 		});
 	});
 }
-
-// TODO
-// Standardize a resource card to avoid whackiness e.g. glow
-// Figure out logo thumbnail for Channel models (logo -> thumbnail)
-
