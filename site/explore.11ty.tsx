@@ -57,6 +57,7 @@ const exploreMenu: ExploreGroup[] = [
 		facetGroup: "resources",
 		items: [
 			{ value: "article", label: "Articles" },
+			{ value: "link", label: "Links" },
 			{ value: "playlist", label: "Playlists" },
 			{ value: "tip", label: "Tips" },
 			{ value: "tutorial", label: "Tutorials" },
