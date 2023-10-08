@@ -12,6 +12,9 @@ import { Topic } from "../_includes/resources/topic/TopicModels";
 
 import slugify from "@sindresorhus/slugify";
 
+// @ts-ignore
+import { getContentType } from "../public/assets/js/utils";
+
 export function getThumbnailPath(
 	dataThumbnail: string,
 	pageURL: string

@@ -1,3 +1,5 @@
+
+
 export class ExploreViewModel {
 
 	constructor(templateNode, facetMenuNode, listingNode, lunrResources, latestContent, noResults) {
