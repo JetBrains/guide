@@ -17,6 +17,7 @@ export function TopicLayout(
 	}
 
 	const linkedResources = this.getResources().filter(
+		// @ts-ignore
 		(ci) => ci.topics && ci.topics.includes(topic.label)
 	);
 
@@ -24,6 +25,7 @@ export function TopicLayout(
 	const listing = (
 		<>
 			{linkedResources.map((resource) => (
+				// @ts-ignore
 				<ResourceCard resource={resource}></ResourceCard>
 			))}
 		</>
@@ -40,4 +42,5 @@ export function TopicLayout(
 	);
 }
 
+// noinspection JSUnusedGlobalSymbols
 export const render = TopicLayout;

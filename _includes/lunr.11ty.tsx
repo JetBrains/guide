@@ -34,6 +34,11 @@ export class LunrBase {
 				// @ts-ignore
 				record.icon = value.icon;
 			}
+			// @ts-ignore
+			if (value.linkURL) {
+				// @ts-ignore
+				record.linkURL = value.linkURL;
+			}
 			return record;
 		});
 	}

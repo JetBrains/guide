@@ -15,9 +15,12 @@ export function getContentType(resourceType, linkURL) {
 		case "tutorialstep":
 			return "Part of tutorial";
 		case "link":
+			if (!linkURL) {
+				return "Link";
+			}
 			if (
-				linkURL.indexOf("youtube.com") >= 0 ||
-				linkURL.indexOf("youtu.be") >= 0
+				(linkURL.indexOf("youtube.com") >= 0 ||
+					linkURL.indexOf("youtu.be") >= 0)
 			) {
 				return "YouTube";
 			} else if (linkURL.indexOf("blog.jetbrains.com") >= 0) {

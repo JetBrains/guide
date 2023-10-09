@@ -1,3 +1,4 @@
+import { getContentType } from "./utils.js";
 
 
 export class ExploreViewModel {
@@ -105,7 +106,12 @@ export class ExploreViewModel {
 				});
 			merges.forEach(merge => {
 				const { operation, value, node } = merge;
-				if (operation === "") {
+				if (value === "contentType") {
+					// We need to call the function with logic for displaying the
+					// "content type"
+					node.textContent = getContentType(resource.resourceType, resource.linkURL);
+				}
+				else if (operation === "") {
 					// Special case, no "suffix", means change the text content
 					node.textContent = resource[value];
 				} else {

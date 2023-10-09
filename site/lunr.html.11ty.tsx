@@ -21,14 +21,20 @@ class LunrHtml extends LunrBase {
 				{records.map((record) => (
 					<div>
 						<pre>{JSON.stringify(record)}</pre>
-						{record.thumbnail && (
-							<img
-								alt={record.title}
-								src={record.thumbnail}
-								data-key="thumbnail"
-								data-path={record.thumbnail}
-							/>
-						)}
+
+						{
+							// @ts-ignore
+							record.thumbnail && (
+								<img
+									alt={record.title}
+									// @ts-ignore
+									src={record.thumbnail}
+									data-key="thumbnail"
+									// @ts-ignore
+									data-path={record.thumbnail}
+								/>
+							)
+						}
 						<img
 							alt={record.title}
 							src={record.authorThumbnail}
