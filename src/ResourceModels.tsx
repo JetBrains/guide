@@ -175,6 +175,10 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 			/>
 		);
 	}
+
+	describeContentType(): string {
+		return getContentType(this.resourceType);
+	}
 }
 
 export type ResourceMap = Map<string, Resource<RESOURCE_TYPES>>;

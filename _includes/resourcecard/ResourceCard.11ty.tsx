@@ -3,16 +3,7 @@ import ConsistentHash from "consistent-hash";
 import { Resource } from "../../src/ResourceModels";
 import { Topic } from "../resources/topic/TopicModels";
 import TopicTag from "../resources/topic/TopicTag.11ty";
-import {
-	ARTICLE_RESOURCE,
-	CHANNEL_RESOURCE,
-	LINK_RESOURCE,
-	PLAYLIST_RESOURCE,
-	TIP_RESOURCE,
-	TUTORIAL_RESOURCE,
-	TUTORIAL_STEP_RESOURCE,
-} from "../../src/resourceType";
-import { Link } from "../resources/link/LinkModels";
+import { CHANNEL_RESOURCE } from "../../src/resourceType";
 import { AuthorIcon, doesExist } from "./Utilities.11ty";
 
 const glowColorHashRing = new ConsistentHash({
@@ -36,42 +27,6 @@ export type ResourceCardProps = {
 	compactMode?: boolean;
 	includeContentType?: boolean;
 };
-
-function describeContentType(resourceType: string, resource: Resource) {
-	let contentType = "";
-	switch (resourceType) {
-		case TIP_RESOURCE:
-		case ARTICLE_RESOURCE:
-		case TUTORIAL_RESOURCE:
-		case PLAYLIST_RESOURCE:
-		case CHANNEL_RESOURCE:
-			contentType = resourceType;
-			break;
-		case TUTORIAL_STEP_RESOURCE:
-			contentType = "Part of tutorial";
-			break;
-		case LINK_RESOURCE:
-			contentType = resourceType;
-			const linkResource = resource as Link;
-			if (
-				linkResource.linkURL.indexOf("youtube.com") >= 0 ||
-				linkResource.linkURL.indexOf("youtu.be") >= 0
-			) {
-				contentType = "YouTube";
-			} else if (linkResource.linkURL.indexOf("blog.jetbrains.com") >= 0) {
-				contentType = "JetBrains Blog";
-			} else if (
-				linkResource.linkURL.indexOf("jetbrains.com") >= 0 &&
-				linkResource.linkURL.indexOf("help") >= 0
-			) {
-				contentType = "Documentation";
-			} else if (linkResource.linkURL.indexOf("medium.com") >= 0) {
-				contentType = "Medium";
-			}
-			break;
-	}
-	return contentType;
-}
 
 const ResourceCard = ({
 	resource: { resourceType, url, title, displayDate, subtitle, references },
@@ -110,7 +65,7 @@ const ResourceCard = ({
 	const cardCssClass = hasShadow ? "" : "is-shadowless";
 
 	// Content type
-	const contentType = describeContentType(resourceType, resource);
+	const contentType = resource.describeContentType();
 
 	return (
 		<div class={`column ${columnCssClass}`}>
