@@ -200,6 +200,11 @@ a.link-external:after {
   text-shadow: 2px 2px 4px black;
 }
 
+.card-image .is-16by9 {
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
 #facetMenu label {
   border-radius: 2px;
   color: #474749;
