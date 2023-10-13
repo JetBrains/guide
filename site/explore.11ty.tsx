@@ -157,7 +157,7 @@ class ExplorePage {
 												>
 													{menuGroup.items.map((item) => (
 														<li>
-															<label class="checkbox">
+															<label class="checkbox p-2">
 																<input type="checkbox" value={item.value} />{" "}
 																{item.label}
 															</label>
