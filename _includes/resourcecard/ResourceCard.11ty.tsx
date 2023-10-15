@@ -28,6 +28,40 @@ export type ResourceCardProps = {
 	includeContentType?: boolean;
 };
 
+export type GetGlowInfoProps = {
+	displayDate: string;
+	resourceType: string;
+	thumbnail: string;
+	title: string;
+};
+
+export function getGlowInfo({
+	displayDate,
+	resourceType,
+	thumbnail,
+	title,
+}: GetGlowInfoProps): any {
+	// Thumbnail
+	const isThumbnailImage = thumbnail.indexOf("<img") >= 0;
+	const thumbnailFigureCss = isThumbnailImage
+		? "is-16by9 is-contained"
+		: "is-16by9 has-text-centered";
+
+	// Glow
+	const glowCssClass =
+		resourceType != "channel" || !isThumbnailImage
+			? glowColorHashRing.get(title + displayDate)
+			: "";
+	if (!isThumbnailImage && glowCssClass != "") {
+		// when using glow, make sure icon-based thumbnails are shown with white text
+		thumbnail = thumbnail.replace("has-text-primary", "has-text-white");
+	}
+	return {
+		thumbnailFigureCss,
+		glowCssClass,
+	};
+}
+
 const ResourceCard = ({
 	resource: { resourceType, url, title, displayDate, subtitle, references },
 	resource,
@@ -42,20 +76,29 @@ const ResourceCard = ({
 	let thumbnail = resource.getThumbnail();
 
 	// Thumbnail
-	const isThumbnailImage = thumbnail.indexOf("<img") >= 0;
-	const thumbnailFigureCss = isThumbnailImage
-		? "is-16by9 is-contained"
-		: "is-16by9 has-text-centered";
+	// const isThumbnailImage = thumbnail.indexOf("<img") >= 0;
+	// const thumbnailFigureCss = isThumbnailImage
+	// 	? "is-16by9 is-contained"
+	// 	: "is-16by9 has-text-centered";
+	//
+	// // Glow
+	// const glowCssClass =
+	// 	resourceType != CHANNEL_RESOURCE || !isThumbnailImage
+	// 		? glowColorHashRing.get(title + displayDate)
+	// 		: "";
+	// if (!isThumbnailImage && glowCssClass != "") {
+	// 	// when using glow, make sure icon-based thumbnails are shown with white text
+	// 	thumbnail = thumbnail.replace("has-text-primary", "has-text-white");
+	// }
+	//
 
-	// Glow
-	const glowCssClass =
-		resourceType != CHANNEL_RESOURCE || !isThumbnailImage
-			? glowColorHashRing.get(title + displayDate)
-			: "";
-	if (!isThumbnailImage && glowCssClass != "") {
-		// when using glow, make sure icon-based thumbnails are shown with white text
-		thumbnail = thumbnail.replace("has-text-primary", "has-text-white");
-	}
+	// Data needed for glow info
+	const { thumbnailFigureCss, glowCssClass } = getGlowInfo({
+		displayDate,
+		resourceType,
+		thumbnail,
+		title,
+	});
 
 	// Custom CSS classes
 	const columnCssClass = columnClassName

@@ -14,6 +14,7 @@ import slugify from "@sindresorhus/slugify";
 
 // @ts-ignore
 import { getContentType } from "../public/assets/js/utils";
+import { getGlowInfo } from "../_includes/resourcecard/ResourceCard.11ty";
 
 export function getThumbnailPath(
 	dataThumbnail: string,
@@ -174,6 +175,10 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 				alt={this.title}
 			/>
 		);
+	}
+
+	getThumbnailCss() {
+		return;
 	}
 
 	describeContentType(): string {
