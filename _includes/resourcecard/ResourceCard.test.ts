@@ -15,14 +15,10 @@ test("ResourceCard", () => {
 });
 
 test("glow CSS class", () => {
-	let thumbnail = `<img src="/public/assets/favicon.ico" alt="Some Foo"/>`;
 	const displayDate = "2000/01/01";
-	const resourceType = "tip";
 	const title = "Some Title";
 	const { thumbnailFigureCss, glowCssClass } = getGlowInfo({
-		thumbnail,
 		displayDate,
-		resourceType,
 		title,
 	});
 	expect(thumbnailFigureCss).toEqual("is-16by9 is-contained");

@@ -24,26 +24,28 @@ export class LunrBase {
 				authorThumbnail: value.references?.author.thumbnail,
 				author: value.references?.author.title,
 				datetime: value.displayDate,
+				thumbnail: null,
+				thumbnailCss: "",
 			};
+
 			// @ts-ignore
-			if (value.thumbnail) {
-				// @ts-ignore
-				record.thumbnail = value.thumbnail;
+			record.thumbnail = value.thumbnail;
+
+			if (record.thumbnail) {
 				// do the hash, produce a value for "class" attribute
-				const { thumbnailFigureCss, glowCssClass } = getGlowInfo(value);
+				const { thumbnailFigureCss, glowCssClass } = getGlowInfo({
+					displayDate: record.datetime,
+					title: record.title,
+				});
 				record.thumbnailCss = `image ${thumbnailFigureCss} ${glowCssClass}`;
-			} else {
-				// TODO Paul likely no longer needed for CSR
-				// @ts-ignore
-				record.accent = value.accent;
-				// @ts-ignore
-				record.icon = value.icon;
 			}
+
 			// @ts-ignore
 			if (value.linkURL) {
 				// @ts-ignore
 				record.linkURL = value.linkURL;
 			}
+
 			return record;
 		});
 	}

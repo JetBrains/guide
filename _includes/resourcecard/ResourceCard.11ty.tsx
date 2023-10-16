@@ -3,7 +3,6 @@ import ConsistentHash from "consistent-hash";
 import { Resource } from "../../src/ResourceModels";
 import { Topic } from "../resources/topic/TopicModels";
 import TopicTag from "../resources/topic/TopicTag.11ty";
-import { CHANNEL_RESOURCE } from "../../src/resourceType";
 import { AuthorIcon, doesExist } from "./Utilities.11ty";
 
 const glowColorHashRing = new ConsistentHash({
@@ -30,31 +29,16 @@ export type ResourceCardProps = {
 
 export type GetGlowInfoProps = {
 	displayDate: string;
-	resourceType: string;
-	thumbnail: string;
 	title: string;
 };
 
-export function getGlowInfo({
-	displayDate,
-	resourceType,
-	thumbnail,
-	title,
-}: GetGlowInfoProps): any {
+export function getGlowInfo({ displayDate, title }: GetGlowInfoProps): any {
 	// Thumbnail
-	const isThumbnailImage = thumbnail.indexOf("<img") >= 0;
-	const thumbnailFigureCss = isThumbnailImage
-		? "is-16by9 is-contained"
-		: "is-16by9 has-text-centered";
 
+	const thumbnailFigureCss = "is-16by9 is-contained";
 	// Glow
-	const glowCssClass = !isThumbnailImage
-			? glowColorHashRing.get(title + displayDate)
-			: "";
-	if (!isThumbnailImage && glowCssClass != "") {
-		// when using glow, make sure icon-based thumbnails are shown with white text
-		thumbnail = thumbnail.replace("has-text-primary", "has-text-white");
-	}
+	const glowCssClass = glowColorHashRing.get(title + displayDate);
+
 	return {
 		thumbnailFigureCss,
 		glowCssClass,
@@ -62,7 +46,7 @@ export function getGlowInfo({
 }
 
 const ResourceCard = ({
-	resource: { resourceType, url, title, displayDate, subtitle, references },
+	resource: { url, title, displayDate, subtitle, references },
 	resource,
 	columnClassName,
 	hasShadow = false,
@@ -80,12 +64,9 @@ const ResourceCard = ({
 	// 	? "is-16by9 is-contained"
 	// 	: "is-16by9 has-text-centered";
 
-
 	// Data needed for glow info
 	const { thumbnailFigureCss, glowCssClass } = getGlowInfo({
 		displayDate,
-		resourceType,
-		thumbnail,
 		title,
 	});
 
@@ -107,6 +88,7 @@ const ResourceCard = ({
 				<div class="card-image">
 					<a href={url} data-template-href="url">
 						<figure
+							data-template-class="thumbnailCss"
 							class={`image ${thumbnailFigureCss} ${glowCssClass}`}
 							dangerouslySetInnerHTML={{ __html: thumbnail }}
 						></figure>

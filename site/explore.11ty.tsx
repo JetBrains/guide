@@ -83,7 +83,7 @@ class ExplorePage {
 			limit: 12,
 		});
 
-		const dummyChannel = this.getResource("/dotnet/links/remote-pairing/");
+		const dummyChannel = this.getResource("/dotnet/");
 		const resourceCard = (
 			<ResourceCard
 				resource={dummyChannel}
