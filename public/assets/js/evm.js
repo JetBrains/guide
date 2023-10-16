@@ -1,5 +1,6 @@
 import { getContentType } from "./utils.js";
 
+const filterTopicsWithAnd = false;
 
 export class ExploreViewModel {
 
@@ -77,9 +78,18 @@ export class ExploreViewModel {
 				return false;
 			}
 			if (topics.length) {
-				// Get intersection of selected topics and this resource's
-				// topics array. If there is any overlap, it's true.
-				return topics.filter(topic => resource.topics?.includes(topic)).length > 0;
+				if (filterTopicsWithAnd) {
+					// Match all selected topics against the resource's topics.
+					for (const topic of topics) {
+						if (!resource.topics?.includes(topic)) {
+							return false;
+						}
+					}
+				} else {
+					// Get intersection of selected topics and this resource's
+					// topics array. If there is any overlap, it's true.
+					return topics.filter(topic => resource.topics?.includes(topic)).length > 0;
+				}
 			}
 
 			return true;

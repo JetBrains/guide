@@ -48,8 +48,7 @@ export function getGlowInfo({
 		: "is-16by9 has-text-centered";
 
 	// Glow
-	const glowCssClass =
-		resourceType != "channel" || !isThumbnailImage
+	const glowCssClass = !isThumbnailImage
 			? glowColorHashRing.get(title + displayDate)
 			: "";
 	if (!isThumbnailImage && glowCssClass != "") {
@@ -80,17 +79,7 @@ const ResourceCard = ({
 	// const thumbnailFigureCss = isThumbnailImage
 	// 	? "is-16by9 is-contained"
 	// 	: "is-16by9 has-text-centered";
-	//
-	// // Glow
-	// const glowCssClass =
-	// 	resourceType != CHANNEL_RESOURCE || !isThumbnailImage
-	// 		? glowColorHashRing.get(title + displayDate)
-	// 		: "";
-	// if (!isThumbnailImage && glowCssClass != "") {
-	// 	// when using glow, make sure icon-based thumbnails are shown with white text
-	// 	thumbnail = thumbnail.replace("has-text-primary", "has-text-white");
-	// }
-	//
+
 
 	// Data needed for glow info
 	const { thumbnailFigureCss, glowCssClass } = getGlowInfo({
