@@ -113,8 +113,8 @@ class ExplorePage {
 									id="listing"
 								></div>
 								<div
-									class="container"
 									style="display: none"
+									class="container"
 									id="listing-no-results"
 								>
 									<div class="columns is-vcentered is-mobile">
@@ -122,7 +122,7 @@ class ExplorePage {
 											<h2 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
 												No matching content
 											</h2>
-											<p className="subtitle has-text-grey mb-5">
+											<p class="subtitle has-text-grey mb-5">
 												Please try refining your filters.
 											</p>
 										</div>
