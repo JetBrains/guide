@@ -16,9 +16,7 @@ const frontmatter: ChannelFrontmatter = {
 	resourceType: "channel",
 	date: new Date(Date.UTC(2023, 9, 29)),
 	author: "hs",
-	thumbnail: "thumbnail.png",
-	// TODO after merge of -T-135: accent: "primary",
-	// TODO after merge of -T-135: icon: "fas fa-database",
+	logo: "thumbnail.png",
 	hero: "/assets/database_splash.svg",
 	subnav: [{ title: "DataGrip", url: "https://www.jetbrains.com/datagrip/" }],
 };
@@ -51,10 +49,10 @@ class DatabasesHomepage {
 
 		const springBoot = [
 			this.getResource(
-				"/idea/tutorials/marco-codes-spring-boot/h2-database-intro/"
+				"/java/tutorials/marco-codes-spring-boot/h2-database-intro/"
 			),
 			this.getResource(
-				"/idea/tutorials/marco-codes-spring-boot/spring-data-jdbc-repositories/"
+				"/java/tutorials/marco-codes-spring-boot/spring-data-jdbc-repositories/"
 			),
 		];
 
