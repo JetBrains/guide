@@ -1,0 +1,21 @@
+---
+date: 2020-09-24
+title: Database Visualization
+topics:
+  - databases
+  - django
+author: mm
+subtitle: Visualize the structure of a database with diagrams
+seealso:
+  - title: DataGrip Create Diagrams
+    href: "https://www.jetbrains.com/help/datagrip/creating-diagrams.html"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
+video: "https://youtu.be/_vPIrbFm7Hs"
+obsoletes:
+  - /python/tips/database-visualization
+---
+
+_PyCharm Professional comes with all database features from JetBrains DataGrip._
+
+DataGrip helps to seamlessly connect/manage/create with different databases and helps boost developer productivity.

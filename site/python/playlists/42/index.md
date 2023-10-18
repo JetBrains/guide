@@ -55,7 +55,7 @@ playlistItems:
   - /tips/partial-commit/
   - /python/tips/run-npm-scripts/
   - /python/tips/wrap-selection-with-tag/
-  - /python/tips/create-sqlite-connection/
+  - /databases/tips/create-sqlite-connection/
 ---
 
 Development is about focus and flow. Learning your tool helps you get

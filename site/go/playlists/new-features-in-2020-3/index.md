@@ -36,8 +36,8 @@ playlistItems:
   - /go/tips/simple-math-in-search-everywhere/
   - /go/tips/tailwind-css-support/
   - /go/tips/vue3-support/
-  - /go/tips/mongodb-query-using-sql/
-  - /go/tips/write-sql-queries-in-go/
+  - /databases/tips/mongodb-query-using-sql/
+  - /databases/tips/write-sql-queries-in-go/
   - /go/tips/mermaid-js-support-in-markdown/
   - /go/tips/download-kubernetes-pod-log/
   - /go/tips/open-console-in-kubernetes/
