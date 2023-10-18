@@ -1,0 +1,18 @@
+---
+date: 2023-10-18
+title: View Database Definitions
+topics:
+  - databases
+author: hs
+subtitle: "View the definitions of database entities quickly in the Database Tool Window"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
+video: "https://youtu.be/Xr1p4tquwJE"
+seealso:
+  - title: (documentation) Database Tool Window
+    href: "https://www.jetbrains.com/help/idea/database-tool-window.html"
+obsoletes:
+  - /java/tips/view-database-definitions
+---
+
+In our paid IDEs, you can open the Database Tool Window and use **␣** (macOS) or **Space** (Windows/Linux) to view definitions of database entities including tables, views, sequences, triggers and more.
