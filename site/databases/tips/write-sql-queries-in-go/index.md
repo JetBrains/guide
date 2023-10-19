@@ -23,8 +23,4 @@ SQL queries are recognized automatically when these strings are used in popular 
 
 The IDE automatically recognizes which databases are configured, their type, e.g. Postgres, MongoDB, etc., and provides all features available to query, refactor, or reference the database.
 
-**How to use:**
-
 Use the string literal which contains the SQL query in any of the functions accepting queries from one of the supported packages and they'll be recognized automatically.
-
-<span class="tag is-rounded">New in 2020.3</span>

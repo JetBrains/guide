@@ -13,10 +13,6 @@ obsoletes:
   - /go/tips/mongodb-query-using-sql
 ---
 
-**How to use:**
-
 Connect to a MongoDB database from the IDE, then open a _Console_ to it and write a SQL query instead of using the MongoDB format.
 
-To run it, press _Ctrl + Enter on Windows/Linux_ or _Cmd + Enter on macOS_ to run the query and retrieve the results.
-
-<span class="tag is-rounded">New in 2020.3</span>
+To run it, press **Ctrl**+**Enter** on Windows/Linux or **Cmd**+**Enter** on macOS to run the query and retrieve the results.

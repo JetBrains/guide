@@ -18,6 +18,4 @@ obsoletes:
 
 Connect to a MongoDB database from the IDE, then open a _Console_ to it and write a query.
 
-To run it, press _Ctrl + Enter on Windows/Linux_ or _Cmd + Enter on macOS_ to run the query and retrieve the results.
-
-<span class="tag is-rounded">New in 2019.3</span>
+To run it, press **Ctrl**+**Enter** on Windows/Linux or **Cmd**+**Enter** on macOS to run the query and retrieve the results.

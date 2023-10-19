@@ -9,3 +9,12 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/5lPTshUFpW8"
 linkURL: "https://youtu.be/5lPTshUFpW8"
 ---
+
+In this webinar, Alena Guzharina will demonstrate how you can effectively combine SQL and Python in Datalore. Alena will show you how to:
+
+- Quickly understand and visualize SQL query results.
+- Seamlessly transition from SQL to Python in one notebook.
+- Parameterize SQL queries with Python variables.
+- Share your results and automate the whole workflow for the future.
+
+Alena Guzharina is a Product Marketing Manager for JetBrains Datalore.

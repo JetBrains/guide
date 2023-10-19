@@ -9,3 +9,8 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/Vq3Mmdl1Tyg"
 linkURL: "https://youtu.be/Vq3Mmdl1Tyg"
 ---
+
+SYNTHESIZED – <https://www.synthesized.io/>
+Hurdy-Gurdy – <https://github.com/CourseOrchestra/hurdy-gurdy>
+KotlinPoet – <https://github.com/square/kotlinpoet>
+Swagger Parser – <https://github.com/swagger-api/swagger-parser>
