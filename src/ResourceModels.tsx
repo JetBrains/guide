@@ -12,6 +12,9 @@ import { Topic } from "../_includes/resources/topic/TopicModels";
 
 import slugify from "@sindresorhus/slugify";
 
+// @ts-ignore
+import { getContentType } from "../public/assets/js/utils";
+
 export function getThumbnailPath(
 	dataThumbnail: string,
 	pageURL: string
@@ -163,7 +166,22 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 
 	getThumbnail(): string {
 		const defaultThumbnail = "/assets/jetbrains-simple.svg";
-		return <img src={defaultThumbnail} alt={this.title} />;
+		return (
+			<img
+				data-template-src="thumbnail"
+				data-template-alt="title"
+				src={defaultThumbnail}
+				alt={this.title}
+			/>
+		);
+	}
+
+	getThumbnailCss() {
+		return;
+	}
+
+	describeContentType(): string {
+		return getContentType(this.resourceType);
 	}
 }
 

@@ -19,6 +19,7 @@ const frontmatter: ChannelFrontmatter = {
 	accent: "primary",
 	icon: "fa-brands fa-golang",
 	hero: "/assets/goland_splash.svg",
+	logo: "thumbnail.png",
 	subnav: [
 		{ title: "Download", url: "https://www.jetbrains.com/go/" },
 		{ title: "Blog", url: "https://blog.jetbrains.com/go/" },

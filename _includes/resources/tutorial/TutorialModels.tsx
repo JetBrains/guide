@@ -67,7 +67,14 @@ export class Tutorial
 	}
 
 	getThumbnail(): string {
-		return <img src={this.thumbnail} alt={this.title} />;
+		return (
+			<img
+				data-template-src="thumbnail"
+				data-template-alt="title"
+				src={this.thumbnail}
+				alt={this.title}
+			/>
+		);
 	}
 }
 

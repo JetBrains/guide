@@ -24,7 +24,7 @@ if (searchButton) {
     }
 
     if (documents === undefined) {
-      const jsonUrl = new URL("/lunr_index.json", import.meta.url).href;
+      const jsonUrl = new URL("/lunr.json", import.meta.url).href;
       const response = await fetch(jsonUrl);
       const json = await response.json();
       documents = json.results;

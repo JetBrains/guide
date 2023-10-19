@@ -20,6 +20,7 @@ export function AuthorLayout(
 	}
 
 	const linkedResources = this.getResources().filter(
+		// @ts-ignore
 		(ci) => ci.author === author.label
 	);
 
@@ -27,6 +28,7 @@ export function AuthorLayout(
 	const listing = (
 		<>
 			{linkedResources.map((resource) => (
+				// @ts-ignore
 				<ResourceCard resource={resource}></ResourceCard>
 			))}
 		</>

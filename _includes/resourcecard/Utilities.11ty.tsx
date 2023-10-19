@@ -4,7 +4,7 @@ import { References } from "../../src/ResourceModels";
 
 const lazyLoading = "lazy" as const;
 
-export const AuthorIcon11ty = (
+export const AuthorIcon = (
 	author: Pick<AuthorFrontmatter, "thumbnail" | "title">
 ) => (
 	<img
@@ -12,6 +12,7 @@ export const AuthorIcon11ty = (
 		alt={author.title}
 		loading={lazyLoading}
 		class="avatar"
+		data-template-src="authorThumbnail"
 	/>
 );
 

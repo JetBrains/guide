@@ -22,6 +22,7 @@ export class Topic
 	label: string;
 	logo?: string;
 	topicType?: string;
+	thumbnail?: string;
 	static frontmatterSchema = TopicFrontmatter;
 	static joinKey = "topics"; // What field on resource? Used in label namespace.
 
@@ -38,12 +39,20 @@ export class Topic
 		this.icon = data.icon;
 		if (data.logo) {
 			this.logo = path.join(page.url, data.logo);
+			this.thumbnail = this.logo;
 		}
 	}
 
 	getThumbnail(): string {
 		if (this.logo) {
-			return <img src={this.logo} alt={this.title} />;
+			return (
+				<img
+					data-template-src="thumbnail"
+					data-template-alt="title"
+					src={this.logo}
+					alt={this.title}
+				/>
+			);
 		} else {
 			return <i class={`${this.icon} has-text-${this.accent} fa-5x`} />;
 		}

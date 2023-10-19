@@ -29,6 +29,7 @@ describe("getResources filtering", () => {
 	it("sorts reverse on date", () => {
 		const filter: QueryFilter = {};
 		const result = getResources(resources, filter);
+		// @ts-ignore
 		expect(result && result[0].url).to.equal(resources[0].url);
 	});
 

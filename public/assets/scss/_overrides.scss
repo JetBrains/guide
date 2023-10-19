@@ -199,3 +199,65 @@ a.link-external:after {
 .has-text-shadow {
   text-shadow: 2px 2px 4px black;
 }
+
+.card-image .is-16by9 {
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+#facetMenu label {
+  color: #474749;
+}
+
+#facetMenu label:hover {
+  background-color: $grey-lighter;
+}
+
+label.checkbox {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: inherit;
+    margin: 0;
+
+    font: inherit;
+    color: currentColor;
+    width: 1em;
+    height: 1em;
+    border: 1px solid currentColor;
+    transform: translateY(0.075em);
+
+    display: grid;
+    place-content: center;
+
+    &::#{before} {
+      content: "";
+      width: 0.65em;
+      height: 0.65em;
+      clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+      transform: scale(0);
+      transform-origin: bottom left;
+      transition: border-width .1s ease-out, border-color .1s ease-out;
+      box-shadow: inset 1em 1em $white;
+      background-color: CanvasText;
+    }
+
+    &:checked {
+      background-color: $cyan;
+      border-color: $cyan;
+
+      &::#{before} {
+        transform: scale(1) rotate(10deg) translateX(-0.05em) translateY(-0.03em);
+      }
+    }
+
+    &:disabled {
+      color: $grey-lighter;
+      cursor: not-allowed;
+    }
+  }
+}

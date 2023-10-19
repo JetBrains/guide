@@ -10,6 +10,8 @@ import { VideoType } from "../common/VideoProp";
 import { LINK_RESOURCE_TYPE } from "../../../src/resourceType";
 import { ThumbnailField } from "../commonModels";
 import h from "vhtml";
+// @ts-ignore
+import { getContentType } from "../../../public/assets/js/utils";
 
 export const LinkFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -49,6 +51,17 @@ export class Link
 	}
 
 	getThumbnail(): string {
-		return <img src={this.thumbnail} alt={this.title} />;
+		return (
+			<img
+				data-template-src="thumbnail"
+				data-template-alt="title"
+				src={this.thumbnail}
+				alt={this.title}
+			/>
+		);
+	}
+
+	describeContentType(): string {
+		return getContentType(this.resourceType, this.linkURL);
 	}
 }

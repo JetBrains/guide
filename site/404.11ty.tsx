@@ -43,6 +43,7 @@ class Http404Page {
 
 				<ListingSection
 					title="Latest content"
+					// @ts-ignore
 					resources={latestContent}
 					moreLink="/latest/"
 				/>

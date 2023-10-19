@@ -76,8 +76,10 @@ module.exports = function (eleventyConfig) {
 				rollupOptions: {
 					output: {
 						assetFileNames: (info) => {
-							if (info.name.includes("rss.xml")) {
-								// don't modify the rss.xml file name
+							if (
+								info.name.includes("rss.xml") ||
+								info.name.includes("lunr.json")
+							) {
 								return "[name][extname]";
 							} else {
 								return "assets/[name]-[hash][extname]";

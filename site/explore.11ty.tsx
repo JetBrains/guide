@@ -6,6 +6,65 @@ import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
 import ListingSection from "../_includes/pageelements/ListingSection.11ty";
 import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
 
+// Happy DOM throws a DOMException for external script/css even though
+// we do the settings to suppress it. Vite catches the exception but
+// logs it. We can't handle the exception, and it pollutes the test output.
+// Let's detect if we're running in a test, then later, wrap the
+// <link> and <script> to suppress.
+const isNotTest = !(typeof window != "undefined" && !!(window as any).happyDOM);
+
+type ExploreMenuItem = {
+	value: string;
+	label: string;
+};
+
+type ExploreGroup = {
+	label: string;
+	facetGroup: string;
+	items: ExploreMenuItem[];
+};
+
+const exploreMenu: ExploreGroup[] = [
+	{
+		label: "Channels",
+		facetGroup: "channels",
+		items: [
+			{ value: "/remote/", label: "Remote Development" },
+			{ value: "/gamedev/", label: "Game Development" },
+			{ value: "/dotnet/", label: ".NET" },
+			{ value: "/go/", label: "Go" },
+			{ value: "/java/", label: "Java" },
+			{ value: "/python/", label: "Python" },
+			{ value: "/webjs/", label: "Web and JavaScript" },
+		],
+	},
+	{
+		label: "Top Topics",
+		facetGroup: "topics",
+		items: [
+			{ value: "aws", label: "AWS" },
+			{ value: "debugging", label: "Debugging" },
+			{ value: "git", label: "Git" },
+			{ value: "ide", label: "IDE" },
+			{ value: "security", label: "Security" },
+			{ value: "tricks", label: "Tricks" },
+			{ value: "typescript", label: "TypeScript" },
+			{ value: "web", label: "Web" },
+		],
+	},
+	{
+		label: "Resources",
+		facetGroup: "resources",
+		items: [
+			{ value: "article", label: "Articles" },
+			{ value: "link", label: "Links" },
+			{ value: "playlist", label: "Playlists" },
+			{ value: "tip", label: "Tips" },
+			{ value: "tutorial", label: "Tutorials" },
+		],
+	},
+];
+
 type ExplorePageProps = LayoutProps & PageFrontmatter;
 
 class ExplorePage {
@@ -24,12 +83,13 @@ class ExplorePage {
 			limit: 12,
 		});
 
-		const channels = [
-			this.getResource("/remote/"),
-			this.getResource("/gamedev/"),
-			this.getResource("/dotnet/"),
-		];
-
+		const dummyChannel = this.getResource("/dotnet/");
+		const resourceCard = (
+			<ResourceCard
+				resource={dummyChannel}
+				columnClassName={"is-half-tablet is-one-third-desktop"}
+			/>
+		);
 		return (
 			<BaseLayout {...data}>
 				<div class="section">
@@ -39,99 +99,85 @@ class ExplorePage {
 								<div class="columns">
 									<div class="column is-four-fifths mb-5 mr-auto">
 										<h2 class="title mb-6 is-size-1 is-size-3-mobile has-text-weight-bold">
-											Explore our channels
+											Explore the JetBrains Guide
 										</h2>
 										<p class="subtitle has-text-grey">
 											Looking to learn something new, or refresh your existing
 											skills?
 										</p>
 									</div>
-									<div class="column has-text-right">
-										<a
-											class="button is-rounded is-outlined"
-											href={`/channels/`}
-										>
-											More...
-										</a>
+								</div>
+								<div
+									style="display: none"
+									class="columns is-multiline"
+									id="listing"
+								></div>
+								<div
+									style="display: none"
+									class="container"
+									id="listing-no-results"
+								>
+									<div class="columns is-vcentered is-mobile">
+										<div class="column">
+											<h2 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
+												No matching content
+											</h2>
+											<p class="subtitle has-text-grey mb-5">
+												Please try refining your filters.
+											</p>
+										</div>
 									</div>
 								</div>
-
-								<div class="columns is-multiline">
-									{channels.map((channel) => {
-										return (
-											<ResourceCard compactMode={true} resource={channel} />
-										);
-									})}
-								</div>
-
 								<ListingSection
 									title="Latest content"
 									resources={latestContent}
 									moreLink="/latest/"
 									isSection={false}
+									includeContentType={true}
+									anchor="latest-content"
 								/>
 							</div>
 
 							<div class="column is-full-touch is-3">
-								<aside class="menu">
-									<p class="menu-label">Channels</p>
-									<ul class="menu-list">
-										<li>
-											<a href="/remote/">Remote Development</a>
-										</li>
-										<li>
-											<li>
-												<a href="/gamedev/">Game Development</a>
-											</li>
-											<a href="/dotnet/">.NET</a>
-										</li>
-										<li>
-											<a href="/goland/">GoLand</a>
-										</li>
-										<li>
-											<a href="/idea/">IntelliJ IDEA</a>
-										</li>
-										<li>
-											<a href="/pycharm/">PyCharm</a>
-										</li>
-										<li>
-											<a href="/webstorm/">WebStorm</a>
-										</li>
-									</ul>
-
-									<p class="menu-label">What's new?</p>
-									<ul class="menu-list">
-										<li>
-											<a href="/latest/">Latest</a>
-										</li>
-									</ul>
-
-									<p class="menu-label">Content</p>
-									<ul class="menu-list">
-										<li>
-											<a href="/authors/">Authors</a>
-										</li>
-										<li>
-											<a href="/channels/">Channels</a>
-										</li>
-										<li>
-											<a href="/playlists/">Playlists</a>
-										</li>
-										<li>
-											<a href="/tips/">Tips</a>
-										</li>
-										<li>
-											<a href="/topics/">Topics</a>
-										</li>
-										<li>
-											<a href="/tutorials/">Tutorials</a>
-										</li>
-									</ul>
+								<aside class="menu" id="facetMenu">
+									{exploreMenu.map((menuGroup) => {
+										return (
+											<>
+												{menuGroup.label && (
+													<p
+														title={`${menuGroup.label} Group`}
+														class="menu-label"
+													>
+														{menuGroup.label}
+													</p>
+												)}
+												<ul
+													class="menu-list"
+													data-facet-group={menuGroup.facetGroup}
+												>
+													{menuGroup.items.map((item) => (
+														<li>
+															<label class="checkbox p-2">
+																<input type="checkbox" value={item.value} />{" "}
+																{item.label}
+															</label>
+														</li>
+													))}
+												</ul>
+											</>
+										);
+									})}
+									<template id="cardTemplate">{resourceCard}</template>
 								</aside>
 							</div>
 						</div>
 					</div>
 				</div>
+				{isNotTest ? (
+					<script type="module" src="/assets/js/evm.js" async></script>
+				) : (
+					<></>
+				)}
 			</BaseLayout>
 		);
 	}

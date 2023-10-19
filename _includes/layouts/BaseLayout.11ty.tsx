@@ -37,7 +37,9 @@ export function BaseLayout(
 	// logs it. We can't handle the exception, and it pollutes the test output.
 	// Let's detect if we're running in a test, then later, wrap the
 	// <link> and <script> to suppress.
-	let isNotTest = !(typeof window != "undefined" && !!(window as any).happyDOM);
+	const isNotTest = !(
+		typeof window != "undefined" && !!(window as any).happyDOM
+	);
 	// TODO This is a hack. Bake it into the contract.
 	const hasVideo = !!video || (!!resourceType && resourceType == "playlist");
 

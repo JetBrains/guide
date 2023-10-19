@@ -10,7 +10,8 @@ export type RESOURCE_MODELS_BY_TYPE<
 > = RESOURCE extends keyof ResourceMapType
 	? Array<ResourceMapType[RESOURCE]>
 	: RESOURCE extends Array<RESOURCE_TYPES>
-	? Array<ResourceMapType[RESOURCE[number]]>
+	? // @ts-ignore
+	  Array<ResourceMapType[RESOURCE[number]]>
 	: Resource[];
 
 export type RESOURCE_MODEL_BY_TYPE<
@@ -18,7 +19,8 @@ export type RESOURCE_MODEL_BY_TYPE<
 > = T extends keyof ResourceMapType
 	? ResourceMapType[T]
 	: T extends Array<RESOURCE_TYPES>
-	? ResourceMapType[T[number]]
+	? // @ts-ignore
+	  ResourceMapType[T[number]]
 	: Resource;
 
 export type QueryFilter<
