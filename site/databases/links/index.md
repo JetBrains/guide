@@ -8,5 +8,5 @@ subtitle: >-
   Learning resources on external sites, organized as part of the Guide.
 pagination:
   resourceType: link
-  channel: /gamedev/
+  channel: /databases/
 ---
