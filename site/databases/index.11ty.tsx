@@ -41,7 +41,7 @@ class DatabasesHomepage {
 		});
 
 		const mongodb = this.getResources({
-			resourceTypes: [TIP_RESOURCE],
+			resourceTypes: [TIP_RESOURCE, LINK_RESOURCE],
 			limit: 4,
 			customFilter: (r) =>
 				r.topics?.includes("mongodb") == true && r.slug.indexOf("mongodb") >= 0,
