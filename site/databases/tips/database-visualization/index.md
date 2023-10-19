@@ -16,6 +16,6 @@ obsoletes:
   - /python/tips/database-visualization
 ---
 
-_PyCharm Professional comes with all database features from JetBrains DataGrip._
+PyCharm Professional comes with all database features from JetBrains DataGrip.
 
 DataGrip helps to seamlessly connect/manage/create with different databases and helps boost developer productivity.

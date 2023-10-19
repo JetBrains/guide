@@ -9,3 +9,5 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/iNWWWj8dCfM"
 linkURL: "https://youtu.be/iNWWWj8dCfM"
 ---
+
+Maksim Sobolevskiy is the team lead of DataGrip.

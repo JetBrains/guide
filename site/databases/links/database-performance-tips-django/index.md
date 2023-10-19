@@ -9,3 +9,6 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/-5503tXOU7A"
 linkURL: "https://youtu.be/-5503tXOU7A"
 ---
+
+Andrew Brookins has over ten years of experience working with Django and relational databases. That experience spans DevOps, application development, and platform engineering. He has worked on ecommerce sites, mobile APIs, comic book readers, particle simulation systems, learning and volunteering apps. He works at Redis Labs.
+<https://twitter.com/abrookins>

@@ -18,10 +18,7 @@ obsoletes:
   - /python/tips/create-sqlite-connection
 ---
 
-PyCharm Professional's Database tool, courtesy of
-[DataGrip](https://www.jetbrains.com/datagrip/), is wonderful. It gives
-you a professional-level, visual way to work with SQL development in a
-project.
+PyCharm Professional's Database tool, courtesy of [DataGrip](https://www.jetbrains.com/datagrip/), is wonderful. It gives you a professional-level, visual way to work with SQL development in a project.
 
 The Database tool needs to create database connection for the project,
 which not only lets you browse tables, edit rows, and perform queries,
