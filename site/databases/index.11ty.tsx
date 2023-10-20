@@ -74,6 +74,8 @@ class DatabasesHomepage {
 					title={channel.title}
 					subtitle={channel.subtitle!}
 					image={channel.hero!}
+					titleExtraClass={"has-text-white"}
+					subtitleExtraClass={"has-text-white"}
 				/>
 
 				{tips && (
