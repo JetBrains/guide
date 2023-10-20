@@ -17,7 +17,7 @@ const frontmatter: ChannelFrontmatter = {
 	date: new Date(Date.UTC(2023, 10, 20)),
 	author: "hs",
 	logo: "thumbnail.png",
-	hero: "/assets/database_splash.svg",
+	hero: "/assets/django_splash_gradient.svg",
 	subnav: [{ title: "PyCharm", url: "https://www.jetbrains.com/pycharm/" }],
 };
 
@@ -51,6 +51,8 @@ class DjangoHomepage {
 					title={channel.title}
 					subtitle={channel.subtitle!}
 					image={channel.hero!}
+					titleExtraClass={"has-text-white"}
+					subtitleExtraClass={"has-text-white"}
 				/>
 
 				{links && (
