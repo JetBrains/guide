@@ -111,7 +111,7 @@ class DatabasesHomepage {
 					<ListingSection
 						title={`Spring Boot – Marco Codes`}
 						resources={springBoot}
-						moreLink={`/idea/tutorials/marco-codes-spring-boot/`}
+						//moreLink={`/idea/tutorials/marco-codes-spring-boot/`}
 						separator={true}
 						includeCardFooter={false}
 					/>
@@ -121,7 +121,7 @@ class DatabasesHomepage {
 					<ListingSection
 						title={`Data access in .NET`}
 						resources={dotnet}
-						moreLink={`/dotnet/`}
+						//moreLink={`/dotnet/`}
 						separator={true}
 						includeCardFooter={false}
 					/>
