@@ -35,13 +35,14 @@ class DjangoHomepage {
 		const links = this.getResources({
 			resourceTypes: [LINK_RESOURCE],
 			limit: 4,
-			//customFilter: (r) => r.topics?.includes("django") == true,
+			customFilter: (r) => r.topics?.includes("django") == true,
 			//channel: channel.url,
 		});
 
 		const tutorials = this.getResources({
 			resourceTypes: [TUTORIAL_RESOURCE],
 			limit: 4,
+			customFilter: (r) => r.topics?.includes("django") == true,
 		});
 
 		return (
@@ -58,6 +59,8 @@ class DjangoHomepage {
 						resources={links}
 						separator={false}
 						includeCardFooter={false}
+						moreLink={`${channel.url}tutorials/`}
+						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
 
@@ -67,7 +70,6 @@ class DjangoHomepage {
 						resources={tutorials}
 						separator={false}
 						includeCardFooter={false}
-						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
 			</BaseLayout>
