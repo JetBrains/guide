@@ -47,6 +47,21 @@ class DatabasesHomepage {
 				r.topics?.includes("mongodb") == true && r.slug.indexOf("mongodb") >= 0,
 		});
 
+		const springBoot = [
+			this.getResource(
+				"/java/tutorials/marco-codes-spring-boot/h2-database-intro/"
+			),
+			this.getResource(
+				"/java/tutorials/marco-codes-spring-boot/spring-data-jdbc-repositories/"
+			),
+		];
+
+		const dotnet = [
+			this.getResource("/dotnet/tutorials/basics/entity-framework-core/"),
+			this.getResource("/dotnet/tutorials/basics/ado-net/"),
+			this.getResource("/dotnet/tutorials/basics/dapper/"),
+		];
+
 		const links = this.getResources({
 			resourceTypes: [LINK_RESOURCE],
 			limit: 4,
@@ -89,6 +104,26 @@ class DatabasesHomepage {
 						separator={true}
 						includeCardFooter={false}
 						sectionExtraClass={"has-background-grey-lighter"}
+					/>
+				)}
+
+				{springBoot && (
+					<ListingSection
+						title={`Spring Boot – Marco Codes`}
+						resources={springBoot}
+						moreLink={`/idea/tutorials/marco-codes-spring-boot/`}
+						separator={true}
+						includeCardFooter={false}
+					/>
+				)}
+
+				{dotnet && (
+					<ListingSection
+						title={`Data access in .NET`}
+						resources={dotnet}
+						moreLink={`/dotnet/`}
+						separator={true}
+						includeCardFooter={false}
 					/>
 				)}
 			</BaseLayout>
