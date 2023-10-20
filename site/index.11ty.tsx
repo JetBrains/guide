@@ -35,17 +35,16 @@ class IndexPage {
 		const communities = [
 			// TODO: These need updating if/when we rename channels to be technology focused.
 			this.getResource("/gamedev/"),
-			this.getResource("/topics/django/"),
-			this.getResource("/topics/kotlin/"),
+			this.getResource("/databases/"),
+			this.getResource("/django/"),
 		];
 
 		const hotTopics = [
-			// TODO: These need updating if/when we rename channels to be technology focused.
-			this.getResource("/topics/django/"),
-			this.getResource("/topics/editing/"),
+			this.getResource("/topics/aws/"),
+			this.getResource("/topics/debugging/"),
 			this.getResource("/topics/git/"),
-			this.getResource("/topics/go/"),
 			this.getResource("/topics/gcp/"),
+			this.getResource("/topics/gradle/"),
 			this.getResource("/topics/refactoring/"),
 		] as Topic[];
 

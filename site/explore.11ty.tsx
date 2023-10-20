@@ -29,9 +29,10 @@ const exploreMenu: ExploreGroup[] = [
 		label: "Channels",
 		facetGroup: "channels",
 		items: [
-			{ value: "/remote/", label: "Remote Development" },
-			{ value: "/gamedev/", label: "Game Development" },
+			{ value: "/databases/", label: "Databases" },
+			{ value: "/django/", label: "Django" },
 			{ value: "/dotnet/", label: ".NET" },
+			{ value: "/gamedev/", label: "Game Development" },
 			{ value: "/go/", label: "Go" },
 			{ value: "/java/", label: "Java" },
 			{ value: "/python/", label: "Python" },
