@@ -18,7 +18,7 @@ const frontmatter: ChannelFrontmatter = {
 	author: "hs",
 	accent: "primary",
 	icon: "fa-brands fa-java",
-	hero: "/assets/intellij-idea-beam.svg",
+	hero: "/assets/java_splash.svg",
 	logo: "thumbnail.png",
 	subnav: [
 		{ title: "Download", url: "https://www.jetbrains.com/idea/" },
@@ -59,9 +59,7 @@ class JavaHomepage {
 			<BaseLayout {...data}>
 				<HeroSection
 					title={channel.title}
-					titleExtraClass="has-text-white"
 					subtitle={channel.subtitle!}
-					subtitleExtraClass="has-text-light"
 					image={channel.hero!}
 				/>
 				{tips && (

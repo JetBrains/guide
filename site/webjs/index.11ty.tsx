@@ -19,7 +19,7 @@ const frontmatter: ChannelFrontmatter = {
 	author: "pwe",
 	accent: "primary",
 	icon: "fa-brands fa-js",
-	hero: "/assets/webstorm-beam.svg",
+	hero: "/assets/javascript_web_splash.svg",
 	logo: "thumbnail.png",
 	subnav: [
 		{ title: "Download", url: "https://www.jetbrains.com/webstorm/" },

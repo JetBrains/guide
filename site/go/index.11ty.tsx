@@ -18,7 +18,7 @@ const frontmatter: ChannelFrontmatter = {
 	author: "pwe",
 	accent: "primary",
 	icon: "fa-brands fa-golang",
-	hero: "/assets/goland_splash.svg",
+	hero: "/assets/go_splash.svg",
 	logo: "thumbnail.png",
 	subnav: [
 		{ title: "Download", url: "https://www.jetbrains.com/go/" },
@@ -59,7 +59,9 @@ class GoHomepage {
 			<BaseLayout {...data}>
 				<HeroSection
 					title={channel.title}
+					titleExtraClass={"has-text-white"}
 					subtitle={channel.subtitle!}
+					subtitleExtraClass={"has-text-white"}
 					image={channel.hero!}
 				/>
 				{tips && (
