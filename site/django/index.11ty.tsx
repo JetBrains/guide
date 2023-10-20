@@ -62,7 +62,7 @@ class DjangoHomepage {
 						resources={links}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={`${channel.url}tutorials/`}
+						moreLink={`${channel.url}links/`}
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
