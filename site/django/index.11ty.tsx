@@ -41,6 +41,7 @@ class DjangoHomepage {
 
 		const tutorials = this.getResources({
 			resourceTypes: [TUTORIAL_RESOURCE],
+			channel: channel.url,
 			limit: 4,
 			customFilter: (r) => r.topics?.includes("django") == true,
 		});
