@@ -8,11 +8,7 @@ import {
 	ChannelHomepageData,
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
-import {
-	LINK_RESOURCE,
-	TIP_RESOURCE,
-	TUTORIAL_RESOURCE,
-} from "../../src/resourceType";
+import { LINK_RESOURCE, TUTORIAL_RESOURCE } from "../../src/resourceType";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Django",
@@ -36,30 +32,15 @@ class DjangoHomepage {
 	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
-		const tips = this.getResources({
-			resourceTypes: [TIP_RESOURCE],
-			limit: 4,
-			// customFilter: (r) =>
-			// 	r.topics?.includes("databases") == true &&
-			// 	r.topics?.includes("mongodb") == false,
-		});
-
-		// const mongodb = this.getResources({
-		// 	resourceTypes: [TIP_RESOURCE, LINK_RESOURCE],
-		// 	limit: 4,
-		// 	customFilter: (r) =>
-		// 		r.topics?.includes("mongodb") == true && r.slug.indexOf("mongodb") >= 0,
-		// });
-
 		const links = this.getResources({
 			resourceTypes: [LINK_RESOURCE],
 			limit: 4,
-			channel: channel.url,
+			//customFilter: (r) => r.topics?.includes("django") == true,
+			//channel: channel.url,
 		});
 
 		const tutorials = this.getResources({
 			resourceTypes: [TUTORIAL_RESOURCE],
-			channel: channel.url,
 			limit: 4,
 		});
 
@@ -71,22 +52,10 @@ class DjangoHomepage {
 					image={channel.hero!}
 				/>
 
-				{tips && (
-					<ListingSection
-						title={`Latest tips`}
-						resources={tips}
-						moreLink={`/topics/django/`}
-						separator={false}
-						includeCardFooter={false}
-						sectionExtraClass={"has-background-grey-lighter"}
-					/>
-				)}
-
 				{links && (
 					<ListingSection
 						title={`Latest links`}
 						resources={links}
-						moreLink={`/django/links/`}
 						separator={false}
 						includeCardFooter={false}
 					/>
@@ -96,20 +65,11 @@ class DjangoHomepage {
 					<ListingSection
 						title={`Latest tutorials`}
 						resources={tutorials}
-						//moreLink={`/django/tutorials/`}
 						separator={false}
 						includeCardFooter={false}
+						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
-
-				{/*{mongodb && (*/}
-				{/*	<ListingSection*/}
-				{/*		title={`NoSQL with MongoDB`}*/}
-				{/*		resources={mongodb}*/}
-				{/*		separator={true}*/}
-				{/*		includeCardFooter={false}*/}
-				{/*	/>*/}
-				{/*)}*/}
 			</BaseLayout>
 		);
 	}
