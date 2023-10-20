@@ -21,7 +21,7 @@ It’s not like we can’t develop APIs with Django, but a lot of the heavy lift
 
 I recommend that you to follow in parallel the video tutorial, for better hands-on learning.
 
-# DRF Setup
+## DRF Setup
 
 For our tutorial step, we will be using the **3.12.2** version.
 

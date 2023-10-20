@@ -25,7 +25,7 @@ and even the serverless frameworks.
 
 To know more about Sentry please visit the website [sentry.io](https://sentry.io/)
 
-# Project Setup
+## Project Setup
 
 Make sure to create an account in Sentry, it's pretty straight forward. I already have an account,
 so I will proceed with the login.
@@ -48,7 +48,7 @@ to a particular team, so they can access this project. Everything looks good, I 
 
 ![sentry_project_team](./steps/step4.png)
 
-# Integrating Sentry with Django
+## Integrating Sentry with Django
 
 The project has been successfully created. Next, we need to follow these instructions to configure
 Sentry with Django.
@@ -77,7 +77,7 @@ you set **send_default_pii** to True.
 Okay, we are all set, let's trigger some exceptions. According to the Sentry documentation, I will
 perform **ZeroDivisionError** in my application.
 
-# Firing our first event
+## Firing our first event
 
 Currently, there are no events. Let’s initiate our first event.
 

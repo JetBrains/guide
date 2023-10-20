@@ -25,7 +25,7 @@ signed either using a private secret or a public/private key.</em>
 
 To know more about JWT please visit the website [jwt.io](https://jwt.io/)
 
-# Installing JWT Package
+## Installing JWT Package
 
 There are lots of JWT packages available in the pypi repository. Previously
 I used to work with **djangorestframework-jwt**. This project is not being

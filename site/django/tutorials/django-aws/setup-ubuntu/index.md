@@ -18,7 +18,7 @@ Hello everyone, welcome to the Django tutorial series. In this tutorial
 we are going to set up a Ubuntu Desktop 20.04 LTS in Amazon Elastic
 Compute Cloud, also known as EC2.
 
-# Security Groups
+## Security Groups
 
 Let’s first move to Security Groups under the VPC Management Console, where
 I will be creating a new security group for our EC2 instance.
@@ -71,7 +71,7 @@ I will click on the **Launch instance**.
 
 ![launch_instance](steps/step5.png)
 
-# NICE DCV
+## NICE DCV
 
 According to Amazon - NICE Desktop Cloud Visualization (DCV) is a high-performance remote display protocol that provides
 customers with a secure way to deliver remote desktops and application streaming from any cloud or

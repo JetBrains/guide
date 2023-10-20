@@ -14,5 +14,5 @@ This webinar will show you how to get started with Django Ninja, how the interfa
 
 Here are the links to Christopher’s Trudeau courses:
 
-- Sneaky REST APIs With Django Ninja on @realpython platform https://jb.gg/5qgmk7
-- Django: Getting Started Course on @talkpython platform https://jb.gg/j47x0i
+- [Sneaky REST APIs With Django Ninja on @realpython platform](https://jb.gg/5qgmk7)
+- [Django: Getting Started Course on @talkpython platform](https://jb.gg/j47x0i)

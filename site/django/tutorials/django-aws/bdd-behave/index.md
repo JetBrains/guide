@@ -22,7 +22,7 @@ According to BrowserStack : In the Acceptance Test-Driven Development (ATDD) tec
 
 Acceptance Test-Driven Development is very similar to Behavioral-Driven Development. However, a key difference between them is: BDD focuses more on the behavior of the feature, whereas Acceptance Test-Driven Development focuses on capturing the accurate requirements.
 
-# Installing ChromeDriver
+## Installing ChromeDriver
 
 Before moving ahead, make sure you have installed **Google Chrome** & **ChromeDriver** on your machine.
 
@@ -54,7 +54,7 @@ Next, I will make the chromedriver as executable along-with creating symbolic li
 
 Okay, we have now successfully set up the ChromeDriver.
 
-# Installing Behave
+## Installing Behave
 
 Now, I will be installing the **“behave django”** python package. Behave is a behavior-driven test framework that is
 largely similar to other BDD test frameworks such as Cucumber, SpecFlow, Cucumber-JVM, etc.

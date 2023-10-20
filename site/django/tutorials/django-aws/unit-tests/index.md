@@ -19,7 +19,7 @@ Hello everyone, welcome to the Django tutorial series. In this tutorial we are g
 Unit testing ensures that all code meets quality standards before it's deployed. It saves time and money,
 and helps developers write better code, more efficiently.
 
-# Installing Package
+## Installing Package
 
 For this tutorial, we will be using **[Faker](https://pypi.org/project/Faker/)**. Faker is a python package that generates
 fake data. You can also use the **[model-bakery](https://pypi.org/project/model-bakery/)** package which offers you a smart way to
@@ -27,7 +27,7 @@ create fixtures for testing in Django.
 
 ![faker_python_install](steps/step1.png)
 
-# Let's begin testing
+## Let's begin testing
 
 I will create a **tests** folder under our **organizations**. We don't require the base **tests.py** file, so I will
 remove it.
