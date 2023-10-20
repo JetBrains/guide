@@ -88,6 +88,7 @@ class DatabasesHomepage {
 						resources={mongodb}
 						separator={true}
 						includeCardFooter={false}
+						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
 			</BaseLayout>
