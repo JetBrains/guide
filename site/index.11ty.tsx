@@ -83,13 +83,16 @@ class IndexPage {
 								.map((channel) => {
 									const figure = channel.getBoxThumbnail();
 									return (
-										<div class="column has-background-white m-4 is-5 is-2-desktop py-5 has-box-hover has-text-centered has-position-relative">
+										<div class="column has-background-white m-4 is-5 is-2-desktop has-box-hover has-text-centered has-position-relative box">
 											<a
 												href={channel.url}
 												aria-label={`Topic`}
 												class="is-size-5 has-text-weight-bold title is-stretched-link"
 											>
-												<figure class="image is-48x48 mb-1 mx-auto">
+												<figure
+													class="image mb-4"
+													style="border-radius: 6px; overflow:hidden"
+												>
 													{figure}
 												</figure>
 												{channel.title}
