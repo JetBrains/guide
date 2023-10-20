@@ -18,7 +18,7 @@ Hello everyone, welcome to the Django tutorial series.
 In this tutorial step, we are going to connect Django with our
 Postgres RDS instance in PyCharm.
 
-# DataGrip
+## DataGrip
 
 DataGrip is a database management environment for developers.
 It is designed to query, create and manage databases. Databases

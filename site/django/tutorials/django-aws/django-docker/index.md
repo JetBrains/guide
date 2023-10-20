@@ -29,7 +29,7 @@ automating deployment, scaling, and management of containerized applications.
 
 For this tutorial we will be focusing on using Docker.
 
-# Dockerfile
+## Dockerfile
 
 I am going to create a [Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) in the project root. A Dockerfile
 is a text document that contains all the commands a user could call on the command line to assemble an image.
@@ -76,7 +76,7 @@ Next, I will be performing certain operations like :
 - Upgrading pip & installing python packages from our `requirements.txt`
 - Copying the entire project.
 
-# Docker Compose
+## Docker Compose
 
 I will be creating a new file called `docker-compose.yml` file. According to Docker: [Compose](https://docs.docker.com/compose/) is a
 tool for defining and running multi-container Docker applications. With Compose,
@@ -187,7 +187,7 @@ You can see the below image, at line number 126 make sure to add **STATIC_ROOT**
 
 ![static_root](./steps/step7.png)
 
-# Docker Build
+## Docker Build
 
 We have completed our setup. Let's initiate the build process.
 

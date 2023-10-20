@@ -18,7 +18,7 @@ Hello everyone, welcome to part one of the AWS Django tutorial series.
 In this tutorial step, I will be explaining in brief about Django Framework and
 different Python frameworks available in the market.
 
-# Background
+## Background
 
 Django was created in the fall of 2003, when the web programmers
 at the Lawrence Journal-World newspaper, Adrian Holovaty and Simon Willison,
@@ -39,7 +39,7 @@ adapt to changes.
 
 To know more about Django, I recommend following official django docs [djangoproject.com](https://www.djangoproject.com/)
 
-# Python Frameworks
+## Python Frameworks
 
 ![flask](flask.png)
 

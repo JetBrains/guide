@@ -26,7 +26,7 @@ There are tons of alternative flavours you can try out.
 - [CircleCI](https://circleci.com/)
 - [TravisCI](https://travis-ci.org/)
 
-# Setup
+## Setup
 
 You can see I am already logged into my GitHub repository:
 
@@ -173,7 +173,7 @@ We have successfully created a private repository in ECR and name it as **demo**
 the repository name to be **“demo”**, instead you can configure it as a secret. So, you don’t need to modify your yaml
 file in future in case you change your repository name.
 
-# Tagging
+## Tagging
 
 We have done all the configuration. Now, I will create a new release and name it **1.0**.
 

@@ -18,7 +18,7 @@ Hello everyone, welcome to the Django tutorial series.
 In this tutorial step, we are going to set up a VPC in AWS and
 securely launch an RDS instance in a private subnet.
 
-# Background
+## Background
 
 Before stepping forward let me give you brief background on
 what is AWS VPC and RDS.
@@ -44,7 +44,7 @@ MySQL, Oracle, Postgres, SQLServer, MariaDB and Amazon Aurora.
 
 For reference, follow this link : [aws.amazon.com/rds](https://aws.amazon.com/rds/)
 
-# Setup VPC, Subnets, Route Tables & Internet Gateway
+## Setup VPC, Subnets, Route Tables & Internet Gateway
 
 Let’s get our hands dirty, as you can see on my screen I am already logged in
 into my **AWS Management Console**.
@@ -123,7 +123,7 @@ gateways let instances in a private subnet connect to the internet
 or other AWS services, but prevent the internet from initiating a connection
 with those instances.
 
-# Amazon Relational Database Service (RDS)
+## Amazon Relational Database Service (RDS)
 
 Let’s now move to **RDS Management Console** and spin up our first RDS instance.
 

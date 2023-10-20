@@ -18,7 +18,7 @@ Hello everyone, welcome to the Django tutorial series.
 In this tutorial step, we are going to set up Django and run
 our first PyCharm Project.
 
-# Installing Dependencies
+## Installing Dependencies
 
 As you can see in the following image, we will be installing Python dependencies,
 which is required for our Django project.

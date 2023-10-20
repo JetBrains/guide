@@ -18,7 +18,7 @@ Hello everyone, welcome to the Django tutorial series. In this tutorial step, we
 are going to create a new app called **organization** and explore the
 project structure.
 
-# Project Directory
+## Project Directory
 
 Let me first explain about the project files, which consist of:
 
