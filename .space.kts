@@ -4,6 +4,28 @@ val nodeJsContainerImage = "node:18-alpine"
 val jdkContainerImage = "amazoncorretto:17"
 
 job("Build Guide") {
+    startOn {
+        gitPush {
+            enabled = true
+
+            anyRefMatching {
+                +"refs/heads/*"
+                -"refs/deploys/*"
+                -"refs/merge/*"
+                -"refs/pull/*"
+            }
+            
+            pathFilter {
+                +"site/**"
+                +"_includes/**"
+                +"src/**"
+                +"public/assets/**"
+                +"package.json"
+                +"package-lock.json"
+            }
+        }
+    }
+    
     buildAndDeployStaging()
 }
 
@@ -120,28 +142,6 @@ job("Remote development images") {
 }
 
 fun Job.buildAndDeployStaging() {
-    startOn {
-        gitPush {
-            enabled = true
-
-            anyRefMatching {
-                +"refs/heads/*"
-                -"refs/deploys/*"
-                -"refs/merge/*"
-                -"refs/pull/*"
-            }
-            
-            pathFilter {
-                +"site/**"
-                +"_includes/**"
-                +"src/**"
-                +"public/assets/**"
-                +"package.json"
-                +"package-lock.json"
-            }
-        }
-    }
-
     parallel {
         runLint()
         runTests()
