@@ -66,9 +66,6 @@ job("Run tests") {
 
             anyRefMatching {
                 +"refs/heads/*"
-                -"refs/deploys/*"
-                -"refs/merge/*"
-                -"refs/pull/*"
             }
         }
     }
@@ -102,10 +99,7 @@ job("Remote development images") {
             enabled = true
 
             anyRefMatching {
-                +"refs/heads/main"
-                -"refs/deploys/*"
-                -"refs/merge/*"
-                -"refs/pull/*"
+                +"refs/heads/*"
             }
 
             pathFilter {
