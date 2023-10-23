@@ -10,9 +10,6 @@ job("Build Guide") {
 
             anyRefMatching {
                 +"refs/heads/*"
-                -"refs/deploys/*"
-                -"refs/merge/*"
-                -"refs/pull/*"
             }
             
             pathFilter {
@@ -49,9 +46,6 @@ job("Run lint") {
 
             anyRefMatching {
                 +"refs/heads/*"
-                -"refs/deploys/*"
-                -"refs/merge/*"
-                -"refs/pull/*"
             }
         }
     }
