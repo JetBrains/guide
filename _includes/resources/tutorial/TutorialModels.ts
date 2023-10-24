@@ -10,7 +10,6 @@ import { EleventyPage } from "../../../src/models";
 import path from "upath";
 import { TutorialStep } from "./TutorialStepModels";
 import { ThumbnailField, VideoBottomField } from "../commonModels";
-import h from "vhtml";
 
 export const TutorialFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -67,14 +66,7 @@ export class Tutorial
 	}
 
 	getThumbnail(): string {
-		return (
-			<img
-				data-template-src="thumbnail"
-				data-template-alt="title"
-				src={this.thumbnail}
-				alt={this.title}
-			/>
-		);
+		return this.thumbnail;
 	}
 }
 

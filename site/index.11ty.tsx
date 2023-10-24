@@ -81,7 +81,6 @@ class IndexPage {
 										resource.resourceType === CHANNEL_RESOURCE
 								)
 								.map((channel) => {
-									const figure = channel.getBoxThumbnail();
 									return (
 										<div class="column has-background-white m-4 is-5 is-2-desktop has-box-hover has-text-centered has-position-relative box">
 											<a
@@ -93,7 +92,7 @@ class IndexPage {
 													class="image mb-4"
 													style="border-radius: 6px; overflow:hidden"
 												>
-													{figure}
+													<img src={channel.logo} alt={channel.title} />
 												</figure>
 												{channel.title}
 											</a>

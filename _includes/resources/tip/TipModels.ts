@@ -6,11 +6,10 @@ import {
 } from "../../../src/ResourceModels";
 import { EleventyPage } from "../../../src/models";
 import path from "upath";
-import { ARTICLE_RESOURCE_TYPE } from "../../../src/resourceType";
 import { ThumbnailField, VideoField } from "../commonModels";
-import h from "vhtml";
+import { TIP_RESOURCE_TYPE } from "../../../src/resourceType";
 
-export const ArticleFrontmatter = Type.Intersect([
+export const TipFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
 	ThumbnailField,
 	VideoField,
@@ -43,26 +42,17 @@ export const ArticleFrontmatter = Type.Intersect([
 		),
 	}),
 ]);
-export type ArticleFrontmatter = Static<typeof ArticleFrontmatter>;
+export type TipFrontmatter = Static<typeof TipFrontmatter>;
 
-export class Article
-	extends Resource<ARTICLE_RESOURCE_TYPE>
-	implements ArticleFrontmatter
-{
-	animatedGif?: ArticleFrontmatter["animatedGif"];
-	screenshot?: ArticleFrontmatter["screenshot"];
+export class Tip extends Resource<TIP_RESOURCE_TYPE> implements TipFrontmatter {
+	animatedGif?: TipFrontmatter["animatedGif"];
+	screenshot?: TipFrontmatter["screenshot"];
 	seealso?: any;
-	thumbnail: ArticleFrontmatter["thumbnail"];
-	video?: ArticleFrontmatter["video"];
-	static frontmatterSchema = ArticleFrontmatter;
+	thumbnail: TipFrontmatter["thumbnail"];
+	video?: TipFrontmatter["video"];
+	static frontmatterSchema = TipFrontmatter;
 
-	constructor({
-		data,
-		page,
-	}: {
-		data: ArticleFrontmatter;
-		page: EleventyPage;
-	}) {
+	constructor({ data, page }: { data: TipFrontmatter; page: EleventyPage }) {
 		super({ data, page });
 		this.animatedGif = data.animatedGif;
 		if (this.animatedGif) {
@@ -75,15 +65,7 @@ export class Article
 		this.seealso = data.seealso;
 		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);
 	}
-
 	getThumbnail(): string {
-		return (
-			<img
-				data-template-src="thumbnail"
-				data-template-alt="title"
-				src={this.thumbnail}
-				alt={this.title}
-			/>
-		);
+		return this.thumbnail;
 	}
 }

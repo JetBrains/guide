@@ -90,8 +90,14 @@ const ResourceCard = ({
 						<figure
 							data-template-class="thumbnailCss"
 							class={`image ${thumbnailFigureCss} ${glowCssClass}`}
-							dangerouslySetInnerHTML={{ __html: thumbnail }}
-						></figure>
+						>
+							<img
+								data-template-src="thumbnail"
+								data-template-title="title"
+								src={thumbnail}
+								alt={title}
+							/>
+						</figure>
 					</a>
 				</div>
 				<div class="card-content has-position-relative">

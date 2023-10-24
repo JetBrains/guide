@@ -38,7 +38,6 @@ class LatestLayout {
 	render(this: LayoutContext, data: ReferenceLayoutProps): JSX.Element {
 		const { content, pagination } = data;
 
-		const figure = undefined;
 		const listing = (
 			<>
 				{pagination &&
@@ -47,14 +46,7 @@ class LatestLayout {
 					})}
 			</>
 		);
-		return (
-			<ReferenceLayout
-				{...data}
-				figure={figure}
-				listing={[listing]}
-				content={content}
-			/>
-		);
+		return <ReferenceLayout {...data} listing={[listing]} content={content} />;
 	}
 }
 

@@ -7,7 +7,6 @@ import {
 import { EleventyPage } from "../../../src/models";
 import { ThumbnailField } from "../commonModels";
 import { PAGE_RESOURCE_TYPE } from "../../../src/resourceType";
-import h from "vhtml";
 
 export const PageFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -31,13 +30,6 @@ export class Page
 	}
 
 	getThumbnail(): string {
-		return (
-			<img
-				data-template-src="thumbnail"
-				data-template-alt="title"
-				src={this.thumbnail}
-				alt={this.title}
-			/>
-		);
+		return this.thumbnail;
 	}
 }

@@ -24,7 +24,6 @@ export class ArticlesLayout {
 			return this.getResource(t.url) as Article;
 		});
 
-		const figure = undefined;
 		const listing = (
 			<>
 				{articles.map((tip) => {
@@ -32,14 +31,7 @@ export class ArticlesLayout {
 				})}
 			</>
 		);
-		return (
-			<ReferenceLayout
-				{...data}
-				figure={figure}
-				listing={[listing]}
-				content={content}
-			/>
-		);
+		return <ReferenceLayout {...data} listing={[listing]} content={content} />;
 	}
 }
 

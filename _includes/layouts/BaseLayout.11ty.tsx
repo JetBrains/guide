@@ -30,7 +30,7 @@ export function BaseLayout(
 	this: LayoutContext,
 	data: BaseLayoutProps
 ): JSX.Element {
-	const { children, title, subtitle, video, resourceType, collections } = data;
+	const { children, title, subtitle, resourceType, collections } = data;
 
 	// Happy DOM throws a DOMException for external script/css even though
 	// we do the settings to suppress it. Vite catches the exception but
@@ -40,8 +40,6 @@ export function BaseLayout(
 	const isNotTest = !(
 		typeof window != "undefined" && !!(window as any).happyDOM
 	);
-	// TODO This is a hack. Bake it into the contract.
-	const hasVideo = !!video || (!!resourceType && resourceType == "playlist");
 
 	// determine if there's an og:image
 	let cardThumbnail, channel;
@@ -75,9 +73,7 @@ export function BaseLayout(
 						<>
 							<link rel="stylesheet" href="/assets/site.scss" />
 							<script defer src="/assets/js/site.js" type="module"></script>
-							{hasVideo && (
-								<script defer src="/assets/js/video.js" type="module"></script>
-							)}
+							<script defer src="/assets/js/video.js" type="module"></script>
 						</>
 					)}
 					<link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />

@@ -24,7 +24,6 @@ export function AuthorLayout(
 		(ci) => ci.author === author.label
 	);
 
-	const figure = <img src={author.thumbnail} alt={author.title} />;
 	const listing = (
 		<>
 			{linkedResources.map((resource) => (
@@ -35,14 +34,7 @@ export function AuthorLayout(
 	);
 	const contentDiv = <div dangerouslySetInnerHTML={{ __html: content }} />;
 
-	return (
-		<ReferenceLayout
-			{...data}
-			figure={[figure]}
-			listing={[listing]}
-			content={contentDiv}
-		/>
-	);
+	return <ReferenceLayout {...data} listing={[listing]} content={contentDiv} />;
 }
 
 export const render = AuthorLayout;

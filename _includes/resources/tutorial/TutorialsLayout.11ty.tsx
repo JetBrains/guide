@@ -24,7 +24,6 @@ class TutorialsLayout {
 			return this.getResource(t.url) as Tutorial;
 		});
 
-		const figure = undefined;
 		const listing = (
 			<>
 				{tutorials.map((tutorial) => {
@@ -32,14 +31,7 @@ class TutorialsLayout {
 				})}
 			</>
 		);
-		return (
-			<ReferenceLayout
-				{...data}
-				figure={figure}
-				listing={[listing]}
-				content={content}
-			/>
-		);
+		return <ReferenceLayout {...data} listing={[listing]} content={content} />;
 	}
 }
 

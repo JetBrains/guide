@@ -8,7 +8,6 @@ import {
 import { EleventyPage } from "../../../src/models";
 import { ThumbnailField } from "../commonModels";
 import { PLAYLIST_RESOURCE_TYPE } from "../../../src/resourceType";
-import h from "vhtml";
 
 export const PlaylistFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -56,13 +55,6 @@ export class Playlist
 	}
 
 	getThumbnail(): string {
-		return (
-			<img
-				data-template-src="thumbnail"
-				data-template-alt="title"
-				src={this.thumbnail}
-				alt={this.title}
-			/>
-		);
+		return this.thumbnail;
 	}
 }

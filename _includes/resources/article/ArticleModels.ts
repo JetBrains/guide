@@ -6,11 +6,10 @@ import {
 } from "../../../src/ResourceModels";
 import { EleventyPage } from "../../../src/models";
 import path from "upath";
+import { ARTICLE_RESOURCE_TYPE } from "../../../src/resourceType";
 import { ThumbnailField, VideoField } from "../commonModels";
-import { TIP_RESOURCE_TYPE } from "../../../src/resourceType";
-import h from "vhtml";
 
-export const TipFrontmatter = Type.Intersect([
+export const ArticleFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
 	ThumbnailField,
 	VideoField,
@@ -43,17 +42,26 @@ export const TipFrontmatter = Type.Intersect([
 		),
 	}),
 ]);
-export type TipFrontmatter = Static<typeof TipFrontmatter>;
+export type ArticleFrontmatter = Static<typeof ArticleFrontmatter>;
 
-export class Tip extends Resource<TIP_RESOURCE_TYPE> implements TipFrontmatter {
-	animatedGif?: TipFrontmatter["animatedGif"];
-	screenshot?: TipFrontmatter["screenshot"];
+export class Article
+	extends Resource<ARTICLE_RESOURCE_TYPE>
+	implements ArticleFrontmatter
+{
+	animatedGif?: ArticleFrontmatter["animatedGif"];
+	screenshot?: ArticleFrontmatter["screenshot"];
 	seealso?: any;
-	thumbnail: TipFrontmatter["thumbnail"];
-	video?: TipFrontmatter["video"];
-	static frontmatterSchema = TipFrontmatter;
+	thumbnail: ArticleFrontmatter["thumbnail"];
+	video?: ArticleFrontmatter["video"];
+	static frontmatterSchema = ArticleFrontmatter;
 
-	constructor({ data, page }: { data: TipFrontmatter; page: EleventyPage }) {
+	constructor({
+		data,
+		page,
+	}: {
+		data: ArticleFrontmatter;
+		page: EleventyPage;
+	}) {
 		super({ data, page });
 		this.animatedGif = data.animatedGif;
 		if (this.animatedGif) {
@@ -66,14 +74,8 @@ export class Tip extends Resource<TIP_RESOURCE_TYPE> implements TipFrontmatter {
 		this.seealso = data.seealso;
 		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);
 	}
+
 	getThumbnail(): string {
-		return (
-			<img
-				data-template-src="thumbnail"
-				data-template-alt="title"
-				src={this.thumbnail}
-				alt={this.title}
-			/>
-		);
+		return this.thumbnail;
 	}
 }

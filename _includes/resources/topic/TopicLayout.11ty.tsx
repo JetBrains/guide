@@ -21,7 +21,6 @@ export function TopicLayout(
 		(ci) => ci.topics && ci.topics.includes(topic.label)
 	);
 
-	const figure = topic.getThumbnail();
 	const listing = (
 		<>
 			{linkedResources.map((resource) => (
@@ -32,14 +31,7 @@ export function TopicLayout(
 	);
 	const contentDiv = <div dangerouslySetInnerHTML={{ __html: content }} />;
 
-	return (
-		<ReferenceLayout
-			{...data}
-			figure={[figure]}
-			listing={[listing]}
-			content={contentDiv}
-		/>
-	);
+	return <ReferenceLayout {...data} listing={[listing]} content={contentDiv} />;
 }
 
 // noinspection JSUnusedGlobalSymbols

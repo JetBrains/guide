@@ -16,7 +16,6 @@ export function PlaylistsLayout(
 	const playlists: Playlist[] = paginationItems.map((p: any) => {
 		return this.getResource(p.url) as Playlist;
 	});
-	const figure = undefined;
 	const listing = (
 		<>
 			{playlists.map((playlist) => {
@@ -24,14 +23,7 @@ export function PlaylistsLayout(
 			})}
 		</>
 	);
-	return (
-		<ReferenceLayout
-			{...data}
-			content={content}
-			figure={figure}
-			listing={[listing]}
-		/>
-	);
+	return <ReferenceLayout {...data} content={content} listing={[listing]} />;
 }
 
 export const render = PlaylistsLayout;

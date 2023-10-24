@@ -4,7 +4,6 @@ import path from "upath";
 import { IconField, LabelField } from "../commonModels";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { TOPIC_RESOURCE_TYPE } from "../../../src/resourceType";
-import h from "vhtml";
 
 export const TopicFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -44,17 +43,6 @@ export class Topic
 	}
 
 	getThumbnail(): string {
-		if (this.logo) {
-			return (
-				<img
-					data-template-src="thumbnail"
-					data-template-alt="title"
-					src={this.logo}
-					alt={this.title}
-				/>
-			);
-		} else {
-			return <i class={`${this.icon} has-text-${this.accent} fa-5x`} />;
-		}
+		return this.logo ? this.logo! : this.icon!;
 	}
 }

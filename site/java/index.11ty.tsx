@@ -16,6 +16,7 @@ const frontmatter: ChannelFrontmatter = {
 	resourceType: "channel",
 	date: new Date(Date.UTC(2020, 1, 11)),
 	author: "hs",
+	// TODO Paul get this out of the schema
 	accent: "primary",
 	icon: "fa-brands fa-java",
 	hero: "/assets/java_splash.svg",

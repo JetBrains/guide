@@ -4,7 +4,6 @@ import { EleventyPage } from "../../../src/models";
 import { LabelField, ThumbnailField } from "../commonModels";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { AUTHOR_RESOURCE_TYPE } from "../../../src/resourceType";
-import h from "vhtml";
 
 export const AuthorFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -29,13 +28,6 @@ export class Author
 	}
 
 	getThumbnail(): string {
-		return (
-			<img
-				data-template-src="thumbnail"
-				data-template-alt="title"
-				src={this.thumbnail}
-				alt={this.title}
-			/>
-		);
+		return this.thumbnail;
 	}
 }

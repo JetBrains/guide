@@ -25,7 +25,16 @@ export function TopicsLayout(
 			<div class="container">
 				<div class="columns is-multiline">
 					{topics.map((topic) => {
-						const figure = topic.getThumbnail();
+						const figure = topic.logo ? (
+							<img
+								data-template-src="thumbnail"
+								data-template-alt="title"
+								src={topic.logo}
+								alt={topic.title}
+							/>
+						) : (
+							<i class={`${topic.icon} has-text-${topic.accent} fa-5x`} />
+						);
 						return (
 							<div class="column is-6 is-4-desktop mb-5 has-box-hover">
 								<div class="is-flex has-position-relative">
@@ -58,12 +67,7 @@ export function TopicsLayout(
 	);
 
 	return (
-		<ReferenceLayout
-			{...data}
-			figure={undefined}
-			listing={[listing]}
-			content={data.content}
-		/>
+		<ReferenceLayout {...data} listing={[listing]} content={data.content} />
 	);
 }
 

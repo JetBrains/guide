@@ -6,13 +6,16 @@ import { ResourceFrontmatter } from "../../src/ResourceModels";
 
 export type ReferenceLayoutProps = {
 	content?: string;
-	figure?: string[];
 	listing: string[];
+	logo?: string;
+	thumbnail?: string;
+	icon?: string;
+	accent?: string;
 } & LayoutProps &
 	ResourceFrontmatter;
 
 export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
-	const { content, figure, listing, pagination } = data;
+	const { content, listing, pagination } = data;
 	const safeListing = (
 		<div
 			class="columns is-multiline"
@@ -29,6 +32,18 @@ export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
 			</div>
 		</section>
 	);
+
+	let figure: undefined | string;
+	if (data.thumbnail) {
+		figure = <img src={data.thumbnail} alt={data.title} />;
+	} else if (data.icon) {
+		figure = <i class={`${data.icon} has-text-${data.accent} fa-5x`} />;
+	} else if (data.logo) {
+		figure = <img src={data.logo} alt={data.title} />;
+	} else {
+		figure = undefined;
+	}
+
 	return (
 		<BaseLayout {...data}>
 			<section class="section">
