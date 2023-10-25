@@ -66,6 +66,7 @@ function determinePropertiesToTraverse(schema: object): object[] {
 type ObjectMap = Record<string, any>;
 type Schema<T> = T & {
 	properties: ObjectMap;
+	required: ObjectMap;
 	$schema: string;
 	$id: string;
 	title: string;
@@ -106,6 +107,20 @@ export async function dumpSchemas<T extends ObjectMap>(
 			// Remove resourceType
 			if ("resourceType" in properties) {
 				delete properties["resourceType"];
+			}
+			if ("required" in thisSchema) {
+				thisSchema.required = thisSchema.required.filter(
+					(it: any) => it !== "resourceType"
+				);
+			}
+			if ("allOf" in thisSchema) {
+				for (const allOf of thisSchema.allOf as Array<any>) {
+					if ("required" in allOf) {
+						allOf.required = allOf.required.filter(
+							(it: any) => it !== "resourceType"
+						);
+					}
+				}
 			}
 
 			// Rewrite author to an enum
