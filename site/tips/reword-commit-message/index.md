@@ -3,6 +3,7 @@ date: 2022-10-06
 title: Edit Commit Message
 topics:
   - vcs
+  - git
 author: pwe
 subtitle: "Edit the wording in your last commit message, after you committed."
 seealso:

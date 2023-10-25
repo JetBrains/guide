@@ -3,6 +3,7 @@ date: 2022-12-09
 title: Browse Branch's Commits
 topics:
   - vcs
+  - git
 author: pwe
 subtitle: Review the changes in main before bringing them to your branch.
 seealso:

@@ -3,6 +3,7 @@ date: 2023-05-13
 title: Resolve Conflicts
 topics:
   - vcs
+  - git
 author: pwe
 subtitle: Let the IDE help in the tricky business of resolving merge conflicts.
 seealso:

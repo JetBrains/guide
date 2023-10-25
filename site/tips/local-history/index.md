@@ -3,6 +3,7 @@ date: 2022-10-27
 title: Use Local History to Avoid Disaster
 topics:
   - vcs
+  - git
 author: pwe
 subtitle: >-
   Use the IDE's built-in history facility to recover changes when VCS can't help
