@@ -72,7 +72,14 @@ export class ExploreViewModel {
 
 		return this.lunrResources.filter(resource => {
 			if (channels.length && !channels.includes(resource.channel)) {
-				return false;
+				if (!topics.length || (topics.length && resource.channel))
+					return false;
+			}
+
+			if (channels.length && !channels.includes(resource.channel)) {
+				if (!(topics.length && !resource.channel)) {
+					return false;
+				}
 			}
 			if (resources.length && !resources.includes(resource.resourceType)) {
 				return false;

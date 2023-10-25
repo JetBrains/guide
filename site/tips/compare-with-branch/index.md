@@ -3,6 +3,7 @@ date: 2022-12-15
 title: Compare With Branch
 topics:
   - vcs
+  - git
 author: pwe
 subtitle: See the changes in another branch's commits.
 seealso:

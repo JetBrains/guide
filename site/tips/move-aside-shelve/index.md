@@ -3,6 +3,7 @@ date: 2023-05-11
 title: Move Work Aside With Shelve
 topics:
   - vcs
+  - git
 author: pwe
 subtitle: Move uncommitted work aside when you need to work on another branch.
 seealso:

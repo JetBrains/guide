@@ -3,6 +3,7 @@ date: 2023-05-10
 title: Rebase Feature Branch
 topics:
   - vcs
+  - git
 author: pwe
 subtitle: Get your feature branch caught up with changes on the main branch.
 seealso:

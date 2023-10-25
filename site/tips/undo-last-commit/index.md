@@ -3,6 +3,7 @@ date: 2022-10-20
 title: Undo Last Commit
 topics:
   - vcs
+  - git
 author: pwe
 subtitle: Undo a commit...without misery.
 seealso:

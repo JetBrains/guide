@@ -3,6 +3,7 @@ date: 2022-12-15
 title: See Unsynced Commits
 topics:
   - vcs
+  - git
 author: pwe
 subtitle: See what's happening on that other branch.
 seealso:

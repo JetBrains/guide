@@ -3,6 +3,7 @@ date: 2023-05-12
 title: Move Work Aside With Stash
 topics:
   - vcs
+  - git
 author: pwe
 subtitle: Use git's stash to move uncommitted work aside temporarily.
 seealso:
