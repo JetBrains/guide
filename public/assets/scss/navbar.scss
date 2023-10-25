@@ -27,3 +27,25 @@
     min-width: 40rem;
   }
 }
+
+.navbar-item.is-fullwidth {
+  position: static;
+
+  .navbar-dropdown {
+    margin-left: -12px;
+    box-shadow: 0 10000px 0 10000px rgba(0,0,0,.5);
+
+    .columns {
+      margin: 0 -32px;
+    }
+
+    img {
+      max-height: none !important;
+    }
+
+    .title {
+      text-transform: uppercase;
+      padding-left: 1rem;
+    }
+  }
+}

@@ -5,7 +5,6 @@ import { PageFrontmatter } from "../_includes/resources/page/PageModels";
 import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
 import MultiColumnSection from "../_includes/pageelements/MultiColumnSection";
 import ListingSection from "../_includes/pageelements/ListingSection.11ty";
-import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
 import { CHANNEL_RESOURCE } from "../src/resourceType";
 import { Resource } from "../src/ResourceModels";
 import { Channel } from "../_includes/resources/channel/ChannelModels";
@@ -24,7 +23,6 @@ class IndexPage {
 	}
 
 	render(this: LayoutContext, data: IndexPageProps): JSX.Element {
-		const featuredChannel = this.getResource("/remote/");
 		const channels = [
 			this.getResource("/dotnet/"),
 			this.getResource("/go/"),
@@ -33,10 +31,10 @@ class IndexPage {
 			this.getResource("/webjs/"),
 		];
 		const communities = [
-			// TODO: These need updating if/when we rename channels to be technology focused.
 			this.getResource("/gamedev/"),
 			this.getResource("/databases/"),
 			this.getResource("/django/"),
+			this.getResource("/remote/"),
 		];
 
 		const hotTopics = [
@@ -53,7 +51,7 @@ class IndexPage {
 				<section className="section has-gradient-purple">
 					<div class="container">
 						<div class="columns is-multiline">
-							<div class="column is-7">
+							<div class="column is-8">
 								<h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold has-text-white">
 									Welcome to the JetBrains Guide
 								</h1>
@@ -62,12 +60,6 @@ class IndexPage {
 									have tips, tutorials, videos, articles and much, much more!
 								</p>
 							</div>
-							<ResourceCard
-								columnClassName={"is-3 is-offset-2 has-shadow"}
-								compactMode={true}
-								hasShadow={true}
-								resource={featuredChannel}
-							/>
 						</div>
 					</div>
 				</section>
@@ -103,7 +95,7 @@ class IndexPage {
 					</div>
 				</section>
 
-				<ListingSection title={"Communities"} resources={communities} />
+				<ListingSection title={"Interests"} resources={communities} />
 
 				<section className="container">
 					<hr />

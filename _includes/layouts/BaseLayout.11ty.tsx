@@ -58,6 +58,32 @@ export function BaseLayout(
 	const year = new Date().getFullYear();
 	const copyright = `Copyright © 2000–${year} <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.`;
 
+	// TODO: data below should probably be cached and defined elsewhere, but hey - WIP!
+	// data for navbar
+	const featuredChannel = collections.resourceMap.get("/remote/");
+	const technologies = [
+		collections.resourceMap.get("/dotnet/"),
+		collections.resourceMap.get("/go/"),
+		collections.resourceMap.get("/java/"),
+		collections.resourceMap.get("/python/"),
+		collections.resourceMap.get("/webjs/"),
+	].filter((it) => it != undefined) as Resource[];
+	const interests = [
+		collections.resourceMap.get("/remote/"),
+		collections.resourceMap.get("/databases/"),
+		collections.resourceMap.get("/gamedev/"),
+		collections.resourceMap.get("/django/"),
+	].filter((it) => it != undefined) as Resource[];
+	const hotTopics = [
+		collections.resourceMap.get("topics:aws"),
+		collections.resourceMap.get("topics:debugging"),
+		collections.resourceMap.get("topics:git"),
+		collections.resourceMap.get("topics:gcp"),
+		collections.resourceMap.get("topics:gradle"),
+		collections.resourceMap.get("topics:refactoring"),
+	].filter((it) => it != undefined) as Resource[];
+
+	// render
 	return (
 		"<!doctype html>" +
 		(
@@ -98,7 +124,12 @@ export function BaseLayout(
 				</head>
 				<body>
 					<GoogleTagManagerBodyNoScript googleTagManagerId="GTM-5P98" />
-					<Navbar />
+					<Navbar
+						featuredResource={featuredChannel}
+						technologies={technologies}
+						interests={interests}
+						topics={hotTopics}
+					/>
 					{channel && <Subnav channel={channel} />}
 					{children}
 					<Footer copyright={copyright}></Footer>

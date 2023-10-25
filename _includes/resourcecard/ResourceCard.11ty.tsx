@@ -58,12 +58,6 @@ const ResourceCard = ({
 	const { author, topics } = references;
 	let thumbnail = resource.getThumbnail();
 
-	// Thumbnail
-	// const isThumbnailImage = thumbnail.indexOf("<img") >= 0;
-	// const thumbnailFigureCss = isThumbnailImage
-	// 	? "is-16by9 is-contained"
-	// 	: "is-16by9 has-text-centered";
-
 	// Data needed for glow info
 	const { thumbnailFigureCss, glowCssClass } = getGlowInfo({
 		displayDate,
