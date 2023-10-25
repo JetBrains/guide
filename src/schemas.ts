@@ -98,15 +98,16 @@ export async function dumpSchemas<T extends ObjectMap>(
 
 		const resourceTypeName = key.toLowerCase();
 
-		if ("resourceType" in thisSchema.properties) {
-			delete thisSchema.properties["resourceType"];
-		}
-
 		const propertiesToTraverse = featureFlags.traverseAllOfProperties
 			? determinePropertiesToTraverse(thisSchema)
 			: [thisSchema.properties];
 
 		for (const properties of propertiesToTraverse) {
+			// Remove resourceType
+			if ("resourceType" in properties) {
+				delete properties["resourceType"];
+			}
+
 			// Rewrite author to an enum
 			if (
 				featureFlags.rewriteReferenceProperties &&
