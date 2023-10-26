@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: "https://youtu.be/ZdaWB9C4UdU?list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW"
 obsoletes:
-  - /go/tips/mongodb-connect-from-ide
+  - /goland/tips/mongodb-connect-from-ide
 ---
 
 To connect to a MongoDB database, head over to the _Database_ tool window on the the right side of the IDE and click on the **+** (_New_) button. Select _Data Source_ then _MongoDB_ as the data source type. Customize the name of the data source, connection details, then click on the _Test_ link to ensure everything is ok.

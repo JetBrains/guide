@@ -11,7 +11,7 @@ subtitle: Building and running Django Containers through Docker
 thumbnail: thumbnail.png
 video: "https://youtu.be/q_cZO1WBWCw"
 obsoletes:
-  - /python/tutorials/django-aws/django-docker
+  - /pycharm/tutorials/django-aws/django-docker
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, we are going to deploy our application inside a Docker Container.

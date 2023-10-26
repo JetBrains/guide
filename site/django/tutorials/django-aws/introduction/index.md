@@ -11,7 +11,7 @@ subtitle: "Introducing Django, a high-level python web framework."
 thumbnail: thumbnail.png
 video: "https://youtu.be/ze8ukid9owU"
 obsoletes:
-  - /python/tutorials/django-aws/introduction
+  - /pycharm/tutorials/django-aws/introduction
 ---
 
 Hello everyone, welcome to part one of the AWS Django tutorial series.

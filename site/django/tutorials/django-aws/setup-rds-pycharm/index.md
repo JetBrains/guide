@@ -11,7 +11,7 @@ subtitle: Connect Postgres with our Django Application.
 thumbnail: thumbnail.png
 video: "https://youtu.be/r90CNlorK78"
 obsoletes:
-  - /python/tutorials/django-aws/setup-rds-pycharm
+  - /pycharm/tutorials/django-aws/setup-rds-pycharm
 ---
 
 Hello everyone, welcome to the Django tutorial series.

@@ -11,7 +11,7 @@ subtitle: Writing and running unit tests in Django
 thumbnail: thumbnail.png
 video: "https://youtu.be/cP5vv9M0VFQ"
 obsoletes:
-  - /python/tutorials/django-aws/unit-tests
+  - /pycharm/tutorials/django-aws/unit-tests
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial we are going to focus on Unit Tests.

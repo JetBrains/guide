@@ -11,7 +11,7 @@ subtitle: Configure security group and launch a new instance.
 thumbnail: thumbnail.png
 video: "https://youtu.be/mwIKy8JnJ7A"
 obsoletes:
-  - /python/tutorials/django-aws/setup-ubuntu
+  - /pycharm/tutorials/django-aws/setup-ubuntu
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial

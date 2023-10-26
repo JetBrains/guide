@@ -11,7 +11,7 @@ subtitle: Using Simple JWT authentication plugin for the Django REST Framework
 thumbnail: thumbnail.png
 video: "https://youtu.be/lzloMbTVHuw"
 obsoletes:
-  - /python/tutorials/django-aws/rest-api-jwt
+  - /pycharm/tutorials/django-aws/rest-api-jwt
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial,

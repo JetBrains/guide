@@ -11,7 +11,7 @@ subtitle: "Setup VPC, Subnets, Route Tables, Internet Gateway and Relational Dat
 thumbnail: thumbnail.png
 video: "https://youtu.be/MpAbI2HUmZE"
 obsoletes:
-  - /python/tutorials/django-aws/setup-vpc-and-rds
+  - /pycharm/tutorials/django-aws/setup-vpc-and-rds
 ---
 
 Hello everyone, welcome to the Django tutorial series.

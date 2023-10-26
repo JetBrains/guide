@@ -12,7 +12,7 @@ seealso:
   - title: (documentation) Database Tool Window
     href: "https://www.jetbrains.com/help/idea/database-tool-window.html"
 obsoletes:
-  - /java/tips/view-database-definitions
+  - /idea/tips/view-database-definitions
 ---
 
 In our paid IDEs, you can open the Database Tool Window and use **␣** (macOS) or **Space** (Windows/Linux) to view definitions of database entities including tables, views, sequences, triggers and more.
