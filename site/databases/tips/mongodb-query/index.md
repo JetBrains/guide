@@ -11,7 +11,7 @@ cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=BPNvTRaRJ2I&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=110
 obsoletes:
-  - /go/tips/mongodq-query
+  - /goland/tips/mongodq-query
 ---
 
 **How to use:**

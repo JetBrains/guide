@@ -13,7 +13,7 @@ subtitle: >-
 thumbnail: thumbnail.png
 video: "https://youtu.be/1Sc7T_muccQ"
 obsoletes:
-  - /python/tutorials/django-aws/setup-integration
+  - /pycharm/tutorials/django-aws/setup-integration
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step,

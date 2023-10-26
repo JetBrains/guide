@@ -11,7 +11,7 @@ subtitle: "Create a new app, define models, and explore the project's structure.
 thumbnail: thumbnail.png
 video: "https://youtu.be/OIOJk_KZe8g"
 obsoletes:
-  - /python/tutorials/django-aws/project-explore
+  - /pycharm/tutorials/django-aws/project-explore
 ---
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, we

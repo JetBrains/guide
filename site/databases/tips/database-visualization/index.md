@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: "https://youtu.be/_vPIrbFm7Hs"
 obsoletes:
-  - /python/tips/database-visualization
+  - /pycharm/tips/database-visualization
 ---
 
 PyCharm Professional comes with all database features from JetBrains DataGrip.

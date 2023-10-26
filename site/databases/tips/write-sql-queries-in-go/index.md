@@ -16,7 +16,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: "https://youtu.be/9oGVEUWehy0"
 obsoletes:
-  - /go/tips/write-sql-queries-in-go
+  - /goland/tips/write-sql-queries-in-go
 ---
 
 SQL queries are recognized automatically when these strings are used in popular SQL packages such as _database/sql_, _github.com/jmoiron/sqlx_, and _github.com/gobuffalo/pop_.

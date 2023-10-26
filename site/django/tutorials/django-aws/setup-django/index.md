@@ -11,7 +11,7 @@ subtitle: Create a virtual environment and install Python dependencies.
 thumbnail: thumbnail.png
 video: "https://youtu.be/2w3OHXLWfL4"
 obsoletes:
-  - /python/tutorials/django-aws/setup-django
+  - /pycharm/tutorials/django-aws/setup-django
 ---
 
 Hello everyone, welcome to the Django tutorial series.
