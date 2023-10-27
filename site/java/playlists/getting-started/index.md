@@ -15,7 +15,7 @@ playlistItems:
   - /java/tips/turn-off-tabs/
   - /java/tips/new-class/
   - /java/tips/navigate-to-test/
-  - /java/tips/search-everywhere/
+  - /tips/search-everywhere/
   - /java/tips/run-current-context/
   - /java/tips/run-targets/
   - /java/tips/commit-changes/

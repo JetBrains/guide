@@ -32,7 +32,7 @@ playlistItems:
   - /go/tips/switch-to-the-editor/
   - /go/tips/hide-all-tool-windows/
   - /go/tips/speed-typing/
-  - /go/tips/search-everywhere/
+  - /tips/search-everywhere/
   - /tips/local-history/
 ---
 

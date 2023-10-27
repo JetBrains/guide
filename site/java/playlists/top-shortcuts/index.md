@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
   - /java/tips/alt-enter/
-  - /java/tips/search-everywhere/
+  - /tips/search-everywhere/
   - /java/tips/escape-focus-editor/
   - /java/tips/smart-completion/
   - /java/tips/complete-statement/

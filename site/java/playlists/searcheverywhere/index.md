@@ -11,9 +11,7 @@ subtitle: Tips for using Search Everywhere (Shift+Shift)
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
-  - /java/tips/search-everywhere/
+  - /tips/search-everywhere/
   - /java/tips/find-actions/
-  - /java/tips/search-everywhere-calcs/
-  - /java/tips/search-everywhere-git-commits/
   - /java/tips/search-camel-case/
 ---
