@@ -18,7 +18,7 @@ tutorialItems:
   - ./font/
   - ./theme/
   - ./tool-windows/
-  - ./find-action/
+  - ../../../tips/find-action
   - ./soft-wrap/
   - ./shortcuts/
   - ./navigation/
