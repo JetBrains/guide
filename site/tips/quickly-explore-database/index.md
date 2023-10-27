@@ -13,7 +13,7 @@ video: "https://youtu.be/hEg40WdXsDg"
 
 ## The Problem
 
-Do you want to quickly explore the tables in your database … without needing to write a single query? In our last video, we saw how the IDE can help us speed up queries. Let’s use a couple of these tricks to check out the best restaurant locations serving seafood. We can see functions like expanding the column names from the star wildcard, and letting the IDE complete the JOIN statement for us.
+Do you want to quickly explore the tables in your database without needing to write a single query? In our last video, we saw how the IDE can help us speed up queries. Let’s use a couple of these tricks to check out the best restaurant locations serving seafood. We can see functions like expanding the column names from the star wildcard, and letting the IDE complete the JOIN statement for us.
 
 ## The Solution
 

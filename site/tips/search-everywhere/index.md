@@ -10,6 +10,9 @@ subtitle: Use ⇧⇧ (macOS), or Shift+Shift (Windows/Linux), to bring up the Se
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: "https://youtu.be/nzDgYoDgWGE"
+seealso:
+  - title: Search Everywhere
+    href: "https://www.jetbrains.com/help/idea/searching-everywhere.html"
 obsoletes:
   - /go/tips/search-everywhere/
   - /java/tips/search-everywhere/

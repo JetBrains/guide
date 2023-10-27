@@ -17,9 +17,9 @@ seealso:
     href: "https://www.youtube.com/watch?v=1UHsJyCq1SU"
   - title: (video) Editor Tips and Tricks in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=JEpeHNsWIMk"
-  - title: (documentation) IntelliJ IDEA Help - Editor Tabs
+  - title: Editor Tabs
     href: "https://www.jetbrains.com/help/idea/settings-editor-tabs.html"
-  - title: (documentation) Menus and Toolbars
+  - title: Menus and Toolbars
     href: "https://www.jetbrains.com/help/idea/customize-actions-menus-and-toolbars.html"
 ---
 

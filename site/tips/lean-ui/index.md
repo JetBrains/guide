@@ -8,6 +8,11 @@ author: hs
 subtitle: "Have you ever wondered how to achieve a lean-looking editor without sacrificing essential features? Our IDEs come packed with functionalities, but sometimes, all those toolbars and status bars can clutter your workspace. "
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
+seealso:
+  - title: Hide or restore all tool windows
+    href: "https://www.jetbrains.com/help/idea/tool-windows.html#hide_all"
+  - title: Show and Hide UI Elements
+    href: "https://www.jetbrains.com/help/idea/customize-actions-menus-and-toolbars.html#show-hide"
 video: "https://youtu.be/Fk_DvYbxNgI"
 ---
 

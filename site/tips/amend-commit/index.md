@@ -9,6 +9,9 @@ subtitle: "Put some missing work back into your last commit, before you push."
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: "https://youtu.be/8sSlWDiwdkc"
+seealso:
+  - title: Amend the previous commit
+    href: "https://www.jetbrains.com/help/idea/edit-project-history.html#amend-commit"
 obsoletes:
   - /dotnet/tips/amend-commit/
   - /idea/tips/amend-commit/

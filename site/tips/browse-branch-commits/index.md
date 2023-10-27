@@ -10,8 +10,7 @@ seealso:
   - title: Sync with a remote Git repository
     href: "https://www.jetbrains.com/help/idea/sync-with-a-remote-repository.html"
   - title: Update your project
-    href: >-
-      https://www.jetbrains.com/help/idea/sync-with-a-remote-repository.html#update
+    href: "https://www.jetbrains.com/help/idea/sync-with-a-remote-repository.html#update"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: "https://www.youtube.com/watch?v=tnz2I9rxrfk"

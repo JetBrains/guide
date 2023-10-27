@@ -8,6 +8,9 @@ author: hs
 subtitle: "We'll walk you through the steps to enable the sleek and efficient New UI in your favorite JetBrains Integrated Development Environment."
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
+seealso:
+  - title: New UI
+    href: "https://www.jetbrains.com/help/idea/new-ui.html"
 video: "https://youtu.be/VFytMnSCp-k"
 ---
 

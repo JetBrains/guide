@@ -8,8 +8,7 @@ author: pwe
 subtitle: Quickly spot which parts of your file have changed since the last commit.
 seealso:
   - title: Tracking changes to a file in the editor
-    href: >-
-      https://www.jetbrains.com/help/idea/viewing-changes-information.html#local_changes
+    href: "https://www.jetbrains.com/help/idea/viewing-changes-information.html#local_changes"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: "https://www.youtube.com/watch?v=wp86DkW0VLA"

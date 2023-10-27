@@ -18,6 +18,9 @@ obsoletes:
   - /idea/tips/recent-files2/
   - /pycharm/tips/recent-files/
   - /webstorm/tips/recent-files/
+seealso:
+  - title: Find Recent Files
+    href: "https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#recent_files"
 video: "https://youtu.be/W-GX0KHmY4w"
 ---
 

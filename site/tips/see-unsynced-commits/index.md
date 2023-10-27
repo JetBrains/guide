@@ -10,8 +10,7 @@ seealso:
   - title: Sync with a remote Git repository
     href: "https://www.jetbrains.com/help/idea/sync-with-a-remote-repository.html"
   - title: Explicitly check for incoming commits on remotes
-    href: >-
-      https://www.jetbrains.com/help/idea/settings-version-control-git.html#840e5ec0
+    href: "https://www.jetbrains.com/help/idea/settings-version-control-git.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: "https://youtu.be/K6v4tAmXfLs"

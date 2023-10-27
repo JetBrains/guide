@@ -9,6 +9,9 @@ subtitle: "If you want to do something, but don't remember the shortcut or menu 
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: "https://youtu.be/eZUe_44B3nk"
+seealso:
+  - title: Find Action
+    href: "https://www.jetbrains.com/help/idea/discover-intellij-idea.html#find-action"
 obsoletes:
   - /goland/tips/find-action/
   - /idea/tips/find-actions/

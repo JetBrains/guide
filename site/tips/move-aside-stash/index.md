@@ -8,8 +8,7 @@ author: pwe
 subtitle: Use git's stash to move uncommitted work aside temporarily.
 seealso:
   - title: Stash changes
-    href: >-
-      https://www.jetbrains.com/help/idea/work-on-several-features-simultaneously.html
+    href: "https://www.jetbrains.com/help/idea/work-on-several-features-simultaneously.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 obsoletes:

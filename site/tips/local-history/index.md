@@ -12,8 +12,7 @@ seealso:
   - title: Local History
     href: "https://www.jetbrains.com/help/idea/local-history.html"
   - title: Retention period for Local History
-    href: >-
-      https://www.jetbrains.com/help/idea/local-history.html#local-history-retention
+    href: "https://www.jetbrains.com/help/idea/local-history.html#local-history-retention"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: "https://youtu.be/qBxu_PdDHFw"
