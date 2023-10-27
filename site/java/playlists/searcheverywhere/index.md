@@ -12,6 +12,6 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
   - /tips/search-everywhere/
-  - /java/tips/find-actions/
+  - /tips/find-action/
   - /java/tips/search-camel-case/
 ---

@@ -14,7 +14,7 @@ subtitle: Become an IDE champ with these bite-sized tips and tricks.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
-  - /python/tips/find-action/
+  - /tips/find-action/
   - /python/tips/reduce-clutter/
   - /python/tips/disable-tabs/
   - /python/tips/recent-files/

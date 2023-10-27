@@ -9,7 +9,7 @@ subtitle: Become an IDE power-user with these bite-sized tips and tricks.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
-  - /go/tips/find-action/
+  - /tips/find-action/
   - /go/tips/reduce-clutter/
   - /go/tips/disable-tabs/
   - /go/tips/recent-files/
