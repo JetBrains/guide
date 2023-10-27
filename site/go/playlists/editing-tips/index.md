@@ -18,7 +18,7 @@ playlistItems:
   - /go/tips/select-all-occurrences-in-a-file/
   - /go/tips/navigate-to-file/
   - /go/tips/navigate-between-opened-files-using-the-switcher/
-  - /go/tips/recent-files/
+  - /tips/jump-to-recent-files/
   - /go/tips/recent-locations/
   - /go/tips/jump-to-the-navigation-bar/
   - /go/tips/structure-popup/

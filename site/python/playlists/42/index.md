@@ -17,8 +17,7 @@ playlistItems:
   - /tips/find-action/
   - /python/tips/reduce-clutter/
   - /python/tips/disable-tabs/
-  - /python/tips/recent-files/
-  - /python/tips/jump-to-tool/
+  - /tips/jump-to-recent-files/
   - /python/tips/navigate-to-symbol/
   - /python/tips/navigate-to-file/
   - /python/tips/back-and-forth/

@@ -13,7 +13,7 @@ playlistItems:
   - /java/tips/navigate-to-implementation/
   - /java/tips/find-usages/
   - /java/tips/navigate-to-test/
-  - /java/tips/recent-files/
+  - /tips/jump-to-recent-files/
   - /java/tips/recent-locations/
   - /java/tips/f2/
 ---

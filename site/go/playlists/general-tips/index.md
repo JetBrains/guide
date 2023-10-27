@@ -12,8 +12,7 @@ playlistItems:
   - /tips/find-action/
   - /go/tips/reduce-clutter/
   - /go/tips/disable-tabs/
-  - /go/tips/recent-files/
-  - /go/tips/jump-to-tool/
+  - /tips/jump-to-recent-files/
   - /go/tips/navigate-to-symbol/
   - /go/tips/navigate-to-file/
   - /go/tips/back-and-forth/
