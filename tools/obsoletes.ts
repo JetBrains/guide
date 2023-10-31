@@ -69,7 +69,8 @@ export function dumpObsoletes(): void {
 
 export async function testObsoletes(file: string, urlPrefix: string) {
 	let errors: string = "";
-	const needsRewriteOfObsolete = urlPrefix.indexOf("localhost") >= 0;
+	const needsRewriteOfObsolete =
+		urlPrefix.indexOf("localhost") >= 0 || urlPrefix.indexOf("labs.jb.gg") >= 0;
 
 	const obsoletes = fs.readFileSync(file, "utf8").split("\n");
 	for (let i = 0; i < obsoletes.length; i++) {
