@@ -13,7 +13,7 @@ seealso:
   - title: Find Action
     href: "https://www.jetbrains.com/help/idea/discover-intellij-idea.html#find-action"
 obsoletes:
-  - /goland/tips/find-action/
+  - /go/tips/find-action/
   - /idea/tips/find-actions/
   - /pycharm/tips/find-action/
   - /webstorm/toggle-options-in-find/

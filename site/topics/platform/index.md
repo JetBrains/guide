@@ -9,7 +9,7 @@ topicType: technology
 author: pwe
 date: 2020-01-01
 obsoletes:
-  - /goland/topics/platform/
+  - /go/topics/platform/
 ---
 
 The technologies are part of the greater IntelliJ Platform, the underlaying technology behind all of our IDEs. The technologies, features, and functionalities found here are shared among all our IDEs and work with more than a specific programming language.

@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: "https://youtu.be/SDV7K2H1HAM?list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW"
 obsoletes:
-  - /goland/tips/mongodb-query-using-sql
+  - /go/tips/mongodb-query-using-sql
 ---
 
 Connect to a MongoDB database from the IDE, then open a _Console_ to it and write a SQL query instead of using the MongoDB format.

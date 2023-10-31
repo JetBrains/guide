@@ -7,7 +7,7 @@ author: pwe
 date: 2020-01-01
 obsoletes:
   - /dotnet/topics/editing/
-  - /goland/topics/editing/
+  - /go/topics/editing/
   - /idea/topics/editing/
   - /pycharm/topics/editing/
   - /webstorm/topics/editing/

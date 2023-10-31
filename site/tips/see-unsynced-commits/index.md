@@ -17,7 +17,7 @@ video: "https://youtu.be/K6v4tAmXfLs"
 obsoletes:
   - /dotnet/tips/see-unsynced-commits/
   - /idea/tips/see-unsynced-commits/
-  - /goland/tips/see-unsynced-commits/
+  - /go/tips/see-unsynced-commits/
   - /pycharm/tips/see-unsynced-commits/
   - /webstorm/tips/see-unsynced-commits/
 ---

@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 obsoletes:
   - /dotnet/tips/move-aside-stash/
-  - /goland/tips/move-aside-stash/
+  - /go/tips/move-aside-stash/
   - /idea/tips/move-aside-stash/
   - /pycharm/tips/move-aside-stash/
   - /webstorm/tips/move-aside-stash/

@@ -15,7 +15,7 @@ video: "https://youtu.be/OlFg1g3hcLs"
 obsoletes:
   - /dotnet/tips/partial-commit/
   - /idea/tips/partial-commit/
-  - /goland/tips/partial-commit/
+  - /go/tips/partial-commit/
   - /pycharm/tips/partial-commit/
   - /webstorm/tips/partial-commit/
 ---

@@ -6,5 +6,5 @@ icon: fas fa-file-code
 author: pwe
 date: 2020-01-01
 obsoletes:
-  - /goland/topics/generics/
+  - /go/topics/generics/
 ---

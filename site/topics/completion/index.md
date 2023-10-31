@@ -7,5 +7,5 @@ author: pwe
 date: 2020-01-01
 obsoletes:
   - /dotnet/topics/completion/
-  - /goland/topics/completion/
+  - /go/topics/completion/
 ---

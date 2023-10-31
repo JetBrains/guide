@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 obsoletes:
   - /dotnet/tips/resolve-conflicts/
-  - /goland/tips/resolve-conflicts/
+  - /go/tips/resolve-conflicts/
   - /idea/tips/resolve-conflicts/
   - /pycharm/tips/resolve-conflicts/
   - /webstorm/tips/resolve-conflicts/

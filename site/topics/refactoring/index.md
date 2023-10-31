@@ -7,7 +7,7 @@ author: pwe
 date: 2020-01-01
 obsoletes:
   - /dotnet/topics/refactoring/
-  - /goland/topics/refactoring/
+  - /go/topics/refactoring/
   - /dotnet/topics/refactoring/
 ---
 

@@ -7,7 +7,7 @@ author: pwe
 date: 2020-01-01
 obsoletes:
   - /dotnet/topics/running/
-  - /goland/topics/running/
+  - /go/topics/running/
   - /idea/topics/running/
   - /pycharm/topics/running/
   - /webstorm/topics/running-debugging/

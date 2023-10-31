@@ -7,7 +7,7 @@ author: pwe
 date: 2020-01-01
 obsoletes:
   - /dotnet/topics/debugging/
-  - /goland/topics/debugging/
+  - /go/topics/debugging/
   - /idea/topics/debugging/
   - /pycharm/topics/debugging/
 ---

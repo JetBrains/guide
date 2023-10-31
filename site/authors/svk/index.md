@@ -5,7 +5,7 @@ thumbnail: ./svk.jpg
 author: svk
 date: 2020-01-01
 obsoletes:
-  - /goland/authors/svk/
+  - /go/authors/svk/
 ---
 
 Sergey is a Product Marketing Manager for GoLand at JetBrains.

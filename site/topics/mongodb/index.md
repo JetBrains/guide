@@ -6,5 +6,5 @@ icon: fas fa-database
 author: pwe
 date: 2020-01-01
 obsoletes:
-  - /goland/topics/mongodb/
+  - /go/topics/mongodb/
 ---

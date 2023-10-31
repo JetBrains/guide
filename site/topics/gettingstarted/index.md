@@ -6,7 +6,7 @@ icon: fas fa-graduation-cap
 author: pwe
 date: 2020-01-01
 obsoletes:
-  - /goland/topics/gettingstarted/
+  - /go/topics/gettingstarted/
   - /idea/topics/gettingstarted/
 ---
 

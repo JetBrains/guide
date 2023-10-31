@@ -17,7 +17,7 @@ video: "https://youtu.be/sAXyAivHeb0"
 obsoletes:
   - /dotnet/tips/undo-last-commit/
   - /idea/tips/undo-last-commit/
-  - /goland/tips/undo-last-commit/
+  - /go/tips/undo-last-commit/
   - /pycharm/tips/undo-last-commit/
   - /webstorm/tips/undo-last-commit/
 ---

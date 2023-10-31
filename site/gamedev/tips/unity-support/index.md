@@ -17,6 +17,8 @@ animatedGif:
   file: ./guide.webm
   width: 500
   height: 314
+obsoletes:
+  - /dotnet/tips/unity-support/
 ---
 
 👾 **Rider meets Unity3D** 🎮

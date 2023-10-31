@@ -6,7 +6,7 @@ icon: fas fa-desktop
 author: pwe
 date: 2020-01-01
 obsoletes:
-  - /goland/topics/interface/
+  - /go/topics/interface/
   - /idea/topics/interface/
 ---
 

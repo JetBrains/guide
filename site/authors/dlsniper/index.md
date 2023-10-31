@@ -5,5 +5,5 @@ thumbnail: ./dlsniper.jpg
 author: dlsniper
 date: 2020-01-01
 obsoletes:
-  - /goland/authors/dlsniper/
+  - /go/authors/dlsniper/
 ---

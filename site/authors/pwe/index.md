@@ -6,7 +6,7 @@ author: pwe
 date: 2020-01-01
 obsoletes:
   - /dotnet/authors/pwe/
-  - /goland/authors/pwe/
+  - /go/authors/pwe/
   - /idea/authors/pwe/
   - /pycharm/authors/pwe/
   - /webstorm/authors/pwe/

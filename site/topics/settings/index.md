@@ -6,7 +6,7 @@ icon: fas fa-cogs
 author: pwe
 date: 2020-01-01
 obsoletes:
-  - /goland/topics/settings/
+  - /go/topics/settings/
   - /idea/topics/settings/
 ---
 

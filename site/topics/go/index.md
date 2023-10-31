@@ -9,7 +9,7 @@ topicType: technology
 author: pwe
 date: 2020-01-01
 obsoletes:
-  - /goland/topics/go/
+  - /go/topics/go/
 ---
 
 Go is an open source project developed by a team at Google and many contributors from the open source community.

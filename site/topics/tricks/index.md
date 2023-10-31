@@ -6,6 +6,6 @@ icon: fas fa-magic
 author: pwe
 date: 2020-01-01
 obsoletes:
-  - /goland/topics/tricks/
+  - /go/topics/tricks/
   - /idea/topics/tricks/
 ---

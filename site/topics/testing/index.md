@@ -7,7 +7,7 @@ author: pwe
 date: 2020-01-01
 obsoletes:
   - /dotnet/topics/testing/
-  - /goland/topics/testing/
+  - /go/topics/testing/
   - /idea/topics/testing/
   - /pycharm/topics/testing/
   - /webstorm/topics/testing/

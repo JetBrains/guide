@@ -11,8 +11,8 @@ subtitle: "Are you tired of hunting for that crucial file buried in your project
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 obsoletes:
-  - /goland/tips/recent-files/
-  - /goland/tips/jump-to-tool/
+  - /go/tips/recent-files/
+  - /go/tips/jump-to-tool/
   - /pycharm/tips/jump-to-tool/
   - /idea/tips/recent-files/
   - /idea/tips/recent-files2/

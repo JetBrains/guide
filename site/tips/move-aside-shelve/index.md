@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 obsoletes:
   - /dotnet/tips/move-aside-shelve/
-  - /goland/tips/move-aside-shelve/
+  - /go/tips/move-aside-shelve/
   - /idea/tips/move-aside-shelve/
   - /pycharm/tips/move-aside-shelve/
   - /webstorm/tips/move-aside-shelve/

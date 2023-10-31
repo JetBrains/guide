@@ -15,7 +15,7 @@ video: "https://youtu.be/qjaCu9BYeUg"
 obsoletes:
   - /dotnet/tips/reword-commit-message/
   - /idea/tips/reword-commit-message/
-  - /goland/tips/reword-commit-message/
+  - /go/tips/reword-commit-message/
   - /pycharm/tips/reword-commit-message/
   - /webstorm/tips/reword-commit-message/
 ---

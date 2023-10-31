@@ -7,7 +7,7 @@ author: pwe
 date: 2020-01-01
 obsoletes:
   - /dotnet/topics/navigation/
-  - /goland/topics/navigation/
+  - /go/topics/navigation/
   - /idea/topics/navigation/
   - /pycharm/topics/navigation/
   - /webstorm/topics/navigation/

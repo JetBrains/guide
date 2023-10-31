@@ -7,7 +7,7 @@ author: pwe
 date: 2020-01-01
 obsoletes:
   - /dotnet/topics/vcs/
-  - /goland/topics/vcs/
+  - /go/topics/vcs/
   - /idea/topics/vcs/
   - /pycharm/topics/vcs/
   - /webstorm/topics/vcs/

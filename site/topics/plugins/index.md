@@ -6,7 +6,7 @@ icon: fas fa-plug
 author: pwe
 date: 2020-01-01
 obsoletes:
-  - /goland/topics/plugins/
+  - /go/topics/plugins/
   - /idea/topics/plugins/
 ---
 

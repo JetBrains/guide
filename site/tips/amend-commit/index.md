@@ -15,7 +15,7 @@ seealso:
 obsoletes:
   - /dotnet/tips/amend-commit/
   - /idea/tips/amend-commit/
-  - /goland/tips/amend-commit/
+  - /go/tips/amend-commit/
   - /pycharm/tips/amend-commit/
   - /webstorm/tips/amend-commit/
 ---

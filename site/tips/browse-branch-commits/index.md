@@ -17,7 +17,7 @@ video: "https://www.youtube.com/watch?v=tnz2I9rxrfk"
 obsoletes:
   - /dotnet/tips/browse-branch-commits/
   - /idea/tips/browse-branch-commits/
-  - /goland/tips/browse-branch-commits/
+  - /go/tips/browse-branch-commits/
   - /pycharm/tips/browse-branch-commits/
   - /webstorm/tips/browse-branch-commits/
 ---

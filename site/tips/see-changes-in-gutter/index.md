@@ -15,7 +15,7 @@ video: "https://www.youtube.com/watch?v=wp86DkW0VLA"
 obsoletes:
   - /dotnet/tips/see-changes-in-gutter/
   - /idea/tips/see-changes-in-gutter/
-  - /goland/tips/see-changes-in-gutter/
+  - /go/tips/see-changes-in-gutter/
   - /pycharm/tips/see-changes-in-gutter/
   - /webstorm/tips/see-changes-in-gutter/
 ---
