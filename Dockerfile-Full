@@ -1,0 +1,30 @@
+FROM node:18-alpine AS builder
+
+WORKDIR /app
+COPY package.json package-lock.json ./
+
+RUN npm install --no-cache
+COPY . .
+RUN npm run build
+RUN rm -rf /app/_site/.assets-cache/
+
+
+FROM nginx:stable-alpine as final
+
+# Copy the Nginx configuration file to the container
+COPY deployment/redirect-test/files/nginx.conf /etc/nginx/nginx.conf
+COPY deployment/redirect-test/files/default.conf /etc/nginx/conf.d/default.conf
+COPY deployment/helm/redirect.conf /etc/nginx/extra/redirect.conf
+
+# Copy files from builder
+COPY --from=builder --chown=nginx:nginx /app/_site/ /usr/share/nginx/html/guide
+
+RUN mkdir -p /var/cache/nginx
+
+RUN chown -R nginx:nginx /var/cache/nginx
+RUN touch /var/run/nginx.pid && \
+        chown -R nginx:nginx /var/run/nginx.pid
+
+USER nginx
+
+WORKDIR /usr/share/nginx/html

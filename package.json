@@ -54,6 +54,7 @@
 		"lint-staged": "^14.0.0",
 		"lunr": "^2.3.9",
 		"markdown-it-prism": "^2.3.0",
+		"node-fetch": "^3.3.2",
 		"node-html-parser": "^6.1.9",
 		"patch-package": "^6.5.1",
 		"plyr": "^3.7.8",

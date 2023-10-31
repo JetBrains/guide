@@ -4,7 +4,7 @@ import { migrateFrontMatter, writeCleanResources } from "./cleaner";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 import chalk from "chalk";
-import { dumpObsoletes } from "./obsoletes";
+import { dumpObsoletes, testObsoletes } from "./obsoletes";
 
 const info = chalk.hex("#087CFA");
 const success = chalk.hex("#21D789");
@@ -79,6 +79,32 @@ yargs(hideBin(process.argv))
 				if (args.debug) {
 					console.log(info(e));
 				}
+			}
+		}
+	)
+	.command(
+		"test-obsoletes [url] [file]",
+		"test obsoletes against a live nginx server",
+		(yargs) => {
+			yargs.positional("file", {
+				type: "string",
+				default: "tools/files/g3-urls.txt",
+				describe: "the file with expected URLs",
+			});
+			yargs.positional("url", {
+				type: "string",
+				describe: "the url to test obsoletes",
+			});
+		},
+		async (args) => {
+			try {
+				console.log(info("Going to test obsoletes against " + args.url));
+
+				await testObsoletes(args.file as string, args.url as string);
+				console.log(success("test obsoletes successful 🎉🎉🎉"));
+			} catch (e) {
+				console.log(error("validation error"));
+				console.log(info(e));
 			}
 		}
 	)
