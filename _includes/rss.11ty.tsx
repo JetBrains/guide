@@ -16,7 +16,7 @@ export function RssLayout (
     items +=
       `<item>
         <title>${encode(page.title, { level: 'xml'})}</title>
-        <link>${path.join(siteUrl, page.url)}</link>
+        <link>${path.join(siteUrl, page.url).replace('https:/www', 'https://www')}</link>
         <description>${encode(page.subtitle, { level: 'xml'})}</description>
         <category>${page.resourceType}</category>
         <author>${page.references?.author.title}</author>        
