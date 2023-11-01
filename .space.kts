@@ -126,6 +126,17 @@ job("Remote development images") {
                 }
             }
         }
+
+        host {
+            dockerBuildPush {
+                context = "."
+                file = ".devcontainer/Dockerfile"
+                labels["vendor"] = "JetBrains"
+                tags {
+                    +"registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-devcontainer-ws:latest"
+                }
+            }
+        }
     }
 }
 
