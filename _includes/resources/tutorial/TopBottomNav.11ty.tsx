@@ -69,13 +69,13 @@ export const BottomNav = ({
 				{previous && (
 					<a
 						href={previous.url}
-						class="bottomnav-previous is-small"
+						class="is-small has-text-grey-darker"
 						aria-label="Bottom Previous Step"
 					>
 						<span class="icon" title={previous.title}>
 							<i class="fas fa-arrow-left" />
 						</span>
-						<span style="padding-left: 1em">{previous.title}</span>
+						<span class="ml-2">{previous.title}</span>
 					</a>
 				)}
 			</div>
@@ -83,10 +83,10 @@ export const BottomNav = ({
 				{next && (
 					<a
 						href={next.url}
-						class="bottomnav-next is-small"
+						class="is-small has-text-grey-darker"
 						aria-label="Bottom Next Step"
 					>
-						<span style="padding-right: 1em">{next.title}</span>
+						<span class="mr-2">{next.title}</span>
 						<span class="icon" title={next.title}>
 							<i class="fas fa-arrow-right" />
 						</span>
