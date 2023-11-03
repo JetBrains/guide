@@ -8,7 +8,7 @@ test("Navbar", () => {
 		<Navbar
 			featuredResource={undefined}
 			technologies={[]}
-			interests={[]}
+			solutions={[]}
 			topics={[]}
 		/>
 	);

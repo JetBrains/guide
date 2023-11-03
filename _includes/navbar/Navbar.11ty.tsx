@@ -6,14 +6,14 @@ import ResourceCard from "../resourcecard/ResourceCard.11ty";
 export type NavbarProps = {
 	featuredResource: Resource | undefined;
 	technologies: Resource[];
-	interests: Resource[];
+	solutions: Resource[];
 	topics: Resource[];
 };
 
 const Navbar = ({
 	featuredResource,
 	technologies,
-	interests,
+	solutions,
 	topics,
 }: NavbarProps): JSX.Element => {
 	return (
@@ -63,7 +63,7 @@ const Navbar = ({
 										)}
 
 										<div class="column is-6 is-3-desktop">
-											<span class="title is-6">By technology</span>
+											<span class="title is-6">Technologies</span>
 											{technologies &&
 												technologies.map((resource: Resource) => (
 													<a class="navbar-item" href={resource.url}>
@@ -73,9 +73,9 @@ const Navbar = ({
 										</div>
 
 										<div class="column is-6 is-3-desktop">
-											<span class="title is-6">By interest</span>
-											{interests &&
-												interests.map((resource: Resource) => (
+											<span class="title is-6">Solutions</span>
+											{solutions &&
+												solutions.map((resource: Resource) => (
 													<a class="navbar-item" href={resource.url}>
 														{resource.title}
 													</a>

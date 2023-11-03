@@ -80,7 +80,12 @@ const ResourceCard = ({
 				class={`card is-equal-height has-box-outline has-box-hover ${cardCssClass}`}
 			>
 				<div class="card-image">
-					<a href={url} data-template-href="url" aria-hidden={true}>
+					<a
+						href={url}
+						data-template-href="url"
+						aria-hidden={true}
+						tabindex={-1}
+					>
 						<figure
 							data-template-class="thumbnailCss"
 							class={`image ${thumbnailFigureCss} ${glowCssClass}`}

@@ -62,13 +62,13 @@ export function BaseLayout(
 	// data for navbar
 	const featuredChannel = collections.resourceMap.get("/remote/");
 	const technologies = [
-		collections.resourceMap.get("/dotnet/"),
-		collections.resourceMap.get("/go/"),
-		collections.resourceMap.get("/java/"),
-		collections.resourceMap.get("/python/"),
 		collections.resourceMap.get("/webjs/"),
+		collections.resourceMap.get("/python/"),
+		collections.resourceMap.get("/java/"),
+		collections.resourceMap.get("/go/"),
+		collections.resourceMap.get("/dotnet/"),
 	].filter((it) => it != undefined) as Resource[];
-	const interests = [
+	const solutions = [
 		collections.resourceMap.get("/remote/"),
 		collections.resourceMap.get("/databases/"),
 		collections.resourceMap.get("/gamedev/"),
@@ -127,7 +127,7 @@ export function BaseLayout(
 					<Navbar
 						featuredResource={featuredChannel}
 						technologies={technologies}
-						interests={interests}
+						solutions={solutions}
 						topics={hotTopics}
 					/>
 					{channel && <Subnav channel={channel} />}

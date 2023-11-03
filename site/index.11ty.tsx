@@ -24,19 +24,18 @@ class IndexPage {
 
 	render(this: LayoutContext, data: IndexPageProps): JSX.Element {
 		const channels = [
-			this.getResource("/dotnet/"),
-			this.getResource("/go/"),
-			this.getResource("/java/"),
-			this.getResource("/python/"),
 			this.getResource("/webjs/"),
+			this.getResource("/python/"),
+			this.getResource("/java/"),
+			this.getResource("/go/"),
+			this.getResource("/dotnet/"),
 		];
-		const communities = [
+		const solutions = [
 			this.getResource("/gamedev/"),
 			this.getResource("/databases/"),
 			this.getResource("/django/"),
 			this.getResource("/remote/"),
 		];
-
 		const hotTopics = [
 			this.getResource("/topics/aws/"),
 			this.getResource("/topics/debugging/"),
@@ -57,7 +56,8 @@ class IndexPage {
 								</h1>
 								<p class="subtitle mb-5 has-text-white">
 									Learn about technologies and become a badass developer. We
-									have tips, tutorials, videos, articles and much, much more!
+									have tips, tutorials, videos, articles and much, much more
+									covering popular technologies, solutions, and hot topics!
 								</p>
 							</div>
 						</div>
@@ -95,11 +95,34 @@ class IndexPage {
 					</div>
 				</section>
 
-				<ListingSection title={"Interests"} resources={communities} />
+				<ListingSection title={"Solutions"} resources={solutions} />
 
-				<section className="container">
-					<hr />
-				</section>
+				<MultiColumnSection>
+					<div>
+						<h2>Learn something new, quickly</h2>
+						<p>
+							We have created the JetBrains Guide, a collection of bite-sized
+							visual resources, organized to help spark your learning. We hope
+							it helps you get into the flow and excel at what you do.
+						</p>
+					</div>
+					<div>
+						<h2>Sharing feedback and contributing</h2>
+						<p>
+							The JetBrains Guide is also an open project, with{" "}
+							<a href="https://github.com/jetbrains/guide">
+								a repository in GitHub
+							</a>{" "}
+							that hosts all the content. We write all the content in Markdown
+							and render a static site. If you'd like to contribute to it,
+							please refer to the{" "}
+							<a href="https://github.com/jetbrains/guide/blob/main/README.md">
+								README
+							</a>{" "}
+							for more information.
+						</p>
+					</div>
+				</MultiColumnSection>
 
 				<section className="section">
 					<div class="container">
@@ -167,33 +190,6 @@ class IndexPage {
 						</div>
 					</div>
 				</section>
-
-				<MultiColumnSection>
-					<div>
-						<h2>Learn something new, quickly</h2>
-						<p>
-							We have created the JetBrains Guide, a collection of bite-sized
-							visual resources, organized to help spark your learning. We hope
-							it helps you get into the flow and excel at what you do.
-						</p>
-					</div>
-					<div>
-						<h2>Sharing feedback and contributing</h2>
-						<p>
-							The JetBrains Guide is also an open project, with{" "}
-							<a href="https://github.com/jetbrains/guide">
-								a repository in GitHub
-							</a>{" "}
-							that hosts all the content. We write all the content in Markdown
-							and render a static site. If you'd like to contribute to it,
-							please refer to the{" "}
-							<a href="https://github.com/jetbrains/guide/blob/main/README.md">
-								README
-							</a>{" "}
-							for more information.
-						</p>
-					</div>
-				</MultiColumnSection>
 			</BaseLayout>
 		);
 	}
