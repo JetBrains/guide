@@ -48,7 +48,7 @@ export function TopicsLayout(
 									<div>
 										<a
 											href={topic.url}
-											aria-label={`Topic`}
+											aria-label={`Tag`}
 											class="is-size-5 has-text-weight-bold mb-2 title is-stretched-link"
 										>
 											{topic.title}

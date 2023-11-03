@@ -13,7 +13,7 @@ export function TopicLayout(
 	const { collections, content, page } = data;
 	const topic = collections.resourceMap.get(`topics:${page.fileSlug}`) as Topic;
 	if (!topic) {
-		throw new Error(`Topic "${page.fileSlug}" not in collection`);
+		throw new Error(`Tag "${page.fileSlug}" not in collection`);
 	}
 
 	const linkedResources = this.getResources().filter(
