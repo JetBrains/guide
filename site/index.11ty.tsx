@@ -85,14 +85,14 @@ class IndexPage {
 										<div class="column has-background-white m-4 is-5 is-2-desktop has-box-hover has-text-centered has-position-relative box">
 											<a
 												href={channel.url}
-												aria-label={`Topic`}
+												aria-label={channel.title}
 												class="is-size-5 has-text-weight-bold title is-stretched-link"
 											>
 												<figure
 													class="image mb-4"
 													style="border-radius: 6px; overflow:hidden"
 												>
-													<img src={channel.logo} alt={channel.title} />
+													<img src={channel.logo} alt="" />
 												</figure>
 												{channel.title}
 											</a>
@@ -128,13 +128,21 @@ class IndexPage {
 								let figure: string;
 								if (topic.icon) {
 									figure = (
-										<i class={`${topic.icon} has-text-${topic.accent} fa-5x`} />
+										<i
+											class={`${topic.icon} has-text-${topic.accent} fa-5x`}
+											role="link"
+											aria-label={topic.title}
+										/>
 									);
 								} else if (topic.logo) {
 									figure = <img src={topic.logo} alt={topic.title} />;
 								} else {
 									figure = (
-										<i class={`fas fa-file has-text-${topic.accent} fa-5x`} />
+										<i
+											class={`fas fa-file has-text-${topic.accent} fa-5x`}
+											role="link"
+											aria-label={topic.title}
+										/>
 									);
 								}
 
@@ -151,7 +159,7 @@ class IndexPage {
 											<div>
 												<a
 													href={topic.url}
-													aria-label={`Topic`}
+													aria-label={topic.title}
 													class="is-size-5 has-text-weight-bold mb-2 title is-stretched-link"
 												>
 													{topic.title}

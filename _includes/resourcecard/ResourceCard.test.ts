@@ -9,7 +9,7 @@ test("ResourceCard", () => {
 
 	document.body.innerHTML = ResourceCard({ resource });
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
-		name: "Resource",
+		name: fixtures.tips[0].title,
 	});
 	expect(links[0].href).to.equal(fixtures.tips[0].url);
 });

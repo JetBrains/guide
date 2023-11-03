@@ -93,6 +93,7 @@ export function BaseLayout(
 					{cardThumbnail && <meta property="og:image:alt" content={title} />}
 					<meta name="twitter:card" content="summary" />
 					<meta name="twitter:site" content="@jetbrains" />
+					{subtitle && <meta name="description" content={subtitle} />}
 					<GoogleTagManagerHeadScript googleTagManagerId="GTM-5P98" />
 				</head>
 				<body>

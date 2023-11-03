@@ -86,7 +86,7 @@ const ResourceCard = ({
 				class={`card is-equal-height has-box-outline has-box-hover ${cardCssClass}`}
 			>
 				<div class="card-image">
-					<a href={url} data-template-href="url">
+					<a href={url} data-template-href="url" aria-hidden={true}>
 						<figure
 							data-template-class="thumbnailCss"
 							class={`image ${thumbnailFigureCss} ${glowCssClass}`}
@@ -112,7 +112,7 @@ const ResourceCard = ({
 					)}
 					<a
 						class="title is-size-5 is-stretched-link clamp clamp-2 mb-1"
-						aria-label={`Resource`}
+						aria-label={title}
 						data-template="title"
 						href={url}
 					>

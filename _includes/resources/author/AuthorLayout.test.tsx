@@ -14,10 +14,9 @@ test("should render AuthorLayout", () => {
 	};
 	document.body.innerHTML = AuthorLayout.call(fixtures.context, renderProps);
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
-		name: "Resource",
+		name: fixtures.tutorialStepItems[2].data.title,
 	});
-	expect(links.length).to.equal(19);
-	expect(links[5].href).to.equal(
+	expect(links[0].href).to.equal(
 		"/tutorials/some-tutorial/third-tutorialstep/"
 	);
 });

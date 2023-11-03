@@ -96,7 +96,9 @@ describe("Faceted Browse", () => {
 
 	test("render initial json resources", () => {
 		evm.renderCards(lunrResources);
-		const resourceCards = screen.getAllByRole("link", { name: "Resource" });
+		const resourceCards = screen
+			.getAllByRole("link")
+			.filter((it) => it.className.indexOf("title") >= 0);
 		expect(resourceCards.length).to.equal(lunrResources.length);
 		expect(resourceCards[0].textContent).to.equal(lunrResources[0].title);
 		expect(resourceCards[21].textContent).to.equal(lunrResources[21].title);

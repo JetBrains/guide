@@ -20,7 +20,7 @@ test("should render PlaylistLayout", () => {
 	fixtures.context.getResource = () => firstResource;
 	document.body.innerHTML = PlaylistsLayout.call(fixtures.context, renderProps);
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
-		name: "Resource",
+		name: firstResource.title,
 	});
 	expect(links[0].href).to.equal(firstResource.url);
 });

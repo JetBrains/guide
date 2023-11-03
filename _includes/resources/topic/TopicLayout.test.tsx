@@ -12,8 +12,7 @@ test("should render TopicLayout", () => {
 	};
 	document.body.innerHTML = TopicLayout.call(fixtures.context, topicLayoutData);
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
-		name: "Resource",
+		name: fixtures.tipItems[0].data.title,
 	});
-	expect(links.length).to.equal(5);
 	expect(links[0].href).to.equal("/tips/some-tip/");
 });
