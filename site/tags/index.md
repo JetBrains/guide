@@ -1,7 +1,7 @@
 ---
 eleventyExcludeFromCollections: true
-title: Topics
-subtitle: Explore all available resources organized by a programming topic.
+title: Tags
+subtitle: Explore all available Guide content across all topics.
 layout: resources/topic/TopicsLayout.11ty.tsx
 author: pwe
 date: 2020-01-01

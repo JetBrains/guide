@@ -137,7 +137,6 @@ describe("Faceted Browse", () => {
 	test("Test full explore template", () => {
 		expect(screen.getByTitle("Channels Group")).to.exist;
 		expect(screen.getByTitle("Resources Group")).to.exist;
-		// expect(screen.getByTitle("Top Topics")).to.exist;
 
 		cardTemplate = document.getElementById("cardTemplate");
 		facetMenuNode = document.getElementById("facetMenu");

@@ -161,7 +161,7 @@ class DotNetHomepage {
 					<ListingSection
 						title={`Learn about refactoring`}
 						resources={refactoringTips}
-						moreLink={`/topics/refactoring/`}
+						moreLink={`/tags/refactoring/`}
 						separator={true}
 						includeCardFooter={false}
 					/>
@@ -171,7 +171,7 @@ class DotNetHomepage {
 					<ListingSection
 						title={`Make your .NET apps faster!`}
 						resources={profilingContent}
-						moreLink={`/topics/profiling/`}
+						moreLink={`/tags/profiling/`}
 						separator={false}
 						includeCardFooter={false}
 						includeContentType={true}

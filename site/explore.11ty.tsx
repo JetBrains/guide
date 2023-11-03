@@ -40,7 +40,7 @@ const exploreMenu: ExploreGroup[] = [
 		],
 	},
 	{
-		label: "Top Topics",
+		label: "Top Tags",
 		facetGroup: "topics",
 		items: [
 			{ value: "aws", label: "AWS" },

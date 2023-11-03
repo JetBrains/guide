@@ -82,7 +82,7 @@ class DatabasesHomepage {
 					<ListingSection
 						title={`Latest tips`}
 						resources={tips}
-						moreLink={`/topics/databases/`}
+						moreLink={`/tags/databases/`}
 						separator={false}
 						includeCardFooter={false}
 						sectionExtraClass={"has-background-grey-lighter"}

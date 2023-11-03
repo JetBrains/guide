@@ -37,12 +37,12 @@ class IndexPage {
 			this.getResource("/remote/"),
 		];
 		const hotTopics = [
-			this.getResource("/topics/aws/"),
-			this.getResource("/topics/debugging/"),
-			this.getResource("/topics/git/"),
-			this.getResource("/topics/gcp/"),
-			this.getResource("/topics/gradle/"),
-			this.getResource("/topics/refactoring/"),
+			this.getResource("/tags/aws/"),
+			this.getResource("/tags/debugging/"),
+			this.getResource("/tags/git/"),
+			this.getResource("/tags/gcp/"),
+			this.getResource("/tags/gradle/"),
+			this.getResource("/tags/refactoring/"),
 		] as Topic[];
 
 		return (
@@ -129,11 +129,11 @@ class IndexPage {
 						<div class="columns is-vcentered is-mobile">
 							<div class="column is-8">
 								<h2 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
-									Hot topics
+									Hot tags
 								</h2>
 							</div>
 							<div class="column has-text-right">
-								<a class="button is-rounded is-outlined" href="/topics/">
+								<a class="button is-rounded is-outlined" href="/tags/">
 									More...
 								</a>
 							</div>
