@@ -83,7 +83,7 @@ const Navbar = ({
 										</div>
 
 										<div class="column is-12 is-3-desktop is-hidden-touch">
-											<span class="title is-6">Hot topics</span>
+											<span class="title is-6">Hot tags</span>
 											{topics &&
 												topics.map((resource: Resource) => (
 													<a class="navbar-item" href={resource.url}>
