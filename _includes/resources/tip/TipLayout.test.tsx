@@ -12,5 +12,5 @@ test("should render TipLayout", () => {
 		page: tip0.page,
 	};
 	document.body.innerHTML = TipLayout.call(fixtures.context, renderProps);
-	expect(screen.getByText(tip0.data.title)).to.exist;
+	expect(screen.getAllByText(tip0.data.title)[0]).to.exist;
 });

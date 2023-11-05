@@ -8,6 +8,7 @@ import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
+import RelatedResources from "../../relatedresources/RelatedResources.11ty";
 
 export type LinkLayoutData = LayoutProps & LinkFrontmatter;
 
@@ -31,6 +32,11 @@ export function LinkLayout(
 	const topics = link.references.topics
 		? (link.references.topics as Topic[])
 		: [];
+
+	// For "related resources", get an array
+	const allResources = this.getResources({
+		resourceTypes: ["tip", "tutorial", "tutorialstep", "link", "article"],
+	});
 
 	// Main content
 	const main = (
@@ -72,6 +78,7 @@ export function LinkLayout(
 							)}
 						</main>
 					</div>
+					<RelatedResources currentResource={link} items={allResources} />
 				</div>
 			</div>
 		</div>

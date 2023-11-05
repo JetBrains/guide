@@ -10,6 +10,7 @@ import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
+import RelatedResources from "../../relatedresources/RelatedResources.11ty";
 
 export type TipLayoutData = LayoutProps & TipFrontmatter;
 
@@ -33,6 +34,11 @@ export function TipLayout(
 	const topics = tip.references.topics
 		? (tip.references.topics as Topic[])
 		: [];
+
+	// For "related resources", get an array
+	const allResources = this.getResources({
+		resourceTypes: ["tip", "tutorial", "tutorialstep", "link", "article"],
+	});
 
 	// Main content
 	const main = (
@@ -67,6 +73,7 @@ export function TipLayout(
 							{tip.seealso && <SeeAlso items={tip.seealso} />}
 						</main>
 					</div>
+					<RelatedResources currentResource={tip} items={allResources} />
 				</div>
 			</div>
 		</div>
