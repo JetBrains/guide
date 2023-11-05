@@ -36,7 +36,7 @@ const exploreMenu: ExploreGroup[] = [
 			{ value: "/go/", label: "Go" },
 			{ value: "/java/", label: "Java" },
 			{ value: "/python/", label: "Python" },
-			{ value: "/webjs/", label: "Web and JavaScript" },
+			{ value: "/javascript/", label: "JavaScript and TypeScript" },
 		],
 	},
 	{
