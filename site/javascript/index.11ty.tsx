@@ -26,9 +26,9 @@ const frontmatter: ChannelFrontmatter = {
 	hero: "/assets/javascript_web_splash.svg",
 	logo: "thumbnail.png",
 	subnav: [
-		{ title: "Download", url: "https://www.jetbrains.com/webstorm/" },
-		{ title: "Blog", url: "https://blog.jetbrains.com/webstorm/" },
-		{ title: "Docs", url: "https://www.jetbrains.com/help/" },
+		{ title: "Tips", url: "/javascript/tips/" },
+		{ title: "Links", url: "/javascript/links/" },
+		{ title: "Tutorials", url: "/javascript/tutorials/" },
 	],
 };
 
