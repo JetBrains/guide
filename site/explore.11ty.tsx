@@ -57,7 +57,8 @@ const exploreMenu: ExploreGroup[] = [
 		label: "Resources",
 		facetGroup: "resources",
 		items: [
-			{ value: "article", label: "Articles" },
+			// Hide these until we have some articles
+			// { value: "article", label: "Articles" },
 			{ value: "link", label: "Links" },
 			{ value: "playlist", label: "Playlists" },
 			{ value: "tip", label: "Tips" },
