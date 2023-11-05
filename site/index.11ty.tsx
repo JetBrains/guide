@@ -24,7 +24,7 @@ class IndexPage {
 
 	render(this: LayoutContext, data: IndexPageProps): JSX.Element {
 		const channels = [
-			this.getResource("/webjs/"),
+			this.getResource("/javascript/"),
 			this.getResource("/python/"),
 			this.getResource("/java/"),
 			this.getResource("/go/"),

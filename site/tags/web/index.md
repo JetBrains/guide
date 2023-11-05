@@ -1,6 +1,6 @@
 ---
 title: Web Development
-subtitle: Working with web technologies.
+subtitle: Working with technologies in the web platform such as HTML, CSS, images, and JavaScript.
 accent: primary
 icon: fas fa-globe
 author: pwe
@@ -12,7 +12,7 @@ obsoletes:
 ---
 
 Our IDEs have powerful web development features based on the inclusion
-of [WebStorm](https://www.jetbrains.com/webstorm/), a high-end Web and NodeJS IDE.
+of [WebStorm](https://www.jetbrains.com/webstorm/), a high-end JavaScript and TypeScript IDE.
 
 ## See Also
 

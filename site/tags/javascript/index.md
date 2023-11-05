@@ -10,4 +10,4 @@ obsoletes:
 ---
 
 Many of our IDEs have powerful JavaScript features based on the inclusion
-of [WebStorm](https://www.jetbrains.com/webstorm/), a high-end Web and JavaScript IDE.
+of [WebStorm](https://www.jetbrains.com/webstorm/), a high-end JavaScript and TypeScript IDE.
