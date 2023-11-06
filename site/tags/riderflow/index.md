@@ -8,6 +8,7 @@ author: pwe
 date: 2020-01-01
 obsoletes:
   - /dotnet/topics/riderflow/
+  - /dotnet/products/riderflow/
 ---
 
 RiderFlow is a free plugin for the Unity Editor that helps you gain a deeper understanding of scenes.

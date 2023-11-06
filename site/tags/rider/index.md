@@ -8,6 +8,7 @@ author: pwe
 date: 2020-01-01
 obsoletes:
   - /dotnet/topics/rider/
+  - /dotnet/products/rider/
 ---
 
 JetBrains Rider is a cross-platform .NET IDE based on the IntelliJ platform and ReSharper.

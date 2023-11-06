@@ -8,6 +8,7 @@ author: pwe
 date: 2020-01-01
 obsoletes:
   - /dotnet/topics/resharper/
+  - /dotnet/products/resharper/
 ---
 
 ReSharper makes Visual Studio a much better IDE! ReSharper extends Visual Studio with over 2200 on-the-fly code inspections for C#, VB.NET, ASP.NET, and other technologies. For most inspections, ReSharper provides quick-fixes (light bulbs) to improve the code.

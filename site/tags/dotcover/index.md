@@ -8,6 +8,7 @@ author: pwe
 date: 2020-01-01
 obsoletes:
   - /dotnet/topics/dotcover/
+  - /dotnet/products/dotcover/
 ---
 
 JetBrains dotCover is a .NET unit test runner and code coverage tool that integrates with Visual Studio and JetBrains Rider.
