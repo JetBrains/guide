@@ -57,7 +57,7 @@ export function dumpObsoletes(): void {
 	// Append other rewrites
 	obsoletes.push(createNginxRule("/idea", "java"));
 	obsoletes.push(createNginxRule("/pycharm", "python"));
-	obsoletes.push(createNginxRule("/webstorm", "webjs"));
+	obsoletes.push(createNginxRule("/webstorm", "javascript"));
 
 	// Write file
 	obsoletes.forEach(function (e) {
