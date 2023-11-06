@@ -1,8 +1,7 @@
 ---
 title: Python
 subtitle: Work productively when coding Python.
-accent: primary
-icon: fab fa-python
+logo: thumbnail.png
 author: pwe
 date: 2020-01-01
 obsoletes:

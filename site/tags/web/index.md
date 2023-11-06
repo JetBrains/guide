@@ -1,8 +1,7 @@
 ---
 title: Web Development
 subtitle: Working with technologies in the web platform such as HTML, CSS, images, and JavaScript.
-accent: primary
-icon: fas fa-globe
+logo: thumbnail.png
 author: pwe
 date: 2020-01-01
 obsoletes:

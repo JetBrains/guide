@@ -4,7 +4,6 @@ date: 2019-02-04
 title: Navigation Bar Intro
 topics:
   - navigation
-  - navigationbar
   - pytest
 author: pwe
 subtitle: "Move around files with keyboard, without wasting screen UI space"

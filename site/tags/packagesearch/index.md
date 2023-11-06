@@ -1,8 +1,7 @@
 ---
 title: Package Search
 subtitle: "Search, evaluate, and manage dependencies in IDE easily."
-accent: primary
-icon: fas fa-layer-group
+logo: thumbnail.png
 author: pwe
 date: 2020-01-01
 obsoletes:

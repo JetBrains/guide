@@ -3,7 +3,6 @@ date: 2019-01-21
 title: Navigate Files With Navigation Bar
 topics:
   - navigation
-  - navigationbar
 author: pwe
 subtitle: >-
   Move around your project tree and select files, from your keyboard, with the

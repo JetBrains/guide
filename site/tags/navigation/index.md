@@ -1,8 +1,7 @@
 ---
 title: Navigation
 subtitle: Productive ways to move around in your project.
-accent: primary
-icon: fas fa-map-marked
+logo: thumbnail.png
 author: pwe
 date: 2020-01-01
 obsoletes:
@@ -11,6 +10,7 @@ obsoletes:
   - /idea/topics/navigation/
   - /pycharm/topics/navigation/
   - /webstorm/topics/navigation/
+  - /pycharm/topics/navigationbar/
 ---
 
 Our IDEs help you find your way through the source code using the declarations, members, method calls, inheritance

@@ -1,8 +1,7 @@
 ---
 title: Build
 subtitle: Work effectively with build tools.
-accent: primary
-icon: fas fa-hammer
+logo: thumbnail.png
 author: pwe
 date: 2020-01-01
 obsoletes:

@@ -1,8 +1,7 @@
 ---
 title: Databases
 subtitle: Working with relational databases.
-accent: primary
-icon: fas fa-database
+logo: thumbnail.png
 website: "https://jetbrains.com/datagrip"
 topicType: technology
 author: pwe
