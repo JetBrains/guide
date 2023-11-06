@@ -33,7 +33,7 @@ This report shows how many files were covered with tests, including the percenta
 
 ### See Also
 
-- [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/jetbrains/guide/main/sites/dotnet-guide/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.
+- [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/jetbrains/guide/main/site/dotnet/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.
 - [.NET Guide - Testing](https://www.jetbrains.com/dotnet/guide/topics/testing/)
 - [WebStorm Guide - Testing](https://www.jetbrains.com/webstorm/guide/topics/testing/)
 - [Unit Testing in ReSharper/Rider](https://www.jetbrains.com/help/rider/Unit_Testing__Index.html)
