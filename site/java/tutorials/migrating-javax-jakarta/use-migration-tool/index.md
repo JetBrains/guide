@@ -21,4 +21,4 @@ You can select the scope here, for example _MyWebApp_. This also allows you to g
 
 Press **Do Refactor**. Your Java classes should be fixed now and not showing any errors. Now let's rebuild our application with **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux) and then run it with **⌃R** (macOS), or **Shift**+**F10** (Windows/Linux).
 
-Now you should be able to navigate to [localhost:8080/MyWebApp](localhost:8080/MyWebApp) again and see the application running once more without any errors.
+Now you should be able to navigate to `localhost:8080/MyWebApp` again and see the application running once more without any errors.

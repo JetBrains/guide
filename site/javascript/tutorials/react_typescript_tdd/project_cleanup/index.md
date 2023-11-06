@@ -26,7 +26,7 @@ Along the way we'll show some IDE features in action.
 ## Code
 
 The finished code for this tutorial step is
-[in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/project_cleanup).
+[in the repository](https://github.com/jetbrains/guide/tree/main/site/javascript/demos/tutorials/react_typescript_tdd/project_cleanup).
 
 ## Reformatting Code
 

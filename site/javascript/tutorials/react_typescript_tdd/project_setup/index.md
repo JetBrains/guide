@@ -24,7 +24,7 @@ In this tutorial step, we will generate a React+TypeScript project then open it 
 ## Code
 
 The finished code for this tutorial step is
-[in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/project_setup).
+[in the repository](https://github.com/jetbrains/guide/tree/main/site/javascript/demos/tutorials/react_typescript_tdd/project_setup).
 
 ## Project Creation
 

@@ -53,6 +53,6 @@ to `jakarta`:
 
 Now let's rebuild our application again with **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux) and then run it with **⌃R** (macOS), **Shift+F10** (Windows/Linux).
 
-Your application should still be available at [localhost:8080/MyWebApp](localhost:8080/MyWebApp).
+Your application should still be available at `localhost:8080/MyWebApp`.
 
 Your code should now be the same as the `jakarta` branch in the project. You can verify this by navigating to the _src_ directory in IntelliJ IDEA then right-click and select **Git > Compare with Branch...** and select the `jakarta` branch.

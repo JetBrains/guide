@@ -22,7 +22,7 @@ Then, only at the end of development, we will look at the app in the browser.
 ## Code
 
 The finished code for this tutorial step is
-[in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/testing).
+[in the repository](https://github.com/jetbrains/guide/tree/main/site/javascript/demos/tutorials/react_typescript_tdd/testing).
 
 ## Pretty Jest
 

@@ -33,7 +33,7 @@ As in previous steps, start with the following setup:
 ## Code
 
 The finished code for this tutorial step is
-[in the repository](https://github.com/jetbrains/guide/tree/main/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/rich_events_and_testing).
+[in the repository](https://github.com/jetbrains/guide/tree/main/site/javascript/demos/tutorials/react_typescript_tdd/rich_events_and_testing).
 
 ## First Failing Test
 
