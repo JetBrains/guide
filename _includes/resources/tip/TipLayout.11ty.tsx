@@ -10,6 +10,7 @@ import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
+import RelatedResources from "../../relatedresources/RelatedResources.11ty";
 
 export type TipLayoutData = LayoutProps & TipFrontmatter;
 
@@ -34,42 +35,53 @@ export function TipLayout(
 		? (tip.references.topics as Topic[])
 		: [];
 
+	// For "related resources", get an array
+	const allResources = this.getResources({
+		resourceTypes: ["tip", "tutorial", "tutorialstep", "link", "article"],
+	});
+
 	// Main content
 	const main = (
-		<div class="section">
-			<div class="container">
-				<div class="columns is-multiline">
-					<div class="column">
-						<main class="content">
-							<ArticleTitleSubtitle title={tip.title} subtitle={tip.subtitle} />
-							<ArticleAuthor author={author} displayDate={tip.displayDate} />
-							<ArticleTopics topics={topics} />
-
-							{tip.animatedGif && <AnimatedGif {...tip.animatedGif} />}
-
-							{tip.screenshot && (
-								<img
-									src={tip.screenshot}
-									alt="Tip Screenshot"
-									style="object-fit: contain; object-position: top"
+		<>
+			<div class="section">
+				<div class="container">
+					<div class="columns is-multiline">
+						<div class="column">
+							<main class="content">
+								<ArticleTitleSubtitle
+									title={tip.title}
+									subtitle={tip.subtitle}
 								/>
-							)}
-							{tip.video && <VideoPlayer source={tip.video} />}
+								<ArticleAuthor author={author} displayDate={tip.displayDate} />
+								<ArticleTopics topics={topics} />
 
-							{content && (
-								<div class="columns mt-2">
-									<div
-										class="column is-11-desktop content"
-										dangerouslySetInnerHTML={{ __html: content }}
+								{tip.animatedGif && <AnimatedGif {...tip.animatedGif} />}
+
+								{tip.screenshot && (
+									<img
+										src={tip.screenshot}
+										alt="Tip Screenshot"
+										style="object-fit: contain; object-position: top"
 									/>
-								</div>
-							)}
-							{tip.seealso && <SeeAlso items={tip.seealso} />}
-						</main>
+								)}
+								{tip.video && <VideoPlayer source={tip.video} />}
+
+								{content && (
+									<div class="columns mt-2">
+										<div
+											class="column is-11-desktop content"
+											dangerouslySetInnerHTML={{ __html: content }}
+										/>
+									</div>
+								)}
+								{tip.seealso && <SeeAlso items={tip.seealso} />}
+							</main>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+			<RelatedResources currentResource={tip} items={allResources} />
+		</>
 	);
 
 	return <BaseLayout {...data}>{main}</BaseLayout>;
