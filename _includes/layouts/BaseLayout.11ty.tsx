@@ -48,7 +48,11 @@ export function BaseLayout(
 		cardThumbnail = resource?.cardThumbnail;
 		if (resourceType == "channel") {
 			channel = resource as Channel;
-		} else if (resource && resource.references) {
+		} else if (
+			resource &&
+			resource.references &&
+			resource.references.channel?.url
+		) {
 			channel = resource.references.channel;
 		} else if (data.channel) {
 			channel = collections.resourceMap.get(data.channel) as Channel;
