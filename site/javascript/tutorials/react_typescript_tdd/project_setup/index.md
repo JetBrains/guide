@@ -18,7 +18,7 @@ But it can be difficult to keep your tools and build configurations up-to-date.
 Many frameworks have CLI (command-line interface) tools that make those decisions for you, using best practices.
 They'll generate a project with the right choices, then update those choices as things evolve.
 
-React's [create-react-app](/topics/cra/) takes care of this, including for TypeScript projects.
+React's [create-react-app](/tags/cra/) takes care of this, including for TypeScript projects.
 In this tutorial step, we will generate a React+TypeScript project then open it in the IDE.
 
 ## Code
@@ -28,7 +28,7 @@ The finished code for this tutorial step is
 
 ## Project Creation
 
-Before starting, make sure to install [NodeJS](/topics/nodejs/) on your system.
+Before starting, make sure to install [NodeJS](/tags/nodejs/) on your system.
 
 As shown [in the create-react-app docs](https://create-react-app.dev/docs/adding-typescript/), use the `npx` command introduced in npm 5.2 to get a package and install a command, without having to globally install a package.
 Thus, to use `create-react-app` to make a TypeScript project:
@@ -117,7 +117,7 @@ Unsurprisingly, it's similar to the above:
 npm run-script test
 ```
 
-`create-react-app` uses the [Jest test framework](/topics/jest/) along with helpers from [Testing Library](https://testing-library.com).
+`create-react-app` uses the [Jest test framework](/tags/jest/) along with helpers from [Testing Library](https://testing-library.com).
 Jest runs when source or test files change, so make a small edit `src/App.tsx` to change the `the page` to `this page`.
 When you save the file, you'll see that the tests re-run and pass:
 

@@ -27,7 +27,8 @@ const siteChecker = new SiteChecker(
 		excludedKeywords: [
 			// these sites usually fail when running automated checks
 			"localhost",
-			"twitter",
+			"twitter.com",
+			"x.com",
 			"linkedin",
 			"udemy.com",
 			"baeldung.com",

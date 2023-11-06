@@ -33,7 +33,7 @@ IntelliJ IDEA lets you know that it has suggestions for you with a light-bulb on
 
 If there's an error in the code, pressing **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), can suggest options that will make the code compile.
 
-If there's a warning, IntelliJ IDEA will show you what the warning is, and may offer one or more suggestions on how to fix that warning. These warnings are often from [inspections](/topics/inspections/) running on the code.
+If there's a warning, IntelliJ IDEA will show you what the warning is, and may offer one or more suggestions on how to fix that warning. These warnings are often from [inspections](/tags/inspections/) running on the code.
 
 Even if the code is working perfectly well, pressing **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), will often show suggestions on other ways to express this code. These suggestions can help us to reshape the code, for example to make it more readable, or as part of a larger refactoring towards some other pattern. These suggestions can often be configured via [intentions](https://www.jetbrains.com/help/idea/intention-actions.html).
 

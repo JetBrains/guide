@@ -31,5 +31,5 @@ Instead:
 
 - In the prompt, type the name of the tag
 
-If you're a fan of the [Emmet system](/topics/emmet/) for quickly
+If you're a fan of the [Emmet system](/tags/emmet/) for quickly
 generating markup, you can also surround with Emmet.

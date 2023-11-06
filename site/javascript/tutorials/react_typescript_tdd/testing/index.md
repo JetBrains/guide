@@ -12,7 +12,7 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/Y_TGIsFnvo4"
 ---
 
-We briefly saw the [Jest](/topics/jest/) test runner in [Project Setup](../project_setup/).
+We briefly saw the [Jest](/tags/jest/) test runner in [Project Setup](../project_setup/).
 We modified an existing test but didn't dive into testing.
 
 In this tutorial step we start the process of test driven development.
