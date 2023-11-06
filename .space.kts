@@ -84,7 +84,7 @@ job("Run link checker") {
         }
     }
 
-    runLinkChecker("https://www.jetbrains.com/dotnet/guide/ https://www.jetbrains.com/go/guide/ https://www.jetbrains.com/idea/guide/ https://www.jetbrains.com/pycharm/guide/ https://www.jetbrains.com/webstorm/guide/")
+    runLinkChecker("https://www.jetbrains.com/guide/")
 }
 
 job("Remote development images") {

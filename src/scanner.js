@@ -96,9 +96,5 @@ if (process.argv.length >= 3) {
 	}
 } else {
 	// use defaults
-	siteChecker.enqueue("https://www.jetbrains.com/dotnet/guide/");
-	siteChecker.enqueue("https://www.jetbrains.com/go/guide/");
-	siteChecker.enqueue("https://www.jetbrains.com/idea/guide/");
-	siteChecker.enqueue("https://www.jetbrains.com/pycharm/guide/");
-	siteChecker.enqueue("https://www.jetbrains.com/webstorm/guide/");
+	siteChecker.enqueue("https://www.jetbrains.com/guide/");
 }
