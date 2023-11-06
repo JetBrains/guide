@@ -40,48 +40,50 @@ export function LinkLayout(
 
 	// Main content
 	const main = (
-		<div class="section">
-			<div class="container">
-				<div class="columns is-multiline">
-					<div class="column">
-						<main class="content">
-							<ArticleTitleSubtitle
-								title={link.title}
-								subtitle={link.subtitle}
-							/>
-							<ArticleAuthor author={author} displayDate={link.displayDate} />
-							<ArticleTopics topics={topics} />
-
-							<p>
-								<a href={link.linkURL} class="link-external">
-									View at original site
-								</a>
-								{(link.screenshot || link.video || content) && <hr />}
-							</p>
-
-							{link.screenshot && (
-								<img
-									src={link.screenshot}
-									alt="Link Screenshot"
-									style="object-fit: contain; object-position: top"
+		<>
+			<div class="section">
+				<div class="container">
+					<div class="columns is-multiline">
+						<div class="column">
+							<main class="content">
+								<ArticleTitleSubtitle
+									title={link.title}
+									subtitle={link.subtitle}
 								/>
-							)}
-							{link.video && <VideoPlayer source={link.video} />}
+								<ArticleAuthor author={author} displayDate={link.displayDate} />
+								<ArticleTopics topics={topics} />
 
-							{content && (
-								<div class="columns mt-2">
-									<div
-										class="column is-11-desktop content"
-										dangerouslySetInnerHTML={{ __html: content }}
+								<p>
+									<a href={link.linkURL} class="link-external">
+										View at original site
+									</a>
+									{(link.screenshot || link.video || content) && <hr />}
+								</p>
+
+								{link.screenshot && (
+									<img
+										src={link.screenshot}
+										alt="Link Screenshot"
+										style="object-fit: contain; object-position: top"
 									/>
-								</div>
-							)}
-						</main>
+								)}
+								{link.video && <VideoPlayer source={link.video} />}
+
+								{content && (
+									<div class="columns mt-2">
+										<div
+											class="column is-11-desktop content"
+											dangerouslySetInnerHTML={{ __html: content }}
+										/>
+									</div>
+								)}
+							</main>
+						</div>
 					</div>
-					<RelatedResources currentResource={link} items={allResources} />
 				</div>
 			</div>
-		</div>
+			<RelatedResources currentResource={link} items={allResources} />
+		</>
 	);
 
 	return <BaseLayout {...data}>{main}</BaseLayout>;

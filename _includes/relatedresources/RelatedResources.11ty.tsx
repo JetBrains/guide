@@ -75,6 +75,7 @@ const RelatedResources = ({
 				title={`Related Resources`}
 				resources={filteredResources}
 				includeCardFooter={false}
+				sectionExtraClass={"has-background-grey-lighter"}
 			/>
 		);
 	}
