@@ -3,8 +3,6 @@ date: 2019-01-23
 title: Narrow Navigation Bar With Speed Search
 topics:
   - navigation
-  - navigationbar
-  - speedsearch
 author: pwe
 subtitle: >-
   Narrow and select from a long folder listing Navigation Bar by typing a speed

@@ -1,8 +1,7 @@
 ---
 title: javascript
 subtitle: Support for server and browser JavaScript via WebStorm.
-accent: primary
-icon: fab fa-js-square
+logo: thumbnail.png
 author: pwe
 date: 2020-01-01
 obsoletes:

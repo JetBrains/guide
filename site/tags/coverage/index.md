@@ -1,8 +1,7 @@
 ---
 title: Coverage
-subtitle: Ensure that your Python code has good tests
-accent: primary
-icon: fas fa-chart-bar
+subtitle: Ensure that your code has good tests
+logo: thumbnail.png
 author: pwe
 date: 2020-01-01
 obsoletes:

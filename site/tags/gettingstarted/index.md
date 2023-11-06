@@ -1,8 +1,7 @@
 ---
 title: Getting Started
 subtitle: "If you're new to our IDEs or a technology, start here."
-accent: primary
-icon: fas fa-graduation-cap
+logo: thumbnail.png
 author: pwe
 date: 2020-01-01
 obsoletes:

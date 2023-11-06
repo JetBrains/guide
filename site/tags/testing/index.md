@@ -1,8 +1,7 @@
 ---
 title: Testing
 subtitle: Make sure code behaves as expected.
-accent: primary
-icon: fas fa-chart-bar
+logo: thumbnail.png
 author: pwe
 date: 2020-01-01
 obsoletes:

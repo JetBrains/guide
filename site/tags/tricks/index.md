@@ -1,8 +1,7 @@
 ---
 title: Tricks
 subtitle: Little IDE tricks that you might not know about.
-accent: primary
-icon: fas fa-magic
+logo: thumbnail.png
 author: pwe
 date: 2020-01-01
 obsoletes:

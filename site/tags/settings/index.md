@@ -1,8 +1,7 @@
 ---
 title: Settings
 subtitle: Different configurations for your projects.
-accent: primary
-icon: fas fa-cogs
+logo: thumbnail.png
 author: pwe
 date: 2020-01-01
 obsoletes:

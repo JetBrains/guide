@@ -1,8 +1,7 @@
 ---
 title: Editing
 subtitle: Learning resources when writing code in the IDE's editor.
-accent: primary
-icon: fas fa-user-edit
+logo: thumbnail.png
 author: pwe
 date: 2020-01-01
 obsoletes:

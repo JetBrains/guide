@@ -1,8 +1,7 @@
 ---
 title: Interface
 subtitle: Tips and tricks for modifying the IDE interface.
-accent: primary
-icon: fas fa-desktop
+logo: thumbnail.png
 author: pwe
 date: 2020-01-01
 obsoletes:
