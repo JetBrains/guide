@@ -62,7 +62,7 @@ export function BaseLayout(
 	// data for navbar
 	const featuredChannel = collections.resourceMap.get("/remote/");
 	const technologies = [
-		collections.resourceMap.get("/webjs/"),
+		collections.resourceMap.get("/javascript/"),
 		collections.resourceMap.get("/python/"),
 		collections.resourceMap.get("/java/"),
 		collections.resourceMap.get("/go/"),
