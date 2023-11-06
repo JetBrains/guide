@@ -12,7 +12,7 @@ How do you get involved in open source? This is a question I get asked a lot, an
 you may think. In this talk we'll discuss the WHY and HOW related to open source contributions, and also touch on the
 DOs and DONTs so you can be successful today!
 
-### Outline:
+### Outline
 
 - 00:00 Introduction
 - 01:53 Agenda

@@ -14,7 +14,7 @@ props, the surrounding layout. And it looks easy - there are ready-to-use librar
 difficulties arise when the examples should support the imports of external dependencies. In this talk, we’ll explain
 how we implemented the live code-sandboxes inside markdown content with supporting imports for our new RescUI library.
 
-### Outline:
+### Outline
 
 - 00:00 Introduction
 - 05:05 Plan overview

@@ -12,7 +12,7 @@ The Open Web Docs collective is sponsored by a community of people and companies
 platform. In this talk, we are going to explore how the Web gets documented at MDN Web Docs and how we'd imagine
 documentation to appear within a broader context of developers' workflows.
 
-### Outline:
+### Outline
 
 - 00:00 Introduction
 - 00:51 About Open Web Docs

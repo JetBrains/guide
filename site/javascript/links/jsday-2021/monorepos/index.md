@@ -13,7 +13,7 @@ recent years. Is this model correct for your organization? What are the benefits
 initial overhead of adoption? In this session, we will take a look at the pros and cons of monorepos, as well as how
 modern tooling can ease the implementation process.
 
-### Outline:
+### Outline
 
 - 00:00 Introduction
 - 01:24 The best way to organize repos

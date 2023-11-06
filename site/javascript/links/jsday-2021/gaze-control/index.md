@@ -13,7 +13,7 @@ we never really think about the experience of people who build it. What if we co
 going beyond the keyboard and build tools that would allow different kinds of interactions? In this talk, I’ll show how
 we can use gaze detection in JavaScript to enable hands-free coding.
 
-### Outline:
+### Outline
 
 - 00:00 Introduction
 - 01:34 Inspiration for the project

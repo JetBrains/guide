@@ -13,7 +13,7 @@ writing JavaScript. We'll discuss the motivation for such a creation and then lo
 implementations of htmx. We will close with a brief look at how people are using the JavaScript library I wrote to avoid
 writing JavaScript to write JavaScript.
 
-### Outline:
+### Outline
 
 - 00:00 Introduction
 - 03:10 A brief history of web dev

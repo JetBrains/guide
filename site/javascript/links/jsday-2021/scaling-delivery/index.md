@@ -11,7 +11,7 @@ linkURL: "https://www.youtube.com/watch?v=mRgXozg-j_M"
 How can you scale fast and build fast, yet keep the same standards across all projects and teams?
 Let's take a look at tooling as well as creating shareable configs and template generators for components, so you can speed up your team's delivery.
 
-### Outline:
+### Outline
 
 - 00:00 Introduction
 - 00:53 Perfect teams vs. reality

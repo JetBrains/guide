@@ -13,7 +13,7 @@ linkURL: "https://www.youtube.com/watch?v=PUxNiC6Qye4"
 Welcome to version 13 of enterprise's favorite framework: Angular. During this talk, we'll go through all the latest
 and greatest changes to the framework, showing you each of the newest additions and deletions.
 
-### Outline:
+### Outline
 
 - 00:00 Introduction
 - 03:02 Angular v13 rc0

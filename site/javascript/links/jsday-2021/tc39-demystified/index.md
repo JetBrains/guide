@@ -18,7 +18,7 @@ the best of them to interact and get involved? By the end of this talk, you will
 and how you can voice your opinions and
 criticisms through the proper channels and affect what the future of your favorite programming language holds.
 
-### Outline:
+### Outline
 
 - 00:00 Introduction
 - 01:52 About TC39
