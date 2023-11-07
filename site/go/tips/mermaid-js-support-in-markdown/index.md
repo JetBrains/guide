@@ -1,20 +1,23 @@
 ---
 date: 2020-12-03
-title: Mermaid.js support in Markdown files
+title: Full support of Mermaid syntax
 topics:
   - platform
-author: dlsniper
-subtitle: Preview beautiful diagrams in Markdown files using Mermaid.js
+author: ap
+subtitle: Seamlessly integrate, create, and visualize Mermaid diagrams
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: >-
-  https://www.youtube.com/watch?v=7VWXuLdrt54&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=86
+  https://youtu.be/KPmsKMgw6sI
 ---
 
-**How to use:**
+The Mermaid plugin provides comprehensive Mermaid syntax support, including syntax highlighting, code completion, and navigation tools. It is compatible with `.mmd` and `.mermaid` file types, and it also allows you to embed and render Mermaid diagrams within Markdown files.
 
-Turn on the _Mermaid_ option in _Settings/Preferences | Languages & Frameworks | Markdown_ under the _Markdown Extensions_ section. Then open any Markdown file and enjoy previewing _Mermaid.js_ diagrams.
+## Installation
 
-**Note:** You must install the [_Mermaid_](https://plugins.jetbrains.com/plugin/20146-mermaid) support plugin from the IDE Marketplace via _Settings/Preferences | Plugins | Marketplace_ for this functionality to work.
+You can choose between the following installation options:
 
-<span class="tag is-rounded">New in 2020.3</span>
+- In the IDE, go to `Settings` | `Plugins`, search for the Mermaid plugin, and click `Install`.
+- In the IDE, click `Install plugin` in the notification panel when editing `.mmd` or `.mermaid` files.
+- In the IDE, click the `Install Mermaid plugin` icon that appears in the gutter in Markdown files.
+- Download the plugin directly from the [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/20146-mermaid) and install it by using [the following procedure](https://www.jetbrains.com/help/go/managing-plugins.html#install_plugin_from_disk).
