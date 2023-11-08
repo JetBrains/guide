@@ -249,7 +249,7 @@ fun StepsScope.deploySite() {
         kotlinScript { api ->
             val gitBranch = api.gitBranch()
             if (gitBranch.startsWith("refs/heads/")) {
-                val cleanGitBranch = gitBranch.replace("refs/heads/", "").replace("/", "-").replace("_", "-")
+                val cleanGitBranch = gitBranch.replace("refs/heads/", "").replace("/", "-").replace("_", "-").replace(".", "-")
                 val siteName = if (cleanGitBranch == "main") {
                     "unified"
                 } else {
