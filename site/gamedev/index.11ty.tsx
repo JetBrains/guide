@@ -72,7 +72,7 @@ class GameDevHomepage {
 			resourceTypes: [PLAYLIST_RESOURCE],
 			channel: channel.url,
 			limit: 4,
-			customFilter: (r) => r.slug.indexOf("day-online") >= 0,
+			customFilter: (r) => r.slug.indexOf("gamedev-day") >= 0,
 		});
 
 		return (
