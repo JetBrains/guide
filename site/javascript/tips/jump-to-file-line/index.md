@@ -17,4 +17,4 @@ animatedGif:
   height: 300
 ---
 
-You can jump to a specific line in a file right from the _Go to file_ popup (_Cmd+Shift+O_ on macOS or _Ctrl+Shift+N_ on Windows and Linux) – just add :<line number> after the file name.
+You can jump to a specific line in a file right from the _Go to file_ popup (_Cmd+Shift+O_ on macOS or _Ctrl+Shift+N_ on Windows and Linux) – just add :<line number\> after the file name.
