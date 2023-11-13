@@ -28,7 +28,7 @@ Here's what you need to get started:
 - Run the `Run Guide` run configuration to launch the Guide (top toolbar, see [web help for more info](https://www.jetbrains.com/help/webstorm/running-applications.html))
 - Wait until the application is up and running
 - Connect the browser to `http://localhost:8080/`
-- Start authoring, and see reloads in the browser
+- Start authoring (content is located in [`site/`](site/)), and see reloads in the browser
 
 ### Create a pull request
 
