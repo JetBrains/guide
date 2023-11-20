@@ -147,7 +147,7 @@ const { getByTitle } = render(
 );
 ```
 
-We are using [Jest](/topics/jest) mock functions to create a disposable arrow
+We are using [Jest](/tags/jest) mock functions to create a disposable arrow
 function which we passed in as a prop.
 
 Do this for both tests:
