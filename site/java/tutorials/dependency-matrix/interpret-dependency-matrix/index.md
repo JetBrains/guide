@@ -28,7 +28,7 @@ As you can see in the legend at the top right of the **DSM tool window**:
 
 ## Dependencies
 
-Dependencies are shown in blue. The numbers in the cells show the number of dependencies of the selected row on the selected column. An ellipsis (the three dots) in a cell means that there are more than 99 dependencies. Hover over the cell to get more information.
+Dependencies are shown in blue. The numbers in the cells show the number of dependencies of the selected row on the selected column. An ellipsis (the three dots) in a cell means that there are more than 99 dependencies. Hover over the cell to get more information. In the example below, we see the tooltip "cucumber-java -> cucumber-core (209)". This means that in this project the component cucumber-java (represented in the column) depends on the component cucumber-core 209 times.
 
 ![Dependency Matrix - Information on hover](dependency-matrix-hover.png)
 
@@ -78,7 +78,7 @@ You can limit the view to see only selected dependencies. In the **DSM tool wind
 
 ![Dependency Matrix - Explore Dependencies Between](dependency-matrix-explore.png)
 
-The classes that produce these dependencies will be opened in a new tab in the DSM tool window. In contrast to the **Limit Scope** option, only classes which produce selected dependencies are left.
+The classes that produce these dependencies will be opened in a new tab in the **DSM tool window**. In contrast to the **Limit Scope** option, only classes which produce selected dependencies are left.
 
 ![Dependency Matrix - Explore Dependencies Between](dependency-matrix-explore-result.png)
 

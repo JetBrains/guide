@@ -29,5 +29,5 @@ Here are the IntelliJ IDEA shortcuts that we used.
 
 - [(video) JetBrains - IntelliJ IDEA: Explore project structure with the Dependency Matrix](https://youtu.be/moi49_V_4g0)
 - [(docs) JetBrains - Dependency Structure Matrix](https://www.jetbrains.com/help/idea/dsm-analysis.html)
-- [(Blog) DSM: Prepare Your Application for Modularity](https://blog.jetbrains.com/idea/2020/01/dsm-prepare-your-application-for-modularity/)
-- [(Blog) IntelliJ IDEA: Dependency Analysis with DSM](https://blog.jetbrains.com/idea/2008/01/intellij-idea-dependency-analysis-with-dsm/)
+- [(blog) DSM: Prepare Your Application for Modularity](https://blog.jetbrains.com/idea/2020/01/dsm-prepare-your-application-for-modularity/)
+- [(blog) IntelliJ IDEA: Dependency Analysis with DSM](https://blog.jetbrains.com/idea/2008/01/intellij-idea-dependency-analysis-with-dsm/)
