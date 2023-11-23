@@ -1,10 +1,10 @@
 ---
-date: 2021-07-01
+date: 2023-11-23
 title: Navigating Forward & Backward
 topics:
   - java
   - navigation
-author: hs
+author: md
 subtitle: Move forward and backward between your locations in the code
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
@@ -16,7 +16,7 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Navigating through the source code
     href: >-
       https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html
-video: "https://youtu.be/cSQ1w-a_5nc"
+video: "https://youtu.be/Cog66wZvPhg"
 ---
 
 Use **⌘[** (macOS), **Ctrl+Alt+Left Arrow** (Windows/Linux) to navigate backwards and **⌘]** (macOS), **Ctrl+Alt+Right Arrow** (Windows/Linux), to navigate forwards.
