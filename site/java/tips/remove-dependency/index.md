@@ -1,5 +1,5 @@
 ---
-date: 2023-04-01
+date: 2023-11-23
 title: Remove dependency
 topics:
   - packagesearch
@@ -11,6 +11,8 @@ cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Package Search
     href: "https://www.jetbrains.com/help/idea/package-search.html"
+  - title: (tutorial) Managing dependencies
+    href: "https://www.jetbrains.com/guide/java/tutorials/managing-dependencies/"
   - title: (video) IntelliJ IDEA Managing Dependencies
     href: "https://www.youtube.com/watch?v=nqb9yAecM9Y"
 video: "https://youtu.be/RZOjs_TF1uA"
