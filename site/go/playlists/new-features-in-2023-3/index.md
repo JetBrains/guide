@@ -10,7 +10,7 @@ topics:
   - inspections
   - quick-fixes
 author: ap
-subtitle: A selection of highlights from GoLand 2022.3.
+subtitle: Explore key features and enhancements in GoLand 2023.3.
 cardThumbnail: ./card.png
 thumbnail: ./thumbnail.png
 playlistItems:
@@ -18,7 +18,7 @@ playlistItems:
   - /go/tips/code-folding-options/
   - /go/tips/create-function-in-any-package/
   - /go/tips/create-parameter-refactoring/
-  - /go/tips/mark-custom-functions-as-printf-functions/
+  - /go/tips/custom-printf-like-functions/
 ---
 
 For more information about what's new in GoLand 2023.3, check out our [What's New Page](https://jetbrains.com/go/whatsnew) or browse the tips below.
