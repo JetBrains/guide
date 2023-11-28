@@ -9,7 +9,7 @@ subtitle: Tips for moving through and navigating your code base
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
-  - /java/tips/nav-fwd-back/
+  - /java/tips/code-nav-fwd-back/
   - /java/tips/find-usages/
   - /java/tips/go-to-declaration-implementation/
   - /java/tips/navigate-to-test/

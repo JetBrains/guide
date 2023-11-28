@@ -1,10 +1,10 @@
 ---
-date: 2021-01-08
+date: 2023-11-27
 title: Generate Code
 topics:
   - java
   - refactoring
-author: hs
+author: md
 subtitle: Helps you to generate commonly used code constructs
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
@@ -17,9 +17,11 @@ seealso:
     href: "https://www.youtube.com/watch?v=ffBeoE6NBSs"
   - title: (documentation) IntelliJ IDEA Help - Generate code
     href: "https://www.jetbrains.com/help/idea/generating-code.html"
-video: "https://youtu.be/foKr1a9r250"
+video: "https://youtu.be/4jAXV67MRyA"
 ---
 
 You can generate new code quickly with **⌘N** (macOS), or **Alt+Insert** (Windows/Linux). For example, you can generate commonly used methods for Java beans in this way.
 
 You can use the same shortcut to add a new parameter in the Change Signature dialog.
+
+Use this shortcut **⌘N** (macOS), or **Alt+Insert** (Windows/Linux) in your **Project tool window** (**⌘1** on macOS, or **Alt+1** on Windows/Linux) to add files to your project, or in your build file to add dependencies. It's always worth using **⌘N** (macOS), or **Alt+Insert** (Windows/Linux) to see what the IDE can do for you.

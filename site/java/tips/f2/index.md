@@ -31,7 +31,7 @@ way, you can quickly hop to the next thing that needs fixing or addressing witho
 mouse.
 
 Combine this with **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux) to quickly see the suggested solution to the problem
-and apply a fix. This will show a list of suggested solutions, as we saw in the [tip about Alt+Enter](../alt-enter/),
+and apply a fix. This will show a list of suggested solutions, as we saw in the [tip about Context Actions](../context-actions/),
 and we can pick the solution that suits us best.
 
 If you're confident IntelliJ IDEA has the correct fix for the problem, you can skip the step of listing the solutions.

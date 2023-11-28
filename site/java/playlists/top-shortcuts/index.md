@@ -9,7 +9,7 @@ subtitle: Our handpicked top shortcuts
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
-  - /java/tips/alt-enter/
+  - /java/tips/context-actions/
   - /tips/search-everywhere/
   - /java/tips/escape-focus-editor/
   - /java/tips/smart-completion/
