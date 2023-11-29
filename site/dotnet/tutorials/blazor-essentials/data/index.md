@@ -103,4 +103,4 @@ When accessing data either through an API or a Blazor app, using Entity Framewor
 - [Web API design best practices - Azure Architecture Center | Microsoft Docs](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design)
 - [Compare EF6 and EF Core | Microsoft Docs](https://docs.microsoft.com/en-us/ef/efcore-and-ef6/)
 - [Designing the infrastructure persistence layer | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design)
-- [Working with Databases](https://www.jetbrains.com/dotnet/guide/tutorials/resharper-to-rider/working-with-databases/)
+- [Working with Databases](https://www.jetbrains.com/guide/dotnet/tutorials/resharper-to-rider/working-with-databases/)

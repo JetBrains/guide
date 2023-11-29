@@ -51,7 +51,7 @@ Here are the IntelliJ IDEA shortcuts that we used.
 - [(docs) JetBrains - IntelliJ IDEA keyboard shortcuts](https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html)
 - [(pdf) IntelliJ IDEA reference card](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
 - [(docs) JetBrains - Configure keyboard shortcuts](https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html)
-- [(docs) JetBrains - Creating custom shortcuts](https://www.jetbrains.com/idea/guide/tips/assign-top-shortcuts/)
+- [(docs) JetBrains - Creating custom shortcuts](https://www.jetbrains.com/guide/java/tips/assign-top-shortcuts/)
 - [(marketplace) JetBrains - Key Promoter X plugin](https://plugins.jetbrains.com/plugin/9792-key-promoter-x)
 - [(marketplace) JetBrains - Keymap exporter plugin](https://plugins.jetbrains.com/plugin/7066-keymap-exporter)
 - [(docs) JetBrains - Navigation and search](https://www.jetbrains.com/help/idea/discover-intellij-idea.html?keymap=secondary_macos#navigation-and-search)

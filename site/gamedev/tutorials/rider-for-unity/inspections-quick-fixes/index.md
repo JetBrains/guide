@@ -36,6 +36,6 @@ A full list f inspections and corresponding quick-fixes is available on our [Git
 ### See Also
 
 - [Unity-specific inspections](https://www.jetbrains.com/help/rider/Features_Unity.html#inspections-and-quick-fixes)
-- [Rider Essentials - Inspections and Quick-Fixes](https://www.jetbrains.com/dotnet/guide/tutorials/rider-essentials/inspections-quick-fixes/)
+- [Rider Essentials - Inspections and Quick-Fixes](https://www.jetbrains.com/guide/dotnet/tutorials/rider-essentials/inspections-quick-fixes/)
 - [More about Rider for Unity...](https://www.jetbrains.com/lp/dotnet-unity/)
 - [Learn Unity with JetBrains Academy](https://hyperskill.org/tracks/36?utm=rider_guide)

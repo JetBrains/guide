@@ -23,10 +23,7 @@ It covers navigation, coding assistance, refactoring, running, debugging and tes
 Tutorial steps make use of the [sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/jetbrains/guide/main/site/dotnet/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) that was created using `npx create-react-app`.
 It can be downloaded and opened in Rider as a folder-based solution.
 
-As a companion to this tutorial, make sure to check out [the WebStorm Guide](https://www.jetbrains.com/webstorm/guide/) for more tips, tricks and deep-dives into front-end topics!
-
 ### See Also
 
 - [JetBrains Rider](https://www.jetbrains.com/rider/)
-- [WebStorm Guide](https://www.jetbrains.com/webstorm/guide/)
 - [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/jetbrains/guide/main/site/dotnet/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.

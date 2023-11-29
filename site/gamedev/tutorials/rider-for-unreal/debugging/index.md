@@ -37,5 +37,5 @@ Built-in formatters are enabled for wide/Unicode strings (`wchar_t`, `char16_t`,
 ### See Also
 
 - [Unreal Engine debugger](https://www.jetbrains.com/help/rider/Unreal_Engine__Debugger.html)
-- [Debugging code with Rider](https://www.jetbrains.com/dotnet/guide/tutorials/rider-essentials/debugging/)
+- [Debugging code with Rider](https://www.jetbrains.com/guide/dotnet/tutorials/rider-essentials/debugging/)
 - [More about Rider for Unreal...](https://www.jetbrains.com/lp/rider-unreal/)

@@ -11,7 +11,7 @@ video: "https://youtu.be/H_XxH66lm3U?start=611"
 
 Now you've created your JAR file, you need to run it to check that the behaviour is the same as running your main method in your `HelloWorld.java` file. To run your Java application as a JAR, you can create a new [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html).
 
-1. Press **Shift** twice to use [search everywhere](https://www.jetbrains.com/idea/guide/tips/search-everywhere/). If you don't know a shortcut in IntelliJ IDEA, search everywhere is a great way to search for what you need. In this instance, you want to create a new run configuration, so type into the dialog _edit configurations_.
+1. Press **Shift** twice to use [search everywhere](https://www.jetbrains.com/guide/tips/search-everywhere/). If you don't know a shortcut in IntelliJ IDEA, search everywhere is a great way to search for what you need. In this instance, you want to create a new run configuration, so type into the dialog _edit configurations_.
 
 2. When the correct option appears you can use the arrow keys to select it and press **Enter**.
 

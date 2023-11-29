@@ -27,5 +27,5 @@ You can work with the .uproject directly in JetBrains Rider, without generating 
 ### See Also
 
 - [Download Rider](https://www.jetbrains.com/rider/download/)
-- [Rider Essentials](https://www.jetbrains.com/dotnet/guide/tutorials/rider-essentials/)
+- [Rider Essentials](https://www.jetbrains.com/guide/dotnet/tutorials/rider-essentials/)
 - [More about Rider for Unreal...](https://www.jetbrains.com/lp/rider-unreal/)

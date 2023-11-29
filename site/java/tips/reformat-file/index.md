@@ -12,7 +12,7 @@ seealso:
   - title: (video) Code Formatting in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=vjVWjocENLg"
   - title: (documentation) IntelliJ IDEA Guide - Reformatting Code in IntelliJ IDEA
-    href: "https://www.jetbrains.com/idea/guide/tutorials/reformatting-code/"
+    href: "https://www.jetbrains.com/guide/java/tutorials/reformatting-code/"
   - title: (documentation) IntelliJ IDEA Help - Reformat a File
     href: >-
       https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#reformat_file

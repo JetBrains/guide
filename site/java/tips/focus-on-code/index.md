@@ -12,9 +12,9 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (tip) Distraction Free Mode Tip
-    href: "https://www.jetbrains.com/idea/guide/tips/distraction-free-mode/"
+    href: "https://www.jetbrains.com/guide/java/tips/distraction-free-mode/"
   - title: (tip) Zen Mode Tip
-    href: "https://www.jetbrains.com/idea/guide/tips/zen-mode/"
+    href: "https://www.jetbrains.com/idea/guide/tips/different-viewing-modes/"
   - title: (documentation) IntelliJ IDEA Viewing modes
     href: "https://www.jetbrains.com/help/idea/ide-viewing-modes.html"
 video: "https://youtu.be/FO9Elg5A8fw"

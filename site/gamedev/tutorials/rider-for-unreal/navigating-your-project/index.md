@@ -28,5 +28,5 @@ Use the <kbd>Tab</kbd> key to select a different tab in the **Search Everywhere*
 ### See Also
 
 - [Search Everywhere - Documentation](https://www.jetbrains.com/help/rider/Searching_Everywhere.html)
-- [Rider Essentials - Navigation in a code base with Rider](https://www.jetbrains.com/dotnet/guide/tutorials/rider-essentials/navigation/)
+- [Rider Essentials - Navigation in a code base with Rider](https://www.jetbrains.com/guide/dotnet/tutorials/rider-essentials/navigation/)
 - [More about Rider for Unreal...](https://www.jetbrains.com/lp/rider-unreal/)

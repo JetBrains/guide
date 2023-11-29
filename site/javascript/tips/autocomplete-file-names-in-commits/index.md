@@ -9,7 +9,7 @@ subtitle: How to reference filenames in a commit in WebStorm.
 seealso:
   - title: Renaming Files
     href: >-
-      https://www.jetbrains.com/webstorm/guide/tips/rename-file-based-on-class-name/
+      https://www.jetbrains.com/guide/javascript/tips/rename-file-based-on-class-name/
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png

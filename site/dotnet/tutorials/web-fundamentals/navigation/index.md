@@ -41,5 +41,5 @@ The **Structure** tool window can be very handy for examining a file quickly. It
 
 - [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/jetbrains/guide/main/site/dotnet/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.
 - [Rider - Navigate and Search](https://www.jetbrains.com/help/rider/Navigation_and_Search__Index.html)
-- [Rider Essentials tutorial](https://www.jetbrains.com/dotnet/guide/tutorials/rider-essentials/)
-- [WebStorm Guide - Navigation](https://www.jetbrains.com/webstorm/guide/topics/navigation/)
+- [Rider Essentials tutorial](https://www.jetbrains.com/guide/dotnet/tutorials/rider-essentials/)
+- [Navigation](https://www.jetbrains.com/guide/tags/navigation/)

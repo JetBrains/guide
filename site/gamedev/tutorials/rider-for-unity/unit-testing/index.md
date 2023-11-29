@@ -30,6 +30,6 @@ You can run and debug edit-mode Unity tests like you [run regular unit tests](ht
 
 ### See Also
 
-- [Unit Testing with Rider](https://www.jetbrains.com/dotnet/guide/tutorials/rider-essentials/unit-testing/)
+- [Unit Testing with Rider](https://www.jetbrains.com/guide/dotnet/tutorials/rider-essentials/unit-testing/)
 - [More about Rider for Unity...](https://www.jetbrains.com/lp/dotnet-unity/)
 - [Learn Unity with JetBrains Academy](https://hyperskill.org/tracks/36?utm=rider_guide)
