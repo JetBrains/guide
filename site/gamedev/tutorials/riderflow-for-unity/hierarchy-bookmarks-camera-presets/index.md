@@ -46,7 +46,7 @@ Bookmarks are shown in the scene view management toolbar.
 The scene view management toolbar is your compass for navigating complex scenes.
 It provides several tools to manage your scene activities efficiently.
 
-There is the [search tool that only shows assets that you can use in the scene](https://www.jetbrains.com/dotnet/guide/tutorials/riderflow-for-unity/adding-assets-to-scene/) and allows you to drag assets from your search results directly into it.
+There is the [search tool that only shows assets that you can use in the scene](https://www.jetbrains.com/guide/gamedev/tutorials/riderflow-for-unity/adding-assets-to-scene/) and allows you to drag assets from your search results directly into it.
 There is also the camera action tool that saves the current camera position as a preset, assigns a shortcut to it, and helps you switch between presets.
 
 #### Camera presets

@@ -32,4 +32,4 @@ In this video, we'll have a look at the various options Rider gives you when it 
 ### See Also
 
 - [Rider for web development](https://www.jetbrains.com/lp/rider-web/)
-- [Web Fundamentals in Rider](https://www.jetbrains.com/dotnet/guide/tutorials/web-fundamentals/)
+- [Web Fundamentals in Rider](https://www.jetbrains.com/guide/dotnet/tutorials/web-fundamentals/)

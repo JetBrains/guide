@@ -13,7 +13,7 @@ seealso:
   - title: (video) Good Old Stream API - JetBrains Technology Day for Java
     href: "https://www.youtube.com/watch?v=nklbYYQpQi8"
   - title: (tip) Use new methods on the Streams API
-    href: "https://www.jetbrains.com/idea/guide/tips/new-methods-on-streams/"
+    href: "https://www.jetbrains.com/guide/java/tips/new-methods-on-streams/"
 video: "https://youtu.be/sqt9iiyrpCg"
 ---
 

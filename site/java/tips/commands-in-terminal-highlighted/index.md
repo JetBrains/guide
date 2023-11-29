@@ -11,7 +11,7 @@ cardThumbnail: ./card.png
 seealso:
   - title: (tutorial) IntelliJ IDEA Guide - Terminal Commands
     href: >-
-      https://www.jetbrains.com/idea/guide/tutorials/working-with-the-terminal/run-ide-features-from-the-terminal/
+      https://www.jetbrains.com/guide/java/tutorials/working-with-the-terminal/run-ide-features-from-the-terminal/
   - title: (documentation) IntelliJ IDEA Help - The Terminal
     href: "https://www.jetbrains.com/help/idea/terminal-emulator.html"
   - title: (documentation) IntelliJ IDEA Help - Run IDE features in the terminal

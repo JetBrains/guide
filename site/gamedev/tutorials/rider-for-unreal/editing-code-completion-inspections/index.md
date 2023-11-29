@@ -38,6 +38,6 @@ When developing Unreal Engine projects, you are probably using [Unreal Engine co
 ### See Also
 
 - [Create new Unreal Engine entities](https://www.jetbrains.com/help/rider/Unreal_Engine__Create_Entity.html)
-- [Rider Essentials - Inspections and Quick-Fixes](https://www.jetbrains.com/dotnet/guide/tutorials/rider-essentials/inspections-quick-fixes/)
+- [Rider Essentials - Inspections and Quick-Fixes](https://www.jetbrains.com/guide/dotnet/tutorials/rider-essentials/inspections-quick-fixes/)
 - [Unreal Engine-specific code inspections](https://www.jetbrains.com/help/rider/Unreal_Engine__Code_Analysis.html#code-inspections)
 - [More about Rider for Unreal...](https://www.jetbrains.com/lp/rider-unreal/)

@@ -32,6 +32,6 @@ Here are the IntelliJ IDEA shortcuts that we used.
 
 - [(video) JetBrains - Using bookmarks in IntelliJ IDEA](https://www.youtube.com/watch?v=2PG03drOEMk)
 - [(documentation) JetBrains IntelliJ IDEA – Bookmarks](https://www.jetbrains.com/help/idea/bookmarks.html)
-- [(guide) JetBrains IntelliJ IDEA Guide – Bookmarks](https://www.jetbrains.com/idea/guide/tutorials/presenting/bookmarks/)
+- [(guide) JetBrains IntelliJ IDEA Guide – Bookmarks](https://www.jetbrains.com/guide/java/tutorials/presenting/bookmarks/)
 - [(documentation) JetBrains IntelliJ IDEA –Breakpoints](https://www.jetbrains.com/help/idea/using-breakpoints.html)
 - [(code) Spring PetClinic](https://github.com/spring-projects/spring-petclinic)

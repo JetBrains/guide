@@ -62,6 +62,6 @@ When working with NuGet packages, Rider gives developers options, regardless of 
 
 ### See Also
 
-- [NuGet Tool Window in Rider](https://jetbrains.com/dotnet/guide/tutorials/rider-essentials/nuget/)
+- [NuGet Tool Window in Rider](https://www.jetbrains.com/guide/dotnet/tutorials/rider-essentials/nuget/)
 - [Using NuGet in Rider](https://www.jetbrains.com/help/rider/Using_NuGet.html)
 - [NuGet Tool Window Reference](https://www.jetbrains.com/help/rider/Reference_Windows_NuGet.html)

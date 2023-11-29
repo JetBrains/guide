@@ -7,7 +7,7 @@ author: ed
 subtitle: Here's how to get information about the type of a symbol.
 seealso:
   - title: Check Documentation in JavaScript
-    href: "https://www.jetbrains.com/webstorm/guide/tips/check-js-documentation/"
+    href: "https://www.jetbrains.com/guide/javascript/tips/check-js-documentation/"
 thumbnail: ./thumbnail.jpg
 cardThumbnail: ./card.png
 screenshot: ./card.jpg

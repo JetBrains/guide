@@ -48,7 +48,7 @@ Make sure to check the linked resources for more debugging tips and tricks - not
 ### See Also
 
 - [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/jetbrains/guide/main/site/dotnet/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.
-- [.NET Guide - Debugging your code](https://www.jetbrains.com/dotnet/guide/topics/debugging/)
-- [WebStorm Guide - Running and debugging](https://www.jetbrains.com/webstorm/guide/topics/running-debugging/)
+- [.NET Guide - Debugging your code](https://www.jetbrains.com/guide/tags/debugging/)
+- [Running and debugging](https://www.jetbrains.com/guide/tags/running/)
 - [Working with Run/Debug Configurations](https://www.jetbrains.com/help/rider/Run_Debug_Configuration.html)
 - [Advanced debugging with breakpoints](https://blog.jetbrains.com/dotnet/2017/08/28/rider-advanced-debugging-breakpoints/)

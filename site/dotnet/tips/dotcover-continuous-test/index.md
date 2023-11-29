@@ -29,4 +29,4 @@ Also available in ReSharper and Rider 💪
 ### See Also
 
 - [Use Continuous Testing](https://www.jetbrains.com/help/dotcover/Work_with_Continuous_Testing.html)
-- [Writing and Running Unit Tests with ReSharper](https://www.jetbrains.com/dotnet/guide/tutorials/resharper-essentials/unit-testing/)
+- [Writing and Running Unit Tests with ReSharper](https://www.jetbrains.com/guide/dotnet/tutorials/resharper-essentials/unit-testing/)

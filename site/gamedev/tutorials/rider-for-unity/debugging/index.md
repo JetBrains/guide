@@ -37,7 +37,7 @@ view the Inspector, change values and move objects around. When you’re done, j
 
 ### See Also
 
-- [Debugging code with Rider](https://www.jetbrains.com/dotnet/guide/tutorials/rider-essentials/debugging/)
+- [Debugging code with Rider](https://www.jetbrains.com/guide/dotnet/tutorials/rider-essentials/debugging/)
 - [Pausepoints in Unity](https://blog.jetbrains.com/dotnet/2020/06/11/introducing-unity-pausepoints-for-rider/)
 - [More about Rider for Unity...](https://www.jetbrains.com/lp/dotnet-unity/)
 - [Learn Unity with JetBrains Academy](https://hyperskill.org/tracks/36?utm=rider_guide)

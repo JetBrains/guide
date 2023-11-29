@@ -26,6 +26,6 @@ Invoke **Find Usages** on a `MonoBehaviour` or on a field, and jump straight int
 
 ### See Also
 
-- [Rider Essentials - Navigation in a code base with Rider](https://www.jetbrains.com/dotnet/guide/tutorials/rider-essentials/navigation/)
+- [Rider Essentials - Navigation in a code base with Rider](https://www.jetbrains.com/guide/dotnet/tutorials/rider-essentials/navigation/)
 - [More about Rider for Unity...](https://www.jetbrains.com/lp/dotnet-unity/)
 - [Learn Unity with JetBrains Academy](https://hyperskill.org/tracks/36?utm=rider_guide)

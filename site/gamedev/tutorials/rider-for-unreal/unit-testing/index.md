@@ -36,5 +36,5 @@ Tests with `EAutomationTestFlags::Disabled` flag will stay disabled in JetBrains
 ### See Also
 
 - [Unreal Engine tests](https://www.jetbrains.com/help/rider/Unreal_Engine__Tests.html)
-- [Unit Testing with Rider](https://www.jetbrains.com/dotnet/guide/tutorials/rider-essentials/unit-testing/)
+- [Unit Testing with Rider](https://www.jetbrains.com/guide/dotnet/tutorials/rider-essentials/unit-testing/)
 - [More about Rider for Unreal...](https://www.jetbrains.com/lp/rider-unreal/)
