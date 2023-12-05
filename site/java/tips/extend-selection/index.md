@@ -1,21 +1,20 @@
 ---
-date: 2021-01-08
-title: Code Selection
+date: 2023-12-05
+title: Extend Selection
 topics:
   - editing
   - java
   - kotlin
-author: hs
-subtitle: Selecting code by scope
+author: md
+subtitle: Extend and shrink selection
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
   - title: (video) Editor Tips and Tricks in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=JEpeHNsWIMk"
   - title: (documentation) IntelliJ IDEA Help - Select code constructs
-    href: >-
-      https://www.jetbrains.com/help/idea/working-with-source-code.html#editor_code_selection
-video: "https://youtu.be/c9aM8PgD6ZM"
+    href: "https://www.jetbrains.com/help/idea/working-with-source-code.html#editor_code_selection"
+video: "https://youtu.be/KFqqOP89XJA"
 ---
 
 Press **⌥↑** (macOS), or **Ctrl+W** (Windows/Linux), to extend your selection of code by scope. To reduce the scope, use **⌥↓** (macOS), or **Shift+Ctrl+W** (Windows/Linux).

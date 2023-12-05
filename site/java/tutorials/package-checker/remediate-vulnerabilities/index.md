@@ -24,13 +24,13 @@ We can also fix it directly in our build file. When we hover over a specific vul
 
 ![Fixed version from hover](fixed-from-hover.png)
 
-Alternatively, we can use the intention action shortcut, **⌥ ⏎** on MacOs, or **Alt+Enter** on Windows/Linux and select the action to upgrade the version (if a new version is available).
+Alternatively, we can use the intention action shortcut, **⌥ ⏎** on macOS, or **Alt+Enter** on Windows/Linux and select the action to upgrade the version (if a new version is available).
 
 ![Show context actions](context-actions.png)
 
 ![Fixed version from context actions](fix-from-context-actions.png)
 
-After we update the versions, we can **Load Maven Changes**, using **⌘⇧I** on MacOs or **Ctrl+Shift+O** on Windows/Linux. We see that the overview in the Vulnerable Checker tool window is updated, and we see that dependencies that we have upgraded and are no longer vulnerable are removed, or shown with a green checkmark if we have enabled **Show safe** dependencies.
+After we update the versions, we can **Load Maven Changes**, using **⌘⇧I** on macOS or **Ctrl+Shift+O** on Windows/Linux. We see that the overview in the Vulnerable Checker tool window is updated, and we see that dependencies that we have upgraded and are no longer vulnerable are removed, or shown with a green checkmark if we have enabled **Show safe** dependencies.
 
 ![Load Maven Changes](load-maven-changes.png)
 

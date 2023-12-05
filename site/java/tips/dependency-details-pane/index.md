@@ -17,3 +17,4 @@ video: "https://youtu.be/ZIcSFcA3_XM"
 ---
 
 Manage your dependencies inside your IDE with IntelliJ IDEA Package Search. See relevant information about your dependencies in the Dependencies tool window Dependency Details Pane.
+To use this feature, make sure the [Package Search](https://www.jetbrains.com/help/idea/package-search.html) plugin is enabled.

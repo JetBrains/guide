@@ -1,11 +1,11 @@
 ---
-date: 2021-05-28
-title: F2
+date: 2023-12-05
+title: Go to Next Error
 topics:
   - editing
   - inspections
   - java
-author: tg
+author: md
 subtitle: Quickly move to the next (or previous) error or warning in the file.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
@@ -13,13 +13,12 @@ seealso:
   - title: "(video) IntelliJ IDEA Pro Tips: Move to the Next Issue"
     href: "https://www.youtube.com/watch?v=9nAvkNBYZwY"
   - title: (documentation) IntelliJ IDEA Help - Navigate between errors or warnings
-    href: >-
-      https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#navigate-errors-warnings
+    href: "https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#navigate-errors-warnings"
   - title: (blog) IntelliJ IDEA Blog - Top 15 IntelliJ IDEA Shortcuts
     href: "https://blog.jetbrains.com/idea/2020/03/top-15-intellij-idea-shortcuts/"
   - title: (guide) IntelliJ IDEA Guide - Alt+Enter
     href: ../alt-enter/
-video: "https://youtu.be/9TlIOdfli80"
+video: "https://youtu.be/Q26Cc6V7zKk"
 ---
 
 When you open a source file in the editor, you may see warnings or errors in

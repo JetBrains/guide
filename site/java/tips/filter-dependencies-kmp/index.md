@@ -24,4 +24,6 @@ Manage your dependencies inside IntelliJ IDEA. Open the **Dependencies tool wind
 - Use **Search Everywhere** (**⇧⇧**) to search for "Dependencies"
 - Use **Find Action** (**⌘⇧A** on macOS), or **Ctrl+Shift+A** on Windows/Linux) to search for "Dependencies"
 
+To use this feature, make sure the [Package Search](https://www.jetbrains.com/help/idea/package-search.html) plugin is enabled.
+
 When searching for dependencies, select **Only Kotlin Multiplatform** dependencies to filter the results to include only Kotlin Multiplatform dependencies.

@@ -25,3 +25,5 @@ Manage your dependencies inside IntelliJ IDEA. Open the **Dependencies tool wind
 - Use **Find Action** (**⌘⇧A** on macOS), or **Ctrl+Shift+A** on Windows/Linux) to search for "Dependencies"
 
 From the **Dependencies tool window** you can upgrade an individual dependency, or all dependencies at once, right in your IDE when there are new versions available, by clicking the link to **Upgrade** (a single dependency) or **Upgrade (all)** (to upgrade all dependencies at once).
+
+To use this feature, make sure the [Package Search](https://www.jetbrains.com/help/idea/package-search.html) plugin is enabled.
