@@ -14,7 +14,7 @@ playlistItems:
   - /java/tips/go-to-declaration-implementation/
   - /java/tips/navigate-to-test/
   - /tips/jump-to-recent-files/
-  - /java/tips/recent-locations/
+  - /java/tips/recent-files-locations/
   - /java/tips/f2/
 ---
 

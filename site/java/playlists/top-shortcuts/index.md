@@ -17,7 +17,7 @@ playlistItems:
   - /java/tips/f2/
   - /java/tips/reformat-file/
   - /tips/jump-to-recent-files/
-  - /java/tips/recent-locations/
+  - /java/tips/recent-files-locations/
   - /java/tips/run-anything/
   - /java/tips/run-and-terminate-process/
 ---
