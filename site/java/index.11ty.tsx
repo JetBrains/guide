@@ -83,7 +83,12 @@ class JavaHomepage {
 							You can find useful information on our{" "}
 							<a href="https://twitter.com/intellijidea"> Twitter page</a>, or
 							our <a href="https://blog.jetbrains.com/idea/">product blog</a>.
-							Plus, the{" "}
+							Or videos on our{" "}
+							<a href="https://www.youtube.com/intellijidea">
+								{" "}
+								YouTube channel
+							</a>
+							. Plus, the{" "}
 							<a href="https://www.jetbrains.com/idea/">documentation</a> is
 							always there to help.
 						</p>
