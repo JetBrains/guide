@@ -12,7 +12,7 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/multicursor.html"
   - title: (tutorial) Foojay - Working with Multiple Carets in IntelliJ IDEA
     href: "https://foojay.io/today/working-with-multiple-carets-in-intellij-idea/"
-  - title: (video) IntelliJ IDEA. Helen's Take On - Using Multiple Carets
+  - title: "(video) IntelliJ IDEA. Helen's Take On: Using Multiple Carets"
     href: "https://www.youtube.com/watch?v=l0ii-Oo0XX8"
 video: "https://youtu.be/z39jUnMZy44"
 ---

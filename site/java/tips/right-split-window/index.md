@@ -10,7 +10,7 @@ cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Split screen
     href: "https://www.jetbrains.com/help/idea/using-code-editor.html?keymap=primary_windows#split_screen"
-  - title: (video) IntelliJ IDEA. Helen's Take On - Split Windows
+  - title: "(video) IntelliJ IDEA. Helen's Take On: Split Windows"
     href: "https://www.youtube.com/watch?v=IsrTURTawAk"
 video: "https://youtu.be/k7gUpiWRPiY"
 ---

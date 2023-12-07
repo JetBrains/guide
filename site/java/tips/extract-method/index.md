@@ -1,23 +1,21 @@
 ---
-date: 2021-01-08
+date: 2023-12-08
 title: Extract Method
 topics:
   - java
   - refactoring
-author: hs
+author: md
 subtitle: Extract code to a new method
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: (video) IntelliJ IDEA Everyday Refactorings
+  - title: (video) IntelliJ IDEA. Everyday Refactorings
     href: "https://www.youtube.com/watch?v=rPq7fBo5JVs"
-  - title: (video) IntelliJ IDEA 3 Ways to Simplify Your Code
+  - title: (video) IntelliJ IDEA. 3 Ways to Simplify Your Code
     href: "https://www.youtube.com/watch?v=HgWU25YwDfc"
   - title: (documentation) IntelliJ IDEA Help - Extract Method
     href: "https://www.jetbrains.com/help/idea/extract-method.html"
-video: "https://youtu.be/VwEK2_FohFw"
+video: "https://youtu.be/Wu7dzSCh42Q"
 ---
 
-Highlight the code you want to extract to a method and press **⌥⌘M** (macOS), or **Ctrl+Alt+M** (Windows/Linux), to extract it.
-
-Extracting code into a new method can be useful in improving the readability of your code.
+Refactor code as you write it. Use **Extract Method** <kbd>⌥⌘M</kbd> (macOS) / <kbd>Ctrl+Alt+M</kbd> (Windows/Linux) to extract (part of) a method, give the new method a meaningful name and make your code easier to read and understand.

@@ -10,7 +10,7 @@ cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Getting started with Code With Me
     href: "https://www.jetbrains.com/help/idea/code-with-me.html"
-  - title: (video) IntelliJ IDEA. Helen's Take On - Code With Me
+  - title: "(video) IntelliJ IDEA. Helen's Take On: Code With Me"
     href: "https://www.youtube.com/watch?v=3D4ypTcQXfc"
 video: "https://youtu.be/xaJ_nJJ-NX8"
 ---
