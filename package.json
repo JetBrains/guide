@@ -74,9 +74,13 @@
 		"yargs": "^17.7.2"
 	},
 	"volta": {
-		"node": "19.6.0"
+		"node": "20.10.0"
 	},
 	"lint-staged": {
 		"**/*": "prettier --write --ignore-unknown"
+	},
+	"engines": {
+		"node": "^20.10.0",
+		"npm": "^10.2.3"
 	}
 }

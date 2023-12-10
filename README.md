@@ -18,7 +18,7 @@ Want to create content? Awesome! We like content. In this section, we'll cover s
 
 Here's what you need to get started:
 
-- Make sure you have installed NodeJS 18.\*
+- Make sure you have installed NodeJS 20.10+
 - Clone this repository
   - As a JetBrains employee, clone from Space and [enjoy some additional infrastructure](https://jetbrains.team/p/jetbrains-guide/documents/Docs/a/Contributing-on-Space).
   - As an external contributor, clone from GitHub.
