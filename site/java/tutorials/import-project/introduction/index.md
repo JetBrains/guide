@@ -9,7 +9,7 @@ subtitle: Importing a project into IntelliJ IDEA
 thumbnail: ./thumbnail.png
 ---
 
-When you open IntelliJ IDEA and don’t already have a project open, you’ll see the Welcome Screen. From the Welcome Screen you have several options. You can create a new project, open an existing project or get a project from VCS.
+When you open IntelliJ IDEA and don’t already have a project open, you’ll see the Welcome Screen. From the **Welcome Screen** you have several options. You can create a new project, open an existing project or get a project from VCS.
 
 If you’re new to IntelliJ IDEA and haven’t opened any projects yet, the Welcome Screen will look like this.
 ![Welcome Screen - New](welcome-screen.png)
