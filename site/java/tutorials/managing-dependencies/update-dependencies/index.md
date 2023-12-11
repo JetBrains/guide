@@ -24,9 +24,11 @@ Alternatively, we can use Context Actions **⌥⏎** (on macOS) or **Alt+Enter**
 
 ![Context Actions](context-action.png)
 
-We can also upgrade our dependencies using the Dependencies tool window. The Dependencies tool window will tell us if there’s a newer version of a dependency, as we can see here.
+We can also upgrade our dependencies using the **Dependencies tool window**. The **Dependencies tool window** will tell us if there’s a newer version of a dependency, as we can see here.
 
 ![Dependencies with newer versions](dependencies-with-upgrades.png)
+
+**Note:** If you cannot find the **Dependencies tool window**, make sure the [Package Search](https://plugins.jetbrains.com/plugin/12507-package-search) plugin is installed.
 
 We can choose the version to upgrade to by clicking on the version number in the list. Note that we don’t have to use the latest version.
 

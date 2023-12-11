@@ -58,7 +58,7 @@ Code completion works in Gradle too, as you can see below.
 
 ## From the build file using code generation
 
-We can also use code generation from the build file to add dependencies. In the build file, the pom.xml in a Maven project, invoke Package Search using **⌘N** (on macOS) or **Alt+Insert** (on Windows & Linux) and in the menu that opens, select **Add dependency**. This will open the Dependencies tool window.
+We can also use code generation from the build file to add dependencies. In the build file, the pom.xml in a Maven project, invoke Package Search using **⌘N** (on macOS) or **Alt+Insert** (on Windows & Linux) and in the menu that opens, select **Add dependency**. This will open the **Dependencies tool window**.
 
 ![Invoke Package Search in pom.xml](add-dependency-pom-xml.png)
 
@@ -66,17 +66,22 @@ Note that if we are using Gradle, we can do the same in our build.gradle file.
 
 ![Invoke Package Search in build.gradle](add-dependency-build-gradle.png)
 
+**Note:** If you cannot invoke Package Search, make sure the [Package Search](https://plugins.jetbrains.com/plugin/12507-package-search) plugin is installed. To do so, open **Preferences**
+<kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux), go to **Plugins** and check to see whether the Package Search plugin is installed. If not, go to the **Marketplace** tab to install it.
+
 ## From the Dependencies tool window
 
-Alternatively, we can open the Dependencies tool window directly. There is no shortcut to open the Dependencies tool window, so we can either use Recent Files, **⌘E** (on Mac) or **Ctrl+E** (on Windows/Linux), and type in "dependencies" to open the Dependencies tool window.
+Alternatively, we can open the **Dependencies tool window** directly. There is no shortcut to open the **Dependencies tool window**, so we can either use Recent Files, **⌘E** (on Mac) or **Ctrl+E** (on Windows/Linux), and type in "dependencies" to open the **Dependencies tool window**.
 
 ![Recent Files Dependencies](recent-files-dependencies.png)
+
+**Note:** If you cannot find the **Dependencies tool window**, make sure the [Package Search](https://plugins.jetbrains.com/plugin/12507-package-search) plugin is installed, as mentioned above.
 
 Alternatively, we can open it by clicking **Quick Launch** in the bottom-left and selecting **Dependencies**.
 
 ![Quick Launch Dependencies](quick-launch-dependencies.png)
 
-In the Dependencies tool window, we can search for a dependency. For example, let's search for AssertJ.
+In the **Dependencies tool window**, we can search for a dependency. For example, let's search for AssertJ.
 
 ![Search AssertJ](search-assertj-gradle.png)
 
@@ -102,7 +107,7 @@ When we click **Add**, we see that the dependency is added to the build file.
 
 If the version number is shown in red, that means IntelliJ IDEA hasn’t downloaded this library before. Click **Load Maven Changes** so IntelliJ IDEA will update its dependencies based on the changes to the pom.xml or build.gradle file.
 
-Go back to the Dependencies tool window and clear the search box by clicking the **x** on the right-hand side. You’ll see the project’s dependencies are updated with your new dependency.
+Go back to the **Dependencies tool window** and clear the search box by clicking the **x** on the right-hand side. You’ll see the project’s dependencies are updated with your new dependency.
 
 Next, let's look for jackson-databind. We see that there are several versions available. Since we have selected **Only stable**, only stable versions are shown in the list.
 
@@ -114,7 +119,7 @@ If we uncheck this option, we see that the list of versions also includes the re
 
 For production code, we probably want to use stable versions, so let's select the **Only stable** checkbox again. With this option enabled, IntelliJ IDEA will exclude any dependencies that have no stable versions, and hide them from the list. Now we can select the latest stable version and add this to our project. Let's also **Load Maven Changes** again.
 
-Finally, let's also add a new dependency to the Kotlin module. Let's switch to the Kotlin module and open the pom.xml for this module. Open the Dependencies Tool Window and search for Ktor.
+Finally, let's also add a new dependency to the Kotlin module. Let's switch to the Kotlin module and open the pom.xml for this module. Open the **Dependencies tool window** and search for Ktor.
 
 ![Search Ktor](search-ktor.png)
 
