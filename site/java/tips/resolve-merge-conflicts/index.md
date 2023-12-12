@@ -17,19 +17,11 @@ seealso:
 video: "https://youtu.be/GvAUA-jD9d0"
 ---
 
-Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search
-Everywhere dialog. You can now search for _Resolve Conflicts_ to open the
-**Conflicts** dialog which helps you to visually resolve merge conflicts
-between two different versions of the code.
+Use <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Resolve Conflicts_ to open the **Conflicts** dialog which helps you to visually resolve merge conflicts between two different versions of the code.
 
-- You can use the option available in the **Merge Revisions** dialog and **you
-  should carefully review** before you accept or ignore code changes as well as
-  resolving conflicts. This dialog visually helps you to review and resolve
-  merge conflicts.
+- You can use the option available in the **Merge Revisions** dialog and **you should carefully review** before you accept or ignore code changes as well as resolving conflicts. This dialog visually helps you to review and resolve merge conflicts.
 
-- **Note:** The **Resolve Conflicts** option from the Search Everywhere dialog
-  will only display the **Conflicts** dialog when there are merge conflicts in
-  your code, otherwise you will get an error.
+- **Note:** The **Resolve Conflicts** option from the Search Everywhere dialog will only display the **Conflicts** dialog when there are merge conflicts in your code, otherwise you will get an error.
 
 ## Resolving Conflicts Using Git Toolbar Options
 

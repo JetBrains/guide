@@ -15,9 +15,4 @@ video: >-
 ---
 
 **How to use:**
-Invoke the _Basic Completion_ feature using _Ctrl + Space on
-Windows/Linux_ or _⌃ + Space on macOS_ after the _FROM_ directive
-in a _Dockerfile_ and let the IDE assist you with the name and tag
-of the image you want to use.
-
-<span class="tag is-rounded">New in 2021.1</span>
+Invoke the _Basic Completion_ feature using <kbd>⌃␣</kbd> (macOS) / <kbd>Ctrl+Space</kbd> (Windows/Linux) after the _FROM_ directive in a _Dockerfile_ and let the IDE assist you with the name and tag of the image you want to use.

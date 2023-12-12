@@ -20,4 +20,4 @@ animatedGif:
 ---
 
 Want to add or remove a breakpoint to the current line without using a mouse?
-Just press _⌘F8_ on macOS or _Ctrl+F8_ on Windows/Linux.
+Just press <kbd>⌘F8</kbd> (macOS) / <kbd>Ctrl+F8</kbd> (Windows/Linux).

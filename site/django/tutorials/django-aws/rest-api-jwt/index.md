@@ -14,22 +14,15 @@ obsoletes:
   - /pycharm/tutorials/django-aws/rest-api-jwt
 ---
 
-Hello everyone, welcome to the Django tutorial series. In this tutorial,
-we are going to protect our endpoints by integrating
-JWT also known as JSON Web Token.
+Hello everyone, welcome to the Django tutorial series. In this tutorial, we are going to protect our endpoints by integrating JWT also known as JSON Web Token.
 
-According to Wikipedia, <em>JWT is an Internet proposed standard for
-creating data with optional signature and/or optional encryption whose
-payload holds JSON that asserts some number of claims. The tokens are
-signed either using a private secret or a public/private key.</em>
+According to Wikipedia, <em>JWT is an Internet proposed standard for creating data with optional signature and/or optional encryption whose payload holds JSON that asserts some number of claims. The tokens are signed either using a private secret or a public/private key.</em>
 
 To know more about JWT please visit the website [jwt.io](https://jwt.io/)
 
 ## Installing JWT Package
 
-There are lots of JWT packages available in the pypi repository. Previously
-I used to work with **djangorestframework-jwt**. This project is not being
-maintained. So, I am going to look for alternative options.
+There are lots of JWT packages available in the pypi repository. Previously I used to work with **djangorestframework-jwt**. This project is not being maintained. So, I am going to look for alternative options.
 
 According to [José Padilla](https://github.com/jpadilla), maintainer of [djangorestframework-jwt](https://pypi.org/project/djangorestframework-jwt/).
 
@@ -37,13 +30,7 @@ He is suggesting two alternative packages. We will move ahead with [django-rest-
 
 ![simple_jwt](steps/step1.png)
 
-Before moving forward I would like to thank all the contributors,
-collaborators who are involved in the open source community helping
-each other by creating these wonderful packages which indirectly make
-our life easier. I would recommend everyone who is watching this video
-right now, try contributing and share your support in these open-source
-projects. The more you give to the community the more you are going to
-get back.
+Before moving forward I would like to thank all the contributors, collaborators who are involved in the open source community helping each other by creating these wonderful packages which indirectly make our life easier. I would recommend everyone who is watching this video right now, try contributing and share your support in these open-source projects. The more you give to the community the more you are going to get back.
 
 We will follow two installation approaches
 
@@ -75,11 +62,7 @@ Okay, the installation is successfully done. Let’s update our requirements.txt
 
 In `settings.py`, add `rest_framework_simplejwt.authentication.JWTAuthentication` to the list of authentication classes:
 
-You can see the below image, we have added JWT Authentication in our
-default authentication classes. The authentication schemes are always
-defined as a list of classes. The REST framework will attempt to authenticate
-with each class in the list, and will set `request.user` and `request.auth` using
-the return value of the first class that successfully authenticates.
+You can see the below image, we have added JWT Authentication in our default authentication classes. The authentication schemes are always defined as a list of classes. The REST framework will attempt to authenticate with each class in the list, and will set `request.user` and `request.auth` using the return value of the first class that successfully authenticates.
 
 If no class authenticates, `request.user` will be set to an instance of
 `AnonymousUser`, and `request.auth` will be set to `None`.
@@ -114,18 +97,13 @@ REST_FRAMEWORK = {
 
 ```
 
-There are lots of other classes I have added like pagination,
-renderer & parser classes. I don’t want to get into more detail
-because we are not covering those scenarios. If you are interested to know
-more about this, please visit the below reference.
+There are lots of other classes I have added like pagination, renderer & parser classes. I don’t want to get into more detail because we are not covering those scenarios. If you are interested to know more about this, please visit the below reference.
 
 - [https://www.django-rest-framework.org/api-guide/settings/](https://www.django-rest-framework.org/api-guide/settings/)
 
 The entire source code is available on GitHub, you can access it from [here](https://github.com/mukulmantosh/SampleDemo).
 
-Next, I will be copying the JWT settings from **django-rest-framework-simplejwt** and
-paste it in our **settings.py** file. I am going to use the default
-settings as per provided in the documentation.
+Next, I will be copying the JWT settings from **django-rest-framework-simplejwt** and paste it in our **settings.py** file. I am going to use the default settings as per provided in the documentation.
 
 ```
 SIMPLE_JWT = {
@@ -158,10 +136,7 @@ SIMPLE_JWT = {
 
 ```
 
-Next, I am going to copy the default url routes provided
-by the simple jwt. This will be used to authenticate our user
-credentials and in return it will provide us with access token
-and refresh token.
+Next, I am going to copy the default url routes provided by the simple jwt. This will be used to authenticate our user credentials and in return it will provide us with access token and refresh token.
 
 ```
 from rest_framework_simplejwt.views import (
@@ -182,20 +157,13 @@ We will place the URL routes under **api/v1/user/urls.py**
 
 ![jwt_user_routes](steps/step7.png)
 
-The login api will provide you with access & refresh tokens. The access
-token is only valid for 5minutes, you can override it in
-the JWT settings. Refresh tokens are used to generate new tokens
-before your access token expires. If expired then you need to re-login again.
+The login api will provide you with access & refresh tokens. The access token is only valid for 5minutes, you can override it in the JWT settings. Refresh tokens are used to generate new tokens before your access token expires. If expired then you need to re-login again.
 
-**TokenVerify** will be used to check whether the token is still
-valid or not. You are going to play with these APIs when you are
-trying to integrate with modern frontend applications.
+**TokenVerify** will be used to check whether the token is still valid or not. You are going to play with these APIs when you are trying to integrate with modern frontend applications.
 
-Make sure to install **[django-filter](https://django-filter.readthedocs.io/en/)**, as we have included
-it in the default filter backends in our rest framework settings.
+Make sure to install **[django-filter](https://django-filter.readthedocs.io/en/)**, as we have included it in the default filter backends in our rest framework settings.
 
-This is one of the common packages widely used which
-allows users to declaratively add dynamic QuerySet filtering from URL parameters.
+This is one of the common packages widely used which allows users to declaratively add dynamic QuerySet filtering from URL parameters.
 
 ```
 pip install django-filter==2.4.0
@@ -215,34 +183,25 @@ I am going to provide a username and password, and will skip providing an email 
 
 ![create_super_user_2](steps/step10.png)
 
-I am going to bypass password validation. The password is quite
-weak but that’s okay for the tutorial but not recommended while your
-application is running in production.
+I am going to bypass password validation. The password is quite weak but that’s okay for the tutorial but not recommended while your application is running in production.
 
-Okay, our superuser has been successfully created. Let’s go back to
-the postman and provide our new generated user credentials.
+Okay, our superuser has been successfully created. Let’s go back to the postman and provide our new generated user credentials.
 
-You can observe the below image, we are successfully authenticated with our
-new credentials and in response we are receiveing **access** and **refresh** tokens.
+You can observe the below image, we are successfully authenticated with our new credentials and in response we are receiveing **access** and **refresh** tokens.
 
 ![user_login_postman](steps/step11.png)
 
-Let me verify the token is valid or not by calling our token verify api
-and passing the access token in the payload.
+Let me verify the token is valid or not by calling our token verify api and passing the access token in the payload.
 
-You can see the below image, we receive 200 HTTP response that means our
-token is valid.
+You can see the below image, we receive 200 HTTP response that means our token is valid.
 
 ![token_verify_postman](steps/step12.png)
 
-Now, I will test out the refresh token. Make sure to pass the
-refresh token which you received in your login api.
+Now, I will test out the refresh token. Make sure to pass the refresh token which you received in your login api.
 
 ![token_refresh](steps/step13.png)
 
-So, finally we received the access token which is valid for the
-next 5minutes. When it comes to security, make sure the lifetime of
-your token is comparatively less.
+So, finally we received the access token which is valid for the next 5minutes. When it comes to security, make sure the lifetime of your token is comparatively less.
 
 ![token_refresh_2](steps/step14.png)
 
@@ -280,9 +239,7 @@ class OrganizationAPI(ListCreateAPIView):
 
 It's much better to directly mention in your APIs instead of relying on the defaults.
 
-If you don't want to mention permission for every api, then you can mention
-directly in your **settings.py** file. Make sure to add it at the top,
-because order matters.
+If you don't want to mention permission for every api, then you can mention directly in your **settings.py** file. Make sure to add it at the top, because order matters.
 
 ![permission_settings](steps/step15.png)
 
@@ -302,11 +259,8 @@ The value should be **Bearer** followed by the access token.
 Authorization: Bearer <access_token>
 ```
 
-Yes, finally our API routes are now protected, and they are not going to work
-until you provide a valid token. Try playing around it.
+Yes, finally our API routes are now protected, and they are not going to work until you provide a valid token. Try playing around it.
 
 ![api_with_token](steps/step17.png)
 
-In the upcoming video I will show you how to integrate monitoring tools
-into the project, which is required when your application is running in test,
-staging or production server to receive real time errors.
+In the upcoming video I will show you how to integrate monitoring tools into the project, which is required when your application is running in test, staging or production server to receive real time errors.

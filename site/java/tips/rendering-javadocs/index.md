@@ -17,4 +17,4 @@ seealso:
 video: "https://youtu.be/khiBH4rkz38"
 ---
 
-Press **⌃⌥Q** (macOS), or **Ctrl+Alt+Q** (Windows/Linux) to render documentation in the editor. You can also use the icon in the gutter area. Once you have rendered the documentation you can right-click and select Adjust font size:
+Press <kbd>⌃⌥Q</kbd> (macOS) / <kbd>Ctrl+Alt+Q</kbd> (Windows/Linux) to render documentation in the editor. You can also use the icon in the gutter area. Once you have rendered the documentation you can right-click and select Adjust font size:

@@ -13,7 +13,7 @@ video: "https://youtu.be/i5Qu3qYOfsM?start=75"
 
 Now the basics of the project have been created, let's take a closer look and set up the dependencies we need.
 
-IntelliJ IDEA adds JUnit 5 as the default testing framework, which is a logical choice, but we want to use Spock instead of JUnit. We can [generate a new dependency](https://www.jetbrains.com/help/idea/work-with-gradle-dependency-diagram.html#add_gradle_dependency) for the libraries we want using **⌘N** / **Alt+Insert** in the `build.gradle` file and then choosing "Add Maven artifact dependency".
+IntelliJ IDEA adds JUnit 5 as the default testing framework, which is a logical choice, but we want to use Spock instead of JUnit. We can [generate a new dependency](https://www.jetbrains.com/help/idea/work-with-gradle-dependency-diagram.html#add_gradle_dependency) for the libraries we want using <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) in the `build.gradle` file and then choosing "Add Maven artifact dependency".
 
 ![](./03-spock-dependency.png)
 
@@ -49,7 +49,7 @@ Now we can load all the Gradle changes with **⇧⌘I** (macOS), or **Ctrl+Shift
 
 With a mixed language project like this one, one way to organise the files is to keep Java code in the `java` folder and to create a `groovy` folder for Groovy code.
 
-From the Project window, select the `test` folder and press **⌘N** (macOS) or **Alt+Insert** (Windows/Linux). Select "Directory", and start typing "groovy" in the **New Directory** dialog. IntelliJ IDEA should suggest "groovy" in the dropdown because we're using the Groovy plugin in Gradle.
+From the Project window, select the `test` folder and press <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux). Select "Directory", and start typing "groovy" in the **New Directory** dialog. IntelliJ IDEA should suggest "groovy" in the dropdown because we're using the Groovy plugin in Gradle.
 
 ![](./04-groovy-dir.png)
 

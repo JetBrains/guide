@@ -26,7 +26,7 @@ public void shouldMigrateASimpleTest() {
 
 3. One again, enter an abbreviation to trigger this Live Template, for example `junit`.
 4. Give your Live Template a suitable description such as `Creates a new JUnit test that fails`.
-5. Next you need to modify the template text to use variables rather than hard coded values. In addition, cut the method body to your clipboard. You can cut the whole line with **⌘X** (macOS), **Ctrl+X** (Windows/Linux) without highlighting it providing your caret is anywhere on the line.
+5. Next you need to modify the template text to use variables rather than hard coded values. In addition, cut the method body to your clipboard. You can cut the whole line with <kbd>⌘X</kbd> (macOS) / <kbd>Ctrl+X</kbd> (Windows/Linux) without highlighting it providing your caret is anywhere on the line.
 
 ```java
 @Test

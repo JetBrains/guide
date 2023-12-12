@@ -27,16 +27,16 @@ IntelliJ IDEA will tell you if your file has any warnings or errors in with the 
 
 ![inspections-widget.png](inspections-widget.png)
 
-You can click on this to open the Problems tool window or use (**⌘6** | **Alt+6**). You can navigate to each error by clicking on it or use **F2** to get to the next error and **Shift+F2** to go back to the previous error. Of course the goal is to keep your code always compiling but the Inspections Widget is very helpful to see the _state_ of your file at a glance.
+You can click on this to open the Problems tool window or use <kbd>⌘6</kbd> (macOS) / <kbd>Alt+6</kbd> (Windows/Linux). You can navigate to each error by clicking on it or use **F2** to get to the next error and **Shift+F2** to go back to the previous error. Of course the goal is to keep your code always compiling but the Inspections Widget is very helpful to see the _state_ of your file at a glance.
 
 ## Moving Between Errors
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q26Cc6V7zKk" >
 </iframe>
 
-Errors are hard to avoid at times but it's much easier to address them as they happen in IntelliJ IDEA and keep your code green and compiling. You can use (**F2** | **F2**) to navigate to the next error in your code or (**⇧F2** | **Shift+F2**) to navigate to the previous error.
+Errors are hard to avoid at times but it's much easier to address them as they happen in IntelliJ IDEA and keep your code green and compiling. You can use (**F2** | **F2**) to navigate to the next error in your code or <kbd>⇧F2</kbd> (macOS) / <kbd>Shift+F2</kbd> (Windows/Linux) to navigate to the previous error.
 
-You can also use the Problem Window (**⌘6** | **Alt+6**) to see all the errors in one place and address them by clicking on each one.
+You can also use the Problem Window <kbd>⌘6</kbd> (macOS) / <kbd>Alt+6</kbd> (Windows/Linux) to see all the errors in one place and address them by clicking on each one.
 
 ## Getting Hints in Your Code
 
@@ -52,7 +52,7 @@ Inlay hints that IntelliJ IDEA can provide include:
 - Usages
 - Parameters
 
-... and more. You can configure them in your Preferences/Settings (**⌘,** | **Ctrl+Alt+S**) and searching for "inlay hints".
+... and more. You can configure them in your Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and searching for "inlay hints".
 
 ## Understanding Gutter Information
 
@@ -68,7 +68,7 @@ Gutter icons can show you:
 - Overrides
 - Recursive calls
 
-... and more. You can configure them in your Preferences/Settings (**⌘,** | **Ctrl+Alt+S**) and searching for "gutter".
+... and more. You can configure them in your Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and searching for "gutter".
 
 ## Interpreting Scrollbars
 

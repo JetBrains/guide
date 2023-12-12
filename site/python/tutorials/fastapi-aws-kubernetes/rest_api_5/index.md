@@ -67,23 +67,17 @@ class OrderDetails(Base):
     created = Column(DateTime, default=datetime.now)
 ```
 
-The Order table will contain columns like ordering date, amount, order status,
-shipping address and foreign key relationship with user and order details.
+The Order table will contain columns like ordering date, amount, order status, shipping address and foreign key relationship with user and order details.
 
-Order details table will contain foreign key relationships with order
-and products table along-with quantity and created date.
+Order details table will contain foreign key relationships with order and products table along-with quantity and created date.
 
 ![step1](./steps/step1.png)
 
 ![step2](./steps/step2.png)
 
-Basically, we shouldn’t do `CASCADE`, because in the future, if someone deletes
-the product then order & order details will also get removed. But of course we don’t want
-to do that because we need to preserve order information. It doesn't matter in the future
-if the product gets removed from the system; the order information should be preserved.
+Basically, we shouldn’t do `CASCADE`, because in the future, if someone deletes the product then order & order details will also get removed. But of course we don’t want to do that because we need to preserve order information. It doesn't matter in the future if the product gets removed from the system; the order information should be preserved.
 
-This is a tutorial. We can ignore this scenario, but when working
-in a real-world scenario we need to store it which may be beneficial
+This is a tutorial. We can ignore this scenario, but when working in a real-world scenario we need to store it which may be beneficial
 for future audit purposes.
 
 Let me go to the product and user model and create the references.
@@ -118,9 +112,7 @@ We are going to work on two apis :
 - one is returning the orders list
 - and the second one is initiating or placing a new order
 
-Placing a new order is not like we are going to
-use PayPal or going to do any live transaction. We are just going to
-do a demo of the order flow.
+Placing a new order is not like we are going to use PayPal or going to do any live transaction. We are just going to do a demo of the order flow.
 
 So, let’s begin our first api on initiate order, or you can say placing order.
 
@@ -183,9 +175,7 @@ class ShowOrder(BaseModel):
         orm_mode = True
 ```
 
-As you can see we created two classes `ShowOrder` and `ShowOrderDetails`. ShowOrder
-will contain a list of OrderDetails, and OrderDetails will contain product information. You
-can recall the foreign key relationship with `Order` and `OrderDetails`.
+As you can see we created two classes `ShowOrder` and `ShowOrderDetails`. ShowOrder will contain a list of OrderDetails, and OrderDetails will contain product information. You can recall the foreign key relationship with `Order` and `OrderDetails`.
 
 You can observe the nested linking between order, order details and products.
 
@@ -193,8 +183,7 @@ Moving back to the router, we are going to create a service named `initiate_orde
 
 I will do the necessary imports.
 
-First, I am going to get user information. Currently, we are manually retrieving
-through email but very soon we will change this implementation in our upcoming tutorial.
+First, I am going to get user information. Currently, we are manually retrieving through email but very soon we will change this implementation in our upcoming tutorial.
 
 **services.py**
 
@@ -271,8 +260,7 @@ async def orders_list(database: Session = Depends(db.get_db)):
 
 The response will be returning a list of orders present in the db.
 
-You can observe the `get_order_listing` function, it’s first going to retrieve user information
-and after that it will return all order information for that specific user.
+You can observe the `get_order_listing` function, it’s first going to retrieve user information and after that it will return all order information for that specific user.
 
 **services.py**
 
@@ -309,10 +297,7 @@ I am going to execute the **Initiate Order**.
 
 ![step11](./steps/step11.png)
 
-You can observe that the order has been successfully placed and the current status
-is under processing. The response returned contains a nested schema which has order
-id followed by order details and then product
-information along-with detailed category information.
+You can observe that the order has been successfully placed and the current status is under processing. The response returned contains a nested schema which has order id followed by order details and then product information along-with detailed category information.
 
 Now, let’s check what’s coming in the order list.
 

@@ -27,13 +27,13 @@ To use Git as the version control for an IntelliJ IDEA project, go to **VCS > En
 
 IntelliJ IDEA will now create a Git repository in the root directory of the project. We also now have access to the Git tool window with **⌘9** (macOS), or **Alt+9** (Windows/Linux).
 
-If you open this, you can click on the [Console tab](https://www.jetbrains.com/help/idea/version-control-tool-window-console-tab.html) to see the Git commands that have been run and their result, or you can switch to the visual [Log tab](https://www.jetbrains.com/help/idea/log-tab.html). You can now also see that there's a `.git` folder in your project, either from the Project Window **⌘1** (macOS), **Alt+1** (Windows/Linux), or you can use IntelliJ IDEA’s terminal with **⌥F12** (macOS), or **Alt+F12** (Windows/Linux) to list the project’s files.
+If you open this, you can click on the [Console tab](https://www.jetbrains.com/help/idea/version-control-tool-window-console-tab.html) to see the Git commands that have been run and their result, or you can switch to the visual [Log tab](https://www.jetbrains.com/help/idea/log-tab.html). You can now also see that there's a `.git` folder in your project, either from the Project Window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux), or you can use IntelliJ IDEA’s terminal with <kbd>⌥F12</kbd> (macOS) / <kbd>Alt+F12</kbd> (Windows/Linux) to list the project’s files.
 
 Now you’ve enabled Git, but you haven’t added anything to source control yet. We can see that our files are shown in red, which means as far as Git is concerned, these are new files that are not yet added to Git, so they’re not in version control. Let’s select which files we want to be in version control, and make our first commit.
 
 ### Making Your First Commit Locally
 
-You can open the commit window using **⌘K** (macOS) **Ctrl+K** (Windows/Linux). The tutorial uses the [Commit Tool Window](https://www.jetbrains.com/help/idea/commit-and-push-changes.html#commit-tool-window), which was added in IntelliJ IDEA 2020.1. If you’re still using the old commit dialog, you can switch to the commit tool window in your Preferences/Settings **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) and then search for _Use non-modal commit interface_.
+You can open the commit window using <kbd>⌘K</kbd> (macOS) / <kbd>Ctrl+K</kbd> (Windows/Linux). The tutorial uses the [Commit Tool Window](https://www.jetbrains.com/help/idea/commit-and-push-changes.html#commit-tool-window), which was added in IntelliJ IDEA 2020.1. If you’re still using the old commit dialog, you can switch to the commit tool window in your Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and then search for _Use non-modal commit interface_.
 
 If you open up the unversioned files list in this Commit window you can see all the files in your project are listed because none of them have been added to Git yet. You probably don’t want to add everything to Git. There are some directories and files, like build output files, that we don’t need to put under source control. Seeing all the files in a single list like this might not be helpful, so we could opt to group the files, for example by directory or module.
 
@@ -43,7 +43,7 @@ In this example, there are two directories that we don’t want to add to Git be
 
 ![Add Versioned Files](add-versioned-files.png)
 
-Add a description for this commit describing what functionality these changes do. When you commit this, you get a balloon saying this was successful. When you go back to the Git window with **⌘9** (macOS), or **Alt+9** (Windows/Linux) the Log tab shows us this commit. You can see the files that were changed in this commit and the commit message. You can hide the Git window by pressing **⌘9** (macOS), or **Alt+9** (Windows/Linux) again.
+Add a description for this commit describing what functionality these changes do. When you commit this, you get a balloon saying this was successful. When you go back to the Git window with <kbd>⌘9</kbd> (macOS) / <kbd>Alt+9</kbd> (Windows/Linux) the Log tab shows us this commit. You can see the files that were changed in this commit and the commit message. You can hide the Git window by pressing<kbd>⌘9</kbd> (macOS) / <kbd>Alt+9</kbd> (Windows/Linux) again.
 
 ### Creating a Repository on GitHub
 

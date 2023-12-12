@@ -21,20 +21,14 @@ seealso:
 video: "https://youtu.be/Q26Cc6V7zKk"
 ---
 
-When you open a source file in the editor, you may see warnings or errors in
-this file. You can quickly step through to check all these issues without
-having to use the mouse, just press **F2**.
+When you open a source file in the editor, you may see warnings or errors in this file. You can quickly step through to check all these issues without having to use the mouse, just press <kbd>F2</kbd> (macOS) / <kbd>F2</kbd> (Windows/Linux).
 
-While you're coding, you may want to jump to the next error or warning (**F2**) or the last one (**Shift+F2**). This
-way, you can quickly hop to the next thing that needs fixing or addressing without having to move your hand to the
+While you're coding, you may want to jump to the next error or warning <kbd>F2</kbd> (macOS) / <kbd>F2</kbd> (Windows/Linux) or the last one <kbd>⇧F2</kbd> (macOS) / <kbd>Shift+F2</kbd> (Windows/Linux). This way, you can quickly hop to the next thing that needs fixing or addressing without having to move your hand to the
 mouse.
 
-Combine this with **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux) to quickly see the suggested solution to the problem
-and apply a fix. This will show a list of suggested solutions, as we saw in the [tip about Context Actions](../context-actions/),
+Combine this with <kbd>Alt+Enter</kbd> (Windows/Linux) to quickly see the suggested solution to the problem and apply a fix. This will show a list of suggested solutions, as we saw in the [tip about Context Actions](../context-actions/),
 and we can pick the solution that suits us best.
 
-If you're confident IntelliJ IDEA has the correct fix for the problem, you can skip the step of listing the solutions.
-Press **F2** to navigate to the problem, then press **⌥⇧⏎** (macOS), or **Shift+Alt+Enter** (Windows/Linux), to accept
-IntelliJ IDEA's suggested fix.
+If you're confident IntelliJ IDEA has the correct fix for the problem, you can skip the step of listing the solutions. Press <kbd>F2</kbd> (macOS) / <kbd>F2</kbd> (Windows/Linux) to navigate to the problem, then press <kbd>⌥⇧⏎</kbd> (macOS) / <kbd>Shift+Alt+Enter</kbd> (Windows/Linux), to accept IntelliJ IDEA's suggested fix.
 
 ![Accept suggested fix](accept-suggestion.png)

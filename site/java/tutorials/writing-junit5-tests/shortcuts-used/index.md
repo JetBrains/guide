@@ -10,17 +10,17 @@ thumbnail: ./thumbnail.png
 
 This blog post includes some shortcuts, but many more were demonstrated in the video and not all of them were mentioned here:
 
-`⌘[ or Ctrl+Alt+left arrow` to navigate back – makes it easy to navigate between all the places you’ve been while writing code and running tests
+<kbd>⌘\]</kbd> (macOS) / <kbd>Ctrl+Alt+Right Arrow</kbd> (Windows/Linux) to navigate back – makes it easy to navigate between all the places you’ve been while writing code and running tests
 
-`⌘[ or Ctrl+Alt+left arrow` to navigate back – makes it easy to navigate between all the places you’ve been while writing code and running tests
+<kbd>⌘\[</kbd> (macOS) / <kbd>Ctrl+Alt+Left Arrow</kbd> (Windows/Linux) to navigate back – makes it easy to navigate between all the places you’ve been while writing code and running tests
 
-`⌘⇧T or Ctrl+Shift+T` to navigate between test and test subject. This is explored in the Top 5 Navigation Tips (blog and video).
+<kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux) to navigate between test and test subject. This is explored in the Top 5 Navigation Tips (blog and video).
 
-`⌃⇧J or Ctrl+Shift+J` to join Lines to create compiling code.
+<kbd>⌃⇧J</kbd> (macOS) / <kbd>Ctrl+Shift+J</kbd> (Windows/Linux) to join Lines to create compiling code.
 
-`⇧⌘⏎ or Ctrl+Shift+Enter` to complete Statement close off the brackets and statement, and it also formats the code too.
+<kbd>⌃⇧⏎</kbd> (macOS) / <kbd>Ctrl+Shift+Enter</kbd> (Windows/Linux) to complete Statement close off the brackets and statement, and it also formats the code too.
 
-`⌃⇧Space or Ctrl+Shift+Space` to use smart completion
+<kbd>⌃⇧␣</kbd> (macOS) / <kbd>Ctrl+Shift+Space</kbd> (Windows/Linux) to use smart completion
 
 ### Related Links
 

@@ -19,4 +19,4 @@ seealso:
 video: "https://youtu.be/9n7cWADTvRo"
 ---
 
-Press **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), or to display **Find Actions** and then you can type _tab placement_, _navigation bar_, _tool windows_ to modify or disable these elements.
+Press <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd>, or to display **Find Actions** and then you can type _tab placement_, _navigation bar_, _tool windows_ to modify or disable these elements.

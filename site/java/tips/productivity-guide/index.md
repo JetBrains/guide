@@ -13,4 +13,4 @@ seealso:
 video: "https://youtu.be/W0z9FVoG34c"
 ---
 
-Access the **Productivity Guide** from the **Help** menu, or use Find Action (**⇧⌘A** on macOS, or **Control+Shift+A** on Windows/Linux) and search for "productivity", to see the functionality that you're using and how often, as well as the functionality you might not have tried out. What will you learn next?
+Access the **Productivity Guide** from the **Help** menu, or use Find Action <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) and search for "productivity", to see the functionality that you're using and how often, as well as the functionality you might not have tried out. What will you learn next?

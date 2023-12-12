@@ -14,11 +14,11 @@ Let's modify the code arrangement settings for this example. Specifically we wan
 
 ### Modifying the Existing Rule Arrangement
 
-You can change your rule arrangement preferences with **⌘,** (macOS), **Ctrl+Alt+S** (Windows/Linux) and then searching for _arrangement_. Select **Editor > Code Style > Java** from the filtered list and then the **Arrangement** tab.
+You can change your rule arrangement preferences with <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and then searching for _arrangement_. Select **Editor > Code Style > Java** from the filtered list and then the **Arrangement** tab.
 
 ### Arrangement Settings/Preferences
 
-To change your code arrangement settings, use **⌘,** (macOS), **Ctrl+Shift+S** (Windows/Linux), to bring up the Preferences/Settings dialog. This dialog is searchable, so you can type in _arrangement_. This filters the dialog to **Code Style**. You can then select the language you're working with. In this tutorial we will use **Java**. Alternatively, you can navigate to **Editor > Code Style > Java**.
+To change your code arrangement settings, use <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux), to bring up the Preferences/Settings dialog. This dialog is searchable, so you can type in _arrangement_. This filters the dialog to **Code Style**. You can then select the language you're working with. In this tutorial we will use **Java**. Alternatively, you can navigate to **Editor > Code Style > Java**.
 
 The Arrangement tab is grouped into two areas:
 
@@ -41,7 +41,7 @@ This is where you can define how you'd like your classes to be ordered when you 
 
 ### Adding a New Arrangement Rule
 
-To add our new rule, go down to rule 22 and press the **+** button. This will place the new rule below 22. Select Type: **method** and Modifier: **private**. You can give it a name if required but both the type and modifier are displayed so that may not be necessary for this example.
+To add our new rule, go down to rule 22 and press <kbd>+</kbd> (macOS) / <kbd>Plus</kbd> (Windows/Linux). This will place the new rule below 22. Select Type: **method** and Modifier: **private**. You can give it a name if required but both the type and modifier are displayed so that may not be necessary for this example.
 
 ![New rule for private methods](new_arrangement_rule.png)
 
@@ -182,7 +182,7 @@ public class RearrangeCode {
 
 ```
 
-Let's invoke [rearrange code](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code) with **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux). In the Find Actions dialog you can type in _Rearrange Code_:
+Let's invoke [rearrange code](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code) with <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux). In the Find Actions dialog you can type in _Rearrange Code_:
 
 ![Rearrange Code](rearrange-code.png)
 

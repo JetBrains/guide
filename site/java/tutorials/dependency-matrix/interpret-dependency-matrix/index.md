@@ -96,7 +96,7 @@ We can also navigate to the relevant code from the Dependency Matrix. To select 
 
 ![Dependency Matrix - Find Usages](dependency-matrix-find-usages.png)
 
-The **Find tool window** will open, showing the usages of the selected dependency. Close the **DSM tool window** to look at the results and explore the code you’re interested in. We can open the relevant code by double-clicking it in the **Find tool window** (**⌘3** on macOS, or **Alt+3** on Windows/Linux).
+The **Find tool window** will open, showing the usages of the selected dependency. Close the **DSM tool window** to look at the results and explore the code you’re interested in. We can open the relevant code by double-clicking it in the **Find tool window** <kbd>⌘3</kbd> (macOS) / <kbd>Alt+3</kbd> (Windows/Linux).
 
 ![Find tool window](find-tool-window.png)
 
@@ -104,7 +104,7 @@ You can reopen the window again from the main menu by going to **View | Tool Win
 
 ![Reopen Dependency Matrix](dsm.png)
 
-And remember that all windows can be opened from **Recent Files** (**⌘E** on macOS, or **Ctrl+E** on Windows/Linux) as well.
+And remember that all windows can be opened from **Recent Files** <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) as well.
 
 ![Reopen Dependency Matrix](recent-files-dsm.png)
 
@@ -112,6 +112,6 @@ And remember that all windows can be opened from **Recent Files** (**⌘E** on m
 
 Remember from the legend that mutual or cyclic dependencies are shown in red. This means that two components depend on each other.
 
-In a large application with multiple cyclic dependencies, you don’t need to expand all the nodes one by one to find all the cyclic dependencies. You can press **F2** or select **Go to Next Cycle** from the context menu to quickly jump to the next cycle.
+In a large application with multiple cyclic dependencies, you don’t need to expand all the nodes one by one to find all the cyclic dependencies. You can press <kbd>⌘F2</kbd> (macOS) / <kbd>Ctrl+F2</kbd> (Windows/Linux) or select **Go to Next Cycle** from the context menu to quickly jump to the next cycle.
 
 ![Dependency Matrix - Go to Next Cycle](go-to-next-cycle.png)

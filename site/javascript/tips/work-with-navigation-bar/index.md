@@ -23,6 +23,6 @@ animatedGif:
 
 With the navigation bar, you can quickly open files in the project tree:
 
-1. Press _Cmd+Up_ on macOS or _Alt+Home_ on Windows/Linux.
+1. Press <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux).
 2. Use arrows to get to the target directory and file.
-3. Press _Enter_ to open a file.
+3. Press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) to open a file.

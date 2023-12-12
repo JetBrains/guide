@@ -15,4 +15,4 @@ video: "https://youtu.be/JL7BJ41u66w"
 
 You can now generate tests for functions with generic parameters.
 
-To generate a test for a generic function, click the function, press _Ctrl + Shift + T on Windows/Linux_ or _⌘ + ⇧ + T on macOS_, and select **Test for function** from the popup.
+To generate a test for a generic function, click the function, press <kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux), and select **Test for function** from the popup.

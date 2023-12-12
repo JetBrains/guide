@@ -16,5 +16,4 @@ cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 
-Need to quickly look up the names of parameters in methods and functions? Place the caret
-anywhere within the call of a method or function and press _Cmd+P/Ctrl+P_.
+Need to quickly look up the names of parameters in methods and functions? Place the caret anywhere within the call of a method or function and press <kbd>⌘P</kbd> (macOS) / <kbd>Ctrl+P</kbd> (Windows/Linux).

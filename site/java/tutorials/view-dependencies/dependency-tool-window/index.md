@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 
 Finally, we can view and manage dependencies in the Dependencies tool window. The Dependencies tool window becomes available when the current project has at least one supported module. All types of dependencies are supported for Maven. For Gradle only a top level `dependencies { }` block is supported in the build script.
 
-Since there is no shortcut to open the Dependencies tool window directly either, we can again use Recent Files, **⌘E** (on Mac) or **Ctrl+E** (on Windows/Linux), and type in "dependencies" to open the Dependencies tool window.
+Since there is no shortcut to open the Dependencies tool window directly either, we can again use Recent Files, <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux), and type in "dependencies" to open the Dependencies tool window.
 
 ![Recent Files Dependencies](recent-files-dependencies.png)
 

@@ -8,7 +8,7 @@ subtitle: How to add bookmarks with an identifier
 thumbnail: ./thumbnail.png
 ---
 
-We can also create bookmarks that are assigned to a digit (0 to 9) or letter (A to Z). To add a mnemonic line bookmark, press **⌥ F3** (on macOS) or **Control+F11** (on Windows/Linux) and press the digit or letter to use as an identifier for this bookmark. Again, we can also or right-click the gutter next to the line of code that you want to bookmark and select **Add Mnemonic Bookmark**.
+We can also create bookmarks that are assigned to a digit (0 to 9) or letter (A to Z). To add a mnemonic line bookmark, press <kbd>F3<kbd/> (macOS) / <kbd>F11</kbd> (Windows/Linux) and press the digit or letter to use as an identifier for this bookmark. Again, we can also or right-click the gutter next to the line of code that you want to bookmark and select **Add Mnemonic Bookmark**.
 
 ![Add Mnemonic Bookmark](add-mnemonic-bookmark-menu.png)
 

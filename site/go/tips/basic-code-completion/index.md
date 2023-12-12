@@ -20,11 +20,8 @@ _Symbols from not-yet-imported packages_ are also offered, with autoimport on-th
 
 **How to use:**
 
-Basic completion pops up as you start typing code and GoLand recognizes
-an opportunity to complete something for you, but you can invoke it anytime by pressing _Ctrl + Space on Windows/Linux_ or _⌃ + Space on macOS_.
+Basic completion pops up as you start typing code and GoLand recognizes an opportunity to complete something for you, but you can invoke it anytime by pressing <kbd>⌃␣</kbd> (macOS) / <kbd>Ctrl+Space</kbd> (Windows/Linux).
 
 **Pro tip:**
 
 _Basic Code Completion_ is also available for non-English symbols.
-
-<span class="tag is-rounded">New in 2017.3</span>

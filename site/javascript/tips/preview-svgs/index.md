@@ -16,5 +16,4 @@ animatedGif:
   height: 300
 ---
 
-You can preview images right from the Project view – just press _Alt+Space_
-on macOS or _Ctrl+Shift+I_ on Windows and Linux.
+You can preview images right from the Project view – just press <kbd>⌃⌥␣</kbd> (macOS) / <kbd>Ctrl+Shift+I</kbd> (Windows/Linux).

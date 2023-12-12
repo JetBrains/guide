@@ -15,4 +15,4 @@ seealso:
 video: "https://youtu.be/4rHMAWR0m9E"
 ---
 
-Use **⌃H** (macOS) or **Ctrl+H** (Windows/Linux) to view the hierarchy of classes, methods, and calls and explore the structure of source files.
+Use <kbd>⌃H</kbd> (macOS) / <kbd>Ctrl+H</kbd> (Windows/Linux) to view the hierarchy of classes, methods, and calls and explore the structure of source files.

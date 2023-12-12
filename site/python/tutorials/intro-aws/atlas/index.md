@@ -18,9 +18,7 @@ In this tutorial we are going create a MongoDB Cluster and connect through PyCha
 
 # MongoDB Atlas
 
-MongoDB is open-source cross-platform document-oriented database. As you know
-MongoDB provides a managed database as a service which is also known as **MongoDB Atlas**.
-They offer free storage upto 512MB which is good enough for development but not suitable for
+MongoDB is open-source cross-platform document-oriented database. As you know MongoDB provides a managed database as a service which is also known as **MongoDB Atlas**. They offer free storage upto 512MB which is good enough for development but not suitable for
 production workloads.
 
 ![atlas_step_1](steps/step1.png)
@@ -40,9 +38,7 @@ It will take a few minutes to provision the new cluster.
 
 ![atlas_step_3](steps/step3.png)
 
-Once the database has been successfully created,
-we need to create a **Database User** which will be authorized
-to connect to the database.
+Once the database has been successfully created, we need to create a **Database User** which will be authorized to connect to the database.
 
 Click on **Database Access**. Provide a username and click on, **Autogenerate Secure Password**.
 
@@ -81,7 +77,6 @@ We will be updating all the information like user, database name, password and t
 
 ![atlas_step_8](steps/step8.png)
 
-After that I am going to click on **Test Connection** to check whether
-I am able to establish connection to the DB or not, as you can see the connection was successful. I will click on Apply and then OK.
+After that I am going to click on **Test Connection** to check whether I am able to establish connection to the DB or not, as you can see the connection was successful. I will click on Apply and then OK.
 
 We have successfully connected with the MongoDB Database through PyCharm Professional.

@@ -10,7 +10,7 @@ subtitle: Cloning a project from version control
 thumbnail: ./thumbnail.png
 ---
 
-From the Welcome Screen, you can create a project from existing sources by going to **File | New | Project from Existing Sources**, or you can use **Find Action** (**⌘⇧A** on macOS, or **Ctrl+Shift+A** on Windows/Linux) to find this action.
+From the Welcome Screen, you can create a project from existing sources by going to **File | New | Project from Existing Sources**, or you can use **Find Action** <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) to find this action.
 
 There are several ways to clone a project from version control.
 
@@ -20,7 +20,7 @@ If the version control integration is already enabled, go to **Git | Clone**.
 If the version control integration is not enabled yet, go to **VCS | Get from Version Control**.
 ![VCS: Get from Version Control](vcs.png)
 
-Alternatively, go to **File | New | Project from Version Control**, or use **Find Action** (**⌘⇧A** on macOS, or **Ctrl+Shift+A** on Windows/Linux) to find this action. Both of these options will work regardless of whether version control is enabled yet.
+Alternatively, go to **File | New | Project from Version Control**, or use **Find Action** <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) to find this action. Both of these options will work regardless of whether version control is enabled yet.
 ![Project from Version Control](project-from-vsc.png)
 ![Find Action](find-action-vcs.png)
 

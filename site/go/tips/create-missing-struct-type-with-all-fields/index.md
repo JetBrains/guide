@@ -15,9 +15,6 @@ video: >-
 **How to use:**
 Place the cursor on a type that's not yet defined but used.
 
-Then, press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_
-and select the _Create type_ action.
+Then, press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and select the _Create type_ action.
 
 A type will be created. It will include all the fields too.
-
-<span class="tag is-rounded">New in 2021.1</span>

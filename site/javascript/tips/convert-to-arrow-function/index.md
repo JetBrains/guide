@@ -18,6 +18,4 @@ animatedGif:
   height: 300
 ---
 
-Instead of manually converting a function to a variable holding an arrow function, let WebStorm
-do that for you: press _Alt+Enter_ on the name in the function definition and select the
-corresponding intention.
+Instead of manually converting a function to a variable holding an arrow function, let WebStorm do that for you: press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) on the name in the function definition and select the corresponding intention.

@@ -17,4 +17,4 @@ animatedGif:
   height: 300
 ---
 
-Need to launch tools like npm and Yarn, open recent projects, or start a run configuration? You can do it all from one place using the _Run Anything_ action (_Ctrl+Ctrl_).
+Need to launch tools like npm and Yarn, open recent projects, or start a run configuration? You can do it all from one place using the <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl<kbd/> (Windows/Linux).

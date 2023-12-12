@@ -19,11 +19,11 @@ video:
   end: 646
 ---
 
-Using **Search Everywhere** (<kbd>Shift+Shift</kbd>), you can quickly find anything in your project.
+Using **Search Everywhere** <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (VS Windows/Linux), you can quickly find anything in your project.
 In the list that appears, start typing the item name.
 As you type, the list of items narrows down, suggesting names that match the entered substring.
 
-Use the <kbd>Tab</kbd> key to select a different tab in the **Search Everywhere** list to scope the search to classes, files, text, actions, and more.
+Use the <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (VS Windows/Linux) key to select a different tab in the **Search Everywhere** list to scope the search to classes, files, text, actions, and more.
 
 ### See Also
 

@@ -14,7 +14,7 @@ video: "https://youtu.be/dgUyhd-4EeM"
 
 ### How Rider makes web development more productive
 
-Rider supports various web frameworks, such as Angular, React, and React + Redux. You can use these yogether with ASP.NET/ASP.NET Core, or use VueJS and other JavaScript front-end frameworks without any hassle.
+Rider supports various web frameworks, such as Angular, React, and React + Redux. You can use these together with ASP.NET/ASP.NET Core, or use VueJS and other JavaScript front-end frameworks without any hassle.
 
 In this video, we'll have a look at the various options Rider gives you when it comes to web and cloud development.
 

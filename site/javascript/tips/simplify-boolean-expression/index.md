@@ -17,4 +17,4 @@ animatedGif:
   height: 300
 ---
 
-WebStorm will warn you if a boolean expression has any unnecessary parts that can be simplified. You can then press _⌥Enter_ on macOS or _Alt+Enter_ on Windows/Linux, and WebStorm will simplify the expression for you.
+WebStorm will warn you if a boolean expression has any unnecessary parts that can be simplified. You can then press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), and WebStorm will simplify the expression for you.

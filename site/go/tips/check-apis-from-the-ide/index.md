@@ -16,7 +16,4 @@ video: >-
 Create a file with _.http_ extension in your project. Then, type
 the request you want to make.
 
-Finally, press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_
-and use the _Run "address"_ action from the menu.
-
-<span class="tag is-rounded">New in 2021.1</span>
+Finally, press <kbd>⌃⏎</kbd> (macOS) / <kbd>Ctrl+Enter</kbd> (Windows/Linux) and use the _Run "address"_ action from the menu.

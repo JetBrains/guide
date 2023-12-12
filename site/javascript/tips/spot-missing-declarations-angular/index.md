@@ -20,4 +20,4 @@ animatedGif:
   height: 300
 ---
 
-With _Ctrl+Cmd+Up_ on macOS or _Ctrl+Alt+Home_ on Windows and Linux, you can quickly jump between the Angular component's template, test, style and TypeScript files.
+With <kbd>^⌘↑</kbd> (macOS) / <kbd>Ctrl+Alt+Home</kbd> (Windows/Linux), you can quickly jump between the Angular component's template, test, style and TypeScript files.

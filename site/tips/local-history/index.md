@@ -80,4 +80,4 @@ First, invoke `Search Everywhere` and search for the `Show Local History` action
 
 In the Local History window, tab into the `Old Changes` panel.
 Cursor down to the edit.
-Tab to go into the changes. And – on Mac – `Ctrl-Cmd-Right arrow` to accept changes.
+Tab to go into the changes.

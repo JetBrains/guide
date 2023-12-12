@@ -17,4 +17,4 @@ seealso:
 video: "https://youtu.be/VFV-iaJCI1c"
 ---
 
-Run anything (**⌃⌃** on macOS), or **Ctrl+Ctrl** on Windows/Linux) allows you to run any of your **Run Configurations** as well as scripts and commands such as `mvn clean` or `gradle --status`. You can also use Run Anything to open your recent projects. Press **?** to see the available options and then run Maven Goals, Gradle Tasks, Open a Project or Run an existing run configuration.
+Run anything <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl<kbd/> (Windows/Linux) allows you to run any of your **Run Configurations** as well as scripts and commands such as `mvn clean` or `gradle --status`. You can also use Run Anything to open your recent projects. Press **?** to see the available options and then run Maven Goals, Gradle Tasks, Open a Project or Run an existing run configuration.

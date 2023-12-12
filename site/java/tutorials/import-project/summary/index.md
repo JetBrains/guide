@@ -22,10 +22,10 @@ version control.
 
 Here are the IntelliJ IDEA shortcuts that we used.
 
-| Name              | macOS Shortcut | Windows / Linux Shortcut |
-| ----------------- | -------------- | ------------------------ |
-| Find Action       | **⌘⇧A**        | **Ctrl+Shift+A**         |
-| Project Structure | **⌘;**         | **Ctrl+Alt+Shift+S**     |
+| Name              | macOS Shortcut  | Windows / Linux Shortcut    |
+| ----------------- | --------------- | --------------------------- |
+| Find Action       | <kbd>⌘⇧A</<kbd> | <kbd>Ctrl+Shift+A</kbd>     |
+| Project Structure | <kbd>⌘;</kbd>   | <kbd>Ctrl+Alt+Shift+S</kbd> |
 
 ### Related Links
 

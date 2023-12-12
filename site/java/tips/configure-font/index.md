@@ -14,4 +14,4 @@ seealso:
 video: "https://youtu.be/TBX3qzu5DSo"
 ---
 
-Open preferences **⌘,** (on Mac) or **Ctrl+Alt+S** (on Windows/Linux) and go to **Editor** | **Font** to configure font, font size, line distance, and enable ligatures if you want!
+Open preferences <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and go to **Editor** | **Font** to configure font, font size, line distance, and enable ligatures if you want!

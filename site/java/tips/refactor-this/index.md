@@ -18,4 +18,4 @@ seealso:
 video: "https://youtu.be/iMWcPz_RWnU"
 ---
 
-Refactor This using **⌃T** (MacOS) or **Shift+Ctrl+Alt+T** (Windows). Most refactorings have their own shortcut, but this shows us refactoring options for the selection. Select the menu item by pressing its number instead of using arrow keys.
+Refactor This using <kbd>⌃T<kbd/> (macOS) / <kbd>Shift+Ctrl+Alt+T</kbd> (Windows/Linux). Most refactorings have their own shortcut, but this shows us refactoring options for the selection. Select the menu item by pressing its number instead of using arrow keys.

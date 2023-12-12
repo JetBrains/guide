@@ -20,9 +20,9 @@ video: "https://youtu.be/CsqB4r2brWc"
 
 Manage your dependencies inside IntelliJ IDEA. Open the **Dependencies tool window** to manage your dependencies. There are multiple ways to open the Dependencies tool window, including:
 
-- Open all windows from **Recent Files** (**⌘E** on macOS, or **Ctrl+E** on Windows/Linux)
-- Use **Search Everywhere** (**⇧⇧**) to search for "Dependencies"
-- Use **Find Action** (**⌘⇧A** on macOS), or **Ctrl+Shift+A** on Windows/Linux) to search for "Dependencies"
+- Open all windows from **Recent Files** (<kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux))
+- Use **Search Everywhere** <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux) to search for "Dependencies"
+- Use **Find Action** <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> to search for "Dependencies"
 
 To use this feature, make sure the [Package Search](https://www.jetbrains.com/help/idea/package-search.html) plugin is enabled.
 

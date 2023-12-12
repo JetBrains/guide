@@ -24,7 +24,8 @@ If needed, the font size in Presentation Mode can be configured in **Preferences
 
 ![Configure Presentation Mode Font size](presentation-mode-config-font-size.png)
 
-We can also open Presentation Mode using short-cuts. Open the **Quick Switch Scheme** using **⌃\`** (on Mac) or **Ctrl+\`** (on Windows/Linux). Use the arrows to select **View Mode** and then select **Enter Presentation Mode**.
+We can also open Presentation Mode using short-cuts. Open the **Quick Switch Scheme** using <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux)
+. Use the arrows to select **View Mode** and then select **Enter Presentation Mode**.
 
 ![Open Quick Switch Scheme - View Mode](qss-view-mode.png)
 

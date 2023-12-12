@@ -19,4 +19,4 @@ seealso:
 video: "https://youtu.be/tvt3swsbxVw"
 ---
 
-Place the caret on the line that you want to join with a lower line and press **⌃⇧J** (macOS), or **Ctrl+Shift+J** (Windows/Linux), to join lines of code.
+Place the caret on the line that you want to join with a lower line and press <kbd>⌃⇧J</kbd> (macOS) / <kbd>Ctrl+Shift+J</kbd> (Windows/Linux), to join lines of code.

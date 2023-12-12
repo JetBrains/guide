@@ -15,5 +15,3 @@ video: >-
 **How to use:**
 
 Configure the git client with the correct key. Then, head over to _Settings/Preferences | Version Control | Git_ and check the option **Configure GPG Key...** to turn on this feature.
-
-<span class="tag is-rounded">New in 2021.2</span>

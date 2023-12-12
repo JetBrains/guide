@@ -8,7 +8,7 @@ subtitle: Insert four employees into the database.
 thumbnail: ./thumbnail.png
 ---
 
-Now that we have our Employee entity, repository and database configuration, we are ready to write our application logic. Let's say we want to insert four employees to our database. We'll navigate to the `SpringDataJpaApplication` class that was created for our Spring Boot application (**Shift**+**Shift** to search for class).
+Now that we have our Employee entity, repository and database configuration, we are ready to write our application logic. Let's say we want to insert four employees to our database. We'll navigate to the `SpringDataJpaApplication` class that was created for our Spring Boot application <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux).
 
 **Exercise**: Take a few minutes to see if you can create a `insertFourEmployees(EmployeeRepository repository)` method that inserts employees using the `save()` method.
 
@@ -35,7 +35,7 @@ public CommandLineRunner run(EmployeeRepository repository) {
 }
 ```
 
-Let's run our application and see it in action. We'll press **Shift**+**F10** for Windows/Linux or **⌃R** for macOS.
+Let's run our application and see it in action. We'll press <kbd>⌃R</kbd> (macOS) / <kbd>Shift+F10</kbd> (Windows/Linux).
 
 ## End Result
 

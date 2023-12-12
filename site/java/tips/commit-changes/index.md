@@ -23,6 +23,6 @@ seealso:
 video: "https://youtu.be/-1DXJvgUTkA"
 ---
 
-Use **⌘0** (macOS), **Alt+0** (Windows/Linux) to display the Commit tool window. From here you can either press **Commit** to commit your changes, or **Commit and Push** to do it in one action. Alternatively, you can use **⌘K** (macOS), **Ctrl+K** (Windows/Linux) to commit your changes, or **⌥⌘K** (macOS), **Ctrl+Shift+K** (Windows/Linux) to commit and push your changes.
+Use <kbd>⌘0</kbd> (macOS) / <kbd>Alt+0</kbd> (Windows/Linux) to display the Commit tool window. From here you can either press **Commit** to commit your changes, or **Commit and Push** to do it in one action. Alternatively, you can use <kbd>⌘K</kbd> (macOS) / <kbd>Ctrl+K</kbd> (Windows/Linux) to commit your changes, or <kbd>⌘⌥K</kbd> (macOS) / <kbd>Ctrl+Shift+K</kbd> (Windows/Linux) to commit and push your changes.
 
 If you commit and push your changes you will be able to select your remote repository in the next step.

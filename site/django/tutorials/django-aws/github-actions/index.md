@@ -243,13 +243,9 @@ Yes, the 1.0 tag is reflecting in the repository.
 
 ![build-success-ecr](./steps/step36.png)
 
-I hope you now have the basic knowledge how to setup a workflow and initiate an automated
-build & deployment process. If you got stuck somewhere, then follow the video. This is what actually happens in the real software world, but over there
-you will be interacting with complex workflows.
+I hope you now have the basic knowledge how to setup a workflow and initiate an automated build & deployment process. If you got stuck somewhere, then follow the video. This is what actually happens in the real software world, but over there you will be interacting with complex workflows.
 
-The main goal of this tutorial series was to provide you brief knowledge of what actually
-happens during the software development beginning from development, testing and finally until
-deploying the application in production.
+The main goal of this tutorial series was to provide you brief knowledge of what actually happens during the software development beginning from development, testing and finally until deploying the application in production.
 
 Don’t get overwhelmed, take your time, it's not a race. I know there are lots of topics that I didn’t cover in this course, but that was not
 the goal of this tutorial series. This tutorial is only for those people who are interested in working with Django or just

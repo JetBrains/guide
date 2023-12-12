@@ -17,8 +17,7 @@ video: "https://www.youtube.com/watch?v=fAb6OW9Uur4"
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-In this tutorial we will be deploying our application in AWS using the
-[Elastic Kubernetes Service(EKS)](https://aws.amazon.com/eks/) along-with setting up domain with SSL.
+In this tutorial we will be deploying our application in AWS using the [Elastic Kubernetes Service(EKS)](https://aws.amazon.com/eks/) along-with setting up domain with SSL.
 
 ![step1](./steps/step1.png)
 
@@ -26,16 +25,13 @@ Make sure before proceeding, you have installed the [AWS Command Line](https://a
 
 # eksctl
 
-There is one more application we need to install in our system and that is **eksctl**. It is the official command line
-tool for EKS and helps in managing clusters in EKS, developed by [WeaveWorks](https://www.weave.works/) and written in **Go**.
+There is one more application we need to install in our system and that is **eksctl**. It is the official command line tool for EKS and helps in managing clusters in EKS, developed by [WeaveWorks](https://www.weave.works/) and written in **Go**.
 
-Make sure you have both **kubectl** and **eksctl** in your system, and also we expect from the audience
-they have previous working experience in AWS.
+Make sure you have both **kubectl** and **eksctl** in your system, and also we expect from the audience they have previous working experience in AWS.
 
 ![step2](./steps/step2.png)
 
-I am going to skip the installation steps, as it has clearly been provided in the aws & eksctl documentation. You can
-follow that easily or there are tons of articles available on how to do that.
+I am going to skip the installation steps, as it has clearly been provided in the aws & eksctl documentation. You can follow that easily or there are tons of articles available on how to do that.
 
 ![step3](./steps/step3.png)
 
@@ -46,9 +42,7 @@ References :
 
 # IAM User
 
-Coming back to [AWS Management Console](https://aws.amazon.com/console/), I will create an administrative user
-from which we are going to access all our AWS Services. I generally **don’t recommend** this approach when you are
-working in a production or sensitive environment, kindly follow the principle of the **least** privilege.
+Coming back to [AWS Management Console](https://aws.amazon.com/console/), I will create an administrative user from which we are going to access all our AWS Services. I generally **don’t recommend** this approach when you are working in a production or sensitive environment, kindly follow the principle of the **least** privilege.
 
 I will goto IAM and create a new user with **AdministratorAccess**.
 
@@ -72,9 +66,7 @@ We have successfully configured.
 
 # Elastic Container Registry (ECR)
 
-Next, we will go to ECR which is the [Elastic Container Registry](https://aws.amazon.com/ecr/). We will push our
-Docker image to our ECR repository. I am actually trying to cover the use case when some people out
-there want to work with a private registry instead of using a public registry like DockerHub.
+Next, we will go to ECR which is the [Elastic Container Registry](https://aws.amazon.com/ecr/). We will push our Docker image to our ECR repository. I am actually trying to cover the use case when some people out there want to work with a private registry instead of using a public registry like DockerHub.
 
 I will create a repository and name it **fastapi-ecommerce**. Visibility is going to be **private**.
 
@@ -82,11 +74,9 @@ I will create a repository and name it **fastapi-ecommerce**. Visibility is goin
 
 ![step10](./steps/step10.png)
 
-Repository is created, let me push the Docker image to ECR. But before pushing we need to authenticate
-our credentials and after that only we would be able to push the image to AWS.
+Repository is created, let me push the Docker image to ECR. But before pushing we need to authenticate our credentials and after that only we would be able to push the image to AWS.
 
-Once you open the repository, on the top right you will see a link appearing **“View push commands”**. I am going to
-click on that.
+Once you open the repository, on the top right you will see a link appearing **“View push commands”**. I am going to click on that.
 
 ![step11](./steps/step11.png)
 
@@ -116,9 +106,7 @@ Yes, the image is appearing now and the total size is around 179 MB.
 
 # Key Pairs
 
-Now, I will create a private key **PEM** file, which will be used to get inside the EC2 machine. We won’t be
-getting inside any particular instance, as we will be handling everything through Kubernetes. But this can be
-used for many kinds of scenarios like debugging, checking something particular in the machine.
+Now, I will create a private key **PEM** file, which will be used to get inside the EC2 machine. We won’t be getting inside any particular instance, as we will be handling everything through Kubernetes. But this can be used for many kinds of scenarios like debugging, checking something particular in the machine.
 
 I will open **Key Pairs** which are going to appear in the **EC2 Dashboard** under **Network & Security**.
 
@@ -142,9 +130,7 @@ I will create a new file and name it **cluster.yml**.
 
 We are going to create a three node cluster and the good part is the **[control plane](https://kubernetes.io/docs/concepts/overview/components/)** is taken care of by AWS itself.
 
-Just for your information EKS is not a free service. You pay **$0.10** per hour for each Amazon EKS cluster
-that you create even if you don’t use it and separate cost of instances which are acting as nodes; their costs
-are different based on instance types.
+Just for your information EKS is not a free service. You pay **$0.10** per hour for each Amazon EKS cluster that you create even if you don’t use it and separate cost of instances which are acting as nodes; their costs are different based on instance types.
 
 These are expensive services, make sure you have some credits before going ahead.
 
@@ -186,29 +172,21 @@ managedNodeGroups:
       publicKeyName: "fastapi-demo" # <-- ssh key name
 ```
 
-Coming back to the code, you can ignore the yellow highlight which is coming up. This is because of the
-eksctl configuration and the kubernetes plugin is not able to identify it, completely normal nothing to worry.
+Coming back to the code, you can ignore the yellow highlight which is coming up. This is because of the eksctl configuration and the kubernetes plugin is not able to identify it, completely normal nothing to worry.
 
 Let me explain quickly what we are trying to do.
 
 We are going to create a Kubernetes cluster running **1.21** version, and it will be deployed in **ap-south-1** region.
 
-Next we are creating the managed nodegroup. With Amazon EKS managed node groups, you don’t need to separately
-provision or register the Amazon EC2 instances that provide compute capacity to run your Kubernetes applications. You
-can create, automatically update, or terminate nodes for your cluster with a single operation, applications stay available.
+Next we are creating the managed nodegroup. With Amazon EKS managed node groups, you don’t need to separately provision or register the Amazon EC2 instances that provide compute capacity to run your Kubernetes applications. You can create, automatically update, or terminate nodes for your cluster with a single operation, applications stay available.
 
 ![step25](./steps/step25.png)
 
-You can go ahead and also create **unmanaged nodegroups** if you prefer that. We will be creating three ec2
-instances and the instance type is going to be **t3a.small** also we are allocating a gp3 volume type of size 20 GB. Amazon EBS
-gp3 volumes are the latest generation of general-purpose SSD.
+You can go ahead and also create **unmanaged nodegroups** if you prefer that. We will be creating three ec2 instances and the instance type is going to be **t3a.small** also we are allocating a gp3 volume type of size 20 GB. Amazon EBS gp3 volumes are the latest generation of general-purpose SSD.
 
-Observe line number 16, **privateNetworking** set to true. This basically means our nodes can’t be accessed
-publicly and all the ec2 instances will communicate over the private network. It’s not only EC2 even
-if you can create Spot Instances or go serverless like [Fargate](https://aws.amazon.com/fargate/).
+Observe line number 16, **privateNetworking** set to true. This basically means our nodes can’t be accessed publicly and all the ec2 instances will communicate over the private network. It’s not only EC2 even if you can create Spot Instances or go serverless like [Fargate](https://aws.amazon.com/fargate/).
 
-Next, observe line number 18 we are using the **attachPolicyARNs**. There are 4 policies which we have added to work
-smoothly with the cluster.
+Next, observe line number 18 we are using the **attachPolicyARNs**. There are 4 policies which we have added to work smoothly with the cluster.
 
 If a nodegroup includes the **attachPolicyARNs** it must also include the default node policies, like:
 
@@ -216,10 +194,7 @@ If a nodegroup includes the **attachPolicyARNs** it must also include the defaul
 - `AmazonEKS_CNI_Policy`
 - `AmazonEC2ContainerRegistryReadOnly`
 
-Carefully observe line number 19 the `SES EKS Policy`, this is not the default policy,
-instead it’s a custom policy which we have created to grant permission to send email through SES. Hang tight,
-I will show you in a while. Your ARN number is going to be different so make to sure replace that otherwise the
-cluster creation will fail.
+Carefully observe line number 19 the `SES EKS Policy`, this is not the default policy, instead it’s a custom policy which we have created to grant permission to send email through SES. Hang tight, I will show you in a while. Your ARN number is going to be different so make to sure replace that otherwise the cluster creation will fail.
 
 **SES_EKS_Policy**
 
@@ -242,9 +217,7 @@ You can observe we have provided ses access to send email.
 
 ![step26](./steps/step27.jpg)
 
-We are also using some add-on policies like auto-scaling, image builder which allows
-for full ECR (Elastic Container Registry) access along with certificate manager for
-managing ssl certificate and ALB Ingress referring to application load balancer.
+We are also using some add-on policies like auto-scaling, image builder which allows for full ECR (Elastic Container Registry) access along with certificate manager for managing ssl certificate and ALB Ingress referring to application load balancer.
 
 And finally ssh access to nodes set to true and reference to the private key name **fastapi-demo** which we created earlier.
 
@@ -264,9 +237,7 @@ I will type:
 eksctl create cluster -f cluster.yml --auto-kubeconfig
 ```
 
-- `auto-kubeconfig` is going to save the config file under the directory `.kube/eksctl/clusters`
-- The filename will be set as the cluster name which you have provided
-- Cluster creation process will take somewhere around 15-20 minutes
+- `auto-kubeconfig` is going to save the config file under the directory `.kube/eksctl/clusters` - The filename will be set as the cluster name which you have provided - Cluster creation process will take somewhere around 15-20 minutes
 
 ![step30](./steps/step30.png)
 
@@ -288,18 +259,13 @@ kubectl get nodes --kubeconfig=fastapi-demo
 
 ![step34](./steps/step34.png)
 
-You can observe three nodes are running and the operating system is backed by **Amazon Linux 2**. The nodes are
-completely private, you can observe the internal IP and there is no external IP exposed.
+You can observe three nodes are running and the operating system is backed by **Amazon Linux 2**. The nodes are completely private, you can observe the internal IP and there is no external IP exposed.
 
 # OIDC
 
-Next, we are going to approve the OIDC provider. To use IAM roles for service accounts,
-an IAM OIDC provider must exist for your cluster.
+Next, we are going to approve the OIDC provider. To use IAM roles for service accounts, an IAM OIDC provider must exist for your cluster.
 
-User authentication for Amazon EKS clusters can also be performed from [OpenID Connect](https://openid.net/connect/) (OIDC) Identity Provider (IDP). This
-feature allows customers to integrate an OIDC identity provider with a new or existing Amazon EKS cluster running
-Kubernetes version 1.16 or later. The OIDC IDP can be used as an alternative to, or along with
-AWS Identity and Access Management (IAM).
+User authentication for Amazon EKS clusters can also be performed from [OpenID Connect](https://openid.net/connect/) (OIDC) Identity Provider (IDP). This feature allows customers to integrate an OIDC identity provider with a new or existing Amazon EKS cluster running Kubernetes version 1.16 or later. The OIDC IDP can be used as an alternative to, or along with AWS Identity and Access Management (IAM).
 
 I am going to type:
 
@@ -318,8 +284,7 @@ The OIDC provider is successfully created.
 
 # Postgres
 
-Next, we are going to create a Security Group for Postgres database. This will be required
-when we will be launching the RDS database.
+Next, we are going to create a Security Group for Postgres database. This will be required when we will be launching the RDS database.
 
 I will goto **VPC** and then under **Security** you will find **Security Groups**.
 
@@ -329,9 +294,7 @@ I will goto **VPC** and then under **Security** you will find **Security Groups*
 
 I am going to provide a name and description. I will choose **fastapi-demo-cluster** as my vpc, this VPC is created by the EKS.
 
-Under **Inbound Rules**, I will select Postgres which will be running on port 5432
-and IP access will be set to anywhere. It does not matter because the cluster nodes are in private mode, so we
-won’t be able to access the database publicly.
+Under **Inbound Rules**, I will select Postgres which will be running on port 5432 and IP access will be set to anywhere. It does not matter because the cluster nodes are in private mode, so we won’t be able to access the database publicly.
 
 ![step38](./steps/step38.png)
 
@@ -355,15 +318,13 @@ Our subnet group is created, now we will go ahead and complete the process of cr
 
 ![step43](./steps/step43.png)
 
-Creation method is going to be **standard create** and the engine will be **Postgres** and the version which
-we are going to use is **10.17**
+Creation method is going to be **standard create** and the engine will be **Postgres** and the version which we are going to use is **10.17**
 
 ![step44](./steps/step44.png)
 
 ![step45](./steps/step45.png)
 
-DB instance identifier will be set to **sampledb**. Username is going to be **postgres**, and I will provide the
-master password.
+DB instance identifier will be set to **sampledb**. Username is going to be **postgres**, and I will provide the master password.
 
 ![step46](./steps/step46.png)
 
@@ -478,9 +439,7 @@ metadata:
   namespace: kube-system
 ```
 
-Kubernetes [service accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) are Kubernetes resources,
-created and managed using the Kubernetes API. They are meant to be used by in-cluster Kubernetes-created entities, such as Pods,
-to authenticate to the Kubernetes API server or external services.
+Kubernetes [service accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) are Kubernetes resources, created and managed using the Kubernetes API. They are meant to be used by in-cluster Kubernetes-created entities, such as Pods, to authenticate to the Kubernetes API server or external services.
 
 Reference:
 
@@ -642,18 +601,15 @@ There is a warning coming up in the visual editor, I will remove elb and add it 
 
 ![step60](./steps/step60.png)
 
-As you can see I am specifying resources to "all resources", but it’s prompting me as a best practice, define permissions
-for only specific resources.
+As you can see I am specifying resources to "all resources", but it’s prompting me as a best practice, define permissions for only specific resources.
 
-I completely agree to that point, as this is a tutorial I am not getting
-too strict but **please follow the concept of the least privilege**.
+I completely agree to that point, as this is a tutorial I am not getting too strict but **please follow the concept of the least privilege**.
 
 ![step61](./steps/step61.png)
 
 # IAM Service Account
 
-Next, I am going to create **IAM service account**. You can associate an IAM role with a Kubernetes service account. This
-service account can then provide AWS permissions to the containers in any pod that uses that service account.
+Next, I am going to create **IAM service account**. You can associate an IAM role with a Kubernetes service account. This service account can then provide AWS permissions to the containers in any pod that uses that service account.
 
 Reference:
 
@@ -690,9 +646,7 @@ You can see one role has been successfully attached. You can check this role is 
 
 # Ingress Controller
 
-I will go ahead and create the **ingress controller**. An Ingress controller is a specialized load balancer
-for Kubernetes (and other containerized) environments. It abstracts away the complexity of Kubernetes application
-traffic routing and provides a bridge between Kubernetes services and external ones.
+I will go ahead and create the **ingress controller**. An Ingress controller is a specialized load balancer for Kubernetes (and other containerized) environments. It abstracts away the complexity of Kubernetes application traffic routing and provides a bridge between Kubernetes services and external ones.
 
 ![step66](./steps/step66.png)
 
@@ -792,8 +746,7 @@ spec:
 
 Ingress Controller has been created, but we need to update some config which is basically the cluster name.
 
-I am directly going to live edit the deployment file, the default editor which is picked is vim, but I am using nano,
-completely your choice. To use your favorite editor by default, set the environment variable **KUBE_EDITOR**, even you can use sublime text, notepad etc.
+I am directly going to live edit the deployment file, the default editor which is picked is vim, but I am using nano, completely your choice. To use your favorite editor by default, set the environment variable **KUBE_EDITOR**, even you can use sublime text, notepad etc.
 
 ```bash
 kubectl edit deployment alb-ingress-controller -n kube-system --kubeconfig=fastapi-demo
@@ -847,8 +800,7 @@ Once, we are done with tagging all subnets, I will come back to RDS to check the
 
 # K8s Manifests
 
-The db is now available. I am going to copy the **endpoint**. But before that I will
-create a folder called **“deploy”** under **eks**.
+The db is now available. I am going to copy the **endpoint**. But before that I will create a folder called **“deploy”** under **eks**.
 
 ![step73](./steps/step73.jpg)
 
@@ -872,14 +824,11 @@ spec:
   externalName: <RDS_ENDPOINT_URL>
 ```
 
-Services with type **ExternalName** work as other regular services, but when you want to access that service name,
-instead of returning cluster ip of this service, it returns **CNAME** record with value that is mentioned in externalName
-which in this case is the RDS endpoint.
+Services with type **ExternalName** work as other regular services, but when you want to access that service name, instead of returning cluster ip of this service, it returns **CNAME** record with value that is mentioned in externalName which in this case is the RDS endpoint.
 
 ![step76](./steps/step76.png)
 
-I will be doing the same operation for Redis as well. For redis
-we will be using the **[ElastiCache](https://aws.amazon.com/elasticache/)** service provided by AWS.
+I will be doing the same operation for Redis as well. For redis we will be using the **[ElastiCache](https://aws.amazon.com/elasticache/)** service provided by AWS.
 
 ![step77](./steps/step77.png)
 
@@ -901,10 +850,7 @@ Let’s go to **ElastiCache** and create our redis instance.
 
 ![step78](./steps/step78.png)
 
-Same as usual I will create a private subnet group for redis (**redis-eks-subnetgroup**),
-the same we did for postgres, three private subnets. We are not covering this,
-if you have any confusion then follow the postgres subnet group setup. It's going
-to be same for elasticache as well.
+Same as usual I will create a private subnet group for redis (**redis-eks-subnetgroup**), the same we did for postgres, three private subnets. We are not covering this, if you have any confusion then follow the postgres subnet group setup. It's going to be same for elasticache as well.
 
 ![redis_eks_subnet_group](./steps/redis_eks_subnet_group.png)
 
@@ -1000,9 +946,7 @@ spec:
       targetPort: 5000
 ```
 
-The service file will be running on port 5000, and you can see this needs to be a **NodePort**.
-Not a cluster IP because traffic reaching the ALB (Application Load Balancer) is routed to NodePort
-for your Service and then proxied to your pods.
+The service file will be running on port 5000, and you can see this needs to be a **NodePort**. Not a cluster IP because traffic reaching the ALB (Application Load Balancer) is routed to NodePort for your Service and then proxied to your pods.
 
 **eks/deploy/code/secret.yml**
 
@@ -1089,15 +1033,11 @@ spec:
 
 ## Ingress
 
-Next, we are going to create an ingress. This is something which we did not do in our local system but indeed we
-need it here. In Kubernetes, an Ingress is an **object that allows access to your Kubernetes services from outside
-the Kubernetes cluster** typically via HTTPS/HTTP. With Ingress, you can easily set up rules for routing traffic
-without creating a bunch of Load Balancers or exposing each service on the node.
+Next, we are going to create an ingress. This is something which we did not do in our local system but indeed we need it here. In Kubernetes, an Ingress is an **object that allows access to your Kubernetes services from outside the Kubernetes cluster** typically via HTTPS/HTTP. With Ingress, you can easily set up rules for routing traffic without creating a bunch of Load Balancers or exposing each service on the node.
 
 ![step85](./steps/step85.png)
 
-From the point of view of a Kubernetes pod, **ingress** is incoming traffic to the pod, and **egress** is outgoing
-traffic from the pod.
+From the point of view of a Kubernetes pod, **ingress** is incoming traffic to the pod, and **egress** is outgoing traffic from the pod.
 
 As you can observe from the file, carefully see the data being passed in the annotations.
 
@@ -1144,22 +1084,18 @@ We are doing some health checks and looking for a success response code of 200.
 
 The listening ports are 80 and 443.
 
-Observing line number 18, we need to replace the certificate ARN and for that we need to create a
-new certificate in **[AWS Certificate Manager](https://aws.amazon.com/certificate-manager/)**. We are going to do
+Observing line number 18, we need to replace the certificate ARN and for that we need to create a new certificate in **[AWS Certificate Manager](https://aws.amazon.com/certificate-manager/)**. We are going to do
 it in a while.
 
 ![step86](./steps/step86.png)
 
-Under **Rules** we are performing two operations, one is the SSL redirection which is being taken from the annotation
-as mentioned in line number 20.
+Under **Rules** we are performing two operations, one is the SSL redirection which is being taken from the annotation as mentioned in line number 20.
 
 ![step87](./steps/step87.png)
 
-Next, we will be sending the traffic to our **ecommerce-service** which is running on port **5000** which indeed points
-to FastAPI backend.
+Next, we will be sending the traffic to our **ecommerce-service** which is running on port **5000** which indeed points to FastAPI backend.
 
-Just imagine in your head that NGINX is proxying requests internally
-to your backend service. This is what we are trying to achieve through the ingress.
+Just imagine in your head that NGINX is proxying requests internally to your backend service. This is what we are trying to achieve through the ingress.
 
 You can also perform path based routing and redirect applications to different services based on the path.
 
@@ -1167,13 +1103,11 @@ Let me now deploy the kubernetes manifests except the ingress.
 
 I will open up the terminal and move inside the eks directory.
 
-Just to clarify I have deployed these manifests in the default namespace, completely up to you. If you want a
-separate namespace you can go ahead with that.
+Just to clarify I have deployed these manifests in the default namespace, completely up to you. If you want a separate namespace you can go ahead with that.
 
 ![step88](./steps/step88.png)
 
-Celery and the backend are running fine, and we don’t need to worry about postgres and redis as they
-are managed services provided by AWS.
+Celery and the backend are running fine, and we don’t need to worry about postgres and redis as they are managed services provided by AWS.
 
 We have enough resources, let’s try to run six replicas of our backend service.
 
@@ -1196,8 +1130,7 @@ Reference:
 
 - [Automatic Clean-up for Finished Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/)
 
-Now, only one thing is remaining and that is the **ingress**. But to move ahead with that we need to make
-sure we have domain name setup in **Route53** along-with an SSL certificate generated by the **Certificate Manager**.
+Now, only one thing is remaining and that is the **ingress**. But to move ahead with that we need to make sure we have domain name setup in **Route53** along-with an SSL certificate generated by the **Certificate Manager**.
 
 I will now open Route53 and click on **Create hosted zone**.
 
@@ -1209,13 +1142,11 @@ I will provide the domain name: **mukul.xyz**, make sure the hosted zone should 
 
 ![step94](./steps/step94.png)
 
-I have already purchased this domain from [namecheap](https://www.namecheap.com/). You can purchase your domain
-from anywhere like GoDaddy, namecheap etc. or else you can even purchase from AWS itself.
+I have already purchased this domain from [namecheap](https://www.namecheap.com/). You can purchase your domain from anywhere like GoDaddy, namecheap etc. or else you can even purchase from AWS itself.
 
 Finally, I will click on Create.
 
-Zone has been successfully created. Now, I am going to update these records in our DNS settings
-which are currently residing in namecheap because our domain is registered over there.
+Zone has been successfully created. Now, I am going to update these records in our DNS settings which are currently residing in namecheap because our domain is registered over there.
 
 ![step95](./steps/step95.jpg)
 
@@ -1231,13 +1162,11 @@ Previously we were using the Namecheap BasicDNS. Now, we will update it with cus
 
 ![step99](./steps/step99.png)
 
-Okay, the DNS records have been successfully applied. The effect might take around 48-72 hours. Sometimes
-the update takes place immediately within ten minutes also.
+Okay, the DNS records have been successfully applied. The effect might take around 48-72 hours. Sometimes the update takes place immediately within ten minutes also.
 
 Fingers crossed this is something which is not under our control.
 
-Fast forwarding time our hosted zone setup is complete and the DNS has successfully applied the new records. Now,
-we will go ahead and set up SSL in Certificate Manager.
+Fast forwarding time our hosted zone setup is complete and the DNS has successfully applied the new records. Now, we will go ahead and set up SSL in Certificate Manager.
 
 # AWS Certificate Manager
 
@@ -1261,8 +1190,7 @@ The validation may take somewhat around 30 minutes of time.
 
 ![step105](./steps/step105.png)
 
-Okay, as you can see the certificate has been issued successfully. Now, I am going to
-copy the **ARN** and replace it in the **ingress.yaml** file.
+Okay, as you can see the certificate has been issued successfully. Now, I am going to copy the **ARN** and replace it in the **ingress.yaml** file.
 
 ![step106](./steps/step106.png)
 
@@ -1310,8 +1238,7 @@ Let me quickly show you the load balancer address where ingress is pointing to.
 
 Next, I will go to Route 53 and create a new record pointing to our website.
 
-We are not covering this, but you don’t need to do this manually; you can easily achieve this
-through **externalDNS** provided by Kubernetes.
+We are not covering this, but you don’t need to do this manually; you can easily achieve this through **externalDNS** provided by Kubernetes.
 
 ExternalDNS is **a Kubernetes addon that configures public DNS servers with information about exposed Kubernetes services** to make them discoverable.
 
@@ -1349,15 +1276,13 @@ Yes, our record has been created. Let me now try out the remaining apis.
 
 ![step125](./steps/step125.png)
 
-We have successfully executed and listed our orders. So, this is how we did the entire journey of application development,
-testing and finally end to end deploying the kubernetes stack in AWS with fully qualified domain name and SSL.
+We have successfully executed and listed our orders. So, this is how we did the entire journey of application development, testing and finally end to end deploying the kubernetes stack in AWS with fully qualified domain name and SSL.
 
 Let me check if I receive any new order email. Okay not yet.
 
 ![step126](./steps/step126.png)
 
-Nothing to worry about. Sometimes the email gets delayed because we are using a temp email service. I recommend using
-a full-fledged email service like Gmail when you are trying out this application.
+Nothing to worry about. Sometimes the email gets delayed because we are using a temp email service. I recommend using a full-fledged email service like Gmail when you are trying out this application.
 
 There is one more thing which I haven’t shown you.
 
@@ -1397,5 +1322,4 @@ And now you can see our Pods, Deployments, Jobs which are running.
 
 I hope you definitely like the video & tutorial and enjoy this long journey from development to deployment.
 
-Do check my next tutorials about reference materials which I have used when I was working on this tutorial. I will share
-some good tutorials/blogs where you can go and enhance your skills more when working with FastAPI or EKS.
+Do check my next tutorials about reference materials which I have used when I was working on this tutorial. I will share some good tutorials/blogs where you can go and enhance your skills more when working with FastAPI or EKS.

@@ -25,7 +25,4 @@ Use **Navigate to Symbol** to jump between symbols in your project
 and stop thinking about the file they are in.
 
 **How to use:**  
-Invoke it using _Ctrl + Alt + Shift + N on Windows/Linux_ or _⌘ + ⌥ + O on macOS_
-to bring up the search window and quickly navigate your way in the project.
-
-<span class="tag is-rounded">New in 2017.3</span>
+Invoke it using <kbd>⌘⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+N</kbd> (Windows/Linux) to bring up the search window and quickly navigate your way in the project.

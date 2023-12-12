@@ -17,12 +17,8 @@ video: >-
 
 _Rename files with peace of mind._
 
-Changed your name about what you named a file, and now you need to rename
-the test and example files too? Let the IDE handle all this work.
+Changed your name about what you named a file, and now you need to rename the test and example files too? Let the IDE handle all this work.
 
 **How to use:**
 
-Invoke the **Rename Refactoring** via _Shift + F6 on Windows/Linux_ or _⇧ + F6 on macOS_,
-and do the work, safely and quickly.
-
-<span class="tag is-rounded">New in 2017.3</span>
+Invoke the **Rename Refactoring** via <kbd>⇧F6</kbd> (macOS) / <kbd>Shift+F6</kbd> (Windows/Linux), and do the work, safely and quickly.

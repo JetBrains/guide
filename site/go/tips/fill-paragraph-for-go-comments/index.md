@@ -14,6 +14,4 @@ video: >-
 
 **How to use:**
 
-To configure the width of the comment paragraph, navigate to _Settings/Preferences | Editor | Code Style | Go | Other | Fill paragraph width_. After that, invoke the _Show Context Action_ via _Alt-Enter on Windows/Linux_ or _⌥ + Enter on macOS_, and choose the **Fill paragraph** action.
-
-<span class="tag is-rounded">New in 2020.2</span>
+To configure the width of the comment paragraph, navigate to _Settings/Preferences | Editor | Code Style | Go | Other | Fill paragraph width_. After that, invoke the _Show Context Action_ via <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), and choose the **Fill paragraph** action.

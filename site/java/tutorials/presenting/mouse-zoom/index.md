@@ -12,6 +12,6 @@ To enable mouse zoom, you need to turn it on explicitly. Go to **Preferences > E
 
 ![Enable Mouse Zoom](enable-mouse-zoom.png)
 
-Now we can use **Command+Mouse Wheel** (on Mac) or **Control+Mouse Wheel** (on Windows/Linux) to zoom in or out. While we are using mouse zoom, a popup appears containing the current font size on the left and a link to reset to the original font size on the right. Click the link to reset the font size.
+Now we can use <kbd>⌘</kbd> (macOS) / <kbd>Ctrl</kbd> (Windows/Linux) with the mouse wheel to zoom in or out. While we are using mouse zoom, a popup appears containing the current font size on the left and a link to reset to the original font size on the right. Click the link to reset the font size.
 
 ![Resize](resize.png)

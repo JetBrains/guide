@@ -22,8 +22,6 @@ Use this tip to move code around without cut-and-paste.
 
 **How to use:**
 
-**Move Statement Up** with _Ctrl + Shift + ↑ on Windows/Linux_ or _⌘ + ⇧ + ↑ on macOS_.
+**Move Statement Up** with <kbd>⌘⇧↑</kbd> (macOS) / <kbd>Ctrl+Shift+Up Arrow</kbd> (Windows/Linux).
 
-**Move Statement Down** with _Ctrl + Shift + ↓ on Windows/Linux_ or _⌘ + ⇧ + ↓ on macOS_.
-
-<span class="tag is-rounded">New in 2017.3</span>
+**Move Statement Down** with <kbd>⌘⇧↑</kbd> (macOS) / <kbd>Ctrl+Shift+Up Arrow</kbd> (Windows/Linux)..

@@ -19,4 +19,4 @@ seealso:
 video: "https://youtu.be/Cog66wZvPhg"
 ---
 
-Use **⌘[** (macOS), **Ctrl+Alt+Left Arrow** (Windows/Linux) to navigate backwards and **⌘]** (macOS), **Ctrl+Alt+Right Arrow** (Windows/Linux), to navigate forwards.
+Use <kbd>⌘\[</kbd> (macOS) / <kbd>Ctrl+Alt+Left Arrow</kbd> (Windows/Linux) to navigate backwards and <kbd>⌘\]</kbd> / (macOS) <kbd>Ctrl+Alt+Right Arrow</kbd> (Windows/Linux) to navigate forwards.

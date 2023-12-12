@@ -14,7 +14,7 @@ You can open the Dependency Matrix from the main menu by going to **Code | Analy
 
 ![Open Dependency Matrix from the menu](dependency-matrix-menu.png)
 
-Alternatively, use **Find Action** (**⌘⇧A** on macOS, or **Ctrl+Shift+A** on Windows/Linux) and search for “matrix”.
+Alternatively, use **Find Action** <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) and search for “matrix”.
 
 ![Open Dependency Matrix using Find Action](dependency-matrix-find-action.png)
 

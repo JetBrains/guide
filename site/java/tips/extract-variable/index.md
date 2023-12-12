@@ -18,6 +18,6 @@ seealso:
 video: "https://youtu.be/rnJRe-lIaTI"
 ---
 
-Highlight the code you want to extract to a variable and press **⌥⌘V** (macOS), or **Ctrl+Alt+V** (Windows/Linux), to extract it.
+Highlight the code you want to extract to a variable and press <kbd>⌥⌘V</kbd> (macOS) / <kbd>Ctrl+Alt+V</kbd> (Windows/Linux), to extract it.
 
 Extracting parameters can be useful in improving the readability of your code.

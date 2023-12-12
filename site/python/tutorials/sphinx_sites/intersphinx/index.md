@@ -35,7 +35,7 @@ If you link to a page in the remote site that doesn't exist, you'll get a warnin
 
 Intersphinx isn't on by default.
 We need to do two things in our `conf.py` file to enable it.
-First, enable the extention:
+First, enable the extension:
 
 ```python
 extensions = [

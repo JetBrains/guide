@@ -15,8 +15,7 @@ video: "https://www.youtube.com/watch?v=KsTKgi26CgU"
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-We have successfully completed the user module, let’s now move to products
-where we are going to do the same kind of operations creating models, apis,
+We have successfully completed the user module, let’s now move to products where we are going to do the same kind of operations creating models, apis,
 schema etc.
 
 # Creating Models
@@ -43,15 +42,13 @@ The columns which I will be defining will be :
 - description about the product
 - price
 
-I will create a relationship between category and product, as you know
-every product comes under a category.
+I will create a relationship between category and product, as you know every product comes under a category.
 
 ![step3](./steps/step3.png)
 
 I will do an import from `sqlalchemy.orm` import `relationship`.
 
-I will define relationships for products. The `back_populates` argument
-tells SQLAlchemy which column to link with when it joins the two tables
+I will define relationships for products. The `back_populates` argument tells SQLAlchemy which column to link with when it joins the two tables
 
 In Product model, I will be defining `category_id` which is a ForeignKey referencing to `category.id`
 
@@ -91,9 +88,7 @@ class Product(Base):
 
 We are done with the model part.
 
-Just to give an example, a category can have multiple products,
-like you can take electronics as a category under
-which multiple products like Television,
+Just to give an example, a category can have multiple products, like you can take electronics as a category under which multiple products like Television,
 Laptops, Mobile Phones will fall under that.
 
 You can even do deep nesting like Television as category and products like LCD, LED, OLED TVs etc.
@@ -110,13 +105,11 @@ To migrate I am going to type **alembic upgrade head**.
 
 ![step5](./steps/step5.png)
 
-The tables are reflecting in the **Database Explorer**. It’s clearly visible,
-and you can see the foreign key relationship attached with the category.
+The tables are reflecting in the **Database Explorer**. It’s clearly visible, and you can see the foreign key relationship attached with the category.
 
 # Router & Services
 
-Let’s begin by creating the router, schema and services. As usual what we did
-previously for the user module, the same approach we are going to follow here.
+Let’s begin by creating the router, schema and services. As usual what we did previously for the user module, the same approach we are going to follow here.
 
 I am going to do the necessary imports.
 
@@ -130,8 +123,7 @@ I will quickly move to the schema.py file.
 
 I will do the necessary imports like BaseModal and `constr` from Pydantic.
 
-**constr** comes under **Constrained Types**. It’s possible to define primitive
-types that have more constraints on their values. I will show the use case in a
+**constr** comes under **Constrained Types**. It’s possible to define primitive types that have more constraints on their values. I will show the use case in a
 while.
 
 ![step7](./steps/step7.png)
@@ -148,12 +140,9 @@ Let’s begin with our Create Category API.
 
 ![step8](./steps/step8.png)
 
-The `create_category` function accepts two parameters: `request` and `database`, whatever is
-coming in the request pydantic is going to take care of it. After getting the
-information, we will be committing this information into the database.
+The `create_category` function accepts two parameters: `request` and `database`, whatever is coming in the request pydantic is going to take care of it. After getting the information, we will be committing this information into the database.
 
-I will create a new function : `create_new_category` where I will be writing the
-business logic.
+I will create a new function : `create_new_category` where I will be writing the business logic.
 
 I will do the necessary imports.
 
@@ -163,8 +152,7 @@ We will be adding the new category to the database session and finally committin
 
 ![step9](./steps/step9.png)
 
-We will also do `database.refresh`, which basically means to expire
-and then immediately get the latest data for the object from the database. It involves
+We will also do `database.refresh`, which basically means to expire and then immediately get the latest data for the object from the database. It involves
 an immediate database query, which you may consider expensive.
 
 We are done with the service, now let’s register the route.
@@ -229,8 +217,7 @@ it’s returning a list.
 
 Now, let's create our third api to retrieve category by id.
 
-The `get_category_by_id` will return a Category object from the database, it can
-be `Optional` as well. But I am leaving up to you.
+The `get_category_by_id` will return a Category object from the database, it can be `Optional` as well. But I am leaving up to you.
 
 **router.py**
 
@@ -266,8 +253,7 @@ All the scenarios are working fine. Let’s move with our last api for category,
 
 We will be deleting the object from the database. The function won’t return anything.
 
-You can define the type annotation as `None` or else it’s not required. I am leaving up to you,
-whatever you feel good, better to follow the type annotation.
+You can define the type annotation as `None` or else it’s not required. I am leaving up to you, whatever you feel good, better to follow the type annotation.
 
 **router.py**
 
@@ -359,8 +345,7 @@ It’s going to be a POST method, and it is going to return 201 status code.
 
 I will raise an exception if there is no category present else we will create our new product.
 
-Before inserting the product in the database, we need to make sure whether the specific
-category exists in the database or not. So, we are going to write a small validation for it.
+Before inserting the product in the database, we need to make sure whether the specific category exists in the database or not. So, we are going to write a small validation for it.
 
 I am going to write a validator: `verify_category_exist` which will return the
 category object or None if not present.
@@ -424,16 +409,11 @@ Great! two products have been successfully created.
 
 # Listing Products
 
-Next, I will be creating an API for listing the products which are
-present in our database. I won’t be creating more api like get or
-delete product by id. I am completely leaving it up to you, if you are interested
-you can go ahead and create those functionalities based upon your use case.
+Next, I will be creating an API for listing the products which are present in our database. I won’t be creating more api like get or delete product by id. I am completely leaving it up to you, if you are interested you can go ahead and create those functionalities based upon your use case.
 
-I hope by now you must have got a basic understanding of
-how easy it is to develop an API when working with FastAPI.
+I hope by now you must have got a basic understanding of how easy it is to develop an API when working with FastAPI.
 
-So, now I am going to create a pydantic schema for product listing. It will be a
-combination of products and categories.
+So, now I am going to create a pydantic schema for product listing. It will be a combination of products and categories.
 
 I will create a `ProductListing` class which inherits from `ProductBase`.
 
@@ -503,8 +483,7 @@ Ok, our product functionality is complete, let me check what response we are get
 
 ![step33](./steps/step33.png)
 
-As you can observe the response, we are getting the product information
-along with category information from our pydantic class. So, how smoothly
+As you can observe the response, we are getting the product information along with category information from our pydantic class. So, how smoothly
 the nested modelling has been done over here.
 
 I hope by now you have got the understanding how we are creating apis, pydantic, validation etc.

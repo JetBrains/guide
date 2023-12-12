@@ -22,7 +22,4 @@ launch the test under the cursor using a shortcut.
 
 **How to use:**
 
-To launch the test under the cursor, invoke the test runner
-via _Ctrl + Shift + F10 on Windows/Linux_ or _^ + ⇧ + R on macOS_.
-
-<span class="tag is-rounded">New in 2017.3</span>
+To launch the test under the cursor, invoke the test runner via <kbd>⌃⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+F10</kbd> (Windows/Linux)

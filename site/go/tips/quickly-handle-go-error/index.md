@@ -13,7 +13,4 @@ video: >-
 ---
 
 **How to use:**
-Press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_ on
-function call that returns an error and select _Handle error_.
-
-<span class="tag is-rounded">New in 2021.1</span>
+Press <kbd>⌘⌥⏎</kbd> (macOS) / <kbd>Ctrl+Alt+Enter</kbd> (Windows/Linux) on function call that returns an error and select _Handle error_.

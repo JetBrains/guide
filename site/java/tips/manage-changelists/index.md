@@ -18,17 +18,13 @@ seealso:
 video: "https://youtu.be/gg3yi-yc2ys"
 ---
 
-Select the files or changed lines in a file which you want to group together
-for certain tasks and use **⌘⇧M** (macOS) or **Alt+Shift+M** (Windows/Linux)
-to bring up the **Move Files to Another Changelist** dialog.
+Select the files or changed lines in a file which you want to group together for certain tasks and use <kbd>⌘⇧M</kbd> (macOS) / <kbd>Alt+Shift+M</kbd> (Windows/Linux) to bring up the **Move Files to Another Changelist** dialog.
 
-You can give it a name to create a new changelist or choose from an existing
-changelist. IntelliJ IDEA will restore the selected changes in the
-corresponding changelist.
+You can give it a name to create a new changelist or choose from an existing changelist. IntelliJ IDEA will restore the selected changes in the corresponding changelist.
 
 ## Default Active Changelist
 
-Use **⌘0** (macOS) or **Alt+0** (Windows/Linux), to show the **Commit** tool window.
+Use <kbd>⌘0</kbd> (macOS) / <kbd>Alt+0</kbd> (Windows/Linux), to show the **Commit** tool window.
 
 **Changes** in the **Commit Tool Window** are in the default active changelist. The active changelist is highlighted in bold.
 
@@ -36,7 +32,7 @@ Use **⌘0** (macOS) or **Alt+0** (Windows/Linux), to show the **Commit** tool w
 
 ### Set Active Changelist
 
-You can set a changelist to Active if you want to commit your changes to VCS. Select the changelist and use **^Space** (macOS) or **Ctrl + Space** (Windows/Linux) to set it to the active changelist.
+You can set a changelist to Active if you want to commit your changes to VCS. Select the changelist and use <kbd>⌃␣</kbd> (macOS) / <kbd>Ctrl+Space</kbd> (Windows/Linux) to set it to the active changelist.
 
 ![Set Active Changelist](set-active-changelist-ctrl-space.png)
 
@@ -44,7 +40,7 @@ You can set a changelist to Active if you want to commit your changes to VCS. Se
 
 ### Using Search Everywhere
 
-Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Changelist_ and select **New changelist...** to bring up **New changelist** dialog.
+Use <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Changelist_ and select **New changelist...** to bring up **New changelist** dialog.
 
 ![New Changelist using Search Everywhere](create-change-list-using-search-everywhere.png)
 
@@ -66,7 +62,7 @@ You can use the Commit Window to **Delete Changelist**
 
 ![Delete Changelist using Commit Window](delete-changelist-using-commit-window.png)
 
-Alternatively, you can use **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), to bring up the Find Actions dialog which will filter the Search Everywhere dialog to just Actions.
+Alternatively, you can use <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd>, to bring up the Find Actions dialog which will filter the Search Everywhere dialog to just Actions.
 
 # Scenarios to use different changelists
 

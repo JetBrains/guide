@@ -18,6 +18,4 @@ animatedGif:
   height: 300
 ---
 
-Need to make notes or draft up some code outside of the project context? Use scratches! Press
-_Cmd+Shift+N_ on macOS or _Ctrl+Shift+Alt+Insert_ on Windows/Linux and then
-select the language of the scratch file.
+Need to make notes or draft up some code outside of the project context? Use scratches! Press <kbd>⇧⌘N</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+Insert</kbd> (Windows/Linux) on Windows/Linux and then select the language of the scratch file.

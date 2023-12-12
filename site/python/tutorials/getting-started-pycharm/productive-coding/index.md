@@ -36,15 +36,15 @@ You can use (**⌘B** | **Ctrl+B**) to Go to Declaration or Usages. Here we can 
 
 ![navigate-to-usages.png](navigate-to-usages.png)
 
-Another way to navigate your code is with Go to Implementation (**⌘⌥B** | **Ctrl+Alt+B**).
+Another way to navigate your code is with Go to Implementation <kbd>⌥⌘B</kbd> (macOS) / <kbd>Ctrl+Alt+B</kbd> (Windows/Linux).
 
-Another top tip is to use (**⌘[** | **Ctrl+Alt+←**) to navigate backwards in your code and (**⌘\]** | **Ctrl+Alt+→**) in the order you navigated through it.
+Another top tip is to use <kbd>⌘\[</kbd> (macOS) / <kbd>Ctrl+Alt+Left Arrow</kbd> (Windows/Linux) to navigate backwards in your code and <kbd>⌘\]</kbd> (macOS) / <kbd>Ctrl+Alt+Right Arrow</kbd> (Windows/Linux) in the order you navigated through it.
 
 Navigating your code in this manner is a great way to build up your mental model of the functional aspects of the code base rather than digging through sequentially.
 
 ## Source Code Generation
 
-You can use (**⌘N** | **Alt+Ins**) to get PyCharm to offer code relevant for the context. PyCharm will always try and do the right thing based on what you’re typing. This might be through different types of completion, or live templates.
+You can use <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) to get PyCharm to offer code relevant for the context. PyCharm will always try and do the right thing based on what you’re typing. This might be through different types of completion, or live templates.
 
 Next time you think you need to type out some constructs, go ahead and see what PyCharm can help you with so you can concentrate on the fun stuff.
 
@@ -86,7 +86,7 @@ The TODO tool window shows both `TODO` and `FIXME` comments, so you can keep tra
 
 ## Search Everywhere, Find Action and Find Recent Files
 
-To use Search Everywhere, use (**⇧⇧** | **Shift+Shift**) and start typing the thing you’re looking for, for example _Editor Tabs_. You can toggle anything that's an action on or off here.
+To use Search Everywhere, use <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux) and start typing the thing you’re looking for, for example _Editor Tabs_. You can toggle anything that's an action on or off here.
 
 As you tab along the top of the dialog you can filter what you’re looking for, including Git commits.
 
@@ -94,7 +94,7 @@ You can also do basic calculations in PyCharm within the Search Everywhere dialo
 
 ![basic-calculations.png](basic-calculations.png)
 
-You can search just for actions with (**⌘⇧A** | **Ctrl+Shift+A**). For example, if you type in ‘zen’ and then press Enter, PyCharm will enter Zen mode. You can exit it the same way.
+You can search just for actions with <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux). For example, if you type in ‘zen’ and then press Enter, PyCharm will enter Zen mode. You can exit it the same way.
 
 Note that you can access Find Actions from the Search Everywhere dialog, either route is valid, it’s whatever works for you.
 
@@ -102,13 +102,13 @@ Note that you can access Find Actions from the Search Everywhere dialog, either 
 
 You probably don’t need to work with all the files at the same time so your IDE can help you to load just a small portion of them as your Recent Files.
 
-Recent Files (**⌘E** | **Ctrl+E**) shows you all the files you’ve accessed recently.
+Recent Files <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) shows you all the files you’ve accessed recently.
 
 ![recent-files.png](recent-files.png)
 
 You can use this checkbox on the top right to further filter that list to edited files too.
 
-Similar to Recent Files is Recent Locations (**⌘⇧E** | **Ctrl+Shift+E**). This shortcut is helpful if you have some really long files in your project and saves you scrolling through them.
+Similar to Recent Files is Recent Locations <kbd>⌘⇧E</kbd> (macOS) / <kbd>Ctrl+Shift+E</kbd> (Windows/Linux). This shortcut is helpful if you have some really long files in your project and saves you scrolling through them.
 
 ## Conclusion
 

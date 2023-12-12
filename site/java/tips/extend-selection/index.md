@@ -17,6 +17,6 @@ seealso:
 video: "https://youtu.be/KFqqOP89XJA"
 ---
 
-Press **⌥↑** (macOS), or **Ctrl+W** (Windows/Linux), to extend your selection of code by scope. To reduce the scope, use **⌥↓** (macOS), or **Shift+Ctrl+W** (Windows/Linux).
+Press <kbd>⌥↑</kbd> (macOS) / <kbd>Ctrl+W</kbd> (Windows/Linux), to extend your selection of code by scope. To reduce the scope, use <kbd>⌥↓</kbd> (macOS) / <kbd>Ctrl+Shift+W</kbd> (Windows/Linux).
 
 This can be useful for a visual representation of scope when moving blocks of code around.

@@ -20,4 +20,4 @@ seealso:
 video: "https://youtu.be/jwa9F4ADcxo"
 ---
 
-Use shortcuts to enter and exit Presentation Mode using Quick Switch Scheme. Press **^\`** (on Mac), or **Ctrl+\`** (on Windows/Linux) to open Quick Switch Scheme. Use the arrow keys or number keys to select **View Mode**. Select **Enter Presentation Mode** or **Exit Presentation Mode** using the arrow keys or the number keys.
+Use shortcuts to enter and exit Presentation Mode using Quick Switch Scheme. Press <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux) to open Quick Switch Scheme. Use the arrow keys or number keys to select **View Mode**. Select **Enter Presentation Mode** or **Exit Presentation Mode** using the arrow keys or the number keys.

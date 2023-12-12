@@ -19,8 +19,4 @@ _databases statements_, _JavaScript_, _CSS_, _HTML_, _XML_, and _RegExp_, etc.
 **How to use:**
 
 Place the cursor within the literal (_between_ the quotation marks) and press
-_Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_, select **Inject language or reference**,
-choose which one of supported injection language you want to use and
-start typing, auto-completion will appear instantly.
-
-<span class="tag is-rounded">New in 2017.3</span>
+<kbd>⌃⏎</kbd> (macOS) / <kbd>Ctrl+Enter</kbd> (Windows/Linux), select **Inject language or reference**, choose which one of supported injection language you want to use and start typing, auto-completion will appear instantly.

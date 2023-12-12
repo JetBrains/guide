@@ -19,4 +19,4 @@ animatedGif:
   height: 300
 ---
 
-With _Go to Symbol_, you can quickly navigate to a test: press _Alt+Cmd+O_ on macOS or _Ctrl+Alt+Shift+N_ on Windows and Linux and start typing the name of a test/suite of tests.
+With _Go to Symbol_, you can quickly navigate to a test: press <kbd>⌘⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+N</kbd> (Windows/Linux) and start typing the name of a test/suite of tests.

@@ -18,4 +18,4 @@ video: "https://youtu.be/byGjzMHqwcc"
 
 If we decide that maybe a record should be a full Java class, we can get IntelliJ IDEA to automatically convert a record into a Java class.
 
-Press **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux) on the record name, and IntelliJ IDEA offers a suggestion to convert the record to a class.
+Press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) on the record name, and IntelliJ IDEA offers a suggestion to convert the record to a class.

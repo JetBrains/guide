@@ -19,8 +19,8 @@ Here are the IntelliJ IDEA shortcuts that we used.
 
 | Name                                                                                             | macOS Shortcut | Windows / Linux Shortcut |
 | ------------------------------------------------------------------------------------------------ | -------------- | ------------------------ |
-| Open / Close [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html) | **⌘1**         | **Alt+1**                |
-| Recent Files                                                                                     | **⌘E**         | **Control+E**            |
+| Open / Close [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html) | <kbd>⌘1</kbd>  | <kbd>Alt+1</kbd>         |
+| Recent Files                                                                                     | <kbd>⌘E</kbd>  | <kbd>Control+E</kbd>     |
 
 ### Related Links
 

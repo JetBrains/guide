@@ -15,13 +15,13 @@ The project window shows all the directories and the files that make up our proj
 
 ![Project Window](project-window.png)
 
-Of course, you can use the mouse to navigate the Project window, but you can also use the arrow keys. You can also toggle the display of this tool window with **Cmd**+**1** on macOS, or **Alt**+**1** on Windows/Linux.
+Of course, you can use the mouse to navigate the Project window, but you can also use the arrow keys. You can also toggle the display of this tool window with <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux).
 
 ### Creating Your Package and Class
 
 Next, you're going to create the package and the class. Application packages are used to group together classes that belong to the same category or provide similar functionality. They are useful for organising large applications that might have hundreds of classes.
 
-1. To create a new class, select the blue src folder and press **Cmd**+**N** on macOS, or **Alt**+**Insert** on Windows/Linux. Select _Java Class_ from the popup.
+1. To create a new class, select the blue src folder and press <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux). Select _Java Class_ from the popup.
 
 ![New Java class](new-java-class.png)
 
@@ -37,11 +37,11 @@ When you press **Enter** IntelliJ IDEA will create the package you wanted, and t
 
 ### Coding Your HelloWorld Class
 
-1. You can move on to the next line in a class file by pressing **Shift**+**Enter**. This moves the caret to the next line in the correct position and won't break the previous line.
+1. You can move on to the next line in a class file by pressing <kbd>⇧⏎</kbd> (macOS) / <kbd>Shift+Enter</kbd> (Windows/Linux). This moves the caret to the next line in the correct position and won't break the previous line.
 
-2. To create the standard Java main method, type `main`. IntelliJ IDEA displays a [live template](https://www.jetbrains.com/help/idea/using-live-templates.html) that you can use to generate the full code construct and save a lot of time. You can also use **Cmd**+**J** on macOS, or **Ctrl**+**J** on Windows/Linux to see all the Live Templates in IntelliJ IDEA that are valid for the current context.
+2. To create the standard Java main method, type `main`. IntelliJ IDEA displays a [live template](https://www.jetbrains.com/help/idea/using-live-templates.html) that you can use to generate the full code construct and save a lot of time. You can also use <kbd>⌘J</kbd> (macOS) / <kbd>Ctrl+J</kbd> (Windows/Linux) to see all the Live Templates in IntelliJ IDEA that are valid for the current context.
 
-**Note**: Pressing **Escape** will always close a drop-down or dialogue without making any changes.
+**Note**: Pressing <kbd>␛</kbd> (macOS) / <kbd>Escape</kbd> (Windows/Linux) will always close a drop-down or dialogue without making any changes.
 
 ![Main method live template](main-live-template.png)
 
@@ -59,7 +59,7 @@ IntelliJ IDEA offers you [code completion](https://www.jetbrains.com/help/idea/a
 
 5. Now type `o` IntelliJ IDEA will suggest you want to use `out` as the next function. IntelliJ IDEA is showing you a list of accessible fields and methods on the `System` class. Those that start with the letter `o` are listed first, followed by other methods and fields that contain the letter `o`.
 
-6. press **Control+dot** and this time IntelliJ IDEA will suggest `println`. Press **Enter** to select it.
+6. press <kbd>⌃.</kbd> (macOS) / <kbd>Ctrl+Period</kbd> (Windows/Linux) and this time IntelliJ IDEA will suggest `println`. Press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) to select it.
 
 7. IntelliJ IDEA will also place the caret in the brackets, so you can provide the argument to the method. Type in a quote mark `"` and IntelliJ IDEA will close the quote mark for you. You can now type your text, `Hello World` in between the quotes.
 

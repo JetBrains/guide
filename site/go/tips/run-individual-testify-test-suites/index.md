@@ -13,6 +13,4 @@ video: >-
 
 **How to use:**
 
-Use either the green arrow next to the test name or using **Run context configuration** via _Ctrl + Shift + F10 on Windows/Linux_ or _^ + ⇧ + F10 on macOS_.
-
-<span class="tag is-rounded">New in 2020.3</span>
+Use either the green arrow next to the test name or using **Run context configuration** via <kbd>⌃⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+F10</kbd> (Windows/Linux).

@@ -15,5 +15,3 @@ video: >-
 **How to use:**
 
 Type the _assert_ function call and let the IDE automatically fill the _testing.T_ parameter in the assert function call.
-
-<span class="tag is-rounded">New in 2020.3</span>

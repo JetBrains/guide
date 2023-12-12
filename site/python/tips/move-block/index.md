@@ -14,14 +14,8 @@ cardThumbnail: ./card.png
 video: "https://www.youtube.com/watch?v=TxlOhgpiKhY"
 ---
 
-We want to operate on code in the editor fast. Using Cut-and-Paste is
-kinda fast, but there's a better way that doesn't temporarily remove the
-code from your file.
+We want to operate on code in the editor fast. Using Cut-and-Paste is kinda fast, but there's a better way that doesn't temporarily remove the code from your file.
 
-Make a selection ([without using the mouse](../make-extend-selection/))
-and use (`Shift-Alt-Up/Down` Win/Linux, `Alt-Shift-Up/Down` macOS)
-to move that selection to the target line. The selection gets dragged
-along, in view.
+Make a selection ([without using the mouse](../make-extend-selection/)) and use <kbd>⌥⇧↑</kbd> (macOS) / <kbd>Shift+Alt+Up Arrow</kbd> (Windows/Linux) or <kbd>⌥⇧↓</kbd> (macOS) / <kbd>Shift+Alt+Down Arrow</kbd> (Windows/Linux) to move that selection to the target line. The selection gets dragged along, in view.
 
-With cut-and-paste, you have semi-dangerously remove your code, then
-make a new line to put place the selection, then paste.
+With cut-and-paste, you have semi-dangerously remove your code, then make a new line to put place the selection, then paste.

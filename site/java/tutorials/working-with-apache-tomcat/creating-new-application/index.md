@@ -31,9 +31,9 @@ We're going to create a small web application that runs on Tomcat to demonstrate
 3. Click **Next** to go to the next step in the tutorial and select Jakarta EE 9 from the Version drop-down. The Eclipse Jersey Server and Weld SE have been preselected for us because we selected REST service as the template in the previous step.
 4. Click **Create** to set up the project. IntelliJ IDEA will now create our simple web application which will output “Hello, World!” when it receives a GET request.
 
-You can open the Services window with **⌘8** (macOS), **Alt+8** (Windows/Linux) to see the Tomcat server we just configured along with our web application.
+You can open the Services window with <kbd>⌘8</kbd> (macOS) / <kbd>Alt+8</kbd> (Windows/Linux) to see the Tomcat server we just configured along with our web application.
 
-We can run our application with **^R** (macOS), or **Shift+F10** (Windows/Linux) and this starts our Tomcat server. In the Run window **⌘4** (macOS), **Alt+4** (Windows/Linux), you can check the logs to ensure that your Tomcat server is being deployed, however, IntelliJ IDEA automatically opens a browser when the URL of the application's root context - [http://localhost:8080/HelloWorldApp_war_exploded/](http://localhost:8080/HelloWorldApp_war_exploded/). You should receive a 404 error:
+We can run our application with <kbd>⌃⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+F10</kbd> (Windows/Linux) and this starts our Tomcat server. In the Run window **⌘4** (macOS), **Alt+4** (Windows/Linux), you can check the logs to ensure that your Tomcat server is being deployed, however, IntelliJ IDEA automatically opens a browser when the URL of the application's root context - [http://localhost:8080/HelloWorldApp_war_exploded/](http://localhost:8080/HelloWorldApp_war_exploded/). You should receive a 404 error:
 
 ![404 Error in the browser](404-error.png)
 

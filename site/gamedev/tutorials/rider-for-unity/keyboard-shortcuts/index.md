@@ -18,7 +18,8 @@ video:
   end: 528
 ---
 
-There are two keyboard shortcuts that I want to teach you today: <kbd>Shift+Shift</kbd> to open up **Search Everywhere**, and <kbd>Alt+Enter</kbd>.
+There are two keyboard shortcuts that I want to teach you today: <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (VS Windows/Linux)
+to open up **Search Everywhere**, and <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (VS Windows/Linux).
 
 Search Everywhere gets you anywhere in your project. You can start typing and it'll search for classes, files, symbols, and even for actions across the IDE.
 

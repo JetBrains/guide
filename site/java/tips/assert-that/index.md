@@ -15,6 +15,6 @@ seealso:
 video: "https://youtu.be/ukGjQxga6Wg"
 ---
 
-Use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to import static methods into classes to improve the readability of your code.
+<kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), to import static methods into classes to improve the readability of your code.
 
 This can be especially useful when you're migrating from older versions of testing frameworks and need to make multiple replacements in your class.

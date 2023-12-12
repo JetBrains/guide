@@ -21,4 +21,4 @@ seealso:
 video: "https://youtu.be/m6iY4p2rBoc"
 ---
 
-You should get in the habit of using statement completion because it's a great way to keep your code compiling. You can use the keyboard shortcut **⇧⌘⏎** (macOS), **Ctrl+Shift+Enter** (Windows) to add your semicolons, finish your methods and more.
+You should get in the habit of using statement completion because it's a great way to keep your code compiling. You can use the keyboard shortcut <kbd>⌃⇧⏎</kbd> (macOS) / <kbd>Ctrl+Shift+Enter</kbd> (Windows/Linux) to add your semicolons, finish your methods and more.

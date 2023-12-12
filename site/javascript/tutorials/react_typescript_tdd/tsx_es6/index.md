@@ -101,7 +101,7 @@ Instead of typing the above, we could just select `<h1>Hello React</h1>`, invoke
 ![Extract Component](./screenshots/extract_component.png)
 
 With this component in place, we can now go back to the test and import it.
-Instead of doing so manually, click on `<Heading />`, hit `Alt-Enter`, and choose `Add import statement`.
+Instead of doing so manually, click on `<Heading />`, hit <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), and choose `Add import statement`.
 When you save, the test re-runs, and now both tests pass:
 
 ![Tests Pass](./screenshots/tests_pass.png)
@@ -319,10 +319,10 @@ A double-quote contains a regular string, whereas brackets contain JavaScript ex
 
 In components you frequently navigate around between markup and code.
 The IDE makes this easy.
-For example, in the `App` component, `Ctrl-B` or `Cmd-B` on `Heading` and you will navigate to that component.
+For example, in the `App` component, <kbd>⌘B</kbd> (macOS) / <kbd>Ctrl+B</kbd> (Windows/Linux) on `Heading` and you will navigate to that component.
 
 You can go in the reverse direction as well.
-Click on the `Heading` then hit `Alt-F7`.
+Click on the `Heading` then hit <kbd>⌃⌥F7<kbd/> (macOS) / <kbd>Alt+F7<kbd/> (Windows/Linux).
 This shows all the locations in your project which use that _symbol_, not the string.
 This is useful when you want the change a name through refactoring.
 

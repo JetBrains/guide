@@ -16,6 +16,4 @@ The **Paste from History** feature you to use the (limited) history of everythin
 
 **How to use:**
 
-Press _Ctrl + Shift + V on Windows/Linux_ and _⌘ + ⇧ + V on macOS_ to open pop-up window.
-
-<span class="tag is-rounded">New in 2017.3</span>
+Press <kbd>⌘⇧V</kbd> (macOS) / <kbd>Ctrl+Shift+V</kbd> (Windows/Linux) to open pop-up window.

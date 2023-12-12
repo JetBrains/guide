@@ -15,5 +15,3 @@ video: >-
 **How to use:**
 
 Remove all the contents of a scratch file the close it. The IDE will automatically remove it.
-
-<span class="tag is-rounded">New in 2021.2</span>

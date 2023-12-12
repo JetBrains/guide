@@ -21,6 +21,6 @@ You can find the [full video here](https://www.youtube.com/watch?v=bPX9VHjviEM).
 
 ## Shortcuts used
 
-- To undo an action **⌘+Z** (macOS), or **Ctrl+Z** on (Windows/Linux)
-- To open the Commit tool window **⌘0** (macOS), or **Alt+0** (Windows/Linux)
-- To open the Git tool window **⌘9** (macOS), or **Alt+9** (Windows/Linux)
+- To undo an action <kbd>⌘Z</kbd> (macOS) / <kbd>Ctrl+Z</kbd> (Windows/Linux)
+- To open the Commit tool window <kbd>⌘0</kbd> (macOS) / <kbd>Alt+0</kbd> (Windows/Linux)
+- To open the Git tool window <kbd>⌘9</kbd> (macOS) / <kbd>Alt+9</kbd> (Windows/Linux)

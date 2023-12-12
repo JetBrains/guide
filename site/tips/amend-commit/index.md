@@ -72,5 +72,5 @@ When you view the diff for the Markdown change, you see: the date change is now 
 For those that don’t trust the convenience, you can look at the `Git Console` to see the command which you would have typed from the command line.
 
 One last point: what would this look like without a mouse?
-We make a change, open the commit tool using `Ctrl-Alt-M` (on Mac) to check the `Amend` box.
+We make a change, open the commit tool using <kbd>⌥⌘M</kbd> (macOS) / <kbd>Ctrl+Alt+M</kbd> (Windows/Linux) (on Mac) to check the `Amend` box.
 Then `Ctrl-Enter` to commit.

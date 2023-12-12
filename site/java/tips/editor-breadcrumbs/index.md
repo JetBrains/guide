@@ -17,6 +17,6 @@ seealso:
 video: "https://youtu.be/2W0X0_nlpWo"
 ---
 
-Press **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux) on Windows/Linux, to display the **Find Actions** dialog. Type in 'editor breadcrumbs' and select the option you want.
+Press <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd>, to display the **Find Actions** dialog. Type in 'editor breadcrumbs' and select the option you want.
 
 You can hide the editor breadcrumbs completely to maximise editor space.

@@ -42,7 +42,7 @@ These are some scenarios where the _Extract Method_ refactoring can make develop
 
 ## How to use Extract Method refactoring
 
-In Rider, highlight the code you want to extract and press `Ctrl + Shift + R`.
+In Rider, highlight the code you want to extract and press <kbd>⌘⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+R</kbd> (VS Windows/Linux).
 Choose the type of method you want: method or local function.
 Supply the name, return type, parameters, visibility, and location and other information requested in the refactoring dialog.
 This information is used to create a new method or local function for the selected code to live in, as well as calls to it.

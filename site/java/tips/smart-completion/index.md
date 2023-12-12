@@ -17,7 +17,7 @@ seealso:
 video: "https://youtu.be/cKF-HXaNIYE"
 ---
 
-Press **⌃⇧␣** (macOS), **Ctrl+Shift+Space** (Windows/Linux) to invoke smart completion. If the type can be determined then the list of suggestions will be filtered to the correct type.
+Press<kbd>⌃⇧␣</kbd> (macOS) / <kbd>Ctrl+Shift+Space</kbd> (Windows/Linux) to invoke smart completion. If the type can be determined then the list of suggestions will be filtered to the correct type.
 
 Here are some places you can use it:
 

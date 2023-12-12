@@ -15,11 +15,6 @@ video: >-
 ---
 
 **How to use:**
-Press _. (dot)_ after the function/method call and continue to
-type the _varCheckError_, or simply _vce_, postfix completion.
+Press _. (dot)_ after the function/method call and continue to type the _varCheckError_, or simply _vce_, postfix completion.
 
-It will surround your code with the appropriate boilerplate to
-create any missing variables that are returned and handle the error
-checking part for you.
-
-<span class="tag is-rounded">New in 2021.1</span>
+It will surround your code with the appropriate boilerplate to create any missing variables that are returned and handle the error checking part for you.

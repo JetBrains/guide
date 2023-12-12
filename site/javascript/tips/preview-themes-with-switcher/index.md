@@ -19,4 +19,4 @@ animatedGif:
   height: 300
 ---
 
-Use the _Switch_ popup to preview a theme before changing it. Press _Ctrl+`_ and go to _Theme_, then choose the theme that you like and press _Enter_ to apply it.
+Use the _Switch_ popup to preview a theme before changing it. Press <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux) and go to _Theme_, then choose the theme that you like and press _Enter_ to apply it.

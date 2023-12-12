@@ -13,6 +13,4 @@ screenshot: ./screenshot.png
 
 **How to use:**
 
-Turn on the feature in `Settings/Preferences | Editor | General | Change font size with Ctrl+Mouse Wheel`. Then use _Ctrl + Mouse Wheel up or down_ to increase or decrease the font size of your editor.
-
-<span class="tag is-rounded">New in 2017.3</span>
+Turn on the feature in `Settings/Preferences | Editor | General | Change font size with Ctrl+Mouse Wheel`. Then you can increase or decrease the font size of your editor with your mouse wheel.

@@ -15,7 +15,7 @@ If you are using IntelliJ IDEA Ultimate, you can also view your dependencies as 
 
 ## Show Diagrams
 
-We can open diagrams either by right-clicking the project in the Project tool window and selecting **Diagrams | Show Diagrams**, or by using the shortcut **⌥ ⇧ ⌘ U** (on macOS) or **Ctrl+Alt+Shift+U** (on Windows/Linux). You'll notice this gives you several diagram options to choose from. In this case, we're interested in the **Gradle Dependencies**, so we select that one. We can hide all tool windows (**⇧⌘F12** on macOS / **Control+Shift+F12** on Windows/Linux), so we can focus on the diagram.
+We can open diagrams either by right-clicking the project in the Project tool window and selecting **Diagrams | Show Diagrams**, or by using the shortcut <kbd>⌥⇧⌘U</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+U</kbd> (Windows/Linux). You'll notice this gives you several diagram options to choose from. In this case, we're interested in the **Gradle Dependencies**, so we select that one. We can hide all tool windows <kbd>⌘⇧F12</kbd> (macOS) / <kbd>Ctrl+Shift+F12 (Windows/Linux)</kbd>, so we can focus on the diagram.
 
 ![Diagrams | Show Diagrams](show-diagram.png)
 
@@ -31,7 +31,7 @@ If the project we're looking at pulls in a lot of transitive dependencies, like 
 
 ## Finding a specific dependency
 
-To look for a specific dependency and see where we get it from, we can search for this dependency using **⌘F**(on macOS) or **Ctrl+F** (on Windows/Linux) to find it in the diagram. Using the button **Show Paths: Root -> Selection**, we can check the path for this dependency and click related dependencies to follow the path to the root.
+To look for a specific dependency and see where we get it from, we can search for this dependency using <kbd>⌘F</kbd> (macOS) / <kbd>Ctrl+F</kbd> (Windows/Linux) to find it in the diagram. Using the button **Show Paths: Root -> Selection**, we can check the path for this dependency and click related dependencies to follow the path to the root.
 
 ![Find Elements in Diagram](find-elements.png)
 

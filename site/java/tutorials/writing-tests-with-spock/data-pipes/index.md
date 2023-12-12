@@ -107,7 +107,7 @@ Once again the test creates a polygon with a specified number of sides. Then it 
 
 ![](./18.png)
 
-This test is quite a simple one, and we can reduce the amount of code and do the same thing. We can inline the creation of the Polygon (by pressing **⌘⌥N** (macOS), or **Ctrl+Alt+N** (Windows/Linux) on the `polygon` variable name), so the constructor is called in the same line as the assertion. If we just have one statement which is setup, test, and assertion, we can use the `expect` label like we did in our very first simple assertion test. Of course, we still need the `where` block as this sets all the expected values for number of sides.
+This test is quite a simple one, and we can reduce the amount of code and do the same thing. We can inline the creation of the Polygon (by pressing <kbd>⌥⌘N</kbd> (macOS) / <kbd>Ctrl+Alt+N</kbd> (Windows/Linux) on the `polygon` variable name), so the constructor is called in the same line as the assertion. If we just have one statement which is setup, test, and assertion, we can use the `expect` label like we did in our very first simple assertion test. Of course, we still need the `where` block as this sets all the expected values for number of sides.
 
 ```groovy
 def "should be able to create a polygon with #sides sides"() {

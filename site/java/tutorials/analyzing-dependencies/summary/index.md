@@ -17,16 +17,16 @@ Now we know several ways to analyze our project's dependencies in IntelliJ IDEA.
 
 Here are the IntelliJ IDEA shortcuts that we used.
 
-| Name                                                                                             | macOS Shortcut | Windows / Linux Shortcut |
-| ------------------------------------------------------------------------------------------------ | -------------- | ------------------------ |
-| Recent Files                                                                                     | **⌘E**         | **Ctrl+E**               |
-| Hide all windows / Restore windows                                                               | **⇧⌘F12**      | **Ctrl+Shift+F12**       |
-| Open / Close [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html) | **⌘1**         | **Alt+1**                |
-| Show Diagram                                                                                     | **⌥⇧⌘U**       | **Ctrl+Alt+Shift+U**     |
-| Zoom in (in the diagram)                                                                         | **+**          | **+**                    |
-| Zoom out (in the diagram)                                                                        | **-**          | **-**                    |
-| Find Elements in Diagram                                                                         | **⌘F**         | **Ctrl+F**               |
-| Context Actions                                                                                  | **⌥⏎**         | **Alt+Enter**            |
+| Name                                                                                             | macOS Shortcut   | Windows / Linux Shortcut    |
+| ------------------------------------------------------------------------------------------------ | ---------------- | --------------------------- |
+| Recent Files                                                                                     | <kbd>⌘E</kbd>    | <kbd>Ctrl+E</kbd>           |
+| Hide all windows / Restore windows                                                               | <kbd>⇧⌘F12</kbd> | <kbd>Ctrl+Shift+F12</kbd>   |
+| Open / Close [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html) | <kbd>⌘1</kbd>    | <kbd>Alt+1</kbd>            |
+| Show Diagram                                                                                     | <kbd>⌥⇧⌘U</kbd>  | <kbd>Ctrl+Alt+Shift+U</kbd> |
+| Zoom in (in the diagram)                                                                         | <kbd>+</kbd>     | <kbd>+</kbd>                |
+| Zoom out (in the diagram)                                                                        | <kbd>-</kbd>     | <kbd>-</kbd>                |
+| Find Elements in Diagram                                                                         | <kbd>⌘F</kbd>    | <kbd>Ctrl+F</kbd>           |
+| Context Actions                                                                                  | <kbd>⌥⏎</kbd>    | <kbd>Alt+Enter</kbd>        |
 
 ### Related Links
 

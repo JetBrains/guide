@@ -24,5 +24,5 @@ You can easily check the value of an expression when you are debugging using _Ev
 There are 3 ways you can use it:
 
 1. Click the debug toolbar button to launch it.
-2. Invoke the _Evaluate Expression_ action (_⌥F8_ macOS / _Ctrl+F8_ Windows/Linux).
+2. Invoke the _Evaluate Expression_ action <kbd>⌥⌘F8</kbd> (macOS) / <kbd>Ctrl+Alt+F8</kbd> (Windows/Linux).
 3. Right-click in the editor and select _Evaluate Expression_.

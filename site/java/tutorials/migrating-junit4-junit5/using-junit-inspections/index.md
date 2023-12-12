@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/F8UTTTDtbH0?start=247"
 ---
 
-Use **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) to load IntelliJ IDEA preferences and type in 'inspections'. [IntelliJ IDEA's inspections](https://www.jetbrains.com/help/idea/code-inspection.html#access-inspections-and-settings) can be very helpful for migrating code. In particular there are a number of inspections for JUnit tests.
+Use <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) to load IntelliJ IDEA preferences and type in 'inspections'. [IntelliJ IDEA's inspections](https://www.jetbrains.com/help/idea/code-inspection.html#access-inspections-and-settings) can be very helpful for migrating code. In particular there are a number of inspections for JUnit tests.
 
 To help with the migration, turn on 'JUnit 4 test can be JUnit 5' inspection. You can only turn this on if you're using at least Java 8 and have JUnit 5 dependencies set up.
 
@@ -65,7 +65,7 @@ public class JUnit4To5 {
 }
 ```
 
-With this inspection turned on, JUnit 4 tests that are currently running using the JUnit 5 vintage engine are flagged to show you that they can be migrated. Press **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), in the class name and IntelliJ IDEA offers to migrate the test class to JUnit 5.
+With this inspection turned on, JUnit 4 tests that are currently running using the JUnit 5 vintage engine are flagged to show you that they can be migrated. Press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), in the class name and IntelliJ IDEA offers to migrate the test class to JUnit 5.
 
 ![alt_enter_migrate.png](alt_enter_migrate.png)
 
@@ -73,7 +73,7 @@ The [refactoring preview](https://www.jetbrains.com/help/idea/refactoring-source
 
 ![refactoring_preview.png](refactoring_preview.png)
 
-If you want to exclude any of the tests from the refactor you can click **⌫**, or **Delete**. To include them again click **⇧⌫**, or **Shift+Delete**. Press **Do Refactor** and let's see what the new code looks like.
+If you want to exclude any of the tests from the refactor you can click <kbd>␡</kbd> (macOS) / <kbd>Delete</kbd> (Windows/Linux). To include them again click <kbd>⇧␡</kbd> (macOS) / <kbd>Shift+Delete</kbd> (Windows/Linux). Press **Do Refactor** and let's see what the new code looks like.
 
 ```java
 public class JUnit4To5 {
@@ -142,7 +142,7 @@ JUnit 4.4 introduced the idea of assumptions, if these assumptions are met the t
 
 Like the `Before` annotations, `After` is replaced with `AfterEach`, and `AfterClass` is replaced with `AfterAll`.
 
-IntelliJ IDEA makes all of these changes automatically. Like any IntelliJ IDEA refactoring, you can see the class still compiles after you've done the refactoring by using **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux). Let's use **⌃⇧R** (macOS), or **Ctrl+Shift+F10** (Windows/Linux) to run the tests to make sure everything behaves the way we expect.
+IntelliJ IDEA makes all of these changes automatically. Like any IntelliJ IDEA refactoring, you can see the class still compiles after you've done the refactoring by using <kbd>⌘F9</kbd> (macOS) / <kbd>Ctrl+F9</kbd> (Windows/Linux). Let's use <kbd>⌃⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+F10</kbd> (Windows/Linux) (Windows/Linux) to run the tests to make sure everything behaves the way we expect.
 
 The `beforeClass` method is run once, each before and after method is run once per test, and the `afterClass` method is run once at the end, so the overall setup works as it did under JUnit 4. The disabled test is still not run, and there are three passing tests, the same as before.
 

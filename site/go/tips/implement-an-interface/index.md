@@ -17,7 +17,4 @@ _Implement methods_ action.
 
 **How to use:**
 
-_Ctrl + I on Windows/Linux_ or _^ + I on macOS_, (capital i on all shortcuts), and then select
-either to generate a new type or use an existing type from the current file.
-
-<span class="tag is-rounded">New in 2017.3</span>
+<kbd>^I</kbd> (macOS) / <kbd>Ctrl+I (Windows/Linux)</kbd>, and then select either to generate a new type or use an existing type from the current file.

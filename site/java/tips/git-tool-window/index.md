@@ -16,4 +16,4 @@ seealso:
 video: "https://youtu.be/Y_dToX41B3U"
 ---
 
-Open the Git tool window using **⌘9** (on macOS) | **Alt+9** (on Windows/Linux) to see your project’s history, filter by branch, user and more.
+Open the Git tool window using <kbd>⌘9</kbd> (macOS) / <kbd>Alt+9</kbd> (Windows/Linux) to see your project’s history, filter by branch, user and more.

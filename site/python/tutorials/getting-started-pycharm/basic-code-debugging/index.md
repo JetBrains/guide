@@ -16,7 +16,7 @@ In this step, we’ll look at PyCharm’s debugger, specifically how to use it t
 
 ## Breakpoints and Debug Session
 
-Everything starts with a breakpoint. Breakpoints are markers that tell the debugger to suspend the execution of a program. To add and remove breakpoints click the gutter in the line where you want to add them. You can also add a breakpoint from the keyboard by leaving the caret at the end of the line and pressing (**⌘F8**| **Ctrl+F8**).
+Everything starts with a breakpoint. Breakpoints are markers that tell the debugger to suspend the execution of a program. To add and remove breakpoints click the gutter in the line where you want to add them. You can also add a breakpoint from the keyboard by leaving the caret at the end of the line and pressing <kbd>⌘F8</kbd> (macOS) / <kbd>Ctrl+F8</kbd> (Windows/Linux).
 
 In this example we are adding a breakpoint to this `if` statement inside our loop, so the program will suspend the execution on each iteration. We can run the program with the debugger by clicking the little _bug_ button at the top of PyCharm. This runs the currently-selected configuration, but under the debugger.
 

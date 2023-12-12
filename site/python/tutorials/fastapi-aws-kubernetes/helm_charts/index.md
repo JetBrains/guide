@@ -18,8 +18,7 @@ Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 # Helm
 
-In this tutorial we will be working with Helm. In simple terms, [Helm](https://helm.sh/) is a package manager for Kubernetes. It is a tool
-that streamlines installing and managing Kubernetes applications. Think of it like `Apt/Yum/Homebrew` for K8s.
+In this tutorial we will be working with Helm. In simple terms, [Helm](https://helm.sh/) is a package manager for Kubernetes. It is a tool that streamlines installing and managing Kubernetes applications. Think of it like `Apt/Yum/Homebrew` for K8s.
 
 _Note: I will be showing a high-level use case of Helm. We won’t be getting deeper dive into Helm_
 
@@ -39,8 +38,7 @@ I will click on **Installing Helm** under **Introduction**.
 
 ![step3](./steps/step3.png)
 
-As you can see there are multiple flavours of installing Helm. Either you can install directly from the
-binary, scripts, apt, or homebrew etc.
+As you can see there are multiple flavours of installing Helm. Either you can install directly from the binary, scripts, apt, or homebrew etc.
 
 ![step4](./steps/step4.png)
 
@@ -64,12 +62,9 @@ Okay, we have successfully installed Helm.
 
 # Repository
 
-We are going to work with Helm Charts. Helm Charts are simply Kubernetes YAML manifests
-combined into a single package that can be advertised to your Kubernetes clusters.
+We are going to work with Helm Charts. Helm Charts are simply Kubernetes YAML manifests combined into a single package that can be advertised to your Kubernetes clusters.
 
-Obviously, we need to store these charts and that is where we look for a Helm repository. At a high level,
-a chart repository is a location where packaged charts can be stored and shared. The official chart repository is
-maintained by the Helm Charts.
+Obviously, we need to store these charts and that is where we look for a Helm repository. At a high level, a chart repository is a location where packaged charts can be stored and shared. The official chart repository is maintained by the Helm Charts.
 
 ### Private Repositories
 
@@ -83,8 +78,7 @@ Let me try to check for the **NGINX** package.
 
 ![step8](./steps/step8.png)
 
-As you can see there are multiple charts for NGINX. Some have been uploaded by organizations and
-some by users. You can filter them out based on **verified publishers** or **official providers**.
+As you can see there are multiple charts for NGINX. Some have been uploaded by organizations and some by users. You can filter them out based on **verified publishers** or **official providers**.
 
 # Installing NGINX Chart
 
@@ -117,8 +111,7 @@ This is going to return the list of repositories present in our system.
 
 Once you have added a repository we can search for various software packages provided by **[Bitnami](https://bitnami.com/)**.
 
-We are going to search for [Drupal](https://www.drupal.org/) which is also packaged by Bitnami. Drupal is
-an “out of the box” web content management tool as well as a customizable platform. It is an Open Source CMS.
+We are going to search for [Drupal](https://www.drupal.org/) which is also packaged by Bitnami. Drupal is an “out of the box” web content management tool as well as a customizable platform. It is an Open Source CMS.
 
 I will type:
 
@@ -166,9 +159,7 @@ helm list
 
 ![step17](./steps/step17.png)
 
-Here the release name is **my-release**. When you use a chart reference with a repo prefix **(bitnami/nginx)**, Helm will
-look in the local configuration for a chart repository named **'bitnami'**, and will then look for a chart in that
-repository whose name is **‘nginx'**.
+Here the release name is **my-release**. When you use a chart reference with a repo prefix **(bitnami/nginx)**, Helm will look in the local configuration for a chart repository named **'bitnami'**, and will then look for a chart in that repository whose name is **‘nginx'**.
 
 As you can see the installation is complete and these are the few notes provided on how to check the application.
 
@@ -214,11 +205,9 @@ Even though we got 443, we are only concerned about port 80.
 
 The latest release is running on port 30214 and the older release which is my-release-2-nginx is running on 30499.
 
-So, this is the simplest use case of Helm. You can observe the benefits of using Helm Charts,  
-also you can roll back or upgrade helm charts.
+So, this is the simplest use case of Helm. You can observe the benefits of using Helm Charts, also you can roll back or upgrade helm charts.
 
-When you type: helm list it will provide a list of releases in the default namespace. You can
-also pass **all-namespaces** to get all releases present across namespaces.
+When you type: helm list it will provide a list of releases in the default namespace. You can also pass **all-namespaces** to get all releases present across namespaces.
 
 ![step23](./steps/step23.png)
 
@@ -260,8 +249,7 @@ helm history my-release
 
 As of now, the revision is 1 and the app version deployed is 1.21.3
 
-In future when you will be doing an upgrade or rollback of your releases, this history command
-will keep all the track of changes done.
+In future when you will be doing an upgrade or rollback of your releases, this history command will keep all the track of changes done.
 
 If you want to read the instructions basically the notes then you can type:
 
@@ -311,9 +299,7 @@ If apiVersion is v1 it's basically telling that it uses previous versions of Hel
 **Description** is something optional. You can give brief information about your application.
 
 Type of chart can be an **application** or **library** chart. As we are working on an application it’s going to be an application chart.
-According to Helm docs: _A library
-chart is a type of Helm chart that defines chart primitives or definitions which can be shared by Helm templates in other charts.
-This allows users to share snippets of code that can be reused across charts, avoiding repetition and keeping charts DRY_.
+According to Helm docs: _A library chart is a type of Helm chart that defines chart primitives or definitions which can be shared by Helm templates in other charts. This allows users to share snippets of code that can be reused across charts, avoiding repetition and keeping charts DRY_.
 
 **Version** is basically pointing towards the chart version and appVersion is basically the application version.
 
@@ -331,8 +317,7 @@ You can observe the empty chart directory. We are going to place all our depende
 
 ### templates
 
-The **Template** folder contains all the Kubernetes manifest files. You can see they have provided sample manifests for nginx application, we are going to replace
-it with our manifest files which we have defined earlier when we were working with Kubernetes.
+The **Template** folder contains all the Kubernetes manifest files. You can see they have provided sample manifests for nginx application, we are going to replace it with our manifest files which we have defined earlier when we were working with Kubernetes.
 
 ![step35](./steps/step35.png)
 
@@ -344,8 +329,7 @@ A named template is also referred to as partial or a subtemplate.
 
 ![step36](./steps/step36.png)
 
-Files whose name begins with an underscore **(\_)** are actually rendered to Kubernetes object definitions,
-but are available everywhere within other chart templates for use.
+Files whose name begins with an underscore **(\_)** are actually rendered to Kubernetes object definitions, but are available everywhere within other chart templates for use.
 
 The Helm client and library is written in the **Go programming language**. The library uses the Kubernetes client
 library to communicate with Kubernetes.
@@ -360,11 +344,9 @@ We can also define tests in our helm charts. You can define as many as tests, an
 
 ![step38](./steps/step38.png)
 
-And finally **values.yaml** file, it contains default values which are passed in Templates. You can dynamically
-override this value when you are trying to install the chart which is quite helpful when CI/CD solutions.
+And finally **values.yaml** file, it contains default values which are passed in Templates. You can dynamically override this value when you are trying to install the chart which is quite helpful when CI/CD solutions.
 
-As I said in the beginning we won’t be getting deep dive into Helm, for in-depth knowledge I would
-recommend following the official Helm documentation.
+As I said in the beginning we won’t be getting deep dive into Helm, for in-depth knowledge I would recommend following the official Helm documentation.
 
 # Replacing Charts
 
@@ -372,8 +354,7 @@ I have already created the Helm Charts for this tutorial, I am going to replace 
 
 ![step39](./steps/step39.png)
 
-As you can see we have replaced our files and these kubernetes
-manifest exactly similar to what we did in our previous video when working with Kubernetes.
+As you can see we have replaced our files and these kubernetes manifest exactly similar to what we did in our previous video when working with Kubernetes.
 
 The only difference is that we have parameterized those values like the namespace and app version.
 
@@ -615,8 +596,7 @@ I will type:
 helm install myapp fastapi-helm
 ```
 
-I will provide the namespace. Even if you don’t have the specific namespace, nothing to worry you can
-directly create the namespace through Helm itself by passing **--create-namespace**.
+I will provide the namespace. Even if you don’t have the specific namespace, nothing to worry you can directly create the namespace through Helm itself by passing **--create-namespace**.
 
 - Make sure before installing have a look into this file and update accordingly.
 
@@ -688,14 +668,11 @@ I will type:
 helm lint fastapi-helm
 ```
 
-It basically runs a series of tests to verify that the chart is completely perfect or
-is there any syntax error or not. If the linter encounters things that will cause the chart
-to fail installation, it’s going to emit error messages.
+It basically runs a series of tests to verify that the chart is completely perfect or is there any syntax error or not. If the linter encounters things that will cause the chart to fail installation, it’s going to emit error messages.
 
 ![step45](./steps/step45.png)
 
-You can even package the chart and deploy to private or public repo
-like GitHub Pages or S3 or any other helm repository platform.
+You can even package the chart and deploy to private or public repo like GitHub Pages or S3 or any other helm repository platform.
 
 ![step46](./steps/step46.png)
 
@@ -711,21 +688,16 @@ Now, I am going to uninstall it and show how easy it is to manage via Helm.
 
 ![step48](./steps/step48.png)
 
-You can see all the resources are getting terminated. This command is quite comfortable compared to
-manually delete pod, deployment, service etc.
+You can see all the resources are getting terminated. This command is quite comfortable compared to manually delete pod, deployment, service etc.
 
 ![step49](./steps/step49.png)
 
 There are many things which we did not cover when working with Helm.
 
-I definitely recommend you to check the official [documentation](https://helm.sh/docs/) or
-else you can check out a great book **[“Learning Helm”](https://www.oreilly.com/library/view/learning-helm/9781492083641/)**
-which is written by creators and maintainers of Helm.
+I definitely recommend you to check the official [documentation](https://helm.sh/docs/) or else you can check out a great book **[“Learning Helm”](https://www.oreilly.com/library/view/learning-helm/9781492083641/)** which is written by creators and maintainers of Helm.
 
 ![step50](./steps/step50.jpg)
 
-This book covers everything related to Helm either working with templates or deploying charts, this is one
-stop solution for Helm.
+This book covers everything related to Helm either working with templates or deploying charts, this is one stop solution for Helm.
 
-Thank you everyone, I am going to see you in the next tutorial where I will be working on the
-[Elastic Kubernetes Service](https://aws.amazon.com/eks/) offered by AWS.
+Thank you everyone, I am going to see you in the next tutorial where I will be working on the [Elastic Kubernetes Service](https://aws.amazon.com/eks/) offered by AWS.

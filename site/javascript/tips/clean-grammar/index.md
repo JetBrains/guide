@@ -21,6 +21,4 @@ animatedGif:
   height: 300
 ---
 
-Clean code is nice, and so is clean grammar! WebStorm
-can help you avoid mistakes when adding comments, commit messages,
-and various language constructs.
+Clean code is nice, and so is clean grammar! WebStorm can help you avoid mistakes when adding comments, commit messages, and various language constructs.

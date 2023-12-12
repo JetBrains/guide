@@ -23,7 +23,7 @@ This will open the "**Rebasing Commits**" popup window with a list of the commit
 Notice there are several options at the top of this popup, that become active when we select one or more of the commits:
 
 - **Reword** allows us to change the commit message of a specific commit.
-- The **Squash** button is actually a dropdown that allows us to choose between **Squash** and **Fixup**. Both options will combine the changes made in the selected commits into one commit. If we select squash, by default the individual commit messages will be combined. If we select fixup, the commit message of the fixup commit will be discarded. You can select fixup while in the "**Rebasing Commits**" popup with **⌥+F** on Mac (or **Alt+F** on Windows & Linux)
+- The **Squash** button is actually a dropdown that allows us to choose between **Squash** and **Fixup**. Both options will combine the changes made in the selected commits into one commit. If we select squash, by default the individual commit messages will be combined. If we select fixup, the commit message of the fixup commit will be discarded. You can select fixup while in the "**Rebasing Commits**" popup with <kbd>⌥F</kbd> (macOS) / <kbd>Alt+F</kbd> (Windows/Linux).
 - **Drop** allows us to drop one or more commits.
 
 # Changing the order of the commits
@@ -68,7 +68,7 @@ We can do so using Git interactive rebase, in the "**Rebasing Commits**" popup, 
 
 ![Reword](reword.png)
 
-You can also edit the commit message directly in the Git log window. Right-click the commit you want to rename and select "**Edit Commit Message**" or press **F2** on macOS, Windows or Linux.
+You can also edit the commit message directly in the Git log window. Right-click the commit you want to rename and select "**Edit Commit Message**" or press <kbd>F2</kbd> (macOS) / <kbd>F2</kbd> (Windows/Linux).
 
 ![Edit Commit Message](edit-commit-message.png)
 

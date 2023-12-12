@@ -15,4 +15,4 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/PmYnzaOB1Uo"
 ---
 
-To increase the font size, press **⌃⇧Period** on macOS or **Alt+Shift+Dot** on Windows and Linux. To decrease it, press **⌃⇧Comma** on macOS or **Alt+Shift+Comma** on Windows and Linux.
+To increase the font size, press <kbd>⌃⇧.</kbd> (macOS) / <kbd>Alt+Shift+Period</kbd> (Windows/Linux). To decrease it, press <kbd>⌃⇧,</kbd> (macOS) / <kbd>Alt+Shift+Comma</kbd> (Windows/Linux).

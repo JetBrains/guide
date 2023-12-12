@@ -20,4 +20,4 @@ seealso:
 video: "https://youtu.be/JGREPK9W66w"
 ---
 
-You can use **⌘N** (macOS), or **Alt+Insert** (Windows/Linux) for the _Generate_ menu and then select `Constructor`, `Getter`, `Setter` or `Getter and Setter`.
+You can use <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) for the _Generate_ menu and then select `Constructor`, `Getter`, `Setter` or `Getter and Setter`.

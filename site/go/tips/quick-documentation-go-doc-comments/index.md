@@ -25,4 +25,4 @@ Headings (#) and lists (\*, +, 1.) are also supported.
 
 **How to use:**
 
-To see documentation about an element in your code, hover the mouse over the element or click it and press `Ctrl + Q` on Windows/Linux or `F1` on macOS. To open documentation in the _Documentation_ tool window, press `Ctrl + Q`/`F1` twice.
+To see documentation about an element in your code, hover the mouse over the element or click it and press <kbd>F1</kbd> (macOS) / <kbd>Ctrl+Q</kbd> (Windows/Linux). To open documentation in the _Documentation_ tool window, press <kbd>F1</kbd> (macOS) / <kbd>Ctrl+Q</kbd> (Windows/Linux) twice.

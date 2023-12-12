@@ -16,6 +16,5 @@ Sometimes you need to start with the application from scratch, and rebuilding th
 
 **How to use:**
 
-Select one or multiple running containers that you want to restart, then click on the **Restart** button in the _Services_ window.
-
-<span class="tag is-rounded">New in 2021.2</span>
+Select one or multiple running containers that you want to restart, then click on the **Restart** button in the
+_Services_ window.

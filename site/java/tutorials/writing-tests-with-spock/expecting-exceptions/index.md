@@ -60,6 +60,6 @@ def exception = thrown(TooFewSidesException)
 exception.numberOfSides == 0
 ```
 
-Rerun the test: try using Find Action **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux) and typing "Rerun", to rerun the test. The test should pass.
+Rerun the test: try using <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) and typing "Rerun", to rerun the test. The test should pass.
 
 Now you know how to write tests that expect exceptional cases. Next, we'll look at how to run a test with multiple inputs.

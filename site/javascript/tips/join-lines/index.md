@@ -17,4 +17,4 @@ animatedGif:
   height: 300
 ---
 
-Use _Ctrl+Shift+J_ in WebStorm to join lines or blocks of code.
+Use <kbd>⌃⇧J</kbd> (macOS) / <kbd>Ctrl+Shift+J</kbd> (Windows/Linux) in WebStorm to join lines or blocks of code.

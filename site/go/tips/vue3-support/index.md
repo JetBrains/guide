@@ -19,5 +19,3 @@ video: >-
 Open any JS file and start using any Vue.js 3 related code. The IDE will provide you assistance with code completion, refactoring, find usages, and more.
 
 **Note:** You must install the [_Vue.js_](https://plugins.jetbrains.com/plugin/9442-vue-js) support plugin from the IDE Marketplace via _Settings/Preferences | Plugins | Marketplace_ for this functionality to work.
-
-<span class="tag is-rounded">New in 2020.3</span>

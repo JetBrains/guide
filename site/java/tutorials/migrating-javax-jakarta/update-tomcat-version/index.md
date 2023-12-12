@@ -27,7 +27,7 @@ EXPOSE 8080
 CMD ["catalina.sh", "run"]
 ```
 
-Before we start the migration from `javax` to `jakarta` let's run our project to see the error we need to fix. You can run your project with **⌃R** (macOS), or **Shift+F10** (Windows/Linux). Alternatively you can use the run icon in the gutter of the`docker-compose.yml` file adjacent to services because we want the image to be rebuilt:
+Before we start the migration from `javax` to `jakarta` let's run our project to see the error we need to fix. You can run your project with <kbd>⌃R</kbd> (macOS) / <kbd>Shift+F10</kbd> (Windows/Linux). Alternatively you can use the run icon in the gutter of the`docker-compose.yml` file adjacent to services because we want the image to be rebuilt:
 
 ![Gutter icons for run in Docker Compose Up](docker-compose-up.png)
 

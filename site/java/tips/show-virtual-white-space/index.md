@@ -12,4 +12,4 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/NueNJVo6zr4"
 ---
 
-You can use Find Action with **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), and then type in 'Show virtual space at the bottom of the file'. This allows you to scroll past the end of the file so that the last line of text will be at the top of the window.
+You can use Find Action with <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux), and then type in 'Show virtual space at the bottom of the file'. This allows you to scroll past the end of the file so that the last line of text will be at the top of the window.

@@ -15,7 +15,4 @@ video: "https://www.youtube.com/watch?v=73vXhhmBuYQ"
 
 _Let the IDE do your manual tasks...including copyright updates._
 
-Maintaining a project with yearly changes to a copyright statement
-which appears in tons of files? Let your tool do the work for you.
-PyCharm's copyright tool, combined with scopes to select subsets
-of files, makes it simple to apply copyright changes.
+Maintaining a project with yearly changes to a copyright statement which appears in tons of files? Let your tool do the work for you. PyCharm's copyright tool, combined with scopes to select subsets of files, makes it simple to apply copyright changes.

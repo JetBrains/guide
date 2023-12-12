@@ -19,7 +19,7 @@ To do that, copy the URL of the _upstream_ repo with in the same way we did befo
 
 ![Copy Upstream Repository Link from GitHub](upstream-link.png)
 
-Now, let's use Search Everywhere, by pressing **Shift** twice. In the Search Everywhere dialog, type _Remotes_, one of the search results is the _Manage Remotes_ option from _Git_. Press **Enter** on this option to display the **Git Remotes** dialog.
+Now, let's use Search Everywhere, by pressing <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux). In the Search Everywhere dialog, type _Remotes_, one of the search results is the _Manage Remotes_ option from _Git_. Press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) on this option to display the **Git Remotes** dialog.
 
 ![Search Everywhere - Manage Remotes](search-everywhere-manage-remotes.png)
 

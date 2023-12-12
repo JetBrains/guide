@@ -18,4 +18,4 @@ animatedGif:
   height: 300
 ---
 
-With the _Add Carets to Ends of Selected Lines_ action, you can quickly place carets at the end of each selected line. To try it, select some code and press _⌥⇧G / Alt+Shift+G_. Press the _Escape_ key when you’re ready to exit the multi-caret editing mode.
+With the _Add Carets to Ends of Selected Lines_ action, you can quickly place carets at the end of each selected line. To try it, select some code and press <kbd>⌃⌥⇧G</kbd> (macOS) / <kbd>Alt+Shift+G</kbd> (Windows/Linux). Press <kbd>␛</kbd> (macOS) / <kbd>Escape</kbd> (Windows/Linux)when you’re ready to exit the multi-caret editing mode.

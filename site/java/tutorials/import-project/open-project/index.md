@@ -18,7 +18,7 @@ In the dialog that opens, select the directory where your projects are located. 
 When you open an existing project, the project will be opened with that project’s existing configuration. All preferences are stored in a configuration folder.
 ![Configuration folder](config.png)
 
-If you already have a project open, you can open a project either from the menu **File | Open** or you can use **Find Action** (**⌘⇧A** on macOS, or **Ctrl+Shift+A** on Windows/Linux) to find any action. This is a handy shortcut for when you can’t remember where to find a particular action in the menu, or what the shortcut for that action is. If you search for “open”, you'll see the option **Open File**. Let’s click that.
+If you already have a project open, you can open a project either from the menu **File | Open** or you can use **Find Action** <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) to find any action. This is a handy shortcut for when you can’t remember where to find a particular action in the menu, or what the shortcut for that action is. If you search for “open”, you'll see the option **Open File**. Let’s click that.
 ![Find Action - Open](find-action-open.png)
 
 If the project you want to open is a Maven project, you also open that project by selecting the pom.xml.

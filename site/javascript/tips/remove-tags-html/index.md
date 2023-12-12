@@ -17,4 +17,4 @@ animatedGif:
   height: 300
 ---
 
-For HTML tags, you can press _⌥Enter / Alt+Enter_ and select _Remove tag_ instead of removing an opening tag and then a closing tag.
+For HTML tags, you can press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and select _Remove tag_ instead of removing an opening tag and then a closing tag.

@@ -16,10 +16,8 @@ Use the **Navigate | Test** feature to quickly go to a test for an element.
 
 **How to use:**
 
-Press _Ctrl + Shift + T on Windows/Linux_, _⌘ + ⇧ + T on macOS_.
+Press <kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux).
 
 **Pro tip:**
 
 Press the same shortcut on a test and you'll be able to jump back to the element that is the subject of the test.
-
-<span class="tag is-rounded">New in 2017.3</span>

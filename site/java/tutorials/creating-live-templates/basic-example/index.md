@@ -17,7 +17,7 @@ private void <methodName>(<optional arguments>) {
 }
 ```
 
-1. Open your Settings/Preferences **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux).
+1. Open your Settings/Preferences <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux).
 2. Search for "live templates":
 
 ![Settings and Preferences](settings-preferences.png)
@@ -27,7 +27,8 @@ private void <methodName>(<optional arguments>) {
 
 ![New Live Template option](new-live-template.png)
 
-5. Enter an abbreviation of `prvm`. This is the characters that will trigger the Live Template when you type them in and press **⏎** (macOS), **Enter** (Windows/Linux).
+5. Enter an abbreviation of `prvm`. This is the characters that will trigger the Live Template when you type them in and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux).
+
 6. Enter a description of `Creates a new private void method`.
 7. In the Template text field, enter:
 
@@ -59,8 +60,8 @@ private void $METHOD_NAME$($ARGS$) {
 
 ![Invoking the private void method live template](prvm.png)
 
-11. Press **⏎** (macOS), **Enter** (Windows/Linux) to use the Live Template. The default value we entered for the variable $METHOD_NAME$ will be highlighted. Give your new method a name which overwrites the default value of `methodName` then press **Tab**.
-12. Enter any arguments you want to pass in to your method and press **Tab** again.
+11. Press **⏎** (macOS), **Enter** (Windows/Linux) to use the Live Template. The default value we entered for the variable $METHOD_NAME$ will be highlighted. Give your new method a name which overwrites the default value of `methodName` then press <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (Windows/Linux).
+12. Enter any arguments you want to pass in to your method and press <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (Windows/Linux) again.
 13. Your caret will now be in the correct location inside your new method to start typing code.
 
 ![Private void method declaration](private-void-method.png)

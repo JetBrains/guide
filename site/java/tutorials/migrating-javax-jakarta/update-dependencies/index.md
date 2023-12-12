@@ -66,6 +66,6 @@ To this beta version:
 </dependency>
 ```
 
-Next, we need to reload our `pom.xml` file with **⇧⌘I** (macOS), or **Ctrl+Shift+O** (Windows/Linux), or click the little Maven icon ![maven_icon.png](maven_icon.png).
+Next, we need to reload our `pom.xml` file with <kbd>⌘⇧I</kbd> (macOS) / <kbd>Ctrl+Shift+O</kbd> (Windows/Linux), or click the little Maven icon ![maven_icon.png](maven_icon.png).
 
-Now open your Project window with **⌘1** (macOS) or **Alt+1** (Windows/Linux) and note that your two Java files are underlined in red because they are in an error state. Let’s fix that next.
+Now open your Project window with <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux) and note that your two Java files are underlined in red because they are in an error state. Let’s fix that next.

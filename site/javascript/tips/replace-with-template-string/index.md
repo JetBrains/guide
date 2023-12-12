@@ -18,4 +18,4 @@ animatedGif:
   height: 300
 ---
 
-Want to use a template string (aka template literal) instead of a regular string? Press _⌥Enter / Alt+Enter_ and select _Replace with template string_.
+Want to use a template string (aka template literal) instead of a regular string? Press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and select _Replace with template string_.

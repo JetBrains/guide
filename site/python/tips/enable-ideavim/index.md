@@ -17,18 +17,11 @@ cardThumbnail: ./card.png
 
 _Want to use your muscle memory from Vim? You can!_
 
-All the keybindings you remember from vim, plus it's configurable to use
-PyCharm specific functionality. You can pick and choose which
-keybindings you prefer.
+All the keybindings you remember from vim, plus it's configurable to use PyCharm specific functionality. You can pick and choose which keybindings you prefer.
 
-Vim keybindings for PyCharm are available, and configurable. If you are
-comfortable navigating with vim, you don't have to be uncomfortable in
-PyCharm. The keybindings can even be shared with some keybindings applying
-to vim, and some to the native PyCharm keybindings.
+Vim keybindings for PyCharm are available, and configurable. If you are comfortable navigating with vim, you don't have to be uncomfortable in PyCharm. The keybindings can even be shared with some keybindings applying to vim, and some to the native PyCharm keybindings.
 
-A file, `.ideavimrc`, provides a configuration method just like a .vimrc
-configuration file so keybindings can be adjusted and vim leader keys
-remapped. (Haven't you wanted to turn that vim error-bell off?)
+A file, `.ideavimrc`, provides a configuration method just like a .vimrc configuration file so keybindings can be adjusted and vim leader keys remapped. (Haven't you wanted to turn that vim error-bell off?)
 
 Just create a .ideavimrc file (even in windows!) with the following:
 
@@ -39,9 +32,7 @@ let mapleader = "\"
 
 ```
 
-Append the following to that same file to use the copy-paste
-functionality without having to worry about which clipboard you are
-accessing:
+Append the following to that same file to use the copy-paste functionality without having to worry about which clipboard you are accessing:
 
 ```
 map <leader>a :action $SelectAll<CR>

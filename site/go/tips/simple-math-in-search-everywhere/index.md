@@ -13,6 +13,4 @@ screenshot: ./screenshot.png
 
 **How to use:**
 
-Invoke _Search Everywhere_, _Shift + Shift_, and start typing the math operations you want to perform.
-
-<span class="tag is-rounded">New in 2020.3</span>
+Invoke <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), and start typing the math operations you want to perform.

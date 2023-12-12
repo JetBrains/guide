@@ -23,8 +23,6 @@ obsoletes:
   - /java/tips/recent-locations/
 ---
 
-Press **⌘E** (macOS), or **Ctrl+E** (Windows/Linux), to navigate around the files that you've opened recently.
-
-Press **⇧⌘E** (macOS), or **Shift+Ctrl+E** (Windows/Linux), to view your recent locations.
+Press <kbd>⌘⇧E</kbd> (macOS) / <kbd>Ctrl+Shift+E</kbd> (Windows/Linux), to navigate around the files that you've opened recently.
 
 You can filter the recent locations list to files that you've changed by using the same shortcut again.

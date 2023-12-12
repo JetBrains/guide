@@ -16,25 +16,19 @@ In this tutorial we are going to work on Unit Tests.
 
 # Unit Testing
 
-According to Wikipedia : _Unit tests are automated tests written and run by software
-developers to ensure that a section of an application (known as the "unit") meets its
-design and behaves as intended._
+According to Wikipedia : _Unit tests are automated tests written and run by software developers to ensure that a section of an application (known as the "unit") meets its design and behaves as intended._
 
-I will be covering only one scenario that will help you understand how we can begin with
-unit testing.
+I will be covering only one scenario that will help you understand how we can begin with unit testing.
 
 # Installing Requirements
 
 ![testing_step_1](steps/step1.png)
 
-First, install the **pytest** package.
-It's the most popular Python testing framework, widely used by developers and QA engineers.
+First, install the **pytest** package. It's the most popular Python testing framework, widely used by developers and QA engineers.
 
 # Let's begin testing
 
-I am going to start from scratch. Let me first delete the default **test_handler.py** file.
-I will create a db.py file under the testing_db package which will contain the same
-database connection logic which I used earlier.
+I am going to start from scratch. Let me first delete the default **test_handler.py** file. I will create a db.py file under the testing_db package which will contain the same database connection logic which I used earlier.
 
 ![testing_step_2](steps/step2.png)
 
@@ -51,9 +45,7 @@ Go to `Settings -> Tools -> Python Integrated Tools` and set the default test ru
 
 Let’s resume where we left and import the necessary modules.
 
-I am going to create a sample fixture, according to Wikipedia _"A software test fixture sets up
-a system for the software testing process by initializing it, thereby satisfying any
-preconditions the system may have."_
+I am going to create a sample fixture, according to Wikipedia _"A software test fixture sets up a system for the software testing process by initializing it, thereby satisfying any preconditions the system may have."_
 
 ![testing_step_5](steps/step5.png)
 
@@ -63,10 +55,8 @@ I will begin creating the **TestRegistrationAPI** class where I will be loading 
 
 ![testing_step_6](steps/step6.png)
 
-Before running the test case, make sure to add escape characters in the sample
-fixture as shown in line 11 and 12. As you can see on the below image,
-every time I run the test case, I will receive a different email address.
-This is just for creating randomness, nothing special.
+Before running the test case, make sure to add escape characters in the sample fixture as shown in line 11 and 12. As you can see on the below image,
+every time I run the test case, I will receive a different email address. This is just for creating randomness, nothing special.
 
 ![testing_step_7](steps/step7.png)
 
@@ -82,6 +72,4 @@ The test has begun. It will take a few minutes or less than that based on the ac
 
 ![testing_step_10](steps/step10.png)
 
-Awesome ! The test has successfully passed. This was a basic glimpse of unit testing.
-If you are interested to know more about testing then refer to this interesting tutorial [Visual Testing with pytest](../../visual_pytest/)
-written by [Paul Everitt](/authors/pwe/).
+Awesome ! The test has successfully passed. This was a basic glimpse of unit testing. If you are interested to know more about testing then refer to this interesting tutorial [Visual Testing with pytest](../../visual_pytest/) written by [Paul Everitt](/authors/pwe/).

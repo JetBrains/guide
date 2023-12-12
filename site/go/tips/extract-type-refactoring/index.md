@@ -18,12 +18,6 @@ If you have an anonymous type defined, you can extract it into a
 standalone type and reuse it across your code.
 
 **How to use:**
-Invoke the _Refactor this_ feature, _Ctrl + Alt + Shift + T on
-Windows/Linux_, and _^ + T on macOS_, on the anonymous type, then
-select the _Extract type_ from the list of available
-refactorings.
+Invoke the _Refactor this_ feature, <kbd>^T</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+T</kbd> (Windows/Linux), on the anonymous type, then select the _Extract type_ from the list of available refactorings.
 
-Give it a name and start reusing the newly created type in your
-code.
-
-<span class="tag is-rounded">New in 2021.1</span>
+Give it a name and start reusing the newly created type in your code.

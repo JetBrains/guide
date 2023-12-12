@@ -112,7 +112,7 @@ JavaScript development is usually a bunch of switching between the editor, the b
 Let's stay _in the IDE_ to focus on our code, and observe our code through tests instead of a browser reload.
 
 First, let's get our code and our tests side-by-side.
-Use `Find Action` (`Shift-Ctrl-A` Win/Linux, macOS `Shift-Cmd-A`) and type in `Split Right`.
+Use `Find Action` <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) and type in `Split Right`.
 This gives us a left and right side editor without needing tabs.
 On the left, open `App.tsx` and keep `App.test.tsx` on the right.
 We can now see `function App` alongside our tests.

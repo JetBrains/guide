@@ -18,7 +18,7 @@ In this step, we are going to talk about refactoring. Ever wish your IDE could d
 
 How many times does your work involve changing the signature of a given method? As easy as it sounds, changing a method signature can have a deep impact in your code and break your program in multiple places. The _change signature_ refactoring helps you safely change a method signature, including changing its name; adding, removing, and reordering parameters; and assigning default values to the parameters.
 
-Let’s start by changing its signature of a method name. We will add a new parameter here. The easiest approach is to do it inline. When you do this, PyCharm already gives you a yellow light bulb and a refactoring indication in the gutter. To access it use (**⌥⏎** | **Alt+Enter**).
+Let’s start by changing its signature of a method name. We will add a new parameter here. The easiest approach is to do it inline. When you do this, PyCharm already gives you a yellow light bulb and a refactoring indication in the gutter. To access it use <kbd>⌥⇧⏎</kbd> (macOS) / <kbd>Shift+Alt+Enter</kbd> (Windows/Linux).
 
 <img src="update-usages.png" alt="Update Usages" width="600"/>
 
@@ -40,7 +40,7 @@ We'll use the first option which is **Update usages to reflect signature change�
 
 Inplace refactorings are great, but PyCharm can also help you with much more robust refactoring techniques such as ‘Extract Method’. The Extract Method refactoring lets you take a code fragment, group it into a method, and replace the old code with a method call.
 
-To extract a method you can either use (**⌥⌘M** |**Ctrl+Alt+M**), or the **Refactor This** menu which is (**⌃T**| **Ctrl+Alt+Shift+T**). Let’s take this code fragment as an example. Let's select it, and invoke the ‘Refactor this’ men and choose **Extract Method**.
+To extract a method you can either use <kbd>⌥⌘M</kbd> (macOS) / <kbd>Ctrl+Alt+M</kbd> (Windows/Linux), or the **Refactor This** menu which is <kbd>^T</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+T</kbd> (Windows/Linux). Let’s take this code fragment as an example. Let's select it, and invoke the ‘Refactor this’ men and choose **Extract Method**.
 
 <img src="refactor-this.png" alt="Refactor This" width="400"/>
 

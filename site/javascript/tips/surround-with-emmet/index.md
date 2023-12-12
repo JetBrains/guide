@@ -21,5 +21,4 @@ animatedGif:
   height: 300
 ---
 
-Press _Cmd/Ctrl+Alt+J_ and select _Emmet_ to surround a block of code with an Emmet template.
-This also allows you to wrap individual lines if you’re using \* in the abbreviation.
+Press <kbd>⌘⌥J</kbd> (macOS) / <kbd>Ctrl+Alt+J</kbd> (Windows/Linux) and select _Emmet_ to surround a block of code with an Emmet template. This also allows you to wrap individual lines if you’re using \* in the abbreviation.

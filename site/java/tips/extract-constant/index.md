@@ -18,6 +18,6 @@ seealso:
 video: "https://youtu.be/uVj8uQ35EXM"
 ---
 
-Highlight the value that you want to extract to a constant and press **⌥⌘C** (macOS), or **Ctrl+Alt+C** (Windows/Linux), to extract it.
+Highlight the value that you want to extract to a constant and press <kbd>⌥⌘C</kbd> (macOS) / <kbd>Ctrl+Alt+C</kbd> (Windows/Linux), to extract it.
 
 Extracting constants can be useful in improving the readability of your code.

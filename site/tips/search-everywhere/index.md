@@ -30,13 +30,13 @@ Lots of other choices: Recent Files, Recent Locations, bookmarks, keeping a thou
 
 ## The Solution
 
-Press Shift-Shift for Search Everywhere. The one IDE entry point to find everything. Type a string, make a selection, and jump to the target.
+Press <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux) for Search Everywhere. The one IDE entry point to find everything. Type a string, make a selection, and jump to the target.
 
 To dismiss the popup, press Escape. You can jump to a file by putting in the name of a file, not something in the file. You can type parts of a file path, to save some time. Those tabs show the kinds of things that can be searched. Hit tab to go Classes, then again to go to Files.
 
 Mouseover on the tabs to show key bindings to open directly. “Symbols” is a favorite. Actions…the next tip. Want more power? Here’s three bonus tips:
 
-- This checkbox controls how widely Search Everywhere goes looking. Press Shift-Shift again to toggle it to checked, then again to unchecked.
+- This checkbox controls how widely Search Everywhere goes looking. Press <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux) again to toggle it to checked, then again to unchecked.
 - Use filter… to restrict results by certain criteria, per-tab.
 - Click “Open in Find Tool Window” to get the full “find” treatment.
 

@@ -33,7 +33,7 @@ When working with ReSharper or Rider, one keyboard shortcut should become automa
 
 The <kbd>Alt+Enter</kbd> menu is the gateway to a lot of ReSharper and Rider functionality, including applying quick fixes for code inspections.
 
-If your keyboard caret is placed on a piece of code and you see a yellow or red light bulb (💡), you can find out about the inspection and potential resolutions by pressing <kbd>Alt+Enter</kbd>, which brings up a menu with quick fixes (at the top), other actions that apply in the current context, and information about the inspection that was triggered.
+If your keyboard caret is placed on a piece of code and you see a yellow or red light bulb (💡), you can find out about the inspection and potential resolutions by pressing <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (VS Windows/Linux), which brings up a menu with quick fixes (at the top), other actions that apply in the current context, and information about the inspection that was triggered.
 
 In the following example, a non-nullable property in C# is not initialized. ReSharper and Rider offer quick fixes to initialize it from a constructor, change it to being nullable, suppress the warning in code, and more:
 

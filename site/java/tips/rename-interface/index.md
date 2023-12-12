@@ -18,8 +18,8 @@ seealso:
 video: "https://youtu.be/a6JD7alClDY"
 ---
 
-Press **⇧F6** (macOS), or **Shift+F6** (Windows/Linux), to rename anything in IntelliJ IDEA, including interfaces. Everything that uses that interface will also be renamed.
+Press <kbd>⇧F6</kbd> (macOS) / <kbd>Shift+F6</kbd> (Windows/Linux), to rename anything in IntelliJ IDEA, including interfaces. Everything that uses that interface will also be renamed.
 
 **Pro tip:**
 
-You can use **⌥⇧O** (macOS), or **Alt+Shift+O** (Windows/Linux), to expand the inlay hints to also consider Comments and Text.
+You can use <kbd>⌥⇧O</kbd> (macOS) / <kbd>Alt+Shift+O</kbd> (Windows/Linux), to expand the inlay hints to also consider Comments and Text.

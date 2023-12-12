@@ -18,6 +18,4 @@ It works in places such as the _Project_ or the _Changes view_ tool windows, and
 
 **How to use:**
 
-Press _Alt + F1 on Windows/Linux_ or _⌥ + F1 on macOS_.
-
-<span class="tag is-rounded">New in 2017.3</span>
+Press <kbd>⌥F1</kbd> (macOS) / <kbd>Alt+F1</kbd> (Windows/Linux).

@@ -25,7 +25,4 @@ video: >-
 
 **Optimize Imports** is enabled by default in _Reformat Code_.
 
-You can invoke it manually via _Ctrl + Alt + L on Windows/Linux_
-or _⌘ + ⌥ + L on macOS_.
-
-<span class="tag is-rounded">New in 2017.3</span>
+You can invoke it manually via <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux).

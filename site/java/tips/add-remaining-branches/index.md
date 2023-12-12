@@ -11,4 +11,4 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/7R1b5G3yx8U"
 ---
 
-When a Kotlin expression requires us to cover all the possible options for a parameter, we can use **⌥⏎** (macOS), or **Alt+Return** (Windows/Linux), to generate all the branches automatically.
+When a Kotlin expression requires us to cover all the possible options for a parameter, we can use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), to generate all the branches automatically.

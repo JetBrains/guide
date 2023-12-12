@@ -15,6 +15,6 @@ seealso:
 video: "https://youtu.be/hFS83M8tiEM"
 ---
 
-Use ⌘⇧A (macOS), Ctrl+Shift+A (Windows/Linux) for Find Actions and type in the action you'd like to assign a keyboard shortcut to. Then use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux) and type the keys you want to trigger that action in the future.
+**⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows and Linux) for Find Actions and type in the action you'd like to assign a keyboard shortcut to. Then use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and type the keys you want to trigger that action in the future.
 
 Enjoy your new shortcut!

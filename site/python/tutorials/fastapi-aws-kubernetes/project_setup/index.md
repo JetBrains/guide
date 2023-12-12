@@ -15,17 +15,13 @@ video: "https://www.youtube.com/watch?v=_AFwFvGnEpY"
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-In this tutorial we are going to set up the FastAPI project with PyCharm. We are
-going to use the PyCharm Professional EAP **2021.3** which includes a FastAPI project type. EAP stands
-for **Early Access Program** but very soon it will be part of the stable release.
+In this tutorial we are going to set up the FastAPI project with PyCharm. We are going to use the PyCharm Professional EAP **2021.3** which includes a FastAPI project type. EAP stands for **Early Access Program** but very soon it will be part of the stable release.
 
 - **Note**: Just for your information, I am running this entire project in a virtual machine through VMWare workstation which has Ubuntu 20.04 LTS
 
 # Virtual Environment
 
-Let’s begin. So, before going ahead we have to create a virtual environment.
-If you are interested you can even create a virtual environment from PyCharm itself, but I
-would like to go with the terminal.
+Let’s begin. So, before going ahead we have to create a virtual environment. If you are interested you can even create a virtual environment from PyCharm itself, but I would like to go with the terminal.
 
 ```
 python3 -m venv FastEnv
@@ -39,8 +35,7 @@ Once environment has been successfully created, we will move ahead with PyCharm.
 
 ![jetbrains_toolbox](./images/toolbox.png)
 
-So, for running PyCharm in my system, I normally use
-the [Toolbox](https://www.jetbrains.com/toolbox-app/) offered by Jetbrains.
+So, for running PyCharm in my system, I normally use the [Toolbox](https://www.jetbrains.com/toolbox-app/) offered by Jetbrains.
 
 Definitely a great tool for saving time & effort.
 
@@ -68,12 +63,9 @@ I am going to change the project location to ecommerce.
 
 ![step4](./steps/step4.png)
 
-I am going to click on the previously configured interpreter. It has automatically
-picked up the location, this is because I have used the same environment name for
-a different project earlier.
+I am going to click on the previously configured interpreter. It has automatically picked up the location, this is because I have used the same environment name for a different project earlier.
 
-There are many flavours provided by PyCharm for setting up
-the interpreter like Docker, remote SSH, WSL etc.
+There are many flavours provided by PyCharm for setting up the interpreter like Docker, remote SSH, WSL etc.
 
 ![step5](./steps/step5.png)
 
@@ -85,8 +77,7 @@ Our project got successfully bootstrapped. PyCharm has generated two files: `mai
 
 The `main.py` contains two apis : `root` and `say_hello`
 
-The `root` is going to return a json response with a message
-hello world and the `say_hello` function returns a string
+The `root` is going to return a json response with a message hello world and the `say_hello` function returns a string
 which accepts a parameter name from the user.
 
 If you have observed then you can see that it took only 8 lines of code to write our first API.
@@ -112,8 +103,7 @@ Yes, it works fine. I got the response Hello World.
 
 # FastAPI Docs
 
-FastAPI also generates automatic API docs for us at path **/docs**. It uses
-the [OpenAPI](https://www.openapis.org/) standard for defining API.
+FastAPI also generates automatic API docs for us at path **/docs**. It uses the [OpenAPI](https://www.openapis.org/) standard for defining API.
 
 It uses two flavours: [Swagger UI](https://swagger.io/tools/swagger-ui/) &
 [ReDoc](https://github.com/Redocly/redoc).
@@ -128,8 +118,7 @@ And yes, it works. You can see the response message **“Hello Sample”**
 
 ![step13](./steps/step13.png)
 
-You can do a lot of things with docs, if you want to play around then definitely
-check the [official documentation](https://fastapi.tiangolo.com/).
+You can do a lot of things with docs, if you want to play around then definitely check the [official documentation](https://fastapi.tiangolo.com/).
 
 ![step14](./steps/step14.png)
 
@@ -141,15 +130,13 @@ have been updated.
 
 ![step15](./steps/step15.png)
 
-You can also disable it while your application is running in production, so you don’t want to
-expose docs to the outside world.
+You can also disable it while your application is running in production, so you don’t want to expose docs to the outside world.
 
 ![step16](./steps/step16.png)
 
 You can see now it's showing Not Found, this is really cool.
 
-You can change path name in `docs_url` to point towards a
-different path name, completely up to you.
+You can change path name in `docs_url` to point towards a different path name, completely up to you.
 
 ![step17](./steps/step17.png)
 
@@ -161,13 +148,11 @@ Now, you can observe in the docs that now it needs integer to be passed instead 
 
 ![step19](./steps/step19.png)
 
-Even if I pass a string, it’s not going to accept it. You don’t even
-need to write a separate validation for it.
+Even if I pass a string, it’s not going to accept it. You don’t even need to write a separate validation for it.
 
 Thanks to [Pydantic](https://pydantic-docs.helpmanual.io/) &
 [type-hints](https://docs.python.org/3/library/typing.html), this makes life easy.
 
 I hope you are going to explore more amazing features provided by FastAPI.
 
-In the next tutorial we are going to look into integrating FastAPI with
-Postgres along-with outlining our project.
+In the next tutorial we are going to look into integrating FastAPI with Postgres along-with outlining our project.

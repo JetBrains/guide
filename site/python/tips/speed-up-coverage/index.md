@@ -15,17 +15,11 @@ cardThumbnail: ./card.png
 video: "https://www.youtube.com/watch?v=OCH_gPfrvzw"
 ---
 
-Coverage is a boon: it lets you know how much of your code has tests and
-better, which lines in which files don't.
+Coverage is a boon: it lets you know how much of your code has tests and better, which lines in which files don't.
 
-That comes at a price: instrumentation takes a while. You can speed
-up `coverage` by telling it to not look in places you don't care about:
-your virtual environment's dependencies, your project's `tests` directory
-itself, `.tox` directories, etc. You'll also get more accurate percentages.
+That comes at a price: instrumentation takes a while. You can speed up `coverage` by telling it to not look in places you don't care about: your virtual environment's dependencies, your project's `tests` directory itself, `.tox` directories, etc. You'll also get more accurate percentages.
 
-This is done with a
-[`.coveragerc` configuration file](https://coverage.readthedocs.io/en/coverage-5.0.4/config.html),
-which has lots of options.
+This is done with a [`.coveragerc` configuration file](https://coverage.readthedocs.io/en/coverage-5.0.4/config.html), which has lots of options.
 
 PyCharm though is finicky about this, hence this tip:
 

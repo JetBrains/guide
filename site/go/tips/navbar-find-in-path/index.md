@@ -26,9 +26,6 @@ Closed the _Project Tool Window_ and need to find a file somewhere in the projec
 
 **How to use:**
 
-Activate the **Navigation Bar**, _Alt + Home on Windows/Linux_ or _⌘ + ↑ on macOS_.
+Activate the **Navigation Bar**, <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux).
 
-Then navigate to the target, and use **Find in Path**, _Ctrl + Shift + F on Windows/Linux_
-or _⌘ + ⇧ + F on macOS_, from the keyboard.
-
-<span class="tag is-rounded">New in 2017.3</span>
+Then navigate to the target, and use **Find in Path**, <kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux), from the keyboard.

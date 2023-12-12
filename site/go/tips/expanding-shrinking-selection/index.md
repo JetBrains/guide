@@ -22,8 +22,6 @@ Selected too much, or using an already existing selection, and want to reduce th
 
 **How to use:**
 
-Press _Ctrl + W on Windows/Linux_ and _⌥ + ↑ on macOS_, to use **Extend Selection**.
+Press <kbd>⌥↑</kbd> (macOS) / <kbd>Ctrl+W</kbd> (Windows/Linux), to **Extend Selection**.
 
-**Shrink Selection** has a similar shortcut, _Ctrl + Shift + W on Windows/Linux_ and _⌥ + ↓ on macOS_.
-
-<span class="tag is-rounded">New in 2017.3</span>
+Press <kbd>⌥↓</kbd> (macOS) / <kbd>Ctrl+Shift+W</kbd> (Windows/Linux) to **Shrink Selection**.

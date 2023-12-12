@@ -26,7 +26,7 @@ We can copy the token into the **Token** field in the popup and click **Log In**
 
 Alternatively, we can use an existing token, as long as it has the required scopes.
 
-We can also log in to our GitLab account in the **Settings**. Open the Settings (**⌘,** on macOS | **Ctrl+Alt+S** on Windows/Linux) and go to **Version Control > GitLab**. Click **Add Account** (**⌘N** on macOS | **Alt+Insert** on Windows/Linux) to add an account if there is no account logged in, or click the + button at the top left to add an account. In the popup, add the **Server** if needed, paste the token from GitLab into the **Token** field in the popup and click **Log In**.
+We can also log in to our GitLab account in the **Settings**. Open the Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and go to **Version Control > GitLab**. Click **Add Account** <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) to add an account if there is no account logged in, or click the + button at the top left to add an account. In the popup, add the **Server** if needed, paste the token from GitLab into the **Token** field in the popup and click **Log In**.
 
 ![Add GitLab account in Settings](add-account.png)
 

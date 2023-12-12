@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 
 ## Reformatting Before Commit
 
-If you always want to reformat code in this Project before you commit it, you can do this with the cog in the Commit Tool Window which is invoked with **⌘0** (macOS), or **Ctrl+0** (Windows/Linux):
+If you always want to reformat code in this Project before you commit it, you can do this with the cog in the Commit Tool Window which is invoked with <kbd>⌘0</kbd> (macOS) / <kbd>Alt+0</kbd> (Windows/Linux):
 
 ![Cog in the Commit Tool Window](amend-cog.png)
 

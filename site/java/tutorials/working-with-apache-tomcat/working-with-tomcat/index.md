@@ -23,11 +23,11 @@ public String customWelcome(@PathParam("name") String name) {
 }
 ```
 
-2. Stop your Tomcat server from running with **⌘F2** (macOS), or **Ctrl+F2** (Windows/Linux) because we're going to make some changes to our Run Configuration before we restart the server.
+2. Stop your Tomcat server from running with <kbd>⌘F2</kbd> (macOS) / <kbd>Ctrl+F2</kbd> (Windows/Linux) because we're going to make some changes to our Run Configuration before we restart the server.
 3. In your Run Window, right-click on `Tomcat 10.x.x` (or your version) then select **Edit Configurations**. You can also do this with **⇧F4** (macOS), or **Shift+F4** (Windows/Linux).
 4. Clear the **After launch** checkbox if you'd rather IntelliJ IDEA not open up a browser for you automatically. You might want to work with the HTTP client instead given it's a RESTful application. You can also specify VM options to pass in if required.
 5. Save any configuration changes that you want to make and press **OK**.
-6. Now we’re ready to restart our Tomcat server with **^R** (macOS), or **Shift+F10** (Windows/Linux) to test the new POST method. We're going to make a POST request right in the IDE using the HTTP Client. To bring up the HTTP client, use Search Everywhere **⇧** (macOS), or **Shift+Shift** (Windows/Linux) and type in `http` then select **HTTP Client**.
+6. Now we’re ready to restart our Tomcat server with <kbd>⌃⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+F10</kbd> (Windows/Linux) to test the new POST method. We're going to make a POST request right in the IDE using the HTTP Client. To bring up the HTTP client, use Search Everywhere <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux) and type in `http` then select **HTTP Client**.
 7. Enter the following code to test your POST method (change the name at the end to yours):
 
 ```html

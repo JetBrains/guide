@@ -16,4 +16,4 @@ seealso:
 video: "https://youtu.be/vX05utYQXXQ"
 ---
 
-Access **Structural Search** from the **Search Everywhere** (**⇧⇧**) dialog, typing in "structural" and select **Search Structurally**. This method of searching your project is a very powerful way of going straight to your goal!
+Access **Structural Search** from the <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux) dialog, typing in "structural" and select **Search Structurally**. This method of searching your project is a very powerful way of going straight to your goal!

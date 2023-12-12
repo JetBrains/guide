@@ -14,11 +14,11 @@ In this tutorial we created two different Live Templates, one from scratch and o
 
 ## Shortcuts
 
-| Name                               | macOS Shortcut | Windows Shortcut |
-| ---------------------------------- | -------------- | ---------------- |
-| Cut a whole line to your clipboard | **⌘X**         | **Ctrl+X**       |
-| Settings and Preferences           | **⌘,**         | **Ctrl+Alt+S**   |
-| Run your application               | **⌘J**         | **Ctrl+J**       |
+| Name                               | macOS Shortcut | Windows Shortcut      |
+| ---------------------------------- | -------------- | --------------------- |
+| Cut a whole line to your clipboard | <kbd>⌘X</kbd>  | <kbd>Ctrl+X</kbd>     |
+| Settings and Preferences           | <kbd>⌘,</kbd>  | <kbd>Ctrl+Alt+S</kbd> |
+| Run your application               | <kbd>⌘J</kbd>  | <kbd>Ctrl+J</kbd>     |
 
 ## Useful Links
 

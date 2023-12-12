@@ -14,4 +14,4 @@ seealso:
 video: "https://youtu.be/Ww2pLAGtWrA"
 ---
 
-Press **⌃⇧R** (macOS), or **Ctrl+Shift+F10** (Windows/Linux), to run the file in its current context.
+Press <kbd>⌃⇧R<kbd/> (macOS) / <kbd>Ctrl+Shift+F10</kbd> (Windows/Linux), to run the file in its current context.

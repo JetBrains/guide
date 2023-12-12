@@ -21,6 +21,4 @@ Use the **Navigation Bar** to move around files, even when the whole UI is hidde
 
 **How to use:**
 
-Bring the **Navigation Bar**, _Alt + Home on Windows/Linux_ or _⌘ + ↑ on macOS_.
-
-<span class="tag is-rounded">New in 2017.3</span>
+Bring the **Navigation Bar**, <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux).

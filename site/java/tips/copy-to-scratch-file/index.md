@@ -16,4 +16,4 @@ seealso:
 video: "https://youtu.be/lfVFK6kuECg"
 ---
 
-You can use **⇧⌘N** (macOS), or **Ctrl+Alt+Shift+Insert** (Windows/Linux) to create a new scratch file. If you have content selected then the new scratch file will contain that content.
+You can use <kbd>⇧⌘N</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+Insert</kbd> (Windows/Linux) to create a new scratch file. If you have content selected then the new scratch file will contain that content.

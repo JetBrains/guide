@@ -18,10 +18,6 @@ video: >-
 _Language-aware line adding, no muss no fuss._
 
 **How to use:**
-Press _Shift + Enter on Windows/Linux_ or _⇧ + Enter on macOS_,
-and you can add a line and place the cursor on it.
+Press <kbd>⇧⏎</bd> (macOS) / <kbd>Shift+Enter</kbd> (Windows/Linux), and you can add a line and place the cursor on it.
 
-Press _Ctrl + Alt + Enter on Windows/Linux_ or _⌘ + ⌥ + Enter on macOS_
-to add a line above.
-
-<span class="tag is-rounded">New in 2017.3</span>
+Press <kbd>⌘⌥⏎</kbd> (macOS) / <kbd>Ctrl+Alt+Enter</kbd> (Windows/Linux) to add a line above.

@@ -15,20 +15,12 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/k7P__ZhUv-g"
 ---
 
-People love tabs. It's the default way in PyCharm to jump around
-between the few files you are working on for a task.
+People love tabs. It's the default way in PyCharm to jump around between the few files you are working on for a task.
 
 But tabs have downsides:
 
-- _Lots of mousing_. Sure, you can learn some keystrokes to move
-  between tabs, but they are a visual metaphor, and people
-  instinctively use the mouse.
+- _Lots of mousing_. Sure, you can learn some keystrokes to move between tabs, but they are a visual metaphor, and people instinctively use the mouse.
 
-- _Clutter_. Before long you have tons of tabs open and then need
-  other machinery to help deal with tabs...which you used to
-  help deal with files.
+- _Clutter_. Before long you have tons of tabs open and then need other machinery to help deal with tabs...which you used to help deal with files.
 
-In this tip we show turning off tabs as a prelude to other tips
-related to keyboard-centric navigation. We show navigating through
-preferences to the action, as well as searching for the action
-and even setting it in the popup.
+In this tip we show turning off tabs as a prelude to other tips related to keyboard-centric navigation. We show navigating through preferences to the action, as well as searching for the action and even setting it in the popup.

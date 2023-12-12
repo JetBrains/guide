@@ -20,6 +20,6 @@ seealso:
 video: "https://youtu.be/wSuqsDyX2nc"
 ---
 
-Press **⌥⌘N** (macOS), or **Ctrl+Alt+N** (Windows/Linux), to inline a method.
+Press <kbd>⌥⌘N</kbd> (macOS) / <kbd>Ctrl+Alt+N</kbd> (Windows/Linux), to inline a method.
 
 You can inline methods, variables, fields, and constants with the same shortcut.

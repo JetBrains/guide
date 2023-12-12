@@ -17,7 +17,7 @@ There is no shortcut to open the Build tool window. We can open it by clicking *
 
 ![Quick Launch Maven](quick-launch-maven.png)
 
-Alternatively, we can open it by using Recent Files, **⌘E** (on Mac) or **Ctrl+E** (on Windows/Linux), and typing "gradle" or "maven", or the name of your build system.
+Alternatively, we can open it by using Recent Files, <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux), and typing "gradle" or "maven", or the name of your build system.
 
 ![Recent Files Gradle](recent-files-gradle.png)
 

@@ -14,4 +14,4 @@ seealso:
 video: "https://youtu.be/LWQsV7YRtg8"
 ---
 
-Use F2 (macOS/Windows/Linux) to navigate to the next error and then use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to get suggestions on how to fix the typo.
+Use F2 (macOS/Windows/Linux) to navigate to the next error and then use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (VS Windows/Linux), to get suggestions on how to fix the typo.

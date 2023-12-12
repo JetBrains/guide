@@ -13,4 +13,4 @@ cardThumbnail: ./card.png
 screenshot: ./card.jpg
 ---
 
-In TypeScript, press Cmd on macOS or Ctrl on Windows and Linux and hover over a symbol to see its type.
+In TypeScript, press <kbd>⌘</kbd> (macOS) / <kbd>Ctrl</kbd> (Windows/Linux) and hover over a symbol to see its type.

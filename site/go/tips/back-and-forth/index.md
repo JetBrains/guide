@@ -20,8 +20,6 @@ the code path you are exploring while navigating from one symbol to another.
 
 **How to use:**
 
-To go **Backward**, _Ctrl + Alt + Left on Windows/Linux_ or _⌘ + [ on macOS_.
+To go **Backward**, <kbd>⌘\[</kbd> (macOS) / <kbd>Ctrl+Alt+Left Arrow</kbd> (Windows/Linux).
 
-To go **Forward**, _Ctrl + Alt + Right on Windows/Linux_ or _⌘ + ] on macOS_.
-
-<span class="tag is-rounded">New in 2017.3</span>
+To go **Forward**, <kbd>⌘\]</kbd> / (macOS) <kbd>Ctrl+Alt+Right Arrow</kbd> (Windows/Linux).

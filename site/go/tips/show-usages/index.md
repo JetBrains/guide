@@ -14,11 +14,8 @@ video: >-
 
 The **Show usages** feature allows you to quickly answer the question "Where's this element used?"
 
-It will open a pop-up that you can quickly
-use to navigate/filter or otherwise dismiss with the results you are looking for.
+It will open a pop-up that you can quickly use to navigate/filter or otherwise dismiss with the results you are looking for.
 
 **How to use:**
 
-Press _Ctrl + Alt + F7 on Windows/Linux_, _⌥ + ⌘ + F7 on macOS_.
-
-<span class="tag is-rounded">New in 2017.3</span>
+Press <kbd>⌥⌘F7</kbd> (macOS) / <kbd>Ctrl+Alt+F7</kbd> (Windows/Linux).

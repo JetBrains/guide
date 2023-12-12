@@ -19,8 +19,7 @@ In this tutorial we are going to work on Unit Testing using [Pytest](https://doc
 
 # AnyIO
 
-As you can see on my screen, recently FastAPI introduced **[AnyIO](https://anyio.readthedocs.io/en/stable/)**. AnyIO is an asynchronous networking
-and concurrency library that works on top of either asyncio or [Trio](https://trio.readthedocs.io/en/stable/).
+As you can see on my screen, recently FastAPI introduced **[AnyIO](https://anyio.readthedocs.io/en/stable/)**. AnyIO is an asynchronous networking and concurrency library that works on top of either asyncio or [Trio](https://trio.readthedocs.io/en/stable/).
 
 ![step1](./steps/step1.png)
 
@@ -55,8 +54,7 @@ Coming back to PyCharm, as you know for testing we need to have a separate test 
 
 I will create a new package called **tests**.
 
-I will create a new file under root and name it **conf_test_db**. Here we are going to set up
-the engine for our test database.
+I will create a new file under root and name it **conf_test_db**. Here we are going to set up the engine for our test database.
 
 ![step3](./steps/step3.png)
 
@@ -109,19 +107,15 @@ As you can see we are trying to override the dependencies.
 
 As per the FastAPI documentation: There are some scenarios where you might want to override a dependency during testing.
 
-You don't want the original dependency to run (nor any of the sub-dependencies it might have). Instead, you want
-to provide a different dependency that will be used only during tests (possibly only some specific tests), and
-will provide a value that can be used where the value of the original dependency was used.
+You don't want the original dependency to run (nor any of the sub-dependencies it might have). Instead, you want to provide a different dependency that will be used only during tests (possibly only some specific tests), and will provide a value that can be used where the value of the original dependency was used.
 
 Next, we will be creating a file name **conftest** under **tests** directory. This will contain the base config for our pytest.
 
-I will do necessary imports and along-with that I will create a pytest
-fixture which will create a dummy user before our test runs.
+I will do necessary imports and along-with that I will create a pytest fixture which will create a dummy user before our test runs.
 
 ![step6](./steps/step6.png)
 
-The purpose of a test fixture is to ensure that there is a well known and fixed environment in
-which tests are run so that results are repeatable.
+The purpose of a test fixture is to ensure that there is a well known and fixed environment in which tests are run so that results are repeatable.
 
 Examples of fixtures:
 
@@ -131,9 +125,7 @@ Examples of fixtures:
 
 ![step7](./steps/step7.png)
 
-You can see we have set auto use to True. As per pytest documentation, Sometimes you may want to have a
-fixture (or even several) that you know all your tests will depend on. **“Autouse”** fixtures are a convenient
-way to make all tests automatically request them.
+You can see we have set auto use to True. As per pytest documentation, Sometimes you may want to have a fixture (or even several) that you know all your tests will depend on. **“Autouse”** fixtures are a convenient way to make all tests automatically request them.
 
 And finally after the tests are done we will remove the user from the db.
 
@@ -172,8 +164,7 @@ I will create different modules and place them under tests. We will begin first 
 
 I will do the necessary imports, and then I will create a function to test all users.
 
-I will retrieve the access token and pass it in the api headers. If everything is good then I
-will get a 200 status code. It’s a very basic test of what I am trying to do.
+I will retrieve the access token and pass it in the api headers. If everything is good then I will get a 200 status code. It’s a very basic test of what I am trying to do.
 
 ![step9](./steps/step9.png)
 
@@ -211,8 +202,7 @@ I will click on the plus (+) sign and add pytest.
 
 ![step12](./steps/step12.png)
 
-I am going to provide a name and set target to custom and finally
-update the working directory. Make sure it’s pointing to the correct python interpreter.
+I am going to provide a name and set target to custom and finally update the working directory. Make sure it’s pointing to the correct python interpreter.
 
 ![step13](./steps/step13.png)
 
@@ -228,8 +218,7 @@ Let’s cover the remaining modules.
 
 We will now write the unit test for the user registration.
 
-I am using a faker library, which helps me in getting dummy names, email, password etc. [Faker](https://faker.readthedocs.io/en/master/)
-is basically a Python package that generates fake data for you.
+I am using a faker library, which helps me in getting dummy names, email, password etc. [Faker](https://faker.readthedocs.io/en/master/) is basically a Python package that generates fake data for you.
 
 ```
 pip install Faker==8.12.0
@@ -470,12 +459,9 @@ async def test_cart_listing():
 
 ![step20](./steps/step20.png)
 
-As you can see on line number 11, once you place an order successfully, you need to send an email. But this
-is something we need to do on a live server, not during a test, so I will try to do a mock which basically is
-going to return true.
+As you can see on line number 11, once you place an order successfully, you need to send an email. But this is something we need to do on a live server, not during a test, so I will try to do a mock which basically is going to return true.
 
-Mocking means **creating a fake version of an external or internal service that can stand
-in for the real one**.
+Mocking means **creating a fake version of an external or internal service that can stand in for the real one**.
 
 ```python
 import pytest
@@ -520,13 +506,11 @@ Great! 13 of 13 tests have been successfully passed, and it was quite fast.
 
 ![step21](./steps/step21.png)
 
-So, I hope you understand the testing flow. I do recommend checking the FastAPI pytest documentation
-if you want to get deeper into this topic.
+So, I hope you understand the testing flow. I do recommend checking the FastAPI pytest documentation if you want to get deeper into this topic.
 
 I also recommend checking out this book :
 
-[Python Testing with pytest](https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/), Second Edition
-written by [Brian Okken](https://twitter.com/brianokken) which is expected to be released in 2022.
+[Python Testing with pytest](https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/), Second Edition written by [Brian Okken](https://twitter.com/brianokken) which is expected to be released in 2022.
 
 ![step22](./steps/step22.jpg)
 

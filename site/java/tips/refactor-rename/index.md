@@ -18,4 +18,4 @@ seealso:
 video: "https://youtu.be/I3chLh0V44s"
 ---
 
-Rename your classes, methods, and variables using **Refactor** | **Rename**. Press **⇧F6** (on Mac) or **Shift+F6** (on Windows/Linux), type the new name and press ⏎
+Rename your classes, methods, and variables using **Refactor** | **Rename**. Press <kbd>⇧F6</kbd> (macOS) / <kbd>Shift+F6</kbd> (Windows/Linux), type the new name and press ⏎

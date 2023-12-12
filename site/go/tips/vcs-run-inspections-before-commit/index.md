@@ -16,6 +16,4 @@ Committing error-free code reduces the time it takes for reviews to go happen an
 
 **How to use:**
 
-Invoke the _Commit_ using _Ctrl + K on Windows/Linux_ and _⌘ + K on macOS_, then select the _Commit options_, and select the **Analyze code** feature.
-
-<span class="tag is-rounded">New in 2021.2</span>
+Invoke the _Commit_ using <kbd>⌘K</kbd> (macOS) / <kbd>Ctrl+K</kbd> (Windows/Linux), then select the _Commit options_, and select the **Analyze code** feature.

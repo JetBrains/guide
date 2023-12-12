@@ -28,9 +28,9 @@ plugins {
 }
 ```
 
-Remember to reload the build file's changes with **⇧⌘I** (macOS), or **Ctrl+Shift+O** (Windows/Linux).
+Remember to reload the build file's changes with <kbd>⌘⇧I</kbd> (macOS) / <kbd>Ctrl+Shift+O</kbd> (Windows/Linux).
 
-IntelliJ IDEA is aware of the plugin's source sets and their directories. Go to the [project window](https://www.jetbrains.com/help/idea/project-tool-window.html) and create a new directory in the "main" folder, using **⌘N** (macOS) or **Alt+Insert** (Windows/Linux) and selecting "Directory".
+IntelliJ IDEA is aware of the plugin's source sets and their directories. Go to the [project window](https://www.jetbrains.com/help/idea/project-tool-window.html) and create a new directory in the "main" folder, using <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) and selecting "Directory".
 
 ![New directory name suggestions](./new-directory.png)
 

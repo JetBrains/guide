@@ -22,9 +22,9 @@ Here are the IntelliJ IDEA shortcuts that we used.
 
 | Name                                                                                                                   | macOS Shortcut | Windows / Linux Shortcut |
 | ---------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------ |
-| Open / Close [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html)                       | **⌘1**         | **Alt+1**                |
-| Context Actions                                                                                                        | **⌥⏎**         | **Alt+Enter**            |
-| [Load Maven Changes](https://www.jetbrains.com/help/idea/delegate-build-and-run-actions-to-maven.html?#maven_reimport) | **⌘⇧I**        | **Ctrl+Shift+O**         |
+| Open / Close [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html)                       | <kbd>⌘1</kbd>  | <kbd>Alt+1</kbd>         |
+| Context Actions                                                                                                        | <kbd>⌥⏎</kbd>  | <kbd>Alt+Enter</kbd>     |
+| [Load Maven Changes](https://www.jetbrains.com/help/idea/delegate-build-and-run-actions-to-maven.html?#maven_reimport) | <kbd>⌘⇧I</kbd> | <kbd>Ctrl+Shift+O</kbd>  |
 
 ### Related Links
 

@@ -19,7 +19,7 @@ private int replaceWithMapToInt() {
 }
 ```
 
-Let's say you want to change your Code Style Settings so that your Stream operations are always on separate lines, and they are lined up underneath each other. Instead of going into settings, you can highlight the code and then use [intention actions](https://www.jetbrains.com/help/idea/intention-actions.html) by pressing **⌥⏎** (macOS), or **Alt+Enter** (Windows). Select **Adjust code style settings** and go to your Wrapping and Braces tab. As you make changes here, they will be previewed in your editor. Locate the _Chained method calls_ and change it to **Wrap always**:
+Let's say you want to change your Code Style Settings so that your Stream operations are always on separate lines, and they are lined up underneath each other. Instead of going into settings, you can highlight the code and then use [intention actions](https://www.jetbrains.com/help/idea/intention-actions.html) by pressing <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux). Select **Adjust code style settings** and go to your Wrapping and Braces tab. As you make changes here, they will be previewed in your editor. Locate the _Chained method calls_ and change it to **Wrap always**:
 
 ![Change Chained Method Call Wrap Always](chained-method-call-wrap-always.png)
 
@@ -38,7 +38,7 @@ private int replaceWithMapToInt() {
     }
 ```
 
-You also want all the dots to line up vertically under `.values` in this case. For this setting we'll need to go into Preferences/Settings with **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) and then type in _align_ to filter the results. Navigate to **Editor > Code Style > Java > Wrapping and Braces** and find the option called _Chained method calls_ again. This time select the **Align when multiline** checkbox:
+You also want all the dots to line up vertically under `.values` in this case. For this setting we'll need to go into Preferences/Settings with <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and then type in _align_ to filter the results. Navigate to **Editor > Code Style > Java > Wrapping and Braces** and find the option called _Chained method calls_ again. This time select the **Align when multiline** checkbox:
 
 ![Align when multi-line selected](align-when-multi-line.png)
 

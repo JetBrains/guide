@@ -13,17 +13,10 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/IqPm9RYTNBM"
 ---
 
-You made a file. You tried to choose the right filename. You then used it
-all over your project.
+You made a file. You tried to choose the right filename. You then used it all over your project.
 
 Now you've changed your mind.
 
-It's sitting there, annoying you, but you can't be bothered to find all the
-places that use it. Search and replace might find a bunch of false positives.
-You'd really like something that understood symbols, and just in imports.
+It's sitting there, annoying you, but you can't be bothered to find all the places that use it. Search and replace might find a bunch of false positives. You'd really like something that understood symbols, and just in imports.
 
-Select the file and use
-`Refactor | Rename` (`Shift-Ctrl-Alt-T, 1` Win/Linux, `Ctrl-T, 1` macOS)
-to change the name of the file and occurrences. This will also adjust VCS.
-Best of all, if you change your mind, `Undo` puts it all back as one
-editor transaction.
+Select the file and use `Refactor | Rename` <kbd>⌃T<kbd/> (macOS) / <kbd>Shift+Ctrl+Alt+T</kbd> (Windows/Linux) and then '1' to change the name of the file and occurrences. This will also adjust VCS. Best of all, if you change your mind, `Undo` puts it all back as one editor transaction.

@@ -26,8 +26,7 @@ To create a new project, first click on **New Project**.
 
 You’ll then see three new options appear on the menu bar on the left-hand side of the window.
 
-You can run your project in Cloud Run, which is a serverless method for running Kubernetes in Google Cloud,
-or you can choose the standard Kubernetes option, which allows you to run your code locally or in a remote GKE cluster.
+You can run your project in Cloud Run, which is a serverless method for running Kubernetes in Google Cloud, or you can choose the standard Kubernetes option, which allows you to run your code locally or in a remote GKE cluster.
 
 ![new_project2](./images/screen11.png)
 
@@ -69,13 +68,9 @@ In this image, the center of attention is the `skaffold.yaml` file.
 
 ![new_project10](./images/screen19.png)
 
-[Skaffold](https://skaffold.dev/) is a tool that handles the workflow for building, pushing, and deploying your application. You
-can use it to easily configure a local development workspace, streamline your inner development loop,
-and integrate with other tools such as [Kustomize](https://kustomize.io/) and [Helm](https://helm.sh/) to help manage your Kubernetes manifests.
+[Skaffold](https://skaffold.dev/) is a tool that handles the workflow for building, pushing, and deploying your application. You can use it to easily configure a local development workspace, streamline your inner development loop, and integrate with other tools such as [Kustomize](https://kustomize.io/) and [Helm](https://helm.sh/) to help manage your Kubernetes manifests.
 
-Skaffold simplifies common operational tasks that you perform when developing with Kubernetes, letting you focus
-on your code changes and allowing you to see them rapidly reflected in your cluster. It's the underlying engine that
-drives Cloud Code and a powerful tool for improving developer productivity in and of itself.
+Skaffold simplifies common operational tasks that you perform when developing with Kubernetes, letting you focus on your code changes and allowing you to see them rapidly reflected in your cluster. It's the underlying engine that drives Cloud Code and a powerful tool for improving developer productivity in and of itself.
 
 ![new_project11](./images/screen20.png)
 
@@ -88,8 +83,7 @@ Returning to the `skaffold.yaml` file, there are two major operations happening 
 
 ![new_project12](./images/screen21.png)
 
-If you observe line 5, Skaffold is about to perform a build operation by creating a Docker image. It is
-therefore going to look for the Dockerfile, which resides under the `src` directory as specified in the context section on line 10.
+If you observe line 5, Skaffold is about to perform a build operation by creating a Docker image. It is therefore going to look for the Dockerfile, which resides under the `src` directory as specified in the context section on line 10.
 
 Skaffold’s support goes well beyond Dockerfiles and also includes:
 
@@ -103,8 +97,7 @@ Skaffold’s support goes well beyond Dockerfiles and also includes:
 
 The good news is that you can build your Docker image using a locally installed version of Docker or you can execute the same operation in Google Cloud Build, depending on your needs.
 
-Now, moving ahead. If you look at line 13, the **deploy** section is going to apply the Kubernetes manifest files,
-which reside in the `kubernetes-manifests` directory.
+Now, moving ahead. If you look at line 13, the **deploy** section is going to apply the Kubernetes manifest files, which reside in the `kubernetes-manifests` directory.
 
 Just as is the case with the build operation, you can have multiple deployers.
 

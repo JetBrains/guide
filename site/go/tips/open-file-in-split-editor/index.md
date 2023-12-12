@@ -16,6 +16,4 @@ video: >-
 
 **How to use:**
 
-Select the file in the _Project View_ tool window or in the _Navigation Bar_ and use _Shift + Enter on Windows/Linux_ or _⇧ + Enter on macOS_ to open the file in a split editor view.
-
-<span class="tag is-rounded">New in 2020.3</span>
+Select the file in the _Project View_ tool window or in the _Navigation Bar_ and use <kbd>⇧⏎</kbd> (macOS) / <kbd>Shift+Enter</kbd> (Windows/Linux) to open the file in a split editor view.

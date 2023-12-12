@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 
 ## Introduction to Reformatting
 
-Generally when you're coding you don't need to manually format your code, IntelliJ IDEA does its best to do the right thing automatically. For example, if you press **Enter**, your caret goes into the correct place for you to start typing. The same applies if we use other shortcuts like **⇧⏎** (macOS), **Alt+Enter** (Windows/Linux) to move to the next line, or use [code generation](https://blog.jetbrains.com/idea/2020/05/code-generation/). IntelliJ IDEA will also reformat code that you paste into the IDE according to your [code style settings](https://www.jetbrains.com/help/idea/configuring-code-style.html).
+Generally when you're coding you don't need to manually format your code, IntelliJ IDEA does its best to do the right thing automatically. For example, if you press **Enter**, your caret goes into the correct place for you to start typing. The same applies if we use other shortcuts like <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to move to the next line, or use [code generation](https://blog.jetbrains.com/idea/2020/05/code-generation/). IntelliJ IDEA will also reformat code that you paste into the IDE according to your [code style settings](https://www.jetbrains.com/help/idea/configuring-code-style.html).
 
 ## Reformatting a Selection or Class
 

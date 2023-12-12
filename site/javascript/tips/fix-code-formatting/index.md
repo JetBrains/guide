@@ -16,4 +16,4 @@ animatedGif:
   height: 265
 ---
 
-Press _Ctrl+Alt+L/Cmd+Alt+L_ to automatically fix code formatting in a file.
+Press <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux) to automatically fix code formatting in a file.

@@ -44,10 +44,7 @@ For reference, you can visit the website [fastapi.tiangolo.com](https://fastapi.
 
 ![sebastian](./sebastian.png)
 
-FastAPI is developed by [Sebastian Ramirez](https://twitter.com/tiangolo), who is
-currently working in Forethought as a Staff Software Engineer. He has contributed
-code to countless open source projects like Typer & SQLModel as well as related to
-DevOps, Docker, Spark, Python, Angular and many more.
+FastAPI is developed by [Sebastian Ramirez](https://twitter.com/tiangolo), who is currently working in Forethought as a Staff Software Engineer. He has contributed code to countless open source projects like Typer & SQLModel as well as related to DevOps, Docker, Spark, Python, Angular and many more.
 
 # Kubernetes
 
@@ -55,16 +52,12 @@ DevOps, Docker, Spark, Python, Angular and many more.
 
 Image Credits : [kubernetes.io](https://kubernetes.io/)
 
-It’s not going to be only FastAPI, we are also going to play with Kubernetes, also known as
-**K8s**.
+It’s not going to be only FastAPI, we are also going to play with Kubernetes, also known as **K8s**.
 
-The [Kubernetes](https://kubernetes.io/) Project was open-sourced by Google in 2014 after using it to run
-production workloads at scale for more than a decade.
+The [Kubernetes](https://kubernetes.io/) Project was open-sourced by Google in 2014 after using it to run production workloads at scale for more than a decade.
 
-It groups containers that make up an application into logical units for
-easy management and discovery. Kubernetes builds upon 15 years of experience
-of running production workloads at Google, combined with best-of-breed ideas
-and practices from the community.
+It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon 15 years of experience
+of running production workloads at Google, combined with best-of-breed ideas and practices from the community.
 
 # Google Borg System
 
@@ -72,14 +65,11 @@ and practices from the community.
 
 Image Credits : [Google Research](https://research.google/)
 
-Google’s Borg system is a cluster manager that runs hundreds of thousands of jobs, from many thousands of different applications, across a number of clusters each with up to
-tens of thousands of machines.
+Google’s Borg system is a cluster manager that runs hundreds of thousands of jobs, from many thousands of different applications, across a number of clusters each with up to tens of thousands of machines.
 
-It achieves high utilization by combining admission control, efficient task-packing, over-commitment, and machine
-sharing with process-level performance isolation.
+It achieves high utilization by combining admission control, efficient task-packing, over-commitment, and machine sharing with process-level performance isolation.
 
-It supports high-availability applications with runtime features that minimize fault-recovery time, and scheduling policies that reduce the probability of correlated failures. Borg simplifies
-life for its users by offering a declarative job specification language, name service integration, real-time job monitoring, and tools to analyze and simulate system behavior.
+It supports high-availability applications with runtime features that minimize fault-recovery time, and scheduling policies that reduce the probability of correlated failures. Borg simplifies life for its users by offering a declarative job specification language, name service integration, real-time job monitoring, and tools to analyze and simulate system behavior.
 
 You can also say Borg is the **predecessor** to Kubernetes.
 
@@ -91,12 +81,9 @@ To know more about Borg, read the research paper : [Large-scale cluster manageme
 
 Image Credits : [Amazon Web Services](https://aws.amazon.com/)
 
-It’s not going to happen that we worked on Kubernetes, but then not deploy it
-on a live server.
+It’s not going to happen that we worked on Kubernetes, but then not deploy it on a live server.
 
-We will be deploying our application on AWS using the [EKS (Elastic Kubernetes Service](https://aws.amazon.com/eks/) and
-setting a three-node cluster along-with that, we will be also setting up [RDS](https://aws.amazon.com/rds/),
-[ElastiCache](https://aws.amazon.com/elasticache/) and a custom domain with [SSL](https://aws.amazon.com/certificate-manager/).
+We will be deploying our application on AWS using the [EKS (Elastic Kubernetes Service](https://aws.amazon.com/eks/) and setting a three-node cluster along-with that, we will be also setting up [RDS](https://aws.amazon.com/rds/), [ElastiCache](https://aws.amazon.com/elasticache/) and a custom domain with [SSL](https://aws.amazon.com/certificate-manager/).
 
 # Helm Charts
 
@@ -107,9 +94,7 @@ Image Credits: [CNCF](https://helm.sh/)
 Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application.
 Helm is a graduated project in the [CNCF (Cloud Native Computing Foundation)](https://www.cncf.io/) and is maintained by the [Helm community](https://github.com/helm/community).
 
-And finally at last, I am going to give a sneak peek into Helm Charts, where we are
-going to package our application and indeed which help software vendors and
-developers to preconfigure their applications with sensible defaults.
+And finally at last, I am going to give a sneak peek into Helm Charts, where we are going to package our application and indeed which help software vendors and developers to preconfigure their applications with sensible defaults.
 
 # Source Code
 

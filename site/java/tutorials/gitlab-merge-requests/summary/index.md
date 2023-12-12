@@ -14,16 +14,16 @@ As we've seen, we can work with GitLab Merge Requests right inside IntelliJ IDEA
 
 Here are the IntelliJ IDEA shortcuts that we used.
 
-| Name                               | macOS Shortcut | Windows / Linux Shortcut |
-| ---------------------------------- | -------------- | ------------------------ |
-| Open Settings                      | **⌘,**         | **Ctrl+Alt+S**           |
-| Add Account                        | **⌘N**         | **Alt+Insert**           |
-| Show Diff                          | **⌘D**         | **Ctrl+D**               |
-| Compare Next File                  | **⌃⇧→**        | **Alt+→**                |
-| Compare Previous File              | **⌃⇧←**        | **Alt+←**                |
-| Hide all windows / Restore windows | **⇧⌘F12**      | **Ctrl+Shift+F12**       |
-| Recent files                       | **⌘E**         | **Ctrl+E**               |
-| Refresh reviews                    | **⌘R**         | **Ctrl+F5**              |
+| Name                               | macOS Shortcut   | Windows / Linux Shortcut  |
+| ---------------------------------- | ---------------- | ------------------------- |
+| Open Settings                      | <kbd>⌘,</kbd>    | <kbd>Ctrl+Alt+S</kbd>     |
+| Add Account                        | <kbd>⌘N</kbd>    | <kbd>Alt+Insert</kbd>     |
+| Show Diff                          | <kbd>⌘D</kbd>    | <kbd>Ctrl+D</kbd>         |
+| Compare Next File                  | <kbd>⌃⇧→</kbd>   | <kbd>Alt+→</kbd>          |
+| Compare Previous File              | <kbd>⌃⇧←</kbd>   | <kbd>Alt+←</kbd>          |
+| Hide all windows / Restore windows | <kbd>⇧⌘F12</kbd> | <kbd>Ctrl+Shift+F12</kbd> |
+| Recent files                       | <kbd>⌘E</kbd>    | <kbd>Ctrl+E</kbd>         |
+| Refresh reviews                    | <kbd>⌘R</kbd>    | <kbd>Ctrl+F5</kbd>        |
 
 ### Related Links
 

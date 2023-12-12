@@ -274,7 +274,7 @@ export type CounterState = Readonly<typeof initialState>;
 ```
 
 Our `App` component needs to maintain state, which for this tutorial means a class-based component for `App`.
-Let's use `Alt-Enter` and choose `Convert to class component` to make that change.
+Let's use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and choose `Convert to class component` to make that change.
 We'll then add the generic information in `<>` and set the state, similar to what we did previously:
 
 ```typescript

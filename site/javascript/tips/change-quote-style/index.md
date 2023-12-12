@@ -20,7 +20,4 @@ animatedGif:
   height: 300
 ---
 
-With the Quote Marks option available in
-_Preferences/Settings | Editor | Code Style | CSS, SCSS or Less – Other_,
-you can configure whether double or single quotes should be used in CSS,
-SCSS, and Less files.
+With the Quote Marks option available in _Preferences/Settings | Editor | Code Style | CSS, SCSS or Less – Other_, you can configure whether double or single quotes should be used in CSS, SCSS, and Less files.

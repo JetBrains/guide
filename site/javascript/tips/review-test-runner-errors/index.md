@@ -16,4 +16,4 @@ cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 
-For a failed test, you can see the error message from the test runner on hover. Press _Alt+Shift+Enter_ to immediately start debugging the test.
+For a failed test, you can see the error message from the test runner on hover. Press <kbd>⌥⇧⏎</kbd> (macOS) / <kbd>Shift+Alt+Enter</kbd> (Windows/Linux)to immediately start debugging the test.

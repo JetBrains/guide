@@ -11,7 +11,4 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/ymtOzsmZr0E"
 ---
 
-You can expand or collapse code blocks to view a smaller subset of your class.
-
-- For macOS use ⌘- (minus sign) to collapse code and ⌘+ (plus sign) to expand code
-- For Windows/Linux use Ctrl- (minus sign) to collapse code and Ctrl+ (plus sign)to expand code
+You can expand code blocks with <kbd>⌘+</kbd> (macOS) / <kbd>Ctrl++</kbd> (Windows/Linux) or collapse them with <kbd>⌘-</kbd> (macOS) / <kbd>Ctrl+-</kbd> (Windows/Linux).

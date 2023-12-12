@@ -22,4 +22,4 @@ animatedGif:
   height: 300
 ---
 
-Use _Alt+Enter_ to switch between different color formats in CSS.
+Use \_<kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to switch between different color formats in CSS.

@@ -14,5 +14,4 @@ cardThumbnail: ./card.png
 screenshot: ./tip.jpeg
 ---
 
-Hold the _Cmd/Ctrl_ key and hover over a package name in _package.json_ to
-see its description and the latest available version.
+Hold <kbd>⌘</kbd> (macOS) / <kbd>Ctrl</kbd> (Windows/Linux) and hover over a package name in _package.json_ to see its description and the latest available version.

@@ -17,4 +17,4 @@ seealso:
 video: "https://youtu.be/BvqnP2RZjOM"
 ---
 
-You can run a process with **⌃R** (macOS), or **Shift+F10** (Windows/Linux). To stop a process, you can use **⌘F2** on macOS, or **Ctrl+F2** on Windows/Linux.
+You can run a process with <kbd>⌃R</kbd> (macOS) / <kbd>Shift+F10</kbd> (Windows/Linux). To stop a process, you can use <kbd>⌘F2</kbd> (macOS) / <kbd>Ctrl+F2</kbd> (Windows/Linux).

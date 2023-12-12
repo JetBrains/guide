@@ -18,6 +18,4 @@ The IDE can automatically reload the page opened in a browser after you make cha
 
 First, open the file from the IDE via the icon on the upper right-side of the editor or via _View | Open in Browser | <browser name>_.
 
-Reloading is triggered whenever changes are saved in the IDE, either automatically or using Press _Ctrl + S on Windows/Linux_, _⌘ + S on macOS_, or when changes are made to a file externally.
-
-<span class="tag is-rounded">New in 2021.2</span>
+Reloading is triggered whenever changes are saved in the IDE, either automatically or using Press <kbd>⌘S</kbd> (macOS) / <kbd>Ctrl+S</kbd> (Windows/Linux), or when changes are made to a file externally.

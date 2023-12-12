@@ -15,10 +15,7 @@ video: "https://www.youtube.com/watch?v=FDaC6OkvIU8"
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-We have successfully created the user registration API. Let’s quickly move on
-and complete the remaining APIs for our User module like getting a
-list of all users, retrieving or deleting user information based on id
-or primary key.
+We have successfully created the user registration API. Let’s quickly move on and complete the remaining APIs for our User module like getting a list of all users, retrieving or deleting user information based on id or primary key.
 
 # User Listing
 
@@ -36,20 +33,13 @@ I will move to schema and create a class DisplayUser which inherits from BaseMod
 
 I will be returning **id**, **name** and **email**.
 
-We will be creating a Config class, which controls the behaviour of Pydantic,
-in this we are going to set the attribute `orm_mode=True`, which basically
-is to map the ORM Objects defined in our models. As per the FastAPI
-Documentation, without `orm_mode`, if you returned a SQLAlchemy
-model from your path operation, it wouldn't include the relationship
-data...even if you declared those relationships in your Pydantic models.
+We will be creating a Config class, which controls the behaviour of Pydantic, in this we are going to set the attribute `orm_mode=True`, which basically is to map the ORM Objects defined in our models. As per the FastAPI Documentation, without `orm_mode`, if you returned a SQLAlchemy model from your path operation, it wouldn't include the relationship data...even if you declared those relationships in your Pydantic models.
 
-But with ORM mode, as Pydantic itself will try to access the data
-it needs from attributes (instead of assuming a dict).
+But with ORM mode, as Pydantic itself will try to access the data it needs from attributes (instead of assuming a dict).
 
 You can visit this link for more information : [ORM Mode (aka Arbitrary Class Instances)](https://pydantic-docs.helpmanual.io/usage/models/#orm-mode-aka-arbitrary-class-instances)
 
-In our response model we are going to use `List`, because we will return
-a list of user objects instead of one object.
+In our response model we are going to use `List`, because we will return a list of user objects instead of one object.
 
 ```python
 @router.get('/', response_model=List[schema.DisplayUser])
@@ -79,8 +69,7 @@ After creating some dummy users, you can see we received a list of users present
 
 # Retrieving User by ID
 
-Now, let’s go back to the router and create a new endpoint to
-retrieve user details by id, basically focusing on one particular
+Now, let’s go back to the router and create a new endpoint to retrieve user details by id, basically focusing on one particular
 user information.
 
 ![step7](./steps/step7.png)
@@ -128,13 +117,9 @@ If I pass 1 it will return **Elon Musk**, 2 and 3 will return **Sample User 2** 
 
 # Delete User
 
-Let’s move back again to the router and create our last
-endpoint **delete user by id**. Same as previous, only difference...
-we won’t return any response. Instead, we delete the object from the database.
+Let’s move back again to the router and create our last endpoint **delete user by id**. Same as previous, only difference... we won’t return any response. Instead, we delete the object from the database.
 
-The response class will be the base `Response` class. You can create your own custom
-response class or when creating a FastAPI class instance or an
-APIRouter you can specify which response class to use by default.
+The response class will be the base `Response` class. You can create your own custom response class or when creating a FastAPI class instance or an APIRouter you can specify which response class to use by default.
 
 **router.py**
 

@@ -17,6 +17,4 @@ animatedGif:
   height: 300
 ---
 
-In WebStorm, you can comment and uncomment blocks of code with _⌘⇧/_
-on macOS and _Ctrl+Shift+/_ on Windows/Linux. To do the same for lines,
-use _⌘/_ or _Ctrl+/_.
+In WebStorm, you can comment and uncomment blocks of code with <kbd>⌘⇧/</kbd> (macOS) / <kbd>Ctrl+Shift+W</kbd> (Windows/Linux). To do the same for lines, use <kbd>⌘/</kbd> (macOS) / <kbd>Ctrl+/</kbd> (Windows/Linux).

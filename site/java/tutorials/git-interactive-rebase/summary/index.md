@@ -16,13 +16,13 @@ Now we know how to use git interactive rebase either from the UI or from the com
 
 Here are the IntelliJ IDEA shortcuts that we used.
 
-| Name                                                                                             | macOS Shortcut | Windows / Linux Shortcut |
-| ------------------------------------------------------------------------------------------------ | -------------- | ------------------------ |
-| [Open the Git Tool Window](https://www.jetbrains.com/help/idea/version-control-tool-window.html) | **⌘9**         | **Alt+9**                |
-| Open the Commit Window                                                                           | **⌘0**         | **Alt+0**                |
-| [Open the Terminal](https://www.jetbrains.com/help/idea/terminal-emulator.html)                  | **⌥F12**       | **Alt+F12**              |
-| Select Fixup (in the "Rebasing Commits" popup)                                                   | **⌥F12**       | **Alt+F**                |
-| Edit commit message (in the Git Log)                                                             | **F2**         | **F2**                   |
+| Name                                                                                             | macOS Shortcut  | Windows / Linux Shortcut |
+| ------------------------------------------------------------------------------------------------ | --------------- | ------------------------ |
+| [Open the Git Tool Window](https://www.jetbrains.com/help/idea/version-control-tool-window.html) | <kbd>⌘9</kbd>   | <kbd>Alt+9</kbd>         |
+| Open the Commit Window                                                                           | <kbd>⌘0</kbd>   | <kbd>Alt+0</kbd>         |
+| [Open the Terminal](https://www.jetbrains.com/help/idea/terminal-emulator.html)                  | <kbd>⌥F12</kbd> | <kbd>Alt+F12</kbd>       |
+| Select Fixup (in the "Rebasing Commits" popup)                                                   | <kbd>⌥F12</kbd> | <kbd>Alt+F</kbd>         |
+| Edit commit message (in the Git Log)                                                             | <kbd>F2</kbd>   | <kbd>F2</kbd>            |
 
 ### Git commands Used
 

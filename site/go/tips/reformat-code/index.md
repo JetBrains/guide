@@ -20,11 +20,8 @@ video: >-
   https://www.youtube.com/watch?v=-yj17Ps678k&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=89
 ---
 
-**Reformat Code** makes it a piece of cake to fix style warnings
-and make your code formatted like _go fmt_ would.
+**Reformat Code** makes it a piece of cake to fix style warnings and make your code formatted like _go fmt_ would.
 
 **How to use:**
 
-Invoke **Reformat Code** via _Ctrl + Alt + L on Windows/Linux_ or _⌘ + ⌥ + L on macOS_.
-
-<span class="tag is-rounded">New in 2017.3</span>
+Invoke **Reformat Code** via <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux).

@@ -16,6 +16,4 @@ cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 
-With the _Recent Locations popup (Cmd/Ctrl+Shift+E)_, you can preview
-the part of code and files you’ve recently opened in the editor and
-quickly get back to them.
+With the \_Recent Locations popup <kbd>⌘⇧E</kbd> (macOS) / <kbd>Ctrl+Shift+E</kbd> (Windows/Linux), you can preview the part of code and files you’ve recently opened in the editor and quickly get back to them.

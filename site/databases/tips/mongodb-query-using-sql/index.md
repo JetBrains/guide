@@ -15,4 +15,4 @@ obsoletes:
 
 Connect to a MongoDB database from the IDE, then open a _Console_ to it and write a SQL query instead of using the MongoDB format.
 
-To run it, press **Ctrl**+**Enter** on Windows/Linux or **Cmd**+**Enter** on macOS to run the query and retrieve the results.
+To run it, press <kbd>⌃⏎</kbd> (macOS) / <kbd>Ctrl+Enter</kbd> (Windows/Linux) to run the query and retrieve the results.

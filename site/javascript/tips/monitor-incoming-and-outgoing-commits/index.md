@@ -14,5 +14,4 @@ cardThumbnail: ./card.png
 screenshot: ./card.jpeg
 ---
 
-The blue icon next to the branch name in the Branches popup will let you know if this branch has any new incoming commits,
-while the green icon will let you know if the branch has outgoing commits.
+The blue icon next to the branch name in the Branches popup will let you know if this branch has any new incoming commits, while the green icon will let you know if the branch has outgoing commits.

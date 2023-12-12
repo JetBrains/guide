@@ -20,7 +20,4 @@ video: >-
 
 _From repo to project in no time._
 
-You need to evaluate a project. You need to get a fork. You're always
-getting code. Let GoLand do the clone and make the project.
-
-<span class="tag is-rounded">New in 2017.3</span>
+You need to evaluate a project. You need to get a fork. You're always getting code. Let GoLand do the clone and make the project.

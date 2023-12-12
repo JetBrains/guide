@@ -17,4 +17,4 @@ animatedGif:
   height: 300
 ---
 
-Did you know that you can extract a type alias in your TypeScript code using a familiar shortcut for the _Extract variable_ refactoring: _Cmd+Alt+V_ on macOS and _Ctrl+Alt+V_ on Windows and Linux.
+Did you know that you can extract a type alias in your TypeScript code using a familiar shortcut for the _Extract variable_ refactoring: <kbd>⌥⌘V</kbd> (macOS) / <kbd>Ctrl+Alt+V</kbd> (Windows/Linux).

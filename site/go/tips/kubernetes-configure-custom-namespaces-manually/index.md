@@ -19,5 +19,3 @@ If the plugin cannot automatically infer the available Kubernetes namespaces, no
 Go to _Settings/Preferences | Build, Execution, Deployment | Kubernetes_ and configure the namespace in the corresponding section.
 
 **Note:** You must have the <a href="https://plugins.jetbrains.com/plugin/10485-kubernetes">Kubernetes plugin</a> provided by JetBrains installed for this action to work.
-
-<span class="tag is-rounded">New in 2021.2</span>

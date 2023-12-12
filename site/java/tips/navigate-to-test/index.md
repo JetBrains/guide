@@ -19,4 +19,4 @@ seealso:
 video: "https://youtu.be/ky-LGO0_iq4"
 ---
 
-Use **⇧⌘T** (macOS), or **Ctrl+Shift+T** (Windows/Linux) to **Navigate to Test** and back again. IntelliJ IDEA will navigate to the related Test file, or suggest creating a test. It can even add some of the code constructs for the tests as well.
+You can use <kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux), to navigate to a test class and back again. IntelliJ IDEA will navigate to the related Test file, or suggest creating a test. It can even add some of the code constructs for the tests as well.

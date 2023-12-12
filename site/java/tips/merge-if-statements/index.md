@@ -15,4 +15,4 @@ seealso:
 video: "https://youtu.be/nwwAmxZ-Xyw"
 ---
 
-Sometimes your code can be reshaped to make it more readable. For example, you can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to merge or split If Statements without changing the semantics of your code.
+Sometimes your code can be reshaped to make it more readable. For example, you can use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), to merge or split If Statements without changing the semantics of your code.

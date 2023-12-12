@@ -11,7 +11,7 @@ video: "https://youtu.be/xWiKJEVRFlc"
 
 ## Configuring IntelliJ IDEA
 
-You can use **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) to display the Preferences/Settings dialog in IntelliJ IDEA.
+You can use <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) to display the Preferences/Settings dialog in IntelliJ IDEA.
 
 These are the broad categories that you can change here, but we recommend being at least a little bit familiar with IntelliJ IDEA before you change too many of them!
 

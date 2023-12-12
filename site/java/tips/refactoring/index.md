@@ -13,4 +13,4 @@ seealso:
 video: "https://youtu.be/wDkTiWhlGyE"
 ---
 
-IntelliJ IDEA supports a huge range of refactorings and associated keyboard shortcuts. Use **Refactor** this (**⌃T** on macOS, or **Ctrl+Alt+Shift+T** on Windows/Linux) to find relevant refactorings for your code.
+IntelliJ IDEA supports a huge range of refactorings and associated keyboard shortcuts. Use **Refactor** this <kbd>^T</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+T</kbd> (Windows/Linux) to find relevant refactorings for your code.

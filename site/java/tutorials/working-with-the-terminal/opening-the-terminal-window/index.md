@@ -11,7 +11,7 @@ video: "https://youtu.be/tlEkrWU0d1M?start=20"
 
 ## Opening a Terminal Window
 
-In this example we have a simple Spring Boot application that needs a running [MongoDB](https://www.mongodb.com/) database. We can [open the terminal window](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal) with **⌥F12** on macOS, or **Alt+F12** on Windows and Linux. The terminal supports all the same commands that the operating system supports.
+In this example we have a simple Spring Boot application that needs a running [MongoDB](https://www.mongodb.com/) database. We can [open the terminal window](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal) with <kbd>⌥F12</kbd> (macOS) / <kbd>Alt+F12</kbd> (Windows/Linux) on Windows and Linux. The terminal supports all the same commands that the operating system supports.
 
 If we want to start the MongoDB database instance with a [specific path for storing the data](https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/#specify-a-data-directory), we can type:
 

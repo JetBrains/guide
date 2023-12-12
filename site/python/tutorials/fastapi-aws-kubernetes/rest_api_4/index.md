@@ -17,8 +17,7 @@ Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 # ReDoc
 
-As you know FastAPI provides automatic docs support using Swagger UI. There is one more
-docs page provided by FastAPI known as **[Redoc](https://github.com/Redocly/redoc)**.
+As you know FastAPI provides automatic docs support using Swagger UI. There is one more docs page provided by FastAPI known as **[Redoc](https://github.com/Redocly/redoc)**.
 
 **Redoc** is an open-source tool for generating documentation from OpenAPI definitions.
 
@@ -42,8 +41,7 @@ You can even disable the docs along with changing the docs url path.
 
 # HTTPClient
 
-There is one more thing I would like to mention. You can test the APIs through
-PyCharm itself via [HTTPClient](https://www.jetbrains.com/help/pycharm/http-client-in-product-code-editor.html).
+There is one more thing I would like to mention. You can test the APIs through PyCharm itself via [HTTPClient](https://www.jetbrains.com/help/pycharm/http-client-in-product-code-editor.html).
 
 Click on **Tools** → **HTTP Client** → **Create Request in HTTP Client**.
 
@@ -136,8 +134,7 @@ alembic upgrade head
 
 The tables are reflecting in our database.
 
-You can observe the foreign key relationships. In cart items we have the foreign key
-with cart id and product id.
+You can observe the foreign key relationships. In cart items we have the foreign key with cart id and product id.
 
 In the cart table we have a foreign key with user id.
 
@@ -173,14 +170,11 @@ async def add_product_to_cart(product_id: int,
     return result
 ```
 
-We will also validate whether product quantity is less than
-or equal to 0. If so, then the item is out of stock.
+We will also validate whether product quantity is less than or equal to 0. If so, then the item is out of stock.
 
 ![step15](./steps/step15.png)
 
-On line 18, we will try to get the user information. For now, as a workaround
-I will provide the email manually but in the upcoming videos when we will
-be working on auth and jwt, I will get the user info from the token.
+On line 18, we will try to get the user information. For now, as a workaround I will provide the email manually but in the upcoming videos when we will be working on auth and jwt, I will get the user info from the token.
 
 Next, I will try to get cart information. If not present then we will create a new one.
 
@@ -325,16 +319,12 @@ You can see the item has been deleted. Let me verify that.
 
 ![step27](./steps/step27.png)
 
-As you can see, the "get all cart items" API has returned an empty list. That means
-our cart item was successfully deleted and now our cart is completely empty.
+As you can see, the "get all cart items" API has returned an empty list. That means our cart item was successfully deleted and now our cart is completely empty.
 
 ![step28](./steps/step28.png)
 
-I hope you understand how cart functionality works. Instead of storing cart items
-in a database you can store cart items in memory like redis, you can play with
-that completely up to you.
+I hope you understand how cart functionality works. Instead of storing cart items in a database you can store cart items in memory like redis, you can play with that completely up to you.
 
-In the next tutorial, we will work on the Order where we are going to see
-how to place an order successfully.
+In the next tutorial, we will work on the Order where we are going to see how to place an order successfully.
 
 Stay tuned!

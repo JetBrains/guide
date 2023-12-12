@@ -14,17 +14,10 @@ video: >-
 
 Need to change the case of struct tag keys?
 
-Choose between _snake_case_, _(lower) camelCase_,
-_(upper) CamelCase_, or _kebap-case_ and apply this to the whole
-struct in a few steps.
+Choose between _snake_case_, _(lower) camelCase_, _(upper) CamelCase_, or _kebap-case_ and apply this to the whole struct in a few steps.
 
 **How to use:**
 
-Place the cursor on a struct field, then invoke the
-_Context Actions_ menu via _Alt + Enter on Windows/Linux_
-or _⌥ + ⏎ on macOS_.
+Place the cursor on a struct field, then invoke the _Context Actions_ menu via <kbd>⌃⏎</kbd> (macOS) / <kbd>Ctrl+Enter</kbd> (Windows/Linux).
 
-Select the _Change field name style in tags_, and choose
-between one of the four styles available.
-
-<span class="tag is-rounded">New in 2021.1</span>
+Select the _Change field name style in tags_, and choose between one of the four styles available.

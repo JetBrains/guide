@@ -13,10 +13,6 @@ video: >-
 ---
 
 **How to use:**
-Copy a part of the JSON data in the clipboard then paste it inside
-an existing struct tag.
+Copy a part of the JSON data in the clipboard then paste it inside an existing struct tag.
 
-When the IDE asks you about converting the JSON to a Go type, press
-_Yes_ and you are done with .
-
-<span class="tag is-rounded">New in 2021.1</span>
+When the IDE asks you about converting the JSON to a Go type, press _Yes_ and you are done with .

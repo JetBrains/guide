@@ -11,7 +11,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/pt3uB0sd5kY?start=3"
 ---
 
-You can use **⌘E** (macOS), or **Ctrl+E** (Windows/Linux) again to navigate to the Maven window, and here we can see the dependencies of this project.
+You can use <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) again to navigate to the Maven window, and here we can see the dependencies of this project.
 
 ![maven-window.png](maven-window.png)
 
@@ -23,7 +23,7 @@ If the build was successful like the one in the screenshot above, you'll see Mav
 
 ![](target-directory.png)
 
-You can also run Maven goals via **Run Anything** (**⌃⌃** (macOS), or **Ctrl+Ctrl** (Windows/Linux)).
+You can also run Maven goals via **Run Anything** <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl<kbd/> (Windows/Linux)).
 
 ![](run-anything.png)
 

@@ -15,4 +15,4 @@ seealso:
 video: "https://youtu.be/3rw95Oc1nrY"
 ---
 
-Create a new record by pressing **⌘N** (macOS) or **Alt+Insert** (Windows/Linux) on the Project Window. From the "New Java Class" dialog, type the name of the record and select the "Record" type.
+Create a new record by pressing <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) on the Project Window. From the "New Java Class" dialog, type the name of the record and select the "Record" type.

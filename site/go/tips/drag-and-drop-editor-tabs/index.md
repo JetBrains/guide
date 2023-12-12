@@ -17,5 +17,3 @@ Move the editor tabs to form what layout you need, whenever you need them to.
 **How to use:**
 
 Drag and drop the editor tabs to different locations across the IDE window. Possible drop locations will be highlighted to assist you in personalizing your IDE.
-
-<span class="tag is-rounded">New in 2020.3</span>

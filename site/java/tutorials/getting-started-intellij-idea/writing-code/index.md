@@ -24,9 +24,9 @@ Writing code is an integral part of our jobs and it's worth knowing what Intelli
 
 There are lots of different types of code completion in IntelliJ IDEA including [basic](https://www.jetbrains.com/help/idea/auto-completing-code.html#basic_completion), [smart or type-based](https://www.jetbrains.com/help/idea/auto-completing-code.html#smart_type_matching_completion), [statement](https://www.jetbrains.com/help/idea/auto-completing-code.html#statements_completion), [postfix](https://www.jetbrains.com/help/idea/auto-completing-code.html#postfix_completion) and [more](https://www.jetbrains.com/help/idea/auto-completing-code.html).
 
-Basic completion should be available out-of-the-box, but if not you can use (**⌃␣** | **Ctrl+Space**) to invoke it. For smart or type-based matching completion use (**⌃⇧␣** | **Ctrl+Shift+Space**). It's worth getting use to using type-based matching completion in your code base as IntelliJ IDEA will offer you the type applicable to your current context.
+Basic completion should be available out-of-the-box, but if not you can use <kbd>⌃␣</kbd> (macOS) / <kbd>Ctrl+Space</kbd> (Windows/Linux) to invoke it. For smart or type-based matching completion use <kbd>⌃⇧␣</kbd> (macOS) / <kbd>Ctrl+Shift+Space</kbd> (Windows/Linux). It's worth getting use to using type-based matching completion in your code base as IntelliJ IDEA will offer you the type applicable to your current context.
 
-Statement completion (**⌘⇧⏎** | **Ctrl+Shift+Return**) is a great way to keep your code green and compiling. When you use this shortcut, IntelliJ IDEA will do the minimum needed to make your code compile.
+Statement completion <kbd>⌃⇧⏎</kbd> (macOS) / <kbd>Ctrl+Shift+Enter</kbd> (Windows/Linux) is a great way to keep your code green and compiling. When you use this shortcut, IntelliJ IDEA will do the minimum needed to make your code compile.
 
 Postfix completion allows you to keep typing forward. It's a more linguistically natural way of thinking and arguably more efficient to _type forward_ all the time.
 
@@ -49,7 +49,7 @@ IntelliJ IDEA is excellent at generating code constructs for you. It's always wo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VFV-iaJCI1c" >
 </iframe>
 
-Similarly to Search Everywhere, Run Anything (**⌃⌃** | **Ctrl+Ctrl**) allows you to run any of your Run Configurations as well as scripts and commands such as `mvn clean` or `gradle --status`. You can also use Run Anything to open your recent projects such as `open intellij-samples`.
+Similarly to Search Everywhere, Run Anything <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl<kbd/> (Windows/Linux) allows you to run any of your Run Configurations as well as scripts and commands such as `mvn clean` or `gradle --status`. You can also use Run Anything to open your recent projects such as `open intellij-samples`.
 
 ## Managing Dependencies
 

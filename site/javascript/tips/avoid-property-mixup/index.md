@@ -18,5 +18,4 @@ animatedGif:
   height: 300
 ---
 
-Need to add `.length` and `.size` properties to some objects in your code? WebStorm
-won’t let you mix those properties up.
+Need to add `.length` and `.size` properties to some objects in your code? WebStorm won’t let you mix those properties up.

@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/mukr2Q_zBm4?start=702"
 ---
 
-Now if you do a search across your whole project with **⌘⇧F** (macOS), or **Crl+Shift+F** (Windows/Linux) for _javax_ you will see that it still appears in your `persistence.xml` file.
+Now if you do a search across your whole project with <kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux) for _javax_ you will see that it still appears in your `persistence.xml` file.
 
 We need to update the `persistence.xml` file and change the namespace from:
 
@@ -51,7 +51,7 @@ to `jakarta`:
 </properties>
 ```
 
-Now let's rebuild our application again with **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux) and then run it with **⌃R** (macOS), **Shift+F10** (Windows/Linux).
+Now let's rebuild our application again with <kbd>⌘F9</kbd> (macOS) / <kbd>Ctrl+F9</kbd> (Windows/Linux) and then run it with <kbd>⌃R</kbd> (macOS) / <kbd>Shift+F10</kbd> (Windows/Linux).
 
 Your application should still be available at `localhost:8080/MyWebApp`.
 

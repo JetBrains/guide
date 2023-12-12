@@ -16,4 +16,4 @@ seealso:
 video: "https://youtu.be/C8xU1S8SyVc"
 ---
 
-You can use Statement Completion to finish the current statement using **⌘⇧⏎** (macOS) or **Ctrl+Shift+Return** (Windows/Linux). Basic completion is available without using a shortcut, but you can use Advanced Completion with **⌃⇧␣** (macOS), or **Ctrl**+**Shift**+**Space** (Windows/Linux).
+You can use Statement Completion to finish the current statement using <kbd>⌃⇧⏎</kbd> (macOS) / <kbd>Ctrl+Shift+Enter</kbd> (Windows/Linux). Basic completion is available without using a shortcut, but you can use Advanced Completion with <kbd>⌃⇧␣</kbd> (macOS) / <kbd>Ctrl+Shift+Space</kbd> (Windows/Linux).

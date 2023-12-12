@@ -17,5 +17,3 @@ Live templates are a great way to quickly write common/repeating code. Arrow fun
 **How to use:**
 
 In any JavaScript file, type _arf_ and follow up with _Enter_ or _Tab_ to complete the template and generate the corresponding code.
-
-<span class="tag is-rounded">New in 2021.2</span>

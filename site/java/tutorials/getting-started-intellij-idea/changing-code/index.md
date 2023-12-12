@@ -26,7 +26,7 @@ Changing code is more common than writing code and IntelliJ IDEA can support you
 
 We often want to go back and revisit code that either we wrote or someone else wrote. That can be a variety of reasons including stabilising it, iterating on the functionality, or just reshaping it to improve the readability without changing the semantics.
 
-IntelliJ IDEA supports a huge range of refactorings and associated keyboard shortcuts, but there's one shortcut you can use to invoke all refactorings which is (**⌃T** | **Ctrl+Alt+Shift+T**).
+IntelliJ IDEA supports a huge range of refactorings and associated keyboard shortcuts, but there's one shortcut you can use to invoke all refactorings which is <kbd>⌃T<kbd/> (macOS) / <kbd>Shift+Ctrl+Alt+T</kbd> (Windows/Linux).
 
 Some of the more common refactorings are:
 
@@ -41,32 +41,32 @@ You should always use IntelliJ IDEA's refactoring capability when you're refacto
 <iframe width="560" height="315" src="https://www.youtube.com/embed/24praE09oxE" >
 </iframe>
 
-Most teams have code standards that want to apply to all new code that is checked into version control. IntelliJ IDEA supports lots of formatting standards that you can access in your Preferences/Settings (**⌘,** | **Ctrl+Alt+S**) and then searching for "formatting" in **Editor > Java**. There are some different ways to apply those settings to your code; choose the best way at the time.
+Most teams have code standards that want to apply to all new code that is checked into version control. IntelliJ IDEA supports lots of formatting standards that you can access in your Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and then searching for "formatting" in **Editor > Java**. There are some different ways to apply those settings to your code; choose the best way at the time.
 
 To reformat a file or selection of code:
-Use (**⌥⌘L** | **Ctrl+Alt+L**) to reformat a file or selection of code according to the settings you have defined in your project.
+Use <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux) to reformat a file or selection of code according to the settings you have defined in your project.
 
-You can get additional reformat settings with (**⌥⇧⌘L** | **Ctrl+Shift+Alt+L**) which is useful because there's an option called **Only changes uncommitted to VCS** that you can select if you're working with a codebase where only changed or added code is adhering to a newer team-agreed formatting style. This is helpful to ensure you don't check in formatting changes in addition to changes in the codebase.
+You can get additional reformat settings with <kbd>⌘⌥⇧L</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+L</kbd> (Windows/Linux) which is useful because there's an option called **Only changes uncommitted to VCS** that you can select if you're working with a codebase where only changed or added code is adhering to a newer team-agreed formatting style. This is helpful to ensure you don't check in formatting changes in addition to changes in the codebase.
 
 To change the formatting options for a selection of code:
-You can select a section of code and then use Context Actions (**⌥⏎** | **Alt+Enter**) and then choose **Adjust code style settings** from the menu.
+You can select a section of code and then use Context Actions <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and then choose **Adjust code style settings** from the menu.
 
 To automatically reformat code before you check it into version control:
-In your Commit tool window (**⌘1** | **Alt+1**) there's a small cog icon, when you click that there's an option called **Reformat code**. Select this to ask IntelliJ IDEA to reformat your code according to your code style settings before you commit it to source control.
+In your Commit tool window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux) there's a small cog icon, when you click that there's an option called **Reformat code**. Select this to ask IntelliJ IDEA to reformat your code according to your code style settings before you commit it to source control.
 
 ## Working with Multiple Carets
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/z39jUnMZy44" >
 </iframe>
 
-Multiple carets are very useful for making the same change in multiple places and when you're working with list formats. You can use (**⌥** | **Ctrl**) twice, holding it down the second time and the pressing the Down key to create a stack of carets. [This blog post](https://foojay.io/today/working-with-multiple-carets-in-intellij-idea/) also covers how you can create carets at the end of your lines or in random places.
+Multiple carets are very useful for making the same change in multiple places and when you're working with list formats. You can use <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl<kbd/> (Windows/Linux), holding it down the second time and the pressing the Down key to create a stack of carets. [This blog post](https://foojay.io/today/working-with-multiple-carets-in-intellij-idea/) also covers how you can create carets at the end of your lines or in random places.
 
 ## Extending or Shrinking Selection
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KFqqOP89XJA" >
 </iframe>
 
-IntelliJ IDEA allows you to select code by scope which is helpful when you have longer methods or code that hasn't been formatted properly. Use (**⌥↑** | **Ctrl+W**) to expand the scope and (**⌥↓** | **Ctrl+Shift+W**) to collapse the scope.
+IntelliJ IDEA allows you to select code by scope which is helpful when you have longer methods or code that hasn't been formatted properly. Use <kbd>⌥↑</kbd> (macOS) / <kbd>Ctrl+W</kbd> (Windows/Linux) to expand the scope and <kbd>⌥↓</kbd> (macOS) / <kbd>Ctrl+Shift+W</kbd> (Windows/Linux) to collapse the scope.
 
 ## Using the Clipboard History
 

@@ -19,5 +19,3 @@ video: >-
 Navigate to _Settings/Preferences | Build, Execution, Deployment | Build Tools_ and select _External changes_ instead of **Any changes**.
 
 Then, edit your _go.mod_ file, and when you are done, press the button at the top-right corner of the editor to refresh these changes.
-
-<span class="tag is-rounded">New in 2021.2</span>

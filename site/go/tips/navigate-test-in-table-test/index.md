@@ -15,6 +15,4 @@ video: >-
 
 **How to use:**
 
-If you need to review the parameters for a certain test case, then you can use the **Jump to source**, _F4 on Windows/Linux_ or _⌘ + ↓ on macOS_ feature to do so. You can also double-click on the subtest name in the UI and it will perform the same action.
-
-<span class="tag is-rounded">New in 2020.3</span>
+If you need to review the parameters for a certain test case, then you can use the **Jump to source**, <kbd>⌘↓</kbd> (macOS) / <kbd>F4</kbd> (Windows/Linux) feature to do so. You can also double-click on the subtest name in the UI and it will perform the same action.

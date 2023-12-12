@@ -25,7 +25,7 @@ Alternatively, we can right-click a dependency in the Maven or Gradle tool windo
 
 ![Analyze Dependencies](analyze-dependencies.png)
 
-We can hide all tool windows (**⇧⌘F12** on macOS / **Control+Shift+F12** on Windows/Linux), so we can focus on the dependencies.
+We can hide all tool windows <kbd>⌘⇧F12</kbd> (macOS) / <kbd>Ctrl+Shift+F12 (Windows/Linux)</kbd>, so we can focus on the dependencies.
 
 ## Viewing dependencies in the Dependency Analyzer
 

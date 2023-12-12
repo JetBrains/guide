@@ -17,6 +17,4 @@ video: >-
 
 Place the cursor at the file level in a \__test.go_ file and start typing _func_. Select the _Benchmark_ option from the suggested list and then complete this by writing the test name you desire.
 
-**Pro tip:** You can invoke the Completion feature, _Ctrl + Space on Windows/Linux_ or _^ + Space on macOS_, to create benchmarks for methods too, not just functions.
-
-<span class="tag is-rounded">New in 2020.3</span>
+**Pro tip:** You can invoke the Completion feature, <kbd>⌃␣</kbd> (macOS) / <kbd>Ctrl+Space</kbd> (Windows/Linux), to create benchmarks for methods too, not just functions.

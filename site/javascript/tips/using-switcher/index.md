@@ -17,7 +17,4 @@ animatedGif:
   height: 300
 ---
 
-Did you know that you can swiftly jump to the last opened
-file with _Ctrl+Tab_? And, if you hold the _Ctrl_ key and press _Tab_,
-you'll see the Switcher popup which you can use for jumping
-between tool windows and other recently opened files, also with _Tab_.
+Did you know that you can swiftly jump to the last opened file with <kbd>⌃⇥</kbd>+? (macOS) / <kbd>Ctrl+Tab</kbd>+? (Windows/Linux). And, if you hold <kbd>⌃</kbd> (macOS) / <kbd>Ctrl</kbd> (Windows/Linux) and press <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (Windows/Linux), you'll see the Switcher popup which you can use for jumping between tool windows and other recently opened files, also with <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (Windows/Linux).

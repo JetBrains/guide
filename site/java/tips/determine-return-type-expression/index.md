@@ -15,4 +15,4 @@ seealso:
 video: "https://youtu.be/vste6htns5o"
 ---
 
-Place the caret at the necessary code element and press **⌃⇧P** (macOS), or **Ctrl+Shift+P** (Windows/Linux) or select View | Type Info from the main menu.
+Place the caret at the necessary code element and press <kbd>⌃⇧P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux) or select View | Type Info from the main menu.

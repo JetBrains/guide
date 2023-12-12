@@ -16,9 +16,7 @@ obsoletes:
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, we are going to deploy our application inside a Docker Container.
 
-[Docker](https://www.docker.com/) is an open
-platform for developing, shipping, and running applications. It lets you separate your applications from your infrastructure, so you can deliver software quickly. With Docker,
-you can manage your infrastructure in the same way you manage your applications.
+[Docker](https://www.docker.com/) is an open platform for developing, shipping, and running applications. It lets you separate your applications from your infrastructure, so you can deliver software quickly. With Docker, you can manage your infrastructure in the same way you manage your applications.
 
 When it comes to Docker, testing, and CI/CD pipelines -- these are subjects of their own, each requiring a dedicated course to understand the topics and get into the depth of it.
 

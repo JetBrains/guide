@@ -42,7 +42,7 @@ We get a `TestRestTemplate` for free with tests annotated with `@SpringBootTest`
 
 Our test itself is annotated with `@Test`. It will pass when our expected value is the same as the actual value from the webserver - our assert statement is comparing the string we are serving from localhost at this random port, with the string in the second half of the assert statement - _Hello world from Spring Boot_.
 
-3. Let's run the test to check it works. You can run it again with **Ctrl**+**R** (macOS), or **Shift**+**F10** (Windows/Linux). We should see that our test is green.
+3. Let's run the test to check it works. You can run it again with <kbd>⌃R</kbd> (macOS) / <kbd>Shift+F10</kbd> (Windows/Linux). We should see that our test is green.
 
 ![Passing HTTP test](passing-http-test.png)
 

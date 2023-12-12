@@ -18,8 +18,7 @@ video:
 
 ## Creating a new cluster
 
-We’re now going to set up Google Kubernetes Engine (GKE). Before we start, ensure you
-have a valid Gmail account then visit the following URL: [console.cloud.google.com](https://console.cloud.google.com/).
+We’re now going to set up Google Kubernetes Engine (GKE). Before we start, ensure you have a valid Gmail account then visit the following URL: [console.cloud.google.com](https://console.cloud.google.com/).
 
 ![gke1](./images/screen73.png)
 
@@ -96,8 +95,7 @@ In the **Authorized networks** section, I’ll try to access the cluster from th
 
 ![gke12](./images/screen84.png)
 
-Security is a broad subject area, and so we won’t go into too much detail here. However,
-if you’re interested learning more about hardening your clusters, then follow the link below: [cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster).
+Security is a broad subject area, and so we won’t go into too much detail here. However, if you’re interested learning more about hardening your clusters, then follow the link below: [cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster).
 
 Under **Cluster | Security**, make sure to enable **Workload Identity**.
 
@@ -253,9 +251,7 @@ You may remember from earlier how we created `gke-internal-ip` in the section en
 
 ![gke39](./images/screen111.png)
 
-Under **Data Protection**, uncheck the **Enable deletion protection** and **Automatic Backups** boxes. These are not
-required for this tutorial. However, we strongly recommend using them when working in a production environment. They
-will be of immense help in the event that disaster recovery is necessary.
+Under **Data Protection**, uncheck the **Enable deletion protection** and **Automatic Backups** boxes. These are not required for this tutorial. However, we strongly recommend using them when working in a production environment. They will be of immense help in the event that disaster recovery is necessary.
 
 ![gke40](./images/screen112.png)
 
@@ -284,8 +280,7 @@ The database has been successfully created!
 
 ## Artifact Registry
 
-Now, we are going to store our Docker images in [Artifact Registry](https://cloud.google.com/artifact-registry). It’s the next generation
-of container registry and allows you to store, manage, and secure your build artifacts.
+Now, we are going to store our Docker images in [Artifact Registry](https://cloud.google.com/artifact-registry). It’s the next generation of container registry and allows you to store, manage, and secure your build artifacts.
 
 ![gke45](./images/screen117.png)
 
@@ -307,9 +302,7 @@ Provide the necessary information as follows:
 
 Make sure to choose the region that’s closest to your location.
 
-You may have noticed that the format section offers multiple
-support options, including Docker, Python, Maven, and so on. This
-is why it’s considered a universal build artifact tool.
+You may have noticed that the format section offers multiple support options, including Docker, Python, Maven, and so on. This is why it’s considered a universal build artifact tool.
 
 ![gke48](./images/screen120.png)
 

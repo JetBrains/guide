@@ -19,4 +19,4 @@ animatedGif:
 ---
 
 Want to take a brief look at the currently available run configurations before using one of them?
-Press _Ctrl+Alt+R_ on macOS or _Alt+Shift+F10_ on Windows/Linux and select the run configuration you want to use from the list.
+Press <kbd>⌃⌥R/kbd> (macOS) / <kbd>Alt+Shift+F10</kbd> (Windows/Linux) and select the run configuration you want to use from the list.

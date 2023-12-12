@@ -20,8 +20,8 @@ seealso:
 video: "https://youtu.be/4jAXV67MRyA"
 ---
 
-You can generate new code quickly with **⌘N** (macOS), or **Alt+Insert** (Windows/Linux). For example, you can generate commonly used methods for Java beans in this way.
+You can generate new code quickly with <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux). For example, you can generate commonly used methods for Java beans in this way.
 
 You can use the same shortcut to add a new parameter in the Change Signature dialog.
 
-Use this shortcut **⌘N** (macOS), or **Alt+Insert** (Windows/Linux) in your **Project tool window** (**⌘1** on macOS, or **Alt+1** on Windows/Linux) to add files to your project, or in your build file to add dependencies. It's always worth using **⌘N** (macOS), or **Alt+Insert** (Windows/Linux) to see what the IDE can do for you.
+Use this shortcut <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) in your <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux) to add files to your project, or in your build file to add dependencies. It's always worth using <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) to see what the IDE can do for you.

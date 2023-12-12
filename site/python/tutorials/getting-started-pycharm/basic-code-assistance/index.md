@@ -14,7 +14,7 @@ In the previous step, we saw how PyCharm makes it easy to work with your project
 
 ## Code Completion
 
-First off, let’s talk about context-aware code completion, where the IDE uses all kinds of smarts to help you finish your typing. Live Templates are one such example. The keyboard shortcut is (**⌘J** | **Ctrl+J**) but PyCharm will invoke them by default when you start typing some code that matches a Live Template. You can find a list of Live Templates in your Preferences/Settings (**⌘,** | **Ctrl+Alt+S**) and you can also [add your own](https://www.jetbrains.com/help/pycharm/creating-and-editing-live-templates.html).
+First off, let’s talk about context-aware code completion, where the IDE uses all kinds of smarts to help you finish your typing. Live Templates are one such example. The keyboard shortcut is <kbd>⌘J</kbd> (macOS) / <kbd>Ctrl+J</kbd> (Windows/Linux) but PyCharm will invoke them by default when you start typing some code that matches a Live Template. You can find a list of Live Templates in your Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and you can also [add your own](https://www.jetbrains.com/help/pycharm/creating-and-editing-live-templates.html).
 
 <img src="live_templates.png" alt="Live Templates" width="700"/>
 
@@ -85,11 +85,11 @@ If you don't want to scroll down your entire file searching for problems, though
 
 <img src="problems-widget.png" alt="Problems Widget" width="700"/>
 
-It summarizes errors and warnings and lets you quickly navigate to the Problems Tool window (**⌘6** | **Alt+1**) to have a better description of what is going on. Here we can see the error and quickly navigate to the line where it happens. We can also look across our entire project.
+It summarizes errors and warnings and lets you quickly navigate to the Problems Tool window <kbd>⌘6</kbd> (macOS) / <kbd>Alt+6</kbd> (Windows/Linux) to have a better description of what is going on. Here we can see the error and quickly navigate to the line where it happens. We can also look across our entire project.
 
 <img src="problems-tool-window.png" alt="Problems Tool Window" width="700"/>
 
-Let’s fix this error and use the [code reformat action](https://www.jetbrains.com/help/pycharm/reformat-and-rearrange-code.html#reformat_file) (**⌥⌘L** | **Ctrl+Alt+L**) to put everything in the right place. Now the errors and warnings are gone, and the file is formatted following PEP-8 conventions.
+Let’s fix this error and use the [code reformat action](https://www.jetbrains.com/help/pycharm/reformat-and-rearrange-code.html#reformat_file) <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux) to put everything in the right place. Now the errors and warnings are gone, and the file is formatted following PEP-8 conventions.
 
 ## Conclusion
 

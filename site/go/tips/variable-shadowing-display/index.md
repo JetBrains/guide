@@ -13,6 +13,4 @@ screenshot: ./screenshot.png
 
 **How to use:**
 
-While writing code, observe if the variable color changes. If it does, then invoke the _Context Actions_ menu via _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_ and select **Navigate to shadowed declaration** to identify the originally shadowed identifier.
-
-<span class="tag is-rounded">New in 2020.3</span>
+While writing code, observe if the variable color changes. If it does, then invoke the _Context Actions_ menu via <kbd>⌘⌥⏎</kbd> (macOS) / <kbd>Ctrl+Alt+Enter</kbd> (Windows/Linux) and select **Navigate to shadowed declaration** to identify the originally shadowed identifier.

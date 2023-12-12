@@ -15,4 +15,4 @@ seealso:
 video: "https://youtu.be/pdPxVqrKYIw"
 ---
 
-Use Find Action **⇧⌘A** (on Mac) or **Control+Shift+A** (on Windows/Linux) to open the **Find Action** dialog and search for "Show line numbers" OFF/ON for a file. Or open **Preferences** > **Editor** > **General** > **Appearance** to turn "**Show line numbers**" on/off.
+Use Find Action <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) to open the **Find Action** dialog and search for "Show line numbers" OFF/ON for a file. Or open **Preferences** > **Editor** > **General** > **Appearance** to turn "**Show line numbers**" on/off.

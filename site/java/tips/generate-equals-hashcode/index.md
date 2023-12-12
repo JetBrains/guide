@@ -19,4 +19,4 @@ seealso:
 video: "https://youtu.be/y4qCSsYKJoE"
 ---
 
-You can use **⌘N** (macOS), or **Alt+Insert** (Windows/Linux) for the _Generate_ menu and then select `equals() and hashCode()`. You can also use the same shortcut again and select `toString()` to override that method as well.
+You can use <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) for the _Generate_ menu and then select `equals() and hashCode()`. You can also use the same shortcut again and select `toString()` to override that method as well.

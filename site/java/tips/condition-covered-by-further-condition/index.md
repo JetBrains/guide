@@ -17,4 +17,4 @@ seealso:
 video: "https://youtu.be/MnN2z3WSaN8"
 ---
 
-You can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to show context actions for redundant condition statements. You can then remove the redundant code.
+You can use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), to show context actions for redundant condition statements. You can then remove the redundant code.

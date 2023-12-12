@@ -15,9 +15,7 @@ video: "https://www.youtube.com/watch?v=WC4e3Yq8k8A"
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-In this tutorial we will be focusing on deploying our application in [Kubernetes](https://kubernetes.io/). It is an open-source container-orchestration
-system for automating computer application deployment, scaling, and management. It was originally designed by [Google](https://about.google/) and is now
-maintained by the [Cloud Native Computing Foundation](https://www.cncf.io/).
+In this tutorial we will be focusing on deploying our application in [Kubernetes](https://kubernetes.io/). It is an open-source container-orchestration system for automating computer application deployment, scaling, and management. It was originally designed by [Google](https://about.google/) and is now maintained by the [Cloud Native Computing Foundation](https://www.cncf.io/).
 
 So, let’s get started.
 
@@ -25,15 +23,11 @@ So, let’s get started.
 
 For our tutorial, we will be using minikube.
 
-[minikube](https://minikube.sigs.k8s.io/docs/) is a tool that lets you run Kubernetes locally. Minikube runs a
-single-node Kubernetes cluster on your personal computer (including Windows, macOS and Linux PCs) so that you can
-try out Kubernetes, or for daily development work.
+[minikube](https://minikube.sigs.k8s.io/docs/) is a tool that lets you run Kubernetes locally. Minikube runs a single-node Kubernetes cluster on your personal computer (including Windows, macOS and Linux PCs) so that you can try out Kubernetes, or for daily development work.
 
-Let me tell you one thing, there are multiple ways to install Kubernetes and tons of tutorials available on the Internet.
-You can check them out if you don’t want to go forward with minikube.
+Let me tell you one thing, there are multiple ways to install Kubernetes and tons of tutorials available on the Internet. You can check them out if you don’t want to go forward with minikube.
 
-Also, I will be talking at a high level. We won’t be getting a deeper dive into Docker or Kubernetes, as you know
-these are subjects of their own, and I expect from the audience that they have experience working with these technologies.
+Also, I will be talking at a high level. We won’t be getting a deeper dive into Docker or Kubernetes, as you know these are subjects of their own, and I expect from the audience that they have experience working with these technologies.
 
 If not I will share some links in my reference video where you can learn those topics separately.
 
@@ -81,8 +75,7 @@ Looks good, minikube is successfully installed.
 
 ![step6](./steps/step6.png)
 
-Next, I will install the **[kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)** which is the Kubernetes command-line tool,
-which allows you to run commands against Kubernetes clusters.
+Next, I will install the **[kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)** which is the Kubernetes command-line tool, which allows you to run commands against Kubernetes clusters.
 
 For your reference, you can follow this link: [https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 
@@ -98,15 +91,13 @@ Once it has been downloaded, I will make it executable and move it to **/usr/loc
 
 ![step7](./steps/step7.png)
 
-We are done. Let’s start the minikube, but before starting I will create a folder in my home directory which will be
-required for mounting, for storing postgres database files.
+We are done. Let’s start the minikube, but before starting I will create a folder in my home directory which will be required for mounting, for storing postgres database files.
 
 ![step8](./steps/step8.png)
 
 ### Installing Docker
 
-I won’t show the installation step of Docker because there are tons of tutorials on that. But I will
-share a good tutorial which I found in the DigitalOcean community, you can check that out.
+I won’t show the installation step of Docker because there are tons of tutorials on that. But I will share a good tutorial which I found in the DigitalOcean community, you can check that out.
 
 - [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
 
@@ -140,13 +131,11 @@ Now, it's time to come back to PyCharm and write our Dockerfile.
 
 # Dockerfile
 
-According to the Docker documentation, a Dockerfile is a text document that contains all the
-commands a user could call on the command line to assemble an image.
+According to the Docker documentation, a Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
 
 - [Dockerfile best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 
-We are using Python 3.8 slim image. The slim image is a paired down version of the full image.
-This image generally only installs the minimal packages needed to run your particular tool.
+We are using Python 3.8 slim image. The slim image is a paired down version of the full image. This image generally only installs the minimal packages needed to run your particular tool.
 
 ![step11](./steps/step11.png)
 
@@ -228,8 +217,7 @@ The build process is complete.
 
 ![step14](./steps/step14.png)
 
-Next, we need to host this Docker image, so we will deploy this image in DockerHub. [DockerHub](https://hub.docker.com/) is basically a
-Docker registry where you can store and share your Docker images, the same way you store code in GitHub repositories.
+Next, we need to host this Docker image, so we will deploy this image in DockerHub. [DockerHub](https://hub.docker.com/) is basically a Docker registry where you can store and share your Docker images, the same way you store code in GitHub repositories.
 
 As you can see I have already created the Docker repository, currently it is private but later, I will make it public.
 
@@ -267,8 +255,7 @@ I will change the visibility of the repository to public because it's required w
 
 ![step19](./steps/step19.png)
 
-If you have a use case when working with Kubernetes that you need to use images from a private registry,
-then definitely check out the documentation provided by Kubernetes.
+If you have a use case when working with Kubernetes that you need to use images from a private registry, then definitely check out the documentation provided by Kubernetes.
 
 - [Pull an Image from a Private Registry](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
 
@@ -290,8 +277,7 @@ Under K8s directory, I will create multiple directories.
 
 ## Namespace
 
-First I will create a **namespace**. In Kubernetes, namespaces provide a mechanism for isolating groups of resources
-within a single cluster. Names of resources need to be unique within a namespace, but not across namespaces.
+First I will create a **namespace**. In Kubernetes, namespaces provide a mechanism for isolating groups of resources within a single cluster. Names of resources need to be unique within a namespace, but not across namespaces.
 
 Reference:
 
@@ -299,8 +285,7 @@ Reference:
 
 ![step21](./steps/step21.png)
 
-If you have observed one thing, all these files end with **.yaml** extension. The Kubernetes resources are created
-in a declarative way, thus making use of YAML files.
+If you have observed one thing, all these files end with **.yaml** extension. The Kubernetes resources are created in a declarative way, thus making use of YAML files.
 
 Resources such as **pods**, **services**, and **deployments** are created by using the YAML files.
 
@@ -329,18 +314,13 @@ Don’t worry, at the end of this tutorial I will explain the flow using a diagr
 
 ## Deployment
 
-Let’s move first with the deployment. A **deployment** is an object in Kubernetes that lets you manage
-a set of identical pods. Without a deployment, you’d need to create, update, and delete a bunch of pods manually.
+Let’s move first with the deployment. A **deployment** is an object in Kubernetes that lets you manage a set of identical pods. Without a deployment, you’d need to create, update, and delete a bunch of pods manually.
 
-With a deployment, you declare a single object in a YAML file. This object is responsible for creating the pods,
-making sure they stay up to date, and ensuring there are enough of them running.
+With a deployment, you declare a single object in a YAML file. This object is responsible for creating the pods, making sure they stay up to date, and ensuring there are enough of them running.
 
 You can also easily autoscale your applications using a Kubernetes deployment.
 
-As you can see we will be running 8 replica pods of our application and Kubernetes will take care
-of that by checking the desired state. Kubernetes has a self-healing mechanism, It restarts containers
-that fail, replaces containers, kills containers that don't respond to your user-defined health check,
-and doesn't advertise them to clients until they are ready to serve.
+As you can see we will be running 8 replica pods of our application and Kubernetes will take care of that by checking the desired state. Kubernetes has a self-healing mechanism, It restarts containers that fail, replaces containers, kills containers that don't respond to your user-defined health check, and doesn't advertise them to clients until they are ready to serve.
 
 **k8s/code/deployment.yml**
 
@@ -401,21 +381,15 @@ spec:
 
 When working with Kubernetes, you are going to hear this word many times and that is **Pod**.
 
-A pod is the smallest execution unit in Kubernetes. Pods are ephemeral by nature; if a pod (or the node it executes on) fails,
-Kubernetes can automatically create a new replica of that pod to continue operations. Pods include one or more
-containers (such as Docker containers).
+A pod is the smallest execution unit in Kubernetes. Pods are ephemeral by nature; if a pod (or the node it executes on) fails, Kubernetes can automatically create a new replica of that pod to continue operations. Pods include one or more containers (such as Docker containers).
 
-You can see we have defined **InitContainers**. In Kubernetes, an init container is the one that
-starts and executes before other containers in the same pod. It's meant to perform initialization
-logic for the main application hosted on the Pod. For example, create the necessary user accounts,
-perform database migrations, create database schemas and so on.
+You can see we have defined **InitContainers**. In Kubernetes, an init container is the one that starts and executes before other containers in the same pod. It's meant to perform initialization logic for the main application hosted on the Pod. For example, create the necessary user accounts, perform database migrations, create database schemas and so on.
 
 But here we are just checking whether our database server is up and running using the **[pg_ready](https://www.postgresql.org/docs/9.3/app-pg-isready.html)** command.
 
 Now, under the **containers** section, we will define the Docker image which we have already pushed to DockerHub.
 
-**imagePullPolicy** has been set to **Always**. Every time the kubelet launches a container, it's going to pull the
-image from the container registry.
+**imagePullPolicy** has been set to **Always**. Every time the kubelet launches a container, it's going to pull the image from the container registry.
 
 After that we are going to define a **secret**. We will implement this in a while.
 
@@ -522,8 +496,7 @@ I am going to speed up the process. I expect you to check my source code, as I h
 
 ![step24](./steps/step24.png)
 
-This is the nginx deployment blueprint, as you can observe we will be running 8 replicas of nginx 1.21 version and the
-container port is 80 and as usual we are doing the common health checks.
+This is the nginx deployment blueprint, as you can observe we will be running 8 replicas of nginx 1.21 version and the container port is 80 and as usual we are doing the common health checks.
 
 **k8s/nginx/nginx-deployment.yml**
 
@@ -577,11 +550,9 @@ We are using a volume mount to mount our configuration and replace the default c
 
 Next, we will define ConfigMap.
 
-According to Kubernetes documentation: _A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods
-can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume_.
+According to Kubernetes documentation: _A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume_.
 
-If you observe carefully from line number 10 to 23 we are changing the nginx configuration
-and proxying the request to the backend application.
+If you observe carefully from line number 10 to 23 we are changing the nginx configuration and proxying the request to the backend application.
 
 ![step25](./steps/step25.png)
 
@@ -749,8 +720,7 @@ spec:
                 - minikube # <-- name of the node (docker-desktop, minikube) etc.
 ```
 
-We have set a reclaim policy to **Delete**, and you have the option to retain as well. Deletion removes both the PersistentVolume object from Kubernetes, and the
-associated storage asset in the external infrastructure.
+We have set a reclaim policy to **Delete**, and you have the option to retain as well. Deletion removes both the PersistentVolume object from Kubernetes, and the associated storage asset in the external infrastructure.
 
 **storageClassName** is currently local storage, but even you can use AWS EBS Storage, Google Storage etc.
 
@@ -769,9 +739,7 @@ Next, I will create the persistent volume claim.
 
 ## PersistentVolumeClaim
 
-A PersistentVolumeClaim is a request for a resource with specific attributes, such as storage size. As I said earlier,  
-a pod uses a persistent volume claim to get read and write access to the persistent volume. In our case we are pointing
-the volume name to **postgres-pv**.
+A PersistentVolumeClaim is a request for a resource with specific attributes, such as storage size. As I said earlier, a pod uses a persistent volume claim to get read and write access to the persistent volume. In our case we are pointing the volume name to **postgres-pv**.
 
 **k8s/postgres/postgres-pvc.yml**
 
@@ -1154,8 +1122,7 @@ This diagram will help you to visualize the K8s deployments and the interconnect
 
 # Kubernetes Plugin
 
-Taking a small break, there is one more interesting thing that PyCharm provides. You can directly manage your
-Kubernetes resources through PyCharm instead of using the terminal.
+Taking a small break, there is one more interesting thing that PyCharm provides. You can directly manage your Kubernetes resources through PyCharm instead of using the terminal.
 
 Let me give you a sneak peek.
 
@@ -1223,9 +1190,7 @@ Coming back to PyCharm, you can even follow logs of the specific pod, and you ca
 
 ![step60](./steps/step60.png)
 
-One last thing before we end this tutorial, you can also change the **kubeconfig** file. For example: if your cluster
-is running on a public cloud like AWS or its being self-hosted in an on-premise server
-then you can easily communicate with the cluster by changing the kubeconfig.
+One last thing before we end this tutorial, you can also change the **kubeconfig** file. For example: if your cluster is running on a public cloud like AWS or its being self-hosted in an on-premise server then you can easily communicate with the cluster by changing the kubeconfig.
 
 ![step61](./steps/step61.png)
 

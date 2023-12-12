@@ -11,7 +11,7 @@ video: "https://youtu.be/i5Qu3qYOfsM?start=197"
 
 Let's start by writing a very simple test, so we can see what Spock tests look like.
 
-From the [Project window](https://www.jetbrains.com/help/idea/project-tool-window.html), we can use the shortcut **⌘N** (macOS) or **Alt+Insert** (Windows/Linux) to create a new file. Let's create a Groovy class, since Spock tests are Groovy classes:
+From the [Project window](https://www.jetbrains.com/help/idea/project-tool-window.html), we can use the shortcut <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) to create a new file. Let's create a Groovy class, since Spock tests are Groovy classes:
 
 ![](./05-new-groovy-class.png)
 
@@ -31,7 +31,7 @@ class ExampleSpecification extends Specification {
 
 ```
 
-We can get IntelliJ IDEA to generate test methods for Spock specifications using **⌘N** (macOS) or **Alt+Insert** (Windows/Linux) inside the class.
+We can get IntelliJ IDEA to generate test methods for Spock specifications using <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) inside the class.
 
 ![](./07.png)
 
@@ -56,7 +56,7 @@ def "should be a simple assertion"() {
 
 Spock also doesn't use _Assertions_ or an _Assert_ keyword, at least not normally. Instead, you can use simple checks, like the double equals. The `should be a simple assertion` method specifies a simple expected behaviour - that the number 1 should be equal to 1. It's not a realistic test case, but it shows the basics of a Spock test.
 
-Run this test using **⌃R** (macOS) or **Shift+F10** (Windows/Linux), or the green arrow in the gutter near the line numbers. This test should pass.
+Run this test using <kbd>⌃⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+F10</kbd> (Windows/Linux) , or the green arrow in the gutter near the line numbers. This test should pass.
 
 ![](./08.png)
 

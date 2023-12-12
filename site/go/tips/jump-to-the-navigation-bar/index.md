@@ -17,13 +17,10 @@ structure of the project itself.
 
 **How to use:**
 
-Press _Alt + Home on Windows/Linux_, _⌘ + ↑ on macOS_, and it will appear.
+Press <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux), and it will appear.
 
-Use the _Arrow keys_ to move around inside and press _Enter_ to enter a certain folder or
-_Esc_ to exit from it.
+Use the Arrow keys to move around inside and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) to enter a certain folder or <kbd>␛</kbd> (macOS) / <kbd>Escape</kbd> (Windows/Linux) to exit from it.
 
 **Pro tip:**
 
 _Speed Search_ is available here and it will help you quickly filter the files in your view.
-
-<span class="tag is-rounded">New in 2017.3</span>

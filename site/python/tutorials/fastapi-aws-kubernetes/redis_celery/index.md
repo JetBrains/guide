@@ -15,20 +15,15 @@ video: "https://www.youtube.com/watch?v=RWxnQW1bU3E"
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-As you know in our previous video we completed the feature of placing the new order. But we
-wanted to make sure that, once the order has been placed, then we need to send an email saying
-that your order has been successfully completed. That’s what we are going to cover in today’s tutorial.
+As you know in our previous video we completed the feature of placing the new order. But we wanted to make sure that, once the order has been placed, then we need to send an email saying that your order has been successfully completed. That’s what we are going to cover in today’s tutorial.
 
 # AWS SES
 
 Before moving ahead, I expect from the audience that they have experience working with AWS.
 
-We will be using [Amazon SES](https://aws.amazon.com/ses/) also known as **Simple Email Service** along-with
-[Celery](https://docs.celeryproject.org/en/stable/) for task-processing and
-[Redis](https://docs.celeryproject.org/en/stable/) as in-memory datastore.
+We will be using [Amazon SES](https://aws.amazon.com/ses/) also known as **Simple Email Service** along-with [Celery](https://docs.celeryproject.org/en/stable/) for task-processing and [Redis](https://docs.celeryproject.org/en/stable/) as in-memory datastore.
 
-You can even use FastAPI [Background Tasks](https://fastapi.tiangolo.com/tutorial/background-tasks/), but
-if you are performing some heavy computation, then it's better to go for Celery.
+You can even use FastAPI [Background Tasks](https://fastapi.tiangolo.com/tutorial/background-tasks/), but if you are performing some heavy computation, then it's better to go for Celery.
 
 For sending email, the background tasks are good enough, but we intended to use Celery.
 
@@ -36,10 +31,7 @@ Coming back to AWS, for our testing purpose we need to verify an email, and only
 
 Only verified email addresses can be sent under **From** & **To**.
 
-When you apply for a production use case, you don’t need to focus on verifying email addresses. But
-Amazon has stringent controls of sending emails, like handling bounces and complaints and not spamming users. Amazon
-has a good reputation with the ISPs. Thus, if you don’t follow that carefully, then you might end up
-losing reputation and indeed your service might get stopped.
+When you apply for a production use case, you don’t need to focus on verifying email addresses. But Amazon has stringent controls of sending emails, like handling bounces and complaints and not spamming users. Amazon has a good reputation with the ISPs. Thus, if you don’t follow that carefully, then you might end up losing reputation and indeed your service might get stopped.
 
 ![step1](./steps/step1.png)
 Image Credits : Amazon Web Services (AWS)
@@ -51,11 +43,9 @@ Follow the below link for more information :
 
 ![step2](./steps/step2.png)
 
-Coming back, I will be using a temporary email for verification where I will be
-sending emails for testing. You can also use your personal email accounts.
+Coming back, I will be using a temporary email for verification where I will be sending emails for testing. You can also use your personal email accounts.
 
-I will go to this website **[getnada](https://getnada.com/)** or you can
-also check **[mailinator](https://www.mailinator.com/)**. They provide temporary email service.
+I will go to this website **[getnada](https://getnada.com/)** or you can also check **[mailinator](https://www.mailinator.com/)**. They provide temporary email service.
 
 I will provide random email address like **fastapi@boximail.com**.
 
@@ -65,8 +55,7 @@ Let me try to verify this.
 
 ![step4](./steps/step4.png)
 
-Sometimes the verification links appear immediately, but it also gets
-delayed sometimes. As this is a temporary email you might face issues in receiving.
+Sometimes the verification links appear immediately, but it also gets delayed sometimes. As this is a temporary email you might face issues in receiving.
 
 ![step5](./steps/step5.png)
 
@@ -140,8 +129,7 @@ celery -A main.celery worker -l info ---pool=prefork
 - **-l** stands for loglevel
 - **--pool** is basically the execution pool, it supports different pools like prefork, solo, eventlet and gevent.
 
-The prefork pool implementation is based on Python’s multiprocessing. It allows your Celery
-worker to side-step Python’s [Global Interpreter Lock](https://docs.python.org/3/glossary.html#term-global-interpreter-lock) and fully leverage multiple processors.
+The prefork pool implementation is based on Python’s multiprocessing. It allows your Celery worker to side-step Python’s [Global Interpreter Lock](https://docs.python.org/3/glossary.html#term-global-interpreter-lock) and fully leverage multiple processors.
 
 ![step15](./steps/step15.png)
 
@@ -163,8 +151,7 @@ def send_email(email):
 
 **mail.py**
 
-You can see that the code that contains a short snippet of html code which is going to show the message of order
-placed successfully.
+You can see that the code that contains a short snippet of html code which is going to show the message of order placed successfully.
 
 We have also defined the sender email, the one which we verified earlier along-with aws region and subject name.
 
@@ -303,17 +290,13 @@ Looks like something is wrong with the access. Let me try to investigate.
 
 ![step23](./steps/step23.png)
 
-I will provide full access for sending emails, but I don’t **recommend** that. It’s not a good practice,
-this is a tutorial we can ignore this case, but make sure when you are working on a live production use case, you
-should have stringent controls over your access.
+I will provide full access for sending emails, but I don’t **recommend** that. It’s not a good practice, this is a tutorial we can ignore this case, but make sure when you are working on a live production use case, you should have stringent controls over your access.
 
 ![step24](./steps/step24.png)
 
-I will revoke this access key and create a new one. I hope you are already aware of how to do this, if not, then watch the
-video. It will be helpful for you to navigate.
+I will revoke this access key and create a new one. I hope you are already aware of how to do this, if not, then watch the video. It will be helpful for you to navigate.
 
-The access keys shown in the image will be different than yours. Don't copy the access key which is
-shown in the image, because later we will delete these keys, and it stays invalid.
+The access keys shown in the image will be different than yours. Don't copy the access key which is shown in the image, because later we will delete these keys, and it stays invalid.
 
 ![step25](./steps/step25.png)
 
@@ -363,7 +346,6 @@ So, I hope you got a basic understanding of how things are working behind the sc
 
 If you have more interest, please check the Celery [documentation](https://docs.celeryproject.org/en/stable/).
 
-You can now clearly visualize the entire flow of adding products and
-then pushing to cart and finally placing order and getting the order confirmation over the mail.
+You can now clearly visualize the entire flow of adding products and then pushing to cart and finally placing order and getting the order confirmation over the mail.
 
 I will see you in the next tutorial, where we will be focusing on Authentication & JWT.

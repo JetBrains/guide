@@ -14,10 +14,6 @@ video: >-
 ---
 
 **How to use:**
-Press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_ and select
-the _Convert multidocument YAML to List_ or
-_Convert List to multidocument YAML_ to change between formats.
+Press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and select the _Convert multidocument YAML to List_ or _Convert List to multidocument YAML_ to change between formats.
 
 **Note:** You must have the <a href="https://plugins.jetbrains.com/plugin/10485-kubernetes">Kubernetes plugin</a> provided by JetBrains installed for this action to work.
-
-<span class="tag is-rounded">New in 2021.1</span>

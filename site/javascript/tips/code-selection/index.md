@@ -16,6 +16,4 @@ animatedGif:
   height: 300
 ---
 
-How to select a code fragment without a single click: use _Ctrl+W/⌥↑_ to expand
-the selected area and _Shift+Ctrl+W/⌥↓_ to shrink it. WebStorm will keep the semantics
-of your source code in mind when doing that.
+How to select a code fragment without a single click: use <kbd>⌥↑</kbd> (macOS) / <kbd>Ctrl+W</kbd> (Windows/Linux) to expand the selected area and <kbd>⌥↓</kbd> (macOS) / <kbd>Ctrl+Shift+W</kbd> (Windows/Linux) to shrink it. WebStorm will keep the semantics of your source code in mind when doing that.

@@ -75,8 +75,7 @@ Follow the steps below to configure `gcloud` with a specific Google project.
 gcloud init
 ```
 
-- Step 2: You’ll then see the following prompt. As I have one project already configured in my CLI, I’ll go
-  ahead and create a new configuration by choosing the second option **(Create a new configuration)**.
+- Step 2: You’ll then see the following prompt. As I have one project already configured in my CLI, I’ll go ahead and create a new configuration by choosing the second option **(Create a new configuration)**.
 
 ![screen4](./images/screen4.png)
 
@@ -121,8 +120,7 @@ It will take a few seconds to initialize, and then your new project will be up a
 
 Now, let’s move to PyCharm and install the Google Cloud Code plugin.
 
-Make sure you’ve installed the latest version of PyCharm on your machine. Give a try and
-[download PyCharm](https://www.jetbrains.com/pycharm/download/) right now. For this tutorial, we’re using PyCharm 2023.1.2.
+Make sure you’ve installed the latest version of PyCharm on your machine. Give a try and [download PyCharm](https://www.jetbrains.com/pycharm/download/) right now. For this tutorial, we’re using PyCharm 2023.1.2.
 
 ### The Google Cloud Code plugin
 

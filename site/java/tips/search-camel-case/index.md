@@ -16,4 +16,4 @@ seealso:
 video: "https://youtu.be/tGxG3KZkRQI"
 ---
 
-Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can type in CamelCase to search across Classes, Files, Symbols, Actions and Git.
+Use <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), to bring up the Search Everywhere dialog. You can type in CamelCase to search across Classes, Files, Symbols, Actions and Git.

@@ -11,4 +11,4 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/5wWjsqNMd68"
 ---
 
-In Kotlin, you can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to convert a string concatenation expression into a template string. The result is much cleaner without the '+' operator.
+In Kotlin, you can use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), to convert a string concatenation expression into a template string. The result is much cleaner without the '+' operator.

@@ -18,7 +18,7 @@ obsoletes:
   - /idea/tips/postgres-connect-from-ide
 ---
 
-Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Database_ to open the **Database** tool window which helps you to connect to multiple databases and DDL data sources.
+Use <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Database_ to open the **Database** tool window which helps you to connect to multiple databases and DDL data sources.
 
 You click on the _+_ (_New_) button. Select _Data Source_ then _Postgres_ as the data source type. Customize the name of the data source, connection details, then click on the _Test_ link to ensure everything is ok.
 

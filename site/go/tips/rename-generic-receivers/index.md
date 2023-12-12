@@ -13,6 +13,4 @@ cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 
-When you rename a generic struct by pressing _Shift + F6_, the **Rename** refactoring suggests changing the receivers accordingly.
-
-<span class="tag is-rounded">New in 2023.1</span>
+When you rename a generic struct by pressing <kbd>⇧F6</kbd> (macOS) / <kbd>Shift+F6</kbd> (Windows/Linux), the **Rename** refactoring suggests changing the receivers accordingly.

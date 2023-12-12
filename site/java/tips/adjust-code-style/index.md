@@ -16,4 +16,4 @@ seealso:
 video: "https://youtu.be/v4jiPTuAxPk"
 ---
 
-You can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to show context actions for your selection and then edit the code style.
+You can use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), to show context actions for your selection and then edit the code style.

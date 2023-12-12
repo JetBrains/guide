@@ -12,6 +12,4 @@ cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 
-To convert an integer to a string by using the `strconv.Itoa()` call, click the value, press _Alt + Enter_ on Windows/Linux or _⌥ + ⏎_ on macOS, and select _Convert integer to string using strconv.Itoa() call_.
-
-<span class="tag is-rounded">New in 2023.1</span>
+To convert an integer to a string by using the `strconv.Itoa()` call, click the value, press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), and select _Convert integer to string using strconv.Itoa() call_.

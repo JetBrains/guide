@@ -16,4 +16,4 @@ seealso:
 video: "https://youtu.be/SQg_urpKGkg"
 ---
 
-Use Find in Files (**⌘⇧F** on macOS, or **Ctrl+Shift+F** on Windows/Linux) to find something in your project. There are filters available to help narrow down the results.
+Use Find in Files <kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux) to find something in your project. There are filters available to help narrow down the results.

@@ -16,7 +16,7 @@ Find the commit hash for this commit in the "**Commit Details**" to the right of
 
 ![Commit Hash](commit-hash.png)
 
-Open the Terminal window, using **⌥F12** on Mac (or **Alt+F12** on Windows & Linux) and type `git rebase -i 34bb0f99` (where `34bb0f99` is the commit hash we copied above).
+Open the Terminal window, using <kbd>⌥F12</kbd> (macOS) / <kbd>Alt+F12</kbd> (Windows/Linux) and type `git rebase -i 34bb0f99` (where `34bb0f99` is the commit hash we copied above).
 
 ![Git rebase -i](git-rebase-i.png)
 

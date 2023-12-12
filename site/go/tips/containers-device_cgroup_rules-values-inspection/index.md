@@ -15,5 +15,3 @@ video: >-
 **How to use:**
 
 Open a _docker-compose.yaml_ file and go to any **device_cgroup_rules** value to see if it contains any messages or not.
-
-<span class="tag is-rounded">New in 2021.2</span>

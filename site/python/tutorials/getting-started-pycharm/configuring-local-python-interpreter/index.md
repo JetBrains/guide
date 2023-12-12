@@ -63,7 +63,7 @@ We have a cloned project and PyCharm has a “project interpreter” for it, but
 
 You can click the interpreter name in the Status Bar which opens a list of available interpreters. It will also give you the opportunity to either open interpreter settings or add a new interpreter.
 
-Alternatively, you can find the same settings in your Preferences/Settings (**⌘,** | **Ctrl+Alt+S**) and then search for _project interpreter_. If you click the gear icon to the right of the drop-down, PyCharm will give you options for managing all the project interpreters that PyCharm knows about.
+Alternatively, you can find the same settings in your Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and then search for _project interpreter_. If you click the gear icon to the right of the drop-down, PyCharm will give you options for managing all the project interpreters that PyCharm knows about.
 
 ## Conclusion
 

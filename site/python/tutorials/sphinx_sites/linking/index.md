@@ -10,8 +10,7 @@ thumbnail: thumbnail.png
 ---
 
 Websites have links, of course, and static site generators can generate those links for you.
-It turns out to be very helpful.
-For example, a correctly-relative link will be generated to the target, from the source -- which isn't as easy as it sounds.
+It turns out to be very helpful. For example, a correctly-relative link will be generated to the target, from the source -- which isn't as easy as it sounds.
 
 Sphinx, though, takes linking to a different level.
 It gathers all the resources in your site and makes, essentially, a big tree.

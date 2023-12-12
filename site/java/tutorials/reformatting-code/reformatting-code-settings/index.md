@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 
 ## Where and How to Change Settings for Reformat Code
 
-You can view the settings for code formatting with **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) to display the Preferences/Settings dialog. This dialog is searchable so the fastest way to find the settings is by typing in _code style_. You can then select the language you want to change the settings for. I'm going to use _Java_ for this tutorial.
+You can view the settings for code formatting with <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) to display the Preferences/Settings dialog. This dialog is searchable so the fastest way to find the settings is by typing in _code style_. You can then select the language you want to change the settings for. I'm going to use _Java_ for this tutorial.
 
 Before you go diving in and changing settings, be aware that these settings are defined at the project and IDE level. You can only have one Project scheme, and it's applied to your current project. If you want to change it, you need to first select the Default IDE scheme, then press the cog to the right of the drop-down and select Duplicate. You can subsequently copy this new scheme to your project if you want to.
 

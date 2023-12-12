@@ -15,4 +15,4 @@ seealso:
 video: "https://youtu.be/AdTQLM6zlMk"
 ---
 
-You can use **⌥⇧⌘U** (macOS) or **Ctrl+Alt+Shift+U** (Windows/Linux) to generate a UML diagram for your code which can help you and your team to read and understand the codebase.
+You can use <kbd>⌥⇧⌘U</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+U</kbd> (Windows/Linux) to generate a UML diagram for your code which can help you and your team to read and understand the codebase.

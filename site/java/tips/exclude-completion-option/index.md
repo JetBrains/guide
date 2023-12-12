@@ -17,4 +17,4 @@ seealso:
 video: "https://youtu.be/hOCa2-q7W2w"
 ---
 
-You can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to show context actions and exclude completion options that you don't want to be displayed in the future.
+You can use <kbd>Alt+Enter</kbd> (Windows/Linux), to show context actions and exclude completion options that you don't want to be displayed in the future.

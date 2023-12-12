@@ -14,4 +14,4 @@ seealso:
 video: "https://youtu.be/8veVJRyjcK8"
 ---
 
-You can enable soft wrap for the editor with **⇧⇧** (macOS), or _Shift+Shift_ (Windows/Linux), for the Search Everywhere dialogue, and then typing in _soft wrap_. You can also go to Preferences/Settings > Editor > General to enable Soft Wraps for more file types by default.
+You can enable soft wrap for the editor with <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), for the Search Everywhere dialogue, and then typing in _soft wrap_. You can also go to Preferences/Settings > Editor > General to enable Soft Wraps for more file types by default.

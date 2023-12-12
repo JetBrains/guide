@@ -21,4 +21,4 @@ seealso:
 video: "https://youtu.be/05Cu1YVJ-0I"
 ---
 
-Press **⇧⏎** (macOS), or **Shift+Enter** (Windows/Linux) to start a new line. You can do this at the start of a line, the middle of a line or the end of a line, the indentation will always be correct. Alternatively, to start a new line above your current line of code, you can press **⌥⌘⏎** (macOS), or **Ctrl+Alt+Enter** (Windows/Linux)
+Press <kbd>⇧⏎/kbd> (macOS) / <kbd>Shift+Enter</kbd> (Windows/Linux) to start a new line. You can do this at the start of a line, the middle of a line or the end of a line, the indentation will always be correct. Alternatively, to start a new line above your current line of code, you can press <kbd>⌘⌥⏎</kbd> (macOS) / <kbd>Ctrl+Alt+Enter</kbd> (Windows/Linux).

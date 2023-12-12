@@ -17,6 +17,6 @@ seealso:
 video: "https://youtu.be/Csv5TKu0TeY"
 ---
 
-IntelliJ IDEA can identify classes that are data holders and can be converted to records. The class will be highlighted with a warning (yellow underline) - press **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux) and IntelliJ IDEA will suggest converting the class to a record.
+IntelliJ IDEA can identify classes that are data holders and can be converted to records. The class will be highlighted with a warning (yellow underline) - press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and IntelliJ IDEA will suggest converting the class to a record.
 
 The fields will be become record components, the constructor and accessors will be removed. If we had equals, hashCode and toString methods on our class, we can optionally remove these and rely on the default record implementation.

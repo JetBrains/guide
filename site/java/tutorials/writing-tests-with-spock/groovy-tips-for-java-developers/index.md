@@ -25,7 +25,7 @@ In the `when` section of the test in the last example, we're actually reaching r
 
 Often, if we need something visible for testing we probably will need it visible in production code too.
 
-Go into your Polygon class and press **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux) on the field and get IntelliJ IDEA to create a getter for the field.
+Go into your Polygon class and press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) on the field and get IntelliJ IDEA to create a getter for the field.
 
 ![](./12.png)
 

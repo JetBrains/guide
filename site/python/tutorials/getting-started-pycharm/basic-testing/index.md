@@ -32,7 +32,7 @@ We can create our test file and get PyCharm to create our Test Source Root at th
 
 You can also tell PyCharm that this new folder is the root for all your tests in this project by right-clicking on the newly created `test` folder and selecting **Mark Directory as** > **Test Sources Root**.
 
-PyCharm will generate the empty test file for us, but let’s open it in the right split so we can see both our class and our test. You can do that by selecting the file and then using (**⇧⏎** | **Shift+Return**).
+PyCharm will generate the empty test file for us, but let’s open it in the right split so we can see both our class and our test. You can do that by selecting the file and then using <kbd>⇧⏎</kbd> (macOS) / <kbd>Shift+Enter</kbd> (Windows/Linux).
 
 ![split-screen.png](split-screen.png)
 
@@ -48,7 +48,7 @@ You can also select the current file from the run configurations dropdown.
 
 ![run-config-run-tests.png](run-config-run-tests.png)
 
-Of course, you can also access all your Run Configurations with (**⌘⌥R** | **F9**) and then select the one that you want.
+Of course, you can also access all your Run Configurations with <kbd>⌥⌘R</kbd> (macOS) / <kbd>F9</kbd> (Windows/Linux) and then select the one that you want.
 
 Your Run tool window will open indicating how many tests have passed or failed. In our case, all tests are passing.
 

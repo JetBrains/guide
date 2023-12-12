@@ -16,17 +16,8 @@ cardThumbnail: ./card.png
 video: "https://www.youtube.com/watch?v=JUmIiZpazic"
 ---
 
-When you're writing Angular applications and working in templates, you're
-usually in the flow...juggling several concepts and cranking through lots
-of small components. It's what Angular, with its TypeScript roots, was
-made for.
+When you're writing Angular applications and working in templates, you're usually in the flow...juggling several concepts and cranking through lots of small components. It's what Angular, with its TypeScript roots, was made for.
 
-Autocomplete is wonderful, except when it gives tons of choices. You have
-to stop, sort through a long list, and find the right context for a variable
-name. But it shouldn't have to be a speedbump...there is a logical path back
-to the loop variable, then the array being looped through, back to the
-component connected to the template, and finally the interface supporting
-the shape of that data type.
+Autocomplete is wonderful, except when it gives tons of choices. You have to stop, sort through a long list, and find the right context for a variable name. But it shouldn't have to be a speedbump...there is a logical path back to the loop variable, then the array being looped through, back to the component connected to the template, and finally the interface supporting the shape of that data type.
 
-WebStorm, and thus PyCharm Professional, can follow that path and offer
-autocomplete suggestions with the best choices for that context listed first.
+WebStorm, and thus PyCharm Professional, can follow that path and offer autocomplete suggestions with the best choices for that context listed first.

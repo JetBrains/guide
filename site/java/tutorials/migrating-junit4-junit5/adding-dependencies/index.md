@@ -29,7 +29,7 @@ This project is currently using JUnit 4.13, but these guidelines apply to any ve
 <!-- rest of pom.xml below -->
 ```
 
-The first thing we need to do in order to migrate to JUnit 5 is to add the JUnit 5 dependencies. We can get IntelliJ IDEA to do this for us, if we press **⌘N** (macOS) or **Alt+Insert** (Windows/Linux), within the POM file, the IDE will offer the option of adding a new dependency:
+The first thing we need to do in order to migrate to JUnit 5 is to add the JUnit 5 dependencies. We can get IntelliJ IDEA to do this for us, if we press <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux), within the POM file, the IDE will offer the option of adding a new dependency:
 
 ![](add-dependency.png)
 
@@ -62,10 +62,10 @@ We only need these dependencies to run tests, so add the test scope to them as w
 
 Now we should be able to safely remove the old JUnit 4 dependency from the Maven POM file, and the project will still compile. Click the Maven icon to make sure that IntelliJ IDEA removes the old dependency from the project.
 
-Navigate back to the Junit4ToJUnit5 class using **⌘O** (macOS), or **Ctrl+N** (Windows/Linux), to find the file. Rebuild the whole project with the new dependencies using **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux). If it all builds correctly, use **⌃R** (macOS), or **Shift+F10** (Windows/Linux), to run the test class to check the tests work as you expect.
+Navigate back to the Junit4ToJUnit5 class using <kbd>⌘0</kbd> (macOS) / <kbd>Alt+0</kbd> (Windows/Linux), to find the file. Rebuild the whole project with the new dependencies using **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux). If it all builds correctly, use <kbd>⌃R</kbd> (macOS) / <kbd>Shift+F10</kbd> (Windows/Linux), to run the test class to check the tests work as you expect.
 
-The results are shown in the [Run window](https://www.jetbrains.com/help/idea/run-tool-window.html) which you can access using **⌘4** (macOS), or **Alt+4** (Windows/Linux).
+The results are shown in the [Run window](https://www.jetbrains.com/help/idea/run-tool-window.html) which you can access using <kbd>⌘4</kbd> (macOS) / <kbd>Alt+4</kbd> (Windows/Linux).
 
 If the tests ran correctly you can commit your changes.
 
-We have added the new dependencies to the Maven pom.xml file and removed the old JUnit 4 dependency from it. Use **⌘K** (macOS), or **Ctrl+K** (Windows/Linux) to commit your changes since you know everything still works as expected. We'll continue the migration in a series of small steps.
+We have added the new dependencies to the Maven pom.xml file and removed the old JUnit 4 dependency from it. Use <kbd>⌘K</kbd> (macOS) / <kbd>Ctrl+K</kbd> (Windows/Linux) to commit your changes since you know everything still works as expected. We'll continue the migration in a series of small steps.

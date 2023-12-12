@@ -11,7 +11,7 @@ video: "https://youtu.be/H_XxH66lm3U?start=611"
 
 Now you've created your JAR file, you need to run it to check that the behaviour is the same as running your main method in your `HelloWorld.java` file. To run your Java application as a JAR, you can create a new [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html).
 
-1. Press **Shift** twice to use [search everywhere](https://www.jetbrains.com/guide/tips/search-everywhere/). If you don't know a shortcut in IntelliJ IDEA, search everywhere is a great way to search for what you need. In this instance, you want to create a new run configuration, so type into the dialog _edit configurations_.
+1. Press <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux) to use [search everywhere](https://www.jetbrains.com/guide/tips/search-everywhere/). If you don't know a shortcut in IntelliJ IDEA, search everywhere is a great way to search for what you need. In this instance, you want to create a new run configuration, so type into the dialog _edit configurations_.
 
 2. When the correct option appears you can use the arrow keys to select it and press **Enter**.
 
@@ -21,7 +21,7 @@ Now you've created your JAR file, you need to run it to check that the behaviour
 
 ![Run configuration for HelloWorld.java](class-run-configuration.png)
 
-4. Let's create a new configuration for running our new JAR file. You can do that by pressing the **+** button and select _JAR Application_ from the list.
+4. Let's create a new configuration for running our new JAR file. You can do that by pressing <kbd>+</kbd> (macOS) / <kbd>Plus</kbd> (Windows/Linux) and select _JAR Application_ from the list.
 
 5. First, give your new run configuration a name such as `HelloWorld JAR` so you can tell the difference between this one and the one that IntelliJ IDEA created earlier.
 
@@ -29,7 +29,7 @@ Now you've created your JAR file, you need to run it to check that the behaviour
 
 ![Path to JAR file](path-to-jar.png)
 
-7. Scroll down to the **Before launch** section at the bottom of the dialog. Press **+** here and select _Build Artifacts_ from the drop-down list.
+7. Scroll down to the **Before launch** section at the bottom of the dialog. Press <kbd>+</kbd> (macOS) / <kbd>Plus</kbd> (Windows/Linux) here and select _Build Artifacts_ from the drop-down list.
 
 ![Select artifacts](select-artifacts.png)
 

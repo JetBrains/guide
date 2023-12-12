@@ -38,7 +38,7 @@ We can do this by:
 
 - Selecting one of the suggestions in the message;
 - Pressing on the Refresh Gradle icon in the top right,
-- Using the keyboard shortcut **⇧⌘I** (macOS), or **Ctrl+Shift+O** (Windows/Linux).
+- Using the keyboard shortcut <kbd>⌘⇧I</kbd> (macOS) / <kbd>Ctrl+Shift+O</kbd> (Windows/Linux).
 
 Once IntelliJ IDEA has reloaded our updated build file with the new dependency, this new dependency will appear in our external libraries in the [project window](https://www.jetbrains.com/help/idea/project-tool-window.html).
 

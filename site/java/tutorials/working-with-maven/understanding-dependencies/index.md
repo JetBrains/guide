@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/pt3uB0sd5kY?start=81"
 ---
 
-We can easily add new dependencies with the **Generate** option from the Code menu, or using **⌘N** (macOS), or **Alt+Insert** (Windows/Linux).
+We can easily add new dependencies with the **Generate** option from the Code menu, or using <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux).
 
 ![generate-dependency.png](generate-dependency.png)
 

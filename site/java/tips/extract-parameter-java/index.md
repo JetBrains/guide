@@ -18,6 +18,6 @@ seealso:
 video: "https://youtu.be/0qAxLdUS0Vo"
 ---
 
-Highlight the code you want to extract to a field and press **⌥⌘P** (macOS), or **Ctrl+Alt+P** (Windows/Linux), to extract it.
+Highlight the code you want to extract to a field and press <kbd>⌥⌘P</kbd> (macOS) / <kbd>Ctrl+Alt+P</kbd> (Windows/Linux), to extract it.
 
 Extracting parameters can be useful in improving the readability of your code.

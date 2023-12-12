@@ -70,9 +70,7 @@ I’m now going to run the following command:
 kubectl config get-contexts
 ```
 
-This will generate a list of multiple clusters. We currently have two clusters attached: One is a
-local Kubernetes cluster running through Docker Desktop, and the other is the GKE Cluster,
-which is currently selected, as shown by the asterisk (\*) .
+This will generate a list of multiple clusters. We currently have two clusters attached: One is a local Kubernetes cluster running through Docker Desktop, and the other is the GKE Cluster, which is currently selected, as shown by the asterisk (\*) .
 
 ![run-gke-8](./images/screen129.png)
 
@@ -192,18 +190,15 @@ You can see the pod IP is private, and it's being exposed through the LoadBalanc
 
 ![run-gke-26](./images/screen147.png)
 
-You can open this IP directly in the browser or via a proxy with no difference in functionality. You’re now directly
-connected with the public-facing load balancer.
+You can open this IP directly in the browser or via a proxy with no difference in functionality. You’re now directly connected with the public-facing load balancer.
 
 ![run-gke-27](./images/screen148.png)
 
-If you stop the running process, then the deployment and service will be deleted and the IP released. In this
-case, if you run the application again, you’ll receive a new LoadBalancer IP.
+If you stop the running process, then the deployment and service will be deleted and the IP released. In this case, if you run the application again, you’ll receive a new LoadBalancer IP.
 
 ![run-gke-28](./images/screen149.png)
 
-Next, go ahead and add the line **db.sqlite3** to the **.dockerignore** file. This is because we are going to use
-MySQL and I don’t want this file to be added to my image.
+Next, go ahead and add the line **db.sqlite3** to the **.dockerignore** file. This is because we are going to use MySQL and I don’t want this file to be added to my image.
 
 ![run-gke-29](./images/screen150.png)
 
@@ -216,12 +211,9 @@ the host to the private IP we just copied.
 
 ![run-gke-31](./images/screen152.png)
 
-It’s essential that you consistently employ a robust password and avoid utilizing hardcoded
-text within the codebase. Instead, consider passing data through environment variables or utilizing
-services such as Google Cloud's Secret Manager or HashiCorp Vault.
+It’s essential that you consistently employ a robust password and avoid utilizing hardcoded text within the codebase. Instead, consider passing data through environment variables or utilizing services such as Google Cloud's Secret Manager or HashiCorp Vault.
 
-Now, open the `requirements.txt` file and add `mysqlclient`. Make sure to add a new version to avoid
-compatibility issues, otherwise the latest version will always be selected.
+Now, open the `requirements.txt` file and add `mysqlclient`. Make sure to add a new version to avoid compatibility issues, otherwise the latest version will always be selected.
 
 ![run-gke-32](./images/screen153.png)
 
@@ -297,8 +289,7 @@ Click on the **CloudSQL icon** on the right-hand sidebar.
 
 ![run-gke-45](./images/screen166.png)
 
-Now click on `cloud-sample-db`. You’ll see that we don’t have a public IP address. To view the
-list of tables and the database information, we need to enable the public IP and access it externally.
+Now click on `cloud-sample-db`. You’ll see that we don’t have a public IP address. To view the list of tables and the database information, we need to enable the public IP and access it externally.
 
 ![run-gke-46](./images/screen167.png)
 
@@ -317,9 +308,7 @@ Under **Authorized Networks**:
 - Create a new network.
 - Provide a CIDR notation of 0.0.0.0/0.
 
-This will allow you to access your database from anywhere in the world. However, this
-is also a fairly high security risk and leaves you vulnerable to hackers. Please follow
-the defense-in-depth approach and limit the network security to your organization's network or VPN.
+This will allow you to access your database from anywhere in the world. However, this is also a fairly high security risk and leaves you vulnerable to hackers. Please follow the defense-in-depth approach and limit the network security to your organization's network or VPN.
 
 ![run-gke-49](./images/screen170.png)
 
@@ -375,11 +364,9 @@ Then click on **Create Zone**.
 
 ![run-gke-61](./images/screen182.png)
 
-I’m now going to register a DNS record of the `mukul.click` domain. This domain was purchased
-from a third-party domain registrar.
+I’m now going to register a DNS record of the `mukul.click` domain. This domain was purchased from a third-party domain registrar.
 
-Provide the necessary details as shown in the image below. You’ll need to provide your
-own domain name under the DNS name.
+Provide the necessary details as shown in the image below. You’ll need to provide your own domain name under the DNS name.
 
 ![run-gke-62](./images/screen183.png)
 
@@ -395,11 +382,9 @@ Below you can see the four DNS records which need to be updated in the third-par
 
 ![run-gke-64](./images/screen185.png)
 
-As you can see, the domain is registered with Namecheap, and I’ve already updated the DNS. Just
-for your information, DNS propagation takes around 24–48 hours, though occasionally it can be done more quickly.
+As you can see, the domain is registered with Namecheap, and I’ve already updated the DNS. Just for your information, DNS propagation takes around 24–48 hours, though occasionally it can be done more quickly.
 
-If you purchased yours from GoDaddy or some other registrar, then the process
-will be the same, but the UI will be different.
+If you purchased yours from GoDaddy or some other registrar, then the process will be the same, but the UI will be different.
 
 ![run-gke-65](./images/screen186.png)
 
@@ -409,9 +394,7 @@ Now go to **VPC networks**.
 
 Under IP addresses, click on **External IP Addresses**.
 
-First, we need to create a static public IP address that we
-are going to use with the ingress. You’ll therefore need to
-point your domain to the static external IP.
+First, we need to create a static public IP address that we are going to use with the ingress. You’ll therefore need to point your domain to the static external IP.
 
 ![run-gke-67](./images/screen188.png)
 
@@ -506,8 +489,7 @@ I’ll now go ahead and apply all the manifests created under the ingress direct
 
 ![run-gke-85](./images/screen206.png)
 
-As you can see, the ingress and managed certificates are under provisioning, and it will
-be a couple of minutes before they’re active.
+As you can see, the ingress and managed certificates are under provisioning, and it will be a couple of minutes before they’re active.
 
 ![run-gke-86](./images/screen207.png)
 ![run-gke-87](./images/screen208.png)
@@ -556,11 +538,9 @@ Now, I’ll perform a `DELETE` operation, for which I’ll receive a **204 No Co
 
 ![run-gke-95](./images/screen216.png)
 
-And there we have it. Our full walk-through of
-working with the Google Cloud Code plugin is complete. I hope you found it helpful! 🙂
+And there we have it. Our full walk-through of working with the Google Cloud Code plugin is complete. I hope you found it helpful! 🙂
 
-With this knowledge, you should now be able to focus on
-development while the Google Cloud Code plugin does the heavy lifting.
+With this knowledge, you should now be able to focus on development while the Google Cloud Code plugin does the heavy lifting.
 
 ## Bonus: Cloud Run
 
@@ -616,8 +596,7 @@ You can see in the terminal that the build process has been initiated.
 
 ![run-gke-105](./images/screen226.png)
 
-Just wait a couple of minutes. Once everything is done, you’ll
-receive a working URL as shown on the screenshot below.
+Just wait a couple of minutes. Once everything is done, you’ll receive a working URL as shown on the screenshot below.
 
 ![run-gke-106](./images/screen227.png)
 
@@ -637,6 +616,4 @@ And that’s by no means all. Cloud Run can also capture Django logs seamlessly.
 
 ![run-gke-110](./images/screen231.png)
 
-Cloud Run is a managed platform and has a wide range of functionalities. For the
-best experience, I highly recommend following the instructions provided in the
-official documentation published by Google. I hope you enjoyed this brief tutorial.
+Cloud Run is a managed platform and has a wide range of functionalities. For the best experience, I highly recommend following the instructions provided in the official documentation published by Google. I hope you enjoyed this brief tutorial.

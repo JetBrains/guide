@@ -110,8 +110,7 @@ The image below shows the newly created database tables.
 
 ## Models
 
-I’ll create a new model and name it “TodoList”. This model is going to store information in the
-content column alongside `created_at`, which adds a timestamp when a new object is created.
+I’ll create a new model and name it “TodoList”. This model is going to store information in the content column alongside `created_at`, which adds a timestamp when a new object is created.
 
 ![todo-app13](./images/screen49.png)
 
@@ -133,11 +132,7 @@ migrate
 
 ### Creating serializers
 
-“[Serializers](https://www.django-rest-framework.org/api-guide/serializers/) allow complex data such as
-querysets and model instances to be converted to native Python data types that can
-then be easily rendered into JSON, XML, or other content types. Serializers also provide
-deserialization, which allows parsed data to be converted back into complex types after
-the incoming data has first been validated.”
+“[Serializers](https://www.django-rest-framework.org/api-guide/serializers/) allow complex data such as querysets and model instances to be converted to native Python data types that can then be easily rendered into JSON, XML, or other content types. Serializers also provide deserialization, which allows parsed data to be converted back into complex types after the incoming data has first been validated.”
 
 To create a serializer, I am first going to create a new `serializers.py` file under the TODO app.
 
@@ -161,11 +156,9 @@ In this section, we’re going to focus on two major APIs:
 
 **TodoCreateListAPIView** inherits **[ListCreateAPIView](https://www.django-rest-framework.org/api-guide/generic-views/#listcreateapiview)**, which contains the **GET** and **POST** method handlers.
 
-**TodoAPIView** inherits **[RetrieveUpdateDestroyAPIView](https://www.django-rest-framework.org/api-guide/generic-views/#retrieveupdatedestroyapiview)**, which
-contains the **GET**, **PUT**, **PATCH**, and **DELETE** method handlers.
+**TodoAPIView** inherits **[RetrieveUpdateDestroyAPIView](https://www.django-rest-framework.org/api-guide/generic-views/#retrieveupdatedestroyapiview)**, which contains the **GET**, **PUT**, **PATCH**, and **DELETE** method handlers.
 
-If you look at lines 13–19, you’ll notice that we’ve overridden the `CreateModelMixin` `create()` method, which is responsible
-for creating new model instances. We’ve now customized it to return a custom JSON response.
+If you look at lines 13–19, you’ll notice that we’ve overridden the `CreateModelMixin` `create()` method, which is responsible for creating new model instances. We’ve now customized it to return a custom JSON response.
 
 Next, we’ll go ahead and register the routes in the `urls.py` file:
 
@@ -177,20 +170,17 @@ Next, we’ll go ahead and register the routes in the `urls.py` file:
 
 ![todo-app19](./images/screen54.png)
 
-Before progressing further, make sure you’ve added `db.sqlite3` to the `.dockerignore` file. This ensures it won’t be picked up
-when the image is being built, which means you’ll need to run the migration command inside the container manually.
+Before progressing further, make sure you’ve added `db.sqlite3` to the `.dockerignore` file. This ensures it won’t be picked up when the image is being built, which means you’ll need to run the migration command inside the container manually.
 
 ![todo-app20](./images/screen55.png)
 
-However, for the purposes of this tutorial, we can ignore this as we are not working in a production environment. Be sure to bear this
-point in mind when working on a real project, though.
+However, for the purposes of this tutorial, we can ignore this as we are not working in a production environment. Be sure to bear this point in mind when working on a real project, though.
 
 When working in a production environment you can try leveraging **[Kubernetes Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/job/)** which is more suitable for this use case.
 
 ### Running applications in a local cluster
 
-Click on the **Play** icon to execute the run process. This will start the build process and within
-a few seconds the Kubernetes manifests will be deployed on the local machine, which in this case is Docker Desktop.
+Click on the **Play** icon to execute the run process. This will start the build process and within a few seconds the Kubernetes manifests will be deployed on the local machine, which in this case is Docker Desktop.
 
 ![todo-app21](./images/screen56.png)
 
@@ -209,8 +199,7 @@ I’ll perform the **POST** and **GET** operations on `TodoCreateListAPIView`.
 
 ![todo-app25](./images/screen60.png)
 
-You can see the results for yourself: The API is working fine,
-and we got the expected response. We created a few sample **TODO** items and then retrieved
+You can see the results for yourself: The API is working fine, and we got the expected response. We created a few sample **TODO** items and then retrieved
 the list through the `GET` handler.
 
 Now let’s try out `TodoAPIView`, which performs multiple operations like `GET`, `UPDATE`, and `DELETE`.

@@ -17,4 +17,4 @@ animatedGif:
   height: 300
 ---
 
-Delete an entire line of code with _Cmd+Delete/Ctrl+Y_.
+Delete an entire line of code with <kbd>⌘␡</kbd> (macOS) / <kbd>Ctrl+Y</kbd> (Windows/Linux).

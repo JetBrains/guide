@@ -23,11 +23,11 @@ Or, if you have the [Tool Window Bars](https://www.jetbrains.com/help/idea/tool-
 
 ![Gradle tool bar button](./gradle-tool-button.png)
 
-The Recent Files dialog, which we can open with **⌘E** (macOS), or **Ctrl+E** (Windows/Linux), also shows a list of all the tool windows. We can either move down to the Gradle option using the mouse or using the arrow keys, or we can start typing "Gradle" to go straight to it.
+The Recent Files dialog, which we can open with <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux), also shows a list of all the tool windows. We can either move down to the Gradle option using the mouse or using the arrow keys, or we can start typing "Gradle" to go straight to it.
 
 ![Recent files dialog](./recent-files.png)
 
-We can also use Find Action, **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), and type "Gradle".
+We can also use Find Action, <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux), and type "Gradle".
 
 ![Find action](./find-action.png)
 

@@ -15,4 +15,4 @@ cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 
-To quickly add a new dependency to your project, add an import statement first, then press _⌥Enter / Alt+Enter_, and click _Install and add to dependencies/devDependencies in package.json_.
+To quickly add a new dependency to your project, add an import statement first, then press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), and click _Install and add to dependencies/devDependencies in package.json_.

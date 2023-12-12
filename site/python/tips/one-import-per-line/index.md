@@ -21,14 +21,9 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/XB4SnJ4XmUs"
 ---
 
-Writing Python code means importing stuff. Lots of code can mean lots
-of imports. Python is pretty picky about style, and so are you, which
-can mean lots of tedious manual gardening of your imports.
+Writing Python code means importing stuff. Lots of code can mean lots of imports. Python is pretty picky about style, and so are you, which can mean lots of tedious manual gardening of your imports.
 
-PyCharm's `Optimize Imports` acts as your import janitor and it
-has settings which let you specify some options on style import. PyCharm
-2018.3 adds a preference: "One Import Per Line". With this setting in
-place, PyCharms `Optimize Imports` action will rewrite lines like this:
+PyCharm's `Optimize Imports` acts as your import janitor and it has settings which let you specify some options on style import. PyCharm 2018.3 adds a preference: "One Import Per Line". With this setting in place, PyCharms `Optimize Imports` action will rewrite lines like this:
 
 ```python
 from project.models import Item, User, Account
@@ -42,6 +37,4 @@ from project.models import Item
 from project.models import User
 ```
 
-Don't forget, PyCharm can also run the `Optimize Imports` action, with
-options such as `Only VCS changed files`, across all the files in your
-project. Also, check out the other ways to customize import styles.
+Don't forget, PyCharm can also run the `Optimize Imports` action, with options such as `Only VCS changed files`, across all the files in your project. Also, check out the other ways to customize import styles.

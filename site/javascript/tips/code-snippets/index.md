@@ -19,6 +19,6 @@ animatedGif:
   height: 300
 ---
 
-Code snippets, or _Live Templates_ as they are called in JetBrains IDEs, can help you save and reuse code. To use them, type the _Live Template_ abbreviation and press _⇥ / Tab_ to expand it. You can also press _⌘J / Ctrl+J_ to check what code snippets are available in the current context.
+Code snippets, or _Live Templates_ as they are called in JetBrains IDEs, can help you save and reuse code. To use them, type the _Live Template_ abbreviation and press <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (Windows/Linux) to expand it. You can also press <kbd>⌘J</kbd> (macOS) / <kbd>Ctrl+J</kbd> (Windows/Linux) to check what code snippets are available in the current context.
 
 To see the full list of available code snippets, go to _Preferences / Settings | Editor | Live Templates_.

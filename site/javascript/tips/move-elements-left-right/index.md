@@ -19,5 +19,5 @@ animatedGif:
 
 You can swap function parameters, attributes in tags, and elements in objects, arrays and boolean expressions using _Move Element Left/Right_:
 
-- _Alt+Shift+Cmd+Left/Right_ on macOS
-- _Alt+Shift+Ctrl+Left/Right_ on Windows and Linux
+<kbd>⌃⌥←</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+Left Arrow</kbd> (Windows/Linux)
+<kbd>⌃⌥→</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+Right Arrow</kbd> (Windows/Linux)

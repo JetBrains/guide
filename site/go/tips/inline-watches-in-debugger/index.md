@@ -19,5 +19,3 @@ The best part? When you move away to a different scope, if the variable is not c
 **How to use:**
 
 During a debugging session, right click on any variable you'd like to watch and select **Add inline watch** from the context menu.
-
-<span class="tag is-rounded">New in 2020.3</span>

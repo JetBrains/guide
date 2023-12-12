@@ -13,7 +13,7 @@ video: "https://youtu.be/hBOm1XMEgXg"
 
 ## Configuring the Project Structure
 
-You can configure the structure of your project with **⌘;** (macOS), or **Ctrl**+**Alt**+**Shift**+**S** (Windows/Linux).
+You can configure the structure of your project with <kbd>⌘;</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+S</kbd> (Windows/Linux).
 
 The most important thing to note is that if you're using a build system such as [Maven](https://maven.apache.org/), or [Gradle](https://gradle.org/), they will override settings in your Project Structure.
 

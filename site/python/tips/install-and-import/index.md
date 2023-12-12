@@ -14,12 +14,10 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/ulT1LSWFqqE"
 ---
 
-You're writing code and want to import a package, and want PyCharm to generate the
-import. But you haven't installed it yet. PyCharm can do both.
+You're writing code and want to import a package, and want PyCharm to generate the import. But you haven't installed it yet. PyCharm can do both.
 
 Type the name of the package and hit `Alt-Enter`, then choose `Install and Import package`. PyCharm will do both: you'll see a notification during the installation,
 then the import will be generated in the right way, according to your project styles.
 
-Extra credit: if PyCharm sees that this new package isn't recorded in your package's
-`requirements.txt` or `Pipfile`, it will generate a warning which you can correct
+Extra credit: if PyCharm sees that this new package isn't recorded in your package's `requirements.txt` or `Pipfile`, it will generate a warning which you can correct
 with -- again -- `Alt-Enter`.

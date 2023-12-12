@@ -45,7 +45,7 @@ This file is generated with the dependencies that you selected when we created t
 
 The first dependency on `spring-boot-starter-web` is there because we selected **Spring Web** as a dependency. The second dependency on `spring-boot-starter-test` is something you get with any Spring application. It gives you the ability to create tests with various testing libraries.
 
-It's very easy to add dependencies to your `pom.xml` file once you have created your Project. Use **⌘N** (macOS), or **Alt+Ins** (Windows/Linux) and then browse for your dependency. However, for our demo, these are the only dependencies that we need.
+It's very easy to add dependencies to your `pom.xml` file once you have created your Project. Use <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) and then browse for your dependency. However, for our demo, these are the only dependencies that we need.
 
 ### The SpringHelloWorldDemoApplication.java File
 
@@ -87,7 +87,7 @@ If you head down to the **test** > **java** > **com.example.springhelloworlddemo
 
 ## Running your Spring Boot Application
 
-We have the basics of our Spring Boot Application at this point. You can run it with **Ctrl**+**R** (macOS), or **Shift**+**F10** (Windows/Linux). Alternatively you can use the gutter icons:
+We have the basics of our Spring Boot Application at this point. You can run it with <kbd>⌃R</kbd> (macOS) / <kbd>Shift+F10</kbd> (Windows/Linux). Alternatively you can use the gutter icons:
 
 ![Gutter icon to run the application](gutter-icon-run-application.png)
 

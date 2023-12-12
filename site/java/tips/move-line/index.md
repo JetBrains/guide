@@ -17,6 +17,6 @@ seealso:
 video: "https://youtu.be/L_h8NJdYyj4"
 ---
 
-Press **⌥⇧↑** (macOS), or **Alt+Shift+Up Arrow** (Windows/Linux), to move a line up. To move a line down use **⌥⇧↓** (macOS), or **Alt+Shift+Down Arrow** (Windows/Linux).
+Press <kbd>⌥⇧↑</kbd> (macOS) / <kbd>Alt+Shift+Up Arrow</kbd> (Windows/Linux), to move a line up. To move a line down use <kbd>⌥⇧↓</kbd> (macOS) / <kbd>Alt+Shift+Down Arrow</kbd> (Windows/Linux).
 
 This shortcut does not factor in scope. You can move lines in and out of scope.

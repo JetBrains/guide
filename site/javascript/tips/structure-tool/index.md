@@ -17,5 +17,4 @@ animatedGif:
   height: 300
 ---
 
-Use the _Structure_ tool window (_Cmd+7/Alt+7_) to get an overview of
-the currently opened file and for quick navigation.
+Use the _Structure_ tool window <kbd>⌘7</kbd> (macOS) / <kbd>Alt+7</kbd> (Windows/Linux) to get an overview of the currently opened file and for quick navigation.

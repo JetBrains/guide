@@ -18,5 +18,4 @@ seealso:
 video: "https://youtu.be/K_v965EzAJg"
 ---
 
-Go To Declaration or Usages (**⌘B** on macOS, or **Ctrl+B** on Windows/Linux) to see where code is declared or used.
-Go to Implementation (**⌘⌥B** on macOS, or **Ctrl+Alt+B** on Windows/Linux) can tell you where a method is implemented and take you there.
+Go To Declaration or Usages <kbd>⌥⌘B</kbd> (macOS) / <kbd>Ctrl+Alt+B</kbd> (Windows/Linux) to see where code is declared or used. Go to Implementation <kbd>⌥⌘B</kbd> (macOS) / <kbd>Ctrl+Alt+B</kbd> (Windows/Linux) can tell you where a method is implemented and take you there.

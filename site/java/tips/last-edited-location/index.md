@@ -17,4 +17,4 @@ seealso:
 video: "https://youtu.be/ErLxG_hTkwo"
 ---
 
-Use **⇧⌘⌫** (macOS), **Ctrl+Shift+Backspace** (Windows/Linux) to navigate to the last edited location.
+Use <kbd>⇧⌘⌫</kbd> (macOS) / <kbd>Ctrl+Shift+Backspace</kbd> (Windows/Linux) to navigate to the last edited location.

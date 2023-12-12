@@ -19,5 +19,3 @@ How can we quickly get back to the editor?
 We can press the _Esc_ key, and the focus will switch back to the editor.
 
 The tool window you're switching from will preserve its visibility state in this case.
-
-<span class="tag is-rounded">New in 2017.3</span>

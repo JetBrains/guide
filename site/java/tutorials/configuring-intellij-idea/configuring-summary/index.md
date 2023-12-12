@@ -15,12 +15,12 @@ video: "https://youtu.be/FtGS81ZNTE0"
 
 We've used the following shortcuts in this tutorial:
 
-| Name                     | macOS Shortcut | Windows Shortcut                 |
-| ------------------------ | -------------- | -------------------------------- |
-| Project Structure dialog | **⌘;**         | **Ctrl**+**Alt**+**Shift**+**S** |
-| Settings/Preferences     | **⌘,**         | **Ctrl**+**Alt**+**S**           |
-| Search Everywhere        | **⇧⇧**         | **Shift**+**Shift**              |
-| Find Action              | **⌘⇧A**        | **Ctrl** + **Shift** + **A**     |
+| Name                     | macOS Shortcut | Windows Shortcut            |
+| ------------------------ | -------------- | --------------------------- |
+| Project Structure dialog | <kbd>⌘;</kbd>  | <kbd>Ctrl+Alt+Shift+S</kbd> |
+| Settings/Preferences     | <kbd>⌘,</kbd>  | <kbd>Ctrl+Alt+S</kbd>       |
+| Search Everywhere        | <kbd>⇧⇧</kbd>  | <kbd>Shift+Shift</kbd>      |
+| Find Action              | <kbd>⌘⇧A</kbd> | <kbd>Ctrl+Shift+A</kbd>     |
 
 ### Key Points
 

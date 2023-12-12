@@ -26,6 +26,6 @@ If the project that you are importing uses a build tool, like Maven or Gradle, w
 ![Gradle](gradle.png)
 If you have an Eclipse project that doesn’t use a build tool, you can select Eclipse to migrate your Eclipse project to IntelliJ IDEA. For Maven and Gradle projects, IntelliJ IDEA configures the settings automatically. We’ll be able to adjust them after the project is imported.
 
-To see and change the settings for our project, you can go to our **Project Structure**. You can open the **Project Structure** from the menu by going to **File | Project Structure**, by using the shortcut (**⌘;** on macOS, **Ctrl+Alt+Shift+S** on Windows/Linux) or by using **Find Action** (**⌘⇧A** on macOS, or **Ctrl+Shift+A** on Windows/Linux). Here you can see and change the **Project Settings**.
+To see and change the settings for our project, you can go to our **Project Structure**. You can open the **Project Structure** from the menu by going to **File | Project Structure**, by using the shortcut <kbd>⌘;</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+S</kbd> (Windows/Linux) or by using **Find Action** <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux). Here you can see and change the **Project Settings**.
 ![Project Settings from menu](menu-project-settings.png)
 ![Project Settings](project-settings.png)

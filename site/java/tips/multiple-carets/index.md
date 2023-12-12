@@ -17,4 +17,4 @@ seealso:
 video: "https://youtu.be/z39jUnMZy44"
 ---
 
-Use multiple carets to make the same change in multiple places. Use **⌥** (on macOS) or **Ctrl** on Windows/Linux **_twice_**, holding it down the second time and the pressing the **Down** key to create a stack of carets.
+Use multiple carets to make the same change in multiple places. Use <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl<kbd/> (Windows/Linux), holding it down the second time and the pressing the **Down** key to create a stack of carets.

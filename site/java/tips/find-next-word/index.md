@@ -16,8 +16,8 @@ seealso:
 video: "https://youtu.be/Y0LhKg2tJfQ"
 ---
 
-Press **⌘G** (macOS), or **F3** (Windows/Linux), to move to the next occurrence of a word.
+Press <kbd>⌘G</kbd> (macOS) / <kbd>F3</kbd> (Windows/Linux), to move to the next occurrence of a word.
 
 **Pro tip:**
 
-Use **⌃⌘G** (macOS), or **Ctrl+Alt+Shift+J** (Windows/Linux), to select all occurrences of the same word.
+Use <kbd>⌃⌘G</kbd> (macOS) / <kbd>Ctrl+Alt+Shift</kbd> (Windows/Linux), to select all occurrences of the same word.

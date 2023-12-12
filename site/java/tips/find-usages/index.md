@@ -14,6 +14,6 @@ seealso:
 video: "https://youtu.be/TMD4QCStg3M"
 ---
 
-Press **⌥F7** (macOS), or **Alt+F7** (Windows/Linux), to bring up the **Find Usages** tool window. You can search a single file, your whole project, or customise the scope.
+Press <kbd>⌥F7</kbd> (macOS) / <kbd>Alt+F7</kbd> (Windows/Linux), to bring up the **Find Usages** tool window. You can search a single file, your whole project, or customise the scope.
 
 You can also configure the color of the usages highlighting or disable the automatic highlighting of usages.

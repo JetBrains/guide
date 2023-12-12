@@ -41,7 +41,7 @@ public class HelloWorldController {
 }
 ```
 
-4. Now we need to re-run our Spring application. You might need to stop it first if it's still running from the previous step. You can run it again with **Ctrl**+**R** (macOS), or **Shift**+**F10** (Windows/Linux).
+4. Now we need to re-run our Spring application. You might need to stop it first if it's still running from the previous step. You can run it again with <kbd>⌃R</kbd> (macOS) / <kbd>Shift+F10</kbd> (Windows/Linux).
 
 5. When you go to the browser, enter the following URL `localhost:8080`. You should see your text being returned:
 

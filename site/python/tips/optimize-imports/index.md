@@ -19,20 +19,11 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/lNm5ISUZqCE"
 ---
 
-PyCharm automates many "gardening" tasks when writing Python code. Managing your
-imports is one of them: with the `Optimize Imports` action, PyCharm cleans
+PyCharm automates many "gardening" tasks when writing Python code. Managing your imports is one of them: with the `Optimize Imports` action, PyCharm cleans
 up your imports, using your import style preferences.
 
-For example, Python's
-[PEP 8 section on import style](https://www.python.org/dev/peps/pep-0008/#imports)
-might complain that you have an unused imports, your imports aren't sorted within
-a group, and you have two top-level imports on the same line. Also, you might
-set in a project that you'd like to always split imports from the same source.
+For example, Python's [PEP 8 section on import style](https://www.python.org/dev/peps/pep-0008/#imports) might complain that you have an unused imports, your imports aren't sorted within a group, and you have two top-level imports on the same line. Also, you might set in a project that you'd like to always split imports from the same source.
 
-PyCharm can clean all of that up using `Optimize Imports`, which cleans up your
-imports based on settings you can save. This action can be run on a single
-file or across _all files in a project_. Also, the `Commit` dialog box has
-a checkbox to run it in the `Before Commit` section.
+PyCharm can clean all of that up using `Optimize Imports`, which cleans up your imports based on settings you can save. This action can be run on a single file or across _all files in a project_. Also, the `Commit` dialog box has a checkbox to run it in the `Before Commit` section.
 
-Finally, PyCharm Professional applies all of this to imports in other languages
-such as JavaScript and TypeScript.
+Finally, PyCharm Professional applies all of this to imports in other languages such as JavaScript and TypeScript.

@@ -20,5 +20,3 @@ screenshot: ./screenshot.png
 **How to use:**
 
 In the \__test_ file, click the **Run Test** icon in the gutter and navigate to **Run | go test -fuzz FuzzMyTest**.
-
-<span class="tag is-rounded">New in 2021.2</span>

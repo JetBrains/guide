@@ -22,7 +22,7 @@ animatedGif:
 How to quickly create a code snippet:
 
 1. Select the code you find yourself using often.
-2. Press _Cmd/Ctrl+Shift+A_ and type _Save as Live Template_.
+2. Press <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) and type _Save as Live Template_.
 3. Add the abbreviation and description.
 4. Save the code snippet.
 

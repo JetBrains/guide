@@ -19,11 +19,11 @@ Here are the IntelliJ IDEA shortcuts that we used.
 
 | Name                                                                                             | macOS Shortcut | Windows / Linux Shortcut |
 | ------------------------------------------------------------------------------------------------ | -------------- | ------------------------ |
-| Open / Close [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html) | **⌘1**         | **Alt+1**                |
-| Find in Files                                                                                    | **⌘⇧F**        | **Ctrl+Shift+F**         |
-| Commit changes                                                                                   | **⌘K**         | **Ctrl+K**               |
-| Commit tool window                                                                               | **⌘1**         | **Alt+1**                |
-| Show diff                                                                                        | **⌘D**         | **Ctrl+D**               |
+| Open / Close [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html) | <kbd>⌘1</kbd>  | <kbd>Alt+1</kbd>         |
+| Find in Files                                                                                    | <kbd>⌘⇧F</kbd> | <kbd>Ctrl+Shift+F</kbd>  |
+| Commit changes                                                                                   | <kbd>⌘K</kbd>  | <kbd>Ctrl+K</kbd>        |
+| Commit tool window                                                                               | <kbd>⌘1</kbd>  | <kbd>Alt+1</kbd>         |
+| Show diff                                                                                        | <kbd>⌘D</kbd>  | <kbd>Ctrl+D</kbd>        |
 
 ### Related Links
 

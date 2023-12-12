@@ -16,6 +16,6 @@ seealso:
 video: "https://youtu.be/mEs1Mo2h1cg"
 ---
 
-Press **⌘F6** (macOS), or **Ctrl+F6** (Windows/Linux), to bring up the **Change Signature** dialog. You can add or remove method parameters here.
+Press <kbd>⌘F6</kbd> (macOS) / <kbd>Ctrl+F6</kbd> (Windows/Linux), to bring up the **Change Signature** dialog. You can add or remove method parameters here.
 
-You can use **⌘N** (macOS), or **Alt+Ins** (Windows/Linux), to add a new parameter.
+You can use <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux), to add a new parameter.

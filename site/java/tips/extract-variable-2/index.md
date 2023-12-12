@@ -21,4 +21,4 @@ seealso:
 video: "https://youtu.be/cT4ntaPr_uQ"
 ---
 
-The Extract Variable refactoring wraps a selected expression into a variable. Select an expression and press **⌥⌘V** (on Mac) or **Ctrl+Alt+V** (on Windows/Linux).
+The Extract Variable refactoring wraps a selected expression into a variable. Select an expression and press <kbd>⌥⌘V</kbd> (macOS) / <kbd>Ctrl+Alt+V</kbd> (Windows/Linux).

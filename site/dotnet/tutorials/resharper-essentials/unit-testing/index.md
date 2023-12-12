@@ -42,11 +42,11 @@ From the tool window, you can start a new unit testing session. You can select w
 
 When working with unit tests, keyboard shortcuts can help you be more productive. By default, unit test shortcuts will be a key combination that starts with <kbd>Ctrl+U</kbd> (for **U**nit testing). Some shortcuts are context-dependent, others are global. Here are some useful shortcuts to remember:
 
-- <kbd>Ctrl+U, Ctrl+R</kbd> run a test, generally from the editor when within the scope of a unit test.
-- <kbd>Ctrl+U, Ctrl+D</kbd> debug the unit test that's in scope.
-- <kbd>Ctrl+U, Ctrl+L</kbd> run all unit tests.
-- <kbd>Ctrl+U, Ctrl+Y</kbd> run the current test session.
-- <kbd>Ctrl+U, Ctrl+U</kbd> run the previous run, whether it's a session, a group of tests, or a single unit test.
+- <kbd>Ctrl+U</kbd>, <kbd>Ctrl+R</kbd> run a test, generally from the editor when within the scope of a unit test.
+- <kbd>Ctrl+U</kbd>, <kbd>Ctrl+D</kbd> debug the unit test that's in scope.
+- <kbd>Ctrl+U</kbd>, <kbd>Ctrl+L</kbd> run all unit tests.
+- <kbd>Ctrl+U</kbd>, <kbd>Ctrl+Y</kbd> run the current test session.
+- <kbd>Ctrl+U</kbd>, <kbd>Ctrl+U</kbd> run the previous run, whether it's a session, a group of tests, or a single unit test.
 
 Too much to remember? There's always <kbd>Alt+Enter</kbd> to trigger the action menu, where you have the option to run, debug, profile, and cover a single test or test class.
 

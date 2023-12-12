@@ -16,12 +16,12 @@ video: "https://youtu.be/gX8KgyzC-_A"
 
 Rider is packed full of features that can help you write better code, faster. Let’s look at some of the most essential ones.
 
-First up is code completion. Rider shows you **context-aware suggestions** as you type and completes keywords and symbols from language APIs and project dependencies. To add these suggestions, you can use <kbd>Enter</kbd>, or press <kbd>Tab</kbd> to replace an existing item.
+First up is code completion. Rider shows you **context-aware suggestions** as you type and completes keywords and symbols from language APIs and project dependencies. To add these suggestions, you can use <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (VS Windows/Linux), or press <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (VS Windows/Linux) to replace an existing item.
 
 The IDE also makes it easy to keep your code error-free. For example, you’ll see green squiggly lines under typos. Hover over the highlighted issue to learn more about it. In the popup that appears, you’ll see a short description of the problem and a quick-fix for it if available.
 
-To see the full list of all the available actions in the current context, press <kbd>Alt+Enter</kbd>.
-From here, you can **choose the action you want to apply and press <kbd>Enter</kbd> to perform it**.
+To see the full list of all the available actions in the current context, press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (VS Windows/Linux).
+From here, you can **choose the action you want to apply and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (VS Windows/Linux) to perform it**.
 
 What if you want to **look up the documentation for a symbol**? There’s no need to go to [MDN](https://developer.mozilla.org) for that! Just hover over that symbol or focus on it and press <kbd>F1</kbd>, and the IDE will show you the relevant documentation.
 

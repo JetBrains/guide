@@ -19,5 +19,5 @@ animatedGif:
 
 When looking for text in a file, you can limit the search to only the selected part of code:
 
-- Select a code fragment, hit _Cmd/Ctrl+F_, and enter your search query.
-- Alternatively, press _Cmd/Ctrl+F_, type your search query, then select the code, and click the _In Selection_ icon.
+- Select a code fragment, hit <kbd>⌘F</kbd> (macOS) / <kbd>Ctrl+F</kbd> (Windows/Linux), and enter your search query.
+- Alternatively, press <kbd>⌘F</kbd> (macOS) / <kbd>Ctrl+F</kbd> (Windows/Linux), type your search query, then select the code, and click the _In Selection_ icon.

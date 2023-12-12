@@ -14,4 +14,5 @@ cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 
-Want to know more about a CSS property? Hover over it or press _F1_ / _Ctrl+Q_ to see its description from MDN, information about its values, and which browsers support this property.
+Want to know more about a CSS property? Hover over it or press <kbd>F1</kbd> (macOS) / <kbd>Ctrl+Q</kbd> (Windows/Linux)
+to see its description from MDN, information about its values, and which browsers support this property.

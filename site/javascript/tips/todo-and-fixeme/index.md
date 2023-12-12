@@ -15,8 +15,6 @@ cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 
-Want to remind yourself to do or fix something in your code? Add a _TODO_ or
-_Fixme_ comment.
+Want to remind yourself to do or fix something in your code? Add a _TODO_ or _Fixme_ comment.
 
-You will see all these reminders in the TODO tool window. WebStorm will also warn you
-before the commit if you have any TODOs left.
+You will see all these reminders in the TODO tool window. WebStorm will also warn you before the commit if you have any TODOs left.

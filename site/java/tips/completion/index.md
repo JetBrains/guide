@@ -22,6 +22,6 @@ video: "https://youtu.be/K51K5Jc_MGc"
 IntelliJ IDEA offers various types of code completion:
 
 - Basic completion
-- Smart or type-based completion (**⌃⇧␣** on macOS, or **Ctrl+Shift+Space** on Windows/Linux) suggests the right type
-- Statement completion (**⌘⇧⏎** on macOS, or **Ctrl+Shift+Return** on Windows/Linux) completes the statement
+- Smart or type-based completion <kbd>⌃⇧␣</kbd> (macOS) / <kbd>Ctrl+Shift+Space</kbd> (Windows/Linux) suggests the right type
+- Statement completion <kbd>⌃⇧⏎</kbd> (macOS) / <kbd>Ctrl+Shift+Enter</kbd> (Windows/Linux) completes the statement
 - Postfix completion allows you to keep typing forward

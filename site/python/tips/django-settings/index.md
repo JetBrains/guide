@@ -20,5 +20,4 @@ video: "https://youtu.be/Tc1n43evD_8"
 
 _PyCharm can autocomplete, even inside a Django string._
 
-Editing a magic string, such as the list of installed apps in Django's `settings.py`?
-PyCharm understands those and can autocomplete and navigate.
+Editing a magic string, such as the list of installed apps in Django's `settings.py`? PyCharm understands those and can autocomplete and navigate.

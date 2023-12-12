@@ -21,4 +21,4 @@ animatedGif:
   height: 300
 ---
 
-Whenever you’re presenting at conferences or company events, use the _Presentation_ mode which makes it easier for the audience to see what’s going on in the editor (_Ctrl + ` | View Mode | Enter/Exit Presentation Mode_).
+Whenever you’re presenting at conferences or company events, use the _Presentation_ mode which makes it easier for the audience to see what’s going on in the editor (<kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux) and | View Mode | Enter/Exit Presentation Mode\_).

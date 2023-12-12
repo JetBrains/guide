@@ -16,7 +16,7 @@ You can, of course, [set a keyboard shortcut](https://www.jetbrains.com/help/ide
 
 Alternatively, or even additionally, we can [add an abbreviation](https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html#add-abbreviation).
 
-On the Keymap page of the Settings/Preferences dialog, **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux), right-click an action and select **Add Abbreviation**.
+On the Keymap page of the Settings/Preferences dialog, <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux), right-click an action and select **Add Abbreviation**.
 
 ![Add abbreviation](./add-abbreviation.png)
 

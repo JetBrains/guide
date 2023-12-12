@@ -29,5 +29,5 @@ As you write code and add more conditional statements, expressions, and other co
 Once we rename something, we are reminded that variables, expressions, and functions are called from many place in the codebase. If a name is changed, it needs to also be changed everywhere it is called. This could mean thousands of named references to update in large projects. Not fun!
 Fortunately, both Rider and ReSharper properly update all references to the new name, so we don't have to.
 
-To refactor names in Rider or ReSharper, choose the entity you want to change, such as a variable, class, or method and change it. The IDE recognizes the change and displays a light bulb indicating there's an action you can take. To continue, press `Alt + Enter` or `Ctrl + Shift + R` to invoke the refactoring dialog. Select **Apply Rename Refactoring**, and you're done!
+To refactor names in Rider or ReSharper, choose the entity you want to change, such as a variable, class, or method and change it. The IDE recognizes the change and displays a light bulb indicating there's an action you can take. To continue, press <kbd>⌘⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+R</kbd> (VS Windows/Linux) to invoke the refactoring dialog. Select **Apply Rename Refactoring**, and you're done!
 Rider updated all the required references.

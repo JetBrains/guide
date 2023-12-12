@@ -31,4 +31,4 @@ Press **Finish**, and IntelliJ IDEA will generate the Maven pom.xml for you.
 
 As well as creating the basic `pom.xml`, IntelliJ IDEA has also created the default directory structure for a Maven project with the source and test folders defined.
 
-You can use **⌘E** (macOS), or **Ctrl+E** (Windows/Linux) and then type in _Maven_ to open the Maven Projects window, where you can see the standard Maven lifecycle phases, as well as the goals defined by various Maven plugins.
+You can use <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) and then type i<kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux)n _Maven_ to open the Maven Projects window, where you can see the standard Maven lifecycle phases, as well as the goals defined by various Maven plugins.

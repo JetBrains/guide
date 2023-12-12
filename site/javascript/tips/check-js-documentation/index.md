@@ -20,4 +20,4 @@ animatedGif:
   height: 300
 ---
 
-Need to quickly check docs for the standard JavaScript methods and other symbols but don’t feel like googling? Hover over a symbol or press _F1_ to invoke the _Documentation_ popup. If needed, you can also go to the corresponding MDN page for more details right from there (make sure to press _F1_ to see the MDN link).
+Need to quickly check docs for the standard JavaScript methods and other symbols but don’t feel like googling? Hover over a symbol or press <kbd>F1<kbd/> (macOS) / <kbd>Ctrl+Q</kbd> (Windows/Linux) to invoke the _Documentation_ popup. If needed, you can also go to the corresponding MDN page for more details right from there (make sure to press <kbd>F1<kbd/> (macOS) / <kbd>F1</kbd> (Windows/Linux) to see the MDN link).

@@ -16,17 +16,17 @@ Did you know you can strip down PyCharm’s IDE UI? Add a new theme and customiz
 
 ## Themes
 
-The very first thing you may want to do is change the UI theme. To do that, go to Preferences/Settings (**⌘** | **Ctrl+Alt+S**) and navigate to the **Appearance** section on the left. You can see that PyCharm comes with some preinstalled themes, but there’s also a variety of custom ones to choose from. Let’s look in the **Plugins** section and search the marketplace for “theme”.
+The very first thing you may want to do is change the UI theme. To do that, go to Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and navigate to the **Appearance** section on the left. You can see that PyCharm comes with some preinstalled themes, but there’s also a variety of custom ones to choose from. Let’s look in the **Plugins** section and search the marketplace for “theme”.
 
 Let’s install one of the most popular themes, ”Dark Purple Theme”. PyCharm has now installed and switched to the community plugin for the Dark Purple theme.
 
 <img src="dark_purple_theme.png" alt="Dark purple theme" width="700"/>
 
-What if you want to quickly check what the other themes you’ve installed look like? You can go back to Preferences/Settings and change the current theme in **Appearance & Behavior** > **Appearance** or the switcher (**⌃\`** | **Ctrl+`**) to cycle through the themes.
+What if you want to quickly check what the other themes you’ve installed look like? You can go back to Preferences/Settings and change the current theme in **Appearance & Behavior** > **Appearance** or the switcher <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux) to cycle through the themes.
 
 ## Layout
 
-What if you don’t want it to look like an IDE at all? Let’s see how to get a lean UI while keeping the IDE. For example, if you want to make your workspace less cluttered, you can use the same switcher (**⌃\`** | **Ctrl+`**) then select **4 View Mode** and select **Zen mode**. This can can be very helpful whenever you need to remove distractions and focus on your code.
+What if you don’t want it to look like an IDE at all? Let’s see how to get a lean UI while keeping the IDE. For example, if you want to make your workspace less cluttered, you can use the same switcher <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux) then select **4 View Mode** and select **Zen mode**. This can can be very helpful whenever you need to remove distractions and focus on your code.
 
 You can also reposition tool windows and put them where you want them including having them floating on top of the editor or detached completely so that you can view it independently on a different monitor. If you don't like it you can always re-dock it. Another thing you can do to reduce clutter is to hide some UI elements. First, you can customize the Status Bar by right-clicking it and removing any widgets you’re not using.
 
@@ -34,16 +34,16 @@ You can also reposition tool windows and put them where you want them including 
 
 If you click the quick access button located on the bottom-right of the status bar to remove tool individual tool windows, or better still you can use the shortcuts to toggle them on and off. The most common ones are:
 
-Project tool window (**⌘1** | **Alt+1**)
-Run tool window (**⌘4** | **Alt+4**)
-Services tool window (**⌘8** | **Alt+8**)
-Git tool window (**⌘9** | **Alt+9**)
+Project tool window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux)
+Run tool window <kbd>⌘4</kbd> (macOS) / <kbd>Alt+4</kbd> (Windows/Linux)
+Services tool window <kbd>⌘8</kbd> (macOS) / <kbd>Alt+8</kbd> (Windows/Linux)
+Git tool window <kbd>⌘9</kbd> (macOS) / <kbd>Alt+9</kbd> (Windows/Linux)
 
-The fastest way to toggle the visibility of UI elements is the Find Action (**⌘⇧A** | **Ctrl+Shift+A**).For example, if you're not going to use breadcrumbs and you don’t want to see them, you can use Find Action, search for “breadcrumbs,” and then turn them off from there.
+The fastest way to toggle the visibility of UI elements is the Find Action <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux). For example, if you're not going to use breadcrumbs and you don’t want to see them, you can use Find Action, search for “breadcrumbs,” and then turn them off from there.
 
 ## Keymap
 
-You can modify your keymap in your Preferences/Settings (**⌘** | **Ctrl+Alt+S**) then search for "keyboard". Here you can choose the keymap you want to use, reassign existing shortcuts, and create custom shortcuts for the actions that don’t have anything associated with them.
+You can modify your keymap in your Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) then search for "keyboard". Here you can choose the keymap you want to use, reassign existing shortcuts, and create custom shortcuts for the actions that don’t have anything associated with them.
 
 Let’s say you want to know what shortcut is assigned to the _Event Log_ action, which is under Tool Windows. This action doesn't have a key binding by default, but you can add one.
 
@@ -57,7 +57,7 @@ Of course, you can also change your entire keymap and install plugins for custom
 
 ## Other Customizations
 
-Apart from theming and keymaps, there are lots of other things you may want to customize. If you don’t know where to find a specific setting, you can use Find Actions (**⌘⇧A** | **Ctrl+Shift+A**) to find it. For example, perhaps we want to change the default font.
+Apart from theming and keymaps, there are lots of other things you may want to customize. If you don’t know where to find a specific setting, you can use Find Actions <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) to find it. For example, perhaps we want to change the default font.
 
 You can also change things like your code style by searching for "python", then go to the Python section and make your changes there. For example, you can change the _Hard wrapping_ setting to wrap lines at 79 characters to follow the PEP-8 convention.
 

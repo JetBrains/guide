@@ -14,6 +14,4 @@ video: >-
 
 **How to use:**
 
-Invoke the _Rename refactoring_, _Shift + F6 on Windows/Linux_ or _⇧ + F6 on macOS_ and the IDE will detect automatically when it's invoked on a _useState_ hook in a React application and offer to rename all names associated with them.
-
-<span class="tag is-rounded">New in 2021.2</span>
+Invoke the _Rename refactoring_, <kbd>⇧F6</kbd> (macOS) / <kbd>Shift+F6</kbd> (Windows/Linux) and the IDE will detect automatically when it's invoked on a _useState_ hook in a React application and offer to rename all names associated with them.

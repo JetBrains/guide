@@ -19,11 +19,11 @@ Here are the IntelliJ IDEA shortcuts that we used.
 
 | Name                | macOS Shortcut | Windows / Linux Shortcut |
 | ------------------- | -------------- | ------------------------ |
-| Find Action         | **⌘⇧A**        | **Ctrl+Shift+A**         |
-| Project Tool Window | **⌘1**         | **Alt+1**                |
-| Find Tool Window    | **⌘3**         | **Alt+3**                |
-| Recent Files        | **⌘E**         | **Ctrl+E**               |
-| Go to Next Cycle    | **F2**         | **F2**                   |
+| Find Action         | <kbd>⌘⇧A</kbd> | <kbd>Ctrl+Shift+A</kbd>  |
+| Project Tool Window | <kbd>⌘1</kbd>  | <kbd>Alt+1</kbd>         |
+| Find Tool Window    | <kbd>⌘3</kbd>  | <kbd>Alt+3</kbd>         |
+| Recent Files        | <kbd>⌘E</kbd>  | <kbd>Ctrl+E</kbd>        |
+| Go to Next Cycle    | <kbd>F2</kbd>  | <kbd>F2</kbd>            |
 
 ### Related Links
 

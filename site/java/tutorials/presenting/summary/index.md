@@ -14,32 +14,32 @@ Now we know several tricks that will level up our presentation skills with Intel
 
 Here are the IntelliJ IDEA shortcuts that we used.
 
-| Name                                                                                             | macOS Shortcut | Windows / Linux Shortcut    |
-| ------------------------------------------------------------------------------------------------ | -------------- | --------------------------- |
-| [Open Preferences](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html)         | **⌘,**         | **Ctrl+Alt+S**              |
-| Open Quick Switch Scheme                                                                         | **⌃`**         | **Ctrl+`**                  |
-| Hide all windows                                                                                 | **⇧⌘F12**      | **Control+Shift+F12**       |
-| Open / Close [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html) | **⌘1**         | **Alt+1**                   |
-| Open / Close [Commit Tool Window]                                                                | **⌘1**         | **Alt+1**                   |
-| Open / Close [Terminal Tool Window]                                                              | **⌥F12**       | **Alt+F12**                 |
-| Open / Close [Git Log tool Window](https://www.jetbrains.com/help/idea/investigate-changes.html) | **⌘9**         | **Alt+9**                   |
-| Open / Close [Run Tool Window](https://www.jetbrains.com/help/idea/run-tool-window.html)         | **⌘4**         | **Alt+4**                   |
-| Open / Close [Debug Tool Window]                                                                 | **⌘5**         | **Alt+5**                   |
-| Stretch to Left                                                                                  | **⌃⌥←**        | **Ctrl+Alt+Shift+Left**     |
-| Stretch to Right                                                                                 | **⌃⌥→**        | **Ctrl+Alt+Shift+Right**    |
-| Stretch to Top                                                                                   | **⌃⌥↑**        | **Ctrl+Alt+Shift+Up**       |
-| Stretch to Bottom                                                                                | **⌃⌥↓**        | **Ctrl+Alt+Shift+Down**     |
-| Find Action                                                                                      | **⇧⌘A**        | **Control+Shift+A**         |
-| Find a class                                                                                     | **⌘O**         | **Control+N**               |
-| Go to declaration or usages                                                                      | **⌘B**         | **Control+B**               |
-| Navigate backward                                                                                | **⌘[**         | **Control+Alt+Left**        |
-| Navigate forward                                                                                 | **⌘]**         | **Control+Alt+Right**       |
-| Recent Locations                                                                                 | **⇧⌘E**        | **Control+Shift+E**         |
-| Last Edited Location                                                                             | **⇧⌘⌫**        | **Control+Shift+Backspace** |
-| Recent Files                                                                                     | **⌘E**         | **Control+E**               |
-| Anonymous Bookmark                                                                               | **F3**         | **F11**                     |
-| Mnemonic Bookmark                                                                                | **⌥F3**        | **Control+F11**             |
-| Save Mnemonic Bookmark                                                                           | **⏎**          | **Enter**                   |
+| Name                                                                                             | macOS Shortcut   | Windows / Linux Shortcut           |
+| ------------------------------------------------------------------------------------------------ | ---------------- | ---------------------------------- |
+| [Open Preferences](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html)         | <kbd>⌘,</kbd>    | <kbd>Ctrl+Alt+S</kbd>              |
+| Open Quick Switch Scheme                                                                         | <kbd>⌃\`</kbd>   | <kbd>Ctrl+`</kbd>                  |
+| Hide all windows                                                                                 | <kbd>⇧⌘F12</kbd> | <kbd>Control+Shift+F12</kbd>       |
+| Open / Close [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html) | <kbd>⌘1</kbd>    | <kbd>Alt+1</kbd>                   |
+| Open / Close [Commit Tool Window]                                                                | <kbd>⌘1</kbd>    | <kbd>Alt+1</kbd>                   |
+| Open / Close [Terminal Tool Window]                                                              | <kbd>⌥F12</kbd>  | <kbd>Alt+F12</kbd>                 |
+| Open / Close [Git Log tool Window](https://www.jetbrains.com/help/idea/investigate-changes.html) | <kbd>⌘9</kbd>    | <kbd>Alt+9</kbd>                   |
+| Open / Close [Run Tool Window](https://www.jetbrains.com/help/idea/run-tool-window.html)         | <kbd>⌘4</kbd>    | <kbd>Alt+4</kbd>                   |
+| Open / Close [Debug Tool Window]                                                                 | <kbd>⌘5</kbd>    | <kbd>Alt+5</kbd>                   |
+| Stretch to Left                                                                                  | <kbd>⌃⌥←</kbd>   | <kbd>Ctrl+Alt+Shift+Left</kbd>     |
+| Stretch to Right                                                                                 | <kbd>⌃⌥→</kbd>   | <kbd>Ctrl+Alt+Shift+Right</kbd>    |
+| Stretch to Top                                                                                   | <kbd>⌃⌥↑</kbd>   | <kbd>Ctrl+Alt+Shift+Up</kbd>       |
+| Stretch to Bottom                                                                                | <kbd>⌃⌥↓</kbd>   | <kbd>Ctrl+Alt+Shift+Down</kbd>     |
+| Find Action                                                                                      | <kbd>⇧⌘A</kbd>   | <kbd>Control+Shift+A</kbd>         |
+| Find a class                                                                                     | <kbd>⌘O</kbd>    | <kbd>Control+N</kbd>               |
+| Go to declaration or usages                                                                      | <kbd>⌘B</kbd>    | <kbd>Control+B</kbd>               |
+| Navigate backward                                                                                | <kbd>⌘[</kbd>    | <kbd>Control+Alt+Left</kbd>        |
+| Navigate forward                                                                                 | <kbd>⌘]</kbd>    | <kbd>Control+Alt+Right</kbd>       |
+| Recent Locations                                                                                 | <kbd>⇧⌘E</kbd>   | <kbd>Control+Shift+E</kbd>         |
+| Last Edited Location                                                                             | <kbd>⇧⌘⌫</kbd>   | <kbd>Control+Shift+Backspace</kbd> |
+| Recent Files                                                                                     | <kbd>⌘E</kbd>    | <kbd>Control+E</kbd>               |
+| Anonymous Bookmark                                                                               | <kbd>F3</kbd>    | <kbd>F11</kbd>                     |
+| Mnemonic Bookmark                                                                                | <kbd>⌥F3</kbd>   | <kbd>Control+F11</kbd>             |
+| Save Mnemonic Bookmark                                                                           | <kbd>⏎</kbd>     | <kbd>Enter</kbd>                   |
 
 ### Related Links
 

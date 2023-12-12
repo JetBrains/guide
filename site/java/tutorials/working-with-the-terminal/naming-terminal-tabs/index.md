@@ -15,7 +15,7 @@ We can run any type of command from the terminal window. For example, although I
 
 ![Rename Terminal Tab](rename-tab.png)
 
-We can [move between the different tabs](https://www.jetbrains.com/help/idea/terminal-emulator.html#new_session) with **⌘⇧** or **⌘⇧** on macOS or **Alt+←** or **Alt+→** on Windows and Linux. We can switch between the splits with **⌥⇥** on macOS, or **Ctrl+Tab** on Windows and Linux. We can close splits or tabs with **⌘W** on macOS, or **Ctrl+F4** for Windows and Linux.
+We can [move between the different tabs](https://www.jetbrains.com/help/idea/terminal-emulator.html#new_session) with <kbd>⌘⇧\[</kbd> (macOS) / <kbd>Alt+Left Arrow</kbd> (Windows/Linux) or <kbd>⌘⇧\]</kbd> (macOS) / <kbd>Alt+Right Arrow</kbd> (Windows/Linux). We can close splits or tabs with <kbd>⌘W</kbd> (macOS) / <kbd>Ctrl+F4</kbd> (Windows/Linux).
 
 When we restart IntelliJ IDEA, our terminal session names and other settings will persist.
 

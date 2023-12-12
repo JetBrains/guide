@@ -16,20 +16,14 @@ In this tutorial we are going to deploy our functions in AWS and test it through
 
 ![deploy_step_1](steps/step1.png)
 
-Before we start, I want to give some information, as you can see in the above image,
-I have chosen **AdministratorAccess** which provides complete access to
-all the AWS Resources. In my previous video, I used different policies, there is no
-problem in that, but recently there was information shared by AWS
-that AWS Lambda will deprecate two managed policies called **"AWSLambdaFullAccess"**
-and **"AWSLambdaReadOnlyAccess"** on January 25, 2021.
+Before we start, I want to give some information, as you can see in the above image, I have chosen **AdministratorAccess** which provides complete access to
+all the AWS Resources. In my previous video, I used different policies, there is no problem in that, but recently there was information shared by AWS that AWS Lambda will deprecate two managed policies called **"AWSLambdaFullAccess"** and **"AWSLambdaReadOnlyAccess"** on January 25, 2021.
 
-For this tutorial I have used **AdministratorAccess**, but to be honest
-it's not the recommended approach from point of security and access controls.
+For this tutorial I have used **AdministratorAccess**, but to be honest it's not the recommended approach from point of security and access controls.
 
 - Please follow the [Security best practices in IAM (Identity & Access Management)](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 
-PyCharm Professional is already open, I will right click on the project **ServerlessDemo**,
-then at the bottom I click on **Deploy Serverless Application**.
+PyCharm Professional is already open, I will right click on the project **ServerlessDemo**, then at the bottom I click on **Deploy Serverless Application**.
 
 ![deploy_step_2](steps/step2.png)
 
@@ -39,8 +33,7 @@ Next, I will create an S3 bucket **serverless-pycharm-demo**, it will be created
 
 ![deploy_step_3](steps/step3.png)
 
-Make sure **“Require confirmation before deploying”**
-and **“build function inside a container”** are both checked.
+Make sure **“Require confirmation before deploying”** and **“build function inside a container”** are both checked.
 
 Then finally I will click on **Deploy**. It will take some time to build and package the application.
 
@@ -70,11 +63,9 @@ You remember we created the stage name as **Prod** in the **template.yaml** file
 
 ![deploy_step_8](steps/step8.png)
 
-You can see the **Invoke URL** in the above image, this the URL from which we are going to access our API,
-I am going to copy the URL and paste it in Postman.
+You can see the **Invoke URL** in the above image, this the URL from which we are going to access our API, I am going to copy the URL and paste it in Postman.
 
-Okay, let’s begin by testing the **Login API**. I am going to provide
-email and password. If the credentials are authenticated successfully then
+Okay, let’s begin by testing the **Login API**. I am going to provide email and password. If the credentials are authenticated successfully then
 I will receive a [JWT](https://jwt.io/) token.
 
 ![deploy_step_9](steps/step9.png)
@@ -116,7 +107,4 @@ You can see I received 204 HTTP Response that means the record has been successf
 
 Finally, we have successfully performed all the operations starting from development to deployment in AWS and all this happened smoothly through PyCharm.
 
-This tutorial is a jump-start for those who want to get started with AWS Lambda
-and create serverless APIs. I suggest following the AWS documentation,
-to stay updated about their latest offerings, and the new improvements they
-are adding to their tech stack.
+This tutorial is a jump-start for those who want to get started with AWS Lambda and create serverless APIs. I suggest following the AWS documentation, to stay updated about their latest offerings, and the new improvements they are adding to their tech stack.

@@ -14,7 +14,7 @@ Let's look at some more useful Gradle settings in IntelliJ IDEA.
 
 ![Gradle settings from the Gradle Tool Window](./gradle-settings-menu.png)
 
-We can get to the settings from the [Gradle Tool Window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html), or from the usual [Settings/Preferences dialog](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) (**⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux)) and navigating to [**Build, Execution, Deployment | Build Tools | Gradle**](https://www.jetbrains.com/help/idea/gradle-settings.html). Generally these settings are fine for most projects, and don't need changing.
+We can get to the settings from the [Gradle Tool Window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html), or from the usual [Settings/Preferences dialog](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux)) and navigating to [**Build, Execution, Deployment | Build Tools | Gradle**](https://www.jetbrains.com/help/idea/gradle-settings.html). Generally these settings are fine for most projects, and don't need changing.
 
 ![Settings/Preferences Gradle settings](./settings-gradle.png)
 

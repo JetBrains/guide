@@ -18,5 +18,3 @@ From the Go documentation for [the retract directive](https://golang.org/ref/mod
 **How to use:**
 
 This feature does not require anything special to be used. The IDE recognizes it automatically.
-
-<span class="tag is-rounded">New in 2020.3</span>

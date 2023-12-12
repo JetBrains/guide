@@ -11,11 +11,11 @@ video: "https://www.youtube.com/watch?v=WgipWkaU2MM"
 
 ## Git Merge Dialog
 
-At some point in your career, probably many points, you'll have to resolve merge conflicts. A common cause of merge conflicts is when you're working on a `feature` branch while other changes have been applied to the `main` branch. In this tutorial, we are currently on the `main` branch, and we want to merge the `feature` branch into `main`. You can do this by selecting the `feature` branch in the Git tool window which you can open with **⌘9** (macOS), or **Alt+9** (Windows/Linux). Select the `feature` branch and then choose **Merge 'feature' into 'main'**.
+At some point in your career, probably many points, you'll have to resolve merge conflicts. A common cause of merge conflicts is when you're working on a `feature` branch while other changes have been applied to the `main` branch. In this tutorial, we are currently on the `main` branch, and we want to merge the `feature` branch into `main`. You can do this by selecting the `feature` branch in the Git tool window which you can open with <kbd>⌘9</kbd> (macOS) / <kbd>Alt+9</kbd> (Windows/Linux). Select the `feature` branch and then choose **Merge 'feature' into 'main'**.
 
 ![Merge feature branch into main IntelliJ IDEA popup](merge-into-main.png)
 
-When you press **⏎** (macOS), or **Enter** (Windows/Linux), IntelliJ IDEA opens a popup telling us there are merge conflicts.
+When you press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux), IntelliJ IDEA opens a popup telling us there are merge conflicts.
 
 ![IntelliJ IDEA Conflicts dialog popup](conflicts-dialog.png)
 
@@ -35,7 +35,7 @@ If you click **Close** in the _Conflicts_ dialog, IntelliJ IDEA tells you that t
 
 ![Feature merged with conflict](feature-merged-with-conflict.png)
 
-Alternatively, if you accidentally click **Close**, a _Merge Conflicts_ node will appear in the _Local Changes_ view too. You can open the _Commit tool window_ using **⌘0** (macOS), or **Alt+0** (Windows/Linux).
+Alternatively, if you accidentally click **Close**, a _Merge Conflicts_ node will appear in the _Local Changes_ view too. You can open the _Commit tool window_ using <kbd>⌘0</kbd> (macOS) / <kbd>Alt+0</kbd> (Windows/Linux).
 
 ![Commit tool window file changes](changes-commit-tool-window.png)
 

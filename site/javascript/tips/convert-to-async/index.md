@@ -17,4 +17,4 @@ animatedGif:
   height: 240
 ---
 
-Need to convert a function that returns a Promise to an async function that uses the async/await syntax? Place the caret on that function, press _⌥Enter / Alt+Enter_ and select _Convert to async function_.
+Need to convert a function that returns a Promise to an async function that uses the async/await syntax? Place the caret on that function, press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and select _Convert to async function_.

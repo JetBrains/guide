@@ -11,12 +11,9 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/qCfuQkddCEM"
 ---
 
-If our code uses an instanceof followed by a cast, IntelliJ IDEA highlights
-these with a warning and suggests replacing this with pattern matching for
-instanceof. Note that this is only available if you're using a language
-level of Java 16 or above.
+If our code uses an instanceof followed by a cast, IntelliJ IDEA highlights these with a warning and suggests replacing this with pattern matching for instanceof. Note that this is only available if you're using a language level of Java 16 or above.
 
-Press **⌥⏎** (macOS) or **Alt+Enter** (Windows/Linux) and choose "Replace with pattern variable".
+Press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and choose "Replace with pattern variable".
 
 ```java
 public class PatternMatchingSwitch {
@@ -30,7 +27,7 @@ public class PatternMatchingSwitch {
 }
 ```
 
-You can press ⌥⏎ (macOS) or Alt+Enter (Windows/Linux) and choose "Replace 's' with pattern variable".
+You can press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and choose "Replace 's' with pattern variable".
 
 ```java
 public class PatternMatchingSwitch {

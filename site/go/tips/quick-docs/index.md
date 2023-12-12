@@ -17,13 +17,8 @@ video: >-
 
 _Want to learn what a symbol is about, without going to a browser?_
 
-The IDE knows the symbol, its argument names/types/defaults, the
-documentation it has.
-Let it give you a non-interrupting window, letting you get back to work.
+The IDE knows the symbol, its argument names/types/defaults, the documentation it has. Let it give you a non-interrupting window, letting you get back to work.
 
 **How to use:**
 
-Invoke the **Quick Documentation** feature using _Ctrl + Q on Windows/Linux_
-or _F1 on macOS_, learn more about the different symbols you're working with.
-
-<span class="tag is-rounded">New in 2017.3</span>
+Invoke the **Quick Documentation** feature using <kbd>F1</kbd> (macOS) / <kbd>Ctrl+Q</kbd> (Windows/Linux), learn more about the different symbols you're working with.

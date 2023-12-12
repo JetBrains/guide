@@ -22,7 +22,7 @@ Now that we know we can build the project, we can start making changes. First, w
 
 We might want to create a specific branch for our changes.
 
-Once we are done making our changes and the project still builds, we can **commit our changes** (**⌘K** on macOS, or **Ctrl+K** on Windows/Linux). We can check our changes in the **Commit tool window** (**⌘1** on macOS, or **Alt+1** on Windows/Linux) to see if these are the right files and use **Show Diff** (**⌘D** on macOS, or **Ctrl+D** on Windows/Linux) to see if the changes are correct.
+Once we are done making our changes and the project still builds, we can **commit our changes** <kbd>⌘K</kbd> (macOS) / <kbd>Ctrl+K</kbd> (Windows/Linux). We can check our changes in the **Commit tool window** <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux) to see if these are the right files and use **Show Diff** <kbd>⌘D</kbd> (macOS) / <kbd>Ctrl+D</kbd> (Windows/Linux) to see if the changes are correct.
 
 ![Commit changes](commit-window.png)
 

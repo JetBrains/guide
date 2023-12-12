@@ -18,10 +18,8 @@ The _Type Hierarchy_ feature allows you to answer questions such as "What interf
 
 **How to use:**
 
-Invoke it using _Ctrl + H on Windows/Linux_, _^ + H on macOS_.
+Invoke it using <kbd>⌃H</kbd> (macOS) / <kbd>Ctrl+H</kbd> (Windows/Linux).
 
 **Pro tip:**
 
 You can dig deeper through the list of hierarchy to get as much information as you need.
-
-<span class="tag is-rounded">New in 2017.3</span>

@@ -17,4 +17,4 @@ animatedGif:
   height: 300
 ---
 
-With the _Extract ruleset_ intention (_Alt+Enter_), you can quickly move selected declarations to a new ruleset in the same file.
+With the _Extract ruleset_ intention <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), you can quickly move selected declarations to a new ruleset in the same file.

@@ -20,4 +20,4 @@ animatedGif:
 
 Need to add `console.log()`?
 Type `log` and press _⇥ / Tab_.
-Or first add the value, then type `.log` and press _⇥ / Tab_.
+Or first add the value, then type `.log` and press <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (Windows/Linux).

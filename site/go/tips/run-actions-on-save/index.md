@@ -16,5 +16,3 @@ If you want to perform tasks on save, you can now use the **Actions on save** fe
 **How to use:**
 
 Turn on the actions you want to perform on save in the _Settings/Preferences | Tools | Actions on Save_ section of the IDE.
-
-<span class="tag is-rounded">New in 2021.2</span>

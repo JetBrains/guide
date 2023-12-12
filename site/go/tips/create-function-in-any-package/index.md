@@ -16,7 +16,7 @@ GoLand introduces an innovative feature: the **Create Function Quick-Fix**. This
 
 **How it Works:**
 
-Start by typing the name of a function that does not yet exist in your code. Click a light bulb icon that appears in the editor or use the keyboard shortcut (`Alt + Enter` on Windows/Linux, `⌥ + ⏎` on macOS) to activate the quick-fix. Select the package where you want to generate the new function.
+Start by typing the name of a function that does not yet exist in your code. Click a light bulb icon that appears in the editor or use the keyboard shortcut <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to activate the quick-fix. Select the package where you want to generate the new function.
 
 <img src="screenshot.png" alt="Code coverage for applications" title="Code coverage for applications" width="706"/>
 

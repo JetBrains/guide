@@ -27,10 +27,10 @@ Here are some helpful links for you to consider when you need to migrate your ap
 
 Here are the shortcuts that we used.
 
-| Name                                                                                                 | macOS Shortcut | Windows Shortcut |
-| ---------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
-| [Rebuild](https://www.jetbrains.com/help/idea/compiling-applications.html) the project               | **⌘F9**        | **Ctrl+F9**      |
-| [Run](https://www.jetbrains.com/help/idea/running-applications.html) the project                     | **⌃R**         | **Ctrl+F10**     |
-| Reload Maven changes                                                                                 | **⇧⌘I**        | **Ctrl+Shift+O** |
-| Display or hide the [Project Window](https://www.jetbrains.com/help/idea/project-tool-window.html)   | **⌘1**         | **Alt+1**        |
-| Display or hide the [Services Window](https://www.jetbrains.com/help/idea/services-tool-window.html) | **⌘8**         | **Alt+8**        |
+| Name                                                                                                 | macOS Shortcut | Windows Shortcut        |
+| ---------------------------------------------------------------------------------------------------- | -------------- | ----------------------- |
+| [Rebuild](https://www.jetbrains.com/help/idea/compiling-applications.html) the project               | <kbd>⌘F9</kbd> | <kbd>Ctrl+F9</kbd>      |
+| [Run](https://www.jetbrains.com/help/idea/running-applications.html) the project                     | <kbd>⌃R</kbd>  | <kbd>Ctrl+F10</kbd>     |
+| Reload Maven changes                                                                                 | <kbd>⇧⌘I</kbd> | <kbd>Ctrl+Shift+O</kbd> |
+| Display or hide the [Project Window](https://www.jetbrains.com/help/idea/project-tool-window.html)   | <kbd>⌘1</kbd>  | <kbd>Alt+1</kbd>        |
+| Display or hide the [Services Window](https://www.jetbrains.com/help/idea/services-tool-window.html) | <kbd>⌘8</kbd>  | <kbd>Alt+8</kbd>        |

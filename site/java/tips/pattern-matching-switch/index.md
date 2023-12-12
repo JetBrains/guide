@@ -15,6 +15,6 @@ seealso:
 video: "https://youtu.be/kPQZtzSMo_c"
 ---
 
-Ensure your SDK and Language Level are at least Java 17 (Preview) in your Project Structure with **⌘;** (macOS), or **Ctrl+Alt+Shift+S** (Windows/Linux).
+Ensure your SDK and Language Level are at least Java 17 (Preview) in your Project Structure with <kbd>⌘;</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+S</kbd> (Windows/Linux).
 
 IntelliJ IDEA highlights code that can be replaced with a switch expression using pattern variables. Press **⌥⏎** (macOS) or **Alt+Enter** (Windows/Linux) and choose "Replace `if` with `switch`".

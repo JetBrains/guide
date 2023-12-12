@@ -22,9 +22,9 @@ There are several changes:
 - lines that were changed are shown in blue; the changes made are highlighted
 - conflicts are shown in red
 
-For each change you can decide to ignore it by clicking the **x** or to accept it by clicking the arrows **>>**.
+For each change you can decide to ignore it by clicking the **X** or to accept it by clicking the arrows **>>**.
 
-You can use **⌘Z** (macOS), or **Ctrl+Z** on (Windows/Linux) to undo an action here if required.
+You can use <kbd>⌘Z</kbd> (macOS) / <kbd>Ctrl+Z</kbd> (Windows/Linux) to undo an action here if required.
 
 Depending on the number of changes, accepting or ignoring each change individual change might take some time. You can merge all non-conflicting changes automatically with **Apply All Non-Conflicting Changes**.
 

@@ -25,7 +25,7 @@ Try a code folding feature to enhance the readability and navigability of your G
 
 **How to use:**
 
-To fold or unfold a code block, simply click on the fold marker next to the line number or use a keyboard shortcut. For Windows/Linux, press `Ctrl` + `-` to fold and `Ctrl` + `+` to unfold. On macOS, use `⌘` + `-` to fold and `⌘` + `+` to unfold. Hovering over a folded code block will display a tooltip with a preview of the hidden content. This feature can be customized in settings to choose which types of blocks are foldable according to user preference.
+To fold or unfold a code block, simply click on the fold marker next to the line number or use a keyboard shortcut. You can also use <kbd>⌘-</kbd> (macOS) / <kbd>Ctrl+Minus</kbd> (Windows/Linux) to fold and <kbd>⌘+</kbd> (macOS) / <kbd>Ctrl+Plus</kbd> (Windows/Linux) to unfold. Hovering over a folded code block will display a tooltip with a preview of the hidden content. This feature can be customized in settings to choose which types of blocks are foldable according to user preference.
 
 <img src="screenshot.png" alt="Alt text for screenshot" title="Title of the image" width="706"/>
 

@@ -51,15 +51,15 @@ Fortunately, this is the kind of thing our IDEs are great at.
 Right-click on the commit, and you’ll get a list of actions to take on that commit.
 
 There are LOTS of things we can do to help, as this list shows.
-Beside `Edit Commit Message`, you can see `F2`.  
-This shows we could have skipped the context menu by selecting the commit and pressing `F2`.
+Beside `Edit Commit Message`, you can see <kbd>F2</kbd> (macOS) / <kbd>F2</kbd> (Windows/Linux).  
+This shows we could have skipped the context menu by selecting the commit and pressing <kbd>F2</kbd> (macOS) / <kbd>F2</kbd> (Windows/Linux).
 
 We’ll select that option and be prompted with a dialog to edit the commit.
 The existing commit message is there.
 We can see, there’s a warning about the typo. We mouseover for more detail.
 This is the Grazie plugin helping us again.
 
-We can type to fix it, or use Alt-Enter to get a correction.
+We can type to fix it, or use <kbd>⌥⇧⏎</kbd> (macOS) / <kbd>Shift+Alt+Enter</kbd> (Windows/Linux) to get a correction.
 
 Once fixed, click Ok to finish the operation.
 You now see the commit history with the fixed commit message.

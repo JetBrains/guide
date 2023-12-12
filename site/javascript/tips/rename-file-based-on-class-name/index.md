@@ -16,5 +16,4 @@ animatedGif:
   height: 320
 ---
 
-Created a file, then added a class and realized you want to use a different file name?
-Press _Alt+Enter_ on the class name to rename the file so that it matches class name.
+Created a file, then added a class and realized you want to use a different file name? Press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) on the class name to rename the file so that it matches class name.

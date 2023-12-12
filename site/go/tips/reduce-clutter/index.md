@@ -15,9 +15,6 @@ video: >-
   https://www.youtube.com/watch?v=6UheZkHpTeo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=91
 ---
 
-Use **View | Appearance: Tool Window Bars** to toggle all the IDE
-tool windows visibility.
+Use **View | Appearance: Tool Window Bars** to toggle all the IDE tool windows visibility.
 
 This helps you maximize your work space in the IDE.
-
-<span class="tag is-rounded">New in 2017.3</span>

@@ -20,9 +20,9 @@ video: "https://youtu.be/af_gdJA70Yk"
 
 Manage your dependencies inside IntelliJ IDEA. Open the **Dependencies tool window** to manage your dependencies. There are multiple ways to open the Dependencies tool window, including:
 
-- Open all windows from **Recent Files** (**⌘E** on macOS, or **Ctrl+E** on Windows/Linux)
-- Use **Search Everywhere** (**⇧⇧**) to search for "Dependencies"
-- Use **Find Action** (**⌘⇧A** on macOS), or **Ctrl+Shift+A** on Windows/Linux) to search for "Dependencies"
+- Open all windows from **Recent Files** <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux)
+- Use **Search Everywhere** <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux) to search for "Dependencies"
+- Use **Find Action** <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> to search for "Dependencies"
 
 From the **Dependencies tool window** you can upgrade an individual dependency, or all dependencies at once, right in your IDE when there are new versions available, by clicking the link to **Upgrade** (a single dependency) or **Upgrade (all)** (to upgrade all dependencies at once).
 

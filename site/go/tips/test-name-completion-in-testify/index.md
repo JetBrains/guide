@@ -14,6 +14,4 @@ video: >-
 
 **How to use:**
 
-Type _Run_ and the IDE will suggest _suite.Run_ as a completion option. When you select that, the IDE will automatically complete the line to _suite.Run(t, |)_. You can then start typing the testify suite name at the caret position, _|_
-
-<span class="tag is-rounded">New in 2020.3</span>
+Type _Run_ and the IDE will suggest _suite. Run_ as a completion option. When you select that, the IDE will automatically complete the line to _suite.Run(t, |)_. You can then start typing the testify suite name at the caret position, _|_

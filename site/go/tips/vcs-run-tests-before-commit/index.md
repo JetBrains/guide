@@ -14,10 +14,8 @@ video: >-
 
 **How to use:**
 
-Invoke the _Commit_ feature using _Ctrl + K on Windows/Linux_ and _⌘ + K on macOS_, then select the _Commit options_ and check the **Run Tests** option, then select which test configuration you wish to run.
+Invoke the _Commit_ feature using <kbd>⌘K</kbd> (macOS) / <kbd>Ctrl+K</kbd> (Windows/Linux), then select the _Commit options_ and check the **Run Tests** option, then select which test configuration you wish to run.
 
 **Note:** You must have the _Use non-modal commit interface_ activated before you can use this feature. Check your settings under _Settings/Preferences | Version Control | Commit_.
 
 **Pro-tip:** You can use the [Compound configuration type](https://www.jetbrains.com/help/go/run-debug-configuration.html#compound-configs) to run more than a single run configuration.
-
-<span class="tag is-rounded">New in 2021.2</span>

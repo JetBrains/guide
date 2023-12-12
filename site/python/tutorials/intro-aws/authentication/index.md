@@ -10,21 +10,15 @@ thumbnail: ../thumbnail.png
 video: "https://youtu.be/Q6uZ2HHIYQM"
 ---
 
-For this tutorial we are going to protect our APIs from unauthorized access by
-creating Lambda Authorizer, formerly known as CustomAuthorizer.
-It is an API Gateway feature that uses a Lambda function to control access
-to your API.
+For this tutorial we are going to protect our APIs from unauthorized access by creating Lambda Authorizer, formerly known as CustomAuthorizer.
+It is an API Gateway feature that uses a Lambda function to control access to your API.
 
 Interested to know more about custom authorizers? Please visit [Configure a Lambda authorizer using the API Gateway console
 ](https://docs.aws.amazon.com/apigateway/latest/developerguide/configure-api-gateway-lambda-authorization-with-console.html).
 
 # Custom Authorizers
 
-Okay, let me first remove the **Authorizers** which I have declared
-in the **template.yaml** file. By the way, if you have observed from
-the beginning, we are using Authorizer as **None**, but we did not set up
-the Default Authorizer. If you try to deploy the functions it’s not going to work,
-and it would lead to an error because you haven’t set up the **Authorizer**. So, let’s begin.
+Okay, let me first remove the **Authorizers** which I have declared in the **template.yaml** file. By the way, if you have observed from the beginning, we are using Authorizer as **None**, but we did not set up the Default Authorizer. If you try to deploy the functions it’s not going to work, and it would lead to an error because you haven’t set up the **Authorizer**. So, let’s begin.
 
 ![auth_step_1](steps/step1.png)
 
@@ -49,11 +43,7 @@ The source code is available on Github at [https://github.com/mukulmantosh/Serve
 
 If you have observed the logic carefully, you will notice that I have slightly refactored the code according to my requirements.
 
-You can see line number **23**, that I am retrieving the authorization
-token from the headers. Watch at line **30** I am calling a method **auth_token_decode**
-which is going to check whether the token is valid or not. If the token is
-valid then the policy is going to allow all HTTP methods else all methods will
-be denied.
+You can see line number **23**, that I am retrieving the authorization token from the headers. Watch at line **30** I am calling a method **auth_token_decode** which is going to check whether the token is valid or not. If the token is valid then the policy is going to allow all HTTP methods else all methods will be denied.
 
 ![auth_step_4](steps/step4.png)
 
@@ -64,29 +54,21 @@ The identifier is going to be named as **MyApi**.
 
 ![auth_step_5](steps/step5.png)
 
-Under **Properties**, I am going to define the **StageName**. Stage name
-represents an API stage, you can provide any random text, but the common stage name
-which is widely used is **dev**, **prod**, **stage** or **test**.
-You will see it appearing in the API Gateway URI (Uniform Resource Identifier).
+Under **Properties**, I am going to define the **StageName**. Stage name represents an API stage, you can provide any random text, but the common stage name
+which is widely used is **dev**, **prod**, **stage** or **test**. You will see it appearing in the API Gateway URI (Uniform Resource Identifier).
 
-Under **Auth**, I will provide a name to my default authorizer.
-I am going to name it as **JWTCustomAuthorizer**.
+Under **Auth**, I will provide a name to my default authorizer. I am going to name it as **JWTCustomAuthorizer**.
 
-**FunctionArn** is our Lambda function which is handling the
-authorization process. **Arn** stands
-for **Amazon Resource Name**.
+**FunctionArn** is our Lambda function which is handling the authorization process. **Arn** stands for **Amazon Resource Name**.
 
 It’s a naming convention to identify a resource.
 
-As you can see in the below image, **JWTAuthFunction** is going to process
-the authorization once we receive the tokens. As usual, we are going to provide the
-handler, runtime etc. We are also using an environment variable
-called **SECRET_KEY** for encoding and decoding of our JWT Tokens.
+As you can see in the below image, **JWTAuthFunction** is going to process the authorization once we receive the tokens. As usual, we are going to provide the
+handler, runtime etc. We are also using an environment variable called **SECRET_KEY** for encoding and decoding of our JWT Tokens.
 
 ![auth_step_6](steps/step6.png)
 
-Okay, we have defined the CustomAuthorizer. Let us now make a reference to each
-function so each API will only work when a token is provided.
+Okay, we have defined the CustomAuthorizer. Let us now make a reference to each function so each API will only work when a token is provided.
 
 Below I have provided the final code snippet how it is going to look like.
 
@@ -94,31 +76,21 @@ Below I have provided the final code snippet how it is going to look like.
 { % include "./demos/template.yaml" % }
 ```
 
-As you can see in my screen for the **CreateUserAPI**, I am referring to
-the CustomAuthorizer through **RestApiId**. Until then, I have
-set the **Authorizer** as **None** which is completely
-valid. I can exclude APIs for which I don’t want an authorizer for example
+As you can see in my screen for the **CreateUserAPI**, I am referring to the CustomAuthorizer through **RestApiId**. Until then, I have
+set the **Authorizer** as **None** which is completely valid. I can exclude APIs for which I don’t want an authorizer for example
 like the **LoginAPI**.
 
 ![auth_step_7](steps/step7.png)
 
-As I am done with my template.yaml file, let me go to the codebase
-and create a package for Login API.
+As I am done with my template.yaml file, let me go to the codebase and create a package for Login API.
 
 I will follow the standard process that I did for the previous apis.
 
 ![auth_step_8](steps/step8.png)
 
-I am going to create a **token.py** file where I will be defining two
-functions one for creating a new jwt token, and the other refresh token
-which will be used to generate new token based on previous token validity
-until it hasn't expired.
+I am going to create a **token.py** file where I will be defining two functions one for creating a new jwt token, and the other refresh token which will be used to generate new token based on previous token validity until it hasn't expired.
 
-JWT stands for **JSON Web Token** it is a self-contained way for
-securely transmitting information between parties as a JSON object. This information
-can be verified and trusted because it is digitally signed. JWTs can be signed using
-a secret or a public/private key pair. Again, JWT is a standard, meaning that all
-JWTs are tokens, but not all tokens are JWTs.
+JWT stands for **JSON Web Token** it is a self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret or a public/private key pair. Again, JWT is a standard, meaning that all JWTs are tokens, but not all tokens are JWTs.
 
 If you want to get more information about JWT then visit [jwt.io](https://jwt.io/).
 
@@ -128,25 +100,18 @@ Below, I have provided the final code snippet how it is going to look like.
 {% include "./demos/token.py" %}
 ```
 
-As you can see the function **create_access_token** which is going to take
-the user information and encode it and return us back with a long
-encrypted string. This token is only valid for 5 minutes.
+As you can see the function **create_access_token** which is going to take the user information and encode it and return us back with a long encrypted string. This token is only valid for 5 minutes.
 
 Ok we are done with the tokens. Let’s move to the **validator.py** file.
 
-I am going to create **UserLoginSchema** in which I will be taking
-email and password as required input. In the validation function I will check whether
-the email provided exists in the db or not and not. For the password I will verify
-with the encrypted password stored in the database.
+I am going to create **UserLoginSchema** in which I will be taking email and password as required input. In the validation function I will check whether the email provided exists in the db or not and not. For the password I will verify with the encrypted password stored in the database.
 
 If the password verification is successful then I will generate a new token
 and send it back in the response.
 
 ![auth_step_9](steps/step9.png)
 
-Next, I am going to create a **RefreshTokenSchema** which takes the
-token as required input. If the existing token is valid then it is going
-to return a new token in the response else it will raise a validation error.
+Next, I am going to create a **RefreshTokenSchema** which takes the token as required input. If the existing token is valid then it is going to return a new token in the response else it will raise a validation error.
 
 Below, I have provided the final code snippet how the **validator.py** is going to look like.
 
@@ -164,8 +129,7 @@ If the validation is successful then it will return a token with
 ![auth_step_10](steps/step10.png)
 
 I will be also defining one more function **token_refresh** in the same file.
-It is also going to perform the same kind of operation taking an existing token as
-input and returning it back with a new token.
+It is also going to perform the same kind of operation taking an existing token as input and returning it back with a new token.
 
 Below, I have provided the final code snippet how the **app.py** is going to look like.
 
@@ -180,9 +144,7 @@ the **template.yaml** file.
 
 ![auth_step_12](steps/step12.png)
 
-We have registered the APIs. Before testing out the API there are some
-issues which I have missed, let me fix that. Open **app.py** and
-goto line number **19** it should be **load** not loads, remove ‘**s**’.
+We have registered the APIs. Before testing out the API there are some issues which I have missed, let me fix that. Open **app.py** and goto line number **19** it should be **load** not loads, remove ‘**s**’.
 
 Next, I will goto **token.py** file remove **decode** in line number **15**.
 

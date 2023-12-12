@@ -16,6 +16,4 @@ video: >-
 
 On the _Project View_ tool window, locate the gear icon, then click on it and select **Enable Preview Tab** option. After that, click on a file in the _Project View_ and it will allow you to preview its contents without creating a new tab that you then need to close.
 
-**Pro tip:** You can also locate the _Enable Preview Tab_ option using _Search Everywhere_, _Shift + Shift_, and turn it on.
-
-<span class="tag is-rounded">New in 2020.3</span>
+**Pro tip:** You can also locate the _Enable Preview Tab_ option using <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), and turn it on.

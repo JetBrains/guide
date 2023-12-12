@@ -9,15 +9,11 @@ subtitle: MyST has a lot more to offer than just Markdown-in-Sphinx.
 thumbnail: thumbnail.png
 ---
 
-If you've been around Sphinx for a while, you know: it has some powerful machinery.
-MyST adds some power of its own.
-Let's look at a few more advanced features in each that can help on larger websites.
+If you've been around Sphinx for a while, you know: it has some powerful machinery. MyST adds some power of its own. Let's look at a few more advanced features in each that can help on larger websites.
 
 ## Substitutions
 
-Sometimes you have the same fragment of content appearing across your site: snippets of text and/or markup.
-[reST has subsitutions](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#substitutions) with various ways to get them into documents.
-There's a [Sphinx add-on](https://pypi.org/project/sphinx-ext-substitution/) which provides more power.
+Sometimes you have the same fragment of content appearing across your site: snippets of text and/or markup. [reST has subsitutions](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#substitutions) with various ways to get them into documents. There's a [Sphinx add-on](https://pypi.org/project/sphinx-ext-substitution/) which provides more power.
 
 MyST [also allows substitutions](https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html#substitutions-with-jinja2).
 First, enable them in `myst_enable_extensions` in the `conf.py` file:

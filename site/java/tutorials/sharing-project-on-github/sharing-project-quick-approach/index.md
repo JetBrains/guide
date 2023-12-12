@@ -35,7 +35,7 @@ Alternatively, you can select **Log in with Token** to open the Add GitHub accou
 
 Both these methods achieve the same result in that they allow IntelliJ IDEA to authenticate with GitHub.
 
-Tip: if you have multiple GitHub accounts, you can [add your GitHub accounts](https://www.jetbrains.com/help/idea/github.html) in the Settings/Preferences with **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) and then search for _GitHub_. You can use the **+** to add multiple GitHub accounts.
+Tip: if you have multiple GitHub accounts, you can [add your GitHub accounts](https://www.jetbrains.com/help/idea/github.html) in the Settings/Preferences with <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and then search for _GitHub_. You can use the **+** to add multiple GitHub accounts.
 
 ### Creating a Repository on GitHub
 

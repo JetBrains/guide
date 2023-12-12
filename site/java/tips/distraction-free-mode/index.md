@@ -16,13 +16,9 @@ seealso:
 video: "https://youtu.be/fO8oDVBsHWA"
 ---
 
-Use **^\`** (macOS), or **Ctrl+\`** (Windows/Linux), to bring up the **Quick
-Switch Scheme** dialog.
+Use <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux), to bring up the **Quick Switch Scheme** dialog.
 
-You can now press **4** or use the arrow keys to scroll to **4** and select
-_View Mode_ to see list of view modes available. Now press **2** or click on
-**Enter Distraction Free Mode** to display just your editor window and focus
-on coding.
+You can now press **4** or use the arrow keys to scroll to **4** and select _View Mode_ to see list of view modes available. Now press **2** or click on **Enter Distraction Free Mode** to display just your editor window and focus on coding.
 
 ## Alternative Ways of Entering Distraction Free Mode
 
@@ -34,7 +30,7 @@ You can use the menu **View > Appearance** > **Enter Distraction Free Mode**.
 
 ### Using Search Everywhere
 
-Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Distraction_ and select **Enter Distraction Free Mode**.
+Use <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Distraction_ and select **Enter Distraction Free Mode**.
 
 ![Enter Distraction Free Mode using Search Everywhere](distraction-free-mode-search-everywhere.png)
 
@@ -44,7 +40,7 @@ You can follow anyone of the above-mentioned ways to exit Distraction Free Mode.
 
 ### Using the Quick Switch Scheme
 
-You can use the same shortcuts as above, **^\`** (macOS), or **Ctrl+\`** (Windows/Linux), to bring up the **Quick Switch Scheme** dialog, then select **4** followed by **2** to exit distraction free mode.
+You can use the same shortcuts as above, <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux), to bring up the **Quick Switch Scheme** dialog, then select **4** followed by **2** to exit distraction free mode.
 
 ![Exit Distraction Free Mode from Quick Switch Scheme](exit-distraction-free-mode-schema-switch.png)
 
@@ -56,8 +52,8 @@ Alternately, you can also use the menu **View > Appearance** > **Exit Distractio
 
 ### Using Search Everywhere
 
-Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Distraction_ and select **Exit Distraction Free Mode**.
+Use <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Distraction_ and select **Exit Distraction Free Mode**.
 
 ![Toggle Distraction Free Mode using Search Everywhere](exit-distraction-free-mode-searcheverywhere.png)
 
-Alternatively, you can use **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), to bring up the Find Actions dialog which will filter the Search Everywhere dialog to just Actions.
+Alternatively, you can use <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd>, to bring up the Find Actions dialog which will filter the Search Everywhere dialog to just Actions.

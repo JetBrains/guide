@@ -19,5 +19,3 @@ Whenever you upgrade your IDE to a new major version, it leaves behind all its c
 The IDE will automatically clean up any cache and log directories that were last updated more than 180 days ago. To trigger this process manually, go to _Help | Delete Leftover IDE Directories..._.
 
 **Note:** The system settings and plugins directories will stay intact.
-
-<span class="tag is-rounded">New in 2021.2</span>

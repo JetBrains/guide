@@ -27,8 +27,4 @@ Want to create a file somewhere in your project tree, without the mouse?
 
 **How to use:**
 
-Use the _Navigation Bar_, Alt + Home on Windows/Linux*or*⌘ + ↑ on macOS*,
-to get to a directory then use the keyboard to make and open a new file at
-the target, with_Alt + Insert on Windows/Linux_or*⌘ + N on macOS\_.
-
-<span class="tag is-rounded">New in 2017.3</span>
+Use the _Navigation Bar_, <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux), to get to a directory then use the keyboard to make and open a new file at the target, with <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux).

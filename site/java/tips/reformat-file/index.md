@@ -19,6 +19,6 @@ seealso:
 video: "https://youtu.be/oaQbMZj3EyA"
 ---
 
-Sometimes code formatting can get out of sync, but there's an easy fix in IntelliJ IDEA. You can use **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) to reformat a selection of code according to your reformat settings.
+Sometimes code formatting can get out of sync, but there's an easy fix in IntelliJ IDEA. You can use <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux) to reformat a selection of code according to your reformat settings.
 
-You can also display the Reformat File dialog with **⌥⇧⌘L** (macOS), or **Ctrl+Alt+Shift+L** (Windows/Linux).
+You can also display the Reformat File dialog with <kbd>⌘⌥⇧L</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+L</kbd> (Windows/Linux).

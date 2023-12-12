@@ -19,4 +19,4 @@ video: "https://youtu.be/eGUj95cKo34"
 
 Injecting a language such as HTML, CSS, XML, RegExp, and so on into a string literal gives you code assistance for editing that literal including code completion and validation (such as RegExp).
 
-Use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux) to inject a language or reference.
+Use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to inject a language or reference.

@@ -21,4 +21,4 @@ animatedGif:
   height: 300
 ---
 
-Arrow functions? Yes, please! Press _⌥Enter / Alt+Enter_ to convert a function to an arrow function.
+Arrow functions? Yes, please! Press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to convert a function to an arrow function.
