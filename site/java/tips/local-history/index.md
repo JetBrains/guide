@@ -9,7 +9,7 @@ subtitle: Search text in Local History
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: (video) IntelliJ IDEA Pro Tips - Local History
+  - title: "(video) IntelliJ IDEA Pro Tips: Local History"
     href: "https://www.youtube.com/watch?v=15uwUgqaEE4"
   - title: (documentation) IntelliJ IDEA Help - Local History
     href: "https://www.jetbrains.com/help/idea/local-history.html"

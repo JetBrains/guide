@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: Add custom tags to any fields from structures
 seealso:
-  - title: Creating custom structure tags
+  - title: (documentation) GoLand Help - Creating custom structure tags
     href: "https://www.jetbrains.com/help/go/settings-live-templates.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

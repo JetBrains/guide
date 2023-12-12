@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: "Change your mind on a file name, and the IDE makes all the changes for you."
 seealso:
-  - title: Renaming a file or directory
+  - title: (documentation) GoLand Help - Renaming a file or directory
     href: "https://www.jetbrains.com/help/go/rename-refactorings.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

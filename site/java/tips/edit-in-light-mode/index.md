@@ -11,7 +11,7 @@ subtitle: >-
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: IntelliJ IDEA Help - LightEdit Mode
+  - title: (documentation) IntelliJ IDEA Help - LightEdit Mode
     href: "https://www.jetbrains.com/help/idea/lightedit-mode.html"
   - title: (blog) - LightEdit Mode
     href: "https://blog.jetbrains.com/idea/2020/04/lightedit-mode/"

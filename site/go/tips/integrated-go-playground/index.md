@@ -11,7 +11,7 @@ subtitle: >-
   You can format and share your code, change the Go version, and run your code
   using the Go playground server.
 seealso:
-  - title: Running applications in Go Playground
+  - title: (documentation) GoLand Help - Running applications in Go Playground
     href: >-
       https://www.jetbrains.com/help/go/2022.3/running-applications-in-go-playground.html
 cardThumbnail: ./card.png

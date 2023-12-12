@@ -7,11 +7,11 @@ topics:
 author: dlsniper
 subtitle: Tell GoLand to clean up indentation and other code style in your file.
 seealso:
-  - title: Reformatting Source Code
+  - title: (documentation) GoLand Help - Reformatting Source Code
     href: "https://www.jetbrains.com/help/go/reformatting-source-code.html"
-  - title: Code Style - Go
+  - title: (documentation) GoLand Help - Code Style - Go
     href: "https://www.jetbrains.com/help/go/code-style-go.html"
-  - title: Reformat and rearrange code
+  - title: (documentation) GoLand Help - Reformat and rearrange code
     href: >-
       https://www.jetbrains.com/help/go/basic-editing-procedures.html#reformat_rearrange_code
 thumbnail: ./thumbnail.png

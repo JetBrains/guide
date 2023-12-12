@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: Don't use the mouse to quickly move between multiple files
 seealso:
-  - title: Use quick pop-ups
+  - title: (documentation) GoLand Help - Use quick pop-ups
     href: >-
       https://www.jetbrains.com/help/go/basic-editing-procedures.html#quick_popups
 thumbnail: ./thumbnail.png

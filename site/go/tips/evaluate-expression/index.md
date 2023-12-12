@@ -8,7 +8,7 @@ topics:
 author: dlsniper
 subtitle: "Select your code and execute it, in the right context."
 seealso:
-  - title: Evaluating Expressions
+  - title: (documentation) GoLand Help - Evaluating Expressions
     href: "https://www.jetbrains.com/help/go/evaluating-expressions.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

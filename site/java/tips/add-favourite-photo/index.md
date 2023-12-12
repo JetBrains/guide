@@ -11,7 +11,7 @@ subtitle: >-
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: IntelliJ IDEA Help - Background Image
+  - title: (documentation) IntelliJ IDEA Help - Background Image
     href: "https://www.jetbrains.com/help/idea/setting-background-image.html"
 video: "https://youtu.be/iV0gWv7BQvs"
 ---

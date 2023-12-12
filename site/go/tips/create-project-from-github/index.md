@@ -7,10 +7,10 @@ topics:
 author: dlsniper
 subtitle: Let GoLand do the work to clone and set up a project hosted on GitHub.
 seealso:
-  - title: Check out a project
+  - title: (documentation) GoLand Help - Check out a project
     href: >-
       https://www.jetbrains.com/help/go/manage-projects-hosted-on-github.html#clone-from-GitHub
-  - title: GoLand Help for GitHub
+  - title: (documentation) GoLand Help - GitHub
     href: "https://www.jetbrains.com/help/go/github.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

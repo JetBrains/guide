@@ -7,7 +7,7 @@ topics:
 author: ap
 subtitle: View documentation for any symbol without interrupting your workflow.
 seealso:
-  - title: GoLand Documentation – Viewing Inline Documentation
+  - title: (documentation) GoLand Help - Viewing Inline Documentation
     href: >-
       https://www.jetbrains.com/help/go/viewing-reference-information.html#inline-quick-documentation
 thumbnail: ./thumbnail.png

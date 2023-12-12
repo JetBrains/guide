@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: "Change a variable name, class name, or other symbol, across the project."
 seealso:
-  - title: Renaming a symbol
+  - title: (documentation) GoLand Help - Renaming a symbol
     href: "https://www.jetbrains.com/help/go/rename-refactorings.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

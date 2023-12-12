@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: Use the keyboard to move a line or selection up or down in your file.
 seealso:
-  - title: "Adding, Deleting and Moving Code Elements"
+  - title: (documentation) GoLand Help - Adding, Deleting and Moving Code Elements
     href: "https://www.jetbrains.com/help/go/adding-deleting-and-moving-lines.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

@@ -7,9 +7,9 @@ topics:
 author: dlsniper
 subtitle: Let the IDE help you spot coverage gaps in your testing.
 seealso:
-  - title: Viewing Code Coverage Results
+  - title: (documentation) GoLand Help - Viewing Code Coverage Results
     href: "https://www.jetbrains.com/help/go/viewing-code-coverage-results.html"
-  - title: Configuring Code Coverage Measurement
+  - title: (documentation) GoLand Help - Configuring Code Coverage Measurement
     href: >-
       https://www.jetbrains.com/help/go/configuring-code-coverage-measurement.html
 thumbnail: ./thumbnail.png

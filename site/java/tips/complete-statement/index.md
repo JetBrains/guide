@@ -13,7 +13,7 @@ cardThumbnail: ./card.png
 seealso:
   - title: (video) Why Do Developers Love IntelliJ IDEA?
     href: "https://www.youtube.com/watch?v=xiT4rEbC56k"
-  - title: (video) IntelliJ IDEA Code Completion
+  - title: (video) IntelliJ IDEA. Code Completion
     href: "https://www.youtube.com/watch?v=jTud6GIqVgk"
   - title: (documentation) IntelliJ IDEA Help - Statement Completion
     href: >-

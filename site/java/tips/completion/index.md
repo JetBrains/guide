@@ -12,9 +12,9 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/auto-completing-code.html"
   - title: (documentation) IntelliJ IDEA Help - Postfix completion
     href: "https://www.jetbrains.com/help/idea/auto-completing-code.html#postfix_completion"
-  - title: (video) IntelliJ IDEA Pro Tips - Code Completion
+  - title: "(video) IntelliJ IDEA Pro Tips: Code Completion"
     href: "https://www.youtube.com/watch?v=UsK5Mle9PGk"
-  - title: (video) IntelliJ IDEA Pro Tips - Postfix Completion
+  - title: "(video) IntelliJ IDEA Pro Tips: Postfix Completion"
     href: "https://www.youtube.com/watch?v=wvo9aXbzvy4"
 video: "https://youtu.be/K51K5Jc_MGc"
 ---

@@ -10,9 +10,9 @@ subtitle: Use Live Templates to auto-complete common code structures for you
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: (video) IntelliJ IDEA. Helen's Take On - Writing Less Code
+  - title: "(video) IntelliJ IDEA. Helen's Take On: Writing Less Code"
     href: "https://www.youtube.com/watch?v=Sio9MdSqXZo"
-  - title: (video) IntelliJ IDEA Write Code Faster Using Live Templates
+  - title: (video) IntelliJ IDEA. Write Code Faster Using Live Templates
     href: "https://www.youtube.com/watch?v=ffBeoE6NBSs&t=56s"
   - title: "(video) IntelliJ IDEA Pro Tips: Live Templates"
     href: "https://www.youtube.com/watch?v=XhCNoN40QTU"

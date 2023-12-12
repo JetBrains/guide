@@ -7,13 +7,13 @@ topics:
 author: dlsniper
 subtitle: "Navigate your project by code, not files."
 seealso:
-  - title: Navigating by Name
+  - title: (documentation) GoLand Help - Navigating by Name
     href: >-
       https://www.jetbrains.com/help/go/navigating-to-class-file-or-symbol-by-name.html#9a8d021a
-  - title: Navigating Tips and Tricks
+  - title: (documentation) GoLand Help - Navigating Tips and Tricks
     href: >-
       https://www.jetbrains.com/help/go/navigating-to-class-file-or-symbol-by-name.html#tips
-  - title: Navigation in Source Code
+  - title: (documentation) GoLand Help - Navigation in Source Code
     href: "https://www.jetbrains.com/help/go/navigation-in-source-code.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

@@ -9,9 +9,9 @@ subtitle: >-
   Automate the organizing and cleaning up of your Go imports with Optimize
   Imports.
 seealso:
-  - title: Optimizing Imports
+  - title: (documentation) GoLand Help - Optimizing Imports
     href: "https://www.jetbrains.com/help/go/optimizing-imports.html"
-  - title: Creating and Optimizing Imports
+  - title: (documentation) GoLand Help - Creating and Optimizing Imports
     href: "https://www.jetbrains.com/help/go/creating-and-optimizing-imports.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

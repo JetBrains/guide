@@ -7,9 +7,9 @@ topics:
 author: dlsniper
 subtitle: Save space and stay keyboard-centric by turning off the tabs.
 seealso:
-  - title: Managing Editor Tabs
+  - title: (documentation) GoLand Help - Managing Editor Tabs
     href: "https://www.jetbrains.com/help/go/managing-editor-tabs.html"
-  - title: No Tabs in IntelliJ IDEA
+  - title: (blog) Hadi Hariri - No Tabs in IntelliJ IDEA
     href: "https://hadihariri.com/2014/06/24/no-tabs-in-intellij-idea/"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

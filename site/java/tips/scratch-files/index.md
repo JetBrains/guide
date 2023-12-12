@@ -12,7 +12,7 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/scratches.html"
   - title: (blog) IntelliJ IDEA Blog - Scratch Files and Scratch Buffers
     href: "https://blog.jetbrains.com/idea/2020/11/scratch-files-and-scratch-buffers/"
-  - title: (video) IntelliJ IDEA - Scratch Files and Scratch Buffers
+  - title: (video) IntelliJ IDEA. Scratch Files and Scratch Buffers
     href: "https://youtu.be/vVcPEcbRiNI"
 video: "https://youtu.be/pdPxVqrKYIw"
 ---

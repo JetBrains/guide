@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: "Navigate back to where you were, or where you went."
 seealso:
-  - title: Navigate to Navigated Items
+  - title: (documentation) GoLand Help - Navigate to Navigated Items
     href: "https://www.jetbrains.com/help/go/navigating-to-navigated-items.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

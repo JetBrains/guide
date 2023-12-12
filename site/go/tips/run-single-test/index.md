@@ -7,9 +7,9 @@ topics:
 author: dlsniper
 subtitle: Speed up testing by focusing on one test.
 seealso:
-  - title: Performing Tests
+  - title: (documentation) GoLand Help - Performing Tests
     href: "https://www.jetbrains.com/help/go/performing-tests.html"
-  - title: Test Runner Tab
+  - title: (documentation) GoLand Help - Test Runner Tab
     href: "https://www.jetbrains.com/help/go/test-runner-tab.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

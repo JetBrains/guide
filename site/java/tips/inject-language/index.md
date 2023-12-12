@@ -12,7 +12,7 @@ subtitle: >-
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: IntelliJ IDEA Help - Using Language Injections
+  - title: (documentation) IntelliJ IDEA Help - Using Language Injections
     href: "https://www.jetbrains.com/help/idea/using-language-injections.html"
 video: "https://youtu.be/eGUj95cKo34"
 ---

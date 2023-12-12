@@ -6,9 +6,9 @@ topics:
 author: pwe
 subtitle: Undo a commit...without misery.
 seealso:
-  - title: Undo the last commit
+  - title: (documentation) GoLand Help - Undo the last commit
     href: "https://www.jetbrains.com/help/go/undo-changes.html#revert-last-commit"
-  - title: Manage changelists
+  - title: (documentation) GoLand Help - Manage changelists
     href: "https://www.jetbrains.com/help/go/managing-changelists.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

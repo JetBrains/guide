@@ -9,7 +9,7 @@ subtitle: Use quick intentions to improve the readability of your code
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: (video) IntelliJ IDEA Pro Tips Alt Enter
+  - title: "(video) IntelliJ IDEA Pro Tips: Alt Enter"
     href: "https://www.youtube.com/watch?v=pWHgNm6aGdo"
   - title: "(blog) IntelliJ IDEA Blog - Alt+Enter, the Problem-solving Shortcut"
     href: >-

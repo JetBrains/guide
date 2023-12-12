@@ -10,7 +10,7 @@ subtitle: Use Alt+Enter to show available context actions
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: (video) IntelliJ IDEA Pro Tips Alt Enter
+  - title: "(video) IntelliJ IDEA Pro Tips: Alt Enter"
     href: "https://www.youtube.com/watch?v=pWHgNm6aGdo"
   - title: (blog) IntelliJ IDEA Blog - Alt+Enter, the Problem-solving Shortcut
     href: "https://blog.jetbrains.com/idea/2020/08/alt-enter-the-problem-solving-shortcut/"

@@ -8,7 +8,7 @@ topics:
 author: dlsniper
 subtitle: Add trailing commas or braces and move the cursor with a single keystroke
 seealso:
-  - title: Autocompleting code
+  - title: (documentation) GoLand Help - Autocompleting code
     href: "https://blog.jetbrains.com/go/2019/01/17/code-completion-in-goland/"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

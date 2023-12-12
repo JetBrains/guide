@@ -9,7 +9,7 @@ subtitle: >-
   The fastest way to register a new project directory under local version
   control.
 seealso:
-  - title: Enable Version Control Integration Dialog
+  - title: (documentation) GoLand Help - Enable Version Control Integration Dialog
     href: >-
       https://www.jetbrains.com/help/go/enable-version-control-integration-dialog.html#Enable_Version_Control_Integration_Dialog.xml
 thumbnail: ./thumbnail.png

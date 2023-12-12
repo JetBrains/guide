@@ -10,7 +10,7 @@ subtitle: Paste a subset or multiple entries from your recent history
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: (video) IntelliJ IDEA Pro Tips - Clipboard History
+  - title: "(video) IntelliJ IDEA Pro Tips: Clipboard History"
     href: "https://www.youtube.com/watch?v=WCwxQ3C0Bj4"
   - title: (documentation) IntelliJ IDEA Help - Paste from history
     href: "https://www.jetbrains.com/help/idea/pro-tips.html#paste-from-history"

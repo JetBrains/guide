@@ -15,7 +15,7 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/package-search.html"
   - title: (guide) Managing dependencies
     href: "https://www.jetbrains.com/guide/java/tutorials/managing-dependencies/"
-  - title: (video) IntelliJ IDEA - Managing Dependencies
+  - title: "(video) IntelliJ IDEA: Managing Dependencies"
     href: "https://www.youtube.com/watch?v=nqb9yAecM9Y"
 video: "https://youtu.be/4-TO8pNIuks"
 ---

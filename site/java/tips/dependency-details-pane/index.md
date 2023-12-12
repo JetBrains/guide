@@ -11,7 +11,7 @@ cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Package Search
     href: "https://www.jetbrains.com/help/idea/package-search.html"
-  - title: (video) IntelliJ IDEA Managing Dependencies
+  - title: "(video) IntelliJ IDEA: Managing Dependencies"
     href: "https://www.youtube.com/watch?v=nqb9yAecM9Y"
 video: "https://youtu.be/ZIcSFcA3_XM"
 ---

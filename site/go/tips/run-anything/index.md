@@ -16,7 +16,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 seealso:
-  - title: GoLand Documentation – Run Anything
+  - title: (documentation) GoLand Help - Run Anything
     href: "https://www.jetbrains.com/help/go/2022.2/running-anything.html"
 ---
 

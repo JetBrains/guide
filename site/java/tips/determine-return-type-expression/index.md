@@ -9,7 +9,7 @@ subtitle: Type Info is very helpful on a per-expression basis
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: IntelliJ IDEA Help - Type Info
+  - title: (documentation) IntelliJ IDEA Help - Type Info
     href: >-
       https://www.jetbrains.com/help/idea/viewing-reference-information.html#type-info
 video: "https://youtu.be/vste6htns5o"

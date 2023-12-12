@@ -9,7 +9,7 @@ subtitle: Find a specific string in (a subset of files in) your code
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: (video) IntelliJ IDEA Pro Tips - Search Everywhere
+  - title: "(video) IntelliJ IDEA Pro Tips: Search Everywhere"
     href: "https://www.youtube.com/watch?v=r5kV8nTqVMQ"
   - title: (documentation) IntelliJ IDEA keyboard shortcuts
     href: "https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html"

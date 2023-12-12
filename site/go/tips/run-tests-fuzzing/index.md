@@ -7,7 +7,7 @@ topics:
 author: ap
 subtitle: Automate your tests by continuously submitting various input.
 seealso:
-  - title: GoLand Documentation – Fuzz testing
+  - title: (documentation) GoLand Help - Fuzz testing
     href: >-
       https://www.jetbrains.com/help/go/2022.2/performing-tests.html#run-fuzz-testing
 thumbnail: ./thumbnail.png

@@ -10,8 +10,8 @@ subtitle: >-
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: >-
-      (video)IntelliJ IDEA + Space = Complete Environment for Collaborative
+  - title:
+      (video) IntelliJ IDEA + Space = Complete Environment for Collaborative
       Software Development
     href: "https://www.youtube.com/watch?v=iHSbWIW48uM"
   - title: (documentation) Space Help - Getting started

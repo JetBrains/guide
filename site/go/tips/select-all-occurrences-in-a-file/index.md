@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: Quickly select all occurrences of a piece of text in the current file
 seealso:
-  - title: Rename refactoring
+  - title: (documentation) GoLand Help - Rename refactoring
     href: >-
       https://blog.jetbrains.com/go/2018/12/07/refactorings-in-goland-rename-refactoring/
 thumbnail: ./thumbnail.png

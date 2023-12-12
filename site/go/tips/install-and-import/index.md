@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: "While typing a symbol, let GoLand install it and generate the import."
 seealso:
-  - title: Creating and Optimizing Imports
+  - title: (documentation) GoLand Help - Creating and Optimizing Imports
     href: "https://www.jetbrains.com/help/go/creating-and-optimizing-imports.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

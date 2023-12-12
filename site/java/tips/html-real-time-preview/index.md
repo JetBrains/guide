@@ -10,9 +10,9 @@ cardThumbnail: ./card.png
 seealso:
   - title: (video) Inline Method Refactoring in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=uYsFlbXJbog"
-  - title: (video) IntelliJ IDEA Everyday Refactorings
+  - title: (video) IntelliJ IDEA. Everyday Refactorings
     href: "https://www.youtube.com/watch?v=rPq7fBo5JVs"
-  - title: (video) IntelliJ IDEA 3 Ways to Simplify Your Code
+  - title: (video) IntelliJ IDEA. 3 Ways to Simplify Your Code
     href: "https://www.youtube.com/watch?v=HgWU25YwDfc"
   - title: (documentation) IntelliJ IDEA Help - Preview output of HTML files
     href: >-

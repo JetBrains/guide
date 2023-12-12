@@ -9,7 +9,7 @@ subtitle: Rename an existing bookmark
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: (video) IntelliJ IDEA Help - Using bookmarks in IntelliJ IDEA
+  - title: (video) Using bookmarks in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=2PG03drOEMk"
   - title: (tutorial) IntelliJ IDEA Guide - Bookmarks
     href: "https://www.jetbrains.com/guide/java/tutorials/bookmarks/"

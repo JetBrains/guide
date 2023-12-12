@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: View arguments and documentation without interrupting your flow.
 seealso:
-  - title: Viewing Inline Documentation
+  - title: (documentation) GoLand Help - Viewing Inline Documentation
     href: "https://www.jetbrains.com/help/go/inline-documentation.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

@@ -9,7 +9,7 @@ subtitle: Add dependencies straight into your POM file with a single click
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: IntelliJ IDEA Help - Package Search build system support
+  - title: (documentation) IntelliJ IDEA Help - Package Search build system support
     href: >-
       https://www.jetbrains.com/help/idea/package-search-build-system-support-limitations.html#maven_support
 video: "https://youtu.be/u2keaYbs1Vg"

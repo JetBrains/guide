@@ -15,7 +15,7 @@ seealso:
       Presentation Mode
     href: >-
       https://www.jetbrains.com/guide/java/tutorials/presenting/presentation-mode/
-  - title: (video) IntelliJ IDEA - Presenting with IntelliJ IDEA
+  - title: (video) Presenting with IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=h-HGg9b6Dqw"
 video: "https://youtu.be/jwa9F4ADcxo"
 ---

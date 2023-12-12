@@ -13,7 +13,7 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/scratches.html"
   - title: (guide) IntelliJ IDEA Guide - Presenting with IntelliJ IDEA; Mouse Zoom
     href: "https://www.jetbrains.com/guide/java/tutorials/presenting/mouse-zoom/"
-  - title: (video) IntelliJ IDEA - Presenting with IntelliJ IDEA
+  - title: (video) Presenting with IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=h-HGg9b6Dqw"
 video: "https://youtu.be/NRXWBpg-ytY"
 ---

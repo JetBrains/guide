@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: Speed up your debugging by stopping execution only when you want to.
 seealso:
-  - title: Breakpoint properties
+  - title: (documentation) GoLand Help - Breakpoint properties
     href: >-
       https://www.jetbrains.com/help/go/using-breakpoints.html#breakpoint-properties
 thumbnail: ./thumbnail.png

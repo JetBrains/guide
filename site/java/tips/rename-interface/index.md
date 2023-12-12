@@ -9,9 +9,9 @@ subtitle: Renaming in IntelliJ IDEA including comments and texts
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: (video) IntelliJ IDEA 3 Ways To Simplify Your Code
+  - title: (video) IntelliJ IDEA. 3 Ways To Simplify Your Code
     href: "https://www.youtube.com/watch?v=HgWU25YwDfc"
-  - title: (video) IntelliJ IDEA Everyday Refactorings
+  - title: (video) IntelliJ IDEA. Everyday Refactorings
     href: "https://www.youtube.com/watch?v=rPq7fBo5JVs"
   - title: (documentation) IntelliJ IDEA Help - Rename refactorings
     href: "https://www.jetbrains.com/help/idea/rename-refactorings.html"

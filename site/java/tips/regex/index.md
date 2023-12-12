@@ -11,7 +11,7 @@ cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Language injections
     href: "https://www.jetbrains.com/help/idea/language-injections-settings.html"
-  - title: (video) IntelliJ IDEA Pro Tips - Inject Language or Reference
+  - title: "(video) IntelliJ IDEA Pro Tips: Inject Language or Reference"
     href: "https://www.youtube.com/watch?v=Au6NTrpTr_o"
 video: "https://youtu.be/aZ_pJ8OqZzw"
 ---

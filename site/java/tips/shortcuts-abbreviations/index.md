@@ -12,7 +12,7 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html"
   - title: (documentation) IntelliJ IDEA Help - Configure keyboard shortcuts
     href: "https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html"
-  - title: (video) IntelliJ IDEA Help - Top 15 IntelliJ IDEA shortcuts
+  - title: (video) Top 15 IntelliJ IDEA shortcuts
     href: "https://www.youtube.com/watch?v=QYO5_riePOQ"
 video: "https://youtu.be/Fk79fAS7Phk"
 ---

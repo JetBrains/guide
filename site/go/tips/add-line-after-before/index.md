@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: "Smart-add a line, from the middle of a line, after or before the current line."
 seealso:
-  - title: "Adding, Deleting and Moving Code Elements"
+  - title: (documentation) GoLand Help - Adding, Deleting and Moving Code Elements
     href: "https://www.jetbrains.com/help/go/adding-deleting-and-moving-lines.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

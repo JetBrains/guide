@@ -8,7 +8,7 @@ topics:
 author: ap
 subtitle: Use regular expressions to create your own search and replace inspections
 seealso:
-  - title: Create custom inspections
+  - title: (documentation) GoLand Help - Create custom inspections
     href: "https://www.jetbrains.com/help/go/creating-custom-inspections.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

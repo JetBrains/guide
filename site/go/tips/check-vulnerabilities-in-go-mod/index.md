@@ -9,7 +9,7 @@ topics:
 author: ap
 subtitle: Analyze your codebase and highlight known vulnerabilities in go.mod
 seealso:
-  - title: Vulnerability checker
+  - title: (documentation) GoLand Help - Vulnerability checker
     href: "https://www.jetbrains.com/help/go/vulnerability-checker.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

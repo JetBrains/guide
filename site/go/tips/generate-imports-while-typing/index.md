@@ -7,9 +7,9 @@ topics:
 author: dlsniper
 subtitle: Avoid interruption by letting GoLand generate your imports as you type.
 seealso:
-  - title: Creating and Optimizing Imports
+  - title: (documentation) GoLand Help - Creating and Optimizing Imports
     href: "https://www.jetbrains.com/help/go/creating-and-optimizing-imports.html"
-  - title: Basic Completion
+  - title: (documentation) GoLand Help - Basic Completion
     href: >-
       https://www.jetbrains.com/help/go/auto-completing-code.html#basic_completion
 thumbnail: ./thumbnail.png

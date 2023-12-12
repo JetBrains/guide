@@ -9,11 +9,11 @@ subtitle: >-
   Activate the Navigation Bar and create a new file somewhere in the project
   tree.
 seealso:
-  - title: Creating Files from Templates
+  - title: (documentation) GoLand Help - Creating Files from Templates
     href: "https://www.jetbrains.com/help/go/creating-files-from-templates.html"
-  - title: Navigation bar
+  - title: (documentation) GoLand Help - Navigation bar
     href: "https://www.jetbrains.com/help/go/part-4-using-the-navigation-bar.html"
-  - title: Navigating Tips and Tricks
+  - title: (documentation) GoLand Help - Navigating Tips and Tricks
     href: "https://www.jetbrains.com/help/go/navigation-bar.html"
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
