@@ -1,5 +1,9 @@
 {
 	"name": "g3-tsx",
+	"engines": {
+		"node": "^20.10.0",
+		"npm": "^10.2.3"
+	},
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -56,7 +60,6 @@
 		"markdown-it-prism": "^2.3.0",
 		"node-fetch": "^3.3.2",
 		"node-html-parser": "^6.1.9",
-		"patch-package": "^6.5.1",
 		"plyr": "^3.7.8",
 		"prettier": "^2.8.7",
 		"prism-themes": "^1.9.0",
@@ -65,7 +68,7 @@
 		"sharp": "0.32.4",
 		"svgo": "^3.0.2",
 		"ts-node": "^10.9.1",
-		"typescript": "^4.9.5",
+		"typescript": "^5.3.3",
 		"upath": "^2.0.1",
 		"vhtml": "^2.2.0",
 		"vite": "4.3.9",
@@ -74,13 +77,10 @@
 		"yargs": "^17.7.2"
 	},
 	"volta": {
-		"node": "20.10.0"
+		"node": "20.10.0",
+		"npm": "10.2.3"
 	},
 	"lint-staged": {
 		"**/*": "prettier --write --ignore-unknown"
-	},
-	"engines": {
-		"node": "^20.10.0",
-		"npm": "^10.2.3"
 	}
 }
