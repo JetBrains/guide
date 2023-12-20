@@ -9,6 +9,14 @@ export const AuthorFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
 	ThumbnailField,
 	LabelField,
+	Type.Object({
+		guest: Type.Optional(
+			Type.Boolean({
+				description:
+					"Marks a community author/not JetBrains employee and is marked as such in the Author's profile page",
+			})
+		),
+	}),
 ]);
 export type AuthorFrontmatter = Static<typeof AuthorFrontmatter>;
 
@@ -18,6 +26,7 @@ export class Author
 {
 	label: string;
 	thumbnail: string;
+	isGuest: boolean;
 	static frontmatterSchema = AuthorFrontmatter;
 	static joinKey = "author"; // What field on resource? Used in label namespace.
 
@@ -25,6 +34,7 @@ export class Author
 		super({ data, page });
 		this.label = data.label ? data.label : page.fileSlug;
 		this.thumbnail = path.join(page.url, data.thumbnail);
+		this.isGuest = data.guest ?? false;
 	}
 
 	getThumbnail(): string {

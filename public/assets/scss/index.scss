@@ -122,3 +122,35 @@ pre.prism-code div.token-line.highlight-line {
 //  color: #363636!important;
 //}
 //
+
+.thumbnail-container{
+  position: relative;
+  height: 128px;
+  width: 128px;
+  overflow: hidden;
+}
+
+.guest-author-banderole{
+  position: absolute;
+  top: 4px;
+  left: -30px;
+  z-index: 10;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding: 5px 0px;
+  color: white;
+  transform: rotate(315deg);
+  background: #087CFA;
+}
+
+.guest-author-badge{
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  display: inline-block;
+  width: 128px;
+  text-align: center;
+  color: white;
+  background: #087CFA;
+}

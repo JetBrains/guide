@@ -146,7 +146,8 @@ const ResourceCard = ({
 												data-template-href="authorURL"
 												data-template="author"
 											>
-												{author.title}
+												{author.title}{" "}
+												{(author as any).isGuest && "(Community)"}
 											</a>
 										</p>
 										<time

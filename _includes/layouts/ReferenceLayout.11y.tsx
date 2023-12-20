@@ -35,7 +35,13 @@ export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
 
 	let figure: undefined | string;
 	if (data.thumbnail) {
-		figure = <img src={data.thumbnail} alt={data.title} />;
+		const isJB = !(data as any).guest;
+		figure = (
+			<div class={"thumbnail-container"}>
+				{isJB && <span class={"guest-author-banderole"}>JB</span>}
+				<img src={data.thumbnail} alt={data.title} />
+			</div>
+		);
 	} else if (data.icon) {
 		figure = <i class={`${data.icon} has-text-${data.accent} fa-5x`} />;
 	} else if (data.logo) {

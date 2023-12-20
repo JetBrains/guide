@@ -31,6 +31,9 @@ export function AuthorsLayout(
 									<span class="mr-4">
 										<a href={author.url}>
 											<figure class="image is-1by1 is-128x128">
+												{author.isGuest && (
+													<span class={"guest-author-badge"}>Guest</span>
+												)}
 												<img src={author.thumbnail} alt={author.title} />
 											</figure>
 										</a>
