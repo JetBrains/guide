@@ -32,7 +32,7 @@ export function AuthorsLayout(
 										<a href={author.url}>
 											<figure class="image is-1by1 is-128x128">
 												{author.isGuest && (
-													<span class={"guest-author-badge"}>Guest</span>
+													<span class={"guest-author-badge"}>Community</span>
 												)}
 												<img src={author.thumbnail} alt={author.title} />
 											</figure>

@@ -1,5 +1,4 @@
 {
 	"resourceType": "author",
-	"layout": "resources/author/AuthorLayout.11ty.tsx",
-	"thumbnail": "../placeholder.png"
+	"layout": "resources/author/AuthorLayout.11ty.tsx"
 }
