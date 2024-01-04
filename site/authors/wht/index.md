@@ -3,6 +3,7 @@ title: Bill Tucker
 subtitle: Vim expositor at large
 thumbnail: ./wht.png
 author: wht
+guest: true
 date: 2020-01-01
 obsoletes:
   - /pycharm/authors/wht/
