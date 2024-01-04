@@ -19,7 +19,8 @@ export function RssLayout(this: LayoutContext, data: LayoutProps): string {
       </item>`;
 	});
 
-	const copyright = `Copyright © 2000–2023 <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.`;
+	const year = new Date().getFullYear();
+	const copyright = `Copyright © 2000–${year} <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.`;
 
 	return `<?xml version="1.0" encoding="utf-8"?>
   <rss version="2.0">
