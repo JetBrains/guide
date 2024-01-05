@@ -1,3 +1,13 @@
+// import EleventyVitePlugin from "@11ty/eleventy-plugin-vite";
+// import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+// import { registerIncludes } from "./_includes/config";
+//
+// import commandLineArgs from "command-line-args";
+// import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
+// import { absolutePaths } from "./src/plugins/absolutePaths";
+// import { metaOpenGraphImagePlugin } from "./src/plugins/metaOpenGraphImagePlugin";
+// import { purgeCss } from "@fullhuman/postcss-purgecss";
+
 const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -17,6 +27,7 @@ const options = commandLineArgs([
 	{ name: "serve", type: Boolean, defaultOption: false },
 	{ name: "watch", type: Boolean, defaultOption: false },
 ]);
+
 module.exports = function (eleventyConfig) {
 	// Stop logging every file that gets written
 	eleventyConfig.setQuietMode(true);
