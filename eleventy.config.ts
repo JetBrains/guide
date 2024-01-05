@@ -1,34 +1,38 @@
-// import EleventyVitePlugin from "@11ty/eleventy-plugin-vite";
-// import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
-// import { registerIncludes } from "./_includes/config";
-//
-// import commandLineArgs from "command-line-args";
-// import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
-// import { absolutePaths } from "./src/plugins/absolutePaths";
-// import { metaOpenGraphImagePlugin } from "./src/plugins/metaOpenGraphImagePlugin";
-// import { purgeCss } from "@fullhuman/postcss-purgecss";
+// @ts-ignore
+import EleventyVitePlugin from "@11ty/eleventy-plugin-vite";
+// @ts-ignore
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+// @ts-ignore
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import { registerIncludes } from "./_includes/config";
 
-const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const { registerIncludes } = require("./_includes/config");
-const commandLineArgs = require("command-line-args");
-const { ViteImageOptimizer } = require("vite-plugin-image-optimizer");
-const { absolutePaths } = require("./src/plugins/absolutePaths");
-const {
-	metaOpenGraphImagePlugin,
-} = require("./src/plugins/metaOpenGraphImagePlugin");
-const purgeCss = require("@fullhuman/postcss-purgecss");
+import commandLineArgs from "command-line-args";
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
+import { absolutePaths } from "./src/plugins/absolutePaths";
+import { metaOpenGraphImagePlugin } from "./src/plugins/metaOpenGraphImagePlugin";
+import purgeCss from "@fullhuman/postcss-purgecss";
+
+// const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
+// const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+// const pluginRss = require("@11ty/eleventy-plugin-rss");
+// const { registerIncludes } = require("./_includes/config");
+// const commandLineArgs = require("command-line-args");
+// const { ViteImageOptimizer } = require("vite-plugin-image-optimizer");
+// const { absolutePaths } = require("./src/plugins/absolutePaths");
+// const {
+// 	metaOpenGraphImagePlugin,
+// } = require("./src/plugins/metaOpenGraphImagePlugin");
+// const purgeCss = require("@fullhuman/postcss-purgecss");
 
 const options = commandLineArgs([
 	{ name: "config", type: String },
 	{ name: "incremental", type: Boolean, defaultOption: false },
-	{ name: "pathprefix", type: String, defaultOption: "/" },
+	{ name: "pathprefix", type: String, defaultValue: "/" },
 	{ name: "serve", type: Boolean, defaultOption: false },
 	{ name: "watch", type: Boolean, defaultOption: false },
 ]);
 
-module.exports = function (eleventyConfig) {
+module.exports = function (eleventyConfig: any) {
 	// Stop logging every file that gets written
 	eleventyConfig.setQuietMode(true);
 	eleventyConfig.addPlugin(EleventyVitePlugin, {
@@ -86,7 +90,7 @@ module.exports = function (eleventyConfig) {
 				mode: "production",
 				rollupOptions: {
 					output: {
-						assetFileNames: (info) => {
+						assetFileNames: (info: any) => {
 							if (
 								info.name.includes("rss.xml") ||
 								info.name.includes("lunr.json")
