@@ -24,7 +24,7 @@ type ListingLayoutProps = {
 } & LayoutProps &
 	ResourceFrontmatter;
 
-class ListingLayout {
+export default class ListingLayout {
 	data() {
 		return {
 			eleventyExcludeFromCollections: true,
@@ -111,5 +111,3 @@ class ListingLayout {
 		);
 	}
 }
-
-module.exports = ListingLayout;

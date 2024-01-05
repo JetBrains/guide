@@ -8,7 +8,7 @@ import {
 import { Resource } from "../src/ResourceModels";
 import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
 
-class LatestLayout {
+export default class LatestLayout {
 	data() {
 		return {
 			eleventyExcludeFromCollections: true,
@@ -49,5 +49,3 @@ class LatestLayout {
 		return <ReferenceLayout {...data} listing={[listing]} content={content} />;
 	}
 }
-
-module.exports = LatestLayout;

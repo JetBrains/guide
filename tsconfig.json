@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"target": "es2021" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
-		"jsx": "preserve" /* Specify what JSX code is generated. */,
+		"jsx": "react" /* Specify what JSX code is generated. */,
 		"jsxFactory": "h" /* Specify the JSX factory function used when targeting React JSX emit, e.g. 'React.createElement' or 'h' */,
 		"jsxFragmentFactory": "h.Fragment",
 		"module": "es2022" /* Specify what module code is generated. */,

@@ -26,7 +26,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class PythonHomepage {
+export default class PythonHomepage {
 	data() {
 		return {
 			layout: "",
@@ -90,5 +90,3 @@ class PythonHomepage {
 		);
 	}
 }
-
-module.exports = PythonHomepage;

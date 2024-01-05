@@ -32,7 +32,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class DotNetHomepage {
+export default class DotNetHomepage {
 	data() {
 		return {
 			layout: "",
@@ -210,5 +210,3 @@ class DotNetHomepage {
 		);
 	}
 }
-
-module.exports = DotNetHomepage;

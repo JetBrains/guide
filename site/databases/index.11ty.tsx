@@ -21,7 +21,7 @@ const frontmatter: ChannelFrontmatter = {
 	subnav: [{ title: "DataGrip", url: "https://www.jetbrains.com/datagrip/" }],
 };
 
-class DatabasesHomepage {
+export default class DatabasesHomepage {
 	data() {
 		return {
 			layout: "",
@@ -132,5 +132,3 @@ class DatabasesHomepage {
 		);
 	}
 }
-
-module.exports = DatabasesHomepage;

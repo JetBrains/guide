@@ -27,7 +27,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class GoHomepage {
+export default class GoHomepage {
 	data() {
 		return {
 			layout: "",
@@ -134,5 +134,3 @@ class GoHomepage {
 		);
 	}
 }
-
-module.exports = GoHomepage;

@@ -12,7 +12,7 @@ import { Topic } from "../_includes/resources/topic/TopicModels";
 
 type IndexPageProps = LayoutProps & PageFrontmatter;
 
-class IndexPage {
+export default class IndexPage {
 	data() {
 		return {
 			title: "JetBrains Guide",
@@ -194,5 +194,3 @@ class IndexPage {
 		);
 	}
 }
-
-module.exports = IndexPage;

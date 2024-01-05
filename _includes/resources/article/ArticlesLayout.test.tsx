@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { ArticlesLayout } from "./ArticlesLayout.11ty";
+import ArticlesLayout from "./ArticlesLayout.11ty";
 import { screen } from "@testing-library/dom";
 import fixtures, { baseRenderData } from "../../fixtures";
 import { ReferenceLayoutProps } from "../../layouts/ReferenceLayout.11y";

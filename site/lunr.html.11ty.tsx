@@ -3,7 +3,7 @@ import h, { JSX } from "vhtml";
 import { ReferenceLayoutProps } from "../_includes/layouts/ReferenceLayout.11y";
 import { LunrBase } from "../_includes/lunr.11ty";
 
-class LunrHtml extends LunrBase {
+export default class LunrHtml extends LunrBase {
 	data() {
 		return {
 			eleventyExcludeFromCollections: true,
@@ -47,5 +47,3 @@ class LunrHtml extends LunrBase {
 		);
 	}
 }
-
-module.exports = LunrHtml;
