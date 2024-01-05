@@ -2,7 +2,7 @@
 import { ReferenceLayoutProps } from "../_includes/layouts/ReferenceLayout.11y";
 import { LunrBase } from "../_includes/lunr.11ty";
 
-class LunrJson extends LunrBase {
+export default class LunrJson extends LunrBase {
 	data() {
 		return {
 			eleventyExcludeFromCollections: true,
@@ -18,5 +18,3 @@ class LunrJson extends LunrBase {
 		return JSON.stringify({ results });
 	}
 }
-
-module.exports = LunrJson;

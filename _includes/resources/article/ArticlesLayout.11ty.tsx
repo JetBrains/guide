@@ -7,7 +7,7 @@ import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Article } from "./ArticleModels";
 
-export class ArticlesLayout {
+export default class ArticlesLayout {
 	data() {
 		return {
 			eleventyExcludeFromCollections: true,
@@ -34,5 +34,3 @@ export class ArticlesLayout {
 		return <ReferenceLayout {...data} listing={[listing]} content={content} />;
 	}
 }
-
-module.exports = ArticlesLayout;

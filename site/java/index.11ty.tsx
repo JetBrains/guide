@@ -28,7 +28,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class JavaHomepage {
+export default class JavaHomepage {
 	data() {
 		return {
 			layout: "",
@@ -137,5 +137,3 @@ class JavaHomepage {
 		);
 	}
 }
-
-module.exports = JavaHomepage;

@@ -36,7 +36,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class GameDevHomepage {
+export default class GameDevHomepage {
 	data() {
 		return {
 			layout: "",
@@ -140,5 +140,3 @@ class GameDevHomepage {
 		);
 	}
 }
-
-module.exports = GameDevHomepage;

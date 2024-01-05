@@ -21,7 +21,7 @@ const frontmatter: ChannelFrontmatter = {
 	subnav: [{ title: "PyCharm", url: "https://www.jetbrains.com/pycharm/" }],
 };
 
-class DjangoHomepage {
+export default class DjangoHomepage {
 	data() {
 		return {
 			layout: "",
@@ -79,5 +79,3 @@ class DjangoHomepage {
 		);
 	}
 }
-
-module.exports = DjangoHomepage;

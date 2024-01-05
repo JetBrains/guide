@@ -29,7 +29,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class RemoteHomepage {
+export default class RemoteHomepage {
 	data() {
 		return {
 			layout: "",
@@ -310,5 +310,3 @@ class RemoteHomepage {
 		);
 	}
 }
-
-module.exports = RemoteHomepage;

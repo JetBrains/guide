@@ -69,7 +69,7 @@ const exploreMenu: ExploreGroup[] = [
 
 type ExplorePageProps = LayoutProps & PageFrontmatter;
 
-class ExplorePage {
+export default class ExplorePage {
 	data() {
 		return {
 			title: "Explore",
@@ -184,5 +184,3 @@ class ExplorePage {
 		);
 	}
 }
-
-module.exports = ExplorePage;

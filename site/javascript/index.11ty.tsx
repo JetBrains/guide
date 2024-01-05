@@ -32,7 +32,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class WebStormHomepage {
+export default class WebStormHomepage {
 	data() {
 		return {
 			layout: "",
@@ -97,5 +97,3 @@ class WebStormHomepage {
 		);
 	}
 }
-
-module.exports = WebStormHomepage;

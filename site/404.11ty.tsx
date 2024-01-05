@@ -7,7 +7,7 @@ import ListingSection from "../_includes/pageelements/ListingSection.11ty";
 
 type Http404PageProps = LayoutProps & PageFrontmatter;
 
-class Http404Page {
+export default class Http404Page {
 	data() {
 		return {
 			title: "404 - Page Not Found",
@@ -51,5 +51,3 @@ class Http404Page {
 		);
 	}
 }
-
-module.exports = Http404Page;
