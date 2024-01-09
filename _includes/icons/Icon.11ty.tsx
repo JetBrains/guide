@@ -1,5 +1,4 @@
 import path from "upath";
-import h, { JSX } from "vhtml";
 import fs from "fs";
 
 const svgCache = new Map<string, string>();

@@ -1,5 +1,3 @@
-// noinspection ES6UnusedImports
-import h, { JSX } from "vhtml";
 import { LayoutContext, LayoutProps } from "../src/models";
 import { PageFrontmatter } from "../_includes/resources/page/PageModels";
 import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
@@ -18,7 +16,7 @@ export default class Http404Page {
 		};
 	}
 
-	render(this: LayoutContext, data: Http404PageProps): JSX.Element {
+	render(this: LayoutContext, data: Http404PageProps) {
 		const latestContent = this.getResources({ limit: 12 });
 
 		return (

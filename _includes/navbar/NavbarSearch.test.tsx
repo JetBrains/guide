@@ -1,4 +1,3 @@
-import h from "vhtml";
 import { beforeEach, expect, test } from "vitest";
 import { screen } from "@testing-library/dom";
 import NavbarSearch from "./NavbarSearch.11ty";

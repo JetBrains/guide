@@ -1,5 +1,3 @@
-import h, { JSX } from "vhtml";
-
 type SeeAlsoItem = {
 	title: string;
 	href: string;

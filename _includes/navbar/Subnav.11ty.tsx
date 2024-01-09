@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { Channel } from "../resources/channel/ChannelModels";
 
 export type SubnavProps = {

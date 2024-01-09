@@ -3,14 +3,17 @@ import { screen } from "@testing-library/dom";
 
 import fixtures, { baseRenderData } from "../../fixtures";
 import { ArticleLayout, ArticleLayoutData } from "./ArticleLayout.11ty";
+import { renderToString } from "jsx-async-runtime";
 
-test("should render ArticleLayout", () => {
+test("should render ArticleLayout", async () => {
 	const tip0 = fixtures.tipItems[0];
 	const renderProps: ArticleLayoutData = {
 		...baseRenderData,
 		...tip0.data,
 		page: tip0.page,
 	};
-	document.body.innerHTML = ArticleLayout.call(fixtures.context, renderProps);
+	const r = ArticleLayout.call(fixtures.context, renderProps);
+	const x = await renderToString(r, {});
+	document.body.innerHTML = x;
 	expect(screen.getByText(tip0.data.title)).to.exist;
 });

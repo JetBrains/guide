@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { Playlist, PlaylistFrontmatter } from "./PlaylistModels";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import VideoPlayer from "../../video/VideoPlayer.11ty";

@@ -1,6 +1,5 @@
 import { Resource } from "../../src/ResourceModels";
 import ResourceCard from "../resourcecard/ResourceCard.11ty";
-import h from "vhtml";
 
 export type ListingSectionProps = {
 	title: string;

@@ -1,4 +1,3 @@
-import h from "vhtml";
 import { Tip, TipFrontmatter } from "./resources/tip/TipModels";
 import { Author, AuthorFrontmatter } from "./resources/author/AuthorModels";
 import { Topic, TopicFrontmatter } from "./resources/topic/TopicModels";
@@ -35,11 +34,7 @@ const content = `<p>Hello <em id="world">world</em>.</p>`;
 const date = new Date(Date.UTC(2023, 1, 11));
 const laterDate = new Date(Date.UTC(2023, 1, 22));
 
-const children: string[] = [
-	h("", {
-		dangerouslySetInnerHTML: { __html: content },
-	}),
-];
+const children: string[] = [];
 
 const tipFrontmatters: TipFrontmatter[] = [
 	{

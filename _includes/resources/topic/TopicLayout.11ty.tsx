@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { ReferenceLayout } from "../../layouts/ReferenceLayout.11y";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import { Topic, TopicFrontmatter } from "./TopicModels";

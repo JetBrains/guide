@@ -1,4 +1,3 @@
-import h from "vhtml";
 import { expect, test } from "vitest";
 import { ReferenceLayout, ReferenceLayoutProps } from "./ReferenceLayout.11y";
 import { screen } from "@testing-library/dom";

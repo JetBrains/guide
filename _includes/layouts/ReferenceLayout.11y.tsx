@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { BaseLayout } from "./BaseLayout.11ty";
 import { LayoutProps } from "../../src/models";
 import Pagination from "../pagination/Pagination.11ty";
