@@ -1,11 +1,10 @@
-import h, { JSX } from "vhtml";
 import VideoPlayer from "../video/VideoPlayer.11ty";
 
 export type AnimatedGifProps = {
 	file: string;
 	width: number;
 	height: number;
-	style?: JSX.StyleHTMLAttributes;
+	style?: any;
 };
 
 const AnimatedGif = (animatedGif: AnimatedGifProps): JSX.Element => {

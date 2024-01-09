@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import Navbar from "../navbar/Navbar.11ty";
 import Footer from "../footer/Footer.11ty";
 import { LayoutContext, LayoutProps } from "../../src/models";
@@ -12,7 +11,6 @@ import Subnav from "../navbar/Subnav.11ty";
 import { Channel } from "../resources/channel/ChannelModels";
 
 export type BaseLayoutProps = {
-	children: string[];
 	title: string;
 	subtitle?: string;
 	video?:

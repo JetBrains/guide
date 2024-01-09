@@ -1,4 +1,3 @@
-import h from "vhtml";
 import { Resource } from "../../src/ResourceModels";
 import ResourceCard from "../resourcecard/ResourceCard.11ty";
 

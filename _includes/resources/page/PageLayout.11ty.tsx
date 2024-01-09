@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { PageFrontmatter } from "./PageModels";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";

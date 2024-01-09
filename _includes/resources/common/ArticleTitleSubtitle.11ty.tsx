@@ -1,5 +1,3 @@
-import h, { JSX } from "vhtml";
-
 export type ArticleTitleSubtitleProps = {
 	title: string;
 	subtitle: string | undefined;

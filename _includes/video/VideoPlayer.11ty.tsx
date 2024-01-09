@@ -1,5 +1,3 @@
-import h, { JSX } from "vhtml";
-
 export type VideoPlayerProps = {
 	source: string | { url: string; start: number; end: number };
 };

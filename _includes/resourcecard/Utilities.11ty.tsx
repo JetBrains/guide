@@ -1,5 +1,4 @@
 import { AuthorFrontmatter } from "../resources/author/AuthorModels";
-import h from "vhtml";
 import { References } from "../../src/ResourceModels";
 
 const lazyLoading = "lazy" as const;

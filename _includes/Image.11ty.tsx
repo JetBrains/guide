@@ -1,5 +1,3 @@
-import h, { JSX } from "vhtml";
-
 export type ImageProps = {
 	src: string;
 	alt?: string;

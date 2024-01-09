@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import ConsistentHash from "consistent-hash";
 import { Resource } from "../../src/ResourceModels";
 import { Topic } from "../resources/topic/TopicModels";

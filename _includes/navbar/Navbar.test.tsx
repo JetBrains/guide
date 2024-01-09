@@ -1,4 +1,3 @@
-import h from "vhtml";
 import { expect, test } from "vitest";
 
 import Navbar from "./Navbar.11ty";

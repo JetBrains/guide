@@ -1,5 +1,3 @@
-import h from "vhtml";
-
 export type MultiColumnProps = {
 	children: string[];
 };

@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import {
 	ReferenceLayout,
 	ReferenceLayoutProps,

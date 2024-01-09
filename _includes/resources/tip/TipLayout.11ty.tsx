@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import SeeAlso from "../../seealso/SeeAlso.11ty";
 import { Tip, TipFrontmatter } from "./TipModels";
 import { Author } from "../author/AuthorModels";

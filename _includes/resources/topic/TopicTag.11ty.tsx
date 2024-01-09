@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { Topic } from "./TopicModels";
 
 export type TopicTagProps = {

@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import SeeAlso from "../../seealso/SeeAlso.11ty";
 import { Article, ArticleFrontmatter } from "./ArticleModels";
 import { Author } from "../author/AuthorModels";

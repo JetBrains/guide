@@ -1,5 +1,3 @@
-import h from "vhtml";
-
 export type CallToActionProps = {
 	title: string;
 	url: string;

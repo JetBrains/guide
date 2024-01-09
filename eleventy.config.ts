@@ -11,6 +11,7 @@ import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import { absolutePaths } from "./src/plugins/absolutePaths";
 import { metaOpenGraphImagePlugin } from "./src/plugins/metaOpenGraphImagePlugin";
 import purgeCss from "@fullhuman/postcss-purgecss";
+import { renderToString } from "jsx-async-runtime";
 
 // const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
 // const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -35,6 +36,12 @@ const options = commandLineArgs([
 module.exports = function (eleventyConfig: any) {
 	// Stop logging every file that gets written
 	eleventyConfig.setQuietMode(true);
+
+	eleventyConfig.addTransform("tsx", async (content: any) => {
+		const result = await renderToString(content);
+		return `<!doctype html>\n${result}`;
+	});
+
 	eleventyConfig.addPlugin(EleventyVitePlugin, {
 		viteOptions: {
 			clearScreen: true,

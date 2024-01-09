@@ -1,4 +1,3 @@
-import h from "vhtml";
 import { expect, test } from "vitest";
 import Subnav from "./Subnav.11ty";
 import fixtures from "../fixtures";

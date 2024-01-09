@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { Topic } from "../topic/TopicModels";
 import TopicTag from "../topic/TopicTag.11ty";
 
