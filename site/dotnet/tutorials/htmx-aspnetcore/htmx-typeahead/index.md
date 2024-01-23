@@ -62,19 +62,23 @@ There are a few notable elements in the C# method:
 
 We mentioned previously that partials are an important tool when building HTMX-powered applications. It allows us to reuse layout in HTTP and HTMX requests. Now let's look at the contents of our partial view. How complicated can it be?
 
-```html
-@model Exercises.Pages.Search @{ ArgumentNullException.ThrowIfNull(Model); } @if
-(Model.Results is {} games) { @foreach (var game in games) {
-<tr>
-	<td>@game.Year</td>
-	<td>@game.Publisher</td>
-	<td>@game.Console</td>
-	<td>@game.Name</td>
-</tr>
-} } else {
-<tr>
-	<td colspan="4">No Results for "@Model.Query"</td>
-</tr>
+```razor
+@model Exercises.Pages.Search
+@{ ArgumentNullException.ThrowIfNull(Model); }
+
+@if (Model.Results is {} games) {
+    @foreach (var game in games) {
+        <tr>
+            <td>@game.Year</td>
+            <td>@game.Publisher</td>
+            <td>@game.Console</td>
+            <td>@game.Name</td>
+        </tr>
+    }
+} else {
+    <tr>
+        <td colspan="4">No Results for "@Model.Query"</td>
+    </tr>
 }
 ```
 
