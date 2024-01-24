@@ -32,6 +32,7 @@ footer.pagefooter svg {
 .has-box-hover {
   &:hover {
     outline: 1px solid $grey-light;
+    background: hsla(0,0%,100%,.1);
   }
 }
 .is-16by9 i { /* ResourceCard with icon */
