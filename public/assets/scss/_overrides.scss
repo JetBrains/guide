@@ -174,6 +174,9 @@ a.link-external:after {
 .has-glow-purple {
   background: radial-gradient(circle, rgb(107, 87, 255) 12%, rgba(107, 87, 255, 0)) no-repeat border-box border-box rgb(40, 184, 160);
 }
+.has-glow-purple-transparent {
+  background: radial-gradient(at top right, rgb(107, 87, 255) 5%, rgba(0, 0, 0, 0) 65%);
+}
 
 .has-gradient-magenta {
   background: linear-gradient(200deg, rgb(255, 69, 237) 12%, rgba(255, 69, 237, 0)) no-repeat border-box border-box rgb(8, 124, 250);

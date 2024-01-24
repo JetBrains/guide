@@ -47,10 +47,10 @@ class IndexPage {
 
 		return (
 			<BaseLayout {...data}>
-				<section className="section has-gradient-purple">
+				<section className="section has-background-grey-darker has-glow-purple-transparent">
 					<div class="container">
 						<div class="columns is-multiline">
-							<div class="column is-8">
+							<div class="column is-7">
 								<h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold has-text-white">
 									Welcome to the JetBrains Guide
 								</h1>
@@ -74,11 +74,11 @@ class IndexPage {
 								)
 								.map((channel) => {
 									return (
-										<div class="column has-background-white m-4 is-5 is-2-desktop has-box-hover has-text-centered has-position-relative box">
+										<div class="column has-background-grey-darker has-box-outline m-4 is-5 is-2-desktop has-box-hover has-text-centered has-position-relative box">
 											<a
 												href={channel.url}
 												aria-label={channel.title}
-												class="is-size-5 has-text-weight-bold title is-stretched-link"
+												class="is-size-5 has-text-white title is-stretched-link"
 											>
 												<figure
 													class="image mb-4"
