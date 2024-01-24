@@ -16,8 +16,8 @@ function FeaturedResource({ resource, children }: FeaturedResourceProps) {
 							Featured {resource.resourceType}
 						</h2>
 						<div class="content">{children}</div>
-						<div className="mb-5">
-							<a className="button is-rounded is-primary" href={resource.url}>
+						<div class="mb-5">
+							<a class="button is-rounded is-primary" href={resource.url}>
 								Check it out
 							</a>
 						</div>
