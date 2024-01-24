@@ -30,6 +30,6 @@ export default class ArticlesLayout {
 				})}
 			</>
 		);
-		return <ReferenceLayout {...data} listing={[listing]} content={content} />;
+		return <ReferenceLayout {...data} listing={listing} content={content} />;
 	}
 }

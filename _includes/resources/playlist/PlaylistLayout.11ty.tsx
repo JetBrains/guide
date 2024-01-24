@@ -79,11 +79,9 @@ export function PlaylistLayout(
 			{playlist.references?.topics && (
 				<ArticleTopics topics={playlist.references?.topics} />
 			)}
-			<div
-				class="content"
-				style="margin-bottom: 3rem"
-				dangerouslySetInnerHTML={{ __html: content }}
-			></div>
+			<div class="content" style="margin-bottom: 3rem">
+				{content}
+			</div>
 			{playlist.playlistResources.map((item: any, index: number) => {
 				const thisItem = all.find((i) => i.page.url === item.url);
 				const itemContent = thisItem
@@ -117,12 +115,7 @@ export function PlaylistLayout(
 								</a>
 							</p>
 						)}
-						{itemContent && (
-							<div
-								class="content mt-4"
-								dangerouslySetInnerHTML={{ __html: itemContent }}
-							></div>
-						)}
+						{itemContent && <div class="content mt-4">{itemContent}</div>}
 					</div>
 				);
 			})}

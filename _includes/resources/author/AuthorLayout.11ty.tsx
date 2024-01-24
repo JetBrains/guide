@@ -31,7 +31,7 @@ export function AuthorLayout(
 			))}
 		</>
 	);
-	const contentDiv = <div dangerouslySetInnerHTML={{ __html: content }} />;
+	const contentDiv = <div>{content}</div>;
 
 	return <ReferenceLayout {...data} listing={[listing]} content={contentDiv} />;
 }

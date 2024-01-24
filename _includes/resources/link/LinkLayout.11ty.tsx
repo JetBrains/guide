@@ -70,10 +70,7 @@ export function LinkLayout(
 
 								{content && (
 									<div class="columns mt-2">
-										<div
-											class="column is-11-desktop content"
-											dangerouslySetInnerHTML={{ __html: content }}
-										/>
+										<div class="column is-11-desktop content">{content}</div>
 									</div>
 								)}
 							</main>

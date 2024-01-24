@@ -66,10 +66,7 @@ export function ArticleLayout(
 										In Depth
 									</header>
 									<div class="columns">
-										<div
-											class="column is-11-desktop content"
-											dangerouslySetInnerHTML={{ __html: content }}
-										/>
+										<div class="column is-11-desktop content">{content}</div>
 									</div>
 								</>
 							)}

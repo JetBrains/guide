@@ -30,10 +30,9 @@ function HeroSection({
 					>
 						{title}
 					</h1>
-					<p
-						class={`subtitle mb-5 ${subtitleExtraClass || "has-text-grey"}`}
-						dangerouslySetInnerHTML={{ __html: subtitleHtml }}
-					></p>
+					<p class={`subtitle mb-5 ${subtitleExtraClass || "has-text-grey"}`}>
+						{subtitleHtml}
+					</p>
 					{extraContent}
 				</div>
 			</div>
