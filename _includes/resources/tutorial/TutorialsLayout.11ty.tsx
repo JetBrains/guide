@@ -30,6 +30,6 @@ export default class TutorialsLayout {
 				})}
 			</>
 		);
-		return <ReferenceLayout {...data} listing={[listing]} content={content} />;
+		return <ReferenceLayout {...data} listing={listing} content={content} />;
 	}
 }

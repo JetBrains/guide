@@ -5,7 +5,8 @@ import { ChannelHomepageData } from "../../_includes/resources/channel/ChannelMo
 
 // @ts-ignore
 import WebStormHomepage from "./index.11ty";
-test("should render WebStormHomepage", () => {
+import { renderToString } from "jsx-async-runtime";
+test("should render WebStormHomepage", async () => {
 	const channelItem = fixtures.channelItems[0];
 	const pageLayoutData: ChannelHomepageData = {
 		...baseRenderData,
@@ -19,7 +20,8 @@ test("should render WebStormHomepage", () => {
 	};
 
 	const homepage = new WebStormHomepage();
-	document.body.innerHTML = homepage.render.call(context, pageLayoutData);
+	const r = homepage.render.call(context, pageLayoutData);
+	document.body.innerHTML = await renderToString(r, {});
 	const subnavTitle: HTMLAnchorElement = screen.getByRole("link", {
 		name: "Channel",
 	});

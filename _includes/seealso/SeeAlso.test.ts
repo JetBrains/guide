@@ -2,6 +2,7 @@ import { expect, test } from "vitest";
 import { screen } from "@testing-library/dom";
 
 import SeeAlso, { SeeAlsoProps } from "./SeeAlso.11ty";
+import { renderToString } from "jsx-async-runtime";
 
 const props: SeeAlsoProps = {
 	items: [
@@ -10,8 +11,9 @@ const props: SeeAlsoProps = {
 	],
 };
 
-test("SeeAlso", () => {
-	document.body.innerHTML = SeeAlso(props);
+test("SeeAlso", async () => {
+	const r = SeeAlso(props);
+	document.body.innerHTML = await renderToString(r, {});
 	const result = screen.getByRole("link", { name: "See Also 1" });
 	expect(result).to.exist;
 });

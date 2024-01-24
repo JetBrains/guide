@@ -9,6 +9,8 @@ import { ChannelHomepageData } from "../_includes/resources/channel/ChannelModel
 // @ts-ignore
 import ExplorePage from "./explore.11ty";
 import { HTMLInputElement } from "happy-dom";
+import { renderToString } from "jsx-async-runtime";
+import { Resource } from "../src/ResourceModels";
 
 const lunrResources = fixtures.resources.map((resource) => {
 	return {
@@ -41,14 +43,15 @@ describe("Faceted Browse", () => {
 	const rm = fixtures.resourceMap;
 	const context = {
 		...fixtures.context,
-		getResource: () => rm.get("/tips/some-tip/"),
+		getResource: () => rm.get("/tips/some-tip/") as Resource,
 	};
 
 	let explorePage: ExplorePage;
 
-	beforeEach(() => {
+	beforeEach(async () => {
 		explorePage = new ExplorePage();
-		document.body.innerHTML = explorePage.render.call(context, pageLayoutData);
+		const r = explorePage.render.call(context, pageLayoutData);
+		document.body.innerHTML = await renderToString(r, {});
 		cardTemplate = document.getElementById("cardTemplate");
 		facetMenuNode = document.getElementById("facetMenu");
 		listingNode = document.getElementById("listing");

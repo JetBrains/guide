@@ -1,5 +1,3 @@
-// noinspection ES6UnusedImports
-import h, { JSX } from "vhtml";
 import { LayoutContext } from "../src/models";
 import {
 	ReferenceLayout,
@@ -46,6 +44,6 @@ export default class LatestLayout {
 					})}
 			</>
 		);
-		return <ReferenceLayout {...data} listing={[listing]} content={content} />;
+		return <ReferenceLayout {...data} listing={listing} content={content} />;
 	}
 }

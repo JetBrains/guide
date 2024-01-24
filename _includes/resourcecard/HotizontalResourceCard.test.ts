@@ -3,11 +3,13 @@ import { screen } from "@testing-library/dom";
 
 import fixtures from "../fixtures";
 import HorizontalResourceCard from "./HorizontalResourceCard.11ty";
+import { renderToString } from "jsx-async-runtime";
 
-test("HorizontalResourceCard", () => {
+test("HorizontalResourceCard", async () => {
 	const resource = fixtures.resources[0];
 
-	document.body.innerHTML = HorizontalResourceCard({ resource });
+	const r = HorizontalResourceCard({ resource });
+	document.body.innerHTML = await renderToString(r, {});
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: "Resource",
 	});

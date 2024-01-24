@@ -1,5 +1,5 @@
 export type MultiColumnProps = {
-	children: string[];
+	children?: JSX.Element;
 };
 
 function MultiColumnSection({ children }: MultiColumnProps) {
@@ -7,9 +7,11 @@ function MultiColumnSection({ children }: MultiColumnProps) {
 		<section class="section has-background-grey-lighter">
 			<div class="container">
 				<div class="columns">
-					{children.map((column) => (
-						<div class="column content">{column}</div>
-					))}
+					{/*TODO ESM Need to re-invent children and two-columns*/}
+					{children &&
+						children.map((column) => (
+							<div class="column content">{column}</div>
+						))}
 				</div>
 			</div>
 		</section>

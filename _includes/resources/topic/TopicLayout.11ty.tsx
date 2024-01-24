@@ -28,9 +28,8 @@ export function TopicLayout(
 			))}
 		</>
 	);
-	const contentDiv = <div>{content}</div>;
 
-	return <ReferenceLayout {...data} listing={[listing]} content={contentDiv} />;
+	return <ReferenceLayout {...data} listing={listing} content={content} />;
 }
 
 // noinspection JSUnusedGlobalSymbols
