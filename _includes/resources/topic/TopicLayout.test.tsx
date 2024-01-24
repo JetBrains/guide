@@ -3,14 +3,16 @@ import { screen } from "@testing-library/dom";
 
 import { TopicLayout, TopicLayoutData } from "./TopicLayout.11ty";
 import fixtures, { baseRenderData } from "../../fixtures";
+import { renderToString } from "jsx-async-runtime";
 
-test("should render TopicLayout", () => {
+test("should render TopicLayout", async () => {
 	const topicLayoutData: TopicLayoutData = {
 		...baseRenderData,
 		...fixtures.topicItems[0].data,
 		page: fixtures.topicItems[0].page,
 	};
-	document.body.innerHTML = TopicLayout.call(fixtures.context, topicLayoutData);
+	const r = TopicLayout.call(fixtures.context, topicLayoutData);
+	document.body.innerHTML = await renderToString(r, {});
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: fixtures.tipItems[0].data.title,
 	});

@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { LayoutContext } from "../../src/models";
 import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
@@ -113,7 +112,7 @@ export default class DotNetHomepage {
 				<MultiColumnSection>
 					<div class="columns is-multiline is-centered">
 						{topics.map((topic) => {
-							let figure: string;
+							let figure: JSX.Element;
 							if (topic.icon) {
 								figure = (
 									<i class={`${topic.icon} has-text-${topic.accent} fa-2x`} />

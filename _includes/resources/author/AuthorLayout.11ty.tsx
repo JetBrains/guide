@@ -31,9 +31,8 @@ export function AuthorLayout(
 			))}
 		</>
 	);
-	const contentDiv = <div>{content}</div>;
 
-	return <ReferenceLayout {...data} listing={[listing]} content={contentDiv} />;
+	return <ReferenceLayout {...data} listing={listing} content={content} />;
 }
 
 export const render = AuthorLayout;

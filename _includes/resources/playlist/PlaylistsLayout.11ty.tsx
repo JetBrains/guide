@@ -22,7 +22,7 @@ export function PlaylistsLayout(
 			})}
 		</>
 	);
-	return <ReferenceLayout {...data} content={content} listing={[listing]} />;
+	return <ReferenceLayout {...data} content={content} listing={listing} />;
 }
 
 export const render = PlaylistsLayout;

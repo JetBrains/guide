@@ -7,7 +7,8 @@
 		"rootDir": ".",
 		"strict": true,
 		"jsx": "react-jsx",
-		"jsxImportSource": "jsx-async-runtime"
+		"jsxImportSource": "jsx-async-runtime",
+		"allowSyntheticDefaultImports": true
 	},
 	"include": [
 		"src",

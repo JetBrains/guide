@@ -1,14 +1,16 @@
 import { beforeEach, expect, test } from "vitest";
 import { screen } from "@testing-library/dom";
 import NavbarSearch from "./NavbarSearch.11ty";
+import { renderToString } from "jsx-async-runtime";
 
-beforeEach(() => {
-	document.body.innerHTML = (
+beforeEach(async () => {
+	const r = (
 		<>
 			<div id="navbarBurger"></div>
 			<NavbarSearch />
 		</>
 	);
+	document.body.innerHTML = await renderToString(r, {});
 });
 
 test("NavbarSearch exists", () => {

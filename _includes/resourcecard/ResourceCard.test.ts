@@ -3,11 +3,13 @@ import { screen } from "@testing-library/dom";
 
 import ResourceCard, { getGlowInfo } from "./ResourceCard.11ty";
 import fixtures from "../fixtures";
+import { renderToString } from "jsx-async-runtime";
 
-test("ResourceCard", () => {
+test("ResourceCard", async () => {
 	const resource = fixtures.resources[0];
 
-	document.body.innerHTML = ResourceCard({ resource });
+	const r = ResourceCard({ resource });
+	document.body.innerHTML = await renderToString(r, {});
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: fixtures.tips[0].title,
 	});

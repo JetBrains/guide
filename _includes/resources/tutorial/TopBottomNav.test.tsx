@@ -4,6 +4,7 @@ import { screen } from "@testing-library/dom";
 import { BottomNav, TopNav, TopNavProps } from "./TopBottomNav.11ty";
 import fixtures from "../../fixtures";
 import { Tutorial } from "./TutorialModels";
+import { renderToString } from "jsx-async-runtime";
 
 const parent = fixtures.resourceMap.get(
 	"/tutorials/some-tutorial/"
@@ -13,13 +14,15 @@ export const topNavProps: TopNavProps = {
 	currentStep: parent.tutorialSteps[1],
 };
 
-test("TopNav", () => {
-	document.body.innerHTML = TopNav(topNavProps);
+test("TopNav", async () => {
+	const r = TopNav(topNavProps);
+	document.body.innerHTML = await renderToString(r, {});
 
 	expect(screen.getAllByRole("link", { name: "Parent Tutorial" })).to.exist;
 });
-test("BottomNav", () => {
-	document.body.innerHTML = BottomNav(topNavProps);
+test("BottomNav", async () => {
+	const r = BottomNav(topNavProps);
+	document.body.innerHTML = await renderToString(r, {});
 
 	expect(screen.getByRole("link", { name: "Bottom Previous Step" })).to.exist;
 	expect(screen.getByRole("link", { name: "Bottom Next Step" })).to.exist;

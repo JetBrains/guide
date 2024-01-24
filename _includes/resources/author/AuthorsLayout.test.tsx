@@ -3,20 +3,22 @@ import { AuthorsLayout } from "./AuthorsLayout.11ty";
 import { screen } from "@testing-library/dom";
 import fixtures, { baseRenderData } from "../../fixtures";
 import { ReferenceLayoutProps } from "../../layouts/ReferenceLayout.11y";
+import { renderToString } from "jsx-async-runtime";
 
-test("should render AuthorsLayout", () => {
+test("should render AuthorsLayout", async () => {
 	const renderProps: ReferenceLayoutProps = {
 		...baseRenderData,
 		title: "Authors",
 		resourceType: "author",
-		listing: [""],
+		listing: <div></div>,
 		page: {
 			url: "/authors",
 			fileSlug: "some-slug",
 			date: fixtures.date,
 		},
 	};
-	document.body.innerHTML = AuthorsLayout.call(fixtures.context, renderProps);
+	const r = AuthorsLayout.call(fixtures.context, renderProps);
+	document.body.innerHTML = await renderToString(r, {});
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: "Author",
 	});

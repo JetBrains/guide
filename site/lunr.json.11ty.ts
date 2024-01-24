@@ -1,4 +1,3 @@
-// noinspection ES6UnusedImports
 import { ReferenceLayoutProps } from "../_includes/layouts/ReferenceLayout.11y";
 import { LunrBase } from "../_includes/lunr.11ty";
 
