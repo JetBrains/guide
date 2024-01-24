@@ -96,12 +96,7 @@ export default class ListingLayout {
 								)}
 							</div>
 						</div>
-						{content && (
-							<div
-								class="content pt-2"
-								dangerouslySetInnerHTML={{ __html: content }}
-							></div>
-						)}
+						{content && <div class="content pt-2">{content}</div>}
 					</div>
 				</section>
 

@@ -65,9 +65,7 @@ export function TutorialStepLayout(
 			<ArticleTopics topics={references!.topics} />
 
 			{video && !videoBottom && <div class="mb-4">{video}</div>}
-			{content ? (
-				<div dangerouslySetInnerHTML={{ __html: content }}></div>
-			) : null}
+			{content ? <div>{content}</div> : null}
 			{video && videoBottom && <div class="mb-4">{video}</div>}
 		</>
 	);

@@ -69,25 +69,15 @@ export function TutorialLayout(
 			/>
 			<ArticleTopics topics={references!.topics} />
 
-			{content ? (
-				<div class="mb-4" dangerouslySetInnerHTML={{ __html: content }}></div>
-			) : null}
+			{content ? <div class="mb-4">{content}</div> : null}
 			{firstTutorialStep ? (
 				<div class="mb-5">
-					<a
-						className="button is-rounded is-primary"
-						href={firstTutorialStep.url}
-					>
+					<a class="button is-rounded is-primary" href={firstTutorialStep.url}>
 						Start learning &raquo;
 					</a>
 				</div>
 			) : null}
-			{listing && (
-				<div
-					class="columns is-multiline"
-					dangerouslySetInnerHTML={{ __html: listing }}
-				/>
-			)}
+			{listing && <div class="columns is-multiline">{listing}</div>}
 		</>
 	);
 	return (

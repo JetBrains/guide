@@ -4,8 +4,8 @@ import Pagination from "../pagination/Pagination.11ty";
 import { ResourceFrontmatter } from "../../src/ResourceModels";
 
 export type ReferenceLayoutProps = {
-	content?: string;
-	listing: string[];
+	content: string;
+	listing: JSX.Element;
 	logo?: string;
 	thumbnail?: string;
 	icon?: string;
@@ -15,12 +15,7 @@ export type ReferenceLayoutProps = {
 
 export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
 	const { content, listing, pagination } = data;
-	const safeListing = (
-		<div
-			class="columns is-multiline"
-			dangerouslySetInnerHTML={{ __html: listing[0] }}
-		/>
-	);
+	const safeListing = <div class="columns is-multiline">{listing}</div>;
 
 	const pages = (
 		<section class="section" aria-label="Pagination">
@@ -32,12 +27,12 @@ export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
 		</section>
 	);
 
-	let figure: undefined | string;
+	let figure: JSX.Element;
 	if (data.thumbnail) {
 		const isGuest = (data as any).guest;
 		figure = (
 			<>
-				{isGuest && <span className={"guest-author-badge"}>Community</span>}
+				{isGuest && <span class={"guest-author-badge"}>Community</span>}
 				<img src={data.thumbnail} alt={data.title} />
 			</>
 		);
@@ -70,12 +65,7 @@ export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
 							)}
 						</div>
 					</div>
-					{content && (
-						<div
-							class="content pt-2"
-							dangerouslySetInnerHTML={{ __html: content }}
-						></div>
-					)}
+					{content && <div class="content pt-2">{content}</div>}
 				</div>
 			</section>
 

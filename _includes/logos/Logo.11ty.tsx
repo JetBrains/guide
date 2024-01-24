@@ -52,13 +52,7 @@ export type IconProps = {
 };
 
 const Logo = ({ product, variant, width, height }: IconProps): JSX.Element => {
-	return (
-		<span
-			dangerouslySetInnerHTML={{
-				__html: getResizedSvgContent(product, variant, width, height),
-			}}
-		></span>
-	);
+	return <span>{getResizedSvgContent(product, variant, width, height)}</span>;
 };
 
 export default Logo;

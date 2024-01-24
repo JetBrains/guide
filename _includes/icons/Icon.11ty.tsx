@@ -25,9 +25,7 @@ export type IconProps = {
 };
 
 const Icon = ({ name }: IconProps): JSX.Element => {
-	return (
-		<span dangerouslySetInnerHTML={{ __html: getSvgContent(name) }}></span>
-	);
+	return <span>{getSvgContent(name)}</span>;
 };
 
 export default Icon;

@@ -28,7 +28,7 @@ export function TopicLayout(
 			))}
 		</>
 	);
-	const contentDiv = <div dangerouslySetInnerHTML={{ __html: content }} />;
+	const contentDiv = <div>{content}</div>;
 
 	return <ReferenceLayout {...data} listing={[listing]} content={contentDiv} />;
 }

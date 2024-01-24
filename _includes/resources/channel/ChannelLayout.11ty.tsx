@@ -15,7 +15,7 @@ export function PageLayout(
 			<section class="section">
 				<div class="container">
 					<main class="content">
-						<div dangerouslySetInnerHTML={{ __html: data.content }} />
+						<div>{data.content}</div>
 					</main>
 				</div>
 			</section>

@@ -113,7 +113,7 @@ const Footer = ({ copyright }: FooterProps): JSX.Element => {
 							<Icon name={`rss-feed`} />
 						</a>
 					</p>
-					<p dangerouslySetInnerHTML={{ __html: copyright }}></p>
+					<p>{copyright}</p>
 				</div>
 			</div>
 		</footer>
