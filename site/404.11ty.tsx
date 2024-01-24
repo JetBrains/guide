@@ -24,13 +24,13 @@ export default class Http404Page {
 				<section class="section has-gradient-magenta">
 					<div class="container">
 						<div class="columns is-multiline">
-							<div className="column is-8">
+							<div class="column is-8">
 								<h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold has-text-white">
 									{data.title}
 								</h1>
-								<p className="subtitle mb-5 has-text-white">{data.subtitle}</p>
-								<div className="buttons mt-6">
-									<a className="button is-rounded is-white" href="/explore">
+								<p class="subtitle mb-5 has-text-white">{data.subtitle}</p>
+								<div class="buttons mt-6">
+									<a class="button is-rounded is-white" href="/explore">
 										Explore our site...
 									</a>
 								</div>

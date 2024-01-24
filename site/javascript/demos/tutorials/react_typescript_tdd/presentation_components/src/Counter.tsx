@@ -15,7 +15,7 @@ export const Counter: FC<CounterProps> = ({
 		onCounterIncrease(event.shiftKey);
 	};
 	return (
-		<div className="counter" onClick={handleClick}>
+		<div class="counter" onClick={handleClick}>
 			<span title="Count Label">{label}</span>
 			<span id="counter" title="Current Count">
 				{count}

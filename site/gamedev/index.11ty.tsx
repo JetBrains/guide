@@ -84,11 +84,11 @@ export default class GameDevHomepage {
 					subtitleExtraClass={"has-text-white"}
 					image={channel.hero!}
 					extraContent={
-						<div className="buttons are-medium">
-							<a href="#learn-unity" className="button is-rounded">
+						<div class="buttons are-medium">
+							<a href="#learn-unity" class="button is-rounded">
 								Learn Unity
 							</a>
-							<a href="#learn-unreal-engine" className="button is-rounded">
+							<a href="#learn-unreal-engine" class="button is-rounded">
 								Learn Unreal Engine
 							</a>
 						</div>

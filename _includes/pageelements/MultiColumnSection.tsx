@@ -8,7 +8,7 @@ function MultiColumnSection({ children }: MultiColumnProps) {
 			<div class="container">
 				<div class="columns">
 					{children.map((column) => (
-						<div className="column content">{column}</div>
+						<div class="column content">{column}</div>
 					))}
 				</div>
 			</div>

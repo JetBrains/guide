@@ -47,7 +47,7 @@ export default class IndexPage {
 
 		return (
 			<BaseLayout {...data}>
-				<section className="section has-gradient-purple">
+				<section class="section has-gradient-purple">
 					<div class="container">
 						<div class="columns is-multiline">
 							<div class="column is-8">
@@ -64,7 +64,7 @@ export default class IndexPage {
 					</div>
 				</section>
 
-				<section className="section has-background-grey-darker">
+				<section class="section has-background-grey-darker">
 					<div class="container">
 						<div class="columns is-multiline is-centered">
 							{channels
@@ -124,7 +124,7 @@ export default class IndexPage {
 					</div>
 				</MultiColumnSection>
 
-				<section className="section">
+				<section class="section">
 					<div class="container">
 						<div class="columns is-vcentered is-mobile">
 							<div class="column is-8">
