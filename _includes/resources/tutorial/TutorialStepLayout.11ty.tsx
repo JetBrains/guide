@@ -8,6 +8,7 @@ import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
+import { UserComments } from "../../userComments.11ty";
 
 export type TutorialStepLayoutData = LayoutProps & TutorialStepFrontmatter;
 
@@ -109,6 +110,7 @@ export function TutorialStepLayout(
 								<hr />
 								{bottomNav}
 							</main>
+							<UserComments theme={"light"} pageUrl={page.url} />
 						</div>
 					</div>
 				</div>

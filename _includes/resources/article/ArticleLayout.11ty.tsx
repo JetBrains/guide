@@ -10,6 +10,7 @@ import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
+import { UserComments } from "../../userComments.11ty";
 
 export type ArticleLayoutData = LayoutProps & ArticleFrontmatter;
 
@@ -73,6 +74,7 @@ export function ArticleLayout(
 							)}
 							{article.seealso && <SeeAlso items={article.seealso} />}
 						</main>
+						<UserComments theme={"light"} pageUrl={page.url} />
 					</div>
 				</div>
 			</div>
