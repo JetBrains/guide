@@ -13,18 +13,6 @@ import { metaOpenGraphImagePlugin } from "./src/plugins/metaOpenGraphImagePlugin
 import purgeCss from "@fullhuman/postcss-purgecss";
 import { renderToString } from "jsx-async-runtime";
 
-// const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
-// const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-// const pluginRss = require("@11ty/eleventy-plugin-rss");
-// const { registerIncludes } = require("./_includes/config");
-// const commandLineArgs = require("command-line-args");
-// const { ViteImageOptimizer } = require("vite-plugin-image-optimizer");
-// const { absolutePaths } = require("./src/plugins/absolutePaths");
-// const {
-// 	metaOpenGraphImagePlugin,
-// } = require("./src/plugins/metaOpenGraphImagePlugin");
-// const purgeCss = require("@fullhuman/postcss-purgecss");
-
 const options = commandLineArgs([
 	{ name: "config", type: String },
 	{ name: "incremental", type: Boolean, defaultOption: false },
