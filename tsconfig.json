@@ -13,7 +13,7 @@
 	},
 	"include": [
 		"src",
-		"_includes",
+		"_includes/**/*",
 		"public",
 		"node_modules/vitest/globals.d.ts",
 		"site/**/*.tsx",

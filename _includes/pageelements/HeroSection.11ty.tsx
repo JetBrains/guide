@@ -5,7 +5,7 @@ export type HeroSectionProps = {
 	subtitleExtraClass?: string;
 	image: string;
 	extraStyle?: string;
-	extraContent?: string;
+	extraContent?: JSX.Element;
 };
 
 function HeroSection({

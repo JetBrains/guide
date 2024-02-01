@@ -11,7 +11,6 @@ import { Tutorial } from "./resources/tutorial/TutorialModels";
 import { TutorialStep } from "./resources/tutorial/TutorialStepModels";
 import { Playlist } from "./resources/playlist/PlaylistModels";
 import { dumpSchemas } from "../src/schemas";
-import path from "upath";
 import * as fs from "fs";
 import MarkdownIt from "markdown-it";
 import prism from "markdown-it-prism";
@@ -26,6 +25,7 @@ import { Article } from "./resources/article/ArticleModels";
 import { Channel } from "./resources/channel/ChannelModels";
 import { RESOURCE_TYPES } from "../src/resourceType";
 import { Link } from "./resources/link/LinkModels";
+import { basename, join } from "path";
 
 export type ResourceMapType = {
 	channel: Channel;
@@ -81,11 +81,7 @@ export async function registerIncludes(
 				},
 				{}
 			);
-			const schemasOutputPath = path.join(
-				"docs",
-				"schemas",
-				path.basename(sitePath)
-			);
+			const schemasOutputPath = join("docs", "schemas", basename(sitePath));
 			fs.mkdirSync(schemasOutputPath, { recursive: true });
 			await dumpSchemas(schemas, resourceMap, schemasOutputPath);
 

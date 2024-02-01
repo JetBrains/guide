@@ -7,6 +7,7 @@ import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 export type TutorialStepLayoutData = LayoutProps & TutorialStepFrontmatter;
 
@@ -25,7 +26,7 @@ export function TutorialStepLayout(
 	);
 
 	// Sidebars
-	let sidebarSteps = "";
+	let sidebarSteps: JSX.Element;
 	if (parent) {
 		// Sometimes a tutorialstep might be "in-progress" and not
 		// yet linked into the tutorial
@@ -53,7 +54,7 @@ export function TutorialStepLayout(
 	// Main content
 	const videoBottom = tutorialStep.videoBottom;
 	const main = (
-		<>
+		<Fragment>
 			<ArticleTitleSubtitle
 				title={tutorialStep.title}
 				subtitle={tutorialStep.subtitle}
@@ -67,11 +68,11 @@ export function TutorialStepLayout(
 			{video && !videoBottom && <div class="mb-4">{video}</div>}
 			{content ? <div>{content}</div> : null}
 			{video && videoBottom && <div class="mb-4">{video}</div>}
-		</>
+		</Fragment>
 	);
 
 	// Breadcrumbs
-	let breadcrumbs = "";
+	let breadcrumbs: JSX.Element;
 	if (parent) {
 		breadcrumbs = (
 			<nav class="breadcrumb" aria-label="breadcrumbs">
@@ -88,7 +89,7 @@ export function TutorialStepLayout(
 	}
 
 	// Bottom nav
-	let bottomNav = "";
+	let bottomNav: JSX.Element;
 	if (parent) {
 		bottomNav = (
 			<BottomNav parent={parent} currentStep={tutorialStep}></BottomNav>

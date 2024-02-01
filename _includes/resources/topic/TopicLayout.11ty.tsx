@@ -2,6 +2,7 @@ import { ReferenceLayout } from "../../layouts/ReferenceLayout.11y";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import { Topic, TopicFrontmatter } from "./TopicModels";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 export type TopicLayoutData = LayoutProps & TopicFrontmatter;
 
@@ -21,12 +22,12 @@ export function TopicLayout(
 	);
 
 	const listing = (
-		<>
+		<Fragment>
 			{linkedResources.map((resource) => (
 				// @ts-ignore
 				<ResourceCard resource={resource}></ResourceCard>
 			))}
-		</>
+		</Fragment>
 	);
 
 	return <ReferenceLayout {...data} listing={listing} content={content} />;

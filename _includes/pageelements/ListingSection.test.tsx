@@ -15,5 +15,5 @@ test("SectionListing exists", async () => {
 	document.body.innerHTML = await renderToString(r, {});
 	expect(screen.getByText("Some Title")).to.exist;
 	expect(screen.getByText("Some Subtitle")).to.exist;
-	expect(screen.getByRole("link", { name: "Another Tip" })).to.exist;
+	expect(screen.getAllByRole("link", { name: "Another Tip" })).to.exist;
 });

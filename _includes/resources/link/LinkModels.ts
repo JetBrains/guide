@@ -5,12 +5,12 @@ import {
 	ResourceFrontmatter,
 } from "../../../src/ResourceModels";
 import { EleventyPage } from "../../../src/models";
-import path from "upath";
 import { VideoType } from "../common/VideoProp";
 import { LINK_RESOURCE_TYPE } from "../../../src/resourceType";
 import { ThumbnailField } from "../commonModels";
 // @ts-ignore
 import { getContentType } from "../../../public/assets/js/utils";
+import { join } from "path";
 
 export const LinkFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -45,7 +45,7 @@ export class Link
 		this.video = data.video;
 		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);
 		this.screenshot = data.screenshot
-			? path.join(page.url, data.screenshot)
+			? join(page.url, data.screenshot)
 			: undefined;
 	}
 

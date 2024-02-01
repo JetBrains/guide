@@ -2,6 +2,7 @@ import { BaseLayout } from "./BaseLayout.11ty";
 import { LayoutProps } from "../../src/models";
 import Pagination from "../pagination/Pagination.11ty";
 import { ResourceFrontmatter } from "../../src/ResourceModels";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 export type ReferenceLayoutProps = {
 	content: string;
@@ -31,10 +32,10 @@ export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
 	if (data.thumbnail) {
 		const isGuest = (data as any).guest;
 		figure = (
-			<>
+			<Fragment>
 				{isGuest && <span class={"guest-author-badge"}>Community</span>}
 				<img src={data.thumbnail} alt={data.title} />
-			</>
+			</Fragment>
 		);
 	} else if (data.icon) {
 		figure = <i class={`${data.icon} has-text-${data.accent} fa-5x`} />;
