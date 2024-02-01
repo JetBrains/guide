@@ -1,3 +1,5 @@
+// noinspection ES6UnusedImports
+import h, { JSX } from "vhtml";
 import { LayoutContext, LayoutProps } from "../src/models";
 import { PageFrontmatter } from "../_includes/resources/page/PageModels";
 import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
