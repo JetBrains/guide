@@ -67,6 +67,7 @@ class GameDevHomepage {
 			resourceTypes: [TIP_RESOURCE, LINK_RESOURCE],
 			channel: channel.url,
 			limit: 4,
+			customFilter: (r) => r.slug.indexOf("gamedev-day") < 0,
 		});
 
 		const eventPlaylists = this.getResources({
