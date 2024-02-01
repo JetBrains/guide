@@ -45,7 +45,7 @@ export default class IndexPage {
 
 		return (
 			<BaseLayout {...data}>
-				<section className="section has-background-grey-darker has-glow-purple-transparent">
+				<section class="section has-background-grey-darker has-glow-purple-transparent">
 					<div class="container">
 						<div class="columns is-multiline">
 							<div class="column is-7">
