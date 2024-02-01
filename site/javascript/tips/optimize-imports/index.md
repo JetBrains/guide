@@ -19,4 +19,4 @@ animatedGif:
   height: 300
 ---
 
-With the _Optimize Imports_ action <kbd>⌃⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+O<kbd/> (Windows/Linux), you can quickly remove any unused imports, merge imports from the same module, and optionally sort the import statements.
+With the Optimize Imports action <kbd>⌃⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+O<kbd/> (Windows/Linux), you can quickly remove any unused imports, merge imports from the same module, and optionally sort the import statements.

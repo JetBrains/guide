@@ -107,9 +107,9 @@ Click on the hamburger icon and hover over the Dashboard.
 
 Click on **Create Project**
 
-Provide the **Project Name**.
+Provide the _Project Name_.
 
-**Note**: For our use case, I have already created the project **“jetbrains-387607”**
+**Note**: For our use case, I have already created the project “jetbrains-387607”.
 
 ![gcp_new_project3](./images/gcp_new_project_3.png)
 ![gcp_new_project4](./images/gcp_new_project_4.png)
@@ -124,7 +124,7 @@ Make sure you’ve installed the latest version of PyCharm on your machine. Give
 
 ### The Google Cloud Code plugin
 
-Once you open PyCharm, click on the **Plugins** section.
+Once you open PyCharm, click on the _Plugins_ section.
 Search for “Google Cloud Code” and click **Install**.
 
 ![screen9](./images/screen9.png)
@@ -137,7 +137,7 @@ If you want to explore the different releases of Cloud Code then you can check o
 
 ![jetbrains_plugin1](./images/jb_plugin1.png)
 
-For our tutorial, we will be using **23.5.1-222** version.
+For our tutorial, we will be using _23.5.1-222_ version.
 
 ![jetbrains_plugin2](./images/jb_plugin2.png)
 

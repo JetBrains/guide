@@ -12,7 +12,7 @@ video: >-
   https://www.youtube.com/watch?v=fnVaPcMHSWs&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=117
 ---
 
-If you need to change your Go module's name or upgrade it to a new major, then the **Rename refactoring** has you covered.
+If you need to change your Go module's name or upgrade it to a new major, then the _Rename refactoring_ has you covered.
 
 **How to use:**
 Place the cursor under the module name in the _go.mod_ file, then invoke the _Refactor this_ feature, <kbd>^T</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+T</kbd> (Windows/Linux).

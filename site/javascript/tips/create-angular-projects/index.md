@@ -20,7 +20,7 @@ screenshot: ./tip.png
 
 You can create a new Angular project right from the _Welcome_ screen:
 
-1. Click the _Create New Project_ button.
-2. Select _Angular CLI_ from the list.
-3. Name your new project and press _Create_.
+1. Click **Create New Project**.
+2. Select **Angular CLI** from the list.
+3. Name your new project and press **Create**.
    WebStorm will create a new project using the Angular CLI installed globally on your machine or the latest version via npx.

@@ -18,4 +18,4 @@ seealso:
 video: "https://youtu.be/XxODsdFFlcg"
 ---
 
-Press **⌘D** (on Mac) or **Ctrl+D** (on Windows/Linux) in the editor to duplicate a selected block, or the current line when no block is selected.
+Press <kbd>⌘D</kbd> (macOS) / <kbd>Ctrl+D</kbd> (Windows/Linux) in the editor to duplicate a selected block, or the current line when no block is selected.

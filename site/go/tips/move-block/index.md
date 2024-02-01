@@ -22,6 +22,6 @@ Use this tip to move code around without cut-and-paste.
 
 **How to use:**
 
-**Move Statement Up** with <kbd>⌘⇧↑</kbd> (macOS) / <kbd>Ctrl+Shift+Up Arrow</kbd> (Windows/Linux).
+_Move Statement Up_ with <kbd>⌘⇧↑</kbd> (macOS) / <kbd>Ctrl+Shift+Up Arrow</kbd> (Windows/Linux).
 
-**Move Statement Down** with <kbd>⌘⇧↑</kbd> (macOS) / <kbd>Ctrl+Shift+Up Arrow</kbd> (Windows/Linux)..
+_Move Statement Down_ with <kbd>⌘⇧↑</kbd> (macOS) / <kbd>Ctrl+Shift+Up Arrow</kbd> (Windows/Linux).

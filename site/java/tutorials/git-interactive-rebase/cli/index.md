@@ -12,7 +12,7 @@ Let's take a look at how to use Git interactive rebase from the command line.
 
 In the Git history, identify the commit _just before_ the commit from where you want to clean up your history. In this example, that will be the last commit before we started adding the new feature.
 
-Find the commit hash for this commit in the "**Commit Details**" to the right of the Git history in the Git window and copy this commit hash. (Spoiler: the commit hash in this example is `34bb0f99`.)
+Find the commit hash for this commit in the **Commit Details** to the right of the Git history in the Git window and copy this commit hash. (Spoiler: the commit hash in this example is `34bb0f99`.)
 
 ![Commit Hash](commit-hash.png)
 

@@ -16,4 +16,4 @@ Committing error-free code reduces the time it takes for reviews to go happen an
 
 **How to use:**
 
-Invoke the _Commit_ using <kbd>⌘K</kbd> (macOS) / <kbd>Ctrl+K</kbd> (Windows/Linux), then select the _Commit options_, and select the **Analyze code** feature.
+Invoke the _Commit_ using <kbd>⌘K</kbd> (macOS) / <kbd>Ctrl+K</kbd> (Windows/Linux), then select the **Commit options**, and select the **Analyze code** feature.

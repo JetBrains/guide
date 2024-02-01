@@ -17,4 +17,4 @@ animatedGif:
   height: 300
 ---
 
-Have _package.json_ opened in the editor and want to start a npm script? Click on the _Run_ icon next to the script name and select _Run_.
+Have `package.json` opened in the editor and want to start a npm script? Click on the **Run** icon next to the script name and select **Run**.

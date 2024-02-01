@@ -17,7 +17,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/IDNdm-1x5SM"
 ---
 
-HTMX works on the philosophy of **[Locality of Behavior](https://htmx.org/essays/locality-of-behaviour/)**. Adopting this philosophy means we will define HTMX definitions and the result of the behavior as close to each other as possible. The more relative everything is, the more decipherable our application is to developers needing to maintain and adapt our codebase.
+HTMX works on the philosophy of [Locality of Behavior](https://htmx.org/essays/locality-of-behaviour/). Adopting this philosophy means we will define HTMX definitions and the result of the behavior as close to each other as possible. The more relative everything is, the more decipherable our application is to developers needing to maintain and adapt our codebase.
 
 In general, it is easy to adhere to this philosophy, but there's always an exception to a rule. For example, an everyday use case where we break this rule is when dealing with an application shell. A shopping site is a good example, where a global shopping item indicator displays the number of items contained within the cart. Adding an item to our cart will increment the display with the latest total item count; removing an item will reduce the count. So how can we implement this user experience using HTMX?
 

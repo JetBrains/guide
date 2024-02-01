@@ -23,7 +23,7 @@ TDD, or test-driven development, means "always be testing." In fact, the best wa
 
 Some test frameworks have a mode to "watch" your tests and code, detect changes, and re-run tests. But PyCharm makes this even easier, with a button and action.
 
-Simply click the `Toggle auto-run` in the test tool window, then run your tests once. From that point, any time "things change", PyCharm will re-run whatever tests are currently in that test tool window tab.
+Simply click the **Toggle auto-run** in the test tool window, then run your tests once. From that point, any time "things change", PyCharm will re-run whatever tests are currently in that test tool window tab.
 
 It's a very convenient workflow. In fact, since the IDE automatically saves files, you don't even have to perform a save to trigger your test re-runs.
 

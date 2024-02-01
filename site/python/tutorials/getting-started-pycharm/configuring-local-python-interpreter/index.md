@@ -21,7 +21,7 @@ When we're talking about local interpreters, PyCharm lets us configure them in t
 
 You just need to have a Python installation already setup on your local machine. PyCharm lets you select your interpreter at three different points.
 
-**Firstly**, you can select the interpreter when you create a new project. We already covered how to create a new project, but we skimmed the Python interpreter configuration.
+_Firstly_, you can select the interpreter when you create a new project. We already covered how to create a new project, but we skimmed the Python interpreter configuration.
 
 When you create a new project, you need to choose between creating a new interpreter or selecting a previously configured interpreter. Let's create a new one.
 

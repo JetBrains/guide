@@ -22,4 +22,4 @@ Gutter icons can show you:
 - Recursive calls
   ... and more.
 
-You can configure them in your **Preferences/Settings** <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and searching for "gutter".
+You can configure them in your **Preferences/Settings** <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and searching for _gutter_.

@@ -45,7 +45,7 @@ plugins {
 
 [Full build.gradle code](https://github.com/trishagee/spock-testing-demo/blob/1ced2b4d118a3bcb418f05c1470dbef665b8eee9/build.gradle)
 
-Now we can load all the Gradle changes with **⇧⌘I** (macOS), or **Ctrl+Shift+O** (Windows/Linux), and IntelliJ IDEA will download any new dependencies, remove the old ones, and correctly configure the project.
+Now we can load all the Gradle changes with <kbd>⌘⇧I</kbd> (macOS) / <kbd>Ctrl+Shift+O</kbd> (Windows/Linux), and IntelliJ IDEA will download any new dependencies, remove the old ones, and correctly configure the project.
 
 With a mixed language project like this one, one way to organise the files is to keep Java code in the `java` folder and to create a `groovy` folder for Groovy code.
 

@@ -23,4 +23,4 @@ animatedGif:
 The quick way to find the current file in the _Project_ tool window.
 
 - Focus on the file opened in the editor and press <kbd>⌥F1</kbd> (macOS) / <kbd>Alt+F1</kbd> (Windows/Linux).
-- In the popup that appears, select _Project View_ and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux).
+- In the popup that appears, select **Project View** and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux).

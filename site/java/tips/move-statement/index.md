@@ -17,6 +17,6 @@ seealso:
 video: "https://youtu.be/TZdeOOhTHlc"
 ---
 
-You can use **⇧⌘↑** (macOS), or **Ctrl+Shift+Up Arrow** (Windows/Linux), to move a statement up. To move a statement down use <kbd>⌘⇧↓</kbd> (macOS) / <kbd>Ctrl+Shift+Down Arrow</kbd> (Windows/Linux).
+You can use <kbd>⌘⇧↑</kbd> (macOS) / <kbd>Ctrl+Shift+Up Arrow</kbd> (Windows/Linux), to move a statement up. To move a statement down use <kbd>⌘⇧↓</kbd> (macOS) / <kbd>Ctrl+Shift+Down Arrow</kbd> (Windows/Linux).
 
 This shortcut factors in scope. You cannot move a statement outside of the scope its contained within.

@@ -37,11 +37,11 @@ IntelliJ IDEA also shows if there are any conflicts, so we know if this request 
 
 ![Conflicts](conflicts.png)
 
-We can open any of the files that make up the Merge Request, and IntelliJ IDEA will show them in the diff viewer, so we can have a closer look at the changes that make up the Merge Request. Inline comments will be displayed in the diff view too. Alternatively, we can open the diff view by selecting the file and using the shortcut for **Show Diff** <kbd>⌘D</kbd> (macOS) / <kbd>Ctrl+D</kbd> (Windows/Linux).
+We can open any of the files that make up the Merge Request, and IntelliJ IDEA will show them in the diff viewer, so we can have a closer look at the changes that make up the Merge Request. Inline comments will be displayed in the diff view too. Alternatively, we can open the diff view by selecting the file and using the shortcut for Show Diff <kbd>⌘D</kbd> (macOS) / <kbd>Ctrl+D</kbd> (Windows/Linux).
 
 ![Show diff](diff.png)
 
-If the Merge Request contains changes to multiple files, we can navigate between those files. We can do so using the arrows at the top of the diff viewer, or using the shortcuts to **Compare Next File** <kbd>⌘\[</kbd> (macOS) / <kbd>Ctrl+Alt+Left Arrow</kbd> (Windows/Linux) or **Compare Previous File** <kbd>⌘\]</kbd> / (macOS) <kbd>Ctrl+Alt+Right Arrow</kbd> (Windows/Linux).
+If the Merge Request contains changes to multiple files, we can navigate between those files. We can do so using the arrows at the top of the diff viewer, or using the shortcuts to Compare Next File <kbd>⌘\[</kbd> (macOS) / <kbd>Ctrl+Alt+Left Arrow</kbd> (Windows/Linux) or Compare Previous File <kbd>⌘\]</kbd> / (macOS) <kbd>Ctrl+Alt+Right Arrow</kbd> (Windows/Linux).
 
 ---
 
@@ -53,7 +53,7 @@ If the Merge Request consists of multiple commits, we can see the individual com
 
 We can also see the number of comments for the Merge Request, and for each file.
 
-We can **Hide All Windows** <kbd>⌘⇧F12</kbd> (macOS) / <kbd>Ctrl+Shift+F12 (Windows/Linux)</kbd> to focus on the diff. We can **Restore Windows** using the same shortcut.
+We can Hide All Windows <kbd>⌘⇧F12</kbd> (macOS) / <kbd>Ctrl+Shift+F12 (Windows/Linux)</kbd> to focus on the diff. We can **Restore Windows** using the same shortcut.
 
 Alternatively, we can reopen the Merge Requests window by opening the Recent Files dialog <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux), which also lets us open up any of the tool windows. Here we can search for “merge” to find the Merge Request tool window.
 

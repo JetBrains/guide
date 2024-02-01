@@ -17,11 +17,11 @@ seealso:
 video: "https://youtu.be/GvAUA-jD9d0"
 ---
 
-Use <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Resolve Conflicts_ to open the **Conflicts** dialog which helps you to visually resolve merge conflicts between two different versions of the code.
+Use <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Resolve Conflicts_ to open the _Conflicts_ dialog which helps you to visually resolve merge conflicts between two different versions of the code.
 
-- You can use the option available in the **Merge Revisions** dialog and **you should carefully review** before you accept or ignore code changes as well as resolving conflicts. This dialog visually helps you to review and resolve merge conflicts.
+- You can use the option available in the _Merge Revisions_ dialog and you should carefully review before you accept or ignore code changes as well as resolving conflicts. This dialog visually helps you to review and resolve merge conflicts.
 
-- **Note:** The **Resolve Conflicts** option from the Search Everywhere dialog will only display the **Conflicts** dialog when there are merge conflicts in your code, otherwise you will get an error.
+- **Note:** The **Resolve Conflicts** option from the Search Everywhere dialog will only display the _Conflicts_ dialog when there are merge conflicts in your code, otherwise you will get an error.
 
 ## Resolving Conflicts Using Git Toolbar Options
 
@@ -31,14 +31,14 @@ Alternately, you can open the **Conflicts** dialog by using **Git -> Resolve Con
 
 ### Conflicts Dialog
 
-The **Conflicts** dialog shows a list of files that have merge conflicts. You can select files and merge manually, or
+The _Conflicts_ dialog shows a list of files that have merge conflicts. You can select files and merge manually, or
 you can accept either your changes or their (incoming) changes.
 
 ![Conflicts Dialog Showing List of Conflicted Files](conflicts-dialog.png)
 
 ### Manually Resolving Conflicts using Merge
 
-When you manually merge changes, you use the **Merge Revisions** dialog which provides a visual view of changes and
+When you manually merge changes, you use the _Merge Revisions_ dialog which provides a visual view of changes and
 conflicts between two different versions of the code. It has three different views:
 
 ![Merge Revisions Dialog](merge-revisions-dialog.png)
@@ -58,8 +58,8 @@ The Right view shows the incoming file changes.
 
 ### Resolving Merge Conflicts
 
-You should carefully review the changes **_(highlighted in blue)_** and accept any one of the changes that are required.
-In case of conflicts **_(highlighted in red)_**, you should accept the changes that you want, and ignore those that you
+You should carefully review the changes _(highlighted in blue)_ and accept any one of the changes that are required.
+In case of conflicts _(highlighted in red)_, you should accept the changes that you want, and ignore those that you
 don't.
 
 #### Accepting Code Changes
@@ -73,12 +73,12 @@ pointing towards the Result view. This will apply the corresponding change in th
 
 ![Ignore Code Change](ignore-change.png)
 
-To ignore a code change, click on the **X**. This means that the change is disregarded from the selected view (Left or
+To ignore a code change, click on **X**. This means that the change is disregarded from the selected view (Left or
 Right). Ignoring code changes means that they are not applied to the Result view.
 
 ### Finish Merging
 
 ![Save Changes to Finish Merging](finish-merging.png)
 
-When you have successfully resolved all your merge conflicts, IntelliJ IDEA will prompt you that **All Changes have been
-processed**. When you press **Apply** the conflicts in the file are all resolved.
+When you have successfully resolved all your merge conflicts, IntelliJ IDEA will prompt you that _All Changes have been
+processed_. When you press **Apply** the conflicts in the file are all resolved.

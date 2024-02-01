@@ -19,10 +19,10 @@ animatedGif:
   height: 300
 ---
 
-You can easily check the value of an expression when you are debugging using _Evaluate Expression_.
+You can easily check the value of an expression when you are debugging using Evaluate Expression.
 
 There are 3 ways you can use it:
 
 1. Click the debug toolbar button to launch it.
-2. Invoke the _Evaluate Expression_ action <kbd>⌥⌘F8</kbd> (macOS) / <kbd>Ctrl+Alt+F8</kbd> (Windows/Linux).
-3. Right-click in the editor and select _Evaluate Expression_.
+2. Invoke the Evaluate Expression action <kbd>⌥⌘F8</kbd> (macOS) / <kbd>Ctrl+Alt+F8</kbd> (Windows/Linux).
+3. Right-click in the editor and select **Evaluate Expression**.

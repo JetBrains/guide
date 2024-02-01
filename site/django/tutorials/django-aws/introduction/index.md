@@ -20,7 +20,7 @@ Hello everyone, welcome to part one of the AWS Django tutorial series. In this t
 
 Django was created in the fall of 2003, when the web programmers at the Lawrence Journal-World newspaper, Adrian Holovaty and Simon Willison, began using Python to build applications. Jacob Kaplan-Moss was hired early in Django's development, shortly before Simon Willison's internship ended. It was released publicly under a BSD license in July 2005. The framework was named after guitarist Django Reinhardt. Adrian Holovaty is a Romani jazz guitar player and a big fan of Django Reinhardt.
 
-In June 2008, it was announced that a newly formed **Django Software Foundation (DSF)** would maintain Django in the future.
+In June 2008, it was announced that a newly formed Django Software Foundation (DSF) would maintain Django in the future.
 
 Django started off with great documentation, the best of any other open-source framework. And it’s still maintained on a high level, updated along with the new functions and fixes, so you can easily adapt to changes.
 
@@ -40,16 +40,16 @@ FastAPI is a modern, fast (high-performance), web framework for building APIs wi
 
 The key features are:
 
-- **Fast**: Very high performance, on par with NodeJS and Go (thanks to Starlette and Pydantic). One of the fastest Python frameworks available.
+- Fast: Very high performance, on par with NodeJS and Go (thanks to Starlette and Pydantic). One of the fastest Python frameworks available.
 
-- **Fast to code**: Increase the speed to develop features by about 200% to 300%.
+- Fast to code: Increase the speed to develop features by about 200% to 300%.
 
-- **Fewer bugs**: Reduce about 40% of human (developer) induced errors.
-- **Intuitive**: Great editor support. Completion everywhere. Less time debugging.
-- **Easy**: Designed to be easy to use and learn. Less time reading docs.
-- **Short**: Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.
-- **Robust**: Get production-ready code. With automatic interactive documentation.
-- **Standards-based**: Based on (and fully compatible with) the open standards for APIs: OpenAPI (previously known as Swagger) and JSON Schema.
+- Fewer bugs: Reduce about 40% of human (developer) induced errors.
+- Intuitive: Great editor support. Completion everywhere. Less time debugging.
+- Easy: Designed to be easy to use and learn. Less time reading docs.
+- Short: Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.
+- Robust: Get production-ready code. With automatic interactive documentation.
+- Standards-based: Based on (and fully compatible with) the open standards for APIs: OpenAPI (previously known as Swagger) and JSON Schema.
 
 For reference, you can visit [fastapi.tiangolo.com](https://fastapi.tiangolo.com/)
 

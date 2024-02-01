@@ -53,7 +53,7 @@ This is how the app structure is going to look.
 
 ![step2](./steps/step2.png)
 
-Next, I will create a **config.py** file which contains necessary credentials as
+Next, I will create a `config.py` file which contains necessary credentials as
 environment variables related to database name, password etc.
 
 ![step3](./steps/step3.png)
@@ -78,7 +78,7 @@ which is an object relational mapper for Python and helps to communicate with da
 
 ![step5](./steps/step5.png)
 
-We will be also installing **psycopg2** which is a database connector for python and postgres. You may have seen that we did not use the SQLAlchemy 1.4.0 or [psycopg3](https://www.psycopg.org/psycopg3/) package which supports the asyncio feature, which indeed definitely is going to be faster. During the time of recording, the [psycopg3](https://www.psycopg.org/psycopg3/) project was still under active development and the asyncio extension of SQLAlchemy 1.4.3 is considered to be in **beta** level.
+We will be also installing _psycopg2_ which is a database connector for python and postgres. You may have seen that we did not use the SQLAlchemy 1.4.0 or [psycopg3](https://www.psycopg.org/psycopg3/) package which supports the asyncio feature, which indeed definitely is going to be faster. During the time of recording, the [psycopg3](https://www.psycopg.org/psycopg3/) project was still under active development and the asyncio extension of SQLAlchemy 1.4.3 is considered to be in **beta** level.
 
 Maybe within a few months we can expect a stable release. But you are completely free to explore these projects.
 
@@ -90,7 +90,7 @@ As you can see I am using PyCharm, so it’s able to auto-detect the missing pac
 
 # System Dependencies
 
-Make sure before installing **psycopg2** package you have installed the system dependencies.
+Make sure before installing _psycopg2_ package you have installed the system dependencies.
 
 ```bash
 sudo apt-get install libpq-dev python-dev

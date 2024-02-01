@@ -19,6 +19,6 @@ animatedGif:
   height: 300
 ---
 
-Need some placeholder text in your code? Type _lorem_ and press _Tab_. If needed, you can add the text together with a tag: just add a tag name and _>_ before _lorem_.
+Need some placeholder text in your code? Type _lorem_ and press <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (Windows/Linux). If needed, you can add the text together with a tag: just add a tag name and _>_ before _lorem_.
 
-If you want to generate a specific number of words, add a number after _lorem_, e.g. lorem5, then press _Tab_.
+If you want to generate a specific number of words, add a number after _lorem_, e.g. lorem5, then press <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (Windows/Linux).

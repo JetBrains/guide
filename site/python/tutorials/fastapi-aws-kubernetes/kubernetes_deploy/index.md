@@ -60,7 +60,7 @@ sudo wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux
 
 ![step4](./steps/step4.png)
 
-I will copy the **minikube-linux-amd64** to **/usr/local/bin/minikube** and make it executable.
+I will copy the `minikube-linux-amd64` to `/usr/local/bin/minikube` and make it executable.
 
 ```bash
 sudo cp minikube-linux-amd64 /usr/local/bin/minikube
@@ -75,7 +75,7 @@ Looks good, minikube is successfully installed.
 
 ![step6](./steps/step6.png)
 
-Next, I will install the **[kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)** which is the Kubernetes command-line tool, which allows you to run commands against Kubernetes clusters.
+Next, I will install the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) which is the Kubernetes command-line tool, which allows you to run commands against Kubernetes clusters.
 
 For your reference, you can follow this link: [https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 
@@ -103,7 +103,7 @@ I won’t show the installation step of Docker because there are tons of tutoria
 
 Once Docker is installed, we will move ahead and start the minikube.
 
-At the time of this recording we are using Kubernetes **1.22** version.
+At the time of this recording we are using Kubernetes _1.22_ version.
 
 ### Starting Minikube
 
@@ -225,7 +225,7 @@ As you can see I already have an image with a tag as latest.
 
 ![step15](./steps/step15.png)
 
-Before pushing the image to DockerHub, I will create a **.dockerignore** file which is similar to **.gitignore**.
+Before pushing the image to DockerHub, I will create a `.dockerignore` file which is similar to `.gitignore`.
 
 ![step16](./steps/step16.png)
 
@@ -267,9 +267,9 @@ Now, it’s time to play with Kubernetes.
 
 # K8s Manifests
 
-I am going to create a directory in root and name it **k8s**. As you know k8s is a short form of Kubernetes.
+I am going to create a directory in root and name it _k8s_. As you know k8s is a short form of Kubernetes.
 
-K8s is just an abbreviation of Kubernetes (**"K" followed by 8 letters "ubernete" followed by "s"**).
+K8s is just an abbreviation of Kubernetes ("K" followed by 8 letters "ubernete" followed by "s").
 
 ![step20](./steps/step20.png)
 
@@ -277,7 +277,7 @@ Under K8s directory, I will create multiple directories.
 
 ## Namespace
 
-First I will create a **namespace**. In Kubernetes, namespaces provide a mechanism for isolating groups of resources within a single cluster. Names of resources need to be unique within a namespace, but not across namespaces.
+First I will create a _namespace_. In Kubernetes, namespaces provide a mechanism for isolating groups of resources within a single cluster. Names of resources need to be unique within a namespace, but not across namespaces.
 
 Reference:
 
@@ -285,9 +285,9 @@ Reference:
 
 ![step21](./steps/step21.png)
 
-If you have observed one thing, all these files end with **.yaml** extension. The Kubernetes resources are created in a declarative way, thus making use of YAML files.
+If you have observed one thing, all these files end with `.yaml` extension. The Kubernetes resources are created in a declarative way, thus making use of YAML files.
 
-Resources such as **pods**, **services**, and **deployments** are created by using the YAML files.
+Resources such as _pods_, _services_, and _deployments_ are created by using the YAML files.
 
 You can create resources with imperative commands, but it is suggested that declarative ways are much more flexible.
 
@@ -295,7 +295,7 @@ Coming back, I will set the namespace to **fastapi-project**.
 
 So, all the pods, deployments, secrets will fall under this namespace.
 
-**k8s/namespace/ns.yml**
+`k8s/namespace/ns.yml**`
 
 ```yaml
 apiVersion: v1
@@ -383,9 +383,9 @@ When working with Kubernetes, you are going to hear this word many times and tha
 
 A pod is the smallest execution unit in Kubernetes. Pods are ephemeral by nature; if a pod (or the node it executes on) fails, Kubernetes can automatically create a new replica of that pod to continue operations. Pods include one or more containers (such as Docker containers).
 
-You can see we have defined **InitContainers**. In Kubernetes, an init container is the one that starts and executes before other containers in the same pod. It's meant to perform initialization logic for the main application hosted on the Pod. For example, create the necessary user accounts, perform database migrations, create database schemas and so on.
+You can see we have defined _InitContainers_. In Kubernetes, an init container is the one that starts and executes before other containers in the same pod. It's meant to perform initialization logic for the main application hosted on the Pod. For example, create the necessary user accounts, perform database migrations, create database schemas and so on.
 
-But here we are just checking whether our database server is up and running using the **[pg_ready](https://www.postgresql.org/docs/9.3/app-pg-isready.html)** command.
+But here we are just checking whether our database server is up and running using the [pg_ready](https://www.postgresql.org/docs/9.3/app-pg-isready.html) command.
 
 Now, under the **containers** section, we will define the Docker image which we have already pushed to DockerHub.
 
@@ -395,7 +395,7 @@ After that we are going to define a **secret**. We will implement this in a whil
 
 The container port is going to 5000.
 
-Then we are going to do health checks using the **readiness probe** and **liveness probe**.
+Then we are going to do health checks using the readiness probe and liveness probe.
 
 Readiness probes are designed to let Kubernetes know when your app is ready to serve traffic.
 Kubernetes makes sure the readiness probe passes before allowing a service to send traffic to the pod.
@@ -403,7 +403,7 @@ Kubernetes makes sure the readiness probe passes before allowing a service to se
 The kubelet uses liveness probes to know when to restart a container.
 For example, liveness probes could catch a deadlock, where an application is running, but unable to make progress.
 
-As you can observe we are using the **httpGet** request to check for path **/docs** to return 200 response at a period of 15 seconds.
+As you can observe we are using the _httpGet_ request to check for path `/docs` to return 200 response at a period of 15 seconds.
 
 For your reference, read this documentation:
 
@@ -418,7 +418,7 @@ CPU is always requested as an absolute quantity, never as a relative quantity; 0
 ## Secret
 
 Next, we are going to create a secret. A Secret is an object that contains a small amount of sensitive data such as a password, a token, or a key.
-Secrets are similar to **[ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/)** but are specifically intended to hold confidential data.
+Secrets are similar to [ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/) but are specifically intended to hold confidential data.
 
 Kubernetes accepts secrets as base64 encoded values, encoding and encryption both are different.
 If you are interested in encryption, then check out [bitnami sealed secrets](https://github.com/bitnami-labs/sealed-secrets).
@@ -444,7 +444,7 @@ data:
 
 ## Service
 
-Next, we are going to work on **[Service](https://kubernetes.io/docs/concepts/services-networking/service/)**.
+Next, we are going to work on [Service](https://kubernetes.io/docs/concepts/services-networking/service/).
 
 We could use a deployment without a service to keep a set of identical pods running in the Kubernetes cluster.
 The deployment could be scaled up and down and pods could be replicated.
@@ -478,10 +478,10 @@ spec:
 
 There are many service type like:
 
-- **ClusterIP**: Exposes a service which is only accessible from within the cluster.
-- **NodePort**: Exposes a service via a static port on each node’s IP.
-- **LoadBalancer**: Exposes the service via the cloud provider’s load balancer.
-- **ExternalName**: Maps a service to a predefined externalName field by returning a value for the CNAME record.
+- ClusterIP: Exposes a service which is only accessible from within the cluster.
+- NodePort: Exposes a service via a static port on each node’s IP.
+- LoadBalancer: Exposes the service via the cloud provider’s load balancer.
+- ExternalName: Maps a service to a predefined externalName field by returning a value for the CNAME record.
 
 References:
 
@@ -498,7 +498,7 @@ I am going to speed up the process. I expect you to check my source code, as I h
 
 This is the nginx deployment blueprint, as you can observe we will be running 8 replicas of nginx 1.21 version and the container port is 80 and as usual we are doing the common health checks.
 
-**k8s/nginx/nginx-deployment.yml**
+`k8s/nginx/nginx-deployment.yml`
 
 ```yaml
 apiVersion: apps/v1
@@ -558,7 +558,7 @@ If you observe carefully from line number 10 to 23 we are changing the nginx con
 
 Line number 11 clearly shows that the request is going to the internal ecommerce service which is running at port 5000.
 
-**k8s/nginx/nginx-config.yml**
+`k8s/nginx/nginx-config.yml`
 
 ```yaml
 apiVersion: v1
@@ -584,7 +584,7 @@ data:
     }
 ```
 
-Next, we will create the nginx service which is basically a **nodeport** service.
+Next, we will create the nginx service which is basically a _nodeport_ service.
 
 ![step26](./steps/step26.png)
 
@@ -592,15 +592,15 @@ Observe carefully from line number 13 to 15.
 
 We are using port, targetPort and nodePort.
 
-- **Port** exposes the Kubernetes service on the specified port within the cluster. Other pods within the cluster can communicate with this server on the specified port.
+- Port exposes the Kubernetes service on the specified port within the cluster. Other pods within the cluster can communicate with this server on the specified port.
 
-- **TargetPort** is the port on which the service will send requests to, that your pod will be listening on. Your application in the container will need to be listening on this port also.
+- TargetPort is the port on which the service will send requests to, that your pod will be listening on. Your application in the container will need to be listening on this port also.
 
-- **NodePort** exposes a service externally to the cluster by means of the target node's IP address and the NodePort.
+- NodePort exposes a service externally to the cluster by means of the target node's IP address and the NodePort.
 
 As I said earlier we have different service types and the nginx service is a **nodeport** service. In simple terms we can access the pod externally through the port number 30009.
 
-**k8s/nginx/nginx-service.yml**
+`k8s/nginx/nginx-service.yml`
 
 ```yaml
 apiVersion: v1
@@ -628,7 +628,7 @@ We have completed the nginx, next we will work on postgres.
 
 As you can observe the postgres deployment we will be only running one pod.
 
-**k8s/postgres/postgres-deployment.yml**
+`k8s/postgres/postgres-deployment.yml`
 
 ```yaml
 apiVersion: apps/v1
@@ -673,7 +673,7 @@ spec:
 
 The container will be running on port 5432 and some memory limits have been applied.
 
-We will be introducing two major things: **[persistentVolume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)** and **[persistentVolumeClaim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims)**.
+We will be introducing two major things: [persistentVolume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) and [persistentVolumeClaim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims).
 
 Volumes let your pod write to a filesystem that exists as long as the pod exists. Volumes also let you share data between containers in the same pod.
 
@@ -683,12 +683,12 @@ You can observe the PersistentVolume, we are creating a storage of 2GB in size, 
 
 There are 4 types of access modes:
 
-- **RWO** - ReadWriteOnce
-- **ROX** - ReadOnlyMany
-- **RWX** - ReadWriteMany
-- **RWOP** - ReadWriteOncePod
+- RWO - ReadWriteOnce
+- ROX - ReadOnlyMany
+- RWX - ReadWriteMany
+- RWOP - ReadWriteOncePod
 
-**k8s/postgres/postgres-pv.yml**
+`k8s/postgres/postgres-pv.yml`
 
 ```yaml
 kind: PersistentVolume
@@ -722,13 +722,13 @@ spec:
 
 We have set a reclaim policy to **Delete**, and you have the option to retain as well. Deletion removes both the PersistentVolume object from Kubernetes, and the associated storage asset in the external infrastructure.
 
-**storageClassName** is currently local storage, but even you can use AWS EBS Storage, Google Storage etc.
+_storageClassName_ is currently local storage, but even you can use AWS EBS Storage, Google Storage etc.
 
 Observe carefully on line number 18 and 26.
 
 ![step28](./steps/step28.png)
 
-**Path** is basically pointing to the directory where the postgres files will be installed.
+_Path_ is basically pointing to the directory where the postgres files will be installed.
 If you are using Docker Desktop in Windows then this is the way you need to provide the path and the postgres-data folder is already present in the E drive.
 
 As you know we are running our application in a linux machine We need to provide the home directory path of the postgres-data folder which we mounted in the beginning when starting the minikube.
@@ -741,7 +741,7 @@ Next, I will create the persistent volume claim.
 
 A PersistentVolumeClaim is a request for a resource with specific attributes, such as storage size. As I said earlier, a pod uses a persistent volume claim to get read and write access to the persistent volume. In our case we are pointing the volume name to **postgres-pv**.
 
-**k8s/postgres/postgres-pvc.yml**
+`k8s/postgres/postgres-pvc.yml`
 
 ```yaml
 kind: PersistentVolumeClaim
@@ -764,7 +764,7 @@ spec:
 
 After we are done with volumes, we will create the secrets and services.
 
-**k8s/postgres/postgres-secret.yml**
+`k8s/postgres/postgres-secret.yml`
 
 ```yaml
 apiVersion: v1
@@ -780,7 +780,7 @@ data:
   POSTGRES_PASSWORD: bXVrdWwxMjM= # mukul123
 ```
 
-**k8s/postgres/postgres-service.yml**
+`k8s/postgres/postgres-service.yml`
 
 ```yaml
 kind: Service
@@ -807,7 +807,7 @@ Same as usual we will create deployment and service files for [Redis](https://re
 
 We will run the redis 6.2.5 alpine image.
 
-**k8s/redis/deployment.yml**
+`k8s/redis/deployment.yml`
 
 ```yaml
 apiVersion: apps/v1
@@ -851,7 +851,7 @@ spec:
 
 The redis service will be running on port 6379.
 
-**k8s/redis/service.yml**
+`k8s/redis/service.yml`
 
 ```yaml
 apiVersion: v1
@@ -877,7 +877,7 @@ We are done with redis, now we will move to celery.
 
 It won’t be having any service, only deployment and secret because celery will be used for processing the background tasks.
 
-**k8s/celery/deployment.yml**
+`k8s/celery/deployment.yml`
 
 ```yaml
 apiVersion: apps/v1
@@ -994,7 +994,7 @@ spec:
   backoffLimit: 15
 ```
 
-**k8s/job/secret.yml**
+`k8s/job/secret.yml`
 
 ```yaml
 apiVersion: v1
@@ -1039,7 +1039,7 @@ After namespace, I will create postgres and the other remaining modules.
 
 Something is wrong, let me check what is being missed out.
 
-Ohh ok, I got it. The path needs to **/data**. This is what we mounted when we started the minikube.
+Ohh ok, I got it. The path needs to `/data`. This is what we mounted when we started the minikube.
 
 ![step35](./steps/step35.jpg)
 

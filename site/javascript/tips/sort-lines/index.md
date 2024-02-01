@@ -16,4 +16,4 @@ animatedGif:
   height: 300
 ---
 
-To quickly sort lines alphabetically, select them in the editor and choose _Edit | Sort Lines_ from the main menu. Alternatively, you can run this action using the _Find Action_ command <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux).
+To quickly sort lines alphabetically, select them in the editor and choose **Edit | Sort Lines** from the main menu. Alternatively, you can run this action using the Find Action command <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux).

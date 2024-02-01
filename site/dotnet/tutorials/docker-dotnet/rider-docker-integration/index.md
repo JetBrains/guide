@@ -15,7 +15,7 @@ subtitle: >-
 thumbnail: ./thumbnail.png
 ---
 
-When working with Docker in JetBrains Rider, developers will likely spend some of their time looking at the **Services** window. We'll walk through all the standard Docker features and settings we may want to modify.
+When working with Docker in JetBrains Rider, developers will likely spend some of their time looking at the _Services_ window. We'll walk through all the standard Docker features and settings we may want to modify.
 
 ### Docker Connection
 
@@ -31,11 +31,11 @@ Now we're ready to explore what actions we can take on our host.
 
 ### Pull an Image
 
-We mentioned that images are at the heart of the Docker ecosystem. While we can build our images, we'll likely use images constructed by other individuals and communities as a foundation for our work. We can pull any community image from **Dockerhub** by triggering the context menu on the Docker icon and selecting the `Pull image...` icon.
+We mentioned that images are at the heart of the Docker ecosystem. While we can build our images, we'll likely use images constructed by other individuals and communities as a foundation for our work. We can pull any community image from _Dockerhub_ by triggering the context menu on the Docker icon and selecting the `Pull image...` icon.
 
 ![Docker right-click to pull image](./3-docker-pull-image.png)
 
-From the **Images Console**, we can use the `Image to pull` search bar to find and pull any image.
+From the _Images Console_, we can use the `Image to pull` search bar to find and pull any image.
 
 ![Docker right-click to pull image search](./4-docker-image-search.png)
 
@@ -45,7 +45,7 @@ Additionally, if we're using a private registry, we can add those locations by a
 
 ### Creating A New Container
 
-We can run any existing images as a new container. If we right-click an image located in the **Images** section, we will pick the **Create Container** option.
+We can run any existing images as a new container. If we right-click an image located in the _Images_ section, we will pick the **Create Container** option.
 
 ![Creating a new container by right-clicking an image](./6-create-a-container.png)
 
@@ -53,11 +53,11 @@ If it is our first time running an image as a container, we'll receive a **Creat
 
 ![Create a new container settings dialog](./7-container-run-settings.png)
 
-Here we can set any run arguments along with setting the container name explicitly. Like before, once we create a running container, we'll see the output of our .NET application in the **Log** tab.
+Here we can set any run arguments along with setting the container name explicitly. Like before, once we create a running container, we'll see the output of our .NET application in the _Log_ tab.
 
 ### Environment Variables
 
-Environment variables are essential for running containers, especially with .NET applications that support reading variables from the environment or through a configuration provider. We can see all the defined variables in the **Environment Variables** tab for a running container.
+Environment variables are essential for running containers, especially with .NET applications that support reading variables from the environment or through a configuration provider. We can see all the defined variables in the _Environment Variables_ tab for a running container.
 
 ![Managing environment variables for containers](./8-environment-variables.png)
 
@@ -69,15 +69,15 @@ Depending on how we access our environment variables, we may need to restart our
 
 ### Port Bindings
 
-As we'll see in our next demo, publishing ports is essential to communicating with our containers. For web applications built on ASP.NET, we will need to expose at least the HTTP port, but since our **Hello Docker** project is a console application, we don't need to publish any ports.
+As we'll see in our next demo, publishing ports is essential to communicating with our containers. For web applications built on ASP.NET, we will need to expose at least the HTTP port, but since our _Hello Docker_ project is a console application, we don't need to publish any ports.
 
 ![Port Bindings Tab](./10-port-bindings.png)
 
-From the **Port Bindings** tab, we can map an internal port to a host machine port or choose to **Publish all ports**. Rider's UI clearly labels the `Container port` and the `Host port`.
+From the _Port Bindings_ tab, we can map an internal port to a host machine port or choose to **Publish all ports**. Rider's UI clearly labels the `Container port` and the `Host port`.
 
 ### Volume Management
 
-As we learned in the **Common Terminology** section of this tutorial, volumes are persistent storage on the host. Even when deleting an existing container, the data stored in these volumes will carry on. We can attach new or existing volumes from the **Volume Bindings** tab.
+As we learned in the _Common Terminology_ section of this tutorial, volumes are persistent storage on the host. Even when deleting an existing container, the data stored in these volumes will carry on. We can attach new or existing volumes from the _Volume Bindings_ tab.
 
 ![Volume binding dialog](./11-volume-binding-dialog.png)
 
@@ -105,7 +105,7 @@ The file explorer also gives us the option to download binary files from a runni
 
 ### Attaching A Terminal
 
-In the previous **Files** section, we saw how we could start a new terminal process on our running container. Right-clicking on a running container in our **Services** pane allows us to choose the **Create Terminal** option.
+In the previous _Files_ section, we saw how we could start a new terminal process on our running container. Right-clicking on a running container in our _Services_ pane allows us to choose the **Create Terminal** option.
 
 ![Create terminal and attach to container](./13-create-terminal.png)
 
@@ -115,7 +115,7 @@ Once we create the terminal instance, we can run any command supported by the co
 
 ## Rider and the Docker CLI
 
-While Rider's **Services** window has many of the features developers will need to work with Docker, Rider's features don't cover all the Docker CLI tooling features. The JetBrains team continues to work hard in bringing all the elements to developers. If developers find any component missing and necessary for their workflow, we encourage them to file an issue in our issue tracker.
+While Rider's _Services_ window has many of the features developers will need to work with Docker, Rider's features don't cover all the Docker CLI tooling features. The JetBrains team continues to work hard in bringing all the elements to developers. If developers find any component missing and necessary for their workflow, we encourage them to file an issue in our issue tracker.
 
 For this reason, it is necessary to be comfortable with the Docker CLI commands and not entirely rely on Rider integration with Docker.
 

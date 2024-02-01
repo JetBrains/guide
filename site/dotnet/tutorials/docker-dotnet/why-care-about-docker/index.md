@@ -21,7 +21,7 @@ Luckily for developers, the rise of DevOps has brought the cloud, at least some 
 
 > If we can run a production-like environment throughout our development, testing, and staging process, then our application's chances for successful operation will increase.
 
-Before we get into the details, let us define what a **distributed system** means. Conversations around distributed systems generally revolve around buzzwords like **microservices**, **service-oriented architecture**, **message buses**. The truth is, many .NET applications today have to make at least one network call outside of the application domain, whether it be to a database, a web service, a network share, or other network-bound dependencies.
+Before we get into the details, let us define what a _distributed system_ means. Conversations around distributed systems generally revolve around buzzwords like _microservices_, _service-oriented architecture_, _message buses_. The truth is, many .NET applications today have to make at least one network call outside of the application domain, whether it be to a database, a web service, a network share, or other network-bound dependencies.
 
 **In an inclusive definition, most developers work on distributed systems, whether we've chosen a monolith-style architecture or broken up our business logic into microservices.** The question shouldn't be whether or not we work on a distributed application, but how distributed is our application?
 
@@ -29,10 +29,10 @@ Regardless of our development approach, we can use Docker and containerization t
 
 From a high-level, developers want the following attributes from their technology choices:
 
-- **Performant:** Little to no performance compromises when running our production workloads or working locally within our development environments.
-- **Reproducibility:** The application we build has predictable and consistent configuration and topology, ideally through a descriptive medium that we can manage in source control.
-- **Flexibility:** The ability to modify our application topology to meet the current and future needs of our problem domain, whether during development, testing, or production workloads.
-- **Observability:** Knowing critical information about our distributed application and its dependencies helps diagnose and solve programming issues.
+- Performant: Little to no performance compromises when running our production workloads or working locally within our development environments.
+- Reproducibility: The application we build has predictable and consistent configuration and topology, ideally through a descriptive medium that we can manage in source control.
+- Flexibility: The ability to modify our application topology to meet the current and future needs of our problem domain, whether during development, testing, or production workloads.
+- Observability: Knowing critical information about our distributed application and its dependencies helps diagnose and solve programming issues.
 
 As we go through this tutorial, we'll address each of these factors and how containerization and Docker can help .NET developers achieve their desired goals.
 

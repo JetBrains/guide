@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/pt3uB0sd5kY?start=3"
 ---
 
-While it's possible you may want to create your own Maven project, it's much more likely you'll import an existing one. This is very straightforward in IntelliJ IDEA. Select [Open](https://www.jetbrains.com/help/idea/import-project-or-module-wizard.html#open-project) from the Welcome Screen, or the **File** menu, and navigate to the location of the code.
+While it's possible you may want to create your own Maven project, it's much more likely you'll import an existing one. This is very straightforward in IntelliJ IDEA. Select [Open](https://www.jetbrains.com/help/idea/import-project-or-module-wizard.html#open-project) from the Welcome Screen, or the _File_ menu, and navigate to the location of the code.
 
 You can select the root of the project and IntelliJ IDEA will figure out how to import the project, but if you specifically know this is a Maven project and you want to use this model for your project structure, it's simplest to select the top-level `pom.xml` file, and the IDE will know you mean to import a Maven project.
 
@@ -23,7 +23,7 @@ Depending upon the version of IntelliJ IDEA you're using, you be shown specific 
 
 ![](open-as-project.png)
 
-If you selected the `pom.xml` file to open the project (rather than the top level folder), IntelliJ IDEA will ask if you want to open just the file, or import the whole project. In this tutorial, we want to **Open as Project**.
+If you selected the `pom.xml` file to open the project (rather than the top level folder), IntelliJ IDEA will ask if you want to open just the file, or import the whole project. In this tutorial, we want to _Open as Project_.
 
 ![](trust-project.png)
 

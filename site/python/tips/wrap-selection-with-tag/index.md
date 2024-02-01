@@ -22,9 +22,9 @@ Instead:
 
 - [Make a selection with your keyboard](../make-extend-selection/)
 
-- Invoke `Surround With` <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux)
+- Invoke Surround With <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux)
 
-- Hit `T` to choose `Surround with <tag></tag>` in the Live Templates section
+- Hit **T** to choose **Surround with <tag></tag>** in the Live Templates section
 
 - In the prompt, type the name of the tag
 

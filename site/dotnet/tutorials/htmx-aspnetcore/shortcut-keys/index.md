@@ -17,7 +17,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/irhA5yInaRE"
 ---
 
-Over the internet's evolution, web applications have seen a transformation from read-only pages to now providing experiences that rival native desktop applications. One of the significant attributes that power users look for in their applications is keyboard shortcuts. Keyboard shortcuts can reduce the time it takes to perform an action and increase the productivity of repetitive tasks. As developers, we likely have a few keyboard shortcuts that come to mind, and ReSharper and Rider users are likely familiar with the `Alt+Enter` keyboard shortcut. Keyboard shortcuts are awesome.
+Over the internet's evolution, web applications have seen a transformation from read-only pages to now providing experiences that rival native desktop applications. One of the significant attributes that power users look for in their applications is keyboard shortcuts. Keyboard shortcuts can reduce the time it takes to perform an action and increase the productivity of repetitive tasks. As developers, we likely have a few keyboard shortcuts that come to mind, and ReSharper and Rider users are likely familiar with the <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (VS Windows/Linux) keyboard shortcut. Keyboard shortcuts are awesome.
 
 As we've seen in previous samples, HTMX doesn't restrict [triggers](https://htmx.org/attributes/hx-trigger/) to the events you might expect. Quite the contrary, you can listen for a lot of different events, including a [combination of keystrokes](https://htmx.org/attributes/hx-trigger/). So, in the following example, we'll listen to know when the user presses the `?` key and display a toast notification in the bottom-right of our screen.
 

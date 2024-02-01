@@ -25,13 +25,13 @@ One of the first changes developers will notice from Visual Studio is the **Run*
 - We are running unoptimized code, never experiencing production code until further down the development lifecycle.
 - Utilize more resources during development than is necessary.
 
-In Rider, users will see a clear functional difference, as the **Run** button will only start the current run configuration. To attach the debugger, we can either click the **Debug** icon, use the **Debug** shortcut, or attach the debugger to an existing process.
+In Rider, users will see a clear functional difference, as the **Run** button will only start the current run configuration. To attach the debugger, we can either click the **Debug** icon, use the _Debug_ shortcut, or attach the debugger to an existing process.
 
-When you initiate a debugging session, the **Run widget** will change in appearance with a clear yellow highlight and the word **Debugging** next to the run configuration name. You'll also notice the visible buttons have changed to provide quicker access to debugging actions **restart**, **resume**, and **stop**.
+When you initiate a debugging session, the _Run widget_ will change in appearance with a clear yellow highlight and the word _Debugging_ next to the run configuration name. You'll also notice the visible buttons have changed to provide quicker access to debugging actions _restart_, _resume_, and _stop_.
 
 ![Rider main toolbar](./rider-debugger-main-toolbar.png)
 
-The **Run widget** is a recent addition to Rider and should help you more easily transition from Visual Studio. While the Run widget is the most prominent debugging interface in Rider, as you continue to read, you'll see we've exposed several ways to interact with a debugging session.
+The _Run_ widget is a recent addition to Rider and should help you more easily transition from Visual Studio. While the Run widget is the most prominent debugging interface in Rider, as you continue to read, you'll see we've exposed several ways to interact with a debugging session.
 
 ## Debugging Shortcuts
 
@@ -46,11 +46,11 @@ Many of the same debugging shortcuts are available in Rider, depending on the ke
 
 ## Debugger Window
 
-Unlike Visual Studio, Rider has a dedicated window for all things debugging. This tool window is only visible when in an active debugging session, and it will display **threads**, **frames**, **locals**, **autos**, **watches**, **debug output**, **the immediate window**, and **memory registers**. This UI ensures that we stay focused on solving issues during debugging sessions rather than hunting down tool windows and rearranging them.
+Unlike Visual Studio, Rider has a dedicated window for all things debugging. This tool window is only visible when in an active debugging session, and it will display _threads_, _frames_, _locals_, _autos,\_watches_,_debug output_,_the immediate window_, and*memory registers*. This UI ensures that we stay focused on solving issues during debugging sessions rather than hunting down tool windows and rearranging them.
 
 ![JetBrains Rider debugger tool window](./rider-debugger-tool-window.png)
 
-In addition to relevant information about our application, we can also access the debugging toolbar on the window's top-most border. Here we can **restart**, **stop**, **resume**, and **pause** the current debugging session. We can also **step over**, **step into**, and **step out** of our code. Finally we have some additional elements to quickly manage breakpoints.
+In addition to relevant information about our application, we can also access the debugging toolbar on the window's top-most border. Here we can _restart_, _stop_, _resume_, and _pause_ the current debugging session. We can also _step over_, _step into_, and _step out_ of our code. Finally we have some additional elements to quickly manage breakpoints.
 
 ![JetBrains Rider debugger tool window's buttons](./rider-debugger-tool-window-buttons.png)
 
@@ -62,7 +62,7 @@ Most developers will be happy managing breakpoints in the editor using the `F9` 
 
 ### Locals, Auto, and Watches
 
-Within the Visual Studio UI, **autos**, **locals**, and **watches** are different windows. Within Rider, we can find all variables within the debugger tool window. In addition to seeing the values of variables within the debugger tool window, we can see current values right in the editor with what we call **debugging adornments**.
+Within the Visual Studio UI, _autos_, _locals_, and _watches_ are different windows. Within Rider, we can find all variables within the debugger tool window. In addition to seeing the values of variables within the debugger tool window, we can see current values right in the editor with what we call _debugging adornments_.
 
 [Check out our guide on debugging tips and tricks to learn more about debugging adornments along with other features.](https://www.jetbrains.com/guide/dotnet/tutorials/rider-essentials/debugging/)
 

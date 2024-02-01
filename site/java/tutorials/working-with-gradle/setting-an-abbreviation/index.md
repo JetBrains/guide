@@ -20,11 +20,11 @@ On the Keymap page of the Settings/Preferences dialog, <kbd>⌘,</kbd> (macOS) /
 
 ![Add abbreviation](./add-abbreviation.png)
 
-We can provide a short, memorable text string which we can use when searching for the Gradle tool window. For example, enter "grdl" and press **Enter**, or **OK**.
+We can provide a short, memorable text string which we can use when searching for the Gradle tool window. For example, enter "grdl" and press **OK**.
 
 ![Enter abbreviation](./abbreviation-to-use.png)
 
-Now, if we bring up the Search Everywhere dialog by pressing **Shift** twice, and we type "grdl" we'll see the Gradle Tool Window as the first result, it's not hiding in a list of similar looking results.
+Now, if we bring up the Search Everywhere dialog <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), and we type "grdl" we'll see the Gradle Tool Window as the first result, it's not hiding in a list of similar looking results.
 
 ![Enter abbreviation](./grdl-search-results.png)
 

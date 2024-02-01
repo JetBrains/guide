@@ -14,4 +14,4 @@ cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 
-WebStorm can warn you when you use a CSS property that is not supported by the target browser. To turn this functionality on, go to _Preferences/Settings | Editor | Inspections_ and enable the _Browser compatibility_ inspection.
+WebStorm can warn you when you use a CSS property that is not supported by the target browser. To turn this functionality on, go to **Preferences/Settings | Editor | Inspections** and enable the _Browser compatibility_ inspection.

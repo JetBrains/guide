@@ -19,7 +19,7 @@ video: "https://youtu.be/SSC2rQ1UlTY"
 
 In the previous sample, we saw that we could poll our server for updated information. While an acceptable approach, it's still a client calling the server without knowing any updated information is available. What if we only want to contact the server when there is new data to retrieve?
 
-Well, that's where **[Server-sent Events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)** come in. With SSE, a client establishes a connection to the server. The server knows which clients are connected and can issue events through the link.
+Well, that's where [Server-sent Events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events) come in. With SSE, a client establishes a connection to the server. The server knows which clients are connected and can issue events through the link.
 
 For this sample, we'll be using the NuGet package [`Lib.AspNetCore.ServerSentEvents`](https://www.nuget.org/packages/Lib.AspNetCore.ServerSentEvents/). Unlike the other examples in this series, we'll have to do a bit more work around infrastructure. The first step is to register Server-sent Events as a feature in our ASP.NET Core application. In an ASP.NET Core 6 application, we can register our services in the `Program.cs` file.
 

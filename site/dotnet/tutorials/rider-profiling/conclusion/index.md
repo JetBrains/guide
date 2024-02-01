@@ -21,23 +21,16 @@ video: "https://youtu.be/2C6Nx7jJegg"
 
 In this tutorial, we used the profiler in Rider to investigate and optimize performance of the [Sudoku solver application](https://github.com/JetBrains/DPA-demo).
 
-There are still some issues remaining, such as excessive allocations of the `Cell` type, which can be solved with
-[making `Cell` a `struct`](https://blog.jetbrains.com/dotnet/2020/03/31/auto-detect-memory-issues-app-dynamic-program-analysis-rider-2020-1/).
+There are still some issues remaining, such as excessive allocations of the `Cell` type, which can be solved with [making `Cell` a `struct`](https://blog.jetbrains.com/dotnet/2020/03/31/auto-detect-memory-issues-app-dynamic-program-analysis-rider-2020-1/).
 Some small updates of the codebase already greatly improved performance!
 
-Keep in mind that we used Debug builds to analyze the application. Release builds would include compiler optimizations
-and provide better performance of our application.
+Keep in mind that we used Debug builds to analyze the application. Release builds would include compiler optimizations and provide better performance of our application.
 
-We have seen the different profiling modes in Rider: Sampling, Tracing, Line-by-Line, and Timeline. Sampling or Timeline
-profiling have low overhead, and come in handy to do most performance analysis on your application. Tracing and Line-by-Line
-provide accurate call numbers, but don't provide reliable call timings.
+We have seen the different profiling modes in Rider: Sampling, Tracing, Line-by-Line, and Timeline. Sampling or Timeline profiling have low overhead, and come in handy to do most performance analysis on your application. Tracing and Line-by-Line provide accurate call numbers, but don't provide reliable call timings.
 
-A good profiling workflow is cyclic: start with a baseline profiling session, make incremental changes, and analyze performance
-improvements (or regressions) as you go.
+A good profiling workflow is cyclic: start with a baseline profiling session, make incremental changes, and analyze performance improvements (or regressions) as you go.
 
-Dynamic Program Analysis (or DPA) analyzes your code automatically, every time it runs. It gives you feedback around memory
-usage and allocations, and shows the call stacks where most memory allocation is happening. The Heap Allocations viewer
-may help you figure out where hidden allocations and boxing occur in code.
+Dynamic Program Analysis (or DPA) analyzes your code automatically, every time it runs. It gives you feedback around memory usage and allocations, and shows the call stacks where most memory allocation is happening. The Heap Allocations viewer may help you figure out where hidden allocations and boxing occur in code.
 
 ### See Also
 

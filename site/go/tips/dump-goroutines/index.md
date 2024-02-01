@@ -16,4 +16,4 @@ Regardless if it's for fun, or investigating a bug, having a quick look at what 
 
 **How to use:**
 
-Either attach to the project using the debugger, or launch a debugging session. While the application is running, press the 📷 button on the left side of the Debugger Tool Window.
+Either attach to the project using the debugger, or launch a debugging session. While the application is running, press the 📷 button on the left side of the _Debugger_ Tool Window.

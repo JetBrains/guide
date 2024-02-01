@@ -14,4 +14,4 @@ seealso:
 video: "https://youtu.be/hn51Z91rO4k"
 ---
 
-IntelliJ IDEA shows warnings and errors in the top-right corner for each file. Click the Inspections Widget to open the **Problems tool window** <kbd>⌘6</kbd> (macOS) / <kbd>Alt+6</kbd> (Windows/Linux). Navigate to an error by clicking it or using <kbd>F2</kbd> (macOS) / <kbd>F2</kbd> (Windows/Linux)to navigate to the next error, or <kbd>⇧F2</kbd> (macOS) / <kbd>Shift+F2</kbd> (Windows/Linux) to go to the previous error.
+IntelliJ IDEA shows warnings and errors in the top-right corner for each file. Click the Inspections Widget to open the _Problems_ tool window <kbd>⌘6</kbd> (macOS) / <kbd>Alt+6</kbd> (Windows/Linux). Navigate to an error by clicking it or using <kbd>F2</kbd> (macOS) / <kbd>F2</kbd> (Windows/Linux)to navigate to the next error, or <kbd>⇧F2</kbd> (macOS) / <kbd>Shift+F2</kbd> (Windows/Linux) to go to the previous error.

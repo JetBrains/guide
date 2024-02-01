@@ -19,8 +19,8 @@ video: >-
   https://www.youtube.com/watch?v=bPiX6d4nYY8&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=149
 ---
 
-You can view multiple files at the same time using **Split Horizontal** and **Split Vertical**.
+You can view multiple files at the same time using _Split Horizontal_ and _Split Vertical_.
 
 **How to use:**
 
-Invoke the **Split Horizontal** or **Split Vertical** via **Find Action**, <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux), then type the action names you need.
+Invoke the _Split Horizontal_ or _Split Vertical_ via _Find Action_, <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux), then type the action names you need.

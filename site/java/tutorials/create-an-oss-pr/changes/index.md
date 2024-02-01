@@ -14,7 +14,7 @@ Before making any changes, we'll want to make sure that we can build the project
 
 ![Build the project](build-project.png)
 
-Now that we know we can build the project, we can start making changes. First, we need to look for the right place to make the change. We might navigate the project in the **Project tool window** (**⌘1** on macOS, or **Alt+1** on Windows/Linux), or look for a specific file or code snippet using **Find in Files** (**⌘⇧F** on macOS, or **Ctrl+Shift+F** on Windows/Linux).
+Now that we know we can build the project, we can start making changes. First, we need to look for the right place to make the change. We might navigate the project in the _Project_ tool window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux), or look for a specific file or code snippet using Find in Files <kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux).
 
 ![Project tool window](project-tool-window.png)
 
@@ -22,7 +22,7 @@ Now that we know we can build the project, we can start making changes. First, w
 
 We might want to create a specific branch for our changes.
 
-Once we are done making our changes and the project still builds, we can **commit our changes** <kbd>⌘K</kbd> (macOS) / <kbd>Ctrl+K</kbd> (Windows/Linux). We can check our changes in the **Commit tool window** <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux) to see if these are the right files and use **Show Diff** <kbd>⌘D</kbd> (macOS) / <kbd>Ctrl+D</kbd> (Windows/Linux) to see if the changes are correct.
+Once we are done making our changes and the project still builds, we can **commit our changes** <kbd>⌘K</kbd> (macOS) / <kbd>Ctrl+K</kbd> (Windows/Linux). We can check our changes in the _Commit_ tool window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux) to see if these are the right files and use Show Diff <kbd>⌘D</kbd> (macOS) / <kbd>Ctrl+D</kbd> (Windows/Linux) to see if the changes are correct.
 
 ![Commit changes](commit-window.png)
 

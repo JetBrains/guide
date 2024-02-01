@@ -455,9 +455,9 @@ Now you need to annotate the managed certificate in `ingress.yaml`.
 
 ![run-gke-78](./images/screen199.png)
 
-Next, we’re going to create a **FrontendConfig** object. **FrontendConfig** can only be used with external ingresses.
+Next, we’re going to create a _FrontendConfig_ object. _FrontendConfig_ can only be used with external ingresses.
 
-In effect, this **FrontendConfig** redirects all requests from HTTP to HTTPS.
+In effect, this _FrontendConfig_ redirects all requests from HTTP to HTTPS.
 
 Reference: [Associating FrontendConfig with your Ingress](https://cloud.google.com/kubernetes-engine/docs/how-to/ingress-configuration#associating_frontendconfig_with_your_ingress)
 
@@ -552,17 +552,17 @@ Let’s begin by creating a new project.
 
 ![run-gke-96](./images/screen217.png)
 
-Give the project the custom name **helloworld-cloudrun**.
+Give the project the custom name _helloworld-cloudrun_.
 
 Select the **Python (Django): Cloud Run** sample project and click **Create**.
 
 ![run-gke-97](./images/screen218.png)
 
-You can follow the instructions in the **README** file, which includes all the steps required to run the project.
+You can follow the instructions in the `README` file, which includes all the steps required to run the project.
 
 ![run-gke-98](./images/screen219.png)
 
-Several default views have already been created, including **homepage** and **aboutpage**.
+Several default views have already been created, including _homepage_ and _aboutpage_.
 
 ![run-gke-99](./images/screen220.png)
 
@@ -570,11 +570,11 @@ Now, let’s go ahead and try to modify the **[Run/Debug Configuration](https://
 
 Click on **Run | Edit Configurations**
 
-For **Authentication**, make sure to tick the **Allow unauthenticated invocations** checkbox.
+For Authentication, make sure to tick the **Allow unauthenticated invocations** checkbox.
 
 ![run-gke-100](./images/screen221.png)
 
-Under **Build Settings**, select **Cloud Build**.
+Under _Build Settings_, select **Cloud Build**.
 
 ![run-gke-101](./images/screen222.png)
 
@@ -582,7 +582,7 @@ Set **Region** to **asia-south1**.
 
 ![run-gke-102](./images/screen223.png)
 
-Under **Advanced revision settings**, change **Maximum number of instances** to **3**.
+Under _Advanced revision settings_, change **Maximum number of instances** to **3**.
 
 Note that if you don’t downsize the instances, you might get a compute quota limit error from GCP.
 

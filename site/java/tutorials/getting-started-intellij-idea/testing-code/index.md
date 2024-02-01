@@ -29,4 +29,4 @@ You can also hold down (**⇧** | **Shift**) and press Enter to open a file from
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ky-LGO0_iq4" >
 </iframe>
 
-You can use (**⇧⌘T** | **Ctrl+Shift+T**) to Navigate to Test and if IntelliJ IDEA can find a Test file that it thinks tests that file based on the name of your class it will navigate there. If there isn't a test file that IntelliJ IDEA can find, it will suggest creating a test and can add some of the code constructs for the tests as well.
+You can use <kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux) to Navigate to Test and if IntelliJ IDEA can find a Test file that it thinks tests that file based on the name of your class it will navigate there. If there isn't a test file that IntelliJ IDEA can find, it will suggest creating a test and can add some of the code constructs for the tests as well.

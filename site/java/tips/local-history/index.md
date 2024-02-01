@@ -18,4 +18,4 @@ video: "https://youtu.be/l0SWLbYitHg"
 
 Local History can get you out of trouble when recent changes break your code.
 
-View the local history of a directory or file from the **Project tool window** <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux) by right-clicking on the directory or file and selecting **Local History | Show History**.
+View the local history of a directory or file from the _Project_ tool window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux) by right-clicking on the directory or file and selecting **Local History | Show History**.

@@ -31,7 +31,7 @@ We can also use Find Action, <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd
 
 ![Find action](./find-action.png)
 
-If we don't like having to remember the shortcut for Find Action, we can use the more versatile [Search Everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) by pressing Shift twice: **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux).
+If we don't like having to remember the shortcut for Find Action, we can use the more versatile [Search Everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) by pressing Shift twice: <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux).
 
 ![Search everywhere](./search-everywhere.png)
 

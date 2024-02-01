@@ -18,13 +18,13 @@ seealso:
 video: "https://youtu.be/gg3yi-yc2ys"
 ---
 
-Select the files or changed lines in a file which you want to group together for certain tasks and use <kbd>⌘⇧M</kbd> (macOS) / <kbd>Alt+Shift+M</kbd> (Windows/Linux) to bring up the **Move Files to Another Changelist** dialog.
+Select the files or changed lines in a file which you want to group together for certain tasks and use <kbd>⌘⇧M</kbd> (macOS) / <kbd>Alt+Shift+M</kbd> (Windows/Linux) to bring up the _Move Files to Another Changelist_ dialog.
 
 You can give it a name to create a new changelist or choose from an existing changelist. IntelliJ IDEA will restore the selected changes in the corresponding changelist.
 
 ## Default Active Changelist
 
-Use <kbd>⌘0</kbd> (macOS) / <kbd>Alt+0</kbd> (Windows/Linux), to show the **Commit** tool window.
+Use <kbd>⌘0</kbd> (macOS) / <kbd>Alt+0</kbd> (Windows/Linux), to show the _Commit_ tool window.
 
 **Changes** in the **Commit Tool Window** are in the default active changelist. The active changelist is highlighted in bold.
 
@@ -46,7 +46,7 @@ Use <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), to bring
 
 ### Using Commit Window
 
-You can also right-click or secondary click on the Commit Window to show the options and click **New changelist...** to bring up the **New changelist** dialog.
+You can also right-click or secondary click on the Commit Window to show the options and click **New changelist...** to bring up the _New changelist_ dialog.
 
 ![New Changelist using Commit Window](new-changelist-using-commit-window.png)
 

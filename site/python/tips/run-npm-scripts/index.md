@@ -19,7 +19,7 @@ Modern web development means NodeJS tools which mean a `package.json` file. This
 
 PyCharm Professional makes it easy to browse and run these. There are several different paths to opening the `npm` tool window:
 
-- Right-click on `package.json` and choose `Show npm scripts`
+- Right-click on `package.json` and choose **Show npm scripts**
 
 - Click the `npm` tool window on left
 
@@ -31,4 +31,4 @@ Now that you can see the `npm` scripts, double-click on one to run that npm scri
 
 Sometimes your `package.json` changes and there's a new/changed/deleted `npm` script. The `npm` tool window has a `Reload scripts` button in its mini-toolbar.
 
-One surprising addition: the names of your `npm` scripts are available as findable actions. If you have a `build` script and do `Find Action`, speed searching for `run build` will let you immediately invoke it.
+One surprising addition: the names of your `npm` scripts are available as findable actions. If you have a `build` script and do Find Action, speed searching for _run build_ will let you immediately invoke it.

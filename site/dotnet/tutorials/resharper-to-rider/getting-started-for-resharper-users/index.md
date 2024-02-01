@@ -32,7 +32,7 @@ or use the [Toolbox App](https://www.jetbrains.com/toolbox/app) that makes it mo
 
 > **Note:** To work with .NET 6, you will need the [Rider 2021.3 Early Access Preview (EAP)](https://www.jetbrains.com/rider/eap/).
 
-Next, [**download the .NET SDK**](https://dotnet.microsoft.com/download/dotnet/). You will find downloads for Windows, macOS and Linux. Make sure to install the SDK,
+Next, [download the .NET SDK](https://dotnet.microsoft.com/download/dotnet/). You will find downloads for Windows, macOS and Linux. Make sure to install the SDK,
 not just the runtime - the SDK contains all the compiler and build tools to develop in .NET.
 
 ## Import Settings From Existing Environments
@@ -41,7 +41,7 @@ A **New Import Settings** feature is included with the [JetBrains Rider 2021.2](
 
 ![import settings feature in Rider](./5-import-settings-from-other-ides.png)
 
-Using the import settings feature, you can expect to **import existing keymaps and keyboard shortcuts, recently used solutions, and current theme preferences (dark mode or light mode)**. Rider will also find the best plugins that match the existing functionality you're used to using. JetBrains continually evaluates the plugin recommendations based on the best options from the [JetBrains Plugins Marketplace](https://plugins.jetbrains.com/search?products=rider).
+Using the import settings feature, you can expect to _import existing keymaps and keyboard shortcuts, recently used solutions, and current theme preferences (dark mode or light mode)_. Rider will also find the best plugins that match the existing functionality you're used to using. JetBrains continually evaluates the plugin recommendations based on the best options from the [JetBrains Plugins Marketplace](https://plugins.jetbrains.com/search?products=rider).
 
 If you'd prefer to start with a fresh installation, continue reading the following sections.
 
@@ -49,19 +49,19 @@ If you'd prefer to start with a fresh installation, continue reading the followi
 
 Your development environment says a lot about your personality. Choose between a zen-like and clutter-free experience, a data-rich user experience with quickly accessible data, or any experience in-between.
 
-When setting up your development environment, Rider will ask you to choose between two different themes: **Dark** and **Light**. You can decide to change your preference at any time after the
+When setting up your development environment, Rider will ask you to choose between two different themes: _Dark_ and _Light_. You can decide to change your preference at any time after the
 
 ![Setup for dark and light themes](./1-setup-start-dark-light.png)
 
-Rider will display the themes that fit into the category of your choosing. For example, choosing **Light** will show the themes of **Rider Light**, **Visual Studio Light**, and **Default**.
+Rider will display the themes that fit into the category of your choosing. For example, choosing _Light_ will show the themes of _Rider Light_, _Visual Studio Light_, and _Default_.
 
 ![Picking from the light themes in Rider](./2-setup-start.png)
 
-The next part of the setup allows you to choose your keymap. ReSharper users will be most familiar with the **Visual Studio** keymap, but take the time to review the shortcuts and pick the right one for you. Similar to the themes, you can change keymaps at any time.
+The next part of the setup allows you to choose your keymap. ReSharper users will be most familiar with the _Visual Studio_ keymap, but take the time to review the shortcuts and pick the right one for you. Similar to the themes, you can change keymaps at any time.
 
 ![Selecting the keymaps in Rider's setup](./3-keymaps-setup.png)
 
-If you would like to change your preferences at any point, use the **Settings** dialog to change values for **fonts**, **menus and toolbars**, **editor UI**, and much more. You also can **Restore Default settings** and go through the setup process again.
+If you would like to change your preferences at any point, use the **Settings** dialog to change values for _fonts_, _menus and toolbars_, _editor UI_, and much more. You also can **Restore Default settings** and go through the setup process again.
 
 ![The Settings dialog in Rider](./4-settings-dialog.png)
 
@@ -74,7 +74,7 @@ The welcome screen is the first thing all Rider users will see. Many of the same
 - Starting a new project or solution
 - Opening an existing solution
 - Cloning a current solution from a source control system: GitHub, BitBucket, or GitLab.
-- New Rider users can explore **Tutorials** from the welcome screen. Tutorials cover scenarios from **Editor Essentials**, **Run Configurations**, and **Debugging Basics**.
+- New Rider users can explore **Tutorials** from the welcome screen. Tutorials cover scenarios from _Editor Essentials_, _Run Configurations_, and _Debugging Basics_.
 
 ## New Solutions
 
@@ -90,32 +90,31 @@ Developers can choose where Rider will create a new solution, along with several
 - Enabling Docker support
 - Other relevant options for the template
 
-Let's start by creating a **"Hello, World!" Console Application**.
+Let's start by creating a _"Hello, World!" Console Application_.
 
 ## Main UI Elements
 
 ![The Rider IDE UI](./3-hello-rider.png)
 
-Essential elements developers will want to focus on in the Rider UI include the **Solution Explorer**, the **Editor** tab, and the **Main Toolbar**.
-
+Essential elements developers will want to focus on in the Rider UI include the _Solution Explorer_, the _Editor_ tab, and the _Main Toolbar_.
 ![Solution explorer on the left of Rider IDE UI](./3a-hello-rider-solution-explorer.png)
 
-By default, we find the **Solution Explorer** on the left of the Rider instance. Here we get a familiar view of our solution, projects, and dependencies. Visual Studio users will find the navigation experience friendly.
+By default, we find the _Solution Explorer_ on the left of the Rider instance. Here we get a familiar view of our solution, projects, and dependencies. Visual Studio users will find the navigation experience friendly.
 
 ![code editor of Rider IDE UI](./3b-hello-rider-editor.png)
 
 The editor tab is where we can edit our code files. ReSharper users will find the experience of editing code very familiar because the ReSharper engine powers Rider's editing experience.
 
-> The name **Rider** comes from a mash-up of the words **R**eSharper and **IDE**.
+> The name _Rider_ comes from a mash-up of the words **R**eSharper and **IDE**.
 
 ![Main toolbar of Rider IDE UI](./3c-hello-rider-main-toolbar.png)
 
-Finally, the toolbar is where things take a different approach than Visual Studio. The Rider toolbar separates the concepts of **Build**, **Run**, and **Debug**, allowing the developer to decide what action they'd prefer to take. The hammer icon will build the current solution. The green rectangle, or play button, will build and run the solution. Finally, the green bug will build, run, and attach the necessary debugger.
+Finally, the toolbar is where things take a different approach than Visual Studio. The Rider toolbar separates the concepts of _Build_, _Run_, and _Debug_, allowing the developer to decide what action they'd prefer to take. The hammer icon will build the current solution. The green rectangle, or play button, will build and run the solution. Finally, the green bug will build, run, and attach the necessary debugger.
 
-Let's run our first .NET solution within Rider. We'll start by hitting the **Run** button (a green _play_ icon). Rider will compile and execute our console application, with the IDE displaying execution results at the bottom within a **Run** window. Run windows also have this **Run** button, allowing us to rerun the same run configuration. We'll discuss **Run** windows in a later step, but Rider isn't limited to running one project at a time. There can be multiple **Run** windows for each service running within our solution.
+Let's run our first .NET solution within Rider. We'll start by hitting the **Run** button (a green _play_ icon). Rider will compile and execute our console application, with the IDE displaying execution results at the bottom within a _Run_ window. Run windows also have this **Run** button, allowing us to rerun the same run configuration. We'll discuss _Run_ windows in a later step, but Rider isn't limited to running one project at a time. There can be multiple _Run_ windows for each service running within our solution.
 
 ![Running a solution within JetBrains Rider using play button](./4-hit-play.png)
 
-**Congratulations!** You've successfully navigated through your initial Rider experience. While Rider has moved elements of the development experience around, they're straightforward to find. Like most JetBrains tools, we designed Rider to allow you to make the experience your own. We encourage you to explore, drag, right-click, and generally play around in the IDE.
+Congratulations! You've successfully navigated through your initial Rider experience. While Rider has moved elements of the development experience around, they're straightforward to find. Like most JetBrains tools, we designed Rider to allow you to make the experience your own. We encourage you to explore, drag, right-click, and generally play around in the IDE.
 
 In the next step, we'll explore Rider's debugging experience, as it's slightly different from what you may expect coming from Visual Studio.

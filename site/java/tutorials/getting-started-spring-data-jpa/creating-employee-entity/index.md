@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 
 An Entity is a Java class representing data you want to insert into a database. For our application, we will create an Employee entity that we will use to insert Employee data into an Employee table in our database.
 
-In the **Project** window, we'll navigate to our `src/main/java` directory, select the `com.jetbrains.springdatajpaapp` package and press <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux). Choose **Java Class** and then type in our entity name - `Employee`. Then, press **Enter**.
+In the _Project_ tool window, we'll navigate to our `src/main/java` directory, select the `com.jetbrains.springdatajpaapp` package and press <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux). Choose **Java Class** and then type in our entity name - `Employee`. Then, press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux).
 
 In the Employee class, we'll make it an entity by adding the `@Entity` annotation to our class definition and importing the `javax.persistence.Entity` package. Once you do that, you'll notice an error in your class.
 

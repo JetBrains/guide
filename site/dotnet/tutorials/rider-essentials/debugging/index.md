@@ -26,11 +26,9 @@ and unit tests.
 
 ### Run Configurations
 
-Debugging starts with [Run Configurations](https://www.jetbrains.com/help/rider/Run_Debug_Configuration.html), where you
-specify which project to run or debug.
+Debugging starts with [Run Configurations](https://www.jetbrains.com/help/rider/Run_Debug_Configuration.html), where you specify which project to run or debug.
 
-When first creating or loading a project in Rider, a default run configuration is created, based on the project type, so
-minimal configuration is required to get started. In fact, for most application types, pressing the <kbd>F5</kbd> keyboard
+When first creating or loading a project in Rider, a default run configuration is created, based on the project type, so minimal configuration is required to get started. In fact, for most application types, pressing the <kbd>F5</kbd> keyboard
 shortcut should be sufficient to launch the debugger.
 
 ### Breakpoints and Source Stepping

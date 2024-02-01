@@ -13,4 +13,4 @@ screenshot: ./screenshot.png
 
 **How to use:**
 
-Select the desired shape between _Block_, _Underline_, and _Vertical_ under _Settings/Preferences | Tools | Terminal | Cursor shape_.
+Select the desired shape between _Block_, _Underline_, and _Vertical_ under **Settings/Preferences | Tools | Terminal | Cursor shape**.

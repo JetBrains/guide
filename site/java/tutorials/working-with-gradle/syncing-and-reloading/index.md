@@ -23,7 +23,7 @@ We can set IntelliJ IDEA to automatically reload the project after "Any changes"
 
 We could choose not to reload after any changes, to give us total control, but since we may not always know if a reload is required, selecting External Changes makes sure that at least those changes are automatically applied by IntelliJ IDEA.
 
-As we saw earlier, when we do make changes to a build file, we can reload those changes by using **⇧⌘I** (macOS), or **Ctrl+Shift+O** (Windows/Linux).
+As we saw earlier, when we do make changes to a build file, we can reload those changes by using <kbd>⌘⇧I</kbd> (macOS) / <kbd>Ctrl+Shift+O</kbd> (Windows/Linux).
 
 ![Load changes](./load-gradle-changes.png)
 
@@ -31,6 +31,6 @@ Sometimes we want to force a reload of the whole project, so that IntelliJ IDEA 
 
 ![Reload all projects](./reload-all-projects.png)
 
-Sometimes it's useful to do a reload followed by a [full rebuild](https://www.jetbrains.com/help/idea/compiling-applications.html?keymap=primary_windows#rebuild_project), by going to the **Build** menu and selecting **Rebuild Project**. This is a good way to make sure the whole project is fully synced and building correctly.
+Sometimes it's useful to do a reload followed by a [full rebuild](https://www.jetbrains.com/help/idea/compiling-applications.html?keymap=primary_windows#rebuild_project), by going to **Build | Rebuild Project**. This is a good way to make sure the whole project is fully synced and building correctly.
 
 Next, let's look at some more useful Gradle settings in IntelliJ IDEA.

@@ -23,5 +23,4 @@ repeatedly? Change your breakpoint to only stop when a condition is met.
 
 **How to use:**
 
-Edit the breakpoint properties via _Ctrl + Shift + F8 on Windows/Linux_,
-or _⇧ + ⌘ + F8 on macOS_, then type in the **Condition** you want.
+Edit the breakpoint properties via <kbd>⌘⇧F8</kbd> (macOS) / <kbd>Ctrl+Shift+F8 (Windows/Linux)</kbd>, then type in the **Condition** you want.

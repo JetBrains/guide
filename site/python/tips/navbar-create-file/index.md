@@ -37,6 +37,6 @@ Also like the Project Tool, your selection doesn't have to be on a directory. If
 
 - Activating the navigation bar highlights the current file.
 
-- Immediately press `New` <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux)
+- Immediately press **New** <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux)
 
 Quite simple: two key combos and you have a new sibling file, with no permanent file tree visible and no popups to close afterward. That's what getting in the flow is about.

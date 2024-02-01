@@ -21,4 +21,4 @@ animatedGif:
 ---
 
 You can move around the locations in the files you're working on faster with keyboard shortcuts.
-Press <kbd>⌘⇧␡</kbd> (macOS) / <kbd>Ctrl+Shift+Delete</kbd> (Windows/Linux) or select _Navigate | Last Edit Location_ from the main menu to quickly jump to the code you last edited.
+Press <kbd>⌘⇧␡</kbd> (macOS) / <kbd>Ctrl+Shift+Delete</kbd> (Windows/Linux) or select **Navigate | Last Edit Location** from the main menu to quickly jump to the code you last edited.

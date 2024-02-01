@@ -31,7 +31,7 @@ What advantages can .NET developers hope to see when choosing containerization?
 - Faster deployment and startup times because the host OS is already running.
 - Simplified management of container hosts. One host OS to manage, rather than individual guest OSes.
 
-**As we mentioned, and it's essential knowledge when thinking about containers, a container will depend on the host OS.** That means we cannot host a macOS container on a Windows host or a Windows container on a Linux host. Linux hosts and containers are ubiquitous for containerization as Linux can run on all major operating systems either natively or within a virtual machine.
+_As we mentioned, and it's essential knowledge when thinking about containers, a container will depend on the host OS._ That means we cannot host a macOS container on a Windows host or a Windows container on a Linux host. Linux hosts and containers are ubiquitous for containerization as Linux can run on all major operating systems either natively or within a virtual machine.
 
 There are some compromises to containerization that .NET developers should keep in mind:
 
@@ -44,13 +44,13 @@ Docker has become synonymous with containerization, and many developers will use
 
 > Docker takes away repetitive, mundane configuration tasks and is used throughout the development lifecycle for fast, easy and portable application development - desktop and cloud. Docker's comprehensive end to end platform includes UIs, CLIs, APIs and security that are engineered to work together across the entire application delivery lifecycle. --[Docker](https://docker.com)
 
-.NET developers can think of Docker in much the same way they think about the .NET Ecosystem's toolsets and languages. In comparison, an experienced .NET developer might tell a newcomer enthusiastically to **"learn .NET!"** When what they might be recommending is to explore languages like C# or F#, build an ASP.NET application, or do some Xamarin mobile development.
+.NET developers can think of Docker in much the same way they think about the .NET Ecosystem's toolsets and languages. In comparison, an experienced .NET developer might tell a newcomer enthusiastically to _"learn .NET!"_ When what they might be recommending is to explore languages like C# or F#, build an ASP.NET application, or do some Xamarin mobile development.
 
-For beginners, the first step of using Docker is installing **[Docker Desktop](https://www.docker.com/get-started)**. The Docker Desktop product will configure an environment ready to host containerized applications. All OSes will get a Linux virtual machine and the native ability to run host-specific containers. Windows users will be able to run Windows containers, and macOS users can run macOS containers.
+For beginners, the first step of using Docker is installing [Docker Desktop](https://www.docker.com/get-started). The Docker Desktop product will configure an environment ready to host containerized applications. All OSes will get a Linux virtual machine and the native ability to run host-specific containers. Windows users will be able to run Windows containers, and macOS users can run macOS containers.
 
-Docker offers a wide range of features, which is out of scope for this tutorial. If you are interested in learning Docker tooling, we recommend visiting their **[Getting Started](https://www.docker.com/get-started)** guide and then continuing with the tutorial.
+Docker offers a wide range of features, which is out of scope for this tutorial. If you are interested in learning Docker tooling, we recommend visiting their [Getting Started](https://www.docker.com/get-started) guide and then continuing with the tutorial.
 
-At the very least, developers should install **Docker Desktop** on their development environments ([macOS](https://desktop.docker.com/mac/stable/Docker.dmg) and [Windows](https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe)), as we'll be using it later in the tutorial.
+At the very least, developers should install _Docker Desktop_ on their development environments ([macOS](https://desktop.docker.com/mac/stable/Docker.dmg) and [Windows](https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe)), as we'll be using it later in the tutorial.
 
 ## Images
 
@@ -79,7 +79,7 @@ Containers can be self-contained and shut-off from all external connections, but
 
 ### Volumes
 
-Disposability is one of the greatest strengths of containers. That said, when a container is stopped and deleted, the contents of the container are gone. If our image writes to disk, there could be a legitimate concern for data loss. Have no fear! We can mount durable storage to any container, also known as [**volumes**](https://docs.docker.com/storage/volumes/).
+Disposability is one of the greatest strengths of containers. That said, when a container is stopped and deleted, the contents of the container are gone. If our image writes to disk, there could be a legitimate concern for data loss. Have no fear! We can mount durable storage to any container, also known as [volumes](https://docs.docker.com/storage/volumes/).
 
 Volumes are mounted when a container is started and persist on the host operating system, allowing us to remove one container instance and create a new container instance attached to the same volume. We can manage volumes using the Docker CLI tooling.
 
@@ -87,7 +87,7 @@ We can read more about volumes on the official [Docker documentation site](https
 
 ### Multi-Container Applications
 
-When working with a distributed application, developers will want to create a logical application from different containers. We may have our core application talking to a database container, a caching service, and a full-text search engine. Docker ships with a tool called [**Compose**](https://docs.docker.com/compose/), which allows us to define a relationship topology between different containers.
+When working with a distributed application, developers will want to create a logical application from different containers. We may have our core application talking to a database container, a caching service, and a full-text search engine. Docker ships with a tool called [Compose](https://docs.docker.com/compose/), which allows us to define a relationship topology between different containers.
 
 The Compose tool has many benefits that should be immediately apparent to .NET developers:
 
@@ -95,7 +95,7 @@ The Compose tool has many benefits that should be immediately apparent to .NET d
 - A repeatable test environment for quality assurance teams and continuous integration pipelines.
 - Provides a blueprint for production environments while allowing us to scale each container service independently.
 
-One drawback to using the **Compose** tool is its focus on single-host deployments. Developers can use supplemental tools like **[Kompose](https://kompose.io/)** to translate Docker compose definition files to target a Kubernetes cluster.
+One drawback to using the _Compose_ tool is its focus on single-host deployments. Developers can use supplemental tools like [Kompose](https://kompose.io/) to translate Docker compose definition files to target a Kubernetes cluster.
 
 For this tutorial, our focus is on Docker's ability to help during the .NET development process since there are other great resources for deploying containerized applications already written by others.
 

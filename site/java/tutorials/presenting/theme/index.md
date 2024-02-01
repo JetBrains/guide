@@ -12,9 +12,9 @@ By default, IntelliJ IDEA uses the Darcula theme. To change it, go to **Preferen
 
 Select the UI theme from the Theme list:
 
-- **IntelliJ Light** is a traditional light theme for IntelliJ-based IDEs - **macOS Light** or **Windows 10 Light** is an OS-specific light theme available as a bundled plugin
-- **Darcula** is the default dark theme that we're using here
-- **High contrast** is a theme designed for users with color vision deficiency
+- IntelliJ Light is a traditional light theme for IntelliJ-based IDEs - **macOS Light** or **Windows 10 Light** is an OS-specific light theme available as a bundled plugin
+- Darcula is the default dark theme that we're using here
+- High contrast is a theme designed for users with color vision deficiency
 
 ![Select Theme](theme.png)
 

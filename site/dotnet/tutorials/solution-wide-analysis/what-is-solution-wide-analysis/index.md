@@ -31,11 +31,11 @@ Here’s an example. This project contains a class `Contact` with a property `Em
 
 <!--![Rider Solution-Wide Analysis](rider-solution-wide-analysis.gif)-->
 
-> **Tip:** You can find Solution-Wide Analysis results in the **Errors/Warnings in Solution** tool window in ReSharper, or the **Problems** tool window in Rider. The quickest way to access it is by clicking the green, orange or red icon in the status bar, and then **Show Errors**.
+> **Tip:** You can find Solution-Wide Analysis results in the _Errors/Warnings in Solution_ tool window in ReSharper, or the _Problems_ tool window in Rider. The quickest way to access it is by clicking the green, orange or red icon in the status bar, and then **Show Errors**.
 >
 > <img alt="Solution-Wide Analysis status bar icon" src="status-bar-icon.png" width="364" height="184"/>
 >
-> The icon color reveals some information about Solution-Wide Analysis results. The icon will be **green** if no errors/warnings were found, **orange** if there are warnings in the solution, or **red** (if errors were discovered).
+> The icon color reveals some information about Solution-Wide Analysis results. The icon will be _green_ if no errors/warnings were found, _orange_ if there are warnings in the solution, or _red_ (if errors were discovered).
 
 In the next part of this tutorial, we’ll see how to make sense of the errors and warnings discovered by Solution-Wide Analysis.
 

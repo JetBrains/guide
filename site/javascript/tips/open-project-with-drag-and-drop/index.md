@@ -19,4 +19,4 @@ animatedGif:
   height: 300
 ---
 
-Did you know that you can drag and drop a folder from your file manager or desktop onto the WebStorm _Welcome_ screen to open it?
+Did you know that you can drag and drop a folder from your file manager or desktop onto the WebStorm Welcome screen to open it?

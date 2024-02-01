@@ -14,4 +14,4 @@ video: >-
 
 **How to use:**
 
-Configure the git client with the correct key. Then, head over to _Settings/Preferences | Version Control | Git_ and check the option **Configure GPG Key...** to turn on this feature.
+Configure the git client with the correct key. Then, head over to **Settings/Preferences | Version Control | Git** and check the option **Configure GPG Key...** to turn on this feature.

@@ -67,11 +67,11 @@ Okay our email has been successfully verified. We can go ahead and send emails t
 
 # Installing Redis
 
-Let’s come back to our terminal where I am going to install **Redis**.
+Let’s come back to our terminal where I am going to install _Redis_.
 
 ![step7](./steps/step7.png)
 
-Let me check it’s working fine by running the **[PING](https://redis.io/commands/PING)** command.
+Let me check it’s working fine by running the [PING](https://redis.io/commands/PING) command.
 
 ![step8](./steps/step8.png)
 
@@ -137,7 +137,7 @@ You can observe that Celery is now listening to our registered tasks `send_email
 
 I need to complete the implementation for order notification.
 
-**tasks.py**
+`tasks.py`
 
 ```python
 from celery import shared_task
@@ -272,7 +272,7 @@ The installation process is documented in the below link.
 
 Once the installation is complete, we need to set up the SMTP Credentials which is required for sending emails.
 
-I will update the **Access Key ID** and **Secret Access Key** in the [IAM](https://aws.amazon.com/iam/) console.
+I will update the _Access Key ID_ and _Secret Access Key_ in the [IAM](https://aws.amazon.com/iam/) console.
 
 ![step20](./steps/step20.png)
 

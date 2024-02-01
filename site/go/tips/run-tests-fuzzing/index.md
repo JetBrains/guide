@@ -19,4 +19,4 @@ screenshot: ./screenshot.png
 
 **How to use:**
 
-In the \__test_ file, click the **Run Test** icon in the gutter and navigate to **Run | go test -fuzz FuzzMyTest**.
+In the `\_test` file, click the **Run Test** icon in the gutter and navigate to **Run | go test -fuzz FuzzMyTest**.

@@ -14,7 +14,7 @@ video: >-
   https://www.youtube.com/watch?v=wI4_Sxx8lVI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=85
 ---
 
-**Method-like completion for functions** allows you to search for functions based on their first parameter.
+_Method-like completion_ for functions\*\* allows you to search for functions based on their first parameter.
 
 Imagine you are new to Go and want to split a string.
 
@@ -24,4 +24,4 @@ Here's where method-like completion comes in handy, offering you a list of all s
 
 **How to use:**
 
-Hold down the _Ctrl_ key and press _Space_ twice.
+Hold down the <kbd>Ctrl</kbd> key and press <kbd>Space</kbd> twice.

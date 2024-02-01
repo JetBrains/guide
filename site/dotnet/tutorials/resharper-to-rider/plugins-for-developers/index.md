@@ -15,15 +15,15 @@ subtitle: >-
 thumbnail: ./thumbnail.png
 ---
 
-The Visual Studio extension ecosystem is a rich one, and it is where productivity tools like ReSharper have an opportunity to enhance the development experience of .NET developers everywhere. If you use any extension other than ReSharper, you're likely familiar with the **Manage Extensions** dialog.
+The Visual Studio extension ecosystem is a rich one, and it is where productivity tools like ReSharper have an opportunity to enhance the development experience of .NET developers everywhere. If you use any extension other than ReSharper, you're likely familiar with the _Manage Extensions_ dialog.
 
 ![Visual Studio Extensions dialog](./1-visual-studio-extensions.png)
 
-ReSharper users will likely also have seen the **ReSharper Extensions** dialog, accessible under `Extensions \| ReSharper \| Extension Manager...`.
+ReSharper users will likely also have seen the _ReSharper Extensions_ dialog, accessible under `Extensions \| ReSharper \| Extension Manager...`.
 
 ![Visual Studio ReSharper Extensions](./2-visual-studio-resharper-extensions.png)
 
-Let's talk about IDE plugins, as they are closest in concept to Visual Studio extensions. Rider's plugins are accessible via the **Plugins** section in **Settings**. Developers can find many of the ReSharper extensions in the JetBrains Marketplace. Since ReSharper is the engine that powers many of Rider's editor features, most of these plugins "just work".
+Let's talk about IDE plugins, as they are closest in concept to Visual Studio extensions. Rider's plugins are accessible via the _Plugins_ section in _Settings_. Developers can find many of the ReSharper extensions in the JetBrains Marketplace. Since ReSharper is the engine that powers many of Rider's editor features, most of these plugins "just work".
 
 ![JetBrains Rider Plugin Marketplace dialog](./3-jetbrains-rider-plug-in-dialog.png)
 

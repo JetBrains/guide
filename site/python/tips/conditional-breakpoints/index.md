@@ -22,7 +22,7 @@ Let's say you have a problem on a line in your code and you want to stop there a
 
 Set a breakpoint on the line, then right-click on the breakpoint. You get a dialog to edit the properties of a breakpoint. Meaning, PyCharm breakpoints are richer than just a red circle.
 
-In the `Condition` box, type in an expression, such as `age > 90`, that must be true for the breakpoint to be triggered. You can use any variable in scope at that line, and PyCharm autocomplete works in that box.
+In the **Condition** box, type in an expression, such as `age > 90`, that must be true for the breakpoint to be triggered. You can use any variable in scope at that line, and PyCharm autocomplete works in that box.
 
 When you then debug your code, that line will be passed over _until_ the condition is met. When true, the debugger stops on that line, just like normal.
 

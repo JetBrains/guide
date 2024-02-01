@@ -42,7 +42,7 @@ We will follow two installation approaches
 
 2. Installing through Jetbrains IDE
 
-- I will click on **File** -> **Settings** -> **Project: SampleDemo** -> **Python Interpreter**.
+- I will click on **File** > **Settings** > **Project: SampleDemo** > **Python Interpreter**.
 
 ![simple_jwt_install](steps/step2.png)
 
@@ -103,7 +103,7 @@ There are lots of other classes I have added like pagination, renderer & parser 
 
 The entire source code is available on GitHub, you can access it from [here](https://github.com/mukulmantosh/SampleDemo).
 
-Next, I will be copying the JWT settings from **django-rest-framework-simplejwt** and paste it in our **settings.py** file. I am going to use the default settings as per provided in the documentation.
+Next, I will be copying the JWT settings from _django-rest-framework-simplejwt_ and paste it in our `settings.py` file. I am going to use the default settings as per provided in the documentation.
 
 ```
 SIMPLE_JWT = {
@@ -153,15 +153,15 @@ urlpatterns = [
 
 ```
 
-We will place the URL routes under **api/v1/user/urls.py**
+We will place the URL routes under `api/v1/user/urls.py`
 
 ![jwt_user_routes](steps/step7.png)
 
 The login api will provide you with access & refresh tokens. The access token is only valid for 5minutes, you can override it in the JWT settings. Refresh tokens are used to generate new tokens before your access token expires. If expired then you need to re-login again.
 
-**TokenVerify** will be used to check whether the token is still valid or not. You are going to play with these APIs when you are trying to integrate with modern frontend applications.
+_TokenVerify_ will be used to check whether the token is still valid or not. You are going to play with these APIs when you are trying to integrate with modern frontend applications.
 
-Make sure to install **[django-filter](https://django-filter.readthedocs.io/en/)**, as we have included it in the default filter backends in our rest framework settings.
+Make sure to install _[django-filter](https://django-filter.readthedocs.io/en/)_, as we have included it in the default filter backends in our rest framework settings.
 
 This is one of the common packages widely used which allows users to declaratively add dynamic QuerySet filtering from URL parameters.
 
@@ -169,13 +169,13 @@ This is one of the common packages widely used which allows users to declarative
 pip install django-filter==2.4.0
 ```
 
-As we don’t have any users in our system, I will create a **superuser** in our account.
+As we don’t have any users in our system, I will create a _superuser_ in our account.
 
-I will go back to PyCharm, and then I will click on **Tools** -> **Run manage.py Task**
+I will go back to PyCharm, and then I will click on **Tools** > **Run manage.py Task**
 
 ![run_managepy_task](steps/step8.png)
 
-I will type **createsuperuser** and press enter.
+I will type _createsuperuser_ and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux).
 
 ![create_super_user](steps/step9.png)
 
@@ -187,7 +187,7 @@ I am going to bypass password validation. The password is quite weak but that’
 
 Okay, our superuser has been successfully created. Let’s go back to the postman and provide our new generated user credentials.
 
-You can observe the below image, we are successfully authenticated with our new credentials and in response we are receiveing **access** and **refresh** tokens.
+You can observe the below image, we are successfully authenticated with our new credentials and in response we are receiveing _access_ and _refresh_ tokens.
 
 ![user_login_postman](steps/step11.png)
 
@@ -205,10 +205,10 @@ So, finally we received the access token which is valid for the next 5minutes. W
 
 ![token_refresh_2](steps/step14.png)
 
-Next, I will move to **views.py** in our **api/v1/organization** directory.
+Next, I will move to `views.py` in our _api/v1/organization_ directory.
 
-I will remove the permission **AllowAny**. Instead of AllowAny
-you can pass **IsAuthenticated**.
+I will remove the permission _AllowAny_. Instead of AllowAny
+you can pass _IsAuthenticated_.
 
 ```python
 from rest_framework import status
@@ -239,7 +239,7 @@ class OrganizationAPI(ListCreateAPIView):
 
 It's much better to directly mention in your APIs instead of relying on the defaults.
 
-If you don't want to mention permission for every api, then you can mention directly in your **settings.py** file. Make sure to add it at the top, because order matters.
+If you don't want to mention permission for every api, then you can mention directly in your `settings.py` file. Make sure to add it at the top, because order matters.
 
 ![permission_settings](steps/step15.png)
 
@@ -247,13 +247,13 @@ Let’s now move back again to Postman and test our APIs.
 
 You can see the below image, our routes are now protected.
 
-The API raised an unauthorized response : **authentication credentials were not provided**.
+The API raised an unauthorized response : _authentication credentials were not provided_.
 
 ![permission_denied_postman](steps/step16.png)
 
-Now I am going to pass the **access token** in the **Authorization** header.
+Now I am going to pass the _access token_ in the _Authorization_ header.
 
-The value should be **Bearer** followed by the access token.
+The value should be _Bearer_ followed by the access token.
 
 ```
 Authorization: Bearer <access_token>

@@ -16,9 +16,9 @@ video: "https://youtu.be/F2rMM6Z7H_Q"
 
 With Rider, you can run entire apps and specific scripts right where you create your code. Regardless of what you want to run, the principles are the same. Let’s see what they are.
 
-I want to run this JavaScript file using Node.js. To do this, I can use the context menu in the **Solution** tool window, and select **Run main.js**, or I can use a dedicated shortcut for it <kbd>Ctrl+Shift+Alt+R</kbd>.
+I want to run this JavaScript file using Node.js. To do this, I can use the context menu in the _Solution_ tool window, and select **Run main.js**, or I can use a dedicated shortcut for it <kbd>Ctrl+Shift+Alt+R</kbd>.
 
-When you run a file this way, Rider does two things. First, it runs that file and, depending on the file type, opens it in the browser or shows the **Run** tool window with the results of running the code.
+When you run a file this way, Rider does two things. First, it runs that file and, depending on the file type, opens it in the browser or shows the _Run_ tool window with the results of running the code.
 Second, it creates a temporary run/debug configuration, so we could run a file like that. The newly created run/debug configuration can be found in the toolbar.
 
 Run/debug configurations can be either temporary or permanent. To turn a temporary configuration into a permanent one, open the drop-down, or use the **Run \| Edit configurations...** menu, and save the configuration.

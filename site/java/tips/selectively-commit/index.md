@@ -18,7 +18,7 @@ Sometimes you're making multiple changes to a file that you don't want to commit
 
 We can select which chunks and specific lines we want to add to our commit.
 
-We can see which files were changed by opening the **Commit tool window** <kbd>⌘0</kbd> (macOS) / <kbd>Alt+0</kbd> (Windows/Linux). Here we can open the diff for a particular file to see which changes were made to that file, using <kbd>⌘D</kbd> (macOS) / <kbd>Ctrl+D</kbd> (Windows/Linux). In the diff, we have the option to include specific changes to our commit, by clicking the **Include into commit** checkbox in the gutter next to each chunk of modified, deleted or newly added code.
+We can see which files were changed by opening the _Commit_ tool window <kbd>⌘0</kbd> (macOS) / <kbd>Alt+0</kbd> (Windows/Linux). Here we can open the diff for a particular file to see which changes were made to that file, using <kbd>⌘D</kbd> (macOS) / <kbd>Ctrl+D</kbd> (Windows/Linux). In the diff, we have the option to include specific changes to our commit, by selecting **Include into commit** in the gutter next to each chunk of modified, deleted or newly added code.
 
 We can even select specific lines from a change to include in a commit. To commit only a specific line from a chunk, right-click the line you want to include and select **Split Chunk and Include Current Line into Commit**.
 Alternatively, hover over the gutter and select the checkbox next to the line you want to include in the commit. Or, if we change our mind, we can also hover over the gutter and clear the checkbox next to the line we want to exclude.

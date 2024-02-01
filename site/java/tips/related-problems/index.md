@@ -15,4 +15,4 @@ seealso:
 video: "https://youtu.be/bcSwTDdnoqo"
 ---
 
-If you break your code while making changes, use IntelliJ IDEA's inlay hints to navigate to Related Problems and use **Intention Actions** <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to fix them.
+If you break your code while making changes, use IntelliJ IDEA's inlay hints to navigate to Related Problems and use _Intention Actions_ <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to fix them.

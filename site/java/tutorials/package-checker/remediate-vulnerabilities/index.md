@@ -14,7 +14,7 @@ subtitle: Remediate dependencies using IntelliJ IDEA Ultimate
 thumbnail: ./thumbnail.png
 ---
 
-Finally, we can remediate these vulnerabilities. We can click **Copy safe version to clipboard** in the Vulnerable Dependencies tool window details pane to copy the safe version and paste it into our build file.
+Finally, we can remediate these vulnerabilities. We can click **Copy safe version to clipboard** in the _Vulnerable Dependencies_ tool window details pane to copy the safe version and paste it into our build file.
 
 ![Copy safe version to clipboard](copy-to-clipboard.png)
 
@@ -24,7 +24,7 @@ We can also fix it directly in our build file. When we hover over a specific vul
 
 ![Fixed version from hover](fixed-from-hover.png)
 
-Alternatively, we can use the intention action shortcut, **⌥ ⏎** on macOS, or **Alt+Enter** on Windows/Linux and select the action to upgrade the version (if a new version is available).
+Alternatively, we can use the intention action shortcut, <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and select the action to upgrade the version (if a new version is available).
 
 ![Show context actions](context-actions.png)
 

@@ -18,4 +18,4 @@ seealso:
 video: "https://youtu.be/N6pjYNNw1yw"
 ---
 
-Let #IntelliJIDEA help you refactor your code. Use **Introduce Variable** <kbd>⌥⌘V</kbd> (macOS) / <kbd>Ctrl+Alt+V</kbd> (Windows/Linux) to assign (part of) an expression to a new variable.
+Let IntelliJIDEA help you refactor your code. Use _Introduce Variable_ <kbd>⌥⌘V</kbd> (macOS) / <kbd>Ctrl+Alt+V</kbd> (Windows/Linux) to assign (part of) an expression to a new variable.

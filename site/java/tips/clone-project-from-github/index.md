@@ -13,4 +13,4 @@ seealso:
 video: "https://youtu.be/CyV2Q0bGPWY"
 ---
 
-Import a project from VCS directly from the IntelliJ IDEA welcome screen. Click the **Get from VCS** button, specify the URL of the remote repository that you want to clone and the directory where your local repository will be created, and click **Clone**. The code will be downloaded and imported into an IntelliJ IDEA project.
+Import a project from VCS directly from the IntelliJ IDEA welcome screen. Click **Get from VCS**, specify the URL of the remote repository that you want to clone and the directory where your local repository will be created, and click **Clone**. The code will be downloaded and imported into an IntelliJ IDEA project.

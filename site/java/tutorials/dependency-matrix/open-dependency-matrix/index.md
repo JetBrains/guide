@@ -14,15 +14,15 @@ You can open the Dependency Matrix from the main menu by going to **Code | Analy
 
 ![Open Dependency Matrix from the menu](dependency-matrix-menu.png)
 
-Alternatively, use **Find Action** <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) and search for “matrix”.
+Alternatively, use Find Action <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) and search for “matrix”.
 
 ![Open Dependency Matrix using Find Action](dependency-matrix-find-action.png)
 
-To use this feature, the **Dependency Matrix plugin** needs to be enabled.
+To use this feature, the _Dependency Matrix plugin_ needs to be enabled.
 
 ![Dependency Matrix plugin](dependency-matrix-plugin.png)
 
-When opening the Dependency Matrix, specify the scope you want to analyze. You can select the **Whole project** or specify a **Custom scope**, and whether to include test sources or not.
+When opening the Dependency Matrix, specify the scope you want to analyze. You can select the _Whole project_ or specify a _Custom scope_, and whether to include test sources or not.
 
 ![Dependency Matrix scope](dependency-matrix-scope.png)
 
@@ -32,4 +32,4 @@ If the project’s class files are out of date, the analysis may result in incom
 
 ![Dependency Matrix - Project is out of date](dependency-matrix-out-of-date.png)
 
-The **DSM tool window** will open in a popup, showing a matrix of your project’s components.
+The _DSM_ tool window will open in a popup, showing a matrix of your project’s components.

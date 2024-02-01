@@ -21,7 +21,7 @@ To work with Unity tests, use the [Unit Tests window](https://www.jetbrains.com/
 
 You can add new Unity tests either in the Unity editor or in Rider.
 
-Unity tests are discovered from code and from the Unity editor and are automatically added to the **Explorer** tab of the **Unit Tests** tool window.
+Unity tests are discovered from code and from the Unity editor and are automatically added to the **Explorer** tab of the _Unit Tests_ tool window.
 All Rider unit test features are available for Unity tests too including grouping, filtering based on test status, and other. Test output is parsed to make stack traces, class and method names into hyperlinks.
 
 The Unit Tests window allows you to choose which unit test runner you want to use. For example, it could be a standalone NUNit launcher, or the Unity Editor in either Edit Mode or Play Mode.

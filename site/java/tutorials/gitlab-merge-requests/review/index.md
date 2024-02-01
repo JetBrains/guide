@@ -22,13 +22,13 @@ If a Merge Request is no longer relevant, and we’re not going to take the chan
 
 ![Close](close.png)
 
-If the Merge Request is ready, meaning all the checks have passed, questions have been answered and requested changes to the code have been made, we can merge it. We can do so by clicking the **Merge** button at the bottom left of the Merge Request window. We also have the option to **Squash and Merge**, meaning all commits will be combined into a single commit when merging. We can add our own commit message for the merge, or edit the default one if we want to.
+If the Merge Request is ready, meaning all the checks have passed, questions have been answered and requested changes to the code have been made, we can merge it. We can do so by clicking **Merge** at the bottom left of the Merge Request window. We also have the option to **Squash and Merge**, meaning all commits will be combined into a single commit when merging. We can add our own commit message for the merge, or edit the default one if we want to.
 
 ![Merge](merge.png)
 
 ![Edit commit message](commit-message.png)
 
-The Merge Request will be merged, and if we do a **Fetch** we can see the updated branches for this repository.
+The Merge Request will be merged, and if we do a _Fetch_ we can see the updated branches for this repository.
 
 ![Fetch](fetch.png)
 

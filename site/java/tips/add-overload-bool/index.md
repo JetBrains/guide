@@ -18,4 +18,4 @@ seealso:
 video: "https://youtu.be/08A0t0KyKCA"
 ---
 
-You can use <kbd>⇧F6</kbd> (macOS) / <kbd>Shift+F6</kbd> (Windows/Linux) to change the signature of a method and add a new boolean parameter to it. You can then select _Delegate via overloading method_ to complete the refactor.
+You can use <kbd>⇧F6</kbd> (macOS) / <kbd>Shift+F6</kbd> (Windows/Linux) to change the signature of a method and add a new boolean parameter to it. You can then select **Delegate via overloading method** to complete the refactor.

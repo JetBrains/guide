@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/F8UTTTDtbH0?start=452"
 ---
 
-Now we understand the individual steps to migrate a test, we can be a bit more ambitious with our migration. Let's try to automatically migrate all our tests. Use Find Action with **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), and type Migrate, to see migration options for the code. IntelliJ IDEA offers the option to migrate the code from JUnit 4 to 5.
+Now we understand the individual steps to migrate a test, we can be a bit more ambitious with our migration. Let's try to automatically migrate all our tests. Use Find Action with <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux), and type Migrate, to see migration options for the code. IntelliJ IDEA offers the option to migrate the code from JUnit 4 to 5.
 
 ![migrate.png](migrate.png)
 
@@ -24,5 +24,3 @@ We want to check all our tests still work as before, so run them using <kbd>⌃�
 There are no failed tests here and no indicator that anything went wrong so, can assume this migration worked as expected. You can now commit your changes if you want to.
 
 After the migration, you can see that the test classes have been changed. We can go through each of the files to check the changes before we commit them. Use <kbd>⌘\[</kbd> (macOS) / <kbd>Ctrl+Alt+Left Arrow</kbd> (Windows/Linux), or <kbd>⌘\]</kbd> (macOS) / <kbd>Ctrl+Alt+Right Arrow</kbd> (Windows/Linux), to move to the next file to compare so you can quickly check all the files. As these are mostly simple JUnit tests, most of the changes are a change to the imports to use the new JUnit Jupiter test annotation instead of the old JUnit test annotation.
-
-<kbd>⌘\[</kbd> (macOS) / <kbd>Ctrl+Alt+Left Arrow</kbd> (Windows/Linux)

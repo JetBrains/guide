@@ -14,4 +14,4 @@ video: >-
 
 **How to use:**
 
-Open a _docker-compose.yaml_ file and go to any ports mapping section to see if it contains any messages or not.
+Open a `docker-compose.yaml` file and go to any ports mapping section to see if it contains any messages or not.

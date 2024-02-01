@@ -14,4 +14,4 @@ video: >-
 
 **How to use:**
 
-Create a new _Go Remote_ run configuration type via _Run | Edit Configurations... | + Go Remote_. In the run configuration settings, in the _On disconnect_ section, choose either _Stop remote Delve process_, _Leave it running_, or _Ask_ to determine how the configuration behaves when you stop the debugger.
+Create a new **Go Remote** run configuration type via **\_Run | Edit Configurations... | + Go Remote**. In the run configuration settings, in the _On disconnect_ section, choose either **Stop remote Delve process**, **Leave it running**, or **Ask** to determine how the configuration behaves when you stop the debugger.

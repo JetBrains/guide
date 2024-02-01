@@ -13,4 +13,4 @@ video: >-
 ---
 
 **How to use:**
-Press <kbd>⌘⌥⏎</kbd> (macOS) / <kbd>Ctrl+Alt+Enter</kbd> (Windows/Linux) on function call that returns an error and select _Handle error_.
+Press <kbd>⌘⌥⏎</kbd> (macOS) / <kbd>Ctrl+Alt+Enter</kbd> (Windows/Linux) on function call that returns an error and select **Handle error**.

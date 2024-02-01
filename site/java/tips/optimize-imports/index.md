@@ -16,4 +16,4 @@ seealso:
 video: "https://youtu.be/hdP_IUIvDfw"
 ---
 
-**Optimize Imports** using the shortcut <kbd>⌃⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+O</kbd> (Windows/Linux), or configure IntelliJ IDEA to **Optimize imports on commit**, or even on the fly by enabling **Optimize imports on the fly**.
+_Optimize Imports_ using the shortcut <kbd>⌃⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+O</kbd> (Windows/Linux), or configure IntelliJ IDEA to **Optimize imports on commit**, or even on the fly by enabling **Optimize imports on the fly**.

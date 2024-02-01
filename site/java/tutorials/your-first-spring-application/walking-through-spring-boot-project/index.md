@@ -13,7 +13,7 @@ video: "https://youtu.be/XkO1ana4nqI"
 
 In the previous step we asked IntelliJ IDEA to create us a Spring Boot project with **Spring Web** as a dependency. Let's now take a look at what has been automatically created, so that we can build on that understanding in the next step.
 
-Let's take a look around some aspects of the project. The easiest way to do this is from the Project tool window which you can access with **⌘1** on macOS, or **Alt**+**1** on Windows and Linux. We will look at:
+Let's take a look around some aspects of the project. The easiest way to do this is from the Project tool window which you can access with <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux). We will look at:
 
 - The .mvn Folder
 - The pom.xml File

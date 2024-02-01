@@ -22,7 +22,7 @@ I recommend that you to follow in parallel the video tutorial, for better hands-
 
 ## DRF Setup
 
-For our tutorial step, we will be using the **3.12.2** version.
+For our tutorial step, we will be using the _3.12.2_ version.
 
 To install Django Rest Framework (DRF), run the below given command.
 
@@ -30,15 +30,15 @@ To install Django Rest Framework (DRF), run the below given command.
 pip install djangorestframework==3.12.2
 ```
 
-Make sure to add **rest_framework** in the **INSTALLED_APPS** of your **settings.py** file.
+Make sure to add _rest_framework_ in the _INSTALLED_APPS_ of your `settings.py` file.
 
 ![drf_installed_apps](steps/step1.png)
 
-I am going to create a package in project root and name it as **api**. I normally break down my apis into different versions, and each version contains its own business logic, routing etc. With this, I can also maintain backward compatibility.
+I am going to create a package in project root and name it as _api_. I normally break down my apis into different versions, and each version contains its own business logic, routing etc. With this, I can also maintain backward compatibility.
 
 As you can see in the images below, I am going to modularize my folder structure. You are free to use your own approach and play around with it.
 
-Let's design our API routes to follow version semantics like **/api/v1/**:
+Let's design our API routes to follow version semantics like _/api/v1/_:
 
 ![api_structure](steps/step2.png)
 
@@ -50,13 +50,13 @@ There are four major files under **v1/organization**:
 
 ![api_structure_4](steps/step5.png)
 
-- **serializer.py** - According to DRF, serializers allow complex data such as querysets and model instances to be converted to native Python data types. These can then be easily rendered into JSON , XML or other content types.
+- `serializer.py` - According to DRF, serializers allow complex data such as querysets and model instances to be converted to native Python data types. These can then be easily rendered into JSON , XML or other content types.
 
-- **urls.py** - It's where you define the mapping between URLs and views. You can also consider them as routes.
+- `urls.py` - It's where you define the mapping between URLs and views. You can also consider them as routes.
 
-- **validator.py** - We use this file to write our common validation code which can be later re-used.
+- `validator.py` - We use this file to write our common validation code which can be later re-used.
 
-- **views.py** - This is the file where we are going to write all our business logic.
+- `views.py` - This is the file where we are going to write all our business logic.
 
 Let us first start implementing our business logic in the views file.
 We will be writing our first API that will perform two operations:
@@ -64,19 +64,19 @@ We will be writing our first API that will perform two operations:
 - Creating a new organization
 - Listing all the organizations
 
-I will be importing **ListCreateAPIView** from **rest_framework.generics**.
+I will be importing _ListCreateAPIView_ from _rest_framework.generics_.
 
 According to the Django documentation: <em>generic views were developed as a shortcut for common usage patterns... They take certain common idioms and patterns found in view development and abstract them so that you can quickly write common views of data without having to repeat yourself.</em>
 
 ![list_create_api_view](steps/step6.png)
 
-There are several generic views provided by DRF. **ListCreateAPIView** is much better than using the basic **APIView**. If you try writing the same logic in APIView then you need to implement **get()** and **post()** methods. In the case of the **ListCreateAPIView** the **get()** and **post()** method is already implemented. This is how Django makes your life easy by writing less code.
+There are several generic views provided by DRF. _ListCreateAPIView_ is much better than using the basic \_APIView*. If you try writing the same logic in APIView then you need to implement_get()\_and_post()\_methods. In the case of the_ListCreateAPIView_the_get()\_and_post* method is already implemented. This is how Django makes your life easy by writing less code.
 
-As you can see the image below, we are going to inherit ListCreateAPiView in our OrganizationAPI. The mandatory attributes are **queryset** and **serializer_class**.
+As you can see the image below, we are going to inherit ListCreateAPiView in our OrganizationAPI. The mandatory attributes are _queryset_ and _serializer_class_.
 
 ![list_create_api_view_1](steps/step7.png)
 
-A **[QuerySet](https://docs.djangoproject.com/en/3.1/ref/models/querysets/)** represents a collection of objects from your database. For our case we are trying to get all the objects from the Organization model.
+A [QuerySet](https://docs.djangoproject.com/en/3.1/ref/models/querysets/) represents a collection of objects from your database. For our case we are trying to get all the objects from the Organization model.
 
 According to Django Rest Framework, [Serializers](https://www.django-rest-framework.org/api-guide/serializers/) allow complex data such as querysets and model instances to be converted to native Python data types that can then be easily rendered into JSON, XML or other content types. Serializers also provide deserialization, allowing parsed data to be converted back into complex types, after first validating the incoming data.
 
@@ -86,19 +86,19 @@ You can see we are using [ModelSerializer](https://www.django-rest-framework.org
 
 ![list_create_api_view_2](steps/step8.png)
 
-We will be using **\_\_**all**\_\_** in our fields attribute to display all fields present in our model. It is strongly recommended that you explicitly set all fields that should be serialized using the fields attribute. This will make it less likely to result in unintentionally exposing data when your models change.
+We will be using \_\_\_all\_\_\_ in our fields attribute to display all fields present in our model. It is strongly recommended that you explicitly set all fields that should be serialized using the fields attribute. This will make it less likely to result in unintentionally exposing data when your models change.
 
-Coming back to our business logic, I will be adding **permission_classes**.
+Coming back to our business logic, I will be adding _permission_classes_.
 
 [Permission](https://www.django-rest-framework.org/api-guide/permissions/) checks are always run at the very start of the view, before any other code is allowed to proceed. Permission checks will typically use the authentication information in the `request.user` and `request.auth` properties to determine if the incoming request should be permitted.
 
-In our case we will be using **AllowAny**, basically anyone can access my api without any authentication. In my upcoming tutorial I will be explaining how to protect our APIs.
+In our case we will be using _AllowAny_, basically anyone can access my API without any authentication. In my upcoming tutorial I will be explaining how to protect our APIs.
 
 ![list_create_api_view_3](steps/step9.png)
 
-Let’s register our API in the **urls.py** file.
+Let’s register our API in the `urls.py` file.
 
-You need to pass **[as_view()](https://docs.djangoproject.com/en/3.1/ref/class-based-views/base/#django.views.generic.base.View.as_view)** along with your view name if are using [class-based views](https://docs.djangoproject.com/en/3.1/topics/class-based-views/). This provides a function-like entry into class based views.
+You need to pass [as_view()](https://docs.djangoproject.com/en/3.1/ref/class-based-views/base/#django.views.generic.base.View.as_view) along with your view name if are using [class-based views](https://docs.djangoproject.com/en/3.1/topics/class-based-views/). This provides a function-like entry into class based views.
 
 ![organization_url_routes](steps/step10.png)
 
@@ -110,7 +110,7 @@ I am now going to provide the organization route and will be performing a POST r
 
 If you don't provide any necessary information, the API is going to return response 400 Bad Request.
 
-You can see the below image, it's saying **"This field is required"**. The error message and validation is actually taken care by the serializer. This is one of the good points how serializers are doing the heavy work behind
+You can see the below image, it's saying "This field is required". The error message and validation is actually taken care by the serializer. This is one of the good points how serializers are doing the heavy work behind
 the scenes.
 
 The three fields :
@@ -137,7 +137,7 @@ You can see the below image, the record is successfully reflecting.
 
 ![db_record](steps/step15.png)
 
-Let me try to send the same request again and check what happens. You can see we are receiving an error: **organization with registration code already exists**. I know that I haven’t written this validation message: this is again taken care of by the serializer because **registration_code** is a unique field in our database. This is amazing how serializers are performing validations based on our data model. We even have the flexibility to write custom validators.
+Let me try to send the same request again and check what happens. You can see we are receiving an error: _organization with registration code already exists_. I know that I haven’t written this validation message: this is again taken care of by the serializer because _registration_code_ is a unique field in our database. This is amazing how serializers are performing validations based on our data model. We even have the flexibility to write custom validators.
 
 ![org_validation_check](steps/step16.png)
 
@@ -147,13 +147,13 @@ Before going forward, first I will remove the record from the database.
 
 ![remove_record_db](steps/step17.png)
 
-You can see on my screen that ListCreateAPIView inherits **ListModelMixin**, **CreateModelMixin** and **GenericAPIView**.
+You can see on my screen that ListCreateAPIView inherits _ListModelMixin_, _CreateModelMixin_ and _GenericAPIView_.
 
 ![list_create_api_generics](steps/step18.png)
 
 I will click on **CreateModelMixin**, under the hood it is actually creating a model instance.
 
-I will override the **create** function by changing the response structure. Let me first copy the function and paste it in the OrganizationAPI.
+I will override the `create` function by changing the response structure. Let me first copy the function and paste it in the OrganizationAPI.
 
 ![list_create_api_mixins](steps/step19.png)
 
@@ -179,11 +179,11 @@ You can see in the below image, we are viewing both the records which got insert
 
 ![get_response](steps/step23.png)
 
-I will be creating a new class which will inherit the generic view **RetrieveUpdateDestroyAPIView**. It is used for read,write and delete endpoints to represent a single model instance.
+I will be creating a new class which will inherit the generic view _RetrieveUpdateDestroyAPIView_. It is used for read,write and delete endpoints to represent a single model instance.
 
-It supports **get**, **put**, **patch** and **delete** method handlers.
+It supports _get_, _put_, _patch_ and _delete_ method handlers.
 
-As you can see in **get_queryset** we are passing **“pk”** which is actually the primary key or ID column in the table which we are referring to.
+As you can see in _get_queryset_ we are passing _“pk”_ which is actually the primary key or ID column in the table which we are referring to.
 
 ![retrieve_update_destroy_class](steps/step24.png)
 
@@ -202,11 +202,11 @@ Now, I am going to perform a PUT operation to update my record. I will provide t
 ![retrieve_update_destroy_postman_update](steps/step27.png)
 
 As you can see the below image, RetrieveUpdateDestroyAPIView uses three mixins :
-**RetrieveModelMixin**, **UpdateModelMixin**, **DestroyModelMixin** and **GenericAPIView**.
+_RetrieveModelMixin_, _UpdateModelMixin_, _DestroyModelMixin_ and _GenericAPIView_.
 
 ![retrieve_update_destroy_override](steps/step28.png)
 
-I am going to change the response structure for the PUT operation by before by overriding the **UpdateModelMixin**.
+I am going to change the response structure for the PUT operation by before by overriding the _UpdateModelMixin_.
 
 ![retrieve_update_destroy_override_2](steps/step29.png)
 
@@ -224,7 +224,7 @@ Let’s complete the final operation by removing the record from our database by
 
 I am going to remove the record for id number 3.
 
-We have successfully removed the record. We have received a **“204 No Content”** HTTP response. This is a default behaviour in DELETE method that we don’t receive any json response in the body. Let me verify that in the database.
+We have successfully removed the record. We have received a _“204 No Content”_ HTTP response. This is a default behaviour in DELETE method that we don’t receive any json response in the body. Let me verify that in the database.
 
 ![retrieve_update_destroy_remove](steps/step33.png)
 

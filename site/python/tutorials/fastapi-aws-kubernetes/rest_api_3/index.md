@@ -20,7 +20,7 @@ schema etc.
 
 # Creating Models
 
-I am going to create **models.py** file under products.
+I am going to create `models.py` file under products.
 
 ![step1](./steps/step1.png)
 
@@ -28,7 +28,7 @@ I will be doing necessary imports.
 
 I am going to create a Category model which inherits from Base.
 
-Every product comes under a category. I will define two columns **id** and **name**.
+Every product comes under a category. I will define two columns `id` and `name`.
 
 ![step2](./steps/step2.png)
 
@@ -54,7 +54,7 @@ In Product model, I will be defining `category_id` which is a ForeignKey referen
 
 Basically, a foreign key is a set of attributes in a table that refers to the primary key of another table.
 
-**models.py**
+`models.py`
 
 ```python
 from sqlalchemy import Column, Integer, String, Float, ForeignKey, Text
@@ -99,13 +99,13 @@ I need to register this model in alembic and then generate the schema.
 
 ![step4](./steps/step4.png)
 
-I will type **alembic revision --autogenerate** to generate the schema file.
+I will type _alembic revision --autogenerate_ to generate the schema file.
 
-To migrate I am going to type **alembic upgrade head**.
+To migrate I am going to type _alembic upgrade head_.
 
 ![step5](./steps/step5.png)
 
-The tables are reflecting in the **Database Explorer**. It’s clearly visible, and you can see the foreign key relationship attached with the category.
+The tables are reflecting in the _Database Explorer_. It’s clearly visible, and you can see the foreign key relationship attached with the category.
 
 # Router & Services
 
@@ -113,7 +113,7 @@ Let’s begin by creating the router, schema and services. As usual what we did 
 
 I am going to do the necessary imports.
 
-We need to initialize the **APIRouter** and I will provide the tag name as **products** and prefix will be **/products**.
+We need to initialize the _APIRouter_ and I will provide the tag name as _products_ and prefix will be _/products_.
 
 ![step6](./steps/step6.png)
 
@@ -123,7 +123,7 @@ I will quickly move to the schema.py file.
 
 I will do the necessary imports like BaseModal and `constr` from Pydantic.
 
-**constr** comes under **Constrained Types**. It’s possible to define primitive types that have more constraints on their values. I will show the use case in a
+_constr_ comes under _Constrained Types_. It’s possible to define primitive types that have more constraints on their values. I will show the use case in a
 while.
 
 ![step7](./steps/step7.png)
@@ -157,11 +157,11 @@ an immediate database query, which you may consider expensive.
 
 We are done with the service, now let’s register the route.
 
-It’s going to be a **POST** method with status code **201**.
+It’s going to be a `POST` method with status code _201_.
 
 ![step10](./steps/step10.png)
 
-Now, we are going to include the router in **main.py**.
+Now, we are going to include the router in `main.py`.
 
 ![step11](./steps/step11.png)
 
@@ -177,7 +177,7 @@ You can see product routes is reflecting in Swagger UI. Let's try it out quickly
 
 Our category was successfully created with id of 1.
 
-I will create one more with the name **Electronics**.
+I will create one more with the name _Electronics_.
 
 ![step15](./steps/step15.png)
 
@@ -191,18 +191,18 @@ Now, I am going to define and return all categories present in the database.
 
 ![step17](./steps/step17.png)
 
-**services.py**
+`services.py`
 
 ![step18](./steps/step18.png)
 
 I will register the route which is a GET request and the response model
 will be returning a list of categories.
 
-**schema.py**
+`schema.py`
 
 ![step19](./steps/step19.png)
 
-**router.py**
+`router.py`
 
 ![step20](./steps/step20.png)
 
@@ -219,7 +219,7 @@ Now, let's create our third api to retrieve category by id.
 
 The `get_category_by_id` will return a Category object from the database, it can be `Optional` as well. But I am leaving up to you.
 
-**router.py**
+`router.py`
 
 ```python
 @router.get('/category/{category_id}', response_model=schema.ListCategory)
@@ -227,7 +227,7 @@ async def get_category_by_id(category_id: int, database: Session = Depends(db.ge
     return await services.get_category_by_id(category_id, database)
 ```
 
-**services.py**
+`services.py`
 
 ```python
 async def get_category_by_id(category_id, database) -> models.Category:
@@ -255,7 +255,7 @@ We will be deleting the object from the database. The function won’t return an
 
 You can define the type annotation as `None` or else it’s not required. I am leaving up to you, whatever you feel good, better to follow the type annotation.
 
-**router.py**
+`router.py`
 
 ```python
 @router.delete('/category/{category_id}', status_code=status.HTTP_204_NO_CONTENT, response_class=Response)
@@ -263,7 +263,7 @@ async def delete_category_by_id(category_id: int, database: Session = Depends(db
     return await services.delete_category_by_id(category_id, database)
 ```
 
-**services.py**
+`services.py`
 
 ```python
 async def delete_category_by_id(category_id, database):
@@ -303,7 +303,7 @@ I will create a `ProductBase` class which will be reused later.
 - Description will be string.
 - Price will be float.
 
-**schema.py**
+`schema.py`
 
 ```python
 class ProductBase(BaseModel):
@@ -325,7 +325,7 @@ inherit `ProductBase`, in which I will have `category_id` as integer.
 
 Coming back to the router, I will resume working on the `create_product` function.
 
-**router.py**
+`router.py`
 
 ```python
 @router.post('/', status_code=status.HTTP_201_CREATED)
@@ -350,7 +350,7 @@ Before inserting the product in the database, we need to make sure whether the s
 I am going to write a validator: `verify_category_exist` which will return the
 category object or None if not present.
 
-**validator.py**
+`validator.py`
 
 ```python
 from typing import Optional
@@ -368,7 +368,7 @@ Let’s go to services and write our business logic where we will be inserting a
 
 ![step26](./steps/step26.png)
 
-**services.py**
+`services.py`
 
 ```python
 async def create_new_product(request, database) -> models.Product:
@@ -417,7 +417,7 @@ So, now I am going to create a pydantic schema for product listing. It will be a
 
 I will create a `ProductListing` class which inherits from `ProductBase`.
 
-**schema.py**
+`schema.py`
 
 ```python
 from typing import Optional
@@ -463,7 +463,7 @@ Category information will be coming from `ListCategory` class.
 
 Response model is going to return schema `ProductListing`.
 
-**router.py**
+`router.py`
 
 ```python
 @router.get('/', response_model=List[schema.ProductListing])
@@ -471,7 +471,7 @@ async def get_all_products(database: Session = Depends(db.get_db)):
     return await services.get_all_products(database)
 ```
 
-**services.py**
+`services.py`
 
 ```python
 async def get_all_products(database) -> List[models.Product]:

@@ -16,5 +16,5 @@ Sometimes you need to start with the application from scratch, and rebuilding th
 
 **How to use:**
 
-Select one or multiple running containers that you want to restart, then click on the **Restart** button in the
+Select one or multiple running containers that you want to restart, then click **Restart** in the
 _Services_ window.

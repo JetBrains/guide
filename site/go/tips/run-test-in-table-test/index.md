@@ -16,7 +16,7 @@ When you have a testing table of more than a handful of cases, it can be hard to
 
 **How to use:**
 
-If the IDE can determine the name of the test, then you can use either the green arrow next to the test name or using **Run context configuration** via <kbd>⌃⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+F10 (Windows/Linux)</kbd>.
+If the IDE can determine the name of the test, then you can use either the green arrow next to the test name or using _Run context configuration_ via <kbd>⌃⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+F10 (Windows/Linux)</kbd>.
 
 **Note:** This feature relies on the IDE to interpret the test name. This means that there are some restrictions on how to name your tests for the IDE to correctly determine them and provide this functionality:
 

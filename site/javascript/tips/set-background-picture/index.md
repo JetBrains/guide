@@ -20,4 +20,4 @@ cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 
-Feel like having something cute in the background while coding? Set a custom background picture in _Preferences/Settings | Appearance & Behavior | Appearance | Background Image…_
+Feel like having something cute in the background while coding? Set a custom background picture in **Preferences/Settings | Appearance & Behavior | Appearance | Background Image**.

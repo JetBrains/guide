@@ -18,7 +18,7 @@ video: "https://youtu.be/fO8oDVBsHWA"
 
 Use <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux), to bring up the **Quick Switch Scheme** dialog.
 
-You can now press **4** or use the arrow keys to scroll to **4** and select _View Mode_ to see list of view modes available. Now press **2** or click on **Enter Distraction Free Mode** to display just your editor window and focus on coding.
+You can now press **4** or use the arrow keys to scroll to **4** and select **View Mode** to see list of view modes available. Now press **2** or click on **Enter Distraction Free Mode** to display just your editor window and focus on coding.
 
 ## Alternative Ways of Entering Distraction Free Mode
 

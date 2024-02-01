@@ -17,4 +17,4 @@ animatedGif:
   height: 300
 ---
 
-With the _Show Method Return Values_ option added to the debugger, you can see what value the method returns without using console.log or invoking the _Evaluate Expression_ dialog. To turn this option on, click the gear icon on the debugger’s left pane.
+With the **Show Method Return Values** option added to the debugger, you can see what value the method returns without using console.log or invoking the _Evaluate Expression_ dialog. To turn this option on, click the gear icon on the debugger’s left pane.

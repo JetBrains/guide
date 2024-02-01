@@ -116,7 +116,7 @@ Placing a new order is not like we are going to use PayPal or going to do any li
 
 So, let’s begin our first api on initiate order, or you can say placing order.
 
-**router.py**
+`router.py`
 
 ```python
 from typing import List
@@ -143,7 +143,7 @@ async def initiate_order_processing(database: Session = Depends(db.get_db)):
 
 I am going to create a Pydantic schema for our `ShowOrder` class.
 
-**schema.py**
+`schema.py`
 
 ```python
 import datetime
@@ -185,7 +185,7 @@ I will do the necessary imports.
 
 First, I am going to get user information. Currently, we are manually retrieving through email but very soon we will change this implementation in our upcoming tutorial.
 
-**services.py**
+`services.py`
 
 ```python
 from typing import List
@@ -249,7 +249,7 @@ After we have successfully sent the email, we will clear the cart items and retu
 We are done with the implementation for placing an order.
 Let’s come back to the router and work on the second api: getting a list of orders.
 
-**router.py**
+`router.py`
 
 ```python
 @router.get('/', status_code=status.HTTP_200_OK, response_model=List[ShowOrder])
@@ -262,7 +262,7 @@ The response will be returning a list of orders present in the db.
 
 You can observe the `get_order_listing` function, it’s first going to retrieve user information and after that it will return all order information for that specific user.
 
-**services.py**
+`services.py`
 
 ```python
 async def get_order_listing(database) -> List[Order]:

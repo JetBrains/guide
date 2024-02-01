@@ -14,4 +14,4 @@ seealso:
 video: "https://youtu.be/nbcedEBc-mg"
 ---
 
-Pressing **Escape** will dismiss the current dialog if there's one open and return your focus to the editor. If you open a tool window such as the Project Window and then press **Escape**, IntelliJ IDEA will return the focus to your editor but leave the Project Tool window open.
+Pressing <kbd>␛</kbd> (macOS) / <kbd>Escape</kbd> (Windows/Linux) will dismiss the current dialog if there's one open and return your focus to the editor. If you open a tool window such as the Project Window and then press <kbd>␛</kbd> (macOS) / <kbd>Escape</kbd> (Windows/Linux), IntelliJ IDEA will return the focus to your editor but leave the Project Tool window open.

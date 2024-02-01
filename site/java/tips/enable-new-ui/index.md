@@ -14,4 +14,4 @@ seealso:
 video: "https://youtu.be/NmO0f-6KvYQ"
 ---
 
-Do you want to try our new UI? Open Preferences \*<kbd>⇧⌘N</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+Insert</kbd> (Windows/Linux) and go to **Appearance | New UI** to turn it on. Available from IntelliJ IDEA 2022.3.
+Do you want to try our new UI? Open Preferences \*<kbd>⇧⌘N</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+Insert</kbd> (Windows/Linux) and go to **Appearance | New UI** to turn it on.

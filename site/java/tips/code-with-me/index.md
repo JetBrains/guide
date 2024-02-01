@@ -15,4 +15,4 @@ seealso:
 video: "https://youtu.be/xaJ_nJJ-NX8"
 ---
 
-Collaborate remotely even when your friends and coworkers don't have IntelliJ IDEA installed! Access **Code With Me** from the **Main Toolbar** by clicking the **person icon** and then selecting **Start session**, or use <kbd>⌃⇧Y</kbd> (macOS) / <kbd>Ctrl+Shift+Y</kbd> (Windows/Linux).
+Collaborate remotely even when your friends and coworkers don't have IntelliJ IDEA installed! Access _Code With Me_ from the _Main Toolbar_ by clicking the **person** icon and then selecting **Start session**, or use <kbd>⌃⇧Y</kbd> (macOS) / <kbd>Ctrl+Shift+Y</kbd> (Windows/Linux).

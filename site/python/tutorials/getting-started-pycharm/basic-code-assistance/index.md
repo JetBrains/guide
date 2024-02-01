@@ -26,7 +26,7 @@ If it’s the correct completion, as it is in this case, we can press _Enter_, a
 
 Code completion is not only available for classes, but also for methods. We created a variable called `bmw` that instantiates from the `Car` class. If we want to use one of its methods, we can write `bmw` plus `dot` and PyCharm will offer [basic completion](https://www.jetbrains.com/help/pycharm/auto-completing-code.html#basic_completion) for the available methods.
 
-Here's a cool tip - while **Enter** adds the suggested completion, you can also press **tab** to switch an existing one for the new one, saving you time.
+Here's a cool tip - while <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) adds the suggested completion, you can also press **tab** to switch an existing one for the new one, saving you time.
 
 Code completion is also available for keywords. Let’s say you want to import a package. If you start typing `i` at the top of your file, PyCharm will immediately offer `import` as a possible completion.
 

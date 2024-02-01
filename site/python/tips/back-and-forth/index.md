@@ -15,7 +15,7 @@ video: "https://youtu.be/_i2gYYfC9H0"
 
 Decades of old habits make us think of files, with their deeply-nested locations and obscure, inconsistent file names and extensions. Our brains are already full. Who has time to memorize all the files in the project?
 
-Don't. Instead, think of the _code_ in your project, not the files. Want to jump to a class, function, or variable? You have a smart IDE that's indexed the universe. Put it to work and use the `Navigate by Symbol` action <kbd>⌥⌘O<kbd/> (macOS) / <kbd>Ctrl+Shift+Alt+N</kbd> (Windows/Linux) quickly, without disruption, get to where you want to go.
+Don't. Instead, think of the _code_ in your project, not the files. Want to jump to a class, function, or variable? You have a smart IDE that's indexed the universe. Put it to work and use the Navigate by Symbol action <kbd>⌥⌘O<kbd/> (macOS) / <kbd>Ctrl+Shift+Alt+N</kbd> (Windows/Linux) quickly, without disruption, get to where you want to go.
 
 When the popup appears, start speed typing to get to the symbol, using the "camel hump" syntax universal to speed searching.
 

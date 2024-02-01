@@ -10,7 +10,7 @@ subtitle: Importing a project from existing model
 thumbnail: ./thumbnail.png
 ---
 
-From the Welcome Screen, you can create a project from existing sources by going to **File | New | Project from Existing Sources**, or you can use **Find Action** (**⌘⇧A** on macOS, or **Ctrl+Shift+A** on Windows/Linux) to find “project from existing sources” and click the **Import project from existing sources** action in the popup.
+From the Welcome Screen, you can create a project from existing sources by going to **File | New | Project from Existing Sources**, or you can use Find Action <kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux) to find “project from existing sources” and click the **Import project from existing sources** action in the popup.
 ![Project from Existing Sources](existing-sources.png)
 ![Import project from existing sources](find-action-existing-sources.png)
 IntelliJ IDEA will open the file system on your machine. Select the directory where you keep your projects, sources, etc. and select the project you want to import.

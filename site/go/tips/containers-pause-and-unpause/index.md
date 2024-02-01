@@ -18,4 +18,4 @@ When you need to test how a micro-service behaves when another one is unavailabl
 
 **How to use:**
 
-Select one or multiple running containers that you want to pause or resume, then click on the **Pause** or **Resume** button in the **Services** window.
+Select one or multiple running containers that you want to pause or resume, then click on the **Pause** or **Resume** button in the _Services_ window.

@@ -16,7 +16,7 @@ obsoletes:
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, we are going to build, tag and push our docker image to Amazon Elastic Container Registry through GitHub Actions.
 
-**[GitHub Actions](https://github.com/features/actions)** helps you build, test, and deploy applications, but you can also use it to automate other tasks common to your developer workflows: triaging and managing issues, automating releases, collaborating with
+[GitHub Actions](https://github.com/features/actions) helps you build, test, and deploy applications, but you can also use it to automate other tasks common to your developer workflows: triaging and managing issues, automating releases, collaborating with
 your user base, and more.
 
 There are tons of alternative flavours you can try out.
@@ -36,11 +36,11 @@ Now, I am going to click on **Actions**:
 
 ![github_actions_page](./steps/step2.png)
 
-There are many integration workflows available in GitHub Actions, but we will be using a **manual workflow**.
+There are many integration workflows available in GitHub Actions, but we will be using a manual workflow.
 
 ![github_actions_page_2](./steps/step3.png)
 
-I will click on it and hence we will get a pre-generated **manual.yml** file.
+I will click on it and hence we will get a pre-generated `manual.yml` file.
 
 We are not going to use this, instead I will be providing my own custom workflow. Let me give you a brief idea what this workflow is going to do.
 
@@ -110,7 +110,7 @@ To work with ECR we need to browse **aws-actions**, which contains starter templ
 This action is maintained by AWS itself.
 
 For our tutorial we need the [amazon-ecr-login](https://github.com/aws-actions/amazon-ecr-login) repository. To use this action
-we need to follow the steps provided in the **README** file.
+we need to follow the steps provided in the `README` file.
 
 - Reference URL : [http://localhost:8000/tutorials/django-aws/github-actions/](http://localhost:8000/tutorials/django-aws/github-actions/)
 
@@ -121,8 +121,7 @@ we need to follow the steps provided in the **README** file.
 To work with Amazon ECR, first we need to set up an IAM User. An [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/) user is an entity
 that you create in AWS to represent the person or application that uses it to interact with AWS.
 
-As you can see below, they are recommending what permission you need to provide to the IAM user. I also recommend following
-the IAM best practices as per the documentation.
+As you can see below, they are recommending what permission you need to provide to the IAM user. I also recommend following the IAM best practices as per the documentation.
 
 ![aws-actions-ecr-login-readme-3](./steps/step7.png)
 
@@ -130,7 +129,7 @@ Let’s open the AWS Management Console and search for IAM.
 
 ![aws-management-console](./steps/step8.png)
 
-I will create a new user and name it **“django-ecr”** and will enable **programmatic access**.
+I will create a new user and name it “django-ecr” and will enable _programmatic access_.
 
 ![iam-user-1](./steps/step9.png)
 
@@ -138,10 +137,9 @@ I will create a new user and name it **“django-ecr”** and will enable **prog
 
 I will not provide any permission, rather I will create an inline policy later.
 
-I don’t need any **Tags**, I am going to ignore it and finally I click on **Create User**.
+I don’t need any _Tags_, I am going to ignore it and finally I click **Create User**.
 
-Once the user has been successfully created, you will receive the **Access key ID** and **secret access key**. Keep it
-confidential and don’t share it with anyone. I am currently sharing my credentials, but I am going to remove it at the end.
+Once the user has been successfully created, you will receive the _Access key ID_ and _secret access key_. Keep it confidential and don’t share it with anyone. I am currently sharing my credentials, but I am going to remove it at the end.
 
 ![iam-user-access-keys](./steps/step11.png)
 
@@ -149,13 +147,11 @@ We need to set up these credentials in our GitHub Action, so we can access it li
 
 I will go back to my repository and commit the new workflow.
 
-Next, I will click on **Settings** → **Secrets**.
+Next, I will click on **Settings** > **Secrets**.
 
 ![github-secrets-1](./steps/step12.png)
 
-Here I will be providing information related to my AWS access keys along-with ECR repository information. It’s much better to
-use [GitHub Secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) as they are encrypted, instead
-of directly using it as plaintext in the codebase.
+Here I will be providing information related to my AWS access keys along-with ECR repository information. It’s much better to use [GitHub Secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) as they are encrypted, instead of directly using it as plaintext in the codebase.
 
 ![github-secrets-2](./steps/step13.png)
 
@@ -169,13 +165,11 @@ I will create a private repository in ECR and name it as **demo**.
 
 ![aws-ecr-4](./steps/step17.png)
 
-We have successfully created a private repository in ECR and name it as **demo**. As you can see in the **manual.yml** file that we have hardcoded
-the repository name to be **“demo”**, instead you can configure it as a secret. So, you don’t need to modify your yaml
-file in future in case you change your repository name.
+We have successfully created a private repository in ECR and name it as _demo_. As you can see in the `manual.yml` file that we have hardcoded the repository name to be “demo”, instead you can configure it as a secret. So, you don’t need to modify your yaml file in future in case you change your repository name.
 
 ## Tagging
 
-We have done all the configuration. Now, I will create a new release and name it **1.0**.
+We have done all the configuration. Now, I will create a new release and name it _1.0_.
 
 ![tag-first-version](./steps/step18.png)
 
@@ -191,8 +185,7 @@ Oops ! The build failed. I forgot to assign a permission to our IAM User. Let’
 
 ![build-process-failed](./steps/step22.png)
 
-We are currently in the IAM section. I will be creating a **new policy** which will allow the user to access the ECR. I am going to
-provide permission according to my project requirements.
+We are currently in the IAM section. I will be creating a new policy which will allow the user to access the ECR. I am going to provide permission according to my project requirements.
 
 Follow the principle of least privilege and keep rotating your keys frequently. Always focus on best practices.
 
@@ -216,8 +209,7 @@ The policy has been successfully created. Next, I am going to attach the new pol
 
 The policy has been attached successfully to the user. I am going to restart the build again.
 
-Looks like the build has failed again, but this
-time it's different. I forgot to add the **GetAuthorizationToken**.
+Looks like the build has failed again, but this time it's different. I forgot to add the _\*GetAuthorizationToken_.
 
 Let me fix it quickly in the policy document.
 

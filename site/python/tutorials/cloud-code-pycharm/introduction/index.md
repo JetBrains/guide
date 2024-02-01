@@ -21,12 +21,12 @@ Remote development is an approach that allows developers to work from their home
 
 Here’s how Silviu Croitoru summarizes the advantages that remote development offers:
 
-- _**Code from anywhere on any device** – With developer workspaces hosted in the cloud, teams can work securely from any location and on any device, regardless of their physical location. This reduces costs for companies and enables the implementation of a Bring Your Own Device (BYOD) policy._
-- _**Secure source code** – The source code never leaves the security of the company's cloud infrastructure. It remains in the Git repositories and Kubernetes cluster where the developer workspaces reside, avoiding the risk of source code exposure on developers' laptops._
-- _**Simplified zero-trust security** – Cloud-based development environments can simplify network security and make it easier for organizations to maintain a secure remote work environment._
-- _**Environment consistency** – With cloud-based development, teams no longer have to worry about "it works on my machine" issues, as the development environments are consistent and easily replicable._
-- _**Developer self-service** – Standardized and replicable cloud development environments give developers more control and autonomy over their processes, reducing the need for assistance from DevOps teams._
-- _**Fast onboarding for new developers** – With cloud development environments, new engineers can be up and running in just hours rather than weeks, with minimal setup and without the need for extensive application knowledge._
+- Code from anywhere on any device\*\* – With developer workspaces hosted in the cloud, teams can work securely from any location and on any device, regardless of their physical location. This reduces costs for companies and enables the implementation of a Bring Your Own Device (BYOD) policy.
+- Secure source code – The source code never leaves the security of the company's cloud infrastructure. It remains in the Git repositories and Kubernetes cluster where the developer workspaces reside, avoiding the risk of source code exposure on developers' laptops.
+- Simplified zero-trust security – Cloud-based development environments can simplify network security and make it easier for organizations to maintain a secure remote work environment.
+- Environment consistency – With cloud-based development, teams no longer have to worry about "it works on my machine" issues, as the development environments are consistent and easily replicable.
+- Developer self-service – Standardized and replicable cloud development environments give developers more control and autonomy over their processes, reducing the need for assistance from DevOps teams.
+- Fast onboarding for new developers – With cloud development environments, new engineers can be up and running in just hours rather than weeks, with minimal setup and without the need for extensive application knowledge.
 
 Source: [https://www.bunnyshell.com/blog/will-remote-development-take-over-local](https://www.bunnyshell.com/blog/will-remote-development-take-over-local/)
 

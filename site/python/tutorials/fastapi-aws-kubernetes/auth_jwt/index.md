@@ -47,7 +47,7 @@ There are some additional dependencies required for this setup, like the **pytho
 
 ![step4](./steps/step4.png)
 
-Just for speeding up the installation process, clone **requirements.txt** from the source [code](https://github.com/mukulmantosh/FastAPI_EKS_Kubernetes).
+Just for speeding up the installation process, clone `requirements.txt` from the source [code](https://github.com/mukulmantosh/FastAPI_EKS_Kubernetes).
 
 # JSON Web Tokens (JWT)
 
@@ -387,7 +387,7 @@ You can observe the lock symbol which means the endpoint is protected, and you n
 
 ![step19](./steps/step19.png)
 
-You can also observe that a link is appearing named **Authorize** with a lock sign.
+You can also observe that a link is appearing named _Authorize_ with a lock sign.
 
 Once I click, it’s going to prompt me to enter a valid username and password.
 

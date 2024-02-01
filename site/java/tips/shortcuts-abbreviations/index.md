@@ -19,6 +19,6 @@ video: "https://youtu.be/Fk79fAS7Phk"
 
 IntelliJ IDEA has a rich set of keyboard shortcuts to use, but you can also create your own.
 
-To add a custom shortcut, open **Settings | Keymap** and search for the action you want to add a shortcut to. Right-click this action and from the context menu, select **Add Keyboard Shortcut**. In the **Keyboard Shortcut** popup, add the shortcut you want to assign to this action.
+To add a custom shortcut, open **Settings | Keymap** and search for the action you want to add a shortcut to. Right-click this action and from the context menu, select **Add Keyboard Shortcut**. In the _Keyboard Shortcut_ popup, add the shortcut you want to assign to this action.
 
-To add an abbreviation, Open **Settings | Keymap** and search for the term you want to add an abbreviation to. Right-click this term and from the context menu, select **Add Abbreviation**. In the **Abbreviation** popup, add the abbreviation you want to assign to this action.
+To add an abbreviation, Open **Settings | Keymap** and search for the term you want to add an abbreviation to. Right-click this term and from the context menu, select **Add Abbreviation**. In the _Abbreviation_ popup, add the abbreviation you want to assign to this action.

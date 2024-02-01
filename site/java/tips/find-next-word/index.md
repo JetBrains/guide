@@ -20,4 +20,4 @@ Press <kbd>⌘G</kbd> (macOS) / <kbd>F3</kbd> (Windows/Linux), to move to the ne
 
 **Pro tip:**
 
-Use <kbd>⌃⌘G</kbd> (macOS) / <kbd>Ctrl+Alt+Shift</kbd> (Windows/Linux), to select all occurrences of the same word.
+Use <kbd>⌘⌃G</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+J</kbd>, to select all occurrences of the same word.

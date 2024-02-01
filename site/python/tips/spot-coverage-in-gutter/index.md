@@ -21,8 +21,8 @@ _Note: Code coverage is a
 
 Writing tests for your code is good, but how do you know when you've done enough testing? "Code coverage", via the [coverage package](https://pypi.org/project/coverage/), combines your tests and the execution of your code to see and report what spots get hit.
 
-PyCharm makes this easy to set up. You just run the `Run with Coverage` action, for example by clicking the button in the toolbar, and PyCharm runs your tests
-with the bundled `coverage.py` (or you can use a `coverage` that is installed in your project interpreter.)
+PyCharm makes this easy to set up. You just run the Run with Coverage action, for example by clicking the button in the toolbar, and PyCharm runs your tests
+with the bundled `coverage.py` (or you can use a _coverage_ that is installed in your project interpreter.)
 
 Once coverage runs, you'll get a tool window showing a filesystem-like view of your project with statistics at each level.
 

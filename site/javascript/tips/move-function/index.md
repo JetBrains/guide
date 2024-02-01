@@ -21,5 +21,5 @@ animatedGif:
 ---
 
 Want to move a function to a separate file?
-You can use the _Move function_ quick fix (_Alt+Enter_) that creates a new file named after this function.
+You can use the _Move_ function quick fix <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) that creates a new file named after this function.
 Or use the _Move..._ refactoring if you want to select a different target file.

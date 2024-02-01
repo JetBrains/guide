@@ -17,14 +17,14 @@ thumbnail: ./thumbnail.png
 
 Depending on your project’s code base, opening the Solution-Wide Analysis tool window may be overwhelming. No worries though! You can filter these to show only the results that matter most.
 
-From the toolbar in the **Errors/Warnings in Solution** tool window in ReSharper, or the **Problems** tool window in Rider, you can choose to show or hide warnings. Since errors are more important (they may prevent you from even compiling your application), you can show or hide warnings.
+From the toolbar in the _Errors/Warnings in Solution_ tool window in ReSharper, or the _Problems_ tool window in Rider, you can choose to show or hide warnings. Since errors are more important (they may prevent you from even compiling your application), you can show or hide warnings.
 
 <img alt="Filter inspections - Tool bar options (ReSharper)" src="resharper-view-options.png" width="297" height="118" />
 <!--![Filter inspections - Tool bar options (Rider)](rider-view-options.png)-->
 
 ## Inspection Results
 
-The default view of Solution-Wide Analysis is focused at quickly finding code to improve. There is a more detailed view available, which also offers more filtering and grouping options. In ReSharper, use the **ReSharper | Inspect | Code Issues in Solution** menu to bring up the **Inspection Results** tool window. In Rider, you can use the **Code | Inspect Code…** menu, pick _Whole Solution_, and then see the same tool window.
+The default view of Solution-Wide Analysis is focused at quickly finding code to improve. There is a more detailed view available, which also offers more filtering and grouping options. In ReSharper, use the **ReSharper | Inspect | Code Issues in Solution** menu to bring up the _Inspection Results_ tool window. In Rider, you can use the **Code | Inspect Code…** menu, pick **Whole Solution**, and then see the same tool window.
 
 > **Tip:** You may wonder, _why is this a separate tool window?_ Good question!
 >
@@ -36,7 +36,7 @@ The default view of Solution-Wide Analysis is focused at quickly finding code to
 >
 > Solution-Wide Analysis is aimed at seeing issues as real-time as possible. If you want more details, there’s a good chance you want to work on a snapshot of the results and keep an overview of the issues you have addressed and still have to address. This is exactly what the **Inspection Results** tool window brings.
 
-In the **Inspection Results** tool window, the toolbar lets you apply grouping by file, directory, project structure, issue category, issue type, issue severity, and combinations of all these. In ReSharper, you can also use the context menu in the results list to hide certain groups (or show only a specific group).
+In the _Inspection Results_ tool window, the toolbar lets you apply grouping by file, directory, project structure, issue category, issue type, issue severity, and combinations of all these. In ReSharper, you can also use the context menu in the results list to hide certain groups (or show only a specific group).
 
 ![Inspection results (ReSharper)](resharper-inspection-results.png)
 
@@ -53,7 +53,7 @@ In the **Inspection Results** tool window, the toolbar lets you apply grouping b
 >
 > Use these to your advantage to learn about improving your current and future projects.
 
-In the **Inspection Results** tool window, you can delete (<kbd>Del</kbd> on Windows, <kbd>Backspace</kbd> on macOS) issues you are not interested in to help keep track of those that do need your attention.
+In the _Inspection Results_ tool window, you can delete (<kbd>Del</kbd> on Windows, <kbd>Backspace</kbd> on macOS) issues you are not interested in to help keep track of those that do need your attention.
 
 ## Enable/disable Code Inspections
 

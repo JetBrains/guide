@@ -15,9 +15,9 @@ thumbnail: ./thumbnail.png
 
 In a previous step, we built a console application that runs within a Docker container. We covered many of the basics of containerization, but admittedly it's also a dull example. Let's spice things up by building an ASP.NET Core application hosted within a Docker container.
 
-We can use all the features found in the **Services** tab described in the previous section to explore our container during this tutorial.
+We can use all the features found in the _Services_ tab described in the previous section to explore our container during this tutorial.
 
-Let's start by creating a new **Empty** ASP.NET Core application from the **New Solution** dialog, ensuring that the **Docker Support** option has `Linux` selected.
+Let's start by creating a new _Empty_ ASP.NET Core application from the _New Solution_ dialog, ensuring that the _Docker Support_ option has `Linux` selected.
 
 ![Starting a new application](./1-starting-an-aspnet-application.png)
 
@@ -50,11 +50,11 @@ Let's build our image and run the container, but before doing that, map the HTTP
 
 ![Running the ASP.NET Core container](./2-running-the-container.png)
 
-From the **Edit Run Configuration** dialog, Under the **Build** section, we'll locate the **Modify Options** dropdown, select run options, and select **Context Folder**, and set the value to `.` in the following textbox.
+From the _Edit Run Configuration_ dialog, Under the _Build_ section, we'll locate the _Modify Options_ dropdown, select Run options, and select **Context Folder**, and set the value to `.` in the following textbox.
 
 ![Edit the configuration](./3-edit-configuration.png)
 
-Next, under the **Run** section, we'll select **Modify | Bind Ports** In the newly visible textbox, we'll bind the host port of `8080` to our container port of `80`.
+Next, under the _Run_ section, we'll select **Modify | Bind Ports** In the newly visible textbox, we'll bind the host port of `8080` to our container port of `80`.
 
 ![Adding ports to container image](./4-add-ports.png)
 

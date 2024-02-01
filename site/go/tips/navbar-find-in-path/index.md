@@ -22,10 +22,10 @@ video: >-
 
 _Need a fast way to find files in a path, without disrupting your flow?_
 
-Closed the _Project Tool Window_ and need to find a file somewhere in the project tree?
+Closed the _Project_ tool window and need to find a file somewhere in the project tree?
 
 **How to use:**
 
-Activate the **Navigation Bar**, <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux).
+Activate the _Navigation Bar_, <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux).
 
-Then navigate to the target, and use **Find in Path**, <kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux), from the keyboard.
+Then navigate to the target, and use _Find in Path_, <kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux), from the keyboard.

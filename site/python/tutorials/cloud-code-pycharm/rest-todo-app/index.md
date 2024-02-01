@@ -94,13 +94,13 @@ Next, open the `settings.py` file, which resides under `src/helloworld`.
 
 ![todo-app9](./images/screen45.png)
 
-Make sure to add `todo` and `rest_framework` in the **INSTALLED_APPS** list.
+Make sure to add `todo` and `rest_framework` in the _INSTALLED_APPS_ list.
 
 For local development, we’ll be using the sqlite3 database. Make sure to add this section at the end.
 
 ![todo-app10](./images/screen46.png)
 
-When that’s done, open `manage.py` again and type “**migrate**”. The default Django tables will be created.
+When that’s done, open `manage.py` again and type _migrate_. The default Django tables will be created.
 
 ![todo-app11](./images/screen47.png)
 

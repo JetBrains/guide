@@ -17,4 +17,4 @@ seealso:
 video: "https://youtu.be/Az0XYfeIXgo"
 ---
 
-If you have a method with a long signature, or a Kotlin class with a lot of properties, you can press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), and select 'Put Arguments on Separate Lines' to make it more readable.
+If you have a method with a long signature, or a Kotlin class with a lot of properties, you can press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), and select **Put Arguments on Separate Lines** to make it more readable.

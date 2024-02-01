@@ -14,13 +14,13 @@ Let’s take a look at how to interpret the Dependency Matrix.
 
 ![Dependency Matrix](dependency-matrix.png)
 
-The row headers represent the program structure. In this example, the matrix contains the same modules from the **Project tool window** as rows.
+The row headers represent the program structure. In this example, the matrix contains the same modules from the _Project_ tool window as rows.
 
-Notice that the modules are not sorted alphabetically, as they are in the **Project tool window**. The matrix moves the components that are used the most to the bottom. This means that the components located at the top of the matrix _depend on_ the components below.
+Notice that the modules are not sorted alphabetically, as they are in the _Project_ tool window. The matrix moves the components that are used the most to the bottom. This means that the components located at the top of the matrix _depend on_ the components below.
 
 Since this is a matrix, the column headers are the same as the row headers. They are omitted to save space. The dashes on the diagonal correspond to self-dependencies, which are not shown.
 
-As you can see in the legend at the top right of the **DSM tool window**:
+As you can see in the legend at the top right of the _DSM_ tool window:
 
 - dependencies are shown in blue
 - mutual or cyclic dependencies, meaning that two components depend on each other, are shown in red
@@ -38,17 +38,17 @@ When you select a row to see the relationship between the selected component and
 
 ![Dependency Matrix - Selected row](dependency-matrix-select-row.png)
 
-The column shows the dependencies **_of_** the selected row.
+The column shows the dependencies _of_ the selected row.
 
-The row shows the dependencies **_on_** the selected row.
+The row shows the dependencies _on_ the selected row.
 
 Remember from the legend that dependencies flow from green to yellow.
 
-In this example, the core module is selected. You can see that this module **_uses_** several other modules, marked in yellow. In turn, you see that this module **_is used_** by several modules marked in green.
+In this example, the core module is selected. You can see that this module _uses_ several other modules, marked in yellow. In turn, you see that this module _is used_ by several modules marked in green.
 
 You can select different rows to see which components they use or are used by. You'll see that the components at the top mostly use the components at the bottom, while the components at the bottom are mostly used by components at the top and no longer using other components themselves.
 
-You can drill down further into specific cells. When you click a cell, one component will be marked green and the other will be marked yellow. The green component _**uses**_ the yellow component. The corresponding cell (marked purple) will show dependencies in the other direction, in this case 0.
+You can drill down further into specific cells. When you click a cell, one component will be marked green and the other will be marked yellow. The green component _uses_ the yellow component. The corresponding cell (marked purple) will show dependencies in the other direction, in this case 0.
 
 ![Dependency Matrix - Selected cell](dependency-matrix-select-cell.png)
 
@@ -78,11 +78,11 @@ You can limit the view to see only selected dependencies. In the **DSM tool wind
 
 ![Dependency Matrix - Explore Dependencies Between](dependency-matrix-explore.png)
 
-The classes that produce these dependencies will be opened in a new tab in the **DSM tool window**. In contrast to the **Limit Scope** option, only classes which produce selected dependencies are left.
+The classes that produce these dependencies will be opened in a new tab in the _DSM_ tool window. In contrast to the **Limit Scope** option, only classes which produce selected dependencies are left.
 
 ![Dependency Matrix - Explore Dependencies Between](dependency-matrix-explore-result.png)
 
-Another way to open the Dependency Matrix, with the option to select a specific scope, is from the **Project tool window** (**⌘1** on macOS, or **Alt+1** on Windows/Linux). Right-click an item in the **Project tool window** and select **Analyze | Analyze Dependency Matrix**.
+Another way to open the Dependency Matrix, with the option to select a specific scope, is from the _Project_ tool window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux). Right-click an item in the _Project_ tool window and select **Analyze | Analyze Dependency Matrix**.
 
 ![Analyze Dependency Matrix](analyze-dependency-matrix.png)
 
@@ -92,11 +92,11 @@ Notice how you can now select the module or directory as scope for the Dependenc
 
 ## Navigate to relevant code
 
-We can also navigate to the relevant code from the Dependency Matrix. To select a specific dependency for further source-code analysis, right-click the dependency you are interested in in the **DSM tool window**, and select **Find Usages for Dependencies**.
+We can also navigate to the relevant code from the Dependency Matrix. To select a specific dependency for further source-code analysis, right-click the dependency you are interested in in the _DSM_ tool window, and select **Find Usages for Dependencies**.
 
 ![Dependency Matrix - Find Usages](dependency-matrix-find-usages.png)
 
-The **Find tool window** will open, showing the usages of the selected dependency. Close the **DSM tool window** to look at the results and explore the code you’re interested in. We can open the relevant code by double-clicking it in the **Find tool window** <kbd>⌘3</kbd> (macOS) / <kbd>Alt+3</kbd> (Windows/Linux).
+The **Find tool window** will open, showing the usages of the selected dependency. Close the _DSM_ tool window to look at the results and explore the code you’re interested in. We can open the relevant code by double-clicking it in the **Find tool window** <kbd>⌘3</kbd> (macOS) / <kbd>Alt+3</kbd> (Windows/Linux).
 
 ![Find tool window](find-tool-window.png)
 
@@ -104,7 +104,7 @@ You can reopen the window again from the main menu by going to **View | Tool Win
 
 ![Reopen Dependency Matrix](dsm.png)
 
-And remember that all windows can be opened from **Recent Files** <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) as well.
+And remember that all windows can be opened from Recent Files <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) as well.
 
 ![Reopen Dependency Matrix](recent-files-dsm.png)
 

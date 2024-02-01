@@ -27,7 +27,7 @@ I will provide necessary credentials like host, port, username, password & datab
 
 ![step2](./steps/step2.png)
 
-I will click on **Test Connection**, just to verify everything is working fine.
+I will click **Test Connection**, just to verify everything is working fine.
 
 Once the connection is successful, I will click on **Apply** and then **OK**.
 
@@ -37,7 +37,7 @@ You can observe that there are no tables, so let’s begin by creating our datab
 
 # Database Connection
 
-I will create a **db.py** file and do the necessary imports from sqlalchemy and the config file from where I will need the environment variables like the username, password etc.
+I will create a `db.py` file and do the necessary imports from sqlalchemy and the config file from where I will need the environment variables like the username, password etc.
 
 ![step4](./steps/step4.png)
 
@@ -95,7 +95,7 @@ We are done with the db config part, next we need to deal with something called 
 
 It basically performs schema migrations whenever we add (or drop) tables or columns from our databases.
 
-According to the FastAPI docs: _A **"migration"** is the set of steps needed whenever you change the structure of your SQLAlchemy models, add a new attribute, etc. to replicate those changes in the database, add a new column, a new table, etc._
+According to the FastAPI docs: _A "migration" is the set of steps needed whenever you change the structure of your SQLAlchemy models, add a new attribute, etc. to replicate those changes in the database, add a new column, a new table, etc._
 
 To know more about migrations, check out this [link](https://fastapi.tiangolo.com/tutorial/sql-databases/).
 
@@ -109,7 +109,7 @@ After successfully installing alembic, we will move ahead with initializing the 
 
 # Alembic Setup
 
-I am going to type **“alembic init alembic”**.
+I am going to type _alembic init alembic_.
 
 ```
 alembic init alembic
@@ -117,9 +117,9 @@ alembic init alembic
 
 ![step8](./steps/step8.png)
 
-It creates a directory named **alembic** in the project root, along-with few files and a subdirectory named **versions** which keeps track of migrations files.
+It creates a directory named _alembic_ in the project root, along-with few files and a subdirectory named _versions_ which keeps track of migrations files.
 
-We are going to update the database configuration in the **env.py** file.
+We are going to update the database configuration in the `env.py` file.
 
 ![step9](./steps/step9.png)
 
@@ -246,18 +246,18 @@ I am going to create a class called `User` which is going to inherit `Base`. My 
 
 I will define the necessary columns like id, name, email, password.
 
-- **“Id”** will be the primary key and gets auto-incremented on every new row insert.
-- **“Name”** will be a string with max length of 50.
-- **“Email”** will be a string but with a unique index.
-- **“Password”** will also be a string with max 255 characters.
+- “Id will be the primary key and gets auto-incremented on every new row insert.
+- “Name will be a string with max length of 50.
+- “Email will be a string but with a unique index.
+- “Password will also be a string with max 255 characters.
 
 ![step16](./steps/step16.png)
 
 We won’t be storing passwords as plain-text, it will be stored in encrypted format.
 
-For encrypting the password, I will create a separate file called **hashing**, where I will be writing the encryption logic.
+For encrypting the password, I will create a separate file called _hashing_, where I will be writing the encryption logic.
 
-We are going to use the **passlib** package. You can see it has been mentioned in the FastAPI documentation as well.
+We are going to use the _passlib_ package. You can see it has been mentioned in the FastAPI documentation as well.
 
 ![step17](./steps/step17.png)
 
@@ -271,7 +271,7 @@ Let's install the package.
 pip install passlib[argon2]
 ```
 
-Once the installation is complete, update the **requirements.txt** file.
+Once the installation is complete, update the `requirements.txt` file.
 
 Next, I will move to the hashing file and do the necessary imports from the passlib library.
 
@@ -336,7 +336,7 @@ class User(Base):
 
 We are done with the implementation for our user model. Next, we are going to create our first migration.
 
-But before that, I need to register the model in the environment (**env.py**), so it can be tracked easily.
+But before that, I need to register the model in the environment (`env.py`), so it can be tracked easily.
 
 ![step20](./steps/step20.png)
 
@@ -362,7 +362,7 @@ alembic upgrade head
 
 ![step23](./steps/step23.png)
 
-Let me check in the **Database Explorer** and verify that new tables are appearing.
+Let me check in the _Database Explorer_ and verify that new tables are appearing.
 
 ![step24](./steps/step24.png)
 

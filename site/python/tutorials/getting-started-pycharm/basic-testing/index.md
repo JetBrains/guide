@@ -30,7 +30,7 @@ We can create our test file and get PyCharm to create our Test Source Root at th
 
 ![test-file-creation.png](test-file-creation.png)
 
-You can also tell PyCharm that this new folder is the root for all your tests in this project by right-clicking on the newly created `test` folder and selecting **Mark Directory as** > **Test Sources Root**.
+You can also tell PyCharm that this new folder is the root for all your tests in this project by right-clicking on the newly created `test` folder and selecting **Mark Directory as > Test Sources Root**.
 
 PyCharm will generate the empty test file for us, but let’s open it in the right split so we can see both our class and our test. You can do that by selecting the file and then using <kbd>⇧⏎</kbd> (macOS) / <kbd>Shift+Enter</kbd> (Windows/Linux).
 

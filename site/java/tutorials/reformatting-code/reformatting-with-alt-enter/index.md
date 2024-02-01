@@ -18,7 +18,7 @@ In this code snippet, let's say you want your `for` loop to have curly braces. Y
 
 When you press **Adjust code style settings** IntelliJ IDEA will do two things. Firstly, it will show you a preview of the code reformatted according to your current reformatting rules (more on that in the next step), secondly it will show you the settings that apply to that bit of code.
 
-You can go to the **Wrapping and Braces** tab and change **Force Braces** to _Always_.
+You can go to the _Wrapping and Braces_ tab and change **Force Braces** to _Always_.
 
 ![Force Braces for our For Loop](force-braces.png)
 

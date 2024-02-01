@@ -22,11 +22,11 @@ DataGrip is a database management environment for developers. It is designed to 
 
 All of DataGrip’s features are also available in many other IDEs from JetBrains like IntelliJ IDEA, PhpStorm, PyCharm, RubyMine, Rider and GoLand.
 
-I will goto the **database** section. Click on the **plus (+)** button then hover to **Data Source** and **PostgreSQL**.
+I will goto the _database_ section. Click **+** and then hover _Data Source_ and _PostgreSQL_.
 
 ![datagrip_postgres](steps/step1.png)
 
-If you receive any message like **“Download missing driver files”** then make sure to download it.
+If you receive any message like _“Download missing driver files”_ then make sure to download it.
 
 ![datagrip_postgres_2](steps/step2.png)
 
@@ -34,7 +34,7 @@ I will provide a name in the data source which will act as an identifier. Make s
 
 ![datagrip_postgres_3](steps/step3.png)
 
-After filling in all the necessary information, click on **Test Connection**.
+After filling in all the necessary information, click **Test Connection**.
 
 As you can see in the following image, we received a success response: the connection has been successfully established.
 
@@ -44,17 +44,17 @@ This is optional, as we are currently connecting to our Postgres RDS instance _d
 
 ![datagrip_postgres_5](steps/step5.png)
 
-After the configuration has been setup, I will click on **Apply** and then **OK**.
+After the configuration has been setup, I will click **Apply** > **OK**.
 
 As of now, there are no tables. I will connect the PostgreSQL database with our application, then perform migration.
 
 ![datagrip_postgres_6](steps/step6.png)
 
-I will remove the **db.sqlite3** file, as we don’t require it now.
+I will remove the `db.sqlite3` file, as we don’t require it now.
 
 ![remove_sqlite](steps/step7.png)
 
-Next, I will move to the **settings.py** file where I will change the **DATABASES** settings and provide the required information.
+Next, I will move to the `settings.py` file where I will change the _DATABASES_ settings and provide the required information.
 
 We will be passing our information through environment variables: much better than plain text. From a security standpoint, I would recommend to
 use [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) or
@@ -62,11 +62,11 @@ use [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) or
 
 ![django_db_settings](steps/step8.png)
 
-I will also pass the **DEBUG** and **SECRET_KEY** information from the environment variable. Make sure to set **DEBUG** to **False** when you are running a Django application in a production server. I have seen many people make these common mistakes, and they don’t even rotate their Django secret keys.
+I will also pass the _DEBUG_ and _SECRET_KEY_ information from the environment variable. Make sure to set _DEBUG_ to _False_ when you are running a Django application in a production server. I have seen many people make these common mistakes, and they don’t even rotate their Django secret keys.
 
 ![django_db_settings_2](steps/step9.png)
 
-I can even pass **ALLOWED_HOSTS** in the environment variable. It's fine to use it directly. You can see I am passing an **asterisk(\*)** which means my application can be accessed from anywhere. It’s completely fine during development but definitely not a good practice when you are running an application in a production server. Make sure to provide permitted domains which can access your backend apps.
+I can even pass _ALLOWED_HOSTS_ in the environment variable. It's fine to use it directly. You can see I am passing an _asterisk(\*)_ which means my application can be accessed from anywhere. It’s completely fine during development but definitely not a good practice when you are running an application in a production server. Make sure to provide permitted domains which can access your backend apps.
 
 Before deploying your application on the production server, make sure you follow the deployment checklist as provided in the Django documentation.
 
@@ -75,7 +75,7 @@ Reference:
 - [Deployment checklist](https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/)
 - [Security in Django](https://docs.djangoproject.com/en/3.1/topics/security/)
 
-I have successfully modified the changes in **settings.py** file. I will replicate the same changes by adding the environment variables in my PyCharm IDE.
+I have successfully modified the changes in `settings.py` file. I will replicate the same changes by adding the environment variables in my PyCharm IDE.
 
 ![ide_env_variables](steps/step10.png)
 
@@ -100,11 +100,11 @@ different places of our IDE.
 
 We are done with setting up the environment variables. Next, I will be migrating the database changes.
 
-I will click on **Tools** and then **Run manage.py Task**
+I will click **Tools** > **Run manage.py Task**
 
 ![django_manage_task](steps/step17.png)
 
-I will type **migrate** command and press enter and all the new tables will be successfully created in our database.
+I will type _migrate_ command and press enter and all the new tables will be successfully created in our database.
 
 ![migrate_command](steps/step18.png)
 

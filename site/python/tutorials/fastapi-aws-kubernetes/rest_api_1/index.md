@@ -29,7 +29,7 @@ Keep in mind that Pydantic data class is a drop-in replacement.
 
 ![step1](./steps/step1.png)
 
-Coming to benchmarks, Pydantic is very fast compared to other validation libraries. You can observe that `django-rest-framework` is **12.3x** slower along-with `marshmallow` which is **2.4x** slower.
+Coming to benchmarks, Pydantic is very fast compared to other validation libraries. You can observe that `django-rest-framework` is _12.3x_ slower along-with `marshmallow` which is _2.4x_ slower.
 
 You don’t need to install pydantic separately, it’s already bundled with FastAPI.
 
@@ -39,9 +39,9 @@ Let me go back to the IDE, and create a few files which I will explain their usa
 
 # Schema Definition
 
-In the **schema.py** file, We are going to write our pydantic models.
+In the `schema.py` file, We are going to write our pydantic models.
 
-Let me do the necessary imports. I will create a class **User** which imports **BaseModel**.
+Let me do the necessary imports. I will create a class _User_ which imports _BaseModel_.
 
 As from the pydantic documentation, The primary means of defining objects in pydantic is via models _(models are simply classes which inherit from BaseModel)_.
 
@@ -49,7 +49,7 @@ As from the pydantic documentation, The primary means of defining objects in pyd
 
 As you can see we have created three fields: `name`, `email`, `password`.
 
-**Name** is `constr` which is basically a **Constrained Type**. It’s possible to define primitive types that have more constraints on their values. The
+**Name** is `constr` which is basically a _Constrained Type_. It’s possible to define primitive types that have more constraints on their values. The
 str must have at least 2 characters and max 50 characters.
 
 Email requires **[email-validator](https://pypi.org/project/email-validator/)** to be installed; the input string must be a valid email address.
@@ -77,7 +77,7 @@ Our schema has been successfully defined, now switch back to **router.py** file.
 
 Once your application starts growing up, you might need to place your path operations in a specific file like what we are going to do in our `router.py` file. This helps better organize your code and focus only on the user routes.
 
-We are going to import the **APIRouter** and create an instance for it.
+We are going to import the _APIRouter_ and create an instance for it.
 
 I will also do the necessary imports apart from api router like `Depends`, `status`, `Response` and `HTTPException` which
 will be required.
@@ -86,7 +86,7 @@ I am also going to do imports from `sqlalchemy`, `services`, `validator`, `schem
 
 Don’t worry about How I will be writing the implementation in the above files which I mentioned like services and validator.
 
-As you can see on line number **8**, we are going to create an instance of our `APIRouter`.
+As you can see on line number 8, we are going to create an instance of our `APIRouter`.
 
 ![step6](./steps/step6.png)
 
@@ -193,7 +193,7 @@ Looks like I missed something. I missed adding the router decorator to our funct
 
 It’s going to be a `POST` method, pointing at / slash path and 201 status code will be returned in response.
 
-**router.py**
+`router.py`
 
 ```python
 

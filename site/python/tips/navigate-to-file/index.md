@@ -21,8 +21,8 @@ Navigating your project files is a chore. Expanding folders and subfolders, scro
 
 Wouldn't it be great if your tool knew everything about every file, and let you just jump to things by typing?
 
-The `Navigate to File` action <kbd>⌘⇧O</kbd> (macOS) / <kbd>Ctrl+Shift+N</kbd> (Windows/Linux) makes this actually...fun. The non-disruptive popup appears and you just start typing parts of the filename until you see the file you're looking for. No trees, no mouse.
+The Navigate to File action <kbd>⌘⇧O</kbd> (macOS) / <kbd>Ctrl+Shift+N</kbd> (Windows/Linux) makes this actually...fun. The non-disruptive popup appears and you just start typing parts of the filename until you see the file you're looking for. No trees, no mouse.
 
 Use the same hump-case "speed search" syntax to filter the listing with parts of filename fragments. Use slashes to indicate that a file should be in part of the directory structure. Click the checkbox to look outside of your project files, into your dependencies.
 
-If you want to jump to a file, `Navigate to File` is a speedy, non-disruptive option.
+If you want to jump to a file, Navigate to File is a speedy, non-disruptive option.

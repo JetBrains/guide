@@ -18,4 +18,4 @@ completion list.
 
 **How to use:**
 
-In _Settings/Preferences | Go | Imports_ you can add as many as you want import statements that will be excluded from code completion and auto-import.
+In **Settings/Preferences | Go | Imports** you can add as many as you want import statements that will be excluded from code completion and auto-import.

@@ -25,9 +25,9 @@ Make sure before proceeding, you have installed the [AWS Command Line](https://a
 
 # eksctl
 
-There is one more application we need to install in our system and that is **eksctl**. It is the official command line tool for EKS and helps in managing clusters in EKS, developed by [WeaveWorks](https://www.weave.works/) and written in **Go**.
+There is one more application we need to install in our system and that is _eksctl_. It is the official command line tool for EKS and helps in managing clusters in EKS, developed by [WeaveWorks](https://www.weave.works/) and written in Go.
 
-Make sure you have both **kubectl** and **eksctl** in your system, and also we expect from the audience they have previous working experience in AWS.
+Make sure you have both _kubectl_ and _eksctl_ in your system, and also we expect from the audience they have previous working experience in AWS.
 
 ![step2](./steps/step2.png)
 
@@ -68,7 +68,7 @@ We have successfully configured.
 
 Next, we will go to ECR which is the [Elastic Container Registry](https://aws.amazon.com/ecr/). We will push our Docker image to our ECR repository. I am actually trying to cover the use case when some people out there want to work with a private registry instead of using a public registry like DockerHub.
 
-I will create a repository and name it **fastapi-ecommerce**. Visibility is going to be **private**.
+I will create a repository and name it _fastapi-ecommerce_. Visibility is going to be **private**.
 
 ![step9](./steps/step9.png)
 
@@ -76,7 +76,7 @@ I will create a repository and name it **fastapi-ecommerce**. Visibility is goin
 
 Repository is created, let me push the Docker image to ECR. But before pushing we need to authenticate our credentials and after that only we would be able to push the image to AWS.
 
-Once you open the repository, on the top right you will see a link appearing **“View push commands”**. I am going to click on that.
+Once you open the repository, on the top right you will see a link appearing **View push commands**. I am going to click on that.
 
 ![step11](./steps/step11.png)
 
@@ -126,11 +126,11 @@ I will come back to PyCharm and create a directory called **eks**.
 
 ![step24](./steps/step24.png)
 
-I will create a new file and name it **cluster.yml**.
+I will create a new file and name it `cluster.yml`.
 
-We are going to create a three node cluster and the good part is the **[control plane](https://kubernetes.io/docs/concepts/overview/components/)** is taken care of by AWS itself.
+We are going to create a three node cluster and the good part is the [control plane](https://kubernetes.io/docs/concepts/overview/components/) is taken care of by AWS itself.
 
-Just for your information EKS is not a free service. You pay **$0.10** per hour for each Amazon EKS cluster that you create even if you don’t use it and separate cost of instances which are acting as nodes; their costs are different based on instance types.
+Just for your information EKS is not a free service. You pay _$0.10_ per hour for each Amazon EKS cluster that you create even if you don’t use it and separate cost of instances which are acting as nodes; their costs are different based on instance types.
 
 These are expensive services, make sure you have some credits before going ahead.
 
@@ -259,7 +259,7 @@ kubectl get nodes --kubeconfig=fastapi-demo
 
 ![step34](./steps/step34.png)
 
-You can observe three nodes are running and the operating system is backed by **Amazon Linux 2**. The nodes are completely private, you can observe the internal IP and there is no external IP exposed.
+You can observe three nodes are running and the operating system is backed by _Amazon Linux 2_. The nodes are completely private, you can observe the internal IP and there is no external IP exposed.
 
 # OIDC
 
@@ -286,7 +286,7 @@ The OIDC provider is successfully created.
 
 Next, we are going to create a Security Group for Postgres database. This will be required when we will be launching the RDS database.
 
-I will goto **VPC** and then under **Security** you will find **Security Groups**.
+I will goto **VPC** and then under _Security_ you will find _Security Groups_.
 
 ![step36](./steps/step36.png)
 
@@ -300,7 +300,7 @@ Under **Inbound Rules**, I will select Postgres which will be running on port 54
 
 ![step39](./steps/step39.png)
 
-Next we will move to RDS where we will be creating our **Subnet Group**.
+Next we will move to RDS where we will be creating our _Subnet Group_.
 
 ![step40](./steps/step40.png)
 
@@ -334,7 +334,7 @@ We will disable the storage autoscaling.
 
 ![step47](./steps/step47.png)
 
-Under **Connectivity**, choose **fastapi-demo** cluster, and automatically it has picked our custom rds eks db subnet group.
+Under _Connectivity_, choose **fastapi-demo** cluster, and automatically it has picked our custom rds eks db subnet group.
 
 Public access will be set to No. Kind of extra precaution no one can access our db instance outside our cluster.
 
@@ -366,7 +366,7 @@ It will take a few minutes to initialize our new db. We will come back to this l
 
 Coming back to the PyCharm Terminal, I am going to create the role based access control (RBAC) for our ingress controller.
 
-A **RoleBinding** grants permissions within a specific namespace whereas a **ClusterRoleBinding** grants that access cluster-wide.
+A _RoleBinding_ grants permissions within a specific namespace whereas a _ClusterRoleBinding_ grants that access cluster-wide.
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/master/docs/examples/rbac-role.yaml --kubeconfig=fastapi-demo
@@ -445,13 +445,13 @@ Reference:
 
 - [https://kubernetes.io/docs/reference/access-authn-authz/rbac/](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 
-Next, I will go to IAM and create an **AWS Load Balancer Policy**.
+Next, I will go to IAM and create an _AWS Load Balancer Policy_.
 
 ![step55](./steps/step55.png)
 
 I already have the IAM policy file, you can take it directly from my repository placed under the EKS directory. I will copy and paste the JSON.
 
-**eks/utils/iam-policy.json**
+`eks/utils/iam-policy.json`
 
 ```json
 {
@@ -603,13 +603,13 @@ There is a warning coming up in the visual editor, I will remove elb and add it 
 
 As you can see I am specifying resources to "all resources", but it’s prompting me as a best practice, define permissions for only specific resources.
 
-I completely agree to that point, as this is a tutorial I am not getting too strict but **please follow the concept of the least privilege**.
+I completely agree to that point, as this is a tutorial I am not getting too strict but _please follow the concept of the least privilege_.
 
 ![step61](./steps/step61.png)
 
 # IAM Service Account
 
-Next, I am going to create **IAM service account**. You can associate an IAM role with a Kubernetes service account. This service account can then provide AWS permissions to the containers in any pod that uses that service account.
+Next, I am going to create _IAM service account_. You can associate an IAM role with a Kubernetes service account. This service account can then provide AWS permissions to the containers in any pod that uses that service account.
 
 Reference:
 
@@ -657,7 +657,7 @@ Reference:
 
 You can check out the website for more information related to deployment, configuration etc.
 
-This project was formerly known as **"AWS ALB Ingress Controller"**, and later rebranded to **"AWS Load Balancer Controller"**.
+This project was formerly known as _AWS ALB Ingress Controller_, and later rebranded to **"AWS Load Balancer Controller"**.
 
 I will go ahead and apply the ingress controller. A copy of this controller file is placed in my repository you can check for more reference.
 
@@ -668,7 +668,7 @@ $ kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ing
 $ kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/master/docs/examples/alb-ingress-controller.yaml --kubeconfig=fastapi-demo
 ```
 
-**eks/utils/alb-ingress-controller.yaml**
+`eks/utils/alb-ingress-controller.yaml`
 
 ```yaml
 # Application Load Balancer (ALB) Ingress Controller Deployment Manifest.
@@ -746,7 +746,7 @@ spec:
 
 Ingress Controller has been created, but we need to update some config which is basically the cluster name.
 
-I am directly going to live edit the deployment file, the default editor which is picked is vim, but I am using nano, completely your choice. To use your favorite editor by default, set the environment variable **KUBE_EDITOR**, even you can use sublime text, notepad etc.
+I am directly going to live edit the deployment file, the default editor which is picked is vim, but I am using nano, completely your choice. To use your favorite editor by default, set the environment variable _KUBE_EDITOR_, even you can use sublime text, notepad etc.
 
 ```bash
 kubectl edit deployment alb-ingress-controller -n kube-system --kubeconfig=fastapi-demo
@@ -754,9 +754,9 @@ kubectl edit deployment alb-ingress-controller -n kube-system --kubeconfig=fasta
 
 ![step67](./steps/step67.png)
 
-The controller is deployed in the **kube-system** namespace.
+The controller is deployed in the _kube-system_ namespace.
 
-Under spec, I will provide the cluster name **fastapi-demo**.
+Under spec, I will provide the cluster name _fastapi-demo_.
 
 ![step68](./steps/step68.png)
 
@@ -784,7 +784,7 @@ For more information, visit the below link:
 
 - [https://aws.amazon.com/premiumsupport/knowledge-center/eks-vpc-subnet-discovery/](https://aws.amazon.com/premiumsupport/knowledge-center/eks-vpc-subnet-discovery/)
 
-I will tag all the subnets. The **shared** value allows more than one cluster to use the subnet.
+I will tag all the subnets. The _shared_ value allows more than one cluster to use the subnet.
 
 ```
 kubernetes.io/cluster/fastapi-demo : shared
@@ -800,17 +800,17 @@ Once, we are done with tagging all subnets, I will come back to RDS to check the
 
 # K8s Manifests
 
-The db is now available. I am going to copy the **endpoint**. But before that I will create a folder called **“deploy”** under **eks**.
+The db is now available. I am going to copy the _endpoint_. But before that I will create a folder called **deploy** under _eks_.
 
 ![step73](./steps/step73.jpg)
 
 ![step74](./steps/step74.png)
 
-I am going to create a new file and name it **db-service.yml**.
+I am going to create a new file and name it `db-service.yml`.
 
 ![step75](./steps/step75.png)
 
-We are going to create an **ExternalName** Service.
+We are going to create an _ExternalName_ Service.
 
 **eks/deploy/rds/db-service.yml**
 
@@ -824,11 +824,11 @@ spec:
   externalName: <RDS_ENDPOINT_URL>
 ```
 
-Services with type **ExternalName** work as other regular services, but when you want to access that service name, instead of returning cluster ip of this service, it returns **CNAME** record with value that is mentioned in externalName which in this case is the RDS endpoint.
+Services with type _ExternalName_ work as other regular services, but when you want to access that service name, instead of returning cluster ip of this service, it returns _CNAME_ record with value that is mentioned in externalName which in this case is the RDS endpoint.
 
 ![step76](./steps/step76.png)
 
-I will be doing the same operation for Redis as well. For redis we will be using the **[ElastiCache](https://aws.amazon.com/elasticache/)** service provided by AWS.
+I will be doing the same operation for Redis as well. For redis we will be using the [ElastiCache](https://aws.amazon.com/elasticache/) service provided by AWS.
 
 ![step77](./steps/step77.png)
 
@@ -846,11 +846,11 @@ spec:
   externalName: <ELASTICACHE_ENDPOINT_URL>
 ```
 
-Let’s go to **ElastiCache** and create our redis instance.
+Let’s go to ElastiCache and create our redis instance.
 
 ![step78](./steps/step78.png)
 
-Same as usual I will create a private subnet group for redis (**redis-eks-subnetgroup**), the same we did for postgres, three private subnets. We are not covering this, if you have any confusion then follow the postgres subnet group setup. It's going to be same for elasticache as well.
+Same as usual I will create a private subnet group for redis (_redis-eks-subnetgroup_), the same we did for postgres, three private subnets. We are not covering this, if you have any confusion then follow the postgres subnet group setup. It's going to be same for elasticache as well.
 
 ![redis_eks_subnet_group](./steps/redis_eks_subnet_group.png)
 
@@ -860,9 +860,9 @@ I also need to create a custom security group for redis.
 
 ![step80](./steps/step80.png)
 
-I will choose the version **5.0.6**
+I will choose the version _5.0.6_
 
-Make sure the node type is **t2.micro**, elasticache is an expensive service, be careful with that.
+Make sure the node type is _t2.micro_, elasticache is an expensive service, be careful with that.
 
 Set replicas to 1 and uncheck Multi-AZ. Encryption I am leaving it as unchecked, completely your choice.
 
@@ -886,7 +886,7 @@ I will copy the other services which we have done earlier when working with kube
 
 I need to replace the image url and this time we will be pointing to ECR Container Registry url instead of DockerHub.
 
-**eks/deploy/code/deployment.yml**
+`eks/deploy/code/deployment.yml`
 
 ```yaml
 apiVersion: apps/v1
@@ -928,7 +928,7 @@ spec:
             periodSeconds: 15
 ```
 
-**eks/deploy/code/service.yml**
+`eks/deploy/code/service.yml`
 
 ```yaml
 apiVersion: v1
@@ -946,9 +946,9 @@ spec:
       targetPort: 5000
 ```
 
-The service file will be running on port 5000, and you can see this needs to be a **NodePort**. Not a cluster IP because traffic reaching the ALB (Application Load Balancer) is routed to NodePort for your Service and then proxied to your pods.
+The service file will be running on port 5000, and you can see this needs to be a _NodePort_. Not a cluster IP because traffic reaching the ALB (Application Load Balancer) is routed to NodePort for your Service and then proxied to your pods.
 
-**eks/deploy/code/secret.yml**
+`eks/deploy/code/secret.yml`
 
 ```yaml
 apiVersion: v1
@@ -967,7 +967,7 @@ data:
   REDIS_DB: MA== # 0
 ```
 
-**eks/deploy/celery/deployment.yml**
+`eks/deploy/celery/deployment.yml`
 
 ```yaml
 apiVersion: apps/v1
@@ -995,7 +995,7 @@ spec:
           name: celery-container
 ```
 
-**eks/deploy/celery/secret.yml**
+`eks/deploy/celery/secret.yml`
 
 ```yaml
 apiVersion: v1
@@ -1010,7 +1010,7 @@ data:
   REDIS_DB: MA== # 0
 ```
 
-**eks/deploy/job/migration.yml**
+`eks/deploy/job/migration.yml`
 
 ```yaml
 apiVersion: batch/v1
@@ -1033,17 +1033,17 @@ spec:
 
 ## Ingress
 
-Next, we are going to create an ingress. This is something which we did not do in our local system but indeed we need it here. In Kubernetes, an Ingress is an **object that allows access to your Kubernetes services from outside the Kubernetes cluster** typically via HTTPS/HTTP. With Ingress, you can easily set up rules for routing traffic without creating a bunch of Load Balancers or exposing each service on the node.
+Next, we are going to create an ingress. This is something which we did not do in our local system but indeed we need it here. In Kubernetes, an Ingress is an _object that allows access to your Kubernetes services from outside the Kubernetes cluster_ typically via HTTPS/HTTP. With Ingress, you can easily set up rules for routing traffic without creating a bunch of Load Balancers or exposing each service on the node.
 
 ![step85](./steps/step85.png)
 
-From the point of view of a Kubernetes pod, **ingress** is incoming traffic to the pod, and **egress** is outgoing traffic from the pod.
+From the point of view of a Kubernetes pod, _ingress_ is incoming traffic to the pod, and **egress** is outgoing traffic from the pod.
 
 As you can observe from the file, carefully see the data being passed in the annotations.
 
 These are a few values you must have definitely observed when you have created an Application Load Balancer in AWS.
 
-**eks/deploy/ingress/ingress.yml**
+`eks/deploy/ingress/ingress.yml`
 
 ```yaml
 apiVersion: extensions/v1beta1
@@ -1084,7 +1084,7 @@ We are doing some health checks and looking for a success response code of 200.
 
 The listening ports are 80 and 443.
 
-Observing line number 18, we need to replace the certificate ARN and for that we need to create a new certificate in **[AWS Certificate Manager](https://aws.amazon.com/certificate-manager/)**. We are going to do
+Observing line number 18, we need to replace the certificate ARN and for that we need to create a new certificate in [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/). We are going to do
 it in a while.
 
 ![step86](./steps/step86.png)
@@ -1093,7 +1093,7 @@ Under **Rules** we are performing two operations, one is the SSL redirection whi
 
 ![step87](./steps/step87.png)
 
-Next, we will be sending the traffic to our **ecommerce-service** which is running on port **5000** which indeed points to FastAPI backend.
+Next, we will be sending the traffic to our _ecommerce-service_ which is running on port _5000_ which indeed points to FastAPI backend.
 
 Just imagine in your head that NGINX is proxying requests internally to your backend service. This is what we are trying to achieve through the ingress.
 
@@ -1130,15 +1130,15 @@ Reference:
 
 - [Automatic Clean-up for Finished Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/)
 
-Now, only one thing is remaining and that is the **ingress**. But to move ahead with that we need to make sure we have domain name setup in **Route53** along-with an SSL certificate generated by the **Certificate Manager**.
+Now, only one thing is remaining and that is the _ingress_. But to move ahead with that we need to make sure we have domain name setup in _Route53_ along-with an SSL certificate generated by the _Certificate Manager_.
 
-I will now open Route53 and click on **Create hosted zone**.
+I will now open Route53 and click on _Create hosted zone_.
 
 ![step92](./steps/step92.png)
 
 ![step93](./steps/step93.png)
 
-I will provide the domain name: **mukul.xyz**, make sure the hosted zone should be a **public hosted zone**.
+I will provide the domain name: `mukul.xyz`, make sure the hosted zone should be a **public hosted zone**.
 
 ![step94](./steps/step94.png)
 
@@ -1238,11 +1238,11 @@ Let me quickly show you the load balancer address where ingress is pointing to.
 
 Next, I will go to Route 53 and create a new record pointing to our website.
 
-We are not covering this, but you don’t need to do this manually; you can easily achieve this through **externalDNS** provided by Kubernetes.
+We are not covering this, but you don’t need to do this manually; you can easily achieve this through _externalDNS_ provided by Kubernetes.
 
-ExternalDNS is **a Kubernetes addon that configures public DNS servers with information about exposed Kubernetes services** to make them discoverable.
+ExternalDNS is _a Kubernetes addon that configures public DNS servers with information about exposed Kubernetes services_ to make them discoverable.
 
-We will create two records: **A** and **CNAME**.
+We will create two records: _A_ and _CNAME_.
 
 ![step119](./steps/step119.png)
 
@@ -1250,9 +1250,9 @@ We will create two records: A and CNAME
 
 The two records have been created successfully.
 
-The **A** record maps a name to one or more IP addresses when the IP is known and stable. Here we are pointing to the load balancer.
+The _A_ record maps a name to one or more IP addresses when the IP is known and stable. Here we are pointing to the load balancer.
 
-The **CNAME** record maps a name to another name. It should only be used when there are no other records on that name.
+The _CNAME_ record maps a name to another name. It should only be used when there are no other records on that name.
 
 ![step120](./steps/step120.png)
 
@@ -1292,7 +1292,7 @@ I hope you have already played with the Kubernetes plugin or checked out my prev
 
 ![step127](./steps/step127.png)
 
-I am just going to point the **kubeconfig** file to **fastapi-demo**, and then it works like a charm.
+I am just going to point the _kubeconfig_ file to _fastapi-demo_, and then it works like a charm.
 
 ![step128](./steps/step128.png)
 

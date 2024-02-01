@@ -13,6 +13,6 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/Svr-rcfJSyM"
 ---
 
-If you want to use preview features in the latest versions of Java in IntelliJ IDEA, you need to set the language level to "Preview".
+If you want to use preview features in the latest versions of Java in IntelliJ IDEA, you need to set the language level to _Preview_.
 
 Go to Project Structure, <kbd>⌘;</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+S</kbd> (Windows/Linux), make sure you have the correct JDK selected, and pick the "Preview" option from the Language Level dropdown.

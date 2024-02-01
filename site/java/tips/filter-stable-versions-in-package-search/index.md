@@ -12,4 +12,4 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/oSvjckoIUbM"
 ---
 
-You can filter out unstable versions in the Dependencies tool window by selecting the "Only stable" checkbox.
+You can filter out unstable versions in the Dependencies tool window by selecting the **Only stable** checkbox.

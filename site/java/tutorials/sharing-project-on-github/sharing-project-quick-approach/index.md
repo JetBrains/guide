@@ -39,7 +39,7 @@ Tip: if you have multiple GitHub accounts, you can [add your GitHub accounts](ht
 
 ### Creating a Repository on GitHub
 
-Now you can press **Enter** or click **Share**, IntelliJ IDEA will go ahead and create that repository on your GitHub profile.
+Now you can press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) or click **Share**, IntelliJ IDEA will go ahead and create that repository on your GitHub profile.
 
 ### Making Your First Commit
 

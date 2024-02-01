@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 
 Let’s look at comments on our Merge Request.
 
-We can add comments to the GitLab conversation. Comments on this page are comments that apply to the Merge Request as a whole, and not a specific piece of code. We can see these comments inside IntelliJ IDEA too. We might need to refresh our Merge Request window, either using the shortcut to **Refresh Reviews** <kbd>⌘R</kbd> (macOS) / <kbd>Ctrl+F5</kbd> (Windows/Linux) or by right-clicking the Merge Request window and selecting **Refresh Merge Request**.
+We can add comments to the GitLab conversation. Comments on this page are comments that apply to the Merge Request as a whole, and not a specific piece of code. We can see these comments inside IntelliJ IDEA too. We might need to refresh our Merge Request window, either using the shortcut to _Refresh Reviews_ <kbd>⌘R</kbd> (macOS) / <kbd>Ctrl+F5</kbd> (Windows/Linux) or by right-clicking the Merge Request window and selecting **Refresh Merge Request**.
 
 ![Comment from GitLab](comment-from-gitlab.png)
 

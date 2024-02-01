@@ -17,8 +17,7 @@ video: >-
   https://www.youtube.com/watch?v=OhNeN8diWb4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=109
 ---
 
-Want to focus your testing on just one test? Then you can
-launch the test under the cursor using a shortcut.
+Want to focus your testing on just one test? Then you can launch the test under the cursor using a shortcut.
 
 **How to use:**
 

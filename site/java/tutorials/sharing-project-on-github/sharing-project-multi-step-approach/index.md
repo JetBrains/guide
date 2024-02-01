@@ -19,13 +19,13 @@ Let’s assume you have a more complex project than Hello World and that you’r
 
 ### Creating a Local Repository
 
-You can check that your project isn't under version control by checking if you can see your Git tool window with **⌘9** (macOS), or **Alt+9** (Windows/Linux). If you can't see the Git tool window, your project is not yet a Git project.
+You can check that your project isn't under version control by checking if you can see your Git tool window with <kbd>⌘9</kbd> (macOS) / <kbd>Alt+9</kbd> (Windows/Linux). If you can't see the Git tool window, your project is not yet a Git project.
 
 To use Git as the version control for an IntelliJ IDEA project, go to **VCS > Enable Version Control Integration** and select Git from the drop-down menu.
 
 ![Enable Version Control Integration](enable-version-control-integration.png)
 
-IntelliJ IDEA will now create a Git repository in the root directory of the project. We also now have access to the Git tool window with **⌘9** (macOS), or **Alt+9** (Windows/Linux).
+IntelliJ IDEA will now create a Git repository in the root directory of the project. We also now have access to the Git tool window with <kbd>⌘9</kbd> (macOS) / <kbd>Alt+9</kbd> (Windows/Linux).
 
 If you open this, you can click on the [Console tab](https://www.jetbrains.com/help/idea/version-control-tool-window-console-tab.html) to see the Git commands that have been run and their result, or you can switch to the visual [Log tab](https://www.jetbrains.com/help/idea/log-tab.html). You can now also see that there's a `.git` folder in your project, either from the Project Window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux), or you can use IntelliJ IDEA’s terminal with <kbd>⌥F12</kbd> (macOS) / <kbd>Alt+F12</kbd> (Windows/Linux) to list the project’s files.
 

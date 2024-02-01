@@ -16,4 +16,4 @@ animatedGif:
   height: 300
 ---
 
-If you want to temporarily disable an ESLint rule, WebStorm can help you with that. Hover over the warning and select _Suppress for current line_.
+If you want to temporarily disable an ESLint rule, WebStorm can help you with that. Hover over the warning and select **Suppress for current line**.

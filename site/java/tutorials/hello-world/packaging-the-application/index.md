@@ -13,7 +13,7 @@ When the code is ready, we can [package our application in a JAR](https://www.je
 
 ### Creating an Artifact
 
-1. Press \*<kbd>⌘;</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+S</kbd> (Windows/Linux) to bring up the [Project Structure](https://www.jetbrains.com/help/idea/project-structure-dialog.html) dialog.
+1. Press <kbd>⌘;</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+S</kbd> (Windows/Linux) to bring up the [Project Structure](https://www.jetbrains.com/help/idea/project-structure-dialog.html) dialog.
 
 2. Select **Artifacts** from the left-hand menu and then press <kbd>+</kbd> (macOS) / <kbd>Plus</kbd> (Windows/Linux). Select **JAR** and then **From modules with dependencies**.
 

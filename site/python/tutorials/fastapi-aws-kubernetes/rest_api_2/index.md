@@ -121,7 +121,7 @@ Let’s move back again to the router and create our last endpoint **delete user
 
 The response class will be the base `Response` class. You can create your own custom response class or when creating a FastAPI class instance or an APIRouter you can specify which response class to use by default.
 
-**router.py**
+`router.py`
 
 ```python
 @router.delete('/{user_id}', status_code=status.HTTP_204_NO_CONTENT, response_class=Response)
@@ -130,7 +130,7 @@ async def delete_user_by_id(user_id: int, database: Session = Depends(db.get_db)
     return await services.delete_user_by_id(user_id, database)
 ```
 
-**services.py**
+`services.py`
 
 ```python
 async def delete_user_by_id(user_id, database):
@@ -147,7 +147,7 @@ We successfully created the four endpoints:
 - retrieving user by id
 - delete user
 
-**router.py**
+`router.py`
 
 ```python
 from typing import List
@@ -202,7 +202,7 @@ async def delete_user_by_id(user_id: int, database: Session = Depends(db.get_db)
     return await services.delete_user_by_id(user_id, database)
 ```
 
-**services.py**
+`services.py`
 
 ```python
 from typing import List, Optional
@@ -239,11 +239,11 @@ async def delete_user_by_id(user_id, database):
 
 Let’s re-test the delete feature.
 
-I will delete the user id **3**.
+I will delete the user id _3_.
 
 ![step13](./steps/step13.png)
 
-You can see I got the response **204**.
+You can see I got the response _204_.
 
 If I now try to retrieve the information for user id 3, it will raise an exception with a not found message.
 

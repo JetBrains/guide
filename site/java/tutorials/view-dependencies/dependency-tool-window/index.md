@@ -21,7 +21,7 @@ Alternatively, we can open it by clicking **Quick Launch** in the bottom-left an
 
 ![Quick Launch Dependencies](quick-launch-dependencies.png)
 
-Here we can see our project’s direct dependencies. Select "All Modules" to see the dependencies for all modules, or select an indivual module to see the dependencies for that specific module. The Dependencies tool window shows direct dependencies, and not their transitive dependencies.
+Here we can see our project’s direct dependencies. Select "All Modules" to see the dependencies for all modules, or select an individual module to see the dependencies for that specific module. The Dependencies tool window shows direct dependencies, and not their transitive dependencies.
 
 ![Dependency Tool Window](dependency-tool-window.png)
 

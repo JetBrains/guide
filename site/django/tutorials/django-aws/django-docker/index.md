@@ -22,15 +22,13 @@ When it comes to Docker, testing, and CI/CD pipelines -- these are subjects of t
 
 We will be doing a sneak peek into Docker, and I will show you how it makes our life easy.
 
-If you are interested to take your knowledge to the next level then get your hands on [Kubernetes](https://kubernetes.io/). It is an open-source system for
-automating deployment, scaling, and management of containerized applications.
+If you are interested to take your knowledge to the next level then get your hands on [Kubernetes](https://kubernetes.io/). It is an open-source system for automating deployment, scaling, and management of containerized applications.
 
 For this tutorial we will be focusing on using Docker.
 
 ## Dockerfile
 
-I am going to create a [Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) in the project root. A Dockerfile
-is a text document that contains all the commands a user could call on the command line to assemble an image.
+I am going to create a [Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) in the project root. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
 
 ![dockerfile](steps/step1.png)
 
@@ -59,12 +57,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 ```
 
-We will be using the Python 3.9 alpine image which will be pulled from [DockerHub](https://hub.docker.com/). DockerHub is a service
-provided by Docker for finding and sharing container images with your team. You can store public/private images
-in DockerHub, or you can go for AWS ECR (Elastic Container Registry).
+We will be using the Python 3.9 alpine image which will be pulled from [DockerHub](https://hub.docker.com/). DockerHub is a service provided by Docker for finding and sharing container images with your team. You can store public/private images in DockerHub, or you can go for AWS ECR (Elastic Container Registry).
 
-You may have observed that we are using the alpine image. One of the easiest steps to optimize your docker images is to use
-smaller base images. Alpine is a lightweight linux distribution designed for security and resource efficiency.
+You may have observed that we are using the alpine image. One of the easiest steps to optimize your docker images is to use smaller base images. Alpine is a lightweight linux distribution designed for security and resource efficiency.
 
 Next, I will be performing certain operations like :
 
@@ -76,16 +71,11 @@ Next, I will be performing certain operations like :
 
 ## Docker Compose
 
-I will be creating a new file called `docker-compose.yml` file. According to Docker: [Compose](https://docs.docker.com/compose/) is a
-tool for defining and running multi-container Docker applications. With Compose,
-you use a YAML file to configure your application's services. Then, with a single command, you create
-and start all the services from your configuration.
+I will be creating a new file called `docker-compose.yml` file. According to Docker: [Compose](https://docs.docker.com/compose/) is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application's services. Then, with a single command, you create and start all the services from your configuration.
 
-The compose file describes the services that make your app. As you can see the below image, there are 3 services : **nginx**, **web**, **db**.
+The compose file describes the services that make your app. As you can see the below image, there are 3 services : _nginx_, _web_, _db_.
 
-The compose file also describes which Docker images these services use, how they link together, and any volumes
-that might need to be mounted inside the containers. Finally, the compose file also describes which ports these
-services expose.
+The compose file also describes which Docker images these services use, how they link together, and any volumes that might need to be mounted inside the containers. Finally, the compose file also describes which ports these services expose.
 
 ![docker_compose_file](steps/step2.png)
 
@@ -128,14 +118,13 @@ volumes:
   postgres_data:
 ```
 
-- **nginx** : NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. [Igor Sysoev](https://en.wikipedia.org/wiki/Igor_Sysoev) originally wrote NGINX to solve the C10K problem, a term coined in 1999 to describe the difficulty that existing web servers experienced in handling large numbers (the 10K) of concurrent connections.
+- nginx: NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. [Igor Sysoev](https://en.wikipedia.org/wiki/Igor_Sysoev) originally wrote NGINX to solve the C10K problem, a term coined in 1999 to describe the difficulty that existing web servers experienced in handling large numbers (the 10K) of concurrent connections.
 
-- **web**: Under the web section we are going to run our Django application through Gunicorn. Gunicorn is a Python WSGI HTTP Server for UNIX. It's a pre-fork worker model. The Gunicorn server is broadly compatible with various web frameworks, simply implemented, light on server resources, and fairly speedy. If you are using Django 3 then you can also go ahead with an ASGI server like Uvicorn which is based on uvloop and httptools, with an emphasis on speed.
+- web: Under the web section we are going to run our Django application through Gunicorn. Gunicorn is a Python WSGI HTTP Server for UNIX. It's a pre-fork worker model. The Gunicorn server is broadly compatible with various web frameworks, simply implemented, light on server resources, and fairly speedy. If you are using Django 3 then you can also go ahead with an ASGI server like Uvicorn which is based on uvloop and httptools, with an emphasis on speed.
 
-- **db**: The db section is self-explanatory. We are going to use [PostgreSQL](https://www.postgresql.org/) as our datastore.
+- db: The db section is self-explanatory. We are going to use [PostgreSQL](https://www.postgresql.org/) as our datastore.
 
-Moving to the next topic, I will be creating a NGINX configuration file to proxy requests to our backend application. As you
-can see on the compose file at line number 8, we are mapping between a local path and the container path.
+Moving to the next topic, I will be creating a NGINX configuration file to proxy requests to our backend application. As you can see on the compose file at line number 8, we are mapping between a local path and the container path.
 
 ![docker_nginx_path](./steps/step3.png)
 
@@ -171,17 +160,17 @@ For your reference please check on line number 18 in the compose file. You can s
 
 ![env_file_compose](./steps/step5.png)
 
-Make sure to typecast your **DJANGO_SECRET_KEY** to iInteger.
+Make sure to typecast your _DJANGO_SECRET_KEY_ to iInteger.
 
 ![django_secret_key_int](./steps/step6.png)
 
-Install the **[gunicorn](https://pypi.org/project/gunicorn/)** package and update your `requirements.txt` file.
+Install the [gunicorn](https://pypi.org/project/gunicorn/) package and update your `requirements.txt` file.
 
 ```
 pip install gunicorn
 ```
 
-You can see the below image, at line number 126 make sure to add **STATIC_ROOT** in your **settings.py** file
+You can see the below image, at line number 126 make sure to add `STATIC_ROOT` in your `settings.py` file
 
 ![static_root](./steps/step7.png)
 
@@ -197,8 +186,7 @@ sudo docker-compose up -d  --build
 
 To know more about docker build, please visit the official [documentation](https://docs.docker.com/engine/reference/commandline/build/).
 
-This command is going to build and run our containers in the background. I haven’t added docker into the sudo group, so I need
-to mention it in the beginning of the command.
+This command is going to build and run our containers in the background. I haven’t added docker into the sudo group, so I need to mention it in the beginning of the command.
 
 As you can see the images are not present in our local machine, so it will pull those official images from the DockerHub.
 
@@ -211,7 +199,7 @@ Our containers have been successfully created. As you can see on the screen, it�
 Let me execute the basic common commands.
 
 - `python manage.py collectstatic` --> This command (collects up all your static files from each of your app folders (including the static
-  files for the admin app) and from any other folders you specify in **settings.py**, and copies them into **STATIC_ROOT**.
+  files for the admin app) and from any other folders you specify in `settings.py`, and copies them into `STATIC_ROOT`.
 
 - `python manage.py migrate` --> Run database migration
 
@@ -231,10 +219,6 @@ As we are using NGINX, that means it's running on default port 80. We don’t ne
 
 ![django_admin_docker](./steps/step11.png)
 
-Great ! Our application is successfully running inside a container. I hope you got a basic understanding of how we are running
-our application inside Docker. I know you must have a lot of doubts, but as I said in the beginning this is not a Docker course. If you
-want to know the ins and outs of Docker then I recommend checking out DevOps courses available on the
-internet focusing on Docker & Kubernetes.
+Great ! Our application is successfully running inside a container. I hope you got a basic understanding of how we are running our application inside Docker. I know you must have a lot of doubts, but as I said in the beginning this is not a Docker course. If you want to know the ins and outs of Docker then I recommend checking out DevOps courses available on the internet focusing on Docker & Kubernetes.
 
-In the upcoming video I will give a short walk-through of deploying our docker images in AWS ECR also
-known as Elastic Container Registry via GitHub Actions.
+In the upcoming video I will give a short walk-through of deploying our docker images in AWS ECR also known as Elastic Container Registry via GitHub Actions.

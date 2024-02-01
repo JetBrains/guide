@@ -17,7 +17,7 @@ animatedGif:
 
 **Where is my code?** 🧐
 
-More and more tool windows stealing our beloved editor real-estate. Use the _Hide all tool windows_ action to quickly hide and restore the currently shown tool windows. Another great alternative is our _Distraction Free_ mode! 🧠
+More and more tool windows stealing our beloved editor real-estate. Use the **Hide all tool windows** action to quickly hide and restore the currently shown tool windows. Another great alternative is our **Distraction Free** mode! 🧠
 
 ### See Also
 

@@ -21,7 +21,7 @@ Let's go ahead and make a change to the Java file and see if you get a new messa
 
 ![Run anything dialog box with Hello World](run-anything.png)
 
-3. Select your _HelloWorld JAR_ file and press **Enter**. In your [Run window](https://www.jetbrains.com/help/idea/run-tool-window.html) you should see that IntelliJ IDEA has run your application and printed out your new string. This means it rebuilt the JAR file prior to running the application.
+3. Select your _HelloWorld JAR_ file and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux). In your [Run window](https://www.jetbrains.com/help/idea/run-tool-window.html) you should see that IntelliJ IDEA has run your application and printed out your new string. This means it rebuilt the JAR file prior to running the application.
 
 ![Run window showing new output](new-output-string.png)
 

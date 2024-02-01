@@ -18,4 +18,4 @@ cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 
-With the _Refactor_ This popup, you don’t need to memorize all the refactorings WebStorm has, or their shortcuts: press <kbd>^T</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+T</kbd> (Windows/Linux) on Windows/Linux, and WebStorm will show you all the available refactorings in the current context.
+With the _Refactor This_ popup, you don’t need to memorize all the refactorings WebStorm has, or their shortcuts: press <kbd>^T</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+T</kbd> (Windows/Linux) on Windows/Linux, and WebStorm will show you all the available refactorings in the current context.

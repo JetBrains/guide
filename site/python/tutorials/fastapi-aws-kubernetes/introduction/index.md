@@ -52,7 +52,7 @@ FastAPI is developed by [Sebastian Ramirez](https://twitter.com/tiangolo), who i
 
 Image Credits : [kubernetes.io](https://kubernetes.io/)
 
-It’s not going to be only FastAPI, we are also going to play with Kubernetes, also known as **K8s**.
+It’s not going to be only FastAPI, we are also going to play with Kubernetes, also known as _K8s_.
 
 The [Kubernetes](https://kubernetes.io/) Project was open-sourced by Google in 2014 after using it to run production workloads at scale for more than a decade.
 

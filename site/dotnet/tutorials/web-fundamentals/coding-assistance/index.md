@@ -21,11 +21,11 @@ First up is code completion. Rider shows you **context-aware suggestions** as yo
 The IDE also makes it easy to keep your code error-free. For example, you’ll see green squiggly lines under typos. Hover over the highlighted issue to learn more about it. In the popup that appears, you’ll see a short description of the problem and a quick-fix for it if available.
 
 To see the full list of all the available actions in the current context, press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (VS Windows/Linux).
-From here, you can **choose the action you want to apply and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (VS Windows/Linux) to perform it**.
+From here, you can _choose the action you want to apply and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (VS Windows/Linux) to perform it_.
 
-What if you want to **look up the documentation for a symbol**? There’s no need to go to [MDN](https://developer.mozilla.org) for that! Just hover over that symbol or focus on it and press <kbd>F1</kbd>, and the IDE will show you the relevant documentation.
+What if you want to _look up the documentation for a symbol_? There’s no need to go to [MDN](https://developer.mozilla.org) for that! Just hover over that symbol or focus on it and press <kbd>F1</kbd>, and the IDE will show you the relevant documentation.
 
-Rider is great at cutting the amount of routine work you have to do. For example, you can **quickly convert a regular function to an arrow function**. Press <kbd>Alt+Enter</kbd> on the `function` keyword and select the corresponding intention.
+Rider is great at cutting the amount of routine work you have to do. For example, you can _quickly convert a regular function to an arrow function_. Press <kbd>Alt+Enter</kbd> on the `function` keyword and select the corresponding intention.
 
 There are plenty of intentions available! You can learn them gradually – click on the light bulb whenever you see it in the editor and see what the IDE has to offer. Or take a look at the full list of intentions in the settings, which you can reach from the intention.
 Intentions are available for every language supported by Rider - C#, F#, VB.NET, JavaScript, TypeScript, HTML, CSS, SQL, and many, many more.

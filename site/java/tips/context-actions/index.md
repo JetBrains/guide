@@ -39,4 +39,4 @@ Even if the code is working perfectly well, pressing <kbd>⌘⌥⏎</kbd> (macOS
 
 ![Alt Enter on errors](suggestions-on-working-code.png)
 
-Use **F2** to navigate to the next suggestion, or **Shift+F2** to navigate to the previous suggestion in the file.
+Use <kbd>F2</kbd> (macOS) / <kbd>F2</kbd> (Windows/Linux) to navigate to the next suggestion, or <kbd>⇧F2</kbd> (macOS) / <kbd>Shift+F2</kbd> (Windows/Linux) to navigate to the previous suggestion in the file.

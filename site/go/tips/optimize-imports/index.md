@@ -19,10 +19,10 @@ video: >-
   https://www.youtube.com/watch?v=6wZnk41gVEg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=73
 ---
 
-**Optimize Imports** helps you deal with unsorted imports and unused imports.
+_Optimize Imports_ helps you deal with unsorted imports and unused imports.
 
 **How to use:**
 
-**Optimize Imports** is enabled by default in _Reformat Code_.
+_Optimize Imports_ is enabled by default in _Reformat Code_.
 
 You can invoke it manually via <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux).

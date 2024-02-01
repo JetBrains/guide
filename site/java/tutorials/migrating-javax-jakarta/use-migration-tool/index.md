@@ -11,7 +11,7 @@ video: "https://youtu.be/mukr2Q_zBm4?start=463"
 
 One common question you might have at this stage is "why don't I just do a find and replace for `javax` to `jakarta`?" The answer is that not all `javax` packages have been migrated to the `jakarta` namespace. For example, `javax.transaction.xa` package is not using Jakarta.
 
-We're going to use IntelliJ IDEA's migration tool which was introduced in IntelliJ IDEA 2021.2 for the next steps. From the menu, navigate to **Refactor** > **Migrate Packages and Classes** > **Java EE to Jakarta EE.**
+We're going to use IntelliJ IDEA's migration tool which was introduced in IntelliJ IDEA 2021.2 for the next steps. From the menu, navigate to **Refactor > Migrate Packages and Classes > Java EE to Jakarta EE.**
 
 ![IntelliJ IDEA Refactoring Tool](javax-to-jakarta-migration-tool.png)
 

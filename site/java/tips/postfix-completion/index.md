@@ -27,4 +27,4 @@ Postfix completion is designed so that you append some abbreviation to the end o
 
 To see a full list of postfix abbreviations for your code, type "." (dot) and press the "up" arrow on the dropdown list of suggestions. The postfix completions can be found at the bottom of the code suggestions list.
 
-Find all available abbreviations **[Preferences/Settings | Editor | General | Postfix Completion](https://www.jetbrains.com/help/idea/settings-postfix-completion.html)**.
+Find all available abbreviations with **[Preferences/Settings | Editor | General | Postfix Completion](https://www.jetbrains.com/help/idea/settings-postfix-completion.html)**.

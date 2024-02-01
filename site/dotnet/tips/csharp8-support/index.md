@@ -22,7 +22,7 @@ animatedGif:
 
 Learning new language constructs with Rider is just a matter of hitting <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (VS Windows/Linux). Convert a `switch` statement to `switch` expression? <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (VS Windows/Linux)! Prefer compound assignments instead of simple assignments? <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (VS Windows/Linux)! Make use of `IAsyncDisposable` and `using` declarations? You know what – Alt-Enter! 🙃
 
-Note that most **quick-fixes can be applied in scopes**, for instance in the current method, type, file, or even for the whole solution.
+Note that most _quick-fixes can be applied in scopes_, for instance in the current method, type, file, or even for the whole solution.
 
 <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (VS Windows/Linux) – Probably the most important shortcut 🤓
 

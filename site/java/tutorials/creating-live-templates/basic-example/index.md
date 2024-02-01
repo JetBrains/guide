@@ -60,7 +60,7 @@ private void $METHOD_NAME$($ARGS$) {
 
 ![Invoking the private void method live template](prvm.png)
 
-11. Press **⏎** (macOS), **Enter** (Windows/Linux) to use the Live Template. The default value we entered for the variable $METHOD_NAME$ will be highlighted. Give your new method a name which overwrites the default value of `methodName` then press <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (Windows/Linux).
+11. Press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) to use the Live Template. The default value we entered for the variable $METHOD_NAME$ will be highlighted. Give your new method a name which overwrites the default value of `methodName` then press <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (Windows/Linux).
 12. Enter any arguments you want to pass in to your method and press <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (Windows/Linux) again.
 13. Your caret will now be in the correct location inside your new method to start typing code.
 

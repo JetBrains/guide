@@ -20,7 +20,7 @@ Hello everyone, welcome to the Django tutorial series. In this tutorial we are g
 
 Let’s first move to Security Groups under the VPC Management Console, where I will be creating a new security group for our EC2 instance.
 
-I am going to name it **UbuntuDesktop-SG**.
+I am going to name it _UbuntuDesktop-SG_.
 
 ![security_group](steps/step1.png)
 
@@ -30,7 +30,7 @@ Under **inbound rules** make sure you are able to connect to the instance throug
 
 I will be adding one more rule accepting connections from my IP address in port 8443.
 
-After adding the information, I will click on **Create security group**.
+After adding the information, I will click **Create security group**.
 
 There are many ways to securely connect to your instances, for example a bastion host, which is a special-purpose computer on a network specifically designed and configured to withstand attacks.
 
@@ -40,9 +40,9 @@ Reference:
 
 - [Best Practices for Security, Identity, & Compliance](https://aws.amazon.com/architecture/security-identity-compliance)
 
-Our security group has been successfully created. Now, I will move forward to edit the inbound rules for **"Postgres-Django-SG"** security group.
+Our security group has been successfully created. Now, I will move forward to edit the inbound rules for _"Postgres-Django-SG"_ security group.
 
-I will make sure to add **UbuntuDesktop-SG** in the inbound rules to accept requests in the port **5432**, and finally click on **Save rules**.
+I will make sure to add _UbuntuDesktop-SG_ in the inbound rules to accept requests in the port _5432_, and finally click **Save rules**.
 
 ![postgres_inbound_rule_1](steps/step3.png)
 
@@ -52,7 +52,7 @@ As you can see the below image, the security group has two rules attached: One a
 
 We are now done with the security groups. Now, I will navigate to the EC2 console where I am going to spin up our new server.
 
-I will click on the **Launch instance**.
+I will click on **Launch instance**.
 
 ![launch_instance](steps/step5.png)
 
@@ -60,12 +60,11 @@ I will click on the **Launch instance**.
 
 According to Amazon - NICE Desktop Cloud Visualization (DCV) is a high-performance remote display protocol that provides customers with a secure way to deliver remote desktops and application streaming from any cloud or data center to any device, over varying network conditions. With NICE DCV and Amazon EC2, customers can run graphics-intensive applications remotely on EC2 instances, and stream their user interface to simpler client machines, eliminating the need for expensive dedicated workstations.
 
-I will search for Ubuntu Desktop in AWS Marketplace. For this tutorial I will be using **Ubuntu Desktop 20.04 LTS Desktop with NICE DCV (Gaming Drivers)**.
+I will search for Ubuntu Desktop in AWS Marketplace. For this tutorial I will be using _Ubuntu Desktop 20.04 LTS Desktop with NICE DCV (Gaming Drivers)_.
 
 ![ami](steps/step6.png)
 
-NICE DCV supports both Windows and Linux remote environments. Native clients can support up to four monitors at 4K
-resolution each.
+NICE DCV supports both Windows and Linux remote environments. Native clients can support up to four monitors at 4K resolution each.
 
 There is no additional charge to use NICE DCV on Amazon EC2. You pay only for the EC2 resources.
 
@@ -75,35 +74,34 @@ The software provides a free trial for 5 days but still you will pay for the und
 As we are going to use gaming drivers, we need to use the GPU instance provided by AWS. GPU instances are not
 provided to every user, so you might need to create a support request to AWS to provision a GPU instance.
 
-For this tutorial, I will be using a **g4dn.xlarge** instance which provides 4vCPUs and 16GB of RAM.
+For this tutorial, I will be using a _g4dn.xlarge_ instance which provides 4vCPUs and 16GB of RAM.
 
 ![configure_instance_1](steps/step7.png)
 
-I will click on **Configure Instance Details**.
+I will click **Configure Instance Details**.
 
-Make sure to choose **DjangoVPC** in network dropdown. I will choose the public subnet **ap-south-1a** where our server
-will be launched.
+Make sure to choose _DjangoVPC_ in network dropdown. I will choose the public subnet _ap-south-1a_ where our server will be launched.
 
-Make sure to enable **Auto-assign Public IP**.
+Make sure to enable _Auto-assign Public IP_.
 
 ![configure_instance_2](steps/step8.png)
 
-Next, I will click on **Add Storage**. I will provide 150GB for my instance store volume as an arbitrary disk space.
+Next, I will click **Add Storage**. I will provide 150GB for my instance store volume as an arbitrary disk space.
 I would recommend creating a separate block storage where you can store your critical data and perform backups.
-Instance storage is also called **“ephemeral drives”** which provide temporary block-level storage.
+Instance storage is also called _“ephemeral drives”_ which provide temporary block-level storage.
 Thus, there is a higher risk of losing data.
 
 ![block_storage](steps/step9.png)
 
-Next, I will click on **Add Tags**. Tags enable you to categorize your AWS resources, you can skip it if you don’t require it.
+Next, I will click **Add Tags**. Tags enable you to categorize your AWS resources, you can skip it if you don’t require it.
 
 ![ec2_tags](steps/step10.png)
 
-I then click on Configure Security Group and choose an existing security group **UbuntuDesktop-SG** which I have already created. You can see the port 8443 will be used to connect to our desktop through NICE DCV Client.
+I then click on Configure Security Group and choose an existing security group _UbuntuDesktop-SG_ which I have already created. You can see the port 8443 will be used to connect to our desktop through NICE DCV Client.
 
 ![configure_sg](steps/step11.png)
 
-Next, I will click on **Launch**, select an existing or create a new private key and finally click on **Launch Instances**. It will take a few minutes to create our new instance.
+Next, I will click **Launch**, select an existing or create a new private key and finally click **Launch Instances**. It will take a few minutes to create our new instance.
 
 I will go to [nice-dcv.com](https://www.nice-dcv.com/) from where I will be downloading & installing NICE DCV Client for Windows. They also have clients for Linux and MacOS.
 
@@ -119,13 +117,13 @@ Reference:
 
 ![aws_putty](steps/step13.png)
 
-The username of my ec2 instance is **ubuntu**, I will move forward setting up my new password by writing the command `sudo passwd ubuntu`
+The username of my ec2 instance is _ubuntu_, I will move forward setting up my new password by writing the command `sudo passwd ubuntu`
 
 After you have set the password successfully, I will copy the public ipv4 address of my instance and paste it in the NICE DCV Client. The port number is optional but make sure the port 8443 is open to accept connection, as you have already seen before in our security group.
 
 ![nice_dcv_client_1](steps/step14.png)
 
-I will click on **Trust** for agreeing to the security exceptions. I would recommend following the NICE DCV documentation for hardening the server.
+I will click **Trust** for agreeing to the security exceptions. I would recommend following the NICE DCV documentation for hardening the server.
 
 ![nice_dcv_client_2](steps/step15.png)
 

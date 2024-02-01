@@ -11,10 +11,9 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/rusJaogFL78"
 ---
 
-If you need to add keys to existing struct types, you can now do
-this quicker using the dedicated _Add key to tags_ feature.
+If you need to add keys to existing struct types, you can now do this quicker using the dedicated **Add key to tags** feature.
 
 **How to use:**
 Place the cursor on a struct type, then press <kbd>⌃⏎</kbd> (macOS) / <kbd>Ctrl+Enter</kbd> (Windows/Linux).
 
-From the _Context Actions_ menu, select _Add key to tags_, and start typing the key name.
+From the _Context Actions_ menu, select **Add key to tags**, and start typing the key name.

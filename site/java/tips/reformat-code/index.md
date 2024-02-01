@@ -22,6 +22,6 @@ video: "https://youtu.be/24praE09oxE"
 Reformat your file, or part of your file, at any time with <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux) according to your code style settings.
 To remove custom line breaks, reformat the file or code again.
 
-Display the **Reformat File** dialog with <kbd>⌘⌥⇧L</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+L</kbd> (Windows/Linux). In this dialog, we can select the scope we want to apply; either the whole file, or only changes that haven't been committed to VCS yet.
+Display the _Reformat File_ dialog with <kbd>⌘⌥⇧L</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+L</kbd> (Windows/Linux). In this dialog, we can select the scope we want to apply; either the whole file, or only changes that haven't been committed to VCS yet.
 
-We can select a piece of code and use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to open the dialog to **Adjust code style settings**.
+We can select a piece of code and use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to open the _Adjust code style settings_ dialog.

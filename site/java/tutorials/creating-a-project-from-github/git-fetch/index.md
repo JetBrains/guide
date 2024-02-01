@@ -13,6 +13,6 @@ You just added a new remote to this project, but it's not showing in the Git Log
 
 ![Git Fetch Remotes in the Git Log Tool Window](git-fetch-remotes.png)
 
-Another way of performing a Git fetch is to click on the **Fetch All Remotes** button on the Branches tree toolbar in the Git Log window. This will also update the project.
+Another way of performing a Git fetch is to click **Fetch All Remotes** on the Branches tree toolbar in the Git Log window. This will also update the project.
 
 ![Git Fetch All Remotes Button](fetch-all-remotes.png)

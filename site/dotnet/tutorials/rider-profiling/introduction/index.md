@@ -36,23 +36,18 @@ Internally, it iterates over every cell of a puzzle board, tries all combination
 0, 0, 0,  0, 4, 0,  0, 0, 1
 ```
 
-A simple puzzle is solved in less than a second, more complex ones can take 10 to 20 seconds. In this tutorial, you will see
-if this can be optimized, and how.
+A simple puzzle is solved in less than a second, more complex ones can take 10 to 20 seconds. In this tutorial, you will see if this can be optimized, and how.
 
 ### Profiling in Rider
 
 Rider integrates with the [dotTrace profiler](https://www.jetbrains.com/profiler/) to provide performance profiling of
 .NET applications. A profiling session can be started from the toolbar, or from the **Run** menu.
 
-The profiling modes available depend on your operating system, and the .NET Framework version used in your application.
-A [compatibility matrix](https://www.jetbrains.com/help/rider/Performance_Profiling.html) is available in the web help.
+The profiling modes available depend on your operating system, and the .NET Framework version used in your application. A [compatibility matrix](https://www.jetbrains.com/help/rider/Performance_Profiling.html) is available in the web help.
 
-Once the profiling is started, you will see the Performance Profiler tool window open. It shows the profiling controller,
-where you can get a snapshot, detach from the running application, and more. For the Sudoku solver, a snapshot is captured
-automatically after the application exits.
+Once the profiling is started, you will see the Performance Profiler tool window open. It shows the profiling controller, where you can get a snapshot, detach from the running application, and more. For the Sudoku solver, a snapshot is captured automatically after the application exits.
 
-A profiling snapshot gives you the information required to start optimizing your application. It shows the call tree of
-method calls on all threads, and the top methods with the highest execution time.
+A profiling snapshot gives you the information required to start optimizing your application. It shows the call tree of method calls on all threads, and the top methods with the highest execution time.
 
 In the next step, you will see the different profiling modes that are available.
 

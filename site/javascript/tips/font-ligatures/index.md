@@ -13,4 +13,4 @@ cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 
-If the font you're using in WebStorm supports ligatures, you can turn them on in _Preferences / Settings | Editor | Font_.
+If the font you're using in WebStorm supports ligatures, you can turn them on in **Preferences / Settings | Editor | Font**.

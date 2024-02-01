@@ -53,7 +53,7 @@ In this tutorial, we’ve covered Solution-Wide Analysis (SWEA) in ReSharper and
 
 Solution-Wide Analysis is a nifty code analysis feature that helps developers keep their code in check. It goes beyond single files, giving a big-picture view of code quality in the entire solution.
 
-The default view of Solution-Wide Analysis focuses on quickly identifying places where code can be improved, while the more detailed **Inspection Results** tool window gives a more detailed view and offers additional filtering and grouping options. The tool window called "Inspection Results" provides an overview of the identified issues and allows users to work on a snapshot of the results, keeping track of addressed and pending issues.
+The default view of Solution-Wide Analysis focuses on quickly identifying places where code can be improved, while the more detailed _Inspection Results_ tool window gives a more detailed view and offers additional filtering and grouping options. The tool window called "Inspection Results" provides an overview of the identified issues and allows users to work on a snapshot of the results, keeping track of addressed and pending issues.
 
 We’ve seen how to enable or disable specific code inspections according to individual preferences. You can configure inspections in the settings, and adjust the severity of inspections to prioritize the issues that require immediate attention. The severity levels include errors, warnings, suggestions, and hints, with errors being the most urgent issues that may break compilation or runtime. Inspection severity can be configured globally or saved to a team-shared settings layer for project-wide consistency.
 

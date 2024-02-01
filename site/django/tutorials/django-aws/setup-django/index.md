@@ -26,29 +26,29 @@ We will move forward installing the virtual environment after the system depende
 
 ![python_dependencies_2](steps/step2.png)
 
-I am going to name the virtual environment as **DjangoEnv** and **-p** flag stands for path to the Python interpreter, as for now I will be using the default Python interpreter, so I will mention it as **python3**. Ubuntu 20.04 LTS comes pre-installed with Python 3.8.
+I am going to name the virtual environment as _DjangoEnv_ and _-p_ flag stands for path to the Python interpreter, as for now I will be using the default Python interpreter, so I will mention it as _python3_. Ubuntu 20.04 LTS comes pre-installed with Python 3.8.
 
-I will open PyCharm and create my new project I am going to name it **SampleDemo**.
+I will open PyCharm and create my new project I am going to name it _SampleDemo_.
 
 ![python_dependencies_3](steps/step3.png)
 
-Since I have already configured the environment, I will click on the **previously configured interpreter** where I will be providing the path to the virtual environment which I created earlier. PyCharm provides multiple ways to set up the Python interpreter.
+Since I have already configured the environment, I will click on the _previously configured interpreter_ where I will be providing the path to the virtual environment which I created earlier. PyCharm provides multiple ways to set up the Python interpreter.
 
-Everything looks good, I will click on **Create**.
+Everything looks good, I will click **Create**.
 
 After the project has been successfully initialized, I then move forward and change the appearance of the IDE.
 
 ![pycharm_django_project_1](steps/step4.png)
 
-I will click on **File** --> **Settings**. Under Appearance & Behavior I will change the theme from **Darcula** to **IntelliJ Light**.
+I will click on **File** > **Settings**. Under Appearance & Behavior I will change the theme from _Darcula_ to _IntelliJ Light_.
 
 ![pycharm_django_project_2](steps/step5.png)
 
-We are now ready to start our development server. I will click on **Run** and then **Run ‘SampleDemo’**
+We are now ready to start our development server. I will click **Run** > **Run ‘SampleDemo’**
 
 ![pycharm_django_project_3](steps/step6.png)
 
-The application is now running on **127.0.0.1** on port **8000**.
+The application is now running on _127.0.0.1_ on port _8000_.
 
 ![pycharm_django_project_4](steps/step7.png)
 

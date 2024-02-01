@@ -24,22 +24,21 @@ To know more about Sentry please visit the website [sentry.io](https://sentry.io
 
 ## Project Setup
 
-Make sure to create an account in Sentry, it's pretty straight forward. I already have an account,
-so I will proceed with the login.
+Make sure to create an account in Sentry, it's pretty straight forward. I already have an account, so I will proceed with the login.
 
 ![sentry_login](./steps/step1.png)
 
-Ok, we have reached the dashboard, I will now click on **Create Project**.
+Ok, we have reached the dashboard, I will now click **Create Project**.
 
 ![sentry_dashboard](./steps/step2.png)
 
-I will choose **Django**, as my platform.
+I will choose _Django_, as my platform.
 
-For the default alert settings, I am not going to modify my choice. Leave it as **“I’ll create my owner alerts later”**. You can come back anytime and modify it.
+For the default alert settings, I am not going to modify my choice. Leave it as _“I’ll create my owner alerts later”_. You can come back anytime and modify it.
 
 ![sentry_project_creation](./steps/step3.png)
 
-My project name will be **Django**, and it will fall under the team **backend**. You can assign developers to a particular team, so they can access this project. Everything looks good, I will click on **Create Project**.
+My project name will be _Django_, and it will fall under the team _backend_. You can assign developers to a particular team, so they can access this project. Everything looks good, I will click **Create Project**.
 
 ![sentry_project_team](./steps/step4.png)
 
@@ -53,23 +52,23 @@ First, I will be installing the sentry sdk package.
 
 ![sentry_python_sdk](./steps/step6.png)
 
-Next I will copy the configuration into my **settings.py** file.
+Next I will copy the configuration into my `settings.py` file.
 
 ![sentry_django_settings](./steps/step7.png)
 
-When you deploy your application into production, make sure you pass the **dsn** value also known as **Data Source Name(DSN)** through the environment variable.
+When you deploy your application into production, make sure you pass the _dsn_ value also known as _Data Source Name(DSN)_ through the environment variable.
 
-To set a uniform sample rate for all transactions, set the **traces_sample_rate** option in your SDK config to a number between 0 and 1. (For example, to send 20% of transactions, set traces_sample_rate to 0.2
+To set a uniform sample rate for all transactions, set the _traces_sample_rate_ option in your SDK config to a number between 0 and 1. (For example, to send 20% of transactions, set traces_sample_rate to 0.2
 
-Sentry also excludes personally identifiable information (such as user ids, usernames, cookies, authorization headers, IP addresses) unless you set **send_default_pii** to True.
+Sentry also excludes personally identifiable information (such as user ids, usernames, cookies, authorization headers, IP addresses) unless you set _send_default_pii_ to True.
 
-Okay, we are all set, let's trigger some exceptions. According to the Sentry documentation, I will perform **ZeroDivisionError** in my application.
+Okay, we are all set, let's trigger some exceptions. According to the Sentry documentation, I will perform _ZeroDivisionError_ in my application.
 
 ## Firing our first event
 
 Currently, there are no events. Let’s initiate our first event.
 
-I am going to add a **result** variable in line number 14, which will raise an **ZeroDivisionError** exception.
+I am going to add a _result_ variable in line number 14, which will raise an _ZeroDivisionError_ exception.
 
 ![sentry_exception](./steps/step8.png)
 

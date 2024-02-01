@@ -17,5 +17,5 @@ screenshot: ./tip.png
 
 The easy way to add gutter icons to _Zen_ and _Distraction-free_ modes:
 
-- Right-click to the left of your code and select _Configure Gutter Icons_.
-- In the dialog that appears, tick _Show gutter icons_, selecting the ones you want to be shown if needed, and click _OK_.
+- Right-click to the left of your code and select **Configure Gutter Icons**.
+- In the dialog that appears, tick **Show gutter icons**, selecting the ones you want to be shown if needed, and click **OK**.

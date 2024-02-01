@@ -88,7 +88,7 @@ Header-field: Header-value
 Request-Body
 ```
 
-Alternatively, you can click the **+** button on top of the request's editor panel, which will pop up the menu to choose the type of request you want to add:
+Alternatively, you can click **+** on top of the request's editor panel, which will pop up the menu to choose the type of request you want to add:
 
 ![Add request](assets/auth-1.png)
 

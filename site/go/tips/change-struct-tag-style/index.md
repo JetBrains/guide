@@ -20,4 +20,4 @@ Choose between _snake_case_, _(lower) camelCase_, _(upper) CamelCase_, or _kebap
 
 Place the cursor on a struct field, then invoke the _Context Actions_ menu via <kbd>⌃⏎</kbd> (macOS) / <kbd>Ctrl+Enter</kbd> (Windows/Linux).
 
-Select the _Change field name style in tags_, and choose between one of the four styles available.
+Select **Change field name style in tags**, and choose between one of the four styles available.

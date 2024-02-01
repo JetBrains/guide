@@ -14,4 +14,4 @@ seealso:
 video: "https://youtu.be/C377l7OqpMw"
 ---
 
-Group projects in your **Welcome Screen**, so you can quickly find related projects. Right-click the **Welcome Screen** and select **New Project Group** from the context menu to create the group. Right-click a project you want to add to a group, select **Move To Group** and select the group you want to add this project to.
+Group projects in your _Welcome Screen_, so you can quickly find related projects. Right-click the _Welcome Screen_ and select **New Project Group** from the context menu to create the group. Right-click a project you want to add to a group, select **Move To Group** and select the group you want to add this project to.

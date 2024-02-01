@@ -18,4 +18,4 @@ seealso:
 video: "https://youtu.be/W77Ta23BI_w"
 ---
 
-From your terminal, use `idea` followed by the name of the file you want to open. If you're using JetBrains Toolbox you can edit your script names by clicking the three vertical dots next to IntelliJ IDEA and selecting **Settings** > **Configuration** drop-down. You can change your **Shell script name** if required.
+From your terminal, use `idea` followed by the name of the file you want to open. If you're using JetBrains Toolbox you can edit your script names by clicking the three vertical dots next to IntelliJ IDEA and selecting **Settings** > **Configuration** drop-down. You can change your _Shell script name_ if required.

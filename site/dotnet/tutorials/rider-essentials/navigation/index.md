@@ -15,14 +15,11 @@ video: "https://youtu.be/yZ_KkSBJD7g"
 
 ### Navigating Code in Rider
 
-Regardless of the programming language used, Rider provides navigation in your projects. Navigation is available in C#,
-F#, VB.NET, JavaScript, TypeScript, CSS, HTML and many more languages, and works for settings, actions in the IDE, and more.
+Regardless of the programming language used, Rider provides navigation in your projects. Navigation is available in C#, F#, VB.NET, JavaScript, TypeScript, CSS, HTML and many more languages, and works for settings, actions in the IDE, and more.
 
-JetBrains Rider enables you to find your way through the source code using the declarations, members, method calls,
-inheritance hierarchy, errors, and so on as well as through IDE items like actions, settings, and tool windows.
+JetBrains Rider enables you to find your way through the source code using the declarations, members, method calls, inheritance hierarchy, errors, and so on as well as through IDE items like actions, settings, and tool windows.
 
-The scope of navigation and search is not limited to files of just your solution: you can include
-[symbols from referenced libraries](https://www.jetbrains.com/help/rider/Navigation_and_Search__Navigating_to_External_Sources.html).
+The scope of navigation and search is not limited to files of just your solution: you can include [symbols from referenced libraries](https://www.jetbrains.com/help/rider/Navigation_and_Search__Navigating_to_External_Sources.html).
 
 Some other options available are:
 

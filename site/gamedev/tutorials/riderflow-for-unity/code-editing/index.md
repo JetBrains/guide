@@ -21,7 +21,7 @@ video:
 RiderFlow comes with a simple editor designed for small, quick changes in your C# script files.
 It provides more than just basic editor functionality such as smart text actions, code markup, error tooltips, and typing assistance.
 
-Right-click a C# script asset in the **Project** window or in the **Inspector** window and select **Open Code Editor**.
+Right-click a C# script asset in the _Project_ tool window or in the _Inspector_ window and select **Open Code Editor**.
 
 For a more profound editor with code completion, quick-fixes, and rich refactoring functionality, consider [JetBrains Rider](https://www.jetbrains.com/lp/dotnet-unity/).
 

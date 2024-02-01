@@ -17,5 +17,3 @@ video: "https://youtu.be/4XkazKdTO1U"
 Java 16 introduced some new methods on the Streams API. IntelliJ IDEA shows us places that can use the new methods and can automatically convert the code to use these new methods.
 
 The code will be highlighted in yellow as a warning. Press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and choose "Replace collect(toUnmodifiableList()) with toList()".
-
-Note that this is only available if you're using a language level of Java 16 or above.

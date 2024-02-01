@@ -11,7 +11,7 @@ thumbnail: ./thumbnail.png
 
 There are several options to navigate to the bookmarks we have created.
 
-To see all **line** bookmarks that we have in the code, we can open the **Bookmarks** popup by pressing <kbd>F3<kbd/> (macOS) / <kbd>F11</kbd> (Windows/Linux) or go to **Edit | Bookmarks | Show Line Bookmarks**.
+To see all _line_ bookmarks that we have in the code, we can open the **Bookmarks** popup by pressing <kbd>F3<kbd/> (macOS) / <kbd>F11</kbd> (Windows/Linux) or go to **Edit | Bookmarks | Show Line Bookmarks**.
 
 ![Show Line Bookmarks shortcut](show-line-bookmarks-shortcut.png)
 
@@ -21,27 +21,27 @@ Notice that this list does not contain any project items like files or classes t
 
 ![Bookmark popup](bookmark-popup.png)
 
-To jump straight to a mnemonic bookmark, hold **^** (on macOS) or **Control** (on Windows/Linux) and press the mnemonic digit or letter on the keyboard. This doesn't work with anonymous bookmarks, but we can assign a mnemonic to an existing anonymous bookmark, either using the shortcut, or by clicking the bookmark in the gutter and selecting **Assign Mnemonic**. This works in the **Bookmarks** popup too!
+To jump straight to a mnemonic bookmark, hold **^** (on macOS) or **Control** (on Windows/Linux) and press the mnemonic digit or letter on the keyboard. This doesn't work with anonymous bookmarks, but we can assign a mnemonic to an existing anonymous bookmark, either using the shortcut, or by clicking the bookmark in the gutter and selecting **Assign Mnemonic**. This works in the _Bookmarks_ popup too!
 
 ![Go to Bookmark](go-to-bookmark.png)
 
 ![Assign Mnemonic](assign-mnemonic.png)
 
-To see all our bookmarks, we can open the **Bookmarks** tool window by pressing **⌘ 2** (on macOS) or **Alt+2** (on Windows/Linux), or by selecting **View | Tool Windows | Bookmarks** from the main menu.
+To see all our bookmarks, we can open the _Bookmarks_ tool window by pressing **⌘ 2** (on macOS) or **Alt+2** (on Windows/Linux), or by selecting **View | Tool Windows | Bookmarks** from the main menu.
 
 ![Open Bookmark Tool Window shortcut](open-bookmarks-tool-window-shortcut.png)
 
 ![Open Bookmark Tool Window menu](open-bookmarks-tool-window-menu.png)
 
-IntelliJ IDEA adds your bookmarks to the predefined list in the Bookmarks tool window that is created automatically and has the same name as the project. In this example, multiple bookmarks in the same file are grouped together. We can also turn that off in the **Options** menu, by deselecting **Group Line Bookmarks by File**. As we can see, there are several other options as well. We won't dive into all of them, but be aware there are some options you can configure to your liking.
+IntelliJ IDEA adds your bookmarks to the predefined list in the Bookmarks tool window that is created automatically and has the same name as the project. In this example, multiple bookmarks in the same file are grouped together. We can also turn that off in the _Options_ menu, by deselecting **Group Line Bookmarks by File**. As we can see, there are several other options as well. We won't dive into all of them, but be aware there are some options you can configure to your liking.
 
 ![Bookmark Tool Window options](options.png)
 
-Another option we do want to show you here is that you can create more lists. We can add a new list using the shortcut <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) or by clicking the **Create Bookmark List** button. We can add a name for the new list.
+Another option we do want to show you here is that you can create more lists. We can add a new list using the shortcut <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) or by clicking **Create Bookmark List**. We can add a name for the new list.
 
 ![Create Bookmark List](create-bookmark-list.png)
 
-If there are multiple lists, and we create a new bookmark, we can select which list to add it to in the **Add Bookmark** popup. We can also select the list to use as the default by checking the option **Use as default list**.
+If there are multiple lists, and we create a new bookmark, we can select which list to add it to in the _Add Bookmark_ popup. We can also select the list to use as the default by checking the option **Use as default list**.
 
 ![Select Bookmark List](select-bookmark-list.png)
 

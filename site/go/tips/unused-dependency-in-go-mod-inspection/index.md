@@ -16,4 +16,4 @@ _Be on top of your dependencies and quickly locate unused modules with this insp
 
 **How to use:**
 
-Open a _go.mod_ file and look out for dependency lines marked with grey.
+Open a `go.mod` file and look out for dependency lines marked with grey.

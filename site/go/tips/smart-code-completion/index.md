@@ -12,7 +12,7 @@ video: >-
   https://www.youtube.com/watch?v=smUS4hztnTI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=150
 ---
 
-**Smart code completion** narrows down the matches to quickly give you a list of useful values.
+_Smart code completion_ narrows down the matches to quickly give you a list of useful values.
 
 _Smart Code Completion_ gives you a list of the most relevant symbols that are applicable in the current context.
 

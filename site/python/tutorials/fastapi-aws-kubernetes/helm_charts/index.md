@@ -42,7 +42,7 @@ As you can see there are multiple flavours of installing Helm. Either you can in
 
 ![step4](./steps/step4.png)
 
-I am using **Ubuntu**, so I will follow the apt installation commands.
+I am using _Ubuntu_, so I will follow the apt installation commands.
 
 ![step5](./steps/step5.png)
 
@@ -68,13 +68,13 @@ Obviously, we need to store these charts and that is where we look for a Helm re
 
 ### Private Repositories
 
-You can store charts in private repositories like in **Amazon S3** or **GithubPages**.
+You can store charts in private repositories like in Amazon S3 or GithubPages.
 
 You will find all the helm charts in [Artifact Hub](https://artifacthub.io/).
 
 ![step7](./steps/step7.png)
 
-Let me try to check for the **NGINX** package.
+Let me try to check for the _NGINX_ package.
 
 ![step8](./steps/step8.png)
 
@@ -123,7 +123,7 @@ helm search repo drupal
 
 You can observe we got the latest version of Drupal `9.2.7`.
 
-**Chart Version** and **App Version** are completely different. App version is pointing to the stable version of Drupal.
+Chart Version and App Version are completely different. App version is pointing to the stable version of Drupal.
 
 I will try to search again but this time I will append **“--versions”** and it’s going to return a list of all Drupal versions.
 
@@ -159,7 +159,7 @@ helm list
 
 ![step17](./steps/step17.png)
 
-Here the release name is **my-release**. When you use a chart reference with a repo prefix **(bitnami/nginx)**, Helm will look in the local configuration for a chart repository named **'bitnami'**, and will then look for a chart in that repository whose name is **‘nginx'**.
+Here the release name is _my-release_. When you use a chart reference with a repo prefix _(bitnami/nginx)_, Helm will look in the local configuration for a chart repository named _'bitnami'_, and will then look for a chart in that repository whose name is _‘nginx'_.
 
 As you can see the installation is complete and these are the few notes provided on how to check the application.
 
@@ -177,7 +177,7 @@ minikube service list
 
 ![step19](./steps/step19.png)
 
-As you can see the **my-release-nginx** is running on port 30214. I am going to quickly check in the browser.
+As you can see the _my-release-nginx_ is running on port 30214. I am going to quickly check in the browser.
 
 ![step20](./steps/step20.png)
 
@@ -207,7 +207,7 @@ The latest release is running on port 30214 and the older release which is my-re
 
 So, this is the simplest use case of Helm. You can observe the benefits of using Helm Charts, also you can roll back or upgrade helm charts.
 
-When you type: helm list it will provide a list of releases in the default namespace. You can also pass **all-namespaces** to get all releases present across namespaces.
+When you type: helm list it will provide a list of releases in the default namespace. You can also pass _all-namespaces_ to get all releases present across namespaces.
 
 ![step23](./steps/step23.png)
 
@@ -267,11 +267,11 @@ So, these are a few of the benefits of using Helm.
 
 Let’s move back to PyCharm and create a custom helm chart for our application.
 
-I will create a directory under the root and name it **charts**.
+I will create a directory under the root and name it `charts`.
 
 ![step29](./steps/step29.png)
 
-I will open up my **Terminal** and go inside the directory.
+I will open up my Terminal and go inside the directory.
 
 I will type:
 
@@ -293,15 +293,15 @@ Let me explain one by one.
 
 This file basically contains metadata about your chart.
 
-The **apiVersion** is basically the chart api version which is v2 which is basically pointing to the Helm 3 version.
+The _apiVersion_ is basically the chart api version which is v2 which is basically pointing to the Helm 3 version.
 If apiVersion is v1 it's basically telling that it uses previous versions of Helm.
 
-**Description** is something optional. You can give brief information about your application.
+Description is something optional. You can give brief information about your application.
 
-Type of chart can be an **application** or **library** chart. As we are working on an application it’s going to be an application chart.
+Type of chart can be an _application_ or _library_ chart. As we are working on an application it’s going to be an application chart.
 According to Helm docs: _A library chart is a type of Helm chart that defines chart primitives or definitions which can be shared by Helm templates in other charts. This allows users to share snippets of code that can be reused across charts, avoiding repetition and keeping charts DRY_.
 
-**Version** is basically pointing towards the chart version and appVersion is basically the application version.
+Version is basically pointing towards the chart version and appVersion is basically the application version.
 
 Charts are identified using the version number, like in this example **0.1.0**.
 
@@ -317,19 +317,19 @@ You can observe the empty chart directory. We are going to place all our depende
 
 ### templates
 
-The **Template** folder contains all the Kubernetes manifest files. You can see they have provided sample manifests for nginx application, we are going to replace it with our manifest files which we have defined earlier when we were working with Kubernetes.
+The _Template_ folder contains all the Kubernetes manifest files. You can see they have provided sample manifests for nginx application, we are going to replace it with our manifest files which we have defined earlier when we were working with Kubernetes.
 
 ![step35](./steps/step35.png)
 
 ### \_helpers.tpl
 
-You are going to find a unique file called **\_helpers.tpl**. This is basically a named template writing in Go Templating Language.
+You are going to find a unique file called `\_helpers.tpl`. This is basically a named template writing in Go Templating Language.
 
 A named template is also referred to as partial or a subtemplate.
 
 ![step36](./steps/step36.png)
 
-Files whose name begins with an underscore **(\_)** are actually rendered to Kubernetes object definitions, but are available everywhere within other chart templates for use.
+Files whose name begins with an underscore (\_) are actually rendered to Kubernetes object definitions, but are available everywhere within other chart templates for use.
 
 The Helm client and library is written in the **Go programming language**. The library uses the Kubernetes client
 library to communicate with Kubernetes.
@@ -344,7 +344,7 @@ We can also define tests in our helm charts. You can define as many as tests, an
 
 ![step38](./steps/step38.png)
 
-And finally **values.yaml** file, it contains default values which are passed in Templates. You can dynamically override this value when you are trying to install the chart which is quite helpful when CI/CD solutions.
+And finally `values.yaml` file, it contains default values which are passed in Templates. You can dynamically override this value when you are trying to install the chart which is quite helpful when CI/CD solutions.
 
 As I said in the beginning we won’t be getting deep dive into Helm, for in-depth knowledge I would recommend following the official Helm documentation.
 
@@ -408,9 +408,9 @@ spec:
 
 As we have some memory constraints, I will pull down my memory and cpu consumption.
 
-I have slightly modified the **Chart.yaml** file with basic information.
+I have slightly modified the `Chart.yaml` file with basic information.
 
-**charts/fastapi-helm/Chart.yaml**
+`charts/fastapi-helm/Chart.yaml`
 
 ```yaml
 apiVersion: v2
@@ -439,9 +439,9 @@ version: 0.1.0
 appVersion: "1.0.0"
 ```
 
-Rest, I am not using **imagePullSecrets** or **ServiceAccounts**, So I am ignoring that.
+Rest, I am not using _imagePullSecrets_ or _ServiceAccounts_, So I am ignoring that.
 
-**charts/fastapi-helm/values.yaml**
+`charts/fastapi-helm/values.yaml`
 
 ```yaml
 # Default values for fastapi-helm.
@@ -521,7 +521,7 @@ resources:
 
 You can see how we import values through the templating syntax using the double curly braces.
 
-**charts/fastapi-helm/templates/code/deployment.yml**
+`charts/fastapi-helm/templates/code/deployment.yml`
 
 ```yaml
 apiVersion: apps/v1
@@ -596,11 +596,11 @@ I will type:
 helm install myapp fastapi-helm
 ```
 
-I will provide the namespace. Even if you don’t have the specific namespace, nothing to worry you can directly create the namespace through Helm itself by passing **--create-namespace**.
+I will provide the namespace. Even if you don’t have the specific namespace, nothing to worry you can directly create the namespace through Helm itself by passing --create-namespace.
 
 - Make sure before installing have a look into this file and update accordingly.
 
-**charts/fastapi-helm/templates/postgres/postgres-pv.yml**
+`charts/fastapi-helm/templates/postgres/postgres-pv.yml`
 
 ```yaml
 local:
@@ -624,7 +624,7 @@ This file does not get installed.
 
 Very minimalist information I have provided.
 
-**charts/fastapi-helm/templates/NOTES.txt**
+`charts/fastapi-helm/templates/NOTES.txt`
 
 ```text
 Welcome to FastAPI with Kubernetes Helm Chart

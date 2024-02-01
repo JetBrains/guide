@@ -18,4 +18,4 @@ animatedGif:
   height: 300
 ---
 
-After typing parentheses, trigger the Complete Current Statement action (_Shift+Cmd+Enter_ on macOS and _Shift+Ctrl+Enter_ on Windows and Linux) to add curly braces and move the cursor down to the beginning of the next row.
+After typing parentheses, trigger the Complete Current Statement action <kbd>⌃⇧⏎</kbd> (macOS) / <kbd>Ctrl+Shift+Enter</kbd> (Windows/Linux) to add curly braces and move the cursor down to the beginning of the next row.

@@ -20,7 +20,7 @@ There are a lot of settings here, but the easiest way to familiarise yourself wi
 
 As a side note, if you do make some changes here, and you want to reset them without resetting all the settings, you can click the blue **Reset** link on the top-right of this dialog. It will only be shown when you've made a change to your settings.
 
-If you go to the **Wrapping and Braces** tab and then scroll down to **'for()' statement**, you will see the **Force braces** change we made earlier when we changed it to _Always_.
+If you go to the _Wrapping and Braces_ tab and then scroll down to _'for()' statement_, you will see the **Force braces** change we made earlier when we changed it to _Always_.
 
 ![For Loop - Setting for Braces Always](for-statement-braces-setting.png)
 

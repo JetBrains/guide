@@ -13,6 +13,6 @@ video: >-
 
 **How to use:**
 
-Expand the Kubernetes cluster in which the pod resides, then the _Workloads | Pods_ section, select the pod that you need the log for, then right-click on the pod name and select _Download Log_.
+Expand the Kubernetes cluster in which the pod resides, then the _Workloads | Pods_ section, select the pod that you need the log for, then right-click on the pod name and select **Download Log**.
 
 **Note:** You must have the [Kubernetes plugin](https://plugins.jetbrains.com/plugin/10485-kubernetes) provided by JetBrains installed for this action to work.

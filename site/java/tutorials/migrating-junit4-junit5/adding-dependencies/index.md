@@ -62,7 +62,7 @@ We only need these dependencies to run tests, so add the test scope to them as w
 
 Now we should be able to safely remove the old JUnit 4 dependency from the Maven POM file, and the project will still compile. Click the Maven icon to make sure that IntelliJ IDEA removes the old dependency from the project.
 
-Navigate back to the Junit4ToJUnit5 class using <kbd>⌘0</kbd> (macOS) / <kbd>Alt+0</kbd> (Windows/Linux), to find the file. Rebuild the whole project with the new dependencies using **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux). If it all builds correctly, use <kbd>⌃R</kbd> (macOS) / <kbd>Shift+F10</kbd> (Windows/Linux), to run the test class to check the tests work as you expect.
+Navigate back to the Junit4ToJUnit5 class using <kbd>⌘0</kbd> (macOS) / <kbd>Alt+0</kbd> (Windows/Linux), to find the file. Rebuild the whole project with the new dependencies using <kbd>⌘F9</kbd> (macOS) / <kbd>Ctrl+F9</kbd> (Windows/Linux). If it all builds correctly, use <kbd>⌃R</kbd> (macOS) / <kbd>Shift+F10</kbd> (Windows/Linux), to run the test class to check the tests work as you expect.
 
 The results are shown in the [Run window](https://www.jetbrains.com/help/idea/run-tool-window.html) which you can access using <kbd>⌘4</kbd> (macOS) / <kbd>Alt+4</kbd> (Windows/Linux).
 

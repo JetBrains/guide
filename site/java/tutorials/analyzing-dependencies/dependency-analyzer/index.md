@@ -17,7 +17,7 @@ We can view our dependencies in the Maven or Gradle tool window. Here, we can ex
 
 ## Open the Dependency Analyzer
 
-We can open the Dependency Analyzer from the Maven or Gradle tool window by clicking the **Analyze Dependencies…** button. This will open the Dependency Analyzer showing the Resolved Dependencies on the left and their Usages on the right.
+We can open the Dependency Analyzer from the Maven or Gradle tool window by clicking **Analyze Dependencies…**. This will open the Dependency Analyzer showing the Resolved Dependencies on the left and their Usages on the right.
 
 ![Analyze Dependencies button](analyze-dependencies-button.png)
 
@@ -31,11 +31,11 @@ We can hide all tool windows <kbd>⌘⇧F12</kbd> (macOS) / <kbd>Ctrl+Shift+F12 
 
 ![Dependency Analyzer](dependency-analyzer.png)
 
-We can view the dependencies as a tree by clicking the **Show as Tree** button and **Expand** or **Collapse** them as needed by pressing the corresponding buttons.
+We can view the dependencies as a tree by clicking **Show as Tree** and **Expand** or **Collapse** them as needed by pressing the corresponding buttons.
 
 ![Show as Tree](show-as-tree.png)
 
-We can also click the **View Options** button and toggle **Show GroupId**, to show the GroupId for dependencies or not.
+We can also click **View Options** and toggle **Show GroupId**, to show the GroupId for dependencies or not.
 
 ![View Options](view-options.png)
 
@@ -47,7 +47,7 @@ To see where we are getting a specific version of a particular library, we can s
 
 ## Finding conflicts
 
-We might only want to look at dependencies that have conflicts. When we select the **Show Conflicts Only** button, we see only dependencies that have conflicts. In this example, we see that there is a conflict with the checker framework dependency. Fortunately, it's been resolved; we see that one version is greyed out. If we go back to the Maven tool window, we see that this version has been omitted for conflict. We can see that the version we are using is 3.5.0 which we get from postgres.
+We might only want to look at dependencies that have conflicts. When we select **Show Conflicts Only**, we see only dependencies that have conflicts. In this example, we see that there is a conflict with the checker framework dependency. Fortunately, it's been resolved; we see that one version is greyed out. If we go back to the Maven tool window, we see that this version has been omitted for conflict. We can see that the version we are using is 3.5.0 which we get from postgres.
 
 ![Show Conflicts Only button](show-conflicts-only-button.png)
 

@@ -43,7 +43,7 @@ You can even disable the docs along with changing the docs url path.
 
 There is one more thing I would like to mention. You can test the APIs through PyCharm itself via [HTTPClient](https://www.jetbrains.com/help/pycharm/http-client-in-product-code-editor.html).
 
-Click on **Tools** → **HTTP Client** → **Create Request in HTTP Client**.
+Click on **Tools > HTTP Client> Create Request in HTTP Client**.
 
 ![step5](./steps/step5.png)
 
@@ -184,7 +184,7 @@ Now, I am going to create one more async function `add_items` in which I will pa
 
 ![step17](./steps/step17.png)
 
-**services.py**
+`services.py`
 
 ```python
 async def add_to_cart(product_id: int, database: Session = Depends(db.get_db)):
@@ -237,7 +237,7 @@ Products are going to fetch the information from the product schema.
 
 I will create one more class called `ShowCart` which is going to return the list of cart items.
 
-**schema.py**
+`schema.py`
 
 ```python
 import datetime
@@ -285,7 +285,7 @@ Let’s continue with our last api remove cart item by id.
 
 In delete api there is no response in return, only the status code of 204.
 
-**router.py**
+`router.py`
 
 ```python
 @router.delete('/{cart_item_id}', status_code=status.HTTP_204_NO_CONTENT, response_class=Response)
@@ -296,7 +296,7 @@ async def remove_cart_item_by_id(cart_item_id: int,
 
 First, we need to get the user information, then the cart id of that specific user.
 
-**services.py**
+`services.py`
 
 ```python
 async def remove_cart_item(cart_item_id: int, database) -> None:

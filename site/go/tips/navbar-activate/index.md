@@ -17,8 +17,8 @@ video: >-
   https://www.youtube.com/watch?v=xfrzu-GMvjU&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=11
 ---
 
-Use the **Navigation Bar** to move around files, even when the whole UI is hidden away.
+Use the _Navigation Bar_ to move around files, even when the whole UI is hidden away.
 
 **How to use:**
 
-Bring the **Navigation Bar**, <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux).
+Bring the _Navigation Bar_, <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux).

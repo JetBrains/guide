@@ -17,4 +17,4 @@ animatedGif:
   height: 300
 ---
 
-Whenever you edit an opening tag in HTML, WebStorm will rename the corresponding closing tag for you. This functionality is enabled by default and can be managed in _Preferences/Settings | Editor | Smart Keys | HTML/CSS | Simultaneous <tag></tag> editing_.
+Whenever you edit an opening tag in HTML, WebStorm will rename the corresponding closing tag for you. This functionality is enabled by default and can be managed in **Preferences/Settings | Editor | Smart Keys | HTML/CSS | Simultaneous <tag></tag> editing**.

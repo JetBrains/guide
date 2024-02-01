@@ -14,4 +14,4 @@ seealso:
 video: "https://youtu.be/PXDr2U7RGjE"
 ---
 
-Set custom icons for your projects! From the **Welcome Screen**, right-click the project and select **Set Custom Project Icon** to select the icon from your machine.
+Set custom icons for your projects! From the _Welcome Screen_, right-click the project and select **Set Custom Project Icon** to select the icon from your machine.

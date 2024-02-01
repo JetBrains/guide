@@ -16,9 +16,9 @@ video: >-
   https://www.youtube.com/watch?v=VkCGQHH_iXw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=46
 ---
 
-Use **Extend Selection** to quickly select parts of your code using semantic knowledge about it.
+Use _Extend Selection_ to quickly select parts of your code using semantic knowledge about it.
 
-Selected too much, or using an already existing selection, and want to reduce the selection scope? Use the complimentary **Shrink Selection** feature.
+Selected too much, or using an already existing selection, and want to reduce the selection scope? Use the complimentary _Shrink Selection_ feature.
 
 **How to use:**
 

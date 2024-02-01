@@ -12,7 +12,7 @@ video: >-
   https://www.youtube.com/watch?v=_GY36DdRUJk&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=3
 ---
 
-**Basic completion** provides a list of _all symbols_ available at the current caret position.
+_Basic completion_ provides a list of _all symbols_ available at the current caret position.
 
 The list will include the usual mix of type, interface, and method names, keywords, and also _Live Templates_.
 

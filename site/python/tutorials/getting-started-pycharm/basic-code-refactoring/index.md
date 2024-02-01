@@ -30,7 +30,7 @@ PyCharm will update all the usages in your project, so you don't have to go hunt
 
 Renaming is another common type of refactoring. You first write your code, get everything working, and then start making names more meaningful. This is when the rename refactoring comes in handy. As with signature changes, _rename_ can also be done in place.
 
-Let’s just go ahead and change this method name. We can also use (**⌥⏎** | **Alt+Enter**) to invoke the context menu.
+Let’s just go ahead and change this method name. We can also use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to invoke the context menu.
 
 <img src="rename.png" alt="Rename" width="600"/>
 

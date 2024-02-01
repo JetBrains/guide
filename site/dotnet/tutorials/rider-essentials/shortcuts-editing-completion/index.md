@@ -20,8 +20,7 @@ video: "https://youtu.be/ztQ9ez1bFNg"
 
 ### Keyboard Shortcuts
 
-Rider has many keyboard shortcuts, and they all depend on which operating system you are using. Don't be overwhelmed,
-there are two essential shortcuts that help you achieve anything in Rider! They work cross-platform, and across all JetBrains IDE's:
+Rider has many keyboard shortcuts, and they all depend on which operating system you are using. Don't be overwhelmed, there are two essential shortcuts that help you achieve anything in Rider! They work cross-platform, and across all JetBrains IDE's:
 
 - <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (VS Windows/Linux), which brings up <b><a href="https://www.jetbrains.com/help/rider/Searching_Everywhere.html">Search Everywhere</a></b>. From here, you can navigate to types, symbols, files, recent files, actions, tool windows, run configurations, and preferences.
 - <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (VS Windows/Linux), which brings up a contextual menu with all actions that apply.
@@ -39,8 +38,7 @@ In case you are looking for a full overview, use these cheat sheets to master yo
 
 ### Search Everywhere
 
-With [Search Everywhere](https://www.jetbrains.com/help/rider/Searching_Everywhere.html) (<kbd>Shift, Shift</kbd>),
-you can navigate to types, symbols, files, recent files, actions, tool windows, run configurations, and preferences.
+With [Search Everywhere](https://www.jetbrains.com/help/rider/Searching_Everywhere.html) (<kbd>Shift, Shift</kbd>), you can navigate to types, symbols, files, recent files, actions, tool windows, run configurations, and preferences.
 
 The tool window lets you search, do partial matches, search for starting characters for results written in CamelCase, and so on.
 
@@ -59,8 +57,7 @@ While coding, you will spend a lot of time in the [Rider](https://www.jetbrains.
 In the editor, we get code completion, and can complete statements. There are live templates, and [postfix templates](https://www.jetbrains.com/help/rider/Postfix_Templates.html#list)
 which can help us write code.
 
-With [expand/shrink selection](https://www.jetbrains.com/help/rider/Selecting_Text_in_the_Editor.html), you can select code
-using its semantics, rather than using just characters and lines. Similarly, you can [rearrange code](https://www.jetbrains.com/help/rider/Coding_Assistance__Moving_Code_Elements.html)
+With [expand/shrink selection](https://www.jetbrains.com/help/rider/Selecting_Text_in_the_Editor.html), you can select code using its semantics, rather than using just characters and lines. Similarly, you can [rearrange code](https://www.jetbrains.com/help/rider/Coding_Assistance__Moving_Code_Elements.html)
 and move expressions, statements, type members, and other elements in your code around.
 
 ### See Also

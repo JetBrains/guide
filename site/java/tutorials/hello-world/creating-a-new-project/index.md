@@ -13,7 +13,7 @@ In this walk-through, you will create, run and package a simple Java application
 
 **The link to the relevant portion of the video is available in each tutorial step at the bottom.**
 
-1. You can use the [New Project Wizard](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html) to create a new Project inside IntelliJ IDEA. From the Welcome screen you can click **New Project**, or, if you're already inside a project, you can go to **File** > **New** > **Project**.
+1. You can use the [New Project Wizard](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html) to create a new Project inside IntelliJ IDEA. From the Welcome screen you can click **New Project**, or, if you're already inside a project, you can go to **File > New > Project**.
 
 If you haven't opened a project before, the **New Project** option is in the Welcome screen:
 

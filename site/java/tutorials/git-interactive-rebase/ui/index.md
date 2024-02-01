@@ -72,7 +72,7 @@ You can also edit the commit message directly in the Git log window. Right-click
 
 ![Edit Commit Message](edit-commit-message.png)
 
-This will open a "**Edit Commit Message**" popup, where you can edit the commit message and click "**Ok**" (or "**Cancel**") when you are done.
+This will open a "**Edit Commit Message**" popup, where you can edit the commit message and click **OK** (or **Cancel**) when you are done.
 
 ![Edit Commit Message Popup](edit-commit-message-popup.png)
 

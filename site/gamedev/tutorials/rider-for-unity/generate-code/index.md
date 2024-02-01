@@ -18,7 +18,7 @@ video:
   end: 848
 ---
 
-Rider makes it easy to **generate Unity event functions**, either using the _Generate_ menu or simply by typing, with autocompletion.
+Rider makes it easy to _generate Unity event functions_, either using the **Generate** menu or simply by typing, with autocompletion.
 
 Auto-completion will suggest event function names when declaring methods in Unity-based classes, and expand to include method signature. Start typing an event function within a class deriving from a known Unity class, such as `MonoBehaviour`.
 

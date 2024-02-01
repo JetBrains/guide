@@ -20,9 +20,9 @@ We all consume a lot of code. Alas, it's a number of steps to get all that code 
 
 Let the IDE help out. If you have your GitHub credentials in your preferences, a few easy steps in the IDE will get you going.
 
-First, in the PyCharm menu, choose `VCS | Checkout from Version Control | Git`. You can also skip the keyboard by invoking `Find Action` and speed searching for `ch ve`.
+First, in the PyCharm menu, choose **VCS | Checkout from Version Control | Git**. You can also skip the keyboard by invoking Find Action and speed searching for `ch ve`.
 
-This brings up the `Clone Repository` dialog. In the URL field, speed search some letters in the repo name. The IDE looks across all the organizations that you are in, your personal account, and repos that you're a collaborator for.
+This brings up the _Clone Repository_ dialog. In the URL field, speed search some letters in the repo name. The IDE looks across all the organizations that you are in, your personal account, and repos that you're a collaborator for.
 
 If the repo you want isn't on GitHub, paste a URL in here.
 

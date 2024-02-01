@@ -23,7 +23,7 @@ You want to find a file at a path in your project tree. But you've turned off th
 
 Use the Navigation Bar instead:
 
-- Activate the Navigation Bar with `Navigate -> Jump to Navigation Bar` <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux)
+- Activate the Navigation Bar with **Navigate > Jump to Navigation Bar** <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux)
 
 - Use the cursor keys to get to the target directory
 
@@ -31,6 +31,6 @@ Use the Navigation Bar instead:
 
 Then, when your target is selected:
 
-- Invoke `Find in Path`<kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux) to bring up the `Find in Path` dialog.
+- Invoke Find in Path <kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux) to bring up the _Find in Path_ dialog.
 
 Just like you would in the Project Tool. Except, no permanent real estate lost and the Navigation Bar appears/disappears on command. All without touching the mouse.

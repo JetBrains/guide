@@ -15,7 +15,7 @@ video: "https://www.youtube.com/watch?v=_AFwFvGnEpY"
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-In this tutorial we are going to set up the FastAPI project with PyCharm. We are going to use the PyCharm Professional EAP **2021.3** which includes a FastAPI project type. EAP stands for **Early Access Program** but very soon it will be part of the stable release.
+In this tutorial we are going to set up the FastAPI project with PyCharm. We are going to use the PyCharm Professional EAP **2021.3** which includes a FastAPI project type. EAP stands for Early Access Program but very soon it will be part of the stable release.
 
 - **Note**: Just for your information, I am running this entire project in a virtual machine through VMWare workstation which has Ubuntu 20.04 LTS
 

@@ -19,7 +19,7 @@ In this tutorial we are going to work on Unit Testing using [Pytest](https://doc
 
 # AnyIO
 
-As you can see on my screen, recently FastAPI introduced **[AnyIO](https://anyio.readthedocs.io/en/stable/)**. AnyIO is an asynchronous networking and concurrency library that works on top of either asyncio or [Trio](https://trio.readthedocs.io/en/stable/).
+As you can see on my screen, recently FastAPI introduced [AnyIO](https://anyio.readthedocs.io/en/stable/). AnyIO is an asynchronous networking and concurrency library that works on top of either asyncio or [Trio](https://trio.readthedocs.io/en/stable/).
 
 ![step1](./steps/step1.png)
 
@@ -66,7 +66,7 @@ We are going to provide the test database name along-with other db credentials.
 
 I will make sure whenever the test begins the tables are dropped and re-created again.
 
-**conf_test_db.py**
+`conf_test_db.py`
 
 ```python
 from sqlalchemy import create_engine
@@ -244,7 +244,7 @@ We will be testing products and categories. I will create separate files for the
 
 In Category, we will test: create, list and delete endpoints.
 
-**test_categories.py**
+`test_categories.py`
 
 ```python
 import pytest
@@ -291,7 +291,7 @@ async def test_delete_category():
 
 We are done with the category, next we will create a file for products where we will test the create and listing endpoints.
 
-**test_products.py**
+`test_products.py`
 
 ```python
 import pytest
@@ -335,7 +335,7 @@ async def test_list_products():
     assert 'price' in response.json()[0]
 ```
 
-**shared/info.py**
+`shared/info.py`
 
 ```python
 from faker import Faker
@@ -385,7 +385,7 @@ Next, we will complete the remaining modules like `orders`, `cart`, `home` and `
 
 Same kind of operation I will be doing, you can follow me.
 
-**test_home.py**
+`test_home.py`
 
 ```python
 import pytest
@@ -402,7 +402,7 @@ async def test_root():
     assert response.json() == {"detail": "Not Found"}
 ```
 
-**test_login.py**
+`test_login.py`
 
 ```python
 import pytest
@@ -421,7 +421,7 @@ async def test_login():
 
 ```
 
-**test_cart.py**
+`test_cart.py`
 
 ```python
 import pytest

@@ -17,7 +17,7 @@ animatedGif:
   height: 300
 ---
 
-You can swap function parameters, attributes in tags, and elements in objects, arrays and boolean expressions using _Move Element Left/Right_:
+You can swap function parameters, attributes in tags, and elements in objects, arrays and boolean expressions using **Move Element Left/Right**:
 
 <kbd>⌃⌥←</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+Left Arrow</kbd> (Windows/Linux)
 <kbd>⌃⌥→</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+Right Arrow</kbd> (Windows/Linux)

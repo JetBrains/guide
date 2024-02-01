@@ -13,7 +13,7 @@ subtitle: Learn to use multiple containers to run a complete ASP.NET Solution.
 thumbnail: ./thumbnail.png
 ---
 
-Up to this point in the tutorial, we've created a .NET console application and an ASP.NET Core web application. That's a great start on our Docker journey, but containerization is about distributed systems, right? Let's add a database to our ASP.NET Core web application and use **Docker Compose** to create a logical application.
+Up to this point in the tutorial, we've created a .NET console application and an ASP.NET Core web application. That's a great start on our Docker journey, but containerization is about distributed systems, right? Let's add a database to our ASP.NET Core web application and use _Docker Compose_ to create a logical application.
 
 Using the application we created in the previous section, let's modify our project. We'll start by adding two NuGet packages of `Dapper` and `System.Data.SqlClient`, which will allow us to query our eventual Microsoft SQL Server instance.
 
@@ -147,7 +147,7 @@ The web application uses the `Dockerfile` we defined in our previous example. We
 
 The Microsoft SQL Server container uses a Linux variant of the popular database. Reading the image's documentation, we must set an administrator password and accept the end-user license agreement. We also set the `hostname` to `mssql`, which we've used in defining the connection string.
 
-We may have noticed several run markers appearing in our editor when we pasted the compose definition. Compose allows us to start the complete description or select elements of the application. In this case, we'll select the top-most run mark, which will execute a `docker-compose up` command. Our **Deploy Log** should contain messages from both containers.
+We may have noticed several run markers appearing in our editor when we pasted the compose definition. Compose allows us to start the complete description or select elements of the application. In this case, we'll select the top-most run mark, which will execute a `docker-compose up` command. Our _Deploy Log_ should contain messages from both containers.
 
 **Note the message describing the creation of a network. Our containers can now communicate with each other through this virtual network.**
 

@@ -20,16 +20,16 @@ video:
 
 ### Hierarchy & Bookmarks
 
-Make it easier to handle complex scenes by grouping objects by color in the **Hierarchy** panel.
+Make it easier to handle complex scenes by grouping objects by color in the _Hierarchy_ panel.
 Give each object a name, set a color, add notes, and add bookmarks to get back to it later.
 You can share your notes and bookmarks with your team.
 
 #### Sections
 
-A RiderFlow section is a custom group of objects in the **Hierarchy** view.
+A RiderFlow section is a custom group of objects in the _Hierarchy_ view.
 You can use sections to manage groups of objects when you play or debug the game and to arrange objects in design time.
 
-Select one or several game objects in the **Hierarchy** view.
+Select one or several game objects in the _Hierarchy_ view.
 To create a section, right-click the selection and choose **Create Section**.
 
 You can set a name and color for the new section, and add a note (optional).
@@ -37,7 +37,7 @@ You can set a name and color for the new section, and add a note (optional).
 #### Bookmarks
 
 Bookmarks provide you with a simple way for jumping between `GameObject`s.
-Select a `GameObject` in the **Hierarchy** view and click the star button to create or remove a bookmark.
+Select a `GameObject` in the _Hierarchy_ view and click the star button to create or remove a bookmark.
 
 Bookmarks are shown in the scene view management toolbar.
 

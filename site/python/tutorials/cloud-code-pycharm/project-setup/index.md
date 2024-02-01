@@ -121,7 +121,7 @@ Now, let’s move ahead and have a glance at the **[Edit Configurations](https:/
 
 ![new_project18](./images/screen26.png)
 
-The current deployment context is set to `docker-desktop`. The application will therefore be deployed in a local cluster.
+The current deployment context is set to _docker-desktop_. The application will therefore be deployed in a local cluster.
 
 ![new_project19](./images/screen27.png)
 
@@ -134,13 +134,13 @@ We’ll choose **On file save** in order to build and run the application whenev
 
 ![new_project20](./images/screen28.png)
 
-In **Advanced Settings**, you can customize the `kubeconfig` location, set the environment variables, and specify the resource deletion timeout, which is set to two minutes by default.
+In **Advanced Settings**, you can customize the _kubeconfig_ location, set the environment variables, and specify the resource deletion timeout, which is set to two minutes by default.
 
 You can also fine-tune the logging verbosity by changing the setting according to your needs.
 
 ![new_project21](./images/screen29.png)
 
-**Build / Deploy** will look for the `skaffold.yaml` configuration. This will then take instructions from the YAML file to perform further processing, such as building images and deploying the K8s manifests.
+_Build / Deploy_ will look for the `skaffold.yaml` configuration. This will then take instructions from the YAML file to perform further processing, such as building images and deploying the K8s manifests.
 
 ![new_project22](./images/screen30.png)
 
@@ -148,7 +148,7 @@ Returning to the topic of build features, you can select these according to your
 
 ![new_project23](./images/screen31.png)
 
-With this, the **Edit Configuration** step is complete. All that’s left to do is to click on **Apply** and then **OK**.
+With this, the _Edit Configuration_ step is complete. All that’s left to do is to click on **Apply** and then **OK**.
 
 Now, I am going to run the application by clicking on the **Play** icon.
 

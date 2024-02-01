@@ -29,7 +29,7 @@ Go into your Polygon class and press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter<
 
 ![](./12.png)
 
-Look at the test now you've made this change to the Polygon class. Now there's something odd about the `polygon.numberOfSides` call. The warning has gone, and `numberOfSides` is no longer in bold, it no longer looks like it's referencing a field. In fact, it's not. If we hold down **⌘**, or **Ctrl**, and move our mouse over this, we can see it's actually referencing the method `getNumberOfSides`.
+Look at the test now you've made this change to the Polygon class. Now there's something odd about the `polygon.numberOfSides` call. The warning has gone, and `numberOfSides` is no longer in bold, it no longer looks like it's referencing a field. In fact, it's not. If we hold down <kbd>⌘</kbd> (macOS) / <kbd>Ctrl</kbd> (Windows/Linux), and move our mouse over this, we can see it's actually referencing the method `getNumberOfSides`.
 
 ![](./13.png)
 

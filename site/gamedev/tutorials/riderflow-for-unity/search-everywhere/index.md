@@ -22,7 +22,7 @@ Use a simple shortcut to bring up the search pop-up window and look for GameObje
 You can quickly search for anything in your project. You can use a keyboard shortcut to bring up the search popup window.
 By default, it will show recent files, such as recently opened scenes. When you begin typing, other files will show up in the list as well.
 
-You can use the slider in the **Results** window to change the view. The slider allows you to view the results as a list or to get a preview.
+You can use the slider in the _Results_ window to change the view. The slider allows you to view the results as a list or to get a preview.
 Click on an item to highlight it in the editor and navigate.
 
 You will see several tabs in the popup window:

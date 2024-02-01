@@ -20,6 +20,6 @@ seealso:
 video: "https://youtu.be/w8aLGAlHH58"
 ---
 
-Expressions don't always need to be assigned to a variable. Use **Inline Variable** <kbd>⌥⌘N</kbd> (macOS) / <kbd>Ctrl+Alt+N</kbd> (Windows/Linux) to inline a variable.
+Expressions don't always need to be assigned to a variable. Use _Inline Variable_ <kbd>⌥⌘N</kbd> (macOS) / <kbd>Ctrl+Alt+N</kbd> (Windows/Linux) to inline a variable.
 
 You can inline methods, variables, fields, and constants with the same shortcut.

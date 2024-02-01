@@ -20,4 +20,4 @@ seealso:
 video: "https://youtu.be/FO9Elg5A8fw"
 ---
 
-Focus on your code with **Hide Tool Windows** <kbd>⌘⇧F12</kbd> (macOS) / <kbd>Ctrl+Shift+F12 (Windows/Linux)</kbd>. You can use the same shortcut to bring them back again. Or use **Zen mode** from the menu **View > Appearance > Enter Zen Mode**.
+Focus on your code with _Hide Tool Windows_ <kbd>⌘⇧F12</kbd> (macOS) / <kbd>Ctrl+Shift+F12 (Windows/Linux)</kbd>. You can use the same shortcut to bring them back again. Or use _Zen mode_ from the menu **View > Appearance > Enter Zen Mode**.

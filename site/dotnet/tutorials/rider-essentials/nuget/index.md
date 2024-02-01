@@ -18,12 +18,10 @@ video: "https://youtu.be/lnDQEcFWZIA"
 
 ### Managing Package References in Rider
 
-To [manage NuGet packages in Rider](https://www.jetbrains.com/help/rider/Using_NuGet.html), you can use the NuGet tool
-window. It shows installed packages, and lets you search for available packages on [NuGet.org](https://www.nuget.org/)
+To [manage NuGet packages in Rider](https://www.jetbrains.com/help/rider/Using_NuGet.html), you can use the NuGet tool window. It shows installed packages, and lets you search for available packages on [NuGet.org](https://www.nuget.org/)
 and other feeds.
 
-Search supports CamelHumps, so you can search for **_BDN_** instead of _**B**enchmark**D**ot**N**et_. Rider will also try
-to find packages when you make a typo in the search query.
+Search supports CamelHumps, so you can search for **_BDN_** instead of _**B**enchmark**D**ot**N**et_. Rider will also try to find packages when you make a typo in the search query.
 
 ### Everything is a Filter
 
@@ -32,8 +30,7 @@ The same can be done for a specific project, by using the project filter.
 
 ### Manage Sources and Folders
 
-In Rider, you can verify the size of all NuGet caches, and when needed, clear them. It's also possible to specify where
-downloaded packages should be stored on disk.
+In Rider, you can verify the size of all NuGet caches, and when needed, clear them. It's also possible to specify where downloaded packages should be stored on disk.
 
 ### See Also
 

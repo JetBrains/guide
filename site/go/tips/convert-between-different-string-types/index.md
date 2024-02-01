@@ -18,4 +18,4 @@ You can quickly convert strings that are surrounded by backticks to double-quote
 
 **How to use**
 
-Place the cursor on a string value, press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), and select _Convert double-quoted string to raw string_.
+Place the cursor on a string value, press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), and select **Convert double-quoted string to raw string**.

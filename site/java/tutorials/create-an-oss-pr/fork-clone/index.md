@@ -26,11 +26,11 @@ When we open [IntelliJ IDEA](https://www.jetbrains.com/idea/) and don’t alread
 
 ![Welcome screen](get-from-vcs.png)
 
-When we click the button, the “**Get from Version Control**” dialog opens. We can paste the URL we just copied. We can select where we want to store this project on our computer; let’s stick with the default. When we select "**Clone**", IntelliJ IDEA will clone the GitHub repository to the selected directory.
+When we click the button, the _Get from Version Control_ dialog opens. We can paste the URL we just copied. We can select where we want to store this project on our computer; let’s stick with the default. When we select **Clone**, IntelliJ IDEA will clone the GitHub repository to the selected directory.
 
 ![Clone project](clone-project.png)
 
-If we already have a project open, we can open the “**Get from Version Control**” dialog by going to **File > New > Project from version control**.
+If we already have a project open, we can open the _Get from Version Control_ dialog by going to **File > New > Project from version control**.
 
 ![New Project from version control menu](menu-project-vcs.png)
 

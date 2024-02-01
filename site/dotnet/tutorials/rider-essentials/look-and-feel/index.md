@@ -18,8 +18,7 @@ video: "https://youtu.be/I3wlWFUPpAc"
 
 ### Customizing Rider theme
 
-There are several options to personalize your Rider installation. User interface themes will customize the entire
-UI look and feel, while editor themes apply to only the editor fonts and colors.
+There are several options to personalize your Rider installation. User interface themes will customize the entire UI look and feel, while editor themes apply to only the editor fonts and colors.
 
 To explore themes that are available, you can use the [theme switcher to preview and change themes in Rider](https://www.jetbrains.com/help/rider/Switching_Between_Schemes.html).
 
@@ -27,13 +26,9 @@ Editor colors and fonts can be configured [in the color scheme options](https://
 
 ### Customizing the Editor
 
-Next to the general look and feel, your editor can be customized quite extensively. For example, you can toggle whether
-to use tabs, [configure code styles](https://www.jetbrains.com/help/rider/Settings_Code_Style.html), the order of
-[member in their file](https://www.jetbrains.com/help/rider/Reference__Options__Languages__Common__Generated_Members.html),
-[code cleanup](https://www.jetbrains.com/help/rider/Settings_Code_Cleanup.html), and more.
+Next to the general look and feel, your editor can be customized quite extensively. For example, you can toggle whether to use tabs, [configure code styles](https://www.jetbrains.com/help/rider/Settings_Code_Style.html), the order of [member in their file](https://www.jetbrains.com/help/rider/Reference__Options__Languages__Common__Generated_Members.html), [code cleanup](https://www.jetbrains.com/help/rider/Settings_Code_Cleanup.html), and more.
 
-The [editor settings](https://www.jetbrains.com/help/rider/Settings_Editor.html) give you many other options to customize
-Rider's editor according to your preferences.
+The [editor settings](https://www.jetbrains.com/help/rider/Settings_Editor.html) give you many other options to customize Rider's editor according to your preferences.
 
 ### See Also
 

@@ -20,8 +20,8 @@ For example, you may want to explore the file system, look at processes running 
 
 You can connect to a running Docker container in many ways: using the `docker attach` command, using `docker exec`, or (surprise!) with the click of a button in the IDE!
 
-After [connecting to Docker](https://www.jetbrains.com/help/rider/docker.html#connect_to_docker), the **Services** tool window gives you access to all functionality around Docker.
+After [connecting to Docker](https://www.jetbrains.com/help/rider/docker.html#connect_to_docker), the _Services_ tool window gives you access to all functionality around Docker.
 You can start/stop containers, explore images, networks, and volumes, inspect a container's environment variables, expose ports, [and much more](https://blog.jetbrains.com/dotnet/2019/05/21/containers-images-introduction-docker-rider/).
 
-After selecting your container in the tree on the left-hand side, clicking the **Terminal** button will open a terminal inside the container and lets you work with it interactively.
+After selecting your container in the tree on the left-hand side, clicking **Terminal** will open a terminal inside the container and lets you work with it interactively.
 You can now run any command in the Docker container and look at the results.

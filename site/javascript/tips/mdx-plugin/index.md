@@ -15,4 +15,4 @@ cardThumbnail: ./card.png
 screenshot: ./tip.jpeg
 ---
 
-Working with [MDX](https://mdxjs.com/)? Install the MDX plugin from _Preferences/Settings | Plugins_ to get syntax highlighting, code completion and auto imports for React components and JavaScript symbols in your _.mdx_ files.
+Working with [MDX](https://mdxjs.com/)? Install the MDX plugin from **Preferences/Settings | Plugins** to get syntax highlighting, code completion and auto imports for React components and JavaScript symbols in your _.mdx_ files.

@@ -21,7 +21,7 @@ video: "https://youtu.be/VlnSuPYdcLc"
 
 Use the Dependency Matrix to visualize dependencies between components in your projects.
 
-As you can see in the legend at the top right of the **DSM tool window**:
+As you can see in the legend at the top right of the _DSM_ tool window:
 
 - dependencies are shown in blue
 - mutual or cyclic dependencies, meaning that two components depend on each other, are shown in red

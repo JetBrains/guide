@@ -24,8 +24,8 @@ Click on a process to attach a profiler to it, for example a CPU profiler. The I
 
 Click on a process in the profiler window to edit the configurations of the profilers.
 
-Right click on a process in the profiler window to capture a memory snapshot at this moment in time. Open this to see which objects are taking up the most space on the heap.
+Right-click on a process in the profiler window to capture a memory snapshot at this moment in time. Open this to see which objects are taking up the most space on the heap.
 
-Right click on a process in the profiler window to see the CPU and Memory use in real time. This is really helpful for getting a current view on what's happening in the application right now.
+Right-click on a process in the profiler window to see the CPU and Memory use in real time. This is really helpful for getting a current view on what's happening in the application right now.
 
 Find out more about the profiler in IntelliJ IDEA's [help documentation](https://www.jetbrains.com/help/idea/cpu-profiler.html).

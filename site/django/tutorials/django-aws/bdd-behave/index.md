@@ -24,13 +24,13 @@ Acceptance Test-Driven Development is very similar to Behavioral-Driven Developm
 
 ## Installing ChromeDriver
 
-Before moving ahead, make sure you have installed **Google Chrome** & **ChromeDriver** on your machine.
+Before moving ahead, make sure you have installed _Google Chrome_ & _ChromeDriver_ on your machine.
 
 The official website of ChromeDriver is being displayed on your screen, You can download it from [here](https://chromedriver.chromium.org/).
 
 ![chrome_driver_web_page](steps/step1.png)
 
-As of now I will be downloading the version **89** which is a stable release. Before installing ChromeDriver make sure to check your Google Chrome version, both need to be aligned.
+As of now I will be downloading the version _89_ which is a stable release. Before installing ChromeDriver make sure to check your Google Chrome version, both need to be aligned.
 
 ![downloading_chrome_driver](steps/step2.png)
 
@@ -40,7 +40,7 @@ If you are doing it for first time make sure to run the below given command.
 
 ![chrome_driver_installation_1](steps/step3.png)
 
-After downloading the chromedriver, I am going to **unzip** and move it to **/usr/local/share**.
+After downloading the chromedriver, I am going to unzip and move it to _/usr/local/share_.
 
 ![chrome_driver_installation_2](steps/step4.png)
 
@@ -56,34 +56,29 @@ Okay, we have now successfully set up the ChromeDriver.
 
 ## Installing Behave
 
-Now, I will be installing the **“behave django”** python package. Behave is a behavior-driven test framework that is
-largely similar to other BDD test frameworks such as Cucumber, SpecFlow, Cucumber-JVM, etc.
+Now, I will be installing the _behave django_ python package. Behave is a behavior-driven test framework that is largely similar to other BDD test frameworks such as Cucumber, SpecFlow, Cucumber-JVM, etc.
 
 ![behave_installation](steps/step8.png)
 
-We will also install **Selenium WebDriver**. Selenium WebDriver is among one of the most popular tools
-when it comes to Web UI automation. The Selenium framework can be used with a wide range of programming
-languages such as Python, Java, C#, and more.
+We will also install _Selenium WebDriver_. Selenium WebDriver is among one of the most popular tools when it comes to Web UI automation. The Selenium framework can be used with a wide range of programming languages such as Python, Java, C#, and more.
 
 ![selenium_installation](steps/step9.png)
 
-I will be creating a **.behaverc** file in the project root. I will pass the path where my
-acceptance tests are stored, so our test runner can pick up the tests.
+I will be creating a _.behaverc_ file in the project root. I will pass the path where my acceptance tests are stored, so our test runner can pick up the tests.
 
 ![behaverc_path](steps/step10.png)
 
-Next, I will create two directories and name them as **features** and **steps**.
+Next, I will create two directories and name them as _features_ and _steps_.
 
-A feature file contain high level description of the test scenario in simple language known as **Gherkin**.
-Gherkin is a plain English text language.
+A feature file contain high level description of the test scenario in simple language known as _Gherkin_. Gherkin is a plain English text language.
 
 Feature files consist of following components:
 
-- **Feature**: A feature would describe the current test script which has to be executed.
-- **Scenario**: Scenario describes the steps and expected outcome for a particular test case.
-- **Given**: It specifies the context of the text to be executed.
-- **When**: "When" specifies the test action that has to performed
-- **Then**: The expected outcome of the test can be represented by "Then"
+- Feature: A feature would describe the current test script which has to be executed.
+- Scenario: Scenario describes the steps and expected outcome for a particular test case.
+- Given: It specifies the context of the text to be executed.
+- When: "When" specifies the test action that has to performed
+- Then: The expected outcome of the test can be represented by "Then"
 
 ![behave_feature](steps/step11.png)
 
@@ -110,10 +105,7 @@ using context to pass selenium information. Keep following along with me, you ar
 
 ![behave_steps](steps/step12.png)
 
-Okay, we have completed the first step **“I am on the Django Admin”**. Let me tell you what's going to happen. The Chrome
-application is going to open the Django Admin login page and will pass username and password in the input fields and
-finally click on the Login button. This is what happens when a user tries to log in into Django Admin, we are
-automating the manual approach.
+Okay, we have completed the first step “I am on the Django Admin”. Let me tell you what's going to happen. The Chrome application is going to open the Django Admin login page and will pass username and password in the input fields and finally click on the Login button. This is what happens when a user tries to log in into Django Admin, we are automating the manual approach.
 
 The final code at the end is going to look like this.
 
@@ -174,12 +166,9 @@ def step_impl(context):
 
 Next, I will be installing a XPath plugin from Google WebStore. XPath stands for XML Path Language.
 
-XPath uses "path like" syntax to identify and navigate nodes in an XML document. This plugin will be very helpful in
-finding elements in our HTML page, and those are not having too much experience working with XPath.
+XPath uses "path like" syntax to identify and navigate nodes in an XML document. This plugin will be very helpful in finding elements in our HTML page, and those are not having too much experience working with XPath.
 
-As you can see on line number 3 we are directly passing the value in Django Settings Module, make sure in future you try to pass information through the environment variable.
-We are done with our step definition along-with install xpath plugin. Next, we need to set up our test
-environment before running the application.
+As you can see on line number 3 we are directly passing the value in Django Settings Module, make sure in future you try to pass information through the environment variable. We are done with our step definition along-with install xpath plugin. Next, we need to set up our test environment before running the application.
 
 For your reference, if you want to dig deeper into this configuration please visit the below given link.
 
@@ -253,10 +242,9 @@ def before_scenario(context, scenario):
     use_fixture(django_test_case, context)
 ```
 
-As you can the above code, whenever the test runner is initiated, the BaseTest class is going to create a sample user
-and an organization in our test database.
+As you can the above code, whenever the test runner is initiated, the BaseTest class is going to create a sample user and an organization in our test database.
 
-Before running tests, make sure you have added **behave_django** in the **INSTALLED_APPS**.
+Before running tests, make sure you have added _behave_django_ in the _INSTALLED_APPS_.
 
 ![behave_in_installed_apps](steps/step16.png)
 
@@ -264,7 +252,7 @@ Restart your server if required, then I will click on **Tools** and **Run manage
 
 ![behave_manage_command](steps/step17.png)
 
-I will type, **behave** and press enter.
+I will type, _behave_ and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux).
 
 ![behave_manage_command_2](steps/step18.png)
 
@@ -275,13 +263,13 @@ Looks like our test case has failed, let me fix it.
 There are two issues I have identified.
 
 - First, I missed the ending square bracket at line number 24.
-- Second, our models are not registered in **admin.py**
+- Second, our models are not registered in _admin.py_
 
 ![behave_error_2](steps/step20.png)
 
 ![behave_error_3](steps/step21.png)
 
-Make sure to add to **verbose_name** and **verbose_name_plural** in your model class meta,
+Make sure to add to _verbose_name_ and _verbose_name_plural_ in your model class meta,
 otherwise selenium won't be able to identify the text. I recommend watching the video, if you are getting stuck in between.
 
 ![behave_error_4](steps/step22.png)
@@ -290,13 +278,11 @@ So, finally we have fixed all the issues. Let's retest again.
 
 ![behave_retesting](steps/step23.png)
 
-The test scenarios has successfully passed. You can see the below image that a notification is appearing **“Sentry is appearing to send 35 pending error messages”**. These are the errors
-which got raised during the test execution. You can disable sentry while your tests are being executed in a CI/CD pipeline.
+The test scenarios has successfully passed. You can see the below image that a notification is appearing “Sentry is appearing to send 35 pending error messages”. These are the errors which got raised during the test execution. You can disable sentry while your tests are being executed in a CI/CD pipeline.
 
 ![behave_testing_result](steps/step24.png)
 
-I hope you got a basic understanding of Behavior Driven Development. This was a short introduction to BDD and if you are
-interested to know more about BDD, then follow the link given below.
+I hope you got a basic understanding of Behavior Driven Development. This was a short introduction to BDD and if you are interested to know more about BDD, then follow the link given below.
 
 - [Behave Documentation](https://behave.readthedocs.io/en/stable/)
 - [Getting Started with Behavior Testing in Python with Behave](https://semaphoreci.com/community/tutorials/getting-started-with-behavior-testing-in-python-with-behave)

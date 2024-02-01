@@ -21,4 +21,4 @@ GoLand can generate your import for you, even when you haven't installed the pac
 
 **How to use:**
 
-Press <span class="tag is-rounded">New in 2020.3</span> to invoke the list of quick-fixes on the red import line and select **Sync packages of <project\>** to import the package into your project.
+Press to invoke the list of quick-fixes on the red import line and select **Sync packages of <project\>** to import the package into your project.

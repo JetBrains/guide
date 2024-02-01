@@ -15,7 +15,7 @@ While IntelliJ IDEA does not allow you to open multiple _projects_ in the same w
 
 Let’s take a look at this example. Here, you have the server side project open and want to add the client side to the same project. You can import the client side into this server side project as a module.
 
-You can do so from the menu by going to **File | New | Module from Existing Sources** or, alternatively, use **Find Action** (**⌘⇧A** on macOS, or **Ctrl+Shift+A** on Windows/Linux).
+You can do so from the menu by going to **File | New | Module from Existing Sources** or, alternatively, use Find Action <kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux).
 ![Module from Existing Sources](module-from-existing-sources.png)
 
 Select the directory where the project is located, select the project you want to open and click **Open**.

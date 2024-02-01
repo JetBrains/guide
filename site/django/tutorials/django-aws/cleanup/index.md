@@ -14,8 +14,7 @@ obsoletes:
   - /pycharm/tutorials/django-aws/cleanup
 ---
 
-Hello everyone, welcome to the Django tutorial series. In this final tutorial step, we are going to remove the
-AWS resources that we created during this tutorial.
+Hello everyone, welcome to the Django tutorial series. In this final tutorial step, we are going to remove the AWS resources that we created during this tutorial.
 
 We are going to remove DB instance, EC2 server, ECR repository, DjangoVPC, IAM User and
 finally cancel our NICE DCV subscription from AWS marketplace.

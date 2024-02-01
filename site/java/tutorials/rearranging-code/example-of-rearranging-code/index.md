@@ -186,7 +186,7 @@ Let's invoke [rearrange code](https://www.jetbrains.com/help/idea/reformat-and-r
 
 ![Rearrange Code](rearrange-code.png)
 
-Press **Enter** on **Rearrange Code** option to apply the settings to the whole class.
+Press<kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) on **Rearrange Code** option to apply the settings to the whole class.
 
 When you do this, the code will be rearranged (see below). Here is a list of changes:
 

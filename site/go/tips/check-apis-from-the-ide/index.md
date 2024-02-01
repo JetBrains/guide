@@ -13,7 +13,6 @@ video: >-
 ---
 
 **How to use:**
-Create a file with _.http_ extension in your project. Then, type
-the request you want to make.
+Create a file with _.http_ extension in your project. Then, type the request you want to make.
 
 Finally, press <kbd>⌃⏎</kbd> (macOS) / <kbd>Ctrl+Enter</kbd> (Windows/Linux) and use the _Run "address"_ action from the menu.
