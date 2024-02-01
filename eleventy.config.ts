@@ -12,7 +12,6 @@ import { absolutePaths } from "./src/plugins/absolutePaths";
 import { metaOpenGraphImagePlugin } from "./src/plugins/metaOpenGraphImagePlugin";
 import purgeCss from "@fullhuman/postcss-purgecss";
 import { renderToString } from "jsx-async-runtime";
-import { content } from "happy-dom/lib/PropertySymbol";
 
 const options = commandLineArgs([
 	{ name: "config", type: String },
