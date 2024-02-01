@@ -25,7 +25,7 @@ You’re finishing some work…whew!!!
 But, as soon as you commit, You realize: you left something out.
 Good news -- the IDE makes “Amend Commit” really easy.
 
-Make your change, and if you haven’t pushed, go back to the commit, and check `Amend`.
+Make your change, and if you haven’t pushed, go back to the commit, and check **Amend**.
 When you commit, your change is now included.
 
 ## The Problem
@@ -53,7 +53,7 @@ The Git tool window tells you about your last commit, and what changed.
 You want to make a change, get it into that commit, as if the change was there in the first place.
 What are your options?
 
-In [another tip](../undo-last-commit/), we showed you `Undo Commit`.
+In [another tip](../undo-last-commit/), we showed you Undo Commit.
 This would put everything back, you make your change, then another commit.
 
 Instead, with Amend Commit, you make the change.
@@ -72,5 +72,5 @@ When you view the diff for the Markdown change, you see: the date change is now 
 For those that don’t trust the convenience, you can look at the `Git Console` to see the command which you would have typed from the command line.
 
 One last point: what would this look like without a mouse?
-We make a change, open the commit tool using <kbd>⌥⌘M</kbd> (macOS) / <kbd>Ctrl+Alt+M</kbd> (Windows/Linux) (on Mac) to check the `Amend` box.
-Then `Ctrl-Enter` to commit.
+We make a change, open the commit tool using <kbd>⌥⌘M</kbd> (macOS) / <kbd>Ctrl+Alt+M</kbd> (Windows/Linux) (on Mac) to check the **Amend** box.
+Then <kbd>⌃⏎</kbd> (macOS) / <kbd>Ctrl+Enter</kbd> (Windows/Linux) to commit.

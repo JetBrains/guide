@@ -27,7 +27,7 @@ First, create `src/laxleague/guardian.py` with an empty class:
 
 Why do we make an empty placeholder class?
 To let PyCharm generate the test for us.
-Use `Navigate | Go To Test` (`Ctrl-Shift-T` Win/Linux, `Shift-Cmd-T` macOS) as explained in the last step to help generate `tests/test_guardian.py`.
+Use `Navigate | Go To Test` <kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux) as explained in the last step to help generate `tests/test_guardian.py`.
 
 In that file, change the first test to `test_construction` to "get me into the flow", letting PyCharm generate the import:
 
@@ -52,7 +52,7 @@ Now let's get ourselves into a TDD flow.
 We'd like to easily look at the code we are writing and the tests we providing against that code.
 I like both visible, with my code on the left and the tests on the right.
 
-Invoke `Find Action` with Cmd-Shift-A and search for `Split Vertically`.
+Invoke Find Action with <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) and search for `Split Vertically`.
 On the left, open `guardian.py` and on the right, make sure `test_guardian.py` is still open.
 While we're at it, collapse the project tool window, turn off the toolbars and navigation bars, and tabs.
 
@@ -117,13 +117,12 @@ As you are writing this, let PyCharm help you:
   choose `Add field 'first_name' to Guardian`. PyCharm will generate the
   `self.first_name = first_name` boilerplate for you.
 
-- Finally, if the generation is in the wrong order, use
-  `Shift-Alt-Up` or down to move the line, instead of cutting and pasting.
+- Finally, if the generation is in the wrong order, use Press <kbd>⌥⇧↑</kbd> (macOS) / <kbd>Alt+Shift+Up Arrow</kbd> (Windows/Linux) or <kbd>⌥⇧↓</kbd> (macOS) / <kbd>Alt+Shift+Down Arrow</kbd> (Windows/Linux) to move the line, instead of cutting and pasting.
 
 Our test now passes but doesn't do an assertion.
 Back in `test_construction`, let's show a bit about how PyCharm can help you be more productive and accurate.
 
-First, hold down `Ctrl` and hover on the `g`.
+First, hold down <kbd>Ctrl</kbd> and hover on the `g`.
 PyCharm tells you that `g` is of inferred type `Guardian.`
 Next, add an assertion:
 
@@ -142,7 +141,7 @@ You can see this problem by changing the expected value of 'Mary' to a value of 
 PyCharm's test output now shows expected vs. actual, and `Expected` is in the wrong place.
 
 We need to flip that, but good news: PyCharm excels at such janitorial work.
-Click on the double-equal, hit `Alt-Enter`, and choose `Flip '=='`:
+Click on the double-equal, hit <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), and choose `Flip '=='`:
 
 ![Flip Arguments](./flip_arguments.png)
 

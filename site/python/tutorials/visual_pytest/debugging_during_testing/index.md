@@ -74,23 +74,23 @@ This brings up a new tool window in the bottom, running the debugger:
 ![Run Under Debugger](./run_under_debugger.png)
 
 Our test execution has stopped on the line with the assertion.
-Our `Variables` pane shows that `player_one` exists in the scope and we can take a look at it:
+Our _Variables_ pane shows that `player_one` exists in the scope and we can take a look at it:
 
 ![Expanded Variable in Debugger](./no_guardians.png)
 
 Aha, that's the problem!
 But let's say we _still_ couldn't spot it. We want to poke around interactively.
 
-Highlight `player_one.primary_guardian` in that line of code -- the one triggering the error -- then right click and choose `Evaluate Expression`.
-When you click the `Evaluate` button, you see the output:
+Highlight `player_one.primary_guardian` in that line of code -- the one triggering the error -- then right click and choose **Evaluate Expression**.
+When you click **Evaluate** button, you see the output:
 
 ![Evaluate Expression](./evaluate_expression.png)
 
-You can now poke around interactively in the state at that point by typing in the `Expression:` field.
+You can now poke around interactively in the state at that point by typing in the **Expression:** field.
 You can even overwrite the value of a variable in the scope or create new variables.
 
 You're currently poking around in the code for the test, but perhaps you want to poke around in the implementation.
-Click the `Step Into` button and the debugger will put you on the `return self.guardians[0]` line in the `primary_guardian` property/method.
+Click **Step Into** and the debugger will put you on the `return self.guardians[0]` line in the `primary_guardian` property/method.
 
 With this we quickly see what is the problem: there is no item zero in `self.guardians`.
 Finish up by removing the `assert player_one.primary_guardian` line and clearing the breakpoint by clicking on the red circle.

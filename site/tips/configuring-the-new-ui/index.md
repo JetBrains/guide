@@ -28,7 +28,7 @@ Next you’ll tell me that I can edit this toolbar. Funny you should say that! S
 
 I use multiple projects, does the new UI help me with that? Of course! You can distinguish multiple projects at a glance by right-clicking on your main toolbar and changing your project colour. Let’s go for Cobolt.
 
-Okay, Nice! Can I rearrange my tool windows too? Yup, and with the new UI you can configure them your way! You can drag them below the separator to display two vertically, or you can drag them to the right to display two horizontally. Don’t forget you can use Cmd+Shift+F12 or Ctrl+Shift+F12 to hide all tool windows.
+Okay, Nice! Can I rearrange my tool windows too? Yup, and with the new UI you can configure them your way! You can drag them below the separator to display two vertically, or you can drag them to the right to display two horizontally. Don’t forget you can use <kbd>⌘⇧F12</kbd> (macOS) / <kbd>Ctrl+Shift+F12 (Windows/Linux)</kbd> to hide all tool windows.
 
 Anything else I need to know? Yup! We’ve simplified the Debug tool window based on what you use the most so there’s now a single toolbar for more space. If the options you want to use the most aren’t available, just add them back! Perhaps you always want to see Evaluate Expression, for example,
 

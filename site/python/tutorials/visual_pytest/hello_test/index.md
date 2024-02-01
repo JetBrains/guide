@@ -18,7 +18,7 @@ Let's write a test with a simple assert, then show the various ways to run this 
 
 We want to make and run a test for our `Player` class before we do too much implementation.
 PyCharm can help us make the test.
-Click somewhere in the `Player` and invoke `Navigate | Go To Test` (`Ctrl-Shift-T` Win/Linux, `Shift-Cmd-T` macOS):
+Click somewhere in the `Player` and invoke **Navigate | Go To Test** <kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux)
 
 ![Invoke Navigate To Test](./invoke_navigate_to_test.png)
 
@@ -54,7 +54,7 @@ Sure, small victory -- but small victories can help get us into the TDD flow.
 ## Warning
 
 Don't see `pytest` in the context menu as a way to run your tests?
-You probably didn't configure `pytest` as the test framework in the `Python Integrated Tools` section of the PyCharm's project settings.
+You probably didn't configure `pytest` as the test framework in the _Python Integrated Tools_ section of the PyCharm's project settings.
 It should configure automatically, though, if your environment has `pytest` when you first open in PyCharm (or have it set globally.)
 
 PyCharm opens a new run tool window in the bottom of the screen.
@@ -128,11 +128,11 @@ Simply: the import works, it's callable, and can be called.
 
 Remember that PyCharm can help you [generate the import of `Player` as you type](../../../tips/generate-imports-while-typing/).
 You don't need to stop your flow, go to the top, and write the import.
-Instead, type `Pla` and hit `Ctrl-Space-Space` to autocomplete _and_ add the import line at the top, in the correctly-sorted location, combined with any existing import of the module.
+Instead, type `Pla` and hit <kbd>Ctrl+Space+Space</kbd> to autocomplete _and_ add the import line at the top, in the correctly-sorted location, combined with any existing import of the module.
 
 # Re-Running
 
-Let's run everything in the file (currently one test) by again right-clicking in the editor and choosing `Run 'pytest in test_player.py'`.
+Let's run everything in the file (currently one test) by again right-clicking in the editor and choosing **Run 'pytest in test_player.py'**.
 Our test passes again:
 
 ![Final Test Run](./final_test_run.png)

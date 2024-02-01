@@ -76,8 +76,8 @@ Go to that file’s folder and choose Local History.
 The deletion event is there, and you can restore the file.
 
 As a wrapup, let’s see the same sequence -- without the mouse!
-First, invoke `Search Everywhere` and search for the `Show Local History` action.
+First, invoke Search Everywhere and search for the _Show Local History_ action.
 
-In the Local History window, tab into the `Old Changes` panel.
+In the Local History window, tab into the _Old Changes_ panel.
 Cursor down to the edit.
 Tab to go into the changes.

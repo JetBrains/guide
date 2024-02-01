@@ -151,7 +151,7 @@ guardians: List[Guardian] = field(default_factory=list)
 
 ## Note
 
-As you type `List`, use `Ctrl-Space | Ctrl-Space` to complete it, which also generates the import. Same for `Guardian`.
+As you type `List`, use <kbd>⌃␣</kbd> (macOS) / <kbd>Ctrl+Space</kbd> (Windows/Linux) to complete it, which also generates the import. Same for `Guardian`.
 
 What is `typing.List` and why can't we use `list`?
 It is a "generic", which lets it further specify the types of things it contains.

@@ -84,7 +84,7 @@ Go to `Settings -> Tools -> Python Integrated Tools` and change `Default test ru
 
 ![Python Integrated Tools](./python_integrated_tools.png)
 
-Mine is set automatically because I set `pytest` as my [default test runner for all projects](https://www.jetbrains.com/help/pycharm/configure-project-settings.html#new-default-settings) using `File | New Projects Settings | Settings/Preferences for New Projects`:
+Mine is set automatically because I set `pytest` as my [default test runner for all projects](https://www.jetbrains.com/help/pycharm/configure-project-settings.html#new-default-settings) using **File | New Projects Settings | Settings/Preferences for New Projects**:
 
 Finally, make a top-level directory called `tests`.
 This mimics the [pytest good practices](https://docs.pytest.org/en/latest/goodpractices.html#tests-outside-application-code).

@@ -51,7 +51,7 @@ Fortunately, this is the kind of thing our IDEs are great at.
 Right-click on the commit, and you’ll get a list of actions to take on that commit.
 
 There are LOTS of things we can do to help, as this list shows.
-Beside `Edit Commit Message`, you can see <kbd>F2</kbd> (macOS) / <kbd>F2</kbd> (Windows/Linux).  
+Beside **Edit Commit Message**, you can see <kbd>F2</kbd> (macOS) / <kbd>F2</kbd> (Windows/Linux).  
 This shows we could have skipped the context menu by selecting the commit and pressing <kbd>F2</kbd> (macOS) / <kbd>F2</kbd> (Windows/Linux).
 
 We’ll select that option and be prompted with a dialog to edit the commit.

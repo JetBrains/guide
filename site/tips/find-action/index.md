@@ -29,7 +29,7 @@ The IDE has a lot of power, which means a lot of actions, with new ones coming i
 
 ## The Solution
 
-What you need is Find Action, a single keyboard shortcut to memorize. The one ring to rule them all. Shift-Cmd-A on macOS, Shift-Ctrl-A on Windows and Linux:
+What you need is Find Action, a single keyboard shortcut to memorize. The one ring to rule them all. <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux):
 
 Type “move line up” and you’ll see the Move Line Up Action. Bonus: the keyboard shortcut is shown when an action has one.
 

@@ -36,7 +36,7 @@ Or throw out your changes with “Accept Theirs”.
 The on-screen table helps explain which is which.
 But probably isn't what you want.
 
-To start resolving, click the `Merge` button and the IDE guides you through each change in each file.
+To start resolving, click **Merge** and the IDE guides you through each change in each file.
 In the left column you see a file as it is in the branch you are merging into.
 In this case, `main`.
 All kinds of changes: additions in green, removals in gray, changes and blue, with conflicting changes in red.

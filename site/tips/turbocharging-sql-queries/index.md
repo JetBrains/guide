@@ -35,7 +35,7 @@ Luckily, the IDE has a bunch of functionality that lets us cut out a lot of this
 We can hit Alt- or Option-ENTER next to this wildcard …
 And the IDE will expand the column list for us!
 
-Instead of manually typing out each column name, we can instead bring up the context menu by pressing Alt- or Option-ENTER, and let the IDE expand the column list for us, and we can now just go ahead and delete any of the fields we don’t want to retrieve!
+Instead of manually typing out each column name, we can instead bring up the context menu by pressing <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), and let the IDE expand the column list for us, and we can now just go ahead and delete any of the fields we don’t want to retrieve!
 
 If we do need to type out columns, or anything really, the IDE’s sophisticated code completion makes this a breeze. What about JOIN statements?
 Well, if we have the table foreign keys properly set up, or the join columns have the same name, the IDE will do the work for us, detecting the correct columns and automatically creating the table aliases.

@@ -38,7 +38,7 @@ Mouseover on the tabs to show key bindings to open directly. “Symbols” is a 
 
 - This checkbox controls how widely Search Everywhere goes looking. Press <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux) again to toggle it to checked, then again to unchecked.
 - Use filter… to restrict results by certain criteria, per-tab.
-- Click “Open in Find Tool Window” to get the full “find” treatment.
+- Click **Open in Find Tool Window** to get the full _find_ treatment.
 
 Yes, you can resize this window, as if it was a normal window. Next time you use Search Everywhere, it will remember the dimensions. Last point: the footer area has…tips! As you can see from these, lots of power in Search Everywhere.
 

@@ -50,7 +50,7 @@ Instead, let's import `pytest` and put a decorator for the `skip` marker on that
 {% include "./demos/test_player02.py" %}
 ```
 
-Remember, we don't have to manually type the import...just start typing `@pyt` and let PyCharm autocomplete using `Ctrl-Space Ctrl-Space`.
+Remember, we don't have to manually type the import...just start typing `@pyt` and let PyCharm autocomplete using <kbd>⌃␣</kbd> (macOS) / <kbd>Ctrl+Space</kbd> (Windows/Linux).
 
 Now when the tests run (automatically, thanks to `Toggle auto-test`), they don't fail, but they do indicate a test was ignored:
 
@@ -64,7 +64,7 @@ In `player.py`, clone the existing `add_guardian` method, then change its argume
 ```
 
 We can now remove the `skip` marker and the test passes.
-Remember to remove the now-unused `pytest` import in `test_player.py` using `Optimize Imports`.
+Remember to remove the now-unused `pytest` import in `test_player.py` using Optimize Imports.
 
 # Some Typing Cleanup
 
