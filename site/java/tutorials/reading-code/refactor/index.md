@@ -4,6 +4,7 @@ date: 2024-03-01
 title: Refactoring
 topics:
   - tricks
+  - refactoring
 author: md
 subtitle: Refactoring code for understanding
 thumbnail: ./thumbnail.png

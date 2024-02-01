@@ -9,7 +9,7 @@ subtitle: Reading Code in IntelliJ IDEA Summary
 thumbnail: ./thumbnail.png
 ---
 
-In this tutorial we’ve looked at many ways IntelliJ IDEA can help you to read and understand code.
+In this tutorial we’ve looked at the many ways IntelliJ IDEA can help you to read and understand code.
 
 ### IntelliJ IDEA Shortcuts Used
 

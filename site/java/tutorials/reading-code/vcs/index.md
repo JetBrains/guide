@@ -4,6 +4,7 @@ date: 2024-03-01
 title: Version control (Git) history
 topics:
   - tricks
+  - vcs
 author: md
 subtitle: Using Version control (Git) history to understand the project
 thumbnail: ./thumbnail.png

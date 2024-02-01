@@ -4,6 +4,8 @@ date: 2024-03-01
 title: Testing and debugging
 topics:
   - tricks
+  - testing
+  - debugging
 author: md
 subtitle: Testing and debugging in IntelliJ IDEA
 thumbnail: ./thumbnail.png
