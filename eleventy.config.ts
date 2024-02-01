@@ -12,6 +12,7 @@ import { absolutePaths } from "./src/plugins/absolutePaths";
 import { metaOpenGraphImagePlugin } from "./src/plugins/metaOpenGraphImagePlugin";
 import purgeCss from "@fullhuman/postcss-purgecss";
 import { renderToString } from "jsx-async-runtime";
+import { content } from "happy-dom/lib/PropertySymbol";
 
 const options = commandLineArgs([
 	{ name: "config", type: String },
@@ -25,10 +26,18 @@ module.exports = function (eleventyConfig: any) {
 	// Stop logging every file that gets written
 	eleventyConfig.setQuietMode(true);
 
-	eleventyConfig.addTransform("tsx", async (content: any) => {
-		const result = await renderToString(content);
-		return `<!doctype html>\n${result}`;
-	});
+	eleventyConfig.addTransform(
+		"tsx",
+		async (content: any, outputPath: string) => {
+			// @ts-ignore
+			if (outputPath.endsWith(".html")) {
+				const result = await renderToString(content);
+				return `<!doctype html>\n${result}`;
+			} else {
+				return content;
+			}
+		}
+	);
 
 	eleventyConfig.addPlugin(EleventyVitePlugin, {
 		viteOptions: {
