@@ -32,7 +32,7 @@ If you're accessing an API through a service layer that uses `HttpClient` in you
 
 > **Tip**
 >
-> Rider is an excellent tool for working with APIs and JSON data. Open the Endpoints Tool Window through the **View | Tool Windows | Endpoints** menu option. From there you can navigate to the code behind the endpoint and make, manage, and save calls to endpoints. The **Endpoints Tool Window** gives a great look at the various endpoints in your solution.
+> Rider is an excellent tool for working with APIs and JSON data. Open the _Endpoints_ tool window through the **View | Tool Windows | Endpoints** menu option. From there you can navigate to the code behind the endpoint and make, manage, and save calls to endpoints. The **Endpoints Tool Window** gives a great look at the various endpoints in your solution.
 >
 > ![Endpoints Window](1-endpoins-window.png)
 

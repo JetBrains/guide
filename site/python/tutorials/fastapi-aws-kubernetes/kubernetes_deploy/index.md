@@ -1128,7 +1128,7 @@ Let me give you a sneak peek.
 
 As you remember we have already installed the Kubernetes Plugin, and now we are going to check how it works.
 
-Click on **View** → **Tool Windows** → **Services**
+Click on **View | Tool Windows | Services**
 
 ![step46](./steps/step46.png)
 

@@ -14,7 +14,7 @@ In the previous step, we set up a Python interpreter for our project. But someti
 
 ## Package Tool Window
 
-In 2021, PyCharm added a new Packages tool window to help you see which Python packages are in your interpreter, as well as manage them. You can use this to see what packages PyCharm has installed, for example some will be installed if you select Flask as your project type such as the _Jinja2_ and _Flask_ packages.
+In 2021, PyCharm added a new _Packages_ tool window to help you see which Python packages are in your interpreter, as well as manage them. You can use this to see what packages PyCharm has installed, for example some will be installed if you select Flask as your project type such as the _Jinja2_ and _Flask_ packages.
 
 <img src="python-packages.png" alt="Python Packages" width="400"/>
 

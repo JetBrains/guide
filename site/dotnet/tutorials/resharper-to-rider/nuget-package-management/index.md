@@ -25,7 +25,7 @@ When we install a package, the NuGet process will update the appropriate project
 
 ![JetBrains Rider's NuGet Tool Window](./2-rider-nuget-tool-window.png)
 
-Rider offers several approaches to help developers manage dependencies. Let's start with the most common method, using the **NuGet Tool Window**. We will find the **NuGet Tool Window** tab at the bottom of our IDE instance. Clicking the tab will show a UI that includes a search bar, results, installed packages, and additional metadata.
+Rider offers several approaches to help developers manage dependencies. Let's start with the most common method, using the _NuGet_ tool window. We will find the **NuGet Tool Window** tab at the bottom of our IDE instance. Clicking the tab will show a UI that includes a search bar, results, installed packages, and additional metadata.
 
 ![JetBrains Rider's NuGet Tool Context Menu With Actions](./3-rider-nuget-tool-window-context-menu.png)
 
@@ -50,7 +50,7 @@ While NuGet may be the primary source for packages for many of us, it is likely 
 
 ![JetBrains Rider NuGet Tool Sources and Feeds](./6-rider-nuget-feeds.png)
 
-As we've seen, the Rider NuGet Tool Window is more than capable of managing existing NuGet dependencies and finding new OSS packages to help solve any problem. But there is still one more thing that differentiates Rider's NuGet tool from the one found in Visual Studio. That feature is **Type search**. Using the `T:` prefix in our NuGet search bar will find all packages that contain a Type definition.
+As we've seen, the Rider _NuGet_ tool window is more than capable of managing existing NuGet dependencies and finding new OSS packages to help solve any problem. But there is still one more thing that differentiates Rider's NuGet tool from the one found in Visual Studio. That feature is **Type search**. Using the `T:` prefix in our NuGet search bar will find all packages that contain a Type definition.
 
 ![JetBrains Rider NuGet Type lookup](./7-rider-type-lookup.png)
 

@@ -26,7 +26,7 @@ You can give it a name to create a new changelist or choose from an existing cha
 
 Use <kbd>⌘0</kbd> (macOS) / <kbd>Alt+0</kbd> (Windows/Linux), to show the _Commit_ tool window.
 
-**Changes** in the **Commit Tool Window** are in the default active changelist. The active changelist is highlighted in bold.
+_Changes_ in the _Commit_ tool window\*\* are in the default active changelist. The active changelist is highlighted in bold.
 
 ![Default Active Changelist](default-active-changelist.png)
 

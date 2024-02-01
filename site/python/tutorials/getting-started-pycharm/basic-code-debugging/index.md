@@ -28,7 +28,7 @@ When you run a project in PyCharm using the debugger, it will open the Debug too
 
 ## Debug Tool Window
 
-The Debug Tool Window has a few sections that are worth mentioning.
+The _Debug_ tool window has a few sections that are worth mentioning.
 
 On the left side we have a few buttons. This is where you can:
 

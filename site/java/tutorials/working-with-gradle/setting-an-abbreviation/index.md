@@ -24,7 +24,7 @@ We can provide a short, memorable text string which we can use when searching fo
 
 ![Enter abbreviation](./abbreviation-to-use.png)
 
-Now, if we bring up the Search Everywhere dialog <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), and we type "grdl" we'll see the Gradle Tool Window as the first result, it's not hiding in a list of similar looking results.
+Now, if we bring up the Search Everywhere dialog <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), and we type "grdl" we'll see the _Gradle_ tool window as the first result, it's not hiding in a list of similar looking results.
 
 ![Enter abbreviation](./grdl-search-results.png)
 
