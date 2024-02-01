@@ -9,6 +9,7 @@ import {
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import {
+	LINK_RESOURCE,
 	PLAYLIST_RESOURCE,
 	TIP_RESOURCE,
 	TUTORIAL_RESOURCE,
@@ -63,7 +64,7 @@ class GameDevHomepage {
 		});
 
 		const tips = this.getResources({
-			resourceTypes: [TIP_RESOURCE],
+			resourceTypes: [TIP_RESOURCE, LINK_RESOURCE],
 			channel: channel.url,
 			limit: 4,
 		});
