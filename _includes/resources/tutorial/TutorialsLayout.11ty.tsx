@@ -5,6 +5,7 @@ import {
 import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Tutorial } from "./TutorialModels";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 export default class TutorialsLayout {
 	data() {
@@ -24,11 +25,11 @@ export default class TutorialsLayout {
 		});
 
 		const listing = (
-			<>
+			<Fragment>
 				{tutorials.map((tutorial) => {
 					return <ResourceCard resource={tutorial}></ResourceCard>;
 				})}
-			</>
+			</Fragment>
 		);
 		return <ReferenceLayout {...data} listing={listing} content={content} />;
 	}

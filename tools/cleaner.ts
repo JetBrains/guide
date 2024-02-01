@@ -1,7 +1,7 @@
 /**
  * Utilities for loading site content and cleaning
  */
-import path, { normalize } from "upath";
+import { normalize, sep, dirname } from "path";
 import * as fs from "fs";
 import matter from "gray-matter";
 import {
@@ -141,8 +141,8 @@ export const migrateVideoFrontmatter = (documents: Markdown[]): Markdown[] => {
 							oldDocument.frontmatter.cardThumbnail,
 						].includes(video.poster)
 					) {
-						const resolvedPath = path.normalize(
-							`${path.dirname(oldDocument.path)}/${video.poster}`
+						const resolvedPath = normalize(
+							`${dirname(oldDocument.path)}/${video.poster}`
 						);
 						if (fs.existsSync(resolvedPath)) {
 							fs.unlinkSync(resolvedPath);
@@ -206,7 +206,7 @@ export function dumpTopics(): AllTopicTypes {
 		const resourceFiles = getAllFiles(topics, []);
 		const markdownResources = parseFrontmatter(resourceFiles);
 		Object.entries(markdownResources).forEach(([filePath, markdown]) => {
-			const label = filePath.split(path.sep)[10];
+			const label = filePath.split(sep)[10];
 			if (label !== "index.md") {
 				const topicType = markdown.frontmatter.topicType;
 				const key = topicType ? topicType : "topic";
@@ -228,7 +228,7 @@ export function dumpAuthors(): AllTopicTypes {
 		const resourceFiles = getAllFiles(authors, []);
 		const markdownResources = parseFrontmatter(resourceFiles);
 		Object.keys(markdownResources).forEach((filePath) => {
-			const label = filePath.split(path.sep)[10];
+			const label = filePath.split(sep)[10];
 			if (label !== "index.md") {
 				allAuthorTypes[site]["author"].push(label);
 			}

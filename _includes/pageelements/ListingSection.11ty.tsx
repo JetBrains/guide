@@ -1,5 +1,6 @@
 import { Resource } from "../../src/ResourceModels";
 import ResourceCard from "../resourcecard/ResourceCard.11ty";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 export type ListingSectionProps = {
 	title: string;
@@ -74,14 +75,14 @@ function ListingSection({
 	);
 
 	return (
-		<>
+		<Fragment>
 			{separator && (
 				<section class="container">
 					<hr />
 				</section>
 			)}
 			{result}
-		</>
+		</Fragment>
 	);
 }
 

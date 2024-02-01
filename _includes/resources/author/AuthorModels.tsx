@@ -1,9 +1,9 @@
 import { Static, Type } from "@sinclair/typebox";
-import path from "upath";
 import { EleventyPage } from "../../../src/models";
 import { LabelField, ThumbnailField } from "../commonModels";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { AUTHOR_RESOURCE_TYPE } from "../../../src/resourceType";
+import { join } from "path";
 
 export const AuthorFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -33,7 +33,7 @@ export class Author
 	constructor({ data, page }: { data: AuthorFrontmatter; page: EleventyPage }) {
 		super({ data, page });
 		this.label = data.label ? data.label : page.fileSlug;
-		this.thumbnail = path.join(page.url, data.thumbnail);
+		this.thumbnail = join(page.url, data.thumbnail);
 		this.isGuest = data.guest ?? false;
 	}
 

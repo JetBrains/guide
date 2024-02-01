@@ -8,6 +8,7 @@ import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import RelatedResources from "../../relatedresources/RelatedResources.11ty";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 export type LinkLayoutData = LayoutProps & LinkFrontmatter;
 
@@ -39,7 +40,7 @@ export function LinkLayout(
 
 	// Main content
 	const main = (
-		<>
+		<Fragment>
 			<div class="section">
 				<div class="container">
 					<div class="columns is-multiline">
@@ -79,7 +80,7 @@ export function LinkLayout(
 				</div>
 			</div>
 			<RelatedResources currentResource={link} items={allResources} />
-		</>
+		</Fragment>
 	);
 
 	return <BaseLayout {...data}>{main}</BaseLayout>;

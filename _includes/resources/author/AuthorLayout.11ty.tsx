@@ -5,6 +5,7 @@ import {
 import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Author } from "./AuthorModels";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 export function AuthorLayout(
 	this: LayoutContext,
@@ -24,12 +25,12 @@ export function AuthorLayout(
 	);
 
 	const listing = (
-		<>
+		<Fragment>
 			{linkedResources.map((resource) => (
 				// @ts-ignore
 				<ResourceCard resource={resource}></ResourceCard>
 			))}
-		</>
+		</Fragment>
 	);
 
 	return <ReferenceLayout {...data} listing={listing} content={content} />;

@@ -3,7 +3,7 @@ import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { EleventyPage, LayoutProps } from "../../../src/models";
 import { CHANNEL_RESOURCE_TYPE } from "../../../src/resourceType";
 import { IconField } from "../commonModels";
-import path from "upath";
+import { join } from "path";
 
 export const ChannelFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -58,7 +58,7 @@ export class Channel
 		this.hero = data.hero;
 		this.subnav = data.subnav;
 		if (data.logo) {
-			this.logo = path.join(page.url, data.logo);
+			this.logo = join(page.url, data.logo);
 			this.thumbnail = this.logo;
 		}
 		if (data.accent) {

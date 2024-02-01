@@ -1,19 +1,15 @@
 import * as fs from "fs";
-import { Markdown, getMarkdownFiles } from "./file.utils";
-import filePath from "upath";
-
-export type Obsoletes = {
-	[key: string]: string[];
-};
+import { join, relative } from "path";
+import { getMarkdownFiles, Markdown } from "./file.utils";
 
 function createNginxRule(redirectFrom: string, redirectTo: string) {
-	let nginxRule: string =
+	return (
 		"rewrite ^/guide" +
 		redirectFrom +
 		"(/?.*)$ /guide/" +
 		redirectTo +
-		"$1 permanent;";
-	return nginxRule;
+		"$1 permanent;"
+	);
 }
 
 export function getObsoletesFromMarkdown(
@@ -29,12 +25,10 @@ export function getObsoletesFromMarkdown(
 			const { path, frontmatter } = reference;
 			const { obsoletes } = frontmatter;
 			if (obsoletes && obsoletes.length > 0) {
-				let [redirectTo] = filePath
-					.relative(
-						filePath.join(__dirname, "../site"),
-						path.replace(/\/+$/, "")
-					)
-					.split("/index.md");
+				let [redirectTo] = relative(
+					join(__dirname, "../site"),
+					path.replace(/\/+$/, "")
+				).split("/index.md");
 
 				obsoletes.forEach((data) => {
 					let redirectFrom: string = data.replace(/\/+$/, "");

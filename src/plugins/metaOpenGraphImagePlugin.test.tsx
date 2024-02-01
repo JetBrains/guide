@@ -4,6 +4,7 @@ import {
 	getRootUrl,
 	MetaOpenGraphImage,
 } from "./metaOpenGraphImagePlugin";
+import { renderToString } from "jsx-async-runtime";
 
 const siteUrl = "https://jetbrains.com/pycharm/guide";
 const transform = function (html: string): string {
@@ -34,8 +35,8 @@ test("can get host url from site url", () => {
 	expect(url).to.be.equal("https://jetbrains.com");
 });
 
-test("component jsx returns and image tag", () => {
-	const html = (
+test("component jsx returns and image tag", async () => {
+	const html = await renderToString(
 		<MetaOpenGraphImage siteUrl={`https://example.com`} src={`/card.png`} />
 	);
 	expect(html).to.be.equal(
@@ -43,8 +44,8 @@ test("component jsx returns and image tag", () => {
 	);
 });
 
-test("component handles null or undefined src values", () => {
-	const html = (
+test("component handles null or undefined src values", async () => {
+	const html = await renderToString(
 		<MetaOpenGraphImage siteUrl={`https://example.com`} src={null} />
 	);
 	expect(html).to.be.equal("");

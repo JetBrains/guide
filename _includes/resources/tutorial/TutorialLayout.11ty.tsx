@@ -5,6 +5,7 @@ import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import HorizontalResourceCard from "../../resourcecard/HorizontalResourceCard.11ty";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 export type TutorialLayoutData = LayoutProps & TutorialFrontmatter;
 
@@ -36,11 +37,11 @@ export function TutorialLayout(
 
 	// Main content
 	const listing = (
-		<>
+		<Fragment>
 			{tutorial.tutorialSteps.map((resource) => (
 				<HorizontalResourceCard resource={resource} />
 			))}
-		</>
+		</Fragment>
 	);
 
 	const firstTutorialStep =
@@ -58,7 +59,7 @@ export function TutorialLayout(
 	);
 
 	const main = (
-		<>
+		<Fragment>
 			<ArticleTitleSubtitle
 				title={tutorial.title}
 				subtitle={tutorial.subtitle}
@@ -78,7 +79,7 @@ export function TutorialLayout(
 				</div>
 			) : null}
 			{listing && <div class="columns is-multiline">{listing}</div>}
-		</>
+		</Fragment>
 	);
 	return (
 		<BaseLayout {...data}>

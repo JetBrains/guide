@@ -9,6 +9,7 @@ import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 export type ArticleLayoutData = LayoutProps & ArticleFrontmatter;
 
@@ -61,14 +62,14 @@ export function ArticleLayout(
 							{article.video && <VideoPlayer source={article.video} />}
 
 							{content && (
-								<>
+								<Fragment>
 									<header id="in-depth" class="is-size-3 is-bold mb-3">
 										In Depth
 									</header>
 									<div class="columns">
 										<div class="column is-11-desktop content">{content}</div>
 									</div>
-								</>
+								</Fragment>
 							)}
 							{article.seealso && <SeeAlso items={article.seealso} />}
 						</main>

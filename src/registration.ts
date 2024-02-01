@@ -2,6 +2,7 @@
  * Content registration in a site
  */
 import { EleventyCollectionItem } from "./models";
+// @ts-ignore
 import { UserConfig } from "@11ty/eleventy";
 import {
 	getResourceType,

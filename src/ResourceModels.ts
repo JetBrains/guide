@@ -1,6 +1,5 @@
 import { Static, Type } from "@sinclair/typebox";
 import { EleventyPage } from "./models";
-import path from "upath";
 import { resolveReference } from "./registration";
 import { validateFrontmatter } from "./validators";
 import { DateTime } from "luxon";
@@ -13,6 +12,7 @@ import slugify from "@sindresorhus/slugify";
 
 // @ts-ignore
 import { getContentType } from "../public/assets/js/utils";
+import { join } from "path";
 
 export function getThumbnailPath(
 	dataThumbnail: string,
@@ -22,7 +22,7 @@ export function getThumbnailPath(
 	if (dataThumbnail.startsWith("/")) {
 		return dataThumbnail;
 	} else {
-		return path.join(pageURL, dataThumbnail);
+		return join(pageURL, dataThumbnail);
 	}
 }
 
@@ -139,7 +139,7 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 		this.topics = data.topics;
 
 		if (data.cardThumbnail) {
-			this.cardThumbnail = path.join(page.url, data.cardThumbnail);
+			this.cardThumbnail = join(page.url, data.cardThumbnail);
 		}
 	}
 
