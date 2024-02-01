@@ -18,7 +18,7 @@ video: "https://youtu.be/-uyCSK6gvp4"
 
 Getting into the flow means stripping down your UI distraction (turn off the _Project_ tool window and _Navigation Bar_) then going _keyboard-centric_ to avoid the mouse. But you still need to get to your files, and sometimes you'd prefer to browse instead of use Recent Files <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) or the Find File <kbd>⌘⇧O</kbd> (macOS) / <kbd>Ctrl+Shift+N</kbd> (Windows/Linux) action.
 
-If you've uncluttered your UI by hiding the Navigation Bar, bring it back on demand. Use **Navigate > Jump to Navigation Bar** <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux) to temporarily re-active the Navigation Bar, but as a temporary panel. Once you use use it, the window disappears.
+If you've uncluttered your UI by hiding the Navigation Bar, bring it back on demand. Use **Navigate | Jump to Navigation Bar** <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux) to temporarily re-active the Navigation Bar, but as a temporary panel. Once you use use it, the window disappears.
 
 If you use this tip and temporarily make it appear, how do you make it disappear? Press Jump to Source <kbd>⌘↓</kbd> (macOS) / <kbd>F4</kbd> (Windows/Linux) or just hit <kbd>␛</kbd> (macOS) / <kbd>Escape</kbd> (Windows/Linux) to go back to where you were working.
 

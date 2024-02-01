@@ -16,4 +16,4 @@ video: "https://youtu.be/CyMIlg7g-Rc"
 ---
 
 Data Flow Analysis is a powerful tool that shows you how data moves through your code. It can locate places where we could have errors in our code. For example, if we use a negative number for initialising an array, or checking for negative values where the value couldn't be negative.
-Use **Code > Analyze Code > Data Flow to Here** or **Code > Analyze Code > Data Flow from Here to analyze upstream or downstream data flow**.
+Use **Code | Analyze Code | Data Flow to Here** or **Code | Analyze Code | Data Flow from Here** to analyze upstream or downstream data flow\*\*.

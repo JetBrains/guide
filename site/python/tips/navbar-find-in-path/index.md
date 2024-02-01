@@ -23,7 +23,7 @@ You want to find a file at a path in your project tree. But you've turned off th
 
 Use the Navigation Bar instead:
 
-- Activate the Navigation Bar with **Navigate > Jump to Navigation Bar** <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux)
+- Activate the Navigation Bar with **Navigate | Jump to Navigation Bar** <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux)
 
 - Use the cursor keys to get to the target directory
 

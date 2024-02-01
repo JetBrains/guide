@@ -41,7 +41,7 @@ To look for a specific dependency and see where we get it from, we can search fo
 
 ## Focus on related nodes
 
-We have other options to look into specific dependencies. For example, we can zoom in on a specific dependency and the related nodes. Right-click the dependency you're interested in, and from the context menu, select **Analyze graph > Focus on Node Neighbourhood**. This will give you several options. In this example, we'll look at both directions. When we are done, we can reopen **Analyze graph** context menu and select **Drop focus**.
+We have other options to look into specific dependencies. For example, we can zoom in on a specific dependency and the related nodes. Right-click the dependency you're interested in, and from the context menu, select **Analyze graph | Focus on Node Neighbourhood**. This will give you several options. In this example, we'll look at both directions. When we are done, we can reopen **Analyze graph** context menu and select **Drop focus**.
 
 ![Analyze Graph](analyze-graph.png)
 

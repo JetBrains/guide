@@ -11,9 +11,9 @@ video: "https://youtu.be/XkO1ana4nqI"
 
 ## Project Walk-through
 
-In the previous step we asked IntelliJ IDEA to create us a Spring Boot project with **Spring Web** as a dependency. Let's now take a look at what has been automatically created, so that we can build on that understanding in the next step.
+In the previous step we asked IntelliJ IDEA to create us a Spring Boot project with _Spring Web_ as a dependency. Let's now take a look at what has been automatically created, so that we can build on that understanding in the next step.
 
-Let's take a look around some aspects of the project. The easiest way to do this is from the Project tool window which you can access with <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux). We will look at:
+Let's take a look around some aspects of the project. The easiest way to do this is from the _Project_ tool window which you can access with <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux). We will look at:
 
 - The .mvn Folder
 - The pom.xml File
@@ -49,7 +49,7 @@ It's very easy to add dependencies to your `pom.xml` file once you have created 
 
 ### The SpringHelloWorldDemoApplication.java File
 
-Inside your **main** > **java** > **com.example.helloworld** file structure you'll see your `HelloWorldApplication.java` file. Let's take a look in more detail.
+Inside your **main | java | com.example.helloworld** file structure you'll see your `HelloWorldApplication.java` file. Let's take a look in more detail.
 
 This is what your Java file will look like. The name will be whatever your called the file with _Application_ appended to it.
 
@@ -83,7 +83,7 @@ For example, we have a dependency in our Maven pom.xml called `spring_boot_start
 
 ### The HelloWorldApplicationTests.java File
 
-If you head down to the **test** > **java** > **com.example.springhelloworlddemo** folder you'll see you have another class called `SpringHelloWorldDemoApplicationTests.java`. This is a test you get for free with Spring Boot. It checks if the Application Context can start, it will fail if not. The test can be a useful starting point for creating your own integration tests.
+If you head down to the **test | java | com.example.springhelloworlddemo** folder you'll see you have another class called `SpringHelloWorldDemoApplicationTests.java`. This is a test you get for free with Spring Boot. It checks if the Application Context can start, it will fail if not. The test can be a useful starting point for creating your own integration tests.
 
 ## Running your Spring Boot Application
 

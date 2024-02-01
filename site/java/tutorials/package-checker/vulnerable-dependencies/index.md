@@ -14,7 +14,7 @@ subtitle: View vulnerable dependencies in the Vulnerable Dependencies tool windo
 thumbnail: ./thumbnail.png
 ---
 
-We can also open the Vulnerable Dependencies tool window without having to open the files where our dependencies are declared. To open the Vulnerable Dependencies tool window straight from the main menu, go to **Code > Analyze Code > Show Vulnerable Dependencies**.
+We can also open the Vulnerable Dependencies tool window without having to open the files where our dependencies are declared. To open the Vulnerable Dependencies tool window straight from the main menu, go to **Code | Analyze Code | Show Vulnerable Dependencies**.
 
 ![Open Vulnerable Dependencies tool window from menu](open-from-menu.png)
 

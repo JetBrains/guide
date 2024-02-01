@@ -44,7 +44,7 @@ This is optional, as we are currently connecting to our Postgres RDS instance _d
 
 ![datagrip_postgres_5](steps/step5.png)
 
-After the configuration has been setup, I will click **Apply** > **OK**.
+After the configuration has been setup, I will click **Apply | OK**.
 
 As of now, there are no tables. I will connect the PostgreSQL database with our application, then perform migration.
 
@@ -100,7 +100,7 @@ different places of our IDE.
 
 We are done with setting up the environment variables. Next, I will be migrating the database changes.
 
-I will click **Tools** > **Run manage.py Task**
+I will click **Tools | Run manage.py Task**
 
 ![django_manage_task](steps/step17.png)
 

@@ -43,7 +43,7 @@ You can even disable the docs along with changing the docs url path.
 
 There is one more thing I would like to mention. You can test the APIs through PyCharm itself via [HTTPClient](https://www.jetbrains.com/help/pycharm/http-client-in-product-code-editor.html).
 
-Click on **Tools > HTTP Client> Create Request in HTTP Client**.
+Click on **Tools | HTTP Client> Create Request in HTTP Client**.
 
 ![step5](./steps/step5.png)
 

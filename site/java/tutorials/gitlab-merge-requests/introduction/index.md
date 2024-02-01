@@ -16,7 +16,7 @@ IntelliJ IDEA has support for reviewing and merging GitLab Merge Requests. These
 
 ![Remote](remote.png)
 
-We can open the GitLab Merge Requests using the **GitLab** logo on the left, or from the menu by going to **Git > Gitlab > Show Gitlab Merge Request**.
+We can open the GitLab Merge Requests using the **GitLab** logo on the left, or from the menu by going to **Git | Gitlab | Show Gitlab Merge Request**.
 
 ![Open Merge Requests from logo](logo.png)
 

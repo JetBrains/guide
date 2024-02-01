@@ -24,7 +24,7 @@ You can now press **4** or use the arrow keys to scroll to **4** and select **Vi
 
 ### Using View Toolbar Options
 
-You can use the menu **View > Appearance** > **Enter Distraction Free Mode**.
+You can use the menu **View | Appearance | Enter Distraction Free Mode**.
 
 ![Enter Distraction Free Mode using View Toolbar](distraction-free-mode-using-menu.png)
 
@@ -46,7 +46,7 @@ You can use the same shortcuts as above, <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`
 
 ### Using View Toolbar Options
 
-Alternately, you can also use the menu **View > Appearance** > **Exit Distraction Free Mode**.
+Alternately, you can also use the menu **View | Appearance | Exit Distraction Free Mode**.
 
 ![Exit Distraction Free Mode using Toolbar Options](exit-distraction-free-mode-menu.png)
 

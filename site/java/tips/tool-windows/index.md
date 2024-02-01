@@ -23,6 +23,6 @@ seealso:
 video: "https://youtu.be/1UHsJyCq1SU"
 ---
 
-The fastest way to move around the IDE is with the keyboard. Most tool windows have a simple numeric shortcut, for example the project tool window is <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux). For those that don't have a keyboard shortcut, you can open these by using [Find Action](../find-actions), or [Search Everywhere](../search-everywhere).
+The fastest way to move around the IDE is with the keyboard. Most tool windows have a simple numeric shortcut, for example the _Project_ tool window is <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux). For those that don't have a keyboard shortcut, you can open these by using [Find Action](../find-actions), or [Search Everywhere](../search-everywhere).
 
 Don't forget, you can easily search any dialog or window in IntelliJ IDEA simply by typing the thing you want to search for.

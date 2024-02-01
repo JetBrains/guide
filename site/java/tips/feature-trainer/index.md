@@ -15,4 +15,4 @@ seealso:
 video: "https://youtu.be/UfN8iWKHvt0"
 ---
 
-Use the IntelliJ IDEA Feature Trainer to get up to speed quickly. Open the _Feature Trainer_ from the _Learn_ Tab on the _Welcome Screen_ or from the menu **Help > Learn IDE Features**. Lessons include refactoring, running & debugging and Git!
+Use the IntelliJ IDEA Feature Trainer to get up to speed quickly. Open the _Feature Trainer_ from the _Learn_ Tab on the _Welcome Screen_ or from the menu **Help | Learn IDE Features**. Lessons include refactoring, running & debugging and Git!

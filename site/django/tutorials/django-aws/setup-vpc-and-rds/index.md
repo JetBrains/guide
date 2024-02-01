@@ -118,7 +118,7 @@ I will be providing generic settings like db identifier, username and password.
 
 I will be choosing _t2.micro_ instance class. This provides 1 giga-byte RAM which is quite okay for our application. I will also disable storage autoscaling as we don’t require it. Based on your needs you can use it for your production workloads.
 
-Make sure to choose DjangoVPC in the _Connectivity_ section. You can see it automatically populated the db subnet group which we created earlier. The _Public access\*\*_ should be disabled because we don’t want to assign any public IP to our db instance, only the EC2 instance can connect with the RDS.
+Make sure to choose DjangoVPC in the _Connectivity_ section. You can see it automatically populated the db subnet group which we created earlier. The _Public access_ should be disabled because we don’t want to assign any public IP to our db instance, only the EC2 instance can connect with the RDS.
 
 ![rds_5](steps/step13.png)
 

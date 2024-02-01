@@ -52,7 +52,7 @@ private void $METHOD_NAME$($ARGS$) {
 ![Edit variables](edit-template-variables.png)
 
 8. Press **OK** and then select the **Define** link at the bottom of the dialog box to define the context in which this Live Template will be available.
-9. Select **Java > Declaration**:
+9. Select **Java | Declaration**:
 
 ![Code for basic live template example](basic-example.png)
 

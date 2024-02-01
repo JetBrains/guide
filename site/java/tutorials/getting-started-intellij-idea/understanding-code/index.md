@@ -37,4 +37,4 @@ Sometimes it's helpful to know the type of a parameter in your code when it's no
 
 Data Flow Analysis is a powerful tool that can show you how data is moving through your code. Using this method of analysis can help you to understand the data flow as an input (producer) and as an output (consumer) as well as if a workflow can evaluate to null which can be helpful to avoid those null pointer exceptions.
 
-To analyse data flow upstream use **Code > Analyze Code > Data Flow to Here** and to analyse data flow downstream use **Code > Analyze Code > Data Flow from Here**.
+To analyse data flow upstream use **Code | Analyze Code | Data Flow to Here** and to analyse data flow downstream use **Code | Analyze Code | Data Flow from Here**.

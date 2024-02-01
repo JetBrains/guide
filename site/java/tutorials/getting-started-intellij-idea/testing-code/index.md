@@ -22,7 +22,7 @@ Writing tests for our code is another task you're likely to be looking to your I
 
 Sometimes it's helpful to see the code and its test next to each other which you can do with a right-split window in IntelliJ IDEA. You can open a right-split from the Recent Files (**⌘E** | **Ctrl+E**) by holding down (**⇧** | **Shift**) when you press Enter to open the file. There's also an icon to the right of the Recent Files dialog that you can use if you prefer the mouse.
 
-You can also hold down (**⇧** | **Shift**) and press Enter to open a file from the Project tool window in a right split.
+You can also hold down (**⇧** | **Shift**) and press Enter to open a file from the _Project_ tool window in a right split.
 
 ## Navigating to a Test
 

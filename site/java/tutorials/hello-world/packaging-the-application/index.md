@@ -29,7 +29,7 @@ You don't need to change anything for the Module, however you do need to say whi
 
 4. If it matches the above screenshot, press **OK**. You have now defined how to build the JAR file, but you haven't actually built it yet. You need to build it with your build artifacts.
 
-5. Go to **Build** > **Build Artifacts**. You will only have one to choose from which is the one that we just defined.
+5. Go to **Build | Build Artifacts**. You will only have one to choose from which is the one that we just defined.
 
 ![Build artifacts](build-artifacts.png)
 

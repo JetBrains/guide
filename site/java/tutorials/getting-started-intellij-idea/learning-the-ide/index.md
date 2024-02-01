@@ -17,7 +17,7 @@ The Feature Trainer is bundled with IntelliJ IDEA and is a powerful tool that us
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UfN8iWKHvt0" >
 </iframe>
 
-You can access the Feature Trainer from the Learn Tab on the Welcome Screen or from the **Help > Learn IDE Features** in an existing project.
+You can access the Feature Trainer from the Learn Tab on the Welcome Screen or from the **Help | Learn IDE Features** in an existing project.
 
 ![learn-tab.png](learn-tab.png)
 

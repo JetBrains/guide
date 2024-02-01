@@ -29,7 +29,7 @@ From there we can run this failed test under the debugger, to see what’s wrong
 Let’s re-run the test, but slightly differently this time. See the icon on the left of the test in the editor? This icon not only shows you the test status for the tests you’ve run recently, but also lets you quickly run that one test in various ways.
 If I click on the shield icon, I can quickly build a code coverage report for this test. The coverage tool watches which lines of my code get executed by all the tests, then flags lines that weren’t executed.
 
-This report shows how many files were covered with tests, including the percentage of lines that were covered in those files. This information is also shown in the project tool window, as well as color-coding in the gutter of the file indicating coverage.
+This report shows how many files were covered with tests, including the percentage of lines that were covered in those files. This information is also shown in the _Project_ tool window, as well as color-coding in the gutter of the file indicating coverage.
 
 ### See Also
 

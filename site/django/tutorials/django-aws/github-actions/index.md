@@ -147,7 +147,7 @@ We need to set up these credentials in our GitHub Action, so we can access it li
 
 I will go back to my repository and commit the new workflow.
 
-Next, I will click on **Settings** > **Secrets**.
+Next, I will click on **Settings | Secrets**.
 
 ![github-secrets-1](./steps/step12.png)
 

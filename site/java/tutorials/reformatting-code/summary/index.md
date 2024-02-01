@@ -20,7 +20,7 @@ Here are some of the shortcuts that we used and some additional ones that you ca
 
 | Name                                                                                                          | macOS Shortcut  | Windows Shortcut            |
 | ------------------------------------------------------------------------------------------------------------- | --------------- | --------------------------- |
-| [Search everywhere dialog](https://www.jetbrains.com/help/idea/searching-everywhere.html)                     | <kbd>⇧⇧\*\*     | <kbd>Shift+Shift</kbd>      |
+| [Search everywhere dialog](https://www.jetbrains.com/help/idea/searching-everywhere.html)                     | <kbd>⇧⇧</kbd>   | <kbd>Shift+Shift</kbd>      |
 | [Apply Intention Actions](https://www.jetbrains.com/help/idea/intention-actions.html#apply-intention-actions) | <kbd>⌥⏎</kbd>   | <kbd>Alt+Enter</kbd>        |
 | [Open Preferences/Settings](https://www.jetbrains.com/help/idea/configure-project-settings.html)              | <kbd>⌘,</kbd>   | <kbd>Ctrl+Alt+S</kbd>       |
 | [Open the Commit Window](https://www.jetbrains.com/help/idea/commit-and-push-changes.html#commit)             | <kbd>⌘0</kbd>   | <kbd>Alt+0</kbd>            |

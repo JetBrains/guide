@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 
 As mentioned, if you have a project that isn’t an exported project or doesn’t use an existing model like Maven, Gradle or Eclipse, you can create a new project from existing sources. For example, if you are importing a project that was created in a different IDE, like NetBeans.
 
-To do so, go to **Import project from existing sources**, either from the menu **File | New | Project from Existing Sources** or by using Find Action <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux). Select the directory where you keep your projects and select the project you want to import. This time, select**Create project from existing sources**and click\*\*Next\*\*.
+To do so, go to **Import project from existing sources**, either from the menu **File | New | Project from Existing Sources** or by using Find Action <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux). Select the directory where you keep your projects and select the project you want to import. This time, select**Create project from existing sources**and click **Next**.
 ![Create project from existing sources](create-existing-sources.png)
 
 In the **Import Project** dialog, you can specify the name and location and select a format for the new project. It's recommended that you use the directory-based format, as is selected by default.

@@ -16,15 +16,15 @@ In the previous step, we saw how you can use PyCharm to get help with writing yo
 
 Sometimes you just want to get rid of everything and focus on your code! You could of course close toolbars one by one with your mouse, or you could use the keyboard shortcuts to close each one.
 
-But the best way is to get a code only view is with View > Appearance > Enter Zen mode.
+But the best way is to get a code only view is with View | Appearance | Enter Zen mode.
 
 ![enter-zen-mode.png](enter-zen-mode.png)
 
-If you're fond of your line numbers, you can get them back by right-clicking in the gutter and selecting Appearance > Show line numbers.
+If you're fond of your line numbers, you can get them back by right-clicking in the gutter and selecting Appearance | Show line numbers.
 
 ![show-line-numbers.png](show-line-numbers.png)
 
-You can leave Zen Mode with the same menu by selecting View > Appearance > Exit Zen Mode.
+You can leave Zen Mode with the same menu by selecting View | Appearance | Exit Zen Mode.
 
 So next time you need some head space, consider using Zen mode to full screen your IDE with nothing but the code.
 

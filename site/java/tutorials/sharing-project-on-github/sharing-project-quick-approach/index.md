@@ -17,7 +17,7 @@ Let's look at how we can enable version control for our project, authenticate wi
 
 ### Sharing a Project on GitHub
 
-You can use IntelliJ IDEA to create a local Git repository and then share the project on GitHub by going to **VCS > Share project on GitHub** in the menu.
+You can use IntelliJ IDEA to create a local Git repository and then share the project on GitHub by going to **VCS | Share project on GitHub** in the menu.
 
 ![Share Project on GitHub](share-project-github.png)
 

@@ -22,7 +22,7 @@ Let’s install one of the most popular themes, ”Dark Purple Theme”. PyCharm
 
 <img src="dark_purple_theme.png" alt="Dark purple theme" width="700"/>
 
-What if you want to quickly check what the other themes you’ve installed look like? You can go back to Preferences/Settings and change the current theme in **Appearance & Behavior** > **Appearance** or the switcher <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux) to cycle through the themes.
+What if you want to quickly check what the other themes you’ve installed look like? You can go back to Preferences/Settings and change the current theme in **Appearance & Behavior | Appearance** or the switcher <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux) to cycle through the themes.
 
 ## Layout
 

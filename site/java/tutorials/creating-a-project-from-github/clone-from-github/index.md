@@ -17,7 +17,7 @@ When you press the green **Code** button, you can see that there are a few ways 
 
 ![GitHub Clone with HTTPS](github-clone-https.png)
 
-Now you've got the link from GitHub, you need to open IntelliJ IDEA. If you don't have any projects option, you'll see the Welcome Screen. You will see an option here to **Get from Version Control** (or similar depending on the version of IntelliJ IDEA). If you do have a project open already, you can do the same action from the **File > New > Project from Version Control** menu. In older versions of IntelliJ IDEA, you can also use go to **VCS > Get from Version Control**. This menu option was renamed to **Git > Clone** in newer versions (when you have an existing Git project open).
+Now you've got the link from GitHub, you need to open IntelliJ IDEA. If you don't have any projects option, you'll see the Welcome Screen. You will see an option here to **Get from Version Control** (or similar depending on the version of IntelliJ IDEA). If you do have a project open already, you can do the same action from the **File | New | Project from Version Control** menu. In older versions of IntelliJ IDEA, you can also use go to **VCS | Get from Version Control**. This menu option was renamed to **Git | Clone** in newer versions (when you have an existing Git project open).
 
 ![Get from Version Control in IntelliJ IDEA](intellij-clone-button.png)
 

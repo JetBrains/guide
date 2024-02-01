@@ -62,7 +62,7 @@ In our _test_user_login_ function, I will pass username & password to our login 
 
 Okay, the implementation is done. Let’s move forward and configure our test settings.
 
-I will click **Run** > **Edit Configurations**.
+I will click **Run | Edit Configurations**.
 
 ![edit_configuration](steps/step6.png)
 
@@ -72,9 +72,9 @@ I will click on **+** and add Django tests. Make sure to replicate the environme
 
 ![django_test_configuration_2](steps/step8.png)
 
-I will click **Apply** > **OK**.
+I will click **Apply | OK**.
 
-Everything is done, Now I will click **Run** > **Run ‘DjangoUnitTests’**
+Everything is done, Now I will click **Run | Run ‘DjangoUnitTests’**
 
 ![django_test_configuration_3](steps/step9.png)
 

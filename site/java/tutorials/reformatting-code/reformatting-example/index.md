@@ -38,7 +38,7 @@ private int replaceWithMapToInt() {
     }
 ```
 
-You also want all the dots to line up vertically under `.values` in this case. For this setting we'll need to go into Preferences/Settings with <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and then type in _align_ to filter the results. Navigate to **Editor > Code Style > Java > Wrapping and Braces** and find the option called _Chained method calls_ again. This time select the **Align when multiline** checkbox:
+You also want all the dots to line up vertically under `.values` in this case. For this setting we'll need to go into Preferences/Settings with <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and then type in _align_ to filter the results. Navigate to **Editor | Code Style | Java | Wrapping and Braces** and find the option called _Chained method calls_ again. This time select the **Align when multiline** checkbox:
 
 ![Align when multi-line selected](align-when-multi-line.png)
 

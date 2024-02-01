@@ -27,7 +27,7 @@ When we get a drop-down for contents of a directory, sometimes the listing is lo
 
 As shown previously, use the Navigation Bar to get to a directory listing:
 
-- Activate the Navigation Bar with **Navigate > Jump to Navigation Bar** <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux)
+- Activate the Navigation Bar with **Navigate | Jump to Navigation Bar** <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux)
 
 - Use the cursor keys to get to the target directory
 

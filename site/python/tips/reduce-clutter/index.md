@@ -15,7 +15,7 @@ video: "https://www.youtube.com/watch?v=wDYJx-mkPpw"
 
 People associate IDEs with busy UIs filled with buttons and knobs and distraction. But that's just the default. It doesn't have to be that way. Once you get oriented, you can turn off everything you don't need and get a lean coding experience.
 
-In this tip we use the **View** menu to disable 3 toolbars. We then take the big step of hiding the Project Tool window, with its file explorer.
+In this tip we use the **View** menu to disable 3 toolbars. We then take the big step of hiding the _Project_ tool window, with its file explorer.
 
 "How will I navigate to my files?" you ask. Later tips will answer that, ultimately with: "You don't." Meaning, you grow out of "files" as a useful place to jump to.
 

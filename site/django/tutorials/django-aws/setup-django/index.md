@@ -40,11 +40,11 @@ After the project has been successfully initialized, I then move forward and cha
 
 ![pycharm_django_project_1](steps/step4.png)
 
-I will click on **File** > **Settings**. Under Appearance & Behavior I will change the theme from _Darcula_ to _IntelliJ Light_.
+I will click on **File | Settings**. Under Appearance & Behavior I will change the theme from _Darcula_ to _IntelliJ Light_.
 
 ![pycharm_django_project_2](steps/step5.png)
 
-We are now ready to start our development server. I will click **Run** > **Run ‘SampleDemo’**
+We are now ready to start our development server. I will click **Run | Run ‘SampleDemo’**
 
 ![pycharm_django_project_3](steps/step6.png)
 

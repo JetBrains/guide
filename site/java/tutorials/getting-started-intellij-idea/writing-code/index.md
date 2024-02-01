@@ -42,7 +42,7 @@ IntelliJ IDEA is excellent at generating code constructs for you. It's always wo
 - equals and hashCode methods
 - override methods
 
-... and more. You can also use the same shortcut to generate new files in your Project tool window.
+... and more. You can also use the same shortcut to generate new files in your _Project_ tool window.
 
 ## Running Anything
 

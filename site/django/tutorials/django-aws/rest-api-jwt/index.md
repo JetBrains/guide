@@ -42,7 +42,7 @@ We will follow two installation approaches
 
 2. Installing through Jetbrains IDE
 
-- I will click on **File** > **Settings** > **Project: SampleDemo** > **Python Interpreter**.
+- I will click on **File | Settings | Project: SampleDemo | Python Interpreter**.
 
 ![simple_jwt_install](steps/step2.png)
 
@@ -171,7 +171,7 @@ pip install django-filter==2.4.0
 
 As we don’t have any users in our system, I will create a _superuser_ in our account.
 
-I will go back to PyCharm, and then I will click on **Tools** > **Run manage.py Task**
+I will go back to PyCharm, and then I will click on **Tools | Run manage.py Task**
 
 ![run_managepy_task](steps/step8.png)
 

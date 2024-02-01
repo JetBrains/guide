@@ -14,11 +14,11 @@ Let's modify the code arrangement settings for this example. Specifically we wan
 
 ### Modifying the Existing Rule Arrangement
 
-You can change your rule arrangement preferences with <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and then searching for _arrangement_. Select **Editor > Code Style > Java** from the filtered list and then the **Arrangement** tab.
+You can change your rule arrangement preferences with <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and then searching for _arrangement_. Select **Editor | Code Style | Java** from the filtered list and then the _Arrangement_ tab.
 
 ### Arrangement Settings/Preferences
 
-To change your code arrangement settings, use <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux), to bring up the Preferences/Settings dialog. This dialog is searchable, so you can type in _arrangement_. This filters the dialog to **Code Style**. You can then select the language you're working with. In this tutorial we will use **Java**. Alternatively, you can navigate to **Editor > Code Style > Java**.
+To change your code arrangement settings, use <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux), to bring up the Preferences/Settings dialog. This dialog is searchable, so you can type in _arrangement_. This filters the dialog to **Code Style**. You can then select the language you're working with. In this tutorial we will use **Java**. Alternatively, you can navigate to **Editor | Code Style | Java**.
 
 The Arrangement tab is grouped into two areas:
 

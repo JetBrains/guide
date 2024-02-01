@@ -18,11 +18,11 @@ cardThumbnail: ./card.png
 video: "https://youtu.be/JQE95x7t4aU"
 ---
 
-If you've closed the Project Tool window and hidden the Navigation Bar, you need a way to open file that's keyboard centric and doesn't disrupt your flow. Usually, the fastest way to open a file is the various search options (Recent Files, Navigate to File, etc.) But other times, you want to browse instead of search.
+If you've closed the _Project_ tool window and hidden the _Navigation Bar_, you need a way to open file that's keyboard centric and doesn't disrupt your flow. Usually, the fastest way to open a file is the various search options (Recent Files, Navigate to File, etc.) But other times, you want to browse instead of search.
 
 As shown previously, use the Navigation Bar to select a file:
 
-- Activate the Navigation Bar with **Navigate > Jump to Navigation Bar** <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux)
+- Activate the Navigation Bar with **Navigate | Jump to Navigation Bar** <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux)
 
 - Use the cursor keys to get to the target directory
 

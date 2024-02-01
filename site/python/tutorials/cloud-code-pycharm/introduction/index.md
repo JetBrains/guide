@@ -21,7 +21,7 @@ Remote development is an approach that allows developers to work from their home
 
 Here’s how Silviu Croitoru summarizes the advantages that remote development offers:
 
-- Code from anywhere on any device\*\* – With developer workspaces hosted in the cloud, teams can work securely from any location and on any device, regardless of their physical location. This reduces costs for companies and enables the implementation of a Bring Your Own Device (BYOD) policy.
+- Code from anywhere on any device – With developer workspaces hosted in the cloud, teams can work securely from any location and on any device, regardless of their physical location. This reduces costs for companies and enables the implementation of a Bring Your Own Device (BYOD) policy.
 - Secure source code – The source code never leaves the security of the company's cloud infrastructure. It remains in the Git repositories and Kubernetes cluster where the developer workspaces reside, avoiding the risk of source code exposure on developers' laptops.
 - Simplified zero-trust security – Cloud-based development environments can simplify network security and make it easier for organizations to maintain a secure remote work environment.
 - Environment consistency – With cloud-based development, teams no longer have to worry about "it works on my machine" issues, as the development environments are consistent and easily replicable.

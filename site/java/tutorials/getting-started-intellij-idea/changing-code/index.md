@@ -41,7 +41,7 @@ You should always use IntelliJ IDEA's refactoring capability when you're refacto
 <iframe width="560" height="315" src="https://www.youtube.com/embed/24praE09oxE" >
 </iframe>
 
-Most teams have code standards that want to apply to all new code that is checked into version control. IntelliJ IDEA supports lots of formatting standards that you can access in your Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and then searching for "formatting" in **Editor > Java**. There are some different ways to apply those settings to your code; choose the best way at the time.
+Most teams have code standards that want to apply to all new code that is checked into version control. IntelliJ IDEA supports lots of formatting standards that you can access in your Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and then searching for "formatting" in **Editor | Java**. There are some different ways to apply those settings to your code; choose the best way at the time.
 
 To reformat a file or selection of code:
 Use <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux) to reformat a file or selection of code according to the settings you have defined in your project.
@@ -80,7 +80,7 @@ Clipboard history is like your normal clipboard but multiple of them! IntelliJ I
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l0SWLbYitHg" >
 </iframe>
 
-Local History is not a substitute for version control, but it can get you out of trouble when something unexpected happens. IntelliJ IDEA takes snapshots of your code when certain events happen such as tests pass (or fail), you make some changes, or you perform a refactor. You can view the local history of a directory from the Project tool window by right-clicking on the directory and selecting **Local History > Show History**. You can view the local history of a file by either right-clicking on it in the Project tool window or by right-clicking in the file itself and selecting **Local History > Show History**.
+Local History is not a substitute for version control, but it can get you out of trouble when something unexpected happens. IntelliJ IDEA takes snapshots of your code when certain events happen such as tests pass (or fail), you make some changes, or you perform a refactor. You can view the local history of a directory from the _Project_ tool window by right-clicking on the directory and selecting **Local History | Show History**. You can view the local history of a file by either right-clicking on it in the Project tool window or by right-clicking in the file itself and selecting **Local History | Show History**.
 
 The Local History dialog shows you a diff view so you can choose to roll back the whole file to a specific snapshot or just take a subset of the changes.
 

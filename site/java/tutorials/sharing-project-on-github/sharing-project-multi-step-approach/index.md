@@ -21,7 +21,7 @@ Let’s assume you have a more complex project than Hello World and that you’r
 
 You can check that your project isn't under version control by checking if you can see your Git tool window with <kbd>⌘9</kbd> (macOS) / <kbd>Alt+9</kbd> (Windows/Linux). If you can't see the Git tool window, your project is not yet a Git project.
 
-To use Git as the version control for an IntelliJ IDEA project, go to **VCS > Enable Version Control Integration** and select Git from the drop-down menu.
+To use Git as the version control for an IntelliJ IDEA project, go to **VCS | Enable Version Control Integration** and select Git from the drop-down menu.
 
 ![Enable Version Control Integration](enable-version-control-integration.png)
 
@@ -47,9 +47,9 @@ Add a description for this commit describing what functionality these changes do
 
 ### Creating a Repository on GitHub
 
-So far you have been committing all these changes to your local Git repository. If you open the Log tab again with **⌘9** (macOS), or **Alt+9** (Windows/Linux), you can see this project only has local branches, which means all the code and the commit history is only saved on this local computer. Once you finished setting up your project and are ready to share it and its history publicly on GitHub, go to **Git > GitHub > Share Project on GitHub**.
+So far you have been committing all these changes to your local Git repository. If you open the Log tab again with **⌘9** (macOS), or **Alt+9** (Windows/Linux), you can see this project only has local branches, which means all the code and the commit history is only saved on this local computer. Once you finished setting up your project and are ready to share it and its history publicly on GitHub, go to **Git | GitHub | Share Project on GitHub**.
 
-You can use IntelliJ IDEA to create a local Git repository and then share the project on GitHub by going to **VCS > Share project on GitHub** in the menu.
+You can use IntelliJ IDEA to create a local Git repository and then share the project on GitHub by going to **VCS | Share project on GitHub** in the menu.
 
 ![Share Project on GitHub](share-project-on-github-alternative.png)
 

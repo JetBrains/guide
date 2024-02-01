@@ -70,7 +70,7 @@ Condition not satisfied:
   false
 ```
 
-By default, IntelliJ IDEA uses Gradle to run tests if it's a Gradle project. This is normally what we want, as it means our IDE is using the same process to run tests as the continuous integration or build environment is using. In a simple project like this one, where the Gradle build isn't doing anything extra like generating code or resources, it can be faster to use the IntelliJ IDEA test runner. We can [find this in the preferences](https://www.jetbrains.com/help/idea/gradle-settings.html) under Build, Execution, Deployment > Gradle, and we can select IntelliJ IDEA to run the tests.
+By default, IntelliJ IDEA uses Gradle to run tests if it's a Gradle project. This is normally what we want, as it means our IDE is using the same process to run tests as the continuous integration or build environment is using. In a simple project like this one, where the Gradle build isn't doing anything extra like generating code or resources, it can be faster to use the IntelliJ IDEA test runner. We can [find this in the preferences](https://www.jetbrains.com/help/idea/gradle-settings.html) under **Build, Execution, Deployment | Gradle**, and we can select IntelliJ IDEA to run the tests.
 
 ![](09.png)
 

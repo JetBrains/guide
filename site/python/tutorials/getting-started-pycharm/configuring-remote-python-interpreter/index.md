@@ -51,7 +51,7 @@ You can now run this code, but remotely, over SSH. If you want to select an exis
 
 Another way you can configure a remote interpreter in PyCharm is with Docker containers. Docker also requires some pre-configuration, so, in order to follow the next steps make sure that you have Docker installed.
 
-In your Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) search for _docker_ and select _Docker for &lt; your OS here &gt;_. It is under **Build, Execution, Deployment > Docker**.
+In your Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) search for _docker_ and select _Docker for &lt; your OS here &gt;_. It is under **Build, Execution, Deployment | Docker**.
 
 For this example, I have already created a PyCharm project called _QuadraticEquation_ and added a file called `solver.py`. The project has a local interpreter configured inside a virtual environment. Let’s configure a Docker-based remote interpreter for this project.
 
@@ -75,7 +75,7 @@ In this example we are going to use a Django application with a PostgreSQL datab
 
 This repository already has a `Dockerfile` and a `docker-compose.yml` file. We are creating two services, one web and one database. With these files in place we can start configuring Docker Compose.
 
-In your Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) search for _docker_ and select _Docker for &lt; your OS here &gt;_. It should be under **Build, Execution, Deployment > Docker**. It might already be configured from the earlier step. On your Status Bar click the current interpreter name and select **Add Interpreter** then select _Docker Compose_ from the list.
+In your Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) search for _docker_ and select _Docker for &lt; your OS here &gt;_. It should be under **Build, Execution, Deployment | Docker**. It might already be configured from the earlier step. On your Status Bar click the current interpreter name and select **Add Interpreter** then select _Docker Compose_ from the list.
 
 For the server, select “Docker”. The configuration file is the `docker-compose.yml` file we created earlier. Service is the entry service declared inside your `docker-compose` file. In this case, we will use our web service. All other containers in the compose file will be started together with this one as if you started them with the command `docker-compose up` from the command line. In this case we will not configure any environmental variables or change the Python interpreter path.
 

@@ -20,7 +20,7 @@ public void shouldMigrateASimpleTest() {
 ```
 
 1. You can find this code in the [JUnit4to5 class in GitHub](https://github.com/JetBrains/intellij-samples/blob/main/java-samples/src/test/com/jetbrains/testing/JUnit4To5.java) to follow along. Alternatively, you can copy this code snippet and paste it into the Template Text of the Live Template as we did for the basic example.
-2. With the code snippet selected, go to the **Code > Save as Live Template**. IntelliJ IDEA will load your Settings/Preferences and paste the selected code into the Template Text:
+2. With the code snippet selected, go to the **Code | Save as Live Template**. IntelliJ IDEA will load your Settings/Preferences and paste the selected code into the Template Text:
 
 ![JUnit4to5 Template Start](junit4to5-start-template.png)
 

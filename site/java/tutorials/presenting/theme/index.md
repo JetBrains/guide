@@ -8,7 +8,7 @@ subtitle: Selecting a theme
 thumbnail: ./thumbnail.png
 ---
 
-By default, IntelliJ IDEA uses the Darcula theme. To change it, go to **Preferences > Appearance & Behavior > Appearance**.
+By default, IntelliJ IDEA uses the Darcula theme. To change it, go to **Preferences | Appearance & Behavior | Appearance**.
 
 Select the UI theme from the Theme list:
 

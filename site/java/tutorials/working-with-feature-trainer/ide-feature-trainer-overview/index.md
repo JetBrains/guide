@@ -18,4 +18,4 @@ The IDE Feature Trainer helps you to learn aspects of the IDE easily with step-b
 
 You can access if from the _Learn IDE_ tab on the _Welcome_ screen, and if you don't see it for any reason you can head over to Plugins, search for it and reinstall it. When you click **Learn IDE**n, it creates a new IntelliJ IDEA project in your default location. This is treated the same as any other project in that you can close it and open it again, or delete it from your machine.
 
-You can also access it from within any project by going to **Help > Learn IDE Features**. Next we'll talk about Modules and Lessons in the IDE Feature Trainer.
+You can also access it from within any project by going to **Help | Learn IDE Features**. Next we'll talk about Modules and Lessons in the IDE Feature Trainer.

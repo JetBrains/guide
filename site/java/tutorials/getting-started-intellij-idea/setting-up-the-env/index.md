@@ -24,7 +24,7 @@ It's not surprise that we often advocate for a sparse coding environment, after 
 
 A great way to immediately hide the peripheries in the IDE and focus on your code is with Hide Tool Windows <kbd>⌘⇧F12</kbd> (macOS) / <kbd>Ctrl+Shift+F12 (Windows/Linux)</kbd>. You can use the same shortcut to bring them back again.
 
-If you prefer an even sparser interface then Zen mode might be for you. You can access it from the menu with **View > Appearance > Enter Zen Mode**. It's worth noting in Zen Mode that you can still bring back your line numbers and gutter icons by right-clicking in the gutter area and selecting them from the pop-up menu.
+If you prefer an even sparser interface then Zen mode might be for you. You can access it from the menu with **View | Appearance | Enter Zen Mode**. It's worth noting in Zen Mode that you can still bring back your line numbers and gutter icons by right-clicking in the gutter area and selecting them from the pop-up menu.
 
 ## Changing the Theme and Installing Plugins
 

@@ -12,15 +12,15 @@ When presenting, you can use **Presentation Mode**. The IDE switches to full scr
 
 ![Presentation Mode](presentation-mode.png)
 
-You can switch to Presentation Mode by clicking **View > Appearance > Enter Presentation Mode**.
+You can switch to Presentation Mode by clicking **View | Appearance | Enter Presentation Mode**.
 
 ![Enter Presentation Mode](enter-presentation-mode.png)
 
-**Exit Presentation Mode** by clicking **View > Appearance > Exit Presentation Mode**.
+**Exit Presentation Mode** by clicking **View | Appearance | Exit Presentation Mode**.
 
 ![Exit Presentation Mode](exit-presentation-mode.png)
 
-If needed, the font size in Presentation Mode can be configured in **Preferences > Appearance & Behavior > Appearance**. Scroll down to **Presentation Mode**, and font size and set the font size you want. Click **OK** to apply the changes and close the dialog or click **Apply** to keep the dialog open. Click **Cancel** to discard the changes and close the dialog.
+If needed, the font size in Presentation Mode can be configured in **Preferences | Appearance & Behavior | Appearance**. Scroll down to **Presentation Mode**, and font size and set the font size you want. Click **OK** to apply the changes and close the dialog or click **Apply** to keep the dialog open. Click **Cancel** to discard the changes and close the dialog.
 
 ![Configure Presentation Mode Font size](presentation-mode-config-font-size.png)
 

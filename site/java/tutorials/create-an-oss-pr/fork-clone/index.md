@@ -30,7 +30,7 @@ When we click the button, the _Get from Version Control_ dialog opens. We can pa
 
 ![Clone project](clone-project.png)
 
-If we already have a project open, we can open the _Get from Version Control_ dialog by going to **File > New > Project from version control**.
+If we already have a project open, we can open the _Get from Version Control_ dialog by going to **File | New | Project from version control**.
 
 ![New Project from version control menu](menu-project-vcs.png)
 

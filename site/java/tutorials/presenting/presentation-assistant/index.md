@@ -20,7 +20,7 @@ To install the plugin, open **Preferences** using <kbd>⌘,</kbd> (macOS) / <kbd
 
 ## Configuring the Presentation Assistant plugin
 
-To configure the Presentation Assistant plugin, go back to **Preferences** and go to **Appearance & Behavior > Presentation Assistant**.
+To configure the Presentation Assistant plugin, go back to **Preferences** and go to **Appearance & Behavior | Presentation Assistant**.
 
 ![Configure Presentation Assistant](presentation-assistant-config.png)
 

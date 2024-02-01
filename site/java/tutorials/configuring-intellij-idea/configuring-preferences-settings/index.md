@@ -26,7 +26,7 @@ These are the broad categories that you can change here, but we recommend being 
 
 The easiest way to navigate around this dialog is to type in what you're looking for. Some examples could be _font_, _folding_, _comments_, _braces_, _commit_, and much more.
 
-If you need to reset your Preferences/Settings back to the default you can use **File** > **Manage IDE Settings** > **Restore Default Settings**.
+If you need to reset your Preferences/Settings back to the default you can use **File | Manage IDE Settings | Restore Default Settings**.
 
 ![Reset your Preferences or Settings](reset-preferences-settings.png)
 

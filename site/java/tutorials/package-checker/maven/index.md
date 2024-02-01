@@ -23,7 +23,7 @@ The Package Checker plugin highlights vulnerable dependencies and when we hover 
 
 ![Maven pom.xml with hover](hover.png)
 
-Another way to see all the vulnerable packages is by right-clicking on the pom.xml file and selecting **Analyze** > **Show Vulnerable Dependencies**. This will open the Vulnerable Dependencies tool window.
+Another way to see all the vulnerable packages is by right-clicking on the pom.xml file and selecting **Analyze** | **Show Vulnerable Dependencies**. This will open the Vulnerable Dependencies tool window.
 
 ![Open Vulnerable Dependencies tool window from pom.xml](open-from-pomxml.png)
 

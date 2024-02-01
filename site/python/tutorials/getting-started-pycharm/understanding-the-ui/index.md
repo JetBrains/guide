@@ -28,7 +28,7 @@ You can right-click anywhere in the editor pane to invoke the context menu, whic
 
 ## Tool Windows
 
-The IDE wants to help you with your coding and to integrate your other development workflows. It does this with tool windows which all serve a specific purpose. The Project tool window (**⌘1** + | **Alt+1**) is open by default in the left and shows the file layout of your project.
+The IDE wants to help you with your coding and to integrate your other development workflows. It does this with tool windows which all serve a specific purpose. The Project tool window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux) is open by default in the left and shows the file layout of your project.
 
 The Terminal tool window lets you work with the built-in terminal. The Python Packages tool window lets you manage packages from _Pypi_ and other repositories within the context of your virtual environment.
 
@@ -38,7 +38,7 @@ The Python Console tool window is an interactive Python console that lets you ex
 
 At the very bottom of the IDE, you can find the Status Bar. It’s a small yet very handy piece of the UI. First, the quick access button. It lets you quickly switch between the tool windows and allows you to hide and show the tool window bar. The right hand side of the status bar contains several useful status bar widgets including the project settings, version control information and your project interpreter setup.
 
-At the top, you can also find your Navigation Bar. This serves as a quick alternative to the Project tool window, for moving around directories and performing file operations.
+At the top, you can also find your Navigation Bar. This serves as a quick alternative to the _Project_ tool window, for moving around directories and performing file operations.
 
 You can also use the buttons that are to the right of the Navigation Bar to quickly perform some common actions, like running or debugging an app, updating a project or making a commit, running a search, and the like. Note that the toolbar might look different if your project isn’t under version control.
 

@@ -11,7 +11,7 @@ thumbnail: ./thumbnail.png
 We're going to create a small web application that runs on Tomcat to demonstrate the integration in IntelliJ IDEA Ultimate:
 
 1. From the Welcome Screen select New Project.
-2. If you have an existing project open, click **File > New**. Select **Java Enterprise** on the left-hand menu and enter the following details:
+2. If you have an existing project open, click **File | New**. Select **Java Enterprise** on the left-hand menu and enter the following details:
 
 | Field Name            | Description                                                                                                                                                                           |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
