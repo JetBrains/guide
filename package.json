@@ -9,7 +9,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "tsx node_modules/@11ty/eleventy/cmd.cjs --serve --incremental --config=eleventy.config.ts",
-		"build": "tsx node_modules/@11ty/eleventy/cmd.js --pathprefix=/guide && npm run demos && npm run lunr-search-index",
+		"build": "tsx node_modules/@11ty/eleventy/cmd.cjs --config=eleventy.config.ts --pathprefix=/guide && npm run demos && npm run lunr-search-index",
 		"lunr-search-index": "node tools/lunrSearchIndex.js",
 		"test:build": "tsc --noEmit",
 		"demos": "copyfiles -e './_site/dotnet' -f './site/dotnet/**/demos/*' -f false --verbose && copyfiles -e './_site/goland' -f './site/goland/**/demos/*' -f false --verbose && copyfiles -e './_site/intellij' -f './site/intellij/**/demos/*' -f false --verbose && copyfiles -e './_site/pycharm' -f './site/pycharm/**/demos/*' -f false --verbose && copyfiles -e './_site/webstorm' -f './site/webstorm/**/demos/*' -f false --verbose",
