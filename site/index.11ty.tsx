@@ -74,7 +74,7 @@ class IndexPage {
 								)
 								.map((channel) => {
 									return (
-										<div class="column has-background-grey-darker has-box-outline m-4 is-5 is-2-desktop has-box-hover has-text-centered has-position-relative box">
+										<div class="column has-background-grey-darker has-box-outline m-4 is-5 is-2-desktop has-box-hover-effect has-text-centered has-position-relative box">
 											<a
 												href={channel.url}
 												aria-label={channel.title}
