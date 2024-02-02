@@ -32,6 +32,11 @@ footer.pagefooter svg {
 .has-box-hover {
   &:hover {
     outline: 1px solid $grey-light;
+  }
+}
+.has-box-hover-effect {
+  &:hover {
+    outline: 1px solid $grey-light;
     background-color: hsla(0,0%,100%,.05) !important;
   }
 }
