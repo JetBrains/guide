@@ -13,6 +13,7 @@ test("should render AuthorLayout", async () => {
 		page: fixtures.authorItems[0].page,
 		listing: <div></div>,
 	};
+
 	const r = AuthorLayout.call(fixtures.context, renderProps);
 	document.body.innerHTML = await renderToString(r, {});
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {

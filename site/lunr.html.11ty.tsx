@@ -17,7 +17,7 @@ export default class LunrHtml extends LunrBase {
 		return (
 			<div>
 				{records.map((record) => (
-					<div>
+					<div class="record">
 						<pre>{JSON.stringify(record)}</pre>
 
 						{
