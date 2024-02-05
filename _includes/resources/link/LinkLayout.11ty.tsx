@@ -54,7 +54,10 @@ export function LinkLayout(
 								<ArticleTopics topics={topics} />
 
 								<p>
-									<a href={link.linkURL} class="link-external">
+									<a
+										href={link.linkURL}
+										class="button is-primary is-rounded link-external"
+									>
 										View at original site
 									</a>
 									{(link.screenshot || link.video || content) && <hr />}
