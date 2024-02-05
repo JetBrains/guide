@@ -16,7 +16,7 @@ In this tutorial step, let's install all the required dependencies.
 
 # AWS CLI
 
-Let's start first by downloading the AWS Command-Line Interface from `aws.amazon.com/cli`. As I am using a Windows machine, I will download the 64-bit installer. You can follow the same website if you are using Mac or Linux.
+Let's start first by downloading the AWS [Command-Line Interface](https://aws.amazon.com/cli). As I am using a Windows machine, I will download the 64-bit installer. You can follow the same website if you are using Mac or Linux.
 
 ![AWS CLI](aws_cli.png)
 
@@ -32,7 +32,7 @@ Before moving forward with AWS SAM, make sure you have installed following depen
 According to Amazon, the AWS Serverless Application Model (SAM) is an open-source framework for building serverless applications.
 A serverless application is a combination of Lambda functions, event sources, and other resources that work together to perform tasks. Note that a serverless application is more than just a Lambda function -— it can include additional resources such as APIs, databases, and event source mappings.
 
-You can download the setup file from `aws.amazon.com/serverless/sam` and follow the same installation process like you did above for the CLI.
+You can download the setup file from [aws.amazon.com/serverless/sam](https://aws.amazon.com/serverless/sam) and follow the same installation process like you did above for the CLI.
 
 # AWS Toolkit
 
@@ -42,9 +42,9 @@ To learn more about this plugin, refer to this link [AWS Toolkit for PyCharm](ht
 
 To install the plugin follow the below steps.
 
-- Go to `Settings -> Plugins`
-- Search `AWS Toolkit`
-- Click on `Install`
+- Go to _Settings -> Plugins_
+- Search _AWS Toolkit_
+- Click **Install**
 
 ![AWS Toolkit](aws_toolkit.png)
 
@@ -68,17 +68,16 @@ on that specific user to get more information.
 
 ![IAM_USER](iam_user.png)
 
-You can see below that user falls under a **Group**. A group is a collection of IAM users. Groups let you specify permissions for multiple users and make it easier to manage.
+You can see below that user falls under a group. A group is a collection of IAM users. Groups let you specify permissions for multiple users and make it easier to manage.
 
 ![IAM_USER_GROUP](aws_iam_group.png)
 
 Over here I have provided full access to some of the AWS services because of the tutorial, but this is definitely not a good practice. You should always follow the principle of least privilege. Okay, we are done with the Groups. Let’s move back to the Users.
 
-I will click on the specific user. Now I will hover to **Security Credentials.** I am now going to click on `create access key`, and it is going to provide me **access key id** and **secret access key**.
-
+I'll select the particular user, then navigate to Security Credentials. Next, I'll initiate the creation of an access key, which will furnish me with both the access key ID and secret access key.
 ![IAM_ACCESS_KEYS](access_keys.png)
 
-I will copy the credentials and open Command Prompt or Terminal. I will type **aws configure** which will prompt me to enter **aws access key id** and **secret access key**.
+I'll copy the credentials and open Command Prompt or Terminal. Following that, I'll use the "aws configure" command, which will prompt me to input both the AWS access key ID and secret access key.
 
 ![IAM_ACCESS_KEYS_TERMINAL](access_keys_terminal.png)
 
