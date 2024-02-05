@@ -31,7 +31,7 @@ Now I am going to click **Build a Cluster**. I will choose Shared Cluster which 
 
 I'll opt for AWS as my cloud service provider and select the "Mumbai (ap-south-1)" region to minimize latency since it is the closest to my location. Feel free to choose the datacenter nearest to you.
 
-I will set cluster name as "myDB", after that I will click **Create Cluster**.
+I will set cluster name as _myDB_, after that I will click **Create Cluster**.
 It will take a few minutes to provision the new cluster.
 
 # Database Access
@@ -42,7 +42,7 @@ Once the database has been successfully created, we need to create a "Database U
 
 Click **Database Access**. Provide a username and click , **Autogenerate Secure Password**.
 
-In "Database User Privileges" make sure you have access to "Read and write to any database".
+In _Database User Privileges_ make sure you have access to _Read and write to any database_.
 
 Also, make sure to enable permission to access the cluster, and finally click on **Add User**. It will take some time to reflect those changes.
 
@@ -50,8 +50,8 @@ Now, click on **Network Access**.
 
 ![atlas_step_4](steps/step4.png)
 
-Make sure to whitelist your IP Address. As you can see, for this tutorial, I have provided **0.0.0.0** which means I can connect to the database from
-any IP Address. This is definitely not good when it comes to security. Please follow the **Defense in Depth** approach and try to restrict IP addresses.
+Make sure to whitelist your IP Address. As you can see, for this tutorial, I have provided _0.0.0.0_ which means I can connect to the database from
+any IP Address. This is definitely not good when it comes to security. Please follow the _Defense in Depth_ approach and try to restrict IP addresses.
 Exposing everything to the outer world makes it more vulnerable to data breaches and hacking.
 
 After setting up the Network Access, it will take some time for changes to take effect.

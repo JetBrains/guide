@@ -42,7 +42,7 @@ To learn more about this plugin, refer to this link [AWS Toolkit for PyCharm](ht
 
 To install the plugin follow the below steps.
 
-- Go to _Settings -> Plugins_
+- Go to **Settings | Plugins**
 - Search _AWS Toolkit_
 - Click **Install**
 

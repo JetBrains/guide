@@ -17,14 +17,14 @@ Let's look at some customizations.
 
 Sphinx's configuration file in `conf.py` provides a [configuration system](https://www.sphinx-doc.org/en/master/usage/configuration.html) based around a Python file named (by convention) `conf.py`.
 
-In our first example, let's change the project's title to `My Amazing Site`.
+In our first example, let's change the project's title to _My Amazing Site_.
 Open `conf.py` and set the following:
 
 ```python
 project = "My Amazing Site"
 ```
 
-When the site regenerates, you'll see the left sidebar now has `My Amazing Site`:
+When the site regenerates, you'll see the left sidebar now has _My Amazing Site_:
 
 ![Project Title](project_title.png)
 
@@ -298,4 +298,4 @@ The Sphinx docs [cover this](https://www.sphinx-doc.org/en/master/development/te
 ```
 
 If your page doesn't update, it's because Sphinx isn't rebuilding on changes to templates there.
-Edit `index.md` and save, and you'll see the sidebar updated with the value of `project`.
+Edit `index.md` and save, and you'll see the sidebar updated with the value of _project_.

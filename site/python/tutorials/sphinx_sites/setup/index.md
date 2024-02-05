@@ -80,13 +80,13 @@ $ which sphinx-quickstart
 ```
 
 Sphinx has a number of commands (implemented in Python.)
-These are added to your virtual environments `bin` directory.
-If you see `sphinx-quickstart`, you are in good shape.
+These are added to your virtual environments _bin_ directory.
+If you see _sphinx-quickstart_, you are in good shape.
 
 # Make a Sphinx Site
 
 We're all set up...time to make a site.
-Sphinx ships with [a site generator command](https://www.sphinx-doc.org/en/master/usage/quickstart.html) called `sphinx-quickstart` which is now in the `bin` directory of your virtual environment.
+Sphinx ships with [a site generator command](https://www.sphinx-doc.org/en/master/usage/quickstart.html) called _sphinx-quickstart_ which is now in the _bin_ directory of your virtual environment.
 
 Let's run it and answer some questions, accepting most of the defaults (note that `...` is to hide my directory path):
 
@@ -330,7 +330,7 @@ Sphinx works by linking files into the [toctree](https://www.sphinx-doc.org/en/m
 
 _Note: Don't want to always make such manual entries? You can use globbing in the `toctree` directive, but this will result in an unordered content listing._
 
-Our browser now shows a link to `About Us`:
+Our browser now shows a link to _About Us_:
 
 ![About Us Link](about_us_link.png)
 

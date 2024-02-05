@@ -16,7 +16,7 @@ If you've been around Sphinx for a while, you know: it has some powerful machine
 Sometimes you have the same fragment of content appearing across your site: snippets of text and/or markup. [reST has subsitutions](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#substitutions) with various ways to get them into documents. There's a [Sphinx add-on](https://pypi.org/project/sphinx-ext-substitution/) which provides more power.
 
 MyST [also allows substitutions](https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html#substitutions-with-jinja2).
-First, enable them in `myst_enable_extensions` in the `conf.py` file:
+First, enable them in _myst_enable_extensions_ in the `conf.py` file:
 
 ```python
 myst_enable_extensions = [
@@ -25,7 +25,7 @@ myst_enable_extensions = [
 ]
 ```
 
-Next, edit `about_us.md` to add some frontmatter -- a `title` but also a substitution named `snippet`.
+Next, edit `about_us.md` to add some frontmatter -- a _title_ but also a substitution named _snippet_.
 Then add the usage of the snippet at the top of the document:
 
 ```
