@@ -1,7 +1,7 @@
 import { Plugin } from "vite";
 import { CustomPluginOptions } from "rollup";
-import { parse } from "node-html-parser";
 import { join } from "path";
+import { parse } from "node-html-parser";
 
 export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {
 	const { prefix } = options;
@@ -13,13 +13,13 @@ export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {
 		transformIndexHtml: (html) => {
 			const doc = parse(html);
 
-			const anchors = doc.getElementsByTagName("a");
-			const links = doc.getElementsByTagName("link");
+			const anchors = doc.querySelectorAll("a");
+			const links = doc.querySelectorAll("link");
 
 			const targets = anchors.concat(links);
 
 			targets.forEach((element) => {
-				const href = element.attrs["href"];
+				const href = element.getAttribute("href");
 				// no value
 				if (!href) return;
 				// already good
