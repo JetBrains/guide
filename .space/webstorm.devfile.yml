@@ -21,10 +21,4 @@ attributes:
 components:
   - name: dev-container
     container:
-      image: registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-rd-ws:latest
-#components:
-#  - name: image-build
-#    image:
-#      imageName: guide-rd-ws:latest
-#      dockerfile:
-#        uri: .space/webstorm/Dockerfile
+      image: node:20-bullseye

@@ -24,6 +24,4 @@ Rider is a great tool for game development. It can quickly navigate around your 
 
 **Matt Ellis** Developer Advocate at JetBrains
 
-TODO
-
 - Twitter: <https://twitter.com/citizenmatt>
