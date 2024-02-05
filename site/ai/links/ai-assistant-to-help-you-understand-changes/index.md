@@ -1,16 +1,16 @@
 ---
-date: 2023-12-22
-title: Writing a Java Inspection for IntelliJ IDEA Using AI Assistant
+date: 2024-01-10
+title: Use JetBrains AI Assistant To Help You Understand Changes In Your Code
 topics:
   - ai-assistant
 author: hs
-subtitle: I decided to try out AI Assistant in IntelliJ IDEA to write a new Java inspection for IntelliJ IDEA, and write down my experience while solving this task. Let’s take a look!
+subtitle: Luckily, code never lies, and with the growing capabilities of LLMs and AI Assistants to parse and summarize input, we can start to focus our understanding of prior work and make plans to extend or modify a codebase.
 thumbnail: ./thumbnail.png
-linkURL: "https://blog.jetbrains.com/idea/2023/12/java-inspection-with-ai-assistant/"
+linkURL: "https://blog.jetbrains.com/dotnet/2024/01/10/use-jetbrains-ai-assistant-to-help-you-understand-changes-in-your-code/"
 ---
 
-**Author: Tagir Valeev**
+**Author: Khalid Abuhakmeh**
 
-We’ve just released [AI Assistant for IntelliJ IDEA](https://www.jetbrains.com/help/idea/ai-assistant.html), which can help you complete many tasks in the IDE, such as explaining code, generating commits, and assisting with writing code. The AI Assistant plugin is powered by the JetBrains AI Service, which uses different large language models (LLMs) under the hood and enables specific AI-powered features within many JetBrains products.
+In this post, we’ll see how to use JetBrains AI Assistant to summarize past commits in a Git repository, refine the summary to contributors, and further our understanding of a contributor’s work within a symbol. Finally, you’ll get a few more prompt suggestions to try for yourself.
 
-Since we like dogfooding, I decided to try out AI Assistant in IntelliJ IDEA to write a new Java inspection for IntelliJ IDEA, and write down my experience while solving this task. Let’s take a look!
+Before starting, you’ll need the JetBrains AI Assistant plug-in enabled and a valid subscription to the [JetBrains AI Assistant service](https://www.jetbrains.com/ai/).

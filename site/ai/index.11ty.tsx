@@ -17,7 +17,7 @@ const frontmatter: ChannelFrontmatter = {
 	date: new Date(Date.UTC(2024, 2, 5)),
 	author: "hs",
 	logo: "thumbnail.png",
-	hero: "/assets/django_splash_gradient.svg",
+	hero: "/assets/ai_splash.svg",
 	subnav: [{ title: "AI Assistant", url: "https://www.jetbrains.com/ai/" }],
 };
 
