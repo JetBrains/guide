@@ -113,6 +113,7 @@ const ResourceCard = ({
 						class="title is-size-5 is-stretched-link clamp clamp-2 mb-1"
 						aria-label={title}
 						data-template="title"
+						data-template-href="url"
 						href={url}
 					>
 						{title}
