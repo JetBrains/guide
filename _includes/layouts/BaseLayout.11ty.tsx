@@ -93,6 +93,16 @@ export function BaseLayout(
 				<meta charset="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<title>{data.title} - JetBrains Guide</title>
+				<link
+					rel="preload"
+					as="font"
+					href="https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans.woff2"
+				/>
+				<link
+					rel="preload"
+					as="font"
+					href="https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Regular.woff2"
+				/>
 				{isNotTest && (
 					<Fragment>
 						<link rel="stylesheet" href="/assets/site.scss" />
