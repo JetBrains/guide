@@ -97,12 +97,15 @@ export function BaseLayout(
 					rel="preload"
 					as="font"
 					href="https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans.woff2"
+					crossorigin="anonymous"
 				/>
 				<link
 					rel="preload"
 					as="font"
 					href="https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Regular.woff2"
+					crossorigin="anonymous"
 				/>
+				<link rel="preload" as="style" href="/assets/site.scss" />
 				{isNotTest && (
 					<Fragment>
 						<link rel="stylesheet" href="/assets/site.scss" />
