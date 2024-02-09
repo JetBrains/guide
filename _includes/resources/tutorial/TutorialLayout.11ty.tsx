@@ -6,6 +6,7 @@ import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import HorizontalResourceCard from "../../resourcecard/HorizontalResourceCard.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
+import { UserComments } from "../../userComments.11ty";
 
 export type TutorialLayoutData = LayoutProps & TutorialFrontmatter;
 
@@ -90,6 +91,7 @@ export function TutorialLayout(
 						<div class="column">
 							{breadcrumbs}
 							<main class="content">{main}</main>
+							<UserComments theme={"light"} pageUrl={page.url} />
 						</div>
 					</div>
 				</div>

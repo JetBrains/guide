@@ -63,8 +63,8 @@ export const BottomNav = ({
 }: TopNavProps): JSX.Element => {
 	const { previous, next } = getPagingElements(parent, currentStep);
 	return (
-		<div class="columns is-size-10 is-size-6">
-			<div class="column has-text-left">
+		<div class="columns is-size-10 is-size-6 is-marginless">
+			<div class="column has-text-left p-0">
 				{previous && (
 					<a
 						href={previous.url}
@@ -78,7 +78,7 @@ export const BottomNav = ({
 					</a>
 				)}
 			</div>
-			<div class="column has-text-right">
+			<div class="column has-text-right p-0">
 				{next && (
 					<a
 						href={next.url}
