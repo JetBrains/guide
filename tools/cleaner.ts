@@ -1,7 +1,7 @@
 /**
  * Utilities for loading site content and cleaning
  */
-import { normalize, sep, dirname } from "path";
+import { normalize, sep, dirname } from "upath";
 import * as fs from "fs";
 import matter from "gray-matter";
 import {

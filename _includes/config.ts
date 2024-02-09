@@ -25,7 +25,7 @@ import { Article } from "./resources/article/ArticleModels";
 import { Channel } from "./resources/channel/ChannelModels";
 import { RESOURCE_TYPES } from "../src/resourceType";
 import { Link } from "./resources/link/LinkModels";
-import { basename, join } from "path";
+import { basename, join } from "upath";
 
 export type ResourceMapType = {
 	channel: Channel;

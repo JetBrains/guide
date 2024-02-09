@@ -1,6 +1,6 @@
 import { LayoutContext, LayoutProps } from "../src/models";
 import { encode } from "html-entities";
-import { join } from "path";
+import { join } from "upath";
 
 export function RssLayout(this: LayoutContext, data: LayoutProps): string {
 	const { collections, page } = data;

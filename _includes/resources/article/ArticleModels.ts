@@ -7,7 +7,7 @@ import {
 import { EleventyPage } from "../../../src/models";
 import { ARTICLE_RESOURCE_TYPE } from "../../../src/resourceType";
 import { ThumbnailField, VideoField } from "../commonModels";
-import { join } from "path";
+import { join } from "upath";
 
 export const ArticleFrontmatter = Type.Intersect([
 	ResourceFrontmatter,

@@ -3,7 +3,7 @@ import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { EleventyPage, LayoutProps } from "../../../src/models";
 import { CHANNEL_RESOURCE_TYPE } from "../../../src/resourceType";
 import { IconField } from "../commonModels";
-import { join } from "path";
+import { join } from "upath";
 
 export const ChannelFrontmatter = Type.Intersect([
 	ResourceFrontmatter,

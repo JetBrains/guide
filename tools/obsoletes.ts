@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import { join, relative } from "path";
+import { join, relative } from "upath";
 import { getMarkdownFiles, Markdown } from "./file.utils";
 
 function createNginxRule(redirectFrom: string, redirectTo: string) {

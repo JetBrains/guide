@@ -1,6 +1,6 @@
 import { Plugin } from "vite";
 import { CustomPluginOptions } from "rollup";
-import { join } from "path";
+import { join } from "upath";
 import { parse } from "node-html-parser";
 
 export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {

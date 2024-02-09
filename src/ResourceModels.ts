@@ -12,7 +12,7 @@ import slugify from "@sindresorhus/slugify";
 
 // @ts-ignore
 import { getContentType } from "../public/assets/js/utils";
-import { join } from "path";
+import { join } from "upath";
 
 export function getThumbnailPath(
 	dataThumbnail: string,

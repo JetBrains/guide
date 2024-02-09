@@ -1,5 +1,5 @@
 import fs from "fs";
-import { join, normalize } from "path";
+import { join, normalize } from "upath";
 import matter from "gray-matter";
 
 export const guideSites = [

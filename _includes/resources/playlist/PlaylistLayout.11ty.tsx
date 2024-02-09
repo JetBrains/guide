@@ -9,7 +9,7 @@ import ArticleTopics from "../common/ArticleTopics.11ty";
 import { Author } from "../author/AuthorModels";
 import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
-import { join } from "path";
+import { join } from "upath";
 
 export type PlaylistLayoutData = LayoutProps & PlaylistFrontmatter;
 

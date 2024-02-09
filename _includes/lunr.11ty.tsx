@@ -1,6 +1,6 @@
 import { SiteCollections } from "./models";
 import { getGlowInfo } from "./resourcecard/ResourceCard.11ty";
-import { join } from "path";
+import { join } from "upath";
 
 export class LunrBase {
 	data() {

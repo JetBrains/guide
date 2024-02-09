@@ -9,7 +9,7 @@ import { TUTORIAL_RESOURCE_TYPE } from "../../../src/resourceType";
 import { EleventyPage } from "../../../src/models";
 import { TutorialStep } from "./TutorialStepModels";
 import { ThumbnailField, VideoBottomField } from "../commonModels";
-import { join } from "path";
+import { join } from "upath";
 
 export const TutorialFrontmatter = Type.Intersect([
 	ResourceFrontmatter,

@@ -1,7 +1,7 @@
 import { writeFile } from "node:fs/promises";
 import { TopicFrontmatter } from "../_includes/resources/topic/TopicModels";
 import { ResourceMap } from "./ResourceModels";
-import { join } from "path";
+import { join } from "upath";
 
 // Some feature flags to opt-in/opt-out of, depending how far we want to go with JSON schemas:
 const featureFlags = {

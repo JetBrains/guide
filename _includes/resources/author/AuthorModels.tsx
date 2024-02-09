@@ -3,7 +3,7 @@ import { EleventyPage } from "../../../src/models";
 import { LabelField, ThumbnailField } from "../commonModels";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { AUTHOR_RESOURCE_TYPE } from "../../../src/resourceType";
-import { join } from "path";
+import { join } from "upath";
 
 export const AuthorFrontmatter = Type.Intersect([
 	ResourceFrontmatter,

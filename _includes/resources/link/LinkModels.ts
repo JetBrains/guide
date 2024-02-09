@@ -10,7 +10,7 @@ import { LINK_RESOURCE_TYPE } from "../../../src/resourceType";
 import { ThumbnailField } from "../commonModels";
 // @ts-ignore
 import { getContentType } from "../../../public/assets/js/utils";
-import { join } from "path";
+import { join } from "upath";
 
 export const LinkFrontmatter = Type.Intersect([
 	ResourceFrontmatter,

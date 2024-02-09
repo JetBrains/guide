@@ -1,5 +1,5 @@
 import fs from "fs";
-import { join } from "path";
+import { join } from "upath";
 
 const svgCache = new Map<string, string>();
 

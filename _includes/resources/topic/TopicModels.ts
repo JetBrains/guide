@@ -3,7 +3,7 @@ import { EleventyPage } from "../../../src/models";
 import { IconField, LabelField } from "../commonModels";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { TOPIC_RESOURCE_TYPE } from "../../../src/resourceType";
-import { join } from "path";
+import { join } from "upath";
 
 export const TopicFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
