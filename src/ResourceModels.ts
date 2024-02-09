@@ -3,6 +3,7 @@ import { EleventyPage } from "./models";
 import { resolveReference } from "./registration";
 import { validateFrontmatter } from "./validators";
 import { DateTime } from "luxon";
+import path from "upath";
 import { ALL_RESOURCES, RESOURCE_TYPES } from "./resourceType";
 import { Author } from "../_includes/resources/author/AuthorModels";
 import { Channel } from "../_includes/resources/channel/ChannelModels";
@@ -12,7 +13,6 @@ import slugify from "@sindresorhus/slugify";
 
 // @ts-ignore
 import { getContentType } from "../public/assets/js/utils";
-import { join } from "path";
 
 export function getThumbnailPath(
 	dataThumbnail: string,
@@ -22,7 +22,7 @@ export function getThumbnailPath(
 	if (dataThumbnail.startsWith("/")) {
 		return dataThumbnail;
 	} else {
-		return join(pageURL, dataThumbnail);
+		return path.join(pageURL, dataThumbnail);
 	}
 }
 
@@ -139,7 +139,7 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 		this.topics = data.topics;
 
 		if (data.cardThumbnail) {
-			this.cardThumbnail = join(page.url, data.cardThumbnail);
+			this.cardThumbnail = path.join(page.url, data.cardThumbnail);
 		}
 	}
 

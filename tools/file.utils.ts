@@ -1,5 +1,5 @@
 import fs from "fs";
-import { join, normalize } from "path";
+import path from "upath";
 import matter from "gray-matter";
 
 export const guideSites = [
@@ -58,7 +58,7 @@ export type Markdown = {
 };
 
 export function getRoot(): string {
-	return normalize(`${__dirname}/../site`);
+	return path.normalize(`${__dirname}/../site`);
 }
 
 export function getAllFiles(
@@ -78,7 +78,7 @@ export function getAllFiles(
 			}
 		} else {
 			if (fileExtension.find((extension) => file.endsWith(extension))) {
-				arrayOfFiles.push(join(dirPath, "/", file));
+				arrayOfFiles.push(path.join(dirPath, "/", file));
 			}
 		}
 	});

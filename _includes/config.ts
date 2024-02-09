@@ -25,7 +25,7 @@ import { Article } from "./resources/article/ArticleModels";
 import { Channel } from "./resources/channel/ChannelModels";
 import { RESOURCE_TYPES } from "../src/resourceType";
 import { Link } from "./resources/link/LinkModels";
-import { basename, join } from "path";
+import path from "upath";
 
 export type ResourceMapType = {
 	channel: Channel;
@@ -81,7 +81,11 @@ export async function registerIncludes(
 				},
 				{}
 			);
-			const schemasOutputPath = join("docs", "schemas", basename(sitePath));
+			const schemasOutputPath = path.join(
+				"docs",
+				"schemas",
+				path.basename(sitePath)
+			);
 			fs.mkdirSync(schemasOutputPath, { recursive: true });
 			await dumpSchemas(schemas, resourceMap, schemasOutputPath);
 

@@ -3,7 +3,7 @@ import { EleventyPage } from "../../../src/models";
 import { IconField, LabelField } from "../commonModels";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { TOPIC_RESOURCE_TYPE } from "../../../src/resourceType";
-import { join } from "path";
+import path from "upath";
 
 export const TopicFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -37,7 +37,7 @@ export class Topic
 		// font-awesome string
 		this.icon = data.icon;
 		if (data.logo) {
-			this.logo = join(page.url, data.logo);
+			this.logo = path.join(page.url, data.logo);
 			this.thumbnail = this.logo;
 		}
 	}

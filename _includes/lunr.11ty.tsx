@@ -1,6 +1,6 @@
 import { SiteCollections } from "./models";
 import { getGlowInfo } from "./resourcecard/ResourceCard.11ty";
-import { join } from "path";
+import path from "upath";
 
 export class LunrBase {
 	data() {
@@ -9,9 +9,11 @@ export class LunrBase {
 
 	getRecords(collections: SiteCollections, pathprefix: string | undefined) {
 		return Array.from(collections.resourceMap.values()).map((value) => {
-			const url = pathprefix ? join(pathprefix, value.url) : value.url;
+			const url = pathprefix ? path.join(pathprefix, value.url) : value.url;
 			const authorUrl = value.references?.author.url ?? "";
-			const authorURL = pathprefix ? join(pathprefix, authorUrl) : authorUrl;
+			const authorURL = pathprefix
+				? path.join(pathprefix, authorUrl)
+				: authorUrl;
 			const record = {
 				title: value.title,
 				subtitle: value.subtitle,

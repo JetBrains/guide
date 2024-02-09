@@ -1,7 +1,7 @@
 import { writeFile } from "node:fs/promises";
 import { TopicFrontmatter } from "../_includes/resources/topic/TopicModels";
 import { ResourceMap } from "./ResourceModels";
-import { join } from "path";
+import path from "upath";
 
 // Some feature flags to opt-in/opt-out of, depending how far we want to go with JSON schemas:
 const featureFlags = {
@@ -171,7 +171,7 @@ export async function dumpSchemas<T extends ObjectMap>(
 		}
 
 		await writeFile(
-			join(outputPath, `${resourceTypeName}.schema.json`),
+			path.join(outputPath, `${resourceTypeName}.schema.json`),
 			JSON.stringify(thisSchema, null, 2)
 		);
 	}

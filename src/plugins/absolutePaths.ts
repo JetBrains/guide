@@ -1,6 +1,6 @@
 import { Plugin } from "vite";
 import { CustomPluginOptions } from "rollup";
-import { join } from "path";
+import path from "upath";
 import { parse } from "node-html-parser";
 
 export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {
@@ -34,7 +34,7 @@ export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {
 				if (href.startsWith("__VITE_ASSET__")) return;
 
 				if (prefix && href) {
-					const value = join(prefix, href);
+					const value = path.join(prefix, href);
 					element.setAttribute("href", value);
 				}
 			});

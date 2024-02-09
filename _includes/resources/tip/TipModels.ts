@@ -7,7 +7,7 @@ import {
 import { EleventyPage } from "../../../src/models";
 import { ThumbnailField, VideoField } from "../commonModels";
 import { TIP_RESOURCE_TYPE } from "../../../src/resourceType";
-import { join } from "path";
+import path from "upath";
 
 export const TipFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -56,11 +56,11 @@ export class Tip extends Resource<TIP_RESOURCE_TYPE> implements TipFrontmatter {
 		super({ data, page });
 		this.animatedGif = data.animatedGif;
 		if (this.animatedGif) {
-			this.animatedGif.file = join(page.url, this.animatedGif.file);
+			this.animatedGif.file = path.join(page.url, this.animatedGif.file);
 		}
 		this.video = data.video;
 		this.screenshot = data.screenshot
-			? join(page.url, data.screenshot)
+			? path.join(page.url, data.screenshot)
 			: undefined;
 		this.seealso = data.seealso;
 		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);
