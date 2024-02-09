@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { LayoutContext } from "../../src/models";
 import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
@@ -32,7 +31,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class WebStormHomepage {
+export default class WebStormHomepage {
 	data() {
 		return {
 			layout: "",
@@ -97,5 +96,3 @@ class WebStormHomepage {
 		);
 	}
 }
-
-module.exports = WebStormHomepage;

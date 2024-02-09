@@ -43,6 +43,7 @@ export interface LayoutContext {
 }
 
 export type LayoutProps = {
+	children?: JSX.Children;
 	collections: SiteCollections;
 	commandLineArgs: CommandLineArgs;
 	content: string;

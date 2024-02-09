@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { LayoutContext } from "../../src/models";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
 import {
@@ -29,7 +28,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class RemoteHomepage {
+export default class RemoteHomepage {
 	data() {
 		return {
 			layout: "",
@@ -310,5 +309,3 @@ class RemoteHomepage {
 		);
 	}
 }
-
-module.exports = RemoteHomepage;

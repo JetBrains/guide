@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import ConsistentHash from "consistent-hash";
 import { Resource } from "../../src/ResourceModels";
 import { Topic } from "../resources/topic/TopicModels";
@@ -102,7 +101,7 @@ const ResourceCard = ({
 				<div class="card-content has-position-relative">
 					{contentType && includeContentType && !compactMode && (
 						<p
-							className="subtitle is-size-7 is-uppercase"
+							class="subtitle is-size-7 is-uppercase"
 							// TODO Paul remember this might be "Medium" etc. for Link
 							data-template="contentType" // TODO Paul this should be replaced in explore as well
 						>

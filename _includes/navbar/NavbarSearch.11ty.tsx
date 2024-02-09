@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import Icon from "../icons/Icon.11ty";
 
 function NavbarSearch(): JSX.Element {

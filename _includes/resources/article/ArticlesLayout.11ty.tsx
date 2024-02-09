@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import {
 	ReferenceLayout,
 	ReferenceLayoutProps,
@@ -6,8 +5,9 @@ import {
 import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Article } from "./ArticleModels";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
-export class ArticlesLayout {
+export default class ArticlesLayout {
 	data() {
 		return {
 			eleventyExcludeFromCollections: true,
@@ -25,14 +25,12 @@ export class ArticlesLayout {
 		});
 
 		const listing = (
-			<>
+			<Fragment>
 				{articles.map((tip) => {
 					return <ResourceCard resource={tip}></ResourceCard>;
 				})}
-			</>
+			</Fragment>
 		);
-		return <ReferenceLayout {...data} listing={[listing]} content={content} />;
+		return <ReferenceLayout {...data} listing={listing} content={content} />;
 	}
 }
-
-module.exports = ArticlesLayout;

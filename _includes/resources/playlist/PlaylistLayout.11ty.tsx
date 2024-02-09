@@ -1,15 +1,15 @@
-import h, { JSX } from "vhtml";
 import { Playlist, PlaylistFrontmatter } from "./PlaylistModels";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import VideoPlayer from "../../video/VideoPlayer.11ty";
 import { parse, HTMLElement } from "node-html-parser";
-import path from "upath";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import { Author } from "../author/AuthorModels";
 import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
+import { join } from "path";
 
 export type PlaylistLayoutData = LayoutProps & PlaylistFrontmatter;
 
@@ -38,7 +38,7 @@ function relativize(originalUrl: string, content: string) {
 		if (href.startsWith("__VITE_ASSET__")) return;
 
 		if (prefix && href) {
-			element.setAttribute(attribute, path.join(prefix, href));
+			element.setAttribute(attribute, join(prefix, href));
 		}
 	}
 
@@ -71,7 +71,7 @@ export function PlaylistLayout(
 		throw new Error(`Author "${playlist.author}" not in collection`);
 	}
 	const main = (
-		<>
+		<Fragment>
 			<ArticleTitleSubtitle
 				title={playlist.title}
 				subtitle={playlist.subtitle}
@@ -80,11 +80,9 @@ export function PlaylistLayout(
 			{playlist.references?.topics && (
 				<ArticleTopics topics={playlist.references?.topics} />
 			)}
-			<div
-				class="content"
-				style="margin-bottom: 3rem"
-				dangerouslySetInnerHTML={{ __html: content }}
-			></div>
+			<div class="content" style="margin-bottom: 3rem">
+				{content}
+			</div>
 			{playlist.playlistResources.map((item: any, index: number) => {
 				const thisItem = all.find((i) => i.page.url === item.url);
 				const itemContent = thisItem
@@ -118,16 +116,11 @@ export function PlaylistLayout(
 								</a>
 							</p>
 						)}
-						{itemContent && (
-							<div
-								class="content mt-4"
-								dangerouslySetInnerHTML={{ __html: itemContent }}
-							></div>
-						)}
+						{itemContent && <div class="content mt-4">{itemContent}</div>}
 					</div>
 				);
 			})}
-		</>
+		</Fragment>
 	);
 
 	// Sidebar

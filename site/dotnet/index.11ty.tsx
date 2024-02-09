@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { LayoutContext } from "../../src/models";
 import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
@@ -32,7 +31,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class DotNetHomepage {
+export default class DotNetHomepage {
 	data() {
 		return {
 			layout: "",
@@ -111,31 +110,29 @@ class DotNetHomepage {
 					image={channel.hero!}
 				/>
 				<MultiColumnSection>
-					<div className="columns is-multiline is-centered">
+					<div class="columns is-multiline is-centered">
 						{topics.map((topic) => {
-							let figure: string;
+							let figure: JSX.Element;
 							if (topic.icon) {
 								figure = (
-									<i
-										className={`${topic.icon} has-text-${topic.accent} fa-2x`}
-									/>
+									<i class={`${topic.icon} has-text-${topic.accent} fa-2x`} />
 								);
 							} else if (topic.logo) {
 								figure = <img src={topic.logo} alt={topic.title} />;
 							} else {
 								figure = (
-									<i className={`fas fa-file has-text-${topic.accent} fa-2x`} />
+									<i class={`fas fa-file has-text-${topic.accent} fa-2x`} />
 								);
 							}
 
 							return (
-								<div className="column mb-1 is-6 is-2-desktop py-5 has-box-hover has-text-centered has-position-relative">
+								<div class="column mb-1 is-6 is-2-desktop py-5 has-box-hover has-text-centered has-position-relative">
 									<a
 										href={topic.url}
 										aria-label={`Topic`}
-										className="is-size-5 has-text-weight-bold title is-stretched-link"
+										class="is-size-5 has-text-weight-bold title is-stretched-link"
 									>
-										<figure className="image is-48x48 mb-1 mx-auto">
+										<figure class="image is-48x48 mb-1 mx-auto">
 											{figure}
 										</figure>
 										{topic.title}
@@ -210,5 +207,3 @@ class DotNetHomepage {
 		);
 	}
 }
-
-module.exports = DotNetHomepage;

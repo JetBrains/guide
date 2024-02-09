@@ -5,7 +5,8 @@ import { ChannelHomepageData } from "../../_includes/resources/channel/ChannelMo
 
 // @ts-ignore
 import PyCharmHomepage from "./index.11ty";
-test("should render PyCharmHomepage", () => {
+import { renderToString } from "jsx-async-runtime";
+test("should render PyCharmHomepage", async () => {
 	const channelItem = fixtures.channelItems[0];
 	const pageLayoutData: ChannelHomepageData = {
 		...baseRenderData,
@@ -19,7 +20,8 @@ test("should render PyCharmHomepage", () => {
 	};
 
 	const homepage = new PyCharmHomepage();
-	document.body.innerHTML = homepage.render.call(context, pageLayoutData);
+	const r = homepage.render.call(context, pageLayoutData);
+	document.body.innerHTML = await renderToString(r, {});
 	const subnavTitle: HTMLAnchorElement = screen.getByRole("link", {
 		name: "Channel",
 	});

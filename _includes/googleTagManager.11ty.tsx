@@ -1,5 +1,3 @@
-import h, { JSX } from "vhtml";
-
 export type GoogleTagManagerProps = {
 	googleTagManagerId: string;
 };
@@ -13,7 +11,7 @@ export const GoogleTagManagerHeadScript = ({
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','${googleTagManagerId}');`;
 
-	return <script dangerouslySetInnerHTML={{ __html: script }}></script>;
+	return <script>{script}</script>;
 };
 
 export const GoogleTagManagerBodyNoScript = ({

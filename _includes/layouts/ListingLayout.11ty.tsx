@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import {
 	EleventyCollectionItem,
 	LayoutContext,
@@ -24,7 +23,7 @@ type ListingLayoutProps = {
 } & LayoutProps &
 	ResourceFrontmatter;
 
-class ListingLayout {
+export default class ListingLayout {
 	data() {
 		return {
 			eleventyExcludeFromCollections: true,
@@ -97,12 +96,7 @@ class ListingLayout {
 								)}
 							</div>
 						</div>
-						{content && (
-							<div
-								class="content pt-2"
-								dangerouslySetInnerHTML={{ __html: content }}
-							></div>
-						)}
+						{content && <div class="content pt-2">{content}</div>}
 					</div>
 				</section>
 
@@ -111,5 +105,3 @@ class ListingLayout {
 		);
 	}
 }
-
-module.exports = ListingLayout;

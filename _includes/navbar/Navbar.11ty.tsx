@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import NavbarSearch from "./NavbarSearch.11ty";
 import { Resource } from "../../src/ResourceModels";
 import ResourceCard from "../resourcecard/ResourceCard.11ty";

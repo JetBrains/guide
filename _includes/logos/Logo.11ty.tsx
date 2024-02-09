@@ -1,6 +1,5 @@
-import path from "upath";
-import h, { JSX } from "vhtml";
 import fs from "fs";
+import { join } from "path";
 
 const svgCache = new Map<string, string>();
 
@@ -26,20 +25,14 @@ let getSvgContent = function (product: string, variant?: string): string {
 	}
 
 	let relativeFilePath = variant
-		? path.join(
+		? join(
 				"node_modules",
 				"@jetbrains",
 				"logos",
 				product,
 				`${product}-${variant}.svg`
 		  )
-		: path.join(
-				"node_modules",
-				"@jetbrains",
-				"logos",
-				product,
-				`${product}.svg`
-		  );
+		: join("node_modules", "@jetbrains", "logos", product, `${product}.svg`);
 	let data = fs.readFileSync(relativeFilePath).toString("utf8");
 	svgCache.set(product + "_" + variant, data);
 	return data;
@@ -53,13 +46,7 @@ export type IconProps = {
 };
 
 const Logo = ({ product, variant, width, height }: IconProps): JSX.Element => {
-	return (
-		<span
-			dangerouslySetInnerHTML={{
-				__html: getResizedSvgContent(product, variant, width, height),
-			}}
-		></span>
-	);
+	return <span>{getResizedSvgContent(product, variant, width, height)}</span>;
 };
 
 export default Logo;

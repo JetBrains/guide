@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { Link, LinkFrontmatter } from "./LinkModels";
 import { Author } from "../author/AuthorModels";
 import VideoPlayer from "../../video/VideoPlayer.11ty";
@@ -9,6 +8,7 @@ import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import RelatedResources from "../../relatedresources/RelatedResources.11ty";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 export type LinkLayoutData = LayoutProps & LinkFrontmatter;
 
@@ -40,7 +40,7 @@ export function LinkLayout(
 
 	// Main content
 	const main = (
-		<>
+		<Fragment>
 			<div class="section">
 				<div class="container">
 					<div class="columns is-multiline">
@@ -74,10 +74,7 @@ export function LinkLayout(
 
 								{content && (
 									<div class="columns mt-2">
-										<div
-											class="column is-11-desktop content"
-											dangerouslySetInnerHTML={{ __html: content }}
-										/>
+										<div class="column is-11-desktop content">{content}</div>
 									</div>
 								)}
 							</main>
@@ -86,7 +83,7 @@ export function LinkLayout(
 				</div>
 			</div>
 			<RelatedResources currentResource={link} items={allResources} />
-		</>
+		</Fragment>
 	);
 
 	return <BaseLayout {...data}>{main}</BaseLayout>;

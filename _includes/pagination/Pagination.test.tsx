@@ -3,9 +3,11 @@ import { screen } from "@testing-library/dom";
 
 import Pagination from "./Pagination.11ty";
 import fixtures from "../fixtures";
+import { renderToString } from "jsx-async-runtime";
 
-test("Pagination", () => {
-	document.body.innerHTML = Pagination(fixtures.paginationProps);
+test("Pagination", async () => {
+	const r = Pagination(fixtures.paginationProps);
+	document.body.innerHTML = await renderToString(r, {});
 	expect(screen.getByRole("navigation")).to.exist;
 	expect(screen.getByLabelText("Goto page 0")).to.exist;
 	const previous: HTMLAnchorElement = screen.getByText("Previous");

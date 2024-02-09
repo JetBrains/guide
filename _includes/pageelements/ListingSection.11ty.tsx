@@ -1,6 +1,6 @@
 import { Resource } from "../../src/ResourceModels";
 import ResourceCard from "../resourcecard/ResourceCard.11ty";
-import h from "vhtml";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 export type ListingSectionProps = {
 	title: string;
@@ -50,23 +50,21 @@ function ListingSection({
 	);
 
 	const container = (
-		<div className="container" id={anchor}>
-			<div className="columns is-vcentered is-mobile">
-				<div className="column is-8">
-					<h2 className="mt-2 mb-4 is-size-1 has-text-weight-bold">{title}</h2>
-					{subtitle && (
-						<p className="subtitle has-text-grey mb-5">{subtitle}</p>
-					)}
+		<div class="container" id={anchor}>
+			<div class="columns is-vcentered is-mobile">
+				<div class="column is-8">
+					<h2 class="mt-2 mb-4 is-size-1 has-text-weight-bold">{title}</h2>
+					{subtitle && <p class="subtitle has-text-grey mb-5">{subtitle}</p>}
 				</div>
 				{moreLink && (
-					<div className="column has-text-right">
-						<a className="button is-rounded is-outlined" href={moreLink}>
+					<div class="column has-text-right">
+						<a class="button is-rounded is-outlined" href={moreLink}>
 							More...
 						</a>
 					</div>
 				)}
 			</div>
-			<div className="container">{listing}</div>
+			<div class="container">{listing}</div>
 		</div>
 	);
 
@@ -77,14 +75,14 @@ function ListingSection({
 	);
 
 	return (
-		<>
+		<Fragment>
 			{separator && (
 				<section class="container">
 					<hr />
 				</section>
 			)}
 			{result}
-		</>
+		</Fragment>
 	);
 }
 

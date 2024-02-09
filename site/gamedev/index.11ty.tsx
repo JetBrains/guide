@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { LayoutContext } from "../../src/models";
 import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
@@ -36,7 +35,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class GameDevHomepage {
+export default class GameDevHomepage {
 	data() {
 		return {
 			layout: "",
@@ -85,11 +84,11 @@ class GameDevHomepage {
 					subtitleExtraClass={"has-text-white"}
 					image={channel.hero!}
 					extraContent={
-						<div className="buttons are-medium">
-							<a href="#learn-unity" className="button is-rounded">
+						<div class="buttons are-medium">
+							<a href="#learn-unity" class="button is-rounded">
 								Learn Unity
 							</a>
-							<a href="#learn-unreal-engine" className="button is-rounded">
+							<a href="#learn-unreal-engine" class="button is-rounded">
 								Learn Unreal Engine
 							</a>
 						</div>
@@ -139,5 +138,3 @@ class GameDevHomepage {
 		);
 	}
 }
-
-module.exports = GameDevHomepage;

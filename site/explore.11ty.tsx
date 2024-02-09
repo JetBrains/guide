@@ -1,10 +1,9 @@
-// noinspection ES6UnusedImports
-import h, { JSX } from "vhtml";
 import { LayoutContext, LayoutProps } from "../src/models";
-import { PageFrontmatter } from "../_includes/resources/page/PageModels";
 import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
 import ListingSection from "../_includes/pageelements/ListingSection.11ty";
 import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
+import { ResourceFrontmatter } from "../src/ResourceModels";
 
 // Happy DOM throws a DOMException for external script/css even though
 // we do the settings to suppress it. Vite catches the exception but
@@ -67,9 +66,9 @@ const exploreMenu: ExploreGroup[] = [
 	},
 ];
 
-type ExplorePageProps = LayoutProps & PageFrontmatter;
+type ExplorePageProps = LayoutProps & ResourceFrontmatter;
 
-class ExplorePage {
+export default class ExplorePage {
 	data() {
 		return {
 			title: "Explore",
@@ -144,7 +143,7 @@ class ExplorePage {
 								<aside class="menu" id="facetMenu">
 									{exploreMenu.map((menuGroup) => {
 										return (
-											<>
+											<Fragment>
 												{menuGroup.label && (
 													<p
 														title={`${menuGroup.label} Group`}
@@ -166,7 +165,7 @@ class ExplorePage {
 														</li>
 													))}
 												</ul>
-											</>
+											</Fragment>
 										);
 									})}
 									<template id="cardTemplate">{resourceCard}</template>
@@ -178,11 +177,9 @@ class ExplorePage {
 				{isNotTest ? (
 					<script type="module" src="/assets/js/evm.js" async></script>
 				) : (
-					<></>
+					<Fragment></Fragment>
 				)}
 			</BaseLayout>
 		);
 	}
 }
-
-module.exports = ExplorePage;

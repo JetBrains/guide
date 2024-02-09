@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { Plugin } from "vite";
 import { parse } from "node-html-parser";
 

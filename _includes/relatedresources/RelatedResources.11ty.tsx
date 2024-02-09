@@ -1,6 +1,6 @@
-import h, { JSX } from "vhtml";
 import { Resource } from "../../src/ResourceModels";
 import ListingSection from "../pageelements/ListingSection.11ty";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 // The upper limit on the number of items to show
 const ITEM_LIMIT = 3;
@@ -79,7 +79,7 @@ const RelatedResources = ({
 			/>
 		);
 	}
-	return <></>;
+	return <Fragment></Fragment>;
 };
 
 export default RelatedResources;

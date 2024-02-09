@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import SeeAlso from "../../seealso/SeeAlso.11ty";
 import { Tip, TipFrontmatter } from "./TipModels";
 import { Author } from "../author/AuthorModels";
@@ -11,6 +10,7 @@ import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
 import RelatedResources from "../../relatedresources/RelatedResources.11ty";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 export type TipLayoutData = LayoutProps & TipFrontmatter;
 
@@ -42,7 +42,7 @@ export function TipLayout(
 
 	// Main content
 	const main = (
-		<>
+		<Fragment>
 			<div class="section">
 				<div class="container">
 					<div class="columns is-multiline">
@@ -68,10 +68,7 @@ export function TipLayout(
 
 								{content && (
 									<div class="columns mt-2">
-										<div
-											class="column is-11-desktop content"
-											dangerouslySetInnerHTML={{ __html: content }}
-										/>
+										<div class="column is-11-desktop content">{content}</div>
 									</div>
 								)}
 								{tip.seealso && <SeeAlso items={tip.seealso} />}
@@ -81,7 +78,7 @@ export function TipLayout(
 				</div>
 			</div>
 			<RelatedResources currentResource={tip} items={allResources} />
-		</>
+		</Fragment>
 	);
 
 	return <BaseLayout {...data}>{main}</BaseLayout>;

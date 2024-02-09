@@ -1,10 +1,10 @@
 import { expect, test } from "vitest";
-import path from "upath";
 import { sitesDir, validateFrontmatter } from "./validators";
 import { TipFrontmatter } from "../_includes/resources/tip/TipModels";
+import { basename } from "path";
 
 test("defines the sitesDir", () => {
-	expect(path.basename(sitesDir)).to.equal("site");
+	expect(basename(sitesDir)).to.equal("site");
 });
 
 test("validates good frontmatter", () => {

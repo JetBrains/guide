@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { LayoutContext } from "../../src/models";
 import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
@@ -21,7 +20,7 @@ const frontmatter: ChannelFrontmatter = {
 	subnav: [{ title: "PyCharm", url: "https://www.jetbrains.com/pycharm/" }],
 };
 
-class DjangoHomepage {
+export default class DjangoHomepage {
 	data() {
 		return {
 			layout: "",
@@ -79,5 +78,3 @@ class DjangoHomepage {
 		);
 	}
 }
-
-module.exports = DjangoHomepage;

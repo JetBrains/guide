@@ -1,6 +1,5 @@
-import path from "upath";
-import h, { JSX } from "vhtml";
 import fs from "fs";
+import { join } from "path";
 
 const svgCache = new Map<string, string>();
 
@@ -9,7 +8,7 @@ let getSvgContent = function (file: string): string {
 		return svgCache.get(file) as string;
 	}
 
-	let relativeFilePath = path.join(
+	let relativeFilePath = join(
 		"node_modules",
 		"@rescui",
 		"icons",
@@ -26,9 +25,7 @@ export type IconProps = {
 };
 
 const Icon = ({ name }: IconProps): JSX.Element => {
-	return (
-		<span dangerouslySetInnerHTML={{ __html: getSvgContent(name) }}></span>
-	);
+	return <span>{getSvgContent(name)}</span>;
 };
 
 export default Icon;

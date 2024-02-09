@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import Navbar from "../navbar/Navbar.11ty";
 import Footer from "../footer/Footer.11ty";
 import { LayoutContext, LayoutProps } from "../../src/models";
@@ -10,9 +9,9 @@ import {
 } from "../googleTagManager.11ty";
 import Subnav from "../navbar/Subnav.11ty";
 import { Channel } from "../resources/channel/ChannelModels";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 export type BaseLayoutProps = {
-	children: string[];
 	title: string;
 	subtitle?: string;
 	video?:
@@ -89,63 +88,57 @@ export function BaseLayout(
 
 	// render
 	return (
-		"<!doctype html>" +
-		(
-			<html lang="en">
-				<head>
-					<meta charset="utf-8" />
-					<meta
-						name="viewport"
-						content="width=device-width, initial-scale=1.0"
+		<html lang="en">
+			<head>
+				<meta charset="utf-8" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<title>{data.title} - JetBrains Guide</title>
+				{isNotTest && (
+					<Fragment>
+						<link rel="stylesheet" href="/assets/site.scss" />
+						<script defer src="/assets/js/site.js" type="module"></script>
+						<script defer src="/assets/js/video.js" type="module"></script>
+					</Fragment>
+				)}
+				<link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+				<link rel="shortcut icon" href="/assets/favicon.ico" />
+				<link
+					rel="alternate"
+					type="application/rss+xml"
+					title={`${title} RSS Feed`}
+					href={`/rss.xml`}
+				/>
+				<meta property="og:title" content={title} />
+				{subtitle && <meta property="og:description" content={subtitle} />}
+				<meta property="og:type" content="article" />
+				<meta property="article:published_time" content="2023-02-17" />
+				<meta property="article:author" content="" />
+				<meta property="article:section" content="" />
+				{cardThumbnail && <meta property="og:image:alt" content={title} />}
+				<meta name="twitter:card" content="summary" />
+				<meta name="twitter:site" content="@jetbrains" />
+				{subtitle && <meta name="description" content={subtitle} />}
+				<GoogleTagManagerHeadScript googleTagManagerId="GTM-5P98" />
+			</head>
+			<body>
+				<GoogleTagManagerBodyNoScript googleTagManagerId="GTM-5P98" />
+				<Navbar
+					featuredResource={featuredChannel}
+					technologies={technologies}
+					solutions={solutions}
+					topics={hotTopics}
+				/>
+				{channel && <Subnav channel={channel} />}
+				{children}
+				<Footer copyright={copyright}></Footer>
+				{cardThumbnail && (
+					<MetaOpenGraphImage
+						siteUrl="https://www.jetbrains.com/guide/"
+						src={cardThumbnail}
 					/>
-					<title>{data.title} - JetBrains Guide</title>
-					{isNotTest && (
-						<>
-							<link rel="stylesheet" href="/assets/site.scss" />
-							<script defer src="/assets/js/site.js" type="module"></script>
-							<script defer src="/assets/js/video.js" type="module"></script>
-						</>
-					)}
-					<link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
-					<link rel="shortcut icon" href="/assets/favicon.ico" />
-					<link
-						rel="alternate"
-						type="application/rss+xml"
-						title={`${title} RSS Feed`}
-						href={`/rss.xml`}
-					/>
-					<meta property="og:title" content={title} />
-					{subtitle && <meta property="og:description" content={subtitle} />}
-					<meta property="og:type" content="article" />
-					<meta property="article:published_time" content="2023-02-17" />
-					<meta property="article:author" content="" />
-					<meta property="article:section" content="" />
-					{cardThumbnail && <meta property="og:image:alt" content={title} />}
-					<meta name="twitter:card" content="summary" />
-					<meta name="twitter:site" content="@jetbrains" />
-					{subtitle && <meta name="description" content={subtitle} />}
-					<GoogleTagManagerHeadScript googleTagManagerId="GTM-5P98" />
-				</head>
-				<body>
-					<GoogleTagManagerBodyNoScript googleTagManagerId="GTM-5P98" />
-					<Navbar
-						featuredResource={featuredChannel}
-						technologies={technologies}
-						solutions={solutions}
-						topics={hotTopics}
-					/>
-					{channel && <Subnav channel={channel} />}
-					{children}
-					<Footer copyright={copyright}></Footer>
-					{cardThumbnail && (
-						<MetaOpenGraphImage
-							siteUrl="https://www.jetbrains.com/guide/"
-							src={cardThumbnail}
-						/>
-					)}
-				</body>
-			</html>
-		)
+				)}
+			</body>
+		</html>
 	);
 }
 

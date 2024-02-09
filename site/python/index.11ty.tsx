@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { LayoutContext } from "../../src/models";
 import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
@@ -26,7 +25,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class PythonHomepage {
+export default class PythonHomepage {
 	data() {
 		return {
 			layout: "",
@@ -90,5 +89,3 @@ class PythonHomepage {
 		);
 	}
 }
-
-module.exports = PythonHomepage;

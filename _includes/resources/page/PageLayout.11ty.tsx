@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { PageFrontmatter } from "./PageModels";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
@@ -16,7 +15,7 @@ export function PageLayout(
 			<section class="section">
 				<div class="container">
 					<main class="content">
-						<div dangerouslySetInnerHTML={{ __html: data.content }} />
+						<div>{data.content}</div>
 					</main>
 				</div>
 			</section>

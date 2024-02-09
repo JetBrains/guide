@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { LayoutContext } from "../../src/models";
 import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
@@ -27,7 +26,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class GoHomepage {
+export default class GoHomepage {
 	data() {
 		return {
 			layout: "",
@@ -134,5 +133,3 @@ class GoHomepage {
 		);
 	}
 }
-
-module.exports = GoHomepage;

@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import {
 	ReferenceLayout,
 	ReferenceLayoutProps,
@@ -6,6 +5,7 @@ import {
 import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Author } from "./AuthorModels";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 export function AuthorLayout(
 	this: LayoutContext,
@@ -25,16 +25,15 @@ export function AuthorLayout(
 	);
 
 	const listing = (
-		<>
+		<Fragment>
 			{linkedResources.map((resource) => (
 				// @ts-ignore
 				<ResourceCard resource={resource}></ResourceCard>
 			))}
-		</>
+		</Fragment>
 	);
-	const contentDiv = <div dangerouslySetInnerHTML={{ __html: content }} />;
 
-	return <ReferenceLayout {...data} listing={[listing]} content={contentDiv} />;
+	return <ReferenceLayout {...data} listing={listing} content={content} />;
 }
 
 export const render = AuthorLayout;

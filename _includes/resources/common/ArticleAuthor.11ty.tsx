@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { Resource } from "../../../src/ResourceModels";
 import { Author } from "../author/AuthorModels";
 

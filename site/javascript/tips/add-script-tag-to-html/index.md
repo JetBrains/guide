@@ -1,6 +1,6 @@
 ---
 date: 2020-03-16
-title: Adding <script> Tag
+title: Adding &lt;script&gt; Tag
 subtitle: Get help when adding the script element.
 topics:
   - html

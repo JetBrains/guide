@@ -1,4 +1,4 @@
-import h, { JSX } from "vhtml";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 type SeeAlsoItem = {
 	title: string;
@@ -30,7 +30,7 @@ const SeeAlso = ({ items }: SeeAlsoProps): JSX.Element => {
 			</div>
 		);
 	}
-	return <></>;
+	return <Fragment></Fragment>;
 };
 
 export default SeeAlso;

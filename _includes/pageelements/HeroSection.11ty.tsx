@@ -1,5 +1,3 @@
-import h from "vhtml";
-
 export type HeroSectionProps = {
 	title: string;
 	titleExtraClass?: string;
@@ -7,7 +5,7 @@ export type HeroSectionProps = {
 	subtitleExtraClass?: string;
 	image: string;
 	extraStyle?: string;
-	extraContent?: string;
+	extraContent?: JSX.Element;
 };
 
 function HeroSection({
@@ -32,10 +30,9 @@ function HeroSection({
 					>
 						{title}
 					</h1>
-					<p
-						class={`subtitle mb-5 ${subtitleExtraClass || "has-text-grey"}`}
-						dangerouslySetInnerHTML={{ __html: subtitleHtml }}
-					></p>
+					<p class={`subtitle mb-5 ${subtitleExtraClass || "has-text-grey"}`}>
+						{subtitleHtml}
+					</p>
 					{extraContent}
 				</div>
 			</div>

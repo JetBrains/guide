@@ -1,5 +1,3 @@
-// noinspection ES6UnusedImports
-import h, { JSX } from "vhtml";
 import { LayoutContext, LayoutProps } from "../src/models";
 import { PageFrontmatter } from "../_includes/resources/page/PageModels";
 import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
@@ -12,7 +10,7 @@ import { Topic } from "../_includes/resources/topic/TopicModels";
 
 type IndexPageProps = LayoutProps & PageFrontmatter;
 
-class IndexPage {
+export default class IndexPage {
 	data() {
 		return {
 			title: "JetBrains Guide",
@@ -47,7 +45,7 @@ class IndexPage {
 
 		return (
 			<BaseLayout {...data}>
-				<section className="section has-background-grey-darker has-glow-purple-transparent">
+				<section class="section has-background-grey-darker has-glow-purple-transparent">
 					<div class="container">
 						<div class="columns is-multiline">
 							<div class="column is-7">
@@ -64,7 +62,7 @@ class IndexPage {
 					</div>
 				</section>
 
-				<section className="section has-background-grey-darker">
+				<section class="section has-background-grey-darker">
 					<div class="container">
 						<div class="columns is-multiline is-centered">
 							{channels
@@ -124,7 +122,7 @@ class IndexPage {
 					</div>
 				</MultiColumnSection>
 
-				<section className="section">
+				<section class="section">
 					<div class="container">
 						<div class="columns is-vcentered is-mobile">
 							<div class="column is-8">
@@ -140,7 +138,7 @@ class IndexPage {
 						</div>
 						<div class="columns is-multiline">
 							{hotTopics.map((topic) => {
-								let figure: string;
+								let figure: JSX.Element;
 								if (topic.icon) {
 									figure = (
 										<i
@@ -194,5 +192,3 @@ class IndexPage {
 		);
 	}
 }
-
-module.exports = IndexPage;

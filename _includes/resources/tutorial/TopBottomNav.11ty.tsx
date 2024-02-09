@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { Tutorial } from "./TutorialModels";
 import { TutorialStep } from "./TutorialStepModels";
 

@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import { LayoutContext } from "../../src/models";
 import ListingSection from "../../_includes/pageelements/ListingSection.11ty";
 import HeroSection from "../../_includes/pageelements/HeroSection.11ty";
@@ -28,7 +27,7 @@ const frontmatter: ChannelFrontmatter = {
 	],
 };
 
-class JavaHomepage {
+export default class JavaHomepage {
 	data() {
 		return {
 			layout: "",
@@ -137,5 +136,3 @@ class JavaHomepage {
 		);
 	}
 }
-
-module.exports = JavaHomepage;

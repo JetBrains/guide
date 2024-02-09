@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import {
 	ReferenceLayout,
 	ReferenceLayoutProps,
@@ -59,7 +58,7 @@ export function AuthorsLayout(
 		</section>
 	);
 
-	return <ReferenceLayout {...data} listing={[listing]} content={content} />;
+	return <ReferenceLayout {...data} listing={listing} content={content} />;
 }
 
 export const render = AuthorsLayout;

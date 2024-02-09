@@ -1,4 +1,3 @@
-import h, { JSX } from "vhtml";
 import {
 	ReferenceLayout,
 	ReferenceLayoutProps,
@@ -6,8 +5,9 @@ import {
 import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Tutorial } from "./TutorialModels";
+import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
-class TutorialsLayout {
+export default class TutorialsLayout {
 	data() {
 		return {
 			eleventyExcludeFromCollections: true,
@@ -25,14 +25,12 @@ class TutorialsLayout {
 		});
 
 		const listing = (
-			<>
+			<Fragment>
 				{tutorials.map((tutorial) => {
 					return <ResourceCard resource={tutorial}></ResourceCard>;
 				})}
-			</>
+			</Fragment>
 		);
-		return <ReferenceLayout {...data} listing={[listing]} content={content} />;
+		return <ReferenceLayout {...data} listing={listing} content={content} />;
 	}
 }
-
-module.exports = TutorialsLayout;

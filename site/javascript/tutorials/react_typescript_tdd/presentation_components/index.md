@@ -52,7 +52,7 @@ Let's change `<Counter/>` to an SFC:
 export const Counter = ({ label = "Count", count }: CounterProps) => {
 	return (
 		<div
-			className="counter"
+			class="counter"
 			// onClick={handleClick}
 		>
 			<span title="Count Label">{label}</span>
@@ -122,7 +122,7 @@ export const Counter = ({
 	onCounterIncrease,
 }: CounterProps) => {
 	return (
-		<div className="counter" onClick={onCounterIncrease}>
+		<div class="counter" onClick={onCounterIncrease}>
 			<span title="Count Label">{label}</span>
 			<span id="counter" title="Current Count">
 				{count}
@@ -230,7 +230,7 @@ export const Counter: FC<CounterProps> = ({
 		onCounterIncrease(event.shiftKey);
 	};
 	return (
-		<div className="counter" onClick={handleClick}>
+		<div class="counter" onClick={handleClick}>
 			<span title="Count Label">{label}</span>
 			<span id="counter" title="Current Count">
 				{count}
