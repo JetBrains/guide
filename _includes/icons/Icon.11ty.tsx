@@ -1,5 +1,5 @@
 import fs from "fs";
-import { join } from "upath";
+import path from "upath";
 
 const svgCache = new Map<string, string>();
 
@@ -8,7 +8,7 @@ let getSvgContent = function (file: string): string {
 		return svgCache.get(file) as string;
 	}
 
-	let relativeFilePath = join(
+	let relativeFilePath = path.join(
 		"node_modules",
 		"@rescui",
 		"icons",

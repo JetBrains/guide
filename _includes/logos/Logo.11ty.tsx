@@ -1,5 +1,5 @@
 import fs from "fs";
-import { join } from "upath";
+import path from "upath";
 
 const svgCache = new Map<string, string>();
 
@@ -25,14 +25,20 @@ let getSvgContent = function (product: string, variant?: string): string {
 	}
 
 	let relativeFilePath = variant
-		? join(
+		? path.join(
 				"node_modules",
 				"@jetbrains",
 				"logos",
 				product,
 				`${product}-${variant}.svg`
 		  )
-		: join("node_modules", "@jetbrains", "logos", product, `${product}.svg`);
+		: path.join(
+				"node_modules",
+				"@jetbrains",
+				"logos",
+				product,
+				`${product}.svg`
+		  );
 	let data = fs.readFileSync(relativeFilePath).toString("utf8");
 	svgCache.set(product + "_" + variant, data);
 	return data;

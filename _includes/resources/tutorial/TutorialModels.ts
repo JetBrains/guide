@@ -9,7 +9,7 @@ import { TUTORIAL_RESOURCE_TYPE } from "../../../src/resourceType";
 import { EleventyPage } from "../../../src/models";
 import { TutorialStep } from "./TutorialStepModels";
 import { ThumbnailField, VideoBottomField } from "../commonModels";
-import { join } from "upath";
+import path from "upath";
 
 export const TutorialFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -74,6 +74,6 @@ export function resolveChildPath(
 	pathPrefix: string,
 	tutorialItem: string
 ): string {
-	let result = join(pathPrefix, tutorialItem);
+	let result = path.join(pathPrefix, tutorialItem);
 	return !result.endsWith("/") ? result.concat("/") : result;
 }

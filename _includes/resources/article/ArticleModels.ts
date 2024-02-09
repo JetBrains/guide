@@ -7,7 +7,7 @@ import {
 import { EleventyPage } from "../../../src/models";
 import { ARTICLE_RESOURCE_TYPE } from "../../../src/resourceType";
 import { ThumbnailField, VideoField } from "../commonModels";
-import { join } from "upath";
+import path from "upath";
 
 export const ArticleFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -65,11 +65,11 @@ export class Article
 		super({ data, page });
 		this.animatedGif = data.animatedGif;
 		if (this.animatedGif) {
-			this.animatedGif.file = join(page.url, this.animatedGif.file);
+			this.animatedGif.file = path.join(page.url, this.animatedGif.file);
 		}
 		this.video = data.video;
 		this.screenshot = data.screenshot
-			? join(page.url, data.screenshot)
+			? path.join(page.url, data.screenshot)
 			: undefined;
 		this.seealso = data.seealso;
 		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);

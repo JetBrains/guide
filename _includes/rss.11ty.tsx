@@ -1,6 +1,6 @@
 import { LayoutContext, LayoutProps } from "../src/models";
 import { encode } from "html-entities";
-import { join } from "upath";
+import path from "upath";
 
 export function RssLayout(this: LayoutContext, data: LayoutProps): string {
 	const { collections, page } = data;
@@ -9,10 +9,9 @@ export function RssLayout(this: LayoutContext, data: LayoutProps): string {
 	collections.resourceMap.forEach((page) => {
 		items += `<item>
         <title>${encode(page.title, { level: "xml" })}</title>
-        <link>${join(`https://www.jetbrains.com/guide`, page.url).replace(
-					"https:/www",
-					"https://www"
-				)}</link>
+        <link>${path
+					.join(`https://www.jetbrains.com/guide`, page.url)
+					.replace("https:/www", "https://www")}</link>
         <description>${encode(page.subtitle, { level: "xml" })}</description>
         <category>${page.resourceType}</category>
         <author>${page.references?.author.title}</author>        

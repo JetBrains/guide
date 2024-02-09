@@ -3,7 +3,7 @@ import { EleventyPage } from "../../../src/models";
 import { LabelField, ThumbnailField } from "../commonModels";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { AUTHOR_RESOURCE_TYPE } from "../../../src/resourceType";
-import { join } from "upath";
+import path from "upath";
 
 export const AuthorFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -33,7 +33,7 @@ export class Author
 	constructor({ data, page }: { data: AuthorFrontmatter; page: EleventyPage }) {
 		super({ data, page });
 		this.label = data.label ? data.label : page.fileSlug;
-		this.thumbnail = join(page.url, data.thumbnail);
+		this.thumbnail = path.join(page.url, data.thumbnail);
 		this.isGuest = data.guest ?? false;
 	}
 

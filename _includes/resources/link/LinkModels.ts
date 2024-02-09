@@ -10,7 +10,7 @@ import { LINK_RESOURCE_TYPE } from "../../../src/resourceType";
 import { ThumbnailField } from "../commonModels";
 // @ts-ignore
 import { getContentType } from "../../../public/assets/js/utils";
-import { join } from "upath";
+import path from "upath";
 
 export const LinkFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
@@ -45,7 +45,7 @@ export class Link
 		this.video = data.video;
 		this.thumbnail = getThumbnailPath(data.thumbnail, page.url);
 		this.screenshot = data.screenshot
-			? join(page.url, data.screenshot)
+			? path.join(page.url, data.screenshot)
 			: undefined;
 	}
 
