@@ -3,7 +3,7 @@ date: 2023-10-05
 title: JetBrains AI - A Deep Dive By Vladislav Tankov
 topics:
   - ai-assistant
-author: hs
+author: vt
 subtitle: In this talk we will dive into the architecture and implementation of JetBrains AI – the backbone of AI Assistant in JetBrains IDEs, Grazie, and other JetBrains products.
 thumbnail: ./thumbnail.png
 linkURL: "https://youtu.be/MYhkTnag81o"

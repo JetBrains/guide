@@ -1,12 +1,12 @@
 ---
-date: 2023-12-07
+date: 2023-12-06
 title: Introducing JetBrains AI Assistant
 topics:
   - ai-assistant
-author: hs
+author: jb
 subtitle: How AI can help you with writing and refactoring code, generating documentation and creating commit messages.
 thumbnail: ./thumbnail.png
-linkURL: "https://youtu.be/MYhkTnag81o"
+linkURL: "https://blog.jetbrains.com/blog/2023/12/06/introducing-jetbrains-ai-and-the-in-ide-ai-assistant/"
 ---
 
-In addition, see how the integrated AI Chat helps you ask open-ended questions about your project, such as how to complete a task in your language of choice or how to debug a problem with your code.
+With the rise of generative AI and large language models (LLMs) this year, the landscape of not just the development industry but the creative industry as a whole has begun a transformation.

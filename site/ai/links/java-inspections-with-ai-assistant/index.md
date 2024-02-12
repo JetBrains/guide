@@ -3,7 +3,7 @@ date: 2023-12-22
 title: Writing a Java Inspection for IntelliJ IDEA Using AI Assistant
 topics:
   - ai-assistant
-author: hs
+author: tv
 subtitle: I decided to try out AI Assistant in IntelliJ IDEA to write a new Java inspection for IntelliJ IDEA, and write down my experience while solving this task. Let’s take a look!
 thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/idea/2023/12/java-inspection-with-ai-assistant/"
