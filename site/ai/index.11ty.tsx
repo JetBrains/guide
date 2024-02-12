@@ -8,7 +8,7 @@ import {
 	ChannelHomepageData,
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
-import { LINK_RESOURCE } from "../../src/resourceType";
+import { LINK_RESOURCE, TIP_RESOURCE } from "../../src/resourceType";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "AI",
@@ -34,11 +34,17 @@ class AIHomepage {
 
 		const links = this.getResources({
 			resourceTypes: [LINK_RESOURCE],
-			limit: 4,
 			// would look across the guide for ai content
 			//customFilter: (r) => r.topics?.includes("ai") == true,
 			// anything under AI that's a link
 			channel: channel.url,
+			limit: 4,
+		});
+
+		const tips = this.getResources({
+			resourceTypes: [TIP_RESOURCE],
+			channel: channel.url,
+			limit: 4,
 		});
 
 		return (
@@ -58,6 +64,17 @@ class AIHomepage {
 						separator={false}
 						includeCardFooter={false}
 						moreLink={`${channel.url}links/`}
+						sectionExtraClass={"has-background-grey-lighter"}
+					/>
+				)}
+
+				{tips && (
+					<ListingSection
+						title={`Latest tips`}
+						resources={tips}
+						separator={false}
+						includeCardFooter={false}
+						moreLink={`${channel.url}tips/`}
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
