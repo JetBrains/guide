@@ -1,0 +1,47 @@
+#-------------------------------------------------------------------------------#
+#               Qodana analysis is configured by qodana.yaml file               #
+#             https://www.jetbrains.com/help/qodana/qodana-yaml.html            #
+#-------------------------------------------------------------------------------#
+version: "1.0"
+
+#Specify inspection profile for code analysis
+profile:
+  name: qodana.starter
+
+#Enable inspections
+include:
+  - name: CheckDependencyLicenses
+  - name: HttpUrlsUsage
+
+#Disable inspections
+exclude:
+  - name: All
+    paths:
+      - site/javascript/demos/tutorials
+      - site/javascript/tutorials/react_typescript_tdd/chrome_debugging/demos
+      - site/javascript/tutorials/react_typescript_tdd/class_props/demos
+      - site/javascript/tutorials/react_typescript_tdd/class_state/demos
+      - site/javascript/tutorials/react_typescript_tdd/nodejs_debugging/demos
+      - site/javascript/tutorials/react_typescript_tdd/presentation_components/demos
+      - site/javascript/tutorials/react_typescript_tdd/project_cleanup/demos
+      - site/javascript/tutorials/react_typescript_tdd/project_setup/demos
+      - site/javascript/tutorials/react_typescript_tdd/rich_events_and_testing/demos
+      - site/javascript/tutorials/react_typescript_tdd/testing/demos
+      - site/javascript/tutorials/react_typescript_tdd/tsx_es6/demos
+  - name: HttpUrlsUsage
+    paths:
+      - _includes
+      - src/plugins/absolutePaths.ts
+  - name: QodanaSanity
+    paths:
+      - deployment/helm/guide-charts
+
+#Execute shell command before Qodana execution (Applied in CI/CD pipeline)
+#bootstrap: sh ./prepare-qodana.sh
+
+#Install IDE plugins before Qodana execution (Applied in CI/CD pipeline)
+#plugins:
+#  - id: <plugin.id> #(plugin id can be found at https://plugins.jetbrains.com)
+
+#Specify Qodana linter for analysis (Applied in CI/CD pipeline)
+linter: jetbrains/qodana-js:latest

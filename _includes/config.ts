@@ -39,6 +39,7 @@ export type ResourceMapType = {
 	topic: Topic;
 	link: Link;
 };
+// noinspection TypeScriptRedundantGenericType
 export const resourceClasses: Record<
 	RESOURCE_TYPES,
 	new (...args: any[]) => Resource<RESOURCE_TYPES>
