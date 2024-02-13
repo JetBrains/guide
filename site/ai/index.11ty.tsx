@@ -11,8 +11,9 @@ import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import { LINK_RESOURCE, TIP_RESOURCE } from "../../src/resourceType";
 
 const frontmatter: ChannelFrontmatter = {
-	title: "AI",
-	subtitle: "Content about our AI Assistant and working with AI in General",
+	title: "Artificial Intelligence",
+	subtitle:
+		"Discover JetBrains AI Assistant, Large Language Models and Artificial Intelligence (AI).",
 	resourceType: "channel",
 	date: new Date(Date.UTC(2024, 2, 5)),
 	author: "hs",
@@ -38,7 +39,7 @@ class AIHomepage {
 			//customFilter: (r) => r.topics?.includes("ai") == true,
 			// anything under AI that's a link
 			channel: channel.url,
-			limit: 4,
+			limit: 8,
 		});
 
 		const tips = this.getResources({
