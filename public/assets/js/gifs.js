@@ -3,7 +3,7 @@ import { onVisible } from "./utils.js";
 
 const gifs = Array.from(document.querySelectorAll(".animated-gif"));
 
-gifs.forEach((gif, index) => {
+gifs.forEach((gif) => {
   onVisible(gif, (entry, observer) => {
     if (entry.intersectionRatio > 0) {
       new Freezeframe({

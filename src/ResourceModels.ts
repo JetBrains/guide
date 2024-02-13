@@ -176,6 +176,7 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 	}
 }
 
+// noinspection TypeScriptRedundantGenericType
 export type ResourceMap = Map<string, Resource<RESOURCE_TYPES>>;
 
 export function getResourceType<T extends RESOURCE_TYPES>(

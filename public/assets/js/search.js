@@ -37,7 +37,7 @@ if (searchButton) {
         this.field("title");
         this.field("subtitle");
 
-        documents.forEach(function (doc, index) {
+        documents.forEach(function (doc) {
           this.add(doc);
         }, this);
       });

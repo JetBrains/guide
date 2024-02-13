@@ -44,7 +44,7 @@ const siteChecker = new SiteChecker(
 		error: (error) => {
 			console.error(error);
 		},
-		link: (result, customData) => {
+		link: (result) => {
 			// Print result
 			if (result.broken) {
 				if (

@@ -39,7 +39,7 @@ export class ExploreViewModel {
 		return resultCounts > 0 ? results : null;
 	}
 
-	handleSelection(event) {
+	handleSelection() {
 		// Turn off the 3 boxes, then turn on the used one.
 		this.listingNode.style.display = "none";
 		this.latestContent.style.display = "none";
@@ -104,8 +104,7 @@ export class ExploreViewModel {
 	}
 
 	renderCards(filteredResources) {
-		let clone, thisField;
-		let results = [];
+		let clone;
 		this.listingNode.replaceChildren();
 		filteredResources.forEach(resource => {
 			clone = this.templateNode.content.cloneNode(true);
