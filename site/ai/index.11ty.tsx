@@ -44,8 +44,9 @@ class AIHomepage {
 
 		const tips = this.getResources({
 			resourceTypes: [TIP_RESOURCE],
-			channel: channel.url,
-			limit: 4,
+			customFilter: (r) =>
+				r.channel == channel.url || r.topics?.includes("ai-assistant") == true,
+			limit: 8,
 		});
 
 		return (

@@ -6,6 +6,7 @@ topics:
 author: jb
 subtitle: See demonstrations of some of AI Assistant’s most exciting features as well as a deeper dive into how it works.
 thumbnail: ./thumbnail.png
+video: "https://youtu.be/SN51H_q9wBg"
 linkURL: "https://youtu.be/SN51H_q9wBg"
 ---
 
