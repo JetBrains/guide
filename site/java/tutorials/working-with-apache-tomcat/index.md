@@ -5,7 +5,6 @@ date: 2022-05-12
 title: Working with Apache Tomcat in IntelliJ IDEA
 topics:
   - tomcat
-  - ultimate
 author: hs
 subtitle: >-
   How to start a new project that uses Apache Tomcat and work with existing

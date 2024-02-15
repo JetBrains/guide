@@ -4,7 +4,6 @@ date: 2023-11-17
 title: Interpret the Dependency Matrix
 topics:
   - java
-  - ultimate
 author: md
 subtitle: How to interpret the Dependency Matrix
 thumbnail: ./thumbnail.png

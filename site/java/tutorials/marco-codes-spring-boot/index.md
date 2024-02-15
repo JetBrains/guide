@@ -4,7 +4,7 @@ layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2022-07-23
 title: Marco Codes - Spring Boot
 topics:
-  - ultimate
+  - spring
 author: hs
 subtitle: Spring Boot Nice n Easy
 thumbnail: ./thumbnail.png

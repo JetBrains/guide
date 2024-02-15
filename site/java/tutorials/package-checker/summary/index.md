@@ -8,7 +8,6 @@ topics:
   - maven
   - packagesearch
   - security
-  - ultimate
 author: md
 subtitle: Find and fix vulnerabilities inside IntelliJ IDEA Ultimate Summary
 thumbnail: ./thumbnail.png

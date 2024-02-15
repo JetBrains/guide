@@ -4,7 +4,6 @@ title: Dependency Matrix
 topics:
   - java
   - plugins
-  - ultimate
 author: md
 subtitle: Explore project structure with the Dependency Matrix
 thumbnail: ./thumbnail.png

@@ -4,7 +4,6 @@ title: Generate a UML diagram
 topics:
   - java
   - kotlin
-  - ultimate
 author: hs
 subtitle: IntelliJ IDEA Ultimate allows you to generate UML diagrams.
 thumbnail: ./thumbnail.png

@@ -4,7 +4,6 @@ title: Refactor rename with AI Assistant
 topics:
   - refactoring
   - ai-assistant
-  - ultimate
 author: md
 subtitle: Use the power of AI Assistant for even better naming suggestions
 thumbnail: ./thumbnail.png

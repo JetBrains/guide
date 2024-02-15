@@ -4,7 +4,6 @@ date: 2023-11-17
 title: Introduction
 topics:
   - java
-  - ultimate
 author: md
 subtitle: Explore project structure with the Dependency Matrix
 thumbnail: ./thumbnail.png

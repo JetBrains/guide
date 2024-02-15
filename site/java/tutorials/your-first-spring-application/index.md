@@ -7,7 +7,6 @@ topics:
   - gettingstarted
   - java
   - spring
-  - ultimate
 author: hs
 subtitle: >-
   In this tutorial we will use IntelliJ IDEA to create your first "Hello World"

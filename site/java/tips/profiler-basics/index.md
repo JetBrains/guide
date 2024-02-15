@@ -3,7 +3,6 @@ date: 2021-05-11
 title: Profile your application
 topics:
   - java
-  - ultimate
 author: tg
 subtitle: See how your application is performing with the built-in profiler
 thumbnail: ./thumbnail.png

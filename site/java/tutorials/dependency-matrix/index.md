@@ -5,7 +5,6 @@ date: 2023-11-17
 title: Explore project structure with the Dependency Matrix
 topics:
   - java
-  - ultimate
 author: md
 subtitle: Exploring project structure with the Dependency Matrix in IntelliJ IDEA
 thumbnail: ./thumbnail.png

@@ -4,7 +4,6 @@ title: Generate UML diagrams for your Kotlin code
 topics:
   - java
   - kotlin
-  - ultimate
 author: tg
 subtitle: >-
   JVM developers working with Kotlin code can create UML diagrams for their

@@ -4,7 +4,6 @@ date: 2023-11-17
 title: Opening the Dependency Matrix
 topics:
   - java
-  - ultimate
 author: md
 subtitle: Opening the Dependency Matrix for your project
 thumbnail: ./thumbnail.png

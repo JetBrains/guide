@@ -8,7 +8,6 @@ topics:
   - maven
   - packagesearch
   - security
-  - ultimate
 author: md
 subtitle: Remediate dependencies using IntelliJ IDEA Ultimate
 thumbnail: ./thumbnail.png

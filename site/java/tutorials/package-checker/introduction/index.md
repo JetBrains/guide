@@ -8,7 +8,6 @@ topics:
   - maven
   - packagesearch
   - security
-  - ultimate
 author: md
 subtitle: Package Checker plugin in IntelliJ IDEA Ultimate
 thumbnail: ./thumbnail.png

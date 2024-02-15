@@ -7,7 +7,6 @@ topics:
   - gettingstarted
   - java
   - spring
-  - ultimate
 author: da
 subtitle: >-
   Learn how to use Spring Data JPA to store and retrieve data from your

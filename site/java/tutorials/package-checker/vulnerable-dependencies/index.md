@@ -8,7 +8,6 @@ topics:
   - maven
   - packagesearch
   - security
-  - ultimate
 author: md
 subtitle: View vulnerable dependencies in the Vulnerable Dependencies tool window
 thumbnail: ./thumbnail.png
