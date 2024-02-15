@@ -72,9 +72,10 @@ export function BaseLayout(
 		collections.resourceMap.get("/dotnet/"),
 	].filter((it) => it != undefined) as Resource[];
 	const solutions = [
+		collections.resourceMap.get("/gamedev/"),
+		collections.resourceMap.get("/ai/"),
 		collections.resourceMap.get("/remote/"),
 		collections.resourceMap.get("/databases/"),
-		collections.resourceMap.get("/gamedev/"),
 		collections.resourceMap.get("/django/"),
 	].filter((it) => it != undefined) as Resource[];
 	const hotTopics = [

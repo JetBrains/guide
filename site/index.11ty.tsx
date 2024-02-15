@@ -30,9 +30,10 @@ export default class IndexPage {
 		];
 		const solutions = [
 			this.getResource("/gamedev/"),
+			this.getResource("/ai/"),
+			//this.getResource("/remote/"),
 			this.getResource("/databases/"),
 			this.getResource("/django/"),
-			this.getResource("/remote/"),
 		];
 		const hotTopics = [
 			this.getResource("/tags/aws/"),
