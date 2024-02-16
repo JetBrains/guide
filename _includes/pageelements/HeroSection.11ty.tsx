@@ -17,10 +17,9 @@ function HeroSection({
 	extraStyle = "",
 	extraContent = "",
 }: HeroSectionProps) {
-	const style = `background: url('${image}') center center; background-repeat: no-repeat; background-size: cover; ${extraStyle}`;
 	const subtitleHtml = subtitle ? subtitle.replace("\n", "<br/>") : "";
 	return (
-		<section class="hero is-medium" style={style}>
+		<section class="hero is-medium channel-hero">
 			<div class="hero-body">
 				<div class="container">
 					<h1
@@ -36,6 +35,9 @@ function HeroSection({
 					{extraContent}
 				</div>
 			</div>
+			<picture>
+				<img src={image} alt={title} aria-hidden={true} />
+			</picture>
 		</section>
 	);
 }

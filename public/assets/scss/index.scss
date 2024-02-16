@@ -8,7 +8,7 @@
 @import "navbar";
 
 /* plyr css */
-.plyr__poster{
+.plyr__poster {
   background-size: cover;
 }
 
@@ -40,14 +40,14 @@ pre.prism-code div.token-line.highlight-line {
   border-left: 0.3em solid #f99;
 }
 
-.thumbnail-container{
+.thumbnail-container {
   position: relative;
   height: 128px;
   width: 128px;
   overflow: hidden;
 }
 
-.guest-author-banderole{
+.guest-author-banderole {
   position: absolute;
   top: 4px;
   left: -30px;
@@ -61,7 +61,7 @@ pre.prism-code div.token-line.highlight-line {
   background: #087CFA;
 }
 
-.guest-author-badge{
+.guest-author-badge {
   position: absolute;
   bottom: 0;
   z-index: 10;
@@ -72,4 +72,15 @@ pre.prism-code div.token-line.highlight-line {
   background: #087CFA;
   left: 0;
   font-size: 0.8rem !important;
+}
+
+.channel-hero {
+  position: relative;
+  img, picture {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
 }
