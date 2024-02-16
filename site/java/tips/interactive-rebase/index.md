@@ -1,18 +1,22 @@
 ---
-date: 2022-07-23
-title: Interactive Rebase
+date: 2024-02-16
+title: Interactive rebase
 topics:
   - java
   - vcs
-author: hs
+  - git
+author: md
 subtitle: Using interactive rebase in IntelliJ IDEA
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 seealso:
-  - title: (documentation) Edit Project History with Interactive Rebase
-    href: >-
-      https://www.jetbrains.com/help/idea/edit-project-history.html#interactive-rebase
-video: "https://youtu.be/dAJvub3uR50"
+  - title: (documentation) IntelliJ IDEA Help - Edit project history by performing interactive rebase
+    href: "https://www.jetbrains.com/help/idea/edit-project-history.html#interactive-rebase"
+  - title: "(video) IntelliJ IDEA Pro Tips: Using Git Interactive Rebase"
+    href: "https://www.youtube.com/watch?v=bPX9VHjviEM"
+  - title: "(guide) Git interactive rebase"
+    href: "https://www.jetbrains.com/guide/java/tutorials/git-interactive-rebase/"
+video: "https://youtu.be/NJD0V5EV_iQ"
 ---
 
-Interactive rebase will help you to take control of your project history meaning you can make it more meaningful where required or clean up commits by reording, skipping or squashing them.
+Use interactive rebase to clean up your commit history before pushing your changes. You can reorder commits, skip them, or squash them. Use **Squash** to combine multiple commits and their commit messages, or **Fixup** to combine the commits under one commit message.
