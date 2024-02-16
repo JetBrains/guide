@@ -47,7 +47,7 @@ export default class RemoteHomepage {
 					subtitle={channel.subtitle!}
 					subtitleExtraClass="has-text-white has-text-shadow"
 					image={channel.hero!}
-					extraStyle="background-color:#27282c; background-position: left;"
+					extraImageStyle="background-color:#27282c;"
 				/>
 				<section class="section">
 					<div class="container">

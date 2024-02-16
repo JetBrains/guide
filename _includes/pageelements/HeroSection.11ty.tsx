@@ -4,7 +4,7 @@ export type HeroSectionProps = {
 	subtitle: string;
 	subtitleExtraClass?: string;
 	image: string;
-	extraStyle?: string;
+	extraImageStyle?: string;
 	extraContent?: JSX.Element;
 };
 
@@ -14,7 +14,7 @@ function HeroSection({
 	subtitle,
 	subtitleExtraClass,
 	image,
-	extraStyle = "",
+	extraImageStyle = "",
 	extraContent = "",
 }: HeroSectionProps) {
 	const subtitleHtml = subtitle ? subtitle.replace("\n", "<br/>") : "";
@@ -35,7 +35,7 @@ function HeroSection({
 					{extraContent}
 				</div>
 			</div>
-			<picture>
+			<picture style={extraImageStyle}>
 				<img src={image} alt={title} aria-hidden={true} />
 			</picture>
 		</section>
