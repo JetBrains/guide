@@ -16,4 +16,4 @@ animatedGif:
   height: 300
 ---
 
-In addition to [summarising commit messages](../explain-commits/index.md), AI Assistant can help you with generating VCS commit messages for your changes. In the _Commit_ tool window, click AI Assistant icon to generate a commit message. AI Assistant will generate a commit message inside your _VCS_ tool window. If you prefer shorter commit messages, you can trim the result from AI Assistant to a shorter summary.
+In addition to [summarising commit messages](../explain-commits/), AI Assistant can help you with generating VCS commit messages for your changes. In the _Commit_ tool window, click AI Assistant icon to generate a commit message. AI Assistant will generate a commit message inside your _VCS_ tool window. If you prefer shorter commit messages, you can trim the result from AI Assistant to a shorter summary.
