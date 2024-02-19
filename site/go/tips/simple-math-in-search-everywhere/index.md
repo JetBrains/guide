@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Quickly perform simple math operations from the comfort of your IDE.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

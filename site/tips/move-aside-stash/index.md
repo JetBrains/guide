@@ -2,15 +2,15 @@
 date: 2023-05-12
 title: Move Work Aside With Stash
 topics:
-  - vcs
   - git
+  - vcs
 author: pwe
 subtitle: Use git's stash to move uncommitted work aside temporarily.
 seealso:
   - title: Stash changes
-    href: "https://www.jetbrains.com/help/idea/work-on-several-features-simultaneously.html"
+    href: >-
+      https://www.jetbrains.com/help/idea/work-on-several-features-simultaneously.html
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 obsoletes:
   - /dotnet/tips/move-aside-stash/
   - /go/tips/move-aside-stash/

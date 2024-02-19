@@ -9,7 +9,6 @@ subtitle: >-
   JVM developers working with Kotlin code can create UML diagrams for their
   Kotlin classes, just like they could with Java classes
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/FwXu38dk1m0"
 ---
 

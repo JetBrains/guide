@@ -9,7 +9,6 @@ subtitle: >-
   Clean out some unneeded code from the default app, tweak some configuration in
   the IDE, and tour a few more features.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/b0KrB31hN5k"
 ---
 

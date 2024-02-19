@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Using soft-wraps makes some languages easier to display
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - General
     href: "https://www.jetbrains.com/help/idea/settings-editor-general.html"

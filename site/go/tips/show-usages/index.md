@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Quickly discover the usages of the element your cursor is at
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=jlP26JUFE4o&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=152
 ---

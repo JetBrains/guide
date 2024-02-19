@@ -12,7 +12,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/configuring-code-coverage-measurement.html
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/HQ_bqOBXZ5w"
 ---
 

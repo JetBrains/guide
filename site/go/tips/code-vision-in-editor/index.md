@@ -10,7 +10,6 @@ topics:
 author: ap
 subtitle: Focus on your code while getting additional information about it.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

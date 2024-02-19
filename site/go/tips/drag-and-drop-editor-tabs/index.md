@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Change how the editor tabs are grouped or split using drag&drop
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=tBWqmQ21eBI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=49
 ---

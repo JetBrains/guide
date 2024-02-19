@@ -10,7 +10,6 @@ subtitle: >-
   Fully customise the checks you must perform before you commit your changes to
   version control
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Configure profiles
     href: "https://www.jetbrains.com/help/idea/customizing-profiles.html"

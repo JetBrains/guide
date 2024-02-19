@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Generate a new test class from your Java class
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Code Generation in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=btqCYUc3nFE"

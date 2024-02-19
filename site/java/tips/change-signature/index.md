@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Refactor the signature of a method
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) IntelliJ IDEA. 3 Ways To Simplify Your Code
     href: "https://www.youtube.com/watch?v=HgWU25YwDfc"

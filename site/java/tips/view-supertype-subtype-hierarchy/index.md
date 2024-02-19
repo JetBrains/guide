@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: You can view supertypes and subtypes in the hierarchy
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Source code hierarchy
     href: >-

@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: View the file or whole package structure and navigate to any element
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=1vrZkrl1T2U&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=145
 ---

@@ -11,7 +11,6 @@ seealso:
   - title: Autocompleting code
     href: "https://www.jetbrains.com/help/webstorm/auto-completing-code.html#"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

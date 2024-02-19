@@ -8,7 +8,6 @@ topics:
 author: hs
 subtitle: IntelliJ IDEA can add the stream() call for us
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Good Old Stream API - JetBrains Technology Day for Java
     href: "https://www.youtube.com/watch?v=nklbYYQpQi8"

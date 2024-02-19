@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Information about your code in the gutter icons
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Gutter Icons
     href: "https://www.jetbrains.com/help/idea/settings-gutter-icons.html"

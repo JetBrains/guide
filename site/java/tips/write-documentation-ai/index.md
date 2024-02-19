@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Generate documentation for your code with AI Assistant
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Generate documentation with AI
     href: "https://www.jetbrains.com/help/idea/generate-documentation.html"

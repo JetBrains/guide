@@ -8,7 +8,6 @@ topics:
 author: khalidabuhakmeh
 subtitle: Keep your projects organized for an efficient experience
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./manage-projects.webm
   width: 600

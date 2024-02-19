@@ -8,7 +8,6 @@ topics:
 author: rachelappel
 subtitle: Develop ASP.NET and ASP.NET Core applications in one place!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/dgUyhd-4EeM"
 ---
 

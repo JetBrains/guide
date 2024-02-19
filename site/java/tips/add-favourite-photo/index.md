@@ -9,7 +9,6 @@ subtitle: >-
   If you want to look at your favourite photo while coding you can set it as
   your background image
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Background Image
     href: "https://www.jetbrains.com/help/idea/setting-background-image.html"

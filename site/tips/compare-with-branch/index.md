@@ -2,15 +2,14 @@
 date: 2022-12-15
 title: Compare With Branch
 topics:
-  - vcs
   - git
+  - vcs
 author: pwe
 subtitle: See the changes in another branch's commits.
 seealso:
   - title: Compare branches
     href: "https://www.jetbrains.com/help/idea/manage-branches.html#compare_branches"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://www.youtube.com/watch?v=7Rjl1Cerbl0"
 obsoletes:
   - /dotnet/tips/compare-with-branch/

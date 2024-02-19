@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Download or associate a JDK with your project.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Creating your first Java application with IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=H_XxH66lm3U"

@@ -11,7 +11,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/go/basic-editing-procedures.html#quick_popups
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=_2cYHEMCRsA&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=82
 ---

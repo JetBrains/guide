@@ -10,7 +10,6 @@ seealso:
   - title: (documentation) GoLand Help - Navigate to Navigated Items
     href: "https://www.jetbrains.com/help/go/navigating-to-navigated-items.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=kC4cCmYEbGo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=11
 ---

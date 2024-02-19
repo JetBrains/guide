@@ -13,7 +13,6 @@ subtitle: >-
   Launch run/debug configurations, applications, scripts, commands, tasks, and
   open recent projects.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 seealso:
   - title: (documentation) GoLand Help - Run Anything

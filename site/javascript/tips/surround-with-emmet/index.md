@@ -14,7 +14,6 @@ seealso:
   - title: Emmet Cheat Sheet
     href: "https://docs.emmet.io/cheat-sheet/"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

@@ -8,7 +8,6 @@ topics:
 author: md
 subtitle: Visualize the flow of data through a stream
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Pro Tip Debugging Java Streams
     href: "https://www.youtube.com/watch?v=BeJu9bMPLGU"

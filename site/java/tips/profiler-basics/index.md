@@ -6,7 +6,6 @@ topics:
 author: tg
 subtitle: See how your application is performing with the built-in profiler
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Profile Tools and IntelliJ IDEA Ultimate
     href: "https://www.youtube.com/watch?v=OQcyAtukps4"

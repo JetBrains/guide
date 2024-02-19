@@ -6,7 +6,6 @@ topics:
 author: dlsniper
 subtitle: Teardown resources faster
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=qOZ6rIZGiYI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=34
 ---

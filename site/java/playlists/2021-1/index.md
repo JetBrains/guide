@@ -9,7 +9,6 @@ subtitle: >-
   Tips to get you productive with the new or improved features in IntelliJ IDEA
   2021.1
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 playlistItems:
   - /java/tips/commit-inspection-profile/
   - /java/tips/data-flow-analysis/

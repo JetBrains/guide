@@ -8,7 +8,6 @@ topics:
 author: hs
 subtitle: Available in preview from Java 17
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (blog) Java 17 and IntelliJ IDEA
     href: "https://blog.jetbrains.com/idea/2021/09/java-17-and-intellij-idea/"

@@ -13,7 +13,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/go/enable-version-control-integration-dialog.html#Enable_Version_Control_Integration_Dialog.xml
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=7z4FAU29_mQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=87
 ---

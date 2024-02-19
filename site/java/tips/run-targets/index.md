@@ -6,7 +6,6 @@ topics:
 author: tg
 subtitle: Set a Run Target to change where your code runs
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Run applications
     href: "https://www.jetbrains.com/help/idea/running-applications.html"

@@ -7,10 +7,10 @@ topics:
 author: md
 subtitle: Finding the parameter type
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Type Info
-    href: "https://www.jetbrains.com/help/idea/viewing-reference-information.html#type-info"
+    href: >-
+      https://www.jetbrains.com/help/idea/viewing-reference-information.html#type-info
 video: "https://youtu.be/OIJLa6rixdM"
 ---
 

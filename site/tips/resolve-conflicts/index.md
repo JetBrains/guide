@@ -2,15 +2,14 @@
 date: 2023-05-13
 title: Resolve Conflicts
 topics:
-  - vcs
   - git
+  - vcs
 author: pwe
 subtitle: Let the IDE help in the tricky business of resolving merge conflicts.
 seealso:
   - title: Resolve conflicts
     href: "https://www.jetbrains.com/help/idea/resolve-conflicts.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 obsoletes:
   - /dotnet/tips/resolve-conflicts/
   - /go/tips/resolve-conflicts/

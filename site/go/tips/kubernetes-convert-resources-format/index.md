@@ -8,7 +8,6 @@ subtitle: >-
   Quickly switch between List and Multidocument YAML for Kubernetes resource
   definitions
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=EaBSAOcBXPc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=23
 ---

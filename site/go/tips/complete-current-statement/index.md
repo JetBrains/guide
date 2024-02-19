@@ -11,7 +11,6 @@ seealso:
   - title: (documentation) GoLand Help - Autocompleting code
     href: "https://blog.jetbrains.com/go/2019/01/17/code-completion-in-goland/"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=Nu1BclhDykk&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=33
 ---

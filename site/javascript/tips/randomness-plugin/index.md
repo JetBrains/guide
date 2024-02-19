@@ -15,7 +15,6 @@ seealso:
   - title: Plugin Repository - Randomness
     href: "https://plugins.jetbrains.com/plugin/9836-randomness"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 

@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Embed files and folders into your binaries with no external tool
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=Dv28uFbn7I0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=145
 ---

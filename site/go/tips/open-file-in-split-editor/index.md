@@ -9,7 +9,6 @@ subtitle: >-
   View two files side-by-side by directly opening the second one in a
   split-editor mode
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=83wNTA8k894&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=74
 ---

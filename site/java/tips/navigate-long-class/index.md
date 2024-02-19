@@ -10,7 +10,6 @@ subtitle: >-
   There are various tips and tricks you can use to navigate a long class in
   IntelliJ IDEA
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) Source code navigation
     href: >-

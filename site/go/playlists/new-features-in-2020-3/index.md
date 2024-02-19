@@ -10,7 +10,6 @@ topics:
 author: dlsniper
 subtitle: A selection of useful features from GoLand 2020.3
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 playlistItems:
   - /go/tips/go-116-retract-directive/
   - /go/tips/dump-goroutines/

@@ -9,7 +9,6 @@ subtitle: >-
   You can restore previously configured breakpoints if you accidentally delete
   them
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/MmX5Oz0ugJo"
 ---
 

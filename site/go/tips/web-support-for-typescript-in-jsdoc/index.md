@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Give the IDE new powers thanks to TypeScript-based types
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=w2DeECn4G7g&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=143
 ---

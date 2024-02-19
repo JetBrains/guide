@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Upgrade dependencies from the pom.xml
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Package Search
     href: "https://www.jetbrains.com/help/idea/package-search.html"

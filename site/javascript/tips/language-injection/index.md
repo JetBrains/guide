@@ -12,7 +12,6 @@ seealso:
     href: >-
       https://blog.jetbrains.com/webstorm/2019/11/webstorm-2019-3/#javascript_and_typescript_support
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

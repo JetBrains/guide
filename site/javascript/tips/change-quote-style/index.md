@@ -13,7 +13,6 @@ seealso:
     href: >-
       https://blog.jetbrains.com/webstorm/2015/08/maintaining-consistent-code-style/
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

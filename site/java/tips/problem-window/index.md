@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Problems tool window
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Problems tool window
     href: "https://www.jetbrains.com/help/idea/problems-tool-window.html"

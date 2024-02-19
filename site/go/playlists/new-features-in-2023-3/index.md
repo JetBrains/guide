@@ -5,13 +5,12 @@ title: Highlights of GoLand 2023.3
 topics:
   - editing
   - go
-  - testing
-  - refactoring
   - inspections
   - quick-fixes
+  - refactoring
+  - testing
 author: ap
 subtitle: Explore key features and enhancements in GoLand 2023.3.
-cardThumbnail: ./card.png
 thumbnail: ./thumbnail.png
 playlistItems:
   - /go/tips/code-coverage-for-applications/

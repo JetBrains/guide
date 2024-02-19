@@ -12,7 +12,6 @@ seealso:
   - title: Use emacs keybindings
     href: "https://plugins.jetbrains.com/plugin/7906-emacs-"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 ---
 
 _Want to use your muscle memory from Vim? You can!_

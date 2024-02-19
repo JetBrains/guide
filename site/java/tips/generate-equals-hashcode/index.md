@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: We can generate the code to override the equals and hashCode methods
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) CodeGeneration in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=btqCYUc3nFE"

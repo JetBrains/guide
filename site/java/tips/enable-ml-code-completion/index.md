@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Code completion may be enhanced with ML
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/HE9Ivv2vFUI"
 ---
 

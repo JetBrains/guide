@@ -8,7 +8,6 @@ topics:
 author: hs
 subtitle: Editor breadcrumbs show you your file structure
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Code Formatting in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=vjVWjocENLg"

@@ -10,7 +10,6 @@ seealso:
   - title: (documentation) GoLand Help - Renaming a file or directory
     href: "https://www.jetbrains.com/help/go/rename-refactorings.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=xDCbeCV3orw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=102
 ---

@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Keep your eyes on the code at all times
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=SzhJATfb2C8&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=63
 ---

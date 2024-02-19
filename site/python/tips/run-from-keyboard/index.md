@@ -9,7 +9,6 @@ seealso:
   - title: Running
     href: "https://www.jetbrains.com/help/pycharm/running-code.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/oSEMKeUVjlE"
 ---
 

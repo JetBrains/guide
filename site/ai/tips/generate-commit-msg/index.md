@@ -4,12 +4,12 @@ title: Generate a Commit Message with AI Assistant
 subtitle: How AI Assistant can generate a commit message
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Generate Commit Messages
-    href: "https://www.jetbrains.com/help/idea/work-with-commits.html#ai-generate-commit-messages"
+    href: >-
+      https://www.jetbrains.com/help/idea/work-with-commits.html#ai-generate-commit-messages
 topics:
   - ai-assistant
 author: hs
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

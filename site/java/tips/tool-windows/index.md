@@ -8,7 +8,6 @@ subtitle: >-
   Quickly open IntelliJ IDEA's tool windows without using the mouse, and easily
   find items in the window.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Navigation in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=1UHsJyCq1SU"

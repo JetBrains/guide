@@ -7,7 +7,6 @@ topics:
 author: tg
 subtitle: Use quick intentions to convert a record to a class
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Using Java 15 with IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=IvytsoAUEZA"

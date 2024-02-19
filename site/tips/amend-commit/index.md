@@ -2,12 +2,11 @@
 date: 2022-11-22
 title: Fix Your Work with Amend Commit
 topics:
-  - vcs
   - git
+  - vcs
 author: pwe
 subtitle: "Put some missing work back into your last commit, before you push."
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/8sSlWDiwdkc"
 seealso:
   - title: Amend the previous commit

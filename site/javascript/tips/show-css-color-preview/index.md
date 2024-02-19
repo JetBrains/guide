@@ -10,7 +10,6 @@ seealso:
   - title: Working with style sheets
     href: "https://www.jetbrains.com/help/webstorm/style-sheets.html#"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./card.png
 ---
 

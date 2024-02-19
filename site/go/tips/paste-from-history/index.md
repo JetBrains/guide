@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Paste from the clipboard even if it's not the last item you copied into it
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=jn0F8C-y5aw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=100
 ---

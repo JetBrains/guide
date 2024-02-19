@@ -7,10 +7,12 @@ topics:
 author: md
 subtitle: Selectively Commit Changes to a File
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
-  - title: (documentation) IntelliJ IDEA Help - Select chunks and specific lines you want to commit
-    href: "https://www.jetbrains.com/help/idea/2023.3/commit-and-push-changes.html#select_chunks_in_commit_changes_dialog"
+  - title: >-
+      (documentation) IntelliJ IDEA Help - Select chunks and specific lines you
+      want to commit
+    href: >-
+      https://www.jetbrains.com/help/idea/2023.3/commit-and-push-changes.html#select_chunks_in_commit_changes_dialog
 video: "https://www.youtube.com/watch?v=AW5Xv8n3iEo"
 ---
 

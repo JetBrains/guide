@@ -6,7 +6,6 @@ topics:
 author: tg
 subtitle: We spend hours looking at our code. We can make this as pleasant as possible.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Code Formatting in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=vjVWjocENLg"

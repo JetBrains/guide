@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Prototype your code then worry about creating the types
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=OKfYRk3nO0s&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=39
 ---

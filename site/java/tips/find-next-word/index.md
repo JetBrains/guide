@@ -8,7 +8,6 @@ topics:
 author: hs
 subtitle: Find next word and highlight all instances
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Source code navigation
     href: >-

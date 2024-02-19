@@ -13,7 +13,6 @@ topics:
 author: matkoch
 subtitle: There is no escape!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./screenshot.webm
   width: 600

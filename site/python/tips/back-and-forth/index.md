@@ -9,7 +9,6 @@ seealso:
   - title: Navigate to Navigated Items
     href: "https://www.jetbrains.com/help/pycharm/navigating-to-navigated-items.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/_i2gYYfC9H0"
 ---
 

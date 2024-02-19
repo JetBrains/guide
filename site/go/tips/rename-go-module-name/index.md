@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Upgrade Go modules to newer versions with ease
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=fnVaPcMHSWs&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=117
 ---

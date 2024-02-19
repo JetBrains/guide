@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Ensure that your code is always formatted with gofmt.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./card.png
 ---
 

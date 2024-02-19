@@ -6,12 +6,12 @@ topics:
 author: md
 subtitle: Learn IntelliJ IDEA features using the Feature Trainer
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Learn IDE features
     href: "https://www.jetbrains.com/help/idea/feature-trainer.html"
   - title: (tutorial) Using the IDE Feature Trainer
-    href: "https://www.jetbrains.com/guide/java/tutorials/working-with-feature-trainer/"
+    href: >-
+      https://www.jetbrains.com/guide/java/tutorials/working-with-feature-trainer/
 video: "https://youtu.be/UfN8iWKHvt0"
 ---
 

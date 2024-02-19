@@ -8,7 +8,6 @@ subtitle: >-
   Use all the features you need even if the plugin cannot process the namespaces
   automatically
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

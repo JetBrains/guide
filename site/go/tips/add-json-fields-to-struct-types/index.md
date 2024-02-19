@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Add new fields in your API objects with a copy-paste
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=rusJaogFL78&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=7
 ---

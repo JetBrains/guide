@@ -14,7 +14,6 @@ seealso:
   - title: (documentation) GoLand Help - Running applications in Go Playground
     href: >-
       https://www.jetbrains.com/help/go/2022.3/running-applications-in-go-playground.html
-cardThumbnail: ./card.png
 thumbnail: ./thumbnail.png
 screenshot: ./screenshot.png
 ---

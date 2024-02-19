@@ -9,7 +9,6 @@ seealso:
   - title: How to reformat and rearrange code
     href: "https://www.jetbrains.com/help/webstorm/reformat-and-rearrange-code.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

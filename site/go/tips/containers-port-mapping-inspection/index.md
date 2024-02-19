@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Check if the ports are correctly mapped or not
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=2yNnG5dth0E&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=61
 ---

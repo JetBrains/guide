@@ -6,9 +6,10 @@ topics:
 author: md
 subtitle: Data flow analysis can show us potential errors in our logic
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
-  - title: (video) Data Flow Analysis in IntelliJ IDEA - How the IDE Perceives Your Code
+  - title: >-
+      (video) Data Flow Analysis in IntelliJ IDEA - How the IDE Perceives Your
+      Code
     href: "https://www.youtube.com/watch?v=xOgGhF4OB3U"
   - title: (documentation) IntelliJ IDEA Help - Analyze data flow
     href: "https://www.jetbrains.com/help/idea/analyzing-data-flow.html"

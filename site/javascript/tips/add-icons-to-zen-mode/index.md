@@ -11,7 +11,6 @@ seealso:
   - title: Gutter Icons
     href: "https://www.jetbrains.com/help/webstorm/settings-gutter-icons.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 

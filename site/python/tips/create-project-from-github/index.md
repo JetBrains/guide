@@ -12,7 +12,6 @@ seealso:
   - title: PyCharm Help for GitHub
     href: "https://www.jetbrains.com/help/pycharm/github.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://www.youtube.com/watch?v=ukbvdF5wqPQ"
 ---
 

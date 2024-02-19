@@ -13,7 +13,6 @@ topics:
 author: matkoch
 subtitle: Introducing the required keyword for fields and properties.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./screenshot.webm
   width: 600

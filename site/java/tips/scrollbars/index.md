@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Information about your code in the scrollbars
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Scrollbar
     href: "https://www.jetbrains.com/help/idea/using-code-editor.html#scrollbar"

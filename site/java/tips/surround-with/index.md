@@ -7,10 +7,10 @@ topics:
 author: md
 subtitle: Surround your code with common programming constructs
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Use the Surround With action
-    href: "https://www.jetbrains.com/help/idea/working-with-source-code.html#use-the-surround-with-action"
+    href: >-
+      https://www.jetbrains.com/help/idea/working-with-source-code.html#use-the-surround-with-action
 video: "https://youtu.be/-FqHDSqD5Vo"
 ---
 

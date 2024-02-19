@@ -13,7 +13,6 @@ seealso:
     href: >-
       https://blog.jetbrains.com/webstorm/2020/05/webinar-recording-42-webstorm-tips-and-tricks/
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

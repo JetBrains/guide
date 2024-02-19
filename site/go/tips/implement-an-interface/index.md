@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Implementing an interface is a common task that Go programmers need to do
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=TYF4sljOH4A&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=65
 ---

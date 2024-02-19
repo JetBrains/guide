@@ -11,7 +11,6 @@ seealso:
   - title: (documentation) GoLand Help - Evaluating Expressions
     href: "https://www.jetbrains.com/help/go/evaluating-expressions.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=h-Ok3k5kZo4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=47
 ---

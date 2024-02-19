@@ -13,7 +13,6 @@ seealso:
   - title: Bootstrap Cheat Sheet
     href: "https://websitesetup.org/bootstrap-cheat-sheet/"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 

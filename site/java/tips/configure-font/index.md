@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: "Configure font, font size, and more"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Font
     href: "https://www.jetbrains.com/help/idea/using-code-editor.html#font"

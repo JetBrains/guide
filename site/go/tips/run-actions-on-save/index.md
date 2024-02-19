@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Perform various tasks after you save the files you work on
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

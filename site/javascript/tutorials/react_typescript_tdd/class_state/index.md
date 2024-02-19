@@ -11,7 +11,6 @@ subtitle: >-
   Make a very simple class component with local counter state, then make a type
   definition for that state.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/21-VMTmiV8E"
 ---
 

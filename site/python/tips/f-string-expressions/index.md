@@ -6,7 +6,6 @@ topics:
 author: pwe
 subtitle: Bracket completion and syntax highlighting for f-string evaluated expressions.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://www.youtube.com/watch?v=OCddA6pSUOk"
 ---
 

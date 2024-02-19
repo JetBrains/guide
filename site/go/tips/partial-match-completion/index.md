@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Complete anything by typing just parts of the identifier
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=KjPmCoyTbQQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=101
 ---

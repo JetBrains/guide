@@ -2,12 +2,11 @@
 date: 2023-12-12
 title: Refactor rename with AI Assistant
 topics:
-  - refactoring
   - ai-assistant
+  - refactoring
 author: md
 subtitle: Use the power of AI Assistant for even better naming suggestions
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - AI Assistant
     href: "https://www.jetbrains.com/help/idea/ai-assistant.html"

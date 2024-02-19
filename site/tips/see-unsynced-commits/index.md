@@ -2,8 +2,8 @@
 date: 2022-12-15
 title: See Unsynced Commits
 topics:
-  - vcs
   - git
+  - vcs
 author: pwe
 subtitle: See what's happening on that other branch.
 seealso:
@@ -12,7 +12,6 @@ seealso:
   - title: Explicitly check for incoming commits on remotes
     href: "https://www.jetbrains.com/help/idea/settings-version-control-git.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/K6v4tAmXfLs"
 obsoletes:
   - /dotnet/tips/see-unsynced-commits/

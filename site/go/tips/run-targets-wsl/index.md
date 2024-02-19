@@ -9,7 +9,6 @@ topics:
 author: dlsniper
 subtitle: Run your application or tests in Windows Subsystem for Linux (WSL) with ease
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=bjukeT3p0Mc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=108
 ---

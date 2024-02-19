@@ -6,10 +6,10 @@ topics:
 author: md
 subtitle: Refactoring overview
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Introduction to refactoring
-    href: "https://www.jetbrains.com/help/idea/tutorial-introduction-to-refactoring.html"
+    href: >-
+      https://www.jetbrains.com/help/idea/tutorial-introduction-to-refactoring.html
 video: "https://youtu.be/wDkTiWhlGyE"
 ---
 

@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Have your IDE theme synchronize with your OS one throughout the day.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

@@ -9,7 +9,6 @@ subtitle: >-
   Save a few typos and use completion to handle the container name and tag in a
   Dockerfile
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=XhRXDbv_lBk&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=137
 ---

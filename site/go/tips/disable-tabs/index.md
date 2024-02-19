@@ -12,7 +12,6 @@ seealso:
   - title: (blog) Hadi Hariri - No Tabs in IntelliJ IDEA
     href: "https://hadihariri.com/2014/06/24/no-tabs-in-intellij-idea/"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=A_vYG-GWmpw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=51
 ---

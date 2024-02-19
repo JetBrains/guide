@@ -10,7 +10,6 @@ subtitle: >-
   Get a project from source control, open an existing project, or create a new
   project
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Creating a New Project in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=xmrFlqbTjp8"

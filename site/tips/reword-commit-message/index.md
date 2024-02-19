@@ -2,15 +2,15 @@
 date: 2022-10-06
 title: Edit Commit Message
 topics:
-  - vcs
   - git
+  - vcs
 author: pwe
 subtitle: "Edit the wording in your last commit message, after you committed."
 seealso:
   - title: Edit a commit message
-    href: "https://www.jetbrains.com/help/idea/edit-project-history.html#reword-commit"
+    href: >-
+      https://www.jetbrains.com/help/idea/edit-project-history.html#reword-commit
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/qjaCu9BYeUg"
 obsoletes:
   - /dotnet/tips/reword-commit-message/

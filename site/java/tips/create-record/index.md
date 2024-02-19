@@ -6,7 +6,6 @@ topics:
 author: tg
 subtitle: Create a new Java record class
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Using Java 15 with IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=IvytsoAUEZA"

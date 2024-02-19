@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Quickly see the diff for failing test
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Testing in IntelliJ IDEA
     href: "https://www.jetbrains.com/help/idea/tests-in-ide.html"

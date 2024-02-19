@@ -14,7 +14,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/webstorm/creating-jsdoc-comments.html#ws_js_preview_jsdoc_comments_rendered_in_the_editor
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

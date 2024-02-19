@@ -14,7 +14,6 @@ seealso:
   - title: Navigating Tips and Tricks
     href: "https://www.jetbrains.com/help/pycharm/navigation-bar.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/i9l5YuDgJOw"
 ---
 

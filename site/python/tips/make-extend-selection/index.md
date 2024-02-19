@@ -16,7 +16,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#shrink_selection
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/mvZg7TaRjCM"
 ---
 

@@ -4,12 +4,12 @@ title: Find and Fix Problems with AI Assistant
 subtitle: How AI Assistant can help you find and fix problems in your code
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Find and Fix Problems
-    href: "https://www.jetbrains.com/help/idea/use-prompts-to-explain-and-refactor-your-code.html#ai-find-potential-problems"
+    href: >-
+      https://www.jetbrains.com/help/idea/use-prompts-to-explain-and-refactor-your-code.html#ai-find-potential-problems
 topics:
   - ai-assistant
 author: hs
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

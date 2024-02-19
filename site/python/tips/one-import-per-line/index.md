@@ -17,7 +17,6 @@ seealso:
   - title: YouTrack Feature Ticket for One-Per-Line
     href: "https://youtrack.jetbrains.com/issue/PY-20100"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/XB4SnJ4XmUs"
 ---
 

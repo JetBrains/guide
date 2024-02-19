@@ -13,7 +13,6 @@ topics:
 author: dlsniper
 subtitle: Work with SQL queries and get completion and other features automatically.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/9oGVEUWehy0"
 obsoletes:
   - /go/tips/write-sql-queries-in-go

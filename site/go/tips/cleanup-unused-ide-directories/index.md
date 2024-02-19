@@ -8,7 +8,6 @@ subtitle: >-
   If you stopped using an older version of the IDE, it's the right time to do
   some cleanup
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

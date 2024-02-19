@@ -14,7 +14,6 @@ seealso:
   - title: Inline Method
     href: "https://www.jetbrains.com/help/rider/Refactorings__Inline_Method.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.gif
   width: 500

@@ -8,7 +8,6 @@ topics:
 author: md
 subtitle: Extract code to a variable
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Extract Variable
     href: >-

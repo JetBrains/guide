@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Type Info is very helpful on a per-expression basis
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Type Info
     href: >-

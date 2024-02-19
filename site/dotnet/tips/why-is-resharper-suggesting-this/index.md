@@ -14,7 +14,6 @@ topics:
 author: khalidabuhakmeh
 subtitle: ReSharper and Rider help you learn existing and new features of .NET!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

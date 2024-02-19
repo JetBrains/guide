@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: You can paste a PNG image from the clipboard directly into a markdown file
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Markdown
     href: "https://www.jetbrains.com/help/idea/markdown.html"

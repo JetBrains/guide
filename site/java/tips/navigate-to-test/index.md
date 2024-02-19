@@ -8,14 +8,16 @@ topics:
 author: md
 subtitle: Go to your matching test class
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Navigation in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=1UHsJyCq1SU"
   - title: (video) Top 5 IntelliJ IDEA Navigation Shortcuts
     href: "https://www.youtube.com/watch?v=crnEBqbBWuo"
-  - title: (documentation) IntelliJ IDEA Help - Navigate between test and test subject
-    href: "https://www.jetbrains.com/help/idea/navigating-between-test-and-test-subject.html"
+  - title: >-
+      (documentation) IntelliJ IDEA Help - Navigate between test and test
+      subject
+    href: >-
+      https://www.jetbrains.com/help/idea/navigating-between-test-and-test-subject.html
 video: "https://youtu.be/ky-LGO0_iq4"
 ---
 

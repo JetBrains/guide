@@ -13,7 +13,6 @@ seealso:
     href: >-
       https://blog.jetbrains.com/webstorm/2020/07/webstorm-fundamentals-understanding-the-ui/
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

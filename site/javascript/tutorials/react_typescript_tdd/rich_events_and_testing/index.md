@@ -11,7 +11,6 @@ subtitle: >-
   Add event handling to a stateful class component by first writing tests during
   development.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/OO7OmA5UlQM"
 ---
 

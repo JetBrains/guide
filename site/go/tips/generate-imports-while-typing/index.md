@@ -13,7 +13,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/go/auto-completing-code.html#basic_completion
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=XTk7QlnVM5c&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=69
 ---

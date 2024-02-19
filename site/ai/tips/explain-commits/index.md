@@ -4,12 +4,12 @@ title: Explain Selected Commits with AI Assistant
 subtitle: How AI Assistant can help you understand a selection of commits
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Explain Commit Message
-    href: "https://www.jetbrains.com/help/idea/work-with-commits.html#ai-explain-commit"
+    href: >-
+      https://www.jetbrains.com/help/idea/work-with-commits.html#ai-explain-commit
 topics:
   - ai-assistant
 author: hs
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

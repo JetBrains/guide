@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Automate test generation
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=q4C9vALS4oc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=70
 ---

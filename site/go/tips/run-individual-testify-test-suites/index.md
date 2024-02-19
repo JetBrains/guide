@@ -6,7 +6,6 @@ topics:
 author: dlsniper
 subtitle: Run only the testify test suites or subtests that matter to you
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=qMV8hetRRp0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=111
 ---

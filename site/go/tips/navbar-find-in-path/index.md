@@ -15,7 +15,6 @@ seealso:
   - title: (documentation) GoLand Help - Navigating Tips and Tricks
     href: "https://www.jetbrains.com/help/go/navigation-bar.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=qx1LPa38M18&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=71
 ---

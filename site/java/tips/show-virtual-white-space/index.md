@@ -8,7 +8,6 @@ topics:
 author: hs
 subtitle: Add virtual whitespace to the bottom of a file
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/NueNJVo6zr4"
 ---
 

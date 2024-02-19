@@ -6,7 +6,6 @@ topics:
 author: md
 subtitle: Quickly compare two files
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Compare with Clipboard
     href: "https://www.jetbrains.com/help/idea/pro-tips.html#compare-with-clipboard"

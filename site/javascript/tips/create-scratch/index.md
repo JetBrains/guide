@@ -11,7 +11,6 @@ seealso:
   - title: How to use scratches
     href: "https://www.jetbrains.com/help/webstorm/scratches.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

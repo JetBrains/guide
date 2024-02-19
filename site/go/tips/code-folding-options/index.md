@@ -9,7 +9,6 @@ topics:
 author: ap
 subtitle: Discover how to manage code visibility with code folding in Go
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 ---
 
 Try a code folding feature to enhance the readability and navigability of your Go code. This feature is especially useful for managing large codebases and focusing on the overall structure of your code.

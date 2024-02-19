@@ -9,7 +9,6 @@ topics:
 author: pwe
 subtitle: Create a React+TypeScript project with the create-react-app scaffolding tool.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/wm8WdAB64gw"
 ---
 

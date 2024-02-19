@@ -10,7 +10,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/webstorm/working-with-source-code.html#copy_paste
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

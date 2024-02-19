@@ -15,7 +15,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/test-runner-tab.html#Test_Runner_Tab.xml
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/4kHncS_gPX0"
 ---
 

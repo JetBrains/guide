@@ -10,7 +10,6 @@ subtitle: >-
   IntelliJ IDEA has lots of different ways for you to view your code depending
   on your requirements
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (tip) Distraction Free Mode Tip
     href: "https://www.jetbrains.com/guide/java/tips/distraction-free-mode/"

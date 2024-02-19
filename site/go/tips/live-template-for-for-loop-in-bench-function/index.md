@@ -8,7 +8,6 @@ topics:
 author: dlsniper
 subtitle: "Benchmark loops are repetitive, so let the IDE handle this for you"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=NAnEXPIoQ_g&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=56
 ---

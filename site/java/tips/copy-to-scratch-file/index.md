@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Scratch files persist across all versions of IntelliJ IDEA
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) IntelliJ IDEA. Scratch files and scratch buffers
     href: "https://www.youtube.com/watch?v=vVcPEcbRiNI"

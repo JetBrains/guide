@@ -10,7 +10,6 @@ subtitle: >-
   Use the commonly known date/time formatting strings while writing time
   formatting in Go
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=pSya5MnJP3Q&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=1
 ---

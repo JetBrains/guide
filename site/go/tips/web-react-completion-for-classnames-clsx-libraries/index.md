@@ -9,7 +9,6 @@ subtitle: >-
   Spend less time typing or explore the possibilities for various CSS class
   names in React aps
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=IsffkIZzE6w&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=16
 ---

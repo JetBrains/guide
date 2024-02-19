@@ -9,7 +9,6 @@ seealso:
   - title: Evaluating Expressions
     href: "https://www.jetbrains.com/help/pycharm/evaluating-expressions.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/U2sAgysf1Hc"
 ---
 

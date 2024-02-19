@@ -14,7 +14,6 @@ seealso:
     href: >-
       https://blog.jetbrains.com/webstorm/2022/07/recording-webstorms-power-user-manual-angular-edition/
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 

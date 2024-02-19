@@ -10,7 +10,6 @@ seealso:
   - title: JSON in WebStorm
     href: "https://www.jetbrains.com/help/webstorm/json.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

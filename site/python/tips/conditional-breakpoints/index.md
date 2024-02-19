@@ -10,7 +10,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/using-breakpoints.html#breakpoint-properties
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/aIlXb2QpxXc"
 ---
 

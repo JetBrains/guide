@@ -4,12 +4,12 @@ title: Generate Django Intentions with AI Assistant
 subtitle: How AI Assistant can help you to generate Django Intentions
 seealso:
   - title: (documentation) PyCharm Help - Suggest Django Intentions
-    href: "https://www.jetbrains.com/help/pycharm/use-prompts-to-explain-and-refactor-your-code.html#suggest-django-intentions"
+    href: >-
+      https://www.jetbrains.com/help/pycharm/use-prompts-to-explain-and-refactor-your-code.html#suggest-django-intentions
 topics:
   - ai-assistant
 author: hs
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

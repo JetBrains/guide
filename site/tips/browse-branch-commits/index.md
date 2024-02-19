@@ -2,17 +2,17 @@
 date: 2022-12-09
 title: Browse Branch's Commits
 topics:
-  - vcs
   - git
+  - vcs
 author: pwe
 subtitle: Review the changes in main before bringing them to your branch.
 seealso:
   - title: Sync with a remote Git repository
     href: "https://www.jetbrains.com/help/idea/sync-with-a-remote-repository.html"
   - title: Update your project
-    href: "https://www.jetbrains.com/help/idea/sync-with-a-remote-repository.html#update"
+    href: >-
+      https://www.jetbrains.com/help/idea/sync-with-a-remote-repository.html#update
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://www.youtube.com/watch?v=tnz2I9rxrfk"
 obsoletes:
   - /dotnet/tips/browse-branch-commits/

@@ -9,7 +9,6 @@ subtitle: >-
   Use IntelliJ IDEA’s text editing features without creating or opening a
   dedicated project.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - LightEdit Mode
     href: "https://www.jetbrains.com/help/idea/lightedit-mode.html"

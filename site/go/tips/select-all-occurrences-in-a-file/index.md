@@ -11,7 +11,6 @@ seealso:
     href: >-
       https://blog.jetbrains.com/go/2018/12/07/refactorings-in-goland-rename-refactoring/
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=CriTJ6kmeaQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=104
 ---

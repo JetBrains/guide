@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Create scratches faster and get the contents you want to test pre-populated
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=PJ8JmpMQTgI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=41
 ---

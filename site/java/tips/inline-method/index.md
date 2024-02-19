@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Inline a method
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Inline Method Refactoring in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=uYsFlbXJbog"

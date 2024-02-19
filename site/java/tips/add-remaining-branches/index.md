@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Use quick intentions to generate code automatically
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/7R1b5G3yx8U"
 ---
 

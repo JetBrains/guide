@@ -12,7 +12,6 @@ seealso:
   - title: Documentation Tool Window help
     href: "https://www.jetbrains.com/help/webstorm/documentation-tool-window.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 

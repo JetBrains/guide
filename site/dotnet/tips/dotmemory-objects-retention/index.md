@@ -9,7 +9,6 @@ topics:
 author: khalidabuhakmeh
 subtitle: Inspect retention paths for an instance or a group of objects.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 640

@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Enable mouse zoom to quickly enlarge (or reduce) your font size
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Change the font size in the editor
     href: "https://www.jetbrains.com/help/idea/scratches.html"

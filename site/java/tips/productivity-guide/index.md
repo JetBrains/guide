@@ -6,7 +6,6 @@ topics:
 author: md
 subtitle: Using the Productivity Guide
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Productivity Guide
     href: "https://www.jetbrains.com/help/idea/productivity-guide.html"

@@ -12,7 +12,6 @@ seealso:
   - title: WebStorm Blog Post Announcing Improvements
     href: "https://blog.jetbrains.com/webstorm/2018/09/webstorm-2018-3-eap-3/"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://www.youtube.com/watch?v=JUmIiZpazic"
 ---
 

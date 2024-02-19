@@ -9,7 +9,6 @@ seealso:
   - title: What's new in WebStorm 2019.2
     href: "https://blog.jetbrains.com/webstorm/2019/07/webstorm-2019-2/#code_editing"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 

@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Configure font size for Presentation Mode
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Presentation Mode
     href: >-

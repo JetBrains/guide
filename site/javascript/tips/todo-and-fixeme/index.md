@@ -11,7 +11,6 @@ seealso:
   - title: TODO comments in WebStorm
     href: "https://www.jetbrains.com/help/webstorm/using-todo.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 

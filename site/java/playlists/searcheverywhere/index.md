@@ -9,7 +9,6 @@ topics:
 author: hs
 subtitle: Tips for using Search Everywhere (Shift+Shift)
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 playlistItems:
   - /tips/search-everywhere/
   - /tips/find-action/

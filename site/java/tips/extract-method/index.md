@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Extract code to a new method
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) IntelliJ IDEA. Everyday Refactorings
     href: "https://www.youtube.com/watch?v=rPq7fBo5JVs"

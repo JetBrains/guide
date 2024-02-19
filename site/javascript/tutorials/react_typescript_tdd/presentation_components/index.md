@@ -11,7 +11,6 @@ subtitle: >-
   Follow the React pattern of container/presentation components by refactoring
   the code and tests.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/SnCGW6JUo4E"
 ---
 

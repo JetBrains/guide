@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Have a look at what's in the file without opening it.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=GPu3L9sJJ3U&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=97
 ---

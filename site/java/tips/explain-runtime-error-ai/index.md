@@ -7,10 +7,10 @@ topics:
 author: md
 subtitle: Let AI Assistant explain runtime errors to you
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Explain runtime error
-    href: "https://www.jetbrains.com/help/idea/use-prompts-to-explain-and-refactor-your-code.html#ai-explain-runtime-error"
+    href: >-
+      https://www.jetbrains.com/help/idea/use-prompts-to-explain-and-refactor-your-code.html#ai-explain-runtime-error
   - title: (documentation) IntelliJ IDEA Help - AI Assistant
     href: "https://www.jetbrains.com/help/idea/ai-assistant.html"
   - title: (video) Harnessing the Power of AI Assistant in IntelliJ IDEA

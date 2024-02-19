@@ -10,7 +10,6 @@ topics:
 author: dlsniper
 subtitle: A selection of useful features from GoLand 2021.1
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 playlistItems:
   - /go/tips/run-targets-wsl/
   - /go/tips/go-embed-support/

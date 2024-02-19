@@ -9,7 +9,6 @@ subtitle: >-
   We can quickly generate common code constructs such as Constructors and Get
   and Set methods
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Code Generation in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=btqCYUc3nFE"

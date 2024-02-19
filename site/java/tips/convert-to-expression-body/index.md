@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Use quick intentions to convert to use expression body syntax
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/C0HfvztWEio"
 ---
 

@@ -6,12 +6,12 @@ topics:
 author: md
 subtitle: Code Completion Overview
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Code completion
     href: "https://www.jetbrains.com/help/idea/auto-completing-code.html"
   - title: (documentation) IntelliJ IDEA Help - Postfix completion
-    href: "https://www.jetbrains.com/help/idea/auto-completing-code.html#postfix_completion"
+    href: >-
+      https://www.jetbrains.com/help/idea/auto-completing-code.html#postfix_completion
   - title: "(video) IntelliJ IDEA Pro Tips: Code Completion"
     href: "https://www.youtube.com/watch?v=UsK5Mle9PGk"
   - title: "(video) IntelliJ IDEA Pro Tips: Postfix Completion"

@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Use quick intentions to adjust your code
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Code Formatting in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=vjVWjocENLg"

@@ -12,7 +12,6 @@ topics:
 author: matkoch
 subtitle: Write smarter C# for Unity!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./guide.webm
   width: 500

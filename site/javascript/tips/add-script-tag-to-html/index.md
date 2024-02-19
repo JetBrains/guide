@@ -9,7 +9,6 @@ seealso:
   - title: Using code editor
     href: "https://www.jetbrains.com/help/webstorm/using-code-editor.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

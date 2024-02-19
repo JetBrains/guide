@@ -10,7 +10,6 @@ topics:
   - quick-fixes
 author: ap
 subtitle: A selection of useful features from GoLand 2022.3.
-cardThumbnail: ./card.png
 thumbnail: ./thumbnail.png
 playlistItems:
   - /go/tips/check-vulnerabilities-in-go-mod/

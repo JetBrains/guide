@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Quickly add new classes to your project
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Add items to your project
     href: "https://www.jetbrains.com/help/idea/add-items-to-project.html"

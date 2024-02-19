@@ -9,7 +9,6 @@ subtitle: >-
   Discover what types implement an interface or what interfaces are implemented
   by a type
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=LODWfMNOYbk&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=139
 ---

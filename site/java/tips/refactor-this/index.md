@@ -6,7 +6,6 @@ topics:
 author: md
 subtitle: Refactoring options for the selection
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Invoke refactoring
     href: >-

@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Use Find Actions to assign a keyboard shortcut
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Configure keyboard shortcuts
     href: >-

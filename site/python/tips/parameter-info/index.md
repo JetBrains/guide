@@ -12,7 +12,6 @@ seealso:
   - title: Viewing Inline Documentation
     href: "https://www.jetbrains.com/help/pycharm/inline-documentation.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/hfWhDwp7zz8"
 ---
 

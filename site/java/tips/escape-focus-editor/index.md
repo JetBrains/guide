@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: How to exit dialogs and return your focus to the editor
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Editor Tips and Tricks in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=JEpeHNsWIMk"

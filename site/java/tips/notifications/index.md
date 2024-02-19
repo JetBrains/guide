@@ -6,7 +6,6 @@ topics:
 author: md
 subtitle: Notifications tool window
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Notifications
     href: "https://www.jetbrains.com/help/idea/notifications.html"

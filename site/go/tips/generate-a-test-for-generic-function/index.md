@@ -9,7 +9,6 @@ topics:
 author: ap
 subtitle: Use a shortcut to generate test files for your generic functions.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/JL7BJ41u66w"
 ---
 

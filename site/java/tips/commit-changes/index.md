@@ -8,7 +8,6 @@ topics:
 author: hs
 subtitle: Commit your changes to VCS
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Adding a Project to Git and GitHub in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=mf2-MOl0VXY"

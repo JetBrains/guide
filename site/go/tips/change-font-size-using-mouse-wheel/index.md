@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Increase or decrease the font size on-the-fly
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

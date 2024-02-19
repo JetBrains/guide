@@ -8,7 +8,6 @@ topics:
 author: hs
 subtitle: Setup the editor to suit your requirements
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Navigation in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=1UHsJyCq1SU"

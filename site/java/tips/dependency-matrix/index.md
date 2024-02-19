@@ -7,11 +7,14 @@ topics:
 author: md
 subtitle: Explore project structure with the Dependency Matrix
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
-  - title: "(video) IntelliJ IDEA: Explore project structure with the Dependency Matrix"
+  - title: >-
+      (video) IntelliJ IDEA: Explore project structure with the Dependency
+      Matrix
     href: "https://www.youtube.com/watch?v=moi49_V_4g0"
-  - title: (tutorial) IntelliJ IDEA Guide - Explore project structure with the Dependency Matrix
+  - title: >-
+      (tutorial) IntelliJ IDEA Guide - Explore project structure with the
+      Dependency Matrix
     href: "https://www.jetbrains.com/guide/java/tutorials/dependency-matrix/"
   - title: (documentation) IntelliJ IDEA Help - Dependency Structure Matrix
     href: "https://www.jetbrains.com/help/idea/dsm-analysis.html"

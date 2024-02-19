@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: "Generate the support code to access fields indirectly, via getters and setters"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=epLp9e8zC-A&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=40
 ---

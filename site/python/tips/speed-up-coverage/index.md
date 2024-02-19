@@ -11,7 +11,6 @@ seealso:
   - title: Coverage configuration files
     href: "https://coverage.readthedocs.io/en/coverage-5.0.4/config.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://www.youtube.com/watch?v=OCH_gPfrvzw"
 ---
 

@@ -14,7 +14,6 @@ seealso:
   - title: Bundled spell checker in WebStorm 2020.1
     href: "https://blog.jetbrains.com/webstorm/2020/04/webstorm-2020-1/#grazie"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

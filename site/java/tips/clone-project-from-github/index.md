@@ -6,7 +6,6 @@ topics:
 author: md
 subtitle: Clone a project from the IntelliJ IDEA welcome screen
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Clone repository
     href: "https://www.jetbrains.com/help/idea/cloning-repository.html"

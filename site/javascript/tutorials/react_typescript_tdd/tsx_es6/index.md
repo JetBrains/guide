@@ -9,7 +9,6 @@ subtitle: >-
   Using React and TypeScript means good JSX and ES6+ support in the IDE. This
   section shows some useful features from both.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/JXrZDUzkc2Q"
 ---
 

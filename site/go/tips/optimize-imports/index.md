@@ -14,7 +14,6 @@ seealso:
   - title: (documentation) GoLand Help - Creating and Optimizing Imports
     href: "https://www.jetbrains.com/help/go/creating-and-optimizing-imports.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=6wZnk41gVEg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=73
 ---

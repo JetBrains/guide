@@ -8,7 +8,6 @@ topics:
 author: sf
 subtitle: Save time when adding missing dependencies
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/4Ywt0R29wzM"
 ---
 

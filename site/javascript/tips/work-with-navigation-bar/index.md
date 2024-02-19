@@ -14,7 +14,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/webstorm/guided-tour-around-the-user-interface.html#navigation-bar
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

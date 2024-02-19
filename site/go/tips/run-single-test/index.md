@@ -12,7 +12,6 @@ seealso:
   - title: (documentation) GoLand Help - Test Runner Tab
     href: "https://www.jetbrains.com/help/go/test-runner-tab.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=OhNeN8diWb4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=109
 ---

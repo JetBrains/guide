@@ -8,7 +8,6 @@ subtitle: >-
   Sealed types are a new idea for Java developers, let IntelliJ IDEA guide you
   in how to create child classes
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Using Java 16 with IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=s3otQAhPNZg"

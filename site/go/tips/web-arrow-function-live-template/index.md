@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Create arrow functions quicker thanks to builtin customizable templates
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=C-eBw3dcq_4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=57
 ---

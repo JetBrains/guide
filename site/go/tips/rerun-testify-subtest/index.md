@@ -6,7 +6,6 @@ topics:
 author: dlsniper
 subtitle: Rerun just the subtest you need from a testify suite.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=CC7ev6Qu-44&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=116
 ---

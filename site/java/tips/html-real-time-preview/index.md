@@ -6,7 +6,6 @@ topics:
 author: tg
 subtitle: See what your changes look like as you make them
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Inline Method Refactoring in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=uYsFlbXJbog"

@@ -11,7 +11,6 @@ seealso:
   - title: No Tabs in IntelliJ IDEA
     href: "https://hadihariri.com/2014/06/24/no-tabs-in-intellij-idea/"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/k7P__ZhUv-g"
 ---
 

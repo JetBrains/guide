@@ -16,7 +16,6 @@ seealso:
   - title: (documentation) GoLand Help - Navigation in Source Code
     href: "https://www.jetbrains.com/help/go/navigation-in-source-code.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=FSo0-9oFXmE&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=78
 ---

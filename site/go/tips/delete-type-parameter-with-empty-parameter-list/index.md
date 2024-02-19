@@ -11,7 +11,6 @@ subtitle: >-
   Type parameters with empty parameter lists are reported as errors, but you
   have a quick-fix to put it right.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

@@ -7,10 +7,10 @@ topics:
 author: md
 subtitle: Group your projects together in the Welcome Screen
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Group projects
-    href: "https://www.jetbrains.com/help/idea/open-close-and-move-projects.html#group-projects"
+    href: >-
+      https://www.jetbrains.com/help/idea/open-close-and-move-projects.html#group-projects
 video: "https://youtu.be/C377l7OqpMw"
 ---
 

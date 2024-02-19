@@ -10,7 +10,6 @@ seealso:
     href: >-
       https://blog.jetbrains.com/webstorm/2019/11/webstorm-2019-3/#ide_improvements
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

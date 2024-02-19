@@ -9,7 +9,6 @@ subtitle: >-
   Postfix completion allows you to keep typing forwards, it minimises the amount
   of time you spend moving the cursor around while you're coding.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Code Completion in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=jTud6GIqVgk"
@@ -19,7 +18,8 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/idea/auto-completing-code.html#postfix_completion
   - title: (documentation) IntelliJ IDEA Help - Create custom postfix templates
-    href: "https://www.jetbrains.com/help/idea/auto-completing-code.html#custom-postfix-templates"
+    href: >-
+      https://www.jetbrains.com/help/idea/auto-completing-code.html#custom-postfix-templates
 video: "https://www.youtube.com/watch?v=ajD6pxTOFhY"
 ---
 

@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Learn some of the most useful Editing features of GoLand.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 playlistItems:
   - /go/tips/implement-an-interface/
   - /go/tips/structure-tags/

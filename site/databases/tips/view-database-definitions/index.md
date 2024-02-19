@@ -4,9 +4,8 @@ title: View Database Definitions
 topics:
   - databases
 author: hs
-subtitle: "View the definitions of database entities quickly in the Database Tool Window"
+subtitle: View the definitions of database entities quickly in the Database Tool Window
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/Xr1p4tquwJE"
 seealso:
   - title: (documentation) Database Tool Window

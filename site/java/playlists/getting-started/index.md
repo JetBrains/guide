@@ -8,7 +8,6 @@ topics:
 author: hs
 subtitle: Tips for getting started with IntelliJ IDEA
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 playlistItems:
   - /java/tips/welcome-screen/
   - /java/tips/download-jdk/

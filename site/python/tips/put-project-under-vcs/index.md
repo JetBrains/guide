@@ -12,7 +12,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/enable-version-control-integration-dialog.html#Enable_Version_Control_Integration_Dialog.xml
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/36RFkThiZug"
 ---
 

@@ -4,12 +4,12 @@ title: Explain Code with AI Assistant
 subtitle: How AI Assistant can help you understand code
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Explain Code
-    href: "https://www.jetbrains.com/help/idea/use-prompts-to-explain-and-refactor-your-code.html#ai-explain-code"
+    href: >-
+      https://www.jetbrains.com/help/idea/use-prompts-to-explain-and-refactor-your-code.html#ai-explain-code
 topics:
   - ai-assistant
 author: hs
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

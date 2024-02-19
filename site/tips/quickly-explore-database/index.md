@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: How does exploring your database without writing a single line of SQL sound?
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/hEg40WdXsDg"
 ---
 

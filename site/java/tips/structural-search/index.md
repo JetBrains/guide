@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Structural Search and Replace
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) IntelliJ IDEA. Structural Search and Replace
     href: "https://www.youtube.com/watch?v=fIPr_ANBpFk"

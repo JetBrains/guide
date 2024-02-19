@@ -9,7 +9,6 @@ subtitle: >-
   Stop switching to a browser to inspect your template and get instant feedback
   in your IDE
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=EN27C5oDbpg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=20
 ---

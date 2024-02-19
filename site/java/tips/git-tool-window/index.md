@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Git tool window
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Version Control window
     href: "https://www.jetbrains.com/help/idea/version-control-tool-window.html"

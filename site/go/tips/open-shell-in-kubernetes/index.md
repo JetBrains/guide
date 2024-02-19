@@ -6,7 +6,6 @@ topics:
 author: dlsniper
 subtitle: Run an interactive shell for the container in the selected pod.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=0XjeqTLwPXo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=75
 ---

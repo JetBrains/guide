@@ -8,7 +8,6 @@ topics:
 author: matkoch
 subtitle: Poor man’s manipulation to the rescue!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./guide.webm
   width: 500

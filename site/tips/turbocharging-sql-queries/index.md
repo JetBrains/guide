@@ -2,13 +2,14 @@
 date: 2022-09-06
 title: Turbocharging SQL Queries
 topics:
-  - platform
-  - databases
   - data
+  - databases
+  - platform
 author: hs
-subtitle: Want to take your SQL query speed to the next level? This video will explore how your JetBrains IDE can help you achieve faster SQL queries.
+subtitle: >-
+  Want to take your SQL query speed to the next level? This video will explore
+  how your JetBrains IDE can help you achieve faster SQL queries.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/-MFoSwcPkb4"
 ---
 

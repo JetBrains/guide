@@ -2,15 +2,15 @@
 date: 2022-11-23
 title: Only Commit Some Changes
 topics:
-  - vcs
   - git
+  - vcs
 author: pwe
 subtitle: Unselect files or changed regions within files during the commit process.
 seealso:
   - title: Commit part of a file
-    href: "https://www.jetbrains.com/help/idea/commit-and-push-changes.html?partial_commit"
+    href: >-
+      https://www.jetbrains.com/help/idea/commit-and-push-changes.html?partial_commit
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/OlFg1g3hcLs"
 obsoletes:
   - /dotnet/tips/partial-commit/

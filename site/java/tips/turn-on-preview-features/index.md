@@ -9,7 +9,6 @@ subtitle: >-
   fully functional but require developer feedback. Try them out in IntelliJ
   IDEA.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/Svr-rcfJSyM"
 ---
 

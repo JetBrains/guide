@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Use quick intentions to add names to call arguments
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/4SmH2L8y4_M"
 ---
 

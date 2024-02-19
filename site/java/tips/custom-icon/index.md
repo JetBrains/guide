@@ -7,10 +7,10 @@ topics:
 author: md
 subtitle: Add a custom icon to your project
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Change the project icon
-    href: "https://www.jetbrains.com/help/idea/customize-actions-menus-and-toolbars.html#change-project-icon"
+    href: >-
+      https://www.jetbrains.com/help/idea/customize-actions-menus-and-toolbars.html#change-project-icon
 video: "https://youtu.be/PXDr2U7RGjE"
 ---
 

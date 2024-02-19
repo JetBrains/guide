@@ -8,7 +8,6 @@ topics:
 author: ap
 subtitle: Rename a constant if it uses a name of a built-in constant.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: The king of code completion in GoLand.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=smUS4hztnTI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=150
 ---

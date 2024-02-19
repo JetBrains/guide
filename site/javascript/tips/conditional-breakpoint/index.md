@@ -11,7 +11,6 @@ seealso:
   - title: Documentation for debugging code
     href: "https://www.jetbrains.com/help/webstorm/debugging-code.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 

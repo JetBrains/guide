@@ -17,7 +17,6 @@ seealso:
     href: >-
       https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/local-functions
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.gif
   width: 1584

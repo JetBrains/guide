@@ -11,7 +11,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/go/using-breakpoints.html#breakpoint-properties
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=lcSWPD_2-vw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=26
 ---

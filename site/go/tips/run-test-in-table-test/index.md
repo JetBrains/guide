@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Focus your testing on new test cases or tests that fail
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=VshkrFowxjQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=113
 ---

@@ -10,7 +10,6 @@ subtitle: >-
   Make a simple class component with a single prop, again with a TypeScript
   interface describing the props.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/HYmoeUF9ZH0"
 ---
 

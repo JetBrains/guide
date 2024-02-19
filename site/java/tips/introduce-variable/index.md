@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Refactor your code and introduce a new variable
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) IntelliJ IDEA. Everyday Refactorings
     href: "https://www.youtube.com/watch?v=rPq7fBo5JVs"

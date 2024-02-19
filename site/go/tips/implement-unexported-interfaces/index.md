@@ -8,7 +8,6 @@ topics:
 author: ap
 subtitle: Implement unexported interfaces by pressing Ctrl + I
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/WrKC9EFVu04"
 ---
 

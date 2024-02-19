@@ -9,7 +9,6 @@ subtitle: >-
   Complete statement can add your semicolons, brackets and manage caret
   placement for you.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Why Do Developers Love IntelliJ IDEA?
     href: "https://www.youtube.com/watch?v=xiT4rEbC56k"

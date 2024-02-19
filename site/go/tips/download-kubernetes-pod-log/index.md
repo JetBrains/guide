@@ -6,7 +6,6 @@ topics:
 author: dlsniper
 subtitle: Comb the pod log for the details needed from the comfort of your computer
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=9euuq6jTcpA&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=50
 ---

@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Helps to reduce options that are not relevant for your code
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: "(video) IntelliJ IDEA Pro Tips: Alt Enter"
     href: "https://www.youtube.com/watch?v=pWHgNm6aGdo"

@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Rename an existing bookmark
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Using bookmarks in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=2PG03drOEMk"

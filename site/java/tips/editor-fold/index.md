@@ -9,7 +9,6 @@ topics:
 author: hs
 subtitle: Create an editor fold to hide parts of your class
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Code folding
     href: "https://www.jetbrains.com/help/idea/code-folding-settings.html"

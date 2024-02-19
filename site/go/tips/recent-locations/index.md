@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Jump back and forth between files using code snippets you've recently seen
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=2aI1BhIhjs4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=92
 ---

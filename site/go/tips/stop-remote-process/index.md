@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Clean-up processes after interacting with them in remote debugging scenarios
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=RoLYWoDJDIU&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=147
 ---

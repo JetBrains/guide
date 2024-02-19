@@ -8,7 +8,6 @@ topics:
 author: dlsniper
 subtitle: Write tests faster thanks to the builtin func Test live template.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=O3yaRncX-5I&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=55
 ---

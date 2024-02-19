@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Make sure your tests pass before reaching the CI/CD pipeline
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=Uq79t_XpWkc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=122
 ---

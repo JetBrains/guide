@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Let your IDE add constructor arguments to your instance.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/yd7_1iz7ZUY"
 ---
 

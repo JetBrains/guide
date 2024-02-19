@@ -8,7 +8,6 @@ topics:
 author: pwe
 subtitle: Test-first development with Jest in the IDE.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/Y_TGIsFnvo4"
 ---
 

@@ -9,7 +9,6 @@ topics:
   - settings
 author: ap
 subtitle: A selection of useful features from GoLand 2022.2.
-cardThumbnail: ./card.png
 thumbnail: ./thumbnail.png
 playlistItems:
   - /go/tips/rename-constants-that-use-names-of-builtin-constants/
