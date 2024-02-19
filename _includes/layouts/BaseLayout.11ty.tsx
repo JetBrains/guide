@@ -41,10 +41,19 @@ export function BaseLayout(
 	);
 
 	// determine if there's an og:image
-	let cardThumbnail, channel;
+	let thumbnail, channel;
 	if (resourceType) {
 		const resource = collections.resourceMap.get(data.page.url) as Resource;
-		cardThumbnail = resource?.cardThumbnail;
+		const resourceThumbnail = resource?.getThumbnail();
+		// make sure we don't try to use fontawesome icons as the thumbnail image
+		if (
+			resourceThumbnail &&
+			resourceThumbnail.indexOf("fa-") < 0 &&
+			resourceThumbnail.indexOf("fas-") < 0 &&
+			resourceThumbnail.indexOf("far-") < 0
+		) {
+			thumbnail = resourceThumbnail;
+		}
 		if (resourceType == "channel") {
 			channel = resource as Channel;
 		} else if (
@@ -128,7 +137,7 @@ export function BaseLayout(
 				<meta property="article:published_time" content="2023-02-17" />
 				<meta property="article:author" content="" />
 				<meta property="article:section" content="" />
-				{cardThumbnail && <meta property="og:image:alt" content={title} />}
+				{thumbnail && <meta property="og:image:alt" content={title} />}
 				<meta name="twitter:card" content="summary" />
 				<meta name="twitter:site" content="@jetbrains" />
 				{subtitle && <meta name="description" content={subtitle} />}
@@ -145,10 +154,10 @@ export function BaseLayout(
 				{channel && <Subnav channel={channel} />}
 				{children}
 				<Footer copyright={copyright}></Footer>
-				{cardThumbnail && (
+				{thumbnail && (
 					<MetaOpenGraphImage
 						siteUrl="https://www.jetbrains.com/guide/"
-						src={cardThumbnail}
+						src={thumbnail}
 					/>
 				)}
 			</body>
