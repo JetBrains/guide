@@ -14,6 +14,7 @@ import {
 	MarkdownResources,
 	parseFrontmatter,
 } from "./file.utils";
+import sizeOf from "image-size";
 
 export function cleanCategories(fm: MarkdownFrontmatter): MarkdownFrontmatter {
 	let topics: string[] = fm.topics ? fm.topics : [];
@@ -88,6 +89,14 @@ export const migrateFrontMatter = () => {
 		removeHasBodyAttribute,
 		migrateVideoFrontmatter
 	)(allMarkdownFiles);
+
+	writeMarkdownDocuments(markdowns);
+};
+
+export const migrateCardThumbnail = () => {
+	const allMarkdownFiles = getMarkdownFiles();
+
+	const markdowns = pipe(migrateCardThumbnailFrontmatter)(allMarkdownFiles);
 
 	writeMarkdownDocuments(markdowns);
 };
@@ -185,6 +194,58 @@ export function writeCleanResources(): void {
 		fs.writeFileSync(filePath, m, { flag: "w+" });
 	});
 }
+
+export const migrateCardThumbnailFrontmatter = (
+	documents: Markdown[]
+): Markdown[] => {
+	return documents.map((document) => {
+		if (typeof document.frontmatter.cardThumbnail === "undefined") {
+			return document;
+		}
+
+		// Keep track of old values
+		const oldThumbnailRelativePath = path.normalize(
+			`${path.dirname(document.path)}/${document.frontmatter.thumbnail}`
+		);
+		const oldCardThumbnailRelativePath = path.normalize(
+			`${path.dirname(document.path)}/${document.frontmatter.cardThumbnail}`
+		);
+		const thumbnailPngRelativePath = path.normalize(
+			`${path.dirname(document.path)}/thumbnail.png`
+		);
+
+		// Check aspect ratio
+		const thumbnailImageSize = sizeOf(oldThumbnailRelativePath);
+		const thumnailIsSquare =
+			thumbnailImageSize.width == thumbnailImageSize.height;
+
+		// If thumbnail is square, replace it with cardThumbnail
+		if (thumnailIsSquare) {
+			// Delete old thumbnail
+			if (fs.existsSync(oldThumbnailRelativePath)) {
+				fs.unlinkSync(oldThumbnailRelativePath);
+			}
+
+			// Migrate frontmatter
+			document.frontmatter.thumbnail = document.frontmatter.cardThumbnail;
+			if (document.frontmatter.thumbnail == "./card.png") {
+				if (fs.existsSync(oldCardThumbnailRelativePath)) {
+					document.frontmatter.thumbnail = "./thumbnail.png";
+					fs.renameSync(oldCardThumbnailRelativePath, thumbnailPngRelativePath);
+				}
+			}
+		} else {
+			// Delete old cardThumbnail
+			if (fs.existsSync(oldCardThumbnailRelativePath)) {
+				fs.unlinkSync(oldCardThumbnailRelativePath);
+			}
+		}
+
+		delete document.frontmatter.cardThumbnail;
+
+		return { ...document, isChanged: true };
+	});
+};
 
 type TopicTypes = {
 	[key: string]: string[];

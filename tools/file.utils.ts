@@ -19,6 +19,9 @@ export type VideoRef = {
 
 export type MarkdownFrontmatter = {
 	thumbnail?: string;
+	/**
+	 * @deprecated this property has been removed and is now handled by the thumbnail property instead
+	 */
 	cardThumbnail?: string;
 	label?: string;
 	products?: string[];
