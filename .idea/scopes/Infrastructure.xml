@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Infrastructure" pattern="file[guide]:*/&amp;&amp;!file[guide]:site//*" />
+</component>
