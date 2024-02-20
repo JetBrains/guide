@@ -37,33 +37,13 @@ class PytestHomepage {
 	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
-		const links = this.getResources({
-			resourceTypes: [LINK_RESOURCE],
-			channel: channel.url,
-			limit: 8,
-		});
-
 		const all = this.getResources({
 			resourceTypes: [TIP_RESOURCE, TUTORIAL_RESOURCE, LINK_RESOURCE],
 			channel: channel.url,
 			customFilter: (r) =>
 				r.channel == channel.url || r.topics?.includes("pytest") == true,
-			limit: 4,
+			limit: 8,
 		});
-
-		// const tips = this.getResources({
-		// 	resourceTypes: [TIP_RESOURCE],
-		// 	channel: channel.url,
-		// 	//customFilter: (r) =>
-		// 	//r.channel == channel.url || r.topics?.includes("pytest") == true,
-		// 	limit: 4,
-		// });
-
-		// const tutorials = this.getResources({
-		// 	resourceTypes: [TUTORIAL_RESOURCE],
-		// 	channel: channel.url,
-		// 	limit: 8,
-		// });
 
 		return (
 			<BaseLayout {...data}>
@@ -91,20 +71,8 @@ class PytestHomepage {
 						resources={all}
 						includeCardFooter={true}
 						includeContentType={true}
-						//moreLink={`${channel.url}tips/`}
-						//sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
-
-				{/*{tutorials && (*/}
-				{/*	<ListingSection*/}
-				{/*		title={`Latest tutorials`}*/}
-				{/*		resources={tutorials}*/}
-				{/*		separator={false}*/}
-				{/*		includeCardFooter={false}*/}
-				{/*		moreLink={`${channel.url}tutorials/`}*/}
-				{/*	/>*/}
-				{/*)}*/}
 			</BaseLayout>
 		);
 	}

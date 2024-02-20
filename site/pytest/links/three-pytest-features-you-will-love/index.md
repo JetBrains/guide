@@ -1,6 +1,6 @@
 ---
 date: 2024-02-20
-title: Use pytest to test all the things!
+title: Three pytest features you will love
 topics:
   - testing
   - pytest
