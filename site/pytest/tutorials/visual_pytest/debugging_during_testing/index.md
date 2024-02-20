@@ -12,6 +12,8 @@ subtitle: >-
   around in the context of a problem.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/feBYCeOk4As"
+obsoletes:
+  - /pycharm/tutorials/debugging_during_testing/
 ---
 
 Primary guardian, great!
@@ -31,7 +33,7 @@ def test_primary_guardian(player_one):
 
 It raises an error:
 
-![Assertion Error](./assertion_error.png)
+![Assertion Error](assertion_error.png)
 
 This error message is quite helpful, but let's imagine you're confused about it.
 "What do you mean, there's no primary guardian?"
@@ -65,18 +67,18 @@ Let's use that.
 Remove the `print` statement and instead, click in the gutter beside the first line in that test function.
 This adds a red circle to indicate a breakpoint at `assert player_one.primary_guardian`:
 
-![Set Breakpoint](./breakpoint.png)
+![Set Breakpoint](breakpoint.png)
 
 Let's now run that _one_ test, but under the debugger, which itself will then run `pytest`.
 Click the green triangle in the gutter to the left of `test_primary_guardian` and choose `Debug 'pytest for test_play...'.
 This brings up a new tool window in the bottom, running the debugger:
 
-![Run Under Debugger](./run_under_debugger.png)
+![Run Under Debugger](run_under_debugger.png)
 
 Our test execution has stopped on the line with the assertion.
 Our _Variables_ pane shows that `player_one` exists in the scope and we can take a look at it:
 
-![Expanded Variable in Debugger](./no_guardians.png)
+![Expanded Variable in Debugger](no_guardians.png)
 
 Aha, that's the problem!
 But let's say we _still_ couldn't spot it. We want to poke around interactively.
@@ -84,7 +86,7 @@ But let's say we _still_ couldn't spot it. We want to poke around interactively.
 Highlight `player_one.primary_guardian` in that line of code -- the one triggering the error -- then right click and choose **Evaluate Expression**.
 When you click **Evaluate** button, you see the output:
 
-![Evaluate Expression](./evaluate_expression.png)
+![Evaluate Expression](evaluate_expression.png)
 
 You can now poke around interactively in the state at that point by typing in the **Expression:** field.
 You can even overwrite the value of a variable in the scope or create new variables.

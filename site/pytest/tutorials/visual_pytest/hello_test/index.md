@@ -9,6 +9,8 @@ author: pwe
 subtitle: Write a simple test and run it in PyCharm's visual test runner.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/I1ssiDEa2S4"
+obsoletes:
+  - /pycharm/tutorials/hello_test/
 ---
 
 Getting started with pytest is quite easy.
@@ -20,13 +22,13 @@ We want to make and run a test for our `Player` class before we do too much impl
 PyCharm can help us make the test.
 Click somewhere in the `Player` and invoke **Navigate | Go To Test** <kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux)
 
-![Invoke Navigate To Test](./invoke_navigate_to_test.png)
+![Invoke Navigate To Test](invoke_navigate_to_test.png)
 
 Tell it to create a new test.
 You will then get a dialog asking for more information.
 PyCharm should spot that you created a `tests` directory, so accept its defaults and click `OK`:
 
-![Navigate To Test](./navigate_to_test.png)
+![Navigate To Test](navigate_to_test.png)
 
 PyCharm will add two files to `tests`: an empty `tests/__init__.py` (which can be helpful to `pytest` later) and `tests/test_player.py`.
 PyCharm then opens the new test file at `tests/test_player.py`:
@@ -46,7 +48,7 @@ In `pytest`, tests [are discovered](https://docs.pytest.org/en/latest/goodpracti
 Now that we have a test -- albeit simple -- let's see what it looks like to _run_ it.
 Right-click in the middle of the editor and choose `Run 'pytest in test_player.py'`:
 
-![Run Tests via Context Menu](./context_menu.png)
+![Run Tests via Context Menu](context_menu.png)
 
 Yay, our first test runs -- and fails!
 Sure, small victory -- but small victories can help get us into the TDD flow.
@@ -60,7 +62,7 @@ It should configure automatically, though, if your environment has `pytest` when
 PyCharm opens a new run tool window in the bottom of the screen.
 This tool window is customized for visualizing tests and their results:
 
-![Failing Tests](./tests_tool_window_fail.png)
+![Failing Tests](tests_tool_window_fail.png)
 
 The test runner tool window lists the tests (organized by hierarchy) on the left and the test output on the right.
 It also has buttons for operations (e.g. re-run tests) and configuration (e.g. only show passing tests.)
@@ -74,7 +76,7 @@ Let's change the assertion to make the test pass:
 In the tool window, click the green arrow to re-run your tests.
 The results look much different now:
 
-![Passing Tests](./tests_tool_window_pass.png)
+![Passing Tests](tests_tool_window_pass.png)
 
 # Many Ways to Run Tests
 
@@ -135,4 +137,4 @@ Instead, type `Pla` and hit <kbd>Ctrl+Space+Space</kbd> to autocomplete _and_ ad
 Let's run everything in the file (currently one test) by again right-clicking in the editor and choosing **Run 'pytest in test_player.py'**.
 Our test passes again:
 
-![Final Test Run](./final_test_run.png)
+![Final Test Run](final_test_run.png)

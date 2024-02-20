@@ -9,6 +9,8 @@ author: pwe
 subtitle: "During refactoring, use pytest's markers to ignore certain breaking tests."
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/rEYQrMY8Ux4"
+obsoletes:
+  - /pycharm/tutorials/skipping_tests/
 ---
 
 Sometimes you want to overhaul a chunk of code and don't want to stare at a broken test.
@@ -54,7 +56,7 @@ Remember, we don't have to manually type the import...just start typing `@pyt` a
 
 Now when the tests run (automatically, thanks to `Toggle auto-test`), they don't fail, but they do indicate a test was ignored:
 
-![Ignored Tests](./ignored_tests.png)
+![Ignored Tests](ignored_tests.png)
 
 With our failing test in place, let's implement the missing method.
 In `player.py`, clone the existing `add_guardian` method, then change its arguments and implementation:
@@ -82,7 +84,7 @@ Might as well change it to be a tuple:
 
 Doing so breaks Python type checking:
 
-![Type Checking](./type_checking.png)
+![Type Checking](type_checking.png)
 
 Let's change our `add_guardians` to accept any kind of `Iterable`:
 

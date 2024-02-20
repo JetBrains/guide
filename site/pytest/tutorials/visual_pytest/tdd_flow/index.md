@@ -11,6 +11,8 @@ subtitle: >-
   Development (TDD).
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/kwj6Hk1kJYU"
+obsoletes:
+  - /pycharm/tutorials/tdd_flow/
 ---
 
 Players have parents, also known as guardians.
@@ -42,7 +44,7 @@ Let's switch to running _all_ of our tests.
 In the project tool window, right-click on `tests` and choose `Run 'pytest in tests'`.
 The test runner now shows a tab with `pytest in tests`, with 2 tests passing:
 
-![All Tests](./all_tests.png)
+![All Tests](all_tests.png)
 
 Not a major victory, but allows us to start inching forward:
 
@@ -58,7 +60,7 @@ While we're at it, collapse the project tool window, turn off the toolbars and n
 
 The run tool window stays on the bottom (though on wide monitors I put it on the right):
 
-![TDD Layout](./tdd_layout.png)
+![TDD Layout](tdd_layout.png)
 
 There, that has a nice feel to it.
 Room to focus.
@@ -69,7 +71,7 @@ PyCharm makes this easy and visually convenient -- it even integrates with your 
 
 In the tool window for the test output, click on the `Toggle auto-test` icon, two icons below the green run arrow.
 
-![Toggle Auto Run](./toggle_auto_run.png)
+![Toggle Auto Run](toggle_auto_run.png)
 
 With autorun enabled, next click the big green run arrow again.
 Now, all your tests run _automatically_ two seconds (configurable) after you stop typing.
@@ -94,11 +96,11 @@ Change the first test in `tests/test_guardian.py`:
 
 Notice that PyCharm warns you (on hovering) with 'Unexpected argument' when we supply arguments:
 
-![Unexpected Argument Warning](./unexpected_argument.png)
+![Unexpected Argument Warning](unexpected_argument.png)
 
 After two seconds, even without saving, our tests show as broken:
 
-![Failing Tests](./test_fails.png)
+![Failing Tests](test_fails.png)
 
 Of course it breaks: `Guardian` has no `__init__.py` constructor.
 Since it is the _code_ we are writing tests for, the mistake is conveniently right there in our left tab.
@@ -143,7 +145,7 @@ PyCharm's test output now shows expected vs. actual, and `Expected` is in the wr
 We need to flip that, but good news: PyCharm excels at such janitorial work.
 Click on the double-equal, hit <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), and choose `Flip '=='`:
 
-![Flip Arguments](./flip_arguments.png)
+![Flip Arguments](flip_arguments.png)
 
 In fact, PyCharm will [obey a style](https://youtrack.jetbrains.com/issue/PY-27267) set by a project.
 Create a `pytest.ini` file at the root:

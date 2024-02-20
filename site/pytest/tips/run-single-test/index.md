@@ -14,6 +14,8 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 video: "https://youtu.be/-3SS0s-Y420"
+obsoletes:
+  - /python/tips/run-single-test/
 ---
 
 You're doing test-driven development (TDD) and you're in "the flow".

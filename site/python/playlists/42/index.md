@@ -43,7 +43,7 @@ playlistItems:
   - /python/tips/conditional-breakpoints/
   - /python/tips/evaluate-expression/
   - /python/tips/split-screen-without-tabs/
-  - /python/tips/run-single-test/
+  - /pytest/tips/run-single-test/
   - /python/tips/auto-run-tests/
   - /python/tips/spot-coverage-in-gutter/
   - /tips/local-history/

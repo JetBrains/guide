@@ -11,6 +11,8 @@ subtitle: >-
   configure PyCharm to use pytest.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/mLYTP41H8U0"
+obsoletes:
+  - /pycharm/tutorials/setup/
 ---
 
 Python has projects and PyCharm does as well.
@@ -21,7 +23,7 @@ In this tutorial step, let's make both, with a virtual environment, and set the 
 We'll let the IDE guide us through the process.
 First, we use `File -> New Project` to make a new project, in a directory:
 
-![New Project Dialog](./new_project_dialog.png)
+![New Project Dialog](new_project_dialog.png)
 
 Make sure `Project Interpreter` is setup to configure a new virtual environment.
 Expand the triangle if needed to set this up.
@@ -82,7 +84,7 @@ We added `pytest` after making the environment, so we need to configure it ourse
 
 Go to `Settings -> Tools -> Python Integrated Tools` and change `Default test runner:` to `pytest`:
 
-![Python Integrated Tools](./python_integrated_tools.png)
+![Python Integrated Tools](python_integrated_tools.png)
 
 Mine is set automatically because I set `pytest` as my [default test runner for all projects](https://www.jetbrains.com/help/pycharm/configure-project-settings.html#new-default-settings) using **File | New Projects Settings | Settings/Preferences for New Projects**:
 
@@ -91,4 +93,4 @@ This mimics the [pytest good practices](https://docs.pytest.org/en/latest/goodpr
 
 When done, your directory structure should look like this:
 
-![Directory Structure](./directory.png)
+![Directory Structure](directory.png)

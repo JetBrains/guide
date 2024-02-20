@@ -9,6 +9,8 @@ author: pwe
 subtitle: Make your tests more focused by moving sample data to pytest fixtures.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/lidTnXTFssM"
+obsoletes:
+  - /pycharm/tutorials/fixtures/
 ---
 
 Each test recreates `Player` and `Guardian` instances, which is repetitive and distracts from the test's purpose.
@@ -124,12 +126,12 @@ Navigation is a big win, for the same reason.
 <kbd>Cmd-Click</kbd> (macOS) on a fixture name and PyCharm jumps to the fixture definition.
 Same applies for hover which reveals type information.
 
-![Hover For Type Information](./hover.png)
+![Hover For Type Information](hover.png)
 
 <kbd>F1</kbd> (macOS) / <kbd>Ctrl+Q</kbd> (Windows/Linux) on the fixture shows an inline popup with more information about the fixture.
-Finally, you can ** Refactor | Rename** to change the fixture's name and usages.
+Finally, you can **Refactor | Rename** to change the fixture's name and usages.
 
-![Refactor Rename](./refactor_rename.png)
+![Refactor Rename](refactor_rename.png)
 
 This is all driven by PyCharm's type inferencing, which means we can autocomplete and give warnings in the test body, based on the structure of the fixture.
 In practice, this is a key part of "fail faster", meaning, find a problem before running (or even writing) a test.
