@@ -89,11 +89,10 @@ class PytestHomepage {
 					<ListingSection
 						title={`Latest tips, tutorials and links`}
 						resources={all}
-						separator={true}
 						includeCardFooter={true}
 						includeContentType={true}
 						//moreLink={`${channel.url}tips/`}
-						sectionExtraClass={"has-background-grey-lighter"}
+						//sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
 
