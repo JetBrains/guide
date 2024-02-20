@@ -22,7 +22,7 @@ In this step we tackle that problem by combining two great features: visual _tes
 
 _Note: In the next tutorial step we do some coding for this situation._
 
-# Guardian-less
+## Guardian-less
 
 Let's imagine we were working on our `test_primary_guardian` test and did something like this:
 
@@ -39,7 +39,7 @@ This error message is quite helpful, but let's imagine you're confused about it.
 "What do you mean, there's no primary guardian?"
 You'd like to explore a little to see what's going wrong.
 
-# Your `print()` Will Not Help You Here
+## Your `print()` Will Not Help You Here
 
 What's the number one debugger in Python?
 Alas, the humble `print` statement.
@@ -62,7 +62,7 @@ The debugger was meant for this.
 Fortunately PyCharm has a great "visual" debugger, tightly integrated with "visual testing."
 Let's use that.
 
-# Breakpoint, Step...Cha-Cha-Cha
+## Breakpoint, Step...Cha-Cha-Cha
 
 Remove the `print` statement and instead, click in the gutter beside the first line in that test function.
 This adds a red circle to indicate a breakpoint at `assert player_one.primary_guardian`:

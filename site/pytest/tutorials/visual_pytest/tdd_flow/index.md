@@ -19,7 +19,7 @@ Players have parents, also known as guardians.
 Let's make a module for a `Guardian` class.
 This time let's do it with a bit of test-driven development (TDD) and show how to get PyCharm into a good "flow" for TDD.
 
-# Starter Tests
+## Starter Tests
 
 First, create `src/laxleague/guardian.py` with an empty class:
 
@@ -48,7 +48,7 @@ The test runner now shows a tab with `pytest in tests`, with 2 tests passing:
 
 Not a major victory, but allows us to start inching forward:
 
-# TDD Flow
+## TDD Flow
 
 Now let's get ourselves into a TDD flow.
 We'd like to easily look at the code we are writing and the tests we providing against that code.
@@ -85,7 +85,7 @@ After two seconds, you'll see the tests re-run, automatically.
 That's a nice start to a good TDD flow.
 Let's write a failing test, then fix the implementation.
 
-# The Guardian
+## The Guardian
 
 Our `Guardian` needs a constructor that takes and stores `first_name` and a `last_name`.
 Change the first test in `tests/test_guardian.py`:

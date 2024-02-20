@@ -23,7 +23,7 @@ We'll show this in action while implementing:
 
 - A concept of the "primary guardian" of a player
 
-# Bulk Guardians
+## Bulk Guardians
 
 Players usually have more than one Guardian.
 When you have a list of Guardians, you might prefer a different method that lets you add them all at once.
@@ -68,7 +68,7 @@ In `player.py`, clone the existing `add_guardian` method, then change its argume
 We can now remove the `skip` marker and the test passes.
 Remember to remove the now-unused `pytest` import in `test_player.py` using Optimize Imports.
 
-# Some Typing Cleanup
+## Some Typing Cleanup
 
 Eager readers might have spotted a type hinting flaw: our code breaks the [Be liberal in what you accept, and conservative in what you return](https://m.oursky.com/type-hints-better-type-at-python-28de692c3a4b) rule.
 
@@ -94,7 +94,7 @@ Let's change our `add_guardians` to accept any kind of `Iterable`:
 
 Tests still pass and type checking now passes.
 
-# Primary Guardian
+## Primary Guardian
 
 For the second feature, let's use the same process: write a failing test, temporarily mark it with `skip`, then implement it and remove the mark.
 
@@ -126,7 +126,7 @@ _Tip: Use the `property` LiveTemplate in PyCharm to speed up the generation of a
 
 Remove the `@pytest.mark.skip` mark from `test_primary_guardian` and the test now passes.
 
-# Conclusion
+## Conclusion
 
 The `pytest.mark.skip` facility, with related `skipIf` and `xFail`, have a broad set of uses.
 As you mature in test writing, start to include other people, and have tests that execute in different environments, you'll put them to good use.

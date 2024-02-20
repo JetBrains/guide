@@ -18,7 +18,7 @@ Each test recreates `Player` and `Guardian` instances, which is repetitive and d
 
 In this tutorial step we convert our tests to use fixtures, which we then share between files using `conftest.py`.
 
-# Make a `Player` Once
+## Make a `Player` Once
 
 We have a `Player` instance that we currently make in four of our tests.
 It's the same instance with the same arguments.
@@ -81,7 +81,7 @@ After converting all the tests to use these fixtures, our `test_player.py` looks
 
 Our tests are now easier to reason about.
 
-# Sharing Fixtures with `conftest.py`
+## Sharing Fixtures with `conftest.py`
 
 Next we give `test_guardian.py` the same treatment:
 
@@ -116,7 +116,7 @@ Same for `test_player.py`:
 {% include "./demos/test_player.py" %}
 ```
 
-# Life With Fixtures
+## Life With Fixtures
 
 PyCharm has a number of useful features that make working with fixtures a breeze.
 We saw autocomplete.

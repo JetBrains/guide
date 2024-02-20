@@ -20,7 +20,7 @@ Since we have `Guardian` now, let's hook it up to allow adding a `Guardian` to a
 In this step we'll implement this while showing how visual testing can speed you up when you make a mistake.
 First: some housekeeping on our code.
 
-# Let's Do A `dataclass`
+## Let's Do A `dataclass`
 
 Python 3.7 shipped with a neat feature called dataclasses, available with a backport package to 3.6.
 Let's start by simplifying our two classes with dataclasses and showing a side benefit in test writing.
@@ -66,7 +66,7 @@ Verdict: TDD + (IDE + type hinting) == "fail faster."
 
 On to associating a `Guardian` with a `Player`.
 
-# Player with Guardians
+## Player with Guardians
 
 We'll follow TDD by writing a failing test first, then doing the implementation.
 This time, though, we'll make a typo, to show a feature of using PyCharm's visual testing.
@@ -121,7 +121,7 @@ Pretend for a moment that we made a typo. Do the following:
 When writing code under testing, you will _constantly_ make mistakes and generate exceptions.
 PyCharm's handy exception links let you jump right to the error.
 
-# The Benefit of Type Hints When Writing Tests
+## The Benefit of Type Hints When Writing Tests
 
 Type hints generate a lot of pushback in the world of Python.
 But when paired with an IDE like PyCharm, they help you "fail faster."
@@ -151,7 +151,7 @@ Instead, in the `Player` dataclass, let's signify that it is a list of `Guardian
 guardians: List[Guardian] = field(default_factory=list)
 ```
 
-## Note
+### Note
 
 As you type `List`, use <kbd>⌃␣</kbd> (macOS) / <kbd>Ctrl+Space</kbd> (Windows/Linux) to complete it, which also generates the import. Same for `Guardian`.
 

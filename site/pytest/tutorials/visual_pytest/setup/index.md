@@ -18,7 +18,7 @@ obsoletes:
 Python has projects and PyCharm does as well.
 In this tutorial step, let's make both, with a virtual environment, and set the project up to use `pytest`.
 
-# New Project
+## New Project
 
 We'll let the IDE guide us through the process.
 First, we use `File -> New Project` to make a new project, in a directory:
@@ -30,7 +30,7 @@ Expand the triangle if needed to set this up.
 
 After clicking `Create`, tell PyCharm to open the project in a new window.
 
-# Python Project
+## Python Project
 
 [Python packaging](https://packaging.python.org/tutorials/packaging-projects/) is, alas, a thorny topic, and we're going to make you do it for this tutorial.
 
@@ -67,7 +67,7 @@ This has two effects:
 Apologies for this `setup.py` hocus-pocus.
 Python has a sordid history on this, though it is getting better.
 
-# Give Me Some Source
+## Give Me Some Source
 
 But we don't have any source code yet.
 Let's put a file at `src/laxleague/player.py` containing an empty `Player` class:
@@ -76,7 +76,7 @@ Let's put a file at `src/laxleague/player.py` containing an empty `Player` class
 {% include "./demos/player.py" %}
 ```
 
-# Configure Testing
+## Configure Testing
 
 One last step...we need to tell PyCharm to use `pytest` for its built-in Python testing support.
 This happens automatically when we first open an existing project with `pytest` in the virtual environment.

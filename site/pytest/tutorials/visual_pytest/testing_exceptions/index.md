@@ -18,7 +18,7 @@ Let's show how to write a test that _recreates_ the problem -- _and_ ensures our
 
 We'll then refactor the code to detect that situation and return `None`, writing tests before doing the refactoring.
 
-# Testing Exceptions
+## Testing Exceptions
 
 We start, as always, with a test.
 
@@ -39,7 +39,7 @@ This test uses a special context manager facility in `pytest`, in which you run 
 You test will _fail_ if the exception is not raised.
 The context manager optionally lets you add `as exc` to then do some asserts after the block, about the nature of the exception value.
 
-# Return `None` Instead
+## Return `None` Instead
 
 x
 Perhaps we decide that raising an exception isn't a good pattern.
