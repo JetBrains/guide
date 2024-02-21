@@ -7,6 +7,8 @@ export type HorizontalResourceCardProps = {
 	resource: Resource;
 	columnClassName?: string;
 	includeCardFooter?: boolean;
+	showThumbnail?: boolean;
+	showAuthor?: boolean;
 };
 
 const HorizontalResourceCard = ({
@@ -14,6 +16,8 @@ const HorizontalResourceCard = ({
 	resource,
 	columnClassName,
 	includeCardFooter = true,
+	showThumbnail = true,
+	showAuthor = true,
 }: HorizontalResourceCardProps): JSX.Element => {
 	doesExist(references);
 	const { author, topics } = references;
@@ -26,11 +30,13 @@ const HorizontalResourceCard = ({
 			<div class="card is-equal-height has-box-outline has-box-hover is-shadowless has-background-white-bis">
 				<div class="card-content">
 					<article class="media">
-						<figure class="media-left m-0 mr-4 is-hidden-mobile is-contained image is-128x128">
-							<a href={url}>
-								<img class="" src={thumbnail} alt={title} />
-							</a>
-						</figure>
+						{showThumbnail && (
+							<figure class="media-left m-0 mr-4 is-hidden-mobile is-contained image is-80px">
+								<a href={url}>
+									<img width={140} height={80} src={thumbnail} alt={title} />
+								</a>
+							</figure>
+						)}
 						<div class="media-content">
 							<div class="has-position-relative">
 								<a
@@ -47,13 +53,13 @@ const HorizontalResourceCard = ({
 
 							{includeCardFooter && (
 								<footer>
-									<div>
-										<div class="tags my-2">
-											{topics.map((topic: Topic) => (
-												<TopicTag topic={topic} />
-											))}
-										</div>
+									<div class="tags my-2">
+										{topics.map((topic: Topic) => (
+											<TopicTag topic={topic} />
+										))}
+									</div>
 
+									{showAuthor && (
 										<div class="media author">
 											<div class="p-2 media-left">
 												<a href={author.url}>
@@ -79,7 +85,7 @@ const HorizontalResourceCard = ({
 												</div>
 											</div>
 										</div>
-									</div>
+									)}
 								</footer>
 							)}
 						</div>

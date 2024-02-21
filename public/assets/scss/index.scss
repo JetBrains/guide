@@ -78,3 +78,8 @@ pre > code {
     z-index: -1;
   }
 }
+
+.image.is-80px img {
+  height: 80px;
+  width: auto;
+}
