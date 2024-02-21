@@ -32,12 +32,11 @@ exclude:
     paths:
       - _includes
       - src/plugins/absolutePaths.ts
-  - name: QodanaSanity
-    paths:
-      - deployment/helm/guide-charts
+
 
 #Execute shell command before Qodana execution (Applied in CI/CD pipeline)
-#bootstrap: sh ./prepare-qodana.sh
+bootstrap: |
+  npm install
 
 #Install IDE plugins before Qodana execution (Applied in CI/CD pipeline)
 #plugins:
