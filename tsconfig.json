@@ -9,7 +9,8 @@
 		"jsx": "react-jsx",
 		"jsxImportSource": "jsx-async-runtime",
 		"allowSyntheticDefaultImports": true,
-		"skipLibCheck": true
+		"skipLibCheck": true,
+		"resolveJsonModule": true
 	},
 	"include": [
 		"src",

@@ -1,7 +1,6 @@
 // @ts-ignore
 import EleventyVitePlugin from "@11ty/eleventy-plugin-vite";
-// @ts-ignore
-import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+
 // @ts-ignore
 import pluginRss from "@11ty/eleventy-plugin-rss";
 import { registerIncludes } from "./_includes/config";
@@ -129,7 +128,6 @@ module.exports = function (eleventyConfig: any) {
 		.catch((e) => console.log(e));
 
 	eleventyConfig.addGlobalData("commandLineArgs", options);
-	eleventyConfig.addPlugin(syntaxHighlight);
 	eleventyConfig.addPlugin(pluginRss);
 
 	return {
