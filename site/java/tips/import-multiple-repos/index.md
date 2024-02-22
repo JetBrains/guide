@@ -2,13 +2,12 @@
 date: 2023-12-09
 title: Import multiple repositories
 topics:
-  - java
   - gradle
+  - java
   - maven
 author: md
 subtitle: Import multiple related repositories into one IntelliJ IDEA project
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Import project into IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=WAjGGd9LED4"

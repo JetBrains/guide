@@ -9,7 +9,6 @@ subtitle: >-
   Gain access to the database from the IDE and do all the work in the same
   window.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/ZdaWB9C4UdU?list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW"
 obsoletes:
   - /go/tips/mongodb-connect-from-ide

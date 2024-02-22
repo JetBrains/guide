@@ -13,7 +13,6 @@ topics:
 author: maartenba
 subtitle: Know everything there is to know about editing code.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 playlistItems:
   - /dotnet/tips/move-code/
   - /dotnet/tips/create-variable/

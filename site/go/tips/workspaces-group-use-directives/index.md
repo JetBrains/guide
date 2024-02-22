@@ -7,7 +7,6 @@ topics:
 author: ap
 subtitle: Merge multiple `use` directives in `go.work` into one directive.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

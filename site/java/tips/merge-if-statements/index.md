@@ -8,7 +8,6 @@ topics:
 author: hs
 subtitle: Experiment with your code without changing the semantics
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Intention actions
     href: "https://www.jetbrains.com/help/idea/intention-actions.html"

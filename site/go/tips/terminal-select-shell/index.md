@@ -6,7 +6,6 @@ topics:
 author: dlsniper
 subtitle: Run multiple shells from the same UI with ease
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=Vm7maCICcXk&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=154
 ---

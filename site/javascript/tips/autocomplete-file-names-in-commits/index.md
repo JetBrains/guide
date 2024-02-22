@@ -2,8 +2,8 @@
 date: 2023-01-27
 title: Autocomplete File Names in Commits
 topics:
-  - vcs
   - git
+  - vcs
 author: ed
 subtitle: How to reference filenames in a commit in WebStorm.
 seealso:
@@ -11,7 +11,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/guide/javascript/tips/rename-file-based-on-class-name/
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 

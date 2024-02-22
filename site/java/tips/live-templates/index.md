@@ -8,7 +8,6 @@ topics:
 author: md
 subtitle: Use Live Templates to auto-complete common code structures for you
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: "(video) IntelliJ IDEA. Helen's Take On: Writing Less Code"
     href: "https://www.youtube.com/watch?v=Sio9MdSqXZo"
@@ -19,7 +18,8 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Using Live Templates
     href: "https://www.jetbrains.com/help/idea/using-live-templates.html"
   - title: (documentation) IntelliJ IDEA Help - Creating Live Templates
-    href: "https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html"
+    href: >-
+      https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html
   - title: (documentation) IntelliJ IDEA Guide - Create a Custom Test Live Template
     href: ../../tutorials/writing-junit5-tests/live-templates-tip/
 video: "https://youtu.be/GGTzyfKhSb0"

@@ -9,7 +9,6 @@ subtitle: >-
   Keep writing code as you would and use the Postfix Completion to generate the
   boilerplate
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=3OYoV4mDC1s&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=67
 ---

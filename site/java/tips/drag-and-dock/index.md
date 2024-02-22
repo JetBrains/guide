@@ -9,7 +9,6 @@ topics:
 author: hs
 subtitle: You can move editor tabs around as required
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/QK_5IBkBMJQ"
 ---
 

@@ -8,7 +8,6 @@ topics:
 author: matkoch
 subtitle: Little helpers always at the right size!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./guide.webm
   width: 500

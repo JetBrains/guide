@@ -10,7 +10,6 @@ subtitle: >-
   Helps you to reduce the changes of a typing mistake when you're searching for
   packages
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Package Search build system support
     href: >-

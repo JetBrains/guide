@@ -6,7 +6,6 @@ topics:
 author: dlsniper
 subtitle: Ensure that the cancel function is always called
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=tfM9kzrR2Lc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=18
 ---

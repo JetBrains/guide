@@ -6,7 +6,6 @@ topics:
 author: pwe
 subtitle: Let your IDE add constructor arguments to your instance.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/cJ0tP9kxoYk"
 ---
 

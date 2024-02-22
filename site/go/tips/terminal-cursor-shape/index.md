@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: "Make the terminal your own, with the cursor shape you want"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

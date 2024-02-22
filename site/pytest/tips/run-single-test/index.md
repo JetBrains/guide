@@ -12,7 +12,6 @@ seealso:
   - title: Test Runner Tab
     href: "https://www.jetbrains.com/help/pycharm/test-runner-tab.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/-3SS0s-Y420"
 obsoletes:
   - /python/tips/run-single-test/

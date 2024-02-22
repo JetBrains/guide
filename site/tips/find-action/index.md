@@ -5,13 +5,15 @@ topics:
   - ide
   - platform
 author: hs
-subtitle: "If you want to do something, but don't remember the shortcut or menu option, use Find Action. Press ⇧⌘A (on Mac) or Control+Shift+A (on Windows/Linux)"
+subtitle: >-
+  If you want to do something, but don't remember the shortcut or menu option,
+  use Find Action. Press ⇧⌘A (on Mac) or Control+Shift+A (on Windows/Linux)
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/eZUe_44B3nk"
 seealso:
   - title: Find Action
-    href: "https://www.jetbrains.com/help/idea/discover-intellij-idea.html#find-action"
+    href: >-
+      https://www.jetbrains.com/help/idea/discover-intellij-idea.html#find-action
 obsoletes:
   - /go/tips/find-action/
   - /idea/tips/find-actions/

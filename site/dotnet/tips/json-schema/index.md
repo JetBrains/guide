@@ -9,7 +9,6 @@ topics:
 author: matkoch
 subtitle: The best way to work with JSON and YAML files!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./guide.webm
   width: 500

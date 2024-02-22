@@ -6,10 +6,8 @@ topics:
   - settings
   - tricks
 author: md
-subtitle: >-
-  Focus on your code window
+subtitle: Focus on your code window
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (tip) Distraction Free Mode Tip
     href: "https://www.jetbrains.com/guide/java/tips/distraction-free-mode/"

@@ -14,7 +14,6 @@ seealso:
   - title: Introducing the Learning Plugin for WebStorm
     href: "https://blog.jetbrains.com/webstorm/2020/04/learning-plugin-for-webstorm/"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 

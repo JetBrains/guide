@@ -12,7 +12,6 @@ seealso:
   - title: Testing JavaScript
     href: "https://www.jetbrains.com/help/webstorm/unit-testing-javascript.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

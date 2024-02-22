@@ -9,7 +9,6 @@ subtitle: >-
   Upgrade to using the latest Vue.js version knowing your IDE will be there to
   help you.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=GFmVCdhNYX4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=142
 ---

@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Enjoy working with Tailwind CSS from the comfort of your IDE.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=tEIGlCXU7Zc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=140
 ---

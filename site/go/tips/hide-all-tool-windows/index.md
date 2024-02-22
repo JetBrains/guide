@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Hide all the tool windows in the IDE
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=S7n7phgcb1o&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=66
 ---

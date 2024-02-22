@@ -12,7 +12,6 @@ seealso:
   - title: (documentation) GoLand Help - Vulnerability checker
     href: "https://www.jetbrains.com/help/go/vulnerability-checker.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/IAyrykPc8gc"
 ---
 

@@ -9,7 +9,6 @@ topics:
 author: khalidabuhakmeh
 subtitle: Detect common memory issues - automatically.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 640

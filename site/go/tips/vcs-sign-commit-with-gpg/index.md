@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Improve the security of your commits by using GPG keys
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=H63-Wa6DIfI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=152
 ---

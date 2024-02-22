@@ -12,7 +12,6 @@ seealso:
   - title: Manage changelists
     href: "https://www.jetbrains.com/help/webstorm/managing-changelists.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/sAXyAivHeb0"
 ---
 

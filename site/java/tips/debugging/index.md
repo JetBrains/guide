@@ -2,13 +2,12 @@
 date: 2023-12-06
 title: Debugging
 topics:
-  - tricks
-  - java
   - debugging
+  - java
+  - tricks
 author: md
 subtitle: Use the debugger to help you understand what your code is doing.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Debug code
     href: "https://www.jetbrains.com/help/idea/debugging-code.html"

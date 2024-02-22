@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Retract specific versions of your modules
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

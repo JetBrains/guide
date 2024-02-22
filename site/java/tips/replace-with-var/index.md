@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Use quick intentions to replace a local variable type with `var`
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: "(video) IntelliJ IDEA Pro Tips: Alt Enter"
     href: "https://www.youtube.com/watch?v=pWHgNm6aGdo"

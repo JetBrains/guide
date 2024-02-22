@@ -9,7 +9,6 @@ topics:
 author: matkoch
 subtitle: Your next VCS action at hand!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./guide.webm
   width: 500

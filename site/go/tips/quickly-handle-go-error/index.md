@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Handling errors is essential in any application
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=oguhQ4fneik&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=93
 ---

@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Ensure that comments have the width you like.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=gIa7-fXSu34&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=42
 ---

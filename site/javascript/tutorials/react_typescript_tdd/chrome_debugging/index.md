@@ -9,7 +9,6 @@ subtitle: >-
   Sometimes you need to debug in the browser. Use the IDE to remote control
   Chrome during debugging.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/dvmZi_DWu9I"
 ---
 

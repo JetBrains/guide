@@ -7,7 +7,6 @@ topics:
 author: tg
 subtitle: Inspections can guide us to use new Java features
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/qCfuQkddCEM"
 ---
 

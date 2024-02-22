@@ -8,7 +8,6 @@ topics:
 author: dlsniper
 subtitle: See how to use code completion inside strings and other places
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=B_jO9p3zxSI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=14
 ---

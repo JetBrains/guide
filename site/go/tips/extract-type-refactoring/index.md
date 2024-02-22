@@ -9,7 +9,6 @@ subtitle: >-
   Extract a type into its own definition and improve the  reusability in your
   code
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=fFJi3OSSWns&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=44
 ---

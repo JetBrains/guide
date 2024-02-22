@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Complete any word any from the current open files.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=wUKshbVeJLU&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=36
 ---

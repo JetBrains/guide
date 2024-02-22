@@ -29,16 +29,10 @@
   @extend %loader;
 }
 
-// https://prince.dev/highlight-with-react
-pre.prism-code div.token-line.highlight-line {
-  background-color: rgb(53, 59, 69);
-  display: block;
-  margin-right: -1em;
-  margin-left: -1em;
-  padding-right: 1em;
-  padding-left: 0.75em;
-  border-left: 0.3em solid #f99;
+pre > code {
+  tab-size: 2;
 }
+
 
 .thumbnail-container {
   position: relative;
@@ -83,4 +77,9 @@ pre.prism-code div.token-line.highlight-line {
     position: absolute;
     z-index: -1;
   }
+}
+
+.image.is-80px img {
+  height: 80px;
+  width: auto;
 }

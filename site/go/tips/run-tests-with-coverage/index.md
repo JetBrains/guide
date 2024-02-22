@@ -13,7 +13,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/go/configuring-code-coverage-measurement.html
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=yNTB96ybx6k&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=148
 ---

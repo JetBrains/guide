@@ -8,7 +8,6 @@ subtitle: >-
   Attach to the console of a process running inside a container of the selected
   pod.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=5EvE7uZ38gU&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=76
 ---

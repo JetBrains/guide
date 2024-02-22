@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Duplicate the current line or a selected block
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Basic editing
     href: >-

@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Move around the files you're working on quickly with keyboard shortcuts
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Navigate with the caret
     href: >-

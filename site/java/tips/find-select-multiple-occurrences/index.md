@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Select multiple occurrences of the same word and change them all at once
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Multiple cursors and selection ranges
     href: "https://www.jetbrains.com/help/idea/multicursor.html?#multiple_words"

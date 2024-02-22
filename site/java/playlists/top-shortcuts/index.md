@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Our handpicked top shortcuts
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 playlistItems:
   - /java/tips/context-actions/
   - /tips/search-everywhere/

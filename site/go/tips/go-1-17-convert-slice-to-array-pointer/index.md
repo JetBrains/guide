@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: "With Go 1.17, it is possible to covert a slice to an array pointer"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./card.png
 ---
 

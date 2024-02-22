@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Remove all the redundant parenthesis and other unneeded code before commit
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=emXVGjkIoz4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=17
 ---

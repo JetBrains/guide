@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Use CamelCase to find what you need faster
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Top 5 IntelliJ IDEA Navigation Shortcuts
     href: "https://www.youtube.com/watch?v=crnEBqbBWuo"

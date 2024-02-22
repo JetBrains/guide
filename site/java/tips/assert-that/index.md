@@ -8,7 +8,6 @@ topics:
 author: hs
 subtitle: Use quick intentions to manage imports
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Auto import
     href: "https://www.jetbrains.com/help/idea/creating-and-optimizing-imports.html"

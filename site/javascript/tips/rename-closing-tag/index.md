@@ -10,7 +10,6 @@ seealso:
   - title: Smart Keys
     href: "https://www.jetbrains.com/help/webstorm/settings-smart-keys.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

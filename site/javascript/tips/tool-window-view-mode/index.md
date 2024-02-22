@@ -12,7 +12,6 @@ seealso:
     href: >-
       https://blog.jetbrains.com/webstorm/2016/01/customizing-the-webstorm-layout/
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

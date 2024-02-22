@@ -83,7 +83,7 @@ This means it can use the [template variables available in Sphinx](https://www.s
 
 First, let's get the page title into the HTML `<title>`:
 
-```jinja2
+```jinja
 <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
 ```
 

@@ -10,7 +10,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/webstorm/using-code-editor.html#editor_basic_usage
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

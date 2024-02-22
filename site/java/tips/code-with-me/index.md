@@ -6,7 +6,6 @@ topics:
 author: md
 subtitle: Collaborate remotely using Code With Me
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Getting started with Code With Me
     href: "https://www.jetbrains.com/help/idea/code-with-me.html"

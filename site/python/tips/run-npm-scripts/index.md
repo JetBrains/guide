@@ -11,7 +11,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/installing-and-removing-external-software-using-node-package-manager.html#ws_npm_run_debug_scripts_from_npm_tool_window
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/Nv5vO2loJ_c"
 ---
 

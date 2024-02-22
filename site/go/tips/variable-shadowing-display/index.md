@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Easily spot where you shadow variables that you did not intend to
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

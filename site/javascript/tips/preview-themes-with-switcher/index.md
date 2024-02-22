@@ -12,7 +12,6 @@ seealso:
   - title: Switch between Schemes
     href: "https://www.jetbrains.com/help/webstorm/switching-between-schemes.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

@@ -8,12 +8,12 @@ topics:
 author: md
 subtitle: Extend and shrink selection
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Editor Tips and Tricks in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=JEpeHNsWIMk"
   - title: (documentation) IntelliJ IDEA Help - Select code constructs
-    href: "https://www.jetbrains.com/help/idea/working-with-source-code.html#editor_code_selection"
+    href: >-
+      https://www.jetbrains.com/help/idea/working-with-source-code.html#editor_code_selection
 video: "https://youtu.be/KFqqOP89XJA"
 ---
 

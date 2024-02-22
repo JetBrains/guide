@@ -8,7 +8,6 @@ topics:
 author: pwe
 subtitle: Use the visual debugger in the IDE for smarter TDD.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/r1kwXZnO8gw"
 ---
 

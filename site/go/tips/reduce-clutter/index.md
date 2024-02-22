@@ -10,7 +10,6 @@ seealso:
   - title: (documentation) GoLand Help - Configuring Menus and Toolbars
     href: "https://www.jetbrains.com/help/go/configuring-menus-and-toolbars.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=6UheZkHpTeo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=91
 ---

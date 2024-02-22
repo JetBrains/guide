@@ -10,7 +10,6 @@ subtitle: >-
   The top-right corner of your editor shows you information about the state of
   your class
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (blog) IntelliJ IDEA blog Inspections Widget
     href: "https://blog.jetbrains.com/tag/inspections-widget/"

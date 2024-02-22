@@ -8,9 +8,8 @@ subtitle: >-
   Space is an all-in-one collaboration tool, including chat, code repository,
   code review, issue tracking, and much more.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
-  - title:
+  - title: >-
       (video) IntelliJ IDEA + Space = Complete Environment for Collaborative
       Software Development
     href: "https://www.youtube.com/watch?v=iHSbWIW48uM"

@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Navigate to and from a test subject like a method or function
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=DV_OBMaXvMc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=67
 ---

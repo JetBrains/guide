@@ -10,7 +10,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/adding-deleting-and-moving-lines.html
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://www.youtube.com/watch?v=TxlOhgpiKhY"
 ---
 

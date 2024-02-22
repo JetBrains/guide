@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: "Compare text, files or directories and even use the clipboard contents"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=VBhXtk11K3M&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=12
 ---

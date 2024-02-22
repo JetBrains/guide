@@ -9,7 +9,6 @@ topics:
 author: matkoch
 subtitle: Start typing anywhere to search!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./guide.webm
   width: 500

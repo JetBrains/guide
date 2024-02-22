@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Turn show line numbers off and on
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Find a line or a column
     href: >-

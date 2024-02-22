@@ -7,10 +7,10 @@ topics:
 author: md
 subtitle: Locate an opened file in the project structure
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Navigate with the Select In popup
-    href: "https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#navigate_in_project_view"
+    href: >-
+      https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#navigate_in_project_view
 video: "https://youtu.be/gXgWCRdHb5c"
 ---
 

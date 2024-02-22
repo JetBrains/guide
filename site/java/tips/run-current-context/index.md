@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Run just a file or a script
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Run applications
     href: "https://www.jetbrains.com/help/idea/running-applications.html"

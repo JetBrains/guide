@@ -15,7 +15,6 @@ seealso:
   - title: Navigation in Source Code
     href: "https://www.jetbrains.com/help/pycharm/navigation-in-source-code.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/1QoP0U8xg98"
 ---
 

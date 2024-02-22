@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: "Find exactly what you are looking for, even if you removed it"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=eViFodqP-bM&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=120
 ---

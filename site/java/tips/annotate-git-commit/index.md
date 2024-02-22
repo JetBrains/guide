@@ -7,12 +7,14 @@ topics:
 author: md
 subtitle: Look at the commit a change was part of from Annotate with Git Blame
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Investigate changes in Git repository
     href: "https://www.jetbrains.com/help/idea/investigate-changes.html"
-  - title: (documentation) IntelliJ IDEA Help - Locate code author (Annotate with Git Blame)
-    href: "https://www.jetbrains.com/help/idea/investigate-changes.html#annotate_blame"
+  - title: >-
+      (documentation) IntelliJ IDEA Help - Locate code author (Annotate with Git
+      Blame)
+    href: >-
+      https://www.jetbrains.com/help/idea/investigate-changes.html#annotate_blame
 video: "https://youtu.be/G_H2K5v3YNk"
 ---
 

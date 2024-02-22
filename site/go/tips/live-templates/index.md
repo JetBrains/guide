@@ -8,7 +8,6 @@ topics:
 author: dlsniper
 subtitle: Add your own completion items via code snippets
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=BnfxSUFD6-s&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=53
 ---

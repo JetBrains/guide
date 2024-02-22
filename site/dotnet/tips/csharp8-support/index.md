@@ -11,7 +11,6 @@ topics:
 author: matkoch
 subtitle: Master all the C# 8 language features!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./guide.webm
   width: 500

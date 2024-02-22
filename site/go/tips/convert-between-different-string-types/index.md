@@ -10,7 +10,6 @@ subtitle: >-
   Convert strings that are surrounded by backticks to double-quoted ones and
   vice-versa
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

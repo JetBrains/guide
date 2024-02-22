@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Converting a JSON response to a Go type has never been faster than this
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=SQAWOeLYwr4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=24
 ---

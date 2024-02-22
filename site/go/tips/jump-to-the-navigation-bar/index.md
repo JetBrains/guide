@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: "Get an overview of your current location, and the project itself"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=5d0Iq_UxMeg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=58
 ---

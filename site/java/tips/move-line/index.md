@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Move a line throughout your class
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Editor Tips and Tricks in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=JEpeHNsWIMk"

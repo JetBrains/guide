@@ -9,7 +9,6 @@ seealso:
   - title: Renaming a file or directory
     href: "https://www.jetbrains.com/help/pycharm/rename-refactorings.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/IqPm9RYTNBM"
 ---
 

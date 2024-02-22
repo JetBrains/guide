@@ -8,7 +8,6 @@ topics:
 author: md
 subtitle: How to use the Run Anything dialog
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Run Anything
     href: "https://www.jetbrains.com/help/idea/running-anything.html"

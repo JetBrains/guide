@@ -6,7 +6,6 @@ topics:
 author: tg
 subtitle: Perform code reviews without leaving the IDE.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: >-
       (video)IntelliJ IDEA + Space = Complete Environment for Collaborative

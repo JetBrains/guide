@@ -8,7 +8,6 @@ topics:
 author: dlsniper
 subtitle: Jump to the specific test case from the results window
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=C_eFXDogQ4g&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=79
 ---

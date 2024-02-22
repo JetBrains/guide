@@ -11,7 +11,6 @@ topics:
 author: khalidabuhakmeh
 subtitle: Introduce variables the way you like!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 640

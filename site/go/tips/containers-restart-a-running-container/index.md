@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: "Start with a container from zero, faster"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=rHywojkCvIE&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=115
 ---

@@ -2,15 +2,14 @@
 date: 2021-06-11
 title: Monitor Incoming and Outgoing Commits
 topics:
-  - vcs
   - git
+  - vcs
 author: ed
 subtitle: Want to know if your branch has new commits? Here's how.
 seealso:
   - title: Managing branches
     href: "https://www.jetbrains.com/help/webstorm/manage-branches.html"
-thumbnail: ./thumbnail.jpeg
-cardThumbnail: ./card.png
+thumbnail: ./card.png
 screenshot: ./card.jpeg
 ---
 

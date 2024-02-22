@@ -9,7 +9,6 @@ seealso:
   - title: Working with ESLint in WebStorm
     href: "https://www.jetbrains.com/help/webstorm/eslint.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

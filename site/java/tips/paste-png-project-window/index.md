@@ -9,7 +9,6 @@ subtitle: >-
   If you have an image on your clipboard you can paste it straight into the
   Project Window
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Markdown
     href: "https://www.jetbrains.com/help/idea/markdown.html"

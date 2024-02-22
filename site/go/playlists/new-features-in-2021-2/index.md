@@ -10,7 +10,6 @@ topics:
   - web
 author: dlsniper
 subtitle: A selection of useful features from GoLand 2021.2
-cardThumbnail: ./card.png
 thumbnail: ./thumbnail.png
 playlistItems:
   - /go/tips/go-1-17-convert-slice-to-array-pointer/
@@ -29,8 +28,7 @@ playlistItems:
   - /go/tips/vcs-run-tests-before-commit/
   - /go/tips/vcs-run-inspections-before-commit/
   - /go/tips/vcs-cleanup-code-before-commit/
-  - >-
-    /go/tips/containers-quick-documentation-in-dockerfile-and-docker-compose/
+  - /go/tips/containers-quick-documentation-in-dockerfile-and-docker-compose/
   - /go/tips/containers-restart-a-running-container/
   - /go/tips/containers-pause-and-unpause/
   - /go/tips/containers-port-mapping-inspection/

@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Quickly inspect APIs and make HTTP requests to services in a reusable manner
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=zDCaWadGP74&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=16&t=0s
 ---

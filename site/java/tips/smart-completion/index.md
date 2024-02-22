@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Get type aware completion in your code
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) IntelliJ IDEA. Code Completion
     href: "https://www.youtube.com/watch?v=jTud6GIqVgk"

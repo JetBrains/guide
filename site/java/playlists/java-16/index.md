@@ -7,7 +7,6 @@ topics:
 author: tg
 subtitle: Get up to speed on Java 16 with our top tips.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 playlistItems:
   - /java/tips/create-record/
   - /java/tips/convert-to-record/

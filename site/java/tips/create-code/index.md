@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: IntelliJ IDEA will help create code for you
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Intention actions
     href: "https://www.jetbrains.com/help/idea/intention-actions.html"

@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Using language injection to work with Regex
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Language injections
     href: "https://www.jetbrains.com/help/idea/language-injections-settings.html"

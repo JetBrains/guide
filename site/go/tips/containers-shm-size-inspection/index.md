@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Check if the shm_size values contain any errors
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=kIY0Bvn6wS4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=60
 ---

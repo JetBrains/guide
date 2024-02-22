@@ -8,7 +8,6 @@ topics:
 author: sf
 subtitle: Allows you to filter out unstable versions of dependencies easily
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/oSvjckoIUbM"
 ---
 

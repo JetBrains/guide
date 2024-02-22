@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Work on your frontend then switch to the browser to see how it looks like
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=2WyNe9P_tXE&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=88
 ---

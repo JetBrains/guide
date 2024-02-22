@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Get up to speed on Java 17 with our top tips.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 playlistItems:
   - /java/tips/create-a-correct-sealed-child/
   - /java/tips/create-a-correct-sealed-parent/

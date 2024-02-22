@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Use quick intentions to remove explicit types
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: "(video) IntelliJ IDEA Pro Tips: Alt Enter"
     href: "https://www.youtube.com/watch?v=pWHgNm6aGdo"

@@ -10,7 +10,6 @@ seealso:
   - title: (documentation) GoLand Help - Creating custom structure tags
     href: "https://www.jetbrains.com/help/go/settings-live-templates.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=VMuwBmWW2QA&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=37
 ---

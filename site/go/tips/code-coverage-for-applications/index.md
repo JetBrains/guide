@@ -2,13 +2,12 @@
 date: 2023-11-22
 title: Code coverage for applications
 topics:
-  - testing
   - coverage
   - go
+  - testing
 author: ap
 subtitle: Track code execution and identify dead code effectively
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 ---
 
 Code coverage enables you to see exactly what parts of your code are executed during single or multiple runs. It's an invaluable asset for detecting dead code, ensuring that every line of your code serves a purpose.

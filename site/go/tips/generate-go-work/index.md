@@ -12,7 +12,6 @@ seealso:
   - title: (documentation) GoLand Help - Go workspaces
     href: "https://www.jetbrains.com/help/go/2022.3/go-workspaces.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/tUkadNzfrl8"
 ---
 

@@ -40,7 +40,11 @@ export function TutorialLayout(
 	const listing = (
 		<Fragment>
 			{tutorial.tutorialSteps.map((resource) => (
-				<HorizontalResourceCard resource={resource} />
+				<HorizontalResourceCard
+					resource={resource}
+					showAuthor={false}
+					showThumbnail={true}
+				/>
 			))}
 		</Fragment>
 	);

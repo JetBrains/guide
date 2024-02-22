@@ -9,7 +9,6 @@ subtitle: >-
   Gain access to the database from the IDE and do all the work in the same
   window.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: IntelliJ IDEA - Database Tool Window
     href: "https://www.jetbrains.com/help/idea/database-tool-window.html"

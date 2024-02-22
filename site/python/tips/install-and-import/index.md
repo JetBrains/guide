@@ -10,7 +10,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/ulT1LSWFqqE"
 ---
 

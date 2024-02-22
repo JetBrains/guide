@@ -9,7 +9,6 @@ topics:
 author: matkoch
 subtitle: One more chance to leave your mouse aside!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./guide.webm
   width: 500

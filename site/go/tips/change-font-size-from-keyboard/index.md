@@ -11,7 +11,6 @@ topics:
 author: ap
 subtitle: Use a keyboard shortcut to change the font size in the editor.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/PmYnzaOB1Uo"
 ---
 

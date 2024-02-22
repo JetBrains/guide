@@ -8,7 +8,6 @@ topics:
 author: dlsniper
 subtitle: Write benchmarks quicker thanks to the builtin bench live template.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=1NI7e0c_QtY&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=54
 ---

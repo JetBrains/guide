@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Search text in Local History
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: "(video) IntelliJ IDEA Pro Tips: Local History"
     href: "https://www.youtube.com/watch?v=15uwUgqaEE4"

@@ -6,7 +6,6 @@ topics:
 author: md
 subtitle: Turn show line numbers off and on
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Scratch files
     href: "https://www.jetbrains.com/help/idea/scratches.html"

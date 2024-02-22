@@ -4,12 +4,13 @@ title: Create a function in another package
 topics:
   - editing
   - go
-  - refactoring
   - quick-fixes
+  - refactoring
 author: ap
-subtitle: Type a non-existing function name and generate its implementation in a package of your choice
+subtitle: >-
+  Type a non-existing function name and generate its implementation in a package
+  of your choice
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 ---
 
 GoLand introduces an innovative feature: the _Create Function Quick-Fix_. This quick-fix significantly accelerates the development process by allowing you to type a non-existing function name and then effortlessly generate its implementation in a package of your choice.

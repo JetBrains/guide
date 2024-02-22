@@ -10,7 +10,6 @@ subtitle: >-
   You can render Javadocs directly in the editor including HTML tags, images and
   links.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) Javadocs
     href: "https://www.jetbrains.com/help/idea/working-with-code-documentation.html"

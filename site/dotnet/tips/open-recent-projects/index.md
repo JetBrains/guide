@@ -8,7 +8,6 @@ topics:
 author: khalidabuhakmeh
 subtitle: Quick ways to navigate to other solutions
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./open-recent-projects.webm
   width: 540

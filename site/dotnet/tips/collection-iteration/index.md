@@ -10,7 +10,6 @@ topics:
 author: matkoch
 subtitle: There's no faster way to iterate!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./guide.webm
   width: 643

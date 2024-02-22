@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Take control of when go.mod files are refreshed
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=wynrU83Ajns&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=52
 ---

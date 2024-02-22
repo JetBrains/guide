@@ -8,7 +8,6 @@ topics:
 author: ap
 subtitle: Check and replace empty interfaces that are used as types or type constraints.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

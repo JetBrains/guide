@@ -13,7 +13,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/webstorm/installing-and-removing-external-software-using-node-package-manager.html
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 

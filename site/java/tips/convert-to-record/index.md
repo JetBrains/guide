@@ -8,7 +8,6 @@ topics:
 author: tg
 subtitle: Use inspections to convert classes to Java 16 records
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Using Java 15 with IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=IvytsoAUEZA"

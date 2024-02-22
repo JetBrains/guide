@@ -8,7 +8,6 @@ topics:
 author: dlsniper
 subtitle: Exclude certain paths from auto-import and completion
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=HLRiJvadfXo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=46
 ---

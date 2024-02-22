@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Select the current file in the Project or Changes view and more
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=X-e4Vnm4Yy4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=155
 ---

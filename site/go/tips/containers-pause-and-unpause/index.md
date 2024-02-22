@@ -9,7 +9,6 @@ subtitle: >-
   Test what happens to microservices when they try to talk with an unavailable
   service
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=HjBvuW0XNN8&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=98
 ---

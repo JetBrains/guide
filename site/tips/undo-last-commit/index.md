@@ -2,8 +2,8 @@
 date: 2022-10-20
 title: Undo Last Commit
 topics:
-  - vcs
   - git
+  - vcs
 author: pwe
 subtitle: Undo a commit...without misery.
 seealso:
@@ -12,7 +12,6 @@ seealso:
   - title: Manage changelists
     href: "https://www.jetbrains.com/help/idea/managing-changelists.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/sAXyAivHeb0"
 obsoletes:
   - /dotnet/tips/undo-last-commit/

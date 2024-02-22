@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Helps you to generate commonly used code constructs
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) CodeGeneration in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=btqCYUc3nFE"

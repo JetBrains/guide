@@ -11,7 +11,6 @@ seealso:
   - title: MDX plugin
     href: "https://plugins.jetbrains.com/plugin/14944-mdx"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./tip.jpeg
 ---
 

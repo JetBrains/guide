@@ -8,7 +8,6 @@ topics:
 author: dlsniper
 subtitle: Import a module even if it was imported or used in your project
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=cPn30TtZRO0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=30
 ---

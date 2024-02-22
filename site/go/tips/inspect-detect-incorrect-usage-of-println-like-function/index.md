@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: "Formatting functions from packages such as pkg/errors, logrus or zap"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

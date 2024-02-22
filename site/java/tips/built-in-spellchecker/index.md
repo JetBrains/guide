@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: IntelliJ IDEA can spell check and fix errors for you
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Spellchecking
     href: "https://www.jetbrains.com/help/idea/spellchecking.html"

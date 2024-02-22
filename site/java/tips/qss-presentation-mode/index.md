@@ -6,7 +6,6 @@ topics:
 author: md
 subtitle: Enter and Exit Presentation Mode using Quick Switch Scheme
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - IDE viewing modes
     href: "https://www.jetbrains.com/help/idea/ide-viewing-modes.html"

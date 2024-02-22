@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: IntelliJ IDEA highlights terminal commands you can run in IntelliJ IDEA
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (tutorial) IntelliJ IDEA Guide - Terminal Commands
     href: >-

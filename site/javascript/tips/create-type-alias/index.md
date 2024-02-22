@@ -13,7 +13,6 @@ seealso:
     href: >-
       https://blog.jetbrains.com/webstorm/2015/06/10-webstorm-shortcuts-you-need-to-know/
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

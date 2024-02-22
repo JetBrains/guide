@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Run configurations also have code completion capabilities.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=dyUsxQJLFZQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=13
 ---

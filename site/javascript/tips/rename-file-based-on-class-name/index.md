@@ -9,7 +9,6 @@ seealso:
   - title: Refactoring source code
     href: "https://www.jetbrains.com/help/webstorm/refactoring-source-code.html#"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

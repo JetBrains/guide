@@ -8,7 +8,6 @@ topics:
 author: matkoch
 subtitle: Focus on your code!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./guide.webm
   width: 500

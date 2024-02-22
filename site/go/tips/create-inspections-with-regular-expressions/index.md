@@ -11,7 +11,6 @@ seealso:
   - title: (documentation) GoLand Help - Create custom inspections
     href: "https://www.jetbrains.com/help/go/creating-custom-inspections.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

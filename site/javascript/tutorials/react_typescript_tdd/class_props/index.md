@@ -10,7 +10,6 @@ subtitle: >-
   Make a simple class component with a single prop, again with a TypeScript
   interface describing the props.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/HYmoeUF9ZH0"
 ---
 
@@ -56,7 +55,7 @@ Good, we're doing TDD!
 
 Now create a file `Counter.tsx`. We'll make it a very simple class to start:
 
-```typescript
+```tsx
 import React, { Component } from "react";
 
 export class Counter extends Component {
@@ -126,7 +125,7 @@ The type definition says `label` can be optional.
 Can we define a default prop value, as we did for functions?
 Yes, and [a clever approach](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/default_props/) using destructuring and defaults comes into play:
 
-```typescript
+```tsx
 export class Counter extends Component<CounterProps> {
 	render() {
 		const { label = "Count" } = this.props;
@@ -154,14 +153,14 @@ Let's now use it in our app and, at long last, view it in the browser.
 
 Open `App.tsx` and change the TSX that in `render`:
 
-```typescript
-render() {
-    return (
-        <div>
-            <Heading/>
-            <Counter label={'Current'}/>
-        </div>
-    );
+```tsx
+function render() {
+	return (
+		<div>
+			<Heading />
+			<Counter label={"Current"} />
+		</div>
+	);
 }
 ```
 

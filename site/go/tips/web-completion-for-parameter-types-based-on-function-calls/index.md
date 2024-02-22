@@ -9,7 +9,6 @@ subtitle: >-
   Better code completion makes working on modern web frontends faster and more
   enjoyable
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=UKtT9tbt0Xg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=28
 ---

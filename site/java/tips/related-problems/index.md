@@ -3,12 +3,11 @@ date: 2023-12-07
 title: Related problems
 topics:
   - editing
-  - tricks
   - navigation
+  - tricks
 author: md
 subtitle: Use IntelliJ IDEA's inlay hints to navigate to Related Problems
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Inlay hints
     href: "https://www.jetbrains.com/help/idea/inlay-hints.html"

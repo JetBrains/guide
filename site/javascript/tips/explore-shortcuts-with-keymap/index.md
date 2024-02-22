@@ -9,7 +9,6 @@ seealso:
   - title: Mastering keyboard shortcuts
     href: "https://www.jetbrains.com/help/webstorm/mastering-keyboard-shortcuts.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: The IDE is aware of targeted Go versions
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/vUt-WAYY4cw"
 ---
 

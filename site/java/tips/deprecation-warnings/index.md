@@ -8,7 +8,6 @@ subtitle: >-
   IntelliJ IDEA will warn you if you're using deprecated methods, and they will
   be shown with a strikethrough if they're marked for removal
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 

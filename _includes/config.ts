@@ -13,7 +13,7 @@ import { Playlist } from "./resources/playlist/PlaylistModels";
 import { dumpSchemas } from "../src/schemas";
 import * as fs from "fs";
 import MarkdownIt from "markdown-it";
-import prism from "markdown-it-prism";
+import { getHighlighter, bundledLanguages } from "shiki";
 import {
 	getResource,
 	getResources,
@@ -26,6 +26,7 @@ import { Channel } from "./resources/channel/ChannelModels";
 import { RESOURCE_TYPES } from "../src/resourceType";
 import { Link } from "./resources/link/LinkModels";
 import path from "upath";
+import { darkTheme } from "jetbrains-ide-themes";
 
 export type ResourceMapType = {
 	channel: Channel;
@@ -110,9 +111,7 @@ export async function registerIncludes(
 		html: true,
 		breaks: false,
 		linkify: true,
-	})
-		.use(prism)
-		.enable("table");
+	}).enable("table");
 
 	// custom markdown renderer
 	eleventyConfig.setLibrary("md", md);
@@ -122,4 +121,19 @@ export async function registerIncludes(
 			return md.render(content);
 		}
 	);
+	eleventyConfig.on("eleventy.before", async () => {
+		const highlighter = await getHighlighter({
+			themes: [darkTheme],
+			langs: Object.keys(bundledLanguages),
+		});
+		eleventyConfig.amendLibrary("md", (mdLib: any) =>
+			mdLib.set({
+				highlight: (code: string, lang: string) =>
+					highlighter.codeToHtml(code, { lang, theme: "Jetbrains Dark Theme" }),
+			})
+		);
+	});
+
+	// This is a hack to let eleventy know that we touch that library
+	eleventyConfig.amendLibrary("md", () => {});
 }

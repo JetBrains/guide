@@ -8,7 +8,6 @@ subtitle: >-
   With the LiveEdit plugin, open HTML and CSS in Chrome, over HTTP, and see
   updates as you save.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/xf90Ko64hRc"
 ---
 

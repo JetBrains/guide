@@ -10,7 +10,6 @@ subtitle: >-
   Use VCS options in IntelliJ IDEA to resolve merge conflicts visually in the
   editor
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Resolving Merge Conflicts
     href: "https://www.jetbrains.com/help/idea/resolving-conflicts.html"

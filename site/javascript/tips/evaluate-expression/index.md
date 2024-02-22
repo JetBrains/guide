@@ -12,7 +12,6 @@ seealso:
   - title: WebStorm documentation - Debugging code
     href: "https://www.jetbrains.com/help/webstorm/debugging-code.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Transform an expression into another one.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=93OeJLuLoKA&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=99
 ---

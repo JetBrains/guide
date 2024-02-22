@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Use quick intentions to remove redundant code
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Code inspections
     href: "https://www.jetbrains.com/help/idea/code-inspection.html"

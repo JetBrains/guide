@@ -11,7 +11,6 @@ seealso:
   - title: Postfix completion in WebStorm
     href: "https://www.jetbrains.com/help/webstorm/settings-postfix-completion.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

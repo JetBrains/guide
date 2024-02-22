@@ -10,7 +10,6 @@ seealso:
   - title: DataGrip Create Diagrams
     href: "https://www.jetbrains.com/help/datagrip/creating-diagrams.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/_vPIrbFm7Hs"
 obsoletes:
   - /pycharm/tips/database-visualization

@@ -8,7 +8,6 @@ topics:
 author: sf
 subtitle: Use the Dependencies tool window to manage your dependencies
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Package Search
     href: "https://www.jetbrains.com/help/idea/package-search.html"

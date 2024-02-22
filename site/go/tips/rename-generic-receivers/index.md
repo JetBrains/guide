@@ -9,7 +9,6 @@ topics:
 author: ap
 subtitle: Rename generic receivers along with a generic struct
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

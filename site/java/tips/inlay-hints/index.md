@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Inlay hints provide additional information about your code
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Inlay hints
     href: "https://www.jetbrains.com/help/idea/inlay-hints.html"

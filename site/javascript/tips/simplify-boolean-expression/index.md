@@ -10,7 +10,6 @@ seealso:
   - title: WebStorm 2019.2 EAP
     href: "https://blog.jetbrains.com/webstorm/2019/07/webstorm-2019-2-eap-6/"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

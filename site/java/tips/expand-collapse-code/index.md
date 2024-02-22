@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Quickly view specific parts of a class by expanding or collapsing code
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/ymtOzsmZr0E"
 ---
 

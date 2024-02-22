@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Cleanup go.mod files and keep them lean
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=ITCnQrd7Fco&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=32
 ---

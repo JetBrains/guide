@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Inspect the goroutines and memory of your application as it runs
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=tvS2FNp3IR0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=48
 ---

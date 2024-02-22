@@ -13,7 +13,6 @@ seealso:
   - title: Debugging Angular apps created with Angular CLI
     href: "https://blog.jetbrains.com/webstorm/2017/01/debugging-angular-apps/"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

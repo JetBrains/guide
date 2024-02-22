@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Use Find Usages to search for references in your code base
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Search for usages
     href: "https://www.jetbrains.com/help/idea/find-highlight-usages.html"

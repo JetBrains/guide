@@ -2,8 +2,8 @@
 date: 2022-10-27
 title: Use Local History to Avoid Disaster
 topics:
-  - vcs
   - git
+  - vcs
 author: pwe
 subtitle: >-
   Use the IDE's built-in history facility to recover changes when VCS can't help
@@ -12,9 +12,9 @@ seealso:
   - title: Local History
     href: "https://www.jetbrains.com/help/idea/local-history.html"
   - title: Retention period for Local History
-    href: "https://www.jetbrains.com/help/idea/local-history.html#local-history-retention"
+    href: >-
+      https://www.jetbrains.com/help/idea/local-history.html#local-history-retention
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/qBxu_PdDHFw"
 obsoletes:
   - /dotnet/tips/local-history/

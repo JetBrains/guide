@@ -6,7 +6,6 @@ topics:
 author: sf
 subtitle: Finding packages without the need for an IDE
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/0220aPv5ruI"
 ---
 

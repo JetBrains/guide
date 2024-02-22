@@ -10,7 +10,6 @@ seealso:
   - title: (documentation) GoLand Help - Viewing Inline Documentation
     href: "https://www.jetbrains.com/help/go/inline-documentation.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=vGuov3VZeQw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=93
 ---

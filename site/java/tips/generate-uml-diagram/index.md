@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: IntelliJ IDEA Ultimate allows you to generate UML diagrams.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - UML diagrams
     href: "https://www.jetbrains.com/help/idea/class-diagram.html"

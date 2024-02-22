@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Use code and statement completion to write code faster
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) IntelliJ IDEA. Code Completion
     href: "https://www.youtube.com/watch?v=jTud6GIqVgk"

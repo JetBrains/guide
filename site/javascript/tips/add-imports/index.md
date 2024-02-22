@@ -13,7 +13,6 @@ seealso:
   - title: Optimizing imports in WebStorm
     href: "https://blog.jetbrains.com/webstorm/2018/05/optimize-imports-in-webstorm/"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

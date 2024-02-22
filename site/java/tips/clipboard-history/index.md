@@ -8,7 +8,6 @@ topics:
 author: md
 subtitle: Paste a subset or multiple entries from your recent history
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: "(video) IntelliJ IDEA Pro Tips: Clipboard History"
     href: "https://www.youtube.com/watch?v=WCwxQ3C0Bj4"

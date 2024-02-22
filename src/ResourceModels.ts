@@ -60,11 +60,6 @@ export const ResourceFrontmatter = Type.Intersect([
 		channel: Type.Optional(
 			Type.String({ description: "Possible channel this resource is in" })
 		),
-		cardThumbnail: Type.Optional(
-			Type.String({
-				description: "File name of the social card thumbnail for this resource",
-			})
-		),
 		tags: Type.Optional(
 			Type.Array(Type.String(), {
 				description: "11ty tag data",
@@ -108,7 +103,6 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 
 	anchor: string; // Playlist items need unique identifier
 	displayDate: string;
-	cardThumbnail?: string;
 	tags?: string[];
 	topics?: string[];
 	references?: References;
@@ -137,10 +131,6 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 		this.displayDate = displayDate;
 		this.tags = data.tags;
 		this.topics = data.topics;
-
-		if (data.cardThumbnail) {
-			this.cardThumbnail = path.join(page.url, data.cardThumbnail);
-		}
 	}
 
 	resolve(resourceMap: ResourceMap): void {
@@ -165,10 +155,6 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 
 	getThumbnail(): string {
 		return "/assets/jetbrains-simple.svg";
-	}
-
-	getThumbnailCss() {
-		return;
 	}
 
 	describeContentType(): string {

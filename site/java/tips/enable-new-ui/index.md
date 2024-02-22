@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: How to enable the new UI
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) New UI
     href: "https://www.jetbrains.com/help/idea/new-ui.html"

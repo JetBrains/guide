@@ -9,7 +9,6 @@ subtitle: >-
   Enforce architecture rules, such as data access layers not depending upon UI
   layers.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Code inspections
     href: "https://www.jetbrains.com/help/idea/code-inspection.html"

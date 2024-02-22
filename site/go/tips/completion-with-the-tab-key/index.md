@@ -10,7 +10,6 @@ subtitle: >-
   A small, but handy feature that makes it a little easier to complete symbol
   names.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=v-SK8BYbcaw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=27
 ---

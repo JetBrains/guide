@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: How to reformat code
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Code Formatting in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=vjVWjocENLg"

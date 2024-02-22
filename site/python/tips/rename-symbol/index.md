@@ -9,7 +9,6 @@ seealso:
   - title: Renaming a symbol
     href: "https://www.jetbrains.com/help/pycharm/rename-refactorings.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://www.youtube.com/watch?v=Qa7rLYyUnco"
 ---
 

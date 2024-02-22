@@ -10,7 +10,6 @@ subtitle: >-
   Find if tests or benchmarks are using t/b.Fatal* calls inside goroutines
   incorrectly
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=NEtGV-cfoJM&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=33
 ---

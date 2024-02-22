@@ -11,7 +11,6 @@ subtitle: >-
   Explore the file system and processes in the container, tail a log file, and
   more.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

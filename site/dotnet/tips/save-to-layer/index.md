@@ -10,7 +10,6 @@ topics:
 author: matkoch
 subtitle: Save settings to the scope you need them!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./guide.webm
   width: 500

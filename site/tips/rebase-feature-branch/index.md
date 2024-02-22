@@ -2,15 +2,15 @@
 date: 2023-05-10
 title: Rebase Feature Branch
 topics:
-  - vcs
   - git
+  - vcs
 author: pwe
 subtitle: Get your feature branch caught up with changes on the main branch.
 seealso:
   - title: Apply changes from one Git branch to another
-    href: "https://www.jetbrains.com/help/pycharm/apply-changes-from-one-branch-to-another.html"
+    href: >-
+      https://www.jetbrains.com/help/pycharm/apply-changes-from-one-branch-to-another.html
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://www.youtube.com/watch?v=cFlulVc7Y1Q"
 obsoletes:
   - /dotnet/tips/rebase-feature-branch/

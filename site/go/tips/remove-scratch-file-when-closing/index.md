@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Let the IDE handle the cleanup after testing your ideas
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=P898NpT9OJs&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=103
 ---

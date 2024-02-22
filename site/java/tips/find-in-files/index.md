@@ -7,7 +7,6 @@ topics:
 author: md
 subtitle: Find a specific string in (a subset of files in) your code
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: "(video) IntelliJ IDEA Pro Tips: Search Everywhere"
     href: "https://www.youtube.com/watch?v=r5kV8nTqVMQ"

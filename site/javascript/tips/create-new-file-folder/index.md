@@ -13,7 +13,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/webstorm/getting-started-with-webstorm.html#
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

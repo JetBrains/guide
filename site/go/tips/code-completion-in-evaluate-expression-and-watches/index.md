@@ -8,7 +8,6 @@ topics:
 author: dlsniper
 subtitle: The debugger also has code completion capabilities.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=UVkc2qDQAUk&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=15
 ---

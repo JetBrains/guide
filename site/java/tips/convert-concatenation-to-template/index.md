@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Use quick intentions to convert to a template string
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/5wWjsqNMd68"
 ---
 

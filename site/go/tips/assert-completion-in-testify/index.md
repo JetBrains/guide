@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Write testify asserts faster thanks to the IDE smartness
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=NrG8jsuxb1U&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=7
 ---

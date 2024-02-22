@@ -12,7 +12,6 @@ seealso:
   - title: Emmet support in WebStorm - documentation
     href: "https://www.jetbrains.com/help/webstorm/using-zen-coding-support.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

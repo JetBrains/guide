@@ -7,10 +7,10 @@ topics:
 author: md
 subtitle: Use CamelCase in code completion
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Basic completion
-    href: "https://www.jetbrains.com/help/idea/auto-completing-code.html#basic_completion"
+    href: >-
+      https://www.jetbrains.com/help/idea/auto-completing-code.html#basic_completion
 video: "https://youtu.be/Dewfin3ntck"
 ---
 

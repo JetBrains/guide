@@ -8,7 +8,6 @@ topics:
 author: hs
 subtitle: Toggle Tool Windows to tailor your interface
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Navigation in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=1UHsJyCq1SU"

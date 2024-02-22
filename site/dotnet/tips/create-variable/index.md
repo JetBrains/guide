@@ -10,7 +10,6 @@ topics:
 author: matkoch
 subtitle: Introduce variables the way you like!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./02-create-variable.webm
   width: 643

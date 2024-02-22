@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Run MongoDB queries in SQL format from the comfort of your IDE.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/SDV7K2H1HAM?list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW"
 obsoletes:
   - /go/tips/mongodb-query-using-sql

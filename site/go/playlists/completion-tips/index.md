@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Know everything there is to know about Code Completion.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 playlistItems:
   - /go/tips/basic-code-completion/
   - /go/tips/smart-code-completion/

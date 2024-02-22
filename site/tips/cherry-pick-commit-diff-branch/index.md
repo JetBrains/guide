@@ -4,12 +4,14 @@ title: Cherry Pick a Commit to a Different Branch
 topics:
   - git
 author: hs
-subtitle: Oops, you committed your code to the wrong branch… You could redo the work, but you don't want to!.
+subtitle: >-
+  Oops, you committed your code to the wrong branch… You could redo the work,
+  but you don't want to!.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: Cherry-pick separate commits
-    href: "https://www.jetbrains.com/help/idea/apply-changes-from-one-branch-to-another.html#cherry-pick"
+    href: >-
+      https://www.jetbrains.com/help/idea/apply-changes-from-one-branch-to-another.html#cherry-pick
 video: "https://youtu.be/SkcvWURJkWQ"
 ---
 

@@ -8,7 +8,6 @@ topics:
 author: hs
 subtitle: Easily add breakpoints from the run window
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Inline Method Refactoring in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=uYsFlbXJbog"

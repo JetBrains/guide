@@ -1,6 +1,10 @@
 #!/usr/bin/env vite-node --script
 
-import { migrateFrontMatter, writeCleanResources } from "./cleaner";
+import {
+	migrateCardThumbnail,
+	migrateFrontMatter,
+	writeCleanResources,
+} from "./cleaner";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 import chalk from "chalk";
@@ -53,6 +57,28 @@ yargs(hideBin(process.argv))
 				console.log(success("cleaning up frontmatter successful 🎉🎉🎉"));
 			} catch (e) {
 				console.log(error("error executing frontmatter migration script"));
+				if (args.debug) {
+					console.log(info(e));
+				}
+			}
+		}
+	)
+	.command(
+		"migrate-cardthumbnail",
+		"migrate cardThumbnail to thumbnail",
+		{
+			debug: {
+				alias: "d",
+				default: false,
+			},
+		},
+		(args) => {
+			try {
+				console.log(info("Going to clean migrate cardThumbnail"));
+				migrateCardThumbnail();
+				console.log(success("migrate cardThumbnail successful 🎉🎉🎉"));
+			} catch (e) {
+				console.log(error("error executing cardThumbnail migration script"));
 				if (args.debug) {
 					console.log(info(e));
 				}

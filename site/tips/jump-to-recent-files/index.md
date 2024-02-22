@@ -3,12 +3,15 @@ date: 2023-09-28
 title: How to Quickly Jump to Recent Files in any JetBrains IDE
 topics:
   - ide
-  - platform
   - navigation
+  - platform
 author: hs
-subtitle: "Are you tired of hunting for that crucial file buried in your project? Say goodbye to the hassle with these IDE shortcuts and tips. Jump to recent files effortlessly in JetBrains IDEs like IntelliJ IDEA, PyCharm, PhpStorm, WebStorm, GoLand, CLion, RubyMine, and more! "
+subtitle: >-
+  Are you tired of hunting for that crucial file buried in your project? Say
+  goodbye to the hassle with these IDE shortcuts and tips. Jump to recent files
+  effortlessly in JetBrains IDEs like IntelliJ IDEA, PyCharm, PhpStorm,
+  WebStorm, GoLand, CLion, RubyMine, and more!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 obsoletes:
   - /go/tips/recent-files/
   - /go/tips/jump-to-tool/
@@ -19,7 +22,8 @@ obsoletes:
   - /webstorm/tips/recent-files/
 seealso:
   - title: Find Recent Files
-    href: "https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#recent_files"
+    href: >-
+      https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#recent_files
 video: "https://youtu.be/W-GX0KHmY4w"
 ---
 

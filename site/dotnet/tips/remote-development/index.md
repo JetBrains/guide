@@ -8,7 +8,6 @@ topics:
 author: khalidabuhakmeh
 subtitle: Experience the power of developing .NET applications remotely!
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

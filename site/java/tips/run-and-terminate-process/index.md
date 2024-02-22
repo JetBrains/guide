@@ -8,7 +8,6 @@ topics:
 author: hs
 subtitle: How to run and stop a process
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Run Applications
     href: "https://www.jetbrains.com/help/idea/running-applications.html"

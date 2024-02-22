@@ -7,7 +7,6 @@ topics:
 author: tg
 subtitle: Use IntelliJ IDEA to check if your JSON Path expression are correct.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/2cfQmC0pLr8"
 ---
 

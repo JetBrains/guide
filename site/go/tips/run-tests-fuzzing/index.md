@@ -11,7 +11,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/go/2022.2/performing-tests.html#run-fuzz-testing
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

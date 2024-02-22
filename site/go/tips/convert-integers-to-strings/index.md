@@ -8,7 +8,6 @@ topics:
 author: ap
 subtitle: Convert an integer to a string by using the `strconv.Itoa()` call
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./screenshot.png
 ---
 

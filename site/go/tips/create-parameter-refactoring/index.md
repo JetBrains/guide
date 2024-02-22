@@ -5,9 +5,10 @@ topics:
   - go
   - refactoring
 author: ap
-subtitle: Change a function or method signature by introducing parameters directly from unresolved references
+subtitle: >-
+  Change a function or method signature by introducing parameters directly from
+  unresolved references
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 ---
 
 The **Create Parameter** quick-fix for unresolved references allows you to create parameters directly from unresolved references in your code.

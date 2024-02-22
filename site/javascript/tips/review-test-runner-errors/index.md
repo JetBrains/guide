@@ -12,7 +12,6 @@ seealso:
   - title: Testing with Jest in WebStorm
     href: "https://blog.jetbrains.com/webstorm/2018/10/testing-with-jest-in-webstorm/"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 screenshot: ./tip.png
 ---
 

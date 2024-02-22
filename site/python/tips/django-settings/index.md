@@ -14,7 +14,6 @@ seealso:
   - title: Code Navigation
     href: "https://www.jetbrains.com/help/pycharm/auto-completing-code.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/Tc1n43evD_8"
 ---
 

@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Analyze call trees for functions or methods
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=D86atdj1i9U&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=20
 ---

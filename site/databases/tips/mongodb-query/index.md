@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Run any queries you want against the database from the comfort of your IDE.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=BPNvTRaRJ2I&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=110
 obsoletes:

@@ -9,7 +9,6 @@ topics:
 author: vb
 subtitle: Group and commit changes related to certain tasks
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 seealso:
   - title: (video) Version Control with IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=-S3Q_-b52rA"

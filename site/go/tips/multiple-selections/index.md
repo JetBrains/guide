@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Select multiple items faster
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=QU9WvVN1hCo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=83
 ---

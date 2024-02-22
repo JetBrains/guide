@@ -12,7 +12,6 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/connecting-to-a-database.html#connect-to-sqlite
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/U2sAgysf1Hc"
 obsoletes:
   - /pycharm/tips/create-sqlite-connection

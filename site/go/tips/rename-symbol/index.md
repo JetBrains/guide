@@ -10,7 +10,6 @@ seealso:
   - title: (documentation) GoLand Help - Renaming a symbol
     href: "https://www.jetbrains.com/help/go/rename-refactorings.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=SC1etcii7IE&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=118
 ---

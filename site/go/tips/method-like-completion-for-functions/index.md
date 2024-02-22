@@ -9,7 +9,6 @@ subtitle: >-
   Completion for searching for functions that accept parameters of a certain
   type.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=wI4_Sxx8lVI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=85
 ---

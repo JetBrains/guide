@@ -10,7 +10,6 @@ seealso:
   - title: Working with HTML files
     href: "https://www.jetbrains.com/help/webstorm/editing-html-files.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600

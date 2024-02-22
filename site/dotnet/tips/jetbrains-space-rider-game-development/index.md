@@ -9,8 +9,7 @@ topics:
   - unreal
 author: maartenba
 subtitle: A full solution to power your game development process!
-thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
+thumbnail: ./card.png
 video: "https://youtu.be/tkVc64dqevs"
 ---
 

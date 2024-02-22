@@ -7,7 +7,6 @@ topics:
 author: dlsniper
 subtitle: Catch all issues before your code reaches the upstream
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: >-
   https://www.youtube.com/watch?v=thUuuSoOKoU&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=111
 ---

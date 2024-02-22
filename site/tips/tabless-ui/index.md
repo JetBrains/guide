@@ -2,13 +2,15 @@
 date: 2022-09-06
 title: Tabless UI in any JetBrains IDE
 topics:
-  - platform
   - ide
   - interface
+  - platform
 author: hs
-subtitle: In any JetBrains Integrated Development Environment (IDE), you have the power to take control of your workspace. In this video, we'll show you how to configure your editor tabs to optimize your coding environment.
+subtitle: >-
+  In any JetBrains Integrated Development Environment (IDE), you have the power
+  to take control of your workspace. In this video, we'll show you how to
+  configure your editor tabs to optimize your coding environment.
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 video: "https://youtu.be/ND0Br0jMl7M"
 obsoletes:
   - /idea/tips/hide-tabs-nav-toolbars/
@@ -20,7 +22,8 @@ seealso:
   - title: Editor Tabs
     href: "https://www.jetbrains.com/help/idea/settings-editor-tabs.html"
   - title: Menus and Toolbars
-    href: "https://www.jetbrains.com/help/idea/customize-actions-menus-and-toolbars.html"
+    href: >-
+      https://www.jetbrains.com/help/idea/customize-actions-menus-and-toolbars.html
 ---
 
 ## The Problem

@@ -12,7 +12,6 @@ seealso:
   - title: Live templates in WebStorm
     href: "https://www.jetbrains.com/help/webstorm/using-live-templates.html"
 thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
 animatedGif:
   file: ./tip.webm
   width: 600
