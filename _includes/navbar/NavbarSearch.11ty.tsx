@@ -8,7 +8,7 @@ function NavbarSearch(): JSX.Element {
 					<div class="dropdown-trigger">
 						<button
 							id="search"
-							class="button is-dark has-text-light"
+							class="button is-dark has-text-light mt-2"
 							aria-label="Trigger Searchbox"
 						>
 							<Icon name={`search`} />

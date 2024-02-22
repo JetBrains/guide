@@ -1,9 +1,35 @@
+.navbar-search {
+  button {
+    height: $navbar-height;
+    width: $navbar-height;
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .button.is-dark:focus:not(:active), .button.is-dark.is-focused:not(:active) {
+    box-shadow: none !important;
+  }
+}
+
 @media (max-width: 1023px) {
   .navbar-search {
+    position: absolute;
+    top: 0;
+    right: $navbar-height;
+    padding: 0;
+
+    #search {
+      span {
+        margin-top: 8px;
+        display: inline-block;
+      }
+    }
+
     .dropdown {
-      .dropdown-menu { // .is-right
-        left: 0 !important;
-        right: auto !important;
+      .dropdown-menu {
+        left: auto !important;
+        right: -$navbar-height !important;
       }
     }
   }

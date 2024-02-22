@@ -41,7 +41,7 @@ const Navbar = ({
 					<div class="navbar-end">
 						<div class="navbar-item has-dropdown is-hoverable is-fullwidth">
 							<a
-								class="navbar-link has-text-grey-light is-arrowless"
+								class="navbar-link has-text-grey-light is-arrowless is-hidden-touch"
 								href="/channels/"
 							>
 								Topics
@@ -103,10 +103,15 @@ const Navbar = ({
 								</div>
 							</div>
 						</div>
-						<a class="navbar-item has-text-grey-light" href="/explore/">
+						<a
+							class="navbar-item has-text-grey-light is-hidden-touch"
+							href="/explore/"
+						>
 							Explore
 						</a>
 					</div>
+				</div>
+				<div class="navbar-end">
 					<NavbarSearch />
 				</div>
 			</div>
