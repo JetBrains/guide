@@ -67,7 +67,7 @@ class PytestHomepage {
 
 				{all && (
 					<ListingSection
-						title={`Latest tips, tutorials and links`}
+						title={`Latest tips, tutorials, and links`}
 						resources={all}
 						includeCardFooter={true}
 						includeContentType={true}
