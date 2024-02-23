@@ -30,7 +30,7 @@ The finished code for this tutorial step is
 ## Reformatting Code
 
 We currently have the test runner script running.
-If you have it running via `npm run-script test` in a terminal window, terminate that process with <kbd>⌃C</kbd> (macOS) / <kbd>Ctrl+C<kbd/> (Windows/Linux) or the equivalent.
+If you have it running via `npm run-script test` in a terminal window, terminate that process with <kbd>⌃C</kbd> (macOS) / <kbd>Ctrl+C</kbd> (Windows/Linux) or the equivalent.
 If you ran it in the IDE, close that tool window (and click `Terminate` on the dialog.)
 
 With the IDE, reformatting code is simple.
@@ -91,7 +91,7 @@ Highlight the existing `div` to replace and enter `div>h1<enter>Hello React`:
 We have an ESLint `Unused import` error on line 2, which we can see by hovering over the gray squiggly line: `Unused import logo from "./logo.svg"`
 
 We could stop what we're doing, move to that line, and delete it.
-But the IDE makes this easy with the `Optimize Imports` action <kbd>⌃⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+O<kbd/> (Windows/Linux).
+But the IDE makes this easy with the `Optimize Imports` action <kbd>⌃⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+O</kbd> (Windows/Linux).
 Invoke that and remove the unused import.
 
 While you're at it:

@@ -17,7 +17,7 @@ Let's go ahead and make a change to the Java file and see if you get a new messa
 
 ![Changed Hello World string](changed-hello-world.png)
 
-2. Instead of clicking on the arrow next to the _HelloWorld JAR_ run configuration, you can press <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl<kbd/> (Windows/Linux) to display the [Run Anything](https://www.jetbrains.com/help/idea/running-anything.html) dialog. Start typing in _HelloWorld and you will see both your run configurations. Select_HelloWorld JAR_ and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux).
+2. Instead of clicking on the arrow next to the _HelloWorld JAR_ run configuration, you can press <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl</kbd> (Windows/Linux) to display the [Run Anything](https://www.jetbrains.com/help/idea/running-anything.html) dialog. Start typing in _HelloWorld and you will see both your run configurations. Select_HelloWorld JAR_ and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux).
 
 ![Run anything dialog box with Hello World](run-anything.png)
 

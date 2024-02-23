@@ -14,4 +14,4 @@ obsoletes:
   - /idea/tips/view-database-definitions
 ---
 
-In our paid IDEs, you can open the _Database_ tool window and use <kbd>␣<kbd/> (macOS) / <kbd>Space</kbd> (Windows/Linux) to view definitions of database entities including tables, views, sequences, triggers and more.
+In our paid IDEs, you can open the _Database_ tool window and use <kbd>␣</kbd> (macOS) / <kbd>Space</kbd> (Windows/Linux) to view definitions of database entities including tables, views, sequences, triggers and more.

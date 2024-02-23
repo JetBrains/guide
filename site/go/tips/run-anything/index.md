@@ -23,4 +23,4 @@ Run Anything is a quick way to launch run/debug configurations, applications, sc
 
 **How to use:**
 
-To open the _Run Anything_ dialog, use <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl<kbd/> (Windows/Linux). You can type _?_ to see the options available to you and then run HTTP requests, yarn, npm, and grunt tasks.
+To open the _Run Anything_ dialog, use <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl</kbd> (Windows/Linux). You can type _?_ to see the options available to you and then run HTTP requests, yarn, npm, and grunt tasks.

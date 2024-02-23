@@ -51,7 +51,7 @@ Math.max(a, b) == max
 class java.lang.Math
 ```
 
-We can make these data tables more readable by creating a separator between input and output columns. Try using IntelliJ IDEA's [clone caret](https://www.jetbrains.com/help/idea/pro-tips.html#multiple-selections) feature - put the caret next to the `|` between `b` and `max` and press <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl<kbd/> (Windows/Linux), keeping it held down on the second press, and pressing the down arrow to create a second caret underneath the first - do this until you have four carets, one for each line. Now if we type a second pipe, it appears on all the lines.
+We can make these data tables more readable by creating a separator between input and output columns. Try using IntelliJ IDEA's [clone caret](https://www.jetbrains.com/help/idea/pro-tips.html#multiple-selections) feature - put the caret next to the `|` between `b` and `max` and press <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl</kbd> (Windows/Linux), keeping it held down on the second press, and pressing the down arrow to create a second caret underneath the first - do this until you have four carets, one for each line. Now if we type a second pipe, it appears on all the lines.
 
 ![](./21.png)
 

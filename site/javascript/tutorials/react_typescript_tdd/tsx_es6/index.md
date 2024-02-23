@@ -321,7 +321,7 @@ The IDE makes this easy.
 For example, in the `App` component, <kbd>⌘B</kbd> (macOS) / <kbd>Ctrl+B</kbd> (Windows/Linux) on `Heading` and you will navigate to that component.
 
 You can go in the reverse direction as well.
-Click on the `Heading` then hit <kbd>⌃⌥F7<kbd/> (macOS) / <kbd>Alt+F7<kbd/> (Windows/Linux).
+Click on the `Heading` then hit <kbd>⌃⌥F7</kbd> (macOS) / <kbd>Alt+F7</kbd> (Windows/Linux).
 This shows all the locations in your project which use that _symbol_, not the string.
 This is useful when you want the change a name through refactoring.
 

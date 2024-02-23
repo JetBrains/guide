@@ -26,7 +26,7 @@ Changing code is more common than writing code and IntelliJ IDEA can support you
 
 We often want to go back and revisit code that either we wrote or someone else wrote. That can be a variety of reasons including stabilising it, iterating on the functionality, or just reshaping it to improve the readability without changing the semantics.
 
-IntelliJ IDEA supports a huge range of refactorings and associated keyboard shortcuts, but there's one shortcut you can use to invoke all refactorings which is <kbd>⌃T<kbd/> (macOS) / <kbd>Shift+Ctrl+Alt+T</kbd> (Windows/Linux).
+IntelliJ IDEA supports a huge range of refactorings and associated keyboard shortcuts, but there's one shortcut you can use to invoke all refactorings which is <kbd>⌃T</kbd> (macOS) / <kbd>Shift+Ctrl+Alt+T</kbd> (Windows/Linux).
 
 Some of the more common refactorings are:
 
@@ -59,7 +59,7 @@ In your Commit tool window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/L
 <iframe width="560" height="315" src="https://www.youtube.com/embed/z39jUnMZy44" >
 </iframe>
 
-Multiple carets are very useful for making the same change in multiple places and when you're working with list formats. You can use <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl<kbd/> (Windows/Linux), holding it down the second time and the pressing the Down key to create a stack of carets. [This blog post](https://foojay.io/today/working-with-multiple-carets-in-intellij-idea/) also covers how you can create carets at the end of your lines or in random places.
+Multiple carets are very useful for making the same change in multiple places and when you're working with list formats. You can use <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl</kbd> (Windows/Linux), holding it down the second time and the pressing the Down key to create a stack of carets. [This blog post](https://foojay.io/today/working-with-multiple-carets-in-intellij-idea/) also covers how you can create carets at the end of your lines or in random places.
 
 ## Extending or Shrinking Selection
 

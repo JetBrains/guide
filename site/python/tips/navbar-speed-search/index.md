@@ -34,7 +34,7 @@ We now want to select one item in the list, but using speed search:
 
 - Simplest case: Type one letter
 
-- Type a second letter...if your choice is selected, then you're done and you can act on it <kbd>⌃T<kbd/> (macOS) / <kbd>Shift+Ctrl+Alt+T</kbd> (Windows/Linux)
+- Type a second letter...if your choice is selected, then you're done and you can act on it <kbd>⌃T</kbd> (macOS) / <kbd>Shift+Ctrl+Alt+T</kbd> (Windows/Linux)
 
 - Type a period and a letter to search in the file extension
 

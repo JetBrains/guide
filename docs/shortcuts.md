@@ -117,7 +117,7 @@
 <kbd>⌃R</kbd> (macOS) / <kbd>Shift+F10</kbd> (Windows/Linux)                     - Run Program
 <kbd>⌘F2</kbd> (macOS) / <kbd>Ctrl+F2</kbd> (Windows/Linux)                      - Run Process 
 <kbd>⌘R</kbd> (macOS) / <kbd>Ctrl+F5</kbd> (Windows/Linux)                       - Refresh Reviews
-<kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl<kbd/> (Windows/Linux)                      - Run Anything
+<kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl</kbd> (Windows/Linux)                      - Run Anything
 <kbd>⌃H</kbd> (macOS) / <kbd>Ctrl+H</kbd> (Windows/Linux)                        - View Hierarchy
 <kbd>⌥⌘↑</kbd> (macOS) / <kbd>Ctrl+Shift+Up Arrow</kbd> (Windows/Linux)         - Navigate Previous Occurrence
 <kbd>⌥⌘↓</kbd> (macOS) / <kbd>Ctrl+Shift+Down Arrow</kbd> (Windows/Linux)       - Navigate Next Occurrence
@@ -131,8 +131,8 @@
 <kbd>⌘⇧\[</kbd> (macOS) / <kbd>Alt+Left Arrow</kbd> (Windows/Linux)             - Move to Next Tab In Emulator             
 <kbd>⌘⇧\]</kbd> (macOS) / <kbd>Alt+Right Arrow</kbd> (Windows/Linux)            - Move to Previous Tab in Emulator 
 <kbd>⌘W</kbd> (macOS) / <kbd>Ctrl+F4</kbd> (Windows/Linux)                      - Close Tab with Focus
-<kbd>⌃C</kbd> (macOS) / <kbd>Ctrl+C<kbd/> (Windows/Linux)                         - Terminate Process
-<kbd>⌃⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+O<kbd/> (Windows/Linux)                    - Optimize Imports
+<kbd>⌃C</kbd> (macOS) / <kbd>Ctrl+C</kbd> (Windows/Linux)                         - Terminate Process
+<kbd>⌃⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+O</kbd> (Windows/Linux)                    - Optimize Imports
 <kbd>⌃⌥R</kbd> (macOS) / <kbd>Alt+Shift+F10</kbd> (Windows/Linux)               - Open Run Configuration Dialog
 <kbd>⌃⌥⇧G</kbd> (macOS) / <kbd>Alt+Shift+G</kbd> (Windows/Linux)                - Add Carets to the End of the Line
 <kbd>⌘⇧/</kbd> (macOS) / <kbd>Ctrl+Shift+W</kbd> (Windows/Linux)                - Uncomment Lines of Code
@@ -151,7 +151,7 @@
 <kbd>⌃⇧Y</kbd> (macOS) / <kbd>Ctrl+Shift+Y</kbd> (Windows/Linux)                - Start Code With Me session
 
 <kbd>^+mnemonic</kbd> (macOS) / <kbd>Ctrl+mnemonic</kbd> (Windows/Linux)        
-<kbd>⌘<kbd/> (macOS) / <kbd>Ctrl</kbd> (Windows/Linux)
+<kbd>⌘</kbd> (macOS) / <kbd>Ctrl</kbd> (Windows/Linux)
 <kbd>⌘</kbd> (macOS) / <kbd>Alt</kbd> (Windows/Linux)
 <kbd>+</kbd> (macOS) / <kbd>Plus</kbd> (Windows/Linux)
 <kbd>␛</kbd> (macOS) / <kbd>Escape</kbd> (Windows/Linux)
@@ -162,15 +162,15 @@
 <kbd>↓</kbd> (macOS) / <kbd>Down Arrow</kbd> (Windows/Linux)
 <kbd>←</kbd> (macOS) / <kbd>Up Arrow</kbd> (Windows/Linux)
 <kbd>→</kbd> (macOS) / <kbd>Down Arrow</kbd> (Windows/Linux)
-<kbd>␣<kbd/> (macOS) / <kbd>Space</kbd> (Windows/Linux)
-<kbd>⇧<kbd/> (macOS) / <kbd>Shift</kbd> (Windows/Linux)
+<kbd>␣</kbd> (macOS) / <kbd>Space</kbd> (Windows/Linux)
+<kbd>⇧</kbd> (macOS) / <kbd>Shift</kbd> (Windows/Linux)
 
 
 ## Rider
 
-<kbd>⇧⇧<kbd/> (macOS) / <kbd>Shift+Shift</kbd> (VS Windows/Linux)
+<kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (VS Windows/Linux)
 <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (VS Windows/Linux)
 <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (VS Windows/Linux)
 <kbd>⌘⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+R</kbd> (VS Windows/Linux)
 <kbd>⌘⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+R</kbd> (VS Windows/Linux)
-<kbd>⌘⇧A<kbd/> (macOS) / <kbd>Ctrl+Shift+A</kbd> (VS Windows/Linux)
+<kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (VS Windows/Linux)

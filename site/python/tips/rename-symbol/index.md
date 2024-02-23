@@ -20,6 +20,6 @@ What if the same symbol name is used in two Python modules? Yep, PyCharm can tel
 
 Same for method names. Have the same method in two classes? **Refactor Rename** <kbd>⇧F6</kbd> (macOS) / <kbd>Shift+F6</kbd> (Windows/Linux) will look in your project for the correct usage and rename it.
 
-Simply put your cursor on a symbol and use **Refactor | Rename** <kbd>⌃T<kbd/> (macOS) / <kbd>Shift+Ctrl+Alt+T</kbd> (Windows/Linux) and then '1' Provide the new name, preview the places it found, and select **Do Refactor**.
+Simply put your cursor on a symbol and use **Refactor | Rename** <kbd>⌃T</kbd> (macOS) / <kbd>Shift+Ctrl+Alt+T</kbd> (Windows/Linux) and then '1' Provide the new name, preview the places it found, and select **Do Refactor**.
 
 Change your mind? Refactoring is done as a single editor transaction, meaning **Undo** reverts all the places that were renamed.
