@@ -15,4 +15,4 @@ The inspection will be triggered if you try to assign a value to a constant with
 
 **How to use:**
 
-Place the cursor on a highlighted constant name, press <kbd>⌘⌥⏎</kbd> (macOS) / <kbd>Ctrl+Alt+Enter</kbd> (Windows/Linux), and select **Rename constant**. Type a new name and press <kbd>⏎<kbd/> (macOS) / <kbd>Enter</kbd> (Windows/Linux).
+Place the cursor on a highlighted constant name, press <kbd>⌘⌥⏎</kbd> (macOS) / <kbd>Ctrl+Alt+Enter</kbd> (Windows/Linux), and select **Rename constant**. Type a new name and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux).

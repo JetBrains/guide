@@ -61,7 +61,7 @@ If you edit a file, it will regenerate the universe and tell the browser to relo
 Open `src/App.tsx` and change `save to reload` to `save to reload the page`, then save.
 Your terminal shows a recompile and your browser updates.
 
-In the terminal, <kbd>⌃C</kbd> (macOS) / <kbd>Ctrl+C<kbd/> (Windows/Linux) to stop the dev server.
+In the terminal, <kbd>⌃C</kbd> (macOS) / <kbd>Ctrl+C</kbd> (Windows/Linux) to stop the dev server.
 Let's take a look at how the IDE can put a nice friendly face on running `npm` scripts.
 
 We will first use the `npm` tool window.

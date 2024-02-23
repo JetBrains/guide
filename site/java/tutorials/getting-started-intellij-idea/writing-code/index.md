@@ -49,7 +49,7 @@ IntelliJ IDEA is excellent at generating code constructs for you. It's always wo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VFV-iaJCI1c" >
 </iframe>
 
-Similarly to Search Everywhere, Run Anything <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl<kbd/> (Windows/Linux) allows you to run any of your Run Configurations as well as scripts and commands such as `mvn clean` or `gradle --status`. You can also use Run Anything to open your recent projects such as `open intellij-samples`.
+Similarly to Search Everywhere, Run Anything <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl</kbd> (Windows/Linux) allows you to run any of your Run Configurations as well as scripts and commands such as `mvn clean` or `gradle --status`. You can also use Run Anything to open your recent projects such as `open intellij-samples`.
 
 ## Managing Dependencies
 

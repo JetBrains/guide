@@ -15,4 +15,4 @@ seealso:
 video: "https://youtu.be/k7gUpiWRPiY"
 ---
 
-Open a right-split window from the Recent Files <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) by holding down <kbd>⇧<kbd/> (macOS) / <kbd>Shift</kbd> (Windows/Linux) when you press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) to open the file to see code side by side, for example when writing tests.
+Open a right-split window from the Recent Files <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) by holding down <kbd>⇧</kbd> (macOS) / <kbd>Shift</kbd> (Windows/Linux) when you press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) to open the file to see code side by side, for example when writing tests.

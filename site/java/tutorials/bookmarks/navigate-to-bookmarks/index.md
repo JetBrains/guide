@@ -11,7 +11,7 @@ thumbnail: ./thumbnail.png
 
 There are several options to navigate to the bookmarks we have created.
 
-To see all _line_ bookmarks that we have in the code, we can open the **Bookmarks** popup by pressing <kbd>F3<kbd/> (macOS) / <kbd>F11</kbd> (Windows/Linux) or go to **Edit | Bookmarks | Show Line Bookmarks**.
+To see all _line_ bookmarks that we have in the code, we can open the **Bookmarks** popup by pressing <kbd>F3</kbd> (macOS) / <kbd>F11</kbd> (Windows/Linux) or go to **Edit | Bookmarks | Show Line Bookmarks**.
 
 ![Show Line Bookmarks shortcut](show-line-bookmarks-shortcut.png)
 

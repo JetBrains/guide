@@ -25,7 +25,7 @@ IntelliJ IDEA populates this with common Gradle tasks and ones we've run recentl
 
 This can be a good way to run multiple gradle tasks, like you would from the command line. For example, running `gradle clean build` to make sure everything is working as expected before committing changes.
 
-You may have noticed this actually uses the [Run Anything](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html) dialog, which we can bring up by pressing <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl<kbd/> (Windows/Linux), then type "gradle" followed by the gradle task name or names.
+You may have noticed this actually uses the [Run Anything](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html) dialog, which we can bring up by pressing <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl</kbd> (Windows/Linux), then type "gradle" followed by the gradle task name or names.
 
 We can, of course, run Gradle commands from the terminal window inside IntelliJ IDEA. Open this with <kbd>⌥F12</kbd> (macOS) / <kbd>Alt+F12</kbd> (Windows/Linux).
 
