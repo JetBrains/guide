@@ -10,7 +10,7 @@ subtitle: "During refactoring, use pytest's markers to ignore certain breaking t
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/rEYQrMY8Ux4"
 obsoletes:
-  - /pycharm/tutorials/skipping_tests/
+  - /pycharm/tutorials/visual_pytest/skipping_tests/
 ---
 
 Sometimes you want to overhaul a chunk of code and don't want to stare at a broken test.

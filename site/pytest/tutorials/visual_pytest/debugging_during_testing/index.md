@@ -13,7 +13,7 @@ subtitle: >-
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/feBYCeOk4As"
 obsoletes:
-  - /pycharm/tutorials/debugging_during_testing/
+  - /pycharm/tutorials/visual_pytest/debugging_during_testing/
 ---
 
 Primary guardian, great!

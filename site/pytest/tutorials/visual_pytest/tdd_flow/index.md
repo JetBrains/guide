@@ -12,7 +12,7 @@ subtitle: >-
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/kwj6Hk1kJYU"
 obsoletes:
-  - /pycharm/tutorials/tdd_flow/
+  - /pycharm/tutorials/visual_pytest/tdd_flow/
 ---
 
 Players have parents, also known as guardians.

@@ -10,7 +10,7 @@ subtitle: Write tests which ensure exceptions are raised when expected.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/eBO2FmoeLKw"
 obsoletes:
-  - /pycharm/tutorials/testing_exceptions/
+  - /pycharm/tutorials/visual_pytest/testing_exceptions/
 ---
 
 In the previous step we showed how to debug a problem.

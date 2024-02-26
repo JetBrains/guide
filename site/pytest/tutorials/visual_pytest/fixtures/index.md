@@ -10,7 +10,7 @@ subtitle: Make your tests more focused by moving sample data to pytest fixtures.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/lidTnXTFssM"
 obsoletes:
-  - /pycharm/tutorials/fixtures/
+  - /pycharm/tutorials/visual_pytest/fixtures/
 ---
 
 Each test recreates `Player` and `Guardian` instances, which is repetitive and distracts from the test's purpose.
