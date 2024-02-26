@@ -23,6 +23,7 @@ tutorialItems:
   - ./testing_exceptions/
 obsoletes:
   - /pycharm/tutorials/visual_pytest/
+  - /python/tutorials/visual_pytest/
 ---
 
 Python developers love writing code. Tests? Not so much. Whether it’s the concepts of testing, or the interface of testing tools, testing is a chasm

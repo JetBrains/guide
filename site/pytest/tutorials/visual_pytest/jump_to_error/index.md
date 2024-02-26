@@ -13,6 +13,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/U2ex-V51-PY"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/jump_to_error/
+  - /python/tutorials/visual_pytest/jump_to_error/
 ---
 
 Since we have `Guardian` now, let's hook it up to allow adding a `Guardian` to a `Player`.

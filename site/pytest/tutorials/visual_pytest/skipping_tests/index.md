@@ -11,6 +11,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/rEYQrMY8Ux4"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/skipping_tests/
+  - /python/tutorials/visual_pytest/skipping_tests/
 ---
 
 Sometimes you want to overhaul a chunk of code and don't want to stare at a broken test.

@@ -11,6 +11,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/I1ssiDEa2S4"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/hello_test/
+  - /python/tutorials/visual_pytest/hello_test/
 ---
 
 Getting started with pytest is quite easy.

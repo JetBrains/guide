@@ -11,6 +11,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/lidTnXTFssM"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/fixtures/
+  - /python/tutorials/visual_pytest/fixtures/
 ---
 
 Each test recreates `Player` and `Guardian` instances, which is repetitive and distracts from the test's purpose.

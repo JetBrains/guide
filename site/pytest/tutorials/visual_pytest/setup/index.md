@@ -13,6 +13,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/mLYTP41H8U0"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/setup/
+  - /python/tutorials/visual_pytest/setup/
 ---
 
 Python has projects and PyCharm does as well.

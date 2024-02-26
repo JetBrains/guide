@@ -13,6 +13,7 @@ thumbnail: ../thumbnail.png
 video: "https://youtu.be/dAbpPklX7wo"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/background/
+  - /python/tutorials/visual_pytest/background/
 ---
 
 "Visual Testing with `pytest`" means three things: the field of testing and test-driven development (TDD), `pytest` as a testing tool, and PyCharm as a visual frontend.

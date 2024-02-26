@@ -10,6 +10,4 @@ layout: layouts/ListingLayout.11ty.tsx
 pagination:
   resourceType: tutorial
   channel: /pytest/
-obsoletes:
-  - /python/tutorials/visual-pytest/
 ---

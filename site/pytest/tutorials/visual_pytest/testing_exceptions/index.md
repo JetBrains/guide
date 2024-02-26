@@ -11,6 +11,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/eBO2FmoeLKw"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/testing_exceptions/
+  - /python/tutorials/visual_pytest/testing_exceptions/
 ---
 
 In the previous step we showed how to debug a problem.
