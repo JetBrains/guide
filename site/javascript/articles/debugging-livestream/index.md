@@ -1,5 +1,5 @@
 ---
-date: 2023-10-03
+date: 2024-03-03
 title: "Debug Like a Pro: JavaScript Edition"
 topics:
   - debugging
