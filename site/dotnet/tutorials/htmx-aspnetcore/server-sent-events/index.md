@@ -105,10 +105,10 @@ While SSE can pass information to the client, HTMX works by making HTTP Requests
 </div>
 ```
 
-Running the sample, you should see the numbers update on a one-second interval. Try opening multiple browser windows, and you'll see that numbers all update simultaneously, as opposed to long polling, where the client sets the retrieval interval.
+Running the sample, you should see the numbers update on a one-second interval. Try opening multiple browser windows, and you'll see that numbers all update simultaneously, as opposed to polling, where the client sets the retrieval interval.
 
 ![Random number showing in HTML](img.png)
 
-SSE architecture can be a helpful tool when building web applications but comes with the caveat of having clients connected to a server during the duration of a session. Managed connections require additional resources in memory and CPU, which may require scaling your backend services. Therefore, when considering SSE, you should estimate the number of clients connected at one time and whether you could accomplish the same results with long polling.
+SSE architecture can be a helpful tool when building web applications but comes with the caveat of having clients connected to a server during the duration of a session. Managed connections require additional resources in memory and CPU, which may require scaling your backend services. Therefore, when considering SSE, you should estimate the number of clients connected at one time and whether you could accomplish the same results with polling.
 
 In the following video, we'll look at the .NET companion packages to make working with HTMX more convenient in Razor pages and server-side code.

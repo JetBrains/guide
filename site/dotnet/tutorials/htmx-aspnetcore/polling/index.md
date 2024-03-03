@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2022-04-27
-title: Long-Polling to get recent updates
+title: Polling to get recent updates
 topics:
   - .net
   - asp.net
@@ -17,15 +17,15 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/3id6dBL73-A"
 ---
 
-Long polling is a technique to retrieve updated information from the server at a known time interval. Upon receiving new information, you can swap it into a known target element, and a user perceives that information is updating in near real-time. The method has its advantages and drawbacks.
+Polling is a technique to retrieve updated information from the server at a known time interval. Upon receiving new information, you can swap it into a known target element, and a user perceives that information is updating in near real-time. The method has its advantages and drawbacks.
 
-Long polling advantages include:
+Polling advantages include:
 
 - Users get new information without invoking any action.
 - Polling responses can be cached server-side if it's general-use information.
 - It's relatively straightforward to implement both client-side and server-side.
 
-Long polling disadvantages include:
+Polling disadvantages include:
 
 - Unnecessary calls to the server.
 - Near real-time is still is not real-time. As a result, requests could be slower than required.
@@ -69,8 +69,8 @@ public class Polling: PageModel
 
 The partial view powering the updates is old reliable Razor with C# logic and models. Running this sample, we can see the stock values moving up and down in value at a two-second interval.
 
-![long polling working in page](img.png)
+![polling working in page](img.png)
 
-As you can see, long polling is a low-effort approach with a high impact on user experience. Use this knowledge wisely and sparingly.
+As you can see, polling is a low-effort approach with a high impact on user experience. Use this knowledge wisely and sparingly.
 
 In the following video, you'll see how to take a near-realtime experience to real-time using server-sent events.
