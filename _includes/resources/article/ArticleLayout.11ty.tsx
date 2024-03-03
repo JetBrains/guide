@@ -64,9 +64,6 @@ export function ArticleLayout(
 
 							{content && (
 								<Fragment>
-									<header id="in-depth" class="is-size-3 is-bold mb-3">
-										In Depth
-									</header>
 									<div class="columns">
 										<div class="column is-11-desktop content">{content}</div>
 									</div>
