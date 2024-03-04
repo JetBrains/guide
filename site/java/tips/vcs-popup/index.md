@@ -14,4 +14,4 @@ seealso:
 video: "https://youtu.be/ftM_7NhdoZ4"
 ---
 
-Open and close **Annotate with Git Blame** using your keyboard, by opening the VCS Operations Popup <kbd>⌃V</kbd> (macOS) / <kbd>Alt+`</kbd> (Windows/Linux) and selecting **Annotate with Git Blame** using the arrow keys or corresponding number.
+Open and close Annotate with Git Blame using your keyboard, by opening the VCS Operations Popup <kbd>⌃V</kbd> (macOS) / <kbd>Alt+`</kbd> (Windows/Linux) and selecting Annotate with Git Blame using the arrow keys or corresponding number.

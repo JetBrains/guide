@@ -17,8 +17,8 @@ seealso:
 video: "https://youtu.be/2qaSoYJVnhI"
 ---
 
-With JetBrains AI Assistant, you can use **AI Actions** inside your IDE. Right-click in the editor pane to open the context menu and see the predefined options, or create your own prompt.
+With JetBrains AI Assistant, you can use _AI Actions_ inside your IDE. Right-click in the editor pane to open the context menu and see the predefined options, or create your own prompt.
 ![AI Actions](ai-actions.png)
 
-Alternatively, you can open **AI Actions** by clicking the AI Assistant icon in the floating toolbar.
+Alternatively, you can open _AI Actions_ by clicking the AI Assistant icon in the floating toolbar.
 ![Floating toolbar](floating-toolbar.png)
