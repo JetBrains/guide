@@ -16,4 +16,4 @@ video: "https://youtu.be/Dewfin3ntck"
 
 Did you know that IntelliJ IDEA code completion supports camel case? This means we don't have to type the whole method name, or even the exact start of a method name, to get relevant code suggestions. In this example, when we type 'oi', IntelliJ IDEA suggests the variable name 'orderId'.
 
-![Camel case in code completion](card.png)
+![Camel case in code completion](camel-case-completion.png)
