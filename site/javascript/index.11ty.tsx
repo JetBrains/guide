@@ -8,6 +8,7 @@ import {
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import {
+	ARTICLE_RESOURCE,
 	PLAYLIST_RESOURCE,
 	TIP_RESOURCE,
 	TUTORIAL_RESOURCE,
@@ -54,8 +55,8 @@ export default class WebStormHomepage {
 			customFilter: (r) => r.slug.indexOf("javascript-day") >= 0,
 		});
 
-		const tutorials = this.getResources({
-			resourceTypes: [TUTORIAL_RESOURCE],
+		const otherTypes = this.getResources({
+			resourceTypes: [TUTORIAL_RESOURCE, ARTICLE_RESOURCE],
 			channel: channel.url,
 			limit: 4,
 		});
@@ -85,10 +86,10 @@ export default class WebStormHomepage {
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
-				{tutorials && (
+				{otherTypes && (
 					<ListingSection
-						title={`Latest tutorials`}
-						resources={tutorials}
+						title={`Latest articles and tutorials`}
+						resources={otherTypes}
 						moreLink={`${channel.url}tutorials/`}
 					/>
 				)}

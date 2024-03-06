@@ -1,10 +1,11 @@
 ---
 date: 2024-03-03
 title: "Debug Like a Pro: JavaScript Edition"
+subtitle: "Reach for the debugger first when learning about code, poking around, or fixing problems."
 topics:
   - debugging
 author: pwe
-thumbnail: ./thumbnail.png)
+thumbnail: thumbnail.png
 ---
 
 Oh, we all love to code. Get started, jump right in, make a web app -- pixels on the screen! So much winning!
@@ -12,11 +13,14 @@ Oh, we all love to code. Get started, jump right in, make a web app -- pixels on
 Hmm, crap, something went wrong. Let me do a `console.log`. Or another, then restart. Or 20 more. Oops, I checked it in.
 HELP!
 
-There is a better way to develop: the debugger. Instead of "reaching" for the debugger when you have a problem -- \*
-\*always
-be debugging\*\*. Then, there's no "reaching."
+There is a better way to develop: the debugger. Instead of "reaching" for the debugger when you have a problem: _always
+be debugging_. Then, there's no "reaching."
 
-Let's take a look at WebStorm's glorious, joyful debugger, and how we can use it -- including with HTMX.
+Let's take a look at WebStorm's glorious, joyful debugger, and how we can use it -- including with HTMX. And if you
+would like a video walkthrough, here's our [March livestream](https://www.youtube.com/watch?v=gFcR8J90S8c) with Carson
+Gross from [HTMX](https://www.htmx.org/).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gFcR8J90S8c?si=Fwq9XoLvMi-qiJlh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Creating a JS Debug run configuration
 
