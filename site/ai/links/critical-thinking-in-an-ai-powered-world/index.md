@@ -1,6 +1,6 @@
 ---
 date: 2024-02-27
-title: Use JetBrains AI Assistant To Help You Understand Changes In Your Code
+title: Critical Thinking in an AI Powered World
 topics:
   - ai-assistant
 author: khalidabuhakmeh
