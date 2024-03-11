@@ -26,7 +26,7 @@ tutorialItems:
   - ./tabs-tabs-tabs/
   - ./shortcut-keys/
   - ./serverside-validation-clientside-feel/
-  - ./long-polling/
+  - ./polling/
   - ./server-sent-events/
   - ./razor-taghelpers/
   - ./clientside-templating/

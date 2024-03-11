@@ -97,4 +97,4 @@ Let's try out the form. Submitting an empty form will enable the HTMX indicator 
 
 Of course, if you still want to perform client-side validation, you can do so. HTML 5 attributes such as `required` will still be respected by the client. As expected, adding more-complex client-side validation will need more effort and a lot more JavaScript. That said, server-side validation is a must, so why not just leverage it to its fullest? Hopefully this HTMX approach to validation has you thinking about your past validation experiences and potentially future implementations.
 
-In the following video, we'll see how to use long polling to create a near real-time experience for users of your applications.
+In the following video, we'll see how to use polling to create a near real-time experience for users of your applications.
