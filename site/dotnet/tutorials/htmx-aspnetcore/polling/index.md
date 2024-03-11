@@ -15,6 +15,8 @@ author: khalidabuhakmeh
 subtitle: Retrieve updated information from the server
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/3id6dBL73-A"
+obsoletes:
+  - /dotnet/tutorials/htmx-aspnetcore/long-polling/
 ---
 
 Polling is a technique to retrieve updated information from the server at a known time interval. Upon receiving new information, you can swap it into a known target element, and a user perceives that information is updating in near real-time. The method has its advantages and drawbacks.
