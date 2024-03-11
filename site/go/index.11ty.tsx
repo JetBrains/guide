@@ -17,7 +17,7 @@ const frontmatter: ChannelFrontmatter = {
 	author: "pwe",
 	accent: "primary",
 	icon: "fa-brands fa-golang",
-	hero: "/assets/go_splash.svg",
+	hero: "/assets/splashes/go.png",
 	logo: "thumbnail.png",
 	subnav: [
 		{ title: "Download", url: "https://www.jetbrains.com/go/" },
