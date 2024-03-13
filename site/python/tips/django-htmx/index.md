@@ -26,6 +26,8 @@ video: "https://youtube.com/embed/-Mn9z8BIlbo"
 
 What does that even mean?
 
+_Note: This article covers one use case for htmx. We won't go into 'how to' but provide links on where to get started (googling "django htmx" will give you a lot more)._
+
 ## What is the DOM?
 
 The Document Object Model (DOM) is a representation of the web page as a tree of nodes and objects.
@@ -52,7 +54,16 @@ This creates an infinite scroll effect that's also super speedy!
 
 ![template updated with htmx](code/template.png)
 
-**Note:** [htmx](https://htmx.org) needs to be added as a script to the page.
+The attributes here are:
+
+- [`hx-get`](https://htmx.org/attributes/hx-get/): the URL the element will use to issue an AJAX `GET` request to.
+- [`hx-target`](https://htmx.org/attributes/hx-target/): the element for swapping in the AJAX response, default is the `innerHTML` of the one issuing the AJAX request.
+- [`hx-swap`](https://htmx.org/attributes/hx-swap/): how the response will be swapped in relative to the target of an AJAX request, the default is `innerHTML`.
+- [`hx-trigger`](https://htmx.org/attributes/hx-trigger/): what triggers an AJAX request.
+
+In other words, `hx-get` is WHAT, `hx-target` is WHO, `hx-swap` is HOW and `hx-trigger` is WHEN.
+
+_Note: [htmx](https://htmx.org) needs to be added as a script to the page._
 
 ## Summary
 

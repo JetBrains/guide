@@ -14,6 +14,9 @@ seealso:
   - title: (documentation) Django model fields
     href: >-
       https://docs.djangoproject.com/en/5.0/ref/models/fields/
+  - title: (article) Blank or Null?
+    href: >-
+      https://simpleisbetterthancomplex.com/tips/2016/07/25/django-tip-8-blank-or-null.html
 thumbnail: ./thumbnail.png
 video: "https://youtube.com/embed/2BgoCIYkT4c"
 ---
