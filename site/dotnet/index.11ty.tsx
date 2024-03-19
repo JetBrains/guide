@@ -23,7 +23,7 @@ const frontmatter: ChannelFrontmatter = {
 	date: new Date(Date.UTC(2023, 10, 3)),
 	author: "maartenba",
 	logo: "thumbnail.png",
-	hero: "/assets/splashes/dotnet.png",
+	hero: "/assets/dotnet_splash.svg",
 	subnav: [
 		{ title: "Downloads", url: "https://www.jetbrains.com/dotnet/" },
 		{ title: "Blog", url: "https://blog.jetbrains.com/dotnet/" },
@@ -108,8 +108,6 @@ export default class DotNetHomepage {
 					title={channel.title}
 					subtitle={channel.subtitle!}
 					image={channel.hero!}
-					titleExtraClass={"has-text-white"}
-					subtitleExtraClass={"has-text-white"}
 				/>
 				<MultiColumnSection>
 					<div class="columns is-multiline is-centered">

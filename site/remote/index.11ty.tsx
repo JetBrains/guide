@@ -14,8 +14,8 @@ const frontmatter: ChannelFrontmatter = {
 	resourceType: "channel",
 	date: new Date(Date.UTC(2023, 8, 1)),
 	author: "pwe",
-	logo: "thumbnail.png",
-	hero: "/assets/splashes/remote_development.png",
+	logo: "thumbnail.svg",
+	hero: "/assets/remote_development.svg",
 	subnav: [
 		{
 			title: "Gateway",

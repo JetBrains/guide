@@ -18,7 +18,7 @@ const frontmatter: ChannelFrontmatter = {
 	// TODO Paul get this out of the schema
 	accent: "primary",
 	icon: "fa-brands fa-java",
-	hero: "/assets/splashes/java.png",
+	hero: "/assets/java_splash.svg",
 	logo: "thumbnail.png",
 	subnav: [
 		{ title: "Download", url: "https://www.jetbrains.com/idea/" },
@@ -61,8 +61,6 @@ export default class JavaHomepage {
 					title={channel.title}
 					subtitle={channel.subtitle!}
 					image={channel.hero!}
-					titleExtraClass={"has-text-white"}
-					subtitleExtraClass={"has-text-white"}
 				/>
 				{tips && (
 					<ListingSection

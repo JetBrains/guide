@@ -20,7 +20,7 @@ const frontmatter: ChannelFrontmatter = {
 	date: new Date(Date.UTC(2024, 2, 19)),
 	author: "hs",
 	logo: "thumbnail.png",
-	hero: "/assets/splashes/pytest.png",
+	hero: "/assets/pytest_splash.svg",
 	subnav: [
 		{ title: "pytest", url: "https://www.jetbrains.com/help/idea/pytest.html" },
 	],
@@ -51,8 +51,8 @@ class PytestHomepage {
 					title={channel.title}
 					subtitle={channel.subtitle!}
 					image={channel.hero!}
-					titleExtraClass={"has-text-black"}
-					subtitleExtraClass={"has-text-black"}
+					titleExtraClass={"has-text-white"}
+					subtitleExtraClass={"has-text-white"}
 				/>
 
 				{/*{links && (*/}

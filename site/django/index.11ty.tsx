@@ -16,7 +16,7 @@ const frontmatter: ChannelFrontmatter = {
 	date: new Date(Date.UTC(2023, 10, 20)),
 	author: "hs",
 	logo: "thumbnail.png",
-	hero: "/assets/splashes/django.png",
+	hero: "/assets/django_splash_gradient.svg",
 	subnav: [{ title: "PyCharm", url: "https://www.jetbrains.com/pycharm/" }],
 };
 
