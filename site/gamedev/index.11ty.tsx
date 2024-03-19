@@ -20,8 +20,8 @@ const frontmatter: ChannelFrontmatter = {
 	resourceType: "channel",
 	date: new Date(Date.UTC(2023, 9, 11)),
 	author: "maartenba",
-	logo: "thumbnail.png",
-	hero: "/assets/gamedev_splash.svg",
+	logo: "thumbnail.svg",
+	hero: "/assets/splashes/gamedev.svg",
 	subnav: [
 		{ title: "Download", url: "https://www.jetbrains.com/gamedev/" },
 		{
