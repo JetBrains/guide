@@ -23,8 +23,8 @@ const frontmatter: ChannelFrontmatter = {
 	author: "pwe",
 	accent: "primary",
 	icon: "fa-brands fa-js",
-	hero: "/assets/splashes/javascript.svg",
-	logo: "thumbnail.svg",
+	hero: "/assets/splashes/javascript.png",
+	logo: "thumbnail.png",
 	subnav: [
 		{ title: "Tips", url: "/javascript/tips/" },
 		{ title: "Links", url: "/javascript/links/" },

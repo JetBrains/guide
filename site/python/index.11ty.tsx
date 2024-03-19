@@ -16,8 +16,8 @@ const frontmatter: ChannelFrontmatter = {
 	author: "pwe",
 	accent: "primary",
 	icon: "fa-brands fa-python",
-	hero: "/assets/splashes/python.svg",
-	logo: "thumbnail.svg",
+	hero: "/assets/splashes/python.png",
+	logo: "thumbnail.png",
 	subnav: [
 		{ title: "Download", url: "https://www.jetbrains.com/pycharm/" },
 		{ title: "Blog", url: "https://blog.jetbrains.com/pycharm/" },
@@ -59,8 +59,8 @@ export default class PythonHomepage {
 					title={channel.title}
 					subtitle={channel.subtitle!}
 					image={channel.hero!}
-					subtitleExtraClass={"has-text-black"}
-					titleExtraClass={"has-text-black"}
+					subtitleExtraClass={"has-text-white"}
+					titleExtraClass={"has-text-white"}
 				/>
 				{tips && (
 					<ListingSection
