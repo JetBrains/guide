@@ -16,8 +16,8 @@ const frontmatter: ChannelFrontmatter = {
 	resourceType: "channel",
 	date: new Date(Date.UTC(2023, 9, 29)),
 	author: "hs",
-	logo: "thumbnail.png",
-	hero: "/assets/databases_splash.svg",
+	logo: "thumbnail.svg",
+	hero: "/assets/splashes/databases.svg",
 	subnav: [{ title: "DataGrip", url: "https://www.jetbrains.com/datagrip/" }],
 };
 

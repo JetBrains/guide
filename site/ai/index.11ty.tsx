@@ -12,13 +12,13 @@ import { renderToString } from "jsx-async-runtime";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Artificial Intelligence",
-	subtitle: "Discover JetBrains AI Assistant and Full Line Code Completion.",
+	subtitle: "Discover JetBrains AI Assistant\nand Full Line Code Completion.",
 	resourceType: "channel",
 	date: new Date(Date.UTC(2024, 2, 5)),
 	author: "hs",
-	logo: "thumbnail.png",
-	hero: "/assets/ai_splash.svg",
-	subnav: [{ title: "AI", url: "https://www.jetbrains.com/ai/" }],
+	logo: "thumbnail.svg",
+	hero: "/assets/splashes/ai.svg",
+	subnav: [{ title: "AI Assistant", url: "https://www.jetbrains.com/ai/" }],
 };
 
 class AIHomepage {

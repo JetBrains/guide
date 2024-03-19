@@ -24,8 +24,8 @@ const frontmatter: ChannelFrontmatter = {
 	author: "pwe",
 	accent: "primary",
 	icon: "fa-brands fa-js",
-	hero: "/assets/javascript_web_splash.svg",
-	logo: "thumbnail.png",
+	hero: "/assets/splashes/javascript.svg",
+	logo: "thumbnail.svg",
 	subnav: [
 		{ title: "Tips", url: "/javascript/tips/" },
 		{ title: "Links", url: "/javascript/links/" },
@@ -70,8 +70,9 @@ export default class WebStormHomepage {
 				<HeroSection
 					title={channel.title}
 					subtitle={channel.subtitle!}
-					subtitleExtraClass="has-text-black"
 					image={channel.hero!}
+					titleExtraClass={"has-text-white has-text-shadow"}
+					subtitleExtraClass={"has-text-white has-text-shadow"}
 				/>
 				{tips && (
 					<ListingSection
