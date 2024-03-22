@@ -35,7 +35,7 @@
 <kbd>⌘⌥J</kbd> (macOS) / <kbd>Ctrl+Alt+J</kbd> (Windows/Linux)                  - Surround With Live Template
 <kbd>⌘⌃G</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+J</kbd> (Windows/Linux)            - Select All Occurrences
 <kbd>^⇧G</kbd> (macOS) / <kbd>Alt+Shift+J</kbd> (Windows/Linux)                 - Unselect Occurrence
-<kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux)                - Find Files
+<kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux)                - Find in Files
 <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux)                     - Open Quick Switcher
 <kbd>^⇧⇥</kbd> (macOS) / <kbd>Ctrl+Shift+Tab</kbd> (Windows/Linux)              - Cycle Through Switcher
 <kbd>⌘↓</kbd> (macOS) / <kbd>F4</kbd> (Windows/Linux)                           - Jump to Source                           
@@ -44,6 +44,7 @@
 <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux)                  - Reformat File
 <kbd>⌘⌥⇧L</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+L</kbd> (Windows/Linux)           - Reformat Dialog
 <kbd>⌘P</kbd> (macOS) / <kbd>Ctrl+P</kbd> (Windows/Linux)                       - Show Parameter Information
+<kbd>⌃⌘P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux)                - Show Type Information
 <kbd>⌘⇧V</kbd> (macOS) / <kbd>Ctrl+Shift+V</kbd> (Windows/Linux)                - Clipboard History
 <kbd>⌘⇧E</kbd> (macOS) / <kbd>Ctrl+Shift+E</kbd> (Windows/Linux)                - Show Recent Locations
 <kbd>⇧F6</kbd> (macOS) / <kbd>Shift+F6</kbd> (Windows/Linux)                    - Refactor Rename
