@@ -9,7 +9,7 @@ subtitle: How to display a CSS color in the background in WebStorm.
 seealso:
   - title: Working with style sheets
     href: "https://www.jetbrains.com/help/webstorm/style-sheets.html#"
-thumbnail: ./thumbnail.png
+thumbnail: ./card.png
 screenshot: ./card.png
 ---
 
