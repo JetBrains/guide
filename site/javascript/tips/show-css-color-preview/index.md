@@ -9,8 +9,8 @@ subtitle: How to display a CSS color in the background in WebStorm.
 seealso:
   - title: Working with style sheets
     href: "https://www.jetbrains.com/help/webstorm/style-sheets.html#"
-thumbnail: ./card.png
-screenshot: ./card.png
+thumbnail: ./thumbnail.png
+screenshot: ./thumbnail.png
 ---
 
 You can display the color you're using in the stylesheet in the background of the editor.
