@@ -37,7 +37,8 @@ class AIHomepage {
 			// would look across the guide for ai content
 			//customFilter: (r) => r.topics?.includes("ai") == true,
 			// anything under AI that's a link
-			channel: channel.url,
+			customFilter: (r) =>
+				r.channel == channel.url || r.topics?.includes("ai-assistant") == true,
 			limit: 8,
 		});
 

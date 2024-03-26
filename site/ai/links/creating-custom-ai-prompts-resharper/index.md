@@ -1,5 +1,5 @@
 ---
-date: 2024-05-02
+date: 2024-03-02
 title: Creating Custom AI Assistant Prompts with ReSharper
 topics:
   - ai-assistant
