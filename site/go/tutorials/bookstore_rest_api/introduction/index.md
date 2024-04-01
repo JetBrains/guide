@@ -14,7 +14,7 @@ In this tutorial, we will be focusing on creating a web application using the po
 
 Let's begin with a short background.
 
-# Go
+## Go
 
 Go,
 also known as Golang, is a statically typed,
@@ -40,7 +40,7 @@ Overall, Go is a versatile language suitable for a wide range of applications,
 from web development to system programming, cloud services, and more.Its simplicity, efficiency,
 and built-in concurrency support make it an attractive choice for many developers and organizations.
 
-# Gin
+## Gin
 
 [Gin](https://gin-gonic.com/) is a popular web framework for Go (Golang) programming language.
 It is lightweight, fast, and feature-rich, making it a preferred choice for building web applications and APIs in Go.
