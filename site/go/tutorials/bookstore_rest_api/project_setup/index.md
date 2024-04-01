@@ -16,13 +16,17 @@ Before proceeding ahead, make sure to install the below dependencies.
 
 ### Go
 
+![GoLogo](./images/golang.png)
+
 Go is an open source programming language that makes it simple to build secure, scalable systems.
 
 ### Docker
 
+![Docker](./images/docker.png)
+
 Docker helps developers bring their ideas to life by conquering the complexity of app development.
 
-### PostgreSQL
+### Postgres
 
 The World's Most Advanced Open Source Relational Database
 
