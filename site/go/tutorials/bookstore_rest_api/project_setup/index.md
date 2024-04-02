@@ -1,35 +1,37 @@
 ---
 type: TutorialStep
 date: 2024-03-20
-title: "Project Setup"
+title: "Project Configuration"
 topics:
   - go
   - web
 author: mm
-subtitle: "Subtitles to be added."
+subtitle: "Setting Up Required Components"
 thumbnail: ./thumbnail.png
 ---
 
-## Project Setup
-
 Before proceeding ahead, make sure to install the below dependencies.
 
-### Go
+## Go
 
-![GoLogo](./images/golang.png)
+<img src="./images/golang.svg" height="250" width="250">
 
-Go is an open source programming language that makes it simple to build secure, scalable systems.
+[Go](https://go.dev/doc/install) is an open source programming language that makes it simple to build secure, scalable systems.
 
-### Docker
+## Docker
 
-<img src="./images/docker.png" height="600" width="600">
+<br>
+<img src="./images/docker-logo-blue.png" height="400" width="400">
+<br><br>
 
-Docker helps developers bring their ideas to life by conquering the complexity of app development.
+[Docker](https://www.docker.com/products/docker-desktop/) helps developers bring their ideas to life by conquering the complexity of app development.
 
-### Postgres
+## AWS CLI
 
-The World's Most Advanced Open Source Relational Database
+<br><br>
+<img src="./images/aws.png" height="250" width="250">
 
-### AWS CLI
+The [AWS Command Line Interface](https://aws.amazon.com/cli/) (CLI)
+is a unified tool to manage AWS services directly from the command line.
 
-The AWS Command Line Interface (CLI) is a unified tool to manage AWS services directly from the command line.
+Note: Make sure you have an AWS account.

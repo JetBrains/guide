@@ -16,7 +16,7 @@ We'll start with a brief introduction.
 
 ## Go
 
-<img src="./images/golang.png" height="400" width="400">
+<img src="./images/golang.svg" height="400" width="400">
 
 Go,
 also known as Golang, is a statically typed,
