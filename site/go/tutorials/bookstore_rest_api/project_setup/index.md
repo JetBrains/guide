@@ -14,14 +14,14 @@ Before proceeding ahead, make sure to install the below dependencies.
 
 ## Go
 
-<img src="./images/golang.svg" height="250" width="250">
+<img alt="golang" src="./images/golang.svg" height="250" width="250">
 
 [Go](https://go.dev/doc/install) is an open source programming language that makes it simple to build secure, scalable systems.
 
 ## Docker
 
 <br>
-<img src="./images/docker-logo-blue.png" height="400" width="400">
+<img alt="docker" src="./images/docker-logo-blue.png" height="400" width="400">
 <br><br>
 
 [Docker](https://www.docker.com/products/docker-desktop/) helps developers bring their ideas to life by conquering the complexity of app development.
@@ -29,7 +29,8 @@ Before proceeding ahead, make sure to install the below dependencies.
 ## AWS CLI
 
 <br><br>
-<img src="./images/aws.png" height="250" width="250">
+
+<img alt="awscli" src="./images/aws.png" height="250" width="250">
 
 The [AWS Command Line Interface](https://aws.amazon.com/cli/) (CLI)
 is a unified tool to manage AWS services directly from the command line.
