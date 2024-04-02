@@ -46,6 +46,8 @@ and built-in concurrency support make it an attractive choice for many developer
 
 <img alt="gin" src="./images/golang_gin.png" height="300" width="300">
 
+<br><br>
+
 [Gin](https://gin-gonic.com/) is a popular web framework for Go (Golang) programming language.
 It is lightweight, fast, and feature-rich, making it a preferred choice for building web applications and APIs in Go.
 
