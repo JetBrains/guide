@@ -16,7 +16,7 @@ We'll start with a brief introduction.
 
 ## Go
 
-<img src="./images/golang.svg" height="400" width="400">
+<img alt="golang" src="./images/golang.svg" height="400" width="400">
 
 Go,
 also known as Golang, is a statically typed,
@@ -44,7 +44,7 @@ and built-in concurrency support make it an attractive choice for many developer
 
 ## Gin
 
-<img src="./images/golang_gin.png" height="300" width="300">
+<img alt="gin" src="./images/golang_gin.png" height="300" width="300">
 
 [Gin](https://gin-gonic.com/) is a popular web framework for Go (Golang) programming language.
 It is lightweight, fast, and feature-rich, making it a preferred choice for building web applications and APIs in Go.
