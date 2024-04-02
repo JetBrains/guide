@@ -9,3 +9,5 @@ author: mm
 subtitle: "Subtitles to be added."
 thumbnail: ./thumbnail.png
 ---
+
+## Setting up GORM
