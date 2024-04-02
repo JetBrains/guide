@@ -22,7 +22,7 @@ Go is an open source programming language that makes it simple to build secure, 
 
 ### Docker
 
-![Docker](./images/docker.png)
+<img src="./images/docker.png" height="600" width="600">
 
 Docker helps developers bring their ideas to life by conquering the complexity of app development.
 
