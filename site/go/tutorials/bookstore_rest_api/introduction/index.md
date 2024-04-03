@@ -18,7 +18,7 @@ We'll start with a brief introduction.
 
 <img alt="golang" src="./images/golang.svg" height="400" width="400">
 
-Go,
+[Go](https://go.dev/),
 also known as Golang, is a statically typed,
 compiled programming language.
 Go is characterized by its simplicity,
