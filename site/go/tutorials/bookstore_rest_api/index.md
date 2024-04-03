@@ -11,7 +11,8 @@ subtitle: "Sample Text"
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/
-  - ./project_setup/
+  - ./prerequisites/
   - ./db_setup/
+  - ./project_layout/
   - ./rest_api/
 ---
