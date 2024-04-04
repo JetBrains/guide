@@ -49,6 +49,7 @@ Run the following command to install.
 
 ```bash
 go get -u gorm.io/gorm
+go get gorm.io/driver/postgres
 ```
 
 ### Validator
