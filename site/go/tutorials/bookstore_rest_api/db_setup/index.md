@@ -28,3 +28,9 @@ Or you can directly search for the postgres image in Docker Desktop.
 Once the database is up and running, you will see it appearing in the list of containers.
 
 ![docker2](./images/docker2.png)
+
+The postgres container runs on default port 5432. Next, get inside the container and create a new db.
+
+![create_db_0](./images/create_db_0.png)
+
+![create_db_1](./images/create_db.png)

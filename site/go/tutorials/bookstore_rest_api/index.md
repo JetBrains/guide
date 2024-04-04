@@ -14,5 +14,5 @@ tutorialItems:
   - ./prerequisites/
   - ./db_setup/
   - ./project_layout/
-  - ./rest_api/
+  - ./rest_api_1/
 ---
