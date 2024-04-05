@@ -2,7 +2,7 @@
 date: 2023-12-07
 title: Harnessing the Power of AI Assistant in IntelliJ IDEA
 topics:
-  - ai-assistant
+  - ai
 author: vt
 subtitle: In this talk we will dive into the architecture and implementation of JetBrains AI – the backbone of AI Assistant in JetBrains IDEs, Grazie, and other JetBrains products.
 thumbnail: ./thumbnail.png
@@ -10,8 +10,9 @@ video: "https://www.youtube.com/watch?v=EfIYJKw8AkA"
 linkURL: "https://www.youtube.com/watch?v=EfIYJKw8AkA"
 ---
 
-The JetBrains AI platform covers a broad range of functionality, from coding to writing assistance. We will discuss both JetBrains’s own models and the caveats of integration with some well-known LLM providers. We will also shed light on inference techniques used in JetBrains AI products.
+**Author: Vladislav Tankov**
 
-VLADISLAV TANKOV
 Team Lead of the JetBrains AI and Grazie projects at JetBrains
 Vladislav created the Grazie product and the platform that has recently morphed into JetBrains AI – both from scratch. He has diverse experience in backend, frontend, and DevOps and is the creator of Kotless – a serverless framework for Kotlin and other open-source libraries.
+
+The JetBrains AI platform covers a broad range of functionality, from coding to writing assistance. We will discuss both JetBrains’s own models and the caveats of integration with some well-known LLM providers. We will also shed light on inference techniques used in JetBrains AI products.

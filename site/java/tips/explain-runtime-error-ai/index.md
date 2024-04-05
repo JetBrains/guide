@@ -2,7 +2,7 @@
 date: 2024-02-16
 title: Explain Runtime Error with AI Assistant
 topics:
-  - ai-assistant
+  - ai
   - java
 author: md
 subtitle: Let AI Assistant explain runtime errors to you

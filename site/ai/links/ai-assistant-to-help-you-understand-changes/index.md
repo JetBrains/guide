@@ -2,7 +2,7 @@
 date: 2024-01-10
 title: Use JetBrains AI Assistant To Help You Understand Changes In Your Code
 topics:
-  - ai-assistant
+  - ai
 author: khalidabuhakmeh
 subtitle: Luckily, code never lies, and with the growing capabilities of LLMs and AI Assistants to parse and summarize input, we can start to focus our understanding of prior work and make plans to extend or modify a codebase.
 thumbnail: ./thumbnail.png
@@ -11,6 +11,8 @@ linkURL: "https://blog.jetbrains.com/dotnet/2024/01/10/use-jetbrains-ai-assistan
 
 **Author: Khalid Abuhakmeh**
 
-In this post, we’ll see how to use JetBrains AI Assistant to summarize past commits in a Git repository, refine the summary to contributors, and further our understanding of a contributor’s work within a symbol. Finally, you’ll get a few more prompt suggestions to try for yourself.
+This blog post discusses how software developers can use JetBrains AI Assistant to summarize and understand a codebase. It explains how to use the AI Assistant to summarize past commits in a Git repository and refine the summaries to specific contributors or symbols within the codebase.
 
-Before starting, you’ll need the JetBrains AI Assistant plug-in enabled and a valid subscription to the [JetBrains AI Assistant service](https://www.jetbrains.com/ai/).
+The post provides step-by-step instructions on how to use the AI Assistant plug-in in JetBrains IDEs and highlights various prompt suggestions to further refine the summaries and gain insights into the codebase, such as grouping summaries by contributors or analyzing changes within specific files. It also emphasizes the importance of double-checking the responses for accuracy and completeness.
+
+The post concludes by highlighting the benefits of using AI Assistant to improve team efficiency, eliminate bugs, and enhance software development.

@@ -2,7 +2,7 @@
 date: 2024-02-16
 title: Write documentation with AI Assistant
 topics:
-  - ai-assistant
+  - ai
   - java
 author: md
 subtitle: Generate documentation for your code with AI Assistant

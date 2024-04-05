@@ -2,7 +2,7 @@
 date: 2023-12-07
 title: JetBrains AI Launch Event
 topics:
-  - ai-assistant
+  - ai
 author: jb
 subtitle: See demonstrations of some of AI Assistant’s most exciting features as well as a deeper dive into how it works.
 thumbnail: ./thumbnail.png

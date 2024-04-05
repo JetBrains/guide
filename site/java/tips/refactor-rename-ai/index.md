@@ -2,7 +2,7 @@
 date: 2023-12-12
 title: Refactor rename with AI Assistant
 topics:
-  - ai-assistant
+  - ai
   - refactoring
 author: md
 subtitle: Use the power of AI Assistant for even better naming suggestions
