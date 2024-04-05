@@ -3,7 +3,7 @@ date: 2024-04-40
 title: Full Line Code Completion in JetBrains IDEs, All You Need to Know
 topics:
   - ai
-author: ekaterinaryabukha
+author: er
 subtitle: What is full line code completion is, how does it work, what languages are supported, and how can you get started
 thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/blog/2024/04/04/full-line-code-completion-in-jetbrains-ides-all-you-need-to-know/"
