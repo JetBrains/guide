@@ -5,7 +5,7 @@ topics:
   - gamedev
   - rider
   - unity
-  - ai-assistant
+  - ai
 author: maartenba
 subtitle: In terms of game development, I am a total beginner. Can I script a Unity game with AI Assistant?
 thumbnail: ./thumbnail.jpg
