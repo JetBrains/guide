@@ -7,7 +7,7 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/idea/work-with-commits.html#ai-generate-commit-messages
 topics:
-  - ai-assistant
+  - ai
 author: hs
 thumbnail: ./thumbnail.png
 animatedGif:

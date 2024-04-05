@@ -1,7 +1,7 @@
 ---
-title: AI Assistant
+title: AI
 subtitle: >-
-  JetBrains AI Assistant is deeply integrated, context aware AI, right in your IDE.
+  Comprising JetBrains AI Assistant and Full Line Code Completion
 logo: light.png
 website: "https://www.jetbrains.com/ai/"
 topicType: technology

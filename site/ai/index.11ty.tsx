@@ -11,14 +11,13 @@ import { LINK_RESOURCE, TIP_RESOURCE } from "../../src/resourceType";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Artificial Intelligence",
-	subtitle:
-		"Discover JetBrains AI Assistant, Large Language Models and Artificial Intelligence (AI).",
+	subtitle: "Discover JetBrains AI Assistant and Full Line Code Completion.",
 	resourceType: "channel",
 	date: new Date(Date.UTC(2024, 2, 5)),
 	author: "hs",
 	logo: "thumbnail.png",
 	hero: "/assets/ai_splash.svg",
-	subnav: [{ title: "AI Assistant", url: "https://www.jetbrains.com/ai/" }],
+	subnav: [{ title: "AI", url: "https://www.jetbrains.com/ai/" }],
 };
 
 class AIHomepage {
@@ -44,7 +43,7 @@ class AIHomepage {
 		const tips = this.getResources({
 			resourceTypes: [TIP_RESOURCE],
 			customFilter: (r) =>
-				r.channel == channel.url || r.topics?.includes("ai-assistant") == true,
+				r.channel == channel.url || r.topics?.includes("ai") == true,
 			limit: 8,
 		});
 

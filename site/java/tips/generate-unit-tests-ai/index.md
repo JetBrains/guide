@@ -2,7 +2,7 @@
 date: 2024-03-05
 title: Generate unit tests
 topics:
-  - ai-assistant
+  - ai
   - java
 author: md
 subtitle: Generate unit tests with AI Assistant

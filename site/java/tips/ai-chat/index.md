@@ -2,7 +2,7 @@
 date: 2024-03-05
 title: AI Assistant Chat
 topics:
-  - ai-assistant
+  - ai
   - java
 author: md
 subtitle: Chat with AI Assistant inside the IDE

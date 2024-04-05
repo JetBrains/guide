@@ -2,7 +2,7 @@
 date: 2024-02-27
 title: How to Generate PHP Tests With JetBrains AI Assistant
 topics:
-  - ai-assistant
+  - ai
 author: taniagoral
 subtitle: JetBrains AI Assistant, coupled with PhpStorm, can bring about a transformative change in your testing routine. Whether you’re an experienced tester or you barely write any tests at all, there’s definitely something in store for you!
 thumbnail: ./thumbnail.png
@@ -11,8 +11,6 @@ linkURL: "https://blog.jetbrains.com/phpstorm/2024/02/how-to-generate-php-tests-
 
 **Author: Tania Goral**
 
-Hello, enthusiastic web creators!
+This blog post discusses how to generate PHP tests using JetBrains AI Assistant. It highlights the importance of testing in software development and mentions that many developers skip or postpone writing tests due to the perceived complexity of the task. However, with the help of JetBrains AI Assistant, testing can become easier and more efficient. The post introduces a series of three blog posts that explain different ways to benefit from AI when testing PHP applications.
 
-Testing is imperative in the world of software development, as it ensures our code is working as expected. However, writing tests by hand can be tedious, and we often postpone doing it or sometimes skip the process altogether, especially when deadlines are looming.
-
-According to the recent JetBrains DevEcosystem survey, 31% of PHP developers don’t write tests. Could this be due to the perception of testing as a complex and daunting task? Nevertheless, it’s no longer an issue thanks to JetBrains AI Assistant.
+The first post focuses on automating unit testing using AI Assistant, while the second post discusses how to tweak AI prompts to improve PHP tests. The final post explores how to make AI Assistant generate PHP test implementations.

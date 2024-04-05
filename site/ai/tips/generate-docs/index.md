@@ -6,7 +6,7 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Generate Documentation
     href: "https://www.jetbrains.com/help/idea/generate-documentation.html"
 topics:
-  - ai-assistant
+  - ai
 author: hs
 thumbnail: ./thumbnail.png
 animatedGif:

@@ -7,7 +7,7 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/idea/use-prompts-to-explain-and-refactor-your-code.html#ai-explain-code
 topics:
-  - ai-assistant
+  - ai
 author: hs
 thumbnail: ./thumbnail.png
 animatedGif:

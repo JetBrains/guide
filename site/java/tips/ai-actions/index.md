@@ -2,7 +2,7 @@
 date: 2024-03-04
 title: AI Actions
 topics:
-  - ai-assistant
+  - ai
   - java
 author: md
 subtitle: Use AI Actions in the editor

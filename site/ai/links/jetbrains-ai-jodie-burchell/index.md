@@ -2,7 +2,7 @@
 date: 2024-01-16
 title: JetBrains AI with Jodie Burchell
 topics:
-  - ai-assistant
+  - ai
 author: jb
 subtitle: Jodie joins the show today to talk about why the company decided to take this step, the design challenges of adding AI tools to software products, and the team’s particular interest in auto-generating code documentation.
 thumbnail: ./thumbnail.png
