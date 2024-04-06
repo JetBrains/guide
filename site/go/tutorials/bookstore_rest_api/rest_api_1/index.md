@@ -145,6 +145,8 @@ Once our models are prepared, we'll proceed to implement `db.DBMigrate()`. This 
 
 ## Defining Models
 
+### Book Model
+
 Let's begin by creating our `Book` model.
 
 ![book_model](./images/book_model.png)
@@ -205,4 +207,103 @@ func ValidateDate(pubDate string) (time.Time, error) {
 	return date, nil
 }
 
+```
+
+In this Go struct, we have the following fields:
+
+- `gorm.Model` - this is an embedded field. It means that the Book struct includes all the fields defined in gorm.
+- `Id` - This is an integer (int64) field that represents the unique identifier of a book.
+- `Title` - This is a string field representing the title of a book.
+- `ISBN` - This is another string field which stands for International Standard Book Number.
+- `Image` - This is a string that might contain a link or path to the image of the book cover.
+- `PublicationDate` - This is of type time.Time, storing the book's publication date.
+
+```go
+type BookParams struct {
+	Id              int64  `json:"id"`
+	Title           string `json:"title"`
+	ISBN            string `json:"isbn"`
+	PublicationDate string `json:"publication_date"`
+}
+```
+
+The following structs will be used specifically for creating/updating book.
+
+```go
+type BookParams struct {
+	Id              int64  `json:"id"`
+	Title           string `json:"title"`
+	ISBN            string `json:"isbn"`
+	PublicationDate string `json:"publication_date"`
+}
+```
+
+```go
+type UpdateBookParams struct {
+	Title           string `json:"title" binding:"required"`
+	ISBN            string `json:"isbn" binding:"required"`
+	PublicationDate string `json:"publication_date" binding:"required"`
+}
+```
+
+This is an interface that declares the `ParsePublicationDate` method. Any type that defines
+this method is said to satisfy the `DateParser` interface. This method returns a `time.Time` type and an error.
+
+```go
+type DateParser interface {
+	ParsePublicationDate() (time.Time, error)
+}
+```
+
+- `ParsePublicationDate`: This function, defined for both `BookParams` and `UpdateBookParams`,
+  uses the `ValidateDate` function to attempt to parse the `PublicationDate` string
+  property and convert it to a `time.Time` type.
+  <br><br>
+- `ValidateDate`: This function takes a string argument representing a date and attempts
+  to parse it into a time.Time type using the standard date format "2006-01-02"
+  (which represents "YYYY-MM-DD"). If successful, the parsed date and a nil error are
+  returned; if unsuccessful, the zero value for `time.Time` and the error are returned.
+
+```go
+// ParsePublicationDate Implementing the DateParser interface
+func (params UpdateBookParams) ParsePublicationDate() (time.Time, error) {
+	return ValidateDate(params.PublicationDate)
+}
+
+func ValidateDate(pubDate string) (time.Time, error) {
+	standardFormat := "2006-01-02" // This layout represents the date format "YYYY-MM-DD"
+	date, err := time.Parse(standardFormat, pubDate)
+	if err != nil {
+		return time.Time{}, err
+	}
+	return date, nil
+}
+```
+
+### Author Model
+
+- The `Author` struct: The `Id` and `Name` fields represent the unique identifier and name of an author, respectively.
+  <br>
+  The Books field is of type `[]Book`, which suggests that an author can have multiple books associated with them. The tag `gorm:"many2many:author_books;"` specifies a many-to-many relationship between books and authors.
+  <br><br>
+- The `AuthorBook` struct: This is used to model the many-to-many relationship between authors and books. It includes fields AuthorID and BookID, and the `binding:"required"` tag indicates that these fields are mandatory.
+
+![author_model](./images/author_modal.png)
+
+```go
+package models
+
+import "gorm.io/gorm"
+
+type Author struct {
+	gorm.Model
+	Id    int64  `json:"ID" gorm:"primaryKey"`
+	Name  string `json:"name" binding:"required"`
+	Books []Book `gorm:"many2many:author_books;"`
+}
+
+type AuthorBook struct {
+	AuthorID int64 `json:"author_id" binding:"required"`
+	BookID   int64 `json:"book_id" binding:"required"`
+}
 ```
