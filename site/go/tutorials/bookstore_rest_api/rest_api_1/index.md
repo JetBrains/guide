@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2024-03-20
-title: "Creating Models: Book & Author"
+title: "Data Models"
 topics:
   - go
   - web
@@ -306,4 +306,62 @@ type AuthorBook struct {
 	AuthorID int64 `json:"author_id" binding:"required"`
 	BookID   int64 `json:"book_id" binding:"required"`
 }
+```
+
+### Customer & Review Model
+
+![customer_review_modal](./images/customer_review_modal.png)
+
+- **Customer**: Represents a Customer with ID, FirstName, LastName, Email, PhoneNumber, and Address as properties. The struct tag binding:"required" indicates that these fields must be provided.
+- **Review**: Represents a review completed by a customer on a book. It includes the ID of the customer and the book, a rating, and a comment. There are also references to the Customer and Book structures, creating a One-to-Many relationship through the keys CustomerID and BookID.
+- **ReviewParams**: A helper struct to validate incoming requests data when creating a book review. It has CustomerID, BookID, Rating, and Comment fields, all of which are required except Comment.
+- **CustomerParams**: A helper struct to validate incoming requests data when creating a new customer.
+- **ReviewList**: A simplified version of Review probably used while sending reviews info in responses.
+
+The `gorm:"foreignKey:CustomerID"` and `gorm:"foreignKey:BookID"` tags in Review struct inform the ORM about the relational mapping between the models. The `json:"-"` tag means this field won't be serialized when the struct is converted to JSON.
+
+```go
+package models
+
+import "gorm.io/gorm"
+
+type Customer struct {
+	gorm.Model
+	Id          int64  `json:"ID" gorm:"primaryKey"`
+	FirstName   string `json:"first_name" binding:"required"`
+	LastName    string `json:"last_name" binding:"required"`
+	Email       string `json:"email" binding:"required"`
+	PhoneNumber string `json:"phone_number" binding:"required"`
+	Address     string `json:"address" binding:"required"`
+}
+
+type Review struct {
+	gorm.Model
+	CustomerID int64    `json:"customer_id" binding:"required"`
+	BookID     int64    `json:"book_id" binding:"required"`
+	Rating     int      `json:"rating" binding:"required"`
+	Comment    string   `json:"comment,omitempty"`
+	Customer   Customer `gorm:"foreignKey:CustomerID" json:"-"`
+	Book       Book     `gorm:"foreignKey:BookID" json:"-"`
+}
+
+type ReviewParams struct {
+	CustomerID int64  `json:"customer_id" binding:"required"`
+	BookID     int64  `json:"book_id" binding:"required"`
+	Rating     int    `json:"rating" binding:"required" validate:"min=1,max=5"`
+	Comment    string `json:"comment,omitempty" binding:"required"`
+}
+
+type CustomerParams struct {
+	FirstName string `json:"first_name" binding:"required"`
+	LastName  string `json:"last_name" binding:"required"`
+	Address   string `json:"address" binding:"required"`
+}
+
+type ReviewList struct {
+	Id      int64  `json:"id"`
+	Rating  int    `json:"rating"`
+	Comment string `json:"comment"`
+}
+
 ```
