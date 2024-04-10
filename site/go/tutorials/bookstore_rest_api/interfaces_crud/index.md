@@ -200,7 +200,18 @@ func (c Client) UpdateBookCover(_ context.Context, bookId int64, bookImageURL st
 
 Let's break it down
 
-Add Book
+**Add Book**
+
+The function accepts two parameters:
+
+1. A `context.Context`, typically employed for request-scoping, carrying deadlines, and cancellation signals.
+2. An instance of the structure `models.DateParser`, assumed to contain parsing methods and properties necessary for book addition.
+
+Upon successful execution, it yields either a pointer to a `models.BookParams` structure or an error.
+
+Initially, the function retrieves the maximum `Id` presently utilized in the Book table of the database. Subsequently, it uses this value to increment the `bookId`, ensuring uniqueness. It also sets the `Title` and `ISBN` from the parameters and parses the `PublicationDate` from `bookParams`.
+
+Following this, the function endeavors to create a new record in the database using the instantiated Book. In case of an error during this creation process, it logs the error and returns an error. If the operation succeeds, it returns the updated parameters (containing the `Id` of the new Book).
 
 ```go
 func (c Client) AddBook(ctx context.Context, bookParams models.DateParser) (*models.BookParams, error) {
@@ -232,7 +243,12 @@ func (c Client) AddBook(ctx context.Context, bookParams models.DateParser) (*mod
 
 ```
 
-List Book
+**List Book**
+
+The `ListBooks` function is employed to retrieve all book entries from a database. When
+invoked, it gathers all book records stored in the database and places them into a slice
+of `models.Book`. Subsequently, it returns this slice along with any errors that may have
+occurred during the database operation.
 
 ```go
 func (c Client) ListBooks(ctx context.Context) ([]models.Book, error) {
@@ -243,7 +259,12 @@ func (c Client) ListBooks(ctx context.Context) ([]models.Book, error) {
 
 ```
 
-Update Book
+**Update Book**
+
+The function takes a `context.Context`, a `models.DateParser` interface, and a `bookId` as its arguments.
+Initially, it tries to find a book record in the database that matches the provided `bookId`. If no record is found, it returns false and an error message.
+If the book record is found, it proceeds to check the type of `updateBookParams` object. If it matches `models.UpdateBookParams` type, it parses the `PublicationDate` and updates the book record in the database using the provided new values.
+Finally, the function returns `true` and `nil` indicating the successful update of the book record.
 
 ```go
 func (c Client) UpdateBook(_ context.Context, updateBookParams models.DateParser, bookId int64) (bool, error) {
@@ -263,7 +284,11 @@ func (c Client) UpdateBook(_ context.Context, updateBookParams models.DateParser
 
 ```
 
-Delete Book
+**Delete Book**
+
+The function takes a `context.Context` and a `bookId` as arguments. It starts by attempting to find a book record in the database associated with the given `bookId`.
+If no book record is found, it returns an error indicating no book is associated with the provided ID.
+If a book record is found, the function proceeds to delete this record using GORM Delete method. The Unscoped call ensures a hard delete, which means the record is removed from the database entirely, not just marked as deleted.
 
 ```go
 func (c Client) DeleteBook(_ context.Context, bookId int64) error {
@@ -280,7 +305,13 @@ func (c Client) DeleteBook(_ context.Context, bookId int64) error {
 
 ```
 
-Update Book Cover
+**Update Book Cover**
+
+The function starts by trying to find a book record in the database that matches the provided `bookId`. If no matching book is found, it returns an error message.
+If a matching book record is found, the function proceeds to update the `Image` field of the book record with the new `bookImageURL` provided.
+Finally, the function returns true and nil, indicating that the book's cover information was updated successfully.
+
+I'll be addressing the topic of uploading the book cover within the HTTP handler section.
 
 ```go
 func (c Client) UpdateBookCover(_ context.Context, bookId int64, bookImageURL string) (bool, error) {
