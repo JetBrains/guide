@@ -19,6 +19,8 @@ seealso:
       https://www.jetbrains.com/guide/python/tips/django-blank-null/
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/embed/56izkK7PBN8"
+obsoletes:
+  - /python/tips/
 ---
 
 We all know we should "Automate the Boring Stuff™", but how often are you manually checking PRs against your internal style guide?

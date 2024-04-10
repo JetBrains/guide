@@ -15,6 +15,8 @@ seealso:
     href: "https://www.jetbrains.com/help/pycharm/auto-completing-code.html"
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/Tc1n43evD_8"
+obsoletes:
+  - /python/tips/
 ---
 
 _PyCharm can autocomplete, even inside a Django string._
