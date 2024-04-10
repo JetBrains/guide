@@ -116,6 +116,29 @@ module.exports = function (eleventyConfig: any) {
 	eleventyConfig.addGlobalData("commandLineArgs", options);
 	eleventyConfig.addPlugin(pluginRss);
 
+	// short code
+	eleventyConfig.addShortcode("cta", async function (msgOverride: any) {
+		// @ts-ignore
+		const callToAction = this.ctx.environments.callToAction;
+		if (callToAction) {
+			let { message, action, url } = callToAction;
+			if (msgOverride) {
+				message = msgOverride;
+			}
+
+			return `<div class="message">
+				<div class="message-body has-text-left">									
+						<p>${message}</p>					
+						<p><a href="${url}" class="button is-info is-dark">${action}</a></p>										
+				</div>
+			</div>
+		`;
+		} else {
+			// @ts-ignore
+			console.log(`missing call to action in: ${this.page.inputPath}`);
+		}
+	});
+
 	return {
 		dir: {
 			input: "./site",

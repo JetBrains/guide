@@ -1,3 +1,8 @@
 {
-	"channel": "/dotnet/"
+	"channel": "/dotnet/",
+	"callToAction": {
+		"message": ".NET developers love <strong>JetBrains dotUltimate</strong> and we think you will too. Check it out! ",
+		"action": "Learn More",
+		"url": "https://www.jetbrains.com/dotnet/"
+	}
 }
