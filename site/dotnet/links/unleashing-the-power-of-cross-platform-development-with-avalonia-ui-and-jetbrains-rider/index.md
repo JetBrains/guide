@@ -24,3 +24,8 @@ Mike's career has revolved around helping developers create cross-platform apps,
 
 - [Avalonia UI](https://avaloniaui.net/)
 - [Twitter](https://twitter.com/MikeCodesDotNET)
+
+### See also
+
+- [Avalonia plugin for Rider](https://plugins.jetbrains.com/plugin/14839-avaloniarider)
+- [Avalonia plugin for Rider (source code)](https://github.com/ForNeVeR/AvaloniaRider/)
