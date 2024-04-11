@@ -20,6 +20,8 @@ seealso:
     href: "https://htmx.org"
 thumbnail: ./thumbnail.png
 video: "https://youtube.com/embed/-Mn9z8BIlbo"
+obsoletes:
+  - /python/tips/django-htmx/
 ---
 
 [django-debug-toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/installation.html) is telling you your "DOM loading" is slow...

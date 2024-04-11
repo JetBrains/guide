@@ -19,6 +19,8 @@ seealso:
       https://simpleisbetterthancomplex.com/tips/2016/07/25/django-tip-8-blank-or-null.html
 thumbnail: ./thumbnail.png
 video: "https://youtube.com/embed/2BgoCIYkT4c"
+obsoletes:
+  - /python/tips/django-blank-null/
 ---
 
 Are you always getting confused between `blank=True` and `null=True` in Django?

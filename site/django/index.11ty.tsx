@@ -7,7 +7,11 @@ import {
 	ChannelHomepageData,
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
-import { LINK_RESOURCE, TUTORIAL_RESOURCE } from "../../src/resourceType";
+import {
+	TIP_RESOURCE,
+	LINK_RESOURCE,
+	TUTORIAL_RESOURCE,
+} from "../../src/resourceType";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Django",
@@ -30,6 +34,13 @@ export default class DjangoHomepage {
 
 	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
+
+		const tips = this.getResources({
+			resourceTypes: [TIP_RESOURCE],
+			limit: 4,
+			//customFilter: (r) => r.channel == channel.url || r.topics?.includes("django") == true,
+			customFilter: (r) => r.topics?.includes("django") == true,
+		});
 
 		const links = this.getResources({
 			resourceTypes: [LINK_RESOURCE],
@@ -54,6 +65,16 @@ export default class DjangoHomepage {
 					titleExtraClass={"has-text-white"}
 					subtitleExtraClass={"has-text-white"}
 				/>
+
+				{tips && (
+					<ListingSection
+						title={`Latest tips`}
+						resources={tips}
+						separator={false}
+						includeCardFooter={true}
+						moreLink={`${channel.url}tips/`}
+					/>
+				)}
 
 				{links && (
 					<ListingSection

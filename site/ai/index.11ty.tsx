@@ -37,15 +37,15 @@ class AIHomepage {
 			//customFilter: (r) => r.topics?.includes("ai") == true,
 			// anything under AI that's a link
 			customFilter: (r) =>
-				r.channel == channel.url || r.topics?.includes("ai-assistant") == true,
+				r.channel == channel.url || r.topics?.includes("ai") == true,
 			limit: 8,
 		});
 
 		const tips = this.getResources({
 			resourceTypes: [TIP_RESOURCE],
 			customFilter: (r) =>
-				r.channel == channel.url || r.topics?.includes("ai") == true,
-			limit: 8,
+				r.channel == channel.url && r.topics?.includes("ai") == true,
+			limit: 4,
 		});
 
 		return (
