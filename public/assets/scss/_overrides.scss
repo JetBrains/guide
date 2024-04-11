@@ -102,6 +102,9 @@ a.navbar-item:focus-within {
 .image.is-contained img {
   object-fit: contain;
 }
+.navbar-item img.logo {
+  margin-top: -4px;
+}
 
 a.link-external:after {
   content: " \2197";
