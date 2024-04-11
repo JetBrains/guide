@@ -17,7 +17,7 @@ seealso:
 thumbnail: ./thumbnail.png
 video: "https://youtube.com/embed/mewTap8ZQ6w"
 obsoletes:
-  - /python/tips/
+  - /python/tips/django-query-speed-up/
 ---
 
 You have enabled [django-debug-toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/installation.html) to investigate a slow page load time, and it shows that you have a database query taking over 2 seconds!

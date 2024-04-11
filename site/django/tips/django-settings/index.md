@@ -16,7 +16,7 @@ seealso:
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/Tc1n43evD_8"
 obsoletes:
-  - /python/tips/
+  - /python/tips/django-settings/
 ---
 
 _PyCharm can autocomplete, even inside a Django string._

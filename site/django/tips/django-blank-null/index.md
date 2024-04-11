@@ -20,7 +20,7 @@ seealso:
 thumbnail: ./thumbnail.png
 video: "https://youtube.com/embed/2BgoCIYkT4c"
 obsoletes:
-  - /python/tips/
+  - /python/tips/django-blank-null/
 ---
 
 Are you always getting confused between `blank=True` and `null=True` in Django?

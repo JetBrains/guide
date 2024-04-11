@@ -37,9 +37,9 @@ export default class DjangoHomepage {
 
 		const tips = this.getResources({
 			resourceTypes: [TIP_RESOURCE],
-			limit: 10,
-			customFilter: (r) =>
-				r.channel == channel.url || r.topics?.includes("django") == true,
+			limit: 4,
+			//customFilter: (r) => r.channel == channel.url || r.topics?.includes("django") == true,
+			customFilter: (r) => r.topics?.includes("django") == true,
 		});
 
 		const links = this.getResources({
