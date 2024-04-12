@@ -3,7 +3,7 @@ import { TopicFrontmatter } from "../_includes/resources/topic/TopicModels";
 import { ResourceMap } from "./ResourceModels";
 import path from "upath";
 
-// Some feature flags to opt-in/opt-out of, depending how far we want to go with JSON schemas:
+// Some feature flags to opt-in/opt-out of, depending on how far we want to go with JSON schemas:
 const featureFlags = {
 	// traverse JSON schema's "allOf" node in addition to the schema's own "properties" node
 	traverseAllOfProperties: true,
