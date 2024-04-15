@@ -23,7 +23,7 @@ const HorizontalResourceCard = ({
 	const { author, topics } = references;
 	let thumbnail = resource.getThumbnail();
 
-	const columnCssClass = columnClassName ? columnClassName : "is-12";
+	const columnCssClass = columnClassName ? columnClassName : "is-12 pb-0";
 
 	return (
 		<div class={`column ${columnCssClass}`}>
