@@ -16,4 +16,5 @@ tutorialItems:
   - ./project_layout/
   - ./data_models/
   - ./interfaces_crud/
+  - ./http_handlers/
 ---

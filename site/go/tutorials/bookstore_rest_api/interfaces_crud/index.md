@@ -101,6 +101,18 @@ type Review interface {
 
 ```
 
+Before going ahead make sure to update the `DBClient interface under _database/db.go_.
+
+![dbclient_abstract](./images/dbclient_abstract.png)
+
+It is also composed of four other interfaces
+Book, Author, Customer, and Review from the
+abstract package. This means that the DBClient interface
+includes all the methods declared in these four interfaces.
+In other words, a struct that intends to implement DBClient
+should also implement all the methods of Book, Author,Customer,
+and Review interfaces.
+
 ## CRUD(Create, Read, Update, Delete) Operations
 
 Now, let's begin implementing the interfaces.
