@@ -49,9 +49,9 @@ export default class GameDevHomepage {
 		const unityTutorials = this.getResources({
 			resourceTypes: [TUTORIAL_RESOURCE],
 			channel: channel.url,
-			limit: 2,
+			limit: 4,
 			customFilter: (r) => r.topics?.includes("unity") == true,
-			sorter: (a, b) => (a.date > b.date ? 1 : -1),
+			sorter: (a, b) => (a.date < b.date ? 1 : -1),
 		});
 
 		const unrealTutorials = this.getResources({

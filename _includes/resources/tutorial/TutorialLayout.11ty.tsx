@@ -92,7 +92,7 @@ export function TutorialLayout(
 				<div class="container">
 					<div class="columns is-multiline">
 						{sidebarSteps}
-						<div class="column">
+						<div class="column is-9">
 							{breadcrumbs}
 							<main class="content">{main}</main>
 							<UserComments theme={"light"} pageUrl={page.url} />
