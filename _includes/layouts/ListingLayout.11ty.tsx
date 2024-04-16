@@ -68,7 +68,11 @@ export default class ListingLayout {
 					<div class="columns is-multiline">
 						{resources.map((resource) => {
 							return (
-								<ResourceCard resource={resource} includeContentType={false} />
+								<ResourceCard
+									resource={resource}
+									includeContentType={false}
+									includeCardFooter={resource.resourceType != "channel"}
+								/>
 							);
 						})}
 					</div>
