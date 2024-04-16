@@ -2,6 +2,7 @@ import { writeFile } from "node:fs/promises";
 import { TopicFrontmatter } from "../_includes/resources/topic/TopicModels";
 import { ResourceMap } from "./ResourceModels";
 import path from "upath";
+import { string } from "yargs";
 
 // Some feature flags to opt-in/opt-out of, depending on how far we want to go with JSON schemas:
 const featureFlags = {
@@ -80,20 +81,26 @@ function hasProperty<T extends string>(
 	return key in map;
 }
 
-export async function dumpSchemas<T extends ObjectMap>(
+export type StringArray = {
+	[key: string]: string;
+};
+
+export function dumpSchemasToString<T extends ObjectMap>(
 	schemas: T,
 	resourceMap: ResourceMap,
 	outputPath: string
-) {
+): StringArray {
+	/* Refactor to allow a test that doesn't write to disk */
 	const resources = Array.from(resourceMap.values());
 	const authors = extractReferences(resources, "author").sort();
 	const topics = extractReferences(resources, "topic").sort();
 
+	const pathsAndSchemas: StringArray = {};
 	for (const [key, schema] of Object.entries(schemas)) {
 		const thisSchema: Schema<T> = {
 			...getPreamble(key),
 			...{ properties: {} },
-			...{ allOf: [] },
+			// ...{ allOf: [] },
 			...JSON.parse(JSON.stringify(schema)),
 		};
 
@@ -145,18 +152,6 @@ export async function dumpSchemas<T extends ObjectMap>(
 				}
 			}
 
-			// Rewrite technologies open array to an array of enum
-			// @ts-ignore
-			// if (featureFlags.rewriteReferenceProperties && "technologies" in properties) {
-			//     // @ts-ignore
-			//     properties["technologies"]["items"] = { "enum": technologies };
-			//     // @ts-ignore
-			//     if ("type" in properties["technologies"]["items"]) {
-			//         // @ts-ignore
-			//         delete properties["technologies"]["items"]["type"];
-			//     }
-			// }
-
 			// Rewrite date to be a string with date format
 			if (
 				featureFlags.rewriteDateProperties &&
@@ -170,9 +165,28 @@ export async function dumpSchemas<T extends ObjectMap>(
 			}
 		}
 
-		await writeFile(
-			path.join(outputPath, `${resourceTypeName}.schema.json`),
-			JSON.stringify(thisSchema, null, 2)
-		);
+		const thisPath = path.join(outputPath, `${resourceTypeName}.schema.json`);
+		const schemaString = JSON.stringify(thisSchema, null, 2);
+
+		pathsAndSchemas[thisPath] = schemaString;
+	}
+
+	return pathsAndSchemas;
+}
+
+export async function dumpSchemas<T extends ObjectMap>(
+	schemas: T,
+	resourceMap: ResourceMap,
+	outputPath: string
+) {
+	/* Refactor to allow a test that doesn't write to disk */
+	const pathsAndSchemas: StringArray = dumpSchemasToString(
+		schemas,
+		resourceMap,
+		outputPath
+	);
+
+	for (const [path1, schema] of Object.entries(pathsAndSchemas)) {
+		await writeFile(path1, schema);
 	}
 }
