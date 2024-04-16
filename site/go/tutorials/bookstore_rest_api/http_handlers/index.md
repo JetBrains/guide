@@ -688,3 +688,266 @@ func (s *Server) DeleteCustomer(c *gin.Context) {
 }
 
 ```
+
+**Add Customer**
+
+In this function we are trying to create a new customer. It uses the
+`bindCustomerData` function to parse the customer data from the JSON provided.
+If `bindCustomerData` returns `false`, it will exit the function. After that, it
+tries to add the customer using `s.db.AddCustomer(c, customer)` and checks for errors. If an
+error occurs, logs the error and responds with an HTTP 500 error status code and a
+JSON message to the client. If there are no errors, it will respond with an
+HTTP 200 status code and the added customer in JSON format.
+
+```go
+func bindCustomerData(c *gin.Context, customer interface{}) bool {
+	if err := c.ShouldBindJSON(customer); err != nil {
+		c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": "Check the data you are passing."})
+		return false
+	}
+	return true
+}
+
+func (s *Server) CreateCustomer(c *gin.Context) {
+	customer := models.Customer{}
+
+	if !bindCustomerData(c, &customer) {
+		return
+	}
+	addCustomer, err := s.db.AddCustomer(c, customer)
+	if err != nil {
+		slog.Error(err.Error())
+		c.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{"error": "Something went wrong"})
+	}
+	c.JSON(http.StatusOK, addCustomer)
+}
+
+```
+
+**Update Customer**
+
+This function is responsible for updating the details of the customer. At the start,
+it creates an instance of `CustomerParams` model, which is then filled by the
+`getAndValidateCustomer` function. If the validation fails to get the customer details,
+the function ends immediately. If the validation is successful, the function attempts to update the customer's data
+in the database using the `UpdateCustomer` method. If an error is encountered while
+updating the customer information, the function responds with an
+HTTP status 400 (Bad Request) and sends a JSON object containing the error details.
+
+On successful update, it sends an HTTP status 200 (OK) and sends a JSON message
+indicating the success of the operation. However, if the update isn't successful
+for some other reason, the function aborts the process and sends
+an HTTP status 500 (Internal Server Error) along with a JSON indicating
+that an error occurred.
+
+```go
+func getAndValidateCustomer(c *gin.Context, customer interface{}) (int64, bool) {
+	customerID, ok := parseCustomerId(c)
+	if !ok {
+		return 0, false
+	}
+	if !bindCustomerData(c, customer) {
+		return 0, false
+	}
+	return customerID, true
+}
+
+func (s *Server) UpdateCustomer(c *gin.Context) {
+	customer := models.CustomerParams{}
+	customerID, ok := getAndValidateCustomer(c, &customer)
+	if !ok {
+		return
+	}
+
+	updateCustomer, err := s.db.UpdateCustomer(c, customer, customerID)
+	if err != nil {
+		c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+	if updateCustomer {
+		c.JSON(http.StatusOK, gin.H{"status": true, "message": "Customer Information Updated!"})
+		return
+	}
+	c.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{"status": false, "message": "Something went wrong."})
+}
+```
+
+**Delete Customer**
+
+This method is designed to delete a customer's record from a database.
+It begins by trying to parse a customer ID from the context. If it can't parse the ID,
+the operation halts and returns. If the ID is parsed successfully,
+the function then attempts to delete that customer from the database.
+
+```go
+func (s *Server) DeleteCustomer(c *gin.Context) {
+	customerID, ok := parseCustomerId(c)
+	if !ok {
+		return
+	}
+
+	if err := s.db.DeleteCustomer(c, customerID); err != nil {
+		c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+
+	}
+
+	c.JSON(http.StatusOK, gin.H{"status": true, "message": "customer deleted"})
+}
+```
+
+### Review
+
+![review_controller](./images/review_controller.png)
+
+```go
+package controllers
+
+import (
+	"errors"
+	"github.com/gin-gonic/gin"
+	"github.com/go-playground/validator/v10"
+	"go-gin-bookstore/core"
+	"go-gin-bookstore/models"
+	"net/http"
+	"strconv"
+)
+
+func (s *Server) CreateReview(c *gin.Context) {
+	var review models.ReviewParams
+
+	if err := c.ShouldBindJSON(&review); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	// Validate the struct
+	if err := s.validation.Struct(&review); err != nil {
+		// Collect validation errors
+		var errs []string
+		for _, err := range err.(validator.ValidationErrors) {
+			// Translate validation error messages using the default translator
+			errs = append(errs, err.Translate(*s.translate))
+		}
+
+		// Prepare JSON response
+		jsonResponse := map[string]interface{}{
+			"success": false,
+			"errors":  errs,
+		}
+
+		c.AbortWithStatusJSON(http.StatusInternalServerError, jsonResponse)
+
+		return
+	}
+
+	_, err := s.db.AddReview(c, review)
+
+	if err != nil {
+		// Check if the error is of type notFoundError
+		var notFoundErr *core.NotFoundError
+		if errors.As(err, &notFoundErr) {
+			c.AbortWithStatusJSON(http.StatusNotFound,
+				gin.H{"status": notFoundErr.Code, "message": notFoundErr.Message})
+			return
+		} else {
+			c.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{"error": "Something went wrong"})
+			return
+		}
+	}
+	c.JSON(http.StatusOK, map[string]string{"message": "Review successfully added."})
+}
+
+func (s *Server) ListReviewByBook(c *gin.Context) {
+	bookId := c.Param("id")
+	parseBookId, err := strconv.ParseInt(bookId, 10, 64)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "bookId is invalid"})
+		return
+	}
+
+	bookReviews, err := s.db.ListReview(c, parseBookId)
+	if err != nil {
+		c.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{"error": "Something went wrong"})
+	}
+	c.JSON(http.StatusOK, bookReviews)
+}
+
+```
+
+Let's break it down.
+
+**Create Review**
+
+It is intended to create a review information based on the incoming request. First,
+it attempts to bind the incoming request JSON data to the `ReviewParams` model.
+
+The `ReviewParams` struct is capturing CustomerID, BookID, Rating and Comment.
+
+```go
+func (s *Server) CreateReview(c *gin.Context) {
+	var review models.ReviewParams
+
+	if err := c.ShouldBindJSON(&review); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	// Validate the struct
+	if err := s.validation.Struct(&review); err != nil {
+		// Collect validation errors
+		var errs []string
+		for _, err := range err.(validator.ValidationErrors) {
+			// Translate validation error messages using the default translator
+			errs = append(errs, err.Translate(*s.translate))
+		}
+
+		// Prepare JSON response
+		jsonResponse := map[string]interface{}{
+			"success": false,
+			"errors":  errs,
+		}
+
+		c.AbortWithStatusJSON(http.StatusInternalServerError, jsonResponse)
+
+		return
+	}
+
+	_, err := s.db.AddReview(c, review)
+
+	if err != nil {
+		// Check if the error is of type notFoundError
+		var notFoundErr *core.NotFoundError
+		if errors.As(err, &notFoundErr) {
+			c.AbortWithStatusJSON(http.StatusNotFound,
+				gin.H{"status": notFoundErr.Code, "message": notFoundErr.Message})
+			return
+		} else {
+			c.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{"error": "Something went wrong"})
+			return
+		}
+	}
+	c.JSON(http.StatusOK, map[string]string{"message": "Review successfully added."})
+}
+```
+
+**Listing all reviews**
+
+In the function we are trying to get all the book reviews based on book id.
+
+```go
+func (s *Server) ListReviewByBook(c *gin.Context) {
+	bookId := c.Param("id")
+	parseBookId, err := strconv.ParseInt(bookId, 10, 64)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "bookId is invalid"})
+		return
+	}
+
+	bookReviews, err := s.db.ListReview(c, parseBookId)
+	if err != nil {
+		c.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{"error": "Something went wrong"})
+	}
+	c.JSON(http.StatusOK, bookReviews)
+}
+```
