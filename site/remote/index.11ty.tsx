@@ -284,13 +284,13 @@ export default class RemoteHomepage {
 									</li>
 								</ul>
 								<p>
-									JetBrains Space, Google Cloud Workstations, Gitpod, GitHub
-									Codespaces, and AWS CodeCatalyst are examples of popular
-									private- and public-cloud development solutions. Additionally,
-									these products support JetBrains Gateway, bringing our
-									JetBrains IDEs into remote development. Also, JetBrains Fleet
-									is our built-from-scratch IDE designed around a remote
-									architecture.
+									JetBrains CodeCanvas, Google Cloud Workstations, Gitpod,
+									GitHub Codespaces, and AWS CodeCatalyst are examples of
+									popular private- and public-cloud development solutions.
+									Additionally, these products support JetBrains Gateway,
+									bringing our JetBrains IDEs into remote development. Also,
+									JetBrains Fleet is our built-from-scratch IDE designed around
+									a remote architecture.
 								</p>
 								<h2>Conclusion</h2>
 								<p>
