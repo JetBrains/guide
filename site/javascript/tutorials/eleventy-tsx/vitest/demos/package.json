@@ -1,0 +1,23 @@
+{
+	"name": "eleventy-tsx",
+	"version": "1.0.0",
+	"description": "Demo of Eleventy 3, ESM, and TS/TSX",
+	"scripts": {
+		"build": "tsx node_modules/@11ty/eleventy/cmd.cjs --config=eleventy.config.ts",
+		"start": "tsx node_modules/@11ty/eleventy/cmd.cjs --config=eleventy.config.ts --serve --incremental",
+		"test": "vitest run"
+	},
+	"keywords": [],
+	"author": "Paul Everitt <pauleveritt@me.com>",
+	"license": "ISC",
+	"type": "module",
+	"dependencies": {
+		"@11ty/eleventy": "^3.0.0-alpha.6",
+		"jsx-async-runtime": "^0.1.8"
+	},
+	"devDependencies": {
+		"prettier": "^3.2.5",
+		"tsx": "^4.7.0",
+		"vitest": "^1.5.0"
+	}
+}
