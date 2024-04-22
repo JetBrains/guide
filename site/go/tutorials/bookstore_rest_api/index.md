@@ -2,12 +2,19 @@
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2024-03-20
-title: "Crafting a Bookstore with Gin"
+title: "REST API Development with Gin"
 topics:
   - go
   - web
 author: mm
-subtitle: "Sample Text"
+subtitle: "Developing a Bookstore App with the Gin Framework
+
+
+
+
+
+
+"
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

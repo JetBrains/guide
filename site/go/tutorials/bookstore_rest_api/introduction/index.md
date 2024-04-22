@@ -28,11 +28,11 @@ Here are some key features and aspects of Go:
 
 - **Simplicity**: Go was designed to be straightforward and convenient to learn. Its syntax is clean and minimalistic, making it approachable for both new and experienced programmers.
   <br><br>
-- **Concurrency**: Go has built-in support for concurrency through goroutines and channels. Goroutines are lightweight threads of execution, and channels are a means of communication between goroutines. This makes it easy to write concurrent programs.
+- **Concurrency**: Go has built-in support for concurrency through goroutines and channels.
   <br><br>
-- **Efficiency**: Go compiles to machine code, resulting in high-performance executable files. Its runtime is relatively small, and it has efficient garbage collection, making it suitable for building fast and scalable systems.
+- **Efficiency**: Go compiles to machine code, resulting in high-performance executable files.
   <br><br>
-- **Static Typing**: Go is statically typed, meaning that variable types are checked at compile time. This helps catch errors early in the development process and can lead to more robust code.
+- **Static Typing**: Go is statically typed, meaning that variable types are checked at compile time.
   <br><br>
 - **Standard Library**: Go comes with a rich standard library that provides support for various tasks such as networking, encryption, HTTP servers, and more. This eliminates the need for third-party libraries for many common tasks.
   <br><br>
