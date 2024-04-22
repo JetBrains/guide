@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-03-20
+date: 2024-04-22
 title: "Project Layout"
 topics:
   - go
@@ -63,8 +63,8 @@ go get github.com/go-playground/validator/v10
 
 ### AWS SDK
 
-The AWS SDK for Go enhances the usage of AWS services by offering a collection
-of libraries that are coherent and user-friendly for Go programmers. Check the official [documentation](https://aws.amazon.com/sdk-for-go/).
+The AWS [SDK](https://aws.amazon.com/sdk-for-go/) for Go enhances the usage of AWS services by offering a collection
+of libraries that are coherent and user-friendly for Go programmers.
 
 Run the following command to install.
 
@@ -92,8 +92,7 @@ find from the source code available in [GitHub](https://github.com/mukulmantosh/
 ![go_mod](./images/gomod.png)
 
 To install the packages specified in the `go.mod` file
-in a Go project, you would typically use the `go mod tidy` command. This command ensures
-that the `go.mod` file matches the source code in the module.
+in a Go project, you would typically use the `go mod tidy` command.
 
 If you're not interested in typing, then GoLand will help you to automatically download the packages.
 

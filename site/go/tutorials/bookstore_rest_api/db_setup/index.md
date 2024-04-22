@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-03-20
+date: 2024-04-22
 title: "Database Setup"
 topics:
   - go

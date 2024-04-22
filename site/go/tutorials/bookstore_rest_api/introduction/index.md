@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-04-02
+date: 2024-04-22
 title: "Introduction"
 topics:
   - go
@@ -36,10 +36,10 @@ Here are some key features and aspects of Go:
   <br><br>
 - **Standard Library**: Go comes with a rich standard library that provides support for various tasks such as networking, encryption, HTTP servers, and more. This eliminates the need for third-party libraries for many common tasks.
   <br><br>
-- **Cross-Platform**: Go is designed to be portable and runs on multiple platforms, including Linux, macOS, Windows, and more.
+- **Cross-Platform**: Go is designed to be portable and runs on multiple platforms.
 
 Overall, Go is a versatile language suitable for a wide range of applications,
-from web development to system programming, cloud services, and more.Its simplicity, efficiency,
+from web development to system programming, cloud services, and more. It's simplicity, efficiency,
 and built-in concurrency support make it an attractive choice for many developers and organizations.
 
 ## Gin

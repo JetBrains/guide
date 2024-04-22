@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-03-20
+date: 2024-04-22
 title: "Data Models"
 topics:
   - go
@@ -88,15 +88,15 @@ func (c Client) CloseDBConnection() {
 
 ```
 
-1. `type DBClient` interface - This interface defines what methods a DBClient should have. In this case, it is DBMigrate() error, which is a method for migrating the database. The exact implementation of DBMigrate() is left to the structs that implement the DBClient interface.
+1. `type DBClient` interface - This interface defines what methods a `DBClient` should have. In this case, it is `DBMigrate()` error, which is a method for migrating the database. The exact implementation of `DBMigrate()` is left to the structs that implement the `DBClient` interface.
    <br><br>
 2. `type Client` struct - This struct contains a pointer to a GORM DB object. This is the main object that the application will use to interact with the database.
    <br><br>
-3. `func NewClient() (DBClient, error)` - This function initializes a new Client object. It reads environment variables to get the database connection details (host, username, password, database name, and port). It then uses these details to open a new connection to the Postgres database. If successful, it returns a client that implements the DBClient interface (since Client struct implements DBMigrate() method from DBClient interface). If not successful, it returns an error.
+3. `func NewClient() (DBClient, error)` - This function initializes a new Client object. It reads environment variables to get the database connection details (host, username, password, database name, and port). It then uses these details to open a new connection to the postgres database. If successful, it returns a client that implements the `DBClient` interface (since Client struct implements `DBMigrate()` method from DBClient interface). If not successful, it returns an error.
    <br><br>
-4. `func (c Client) DBMigrate() error` - This is a "placeholder" method for the database migration operation. In this structure, it just returns nil signifying no error. However, in a real application, you would put the code to migrate your database here.
+4. `func (c Client) DBMigrate() error` - This is a "placeholder" method for the database migration operation. In this structure, it just returns nil signifying no error. However, in a real application, you would put the code to migrate your database here. We will be covering migration in HTTP Handler section.
    <br><br>
-5. `func (c Client) CloseDBConnection()` - This method is closing the database connection. It attempted to access the general SQL database handle and then close it off. If it fails to get the handle, it panics with an error message.
+5. `func (c Client) CloseDBConnection()` - This method is used to close the db connection.
 
 Next, make sure to update the environment variables.
 
@@ -114,7 +114,7 @@ Now, create `main.go` under project root.
 
 ![create_db_3](./images/main_go.png)
 
-The `main()` is the program entry point. We are going to initialize the database, migrate db tables etc.
+The `main()` function is the program entry point. We are going to initialize the database, migrate db tables etc.
 
 ```go
 package main
@@ -141,7 +141,7 @@ func main() {
 }
 ```
 
-Once our models are prepared, we'll proceed to implement `db.DBMigrate()`. This will occur shortly.
+Once our models are prepared, we'll proceed to implement `db.DBMigrate()`. This will occur in HTTP Handler section.
 
 ## Defining Models
 
@@ -216,7 +216,7 @@ In this Go struct, we have the following fields:
 - `Title` - This is a string field representing the title of a book.
 - `ISBN` - This is another string field which stands for International Standard Book Number.
 - `Image` - This is a string that might contain a link or path to the image of the book cover.
-- `PublicationDate` - This is of type time.Time, storing the book's publication date.
+- `PublicationDate` - This is of type `time.Time`, storing the book's publication date.
 
 ```go
 type BookParams struct {
@@ -260,7 +260,7 @@ type DateParser interface {
   property and convert it to a `time.Time` type.
   <br><br>
 - `ValidateDate`: This function takes a string argument representing a date and attempts
-  to parse it into a time.Time type using the standard date format "2006-01-02"
+  to parse it into a `time.Time` type using the standard date format "2006-01-02"
   (which represents "YYYY-MM-DD"). If successful, the parsed date and a nil error are
   returned; if unsuccessful, the zero value for `time.Time` and the error are returned.
 
@@ -312,13 +312,13 @@ type AuthorBook struct {
 
 ![customer_review_modal](./images/customer_review_modal.png)
 
-- **Customer**: Represents a Customer with ID, FirstName, LastName, Email, PhoneNumber, and Address as properties. The struct tag binding:"required" indicates that these fields must be provided.
-- **Review**: Represents a review completed by a customer on a book. It includes the ID of the customer and the book, a rating, and a comment. There are also references to the Customer and Book structures, creating a One-to-Many relationship through the keys CustomerID and BookID.
+- **Customer**: Represents a Customer with ID, FirstName, LastName, Email, PhoneNumber, and Address as properties. The struct tag `binding:"required"` indicates that these fields must be provided.
+- **Review**: Represents a review completed by a customer on a book. It includes the ID of the customer and the book, a rating, and a comment. There are also references to the `Customer` and `Book` structures, creating a one-to-many relationship through the keys CustomerID and BookID.
 - **ReviewParams**: A helper struct to validate incoming requests data when creating a book review. It has CustomerID, BookID, Rating, and Comment fields, all of which are required except Comment.
 - **CustomerParams**: A helper struct to validate incoming requests data when creating a new customer.
-- **ReviewList**: A simplified version of Review probably used while sending reviews info in responses.
+- **ReviewList**: A simplified version of review probably used while sending reviews info in responses.
 
-The `gorm:"foreignKey:CustomerID"` and `gorm:"foreignKey:BookID"` tags in Review struct inform the ORM about the relational mapping between the models. The `json:"-"` tag means this field won't be serialized when the struct is converted to JSON.
+The `gorm:"foreignKey:CustomerID"` and `gorm:"foreignKey:BookID"` tags in review struct inform the ORM about the relational mapping between the models. The `json:"-"` tag means this field won't be serialized when the struct is converted to JSON.
 
 ```go
 package models
