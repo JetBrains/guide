@@ -6,17 +6,11 @@ topics:
   - go
   - web
 author: mm
-subtitle: "Setting Up Required Components"
+subtitle: "Install the dependencies used for the sample application"
 thumbnail: ./thumbnail.png
 ---
 
 Before proceeding ahead, make sure to install the below dependencies.
-
-## Go
-
-<img alt="golang" src="./images/golang.svg" height="250" width="250">
-
-[Go](https://go.dev/doc/install) is an open source programming language that makes it simple to build secure, scalable systems.
 
 ## Docker
 
@@ -35,4 +29,4 @@ Before proceeding ahead, make sure to install the below dependencies.
 The [AWS Command Line Interface](https://aws.amazon.com/cli/) (CLI)
 is a unified tool to manage AWS services directly from the command line.
 
-Note: Make sure you have an AWS account.
+_Note: Make sure you have an AWS account._

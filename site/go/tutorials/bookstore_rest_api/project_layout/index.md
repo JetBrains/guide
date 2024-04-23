@@ -10,15 +10,18 @@ subtitle: "Organizing and Navigating Through Your Codebase"
 thumbnail: ./thumbnail.png
 ---
 
+We now have our database setup and running in a reproducible container.
+Time to head to our IDE -- GoLand of course -- and start a project for this sample application.
+
 Let's start by creating a new project in [GoLand](https://www.jetbrains.com/go/).
 
 ![goland_1](./images/goland1.png)
 
-Provide a project name, I will go for **go-gin-bookstore**, and click **Create**.
+Next, provide a project name. I will go for **go-gin-bookstore**, and click **Create**.
 
 ![goland_2](./images/goland2.png)
 
-Once you have successfully initialized the project. Create two folders in the project root.
+Once you have successfully initialized the project, create two folders in the project root.
 
 - `core` - Contains the core business logic of the application.
 - `models` - Contains database models.
@@ -27,13 +30,12 @@ Once you have successfully initialized the project. Create two folders in the pr
 
 ## Go Dependencies
 
-Next, we need to add the dependencies which are required for the application to run properly.
+Next, we need to add the dependencies which are required for the application to run properly: Gin, GORM, and more.
 
 ### Gin
 
-Gin is a HTTP web framework written in Go (Golang).
-
-Run the following command to install.
+Gin is an HTTP web framework written in Go (Golang).
+Since Gin is a Go package, you can install it with `go get`:
 
 ```bash
 go get -u github.com/gin-gonic/gin
