@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-03-20
+date: 2024-04-22
 title: "Interfaces & CRUD Operations"
 topics:
   - go
@@ -16,7 +16,7 @@ Following this, we are going to establish several interfaces that define method 
 
 ![abstract](./images/abstract.png)
 
-Author interface with methods for adding an author, linking an author and a book, and listing all authors. There are also Author, AuthorBook, and Book structs which represent their respective entities, and the many-to-many relation between Author and Book is modeled using the AuthorBook struct and the Books field on the Author struct.
+Author interface with methods for adding an author, linking an author and a book, and listing all authors. There are also `Author`, `AuthorBook`, and `Book` structs which represent their respective entities, and the many-to-many relation between `Author` and `Book` is modeled using the `AuthorBook` struct and the Books field on the Author struct.
 
 _author.go_
 
