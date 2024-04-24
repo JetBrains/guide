@@ -5,7 +5,7 @@ title: "Building the App"
 topics:
   - go
   - web
-author: mm
+author: rpeden
 subtitle: ""
 thumbnail: ./thumbnail.png
 ---
@@ -14,7 +14,7 @@ With the prerequisites installed, it's time to build the chat app's Go backend. 
 
 GoLand simplifies the process of developing Go applications using a code-first approach. Start by opening GoLand and clicking **New Project** on the welcome screen:
 
-![Creating a new GoLand project](https://i.imgur.com/V0EFVIA.png)
+![Creating a new GoLand project](./images/1.png)
 
 Choose **Go** from the list of application types. You can enter any location you wish, but note that the rest of the tutorial assumes your application is in the `chat-app` directory.
 
@@ -22,7 +22,7 @@ You now need to install the dependencies required for the chat app. Normally, yo
 
 Add a new file named `main.go` to your app by right-clicking the project and selecting _New | Go File_:
 
-![New file creation](https://i.imgur.com/OivgpCr.png)
+![New file creation](./images/2.png)
 
 Name the file `main.go` and add the following code to create a minimal Gin application:
 
@@ -103,11 +103,11 @@ func main() {
 
 Notice that GoLand highlights `github.com/gin-gonic/gin` in red because Gin is not yet installed in the module cache. Click the dropdown arrow next to the red exclamation, then click **Sync dependencies of chat-app**:
 
-![Syncing dependencies](https://i.imgur.com/hBs6IqH.png)
+![Syncing dependencies](./images/3.png)
 
 It may take a few minutes for GoLand to install and index Gin and its dependencies, depending on the speed of your computer and internet connection. When it's done, you'll see the dependencies are no longer red:
 
-![Synced dependencies](https://i.imgur.com/bi57SbB.png)
+![Synced dependencies](./images/4.png)
 
 Now that you've installed the dependencies, let's briefly review the code.
 
@@ -352,11 +352,11 @@ GoLand's built-in database support means you can create a SQLite database for yo
 
 Start by right-clicking the `chat-app` project and choosing _New | Data Source in Path_:
 
-![Creating a new data source](https://i.imgur.com/4YYFjK7.png)
+![Creating a new data source](./images/5.png)
 
 Enter `database.db` as the path and choose the SQLite driver:
 
-![Database creation](https://i.imgur.com/FWclGTn.png)
+![Database creation](./images/6.png)
 
 This will create a database file for the chat application.
 
@@ -385,6 +385,6 @@ CREATE TABLE messages (
 
 Then, press **Ctrl+Enter** (⌘ ↩ on Mac) and choose **New Session** when GoLand prompts you. If the IDE asks you to choose between "console" or "database.db", choose **database.db** and **New Session**. In the **Statements** pop-up, scroll down until all the `CREATE TABLE` statements are highlighted in green, then press **Enter** to create the database tables:
 
-![Creating database](https://i.imgur.com/539Jndw.png)
+![Creating database](./images/7.png)
 
 Test that the app builds and runs by right-clicking `main.go` in the Project window and clicking **Run 'go build main.go'**. The app should build and run without any errors.

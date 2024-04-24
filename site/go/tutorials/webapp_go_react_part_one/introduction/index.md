@@ -5,7 +5,7 @@ title: "Introduction"
 topics:
   - go
   - web
-author: mm
+author: rpeden
 subtitle: ""
 thumbnail: ./thumbnail.png
 ---
