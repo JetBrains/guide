@@ -26,7 +26,7 @@ flips the switch:
 We add a minimal `eleventy.config.js` file in the root directory. See: this is already ESM, no more `module.exports`!
 
 ```javascript
-export default function (eleventyConfig) {
+export default function () {
 	return {
 		dir: {
 			input: "site",
