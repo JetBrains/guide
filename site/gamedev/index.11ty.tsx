@@ -62,6 +62,14 @@ export default class GameDevHomepage {
 			sorter: (a, b) => (a.date > b.date ? 1 : -1),
 		});
 
+		const godotTutorials = this.getResources({
+			resourceTypes: [TUTORIAL_RESOURCE],
+			channel: channel.url,
+			limit: 2,
+			customFilter: (r) => r.topics?.includes("godot") == true,
+			sorter: (a, b) => (a.date > b.date ? 1 : -1),
+		});
+
 		const tips = this.getResources({
 			resourceTypes: [TIP_RESOURCE, LINK_RESOURCE],
 			channel: channel.url,
@@ -111,6 +119,17 @@ export default class GameDevHomepage {
 						title={`Learn Unreal Engine`}
 						anchor={"learn-unreal-engine"}
 						resources={unrealTutorials}
+						includeCardFooter={false}
+						separator={true}
+						includeContentType={true}
+					/>
+				)}
+
+				{godotTutorials && (
+					<ListingSection
+						title={`Learn Godot Game Engine`}
+						anchor={"learn-godot-engine"}
+						resources={godotTutorials}
 						includeCardFooter={false}
 						separator={true}
 						includeContentType={true}
