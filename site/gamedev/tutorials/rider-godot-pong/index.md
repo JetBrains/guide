@@ -17,6 +17,7 @@ tutorialItems:
   - ./dev-environment-setup/
   - ./game-design/
   - ./source-control/
+  - ./asset-management/
   - ./godot-nodes-scene-tree/
   - ./add-scripts-to-godot/
   - ./community-resources

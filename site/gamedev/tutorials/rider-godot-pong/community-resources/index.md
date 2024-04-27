@@ -9,8 +9,8 @@ topics:
   - godot
 author: khalidabuhakmeh
 subtitle: >-
-Community resources that will help you on your Godot journey.
-thumbnail: ../thumbnail.png
+  Community resources that will help you on your Godot journey.
+thumbnail: ./thumbnail.png
 ---
 
 While building this game, I found a wealth of great resources everyone should use. I certainly did, and this game would not have been possible without the Godot community.

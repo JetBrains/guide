@@ -10,7 +10,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: >-
   Working with Godot Nodes to build out our game's scene.
-thumbnail: ../thumbnail.png
+thumbnail: ./thumbnail.png
 ---
 
 In this section, we'll set up our game's **Scene Tree**, which holds all its elements. As we go through each element, we'll discuss each **Node** and why we decided to use it. We'll also explore some optional tips to make your game development more enjoyable. We'll be staying in Godot for a bit to keep from context-switching and keep things clearer.

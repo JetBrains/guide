@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2024-04-26
-title: Source Control with Godot
+title: Source Control Management with Godot
 topics:
   - gamedev
   - ide
@@ -10,7 +10,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: >-
   Using Git source control for your Godot project.
-thumbnail: ../thumbnail.png
+thumbnail: ./thumbnail.png
 ---
 
 Outside of binary assets like images, video, and audio, most of Godot Game Engine's files are text-based. This means that it works seamlessly with source control. If you remember, when starting our project, we could select our source control option; in our case, it was **Git**.

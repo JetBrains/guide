@@ -10,7 +10,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: >-
   Sketching out our game and its mechanics to prepare for building a Godot game.
-thumbnail: ../thumbnail.png
+thumbnail: ./thumbnail.png
 ---
 
 As mentioned in the introduction of this tutorial, we'll be recreating the classic game Pong. It has everything a video game typically has, including player controls, visuals, scoring, and enemy AI. But before we start throwing assets and code into the game, let's take a step back and consider the game's design.

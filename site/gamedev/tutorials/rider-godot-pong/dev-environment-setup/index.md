@@ -10,7 +10,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: >-
   Setting up your game development environment for Godot Game Engine.
-thumbnail: ../thumbnail.png
+thumbnail: ./thumbnail.png
 ---
 
 As the first step in this tutorial, we'll [download the current version of Godot Game Engine](https://godotengine.org/download/) with .NET support. Godot currently has two versions, one without C# support and one with it. This might change in future versions.

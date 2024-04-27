@@ -10,7 +10,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: >-
   Introduction to game development and why you would consider Godot Game Engine and C# for your game.
-thumbnail: ../thumbnail.png
+thumbnail: ./thumbnail.png
 ---
 
 ## Why Game Development and why now?

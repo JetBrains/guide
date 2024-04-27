@@ -10,7 +10,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: >-
   Learn how to add C# scripts to your Godot games for interactivity and gameplay mechanics.
-thumbnail: ../thumbnail.png
+thumbnail: ./thumbnail.png
 ---
 
 Code is an essential part of any game. While you’ve seen that we can achieve a lot by working with the Godot Editor, at some point, you need to start writing some code to make your game come alive. In this section, we’ll add scripts to many of the elements in our Scene Tree and add some interactivity that should make for some fun.

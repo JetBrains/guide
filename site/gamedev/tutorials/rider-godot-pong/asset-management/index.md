@@ -10,7 +10,7 @@ topics:
 author: khalidabuhakmeh
 subtitle: >-
   Learn how to manage assets in Godot.
-thumbnail: ../thumbnail.png
+thumbnail: ./thumbnail.png
 ---
 
 I'll provide you with assets for this tutorial, so you won't have to worry about image editing. The assets are in the zip file below. The archive contains the paddles, the ball, sound files, and the playing field background. Feel free to substitute your assets and adapt this tutorial to your needs.
