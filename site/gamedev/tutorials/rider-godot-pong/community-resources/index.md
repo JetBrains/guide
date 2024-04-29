@@ -29,8 +29,10 @@ These are a few places I used to learn Godot and continue to use to increase my 
 
 ### Conclusion
 
+> **[Download JetBrains Rider Pong from GitHub](https://github.com/JetBrains/jetbrains-rider-godot-pong)**
+
 Who would have thought we’d be at the end of our tutorial? Hopefully, this is only the beginning of your journey with Godot, the game engine that has a bright future. We used the editor to set up a game from a sketch and then methodically went through and implemented those features using JetBrains Rider and C#. We also learned about Godot programming idioms like signals, exports, and nodes. And here we are, with a fully functional pong game, so what’s next?
 
-Feel free to modify the game with your visual style and flair. [I certainly did here](https://github.com/khalidabuhakmeh/RiderPong) by adding a retro shader. Try changing the images, or the difficulty of the opponent, or making the game a two-player game. The possibilities are endless and only limited by your imagination.
+Feel free to modify the game with your visual style and flair. While I've included the [original repository](https://github.com/JetBrains/jetbrains-rider-godot-pong), [I've also created my own special version](https://github.com/khalidabuhakmeh/RiderPong) by adding a retro shader. Try changing the images, or the difficulty of the opponent, or making the game a two-player game. The possibilities are endless and only limited by your imagination.
 
 Please leave comments and feedback regarding this tutorial in the comments section below.
