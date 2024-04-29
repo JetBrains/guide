@@ -22,7 +22,7 @@ If you don't have Node.js installed yet, download and install the latest LTS Nod
 
 Start by setting up a new React application inside your existing project repository. You can use GoLand's integrated terminal to streamline this process. Open a terminal in your project's directory by clicking the terminal icon (highlighted in yellow below):
 
-![Terminal button](https://i.imgur.com/b49gNAh.png)
+![Terminal button](./images/1.png)
 
 Next, run the following command to create a new React application in the `chat-ui` subdirectory:
 
@@ -32,7 +32,7 @@ npx create-react-app chat-ui
 
 It will take `create-react-app` a couple of minutes to generate the React frontend and install its dependencies. When it finishes, a `chat-ui` subdirectory will appear inside the `chat-app` project in GoLand:
 
-![chat-ui directory in GoLand](https://i.imgur.com/PU5j8vw.png)
+![chat-ui directory in GoLand](./images/2.png)
 
 Your React app will use [React Router](https://reactrouter.com/) to manage page routes, so finish up by running `cd chat-ui`, and then enter the following command in the terminal to install it:
 

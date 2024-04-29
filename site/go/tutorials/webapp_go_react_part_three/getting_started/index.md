@@ -22,6 +22,6 @@ You can also find the final, complete chat app in [this repository](https://gith
 
 If you choose to clone one of the repositories, open it in GoLand by clicking the **Open** button on the welcome screen:
 
-![GoLand welcome screen](https://i.imgur.com/YBvLB1l.png)
+![GoLand welcome screen](./images/1.png)
 
 Then, open the directory where you cloned the GitHub repository.

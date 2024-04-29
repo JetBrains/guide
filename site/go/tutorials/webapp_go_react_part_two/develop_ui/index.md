@@ -52,7 +52,7 @@ If you're not fully familiar React or Tailwind, here are a few key docs and tuto
 
 Create each component file in the `src` subdirectory of the `chat-ui` directory. You can do this in GoLand by right-clicking `src` and selecting _New | JavaScript File_:
 
-![New | JavaScript File selection](https://i.imgur.com/rEi1m93.png)
+![New | JavaScript File selection](./images/1.png)
 
 Start by adding the Login component:
 
