@@ -55,19 +55,6 @@ We run our dev server and...wump wump. No files written:
 We need to return to `eleventy.config.ts` and teach it about `.ts` files. We'll go ahead and teach about `.tsx` as well.
 
 ```typescript
-export default function (eleventyConfig: any) {
-	eleventyConfig.addExtension(["11ty.jsx", "11ty.ts", "11ty.tsx"], {
-		key: "11ty.js",
-	});
-
-	return {
-			dir: {
-				input: "site",
-				output: "_site"
-			}
-	};
-}
-
 {% include "./demos/eleventy.config.ts" %}
 ```
 

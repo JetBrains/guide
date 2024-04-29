@@ -3,7 +3,8 @@
 	"version": "1.0.0",
 	"description": "Demo of Eleventy 3, ESM, and TS/TSX",
 	"scripts": {
-		"build": "npx @11ty/eleventy"
+		"build": "npx @11ty/eleventy",
+		"start": "npx @11ty/eleventy --serve --incremental"
 	},
 	"keywords": [],
 	"author": "Paul Everitt <pauleveritt@me.com>",

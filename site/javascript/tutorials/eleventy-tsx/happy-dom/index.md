@@ -18,7 +18,7 @@ and [Testing Library](https://testing-library.com) for role-based assertions.
 First, over to `package.json` to add two dependencies -- Happy-DOM and Testing Library:
 
 ```json
-{ % include "./demos/package.json" %}
+{% include "./demos/package.json" %}
 ```
 
 Our `vitest.config.js` file needs to be told to use Happy DOM as the global `document`. Do this by adding
