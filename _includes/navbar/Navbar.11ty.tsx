@@ -21,12 +21,18 @@ const Navbar = ({
 				<div class="navbar-brand">
 					<a class="navbar-item p-0" href="https://www.jetbrains.com/">
 						<img
+							src="/assets/jetbrains-simple.svg"
+							alt="JetBrains"
+							width="72"
+							height="72"
+						/>
+						{/*<img
 							src="/assets/jetbrains-white.svg"
 							alt="JetBrains"
 							width="149"
 							height="32"
 							class="logo"
-						/>
+						/>*/}
 					</a>
 					<a class="navbar-item is-size-5" href="/">
 						Guide
