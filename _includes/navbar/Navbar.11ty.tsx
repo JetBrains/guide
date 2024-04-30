@@ -26,8 +26,15 @@ const Navbar = ({
 							width="72"
 							height="72"
 						/>
+						{/*<img
+							src="/assets/jetbrains-white.svg"
+							alt="JetBrains"
+							width="149"
+							height="32"
+							class="logo"
+						/>*/}
 					</a>
-					<a class="navbar-item has-text-weight-semibold is-size-5" href="/">
+					<a class="navbar-item is-size-5" href="/">
 						Guide
 					</a>
 

@@ -28,7 +28,7 @@
 		"@11ty/eleventy-plugin-vite": "^4.0.0",
 		"@fortawesome/fontawesome-free": "^6.4.2",
 		"@fullhuman/postcss-purgecss": "^5.0.0",
-		"@jetbrains/logos": "^2.2.18",
+		"@jetbrains/logos": "^3.0.0-canary.c76de22.0",
 		"@rescui/icons": "^0.12.0",
 		"@rescui/typography": "^0.10.3",
 		"@sinclair/typebox": "^0.26.8",
