@@ -13,10 +13,11 @@ import {
 	TIP_RESOURCE,
 	TUTORIAL_RESOURCE,
 } from "../../src/resourceType";
+import MultiColumnSection from "../../_includes/pageelements/MultiColumnSection";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Game Development",
-	subtitle: "Learn how to build games with Unity and Unreal Engine.",
+	subtitle: "Learn how to build games with Unity, Unreal Engine, or Godot.",
 	resourceType: "channel",
 	date: new Date(Date.UTC(2023, 9, 11)),
 	author: "maartenba",
@@ -93,11 +94,23 @@ export default class GameDevHomepage {
 					image={channel.hero!}
 					extraContent={
 						<div class="buttons are-medium">
-							<a href="#learn-unity" class="button is-rounded">
+							<a
+								href="#learn-unity"
+								class="button is-rounded is-light is-outlined"
+							>
 								Learn Unity
 							</a>
-							<a href="#learn-unreal-engine" class="button is-rounded">
+							<a
+								href="#learn-unreal-engine"
+								class="button is-rounded is-light is-outlined"
+							>
 								Learn Unreal Engine
+							</a>
+							<a
+								href="#learn-godot-engine"
+								class="button is-rounded is-light is-outlined"
+							>
+								Learn Godot
 							</a>
 						</div>
 					}
@@ -109,7 +122,7 @@ export default class GameDevHomepage {
 						anchor={"learn-unity"}
 						resources={unityTutorials}
 						includeCardFooter={false}
-						separator={true}
+						separator={false}
 						includeContentType={true}
 					/>
 				)}
@@ -120,7 +133,7 @@ export default class GameDevHomepage {
 						anchor={"learn-unreal-engine"}
 						resources={unrealTutorials}
 						includeCardFooter={false}
-						separator={true}
+						separator={false}
 						includeContentType={true}
 					/>
 				)}

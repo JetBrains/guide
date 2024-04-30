@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-04-26
+date: 2024-04-30
 title: Source Control Management with Godot
 topics:
   - gamedev

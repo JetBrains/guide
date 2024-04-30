@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-04-26
+date: 2024-04-30
 title: Set up a Godot Game Development Environment
 topics:
   - gamedev

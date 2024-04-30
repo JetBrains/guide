@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-04-26
+date: 2024-04-30
 title: Godot Nodes and the Scene Tree
 topics:
   - gamedev

@@ -1,7 +1,7 @@
 ---
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
-date: 2024-04-26
+date: 2024-04-30
 title: How to Build Pong with Godot and JetBrains Rider
 topics:
   - .net
