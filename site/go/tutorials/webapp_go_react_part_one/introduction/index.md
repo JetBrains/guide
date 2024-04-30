@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: ""
+subtitle: "Building the Go Backend: Setting Up Gin, SQLite, and Essential REST APIs"
 thumbnail: ./thumbnail.png
 ---
 

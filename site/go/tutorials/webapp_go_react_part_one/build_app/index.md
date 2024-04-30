@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Building the App"
+title: "Crafting the Application"
 topics:
   - go
   - web
 author: rpeden
-subtitle: ""
+subtitle: "Constructing the Go Backend for the Chat App"
 thumbnail: ./thumbnail.png
 ---
 
@@ -383,7 +383,7 @@ CREATE TABLE messages (
 );
 ```
 
-Then, press **Ctrl+Enter** (⌘ ↩ on Mac) and choose **New Session** when GoLand prompts you. If the IDE asks you to choose between "console" or "database.db", choose **database.db** and **New Session**. In the **Statements** pop-up, scroll down until all the `CREATE TABLE` statements are highlighted in green, then press **Enter** to create the database tables:
+Then, press <kbd>Ctrl+Enter</kbd> (⌘ ↩ on Mac) and choose **New Session** when GoLand prompts you. If the IDE asks you to choose between "console" or "database.db", choose **database.db** and **New Session**. In the **Statements** pop-up, scroll down until all the `CREATE TABLE` statements are highlighted in green, then press **Enter** to create the database tables:
 
 ![Creating database](./images/7.png)
 

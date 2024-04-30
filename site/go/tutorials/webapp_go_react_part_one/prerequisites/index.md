@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: ""
+subtitle: "Dependency Installation"
 thumbnail: ./thumbnail.png
 ---
 
