@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: "Dependency Installation"
+subtitle: "Install necessary dependencies for running the application."
 thumbnail: ./thumbnail.png
 ---
 

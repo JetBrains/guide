@@ -20,7 +20,7 @@ Choose **Go** from the list of application types. You can enter any location you
 
 You now need to install the dependencies required for the chat app. Normally, you'd use the Go CLI to install the modules you want to use. But since you're using GoLand, you can just add the module import in your code and let GoLand install it for you.
 
-Add a new file named `main.go` to your app by right-clicking the project and selecting _New | Go File_:
+Add a new file named `main.go` to your app by right-clicking the project and selecting **New | Go File**:
 
 ![New file creation](./images/2.png)
 
@@ -350,7 +350,7 @@ And that's all the code needed for the chat app backend! Now, it's time to creat
 
 GoLand's built-in database support means you can create a SQLite database for your chat app with just a few clicks.
 
-Start by right-clicking the `chat-app` project and choosing _New | Data Source in Path_:
+Start by right-clicking the `chat-app` project and choosing **New | Data Source in Path**:
 
 ![Creating a new data source](./images/5.png)
 
@@ -383,8 +383,8 @@ CREATE TABLE messages (
 );
 ```
 
-Then, press <kbd>Ctrl+Enter</kbd> (⌘ ↩ on Mac) and choose **New Session** when GoLand prompts you. If the IDE asks you to choose between "console" or "database.db", choose **database.db** and **New Session**. In the **Statements** pop-up, scroll down until all the `CREATE TABLE` statements are highlighted in green, then press **Enter** to create the database tables:
+Then, press <kbd>Ctrl+Enter</kbd> (⌘ ↩ on Mac) and choose **New Session** when GoLand prompts you. If the IDE asks you to choose between `console` or `database.db`, choose `database.db` and **New Session**. In the **Statements** pop-up, scroll down until all the `CREATE TABLE` statements are highlighted in green, then press **Enter** to create the database tables:
 
 ![Creating database](./images/7.png)
 
-Test that the app builds and runs by right-clicking `main.go` in the Project window and clicking **Run 'go build main.go'**. The app should build and run without any errors.
+Test that the app builds and runs by right-clicking `main.go` in the _Project_ window and clicking **Run 'go build main.go'**. The app should build and run without any errors.
