@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: ""
+subtitle: "Jazz up your UI: Styling with Tailwind"
 thumbnail: ./thumbnail.png
 ---
 
@@ -50,7 +50,7 @@ If you're not fully familiar React or Tailwind, here are a few key docs and tuto
 
 #### Login.js
 
-Create each component file in the `src` subdirectory of the `chat-ui` directory. You can do this in GoLand by right-clicking `src` and selecting _New | JavaScript File_:
+Create each component file in the `src` subdirectory of the `chat-ui` directory. You can do this in GoLand by right-clicking `src` and selecting **New | JavaScript File**:
 
 ![New | JavaScript File selection](./images/1.png)
 
@@ -379,7 +379,7 @@ When `ChannelsList` renders, it initializes the state for the list of channels a
 
 It fetches the list of channels from the `/channels` endpoint and displays them. Users can click a channel to select it, which updates `selectedChannel` in the parent component.
 
-Users can type a new channel name and click a button labeled "Add Channel" to send a POST request to `/channels`, which creates a new channel and adds it to the list.
+Users can type a new channel name and click a button labeled **Add Channel** to send a POST request to `/channels`, which creates a new channel and adds it to the list.
 
 #### MessagesPanel.js
 
@@ -566,9 +566,9 @@ const MessageEntry = ({ selectedChannel, onNewMessage }) => {
 export default MessageEntry;
 ```
 
-`MessageEntry` renders an input field so the user can enter a new message, as well as a "Send" button. The input value is bound to the text state.
+`MessageEntry` renders an input field so the user can enter a new message, as well as a **Send** button. The input value is bound to the text state.
 
-On clicking the "Send" button, the `handleSendMessage` function is triggered. This function retrieves the user ID from local storage, then makes a POST request to the `/messages` endpoint with the selected channel ID, user ID, and text content as the payload.
+On clicking the **Send** button, the `handleSendMessage` function is triggered. This function retrieves the user ID from local storage, then makes a POST request to the `/messages` endpoint with the selected channel ID, user ID, and text content as the payload.
 
 If the message is sent successfully, the `onNewMessage` callback is invoked with the new message so the parent `MessagesPanel` component can render it, and the input field clears. An alert displays if the message fails to send.
 

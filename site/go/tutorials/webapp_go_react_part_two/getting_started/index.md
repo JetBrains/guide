@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: ""
+subtitle: "Dive into frontend development with Node.js and React"
 thumbnail: ./thumbnail.png
 ---
 
