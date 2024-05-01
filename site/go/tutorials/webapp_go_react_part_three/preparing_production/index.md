@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Preparing for Production"
+title: Preparing for Production
 topics:
   - go
   - web
 author: rpeden
-subtitle: "fine-tuning your project for deployment"
+subtitle: fine-tuning your project for deployment
 thumbnail: ./thumbnail.png
 ---
 

@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "UI Design"
+title: UI Design
 topics:
   - go
   - web

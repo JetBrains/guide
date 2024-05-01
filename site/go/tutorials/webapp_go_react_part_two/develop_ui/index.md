@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "UI Design"
+title: UI Design
 topics:
   - go
   - web
 author: rpeden
-subtitle: "Jazz up your UI: Styling with Tailwind"
+subtitle: Jazz up your UI with Tailwind
 thumbnail: ./thumbnail.png
 ---
 

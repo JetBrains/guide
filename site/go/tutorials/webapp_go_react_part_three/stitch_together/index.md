@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Stitching Together"
+title: Stitching Together
 topics:
   - go
   - web
 author: rpeden
-subtitle: "Bringing together frontend and backend components"
+subtitle: bringing together frontend and backend components
 thumbnail: ./thumbnail.png
 ---
 

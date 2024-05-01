@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Introduction"
+title: Introduction
 topics:
   - go
   - web
 author: rpeden
-subtitle: "Building the Go Backend: Setting Up Gin, SQLite, and Essential REST APIs"
+subtitle: Setting Up Gin, SQLite, and Essential REST APIs
 thumbnail: ./thumbnail.png
 ---
 

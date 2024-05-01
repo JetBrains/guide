@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Conclusion"
+title: Conclusion
 topics:
   - go
   - web
 author: rpeden
-subtitle: "crafting a seamless full-stack chat experience"
+subtitle: crafting a seamless full-stack chat experience
 thumbnail: ./thumbnail.png
 ---
 

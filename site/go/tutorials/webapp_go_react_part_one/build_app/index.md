@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Crafting the Application"
+title: Crafting the Application
 topics:
   - go
   - web
 author: rpeden
-subtitle: "Constructing the Go Backend for the Chat App"
+subtitle: Constructing the Go Backend for the Chat App
 thumbnail: ./thumbnail.png
 ---
 

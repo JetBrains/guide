@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Conclusion"
+title: Conclusion
 topics:
   - go
   - web
 author: rpeden
-subtitle: "Streamlining Frontend: React and Tailwind in Action"
+subtitle: Streamlining Frontend - React and Tailwind in Action
 thumbnail: ./thumbnail.png
 ---
 

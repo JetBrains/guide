@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Getting Started"
+title: Getting Started
 topics:
   - go
   - web
 author: rpeden
-subtitle: "Dive into frontend development with Node.js and React"
+subtitle: Dive into frontend development with Node.js and React
 thumbnail: ./thumbnail.png
 ---
 

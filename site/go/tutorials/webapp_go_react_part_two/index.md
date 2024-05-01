@@ -2,12 +2,12 @@
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2024-04-23
-title: "Web App with Go and React: Part 2"
+title: Web App with Go and React - Part 2
 topics:
   - go
   - web
 author: rpeden
-subtitle: "Fullstack Application Development with Go and React"
+subtitle: Fullstack Application Development with Go and React
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./getting_started/

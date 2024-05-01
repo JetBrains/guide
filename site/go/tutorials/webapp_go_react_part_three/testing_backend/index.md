@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Testing the Backend"
+title: Testing the Backend
 topics:
   - go
   - web
 author: rpeden
-subtitle: "Connecting the dots: from development to deployment"
+subtitle: Connecting the dots - from development to deployment
 thumbnail: ./thumbnail.png
 ---
 
