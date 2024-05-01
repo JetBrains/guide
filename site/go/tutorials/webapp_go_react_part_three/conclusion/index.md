@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: ""
+subtitle: "crafting a seamless full-stack chat experience"
 thumbnail: ./thumbnail.png
 ---
 

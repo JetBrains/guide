@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: ""
+subtitle: "Connecting the dots: from development to deployment"
 thumbnail: ./thumbnail.png
 ---
 
@@ -30,7 +30,7 @@ Before connecting the backend and frontend of the app, it's a good idea to test 
 
 Fortunately, GoLand has a built-in HTTP client that makes this kind of test easy.
 
-Click the hamburger icon in the app's title bar to open the menu, then choose _Tools | HTTP Client | Create Request in HTTP Client_:
+Click the hamburger icon in the app's title bar to open the menu, then choose **Tools | HTTP Client | Create Request in HTTP Client**:
 
 ![Create HTTP request in GoLand](./images/2.png)
 
@@ -109,7 +109,7 @@ The app will create your user and return you to the login page. Sign in with the
 
 ![Chat app main page](./images/10.png)
 
-Since you don't have any chat channels yet, the app asks you to create one. Enter a channel name in the input box, then click the "Add Channel" button to add a new channel. You'll see it appear in the list of channels.
+Since you don't have any chat channels yet, the app asks you to create one. Enter a channel name in the input box, then click **Add Channel** button to add a new channel. You'll see it appear in the list of channels.
 
 Click the name of the channel to open it:
 

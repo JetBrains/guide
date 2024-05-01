@@ -10,7 +10,7 @@ author: rpeden
 subtitle: "Fullstack Application Development with Go and React"
 thumbnail: ./thumbnail.png
 tutorialItems:
-  - ./getting_started/
+  - ./stitch_together/
   - ./testing_backend/
   - ./preparing_production/
   - ./conclusion/

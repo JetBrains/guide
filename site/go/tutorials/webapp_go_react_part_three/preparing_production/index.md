@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: ""
+subtitle: "fine-tuning your project for deployment"
 thumbnail: ./thumbnail.png
 ---
 
