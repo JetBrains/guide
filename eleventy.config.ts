@@ -110,7 +110,7 @@ module.exports = function (eleventyConfig: any) {
 
 	// These are all relative to the input directory at the end
 	eleventyConfig.addPassthroughCopy(
-		"./!(_site)**/*.{gif,jpg,png,svg,jpeg,webm,webp}",
+		"./!(_site)**/*.{gif,jpg,png,svg,jpeg,webm,webp,zip}",
 		{ overwrite: true }
 	);
 	eleventyConfig.addPassthroughCopy(
