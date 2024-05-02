@@ -5,7 +5,7 @@ topics:
   - go
   - navigation
 author: dlsniper
-subtitle: "Jump to a file without using the Project Tool Window, and your mouse"
+subtitle: Jump to a file without using the Project Tool Window, and your mouse
 thumbnail: ./thumbnail.png
 video: >-
   https://www.youtube.com/watch?v=tqbdUcTuEKo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=80

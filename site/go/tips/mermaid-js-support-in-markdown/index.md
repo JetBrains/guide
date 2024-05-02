@@ -4,7 +4,7 @@ title: Full support of Mermaid syntax
 topics:
   - platform
 author: ap
-subtitle: "Seamlessly integrate, create, and visualize Mermaid diagrams"
+subtitle: Seamlessly integrate, create, and visualize Mermaid diagrams
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/KPmsKMgw6sI"
 ---

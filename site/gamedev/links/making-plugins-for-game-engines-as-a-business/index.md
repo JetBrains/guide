@@ -8,7 +8,7 @@ topics:
   - unity
   - unreal
 author: maartenba
-subtitle: "Alexander Pirogov, Victor Careil"
+subtitle: Alexander Pirogov, Victor Careil
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/--y6CLG1JP8"
 linkURL: "https://youtu.be/--y6CLG1JP8"

@@ -9,7 +9,7 @@ topics:
   - rider
   - testing
 author: khalidabuhakmeh
-subtitle: "Run your tests in the background, while you code."
+subtitle: Run your tests in the background, while you code.
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm

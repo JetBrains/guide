@@ -5,7 +5,7 @@ title: Linking Between Sites with Intersphinx
 topics:
   - sphinx
 author: pwe
-subtitle: "Rich structure and linking, between sites."
+subtitle: Rich structure and linking, between sites.
 thumbnail: thumbnail.png
 ---
 

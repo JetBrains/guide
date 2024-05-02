@@ -6,7 +6,7 @@ topics:
   - databases
   - web
 author: sb
-subtitle: "Optimising queries beyond the N + 1 problem."
+subtitle: Optimising queries beyond the N + 1 problem.
 seealso:
   - title: (documentation) Django support in PyCharm
     href: >-

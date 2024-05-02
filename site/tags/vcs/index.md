@@ -1,6 +1,6 @@
 ---
 title: Version Control
-subtitle: "Integrated, visual version control across your project."
+subtitle: Integrated, visual version control across your project.
 logo: thumbnail.png
 author: pwe
 date: 2020-01-01

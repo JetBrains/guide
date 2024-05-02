@@ -1,7 +1,7 @@
 ---
 date: 2020-06-19
 title: Review Errors from Test Runners
-subtitle: "In a test file, hover over an error to get more information about it."
+subtitle: In a test file, hover over an error to get more information about it.
 topics:
   - jest
   - testing

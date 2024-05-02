@@ -7,7 +7,7 @@ topics:
   - django
   - python
 author: mm
-subtitle: "Create a new app, define models, and explore the project's structure."
+subtitle: Create a new app, define models, and explore the project's structure.
 thumbnail: thumbnail.png
 video: "https://youtu.be/OIOJk_KZe8g"
 obsoletes:

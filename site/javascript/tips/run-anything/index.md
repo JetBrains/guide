@@ -4,7 +4,7 @@ title: Run Tools and Configurations from One Place
 topics:
   - running
 author: er
-subtitle: "Use a single action to run configurations, tools, and open recent projects."
+subtitle: Use a single action to run configurations, tools, and open recent projects.
 seealso:
   - title: What's new in WebStorm 2019.3
     href: >-

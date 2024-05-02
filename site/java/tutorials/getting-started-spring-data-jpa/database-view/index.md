@@ -4,7 +4,7 @@ date: 2021-06-02
 title: Creating a Data Source
 topics: []
 author: da
-subtitle: "In the Database View, create a data source for our database."
+subtitle: In the Database View, create a data source for our database.
 thumbnail: ./thumbnail.png
 ---
 

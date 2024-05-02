@@ -9,7 +9,7 @@ topics:
   - rider
   - web
 author: pwe
-subtitle: "What's your code doing? Step through code with the debugger, and find out."
+subtitle: What's your code doing? Step through code with the debugger, and find out.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/10HzlZSEqVQ"
 ---

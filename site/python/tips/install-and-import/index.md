@@ -4,7 +4,7 @@ title: Install and import
 topics:
   - python
 author: pwe
-subtitle: "While typing a symbol, let PyCharm install it and generate the import."
+subtitle: While typing a symbol, let PyCharm install it and generate the import.
 seealso:
   - title: Creating and Optimizing Imports
     href: >-

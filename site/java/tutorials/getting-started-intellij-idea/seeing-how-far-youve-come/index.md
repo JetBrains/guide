@@ -4,7 +4,7 @@ date: 2023-02-03
 title: Seeing how far you've come
 topics: []
 author: hs
-subtitle: "The Productivity Guide is a fun way to see what you know, and what you don't!"
+subtitle: The Productivity Guide is a fun way to see what you know, and what you don't!
 thumbnail: ./thumbnail.png
 ---
 

@@ -5,7 +5,7 @@ topics:
   - editing
   - platform
 author: ap
-subtitle: "Support for links, lists, and new headings in doc comments."
+subtitle: Support for links, lists, and new headings in doc comments.
 seealso:
   - title: (documentation) GoLand Help -  Viewing Inline Documentation
     href: >-

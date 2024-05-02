@@ -6,7 +6,7 @@ topics:
   - pytest
   - testing
 author: pwe
-subtitle: "During refactoring, use pytest's markers to ignore certain breaking tests."
+subtitle: During refactoring, use pytest's markers to ignore certain breaking tests.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/rEYQrMY8Ux4"
 obsoletes:

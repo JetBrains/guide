@@ -5,7 +5,7 @@ topics:
   - editing
   - go
 author: dlsniper
-subtitle: "While typing a symbol, let GoLand install it and generate the import."
+subtitle: While typing a symbol, let GoLand install it and generate the import.
 seealso:
   - title: (documentation) GoLand Help - Creating and Optimizing Imports
     href: "https://www.jetbrains.com/help/go/creating-and-optimizing-imports.html"

@@ -4,7 +4,7 @@ title: Evaluate Expression During Debugging
 topics:
   - debugging
 author: pwe
-subtitle: "Select your code and execute it, in the right context."
+subtitle: Select your code and execute it, in the right context.
 seealso:
   - title: Evaluating Expressions
     href: "https://www.jetbrains.com/help/pycharm/evaluating-expressions.html"

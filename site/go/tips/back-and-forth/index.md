@@ -5,7 +5,7 @@ topics:
   - go
   - navigation
 author: dlsniper
-subtitle: "Navigate back to where you were, or where you went."
+subtitle: Navigate back to where you were, or where you went.
 seealso:
   - title: (documentation) GoLand Help - Navigate to Navigated Items
     href: "https://www.jetbrains.com/help/go/navigating-to-navigated-items.html"

@@ -6,7 +6,7 @@ topics:
   - debugging
   - go
 author: dlsniper
-subtitle: "Select your code and execute it, in the right context."
+subtitle: Select your code and execute it, in the right context.
 seealso:
   - title: (documentation) GoLand Help - Evaluating Expressions
     href: "https://www.jetbrains.com/help/go/evaluating-expressions.html"

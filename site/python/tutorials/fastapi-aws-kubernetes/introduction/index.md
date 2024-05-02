@@ -8,7 +8,7 @@ topics:
   - kubernetes
   - python
 author: mm
-subtitle: "Introducing FastAPI,  a modern, fast (high-performance), web framework."
+subtitle: Introducing FastAPI,  a modern, fast (high-performance), web framework.
 thumbnail: thumbnail.png
 video: "https://www.youtube.com/watch?v=iCVEhVI07Ig"
 ---

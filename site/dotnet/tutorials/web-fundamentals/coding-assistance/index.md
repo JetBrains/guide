@@ -9,7 +9,7 @@ topics:
   - rider
   - web
 author: pwe
-subtitle: "Find out how Rider helps you write better code, faster."
+subtitle: Find out how Rider helps you write better code, faster.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/gX8KgyzC-_A"
 ---

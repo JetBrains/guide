@@ -5,7 +5,7 @@ topics:
   - navigation
   - tricks
 author: md
-subtitle: "Go to Declaration or Usages, or Go to Implementation"
+subtitle: Go to Declaration or Usages, or Go to Implementation
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Navigation in IntelliJ IDEA

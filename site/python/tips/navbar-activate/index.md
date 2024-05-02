@@ -4,7 +4,7 @@ title: Activate Navigation Bar
 topics:
   - navigation
 author: pwe
-subtitle: "Bring up the Navigation Bar as needed, let it disappear when finished."
+subtitle: Bring up the Navigation Bar as needed, let it disappear when finished.
 seealso:
   - title: Navigation bar
     href: >-

@@ -7,7 +7,7 @@ topics:
   - django
   - python
 author: mm
-subtitle: "Introducing Django, a high-level python web framework."
+subtitle: Introducing Django, a high-level python web framework.
 thumbnail: thumbnail.png
 video: "https://youtu.be/ze8ukid9owU"
 obsoletes:

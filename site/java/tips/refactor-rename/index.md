@@ -5,7 +5,7 @@ topics:
   - refactoring
   - tricks
 author: md
-subtitle: "Renaming classes, methods, and variables in IntelliJ IDEA"
+subtitle: Renaming classes, methods, and variables in IntelliJ IDEA
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) IntelliJ IDEA. Everyday Refactorings

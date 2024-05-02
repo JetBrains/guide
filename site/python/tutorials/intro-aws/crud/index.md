@@ -5,7 +5,7 @@ title: Writing REST APIs
 topics:
   - aws
 author: mm
-subtitle: "Beginning CRUD (Create, Read, Update, Delete) Operations"
+subtitle: Beginning CRUD (Create, Read, Update, Delete) Operations
 thumbnail: ../thumbnail.png
 video: "https://youtu.be/3imrJukMeMQ"
 ---

@@ -9,7 +9,7 @@ topics:
   - inspections
   - resharper
 author: matkoch
-subtitle: "Helping you write better code, faster, and automatically fixes code issues."
+subtitle: Helping you write better code, faster, and automatically fixes code issues.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/RgDGJ9H63n4"
 ---

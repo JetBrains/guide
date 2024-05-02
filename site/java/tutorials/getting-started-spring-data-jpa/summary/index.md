@@ -4,7 +4,7 @@ date: 2021-06-02
 title: Summary
 topics: []
 author: da
-subtitle: "Shortcuts, GitHub repository and other resources"
+subtitle: Shortcuts, GitHub repository and other resources
 thumbnail: ./thumbnail.png
 ---
 

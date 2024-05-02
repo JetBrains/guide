@@ -1,7 +1,7 @@
 ---
 date: 2024-03-03
 title: "Debug Like a Pro: JavaScript Edition"
-subtitle: "Reach for the debugger first when learning about code, poking around, or fixing problems."
+subtitle: Reach for the debugger first when learning about code, poking around, or fixing problems.
 topics:
   - debugging
 author: pwe

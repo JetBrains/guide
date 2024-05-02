@@ -5,7 +5,7 @@ topics:
   - settings
   - tricks
 author: md
-subtitle: "Configure font, font size, and more"
+subtitle: Configure font, font size, and more
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Font

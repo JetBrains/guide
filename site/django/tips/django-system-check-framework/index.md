@@ -6,7 +6,7 @@ topics:
   - databases
   - web
 author: sb
-subtitle: "Extend Django's system check framework to turn painful code reviews into a joy."
+subtitle: Extend Django's system check framework to turn painful code reviews into a joy.
 seealso:
   - title: (documentation) Django support in PyCharm
     href: >-

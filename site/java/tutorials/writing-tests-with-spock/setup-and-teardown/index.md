@@ -5,7 +5,7 @@ title: Setup and Teardown
 topics:
   - testing
 author: tg
-subtitle: "See how to set up, or clean up, test classes and methods in Spock."
+subtitle: See how to set up, or clean up, test classes and methods in Spock.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=1947"
 ---

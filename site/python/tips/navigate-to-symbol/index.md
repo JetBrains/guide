@@ -4,7 +4,7 @@ title: Navigate to Symbol
 topics:
   - navigation
 author: pwe
-subtitle: "Navigate your project by code, not files."
+subtitle: Navigate your project by code, not files.
 seealso:
   - title: Navigating by Name
     href: >-

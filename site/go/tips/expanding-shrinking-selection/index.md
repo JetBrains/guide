@@ -5,7 +5,7 @@ topics:
   - editing
   - go
 author: dlsniper
-subtitle: "Select portions of code that you need to, faster"
+subtitle: Select portions of code that you need to, faster
 seealso:
   - title: (documentation) GoLand Help - Use quick pop-ups
     href: >-

@@ -5,7 +5,7 @@ topics:
   - django
   - web
 author: sb
-subtitle: "Speed up your Django list view with htmx and pagination."
+subtitle: Speed up your Django list view with htmx and pagination.
 seealso:
   - title: (tip) Speed up your Django queries
     href: >-

@@ -6,7 +6,7 @@ title: Developing Serverless APIs using AWS Toolkit
 topics:
   - aws
 author: mm
-subtitle: "Run, build, and deploy serverless functions in PyCharm."
+subtitle: Run, build, and deploy serverless functions in PyCharm.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./background/

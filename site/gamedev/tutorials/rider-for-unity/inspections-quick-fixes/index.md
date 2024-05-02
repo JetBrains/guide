@@ -11,7 +11,7 @@ topics:
   - rider
   - unity
 author: citizenmatt
-subtitle: "Rider helps you write better code, faster."
+subtitle: Rider helps you write better code, faster.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=gNTOFr_TQCg"
