@@ -17,7 +17,7 @@ I'll provide you with assets for this tutorial, so you won't have to worry about
 
 ![Pong game assets](../assets/image56.png)
 
-**[Download Assets Here](../assets/assets.zip)**
+**[Download Assets Here](https://github.com/JetBrains/guide/blob/main/site/gamedev/tutorials/rider-godot-pong/assets/assets.zip)**
 
 Once you've downloaded and unarchived the directory, you can drag and drop the folder into the Godot Editor's **FileSystem** window in the bottom left.
 
