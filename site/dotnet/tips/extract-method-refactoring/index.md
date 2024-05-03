@@ -9,7 +9,7 @@ topics:
   - resharper
   - rider
 author: rachelappel
-subtitle: "Split and Organize code into DRY, discrete units."
+subtitle: Split and Organize code into DRY, discrete units.
 seealso:
   - title: Extract Method
     href: "https://www.jetbrains.com/help/rider/Refactorings__Extract_Method.html"

@@ -6,7 +6,7 @@ topics:
   - build
   - maven
 author: tg
-subtitle: "The Maven Tool Window gives you access to goals, dependencies, and more."
+subtitle: The Maven Tool Window gives you access to goals, dependencies, and more.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/pt3uB0sd5kY?start=3"
 ---

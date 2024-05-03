@@ -5,7 +5,7 @@ topics:
   - go
   - navigation
 author: dlsniper
-subtitle: "Bring up the Navigation Bar as needed, let it disappear when finished."
+subtitle: Bring up the Navigation Bar as needed, let it disappear when finished.
 seealso:
   - title: (documentation) GoLand Help - Navigation bar
     href: "https://www.jetbrains.com/help/go/part-4-using-the-navigation-bar.html"

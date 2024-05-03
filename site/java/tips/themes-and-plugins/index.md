@@ -5,7 +5,7 @@ topics:
   - tricks
   - ui
 author: md
-subtitle: "Available themes, installing plugins"
+subtitle: Available themes, installing plugins
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - User interface themes

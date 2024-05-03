@@ -1,7 +1,7 @@
 ---
 date: 2020-09-11
 title: Use Gutter Icons in Zen Mode
-subtitle: "Run scripts, tests, and more from the gutter in Zen mode."
+subtitle: Run scripts, tests, and more from the gutter in Zen mode.
 topics:
   - customizing
 author: er

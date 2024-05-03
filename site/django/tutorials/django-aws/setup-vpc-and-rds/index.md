@@ -7,7 +7,7 @@ topics:
   - django
   - python
 author: mm
-subtitle: "Setup VPC, Subnets, Route Tables, Internet Gateway and Relational Database."
+subtitle: Setup VPC, Subnets, Route Tables, Internet Gateway and Relational Database.
 thumbnail: thumbnail.png
 video: "https://youtu.be/MpAbI2HUmZE"
 obsoletes:

@@ -1,6 +1,6 @@
 ---
 title: Package Search
-subtitle: "Search, evaluate, and manage dependencies in IDE easily."
+subtitle: Search, evaluate, and manage dependencies in IDE easily.
 logo: thumbnail.png
 author: pwe
 date: 2020-01-01

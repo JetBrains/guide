@@ -5,7 +5,7 @@ topics:
   - git
   - vcs
 author: pwe
-subtitle: "Put some missing work back into your last commit, before you push."
+subtitle: Put some missing work back into your last commit, before you push.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/8sSlWDiwdkc"
 seealso:

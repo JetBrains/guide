@@ -1,6 +1,6 @@
 ---
 title: FastAPI
-subtitle: "modern, fast (high-performance), web framework for building APIs"
+subtitle: modern, fast (high-performance), web framework for building APIs
 logo: ./fastapi.svg
 website: "https://fastapi.tiangolo.com"
 topicType: technology

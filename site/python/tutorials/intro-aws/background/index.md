@@ -5,7 +5,7 @@ title: Background on Serverless
 topics:
   - aws
 author: mm
-subtitle: "Introduce Microservices, AWS SAM (Serverless Application Model)"
+subtitle: Introduce Microservices, AWS SAM (Serverless Application Model)
 thumbnail: ../thumbnail.png
 video: "https://youtu.be/caW7eLThBwQ"
 ---

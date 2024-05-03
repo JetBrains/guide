@@ -5,7 +5,7 @@ topics:
   - go
   - navigation
 author: dlsniper
-subtitle: "Navigate your project by code, not files."
+subtitle: Navigate your project by code, not files.
 seealso:
   - title: (documentation) GoLand Help - Navigating by Name
     href: >-

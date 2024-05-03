@@ -5,7 +5,7 @@ topics:
   - editing
   - go
 author: dlsniper
-subtitle: "Quickly add JSON, XML, or custom keys to all struct fields"
+subtitle: Quickly add JSON, XML, or custom keys to all struct fields
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/rusJaogFL78"
 ---

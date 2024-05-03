@@ -6,7 +6,7 @@ title: Marco Codes - 7 Great Terminal/CLI tools
 topics:
   - tricks
 author: hs
-subtitle: "exa, clink, rg & rga, plocate, bat, jq, f%$!"
+subtitle: exa, clink, rg & rga, plocate, bat, jq, f%$!
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

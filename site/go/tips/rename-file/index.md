@@ -5,7 +5,7 @@ topics:
   - go
   - refactoring
 author: dlsniper
-subtitle: "Change your mind on a file name, and the IDE makes all the changes for you."
+subtitle: Change your mind on a file name, and the IDE makes all the changes for you.
 seealso:
   - title: (documentation) GoLand Help - Renaming a file or directory
     href: "https://www.jetbrains.com/help/go/rename-refactorings.html"

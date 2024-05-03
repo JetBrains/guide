@@ -4,7 +4,7 @@ title: Syntax Highlighting for Other Languages
 topics:
   - editing
 author: er
-subtitle: "Look through PHP, Python, and other files in WebStorm."
+subtitle: Look through PHP, Python, and other files in WebStorm.
 seealso:
   - title: What's new in WebStorm 2019.2
     href: "https://blog.jetbrains.com/webstorm/2019/07/webstorm-2019-2/#code_editing"

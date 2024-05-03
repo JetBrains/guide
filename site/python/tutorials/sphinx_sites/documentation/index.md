@@ -5,7 +5,7 @@ title: Documenting Code
 topics:
   - sphinx
 author: pwe
-subtitle: "Pages which include source code, either directly or linking to modules."
+subtitle: Pages which include source code, either directly or linking to modules.
 thumbnail: thumbnail.png
 ---
 

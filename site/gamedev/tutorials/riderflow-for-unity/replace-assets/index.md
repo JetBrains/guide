@@ -10,7 +10,7 @@ topics:
   - riderflow
   - unity
 author: citizenmatt
-subtitle: "Replace assets on your scene. It's like refactoring, but visually!"
+subtitle: Replace assets on your scene. It's like refactoring, but visually!
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=75r6TRwCc_o"

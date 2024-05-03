@@ -5,7 +5,7 @@ title: Linking
 topics:
   - sphinx
 author: pwe
-subtitle: "Sphinx turns links into structure, which turns out to be very valuable."
+subtitle: Sphinx turns links into structure, which turns out to be very valuable.
 thumbnail: thumbnail.png
 ---
 

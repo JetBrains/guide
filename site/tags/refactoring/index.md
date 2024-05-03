@@ -1,6 +1,6 @@
 ---
 title: Refactoring
-subtitle: "Keep your code solid, dry, and easy to maintain."
+subtitle: Keep your code solid, dry, and easy to maintain.
 logo: thumbnail.png
 author: pwe
 date: 2020-01-01

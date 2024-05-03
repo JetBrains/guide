@@ -8,7 +8,7 @@ topics:
   - django
   - python
 author: mm
-subtitle: "Run, build, test and deploy Django Application in PyCharm using NICE DCV."
+subtitle: Run, build, test and deploy Django Application in PyCharm using NICE DCV.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

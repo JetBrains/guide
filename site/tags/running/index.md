@@ -1,6 +1,6 @@
 ---
 title: Running
-subtitle: "Run your code in our configurable, visual run tool."
+subtitle: Run your code in our configurable, visual run tool.
 logo: thumbnail.png
 author: pwe
 date: 2020-01-01

@@ -5,7 +5,7 @@ topics:
   - editing
   - go
 author: dlsniper
-subtitle: "Smart-add a line, from the middle of a line, after or before the current line."
+subtitle: Smart-add a line, from the middle of a line, after or before the current line.
 seealso:
   - title: "(documentation) GoLand Help - Adding, Deleting and Moving Code Elements"
     href: "https://www.jetbrains.com/help/go/adding-deleting-and-moving-lines.html"

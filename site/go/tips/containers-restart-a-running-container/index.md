@@ -5,7 +5,7 @@ topics:
   - containers
   - running
 author: dlsniper
-subtitle: "Start with a container from zero, faster"
+subtitle: Start with a container from zero, faster
 thumbnail: ./thumbnail.png
 video: >-
   https://www.youtube.com/watch?v=rHywojkCvIE&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=115

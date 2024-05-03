@@ -5,7 +5,7 @@ topics:
   - editing
   - javascript
 author: er
-subtitle: "Quickly swap functions parameters, attributes in tags, and more."
+subtitle: Quickly swap functions parameters, attributes in tags, and more.
 seealso:
   - title: Write and edit source code
     href: "https://www.jetbrains.com/help/webstorm/working-with-source-code.html"

@@ -5,7 +5,7 @@ topics:
   - git
   - vcs
 author: pwe
-subtitle: "Edit the wording in your last commit message, after you committed."
+subtitle: Edit the wording in your last commit message, after you committed.
 seealso:
   - title: Edit a commit message
     href: >-

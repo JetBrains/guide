@@ -1,6 +1,6 @@
 ---
 title: Node.js
-subtitle: "JavaScript outside of the browser, on the command-line or server-side"
+subtitle: JavaScript outside of the browser, on the command-line or server-side
 logo: ./nodejs-icon.svg
 website: "https://nodejs.org"
 topicType: technology

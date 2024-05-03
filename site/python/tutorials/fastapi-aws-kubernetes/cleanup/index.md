@@ -8,7 +8,7 @@ topics:
   - kubernetes
   - python
 author: mm
-subtitle: "Cleaning up stack (removing RDS, EKS, ElastiCache, LoadBalancer, Route53)."
+subtitle: Cleaning up stack (removing RDS, EKS, ElastiCache, LoadBalancer, Route53).
 thumbnail: thumbnail.png
 video: "https://www.youtube.com/watch?v=aba-RWIHR28"
 ---

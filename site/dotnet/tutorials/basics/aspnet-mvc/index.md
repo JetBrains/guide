@@ -8,7 +8,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: "A complete MVC pipeline with routes, models, views, and controllers."
+subtitle: A complete MVC pipeline with routes, models, views, and controllers.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/7IniT0P13_I"
 ---

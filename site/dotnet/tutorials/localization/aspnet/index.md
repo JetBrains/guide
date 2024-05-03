@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: "Working with Cultures, Resources, & ASP.NET"
+subtitle: Working with Cultures, Resources, & ASP.NET
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/smCuu3TrVUc"
 ---

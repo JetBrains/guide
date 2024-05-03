@@ -6,7 +6,7 @@ topics:
   - databases
   - web
 author: sb
-subtitle: "What is the difference between blank=True and null=True anyway?"
+subtitle: What is the difference between blank=True and null=True anyway?
 seealso:
   - title: (documentation) Django support in PyCharm
     href: >-

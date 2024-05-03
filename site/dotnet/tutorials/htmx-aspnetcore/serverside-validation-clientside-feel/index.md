@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: "Validate models on the server, display results on the client"
+subtitle: Validate models on the server, display results on the client
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/aGQAHQm4_nU"
 ---

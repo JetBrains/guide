@@ -8,7 +8,7 @@ topics:
   - resharper
   - rider
 author: khalidabuhakmeh
-subtitle: "Working with databases using DbConnection, DbCommand, and DbDataReader"
+subtitle: Working with databases using DbConnection, DbCommand, and DbDataReader
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/BxCrzUIm5kU"
 ---

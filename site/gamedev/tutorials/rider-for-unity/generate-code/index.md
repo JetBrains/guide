@@ -10,7 +10,7 @@ topics:
   - rider
   - unity
 author: citizenmatt
-subtitle: "Rider helps with boiler-plate code, code completion, and more."
+subtitle: Rider helps with boiler-plate code, code completion, and more.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=gNTOFr_TQCg"

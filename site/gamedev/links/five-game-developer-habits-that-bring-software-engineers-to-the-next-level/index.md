@@ -8,7 +8,7 @@ topics:
   - unity
   - unreal
 author: maartenba
-subtitle: "Alexander Chatzizacharias, Erik Pronk"
+subtitle: Alexander Chatzizacharias, Erik Pronk
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/DOACRR4z8JM"
 linkURL: "https://youtu.be/DOACRR4z8JM"
