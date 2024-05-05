@@ -24,7 +24,7 @@ First, over to `package.json` to add two dependencies -- Happy-DOM and Testing L
 {% include "./demos/package.json" %}
 ```
 
-Our `vitest.config.js` file needs to be told to use Happy DOM as the global `document`. Do this by adding
+Our `vitest.config.js` file needs to be told to use Happy-DOM as the global `document`. Do this by adding
 an `environment` entry in `test`:
 
 ```javascript
@@ -39,3 +39,5 @@ Our `index.test.tsx` file can now do a real DOM with the Testing Library approac
 
 Testing Library's philosophy and Happy-DOM's machinery make a great combination. It feels like you have Playwright or
 Selenium in a real browser. But you're still in the speed and philosophy of unit tests.
+
+With the infrastructure in place, we'll start reworking our site and add some more components in the next step.

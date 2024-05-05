@@ -3,7 +3,7 @@ title: Switch to TypeScript
 type: TutorialStep
 date: 2024-04-21
 author: pwe
-subtitle: Develop 11ty sites with TypeScript
+subtitle: Develop 11ty sites with assistance from TypeScript typing.
 thumbnail: ./thumbnail.png
 video:
   url: "https://youtu.be/Jwf5F3tZX4k?si=_zJ8gCu_dlBszndz"
@@ -11,7 +11,7 @@ video:
   end: 346
 ---
 
-We have two `.js` files. Maybe you like TypeScript? Let's switch this project to `.ts`.
+The project we created in the previous step contains two `.js` files. Maybe you like TypeScript? Let's switch this project to `.ts`.
 
 First, of course, add the magical bag of mystery known as the `tsconfig.json` file. I hope this is right. I always just
 cut, paste, and pray.

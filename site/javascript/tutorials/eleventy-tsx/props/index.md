@@ -28,13 +28,13 @@ We should do something similar in `tsconfig.json`:
 {% include "./demos/tsconfig.json" %}
 ```
 
-With this in place, let's make `components/Heading.tsx` (note that it didn't need the `.11ty` in the filename):
+With this in place, let's make `components/Heading.tsx` (note that it didn't need the `.11ty.` in the filename):
 
 ```tsx
 {% include "./demos/components/Heading.tsx" %}
 ```
 
-We can test the default and passed-value cases in `components/Heading.test.tsx`:
+We can test the default and passed-in-value cases in `components/Heading.test.tsx`:
 
 ```tsx
 {% include "./demos/components/Heading.test.tsx" %}
@@ -60,3 +60,5 @@ export const render = Index;
 ```
 
 Tests all pass, the page still builds the same. All good.
+
+In the next step, we'll take our component and make it even more testable.

@@ -12,7 +12,7 @@ video:
 ---
 
 We now have TypeScript for Eleventy with TSX as a template language. This lets us use component-driven development in
-11ty.
+11ty. This also opens up the possibility to write tests for our components, validating they behave (and keep behaving) as expected.
 
 For example, we can work on small chunks -- in isolation -- and work happily in tests, using Vitest. We'll start by
 adding a dependency and a script:
@@ -28,7 +28,7 @@ We need to wire up Vitest in a `vitest.config.js` file at the root:
 ```
 
 This overrides the same settings used by `tsx` for running Eleventy builds. Vitest uses `esbuild` (as does `tsx`) but
-for whatever reason, didn't respect the `tsconfig.json` settings without help. Big shoutout
+for whatever reason, doesn't respect the `tsconfig.json` settings without help. Big shoutout
 to [Joaquín Sánchez](https://github.com/userquin) from Vite/Vitest fame
 for [figuring this out for me](https://github.com/privatenumber/tsx/discussions/453#discussioncomment-8194275).
 
@@ -48,3 +48,5 @@ Now we can write a test of the `Index` component, using Vitest. Save this in `si
 This test passes when we run `npm test`. Even better, we get full integration into the IDE's Vitest support:
 
 ![Running Vitest](./vitest.png)
+
+Having tests is great, but we can do better. We're doing string-based testing, and ideally we want to validate the resulting DOM. Curious? Find out more in the next step!

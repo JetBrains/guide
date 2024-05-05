@@ -11,7 +11,9 @@ video:
   end: 631
 ---
 
-You know, JSX takes a lot of grief. I get it. But you can't beat the tooling support. Using TSX as a template language
+Templates in static sites are often based on JSX - an extension to JavaScript that adds HTML support to the syntax.
+
+JSX takes a lot of grief. I get it. But you can't beat the tooling support. Using TSX as a template language
 for 11ty is really sweet for two reasons: great tooling support and the isolation of component-driven development.
 
 The first thing to understand: `esbuild` has JSX support. But it doesn't actually do JSX processing. It expects to be
@@ -52,7 +54,7 @@ These two new compiler options are important:
 
 These are confusing and brittle, especially the second part.
 
-Let's rename our file to `site/index.11ty.tsx` and return TSX instead of a string:
+Let's rename our file to `site/index.11ty.tsx` and return `JSX.Element` instead of a string:
 
 ```tsx
 {% include "./demos/site/index.11ty.tsx" %}
@@ -87,3 +89,5 @@ To recap what we did here:
 - Add JSX/TSX handling to tsconfig.json
 - Changed our one page/template to TSX
 - Taught 11ty to render `.tsx` templates from `JSX.Element` to a string
+
+In the next step, we'll put our site to the test. Literally! We'll add tests to validate our components.

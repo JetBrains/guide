@@ -17,7 +17,7 @@ more like a view. It mediates between incoming 11ty data and the logic for that 
 Let's change `index.11ty.tsx` to be a "view":
 
 - The `render` function grabs the 11ty-specific stuff
-- A component for that page receives that stuff and renders
+- A component for that page receives what it needs from that stuff and renders
 
 Why this split? Testing! It's not that fun mediating with the (untyped) 11ty "bag-o-data".
 
@@ -48,3 +48,5 @@ data. We can see that split here:
 
 When your view needs lots of data from across parts of the 11ty surface area, this split becomes more convenient.  
 Moreover, when you have a chain of layouts to format Markdown data, this mediation is more important.
+
+Speaking of layouts... In the next step, we'll add one to our project.
