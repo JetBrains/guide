@@ -5,7 +5,10 @@ date: 2024-04-21
 author: pwe
 subtitle: Shared wrapper templates using TSX and components.
 thumbnail: ./thumbnail.png
-video: ""
+video:
+  url: "https://youtu.be/Jwf5F3tZX4k?si=_zJ8gCu_dlBszndz"
+  start: 1604
+  end: 1996
 ---
 
 Right now our 11ty "page" is a JS render function. But most people use `site/index.md` with frontmatter that points to

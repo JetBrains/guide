@@ -5,7 +5,10 @@ date: 2024-04-21
 author: pwe
 subtitle: Develop 11ty sites with TypeScript
 thumbnail: ./thumbnail.png
-video: ""
+video:
+  url: "https://youtu.be/Jwf5F3tZX4k?si=_zJ8gCu_dlBszndz"
+  start: 132
+  end: 346
 ---
 
 We have two `.js` files. Maybe you like TypeScript? Let's switch this project to `.ts`.

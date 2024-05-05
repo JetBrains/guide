@@ -5,7 +5,10 @@ date: 2024-04-21
 author: pwe
 subtitle: Use TSX (JSX in TypeScript) to generate HTML.
 thumbnail: ./thumbnail.png
-video: ""
+video:
+  url: "https://youtu.be/Jwf5F3tZX4k?si=_zJ8gCu_dlBszndz"
+  start: 346
+  end: 631
 ---
 
 You know, JSX takes a lot of grief. I get it. But you can't beat the tooling support. Using TSX as a template language

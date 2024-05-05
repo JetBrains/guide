@@ -5,12 +5,14 @@ title: Get 11ty 3.0 and ESM
 author: pwe
 subtitle: Smallest step into an 11ty setup.
 thumbnail: ./thumbnail.png
-video: ""
+video:
+  url: "https://youtu.be/Jwf5F3tZX4k?si=_zJ8gCu_dlBszndz"
+  start: 0
+  end: 132
 ---
 
 In a mostly-empty `package.json`, we'll add the 11ty dependency and -- crucially -- indicate that this is an ESM
-project. As [Zach explains](https://www.11ty.dev/blog/canary-eleventy-v3/#new-features-and-a-short-upgrade-guide), this
-flips the switch:
+project. As [Zach explains](https://www.11ty.dev/blog/canary-eleventy-v3/#new-features-and-a-short-upgrade-guide), `"type": "module"` flips the switch:
 
 ```
   "scripts": {

@@ -19,6 +19,7 @@ tutorialItems:
   - ./props/
   - ./views/
   - ./layouts/
+video: "https://youtu.be/Jwf5F3tZX4k?si=_zJ8gCu_dlBszndz"
 ---
 
 Eleventy (11ty) 3.0 [supports ESM](https://www.11ty.dev/blog/canary-eleventy-v3/). Yay! Along the way, Zach is

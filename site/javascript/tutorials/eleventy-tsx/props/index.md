@@ -5,7 +5,10 @@ date: 2024-04-21
 author: pwe
 subtitle: Faster, smoother development and reusability with components and props.
 thumbnail: ./thumbnail.png
-video: ""
+video:
+  url: "https://youtu.be/Jwf5F3tZX4k?si=_zJ8gCu_dlBszndz"
+  start: 1135
+  end: 1441
 ---
 
 Our site is currently one "component". And that component is more like a "view." Let's start that split by making

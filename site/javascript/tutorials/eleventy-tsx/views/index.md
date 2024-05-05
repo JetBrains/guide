@@ -5,7 +5,10 @@ date: 2024-04-21
 author: pwe
 subtitle: Interfacing the 11ty system and components.
 thumbnail: ./thumbnail.png
-video: ""
+video:
+  url: "https://youtu.be/Jwf5F3tZX4k?si=_zJ8gCu_dlBszndz"
+  start: 1441
+  end: 1604
 ---
 
 We're doing TSX for our `index.11ty.tsx` 11ty template. But it doesn't really feel like a component, per-se. It feels

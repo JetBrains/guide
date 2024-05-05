@@ -5,7 +5,10 @@ date: 2024-04-21
 author: pwe
 subtitle: Develop with calm and joy through component testing.
 thumbnail: ./thumbnail.png
-video: ""
+video:
+  url: "https://youtu.be/Jwf5F3tZX4k?si=_zJ8gCu_dlBszndz"
+  start: 631
+  end: 926
 ---
 
 We now have TypeScript for Eleventy with TSX as a template language. This lets us use component-driven development in

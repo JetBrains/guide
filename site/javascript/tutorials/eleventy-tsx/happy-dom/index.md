@@ -1,11 +1,14 @@
 ---
-title: DOM Testing with `Happy DOM` and `Testing Library`
+title: DOM Testing with Happy DOM and Testing Library
 type: TutorialStep
 date: 2024-04-21
 author: pwe
 subtitle: Better-faster testing of rendered pages using a DOM library and accessibility-oriented assertions.
 thumbnail: ./thumbnail.png
-video: ""
+video:
+  url: "https://youtu.be/Jwf5F3tZX4k?si=_zJ8gCu_dlBszndz"
+  start: 926
+  end: 1135
 ---
 
 We're in great shape. We now 11ty development using tooling-friendly TS and TSX, for those that prefer such things. We
