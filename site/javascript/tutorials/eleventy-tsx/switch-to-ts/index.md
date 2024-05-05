@@ -3,7 +3,7 @@ title: Switch to TypeScript
 type: TutorialStep
 date: 2024-04-21
 author: pwe
-subtitle: Develop 11ty sites with TypeScript
+subtitle: Develop 11ty sites with assistance from TypeScript typing
 thumbnail: ./thumbnail.png
 video:
   url: "https://youtu.be/Jwf5F3tZX4k?si=_zJ8gCu_dlBszndz"

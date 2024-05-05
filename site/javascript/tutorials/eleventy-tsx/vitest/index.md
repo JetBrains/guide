@@ -28,7 +28,7 @@ We need to wire up Vitest in a `vitest.config.js` file at the root:
 ```
 
 This overrides the same settings used by `tsx` for running Eleventy builds. Vitest uses `esbuild` (as does `tsx`) but
-for whatever reason, didn't respect the `tsconfig.json` settings without help. Big shoutout
+for whatever reason, doesn't respect the `tsconfig.json` settings without help. Big shoutout
 to [Joaquín Sánchez](https://github.com/userquin) from Vite/Vitest fame
 for [figuring this out for me](https://github.com/privatenumber/tsx/discussions/453#discussioncomment-8194275).
 

@@ -38,7 +38,9 @@ export default function () {
 }
 ```
 
-Finally, we'll start the content for our site in `site/index.11ty.js`. This is a [JavaScript template](https://www.11ty.dev/docs/languages/javascript/) which exports a specially-named `render` function which 11ty looks for:
+Finally, we'll start the content for our site in `site/index.11ty.js`. This is
+a [JavaScript template](https://www.11ty.dev/docs/languages/javascript/) which exports a specially-named `render`
+function. This `render` function is what 11ty "JavaScript Templates" looks for:
 
 ```javascript
 export function render() {
@@ -56,7 +58,7 @@ We can click the link in the output to open in a browser:
 
 ![Viewing the site in the dev server URL](./01b.png)
 
-The build also generated an `_site` directory at the root with build output. You can tell the IDE not to index this
+The build also generated an `_site` directory at the root with the build output. You can tell the IDE not to index this
 directory by right-clicking, choosing `Mark directory as...` and choosing `Excluded`.
 
 There's our start: a very simple 11ty setup and site.

@@ -52,7 +52,7 @@ These two new compiler options are important:
 
 These are confusing and brittle, especially the second part.
 
-Let's rename our file to `site/index.11ty.tsx` and return TSX instead of a string:
+Let's rename our file to `site/index.11ty.tsx` and return `JSX.Element` instead of a string:
 
 ```tsx
 {% include "./demos/site/index.11ty.tsx" %}

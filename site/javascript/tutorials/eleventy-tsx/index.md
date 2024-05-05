@@ -26,9 +26,8 @@ Eleventy (11ty) 3.0 [supports ESM](https://www.11ty.dev/blog/canary-eleventy-v3/
 unbundling some template languages, which is a good thing.
 
 In this tutorial, we'll set up 11ty to use: ESM (duh), TypeScript (wuh?), and TSX (WAT?). For full tooling pleasure,
-we'll
-throw in Vitest. Impatient for the "how"? We're using the [tsx](https://github.com/privatenumber/tsx) package, which
-uses `esbuild`. (We're not using Vite.)
+we'll throw in Vitest. Impatient for the "how"? We're using the [tsx](https://github.com/privatenumber/tsx) package,
+which uses `esbuild`. (We're not using Vite.)
 
 ## Why TS? Why TSX?
 
