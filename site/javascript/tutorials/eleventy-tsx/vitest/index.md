@@ -48,3 +48,5 @@ Now we can write a test of the `Index` component, using Vitest. Save this in `si
 This test passes when we run `npm test`. Even better, we get full integration into the IDE's Vitest support:
 
 ![Running Vitest](./vitest.png)
+
+Having tests is great, but we can do better. We're doing string-based testing, and ideally we want to validate the resulting DOM. Curious? Find out more in the next step!
