@@ -1,7 +1,7 @@
 ---
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
-date: 2024-03-20
+date: 2024-05-08
 title: "REST API Development with Gin"
 topics:
   - go

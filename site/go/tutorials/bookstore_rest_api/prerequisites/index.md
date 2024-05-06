@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-04-22
+date: 2024-05-08
 title: Project Configuration
 topics:
   - go
