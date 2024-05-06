@@ -11,6 +11,8 @@ video:
   end: 132
 ---
 
+First things first. We'll start by creating a new 11ty project, which means adding some packages and files.
+
 In a mostly-empty `package.json`, we'll add the 11ty dependency and -- crucially -- indicate that this is an ESM
 project. As [Zach explains](https://www.11ty.dev/blog/canary-eleventy-v3/#new-features-and-a-short-upgrade-guide), `"type": "module"` flips the switch:
 
