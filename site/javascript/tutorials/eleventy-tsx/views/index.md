@@ -48,3 +48,5 @@ data. We can see that split here:
 
 When your view needs lots of data from across parts of the 11ty surface area, this split becomes more convenient.  
 Moreover, when you have a chain of layouts to format Markdown data, this mediation is more important.
+
+Speaking of layouts... In the next step, we'll add one to our project.
