@@ -11,6 +11,8 @@ video:
   end: 132
 ---
 
+First things first. We'll start by creating a new 11ty project, which means adding some packages and files.
+
 In a mostly-empty `package.json`, we'll add the 11ty dependency and -- crucially -- indicate that this is an ESM
 project. As [Zach explains](https://www.11ty.dev/blog/canary-eleventy-v3/#new-features-and-a-short-upgrade-guide), `"type": "module"` flips the switch:
 
@@ -61,7 +63,7 @@ We can click the link in the output to open in a browser:
 The build also generated an `_site` directory at the root with the build output. You can tell the IDE not to index this
 directory by right-clicking, choosing `Mark directory as...` and choosing `Excluded`.
 
-There's our start: a very simple 11ty setup and site.
+There's our start: a very simple 11ty setup and site. In the next step, we'll look at introducing TypeScript to our project.
 
 ## Full Listings
 

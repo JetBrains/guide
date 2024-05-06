@@ -39,3 +39,5 @@ Our `index.test.tsx` file can now do a real DOM with the Testing Library approac
 
 Testing Library's philosophy and Happy-DOM's machinery make a great combination. It feels like you have Playwright or
 Selenium in a real browser. But you're still in the speed and philosophy of unit tests.
+
+With the infrastructure in place, we'll start reworking our site and add some more components in the next step.
