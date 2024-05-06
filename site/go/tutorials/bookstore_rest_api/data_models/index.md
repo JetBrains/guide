@@ -30,7 +30,7 @@ Create `db.go` file under `database` directory.
 
 ![image1](./images/image1.png)
 
-_db.go_
+`db.go`
 
 ```go
 package database
@@ -90,13 +90,13 @@ func (c Client) CloseDBConnection() {
 
 ```
 
-1. `type DBClient` interface - This interface defines what methods a `DBClient` should have. In this case, it is `DBMigrate()` error, which is a method for migrating the database. The exact implementation of `DBMigrate()` is left to the structs that implement the `DBClient` interface.
+1. `type DBClient` interface - This interface defines what methods a `DBClient` should have. In this case, it is `DBMigrate()`, which is a method for migrating the database.
    <br><br>
 2. `type Client` struct - This struct contains a pointer to a GORM DB object. This is the main object that the application will use to interact with the database.
    <br><br>
-3. `func NewClient() (DBClient, error)` - This function initializes a new Client object. It reads environment variables to get the database connection details (host, username, password, database name, and port). It then uses these details to open a new connection to the postgres database. If successful, it returns a client that implements the `DBClient` interface (since Client struct implements `DBMigrate()` method from DBClient interface). If not successful, it returns an error.
+3. `func NewClient() (DBClient, error)` - This function initializes a new Client object. It reads environment variables to get the database connection details (`host`, `username`, `password`, `database name`, and `port`). It then uses these details to open a new connection to the postgres database. If successful, it returns a client that implements the `DBClient` interface (since Client struct implements `DBMigrate()` method from DBClient interface). If not successful, it returns an error.
    <br><br>
-4. `func (c Client) DBMigrate() error` - This is a "placeholder" method for the database migration operation. In this structure, it just returns nil signifying no error. However, in a real application, you would put the code to migrate your database here. We will be covering migration in HTTP Handler section.
+4. `func (c Client) DBMigrate() error` - In this function, it just returns nil signifying no error. However, in a real application, you would put the code to migrate your database here. We will come back to this function later for the implementation.
    <br><br>
 5. `func (c Client) CloseDBConnection()` - This method is used to close the db connection.
 
@@ -153,7 +153,7 @@ Let's begin by creating our `Book` model.
 
 ![book_model](./images/book_model.png)
 
-_models/book.go_
+`models/book.go`
 
 ```go
 package models
@@ -284,11 +284,11 @@ func ValidateDate(pubDate string) (time.Time, error) {
 
 ### Author Model
 
-- The `Author` struct: The `Id` and `Name` fields represent the unique identifier and name of an author, respectively.
+- The `Id` and `Name` fields represent the unique identifier and name of an author, respectively.
   <br>
-  The Books field is of type `[]Book`, which suggests that an author can have multiple books associated with them. The tag `gorm:"many2many:author_books;"` specifies a many-to-many relationship between books and authors.
+- The Books field is of type `[]Book`, which suggests that an author can have multiple books associated with them. The tag `gorm:"many2many:author_books;"` specifies a many-to-many relationship between books and authors.
   <br><br>
-- The `AuthorBook` struct: This is used to model the many-to-many relationship between authors and books. It includes fields AuthorID and BookID, and the `binding:"required"` tag indicates that these fields are mandatory.
+- The `AuthorBook` struct: This is used to model the many-to-many relationship between authors and books. It includes fields `AuthorID` and `BookID`, and the `binding:"required"` tag indicates that these fields are mandatory.
 
 ![author_model](./images/author_modal.png)
 
@@ -314,13 +314,15 @@ type AuthorBook struct {
 
 ![customer_review_modal](./images/customer_review_modal.png)
 
-- **Customer**: Represents a Customer with ID, FirstName, LastName, Email, PhoneNumber, and Address as properties. The struct tag `binding:"required"` indicates that these fields must be provided.
-- **Review**: Represents a review completed by a customer on a book. It includes the ID of the customer and the book, a rating, and a comment. There are also references to the `Customer` and `Book` structures, creating a one-to-many relationship through the keys CustomerID and BookID.
-- **ReviewParams**: A helper struct to validate incoming requests data when creating a book review. It has CustomerID, BookID, Rating, and Comment fields, all of which are required except Comment.
-- **CustomerParams**: A helper struct to validate incoming requests data when creating a new customer.
-- **ReviewList**: A simplified version of review probably used while sending reviews info in responses.
+- `Customer`: Represents a Customer with ID, FirstName, LastName, Email, PhoneNumber, and Address as properties. The struct tag `binding:"required"` indicates that these fields must be provided.
+- `Review`: Represents a review completed by a customer on a book. It includes the ID of the customer and the book, a rating, and a comment. There are also references to the `Customer` and `Book` structures, creating a one-to-many relationship through the keys CustomerID and BookID.
+- `ReviewParams`: A helper struct to validate incoming requests data when creating a book review.
+- `CustomerParams`: A helper struct to validate incoming requests data when creating a new customer.
+- `ReviewList`: Listing all reviews.
 
 The `gorm:"foreignKey:CustomerID"` and `gorm:"foreignKey:BookID"` tags in review struct inform the ORM about the relational mapping between the models. The `json:"-"` tag means this field won't be serialized when the struct is converted to JSON.
+
+`customer.go`
 
 ```go
 package models

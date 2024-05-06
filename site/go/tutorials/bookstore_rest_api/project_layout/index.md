@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 We now have our database setup and running in a reproducible container.
 Time to head to our IDE -- GoLand of course -- and start a project for this sample application.
 
-Let's start by creating a new project in [GoLand](https://www.jetbrains.com/go/).
+Let's start by creating a _New Project_ in [GoLand](https://www.jetbrains.com/go/).
 
 ![goland_1](./images/goland1.png)
 
