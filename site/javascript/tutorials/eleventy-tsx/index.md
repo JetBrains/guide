@@ -22,7 +22,7 @@ tutorialItems:
 video: "https://youtu.be/Jwf5F3tZX4k?si=_zJ8gCu_dlBszndz"
 ---
 
-Eleventy (11ty) 3.0 [supports ESM](https://www.11ty.dev/blog/canary-eleventy-v3/). Yay! Along the way, Zach is
+Eleventy (11ty) 3.0 [supports ESM](https://www.11ty.dev/blog/canary-eleventy-v3/). Yay! Along the way, [Zach Leatherman](https://www.zachleat.com) (11ty creator) is
 unbundling some template languages, which is a good thing.
 
 In this tutorial, we'll set up 11ty to use: ESM (duh), TypeScript (wuh?), and TSX (WAT?). For full tooling pleasure,
