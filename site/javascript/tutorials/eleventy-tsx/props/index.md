@@ -11,8 +11,9 @@ video:
   end: 1441
 ---
 
-Our site is currently one "component". And that component is more like a "view." Let's start that split by making
-a `Heading` component that can get passed a prop for who to say hello to.
+Our site is currently one "component" which serves as an 11ty page/template. We don't really have reuse nor the
+traditional concept of components with props. In this step, we break out part of our page into a `Heading` component
+which can be used on any page, can accept "props", and can be developed in isolation.
 
 Let's say our site content will be in `site` and our software components in `components`:
 

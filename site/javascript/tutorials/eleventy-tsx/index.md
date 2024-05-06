@@ -22,18 +22,20 @@ tutorialItems:
 video: "https://youtu.be/Jwf5F3tZX4k?si=_zJ8gCu_dlBszndz"
 ---
 
-Eleventy (11ty) 3.0 [supports ESM](https://www.11ty.dev/blog/canary-eleventy-v3/). Yay! Along the way, [Zach Leatherman](https://www.zachleat.com) (11ty creator) is
+Eleventy (11ty) 3.0 [supports ESM](https://www.11ty.dev/blog/canary-eleventy-v3/). Yay! Along the
+way, [Zach Leatherman](https://www.zachleat.com) (11ty creator) is
 unbundling some template languages, which is a good thing.
 
 In this tutorial, we'll set up 11ty to use: ESM (duh), TypeScript (wuh?), and TSX (WAT?). For full tooling pleasure,
-we'll throw in Vitest. Impatient for the "how"? We're using the [tsx](https://github.com/privatenumber/tsx) package,
+we'll throw in [Vitest](https://vitest.dev). Impatient for the "how"? We're using
+the [tsx](https://github.com/privatenumber/tsx) package,
 which uses `esbuild`. (We're not using Vite.)
 
 ## Why TS? Why TSX?
 
-11ty prides itself on being a simple, powerful SSG for JavaScript. No build tooling, no magic. At first glance,
-TypeScript and JSX/TSX seem to be a bad fit. If you're from that world, there are lots of galactic-framework-VC-backed
-choices that will delight your inner architecture astronaut.
+11ty prides itself on being a simple, powerful static site generator (SSG) for JavaScript. No build tooling, no magic.
+At first glance, TypeScript and JSX/TSX seem to be a bad fit. If you're from that world, there are lots of
+galactic-framework-VC-backed choices that will delight your inner architecture astronaut.
 
 That's not you. But while you might not want the full footgun experience, perhaps using TypeScript is your jam. When
 paired with a good IDE, it makes for a good DX, for those that like tooling.

@@ -11,14 +11,22 @@ video:
   end: 1135
 ---
 
-We're in great shape. We now 11ty development using tooling-friendly TS and TSX, for those that prefer such things. We
+We now 11ty development using tooling-friendly TS and TSX, for those that prefer such things. We
 also have testing with the super-cool Vitest.
 
 Our test right now asserts a string. We're going to want richer testing. Let's hook
 up [Happy DOM](https://github.com/capricorn86/happy-dom) as a fake web browser
 and [Testing Library](https://testing-library.com) for role-based assertions.
 
-First, over to `package.json` to add two dependencies -- Happy-DOM and Testing Library:
+Why? As [React and Jest](https://jestjs.io) showed with [jsdom](https://jestjs.io/docs/configuration#testenvironment-string), it
+can be very convenient to do unit test development, 100% in Node.js and the IDE, without having a full browser
+application involved. This gives a very fast response cycle when combined with:
+
+- [Vitest watch mode](https://vitest.dev/config/#watch)
+- Vitest's change detection which only re-runs needed tests
+- Running Vitest under WebStorm debugger to easily poke around
+
+Let's see this in practice. First, over to `package.json` to add two dependencies -- Happy-DOM and Testing Library:
 
 ```json
 {% include "./demos/package.json" %}
