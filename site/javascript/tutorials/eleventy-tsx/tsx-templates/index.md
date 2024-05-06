@@ -13,15 +13,15 @@ video:
 
 Templates in static sites are often based on JSX - an extension to JavaScript that adds HTML support to the syntax.
 
-JSX takes a lot of grief. I get it. But you can't beat the tooling support. Using TSX as a template language
-for 11ty is really sweet for two reasons: great tooling support and the isolation of component-driven development.
+I get it -- JSX generates strong emotions. But you can't beat the tooling support. Using TSX (the TypeScript flavor
+of JSX) as a template language for 11ty is really sweet for two reasons: great tooling support and the isolation of
+component-driven development.
 
 The first thing to understand: `esbuild` has JSX support. But it doesn't actually do JSX processing. It expects to be
-pointed at a JSX renderer. Most people associate that with React, Preact, or other build-tool-colossus (negative)
-experiences.
+pointed at a JSX renderer. Most people associate that with React, Preact, or other cumbersome experiences.
 
 But there are actually _standalone_ JSX processors that can run in Node during build. (Or even in the browser,
-post-load.) We're going to use [jsx-async-runtime](https://github.com/jeasx/jsx-async-runtime). We previously used vhtml but switched:
+post-load.) We're going to use [jsx-async-runtime](https://github.com/jeasx/jsx-async-runtime) which gives us:
 
 - Support TS typing
 - Supported, active
@@ -60,15 +60,17 @@ Let's rename our file to `site/index.11ty.tsx` and return `JSX.Element` instead 
 {% include "./demos/site/index.11ty.tsx" %}
 ```
 
-Several interesting points. Obviously, the `return` hands back `JSX`, which indicate in the `JSX.Element` return type.
+Several interesting points. Obviously, the `return` clearly indicates a return type of `JSX.Element`.
 
-But notice what's missing. In our `vhtml` setup, we had to preface each file with this:
+Even better: what's missing. In our previous work with 11ty and TSX, we had to preface each file with a specific
+declaration of the `h` function via import:
 
 ```typescript
 import h, { JSX } from "vhtml";
 ```
 
-This was annoying. Not the least of which: `h` wasn't even used in the file and showed up as an unused import.
+This was annoying. Not the least of which: `h` wasn't even used in the file and showed up as an unused import. This
+then required extra typing to suppress the warning. With `jsx-async-runtime`, we don't need to import `h` or `JSX`.
 
 If we try to build now, it will...fail. 11ty templates are supposed to return a _string_, not a JSX element. Let's fix
 that in `eleventy.config.ts` by using `eleventyConfig.addTransform`:

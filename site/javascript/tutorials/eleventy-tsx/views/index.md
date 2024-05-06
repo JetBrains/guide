@@ -16,8 +16,8 @@ more like a view. It mediates between incoming 11ty data and the logic for that 
 
 Let's change `index.11ty.tsx` to be a "view":
 
-- The `render` function grabs the 11ty-specific stuff
-- A component for that page receives what it needs from that stuff and renders
+- The `render` function grabs the 11ty-specific data from the (large) 11ty API
+- A component for that page receives what it needs from the outside world in 11ty
 
 Why this split? Testing! It's not that fun mediating with the (untyped) 11ty "bag-o-data".
 
