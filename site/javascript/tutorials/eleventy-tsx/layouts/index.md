@@ -89,3 +89,10 @@ more could we want?
 
 Well...sitting in Vitest and working with actual builds using actual Eleventy -- the data cascade, from Markdown files
 on disk. That...may be the topic of another tutorial.
+
+## Conclusion
+
+That's a whirlwind tour of adding TypeScript and TSX to your 11ty tooling. More than that, though: embracing
+component-driven development and testing to stay in the flow, especially when combined with the debugger.
+
+Give it a try and let us know what you think in the comments below.

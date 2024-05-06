@@ -52,7 +52,7 @@ export function render() {
 
 ## Running 11ty dev server
 
-When we run the `start` script, 11ty does an incremental build using the dev server:
+When we do `npm run start`, 11ty does an incremental build using the dev server:
 
 ![Running the dev server](01a.png)
 
