@@ -60,3 +60,5 @@ export const render = Index;
 ```
 
 Tests all pass, the page still builds the same. All good.
+
+In the next step, we'll take our component and make it even more testable.
