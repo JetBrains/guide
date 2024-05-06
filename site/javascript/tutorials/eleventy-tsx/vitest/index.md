@@ -12,7 +12,7 @@ video:
 ---
 
 We now have TypeScript for Eleventy with TSX as a template language. This lets us use component-driven development in
-11ty.
+11ty. This also opens up the possibility to write tests for our components, validating they behave (and keep behaving) as expected.
 
 For example, we can work on small chunks -- in isolation -- and work happily in tests, using Vitest. We'll start by
 adding a dependency and a script:
