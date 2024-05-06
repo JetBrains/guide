@@ -1,14 +1,16 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Data Models"
+title: Data Models
 topics:
   - go
   - web
 author: mm
-subtitle: "Defining models and establishing database connection."
+subtitle: Defining models and establishing database connection
 thumbnail: ./thumbnail.png
 ---
+
+This section holds significant importance as we'll be implementing major components such as database connections and creating new GORM models.
 
 ## Database Connection
 

@@ -1,14 +1,16 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Database Setup"
+title: Database Setup
 topics:
   - go
   - web
 author: mm
-subtitle: "Configuring Your PostgreSQL Database"
+subtitle: Configuring Your PostgreSQL Database
 thumbnail: ./thumbnail.png
 ---
+
+Once you've completed your prerequisites, it's time to configure your database on your local machine.
 
 ## PostgreSQL
 
@@ -21,6 +23,7 @@ I will use Docker Desktop to spin up a container, which will be quite easy and s
 
 Let's use Docker to get a postgres-enabled image for our container.
 This saves us a ton of work: we don't have to download/install/configure a local postgres server.
+
 Open Terminal, and type the following command.
 
 ```bash

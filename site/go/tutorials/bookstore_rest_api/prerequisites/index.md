@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Project Configuration"
+title: Project Configuration
 topics:
   - go
   - web
 author: mm
-subtitle: "Install the dependencies used for the sample application"
+subtitle: Install the dependencies used for the sample application
 thumbnail: ./thumbnail.png
 ---
 

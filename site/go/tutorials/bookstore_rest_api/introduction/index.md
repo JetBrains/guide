@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Introduction"
+title: Introduction
 topics:
   - go
   - web
 author: mm
-subtitle: "Introducing Gin, the high-performance web framework, written in Go"
+subtitle: Introducing Gin, the high-performance web framework, written in Go
 thumbnail: ./thumbnail.png
 ---
 
@@ -19,9 +19,7 @@ We'll start with a brief introduction.
 
 <img alt="golang" src="./images/golang.svg" height="400" width="400">
 
-[Go](https://go.dev/),
-
-Go (also known as Golang) is a statically typed, compiled programming language.
+[Go](https://go.dev/), (also known as Golang) is a statically typed, compiled programming language.
 Go is characterized by its simplicity, efficiency, and focus on concurrency.
 
 Here are some key features and aspects of Go:

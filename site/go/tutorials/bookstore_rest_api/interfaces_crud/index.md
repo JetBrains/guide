@@ -1,14 +1,16 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Interfaces & CRUD Operations"
+title: Interfaces & CRUD Operations
 topics:
   - go
   - web
 author: mm
-subtitle: "Centering on Business Logic via CRUD Operations."
+subtitle: Centering on business logic via CRUD operations
 thumbnail: ./thumbnail.png
 ---
+
+This section primarily focuses on implementing interfaces and CRUD operations.
 
 ## Interfaces
 

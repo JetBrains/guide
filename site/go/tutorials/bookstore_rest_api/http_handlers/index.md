@@ -1,14 +1,16 @@
 ---
 type: TutorialStep
 date: 2024-03-20
-title: "HTTP Handlers"
+title: HTTP Handlers
 topics:
   - go
   - web
 author: mm
-subtitle: ""
+subtitle: Managing Web Requests - The HTTP Handler Approach
 thumbnail: ./thumbnail.png
 ---
+
+This marks the final segment of the tutorial, centering on configuring routes and employing HTTP handlers.
 
 ## Creating Server
 

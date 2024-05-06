@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Project Layout"
+title: Project Layout
 topics:
   - go
   - web
 author: mm
-subtitle: "Organizing and Navigating Through Your Codebase"
+subtitle: Organizing and Navigating Through Your Codebase
 thumbnail: ./thumbnail.png
 ---
 
