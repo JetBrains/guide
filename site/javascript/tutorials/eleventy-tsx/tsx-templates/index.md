@@ -11,7 +11,9 @@ video:
   end: 631
 ---
 
-You know, JSX takes a lot of grief. I get it. But you can't beat the tooling support. Using TSX as a template language
+Templates in static sites are often based on JSX - an extension to JavaScript that adds HTML support to the syntax.
+
+JSX takes a lot of grief. I get it. But you can't beat the tooling support. Using TSX as a template language
 for 11ty is really sweet for two reasons: great tooling support and the isolation of component-driven development.
 
 The first thing to understand: `esbuild` has JSX support. But it doesn't actually do JSX processing. It expects to be
