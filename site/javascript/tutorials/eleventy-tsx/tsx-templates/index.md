@@ -89,3 +89,5 @@ To recap what we did here:
 - Add JSX/TSX handling to tsconfig.json
 - Changed our one page/template to TSX
 - Taught 11ty to render `.tsx` templates from `JSX.Element` to a string
+
+In the next step, we'll put our site to the test. Literally! We'll add tests to validate our components.
