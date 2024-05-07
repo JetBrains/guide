@@ -18,9 +18,10 @@ Following this, we are going to establish several interfaces that define method 
 
 ![abstract](./images/abstract.png)
 
-Author interface with methods for adding an author, linking an author and a book, and listing all authors. There are also `Author`, `AuthorBook`, and `Book` structs which represent their respective entities, and the many-to-many relation between `Author` and `Book` is modeled using the `AuthorBook` struct and the Books field on the Author struct.
+We will be working with author interface supporting methods for adding an author, linking an author and a book,
+and listing all authors.
 
-_author.go_
+`author.go`
 
 ```go
 package abstract
@@ -41,7 +42,7 @@ type Author interface {
 The Book interface provides an abstraction for operations on a book database,
 which includes adding, listing, updating, and deleting books.
 
-_book.go_
+`book.go`
 
 ```go
 package abstract
@@ -61,11 +62,9 @@ type Book interface {
 
 ```
 
-_customer.go_
+`customer.go`
 
-The Customer interface defines three methods for adding, updating, and deleting customers. These methods are expected to be implemented by any structs that satisfy this interface.
-The Customer struct represents a customer object with fields like `Id`, `FirstName`, `LastName`, `Email`, `PhoneNumber`, and `Address`. This struct is used to store customer information in the database.
-The `CustomerParams` struct is used to hold parameters to update customer information, with fields `FirstName`, `LastName`, and `Address`. It's used in the `UpdateCustomer` method of the `Customer` interface.
+The `Customer` interface defines three methods for adding, updating, and deleting customers. These methods are expected to be implemented by any structs that satisfy this interface.
 
 ```go
 package abstract
@@ -83,9 +82,9 @@ type Customer interface {
 
 ```
 
-_review.go_
+`review.go`
 
-- `AddReview`: Takes a context and `ReviewParams` (with `customer ID`, `book ID`, `rating`, and `comment`). It returns a boolean and an error. This method could be used to add a review.
+- `AddReview`: Takes a context and `ReviewParams` (with `customer ID`, `book ID`, `rating`, and `comment`). It returns a boolean and an error. This method will be used to add a review.
 - `ListReview`: Takes a context and a book ID, and returns a list of `ReviewList` (with `review ID`, `rating`, `comment`) and an error. This method could list all reviews for a specific book.
 
 ```go
@@ -103,17 +102,15 @@ type Review interface {
 
 ```
 
-Before going ahead make sure to update the `DBClient interface under _database/db.go_.
+Before going ahead make sure to update the `DBClient` interface under `database/db.go`.
 
 ![dbclient_abstract](./images/dbclient_abstract.png)
 
-It is also composed of four other interfaces
-Book, Author, Customer, and Review from the
-abstract package. This means that the DBClient interface
+This means that the `DBClient` interface
 includes all the methods declared in these four interfaces.
-In other words, a struct that intends to implement DBClient
-should also implement all the methods of Book, Author,Customer,
-and Review interfaces.
+In other words, a struct that intends to implement `DBClient`
+should also implement all the methods of book, author,customer,
+and review interfaces.
 
 ## CRUD(Create, Read, Update, Delete) Operations
 
@@ -123,7 +120,7 @@ Now, let's begin implementing the interfaces.
 
 ![crud_book](./images/crud-book.png)
 
-_book.go_
+`book.go`
 
 ```go
 package database
@@ -212,9 +209,9 @@ func (c Client) UpdateBookCover(_ context.Context, bookId int64, bookImageURL st
 
 ```
 
-Let's break it down
+Let's break down the concepts.
 
-**Add Book**
+#### Add Book
 
 The function accepts two parameters:
 
@@ -223,9 +220,9 @@ The function accepts two parameters:
 
 Upon successful execution, it yields either a pointer to a `models.BookParams` structure or an error.
 
-Initially, the function retrieves the maximum `Id` presently utilized in the Book table of the database. Subsequently, it uses this value to increment the `bookId`, ensuring uniqueness. It also sets the `Title` and `ISBN` from the parameters and parses the `PublicationDate` from `bookParams`.
+Initially, the function retrieves the maximum `Id` presently utilized in the book table of the database. Subsequently, it uses this value to increment the `bookId`, ensuring uniqueness. It also sets the `Title` and `ISBN` from the parameters and parses the `PublicationDate` from `bookParams`.
 
-Following this, the function endeavors to create a new record in the database using the instantiated Book. In case of an error during this creation process, it logs the error and returns an error. If the operation succeeds, it returns the updated parameters (containing the `Id` of the new Book).
+Following this, the function endeavors to create a new record in the database using the instantiated book.
 
 ```go
 func (c Client) AddBook(ctx context.Context, bookParams models.DateParser) (*models.BookParams, error) {
@@ -257,7 +254,7 @@ func (c Client) AddBook(ctx context.Context, bookParams models.DateParser) (*mod
 
 ```
 
-**List Book**
+#### List Book
 
 The `ListBooks` function is employed to retrieve all book entries from a database. When
 invoked, it gathers all book records stored in the database and places them into a slice
@@ -273,7 +270,7 @@ func (c Client) ListBooks(ctx context.Context) ([]models.Book, error) {
 
 ```
 
-**Update Book**
+#### Update Book
 
 The function takes a `context.Context`, a `models.DateParser` interface, and a `bookId` as its arguments.
 Initially, it tries to find a book record in the database that matches the provided `bookId`. If no record is found, it returns false and an error message.
@@ -298,7 +295,7 @@ func (c Client) UpdateBook(_ context.Context, updateBookParams models.DateParser
 
 ```
 
-**Delete Book**
+#### Delete Book
 
 The function takes a `context.Context` and a `bookId` as arguments. It starts by attempting to find a book record in the database associated with the given `bookId`.
 If no book record is found, it returns an error indicating no book is associated with the provided ID.
@@ -319,13 +316,12 @@ func (c Client) DeleteBook(_ context.Context, bookId int64) error {
 
 ```
 
-**Update Book Cover**
+#### Update Book Cover
 
-The function starts by trying to find a book record in the database that matches the provided `bookId`. If no matching book is found, it returns an error message.
-If a matching book record is found, the function proceeds to update the `Image` field of the book record with the new `bookImageURL` provided.
-Finally, the function returns true and nil, indicating that the book's cover information was updated successfully.
+The function proceeds to update the `Image` field of the book record with the new `bookImageURL` provided.
+Finally, the function returns `true` and `nil`, indicating that the book's cover information was updated successfully.
 
-I'll be addressing the topic of uploading the book cover within the HTTP handler section.
+We are not working on the implementation. I will be covering this topic separately in the HTTP handler section.
 
 ```go
 func (c Client) UpdateBookCover(_ context.Context, bookId int64, bookImageURL string) (bool, error) {
@@ -346,6 +342,8 @@ func (c Client) UpdateBookCover(_ context.Context, bookId int64, bookImageURL st
 ### Author
 
 ![author_crud](./images/author-crud.png)
+
+`author.go`
 
 ```go
 package database
@@ -395,9 +393,7 @@ func (c Client) ListAuthors(_ context.Context) ([]models.Author, error) {
 
 ```
 
-Let's break it down
-
-**Add Author**
+#### Add Author
 
 The function is responsible for adding a new author to the database.
 It's first attempts is to find the max ID currently in the author database,
@@ -425,16 +421,16 @@ func (c Client) AddAuthor(ctx context.Context, author models.Author) (*models.Au
 
 ```
 
-**Linking Author & Book**
+#### Linking Author & Book
 
 The `LinkAuthorBook` function is responsible for
 creating a relationship between a given `Author` and `Book`.
 It takes a `context` and a `params` object as arguments, where
-params is of type `AuthorBook`, which presumably contains IDs of an author and a book.
+params is of type `AuthorBook`, which contains IDs of an author and a book.
 This function creates instances of author and book using the IDs from params.
 Then, it calls `Association("Books")` on the author model. This
 targets the "Books" association in the author model, which represents a
-relational database association (presumably a many-to-many relationship
+relational database association (many-to-many relationship
 between authors and books). Using `Append(&book)`, it attempts to add the Book
 instance to the Author's "Books" association, effectively connecting the book
 to the author.
@@ -452,7 +448,7 @@ func (c Client) LinkAuthorBook(_ context.Context, params models.AuthorBook) (boo
 
 ```
 
-**List Authors**
+#### List Authors
 
 The `ListAuthors` function retrieves all the authors present in the database.
 It uses the GORM's `Preload()` method to also load the associated books
@@ -476,7 +472,7 @@ func (c Client) ListAuthors(_ context.Context) ([]models.Author, error) {
 
 ![customer_crud](./images/customer-crud.png)
 
-customer.go
+`customer.go`
 
 ```go
 package database
@@ -533,9 +529,7 @@ func (c Client) UpdateCustomer(_ context.Context, updateCusParams models.Custome
 
 ```
 
-Let's break it down
-
-**Add Customer**
+#### Add Customer
 
 The function is used to create a new customer in the database.
 First, it attempts to find the maximum id of the existing customers in the database.
@@ -563,7 +557,7 @@ func (c Client) AddCustomer(_ context.Context, cusParams models.Customer) (*mode
 
 ```
 
-**Update Customer**
+#### Update Customer
 
 The function is used to update the information of an existing customer in a database.
 It takes the customer's ID as a parameter, and looks up the customer with
@@ -589,7 +583,7 @@ func (c Client) UpdateCustomer(_ context.Context, updateCusParams models.Custome
 
 ```
 
-**Delete Customer**
+#### Delete Customer
 
 The function is used to remove a customer from the database.
 The function first finds the customer with the provided `customerId` in the database
@@ -613,9 +607,9 @@ func (c Client) DeleteCustomer(_ context.Context, customerId int64) error {
 ```
 
 Before going ahead, we will be creating a utility file
-which can shared across the application.
+which will be used across the application.
 
-utils.go
+`utils.go`
 
 ![utils](./images/utils.png)
 
@@ -645,9 +639,9 @@ func (e *NotFoundError) Error() string {
 
 ### Review
 
-Next Review
-
 ![review_crud](./images/review-crud.png)
+
+`review.go`
 
 ```go
 package database
@@ -708,9 +702,7 @@ func (c Client) ListReview(ctx context.Context, bookId int64) ([]models.ReviewLi
 
 ```
 
-Let's break it down
-
-**Add Review**
+#### Add Review
 
 This function is meant to store a new review of a book into a database.
 The function gets the maximum ID currently in the `Review` table in the database. If there
@@ -763,7 +755,7 @@ func (c Client) AddReview(ctx context.Context, revParams models.ReviewParams) (b
 
 ```
 
-**List Review**
+#### List Review
 
 This function is used to retrieve a list of reviews for a specific book from a database.
 It models the `Review` struct, selects the `"id"`, `"rating"`, and `"comment"` fields, filters
