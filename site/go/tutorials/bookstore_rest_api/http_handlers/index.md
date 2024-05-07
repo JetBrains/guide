@@ -12,11 +12,38 @@ thumbnail: ./thumbnail.png
 
 This marks the final segment of the tutorial, centering on configuring routes and employing HTTP handlers.
 
-## Creating Server
+## Server
 
-We will be creating a new server.
+We will be creating a new server instance.
 
 ![server](./images/server.png)
+
+Let me first breakdown the `Server` struct.
+
+- `gin` for HTTP services.
+- `db` package for handling database operations.
+- `s3` which is a client for interacting with Amazon S3.
+- `validator` for data validation tasks.
+- `ut` (which seems to be universal-translator package) for localization.
+
+Firstly, a `Server` struct is defined that encapsulates services and clients needed by the server.
+
+Then, a `NewServer` function is provided to bootstrap a new instance of Server.
+It loads default configuration, creates an S3 client, sets a default gin engine,
+and a new validator. It also registers translations and attaches endpoints to the server.
+`Start` method on the server is for starting the gin server at specified port
+(8080 in this case). If there is an error when running the server, it will log
+the error and return it.
+
+`registerTranslation` function generates a translator for a given validator. Here, english translations are registered.
+
+`endpoints` is a method on server which calls helper functions (`bookRoute`, `authorRoute`, `customerRoute`, `reviewRoute`) to attach various routes (endpoints) to the server.
+Each of these routing functions configures a series of HTTP endpoints
+pertaining to individual topics (like books, authors, customers, reviews). For example,
+`bookRoute` configures endpoints for creating, listing, updating, and deleting
+books as well as uploading book cover.
+
+`server.go`
 
 ```go
 
@@ -73,36 +100,13 @@ func registerTranslation(validation *validator.Validate) *ut.Translator {
 
 ```
 
-Let me first breakdown the `Server` struct.
-
-- gin for HTTP services.
-- db package for handling database operations.
-- s3 which is a client for interacting with Amazon S3.
-- validator for data validation tasks.
-- ut (which seems to be universal-translator package) for localization.
-
-Firstly, a `Server` struct is defined that encapsulates services and clients needed by the server.
-
-Then, a `NewServer` function is provided to bootstrap a new instance of Server.
-It loads default configuration, creates an S3 client, sets a default gin engine,
-and a new validator. It also registers translations and attaches endpoints to the server.
-`Start` method on the server is for starting the gin server at specified port
-(8080 in this case). If there is an error when running the server, it will log
-the error and return it.
-
-`registerTranslation` function generates a translator for a given validator. Here, english translations are registered.
-
-`endpoints` is a method on server which calls helper functions (`bookRoute`, `authorRoute`, `customerRoute`, `reviewRoute`) to attach various routes (endpoints) to the server.
-Each of these routing functions likely configures a series of HTTP endpoints
-pertaining to individual topics (like books, authors, customers, reviews). For example,
-bookRoute might configure endpoints for creating, listing, updating, and deleting
-books as well as uploading book cover.
-
 ## Routes
+
+Next, we will create a common route, and name it `routes.go`.
 
 ![routes](./images/route.png)
 
-Next, we will create a common route, and name it _routes.go_.
+`routes.go`
 
 ```go
 package controllers
@@ -133,17 +137,18 @@ HTTP routes or endpoints for the web server. Each function (bookRoute,
 authorRoute, etc.) is passed a pointer to the Server instance and presumably
 sets up routes related to a specific entity (e.g., books, authors, customers,
 reviews). Currently, the function is empty, we will come back to this later to
-update it. Once we start working on the controllers.
+update it.
 
 ## Update main.go
 
 Lets comeback to `main.go` and update the functionality.
+
 ![update_main](./images/update_main.png)
 
 Within the main function, the initial lines are creating a new connection
 to a database using a function `NewClient()` that belongs to a package named database.
-The `NewClient()` function returns two values, db which is the initialized database
-client, and err which is an error object in case any error occurs during the execution
+The `NewClient()` function returns two values, `db` which is the initialized database
+client, and `err` which is an error object in case any error occurs during the execution
 of the `NewClient()` function.
 
 ```go
@@ -164,7 +169,7 @@ err = db.DBMigrate()
 	}
 ```
 
-Move to _database/db.go_
+Move to `database/db.go`
 
 Update the function.
 
@@ -190,7 +195,7 @@ The `AutoMigrate` function takes pointers to model structures as parameters. In 
 It updates the database schema automatically with matching the tables to the provided models (Author, Book, Customer, Review). This is typically used when models are added or modified in the program, to keep the database in synchronization.
 This function utilizes the AutoMigrate method from the gorm library which is a popular ORM (Object-Relational Mapper) tool in Go.
 
-Post migration, the code sets up a new server (presumably with some form of routing, etc., defined within controllers.NewServer(db)), passing our database client db to this new server.
+Post migration, the code sets up a new server (some form of routing, etc., defined within `controllers.NewServer(db)`), passing our database client db to this new server.
 
 ```go
 service := controllers.NewServer(db)
@@ -201,9 +206,13 @@ Finally, it attempts to start this server with `service.Start()`. If there's an 
 
 ## Controllers
 
+Let's begin focusing on the primary aspect: the HTTP Handlers.
+
 ### Book
 
 ![book_controller](./images/book_controller.png)
+
+`book.go`
 
 ```go
 package database
@@ -293,17 +302,17 @@ func (c Client) UpdateBookCover(_ context.Context, bookId int64, bookImageURL st
 
 Let's break it down.
 
-**Create a new book**
+#### Create a new book
 
-The `CreateBook` function is an HTTP handler that creates a new book record in a database. It uses the Gin web framework for handling HTTP requests.
+The `CreateBook` function is an HTTP handler that creates a new book record in a database. It uses gin for handling HTTP requests.
 
 Briefly, it works as follows:
 
-- CreateBook attempts to parse incoming JSON data into a BookParams structure. If it fails, an HTTP 400 (Bad Request) error is returned, identifying an error in request format.
+- CreateBook attempts to parse incoming JSON data into a `BookParams` structure. If it fails, an HTTP 400 (Bad Request) error is returned, identifying an error in request format.
   <br><br>
-- The function then validates whether the PublicationDate inside the BookParams can be parsed without error. If there is an error, it responds with a HTTP 400 error, indicating that the provided PublicationDate is invalid.
+- The function then validates whether the `PublicationDate` inside the `BookParams` can be parsed without error. If there is an error, it responds with a HTTP 400 error, indicating that the provided `PublicationDate` is invalid.
   <br><br>
-- Assuming that all information is valid, it attempts to add the new book record to the database using the AddBook method. If a problem arises during this process, it triggers a panic, effectively halting the server.
+- Assuming that all information is valid, it attempts to add the new book record to the database using the `AddBook` method. If a problem arises during this process, it triggers a panic, effectively halting the server.
   <br><br>
 - On successful creation of the book record, the function responds with a HTTP 200 status code and the newly created book record in JSON format.
 
@@ -329,7 +338,7 @@ func (s *Server) CreateBook(c *gin.Context) {
 }
 ```
 
-**Listing books**
+#### Listing books
 
 This function tries to list all the books and if successful,
 it returns the list as JSON in the response, otherwise it returns
@@ -346,7 +355,7 @@ func (s *Server) ListBook(c *gin.Context) {
 }
 ```
 
-**Updating a book**
+#### Updating a book
 
 The `UpdateBook` function is used to update a particular book based on book id. It performs several operations
 including retrieving the book's id from the URL parameters, parsing and validating
@@ -386,7 +395,7 @@ func (s *Server) UpdateBook(c *gin.Context) {
 }
 ```
 
-**Deleting a book**
+#### Deleting a book
 
 The `DeleteBook` function is going to delete a book from the database. It fetches
 the `id` parameter from the URL, and attempts to delete the corresponding book. Depending
@@ -411,7 +420,7 @@ func (s *Server) DeleteBook(c *gin.Context) {
 }
 ```
 
-**Updating Book Cover**
+#### Updating Book Cover
 
 This function `UploadBookCover` is responsible for uploading the cover image of the book and updating
 its reference URL in the database.
@@ -462,8 +471,7 @@ func (s *Server) UploadBookCover(c *gin.Context) {
 }
 ```
 
-NOTE: Make sure you have an AWS account. Make sure to
-update **access key ID** and **secret access key**.
+- NOTE: Ensure that you possess an AWS account and that you've created both your [access key ID and secret access key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey).
 
 ![s3_bucket](./images/s3.png)
 
@@ -473,6 +481,8 @@ You need to create an S3 Bucket in AWS and make sure to update
 ### Author
 
 ![author_controller](./images/author_controller.png)
+
+`author.go`
 
 ```go
 package controllers
@@ -533,7 +543,7 @@ func (s *Server) ListAuthors(c *gin.Context) {
 
 Let's break it down.
 
-**Create Author**
+#### Create Author
 
 The `CreateAuthor` function is an HTTP handler that creates a new author in the database.
 
@@ -554,7 +564,7 @@ func (s *Server) CreateAuthor(c *gin.Context) {
 }
 ```
 
-**Linking Book**
+#### Linking Book
 
 This function is trying to create relationship between Author and Book.
 
@@ -582,7 +592,7 @@ func (s *Server) LinkBook(c *gin.Context) {
 }
 ```
 
-**Listing Authors**
+#### Listing Authors
 
 In this function we are trying to list down all the authors present in the database.
 
@@ -601,6 +611,8 @@ func (s *Server) ListAuthors(c *gin.Context) {
 ### Customer
 
 ![customer_controller](./images/customer_controller.png)
+
+`customer.go`
 
 ```go
 package controllers
@@ -691,7 +703,9 @@ func (s *Server) DeleteCustomer(c *gin.Context) {
 
 ```
 
-**Add Customer**
+Let's take a closer look at each function one by one.
+
+#### Add Customer
 
 In this function we are trying to create a new customer. It uses the
 `bindCustomerData` function to parse the customer data from the JSON provided.
@@ -699,7 +713,7 @@ If `bindCustomerData` returns `false`, it will exit the function. After that, it
 tries to add the customer using `s.db.AddCustomer(c, customer)` and checks for errors. If an
 error occurs, logs the error and responds with an HTTP 500 error status code and a
 JSON message to the client. If there are no errors, it will respond with an
-HTTP 200 status code and the added customer in JSON format.
+HTTP 200 status code and the newly created customer in the response.
 
 ```go
 func bindCustomerData(c *gin.Context, customer interface{}) bool {
@@ -726,7 +740,7 @@ func (s *Server) CreateCustomer(c *gin.Context) {
 
 ```
 
-**Update Customer**
+#### Update Customer
 
 This function is responsible for updating the details of the customer. At the start,
 it creates an instance of `CustomerParams` model, which is then filled by the
@@ -774,7 +788,7 @@ func (s *Server) UpdateCustomer(c *gin.Context) {
 }
 ```
 
-**Delete Customer**
+#### Delete Customer
 
 This method is designed to delete a customer's record from a database.
 It begins by trying to parse a customer ID from the context. If it can't parse the ID,
@@ -801,6 +815,8 @@ func (s *Server) DeleteCustomer(c *gin.Context) {
 ### Review
 
 ![review_controller](./images/review_controller.png)
+
+`review.go`
 
 ```go
 package controllers
@@ -877,9 +893,7 @@ func (s *Server) ListReviewByBook(c *gin.Context) {
 
 ```
 
-Let's break it down.
-
-**Create Review**
+#### Create Review
 
 It is intended to create a review information based on the incoming request. First,
 it attempts to bind the incoming request JSON data to the `ReviewParams` model.
@@ -933,7 +947,7 @@ func (s *Server) CreateReview(c *gin.Context) {
 }
 ```
 
-**Listing all reviews**
+#### Listing all reviews
 
 In the function we are trying to get all the book reviews based on book id.
 
@@ -957,6 +971,8 @@ func (s *Server) ListReviewByBook(c *gin.Context) {
 Once, everything is done make sure to update the routes.
 
 ![update_routes](./images/update_routes.png)
+
+`routes.go`
 
 ```go
 package controllers
@@ -1005,3 +1021,5 @@ Now open Postman or HTTP Client to test your endpoints.
 
 ![postman_1](./images/postman_1.png)
 ![postman_2](./images/postman_2.png)
+
+Congratulations on reaching this milestone! While the tutorial may have been extensive, I'm certain you've acquired valuable new knowledge. Now, take the next step and begin creating exciting applications with Go.
