@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-06-10
+date: 2020-05-10
 title: Hello Test
 topics:
   - pytest
@@ -8,7 +8,7 @@ topics:
 author: pwe
 subtitle: Write a simple test and run it in PyCharm's visual test runner.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/I1ssiDEa2S4"
+video: ""
 obsoletes:
   - /pycharm/tutorials/visual_pytest/hello_test/
   - /python/tutorials/visual_pytest/hello_test/
@@ -17,125 +17,62 @@ obsoletes:
 Getting started with pytest is quite easy.
 Let's write a test with a simple assert, then show the various ways to run this test.
 
-## First Test
+## Create a Player class
 
-We want to make and run a test for our `Player` class before we do too much implementation.
-PyCharm can help us make the test.
-Click somewhere in the `Player` and invoke **Navigate | Go To Test** <kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux)
-
-![Invoke Navigate To Test](invoke_navigate_to_test.png)
-
-Tell it to create a new test.
-You will then get a dialog asking for more information.
-PyCharm should spot that you created a `tests` directory, so accept its defaults and click `OK`:
-
-![Navigate To Test](navigate_to_test.png)
-
-PyCharm will add two files to `tests`: an empty `tests/__init__.py` (which can be helpful to `pytest` later) and `tests/test_player.py`.
-PyCharm then opens the new test file at `tests/test_player.py`:
+Let's create a simple Player class that we can use to write our first test. It will have three variables, two of type `str` and one of type `int`:
 
 ```python
-{% include "./demos/test_player01.py" %}
+class Player:
+    first_name: str
+    last_name: str
+    jersey: int
 ```
 
-As mentioned in the previous step, `pytest` recommends placing your tests outside the source code directory.
-This explains why PyCharm chose `tests` as the location.
+## Write and run your first test
 
-This Python `pytest` file has one function, `test_player`.
-In `pytest`, tests [are discovered](https://docs.pytest.org/en/latest/goodpractices.html#conventions-for-python-test-discovery) by default in filenames starting with `test_` and functions/methods with that same prefix.
+We can now get PyCharm to create a basic test for us from that code. Put your caret over it and then use Navigate to Test <kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux):
 
-## Running Your Test
+![create-new-test.png](create-new-test.png)
 
-Now that we have a test -- albeit simple -- let's see what it looks like to _run_ it.
-Right-click in the middle of the editor and choose `Run 'pytest in test_player.py'`:
+Check that PyCharm is putting your test in your tests folder and change it if you need to then click **OK**:
 
-![Run Tests via Context Menu](context_menu.png)
+![nav-to-test.png](nav-to-test.png)
 
-Yay, our first test runs -- and fails!
-Sure, small victory -- but small victories can help get us into the TDD flow.
-
-### Warning
-
-Don't see `pytest` in the context menu as a way to run your tests?
-You probably didn't configure `pytest` as the test framework in the _Python Integrated Tools_ section of the PyCharm's project settings.
-It should configure automatically, though, if your environment has `pytest` when you first open in PyCharm (or have it set globally.)
-
-PyCharm opens a new run tool window in the bottom of the screen.
-This tool window is customized for visualizing tests and their results:
-
-![Failing Tests](tests_tool_window_fail.png)
-
-The test runner tool window lists the tests (organized by hierarchy) on the left and the test output on the right.
-It also has buttons for operations (e.g. re-run tests) and configuration (e.g. only show passing tests.)
-
-Let's change the assertion to make the test pass:
+PyCharm has now created a basic test for us which includes the line `assert False`, meaning that it should fail:
 
 ```python
-{% include "./demos/test_player02.py" %}
+def test_player():
+    assert False
 ```
 
-In the tool window, click the green arrow to re-run your tests.
-The results look much different now:
+You can run your tests in PyCharm in a variety of ways, let's start with the gutter icons:
 
-![Passing Tests](tests_tool_window_pass.png)
+![nav-to-test.png](nav-to-test.png)
 
-## Many Ways to Run Tests
+As we expect the test fails. You can see this in the _Run_ tool window:
 
-As you learn "visual testing", you will start to master different ways to run tests.
-These different ways will reflect your personal style (e.g.mouse vs. keyboard) or different contexts (e.g. "I just want to run the tests on this one test class.")
+![test-failed.png](test-failed.png)
 
-Here is a (non-exhaustive) list of ways that I run tests:
+Change the line to read `assert True` instead of `assert False` and then try running it again. This time we will run it with our keyboard shortcuts <kbd>⌃R</kbd> (macOS) / <kbd>Shift+F10</kbd> (Windows/Linux):
 
-- _Ctrl-R_.
-  My most frequent fave.
-  Re-runs the tests using the currently-selected run configuration.
-  We'll use this for the rest of the tutorial.
+![test-passes.png](test-passes.png)
 
-- _Specific test or suite_.
-  Right-click in a test function or file.
+This Python `pytest` file has one function, `test_player`. In `pytest`, tests [are discovered](https://docs.pytest.org/en/latest/goodpractices.html#conventions-for-python-test-discovery) by default in filenames starting with `test_` and functions/methods with that same prefix.
 
-- _Green arrow_. Click on green arrows in toolbar, gutter, tool window.
+## Test our constructor
 
-- _Right-click_. Context menu in editor, tab, tool window, project tool folder.
+Lacrosse teams have, of course, players. We are first implementing a `Player` class and writing tests as we implement features. This is known as "test-driven development" (TDD).
 
-- _Permanent run configuration_.
-  All of the approaches above create _temporary_ run configurations.
-  I also make _permanent_ run configurations for my top-level folders under `tests` such as `unit`.
-
-## Test the Construction of an Instance
-
-Lacrosse teams have, of course, players.
-We are first implementing a `Player` class and writing tests as we implement features.
-This is known as "test-driven development" (TDD).
-
-We previously made a placeholder file at `src/laxleague/player.py`.
-Open that file and change the class to have a docstring:
+We aren't asserting anything about the instance. Simply: the import works, it's callable, and can be called. Let's change that to check our construction. Change your code to:
 
 ```python
-{% include "./demos/player.py" %}
+def test_construction():
+    assert Player()
 ```
 
-These tutorials are all about getting into the "flow".
-Lots of times I resist: I'm tired, the problem I'm about to tackle is daunting, or I have a lot on my mind.
+Remember that PyCharm can help you [generate the import of `Player` as you type](../../../tips/generate-imports-while-typing/). You don't need to stop your flow, go to the top, and write the import. Instead, type `Pla` and use <kbd>Ctrl+Space+Space</kbd> to autocomplete _and_ add the import line at the top, in the correctly-sorted location, combined with any existing import of the module.
 
-As a self-hack, I write the simplest-possible test, just to see if the thing can be constructed.
-It is of modest value: it can later help show if a refactoring changed things.
-Let's change our first test to see if we can construct an instance:
-
-```python
-{% include "./demos/test_player.py" %}
-```
-
-We aren't asserting anything about the instance.
-Simply: the import works, it's callable, and can be called.
-
-Remember that PyCharm can help you [generate the import of `Player` as you type](/python/tips/generate-imports-while-typing).
-You don't need to stop your flow, go to the top, and write the import.
-Instead, type `Pla` and hit <kbd>Ctrl+Space+Space</kbd> to autocomplete _and_ add the import line at the top, in the correctly-sorted location, combined with any existing import of the module.
-
-## Re-Running
-
-Let's run everything in the file (currently one test) by again right-clicking in the editor and choosing **Run 'pytest in test_player.py'**.
+Let's run everything in the file (currently one test) by right-clicking in the editor and choosing _Run Python tests in test..._.
 Our test passes again:
 
-![Final Test Run](final_test_run.png)
+![right-click.png](right-click.png)

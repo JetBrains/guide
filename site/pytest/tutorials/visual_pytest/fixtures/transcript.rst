@@ -2,103 +2,27 @@
 Transcript
 ==========
 
-    * Start w/ player.py left, test_player.py right, auto-test ``tests`` at bottom
+Welcome back to our pytest video series, let’s get stuck in! Welcome back! First let’s check that we have our code on the left, our test on the right, and our run tool window at the bottom. And… let’s make a change to break the test… and…. fix the test… to check that our tests are auto running, which they are, great!
 
-We are creating the same data in each test. Let's move that to ``pytest`` fixtures.
+Pytest fixtures improve readability and reduce duplication, let’s make our first fixture. We’ll call it player_one and it will return a player of course! Pytest is underlined in red because we need to import it which we can quickly do with Alt+Enter or Option+Enter.
 
-We start in TDD mode: code on left, test on right, test runner in auto-run at bottom.
-Let's run all our tests just to ensure things are clean:
+Next we need to refactor our tests to use this fixture rather than each test creating its own instance of player. Use Shift+F6 to rename p to player_one so all the other instances update too, however we don’t want this local player so we’ll use Ctrl or Cmd and X to delete that line. PyCharm has underlined player_one because it isn’t sure what it is. Let’s use Alt+Enter or Option+Enter and choose to add the fixture to test the function parameters. And finally check that our tests still pass.
 
-    * Click tool window run button
+Same again, we will rename p to player_one in test under add under guardian, then delete the line that creates the player and ask PyCharm to use the Fixture. Let’s repeat these steps for our final tests and then check, all our tests are still passing.
 
-Fixtures are decorators from pytest, which needs an import. This decorator
-registers the function name as a fixture. For us, player_one will construct
-and return a Player instance, providing type hinting along the way.
+That was the player fixture, what about one for guardians too? Let’s create that now, using a list of guardians in the same test file. We then need to go through a similar process as before with the refactor.
 
-    * Generate pytest.fixture
-    * def player_one() -> Player:
-    * Copy Player()
-    * Paste it as the return value
-    * Reformat code
+First let’s rename our assignment to guardians under list at position zero, PyCharm will rightly give us an error here since we’re trying to perform an incorrect assignment, however we’re just doing it to update the other usages and then we will delete the line.  Let’s use Alt+Enter or Option+Enter and choose to add the fixture to test the function paramters.. Now all our tests are passing again.
 
-To use the fixture, add it as an argument to a test. pytest will find
-the fixture with that name and inject the result as the argument. The
-IDE shows some fixture information. Then, change the name used in the
-test and delete the earlier definition. The tests all pass.
+Let’s finish up the fixture refactoring by using our guardian fixture in the final two tests. Same again, Shift+F6 to rename the variable and its instances, then delete the line and use Alt+Enter or Option+Enter to bring in the Fixture for both test under add guardians and test under primary guardian. Wonderful, and all our tests still pass.
 
-    * Change first test to use fixture as argument via autocomplete
-    * Mouseover to show the type
-    * Refactor | Rename ``p`` -> ``player_one``
-    * Run test, still passes
+Time to switch over to our guardians test and add the same guardian fixture there too. Let’s paste the same fixture here and again we will get PyCharm to handle the import with Alt+Enter or Option+Enter. Now we can refactor the test_construction to remove the local definition of a guardian and use the fixture in the same way as before…
 
-We can then go to each of the other tests and do the same routine, replacing
-an inline definition of the sample Player instance with the injected fixture.
-[pause] Once done, all of our tests pass.
+Let’s create a conftest.py file to manage all our fixtures and eliminate this duplication. Let’s select both our fixtures from the Player test file and then use Search Everywhere which is Shift+Shift and search for “Move”. We’ll call the new file conftest.py and selectthe root of our project rather than our tests directory. PyCharm handles all our imports for us in the new conftest.py file, deletes the fixtures from our Player test file and removes unused imports, perfect! However, we do still need to remove the fixture from our Guardian test file and we can get rid of our unused imports with Optimize Imports which is Ctrl, Option and O on Mac or Ctrl and Alt and O on Windows.
 
-Let's now make a fixture for the guardians. Since we use several, we'll make
-a fixture which creates 3 guardians the 3 guardians we used previously,
-then returns a tuple of them. We also supply type hinting:
+Now we have eliminated duplication and our tests are easier to reason about, lovely!
 
-    * Decorator
-    * def guardians() -> Tuple[Guardian, ...]:
-    * Paste the other 3
-    * return g1, g2, g3
+Before I leave you, let me remind you that naming is hard! guardians_list is not the best name that I could have used for this fixture, let’s rename it to all_guardians. We can even do that from a usage, like here. I can press Shift+F6 twice to rename it with all the options. I’ll use all under guardians and then click Preview. Note how all my usages AND the the fixture itself have been updated? In case you were wondering, you can hold down Command or Alt and then click to toggle between Usages and Definitions as I am here. Of course if you change your mind you can undo it just as easily! But I prefer my new name!
 
-Wave the magic wand, the others are converted to use the fixtures,
-all of our tests still pass, and are easier to reason about.
-
-Now we apply this to ``test_guardian``. Same routine: use a decorator
-to declare a fixture, then a function with the name, by default, used as
-the fixture name.
-
-We then use this fixture in our tests, as an injected argument, which replaces
-the local definition of a guardian.
-
-    * Cmd-E, t_p
-    * def guardians() -> Tuple[Guardian, ...]:
-    * Paste the rest
-
-Something looks wrong. Fixtures eliminate repetition, but we just
-cut-and-pasted this from the other test file. To share fixtures, copy
-this into a ``conftest.py`` file:
-
-    * Alt-Up to select function and decorator
-    * Cmd-X to cut
-    * Cmd-Up, Cmd-N to create a new file conftest.py
-    * Paste
-    * Fix up the imports
-    * Reformat Code
-
-This file can be in the current directory or any directory up to ``tests``.
-Once copied over, we'll have some missing imports, which we can ask the IDE
-to help us clean up. We now have our test data -- that is, our fixtures --
-separate from our tests.
-
-Back in our Guardian tests, the file is a lot simpler and the tests run fine:
-
-    * Cmd-E
-    * Reformat Code
-
-In the player tests, we remove the two fixtures and their imports. Fixtures
-in conftest made a big difference in readability here and the tests still pass:
-
-    * Cmd-E, t_p
-    * Remove fixtures
-    * Ctrl-Alt-O to optimize imports
-    * Tests still pass
-
-Since fixtures are an indirection, PyCharm helps sort out the magic. As you saw,
-we can autocomplete (in fact, it's a context-aware autocompletion.)
-
-We can hover to see type information, F1 to see inline docs, and navigate to the
-fixture definition. You can even Refactor-Rename from a usage and it will change
-the declaration and all the usages, with Undo putting everything back.
-
-    * Hover on ``guardians``
-    * F1 on ``guardians``
-    * Ctrl-Click on ``guardians`` then Cmd-} to return
-    * Ctrl-T | Rename | "all_guardians"
-    * Accept refactor
-    * Go to conftest.py, then test_guardian, then back to test_player
-    * Cmd-Z to undo
+Show test_player.py and renaming guardians_list to all_guardians with options and preview on the refactoring. Then show toggling between the usages and definitions. Briefly do Ctrl+Z to undo it thenShift+Command+Z to redo it. Fixtures are a great way in pytest to reduce duplication and improve the readability of your tests. There’s lots of cool ways you can use fixtures in the setup and tear down of your tests, check out the pytest documentation for more information.
 
