@@ -1,133 +1,99 @@
 ---
 type: TutorialStep
-date: 2020-06-10
+date: 2024-05-10
 title: Skipping Tests
 topics:
   - pytest
   - testing
-author: pwe
-subtitle: "During refactoring, use pytest's markers to ignore certain breaking tests."
+author: hs
+subtitle: During refactoring, use pytest's markers to ignore certain breaking tests.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/rEYQrMY8Ux4"
+video: ""
 obsoletes:
   - /pycharm/tutorials/visual_pytest/skipping_tests/
   - /python/tutorials/visual_pytest/skipping_tests/
 ---
 
-Sometimes you want to overhaul a chunk of code and don't want to stare at a broken test.
-You could comment it out.
-But `pytest` provides an easier (and more feature-ful) alternative for skipping tests.
+Sometimes you want to overhaul a chunk of code and don't want to stare at a broken test. You could comment it out. But `pytest` provides an easier (and more feature-ful) alternative for skipping tests.
 
-We'll show this in action while implementing:
+## Sanity check of TDD mode
 
-- The ability to add multiple guardians at once
+Once again, make sure you have PyCharm set up to automatically rerun your tests when something in your code or your test changes. You can validate if its switched on by either checking in the _Run_ tool window, or just make a change to your code / test to introduce an error and check that your tests fail correctly. Of course, remember to fix the deliberate error before you move on!
 
-- A concept of the "primary guardian" of a player
+## Skip the failing test
 
-## Bulk Guardians
-
-Players usually have more than one Guardian.
-When you have a list of Guardians, you might prefer a different method that lets you add them all at once.
-
-Let's implement this in TDD fashion, by first writing a `test_add_guardians` test in `test_player.py` that fails:
+There are a number of reasons that you might want to skip a failing test and pytest has excellent support for it. Let's add a new test to our `test_player` class:
 
 ```python
 def test_add_guardians():
-    p = Player('Tatiana', 'Jones')
-    # Add one guardian
-    g1 = Guardian('Mary', 'Jones')
-    p.add_guardian(g1)
-    # Later, add some more
-    g2 = Guardian('Joanie', 'Johnson')
-    g3 = Guardian('Jerry', 'Johnson')
+    p = Player('Felicity', 'Smith', 16)
+    g1 = Guardian('Jennifer', 'Smith')
+    p.add_guardians([g1])
+    g2 = Guardian('Mark', 'Smith')
+    g3 = Guardian('Julia', 'Smith')
     p.add_guardians([g2, g3])
-    assert [g1, g2, g3] == p.guardians
+    assert p.guardians == [g1, g2, g3]
 ```
 
-We don't have a method `add_guardians` and so the test fails.
-Perhaps we are busy on something else and we'd like `pytest` to not yell at us, but we don't want to comment out or (worse) delete the test.
+PyCharm has highlighted some of this code because it hasn't been implemented yet so the IDE doesn't know what it is:
 
-Instead, let's import `pytest` and put a decorator for the `skip` marker on that test:
+![not-yet-implemented.png](not-yet-implemented.png)
+
+Of course, this test will fail, but instead of having it fail constantly while you craft the implementation, you can use the `@pytest.mark.skip` annotation to tell pytest to skip that test. Once again, let PyCharm handle the import for `pytest`:
 
 ```python
-{% include "./demos/test_player02.py" %}
+@pytest.mark.skip(reason="Not implemented")
+def test_add_guardians():
+    p = Player('Felicity', 'Smith', 16)
+    g1 = Guardian('Jennifer', 'Smith')
+    p.add_guardians([g1])
+    g2 = Guardian('Mark', 'Smith')
+    g3 = Guardian('Julia', 'Smith')
+    p.add_guardians([g2, g3])
+    assert p.guardians == [g1, g2, g3]
 ```
 
-Remember, we don't have to manually type the import...just start typing `@pyt` and let PyCharm autocomplete using <kbd>⌃␣</kbd> (macOS) / <kbd>Ctrl+Space</kbd> (Windows/Linux).
+## Implement the code
 
-Now when the tests run (automatically, thanks to `Toggle auto-test`), they don't fail, but they do indicate a test was ignored:
-
-![Ignored Tests](ignored_tests.png)
-
-With our failing test in place, let's implement the missing method.
-In `player.py`, clone the existing `add_guardian` method, then change its arguments and implementation:
+Let's use <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux) over to our `player` class and create the implementation next:
 
 ```python
-{% include "./demos/player01.py" %}
+def add_guardians(self, guardians: list[Guardian]):
+    self.guardians.extend(guardians)
 ```
 
-We can now remove the `skip` marker and the test passes.
-Remember to remove the now-unused `pytest` import in `test_player.py` using Optimize Imports.
+Now we need to use <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux) to go back to our `player_test` class and delete the `@pytest.mark.skip(reason="Not implemented")` line so that our test is no longer skipped by pytest.
 
-## Some Typing Cleanup
+Your tests should now run and pass:
 
-Eager readers might have spotted a type hinting flaw: our code breaks the [Be liberal in what you accept, and conservative in what you return](https://m.oursky.com/type-hints-better-type-at-python-28de692c3a4b) rule.
+![all-running-tests.png](all-running-tests.png)
 
-That is, our new method wants a `List`.
-When really, it will take a Python "iterable".
+## Skipping tests from start to finish
 
-For example, our test passes in a _list_ of guardians. It's immutable.
-Might as well change it to be a tuple:
-
-```
-    p.add_guardians((g2, g3))
-```
-
-Doing so breaks Python type checking:
-
-![Type Checking](type_checking.png)
-
-Let's change our `add_guardians` to accept any kind of `Iterable`:
+Once again, we will create a new test and mark it with `@pytest.mark.skip(reason="Not implemented")`:
 
 ```python
-{% include "./demos/player02.py" %}
-```
-
-Tests still pass and type checking now passes.
-
-## Primary Guardian
-
-For the second feature, let's use the same process: write a failing test, temporarily mark it with `skip`, then implement it and remove the mark.
-
-Our feature will work like this: whichever guardian is added first is the primary guardian.
-In `test_player.py` we add `test_primary_guardian`, with the mark already in place:
-
-```python
-@pytest.mark.skip
+@pytest.mark.skip(reason="Not implemented")
 def test_primary_guardian():
-    p = Player('Tatiana', 'Jones')
-    # Add one guardian
-    g1 = Guardian('Mary', 'Jones')
-    p.add_guardian(g1)
-    # Later, add some more
-    g2 = Guardian('Joanie', 'Johnson')
-    g3 = Guardian('Jerry', 'Johnson')
-    p.add_guardians((g2, g3))
-    assert g1 == p.primary_guardian
+    p = Player('Felicity', 'Smith', 16)
+    g1 = Guardian('Jennifer', 'Smith')
+    p.add_guardians([g1])
+    g2 = Guardian('Mark', 'Smith')
+    g3 = Guardian('Julia', 'Smith')
+    p.add_guardians([g2, g3])
+    assert p.gprimary_guardian == [g1]
 ```
 
-Now time for the implementation.
-We're doing this as a Python "property", so add the following in `player.py`:
+PyCharm has highlighted the code that it doesn't understand:
+
+![primary-guardian-unknown.png](primary-guardian-unknown.png)
+
+Let's <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux) over to our `player` class to craft the implementation:
 
 ```python
-{% include "./demos/player.py" %}
+@property
+def primary_guardian(self):
+    return self.guardians[0]
 ```
 
-_Tip: Use the `property` LiveTemplate in PyCharm to speed up the generation of a property._
-
-Remove the `@pytest.mark.skip` mark from `test_primary_guardian` and the test now passes.
-
-## Conclusion
-
-The `pytest.mark.skip` facility, with related `skipIf` and `xFail`, have a broad set of uses.
-As you mature in test writing, start to include other people, and have tests that execute in different environments, you'll put them to good use.
+We can now remove the `@pytest.mark.skip(reason="Not implemented")` from our test and our tests will run successfully:

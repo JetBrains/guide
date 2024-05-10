@@ -2,85 +2,22 @@
 Transcript
 ==========
 
-    * Start with ``players.py`` open
-    * No test window
-    * Tabs on top
+Let’s add a new python file and call it guardians which for now, it’s a placeholder class. We will annotate this class with @dataclasses.dataclass so that python will generate our special methods for us such as `__init__` for our constructor. PyCharm handles the import for us so we can move swiftly on!
 
-We'll use test-driven development, or TDD, to add a feature.
+We’ll use <kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux) to generate a Test class as before and change the basic test to a sanity check for the constructor. And once again we’ll let PyCharm handle the code generation and import for us.
 
-Players have guardians, so add a ``guardians.py`` file containing another placeholder class.
+Fun trick, right-click on your `tests` folder in the Project tool window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux) and select Run Python tests. In `tests` You can see that our previous test ran and passed, as did our new test. Small note here, pressing escape will always put you back in the editor from any toolwindow.
 
-    * Activate navigation bar
-    * Create file ``guardians.py``
-    * ``class Guardian: pass``
+I dangled the possibility of some Test Driven Development or TDD for you so let’s go check out what that looks like in PyCharm. Let’s open our test in a right split, by right-clicking and selecting split right. Now let’s right-click on our `guardian` class and close other tabs so we have our code on the left of the screen and the test on the right.
 
-We'll again let PyCharm generate our test file and test for us:
+Down at the the bottom we have our test output so let’s tell PyCharm to automatically re-run our tests when we change something - one less action for us to do! You can configure this delay quickly by clicking on the 3 vertical dots, and going to **Test Runner Settings** > **Set AutoTest Delay**.
 
-    * Cmd-Shift-T
-    * Enter
+How can PyCharm help with a TDD workflow? Let’s change our new test to `assert False`, pause for 3 seconds and yep, now it fails as expected. And change it back to `assert True` to prove it... yep and now it passes again, this is really helpful when you’re in the TDD flow.
 
-As before, we make a construction test as a sanity check, letting PyCharm generate the import for us:
+Let’s implement a Guardian first and last name, starting with a new failing test. Even before the test runs, the IDE is telling us with a warning that something isn’t right with the squiggle underlines on `Mary` and `Allen`. To make the test pass, we need to add the missing constructor that takes and stores the first name and last name on the Guardian instance.
 
-    * Change to ``test_construction``
-    * Change True to ``Gua`` and Ctrl-Space | Ctrl-Space
+Use <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux) to switch to the other file and change the code. PyCharm is going to help us complete this code too. Lovely! The test has re-run and now it passes!
 
-This time we will run all the tests in the ``tests`` folder:
+Well the tests pass but we haven’t really tested anything yet. Let’s head back to our test class and add some more assert statements. And in the blink of an eye, our test has re-run and now passes! Job done!
 
-    * Right-click in ``tests``
-    * Run it
-
-Our new test passes, as well as the previous one.
-That's a good place to start implementation.
-But first, let's get PyCharm into a good TDD flow.
-We will:
-
-- Turn off some of the toolbars and tool windows
-- And even turn off tabs
-- Then, split vertically
-- With our code on the left...
-- ...our tests for that code on the right
-- ...and the test output at the bottom
-
-One last step for a good TDD flow...change our tests to always run after a configurable delay.
-Adding a failed tests causes a re-run, no save required. Same for removing it:
-
-    * Click re-run
-    * Click play
-    * Add a broken test
-    * Remove it
-
-Let's implement a Guardian first and last name, starting with a new, failing test.
-
-    * Add test_guardian02
-
-Even before the test runs, we "fail faster", so to speak, with an IDE warning:
-
-    * Indicate the missing arguments
-
-The test fails. We need to add a missing constructor that takes and stores ``first_name``
-and ``last_name`` on the Guardian instance:
-
-    * Alt-Tab to ``Guardian``
-    * Use PyCharm to make __init__ and store field names
-    * Fix the order
-
-The test passes, but we didn't test anything. Let's get back to TDD, adding an assertion for first_name:
-
-    * Cmd-{ to go back
-    * Add first_name actual == expected
-
-Some folks like the ``assert`` order to be "expected" then "actual". Let's store a setting
-by creating a ``pytest.ini`` file containing a ``swapdiff`` value:
-
-    * Create ``pytest.ini``
-    * [pytest] swapdiff=1
-
-Now we tell PyCharm to flip the arguments:
-
-    * Click on ``==``
-    * Alt-Enter, flip
-
-Finish with a test for last_name:
-
-    * assert 'Jones' == g.last_name
-    * Wait, let test pass
+TDD tends to be quite polarising but whatever your view point, you can configure PyCharm to support your workflow, have the IDE complete your next thought and most importantly, save you precious time when you’re crafting your next master piece with pytest!

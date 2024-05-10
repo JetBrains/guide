@@ -2,47 +2,23 @@
 Transcript
 ==========
 
-    * Have ``player.py`` open
+We’ll head over to the Project tool window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux) and ask PyCharm to create us a new python file which we’ll call “player” and we’ll create the smallest of classes for the purpose of this demo. We’ll just give it three variables and PyCharm will give us completion here which we can take advantage of although I’ll press Escape here as I don’t want additional code just yet!
 
-Let's write and run our first test.
+```
+class Player:
+	first_name: str
+	last_name: str
+	jersey: int
+```
 
-Open ``player.py`` and click in the ``Player`` class.
-Let PyCharm write our test for us by using ``Navigate | Go To Test``.
-Accept the defaults and we now have a file, added to VCS, with a test, in the ``tests`` directory.
+We have some code, now let’s write a test! PyCharm’s Navigate To Test is really helpful here. When you use <kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux) PyCharm will toggle between your class and test, or, ask if you want to create a new test given one doesn’t yet exist. Yes we do and we’ll let PyCharm handle the simplest example code for our test.
 
-    * Shift-Cmd-T
-    * Enter
-    * Click ``Add``
-    * Emphasize first test
+PyCharm will, by default, create a basic test that you can then iterate on. We can run it with our gutter icons and note that it fails for good reason. It fails because we have `assert False` which means it’s never going to pass! Let’s change that to `assert True`, and perfect, it now passes.
 
-PyCharm also created a Python ``__init__.py`` file in ``tests``, matching another pytest best practice.
+Small note here, when we use our gutter icons, PyCharm creates a Run Configuration for us so we can use that with our keyboard shortcuts next time.
 
-    * Emphasize ``tests/__init__.py``
+Let’s write a little test that tests the construction of a player object. We’ll call it `def test_construction` and the `test` prefix is a pytest standard so it’s useful to adopt it so pytest knows what tests are tests. We’ll assert that we are creating a Player object.
 
-Let's run all the tests in this file. Right-click in the middle and select ``Run pytest``.
-If you don't see the pytest menu entry, make sure you setup pytest as the test runner, described in the previous video.
+Yes, it passes, we can run it with our keyboard shortcuts again so  <kbd>⌃R</kbd> (macOS) / <kbd>Shift+F10</kbd> (Windows/Linux) or in another way that we went through earlier if you prefer!
 
-    * Right click
-    * Mouse over ``Run pytest`` but pause a long time
-    * Select
-
-PyCharm runs pytest with results in the test runner tool window tests on the left and output of the selected test on the right:
-
-    * Illustrate window: left, right
-
-One test failed. Let's make it pass. Change ``False`` to ``True`` and re-run the test using a keyboard shortcut:
-
-    * Change ``False`` to ``True``
-    * Ctrl-R
-
-Let's write a test that uses the class. Change the test name to indicate constructing an instance.
-Then in the body, assert that doing so returns something truthy, just as a simple sanity check.
-
-    * Change the test name to ``test_construction``
-    * Delete "True"
-    * Type ``Pla`` and Ctrl-Space | Ctrl-Space
-    * Add ``()``
-
-When we re-run the tests, our single test passes.
-
-    * Ctrl-R
+You learned how to write your first pytest test, how to name your tests, how to run your tests and how PyCharm’s completion helps you along the way.
