@@ -21,7 +21,7 @@ additional directories under the `core`.
 ![additional_dir](./images/additional_directories.png)
 
 - `abstract` - Contains interface, part of the interaction layer in a database-oriented application,
-  often in combination with an ORM library like gorm.
+  often in combination with an ORM library like GORM.
 - `controllers` - Stores all the HTTP handlers and routes.
 - `database` - Initializing db connection and GORM models.
 - `util.go` - re-usable code shared across the application.
@@ -213,7 +213,7 @@ func ValidateDate(pubDate string) (time.Time, error) {
 
 In this Go struct, we have the following fields:
 
-- `gorm.Model` - this is an embedded field. It means that the Book struct includes all the fields defined in gorm.
+- `gorm.Model` - this is an embedded field. It means that the Book struct includes all the fields defined in GORM.
 - `Id` - This is an integer (int64) field that represents the unique identifier of a book.
 - `Title` - This is a string field representing the title of a book.
 - `ISBN` - This is another string field which stands for International Standard Book Number.
@@ -248,8 +248,7 @@ type UpdateBookParams struct {
 }
 ```
 
-This is an interface that declares the `ParsePublicationDate` method. Any type that defines
-this method is said to satisfy the `DateParser` interface. This method returns a `time.Time` type and an error.
+This is an interface that declares the `ParsePublicationDate` method. Any type that defines this method is said to satisfy the `DateParser` interface. This method returns a `time.Time` type and an error.
 
 ```go
 type DateParser interface {
@@ -257,14 +256,9 @@ type DateParser interface {
 }
 ```
 
-- `ParsePublicationDate`: This function, defined for both `BookParams` and `UpdateBookParams`,
-  uses the `ValidateDate` function to attempt to parse the `PublicationDate` string
-  property and convert it to a `time.Time` type.
+- `ParsePublicationDate`: This function, defined for both `BookParams` and `UpdateBookParams`, uses the `ValidateDate` function to attempt to parse the `PublicationDate` string property and convert it to a `time.Time` type.
   <br><br>
-- `ValidateDate`: This function takes a string argument representing a date and attempts
-  to parse it into a `time.Time` type using the standard date format "2006-01-02"
-  (which represents "YYYY-MM-DD"). If successful, the parsed date and a nil error are
-  returned; if unsuccessful, the zero value for `time.Time` and the error are returned.
+- `ValidateDate`: This function takes a string argument representing a date and attempts to parse it into a `time.Time` type using the standard date format "2006-01-02" (which represents "YYYY-MM-DD"). If successful, the parsed date and a nil error are returned; if unsuccessful, the zero value for `time.Time` and the error are returned.
 
 ```go
 // ParsePublicationDate Implementing the DateParser interface

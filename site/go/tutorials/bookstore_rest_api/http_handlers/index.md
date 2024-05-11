@@ -28,20 +28,7 @@ Let me first breakdown the `Server` struct.
 
 Firstly, a `Server` struct is defined that encapsulates services and clients needed by the server.
 
-Then, a `NewServer` function is provided to bootstrap a new instance of Server.
-It loads default configuration, creates an S3 client, sets a default gin engine,
-and a new validator. It also registers translations and attaches endpoints to the server.
-`Start` method on the server is for starting the gin server at specified port
-(8080 in this case). If there is an error when running the server, it will log
-the error and return it.
-
-`registerTranslation` function generates a translator for a given validator. Here, english translations are registered.
-
-`endpoints` is a method on server which calls helper functions (`bookRoute`, `authorRoute`, `customerRoute`, `reviewRoute`) to attach various routes (endpoints) to the server.
-Each of these routing functions configures a series of HTTP endpoints
-pertaining to individual topics (like books, authors, customers, reviews). For example,
-`bookRoute` configures endpoints for creating, listing, updating, and deleting
-books as well as uploading book cover.
+Then, a `NewServer` function is provided to bootstrap a new instance of Server. It loads default configuration, creates an S3 client, sets a default gin engine, and a new validator. It also registers translations and attaches endpoints to the server. `Start` method on the server is for starting the gin server at specified port (8080 in this case). If there is an error when running the server, it will log the error and return it. `registerTranslation` function generates a translator for a given validator. Here, english translations are registered. `endpoints` is a method on server which calls helper functions (`bookRoute`, `authorRoute`, `customerRoute`, `reviewRoute`) to attach various routes (endpoints) to the server. Each of these routing functions configures a series of HTTP endpoints pertaining to individual topics (like books, authors, customers, reviews). For example, `bookRoute` configures endpoints for creating, listing, updating, and deleting books as well as uploading book cover.
 
 `server.go`
 
@@ -132,12 +119,7 @@ func reviewRoute(s *Server) {
 
 ```
 
-This function is method of `Server` type that seemingly initialize the
-HTTP routes or endpoints for the web server. Each function (bookRoute,
-authorRoute, etc.) is passed a pointer to the Server instance and presumably
-sets up routes related to a specific entity (e.g., books, authors, customers,
-reviews). Currently, the function is empty, we will come back to this later to
-update it.
+This function is method of `Server` type that seemingly initialize the HTTP routes or endpoints for the web server. Each function (bookRoute, authorRoute, etc.) is passed a pointer to the Server instance and presumably sets up routes related to a specific entity (e.g., books, authors, customers, reviews). Currently, the function is empty, we will come back to this later to update it.
 
 ## Update main.go
 
@@ -145,11 +127,7 @@ Lets comeback to `main.go` and update the functionality.
 
 ![update_main](./images/update_main.png)
 
-Within the main function, the initial lines are creating a new connection
-to a database using a function `NewClient()` that belongs to a package named database.
-The `NewClient()` function returns two values, `db` which is the initialized database
-client, and `err` which is an error object in case any error occurs during the execution
-of the `NewClient()` function.
+Within the main function, the initial lines are creating a new connection to a database using a function `NewClient()` that belongs to a package named database. The `NewClient()` function returns two values, `db` which is the initialized database client, and `err` which is an error object in case any error occurs during the execution of the `NewClient()` function.
 
 ```go
 db, err := database.NewClient()
@@ -158,8 +136,7 @@ db, err := database.NewClient()
 	}
 ```
 
-Next, the script tries to perform a database migration using a method
-called `DBMigrate()`. If you remember, we haven't implemented this function. Let's do it.
+Next, the script tries to perform a database migration using a method called `DBMigrate()`. If you remember, we haven't implemented this function. Let's do it.
 
 ```go
 err = db.DBMigrate()
@@ -192,10 +169,7 @@ func (c Client) DBMigrate() error {
 
 The `AutoMigrate` function takes pointers to model structures as parameters. In this case, pointers to Author, Book, Customer and Review are passed.
 
-It updates the database schema automatically with matching the tables to the provided models (Author, Book, Customer, Review). This is typically used when models are added or modified in the program, to keep the database in synchronization.
-This function utilizes the AutoMigrate method from the gorm library which is a popular ORM (Object-Relational Mapper) tool in Go.
-
-Post migration, the code sets up a new server (some form of routing, etc., defined within `controllers.NewServer(db)`), passing our database client db to this new server.
+It updates the database schema automatically with matching the tables to the provided models (Author, Book, Customer, Review). This is typically used when models are added or modified in the program, to keep the database in synchronization. This function utilizes the AutoMigrate method from the gorm library which is a popular ORM (Object-Relational Mapper) tool in Go. Post migration, the code sets up a new server (some form of routing, etc., defined within `controllers.NewServer(db)`), passing our database client db to this new server.
 
 ```go
 service := controllers.NewServer(db)
@@ -340,9 +314,7 @@ func (s *Server) CreateBook(c *gin.Context) {
 
 #### Listing books
 
-This function tries to list all the books and if successful,
-it returns the list as JSON in the response, otherwise it returns
-an error in JSON format with HTTP status 400.
+This function tries to list all the books and if successful, it returns the list as JSON in the response, otherwise it returns an error in JSON format with HTTP status 400.
 
 ```go
 func (s *Server) ListBook(c *gin.Context) {
@@ -357,10 +329,7 @@ func (s *Server) ListBook(c *gin.Context) {
 
 #### Updating a book
 
-The `UpdateBook` function is used to update a particular book based on book id. It performs several operations
-including retrieving the book's id from the URL parameters, parsing and validating
-the JSON body of the incoming request, checking the validity of the publication date,
-and updating the book's details in the database.
+The `UpdateBook` function is used to update a particular book based on book id. It performs several operations including retrieving the book's id from the URL parameters, parsing and validatingthe JSON body of the incoming request, checking the validity of the publication date, and updating the book's details in the database.
 
 ```go
 func (s *Server) UpdateBook(c *gin.Context) {
@@ -397,9 +366,7 @@ func (s *Server) UpdateBook(c *gin.Context) {
 
 #### Deleting a book
 
-The `DeleteBook` function is going to delete a book from the database. It fetches
-the `id` parameter from the URL, and attempts to delete the corresponding book. Depending
-on the success of these operations, it sends appropriate HTTP responses.
+The `DeleteBook` function is going to delete a book from the database. It fetches the `id` parameter from the URL, and attempts to delete the corresponding book. Depending on the success of these operations, it sends appropriate HTTP responses.
 
 ```go
 func (s *Server) DeleteBook(c *gin.Context) {
@@ -422,8 +389,7 @@ func (s *Server) DeleteBook(c *gin.Context) {
 
 #### Updating Book Cover
 
-This function `UploadBookCover` is responsible for uploading the cover image of the book and updating
-its reference URL in the database.
+This function `UploadBookCover` is responsible for uploading the cover image of the book and updating its reference URL in the database.
 
 ```go
 func (s *Server) UploadBookCover(c *gin.Context) {
@@ -475,8 +441,7 @@ func (s *Server) UploadBookCover(c *gin.Context) {
 
 ![s3_bucket](./images/s3.png)
 
-You need to create an S3 Bucket in AWS and make sure to update
-`S3_BUCKET` environment variable in `.env` file.
+You need to create an S3 Bucket in AWS and make sure to update `S3_BUCKET` environment variable in `.env` file.
 
 ### Author
 
@@ -707,13 +672,7 @@ Let's take a closer look at each function one by one.
 
 #### Add Customer
 
-In this function we are trying to create a new customer. It uses the
-`bindCustomerData` function to parse the customer data from the JSON provided.
-If `bindCustomerData` returns `false`, it will exit the function. After that, it
-tries to add the customer using `s.db.AddCustomer(c, customer)` and checks for errors. If an
-error occurs, logs the error and responds with an HTTP 500 error status code and a
-JSON message to the client. If there are no errors, it will respond with an
-HTTP 200 status code and the newly created customer in the response.
+In this function we are trying to create a new customer. It uses the `bindCustomerData` function to parse the customer data from the JSON provided. If `bindCustomerData` returns `false`, it will exit the function. After that, it tries to add the customer using `s.db.AddCustomer(c, customer)` and checks for errors. If an error occurs, logs the error and responds with an HTTP 500 error status code and a JSON message to the client. If there are no errors, it will respond with an HTTP 200 status code and the newly created customer in the response.
 
 ```go
 func bindCustomerData(c *gin.Context, customer interface{}) bool {
@@ -742,19 +701,9 @@ func (s *Server) CreateCustomer(c *gin.Context) {
 
 #### Update Customer
 
-This function is responsible for updating the details of the customer. At the start,
-it creates an instance of `CustomerParams` model, which is then filled by the
-`getAndValidateCustomer` function. If the validation fails to get the customer details,
-the function ends immediately. If the validation is successful, the function attempts to update the customer's data
-in the database using the `UpdateCustomer` method. If an error is encountered while
-updating the customer information, the function responds with an
-HTTP status 400 (Bad Request) and sends a JSON object containing the error details.
+This function is responsible for updating the details of the customer. At the start, it creates an instance of `CustomerParams` model, which is then filled by the `getAndValidateCustomer` function. If the validation fails to get the customer details, the function ends immediately. If the validation is successful, the function attempts to update the customer's data in the database using the `UpdateCustomer` method. If an error is encountered while updating the customer information, the function responds with an HTTP status 400 (Bad Request) and sends a JSON object containing the error details.
 
-On successful update, it sends an HTTP status 200 (OK) and sends a JSON message
-indicating the success of the operation. However, if the update isn't successful
-for some other reason, the function aborts the process and sends
-an HTTP status 500 (Internal Server Error) along with a JSON indicating
-that an error occurred.
+On successful update, it sends an HTTP status 200 (OK) and sends a JSON message indicating the success of the operation. However, if the update isn't successful for some other reason, the function aborts the process and sends an HTTP status 500 (Internal Server Error) along with a JSON indicating that an error occurred.
 
 ```go
 func getAndValidateCustomer(c *gin.Context, customer interface{}) (int64, bool) {
@@ -790,10 +739,7 @@ func (s *Server) UpdateCustomer(c *gin.Context) {
 
 #### Delete Customer
 
-This method is designed to delete a customer's record from a database.
-It begins by trying to parse a customer ID from the context. If it can't parse the ID,
-the operation halts and returns. If the ID is parsed successfully,
-the function then attempts to delete that customer from the database.
+This method is designed to delete a customer's record from a database. It begins by trying to parse a customer ID from the context. If it can't parse the ID, the operation halts and returns. If the ID is parsed successfully, the function then attempts to delete that customer from the database.
 
 ```go
 func (s *Server) DeleteCustomer(c *gin.Context) {
@@ -895,10 +841,7 @@ func (s *Server) ListReviewByBook(c *gin.Context) {
 
 #### Create Review
 
-It is intended to create a review information based on the incoming request. First,
-it attempts to bind the incoming request JSON data to the `ReviewParams` model.
-
-The `ReviewParams` struct is capturing CustomerID, BookID, Rating and Comment.
+It is intended to create a review information based on the incoming request. First, it attempts to bind the incoming request JSON data to the `ReviewParams` model. The `ReviewParams` struct is capturing CustomerID, BookID, Rating and Comment.
 
 ```go
 func (s *Server) CreateReview(c *gin.Context) {
@@ -1008,8 +951,7 @@ func reviewRoute(s *Server) {
 
 ```
 
-Let's start the application by running
-the following command in the terminal or an easy way through GoLand:
+Let's start the application by running the following command in the terminal or an easy way through GoLand:
 
 ```bash
 go run main.go
