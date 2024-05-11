@@ -29,4 +29,4 @@ Before proceeding, make sure to install the below dependencies.
 The [AWS Command Line Interface](https://aws.amazon.com/cli/) (CLI)
 is a unified tool to manage AWS services directly from the command line.
 
-_Note: Make sure you have an AWS account._
+> **Note**: _Make sure you have an AWS account._

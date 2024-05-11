@@ -14,12 +14,11 @@ Once you've completed your prerequisites, it's time to configure your database o
 
 ## PostgreSQL
 
-For this tutorial, I will be using postgres as my preferred database.
-Postgres has become the dominant open source database with very good and maintained drivers for Go.
+For this tutorial, I will be using Postgres as my preferred database.
+Postgres has become the dominant open source database with well maintained drivers for Go.
 
-When developing and deploying, you want to make sure all software and configuration matches expectations and can be reproduced.
-Containers solve this problem for us.
-I will use Docker Desktop to spin up a container, which will be quite easy and straightforward.
+When developing and deploying an application, you want to make sure all software and configuration matches expectations and can be reproduced.
+Containers solve this problem for us. I will use Docker Desktop to spin up a container.
 
 Let's use Docker to get a postgres-enabled image for our container.
 This saves us a ton of work: we don't have to download/install/configure a local postgres server.
@@ -30,7 +29,7 @@ Open Terminal <kbd>(⌥Opt F12)</kbd>, and type the following command.
 docker run --name bookstore -p 5432:5432 -e POSTGRES_PASSWORD=******** -d postgres
 ```
 
-Or you can directly search for the postgres image in Docker Desktop.
+Or you can directly search for the "postgres" image in Docker Desktop.
 
 ![docker1](./images/docker1.png)
 
@@ -38,8 +37,10 @@ Once the database is up and running, you will see it appearing in the list of co
 
 ![docker2](./images/docker2.png)
 
-The postgres container runs on default port 5432. Next, get inside the container and create a new db.
+The postgres container runs on default port **5432**. Next, get inside the container and create a new db.
 
 ![create_db_0](./images/create_db_0.png)
 
 ![create_db_1](./images/create_db.png)
+
+We've successfully configured our database. Next, our attention will turn to setting up the new project and installing necessary dependencies.
