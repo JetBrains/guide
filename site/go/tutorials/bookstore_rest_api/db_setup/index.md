@@ -24,7 +24,7 @@ I will use Docker Desktop to spin up a container, which will be quite easy and s
 Let's use Docker to get a postgres-enabled image for our container.
 This saves us a ton of work: we don't have to download/install/configure a local postgres server.
 
-Open Terminal, and type the following command.
+Open Terminal <kbd>(⌥Opt F12)</kbd>, and type the following command.
 
 ```bash
 docker run --name bookstore -p 5432:5432 -e POSTGRES_PASSWORD=******** -d postgres

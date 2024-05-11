@@ -380,7 +380,7 @@ func (c Client) ListAuthors(_ context.Context) ([]models.Author, error) {
 
 #### Add Author
 
-The function is responsible for adding a new author to the database. It's first attempts is to find the max ID currently in the author database, creating a new `models.Author` instance and setting its ID to `uint(maxID) + 1` to create uniqueness. It then adds the `AuthorModel` to the database. If there's an error during this process, it logs the error and returns a failed registration message. Otherwise, it successfully returns the new author entry.
+The function is responsible for adding a new author to the database. Its first attempts is to find the max ID currently in the author database, creating a new `models.Author` instance and setting its ID to `uint(maxID) + 1` to create uniqueness. It then adds the `AuthorModel` to the database. If there's an error during this process, it logs the error and returns a failed registration message. Otherwise, it successfully returns the new author entry.
 
 ```go
 func (c Client) AddAuthor(ctx context.Context, author models.Author) (*models.Author, error) {
@@ -702,7 +702,7 @@ func (c Client) AddReview(ctx context.Context, revParams models.ReviewParams) (b
 
 #### List Review
 
-This function is used to retrieve a list of reviews for a specific book from a database. It models the `Review` struct, selects the `"id"`, `"rating"`, and `"comment"` fields, filters the results based on the `BookID` matching the `bookId` parameter passed to the function.
+This function is used to retrieve a list of reviews for a specific book from a database. It models the `Review` struct, selects the `"id"`, `"rating"`, and `"comment"` fields, and filters the results based on the `BookID` matching the `bookId` parameter passed to the function.
 
 ```go
 func (c Client) ListReview(ctx context.Context, bookId int64) ([]models.ReviewList, error) {

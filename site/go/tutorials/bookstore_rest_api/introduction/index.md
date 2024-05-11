@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 
 Go has become very popular for web development, particularly for high-performance REST APIs.
 Recently, Gin has become a well-known Go framework for REST APIs.
-Through this guide, we'll concentrate on the development of a web application with Gin.
+Throughout guide, we'll concentrate on the development of a web application with Gin.
 We'll start with a brief introduction.
 
 ## Go

@@ -119,11 +119,11 @@ func reviewRoute(s *Server) {
 
 ```
 
-This function is method of `Server` type that seemingly initialize the HTTP routes or endpoints for the web server. Each function (bookRoute, authorRoute, etc.) is passed a pointer to the Server instance and presumably sets up routes related to a specific entity (e.g., books, authors, customers, reviews). Currently, the function is empty, we will come back to this later to update it.
+This function is method of `Server` type that initialize the HTTP routes for the web server. Each function (`bookRoute`, `authorRoute`, etc.) is passed a pointer to the `Server` instance and presumably sets up routes related to a specific entity (e.g., books, authors, customers, reviews). Currently, the function is empty, we will come back to this later to update it.
 
 ## Update main.go
 
-Lets comeback to `main.go` and update the functionality.
+Let's return to `main.go` and update the functionality.
 
 ![update_main](./images/update_main.png)
 

@@ -10,7 +10,7 @@ subtitle: Install the dependencies used for the sample application
 thumbnail: ./thumbnail.png
 ---
 
-Before proceeding ahead, make sure to install the below dependencies.
+Before proceeding, make sure to install the below dependencies.
 
 ## Docker
 
