@@ -18,4 +18,4 @@ seealso:
 video: "https://youtu.be/H8Z3dm1nBA4"
 ---
 
-Classes can get long, but in IntelliJ IDEA you can quickly navigate between methods with <kbd>⌃↑</kbd> (macOS) / <kbd>Alt+Up Arrow</kbd> (Windows/Linux) and <kbd>⌃↓</kbd> (macOS) / <kbd>Alt+Down Arrow</kbd> (Windows/Linux). To improve your code readability you can also collapse or expand methods with <kbd>⌘-</kbd> (macOS) / <kbd>Ctrl+-</kbd> (Windows/Linux) and <kbd>⌘+</kbd> (macOS) / <kbd>Ctrl++</kbd> (Windows/Linux).
+Classes can get long, but in IntelliJ IDEA you can quickly navigate between methods with <kbd>⌃⇧↑</kbd> (macOS) / <kbd>Alt+Up Arrow</kbd> (Windows/Linux) and <kbd>⌃⇧↓</kbd> (macOS) / <kbd>Alt+Down Arrow</kbd> (Windows/Linux). To improve your code readability you can also collapse or expand methods with <kbd>⌘-</kbd> (macOS) / <kbd>Ctrl+-</kbd> (Windows/Linux) and <kbd>⌘+</kbd> (macOS) / <kbd>Ctrl++</kbd> (Windows/Linux).

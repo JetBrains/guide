@@ -106,8 +106,8 @@
 <kbd>⌘⇧M</kbd> (macOS) / <kbd>Alt+Shift+M</kbd> (Windows/Linux)                 - Move Files to Another Changelist
 <kbd>⌥⇧↑</kbd> (macOS) / <kbd>Alt+Shift+Up Arrow</kbd> (Windows/Linux)          - Move Line Up
 <kbd>⌥⇧↓</kbd> (macOS) / <kbd>Alt+Shift+Down Arrow</kbd> (Windows/Linux)        - Move Line Down
-<kbd>⌃↑</kbd> (macOS) / <kbd>Alt+Up Arrow</kbd> (Windows/Linux)                 - Navigate to Previous Method
-<kbd>⌃↓</kbd> (macOS) / <kbd>Alt+Down Arrow</kbd> (Windows/Linux)               - Navigate to Next Method
+<kbd>⌃⇧↑</kbd> (macOS) / <kbd>Alt+Up Arrow</kbd> (Windows/Linux)                - Navigate to Previous Method
+<kbd>⌃⇧↓</kbd> (macOS) / <kbd>Alt+Down Arrow</kbd> (Windows/Linux)              - Navigate to Next Method
 <kbd>⌘B</kbd> (macOS) / <kbd>Ctrl+B</kbd> (Windows/Linux)                       - Navigate to Declaration 
 <kbd>⌥⌘B</kbd> (macOS) / <kbd>Ctrl+Alt+B</kbd> (Windows/Linux)                  - Navigate to Implementation
 <kbd>⌘0</kbd> (macOS) / <kbd>Alt+0</kbd> (Windows/Linux)                        - Show Commit Tool Window
