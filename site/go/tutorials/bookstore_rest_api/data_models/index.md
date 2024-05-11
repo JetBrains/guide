@@ -220,6 +220,8 @@ In this Go struct, we have the following fields:
 - `Image` - This is a string that might contain a link or path to the image of the book cover.
 - `PublicationDate` - This is of type `time.Time`, storing the book's publication date.
 
+Each field is tagged with `json:"<name>"`, indicating how the field should be marshalled/unmarshalled when encoding/decoding JSON. So, when this struct is encoded into JSON, the field `Id` will be represented as `"id"` in the JSON object. Similarly, when decoding JSON data into this struct, the decoder will expect a field named `"id"` and will assign its value to the `Id` field of the struct.
+
 ```go
 type BookParams struct {
 	Id              int64  `json:"id"`
