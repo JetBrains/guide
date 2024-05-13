@@ -33,7 +33,7 @@ export default class ListingLayout {
 				reverse: true,
 				before: function (
 					paginationData: EleventyCollectionItem[],
-					fullData: FullData
+					fullData: FullData,
 				): EleventyCollectionItem[] {
 					// Get pagination.resourceType and pagination.channel, if present
 					const { resourceType } = fullData.pagination;
@@ -92,7 +92,7 @@ export default class ListingLayout {
 								</span>
 							)}
 							<div>
-								<h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
+								<h1 class="mt-2 mb-4 size-3 has-text-weight-bold">
 									{data.title}
 								</h1>
 								{data.subtitle && (

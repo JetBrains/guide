@@ -58,7 +58,7 @@ export function ReferenceLayout(data: ReferenceLayoutProps): JSX.Element {
 							</span>
 						)}
 						<div>
-							<h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
+							<h1 class="mt-2 mb-4 size-3 has-text-weight-bold">
 								{data.title}
 							</h1>
 							{data.subtitle && (

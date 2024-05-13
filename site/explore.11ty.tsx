@@ -120,7 +120,7 @@ export default class ExplorePage {
 								>
 									<div class="columns is-vcentered is-mobile">
 										<div class="column">
-											<h2 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
+											<h2 class="mt-2 mb-4 title has-text-weight-semibold">
 												No matching content
 											</h2>
 											<p class="subtitle has-text-grey mb-5">

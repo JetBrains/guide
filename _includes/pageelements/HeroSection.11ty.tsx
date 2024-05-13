@@ -23,7 +23,7 @@ function HeroSection({
 			<div class="hero-body">
 				<div class="container">
 					<h1
-						class={`mt-2 mb-4 is-size-1 has-text-weight-bold ${
+						class={`mt-2 mb-4 title has-text-weight-semibold ${
 							titleExtraClass || ""
 						}`}
 					>
