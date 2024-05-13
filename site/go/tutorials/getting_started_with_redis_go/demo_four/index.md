@@ -5,6 +5,7 @@ title: "Pipelines: Running Redis Commands in Batches"
 topics:
   - go
   - databases
+  - redis
 author: chrisberger
 subtitle: ""
 thumbnail: ./thumbnail.png

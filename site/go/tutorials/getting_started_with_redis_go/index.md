@@ -6,6 +6,7 @@ title: Getting Started with Redis in Go
 topics:
   - go
   - databases
+  - redis
 author: chrisberger
 subtitle: ""
 thumbnail: ./thumbnail.png

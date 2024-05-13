@@ -5,6 +5,7 @@ title: "Pub-Sub Messaging"
 topics:
   - go
   - databases
+  - redis
 author: chrisberger
 subtitle: ""
 thumbnail: ./thumbnail.png

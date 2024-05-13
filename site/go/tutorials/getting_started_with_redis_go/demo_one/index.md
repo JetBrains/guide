@@ -5,6 +5,7 @@ title: "Six Demos to Learn Redis by Coding"
 topics:
   - go
   - databases
+  - redis
 author: chrisberger
 subtitle: ""
 thumbnail: ./thumbnail.png

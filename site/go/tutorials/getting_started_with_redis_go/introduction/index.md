@@ -5,6 +5,7 @@ title: "What Is Redis?"
 topics:
   - go
   - databases
+  - redis
 author: chrisberger
 subtitle: ""
 thumbnail: ./thumbnail.png

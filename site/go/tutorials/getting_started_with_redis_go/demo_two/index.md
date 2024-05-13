@@ -5,6 +5,7 @@ title: "Getting and Setting a Value"
 topics:
   - go
   - databases
+  - redis
 author: chrisberger
 subtitle: ""
 thumbnail: ./thumbnail.png

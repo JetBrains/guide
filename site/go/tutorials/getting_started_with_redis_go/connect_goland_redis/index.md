@@ -5,6 +5,7 @@ title: "Redis & GoLand"
 topics:
   - go
   - databases
+  - redis
 author: chrisberger
 subtitle: ""
 thumbnail: ./thumbnail.png
