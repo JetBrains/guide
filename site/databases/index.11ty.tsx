@@ -11,7 +11,7 @@ import { LINK_RESOURCE, TIP_RESOURCE } from "../../src/resourceType";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Databases",
-	subtitle: "Tips and content for development using databases.",
+	subtitle: "Tips and content for development\nusing databases.",
 	resourceType: "channel",
 	date: new Date(Date.UTC(2023, 9, 29)),
 	author: "hs",
@@ -48,10 +48,10 @@ export default class DatabasesHomepage {
 
 		const springBoot = [
 			this.getResource(
-				"/java/tutorials/marco-codes-spring-boot/h2-database-intro/"
+				"/java/tutorials/marco-codes-spring-boot/h2-database-intro/",
 			),
 			this.getResource(
-				"/java/tutorials/marco-codes-spring-boot/spring-data-jdbc-repositories/"
+				"/java/tutorials/marco-codes-spring-boot/spring-data-jdbc-repositories/",
 			),
 		];
 

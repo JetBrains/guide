@@ -15,7 +15,7 @@ import {
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Django",
-	subtitle: "Tips and content for development working with Django.",
+	subtitle: "Tips and content for\ndevelopment working with Django.",
 	resourceType: "channel",
 	date: new Date(Date.UTC(2023, 10, 20)),
 	author: "hs",

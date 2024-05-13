@@ -10,7 +10,7 @@ import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 const frontmatter: ChannelFrontmatter = {
 	title: "Remote Development",
 	subtitle:
-		"Learn the ins and outs of remote development: virtualization, containers, dev containers, and cloud.",
+		"Learn the ins and outs of remote development:\nvirtualization, containers, dev containers, and cloud.",
 	resourceType: "channel",
 	date: new Date(Date.UTC(2023, 8, 1)),
 	author: "pwe",

@@ -11,7 +11,7 @@ import MultiColumnSection from "../../_includes/pageelements/MultiColumnSection"
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Java",
-	subtitle: "Learning resources for Java and related technologies.",
+	subtitle: "Learning resources for Java\nand related technologies.",
 	resourceType: "channel",
 	date: new Date(Date.UTC(2020, 1, 11)),
 	author: "hs",
