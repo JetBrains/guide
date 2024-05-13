@@ -5,7 +5,7 @@ date: 2024-05-12
 title: Getting Started with Redis in Go
 topics:
   - go
-  - web
+  - databases
 author: chrisberger
 subtitle: ""
 thumbnail: ./thumbnail.png
@@ -14,6 +14,14 @@ tutorialItems:
   - ./prerequisites/
   - ./new_project/
   - ./connect_goland_redis/
+  - ./demo_one/
+  - ./demo_two/
+  - ./demo_three/
+  - ./demo_four/
+  - ./demo_five/
+  - ./demo_six/
+  - ./best_practices/
+  - ./conclusion/
 ---
 
 Are you looking for an in-memory, persistent database? A fast cache? A streaming engine? Or a message broker?

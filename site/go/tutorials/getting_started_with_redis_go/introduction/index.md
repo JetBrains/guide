@@ -4,7 +4,7 @@ date: 2024-04-22
 title: "What Is Redis?"
 topics:
   - go
-  - web
+  - databases
 author: chrisberger
 subtitle: ""
 thumbnail: ./thumbnail.png
