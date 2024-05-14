@@ -169,7 +169,7 @@ func (c Client) DBMigrate() error {
 
 The `AutoMigrate` function takes pointers to model structures as parameters. In this case, pointers to Author, Book, Customer and Review are passed.
 
-It updates the database schema automatically with matching the tables to the provided models (Author, Book, Customer, Review). This is typically used when models are added or modified in the program, to keep the database in synchronization. This function utilizes the AutoMigrate method from the gorm library which is a popular ORM (Object-Relational Mapper) tool in Go. Post migration, the code sets up a new server (some form of routing, etc., defined within `controllers.NewServer(db)`), passing our database client db to this new server.
+It updates the database schema automatically with matching the tables to the provided models (`Author`, `Book`, `Customer`, `Review`). This is typically used when models are added or modified in the program, to keep the database in synchronization. This function utilizes the `AutoMigrate` method from the gorm library which is a popular ORM (Object-Relational Mapper) tool in Go. Post migration, the code sets up a new server (some form of routing, etc., defined within `controllers.NewServer(db)`), passing our database client db to this new server.
 
 ```go
 service := controllers.NewServer(db)
@@ -177,6 +177,8 @@ log.Fatal(service.Start())
 ```
 
 Finally, it attempts to start this server with `service.Start()`. If there's an error in starting the service, it logs a fatal error, indicating service start failure.
+
+> **Note**: "AutoMigrate" is excellent for crafting prototypes; however, it should be employed with care in production environments.
 
 ## Controllers
 
