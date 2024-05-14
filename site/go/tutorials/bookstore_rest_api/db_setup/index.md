@@ -59,7 +59,7 @@ Click _Images_ and then provide the image name to pull from docker registry.
 
 ![goland_3](./images/3.png)
 
-After the image has been successfully pulled, right-click on the "postgres" image and select **Create Container**.
+After the image has been successfully pulled, right-click on the "postgres" image and select "**Create Container**".
 
 ![goland_4](./images/4.png)
 
