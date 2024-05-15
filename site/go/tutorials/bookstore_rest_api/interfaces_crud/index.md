@@ -21,7 +21,7 @@ Following this, we are going to establish several interfaces that define method 
 We will be working with author interface supporting methods for adding an author, linking an author and a book,
 and listing all authors.
 
-`author.go`
+`abstract/author.go`
 
 ```go
 package abstract
@@ -42,7 +42,7 @@ type Author interface {
 The Book interface provides an abstraction for operations on a book database,
 which includes adding, listing, updating, and deleting books.
 
-`book.go`
+`abstract/book.go`
 
 ```go
 package abstract
@@ -62,7 +62,7 @@ type Book interface {
 
 ```
 
-`customer.go`
+`abstract/customer.go`
 
 The `Customer` interface defines three methods for adding, updating, and deleting customers. These methods are expected to be implemented by any structs that satisfy this interface.
 
@@ -82,7 +82,7 @@ type Customer interface {
 
 ```
 
-`review.go`
+`abstract/review.go`
 
 - `AddReview`: Takes a context and `ReviewParams` (with `customer ID`, `book ID`, `rating`, and `comment`). It returns a boolean and an error. This method will be used to add a review.
 - `ListReview`: Takes a context and a book ID, and returns a list of `ReviewList` (with `review ID`, `rating`, `comment`) and an error. This method could list all reviews for a specific book.
@@ -114,9 +114,9 @@ Now, let's begin implementing the interfaces.
 
 ### Book
 
-![crud_book](./images/crud-book.png)
+![crud_book](./images/crudbook.png)
 
-`book.go`
+`database/book.go`
 
 ```go
 package database
@@ -131,24 +131,21 @@ import (
 )
 
 func (c Client) AddBook(ctx context.Context, bookParams models.DateParser) (*models.BookParams, error) {
-	var maxID int
-	if result := c.db.Model(&models.Book{}).Select("COALESCE(MAX(id), 0)").Scan(&maxID); result.Error != nil {
-		return nil, errors.New("something went wrong")
-	}
 	var Book models.Book
 	switch params := bookParams.(type) {
 	case *models.BookParams:
-		Book.ID = uint(maxID) + 1
 		Book.Title = params.Title
 		Book.ISBN = params.ISBN
 		Book.PublicationDate, _ = bookParams.ParsePublicationDate()
 
-		params.Id = int64(Book.ID)
 		result := c.db.WithContext(ctx).Create(&Book)
+
 		if result.Error != nil {
 			slog.Error(result.Error.Error())
 			return nil, errors.New("unable to register book")
 		}
+		params.Id = int64(Book.ID)
+
 		return params, nil
 	default:
 		fmt.Printf("Type of bookParams: %T\n", bookParams)
@@ -164,7 +161,7 @@ func (c Client) ListBooks(ctx context.Context) ([]models.Book, error) {
 }
 
 func (c Client) UpdateBook(_ context.Context, updateBookParams models.DateParser, bookId int64) (bool, error) {
-	var bookInfo = models.Book{Id: bookId}
+	var bookInfo = models.Book{Model: gorm.Model{ID: uint(bookId)}}
 	if err := c.db.First(&bookInfo).Error; err != nil {
 		if errors.Is(err, gorm.ErrRecordNotFound) {
 			return false, errors.New("there is no book associated with this ID")
@@ -173,13 +170,13 @@ func (c Client) UpdateBook(_ context.Context, updateBookParams models.DateParser
 	switch params := updateBookParams.(type) {
 	case models.UpdateBookParams:
 		parsedDate, _ := params.ParsePublicationDate()
-		c.db.Save(&models.Book{Id: bookId, Title: params.Title, ISBN: params.ISBN, PublicationDate: parsedDate})
+		c.db.Save(&models.Book{Model: gorm.Model{ID: uint(bookId)}, Title: params.Title, ISBN: params.ISBN, PublicationDate: parsedDate})
 	}
 	return true, nil
 }
 
 func (c Client) DeleteBook(_ context.Context, bookId int64) error {
-	var bookInfo = models.Book{Id: bookId}
+	var bookInfo = models.Book{Model: gorm.Model{ID: uint(bookId)}}
 	if err := c.db.First(&bookInfo).Error; err != nil {
 		if errors.Is(err, gorm.ErrRecordNotFound) {
 			return errors.New("there is no book associated with this ID")
@@ -191,7 +188,7 @@ func (c Client) DeleteBook(_ context.Context, bookId int64) error {
 }
 
 func (c Client) UpdateBookCover(_ context.Context, bookId int64, bookImageURL string) (bool, error) {
-	var bookInfo = models.Book{Id: bookId}
+	var bookInfo = models.Book{Model: gorm.Model{ID: uint(bookId)}}
 	if err := c.db.First(&bookInfo).Error; err != nil {
 		if errors.Is(err, gorm.ErrRecordNotFound) {
 			return false, errors.New("there is no book associated with this ID")
@@ -216,30 +213,27 @@ The function accepts two parameters:
 
 Upon successful execution, it yields either a pointer to a `models.BookParams` structure or an error.
 
-Initially, the function retrieves the maximum `Id` presently utilized in the book table of the database. Subsequently, it uses this value to increment the `bookId`, ensuring uniqueness. It also sets the `Title` and `ISBN` from the parameters and parses the `PublicationDate` from `bookParams`.
+It also sets the `Title` and `ISBN` from the parameters and parses the `PublicationDate` from `bookParams`.
 
 Following this, the function endeavors to create a new record in the database using the instantiated book.
 
 ```go
 func (c Client) AddBook(ctx context.Context, bookParams models.DateParser) (*models.BookParams, error) {
-	var maxID int
-	if result := c.db.Model(&models.Book{}).Select("COALESCE(MAX(id), 0)").Scan(&maxID); result.Error != nil {
-		return nil, errors.New("something went wrong")
-	}
 	var Book models.Book
 	switch params := bookParams.(type) {
 	case *models.BookParams:
-		Book.ID = uint(maxID) + 1
 		Book.Title = params.Title
 		Book.ISBN = params.ISBN
 		Book.PublicationDate, _ = bookParams.ParsePublicationDate()
 
-		params.Id = int64(Book.ID)
 		result := c.db.WithContext(ctx).Create(&Book)
+
 		if result.Error != nil {
 			slog.Error(result.Error.Error())
 			return nil, errors.New("unable to register book")
 		}
+		params.Id = int64(Book.ID)
+
 		return params, nil
 	default:
 		fmt.Printf("Type of bookParams: %T\n", bookParams)
@@ -326,9 +320,9 @@ func (c Client) UpdateBookCover(_ context.Context, bookId int64, bookImageURL st
 
 ### Author
 
-![author_crud](./images/author-crud.png)
+![author_crud](./images/authorcrud.png)
 
-`author.go`
+`database/author.go`
 
 ```go
 package database
@@ -380,16 +374,11 @@ func (c Client) ListAuthors(_ context.Context) ([]models.Author, error) {
 
 #### Add Author
 
-The function is responsible for adding a new author to the database. Its first attempts is to find the max ID currently in the author database, creating a new `models.Author` instance and setting its ID to `uint(maxID) + 1` to create uniqueness. It then adds the `AuthorModel` to the database. If there's an error during this process, it logs the error and returns a failed registration message. Otherwise, it successfully returns the new author entry.
+The function is responsible for adding a new author to the database. If there's an error during this process, it logs the error and returns a failed registration message. Otherwise, it successfully returns the newly created author.
 
 ```go
 func (c Client) AddAuthor(ctx context.Context, author models.Author) (*models.Author, error) {
-	var maxID int
-	if result := c.db.Model(&models.Author{}).Select("COALESCE(MAX(id), 0)").Scan(&maxID); result.Error != nil {
-		return nil, errors.New("something went wrong")
-	}
 	var AuthorModel models.Author
-	AuthorModel.ID = uint(maxID) + 1
 	AuthorModel.Name = author.Name
 	result := c.db.WithContext(ctx).Create(&AuthorModel)
 	if result.Error != nil {
@@ -398,7 +387,6 @@ func (c Client) AddAuthor(ctx context.Context, author models.Author) (*models.Au
 	}
 	return &AuthorModel, nil
 }
-
 ```
 
 #### Linking Author & Book
@@ -437,9 +425,9 @@ func (c Client) ListAuthors(_ context.Context) ([]models.Author, error) {
 
 ### Customer
 
-![customer_crud](./images/customer-crud.png)
+![customer_crud](./images/customercrud.png)
 
-`customer.go`
+`database/customer.go`
 
 ```go
 package database
@@ -452,12 +440,7 @@ import (
 )
 
 func (c Client) AddCustomer(_ context.Context, cusParams models.Customer) (*models.Customer, error) {
-	var maxID int64
-	if result := c.db.Model(&models.Customer{}).Select("COALESCE(MAX(id), 0)").Scan(&maxID); result.Error != nil {
-		return nil, errors.New("something went wrong")
-	}
 	var Customer models.Customer
-	Customer.Id = maxID + 1
 	Customer.FirstName = cusParams.FirstName
 	Customer.LastName = cusParams.LastName
 	Customer.Email = cusParams.Email
@@ -469,7 +452,7 @@ func (c Client) AddCustomer(_ context.Context, cusParams models.Customer) (*mode
 }
 
 func (c Client) DeleteCustomer(_ context.Context, customerId int64) error {
-	var CustomerInfo = models.Customer{Id: customerId}
+	var CustomerInfo = models.Customer{Model: gorm.Model{ID: uint(customerId)}}
 
 	if err := c.db.First(&CustomerInfo).Error; err != nil {
 		if errors.Is(err, gorm.ErrRecordNotFound) {
@@ -481,7 +464,7 @@ func (c Client) DeleteCustomer(_ context.Context, customerId int64) error {
 }
 
 func (c Client) UpdateCustomer(_ context.Context, updateCusParams models.CustomerParams, customerId int64) (bool, error) {
-	var cusInfo = models.Customer{Id: customerId}
+	var cusInfo = models.Customer{Model: gorm.Model{ID: uint(customerId)}}
 	if err := c.db.First(&cusInfo).Error; err != nil {
 		if errors.Is(err, gorm.ErrRecordNotFound) {
 			return false, errors.New("there is no customer associated with this ID")
@@ -493,22 +476,15 @@ func (c Client) UpdateCustomer(_ context.Context, updateCusParams models.Custome
 		Address:   updateCusParams.Address})
 	return true, nil
 }
-
 ```
 
 #### Add Customer
 
-The function is used to create a new customer in the database. First, it attempts to find the maximum id of the existing customers in the database. Then, it creates a new customer model, Customer, setting its `Id` to one more than the maximum id just found, this is to ensure uniqueness.
-It saves the new customer to the database using `db.Create()`. Finally, it returns a pointer to the new customer.
+The function is used to create a new customer in the database. It saves the new customer to the database using `db.Create()`. Finally, it returns a pointer to the new customer.
 
 ```go
 func (c Client) AddCustomer(_ context.Context, cusParams models.Customer) (*models.Customer, error) {
-	var maxID int64
-	if result := c.db.Model(&models.Customer{}).Select("COALESCE(MAX(id), 0)").Scan(&maxID); result.Error != nil {
-		return nil, errors.New("something went wrong")
-	}
 	var Customer models.Customer
-	Customer.Id = maxID + 1
 	Customer.FirstName = cusParams.FirstName
 	Customer.LastName = cusParams.LastName
 	Customer.Email = cusParams.Email
@@ -518,7 +494,6 @@ func (c Client) AddCustomer(_ context.Context, cusParams models.Customer) (*mode
 	c.db.Create(&Customer)
 	return &Customer, nil
 }
-
 ```
 
 #### Update Customer
@@ -563,7 +538,7 @@ func (c Client) DeleteCustomer(_ context.Context, customerId int64) error {
 
 Before going ahead, we will be creating a utility file which will be used across the application.
 
-`utils.go`
+`core/util.go`
 
 ![utils](./images/utils.png)
 
@@ -592,7 +567,7 @@ func (e *NotFoundError) Error() string {
 
 ![review_crud](./images/review-crud.png)
 
-`review.go`
+`database/review.go`
 
 ```go
 package database
