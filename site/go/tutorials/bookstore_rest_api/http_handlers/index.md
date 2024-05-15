@@ -30,7 +30,7 @@ Firstly, a `Server` struct is defined that encapsulates services and clients nee
 
 Then, a `NewServer` function is provided to bootstrap a new instance of Server. It loads default configuration, creates an S3 client, sets a default gin engine, and a new validator. It also registers translations and attaches endpoints to the server. `Start` method on the server is for starting the gin server at specified port (8080 in this case). If there is an error when running the server, it will log the error and return it. `registerTranslation` function generates a translator for a given validator. Here, english translations are registered. `endpoints` is a method on server which calls helper functions (`bookRoute`, `authorRoute`, `customerRoute`, `reviewRoute`) to attach various routes (endpoints) to the server. Each of these routing functions configures a series of HTTP endpoints pertaining to individual topics (like books, authors, customers, reviews). For example, `bookRoute` configures endpoints for creating, listing, updating, and deleting books as well as uploading book cover.
 
-`server.go`
+`controllers/server.go`
 
 ```go
 
@@ -93,7 +93,7 @@ Next, we will create a common route, and name it `routes.go`.
 
 ![routes](./images/route.png)
 
-`routes.go`
+`controllers/routes.go`
 
 ```go
 package controllers
@@ -188,7 +188,7 @@ Let's begin focusing on the primary aspect: the HTTP Handlers.
 
 ![book_controller](./images/book_controller.png)
 
-`book.go`
+`controllers/book.go`
 
 ```go
 package database
@@ -449,7 +449,7 @@ You need to create an S3 Bucket in AWS and make sure to update `S3_BUCKET` envir
 
 ![author_controller](./images/author_controller.png)
 
-`author.go`
+`controllers/author.go`
 
 ```go
 package controllers
@@ -579,7 +579,7 @@ func (s *Server) ListAuthors(c *gin.Context) {
 
 ![customer_controller](./images/customer_controller.png)
 
-`customer.go`
+`controllers/customer.go`
 
 ```go
 package controllers
@@ -764,7 +764,7 @@ func (s *Server) DeleteCustomer(c *gin.Context) {
 
 ![review_controller](./images/review_controller.png)
 
-`review.go`
+`controllers/review.go`
 
 ```go
 package controllers
@@ -917,7 +917,7 @@ Once, everything is done make sure to update the routes.
 
 ![update_routes](./images/update_routes.png)
 
-`routes.go`
+`controllers/routes.go`
 
 ```go
 package controllers

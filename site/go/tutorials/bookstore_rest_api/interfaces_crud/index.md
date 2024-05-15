@@ -582,11 +582,6 @@ import (
 )
 
 func (c Client) AddReview(ctx context.Context, revParams models.ReviewParams) (bool, error) {
-	var maxID int64
-	if result := c.db.Model(&models.Review{}).Select("COALESCE(MAX(id), 0)").Scan(&maxID); result.Error != nil {
-		return false, errors.New("something went wrong")
-	}
-
 	var customer models.Customer
 	var book models.Book
 	if err := c.db.Where("id = ?", revParams.CustomerID).Take(&customer).Error; err != nil {
@@ -608,7 +603,6 @@ func (c Client) AddReview(ctx context.Context, revParams models.ReviewParams) (b
 	}
 
 	var Review models.Review
-	Review.ID = uint(maxID + 1)
 	Review.Rating = revParams.Rating
 	Review.Comment = revParams.Comment
 	Review.CustomerID = revParams.CustomerID
@@ -625,22 +619,14 @@ func (c Client) ListReview(ctx context.Context, bookId int64) ([]models.ReviewLi
 
 	return reviewList, nil
 }
-
 ```
 
 #### Add Review
 
-This function is meant to store a new review of a book into a database. The function gets the maximum ID currently in the `Review` table in the database. If there is an issue with obtaining the maximum ID, it returns false and an error message.
-Next, it fetches the `Customer` and `Book` records using the `CustomerID` and `BookID` from the `revParams` input parameter respectively. With all the pieces in place, it constructs a new review instance by incrementing the max ID for the new review's ID,
-copying other review details from `revParams`, and assigns the CustomerID and BookID. Finally, it stores the new review record in the review table in the database and returns `true` to signify that the operation was successful.
+This function is meant to store a new review of a book into a database. It fetches the `Customer` and `Book` records using the `CustomerID` and `BookID` from the `revParams` input parameter respectively. With all the pieces in place, it copies review information from `revParams`, and assigns the CustomerID and BookID. Finally, it stores the new review record in the review table in the database and returns `true` to signify that the operation was successful.
 
 ```go
 func (c Client) AddReview(ctx context.Context, revParams models.ReviewParams) (bool, error) {
-	var maxID int64
-	if result := c.db.Model(&models.Review{}).Select("COALESCE(MAX(id), 0)").Scan(&maxID); result.Error != nil {
-		return false, errors.New("something went wrong")
-	}
-
 	var customer models.Customer
 	var book models.Book
 	if err := c.db.Where("id = ?", revParams.CustomerID).Take(&customer).Error; err != nil {
@@ -662,7 +648,6 @@ func (c Client) AddReview(ctx context.Context, revParams models.ReviewParams) (b
 	}
 
 	var Review models.Review
-	Review.ID = uint(maxID + 1)
 	Review.Rating = revParams.Rating
 	Review.Comment = revParams.Comment
 	Review.CustomerID = revParams.CustomerID
@@ -672,7 +657,6 @@ func (c Client) AddReview(ctx context.Context, revParams models.ReviewParams) (b
 	return true, nil
 
 }
-
 ```
 
 #### List Review
