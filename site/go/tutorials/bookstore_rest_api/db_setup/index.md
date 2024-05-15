@@ -74,10 +74,29 @@ Under **Modify options** provide bind ports and environment variables.
 ![goland_8](./images/8.png)
 
 Once you have supplied all the necessary information, click **Run**.
+
 ![goland_9](./images/9.png)
 
 You can see the container is up and running.
 
 ![goland_10](./images/10.png)
+
+One of the standout features is the ability to visualize databases seamlessly in GoLand. Ensure to activate the **[Database Tools and SQL](https://www.jetbrains.com/help/go/connecting-to-a-database.html)** plugin for this functionality.
+
+![db1](./images/db1.png)
+
+Click + and add a new Data Source --> PostgreSQL.
+
+![db2](./images/db2.png)
+
+Provide the necessary database credentials like database username, password, host etc.
+
+Click Apply and then OK
+
+![db3](./images/db3.png)
+
+Within the console, you have the capability to execute your SQL queries. Here, I will demonstrate creating a new database.
+
+![db4](./images/db4.png)
 
 We've successfully configured our database. Next, our attention will turn to setting up the new project and installing necessary dependencies.
