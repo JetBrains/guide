@@ -151,7 +151,7 @@ Once our models are prepared, we'll proceed to implement `db.DBMigrate()`. This 
 
 Let's begin by creating our `Book` model.
 
-![book_model](./images/book_model.png)
+![book_model](./images/bookmodel.png)
 
 `models/book.go`
 
@@ -170,7 +170,6 @@ type DateParser interface {
 
 type Book struct {
 	gorm.Model
-	Id              int64     `json:"ID" gorm:"primaryKey"`
 	Title           string    `json:"title" binding:"required"`
 	ISBN            string    `json:"isbn" binding:"required"`
 	Image           string    `json:"image,omitempty"`
@@ -214,13 +213,12 @@ func ValidateDate(pubDate string) (time.Time, error) {
 In this Go struct, we have the following fields:
 
 - `gorm.Model` - this is an embedded field. It means that the Book struct includes all the fields defined in GORM.
-- `Id` - This is an integer (int64) field that represents the unique identifier of a book.
 - `Title` - This is a string field representing the title of a book.
 - `ISBN` - This is another string field which stands for International Standard Book Number.
 - `Image` - This is a string that might contain a link or path to the image of the book cover.
 - `PublicationDate` - This is of type `time.Time`, storing the book's publication date.
 
-Each field is tagged with `json:"<name>"`, indicating how the field should be marshalled/unmarshalled when encoding/decoding JSON. So, when this struct is encoded into JSON, the field `Id` will be represented as `"id"` in the JSON object. Similarly, when decoding JSON data into this struct, the decoder will expect a field named `"id"` and will assign its value to the `Id` field of the struct.
+Each field is tagged with `json:"<name>"`, indicating how the field should be marshalled/unmarshalled when encoding/decoding JSON. So, when this struct is encoded into JSON, the field `Title` will be represented as `"title"` in the JSON object. Similarly, when decoding JSON data into this struct, the decoder will expect a field named `"title"` and will assign its value to the `Title` field of the struct.
 
 ```go
 type BookParams struct {
@@ -280,13 +278,13 @@ func ValidateDate(pubDate string) (time.Time, error) {
 
 ### Author Model
 
-- The `Id` and `Name` fields represent the unique identifier and name of an author, respectively.
+- The `Name` fields represent the name of an author.
   <br>
 - The Books field is of type `[]Book`, which suggests that an author can have multiple books associated with them. The tag `gorm:"many2many:author_books;"` specifies a many-to-many relationship between books and authors.
   <br><br>
 - The `AuthorBook` struct: This is used to model the many-to-many relationship between authors and books. It includes fields `AuthorID` and `BookID`, and the `binding:"required"` tag indicates that these fields are mandatory.
 
-![author_model](./images/author_modal.png)
+![author_model](./images/authormodel.png)
 
 ```go
 package models
@@ -295,7 +293,6 @@ import "gorm.io/gorm"
 
 type Author struct {
 	gorm.Model
-	Id    int64  `json:"ID" gorm:"primaryKey"`
 	Name  string `json:"name" binding:"required"`
 	Books []Book `gorm:"many2many:author_books;"`
 }
@@ -304,13 +301,14 @@ type AuthorBook struct {
 	AuthorID int64 `json:"author_id" binding:"required"`
 	BookID   int64 `json:"book_id" binding:"required"`
 }
+
 ```
 
 ### Customer & Review Model
 
-![customer_review_modal](./images/customer_review_modal.png)
+![customer_review_modal](./images/customermodel.png)
 
-- `Customer`: Represents a Customer with ID, FirstName, LastName, Email, PhoneNumber, and Address as properties. The struct tag `binding:"required"` indicates that these fields must be provided.
+- `Customer`: Represents a Customer with `FirstName`, `LastName`, `Email`, `PhoneNumber`, and `Address` as properties. The struct tag `binding:"required"` indicates that these fields must be provided.
 - `Review`: Represents a review completed by a customer on a book. It includes the ID of the customer and the book, a rating, and a comment. There are also references to the `Customer` and `Book` structures, creating a one-to-many relationship through the keys CustomerID and BookID.
 - `ReviewParams`: A helper struct to validate incoming requests data when creating a book review.
 - `CustomerParams`: A helper struct to validate incoming requests data when creating a new customer.
@@ -327,7 +325,6 @@ import "gorm.io/gorm"
 
 type Customer struct {
 	gorm.Model
-	Id          int64  `json:"ID" gorm:"primaryKey"`
 	FirstName   string `json:"first_name" binding:"required"`
 	LastName    string `json:"last_name" binding:"required"`
 	Email       string `json:"email" binding:"required"`
