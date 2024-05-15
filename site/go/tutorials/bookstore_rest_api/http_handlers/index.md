@@ -443,7 +443,7 @@ func (s *Server) UploadBookCover(c *gin.Context) {
 
 ![s3_bucket](./images/s3.png)
 
-You need to create an S3 Bucket in AWS and make sure to update `S3_BUCKET` environment variable in `.env` file.
+> **Note** You need to create an S3 Bucket in AWS and make sure to update `S3_BUCKET` environment variable in `.env` file.
 
 ### Author
 
@@ -961,9 +961,9 @@ go run main.go
 
 ![run_app](./images/run_app.png)
 
-Now open Postman or HTTP Client to test your endpoints.
+Now open [HTTP Client](https://www.jetbrains.com/help/go/http-client-in-product-code-editor.html) to test your endpoints.
 
-![postman_1](./images/postman_1.png)
-![postman_2](./images/postman_2.png)
+![httpclient_1](./images/httpclient.png)
+![httpclient_2](./images/httpclient_2.png)
 
 Congratulations on reaching this milestone! While the tutorial may have been extensive, I'm certain you've acquired valuable new knowledge. Now, take the next step and begin creating exciting applications with Go.

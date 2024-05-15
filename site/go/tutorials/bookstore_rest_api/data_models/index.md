@@ -362,3 +362,5 @@ type ReviewList struct {
 }
 
 ```
+
+We are done with the models. The upcoming section will concentrate on implementing the interfaces.
