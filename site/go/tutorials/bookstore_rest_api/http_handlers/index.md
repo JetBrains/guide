@@ -28,7 +28,7 @@ Let me first breakdown the `Server` struct.
 
 Firstly, a `Server` struct is defined that encapsulates services and clients needed by the server.
 
-Then, a `NewServer` function is provided to bootstrap a new instance of Server. It loads default configuration, creates an S3 client, sets a default gin engine, and a new validator. It also registers translations and attaches endpoints to the server. `Start` method on the server is for starting the gin server at specified port (8080 in this case). If there is an error when running the server, it will log the error and return it. `registerTranslation` function generates a translator for a given validator. Here, english translations are registered. `endpoints` is a method on server which calls helper functions (`bookRoute`, `authorRoute`, `customerRoute`, `reviewRoute`) to attach various routes (endpoints) to the server. Each of these routing functions configures a series of HTTP endpoints pertaining to individual topics (like books, authors, customers, reviews). For example, `bookRoute` configures endpoints for creating, listing, updating, and deleting books as well as uploading book cover.
+Then, a `NewServer` function is provided to bootstrap a new instance of Server. It loads default configuration, creates an S3 client, sets a default Gin engine, and a new validator. It also registers translations and attaches endpoints to the server. `Start` method on the server is for starting the gin server at specified port (8080 in this case). If there is an error when running the server, it will log the error and return it. `registerTranslation` function generates a translator for a given validator. Here, english translations are registered. `endpoints` is a method on server which calls helper functions (`bookRoute`, `authorRoute`, `customerRoute`, `reviewRoute`) to attach various routes (endpoints) to the server. Each of these routing functions configures a series of HTTP endpoints pertaining to individual topics (like books, authors, customers, reviews). For example, `bookRoute` configures endpoints for creating, listing, updating, and deleting books as well as uploading book cover.
 
 `controllers/server.go`
 
@@ -119,7 +119,7 @@ func reviewRoute(s *Server) {
 
 ```
 
-This function is method of `Server` type that initialize the HTTP routes for the web server. Each function (`bookRoute`, `authorRoute`, etc.) is passed a pointer to the `Server` instance and presumably sets up routes related to a specific entity (e.g., books, authors, customers, reviews). Currently, the function is empty, we will come back to this later to update it.
+This function is a method of `Server` type that initializes the HTTP routes for the web server. Each function (`bookRoute`, `authorRoute`, etc.) is passed a pointer to the `Server` instance and sets up routes related to a specific entity (e.g., books, authors, customers, reviews). Currently, the function is empty, we will come back to this later to update it.
 
 ## Update main.go
 
@@ -280,7 +280,7 @@ Let's break it down.
 
 #### Create a new book
 
-The `CreateBook` function is an HTTP handler that creates a new book record in a database. It uses gin for handling HTTP requests.
+The `CreateBook` function is an HTTP handler that creates a new book record in a database. It uses Gin for handling HTTP requests.
 
 Briefly, it works as follows:
 
