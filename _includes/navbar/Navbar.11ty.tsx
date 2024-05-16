@@ -34,7 +34,7 @@ const Navbar = ({
 							class="logo"
 						/>*/}
 					</a>
-					<a class="navbar-item is-size-5" href="/">
+					<a class="navbar-item is-size-5 has-text-weight-semibold" href="/">
 						Guide
 					</a>
 

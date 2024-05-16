@@ -33,7 +33,7 @@ export default class ListingLayout {
 				reverse: true,
 				before: function (
 					paginationData: EleventyCollectionItem[],
-					fullData: FullData
+					fullData: FullData,
 				): EleventyCollectionItem[] {
 					// Get pagination.resourceType and pagination.channel, if present
 					const { resourceType } = fullData.pagination;
@@ -92,15 +92,19 @@ export default class ListingLayout {
 								</span>
 							)}
 							<div>
-								<h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
+								<h1 class="mt-2 mb-4 title is-size-2 has-text-weight-bold">
 									{data.title}
 								</h1>
 								{data.subtitle && (
-									<p class="subtitle has-text-grey mb-5">{data.subtitle}</p>
+									<p class="subtitle is-size-4 has-text-grey mb-5">
+										{data.subtitle}
+									</p>
 								)}
 							</div>
 						</div>
-						{content && <div class="content pt-2">{content}</div>}
+						{content && content != data.subtitle && (
+							<div class="content pt-2">{content}</div>
+						)}
 					</div>
 				</section>
 

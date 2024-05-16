@@ -49,14 +49,13 @@ export default class IndexPage {
 				<section class="section has-background-grey-darker has-glow-purple-transparent">
 					<div class="container">
 						<div class="columns is-multiline">
-							<div class="column is-7">
-								<h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold has-text-white">
+							<div class="column is-8">
+								<h1 class="mt-2 mb-4 title has-text-weight-semibold has-text-white">
 									Welcome to the JetBrains Guide
 								</h1>
-								<p class="subtitle mb-5 has-text-white">
-									Learn about technologies and become a badass developer. We
-									have tips, tutorials, videos, articles and much, much more
-									covering popular technologies, solutions, and hot topics!
+								<p class="subtitle has-text-white">
+									Learn about technologies and become
+									<br />a badass developer.
 								</p>
 							</div>
 						</div>
@@ -69,7 +68,7 @@ export default class IndexPage {
 							{channels
 								.filter(
 									(resource: Resource): resource is Channel =>
-										resource.resourceType === CHANNEL_RESOURCE
+										resource.resourceType === CHANNEL_RESOURCE,
 								)
 								.map((channel) => {
 									return (
@@ -127,7 +126,7 @@ export default class IndexPage {
 					<div class="container">
 						<div class="columns is-vcentered is-mobile">
 							<div class="column is-8">
-								<h2 class="mt-2 mb-4 is-size-1 has-text-weight-bold">
+								<h2 class="mt-2 mb-4 is-size-2 has-text-weight-semibold">
 									Hot tags
 								</h2>
 							</div>

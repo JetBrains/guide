@@ -25,7 +25,7 @@ export default class Http404Page {
 					<div class="container">
 						<div class="columns is-multiline">
 							<div class="column is-8">
-								<h1 class="mt-2 mb-4 is-size-1 has-text-weight-bold has-text-white">
+								<h1 class="mt-2 mb-4 title has-text-weight-semibold has-text-white">
 									{data.title}
 								</h1>
 								<p class="subtitle mb-5 has-text-white">{data.subtitle}</p>

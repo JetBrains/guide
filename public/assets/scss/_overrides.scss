@@ -11,6 +11,13 @@ footer.pagefooter a,
 footer.pagefooter a:hover {
     color: $grey-light !important;
 }
+.button.is-outlined {
+  border-color: $grey !important;
+
+  &:hover {
+    background-color: $grey-lighter !important;
+  }
+}
 button.has-text-light svg,
 footer.pagefooter svg {
   fill: $grey-light;
