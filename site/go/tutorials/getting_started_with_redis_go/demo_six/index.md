@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: chrisberger
-subtitle: ""
+subtitle: Simplifying Communication Between Applications
 thumbnail: ./thumbnail.png
 ---
 

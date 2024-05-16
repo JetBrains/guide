@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: chrisberger
-subtitle: ""
+subtitle: Redis Key Expiry - Maximizing Data Efficiency with Time-Based Management
 thumbnail: ./thumbnail.png
 ---
 

@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: chrisberger
-subtitle: ""
+subtitle: Harnessing the Power of Redis Transactions for Data Integrity
 thumbnail: ./thumbnail.png
 ---
 

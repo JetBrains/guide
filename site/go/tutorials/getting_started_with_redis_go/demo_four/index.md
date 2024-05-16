@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: chrisberger
-subtitle: ""
+subtitle: Efficiency in Bulk - Maximizing Performance with Redis Pipelines
 thumbnail: ./thumbnail.png
 ---
 

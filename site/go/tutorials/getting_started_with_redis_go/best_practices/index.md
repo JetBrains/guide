@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: chrisberger
-subtitle: ""
+subtitle: Essential Techniques to Ensure Efficiency and Success
 thumbnail: ./thumbnail.png
 ---
 

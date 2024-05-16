@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: chrisberger
-subtitle: ""
+subtitle: Efficient Data Handling - Redis Retrieval and Storage Capabilities
 thumbnail: ./thumbnail.png
 ---
 

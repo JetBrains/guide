@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: chrisberger
-subtitle: ""
+subtitle: Resolving Dependencies
 thumbnail: ./thumbnail.png
 ---
 

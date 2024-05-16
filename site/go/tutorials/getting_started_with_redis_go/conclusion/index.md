@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: chrisberger
-subtitle: ""
+subtitle: Considerations and Next Steps
 thumbnail: ./thumbnail.png
 ---
 

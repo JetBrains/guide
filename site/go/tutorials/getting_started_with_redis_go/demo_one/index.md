@@ -1,13 +1,13 @@
 ---
 type: TutorialStep
 date: 2024-04-22
-title: "Six Demos to Learn Redis by Coding"
+title: "Learn Redis by Coding"
 topics:
   - go
   - databases
   - redis
 author: chrisberger
-subtitle: ""
+subtitle: Unlocking Key Concepts Through Six Interactive Demos
 thumbnail: ./thumbnail.png
 ---
 
