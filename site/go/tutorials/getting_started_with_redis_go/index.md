@@ -8,7 +8,7 @@ topics:
   - databases
   - redis
 author: chrisberger
-subtitle: ""
+subtitle: Using Redis in a Go Project
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/
