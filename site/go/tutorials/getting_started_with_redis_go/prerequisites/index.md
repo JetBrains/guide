@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: chrisberger
-subtitle: Resolving Dependencies
+subtitle: Install and Resolve Dependencies to Work With Redis
 thumbnail: ./thumbnail.png
 ---
 
