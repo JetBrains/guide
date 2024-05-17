@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: chrisberger
-subtitle: Essential Techniques to Ensure Efficiency and Success
+subtitle: Essential Techniques to Ensure Efficiency and Success with Redis
 thumbnail: ./thumbnail.png
 ---
 
