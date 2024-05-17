@@ -5,7 +5,7 @@ title: "Implementing Dependency Injection in Go"
 topics:
   - go
 author: israel
-subtitle: ""
+subtitle: Leveraging Popular Frameworks for Dependency Injection Implementation
 thumbnail: ./thumbnail.png
 ---
 

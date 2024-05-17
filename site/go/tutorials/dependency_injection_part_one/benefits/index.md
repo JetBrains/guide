@@ -5,7 +5,7 @@ title: "Benefits & Drawbacks of Dependency Injection"
 topics:
   - go
 author: israel
-subtitle: ""
+subtitle: Balancing Pros and Cons for Effective Software Design
 thumbnail: ./thumbnail.png
 ---
 

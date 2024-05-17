@@ -5,7 +5,7 @@ title: "What Is Dependency Injection?"
 topics:
   - go
 author: israel
-subtitle: ""
+subtitle: Demystifying Dependency Injection - Simplifying Software Design
 thumbnail: ./thumbnail.png
 ---
 

@@ -5,7 +5,7 @@ title: "Injection During Initialization"
 topics:
   - go
 author: israel
-subtitle: ""
+subtitle: Harnessing Dependency Injection for Efficient Object Initialization
 thumbnail: ./thumbnail.png
 ---
 

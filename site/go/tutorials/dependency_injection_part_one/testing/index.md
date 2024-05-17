@@ -5,7 +5,7 @@ title: "Testing"
 topics:
   - go
 author: israel
-subtitle: ""
+subtitle: Strategies for Effective Code Testing and Maintenance
 thumbnail: ./thumbnail.png
 ---
 

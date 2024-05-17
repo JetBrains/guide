@@ -5,7 +5,7 @@ title: "Conclusion"
 topics:
   - go
 author: israel
-subtitle: ""
+subtitle: Key Takeaways and Next Steps
 thumbnail: ./thumbnail.png
 ---
 
