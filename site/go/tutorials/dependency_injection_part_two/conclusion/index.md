@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
-date: 2024-05-16
+date: 2024-05-20
 title: "Conclusion"
 topics:
   - go
 author: israel
-subtitle: ""
+subtitle: The Road Ahead
 thumbnail: ./thumbnail.png
 ---
 

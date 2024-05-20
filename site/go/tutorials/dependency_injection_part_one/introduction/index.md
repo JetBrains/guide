@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
-date: 2024-05-16
+date: 2024-05-20
 title: "What Is Dependency Injection?"
 topics:
   - go
 author: israel
-subtitle: Demystifying Dependency Injection - Simplifying Software Design
+subtitle: Dependency Injection Made Easy - Building Cleaner Software
 thumbnail: ./thumbnail.png
 ---
 

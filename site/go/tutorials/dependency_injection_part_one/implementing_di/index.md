@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-05-16
+date: 2024-05-20
 title: "Implementing Dependency Injection in Go"
 topics:
   - go

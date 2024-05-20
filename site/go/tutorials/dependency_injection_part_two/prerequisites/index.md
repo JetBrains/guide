@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
-date: 2024-05-16
+date: 2024-05-20
 title: "Prerequisites"
 topics:
   - go
 author: israel
-subtitle: ""
+subtitle: What you need to know before you begin
 thumbnail: ./thumbnail.png
 ---
 

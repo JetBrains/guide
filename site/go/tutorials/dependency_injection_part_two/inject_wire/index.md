@@ -1,12 +1,11 @@
 ---
 type: TutorialStep
-date: 2024-05-16
-title: "Go with Wire
-"
+date: 2024-05-20
+title: "Go with Wire"
 topics:
   - go
 author: israel
-subtitle: ""
+subtitle: Leveraging Wire for Dependency Injection
 thumbnail: ./thumbnail.png
 ---
 

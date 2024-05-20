@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
-date: 2024-05-16
+date: 2024-05-20
 title: "Go with FX"
 topics:
   - go
 author: israel
-subtitle: ""
+subtitle: Building Go Applications with Fx
 thumbnail: ./thumbnail.png
 ---
 

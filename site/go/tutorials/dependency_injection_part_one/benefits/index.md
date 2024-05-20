@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
-date: 2024-05-16
+date: 2024-05-20
 title: "Benefits & Drawbacks of Dependency Injection"
 topics:
   - go
 author: israel
-subtitle: Balancing Pros and Cons for Effective Software Design
+subtitle: Unveiling the Benefits (and Challenges) of Dependency Injection
 thumbnail: ./thumbnail.png
 ---
 

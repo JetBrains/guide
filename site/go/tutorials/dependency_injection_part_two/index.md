@@ -1,7 +1,7 @@
 ---
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
-date: 2024-05-12
+date: 2024-05-20
 title: Dependency Injection in Go - Part 2
 topics:
   - go
