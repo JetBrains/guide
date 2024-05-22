@@ -2,39 +2,20 @@
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2024-05-12
-title: Getting Started with Redis in Go
+title: How to Build Command Line Applications with Go and Cobra
 topics:
   - go
-  - databases
-  - redis
-author: chrisberger
-subtitle: Using Redis in a Go Project
+author: iu
+subtitle: ""
 thumbnail: ./thumbnail.png
 tutorialItems:
-  - ./introduction/
-  - ./prerequisites/
-  - ./new_project/
-  - ./connect_goland_redis/
-  - ./demo_one/
-  - ./demo_two/
-  - ./demo_three/
-  - ./demo_four/
-  - ./demo_five/
-  - ./demo_six/
-  - ./best_practices/
+  - ./what_is_cli/
+  - ./creating_cli/
+  - ./error_handling/
+  - ./building_binary/
   - ./conclusion/
 ---
 
-Are you looking for an in-memory, persistent database? A fast cache? A streaming engine? Or a message broker?
+Command line interface (CLI) applications facilitate interactions between users and a computer via text-based commands entered into a terminal or command prompt. These applications are also known as console applications or command line programs. When users enter a predefined command, the application performs the specific task associated with that command, often displaying text-based results as output.
 
-[Redis](https://redis.io/) is all of this. Being a key-value store at its base, Redis can take on a variety of tasks that go beyond the functionality of a classic database. With tested-and-proven Go packages like `redis/go-redis` or `redigo/redis` and native support from the GoLand IDE, you can use Redis in your Go projects with almost no effort.
-
-This tutorial introduces you to the key features of Redis and how to use them in a Go project. At the end of the tutorial, you will know how to:
-
-- Create a GoLand project
-- Connect to Redis
-- Store and retrieve string values
-- Run Redis commands in batches for optimal performance
-- Use transactions to retain data consistency
-- Set up a pub-sub system
-- Help a team of fearless heroes rescue a group of chickens that are held hostage by evil goblins
+In this article, you'll learn more about the command line, its concepts, and how to build a command line application with the Go programming language using [Cobra](https://github.com/spf13/cobra), a simple and powerful open source library for creating modern command line applications.
