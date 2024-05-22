@@ -4,7 +4,7 @@ date: 2024-05-20
 title: "Getting Started"
 topics:
   - go
-author: israel
+author: iu
 subtitle: Setting Up Components for Dependency Injection
 thumbnail: ./thumbnail.png
 ---

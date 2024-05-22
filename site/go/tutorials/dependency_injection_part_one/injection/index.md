@@ -4,7 +4,7 @@ date: 2024-05-20
 title: "Injection During Initialization"
 topics:
   - go
-author: israel
+author: iu
 subtitle: DI - The Key to Efficient Object Creation
 thumbnail: ./thumbnail.png
 ---

@@ -4,7 +4,7 @@ date: 2024-05-20
 title: "Conclusion"
 topics:
   - go
-author: israel
+author: iu
 subtitle: Key Takeaways and Next Steps
 thumbnail: ./thumbnail.png
 ---

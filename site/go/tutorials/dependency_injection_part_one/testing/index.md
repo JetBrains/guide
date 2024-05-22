@@ -4,7 +4,7 @@ date: 2024-05-20
 title: "Testing"
 topics:
   - go
-author: israel
+author: iu
 subtitle: Strategies for Effective Code Testing and Maintenance
 thumbnail: ./thumbnail.png
 ---

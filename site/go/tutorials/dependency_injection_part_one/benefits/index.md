@@ -4,7 +4,7 @@ date: 2024-05-20
 title: "Benefits & Drawbacks of Dependency Injection"
 topics:
   - go
-author: israel
+author: iu
 subtitle: Unveiling the Benefits (and Challenges) of Dependency Injection
 thumbnail: ./thumbnail.png
 ---

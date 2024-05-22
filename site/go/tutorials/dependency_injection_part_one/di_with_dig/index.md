@@ -4,7 +4,7 @@ date: 2024-05-20
 title: "Dependency Injection with Dig"
 topics:
   - go
-author: israel
+author: iu
 subtitle: Digging into Dependency Injection - Unleashing the Power of Dig in Go
 thumbnail: ./thumbnail.png
 ---

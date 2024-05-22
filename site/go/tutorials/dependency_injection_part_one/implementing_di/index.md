@@ -4,7 +4,7 @@ date: 2024-05-20
 title: "Implementing Dependency Injection in Go"
 topics:
   - go
-author: israel
+author: iu
 subtitle: Leveraging Popular Frameworks for Dependency Injection Implementation
 thumbnail: ./thumbnail.png
 ---

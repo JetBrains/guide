@@ -4,7 +4,7 @@ date: 2024-05-20
 title: "Go with Wire"
 topics:
   - go
-author: israel
+author: iu
 subtitle: Leveraging Wire for Dependency Injection
 thumbnail: ./thumbnail.png
 ---

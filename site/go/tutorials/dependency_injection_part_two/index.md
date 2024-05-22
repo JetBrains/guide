@@ -5,7 +5,7 @@ date: 2024-05-20
 title: Dependency Injection in Go - Part 2
 topics:
   - go
-author: israel
+author: iu
 subtitle: ""
 thumbnail: ./thumbnail.png
 tutorialItems:
