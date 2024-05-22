@@ -5,7 +5,7 @@ title: "Setting Up the Demo Project in GoLand"
 topics:
   - go
   - testing
-author: chrisberger
+author: cb
 subtitle: Unleash the Power of Mocks - Build a Project from Scratch
 thumbnail: ./thumbnail.png
 ---

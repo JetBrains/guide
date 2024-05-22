@@ -5,7 +5,7 @@ title: "Popular Error Handling Techniques in Go"
 topics:
   - go
   - testing
-author: chrisberger
+author: cb
 subtitle: ""
 thumbnail: ./thumbnail.png
 ---

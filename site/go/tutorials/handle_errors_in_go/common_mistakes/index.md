@@ -5,7 +5,7 @@ title: "Common Mistakes to Avoid When Handling Errors in Go"
 topics:
   - go
   - testing
-author: chrisberger
+author: cb
 subtitle: ""
 thumbnail: ./thumbnail.png
 ---

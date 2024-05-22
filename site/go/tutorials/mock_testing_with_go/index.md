@@ -6,7 +6,7 @@ title: How to Use Mock Testing in Go
 topics:
   - go
   - testing
-author: chrisberger
+author: cb
 subtitle: Mocking & Rocking - Power Up Your Go Testing
 thumbnail: ./thumbnail.png
 tutorialItems:

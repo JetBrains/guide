@@ -5,7 +5,7 @@ date: 2024-05-12
 title: How to Handle Errors in Go
 topics:
   - go
-author: chrisberger
+author: cb
 subtitle: ""
 thumbnail: ./thumbnail.png
 tutorialItems:

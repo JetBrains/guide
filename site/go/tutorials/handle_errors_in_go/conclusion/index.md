@@ -5,7 +5,7 @@ title: "Conclusion"
 topics:
   - go
   - testing
-author: chrisberger
+author: cb
 subtitle: ""
 thumbnail: ./thumbnail.png
 ---

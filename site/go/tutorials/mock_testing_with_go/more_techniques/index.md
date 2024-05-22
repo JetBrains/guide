@@ -5,7 +5,7 @@ title: "More Mocking Techniques"
 topics:
   - go
   - testing
-author: chrisberger
+author: cb
 subtitle: Mocking Power - Interfaces, Testify, and HTTP for Go Testing
 thumbnail: ./thumbnail.png
 ---

@@ -6,7 +6,7 @@ topics:
   - go
   - databases
   - redis
-author: chrisberger
+author: cb
 subtitle: From Concept to Code - Crafting Your Project's Foundation
 thumbnail: ./thumbnail.png
 ---

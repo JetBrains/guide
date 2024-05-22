@@ -5,7 +5,7 @@ title: "Handling Specific Types of Errors"
 topics:
   - go
   - testing
-author: chrisberger
+author: cb
 subtitle: ""
 thumbnail: ./thumbnail.png
 ---

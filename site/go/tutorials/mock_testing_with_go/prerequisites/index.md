@@ -5,7 +5,7 @@ title: "Prerequisites"
 topics:
   - go
   - testing
-author: chrisberger
+author: cb
 subtitle: Software Requirements - What You Need to Know Before You Begin
 
 thumbnail: ./thumbnail.png

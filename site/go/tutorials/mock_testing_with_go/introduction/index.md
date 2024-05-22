@@ -5,7 +5,7 @@ title: "Unit testing in Go is easy!"
 topics:
   - go
   - testing
-author: chrisberger
+author: cb
 subtitle: The Power of Unit Testing in Your Go Projects
 thumbnail: ./thumbnail.png
 ---

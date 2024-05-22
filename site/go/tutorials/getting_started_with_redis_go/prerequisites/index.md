@@ -6,7 +6,7 @@ topics:
   - go
   - databases
   - redis
-author: chrisberger
+author: cb
 subtitle: Install and Resolve Dependencies to Work With Redis
 thumbnail: ./thumbnail.png
 ---

@@ -6,7 +6,7 @@ topics:
   - go
   - databases
   - redis
-author: chrisberger
+author: cb
 subtitle: Essential Techniques to Ensure Efficiency and Success with Redis
 thumbnail: ./thumbnail.png
 ---

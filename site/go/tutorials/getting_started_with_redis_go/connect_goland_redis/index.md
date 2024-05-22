@@ -6,7 +6,7 @@ topics:
   - go
   - databases
   - redis
-author: chrisberger
+author: cb
 subtitle: Streamlining GoLand and Redis Setup for Smooth Development
 thumbnail: ./thumbnail.png
 ---

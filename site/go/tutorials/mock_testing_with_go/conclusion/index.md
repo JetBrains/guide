@@ -5,7 +5,7 @@ title: "Conclusion"
 topics:
   - go
   - testing
-author: chrisberger
+author: cb
 subtitle: Where to Go from Here
 thumbnail: ./thumbnail.png
 ---
