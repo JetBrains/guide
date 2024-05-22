@@ -7,7 +7,7 @@ topics:
   - go
   - testing
 author: chrisberger
-subtitle: ""
+subtitle: Mocking & Rocking - Power Up Your Go Testing
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

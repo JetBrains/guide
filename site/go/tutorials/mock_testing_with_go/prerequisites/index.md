@@ -6,7 +6,8 @@ topics:
   - go
   - testing
 author: chrisberger
-subtitle: ""
+subtitle: Software Requirements - What You Need to Know Before You Begin
+
 thumbnail: ./thumbnail.png
 ---
 

@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: chrisberger
-subtitle: ""
+subtitle: Unleash the Power of Mocks - Build a Project from Scratch
 thumbnail: ./thumbnail.png
 ---
 

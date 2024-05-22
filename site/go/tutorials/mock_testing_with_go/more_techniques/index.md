@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: chrisberger
-subtitle: ""
+subtitle: Mocking Power - Interfaces, Testify, and HTTP for Go Testing
 thumbnail: ./thumbnail.png
 ---
 

@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: chrisberger
-subtitle: ""
+subtitle: Where to Go from Here
 thumbnail: ./thumbnail.png
 ---
 

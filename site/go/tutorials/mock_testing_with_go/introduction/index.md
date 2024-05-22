@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: chrisberger
-subtitle: ""
+subtitle: The Power of Unit Testing in Your Go Projects
 thumbnail: ./thumbnail.png
 ---
 
