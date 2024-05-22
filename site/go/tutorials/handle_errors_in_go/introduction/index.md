@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-05-22
-title: "Unit testing in Go is easy!"
+title: "How to Handle Errors in Go"
 topics:
   - go
   - testing
 author: cb
-subtitle: ""
+subtitle: Errorless Go - Write Clean and Reliable Code
 thumbnail: ./thumbnail.png
 ---
 

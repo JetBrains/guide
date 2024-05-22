@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: cb
-subtitle: ""
+subtitle: Putting Your Knowledge into Practice
 thumbnail: ./thumbnail.png
 ---
 

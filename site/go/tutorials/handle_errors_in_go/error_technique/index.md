@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: cb
-subtitle: ""
+subtitle: Defer, Panic, and Recover - When to Use Each
 thumbnail: ./thumbnail.png
 ---
 
