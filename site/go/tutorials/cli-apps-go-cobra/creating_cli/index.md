@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
-date: 2024-04-22
+date: 2024-05-24
 title: "Creating a CLI in Go Using Cobra"
 topics:
   - go
 author: iu
-subtitle: ""
+subtitle: Dive into Go CLI Development - A Hands-on Guide with Cobra
 thumbnail: ./thumbnail.png
 ---
 

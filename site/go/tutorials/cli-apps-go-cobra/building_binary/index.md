@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
-date: 2024-04-22
+date: 2024-05-24
 title: "Building a Binary Executable"
 topics:
   - go
 author: iu
-subtitle: ""
+subtitle: Power Up Your Programs - Creating Standalone Go Binaries
 thumbnail: ./thumbnail.png
 ---
 

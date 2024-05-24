@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
-date: 2024-04-22
+date: 2024-05-24
 title: "Error Handling in Cobra"
 topics:
   - go
 author: iu
-subtitle: ""
+subtitle: Preventing Frustration - Mastering Error Handling in CLIs
 thumbnail: ./thumbnail.png
 ---
 

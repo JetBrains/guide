@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
-date: 2024-04-22
+date: 2024-05-24
 title: "What Are Command Line Interfaces?"
 topics:
   - go
 author: iu
-subtitle: ""
+subtitle: Unveiling the Text-Based Power of Your Computer
 thumbnail: ./thumbnail.png
 ---
 

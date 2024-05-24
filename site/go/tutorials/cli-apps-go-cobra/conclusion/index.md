@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
-date: 2024-04-22
+date: 2024-05-24
 title: "Conclusion"
 topics:
   - go
 author: iu
-subtitle: ""
+subtitle: Ready to Roll - Building Go CLIs with Confidence
 thumbnail: ./thumbnail.png
 ---
 
