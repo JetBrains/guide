@@ -1,7 +1,7 @@
 ---
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
-date: 2024-05-12
+date: 2024-05-24
 title: How to Handle Errors in Go
 topics:
   - go

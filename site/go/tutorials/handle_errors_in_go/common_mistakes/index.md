@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-05-22
+date: 2024-05-24
 title: "Common Mistakes to Avoid When Handling Errors in Go"
 topics:
   - go
