@@ -5,6 +5,7 @@ import {
 } from "../_includes/layouts/ReferenceLayout.11y";
 import { Resource } from "../src/ResourceModels";
 import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
+import { renderToString } from "jsx-async-runtime";
 
 export default class LatestLayout {
 	data() {
@@ -33,7 +34,10 @@ export default class LatestLayout {
 		};
 	}
 
-	render(this: LayoutContext, data: ReferenceLayoutProps): JSX.Element {
+	async render(
+		this: LayoutContext,
+		data: ReferenceLayoutProps,
+	): Promise<string> {
 		const { content, pagination } = data;
 
 		const listing = (
@@ -44,6 +48,8 @@ export default class LatestLayout {
 					})}
 			</>
 		);
-		return <ReferenceLayout {...data} listing={listing} content={content} />;
+		return await renderToString(
+			<ReferenceLayout {...data} listing={listing} content={content} />,
+		);
 	}
 }

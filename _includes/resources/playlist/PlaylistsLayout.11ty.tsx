@@ -4,13 +4,14 @@ import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { ResourceFrontmatter } from "../../../src/ResourceModels";
 import { Playlist } from "./PlaylistModels";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
+import { renderToString } from "jsx-async-runtime";
 
 export type PlaylistsLayoutProps = LayoutProps & ResourceFrontmatter;
 
-export function PlaylistsLayout(
+export async function PlaylistsLayout(
 	this: LayoutContext,
-	data: PlaylistsLayoutProps
-): JSX.Element {
+	data: PlaylistsLayoutProps,
+): Promise<string> {
 	const { content, pagination } = data;
 	const paginationItems = pagination ? pagination.items : [];
 	const playlists: Playlist[] = paginationItems.map((p: any) => {
@@ -23,7 +24,9 @@ export function PlaylistsLayout(
 			})}
 		</Fragment>
 	);
-	return <ReferenceLayout {...data} content={content} listing={listing} />;
+	return await renderToString(
+		<ReferenceLayout {...data} content={content} listing={listing} />,
+	);
 }
 
 export const render = PlaylistsLayout;

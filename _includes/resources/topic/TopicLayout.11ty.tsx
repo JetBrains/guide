@@ -3,13 +3,14 @@ import { LayoutContext, LayoutProps } from "../../../src/models";
 import { Topic, TopicFrontmatter } from "./TopicModels";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
+import { renderToString } from "jsx-async-runtime";
 
 export type TopicLayoutData = LayoutProps & TopicFrontmatter;
 
-export function TopicLayout(
+export async function TopicLayout(
 	this: LayoutContext,
-	data: TopicLayoutData
-): JSX.Element {
+	data: TopicLayoutData,
+): Promise<string> {
 	const { collections, content, page } = data;
 	const topic = collections.resourceMap.get(`topics:${page.fileSlug}`) as Topic;
 	if (!topic) {
@@ -18,7 +19,7 @@ export function TopicLayout(
 
 	const linkedResources = this.getResources().filter(
 		// @ts-ignore
-		(ci) => ci.topics && ci.topics.includes(topic.label)
+		(ci) => ci.topics && ci.topics.includes(topic.label),
 	);
 
 	const listing = (
@@ -30,7 +31,9 @@ export function TopicLayout(
 		</Fragment>
 	);
 
-	return <ReferenceLayout {...data} listing={listing} content={content} />;
+	return await renderToString(
+		<ReferenceLayout {...data} listing={listing} content={content} />,
+	);
 }
 
 // noinspection JSUnusedGlobalSymbols

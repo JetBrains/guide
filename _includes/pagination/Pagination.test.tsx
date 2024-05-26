@@ -7,9 +7,9 @@ import { renderToString } from "jsx-async-runtime";
 
 test("Pagination", async () => {
 	const r = Pagination(fixtures.paginationProps);
-	document.body.innerHTML = await renderToString(r, {});
-	expect(screen.getByRole("navigation")).to.exist;
-	expect(screen.getByLabelText("Goto page 0")).to.exist;
+	document.body.innerHTML = await renderToString(r);
+	expect(screen.getByRole("navigation")).toBeTruthy();
+	expect(screen.getByLabelText("Goto page 0")).toBeTruthy();
 	const previous: HTMLAnchorElement = screen.getByText("Previous");
 	expect(previous.href).to.equal("tip3");
 	const next: HTMLAnchorElement = screen.getByText("Next");

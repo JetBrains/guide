@@ -9,7 +9,7 @@ test("ResourceCard", async () => {
 	const resource = fixtures.resources[0];
 
 	const r = ResourceCard({ resource });
-	document.body.innerHTML = await renderToString(r, {});
+	document.body.innerHTML = await renderToString(r);
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: fixtures.tips[0].title,
 	});

@@ -10,7 +10,6 @@ import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import { absolutePaths } from "./src/plugins/absolutePaths";
 import { metaOpenGraphImagePlugin } from "./src/plugins/metaOpenGraphImagePlugin";
 import purgeCss from "@fullhuman/postcss-purgecss";
-import { renderToString } from "jsx-async-runtime";
 
 const options = commandLineArgs([
 	{ name: "config", type: String },
@@ -23,19 +22,6 @@ const options = commandLineArgs([
 module.exports = function (eleventyConfig: any) {
 	// Stop logging every file that gets written
 	eleventyConfig.setQuietMode(true);
-
-	eleventyConfig.addTransform(
-		"tsx",
-		async (content: any, outputPath: string) => {
-			// @ts-ignore
-			if (outputPath.endsWith(".html")) {
-				const result = await renderToString(content);
-				return `<!doctype html>\n${result}`;
-			} else {
-				return content;
-			}
-		}
-	);
 
 	eleventyConfig.addPlugin(EleventyVitePlugin, {
 		viteOptions: {
@@ -111,15 +97,15 @@ module.exports = function (eleventyConfig: any) {
 	// These are all relative to the input directory at the end
 	eleventyConfig.addPassthroughCopy(
 		"./!(_site)**/*.{gif,jpg,png,svg,jpeg,webm,webp}",
-		{ overwrite: true }
+		{ overwrite: true },
 	);
 	eleventyConfig.addPassthroughCopy(
 		{ "../../public/assets": "assets" },
-		{ overwrite: true }
+		{ overwrite: true },
 	);
 	eleventyConfig.addPassthroughCopy(
 		{ "../../public/obsoletes.json": "obsoletes.json" },
-		{ overwrite: true }
+		{ overwrite: true },
 	);
 	eleventyConfig.ignores.add("**/demos/**");
 

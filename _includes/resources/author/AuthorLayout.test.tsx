@@ -4,7 +4,6 @@ import { screen } from "@testing-library/dom";
 import { AuthorLayout } from "./AuthorLayout.11ty";
 import fixtures, { baseRenderData } from "../../fixtures";
 import { ReferenceLayoutProps } from "../../layouts/ReferenceLayout.11y";
-import { renderToString } from "jsx-async-runtime";
 
 test("should render AuthorLayout", async () => {
 	const renderProps: ReferenceLayoutProps = {
@@ -14,12 +13,14 @@ test("should render AuthorLayout", async () => {
 		listing: <div></div>,
 	};
 
-	const r = AuthorLayout.call(fixtures.context, renderProps);
-	document.body.innerHTML = await renderToString(r, {});
+	document.body.innerHTML = await AuthorLayout.call(
+		fixtures.context,
+		renderProps,
+	);
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: fixtures.tutorialStepItems[2].data.title,
 	});
 	expect(links[0].href).to.equal(
-		"/tutorials/some-tutorial/third-tutorialstep/"
+		"/tutorials/some-tutorial/third-tutorialstep/",
 	);
 });

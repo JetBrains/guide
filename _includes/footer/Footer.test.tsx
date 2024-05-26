@@ -7,7 +7,6 @@ import { renderToString } from "jsx-async-runtime";
 const props: FooterProps = { copyright: "Copyright" };
 
 test("Footer", async () => {
-	const r = Footer(props);
-	document.body.innerHTML = await renderToString(r, {});
-	expect(screen.getByRole("link", { name: "Terms of Use" })).to.exist;
+	document.body.innerHTML = await renderToString(Footer(props));
+	expect(screen.getByRole("link", { name: "Terms of Use" })).toBeTruthy();
 });

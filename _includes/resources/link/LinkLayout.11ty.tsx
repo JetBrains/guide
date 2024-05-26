@@ -9,13 +9,14 @@ import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import RelatedResources from "../../relatedresources/RelatedResources.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
+import { renderToString } from "jsx-async-runtime";
 
 export type LinkLayoutData = LayoutProps & LinkFrontmatter;
 
-export function LinkLayout(
+export async function LinkLayout(
 	this: LayoutContext,
-	data: LinkLayoutData
-): JSX.Element {
+	data: LinkLayoutData,
+): Promise<string> {
 	const { collections, content, page } = data;
 	const link = collections.resourceMap.get(page.url) as Link;
 	if (!link) {
@@ -86,7 +87,7 @@ export function LinkLayout(
 		</Fragment>
 	);
 
-	return <BaseLayout {...data}>{main}</BaseLayout>;
+	return await renderToString(<BaseLayout {...data}>{main}</BaseLayout>);
 }
 
 export const render = LinkLayout;

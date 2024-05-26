@@ -17,8 +17,10 @@ test("should render AuthorsLayout", async () => {
 			date: fixtures.date,
 		},
 	};
-	const r = AuthorsLayout.call(fixtures.context, renderProps);
-	document.body.innerHTML = await renderToString(r, {});
+	document.body.innerHTML = await AuthorsLayout.call(
+		fixtures.context,
+		renderProps,
+	);
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: "Author",
 	});

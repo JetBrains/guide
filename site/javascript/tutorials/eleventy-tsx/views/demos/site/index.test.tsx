@@ -7,7 +7,7 @@ import { ViewProps } from "../eleventy";
 test("renders Index component", async () => {
 	const result = renderToString(<Index filePathStem="/index" />);
 	document.body.innerHTML = await renderToString(result);
-	expect(screen.getByText(`Hello /index`)).to.exist;
+	expect(screen.getByText(`Hello /index`)).toBeTruthy();
 });
 test("render index view", async () => {
 	const viewProps: ViewProps = {
@@ -17,5 +17,5 @@ test("render index view", async () => {
 	// ourselves that this is a view, not a "component".
 	const result = render(viewProps);
 	document.body.innerHTML = await renderToString(result);
-	expect(screen.getByText(`Hello /index`)).to.exist;
+	expect(screen.getByText(`Hello /index`)).toBeTruthy();
 });

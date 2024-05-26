@@ -12,7 +12,7 @@ test("Navbar", async () => {
 			topics={[]}
 		/>
 	);
-	document.body.innerHTML = await renderToString(r, {});
+	document.body.innerHTML = await renderToString(r);
 	const result = document.querySelector("nav");
 	expect(result && result.tagName).to.equal("NAV");
 });

@@ -11,13 +11,14 @@ import ArticleTopics from "../common/ArticleTopics.11ty";
 import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 import { UserComments } from "../../userComments.11ty";
+import { renderToString } from "jsx-async-runtime";
 
 export type ArticleLayoutData = LayoutProps & ArticleFrontmatter;
 
-export function ArticleLayout(
+export async function ArticleLayout(
 	this: LayoutContext,
-	data: ArticleLayoutData
-): JSX.Element {
+	data: ArticleLayoutData,
+): Promise<string> {
 	const { collections, content, page } = data;
 	const article = collections.resourceMap.get(page.url) as Article;
 	if (!article) {
@@ -78,7 +79,7 @@ export function ArticleLayout(
 		</div>
 	);
 
-	return <BaseLayout {...data}>{main}</BaseLayout>;
+	return await renderToString(<BaseLayout {...data}>{main}</BaseLayout>);
 }
 
 export const render = ArticleLayout;

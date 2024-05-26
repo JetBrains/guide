@@ -12,8 +12,8 @@ test("SectionListing exists", async () => {
 		resources: fixtures.resources,
 	};
 	const r = ListingSection(props);
-	document.body.innerHTML = await renderToString(r, {});
-	expect(screen.getByText("Some Title")).to.exist;
-	expect(screen.getByText("Some Subtitle")).to.exist;
-	expect(screen.getAllByRole("link", { name: "Another Tip" })).to.exist;
+	document.body.innerHTML = await renderToString(r);
+	expect(screen.getByText("Some Title")).toBeTruthy();
+	expect(screen.getByText("Some Subtitle")).toBeTruthy();
+	expect(screen.getAllByRole("link", { name: "Another Tip" })).toBeTruthy();
 });

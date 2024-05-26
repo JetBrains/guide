@@ -13,7 +13,7 @@ import {
 	TIP_RESOURCE,
 	TUTORIAL_RESOURCE,
 } from "../../src/resourceType";
-import MultiColumnSection from "../../_includes/pageelements/MultiColumnSection";
+import { renderToString } from "jsx-async-runtime";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Game Development",
@@ -44,7 +44,10 @@ export default class GameDevHomepage {
 		};
 	}
 
-	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
+	async render(
+		this: LayoutContext,
+		data: ChannelHomepageData,
+	): Promise<string> {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
 		const unityTutorials = this.getResources({
@@ -84,7 +87,7 @@ export default class GameDevHomepage {
 			customFilter: (r) => r.slug.indexOf("gamedev-day") >= 0,
 		});
 
-		return (
+		return await renderToString(
 			<BaseLayout {...data}>
 				<HeroSection
 					title={channel.title}
@@ -166,7 +169,7 @@ export default class GameDevHomepage {
 						separator={false}
 					/>
 				)}
-			</BaseLayout>
+			</BaseLayout>,
 		);
 	}
 }

@@ -5,7 +5,6 @@ import {
 	TutorialStepLayoutData,
 } from "./TutorialStepLayout.11ty";
 import { screen } from "@testing-library/dom";
-import { renderToString } from "jsx-async-runtime";
 
 test("should render TutorialStepLayout", async () => {
 	// @ts-ignore
@@ -15,8 +14,10 @@ test("should render TutorialStepLayout", async () => {
 		...fixtures.tutorialStepItems[0].data,
 		page: fixtures.tutorialStepItems[0].page,
 	};
-	const r = TutorialStepLayout.call(fixtures.context, tutorialStepLayoutData);
-	document.body.innerHTML = await renderToString(r, {});
+	document.body.innerHTML = await TutorialStepLayout.call(
+		fixtures.context,
+		tutorialStepLayoutData,
+	);
 	// Make sure sidebar steps renders correctly
 	const link: HTMLAnchorElement = screen.getByRole("link", {
 		name: `Another Tutorial Step`,

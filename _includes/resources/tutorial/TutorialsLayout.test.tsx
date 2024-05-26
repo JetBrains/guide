@@ -4,7 +4,6 @@ import TutorialsLayout from "./TutorialsLayout.11ty";
 import { screen } from "@testing-library/dom";
 import fixtures, { baseRenderData } from "../../fixtures";
 import { ReferenceLayoutProps } from "../../layouts/ReferenceLayout.11y";
-import { renderToString } from "jsx-async-runtime";
 
 test("should render TutorialsLayout", async () => {
 	const tutorialsLayoutData: ReferenceLayoutProps = {
@@ -23,8 +22,10 @@ test("should render TutorialsLayout", async () => {
 	fixtures.context.getResource = () =>
 		fixtures.resourceMap.get(firstTutorialURL)!;
 	const tutorialsLayout = new TutorialsLayout();
-	const r = tutorialsLayout.render.call(fixtures.context, tutorialsLayoutData);
-	document.body.innerHTML = await renderToString(r, {});
+	document.body.innerHTML = await tutorialsLayout.render.call(
+		fixtures.context,
+		tutorialsLayoutData,
+	);
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: fixtures.tips[0].title,
 	});

@@ -9,6 +9,7 @@ import ArticleTopics from "../common/ArticleTopics.11ty";
 import { Author } from "../author/AuthorModels";
 import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
+import { renderToString } from "jsx-async-runtime";
 import path from "upath";
 
 export type PlaylistLayoutData = LayoutProps & PlaylistFrontmatter;
@@ -53,10 +54,10 @@ function relativize(originalUrl: string, content: string) {
 	return doc.toString();
 }
 
-export function PlaylistLayout(
+export async function PlaylistLayout(
 	this: LayoutContext,
-	data: PlaylistLayoutData
-): JSX.Element {
+	data: PlaylistLayoutData,
+): Promise<string> {
 	const { collections, content, page } = data;
 	const playlist = collections.resourceMap.get(page.url) as Playlist;
 	if (!playlist) {
@@ -70,6 +71,7 @@ export function PlaylistLayout(
 	if (!author) {
 		throw new Error(`Author "${playlist.author}" not in collection`);
 	}
+
 	const main = (
 		<Fragment>
 			<ArticleTitleSubtitle
@@ -142,7 +144,7 @@ export function PlaylistLayout(
 	);
 
 	// data-meta will be processed out
-	return (
+	return await renderToString(
 		<BaseLayout subtitle={playlist.subtitle} {...data}>
 			<div class="section">
 				<div class="container">
@@ -154,7 +156,7 @@ export function PlaylistLayout(
 					</div>
 				</div>
 			</div>
-		</BaseLayout>
+		</BaseLayout>,
 	);
 }
 

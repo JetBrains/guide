@@ -21,7 +21,7 @@ test("should render GoLandHomepage", async () => {
 
 	const homepage = new GoLandHomepage();
 	const r = homepage.render.call(context, pageLayoutData);
-	document.body.innerHTML = await renderToString(r, {});
+	document.body.innerHTML = await renderToString(r);
 	const subnavTitle: HTMLAnchorElement = screen.getByRole("link", {
 		name: "Channel",
 	});

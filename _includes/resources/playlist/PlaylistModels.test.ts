@@ -28,7 +28,7 @@ test("resolves the resources in a playlist", () => {
 	const playlistItem0 = fixtures.playlistItems[0];
 	const tipItem0 = fixtures.tipItems[0];
 	const playlist = fixtures.resourceMap.get(playlistItem0.page.url) as Playlist;
-	expect(playlist.references?.author).to.exist;
-	expect(playlist.playlistResources[0]).to.exist;
+	expect(playlist.references?.author).toBeTruthy();
+	expect(playlist.playlistResources[0]).toBeTruthy();
 	expect(playlist.playlistResources[0].title).to.equal(tipItem0.data.title);
 });
