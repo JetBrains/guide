@@ -6,11 +6,11 @@ import { Heading } from "./Heading";
 test("render heading with default name", async () => {
 	const result = <Heading />;
 	document.body.innerHTML = await renderToString(result);
-	expect(screen.getByText("Hello TSX")).to.exist;
+	expect(screen.getByText("Hello TSX")).toBeTruthy();
 });
 
 test("render heading with custom name", async () => {
 	const result = <Heading name={`World`} />;
 	document.body.innerHTML = await renderToString(result);
-	expect(screen.getByText("Hello World")).to.exist;
+	expect(screen.getByText("Hello World")).toBeTruthy();
 });

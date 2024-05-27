@@ -1,5 +1,6 @@
 import { ReferenceLayoutProps } from "../_includes/layouts/ReferenceLayout.11y";
 import { LunrBase } from "../_includes/lunr.11ty";
+import { renderToString } from "jsx-async-runtime";
 
 export default class LunrHtml extends LunrBase {
 	data() {
@@ -10,11 +11,11 @@ export default class LunrHtml extends LunrBase {
 		};
 	}
 
-	render(data: ReferenceLayoutProps): JSX.Element {
+	async render(data: ReferenceLayoutProps): Promise<string> {
 		const { collections, commandLineArgs } = data;
 		const { pathprefix } = commandLineArgs;
 		const records = this.getRecords(collections, pathprefix);
-		return (
+		return await renderToString(
 			<div>
 				{records.map((record) => (
 					<div class="record">
@@ -41,7 +42,7 @@ export default class LunrHtml extends LunrBase {
 						/>
 					</div>
 				))}
-			</div>
+			</div>,
 		);
 	}
 }

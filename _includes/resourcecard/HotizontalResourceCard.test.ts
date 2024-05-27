@@ -9,7 +9,7 @@ test("HorizontalResourceCard", async () => {
 	const resource = fixtures.resources[0];
 
 	const r = HorizontalResourceCard({ resource });
-	document.body.innerHTML = await renderToString(r, {});
+	document.body.innerHTML = await renderToString(r);
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: "Resource",
 	});

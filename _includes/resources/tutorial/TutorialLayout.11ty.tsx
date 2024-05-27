@@ -7,13 +7,14 @@ import ArticleTopics from "../common/ArticleTopics.11ty";
 import HorizontalResourceCard from "../../resourcecard/HorizontalResourceCard.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 import { UserComments } from "../../userComments.11ty";
+import { renderToString } from "jsx-async-runtime";
 
 export type TutorialLayoutData = LayoutProps & TutorialFrontmatter;
 
-export function TutorialLayout(
+export async function TutorialLayout(
 	this: LayoutContext,
-	data: TutorialLayoutData
-): JSX.Element {
+	data: TutorialLayoutData,
+): Promise<string> {
 	const { collections, page, content } = data;
 	const tutorial = collections.resourceMap.get(page.url) as Tutorial;
 	const references = tutorial.references;
@@ -86,7 +87,7 @@ export function TutorialLayout(
 			{listing && <div class="columns is-multiline">{listing}</div>}
 		</Fragment>
 	);
-	return (
+	return await renderToString(
 		<BaseLayout {...data}>
 			<div class="section">
 				<div class="container">
@@ -100,7 +101,7 @@ export function TutorialLayout(
 					</div>
 				</div>
 			</div>
-		</BaseLayout>
+		</BaseLayout>,
 	);
 }
 

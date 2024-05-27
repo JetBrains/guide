@@ -10,8 +10,7 @@ const props: HeadingProps = {
 };
 
 test("Heading", async () => {
-	const r = Heading(props);
-	document.body.innerHTML = await renderToString(r, {});
-	expect(screen.getByText("title1")).to.exist;
-	expect(screen.getByText("subtitle1")).to.exist;
+	document.body.innerHTML = await renderToString(Heading(props));
+	expect(screen.getByText("title1")).toBeTruthy();
+	expect(screen.getByText("subtitle1")).toBeTruthy();
 });

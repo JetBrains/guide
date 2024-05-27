@@ -9,13 +9,14 @@ import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 import { UserComments } from "../../userComments.11ty";
+import { renderToString } from "jsx-async-runtime";
 
 export type TutorialStepLayoutData = LayoutProps & TutorialStepFrontmatter;
 
-export function TutorialStepLayout(
+export async function TutorialStepLayout(
 	this: LayoutContext,
-	data: TutorialStepLayoutData
-): JSX.Element {
+	data: TutorialStepLayoutData,
+): Promise<string> {
 	const { collections, content, page } = data;
 	const tutorialStep = collections.resourceMap.get(page.url) as TutorialStep;
 	const parent = tutorialStep.parentTutorial as Tutorial;
@@ -97,7 +98,7 @@ export function TutorialStepLayout(
 		);
 	}
 
-	return (
+	return await renderToString(
 		<BaseLayout subtitle={tutorialStep.subtitle} {...data}>
 			<div class="section">
 				<div class="container">
@@ -115,7 +116,7 @@ export function TutorialStepLayout(
 					</div>
 				</div>
 			</div>
-		</BaseLayout>
+		</BaseLayout>,
 	);
 }
 

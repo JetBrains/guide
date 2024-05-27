@@ -8,10 +8,11 @@ import {
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import {
-	TIP_RESOURCE,
 	LINK_RESOURCE,
+	TIP_RESOURCE,
 	TUTORIAL_RESOURCE,
 } from "../../src/resourceType";
+import { renderToString } from "jsx-async-runtime";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Django",
@@ -32,7 +33,10 @@ export default class DjangoHomepage {
 		};
 	}
 
-	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
+	async render(
+		this: LayoutContext,
+		data: ChannelHomepageData,
+	): Promise<string> {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
 		const tips = this.getResources({
@@ -56,7 +60,7 @@ export default class DjangoHomepage {
 			customFilter: (r) => r.topics?.includes("django") == true,
 		});
 
-		return (
+		return await renderToString(
 			<BaseLayout {...data}>
 				<HeroSection
 					title={channel.title}
@@ -95,7 +99,7 @@ export default class DjangoHomepage {
 						includeCardFooter={false}
 					/>
 				)}
-			</BaseLayout>
+			</BaseLayout>,
 		);
 	}
 }

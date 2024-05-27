@@ -11,24 +11,24 @@ beforeEach(async () => {
 			<NavbarSearch />
 		</Fragment>
 	);
-	document.body.innerHTML = await renderToString(r, {});
+	document.body.innerHTML = await renderToString(r);
 });
 
 test("NavbarSearch exists", () => {
 	const result = screen.getByRole("button", { name: "Trigger Searchbox" });
-	expect(result).to.exist;
+	expect(result).toBeTruthy();
 });
 
 test("searchbox and results should not be visible by default", () => {
 	const searchbox = screen.getByRole("searchbox", { name: "Search" });
-	expect(searchbox).to.exist;
+	expect(searchbox).toBeTruthy();
 });
 
 test("clicking search button activates searchbox", () => {
 	const button = screen.getByRole("button", { name: "Trigger Searchbox" });
 	const dropdown: HTMLCollectionOf<Element> =
 		document.getElementsByClassName("dropdown");
-	expect(dropdown).to.exist;
+	expect(dropdown).toBeTruthy();
 	expect(dropdown[0].classList.contains("is-active")).not.to.be.true;
 	button.click();
 	expect(dropdown[0].classList.contains("is-active")).not.to.be.true;

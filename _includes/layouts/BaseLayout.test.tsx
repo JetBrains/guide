@@ -14,8 +14,8 @@ test("BaseLayout for Tip", async () => {
 		children: [],
 	};
 	const r = BaseLayout.call(fixtures.context, renderProps);
-	document.body.innerHTML = await renderToString(r, {});
-	expect(document.body).to.exist;
+	document.body.innerHTML = await renderToString(r);
+	expect(document.body).toBeTruthy();
 });
 test("BaseLayout for Channel", async () => {
 	const channelItem = fixtures.channelItems[0];
@@ -27,7 +27,7 @@ test("BaseLayout for Channel", async () => {
 	};
 
 	const r = BaseLayout.call(fixtures.context, pageLayoutData);
-	document.body.innerHTML = await renderToString(r, {});
+	document.body.innerHTML = await renderToString(r);
 	const subnavTitle: HTMLAnchorElement = screen.getByRole("link", {
 		name: "Channel",
 	});

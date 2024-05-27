@@ -4,6 +4,7 @@ import ListingSection from "../_includes/pageelements/ListingSection.11ty";
 import ResourceCard from "../_includes/resourcecard/ResourceCard.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 import { ResourceFrontmatter } from "../src/ResourceModels";
+import { renderToString } from "jsx-async-runtime";
 
 // Happy DOM throws a DOMException for external script/css even though
 // we do the settings to suppress it. Vite catches the exception but
@@ -78,7 +79,7 @@ export default class ExplorePage {
 		};
 	}
 
-	render(this: LayoutContext, data: ExplorePageProps): JSX.Element {
+	async render(this: LayoutContext, data: ExplorePageProps): Promise<string> {
 		const latestContent = this.getResources({
 			resourceTypes: ["tip", "tutorial", "playlist"],
 			limit: 12,
@@ -91,7 +92,7 @@ export default class ExplorePage {
 				columnClassName={"is-half-tablet is-one-third-desktop"}
 			/>
 		);
-		return (
+		return await renderToString(
 			<BaseLayout {...data}>
 				<div class="section">
 					<div class="container">
@@ -179,7 +180,7 @@ export default class ExplorePage {
 				) : (
 					<Fragment></Fragment>
 				)}
-			</BaseLayout>
+			</BaseLayout>,
 		);
 	}
 }

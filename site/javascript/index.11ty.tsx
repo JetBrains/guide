@@ -13,6 +13,7 @@ import {
 	TIP_RESOURCE,
 	TUTORIAL_RESOURCE,
 } from "../../src/resourceType";
+import { renderToString } from "jsx-async-runtime";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "JavaScript and TypeScript",
@@ -40,7 +41,10 @@ export default class WebStormHomepage {
 		};
 	}
 
-	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
+	async render(
+		this: LayoutContext,
+		data: ChannelHomepageData,
+	): Promise<string> {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 		const tips = this.getResources({
 			resourceTypes: [TIP_RESOURCE],
@@ -61,7 +65,7 @@ export default class WebStormHomepage {
 			limit: 4,
 		});
 
-		return (
+		return await renderToString(
 			<BaseLayout {...data}>
 				<HeroSection
 					title={channel.title}
@@ -93,7 +97,7 @@ export default class WebStormHomepage {
 						moreLink={`${channel.url}tutorials/`}
 					/>
 				)}
-			</BaseLayout>
+			</BaseLayout>,
 		);
 	}
 }

@@ -2,6 +2,7 @@ import { LayoutContext, LayoutProps } from "../src/models";
 import { PageFrontmatter } from "../_includes/resources/page/PageModels";
 import { BaseLayout } from "../_includes/layouts/BaseLayout.11ty";
 import ListingSection from "../_includes/pageelements/ListingSection.11ty";
+import { renderToString } from "jsx-async-runtime";
 
 type Http404PageProps = LayoutProps & PageFrontmatter;
 
@@ -16,10 +17,10 @@ export default class Http404Page {
 		};
 	}
 
-	render(this: LayoutContext, data: Http404PageProps) {
+	async render(this: LayoutContext, data: Http404PageProps) {
 		const latestContent = this.getResources({ limit: 12 });
 
-		return (
+		return await renderToString(
 			<BaseLayout {...data}>
 				<section class="section has-gradient-magenta">
 					<div class="container">
@@ -45,7 +46,7 @@ export default class Http404Page {
 					resources={latestContent}
 					moreLink="/latest/"
 				/>
-			</BaseLayout>
+			</BaseLayout>,
 		);
 	}
 }

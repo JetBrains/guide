@@ -7,7 +7,7 @@ import { Tutorial } from "./TutorialModels";
 import { renderToString } from "jsx-async-runtime";
 
 const parent = fixtures.resourceMap.get(
-	"/tutorials/some-tutorial/"
+	"/tutorials/some-tutorial/",
 ) as Tutorial;
 export const topNavProps: TopNavProps = {
 	parent,
@@ -16,14 +16,16 @@ export const topNavProps: TopNavProps = {
 
 test("TopNav", async () => {
 	const r = TopNav(topNavProps);
-	document.body.innerHTML = await renderToString(r, {});
+	document.body.innerHTML = await renderToString(r);
 
-	expect(screen.getAllByRole("link", { name: "Parent Tutorial" })).to.exist;
+	expect(screen.getAllByRole("link", { name: "Parent Tutorial" })).toBeTruthy();
 });
 test("BottomNav", async () => {
 	const r = BottomNav(topNavProps);
-	document.body.innerHTML = await renderToString(r, {});
+	document.body.innerHTML = await renderToString(r);
 
-	expect(screen.getByRole("link", { name: "Bottom Previous Step" })).to.exist;
-	expect(screen.getByRole("link", { name: "Bottom Next Step" })).to.exist;
+	expect(
+		screen.getByRole("link", { name: "Bottom Previous Step" }),
+	).toBeTruthy();
+	expect(screen.getByRole("link", { name: "Bottom Next Step" })).toBeTruthy();
 });

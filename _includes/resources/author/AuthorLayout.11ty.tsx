@@ -6,14 +6,15 @@ import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Author } from "./AuthorModels";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
+import { renderToString } from "jsx-async-runtime";
 
-export function AuthorLayout(
+export async function AuthorLayout(
 	this: LayoutContext,
-	data: ReferenceLayoutProps
-): JSX.Element {
+	data: ReferenceLayoutProps,
+): Promise<string> {
 	const { collections, content, page } = data;
 	const author = collections.resourceMap.get(
-		`author:${page.fileSlug}`
+		`author:${page.fileSlug}`,
 	) as Author;
 	if (!author) {
 		throw new Error(`Author "${page.fileSlug}" not in collection`);
@@ -21,7 +22,7 @@ export function AuthorLayout(
 
 	const linkedResources = this.getResources().filter(
 		// @ts-ignore
-		(ci) => ci.author === author.label
+		(ci) => ci.author === author.label,
 	);
 
 	const listing = (
@@ -33,7 +34,9 @@ export function AuthorLayout(
 		</Fragment>
 	);
 
-	return <ReferenceLayout {...data} listing={listing} content={content} />;
+	return await renderToString(
+		<ReferenceLayout {...data} listing={listing} content={content} />,
+	);
 }
 
 export const render = AuthorLayout;

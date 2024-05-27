@@ -21,7 +21,7 @@ test("should render IntelliJHomepage", async () => {
 
 	const homepage = new IntelliJHomepage();
 	const r = homepage.render.call(context, pageLayoutData);
-	document.body.innerHTML = await renderToString(r, {});
+	document.body.innerHTML = await renderToString(r);
 	const subnavTitle: HTMLAnchorElement = screen.getByRole("link", {
 		name: "Channel",
 	});

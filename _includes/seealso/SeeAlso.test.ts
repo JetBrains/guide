@@ -12,8 +12,7 @@ const props: SeeAlsoProps = {
 };
 
 test("SeeAlso", async () => {
-	const r = SeeAlso(props);
-	document.body.innerHTML = await renderToString(r, {});
+	document.body.innerHTML = await renderToString(SeeAlso(props));
 	const result = screen.getByRole("link", { name: "See Also 1" });
-	expect(result).to.exist;
+	expect(result).toBeTruthy();
 });

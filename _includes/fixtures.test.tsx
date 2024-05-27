@@ -32,8 +32,8 @@ test("should have resolved references", () => {
 	const { resourceMap } = fixtures;
 	const tip0 = resourceMap.get(tipItems[0].page.url);
 	if (tip0 && tip0.references) {
-		expect(tip0).to.exist;
-		expect(tip0.references).to.exist;
+		expect(tip0).toBeTruthy();
+		expect(tip0.references).toBeTruthy();
 		expect(tip0.references.author.title).to.equal(authorItems[0].data.title);
 		expect(tip0.references.topics[0].title).to.equal(topicItems[0].data.title);
 	}
@@ -44,8 +44,8 @@ test("resolve tutorial steps", () => {
 	const { resourceMap } = fixtures;
 
 	const tutorial0 = resourceMap.get(tutorialItems[0].page.url) as Tutorial;
-	expect(tutorial0).to.exist;
+	expect(tutorial0).toBeTruthy();
 	const tutorialStep0 = tutorial0.tutorialSteps[0];
-	expect(tutorialStep0).to.exist;
+	expect(tutorialStep0).toBeTruthy();
 	expect(tutorialStep0.title).to.equal(tutorialStepItems[0].data.title);
 });

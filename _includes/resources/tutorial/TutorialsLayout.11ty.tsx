@@ -6,6 +6,7 @@ import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Tutorial } from "./TutorialModels";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
+import { renderToString } from "jsx-async-runtime";
 
 export default class TutorialsLayout {
 	data() {
@@ -17,7 +18,10 @@ export default class TutorialsLayout {
 		};
 	}
 
-	render(this: LayoutContext, data: ReferenceLayoutProps): JSX.Element {
+	async render(
+		this: LayoutContext,
+		data: ReferenceLayoutProps,
+	): Promise<string> {
 		const { content, pagination } = data;
 		const paginationItems = pagination ? pagination.items : [];
 		const tutorials: Tutorial[] = paginationItems.map((t: any) => {
@@ -31,6 +35,8 @@ export default class TutorialsLayout {
 				})}
 			</Fragment>
 		);
-		return <ReferenceLayout {...data} listing={listing} content={content} />;
+		return await renderToString(
+			<ReferenceLayout {...data} listing={listing} content={content} />,
+		);
 	}
 }

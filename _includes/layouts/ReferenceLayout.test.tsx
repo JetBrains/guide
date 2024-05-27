@@ -15,12 +15,12 @@ let renderProps: ReferenceLayoutProps = {
 
 test("make a ReferenceLayout", async () => {
 	const r = <ReferenceLayout {...renderProps}></ReferenceLayout>;
-	document.body.innerHTML = await renderToString(r, {});
-	expect(screen.getByText("Some Title")).to.exist;
+	document.body.innerHTML = await renderToString(r);
+	expect(screen.getByText("Some Title")).toBeTruthy();
 });
 
 test("does not show empty pagination", async () => {
 	const r = <ReferenceLayout {...renderProps}></ReferenceLayout>;
-	document.body.innerHTML = await renderToString(r, {});
-	expect(screen.getByLabelText("Pagination")).to.exist;
+	document.body.innerHTML = await renderToString(r);
+	expect(screen.getByLabelText("Pagination")).toBeTruthy();
 });

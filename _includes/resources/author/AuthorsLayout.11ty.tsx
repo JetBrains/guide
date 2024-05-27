@@ -4,11 +4,12 @@ import {
 } from "../../layouts/ReferenceLayout.11y";
 import { Author } from "./AuthorModels";
 import { LayoutContext } from "../../../src/models";
+import { renderToString } from "jsx-async-runtime";
 
-export function AuthorsLayout(
+export async function AuthorsLayout(
 	this: LayoutContext,
-	data: ReferenceLayoutProps
-): JSX.Element {
+	data: ReferenceLayoutProps,
+): Promise<string> {
 	const { content } = data;
 	const authors = this.getResources({
 		resourceTypes: ["author"],
@@ -58,7 +59,9 @@ export function AuthorsLayout(
 		</section>
 	);
 
-	return <ReferenceLayout {...data} listing={listing} content={content} />;
+	return await renderToString(
+		<ReferenceLayout {...data} listing={listing} content={content} />,
+	);
 }
 
 export const render = AuthorsLayout;

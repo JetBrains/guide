@@ -12,10 +12,10 @@ test("resolve an array of child paths", () => {
 test("resolve parent/child tutorials and steps", () => {
 	const { tutorialItems } = fixtures;
 	const tutorial0 = fixtures.resourceMap.get(
-		tutorialItems[0].page.url
+		tutorialItems[0].page.url,
 	) as Tutorial;
-	expect(tutorial0).to.exist;
+	expect(tutorial0).toBeTruthy();
 	const tutorialStep0 = tutorial0.tutorialSteps[0];
-	expect(tutorialStep0).to.exist;
+	expect(tutorialStep0).toBeTruthy();
 	expect(tutorialStep0.parentTutorial == tutorial0).to.be.true;
 });

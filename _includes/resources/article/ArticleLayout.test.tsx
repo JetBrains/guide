@@ -12,7 +12,9 @@ test("should render ArticleLayout", async () => {
 		...tip0.data,
 		page: tip0.page,
 	};
-	const r = ArticleLayout.call(fixtures.context, renderProps);
-	document.body.innerHTML = await renderToString(r, {});
-	expect(screen.getByText(tip0.data.title)).to.exist;
+	document.body.innerHTML = await ArticleLayout.call(
+		fixtures.context,
+		renderProps,
+	);
+	expect(screen.getByText(tip0.data.title)).toBeTruthy();
 });

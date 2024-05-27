@@ -9,7 +9,6 @@ import { ChannelHomepageData } from "../_includes/resources/channel/ChannelModel
 // @ts-ignore
 import ExplorePage from "./explore.11ty";
 import { HTMLInputElement } from "happy-dom";
-import { renderToString } from "jsx-async-runtime";
 import { Resource } from "../src/ResourceModels";
 
 const lunrResources = fixtures.resources.map((resource) => {
@@ -50,8 +49,10 @@ describe("Faceted Browse", () => {
 
 	beforeEach(async () => {
 		explorePage = new ExplorePage();
-		const r = explorePage.render.call(context, pageLayoutData);
-		document.body.innerHTML = await renderToString(r, {});
+		document.body.innerHTML = await explorePage.render.call(
+			context,
+			pageLayoutData,
+		);
 		cardTemplate = document.getElementById("cardTemplate");
 		facetMenuNode = document.getElementById("facetMenu");
 		listingNode = document.getElementById("listing");
@@ -63,16 +64,16 @@ describe("Faceted Browse", () => {
 			listingNode,
 			lunrResources,
 			latestContent,
-			noResults
+			noResults,
 		);
 	});
 
 	test("construct view model", () => {
-		expect(evm.templateNode).to.exist;
-		expect(evm.facetMenuNode).to.exist;
-		expect(evm.listingNode).to.exist;
-		expect(evm.latestContent).to.exist;
-		expect(evm.noResults).to.exist;
+		expect(evm.templateNode).toBeTruthy();
+		expect(evm.facetMenuNode).toBeTruthy();
+		expect(evm.listingNode).toBeTruthy();
+		expect(evm.latestContent).toBeTruthy();
+		expect(evm.noResults).toBeTruthy();
 		expect(evm.lunrResources.length).to.equal(lunrResources.length);
 	});
 
@@ -138,8 +139,8 @@ describe("Faceted Browse", () => {
 	});
 
 	test("Test full explore template", () => {
-		expect(screen.getByTitle("Channels Group")).to.exist;
-		expect(screen.getByTitle("Resources Group")).to.exist;
+		expect(screen.getByTitle("Channels Group")).toBeTruthy();
+		expect(screen.getByTitle("Resources Group")).toBeTruthy();
 
 		cardTemplate = document.getElementById("cardTemplate");
 		facetMenuNode = document.getElementById("facetMenu");
@@ -148,7 +149,7 @@ describe("Faceted Browse", () => {
 			cardTemplate,
 			facetMenuNode,
 			listingNode,
-			lunrResources
+			lunrResources,
 		);
 
 		// Click something, see if it is selected
