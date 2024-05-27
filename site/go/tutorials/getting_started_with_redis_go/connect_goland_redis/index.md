@@ -6,7 +6,7 @@ topics:
   - go
   - databases
   - redis
-author: chrisberger
+author: cb
 subtitle: Streamlining GoLand and Redis Setup for Smooth Development
 thumbnail: ./thumbnail.png
 ---
@@ -59,7 +59,7 @@ Double-click each item to inspect its contents:
 
 ![Inspecting the data set](./images/8.png)
 
-#### Resetting the Data
+### Resetting the Data
 
 In case you inadvertently change the data so that one of the demos does not run successfully, you can reset the database contents by selecting the run configuration `RedisDemo: reset data`:
 

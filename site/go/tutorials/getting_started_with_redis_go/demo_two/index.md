@@ -6,7 +6,7 @@ topics:
   - go
   - databases
   - redis
-author: chrisberger
+author: cb
 subtitle: Efficient Data Handling - Redis Retrieval and Storage Capabilities
 thumbnail: ./thumbnail.png
 ---

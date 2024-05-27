@@ -4,7 +4,7 @@ subtitle: open source in-memory data store
 logo: ./redis.svg
 website: "https://redis.io/"
 topicType: technology
-author: chrisberger
+author: cb
 date: 2022-05-13
 ---
 

@@ -6,7 +6,7 @@ topics:
   - go
   - databases
   - redis
-author: chrisberger
+author: cb
 subtitle: Considerations and Next Steps
 thumbnail: ./thumbnail.png
 ---

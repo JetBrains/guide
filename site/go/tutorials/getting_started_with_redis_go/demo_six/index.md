@@ -6,7 +6,7 @@ topics:
   - go
   - databases
   - redis
-author: chrisberger
+author: cb
 subtitle: Simplifying Communication Between Applications
 thumbnail: ./thumbnail.png
 ---

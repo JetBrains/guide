@@ -6,7 +6,7 @@ topics:
   - go
   - databases
   - redis
-author: chrisberger
+author: cb
 subtitle: Redis Key Expiry - Maximizing Data Efficiency with Time-Based Management
 thumbnail: ./thumbnail.png
 ---

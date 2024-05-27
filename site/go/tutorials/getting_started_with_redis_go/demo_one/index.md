@@ -6,7 +6,7 @@ topics:
   - go
   - databases
   - redis
-author: chrisberger
+author: cb
 subtitle: Unlocking Key Concepts Through Six Interactive Demos
 thumbnail: ./thumbnail.png
 ---

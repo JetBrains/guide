@@ -6,7 +6,7 @@ topics:
   - go
   - databases
   - redis
-author: chrisberger
+author: cb
 subtitle: Using Redis Transactions for Data Integrity
 thumbnail: ./thumbnail.png
 ---
