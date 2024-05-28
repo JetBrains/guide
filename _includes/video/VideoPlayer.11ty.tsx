@@ -1,8 +1,14 @@
 export type VideoPlayerProps = {
 	source: string | { url: string; start: number; end: number };
+	width?: number;
+	height?: number;
 };
 
-const VideoPlayer = ({ source }: VideoPlayerProps): JSX.Element => {
+const VideoPlayer = ({
+	source,
+	width,
+	height,
+}: VideoPlayerProps): JSX.Element => {
 	const { url, start, end } =
 		typeof source === "string"
 			? { url: source, start: undefined, end: undefined }
@@ -11,6 +17,8 @@ const VideoPlayer = ({ source }: VideoPlayerProps): JSX.Element => {
 		return (
 			<video
 				class="video-player"
+				width={width}
+				height={height}
 				playsinline
 				controls
 				data-start={start}
