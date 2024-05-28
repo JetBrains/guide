@@ -20,25 +20,29 @@ export const ArticleFrontmatter = Type.Intersect([
 					file: Type.String({
 						description: "File name of the animated GIF, can be webm or gif",
 					}),
-					width: Type.Number({
-						description: "Width the animated GIF should be rendered",
-					}),
-					height: Type.Number({
-						description: "Height the animated GIF should be rendered",
-					}),
+					width: Type.Optional(
+						Type.Number({
+							description: "Width the animated GIF should be rendered",
+						}),
+					),
+					height: Type.Optional(
+						Type.Number({
+							description: "Height the animated GIF should be rendered",
+						}),
+					),
 				},
-				{ description: "Animated GIF to show in this tip" }
-			)
+				{ description: "Animated GIF to show in this tip" },
+			),
 		),
 		screenshot: Type.Optional(
 			Type.String({
 				description: "File name of a screenshot to show in this tip",
-			})
+			}),
 		),
 		seealso: Type.Optional(
 			Type.Any({
 				description: "Item(s) to show in the See Also section of this tip",
-			})
+			}),
 		),
 	}),
 ]);

@@ -16,10 +16,10 @@ const VideoPlayer = ({
 	if (url.endsWith(".webm")) {
 		let style = "";
 		if (width) {
-			style += `width: ${width}px;`;
+			style += `max-width: ${width}px;`;
 		}
 		if (height) {
-			style += `height: ${height}px;`;
+			style += `max-height: ${height}px;`;
 		}
 		return (
 			<div style={style}>
