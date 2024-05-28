@@ -20,12 +20,12 @@ export const ArticleFrontmatter = Type.Intersect([
 					file: Type.String({
 						description: "File name of the animated GIF, can be webm or gif",
 					}),
-					width: Type.Null(
+					width: Type.Optional(
 						Type.Number({
 							description: "Width the animated GIF should be rendered",
 						}),
 					),
-					height: Type.Null(
+					height: Type.Optional(
 						Type.Number({
 							description: "Height the animated GIF should be rendered",
 						}),
