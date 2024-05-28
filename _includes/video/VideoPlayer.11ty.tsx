@@ -14,18 +14,25 @@ const VideoPlayer = ({
 			? { url: source, start: undefined, end: undefined }
 			: { url: source.url, start: source.start, end: source.end };
 	if (url.endsWith(".webm")) {
+		let style = "";
+		if (width) {
+			style += `width: ${width}px;`;
+		}
+		if (height) {
+			style += `height: ${height}px;`;
+		}
 		return (
-			<video
-				class="video-player"
-				width={width}
-				height={height}
-				playsinline
-				controls
-				data-start={start}
-				data-end={end}
-			>
-				<source src={url} type="video/webm" />
-			</video>
+			<div style={style}>
+				<video
+					class="video-player"
+					playsinline
+					controls
+					data-start={start}
+					data-end={end}
+				>
+					<source src={url} type="video/webm" />
+				</video>
+			</div>
 		);
 	} else {
 		return (
