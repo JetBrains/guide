@@ -16,8 +16,6 @@ seealso:
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm
-  width: 600
-  height: 300
 ---
 
 Arrow functions? Yes, please! Press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to convert a function to an arrow function.

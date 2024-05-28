@@ -12,8 +12,6 @@ author: hs
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm
-  width: 600
-  height: 300
 ---
 
 You can use JetBrains AI Assistant to help you find problems in your code. Use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) on the code you want to find and fix problems in your code.
