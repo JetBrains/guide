@@ -9,6 +9,15 @@ export const UserComments = ({
 	pageUrl,
 	theme = "light",
 }: UserCommentsProps): JSX.Element => {
+	// Do not render comments when in local/development mode.
+	// See https://www.11ty.dev/docs/environment-vars/#eleventy-supplied for environment variables documentation.
+	if (
+		process.env.ELEVENTY_RUN_MODE == "serve" ||
+		process.env.ELEVENTY_RUN_MODE == "watch"
+	) {
+		return <></>;
+	}
+
 	const remark_config = `var remark_config = {
     host: "https://comments.blog.jetbrains.com",
     site_id: 'remark',
