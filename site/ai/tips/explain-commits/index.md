@@ -12,8 +12,6 @@ author: hs
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm
-  width: 600
-  height: 300
 ---
 
 You can use JetBrains AI Assistant to summarise one or more commits from the _Git_ (or other VCS) tool window. Open the tool window with <kbd>⌘9</kbd> (macOS) / <kbd>Alt+9</kbd> (Windows/Linux) and select one more commits that you would like to ask AI Assistant for help with.

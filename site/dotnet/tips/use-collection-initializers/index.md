@@ -13,12 +13,12 @@ subtitle: Update and initialize items in old collection declarations
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm
-  width: 1584
-  height: 1080
-leadin: >
-  Update older code that works with collections so that data is initialized
-  immediately rather than using more code than is necessary.
+  width: 792
+  height: 540
 ---
+
+Update older code that works with collections so that data is initialized
+immediately rather than using more code than is necessary.
 
 ## Initializing members of a collection or list
 

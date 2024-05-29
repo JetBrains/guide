@@ -13,8 +13,6 @@ subtitle: Introduce variables the way you like!
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm
-  width: 640
-  height: 360
 ---
 
 **May the source be with you!** 😎

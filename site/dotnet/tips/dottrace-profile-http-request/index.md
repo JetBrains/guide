@@ -14,8 +14,6 @@ subtitle: What happens when an HTTP request is made?
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm
-  width: 640
-  height: 360
 ---
 
 **Profiling meets event tracing!** 🤝

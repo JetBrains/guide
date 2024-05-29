@@ -11,8 +11,6 @@ subtitle: Detect common memory issues - automatically.
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm
-  width: 640
-  height: 360
 ---
 
 **Memory profiling on auto-pilot** 👩‍✈️

@@ -12,8 +12,6 @@ author: hs
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm
-  width: 600
-  height: 300
 ---
 
 Use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) on the code you want to use in your question to AI Assistant and select **AI Actions**. You will be presented with a list of prompts, such as:

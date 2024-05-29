@@ -12,8 +12,6 @@ author: hs
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm
-  width: 600
-  height: 300
 ---
 
 ## JetBrains AI Assistant prompts are context aware so they may differ depending on the type of project that you're working with. For example, in a Django project you might see additional prompts such as

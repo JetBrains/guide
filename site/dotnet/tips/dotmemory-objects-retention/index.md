@@ -11,8 +11,6 @@ subtitle: Inspect retention paths for an instance or a group of objects.
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm
-  width: 640
-  height: 360
 ---
 
 **Why is this object still in memory?** 👀

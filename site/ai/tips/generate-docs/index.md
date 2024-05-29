@@ -11,8 +11,6 @@ author: hs
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm
-  width: 600
-  height: 300
 ---
 
 Writing documentation is not everyone's idea of fun, but JetBrains AI Assistant has you covered. Use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and select **Write Documentation**.
