@@ -110,4 +110,4 @@ You can also inspect the changes directly in the database. In GoLand, click the 
 
 You can see the new team called "Grumblebum" in the list of set data, and if you double-click **`player:1`**, you can confirm that Sykios is now on team Grumblebum. You can check the other data in the same way to confirm the changes:
 
-![Inspecting the transaction results](https://i.imgur.com/mtKEoil.png)
+![Inspecting the transaction results](./images/1.png)
