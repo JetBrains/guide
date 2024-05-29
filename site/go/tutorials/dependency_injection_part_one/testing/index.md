@@ -13,7 +13,7 @@ One of the benefits of DI discussed earlier is enhanced testability. The followi
 
 Begin by creating a `main_test.go` file with `TestNewUser` and `TestUser_Get` functions, as shown below:
 
-![Create test file and functions](https://i.imgur.com/Io0iGFZ.png)
+![Create test file and functions](./images/1.png)
 
 Next, proceed to write the tests for both functions using the corresponding modularized components in the `main.go` file to get the actual values for comparison:
 
@@ -51,8 +51,8 @@ func TestUser_Get(t *testing.T) {
 
 Finally, in the GoLand terminal, execute the `go test` command to run the tests:
 
-![Test result](https://i.imgur.com/N3UbK1J.png)
+![Test result](./images/2.png)
 
 Alternatively, you can run the tests using the GoLand triangular interactive buttons at the starting line of the test function or file.
 
-![Test result](https://i.imgur.com/OuLtS1j.png)
+![Test result](./images/3.png)
