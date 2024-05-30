@@ -12,15 +12,15 @@ thumbnail: ./thumbnail.png
 
 Start your GoLand IDE. If it's a fresh installation, you'll be prompted with a welcome screen. Click the **Open** button:
 
-![GoLand welcome screen](https://i.imgur.com/Eu5Lf7e.png)
+![GoLand welcome screen](./images/1.png)
 
 In the file selector dialog that opens, navigate to the cloned repository indicated in the list of prerequisites, select the folder `mock-testing/fetchuser` (where the `fetchuser` subfolder represents the module and package name), and click **Open**:
 
-![Open dialog: fetchuser](https://i.imgur.com/U1A55gy.png)
+![Open dialog: fetchuser](./images/2.png)
 
 After opening the project, you'll see the file tree to the left. Click a file to see its contents. The file names have background colors to easily distinguish the file type, where test files have a green background and generated files have a gray background:
 
-![The project opened in GoLand](https://i.imgur.com/Maf8TYv.png)
+![The project opened in GoLand](./images/3.png)
 
 ### Making a Function "Mockable"
 
@@ -176,15 +176,15 @@ For convenience, the GoLand IDE has generated test profiles for each of the test
 
 Open the **Run Configuration** dropdown at the top of the GoLand window to see the available run configurations:
 
-![GoLand run configurations for testing](https://i.imgur.com/kYUttU6.png)
+![GoLand run configurations for testing](./images/4.png)
 
 Select the **TestProcessUser_Mockgen** configuration. You can now run selected tests or all tests in a test file by clicking either of the **Run** buttons in the gutter to the left of the editor window:
 
-![Run buttons](https://i.imgur.com/kiOlRQi.png)
+![Run buttons](./images/5.png)
 
 As a result, the Run window should show a successful test:
 
-```
+```shell
 === RUN   TestProcessUser_Mockgen
 --- PASS: TestProcessUser_Mockgen (0.00s)
 PASS

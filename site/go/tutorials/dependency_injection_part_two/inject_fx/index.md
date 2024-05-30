@@ -70,7 +70,7 @@ go get go.uber.org/fx@latest
 
 Upon execution, you can expect an output similar to the following screenshot:
 
-![Get Fx terminal result](https://i.imgur.com/pnZC4kH.png)
+![Get Fx terminal result](./images/1.png)
 
 Next, in the `main()` function, provide the dependencies to Fx and invoke the `Run` function:
 
@@ -88,15 +88,15 @@ func main() {
 
 Your `main.go` file should look something like this:
 
-![Fx main function dependency injection](https://i.imgur.com/GbW0bCl.png)
+![Fx main function dependency injection](./images/2.png)
 
 Executing the code with the built-in GoLand run feature should produce this result:
 
-![GoLand run result](https://i.imgur.com/5ssxHyK.png)
+![GoLand run result](./images/3.png)
 
 Alternatively, you can execute the `go run main.go` command from the GoLand terminal. You should get the following result:
 
-![GoLand terminal result](https://i.imgur.com/ZwExGbv.png)
+![GoLand terminal result](./images/4.png)
 
 ### Testing
 
@@ -136,4 +136,4 @@ func TestUser_Get(t *testing.T) {
 
 Finally, run the `go test` command or execute the test using the GoLand built-in run feature. The tests should be successful:
 
-![Fx test result](https://i.imgur.com/hbIRsyB.png)
+![Fx test result](./images/5.png)

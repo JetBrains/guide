@@ -15,9 +15,7 @@ seealso:
     href: "https://www.jetbrains.com/help/rider/Refactorings__Rename.html"
 thumbnail: ./thumbnail.png
 animatedGif:
-  file: ./tip.webm
-  width: 1584
-  height: 1080
+  file: ./tip.gif
 ---
 
 ## Rename refactoring

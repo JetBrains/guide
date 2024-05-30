@@ -24,11 +24,11 @@ To complete this tutorial, you'll need the following:
 
 Launch your GoLand IDE and initiate a new Go project. Specify your desired project name and location on your device:
 
-![Creating a Go application](https://i.imgur.com/ZRJBFmI.png)
+![Creating a Go application](./images/1.png)
 
 Create a `main.go` file within the project directory. This file will act as the central hub for your project's codebase:
 
-![Sample of a newly created main.go file](https://i.imgur.com/nltyqse.png)
+![Sample of a newly created main.go file](./images/2.png)
 
 ### Creating a Command
 
@@ -62,7 +62,7 @@ func Execute() {
 }
 ```
 
-![Contents of the root.go file](https://i.imgur.com/zVDCeMC.png)
+![Contents of the root.go file](./images/3.png)
 
 Here, `cobra.Command` is used to define a new command with several properties:
 
@@ -75,7 +75,7 @@ The `Execute()` function handles the execution of the root command and handles p
 
 Having created the root command `rootCmd`, which is the main entry point and the root of your command tree, you may encounter a few errors associated with the `cobra` package. To address these issues, simply position your cursor over the `import` statement for Cobra and click the bulb icon that appears. Select the **Sync dependencies** option to trigger the GoLand IDE to automatically acquire and set up the Cobra package:
 
-![GoLand sync dependencies on Cobra package](https://i.imgur.com/hGflmLI.png)
+![GoLand sync dependencies on Cobra package](./images/4.png)
 
 Alternatively, you can execute the following command in your GoLand terminal to install Cobra:
 
@@ -85,7 +85,7 @@ go get -u github.com/spf13/cobra@latest
 
 The following result should print to your console, showing the successful installation of the `cobra` package:
 
-![Terminal result for Cobra package installation](https://i.imgur.com/1XKlV19.png)
+![Terminal result for Cobra package installation](./images/5.png)
 
 You can now utilize the root command's `Execute()` function in your `main.go` file:
 
@@ -99,11 +99,11 @@ func main() {
 }
 ```
 
-![Contents of main.go file](https://i.imgur.com/GYJufih.png)
+![Contents of main.go file](./images/6.png)
 
 At this stage, you can test out your command line application by running `go run main.go --help` in your GoLand terminal. You should get the following help result:
 
-![Zero help first run result](https://i.imgur.com/PjlDB4Q.png)
+![Zero help first run result](./images/7.png)
 
 ### Adding Subcommands
 
@@ -146,7 +146,7 @@ func Subtract(from string, subtract string) (result string) {
 }
 ```
 
-![Contents of zero.go file](https://i.imgur.com/67SFGOt.png)
+![Contents of zero.go file](./images/8.png)
 
 Next, you'll create the add and subtract commands to leverage these functional logics. Start by creating two new files in the `cmd` directory: `add.go` to hold the command for the addition operation and `subtract.go` to hold the command for subtraction.
 
@@ -176,7 +176,7 @@ func init() {
 }
 ```
 
-![Add command](https://i.imgur.com/NOwg8aU.png)
+![Add command](./images/9.png)
 
 You'll notice that two new properties are introduced in `cobra.Command` that were not used in the `rootCmd` definition:
 
@@ -211,7 +211,7 @@ func init() {
 }
 ```
 
-![Subtract command](https://i.imgur.com/wv2PtKb.png)
+![Subtract command](./images/10.png)
 
 The subtract command is also added as a subcommand to `rootCmd` in the `init()` function.
 
@@ -225,7 +225,7 @@ go run main.go sub 5.4 2d
 
 Observe the error printed to the terminal when `2d`, which is not a valid number, is passed as an argument to the command line application:
 
-![Add and subtract terminal results](https://i.imgur.com/cSzNcs8.png)
+![Add and subtract terminal results](./images/11.png)
 
 You've now created a command line application with both commands and subcommands.
 
@@ -282,10 +282,10 @@ func init() {
 }
 ```
 
-![Multiply command](https://i.imgur.com/EdCHlnW.png)
+![Multiply command](./images/12.png)
 
 In the `init()` function, `multiplyCmd.Flags().BoolVarP` adds a Boolean flag with the name `round` and the shorthand `r` to the multiply command. String flags can also be used as shown in the [Cobra documentation](https://github.com/spf13/cobra/blob/v1.7.0/user_guide.md#flag-groups).
 
 Next, execute the `go run main.go multiply 5.4 2 --round` command with the `round` flag in your GoLand terminal. Alternatively, you can also use the flag shorthand by running `go run main.go multiply 5.4 2 -r` . You should get the following result:
 
-![Multiplication terminal result](https://i.imgur.com/lFv4m2j.png)
+![Multiplication terminal result](./images/13.png)

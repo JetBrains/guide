@@ -24,11 +24,11 @@ To complete this section, you'll need the following:
 
 To get started, open the GoLand IDE and create a new Go project:
 
-![Create new project](https://i.imgur.com/3EqgJUW.png)
+![Create new project](./images/1.png)
 
 Specify your desired project name and location, and click the **Create** button to initiate the project creation process:
 
-![Enter project name and location](https://i.imgur.com/XC3bAI4.png)
+![Enter project name and location](./images/2.png)
 
 Next, create a `main.go` file where you can write and organize your code. This file will serve as the central location for your project's codebase.
 
@@ -74,7 +74,7 @@ You'll now proceed to inject the dependencies for each of these components using
 
 To begin, execute the `go get 'go.uber.org/dig@v1'` command from your GoLand terminal to add the Dig package to your application:
 
-![Add the Dig package](https://i.imgur.com/JMMAFr3.png)
+![Add the Dig package](./images/3.png)
 
 Once the Dig package is successfully installed, you can then inject the necessary dependencies into the Dig container. Dig intelligently resolves and supplies these dependencies to their respective components through the dynamic nature of reflection.
 
@@ -106,7 +106,7 @@ In the above code:
 
 Now, execute the `go run main.go` command in your GoLand terminal or click on the green arrow in the gutter. This command initiates the execution of the Go program and triggers the logic within the `main.go` file. If everything is set up correctly, you should see the following output printed to the console:
 
-```
+```shell
 Hello James - It's nice to meet you!
 ```
 

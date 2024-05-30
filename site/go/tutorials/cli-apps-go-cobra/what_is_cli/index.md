@@ -19,7 +19,7 @@ Commands are predefined text-based directives for users to convey instructions t
 
 Considering the input below, `zero` is the command, while `divide` represents the subcommand that streamlines the command to a particular action:
 
-```
+```shell
 zero divide 3 1.5
 ```
 
@@ -27,7 +27,7 @@ zero divide 3 1.5
 
 Arguments represent supplementary bits of information essential to the proper execution of the command. Notably, arguments encompass various data elements (such as file names and file paths) that serve to enrich the command's functionality and tailor it to specific tasks. Consider the terminal input below:
 
-```
+```shell
 zero divide 3 1.5
 ```
 
@@ -37,7 +37,7 @@ The numbers `3` and `1.5` represent arguments essential for proper execution of 
 
 Alternatively known as flags or switches, options are parameters that modify the behavior of a command during execution. Typically, options are indicated by preceding hyphens (`-`) or double hyphens (`--`) to distinguish them from other command elements. The command below shows a perfect example use case for options/flags:
 
-```
+```shell
 go run main.go multiply 5.4 2 -r
 ```
 
@@ -53,7 +53,7 @@ In CLI applications, environment variables serve as dynamic storage for preservi
 
 User inputs initiate actions or executions in CLIs. These inputs comprise a range of essential elements, including commands, subcommands, arguments, and options. Through these inputs, users effectively communicate their intentions to the command line interface, prompting the system to perform specific tasks or operations in response. The command below represents a user input containing a command, subcommand, arguments, and a flag/option:
 
-```
+```shell
 go run main.go multiply 5.4 2 -r
 ```
 

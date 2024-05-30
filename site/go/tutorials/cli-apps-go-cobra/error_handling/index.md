@@ -64,16 +64,16 @@ func init() {
 }
 ```
 
-![Divide command](https://i.imgur.com/Tar5SRF.png)
+![Divide command](./images/1.png)
 
 Here, the `RunE` property of `cobra.Command` is used to run the function and return any possible errors. You can now run the following command to test the Cobra error handling implementation:
 
-```go
+```shell
 go run main.go divide 5.6 2.3s -r
 ```
 
 An error should appear as a response in your GoLand terminal, alongside the appropriate usage methods, aliases, and flags for the command:
 
-![Divide error terminal result](https://i.imgur.com/zG6z1Rw.png)
+![Divide error terminal result](./images/2.png)
 
 So far, you've used the `go run` command to automatically compile the source code of your command line application and run the resulting executable. This is suitable for testing your application. However, if you are looking to distribute or deploy your application, you'll need to build your code into a [shareable binary executable](https://en.wikipedia.org/wiki/Executable).

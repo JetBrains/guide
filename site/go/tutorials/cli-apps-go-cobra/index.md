@@ -2,11 +2,11 @@
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2024-05-24
-title: How to Build Command Line Applications with Go and Cobra
+title: Build CLI Apps with Go and Cobra
 topics:
   - go
 author: iu
-subtitle: ""
+subtitle: Building Powerful and Efficient Command-Line Tools
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./what_is_cli/

@@ -12,8 +12,8 @@ seealso:
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm
-  width: 600
-  height: 300
+  width: 960
+  height: 540
 ---
 
 For HTML tags, you can press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and select **Remove tag** instead of removing an opening tag and then a closing tag.

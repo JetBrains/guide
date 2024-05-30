@@ -104,7 +104,7 @@ wire
 
 After the successful execution of the above command, the Wire framework generates a file named `wire_gen.go`. This file contains the mapping of dependencies, showcasing the relationship between different components and their associated dependencies. The structure and content of the `wire_gen.go` file will resemble the following example:
 
-![Wire command result](https://i.imgur.com/FCghTMC.png)
+![Wire command result](./images/1.png)
 
 Next, utilize the `Initialize()` function from the generated `wire_gen.go` file in the `main()` function of your `main.go` file:
 
@@ -115,13 +115,13 @@ func main() {
 }
 ```
 
-Finally, run the code with the GoLand run configuration by simply clicking the play icon at the left side of the `main()` function in your `main.go` file:
+Finally, run the code with the GoLand run configuration by simply clicking the play icon on the left side of the `main()` function in your `main.go` file:
 
-![Code run with GoLand configuration](https://i.imgur.com/8CYrNXl.png)
+![Code run with GoLand configuration](./images/2.png)
 
 Next, select the **Run 'go build <PROJECT NAME>'** option. Your result should be similar to the image below:
 
-![Code run result with GoLand configuration](https://i.imgur.com/TgO8ZgW.png)
+![Code run result with GoLand configuration](./images/3.png)
 
 Alternatively, you can run the `main()` function along with the generated code in the GoLand terminal using the following command:
 
@@ -131,7 +131,7 @@ go run main.go wire_gen.go
 
 The appropriate result should be printed in the terminal:
 
-![Code run result](https://i.imgur.com/Bc8N2wy.png)
+![Code run result](./images/4.png)
 
 ### Testing
 
@@ -171,4 +171,4 @@ func TestUser_Get(t *testing.T) {
 
 Now, execute the tests either through the built-in GoLand run feature or the terminal. Upon running the tests, the expected outcome should be a successful execution with all tests passing:
 
-![Test results](https://i.imgur.com/vhRcWZT.png)
+![Test results](./images/5.png)

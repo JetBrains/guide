@@ -21,9 +21,5 @@
 		"customTypes",
 		"tools/*.ts"
 	],
-	"exclude": [
-		"node_modules",
-		"site/**/demos/**",
-		"site/javascript/demos/tutorials/react_typescript_tdd/*/src/*.ts*"
-	]
+	"exclude": ["node_modules", "site/**/demos/**"]
 }

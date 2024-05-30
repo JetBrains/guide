@@ -14,11 +14,11 @@ As mentioned, all error handling in Go is based on the notion of errors as value
 
 In the Project pane, scroll down to the "External Libraries" section. Expand `Go SDK <installed version>`, then expand `builtin.go` (because `error` is a built-in type):
 
-![The error interface in builtin.go](https://i.imgur.com/qf8liG8.png)
+![The error interface in builtin.go](./images/1.png)
 
 If you cannot expand `builtin.go`, select the three-dot menu in the Project pane, then **Tree Appearance**, and ensure that **Show Members** is checked:
 
-![Enable Show Members in the GoLand project pane](https://i.imgur.com/p0QZoWn.png)
+![Enable Show Members in the GoLand project pane](./images/2.png)
 
 Scroll down until you see the `error` type below `builtin.go`, then click it. The file `builtin.go` opens in the editor area and shows the error type:
 
@@ -106,7 +106,7 @@ func isValidPath(p string) bool {
 
 If this function is called without any precaution, the app crashes instantly:
 
-```
+```shell
 panic: regexp: Compile(`(invalid regular expression`): error parsing regexp: missing closing ): `(invalid regular expression`
 
 goroutine 1 [running]:
@@ -226,7 +226,7 @@ log.Println("errors.Unwrap(err) = ", errors.Unwrap(err))
 
 This code snippet prints the following:
 
-```
+```shell
 Reading a single file: err =  open failed: open no/file: no such file or directory
 Reading a single file: errors.Unwrap(err) =  open no/file: no such file or directory
 ```
@@ -257,7 +257,7 @@ log.Println("err is fs.ErrNotExist:", errors.Is(err, fs.ErrNotExist))
 
 This prints:
 
-```
+```shell
 err is fs.ErrNotExist: true
 ```
 
@@ -269,7 +269,7 @@ To do this, use the function `func As(err error, target any) bool`. Like `Is()`,
 
 This requires defining a variable of type `fs.PathError` and passing a _pointer_ to that variable to `As()`:
 
-```
+```go
 target := &fs.PathError{}
 if errors.As(err, &target) {
     log.Printf("err as PathError: path is '%s'\n", target.Path)
@@ -279,7 +279,7 @@ if errors.As(err, &target) {
 
 This will log the path and the operation that failed:
 
-```
+```shell
 err as PathError: path is 'no/file'
 err as PathError: op is 'open'
 ```
@@ -332,7 +332,7 @@ log.Println("errors.Unwrap(err) = ", errors.Unwrap(err))
 
 The second log line prints:
 
-```
+```go
 errors.Unwrap(err) =  <nil>
 ```
 
@@ -349,7 +349,7 @@ if ok {
 
 This prints the full set of joined errors:
 
-```
+```shell
 Reading multiple files: e.Unwrap() =  [reading no/file/a failed: open failed: open no/file/a: no such file or directory
 reading no/file/b failed: open failed: open no/file/b: no such file or directory reading no/file/c failed: open failed: open no/file/c: no such file or directory]
 ```
