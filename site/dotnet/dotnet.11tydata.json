@@ -1,8 +1,10 @@
 {
 	"channel": "/dotnet/",
 	"callToAction": {
-		"message": ".NET developers love <strong>JetBrains dotUltimate</strong> and we think you will too. Check it out! ",
+		"title": "Interested in .NET Development?",
+		"url": "https://jetbrains.com/dotnet/",
 		"action": "Learn More",
-		"url": "https://www.jetbrains.com/dotnet/"
+		"image": "/dotnet/technologies/csharp/csharp-logo.svg",
+		"message": ".NET developers love <strong>JetBrains dotUltimate</strong> and we think you will too. Check it out!"
 	}
 }

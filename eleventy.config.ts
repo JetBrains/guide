@@ -97,15 +97,15 @@ module.exports = function (eleventyConfig: any) {
 	// These are all relative to the input directory at the end
 	eleventyConfig.addPassthroughCopy(
 		"./!(_site)**/*.{gif,jpg,png,svg,jpeg,webm,webp}",
-		{ overwrite: true },
+		{ overwrite: true }
 	);
 	eleventyConfig.addPassthroughCopy(
 		{ "../../public/assets": "assets" },
-		{ overwrite: true },
+		{ overwrite: true }
 	);
 	eleventyConfig.addPassthroughCopy(
 		{ "../../public/obsoletes.json": "obsoletes.json" },
-		{ overwrite: true },
+		{ overwrite: true }
 	);
 	eleventyConfig.ignores.add("**/demos/**");
 
@@ -115,29 +115,6 @@ module.exports = function (eleventyConfig: any) {
 
 	eleventyConfig.addGlobalData("commandLineArgs", options);
 	eleventyConfig.addPlugin(pluginRss);
-
-	// short code
-	eleventyConfig.addShortcode("cta", async function (msgOverride: any) {
-		// @ts-ignore
-		const callToAction = this.ctx.environments.callToAction;
-		if (callToAction) {
-			let { message, action, url } = callToAction;
-			if (msgOverride) {
-				message = msgOverride;
-			}
-
-			return `<div class="message">
-				<div class="message-body has-text-left">									
-						<p>${message}</p>					
-						<p><a href="${url}" class="button is-info is-dark">${action}</a></p>										
-				</div>
-			</div>
-		`;
-		} else {
-			// @ts-ignore
-			console.log(`missing call to action in: ${this.page.inputPath}`);
-		}
-	});
 
 	return {
 		dir: {
