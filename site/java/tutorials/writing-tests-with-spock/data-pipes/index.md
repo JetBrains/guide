@@ -42,7 +42,7 @@ sides << [-1, 0, 1, 2]
 There are a couple of Groovy things to note here:
 
 - Firstly, Groovy supports [operator overloading](https://groovy-lang.org/operators.html#Operator-Overloading), so the left-shift operator (`<<`) here means "this is the pipeline of values to use in the test";
-- Secondly, Groovy has a [friendly syntax for creating lists of values](httphttps://docs.groovy-lang.org/latest/html/documentation/working-with-collections.html#_list_literals), which is to simply put the values between square brackets.
+- Secondly, Groovy has a [friendly syntax for creating lists of values](https://docs.groovy-lang.org/latest/html/documentation/working-with-collections.html#_list_literals), which is to simply put the values between square brackets.
 
 The `where` block says "run this test with each of the following values: a negative value, zero, one and two".
 

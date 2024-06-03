@@ -19,7 +19,7 @@ video:
 Congratulations! You have built a game scene for an Asteroids-inspired game, where a spaceship and asteroids are rendered on top of a starfield skybox. The asteroids float around in space, and with your spaceship you can fly around and shoot lasers at the asteroids. Well done!
 
 <video class="video-player" playsinline controls>
-    <source src="preview.webm" type="video/webm">
+    <source src="../preview.webm" type="video/webm">
 </video><br/>
 
 In terms of gameplay, there are many things you could add to the game:

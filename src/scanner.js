@@ -38,6 +38,8 @@ const siteChecker = new SiteChecker(
 			"irina.codes",
 			"namecheap.com",
 			"weave.works",
+			"blogs.oracle.com",
+			"websitesetup.org",
 		],
 		userAgent:
 			"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
@@ -54,7 +56,7 @@ const siteChecker = new SiteChecker(
 					![undefined, 200, 301, 308].includes(result.http.response.statusCode)
 				) {
 					console.log(
-						`${result.base.original}: ${result.http.response.statusCode} => ${result.url.original} ${result.brokenReason}`
+						`${result.base.original}: ${result.http.response.statusCode} => ${result.url.original} ${result.brokenReason}`,
 					);
 					console.log(`Broken link is in tag: '${result.html.tag}'`);
 					console.log(`${reasons[result.brokenReason]}`);
@@ -63,7 +65,7 @@ const siteChecker = new SiteChecker(
 				}
 			} else if (verbose) {
 				console.log(
-					`${result.base.original}: ${result.http.response.statusCode} => ${result.url.original}`
+					`${result.base.original}: ${result.http.response.statusCode} => ${result.url.original}`,
 				);
 				console.log();
 			}
@@ -75,7 +77,7 @@ const siteChecker = new SiteChecker(
 			timeout = setTimeout(finish, 60000);
 		},
 		end: finish,
-	}
+	},
 );
 
 // Use an undocumented handler to filter out links that are not external/inside the boundaries of the Guide
