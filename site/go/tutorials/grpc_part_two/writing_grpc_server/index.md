@@ -241,11 +241,11 @@ func main() {
 
 You won't write the gRPC clients until part three of this series, but you should take a moment to explore GoLand's database capabilities and make sure the queries are executing correctly. You may have observed that the SQL statements are underlined with squiggly yellow lines in the `GetTask` and `CreateTask` methods. That's because GoLand recognizes them as SQL statements but doesn't know the SQL dialect. Place the cursor on any statement, click the yellow bulb icon, and click the **Change dialect to…** link. In the new window, choose **PostgreSQL** in the **Project SQL Dialect** field and click **OK**. You'll now get PostgreSQL syntax highlighting and autocompletion throughout the file:
 
-![Choosing the SQL dialect](https://i.imgur.com/yRtY1mM.png)
+![Choosing the SQL dialect](./images/1.png)
 
 Put the cursor on the `insertStmt` SQL statement and click the yellow bulb icon. Choose **Run query in console** and choose the already opened database console from the list:
 
-![Choosing the run query option](https://i.imgur.com/BhWyzMw.png)
+![Choosing the run query option](./images/2.png)
 
 This will open a window asking you to put in the parameters for executing the query. Enter the following parameters in this order (with the quotes):
 
@@ -255,19 +255,19 @@ This will open a window asking you to put in the parameters for executing the qu
 4. `'2023-08-20T08:55:59Z'`
 5. `'2023-08-15T08:55:59Z'`
 
-![Executing the SQL query](https://i.imgur.com/1OW4zUS.png)
+![Executing the SQL query](./images/3.png)
 
 Then click **Execute**. The query will be executed, and the ID of the newly created record will be shown in the console:
 
-![Result of the query](https://i.imgur.com/xaOXju1.png)
+![Result of the query](./images/4.png)
 
 You can check the contents of the table by double-clicking the table name in the **Database** panel:
 
-![Choosing the database](https://i.imgur.com/ud4u6LC.png)
+![Choosing the database](./images/5.png)
 
 This will open the table in a new tab and display its contents. If the statement is executed correctly, you'll find the newly created task in the table:
 
-![The tasks table shows the newly created task](https://i.imgur.com/uo6Zm67.png)
+![The tasks table shows the newly created task](./images/6.png)
 
 With that, you've now completed part two of this series. This is the full code of `server.go`:
 
