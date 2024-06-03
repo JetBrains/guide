@@ -125,7 +125,7 @@ export default class JavaHomepage {
 					<ListingSection
 						title={`Latest tutorials`}
 						resources={tutorials}
-						moreLink={`${channel.url}playlists/`}
+						moreLink={`${channel.url}tutorials/`}
 					/>
 				)}
 				{playlists && (

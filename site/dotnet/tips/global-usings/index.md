@@ -16,7 +16,7 @@ seealso:
   - title: Global Usings – A Look at New Language Features in C# 10
     href: "https://blog.jetbrains.com/dotnet/2021/11/18/global-usings-in-csharp-10/"
   - title: Undo - Convert to Non-Global Using refactoring
-    href: "Convert to Non-Global Using refactoring"
+    href: "https://www.jetbrains.com/help/rider/Refactorings__Inline_Global_Using.html"
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm

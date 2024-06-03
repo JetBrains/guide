@@ -27,13 +27,13 @@ Adding a class, module, or plugin can be done from the **File \| New** menu, or 
 
 ### Remote Procedure Calls
 
-When analyzing your code, JetBrains Rider identifies [Unreal Engine remote procedure calls (RPCs)](https://docs.unrealengine.com/en-us/Gameplay/Networking/Actors/RPCs) by `Client`, `Server`, and `NetMulticast` specifiers in the `UFUNCTION` declaration statements.
+When analyzing your code, JetBrains Rider identifies [Unreal Engine remote procedure calls (RPCs)](https://dev.epicgames.com/documentation/en-us/unreal-engine/remote-procedure-calls-in-unreal-engine) by `Client`, `Server`, and `NetMulticast` specifiers in the `UFUNCTION` declaration statements.
 
 JetBrains Rider checks whether Unreal Engine RPCs have the corresponding required `_Validate` and `_Implementation` functions and will highlight the RPC if at least one of them is not found. You can press `Alt+Enter` on the highlighting to generate the missing implementation stubs.
 
 ### Unreal Engine naming convention
 
-When developing Unreal Engine projects, you are probably using [Unreal Engine coding standard](https://docs.unrealengine.com/en-us/Programming/Development/CodingStandard). Rider ensures that your Unreal Engine code is accurate with the help of specialized Unreal Engine inspections for missing or incorrectly set Unreal Engine reflection macros. The IDE also accommodates Unreal Engine naming conventions across all of its actions. Inconsistent Unreal Engine naming inspections detect names that don’t follow the rules and suggest quick-fixes for them.
+When developing Unreal Engine projects, you are probably using [Unreal Engine coding standard](https://dev.epicgames.com/documentation/en-us/unreal-engine/epic-cplusplus-coding-standard-for-unreal-engine). Rider ensures that your Unreal Engine code is accurate with the help of specialized Unreal Engine inspections for missing or incorrectly set Unreal Engine reflection macros. The IDE also accommodates Unreal Engine naming conventions across all of its actions. Inconsistent Unreal Engine naming inspections detect names that don’t follow the rules and suggest quick-fixes for them.
 
 ### See Also
 
