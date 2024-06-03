@@ -14,7 +14,7 @@ const VideoPlayer = ({
 			? { url: source, start: undefined, end: undefined }
 			: { url: source.url, start: source.start, end: source.end };
 	if (url.endsWith(".webm")) {
-		let style = "";
+		let style = "aspect-ratio:16/9;";
 		if (width) {
 			style += `max-width: ${width}px;`;
 		}
