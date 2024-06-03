@@ -5,7 +5,7 @@ title: "Generating Stubs for Reverse Proxy"
 topics:
   - go
 author: ab
-subtitle: ""
+subtitle: Relaying gRPC Requests - Using a Reverse Proxy for Interoperability
 thumbnail: ./thumbnail.png
 ---
 

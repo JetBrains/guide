@@ -5,7 +5,7 @@ title: "Conclusion"
 topics:
   - go
 author: ab
-subtitle: ""
+subtitle: Streaming Endpoints Ahead - Implementing Additional Functionality
 thumbnail: ./thumbnail.png
 ---
 

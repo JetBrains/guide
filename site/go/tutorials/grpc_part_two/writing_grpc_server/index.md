@@ -5,7 +5,7 @@ title: "Writing the gRPC Server"
 topics:
   - go
 author: ab
-subtitle: ""
+subtitle: Implementing the gRPC Server - Creating Tasks and Handling Errors
 thumbnail: ./thumbnail.png
 ---
 

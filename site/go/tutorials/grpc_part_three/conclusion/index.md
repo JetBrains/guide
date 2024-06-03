@@ -5,7 +5,7 @@ title: "Conclusion"
 topics:
   - go
 author: ab
-subtitle: ""
+subtitle: Connecting the Pieces - Finalizing the Client and Testing the App
 thumbnail: ./thumbnail.png
 ---
 

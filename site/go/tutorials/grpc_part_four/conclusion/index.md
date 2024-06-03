@@ -5,7 +5,7 @@ title: "Conclusion"
 topics:
   - go
 author: ab
-subtitle: ""
+subtitle: Wrapping Up with gRPC
 thumbnail: ./thumbnail.png
 ---
 

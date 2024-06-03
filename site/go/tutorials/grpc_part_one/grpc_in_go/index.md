@@ -5,7 +5,7 @@ title: "gRPC in Go: Let's Go"
 topics:
   - go
 author: ab
-subtitle: ""
+subtitle: Building a GRPC Application - Let's Get Started
 thumbnail: ./thumbnail.png
 ---
 

@@ -5,7 +5,7 @@ title: "Prerequisites"
 topics:
   - go
 author: ab
-subtitle: ""
+subtitle: Prepare Your Software for a Task Management App Build
 thumbnail: ./thumbnail.png
 ---
 
