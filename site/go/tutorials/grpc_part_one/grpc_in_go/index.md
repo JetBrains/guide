@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 
 Fire up GoLand and click **New Project**. Name the project `go-grpc-demo` and click **Create**:
 
-![Creating a new project in GoLand](https://i.imgur.com/SIytNZw.png)
+![Creating a new project in GoLand](./images/1.png)
 
 To generate Go code from Protobuf definitions, you'll need to install two plugins for `protoc`:
 
@@ -27,7 +27,7 @@ go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 ```
 
-![Installing the protoc plugins](https://i.imgur.com/3yx6apw.png)
+![Installing the protoc plugins](./images/2.png)
 
 To make sure the tools are correctly installed, run the following command, which should print the version of the installed `protoc-gen-go` binary:
 
@@ -41,7 +41,7 @@ Do the same for `protoc-gen-go-grpc`:
 protoc-gen-go-grpc --version
 ```
 
-![Output showing the installation of the plugins](https://i.imgur.com/DB61taO.png)
+![Output showing the installation of the plugins](./images/3.png)
 
 ### Writing the Protobuf Definitions
 
@@ -273,8 +273,8 @@ This will create two files, `tasks.pb.go` and `tasks_grpc.pb.go`, in the `src/go
 
 If you open `tasks.pb.go`, you'll see that GoLand shows errors because the dependencies are not installed:
 
-![The errors in tasks.pb.go](https://i.imgur.com/BfZb5nm.png)
+![The errors in tasks.pb.go](./images/4.png)
 
 Thanks to GoLand, installing dependencies is super easy. Hover over any red line and click **Sync dependencies of go-grpc-demo** or press **Alt+Shift+Enter (⌥+⇧+↩)** . Once the dependencies are downloaded, the lines will turn green:
 
-![Lines turn green after dependencies are downloaded](https://i.imgur.com/OI1J7O8.png)
+![Lines turn green after dependencies are downloaded](./images/5.png)

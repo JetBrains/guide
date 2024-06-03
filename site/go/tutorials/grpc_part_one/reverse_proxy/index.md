@@ -58,7 +58,7 @@ tasks.proto
 
 This will create a new `tasks.pb.gw.go` file in `src/go`. Open the file and download the dependencies, as shown before:
 
-![tasks.pb.gw.go file](https://i.imgur.com/9xkcyLl.png)
+![tasks.pb.gw.go file](./images/1.png)
 
 #### Generating an OpenAPI Definition
 
@@ -404,7 +404,7 @@ You may have noticed that the command to generate all these files has gotten lar
 
 Click the **Add Configuration** button. In the window that pops up, click the **+** button and select **Shell Script**:
 
-![Choosing the Shell Script option for the configuration](https://i.imgur.com/B0v4K5o.png)
+![Choosing the Shell Script option for the configuration](./images/2.png)
 
 In the new window, you need to define the shell script that will run as part of the configuration. Provide `Compile protobuf` as the name, then choose **Script text** and paste the following command in the **Script text** box:
 
@@ -412,7 +412,7 @@ In the new window, you need to define the shell script that will run as part of 
 protoc --go_out=./src/go --go_opt=paths=source_relative --go-grpc_out=./src/go/ --go-grpc_opt=paths=source_relative --grpc-gateway_out=./src/go --grpc-gateway_opt=logtostderr=true,paths=source_relative,grpc_api_configuration=tasks_http_annotations.yaml --openapiv2_out=./src/openapi --openapiv2_opt=logtostderr=true,grpc_api_configuration=tasks_http_annotations.yaml,openapi_configuration=tasks_openapi_options.yaml tasks.proto
 ```
 
-![The configuration window](https://i.imgur.com/hzeQo1f.png)
+![The configuration window](./images/3.png)
 
 Click **OK** and save the configuration. You can now test whether this was set up correctly or not. Delete the files in the `src/go` and `src/openapi` directories. Then, run the **Compile protobuf** configuration from the top of the window. This should recreate the four files once again!
 
@@ -424,7 +424,7 @@ Back in the **Run/Debug Configurations** window, click the little icon in the **
 
 Next, add a new environment variable with the name `PATH` and the value `<YOUR_GOBIN_VALUE_HERE>:<YOUR_PATH_VALUE_HERE>`. Replace `YOUR_GOBIN_VALUE_HERE` with the output of the `echo $GOBIN` command and `YOUR_PATH_VALUE_HERE` with the value of the `PATH` variable:
 
-![The PATH variable is added to the list of environment variables](https://i.imgur.com/f8CELsJ.png)
+![The PATH variable is added to the list of environment variables](./images/4.png)
 
 ### Writing the Reverse Proxy Entry Point
 
