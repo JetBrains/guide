@@ -122,7 +122,7 @@ Let's build the **Top** wall. Add an **Area2D** and **CollisionShape2D** with a 
 
 ![Rectangle expanded in inspector](../assets/image40.png)
 
-Now group the **Top** node and its children and set its position to `(x:640px, y:-25px)`. Next, do the same for the **Bottom**. The only difference will be **Bottom**'s position of `(x:64px, y:755px)`.
+Now group the **Top** node and its children and set its position to `(x:640px, y:-25px)`. Next, do the same for the **Bottom**. The only difference will be **Bottom**'s position of `(x:640px, y:745px)`.
 
 Let's also do Left and Right--the same process but with different settings.
 

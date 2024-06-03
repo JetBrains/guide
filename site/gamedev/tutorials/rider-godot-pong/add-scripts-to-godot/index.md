@@ -440,7 +440,7 @@ All nodes have access to the **Scene Tree** using the `GetTree` method. It’s a
 
 With the script attached to our **Pause Screen** node, we can pause and unpause the game by hitting the “escape” key.
 
-![paused game with pause text](../assets/image58.png)
+![paused game with pause text](../assets/image54.png)
 
 You’ll notice the **Pause Screen** animation is the only thing that still processes when the game is paused. All other nodes are paused, including the audio elements.
 
