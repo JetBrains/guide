@@ -37,16 +37,31 @@ if (searchButton) {
     // Select item with down/up key
     if (searchDropdown.classList.contains("is-active") && searchResults) {
       var resultElements = searchResults.getElementsByTagName("a");
-      if (e.keyCode === 40 && resultElements.length > 0) { // down
+      if (e.keyCode === 40 && resultElements.length > 0 && focusedResultIndex < resultElements.length - 1) { // down
         resultElements[++focusedResultIndex].focus();
-      }
-      else if (e.keyCode === 38 && resultElements.length > 0) { // up
-        if (focusedResultIndex === 0) {
+        resultElements[focusedResultIndex].classList.add('has-background-info-light');
+        if (focusedResultIndex > 0) {
+          resultElements[focusedResultIndex - 1].classList.remove('has-background-info-light');
+        }
+      } else if (e.keyCode === 38 && resultElements.length > 0) { // up
+        if (focusedResultIndex <= 0) {
+          resultElements[0].classList.remove('has-background-info-light');
+          searchResults.getElementsByTagName("div")[0].scrollIntoView();
+
           searchInput.focus();
           searchInput.select();
           focusedResultIndex = -1;
+
+          // move caret to end
+          if (searchInput.setSelectionRange) {
+            setTimeout(() => searchInput.setSelectionRange(searchInput.value.length, searchInput.value.length), 50);
+          }
         } else {
           resultElements[--focusedResultIndex].focus();
+          resultElements[focusedResultIndex].classList.add('has-background-info-light');
+          if (focusedResultIndex < resultElements.length - 1) {
+            resultElements[focusedResultIndex + 1].classList.remove('has-background-info-light');
+          }
         }
       }
     }
@@ -86,9 +101,11 @@ if (searchButton) {
 if (searchInput) {
   searchInput.addEventListener("keyup", (evt) => {
     let query = searchInput.value;
-    let results = findSearchResults(query);
     searchResults.innerHTML = "";
-    searchResults.innerHTML = results;
+
+    if (query !== '') {
+      searchResults.innerHTML = findSearchResults(query);
+    }
   });
 }
 
