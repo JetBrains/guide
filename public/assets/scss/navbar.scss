@@ -37,6 +37,11 @@
   #search-menu {
     min-width: 90vw;
   }
+
+  #search-results {
+    max-height: 75vh;
+    overflow-y: scroll;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -51,6 +56,11 @@
 
   #search-menu {
     min-width: 40rem;
+  }
+
+  #search-results {
+    max-height: 75vh;
+    overflow-y: scroll;
   }
 }
 

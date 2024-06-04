@@ -15,11 +15,49 @@ if (searchButton) {
     searchDropdown.classList.remove("is-active");
   });
 
+  let shiftKeyPressed = false;
+  let focusedResultIndex = -1;
+  document.addEventListener("keydown", async (e) => {
+    // Handle Escape
+    if (e.key === 'Escape' && searchDropdown) {
+      searchDropdown.classList.remove("is-active");
+    }
+
+    // Handle double-shift
+    if (e.key === 'Shift') {
+      if (shiftKeyPressed) {
+        searchButton.dispatchEvent(new CustomEvent('click'));
+        shiftKeyPressed = false;
+      } else {
+        shiftKeyPressed = true;
+        setTimeout(() => shiftKeyPressed = false, 400);
+      }
+    }
+
+    // Select item with down/up key
+    if (searchDropdown.classList.contains("is-active") && searchResults) {
+      var resultElements = searchResults.getElementsByTagName("a");
+      if (e.keyCode === 40 && resultElements.length > 0) { // down
+        resultElements[++focusedResultIndex].focus();
+      }
+      else if (e.keyCode === 38 && resultElements.length > 0) { // up
+        if (focusedResultIndex === 0) {
+          searchInput.focus();
+          searchInput.select();
+          focusedResultIndex = -1;
+        } else {
+          resultElements[--focusedResultIndex].focus();
+        }
+      }
+    }
+  });
+
   searchButton.addEventListener("click", async () => {
     if (searchDropdown) {
       searchDropdown.classList.toggle("is-active");
       if (searchDropdown.classList.contains("is-active")) {
         searchInput.focus();
+        focusedResultIndex = -1;
       }
     }
 
@@ -48,12 +86,6 @@ if (searchButton) {
 if (searchInput) {
   searchInput.addEventListener("keyup", (evt) => {
     let query = searchInput.value;
-
-    if (evt.key === "Escape") {
-      searchDropdown.classList.remove("is-active");
-      return;
-    }
-
     let results = findSearchResults(query);
     searchResults.innerHTML = "";
     searchResults.innerHTML = results;
@@ -61,7 +93,7 @@ if (searchInput) {
 }
 
 function findSearchResults(query) {
-  const limit = 10;
+  const limit = 250;
   let results = lunrIndex.search(query).map(function (result) {
     return documents.find(function (page) {
       return page.url === result.ref;
@@ -75,9 +107,7 @@ function findSearchResults(query) {
   const description =
     results.length === 0
       ? "<p>No results have been found</p>"
-      : `<p>Showing ${Math.min(limit, results.length)} of ${
-          results.length
-        } results</p>
+      : `<p>Showing ${Math.min(limit, results.length)} results</p>
     `;
 
   const list = results.slice(0, limit).map((result) => {
