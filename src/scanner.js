@@ -39,7 +39,9 @@ const siteChecker = new SiteChecker(
 			"namecheap.com",
 			"weave.works",
 			"blogs.oracle.com",
+			"dev.epicgames.com",
 			"websitesetup.org",
+			"blog.structed.me", // remove after 2024-08-31
 		],
 		userAgent:
 			"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
