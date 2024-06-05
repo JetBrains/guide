@@ -41,6 +41,10 @@
   #search-results {
     max-height: 75vh;
     overflow-y: scroll;
+
+    a:focus {
+      outline: none !important;
+    }
   }
 }
 
@@ -61,6 +65,10 @@
   #search-results {
     max-height: 75vh;
     overflow-y: scroll;
+
+    a:focus {
+      outline: none !important;
+    }
   }
 }
 

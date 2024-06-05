@@ -24,9 +24,10 @@ if (searchButton) {
     }
 
     // Handle double-shift
-    if (e.key === 'Shift') {
+    if (e.key === 'Shift' && !searchDropdown.classList.contains("is-active")) {
       if (shiftKeyPressed) {
         searchButton.dispatchEvent(new CustomEvent('click'));
+        searchButton.scrollIntoView();
         shiftKeyPressed = false;
       } else {
         shiftKeyPressed = true;
@@ -36,14 +37,15 @@ if (searchButton) {
 
     // Select item with down/up key
     if (searchDropdown.classList.contains("is-active") && searchResults) {
-      var resultElements = searchResults.getElementsByTagName("a");
+      const resultElements = searchResults.getElementsByTagName("a");
       if (e.keyCode === 40 && resultElements.length > 0 && focusedResultIndex < resultElements.length - 1) { // down
         resultElements[++focusedResultIndex].focus();
         resultElements[focusedResultIndex].classList.add('has-background-info-light');
         if (focusedResultIndex > 0) {
           resultElements[focusedResultIndex - 1].classList.remove('has-background-info-light');
         }
-      } else if (e.keyCode === 38 && resultElements.length > 0) { // up
+        e.preventDefault();
+      } else if (e.keyCode === 38 && resultElements.length > 0 && focusedResultIndex >= 0) { // up
         if (focusedResultIndex <= 0) {
           resultElements[0].classList.remove('has-background-info-light');
           searchResults.getElementsByTagName("div")[0].scrollIntoView();
@@ -63,6 +65,8 @@ if (searchButton) {
             resultElements[focusedResultIndex + 1].classList.remove('has-background-info-light');
           }
         }
+
+        e.preventDefault();
       }
     }
   });
