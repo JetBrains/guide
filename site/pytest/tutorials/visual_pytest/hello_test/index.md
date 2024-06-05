@@ -129,7 +129,7 @@ Let's change our first test to see if we can construct an instance:
 We aren't asserting anything about the instance.
 Simply: the import works, it's callable, and can be called.
 
-Remember that PyCharm can help you [generate the import of `Player` as you type](../../../tips/generate-imports-while-typing/).
+Remember that PyCharm can help you [generate the import of `Player` as you type](/python/tips/generate-imports-while-typing).
 You don't need to stop your flow, go to the top, and write the import.
 Instead, type `Pla` and hit <kbd>Ctrl+Space+Space</kbd> to autocomplete _and_ add the import line at the top, in the correctly-sorted location, combined with any existing import of the module.
 
