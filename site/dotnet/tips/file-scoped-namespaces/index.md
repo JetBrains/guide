@@ -57,10 +57,8 @@ It might be just one level of indentation and set of brackets, but it does leave
 
 ## File-scoped types
 
-Traditionally, the following [access modifiers](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers) were available for classes:
-
-`Public`, `Private`, `Internal`, `Protected`, `Protected Internal`, and `Private Protected`.
-These modifiers allowed or restricted scope of the types in many ways, but there was never a scope to cover types at only the file level.
+Traditionally, the following [access modifiers](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers) were available for classes: `public`, `private`, `internal`, `protected`, `protected internal`, and `private protected`.
+These modifiers allowed or restricted scope of the types in many ways, but there was never a scope to allow access to types at **only the file level**.
 In C# 10, the `file` modifier was added, giving you the ability to limit types in this manner.
 
 ## Refactor code to use file-scoped types
