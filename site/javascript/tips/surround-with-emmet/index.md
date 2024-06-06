@@ -1,10 +1,10 @@
 ---
-date: 2020-02-14
+date: 2024-05-05
 title: Surround with Emmet
 topics:
   - editing
   - emmet
-author: er
+author: dw
 subtitle: Quickly surround a selection with rich markup using the Emmet toolkit.
 seealso:
   - title: Wrap with Abbreviation on Emmet site
@@ -14,10 +14,7 @@ seealso:
   - title: Emmet Cheat Sheet
     href: "https://docs.emmet.io/cheat-sheet/"
 thumbnail: ./thumbnail.png
-animatedGif:
-  file: ./tip.webm
-  width: 600
-  height: 300
+video: ./tip.webm
 ---
 
 Press <kbd>⌘⌥J</kbd> (macOS) / <kbd>Ctrl+Alt+J</kbd> (Windows/Linux) and select _Emmet_ to surround a block of code with an Emmet template. This also allows you to wrap individual lines if you’re using \* in the abbreviation.
