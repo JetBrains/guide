@@ -1,10 +1,10 @@
 ---
-date: 2020-03-16
+date: 2024-05-05
 title: Create Reusable Code Snippets
 subtitle: Save time by reusing blocks of code with custom code snippets.
 topics:
   - editing
-author: er
+author: dw
 seealso:
   - title: Using and creating code snippets
     href: >-
@@ -12,10 +12,7 @@ seealso:
   - title: Live templates in WebStorm
     href: "https://www.jetbrains.com/help/webstorm/using-live-templates.html"
 thumbnail: ./thumbnail.png
-animatedGif:
-  file: ./tip.webm
-  width: 600
-  height: 300
+video: ./tip.webm
 ---
 
 How to quickly create a code snippet:
