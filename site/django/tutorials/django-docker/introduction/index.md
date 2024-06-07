@@ -1,10 +1,10 @@
 ---
 type: TutorialStep
-date: 2021-04-09
+date: 2024-06-07
 title: "The Leading Containerization Platform"
 topics:
+  - docker
   - django
-  - python
 author: mm
 subtitle: ""
 thumbnail: thumbnail.png
@@ -62,4 +62,4 @@ Overall, Docker streamlines the development and deployment processes, promotes c
 
 ## Installation
 
-For installation, follow the official [documentation](https://docs.docker.com/engine/install/)
+For installation, refer to the official [documentation](https://docs.docker.com/engine/install/) for detailed instructions.

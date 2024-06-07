@@ -1,12 +1,11 @@
 ---
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
-date: 2024-06-03
+date: 2024-06-07
 title: Step-by-Step Guide to Dockerizing Your Django Web Application
 topics:
-  - aws
+  - docker
   - django
-  - python
 author: mm
 subtitle: ""
 thumbnail: ./thumbnail.png

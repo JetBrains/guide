@@ -1,10 +1,10 @@
 ---
 type: TutorialStep
-date: 2021-04-09
+date: 2024-06-07
 title: "Running Docker through PyCharm"
 topics:
+  - docker
   - django
-  - python
 author: mm
 subtitle: ""
 thumbnail: thumbnail.png
