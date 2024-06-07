@@ -69,7 +69,7 @@ Update the `.env` file with postgres environment variables.
 
 ![step7](./images/28.png)
 
-Update the compose.yaml file with the postgres configuration.
+Update the `compose.yaml` file with the postgres configuration.
 
 ![step8](./images/29.png)
 
