@@ -6,7 +6,7 @@ topics:
   - docker
   - django
 author: mm
-subtitle: ""
+subtitle: Docker and Django - A Production-Ready Deployment Guide
 thumbnail: thumbnail.png
 ---
 

@@ -2,12 +2,12 @@
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2024-06-07
-title: Step-by-Step Guide to Dockerizing Your Django Web Application
+title: Docker and Django - A Match Made in Heaven
 topics:
   - docker
   - django
 author: mm
-subtitle: ""
+subtitle: Discover How Docker Can Simplify and Streamline Your Django Application Deployment
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

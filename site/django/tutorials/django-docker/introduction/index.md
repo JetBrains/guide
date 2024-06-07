@@ -6,7 +6,7 @@ topics:
   - docker
   - django
 author: mm
-subtitle: ""
+subtitle: Revolutionizing the Way We Build and Deploy Applications
 thumbnail: thumbnail.png
 ---
 

@@ -6,7 +6,7 @@ topics:
   - docker
   - django
 author: mm
-subtitle: ""
+subtitle: Quickening Your Development Pace
 thumbnail: thumbnail.png
 ---
 
