@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-06-07
-title: "Elevate to Production Standards"
+title: "Making your deployment production-ready"
 topics:
   - docker
   - django
 author: mm
-subtitle: Docker and Django - A Production-Ready Deployment Guide
+subtitle: Additional tools for your Django app production environment.
 thumbnail: thumbnail.png
 ---
 
