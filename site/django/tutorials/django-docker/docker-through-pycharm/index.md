@@ -58,6 +58,6 @@ You can now easily view live logs inside the container.
 
 ![step11](./images/20.png)
 
-The same goes for the compose.yaml
+The same goes for the `compose.yaml`.
 
 ![step12](./images/21.png)
