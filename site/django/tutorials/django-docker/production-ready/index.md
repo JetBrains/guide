@@ -73,7 +73,7 @@ Update the `compose.yaml` file with the postgres configuration.
 
 ![step8](./images/29.png)
 
-Also, make sure to add this line in your Dockerfile
+Also, make sure to add this line in your `Dockerfile`
 
 ```bash
 RUN apt-get update && apt-get install -y libpq-dev
