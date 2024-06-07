@@ -81,7 +81,7 @@ RUN apt-get update && apt-get install -y libpq-dev
 
 ![step9](./images/30.png)
 
-Once done, run the docker compose.
+Once done, run the `docker compose` command.
 
 ![step10](./images/31.png)
 
