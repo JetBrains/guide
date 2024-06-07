@@ -12,7 +12,7 @@ thumbnail: thumbnail.png
 
 Let’s start running the Docker application through PyCharm.
 
-Open the Dockerfile and Click on the Play icon → `New Run Configuration`
+Open the `Dockerfile` and click on the *Run* icon → `New Run Configuration`
 
 ![step1](./images/9.png)
 
