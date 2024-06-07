@@ -32,7 +32,8 @@ exclude:
     paths:
       - _includes
       - src/plugins/absolutePaths.ts
-      - "*.svg"
+      - site/tags/json/json.svg
+      - site/tags/groovy/groovy.svg
   - name: QodanaSanity
     paths:
       - deployment/helm/guide-charts
