@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
 date: 2024-06-07
-title: "The Leading Containerization Platform"
+title: "Introduction to Docker for Python and Django"
 topics:
   - docker
   - django
 author: mm
-subtitle: Revolutionizing the Way We Build and Deploy Applications
+subtitle: Using containers to build and deploy applications
 thumbnail: thumbnail.png
 ---
 
