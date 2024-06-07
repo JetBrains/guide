@@ -6,6 +6,7 @@ title: Docker and Django - A Match Made in Heaven
 topics:
   - docker
   - django
+  - containers
 author: mm
 subtitle: Discover How Docker Can Simplify and Streamline Your Django Application Deployment
 thumbnail: ./thumbnail.png
