@@ -6,7 +6,7 @@ topics:
   - docker
   - django
 author: mm
-subtitle: Quickening Your Development Pace
+subtitle: Build and run a Docker container from your IDE.
 thumbnail: thumbnail.png
 ---
 
