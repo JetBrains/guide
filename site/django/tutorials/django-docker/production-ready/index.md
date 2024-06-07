@@ -22,7 +22,7 @@ Open _Python Packages Tool → Window View | Tool Windows | Python Packages_ and
 
 ![step1](./images/gunicorn.png)
 
-Make sure to add gunicorn to requirements.txt
+Make sure to add `gunicorn` to `requirements.txt`.
 
 ## Environment Variables
 
