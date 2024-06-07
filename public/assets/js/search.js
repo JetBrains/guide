@@ -38,14 +38,14 @@ if (searchButton) {
     // Select item with down/up key
     if (searchDropdown.classList.contains("is-active") && searchResults) {
       const resultElements = searchResults.getElementsByTagName("a");
-      if (e.keyCode === 40 && resultElements.length > 0 && focusedResultIndex < resultElements.length - 1) { // down
+      if (e.key === 'ArrowDown' && resultElements.length > 0 && focusedResultIndex < resultElements.length - 1) { // down
         resultElements[++focusedResultIndex].focus();
         resultElements[focusedResultIndex].classList.add('has-background-info-light');
         if (focusedResultIndex > 0) {
           resultElements[focusedResultIndex - 1].classList.remove('has-background-info-light');
         }
         e.preventDefault();
-      } else if (e.keyCode === 38 && resultElements.length > 0 && focusedResultIndex >= 0) { // up
+      } else if (e.key === 'ArrowUp' && resultElements.length > 0 && focusedResultIndex >= 0) { // up
         if (focusedResultIndex <= 0) {
           resultElements[0].classList.remove('has-background-info-light');
           searchResults.getElementsByTagName("div")[0].scrollIntoView();
@@ -103,7 +103,7 @@ if (searchButton) {
 }
 
 if (searchInput) {
-  searchInput.addEventListener("keyup", (evt) => {
+  searchInput.addEventListener("keyup", () => {
     let query = searchInput.value;
     searchResults.innerHTML = "";
 
