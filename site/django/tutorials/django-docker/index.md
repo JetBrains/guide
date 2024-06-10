@@ -2,13 +2,13 @@
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2024-06-07
-title: Docker and Django - A Match Made in Heaven
+title: Boost your Development Speed with Docker and Django
 topics:
   - docker
   - django
   - containers
 author: mm
-subtitle: Discover How Docker Can Simplify and Streamline Your Django Application Deployment
+subtitle: Combining Django and Docker to simplify your development and deployment process.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/
@@ -17,8 +17,8 @@ tutorialItems:
   - ./production-ready/
 ---
 
-Embarking on the journey of dockerizing a Django web application can streamline your development and deployment processes significantly. This step-by-step guide is tailored to help both beginners and seasoned developers in encapsulating their Django projects within Docker containers. Whether you're looking to enhance your skills or seeking a more consistent deployment method, this guide will equip you with the knowledge to seamlessly integrate Docker into your Django workflow.
+In this tutorial, we will be exploring two of the most popular tools that are very helpful in your software development journey: Django, the most powerful and battle-tested web framework, and Docker, the powerful tool to orchestrate your applications. If you haven't heard about them, then it's likely you haven't been born yet.
 
-Starting our journey into integrating Django with Docker, let's dive in.
+Let's begin our journey of working together with Django and Docker.
 
 _Note: We'll be using PyCharm Professional Edition for all the steps in this tutorial._
