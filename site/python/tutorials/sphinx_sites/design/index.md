@@ -46,13 +46,13 @@ Before getting into the intricacies of injecting content, let's put in a nice lo
 
 I'm a big fan of the [Bulma CSS framework](https://bulma.io).
 It's like Bootstrap, but a bit lighter, though less popular.
-Let's add [the starter with CSS from CDN](https://bulma.io/documentation/overview/start/#starter-template) to make our site look better:
+Let's add [the starter with CSS from CDN](https://bulma.io/documentation/start/overview/#starter-template) to make our site look better:
 It's simplified (no SCSS customizing, no figure support) but it's fine for this tutorial.
 
 Add a file at `_templates/layout.html`:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8" />

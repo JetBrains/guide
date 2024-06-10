@@ -29,8 +29,7 @@ We need to wire up Vitest in a `vitest.config.js` file at the root:
 
 This overrides the same settings used by `tsx` for running Eleventy builds. Vitest uses `esbuild` (as does `tsx`) but
 for whatever reason, doesn't respect the `tsconfig.json` settings without help. Big shoutout
-to [Joaquín Sánchez](https://github.com/userquin) from Vite/Vitest fame
-for [figuring this out for me](https://github.com/privatenumber/tsx/discussions/453#discussioncomment-8194275).
+to [Joaquín Sánchez](https://github.com/userquin) from Vite/Vitest fame for helping solve the issues.
 
 Next, let's rewrite `index.11ty.tsx` to have a named-export component, which we then re-export for Eleventy's `render`
 protocol for templates. This is for convenience, so you don't have all of your components named `render`:
