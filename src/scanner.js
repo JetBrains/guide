@@ -39,6 +39,7 @@ const siteChecker = new SiteChecker(
 			"namecheap.com",
 			"weave.works",
 			"blogs.oracle.com",
+			"hub.docker.com",
 			"dev.epicgames.com",
 			"websitesetup.org",
 			"blog.structed.me", // remove after 2024-08-31
