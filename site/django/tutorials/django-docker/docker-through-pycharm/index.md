@@ -59,3 +59,5 @@ You can now easily view live logs inside the container.
 The same goes for the `compose.yaml`.
 
 ![step12](./images/21.png)
+
+Amazing! Well, that wasn't so tough to run Docker inside the IDE. Next up is planning for production and preparing your application.

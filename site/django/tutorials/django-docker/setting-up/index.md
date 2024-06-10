@@ -48,7 +48,7 @@ Do it through PyCharm, it’s easy!
 
 > **Note**: db.sqlite3 won’t be part of the production setup. Make sure to exclude it in the `.dockerignore` file.
 
-In this tutorial, [Docker Desktop](https://www.docker.com/products/docker-desktop/) on Mac is the primary platform used. However, Docker Desktop is also available for Linux and Windows.
+In this tutorial, we are using [Docker Desktop](https://www.docker.com/products/docker-desktop/) on Mac. However, it also has support for Linux and Windows.
 
 ![step5](./images/docker-desktop-hero-v2.png)
 
@@ -97,3 +97,5 @@ The `Dockerfile` and `compose.yaml` will appear significantly more streamlined t
 ### compose.yaml
 
 ![step11](./images/8.png)
+
+In the next section, we will be focusing on running the docker based application inside the IDE.

@@ -1,6 +1,6 @@
 ---
 title: Docker
-subtitle: platform that allows you to build, test, and deploy applications quickly
+subtitle: Build, test, and deploy applications quickly
 logo: ./thumbnail.png
 website: "https://www.docker.com/"
 topicType: technology
