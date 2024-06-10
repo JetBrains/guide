@@ -12,15 +12,13 @@ thumbnail: thumbnail.png
 
 Let’s start running the Docker application through PyCharm.
 
-Open the `Dockerfile` and click on the *Run* icon → `New Run Configuration`
+Open the `Dockerfile` and click on the _Run_ icon → `New Run Configuration`
 
 ![step1](./images/9.png)
 
-Click “Modify options”
-
 ![step2](./images/10.png)
 
-Enable BuildKit as you are using the **mount** option. BuildKit serves as an upgraded backend, designed to supersede the traditional builder. As the default builder in Docker Desktop and Docker Engine starting from version 23.0, BuildKit introduces new features and enhances the performance of your builds.
+Under **Modify options**, click **Enable BuildKit**. According to the official [documentation](https://docs.docker.com/build/buildkit/), BuildKit serves as an upgraded backend designed to supersede the traditional builder. As the default builder in Docker Desktop and Docker Engine starting from version 23.0, BuildKit introduces new features and enhances the performance of your builds.
 
 ![step2](./images/11.png)
 
