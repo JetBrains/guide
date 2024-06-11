@@ -34,7 +34,7 @@ Create a `.env` file and add the following information, make sure you don’t co
 
 ![step3](./images/23.png)
 
-Next, update the docker compose file and run it to check everything is working fine as expected.
+Next, update the Docker Compose file and run it to check everything is working fine as expected.
 
 ![step4](./images/24.png)
 
@@ -50,8 +50,8 @@ Before proceeding, make sure you have installed the `libpq` driver in your machi
 
 References:
 
-- [https://formulae.brew.sh/formula/libpq](https://formulae.brew.sh/formula/libpq)
-- [https://www.postgresql.org/docs/16/libpq.html](https://www.postgresql.org/docs/16/libpq.html)
+- [libpq - Homebrew](https://formulae.brew.sh/formula/libpq)
+- [libpq -- C Library](https://www.postgresql.org/docs/16/libpq.html)
 
 ```bash
 pip install psycopg2-binary

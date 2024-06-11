@@ -40,7 +40,7 @@ Additionally, execute the command below to create a `db.sqlite3` file, which we 
 python manage.py migrate
 ```
 
-Do it through PyCharm, it’s easy!
+There's an alternative approach to do it in PyCharm, which is rather straightforward.
 
 ![step3](./images/managepy.png)
 
@@ -88,7 +88,7 @@ Once done, press enter, and it’s going to generate the necessary files for you
 
 ![step9](./images/projectfiles.png)
 
-The `Dockerfile` and `compose.yaml` will appear significantly more streamlined than if they were typed manually. However, for beginners, it's advisable to simplify these files as they contain more information than necessary for initial stages.
+The `Dockerfile` and `compose.yaml` will appear significantly more verbose than if they were typed manually. However, for beginners, it's advisable to simplify these files as they contain more information than necessary for initial stages.
 
 ### Dockerfile
 
@@ -98,4 +98,4 @@ The `Dockerfile` and `compose.yaml` will appear significantly more streamlined t
 
 ![step11](./images/8.png)
 
-In the next section, we will be focusing on running the docker based application inside the IDE.
+In the next section, we will be focusing on running the Docker-based application from inside the IDE.

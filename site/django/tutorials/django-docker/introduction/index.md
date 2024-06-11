@@ -12,7 +12,7 @@ thumbnail: thumbnail.png
 
 ![docker-image](./images/01-primary-blue-docker-logo.png)
 
-Docker is a versatile platform that facilitates the development, distribution, and execution of applications. It allows you to decouple your applications from the underlying infrastructure, facilitating rapid software delivery. Docker empowers you to handle your infrastructure just like you do with your applications. Leveraging Docker's approaches for code distribution, testing, and deployment can markedly minimize the time gap between coding and putting it into production.
+Docker is a versatile containerization platform to help application development, distribution, and execution. It speeds delivery by letting you decouple your applications from the underlying infrastructure, which can then be treated like code. With Docker's code distribution, testing, and deployment, you can markedly minimize the time gap between development and production.
 
 Key Docker concepts include:
 
