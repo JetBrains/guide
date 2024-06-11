@@ -10,7 +10,7 @@ topics:
   - ai
 author: hs
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/YF06TSxM7z8"
+video: "https://www.youtube.com/embed/YF06TSxM7z8?rel=0"
 ---
 
 ## The Problem
