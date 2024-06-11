@@ -1,5 +1,5 @@
 ---
-date: 2024-02-12
+date: 2024-06-11
 title: Explain Code with AI Assistant
 subtitle: How AI Assistant can help you understand code
 seealso:
@@ -10,31 +10,33 @@ topics:
   - ai
 author: hs
 thumbnail: ./thumbnail.png
-animatedGif:
-  file: ./tip.webm
+video: "https://youtu.be/YF06TSxM7z8"
 ---
 
-Use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) on the code you want to use in your question to AI Assistant and select **AI Actions**. You will be presented with a list of prompts, such as:
+## The Problem
 
-- Explain Code
-- Suggest Refactoring
-- Find Problems
-- New Chat Using Selection
-- Write Documentation
-- Generate Unit Tests
-- Generate Code
-- Convert File to Another Language
+Who’s up for reading and understanding some code you’ve never seen before while simultaneously being under pressure to write new code for a shiny upcoming product feature? Anyone? I guess you could just stare at it for a bit, or you could run it and see what it does... but that doesn't always help.
 
-These prompts are context aware so may differ depending on your type of project. You can also click on the final link **Add Your Prompts** to add your own custom prompts with the $SELECTION variable, for example:
+## The Solution
 
-- Code at your caret
-- Project structure
-- Code language
-- VCS history
-- Local changes
-- & More
+Whether the code is new to you, or you need a refresher, [JetBrains AI Assistant](https://www.jetbrains.com/ai/) can help you to understand it faster.
 
-In addition, AI Assistant is context-aware so when you use one of these prompts, AI Assistant uses information from your project such as:
-`How can I improve the readability of $SELECTION`
+Choose the code you need to get to grips with, open the AI tool window and just ask - “What does this code do?”:
 
-In this example, we select **Explain Code** and AI Assistant generates text to help you to understand the code you enquired about.
+![what-does-code-do.png](what-does-code-do.png)
+
+JetBrains AI Assistant will then gather rich contextual information about your project and use it to get you the best possible answer it can:
+
+![what-does-code-do-answer.png](what-does-code-do-answer.png)
+
+Alternatively, perhaps you’re learning a new language and need a bit of guidance. Again, you can just select the code you need to get to grips with - or place your caret at the method and ask “What does this code do?” <pause>:
+
+![what-does-code-do-dn.png](what-does-code-do-dn.png)
+
+JetBrains AI Assistant will give you a response:
+
+![what-does-code-do-dn-answer.png](what-does-code-do-dn-answer.png)
+
+This works for any code such as Java, Python, C Sharp, Go, SQL, Regex and more. Try it out! JetBrains AI Assistant uses context from your project such as its structure, which files you have open, your language and version, and your VCS history to construct your query to get you the best result it can - in this case - what on earth does this code do!
+
+So next time you’re faced with new code, or you’re learning a new language, don’t sit there and struggle, ask JetBrains AI Assistant - “What does this code do?”
