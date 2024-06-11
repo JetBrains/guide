@@ -1,6 +1,6 @@
 ---
 date: 2024-06-11
-title: Creating and Understanding Commit Messages with AI Assistant
+title: Create and Understand Commit Messages with AI Assistant
 subtitle: How AI Assistant can both generate a commit message and help you understand prior commit messages
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Generate Commit Messages
