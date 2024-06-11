@@ -60,12 +60,23 @@ export const resourceClasses: Record<
 
 export async function registerIncludes(
 	{ eleventyConfig }: RegisterIncludesProps,
-	sitePath: string
+	sitePath: string,
 ) {
 	let resourceMap: ResourceMap;
 
 	eleventyConfig.addExtension(["11ty.jsx", "11ty.ts", "11ty.tsx"], {
 		key: "11ty.js",
+	});
+
+	// jsx doesn't let you add <!DOCTYPE html> as an element
+	// this hacks the rendering to force the content in at transform time
+	eleventyConfig.addTransform("doctype-jsx", function (content: any) {
+		// @ts-ignore
+		if ((this.page.outputPath || "").endsWith(".html")) {
+			return `<!DOCTYPE html>${content}`;
+		}
+		// If not an HTML output, return content as-is
+		return content;
 	});
 
 	let resources: Resource[];
@@ -81,29 +92,29 @@ export async function registerIncludes(
 				(acc, [key, resourceClass]: [string, any]) => {
 					return { ...acc, [key]: resourceClass.frontmatterSchema };
 				},
-				{}
+				{},
 			);
 			const schemasOutputPath = path.join(
 				"docs",
 				"schemas",
-				path.basename(sitePath)
+				path.basename(sitePath),
 			);
 			fs.mkdirSync(schemasOutputPath, { recursive: true });
 			await dumpSchemas(schemas, resourceMap, schemasOutputPath);
 
 			return resourceMap;
-		}
+		},
 	);
 
 	// Query helpers
 	eleventyConfig.addJavaScriptFunction(
 		"getResources",
 		(filter: QueryFilter): RESOURCE_MODELS_BY_TYPE | null =>
-			getResources(resources, filter)
+			getResources(resources, filter),
 	);
 	eleventyConfig.addJavaScriptFunction(
 		"getResource",
-		(url: string): Resource => getResource(resources, url)
+		(url: string): Resource => getResource(resources, url),
 	);
 
 	// centralize Markdown configuration
@@ -119,7 +130,7 @@ export async function registerIncludes(
 		"renderMarkdown",
 		(content: string): string => {
 			return md.render(content);
-		}
+		},
 	);
 	eleventyConfig.on("eleventy.before", async () => {
 		const highlighter = await getHighlighter({
@@ -130,7 +141,7 @@ export async function registerIncludes(
 			mdLib.set({
 				highlight: (code: string, lang: string) =>
 					highlighter.codeToHtml(code, { lang, theme: "Jetbrains Dark Theme" }),
-			})
+			}),
 		);
 	});
 
