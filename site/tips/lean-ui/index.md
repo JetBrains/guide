@@ -17,6 +17,8 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/idea/customize-actions-menus-and-toolbars.html#show-hide
 video: "https://youtu.be/Fk_DvYbxNgI"
+obsoletes:
+  - /python/tips/reduce-clutter/
 ---
 
 ## The Problem
