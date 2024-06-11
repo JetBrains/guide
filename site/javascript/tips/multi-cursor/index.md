@@ -23,5 +23,5 @@ Multi-cursor selection in WebStorm:
 
 - Select next occurrence of the current word or selection: <kbd>^G</kbd> (macOS) / <kbd>Alt+J</kbd> (Windows/Linux).
 - Select all occurrences: <kbd>⌘⌃G</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+J</kbd> (Windows/Linux).
-- To add or remove multiple carets, you can also press and hold the <kbd>⌘</kbd> (macOS) / <kbd>Alt</kbd> (Windows/Linux), then click to add a new caret. You can also make a multiple selection by holding <kbd>Shift+Alt<kbd> and dragging the caret.
+- To add or remove multiple carets, you can also press and hold the <kbd>⌘</kbd> (macOS) / <kbd>Alt</kbd> (Windows/Linux), then click to add a new caret. You can also make a multiple selection by holding <kbd>Shift+Alt</kbd> and dragging the caret.
 - To remove all the carets, press <kbd>␛</kbd> (macOS) / <kbd>Escape</kbd> (Windows/Linux).
