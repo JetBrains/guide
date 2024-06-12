@@ -20,6 +20,8 @@ Open the `Dockerfile` and click on the _Run_ icon → `New Run Configuration`
 
 Under **Modify options**, click **Enable BuildKit**. According to the official [documentation](https://docs.docker.com/build/buildkit/), BuildKit serves as an upgraded backend designed to supersede the traditional builder. As the default builder in Docker Desktop and Docker Engine starting from version 23.0, BuildKit introduces new features and enhances the performance of your builds.
 
+> **NOTE**: Make sure to run the latest version of Docker Desktop, as it comes pre-equipped with BuildKit.
+
 ![step2](./images/11.png)
 
 ![step3](./images/12.png)
@@ -38,7 +40,9 @@ Once you are done with the configuration, go ahead and apply the changes and cli
 
 ![step7](./images/16.png)
 
-It will take a few seconds to start the application.
+Starting the application may require a few seconds. The image displayed below is the _[Service tool window](https://www.jetbrains.com/help/pycharm/services-tool-window.html)_.
+
+The Services tool window helps you manage services such as run/debug configurations, database sessions, and Docker connections.
 
 ![step8](./images/17.png)
 
