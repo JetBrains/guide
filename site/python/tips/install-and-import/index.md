@@ -1,22 +1,26 @@
 ---
-date: 2018-12-04
-title: Install and import
+date: 2024-06-11
+title: Auto Install and Import Packages on the Fly
 topics:
+  - completion
   - python
-author: pwe
-subtitle: While typing a symbol, let PyCharm install it and generate the import.
-seealso:
-  - title: Creating and Optimizing Imports
-    href: >-
-      https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html
+author: hs
+subtitle: >-
+  Start typing a name in the editor. If the name references a class that has not been imported you can import it and add the import in one step.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/ulT1LSWFqqE"
+seealso:
+  - title: Install and import packages on the fly
+    href: "https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html#lkxe58_111"
+animatedGif:
+  file: ./tip.webm
 ---
 
-You're writing code and want to import a package, and want PyCharm to generate the import. But you haven't installed it yet. PyCharm can do both.
+## The Problem
 
-Type the name of the package and hit <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), then choose **Install and Import package**. PyCharm will do both: you'll see a notification during the installation,
-then the import will be generated in the right way, according to your project styles.
+Let's say you want to install and create the import statement for a new package you've just typed.
 
-Extra credit: if PyCharm sees that this new package isn't recorded in your package's `requirements.txt` or `Pipfile`, it will generate a warning which you can correct
-with -- again -- <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux).
+## The Solution
+
+Easy, invoke Context Actions <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), then choose **Install and Import package**.
+
+PyCharm will install the package and create the import according to your project styles.
