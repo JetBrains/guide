@@ -36,6 +36,8 @@ Create a `.env` file and add the following information, make sure you don’t co
 
 Next, update the Docker Compose file and run it to check everything is working fine as expected.
 
+On line 5, I included `dockerfile: Dockerfile`. This indicates the specific Dockerfile to build the image. In this scenario, it's titled "Dockerfile" and resides in the same directory. Although not mandatory, if you are using a different name for the Dockerfile, then you must specify it.
+
 ![step4](./images/24.png)
 
 Cool! Everything seems to be working fine, without any hiccups.
@@ -44,7 +46,17 @@ Cool! Everything seems to be working fine, without any hiccups.
 
 ## PostgreSQL
 
-Install psycopg2 binary. After installation make sure to update the `requirements.txt` file
+When considering setting something up in production, we undoubtedly prioritize employing a robust, battle-tested database. [Postgres](https://www.postgresql.org/) is unquestionably one of the most popular relational databases.
+
+If you are considering trying out Postgres on your local machine before moving ahead with Docker, then run the following command.
+
+I will show you how to do it with Docker shortly.
+
+First, install the [psycopg2](https://pypi.org/project/psycopg2/) binary. After installation make sure to update the `requirements.txt` file
+
+```bash
+pip install psycopg2-binary
+```
 
 Before proceeding, make sure you have installed the `libpq` driver in your machine.
 
@@ -52,10 +64,6 @@ References:
 
 - [libpq - Homebrew](https://formulae.brew.sh/formula/libpq)
 - [libpq -- C Library](https://www.postgresql.org/docs/16/libpq.html)
-
-```bash
-pip install psycopg2-binary
-```
 
 Next, navigate to the `DATABASES` section in `settings.py` and modify the configuration to receive data from environment variables.
 
@@ -73,17 +81,83 @@ Update the `compose.yaml` file with the postgres configuration.
 
 ![step8](./images/29.png)
 
+```dockerfile
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000
+    volumes:
+      - static_files:/app/staticfiles
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - django_docker_net
+  db:
+    image: postgres:16.1
+    restart: always
+    expose:
+      - 5432
+    healthcheck:
+      test: [ "CMD", "pg_isready" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    env_file:
+      - db.env
+    networks:
+      - django_docker_net
+  nginx:
+    image: nginx:1.25
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/custom-nginx.conf:/etc/nginx/conf.d/default.conf
+      - static_files:/app/staticfiles
+    depends_on:
+      - server
+    networks:
+      - django_docker_net
+
+networks:
+  django_docker_net:
+    driver: bridge
+
+volumes:
+    db-data:
+    static_files:
+
+
+```
+
 Also, make sure to add this line in your `Dockerfile`
 
 ```bash
 RUN apt-get update && apt-get install -y libpq-dev
 ```
 
+> **NOTE**: `libpq-dev` is Psycopg2 binary dependencies. These files are necessary for compiling and linking applications that use PostgreSQL.
+
 ![step9](./images/30.png)
 
-Once done, run the `docker compose` command.
+Once done, update [_Run Configuration_](https://www.jetbrains.com/help/pycharm/run-debug-configuration.html) for Docker Compose.
 
-![step10](./images/31.png)
+![step10](./images/docker-compose-1.png)
+
+![docker-compose-2](./images/docker-compose-2.png)
+
+We are making sure that the container should always build whenever we run through Docker Compose.
+
+![docker-compose-3](./images/docker-compose-3.png)
+
+Provide the path to the `compose.yaml` file and then go ahead and click **Apply** -> **Run**
+
+![docker-compose-4](./images/docker-compose-4.png)
 
 It will take a couple of minutes to initialize, and this is how the final output will look.
 
