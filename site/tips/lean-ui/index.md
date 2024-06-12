@@ -19,6 +19,7 @@ seealso:
 video: "https://youtu.be/Fk_DvYbxNgI"
 obsoletes:
   - /python/tips/reduce-clutter/
+  - /go/tips/reduce-clutter/
 ---
 
 ## The Problem
