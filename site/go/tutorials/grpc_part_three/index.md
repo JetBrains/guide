@@ -1,8 +1,8 @@
 ---
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
-date: 2024-05-27
-title: Building a gRPC API in Go - Part Four
+date: 2024-06-12
+title: Building a gRPC API in Go - Part Three
 topics:
   - go
 author: ab

@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-05-27
+date: 2024-06-12
 title: "gRPC in Go: Let's Go"
 topics:
   - go

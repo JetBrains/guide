@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-05-27
+date: 2024-06-12
 title: "Writing the gRPC Server"
 topics:
   - go
