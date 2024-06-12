@@ -145,6 +145,10 @@ RUN apt-get update && apt-get install -y libpq-dev
 
 ![step9](./images/30.png)
 
+Make sure to expose the gunicorn in `Dockerfile` so NGINX can proxy the request. We'll delve into NGINX shortly.
+
+![step-gunicorn-nginx](./images/38.png)
+
 Once done, update [_Run Configuration_](https://www.jetbrains.com/help/pycharm/run-debug-configuration.html) for Docker Compose.
 
 ![step10](./images/docker-compose-1.png)
@@ -192,10 +196,6 @@ Generate a file titled `custom-nginx.conf` within the `nginx` directory.
 This configuration sets up nginx to handle client requests by forwarding them to a Django application running on a different server (or container).
 
 ![step16](./images/37.png)
-
-Make sure to expose the gunicorn so NGINX can proxy the request.
-
-![step17](./images/38.png)
 
 However, it's important to note that only NGINX will be accessible externally, while the Django App and database server will remain private.
 
