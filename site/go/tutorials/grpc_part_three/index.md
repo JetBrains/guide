@@ -19,8 +19,6 @@ Welcome back to the fourth and final part of the "gRPC with Go" series. Before p
 
 In [part one](../grpc_part_one/), you wrote the Protobuf definitions and generated Go code stubs. You also wrote the reverse proxy for REST clients.
 
-In [part two](../grpc_part_two/), you connected your app to a PostgreSQL database and wrote the non-streaming endpoints of the gRPC server.
-
-In [part three](../grpc_part_three/), you wrote the streaming endpoints and finished the server.
+In [part two](../grpc_part_two/), you connected your app to a PostgreSQL database and wrote the non-streaming endpoints of the gRPC server, and you wrote the [streaming](../grpc_part_two/comments_table/) endpoints and completed the server.
 
 In this last installment, you'll write the gRPC client and test the whole app.
