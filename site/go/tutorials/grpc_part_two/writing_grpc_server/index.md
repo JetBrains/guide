@@ -400,3 +400,7 @@ func main() {
 ```
 
 You can find the code for what you've done so far in the `part2` branch of [this GitHub repo](https://github.com/heraldofsolace/go-grpc-demo/tree/part2).
+
+## Conclusion
+
+With part two finished, you're halfway through writing the server. You connected your server to a PostgreSQL database and implemented the two non-streaming endpoints. In the [next part](../../grpc_part_three/), you'll write the three streaming endpoints and finish the server.

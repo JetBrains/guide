@@ -590,3 +590,7 @@ func main() {
 ```
 
 The entire code so far can be found in the `part3` branch of [this GitHub repo](https://github.com/heraldofsolace/go-grpc-demo/tree/part3).
+
+## Conclusion
+
+With that, you've completed the server! Well done! Now, why not take a break? You might want to finish that cup of coffee before proceeding to the [final part](../../grpc_part_four/), where you'll write the client and test the whole app.

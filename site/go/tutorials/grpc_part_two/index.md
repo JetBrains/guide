@@ -11,7 +11,7 @@ thumbnail: ./thumbnail.png
 tutorialItems:
   - ./connect_db/
   - ./writing_grpc_server/
-  - ./conclusion/
+  - ./comments_table/
 ---
 
 Welcome to the second part of the "gRPC with Go" series. In [part one](../grpc_part_one/), you created the Protobuf definitions for the task management app, generated Go code stubs from the Protobuf definitions, and created a reverse proxy for REST clients.
