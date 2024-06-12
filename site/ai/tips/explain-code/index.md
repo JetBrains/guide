@@ -29,7 +29,7 @@ JetBrains AI Assistant will then gather rich contextual information about your p
 
 ![what-does-code-do-answer.png](what-does-code-do-answer.png)
 
-Alternatively, perhaps you’re learning a new language and need a bit of guidance. Again, you can just select the code you need to get to grips with - or place your caret at the method and ask “What does this code do?” <pause>:
+Alternatively, perhaps you’re learning a new language and need a bit of guidance. Again, you can just select the code you need to get to grips with - or place your caret at the method and ask “What does this code do?”:
 
 ![what-does-code-do-dn.png](what-does-code-do-dn.png)
 
