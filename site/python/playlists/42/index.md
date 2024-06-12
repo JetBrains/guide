@@ -29,7 +29,7 @@ playlistItems:
   - /python/tips/add-line-after-before/
   - /python/tips/make-extend-selection/
   - /python/tips/move-block/
-  - /python/tips/reformat-code/
+  - /tips/reformat-code-or-file/
   - /python/tips/optimize-imports/
   - /python/tips/generate-imports-while-typing/
   - /python/tips/install-and-import/

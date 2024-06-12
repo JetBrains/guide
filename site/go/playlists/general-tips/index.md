@@ -21,7 +21,7 @@ playlistItems:
   - /go/tips/add-line-after-before/
   - /go/tips/expanding-shrinking-selection/
   - /go/tips/move-block/
-  - /go/tips/reformat-code/
+  - /tips/reformat-code-or-file/
   - /go/tips/optimize-imports/
   - /go/tips/generate-imports-while-typing/
   - /go/tips/install-and-import/

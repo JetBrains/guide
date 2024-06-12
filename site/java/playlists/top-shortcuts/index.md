@@ -14,7 +14,7 @@ playlistItems:
   - /java/tips/smart-completion/
   - /java/tips/complete-statement/
   - /java/tips/f2/
-  - /java/tips/reformat-file/
+  - /tips/reformat-code-or-file/
   - /tips/jump-to-recent-files/
   - /java/tips/recent-files-locations/
   - /java/tips/run-anything/
