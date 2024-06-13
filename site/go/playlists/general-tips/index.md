@@ -36,7 +36,7 @@ playlistItems:
   - /go/tips/run-single-test/
   - /go/tips/auto-run-tests/
   - /go/tips/run-tests-with-coverage/
-  - /go/tips/create-project-from-github/
+  - /tips/clone-from-github/
   - /go/tips/put-project-under-vcs/
   - /tips/reword-commit-message/
   - /tips/undo-last-commit/
