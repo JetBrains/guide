@@ -46,7 +46,7 @@ playlistItems:
   - /python/tips/auto-run-tests/
   - /python/tips/spot-coverage-in-gutter/
   - /tips/local-history/
-  - /python/tips/create-project-from-github/
+  - /tips/clone-from-github/
   - /python/tips/put-project-under-vcs/
   - /tips/reword-commit-message/
   - /tips/undo-last-commit/
