@@ -135,7 +135,7 @@ volumes:
 
 ```
 
-Also, make sure to add this line in your `Dockerfile`
+Also, make sure to add this line in your `Dockerfile`.
 
 ```bash
 RUN apt-get update && apt-get install -y libpq-dev
@@ -159,7 +159,7 @@ We are making sure that the container should always build whenever we run throug
 
 ![docker-compose-3](./images/docker-compose-3.png)
 
-Provide the path to the `compose.yaml` file and then go ahead and click **Apply** -> **Run**
+Provide the path to the `compose.yaml` file and then go ahead and click **Apply** -> **Run**.
 
 ![docker-compose-4](./images/docker-compose-4.png)
 
@@ -183,7 +183,7 @@ Inside the terminal, we will be migrating the database files.
 
 We will utilize NGINX as a reverse proxy in conjunction with Gunicorn to manage client requests and handle static files.
 
-We are going to add nginx section in compose.yaml
+We are going to add nginx section in `compose.yaml`.
 
 ![step15](./images/36.png)
 
@@ -225,7 +225,7 @@ Unexpectedly, while the page is loading correctly, it seems that UI elements suc
 
 ![step24](./images/45.png)
 
-The rationale for using NGINX alongside Gunicorn is that Gunicorn, being an application server, does not serve static files. Therefore, for managing both static or media files, NGINX is employed due to its proficiency in handling such content.
+The rationale for using NGINX alongside Gunicorn is that Gunicorn, being an application server, should not serve static files. Therefore, for managing both static or media files, NGINX is employed due to its proficiency in handling such content.
 
 ## Static Files
 
