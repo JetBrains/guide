@@ -52,9 +52,15 @@ function ListingSection({
 	const container = (
 		<div class="container" id={anchor}>
 			<div class="columns is-vcentered is-mobile">
-				<div class="column is-10">
-					<h2 class="mt-2 mb-4 is-size-2 has-text-weight-semibold">{title}</h2>
-					{subtitle && <p class="subtitle has-text-grey mb-5">{subtitle}</p>}
+				<div class="column is-8 is-10-tablet is-10-desktop">
+					<h2 class="mt-2 mb-4 is-size-2 is-size-3-mobile has-text-weight-bold">
+						{title}
+					</h2>
+					{subtitle && (
+						<p class="subtitle is-size-3 is-size-4-mobile has-text-grey mb-5">
+							{subtitle}
+						</p>
+					)}
 				</div>
 				{moreLink && (
 					<div class="column has-text-right">

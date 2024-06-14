@@ -96,7 +96,7 @@ export default class ListingLayout {
 								</span>
 							)}
 							<div>
-								<h1 class="mt-2 mb-4 title is-size-2 has-text-weight-bold">
+								<h1 class="mt-2 mb-4 title is-size-2 is-size-3-mobile has-text-weight-bold">
 									{data.title}
 								</h1>
 								{data.subtitle && (

@@ -51,10 +51,10 @@ export default class IndexPage {
 					<div class="container">
 						<div class="columns is-multiline">
 							<div class="column is-8">
-								<h1 class="mt-2 mb-4 title has-text-weight-semibold has-text-white">
+								<h1 class="mt-2 mb-4 title is-size-1 is-size-2-mobile has-text-weight-semibold has-text-white">
 									Welcome to the JetBrains Guide
 								</h1>
-								<p class="subtitle has-text-white">
+								<p class="subtitle is-size-2 is-size-3-mobile has-text-white">
 									Learn about technologies and become
 									<br />a badass developer.
 								</p>

@@ -11,7 +11,7 @@ const ArticleTitleSubtitle = ({
 }: ArticleTitleSubtitleProps): JSX.Element => {
 	return (
 		<Fragment>
-			<h2 class="title is-size-1">{title}</h2>
+			<h2 class="title is-size-2 is-size-3-mobile">{title}</h2>
 			{subtitle && (
 				<h3 class="subtitle is-size-4 pt-1 has-text-grey">{subtitle}</h3>
 			)}

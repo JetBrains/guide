@@ -23,13 +23,15 @@ function HeroSection({
 			<div class="hero-body">
 				<div class="container">
 					<h1
-						class={`mt-2 mb-4 title has-text-weight-semibold ${
+						class={`mt-2 mb-4 title is-size-1 is-size-3-mobile has-text-weight-semibold ${
 							titleExtraClass || ""
 						}`}
 					>
 						{title}
 					</h1>
-					<p class={`subtitle mb-5 ${subtitleExtraClass || "has-text-grey"}`}>
+					<p
+						class={`subtitle is-size-2 is-size-4-mobile mb-5 ${subtitleExtraClass || "has-text-grey"}`}
+					>
 						{subtitleHtml}
 					</p>
 					{extraContent}
