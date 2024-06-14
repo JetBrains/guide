@@ -30,7 +30,7 @@ playlistItems:
   - /go/tips/rename-symbol/
   - /go/tips/quick-docs/
   - /go/tips/parameter-info/
-  - /go/tips/conditional-breakpoints/
+  - /tips/conditional-breakpoints/
   - /go/tips/evaluate-expression/
   - /go/tips/split-screen-without-tabs/
   - /go/tips/run-single-test/
