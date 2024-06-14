@@ -39,7 +39,7 @@ playlistItems:
   - /python/tips/quick-docs/
   - /python/tips/parameter-info/
   - /python/tips/run-from-keyboard/
-  - /python/tips/conditional-breakpoints/
+  - /tips/conditional-breakpoints/
   - /python/tips/evaluate-expression/
   - /python/tips/split-screen-without-tabs/
   - /pytest/tips/run-single-test/
