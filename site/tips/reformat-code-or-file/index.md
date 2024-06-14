@@ -16,6 +16,7 @@ obsoletes:
   - /go/tips/reformat-code/
   - /java/tips/reformat-code-or-file/
   - /java/tips/reformat-code/
+video: ./tip.webm
 ---
 
 ## The Problem
