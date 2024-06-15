@@ -15,6 +15,7 @@ tutorialItems:
   - ./setting-up/
   - ./docker-through-pycharm/
   - ./production-ready/
+  - ./dockerhub/
 ---
 
 In this tutorial, we will be exploring two of the most popular tools that are very helpful in your software development journey: Django, the most powerful and battle-tested web framework, and Docker, the powerful tool to orchestrate your applications. If you haven't heard about them, then it's likely you haven't been born yet.
