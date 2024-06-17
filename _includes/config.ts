@@ -67,6 +67,7 @@ export async function registerIncludes(
 	eleventyConfig.addExtension(["11ty.jsx", "11ty.ts", "11ty.tsx"], {
 		key: "11ty.js",
 	});
+	eleventyConfig.addTemplateFormats("11ty.ts,11ty.tsx");
 
 	// jsx doesn't let you add <!DOCTYPE html> as an element
 	// this hacks the rendering to force the content in at transform time

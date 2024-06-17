@@ -23,7 +23,7 @@
 		"format": "prettier --write --ignore-unknown ./"
 	},
 	"devDependencies": {
-		"@11ty/eleventy": "^3.0.0-alpha.4",
+		"@11ty/eleventy": "^3.0.0-alpha.13",
 		"@11ty/eleventy-plugin-rss": "^1.2.0",
 		"@11ty/eleventy-plugin-vite": "^4.0.0",
 		"@fortawesome/fontawesome-free": "^6.5.2",
