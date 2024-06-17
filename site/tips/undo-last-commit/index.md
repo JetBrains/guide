@@ -15,10 +15,10 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/sAXyAivHeb0"
 obsoletes:
   - /dotnet/tips/undo-last-commit/
-  - /idea/tips/undo-last-commit/
+  - /java/tips/undo-last-commit/
   - /go/tips/undo-last-commit/
-  - /pycharm/tips/undo-last-commit/
-  - /webstorm/tips/undo-last-commit/
+  - /python/tips/undo-last-commit/
+  - /javascript/tips/undo-last-commit/
 ---
 
 First go to the Git tool window and make sure you’re on the log tab.
