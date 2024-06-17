@@ -1,18 +1,24 @@
 ---
-date: 2021-01-08
+date: 2024-06-14
 title: Download a JDK
 topics:
   - interface
   - java
-author: hs
-subtitle: Download or associate a JDK with your project.
+author: md
+subtitle: Download or associate a JDK with your project
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Creating your first Java application with IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=H_XxH66lm3U"
   - title: (documentation) IntelliJ IDEA Help - SDKs
     href: "https://www.jetbrains.com/help/idea/sdk.html"
-video: "https://youtu.be/D-CGuIAANW0"
+video: "https://youtu.be/5TzRQqOHs14"
 ---
 
 You can use the New Project Wizard to configure existing JDKs, or download new ones from different vendors.
+
+If the necessary JDK is already defined in IntelliJ IDEA, select it from the JDK list.
+
+If the JDK is installed on your computer, but not defined in the IDE, select the option **Add JDK** from the list and specify the path to the JDK home directory (for example, `/Library/Java/JavaVirtualMachines/jdk-21.0.2.jdk`).
+
+If you don't have the necessary JDK on your computer, select **Download JDK**. In the **Download JDK** popup, specify the JDK vendor and version, change the installation path if required, and click **Download**.
