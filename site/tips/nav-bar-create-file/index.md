@@ -13,6 +13,7 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/new-ui.html#navigation_bar"
 obsoletes:
   - /python/tips/navbar-create-file/
+  - /go/tips/navbar-create-file/
 video: ./tip.webm
 ---
 
@@ -29,7 +30,7 @@ You can now:
 - Use the cursor keys to get to the target directory
 - Speed search to select any subdirectories
 
-![arrow-keys.png](arrow-keys.png)
+![arrow-keys.png](../nav-bar-create-file/arrow-keys.png)
 
 Once you have selected your target, use <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) to bring up the new file dialog. Just like in the Project tool window, the new file is opened after creation.
 
@@ -40,4 +41,4 @@ Also like the Project tool window, your selection doesn't have to be on a direct
 
 In summary, after two key combos, you have a new sibling file, with no permanent file tree visible and no popups to close afterward. That's what getting in the flow is about.
 
-![new-file.png](new-file.png)
+![new-file.png](../nav-bar-create-file/new-file.png)
