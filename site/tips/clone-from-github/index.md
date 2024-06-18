@@ -16,6 +16,7 @@ obsoletes:
   - /python/tips/create-project-from-github/
   - /go/tips/create-project-from-github/
   - /java/tips/clone-project-from-github/
+video: ./tip.webm
 ---
 
 ## The Problem
@@ -24,7 +25,7 @@ You want to work on a project that's hosted in GitHub, but how do you get it fro
 
 ## The Solution
 
-The first step is to get the link from GitHub. Navigate to [https://github.com/](https://github.com/) and navigate to the project that you want to use to create your project locally. You normally want to clone the _main_ branch which will be selected by default. Click the green **Code** button and leave it on the default of _Local_. Click the icon to the right of the HTTPS link to copy the code to your clipboard:
+The first step is to get the link from GitHub. Navigate to [https://github.com/](https://github.com/) and navigate to the project that you want to use to create your project locally. You normally want to clone the _main_ branch which will be selected by default. Click the green **Code** button and leave it on the default of _Local_. Click the icon to the right of the HTTPS link to copy the link to your clipboard:
 
 ![github-code.png](github-code.png)
 
