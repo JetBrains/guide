@@ -13,7 +13,6 @@ playlistItems:
   - /go/tips/cyclic-expand-word/
   - /go/tips/method-like-completion-for-functions/
   - /go/tips/postfix-completion/
-  - /go/tips/live-templates/
   - /go/tips/complete-current-statement/
   - /go/tips/partial-match-completion/
   - /go/tips/parameter-info/
