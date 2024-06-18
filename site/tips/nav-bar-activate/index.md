@@ -27,8 +27,12 @@ In the latest version of JetBrains IDE's, the Navigation Bar is in the Status ba
 
 You can invoke **Navigate | Jump to Navigation Bar** <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux) to temporarily re-activate the Navigation Bar. Once you use it, the window disappears.
 
+![activate.png](activate.png)
+
 But then, how do you make it disappear? Press <kbd>␛</kbd> (macOS) / <kbd>Escape</kbd> (Windows/Linux) to go back to where you were working.
 
 How did we hide it in the Navigation Bar first place, or bring it back if wanted? From the menu, you can select **View** > **Appearance** > **Navigation Bar** which allows you to toggle between _Top_, _In Status Bar_ and _Don't Show_.
+
+![menu.png](menu.png)
 
 Want a faster, keyboard-centric way to toggle? <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) lets you search for such settings and even toggle inline. Type `vi nav` to speed search, make sure the selection is on **View: Show Navigation Bar**, then press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux). The setting is toggled...no mouse usage needed.
