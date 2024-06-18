@@ -101,11 +101,11 @@ export default class ExplorePage {
 								<div class="columns">
 									<div class="column is-four-fifths mb-5 mr-auto">
 										<h2 class="title mb-6 is-size-1 is-size-3-mobile has-text-weight-bold">
-											Explore the JetBrains Guide
+											Explore Content
 										</h2>
-										<p class="subtitle has-text-grey">
-											Looking to learn something new, or refresh your existing
-											skills?
+										<p class="subtitle is-size-2 has-text-grey">
+											Learn something new or refresh your existing skills with
+											the JetBrains Guide
 										</p>
 									</div>
 								</div>
