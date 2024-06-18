@@ -1,12 +1,12 @@
 ---
 date: 2024-06-18
-title: Open a File from the Navigation Bar
+title: Create a new File from the Navigation Bar
 topics:
   - editing
   - ide
   - navigation
 author: hs
-subtitle: Open a file from the navigation bar without touching the mouse
+subtitle: Creating a new a file from the navigation bar without touching the mouse
 thumbnail: ./thumbnail.png
 seealso:
   - title: Navigation bar
