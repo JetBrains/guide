@@ -20,6 +20,7 @@ export class LunrBase {
 				url,
 				topics: value.topics,
 				channel: value.channel,
+				channelTitle: value.references?.channel?.title,
 				resourceType: value.resourceType,
 				authorURL,
 				authorThumbnail: value.references?.author.thumbnail,

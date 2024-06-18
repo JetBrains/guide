@@ -46,6 +46,8 @@ module.exports = function (eleventyConfig: any) {
 									/tag/,
 									/is-warning/,
 									/is-pulled-right/,
+									/is-fullwidth/,
+									/is-block/,
 									/has-glow.*/,
 									/has-gradient.*/,
 								],

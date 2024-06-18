@@ -1,4 +1,5 @@
 import lunr from "lunr";
+import { getContentType } from "./utils.js"
 
 const searchButton = document.getElementById("search");
 const searchDropdown = document.getElementById("search-dropdown");
@@ -93,6 +94,8 @@ if (searchButton) {
         this.ref("url");
         this.field("title");
         this.field("subtitle");
+        this.field(0.1, "resourceType");
+        this.field(0.5, "channelTitle");
 
         documents.forEach(function (doc) {
           this.add(doc);
@@ -132,13 +135,17 @@ function findSearchResults(query) {
     `;
 
   const list = results.slice(0, limit).map((result) => {
+    let tags = [];
+    if (result.channelTitle) tags.push(`<span class="tag is-light">${result.channelTitle}</span>`);
+    if (result.resourceType) tags.push(`<span class="tag is-light">${getContentType(result.resourceType, undefined)}</span>`);
+
     return `
-    <a class="panel-block is-active" href="${result.url}">
-      <div class="has-text-left">
-        <b>${result.title}</b><br/>
+    <a class="panel-block is-block is-active" href="${result.url}">
+      <div class="has-text-left is-fullwidth">
+        <b>${result.title}</b>
+        ${tags.length ? `<div class="is-pulled-right is-hidden-touch is-size-7">${tags.join("<span>&nbsp;&nbsp;</span>")}</div>`: ""}<br/>
         <small class="is-small">${result.subtitle}</small>
-      </div>
-    </a>`;
+      </div>    </a>`;
   });
 
   return `<div class="panel-block">${description}</div>\n${list.join("")}`;
