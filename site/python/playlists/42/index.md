@@ -20,7 +20,7 @@ playlistItems:
   - /python/tips/navigate-to-symbol/
   - /python/tips/navigate-to-file/
   - /python/tips/back-and-forth/
-  - /python/tips/navbar-activate/
+  - /tips/nav-bar-activate/
   - /python/tips/navbar-navigate-files/
   - /python/tips/navbar-open-file/
   - /python/tips/navbar-speed-search/
