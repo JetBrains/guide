@@ -1,5 +1,4 @@
 import lunr from "lunr";
-import { getContentType } from "./utils.js"
 
 const searchButton = document.getElementById("search");
 const searchDropdown = document.getElementById("search-dropdown");
@@ -92,13 +91,21 @@ if (searchButton) {
       // load lunr search index
       lunrIndex = lunr(function () {
         this.ref("url");
-        this.field("title");
-        this.field("subtitle");
-        this.field(0.1, "resourceType");
-        this.field(0.5, "channelTitle");
+        this.field("title", { boost: 1.3 });
+        this.field("subtitle", { boost: 1.2 });
+        this.field("resourceType", { boost: 0.1 });
+        this.field("channelTitle", { boost: 0.5 });
 
         documents.forEach(function (doc) {
-          this.add(doc);
+          let documentBoost = 1;
+          if (doc.resourceType === "tip") documentBoost = 2.0;
+          if (doc.resourceType === "tutorial") documentBoost = 1.8;
+          if (doc.resourceType === "topic") documentBoost = 1.6;
+          if (doc.resourceType === "article") documentBoost = 1.5;
+          if (doc.resourceType === "link") documentBoost = 1.3;
+          if (doc.resourceType === "tutorialstep") documentBoost = 1.1;
+
+          this.add(doc, { boost: documentBoost });
         }, this);
       });
     }
@@ -136,14 +143,18 @@ function findSearchResults(query) {
 
   const list = results.slice(0, limit).map((result) => {
     let tags = [];
-    if (result.channelTitle) tags.push(`<span class="tag is-light">${result.channelTitle}</span>`);
-    if (result.resourceType) tags.push(`<span class="tag is-light">${getContentType(result.resourceType, undefined)}</span>`);
+    if (result.channelTitle) {
+      tags.push(`<span class="tag is-small is-light">${result.channelTitle}</span>`);
+    } else {
+      tags.push(`<span class="tag is-small is-light">All</span>`);
+    }
+    //if (result.resourceType) tags.push(`<span class="tag is-small is-light">${getContentType(result.resourceType, undefined)}</span>`);
 
     return `
     <a class="panel-block is-block is-active" href="${result.url}">
       <div class="has-text-left is-fullwidth">
         <b>${result.title}</b>
-        ${tags.length ? `<div class="is-pulled-right is-hidden-touch is-size-7">${tags.join("<span>&nbsp;&nbsp;</span>")}</div>`: ""}<br/>
+        ${tags.length ? `<div class="is-pulled-right is-hidden-touch">${tags.join("<span>&nbsp;&nbsp;</span>")}</div>`: ""}<br/>
         <small class="is-small">${result.subtitle}</small>
       </div>    </a>`;
   });

@@ -85,6 +85,23 @@ export default class ExplorePage {
 			limit: 12,
 		});
 
+		// Rebuild channels list from data
+		const channels = this.getResources({
+			resourceTypes: ["channel"],
+			limit: 12,
+		});
+		if (channels.length > 0) {
+			const channelsMenu = exploreMenu.find(
+				(menu) => menu.facetGroup === "channels",
+			);
+			if (channelsMenu) {
+				channelsMenu.items = channels.map((channel) => ({
+					value: channel.url,
+					label: channel.title,
+				}));
+			}
+		}
+
 		const dummyChannel = this.getResource("/dotnet/");
 		const resourceCard = (
 			<ResourceCard
@@ -100,13 +117,9 @@ export default class ExplorePage {
 							<div class="column">
 								<div class="columns">
 									<div class="column is-four-fifths mb-5 mr-auto">
-										<h2 class="title mb-6 is-size-1 is-size-3-mobile has-text-weight-bold">
+										<h2 class="title mb-2 is-size-1 is-size-3-mobile has-text-weight-bold">
 											Explore Content
 										</h2>
-										<p class="subtitle is-size-2 has-text-grey">
-											Learn something new or refresh your existing skills with
-											the JetBrains Guide
-										</p>
 									</div>
 								</div>
 								<div
