@@ -98,6 +98,7 @@ if (searchButton) {
 
         documents.forEach(function (doc) {
           let documentBoost = 1;
+          if (!doc.channel) documentBoost = 1.5;
           if (doc.resourceType === "tip") documentBoost = 2.0;
           if (doc.resourceType === "tutorial") documentBoost = 1.8;
           if (doc.resourceType === "topic") documentBoost = 1.6;
