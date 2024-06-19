@@ -21,10 +21,10 @@ playlistItems:
   - /python/tips/navigate-to-file/
   - /python/tips/back-and-forth/
   - /tips/nav-bar-activate/
-  - /python/tips/navbar-navigate-files/
-  - /python/tips/navbar-open-file/
-  - /python/tips/navbar-speed-search/
-  - /python/tips/navbar-create-file/
+  - /tips/nav-bar-navigate-files/
+  - /tips/nav-bar-open-file/
+  - /tips/nav-bar-speed-search/
+  - /tips/nav-bar-create-file/
   - /python/tips/navbar-find-in-path/
   - /python/tips/add-line-after-before/
   - /python/tips/make-extend-selection/

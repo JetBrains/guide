@@ -16,7 +16,7 @@ playlistItems:
   - /go/tips/navigate-to-file/
   - /go/tips/back-and-forth/
   - /tips/nav-bar-activate/
-  - /go/tips/navbar-create-file/
+  - /tips/nav-bar-create-file/
   - /go/tips/navbar-find-in-path/
   - /go/tips/add-line-after-before/
   - /go/tips/expanding-shrinking-selection/
