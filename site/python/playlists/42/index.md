@@ -25,7 +25,7 @@ playlistItems:
   - /tips/nav-bar-open-file/
   - /tips/nav-bar-speed-search/
   - /tips/nav-bar-create-file/
-  - /python/tips/navbar-find-in-path/
+  - /tips/nav-bar-find-in-path/
   - /python/tips/add-line-after-before/
   - /python/tips/make-extend-selection/
   - /python/tips/move-block/

@@ -13,7 +13,9 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/new-ui.html#navigation_bar"
 obsoletes:
   - /go/tips/navbar-activate/
+  - /go/tips/jump-to-the-navigation-bar/
   - /python/tips/navbar-activate/
+  - /javascript/tips/work-with-navigation-bar/
 video: ./tip.webm
 ---
 
