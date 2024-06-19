@@ -14,6 +14,19 @@ import path from "upath";
 
 export type PlaylistLayoutData = LayoutProps & PlaylistFrontmatter;
 
+function relativizeContentUrl(originalUrl: string, contentUrl: string) {
+	if (!originalUrl) return originalUrl;
+	// noinspection SuspiciousTypeOfGuard Guess what, we have videos that are an object, not a string
+	if (typeof originalUrl !== "string") return originalUrl;
+
+	// rewrite relative URL
+	if (originalUrl.startsWith(".") && !originalUrl.startsWith("../")) {
+		return contentUrl + originalUrl;
+	}
+
+	return originalUrl;
+}
+
 function relativize(originalUrl: string, content: string) {
 	const prefix = originalUrl; //`../../${originalUrl}`;
 	const doc = parse(content);
@@ -91,28 +104,43 @@ export async function PlaylistLayout(
 					? relativize(thisItem.page.url, thisItem.content)
 					: "";
 				const isVisible = index == 0 ? "" : "display:none";
+
+				// rewrite relative URLs
+				const animatedGif = item.animatedGif;
+				if (animatedGif) {
+					animatedGif.file = relativizeContentUrl(animatedGif.file, item.url);
+				}
+				let screenshot = item.screenshot;
+				if (screenshot) {
+					screenshot = relativizeContentUrl(screenshot, item.url);
+				}
+				let video = item.video;
+				if (video) {
+					video = relativizeContentUrl(video, item.url);
+				}
+
 				return (
 					<div id={item.anchor} style={isVisible} class="playlist-item">
 						<h2 class="is-size-2">{item.title}</h2>
 						{item.subtitle && <p class="subtitle is-4">{item.subtitle}</p>}
-						{item.animatedGif && (
+						{animatedGif && (
 							<AnimatedGif
-								{...item.animatedGif}
+								{...animatedGif}
 								width="600"
 								style="object-fit: contain; object-position: top"
 							/>
 						)}
-						{item.screenshot && (
+						{screenshot && (
 							<img
-								src={item.screenshot}
+								src={screenshot}
 								alt="Tip Screenshot"
 								width="600"
 								style="object-fit: contain; object-position: top"
 							/>
 						)}
-						{item.video && <VideoPlayer source={item.video}></VideoPlayer>}
+						{video && <VideoPlayer source={video}></VideoPlayer>}
 						{item.linkURL && (
-							<p class={item.video ? "mt-4" : ""}>
+							<p class={video ? "mt-4" : ""}>
 								<a href={item.linkURL} class="link-external">
 									View at original site
 								</a>
