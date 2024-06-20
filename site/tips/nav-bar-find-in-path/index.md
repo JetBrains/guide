@@ -6,7 +6,7 @@ topics:
   - ide
   - navigation
 author: hs
-subtitle: How do I use the Navigation bar and Find in File together?
+subtitle: Use the Navigation bar and Find in File together and be faster than all of your team members.
 thumbnail: ./thumbnail.png
 seealso:
   - title: Navigation bar

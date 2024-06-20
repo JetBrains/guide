@@ -1,12 +1,12 @@
 ---
 date: 2024-06-18
-title: Open a new file from the Navigation Bar
+title: Open any file from the Navigation Bar
 topics:
   - editing
   - ide
   - navigation
 author: hs
-subtitle: How do I open a new file from the Navigation bar without touching the mouse?
+subtitle: Using just the keyboard, browse and open files in your project.
 thumbnail: ./thumbnail.png
 seealso:
   - title: Navigation bar

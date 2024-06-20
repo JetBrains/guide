@@ -6,7 +6,7 @@ topics:
   - ide
   - navigation
 author: hs
-subtitle: How do I use keyboard abbreviations to quickly find what I'm looking for in the Navigation bar?
+subtitle: Use the keyboard abbreviations to quickly find what you're looking for in the Navigation bar.
 thumbnail: ./thumbnail.png
 seealso:
   - title: Navigation bar

@@ -6,7 +6,7 @@ topics:
   - ide
   - navigation
 author: hs
-subtitle: How do I creating a new a file from the Navigation bar without touching the mouse?
+subtitle: A fast way to add a new file to your project, without touching the mouse.
 thumbnail: ./thumbnail.png
 seealso:
   - title: Navigation bar

@@ -6,7 +6,7 @@ topics:
   - ide
   - navigation
 author: hs
-subtitle: How do I turn the navigation bar on when I need it and then dismiss it?
+subtitle: Turn the navigation bar on when you need it and dismiss it when you're done.
 thumbnail: ./thumbnail.png
 seealso:
   - title: Navigation bar

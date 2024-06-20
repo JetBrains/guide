@@ -6,7 +6,7 @@ topics:
   - ide
   - navigation
 author: hs
-subtitle: How do I navigate around my files from the navigation bar without touching the mouse?
+subtitle: "Navigate to project files from the navigation bar. No mouse! 🐁"
 thumbnail: ./thumbnail.png
 seealso:
   - title: Navigation bar
