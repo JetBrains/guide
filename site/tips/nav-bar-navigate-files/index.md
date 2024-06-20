@@ -1,12 +1,12 @@
 ---
 date: 2024-06-18
-title: Navigate Files with the Navigation Bar
+title: Navigate files with the Navigation Bar
 topics:
   - editing
   - ide
   - navigation
 author: hs
-subtitle: Navigate around your files from the navigation bar without touching the mouse
+subtitle: How do I navigate around my files from the navigation bar without touching the mouse?
 thumbnail: ./thumbnail.png
 seealso:
   - title: Navigation bar

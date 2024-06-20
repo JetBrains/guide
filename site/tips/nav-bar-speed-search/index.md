@@ -1,12 +1,12 @@
 ---
 date: 2024-06-19
-title: Speed Search with the Navigation Bar
+title: Speed search with the Navigation Bar
 topics:
   - editing
   - ide
   - navigation
 author: hs
-subtitle: Use speed searching to find what you're looking for quickly in the navigation bar
+subtitle: How do I use keyboard abbreviations to quickly find what I'm looking for in the Navigation bar?
 thumbnail: ./thumbnail.png
 seealso:
   - title: Navigation bar

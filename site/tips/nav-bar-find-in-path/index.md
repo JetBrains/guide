@@ -6,7 +6,7 @@ topics:
   - ide
   - navigation
 author: hs
-subtitle: Activate the navigation bar when you need it and then dismiss it
+subtitle: How do I use the Navigation bar and Find in File together?
 thumbnail: ./thumbnail.png
 seealso:
   - title: Navigation bar

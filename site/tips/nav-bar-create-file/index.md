@@ -6,7 +6,7 @@ topics:
   - ide
   - navigation
 author: hs
-subtitle: Creating a new a file from the navigation bar without touching the mouse
+subtitle: How do I creating a new a file from the Navigation bar without touching the mouse?
 thumbnail: ./thumbnail.png
 seealso:
   - title: Navigation bar
