@@ -14,5 +14,6 @@ If you want to perform tasks on save, you can now use the _Actions on save_ feat
 
 ![action_on_save](./actions_on_save.png)
 
+Turn on the actions you want to perform on save in the **GoLand | Settings** for macOS <kbd>⌘ Сmd ,</kbd> or **File | Settings** for Windows and Linux.
 
-Turn on the actions you want to perform on save in the **Settings/Preferences | Tools | Actions on Save** section of the IDE.
+Then, navigate to **Settings > Tools > Actions on Save** section of the IDE.
