@@ -18,7 +18,6 @@ playlistItems:
   - /go/tips/quick-documentation/
   - /go/tips/delete-type-parameter-with-empty-parameter-list/
   - /go/tips/convert-empty-interfaces-to-any/
-  - /go/tips/change-font-size-from-keyboard/
 ---
 
 For more information about what's new in GoLand 2022.2, check out our [What's New Page](https://jetbrains.com/go/whatsnew) or browse the tips below.
