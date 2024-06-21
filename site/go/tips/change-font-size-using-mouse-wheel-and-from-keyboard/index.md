@@ -10,12 +10,10 @@ thumbnail: ./thumbnail.png
 video: https://www.youtube.com/embed/mnSAsoGg73s?rel=0
 ---
 
+Invoke **Settings**, then select **GoLand | Settings** for macOS or **File | Settings** for Windows and Linux. Alternatively, press <kbd> ⌘ Cmd ,</kbd>.
 
-
-Turn on the feature in `Settings/Preferences | Editor | General | Change font size with Ctrl+Mouse Wheel`. Then you can increase or decrease the font size of your editor with your mouse wheel.
+Then navigate to `Editor > General > Change font size with Ctrl+Mouse Wheel`. You can then increase or decrease the font size of your editor using the mouse wheel.
 
 ![mouse_wheel](./mouse_wheel.png)
 
-
-
-To increase the font size, press <kbd>⌃⇧.</kbd> (macOS) / <kbd>Alt+Shift+Period</kbd> (Windows/Linux). To decrease it, press <kbd>⌃⇧,</kbd> (macOS) / <kbd>Alt+Shift+Comma</kbd> (Windows/Linux).
+To increase the font size with your keyboard, use <kbd>⌃⇧.</kbd> (macOS) / <kbd>Alt+Shift+Period</kbd> (Windows/Linux). To decrease it, press <kbd>⌃⇧,</kbd> (macOS) / <kbd>Alt+Shift+Comma</kbd> (Windows/Linux).
