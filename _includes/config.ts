@@ -67,6 +67,7 @@ export async function registerIncludes(
 	eleventyConfig.addExtension(["11ty.jsx", "11ty.ts", "11ty.tsx"], {
 		key: "11ty.js",
 	});
+	eleventyConfig.addTemplateFormats("11ty.ts,11ty.tsx");
 
 	// jsx doesn't let you add <!DOCTYPE html> as an element
 	// this hacks the rendering to force the content in at transform time
@@ -147,4 +148,56 @@ export async function registerIncludes(
 
 	// This is a hack to let eleventy know that we touch that library
 	eleventyConfig.amendLibrary("md", () => {});
+
+	// register any short codes that can be used in content or layouts
+	addShortcodes(eleventyConfig);
+}
+
+function addShortcodes(eleventyConfig: any) {
+	// short code
+	eleventyConfig.addShortcode("cta", async function (msgOverride: any) {
+		// @ts-ignore
+		const callToAction = this.ctx.environments.callToAction;
+		if (callToAction) {
+			let { title, message, action, url, image } = callToAction;
+			if (msgOverride) {
+				message = msgOverride;
+			}
+
+			if (image) {
+				image = `<figure class="media-left">
+						<p class="image is-64x64">
+							<img alt='call to action image' src='${image}'>
+						</p>
+					</figure>`;
+			}
+
+			let button = "";
+			if (action && url) {
+				button = `<a href="${url}" class="mt-2 button is-info is-rounded" target="_blank">${action}</a>`;
+			}
+
+			return `
+			<article class="message is-info">
+				<div class="message-header">
+					<p>${title}</p>
+				</div>
+				<div class="message-body">
+					<div class="media">
+						${image}
+						<div class="media-content">
+							<div class="content">
+									${message}
+									${button}
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			`;
+		} else {
+			// @ts-ignore
+			console.error(`missing call to action in: ${this.page.inputPath}`);
+		}
+	});
 }

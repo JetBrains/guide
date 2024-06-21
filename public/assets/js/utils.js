@@ -35,6 +35,8 @@ export function getContentType(resourceType, linkURL) {
 			}
 			return "Link";
 		default:
-			return resourceType;
+			return resourceType.length > 1
+				? resourceType.charAt(0).toUpperCase() + resourceType.slice(1)
+				: resourceType;
 	}
 }

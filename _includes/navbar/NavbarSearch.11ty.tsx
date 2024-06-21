@@ -27,7 +27,7 @@ function NavbarSearch(): JSX.Element {
 											type="text"
 											placeholder="Search"
 										/>
-										<span class="icon is-left">
+										<span class="icon has-text-black is-left">
 											<i class="fas fa-search" aria-hidden={true} />
 										</span>
 									</p>

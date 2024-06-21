@@ -46,6 +46,8 @@ module.exports = function (eleventyConfig: any) {
 									/tag/,
 									/is-warning/,
 									/is-pulled-right/,
+									/is-fullwidth/,
+									/is-block/,
 									/has-glow.*/,
 									/has-gradient.*/,
 								],
@@ -97,15 +99,15 @@ module.exports = function (eleventyConfig: any) {
 	// These are all relative to the input directory at the end
 	eleventyConfig.addPassthroughCopy(
 		"./!(_site)**/*.{gif,jpg,png,svg,jpeg,webm,webp}",
-		{ overwrite: true },
+		{ overwrite: true }
 	);
 	eleventyConfig.addPassthroughCopy(
 		{ "../../public/assets": "assets" },
-		{ overwrite: true },
+		{ overwrite: true }
 	);
 	eleventyConfig.addPassthroughCopy(
 		{ "../../public/obsoletes.json": "obsoletes.json" },
-		{ overwrite: true },
+		{ overwrite: true }
 	);
 	eleventyConfig.ignores.add("**/demos/**");
 

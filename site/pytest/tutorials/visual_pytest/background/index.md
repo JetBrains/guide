@@ -25,7 +25,7 @@ Let's do some background on these points.
 
 Writing code is fun.
 But writing good code is hard.
-Over the years, Python and the community have embraced the concept of [unit testing](https://jeffknupp.com/blog/2013/12/09/improve-your-python-understanding-unit-testing/) as a way to ensure that the code you write works correctly, now and in the future.
+Over the years, Python and the community have embraced the concept of unit testing as a way to ensure that the code you write works correctly, now and in the future.
 
 But that's the "eat your vegetables" version.
 "Bleh, test writing."

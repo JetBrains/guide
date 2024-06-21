@@ -19,7 +19,7 @@ playlistItems:
   - /go/tips/navigate-between-opened-files-using-the-switcher/
   - /tips/jump-to-recent-files/
   - /go/tips/recent-locations/
-  - /go/tips/jump-to-the-navigation-bar/
+  - /tips/nav-bar-activate/
   - /go/tips/structure-popup/
   - /go/tips/select-in/
   - /go/tips/go-to-from-a-test/

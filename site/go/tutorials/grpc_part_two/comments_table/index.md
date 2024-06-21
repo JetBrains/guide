@@ -593,4 +593,4 @@ The entire code so far can be found in the `part3` branch of [this GitHub repo](
 
 ## Conclusion
 
-With that, you've completed the server! Well done! Now, why not take a break? You might want to finish that cup of coffee before proceeding to the [final part](../../grpc_part_four/), where you'll write the client and test the whole app.
+With that, you've completed the server! Well done! Now, why not take a break? You might want to finish that cup of coffee before proceeding to the [final part](../../grpc_part_three/), where you'll write the client and test the whole app.
