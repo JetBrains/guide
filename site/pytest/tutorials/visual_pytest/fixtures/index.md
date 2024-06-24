@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-05-10
+date: 2024-06-26
 title: Test Fixtures
 topics:
   - pytest
@@ -8,7 +8,7 @@ topics:
 author: hs
 subtitle: Make your tests more focused by moving sample data to pytest fixtures.
 thumbnail: ./thumbnail.png
-video: ""
+video: "https://www.youtube.com/watch?v=olURgWWTdR8"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/fixtures/
   - /python/tutorials/visual_pytest/fixtures/

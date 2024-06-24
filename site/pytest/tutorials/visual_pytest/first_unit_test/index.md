@@ -1,14 +1,14 @@
 ---
 type: TutorialStep
-date: 2020-05-10
-title: Hello Test
+date: 2024-06-26
+title: Unit Tests
 topics:
   - pytest
   - testing
-author: pwe
+author: hs
 subtitle: Write a simple test and run it in PyCharm's visual test runner.
 thumbnail: ./thumbnail.png
-video: ""
+video: "https://www.youtube.com/watch?v=Z0f00BdJ3yw"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/hello_test/
   - /python/tutorials/visual_pytest/hello_test/

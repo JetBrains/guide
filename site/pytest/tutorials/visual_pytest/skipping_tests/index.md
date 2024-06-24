@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-05-10
+date: 2024-06-26
 title: Skipping Tests
 topics:
   - pytest
@@ -8,7 +8,7 @@ topics:
 author: hs
 subtitle: During refactoring, use pytest's markers to ignore certain breaking tests.
 thumbnail: ./thumbnail.png
-video: ""
+video: "https://www.youtube.com/watch?v=oB-_GrfL0gI"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/skipping_tests/
   - /python/tutorials/visual_pytest/skipping_tests/

@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-05-10
+date: 2024-06-26
 title: Background on Testing
 topics:
   - pytest
@@ -10,7 +10,7 @@ subtitle: >-
   Introduce testing, pytest, and how it all fits into PyCharm, along with a
   scenario to work on.
 thumbnail: ../thumbnail.png
-video: "https://youtu.be/S9U1YT0gw8s"
+video: "https://www.youtube.com/watch?v=S9U1YT0gw8s"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/background/
   - /python/tutorials/visual_pytest/background/
