@@ -29,6 +29,7 @@ const siteChecker = new SiteChecker(
 			"localhost",
 			"twitter.com",
 			"x.com",
+			"instagram.com",
 			"linkedin",
 			"udemy.com",
 			"baeldung.com",
