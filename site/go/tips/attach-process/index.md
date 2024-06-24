@@ -1,6 +1,6 @@
 ---
 date: 2024-05-21
-title: Attach Debugger to Running Go Processes
+title: Attach the Debugger to a Running Go Processes
 topics:
   - go
 author: mm
