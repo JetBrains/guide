@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-05-10
+date: 2024-06-26
 title: Getting Into the TDD Flow
 topics:
   - pytest
@@ -10,7 +10,7 @@ subtitle: >-
   Setup your PyCharm project to help get into the flow of Test-Driven
   Development (TDD).
 thumbnail: ./thumbnail.png
-video: ""
+video: "https://www.youtube.com/watch?v=ysFzLRbturI"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/tdd_flow/
   - /python/tutorials/visual_pytest/tdd_flow/

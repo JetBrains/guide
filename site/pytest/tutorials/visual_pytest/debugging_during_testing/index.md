@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-05-10
+date: 2024-06-26
 title: Debugging During Testing
 topics:
   - debugging
@@ -10,7 +10,7 @@ author: hs
 subtitle: >-
   When writing tests, use the PyCharm "visual debugger" to interactively poke around in the context of a problem.
 thumbnail: ./thumbnail.png
-video: ""
+video: "https://www.youtube.com/watch?v=hImEiipjwTs"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/debugging_during_testing/
   - /python/tutorials/visual_pytest/debugging_during_testing/

@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-05-10
+date: 2024-06-26
 title: Project Setup
 topics:
   - pytest
@@ -9,7 +9,7 @@ author: hs
 subtitle: >-
   Make a PyCharm project and virtual environment with dependencies, and configure PyCharm to use pytest.
 thumbnail: ./thumbnail.png
-video: ""
+video: "https://www.youtube.com/watch?v=U43Jwomo8AM"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/setup/
   - /python/tutorials/visual_pytest/setup/

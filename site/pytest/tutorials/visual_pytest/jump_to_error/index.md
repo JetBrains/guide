@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-05-10
+date: 2024-06-26
 title: Jump to Error
 topics:
   - pytest
@@ -9,7 +9,7 @@ author: hs
 subtitle: >-
   Writing code means writing broken code. Click a link in a traceback to open a file on the line of the error.
 thumbnail: ./thumbnail.png
-video: ""
+video: "https://www.youtube.com/watch?v=EjSYATLwWss"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/jump_to_error/
   - /python/tutorials/visual_pytest/jump_to_error/

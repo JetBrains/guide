@@ -14,7 +14,7 @@ thumbnail: ./thumbnail.png
 tutorialItems:
   - ./background/
   - ./setup/
-  - ./hello_test/
+  - ./first_unit_test/
   - ./tdd_flow/
   - ./jump_to_error/
   - ./skipping_tests/

@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-05-10
+date: 2024-06-26
 title: Testing for Exceptions
 topics:
   - pytest
