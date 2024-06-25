@@ -4,7 +4,7 @@ title: Step Over
 topics:
   - go
 author: mm
-subtitle: Advance beyond the current line of code and moves on to the next line
+subtitle: Advance beyond the current line of code and moves on to the next line.
 seealso:
   - title: Documentation - Step Over
     href: >-
