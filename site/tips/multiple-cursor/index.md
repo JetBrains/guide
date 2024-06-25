@@ -17,6 +17,7 @@ video: ./tip.webm
 obsoletes:
   - /javascript/multi-cursor/
   - /java/tips/find-select-multiple-occurrences/
+  - /go/tips/multiple-selections/
 ---
 
 Want to edit the same thing, in multiple places, at once?
