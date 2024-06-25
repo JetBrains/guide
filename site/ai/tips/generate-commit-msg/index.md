@@ -11,6 +11,8 @@ topics:
 author: hs
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/embed/SnsiuF9Zflo?rel=0"
+obsoletes:
+  - /ai/tips/explain-commits/
 ---
 
 ## The Problem
