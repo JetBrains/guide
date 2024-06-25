@@ -13,7 +13,7 @@ playlistItems:
   - /go/tips/custom-structure-tags/
   - /go/tips/generate-a-test-for-an-element/
   - /go/tips/expanding-shrinking-selection/
-  - /go/tips/multiple-selections/
+  - /tips/multiple-cursor/
   - /go/tips/select-all-occurrences-in-a-file/
   - /go/tips/navigate-to-file/
   - /go/tips/navigate-between-opened-files-using-the-switcher/
