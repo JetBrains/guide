@@ -1,14 +1,14 @@
 ---
-date: 2024-06-20
+date: 2021-05-24
 title: Create Getters and Setters for Struct Fields
 topics:
   - editing
   - go
-author: mm
+author: dlsniper
 subtitle: Generate the support code to access fields indirectly, via getters and setters
 thumbnail: ./thumbnail.png
 video: >-
-  https://www.youtube.com/watch?v=b6TZwODleB0
+  https://www.youtube.com/watch?v=epLp9e8zC-A&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=40
 ---
 
 Do you need to access your struct fields via getters and setters? Add all the boilerplate code you need using the dedicated _Generate getter and setter_ action.
