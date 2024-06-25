@@ -5,7 +5,7 @@ topics:
   - git
   - vcs
 author: hs
-subtitle: Create a project by cloning it from GitHub
+subtitle: Create a project in your JetBrains IDE by cloning it from GitHub
 thumbnail: ./thumbnail.png
 seealso:
   - title: Tutorial on cloning and other Git actions inside your IDE

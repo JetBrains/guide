@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: Generate a test for an element
+title: Generate a Test for an Element
 topics:
   - editing
   - go
@@ -12,8 +12,6 @@ video: >-
 ---
 
 GoLand offers the option to quickly generate a test.
-
-**How to use:**
 
 Invoke with <kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux), and select **Test for ...** from the popup.
 

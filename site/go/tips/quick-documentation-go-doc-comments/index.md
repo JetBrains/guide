@@ -1,6 +1,6 @@
 ---
 date: 2022-11-08
-title: Go doc comments in quick documentation
+title: Go Doc Comments in Quick Documentation
 topics:
   - editing
   - platform
@@ -21,7 +21,5 @@ Clicking on doc links leads to the referenced element while clicking on a text l
 Both text and doc links are rendered as links in the _Quick Documentation_ popup and the _Documentation_ tool window.
 
 Headings (#) and lists (\*, +, 1.) are also supported.
-
-**How to use:**
 
 To see documentation about an element in your code, hover the mouse over the element or click it and press <kbd>F1</kbd> (macOS) / <kbd>Ctrl+Q</kbd> (Windows/Linux). To open documentation in the _Documentation_ tool window, press <kbd>F1</kbd> (macOS) / <kbd>Ctrl+Q</kbd> (Windows/Linux) twice.

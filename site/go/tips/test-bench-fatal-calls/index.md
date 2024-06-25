@@ -1,6 +1,6 @@
 ---
 date: 2021-05-24
-title: Detect incorrect usages of t/b.Fatal* calls in goroutines
+title: Detect Incorrect Usages of t/b.Fatal* Calls in Goroutines
 topics:
   - go
   - inspections
@@ -16,7 +16,6 @@ video: >-
 
 Calling \*t/b.Fatal\*\* methods from a goroutine is not advised as it may produce unexpected behavior.
 
-**How to use:**
 You don't need to do anything to run this inspection as it's enabled by default.
 
 Open your tests or benchmarks and see if it catches any issues.

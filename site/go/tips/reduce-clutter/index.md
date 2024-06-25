@@ -5,7 +5,7 @@ topics:
   - go
   - ui
 author: dlsniper
-subtitle: Save space by turning off various toolbars and Project Tool.
+subtitle: Save space by turning off various toolbars.
 seealso:
   - title: (documentation) GoLand Help - Configuring Menus and Toolbars
     href: "https://www.jetbrains.com/help/go/configuring-menus-and-toolbars.html"

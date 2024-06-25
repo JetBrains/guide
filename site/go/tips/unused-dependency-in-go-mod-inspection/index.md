@@ -1,6 +1,6 @@
 ---
 date: 2021-07-06
-title: Detect unused dependencies in go.mod files
+title: Detect Unused Dependencies in go.mod Files
 topics:
   - editing
   - go
@@ -12,7 +12,5 @@ video: >-
 ---
 
 _Be on top of your dependencies and quickly locate unused modules with this inspection._
-
-**How to use:**
 
 Open a `go.mod` file and look out for dependency lines marked with grey.

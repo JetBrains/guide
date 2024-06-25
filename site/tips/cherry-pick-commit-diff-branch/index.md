@@ -5,8 +5,7 @@ topics:
   - git
 author: hs
 subtitle: >-
-  Oops, you committed your code to the wrong branch… You could redo the work,
-  but you don't want to!.
+  Apply a commit from one branch to another with Git cherry pick.
 thumbnail: ./thumbnail.png
 seealso:
   - title: Cherry-pick separate commits

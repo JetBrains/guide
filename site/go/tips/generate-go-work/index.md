@@ -1,13 +1,12 @@
 ---
 date: 2022-11-08
-title: Generate 'go.work' for a project
+title: Generate 'go.work' for a Project
 topics:
   - editing
   - go
 author: ap
 subtitle: >-
-  Generate 'go.work' by using the context menu or a quick-fix with 'replace'
-  directives
+  Generate 'go.work' by using the context menu or a quick-fix with 'replace' directives.
 seealso:
   - title: (documentation) GoLand Help - Go workspaces
     href: "https://www.jetbrains.com/help/go/2022.3/go-workspaces.html"

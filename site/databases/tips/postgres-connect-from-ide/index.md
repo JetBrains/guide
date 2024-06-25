@@ -1,13 +1,11 @@
 ---
 date: 2023-01-16
-title: Connect from the IDE to a postgreSQL database
+title: Connect to a postgreSQL database
 topics:
   - databases
   - postgreSQL
 author: vb
-subtitle: >-
-  Gain access to the database from the IDE and do all the work in the same
-  window.
+subtitle: Access a postgreSQL database from your JetBrains IDE and do the work in the same window.
 thumbnail: ./thumbnail.png
 seealso:
   - title: IntelliJ IDEA - Database Tool Window

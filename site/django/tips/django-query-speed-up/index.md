@@ -1,6 +1,6 @@
 ---
 date: 2024-03-04
-title: Speed up your Django queries
+title: Speed up your Django Queries
 topics:
   - django
   - databases

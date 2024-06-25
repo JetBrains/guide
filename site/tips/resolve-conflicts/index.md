@@ -5,7 +5,7 @@ topics:
   - git
   - vcs
 author: pwe
-subtitle: Let the IDE help in the tricky business of resolving merge conflicts.
+subtitle: Resolve merge conflicts automatically and manually inside your JetBrains IDE.
 seealso:
   - title: Resolve conflicts
     href: "https://www.jetbrains.com/help/idea/resolve-conflicts.html"

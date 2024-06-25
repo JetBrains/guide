@@ -1,6 +1,6 @@
 ---
 date: 2021-07-06
-title: Configure custom namespaces manually
+title: Configure Custom Namespaces Manually
 topics:
   - kubernetes
 author: dlsniper
@@ -12,8 +12,6 @@ screenshot: ./screenshot.png
 ---
 
 If the plugin cannot automatically infer the available Kubernetes namespaces, now you can configure them manually. This will solve the problem when the user does not have the required permissions to perform namespace listing.
-
-**How to use:**
 
 Go to _Settings/Preferences | Build, Execution, Deployment | Kubernetes_ and configure the namespace in the corresponding section.
 

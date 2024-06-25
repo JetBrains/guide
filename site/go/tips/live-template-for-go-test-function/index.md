@@ -1,6 +1,6 @@
 ---
 date: 2020-12-03
-title: Live Template to create test function
+title: Live Template to Create Test Function
 topics:
   - editing
   - go
@@ -11,8 +11,6 @@ thumbnail: ./thumbnail.png
 video: >-
   https://www.youtube.com/watch?v=O3yaRncX-5I&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=55
 ---
-
-**How to use:**
 
 Place the cursor at the file level in a \__test.go_ file and start typing _func_. Select the **Test** option from the suggested list and then complete this by writing the test name you desire.
 

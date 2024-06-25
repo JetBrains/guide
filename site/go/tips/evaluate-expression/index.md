@@ -19,6 +19,4 @@ _Get the right answer in the right context, no typing._
 
 Stopped at a breakpoint and want to see a result, either typed in or from a line fragment?
 
-**How to use:**
-
 Invoke **Evaluate Expression** via <kbd>⌥F8</kbd> (macOS) / <kbd>Alt+F8</kbd> (Windows/Linux).

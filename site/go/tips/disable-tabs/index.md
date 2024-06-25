@@ -22,5 +22,4 @@ There are better choices for moving between files than tabs. Let's turn them off
 
 Tabs are a great way to focus on the few files for a task. However, they have some downsides. Try disabling your tabs as a first step towards a more-focused, keyboard-centric workflow.
 
-**How to use:**
 Control the tab placement to position where the tabs are in the IDE. Invoke **Tab placement | None** to hide them completely.

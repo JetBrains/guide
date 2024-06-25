@@ -5,9 +5,7 @@ topics:
   - django
   - editing
 author: ni
-subtitle: >-
-  Use autocomplete when typing a string in the apps section of your settings
-  file.
+subtitle: Use autocomplete when typing a string in the apps section of your settings file.
 seealso:
   - title: PyCharm Django Support
     href: "https://www.jetbrains.com/help/pycharm/django-support7.html"

@@ -1,6 +1,6 @@
 ---
 date: 2023-03-09
-title: Vulnerability checker
+title: Check for Vulnerabilities
 topics:
   - editing
   - go

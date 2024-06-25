@@ -1,6 +1,6 @@
 ---
 date: 2022-07-14
-title: Convert empty interfaces to `any`
+title: Convert Empty Interfaces to `any`
 topics:
   - editing
   - generics

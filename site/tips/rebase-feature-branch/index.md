@@ -5,7 +5,7 @@ topics:
   - git
   - vcs
 author: pwe
-subtitle: Get your feature branch caught up with changes on the main branch.
+subtitle: Add the changes from your main branch into your feature branch so you're caught up with changes on the main branch.
 seealso:
   - title: Apply changes from one Git branch to another
     href: >-

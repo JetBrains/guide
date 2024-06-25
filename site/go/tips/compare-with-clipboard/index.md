@@ -1,11 +1,11 @@
 ---
 date: 2020-02-05
-title: Compare with clipboard
+title: Compare With Clipboard
 topics:
   - editing
   - go
 author: dlsniper
-subtitle: Compare text, files or directories and even use the clipboard contents
+subtitle: Compare text, files or directories and even use the clipboard contents.
 thumbnail: ./thumbnail.png
 video: >-
   https://www.youtube.com/watch?v=VBhXtk11K3M&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=12
@@ -13,11 +13,7 @@ video: >-
 
 GoLand has a built-in diff viewer for code, revisions, and even images.
 
-**How to use:**
-
 Select any pair of files and press <kbd>⌘D</kbd> (macOS) / <kbd>Ctrl+D</kbd> (Windows/Linux).
-
-**Pro tip:**
 
 To quickly compare the editor with the clipboard, choose _View | Compare with Clipboard_.
 

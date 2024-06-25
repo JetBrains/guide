@@ -1,19 +1,17 @@
 ---
 date: 2020-12-03
-title: Run a single test from a table test
+title: Run a Single Test
 topics:
   - go
   - testing
 author: dlsniper
-subtitle: Focus your testing on new test cases or tests that fail
+subtitle: Focus your testing on new test cases or tests that fail.
 thumbnail: ./thumbnail.png
 video: >-
   https://www.youtube.com/watch?v=VshkrFowxjQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=113
 ---
 
 When you have a testing table of more than a handful of cases, it can be hard to focus on a specific test case.
-
-**How to use:**
 
 If the IDE can determine the name of the test, then you can use either the green arrow next to the test name or using _Run context configuration_ via <kbd>⌃⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+F10 (Windows/Linux)</kbd>.
 

@@ -1,11 +1,11 @@
 ---
 date: 2020-02-05
-title: Navigate between opened files using the Switcher
+title: Navigate Between Open Files
 topics:
   - go
   - navigation
 author: dlsniper
-subtitle: Don't use the mouse to quickly move between multiple files
+subtitle: Don't use the mouse to quickly move between multiple files, use the switcher instead.
 seealso:
   - title: (documentation) GoLand Help - Use quick pop-ups
     href: >-
@@ -17,11 +17,7 @@ video: >-
 
 The _Switcher_ allows you to quickly move between open files during your editing session.
 
-**How to use:**
-
 Invoke the _Switcher_ using <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux).
-
-**Pro tip:**
 
 You can use it to quickly switch between the previous file and the current one using the shortcut.
 

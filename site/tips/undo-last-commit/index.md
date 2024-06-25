@@ -1,11 +1,11 @@
 ---
 date: 2022-10-20
-title: Undo Last Commit
+title: Undo your Last Commit
 topics:
   - git
   - vcs
 author: pwe
-subtitle: Undo a commit...without misery.
+subtitle: Undo your last Git commit
 seealso:
   - title: Undo the last commit
     href: "https://www.jetbrains.com/help/idea/undo-changes.html#revert-last-commit"

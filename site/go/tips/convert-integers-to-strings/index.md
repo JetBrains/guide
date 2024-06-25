@@ -1,6 +1,6 @@
 ---
 date: 2023-03-09
-title: Intention action to convert integers to strings
+title: Intention Action to Convert Integers to Strings
 topics:
   - editing
   - go

@@ -1,7 +1,7 @@
 ---
 date: 2024-02-12
 title: Use AI Assistant to Generate Documentation
-subtitle: How AI Assistant can help you to generate documentation
+subtitle: How AI Assistant can help you to generate documentation.
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Generate Documentation
     href: "https://www.jetbrains.com/help/idea/generate-documentation.html"

@@ -1,14 +1,11 @@
 ---
 date: 2023-08-24
-title: Lean UI JetBrains IDE
+title: Lean UI
 topics:
   - ide
   - platform
 author: hs
-subtitle: >-
-  Have you ever wondered how to achieve a lean-looking editor without
-  sacrificing essential features? Our IDEs come packed with functionalities, but
-  sometimes, all those toolbars and status bars can clutter your workspace.
+subtitle: Get tips for modifying your JetBrains IDE UI.
 thumbnail: ./thumbnail.png
 seealso:
   - title: Hide or restore all tool windows

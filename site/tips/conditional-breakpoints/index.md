@@ -4,7 +4,7 @@ title: Working with Conditional Breakpoints
 topics:
   - debugging
 author: hs
-subtitle: Learn how to use and configure conditional breakpoints
+subtitle: Learn how to stop your JetBrains IDE debugger when a certain condition is true.
 thumbnail: ./thumbnail.png
 seealso:
   - title: Using the Condition Properties on Breakpoints

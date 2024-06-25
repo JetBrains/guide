@@ -1,11 +1,11 @@
 ---
 date: 2021-07-06
-title: "Go 1.17: Convert slice to array pointer"
+title: Convert Slice to Array Pointer
 topics:
   - editing
   - go
 author: dlsniper
-subtitle: With Go 1.17, it is possible to covert a slice to an array pointer
+subtitle: With Go 1.17, it is possible to covert a slice to an array pointer.
 thumbnail: ./thumbnail.png
 screenshot: ./card.png
 ---

@@ -5,7 +5,7 @@ topics:
   - git
   - vcs
 author: pwe
-subtitle: See what's happening on that other branch.
+subtitle: Take a look at commits on other branches.
 seealso:
   - title: Sync with a remote Git repository
     href: "https://www.jetbrains.com/help/idea/sync-with-a-remote-repository.html"

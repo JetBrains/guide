@@ -1,6 +1,6 @@
 ---
 date: 2024-06-20
-title: Create getters and setters for struct fields
+title: Create Getters and Setters for Struct Fields
 topics:
   - editing
   - go
@@ -13,7 +13,6 @@ video: >-
 
 Do you need to access your struct fields via getters and setters? Add all the boilerplate code you need using the dedicated _Generate getter and setter_ action.
 
-**How to use:**
 Select a struct type, then press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and choose _Generate getter and setter_ from the list of available actions.
 
 Choose which fields should have these methods generated, then press _OK_ to generate them.

@@ -1,6 +1,6 @@
 ---
 date: 2021-05-24
-title: Create missing struct types with all fields
+title: Create Missing Struct Types with all Fields
 topics:
   - editing
   - go
@@ -11,7 +11,6 @@ video: >-
   https://www.youtube.com/watch?v=OKfYRk3nO0s&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=39
 ---
 
-**How to use:**
 Place the cursor on a type that's not yet defined but used.
 
 Then, press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and select the **Create type** action.

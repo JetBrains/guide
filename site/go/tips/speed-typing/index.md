@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: Speed typing
+title: Speed Typing
 topics:
   - editing
   - go
@@ -11,6 +11,6 @@ video: >-
   https://www.youtube.com/watch?v=dNGyprUoLWQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=150
 ---
 
-**Speed Typing** is the ability to type anything in a list and have the results filtered.
+Speed Typing is the ability to type anything in a list and have the results filtered.
 
 You can then use the arrow keys to move through the list, or press <kbd>␛</kbd> (macOS) / <kbd>Escape</kbd> (Windows/Linux) to dismiss the filter.

@@ -1,13 +1,11 @@
 ---
 date: 2021-07-29
-title: Connect from the IDE to a MongoDB database
+title: Connect to a MongoDB database
 topics:
   - databases
   - mongodb
 author: dlsniper
-subtitle: >-
-  Gain access to the database from the IDE and do all the work in the same
-  window.
+subtitle: Access a MongoDB database from your JetBrains IDE and do the work in the same window.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/ZdaWB9C4UdU?list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW"
 obsoletes:

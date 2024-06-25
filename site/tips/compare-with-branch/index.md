@@ -5,7 +5,7 @@ topics:
   - git
   - vcs
 author: pwe
-subtitle: See the changes in another branch's commits.
+subtitle: See the changes in another branch's commits and compare them with your branch.
 seealso:
   - title: Compare branches
     href: "https://www.jetbrains.com/help/idea/manage-branches.html#compare_branches"
