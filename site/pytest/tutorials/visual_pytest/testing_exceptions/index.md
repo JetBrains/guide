@@ -8,7 +8,7 @@ topics:
 author: hs
 subtitle: Write tests which ensure exceptions are raised when expected.
 thumbnail: ./thumbnail.png
-video: ""
+video: "https://youtu.be/X8W83ZEd1Is"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/testing_exceptions/
   - /python/tutorials/visual_pytest/testing_exceptions/
