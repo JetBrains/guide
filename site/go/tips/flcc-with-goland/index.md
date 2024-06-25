@@ -18,4 +18,4 @@ thumbnail: ./thumbnail.png
 video: https://youtu.be/4eEHghBKjkg
 ---
 
-We are living in the world of AI, and we can observe that developers are on their own way to adoption. Starting from v2024.1 of JetBrains IDEs you get to witness the powerful code completion, which utilizes a deep learning model and runs on your local device without sending anything over the internet.
+We are living in the world of AI. Starting from v2024.1 of JetBrains IDEs you get to witness the powerful code completion, which utilizes a deep learning model and runs on your local device without sending anything over the internet.
