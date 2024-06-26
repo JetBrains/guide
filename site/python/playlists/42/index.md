@@ -30,7 +30,7 @@ playlistItems:
   - /python/tips/make-extend-selection/
   - /python/tips/move-block/
   - /tips/reformat-code-or-file/
-  - /python/tips/optimize-imports/
+  - /tips/optimize-imports/
   - /python/tips/generate-imports-while-typing/
   - /python/tips/install-and-import/
   - /python/tips/constructor-fields/

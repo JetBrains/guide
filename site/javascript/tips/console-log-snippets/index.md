@@ -1,20 +1,17 @@
 ---
-date: 2023-01-27
+date: 2024-06-24
 title: Add console.log Faster
 subtitle: Use Postfix Completion to quickly add console.log.
 topics:
   - editing
   - javascript
   - typescript
-author: er
+author: pwe
 seealso:
   - title: Postfix completion in WebStorm
     href: "https://www.jetbrains.com/help/webstorm/settings-postfix-completion.html"
 thumbnail: ./thumbnail.png
-animatedGif:
-  file: ./tip.webm
-  width: 600
-  height: 300
+video: ./tip.webm
 ---
 
 Need to add `console.log()`?

@@ -22,7 +22,6 @@ playlistItems:
   - /go/tips/expanding-shrinking-selection/
   - /go/tips/move-block/
   - /tips/reformat-code-or-file/
-  - /go/tips/optimize-imports/
   - /go/tips/generate-imports-while-typing/
   - /go/tips/install-and-import/
   - /go/tips/add-field-to-struct/
