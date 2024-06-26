@@ -12,14 +12,13 @@ import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
 import RelatedResources from "../../relatedresources/RelatedResources.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 import { UserComments } from "../../userComments.11ty";
-import { renderToString } from "jsx-async-runtime";
 
 export type TipLayoutData = LayoutProps & TipFrontmatter;
 
-export async function TipLayout(
+export function TipLayout(
 	this: LayoutContext,
 	data: TipLayoutData,
-): Promise<string> {
+): JSX.Element {
 	const { collections, content, page } = data;
 	const tip = collections.resourceMap.get(page.url) as Tip;
 	if (!tip) {
@@ -84,7 +83,7 @@ export async function TipLayout(
 		</Fragment>
 	);
 
-	return await renderToString(<BaseLayout {...data}>{main}</BaseLayout>);
+	return <BaseLayout {...data}>{main}</BaseLayout>;
 }
 
 export const render = TipLayout;

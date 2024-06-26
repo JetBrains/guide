@@ -3,6 +3,7 @@ import ArticlesLayout from "./ArticlesLayout.11ty";
 import { screen } from "@testing-library/dom";
 import fixtures, { baseRenderData } from "../../fixtures";
 import { ReferenceLayoutProps } from "../../layouts/ReferenceLayout.11y";
+import { renderToString } from "jsx-async-runtime";
 
 test("should render ArticlesLayout", async () => {
 	const renderProps: ReferenceLayoutProps = {
@@ -21,9 +22,8 @@ test("should render ArticlesLayout", async () => {
 	fixtures.context.getResource = () =>
 		fixtures.resourceMap.get(firstArticleURL)!;
 	const articlesLayout = new ArticlesLayout();
-	document.body.innerHTML = await articlesLayout.render.call(
-		fixtures.context,
-		renderProps,
+	document.body.innerHTML = await renderToString(
+		articlesLayout.render.call(fixtures.context, renderProps),
 	);
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: fixtures.articles[0].title,

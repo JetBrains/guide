@@ -8,7 +8,6 @@ import { ResourceFrontmatter } from "../../src/ResourceModels";
 import { BaseLayout } from "./BaseLayout.11ty";
 import Pagination from "../pagination/Pagination.11ty";
 import { sortByFrontmatter } from "../queries";
-import { renderToString } from "jsx-async-runtime";
 
 type FullData = {
 	pagination: {
@@ -55,10 +54,7 @@ export default class ListingLayout {
 		};
 	}
 
-	async render(
-		this: LayoutContext,
-		data: ListingLayoutProps,
-	): Promise<JSX.Element> {
+	render(this: LayoutContext, data: ListingLayoutProps): JSX.Element {
 		const { content, figure, pagination } = data;
 		const paginationItems = pagination ? pagination.items : [];
 		const resources = paginationItems.map((r: any) => {
@@ -85,7 +81,7 @@ export default class ListingLayout {
 			</section>
 		);
 
-		return await renderToString(
+		return (
 			<BaseLayout {...data}>
 				<section class="section">
 					<div class="container">
@@ -113,7 +109,7 @@ export default class ListingLayout {
 				</section>
 
 				{pages}
-			</BaseLayout>,
+			</BaseLayout>
 		);
 	}
 }

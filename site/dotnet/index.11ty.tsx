@@ -14,7 +14,6 @@ import {
 	TUTORIAL_RESOURCE,
 	TUTORIAL_STEP_RESOURCE,
 } from "../../src/resourceType";
-import { renderToString } from "jsx-async-runtime";
 
 const frontmatter: ChannelFrontmatter = {
 	title: ".NET",
@@ -40,10 +39,7 @@ export default class DotNetHomepage {
 		};
 	}
 
-	async render(
-		this: LayoutContext,
-		data: ChannelHomepageData,
-	): Promise<string> {
+	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
 		const topics = this.getResources({
@@ -106,7 +102,7 @@ export default class DotNetHomepage {
 				r.slug.indexOf("day-online") >= 0 || r.slug.indexOf("days-online") >= 0,
 		});
 
-		return await renderToString(
+		return (
 			<BaseLayout {...data}>
 				<HeroSection
 					title={channel.title}
@@ -209,7 +205,7 @@ export default class DotNetHomepage {
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
-			</BaseLayout>,
+			</BaseLayout>
 		);
 	}
 }

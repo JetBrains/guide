@@ -6,7 +6,6 @@ import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Article } from "./ArticleModels";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
-import { renderToString } from "jsx-async-runtime";
 
 export default class ArticlesLayout {
 	data() {
@@ -18,10 +17,7 @@ export default class ArticlesLayout {
 		};
 	}
 
-	async render(
-		this: LayoutContext,
-		data: ReferenceLayoutProps,
-	): Promise<string> {
+	render(this: LayoutContext, data: ReferenceLayoutProps): JSX.Element {
 		const { content, pagination } = data;
 		const paginationItems = pagination ? pagination.items : [];
 		const articles: Article[] = paginationItems.map((t: any) => {
@@ -35,8 +31,6 @@ export default class ArticlesLayout {
 				})}
 			</Fragment>
 		);
-		return await renderToString(
-			<ReferenceLayout {...data} listing={listing} content={content} />,
-		);
+		return <ReferenceLayout {...data} listing={listing} content={content} />;
 	}
 }

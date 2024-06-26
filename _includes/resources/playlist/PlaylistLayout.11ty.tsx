@@ -1,7 +1,7 @@
 import { Playlist, PlaylistFrontmatter } from "./PlaylistModels";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import VideoPlayer from "../../video/VideoPlayer.11ty";
-import { parse, HTMLElement } from "node-html-parser";
+import { HTMLElement, parse } from "node-html-parser";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import ArticleTitleSubtitle from "../common/ArticleTitleSubtitle.11ty";
 import ArticleAuthor from "../common/ArticleAuthor.11ty";
@@ -9,7 +9,6 @@ import ArticleTopics from "../common/ArticleTopics.11ty";
 import { Author } from "../author/AuthorModels";
 import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
-import { renderToString } from "jsx-async-runtime";
 import path from "upath";
 
 export type PlaylistLayoutData = LayoutProps & PlaylistFrontmatter;
@@ -67,10 +66,10 @@ function relativize(originalUrl: string, content: string) {
 	return doc.toString();
 }
 
-export async function PlaylistLayout(
+export function PlaylistLayout(
 	this: LayoutContext,
 	data: PlaylistLayoutData,
-): Promise<string> {
+): JSX.Element {
 	const { collections, content, page } = data;
 	const playlist = collections.resourceMap.get(page.url) as Playlist;
 	if (!playlist) {
@@ -172,7 +171,7 @@ export async function PlaylistLayout(
 	);
 
 	// data-meta will be processed out
-	return await renderToString(
+	return (
 		<BaseLayout subtitle={playlist.subtitle} {...data}>
 			<div class="section">
 				<div class="container">
@@ -184,7 +183,7 @@ export async function PlaylistLayout(
 					</div>
 				</div>
 			</div>
-		</BaseLayout>,
+		</BaseLayout>
 	);
 }
 

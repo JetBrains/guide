@@ -8,7 +8,6 @@ import {
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import { LINK_RESOURCE, TIP_RESOURCE } from "../../src/resourceType";
-import { renderToString } from "jsx-async-runtime";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Artificial Intelligence",
@@ -29,10 +28,7 @@ class AIHomepage {
 		};
 	}
 
-	async render(
-		this: LayoutContext,
-		data: ChannelHomepageData,
-	): Promise<string> {
+	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
 		const links = this.getResources({
@@ -52,7 +48,7 @@ class AIHomepage {
 			limit: 4,
 		});
 
-		return await renderToString(
+		return (
 			<BaseLayout {...data}>
 				<HeroSection
 					title={channel.title}
@@ -83,7 +79,7 @@ class AIHomepage {
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
-			</BaseLayout>,
+			</BaseLayout>
 		);
 	}
 }

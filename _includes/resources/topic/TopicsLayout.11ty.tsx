@@ -4,12 +4,11 @@ import {
 } from "../../layouts/ReferenceLayout.11y";
 import { Topic } from "./TopicModels";
 import { LayoutContext } from "../../../src/models";
-import { renderToString } from "jsx-async-runtime";
 
-export async function TopicsLayout(
+export function TopicsLayout(
 	this: LayoutContext,
 	data: ReferenceLayoutProps,
-): Promise<string> {
+): JSX.Element {
 	const topics = this.getResources({
 		resourceTypes: ["topic"],
 	}) as Topic[];
@@ -66,9 +65,7 @@ export async function TopicsLayout(
 		</section>
 	);
 
-	return await renderToString(
-		<ReferenceLayout {...data} listing={listing} content={data.content} />,
-	);
+	return <ReferenceLayout {...data} listing={listing} content={data.content} />;
 }
 
 export const render = TopicsLayout;

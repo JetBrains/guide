@@ -13,7 +13,7 @@ import { Playlist } from "./resources/playlist/PlaylistModels";
 import { dumpSchemas } from "../src/schemas";
 import * as fs from "fs";
 import MarkdownIt from "markdown-it";
-import { getHighlighter, bundledLanguages } from "shiki";
+import { bundledLanguages, getHighlighter } from "shiki";
 import {
 	getResource,
 	getResources,
@@ -27,6 +27,7 @@ import { RESOURCE_TYPES } from "../src/resourceType";
 import { Link } from "./resources/link/LinkModels";
 import path from "upath";
 import { darkTheme } from "jetbrains-ide-themes";
+import { renderToString } from "jsx-async-runtime";
 
 export type ResourceMapType = {
 	channel: Channel;
@@ -66,8 +67,19 @@ export async function registerIncludes(
 
 	eleventyConfig.addExtension(["11ty.jsx", "11ty.ts", "11ty.tsx"], {
 		key: "11ty.js",
+		compile: function () {
+			return async function (data: any) {
+				// @ts-ignore
+				const content: JSX.Element = await this.defaultRenderer(data);
+				return renderToString(content);
+			};
+		},
 	});
 	eleventyConfig.addTemplateFormats("11ty.ts,11ty.tsx");
+
+	eleventyConfig.addTemplateFormats("11ty.jsx, 11ty.tsx");
+
+	eleventyConfig.addTemplateFormats("11ty.jsx, 11ty.tsx");
 
 	// jsx doesn't let you add <!DOCTYPE html> as an element
 	// this hacks the rendering to force the content in at transform time

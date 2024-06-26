@@ -12,7 +12,6 @@ import {
 	TIP_RESOURCE,
 	TUTORIAL_RESOURCE,
 } from "../../src/resourceType";
-import { renderToString } from "jsx-async-runtime";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "pytest Framework",
@@ -35,10 +34,7 @@ class PytestHomepage {
 		};
 	}
 
-	async render(
-		this: LayoutContext,
-		data: ChannelHomepageData,
-	): Promise<string> {
+	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
 		const all = this.getResources({
@@ -49,7 +45,7 @@ class PytestHomepage {
 			limit: 8,
 		});
 
-		return await renderToString(
+		return (
 			<BaseLayout {...data}>
 				<HeroSection
 					title={channel.title}
@@ -77,7 +73,7 @@ class PytestHomepage {
 						includeContentType={true}
 					/>
 				)}
-			</BaseLayout>,
+			</BaseLayout>
 		);
 	}
 }

@@ -8,7 +8,6 @@ import {
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import MultiColumnSection from "../../_includes/pageelements/MultiColumnSection";
-import { renderToString } from "jsx-async-runtime";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Go",
@@ -35,10 +34,7 @@ export default class GoHomepage {
 		};
 	}
 
-	async render(
-		this: LayoutContext,
-		data: ChannelHomepageData,
-	): Promise<string> {
+	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 		const tips = this.getResources({
 			resourceTypes: ["tip"],
@@ -58,7 +54,7 @@ export default class GoHomepage {
 			limit: 4,
 		});
 
-		return await renderToString(
+		return (
 			<BaseLayout {...data}>
 				<HeroSection
 					title={channel.title}
@@ -133,7 +129,7 @@ export default class GoHomepage {
 						separator={true}
 					/>
 				)}
-			</BaseLayout>,
+			</BaseLayout>
 		);
 	}
 }

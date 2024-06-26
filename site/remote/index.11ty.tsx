@@ -6,7 +6,6 @@ import {
 	ChannelHomepageData,
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
-import { renderToString } from "jsx-async-runtime";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Remote Development",
@@ -37,13 +36,10 @@ export default class RemoteHomepage {
 		};
 	}
 
-	async render(
-		this: LayoutContext,
-		data: ChannelHomepageData,
-	): Promise<string> {
+	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
-		return await renderToString(
+		return (
 			<BaseLayout {...data}>
 				<HeroSection
 					title={channel.title}
@@ -309,7 +305,7 @@ export default class RemoteHomepage {
 						</div>
 					</div>
 				</section>
-			</BaseLayout>,
+			</BaseLayout>
 		);
 	}
 }

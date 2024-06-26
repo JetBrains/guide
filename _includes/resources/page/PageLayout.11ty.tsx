@@ -2,15 +2,14 @@ import { PageFrontmatter } from "./PageModels";
 import { LayoutContext, LayoutProps } from "../../../src/models";
 import { BaseLayout } from "../../layouts/BaseLayout.11ty";
 import Heading from "../../heading/Heading.11ty";
-import { renderToString } from "jsx-async-runtime";
 
 export type PageLayoutData = LayoutProps & PageFrontmatter;
 
-export async function PageLayout(
+export function PageLayout(
 	this: LayoutContext,
 	data: PageLayoutData,
-): Promise<string> {
-	return await renderToString(
+): JSX.Element {
+	return (
 		<BaseLayout {...data}>
 			<Heading title={data.title} subtitle={data.subtitle} />
 			<section class="section">
@@ -20,7 +19,7 @@ export async function PageLayout(
 					</main>
 				</div>
 			</section>
-		</BaseLayout>,
+		</BaseLayout>
 	);
 }
 

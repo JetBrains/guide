@@ -6,12 +6,11 @@ import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Author } from "./AuthorModels";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
-import { renderToString } from "jsx-async-runtime";
 
-export async function AuthorLayout(
+export function AuthorLayout(
 	this: LayoutContext,
 	data: ReferenceLayoutProps,
-): Promise<string> {
+): JSX.Element {
 	const { collections, content, page } = data;
 	const author = collections.resourceMap.get(
 		`author:${page.fileSlug}`,
@@ -34,9 +33,7 @@ export async function AuthorLayout(
 		</Fragment>
 	);
 
-	return await renderToString(
-		<ReferenceLayout {...data} listing={listing} content={content} />,
-	);
+	return <ReferenceLayout {...data} listing={listing} content={content} />;
 }
 
 export const render = AuthorLayout;

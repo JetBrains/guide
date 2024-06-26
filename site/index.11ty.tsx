@@ -7,7 +7,6 @@ import { CHANNEL_RESOURCE } from "../src/resourceType";
 import { Resource } from "../src/ResourceModels";
 import { Channel } from "../_includes/resources/channel/ChannelModels";
 import { Topic } from "../_includes/resources/topic/TopicModels";
-import { renderToString } from "jsx-async-runtime";
 
 type IndexPageProps = LayoutProps & PageFrontmatter;
 
@@ -21,7 +20,7 @@ export default class IndexPage {
 		};
 	}
 
-	async render(this: LayoutContext, data: IndexPageProps): Promise<string> {
+	render(this: LayoutContext, data: IndexPageProps): JSX.Element {
 		const channels = [
 			this.getResource("/javascript/"),
 			this.getResource("/python/"),
@@ -45,7 +44,7 @@ export default class IndexPage {
 			this.getResource("/tags/refactoring/"),
 		] as Topic[];
 
-		return await renderToString(
+		return (
 			<BaseLayout {...data}>
 				<section class="section has-background-grey-darker has-glow-purple-transparent">
 					<div class="container">
@@ -189,7 +188,7 @@ export default class IndexPage {
 						</div>
 					</div>
 				</section>
-			</BaseLayout>,
+			</BaseLayout>
 		);
 	}
 }
