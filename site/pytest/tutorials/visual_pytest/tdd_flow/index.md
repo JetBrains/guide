@@ -24,7 +24,7 @@ First, we need to create our new guardian class. From your Project tool window <
 
 ![new-python-file.png](new-python-file.png)
 
-Call your new class `guardian` and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux). PyCharm will create your new python file `src/laxleague/guardian.py` with an empty class:
+Call your new class `Guardian` and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux). PyCharm will create your new python file `src/laxleague/guardian.py` with an empty class:
 
 ```python
 import dataclasses

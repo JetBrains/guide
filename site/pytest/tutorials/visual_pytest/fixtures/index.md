@@ -20,9 +20,9 @@ Each test recreates `Player` and `Guardian` instances, which is repetitive and d
 
 Once again, check that your code is on the left, your test is on the right, your _Run_ tool window is at the bottom and your tests are automatically running when there is a change to your code or tests.
 
-## Create a new fixture for `player` and refactor `test_player.py`
+## Create a new fixture for `Player` and refactor `test_player.py`
 
-In `test_player.py` class we will make a new fixture for the player object:
+In `test_player.py` we will make a new fixture for the player object:
 
 ```python
 @pytest.fixture
@@ -77,7 +77,7 @@ Pause and check that all your tests are passing after this refactor:
 
 ![player-fixture-passing.png](player-fixture-passing.png)
 
-## Create a new fixture for `guardian` and refactor `test_player`
+## Create a new fixture for `Guardian` and refactor `test_player`
 
 Now we have a fixture for the player object, it's time to make another for the guardian object in `test_player.py`:
 
@@ -111,7 +111,7 @@ Once again, check all your tests are still passing:
 
 ![player-fixture-passing.png](player-fixture-passing.png)
 
-## Use `guardian` fixture in our `test_guardian.py` class
+## Use `Guardian` fixture in our `test_guardian.py` class
 
 Copy your `guardians_list()` fixture from `test_player.py` and then use Recent Files <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) to switch to `test_guardian.py` and paste the `guardians_list()` fixture there too. Let PyCharm handle the import for `pytest` as before:
 
@@ -140,7 +140,7 @@ You've probably noticed at this point that we have duplication. Don't worry, we'
 
 ## Create a `conftest.py` file
 
-A `conftest.py` file is used in pytest to share fixtures across multiple files. We're going to refactor our code to remove the fixtures from both our `test_guardian.py` and `test_player.py` files and move it into a single `conftest.py` file.
+A `conftest.py` file is used in `pytest` to share fixtures across multiple files. We're going to refactor our code to remove the fixtures from both our `test_guardian.py` and `test_player.py` files and move it into a single `conftest.py` file.
 
 Since you're still in `test_guardian.py`, delete the guardians fixture `guardians_list()` from your code and then use Optimize Imports <kbd>⌃⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+O</kbd> (Windows/Linux) to remove any unused imports. Next use Reformat Code <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux) to tidy up an errant spacing issues. Don't worry - this will momentarily break your code but we will fix it!
 
@@ -162,7 +162,7 @@ Before I leave you, naming is hard. I don't like the name `guardians_list` for m
 
 I'll go with `all_guardians` and then press Refactor:
 
-![all_gaurdians.png](all_gaurdians.png)
+![all_guardians.png](all_guardians.png)
 
 PyCharm now gives you a preview of which files will change and we can see that both our usages and the definition in `conftest.py` will be correctly updated:
 

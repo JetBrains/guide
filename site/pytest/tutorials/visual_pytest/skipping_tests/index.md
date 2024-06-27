@@ -22,7 +22,7 @@ Once again, make sure you have PyCharm set up to automatically rerun your tests 
 
 ## Skip the failing test
 
-There are a number of reasons that you might want to skip a failing test and pytest has excellent support for it. Let's add a new test to our `test_player` class:
+There are a number of reasons that you might want to skip a failing test and pytest has excellent support for it. Let's add a new test to our `test_player` module:
 
 ```python
 def test_add_guardians():
@@ -55,7 +55,7 @@ def test_add_guardians():
 
 ## Implement the code
 
-Let's use <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux) over to our `player` class and create the implementation next:
+Let's use <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux) over to our `Player` class and create the implementation next:
 
 ```python
 def add_guardians(self, guardians: list[Guardian]):
@@ -88,7 +88,7 @@ PyCharm has highlighted the code that it doesn't understand:
 
 ![primary-guardian-unknown.png](primary-guardian-unknown.png)
 
-Let's <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux) over to our `player` class to craft the implementation:
+Let's <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux) over to our `Player` class to craft the implementation:
 
 ```python
 @property

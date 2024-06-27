@@ -17,9 +17,9 @@ obsoletes:
 
 ## Testing our constructor
 
-Set your PyCharm display into _TDD-mode_ with your `player` class on the left and your `test_player` class on the right.
+Set your PyCharm display into _TDD-mode_ with your `Player` class on the left and your `test_player` module on the right.
 
-Let's make our `player` class a dataclass before we go any further:
+Let's make our `Player` class a dataclass before we go any further:
 
 ```python
 import dataclasses
@@ -30,7 +30,7 @@ class Player:
     pass
 ```
 
-Now we will <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux) over to our `test_player` class and add a constructor:
+Now we will <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux) over to our `test_player` module and add a constructor:
 
 ```python
 from player import Player
@@ -44,7 +44,7 @@ Almost immediately, we can see that our test has failed because we have not impl
 
 ![failed-test-constructor.png](failed-test-constructor.png)
 
-You can now <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux) back to your `player` class and implement the constructor:
+You can now <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux) back to your `Player` class and implement the constructor:
 
 ```python
 class Player:
@@ -107,7 +107,7 @@ PyCharm doesn't yet know what `add_guardian(g)` is, so let's fix that now. We ca
 
 ![add-method-guardian.png](add-method-guardian.png)
 
-PyCharm will create the method over in our `guardian` class and we can then add the implementation:
+PyCharm will create the method over in our `Guardian` class and we can then add the implementation:
 
 ```python
 def add_guardian(self, guardian):

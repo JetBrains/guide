@@ -8,7 +8,7 @@ We’ll use <kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux)
 
 Fun trick, right-click on your `tests` folder in the Project tool window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux) and select Run Python tests. In `tests` You can see that our previous test ran and passed, as did our new test. Small note here, pressing escape will always put you back in the editor from any toolwindow.
 
-I dangled the possibility of some Test Driven Development or TDD for you so let’s go check out what that looks like in PyCharm. Let’s open our test in a right split, by right-clicking and selecting split right. Now let’s right-click on our `guardian` class and close other tabs so we have our code on the left of the screen and the test on the right.
+I dangled the possibility of some Test Driven Development or TDD for you so let’s go check out what that looks like in PyCharm. Let’s open our test in a right split, by right-clicking and selecting split right. Now let’s right-click on our `Guardian` class and close other tabs so we have our code on the left of the screen and the test on the right.
 
 Down at the the bottom we have our test output so let’s tell PyCharm to automatically re-run our tests when we change something - one less action for us to do! You can configure this delay quickly by clicking on the 3 vertical dots, and going to **Test Runner Settings** > **Set AutoTest Delay**.
 
