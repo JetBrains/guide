@@ -2,77 +2,18 @@
 Transcript
 ==========
 
-    * PyCharm Community Edition
-    * Set the IDE with an out-of-the-box Darcula look
-    * Big font
-    * Presentation assistant
-    * Tabs on top
+In PyCharm, let’s select New Project, and we will give it a name like `laxleague`. We’lll accept the defaults here because I have python 3.11 on my system and a virtual environment is what I want and click **OK**. Now PyCharm will create our project for us.
 
-Python has projects.
-So does PyCharm.
+If you don’t have python yet, you can [download](https://www.python.org/downloads/) it, and then come back and continue this journey!
 
-Let's create a project from the welcome screen.
+Let’s make a new file over in our root called `pyproject.toml`, and give our project a name and version and then add our dependency on `pytest`. Before we move on, let’s create a directory for our source files. We can do this by specifying `src\laxleague` in PyCharm.
 
-PyCharm has good support for virtual environments.
-Accept the defaults, click ``Create``, and you now have an empty Python project.
+Let’s open the terminal tool window with <kbd>⌥F12</kbd> (macOS) / <kbd>Alt+F12</kbd> (Windows/Linux) and use `pip install -e` . to create an editable install. PyCharm will create the editable install and our project is now ready for the next steps.
 
-    * Create New Project
-    * `/Users/pauleveritt/PyCharmProjects/laxleague`
-    * Indicate venv
-    * Click Create
+The editable install creates our `egg-info` directory.
 
-Making a proper Python package means creating a ``setup.py`` at the project root.
-Call the ``setup`` function, which we import from ``setuptools``, with arguments for:
+A small detour here - a requirements file is also perfectly acceptable. We could create a `requirements.txt` file in the same way we just created a `pyproject.toml` file and PyCharm will give you autocompletion here to help you figure out what you’re looking for.
 
-- The name of the project
-- Any extras that might be installed, for example for tests
-- Then two arguments that let us follow good pytest practices by storing the source
-code in a directory named *differently* than our package.
+Before we move on, we also need to create a new test directory so that pytest knows where to look for our tests.
 
-    * Type setup then use Alt-Enter to generate import
-    * Type the extras_require
-    * Type packages then use Alt-Enter to generate find_packages
-    * Type the last part
-
-These last two arguments are obscure but, as the docs indicate, it is STRONGLY suggested.
-
-    - Show pytest Good Integration Practice page
-
-Make the directory and a first file for our source, naming it ``src/laxleague/player.py``.
-The file will, for now, just have an empty class:
-
-    * Activate navigation bar
-    * Make a directory
-
-Open the terminal and run Python's ``pip``, with ``-e .`` used to make a Python "editable install".
-The brackets with ``tests`` tell pip to install the dependencies in the extras__require:
-
-    * Open a terminal with Alt-F12
-    * Type pip install, pause, ``-e .``, pause, ``[tests]``
-    * Enter
-    * Emphasize the extras_require and then its ``tests`` key
-    * Close the terminal window Alt-F12
-
-The editable install works, as the ``egg-info`` directory proves:
-
-    * Emphasize src/*.egg-info
-
-We have a project, with a virtual environment, with pytest installed, and source files in an editable install.
-Now go to the settings, under Python Integrated Tools,  and tell PyCharm to use pytest as the default test runner.
-
-    * Settings | Tools | Python Integrated Tools
-    * Default test runner
-    * Save and close
-
-You can also visit ``New Project Settings`` to make this the default for all new projects.
-
-    * File | New Projects Settings | Settings/Preferences for New Projects
-
-pytest recommends a tests directory outside of our sources.
-Make a new directory named ``tests`` at the project root:
-
-    * Right-click in project root
-    * New directory
-    * ``tests``
-
-
+Let me show you how to check that PyCharm is using pytest. Go into your project settings and search for “test runner”. In this project, PyCharm has set our test runner to pytest because we installed pytest as a requirement, however, it uses `unittest` by default so this is worth knowing in case you ever want to check that you’re using the test runner you expect.

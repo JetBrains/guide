@@ -1,182 +1,137 @@
 ---
 type: TutorialStep
-date: 2020-06-10
+date: 2024-06-26
 title: Jump to Error
 topics:
   - pytest
   - testing
-author: pwe
+author: hs
 subtitle: >-
-  Writing code means writing broken code. Click a link in a traceback to open a
-  file on the line of the error.
+  Writing code means writing broken code. Click a link in a traceback to open a file on the line of the error.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/U2ex-V51-PY"
+video: "https://www.youtube.com/watch?v=EjSYATLwWss"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/jump_to_error/
   - /python/tutorials/visual_pytest/jump_to_error/
 ---
 
-Since we have `Guardian` now, let's hook it up to allow adding a `Guardian` to a `Player`.
+## Testing our constructor
 
-In this step we'll implement this while showing how visual testing can speed you up when you make a mistake.
-First: some housekeeping on our code.
+Set your PyCharm display into _TDD-mode_ with your `Player` class on the left and your `test_player` module on the right.
 
-## Let's Do A `dataclass`
-
-Python 3.7 shipped with a neat feature called dataclasses, available with a backport package to 3.6.
-Let's start by simplifying our two classes with dataclasses and showing a side benefit in test writing.
-
-First, the `Guardian` we were just working on in `guardian.py`:
+Let's make our `Player` class a dataclass before we go any further:
 
 ```python
-{% include "./demos/guardian.py" %}
+import dataclasses
+
+
+@dataclasses.dataclass
+class Player:
+    pass
 ```
 
-When writing this dataclass, note how PyCharm helps:
-
-- Autocomplete and import the `dataclass` decorator
-
-- Autocomplete on str
-
-Our refactoring into a dataclass went well.
-How do we know? Because our tests pass.
-In fact, we didn't have to remember to run our tests, because we setup PyCharm to autorun the tests.
-In double fact, we didn't even have to save the file.
-Yummy.
-
-Now we change our `Player` class:
+Now we will <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux) over to our `test_player` module and add a constructor:
 
 ```python
-{% include "./demos/player01.py" %}
+from player import Player
+
+
+def test_construction():
+    p = Player('Felicity', 'Smith', 16)
 ```
 
-Our `test_player` test fails.
-We also need to update the construction test in `test_player.py`:
+Almost immediately, we can see that our test has failed because we have not implemented the constructor yet:
+
+![failed-test-constructor.png](failed-test-constructor.png)
+
+You can now <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux) back to your `Player` class and implement the constructor:
 
 ```python
-{% include "./demos/test_player01.py" %}
+class Player:
+    first_name: str
+    last_name: str
+    jersey: int
 ```
 
-Now let's get some extra benefit from dataclasses and type annotations.
-In the test, try passing in `Player('Tatiana', b'Jones')`, with a byte-string by accident.
-The dataclass only allows `str` as values for `last_name` and PyCharm very visually makes this clear, just as you type it.
+Take advantage of PyCharm's completion by pressing <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (Windows/Linux) to accept the suggestion. After a brief pause, your tests will pass again.
 
-![Type Warning](type_warning.png)
-
-Verdict: TDD + (IDE + type hinting) == "fail faster."
-
-On to associating a `Guardian` with a `Player`.
-
-## Player with Guardians
-
-We'll follow TDD by writing a failing test first, then doing the implementation.
-This time, though, we'll make a typo, to show a feature of using PyCharm's visual testing.
-
-Let's start with a test in `test_player.py`:
+Now let's go back to our tests with <kbd>^⇥</kbd> (macOS) / <kbd>Ctrl+Tab</kbd> (Windows/Linux) and add assert statements:
 
 ```python
-{% include "./demos/test_player.py" %}
+def test_construction():
+    p = Player('Felicity', 'Smith', 16)
+    assert p.first_name == 'Felicity'
+    assert p.last_name == 'Smith'
+    assert p.jersey == 16
 ```
 
-We first need to ensure, in `test_construction`, that we have an empty list for `player.guardians`.
-Then, in the new test `test_add_guardian`, we make both a player _and_ a guardian, add the guardian to the player, and test the result.
-This means we also import `Guardian` in this test.
+After a brief pause, the tests should now pass again:
 
-Both tests fail:
+![tests-pass-constructor.png](tests-pass-constructor.png)
 
-- We don't yet have `guardians` as a field on our `Player` dataclass
+## Type errors in PyCharm
 
-- We don't have a method `add_guardians`.
+PyCharm will always try and show you errors as you go along meaning you can fix them faster. For example, if PyCharm is expecting you to pass in something of type `str` and you pass in something of type `byte`, it will flag it immediately for you:
 
-![Test Failures](test_failures.png)
+![wrong-type.png](wrong-type.png)
 
-Let's fix this by implementing the feature in `player.py`:
+There are lots of benefits to type hints in your tests, but primarily we want to surface mistakes before they appear in production!
+
+## Implementing plays with guardians
+
+Let's go ahead and create some more tests in a TDD workflow. Update your `test_construction` method to:
 
 ```python
-{% include "./demos/player02.py" %}
+def test_construction():
+    p = Player('Felicity', 'Smith', 16)
+    assert p.first_name == 'Felicity'
+    assert p.last_name == 'Smith'
+    assert p.jersey == 16
 ```
 
-This dataclass adds a new dataclass field named `guardians`.
-It is a little different: as Python's [mutable default values](https://docs.python.org/3/library/dataclasses.html#mutable-default-values) docs explain, Python class attributes can't default to a list. Python
-dataclasses fix this with a dataclass `field` function which can assign a factory to construct the default value.
-
-We used the type `list` in this case. We'll explain more in a moment.
-
-Our new field and the simple `add_guardian` method does the trick: now our tests pass.
-Pretend for a moment that we made a typo. Do the following:
-
-- Change the last line of `players.py` to `self.guardiansxxx.append(guardian)`
-
-- Open `guardian.py` in that tab
-
-- Watch the tests fail with a traceback
-
-- Click on the error link for `player.py:12: AttributeError`
-
-- PyCharm re-opens the file, on the line of the error
-
-- Remove the `xxx`
-
-![Jump To Error](jump_to_error.png)
-
-When writing code under testing, you will _constantly_ make mistakes and generate exceptions.
-PyCharm's handy exception links let you jump right to the error.
-
-## The Benefit of Type Hints When Writing Tests
-
-Type hints generate a lot of pushback in the world of Python.
-But when paired with an IDE like PyCharm, they help you "fail faster."
-
-What does "fail faster" mean?
-
-- You could do nothing and let your mistake surface in production
-
-- Or, write tests and "fail" when your tests run...if you have tests for
-  that code
-
-- Or, write type hints and run a type checker like `mypy` periodically
-
-- Or, have your IDE flag your type-related mistake in real-time, while
-  you are watching it
-
-- Or, have your IDE prompt, via autocomplete, what is valid before you
-  type it
-- All of this, in TDD, as you are a consumer of your own code
-
-Let's see it in action. Our `Player` dataclass says that `guardians` is a `list`, but a list of what?
-Currently you could assign anything you want to it.
-
-Instead, in the `Player` dataclass, let's signify that it is a list of `Guardian` instances:
+And add a new test called `test_add_guardian`:
 
 ```python
-guardians: List[Guardian] = field(default_factory=list)
+def test_add_guardian():
+    g = Guardian('Mary', 'Allen')
+    p = Player('Felicity', 'Smith', 16)
+    p. add_guardian(g)
+    assert p.guardians == [g]
 ```
 
-### Note
+PyCharm has underlined some of this code so we can see that the implementation is missing. We can use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to see why the code is underlined:
 
-As you type `List`, use <kbd>⌃␣</kbd> (macOS) / <kbd>Ctrl+Space</kbd> (Windows/Linux) to complete it, which also generates the import. Same for `Guardian`.
+![pycharm-unresolved.png](pycharm-unresolved.png)
 
-What is `typing.List` and why can't we use `list`?
-It is a "generic", which lets it further specify the types of things it contains.
-`list` saves an import but doesn't allow us to say "list of Guardians".
+PyCharm doesn't yet know what `add_guardian(g)` is, so let's fix that now. We can select **Add method add_guardian() to class Player**:
 
-Next, let's indicate that `add_guardian` can only take a `Guardian` instance:
+![add-method-guardian.png](add-method-guardian.png)
+
+PyCharm will create the method over in our `Guardian` class and we can then add the implementation:
 
 ```python
-def add_guardian(self, guardian: Guardian):
+def add_guardian(self, guardian):
     self.guardians.append(guardian)
 ```
 
-To see how this helps us "fail faster", imagine tried to add a Player as a Guardian.
-Our IDE warns us with a perfect message:
+But wait, there's still a problem. PyCharm has underlined our code again:
 
-![Warning Wrong Type](warning_wrong_type.png)
+![guardians-underlined.png](guardians-underlined.png)
 
-In this latter case, the code would have stored the string.
-Type annotations, combined with the immediate feedback in the IDE, helped us "fail faster", as we type.
-
-Here is our final version of `player.py`:
+This time, move your caret up to your class definition and take advantage of local code completion to add the guardians list to our constructor:
 
 ```python
-{% include "./demos/player.py" %}
+class Player:
+    first_name: str
+    last_name: str
+    jersey: int
+    guardians: list = dataclasses.field(default_factory=list)
 ```
+
+Our tests now pass again:
+
+![tests-passing-again.png](tests-passing-again.png)
+
+## Checking your tests are still auto re-running
+
+You can always validate that your tests are still running automatically at any time by introducing an error into your code (or test), checking that the test for that code fails, and then fixing it. This helps you to have confidence in the code that you're creating.

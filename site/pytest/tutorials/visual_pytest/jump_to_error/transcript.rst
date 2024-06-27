@@ -2,102 +2,35 @@
 Transcript
 ==========
 
-    * guardian.py on left, test_guardian.py on right
+Let’s recap what we did last time and make our player class a dataclass too. Annotate your class with @dataclasses.dataclass and let PyCharm do the rest. We’ll check our tests still pass with Control+R or Shift+F10 before we continue.
 
-Let's add another feature while practicing test-driven development.
+Now let’s Control+Tab back to our test add a real test for our construction but whoops! We can see that it’s failing immediately because we set PyCharm to autorun our tests every 3 seconds.
 
-First a refactor. Instead of a constructor, we change to:
+Let’s Control+Tab back over to our class to add the constructor that this test needs. Perfect, now Control+Tab back to our test and test it properly. Okay, all passing!
 
-- A Python dataclass with its import [pause]
-- Replacing the lines in the constructor [pause]
-- ...with dataclass fields:
+Let’s talk about the errors that we all make and how we can succeed faster. In our player test class, let’s accidentally pass in a byte string, PyCharm warns me that something is wrong.
 
-    * Alt-Cmd-O ``Guardian`` to go to the Guardian symbol
-    * Add ``@datac`` Ctrl-Space | Ctrl-Space
-    * Delete constructor with Alt-Up
-    * Add fields
+If I hover over the error I can see that I’m sending in bytes but the constructor expects a string and then my test will automatically run and fail telling me the same problem.
 
-The tests are on auto-run. They pass, which helps us refactor with confidence.
+Ideally your code will always be working but sometimes that’s not the reality of the situation. Let’s see how we can use Jump To Error to implement players with guardians.
 
-    * Indicate auto-run
-    * Indicate they pass
+First we will assert that a new player has an empty list of type guardian. Then we will make a new test which makes a guardian and then a player and then tries to add the guardian to the player and finishes with an assertion.
 
-Open the ``test_player.py`` file and the ``player.py`` file, then do the same:
+Ah ha! Errors! We can use F2 to cycle through the errors in the class, like the three we have here. Let’s start by adding the add_guardians method to our player class.
 
-- Add the dataclass decorator and its import
-- Replace the constructor...
-- ...with dataclass fields
+We can get PyCharm to do some of the heavy lifting here so we don’t have to. Put your cursor over add_guardian and use Option+Enter or Alt+Enter and select Add method add_guardian to class player. Now we can fill in the blanks.
 
-    * Click in right, Cmd-E, ``t_g``
-    * Click in left, Cmd-E, ``pl``
-    * Add ``@datac`` Ctrl-Space | Ctrl-Space
-    * Delete constructor with Alt-Up
-    * Add fields
+We will change the g to guardians, press Tab and fill in the method. Now, guardians is underlined because PyCharm doesn’t know what that is yet, let’s fix that next.
 
-We spoke previously about failing faster. The switch to dataclasses gives this: if
-I pass a byte-string by accident, my tooling warns me, even before the tests run:
+We’ll create a new dataclass field called guardians to store the list and let PyCharm handle the code completion and import. And now our test passes!
 
-    * Change last_name in test to b'Jones'
-    * Show the warning
+Let’s see some other ways that PyCharm helps you to find and fix errors. Let’s make a silly mistake here and then head off to another class we’ve been working in with Cmd and E or Control and E for Recent Files.
 
-The verdict: TDD + IDE + type hints equals "fail faster"
+From here, we see that our tests are failing! Whoops! Let’s head down to the pytest output, click the link and fix our mistake! Phew, tests are passing again!
 
-To implement players-with-guardians using TDD, we start with failing tests.
+In addition to PyCharm alerting you to a problem, pytest also helps us to understand errors when they occur. What if we accidentally added a player as a guardian? We can prevent that by first changing the list to be of type Guardian…… then change our method to say it must receive a guardian of type Guardian.
 
-First, in our construction test, we assert that a newly-created player has an empty list of guardians.
+Now in our test we try to add a player, instead of a guardian. PyCharm will immediately give you a warning to say that it expected a guardian but it got a player, and of course our test will fail too! Let’s finish by fixing the error so all our tests run.
 
-Next, we make a new test, adding guardians to this list of a player's guardians.
-This test makes a Guardian [pause], then makes a Player [pause], then tries to
-add the Guardian to the Player [pause], finishing with an assertion:
-
-    * Add test_player.py last test
-    * Create guardian
-    * Create player
-    * Add guardian
-    * Assertion
-
-This obviously fails: we having implemented the method. Switch to the Player class and
-do so. First, a dataclass field ``guardians`` to store the list, using a field constructor
-for a default value. Then we add a new method which stores a guardian argument in this list:
-
-    * Goto Symbol Player
-    * Add the player02.py field
-    * Add the method
-
-Our test now passes, but imagine we made a mistake. We have a typo in our method but
-we're already off to another file and test:
-
-    * ``self.guardiansXXX.append``
-    * Cmd-E, ``guar``
-    * Alt-Tab
-    * Cmd-E ``test_guar``
-
-When the test runs, it fails. We can navigate to the line with the exception:
-
-    * Click on failing test
-    * Click in the left window
-    * Click on the exception line
-
-Fix the problem and the tests pass again.
-
-TDD helped us "fail faster" but we can use type hints for even earlier
-detection. What if we accidentally added a Player as a Guardian? We can
-prevent that by first changing the field's type hint to be a List [pause]
-of Guardian instances [pause]. Then, change our method to say it must
-receive a Guardian:
-
-    * Change field
-    * Change argument
-
-Now in our test, if we try to add a Player instead of a Guardian, our IDE
-"fails faster" with a warning, before running or even writing our test.
-
-    * Change to pass in p
-    * Mouse over
-    * Let the tests run
-
-We fix the error. The IDE is happy and the tests then pass.
-
-    * Change to g
-    * Let the tests run
+You learned various ways to find and fix errors in your code including F2 to jump to the error, Option and Enter or Alt and Enter to get PyCharm to fix errors and clicking on the pytest output.  You also saw how PyCharm gives you immediate feedback in your code when there’s a problem so you can fix it before moving on to your next masterpiece!
 

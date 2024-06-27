@@ -1,138 +1,173 @@
 ---
 type: TutorialStep
-date: 2020-06-10
+date: 2024-06-26
 title: Test Fixtures
 topics:
   - pytest
   - testing
-author: pwe
+author: hs
 subtitle: Make your tests more focused by moving sample data to pytest fixtures.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/lidTnXTFssM"
+video: "https://www.youtube.com/watch?v=olURgWWTdR8"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/fixtures/
   - /python/tutorials/visual_pytest/fixtures/
 ---
 
-Each test recreates `Player` and `Guardian` instances, which is repetitive and distracts from the test's purpose.
-[pytest fixtures](https://docs.pytest.org/en/latest/fixture.html) give a rich infrastructure for your test data.
+Each test recreates `Player` and `Guardian` instances, which is repetitive and distracts from the test's purpose. [pytest fixtures](https://docs.pytest.org/en/latest/fixture.html) give a rich infrastructure for your test data. In this tutorial step we convert our tests to use fixtures, which we then share between files using `conftest.py`.
 
-In this tutorial step we convert our tests to use fixtures, which we then share between files using `conftest.py`.
+## Confirm PyCharm is in TDD-mode
 
-## Make a `Player` Once
+Once again, check that your code is on the left, your test is on the right, your _Run_ tool window is at the bottom and your tests are automatically running when there is a change to your code or tests.
 
-We have a `Player` instance that we currently make in four of our tests.
-It's the same instance with the same arguments.
-It would be nice to avoid repetition and let our tests focus on the logic under test, instead of setting up a baseline of test data.
+## Create a new fixture for `Player` and refactor `test_player.py`
 
-Let's make a `pytest` fixture named `player_one` which constructs and returns a `Player`:
+In `test_player.py` we will make a new fixture for the player object:
 
-```python {1,6-8}
-import pytest
-from laxleague.guardian import Guardian
-from laxleague.player import Player
-
-
+```python
 @pytest.fixture
 def player_one() -> Player:
-    return Player('Tatiana', 'Jones')
+    return Player('Felicity', 'Smith', 16)
 ```
 
-This fixture can now be used as an argument to your tests.
-`pytest` will find the "appropriate" (more on this later) fixture with that name, invoke it, and pass in the result:
+We now need to refactor our test code to use this fixture. Test functions request fixtures by declaring them as arguments. First, let's refactor our `test_construction` method to use the fixture:
 
 ```python
 def test_construction(player_one):
-    assert 'Tatiana' == player_one.first_name
-    assert 'Jones' == player_one.last_name
+    assert player_one.first_name == 'Felicity'
+    assert player_one.last_name == 'Smith'
+    assert player_one.jersey == 16
     assert [] == player_one.guardians
 ```
 
-Our tests still pass.
-We then make the same change in the other tests, taking the `player_one` fixture as an argument instead of constructing a `Player` in the test body.
+Same again for `test_add_guardian`:
 
-Let's next make a fixture to hold the `Guardian` list:
+```python
+def test_add_guardian(player_one):
+    g = Guardian('Jennifer', 'Smith')
+    player_one.add_guardian(g)
+    assert player_one.guardians == [g]
+```
 
-```python {1,13-18}
-from typing import Tuple
+And again for `test_add_guardians`:
 
-import pytest
-from laxleague.guardian import Guardian
-from laxleague.player import Player
+```python
+def test_add_guardians(player_one):
+    g1 = Guardian('Jennifer', 'Smith')
+    player_one.add_guardians([g1])
+    g2 = Guardian('Mark', 'Smith')
+    g3 = Guardian('Julia', 'Smith')
+    player_one.add_guardians([g2, g3])
+    assert player_one.guardians == ([g1, g2, g3])
+```
 
+Last but not least, for `test_primary_guardian`:
 
+```python
+def test_primary_guardian(player_one):
+    g1 = Guardian('Jennifer', 'Smith')
+    player_one.add_guardians([g1])
+    g2 = Guardian('Mark', 'Smith')
+    g3 = Guardian('Julia', 'Smith')
+    player_one.add_guardians([g2, g3])
+    assert g1 == player_one.primary_guardian
+```
+
+Pause and check that all your tests are passing after this refactor:
+
+![player-fixture-passing.png](player-fixture-passing.png)
+
+## Create a new fixture for `Guardian` and refactor `test_player`
+
+Now we have a fixture for the player object, it's time to make another for the guardian object in `test_player.py`:
+
+```python
 @pytest.fixture
-def player_one() -> Player:
-    return Player('Tatiana', 'Jones')
+def guardians_list() -> list[Guardian]:
+    g1 = Guardian('Jennifer', 'Smith')
+    g2 = Guardian('Mark', 'Smith')
+    g3 = Guardian('Julia', 'Smith')
+    return [g1, g2, g3]
+```
 
+Next, refactor the tests that use the guardian object, starting with `test_add_guardian` to use the new guardians list:
 
+```python
+def test_add_guardian(player_one, guardians_list):
+    player_one.add_guardian(guardians_list[0])
+    assert player_one.guardians == [guardians_list[0]]
+```
+
+Next up, `test_primary_guardian`:
+
+```python
+def test_primary_guardian(player_one):
+    player_one.add_guardians([guardians_list[0]])
+    player_one.add_guardians([guardians_list[1], guardians_list[2]])
+    assert guardians_list[0] == player_one.primary_guardian
+```
+
+Once again, check all your tests are still passing:
+
+![player-fixture-passing.png](player-fixture-passing.png)
+
+## Use `Guardian` fixture in our `test_guardian.py` class
+
+Copy your `guardians_list()` fixture from `test_player.py` and then use Recent Files <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) to switch to `test_guardian.py` and paste the `guardians_list()` fixture there too. Let PyCharm handle the import for `pytest` as before:
+
+```python
 @pytest.fixture
-def guardians() -> Tuple[Guardian, ...]:
-    g1 = Guardian('Mary', 'Jones')
-    g2 = Guardian('Joanie', 'Johnson')
-    g3 = Guardian('Jerry', 'Johnson')
-    return g1, g2, g3
+def guardians_list() -> list[Guardian]:
+    g1 = Guardian('Jennifer', 'Smith')
+    g2 = Guardian('Mark', 'Smith')
+    g3 = Guardian('Julia', 'Smith')
+    return [g1, g2, g3]
 ```
 
-After converting all the tests to use these fixtures, our `test_player.py` looks like the following:
+Finally, refactor your `test_construction()` method use the guardian fixture:
 
 ```python
-{% include "./demos/test_player01.py" %}
+def test_construction(guardians_list):
+    assert guardians_list[0].first_name == 'Jennifer'
+    assert guardians_list[0].last_name == 'Smith'
 ```
 
-Our tests are now easier to reason about.
+Check that your tests all still pass:
 
-## Sharing Fixtures with `conftest.py`
+![player-fixture-passing.png](player-fixture-passing.png)
 
-Next we give `test_guardian.py` the same treatment:
+You've probably noticed at this point that we have duplication. Don't worry, we're going to fix that in the next step!
 
-```python
-{% include "./demos/test_guardian01.py" %}
-```
+## Create a `conftest.py` file
 
-Hmm, something looks wrong.
-We said fixtures helped _avoid_ repetition, but this `guardians` fixture is the same as the one in `test_player.py`.
-That's repetition.
-Is there a way to move fixtures out of tests, then share them between tests?
+A `conftest.py` file is used in `pytest` to share fixtures across multiple files. We're going to refactor our code to remove the fixtures from both our `test_guardian.py` and `test_player.py` files and move it into a single `conftest.py` file.
 
-Yes, in fact, multiple ways.
-The simplest is with `pytest`'s `conftest.py` file.
-You put this in a test directory (or parent directory, or grandparent etc.) and any fixtures defined there will be available as an argument to a test.
+Since you're still in `test_guardian.py`, delete the guardians fixture `guardians_list()` from your code and then use Optimize Imports <kbd>⌃⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+O</kbd> (Windows/Linux) to remove any unused imports. Next use Reformat Code <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux) to tidy up an errant spacing issues. Don't worry - this will momentarily break your code but we will fix it!
 
-Here's our `tests/conftest.py` file with the fixtures we just added in `test_player.py`:
+Use Recent Files <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) to switch to `test_player.py` and cut both `guardians_list()` and `player_one()` fixtures from the file. Again, use Optimize Imports <kbd>⌃⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+O</kbd> (Windows/Linux) to remove any unused imports and Reformat Code <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux) to tidy up an errant spacing issues.
 
-```python
-{% include "./demos/conftest.py" %}
-```
+Go to your Project tool window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux) and at the root of your project, right-click and select **New** > **File**. You can filter the list by python by typing in "python" and then press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux). Call the file `conftest` (PyCharm will add the `.py` if you selected a python file) and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) again. PyCharm will create your new `conftest.py` file at the root of your directory.
 
-Now our `test_guardian.py` is short and focused:
+Use PyCharm's Clipboard History <kbd>⌘⇧V</kbd> (macOS) / <kbd>Ctrl+Shift+V</kbd> (Windows/Linux) and select the entry in the history that is both the fixtures you cut from your `test_player.py` file and paste them into the new `conftest.py` file. Let PyCharm handle the imports for you and use Reformat Code <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux) to keep everything tidy.
 
-```python
-{% include "./demos/test_guardian.py" %}
-```
+That's the end of the refactoring for `conftest.py` so now is a good time to check that all your tests are still passing.
 
-Same for `test_player.py`:
+![player-fixture-passing.png](player-fixture-passing.png)
 
-```python
-{% include "./demos/test_player.py" %}
-```
+## Naming is hard
 
-## Life With Fixtures
+Before I leave you, naming is hard. I don't like the name `guardians_list` for my `guardians` fixture so in `test_player.py` I will select it, then use Refactor Rename <kbd>⇧F6</kbd> (macOS) / <kbd>Shift+F6</kbd> (Windows/Linux) to choose a better name.
 
-PyCharm has a number of useful features that make working with fixtures a breeze.
-We saw autocomplete.
-This is even more important with all the places that pytest can look for fixtures.
+![rename-guardians-list.png](rename-guardians-list.png)
 
-Navigation is a big win, for the same reason.
-<kbd>Cmd-Click</kbd> (macOS) on a fixture name and PyCharm jumps to the fixture definition.
-Same applies for hover which reveals type information.
+I'll go with `all_guardians` and then press Refactor:
 
-![Hover For Type Information](hover.png)
+![all_guardians.png](all_guardians.png)
 
-<kbd>F1</kbd> (macOS) / <kbd>Ctrl+Q</kbd> (Windows/Linux) on the fixture shows an inline popup with more information about the fixture.
-Finally, you can **Refactor | Rename** to change the fixture's name and usages.
+PyCharm now gives you a preview of which files will change and we can see that both our usages and the definition in `conftest.py` will be correctly updated:
 
-![Refactor Rename](refactor_rename.png)
+![refactor-preview.png](refactor-preview.png)
 
-This is all driven by PyCharm's type inferencing, which means we can autocomplete and give warnings in the test body, based on the structure of the fixture.
-In practice, this is a key part of "fail faster", meaning, find a problem before running (or even writing) a test.
+Once you click **Do Refactor**, PyCharm, will update all of your code.
+
+Final tip here, if you want to toggle between your usage and definition, you can hold down <kbd>⌘</kbd> or <kbd>Ctrl</kbd> and click in your editor.
