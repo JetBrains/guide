@@ -23,7 +23,7 @@ If you've closed the Project tool window and hidden the Navigation Bar, you need
 
 ## The Solution
 
-In your JetBrains IDE, [invoke the "Navigation Bar"](../nav-bar-activate/index.md) with <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux).
+In your JetBrains IDE, [invoke the "Navigation Bar"](../nav-bar-activate/) with <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux).
 
 You can now:
 

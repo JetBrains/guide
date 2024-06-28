@@ -25,7 +25,7 @@ Getting into the flow means stripping down your UI distraction (turn off the _Pr
 
 ## The Solution
 
-In the latest version of JetBrains IDE's, the Navigation Bar is in the Status bar by default, but you don't want to use your mouse to get there, or perhaps you've already hidden it altogether as part of a [lean UI](../lean-ui/index.md).
+In the latest version of JetBrains IDE's, the Navigation Bar is in the Status bar by default, but you don't want to use your mouse to get there, or perhaps you've already hidden it altogether as part of a [lean UI](../lean-ui/).
 
 You can invoke **Navigate | Jump to Navigation Bar** <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux) to temporarily re-activate the Navigation Bar. Once you use it, the window disappears.
 
