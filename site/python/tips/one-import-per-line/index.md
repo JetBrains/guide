@@ -5,8 +5,7 @@ topics:
   - editing
 author: pwe
 subtitle: >-
-  Tell PyCharm to put each import on a separate line when it cleans up your
-  imports.
+  Tell PyCharm to put each import on a separate line when it cleans up your imports.
 seealso:
   - title: Code Style Preferences for Python Imports
     href: >-

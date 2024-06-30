@@ -1,6 +1,6 @@
 ---
 date: 2019-03-12
-title: Rename a File and Its References
+title: Rename a File and its References
 topics:
   - editing
 author: pwe
