@@ -7,7 +7,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: Fullstack Application Development with Go and React
+subtitle: Fullstack Application Development with Go and React.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./stitch_together/

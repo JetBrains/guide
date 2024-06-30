@@ -5,7 +5,7 @@ title: "Injection During Initialization"
 topics:
   - go
 author: iu
-subtitle: DI - The Key to Efficient Object Creation
+subtitle: DI - The Key to Efficient Object Creation.
 thumbnail: ./thumbnail.png
 ---
 

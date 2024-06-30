@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: cb
-subtitle: Unlocking Key Concepts Through Six Interactive Demos
+subtitle: Unlocking Key Concepts Through Six Interactive Demos.
 thumbnail: ./thumbnail.png
 ---
 

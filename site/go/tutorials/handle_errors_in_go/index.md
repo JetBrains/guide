@@ -6,7 +6,7 @@ title: How to Handle Errors in Go
 topics:
   - go
 author: cb
-subtitle: Errors No More - Keep Your Go Code Pure
+subtitle: Errors No More - Keep Your Go Code Pure.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

@@ -5,7 +5,7 @@ title: "Testing the REST API"
 topics:
   - go
 author: ab
-subtitle: Putting the Reverse Proxy to Work - Testing the REST-to-gRPC Translation
+subtitle: Putting the Reverse Proxy to Work - Testing the REST-to-gRPC Translation.
 thumbnail: ./thumbnail.png
 ---
 

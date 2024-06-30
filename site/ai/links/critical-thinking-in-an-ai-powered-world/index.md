@@ -4,7 +4,7 @@ title: Critical Thinking in an AI Powered World
 topics:
   - ai
 author: khalidabuhakmeh
-subtitle: We will talk about the AI Assistant, its strengths and weaknesses, examples of edge cases, and strategies to get better results from the JetBrains AI Assistant.
+subtitle: Strengths and weaknesses of JetBrains AI Assistant, examples of edge cases, and strategies to get better results.
 thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/dotnet/2024/02/27/critical-thinking-in-an-ai-powered-world/"
 ---

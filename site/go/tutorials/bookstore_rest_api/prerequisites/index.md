@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: mm
-subtitle: Install the dependencies used for the sample application
+subtitle: Install the dependencies used for the sample application.
 thumbnail: ./thumbnail.png
 ---
 

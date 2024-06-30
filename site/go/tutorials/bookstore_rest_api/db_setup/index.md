@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: mm
-subtitle: Configuring Your PostgreSQL Database
+subtitle: Configuring Your PostgreSQL Database.
 thumbnail: ./thumbnail.png
 ---
 

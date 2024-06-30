@@ -6,7 +6,7 @@ topics:
   - docker
   - django
 author: mm
-subtitle: Pushing Image to Remote Registry
+subtitle: Pushing Image to Remote Registry.
 thumbnail: thumbnail.png
 ---
 

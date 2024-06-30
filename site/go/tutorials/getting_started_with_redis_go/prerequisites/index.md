@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: cb
-subtitle: Install and Resolve Dependencies to Work With Redis
+subtitle: Install and Resolve Dependencies to Work With Redis.
 thumbnail: ./thumbnail.png
 ---
 

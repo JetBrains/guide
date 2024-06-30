@@ -5,7 +5,7 @@ title: "Conclusion"
 topics:
   - go
 author: iu
-subtitle: Key Takeaways and Next Steps
+subtitle: Key Takeaways and Next Steps.
 thumbnail: ./thumbnail.png
 ---
 

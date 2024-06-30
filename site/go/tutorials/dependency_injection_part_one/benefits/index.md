@@ -5,7 +5,7 @@ title: "Benefits & Drawbacks of Dependency Injection"
 topics:
   - go
 author: iu
-subtitle: Unveiling the Benefits (and Challenges) of Dependency Injection
+subtitle: Unveiling the Benefits (and Challenges) of Dependency Injection.
 thumbnail: ./thumbnail.png
 ---
 

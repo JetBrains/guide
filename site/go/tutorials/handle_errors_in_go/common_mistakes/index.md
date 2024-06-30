@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: cb
-subtitle: Write Clean Code - Common Error Handling Mistakes to Avoid
+subtitle: Write Clean Code - Common Error Handling Mistakes to Avoid.
 thumbnail: ./thumbnail.png
 ---
 

@@ -5,8 +5,7 @@ date: 2023-07-20
 title: Go REST Guide
 author: svk
 subtitle: >-
-  This is a three-part series dedicated to three different methods of building a
-  Go REST API.
+  This is a three-part series dedicated to three different methods of building a Go REST API.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./stdlib/

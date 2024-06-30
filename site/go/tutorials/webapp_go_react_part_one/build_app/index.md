@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: Constructing the Go Backend for the Chat App
+subtitle: Constructing the Go Backend for the Chat App.
 thumbnail: ./thumbnail.png
 ---
 

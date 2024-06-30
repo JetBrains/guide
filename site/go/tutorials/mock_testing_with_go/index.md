@@ -7,7 +7,7 @@ topics:
   - go
   - testing
 author: cb
-subtitle: Mocking & Rocking - Power Up Your Go Testing
+subtitle: Mocking & Rocking - Power Up Your Go Testing.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

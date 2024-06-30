@@ -5,7 +5,7 @@ title: "Dependency Injection with Dig"
 topics:
   - go
 author: iu
-subtitle: Digging into Dependency Injection - Unleashing the Power of Dig in Go
+subtitle: Digging into Dependency Injection - Unleashing the Power of Dig in Go.
 thumbnail: ./thumbnail.png
 ---
 

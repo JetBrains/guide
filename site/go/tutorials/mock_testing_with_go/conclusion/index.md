@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: cb
-subtitle: Where to Go from Here
+subtitle: Where to Go from Here.
 thumbnail: ./thumbnail.png
 ---
 

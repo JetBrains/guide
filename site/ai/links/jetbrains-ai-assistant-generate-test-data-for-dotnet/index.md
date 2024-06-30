@@ -4,7 +4,7 @@ title: How To Use AI Assistant to Generate Test Data For .NET Applications
 topics:
   - ai
 author: khalidabuhakmeh
-subtitle: In this post, we’ll walk you through scenarios to generate test data with the JetBrains AI Assistant for .NET unit tests and how you can leverage generated data to improve the isolation of your tests and ultimately produce a more valuable and less brittle test suite.
+subtitle: Scenarios to generate test data with the JetBrains AI Assistant for .NET unit tests to produce a more valuable and less brittle test suite.
 thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/dotnet/2024/02/21/jetbrains-ai-assistant-generate-test-data-for-dotnet/"
 ---

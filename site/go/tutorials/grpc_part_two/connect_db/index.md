@@ -5,7 +5,7 @@ title: "Connecting to a Database"
 topics:
   - go
 author: ab
-subtitle: Setting Up PostgreSQL - A Local Database for Your Project
+subtitle: Setting Up PostgreSQL - A Local Database for Your Project.
 thumbnail: ./thumbnail.png
 ---
 

@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: mm
-subtitle: Introducing Gin, the high-performance web framework, written in Go
+subtitle: Introducing Gin, the high-performance web framework, written in Go.
 thumbnail: ./thumbnail.png
 ---
 

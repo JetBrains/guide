@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: backend completion and learning outcomes
+subtitle: backend completion and learning outcomes.
 thumbnail: ./thumbnail.png
 ---
 

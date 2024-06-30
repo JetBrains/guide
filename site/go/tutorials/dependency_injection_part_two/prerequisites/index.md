@@ -5,7 +5,7 @@ title: "Prerequisites"
 topics:
   - go
 author: iu
-subtitle: What you need to know before you begin
+subtitle: What you need to know before you begin.
 thumbnail: ./thumbnail.png
 ---
 

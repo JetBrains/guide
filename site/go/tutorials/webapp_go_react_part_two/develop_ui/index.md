@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: Jazz up your UI with Tailwind
+subtitle: Jazz up your UI with Tailwind.
 thumbnail: ./thumbnail.png
 ---
 
@@ -241,7 +241,7 @@ const MainChat = () => {
 	const { channelId } = useParams();
 	const navigate = useNavigate();
 	const [selectedChannel, setSelectedChannel] = useState(
-		parseInt(channelId) || null
+		parseInt(channelId) || null,
 	);
 
 	// If the component loads with a channel ID in the URL, set it as the selected channel.
@@ -298,7 +298,7 @@ const ChannelsList = ({ selectedChannel, setSelectedChannel }) => {
 	useEffect(() => {
 		if (channelId) {
 			const channel = channels.find(
-				(channel) => channel.id === parseInt(channelId)
+				(channel) => channel.id === parseInt(channelId),
 			);
 			if (channel) {
 				setSelectedChannel({ name: channel.name, id: parseInt(channelId) });
@@ -417,7 +417,7 @@ const MessagesPanel = ({ selectedChannel }) => {
 		intervalId = setInterval(() => {
 			if (lastMessageIdRef.current !== null) {
 				fetch(
-					`/messages?channelID=${selectedChannel.id}&lastMessageID=${lastMessageIdRef.current}`
+					`/messages?channelID=${selectedChannel.id}&lastMessageID=${lastMessageIdRef.current}`,
 				)
 					.then((response) => response.json())
 					.then((newMessages) => {
@@ -614,7 +614,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
 		<App />
-	</React.StrictMode>
+	</React.StrictMode>,
 );
 ```
 

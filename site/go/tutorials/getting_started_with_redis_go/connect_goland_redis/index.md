@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: cb
-subtitle: Streamlining GoLand and Redis Setup for Smooth Development
+subtitle: Streamlining GoLand and Redis Setup for Smooth Development.
 thumbnail: ./thumbnail.png
 ---
 

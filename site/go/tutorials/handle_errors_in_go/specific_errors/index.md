@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: cb
-subtitle: Effective Error Handling - Strategies for Network and IO Issues
+subtitle: Effective Error Handling - Strategies for Network and IO Issues.
 thumbnail: ./thumbnail.png
 ---
 

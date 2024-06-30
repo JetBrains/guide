@@ -6,7 +6,7 @@ title: Build CLI Apps with Go and Cobra
 topics:
   - go
 author: iu
-subtitle: Building Powerful and Efficient Command-Line Tools
+subtitle: Building Powerful and Efficient Command-Line Tools.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./what_is_cli/

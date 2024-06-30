@@ -3,7 +3,7 @@ date: 2022-08-27
 title: Writing REST with Django and Ninja
 topics:
   - django
-author: hs
+author: jetbrains
 subtitle: Django Ninja is a FastAPI inspired library for turning your Django views into REST API end-points.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/Gry6rlZYpzw"

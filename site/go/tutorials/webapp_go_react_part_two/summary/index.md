@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: Streamlining Frontend - React and Tailwind in Action
+subtitle: Streamlining Frontend - React and Tailwind in Action.
 thumbnail: ./thumbnail.png
 ---
 

@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: cb
-subtitle: Software Requirements - What You Need to Know Before You Begin
+subtitle: Software Requirements - What You Need to Know Before You Begin.
 
 thumbnail: ./thumbnail.png
 ---

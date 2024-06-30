@@ -5,7 +5,7 @@ title: "Comments Table"
 topics:
   - go
 author: ab
-subtitle: Finalizing the gRPC Server - Creating the Comments Table and Endpoints
+subtitle: Finalizing the gRPC Server - Creating the Comments Table and Endpoints.
 thumbnail: ./thumbnail.png
 ---
 

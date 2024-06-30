@@ -4,7 +4,7 @@ title: AI for PHP, How to Tweak AI Prompts to Improve PHP Tests
 topics:
   - ai
 author: brentroose
-subtitle: By generating the boring boilerplate code, it allows us to jump straight into the more interesting part of making our tests.
+subtitle: Generate boiler plate code and jump straight to the more interesting part of making tests.
 thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/phpstorm/2024/02/ai-for-php-how-to-tweak-ai-prompts-to-improve-php-tests/"
 ---

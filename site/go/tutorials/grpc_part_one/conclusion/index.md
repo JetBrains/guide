@@ -5,7 +5,7 @@ title: "Conclusion"
 topics:
   - go
 author: ab
-subtitle: Next Up - Building a gRPC Server for Efficient Communication
+subtitle: Next Up - Building a gRPC Server for Efficient Communication.
 thumbnail: ./thumbnail.png
 ---
 

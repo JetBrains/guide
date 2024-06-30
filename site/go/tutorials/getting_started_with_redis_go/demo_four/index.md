@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: cb
-subtitle: Efficiency in Bulk - Maximizing Performance with Redis Pipelines
+subtitle: Efficiency in Bulk - Maximizing Performance with Redis Pipelines.
 thumbnail: ./thumbnail.png
 ---
 

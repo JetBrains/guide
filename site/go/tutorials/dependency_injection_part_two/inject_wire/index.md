@@ -5,7 +5,7 @@ title: "Go with Wire"
 topics:
   - go
 author: iu
-subtitle: Leveraging Wire for Dependency Injection
+subtitle: Leveraging Wire for Dependency Injection.
 thumbnail: ./thumbnail.png
 ---
 

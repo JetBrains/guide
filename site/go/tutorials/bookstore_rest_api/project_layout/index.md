@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: mm
-subtitle: Organizing and Navigating Through Your Codebase
+subtitle: Organizing and Navigating Through Your Codebase.
 thumbnail: ./thumbnail.png
 ---
 

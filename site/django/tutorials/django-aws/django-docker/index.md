@@ -7,7 +7,7 @@ topics:
   - django
   - python
 author: mm
-subtitle: Building and running Django Containers through Docker
+subtitle: Building and running Django Containers through Docker.
 thumbnail: thumbnail.png
 video: "https://youtu.be/q_cZO1WBWCw"
 obsoletes:

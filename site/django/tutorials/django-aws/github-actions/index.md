@@ -7,7 +7,7 @@ topics:
   - django
   - python
 author: mm
-subtitle: Deploy Docker Image to AWS ECR through GitHub Actions
+subtitle: Deploy Docker Image to AWS ECR through GitHub Actions.
 thumbnail: thumbnail.png
 video: "https://youtu.be/WFGTQnvhf5Q"
 obsoletes:

@@ -4,7 +4,7 @@ title: JetBrains AI - A Deep Dive By Vladislav Tankov
 topics:
   - ai
 author: vt
-subtitle: In this talk we will dive into the architecture and implementation of JetBrains AI – the backbone of AI Assistant in JetBrains IDEs, Grazie, and other JetBrains products.
+subtitle: The implementation of JetBrains AI – the backbone of AI Assistant, Grazie, and other JetBrains products.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/MYhkTnag81o"
 linkURL: "https://youtu.be/MYhkTnag81o"

@@ -7,7 +7,7 @@ topics:
   - django
   - python
 author: mm
-subtitle: Cleaning up resources from AWS
+subtitle: Cleaning up resources from AWS.
 thumbnail: thumbnail.png
 video: "https://youtu.be/8scGfh3D0Yc"
 obsoletes:

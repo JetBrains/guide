@@ -7,7 +7,7 @@ topics:
   - go
   - web
 author: svk
-subtitle: "This article compares the pros and cons of five different authentication methods: Basic HTTP, bearer token, JWT, OIDC, and SAML."
+subtitle: "Comparing the pros and cons of five different authentication methods: Basic HTTP, bearer token, JWT, OIDC, and SAML."
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./auth/

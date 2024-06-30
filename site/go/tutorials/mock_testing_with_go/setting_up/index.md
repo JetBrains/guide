@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: cb
-subtitle: Unleash the Power of Mocks - Build a Project from Scratch
+subtitle: Unleash the Power of Mocks - Build a Project from Scratch.
 thumbnail: ./thumbnail.png
 ---
 

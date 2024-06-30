@@ -4,7 +4,7 @@ title: AI for PHP, How to Make AI Assistant Generate Test Implementations
 topics:
   - ai
 author: brentroose
-subtitle: What if we want to take a more test-driven-development approach, writing our tests first, and having AI Assistant generate an implementation for us?
+subtitle: Take a more test-driven-development approach, writing tests first, and having AI Assistant generate an implementation.
 thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/phpstorm/2024/02/ai-for-php-how-to-make-ai-assistant-generate-test-implementations/"
 ---

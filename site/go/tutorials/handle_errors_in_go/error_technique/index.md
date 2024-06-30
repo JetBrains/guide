@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: cb
-subtitle: Defer, Panic, and Recover - When to Use Each
+subtitle: Defer, Panic, and Recover - When to Use Each.
 thumbnail: ./thumbnail.png
 ---
 

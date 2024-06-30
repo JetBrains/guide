@@ -1,6 +1,6 @@
 ---
 date: 2024-04-04
-title: Local and Fast AI comes to your developer workflow - Full Line Code Completion
+title: Local and Fast AI - Full Line Code Completion
 topics:
   - ai
 author: pwe

@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: cb
-subtitle: Errorless Go - Write Clean and Reliable Code
+subtitle: Errorless Go - Write Clean and Reliable Code.
 thumbnail: ./thumbnail.png
 ---
 

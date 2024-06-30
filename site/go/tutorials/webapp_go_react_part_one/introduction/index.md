@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: Setting Up Gin, SQLite, and Essential REST APIs
+subtitle: Setting Up Gin, SQLite, and Essential REST APIs.
 thumbnail: ./thumbnail.png
 ---
 
