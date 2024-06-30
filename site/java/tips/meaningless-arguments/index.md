@@ -5,7 +5,7 @@ topics:
   - java
   - refactoring
 author: hs
-subtitle: Use quick intentions to remove redundant code
+subtitle: Use quick intentions to remove redundant code so it's not cluttering your codebase.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Code inspections

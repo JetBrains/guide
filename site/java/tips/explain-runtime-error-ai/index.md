@@ -5,7 +5,7 @@ topics:
   - ai
   - java
 author: md
-subtitle: Let AI Assistant explain runtime errors to you
+subtitle: Let AI Assistant explain runtime errors to you.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Explain runtime error

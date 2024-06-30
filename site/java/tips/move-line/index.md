@@ -5,7 +5,7 @@ topics:
   - editing
   - java
 author: hs
-subtitle: Move a line throughout your class
+subtitle: Move a line throughout your class, but watch out for errors!
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Editor Tips and Tricks in IntelliJ IDEA

@@ -5,7 +5,7 @@ topics:
   - editing
   - java
 author: md
-subtitle: Move a statement up or down
+subtitle: Move a statement up or down within the same scope.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Editor Tips and Tricks in IntelliJ IDEA

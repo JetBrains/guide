@@ -5,7 +5,7 @@ topics:
   - java
   - refactoring
 author: hs
-subtitle: Extract code to a parameter
+subtitle: Extract code to a parameter.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) IntelliJ IDEA. Everyday Refactorings

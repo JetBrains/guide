@@ -1,11 +1,11 @@
 ---
 date: 2023-12-06
-title: Gutter icons
+title: Gutter Icons
 topics:
   - editing
   - tricks
 author: md
-subtitle: Information about your code in the gutter icons
+subtitle: View information about your code by looking at the gutter icons.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Gutter Icons

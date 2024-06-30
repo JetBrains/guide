@@ -1,11 +1,11 @@
 ---
 date: 2021-01-08
-title: Exclude a completion option
+title: Exclude a Completion Option
 topics:
   - interface
   - java
 author: hs
-subtitle: Helps to reduce options that are not relevant for your code
+subtitle: Helps to reduce options that are not relevant for your code.
 thumbnail: ./thumbnail.png
 seealso:
   - title: "(video) IntelliJ IDEA Pro Tips: Alt Enter"

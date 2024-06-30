@@ -6,7 +6,7 @@ topics:
   - maven
   - packagesearch
 author: sf
-subtitle: Upgrade, downgrade, and change scope easily
+subtitle: Upgrade, downgrade, and change scope easily inside your IDE.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Package Search

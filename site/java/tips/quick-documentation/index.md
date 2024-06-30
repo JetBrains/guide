@@ -5,7 +5,7 @@ topics:
   - tricks
   - interface
 author: md
-subtitle: Pull up Quick Documentation in the editor
+subtitle: Pull up Quick Documentation in the editor any time you need to.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Quick Documentation

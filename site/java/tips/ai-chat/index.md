@@ -5,7 +5,7 @@ topics:
   - ai
   - java
 author: md
-subtitle: Chat with AI Assistant inside the IDE
+subtitle: You can chat with JetBrains AI Assistant right inside the IDE.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Chat with AI

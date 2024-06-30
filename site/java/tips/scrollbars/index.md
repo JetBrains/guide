@@ -1,11 +1,11 @@
 ---
 date: 2023-12-06
-title: Scrollbars
+title: Viewing Scrollbars
 topics:
   - editing
   - tricks
 author: md
-subtitle: Information about your code in the scrollbars
+subtitle: You can view a wealth of information about your code in the scrollbars.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Scrollbar

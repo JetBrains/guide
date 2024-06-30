@@ -4,7 +4,7 @@ title: Code Completion
 topics:
   - tricks
 author: md
-subtitle: Code Completion Overview
+subtitle: Code completion in your IDE means you can focus on solving the problem at hand.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Code completion

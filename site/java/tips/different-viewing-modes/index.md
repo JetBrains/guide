@@ -1,14 +1,13 @@
 ---
 date: 2022-07-23
-title: Different viewing modes for your code
+title: Different Viewing Modes for Your Code
 topics:
   - editing
   - settings
   - tricks
 author: hs
 subtitle: >-
-  IntelliJ IDEA has lots of different ways for you to view your code depending
-  on your requirements
+  IntelliJ IDEA has lots of different ways for you to view your code depending on your requirements.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (tip) Distraction Free Mode Tip

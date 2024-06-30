@@ -4,7 +4,7 @@ title: "Run your code with Docker, SSH or WSL"
 topics:
   - java
 author: tg
-subtitle: Set a Run Target to change where your code runs
+subtitle: Set a Run Target to change where your code runs.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Run applications

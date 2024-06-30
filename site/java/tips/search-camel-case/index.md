@@ -5,7 +5,7 @@ topics:
   - java
   - settings
 author: hs
-subtitle: Use CamelCase to find what you need faster
+subtitle: Use CamelCase to find what you need faster and save your fingers.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Top 5 IntelliJ IDEA Navigation Shortcuts

@@ -6,7 +6,7 @@ topics:
   - customizing
   - settings
 author: md
-subtitle: Disable the inlay hint for Usages
+subtitle: Disable the inlay hint for Usages if it's distracting you.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Show inlay hints for usages

@@ -7,7 +7,7 @@ topics:
   - refactoring
   - vcs
 author: vb
-subtitle: Group and commit changes related to certain tasks
+subtitle: Group and commit changes related to certain tasks so you have a cleaner commit history.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Version Control with IntelliJ IDEA

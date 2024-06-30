@@ -1,10 +1,10 @@
 ---
 date: 2024-03-04
-title: Search collapsed code
+title: Search Collapsed Code
 topics:
   - tricks
 author: md
-subtitle: Search collapsed code to find what you need
+subtitle: Search all your code, including collapsed code to find what you need.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Search for a target within a file

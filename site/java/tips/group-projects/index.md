@@ -5,7 +5,7 @@ topics:
   - customizing
   - tricks
 author: md
-subtitle: Group your projects together in the Welcome Screen
+subtitle: Group your projects together in the Welcome Screen.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Group projects

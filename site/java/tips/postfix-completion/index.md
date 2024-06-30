@@ -6,8 +6,7 @@ topics:
   - java
 author: md
 subtitle: >-
-  Postfix completion allows you to keep typing forwards, it minimises the amount
-  of time you spend moving the cursor around while you're coding.
+  Postfix completion allows you to keep typing forwards, it minimises the amount of time you spend moving the cursor around while you're coding.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Code Completion in IntelliJ IDEA

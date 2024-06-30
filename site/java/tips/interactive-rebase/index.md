@@ -1,12 +1,12 @@
 ---
 date: 2024-02-16
-title: Interactive rebase
+title: Interactive Rebase
 topics:
   - git
   - java
   - vcs
 author: md
-subtitle: Using interactive rebase in IntelliJ IDEA
+subtitle: Clean up your commit history by using interactive rebase in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 seealso:
   - title: >-

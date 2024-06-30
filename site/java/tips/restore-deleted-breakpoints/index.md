@@ -6,8 +6,7 @@ topics:
   - java
 author: hs
 subtitle: >-
-  You can restore previously configured breakpoints if you accidentally delete
-  them
+  You can restore previously configured breakpoints if you accidentally delete them.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/MmX5Oz0ugJo"
 ---

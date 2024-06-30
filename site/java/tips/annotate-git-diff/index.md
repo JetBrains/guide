@@ -5,7 +5,7 @@ topics:
   - git
   - vcs
 author: md
-subtitle: Look at the diff a change was part of from Annotate with Git Blame
+subtitle: Look at the diff a change was part of from Annotate with Git Blame.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Investigate changes in Git repository

@@ -1,13 +1,13 @@
 ---
 date: 2023-12-05
-title: Manage dependencies
+title: Manage Dependencies
 topics:
   - gradle
   - maven
   - packagesearch
   - tricks
 author: md
-subtitle: Manage dependencies in the Dependencies tool window
+subtitle: Manage all your dependencies in the Dependencies tool window.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Package Search

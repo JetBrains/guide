@@ -6,7 +6,7 @@ topics:
   - refactoring
   - testing
 author: hs
-subtitle: Use quick intentions to manage imports
+subtitle: Use quick intentions to manage imports and keep your code compiling.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Auto import

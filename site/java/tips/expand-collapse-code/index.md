@@ -5,7 +5,7 @@ topics:
   - editing
   - java
 author: md
-subtitle: Quickly view specific parts of a class by expanding or collapsing code
+subtitle: Quickly view specific parts of a class by expanding or collapsing code blocks.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Expand or collapse code elements

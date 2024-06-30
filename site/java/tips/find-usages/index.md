@@ -5,7 +5,7 @@ topics:
   - java
   - navigation
 author: hs
-subtitle: Use Find Usages to search for references in your code base
+subtitle: Use Find Usages to search for references in your code base.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Search for usages

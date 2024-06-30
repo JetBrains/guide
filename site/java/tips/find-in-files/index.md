@@ -5,7 +5,7 @@ topics:
   - java
   - kotlin
 author: md
-subtitle: Find a specific string in (a subset of files in) your code
+subtitle: Find a specific string in (a subset of files in) your code.
 thumbnail: ./thumbnail.png
 seealso:
   - title: "(video) IntelliJ IDEA Pro Tips: Search Everywhere"

@@ -6,7 +6,7 @@ topics:
   - navigation
   - testing
 author: md
-subtitle: Go to your matching test class
+subtitle: Go to your matching test class with one keyboard shortcut.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Navigation in IntelliJ IDEA

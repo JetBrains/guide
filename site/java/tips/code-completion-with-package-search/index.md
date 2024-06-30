@@ -7,8 +7,7 @@ topics:
   - packagesearch
 author: sf
 subtitle: >-
-  Helps you to reduce the changes of a typing mistake when you're searching for
-  packages
+  Helps you to reduce the chances of a typing mistake when you're searching for packages.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Package Search build system support

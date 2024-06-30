@@ -5,7 +5,7 @@ topics:
   - ai
   - refactoring
 author: md
-subtitle: Use the power of AI Assistant for even better naming suggestions
+subtitle: Use the power of AI Assistant for even better naming suggestions.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - AI Assistant

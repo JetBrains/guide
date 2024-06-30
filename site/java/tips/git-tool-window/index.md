@@ -1,6 +1,6 @@
 ---
 date: 2023-12-06
-title: Git
+title: Working with the Git tool window
 topics:
   - git
   - tricks

@@ -4,7 +4,7 @@ title: Multiple carets
 topics:
   - tricks
 author: md
-subtitle: Using multiple carets
+subtitle: Use multiple carets in your code to make the same change in multiple places or work with lists.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Multiple cursors and selection ranges

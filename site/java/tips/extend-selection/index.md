@@ -6,7 +6,7 @@ topics:
   - java
   - kotlin
 author: md
-subtitle: Extend and shrink selection
+subtitle: Extend and shrink your current code selection.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Editor Tips and Tricks in IntelliJ IDEA

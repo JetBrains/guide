@@ -1,11 +1,11 @@
 ---
 date: 2022-06-17
-title: Navigate to the last edited location
+title: Navigate to the Last Edited Location
 topics:
   - editing
   - java
 author: hs
-subtitle: Move around the files you're working on quickly with keyboard shortcuts
+subtitle: Move around the files you're working on quickly with keyboard shortcuts.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Navigate with the caret

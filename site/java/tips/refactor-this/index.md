@@ -1,10 +1,10 @@
 ---
 date: 2023-01-06
-title: Refactor this
+title: Refactor This
 topics:
   - refactoring
 author: md
-subtitle: Refactoring options for the selection
+subtitle: You can use one keyboard shortcut for all refactoring options inside your IDE.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Invoke refactoring

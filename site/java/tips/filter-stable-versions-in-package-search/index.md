@@ -6,7 +6,7 @@ topics:
   - maven
   - packagesearch
 author: sf
-subtitle: Allows you to filter out unstable versions of dependencies easily
+subtitle: Allows you to filter out unstable versions of dependencies easily.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/oSvjckoIUbM"
 ---

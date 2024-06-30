@@ -1,11 +1,11 @@
 ---
 date: 2022-05-25
-title: Determining the return type of expression
+title: Determining the Return Type of Expression
 topics:
   - editing
   - java
 author: hs
-subtitle: Type Info is very helpful on a per-expression basis
+subtitle: Type Info is very helpful on a per-expression basis to understand your code.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Type Info

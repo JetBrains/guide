@@ -6,7 +6,7 @@ topics:
   - refactoring
   - testing
 author: hs
-subtitle: Experiment with your code without changing the semantics
+subtitle: Experiment with your code without changing the semantics.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Intention actions

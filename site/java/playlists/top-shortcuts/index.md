@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 playlistItems:
   - /java/tips/context-actions/
   - /tips/search-everywhere/
-  - /java/tips/escape-focus-editor/
+  - /java/tips/focus-on-code/
   - /java/tips/smart-completion/
   - /java/tips/complete-statement/
   - /java/tips/f2/

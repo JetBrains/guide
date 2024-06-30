@@ -6,7 +6,7 @@ topics:
   - java
   - tricks
 author: md
-subtitle: Visualize the flow of data through a stream
+subtitle: Visualize the flow of data through a Java stream.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Pro Tip Debugging Java Streams

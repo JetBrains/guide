@@ -5,7 +5,7 @@ topics:
   - editing
   - java
 author: hs
-subtitle: Use quick intentions to adjust your code
+subtitle: Use quick intentions to adjust the style of your code right where your cursor is.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Code Formatting in IntelliJ IDEA

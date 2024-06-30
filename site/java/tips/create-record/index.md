@@ -4,7 +4,7 @@ title: Create Record
 topics:
   - java
 author: tg
-subtitle: Create a new Java record class
+subtitle: Let IntelliJ IDEA support you in creating a new Java record class.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Using Java 15 with IntelliJ IDEA

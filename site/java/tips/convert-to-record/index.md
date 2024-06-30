@@ -1,12 +1,12 @@
 ---
 date: 2021-05-05
-title: Convert class to record
+title: Convert Class to Record
 topics:
   - editing
   - inspections
   - java
 author: tg
-subtitle: Use inspections to convert classes to Java 16 records
+subtitle: Use inspections to convert classes to Java 16 records.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Using Java 15 with IntelliJ IDEA

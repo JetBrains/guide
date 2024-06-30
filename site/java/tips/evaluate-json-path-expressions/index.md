@@ -1,6 +1,6 @@
 ---
 date: 2021-05-10
-title: Evaluate JSON Path expressions
+title: Evaluate JSON Path Expressions
 topics:
   - editing
   - json

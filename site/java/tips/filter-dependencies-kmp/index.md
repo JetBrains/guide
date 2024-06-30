@@ -5,7 +5,7 @@ topics:
   - packagesearch
   - tricks
 author: md
-subtitle: Select Kotlin Multiplatform dependencies in the Dependencies tool window
+subtitle: Select Kotlin Multiplatform dependencies in the Dependencies tool window.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Package Search

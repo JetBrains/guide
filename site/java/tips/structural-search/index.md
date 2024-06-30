@@ -5,7 +5,7 @@ topics:
   - java
   - kotlin
 author: md
-subtitle: Structural Search and Replace
+subtitle: Structural Search and Replace is very helpful for finding exactly what you need in your project.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) IntelliJ IDEA. Structural Search and Replace

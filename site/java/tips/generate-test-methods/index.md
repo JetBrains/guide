@@ -5,7 +5,7 @@ topics:
   - java
   - testing
 author: hs
-subtitle: Generate a test method in your Test class
+subtitle: Generate a test method in your test class.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) CodeGeneration in IntelliJ IDEA

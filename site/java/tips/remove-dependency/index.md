@@ -1,11 +1,11 @@
 ---
 date: 2023-11-23
-title: Remove dependency
+title: Remove Dependency
 topics:
   - packagesearch
   - tricks
 author: md
-subtitle: Remove dependency in the Dependencies tool window
+subtitle: Remove dependency in the Dependencies tool window.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Package Search

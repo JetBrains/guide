@@ -7,7 +7,7 @@ topics:
   - java
   - kotlin
 author: hs
-subtitle: Create an editor fold to hide parts of your class
+subtitle: Create an editor fold to hide parts of your class which can make it more readable.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Code folding

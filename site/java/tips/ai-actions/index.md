@@ -5,7 +5,7 @@ topics:
   - ai
   - java
 author: md
-subtitle: Use AI Actions in the editor
+subtitle: View and use AI Actions in the editor.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - AI Assistant

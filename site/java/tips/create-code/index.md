@@ -1,11 +1,11 @@
 ---
 date: 2023-12-07
-title: Creating code
+title: Creating Code
 topics:
   - editing
   - tricks
 author: md
-subtitle: IntelliJ IDEA will help create code for you
+subtitle: IntelliJ IDEA can help create code for you saving your fingers.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Intention actions

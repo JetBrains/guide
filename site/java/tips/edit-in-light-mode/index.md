@@ -1,13 +1,12 @@
 ---
 date: 2022-05-25
-title: Edit a document in IntelliJ IDEA LightEdit Mode
+title: Edit a Document in IntelliJ IDEA LightEdit Mode
 topics:
   - editing
   - java
 author: hs
 subtitle: >-
-  Use IntelliJ IDEA’s text editing features without creating or opening a
-  dedicated project.
+  Use IntelliJ IDEA’s text editing features without creating or opening a dedicated project.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - LightEdit Mode

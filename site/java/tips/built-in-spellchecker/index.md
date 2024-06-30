@@ -5,7 +5,7 @@ topics:
   - java
   - tricks
 author: hs
-subtitle: IntelliJ IDEA can spell check and fix errors for you
+subtitle: IntelliJ IDEA can spell check and fix errors for you allowing you to focus on problem solving.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Spellchecking

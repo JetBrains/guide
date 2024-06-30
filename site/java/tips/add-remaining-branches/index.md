@@ -5,7 +5,7 @@ topics:
   - editing
   - kotlin
 author: hs
-subtitle: Use quick intentions to generate code automatically
+subtitle: Use quick intentions to generate code automatically and save you typing.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/7R1b5G3yx8U"
 ---

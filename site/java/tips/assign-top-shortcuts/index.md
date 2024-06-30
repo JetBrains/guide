@@ -1,11 +1,11 @@
 ---
 date: 2022-08-11
-title: Assign a keyboard shortcut
+title: Assign a Keyboard Shortcut
 topics:
   - settings
   - tricks
 author: hs
-subtitle: Use Find Actions to assign a keyboard shortcut
+subtitle: Use Find Actions to assign a keyboard shortcut that works for you.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Configure keyboard shortcuts

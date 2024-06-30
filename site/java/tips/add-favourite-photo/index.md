@@ -1,13 +1,12 @@
 ---
 date: 2022-05-25
-title: Add Favourite Photo as Background
+title: Add Your Favourite Photo as a Background
 topics:
   - java
   - tricks
 author: hs
 subtitle: >-
-  If you want to look at your favourite photo while coding you can set it as
-  your background image
+  If you want to look at your favourite photo while coding you can set it as your background image.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Background Image

@@ -1,12 +1,11 @@
 ---
 date: 2021-05-11
-title: Tips for working with JetBrains Space
+title: Tips for Working with JetBrains Space
 topics:
   - plugins
 author: tg
 subtitle: >-
-  Space is an all-in-one collaboration tool, including chat, code repository,
-  code review, issue tracking, and much more.
+  Space is an all-in-one collaboration tool, including chat, code repository, code review, issue tracking, and much more.
 thumbnail: ./thumbnail.png
 seealso:
   - title: >-

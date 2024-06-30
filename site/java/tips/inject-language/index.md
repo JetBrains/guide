@@ -1,14 +1,13 @@
 ---
 date: 2022-05-25
-title: Inject a language
+title: Inject a Language
 topics:
   - editing
   - java
   - refactoring
 author: hs
 subtitle: >-
-  Language injections let you work with pieces of code in other languages
-  embedded in your code.
+  Language injections let you work with pieces of code in other languages embedded in your code.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Using Language Injections

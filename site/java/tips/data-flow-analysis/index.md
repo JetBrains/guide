@@ -1,10 +1,10 @@
 ---
 date: 2023-12-05
-title: Data flow analysis
+title: Data Flow Analysis
 topics:
   - java
 author: md
-subtitle: Data flow analysis can show us potential errors in our logic
+subtitle: Data flow analysis can show us potential errors in our code logic.
 thumbnail: ./thumbnail.png
 seealso:
   - title: >-

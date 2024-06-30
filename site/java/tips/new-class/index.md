@@ -5,7 +5,7 @@ topics:
   - editing
   - java
 author: hs
-subtitle: Quickly add new classes to your project
+subtitle: Quickly add new classes to your project.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Add items to your project

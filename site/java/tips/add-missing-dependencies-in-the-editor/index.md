@@ -6,7 +6,7 @@ topics:
   - maven
   - packagesearch
 author: sf
-subtitle: Save time when adding missing dependencies
+subtitle: Save time when adding missing dependencies by using a quick fix.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/4Ywt0R29wzM"
 ---

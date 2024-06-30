@@ -4,7 +4,7 @@ title: Code With Me
 topics:
   - tricks
 author: md
-subtitle: Collaborate remotely using Code With Me
+subtitle: Collaborate with your friends and colleagues remotely by using Code With Me.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Getting started with Code With Me

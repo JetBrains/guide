@@ -4,7 +4,7 @@ title: Code Reviews with Space
 topics:
   - plugins
 author: tg
-subtitle: Perform code reviews without leaving the IDE.
+subtitle: Perform code reviews with Space without leaving the IDE.
 thumbnail: ./thumbnail.png
 seealso:
   - title: >-

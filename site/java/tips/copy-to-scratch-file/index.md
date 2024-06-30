@@ -1,11 +1,11 @@
 ---
 date: 2021-01-08
-title: "Copy to, or create a Scratch File"
+title: Copy to, or create a Scratch File
 topics:
   - editing
   - java
 author: hs
-subtitle: Scratch files persist across all versions of IntelliJ IDEA
+subtitle: You can use scratch files at any time and they persist across all versions of IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) IntelliJ IDEA. Scratch files and scratch buffers

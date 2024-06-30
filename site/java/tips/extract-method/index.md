@@ -5,7 +5,7 @@ topics:
   - java
   - refactoring
 author: md
-subtitle: Extract code to a new method
+subtitle: Extract code to a new method.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) IntelliJ IDEA. Everyday Refactorings

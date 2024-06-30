@@ -6,7 +6,7 @@ topics:
   - java
   - kotlin
 author: hs
-subtitle: Editor breadcrumbs show you your file structure
+subtitle: Editor breadcrumbs show you your file structure but you can disable them if they don't work for you.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Code Formatting in IntelliJ IDEA

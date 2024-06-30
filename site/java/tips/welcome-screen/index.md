@@ -7,8 +7,7 @@ topics:
   - kotlin
 author: hs
 subtitle: >-
-  Get a project from source control, open an existing project, or create a new
-  project
+  Get a project from source control, open an existing project, or create a new project.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Creating a New Project in IntelliJ IDEA

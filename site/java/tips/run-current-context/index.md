@@ -5,7 +5,7 @@ topics:
   - editing
   - java
 author: hs
-subtitle: Run just a file or a script
+subtitle: Run just a file or a single script.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Run applications

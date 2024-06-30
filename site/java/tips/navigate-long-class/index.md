@@ -7,8 +7,7 @@ topics:
   - vcs
 author: hs
 subtitle: >-
-  There are various tips and tricks you can use to navigate a long class in
-  IntelliJ IDEA
+  There are various tips and tricks you can use to navigate a long class in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) Source code navigation

@@ -1,6 +1,6 @@
 ---
 date: 2023-12-06
-title: Debugging
+title: Understanding the Debugger
 topics:
   - debugging
   - java

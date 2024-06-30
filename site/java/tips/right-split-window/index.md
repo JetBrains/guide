@@ -1,10 +1,10 @@
 ---
 date: 2023-11-27
-title: Right split window
+title: Right Split Window
 topics:
   - tricks
 author: md
-subtitle: View two files side by side
+subtitle: Viewing two files side by side can be useful in a number of scenarios including TDD.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Split screen

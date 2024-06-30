@@ -5,7 +5,7 @@ topics:
   - editing
   - tricks
 author: md
-subtitle: Using language injection to work with SQL
+subtitle: Using language injection to work with SQL.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Language injections

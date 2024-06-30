@@ -5,7 +5,7 @@ topics:
   - settings
   - tricks
 author: md
-subtitle: Configure font size for Presentation Mode
+subtitle: Configure font size for Presentation Mode to suit your audience.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Presentation Mode

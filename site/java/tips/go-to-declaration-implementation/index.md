@@ -5,7 +5,7 @@ topics:
   - navigation
   - tricks
 author: md
-subtitle: Go to Declaration or Usages, or Go to Implementation
+subtitle: Use Go to Declaration or Usages, and Go to Implementation to navgiate around your codebase.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Navigation in IntelliJ IDEA

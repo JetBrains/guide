@@ -5,7 +5,7 @@ topics:
   - java
   - navigation
 author: md
-subtitle: Move forward and backward between your locations in the code
+subtitle: Move forward and backward between your locations in the code so you don't need to have tabs open.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Navigation in IntelliJ IDEA

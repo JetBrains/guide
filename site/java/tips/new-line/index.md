@@ -8,8 +8,7 @@ topics:
   - kotlin
 author: hs
 subtitle: >-
-  Start a new line below or above your current line with the correct
-  indentation.
+  Start a new line below or above your current line with the correct indentation.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Editor Tips and Tricks in IntelliJ IDEA

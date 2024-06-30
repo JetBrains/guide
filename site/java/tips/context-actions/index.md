@@ -6,7 +6,7 @@ topics:
   - inspections
   - java
 author: md
-subtitle: Use Alt+Enter to show available context actions
+subtitle: There are numerous ways to use Context Actions, let's explore some of them.
 thumbnail: ./thumbnail.png
 seealso:
   - title: "(video) IntelliJ IDEA Pro Tips: Alt Enter"

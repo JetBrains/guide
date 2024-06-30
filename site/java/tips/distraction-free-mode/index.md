@@ -6,8 +6,7 @@ topics:
   - settings
 author: vb
 subtitle: >-
-  Hide all UI elements (tool windows, toolbars, and editor tabs) so the editor
-  occupies the entire main window with the source code centered.
+  Hide all UI elements (tool windows, toolbars, and editor tabs) so the editor occupies the entire main window with the source code centered.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - IDE viewing modes

@@ -5,7 +5,7 @@ topics:
   - java
   - refactoring
 author: hs
-subtitle: Renaming in IntelliJ IDEA including comments and texts
+subtitle: Renaming in IntelliJ IDEA including comments and texts.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) IntelliJ IDEA. 3 Ways To Simplify Your Code

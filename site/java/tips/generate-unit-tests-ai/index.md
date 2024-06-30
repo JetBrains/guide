@@ -1,11 +1,11 @@
 ---
 date: 2024-03-05
-title: Generate unit tests
+title: Generate Unit Tests
 topics:
   - ai
   - java
 author: md
-subtitle: Generate unit tests with AI Assistant
+subtitle: Generate unit tests with AI Assistant.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Generate tests with AI

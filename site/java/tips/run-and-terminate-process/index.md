@@ -6,7 +6,7 @@ topics:
   - running
   - tricks
 author: md
-subtitle: How to run and terminate/stop a process
+subtitle: How to run and terminate/stop a process from your toolbar.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Run Applications

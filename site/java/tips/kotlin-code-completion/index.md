@@ -5,7 +5,7 @@ topics:
   - editing
   - kotlin
 author: hs
-subtitle: Use code and statement completion to write code faster
+subtitle: Use code and statement completion to write code faster.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) IntelliJ IDEA. Code Completion

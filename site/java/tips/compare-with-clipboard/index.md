@@ -4,7 +4,7 @@ title: Compare with Clipboard
 topics:
   - tricks
 author: md
-subtitle: Quickly compare two files
+subtitle: Quickly compare two files right inside your IDE.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Compare with Clipboard

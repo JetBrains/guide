@@ -1,10 +1,10 @@
 ---
 date: 2024-03-04
-title: Hide tool windows
+title: Hide Tool Windows
 topics:
   - tricks
 author: md
-subtitle: Hide or restore all tool windows
+subtitle: Hide or restore all tool windows so you can keep your IDE exactly how you like it.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Hide or restore all tool windows

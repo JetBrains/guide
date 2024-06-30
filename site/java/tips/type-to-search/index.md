@@ -1,6 +1,6 @@
 ---
 date: 2021-05-31
-title: Type into any dialog to search
+title: Type Into Any Dialog to Search
 topics:
   - gettingstarted
   - interface
@@ -9,8 +9,7 @@ topics:
   - tricks
 author: hs
 subtitle: >-
-  You can start typing into a dialog box to search, even if there's not a
-  textual search box available.
+  You can start typing into a dialog box to search, even if there's not a textual search box available.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Navigation in IntelliJ IDEA

@@ -1,13 +1,12 @@
 ---
 date: 2021-05-11
-title: Prevent a package depending upon another
+title: Prevent a Package Depending Upon Another
 topics:
   - inspections
   - kotlin
 author: tg
 subtitle: >-
-  Enforce architecture rules, such as data access layers not depending upon UI
-  layers.
+  Enforce architecture rules, such as data access layers not depending upon UI layers.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Code inspections

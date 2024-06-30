@@ -5,7 +5,7 @@ topics:
   - editing
   - java
 author: hs
-subtitle: Join lines of code together
+subtitle: Join lines of code together in your IDE.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Navigation in IntelliJ IDEA
