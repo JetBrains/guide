@@ -1,7 +1,7 @@
 ---
 date: 2023-01-27
 title: Add and Remove Breakpoints Quickly
-subtitle: How to toggle breakpoints without using the mouse.
+subtitle: How to toggle breakpoints without even touching the mouse.
 topics:
   - javascript
   - running

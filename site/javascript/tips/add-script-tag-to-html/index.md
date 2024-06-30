@@ -1,7 +1,7 @@
 ---
 date: 2020-03-16
 title: Adding &lt;script&gt; Tag
-subtitle: Get help when adding the script element.
+subtitle: Get help when adding the script element to your code.
 topics:
   - html
 author: er

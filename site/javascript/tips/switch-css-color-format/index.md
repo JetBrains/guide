@@ -2,8 +2,7 @@
 date: 2020-05-26
 title: Switch CSS Color Format on the Fly
 subtitle: >-
-  Converting from HEX to RGB and other formats can be done real quick with
-  WebStorm.
+  Converting from HEX to RGB and other formats can be done real quick with WebStorm.
 topics:
   - css
   - editing

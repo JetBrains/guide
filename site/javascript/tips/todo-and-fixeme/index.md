@@ -2,8 +2,7 @@
 date: 2020-03-16
 title: Add Reminders to Fix Something
 subtitle: >-
-  Add a TODO or Fixme comment to remind yourself of fixing something in your
-  code.
+  Add a TODO or Fixme comment to remind yourself of fixing something in your code.
 topics:
   - editing
 author: er

@@ -1,7 +1,7 @@
 ---
 date: 2020-06-19
 title: Preview UI Themes on the Go
-subtitle: Preview UI themes without going to the IDE settings.
+subtitle: Check out UI themes without going to the IDE settings.
 topics:
   - customizing
 author: er

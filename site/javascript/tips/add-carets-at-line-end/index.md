@@ -1,7 +1,7 @@
 ---
 date: 2020-08-13
 title: Add Carets to End of Lines
-subtitle: Use a shortcut to add carets at the end of each selected line.
+subtitle: Use a shortcut to add carets at the end of each selected line so you can make the same change in multiple places.
 topics:
   - editing
 author: er
