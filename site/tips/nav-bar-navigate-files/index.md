@@ -24,7 +24,7 @@ You could use the _Project_ action <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (W
 
 ## The Solution
 
-Instead, temporarily bring back the Navigation Bar then navigate it with the keyboard.In your JetBrains IDE, [invoke the "Navigation Bar"](../nav-bar-activate/index.md) with <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux).
+Instead, temporarily bring back the Navigation Bar then navigate it with the keyboard.In your JetBrains IDE, [invoke the "Navigation Bar"](../nav-bar-activate/) with <kbd>⌘↑</kbd> (macOS) / <kbd>Alt+Home</kbd> (Windows/Linux).
 
 You can use the left arrow to go up a directory and right arrow to go down a directory. To see the contents of a directory, either press the down arrow or press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux). With this you can get to any place in the tree, without using the mouse.
 
