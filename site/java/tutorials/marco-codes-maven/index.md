@@ -7,7 +7,7 @@ topics:
   - build
   - maven
 author: hs
-subtitle: Working with Maven in your projects
+subtitle: Working with Maven in your projects.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

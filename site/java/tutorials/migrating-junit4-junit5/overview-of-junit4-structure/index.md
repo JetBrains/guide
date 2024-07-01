@@ -4,7 +4,7 @@ date: 2021-08-09
 title: Overview of JUnit 4 Structure
 topics: []
 author: hs
-subtitle: An overview of what a typical JUnit 4 test suite might contain
+subtitle: An overview of what a typical JUnit 4 test suite might contain.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/F8UTTTDtbH0?start=23"
 ---

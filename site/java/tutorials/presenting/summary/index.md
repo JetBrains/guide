@@ -4,7 +4,7 @@ date: 2022-10-03
 title: Summary and Shortcuts
 topics: []
 author: md
-subtitle: Presenting with IntelliJ IDEA Summary
+subtitle: Presenting with IntelliJ IDEA Summary.
 thumbnail: ./thumbnail.png
 ---
 

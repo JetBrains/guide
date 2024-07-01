@@ -4,7 +4,7 @@ date: 2021-11-09
 title: Cloning a Project
 topics: []
 author: hs
-subtitle: Cloning your project from GitHub
+subtitle: Cloning your project from GitHub.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/aBVOAnygcZw?start=9"
 ---

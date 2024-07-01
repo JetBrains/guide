@@ -4,7 +4,7 @@ date: 2022-09-12
 title: Summary
 topics: []
 author: hs
-subtitle: Summary
+subtitle: Summary and shortcuts.
 thumbnail: ./thumbnail.png
 ---
 

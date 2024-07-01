@@ -4,7 +4,7 @@ date: 2021-08-30
 title: Naming your IntelliJ IDEA terminal tabs
 topics: []
 author: hs
-subtitle: Helpful labels will help you to identify each terminal session at a glance
+subtitle: Helpful labels will help you to identify each terminal session at a glance.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/tlEkrWU0d1M?start=123"
 ---

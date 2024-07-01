@@ -5,8 +5,7 @@ title: Label Flexibility
 topics: []
 author: tg
 subtitle: >-
-  Spock supports a range of different test labels to help you write the most
-  readable tests
+  Spock supports a range of different test labels to help you write the most readable tests.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=573"
 ---

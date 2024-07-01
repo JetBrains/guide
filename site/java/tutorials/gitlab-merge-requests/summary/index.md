@@ -4,7 +4,7 @@ date: 2023-08-04
 title: Summary and Shortcuts
 topics: []
 author: md
-subtitle: Working with GitLab Merge Requests Summary
+subtitle: Working with GitLab Merge Requests Summary.
 thumbnail: ./thumbnail.png
 ---
 

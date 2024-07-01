@@ -5,8 +5,7 @@ title: Reading code
 topics: []
 author: hs
 subtitle: >-
-  We spend more time reading code than writing it so it makes sense to invest
-  effort in learning how the IDE can help us here.
+  We spend more time reading code than writing it so it makes sense to invest effort in learning how the IDE can help us here.
 thumbnail: ./thumbnail.png
 ---
 

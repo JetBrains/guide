@@ -4,7 +4,7 @@ date: 2021-11-09
 title: Git Fetch
 topics: []
 author: hs
-subtitle: How and why to invoke Git Fetch
+subtitle: How and why to invoke Git Fetch.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/aBVOAnygcZw?start=292"
 ---

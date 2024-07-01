@@ -4,7 +4,7 @@ date: 2021-09-06
 title: Working with EditorConfigs
 topics: []
 author: hs
-subtitle: What is a .editorconfig file and how can you use it in IntelliJ IDEA
+subtitle: What is a .editorconfig file and how can you use it in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

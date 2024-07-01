@@ -9,7 +9,7 @@ topics:
   - packagesearch
   - security
 author: md
-subtitle: Remediate dependencies using IntelliJ IDEA Ultimate
+subtitle: Remediate dependencies using IntelliJ IDEA Ultimate.
 thumbnail: ./thumbnail.png
 ---
 

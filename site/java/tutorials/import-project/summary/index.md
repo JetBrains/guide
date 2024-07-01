@@ -9,7 +9,7 @@ topics:
   - maven
   - git
 author: md
-subtitle: Importing projects into IntelliJ IDEA Summary
+subtitle: Importing projects into IntelliJ IDEA Summary.
 thumbnail: ./thumbnail.png
 ---
 

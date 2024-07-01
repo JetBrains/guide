@@ -5,7 +5,7 @@ title: Gradlew and build.gradle
 topics: []
 author: hs
 subtitle: >-
-  Gradlew Clean, Gradlew Test, Gradle's Smart Features and Build.Gradle
+  Gradlew Clean, Gradlew Test, Gradle's Smart Features and Build.Gradle.
   explained
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=gKPMKRnnbXU&start=421s"

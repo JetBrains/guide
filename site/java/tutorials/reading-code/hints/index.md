@@ -5,7 +5,7 @@ title: Additional hints
 topics:
   - tricks
 author: md
-subtitle: Quick Documentation & Type Information
+subtitle: Quick Documentation & Type Information.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=hjGVJHOLSjA"

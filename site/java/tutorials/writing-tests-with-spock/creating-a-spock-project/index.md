@@ -6,8 +6,7 @@ topics:
   - gettingstarted
 author: tg
 subtitle: >-
-  Start by creating a new Java project which will be the basis for the rest of
-  this tutorial.
+  Start by creating a new Java project which will be the basis for the rest of this tutorial.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=10"
 ---

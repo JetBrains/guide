@@ -4,7 +4,7 @@ date: 2022-04-18
 title: Summary Shortcuts
 topics: []
 author: hs
-subtitle: Live Template summary and shortcuts used
+subtitle: Live Template summary and shortcuts used.
 thumbnail: ./thumbnail.png
 ---
 

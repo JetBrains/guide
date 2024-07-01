@@ -4,7 +4,7 @@ date: 2022-09-12
 title: Resolving Merges
 topics: []
 author: hs
-subtitle: Using the diff view to resolve merge conflicts
+subtitle: Using the diff view to resolve merge conflicts.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/WgipWkaU2MM?start=136"
 ---

@@ -4,7 +4,7 @@ date: 2022-10-03
 title: Shortcuts
 topics: []
 author: md
-subtitle: Ways to learn shortcuts
+subtitle: Ways to learn shortcuts.
 thumbnail: ./thumbnail.png
 ---
 

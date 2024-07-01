@@ -4,7 +4,7 @@ date: 2022-08-12
 title: From the Command Line
 topics: []
 author: md
-subtitle: Using Git interactive rebase from the command line
+subtitle: Using Git interactive rebase from the command line.
 thumbnail: ./thumbnail.png
 ---
 

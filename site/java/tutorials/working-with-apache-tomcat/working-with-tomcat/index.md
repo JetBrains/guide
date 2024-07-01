@@ -4,7 +4,7 @@ date: 2022-05-10
 title: Working with Tomcat
 topics: []
 author: hs
-subtitle: Working with Tomcat in IntelliJ IDEA
+subtitle: Working with Tomcat in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

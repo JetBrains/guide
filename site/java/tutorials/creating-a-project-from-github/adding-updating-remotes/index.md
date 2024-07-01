@@ -4,7 +4,7 @@ date: 2021-11-09
 title: Adding and Updating Remotes
 topics: []
 author: hs
-subtitle: Managing your remotes for your repository
+subtitle: Managing your remotes for your repository.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/aBVOAnygcZw?start=173"
 ---

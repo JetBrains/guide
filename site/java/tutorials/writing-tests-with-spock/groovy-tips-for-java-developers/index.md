@@ -6,8 +6,7 @@ topics:
   - groovy
 author: tg
 subtitle: >-
-  Groovy's syntax and functionality might be unusual for Java developers to
-  begin with, but it can be very helpful for testing.
+  Groovy's syntax and functionality might be unusual for Java developers to begin with, but it can be very helpful for testing.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=486"
 ---

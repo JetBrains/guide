@@ -8,7 +8,7 @@ topics:
   - maven
   - packagesearch
 author: md
-subtitle: Remove dependencies using Package Search
+subtitle: Remove dependencies using Package Search.
 thumbnail: ./thumbnail.png
 ---
 

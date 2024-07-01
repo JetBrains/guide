@@ -4,7 +4,7 @@ title: Import existing project
 topics:
   - tricks
 author: md
-subtitle: Importing an existing project into IntelliJ IDEA
+subtitle: Importing an existing project into IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

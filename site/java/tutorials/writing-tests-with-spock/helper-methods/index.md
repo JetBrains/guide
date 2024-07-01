@@ -5,8 +5,7 @@ title: Helper Methods
 topics: []
 author: tg
 subtitle: >-
-  Sometimes we need to move test code into a separate method. In this section,
-  we look at some tips for this.
+  Sometimes we need to move test code into a separate method. In this section, we look at some tips for this.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=1716"
 ---

@@ -4,7 +4,7 @@ date: 2022-08-04
 title: Maven Respositories
 topics: []
 author: hs
-subtitle: Local and remote Maven respositories
+subtitle: Local and remote Maven respositories.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=Xatr8AZLOsE&start=1158s"
 ---

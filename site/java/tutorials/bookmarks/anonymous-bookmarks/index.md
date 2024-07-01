@@ -5,7 +5,7 @@ title: Add anonymous bookmarks
 topics:
   - tricks
 author: md
-subtitle: How to add bookmarks without an identifier
+subtitle: How to add bookmarks without an identifier.
 thumbnail: ./thumbnail.png
 ---
 

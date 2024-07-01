@@ -7,8 +7,7 @@ topics:
   - maven
 author: tg
 subtitle: >-
-  IntelliJ IDEA understands projects that use Maven and can import them with
-  minimal configuration
+  IntelliJ IDEA understands projects that use Maven and can import them with minimal configuration.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/pt3uB0sd5kY?start=3"
 ---

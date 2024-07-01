@@ -7,7 +7,7 @@ topics:
   - gradle
   - maven
 author: md
-subtitle: Using the Dependency Analyzer in IntelliJ IDEA
+subtitle: Using the Dependency Analyzer in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

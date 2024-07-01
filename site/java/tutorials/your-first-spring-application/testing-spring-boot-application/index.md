@@ -4,7 +4,7 @@ date: 2021-05-20
 title: Testing Your Spring Boot Application
 topics: []
 author: hs
-subtitle: Let's add a test to check the content being served locally
+subtitle: Let's add a test to check the content being served locally.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/hRZ34CMvQi0"
 ---

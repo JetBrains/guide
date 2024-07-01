@@ -9,7 +9,7 @@ topics:
   - packagesearch
   - security
 author: md
-subtitle: Package Checker plugin in IntelliJ IDEA Ultimate
+subtitle: Package Checker plugin in IntelliJ IDEA Ultimate.
 thumbnail: ./thumbnail.png
 ---
 

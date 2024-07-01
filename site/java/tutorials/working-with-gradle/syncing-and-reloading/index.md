@@ -7,8 +7,7 @@ topics:
   - gradle
 author: tg
 subtitle: >-
-  Sometimes you may need to encourage IntelliJ IDEA to reload any changes from
-  the Gradle configuration.
+  Sometimes you may need to encourage IntelliJ IDEA to reload any changes from the Gradle configuration.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/6V6G3RyxEMk?start=917"
 ---

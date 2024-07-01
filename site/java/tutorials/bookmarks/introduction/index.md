@@ -5,7 +5,7 @@ title: Introduction
 topics:
   - tricks
 author: md
-subtitle: Using bookmarks in IntelliJ IDEA
+subtitle: Using bookmarks in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

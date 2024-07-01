@@ -6,7 +6,7 @@ title: Marco Codes - SSH
 topics:
   - security
 author: hs
-subtitle: Working with SSH
+subtitle: Working with SSH.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

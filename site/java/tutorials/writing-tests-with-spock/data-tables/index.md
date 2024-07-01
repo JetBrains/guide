@@ -6,8 +6,7 @@ topics:
   - testing
 author: tg
 subtitle: >-
-  Data tables offer the same functionality as data pipes, but this syntax can
-  sometimes be more readable for more complex sets of data.
+  Data tables offer the same functionality as data pipes, but this syntax can sometimes be more readable for more complex sets of data.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=1122"
 ---

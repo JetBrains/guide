@@ -4,7 +4,7 @@ date: 2022-11-08
 title: Introduction to JDBC
 topics: []
 author: hs
-subtitle: Overview
+subtitle: Overview.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=KgXq2UBNEhA"
 ---

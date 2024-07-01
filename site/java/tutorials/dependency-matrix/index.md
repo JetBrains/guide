@@ -6,7 +6,7 @@ title: Explore project structure with the Dependency Matrix
 topics:
   - java
 author: md
-subtitle: Exploring project structure with the Dependency Matrix in IntelliJ IDEA
+subtitle: Exploring project structure with the Dependency Matrix in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

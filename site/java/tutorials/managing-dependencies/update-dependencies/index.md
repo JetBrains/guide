@@ -8,7 +8,7 @@ topics:
   - maven
   - packagesearch
 author: md
-subtitle: Upgrade dependencies using Package Search
+subtitle: Upgrade dependencies using Package Search.
 thumbnail: ./thumbnail.png
 ---
 

@@ -5,7 +5,7 @@ title: Reader mode
 topics:
   - tricks
 author: md
-subtitle: Render doc comments in Reader Mode
+subtitle: Render doc comments in Reader Mode.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=hjGVJHOLSjA"

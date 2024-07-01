@@ -4,7 +4,7 @@ date: 2022-03-30
 title: Updating Tomcat version
 topics: []
 author: hs
-subtitle: How the project is set up in Docker and upgrading Tomcat
+subtitle: How the project is set up in Docker and upgrading Tomcat.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/mukr2Q_zBm4?start=88"
 ---

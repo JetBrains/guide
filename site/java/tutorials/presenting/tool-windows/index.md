@@ -4,7 +4,7 @@ date: 2022-10-03
 title: Tool windows
 topics: []
 author: md
-subtitle: Using tool windows with shortcuts
+subtitle: Using tool windows with shortcuts.
 thumbnail: ./thumbnail.png
 ---
 

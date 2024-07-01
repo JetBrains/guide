@@ -4,7 +4,7 @@ date: 2021-08-09
 title: Introduction
 topics: []
 author: hs
-subtitle: Introduction to Migrating JUnit 4 to JUnit 5
+subtitle: Introduction to Migrating JUnit 4 to JUnit 5.
 thumbnail: ./thumbnail.png
 ---
 

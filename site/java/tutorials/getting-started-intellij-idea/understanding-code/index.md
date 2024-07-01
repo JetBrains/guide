@@ -5,8 +5,7 @@ title: Understanding code
 topics: []
 author: hs
 subtitle: >-
-  Understanding code can be challenging, especially if you're new to the
-  codebase.
+  Understanding code can be challenging, especially if you're new to the codebase.
 thumbnail: ./thumbnail.png
 ---
 

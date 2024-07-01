@@ -2,7 +2,7 @@
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2021-04-11
-title: Using the IDE Feature Trainer
+title: Using the IDE Feature Trainer.
 topics:
   - interface
   - java

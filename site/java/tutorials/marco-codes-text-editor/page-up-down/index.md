@@ -4,7 +4,7 @@ date: 2022-11-13
 title: Page Up and Page Down
 topics: []
 author: hs
-subtitle: Implementing arrow keys for page up and down
+subtitle: Implementing arrow keys for page up and down.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=72Dt_U9DQh4&start=60s"
 ---

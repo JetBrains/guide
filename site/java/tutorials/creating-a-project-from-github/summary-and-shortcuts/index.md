@@ -4,7 +4,7 @@ date: 2021-11-09
 title: Summary and Shortcuts
 topics: []
 author: hs
-subtitle: Creating a Project from GitHub Summary
+subtitle: Creating a Project from GitHub Summary.
 thumbnail: ./thumbnail.png
 ---
 

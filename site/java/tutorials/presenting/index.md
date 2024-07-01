@@ -2,7 +2,7 @@
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2022-10-03
-title: Presenting with IntelliJ IDEA
+title: Presenting with IntelliJ IDEA.
 topics:
   - java
   - kotlin

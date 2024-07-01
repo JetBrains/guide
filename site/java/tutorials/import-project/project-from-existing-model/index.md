@@ -6,7 +6,7 @@ topics:
   - gradle
   - maven
 author: md
-subtitle: Importing a project from existing model
+subtitle: Importing a project from existing model.
 thumbnail: ./thumbnail.png
 ---
 

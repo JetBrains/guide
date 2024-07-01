@@ -4,7 +4,7 @@ date: 2022-10-03
 title: Bookmarks
 topics: []
 author: md
-subtitle: Using bookmarks for navigation
+subtitle: Using bookmarks for navigation.
 thumbnail: ./thumbnail.png
 ---
 

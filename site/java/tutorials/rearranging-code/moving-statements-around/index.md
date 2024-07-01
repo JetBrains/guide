@@ -4,7 +4,7 @@ date: 2021-09-20
 title: Moving Statements Around
 topics: []
 author: hs
-subtitle: Moving a statements up and down within their scope
+subtitle: Moving a statements up and down within their scope.
 thumbnail: ./thumbnail.png
 ---
 

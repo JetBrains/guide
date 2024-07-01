@@ -4,7 +4,7 @@ date: 2023-08-04
 title: Reviewing GitLab Merge Requests
 topics: []
 author: md
-subtitle: Reviewing GitLab Merge Requests inside IntelliJ IDEA
+subtitle: Reviewing GitLab Merge Requests inside IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

@@ -4,7 +4,7 @@ date: 2022-07-23
 title: Introduction to Spring Boot Crash Course
 topics: []
 author: hs
-subtitle: Spring Initializr setup and choosing your IDE
+subtitle: Spring Initializr setup and choosing your IDE.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=0s"
 ---

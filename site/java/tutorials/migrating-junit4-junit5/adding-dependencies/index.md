@@ -5,7 +5,7 @@ title: Adding dependencies
 topics:
   - maven
 author: hs
-subtitle: Adding JUnit 5 Dependencies
+subtitle: Adding JUnit 5 Dependencies.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/F8UTTTDtbH0?start=44"
 ---

@@ -4,7 +4,7 @@ date: 2023-08-04
 title: View GitLab Merge Requests
 topics: []
 author: md
-subtitle: View GitLab Merge Requests inside IntelliJ IDEA
+subtitle: View GitLab Merge Requests inside IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

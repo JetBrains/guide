@@ -4,7 +4,7 @@ date: 2022-11-16
 title: "Project Dependencies, Mapping Annotations, SessionFactory"
 topics: []
 author: hs
-subtitle: The basics of Hibernate
+subtitle: The basics of Hibernate.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=xHminZ9Dxm4&start=111s"
 ---

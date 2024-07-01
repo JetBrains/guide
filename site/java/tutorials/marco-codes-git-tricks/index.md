@@ -7,7 +7,7 @@ topics:
   - git
   - vcs
 author: hs
-subtitle: 5 Git Tricks you need to know
+subtitle: 5 Git Tricks you need to know.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

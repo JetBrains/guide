@@ -4,7 +4,7 @@ date: 2022-04-18
 title: Advanced Example
 topics: []
 author: hs
-subtitle: Creating a Live Template to add a JUnit test
+subtitle: Creating a Live Template to add a JUnit test.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/Sio9MdSqXZo?start=392"
 ---

@@ -8,7 +8,7 @@ topics:
   - packagesearch
   - security
 author: md
-subtitle: View vulnerable dependencies in Gradle projects
+subtitle: View vulnerable dependencies in Gradle projects.
 thumbnail: ./thumbnail.png
 ---
 

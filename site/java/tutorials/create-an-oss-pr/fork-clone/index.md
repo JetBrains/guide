@@ -6,7 +6,7 @@ topics:
   - git
   - vcs
 author: md
-subtitle: Forking and cloning the project
+subtitle: Forking and cloning the project.
 thumbnail: ./thumbnail.png
 ---
 

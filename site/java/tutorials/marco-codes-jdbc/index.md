@@ -5,7 +5,7 @@ date: 2022-11-08
 title: Marco Codes - JDBC
 topics: []
 author: hs
-subtitle: JDBC nice n easy
+subtitle: JDBC nice n easy.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

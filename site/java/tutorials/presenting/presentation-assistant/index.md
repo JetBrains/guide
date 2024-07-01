@@ -4,7 +4,7 @@ date: 2023-12-12
 title: Presentation Assistant plugin
 topics: []
 author: md
-subtitle: Using the Presentation Assistant plugin to show shortcuts
+subtitle: Using the Presentation Assistant plugin to show shortcuts.
 thumbnail: ./thumbnail.png
 ---
 

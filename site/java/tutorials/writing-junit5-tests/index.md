@@ -8,7 +8,7 @@ topics:
   - junit
   - testing
 author: hs
-subtitle: Writing JUnit 5 Tests
+subtitle: Writing JUnit 5 Tests from start to finish.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

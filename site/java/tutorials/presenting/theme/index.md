@@ -4,7 +4,7 @@ date: 2022-10-03
 title: Theme
 topics: []
 author: md
-subtitle: Selecting a theme
+subtitle: Selecting a theme.
 thumbnail: ./thumbnail.png
 ---
 

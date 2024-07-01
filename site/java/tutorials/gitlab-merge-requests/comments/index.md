@@ -4,7 +4,7 @@ date: 2023-08-04
 title: Adding comments
 topics: []
 author: md
-subtitle: Adding comments from GitLab and IntelliJ IDEA
+subtitle: Adding comments from GitLab and IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

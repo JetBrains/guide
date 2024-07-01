@@ -4,8 +4,7 @@ date: 2022-03-30
 title: Setting the scene
 topics: []
 author: hs
-subtitle: Downloading the project and running the application
-thumbnail: ./thumbnail.png
+subtitle: Downloading the project and running the application.
 video: "https://youtu.be/mukr2Q_zBm4?start=42"
 ---
 

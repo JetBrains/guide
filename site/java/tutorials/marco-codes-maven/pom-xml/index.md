@@ -4,7 +4,7 @@ date: 2022-08-04
 title: Pom.xml file
 topics: []
 author: hs
-subtitle: Maven directory structure and your pom.xml file
+subtitle: Maven directory structure and your pom.xml file.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=Xatr8AZLOsE&start=372s"
 ---

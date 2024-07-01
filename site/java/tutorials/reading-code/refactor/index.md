@@ -6,7 +6,7 @@ topics:
   - tricks
   - refactoring
 author: md
-subtitle: Refactoring code for understanding
+subtitle: Refactoring code for understanding.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=hjGVJHOLSjA"

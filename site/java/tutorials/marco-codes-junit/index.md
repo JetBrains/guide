@@ -7,7 +7,7 @@ topics:
   - junit
   - testing
 author: hs
-subtitle: JUnit 5 Nice n Easy
+subtitle: JUnit 5 Nice n Easy.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

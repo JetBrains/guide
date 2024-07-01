@@ -4,7 +4,7 @@ date: 2022-03-30
 title: Updating the persistence file
 topics: []
 author: hs
-subtitle: Fixing the final `javax` references in your files
+subtitle: Fixing the final `javax` references in your files.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/mukr2Q_zBm4?start=702"
 ---

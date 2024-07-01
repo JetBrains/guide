@@ -5,8 +5,7 @@ title: Making a Change
 topics: []
 author: hs
 subtitle: >-
-  Editing the output of our Hello World application to check it's working as we
-  expect.
+  Editing the output of our Hello World application to check it's working as we expect.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/H_XxH66lm3U?start=747"
 ---

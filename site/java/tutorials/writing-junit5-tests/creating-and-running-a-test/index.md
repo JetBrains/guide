@@ -4,7 +4,7 @@ date: 2021-01-01
 title: Creating and running a test
 topics: []
 author: hs
-subtitle: Getting a JUnit 5 Test running
+subtitle: Getting a JUnit 5 Test running.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/we3zJE3hlWE?start=102"
 ---

@@ -5,7 +5,7 @@ title: Top Shortcuts
 topics:
   - gettingstarted
 author: hs
-subtitle: Our handpicked top shortcuts
+subtitle: Our handpicked top shortcuts just for you.
 thumbnail: ./thumbnail.png
 playlistItems:
   - /java/tips/context-actions/

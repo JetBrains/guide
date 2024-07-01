@@ -4,7 +4,7 @@ date: 2022-09-24
 title: Gradle Multi-Projects
 topics: []
 author: hs
-subtitle: Multi-projects & Gradle Project Structure
+subtitle: Multi-projects & Gradle Project Structure.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=gKPMKRnnbXU&start=184s"
 ---

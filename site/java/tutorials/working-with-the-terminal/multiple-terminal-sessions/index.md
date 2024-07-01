@@ -4,7 +4,7 @@ date: 2021-08-30
 title: Opening more terminal sessions
 topics: []
 author: hs
-subtitle: You can run more than one terminal inside your IDE
+subtitle: You can run more than one terminal inside your IDE.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/tlEkrWU0d1M?start=74"
 ---

@@ -7,7 +7,7 @@ topics:
   - testing
   - debugging
 author: md
-subtitle: Testing and debugging in IntelliJ IDEA
+subtitle: Testing and debugging in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=hjGVJHOLSjA"

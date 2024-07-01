@@ -2,7 +2,7 @@
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2022-07-23
-title: Marco Codes - Spring Boot
+title: Marco Codes - Spring Boot.
 topics:
   - spring
 author: hs

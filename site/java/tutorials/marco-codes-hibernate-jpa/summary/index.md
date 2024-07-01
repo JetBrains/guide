@@ -4,7 +4,7 @@ date: 2022-11-16
 title: Summary
 topics: []
 author: hs
-subtitle: Resources
+subtitle: Resources.
 thumbnail: ./thumbnail.png
 ---
 

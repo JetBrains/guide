@@ -5,7 +5,7 @@ title: Navigate to bookmarks
 topics:
   - tricks
 author: md
-subtitle: How to navigate to created bookmarks
+subtitle: How to navigate to created bookmarks.
 thumbnail: ./thumbnail.png
 ---
 

@@ -4,7 +4,7 @@ date: 2022-07-23
 title: Photo Upload
 topics: []
 author: hs
-subtitle: Upload the photos
+subtitle: Upload the photos.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=1948s"
 ---

@@ -5,7 +5,7 @@ title: Opening the Dependency Matrix
 topics:
   - java
 author: md
-subtitle: Opening the Dependency Matrix for your project
+subtitle: Opening the Dependency Matrix for your project.
 thumbnail: ./thumbnail.png
 ---
 

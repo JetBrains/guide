@@ -4,7 +4,7 @@ date: 2023-08-04
 title: GitLab Merge Request tool window
 topics: []
 author: md
-subtitle: The GitLab Merge Request tool window
+subtitle: The GitLab Merge Request tool window.
 thumbnail: ./thumbnail.png
 ---
 

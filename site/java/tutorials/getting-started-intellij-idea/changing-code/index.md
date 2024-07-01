@@ -5,8 +5,7 @@ title: Changing code
 topics: []
 author: hs
 subtitle: >-
-  Code is rarely a write-once activity, we often need to go back and change it
-  multiple times.
+  Code is rarely a write-once activity, we often need to go back and change it multiple times.
 thumbnail: ./thumbnail.png
 ---
 

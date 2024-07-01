@@ -6,7 +6,7 @@ topics:
   - gradle
   - maven
 author: md
-subtitle: Opening multiple repositories into one project in IntelliJ IDEA
+subtitle: Opening multiple repositories into one project in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

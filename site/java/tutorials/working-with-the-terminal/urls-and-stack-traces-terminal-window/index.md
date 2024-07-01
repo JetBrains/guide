@@ -5,7 +5,7 @@ title: Opening URLs from your terminal window
 topics: []
 author: hs
 subtitle: >-
-  File names link back to the project and you can click on URLs in the terminal
+  File names link back to the project and you can click on URLs in the terminal.
   window
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/tlEkrWU0d1M?start=299"

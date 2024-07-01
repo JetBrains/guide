@@ -4,7 +4,7 @@ date: 2021-01-01
 title: Disabling or Ignoring Tests
 topics: []
 author: hs
-subtitle: Using JUnit 5 annotations to disable tests
+subtitle: Using JUnit 5 annotations to disable tests.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/we3zJE3hlWE?start=349"
 ---

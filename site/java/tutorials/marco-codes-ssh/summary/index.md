@@ -4,7 +4,7 @@ date: 2022-09-15
 title: Summary
 topics: []
 author: hs
-subtitle: Further reading
+subtitle: Further reading.
 thumbnail: ./thumbnail.png
 ---
 

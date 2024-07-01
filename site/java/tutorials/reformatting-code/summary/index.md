@@ -4,7 +4,7 @@ date: 2021-06-09
 title: Summary
 topics: []
 author: hs
-subtitle: Summary and shortcuts we used
+subtitle: Summary and shortcuts we used.
 thumbnail: ./thumbnail.png
 ---
 

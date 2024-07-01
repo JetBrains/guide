@@ -4,7 +4,7 @@ date: 2021-08-30
 title: Pasting code from the editor into your terminal
 topics: []
 author: hs
-subtitle: Running command line processes inside the IDE keeps us in the flow of coding
+subtitle: Running command line processes inside the IDE keeps us in the flow of coding.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/tlEkrWU0d1M?start=211"
 ---

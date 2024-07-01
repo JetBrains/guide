@@ -6,9 +6,7 @@ topics:
   - testing
 author: tg
 subtitle: >-
-  Mocks are a useful testing tool. We can provide "empty" objects, so we don't
-  have to initialise the whole application to test a section, and we can use
-  mocks to check our code is making the calls we expect.
+  We can provide "empty" objects, so we don't have to initialise the whole application to test a section, and we can use mocks to check our code is making the calls we expect.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=1290"
 ---

@@ -5,7 +5,7 @@ title: Summary and Shortcuts
 topics:
   - tricks
 author: md
-subtitle: Using bookmarks in IntelliJ IDEA Summary
+subtitle: Using bookmarks in IntelliJ IDEA Summary.
 thumbnail: ./thumbnail.png
 ---
 

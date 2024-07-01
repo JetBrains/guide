@@ -4,7 +4,7 @@ date: 2023-08-04
 title: Logging in to GitLab
 topics: []
 author: md
-subtitle: Logging in to GitLab from IntelliJ IDEA
+subtitle: Logging in to GitLab from IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

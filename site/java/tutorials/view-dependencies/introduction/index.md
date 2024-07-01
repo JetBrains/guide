@@ -7,7 +7,7 @@ topics:
   - gradle
   - maven
 author: md
-subtitle: Different ways to view dependencies in IntelliJ IDEA
+subtitle: Different ways to view dependencies in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

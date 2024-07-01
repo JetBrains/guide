@@ -5,7 +5,7 @@ title: Setting an abbreviation
 topics:
   - tricks
 author: tg
-subtitle: Use a unique abbreviation to quickly navigate to the Gradle tool window
+subtitle: Use a unique abbreviation to quickly navigate to the Gradle tool window.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/6V6G3RyxEMk?start=767"
 ---

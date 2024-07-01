@@ -5,7 +5,7 @@ title: Interpret the Dependency Matrix
 topics:
   - java
 author: md
-subtitle: How to interpret the Dependency Matrix
+subtitle: How to interpret the Dependency Matrix.
 thumbnail: ./thumbnail.png
 ---
 

@@ -4,7 +4,7 @@ date: 2022-11-08
 title: DataSource and Connection Pools
 topics: []
 author: hs
-subtitle: Connecting to databases and more
+subtitle: Connecting to databases and more.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=KgXq2UBNEhA&start=1052s"
 ---

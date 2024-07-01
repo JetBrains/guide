@@ -6,7 +6,7 @@ title: Marco Codes - Building a Text Editor
 topics:
   - java
 author: hs
-subtitle: How to build a terminal-based text editor with Java
+subtitle: How to build a terminal-based text editor with Java.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction-ansi-escape-codes/

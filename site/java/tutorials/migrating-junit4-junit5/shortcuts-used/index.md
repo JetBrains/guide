@@ -4,7 +4,7 @@ date: 2021-08-09
 title: Shortcuts
 topics: []
 author: hs
-subtitle: A list of shortcuts used in the tutorial
+subtitle: A list of shortcuts used in the tutorial.
 thumbnail: ./thumbnail.png
 ---
 

@@ -5,8 +5,7 @@ title: With
 topics: []
 author: tg
 subtitle: >-
-  Sometimes we want to check more than one value on an object. We can use `with`
-  to do this.
+  Sometimes we want to check more than one value on an object. We can use `with` to do this.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=1834"
 ---

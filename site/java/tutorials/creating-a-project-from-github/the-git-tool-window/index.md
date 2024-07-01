@@ -4,7 +4,7 @@ date: 2021-11-09
 title: The Git Tool Window
 topics: []
 author: hs
-subtitle: How the Git Tool Window can help you
+subtitle: How the Git Tool Window can help you.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/aBVOAnygcZw?start=121"
 ---

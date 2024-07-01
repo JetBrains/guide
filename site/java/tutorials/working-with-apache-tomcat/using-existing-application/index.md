@@ -4,7 +4,7 @@ date: 2022-05-10
 title: Using Apache Tomcat with an existing application
 topics: []
 author: hs
-subtitle: How to add Apache Tomcat to your application
+subtitle: How to add Apache Tomcat to your application.
 thumbnail: ./thumbnail.png
 ---
 

@@ -4,7 +4,7 @@ date: 2022-10-03
 title: Font
 topics: []
 author: md
-subtitle: Configuring font and font size
+subtitle: Configuring font and font size.
 thumbnail: ./thumbnail.png
 ---
 

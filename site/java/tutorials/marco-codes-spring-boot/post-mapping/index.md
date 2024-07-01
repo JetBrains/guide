@@ -4,7 +4,7 @@ date: 2022-07-23
 title: PostMapping
 topics: []
 author: hs
-subtitle: Creating and testing @PostMapping
+subtitle: Creating and testing @PostMapping.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=1510s"
 ---

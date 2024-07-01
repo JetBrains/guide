@@ -4,7 +4,7 @@ date: 2021-08-30
 title: Terminal locations from the command window
 topics: []
 author: hs
-subtitle: You can open a location from the project window in the terminal window
+subtitle: You can open a location from the project window in the terminal window.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/tlEkrWU0d1M?start=249"
 ---

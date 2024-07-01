@@ -4,7 +4,7 @@ date: 2021-01-01
 title: Optional Configuration
 topics: []
 author: hs
-subtitle: Configure parameters and how tests are run
+subtitle: Configure parameters and how tests are run.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/we3zJE3hlWE?start=224"
 ---

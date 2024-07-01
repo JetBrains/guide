@@ -5,8 +5,7 @@ title: Leaving Feedback
 topics: []
 author: hs
 subtitle: >-
-  Feedback from you is really helpful for us and will enable us to provide more
-  modules and lessons in the IDE Feature Trainer.
+  Feedback from you is really helpful for us and will enable us to provide more modules and lessons in the IDE Feature Trainer.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/Uxwi4ibDoHE"
 ---

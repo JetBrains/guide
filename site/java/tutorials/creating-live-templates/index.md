@@ -7,7 +7,7 @@ topics:
   - java
   - livetemplates
 author: hs
-subtitle: How you can use live templates to get IntelliJ IDEA to write more code for you
+subtitle: How you can use live templates to get IntelliJ IDEA to write more code for you.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

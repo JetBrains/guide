@@ -6,7 +6,7 @@ topics:
   - tricks
   - vcs
 author: md
-subtitle: Using Version control (Git) history to understand the project
+subtitle: Using Version control (Git) history to understand the project.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=hjGVJHOLSjA"

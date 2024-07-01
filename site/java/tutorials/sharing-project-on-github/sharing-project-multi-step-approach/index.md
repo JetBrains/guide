@@ -5,8 +5,7 @@ title: Sharing your project on GitHub - The multi-step approach
 topics: []
 author: hs
 subtitle: >-
-  How to enable version control for your project locally first before sharing it
-  to GitHub
+  How to enable version control for your project locally first before sharing it to GitHub.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/4ukhZvOmAtk?start=850"
 ---

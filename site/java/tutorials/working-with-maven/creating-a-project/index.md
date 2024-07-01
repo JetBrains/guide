@@ -6,7 +6,7 @@ topics:
   - gettingstarted
   - maven
 author: tg
-subtitle: Start by creating a brand-new project that uses Maven as the build tool
+subtitle: Start by creating a brand-new project that uses Maven as the build tool.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/pt3uB0sd5kY?start=3"
 ---

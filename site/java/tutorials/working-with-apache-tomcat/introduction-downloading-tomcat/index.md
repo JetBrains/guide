@@ -4,7 +4,7 @@ date: 2022-05-10
 title: Introduction
 topics: []
 author: hs
-subtitle: Introduction and downloading Apache Tomcat
+subtitle: Introduction and downloading Apache Tomcat.
 thumbnail: ./thumbnail.png
 ---
 

@@ -8,7 +8,7 @@ topics:
   - gradle
   - maven
 author: md
-subtitle: Analyzing dependencies in IntelliJ IDEA
+subtitle: Analyzing dependencies in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

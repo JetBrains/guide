@@ -7,7 +7,7 @@ topics:
   - gradle
   - maven
 author: md
-subtitle: View dependencies in IntelliJ IDEA Summary
+subtitle: View dependencies in IntelliJ IDEA Summary.
 thumbnail: ./thumbnail.png
 ---
 

@@ -8,8 +8,7 @@ topics:
   - java
 author: hs
 subtitle: >-
-  Create a new Java application and JAR file that prints `Hello World` to the
-  console.
+  Create a new Java application and JAR file that prints `Hello World` to the console.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./creating-a-new-project/

@@ -4,7 +4,7 @@ date: 2021-08-09
 title: Other approaches to consider
 topics: []
 author: hs
-subtitle: There are other approaches that you can consider for migration
+subtitle: There are other approaches that you can consider for migration.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/F8UTTTDtbH0?start=771"
 ---

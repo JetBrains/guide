@@ -4,7 +4,7 @@ date: 2022-07-23
 title: The End & Next Steps
 topics: []
 author: hs
-subtitle: References used in the video
+subtitle: References used in the video.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=4558s"
 ---

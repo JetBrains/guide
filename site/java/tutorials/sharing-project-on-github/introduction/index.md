@@ -4,7 +4,7 @@ date: 2021-10-13
 title: Introduction
 topics: []
 author: hs
-subtitle: Two ways you can share your local repository with GitHub
+subtitle: Two ways you can share your local repository with GitHub.
 thumbnail: ./thumbnail.png
 ---
 

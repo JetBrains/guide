@@ -4,7 +4,7 @@ date: 2022-08-11
 title: JUnit Assertions
 topics: []
 author: hs
-subtitle: Assertions and asserting them
+subtitle: Assertions and asserting them.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=6uSnF6IuWIw&start=432s"
 ---

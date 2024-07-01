@@ -4,7 +4,7 @@ date: 2022-11-08
 title: exa
 topics: []
 author: hs
-subtitle: An introduction to exa
+subtitle: An introduction to exa.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/6FFNeDiRGK0&start=16s"
 ---

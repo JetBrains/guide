@@ -7,7 +7,7 @@ topics:
   - gradle
   - maven
 author: md
-subtitle: View dependencies in the build tool window
+subtitle: View dependencies in the build tool window.
 thumbnail: ./thumbnail.png
 ---
 

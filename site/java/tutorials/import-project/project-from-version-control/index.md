@@ -6,7 +6,7 @@ topics:
   - vcs
   - git
 author: md
-subtitle: Cloning a project from version control
+subtitle: Cloning a project from version control.
 thumbnail: ./thumbnail.png
 ---
 
