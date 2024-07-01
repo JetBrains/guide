@@ -10,8 +10,6 @@ thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/pycharm/2023/10/an-interview-with-brian-okken-the-pytest-storyteller/"
 ---
 
-**Author: Helen Scott**
-
 Brian has recently launched his new pytest course. Mostly, Brian spends his free time telling people they should write good, clean automated tests, specifically using pytest.
 
 You can listen to Brian's podcasts at [@PythonBytes](https://pythonbytes.fm/), [@PythonPeople](https://pythonpeople.fm/) and [@PythonTest](https://pythontest.com/).

@@ -9,8 +9,6 @@ thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/idea/2024/02/build-a-spring-boot-app-with-ai-assistant/"
 ---
 
-**Author: Marit van Dijk**
-
 This article explains how to build a Java Spring Boot web application using IntelliJ IDEA and JetBrains AI Assistant. It provides step-by-step instructions on creating a new project, adding code to it, and running the application.
 
 The author also discusses how AI Assistant can help solve problems and generate unit tests for the application. The tutorial includes examples, screenshots, and tips on using AI Assistant effectively. The article concludes by highlighting the benefits of using IntelliJ IDEA and AI Assistant to develop Spring Boot applications and encourages readers to explore and expand on the application created in the tutorial.
