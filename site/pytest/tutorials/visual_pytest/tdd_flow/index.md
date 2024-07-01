@@ -7,8 +7,7 @@ topics:
   - testing
 author: hs
 subtitle: >-
-  Setup your PyCharm project to help get into the flow of Test-Driven
-  Development (TDD).
+  Setup your PyCharm project to help get into the flow of Test-Driven Development (TDD).
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=ysFzLRbturI"
 obsoletes:

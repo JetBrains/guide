@@ -8,8 +8,7 @@ topics:
   - testing
 author: hs
 subtitle: >-
-  Test writing is productive and fun with PyCharm as a visual testing tool atop
-  pytest.
+  Test writing is productive and fun with PyCharm as a visual testing tool atop pytest.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./background/

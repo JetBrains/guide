@@ -5,7 +5,7 @@ topics:
   - testing
   - pytest
 author: hs
-subtitle: One of the most popular frameworks for Python is pytest, and it comes with several cool features. I’m going to show you three of them in this blog post.
+subtitle: One of the most popular frameworks for Python is pytest, and it comes with several cool features.
 thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/pycharm/2024/02/pytest-features/"
 ---

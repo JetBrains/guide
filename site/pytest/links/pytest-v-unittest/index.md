@@ -5,7 +5,7 @@ topics:
   - testing
   - pytest
 author: mahataqi
-subtitle: Python, being a versatile and widely used programming language, offers several testing frameworks to facilitate the testing process. Two prominent choices are pytest and unittest, both of which come with their own sets of features and advantages.
+subtitle: Two prominent choices are pytest and unittest, both of which come with their own sets of features and advantages.
 thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/pycharm/2024/03/pytest-vs-unittest/"
 ---

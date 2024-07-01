@@ -8,7 +8,7 @@ topics:
   - kubernetes
   - python
 author: mm
-subtitle: Harnessing the Power of Google Kubernetes Engine
+subtitle: Harnessing the Power of Google Kubernetes Engine.
 thumbnail: thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=cqIz9aR8bMk"

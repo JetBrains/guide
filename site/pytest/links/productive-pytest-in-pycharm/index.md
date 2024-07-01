@@ -5,7 +5,7 @@ topics:
   - testing
   - pytest
 author: pwe
-subtitle: Testing is a major part of Python development and pytest has become the leading testing framework. Brian Okken, author of the recent book Python Testing with pytest and host of the Test and Code podcast, helps you “level up” your pytest skill.
+subtitle: Testing is a major part of Python development and pytest has become the leading testing framework.
 thumbnail: ./thumbnail.png
 linkURL: "https://youtu.be/ixqeebhUa-w"
 ---

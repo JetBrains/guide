@@ -8,7 +8,7 @@ topics:
   - kubernetes
   - python
 author: mm
-subtitle: Simplifying Setup with GCloud SDK and Cloud Code Plugin
+subtitle: Simplifying Setup with GCloud SDK and Cloud Code Plugin.
 thumbnail: thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=cqIz9aR8bMk"

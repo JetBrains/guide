@@ -8,7 +8,7 @@ topics:
   - kubernetes
   - python
 author: mm
-subtitle: Running Applications and Securing Domains with SSL Certificates in GKE
+subtitle: Running Applications and Securing Domains with SSL Certificates in GKE.
 thumbnail: thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=cqIz9aR8bMk"

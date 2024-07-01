@@ -8,7 +8,7 @@ topics:
   - kubernetes
   - python
 author: mm
-subtitle: Initiating Projects with PyCharm's New Project Creation
+subtitle: Initiating Projects with PyCharm's New Project Creation.
 thumbnail: thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=cqIz9aR8bMk"

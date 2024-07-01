@@ -8,7 +8,7 @@ topics:
   - kubernetes
   - python
 author: mm
-subtitle: Building APIs with Django Rest Framework
+subtitle: Building APIs with Django Rest Framework.
 thumbnail: thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=cqIz9aR8bMk"

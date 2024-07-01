@@ -1,59 +1,96 @@
 ---
 type: TutorialStep
-date: 2024-06-26
+date: 2020-06-10
 title: Project Setup
 topics:
   - pytest
   - testing
-author: hs
+author: pwe
 subtitle: >-
-  Make a PyCharm project and virtual environment with dependencies, and configure PyCharm to use pytest.
+  Make a PyCharm project and virtual environment with dependencies, then configure PyCharm to use pytest.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=U43Jwomo8AM"
+video: "https://youtu.be/mLYTP41H8U0"
 obsoletes:
   - /pycharm/tutorials/visual_pytest/setup/
   - /python/tutorials/visual_pytest/setup/
 ---
 
-Python has projects and PyCharm does as well. In this tutorial step, let's make both, with a virtual environment, and set the project up to use `pytest`.
+Python has projects and PyCharm does as well.
+In this tutorial step, let's make both, with a virtual environment, and set the project up to use `pytest`.
 
 ## New Project
 
-We'll let the IDE guide us through the process. First, we use `File -> New Project` to make a new project, in a directory:
+We'll let the IDE guide us through the process.
+First, we use `File -> New Project` to make a new project, in a directory:
 
 ![New Project Dialog](new_project_dialog.png)
 
-Make sure `Project Interpreter` is setup to configure a new virtual environment. Expand the triangle if needed to set this up.
+Make sure `Project Interpreter` is setup to configure a new virtual environment.
+Expand the triangle if needed to set this up.
 
 After clicking `Create`, tell PyCharm to open the project in a new window.
 
-## Create a pyproject.toml
+## Python Project
 
-A `pyproject.toml` is a configuration file you can us to tell Python (and PyCharm) information about your package. We'll populate ours with:
+[Python packaging](https://packaging.python.org/tutorials/packaging-projects/) is, alas, a thorny topic, and we're going to make you do it for this tutorial.
 
-```markdown
-[project]
-name = "laxleague"
-version = "2024.0.0"
-dependencies = [
-"pytest"
-]
+Why?
+
+Most Python packages put their tests _outside_ of their source directories, to avoid accidentally shipping the tests (among other reasons.)
+The tests thus need to import the package that you code is in, and that means a Python package.
+Fortunately this is [all explained quite well](https://docs.pytest.org/en/latest/goodpractices.html#tests-outside-application-code) in the `pytest` docs.
+
+We first need a `setup.py` file at the top of our new project.
+Add the following:
+
+```python
+{% include "./demos/setup.py" %}
 ```
 
-We can then use <kbd>⌥F12</kbd> (macOS) / <kbd>Alt+F12</kbd> (Windows/Linux) to open the terminal and run `pip install -e .` so that others know how the package is built, what Python version it uses and what the dependencies are (`pytest` in our case).
+Our source will now go in a `src/laxleague` directory so make sure to create it.
 
-## As an alternative - a requirements file
+Why the use of `src`? It's a [general consensus best practice](https://hynek.me/articles/testing-packaging/) that avoids nasty surprises if you share your code or use it elsewhere.
+Our `setup.py` has the `packages` and `packages_dir` keys added in support of putting our code under `src`.
 
-You can use a `requirements.txt` file instead of a `pyproject.toml` file to manage your dependencies if you prefer. PyCharm will give you code suggestions and completions for both file types.
+Now go to PyCharm's Terminal tool and type in the following:
 
-## Test directory
+```shell script
+pip install -e .[tests]
+```
 
-In your Project Structure tool window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux), right-click and select **New** > **Directory** and call it `tests`. When done, your directory structure should look like this:
+This has two effects:
 
-![Directory Structure](directory.png)
+- It makes this project an "editable install" by creating a directory named `src/laxleague.egg-info`
 
-## Check PyCharm's Test Runner
+- `pytest` is installed into the project's virtual environment
 
-PyCharm knows that we're using `pytest` as our test runner because we added it as a dependency, however, if you ever want to check what test runner PyCharm is using, you can do so in the Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and search for "test runner" to check the settings.
+Apologies for this `setup.py` hocus-pocus.
+Python has a sordid history on this, though it is getting better.
+
+## Give Me Some Source
+
+But we don't have any source code yet.
+Let's put a file at `src/laxleague/player.py` containing an empty `Player` class:
+
+```python
+{% include "./demos/player.py" %}
+```
+
+## Configure Testing
+
+One last step...we need to tell PyCharm to use `pytest` for its built-in Python testing support.
+This happens automatically when we first open an existing project with `pytest` in the virtual environment.
+We added `pytest` after making the environment, so we need to configure it ourselves.
+
+Go to `Settings -> Tools -> Python Integrated Tools` and change `Default test runner:` to `pytest`:
 
 ![Python Integrated Tools](python_integrated_tools.png)
+
+Mine is set automatically because I set `pytest` as my [default test runner for all projects](https://www.jetbrains.com/help/pycharm/configure-project-settings.html#new-default-settings) using **File | New Projects Settings | Settings/Preferences for New Projects**:
+
+Finally, make a top-level directory called `tests`.
+This mimics the [pytest good practices](https://docs.pytest.org/en/latest/goodpractices.html#tests-outside-application-code).
+
+When done, your directory structure should look like this:
+
+![Directory Structure](directory.png)

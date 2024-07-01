@@ -7,8 +7,7 @@ topics:
   - testing
 author: hs
 subtitle: >-
-  Introduce testing, pytest, and how it all fits into PyCharm, along with a
-  scenario to work on.
+  Introduce testing, pytest, and how it all fits into PyCharm, along with a scenario to work on.
 thumbnail: ../thumbnail.png
 video: "https://www.youtube.com/watch?v=S9U1YT0gw8s"
 obsoletes:
