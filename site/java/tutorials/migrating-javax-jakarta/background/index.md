@@ -5,6 +5,7 @@ title: Setting the scene
 topics: []
 author: hs
 subtitle: Downloading the project and running the application.
+thumbnail: ./thumbnail.png
 video: "https://youtu.be/mukr2Q_zBm4?start=42"
 ---
 
