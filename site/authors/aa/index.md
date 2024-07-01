@@ -1,7 +1,7 @@
 ---
 title: Anton Arhipov
 subtitle: ""
-thumbnail: ./ag.jpg
+thumbnail: ./aa.jpg
 author: hs
 date: 2024-06-30
 guest: true
