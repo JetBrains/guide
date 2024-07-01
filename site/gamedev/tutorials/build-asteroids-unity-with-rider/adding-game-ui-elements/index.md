@@ -8,7 +8,7 @@ topics:
   - rider
   - unity
 author: maartenba
-subtitle: Add UI elements to the game
+subtitle: Add UI elements to the game.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=L3SgNX3U5dc"

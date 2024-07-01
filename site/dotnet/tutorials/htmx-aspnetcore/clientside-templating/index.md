@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Generate HTML on the client, based on JSON
+subtitle: Generate HTML on the client, based on JSON.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/wo1IMqsN6kU"
 ---

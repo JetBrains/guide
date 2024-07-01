@@ -9,7 +9,7 @@ topics:
   - resharper
   - rider
 author: rachelappel
-subtitle: Update and initialize items in old collection declarations
+subtitle: Update and initialize items in old collection declarations.
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm

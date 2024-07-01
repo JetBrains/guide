@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: 'No series is complete without a "Hello, World" sample'
+subtitle: 'No series is complete without a "Hello, World" sample.'
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/-GG_7oBv0dY"
 ---

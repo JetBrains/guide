@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: A set of short basic walkthroughs of different .NET technologies
+subtitle: A set of short basic walkthroughs of different .NET technologies.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./aspnet-mvc/

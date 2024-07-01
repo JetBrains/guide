@@ -9,7 +9,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Configuring our HTTP handlers in Startup
+subtitle: Configuring our HTTP handlers in Startup.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/XRaUj6Y2Gi0"
 ---

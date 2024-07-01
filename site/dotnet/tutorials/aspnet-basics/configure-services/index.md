@@ -8,7 +8,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Registering ASP.NET services and instances
+subtitle: Registering ASP.NET services and instances.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=a32WK_wyM2E&feature=youtu.be"
 ---

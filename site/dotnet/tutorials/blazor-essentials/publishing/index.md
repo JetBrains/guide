@@ -10,7 +10,7 @@ topics:
   - rider
   - web
 author: rachelappel
-subtitle: Publish a Blazor app to Azure
+subtitle: Publish a Blazor app to Azure.
 thumbnail: ./thumbnail.png
 ---
 

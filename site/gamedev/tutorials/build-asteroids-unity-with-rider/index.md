@@ -9,7 +9,7 @@ topics:
   - rider
   - unity
 author: maartenba
-subtitle: Recreating a version of the classic arcade video game
+subtitle: Recreating a version of the classic arcade video game.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./game-graphics-assets/

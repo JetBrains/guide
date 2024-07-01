@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: One thing leads to another
+subtitle: One thing leads to another.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/Yp-BPi_fgMM"
 ---

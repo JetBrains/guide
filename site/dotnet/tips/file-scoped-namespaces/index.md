@@ -9,7 +9,7 @@ topics:
   - resharper
   - rider
 author: rachelappel
-subtitle: Organize code better and reduce bugs by using file-scoped namespaces and objects
+subtitle: Organize code better and reduce bugs by using file-scoped namespaces and objects.
 seealso:
   - title: File-Scoped Namespaces – A Look at New Language Features in C# 10
     href: "https://blog.jetbrains.com/dotnet/2021/10/28/file-scoped-namespaces-in-csharp-10/"

@@ -9,7 +9,7 @@ topics:
   - resharper
   - rider
 author: khalidabuhakmeh
-subtitle: Learn to create and run your first solution in Rider
+subtitle: Learn to create and run your first solution in Rider.
 thumbnail: ./thumbnail.png
 ---
 

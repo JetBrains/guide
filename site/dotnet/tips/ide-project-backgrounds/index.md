@@ -6,7 +6,7 @@ topics:
   - ide
   - rider
 author: khalidabuhakmeh
-subtitle: Personally style your IDE and Projects with custom background images
+subtitle: Personally style your IDE and Projects with custom background images.
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./ide-project-backgrounds.webm

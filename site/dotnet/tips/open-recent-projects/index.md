@@ -6,7 +6,7 @@ topics:
   - navigation
   - rider
 author: khalidabuhakmeh
-subtitle: Quick ways to navigate to other solutions
+subtitle: Quick ways to navigate to other solutions.
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./open-recent-projects.webm

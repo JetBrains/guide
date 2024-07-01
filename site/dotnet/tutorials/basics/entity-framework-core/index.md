@@ -7,7 +7,7 @@ topics:
   - data
   - rider
 author: khalidabuhakmeh
-subtitle: Working with databases using an object relational mapper
+subtitle: Working with databases using an object relational mapper.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/F699iNw5Wao"
 ---

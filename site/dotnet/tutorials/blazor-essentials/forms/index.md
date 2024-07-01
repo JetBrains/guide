@@ -10,7 +10,7 @@ topics:
   - rider
   - web
 author: rachelappel
-subtitle: View and edit data in forms
+subtitle: View and edit data in forms.
 thumbnail: ./thumbnail.png
 ---
 

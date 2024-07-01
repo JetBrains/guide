@@ -9,7 +9,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Defining endpoints and URI path handlers
+subtitle: Defining endpoints and URI path handlers.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=Or8k6gXBV7E"
 ---

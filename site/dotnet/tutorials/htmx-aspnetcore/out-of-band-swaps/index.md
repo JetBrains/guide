@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Swap and replace any HTML element
+subtitle: Swap and replace any HTML element.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/IDNdm-1x5SM"
 ---

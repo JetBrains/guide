@@ -8,7 +8,7 @@ topics:
   - rider
   - unity
 author: maartenba
-subtitle: Add behavior to Unity GameObjects
+subtitle: Add behavior to Unity GameObjects.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=L3SgNX3U5dc"

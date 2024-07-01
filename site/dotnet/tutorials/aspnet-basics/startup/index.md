@@ -9,7 +9,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: The beginning of all ASP.NET applications
+subtitle: The beginning of all ASP.NET applications.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=7wOOrnLxuy4"
 ---

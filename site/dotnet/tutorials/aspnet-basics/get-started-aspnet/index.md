@@ -9,7 +9,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Starting an ASP.NET Project in under a few minutes
+subtitle: Starting an ASP.NET Project in under a few minutes.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=kQJ1_bbTDRg"
 ---

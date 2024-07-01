@@ -11,7 +11,7 @@ topics:
   - web
 author: khalidabuhakmeh
 subtitle: >-
-  A set of short videos to understand the basic landscape of an ASP.NET
+  A set of short videos to understand the basic landscape of an ASP.NET.
   Application.
 thumbnail: ./thumbnail.png
 tutorialItems:

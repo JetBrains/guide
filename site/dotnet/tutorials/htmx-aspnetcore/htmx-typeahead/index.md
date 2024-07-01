@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Live updates based on your search query
+subtitle: Live updates based on your search query.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/6DtVIlVOhMY"
 ---

@@ -10,7 +10,7 @@ topics:
   - resharper
   - rider
 author: khalidabuhakmeh
-subtitle: Working with Cultures, Resources, & Apps
+subtitle: Working with Cultures, Resources, & Apps.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/ieNmK6zAYns"
 ---

@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Retrieve updated information from the server
+subtitle: Retrieve updated information from the server.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/3id6dBL73-A"
 obsoletes:

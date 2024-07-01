@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Maintaining state across requests
+subtitle: Maintaining state across requests.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/tDJrwKKqGgg"
 ---

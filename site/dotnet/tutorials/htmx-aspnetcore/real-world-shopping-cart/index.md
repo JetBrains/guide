@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: See all HTMX techniques come together
+subtitle: See all HTMX techniques come together.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/r_FLABoSkOg"
 ---

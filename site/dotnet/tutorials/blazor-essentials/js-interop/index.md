@@ -10,7 +10,7 @@ topics:
   - rider
   - web
 author: rachelappel
-subtitle: Extend Blazor apps with JavaScript
+subtitle: Extend Blazor apps with JavaScript.
 thumbnail: ./thumbnail.png
 ---
 

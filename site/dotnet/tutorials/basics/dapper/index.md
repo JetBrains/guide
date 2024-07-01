@@ -8,7 +8,7 @@ topics:
   - resharper
   - rider
 author: khalidabuhakmeh
-subtitle: Working with databases using Open Source
+subtitle: Working with databases using Open Source.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/vdd3l_cPsA4"
 ---

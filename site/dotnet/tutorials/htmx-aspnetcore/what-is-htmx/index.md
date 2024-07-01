@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Understanding the spirit of the HTMX library
+subtitle: Understanding the spirit of the HTMX library.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/J9vubzONlqo"
 ---

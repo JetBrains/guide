@@ -10,7 +10,7 @@ topics:
   - rider
   - web
 author: rachelappel
-subtitle: Start a new Blazor project
+subtitle: Start a new Blazor project.
 thumbnail: ./thumbnail.png
 ---
 

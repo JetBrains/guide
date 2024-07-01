@@ -12,7 +12,7 @@ topics:
 author: maartenba
 subtitle: >-
   There's more in ReSharper! Architecture diagrams, localization manager, build
-  tools, ...
+  tools and more.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/4VC20lc_92o"
 ---

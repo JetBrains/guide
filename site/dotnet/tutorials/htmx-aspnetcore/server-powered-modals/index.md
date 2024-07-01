@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Create modal dialogs on the server
+subtitle: Create modal dialogs on the server.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/Bzcx96Mkd0w"
 ---

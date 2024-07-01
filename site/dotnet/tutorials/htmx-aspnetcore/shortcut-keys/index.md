@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Add keyboard shortcuts to make your web an app
+subtitle: Add keyboard shortcuts to make your web an app.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/irhA5yInaRE"
 ---

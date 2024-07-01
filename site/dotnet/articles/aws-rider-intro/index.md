@@ -1,6 +1,6 @@
 ---
 title: Introducing the AWS Toolkit for Rider
-subtitle: Video walkthrough
+subtitle: Video walkthrough.
 date: 2024-04-21
 author: citizenmatt
 thumbnail: ./thumbnail.png

@@ -8,7 +8,7 @@ topics:
   - rider
   - unity
 author: maartenba
-subtitle: Add prefabs to the game scene
+subtitle: Add prefabs to the game scene.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=L3SgNX3U5dc"

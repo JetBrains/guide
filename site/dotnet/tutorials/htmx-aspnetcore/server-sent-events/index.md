@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Send messages to clients in realtime
+subtitle: Send messages to clients in realtime.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/SSC2rQ1UlTY"
 ---

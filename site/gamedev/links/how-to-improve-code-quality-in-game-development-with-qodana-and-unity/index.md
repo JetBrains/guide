@@ -6,7 +6,7 @@ topics:
   - gamedev
   - unity
 author: maartenba
-subtitle: Game development with Qodana and Unity
+subtitle: Game development with Qodana and Unity.
 thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/qodana/2024/01/how-to-improve-code-quality-in-game-development-with-qodana-and-unity/"
 ---

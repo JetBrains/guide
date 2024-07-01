@@ -13,7 +13,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Localization and the art of reaching more users
+subtitle: Localization and the art of reaching more users.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./basics/

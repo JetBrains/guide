@@ -8,7 +8,7 @@ topics:
   - rider
   - unity
 author: maartenba
-subtitle: Dynamically add asteroids to game scene
+subtitle: Dynamically add asteroids to game scene.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=L3SgNX3U5dc"

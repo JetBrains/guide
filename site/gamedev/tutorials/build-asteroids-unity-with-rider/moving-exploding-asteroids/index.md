@@ -8,7 +8,7 @@ topics:
   - rider
   - unity
 author: maartenba
-subtitle: Add Unity script to asteroid GameObject
+subtitle: Add Unity script to asteroid GameObject.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=L3SgNX3U5dc"

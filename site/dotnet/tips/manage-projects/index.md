@@ -6,7 +6,7 @@ topics:
   - navigation
   - rider
 author: khalidabuhakmeh
-subtitle: Keep your projects organized for an efficient experience
+subtitle: Keep your projects organized for an efficient experience.
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./manage-projects.webm

@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Asynchronous rendering of tabs on the server
+subtitle: Asynchronous rendering of tabs on the server.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/gCqi60M-QYs"
 ---

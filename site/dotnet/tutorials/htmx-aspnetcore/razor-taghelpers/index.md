@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Simplify integration of HTMX in ASP.NET Core apps
+subtitle: Simplify integration of HTMX in ASP.NET Core apps.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/MQ35KMg1Wnk"
 ---

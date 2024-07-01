@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Streaming infinite content to your users
+subtitle: Streaming infinite content to your users.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/v4XeB_wiJ8E"
 ---

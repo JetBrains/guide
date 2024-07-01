@@ -8,7 +8,7 @@ topics:
   - resharper
   - rider
 author: rachelappel
-subtitle: Use the params collection in C# so methods can accept a dynamic number of parameters
+subtitle: Use the params collection in C# so methods can accept a dynamic number of parameters.
 seealso:
   - title: The `params` keyword
     href: "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/method-parameters"

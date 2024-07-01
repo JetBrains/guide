@@ -12,7 +12,7 @@ topics:
   - rider
   - web
 author: khalidabuhakmeh
-subtitle: Giving context to HTMX
+subtitle: Giving context to HTMX.
 thumbnail: ./thumbnail.png
 ---
 

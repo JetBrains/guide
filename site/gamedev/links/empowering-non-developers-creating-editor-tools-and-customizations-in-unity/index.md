@@ -7,7 +7,7 @@ topics:
   - editing
   - rider
 author: maartenba
-subtitle: Ants Aare Alamaa
+subtitle: Ants Aare Alamaa.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=lH6gR-rn0Cs"
 linkURL: "https://www.youtube.com/watch?v=lH6gR-rn0Cs"
