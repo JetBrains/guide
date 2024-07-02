@@ -6,7 +6,7 @@ topics:
   - maven
   - packagesearch
 author: sf
-subtitle: Use the Dependencies tool window to manage your dependencies
+subtitle: Use the Dependencies tool window to manage your dependencies in one place.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Package Search

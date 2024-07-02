@@ -5,7 +5,7 @@ topics:
   - kotlin
   - refactoring
 author: hs
-subtitle: Extract code to a parameter in Kotlin
+subtitle: Extract code to a parameter in Kotlin.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) IntelliJ IDEA. Everyday Refactorings

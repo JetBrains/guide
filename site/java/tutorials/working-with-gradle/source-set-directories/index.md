@@ -5,7 +5,7 @@ title: Source set directories
 topics:
   - gradle
 author: tg
-subtitle: Understand how IntelliJ IDEA deals with Gradle's source set directories
+subtitle: Understand how IntelliJ IDEA deals with Gradle's source set directories.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/6V6G3RyxEMk?start=490"
 ---

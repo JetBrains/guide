@@ -4,7 +4,7 @@ date: 2023-02-06
 title: Add mnemonic bookmarks
 topics: []
 author: md
-subtitle: How to add bookmarks with an identifier
+subtitle: How to add bookmarks with an identifier.
 thumbnail: ./thumbnail.png
 ---
 

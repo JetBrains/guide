@@ -6,12 +6,11 @@ topics:
   - gettingstarted
   - java
 author: hs
-subtitle: Tips for getting started with IntelliJ IDEA
+subtitle: Helpful tips for working with IntelliJ IDEA for the first time.
 thumbnail: ./thumbnail.png
 playlistItems:
   - /java/tips/welcome-screen/
   - /java/tips/download-jdk/
-  - /java/tips/turn-off-tabs/
   - /java/tips/new-class/
   - /java/tips/navigate-to-test/
   - /tips/search-everywhere/

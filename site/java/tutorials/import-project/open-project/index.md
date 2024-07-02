@@ -4,7 +4,7 @@ title: Open project
 topics:
   - tricks
 author: md
-subtitle: Opening a project in IntelliJ IDEA
+subtitle: Opening a project in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

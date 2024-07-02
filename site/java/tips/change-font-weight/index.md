@@ -1,10 +1,10 @@
 ---
 date: 2021-05-11
-title: Change your code font weight
+title: Change your Code Font Weight
 topics:
   - settings
 author: tg
-subtitle: We spend hours looking at our code. We can make this as pleasant as possible.
+subtitle: We spend hours looking at our code so let's make it as pleasant as possible.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Code Formatting in IntelliJ IDEA

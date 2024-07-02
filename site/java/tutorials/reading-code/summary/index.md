@@ -5,7 +5,7 @@ title: Summary and Shortcuts
 topics:
   - tricks
 author: md
-subtitle: Reading Code in IntelliJ IDEA Summary
+subtitle: Reading Code in IntelliJ IDEA Summary.
 thumbnail: ./thumbnail.png
 ---
 

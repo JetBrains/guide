@@ -1,7 +1,7 @@
 ---
 date: 2023-01-27
 title: Explore Shortcuts the Easy Way
-subtitle: How to see all WebStorm's shortcuts.
+subtitle: How to see all of WebStorm's keyboard shortcuts.
 topics:
   - editing
 author: er

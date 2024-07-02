@@ -7,7 +7,7 @@ topics:
   - gradle
   - maven
 author: md
-subtitle: View dependencies in the dependency management config file
+subtitle: View dependencies in the dependency management config file.
 thumbnail: ./thumbnail.png
 ---
 

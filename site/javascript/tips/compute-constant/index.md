@@ -5,7 +5,7 @@ topics:
   - editing
   - javascript
 author: er
-subtitle: Let WebStorm do math for you.
+subtitle: Let WebStorm do math for you, one less thing to worry about!
 seealso:
   - title: 10 WebStorm Shortcuts You Need to Know
     href: >-

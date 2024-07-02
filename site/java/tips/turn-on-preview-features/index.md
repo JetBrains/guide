@@ -1,13 +1,11 @@
 ---
 date: 2021-05-10
-title: Turn on Preview Features to try new Java features
+title: Turn on Preview Features to try new Java Features
 topics:
   - java
 author: tg
 subtitle: >-
-  The latest versions of Java contain "Preview Features", features that are
-  fully functional but require developer feedback. Try them out in IntelliJ
-  IDEA.
+  The latest versions of Java contain "Preview Features", features that are fully functional but require developer feedback. Try them out in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/Svr-rcfJSyM"
 ---

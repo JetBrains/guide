@@ -5,7 +5,7 @@ topics:
   - java
   - settings
 author: hs
-subtitle: Code completion may be enhanced with ML
+subtitle: Code completion may be enhanced with Machine Learning.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/HE9Ivv2vFUI"
 ---

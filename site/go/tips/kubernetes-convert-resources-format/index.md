@@ -1,12 +1,11 @@
 ---
 date: 2021-05-24
-title: Convert Kubernetes resources definition formats
+title: Convert Kubernetes Resources Definition Formats
 topics:
   - kubernetes
 author: dlsniper
 subtitle: >-
-  Quickly switch between List and Multidocument YAML for Kubernetes resource
-  definitions
+  Quickly switch between List and Multidocument YAML for Kubernetes resource definitions.
 thumbnail: ./thumbnail.png
 video: >-
   https://www.youtube.com/watch?v=EaBSAOcBXPc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=23

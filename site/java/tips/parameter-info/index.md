@@ -1,11 +1,11 @@
 ---
 date: 2023-12-06
-title: Parameter information
+title: Parameter Information
 topics:
   - editing
   - tricks
 author: md
-subtitle: Finding the parameter type
+subtitle: Finding the parameter type can be really helpful for understanding your code.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Type Info

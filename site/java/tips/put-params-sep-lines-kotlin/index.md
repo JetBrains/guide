@@ -5,7 +5,7 @@ topics:
   - editing
   - kotlin
 author: hs
-subtitle: Use quick intentions to improve the readability of your code
+subtitle: Use quick intentions to improve the readability of your code by putting arguments on separate lines.
 thumbnail: ./thumbnail.png
 seealso:
   - title: "(video) IntelliJ IDEA Pro Tips: Alt Enter"

@@ -1,11 +1,11 @@
 ---
 date: 2021-01-08
-title: Replace with var
+title: Replace With var
 topics:
   - java
   - refactoring
 author: hs
-subtitle: Use quick intentions to replace a local variable type with `var`
+subtitle: Use quick intentions to replace a local variable type with `var`.
 thumbnail: ./thumbnail.png
 seealso:
   - title: "(video) IntelliJ IDEA Pro Tips: Alt Enter"

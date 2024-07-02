@@ -4,7 +4,7 @@ title: Shortcuts and Abbreviations
 topics:
   - tricks
 author: md
-subtitle: Using shortcuts and abbreviations
+subtitle: Using shortcuts and abbreviations to speed up your navigation in your IDE.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - IntelliJ IDEA keyboard shortcuts

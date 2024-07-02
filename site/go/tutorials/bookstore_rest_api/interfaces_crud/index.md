@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: mm
-subtitle: Centering on business logic via CRUD operations
+subtitle: Centering on business logic via CRUD operations.
 thumbnail: ./thumbnail.png
 ---
 

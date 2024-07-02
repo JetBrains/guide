@@ -5,7 +5,7 @@ topics:
   - interface
   - java
 author: md
-subtitle: Download or associate a JDK with your project
+subtitle: Download or Associate a JDK With Your Project.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Creating your first Java application with IntelliJ IDEA

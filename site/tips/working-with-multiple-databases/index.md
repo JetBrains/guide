@@ -4,7 +4,7 @@ title: Working with Multiple Databases in a JetBrains IDE
 topics:
   - databases
 author: hs
-subtitle: Oh drat! In your latest project, you need to use data from multiple different databases - and worse still, they’re different database types!
+subtitle: Working with multiple databases and database types in your JetBrains IDE.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/drZRJgeK4og"
 linkURL: "https://youtu.be/drZRJgeK4og"

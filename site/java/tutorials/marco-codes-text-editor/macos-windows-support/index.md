@@ -4,7 +4,7 @@ date: 2022-11-13
 title: MacOS and Windows Support
 topics: []
 author: hs
-subtitle: Support for different OS
+subtitle: Support for different OS.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=72Dt_U9DQh4&start=1089s"
 ---

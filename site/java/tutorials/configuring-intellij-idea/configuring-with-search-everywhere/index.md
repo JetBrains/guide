@@ -5,8 +5,7 @@ title: Configuring IntelliJ IDEA with Search Everywhere
 topics: []
 author: hs
 subtitle: >-
-  As well as the Preferences/settings dialog you can use Search Everywhere to
-  make IntelliJ IDEA your own
+  As well as the Preferences/settings dialog you can use Search Everywhere to make IntelliJ IDEA your own.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/DR0bJZWLLqE"
 ---

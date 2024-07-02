@@ -5,7 +5,7 @@ topics:
   - java
   - refactoring
 author: md
-subtitle: Helps you to generate commonly used code constructs
+subtitle: Helps you to generate commonly used code constructs.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) CodeGeneration in IntelliJ IDEA

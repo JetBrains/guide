@@ -6,7 +6,7 @@ topics:
   - settings
   - vcs
 author: md
-subtitle: Commit your changes to VCS
+subtitle: Commit your changes to VCS as you go.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Adding a Project to Git and GitHub in IntelliJ IDEA

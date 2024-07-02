@@ -4,7 +4,7 @@ title: Project from existing sources
 topics:
   - tricks
 author: md
-subtitle: Importing a project from existing sources
+subtitle: Importing a project from existing sources.
 thumbnail: ./thumbnail.png
 ---
 

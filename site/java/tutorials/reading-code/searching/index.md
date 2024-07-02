@@ -5,7 +5,7 @@ title: Searching
 topics:
   - tricks
 author: md
-subtitle: Searching the code
+subtitle: Searching the code.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=hjGVJHOLSjA"

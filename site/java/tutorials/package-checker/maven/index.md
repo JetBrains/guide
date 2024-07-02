@@ -8,7 +8,7 @@ topics:
   - packagesearch
   - security
 author: md
-subtitle: View vulnerable dependencies in Maven projects
+subtitle: View vulnerable dependencies in Maven projects.
 thumbnail: ./thumbnail.png
 ---
 

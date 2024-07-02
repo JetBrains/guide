@@ -4,7 +4,7 @@ date: 2021-08-09
 title: Manual migration for more complex cases
 topics: []
 author: hs
-subtitle: Migrating more complex uses cases from JUnit 4 to JUnit 5
+subtitle: Migrating more complex uses cases from JUnit 4 to JUnit 5.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/F8UTTTDtbH0?start=566"
 ---

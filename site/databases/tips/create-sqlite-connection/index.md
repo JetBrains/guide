@@ -1,12 +1,10 @@
 ---
 date: 2019-04-17
-title: Create SQLite Database Connection By Drag-and-Drop
+title: Create SQLite Database Connection
 topics:
   - databases
 author: pwe
-subtitle: >-
-  Drag-and-drop a .sqlite database file onto the Database tool to create a
-  connection.
+subtitle: How to drag-and-drop a .sqlite database file onto the Database tool to create a connection.
 seealso:
   - title: Connecting to a database
     href: >-

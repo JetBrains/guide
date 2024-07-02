@@ -4,7 +4,7 @@ date: 2021-08-09
 title: Final Steps
 topics: []
 author: hs
-subtitle: Wrapping the migration up
+subtitle: Wrapping the migration up.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/F8UTTTDtbH0?start=808"
 ---

@@ -5,7 +5,7 @@ title: "gRPC Client"
 topics:
   - go
 author: ab
-subtitle: Developing the gRPC Client and Implementing Endpoints
+subtitle: Developing the gRPC Client and Implementing Endpoints.
 thumbnail: ./thumbnail.png
 ---
 

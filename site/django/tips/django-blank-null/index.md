@@ -1,12 +1,12 @@
 ---
 date: 2024-03-12
-title: Demystifying nulls and blanks in Django
+title: Demystifying Nulls and Nlanks in Django
 topics:
   - django
   - databases
   - web
 author: sb
-subtitle: What is the difference between blank=True and null=True anyway?
+subtitle: Learn the difference between blank=True and null=True
 seealso:
   - title: (documentation) Django support in PyCharm
     href: >-

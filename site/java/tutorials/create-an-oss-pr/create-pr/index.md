@@ -6,7 +6,7 @@ topics:
   - git
   - vcs
 author: md
-subtitle: How to create a pull request on GitHub
+subtitle: How to create a pull request on GitHub.
 thumbnail: ./thumbnail.png
 ---
 

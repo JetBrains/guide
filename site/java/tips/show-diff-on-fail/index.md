@@ -1,11 +1,11 @@
 ---
 date: 2023-12-12
-title: Show diff for failing test
+title: Show Diff for Failing Test
 topics:
   - testing
   - tricks
 author: md
-subtitle: Quickly see the diff for failing test
+subtitle: Quickly see the diff for a failing test to debug it faster.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Testing in IntelliJ IDEA

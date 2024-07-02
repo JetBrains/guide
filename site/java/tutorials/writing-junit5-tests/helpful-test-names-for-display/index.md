@@ -4,7 +4,7 @@ date: 2021-01-01
 title: Helpful Test Names for Display
 topics: []
 author: hs
-subtitle: Making your code more readable
+subtitle: Making your code more readable.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/we3zJE3hlWE?start=391"
 ---

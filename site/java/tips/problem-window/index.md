@@ -1,11 +1,11 @@
 ---
 date: 2023-12-06
-title: Problem window
+title: Problem Window
 topics:
   - editing
   - tricks
 author: md
-subtitle: Problems tool window
+subtitle: Using the Problems tool window to find and fix errors as they occur.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Problems tool window

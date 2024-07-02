@@ -4,7 +4,7 @@ title: Productivity Guide
 topics:
   - tricks
 author: md
-subtitle: Using the Productivity Guide
+subtitle: Ever wandered which features of IntelliJ IDEA you use the most?
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Productivity Guide

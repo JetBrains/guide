@@ -7,8 +7,7 @@ topics:
   - vcs
 author: vb
 subtitle: >-
-  Use VCS options in IntelliJ IDEA to resolve merge conflicts visually in the
-  editor
+  Use VCS options in IntelliJ IDEA to resolve merge conflicts visually in the editor.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Resolving Merge Conflicts

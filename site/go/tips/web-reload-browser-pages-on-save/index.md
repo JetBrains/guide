@@ -1,6 +1,6 @@
 ---
 date: 2021-07-06
-title: Reload browser pages on save
+title: Reload Browser Pages on Save
 topics:
   - editing
   - web
@@ -12,8 +12,6 @@ video: >-
 ---
 
 The IDE can automatically reload the page opened in a browser after you make changes to an HTML file, or the linked CSS and JavaScript files.
-
-**How to use:**
 
 First, open the file from the IDE via the icon on the upper right-side of the editor or via **View | Open in Browser | "browser name"**.
 

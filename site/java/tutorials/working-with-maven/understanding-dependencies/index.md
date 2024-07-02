@@ -5,7 +5,7 @@ title: Understanding Dependencies
 topics:
   - maven
 author: tg
-subtitle: Adding and visualising dependencies
+subtitle: Adding and visualising dependencies.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/pt3uB0sd5kY?start=81"
 ---

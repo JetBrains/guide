@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: cb
-subtitle: Efficient Data Handling - Redis Retrieval and Storage Capabilities
+subtitle: Efficient Data Handling - Redis Retrieval and Storage Capabilities.
 thumbnail: ./thumbnail.png
 ---
 

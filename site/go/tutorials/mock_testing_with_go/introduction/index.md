@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: cb
-subtitle: The Power of Unit Testing in Your Go Projects
+subtitle: The Power of Unit Testing in Your Go Projects.
 thumbnail: ./thumbnail.png
 ---
 

@@ -22,5 +22,4 @@ video: >-
 
 Use _Navigate to Symbol_ to jump between symbols in your project and stop thinking about the file they are in.
 
-**How to use:**  
 Invoke it using <kbd>⌘⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+N</kbd> (Windows/Linux) to bring up the search window and quickly navigate your way in the project.

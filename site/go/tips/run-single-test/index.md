@@ -18,6 +18,4 @@ video: >-
 
 Want to focus your testing on just one test? Then you can launch the test under the cursor using a shortcut.
 
-**How to use:**
-
 To launch the test under the cursor, invoke the test runner via <kbd>⌃⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+F10</kbd> (Windows/Linux)

@@ -4,7 +4,7 @@ date: 2021-08-30
 title: Run IDE features from the terminal
 topics: []
 author: hs
-subtitle: Running highlighted commands in the terminal
+subtitle: Running highlighted commands in the terminal.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/tlEkrWU0d1M?start=327"
 ---

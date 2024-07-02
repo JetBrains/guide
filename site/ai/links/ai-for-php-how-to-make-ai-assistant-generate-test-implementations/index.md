@@ -4,12 +4,10 @@ title: AI for PHP, How to Make AI Assistant Generate Test Implementations
 topics:
   - ai
 author: brentroose
-subtitle: What if we want to take a more test-driven-development approach, writing our tests first, and having AI Assistant generate an implementation for us?
+subtitle: Take a more test-driven-development approach, writing tests first, and having AI Assistant generate an implementation.
 thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/phpstorm/2024/02/ai-for-php-how-to-make-ai-assistant-generate-test-implementations/"
 ---
-
-**Author: Brent Roose**
 
 This article explores how to use JetBrains AI Assistant to generate code implementations based on written tests. Instead of starting with an implementation and generating tests, this approach follows a test-driven development (TDD) approach where tests are written first.
 

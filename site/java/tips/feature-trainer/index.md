@@ -4,7 +4,7 @@ title: Feature Trainer
 topics:
   - tricks
 author: md
-subtitle: Learn IntelliJ IDEA features using the Feature Trainer
+subtitle: Learn IntelliJ IDEA features using the Feature Trainer.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Learn IDE features

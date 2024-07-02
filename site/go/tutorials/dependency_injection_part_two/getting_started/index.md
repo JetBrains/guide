@@ -5,7 +5,7 @@ title: "Getting Started"
 topics:
   - go
 author: iu
-subtitle: Setting Up Components for Dependency Injection
+subtitle: Setting Up Components for Dependency Injection.
 thumbnail: ./thumbnail.png
 ---
 

@@ -5,7 +5,7 @@ topics:
   - editing
   - kotlin
 author: hs
-subtitle: Use quick intentions to remove explicit types
+subtitle: Use quick intentions to remove explicit types.
 thumbnail: ./thumbnail.png
 seealso:
   - title: "(video) IntelliJ IDEA Pro Tips: Alt Enter"

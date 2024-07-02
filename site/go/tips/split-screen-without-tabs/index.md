@@ -20,6 +20,4 @@ video: >-
 
 You can view multiple files at the same time using _Split Horizontal_ and _Split Vertical_.
 
-**How to use:**
-
 Invoke the _Split Horizontal_ or _Split Vertical_ via _Find Action_, <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux), then type the action names you need.

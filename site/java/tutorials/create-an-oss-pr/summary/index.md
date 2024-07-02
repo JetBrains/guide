@@ -6,7 +6,7 @@ topics:
   - git
   - vcs
 author: md
-subtitle: Contributing to open source software Summary
+subtitle: Contributing to open source software Summary.
 thumbnail: ./thumbnail.png
 ---
 

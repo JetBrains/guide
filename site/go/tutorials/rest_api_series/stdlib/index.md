@@ -4,8 +4,7 @@ date: 2023-07-20
 title: Go REST Guide. The Standard Library
 author: svk
 subtitle: >-
-  The first part of this series focuses on using the standard library, a simple
-  and native way to create HTTP servers.
+  The first part of this series focuses on using the standard library, a simple and native way to create HTTP servers.
 thumbnail: ./thumbnail.png
 topics:
   - go

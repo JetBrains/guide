@@ -5,7 +5,7 @@ title: Introduction
 topics:
   - java
 author: md
-subtitle: Explore project structure with the Dependency Matrix
+subtitle: Explore project structure with the Dependency Matrix.
 thumbnail: ./thumbnail.png
 ---
 

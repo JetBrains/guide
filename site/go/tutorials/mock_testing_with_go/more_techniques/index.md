@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: cb
-subtitle: Mocking Power - Interfaces, Testify, and HTTP for Go Testing
+subtitle: Mocking Power - Interfaces, Testify, and HTTP for Go Testing.
 thumbnail: ./thumbnail.png
 ---
 

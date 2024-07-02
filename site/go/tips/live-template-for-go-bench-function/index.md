@@ -1,6 +1,6 @@
 ---
 date: 2020-12-03
-title: Live Template to write benchmark function
+title: Live Template to Write Benchmark Functions
 topics:
   - editing
   - go
@@ -11,8 +11,6 @@ thumbnail: ./thumbnail.png
 video: >-
   https://www.youtube.com/watch?v=1NI7e0c_QtY&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=54
 ---
-
-**How to use:**
 
 Place the cursor at the file level in a \__test.go_ file and start typing _func_. Select the **Benchmark** option from the suggested list and then complete this by writing the test name you desire.
 

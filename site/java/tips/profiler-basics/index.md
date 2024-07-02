@@ -1,10 +1,10 @@
 ---
 date: 2021-05-11
-title: Profile your application
+title: Profile your Application
 topics:
   - java
 author: tg
-subtitle: See how your application is performing with the built-in profiler
+subtitle: See how your application is performing with the built-in profiler.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Profile Tools and IntelliJ IDEA Ultimate

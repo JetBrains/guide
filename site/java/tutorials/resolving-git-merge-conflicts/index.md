@@ -7,8 +7,7 @@ topics:
   - settings
 author: hs
 subtitle: >-
-  How to recognise and subsequently resolve conflicts when performing a merge
-  using Git
+  How to recognise and subsequently resolve conflicts when performing a merge using Git.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./git-merge-dialog/

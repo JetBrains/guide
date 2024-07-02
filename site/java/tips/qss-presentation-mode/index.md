@@ -4,7 +4,7 @@ title: Presentation Mode
 topics:
   - tricks
 author: md
-subtitle: Enter and Exit Presentation Mode using Quick Switch Scheme
+subtitle: Enter and Exit Presentation Mode using the Quick Switch Scheme.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - IDE viewing modes

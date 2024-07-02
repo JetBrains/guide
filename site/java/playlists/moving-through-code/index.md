@@ -5,7 +5,7 @@ title: Moving Through Your Code
 topics:
   - navigation
 author: hs
-subtitle: Tips for moving through and navigating your code base
+subtitle: Tips for navigating your code base efficiently.
 thumbnail: ./thumbnail.png
 playlistItems:
   - /java/tips/code-nav-fwd-back/

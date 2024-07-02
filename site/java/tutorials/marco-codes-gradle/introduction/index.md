@@ -4,7 +4,7 @@ date: 2022-09-24
 title: Introduction
 topics: []
 author: hs
-subtitle: Introduction and cloning a project
+subtitle: Introduction and cloning a project.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=gKPMKRnnbXU"
 ---

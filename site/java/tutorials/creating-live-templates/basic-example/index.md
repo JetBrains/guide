@@ -4,7 +4,7 @@ date: 2022-04-18
 title: Basic Example
 topics: []
 author: hs
-subtitle: Creating a Live Template to add a `private void method`
+subtitle: Creating a Live Template to add a `private void method`.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/Sio9MdSqXZo?start=147"
 ---

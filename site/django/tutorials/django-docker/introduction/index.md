@@ -6,7 +6,7 @@ topics:
   - docker
   - django
 author: mm
-subtitle: Using containers to build and deploy applications
+subtitle: Using containers to build and deploy applications.
 thumbnail: thumbnail.png
 ---
 

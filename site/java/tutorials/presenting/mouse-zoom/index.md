@@ -4,7 +4,7 @@ date: 2022-10-03
 title: Mouse Zoom
 topics: []
 author: md
-subtitle: How to enable mouse zoom
+subtitle: How to enable mouse zoom.
 thumbnail: ./thumbnail.png
 ---
 

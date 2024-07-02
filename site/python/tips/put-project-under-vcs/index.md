@@ -5,8 +5,7 @@ topics:
   - vcs
 author: pwe
 subtitle: >-
-  The fastest way to register a new project directory under local version
-  control.
+  The fastest way to register a new project directory under local version control.
 seealso:
   - title: Enable Version Control Integration Dialog
     href: >-

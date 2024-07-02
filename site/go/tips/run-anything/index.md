@@ -10,8 +10,7 @@ topics:
   - web
 author: ap
 subtitle: >-
-  Launch run/debug configurations, applications, scripts, commands, tasks, and
-  open recent projects.
+  Launch run/debug configurations, applications, scripts, commands, tasks, and open recent projects.
 thumbnail: ./thumbnail.png
 screenshot: ./screenshot.png
 seealso:
@@ -20,7 +19,5 @@ seealso:
 ---
 
 Run Anything is a quick way to launch run/debug configurations, applications, scripts, commands, tasks, and open recent projects.
-
-**How to use:**
 
 To open the _Run Anything_ dialog, use <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl</kbd> (Windows/Linux). You can type _?_ to see the options available to you and then run HTTP requests, yarn, npm, and grunt tasks.

@@ -6,7 +6,7 @@ topics:
   - java
   - kotlin
 author: hs
-subtitle: Add virtual whitespace to the bottom of a file
+subtitle: Add virtual whitespace to the bottom of a file so you can scroll to the end half way up your screen.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/NueNJVo6zr4"
 ---

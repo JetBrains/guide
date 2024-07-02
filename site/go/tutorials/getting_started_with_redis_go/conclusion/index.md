@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: cb
-subtitle: Considerations and Next Steps
+subtitle: Considerations and Next Steps.
 thumbnail: ./thumbnail.png
 ---
 

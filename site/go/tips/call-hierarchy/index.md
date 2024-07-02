@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: Call Hierarchy
+title: Working with the Call Hierarchy
 topics:
   - go
   - navigation
@@ -13,11 +13,7 @@ video: >-
 
 **Call Hierarchy** allows you to quickly see all the places where a function or method is used.
 
-**How to use:**
-
 Press <kbd>⌥^H</kbd> (macOS) / <kbd>Ctrl+Alt+H</kbd> (Windows/Linux), and the _Call Hierarchy_ tool window will open up with all the places that the function is called inside.
-
-**Pro tip:**
 
 This works for interface methods, type methods, methods, and calls.
 

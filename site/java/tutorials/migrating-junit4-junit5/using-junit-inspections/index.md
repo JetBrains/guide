@@ -4,7 +4,7 @@ date: 2021-08-09
 title: Using inspections
 topics: []
 author: hs
-subtitle: Using JUnit 5 Inspections to migrate
+subtitle: Using JUnit 5 Inspections to migrate.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/F8UTTTDtbH0?start=247"
 ---

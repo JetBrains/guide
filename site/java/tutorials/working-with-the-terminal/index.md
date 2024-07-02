@@ -8,8 +8,7 @@ topics:
   - testing
 author: hs
 subtitle: >-
-  IntelliJ IDEA has a built-in terminal that you can use to perform a number of
-  functions inside your IDE
+  IntelliJ IDEA has a built-in terminal that you can use to perform a number of functions inside your IDE.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

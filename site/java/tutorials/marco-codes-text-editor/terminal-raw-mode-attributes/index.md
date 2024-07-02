@@ -4,7 +4,7 @@ date: 2022-11-13
 title: Terminal Raw Mode & Terminal Attributes
 topics: []
 author: hs
-subtitle: Using RAW Mode and JNA
+subtitle: Using RAW Mode and JNA.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/kT4JYQi9w4w&start=346s"
 ---

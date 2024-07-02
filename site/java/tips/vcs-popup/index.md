@@ -6,7 +6,7 @@ topics:
   - vcs
   - git
 author: md
-subtitle: Open VCS actions using the keyboard
+subtitle: Open VCS actions using keyboard shortcuts to save time.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Version control

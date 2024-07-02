@@ -6,8 +6,7 @@ topics:
   - testing
 author: tg
 subtitle: >-
-  Test frameworks often stop the test at the first failure. Find out how to run
-  all conditions to see which pass and which fail.
+  Test frameworks often stop the test at the first failure. Find out how to run all conditions to see which pass and which fail.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=1893"
 ---

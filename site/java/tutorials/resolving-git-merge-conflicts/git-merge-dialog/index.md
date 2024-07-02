@@ -4,7 +4,7 @@ date: 2022-09-12
 title: Git Merge Dialog
 topics: []
 author: hs
-subtitle: Working with the Git Merge dialog to resolve conflicts
+subtitle: Working with the Git Merge dialog to resolve conflicts.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=WgipWkaU2MM"
 ---

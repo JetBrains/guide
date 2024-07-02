@@ -6,7 +6,7 @@ topics:
   - java
   - livetemplates
 author: md
-subtitle: Use Live Templates to auto-complete common code structures for you
+subtitle: Use Live Templates to auto-complete common code structures for you.
 thumbnail: ./thumbnail.png
 seealso:
   - title: "(video) IntelliJ IDEA. Helen's Take On: Writing Less Code"

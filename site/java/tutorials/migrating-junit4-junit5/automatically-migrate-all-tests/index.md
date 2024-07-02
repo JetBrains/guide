@@ -4,7 +4,7 @@ date: 2021-08-09
 title: Automatically migrating tests
 topics: []
 author: hs
-subtitle: Let IntelliJ IDEA migrate as many tests as possible automatically
+subtitle: Let IntelliJ IDEA migrate as many tests as possible automatically.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/F8UTTTDtbH0?start=452"
 ---

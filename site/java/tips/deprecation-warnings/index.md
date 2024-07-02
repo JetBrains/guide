@@ -1,12 +1,11 @@
 ---
 date: 2021-05-05
-title: Identify and fix deprecated calls
+title: Identify and Fix Deprecated Calls
 topics:
   - java
 author: tg
 subtitle: >-
-  IntelliJ IDEA will warn you if you're using deprecated methods, and they will
-  be shown with a strikethrough if they're marked for removal
+  IntelliJ IDEA will warn you if you're using deprecated methods, and they will be shown with a strikethrough if they're marked for removal.
 thumbnail: ./thumbnail.png
 screenshot: ./tip.png
 ---

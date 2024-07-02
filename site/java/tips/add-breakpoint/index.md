@@ -1,12 +1,12 @@
 ---
 date: 2021-01-08
-title: Add Breakpoint
+title: Add a  Breakpoint
 topics:
   - debugging
   - java
   - kotlin
 author: hs
-subtitle: Easily add breakpoints from the run window
+subtitle: Easily add breakpoints when you get an exception in your code
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Inline Method Refactoring in IntelliJ IDEA

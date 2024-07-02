@@ -6,7 +6,7 @@ topics:
   - vcs
   - git
 author: md
-subtitle: Use the Magic Wand to Resolve Simple Conflicts
+subtitle: Use the magic wand to resolve simple conflicts in your code.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Resolve conflicts
@@ -16,4 +16,4 @@ seealso:
 video: "https://youtu.be/ir8k1BymHME"
 ---
 
-Do you have merge conflicts? Don't worry! Use the magic wand to Resolve Simple Conflicts. With those out of the way, you can focus on resolving the rest.
+Do you have merge conflicts? Don't worry! Use the magic wand to resolve simple conflicts. With those out of the way, you can focus on resolving the rest.

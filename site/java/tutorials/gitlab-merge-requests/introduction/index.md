@@ -4,7 +4,7 @@ date: 2023-08-04
 title: Introduction
 topics: []
 author: md
-subtitle: Working with GitLab Merge Requests
+subtitle: Working with GitLab Merge Requests.
 thumbnail: ./thumbnail.png
 ---
 

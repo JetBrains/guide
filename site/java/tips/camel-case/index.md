@@ -1,11 +1,11 @@
 ---
 date: 2023-12-08
-title: CamelCase in code completion
+title: CamelCase in Code Completion
 topics:
   - editing
   - java
 author: md
-subtitle: Use CamelCase in code completion
+subtitle: Use CamelCase in code completion to speed up your workflow.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Basic completion

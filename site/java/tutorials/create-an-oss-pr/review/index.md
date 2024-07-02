@@ -6,7 +6,7 @@ topics:
   - git
   - vcs
 author: md
-subtitle: Review and hopefully get your pull request merged
+subtitle: Review and hopefully get your pull request merged.
 thumbnail: ./thumbnail.png
 ---
 

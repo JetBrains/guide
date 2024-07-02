@@ -5,8 +5,7 @@ title: Writing code
 topics: []
 author: hs
 subtitle: >-
-  IntelliJ IDEA can help you to write code quickly and efficiently while
-  minimising compilation errors.
+  IntelliJ IDEA can help you to write code quickly and efficiently while minimising compilation errors.
 thumbnail: ./thumbnail.png
 ---
 

@@ -4,7 +4,7 @@ date: 2022-10-03
 title: Navigation
 topics: []
 author: md
-subtitle: Shortcuts to navigate a project
+subtitle: Shortcuts to navigate a project.
 thumbnail: ./thumbnail.png
 ---
 

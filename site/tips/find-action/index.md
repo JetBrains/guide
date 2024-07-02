@@ -5,9 +5,7 @@ topics:
   - ide
   - platform
 author: hs
-subtitle: >-
-  If you want to do something, but don't remember the shortcut or menu option,
-  use Find Action. Press ⇧⌘A (on Mac) or Control+Shift+A (on Windows/Linux)
+subtitle: Find various actions inside your JetBrains IDE quickly and efficiently.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/eZUe_44B3nk"
 seealso:

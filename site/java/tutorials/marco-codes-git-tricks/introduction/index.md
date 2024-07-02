@@ -4,7 +4,7 @@ date: 2022-11-11
 title: Introduction
 topics: []
 author: hs
-subtitle: Overview of the tutorial
+subtitle: Overview of the tutorial.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/Ase_X9p6exw"
 ---

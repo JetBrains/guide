@@ -14,11 +14,7 @@ video: >-
 Have a function with lots of arguments? Or a struct with many fields?
 **Parameter Info** gives just the basics without using lots of real estate.
 
-**How to use:**
-
 Press <kbd>⌘P</kbd> (macOS) / <kbd>Ctrl+P</kbd> (Windows/Linux) to invoke this feature.
-
-**Pro tip:**
 
 With your cursor in the parentheses, invoke **Parameter Info**. You get a tiny popup with the positional and keyword arguments, along with any default values. **Bold** is used to mark the current spot in the parameter list that your cursor is at.
 

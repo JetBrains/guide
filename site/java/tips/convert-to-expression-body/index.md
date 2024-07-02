@@ -5,7 +5,7 @@ topics:
   - kotlin
   - refactoring
 author: hs
-subtitle: Use quick intentions to convert to use expression body syntax
+subtitle: Use quick intentions to convert to use expression body syntax.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/C0HfvztWEio"
 ---

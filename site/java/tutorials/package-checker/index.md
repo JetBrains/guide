@@ -9,7 +9,7 @@ topics:
   - maven
   - packagesearch
 author: md
-subtitle: Find and fix vulnerabilities inside IntelliJ IDEA Ultimate
+subtitle: Find and fix vulnerabilities inside IntelliJ IDEA Ultimate.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

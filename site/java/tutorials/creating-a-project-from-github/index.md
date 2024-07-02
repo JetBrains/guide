@@ -7,7 +7,7 @@ topics:
   - git
   - vcs
 author: hs
-subtitle: How you can create an IntelliJ IDEA project from your code in GitHub
+subtitle: How you can create an IntelliJ IDEA project from your code in GitHub.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./clone-from-github/

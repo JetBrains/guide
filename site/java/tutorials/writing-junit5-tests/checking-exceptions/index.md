@@ -4,7 +4,7 @@ date: 2021-01-01
 title: Checking Exceptions
 topics: []
 author: hs
-subtitle: Testing that exceptions are correctly thrown
+subtitle: Testing that exceptions are correctly thrown.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/we3zJE3hlWE?start=917"
 ---

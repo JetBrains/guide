@@ -5,7 +5,7 @@ title: "Hooking Everything Up"
 topics:
   - go
 author: ab
-subtitle: Integrating Client and Server Components
+subtitle: Integrating Client and Server Components.
 thumbnail: ./thumbnail.png
 ---
 

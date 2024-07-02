@@ -4,7 +4,7 @@ date: 2021-05-14
 title: Shortcuts
 topics: []
 author: tg
-subtitle: Shortcuts used in the tutorial
+subtitle: Shortcuts used in the tutorial.
 thumbnail: ./thumbnail.png
 ---
 

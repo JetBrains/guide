@@ -1,11 +1,11 @@
 ---
 date: 2023-05-11
-title: Move Work Aside With Shelve
+title: Move Work Aside with Shelve
 topics:
   - git
   - vcs
 author: pwe
-subtitle: Move uncommitted work aside when you need to work on another branch.
+subtitle: Move uncommitted work to one side to come back to it later when you need to work on another branch.
 seealso:
   - title: Shelve and unshelve changes
     href: "https://www.jetbrains.com/help/idea/shelving-and-unshelving-changes.html"

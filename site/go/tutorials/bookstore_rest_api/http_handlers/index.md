@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: mm
-subtitle: Managing Web Requests - The HTTP Handler Approach
+subtitle: Managing Web Requests - The HTTP Handler Approach.
 thumbnail: ./thumbnail.png
 ---
 

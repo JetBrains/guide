@@ -6,7 +6,7 @@ topics:
   - gettingstarted
   - gradle
 author: tg
-subtitle: What you need to know to get started with an existing Gradle project
+subtitle: What you need to know to get started with an existing Gradle project.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/6V6G3RyxEMk?start=586"
 ---

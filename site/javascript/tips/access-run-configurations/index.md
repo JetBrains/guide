@@ -1,7 +1,7 @@
 ---
 date: 2020-05-26
 title: Access Run Configurations Quickly
-subtitle: Learn a quick way to access run configurations.
+subtitle: Learn a quick way to access all your run configurations.
 topics:
   - running
 author: er

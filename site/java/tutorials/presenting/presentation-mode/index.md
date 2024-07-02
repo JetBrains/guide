@@ -4,7 +4,7 @@ date: 2022-10-03
 title: Using Presentation Mode
 topics: []
 author: md
-subtitle: How to enter and exit Presentation Mode
+subtitle: How to enter and exit Presentation Mode.
 thumbnail: ./thumbnail.png
 ---
 

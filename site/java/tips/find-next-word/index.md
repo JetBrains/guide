@@ -6,7 +6,7 @@ topics:
   - java
   - kotlin
 author: hs
-subtitle: Find next word and highlight all instances
+subtitle: Find next word and highlight all instances.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Source code navigation

@@ -4,7 +4,7 @@ date: 2022-11-13
 title: Bugfixing Flickering & Cursor Positioning
 topics: []
 author: hs
-subtitle: Fixing bugs with flickering
+subtitle: Fixing bugs with flickering.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/kT4JYQi9w4w&start=1659s"
 ---

@@ -7,8 +7,7 @@ topics:
   - java
 author: hs
 subtitle: >-
-  The top-right corner of your editor shows you information about the state of
-  your class
+  The top-right corner of your editor shows you information about the state of your class at a glance.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (blog) IntelliJ IDEA blog Inspections Widget

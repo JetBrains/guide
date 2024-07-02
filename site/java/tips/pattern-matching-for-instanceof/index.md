@@ -5,7 +5,7 @@ topics:
   - inspections
   - java
 author: tg
-subtitle: Inspections can guide us to use new Java features
+subtitle: Inspections can guide us to use newer Java features.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/qCfuQkddCEM"
 ---

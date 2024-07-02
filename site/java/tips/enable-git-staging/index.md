@@ -6,7 +6,7 @@ topics:
   - kotlin
   - vcs
 author: hs
-subtitle: Git Staging is an alternative approach to IntelliJ IDEA Changelists
+subtitle: Git Staging is an alternative approach to IntelliJ IDEA Changelists.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) What's New for Java Developers in IntelliJ IDEA 2020.3

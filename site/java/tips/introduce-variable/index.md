@@ -1,11 +1,11 @@
 ---
 date: 2023-12-08
-title: Introduce variable
+title: Introduce Variable
 topics:
   - java
   - refactoring
 author: md
-subtitle: Refactor your code and introduce a new variable
+subtitle: Refactor your code and introduce a new variable right when you need it.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) IntelliJ IDEA. Everyday Refactorings

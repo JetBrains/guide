@@ -4,7 +4,7 @@ date: 2022-07-23
 title: Packaging & Deployment
 topics: []
 author: hs
-subtitle: Creating a .jar file and executing it
+subtitle: Creating a .jar file and executing it.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=4437s"
 ---

@@ -5,7 +5,7 @@ topics:
   - tricks
   - navigation
 author: md
-subtitle: Open a file from the Project tool window
+subtitle: Open a file from the Project tool window.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Pro tips

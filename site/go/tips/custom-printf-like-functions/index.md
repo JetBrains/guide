@@ -8,8 +8,7 @@ topics:
   - refactoring
 author: ap
 subtitle: >-
-  Provide hints and highlights for message formats in custom `Printf`-like
-  functions
+  Provide hints and highlights for message formats in custom `Printf`-like functions.
 thumbnail: ./thumbnail.png
 ---
 

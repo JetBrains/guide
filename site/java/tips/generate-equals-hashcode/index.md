@@ -5,7 +5,7 @@ topics:
   - editing
   - java
 author: hs
-subtitle: We can generate the code to override the equals and hashCode methods
+subtitle: We can generate the code to override the equals and hashCode methods.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) CodeGeneration in IntelliJ IDEA

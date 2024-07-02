@@ -8,7 +8,7 @@ topics:
   - kubernetes
   - python
 author: mm
-subtitle: Breaking Barriers - Revolutionizing Development through Remote Collaboration
+subtitle: Breaking Barriers - Revolutionizing Development through Remote Collaboration.
 thumbnail: thumbnail.png
 video: "https://www.youtube.com/watch?v=cqIz9aR8bMk"
 ---

@@ -5,8 +5,7 @@ topics:
   - testing
 author: pwe
 subtitle: >-
-  Speed up your "visual coverage" with a config file and correct working
-  directory.
+  Speed up your "visual coverage" with a config file and correct working directory.
 seealso:
   - title: Coverage configuration files
     href: "https://coverage.readthedocs.io/en/coverage-5.0.4/config.html"

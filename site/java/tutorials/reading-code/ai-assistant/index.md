@@ -6,7 +6,7 @@ topics:
   - ai
   - tricks
 author: md
-subtitle: Using AI Assistant to understand code
+subtitle: Using AI Assistant to understand code.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=hjGVJHOLSjA"

@@ -5,7 +5,7 @@ topics:
   - editing
   - java
 author: hs
-subtitle: You can view supertypes and subtypes in the hierarchy
+subtitle: You can view supertypes and subtypes in the hierarchy quickly with your keyboard shortcuts.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Source code hierarchy

@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: cb
-subtitle: Essential Techniques to Ensure Efficiency and Success with Redis
+subtitle: Essential Techniques to Ensure Efficiency and Success with Redis.
 thumbnail: ./thumbnail.png
 ---
 

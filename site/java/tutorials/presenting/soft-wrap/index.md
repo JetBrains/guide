@@ -4,7 +4,7 @@ date: 2022-10-03
 title: Soft-wrap
 topics: []
 author: md
-subtitle: Use soft-wrap to prevent horizontal scrolling
+subtitle: Use soft-wrap to prevent horizontal scrolling.
 thumbnail: ./thumbnail.png
 ---
 

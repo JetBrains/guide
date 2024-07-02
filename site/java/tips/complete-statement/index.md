@@ -6,8 +6,7 @@ topics:
   - tricks
 author: hs
 subtitle: >-
-  Complete statement can add your semicolons, brackets and manage caret
-  placement for you.
+  Complete statement can add your semicolons, brackets and manage caret placement for you.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Why Do Developers Love IntelliJ IDEA?

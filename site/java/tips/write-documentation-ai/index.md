@@ -1,11 +1,11 @@
 ---
 date: 2024-02-16
-title: Write documentation with AI Assistant
+title: Write Documentation with AI Assistant
 topics:
   - ai
   - java
 author: md
-subtitle: Generate documentation for your code with AI Assistant
+subtitle: Generate documentation for your code with AI Assistant.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Generate documentation with AI

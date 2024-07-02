@@ -4,7 +4,7 @@ date: 2021-09-06
 title: Example of Reformatting Code
 topics: []
 author: hs
-subtitle: Invoking Reformat Code on a class and viewing the results
+subtitle: Invoking Reformat Code on a class and viewing the results.
 thumbnail: ./thumbnail.png
 ---
 

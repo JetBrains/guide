@@ -4,7 +4,7 @@ date: 2023-08-07
 title: Go REST Guide. Gin Framework
 author: svk
 subtitle: >-
-  The third part of this series looks at how to build a REST API using a web
+  The third part of this series looks at how to build a REST API using a web.
   framework called Gin.
 thumbnail: ./thumbnail.png
 topics:

@@ -5,7 +5,7 @@ topics:
   - databases
   - mongodb
 author: dlsniper
-subtitle: Run MongoDB queries in SQL format from the comfort of your IDE.
+subtitle: Run MongoDB queries in SQL format within your IDE.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/SDV7K2H1HAM?list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW"
 obsoletes:

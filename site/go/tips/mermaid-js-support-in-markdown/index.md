@@ -1,17 +1,15 @@
 ---
 date: 2020-12-03
-title: Full support of Mermaid syntax
+title: Full Support of Mermaid Syntax
 topics:
   - platform
 author: ap
-subtitle: Seamlessly integrate, create, and visualize Mermaid diagrams
+subtitle: Seamlessly integrate, create, and visualize Mermaid diagrams.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/KPmsKMgw6sI"
 ---
 
 The Mermaid plugin provides comprehensive Mermaid syntax support, including syntax highlighting, code completion, and navigation tools. It is compatible with `.mmd` and `.mermaid` file types, and it also allows you to embed and render Mermaid diagrams within Markdown files.
-
-## Installation
 
 You can choose between the following installation options:
 

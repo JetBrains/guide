@@ -8,7 +8,7 @@ topics:
   - maven
   - packagesearch
 author: md
-subtitle: Different ways to add dependencies in IntelliJ IDEA
+subtitle: Different ways to add dependencies in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

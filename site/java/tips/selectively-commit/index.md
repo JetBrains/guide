@@ -1,11 +1,11 @@
 ---
 date: 2023-12-11
-title: Selectively commit changes
+title: Selectively Commit Changes
 topics:
   - git
   - vcs
 author: md
-subtitle: Selectively Commit Changes to a File
+subtitle: Selectively commit a subset of changes in a file to VCS.
 thumbnail: ./thumbnail.png
 seealso:
   - title: >-

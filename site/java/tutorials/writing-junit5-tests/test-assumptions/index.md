@@ -4,7 +4,7 @@ date: 2021-01-01
 title: Test Assumptions
 topics: []
 author: hs
-subtitle: Writing your test assumptions
+subtitle: Writing your test assumptions.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/we3zJE3hlWE?start=685"
 ---

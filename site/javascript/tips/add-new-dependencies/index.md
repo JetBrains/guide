@@ -5,7 +5,7 @@ topics:
   - editing
   - javascript
 author: er
-subtitle: WebStorm can help you add a new dependency.
+subtitle: WebStorm can help you add a new dependency right when you need it.
 seealso:
   - title: 10 WebStorm shortcuts you need to know
     href: >-

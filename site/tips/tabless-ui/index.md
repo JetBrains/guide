@@ -6,10 +6,7 @@ topics:
   - interface
   - platform
 author: hs
-subtitle: >-
-  In any JetBrains Integrated Development Environment (IDE), you have the power
-  to take control of your workspace. In this video, we'll show you how to
-  configure your editor tabs to optimize your coding environment.
+subtitle: Configure your editor tabs to optimize your coding environment.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/ND0Br0jMl7M"
 obsoletes:

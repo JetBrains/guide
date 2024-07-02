@@ -1,11 +1,11 @@
 ---
 date: 2024-03-05
-title: Structure tool window
+title: Structure Tool Window
 topics:
   - tricks
   - navigation
 author: md
-subtitle: Quickly get an overview of your class and jump to the relevant code
+subtitle: Quickly get an overview of your class and jump to the relevant code.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Structure tool window

@@ -7,7 +7,7 @@ topics:
   - django
   - python
 author: mm
-subtitle: Writing and running unit tests in Django
+subtitle: Writing and running unit tests in Django.
 thumbnail: thumbnail.png
 video: "https://youtu.be/cP5vv9M0VFQ"
 obsoletes:

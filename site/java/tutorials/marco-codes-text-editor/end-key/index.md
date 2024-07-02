@@ -4,7 +4,7 @@ date: 2022-11-13
 title: End Key
 topics: []
 author: hs
-subtitle: Getting the End key to the end
+subtitle: Getting the End key to the end.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=72Dt_U9DQh4&start=770s"
 ---

@@ -1,11 +1,11 @@
 ---
 date: 2023-03-01
-title: Upgrade dependencies
+title: Upgrade Dependencies
 topics:
   - packagesearch
   - tricks
 author: md
-subtitle: Upgrade dependencies from the pom.xml
+subtitle: Upgrade dependencies from your `pom.xml` file.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Package Search

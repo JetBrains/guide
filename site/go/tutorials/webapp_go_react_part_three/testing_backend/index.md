@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: Connecting the dots - from development to deployment
+subtitle: Connecting the dots - from development to deployment.
 thumbnail: ./thumbnail.png
 ---
 
@@ -78,7 +78,7 @@ module.exports = function (app) {
 		createProxyMiddleware({
 			target: "http://localhost:8080",
 			changeOrigin: true,
-		})
+		}),
 	);
 };
 ```

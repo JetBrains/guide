@@ -4,12 +4,10 @@ title: Writing a Java Inspection for IntelliJ IDEA Using AI Assistant
 topics:
   - ai
 author: tv
-subtitle: I decided to try out AI Assistant in IntelliJ IDEA to write a new Java inspection for IntelliJ IDEA, and write down my experience while solving this task. Let’s take a look!
+subtitle: Using AI Assistant to write a new Java inspection for IntelliJ IDEA, and write down my experience.
 thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/idea/2023/12/java-inspection-with-ai-assistant/"
 ---
-
-**Author: Tagir Valeev**
 
 The AI Assistant, powered by the JetBrains AI Service, is able to generate code and assist with various tasks in the IDE. The author explains how they used AI Assistant to create a new Java inspection and walks through the process step by step. They highlight the benefits and limitations of using AI Assistant, including its ability to generate code quickly but the need for manual adjustments to achieve the desired quality.
 

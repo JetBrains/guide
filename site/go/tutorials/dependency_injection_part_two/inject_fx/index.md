@@ -5,7 +5,7 @@ title: "Go with FX"
 topics:
   - go
 author: iu
-subtitle: Building Go Applications with Fx
+subtitle: Building Go Applications with Fx.
 thumbnail: ./thumbnail.png
 ---
 

@@ -5,7 +5,7 @@ title: Structure
 topics:
   - tricks
 author: md
-subtitle: A quick view at the structure of the code
+subtitle: A quick view at the structure of the code.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=hjGVJHOLSjA"

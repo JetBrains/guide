@@ -5,8 +5,7 @@ topics:
   - angular
 author: er
 subtitle: >-
-  Use a shortcut to quickly jump between the Angular component's template, test,
-  and other files.
+  Use a shortcut to quickly jump between the Angular component's template, test, and other files.
 seealso:
   - title: Working with Angular projects in WebStorm
     href: "https://www.jetbrains.com/help/webstorm/angular.html"

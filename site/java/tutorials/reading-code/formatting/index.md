@@ -5,7 +5,7 @@ title: Formatting
 topics:
   - tricks
 author: md
-subtitle: Formatting Code in IntelliJ IDEA
+subtitle: Formatting Code in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=hjGVJHOLSjA"

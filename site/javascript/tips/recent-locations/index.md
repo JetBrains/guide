@@ -2,8 +2,7 @@
 date: 2020-03-16
 title: Using Recent Locations for Navigation
 subtitle: >-
-  Preview the part of code and files you've recently edited and get back to them
-  quickly.
+  Preview the part of code and files you've recently edited and get back to them quickly.
 topics:
   - navigation
 author: er

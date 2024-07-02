@@ -4,7 +4,7 @@ date: 2022-03-30
 title: Using IntelliJ IDEA's migration tool
 topics: []
 author: hs
-subtitle: Migrating to Java EE with IntelliJ IDEA's refactoring  tool
+subtitle: Migrating to Java EE with IntelliJ IDEA's refactoring  tool.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/mukr2Q_zBm4?start=463"
 ---

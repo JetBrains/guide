@@ -5,7 +5,7 @@ topics:
   - editing
   - java
 author: hs
-subtitle: Get type aware completion in your code
+subtitle: Get type aware completion in your code so you can focus on solving problems.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) IntelliJ IDEA. Code Completion

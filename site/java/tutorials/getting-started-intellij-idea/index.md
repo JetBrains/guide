@@ -7,7 +7,7 @@ topics:
   - gettingstarted
   - java
 author: hs
-subtitle: My favourite tips for all new starters in IntelliJ IDEA
+subtitle: My favourite tips for all new starters in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./working-together/

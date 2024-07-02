@@ -1,7 +1,7 @@
 ---
 date: 2020-03-16
 title: Duplicating Lines
-subtitle: Duplicate a line of code with a shortcut.
+subtitle: Sometimes we need to duplicate a line of code. Learn how to do that with one keyboard shortcut.
 topics:
   - editing
 author: er

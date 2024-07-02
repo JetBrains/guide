@@ -5,7 +5,7 @@ topics:
   - tricks
   - debugging
 author: md
-subtitle: Evaluate an expression during a debugging session
+subtitle: Evaluate an expression during a debugging session to learn more about the problem.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Evaluate expressions

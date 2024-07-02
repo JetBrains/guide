@@ -5,9 +5,7 @@ topics:
   - git
   - vcs
 author: pwe
-subtitle: >-
-  Use the IDE's built-in history facility to recover changes when VCS can't help
-  you.
+subtitle: Use the IDE's built-in history facility to recover local changes when you haven't committed to VCS.
 seealso:
   - title: Local History
     href: "https://www.jetbrains.com/help/idea/local-history.html"

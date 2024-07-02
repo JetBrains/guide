@@ -4,7 +4,7 @@ date: 2022-05-10
 title: New Apache Tomcat Application
 topics: []
 author: hs
-subtitle: How to create a new application that uses Apache Tomcat
+subtitle: How to create a new application that uses Apache Tomcat.
 thumbnail: ./thumbnail.png
 ---
 

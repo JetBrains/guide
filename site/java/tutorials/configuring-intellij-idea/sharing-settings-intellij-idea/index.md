@@ -5,8 +5,7 @@ title: Sharing IntelliJ IDEA Settings
 topics: []
 author: hs
 subtitle: >-
-  You can share settings across your own instances of IntelliJ IDEA or with your
-  colleagues
+  You can share settings across your own instances of IntelliJ IDEA or with your colleagues.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/pnKBkblUV84"
 ---

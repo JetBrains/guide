@@ -8,8 +8,7 @@ topics:
   - testing
 author: ap
 subtitle: >-
-  You can format and share your code, change the Go version, and run your code
-  using the Go playground server.
+  You can format and share your code, change the Go version, and run your code using the Go playground server.
 seealso:
   - title: (documentation) GoLand Help - Running applications in Go Playground
     href: >-

@@ -5,7 +5,7 @@ topics:
   - java
   - refactoring
 author: hs
-subtitle: Refactor the signature of a method
+subtitle: Refactor the signature of a method at any time.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) IntelliJ IDEA. 3 Ways To Simplify Your Code

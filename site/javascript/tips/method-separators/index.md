@@ -6,8 +6,7 @@ topics:
   - javascript
 author: er
 subtitle: >-
-  How to enable method separators to make it easier to read your code in
-  WebStorm.
+  How to enable method separators to make it easier to read your code in WebStorm.
 seealso:
   - title: Source code navigation
     href: >-

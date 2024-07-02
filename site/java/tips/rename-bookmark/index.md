@@ -1,11 +1,11 @@
 ---
 date: 2023-12-09
-title: Rename bookmark
+title: Rename Bookmark
 topics:
   - editing
   - java
 author: md
-subtitle: Rename an existing bookmark
+subtitle: Rename an existing bookmark to something more suitable.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Using bookmarks in IntelliJ IDEA

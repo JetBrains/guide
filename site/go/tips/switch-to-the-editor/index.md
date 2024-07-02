@@ -1,11 +1,11 @@
 ---
 date: 2020-02-05
-title: Switch to the editor
+title: Switch to the Editor
 topics:
   - editing
   - go
 author: dlsniper
-subtitle: Get the focus back to the editor regardless what is currently focused
+subtitle: Get the focus back to the editor regardless what is currently focused.
 thumbnail: ./thumbnail.png
 video: >-
   https://www.youtube.com/watch?v=NNWMn6cUPTg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=141

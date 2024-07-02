@@ -5,9 +5,7 @@ topics:
   - ide
   - platform
 author: hs
-subtitle: >-
-  We'll walk you through the steps to enable the sleek and efficient New UI in
-  your favorite JetBrains Integrated Development Environment.
+subtitle: Enabling and configuring the latest JetBrains UI in your IDE.
 thumbnail: ./thumbnail.png
 seealso:
   - title: New UI

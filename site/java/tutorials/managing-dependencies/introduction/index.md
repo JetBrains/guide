@@ -8,7 +8,7 @@ topics:
   - maven
   - packagesearch
 author: md
-subtitle: Managing dependencies in IntelliJ IDEA
+subtitle: Managing dependencies in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

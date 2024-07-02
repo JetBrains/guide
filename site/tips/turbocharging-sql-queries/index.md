@@ -6,9 +6,7 @@ topics:
   - databases
   - platform
 author: hs
-subtitle: >-
-  Want to take your SQL query speed to the next level? This video will explore
-  how your JetBrains IDE can help you achieve faster SQL queries.
+subtitle: Speed up your SQL queries with your JetBrains IDE.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/-MFoSwcPkb4"
 ---

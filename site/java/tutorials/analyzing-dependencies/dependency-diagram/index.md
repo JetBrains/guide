@@ -7,7 +7,7 @@ topics:
   - gradle
   - maven
 author: md
-subtitle: Using the Dependency Diagram in IntelliJ IDEA Ultimate
+subtitle: Using the Dependency Diagram in IntelliJ IDEA Ultimate.
 thumbnail: ./thumbnail.png
 ---
 

@@ -5,7 +5,7 @@ topics:
   - navigation
   - tricks
 author: md
-subtitle: Get a quick overview of your class file
+subtitle: Get a quick overview of the structure of your class file.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - File structure

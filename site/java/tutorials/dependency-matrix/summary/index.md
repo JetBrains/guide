@@ -5,7 +5,7 @@ title: Summary and Shortcuts
 topics:
   - java
 author: md
-subtitle: Explore project structure with the Dependency Matrix Summary
+subtitle: Explore project structure with the Dependency Matrix Summary.
 thumbnail: ./thumbnail.png
 ---
 

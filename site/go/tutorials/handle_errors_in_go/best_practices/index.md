@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: cb
-subtitle: Reduce Bugs and Maintain Control - Essential Practices
+subtitle: Reduce Bugs and Maintain Control - Essential Practices.
 thumbnail: ./thumbnail.png
 ---
 

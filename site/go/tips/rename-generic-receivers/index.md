@@ -1,13 +1,13 @@
 ---
 date: 2023-03-09
-title: Rename generic receivers along with a generic struct
+title: Rename Generic Receivers Along with a Generic Struct
 topics:
   - editing
   - generics
   - go
   - quick-fixes
 author: ap
-subtitle: Rename generic receivers along with a generic struct
+subtitle: Get refactoring support when you rename a generic struct.
 thumbnail: ./thumbnail.png
 screenshot: ./screenshot.png
 ---

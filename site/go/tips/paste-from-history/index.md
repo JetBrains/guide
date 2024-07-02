@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: Paste from history
+title: Paste from History
 topics:
   - editing
   - go
@@ -12,7 +12,5 @@ video: >-
 ---
 
 The _Paste from History_ feature you to use the (limited) history of everything you put in the clipboard.
-
-**How to use:**
 
 Press <kbd>⌘⇧V</kbd> (macOS) / <kbd>Ctrl+Shift+V</kbd> (Windows/Linux) to open pop-up window.

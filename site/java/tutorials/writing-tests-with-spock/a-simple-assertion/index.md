@@ -4,7 +4,7 @@ date: 2021-05-20
 title: A Simple Assertion
 topics: []
 author: tg
-subtitle: Writing our first Spock test
+subtitle: Writing our first Spock test.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=197"
 ---

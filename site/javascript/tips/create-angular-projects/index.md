@@ -4,7 +4,7 @@ title: Create Angular Projects
 topics:
   - angular
 author: er
-subtitle: How to create a new Angular project in WebStorm
+subtitle: How to create a new Angular project in WebStorm.
 seealso:
   - title: Angular in WebStorm
     href: "https://www.jetbrains.com/help/webstorm/angular.html"

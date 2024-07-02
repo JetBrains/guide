@@ -1,10 +1,10 @@
 ---
 date: 2021-05-10
-title: Preview HTML updates in real time
+title: Preview HTML updates in Real Time
 topics:
   - html
 author: tg
-subtitle: See what your changes look like as you make them
+subtitle: See what your changes look like as you make them to minimise errors.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Inline Method Refactoring in IntelliJ IDEA

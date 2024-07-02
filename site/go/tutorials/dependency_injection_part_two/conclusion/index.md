@@ -5,7 +5,7 @@ title: "Conclusion"
 topics:
   - go
 author: iu
-subtitle: The Road Ahead
+subtitle: The Road Ahead.
 thumbnail: ./thumbnail.png
 ---
 

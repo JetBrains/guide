@@ -5,7 +5,7 @@ topics:
   - java
   - refactoring
 author: hs
-subtitle: You can refactor a method to change its signature
+subtitle: Refactor a method to change its signature and update your code to reflect the new signature.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) IntelliJ IDEA. Everyday Refactorings

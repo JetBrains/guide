@@ -9,8 +9,7 @@ topics:
   - testing
 author: tg
 subtitle: >-
-  Learn about the Spock testing framework by creating a project that uses Spock
-  to unit test Java code
+  Learn about the Spock testing framework by creating a project that uses Spock to unit test Java code.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

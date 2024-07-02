@@ -4,7 +4,7 @@ date: 2021-08-30
 title: Introduction
 topics: []
 author: hs
-subtitle: Let's take a tour of the Terminal Window in IntelliJ IDEA
+subtitle: Let's take a tour of the Terminal Window in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

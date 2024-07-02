@@ -4,7 +4,7 @@ date: 2021-09-06
 title: Reformatting Code Settings
 topics: []
 author: hs
-subtitle: What the settings are for reformatting code and where to find them
+subtitle: What the settings are for reformatting code and where to find them.
 thumbnail: ./thumbnail.png
 ---
 

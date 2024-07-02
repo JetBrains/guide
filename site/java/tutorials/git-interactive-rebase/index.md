@@ -7,7 +7,7 @@ topics:
   - git
   - vcs
 author: md
-subtitle: How to clean up your Git commit history with Git interactive rebase
+subtitle: How to clean up your Git commit history with Git interactive rebase.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

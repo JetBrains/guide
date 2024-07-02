@@ -5,12 +5,12 @@ title: Top Shortcuts
 topics:
   - gettingstarted
 author: hs
-subtitle: Our handpicked top shortcuts
+subtitle: Our handpicked top shortcuts just for you.
 thumbnail: ./thumbnail.png
 playlistItems:
   - /java/tips/context-actions/
   - /tips/search-everywhere/
-  - /java/tips/escape-focus-editor/
+  - /java/tips/focus-on-code/
   - /java/tips/smart-completion/
   - /java/tips/complete-statement/
   - /java/tips/f2/

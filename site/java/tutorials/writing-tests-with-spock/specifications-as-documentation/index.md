@@ -5,8 +5,7 @@ title: Specifications as Documentation
 topics: []
 author: tg
 subtitle: >-
-  Spock tests don't just tell the computer how to test the application, they can
-  help developers understand what the application is supposed to do.
+  Spock tests don't just tell the computer how to test the application, they can help developers understand what the application is supposed to do.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=2057"
 ---

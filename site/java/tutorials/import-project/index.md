@@ -6,7 +6,7 @@ title: Import project
 topics:
   - tricks
 author: md
-subtitle: Importing a project into IntelliJ IDEA
+subtitle: Importing a project into IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

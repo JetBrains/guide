@@ -5,7 +5,7 @@ title: "What Is Dependency Injection?"
 topics:
   - go
 author: iu
-subtitle: Dependency Injection Made Easy - Building Cleaner Software
+subtitle: Dependency Injection Made Easy - Building Cleaner Software.
 thumbnail: ./thumbnail.png
 ---
 

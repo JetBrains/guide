@@ -1,11 +1,11 @@
 ---
 date: 2024-02-16
-title: Select opened file
+title: Select Opened File
 topics:
   - navigation
   - tricks
 author: md
-subtitle: Locate an opened file in the project structure
+subtitle: Locate an opened file in the project structure.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Navigate with the Select In popup

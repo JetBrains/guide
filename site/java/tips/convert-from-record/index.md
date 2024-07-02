@@ -5,7 +5,7 @@ topics:
   - editing
   - java
 author: tg
-subtitle: Use quick intentions to convert a record to a class
+subtitle: Use quick intentions to convert a record to a class.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Using Java 15 with IntelliJ IDEA

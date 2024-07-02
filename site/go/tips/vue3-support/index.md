@@ -6,14 +6,11 @@ topics:
   - web
 author: dlsniper
 subtitle: >-
-  Upgrade to using the latest Vue.js version knowing your IDE will be there to
-  help you.
+  Upgrade to using the latest Vue.js version knowing your IDE will be there to help you.
 thumbnail: ./thumbnail.png
 video: >-
   https://www.youtube.com/watch?v=GFmVCdhNYX4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=142
 ---
-
-**How to use:**
 
 Open any JS file and start using any Vue.js 3 related code. The IDE will provide you assistance with code completion, refactoring, find usages, and more.
 

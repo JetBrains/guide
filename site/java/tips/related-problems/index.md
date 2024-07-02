@@ -1,12 +1,12 @@
 ---
 date: 2023-12-07
-title: Related problems
+title: Related Problems
 topics:
   - editing
   - navigation
   - tricks
 author: md
-subtitle: Use IntelliJ IDEA's inlay hints to navigate to Related Problems
+subtitle: Use IntelliJ IDEA's inlay hints to navigate to Related Problems.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Inlay hints

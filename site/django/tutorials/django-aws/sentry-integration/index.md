@@ -8,8 +8,7 @@ topics:
   - python
 author: mm
 subtitle: >-
-  Track errors & monitor performance in all major languages & frameworks with
-  Sentry
+  Track errors & monitor performance in all major languages & frameworks with Sentry.
 thumbnail: thumbnail.png
 video: "https://youtu.be/1Sc7T_muccQ"
 obsoletes:

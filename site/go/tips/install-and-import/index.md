@@ -1,6 +1,6 @@
 ---
 date: 2020-10-15
-title: Install and import
+title: Install and Import
 topics:
   - editing
   - go
@@ -17,7 +17,5 @@ video: >-
 _Type the symbol, let your IDE install the package and write the import._
 
 GoLand can generate your import for you, even when you haven't installed the package.
-
-**How to use:**
 
 Press to invoke the list of quick-fixes on the red import line and select **Sync packages of <project\>** to import the package into your project.

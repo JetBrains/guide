@@ -4,7 +4,7 @@ date: 2022-11-13
 title: Summary
 topics: []
 author: hs
-subtitle: Summary and acknowledgements
+subtitle: Summary and acknowledgements.
 thumbnail: ./thumbnail.png
 ---
 

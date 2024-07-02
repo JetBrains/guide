@@ -6,7 +6,7 @@ topics:
   - go
   - web
 author: rpeden
-subtitle: bringing together frontend and backend components
+subtitle: bringing together frontend and backend components.
 thumbnail: ./thumbnail.png
 ---
 

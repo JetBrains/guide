@@ -1,11 +1,11 @@
 ---
 date: 2023-12-08
-title: Surround with
+title: Surround With
 topics:
   - editing
   - java
 author: md
-subtitle: Surround your code with common programming constructs
+subtitle: Surround your code with common programming constructs.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Use the Surround With action

@@ -1,11 +1,11 @@
 ---
 date: 2023-12-05
-title: Inlay hints
+title: Inlay Hints
 topics:
   - editing
   - java
 author: hs
-subtitle: Inlay hints provide additional information about your code
+subtitle: Inlay hints provide additional information about your code.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Inlay hints

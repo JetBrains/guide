@@ -1,6 +1,6 @@
 ---
 date: 2020-12-03
-title: Tailwind CSS support
+title: Tailwind CSS Support
 topics:
   - editing
   - web
@@ -10,8 +10,6 @@ thumbnail: ./thumbnail.png
 video: >-
   https://www.youtube.com/watch?v=tEIGlCXU7Zc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=140
 ---
-
-**How to use:**
 
 Open any CSS file and start typing either `@tailwind` directives or CSS statements such as `@apply font-bold bg-blue-400;`
 

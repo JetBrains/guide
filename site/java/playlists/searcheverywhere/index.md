@@ -7,7 +7,7 @@ topics:
   - interface
   - tricks
 author: hs
-subtitle: Tips for using Search Everywhere (Shift+Shift)
+subtitle: Tips for using one of the most helpful shortcuts in the IDE.
 thumbnail: ./thumbnail.png
 playlistItems:
   - /tips/search-everywhere/

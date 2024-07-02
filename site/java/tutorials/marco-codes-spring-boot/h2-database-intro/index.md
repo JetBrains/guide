@@ -4,7 +4,7 @@ date: 2022-07-23
 title: H2 Database - Intro
 topics: []
 author: hs
-subtitle: Working with an H2 Database
+subtitle: Working with an H2 Database.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=3477s"
 ---

@@ -7,7 +7,7 @@ topics:
   - django
   - python
 author: mm
-subtitle: Writing and running BDD tests using Behave
+subtitle: Writing and running BDD tests using Behave.
 thumbnail: thumbnail.png
 video: "https://youtu.be/0XUr1mXGRbk"
 obsoletes:

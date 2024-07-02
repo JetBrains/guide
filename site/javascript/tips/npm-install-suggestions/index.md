@@ -6,8 +6,7 @@ topics:
   - running
 author: er
 subtitle: >-
-  Look out for suggestions from WebStorm! They can help you not to forget about
-  an important thing.
+  Look out for suggestions from WebStorm! They can help you not to forget about an important thing.
 seealso:
   - title: npm and Yarn
     href: >-

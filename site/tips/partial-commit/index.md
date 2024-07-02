@@ -5,7 +5,7 @@ topics:
   - git
   - vcs
 author: pwe
-subtitle: Unselect files or changed regions within files during the commit process.
+subtitle: Select specific files or regions within files during the commit process for a lower level of commit granularity.
 seealso:
   - title: Commit part of a file
     href: >-

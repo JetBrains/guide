@@ -3,8 +3,8 @@ date: 2023-09-28
 title: Building APIs With The Django REST Framework
 topics:
   - django
-author: hs
-subtitle: In this Django REST framework tutorial, you will create a rental platform API. The tutorial demonstrates how to use Python and Django REST framework in PyCharm to develop APIs.
+author: dm
+subtitle: The tutorial demonstrates how to use Python and Django REST framework in PyCharm to develop APIs.
 thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/pycharm/2023/09/building-apis-with-django-rest-framework/"
 ---

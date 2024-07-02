@@ -6,7 +6,7 @@ topics:
   - go
   - testing
 author: cb
-subtitle: Setting Up Your Development Environment
+subtitle: Setting Up Your Development Environment.
 thumbnail: ./thumbnail.png
 ---
 

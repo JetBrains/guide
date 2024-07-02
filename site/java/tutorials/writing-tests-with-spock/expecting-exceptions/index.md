@@ -6,8 +6,7 @@ topics:
   - testing
 author: tg
 subtitle: >-
-  Tests don't check just the happy paths, sometimes we want to say we're
-  expecting a specific Exception.
+  Tests don't check just the happy paths, sometimes we want to say we're expecting a specific Exception.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=657"
 ---

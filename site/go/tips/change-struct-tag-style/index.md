@@ -1,11 +1,11 @@
 ---
 date: 2021-05-24
-title: Change struct tag style
+title: Change Struct Tag Style
 topics:
   - editing
   - go
 author: dlsniper
-subtitle: Quickly change from different styles the struct tags
+subtitle: Quickly change different styles of the struct tags.
 thumbnail: ./thumbnail.png
 video: >-
   https://www.youtube.com/watch?v=dYDFUADPp1Q&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=19

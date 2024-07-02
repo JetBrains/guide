@@ -1,7 +1,7 @@
 ---
 date: 2024-02-12
 title: Generate Django Intentions with AI Assistant
-subtitle: How AI Assistant can help you to generate Django Intentions
+subtitle: How AI Assistant can help you to generate Django Intentions.
 seealso:
   - title: (documentation) PyCharm Help - Suggest Django Intentions
     href: >-

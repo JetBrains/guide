@@ -6,7 +6,7 @@ topics:
   - java
 author: md
 subtitle: >-
-  Quickly generate common code constructs such as Constructors, Getters and Setters
+  Quickly generate common code constructs such as Constructors, Getters and Setters.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Code Generation in IntelliJ IDEA

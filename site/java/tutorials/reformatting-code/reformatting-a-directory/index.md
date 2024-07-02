@@ -4,7 +4,7 @@ date: 2021-09-06
 title: Reformatting code in a directory
 topics: []
 author: hs
-subtitle: How to reformat code directory by directory
+subtitle: How to reformat code directory by directory.
 thumbnail: ./thumbnail.png
 ---
 

@@ -5,7 +5,7 @@ topics:
   - data
   - databases
 author: hs
-subtitle: How does exploring your database without writing a single line of SQL sound?
+subtitle: Explore your database without writing any SQL code.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/hEg40WdXsDg"
 ---

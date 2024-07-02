@@ -6,9 +6,7 @@ topics:
   - ide
   - platform
 author: hs
-subtitle: >-
-  Use ⇧⇧ (macOS), or Shift+Shift (Windows/Linux), to bring up the Search
-  Everywhere dialog. You can search across Classes, Files, Symbols and Actions.
+subtitle: Search for anything in your JetBrains IDE across Classes, Files, Symbols and Actions.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/nzDgYoDgWGE"
 seealso:

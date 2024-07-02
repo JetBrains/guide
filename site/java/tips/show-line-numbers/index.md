@@ -1,11 +1,11 @@
 ---
 date: 2023-01-06
-title: Show line numbers
+title: Show Line Numbers
 topics:
   - settings
   - tricks
 author: md
-subtitle: Turn show line numbers off and on
+subtitle: Turn show line numbers off and on as required.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Find a line or a column

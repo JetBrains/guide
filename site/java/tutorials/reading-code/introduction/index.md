@@ -5,7 +5,7 @@ title: Introduction
 topics:
   - tricks
 author: md
-subtitle: Reading Code in IntelliJ IDEA
+subtitle: Reading Code in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 video:
   url: "https://www.youtube.com/watch?v=hjGVJHOLSjA"

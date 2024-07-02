@@ -3,7 +3,7 @@ date: 2022-08-22
 title: Who is behind Django? An interview with the DSF president
 topics:
   - django
-author: hs
+author: jetbrains
 subtitle: In this interview, we’ll be talking with DSF President Chaim Kirby about its history, what it does, what it needs, and what’s next.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/SS_u8nFLklw"

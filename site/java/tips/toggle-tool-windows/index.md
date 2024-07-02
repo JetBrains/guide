@@ -6,7 +6,7 @@ topics:
   - java
   - kotlin
 author: hs
-subtitle: Toggle Tool Windows to tailor your interface
+subtitle: Toggle Tool Windows to tailor your interface for your needs.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Navigation in IntelliJ IDEA

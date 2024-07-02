@@ -5,14 +5,11 @@ topics:
   - kubernetes
 author: dlsniper
 subtitle: >-
-  Attach to the console of a process running inside a container of the selected
-  pod.
+  Attach to the console of a process running inside a container of the selected pod.
 thumbnail: ./thumbnail.png
 video: >-
   https://www.youtube.com/watch?v=5EvE7uZ38gU&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=76
 ---
-
-**How to use:**
 
 Select the pod you want from the _Kubernetes_ view in the _Services_ tool window, then click on **Open Console**. A new tab will open and a console will be attached to the running process inside the pod.
 

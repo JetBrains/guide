@@ -4,7 +4,7 @@ date: 2022-07-23
 title: Dependency Injection - Intro
 topics: []
 author: hs
-subtitle: Working with Dependency Injection
+subtitle: Working with Dependency Injection.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=2595s"
 ---

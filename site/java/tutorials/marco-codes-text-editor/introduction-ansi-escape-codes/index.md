@@ -4,7 +4,7 @@ date: 2022-11-13
 title: Introduction & ANSI Escape Codes
 topics: []
 author: hs
-subtitle: The role of ANSI escape codes
+subtitle: The role of ANSI escape codes.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/kT4JYQi9w4w"
 ---

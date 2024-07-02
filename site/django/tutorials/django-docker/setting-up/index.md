@@ -6,7 +6,7 @@ topics:
   - docker
   - django
 author: mm
-subtitle: Configuring the Application Using Dockerfile and Docker Compose
+subtitle: Configuring the Application Using Dockerfile and Docker Compose.
 thumbnail: thumbnail.png
 ---
 

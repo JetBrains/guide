@@ -4,7 +4,7 @@ date: 2021-09-06
 title: Introduction
 topics: []
 author: hs
-subtitle: When and why you may want to use code formatting
+subtitle: When and why you may want to use code formatting.
 thumbnail: ./thumbnail.png
 ---
 

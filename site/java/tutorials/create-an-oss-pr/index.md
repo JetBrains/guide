@@ -7,7 +7,7 @@ topics:
   - git
   - vcs
 author: md
-subtitle: Contribute code to someone else's GitHub project with a pull request
+subtitle: Contribute code to someone else's GitHub project with a pull request.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

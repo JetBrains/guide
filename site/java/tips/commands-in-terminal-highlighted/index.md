@@ -1,11 +1,11 @@
 ---
 date: 2022-08-22
-title: Highlighted commands in the terminal
+title: Highlighted Commands in the Terminal
 topics:
   - editing
   - java
 author: hs
-subtitle: IntelliJ IDEA highlights terminal commands you can run in IntelliJ IDEA
+subtitle: Have you ever wondered which IntelliJ IDEA terminal commands you can run in IntelliJ IDEA?
 thumbnail: ./thumbnail.png
 seealso:
   - title: (tutorial) IntelliJ IDEA Guide - Terminal Commands

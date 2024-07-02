@@ -1,11 +1,11 @@
 ---
 date: 2020-02-05
-title: Hide all tool windows
+title: Hide all Tool Windows
 topics:
   - go
   - ui
 author: dlsniper
-subtitle: Hide all the tool windows in the IDE
+subtitle: When you want just your code you can hide all the tool windows in the IDE.
 thumbnail: ./thumbnail.png
 video: >-
   https://www.youtube.com/watch?v=S7n7phgcb1o&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=66

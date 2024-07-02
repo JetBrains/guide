@@ -1,12 +1,12 @@
 ---
 date: 2023-12-05
-title: Clipboard history
+title: Clipboard History
 topics:
   - editing
   - java
   - kotlin
 author: md
-subtitle: Paste a subset or multiple entries from your recent history
+subtitle: Paste a subset or multiple entries such as a list from your recent copy history.
 thumbnail: ./thumbnail.png
 seealso:
   - title: "(video) IntelliJ IDEA Pro Tips: Clipboard History"

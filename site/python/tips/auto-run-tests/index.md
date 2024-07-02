@@ -5,8 +5,7 @@ topics:
   - testing
 author: pwe
 subtitle: >-
-  Get into testing mode by telling PyCharm to automatically re-run tests as you
-  type.
+  Get into testing mode by telling PyCharm to automatically re-run tests as you type.
 seealso:
   - title: Running tests automatically
     href: >-

@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: cb
-subtitle: Unlocking the Power of Redis - A Practical Guide for Go Developers
+subtitle: Unlocking the Power of Redis - A Practical Guide for Go Developers.
 thumbnail: ./thumbnail.png
 ---
 

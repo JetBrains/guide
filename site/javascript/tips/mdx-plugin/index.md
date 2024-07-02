@@ -5,8 +5,7 @@ topics:
   - customizing
 author: er
 subtitle: >-
-  Get syntax highlighting, code completion, and other features for your .mdx
-  files.
+  Get syntax highlighting, code completion, and other features for your .mdx files.
 seealso:
   - title: MDX plugin
     href: "https://plugins.jetbrains.com/plugin/14944-mdx"

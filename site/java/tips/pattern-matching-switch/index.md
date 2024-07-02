@@ -6,7 +6,7 @@ topics:
   - java
   - refactoring
 author: hs
-subtitle: Available in preview from Java 17
+subtitle: This feature is available in preview from Java 17.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (blog) Java 17 and IntelliJ IDEA

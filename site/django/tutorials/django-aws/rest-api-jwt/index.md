@@ -7,7 +7,7 @@ topics:
   - django
   - python
 author: mm
-subtitle: Using Simple JWT authentication plugin for the Django REST Framework
+subtitle: Using Simple JWT authentication plugin for the Django REST Framework.
 thumbnail: thumbnail.png
 video: "https://youtu.be/lzloMbTVHuw"
 obsoletes:

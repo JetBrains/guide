@@ -6,7 +6,7 @@ topics:
   - running
   - tricks
 author: md
-subtitle: How to use the Run Anything dialog
+subtitle: How to use the Run Anything dialog to run, well, anything!
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Run Anything

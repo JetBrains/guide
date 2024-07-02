@@ -1,11 +1,11 @@
 ---
 date: 2020-02-05
-title: Expanding/shrinking selection
+title: Expanding/Shrinking Selection
 topics:
   - editing
   - go
 author: dlsniper
-subtitle: Select portions of code that you need to, faster
+subtitle: Use your keyboard to quickly select the portions of code that you need.
 seealso:
   - title: (documentation) GoLand Help - Use quick pop-ups
     href: >-
@@ -18,8 +18,6 @@ video: >-
 Use _Extend Selection_ to quickly select parts of your code using semantic knowledge about it.
 
 Selected too much, or using an already existing selection, and want to reduce the selection scope? Use the complimentary _Shrink Selection_ feature.
-
-**How to use:**
 
 Press <kbd>⌥↑</kbd> (macOS) / <kbd>Ctrl+W</kbd> (Windows/Linux), to **Extend Selection**.
 

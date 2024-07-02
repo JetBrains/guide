@@ -1,6 +1,6 @@
 ---
 date: 2024-06-11
-title: Edit Text in Multiple Places At Once
+title: Edit Text in Multiple Places at Once
 subtitle: How to use multiple cursors to code faster in JetBrains IDEs.
 topics:
   - editing

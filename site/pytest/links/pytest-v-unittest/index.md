@@ -5,12 +5,10 @@ topics:
   - testing
   - pytest
 author: mahataqi
-subtitle: Python, being a versatile and widely used programming language, offers several testing frameworks to facilitate the testing process. Two prominent choices are pytest and unittest, both of which come with their own sets of features and advantages.
+subtitle: Two prominent choices are pytest and unittest, both of which come with their own sets of features and advantages.
 thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/pycharm/2024/03/pytest-vs-unittest/"
 ---
-
-**Author: Maha Taqi**
 
 Pytest and unittest are two popular testing frameworks for Python. Pytest is known for its simplicity, scalability, and powerful features such as fixture support and parameterization. It has a concise syntax and a rich plugin ecosystem. On the other hand, unittest is a built-in testing framework that follows the xUnit style and is part of the Python Standard Library. It has features such as test discovery, fixture support, and test suites. Pytest offers advantages like automatic test discovery, skip/xfail tests, and powerful assertion introspection. It also supports parallel test execution and offers easy mocking and patching. However, it is not part of the Python Standard Library and may have a moderate learning curve for beginners.
 

@@ -1,6 +1,6 @@
 ---
 date: 2022-11-08
-title: Generate tests for generic functions
+title: Generate Tests for Generic Functions
 topics:
   - editing
   - generics

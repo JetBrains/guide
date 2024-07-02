@@ -1,11 +1,11 @@
 ---
 date: 2023-12-12
-title: Custom project icons
+title: Custom Project Icons
 topics:
   - customizing
   - tricks
 author: md
-subtitle: Add a custom icon to your project
+subtitle: See how you can add a custom icon to your project.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Change the project icon

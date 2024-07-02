@@ -6,9 +6,7 @@ topics:
   - testing
 author: tg
 subtitle: >-
-  Stub objects allow us to state from a test what values get injected into our
-  application code. They can provide simple interfaces, so we don't have to
-  initialise the whole application to test a section.
+  Stub can provide simple interfaces, so we don't have to initialise the whole application to test a section.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=1544"
 ---

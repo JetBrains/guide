@@ -6,7 +6,7 @@ title: Tips for Reading Code
 topics:
   - tricks
 author: md
-subtitle: Tips to help you read and understand code in IntelliJ IDEA
+subtitle: Tips to help you read and understand code in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

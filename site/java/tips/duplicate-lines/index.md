@@ -1,11 +1,11 @@
 ---
 date: 2023-03-01
-title: Duplicate lines
+title: Duplicate Lines
 topics:
   - editing
   - tricks
 author: md
-subtitle: Duplicate the current line or a selected block
+subtitle: Sometimes you want to duplicate the current line or a selected block of code.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Basic editing

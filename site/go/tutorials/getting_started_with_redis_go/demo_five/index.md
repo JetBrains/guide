@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: cb
-subtitle: Using Redis Transactions for Data Integrity
+subtitle: Using Redis Transactions for Data Integrity.
 thumbnail: ./thumbnail.png
 ---
 

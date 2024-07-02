@@ -5,7 +5,7 @@ title: Live Templates Tip
 topics:
   - livetemplates
 author: hs
-subtitle: Use Live Templates to create tests faster
+subtitle: Use Live Templates to create tests faster.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/we3zJE3hlWE?start=434"
 ---

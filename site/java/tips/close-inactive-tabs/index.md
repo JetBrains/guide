@@ -1,11 +1,11 @@
 ---
 date: 2024-03-04
-title: Close tabs
+title: Close Tabs
 topics:
   - java
   - tricks
 author: md
-subtitle: Close inactive tabs
+subtitle: Close inactive tabs so you an focus on your current working context.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Open or close tabs

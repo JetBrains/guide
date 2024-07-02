@@ -1,11 +1,11 @@
 ---
 date: 2021-01-08
-title: Inline a method
+title: Inline a Method
 topics:
   - java
   - refactoring
 author: hs
-subtitle: Inline a method
+subtitle: Sometimes inlining a method can improve the readability of your code.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Inline Method Refactoring in IntelliJ IDEA

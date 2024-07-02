@@ -4,7 +4,7 @@ date: 2022-07-23
 title: Hello World @RestController
 topics: []
 author: hs
-subtitle: Creating and testing @RestController
+subtitle: Creating and testing @RestController.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=641s"
 ---

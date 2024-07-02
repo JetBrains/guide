@@ -5,8 +5,7 @@ title: Shortcuts used
 topics: []
 author: tg
 subtitle: >-
-  Finally, let's summarise the shortcuts we've learnt and see links to further
-  information.
+  Finally, let's summarise the shortcuts we've learnt and see links to further information.
 thumbnail: ./thumbnail.png
 ---
 

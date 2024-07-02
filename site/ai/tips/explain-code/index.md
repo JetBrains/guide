@@ -1,7 +1,7 @@
 ---
 date: 2024-06-11
 title: Explain Code with AI Assistant
-subtitle: How AI Assistant can help you understand code
+subtitle: Using AI Assistant to help you understand code.
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Explain Code
     href: >-

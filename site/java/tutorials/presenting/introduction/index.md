@@ -4,7 +4,7 @@ date: 2022-10-03
 title: Introduction to Presenting with IntelliJ IDEA
 topics: []
 author: md
-subtitle: Tips & tricks to level up your presentation skills with IntelliJ IDEA
+subtitle: Tips & tricks to level up your presentation skills with IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

@@ -1,11 +1,11 @@
 ---
 date: 2023-11-23
-title: Upgrade dependencies
+title: Upgrade Dependencies
 topics:
   - packagesearch
   - tricks
 author: md
-subtitle: Upgrade dependencies from the Dependencies tool window
+subtitle: Upgrade dependencies from the Dependencies tool window.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Package Search

@@ -1,6 +1,6 @@
 ---
 date: 2022-12-02
-title: See VCS Changed Lines In Gutter
+title: See VCS Changed Lines in Gutter
 topics:
   - editing
   - vcs

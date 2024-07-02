@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: cb
-subtitle: Simplifying Communication Between Applications
+subtitle: Simplifying Communication Between Applications.
 thumbnail: ./thumbnail.png
 ---
 

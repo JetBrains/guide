@@ -7,7 +7,7 @@ topics:
   - git
   - vcs
 author: hs
-subtitle: How you can share a local project to GitHub
+subtitle: How you can share a local project to GitHub.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/

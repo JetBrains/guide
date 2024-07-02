@@ -5,7 +5,7 @@ topics:
   - interface
   - java
 author: md
-subtitle: Toggle Rendered View for one or all Javadoc comments
+subtitle: Toggle rendered view for one or all Javadoc comments.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) Javadocs

@@ -4,7 +4,7 @@ date: 2022-08-04
 title: Maven wrapper and importing projects
 topics: []
 author: hs
-subtitle: Maven Wrapper, validate and importing your project
+subtitle: Maven Wrapper, validate and importing your project.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=Xatr8AZLOsE&start=177s"
 ---

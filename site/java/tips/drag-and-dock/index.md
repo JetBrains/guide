@@ -1,13 +1,13 @@
 ---
 date: 2021-01-08
-title: Drag and Dock Editor tabs
+title: Drag and Dock Editor Tabs
 topics:
   - interface
   - java
   - kotlin
   - tricks
 author: hs
-subtitle: You can move editor tabs around as required
+subtitle: You can move editor tabs around as required to suit your needs.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/QK_5IBkBMJQ"
 ---

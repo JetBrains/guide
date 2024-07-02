@@ -6,8 +6,7 @@ topics:
   - testing
 author: tg
 subtitle: >-
-  Often we want to test the same set of criteria with different sets of data.
-  Data pipes is one mechanism to do this.
+  Often we want to test the same set of criteria with different sets of data. Data pipes is one mechanism to do this.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=829"
 ---

@@ -5,7 +5,7 @@ topics:
   - java
   - refactoring
 author: hs
-subtitle: Extract a value to a constant
+subtitle: Extract a value to a constant.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) IntelliJ IDEA. Everyday Refactorings

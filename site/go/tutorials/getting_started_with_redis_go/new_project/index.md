@@ -7,7 +7,7 @@ topics:
   - databases
   - redis
 author: cb
-subtitle: From Concept to Code - Crafting Your Project's Foundation
+subtitle: From Concept to Code - Crafting Your Project's Foundation.
 thumbnail: ./thumbnail.png
 ---
 

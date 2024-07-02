@@ -1,14 +1,13 @@
 ---
 date: 2021-05-10
-title: Use a lightweight inspection profile on commit
+title: Lightweight Inspection Profile on Commit
 topics:
   - inspections
   - java
   - vcs
 author: tg
 subtitle: >-
-  Fully customise the checks you must perform before you commit your changes to
-  version control
+  Fully customise the checks you must perform before you commit your changes to version control.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Configure profiles

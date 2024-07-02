@@ -4,7 +4,7 @@ title: Notifications
 topics:
   - tricks
 author: md
-subtitle: Notifications tool window
+subtitle: Use the Notifications tool window to see what's happening with your project.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Notifications

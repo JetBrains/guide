@@ -5,8 +5,7 @@ title: Working together
 topics: []
 author: hs
 subtitle: >-
-  Pairing with another is a great way to show off your skills and help others be
-  awesome
+  Pairing with another is a great way to show off your skills and help others be awesome.
 thumbnail: ./thumbnail.png
 ---
 

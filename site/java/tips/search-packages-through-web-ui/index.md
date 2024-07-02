@@ -4,7 +4,7 @@ title: Search Packages though Web UI
 topics:
   - packagesearch
 author: sf
-subtitle: Finding packages without the need for an IDE
+subtitle: You can find the packages you need without an IDE.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/0220aPv5ruI"
 ---

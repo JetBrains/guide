@@ -4,7 +4,7 @@ date: 2022-11-08
 title: SQL Commands
 topics: []
 author: hs
-subtitle: SQL commands and SQL injection
+subtitle: SQL commands and SQL injection.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=KgXq2UBNEhA&start=610s"
 ---

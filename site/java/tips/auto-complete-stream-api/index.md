@@ -6,7 +6,7 @@ topics:
   - java
   - tricks
 author: hs
-subtitle: IntelliJ IDEA can add the stream() call for us
+subtitle: IntelliJ IDEA can add the stream() call meaning less typing for you.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Good Old Stream API - JetBrains Technology Day for Java

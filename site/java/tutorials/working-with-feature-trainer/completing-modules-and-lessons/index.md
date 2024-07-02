@@ -4,10 +4,7 @@ date: 2021-04-11
 title: Modules and Lessons
 topics: []
 author: hs
-subtitle: >-
-  Modules are logical groupings of lessons. Each lesson can be completed in any
-  order and restarted as many times are you like. Lessons will help you to
-  associate actions and keyboard shortcuts with functionality in the IDE.
+subtitle: Lessons will help you to associate actions and keyboard shortcuts with functionality in the IDE.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/gY7Ei3tQ9q0"
 ---

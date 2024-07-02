@@ -4,7 +4,7 @@ date: 2022-11-13
 title: How to Move your Cursor
 topics: []
 author: hs
-subtitle: Drawing and cursor
+subtitle: Drawing and cursor.
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=HwPjeb2xnEo&start=503s"
 ---

@@ -6,7 +6,7 @@ topics:
   - git
   - vcs
 author: md
-subtitle: Making and committing our changes
+subtitle: Making and committing our changes.
 thumbnail: ./thumbnail.png
 ---
 

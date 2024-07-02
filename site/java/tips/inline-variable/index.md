@@ -5,7 +5,7 @@ topics:
   - java
   - refactoring
 author: md
-subtitle: Inline a variable in your code
+subtitle: Sometimes inlining a variable can make your code more readable.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (video) Inline Method Refactoring in IntelliJ IDEA

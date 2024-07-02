@@ -5,8 +5,7 @@ title: Creating your Spring Controller
 topics: []
 author: hs
 subtitle: >-
-  Using the IntelliJ IDEA New Project Wizard to create your Spring  Controller
-  and select dependencies.
+  Using the IntelliJ IDEA New Project Wizard to create your Spring Controller and select dependencies.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/wC6NiR8eKHE"
 ---

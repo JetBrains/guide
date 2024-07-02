@@ -4,7 +4,7 @@ date: 2022-03-30
 title: Updating Dependencies
 topics: []
 author: hs
-subtitle: Modifying your `pom.xml` file to use jakarta dependencies
+subtitle: Modifying your `pom.xml` file to use jakarta dependencies.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/mukr2Q_zBm4?start=307"
 ---

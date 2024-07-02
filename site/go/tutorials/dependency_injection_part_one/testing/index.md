@@ -5,7 +5,7 @@ title: "Testing"
 topics:
   - go
 author: iu
-subtitle: Strategies for Effective Code Testing and Maintenance
+subtitle: Strategies for Effective Code Testing and Maintenance.
 thumbnail: ./thumbnail.png
 ---
 

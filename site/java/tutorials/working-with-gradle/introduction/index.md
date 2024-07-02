@@ -4,7 +4,7 @@ date: 2021-05-14
 title: Introduction
 topics: []
 author: tg
-subtitle: Introduction to working with Gradle and Gradle projects in IntelliJ IDEA
+subtitle: Introduction to working with Gradle and Gradle projects in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

@@ -1,14 +1,13 @@
 ---
 date: 2022-04-20
-title: In editor doc rendering
+title: In Editor Doc Rendering
 topics:
   - editing
   - interface
   - java
 author: hs
 subtitle: >-
-  You can render Javadocs directly in the editor including HTML tags, images and
-  links.
+  You can render Javadocs directly in the editor including HTML tags, images and links.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) Javadocs

@@ -5,7 +5,7 @@ topics:
   - java
   - kotlin
 author: md
-subtitle: Find a specific name or string in your file
+subtitle: Find a specific name or string in your file.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Find tool window

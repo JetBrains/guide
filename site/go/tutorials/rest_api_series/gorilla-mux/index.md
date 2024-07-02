@@ -4,7 +4,7 @@ date: 2023-07-25
 title: Go REST Guide. gorilla/mux Router
 author: svk
 subtitle: >-
-  The second part of this series demonstrates how to use a router for improved
+  The second part of this series demonstrates how to use a router for improved.
   handling of requests when building REST APIs.
 thumbnail: ./thumbnail.png
 topics:

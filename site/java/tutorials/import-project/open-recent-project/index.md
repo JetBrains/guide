@@ -4,7 +4,7 @@ title: Open recent project
 topics:
   - tricks
 author: md
-subtitle: Opening a recent project in IntelliJ IDEA
+subtitle: Opening a recent project in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

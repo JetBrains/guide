@@ -6,7 +6,7 @@ topics:
   - gradle
   - testing
 author: tg
-subtitle: Add Spock framework dependencies to the project
+subtitle: Add Spock framework dependencies to the project.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/i5Qu3qYOfsM?start=75"
 ---

@@ -9,7 +9,7 @@ topics:
   - packagesearch
   - security
 author: md
-subtitle: View vulnerable dependencies in the Vulnerable Dependencies tool window
+subtitle: View vulnerable dependencies in the Vulnerable Dependencies tool window.
 thumbnail: ./thumbnail.png
 ---
 

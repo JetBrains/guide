@@ -4,7 +4,7 @@ date: 2022-08-12
 title: From the UI
 topics: []
 author: md
-subtitle: Using Git interactive rebase in the UI
+subtitle: Using Git interactive rebase in the UI.
 thumbnail: ./thumbnail.png
 ---
 

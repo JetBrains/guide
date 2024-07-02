@@ -5,7 +5,7 @@ topics:
   - packagesearch
   - tricks
 author: md
-subtitle: See relevant information about your dependencies
+subtitle: See relevant information about your dependencies.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Package Search

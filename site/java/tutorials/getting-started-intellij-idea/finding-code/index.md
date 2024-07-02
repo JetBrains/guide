@@ -5,8 +5,7 @@ title: Finding code
 topics: []
 author: hs
 subtitle: >-
-  We often need to find something in our project and there are several ways to
-  achieve that depending on the use case.
+  We often need to find something in our project and there are several ways to achieve that depending on the use case.
 thumbnail: ./thumbnail.png
 ---
 

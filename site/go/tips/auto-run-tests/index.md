@@ -6,8 +6,7 @@ topics:
   - testing
 author: dlsniper
 subtitle: >-
-  Get into testing mode by telling GoLand to automatically re-run tests as you
-  type.
+  Get into testing mode by telling GoLand to automatically re-run tests as you type.
 seealso:
   - title: (documentation) GoLand Help - Test Runner Tab
     href: "https://www.jetbrains.com/help/go/test-runner-tab.html#Test_Runner_Tab.xml"

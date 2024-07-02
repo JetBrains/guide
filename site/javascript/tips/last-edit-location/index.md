@@ -1,7 +1,7 @@
 ---
 date: 2023-01-27
 title: Navigate to the Last Edited Location
-subtitle: How to navigate to your last edit in WebStorm.
+subtitle: You can go to the place you were editing previously with one keyboard shortcut.
 topics:
   - navigation
 author: er

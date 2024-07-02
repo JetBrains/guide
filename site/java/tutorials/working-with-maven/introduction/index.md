@@ -4,7 +4,7 @@ date: 2021-08-11
 title: Introduction
 topics: []
 author: tg
-subtitle: Introduction to working with Maven and Maven projects in IntelliJ IDEA
+subtitle: Introduction to working with Maven and Maven projects in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 

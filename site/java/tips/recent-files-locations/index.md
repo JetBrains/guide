@@ -6,7 +6,7 @@ topics:
   - navigation
   - tricks
 author: md
-subtitle: Quickly navigate around your recent files & locations
+subtitle: Quickly navigate around your recent files & locations to stay in your current working context.
 thumbnail: ./thumbnail.png
 seealso:
   - title: "(video) IntelliJ IDEA Pro Tips: Recent Files and Recent Locations"
