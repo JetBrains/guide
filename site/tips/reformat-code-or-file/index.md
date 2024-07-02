@@ -19,7 +19,7 @@ obsoletes:
 video: ./tip.webm
 callToAction:
   url: "https://www.jetbrains.com/guide/java/tutorials/reformatting-code/introduction/"
-  message: Check out the in depth reformatting tutorial for IntelliJ IDEA"
+  message: Check out the in depth reformatting tutorial for IntelliJ IDEA
   title: "Want to learn more?"
 ---
 
