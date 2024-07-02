@@ -1,3 +1,10 @@
 {
-	"channel": "/java/"
+	"channel": "/java/",
+	"callToAction": {
+		"title": "Interested in Java Development?",
+		"url": "https://jb.gg/javaguide",
+		"action": "Learn More",
+		"image": "/tags/java/duke.png",
+		"message": "Java developers love <strong>JetBrains IntelliJ IDEA</strong> and we think you will too. Check it out!"
+	}
 }

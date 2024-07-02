@@ -1,4 +1,11 @@
 {
 	"resourceType": "page",
-	"layout": "resources/page/PageLayout.11ty.tsx"
+	"layout": "resources/page/PageLayout.11ty.tsx",
+	"callToAction": {
+		"title": "Interested in Java Development?",
+		"url": "https://www.jetbrains.com/",
+		"action": "Learn More",
+		"image": "/assets/jetbrains-simple.svg",
+		"message": "Java developers love <strong>JetBrains IntelliJ IDEA</strong> and we think you will too. Check it out!"
+	}
 }

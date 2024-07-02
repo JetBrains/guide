@@ -2,7 +2,7 @@
 	"channel": "/dotnet/",
 	"callToAction": {
 		"title": "Interested in .NET Development?",
-		"url": "https://jetbrains.com/dotnet/",
+		"url": "https://jb.gg/dnguide",
 		"action": "Learn More",
 		"image": "/dotnet/technologies/csharp/csharp-logo.svg",
 		"message": ".NET developers love <strong>JetBrains dotUltimate</strong> and we think you will too. Check it out!"

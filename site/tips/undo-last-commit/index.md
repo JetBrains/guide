@@ -19,6 +19,11 @@ obsoletes:
   - /go/tips/undo-last-commit/
   - /python/tips/undo-last-commit/
   - /javascript/tips/undo-last-commit/
+callToAction:
+  url: "https://www.jetbrains.com/guide/tips/reword-commit-message/"
+  title: "Want to learn more about Git?"
+  message: "Learn how to edit a commit message - it's not too late!"
+  image: "/tags/git/git.png"
 ---
 
 First go to the Git tool window and make sure you’re on the log tab.
@@ -73,3 +78,5 @@ That commit is…gone! We’re back to where we were before the commit.
 What would this have been like from the command line?
 Let’s take a look at the Git tool’s Console tab, to see behind the scenes.
 There it is, the command that we would have had to type, from the command line.
+
+{% cta %}

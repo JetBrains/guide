@@ -17,6 +17,10 @@ obsoletes:
   - /java/tips/reformat-code-or-file/
   - /java/tips/reformat-code/
 video: ./tip.webm
+callToAction:
+  url: "https://www.jetbrains.com/guide/java/tutorials/reformatting-code/introduction/"
+  message: Check out the in depth reformatting tutorial for IntelliJ IDEA"
+  title: "Want to learn more?"
 ---
 
 ## The Problem
@@ -42,3 +46,5 @@ You can reformat code at the directory level too! Invoke your Project tool windo
 Lastly, there are additional settings you can use for reformatting your code which you can access by invoking the "Reformat Code Dialog" <kbd>⌘⌥⇧L</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+L</kbd> (Windows/Linux). The options here will vary depending on which type of code you're working with so try it out and see what you can learn!
 
 ![reformat-options.png](reformat-options.png)
+
+{% cta %}

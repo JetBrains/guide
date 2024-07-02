@@ -6,6 +6,11 @@ topics: []
 author: tg
 subtitle: Shortcuts used in the tutorial.
 thumbnail: ./thumbnail.png
+callToAction:
+  url: "/java/tutorials/working-with-gradle"
+  title: "Want to learn about other build tools?"
+  message: "Check out this in depth tutorial for Gradle"
+  image: "/tags/gradle/gradle-elephant.svg"
 ---
 
 In this tutorial we saw an overview of the [support for Maven projects](https://www.jetbrains.com/help/idea/maven-support.html) in IntelliJ IDEA, and some tips for working effectively with them.
@@ -28,3 +33,5 @@ There are links to more information on this tutorial's [introduction](../introdu
 
 - [(video) Working with Maven in IntelliJ IDEA](https://www.youtube.com/watch?v=pt3uB0sd5kY)
 - [(video) Using Maven in IntelliJ IDEA](https://www.youtube.com/watch?v=D1sRK8JLCQ4)
+
+{% cta %}

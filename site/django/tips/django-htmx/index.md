@@ -22,6 +22,11 @@ thumbnail: ./thumbnail.png
 video: "https://youtube.com/embed/-Mn9z8BIlbo"
 obsoletes:
   - /python/tips/django-htmx/
+callToAction:
+  url: "https://blog.jetbrains.com/pycharm/2023/09/building-apis-with-django-rest-framework/"
+  title: "Want to learn more?"
+  message: "Check out our blog post for building APIs with Django REST Framework"
+  image: "/tags/django/django-plain.svg"
 ---
 
 [django-debug-toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/installation.html) is telling you your "DOM loading" is slow...
@@ -73,3 +78,5 @@ When your DOM takes too long to load...
 
 - Don't load everything at once!
 - Use htmx to load more elements _once they're needed_.
+
+{% cta %}
