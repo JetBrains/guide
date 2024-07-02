@@ -8,9 +8,6 @@ topics:
 author: hs
 subtitle: Reformat a specific piece of code or the whole file according to your preferences.
 thumbnail: ./thumbnail.png
-seealso:
-  - title: Reformat and Rearrange Code - Tutorial
-    href: "https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html"
 obsoletes:
   - /python/tips/reformat-code/
   - /go/tips/reformat-code/
@@ -19,7 +16,7 @@ obsoletes:
 video: ./tip.webm
 callToAction:
   url: "https://www.jetbrains.com/guide/java/tutorials/reformatting-code/introduction/"
-  message: Check out the in depth reformatting tutorial for IntelliJ IDEA
+  message: "Check out the in depth reformatting tutorial for IntelliJ IDEA"
   title: "Want to learn more?"
 ---
 
