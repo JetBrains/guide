@@ -70,7 +70,7 @@ def test_construction():
     assert Player()
 ```
 
-Remember that PyCharm can help you [generate the import of `Player` as you type](../../../tips/generate-imports-while-typing/). You don't need to stop your flow, go to the top, and write the import. Instead, type `Pla` and use <kbd>Ctrl+Space+Space</kbd> to autocomplete _and_ add the import line at the top, in the correctly-sorted location, combined with any existing import of the module.
+Remember that PyCharm can help you [generate the import of `Player` as you type](../../../../python/tips/generate-imports-while-typing). You don't need to stop your flow, go to the top, and write the import. Instead, type `Pla` and use <kbd>Ctrl+Space+Space</kbd> to autocomplete _and_ add the import line at the top, in the correctly-sorted location, combined with any existing import of the module.
 
 Let's run everything in the file (currently one test) by right-clicking in the editor and choosing _Run Python tests in test..._.
 Our test passes again:
