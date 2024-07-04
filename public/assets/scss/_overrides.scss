@@ -34,19 +34,38 @@ footer.pagefooter svg {
   margin-top: auto
 }
 .has-box-outline {
-  outline: 1px solid $grey-lighter;
+  outline: 1px solid lighten($grey-light, 15%);
 }
 .has-box-hover {
   &:hover {
     outline: 1px solid $grey-light;
   }
 }
-.has-box-hover-effect {
-  &:hover {
-    outline: 1px solid $grey-light;
-    background-color: hsla(0,0%,100%,.05) !important;
+
+.columns.homepage-topics {
+  border-radius: $radius-large * 2;
+  padding: $notification-padding;
+  background-color: #190E3D;
+
+  .column {
+    border: 1px solid #7668F8;
+    border-radius: $radius-large * 2;
+    background: rgb(66,38,162);
+    background: linear-gradient(90deg, rgba(66,38,162,1) 0%, rgba(45,25,109,1) 100%);
+
+    figure {
+      border-radius: $radius-large;
+      overflow: hidden;
+    }
+
+    &:hover {
+      outline: 2px solid #7668F8;
+      background: rgb(77,44,190);
+      background: linear-gradient(90deg, rgba(77,44,190,1) 0%, rgba(56,32,138,1) 100%);
+    }
   }
 }
+
 .is-16by9 i { /* ResourceCard with icon */
   bottom: auto;
   left: 0;
@@ -190,8 +209,21 @@ a.link-external:after {
 .has-glow-purple {
   background: radial-gradient(circle, rgb(107, 87, 255) 12%, rgba(107, 87, 255, 0)) no-repeat border-box border-box rgb(40, 184, 160);
 }
+
+@property --glow-purple-transparent-percentage {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 65%;
+}
+
+@keyframes glow-purple-transparent-percentage-animation {
+  to {
+    --glow-purple-transparent-percentage: 40%;
+  }
+}
 .has-glow-purple-transparent {
-  background: radial-gradient(at top right, rgb(107, 87, 255) 5%, rgba(0, 0, 0, 0) 65%);
+  background: radial-gradient(at top right, rgb(80, 40, 208) 5%, rgba(0, 0, 0, 0) var(--glow-purple-transparent-percentage));
+  animation: glow-purple-transparent-percentage-animation 8s ease-in-out infinite alternate;
 }
 
 .has-gradient-magenta {

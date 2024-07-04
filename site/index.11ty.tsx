@@ -46,25 +46,24 @@ export default class IndexPage {
 
 		return (
 			<BaseLayout {...data}>
-				<section class="section has-background-grey-darker has-glow-purple-transparent">
+				<section class="section has-background-black has-glow-purple-transparent">
 					<div class="container">
-						<div class="columns is-multiline">
-							<div class="column is-8">
+						<div class="columns is-multiline mt-6">
+							<div class="column is-6">
 								<h1 class="mt-2 mb-4 title is-size-1 is-size-2-mobile has-text-weight-semibold has-text-white">
-									Welcome to the JetBrains Guide
+									JetBrains Guide
 								</h1>
-								<p class="subtitle is-size-2 is-size-3-mobile has-text-white">
-									Learn about technologies and become
-									<br />a badass developer.
+								<p class="subtitle is-size-3 has-text-white">
+									Learn about technologies and become a badass developer.
 								</p>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<section class="section has-background-grey-darker">
+				<section class="section has-background-black">
 					<div class="container">
-						<div class="columns is-multiline is-centered">
+						<div class="columns is-multiline is-centered homepage-topics">
 							{channels
 								.filter(
 									(resource: Resource): resource is Channel =>
@@ -72,16 +71,13 @@ export default class IndexPage {
 								)
 								.map((channel) => {
 									return (
-										<div class="column has-background-grey-darker has-box-outline m-4 is-5 is-2-desktop has-box-hover-effect has-text-centered has-position-relative box">
+										<div class="column has-box-outline m-4 is-5 is-2-desktop has-text-centered has-position-relative box">
 											<a
 												href={channel.url}
 												aria-label={channel.title}
 												class="is-size-5 has-text-white title is-stretched-link"
 											>
-												<figure
-													class="image mb-4"
-													style="border-radius: 6px; overflow:hidden"
-												>
+												<figure class="image mb-4">
 													<img src={channel.logo} alt="" />
 												</figure>
 												{channel.title}
