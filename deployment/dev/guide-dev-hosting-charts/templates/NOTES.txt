@@ -1,0 +1,3 @@
+Hello, JetBrains Guide (Development Guide) is successfully installed.
+
+echo "Visit https://<subdomain>.jbguidedev.labs.jb.gg and replace subdomain with branch name."
