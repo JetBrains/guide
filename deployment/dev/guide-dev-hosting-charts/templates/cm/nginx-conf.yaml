@@ -1,0 +1,42 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{.Release.Name}}-nginx-conf-cm
+  labels:
+    env: {{.Values.env}}
+data:
+  default.conf: |
+    server {
+        listen 8080;
+        server_name ~^(?<subdomain>[^.]+)\.jb-guide-dev\.labs\.jb\.gg$;
+
+        resolver 8.8.8.8;  # Use Google's public DNS server
+        resolver_timeout 5s;  # Timeout for DNS resolution
+
+            if ($request_uri ~* ^/guide/) {
+                    rewrite ^/guide/(.*)$ /$subdomain/guide/$1 break;
+            }
+
+        location = /info/health-check {
+          add_header Content-Type text/plain;
+          return 200 "OK";
+        }
+
+        location / {
+
+             if ($host ~* ^(?<subdomain>.+)\.jb-guide-dev\.labs\.jb\.gg$) {
+            rewrite ^/$ /$subdomain/guide/index.html break;
+        }
+
+            # Handle trailing slash redirection to add index.html
+            rewrite ^(.*)/$ $1/index.html last;
+
+            proxy_pass https://jb-guide-prod-guide-static-atsaxr.storage.googleapis.com;
+            proxy_set_header Host jb-guide-prod-guide-static-atsaxr.storage.googleapis.com;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+        }
+
+    }
+

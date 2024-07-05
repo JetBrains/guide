@@ -1,0 +1,46 @@
+replicaCount: 1
+env: "dev"
+
+image:
+  repository: registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-dev-hosting-nginx
+  pullPolicy: Always
+  tag: "latest"
+
+imagePullSecrets: [{ name: space-registry-jetbrains-guide }]
+
+healthCheck: "/info/health-check"
+
+containerPort: 8080
+
+podSecurityContext:
+  runAsNonRoot: true
+  runAsUser: 101
+  runAsGroup: 101
+  fsGroup: 101
+
+securityContext:
+  allowPrivilegeEscalation: false
+  capabilities:
+    drop:
+      - ALL
+      - NET_RAW
+
+resources:
+  requests:
+    memory: "256Mi"
+    cpu: "250m"
+  limits:
+    memory: "512Mi"
+    cpu: "500m"
+
+#Service
+service:
+  port: 5005
+  nodePort: 30010
+
+#Ingress
+hostName: "*.jb-guide-dev.labs.jb.gg"
+certManagerClusterIssuer: "letsencrypt-prod"
+ingressClassName: nginx
+tlsSecretName: "jbguidedev"
+ingressRequired: true

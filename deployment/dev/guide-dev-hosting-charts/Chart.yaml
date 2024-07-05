@@ -1,0 +1,6 @@
+apiVersion: v2
+name: guide-dev-hosting-charts
+description: Helm Chart for JetBrains Guide (Development Hosting)
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
