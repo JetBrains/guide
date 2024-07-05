@@ -13,20 +13,19 @@ data:
         resolver 8.8.8.8;  # Use Google's public DNS server
         resolver_timeout 5s;  # Timeout for DNS resolution
 
-            if ($request_uri ~* ^/guide/) {
-                    rewrite ^/guide/(.*)$ /$subdomain/guide/$1 break;
-            }
+        if ($request_uri ~* ^/guide/) {
+            rewrite ^/guide/(.*)$ /$subdomain/guide/$1 break;
+        }
 
         location = /info/health-check {
-          add_header Content-Type text/plain;
-          return 200 "OK";
+            add_header Content-Type text/plain;
+            return 200 "OK";
         }
 
         location / {
-
-             if ($host ~* ^(?<subdomain>.+)\.jb-guide-dev\.labs\.jb\.gg$) {
-            rewrite ^/$ /$subdomain/guide/index.html break;
-        }
+            if ($host ~* ^(?<subdomain>.+)\.jb-guide-dev\.labs\.jb\.gg$) {
+                rewrite ^/$ /$subdomain/guide/index.html break;
+            }
 
             # Handle trailing slash redirection to add index.html
             rewrite ^(.*)/$ $1/index.html last;
@@ -36,6 +35,9 @@ data:
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
             proxy_set_header X-Forwarded-Proto $scheme;
+            
+            proxy_set_header "Connection" "";
+            proxy_http_version 1.1;
         }
 
     }
