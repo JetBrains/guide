@@ -1,5 +1,5 @@
 ---
-date: 2023-12-08
+date: 2024-07-08
 title: Extract Method
 topics:
   - java
@@ -14,7 +14,7 @@ seealso:
     href: "https://www.youtube.com/watch?v=HgWU25YwDfc"
   - title: (documentation) IntelliJ IDEA Help - Extract Method
     href: "https://www.jetbrains.com/help/idea/extract-method.html"
-video: "https://youtu.be/Wu7dzSCh42Q"
+video: "https://youtu.be/06vkeQcHd0o"
 ---
 
 Refactor code as you write it. Use **Extract Method** <kbd>⌥⌘M</kbd> (macOS) / <kbd>Ctrl+Alt+M</kbd> (Windows/Linux) to extract (part of) a method, give the new method a meaningful name and make your code easier to read and understand.
