@@ -1,5 +1,6 @@
 ## Generic
 
+<kbd>⌘\</kbd> (macOS) / <kbd>Ctrl+\</kbd> (Windows/Linux)                       - Generate Code
 <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Ins</kbd> (Windows/Linux)                      - Generate New
 <kbd>⌘⌥⏎</kbd> (macOS) / <kbd>Ctrl+Alt+Enter</kbd> (Windows/Linux)              - Start New Line Before Current
 <kbd>⇧⏎</kbd> (macOS) / <kbd>Shift+Enter</kbd> (Windows/Linux)                  - Start New Line
@@ -159,8 +160,10 @@
 <kbd>⌃⇧Y</kbd> (macOS) / <kbd>Ctrl+Shift+Y</kbd> (Windows/Linux)                - Start Code With Me session
 <kbd>⌃V</kbd> (macOS) / <kbd>Alt+`</kbd> (Windows/Linux)                        - VCS Popup
 <kbd>⌘D</kbd> (macOS) / <kbd>Ctrl+D</kbd> (Windows/Linux)                       - Show Diff
+<kbd>⌘⌥⇧I</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+I</kbd> (Windows/Linux)           - Run Inspection by Name
 
-<kbd>^+mnemonic</kbd> (macOS) / <kbd>Ctrl+mnemonic</kbd> (Windows/Linux)        
+<kbd>⌃⇧+mnemonic</kbd> (macOS) / <kbd>Ctrl+Shift+mnemonic</kbd> (Windows/Linux) - Toggle Mnemonic Bookmark   
+<kbd>^+mnemonic</kbd> (macOS) / <kbd>Ctrl+mnemonic</kbd> (Windows/Linux)        - Go to Mnemonic Bookmark   
 <kbd>⌘</kbd> (macOS) / <kbd>Ctrl</kbd> (Windows/Linux)
 <kbd>⌘</kbd> (macOS) / <kbd>Alt</kbd> (Windows/Linux)
 <kbd>+</kbd> (macOS) / <kbd>Plus</kbd> (Windows/Linux)

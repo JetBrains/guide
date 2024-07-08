@@ -1,5 +1,5 @@
 ---
-date: 2023-12-05
+date: 2024-07-09
 title: Extend Selection
 topics:
   - editing
@@ -14,7 +14,7 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Select code constructs
     href: >-
       https://www.jetbrains.com/help/idea/working-with-source-code.html#editor_code_selection
-video: "https://youtu.be/KFqqOP89XJA"
+video: "https://youtu.be/-u1DuJi8mXU"
 ---
 
 Press <kbd>⌥↑</kbd> (macOS) / <kbd>Ctrl+W</kbd> (Windows/Linux), to extend your selection of code by scope. To reduce the scope, use <kbd>⌥↓</kbd> (macOS) / <kbd>Ctrl+Shift+W</kbd> (Windows/Linux).
