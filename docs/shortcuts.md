@@ -161,6 +161,8 @@
 <kbd>⌃V</kbd> (macOS) / <kbd>Alt+`</kbd> (Windows/Linux)                        - VCS Popup
 <kbd>⌘D</kbd> (macOS) / <kbd>Ctrl+D</kbd> (Windows/Linux)                       - Show Diff
 <kbd>⌘⌥⇧I</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+I</kbd> (Windows/Linux)           - Run Inspection by Name
+<kbd>⌥\</kbd> (macOS) / <kbd>Alt+\</kbd> (Windows/Linux)                        - Multi-line Code Completion
+
 
 <kbd>⌃⇧+mnemonic</kbd> (macOS) / <kbd>Ctrl+Shift+mnemonic</kbd> (Windows/Linux) - Toggle Mnemonic Bookmark   
 <kbd>^+mnemonic</kbd> (macOS) / <kbd>Ctrl+mnemonic</kbd> (Windows/Linux)        - Go to Mnemonic Bookmark   
