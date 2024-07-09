@@ -1,10 +1,10 @@
 ---
-date: 2021-01-08
+date: 2024-07-17
 title: Create New Class
 topics:
   - editing
   - java
-author: hs
+author: md
 subtitle: Quickly add new classes to your project.
 thumbnail: ./thumbnail.png
 seealso:
@@ -15,7 +15,7 @@ seealso:
       (Tutorial)
     href: >-
       https://blog.jetbrains.com/idea/2020/04/tutorial-your-first-java-application
-video: "https://youtu.be/E7Q0U_b5nz4"
+video: "https://youtu.be/CUF75P1moOY"
 ---
 
 Press <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux), to open the Project Window and then use <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux), to generate a new file.
