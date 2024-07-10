@@ -1,6 +1,6 @@
 ---
 date: 2024-07-09
-title: Generate code
+title: Generate code with AI Assistant
 subtitle: Let AI Assistant write code for you, based on your prompts.
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Generate code in editor
