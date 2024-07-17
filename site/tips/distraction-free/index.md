@@ -1,19 +1,18 @@
 ---
-date: 2020-03-16
+date: 2024-07-17
 title: Make Your Work Environment Distraction Free
 subtitle: >-
   Need to focus on just your code? You can switch to the distraction-free or zen mode.
 topics:
   - customizing
-author: er
+author: pwe
 seealso:
   - title: Viewing modes in WebStorm
     href: "https://www.jetbrains.com/help/webstorm/ide-viewing-modes.html#"
 thumbnail: ./thumbnail.png
-animatedGif:
-  file: ./tip.webm
-  width: 600
-  height: 300
+video: ./tip.webm
+obsoletes:
+  - /javascript/tips/distraction-free/
 ---
 
 Switch to the **Distraction-free** mode with <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux) and **View Mode | Enter Distraction Free Mode** whenever you need to focus on coding – you’ll get the source code centered and all the UI elements hidden.
