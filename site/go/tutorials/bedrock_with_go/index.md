@@ -8,6 +8,7 @@ subtitle: ""
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/
+  - ./getting_started/
 topics:
   - go
   - web
