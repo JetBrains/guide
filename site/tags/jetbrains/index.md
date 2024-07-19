@@ -2,7 +2,7 @@
 title: JetBrains
 subtitle: >-
   Everything JetBrains
-logo: /assets/jetbrains-simple.svg
+logo: jetbrains-simple.svg
 website: "https://www.jetbrains.com/"
 topicType: technology
 author: hs
