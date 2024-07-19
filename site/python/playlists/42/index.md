@@ -15,7 +15,6 @@ thumbnail: ./thumbnail.png
 playlistItems:
   - /tips/find-action/
   - /tips/lean-ui/
-  - /python/tips/disable-tabs/
   - /tips/jump-to-recent-files/
   - /python/tips/navigate-to-symbol/
   - /python/tips/navigate-to-file/

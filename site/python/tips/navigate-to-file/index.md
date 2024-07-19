@@ -14,6 +14,12 @@ seealso:
       https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#tips
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/0NFMM143Y5w"
+"callToAction":
+  {
+    "title": "Interested in navigating by symbol?",
+    "url": "/python/tips/navigate-to-symbol/",
+    "message": "Navigating by symbol is a fast and effective way to browse your code base. Check it out!",
+  }
 ---
 
 Navigating your project files is a chore. Expanding folders and subfolders, scrolling, double-clicking. It breaks your flow and makes you think about administrivia.
@@ -25,3 +31,5 @@ The Navigate to File action <kbd>⌘⇧O</kbd> (macOS) / <kbd>Ctrl+Shift+N</kbd>
 Use the same hump-case "speed search" syntax to filter the listing with parts of filename fragments. Use slashes to indicate that a file should be in part of the directory structure. Click the checkbox to look outside of your project files, into your dependencies.
 
 If you want to jump to a file, Navigate to File is a speedy, non-disruptive option.
+
+{% cta %}

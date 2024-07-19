@@ -1,3 +1,10 @@
 {
-	"channel": "/python/"
+	"channel": "/python/",
+	"callToAction": {
+		"title": "Interested in Python Development?",
+		"url": "https://jb.gg/pythonguide",
+		"action": "Learn More",
+		"image": "/tags/python/thumbnail.png",
+		"message": "Python developers love <strong>JetBrains PyCharm</strong> and we think you will too. Check it out!"
+	}
 }

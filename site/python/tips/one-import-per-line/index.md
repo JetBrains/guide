@@ -17,6 +17,12 @@ seealso:
     href: "https://youtrack.jetbrains.com/issue/PY-20100"
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/XB4SnJ4XmUs"
+"callToAction":
+  {
+    "title": "Interested in optimizing your imports?",
+    "url": "/python/tips/navigate-to-symbol/optimize-imports/",
+    "message": "Keeping your imports clean and tidy is a great code readability tip. Check it out!",
+  }
 ---
 
 Writing Python code means importing stuff. Lots of code can mean lots of imports. Python is pretty picky about style, and so are you, which can mean lots of tedious manual gardening of your imports.
@@ -36,3 +42,5 @@ from project.models import User
 ```
 
 Don't forget, PyCharm can also run the Optimize Imports action, with options such as _Only VCS changed files_, across all the files in your project. Also, check out the other ways to customize import styles.
+
+{% cta %}

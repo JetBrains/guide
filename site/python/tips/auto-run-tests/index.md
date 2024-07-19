@@ -15,6 +15,13 @@ seealso:
       https://www.jetbrains.com/help/pycharm/test-runner-tab.html#Test_Runner_Tab.xml
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/4kHncS_gPX0"
+"callToAction":
+  {
+    "title": "Interested in pytest Development?",
+    "url": "https://www.jetbrains.com/guide/pytest/",
+    "image": "/tags/pytest/pytest.png",
+    "message": "Python developers love <strong>pytest</strong> and we think you will too. Check it out!",
+  }
 ---
 
 TDD, or test-driven development, means "always be testing." In fact, the best way to do this is to put your tests on autopilot.
@@ -30,3 +37,5 @@ Sometimes you find yourself racing against the IDE: "Keep typing fast before the
 This auto-run tests feature combines nicely with other "visual testing" features to help you focus and work productively. Run just one test, or just one file of tests, and turn on the auto-run. Hide passing tests or re-run failing tests, etc.
 
 One last point: this button toggle affects the current test tool window tab only. You might have pinned a run configuration tool window to be "sticky". When you run some other subset of tests, you'll get a tab, but the first is still there and still in auto-run. If tests fail, you will get a notification.
+
+{% cta %}

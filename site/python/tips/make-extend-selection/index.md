@@ -17,6 +17,12 @@ seealso:
       https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#shrink_selection
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/mvZg7TaRjCM"
+"callToAction":
+  {
+    "title": "Interested in another cool selection tip?",
+    "url": "/python/tips/wrap-selection-with-tag/",
+    "message": "You can wrap a selection with a tag to save your fingers. Check it out!",
+  }
 ---
 
 In coding, we select code and operate on it. For example, move it to another line, change its indentation, etc.
@@ -31,3 +37,5 @@ In Python code you frequently want to gradually expand a selection from where th
 Without using the mouse.
 
 Finally, PyCharm also [supports multiselection](https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#multiselection) aka multiple carets.
+
+{% cta %}
