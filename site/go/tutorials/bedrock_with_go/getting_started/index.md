@@ -70,7 +70,7 @@ You can see the below image, access key and secret access key have been generate
 Now, we need to configure AWS CLI to use the access keys,
 which will be helpful when we are interacting our Go application with AWS SDK.
 
-Open Terminal and then type **aws configure**.
+Open Terminal and then type **aws configure**. After that, provide your access key id and secret access key.
 
 ![step13](./images/step13.png)
 

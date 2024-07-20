@@ -2,13 +2,14 @@
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2024-07-18
-title: AWS Bedrock with Go
+title: AI Assistant with AWS Bedrock
 author: mm
 subtitle: ""
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/
   - ./getting_started/
+  - ./model_access/
 topics:
   - go
   - web
