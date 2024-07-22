@@ -13,22 +13,36 @@ data:
         resolver 8.8.8.8;  # Use Google's public DNS server
         resolver_timeout 5s;  # Timeout for DNS resolution
 
-        if ($request_uri ~* ^/guide/) {
-            rewrite ^/guide/(.*)$ /$subdomain/guide/$1 break;
-        }
-
-        location = /info/health-check {
-            add_header Content-Type text/plain;
-            return 200 "OK";
+        location = /info/health-check/ {
+          add_header Content-Type text/plain;
+          return 200 "OK";
         }
 
         location / {
-            if ($host ~* ^(?<subdomain>.+)\.jb-guide-dev\.labs\.jb\.gg$) {
-                rewrite ^/$ /$subdomain/guide/index.html break;
+
+          # Handle /guide/ specifically
+            location = /guide/ {
+            rewrite ^ /$subdomain/guide/index.html last;
+          }
+
+          # Handle /guide without trailing slash
+            location = /guide {
+            rewrite ^ /$subdomain/guide/index.html last;
+          }
+
+            # Match URLs with a trailing slash
+            if ($request_uri ~ ^/guide/(.+)/$) {
+                rewrite ^/guide/(.+)/$ /$subdomain/guide/$1/index.html last;
+            }
+            # Match URLs without a trailing slash
+            if ($request_uri ~ ^/guide/(.+)$) {
+                rewrite ^/guide/(.+)$ /$subdomain/guide/$1/index.html last;
             }
 
-            # Handle trailing slash redirection to add index.html
-            rewrite ^(.*)/$ $1/index.html last;
+            # Handle requests for files (including any file extension)
+            location ~ ^/guide/(.+\..+)$ {
+                rewrite ^/guide/(.+\..+)$ /$subdomain/guide/$1 last;
+            }
 
             proxy_pass https://jb-guide-prod-guide-static-atsaxr.storage.googleapis.com;
             proxy_set_header Host jb-guide-prod-guide-static-atsaxr.storage.googleapis.com;

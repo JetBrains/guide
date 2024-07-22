@@ -39,7 +39,7 @@ spec:
             failureThreshold: 3
             httpGet:
               port: 8080
-              path: {{.Values.healthCheck}}
+              path: {{.Values.healthCheck}}/
             initialDelaySeconds: 5
             periodSeconds: 15
             successThreshold: 1
@@ -48,7 +48,7 @@ spec:
             failureThreshold: 15
             httpGet:
               port: 8080
-              path: {{.Values.healthCheck}}
+              path: {{.Values.healthCheck}}/
             initialDelaySeconds: 5
             periodSeconds: 15
             successThreshold: 1
