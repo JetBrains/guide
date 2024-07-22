@@ -10,6 +10,8 @@ tutorialItems:
   - ./introduction/
   - ./getting_started/
   - ./model_access/
+  - ./building_backend/
+  - ./models_interaction/
 topics:
   - go
   - web
