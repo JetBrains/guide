@@ -72,13 +72,47 @@ The `Llama3Request` holds three parameters.
 
 > Read more: [Supported Inference Parameters for Meta Llama models](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-meta.html)
 
+Now, I will move to `types.go` and define an `LLM` interface with `Invoke()` and `Stream()` methods which are generic to anthropic and llama.
+
 ![step3](./images/step3.png)
+
+`LLMPrompt` is a structure that contains a `ModelWrapper` and a `prompt`.
+
+The `ModelWrapper` type is used to handle the interaction with a service named "bedrock" which wraps around the `BedrockRuntimeClient`.
+
+The `prompt` represents the input string which we receive from the user.
+
+Both `Llama` and `Anthropic` structures are embedding (a form of inheritance in Go) the `LLMPrompt` structure.
+
+```go
+type LLM interface {
+	Invoke() (string, error)
+	Stream() (*bedrockruntime.InvokeModelWithResponseStreamOutput, error)
+}
+
+type LLMPrompt struct {
+	bedrock ModelWrapper
+	prompt  string
+}
+
+type Llama struct {
+	LLMPrompt
+}
+
+type Anthropic struct {
+	LLMPrompt
+}
+```
+
+Now move to `llama.go` and create `LlamaBody` method which is part of `Llama` struct.
+
+![step4](./images/step4.png)
 
 Inside the `LlamaBody` method, an instance of the `Llama3Request` struct is created and populated with the `prompt` string, along with specified values for `MaxGenLength` and `Temperature`.
 This `Llama3Request` instance is then converted to a JSON-formatted byte array with the `json.Marshal` function.
 
 ```go
-func (wrapper ModelWrapper) LlamaBody(prompt string) []byte {
+func (wrapper Llama) LlamaBody(prompt string) []byte {
 	body, err := json.Marshal(Llama3Request{
 		Prompt:       prompt,
 		MaxGenLength: 200,
@@ -96,22 +130,22 @@ Next, I will be creating some basic utility functions and constants that will be
 
 First create a file named `common.go` under models.
 
-![step4](./images/step4.png)
+![step5](./images/step5.png)
 
 ```go
 package models
 
 const (
-	llama3        = "llama3"
-	anthropic     = "anthropic"
-	Llama3modelId = "meta.llama3-70b-instruct-v1:0"
+	llama3          = "llama3"
+	anthropic       = "anthropic"
+	Llama3modelId   = "meta.llama3-70b-instruct-v1:0"
+	claudeV3ModelID = "anthropic.claude-3-haiku-20240307-v1:0"
 )
-
 ```
 
-Next, `error.go`
+Similarly, we will also do the same for `error.go`.
 
-![step5](./images/step5.png)
+![step6](./images/step6.png)
 
 ```go
 package models
@@ -139,20 +173,23 @@ func ProcessError(err error, modelId string) {
 
 ```
 
-Resume back to `llama.go` where we will be defining our last function `InvokeLlama3`.
+Resume back to `llama.go` where we will be defining our last function `Invoke` which satisfied the `LLM` interface.
 
-![step6](./images/step6.png)
+![step7](./images/step7.png)
 
-This method takes a string argument and attempts to invoke a model in the AWS Bedrock runtime. The `prompt` string is marshalled into JSON format and included in the request. If an error occurs during the invocation, it is processed and logged. If the invocation is successful, the method unmarshals the JSON response into a `Llama3Response` struct and returns its `Generation` field.
+The function begins by invoking a model (perhaps a machine learning model) on the bedrock runtime service.
 
-The request structure for the model is prepared by `LlamaBody()` and any errors during the process are handled by `ProcessError()` function and finally the response from the model invoked is stored in the `Llama3Response` struct.
+- In running `InvokeModel`, it passes in a `TODO` context, representing a non-nil, empty `Context`.
+- `ModelId` which represents the `meta.llama3-70b-instruct-v1:0`
+- ContentType of`"application/json"`
+- The result of calling the`LlamaBody()`function with`wrapper.prompt` as its argument.
 
 ```go
-func (wrapper ModelWrapper) InvokeLlama3(prompt string) (string, error) {
-	output, err := wrapper.BedrockRuntimeClient.InvokeModel(context.TODO(), &bedrockruntime.InvokeModelInput{
+func (wrapper Llama) Invoke() (string, error) {
+	output, err := wrapper.bedrock.BedrockRuntimeClient.InvokeModel(context.TODO(), &bedrockruntime.InvokeModelInput{
 		ModelId:     aws.String(Llama3modelId),
 		ContentType: aws.String("application/json"),
-		Body:        wrapper.LlamaBody(prompt),
+		Body:        wrapper.LlamaBody(wrapper.prompt),
 	})
 
 	if err != nil {
@@ -166,11 +203,4 @@ func (wrapper ModelWrapper) InvokeLlama3(prompt string) (string, error) {
 
 	return response.Generation, nil
 }
-
 ```
-
-In this whole process the `ModelWrapper` struct which has the `BedrockRuntimeClient.InvokeModel` is used to perform actions.
-
-![step7](./images/step7.png)
-
-![step8](./images/step8.png)
