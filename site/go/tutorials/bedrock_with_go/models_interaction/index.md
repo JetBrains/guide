@@ -368,3 +368,43 @@ func StringToBool(s string) bool {
   - If streaming mode is not enabled, it treats the received message as a prompt and invokes `m.wrapper.LoadModel(modelName, string(msg))` to load the AI model and generate a response based on the prompt. The response is then sent back to the client through the Websocket connection. If any error occurs during writing the message, it logs the error and returns.
 
 ![step14](./images/step14.png)
+
+If you're following till now, make sure to update the variable from `_` to `wrapper` and click the play icon to run the application.
+
+> To run manually, type in the Terminal `go run main.go`
+
+![step15](./images/step15.png)
+
+Cool! The app is running now. Let's test it out.
+
+![step16](./images/step16.png)
+
+I am going to create a new [HTTP Client](https://www.jetbrains.com/help/go/http-client-in-product-code-editor.html#create-an-http-request-scratch-file).
+
+Right-click **goapp_genai**, point to **New**, and then click **HTTP Request**.
+
+![step17](./images/step17.png)
+
+If you are new to the HTTP Client. Don't worry, we have got you covered through examples.
+
+![step17_2](./images/step17_2.png)
+
+Add the following line to initiate WebSocket connection.
+
+```
+WEBSOCKET ws://<REPLACE_WITH_YOUR_OWN_URL>/ws/model?model=llama3&streaming=0
+```
+
+- If you have observed carefully, we are passing model as `llama3` and streaming set to `0` which sends the entire response.
+
+![step18](./images/step18.png)
+
+Punch your message in the box provided and then run the following shortcut <kbd>⌘ ⏎ (macOS) or Windows (Ctrl + Enter)</kbd>.
+
+Wait for a few seconds until we get a response from the model.
+
+![step19](./images/step19.png)
+
+Here you go! You can see below we got the response.
+
+![step20](./images/step20.png)
