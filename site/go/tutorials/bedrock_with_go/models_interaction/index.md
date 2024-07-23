@@ -9,7 +9,7 @@ topics:
   - aws
 ---
 
-In this section we will be only implementing two models. You are free to experiment with other models.
+In the upcoming section we will be only implementing two models. You are free to experiment with other models.
 
 - Llama3
 - Anthropic
@@ -31,9 +31,9 @@ This is what Meta has to say about LLama3.
 
 > With Llama 3, we set out to build the best open models that are on par with the best proprietary models available today. We wanted to address developer feedback to increase the overall helpfulness of Llama 3 and are doing so while continuing to play a leading role on responsible use and deployment of LLMs. We are embracing the open source ethos of releasing early and often to enable the community to get access to these models while they are still in development. The text-based models we are releasing today are the first in the Llama 3 collection of models. Our goal in the near future is to make Llama 3 multilingual and multimodal, have longer context, and continue to improve overall performance across core LLM capabilities such as reasoning and coding.
 
-- Read more: [Introducing Meta Llama 3 - The most capable openly available LLM to date](https://ai.meta.com/blog/meta-llama-3/)
+- Read more: [Introducing Meta Llama 3 — The most capable openly available LLM to date](https://ai.meta.com/blog/meta-llama-3/)
 
-### Non-Streaming
+## Non-Streaming
 
 Let's first begin by implementing the non-streaming way to interact with Llama3.
 
@@ -408,3 +408,7 @@ Wait for a few seconds until we get a response from the model.
 Here you go! You can see below we got the response.
 
 ![step20](./images/step20.png)
+
+## Streaming
+
+We have successfully completed the non-streaming part. Now, it's time that I show how to implement streaming mode, which improves the performance of response delivery.
