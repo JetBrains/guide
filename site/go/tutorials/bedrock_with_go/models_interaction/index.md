@@ -204,3 +204,167 @@ func (wrapper Llama) Invoke() (string, error) {
 	return response.Generation, nil
 }
 ```
+
+### Adding WebSockets
+
+We are done with the base implementation. Now, let's move forward and tie the logic by integrating websocket.
+
+Go to `main.go` and add the following lines.
+
+```go
+var websocketUpgrade = websocket.Upgrader{
+	ReadBufferSize:  1024,
+	WriteBufferSize: 1024,
+	CheckOrigin: func(r *http.Request) bool {
+		return true // not recommended in production
+	},
+}
+```
+
+> Before going ahead, you need to be sure [Gorilla Websocket](https://github.com/gorilla/websocket) is installed in your machine.
+
+This code snippet is creating a `websocket.Upgrader` struct, which is an HTTP handler setup to upgrade HTTP connections to the WebSocket protocol. The WebSocket protocol allows two-way communication between a client (usually a web browser) and a server over a persistent connection.
+
+- `ReadBufferSize`: 1024, `WriteBufferSize`: 1024 - These two options set the buffer sizes for reading and writing respectively. These sizes are in bytes and determine how much data can be read/written to the WebSocket in a single operation.
+
+- `CheckOrigin`: The function is a check to protect against malicious behavior. An origin policy is applied here which checks the 'Origin' HTTP Header in the WebSocket upgrade request to verify that it has come from a trusted source. This specific function always returns `true`, meaning every request is considered trusted. As it is noted in the comment, this is not recommended in production because it carries the risk that an attacker could sneak in unwanted WebSocket connections from anywhere.
+
+> In a production environment, this `CheckOrigin function would need to be replaced with something that more thoroughly verifies the origin of the request, perhaps by checking the domain name against a list of trusted sources.
+
+![step8](./images/step8.png)
+
+Moving ahead, we are going to define our HTTP handler. Make sure to import all necessary modules (`log`, `log/slog` and `net/http`).
+
+```go
+
+http.HandleFunc("/ws/model", wrapper.executeModel)
+
+slog.Info("Server Listening on", "port", "8080")
+
+log.Fatal(http.ListenAndServe(":8080", nil))
+```
+
+`http.HandleFunc("/ws/model", wrapper.executeModel)` - This line tells the http package to add a function to call when the `"/ws/model"` URL is requested. The `executeModel` function of wrapper (which should be `modelWrapper`) is used as the handler.
+
+![step9](./images/step9.png)
+
+Now, let's implement the `executeModel` function. But before that I am going to create a generic function which will load the model dynamically based on the request.
+
+Under models, create a new file `load.go`.
+
+![step10](./images/step10.png)
+
+The function `LoadModel` takes in a model's name and a prompt as arguments and returns either an error message, if model execution encounters error, or a response from the model.
+
+The `LoadModel` method uses a switch statement to perform different operations based on the provided `modelName`.
+
+- It checks if the modelName is `"llama3"`. If so, it creates a `Llama` struct and invokes it. Here the `Llama` and `LLMPrompt` structs seem part of an implementation to interact with a language model named `"llama3"`. If an error occurs during the invoking process, it returns an empty string and the error. Otherwise, it returns the response from the Llama `Invoke` function.
+- If the modelName is `"anthropic"`, as of now it doesn't do anything. But we will implement this feature later.
+
+```go
+func (wrapper ModelWrapper) LoadModel(modelName string, prompt string) (string, error) {
+	switch modelName {
+	case llama3:
+		llama := Llama{LLMPrompt{wrapper, prompt}}
+		response, err := llama.Invoke()
+		if err != nil {
+			return "", err
+		}
+		return response, nil
+	case anthropic:
+		// DO NOTHING
+	default:
+		return "", errors.New("No such model: " + modelName)
+	}
+	return "", errors.New("No such model: " + modelName)
+}
+```
+
+Next, we will create a new file under the project root and name it `controller.go` and `utils.go`.
+
+Switch to `controller.go`, where we will first start implementing the `executeModel` handler function.
+
+![step11](./images/step11.png)
+
+The function `executeModel` is a method of a struct `MLWrapper`.
+
+Let's break it down.
+
+- It first retrieves two query parameters from the HTTP request: `model` and `streaming`. `Model` is a string representing the name of the model the client wishes to interact with. `Streaming` is a string that indicates whether the client wants a continuous stream of results or return a normal result, as it is converted to a `boolean` using `StringToBool` function.
+
+```go
+package main
+
+import (
+	"log"
+	"net/http"
+)
+
+func (m MLWrapper) executeModel(w http.ResponseWriter, r *http.Request) {
+	modelName := r.URL.Query().Get("model")
+	streaming := StringToBool(r.URL.Query().Get("streaming"))
+
+	conn, err := websocketUpgrade.Upgrade(w, r, nil)
+	if err != nil {
+		log.Println("Failed to set websocket upgrade:", err)
+		return
+	}
+	defer conn.Close()
+
+	for {
+		msgType, msg, err := conn.ReadMessage()
+		if err != nil {
+			log.Println("Error reading message:", err)
+			return
+		}
+		if streaming {
+			// TO BE IMPLEMENTED LATER.
+
+		} else {
+			modelResponse, err := m.wrapper.LoadModel(modelName, string(msg))
+			err = conn.WriteMessage(msgType, []byte(modelResponse))
+			if err != nil {
+				log.Println("Error writing to websocket:", err)
+				return
+			}
+		}
+
+	}
+
+}
+
+```
+
+- The `StringToBool` function is a simple utility function that converts a string to a boolean value based on its content.
+
+![step12](./images/step12.png)
+
+```go
+package main
+
+import "strings"
+
+func StringToBool(s string) bool {
+	switch strings.ToLower(s) {
+	case "true", "yes", "1":
+		return true
+	case "false", "no", "0":
+		return false
+	default:
+		// Handle unrecognized input; this example treats it as false
+		return false
+	}
+}
+
+```
+
+- Moving ahead, it then tries to upgrade the incoming HTTP request into a Websocket connection with `websocketUpgrade.Upgrade()` function. If the upgrade fails, it logs the error and exits the function.
+
+![step13](./images/step13.png)
+
+- Once the connection is upgraded, it enters into an infinite loop to continuously read messages from the connection.
+  - If an error occurs while reading the message, the error is logged and the function returns.
+  - If no read error occurs, the function then checks if streaming mode is enabled (streaming is true). As of now, we haven't implemented the streaming feature. But we will work on that very soon.
+  - If streaming mode is not enabled, it treats the received message as a prompt and invokes `m.wrapper.LoadModel(modelName, string(msg))` to load the AI model and generate a response based on the prompt. The response is then sent back to the client through the Websocket connection. If any error occurs during writing the message, it logs the error and returns.
+
+![step14](./images/step14.png)
