@@ -42,7 +42,7 @@ const siteChecker = new SiteChecker(
 			"weave.works",
 			"blogs.oracle.com",
 			"hub.docker.com",
-			"dropual.org",
+			"drupal.org",
 			"dev.epicgames.com",
 			"unrealengine.com",
 			"websitesetup.org",
