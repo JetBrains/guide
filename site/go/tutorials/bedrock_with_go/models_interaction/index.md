@@ -444,3 +444,166 @@ If you have noticed, once you have implemented the methods defined in the interf
 ![step22](./images/step22.png)
 
 ![interface_animation](./images/interface_implementation.gif)
+
+Moving next, I will create a new function `LoadStreamingModel` in `load.go` file, which will explicitly take care of streaming based on model type.
+
+As of now the code handles specific model `llama3`. But in the next section we will be dealing with anthropic.
+
+![step23](./images/step23.png)
+
+```go
+func (wrapper ModelWrapper) LoadStreamingModel(modelName string, prompt string) (*bedrockruntime.InvokeModelWithResponseStreamOutput, error) {
+	switch modelName {
+	case llama3:
+		llama := Llama{LLMPrompt{wrapper, prompt}}
+		response, err := llama.Stream()
+		if err != nil {
+			return nil, err
+		}
+		return response, nil
+	case anthropic:
+		// TO BE IMPLEMENTED
+	default:
+		return nil, errors.New("No such model: " + modelName)
+	}
+	return nil, errors.New("No such model: " + modelName)
+}
+```
+
+Moving ahead. Now, let's define types definitions in `types.go`
+
+```go
+type StreamingOutputHandler func(ctx context.Context, part []byte) error
+
+type ProcessingFunction func(output *bedrockruntime.InvokeModelWithResponseStreamOutput, handler StreamingOutputHandler) (any, error)
+```
+
+![step24](./images/step24.png)
+
+Let me walk you through each.
+
+```go
+type StreamingOutputHandler func(ctx context.Context, part []byte) error
+```
+
+This is defining a function type, named `StreamingOutputHandler`. A function that matches this type should take in a `context.Context` and a byte slice, and it should return an error. This represents a function that can handle streaming output.
+
+```go
+type ProcessingFunction func(output *bedrockruntime.InvokeModelWithResponseStreamOutput, handler StreamingOutputHandler) (any, error)
+```
+
+This type is also defining a function type. Function which matches with this type should take in a pointer to a `bedrockruntime.InvokeModelWithResponseStreamOutput` and a `StreamingOutputHandler`, and it should return `any` type and an error. This represents a function that processes data using some handler.
+
+Let's go to `llama.go` to define the processing function, which will give you a better idea about the types which we just discussed.
+
+![step25](./images/step25.png)
+
+The function accepts two parameters:
+
+- **output**: The stream of output to process, which is of the type `bedrockruntime.InvokeModelWithResponseStreamOutput`. This is the response that you get from the `Stream()` method.
+- **handler**: A callable object, in this case of type `StreamingOutputHandler`, which is a user-defined function type. This callable object is applied to process the streamed data contained in the output.
+
+```go
+func ProcessLlamaStreamingOutput(output *bedrockruntime.InvokeModelWithResponseStreamOutput, handler StreamingOutputHandler) error {
+
+	resp := Llama3Response{}
+
+	for event := range output.GetStream().Events() {
+		switch v := event.(type) {
+		case *types.ResponseStreamMemberChunk:
+			err := json.NewDecoder(bytes.NewReader(v.Value.Bytes)).Decode(&resp)
+			if err != nil {
+				return err
+			}
+			err = handler(context.Background(), []byte(resp.Generation))
+
+			if err != nil {
+				return err
+			}
+
+		case *types.UnknownUnionMember:
+			return fmt.Errorf("unknown tag: %s", v.Tag)
+
+		default:
+			return fmt.Errorf("union is nil or unknown type")
+		}
+	}
+	return nil
+}
+
+```
+
+Then the function defines `resp` as an object of the `Llama3Response` type.
+The function uses a for loop to iterate over the event stream coming from the `output` object. Inside the loop, it uses a type switch to handle different cases depending on the type of the event:
+
+- When event is of the type `ResponseStreamMemberChunk`, the corresponding bytes are read and decoded into `resp` object using the `json.Decode` method. If the decoding results return an error, the function immediately returns the respective error. Once the values are successfully decoded, the `handler` is called with a new `context` and the byte representation of `resp.Generation` as parameters. If the handler also returns an error, the function returns this error.
+- If the event is an unknown `union` member, or any other unknown type, corresponding error messages are returned.
+
+The function keeps reading from the streaming output until it's done. After processing all events, if there are no errors, the function returns `nil`.
+
+Now, we move forward to create a generic function `CallStreamingOutputFunction` in `common.go` which determines the behavior based on the provided model input.
+
+This function is part of a larger system that involves invoking models and processing their responses in a streaming fashion over a WebSocket connection.
+
+![step26](./images/step26.png)
+
+It takes three parameters, let's break it down.
+
+- **llm** — It is a string that stands for the name of the model to be called (llama3 or anthropic).
+- **output** — It is an output from invoking a model with a response stream.
+- **handler** — This is a function that takes a `context` and a byte slice and returns an error. This function is used to process the streaming output.
+
+If `llm` equals `llama3`, the function `ProcessLlamaStreamingOutput` is called with `output` and `handler` as its arguments.
+
+```go
+func CallStreamingOutputFunction(llm string, output *bedrockruntime.InvokeModelWithResponseStreamOutput, handler StreamingOutputHandler) error {
+	switch llm {
+	case llama3:
+		err := ProcessLlamaStreamingOutput(output, handler)
+		if err != nil {
+			return err
+		}
+	case anthropic:
+		// TO BE IMPLEMENTED LATER.
+	default:
+		return fmt.Errorf("unknown llm value: %s", llm)
+	}
+	return nil
+}
+
+```
+
+Let's now move to the final part `controller.go` to connect websocket with our streaming function.
+
+![step27](./images/step27.png)
+
+Let's complete the logic.
+
+![step28](./images/step28.png)
+
+- `aiResponse, err := m.wrapper.LoadStreamingModel(modelName, string(msg))` — This line loads the model into memory by calling the `LoadStreamingModel` method. It accepts a string `modelName` that specifies the model name to be loaded. The `string(msg)` is the second parameter, which is basically the user-provided prompt. This method is expected to return a stream that will produce some output as the model processes the input data.
+
+- `processFunc` — This function accepts a `context` and a byte slice as input and returns an error. The purpose of this function is to write the processed model output to a WebSocket connection:
+  - `err = conn.WriteMessage(msgType, part)`: This sends the model output to the other end of a WebSocket connection. msgType is not defined in the provided code, but typically in WebSocket APIs it denotes the type of the message, like Text, Binary, etc. part is the portion of the model output to be sent.
+  - The function `models.CallStreamingOutputFunction(modelName, aiResponse, processFunc)` seems to initiate the usage of the loaded model with the input data. It takes the model name, a response object from the stream loading function (probably containing the unprocessed data stream) and a function to process the output.
+
+```go
+		if streaming {
+			aiResponse, err := m.wrapper.LoadStreamingModel(modelName, string(msg))
+
+			processFunc := func(ctx context.Context, part []byte) error {
+				err = conn.WriteMessage(msgType, part)
+				if err != nil {
+					log.Println("Error writing to websocket:", err)
+					return err
+				}
+				return nil
+			}
+
+			err = models.CallStreamingOutputFunction(modelName, aiResponse, processFunc)
+			if err != nil {
+				log.Fatal("streaming output processing error: ", err)
+			}
+
+		}
+```
