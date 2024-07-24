@@ -25,7 +25,8 @@ const siteChecker = new SiteChecker(
 		requestMethod: "get",
 		acceptedSchemes: ["http", "https"],
 		excludedKeywords: [
-			// these sites usually fail when running automated checks
+			// these sites usually fail when running automated checks,
+			// usually because they block automated checks
 			"localhost",
 			"twitter.com",
 			"x.com",
@@ -41,6 +42,7 @@ const siteChecker = new SiteChecker(
 			"weave.works",
 			"blogs.oracle.com",
 			"hub.docker.com",
+			"dropual.org",
 			"dev.epicgames.com",
 			"unrealengine.com",
 			"websitesetup.org",
