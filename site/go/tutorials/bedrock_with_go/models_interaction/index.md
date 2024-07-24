@@ -607,3 +607,24 @@ Let's complete the logic.
 
 		}
 ```
+
+It's time for testing. Make sure your application is running.
+
+Open `websocket.http` file which we created earlier. If you have noticed, We are now passing `streaming=1`.
+
+![step29](./images/step29.png)
+
+Provide your prompt in the message box and make sure to change the language from `JSON` to `Plain text`.
+
+![step30](./images/step30.png)
+
+![step31](./images/step31.png)
+
+Yay! At last, the streaming is functioning properly. No need to be concerned if the output appears on a new line—we'll be developing a custom UI in React to manage that.
+
+<video width="1366" height="768" controls>
+  <source src="./images/streaming_1.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+In the next section we will look into integrating Anthropic. The good part is that we have made most functionality generic. So, we just need to focus on the core business logic.
