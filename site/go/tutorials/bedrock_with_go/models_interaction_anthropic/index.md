@@ -201,11 +201,11 @@ func (wrapper Anthropic) AnthropicBody(prompt string) []byte {
 
 ```
 
-Moving forward, lets implemented the `Invoke` method.
-
-TEXT TO BE ADDED.
+Moving forward, lets implemented the `Invoke` method, which is similar to the `llama3`.
 
 ![step5](./images/step5.png)
+
+This function wraps the behavior of invoking a model using `BedrockRuntimeClient`. First, it calls `AnthropicBody` to prepare the input body. The model is then invoked using the AWS client with a `ModelId` and `ContentType` specified within `InvokeModelInput`. If the model invocation fails, a fatal error will be logged.
 
 ```go
 func (wrapper Anthropic) Invoke() (string, error) {
@@ -233,6 +233,34 @@ func (wrapper Anthropic) Invoke() (string, error) {
 
 ```
 
-Now, move on to add the missing logic.
+Now, move on to add the missing logic.So, earlier we have handled the `llama3`, now it's time for Anthropic.
+
+Move to `load.go` file and look for the switch case in the `LoadModel` function.
 
 ![step6](./images/step6.png)
+
+It is quite similar to what we did before. If receive the model name as anthropic from WebSocket, then we invoke the respective model.
+
+```go
+	case anthropic:
+		anth := Anthropic{LLMPrompt{wrapper, prompt}}
+		response, err := anth.Invoke()
+		if err != nil {
+			return "", err
+		}
+		return response, nil
+```
+
+Well, we are all set. As you know, in the previous we have already generalized our `controller` which can invoke the model dynamically, as we pass the model name through query params.
+
+Now, go ahead and start your server.
+
+![step7](./images/step7.png)
+
+Next, open `websocket.http` file which we created earlier and pass `model=anthropic` and `streaming=0` because we are working on the non-streaming part.
+
+![step8](./images/step8.png)
+
+WooHoo! It worked. You will observe the response time is quite faster compared to `llama3`. But we can observe more speed once we implement the streaming part. Let's go ahead.
+
+## Streaming
