@@ -11,7 +11,7 @@ tutorialItems:
   - ./getting_started/
   - ./model_access/
   - ./building_backend/
-  - ./models_interaction/
+  - ./models_interaction_llama/
 topics:
   - go
   - web
