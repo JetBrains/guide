@@ -12,6 +12,7 @@ tutorialItems:
   - ./model_access/
   - ./building_backend/
   - ./models_interaction_llama/
+  - ./models_interaction_anthropic/
 topics:
   - go
   - web
