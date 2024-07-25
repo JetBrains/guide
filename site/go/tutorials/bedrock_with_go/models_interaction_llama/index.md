@@ -7,6 +7,7 @@ subtitle: ""
 thumbnail: ./thumbnail.png
 topics:
   - aws
+  - ai
 ---
 
 In the upcoming section we will be only implementing two models. You are free to experiment with other models.

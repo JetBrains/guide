@@ -7,20 +7,19 @@ subtitle: ""
 thumbnail: ./thumbnail.png
 topics:
   - aws
+  - ai
 ---
 
-In the upcoming section we will be only implementing two models. You are free to experiment with other models.
+In this section we will be working with Anthropic. This section is quite similar to the previous one, implementing streaming and non-streaming features.
 
-- Llama3
-- Anthropic
+Anthropic has multiple types of models supported like Claude 3 Sonnet, 3.5 Sonnet, Opus and Haiku. You can check over [here](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-claude.html) the inference parameters and code examples.
 
-Well, there are a lot of models supported MistralAI, StabilityAI, etc. If you are interested in knowing more about the supported models, please check the following [link](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html).
+## Anthropic Haiku
 
-The implementation will be divided into two parts.
+For this tutorial, we will be using Anthropic Haiku.
 
-- **Streaming** — In this scenario, the SDK transmits the model response in segments, and we will directly stream this segmented data via WebSocket.
-- **Non-Streaming** — In this scenario, the model sends the complete response, causing a short delay before we receive and subsequently push the information through WebSocket.
+According to Anthropic.
 
-## Llama3
+> _Haiku is the fastest and most cost-effective model on the market for its intelligence category. It can read an information and data dense research paper on arXiv (~10k tokens) with charts and graphs in less than three seconds._
 
-For this tutorial, we will be using Llama 3 70B Instruct.
+![step1](./images/step1.png)
