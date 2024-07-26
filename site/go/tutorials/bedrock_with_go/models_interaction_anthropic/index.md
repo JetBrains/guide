@@ -264,3 +264,111 @@ Next, open `websocket.http` file which we created earlier and pass `model=anthro
 WooHoo! It worked. You will observe the response time is quite faster compared to `llama3`. But we can observe more speed once we implement the streaming part. Let's go ahead.
 
 ## Streaming
+
+Open `anthropic.go` file and create a new function `Stream()`.
+
+This is similar to what we did for `llama3`.
+
+![step9](./images/step9.png)
+
+This function is attached to the `Anthropic` struct. It prepares a JSON payload with the `AnthropicBody()` function and sends a request to `BedrockRuntimeClient.InvokeModelWithResponseStream`. If any errors occur during the model invocation, they're processed for more meaningful error messages with the `ProcessError()` function and if everything is working as per expectation, then it returns the response stream.
+
+```go
+func (wrapper Anthropic) Stream() (*bedrockruntime.InvokeModelWithResponseStreamOutput, error) {
+	body := wrapper.AnthropicBody(wrapper.prompt)
+
+	output, err := wrapper.bedrock.BedrockRuntimeClient.InvokeModelWithResponseStream(context.TODO(), &bedrockruntime.InvokeModelWithResponseStreamInput{
+		ModelId:     aws.String(claudeV3ModelID),
+		ContentType: aws.String("application/json"),
+		Body:        body,
+	})
+
+	if err != nil {
+		ProcessError(err, claudeV3ModelID)
+	}
+	return output, nil
+
+}
+
+```
+
+Moving forward, update the `LoadStreamingModel` function in `load.go`.
+
+As you can see we have already handled the `llama3`. Now the switch condition will tackle anthropic as well.
+
+![step10](./images/step10.png)
+
+![step11](./images/step11.png)
+
+The code snippet is part of a function that handles loading and calling different models based on their names. In this specific case, when the model name is `anthropic`, an `Anthropic` object is created, and its `Stream` method is called, which tries to invoke the model and returns a streamed response.
+
+```go
+		anth := Anthropic{LLMPrompt{wrapper, prompt}}
+		response, err := anth.Stream()
+		if err != nil {
+			return nil, err
+		}
+		return response, nil
+```
+
+Moving further, we need to create a new function `ProcessAnthropicStreamingOutput` in `anthropic.go`.
+
+![step12](./images/step12.png)
+
+```go
+ResponseContent := []ResponseContent{\{Type: contentTypeText}}}
+
+```
+
+The provided Go code is for a function ProcessAnthropicStreamingOutput that processes a streaming output from an invoked model. The model's represented by output, a pointer to InvokeModelWithResponseStreamOutput, while handler is a function that handles each part of the output stream.
+
+Before processing the stream's events, the function creates a Claude3Response struct which will hold the response content's elements. This data is pre-populated with some pre-defined values.
+
+The function then enters a loop that runs for each event in the model's response stream. It uses a type switch to determine the event type and handle it accordingly:
+
+For \*types.ResponseStreamMemberChunk types, it attempts to decode the chunk into a PartialResponse struct. If the response type is partialResponseTypeContentBlockDelta, the handler function is called with the current context and the decoded text as a byte slice. The decoded text is then appended to the combinedResult string. If the response type is partialResponseTypeMessageStart, some fields in the Claude3Response struct are populated using the partial response. And if the response type is partialResponseTypeMessageDelta, again some fields in the Claude3Response struct are updated. If any error occurred during the decoding process or if the partial response type is not recognized, the function returns an error.
+
+For\*types.UnknownUnionMember types, an error is returned with a message that includes the unknown tag.
+For all other event types, an error is returned indicating that the union type is unknown or nil.
+If the function processes all the events without returning an error, it finishes by returning nil, indicating the processing was successful.
+
+The helper function StreamingOutputHandler used in this function takes a context.Context and a byte slice as input and returns an error. The actual implementation of this function in the real code would provide additional context to its functionality.
+
+The various constant and struct types referenced in the code are predefined types and constant values that must be understood in the context of the entire codebase they are part of. They are used for setting values, decoding JSON and generally structuring the data flow in this function.
+
+![step12_1](./images/step12_1.png)
+
+Coming next the last part
+
+![step13](./images/step13.png)
+
+![step14](./images/step14.png)
+
+```go
+func CallStreamingOutputFunction(llm string, output *bedrockruntime.InvokeModelWithResponseStreamOutput, handler StreamingOutputHandler) error {
+	switch llm {
+	case llama3:
+		err := ProcessLlamaStreamingOutput(output, handler)
+		if err != nil {
+			return err
+		}
+	case anthropic:
+		err := ProcessAnthropicStreamingOutput(output, handler)
+		if err != nil {
+			return err
+		}
+	default:
+		return fmt.Errorf("unknown llm value: %s", llm)
+	}
+	return nil
+}
+```
+
+Let's test it out.
+
+![step15](./images/step15.png)
+
+<video width="1366" height="768" controls>
+  <source src="./images/anthropic_streaming.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
