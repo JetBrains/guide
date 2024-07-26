@@ -7,9 +7,12 @@ a.navbar-item:hover {
   background-color: $black;
   color: $white;
 }
+a.navbar-item, .navbar-link {
+  font-size: $nav-link-size;
+}
 footer.pagefooter a,
 footer.pagefooter a:hover {
-    color: $grey-light !important;
+  color: $grey-light !important;
 }
 .button.is-outlined {
   border-color: $grey !important;
