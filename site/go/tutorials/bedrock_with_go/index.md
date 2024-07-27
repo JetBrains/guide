@@ -2,7 +2,7 @@
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2024-08-01
-title: AI Assistant with AWS Bedrock
+title: Developing an AI Assistant with AWS Bedrock, Go, and React
 author: mm
 subtitle: ""
 thumbnail: ./thumbnail.png
