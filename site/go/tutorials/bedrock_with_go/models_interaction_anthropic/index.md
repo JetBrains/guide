@@ -341,9 +341,11 @@ Once all the events from the stream have been processed, the function ends and r
 
 > Interested to know more on streaming, then check the following [Anthropic API Reference - Streaming Messages](https://docs.anthropic.com/en/api/messages-streaming)
 
-Coming next the last part
+Coming to the final part, where we need to update the switch case to handle streaming functionality for anthropic.
 
 ![step13](./images/step13.png)
+
+Update `CallStreamingOutputFunction` under `common.go`.
 
 ![step14](./images/step14.png)
 
@@ -367,7 +369,7 @@ func CallStreamingOutputFunction(llm string, output *bedrockruntime.InvokeModelW
 }
 ```
 
-Let's test it out.
+Well, we are all set to launch. Make sure to start your server and head over to the `websocket.http` file.
 
 ![step15](./images/step15.png)
 
@@ -375,4 +377,7 @@ Let's test it out.
   <source src="./images/anthropic_streaming.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
-```
+
+Yes! We did it. You can play around and see what kind of response you get from these LLM models.😉
+
+In the following section, we’ll build a frontend app using React and integrate it with our Go application.
