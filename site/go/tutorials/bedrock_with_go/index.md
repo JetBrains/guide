@@ -21,4 +21,6 @@ topics:
   - react
 ---
 
-This tutorial will be focusing on creating a basic AI Assistant using AWS Bedrock with Go. We will be using React as our UI component.
+This tutorial will focus on building a basic AI Assistant using AWS Bedrock with Go, and we'll utilize React for the UI components.
+
+Make sure you have installed [GoLand](https://www.jetbrains.com/go/) & [WebStorm](https://www.jetbrains.com/webstorm/).
