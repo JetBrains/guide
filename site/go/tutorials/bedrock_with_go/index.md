@@ -1,7 +1,7 @@
 ---
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
-date: 2024-07-18
+date: 2024-08-01
 title: AI Assistant with AWS Bedrock
 author: mm
 subtitle: ""
@@ -13,6 +13,7 @@ tutorialItems:
   - ./building_backend/
   - ./models_interaction_llama/
   - ./models_interaction_anthropic/
+  - ./building_frontend/
 topics:
   - go
   - web

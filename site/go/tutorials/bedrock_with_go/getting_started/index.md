@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2024-07-18
+date: 2024-08-01
 title: Getting Started
 author: mm
 subtitle: ""
