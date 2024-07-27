@@ -315,28 +315,31 @@ Moving further, we need to create a new function `ProcessAnthropicStreamingOutpu
 
 ![step12](./images/step12.png)
 
-```go
-ResponseContent := []ResponseContent{\{Type: contentTypeText}}}
+This function processes a continuous stream of data output (`output`) from an invoked model with response stream (response from `Stream()` function), and handles it using a `StreamingOutputHandler` named handler.
 
-```
+- The function starts by creating a `Claude3Response` struct with some preset values. This struct is designed to handle a specific type of response.
 
-The provided Go code is for a function ProcessAnthropicStreamingOutput that processes a streaming output from an invoked model. The model's represented by output, a pointer to InvokeModelWithResponseStreamOutput, while handler is a function that handles each part of the output stream.
+- Next, the function enters a loop where it processes each event from the streaming output. These events are expected to be of different types, hence a switch statement is used to handle different cases.
 
-Before processing the stream's events, the function creates a Claude3Response struct which will hold the response content's elements. This data is pre-populated with some pre-defined values.
+- If an event is of type `ResponseStreamMemberChunk`, it is processed, and a JSON decoder is used to decode the event value into a `PartialResponse` struct.
 
-The function then enters a loop that runs for each event in the model's response stream. It uses a type switch to determine the event type and handle it accordingly:
+- The system then checks the Type of the `PartialResponse`. Depending on its value, one of the following actions could be performed:
 
-For \*types.ResponseStreamMemberChunk types, it attempts to decode the chunk into a PartialResponse struct. If the response type is partialResponseTypeContentBlockDelta, the handler function is called with the current context and the decoded text as a byte slice. The decoded text is then appended to the combinedResult string. If the response type is partialResponseTypeMessageStart, some fields in the Claude3Response struct are populated using the partial response. And if the response type is partialResponseTypeMessageDelta, again some fields in the Claude3Response struct are updated. If any error occurred during the decoding process or if the partial response type is not recognized, the function returns an error.
+  - If the type is `partialResponseTypeContentBlockDelta`, the handler function is called with the `pr.Delta.Text`.
+  - If it's `partialResponseTypeMessageStart`, several fields in the initial response are updated with values from this partial response.
+  - If it's `partialResponseTypeMessageDelta`, again some fields in the response are updated.
 
-For\*types.UnknownUnionMember types, an error is returned with a message that includes the unknown tag.
-For all other event types, an error is returned indicating that the union type is unknown or nil.
-If the function processes all the events without returning an error, it finishes by returning nil, indicating the processing was successful.
+- If the event is of type `UnknownUnionMember`, an error is returned stating that an unknown tag was found.
 
-The helper function StreamingOutputHandler used in this function takes a context.Context and a byte slice as input and returns an error. The actual implementation of this function in the real code would provide additional context to its functionality.
+- If the event doesn't match any of the expected types, falling under the default case, an error is returned noting that the `union` is `nil` or is of an unknown type.
 
-The various constant and struct types referenced in the code are predefined types and constant values that must be understood in the context of the entire codebase they are part of. They are used for setting values, decoding JSON and generally structuring the data flow in this function.
+Once all the events from the stream have been processed, the function ends and returns `nil`, indicating that there were no errors.
 
 ![step12_1](./images/step12_1.png)
+
+![step12_2](./images/step12_2.png)
+
+> Interested to know more on streaming, then check the following [Anthropic API Reference - Streaming Messages](https://docs.anthropic.com/en/api/messages-streaming)
 
 Coming next the last part
 
@@ -372,3 +375,4 @@ Let's test it out.
   <source src="./images/anthropic_streaming.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
+```
