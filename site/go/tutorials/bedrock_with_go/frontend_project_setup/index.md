@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2024-08-01
-title: Building the Frontend
+title: Building the Frontend - Project Setup and Configuration
 author: mm
 subtitle: ""
 thumbnail: ./thumbnail.png
@@ -40,3 +40,29 @@ The application is running on [localhost:5173](http://localhost:5173/).
 This is how the default UI appears when you load it for the first time.
 
 ![step6](./images/step6.png)
+
+## Installing Packages
+
+### [Bulma](https://bulma.io/)
+
+Modern CSS Framework
+
+![step7](./images/step7.png)
+
+### [React Icons](https://react-icons.github.io/react-icons/)
+
+Include popular icons in your React projects easily with react-icons.
+
+![step8](./images/step8.png)
+
+### [react-typed](https://www.npmjs.com/package/react-typed)
+
+A React wrapper for typed.js
+
+![step9](./images/step9.png)
+
+Open `package.json` and add the following lines under the `dependencies`. After completing the changes, save them, and WebStorm will prompt you to install the necessary packages.
+
+![step10](./images/step10.png)
+
+The next section is quite important as we completely focus on building the application.
