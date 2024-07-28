@@ -512,6 +512,11 @@ function AIComponent() {
 export default AIComponent;
 ```
 
-Once done, save and restart server. This is how the complete UI will look.
+Once done, save and restart the server. This is how the complete UI will look.
 
 ![step23](./images/step23.png)
+
+<video width="1366" height="768" controls>
+  <source src="./images/final.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
