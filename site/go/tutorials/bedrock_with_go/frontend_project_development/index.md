@@ -272,7 +272,7 @@ The hook then finally returns an object containing all the state variables and f
 
 Now, we will be handling multiple subcomponents. All the files will be placed under `components` directory.
 
-Let's begin first by creating `AIModel.jsx`.
+- Let's begin first by creating `AIModel.jsx`.
 
 ![step16](./images/step16.png)
 
@@ -288,9 +288,15 @@ function AIModel({ models }) {
 export default AIModel;
 ```
 
-Create a new file `ConnectionStatus.jsx`.
+In UI, it's going to render options with `llama3` and `anthropic`.
+
+![AIModel](./images/AIModel.png)
+
+- Create a new file `ConnectionStatus.jsx`.
 
 ![step17](./images/step17.png)
+
+![ConnectionStatus](./images/ConnectionStatus.png)
 
 ```jsx
 import { GoDotFill } from "react-icons/go";
@@ -328,6 +334,8 @@ Create a new file `StreamCheckbox.jsx`.
 
 ![step19](./images/step19.png)
 
+![StreamCheckbox](./images/StreamCheckbox.png)
+
 ```jsx
 const StreamCheckbox = ({ handleStreamChange }) => (
 	<div>
@@ -342,6 +350,8 @@ export default StreamCheckbox;
 Create a new file `TextArea.jsx`.
 
 ![step20](./images/step20.png)
+
+![TextArea](./images/TextArea.png)
 
 ```jsx
 function TextArea({ textValue, setTextValue }) {
@@ -361,6 +371,8 @@ Create a new file `AIResponse.jsx`.
 
 ![step21](./images/step21.png)
 
+![AIResponse](./images/AIResponse.png)
+
 ```jsx
 import { ReactTyped } from "react-typed";
 
@@ -374,3 +386,128 @@ function AIResponse({ streaming, message, className }) {
 }
 export default AIResponse;
 ```
+
+## Stitching Together
+
+Come back to our main component `AIComponent.jsx` and do the necessary imports the state-related variables.
+
+![step22](./images/step22.png)
+
+```jsx
+import useWebSocket from "../hooks/useWebSocket";
+import AIResponse from "../components/AIResponse.jsx";
+import ConnectionStatus from "../components/ConnectionStatus.jsx";
+import StreamCheckbox from "../components/StreamCheckbox";
+import AIModel from "../components/AIModel";
+import SendMessage from "../components/SendMessage";
+import TextArea from "../components/TextArea";
+
+function AIComponent() {
+	const {
+		connectionStatus,
+		selectedOption,
+		textValue,
+		setTextValue,
+		message,
+		isStreaming,
+		availableModels,
+		sendMessage,
+		handleStreamChange,
+		handleDropdownChange,
+	} = useWebSocket();
+
+	return <div></div>;
+}
+
+export default AIComponent;
+```
+
+Let's now add the UI elements.
+
+```jsx
+import useWebSocket from "../hooks/useWebSocket";
+import AIResponse from "../components/AIResponse.jsx";
+import ConnectionStatus from "../components/ConnectionStatus.jsx";
+import StreamCheckbox from "../components/StreamCheckbox";
+import AIModel from "../components/AIModel";
+import SendMessage from "../components/SendMessage";
+import TextArea from "../components/TextArea";
+
+function AIComponent() {
+	const {
+		connectionStatus,
+		selectedOption,
+		textValue,
+		setTextValue,
+		message,
+		isStreaming,
+		availableModels,
+		sendMessage,
+		handleStreamChange,
+		handleDropdownChange,
+	} = useWebSocket();
+
+	return (
+		<div>
+			<div className="container">
+				<div className="columns">
+					<div className="column is-6">
+						<div className="card">
+							<div className="card-content">
+								<div className="select is-info mb-4">
+									<select
+										value={selectedOption}
+										onChange={handleDropdownChange}
+									>
+										<AIModel models={availableModels} />
+									</select>
+								</div>
+
+								<div className="columns">
+									<div className="column">
+										<StreamCheckbox handleStreamChange={handleStreamChange} />
+									</div>
+								</div>
+
+								<div className="columns">
+									<div className="column">
+										<TextArea
+											textValue={textValue}
+											setTextValue={setTextValue}
+										/>
+									</div>
+								</div>
+								<div className="colums">
+									<div className="column">
+										<SendMessage message={sendMessage} />
+									</div>
+									<div className="column">
+										<ConnectionStatus status={connectionStatus} />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="column is-6">
+						<div className="card">
+							<div className="card-content">
+								<AIResponse
+									message={message}
+									className="subtitle has-text-grey typing-text"
+									streaming={isStreaming}
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+}
+
+export default AIComponent;
+```
+
+Once done, save and restart server. This is how the complete UI will look.
+
+![step23](./images/step23.png)
