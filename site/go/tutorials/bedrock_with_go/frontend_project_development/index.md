@@ -147,6 +147,8 @@ Under `hooks` create a new file called `useWebSocket.js`.
 
 ![step15](./images/step15.png)
 
+`useWebSocket` is a custom hook for connecting to a `WebSocket` server, and managing state relevant to that connection in a React application.
+
 ```jsx
 import { useState, useEffect } from "react";
 
@@ -234,33 +236,141 @@ export default useWebSocket;
 
 Let's break it down.
 
-The provided JavaScript code contains a custom hook for connecting to a WebSocket server, and managing state relevant to that connection in a React application. Here's a breakdown of what the code is doing:
+We are going to create some constants that will be used throughout the hook.
 
-Initial setup: Some constants (WEBSOCKET_URL, MODEL_ONLINE, MODEL_OFFLINE, availableModels) are declared, these are used throughout the hook.
+- `WEBSOCKET_URL`
+- `MODEL_ONLINE`
+- `MODEL_OFFLINE`
+- `availableModels`
 
-useState is a React Hook that lets you add React state to function components. Following state variables were created:
+`useState` is a React Hook that lets you add [state variable](https://react.dev/learn/state-a-components-memory) to your components. The following state variables were created:
 
-connectionStatus: This indicating whether the WebSocket connection to the model is online or offline.
-isStreaming: Maintains whether the data being received is streaming or not.
-message: Stores the message received from the WebSocket.
-webSocket: Stores the Websocket instance.
-textValue: The value from a textarea, which can be sent as a message over the WebSocket.
-selectedOption: Keeps track of the selected model from availableModels.
+- `connectionStatus`: This is indicating whether the WebSocket connection to the model is online or offline.
+- `isStreaming`: Maintains whether the data being received is streaming or not.
+  message: Stores the message received from the WebSocket.
+- `webSocket`: Stores the Websocket instance.
+- `textValue`: The value from a textarea, which can be sent as a message over the WebSocket.
+- `selectedOption`: Keeps track of the selected model from `availableModels`.
 
-initializeWebSocketHandlers(): A function that sets up listeners for the WebSocket. On receiving a message, the function either appends data or resets the message. The function sets MODEL_ONLINE once connection is open.
+`initializeWebSocketHandlers()`: A function that sets up listeners for the WebSocket. On receiving a message, the function either appends data or resets the message. The function sets `MODEL_ONLINE` once the connection is open.
 
-useEffect: This is a Hook in React that lets you perform side effects in function components. In this useEffect, a WebSocket instance is created with the webSocketURL and the connection handlers are initialized. When the selectedOption or isStreaming state changes, this hook runs again as they are dependencies.
+`useEffect`: This is a Hook in React that lets you perform side effects in function components. In this useEffect, a WebSocket instance is created with the `webSocketURL` and the connection handlers are initialized. When the `selectedOption` or `isStreaming` state changes, this hook runs again as they are dependencies.
 
-The cleanup function, returned by useEffect, runs before the component is removed from the UI to prevent memory leaks. This is where the WebSocket instance is closed, and all the state variables are reset to their initial values.
+The `cleanup` function, returned by `useEffect`, runs before the component is removed from the UI to prevent memory leaks. This is where the `WebSocket` instance is closed, and all the state variables are reset to their initial values.
 
-sendMessage(): Sends the textValue over the WebSocket if the webSocket instance exists and clears the messages.
+`sendMessage()`: Sends the `textValue` over the WebSocket if the webSocket instance exists and clears the messages.
 
-clearMessages(): Clear all the messages received.
+`clearMessages()`: Clear all the messages received.
 
-handleStreamChange(): handles the changes in streaming state. It clears existing messages and alters the isStreaming state.
+`handleStreamChange()`: handles the changes in streaming state. It clears existing messages and alters the `isStreaming` state.
 
-handleDropdownChange(): It logs selected model and update the selectedOption.
+`handleDropdownChange()`: It logs the selected model and updates the `selectedOption`.
 
 The hook then finally returns an object containing all the state variables and functions so that they might be used by the calling component.
 
-The hook is exported as a default export, which could be imported in another module and assigned whatever name is desired.
+### Sub-Components
+
+Now, we will be handling multiple subcomponents. All the files will be placed under `components` directory.
+
+Let's begin first by creating `AIModel.jsx`.
+
+![step16](./images/step16.png)
+
+```jsx
+function AIModel({ models }) {
+	return models.map((model) => (
+		<option key={model} value={model}>
+			{model}
+		</option>
+	));
+}
+
+export default AIModel;
+```
+
+Create a new file `ConnectionStatus.jsx`.
+
+![step17](./images/step17.png)
+
+```jsx
+import { GoDotFill } from "react-icons/go";
+
+const ConnectionStatus = ({ status }) => (
+	<div className="mt-4">
+		<GoDotFill className={status?.label} />
+		<span className={status?.label}> {status?.text}</span>
+	</div>
+);
+
+export default ConnectionStatus;
+```
+
+Create a new file `SendMessage.jsx`.
+
+![step18](./images/step18.png)
+
+```jsx
+function sendMessage({ message }) {
+	return (
+		<button
+			className="button is-primary is-medium has-text-white"
+			onClick={message}
+		>
+			Send Message
+		</button>
+	);
+}
+
+export default sendMessage;
+```
+
+Create a new file `StreamCheckbox.jsx`.
+
+![step19](./images/step19.png)
+
+```jsx
+const StreamCheckbox = ({ handleStreamChange }) => (
+	<div>
+		<input type="checkbox" onChange={handleStreamChange} />
+		<span className="ml-2">Stream</span>
+	</div>
+);
+
+export default StreamCheckbox;
+```
+
+Create a new file `TextArea.jsx`.
+
+![step20](./images/step20.png)
+
+```jsx
+function TextArea({ textValue, setTextValue }) {
+	return (
+		<textarea
+			value={textValue}
+			onChange={(event) => setTextValue(event.target.value)}
+			className="textarea is-focused"
+		></textarea>
+	);
+}
+
+export default TextArea;
+```
+
+Create a new file `AIResponse.jsx`.
+
+![step21](./images/step21.png)
+
+```jsx
+import { ReactTyped } from "react-typed";
+
+function AIResponse({ streaming, message, className }) {
+	const streamingOutput = <p className={className}>{message}</p>;
+	const nonStreamingOutput = (
+		<ReactTyped className={className} strings={[message]} typeSpeed={10} />
+	);
+
+	return <div>{streaming ? streamingOutput : nonStreamingOutput}</div>;
+}
+export default AIResponse;
+```
