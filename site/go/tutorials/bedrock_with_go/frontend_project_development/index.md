@@ -296,6 +296,8 @@ In UI, it's going to render options with `llama3` and `anthropic`.
 
 ![step17](./images/step17.png)
 
+The text changes based on the websocket connectivity. If there is an active connection, it will say `Model Online` else `Model Offline`.
+
 ![ConnectionStatus](./images/ConnectionStatus.png)
 
 ```jsx
@@ -329,6 +331,8 @@ function sendMessage({ message }) {
 
 export default sendMessage;
 ```
+
+![SendMessage](./images/SendMessage.png)
 
 Create a new file `StreamCheckbox.jsx`.
 
