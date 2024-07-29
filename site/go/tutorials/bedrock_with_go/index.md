@@ -26,3 +26,5 @@ topics:
 This tutorial explores how to build an AI assistant by integrating AWS Bedrock, Go programming, and React for a dynamic frontend.
 
 Make sure you have installed [GoLand](https://www.jetbrains.com/go/) & [WebStorm](https://www.jetbrains.com/webstorm/).
+
+Additionally, we expect that the intended audience would have experience working with Go.
