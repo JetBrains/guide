@@ -44,7 +44,9 @@ import (
 
 You can even control whether the packages should be installed automatically or you have to do it manually.
 
-Go to GoLand --> Settings
+Go to GoLand — _[Settings](https://www.jetbrains.com/help/go/system-settings.html)_
+
+![goland_settings](./images/goland_settings.png)
 
 ![step5](./images/step5.png)
 
