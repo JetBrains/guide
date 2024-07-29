@@ -15,6 +15,7 @@ tutorialItems:
   - ./models_interaction_anthropic/
   - ./frontend_project_setup/
   - ./frontend_project_development/
+  - ./references/
 topics:
   - go
   - web
