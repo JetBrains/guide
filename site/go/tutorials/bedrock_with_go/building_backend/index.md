@@ -44,7 +44,7 @@ import (
 
 You can even control whether the packages should be installed automatically or you have to do it manually.
 
-Go to GoLand — _[Settings](https://www.jetbrains.com/help/go/system-settings.html)_
+Go to GoLand — [Settings](https://www.jetbrains.com/help/go/system-settings.html)
 
 ![goland_settings](./images/goland_settings.png)
 
@@ -56,7 +56,7 @@ Go to GoLand — _[Settings](https://www.jetbrains.com/help/go/system-settings.h
 
 We will first begin by writing the config function.
 
-Create the config.go file under the project root.
+Create the `config.go` file under the project root.
 
 The `loadConfig` function is used to load the AWS configuration.
 
@@ -92,7 +92,7 @@ Create a directory called `models` and followed by a new file named `types.go` w
 
 ![step7](./images/step7.png)
 
-In brief, `ModelWrapper` serves as a container for a `BedrockRuntimeClient` instance, which allows the client to be passed around and used in different parts of the code while keeping the code organized and clean.
+`ModelWrapper` serves as a container for a `BedrockRuntimeClient` instance, which allows the client to be passed around and used in different parts of the code while keeping the code organized and clean.
 
 ```go
 package models

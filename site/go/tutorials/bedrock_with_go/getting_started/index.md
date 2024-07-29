@@ -11,7 +11,7 @@ topics:
 
 ## Prerequisites
 
-To get started, make sure you have a valid AWS account, and you have installed [AWS CLI](https://aws.amazon.com/cli/) in your machine.
+To get started, make sure you have a valid AWS account, and you have installed [AWS CLI](https://aws.amazon.com/cli/) on your machine.
 
 > NOTE: AWS Bedrock is not free. Make sure you check the [pricing](https://aws.amazon.com/bedrock/pricing/) before going ahead.
 
@@ -35,7 +35,7 @@ Provide a name. I am using "bedrock_user" you can choose any name that suits you
 
 Next, click **Attach policies directly** and check **AmazonBedrockFullAccess** and move forward.
 
-> Always use strict policies based on your organization rules. For this tutorial, it's fine to use full access. But we normally prohibit it.
+> Always use strict policies based on your organization rules. For this tutorial, it's fine to use full access but we would normally prohibit it.
 
 ![step5](./images/step5.png)
 
@@ -67,10 +67,10 @@ You can see the below image, access key and secret access key have been generate
 
 ![step12](./images/step12.png)
 
-Now, we need to configure AWS CLI to use the access keys,
+
 which will be helpful when we are interacting our Go application with AWS SDK.
 
-Open Terminal and then type **aws configure**. After that, provide your access key id and secret access key.
+Open the Terminal and then type **aws configure**. After that, provide your access key id and secret access key.
 
 ![step13](./images/step13.png)
 

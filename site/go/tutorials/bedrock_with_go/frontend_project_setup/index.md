@@ -57,7 +57,7 @@ Include popular icons in your React projects easily with react-icons.
 
 ### [react-typed](https://www.npmjs.com/package/react-typed)
 
-A React wrapper for typed.js
+A React wrapper for `typed.js`
 
 ![step9](./images/step9.png)
 

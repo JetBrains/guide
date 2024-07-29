@@ -39,7 +39,7 @@ Now, we are good to go ahead.
 
 Let's begin first by opening `App.jsx`.
 
-The `App` is a functional React component. It returns some JSX, a syntax similar to HTML, used to define UI structures in React. When rendered, `App` displays a section with a title "AWS Bedrock with Go" inside a div. The `hero`, `hero-body`, and `title` are CSS class names used to style these elements, and these are actually coming from [Bulma](https://bulma.io/). So, make sure to import bulma at the top.
+The `App` is a functional React component. It returns some JSX, a syntax similar to HTML, used to define UI structures in React. When rendered, `App` displays a section with a title "AWS Bedrock with Go" inside a div. The `hero`, `hero-body`, and `title` are CSS class names used to style these elements, and these are actually coming from [Bulma](https://bulma.io/). So, make sure to import `bulma` at the top.
 
 ![step6](./images/step6.png)
 
@@ -258,7 +258,7 @@ We are going to create some constants that will be used throughout the hook.
 
 The `cleanup` function, returned by `useEffect`, runs before the component is removed from the UI to prevent memory leaks. This is where the `WebSocket` instance is closed, and all the state variables are reset to their initial values.
 
-`sendMessage()`: Sends the `textValue` over the WebSocket if the webSocket instance exists and clears the messages.
+`sendMessage()`: Sends the `textValue` over the WebSocket if the `webSocket` instance exists and clears the messages.
 
 `clearMessages()`: Clear all the messages received.
 
@@ -288,7 +288,7 @@ function AIModel({ models }) {
 export default AIModel;
 ```
 
-In UI, it's going to render options with `llama3` and `anthropic`.
+In the UI, it's going to render options with `llama3` and `anthropic`.
 
 ![AIModel](./images/AIModel.png)
 

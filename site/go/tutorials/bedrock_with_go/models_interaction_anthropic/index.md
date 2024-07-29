@@ -12,7 +12,7 @@ topics:
 
 In this section we will be working with Anthropic. This section is quite similar to the previous one, implementing streaming and non-streaming features.
 
-Anthropic has multiple types of models supported like Claude 3 Sonnet, 3.5 Sonnet, Opus and Haiku. You can check over [here](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-claude.html) the inference parameters and code examples.
+Anthropic has multiple types of models supported like Claude 3 Sonnet, 3.5 Sonnet, Opus and Haiku. You can check [the inference parameters and code examples](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-claude.html).
 
 ## Anthropic Haiku
 
@@ -24,7 +24,7 @@ For this tutorial, we will be using Anthropic Haiku.
 
 Read more: [Claude 3 Haiku: our fastest model yet](https://www.anthropic.com/news/claude-3-haiku)
 
-_Claude consists of a family of large language models that enable you to balance intelligence, speed, and cost._
+Claude consists of a family of large language models that enable you to balance intelligence, speed, and cost.
 
 ![step2](./images/step2.png)
 
@@ -129,7 +129,7 @@ The `Claude3Request` struct is used to send request to Claude Haiku API.
 - **StopSequences** — Custom text sequences that cause the model to stop generating.
 - **SystemPrompt** — A system prompt is a way of providing context and instructions to Anthropic Claude, such as specifying a particular goal or role.
 
-I don't want to get into more details. As everything is mentioned in the official documentation.
+I won't go into more details as everything is mentioned in the official documentation.
 
 For reference, you can check out the [Claude Messages API](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-anthropic-claude-messages.html) and Anthropic API [Docs](https://docs.anthropic.com/en/api/getting-started).
 
@@ -233,13 +233,13 @@ func (wrapper Anthropic) Invoke() (string, error) {
 
 ```
 
-Now, move on to add the missing logic.So, earlier we have handled the `llama3`, now it's time for Anthropic.
+Now, we will move on to add the missing logic. Earlier we handled the `llama3` - now it's time for Anthropic.
 
 Move to `load.go` file and look for the switch case in the `LoadModel` function.
 
 ![step6](./images/step6.png)
 
-It is quite similar to what we did before. If receive the model name as anthropic from WebSocket, then we invoke the respective model.
+It is quite similar to what we did before. If we receive the model name as anthropic from WebSocket, then we invoke the respective model.
 
 ```go
 	case anthropic:
@@ -257,15 +257,15 @@ Now, go ahead and start your server.
 
 ![step7](./images/step7.png)
 
-Next, open `websocket.http` file which we created earlier and pass `model=anthropic` and `streaming=0` because we are working on the non-streaming part.
+Next, open the `websocket.http` file which we created earlier and pass `model=anthropic` and `streaming=0` because we are working on the non-streaming part.
 
 ![step8](./images/step8.png)
 
-WooHoo! It worked. You will observe the response time is quite faster compared to `llama3`. But we can observe more speed once we implement the streaming part. Let's go ahead.
+WooHoo! It worked. You will observe the response time is faster compared to `llama3`. But we can observe more speed once we implement the streaming part. Let's go ahead.
 
 ## Streaming
 
-Open `anthropic.go` file and create a new function `Stream()`.
+Open `anthropic.go` and create a new function called `Stream()`.
 
 This is similar to what we did for `llama3`.
 

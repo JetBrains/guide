@@ -11,7 +11,7 @@ topics:
 
 ## Enable Foundational Models
 
-Make sure you are logged in the AWS Management Console and search for "AWS Bedrock."
+
 
 ![step1](./images/step1.png)
 
@@ -33,15 +33,15 @@ Next, choose the model which you want to enable. As you can see that our models 
 
 I will show you an example of enabling models in a different region like North Virginia.
 
-I will choose Anthropic as my model and then click Next.
+I will choose Anthropic as my model and then click **Next**.
 
 ![step6](./images/step6.png)
 
-Review the specific models you want to enable/disable and finally click Submit.
+Review the specific models you want to enable/disable and finally click **Submit**.
 
 ![step7](./images/step7.png)
 
-It will take a couple of seconds and the models will be enabled. Sometimes, it's instant.
+It usually takes a couple of seconds and the models will be enabled.
 
 ![step8](./images/step8.png)
 

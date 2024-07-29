@@ -15,7 +15,7 @@ In the upcoming section we will be only implementing two models. You are free to
 - Llama3
 - Anthropic
 
-Well, there are a lot of models supported MistralAI, StabilityAI, etc. If you are interested in knowing more about the supported models, please check the following [link](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html).
+There are a lot of models supported MistralAI, StabilityAI, etc. If you are interested in knowing more about the supported models, please check the following [link](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html).
 
 The implementation will be divided into two parts.
 
@@ -230,7 +230,7 @@ This code snippet is creating a `websocket.Upgrader` struct, which is an HTTP ha
 
 - `CheckOrigin`: The function is a check to protect against malicious behavior. An origin policy is applied here which checks the 'Origin' HTTP Header in the WebSocket upgrade request to verify that it has come from a trusted source. This specific function always returns `true`, meaning every request is considered trusted. As it is noted in the comment, this is not recommended in production because it carries the risk that an attacker could sneak in unwanted WebSocket connections from anywhere.
 
-> In a production environment, this `CheckOrigin function would need to be replaced with something that more thoroughly verifies the origin of the request, perhaps by checking the domain name against a list of trusted sources.
+> In a production environment, this `CheckOrigin` function would need to be replaced with something that more thoroughly verifies the origin of the request, perhaps by checking the domain name against a list of trusted sources.
 
 ![step8](./images/step8.png)
 
@@ -245,13 +245,13 @@ slog.Info("Server Listening on", "port", "8080")
 log.Fatal(http.ListenAndServe(":8080", nil))
 ```
 
-`http.HandleFunc("/ws/model", wrapper.executeModel)` - This line tells the http package to add a function to call when the `"/ws/model"` URL is requested. The `executeModel` function of wrapper (which should be `modelWrapper`) is used as the handler.
+`http.HandleFunc("/ws/model", wrapper.executeModel)` - This line tells the http package to add a function to call when the `"/ws/model"` URL is requested. The `executeModel` function is used as the handler.
 
 ![step9](./images/step9.png)
 
-Now, let's implement the `executeModel` function. But before that I am going to create a generic function which will load the model dynamically based on the request.
+Now, let's implement the `executeModel` function, but before that I am going to create a generic function which will load the model dynamically based on the request.
 
-Under models, create a new file `load.go`.
+Under models, create a new file called `load.go`.
 
 ![step10](./images/step10.png)
 
@@ -370,9 +370,9 @@ func StringToBool(s string) bool {
 
 ![step14](./images/step14.png)
 
-If you're following till now, make sure to update the variable from `_` to `wrapper` and click the play icon to run the application.
+If you're following along make sure to update the variable from `_` to `wrapper` and click the play icon to run the application.
 
-> To run manually, type in the Terminal `go run main.go`
+> To run it manually, type in the Terminal `go run main.go`
 
 ![step15](./images/step15.png)
 
@@ -446,7 +446,7 @@ If you have noticed, once you have implemented the methods defined in the interf
 
 ![interface_animation](./images/interface_implementation.gif)
 
-Moving next, I will create a new function `LoadStreamingModel` in `load.go` file, which will explicitly take care of streaming based on model type.
+Next, I will create a new function `LoadStreamingModel` in `load.go` file, which will explicitly take care of streaming based on model type.
 
 As of now the code handles specific model `llama3`. But in the next section we will be dealing with anthropic.
 
@@ -471,7 +471,7 @@ func (wrapper ModelWrapper) LoadStreamingModel(modelName string, prompt string) 
 }
 ```
 
-Moving ahead. Now, let's define types definitions in `types.go`
+Now, let's define types definitions in `types.go`
 
 ```go
 type StreamingOutputHandler func(ctx context.Context, part []byte) error
@@ -481,7 +481,7 @@ type ProcessingFunction func(output *bedrockruntime.InvokeModelWithResponseStrea
 
 ![step24](./images/step24.png)
 
-Let me walk you through each.
+Let me walk you through each step.
 
 ```go
 type StreamingOutputHandler func(ctx context.Context, part []byte) error
@@ -551,7 +551,7 @@ This function is part of a larger system that involves invoking models and proce
 It takes three parameters, let's break it down.
 
 - **llm** — It is a string that stands for the name of the model to be called (llama3 or anthropic).
-- **output** — It is an output from invoking a model with a response stream.
+- **output** — An output from invoking a model with a response stream.
 - **handler** — This is a function that takes a `context` and a byte slice and returns an error. This function is used to process the streaming output.
 
 If `llm` equals `llama3`, the function `ProcessLlamaStreamingOutput` is called with `output` and `handler` as its arguments.
@@ -585,7 +585,7 @@ Let's complete the logic.
 - `aiResponse, err := m.wrapper.LoadStreamingModel(modelName, string(msg))` — This line loads the model into memory by calling the `LoadStreamingModel` method. It accepts a string `modelName` that specifies the model name to be loaded. The `string(msg)` is the second parameter, which is basically the user-provided prompt. This method is expected to return a stream that will produce some output as the model processes the input data.
 
 - `processFunc` — This function accepts a `context` and a byte slice as input and returns an error. The purpose of this function is to write the processed model output to a WebSocket connection:
-  - `err = conn.WriteMessage(msgType, part)`: This sends the model output to the other end of a WebSocket connection. msgType is not defined in the provided code, but typically in WebSocket APIs it denotes the type of the message, like Text, Binary, etc. part is the portion of the model output to be sent.
+  - `err = conn.WriteMessage(msgType, part)`: This sends the model output to the other end of a WebSocket connection. `msgType` is not defined in the provided code, but typically in WebSocket APIs it denotes the type of the message, like Text, Binary, etc. part is the portion of the model output to be sent.
   - The function `models.CallStreamingOutputFunction(modelName, aiResponse, processFunc)` seems to initiate the usage of the loaded model with the input data. It takes the model name, a response object from the stream loading function (probably containing the unprocessed data stream) and a function to process the output.
 
 ```go
@@ -611,7 +611,7 @@ Let's complete the logic.
 
 It's time for testing. Make sure your application is running.
 
-Open `websocket.http` file which we created earlier. If you have noticed, We are now passing `streaming=1`.
+Open `websocket.http` file which we created earlier. We are now passing `streaming=1`.
 
 ![step29](./images/step29.png)
 
