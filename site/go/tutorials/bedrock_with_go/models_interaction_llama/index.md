@@ -129,7 +129,7 @@ func (wrapper Llama) LlamaBody(prompt string) []byte {
 
 Next, I will be creating some basic utility functions and constants that will be generic across the application.
 
-First create a file named `common.go` under models.
+Create a file named `common.go` under `models`.
 
 ![step5](./images/step5.png)
 
