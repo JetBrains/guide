@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2024-08-01
 title: Getting Started
 author: mm
-subtitle: ""
+subtitle: Preparing your environment.
 thumbnail: ./thumbnail.png
 topics:
   - aws

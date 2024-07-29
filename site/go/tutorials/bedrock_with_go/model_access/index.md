@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2024-08-01
 title: Enable Model Access
 author: mm
-subtitle: ""
+subtitle: Turning On Models in AWS Bedrock.
 thumbnail: ./thumbnail.png
 topics:
   - aws

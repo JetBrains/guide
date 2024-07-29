@@ -3,10 +3,11 @@ type: TutorialStep
 date: 2024-08-01
 title: Building the Backend
 author: mm
-subtitle: ""
+subtitle: Configuring a New Project in GoLand.
 thumbnail: ./thumbnail.png
 topics:
   - aws
+  - go
 ---
 
 ## Creating a new project

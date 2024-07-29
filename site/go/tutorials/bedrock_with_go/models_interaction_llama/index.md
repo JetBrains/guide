@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2024-08-01
 title: Interacting with ML Models — Llama3
 author: mm
-subtitle: ""
+subtitle: Interacting with Llama3 in AWS Bedrock.
 thumbnail: ./thumbnail.png
 topics:
   - aws

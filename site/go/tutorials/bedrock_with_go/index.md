@@ -2,9 +2,9 @@
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
 date: 2024-08-01
-title: AI Assistant with AWS, Go, and React
+title: AI Assistant with AWS Bedrock and Go
 author: mm
-subtitle: ""
+subtitle: Develop an AI assistant by combining AWS Bedrock, Go, and React for a dynamic frontend.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/
@@ -23,6 +23,6 @@ topics:
   - react
 ---
 
-This tutorial will focus on building a basic AI Assistant using AWS Bedrock with Go, and we'll utilize React for the UI components.
+This tutorial explores how to build an AI assistant by integrating AWS Bedrock, Go programming, and React for a dynamic frontend.
 
 Make sure you have installed [GoLand](https://www.jetbrains.com/go/) & [WebStorm](https://www.jetbrains.com/webstorm/).

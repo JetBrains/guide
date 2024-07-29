@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2024-08-01
 title: Interacting with ML Models — Anthropic
 author: mm
-subtitle: ""
+subtitle: Interacting with Anthropic in AWS Bedrock.
 thumbnail: ./thumbnail.png
 topics:
   - aws

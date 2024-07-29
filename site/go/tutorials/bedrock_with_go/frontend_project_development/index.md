@@ -1,9 +1,9 @@
 ---
 type: TutorialStep
 date: 2024-08-01
-title: Developing Frontend App
+title: Crafting a Frontend Application
 author: mm
-subtitle: ""
+subtitle: Component Configuration, UI Development, and WebSocket Integration.
 thumbnail: ./thumbnail.png
 topics:
   - react
