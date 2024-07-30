@@ -11,8 +11,6 @@ topics:
 
 ## Enable Foundational Models
 
-
-
 ![step1](./images/step1.png)
 
 Click the hamburger menu.
