@@ -17,7 +17,7 @@ Remove `assets`, `App.css` and `index.css`.
 
 ![step1](./images/step1.png)
 
-Clean everything from `App.jsx`. Check the image below, you will get the idea.
+Let's perform code cleanup by removing everything from `App.jsx` and creating an empty `App()` function. Refer to the image below for guidance.
 
 ![step2](./images/step2.png)
 
