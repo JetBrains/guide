@@ -586,7 +586,7 @@ Let's complete the logic.
 
 - `processFunc` — This function accepts a `context` and a byte slice as input and returns an error. The purpose of this function is to write the processed model output to a WebSocket connection:
   - `err = conn.WriteMessage(msgType, part)`: This sends the model output to the other end of a WebSocket connection. `msgType` is not defined in the provided code, but typically in WebSocket APIs it denotes the type of the message, like Text, Binary, etc. part is the portion of the model output to be sent.
-  - The function `models.CallStreamingOutputFunction(modelName, aiResponse, processFunc)` seems to initiate the usage of the loaded model with the input data. It takes the model name, a response object from the stream loading function (probably containing the unprocessed data stream) and a function to process the output.
+  - The function `models.CallStreamingOutputFunction(modelName, aiResponse, processFunc)` takes the model name, a response object from the stream loading function (probably containing the unprocessed data stream) and a function to process the output.
 
 ```go
 		if streaming {
