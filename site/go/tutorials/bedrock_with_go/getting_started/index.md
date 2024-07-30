@@ -35,7 +35,7 @@ Provide a name. I am using "bedrock_user" you can choose any name that suits you
 
 Next, click **Attach policies directly** and check **AmazonBedrockFullAccess** and move forward.
 
-> Always use strict policies based on your organization rules. For this tutorial, it's fine to use full access but we would normally prohibit it.
+> Always use strict policies based on your organization rules. For this tutorial, it's fine to use full access, but we would normally prohibit it.
 
 ![step5](./images/step5.png)
 
@@ -43,7 +43,7 @@ Review everything is done correctly and then click **Create user**.
 
 ![step6](./images/step6.png)
 
-Once the user is created successfully, you will be redirected to users page. Click the newly created user.
+Once the user is created successfully, you will be redirected to the "users" page. Click the newly created user.
 
 ![step7](./images/step7.png)
 
@@ -67,8 +67,7 @@ You can see the below image, access key and secret access key have been generate
 
 ![step12](./images/step12.png)
 
-
-which will be helpful when we are interacting our Go application with AWS SDK.
+Now, we need to configure AWS CLI to use the access keys, which will be helpful when we are interacting our Go application with AWS SDK.
 
 Open the Terminal and then type **aws configure**. After that, provide your access key id and secret access key.
 
