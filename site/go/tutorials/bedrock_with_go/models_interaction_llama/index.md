@@ -535,7 +535,7 @@ func ProcessLlamaStreamingOutput(output *bedrockruntime.InvokeModelWithResponseS
 ```
 
 Then the function defines `resp` as an object of the `Llama3Response` type.
-The function uses a for loop to iterate over the event stream coming from the `output` object. Inside the loop, it uses a type switch to handle different cases depending on the type of the event:
+The function uses a `for` loop to iterate over the event stream coming from the `output` object. Inside the loop, it uses a type switch to handle different cases depending on the type of the event:
 
 - When event is of the type `ResponseStreamMemberChunk`, the corresponding bytes are read and decoded into `resp` object using the `json.Decode` method. If the decoding results return an error, the function immediately returns the respective error. Once the values are successfully decoded, the `handler` is called with a new `context` and the byte representation of `resp.Generation` as parameters. If the handler also returns an error, the function returns this error.
 - If the event is an unknown `union` member, or any other unknown type, corresponding error messages are returned.
@@ -550,7 +550,7 @@ This function is part of a larger system that involves invoking models and proce
 
 It takes three parameters, let's break it down.
 
-- **llm** — It is a string that stands for the name of the model to be called (llama3 or anthropic).
+- **llm** — A string that stands for the name of the model to be called (llama3 or anthropic).
 - **output** — An output from invoking a model with a response stream.
 - **handler** — This is a function that takes a `context` and a byte slice and returns an error. This function is used to process the streaming output.
 
