@@ -13,6 +13,7 @@ thumbnail: ./thumbnail.png
 video: ./tip.webm
 obsoletes:
   - /javascript/tips/distraction-free/
+  - /java/tips/distraction-free-mode/
 ---
 
 Switch to the **Distraction-free** mode with <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux) and **View Mode | Enter Distraction Free Mode** whenever you need to focus on coding – you’ll get the source code centered and all the UI elements hidden.
