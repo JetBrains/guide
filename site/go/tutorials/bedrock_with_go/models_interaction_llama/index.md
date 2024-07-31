@@ -400,7 +400,7 @@ WEBSOCKET ws://<REPLACE_WITH_YOUR_OWN_URL>/ws/model?model=llama3&streaming=0
 
 ![step18](./images/step18.png)
 
-Punch your message in the box provided and then run the following shortcut <kbd>⌘⏎</kbd> (macOS) / <kbd>Ctrl+Enter</kbd> (Windows/Linux).
+Enter your message in the box provided and then run the following shortcut <kbd>⌘⏎</kbd> (macOS) / <kbd>Ctrl+Enter</kbd> (Windows/Linux).
 
 Wait for a few seconds until we get a response from the model.
 
