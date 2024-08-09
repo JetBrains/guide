@@ -1,3 +1,5 @@
+
+
 #-------------------------------------------------------------------------------#
 #               Qodana analysis is configured by qodana.yaml file               #
 #             https://www.jetbrains.com/help/qodana/qodana-yaml.html            #
@@ -6,12 +8,15 @@ version: "1.0"
 
 #Specify inspection profile for code analysis
 profile:
-  name: qodana.starter
+  name: qodana.recommended
 
 #Enable inspections
 include:
   - name: CheckDependencyLicenses
   - name: HttpUrlsUsage
+  - name: GrazieInspection
+    paths:
+      - site
 
 #Disable inspections
 exclude:
@@ -34,9 +39,18 @@ exclude:
       - src/plugins/absolutePaths.ts
       - site/tags/json/json.svg
       - site/tags/groovy/groovy.svg
+      - site/django/tutorials/django-aws/django-docker
+      - site/dotnet/tutorials/basics/entity-framework-core
+      - site/python/tutorials/fastapi-aws-kubernetes
   - name: QodanaSanity
     paths:
       - deployment/helm/guide-charts
+  - name: GrazieInspection
+    patterns:
+      - "**/*.js"
+      - "**/*.jsx"
+      - "**/*.ts"
+      - "**/*.tsx"
 
 #Execute shell command before Qodana execution (Applied in CI/CD pipeline)
 #bootstrap: sh ./prepare-qodana.sh
@@ -47,3 +61,8 @@ exclude:
 
 #Specify Qodana linter for analysis (Applied in CI/CD pipeline)
 linter: jetbrains/qodana-js:latest
+
+plugins:
+  - id: org.intellij.plugins.markdown
+  - id: com.intellij.grazie.pro
+
