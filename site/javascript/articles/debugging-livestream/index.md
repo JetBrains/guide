@@ -55,7 +55,7 @@ the `Node.js` JavaScript engine's debugger.
 
 This creates a `Node.js` run configuration type.
 
-![Edit Nodejs Config](edit_nodejs_config.png)
+![Edit Node.js Config](edit_nodejs_config.png)
 
 ## Debug under Chrome
 
@@ -153,7 +153,7 @@ debugger. Remember: Always Be Debugging!
 WebStorm's debugger experience hides the choice of engine. You can use Chrome's JS engine or Node.js, and it will feel
 similar. For example, stepping through code feels exactly the same:
 
-![Nodejs Stepping](node_js_stepping.png)
+![Node.js Stepping](node_js_stepping.png)
 
 ## Using HTMX with debugging
 
@@ -214,7 +214,7 @@ a [test](https://github.com/JetBrains/guide/blob/main/_includes/heading/Heading.
 
 ![Vitest Watch With Debugger](vitest_watch_debugger.png)
 
-In fact, we can _continuously_ run all tests, under Vitest's watch mode. It has super-fast turnaround, even under the
+In fact, we can _continuously_ run all tests, under Vitest's watch mode. It has superfast turnaround, even under the
 debugger. When we want to poke around -- just set a breakpoint and press space on that line.
 
 ![Debug Component](debug_component.png)

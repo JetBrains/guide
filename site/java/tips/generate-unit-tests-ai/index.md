@@ -17,4 +17,4 @@ seealso:
 video: "https://youtu.be/bDFQ4AfrCMY"
 ---
 
-Let AI Assistant help you write tests! Right-click a method and select AI **Actions | Generate Unit Tests** from the context menu. Select **Accept All** if you're happy with the generated tests, **Specify** to add an additional prompt or **Regenerate** to try again.
+Let AI Assistant help you write tests! Right-click a method and select AI **Actions | Generate Unit Tests** from the context menu. Select **Accept All** if you're happy with the generated tests, **Specify** to add another prompt or **Regenerate** to try again.

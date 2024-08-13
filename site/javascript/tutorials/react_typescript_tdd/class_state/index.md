@@ -59,7 +59,7 @@ Pretty easy:
 export type CounterState = { count: number };
 ```
 
-Now the class definition and constructor [can setup state](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/class_components), which we'll use in the `render` method.
+Now the class definition and constructor [can set up state](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/class_components), which we'll use in the `render` method.
 Then last, change the `<span>` to use the value from the state, instead of a hardwired `1`:
 
 ```typescript

@@ -70,7 +70,7 @@ Let's see some ES6 and TSX.
 ## Heading Subcomponent
 
 Our heading is quite simple, but this isn't always the case.
-For example, it might have a event handler for clicks.
+For example, it might have an event handler for clicks.
 Let's extract this heading into a standalone `Heading` component, and do so using TDD, thus first writing a test.
 
 In `App.test.tsx`, let's add a test for what will be our new component:

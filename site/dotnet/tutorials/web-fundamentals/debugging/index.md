@@ -19,9 +19,9 @@ Even the best codebases have bugs. For JavaScript developers, our IDEs bundle We
 Let’s open an HTML page using the IDE. From the context menu in the _Solution_ tool window, choose **Debug**.
 In HTML files, this creates and selects a JavaScript Run/Debug configuration, which is a **JavaScript Debug** configuration type. The run configuration points to our project’s `index.html` page, with Chrome as the browser.
 
-JavaScript files can be debugged under the NodeJS debugger instead of Chrome. Use the context menu again, but for a JavaScript file. Choose Debug to start debugging, and see a new Run/Debug Configuration created. If we edit the new configuration, we see it is of type NodeJS.
+JavaScript files can be debugged under the Node.js debugger instead of Chrome. Use the context menu again, but for a JavaScript file. Choose Debug to start debugging, and see a new Run/Debug Configuration created. If we edit the new configuration, we see it is of type Node.js.
 
-Debugging in both Chrome and NodeJS have similar features. We commonly log to the console when debugging. This JavaScript file is included in our HTML and has a `console.log()` line. When debugging, the IDE re-routes these log statements from the Chrome console to its console.
+Debugging in both Chrome and Node.js have similar features. We commonly log to the console when debugging. This JavaScript file is included in our HTML and has a `console.log()` line. When debugging, the IDE re-routes these log statements from the Chrome console to its console.
 
 Breakpoints let you stop execution on a specific line of code. In the IDE, adding a breakpoint is done by clicking in the gutter beside the line. A red circle will appear. Now when I click, execution stops on that line, and shows information about variables. No restart or browser refresh needed!
 Clicking the **Resume** button continues execution past the breakpoint.

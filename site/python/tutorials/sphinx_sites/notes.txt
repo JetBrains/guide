@@ -1,7 +1,7 @@
 
 ## Intro Video
 
-- Five minute overview video showing everything in the tutorial
+- Five-minute overview video showing everything in the tutorial
 - Get people oriented with the who/what/why
 - If you've never used Sphinx
     - Omitted page

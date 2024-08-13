@@ -176,7 +176,7 @@ The method returns a message named `TaskSummary`, which contains the number of t
 
 ##### The TaskChat Method
 
-The `TaskChat` method is a bidirectional streaming endpoint, so both the request and response types have the `stream` keyword. This means that both the server and the client will receive a stream. They can both read from the streams as well as write to them:
+The `TaskChat` method is a bidirectional streaming endpoint, so both the request and response types have the `stream` keyword. This means that both the server and the client will receive a stream. They can both read from the streams and write to them:
 
 ```proto
 service TaskService {

@@ -94,7 +94,7 @@ Yes, the test case has successfully passed.
 
 Let’s move ahead and complete other test scenarios, just follow along-with me. I would recommend watching the video because I will be doing same kind of operations for other test cases.
 
-In case you want to save more time, the source code is available on [Github](https://github.com/mukulmantosh/SampleDemo).
+In case you want to save more time, the source code is available on [GitHub](https://github.com/mukulmantosh/SampleDemo).
 
 If you have completed implementing all the test cases, then you can observe the below image, that's going to be our final output.
 

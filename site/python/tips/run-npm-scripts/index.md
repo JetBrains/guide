@@ -14,7 +14,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/Nv5vO2loJ_c"
 ---
 
-Modern web development means NodeJS tools which mean a `package.json` file. This file sometimes has helper scripts under the `scripts` key. Running these perform various project operations such as `build`.
+Modern web development means Node.js tools which mean a `package.json` file. This file sometimes has helper scripts under the `scripts` key. Running these perform various project operations such as `build`.
 
 PyCharm Professional makes it easy to browse and run these. There are several different paths to opening the `npm` tool window:
 

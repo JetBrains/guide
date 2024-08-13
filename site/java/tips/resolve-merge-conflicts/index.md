@@ -17,7 +17,7 @@ video: "https://youtu.be/GvAUA-jD9d0"
 
 Use <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Resolve Conflicts_ to open the _Conflicts_ dialog which helps you to visually resolve merge conflicts between two different versions of the code.
 
-- You can use the option available in the _Merge Revisions_ dialog and you should carefully review before you accept or ignore code changes as well as resolving conflicts. This dialog visually helps you to review and resolve merge conflicts.
+- You can use the option available in the _Merge Revisions_ dialog, and you should carefully review before you accept or ignore code changes as well as resolving conflicts. This dialog visually helps you to review and resolve merge conflicts.
 
 - **Note:** The **Resolve Conflicts** option from the Search Everywhere dialog will only display the _Conflicts_ dialog when there are merge conflicts in your code, otherwise you will get an error.
 

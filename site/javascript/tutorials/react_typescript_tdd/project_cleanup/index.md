@@ -52,7 +52,7 @@ TSLint was once popular for TypeScript projects, but they joined forces with Mic
 The [Prettier project](https://prettier.io) is a similar, but slightly different tool...it's a _code formatter_ more than a linter.
 It's gotten very popular and [our IDEs now have first-class support](https://www.jetbrains.com/help/webstorm/prettier.html#prettier_before_you_start).
 Let's setup Prettier as our code formatter, replacing the IDE's built-in code formatting.
-In fact, you can setup Prettier to work with ESLint.
+In fact, you can set up Prettier to work with ESLint.
 Let's do so, following the [Formatting Code Automatically](https://create-react-app.dev/docs/setting-up-your-editor/) instructions in the `create-react-app` docs, albeit without the pre-commit part.
 
 We'll start by adding some dev dependencies.

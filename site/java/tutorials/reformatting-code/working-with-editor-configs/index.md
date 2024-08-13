@@ -16,7 +16,7 @@ To use [EditorConfig files](https://www.jetbrains.com/help/idea/configuring-code
 
 IntelliJ IDEA allows you to manage all code style settings with a `.editorconfig` file providing the plugin is enabled. You need to put your `.editorconfig` file(s) into the root directory that contains the files whose settings you want to be managed with the `.editorconfig` file.
 
-All options from the `.editorconfig` file are applied to the directory it's in, as well as all of its sub-directories on top of the current project code style. If anything is not defined in `.editorconfig`, it's taken from the project settings. This means that it takes priority over settings that also appear in the IntelliJ IDEA Preferences/Settings dialog.
+All options from the `.editorconfig` file are applied to the directory it's in, as well as all of its subdirectories on top of the current project code style. If anything is not defined in `.editorconfig`, it's taken from the project settings. This means that it takes priority over settings that also appear in the IntelliJ IDEA Preferences/Settings dialog.
 
 Some settings in an `.editorconfig` file are IntelliJ IDEA specific, these are prefixed with `ij_`.
 

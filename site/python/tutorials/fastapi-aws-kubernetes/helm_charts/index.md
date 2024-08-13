@@ -68,7 +68,7 @@ Obviously, we need to store these charts and that is where we look for a Helm re
 
 ### Private Repositories
 
-You can store charts in private repositories like in Amazon S3 or GithubPages.
+You can store charts in private repositories like in Amazon S3 or GitHubPages.
 
 You will find all the helm charts in [Artifact Hub](https://artifacthub.io/).
 

@@ -15,4 +15,4 @@ Use the **Navigate | Test** feature to quickly go to a test for an element.
 
 Press <kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux).
 
-Press the same shortcut on a test and you'll be able to jump back to the element that is the subject of the test.
+Press the same shortcut on a test, and you'll be able to jump back to the element that is the subject of the test.

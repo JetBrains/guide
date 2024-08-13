@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/dvmZi_DWu9I"
 ---
 
-As discussed in [Debugging During Testing With NodeJS](../nodejs_debugging/), testing and debugging under NodeJS is very productive.
+As discussed in [Debugging During Testing With Node.js](../nodejs_debugging/), testing and debugging under Node.js is very productive.
 There are times, though, where you need a browser environment.
 Fortunately, JetBrains IDEs can remote-control the browser's execution, letting you stay inside the IDE.
 

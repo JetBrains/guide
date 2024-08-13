@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-04-09
-title: Github Actions
+title: GitHub Actions
 topics:
   - aws
   - django
