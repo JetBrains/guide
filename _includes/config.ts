@@ -186,7 +186,13 @@ function addShortcodes(eleventyConfig: any) {
 
 			let button = "";
 			if (action && url) {
-				button = `<p><a href="${url}" class="mt-2 button is-info is-rounded" target="_blank">${action}</a></p>`;
+				const isUrlRelativeToBase = !url.includes("http");
+				const formattedUrl = isUrlRelativeToBase
+					? url.endsWith("/")
+						? url
+						: `${url}/`
+					: url;
+				button = `<p><a href="${formattedUrl}" class="mt-2 button is-info is-rounded" target="_blank">${action}</a></p>`;
 			}
 
 			return `
