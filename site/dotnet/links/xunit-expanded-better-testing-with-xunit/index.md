@@ -20,4 +20,3 @@ xUnit is one of the most-used testing tools for C#, yet its full capability ofte
 Daniel is a software consultant at Lean TECHniques who helps teams deliver high-quality software by adopting various agile and lean practices, such as CI/CD, automated testing, and cloud development. With experience in developing software and consulting teams across several industries, his titles have included Technical Coach, Agile Coach, Tech Lead, and Software Developer. He finds professional fulfillment by working with others to understand their individual problems, improve their products, and help them to enjoy their jobs. The .NET ecosystem is where Daniel feels most at home.
 
 - [Website](https://daninacan.com/)
-- [Nightcap Games](https://www.nightcapgames.com/)

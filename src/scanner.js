@@ -45,6 +45,7 @@ const siteChecker = new SiteChecker(
 			"drupal.org",
 			"dev.epicgames.com",
 			"unrealengine.com",
+			"ai.meta.com",
 			"websitesetup.org",
 			"drupal.org",
 			"blog.structed.me", // remove after 2024-08-31
