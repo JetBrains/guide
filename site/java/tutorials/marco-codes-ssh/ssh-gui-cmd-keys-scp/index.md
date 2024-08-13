@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=UnM4QAumuCQ&start=174s"
 ---
 
-# SSH Basics
+## SSH Basics
 
 - How to use SSH via the command line
 - How to generate SSH Keys with SSH keygen

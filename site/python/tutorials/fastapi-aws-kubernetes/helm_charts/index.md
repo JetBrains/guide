@@ -16,13 +16,13 @@ video: "https://www.youtube.com/watch?v=wQJ6NBpHY0s"
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-# Helm
+## Helm
 
 In this tutorial we will be working with Helm. In simple terms, [Helm](https://helm.sh/) is a package manager for Kubernetes. It is a tool that streamlines installing and managing Kubernetes applications. Think of it like `Apt/Yum/Homebrew` for K8s.
 
 _Note: I will be showing a high-level use case of Helm. We won’t be getting deeper dive into Helm_
 
-# Installation
+## Installation
 
 So, let’s begin by installing Helm.
 
@@ -60,7 +60,7 @@ Okay, we have successfully installed Helm.
 
 ![step6](./steps/step6.png)
 
-# Repository
+## Repository
 
 We are going to work with Helm Charts. Helm Charts are simply Kubernetes YAML manifests combined into a single package that can be advertised to your Kubernetes clusters.
 
@@ -80,7 +80,7 @@ Let me try to check for the _NGINX_ package.
 
 As you can see there are multiple charts for NGINX. Some have been uploaded by organizations and some by users. You can filter them out based on **verified publishers** or **official providers**.
 
-# Installing NGINX Chart
+## Installing NGINX Chart
 
 This is how we are going to follow the installation steps.
 
@@ -263,7 +263,7 @@ It will provide a brief note about how to access your application.
 
 So, these are a few of the benefits of using Helm.
 
-# Creating Charts
+## Creating Charts
 
 Let’s move back to PyCharm and create a custom helm chart for our application.
 
@@ -348,7 +348,7 @@ And finally `values.yaml` file, it contains default values which are passed in T
 
 As I said in the beginning we won’t be getting deep dive into Helm, for in-depth knowledge I would recommend following the official Helm documentation.
 
-# Replacing Charts
+## Replacing Charts
 
 I have already created the Helm Charts for this tutorial, I am going to replace it with the default one.
 
@@ -584,7 +584,7 @@ I have done the same for Secret. As you see I have parameterized only a few thin
 
 All the chart files are already committed in my [source code](https://github.com/mukulmantosh/FastAPI_EKS_Kubernetes/), and you can directly check it out on GitHub.
 
-# Installing Custom Chart
+## Installing Custom Chart
 
 Let’s now try to install the custom helm chart which we have defined.
 

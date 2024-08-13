@@ -47,7 +47,7 @@ The `where` block says "run this test with each of the following values: a negat
 
 Run this test to see what happens.
 
-![](./15.png)
+![Run Test](./15.png)
 
 The test is effectively run four different times, the whole test is run once per value in that list for `sides`. IntelliJ IDEA shows the name of the test, then underneath that the test name plus the value of `sides` for each of the four values. All four of these runs passed, because our code correctly throws the expected Exception for each of these values.
 
@@ -59,7 +59,7 @@ def "should expect an Exception to be thrown for invalid input: #sides"() {
 
 Re-run this, and IntelliJ IDEA will show this updated method name with the value of "sides", and no extra noise.
 
-![](./16.png)
+![Updated Name](./16.png)
 
 (Note: this is the behaviour in the latest versions of Spock. If you don't see this behaviour, you may need to use the [@Unroll](https://spockframework.org/spock/docs/2.0/all_in_one.html#_method_uprolling_and_unrolling) annotation on your method).
 
@@ -81,7 +81,7 @@ def "should expect an Exception to be thrown for invalid input: #sides"() {
 
 Run the test to see one of the great things about data driven testing - all the tests are run even if one of the tests fails.
 
-![](./17.png)
+![All Run](./17.png)
 
 So we can see clearly which cases pass and which fail. If one of them fails, we can see what caused the problem. In our case, the test was expecting an Exception to be thrown and it wasn't. Go back and fix the test by replacing the `3` with a `1`.
 
@@ -104,7 +104,7 @@ def "should be able to create a polygon with #sides sides"() {
 
 Once again the test creates a polygon with a specified number of sides. Then it checks that the number of sides is the expected value. The `sides` variable is set up with a whole list of valid values. Running this test shows something similar to the previous test - a passing test for each of the values for `sides`.
 
-![](./18.png)
+![Passing Test](./18.png)
 
 This test is quite a simple one, and we can reduce the amount of code and do the same thing. We can inline the creation of the Polygon (by pressing <kbd>⌥⌘N</kbd> (macOS) / <kbd>Ctrl+Alt+N</kbd> (Windows/Linux) on the `polygon` variable name), so the constructor is called in the same line as the assertion. If we just have one statement which is setup, test, and assertion, we can use the `expect` label like we did in our very first simple assertion test. Of course, we still need the `where` block as this sets all the expected values for number of sides.
 

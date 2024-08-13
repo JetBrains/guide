@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=Xatr8AZLOsE&start=701s"
 ---
 
-# IntelliJ IDEA and Maven
+## IntelliJ IDEA and Maven
 
 search.maven.org - Dependency Search
 IntelliJ - Maven Reload Trick

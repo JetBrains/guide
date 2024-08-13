@@ -21,7 +21,7 @@ From the new project window, we can choose any of:
 
 ...from the left-hand options to create our JVM project. For this tutorial we're going to use [Gradle](../../working-with-gradle/) as our build tool.
 
-![](./01-new-project.png)
+![New Project](./01-new-project.png)
 
 Spock is a [Groovy](/tags/groovy/) testing framework, although we're going to use it to test Java code, so we could select Groovy as an additional library to add right at the start. However, we can also add Groovy later on so I'm not going to select it here.
 
@@ -29,7 +29,7 @@ We're using JDK 11 for this project, but there's no functionality here that requ
 
 Call the project `spock-tutorial`, and save it to some useful location.
 
-![](./02-project-name.png)
+![Project Name](./02-project-name.png)
 
 IntelliJ IDEA creates the files for the project and initialises the structure of the project. It's using Gradle to build this skeleton project to make sure all dependencies are downloaded and set up.
 

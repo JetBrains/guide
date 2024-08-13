@@ -20,17 +20,17 @@ int sides = polygon.numberOfSides
 
 In the `when` section of the test in the last example, we're actually reaching right inside the Java class to inspect the value of a private field. We can do this from Groovy, which can be helpful for testing private fields or methods, without compromising their visibility in production code. However, IntelliJ IDEA will give us a warning in case this is not something we want to do intentionally.
 
-![](./11.png)
+![Warning](./11.png)
 
 Often, if we need something visible for testing we probably will need it visible in production code too.
 
 Go into your Polygon class and press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) on the field and get IntelliJ IDEA to create a getter for the field.
 
-![](./12.png)
+![Create Getter](./12.png)
 
 Look at the test now you've made this change to the Polygon class. Now there's something odd about the `polygon.numberOfSides` call. The warning has gone, and `numberOfSides` is no longer in bold, it no longer looks like it's referencing a field. In fact, it's not. If we hold down <kbd>⌘</kbd> (macOS) / <kbd>Ctrl</kbd> (Windows/Linux), and move our mouse over this, we can see it's actually referencing the method `getNumberOfSides`.
 
-![](./13.png)
+![Mouseover Method](./13.png)
 
 If we're calling a Java getter from Groovy code, we can miss out the "get" at the start of the method name, and Groovy will still use the getter rather than the field. This can be useful to reduce noise, but you can still use the full method name with "get" if you prefer, it depends upon what you think is most readable. Sometimes removing the "get" might be confusing.
 

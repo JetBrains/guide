@@ -20,7 +20,7 @@ which recently got huge popularity over the Internet, it’s backed by
 [starlette](https://www.starlette.io/) and [pydantic](https://pydantic-docs.helpmanual.io/) and based on
 standard [type hints](https://www.python.org/dev/peps/pep-0484/).
 
-# Background
+## Background
 
 ![fastapi](./fastapi.png)
 
@@ -46,7 +46,7 @@ For reference, you can visit the website [fastapi.tiangolo.com](https://fastapi.
 
 FastAPI is developed by [Sebastian Ramirez](https://twitter.com/tiangolo), who is currently working in Forethought as a Staff Software Engineer. He has contributed code to countless open source projects like Typer & SQLModel as well as related to DevOps, Docker, Spark, Python, Angular and many more.
 
-# Kubernetes
+## Kubernetes
 
 ![kubernetes-diagram](./container-flow.png)
 
@@ -59,7 +59,7 @@ The [Kubernetes](https://kubernetes.io/) Project was open-sourced by Google in 2
 It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon 15 years of experience
 of running production workloads at Google, combined with best-of-breed ideas and practices from the community.
 
-# Google Borg System
+## Google Borg System
 
 ![borg](./borg.png)
 
@@ -75,7 +75,7 @@ You can also say Borg is the **predecessor** to Kubernetes.
 
 To know more about Borg, read the research paper : [Large-scale cluster management at Google with Borg](https://research.google/pubs/pub43438/)
 
-# AWS Elastic Kubernetes Service
+## AWS Elastic Kubernetes Service
 
 ![eks](./eks.png)
 
@@ -85,7 +85,7 @@ It’s not going to happen that we worked on Kubernetes, but then not deploy it 
 
 We will be deploying our application on AWS using the [EKS (Elastic Kubernetes Service](https://aws.amazon.com/eks/) and setting a three-node cluster along-with that, we will be also setting up [RDS](https://aws.amazon.com/rds/), [ElastiCache](https://aws.amazon.com/elasticache/) and a custom domain with [SSL](https://aws.amazon.com/certificate-manager/).
 
-# Helm Charts
+## Helm Charts
 
 ![helm](./helm.png)
 
@@ -96,7 +96,7 @@ Helm is a graduated project in the [CNCF (Cloud Native Computing Foundation)](ht
 
 And finally at last, I am going to give a sneak peek into Helm Charts, where we are going to package our application and indeed which help software vendors and developers to preconfigure their applications with sensible defaults.
 
-# Source Code
+## Source Code
 
 ![source_code](./source_code.png)
 

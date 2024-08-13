@@ -15,7 +15,7 @@ video: "https://www.youtube.com/watch?v=hRYNGvBm8dk"
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-# ReDoc
+## ReDoc
 
 As you know FastAPI provides automatic docs support using Swagger UI. There is one more docs page provided by FastAPI known as **[Redoc](https://github.com/Redocly/redoc)**.
 
@@ -39,7 +39,7 @@ You can even disable the docs along with changing the docs url path.
 
 ![step4](./steps/step4.png)
 
-# HTTPClient
+## HTTPClient
 
 There is one more thing I would like to mention. You can test the APIs through PyCharm itself via [HTTPClient](https://www.jetbrains.com/help/pycharm/http-client-in-product-code-editor.html).
 
@@ -57,7 +57,7 @@ You can see we are receiving the response, this is something you can try out whe
 
 ![step8](./steps/step8.png)
 
-# Cart
+## Cart
 
 Coming back to the tutorial, we are going to focus on working on two modules: Order and Cart, both are interrelated.
 

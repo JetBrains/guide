@@ -51,7 +51,7 @@ private static void checkDefaultShape(Polygon polygon, Renderer renderer) {
 
 Run the test - it will pass. However, if we change the code so it should fail, we'll see that it still passes. This helper method is not doing what we expect.
 
-![](./23.png)
+![Failing Helper](./23.png)
 
 If we move our assertions into a helper method like this, it can no longer use the comparison operators to define the expected behaviour. Instead, we need to add the `assert` keyword specifically.
 

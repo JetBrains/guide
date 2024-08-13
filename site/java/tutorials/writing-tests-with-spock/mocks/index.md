@@ -56,7 +56,7 @@ The `then` block defines the expectations. Spock has a [nice, clear syntax for d
 
 Run this test now, it should fail. This is because the methods don't do anything yet. We expected to see this drawLine method called four times, but it wasn't called at all.
 
-![](./22.png)
+![Failing Test](./22.png)
 
 Go into the implementation of the `Polygon.draw` method and change it to call the renderer's drawLine method in here as many times as there are sides (note that this is an extremely over-simplified example to demonstrate the testing):
 

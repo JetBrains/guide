@@ -35,7 +35,7 @@ Note that in this test the mock Renderer created in the `given` block is called 
 
 Change the test so it fails, so we can see what this looks like:
 
-![](./24.png)
+![Failing Test](./24.png)
 
 As with the helper method, if the first assertion fails, it doesn't run any further assertions. This might be what you want from your test, if one value is wrong the whole test should fail regardless. However, sometimes we want to run all the assertions, so we can see exactly what's working and what's not.
 

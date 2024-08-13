@@ -12,7 +12,7 @@ video: "https://youtu.be/caW7eLThBwQ"
 
 Hello everyone, welcome to the part one of the AWS PyCharm tutorial series. Today I will be explaining in brief about micro-services architecture and different serverless frameworks.
 
-# Background
+## Background
 
 Before taking a deep dive into micro-services, let's understand first what is a monolithic architecture. In a traditional monolithic architecture, all processes are tightly coupled and run in a single service. This means that if one process of the application experiences a spike in demand, then the entire architecture must be scaled. If any single service is not functioning properly, then it's going to affect all the services.
 
@@ -28,13 +28,13 @@ There are lots of benefits when it comes to micro-services.
 
 To know more about micro-services I recommend reading [aws.amazon.com/microservices](https://aws.amazon.com/microservices/)
 
-# AWS Lambda
+## AWS Lambda
 
 ![aws_lambda](aws_lambda.png)
 
 In this course we will be focusing on one of the products that AWS offers for creating serverless applications : AWS Lambda, run code without thinking about servers. Yes that is true. As a customer you don't need to manage any servers because those servers are being managed by AWS. AWS Lambda automatically scales your application by running code in response to each trigger. You are not running your app for 24x7 anymore, and you'll be charged against the time that your functions were running.
 
-# AWS SAM (Serverless Application Model)
+## AWS SAM (Serverless Application Model)
 
 ![aws_sam](aws_sam.png)
 
@@ -43,7 +43,7 @@ applications on AWS. AWS SAM is based on [AWS CloudFormation](https://aws.amazon
 
 For reference, you can visit [aws.amazon.com/serverless/sam](https://aws.amazon.com/serverless/sam/)
 
-# Serverless Frameworks
+## Serverless Frameworks
 
 There are many ways to create serverless applications and one of them is the serverless framework. It is an open source serverless framework which enables developers to deploy cloud applications on any FaaS (Function As A Service) provider. While the framework is open source, they also provide enterprise support.
 

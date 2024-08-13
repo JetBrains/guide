@@ -19,7 +19,7 @@ In this tutorial we are going to set up the authentication process by protecting
 
 We will cover the security part. You can also follow the FastAPI documentation. It has a clear and detailed explanation.
 
-# Installing Dependencies
+## Installing Dependencies
 
 We will be using the **OAuth2PasswordBearer**. Make sure to install the **python-multipart** dependency.
 
@@ -49,7 +49,7 @@ There are some additional dependencies required for this setup, like the **pytho
 
 Just for speeding up the installation process, clone `requirements.txt` from the source [code](https://github.com/mukulmantosh/FastAPI_EKS_Kubernetes).
 
-# JSON Web Tokens (JWT)
+## JSON Web Tokens (JWT)
 
 To know about JWT, visit this [link](https://jwt.io/).
 
@@ -256,7 +256,7 @@ def get_current_user(data: str = Depends(oauth2_scheme)):
     return verify_token(data, credentials_exception)
 ```
 
-# Defining Routes
+## Defining Routes
 
 I will come back to the router and resume working on the login endpoint.
 
@@ -375,7 +375,7 @@ async def delete_user_by_id(user_id: int, database: Session = Depends(db.get_db)
     return await services.delete_user_by_id(user_id, database)
 ```
 
-# Testing Auth
+## Testing Auth
 
 Once everything is done, you will see in the Swagger UI that some of your endpoints are now protected and can't be directly accessed.
 

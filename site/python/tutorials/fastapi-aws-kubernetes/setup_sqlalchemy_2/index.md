@@ -15,7 +15,7 @@ video: "https://www.youtube.com/watch?v=CWm40_n0eu8"
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. In this tutorial we are going to connect FastAPI with Postgres.
 
-# DataGrip
+## DataGrip
 
 Before moving ahead, let us connect to our Postgres database via the [DataGrip](https://www.jetbrains.com/datagrip/) plugin which is already bundled in PyCharm Professional.
 
@@ -35,7 +35,7 @@ Once the connection is successful, I will click on **Apply** and then **OK**.
 
 You can observe that there are no tables, so let’s begin by creating our database connection.
 
-# Database Connection
+## Database Connection
 
 I will create a `db.py` file and do the necessary imports from sqlalchemy and the config file from where I will need the environment variables like the username, password etc.
 
@@ -89,7 +89,7 @@ def get_db():
         db.close()
 ```
 
-# Migrations
+## Migrations
 
 We are done with the db config part, next we need to deal with something called **migrations**.
 
@@ -107,7 +107,7 @@ Let’s begin by installing the package alembic with version 1.6.5, this is the 
 
 After successfully installing alembic, we will move ahead with initializing the setup.
 
-# Alembic Setup
+## Alembic Setup
 
 I am going to type _alembic init alembic_.
 
@@ -234,7 +234,7 @@ else:
 
 We are done with the alembic setup. Next, we are going to create models for our user module.
 
-# User Model
+## User Model
 
 I am going to create **models.py** file under **user** and perform necessary imports.
 
@@ -332,7 +332,7 @@ class User(Base):
 
 ```
 
-# Migrating New Changes
+## Migrating New Changes
 
 We are done with the implementation for our user model. Next, we are going to create our first migration.
 

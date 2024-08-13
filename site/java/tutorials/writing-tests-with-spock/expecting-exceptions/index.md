@@ -36,7 +36,7 @@ thrown(TooFewSidesException.class)
 
 Run this test to see if the behaviour of the code is correct. The test should fail because the Polygon class doesn't throw this Exception yet.
 
-![](./14.png)
+![Run Test](./14.png)
 
 Change the constructor of [Polygon](https://github.com/trishagee/spock-testing-demo/blob/main/src/main/java/com/mechanitis/demo/spock/Polygon.java) so that it checks for the number of sides and throws the Exception if there are fewer than three sides:
 

@@ -15,7 +15,7 @@ Now the basics of the project have been created, let's take a closer look and se
 
 IntelliJ IDEA adds JUnit 5 as the default testing framework, which is a logical choice, but we want to use Spock instead of JUnit. We can [generate a new dependency](https://www.jetbrains.com/help/idea/work-with-gradle-dependency-diagram.html#add_gradle_dependency) for the libraries we want using <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) in the `build.gradle` file and then choosing "Add Maven artifact dependency".
 
-![](./03-spock-dependency.png)
+![Spock Dependency](./03-spock-dependency.png)
 
 We can search for "spock" in the artifact search, and add the [latest version of the spock-core library](https://github.com/spockframework/spock/releases). This is currently Spock 2.0:
 
@@ -51,6 +51,6 @@ With a mixed language project like this one, one way to organise the files is to
 
 From the Project window, select the `test` folder and press <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux). Select "Directory", and start typing "groovy" in the **New Directory** dialog. IntelliJ IDEA should suggest "groovy" in the dropdown because we're using the Groovy plugin in Gradle.
 
-![](./04-groovy-dir.png)
+![Groovy Directory](./04-groovy-dir.png)
 
 Now you know how to set up your project to use Spock. Next, we're going to create our first Spock test.

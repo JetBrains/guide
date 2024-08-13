@@ -48,7 +48,7 @@ The IDE will ask you which files you want to put into this first commit. You cou
 
 Everything else looks good to commit, you can use the default commit message and click **Enter** to commit it.
 
-### Sharing a Project on GitHub
+### Share to GitHub
 
 IntelliJ IDEA creates a local Git repository for the project and then pushes it to your GitHub profile as a new repository with the details you just entered.
 
@@ -58,4 +58,4 @@ When this process is finished, IntelliJ IDEA will pop up a balloon, and you can 
 
 We can see the repository, the code, the commit message, and the description in GitHub too.
 
-![](shared-on-github-browser.png)
+![Shared on GitHub](shared-on-github-browser.png)

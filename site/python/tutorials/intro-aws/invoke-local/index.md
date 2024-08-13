@@ -12,7 +12,7 @@ video: "https://youtu.be/xEnKghx6fuk"
 
 In this tutorial we are going to run our lambda functions inside a local container.
 
-# Docker
+## Docker
 
 ![invoke_step_1](steps/step1.png)
 
@@ -21,7 +21,7 @@ infrastructure, so you can deliver software quickly. If you are using Windows th
 
 Just follow the official documentation for the installation process, and you will be good to go.
 
-# Configurations
+## Configurations
 
 PyCharm Professional is already running. I will select **Run**, and then navigate to _Edit Configurations_.
 

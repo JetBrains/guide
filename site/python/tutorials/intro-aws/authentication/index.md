@@ -16,7 +16,7 @@ It is an API Gateway feature that uses a Lambda function to control access to yo
 Interested to know more about custom authorizers? Please visit [Configure a Lambda authorizer using the API Gateway console
 ](https://docs.aws.amazon.com/apigateway/latest/developerguide/configure-api-gateway-lambda-authorization-with-console.html).
 
-# Custom Authorizers
+## Custom Authorizers
 
 Okay, let me first remove the "Authorizer" which I have declared in the `template.yaml` file. By the way, if you have observed from the beginning, we are using Authorizer as "None", but we did not set up the Default Authorizer. If you try to deploy the functions it’s not going to work, and it would lead to an error because you haven’t set up the authorizer. So, let’s begin.
 

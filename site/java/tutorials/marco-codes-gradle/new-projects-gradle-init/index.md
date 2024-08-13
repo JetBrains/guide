@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=gKPMKRnnbXU&start=1120s"
 ---
 
-# Creating new Gradle Project
+## Creating new Gradle Project
 
 - How to create new Gradle projects on the command line.
 - Using the 'gradle init' command line tool.

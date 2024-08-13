@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=gKPMKRnnbXU&start=64s"
 ---
 
-# Getting Started
+## Getting Started
 
 - How to execute 'gradlew build' and what it does.
 - What Gradle Wrapper is.

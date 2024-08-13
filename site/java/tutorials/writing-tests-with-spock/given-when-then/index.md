@@ -68,7 +68,7 @@ You can read a given/when/then test like this:
 
 Run this test to see if it passes. You should get an output like:
 
-![](./10.png)
+![Run Test](./10.png)
 
 Using these labels might look like it's doubling the number of lines of code for a test method, but remember that tests often have many more lines of code in them, and grouping them in this way helps describe what's happening.
 

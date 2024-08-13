@@ -11,7 +11,7 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=gKPMKRnnbXU&start=421s"
 ---
 
-# Gradle Basics
+## Gradle Basics
 
 - What 'gradlew clean' does.
 - What 'gradlew test' does.

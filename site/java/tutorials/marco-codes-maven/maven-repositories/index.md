@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=Xatr8AZLOsE&start=1158s"
 ---
 
-# Maven repositories
+## Maven repositories
 
 - What Maven repositories are.
 - Where your local Maven repository is stored and how to use it.

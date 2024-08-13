@@ -12,7 +12,7 @@ video: "https://youtu.be/mqNTLSOcSOw"
 
 In this tutorial we are going to deploy our functions in AWS and test it through Postman.
 
-# Beginning Launch in AWS
+## Beginning Launch in AWS
 
 ![deploy_step_1](steps/step1.png)
 

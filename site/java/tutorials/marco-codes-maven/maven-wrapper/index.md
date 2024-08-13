@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=Xatr8AZLOsE&start=177s"
 ---
 
-# Maven wrapper
+## Maven wrapper
 
 - What Maven Wrapper (mvnw) is and how to use it.
 - How to check if a Maven project is valid - mvn validate.

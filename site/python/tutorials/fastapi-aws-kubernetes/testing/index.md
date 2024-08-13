@@ -17,13 +17,13 @@ Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 In this tutorial we are going to work on Unit Testing using [Pytest](https://docs.pytest.org/) and [Asyncio](https://docs.python.org/3/library/asyncio.html).
 
-# AnyIO
+## AnyIO
 
 As you can see on my screen, recently FastAPI introduced [AnyIO](https://anyio.readthedocs.io/en/stable/). AnyIO is an asynchronous networking and concurrency library that works on top of either asyncio or [Trio](https://trio.readthedocs.io/en/stable/).
 
 ![step1](./steps/step1.png)
 
-# Installing Dependencies
+## Installing Dependencies
 
 We won’t be working on anyio because our video was recorded earlier, and we will be using the **pytest-asyncio** module.
 
@@ -48,7 +48,7 @@ There is an interesting article written by [Anthony Shaw](https://tonybaloney.gi
 
 - [https://tonybaloney.github.io/posts/async-test-patterns-for-pytest-and-unittest.html](https://tonybaloney.github.io/posts/async-test-patterns-for-pytest-and-unittest.html)
 
-# Setting Up
+## Setting Up
 
 Coming back to PyCharm, as you know for testing we need to have a separate test database which we have already created.
 
@@ -156,7 +156,7 @@ def create_dummy_user(tmpdir):
 
 We are done now with the configuration. Let’s begin our first test.
 
-# Begin Testing
+## Begin Testing
 
 I will create different modules and place them under tests. We will begin first with users.
 

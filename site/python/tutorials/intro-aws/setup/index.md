@@ -14,7 +14,7 @@ video: "https://youtu.be/o4LdbOjarC0"
 
 In this tutorial step, let's install all the required dependencies.
 
-# AWS CLI
+## AWS CLI
 
 Let's start first by downloading the AWS [Command-Line Interface](https://aws.amazon.com/cli). As I am using a Windows machine, I will download the 64-bit installer. You can follow the same website if you are using Mac or Linux.
 
@@ -25,7 +25,7 @@ Before moving forward with AWS SAM, make sure you have installed following depen
 - AWS CLI
 - [Docker](https://www.docker.com/)
 
-# AWS SAM (Serverless Application Model)
+## AWS SAM (Serverless Application Model)
 
 ![AWS SAM](aws_sam.png)
 
@@ -34,7 +34,7 @@ A serverless application is a combination of Lambda functions, event sources, an
 
 You can download the setup file from [aws.amazon.com/serverless/sam](https://aws.amazon.com/serverless/sam) and follow the same installation process like you did above for the CLI.
 
-# AWS Toolkit
+## AWS Toolkit
 
 This plugin is developed by the Amazon AWS team. It is an open source plug-in for the PyCharm IDE that makes it easier to create, debug, and deploy python applications on Amazon Web Services. The toolkit provides an integrated experience for developing serverless applications, including assistance for getting started, step-through debugging, and deploying from the IDE.
 
@@ -48,7 +48,7 @@ To install the plugin follow the below steps.
 
 ![AWS Toolkit](aws_toolkit.png)
 
-# AWS Management Console
+## AWS Management Console
 
 Before starting up the project make sure that you have an AWS Account. As you may know, AWS provides a free tier for some of the services,
 up to 12 months. Also, there are some services which are even free after 12 months, such as AWS Lambda, which provides 1 million free requests per month and 400,000 GB-seconds of compute time per month.
@@ -57,7 +57,7 @@ To know more about AWS, please visit [aws.amazon.com](https://aws.amazon.com/)
 
 ![AWS Management Console](aws_management_console.png)
 
-# Identity & Access Management (IAM)
+## Identity & Access Management (IAM)
 
 Once you have created an account and successfully logged into AWS, then we will goto IAM section. IAM stands for Identity & Access Management. IAM lets you manage access to AWS services and resources securely.
 

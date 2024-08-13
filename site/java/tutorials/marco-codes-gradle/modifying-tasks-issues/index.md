@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=gKPMKRnnbXU&start=1040s"
 ---
 
-# Modifying Gradle Tasks
+## Modifying Gradle Tasks
 
 - How to modify Gradle tasks.
 - Common issues with Gradle that people encounter during builds.

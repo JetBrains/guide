@@ -31,13 +31,13 @@ This project is currently using JUnit 4.13, but these guidelines apply to any ve
 
 The first thing we need to do in order to migrate to JUnit 5 is to add the JUnit 5 dependencies. We can get IntelliJ IDEA to do this for us, if we press <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux), within the POM file, the IDE will offer the option of adding a new dependency:
 
-![](add-dependency.png)
+![Add Dependency](add-dependency.png)
 
 For most test suites, all we need to do is to add two new dependencies. To start with let's add a dependency on the basic `junit-jupiter-api`.
 
 IntelliJ IDEA has identified that 5.7.2 is the current release version.
 
-![](mvn-artifact-search.png)
+![Artifact Search](mvn-artifact-search.png)
 
 IntelliJ IDEA updates the Maven POM file with the new dependency version and imports.
 

@@ -19,7 +19,7 @@ In this tutorial I will do some honorable mentions of reference materials which 
 
 Let’s begin.
 
-# FastAPI
+## FastAPI
 
 ![step1](./steps/step1.png)
 
@@ -35,29 +35,29 @@ Source: [https://github.com/tiangolo/fastapi/issues](https://github.com/tiangolo
 
 If you don’t find the answer go ahead and ask, definitely you are going to get help from the FastAPI community, and I would also suggest helping others in the problems the users are facing. In this way the community grows, It’s a great experience working with like-minded people.
 
-# PyCharm by JetBrains
+## PyCharm by JetBrains
 
 Interesting videos provided by the official PyCharm YouTube Channel.
 
-## Smarter FastAPI Tooling
+### Smarter FastAPI Tooling
 
 ![fastapi_smarter_api_tooling](./steps/pycharm_video_1.jpg)
 
 Source: [https://www.youtube.com/watch?v=r6fBoBTRfT4](https://www.youtube.com/watch?v=r6fBoBTRfT4)
 
-## Let's Build a Fast, Modern Python API with FastAPI
+### Let's Build a Fast, Modern Python API with FastAPI
 
 ![modern_api_fast_api](./steps/pycharm_video_2.jpg)
 
 Source: [https://www.youtube.com/watch?v=sBVb4IB3O_U](https://www.youtube.com/watch?v=sBVb4IB3O_U)
 
-## 10 Reasons You'll Love PyCharm Even More in 2021
+### 10 Reasons You'll Love PyCharm Even More in 2021
 
 ![love_pycharm](./steps/pycharm_video_3.jpg)
 
 Source: [https://www.youtube.com/watch?v=sJriZQsMHrw](https://www.youtube.com/watch?v=sJriZQsMHrw)
 
-# Talk Python
+## Talk Python
 
 If you are interested in taking your Python knowledge to the next level then I would suggest watching video courses provided by Talk Python Training.
 
@@ -68,7 +68,7 @@ Source: [https://training.talkpython.fm/](https://training.talkpython.fm/)
 [Michael Kennedy](https://twitter.com/mkennedy) and his team really create amazing courses. They have two courses on FastAPI, if you want to get deeper inside do check them out. Also, if you work with PyCharm then definitely you will always have a feeling that I know only 10% of PyCharm. Nothing to worry about because there
 is a great course [Effective PyCharm](https://training.talkpython.fm/courses/explore_pycharm/mastering-pycharm-ide), definitely check this out if you want to take productivity to the next level.
 
-# TestDriven.IO
+## TestDriven.IO
 
 ![step4](./steps/step4.png)
 
@@ -76,7 +76,7 @@ Source: [https://testdriven.io/](https://testdriven.io/)
 
 TestDriven.IO is an amazing website with quality content. There are good quality contents related to Python, Flask, TDD, FastAPI and also working with task queues like Celery in Django or FastAPI.
 
-# AWS
+## AWS
 
 If you have no knowledge about AWS or planning to take AWS certification in the future, then I would recommend watching courses in [Udemy](https://www.udemy.com/) provided by [Stephane Maarek](https://aws.amazon.com/developer/community/heroes/stephane-maarek/), amazing content starting from no cloud experience in AWS to doing advanced level stuff.
 
@@ -84,7 +84,7 @@ If you have no knowledge about AWS or planning to take AWS certification in the 
 
 Source: [https://www.udemy.com/user/stephane-maarek/](https://www.udemy.com/user/stephane-maarek/)
 
-# Kubernetes
+## Kubernetes
 
 Interested in working with Kubernetes then definitely check out the official Kubernetes documentation with tons of examples.
 
@@ -101,7 +101,7 @@ Sources:
 - [https://www.udemy.com/user/mumshad-mannambeth/](https://www.udemy.com/user/mumshad-mannambeth/)
 - [https://kodekloud.com/](https://kodekloud.com/)
 
-# Elastic Kubernetes Service
+## Elastic Kubernetes Service
 
 You have AWS & Kubernetes experience, and now you want to play with EKS which is the Elastic Kubernetes Service. This course provided by [Kalyan Reddy](https://www.stacksimplify.com/) is going to be one of the best. He covers everything related to EKS starting from the ground level whether it is horizontal pod autoscaler, cluster autoscaler, ExternalDNs or setting up logging. I would say this course I liked very much as it covered in-depth knowledge about EKS.
 
@@ -113,9 +113,9 @@ Sources:
 - [https://www.stacksimplify.com/](https://www.stacksimplify.com/)
 - [https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/](https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/)
 
-# Books
+## Books
 
-## Helm
+### Helm
 
 ![step9](./steps/step9.jpg)
 
@@ -123,7 +123,7 @@ Next, I would recommend reading some books like Learning Helm written by the cre
 
 Source: [https://www.oreilly.com/library/view/learning-helm/9781492083641/](https://www.oreilly.com/library/view/learning-helm/9781492083641/)
 
-## Kubernetes: Up and Running, 2nd Edition
+### Kubernetes: Up and Running, 2nd Edition
 
 ![step10](./steps/step10.jpg)
 
@@ -136,7 +136,7 @@ Sources:
 - [https://www.oreilly.com/library/view/kubernetes-up-and/9781492046523/](https://www.oreilly.com/library/view/kubernetes-up-and/9781492046523/)
 - [https://www.oreilly.com/library/view/kubernetes-up-and/9781098110192/](https://www.oreilly.com/library/view/kubernetes-up-and/9781098110192/)
 
-## Kubernetes Best Practices
+### Kubernetes Best Practices
 
 There is one more book where he has contributed and that is Kubernetes Best Practices. Great book, if you have already got the taste of working in Kubernetes and going to work in the production systems do check this out.
 
@@ -144,7 +144,7 @@ There is one more book where he has contributed and that is Kubernetes Best Prac
 
 Source: [https://www.oreilly.com/library/view/kubernetes-best-practices/9781492056461/](https://www.oreilly.com/library/view/kubernetes-best-practices/9781492056461/)
 
-# YouTube Community
+## YouTube Community
 
 ![step12](./steps/step12.png)
 

@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=gKPMKRnnbXU&start=859s"
 ---
 
-# Scopes
+## Scopes
 
 - What the 'implementation scope' in Gradle means.
 - What the 'API scope' in Gradle means.

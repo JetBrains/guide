@@ -16,7 +16,7 @@ video: "https://www.youtube.com/watch?v=cj8yw1u__D0"
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. In this tutorial we are going to implement REST APIs for our User module. Before
 moving forward, I need to speak about Pydantic and its benefits.
 
-# Pydantic
+## Pydantic
 
 You might know that FastAPI & Typer use Pydantic. [Pydantic](https://pydantic-docs.helpmanual.io/) helps in data validation and settings management. It also enforces Python
 type hints during _runtime_. It’s extremely fast and easy to use as well!
@@ -37,7 +37,7 @@ Let me go back to the IDE, and create a few files which I will explain their usa
 
 ![step2](./steps/step2.png)
 
-# Schema Definition
+## Schema Definition
 
 In the `schema.py` file, We are going to write our pydantic models.
 
@@ -73,7 +73,7 @@ Image Credits : Pydantic
 
 Our schema has been successfully defined, now switch back to **router.py** file.
 
-# API Router
+## API Router
 
 Once your application starts growing up, you might need to place your path operations in a specific file like what we are going to do in our `router.py` file. This helps better organize your code and focus only on the user routes.
 
@@ -101,7 +101,7 @@ not a valid pydantic field.
 
 ![step7](./steps/step7.png)
 
-# Dependency Injection
+## Dependency Injection
 
 To overcome that we are going to use **Depends**, which is basically a [Dependency Injection](https://fastapi.tiangolo.com/tutorial/dependencies/) provided by FastAPI itself.
 
@@ -118,7 +118,7 @@ This is very useful when you need to:
 
 I encourage you to check more about this in the FastAPI Documentation. You can even create [sub-dependencies](https://fastapi.tiangolo.com/tutorial/dependencies/sub-dependencies/) and [global dependencies](https://fastapi.tiangolo.com/tutorial/dependencies/global-dependencies/) as well.
 
-# Validation
+## Validation
 
 Moving ahead with our API creation, we need to first make sure to check whether email already exists in the database or not. If it exists then we won’t allow the user to register again with the same email address.
 
@@ -154,7 +154,7 @@ Do check out SQLModel documentation, it’s quite interesting.
 
 ![step10](./steps/step10.png)
 
-# User Register Service
+## User Register Service
 
 Coming back to PyCharm, let’s move ahead with our register function. I am going to do as usual
 necessary imports.

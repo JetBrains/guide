@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=Xatr8AZLOsE&start=904s"
 ---
 
-# Maven Commands
+## Maven Commands
 
 - What Maven's default directory structure looks like.
 - What 'mvn clean' does.

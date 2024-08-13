@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=Xatr8AZLOsE&start=1348s"
 ---
 
-# Multi-module projects
+## Multi-module projects
 
 - How Maven multi-module-projects work.
 - How to structure your pom.xmls.

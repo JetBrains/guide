@@ -32,11 +32,11 @@ We use the `where` label again to define the inputs to the test. This time it's 
 
 Run this test to see something similar to the data pipes tests.
 
-![](./19.png)
+![Run Test](./19.png)
 
 There's a passing "test" for each of the rows in the data table, described with the method name and the values for each of the input variables. If we make one of these fail we'll see all the cases are run and one of them fails.
 
-![](./20.png)
+![Failed Test](./20.png)
 
 Spock's [power assertions](http://spockframework.org/spock/docs/2.0/all_in_one.html#_assertions_with_explicit_messages_now_include_power_assertions_output) show the results of calculations, all the input values, and the comparison that failed. We can use this to fix the problem.
 
@@ -52,7 +52,7 @@ class java.lang.Math
 
 We can make these data tables more readable by creating a separator between input and output columns. Try using IntelliJ IDEA's [clone caret](https://www.jetbrains.com/help/idea/pro-tips.html#multiple-selections) feature - put the caret next to the `|` between `b` and `max` and press <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl</kbd> (Windows/Linux), keeping it held down on the second press, and pressing the down arrow to create a second caret underneath the first - do this until you have four carets, one for each line. Now if we type a second pipe, it appears on all the lines.
 
-![](./21.png)
+![Second Pipe](./21.png)
 
 This pipe doesn't change the meaning of the test, it simply helps us to understand the table better. In our case, we've grouped the expected output on one side, and the inputs on the other. Run the test to make sure it works as expected.
 

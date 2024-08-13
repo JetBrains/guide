@@ -14,7 +14,7 @@ video: "https://youtu.be/yQd2N2tYN0c"
 
 In this tutorial step, we will be setting up the new project and exploring the project structure.
 
-# New Project
+## New Project
 
 As you can see the latest PyCharm Interface as they are offering in 2020.3
 
@@ -38,13 +38,13 @@ There is something new added by the AWS plugin to the interface called _Package 
 
 _Zip_ is basically archiving and storing it into Amazon S3 and _Image_ is storing the Docker Images in AWS ECR also known as Amazon Elastic Container Registry. We are now good to go. I will click **Create**, and we will wait for a few minutes for the project to get initialized.
 
-# AWS Toolkit
+## AWS Toolkit
 
 Before doing a deep dive into the Project Layout if you want to get more information about the AWS Toolkit please visit the website [aws.amazon.com/pycharm](https://aws.amazon.com/pycharm/) which is offered by AWS. This Toolkit is developed by AWS so over here you can see what are the features they are providing along-with their recorded webinars and all other information you can find in their website.
 
 ![aws_toolkit](aws_toolkit.png)
 
-# Project Layout
+## Project Layout
 
 You can see how this project looks like. This is a small kind of blueprint or starter template.
 
@@ -98,7 +98,7 @@ In the above image you can see a sample event which can be used for testing the 
 
 A "tests" directory is available. If you intend to create unit tests, your locally executed Lambda functions can utilize the identical sample event.json file.
 
-# Template Anatomy
+## Template Anatomy
 
 ![explore_step_11](steps/step11.png)
 

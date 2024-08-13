@@ -19,7 +19,7 @@ In this tutorial we will be focusing on deploying our application in [Kubernetes
 
 So, let’s get started.
 
-# Minikube
+## Minikube
 
 For our tutorial, we will be using minikube.
 
@@ -31,7 +31,7 @@ Also, I will be talking at a high level. We won’t be getting a deeper dive int
 
 If not I will share some links in my reference video where you can learn those topics separately.
 
-# Installing Dependencies
+## Installing Dependencies
 
 Let’s begin by updating the system dependencies.
 
@@ -129,7 +129,7 @@ You can see that our single node is running perfectly fine.
 
 Now, it's time to come back to PyCharm and write our Dockerfile.
 
-# Dockerfile
+## Dockerfile
 
 According to the Docker documentation, a Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
 
@@ -193,7 +193,7 @@ USER app
 CMD gunicorn --bind 0.0.0.0:5000 main:app -k uvicorn.workers.UvicornWorker
 ```
 
-## Plugins
+### Plugins
 
 There are some cool plugins available for Docker & Kubernetes in PyCharm which I forgot to mention. Let me quickly install them.
 
@@ -265,7 +265,7 @@ We are done with the Dockerfile and the image got built successfully, and we hos
 
 Now, it’s time to play with Kubernetes.
 
-# K8s Manifests
+## K8s Manifests
 
 I am going to create a directory in root and name it _k8s_. As you know k8s is a short form of Kubernetes.
 
@@ -275,7 +275,7 @@ K8s is just an abbreviation of Kubernetes ("K" followed by 8 letters "ubernete" 
 
 Under K8s directory, I will create multiple directories.
 
-## Namespace
+### Namespace
 
 First I will create a _namespace_. In Kubernetes, namespaces provide a mechanism for isolating groups of resources within a single cluster. Names of resources need to be unique within a namespace, but not across namespaces.
 
@@ -312,7 +312,7 @@ Don’t worry, at the end of this tutorial I will explain the flow using a diagr
 
 ![step22](./steps/step22.png)
 
-## Deployment
+### Look At Deployment
 
 Let’s move first with the deployment. A **deployment** is an object in Kubernetes that lets you manage a set of identical pods. Without a deployment, you’d need to create, update, and delete a bunch of pods manually.
 
@@ -415,7 +415,7 @@ A Container that requests 0.5 CPU is guaranteed half as much CPU as a Container 
 
 CPU is always requested as an absolute quantity, never as a relative quantity; 0.1 is the same amount of CPU on a single-core, dual-core, or 48-core machine.
 
-## Secret
+### Secret
 
 Next, we are going to create a secret. A Secret is an object that contains a small amount of sensitive data such as a password, a token, or a key.
 Secrets are similar to [ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/) but are specifically intended to hold confidential data.
@@ -442,7 +442,7 @@ data:
   DATABASE_NAME: c2FtcGxlZGI= # sampledb
 ```
 
-## Service
+### Service
 
 Next, we are going to work on [Service](https://kubernetes.io/docs/concepts/services-networking/service/).
 
@@ -490,7 +490,7 @@ References:
 
 We are done with the code part. Let’s move forward with the web server configuration that is [NGINX](https://www.nginx.com/).
 
-# NGINX
+## NGINX
 
 I am going to speed up the process. I expect you to check my source code, as I have already provided all the YAML files.
 
@@ -546,7 +546,7 @@ spec:
 
 We are using a volume mount to mount our configuration and replace the default configuration provided by NGINX.
 
-## ConfigMap
+### ConfigMap
 
 Next, we will define ConfigMap.
 
@@ -622,7 +622,7 @@ spec:
 
 We have completed the nginx, next we will work on postgres.
 
-# Postgres
+## Postgres
 
 ![step27](./steps/step27.png)
 
@@ -737,7 +737,7 @@ And line number 26 will be replaced with minikube.
 
 Next, I will create the persistent volume claim.
 
-## PersistentVolumeClaim
+### PersistentVolumeClaim
 
 A PersistentVolumeClaim is a request for a resource with specific attributes, such as storage size. As I said earlier, a pod uses a persistent volume claim to get read and write access to the persistent volume. In our case we are pointing the volume name to **postgres-pv**.
 
@@ -801,7 +801,7 @@ The postgres service is a clusterIP service, so we will only do internal communi
 
 We are done with Postgres, now we will move to Redis.
 
-## Redis
+### Redis
 
 Same as usual we will create deployment and service files for [Redis](https://redis.io/).
 
@@ -871,7 +871,7 @@ spec:
 
 We are done with redis, now we will move to celery.
 
-## Celery
+### Celery
 
 [Celery](https://docs.celeryproject.org/en/stable/getting-started/introduction.html) is a task queue implementation for Python web applications used to asynchronously execute work outside the HTTP request-response cycle.
 
@@ -946,7 +946,7 @@ data:
 
 After we are done with celery, I will create a Job which will handle database migration.
 
-# Job
+## Job
 
 A Kubernetes job is a supervisor for pods carrying out batch processes, that is, a process that runs for a certain time to completion, for example a calculation or a backup operation.
 
@@ -1013,7 +1013,7 @@ data:
 
 Finally, we have completed all modules which are required for Kubernetes.
 
-# Deployment
+## Deployment
 
 Let’s now begin the deployment.
 
@@ -1088,7 +1088,7 @@ Let’s complete that.
 
 Yes, the migration has been completed.
 
-# Results
+## Results
 
 Let me now check in the browser. But before that we need to retrieve the service ip address. If you are working with Docker Desktop in Windows you can simply access through localhost.
 
@@ -1114,13 +1114,13 @@ Yes, our user has been successfully created and received 201 status code and the
 If you are new to Kubernetes, then this video does not make any sense.
 But if you have already got an understanding of Kubernetes, then it would be very easy to conceptualize what I am trying to do.
 
-# Diagram
+## Diagram
 
 This diagram will help you to visualize the K8s deployments and the interconnected services.
 
 ![step45](./steps/step45.png)
 
-# Kubernetes Plugin
+## Kubernetes Plugin
 
 Taking a small break, there is one more interesting thing that PyCharm provides. You can directly manage your Kubernetes resources through PyCharm instead of using the terminal.
 

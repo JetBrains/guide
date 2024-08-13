@@ -9,6 +9,6 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=UnM4QAumuCQ&start=0s"
 ---
 
-# SSH Overview
+## SSH Overview
 
 - What you'll learn in this video

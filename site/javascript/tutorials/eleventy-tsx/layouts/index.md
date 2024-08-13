@@ -16,7 +16,7 @@ a "layout". Let's do that in this step. Since this is something 11ty will "see" 
 convention of `_layouts` for the directory:
 
 ```shell
-$ mkdir _layouts
+mkdir _layouts
 ```
 
 Let's rename `index.11ty.tsx` to `_layouts/MainLayout.11ty.tsx`. Then, change it to render a title from frontmatter and
@@ -72,7 +72,7 @@ Here's `site/index.md`:
 When we re-run our build, we get the output we expect:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<title>My Site</title>

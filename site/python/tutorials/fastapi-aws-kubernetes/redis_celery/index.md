@@ -17,7 +17,7 @@ Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 As you know in our previous video we completed the feature of placing the new order. But we wanted to make sure that, once the order has been placed, then we need to send an email saying that your order has been successfully completed. That’s what we are going to cover in today’s tutorial.
 
-# AWS SES
+## AWS SES
 
 Before moving ahead, I expect from the audience that they have experience working with AWS.
 
@@ -65,7 +65,7 @@ Okay our email has been successfully verified. We can go ahead and send emails t
 
 ![step6](./steps/step6.png)
 
-# Installing Redis
+## Installing Redis
 
 Let’s come back to our terminal where I am going to install _Redis_.
 
@@ -77,7 +77,7 @@ Let me check it’s working fine by running the [PING](https://redis.io/commands
 
 I got the reply, nice.
 
-# Installing Celery
+## Installing Celery
 
 Next, I need to install celery.
 
@@ -256,7 +256,7 @@ Make sure to install [boto3](https://boto3.amazonaws.com/v1/documentation/api/la
 pip install boto3==1.18.26
 ```
 
-# AWS CLI
+## AWS CLI
 
 Before moving ahead, make sure you have [AWS CLI](https://aws.amazon.com/cli/) installed on your machine.
 

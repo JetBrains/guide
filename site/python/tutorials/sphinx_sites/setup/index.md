@@ -15,14 +15,14 @@ Sphinx can be added to an existing Python application or library to provide docu
 But it can also be used as the project itself -- for example, a website.
 In this tutorial step we start a new _website_ as a new Python project, using Sphinx.
 
-# Scenario
+## Scenario
 
 This tutorial will simulate building the website for a fictional company named "Schlockchain".
 The company has -- obviously -- a lot of marketing it wants to do.
 It also has some code with -- obviously -- patents that it wants to show.
 The venture capitalists want a website, the founders aren't really technical, so they want to use Markdown.
 
-# New Project
+## New Project
 
 Let's start from...well, the beginning: an empty directory, into which we will slowly build a website.
 
@@ -55,7 +55,7 @@ pip install --upgrade pip
 
 Our new, blank Python project is now ready for a Sphinx installation.
 
-## Installing Sphinx
+### Installing Sphinx
 
 Open this project directory in your favorite editor.
 We'll install our packages by creating a `requirements.txt` file, to store our dependency listing.
@@ -83,7 +83,7 @@ Sphinx has a number of commands (implemented in Python.)
 These are added to your virtual environments _bin_ directory.
 If you see _sphinx-quickstart_, you are in good shape.
 
-# Make a Sphinx Site
+## Make a Sphinx Site
 
 We're all set up...time to make a site.
 Sphinx ships with [a site generator command](https://www.sphinx-doc.org/en/master/usage/quickstart.html) called _sphinx-quickstart_ which is now in the _bin_ directory of your virtual environment.
@@ -151,7 +151,7 @@ About some of these directory items:
 
 _Note: If you are using an IDE such as PyCharm, mark the `_build` directory as ignored._
 
-## Building (and Rebuilding)
+### Building (and Rebuilding)
 
 We are ready to build our site.
 
@@ -197,7 +197,7 @@ building [html]: targets for 0 source files that are out of date
 That's because Sphinx keeps intermediate representations between runs to support incremental builds.
 `make clean` removes the "build" artifacts -- in this case, `html` as it was the builder we used with `make html`.
 
-# `livereload` Server
+## `livereload` Server
 
 Other static site generators (SSGs) have nice authoring servers: you type in some stuff, a build happens, and the browser reloads automatically.
 That helps during a tutorial, so let's do something similar for Python with the [livereload package](https://pypi.org/project/livereload/).
@@ -263,10 +263,9 @@ When you save, `livereload` tells Sphinx to rebuild, then tells the browser to r
 
 ![Updated Page](setup02.png)
 
-# Add Markdown
+## Add Markdown
 
-"Ah, but that's not Markdown, it's some alien Python "rst" thingy.
-I want to write in Markdown!"
+"Ah, but that's not Markdown, it's some alien Python 'rst' thingy. I want to write in Markdown!"
 
 Thanks to the wonderful work by [The Executable Book Project](https://executablebooks.org/en/latest/), Markdown is now a first-class citizen in Sphinx.
 What does that mean?
@@ -300,7 +299,7 @@ extensions = [
 Our site can now speak both RST and Markdown!
 Let's put it to use by starting an "About Us" page.
 
-# First Markdown Page
+## First Markdown Page
 
 Let's add `about_us.md` file alongside `index.rst`:
 
@@ -338,7 +337,7 @@ When we click on that link, we get a nicely formatted page, driven by Markdown.
 
 ![About Us](about_us.png)
 
-# Clean Up
+## Clean Up
 
 Let's do two cleanups as closeout: `conf.py` and `index.rst`.
 

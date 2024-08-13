@@ -14,7 +14,7 @@ Hello everyone, today I will be working on APIs basically focusing in CRUD opera
 
 Source code is available on [Github](https://github.com/mukulmantosh/ServerlessDemo).
 
-# Create (C)
+## Create (C)
 
 We are going to create an "Organization" directory and as we know, every organization has users or employees. Thus, we are going to perform four different operations like Create, Read, Update, Delete.
 
@@ -122,7 +122,7 @@ stored in encrypted format.
 Finally, we can store the user information in our database. Let’s move and create an API
 which retrieves a list of users from the database.
 
-# Read (R)
+## Read (R)
 
 I am going to create a `read` package under the user.
 I will follow a similar kind of implementation as I did for the create operation.
@@ -194,7 +194,7 @@ It's working fine. We are getting information for user "Mike Jones".
 
 Finally, our API is able to retrieve information from the database. Let’s move on and create an API which will be used to update records in our database.
 
-# Update (U)
+## Update (U)
 
 I am going to create an `update` package under the user. I will follow the same approach that I did before for create & read operations.
 
@@ -234,7 +234,7 @@ Let me refresh the "registrations" collection and verify whether data has been u
 
 Great ! The data has been updated.
 
-# Delete (D)
+## Delete (D)
 
 Let’s now move to the final part where we are going to remove records from the database by creating a DeleteAPI.
 

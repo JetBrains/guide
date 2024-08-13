@@ -29,7 +29,7 @@ We are not going to build any UI for this tutorial, our core idea is only to dev
 
 APIs will help you understand how the backend gets integrated with the modern frontend frameworks.
 
-# Installing Postgres
+## Installing Postgres
 
 Before moving ahead, make sure you have installed Postgres in your system.
 
@@ -40,7 +40,7 @@ I am mentioning some of them.
 - <https://linuxize.com/post/how-to-install-postgresql-on-ubuntu-20-04/>
 - <https://tecadmin.net/how-to-install-postgresql-in-ubuntu-20-04/>
 
-# Creating Directories
+## Creating Directories
 
 Once you have successfully installed Postgres then move to PyCharm and create an **ecommerce** package
 in the root folder.
@@ -63,7 +63,7 @@ required later when we will be working on unit tests.
 
 ![step4](./steps/step4.png)
 
-# Installing Requirements
+## Installing Requirements
 
 Let me get the fresh copy of **requirements.txt** file.
 
@@ -88,7 +88,7 @@ If I am not wrong [Michael Kennedy](https://twitter.com/mkennedy) has already co
 
 As you can see I am using PyCharm, so it’s able to auto-detect the missing packages in my system.
 
-# System Dependencies
+## System Dependencies
 
 Make sure before installing _psycopg2_ package you have installed the system dependencies.
 

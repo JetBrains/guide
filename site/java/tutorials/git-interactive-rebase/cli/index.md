@@ -82,7 +82,7 @@ Press `esc`to exit edit mode.
 
 Save the file by typing `:wq` and the interactive rebase will be applied. We see in the Git log that the commit is dropped.
 
-# Conclusion
+## Conclusion
 
 Now we know how to clean up our commit history with Git interactive rebase from the command line.
 

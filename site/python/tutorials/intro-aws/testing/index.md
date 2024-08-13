@@ -14,19 +14,19 @@ video: "https://youtu.be/NbXOiUjyMhI"
 
 In this tutorial we are going to work on Unit Tests.
 
-# Unit Testing
+## Unit Testing
 
 According to Wikipedia : _Unit tests are automated tests written and run by software developers to ensure that a section of an application (known as the "unit") meets its design and behaves as intended._
 
 I will be covering only one scenario that will help you understand how we can begin with unit testing.
 
-# Installing Requirements
+## Installing Requirements
 
 ![testing_step_1](steps/step1.png)
 
 First, install the **pytest** package. It's the most popular Python testing framework, widely used by developers and QA engineers.
 
-# Let's begin testing
+## Let's begin testing
 
 I am going to start from scratch. Let me first delete the default `test_handler.py` file. I will create a `db.py` file under the "testing_db" package which will contain the same database connection logic which I used earlier.
 

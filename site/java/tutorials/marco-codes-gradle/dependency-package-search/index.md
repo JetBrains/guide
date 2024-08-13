@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=gKPMKRnnbXU&start=666s"
 ---
 
-# Dependencies
+## Dependencies
 
 - What scopes dependencies in Gradle can have.
 - How to add dependencies to your project.

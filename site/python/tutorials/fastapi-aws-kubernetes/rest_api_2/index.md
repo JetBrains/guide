@@ -17,7 +17,7 @@ Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 We have successfully created the user registration API. Let’s quickly move on and complete the remaining APIs for our User module like getting a list of all users, retrieving or deleting user information based on id or primary key.
 
-# User Listing
+## User Listing
 
 Back to our **router.py**
 
@@ -67,7 +67,7 @@ After creating some dummy users, you can see we received a list of users present
 
 ![step6](./steps/step6.png)
 
-# Retrieving User by ID
+## Retrieving User by ID
 
 Now, let’s go back to the router and create a new endpoint to retrieve user details by id, basically focusing on one particular
 user information.
@@ -115,7 +115,7 @@ If I pass 1 it will return **Elon Musk**, 2 and 3 will return **Sample User 2** 
 
 ![step12](./steps/step12.png)
 
-# Delete User
+## Delete User
 
 Let’s move back again to the router and create our last endpoint **delete user by id**. Same as previous, only difference... we won’t return any response. Instead, we delete the object from the database.
 

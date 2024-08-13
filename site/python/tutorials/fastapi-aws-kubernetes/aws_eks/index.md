@@ -23,7 +23,7 @@ In this tutorial we will be deploying our application in AWS using the [Elastic 
 
 Make sure before proceeding, you have installed the [AWS Command Line](https://aws.amazon.com/cli/) application.
 
-# eksctl
+## eksctl
 
 There is one more application we need to install in our system and that is _eksctl_. It is the official command line tool for EKS and helps in managing clusters in EKS, developed by [WeaveWorks](https://www.weave.works/) and written in Go.
 
@@ -40,7 +40,7 @@ References :
 - [https://eksctl.io/](https://eksctl.io/)
 - [https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html)
 
-# IAM User
+## IAM User
 
 Coming back to [AWS Management Console](https://aws.amazon.com/console/), I will create an administrative user from which we are going to access all our AWS Services. I generally **don’t recommend** this approach when you are working in a production or sensitive environment, kindly follow the principle of the **least** privilege.
 
@@ -64,7 +64,7 @@ After that I will provide access key, secret access key and region name set to a
 
 We have successfully configured.
 
-# Elastic Container Registry (ECR)
+## Elastic Container Registry (ECR)
 
 Next, we will go to ECR which is the [Elastic Container Registry](https://aws.amazon.com/ecr/). We will push our Docker image to our ECR repository. I am actually trying to cover the use case when some people out there want to work with a private registry instead of using a public registry like DockerHub.
 
@@ -104,7 +104,7 @@ Yes, the image is appearing now and the total size is around 179 MB.
 
 ![step19](./steps/step19.png)
 
-# Key Pairs
+## Key Pairs
 
 Now, I will create a private key **PEM** file, which will be used to get inside the EC2 machine. We won’t be getting inside any particular instance, as we will be handling everything through Kubernetes. But this can be used for many kinds of scenarios like debugging, checking something particular in the machine.
 
@@ -120,7 +120,7 @@ I will name the key pair as **fastapi-demo**.
 
 ![step23](./steps/step23.png)
 
-# Cluster
+## Cluster
 
 I will come back to PyCharm and create a directory called **eks**.
 
@@ -261,7 +261,7 @@ kubectl get nodes --kubeconfig=fastapi-demo
 
 You can observe three nodes are running and the operating system is backed by _Amazon Linux 2_. The nodes are completely private, you can observe the internal IP and there is no external IP exposed.
 
-# OIDC
+## OIDC
 
 Next, we are going to approve the OIDC provider. To use IAM roles for service accounts, an IAM OIDC provider must exist for your cluster.
 
@@ -282,7 +282,7 @@ Reference:
 
 The OIDC provider is successfully created.
 
-# Postgres
+## Postgres
 
 Next, we are going to create a Security Group for Postgres database. This will be required when we will be launching the RDS database.
 
@@ -360,9 +360,9 @@ Everything looks good, I am going to click on **Create database**.
 
 It will take a few minutes to initialize our new db. We will come back to this later.
 
-## ![step54](./steps/step54.png)
+### ![step54](./steps/step54.png)
 
-# RBAC
+## RBAC
 
 Coming back to the PyCharm Terminal, I am going to create the role based access control (RBAC) for our ingress controller.
 
@@ -607,7 +607,7 @@ I completely agree to that point, as this is a tutorial I am not getting too str
 
 ![step61](./steps/step61.png)
 
-# IAM Service Account
+## IAM Service Account
 
 Next, I am going to create _IAM service account_. You can associate an IAM role with a Kubernetes service account. This service account can then provide AWS permissions to the containers in any pod that uses that service account.
 
@@ -644,7 +644,7 @@ eksctl get iamserviceaccount --cluster fastapi-demo
 
 You can see one role has been successfully attached. You can check this role is present under Roles in the IAM Console.
 
-# Ingress Controller
+## Ingress Controller
 
 I will go ahead and create the **ingress controller**. An Ingress controller is a specialized load balancer for Kubernetes (and other containerized) environments. It abstracts away the complexity of Kubernetes application traffic routing and provides a bridge between Kubernetes services and external ones.
 
@@ -776,7 +776,7 @@ I will verify whether the controller is running or not.
 
 Looks fine.
 
-# Subnet Discovery
+## Subnet Discovery
 
 Next, after the controller we need to tag our subnets for subnet discovery by the load balancer.
 
@@ -798,7 +798,7 @@ kubernetes.io/cluster/fastapi-demo : shared
 
 Once, we are done with tagging all subnets, I will come back to RDS to check the status.
 
-# K8s Manifests
+## K8s Manifests
 
 The db is now available. I am going to copy the _endpoint_. But before that I will create a folder called **deploy** under _eks_.
 
@@ -1031,7 +1031,7 @@ spec:
   backoffLimit: 3
 ```
 
-## Ingress
+### Ingress
 
 Next, we are going to create an ingress. This is something which we did not do in our local system but indeed we need it here. In Kubernetes, an Ingress is an _object that allows access to your Kubernetes services from outside the Kubernetes cluster_ typically via HTTPS/HTTP. With Ingress, you can easily set up rules for routing traffic without creating a bunch of Load Balancers or exposing each service on the node.
 
@@ -1168,7 +1168,7 @@ Fingers crossed this is something which is not under our control.
 
 Fast forwarding time our hosted zone setup is complete and the DNS has successfully applied the new records. Now, we will go ahead and set up SSL in Certificate Manager.
 
-# AWS Certificate Manager
+## AWS Certificate Manager
 
 ![step100](./steps/step100.png)
 
@@ -1258,7 +1258,7 @@ The _CNAME_ record maps a name to another name. It should only be used when ther
 
 ![step121](./steps/step121.png)
 
-# FastAPI running live
+## FastAPI running live
 
 Let me now try to check whether the domain is pointing to the backend or not.
 

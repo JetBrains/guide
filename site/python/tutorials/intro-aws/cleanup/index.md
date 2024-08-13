@@ -14,7 +14,7 @@ In this tutorial step, we will be removing all the services used during the tuto
 
 - If you are already aware of how to remove resources from AWS then you can skip it. (Optional)
 
-# Cleanup
+### Cleanup
 
 We will navigate to CloudFormation dashboard from AWS Management Console.
 

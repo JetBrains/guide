@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=Xatr8AZLOsE&start=372s"
 ---
 
-# `Pom.xml` file
+## `Pom.xml` file
 
 - What is your `pom.xml` file all about?
 - Coverage of the `<properties>` block.

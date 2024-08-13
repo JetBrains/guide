@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=Xatr8AZLOsE&start=0s"
 ---
 
-# Introduction
+## Introduction
 
 - What this guide is all about.
 - How to clone the sample project.

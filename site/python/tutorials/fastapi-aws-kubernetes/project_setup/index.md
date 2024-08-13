@@ -19,7 +19,7 @@ In this tutorial we are going to set up the FastAPI project with PyCharm. We are
 
 - **Note**: Just for your information, I am running this entire project in a virtual machine through VMWare workstation which has Ubuntu 20.04 LTS
 
-# Virtual Environment
+## Virtual Environment
 
 Let’s begin. So, before going ahead we have to create a virtual environment. If you are interested you can even create a virtual environment from PyCharm itself, but I would like to go with the terminal.
 
@@ -31,7 +31,7 @@ python3 -m venv FastEnv
 
 Once environment has been successfully created, we will move ahead with PyCharm.
 
-# JetBrains Toolbox
+## JetBrains Toolbox
 
 ![jetbrains_toolbox](./images/toolbox.png)
 
@@ -49,7 +49,7 @@ I am going to use PyCharm 2021.3 EAP, because it contains the FastAPI project ty
 
 ![jetbrains_toolbox_2](./images/toolbox-2.png)
 
-# Creating a New Project
+## Creating a New Project
 
 I will click on **New Project**.
 
@@ -101,7 +101,7 @@ Yes, it works fine. I got the response Hello World.
 
 ![step10](./steps/step10.png)
 
-# FastAPI Docs
+## FastAPI Docs
 
 FastAPI also generates automatic API docs for us at path **/docs**. It uses the [OpenAPI](https://www.openapis.org/) standard for defining API.
 

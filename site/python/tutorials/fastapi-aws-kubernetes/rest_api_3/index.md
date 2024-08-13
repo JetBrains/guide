@@ -18,7 +18,7 @@ Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 We have successfully completed the user module, let’s now move to products where we are going to do the same kind of operations creating models, apis,
 schema etc.
 
-# Creating Models
+## Creating Models
 
 I am going to create `models.py` file under products.
 
@@ -93,7 +93,7 @@ Laptops, Mobile Phones will fall under that.
 
 You can even do deep nesting like Television as category and products like LCD, LED, OLED TVs etc.
 
-# Schema Migration
+## Schema Migration
 
 I need to register this model in alembic and then generate the schema.
 
@@ -107,7 +107,7 @@ To migrate I am going to type _alembic upgrade head_.
 
 The tables are reflecting in the _Database Explorer_. It’s clearly visible, and you can see the foreign key relationship attached with the category.
 
-# Router & Services
+## Router & Services
 
 Let’s begin by creating the router, schema and services. As usual what we did previously for the user module, the same approach we are going to follow here.
 
@@ -134,7 +134,7 @@ We need to accept names whose minimum length needs to be 2 characters to max len
 
 To know more about the Field Types, visit the pydantic documentation : [https://pydantic-docs.helpmanual.io/usage/types/](https://pydantic-docs.helpmanual.io/usage/types/).
 
-# Create New Category
+## Create New Category
 
 Let’s begin with our Create Category API.
 
@@ -185,7 +185,7 @@ I will create one more with the name _Electronics_.
 
 Let’s move back and complete the remaining apis for our category module.
 
-# Listing All Categories
+## Listing All Categories
 
 Now, I am going to define and return all categories present in the database.
 
@@ -213,7 +213,7 @@ Once the routes have been registered, we will check in the Swagger UI.
 As you can see the two categories : **Electronics** & **MobilePhones** are clearly visible,
 it’s returning a list.
 
-# Retrieving Category by ID
+## Retrieving Category by ID
 
 Now, let's create our third api to retrieve category by id.
 
@@ -249,7 +249,7 @@ Let me give the category id 1, and it should return MobilePhones.
 
 All the scenarios are working fine. Let’s move with our last api for category, that is, to delete the category by id.
 
-# Removing Category by Id
+## Removing Category by Id
 
 We will be deleting the object from the database. The function won’t return anything.
 
@@ -291,7 +291,7 @@ We are completely done with the category, now we will be writing APIs for our pr
 
 If you want to break this router, then can you go forward with that. One for products and second one for category separately. Completely up to you how you feel comfortable.
 
-# Creating New Product
+## Creating New Product
 
 Let’s begin by creating our product API, but before that we need to create the pydantic schema.
 
@@ -407,7 +407,7 @@ I will create one more product and name it IPhone 12 with less quantity and pric
 
 Great! two products have been successfully created.
 
-# Listing Products
+## Listing Products
 
 Next, I will be creating an API for listing the products which are present in our database. I won’t be creating more api like get or delete product by id. I am completely leaving it up to you, if you are interested you can go ahead and create those functionalities based upon your use case.
 

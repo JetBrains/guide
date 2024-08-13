@@ -63,7 +63,7 @@ You can use the Commit Window to **Delete Changelist**
 
 Alternatively, you can use <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd>, to bring up the Find Actions dialog which will filter the Search Everywhere dialog to just Actions.
 
-# Scenarios to use different changelists
+## Scenarios to use different changelists
 
 - Suppose you are working on your code which requires only selected changes to be committed in VCS and you want to continue developing your code. In that case, you can move your changes to a different changelist and group together.
 - If you want to run your application with a unique configuration without impacting your existing code, you can maintain the changed files in different changelists.
