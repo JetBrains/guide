@@ -13,6 +13,13 @@ seealso:
   - title: (blog) IntelliJ IDEA blog Inspections Widget
     href: "https://blog.jetbrains.com/tag/inspections-widget/"
 video: "https://youtu.be/7eQqGf1Q_Qc"
+callToAction:
+  {
+    url: "/java/tips/problem-window/",
+    message: "If you have problems in your code, clicking on the Inspections Widget will open your Problems tool window!",
+  }
 ---
 
 The inspections widget offers you information about the state of your code at a glance. You will see information for errors, warnings, weak warnings, server problems, grammar errors and typos for your class. You can choose to highlight them all and press F2 to navigate between them.
+
+{% cta %}

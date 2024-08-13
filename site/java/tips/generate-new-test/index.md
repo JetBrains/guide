@@ -15,6 +15,13 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Generate code
     href: "https://www.jetbrains.com/help/idea/generating-code.html"
 video: "https://youtu.be/iS6DAwn1Q0Y"
+callToAction:
+  {
+    url: "/java/tips/generate-test-methods/",
+    message: "Did you know that you can take it one step further and generate test methods as well?",
+  }
 ---
 
 We can generate test classes for our code using <kbd>⇧⌘T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux). IntelliJ IDEA supports a variety of testing frameworks, including JUnit. We can use the IDE to generate a test method <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux).
+
+{% cta %}
