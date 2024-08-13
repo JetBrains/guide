@@ -14,6 +14,11 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/idea/2023.3/commit-and-push-changes.html#select_chunks_in_commit_changes_dialog
 video: "https://www.youtube.com/watch?v=AW5Xv8n3iEo"
+callToAction:
+  {
+    url: "/java/tips/commit-inspection-profile/",
+    message: "You can add some checks to ensure that your commit meets your standards, and more importantly, doesn't break anything!",
+  }
 ---
 
 Sometimes you're making multiple changes to a file that you don't want to commit together. For example, if you're working on a new feature, but notice some other small things you want to fix. If these changes are in separate files, we can commit each file separately. But what if they’re in the same file?
@@ -29,3 +34,5 @@ Once we have selected all the changes we want to commit, we write a meaningful c
 
 What if we don’t want to add these changes to the same pull request, not even in a separate commit? Maybe you want to do some more cleaning up in your code base, and create a separate pull request for those changes later.
 We can undo this commit and move these changes to a different change list. To do so, select **Move to Another Changelist** from the context menu of a modified chunk.
+
+{% cta %}

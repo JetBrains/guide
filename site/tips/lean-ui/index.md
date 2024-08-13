@@ -18,6 +18,8 @@ obsoletes:
   - /python/tips/reduce-clutter/
   - /go/tips/reduce-clutter/
   - /python/tips/disable-tabs/
+  - /java/tips/editor-breadcrumbs/
+  - /java/tips/toggle-tool-windows/
 ---
 
 ## The Problem

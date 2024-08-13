@@ -11,6 +11,13 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Type Info
     href: "https://www.jetbrains.com/help/idea/viewing-reference-information.html#type-info"
 video: "https://youtu.be/DkZAwI7Ur2k"
+callToAction:
+  {
+    url: "/java/tips/parameter-information/",
+    message: "In addition to type information, you can get IntelliJ IDEA to give you parameter information too!",
+  }
 ---
 
 Are you unsure about the return type of a method, or the type of an expression? Pull up Type Information <kbd>⌃⌘P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux) to help you.
+
+{% cta %}
