@@ -41,7 +41,7 @@ And the test output tells us...our test failed!
 
 Which is to be expected...in the previous cleanup step, we completely changed the markup.
 
-Let's fix the test, but first, setup an easier way to run Jest.
+Let's fix the test, but first, set up an easier way to run Jest.
 
 ## Easier Jest
 

@@ -29,7 +29,7 @@ You can invoke **Navigate | Jump to Navigation Bar** <kbd>⌘↑</kbd> (macOS) /
 Use speed search to select one item in the list by:
 
 - Simplest case: Type one letter
-- Type a second letter...if your choice is selected, then you're done and you can press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) to open it. Alternatively, you can perform over actions too. Perhaps you want to invoke "Refactoring" <kbd>⌃T</kbd> (macOS) / <kbd>Shift+Ctrl+Alt+T</kbd> (Windows/Linux).
+- Type a second letter...if your choice is selected, then you're done, and you can press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) to open it. Alternatively, you can perform over actions too. Perhaps you want to invoke "Refactoring" <kbd>⌃T</kbd> (macOS) / <kbd>Shift+Ctrl+Alt+T</kbd> (Windows/Linux).
 
 ![speed-search.png](speed-search.png)
 

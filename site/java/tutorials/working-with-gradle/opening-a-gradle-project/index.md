@@ -31,9 +31,9 @@ This particular project does not have any IntelliJ IDEA settings set, IntelliJ I
 
 ![Imported Gradle project](./multi-module-project.png)
 
-IntelliJ IDEA creates IntelliJ IDEA modules for each of the sub-projects in this multi-project Gradle application.
+IntelliJ IDEA creates IntelliJ IDEA modules for each of the subprojects in this multi-project Gradle application.
 
-Each of these IntelliJ IDEA modules is a Gradle project in its own right, with its own `build.gradle` and its own tasks and dependencies. If we open the _Gradle_ tool window, we can see the top level tasks for the whole project, and the tasks and dependencies for each of the sub-projects, or modules. These may be different, since they reflect what's configured in each module's `build.gradle` file.
+Each of these IntelliJ IDEA modules is a Gradle project in its own right, with its own `build.gradle` and its own tasks and dependencies. If we open the _Gradle_ tool window, we can see the top level tasks for the whole project, and the tasks and dependencies for each of the subprojects, or modules. These may be different, since they reflect what's configured in each module's `build.gradle` file.
 
 ![Gradle tool window](./gradle-tool-window.png)
 

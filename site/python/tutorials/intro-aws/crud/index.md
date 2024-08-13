@@ -12,7 +12,7 @@ video: "https://youtu.be/3imrJukMeMQ"
 
 Hello everyone, today I will be working on APIs basically focusing in CRUD operations.
 
-Source code is available on [Github](https://github.com/mukulmantosh/ServerlessDemo).
+Source code is available on [GitHub](https://github.com/mukulmantosh/ServerlessDemo).
 
 ## Create (C)
 

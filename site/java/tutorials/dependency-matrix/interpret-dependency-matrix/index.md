@@ -91,7 +91,7 @@ Notice how you can now select the module or directory as scope for the Dependenc
 
 ## Navigate to relevant code
 
-We can also navigate to the relevant code from the Dependency Matrix. To select a specific dependency for further source-code analysis, right-click the dependency you are interested in in the _DSM_ tool window, and select **Find Usages for Dependencies**.
+We can also navigate to the relevant code from the Dependency Matrix. To select a specific dependency for further source-code analysis, right-click the dependency you are interested in the _DSM_ tool window, and select **Find Usages for Dependencies**.
 
 ![Dependency Matrix - Find Usages](dependency-matrix-find-usages.png)
 

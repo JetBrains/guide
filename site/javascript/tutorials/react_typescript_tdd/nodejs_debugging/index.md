@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-10-04
-title: Debugging During Testing With NodeJS
+title: Debugging During Testing With Node.js
 topics:
   - jest
   - nodejs
@@ -120,7 +120,7 @@ No surprise: the IDE has an `Alt-Enter` quick fix for this -- in this case, `Inf
 ## Stop at Breakpoint
 
 Let's see debugging in action.
-Imagine we pass in a number and we can't figure out why our function is failing.
+Imagine we pass in a number, and we can't figure out why our function is failing.
 
 Let's do so.
 In the last `generates a label` test, change the `result` to `const result = label(42);`.
@@ -136,7 +136,7 @@ Moreover, it provides very specific error messages.
 
 Let's go ahead and debug this.
 See the red squiggly under `label`?
-Hover over it and you will get an inline panel showing more information:
+Hover over it, and you will get an inline panel showing more information:
 
 ![Red Squiggly](./screenshots/red_squiggly.png)
 

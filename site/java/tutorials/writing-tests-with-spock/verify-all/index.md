@@ -48,7 +48,7 @@ renderer == null
 Mock for type 'Renderer' named 'mockRenderer'
 ```
 
-With `verifyAll`, all assertions are run and we can see which fail and which pass. This can help us when we're iterating quickly between writing and fixing tests.
+With `verifyAll`, all assertions are run, and we can see which fail and which pass. This can help us when we're iterating quickly between writing and fixing tests.
 
 Go back and fix this test:
 

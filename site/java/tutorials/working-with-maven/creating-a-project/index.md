@@ -11,7 +11,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/pt3uB0sd5kY?start=3"
 ---
 
-Let's create a brand new Maven project. From the Welcome Screen select New Project, or if you already have an IntelliJ IDEA project open, select File -> New -> Project...
+Let's create a brand-new Maven project. From the Welcome Screen select New Project, or if you already have an IntelliJ IDEA project open, select File -> New -> Project...
 
 Select Maven from the options on the left, and choose the JDK for the project.
 

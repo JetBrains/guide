@@ -22,7 +22,7 @@ callToAction:
 
 ## The Problem
 
-You're busy hammering out line after line of amazing code but when you're done and you look up to marvel at your masterpiece, you see that the indentation is all wrong.
+You're busy hammering out line after line of amazing code but when you're done, and you look up to marvel at your masterpiece, you see that the indentation is all wrong.
 
 ## The Solution
 

@@ -27,7 +27,7 @@ The finished code for this tutorial step is
 
 ## Project Creation
 
-Before starting, make sure to install [NodeJS](/tags/nodejs/) on your system.
+Before starting, make sure to install [Node.js](/tags/nodejs/) on your system.
 
 As shown [in the create-react-app docs](https://create-react-app.dev/docs/adding-typescript/), use the `npx` command introduced in npm 5.2 to get a package and install a command, without having to globally install a package.
 Thus, to use `create-react-app` to make a TypeScript project:

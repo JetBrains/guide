@@ -8,7 +8,7 @@ video: "https://www.youtube.com/watch?v=0ISXpNJ5iNs"
 linkURL: "https://www.youtube.com/watch?v=0ISXpNJ5iNs"
 ---
 
-In the tech industry, when talking about accessibility, we usually focus on improving the ways people use a website but
+In the tech industry, when talking about accessibility, we usually focus on improving the ways people use a website, but
 we never really think about the experience of people who build it. What if we could improve the coding experience by
 going beyond the keyboard and build tools that would allow different kinds of interactions? In this talk, I’ll show how
 we can use gaze detection in JavaScript to enable hands-free coding.

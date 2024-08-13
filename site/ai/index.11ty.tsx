@@ -33,7 +33,7 @@ class AIHomepage {
 
 		const links = this.getResources({
 			resourceTypes: [LINK_RESOURCE],
-			// would look across the guide for ai content
+			// would look across the guide for AI content
 			//customFilter: (r) => r.topics?.includes("ai") == true,
 			// anything under AI that's a link
 			customFilter: (r) =>
