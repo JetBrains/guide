@@ -16,10 +16,8 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/working-with-source-code.html#floating_toolbar"
 video: "https://youtu.be/2qaSoYJVnhI"
 callToAction:
-  {
-    url: "/java/tips/ai-chat/",
-    message: "You can also chat with JetBrains AI Assistant and ask your question that way!",
-  }
+  url: "/java/tips/ai-chat/"
+  message: "You can also chat with JetBrains AI Assistant and ask your question that way!"
 ---
 
 With JetBrains AI Assistant, you can use _AI Actions_ inside your IDE. Right-click in the editor pane to open the context menu and see the predefined options, or create your own prompt.

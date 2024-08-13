@@ -22,10 +22,8 @@ video: "https://youtu.be/dKac7GRjSVQ"
 obsoletes:
   - /java/tips/recent-locations/
 callToAction:
-  {
-    url: "/java/tips/refactor-rename-ai/",
-    message: "You can also perform a refactor rename with JetBrains AI Assistant!",
-  }
+  url: "/java/tips/refactor-rename-ai/"
+  message: "You can also perform a refactor rename with JetBrains AI Assistant!"
 ---
 
 Press <kbd>⌘⇧E</kbd> (macOS) / <kbd>Ctrl+Shift+E</kbd> (Windows/Linux), to navigate around the files that you've opened recently.

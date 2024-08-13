@@ -7,10 +7,8 @@ author: hs
 subtitle: The Productivity Guide is a fun way to see what you know, and what you don't!
 thumbnail: ./thumbnail.png
 callToAction:
-  {
-    url: "/java/tutorials/your-first-spring-application/",
-    message: "Now you now all about IntelliJ IDEA, how about writing your first Spring application!",
-  }
+  url: "/java/tutorials/your-first-spring-application/"
+  message: "Now you now all about IntelliJ IDEA, how about writing your first Spring application!"
 ---
 
 There may come a time when you either want to see your progress or perhaps identify areas where you want to learn more. The Productivity Guide is a great way to achieve both of those objectives. We will look at:

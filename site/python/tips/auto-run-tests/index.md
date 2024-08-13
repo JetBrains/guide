@@ -15,13 +15,11 @@ seealso:
       https://www.jetbrains.com/help/pycharm/test-runner-tab.html#Test_Runner_Tab.xml
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/4kHncS_gPX0"
-"callToAction":
-  {
-    "title": "Interested in pytest Development?",
-    "url": "https://www.jetbrains.com/guide/pytest/",
-    "image": "/tags/pytest/pytest.png",
-    "message": "Python developers love <strong>pytest</strong> and we think you will too. Check it out!",
-  }
+callToAction:
+  title: "Interested in pytest Development?"
+  url: "https://www.jetbrains.com/guide/pytest/"
+  image: "/tags/pytest/pytest.png"
+  message: "Python developers love <strong>pytest</strong> and we think you will too. Check it out!"
 ---
 
 TDD, or test-driven development, means "always be testing." In fact, the best way to do this is to put your tests on autopilot.

@@ -14,10 +14,8 @@ seealso:
     href: "https://www.youtube.com/watch?v=xmrFlqbTjp8"
 video: "https://youtu.be/w2obnLCfQ0I"
 callToAction:
-  {
-    url: "/java/tips/group-project/",
-    message: "You can also group your projects on your IntelliJ IDEA welcome screen so everything stays nice and organised!",
-  }
+  url: "/java/tips/group-project/"
+  message: "You can also group your projects on your IntelliJ IDEA welcome screen so everything stays nice and organised!"
 ---
 
 The New Project Wizard helps you to create projects with different build systems and frameworks. There's more information in [our screencast](https://www.youtube.com/watch?v=xmrFlqbTjp8).

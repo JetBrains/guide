@@ -20,10 +20,8 @@ seealso:
     href: ../alt-enter/
 video: "https://youtu.be/Q26Cc6V7zKk"
 callToAction:
-  {
-    url: "/java/tips/problem-window/",
-    message: "You can check out your Problem tool window to see any errors in your project.",
-  }
+  url: "/java/tips/problem-window/"
+  message: "You can check out your Problem tool window to see any errors in your project."
 ---
 
 When you open a source file in the editor, you may see warnings or errors in this file. You can quickly step through to check all these issues without having to use the mouse, just press <kbd>F2</kbd> (macOS) / <kbd>F2</kbd> (Windows/Linux).

@@ -14,10 +14,8 @@ playlistItems:
   - /tips/find-action/
   - /java/tips/search-camel-case/
 callToAction:
-  {
-    url: "/java/tips/run-anything/",
-    message: "Did you know that as well as searching everywhere, you can also run anything?",
-  }
+  url: "/java/tips/run-anything/"
+  message: "Did you know that as well as searching everywhere, you can also run anything?"
 ---
 
 {% cta %}

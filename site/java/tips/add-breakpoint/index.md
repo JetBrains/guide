@@ -19,10 +19,8 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/using-breakpoints.html"
 video: "https://youtu.be/hHDsG-sdb3U"
 callToAction:
-  {
-    url: "/java/tips/debugging/",
-    message: "Adding a breakpoint is just the start of the journey!",
-  }
+  url: "/java/tips/debugging/"
+  message: "Adding a breakpoint is just the start of the journey!"
 ---
 
 When you run your code and get an unhandled exception, you can click _Create breakpoint_ in the Run window to debug it.

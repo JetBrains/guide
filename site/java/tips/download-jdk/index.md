@@ -14,10 +14,8 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/sdk.html"
 video: "https://youtu.be/5TzRQqOHs14"
 callToAction:
-  {
-    url: "/java/tips/turn-on-preview-features/",
-    message: "Did you know you can turn on Java preview features in IntelliJ IDEA?",
-  }
+  url: "/java/tips/turn-on-preview-features/"
+  message: "Did you know you can turn on Java preview features in IntelliJ IDEA?"
 ---
 
 You can use the New Project Wizard to configure existing JDKs, or download new ones from different vendors.

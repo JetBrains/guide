@@ -9,10 +9,8 @@ subtitle: >-
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/Svr-rcfJSyM"
 callToAction:
-  {
-    url: "/java/tips/download-jdk/",
-    message: "Did you know you can get IntelliJ IDEA to download your JDK too?",
-  }
+  url: "/java/tips/download-jdk/"
+  message: "Did you know you can get IntelliJ IDEA to download your JDK too?"
 ---
 
 If you want to use preview features in the latest versions of Java in IntelliJ IDEA, you need to set the language level to _Preview_.
