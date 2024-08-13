@@ -21,10 +21,8 @@ seealso:
       https://www.jetbrains.com/help/idea/auto-completing-code.html#custom-postfix-templates
 video: "https://www.youtube.com/watch?v=ajD6pxTOFhY"
 callToAction:
-  {
-    url: "/java/tips/completion/",
-    message: "Complete statement is just one of many completions offered by IntelliJ IDEA!",
-  }
+  url: "/java/tips/completion/"
+  message: "Complete statement is just one of many completions offered by IntelliJ IDEA!"
 ---
 
 Postfix completion is designed so that you append some abbreviation to the end of your code, and IntelliJ IDEA will know to generate more valid code. Type your code, followed by a postfix abbreviation like _.sout_ or _.var_, and see IntelliJ IDEA generate code at the start of your expression.

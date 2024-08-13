@@ -13,10 +13,8 @@ seealso:
       https://www.jetbrains.com/help/idea/viewing-reference-information.html#type-info
 video: "https://youtu.be/OIJLa6rixdM"
 callToAction:
-  {
-    url: "/java/tips/type-information/",
-    message: "In addition to parameter information, you can get IntelliJ IDEA to give you type information too!",
-  }
+  url: "/java/tips/type-information/"
+  message: "In addition to parameter information, you can get IntelliJ IDEA to give you type information too!"
 ---
 
 Sometimes it's helpful to know the type of a parameter in your code when it's not immediately apparent to you. Use <kbd>⌃⇧P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux) to get the type information of a parameter in your code.

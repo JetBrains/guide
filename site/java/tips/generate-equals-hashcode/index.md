@@ -17,10 +17,8 @@ seealso:
       https://www.jetbrains.com/help/idea/generate-equals-and-hashcode-wizard.html
 video: "https://youtu.be/y4qCSsYKJoE"
 callToAction:
-  {
-    url: "/java/tips/generate-getters-setters/",
-    message: "IntelliJ IDEA can generate your getters and setters too!",
-  }
+  url: "/java/tips/generate-getters-setters/"
+  message: "IntelliJ IDEA can generate your getters and setters too!"
 ---
 
 You can use <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) for the _Generate_ menu and then select `equals() and hashCode()`. You can also use the same shortcut again and select `toString()` to override that method as well.

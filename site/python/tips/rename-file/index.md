@@ -10,12 +10,10 @@ seealso:
     href: "https://www.jetbrains.com/help/pycharm/rename-refactorings.html"
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/IqPm9RYTNBM"
-"callToAction":
-  {
-    "title": "Interested in renaming symbols?",
-    "url": "site/python/tips/rename-symbol/",
-    "message": "You can rename any symbol in your codebase. Check it out!",
-  }
+callToAction:
+  title: "Interested in renaming symbols?"
+  url: "site/python/tips/rename-symbol/"
+  message: "You can rename any symbol in your codebase. Check it out!"
 ---
 
 You made a file. You tried to choose the right filename. You then used it all over your project.

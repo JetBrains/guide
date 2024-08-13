@@ -14,10 +14,8 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/working-with-source-code.html#move-statements"
 video: "https://youtu.be/qVpLrGDtL20"
 callToAction:
-  {
-    url: "/java/tips/move-line/",
-    message: "Moving statements is helpful, but sometimes you just want to move one line!",
-  }
+  url: "/java/tips/move-line/"
+  message: "Moving statements is helpful, but sometimes you just want to move one line!"
 ---
 
 You can use <kbd>⌘⇧↑</kbd> (macOS) / <kbd>Ctrl+Shift+Up Arrow</kbd> (Windows/Linux), to move a statement up.
