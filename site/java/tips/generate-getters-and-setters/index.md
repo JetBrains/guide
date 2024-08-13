@@ -18,6 +18,13 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Create tests
     href: "https://www.jetbrains.com/help/idea/create-tests.html"
 video: "https://youtu.be/hXGXPaQfX_0"
+callToAction:
+  {
+    url: "/java/tips/generate-equals-hashcode/",
+    message: "IntelliJ IDEA allows you to generate many more methods too!",
+  }
 ---
 
 You can use <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) for the _Generate_ menu and then select `Constructor`, `Getter`, `Setter` or `Getter and Setter`. In the popup, select which fields to include.
+
+{% cta %}

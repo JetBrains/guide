@@ -13,6 +13,11 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Resolving Merge Conflicts
     href: "https://www.jetbrains.com/help/idea/resolving-conflicts.html"
 video: "https://youtu.be/GvAUA-jD9d0"
+callToAction:
+  {
+    url: "/java/tutorials/gitlab-merge-requests",
+    message: "You can learn more about GitLab merge requests in our dedicated tutorial!",
+  }
 ---
 
 Use <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Resolve Conflicts_ to open the _Conflicts_ dialog which helps you to visually resolve merge conflicts between two different versions of the code.
@@ -80,3 +85,5 @@ Right). Ignoring code changes means that they are not applied to the Result view
 
 When you have successfully resolved all your merge conflicts, IntelliJ IDEA will prompt you that _All Changes have been
 processed_. When you press **Apply** the conflicts in the file are all resolved.
+
+{% cta %}

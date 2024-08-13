@@ -12,6 +12,8 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/idea/working-with-source-code.html#use-the-surround-with-action
 video: "https://youtu.be/-FqHDSqD5Vo"
+obsoletes:
+  - /java/tips/surround-with-brackets-quotes/
 ---
 
 Use Surround With <kbd>⌃T</kbd> (macOS) / <kbd>Shift+Ctrl+Alt+T</kbd> (Windows/Linux) to surround code with an if-statement, try-catch, and more...

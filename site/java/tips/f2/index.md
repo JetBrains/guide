@@ -19,6 +19,11 @@ seealso:
   - title: (guide) IntelliJ IDEA Guide - Alt+Enter
     href: ../alt-enter/
 video: "https://youtu.be/Q26Cc6V7zKk"
+callToAction:
+  {
+    url: "/java/tips/problem-window/",
+    message: "You can check out your Problem tool window to see any errors in your project.",
+  }
 ---
 
 When you open a source file in the editor, you may see warnings or errors in this file. You can quickly step through to check all these issues without having to use the mouse, just press <kbd>F2</kbd> (macOS) / <kbd>F2</kbd> (Windows/Linux).
@@ -32,3 +37,5 @@ and we can pick the solution that suits us best.
 If you're confident IntelliJ IDEA has the correct fix for the problem, you can skip the step of listing the solutions. Press <kbd>F2</kbd> (macOS) / <kbd>F2</kbd> (Windows/Linux) to navigate to the problem, then press <kbd>⌥⇧⏎</kbd> (macOS) / <kbd>Shift+Alt+Enter</kbd> (Windows/Linux), to accept IntelliJ IDEA's suggested fix.
 
 ![Accept suggested fix](accept-suggestion.png)
+
+{% cta %}

@@ -15,6 +15,8 @@ seealso:
   - title: (video) Top 15 IntelliJ IDEA shortcuts
     href: "https://www.youtube.com/watch?v=QYO5_riePOQ"
 video: "https://youtu.be/Fk79fAS7Phk"
+obsoletes:
+  - /java/tips/assign-top-shortcuts/
 ---
 
 IntelliJ IDEA has a rich set of keyboard shortcuts to use, but you can also create your own.
