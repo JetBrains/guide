@@ -49,11 +49,43 @@ exclude:
     paths:
       - deployment/helm/guide-charts
   - name: GrazieInspection
-    patterns:
+    paths:
       - "**/*.js"
       - "**/*.jsx"
       - "**/*.ts"
       - "**/*.tsx"
+  - name: AngularAmbiguousComponentTag
+  - name: AngularCliAddDependency
+  - name: AngularNonEmptyNgContent
+  - name: AngularInaccessibleSymbol
+  - name: AngularIncorrectTemplateDefinition
+  - name: AngularIncorrectBlockUsage
+  - name: AngularInsecureBindingToEvent
+  - name: AngularInvalidAnimationTriggerAssignment
+  - name: AngularBindingTypeMismatch
+  - name: AngularInvalidEntryComponent
+  - name: AngularInvalidI18nAttribute
+  - name: AngularInvalidImportedOrDeclaredSymbol
+  - name: AngularNonStandaloneComponentImports
+  - name: AngularNgOptimizedImage
+  - name: AngularMissingEventHandler
+  - name: AngularMissingOrInvalidDeclarationInModule
+  - name: AngularInvalidSelector
+  - name: AngularMissingRequiredDirectiveInputBinding
+  - name: AngularMultipleStructuralDirectives
+  - name: AngularForBlockNonIterableVar
+  - name: AngularDeferBlockOnTrigger
+  - name: AngularRecursiveModuleImportExport
+  - name: AngularInvalidTemplateReferenceVariable
+  - name: AngularUndefinedBinding
+  - name: AngularUndefinedModuleExport
+  - name: AngularUndefinedTag
+  - name: VueDataFunction
+  - name: VueDeprecatedSymbol
+  - name: VueDuplicateTag
+  - name: VueMissingComponentImportInspection
+  - name: VueUnrecognizedDirective
+  - name: VueUnrecognizedSlot
 
 #Execute shell command before Qodana execution (Applied in CI/CD pipeline)
 #bootstrap: sh ./prepare-qodana.sh
