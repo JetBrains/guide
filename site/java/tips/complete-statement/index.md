@@ -18,10 +18,8 @@ seealso:
       https://www.jetbrains.com/help/idea/auto-completing-code.html#statements_completion
 video: "https://youtu.be/m6iY4p2rBoc"
 callToAction:
-  {
-    url: "/java/tips/completion/",
-    message: "Complete statement is just one of many completions offered by IntelliJ IDEA!",
-  }
+  url: "/java/tips/completion/"
+  message: "Complete statement is just one of many completions offered by IntelliJ IDEA!"
 ---
 
 You should get in the habit of using statement completion because it's a great way to keep your code compiling. You can use the keyboard shortcut <kbd>⌃⇧⏎</kbd> (macOS) / <kbd>Ctrl+Shift+Enter</kbd> (Windows/Linux) to add your semicolons, finish your methods and more.

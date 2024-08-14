@@ -17,10 +17,8 @@ seealso:
       https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html
 video: "https://youtu.be/K_v965EzAJg"
 callToAction:
-  {
-    url: "/java/tips/find-usages/",
-    message: "You can also find usages with IntelliJ IDEA!",
-  }
+  url: "/java/tips/find-usages/"
+  message: "You can also find usages with IntelliJ IDEA!"
 ---
 
 Go To Declaration or Usages <kbd>⌥⌘B</kbd> (macOS) / <kbd>Ctrl+Alt+B</kbd> (Windows/Linux) to see where code is declared or used. Go to Implementation <kbd>⌥⌘B</kbd> (macOS) / <kbd>Ctrl+Alt+B</kbd> (Windows/Linux) can tell you where a method is implemented and take you there.

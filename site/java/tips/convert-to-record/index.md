@@ -15,10 +15,8 @@ seealso:
     href: "https://blog.jetbrains.com/idea/2021/03/java-16-and-intellij-idea/"
 video: "https://youtu.be/qV4Y11AkH38"
 callToAction:
-  {
-    url: "/java/tips/convert-from-record/",
-    message: "Naturally, you can convert code from a record too!",
-  }
+  url: "/java/tips/convert-from-record/"
+  message: "Naturally, you can convert code from a record too!"
 ---
 
 IntelliJ IDEA can identify classes that are data holders and can be converted to records. The class will be highlighted with a warning (yellow underline) - press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and IntelliJ IDEA will suggest converting the class to a record.

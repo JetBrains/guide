@@ -13,10 +13,8 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/pro-tips.html#paste-from-history"
 video: "https://youtu.be/TY_CqQYx4g0"
 callToAction:
-  {
-    url: "https://www.youtube.com/watch?v=WCwxQ3C0Bj4",
-    message: "Ready for more? Check out IntelliJ IDEA Pro Tips: Clipboard History",
-  }
+  url: "https://www.youtube.com/watch?v=WCwxQ3C0Bj4"
+  message: "Ready for more? Check out IntelliJ IDEA Pro Tips: Clipboard History"
 ---
 
 Clipboard history is like your normal clipboard multiplied! IntelliJ IDEA keeps track of everything you copy inside the IDE and the last thing you copied outside the IDE. Search through your Clipboard history, paste a subset or paste multiple entries.

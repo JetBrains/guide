@@ -19,10 +19,8 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/commit-and-push-changes.html"
 video: "https://youtu.be/9ng_0rWnshU"
 callToAction:
-  {
-    url: "/java/tips/commit-inspection-profile/",
-    message: "You can add some checks to ensure that your commit meets your standards, and more importantly, doesn't break anything!",
-  }
+  url: "/java/tips/commit-inspection-profile/"
+  message: "You can add some checks to ensure that your commit meets your standards, and more importantly, doesn't break anything!"
 ---
 
 Use <kbd>⌘0</kbd> (macOS) / <kbd>Alt+0</kbd> (Windows/Linux) to display the _Commit_ tool window. Select the changes you want to commit. From here you can either click **Commit** to commit your changes locally, or **Commit and Push** to commit your changes and push them to the remote repository.

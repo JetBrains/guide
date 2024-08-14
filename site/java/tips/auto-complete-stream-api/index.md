@@ -13,10 +13,8 @@ seealso:
     href: "https://www.youtube.com/watch?v=nklbYYQpQi8"
 video: "https://youtu.be/sqt9iiyrpCg"
 callToAction:
-  {
-    url: "/java/tips/debugging-streams/",
-    message: "IntelliJ IDEA has a powerful debugger specifically for Java Streams. Check it out!",
-  }
+  url: "/java/tips/debugging-streams/"
+  message: "IntelliJ IDEA has a powerful debugger specifically for Java Streams. Check it out!"
 ---
 
 You don't need to type 'stream()', let IntelliJ IDEA do it for you.

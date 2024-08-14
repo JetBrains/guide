@@ -11,10 +11,8 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/tool-windows.html#hide_all"
 video: "https://youtu.be/gFpOGcEWhW4"
 callToAction:
-  {
-    url: "/tips/lean-ui/",
-    message: "Do you want to take your JetBrains IDE to the next level with a 'lean UI'?",
-  }
+  url: "/tips/lean-ui/"
+  message: "Do you want to take your JetBrains IDE to the next level with a 'lean UI'?"
 ---
 
 Hide All Windows <kbd>⌘⇧F12</kbd> (macOS) / <kbd>Ctrl+Shift+F12 (Windows/Linux)</kbd> to focus on the code.

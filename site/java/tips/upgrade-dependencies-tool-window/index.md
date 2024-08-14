@@ -14,10 +14,8 @@ seealso:
     href: "https://www.youtube.com/watch?v=nqb9yAecM9Y"
 video: "https://youtu.be/af_gdJA70Yk"
 callToAction:
-  {
-    url: "https://www.jetbrains.com/guide/java/tutorials/managing-dependencies/",
-    message: "We have a whole tutorial on managing dependencies that you can check out!",
-  }
+  url: "https://www.jetbrains.com/guide/java/tutorials/managing-dependencies/"
+  message: "We have a whole tutorial on managing dependencies that you can check out!"
 ---
 
 Manage your dependencies inside IntelliJ IDEA. Open the _Dependencies_ tool window to manage your dependencies. There are multiple ways to open the Dependencies tool window, including:

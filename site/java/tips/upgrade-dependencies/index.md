@@ -14,10 +14,8 @@ seealso:
     href: "https://www.youtube.com/watch?v=nqb9yAecM9Y"
 video: "https://youtu.be/kLFa5xnWGXk"
 callToAction:
-  {
-    url: "https://www.jetbrains.com/guide/java/tutorials/managing-dependencies/",
-    message: "We have a whole tutorial on managing dependencies that you can check out!",
-  }
+  url: "https://www.jetbrains.com/guide/java/tutorials/managing-dependencies/"
+  message: "We have a whole tutorial on managing dependencies that you can check out!"
 ---
 
 Manage your dependencies inside IntelliJ IDEA. Use intention actions <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to upgrade dependencies right inside your IDE when there are new versions available.

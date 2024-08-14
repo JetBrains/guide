@@ -13,10 +13,8 @@ seealso:
     href: "https://blog.jetbrains.com/idea/2021/09/java-17-and-intellij-idea/"
 video: "https://youtu.be/kPQZtzSMo_c"
 callToAction:
-  {
-    url: "/java/tips/pattern-matching-for-instanceof/",
-    message: "You can also use pattern matching for instanceof!",
-  }
+  url: "/java/tips/pattern-matching-for-instanceof/"
+  message: "You can also use pattern matching for instanceof!"
 ---
 
 Ensure your SDK and Language Level are at least Java 17 (Preview) in your Project Structure with <kbd>⌘;</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+S</kbd> (Windows/Linux).

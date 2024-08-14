@@ -14,10 +14,8 @@ seealso:
     href: "https://blog.jetbrains.com/idea/2021/03/java-16-and-intellij-idea/"
 video: "https://youtu.be/byGjzMHqwcc"
 callToAction:
-  {
-    url: "/java/tips/convert-to-record/",
-    message: "Naturally, you can convert code to a record too!",
-  }
+  url: "/java/tips/convert-to-record/"
+  message: "Naturally, you can convert code to a record too!"
 ---
 
 If we decide that maybe a record should be a full Java class, we can get IntelliJ IDEA to automatically convert a record into a Java class.

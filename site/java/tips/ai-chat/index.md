@@ -16,10 +16,8 @@ seealso:
     href: "https://www.youtube.com/watch?v=EfIYJKw8AkA"
 video: "https://youtu.be/ec0Fpvig5_0"
 callToAction:
-  {
-    url: "/java/tips/ai-actions/",
-    message: "You can also access lots of actions for JetBrains AI Assistant inside your IDE!",
-  }
+  url: "/java/tips/ai-actions/"
+  message: "You can also access lots of actions for JetBrains AI Assistant inside your IDE!"
 ---
 
 Need help? Ask JetBrains AI Assistant for help with your code right inside your IDE. Open the AI Assistant chat window by clicking the AI Assistant icon on the right, ask your question and get a response.

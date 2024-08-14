@@ -16,10 +16,8 @@ seealso:
     href: "https://www.youtube.com/watch?v=nqb9yAecM9Y"
 video: "https://youtu.be/4-TO8pNIuks"
 callToAction:
-  {
-    url: "https://www.jetbrains.com/guide/java/tutorials/managing-dependencies/",
-    message: "We have a whole tutorial that you can take a look at for managing your dependencies!",
-  }
+  url: "https://www.jetbrains.com/guide/java/tutorials/managing-dependencies/"
+  message: "We have a whole tutorial that you can take a look at for managing your dependencies!"
 ---
 
 Manage dependencies inside your IDE. Manage your dependencies with #IntelliJIDEA Package Search. Upgrade one, or all, dependencies right in your IDE when there are new versions available.

@@ -14,10 +14,8 @@ seealso:
     href: "https://blog.jetbrains.com/idea/2021/03/java-16-and-intellij-idea/"
 video: "https://youtu.be/aTs-Jgye3wk"
 callToAction:
-  {
-    url: "/java/tips/create-a-correct-sealed-parent/",
-    message: "You can create a sealed parent too!",
-  }
+  url: "/java/tips/create-a-correct-sealed-parent/"
+  message: "You can create a sealed parent too!"
 ---
 
 Sealed classes (first preview feature in Java 16) are a way to take control of the inheritance hierarchy of our classes. IntelliJ IDEA can let us know about problems in the classes that extend sealed classes, and suggest solutions.

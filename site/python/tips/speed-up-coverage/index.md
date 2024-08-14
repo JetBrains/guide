@@ -11,12 +11,10 @@ seealso:
     href: "https://coverage.readthedocs.io/en/coverage-5.0.4/config.html"
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=OCH_gPfrvzw"
-"callToAction":
-  {
-    "title": "Interested in viewing your coverage?",
-    "url": "site/python/tips/spot-coverage-in-gutter/",
-    "message": "You can quickly see your test coverage inside your IDE. Check it out!",
-  }
+callToAction:
+  title: "Interested in viewing your coverage?"
+  url: "site/python/tips/spot-coverage-in-gutter/"
+  message: "You can quickly see your test coverage inside your IDE. Check it out!"
 ---
 
 Coverage is a boon: it lets you know how much of your code has tests and better, which lines in which files don't.

@@ -17,10 +17,8 @@ seealso:
       https://www.jetbrains.com/help/idea/investigate-changes.html#annotate_blame
 video: "https://youtu.be/JJh1MxYkC0A"
 callToAction:
-  {
-    url: "/java/tips/annotate-git-commit/",
-    message: "Look at the commit a change was part of from Annotate with Git Blame?",
-  }
+  url: "/java/tips/annotate-git-commit/"
+  message: "Look at the commit a change was part of from Annotate with Git Blame?"
 ---
 
 To see what was last changed in a line of code, right-click the gutter and select **Annotate with Git Blame**. Right-click in the gutter again to select **Show Diff** to review the differences between the current and the previous version of the file.

@@ -12,10 +12,8 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/find-highlight-usages.html"
 video: "https://youtu.be/TMD4QCStg3M"
 callToAction:
-  {
-    url: "/java/tips/go-to-declaration-implementation/",
-    message: "As well as finding usages, you can also go to the declaration or implementation of a symbol!",
-  }
+  url: "/java/tips/go-to-declaration-implementation/"
+  message: "As well as finding usages, you can also go to the declaration or implementation of a symbol!"
 ---
 
 Press <kbd>⌥F7</kbd> (macOS) / <kbd>Alt+F7</kbd> (Windows/Linux), to bring up the _Find Usages_ tool window. You can search a single file, your whole project, or customise the scope.
