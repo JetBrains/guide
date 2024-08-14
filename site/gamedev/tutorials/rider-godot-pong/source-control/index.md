@@ -13,7 +13,7 @@ subtitle: >-
 thumbnail: ./thumbnail.png
 ---
 
-Outside of binary assets like images, video, and audio, most of Godot Game Engine's files are text-based. This means that it works seamlessly with source control. If you remember, when starting our project, we could select our source control option; in our case, it was **Git**.
+Outside binary assets like images, video, and audio, most of Godot Game Engine's files are text-based. This means that it works seamlessly with source control. If you remember, when starting our project, we could select our source control option; in our case, it was **Git**.
 
 In the same directory as your project, you can run the `git init` command to initialize your project for source control management. You'll also want to ensure your `.gitignore` file is updated to keep unwanted assets out of source control.
 

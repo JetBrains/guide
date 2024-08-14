@@ -316,7 +316,7 @@ Accepting the autocomplete shows that the IDE fills in `{}` for an attribute val
 What's the difference?
 A double-quote contains a regular string, whereas brackets contain JavaScript expressions, which we saw above.
 
-In components you frequently navigate around between markup and code.
+In components, you frequently navigate around between markup and code.
 The IDE makes this easy.
 For example, in the `App` component, <kbd>⌘B</kbd> (macOS) / <kbd>Ctrl+B</kbd> (Windows/Linux) on `Heading` and you will navigate to that component.
 

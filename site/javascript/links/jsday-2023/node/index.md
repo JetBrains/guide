@@ -8,7 +8,7 @@ video: "https://youtu.be/cXMAsTJXLw8"
 linkURL: "https://youtu.be/cXMAsTJXLw8"
 ---
 
-Non-browser JavaScript runtimes are growing, expanding, and evolving. At one time, Node.js was the only option. Today, we also have Deno, Bun, Cloudflare Workers, and more. How are these runtimes different? How are they similar? And how can a developer target all of them?
+Non-browser JavaScript runtimes are growing, expanding, and evolving. At one time, Node.js was the only option. Today, we also have Deno, Bun, Cloudflare Workers, and more. How are these runtimes different? How are they similar? And how can a developer target all them?
 
 ### About the Presenter
 

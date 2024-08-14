@@ -36,7 +36,7 @@ We saw going to the Git Log, choosing a commit, and getting to a diff.
 This is against your local _branch_, not the uncommitted changes in your _working directory_.
 But that’s not the branch.
 That’s a commit on the branch.
-If the branch had multiple commits, you could select all of them.
+If the branch had multiple commits, you could select all them.
 The IDE will figure out all the changes, vs. your local branch.
 
 That’s a lot of work.

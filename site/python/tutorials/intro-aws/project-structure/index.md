@@ -102,6 +102,6 @@ A "tests" directory is available. If you intend to create unit tests, your local
 
 ![explore_step_11](steps/step11.png)
 
-If you want to get into more details about Serverless Functions then there is something called [Template Anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html) as you can see on my screen. Here you will get more information about what data we can pass to the SAM Template. There are lots of properties over here which you can pass to your serverless functions. You can set the events, environments, handlers and you can even set the memory size.
+If you want to get into more details about Serverless Functions then there is something called [Template Anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html) as you can see on my screen. Here you will get more information about what data we can pass to the SAM Template. There are lots of properties over here which you can pass to your serverless functions. You can set the events, environments, handlers, and you can even set the memory size.
 
 You will feel intimidated at first, but don’t worry, we will be exploring step by step. In the upcoming tutorial I will show you how to run the Lambda function locally using Docker Container.

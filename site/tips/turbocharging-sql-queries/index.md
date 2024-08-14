@@ -15,7 +15,7 @@ Learn SQL tips and SQL optimization techniques as we delve into query performanc
 
 ## The Problem
 
-So, who’s up for a few hours of typing out variations of the same SQL queries? You’ve just got access to a hot new database and you can’t wait to explore the contents. Let’s have a closer look at this recipes table here. We’ll start by writing a top 10 query to check out what’s inside.
+So, who’s up for a few hours of typing out variations of the same SQL queries? You’ve just got access to a hot new database, and you can’t wait to explore the contents. Let’s have a closer look at this recipes table here. We’ll start by writing a top 10 query to check out what’s inside.
 
 ```sql
 SELECT *

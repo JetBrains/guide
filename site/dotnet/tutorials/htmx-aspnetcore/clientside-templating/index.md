@@ -59,6 +59,6 @@ We then need to define our HTML element with three essential parts:
 </div>
 ```
 
-When we trigger the button, the HTMX extension will process the response from our request as JSON through the Mustache templating engine. You'll notice that this extension enhances the HTMX experience without disrupting other familiar functionality. Furthermore, the extension allows us to opt-in to utilizing JSON APIs while also using a purpose-built backend for HTML snippets. As a result, we can continue to invest in the technologies we're invested in while also enhancing the user experiences we hope to deliver. It's a win/win for everyone!
+When we trigger the button, the HTMX extension will process the response from our request as JSON through the Mustache templating engine. You'll notice that this extension enhances the HTMX experience without disrupting other familiar functionality. Furthermore, the extension allows us to opt in to utilizing JSON APIs while also using a purpose-built backend for HTML snippets. As a result, we can continue to invest in the technologies we're invested in while also enhancing the user experiences we hope to deliver. It's a win/win for everyone!
 
 In the following video, we'll explore the dark arts of "Out-of-band Swaps", learn why it's forbidden knowledge in the next section.

@@ -12,6 +12,7 @@ if (playlistItemToggles.length > 0) {
       e.preventDefault();
       history.replaceState({}, "", el.href);
       resetPlaylistItemToggles();
+      // noinspection DuplicatedCode
       el.classList.add("is-active");
       playlistItems.forEach((playlistItem) => {
         playlistItem.style.display = "none";
@@ -24,6 +25,7 @@ if (playlistItemToggles.length > 0) {
     });
     if (el.href.endsWith(thisAnchor)) {
       // el.click();
+      // noinspection DuplicatedCode
       el.classList.add("is-active");
       playlistItems.forEach((playlistItem) => {
         playlistItem.style.display = "none";

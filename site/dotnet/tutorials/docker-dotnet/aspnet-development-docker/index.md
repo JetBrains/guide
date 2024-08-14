@@ -101,7 +101,7 @@ When we develop an ASP.NET Core application locally, we are utilizing the ASP.NE
 
 Secondly, most ecosystems outside .NET don't usually use HTTPS on each web application instance but instead use a proxy that will terminate HTTPS and then pass along the message to the container. Reverse proxies like Nginx and, more recently, Microsoft's YARP is ideal for this kind of scenario.
 
-Lastly, for folks who still want to use HTTPS within the container, it is possible. It requires managing a certificate deployed with the image and setting a container's environment variables. Check out the guidance found on the [Official Microsoft Documentation site.](https://docs.microsoft.com/en-us/dotnet/core/additional-tools/self-signed-certificates-guide#with-openssl).
+Lastly, for folks who still want to use HTTPS within the container, it is possible. It requires managing a certificate deployed with the image and setting a container's environment variables. Check out the guidance found on the [Official Microsoft Documentation site](https://docs.microsoft.com/en-us/dotnet/core/additional-tools/self-signed-certificates-guide#with-openssl).
 
 ### See Also
 

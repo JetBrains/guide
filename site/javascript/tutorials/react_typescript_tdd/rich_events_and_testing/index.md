@@ -223,7 +223,7 @@ The click passes in some information saying `shiftKey` was "pressed".
 
 The test passes!
 Our code in `Counter.handleIncrement` above worked and is now tested.
-Even better, we did this entire step -- adding a multi-featured click incrementer -- without visiting the browser.
+Even better, we did this entire step -- adding a multifeatured click incrementer -- without visiting the browser.
 
 Which we'll do now.
 As we have been doing at the end, give this a try in the browser by firing up the `start` run configuration and clicking, then shift-clicking, on the counter.

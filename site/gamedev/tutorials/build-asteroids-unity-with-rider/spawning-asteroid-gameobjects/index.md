@@ -229,7 +229,7 @@ Back in the Unity Editor, make sure the asteroid is selected, and in the **Inspe
 
 ![Play mode in Unity Editor showing asteroids spawning](../images/image29.png)
 
-After a while though, you'll see errors appear. More specifically, when the original rock becomes invisible, it is destroyed in the `AsteroidController`'s `OnBecameInvisible` method. After the asteroid is destroyed, there's no way to clone it into new asteroids anymore and you will see errors being printed to the **Console** tool window.
+After a while though, you'll see errors appear. More specifically, when the original rock becomes invisible, it is destroyed in the `AsteroidController`'s `OnBecameInvisible` method. After the asteroid is destroyed, there's no way to clone it into new asteroids anymore, and you will see errors being printed to the **Console** tool window.
 
 To solve this issue, you can use the trick we applied to the laser earlier. From the **Hierarchy** tool window, drag the asteroid into the **Project** tool window to create an asteroid prefab. You can then use this prefab instead of the asteroid that is on the scene. If you want to, you can even remove the asteroid from the scene: the `AsteroidSpawner` will take care of creating asteroids when the game is running.
 

@@ -40,7 +40,7 @@ But then, when you finish and merge back to main, that commit will be in two pla
 
 Let’s see the solution visually, then perform the IDE action.
 Our feature branch was based off a starting commit.
-We want to "re-do: the basing.
+We want to "re-do: the basing".
 Meaning, re-base.
 
 We want to act as if this branch started from a new commit, instead of the starting commit.

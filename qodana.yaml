@@ -33,6 +33,9 @@ exclude:
       - site/javascript/tutorials/react_typescript_tdd/rich_events_and_testing/demos
       - site/javascript/tutorials/react_typescript_tdd/testing/demos
       - site/javascript/tutorials/react_typescript_tdd/tsx_es6/demos
+      - site/javascript/tutorials/eleventy-tsx/layouts/demos
+      - site/javascript/tutorials/eleventy-tsx/props/demos
+      - site/javascript/tutorials/eleventy-tsx/views/demos
   - name: HttpUrlsUsage
     paths:
       - _includes

@@ -41,7 +41,7 @@ When looking at Rider's toolbar, we'll notice it is a bit more sparse by default
 - Run Widget (Run, Debug, Attach to Process)
 - IDE and Project Settings
 
-The _Run Widget_ is of particular interest as you'll be using it to run and debug applications. It's quite intuitive to use and you'll be reading more about it in the debugger section of this guide.
+The _Run Widget_ is of particular interest as you'll be using it to run and debug applications. It's quite intuitive to use, and you'll be reading more about it in the debugger section of this guide.
 
 While the UI is fully customizable, Rider's development team has gone through the meticulous process of making all functionality accessible via shortcut keys. The _Search Everywhere_ feature is beneficial, as it is only a <kbd>Shift+Shift</kbd> away from helping developers find the action they need.
 

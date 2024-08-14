@@ -29,7 +29,7 @@ Tabs are the default way to work on two things at once. Look, it’s easy to swi
 
 ## The Solution
 
-Can we move between open files and have things side-by-side…without tabs? Indeed we can. Let’s start by going to settings/preferences…setting tab placement to None. Or do this faster, from the keyboard. Find Action, search for tab placement none. Then, directly in the results, press Enter to toggle. Enter again toggles back, etc.
+Can we move between open files and have things side-by-side…without tabs? Indeed, we can. Let’s start by going to settings/preferences…setting tab placement to None. Or do this faster, from the keyboard. Find Action, search for tab placement none. Then, directly in the results, press Enter to toggle. Enter again toggles back, etc.
 
 So how do I jump between open files without tabs? Instead of “open in that other tab somewhere”, use keyboard techniques, such as: Recent Files. Most of the time, the “other file” is the one you were last on, and it’s highlighted, so just press enter.
 

@@ -33,7 +33,7 @@ To see all our bookmarks, we can open the _Bookmarks_ tool window by pressing **
 
 ![Open Bookmark Tool Window menu](open-bookmarks-tool-window-menu.png)
 
-IntelliJ IDEA adds your bookmarks to the predefined list in the Bookmarks tool window that is created automatically and has the same name as the project. In this example, multiple bookmarks in the same file are grouped together. We can also turn that off in the _Options_ menu, by deselecting **Group Line Bookmarks by File**. As we can see, there are several other options as well. We won't dive into all of them, but be aware there are some options you can configure to your liking.
+IntelliJ IDEA adds your bookmarks to the predefined list in the Bookmarks tool window that is created automatically and has the same name as the project. In this example, multiple bookmarks in the same file are grouped together. We can also turn that off in the _Options_ menu, by deselecting **Group Line Bookmarks by File**. As we can see, there are several other options as well. We won't dive into all them, but be aware there are some options you can configure to your liking.
 
 ![Bookmark Tool Window options](options.png)
 

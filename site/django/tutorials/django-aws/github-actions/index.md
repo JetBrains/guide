@@ -137,7 +137,7 @@ I will create a new user and name it “django-ecr” and will enable _programma
 
 I will not provide any permission, rather I will create an inline policy later.
 
-I don’t need any _Tags_, I am going to ignore it and finally I click **Create User**.
+I don’t need any _Tags_, I am going to ignore it, and finally I click **Create User**.
 
 Once the user has been successfully created, you will receive the _Access key ID_ and _secret access key_. Keep it confidential and don’t share it with anyone. I am currently sharing my credentials, but I am going to remove it at the end.
 
@@ -235,7 +235,7 @@ Yes, the 1.0 tag is reflecting in the repository.
 
 ![build-success-ecr](./steps/step36.png)
 
-I hope you now have the basic knowledge how to setup a workflow and initiate an automated build & deployment process. If you got stuck somewhere, then follow the video. This is what actually happens in the real software world, but over there you will be interacting with complex workflows.
+I hope you now have the basic knowledge how to set up a workflow and initiate an automated build & deployment process. If you got stuck somewhere, then follow the video. This is what actually happens in the real software world, but over there you will be interacting with complex workflows.
 
 The main goal of this tutorial series was to provide you brief knowledge of what actually happens during the software development beginning from development, testing and finally until deploying the application in production.
 

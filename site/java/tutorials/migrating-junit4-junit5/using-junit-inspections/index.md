@@ -142,7 +142,7 @@ JUnit 4.4 introduced the idea of assumptions, if these assumptions are met the t
 
 Like the `Before` annotations, `After` is replaced with `AfterEach`, and `AfterClass` is replaced with `AfterAll`.
 
-IntelliJ IDEA makes all of these changes automatically. Like any IntelliJ IDEA refactoring, you can see the class still compiles after you've done the refactoring by using <kbd>⌘F9</kbd> (macOS) / <kbd>Ctrl+F9</kbd> (Windows/Linux). Let's use <kbd>⌃⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+F10</kbd> (Windows/Linux) (Windows/Linux) to run the tests to make sure everything behaves the way we expect.
+IntelliJ IDEA makes all these changes automatically. Like any IntelliJ IDEA refactoring, you can see the class still compiles after you've done the refactoring by using <kbd>⌘F9</kbd> (macOS) / <kbd>Ctrl+F9</kbd> (Windows/Linux). Let's use <kbd>⌃⇧R</kbd> (macOS) / <kbd>Ctrl+Shift+F10</kbd> (Windows/Linux) (Windows/Linux) to run the tests to make sure everything behaves the way we expect.
 
 The `beforeClass` method is run once, each before and after method is run once per test, and the `afterClass` method is run once at the end, so the overall setup works as it did under JUnit 4. The disabled test is still not run, and there are three passing tests, the same as before.
 

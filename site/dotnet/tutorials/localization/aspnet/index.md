@@ -142,7 +142,7 @@ We may remember setting the `ResourcesPath` property in our `ConfigureServices` 
 
 1. We should name files after the class names, which will be utilizing the resource values. For example, `Program.cs` and `Resources/Program.resx`. We can access any resource file, but this organization helps keep us focused.
 2. Resource files for ASP.NET views should have the same directory structure as the views they represent. For example, `Pages/Index.cshtml` and `Resources/Pages/Index.resx`.
-3. In some cases, naming isn't as important, as we can select which resource file we want ASP.NET too look for a resource value.
+3. In some cases, naming isn't as important, as we can select which resource file we want ASP.NET to look for a resource value.
 
 We recommend looking at the [Resources directory](https://github.com/khalidabuhakmeh/aspnetcore_localization_sample/tree/master/WebApplication/Resources) in our sample project to see some of the different naming conventions in practice.
 

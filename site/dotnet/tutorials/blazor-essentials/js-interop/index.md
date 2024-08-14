@@ -16,7 +16,7 @@ thumbnail: ./thumbnail.png
 
 ## JavaScript Interop in Blazor
 
-A key feature of Blazor is that there's very little need for JavaScript. But there will be occasions that you do need it. However, you can’t simply toss some JavaScript into a page or Blazor produces an error. JavaScript must be included and used in a specific way for Blazor to function because Blazor creates dynamic components and using JavaScript in traditional ways works outside of this model. However, it’s straightforward to use JavaScript in Blazor, and you also get the benefit of being able to call JavaScript from C# and C# from JavaScript - not just calling JavaScript in response to a DOM event.
+A key feature of Blazor is that there's very little need for JavaScript. But there will be occasions that you do need it. However, you can’t simply toss some JavaScript into a page or Blazor produces an error. JavaScript must be included and used in a specific way for Blazor to function because Blazor creates dynamic components and using JavaScript in traditional ways works outside this model. However, it’s straightforward to use JavaScript in Blazor, and you also get the benefit of being able to call JavaScript from C# and C# from JavaScript - not just calling JavaScript in response to a DOM event.
 
 ## Call JavaScript Code
 

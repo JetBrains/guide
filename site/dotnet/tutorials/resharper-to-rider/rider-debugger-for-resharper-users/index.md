@@ -19,7 +19,7 @@ As developers, we try our hardest to avoid introducing bugs and exceptions into 
 
 ## Main Toolbar and Run Button
 
-One of the first changes developers will notice from Visual Studio is the **Run** button in the main toolbar, shown as a _play_ icon. In Visual Studio, the **Run** button will immediately initiate a debugging session. We may be used to running our applications with the debugger attached, but there are side-effects to getting in the habit of always running in debug mode:
+One of the first changes developers will notice from Visual Studio is the **Run** button in the main toolbar, shown as a _play_ icon. In Visual Studio, the **Run** button will immediately initiate a debugging session. We may be used to running our applications with the debugger attached, but there are side effects to getting in the habit of always running in debug mode:
 
 - Our applications will operate slower due to debugging overhead.
 - We are running unoptimized code, never experiencing production code until further down the development lifecycle.
@@ -50,7 +50,7 @@ Unlike Visual Studio, Rider has a dedicated window for all things debugging. Thi
 
 ![JetBrains Rider debugger tool window](./rider-debugger-tool-window.png)
 
-In addition to relevant information about our application, we can also access the debugging toolbar on the window's top-most border. Here we can _restart_, _stop_, _resume_, and _pause_ the current debugging session. We can also _step over_, _step into_, and _step out_ of our code. Finally we have some additional elements to quickly manage breakpoints.
+In addition to relevant information about our application, we can also access the debugging toolbar on the window's top-most border. Here we can _restart_, _stop_, _resume_, and _pause_ the current debugging session. We can also _step over_, _step into_, and _step out_ of our code. Finally, we have some additional elements to quickly manage breakpoints.
 
 ![JetBrains Rider debugger tool window's buttons](./rider-debugger-tool-window-buttons.png)
 

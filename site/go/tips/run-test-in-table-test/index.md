@@ -19,4 +19,4 @@ If the IDE can determine the name of the test, then you can use either the green
 
 - The test data variable must be a slice, an array, or a map. It must be defined in the same function as the call and must not be touched after initialization (except for range clauses in a for loop).
 - The individual test data entry must be a struct literal. Loop variables used in a subtest name expression must not be touched before the call.
-- A subtest name expression can be a string field in the test data, a concatenation of test data string fields, and an fmt.Sprintf() call with %s and %d verbs.
+- A subtest name expression can be a string field in the test data, a concatenation of test data string fields, and an `fmt.Sprintf()` call with `%s` and `%d` verbs.

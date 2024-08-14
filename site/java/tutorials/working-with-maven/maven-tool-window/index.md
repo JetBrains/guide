@@ -23,7 +23,7 @@ If the build was successful like the one in the screenshot above, you'll see Mav
 
 ![Target Directory](target-directory.png)
 
-You can also run Maven goals via Run Anything <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl</kbd> (Windows/Linux)).
+You can also run Maven goals via Run Anything <kbd>⌃⌃</kbd> (macOS) / <kbd>Ctrl+Ctrl</kbd> (Windows/Linux).
 
 ![Run Anything](run-anything.png)
 

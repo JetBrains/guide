@@ -78,7 +78,7 @@ From the **Run Configuration** dropdown, we'll notice Rider has discovered all t
 
 ![Rider showing lauch settings in run configurations](./6-rider-launch-setting-run-configuration.png)
 
-We can also use Rider's UI to inspect the settings read from the `launchSettings.json`. Rider's UI can help us confirm our JSON is well structured and that all the settings are the expected values.
+We can also use Rider's UI to inspect the settings read from the `launchSettings.json`. Rider's UI can help us confirm our JSON is well-structured and that all the settings are the expected values.
 
 ![Rider's launchSettings UI](./7-rider-launchSettings-UI.png)
 

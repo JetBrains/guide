@@ -137,7 +137,7 @@ Our tests pass, so we're in good shape, and we've added type safety to detect a 
 
 ## Starting Value
 
-Sometimes we want a counter that starts somewhere besides zero and we'd like the _consumer_ of the component -- the parent component -- to be in charge.
+Sometimes we want a counter that starts somewhere besides zero, and we'd like the _consumer_ of the component -- the parent component -- to be in charge.
 Let's change `Counter` to allow passing in an _optional_ prop for the starting value.
 
 This change is going to be tricky.

@@ -30,7 +30,7 @@ When we stop at a breakpoint, we can inspect the state of the program, at that p
 You don’t have to look in the debugger tool window: values are shown inline in the editor, too.
 
 If you close a file and then later re-open it, the breakpoint is still there, even if you close the IDE completely.
-This also means it’s easy to lose track of breakpoints in big projects. With the **View Breakpoints** dialog, the IDE makes it simple to see all of them, and delete ones you are not using.
+This also means it’s easy to lose track of breakpoints in big projects. With the **View Breakpoints** dialog, the IDE makes it simple to see all them, and delete ones you are not using.
 To have the debugger pop up when you hit a problem, rather than manually set breakpoints, you can set a breakpoint to handle JavaScript exceptions from here, too.
 
 You can also set conditions on breakpoints, so you only pause execution when a certain condition is true or the breakpoint has been hit a number of times.

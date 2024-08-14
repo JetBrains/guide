@@ -28,7 +28,7 @@ The cool thing about this is that if you then change your mind, you can easily u
 
 There are quite a few other refactorings available. You can look them up from the **Refactor** menu, or use **Refactor This...** in code (<kbd>Ctrl+Shift+R</kbd>). You’ll see all the refactorings available in the current context there.
 
-Let’s try performing another action that Rider can help you with: extracting a component. Why do it yourself when the IDE can do it for you? We just need to decide on a few things and we’ll get a component created for us on one side and the usage on the other. Have a look at our web help about [safely refactoring code](https://www.jetbrains.com/help/rider/Refactoring_and_Cleaning_Code.html).
+Let’s try performing another action that Rider can help you with: extracting a component. Why do it yourself when the IDE can do it for you? We just need to decide on a few things, and we’ll get a component created for us on one side and the usage on the other. Have a look at our web help about [safely refactoring code](https://www.jetbrains.com/help/rider/Refactoring_and_Cleaning_Code.html).
 
 ### See Also
 

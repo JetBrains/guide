@@ -31,7 +31,7 @@ Using a unique culture can dramatically impact a user's experience, and we shoul
 
 ## Resource Files
 
-The first essential element of localization is the resource file, commonly recognized by its unique file extension of `resx`. Resource files are XML based and contain key/value pairs. Typically the key is the identifier used within our code to access the value we present to the user. Below, we'll see a resource item with a key of `HelloWorld` and a string value of `Hello World!`.
+The first essential element of localization is the resource file, commonly recognized by its unique file extension of `resx`. Resource files are XML based and contain key/value pairs. Typically, the key is the identifier used within our code to access the value we present to the user. Below, we'll see a resource item with a key of `HelloWorld` and a string value of `Hello World!`.
 
 ```shell
 <data name="HelloWorld" xml:space="preserve">

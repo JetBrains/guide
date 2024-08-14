@@ -32,7 +32,7 @@ Intentions are available for every language supported by Rider - C#, F#, VB.NET,
 
 Now, imagine you’ve got some badly formatted code, with lots of little problems all over the place. You may be tempted to fix them all manually, but there are much better things you could be doing instead! Explore our web help [for examples of how you can format full files](https://www.jetbrains.com/help/rider/Code_Formatting_Style.html) or just selected parts of your code.
 
-Imports are another thing you no longer have to worry about. Let’s say we haven’t imported the `App` symbol and we want to use it. Start typing, accept the autocomplete suggestion, and the IDE will do the completion and create an import all for you. Optimize Imports can, amongst the other things, help me clear out any unused imports.
+Imports are another thing you no longer have to worry about. Let’s say we haven’t imported the `App` symbol, and we want to use it. Start typing, accept the autocomplete suggestion, and the IDE will do the completion and create an import all for you. Optimize Imports can, amongst the other things, help me clear out any unused imports.
 
 ### See Also
 

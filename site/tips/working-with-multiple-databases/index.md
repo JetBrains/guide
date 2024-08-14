@@ -26,7 +26,7 @@ And once you get to querying the databases, you’ll need to copy and paste the 
 
 With the IDE’s Database tool window, we can do just that. The IDE supports connections to a huge range of databases, from embedded databases like SQLite and H2, to massive cloud databases like Redshift and Snowflake, and even new and esoteric databases like DuckDB.
 
-Let’s see how easy it is to connect to a PostgreSQL database using the IDE. All we need to do is select the PostgreSQL data source, enter our connection name, user name, password, and database name. The IDE even takes care of downloading the drivers for us at a click! Now, we just need to click OK and we’re in!
+Let’s see how easy it is to connect to a PostgreSQL database using the IDE. All we need to do is select the PostgreSQL data source, enter our connection name, username, password, and database name. The IDE even takes care of downloading the drivers for us at a click! Now, we just need to click OK and we’re in!
 
 We can see that not only have we connected to our database, we can also see the whole contents at a glance!
 

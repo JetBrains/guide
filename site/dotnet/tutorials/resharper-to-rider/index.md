@@ -22,7 +22,7 @@ tutorialItems:
   - ./working-with-internet-information-services-iis/
 ---
 
-Many of the same features we've all grown to love in [ReSharper](https://www.jetbrains.com/resharper/) help power [JetBrains Rider's](https://www.jetbrains.com/rider/) development experience. While most functionality is still present, it may take us a little effort to learn where everything is within a brand new development environment.
+Many of the same features we've all grown to love in [ReSharper](https://www.jetbrains.com/resharper/) help power [JetBrains Rider's](https://www.jetbrains.com/rider/) development experience. While most functionality is still present, it may take us a little effort to learn where everything is within a brand-new development environment.
 
 In this guide, we'll look at some everyday functionality folks might find helpful when migrating from Visual Studio, with or without ReSharper.
 

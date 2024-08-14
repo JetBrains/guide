@@ -28,7 +28,7 @@ The main advantage of using a web framework over the standard library for web de
 
 On the flip side, you'll have to adapt the way you code to the specific framework you're using. All frameworks have an opinionated view on coding and building web applications. This means that you have to learn and follow the conventions imposed by the framework; this can lead to a steep learning curve for anyone joining the project.
 
-Another disadvantage is that it can be challenging to move away from your adopted framework. If you decide to move to another solution or framework that better suits your needs, you might have to rewrite a lot of your code to make it compatible. This can be particularly problematic if you're switching because you've reached the inherent limitations of your chosen framework or it's become obsolete. Thus, popularity and an active community are key criteria when selecting a framework.
+Another disadvantage is that it can be challenging to move away from your adopted framework. If you decide to move to another solution or framework that better suits your needs, you might have to rewrite a lot of your code to make it compatible. This can be particularly problematic if you're switching because you've reached the inherent limitations of your chosen framework, or it's become obsolete. Thus, popularity and an active community are key criteria when selecting a framework.
 
 There are a few popular web frameworks available for Go:
 

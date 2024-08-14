@@ -33,7 +33,7 @@ You can click on this to open the Problems tool window or use <kbd>⌘6</kbd> (m
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q26Cc6V7zKk" >
 </iframe>
 
-Errors are hard to avoid at times but it's much easier to address them as they happen in IntelliJ IDEA and keep your code green and compiling. You can use (**F2** | **F2**) to navigate to the next error in your code or <kbd>⇧F2</kbd> (macOS) / <kbd>Shift+F2</kbd> (Windows/Linux) to navigate to the previous error.
+Errors are hard to avoid at times, but it's much easier to address them as they happen in IntelliJ IDEA and keep your code green and compiling. You can use (**F2** | **F2**) to navigate to the next error in your code or <kbd>⇧F2</kbd> (macOS) / <kbd>Shift+F2</kbd> (Windows/Linux) to navigate to the previous error.
 
 You can also use the Problem Window <kbd>⌘6</kbd> (macOS) / <kbd>Alt+6</kbd> (Windows/Linux) to see all the errors in one place and address them by clicking on each one.
 
@@ -78,4 +78,4 @@ Scrollbars is another feature that we perhaps need to take a second look at. Int
 
 The left-hand scrollbar gives us coloured bars to indicate changes in our code, that is when something has been added, removed or changed. Errors are also shown in red, although hopefully you won't have any of those!
 
-The right-hand scrollbar is often overlooked but it's worth looking at it because it shows you the file's status at a glance. Whereas the left-hand scrollbar shows you the file's status depending on your position in the file, the right-hand scrollbar shows you the file at-a-glance, including errors. It's helpful to scan this scrollbar when you first open a file, or when you're about to check in changes just to check that everything is as you expect it to be.
+The right-hand scrollbar is often overlooked, but it's worth looking at it because it shows you the file's status at a glance. Whereas the left-hand scrollbar shows you the file's status depending on your position in the file, the right-hand scrollbar shows you the file at-a-glance, including errors. It's helpful to scan this scrollbar when you first open a file, or when you're about to check in changes just to check that everything is as you expect it to be.

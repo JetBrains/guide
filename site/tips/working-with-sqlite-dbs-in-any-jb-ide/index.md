@@ -24,9 +24,9 @@ Once that’s done, we end up with all of our data in plain text. We’d need to
 
 Luckily the IDE offers us not only a solution to start exploring our database, but a super lazy solution. All we need to do is open the Database tool window in the IDE, and then drag and drop our SQLite database into it to make the connection.
 
-As you can see, the IDE has already prepopulated all of the fields, and will even download the database drivers we need with one click! We just go ahead and click OK to finish up.
+As you can see, the IDE has already prepopulated all the fields, and will even download the database drivers we need with one click! We just go ahead and click OK to finish up.
 
-And Voila! The IDE has introspected the contents of our entire database, and at a glance we can see everything, down to the schemas of individual tables! Although this is not a dedicated SQL IDE, you can run native SQL code in a console attached to this database.
+And Voilà! The IDE has introspected the contents of our entire database, and at a glance we can see everything, down to the schemas of individual tables! Although this is not a dedicated SQL IDE, you can run native SQL code in a console attached to this database.
 
 We can now write that same query that we wrote in the command line, but much more comfortably. You can see that the IDE is really helping us here, giving us suggestions for not only the SQL commands, but also the column names.
 

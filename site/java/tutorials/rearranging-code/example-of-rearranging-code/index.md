@@ -192,7 +192,7 @@ When you do this, the code will be rearranged (see below). Here is a list of cha
 
 - All the fields have moved to the top of the class because that's what we specified in our grouping rows 1-8.
 - The getter and setter methods are grouped because IntelliJ IDEA has grouped them together from the grouping rules.
-- The Override methods have been grouped together because we specified we wanted to keep them together in the grouping rules). The Override methods are also implemented in the order they appear in the Object super class.
+- The Override methods have been grouped together because we specified we wanted to keep them together in the grouping rules. The Override methods are also implemented in the order they appear in the Object super class.
 - Next are the remaining two public methods, which are obeying line 22 of our matching rules.
 - Finally, there's the private method which is obeying line 23 of our matching rules.
 

@@ -56,7 +56,7 @@ This shows we could have skipped the context menu by selecting the commit and pr
 
 We’ll select that option and be prompted with a dialog to edit the commit.
 The existing commit message is there.
-We can see, there’s a warning about the typo. We mouseover for more detail.
+We can see, there’s a warning about the typo. We can hover the mouse for more detail.
 This is the Grazie plugin helping us again.
 
 We can type to fix it, or use <kbd>⌥⇧⏎</kbd> (macOS) / <kbd>Shift+Alt+Enter</kbd> (Windows/Linux) to get a correction.

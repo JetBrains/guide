@@ -21,7 +21,7 @@ video:
 There are two keyboard shortcuts that I want to teach you today: <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (VS Windows/Linux)
 to open up **Search Everywhere**, and <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (VS Windows/Linux).
 
-Search Everywhere gets you anywhere in your project. You can start typing and it'll search for classes, files, symbols, and even for actions across the IDE.
+Search Everywhere gets you anywhere in your project. You can start typing, and it'll search for classes, files, symbols, and even for actions across the IDE.
 
 Rider is looking at your code and scanning it, and tries to find and suggest fixes for issues in your code. Anywhere you place the caret, you can use With <kbd>Alt+Enter</kbd> to show a menu of context actions and available quick-fixes.
 

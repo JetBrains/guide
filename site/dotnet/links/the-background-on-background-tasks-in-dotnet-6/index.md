@@ -17,7 +17,7 @@ obsoletes:
   - /dotnet/tutorials/dotnet-days-online-2022/the-background-on-background-tasks-in-dotnet-6/
 ---
 
-Need to run a task in the background in .NET 6? There are lots of scenarios for background tasks, ranging from a task that runs for a long time to perhaps an operation that needs to be retried multiple times if it fails, and many other scenarios in between. While there are lots of scenarios for background tasks, there are also lots of solutions to this problem – so many, in fact, that .NET developers can sometimes be unsure of which one to choose. Such solutions include IHostedServices, BackgroundServices, Worker Services, Hangfire, and more. In this talk, we'll break down all of these solutions, go over their pros and cons, and discuss when to choose one over the other. We’ll also take a deep dive to see how they all work under the hood.
+Need to run a task in the background in .NET 6? There are lots of scenarios for background tasks, ranging from a task that runs for a long time to perhaps an operation that needs to be retried multiple times if it fails, and many other scenarios in between. While there are lots of scenarios for background tasks, there are also lots of solutions to this problem – so many, in fact, that .NET developers can sometimes be unsure of which one to choose. Such solutions include IHostedServices, BackgroundServices, Worker Services, Hangfire, and more. In this talk, we'll break down all these solutions, go over their pros and cons, and discuss when to choose one over the other. We’ll also take a deep dive to see how they all work under the hood.
 
 ### About the Presenter
 

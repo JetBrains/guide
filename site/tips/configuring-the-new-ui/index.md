@@ -19,7 +19,7 @@ How does this “New UI” help me to be more productive?
 
 ## The Solution
 
-How do I enable this...."New UI"?" That’s an easy one, head over to your Settings, search for new ui and select the checkbox. You’ll need to restart your IDE, <production filler content>, but then you’re all set.
+How do I enable this... "New UI"?" That’s an easy one, head over to your Settings, search for new ui and select the checkbox. You’ll need to restart your IDE, <production filler content>, but then you’re all set.
 
 It’s a cleaner layout with functionality grouped so you know where to look. For example, your project information, your VCS information including visual indicators of incoming and outgoing changes, your Run & Debug widget which allows you to change your run configurations, and then additional functionality in the form of Code With Me, Search Everywhere, and Options.
 
@@ -31,4 +31,4 @@ Okay, Nice! Can I rearrange my tool windows too? Yup, and with the new UI you ca
 
 Anything else I need to know? Yup! We’ve simplified the Debug tool window based on what you use the most so there’s now a single toolbar for more space. If the options you want to use the most aren’t available, just add them back! Perhaps you always want to see Evaluate Expression, for example,
 
-The New UI is a much needed update to the interface for JetBrains products making them less cluttered and more visually appealing. Go ahead, enable it and share your feedback with us.
+The New UI is a much-needed update to the interface for JetBrains products making them less cluttered and more visually appealing. Go ahead, enable it and share your feedback with us.

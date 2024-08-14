@@ -27,7 +27,7 @@ function getPreamble(resourceType: string) {
 
 function extractReferences(
 	allReferencesList: TopicFrontmatter[],
-	resourceType: string
+	resourceType: string,
 ): string[] {
 	return allReferencesList
 		.filter((r) => r.resourceType == resourceType)
@@ -76,7 +76,7 @@ type Schema<T> = T & {
 
 function hasProperty<T extends string>(
 	map: object,
-	key: T
+	key: T,
 ): map is Record<T, ObjectMap> {
 	return key in map;
 }
@@ -88,7 +88,7 @@ export type StringArray = {
 export function dumpSchemasToString<T extends ObjectMap>(
 	schemas: T,
 	resourceMap: ResourceMap,
-	outputPath: string
+	outputPath: string,
 ): StringArray {
 	/* Refactor to allow a test that doesn't write to disk */
 	const resources = Array.from(resourceMap.values());
@@ -117,14 +117,14 @@ export function dumpSchemasToString<T extends ObjectMap>(
 			}
 			if ("required" in thisSchema) {
 				thisSchema.required = thisSchema.required.filter(
-					(it: any) => it !== "resourceType"
+					(it: any) => it !== "resourceType",
 				);
 			}
 			if ("allOf" in thisSchema) {
 				for (const allOf of thisSchema.allOf as Array<any>) {
 					if ("required" in allOf) {
 						allOf.required = allOf.required.filter(
-							(it: any) => it !== "resourceType"
+							(it: any) => it !== "resourceType",
 						);
 					}
 				}
@@ -166,9 +166,7 @@ export function dumpSchemasToString<T extends ObjectMap>(
 		}
 
 		const thisPath = path.join(outputPath, `${resourceTypeName}.schema.json`);
-		const schemaString = JSON.stringify(thisSchema, null, 2);
-
-		pathsAndSchemas[thisPath] = schemaString;
+		pathsAndSchemas[thisPath] = JSON.stringify(thisSchema, null, 2);
 	}
 
 	return pathsAndSchemas;
@@ -177,13 +175,13 @@ export function dumpSchemasToString<T extends ObjectMap>(
 export async function dumpSchemas<T extends ObjectMap>(
 	schemas: T,
 	resourceMap: ResourceMap,
-	outputPath: string
+	outputPath: string,
 ) {
 	/* Refactor to allow a test that doesn't write to disk */
 	const pathsAndSchemas: StringArray = dumpSchemasToString(
 		schemas,
 		resourceMap,
-		outputPath
+		outputPath,
 	);
 
 	for (const [path1, schema] of Object.entries(pathsAndSchemas)) {

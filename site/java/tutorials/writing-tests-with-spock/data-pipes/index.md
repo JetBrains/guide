@@ -13,7 +13,7 @@ video: "https://youtu.be/i5Qu3qYOfsM?start=829"
 
 When we're testing a particular path, we sometimes want to check that a known set of values leads to the same result.
 
-The exception test [we just wrote](../expecting-exceptions/) is a good example - we know there's more than one input which should cause this exception to be thrown, and we might want to test all of them. In our case, any integer that is less than three should cause the exception. When you're using tests to document the expected behaviour, it's helpful to add the full list of values that can cause the Exception, or at least a sample list that demonstrates our expectations. Create a new test method that uses [Data Pipes](http://spockframework.org/spock/docs/2.0/all_in_one.html#_data_pipes) to do this:
+The exception test [we just wrote](../expecting-exceptions/) is a good example - we know there's more than one input which should cause this exception to be thrown, and we might want to test all them. In our case, any integer that is less than three should cause the exception. When you're using tests to document the expected behaviour, it's helpful to add the full list of values that can cause the Exception, or at least a sample list that demonstrates our expectations. Create a new test method that uses [Data Pipes](http://spockframework.org/spock/docs/2.0/all_in_one.html#_data_pipes) to do this:
 
 ```groovy
 def "should expect an Exception to be thrown for a number of invalid inputs"() {

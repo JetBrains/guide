@@ -139,7 +139,7 @@ Here are some of the use cases discussed in the answer to the question above:
 gcloud auth login
 ```
 
-This obtains your credentials and stores them in `~/.config/gcloud/`. Now you can run gcloud commands from your terminal and it will find your credentials automatically. Any code or SDK will not automatically pick up your credentials in this case.
+This obtains your credentials and stores them in `~/.config/gcloud/`. Now you can run gcloud commands from your terminal, and it will find your credentials automatically. Any code or SDK will not automatically pick up your credentials in this case.
 
 Reference: [cloud.google.com/sdk/gcloud/reference/auth/login](https://cloud.google.com/sdk/gcloud/reference/auth/login).
 

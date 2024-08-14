@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Working with Scratch Files
 subtitle: >-
-  Create scratches to make notes or work with code outside of the project context.
+  Create scratches to make notes or work with code outside the project context.
 topics:
   - editing
 author: er
@@ -16,4 +16,4 @@ animatedGif:
   height: 300
 ---
 
-Need to make notes or draft up some code outside of the project context? Use scratches! Press <kbd>⇧⌘N</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+Insert</kbd> (Windows/Linux) on Windows/Linux and then select the language of the scratch file.
+Need to make notes or draft up some code outside the project context? Use scratches! Press <kbd>⇧⌘N</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+Insert</kbd> (Windows/Linux) on Windows/Linux and then select the language of the scratch file.

@@ -17,7 +17,7 @@ video: "https://youtu.be/vd9BvAPVmEI"
 
 Refactoring is the process of restructuring code to improve readability and future maintainability.
 
-ReSharper comes with a large set of automated solution-wide code refactorings that let you to rename, move, and safely delete symbols; introduce and inline fields, variables, or parameters, and carry out many more transformations painlessly - without breaking your code's logic!
+ReSharper comes with a large set of automated solution-wide code refactorings that let you rename, move, and safely delete symbols; introduce and inline fields, variables, or parameters, and carry out many more transformations painlessly - without breaking your code's logic!
 
 Refactorings exist for almost all the languages supported by ReSharper. Using the [Refactor This...](https://www.jetbrains.com/help/resharper/Refactor_This.html) action, you get access to all available refactorings in the current context.
 

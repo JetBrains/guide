@@ -25,7 +25,7 @@ You want to move a line up. You could use the mouse to select the line, cut it, 
 
 Let’s use the mouse and look in the Edit menu. Hmm, not there. How about Code? Ahh, yes, it’s there, with the keyboard shortcut. Maybe you speed that up by learning the shortcuts. There’s the Keyboard Shortcuts PDF. You could try memorizing all of that... possibly but nor probable.
 
-The IDE has a lot of power, which means a lot of actions, with new ones coming in each release, not to mention plugins. You’re not going to memorize all of them. Does the IDE have a better way?
+The IDE has a lot of power, which means a lot of actions, with new ones coming in each release, not to mention plugins. You’re not going to memorize all them. Does the IDE have a better way?
 
 ## The Solution
 

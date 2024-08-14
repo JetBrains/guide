@@ -21,7 +21,7 @@ The plugin presumes you have the necessary tools installed on your computer. Fir
 the [AWS and SAM CLI](https://docs.aws.amazon.com/cli/) packages.
 And of course, a compatible installation of .NET Core.
 
-Finally, Docker is used in the plugin's toolchain (and in AWS), so make sure you have a local install.
+Finally, Docker is used in the plugin's toolchain (and in AWS), so make sure you have a local installation.
 
 ## Working with AWS Lambda
 

@@ -15,7 +15,7 @@ You may notice that some commands in the terminal window are highlighted. This i
 
 ![Yellow Highlight](yellow-highlight.png)
 
-If it’s highlighted in yellow and we press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (VS Windows/Linux), the command will be run in the terminal window just as we’d expect. If we type the same command again, but this time use <kbd>⌘⏎</kbd> (macOS) / <kbd>Ctrl+Enter</kbd> (Windows/Linux) on Windows and Linux, IntelliJ IDEA will use the feature in IntelliJ IDEA and open the relevant tool window.
+If it’s highlighted in yellow, and we press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (VS Windows/Linux), the command will be run in the terminal window just as we’d expect. If we type the same command again, but this time use <kbd>⌘⏎</kbd> (macOS) / <kbd>Ctrl+Enter</kbd> (Windows/Linux) on Windows and Linux, IntelliJ IDEA will use the feature in IntelliJ IDEA and open the relevant tool window.
 
 IntelliJ IDEA detects a number of different commands that could be run in the IDE instead of from the command line. For example, the git command:
 

@@ -9,7 +9,7 @@ subtitle: >-
 thumbnail: ./thumbnail.png
 ---
 
-Writing code is an integral part of our jobs and it's worth knowing what IntelliJ IDEA can do here to help you write great code. We will look at:
+Writing code is an integral part of our jobs, and it's worth knowing what IntelliJ IDEA can do here to help you write great code. We will look at:
 
 - Completing Code
 - Generating Code

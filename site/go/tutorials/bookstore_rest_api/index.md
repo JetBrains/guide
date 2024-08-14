@@ -29,4 +29,4 @@ Want to get started in REST API development for Go? In this tutorial, we'll get 
 - JSON
 - HTTP
 
-All of these topics will be shown with an emphasis on how the IDE -- GoLand -- can help.
+all these topics will be shown with an emphasis on how the IDE -- GoLand -- can help.

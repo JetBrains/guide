@@ -42,7 +42,7 @@ There are some compromises to containerization that .NET developers should keep 
 
 Docker has become synonymous with containerization, and many developers will use the two terms interchangeably. Docker is a toolset to make it easier for developers to start containerizing applications. Here is how Docker, the company, pitches its tools to developers.
 
-> Docker takes away repetitive, mundane configuration tasks and is used throughout the development lifecycle for fast, easy and portable application development - desktop and cloud. Docker's comprehensive end to end platform includes UIs, CLIs, APIs and security that are engineered to work together across the entire application delivery lifecycle. --[Docker](https://docker.com)
+> Docker takes away repetitive, mundane configuration tasks and is used throughout the development lifecycle for fast, easy and portable application development - desktop and cloud. Docker's comprehensive end-to-end platform includes UIs, CLIs, APIs and security that are engineered to work together across the entire application delivery lifecycle. --[Docker](https://docker.com)
 
 .NET developers can think of Docker in much the same way they think about the .NET Ecosystem's toolsets and languages. In comparison, an experienced .NET developer might tell a newcomer enthusiastically to _"learn .NET!"_ When what they might be recommending is to explore languages like C# or F#, build an ASP.NET application, or do some Xamarin mobile development.
 

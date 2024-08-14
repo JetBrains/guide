@@ -18,7 +18,7 @@ Let's learn how to configure remote interpreters – SSH, Docker, Docker Compose
 
 As discussed in the previous step, to run your Python code you’ll need to configure at least one Python interpreter. In this step, we’re going to cover technologies for remote interpreters.
 
-For all of these options, make sure you have Python downloaded and installed on your machine, as well as the technology you want to use.
+For all these options, make sure you have Python downloaded and installed on your machine, as well as the technology you want to use.
 
 To setup a remote Python interpreter, you can either:
 

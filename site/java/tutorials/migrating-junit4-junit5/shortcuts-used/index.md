@@ -8,7 +8,7 @@ subtitle: A list of shortcuts used in the tutorial.
 thumbnail: ./thumbnail.png
 ---
 
-This tutorial includes some shortcuts, but many more were demonstrated [in the video](https://youtu.be/F8UTTTDtbH0) and not all of them were mentioned here:
+This tutorial includes some shortcuts, but many more were demonstrated [in the video](https://youtu.be/F8UTTTDtbH0) and not all them were mentioned here:
 
 | Name                                                                                                                  | macOS Shortcut | Windows Shortcut          |
 | --------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------- |

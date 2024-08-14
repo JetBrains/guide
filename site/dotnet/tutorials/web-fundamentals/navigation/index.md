@@ -26,7 +26,7 @@ I want to find the `App.js` file in it. I could open the _Solution_ tool window 
 Now that I’ve opened the file, what else can I do with it? First, I can find a specific piece of information in it and jump straight to it using <kbd>Cmd/Ctrl+F</kbd>.
 
 For a larger-scale search, targeted in part of my project such as the `src` directory, I can use the **Find in Path** functionality. I can look in the selected subdirectory, entire project, module, or in a specific scope.
-This **Find in Path** menu has many useful ways to narrow down your search: case sensitive, file name filters, regular expressions, and more.
+This **Find in Path** menu has many useful ways to narrow down your search: case-sensitive, file name filters, regular expressions, and more.
 
 At the bottom, you can have a quick peek into files without opening them in the editor.
 

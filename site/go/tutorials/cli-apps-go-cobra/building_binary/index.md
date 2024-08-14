@@ -29,9 +29,9 @@ You should get the appropriate result printed in the console, as shown below:
 
 ![Zero command terminal result](./images/2.png)
 
-You've successfully generated a binary executable version of your command line application that can now be deployed and distributed. However, it cannot yet be executed outside of the file directory. To change that, you need to install the application on your system.
+You've successfully generated a binary executable version of your command line application that can now be deployed and distributed. However, it cannot yet be executed outside the file directory. To change that, you need to install the application on your system.
 
-To do that, run the `go install` command in your GoLand terminal and then execute the division operation using the `zero div 5 2 -r` command. The appropriate result will be displayed in the terminal, confirming that the install was successful:
+To do that, run the `go install` command in your GoLand terminal and then execute the division operation using the `zero div 5 2 -r` command. The appropriate result will be displayed in the terminal, confirming that the installation was successful:
 
 ![Zero command result after install](./images/3.png)
 

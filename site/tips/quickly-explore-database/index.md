@@ -27,9 +27,9 @@ Actually, this still feels like too much work. What about ordering the table sim
 
 If the table view is feeling a bit too big, we can also hide some columns, and to hide multiple columns, open the columns list, and press space over every column you don’t want to see.
 
-And don’t worry, we didn’t forget about exploring table joins! To find those restaurant locations with the best seafood, we can press CMD-Down on highlighted rows. Which will take us to all of the rows that join to them in other tables. As long as we have our foreign keys set up properly, the IDE will do the work for us.
+And don’t worry, we didn’t forget about exploring table joins! To find those restaurant locations with the best seafood, we can press CMD-Down on highlighted rows. Which will take us to all the rows that join to them in other tables. As long as we have our foreign keys set up properly, the IDE will do the work for us.
 
-Ok, what if I told you you can do full-text search on all fields in a table in one go? Just press CMD-f to change our filtering and sorting pane into a text search. Apart from being able to do simple string matching, we can also use advanced options like case sensitivity, whole word matching, or regex matching. We can also filter the table to only the matching rows!
+Ok, what if I told you... you can do full-text search on all fields in a table in one go? Just press CMD-f to change our filtering and sorting pane into a text search. Apart from being able to do simple string matching, we can also use advanced options like case sensitivity, whole word matching, or regex matching. We can also filter the table to only the matching rows!
 
 Not enough for you? Well, you can also do full-text search across your entire schema or even the entire database! As you can see, you also have a range of options here to make your search as broad or targetted as you like. And again, you have a range of options here to make your search more targeted.
 

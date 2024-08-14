@@ -53,7 +53,7 @@ func connectToTCPServer() error {
 
 ### I/O Errors
 
-Recovering from an I/O error that occurs after having read or written large amounts of data can be costly. All of the data that's already been processed up to the point where the error occurs might need to be read or written again.
+Recovering from an I/O error that occurs after having read or written large amounts of data can be costly. all the data that's already been processed up to the point where the error occurs might need to be read or written again.
 
 To allow for a more efficient recovery, most I/O-related functions and methods in the standard library return not only an error but also the number of bytes that were successfully processed. A typical example is [`io.Reader`](https://pkg.go.dev/io@go1.20.5#Reader)'s `Read()` function:
 

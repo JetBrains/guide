@@ -27,7 +27,7 @@ Blazor Server renders the UI on the server and sends the results to the client, 
 
 ## Blazor WebAssembly
 
-The focus of Blazor WASM (Blazor WebAssembly) is the client. The first time someone uses a browser to access a Blazor WebAssembly application, the application is compiled and both the application and .NET framework are downloaded to the client. The application is then run as a .NET application in a sandboxed environment on the client. At this point, optimizations are run, such as trimming unused code, caching, and HTTP compression. The Blazor WASM runtime uses JavaScript interop to invoke JavaScript calls and handle DOM manipulation. This may feel like Silverlight to some, however [WebAssembly](https://webassembly.org/) is not a plug-in. WebAssembly is an open-source W3C standard and it is supported by all major browsers, making Blazor WASM a more sustainable model in comparison to Silverlight.
+The focus of Blazor WASM (Blazor WebAssembly) is the client. The first time someone uses a browser to access a Blazor WebAssembly application, the application is compiled and both the application and .NET framework are downloaded to the client. The application is then run as a .NET application in a sandboxed environment on the client. At this point, optimizations are run, such as trimming unused code, caching, and HTTP compression. The Blazor WASM runtime uses JavaScript interop to invoke JavaScript calls and handle DOM manipulation. This may feel like Silverlight to some, however [WebAssembly](https://webassembly.org/) is not a plug-in. WebAssembly is an open-source W3C standard, and it is supported by all major browsers, making Blazor WASM a more sustainable model in comparison to Silverlight.
 
 ## Choosing a Hosting Model
 
@@ -35,7 +35,7 @@ Choosing the hosting model will depend on your requirements and target audience 
 
 - Blazor Server may be slower while running because it needs to make calls to the backend.
 - Blazor WASM may have a slower initial load time, because it needs to be downloaded first.
-- While WebAssembly is an open standard, it’s not supported on older browsers. If you must support older browsers then go with Blazor Server.
+- While WebAssembly is an open standard, it’s not supported on older browsers. If you must support older browsers, then go with Blazor Server.
 - Blazor WASM may be more scalable because the load is on the client.
 - Blazor WASM can run offline, while Blazor Server does not support offline apps.
 

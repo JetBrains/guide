@@ -9,6 +9,7 @@ import { ThumbnailField, VideoField } from "../commonModels";
 import { TIP_RESOURCE_TYPE } from "../../../src/resourceType";
 import path from "upath";
 
+// noinspection DuplicatedCode
 export const TipFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
 	ThumbnailField,

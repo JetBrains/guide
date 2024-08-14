@@ -264,7 +264,7 @@ This is a standard API, not async. It is completely fine you can choose whatever
 
 ![step15](./steps/step15.png)
 
-In request we are going to make `OAuth2PasswordRequestForm` as a dependency, so it will prompt us to provide username and password.
+In `request` we are going to make `OAuth2PasswordRequestForm` a dependency, so it will prompt us to provide username and password.
 
 I will check whether the user is present in the database or not, if it is not present I will raise an HTTP Exception.
 

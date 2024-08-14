@@ -13,7 +13,7 @@ video: "https://youtu.be/i5Qu3qYOfsM?start=1122"
 
 Data pipes are a nice way to specify a limited set of data to test. Spock also supports [Data Tables](http://spockframework.org/spock/docs/2.0/all_in_one.html#data-tables) for more complex data driven testing.
 
-As we've seen, it's not unusual to want to pass in a series of values to check the same condition applies to all of them. Often we may have multiple inputs, and want to check them against multiple outputs. Let's say we want to check the calculation of something like the maximum of two values, `a` and `b`. We'll want to check that the return is the expected maximum value (this is the [same example as the documentation](http://spockframework.org/spock/docs/2.0/all_in_one.html#data-tables)).
+As we've seen, it's not unusual to want to pass in a series of values to check the same condition applies to all them. Often we may have multiple inputs, and want to check them against multiple outputs. Let's say we want to check the calculation of something like the maximum of two values, `a` and `b`. We'll want to check that the return is the expected maximum value (this is the [same example as the documentation](http://spockframework.org/spock/docs/2.0/all_in_one.html#data-tables)).
 
 ```groovy
     def "should use data tables for calculating max"() {

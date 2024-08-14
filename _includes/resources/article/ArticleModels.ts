@@ -9,6 +9,7 @@ import { ARTICLE_RESOURCE_TYPE } from "../../../src/resourceType";
 import { ThumbnailField, VideoField } from "../commonModels";
 import path from "upath";
 
+// noinspection DuplicatedCode
 export const ArticleFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
 	ThumbnailField,

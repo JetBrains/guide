@@ -183,7 +183,7 @@ export default class RemoteHomepage {
 									Containerization products have become quite popular: Docker,
 									Docker Compose, Windows Subsystem for Linux (WSL), and
 									Kubernetes all enjoy broad usage. As such, JetBrains IDEs have
-									integration with all of these, making them a natural part of
+									integration with all these, making them a natural part of
 									development.
 								</p>
 								<h2>Development containers</h2>
