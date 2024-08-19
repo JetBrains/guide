@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 linkURL: "https://blog.jetbrains.com/pycharm/2023/09/building-apis-with-django-rest-framework/"
 ---
 
-By the time you complete the tutorial, you will be able to answer the following questions:
+This Django REST framework tutorial focuses on creating a rental platform API using Python and Django REST framework in PyCharm. The tutorial covers various topics, including creating serializers, writing concise and idiomatic views, testing APIs, setting up authentication and permissions, and implementing generic class-based views. By the time you complete the tutorial, you will be able to answer the following questions:
 
 - What are Django REST framework serializers and how do I create them out of Django models?
 - How do I write concise and idiomatic views with the help of Django REST framework?
