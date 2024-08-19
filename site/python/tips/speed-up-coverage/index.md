@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=OCH_gPfrvzw"
 callToAction:
   title: "Interested in viewing your coverage?"
-  url: "site/python/tips/spot-coverage-in-gutter/"
+  url: "/python/tips/spot-coverage-in-gutter/"
   message: "You can quickly see your test coverage inside your IDE. Check it out!"
 ---
 

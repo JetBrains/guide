@@ -17,7 +17,7 @@ seealso:
       https://www.jetbrains.com/help/idea/generate-equals-and-hashcode-wizard.html
 video: "https://youtu.be/y4qCSsYKJoE"
 callToAction:
-  url: "/java/tips/generate-getters-setters/"
+  url: "/java/tips/generate-getters-and-setters/"
   message: "IntelliJ IDEA can generate your getters and setters too!"
 ---
 

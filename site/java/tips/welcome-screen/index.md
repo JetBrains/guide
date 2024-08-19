@@ -14,7 +14,7 @@ seealso:
     href: "https://www.youtube.com/watch?v=xmrFlqbTjp8"
 video: "https://youtu.be/w2obnLCfQ0I"
 callToAction:
-  url: "/java/tips/group-project/"
+  url: "/java/tips/group-projects/"
   message: "You can also group your projects on your IntelliJ IDEA welcome screen so everything stays nice and organised!"
 ---
 

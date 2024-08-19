@@ -19,7 +19,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/XB4SnJ4XmUs"
 callToAction:
   title: "Interested in optimizing your imports?"
-  url: "/python/tips/navigate-to-symbol/optimize-imports/"
+  url: "/python/tips/optimize-imports/"
   message: "Keeping your imports clean and tidy is a great code readability tip. Check it out!"
 ---
 

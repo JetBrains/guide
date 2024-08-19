@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/IqPm9RYTNBM"
 callToAction:
   title: "Interested in renaming symbols?"
-  url: "site/python/tips/rename-symbol/"
+  url: "/python/tips/rename-symbol/"
   message: "You can rename any symbol in your codebase. Check it out!"
 ---
 
