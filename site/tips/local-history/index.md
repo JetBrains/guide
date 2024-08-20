@@ -16,10 +16,10 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/qBxu_PdDHFw"
 obsoletes:
   - /dotnet/tips/local-history/
-  - /idea/tips/local-history/
+  - /java/tips/local-history/
   - /go/tips/local-history/
-  - /pycharm/tips/local-history/
-  - /webstorm/tips/local-history/
+  - /python/tips/local-history/
+  - /javascript/tips/local-history/
 ---
 
 You’re in your repo. You add a file.
