@@ -71,6 +71,7 @@
 <kbd>⌘;</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+S</kbd> (Windows/Linux)             - Project Structure Dialog
 <kbd>⌘F6</kbd> (macOS) / <kbd>Ctrl+F6</kbd> (Windows/Linux)                     - Refactor Change Signature
 <kbd>⌘K</kbd> (macOS) / <kbd>Ctrl+K</kbd> (Windows/Linux)                       - Commit Files to VCS
+<kbd>⌘⌥Z</kbd> (macOS) / <kbd>Ctrl+Alt+Z</kbd> (Windows/Linux)                  - Rollback
 <kbd>⌘⌥K</kbd> (macOS) / <kbd>Ctrl+Shift+K</kbd> (Windows/Linux)                - Push Files to Source Control
 <kbd>⌘⇧I</kbd> (macOS) / <kbd>Ctrl+Shift+O</kbd> (Windows/Linux)                - Load Maven Changes
 <kbd>⇧⌘N</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+Insert</kbd> (Windows/Linux)       - Create Scratch File
@@ -85,8 +86,10 @@
 <kbd>⌃⇧P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux)                - Show Type Parameter Information
 <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux)                     - Show Quick Switch Schema
 <kbd>⌥⌘T</kbd> (macOS) / <kbd>Ctrl+Alt+T</kbd> (Windows/Linux)                  - Surround With
-<kbd>⌘-</kbd> (macOS) / <kbd>Ctrl+-</kbd> (Windows/Linux)                       - Folding Collapse All 
-<kbd>⌘+</kbd> (macOS) / <kbd>Ctrl++</kbd> (Windows/Linux)                       - Folding Expand All
+<kbd>⌥⌘-</kbd> (macOS) / <kbd>Ctrl+Alt+-</kbd> (Windows/Linux)                  - Folding Collapse Recursively 
+<kbd>⌥⌘+</kbd> (macOS) / <kbd>Ctrl+Alt++</kbd> (Windows/Linux)                  - Folding Expand Recursively
+<kbd>⌘-</kbd> (macOS) / <kbd>Ctrl+-</kbd> (Windows/Linux)                       - Folding Collapse
+<kbd>⌘+</kbd> (macOS) / <kbd>Ctrl++</kbd> (Windows/Linux)                       - Folding Expand
 <kbd>⌥⌘C</kbd> (macOS) / <kbd>Ctrl+Alt+C</kbd> (Windows/Linux)                  - Extract Constant
 <kbd>⌥⌘F</kbd> (macOS) / <kbd>Ctrl+Alt+F</kbd> (Windows/Linux)                  - Extract Field
 <kbd>⌥⌘M</kbd> (macOS) / <kbd>Ctrl+Alt+M</kbd> (Windows/Linux)                  - Extract Method
@@ -162,10 +165,12 @@
 <kbd>⌘D</kbd> (macOS) / <kbd>Ctrl+D</kbd> (Windows/Linux)                       - Show Diff
 <kbd>⌘⌥⇧I</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+I</kbd> (Windows/Linux)           - Run Inspection by Name
 <kbd>⌥\</kbd> (macOS) / <kbd>Alt+\</kbd> (Windows/Linux)                        - Multi-line Code Completion
-
+<kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (Windows/Linux)                           - Code completion -> Insert Inline Proposal
+<kbd>⌘→</kbd> (macOS) / <kbd>End</kbd> (Windows/Linux)                          - Code completion -> Insert Inline Proposal's Line
+<kbd>⌥→</kbd> (macOS) / <kbd>Ctrl+Right Arrow</kbd> (Windows/Linux)             - Code completion -> Insert Inline Proposal's Word
 
 <kbd>⌃⇧+mnemonic</kbd> (macOS) / <kbd>Ctrl+Shift+mnemonic</kbd> (Windows/Linux) - Toggle Mnemonic Bookmark   
-<kbd>^+mnemonic</kbd> (macOS) / <kbd>Ctrl+mnemonic</kbd> (Windows/Linux)        - Go to Mnemonic Bookmark   
+<kbd>^+mnemonic</kbd> (macOS) / <kbd>Ctrl+mnemonic</kbd> (Windows/Linux)        - Go to Mnemonic Bookmark
 <kbd>⌘</kbd> (macOS) / <kbd>Ctrl</kbd> (Windows/Linux)
 <kbd>⌘</kbd> (macOS) / <kbd>Alt</kbd> (Windows/Linux)
 <kbd>+</kbd> (macOS) / <kbd>Plus</kbd> (Windows/Linux)
@@ -176,7 +181,7 @@
 <kbd>↑</kbd> (macOS) / <kbd>Up Arrow</kbd> (Windows/Linux)
 <kbd>↓</kbd> (macOS) / <kbd>Down Arrow</kbd> (Windows/Linux)
 <kbd>←</kbd> (macOS) / <kbd>Up Arrow</kbd> (Windows/Linux)
-<kbd>→</kbd> (macOS) / <kbd>Down Arrow</kbd> (Windows/Linux)
+<kbd>→</kbd> (macOS) / <kbd>Right Arrow</kbd> (Windows/Linux)
 <kbd>␣</kbd> (macOS) / <kbd>Space</kbd> (Windows/Linux)
 <kbd>⇧</kbd> (macOS) / <kbd>Shift</kbd> (Windows/Linux)
 

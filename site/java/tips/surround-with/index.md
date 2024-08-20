@@ -1,5 +1,5 @@
 ---
-date: 2023-12-08
+date: 2024-08-22
 title: Surround With
 topics:
   - editing
@@ -11,7 +11,7 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Use the Surround With action
     href: >-
       https://www.jetbrains.com/help/idea/working-with-source-code.html#use-the-surround-with-action
-video: "https://youtu.be/-FqHDSqD5Vo"
+video: "https://youtu.be/i7UdHRI9qUg"
 obsoletes:
   - /java/tips/surround-with-brackets-quotes/
 ---

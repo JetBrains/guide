@@ -1,5 +1,5 @@
 ---
-date: 2023-11-23
+date: 2024-08-22
 title: Shortcuts and Abbreviations
 topics:
   - tricks
@@ -14,7 +14,7 @@ seealso:
       https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html
   - title: (video) Top 15 IntelliJ IDEA shortcuts
     href: "https://www.youtube.com/watch?v=QYO5_riePOQ"
-video: "https://youtu.be/Fk79fAS7Phk"
+video: "https://youtu.be/lsdodt5ASzc"
 obsoletes:
   - /java/tips/assign-top-shortcuts/
 ---
