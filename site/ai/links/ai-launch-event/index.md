@@ -38,7 +38,7 @@ Finally, we’re joined by Max Shafirov. Max shares how the AI Assistant continu
 
 ## AI Service Architecture
 
-- Vladislav Tonov explains that the AI Service orchestrates interactions between the IDE and multiple language model providers, ensuring the best model or approach is used. It also addresses security and data privacy, with plans to cater to enterprise needs.
+- Vladislav Tankov explains that the AI Service orchestrates interactions between the IDE and multiple language model providers, ensuring the best model or approach is used. It also addresses security and data privacy, with plans to cater to enterprise needs.
 
 ## Future and Enterprise Solutions
 
