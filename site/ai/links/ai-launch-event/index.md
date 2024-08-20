@@ -34,7 +34,7 @@ Finally, we’re joined by Max Shafirov. Max shares how the AI Assistant continu
 ## Documentation and Commit Messages
 
 - The AI Assistant can generate detailed and formatted documentation for code.
-  - - It can also create commit messages by summarizing code changes, streamlining the process.
+- It can also create commit messages by summarizing code changes, streamlining the process.
 
 ## AI Service Architecture
 
