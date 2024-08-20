@@ -1,10 +1,10 @@
 ---
-date: 2021-05-31
+date: 2024-08-22
 title: "Generate Overrides for equals(), hashCode() and toString()"
 topics:
   - editing
   - java
-author: hs
+author: md
 subtitle: We can generate the code to override the equals and hashCode methods.
 thumbnail: ./thumbnail.png
 seealso:
@@ -15,7 +15,7 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Generate Equals and HashCode Wizard
     href: >-
       https://www.jetbrains.com/help/idea/generate-equals-and-hashcode-wizard.html
-video: "https://youtu.be/y4qCSsYKJoE"
+video: "https://youtu.be/EdAE15w7Vrk"
 callToAction:
   url: "/java/tips/generate-getters-setters/"
   message: "IntelliJ IDEA can generate your getters and setters too!"

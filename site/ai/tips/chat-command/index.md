@@ -1,16 +1,16 @@
 ---
 date: 2024-08-22
-title: Inline code completion
-subtitle: Let AI Assistant write code for you, using inline code completion.
+title: Command in chat
+subtitle: Use predefined command in chat.
 seealso:
-  - title: (documentation) IntelliJ IDEA Help - Invoke inline code completion
-    href: https://www.jetbrains.com/help/idea/use-ai-in-editor.html#enable-inline-code-completion
+  - title: (documentation) IntelliJ IDEA Help - Chat with AI
+    href: https://www.jetbrains.com/help/idea/chat-with-ai.html
 topics:
   - ai
   - java
 author: md
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/EH4RjE5xm6g"
+video: "https://youtu.be/-chxj5MfaWI"
 ---
 
 Use AI Assistant to complete code for you. While working on your code, press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) to start a new line and wait a few seconds to get a suggestion. The suggested code will be shown in grey. Use <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (VS Windows/Linux) to accept the suggestion.

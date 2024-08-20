@@ -1,5 +1,5 @@
 ---
-date: 2023-02-08
+date: 2024-08-22
 title: Presentation Mode
 topics:
   - tricks
@@ -16,7 +16,7 @@ seealso:
       https://www.jetbrains.com/guide/java/tutorials/presenting/presentation-mode/
   - title: (video) Presenting with IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=h-HGg9b6Dqw"
-video: "https://youtu.be/jwa9F4ADcxo"
+video: "https://youtu.be/ZSSiIKd_LYQ"
 ---
 
 Use shortcuts to enter and exit Presentation Mode using Quick Switch Scheme. Press <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux) to open Quick Switch Scheme. Use the arrow keys or number keys to select **View Mode**. Select **Enter Presentation Mode** or **Exit Presentation Mode** using the arrow keys or the number keys.
