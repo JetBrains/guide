@@ -13,9 +13,9 @@ thumbnail: ./thumbnail.png
 obsoletes:
   - /dotnet/tips/resolve-conflicts/
   - /go/tips/resolve-conflicts/
-  - /idea/tips/resolve-conflicts/
-  - /pycharm/tips/resolve-conflicts/
-  - /webstorm/tips/resolve-conflicts/
+  - /java/tips/resolve-conflicts/
+  - /python/tips/resolve-conflicts/
+  - /javascript/tips/resolve-conflicts/
 video: "https://www.youtube.com/watch?v=mSfq1SoMocg"
 ---
 

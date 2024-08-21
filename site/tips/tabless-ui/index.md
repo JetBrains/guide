@@ -10,7 +10,7 @@ subtitle: Configure your editor tabs to optimize your coding environment.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/ND0Br0jMl7M"
 obsoletes:
-  - /idea/tips/hide-tabs-nav-toolbars/
+  - /java/tips/hide-tabs-nav-toolbars/
 seealso:
   - title: (video) Navigation in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=1UHsJyCq1SU"

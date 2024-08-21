@@ -11,11 +11,11 @@ thumbnail: ./thumbnail.png
 obsoletes:
   - /go/tips/recent-files/
   - /go/tips/jump-to-tool/
-  - /pycharm/tips/jump-to-tool/
-  - /idea/tips/recent-files/
-  - /idea/tips/recent-files2/
-  - /pycharm/tips/recent-files/
-  - /webstorm/tips/recent-files/
+  - /python/tips/jump-to-tool/
+  - /java/tips/recent-files/
+  - /java/tips/recent-files2/
+  - /python/tips/recent-files/
+  - /javascript/tips/recent-files/
 seealso:
   - title: Find Recent Files
     href: >-

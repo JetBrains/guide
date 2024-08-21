@@ -15,10 +15,10 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/K6v4tAmXfLs"
 obsoletes:
   - /dotnet/tips/see-unsynced-commits/
-  - /idea/tips/see-unsynced-commits/
+  - /java/tips/see-unsynced-commits/
   - /go/tips/see-unsynced-commits/
-  - /pycharm/tips/see-unsynced-commits/
-  - /webstorm/tips/see-unsynced-commits/
+  - /python/tips/see-unsynced-commits/
+  - /javascript/tips/see-unsynced-commits/
 ---
 
 ## The Problem

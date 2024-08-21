@@ -13,10 +13,10 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=7Rjl1Cerbl0"
 obsoletes:
   - /dotnet/tips/compare-with-branch/
-  - /idea/tips/compare-with-branch/
+  - /java/tips/compare-with-branch/
   - /go/tips/compare-with-branch/
-  - /pycharm/tips/compare-with-branch/
-  - /webstorm/tips/compare-with-branch/
+  - /python/tips/compare-with-branch/
+  - /javascript/tips/compare-with-branch/
 ---
 
 ## The Problem

@@ -15,9 +15,9 @@ video: "https://www.youtube.com/watch?v=cFlulVc7Y1Q"
 obsoletes:
   - /dotnet/tips/rebase-feature-branch/
   - /go/tips/rebase-feature-branch/
-  - /idea/tips/rebase-feature-branch/
-  - /pycharm/tips/rebase-feature-branch/
-  - /webstorm/tips/rebase-feature-branch/
+  - /java/tips/rebase-feature-branch/
+  - /python/tips/rebase-feature-branch/
+  - /javascript/tips/rebase-feature-branch/
 ---
 
 ## The Problem

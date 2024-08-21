@@ -14,10 +14,10 @@ thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/watch?v=wp86DkW0VLA"
 obsoletes:
   - /dotnet/tips/see-changes-in-gutter/
-  - /idea/tips/see-changes-in-gutter/
+  - /java/tips/see-changes-in-gutter/
   - /go/tips/see-changes-in-gutter/
-  - /pycharm/tips/see-changes-in-gutter/
-  - /webstorm/tips/see-changes-in-gutter/
+  - /python/tips/see-changes-in-gutter/
+  - /javascript/tips/see-changes-in-gutter/
 ---
 
 We've all been there.
