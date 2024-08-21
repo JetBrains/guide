@@ -13,9 +13,9 @@ thumbnail: ./thumbnail.png
 obsoletes:
   - /dotnet/tips/move-aside-shelve/
   - /go/tips/move-aside-shelve/
-  - /idea/tips/move-aside-shelve/
-  - /pycharm/tips/move-aside-shelve/
-  - /webstorm/tips/move-aside-shelve/
+  - /java/tips/move-aside-shelve/
+  - /python/tips/move-aside-shelve/
+  - /javascript/tips/move-aside-shelve/
 video: "https://www.youtube.com/watch?v=L02P_Qa62oQ"
 ---
 

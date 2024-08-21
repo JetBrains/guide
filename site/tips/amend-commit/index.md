@@ -13,10 +13,10 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/edit-project-history.html#amend-commit"
 obsoletes:
   - /dotnet/tips/amend-commit/
-  - /idea/tips/amend-commit/
+  - /java/tips/amend-commit/
   - /go/tips/amend-commit/
-  - /pycharm/tips/amend-commit/
-  - /webstorm/tips/amend-commit/
+  - /python/tips/amend-commit/
+  - /javascript/tips/amend-commit/
 ---
 
 You’re finishing some work…whew!!!

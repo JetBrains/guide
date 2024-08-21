@@ -14,9 +14,9 @@ seealso:
       https://www.jetbrains.com/help/idea/discover-intellij-idea.html#find-action
 obsoletes:
   - /go/tips/find-action/
-  - /idea/tips/find-actions/
-  - /pycharm/tips/find-action/
-  - /webstorm/toggle-options-in-find/
+  - /java/tips/find-actions/
+  - /python/tips/find-action/
+  - /javascript/toggle-options-in-find/
 ---
 
 ## The Problem

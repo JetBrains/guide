@@ -14,10 +14,10 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/OlFg1g3hcLs"
 obsoletes:
   - /dotnet/tips/partial-commit/
-  - /idea/tips/partial-commit/
+  - /java/tips/partial-commit/
   - /go/tips/partial-commit/
-  - /pycharm/tips/partial-commit/
-  - /webstorm/tips/partial-commit/
+  - /python/tips/partial-commit/
+  - /javascript/tips/partial-commit/
 ---
 
 You’ve done a lot of work, but not all the changes should go in one commit. Let’s use partial commit.

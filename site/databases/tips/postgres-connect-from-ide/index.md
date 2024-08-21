@@ -12,7 +12,7 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/database-tool-window.html"
 video: "https://youtu.be/k2aEBenPTnM"
 obsoletes:
-  - /idea/tips/postgres-connect-from-ide
+  - /java/tips/postgres-connect-from-ide
 ---
 
 Use <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Database_ to open the **Database** tool window which helps you to connect to multiple databases and DDL data sources.

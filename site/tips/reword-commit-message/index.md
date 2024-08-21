@@ -14,10 +14,10 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/qjaCu9BYeUg"
 obsoletes:
   - /dotnet/tips/reword-commit-message/
-  - /idea/tips/reword-commit-message/
+  - /java/tips/reword-commit-message/
   - /go/tips/reword-commit-message/
-  - /pycharm/tips/reword-commit-message/
-  - /webstorm/tips/reword-commit-message/
+  - /python/tips/reword-commit-message/
+  - /javascript/tips/reword-commit-message/
 ---
 
 That last commit message…(sigh)...had a typo.

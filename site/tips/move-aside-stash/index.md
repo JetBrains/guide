@@ -14,9 +14,9 @@ thumbnail: ./thumbnail.png
 obsoletes:
   - /dotnet/tips/move-aside-stash/
   - /go/tips/move-aside-stash/
-  - /idea/tips/move-aside-stash/
-  - /pycharm/tips/move-aside-stash/
-  - /webstorm/tips/move-aside-stash/
+  - /java/tips/move-aside-stash/
+  - /python/tips/move-aside-stash/
+  - /javascript/tips/move-aside-stash/
 video: "https://www.youtube.com/watch?v=rQXUSI50uhs"
 ---
 
