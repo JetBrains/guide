@@ -52,7 +52,7 @@ Once the application is up and running, you can easily manage it through PyCharm
 
 ![step9](./images/18.png)
 
-Let’s check in the browser, by visiting [localhost:8000](http://localhost:8000)
+Let’s check in the browser by visiting [localhost:8000](http://localhost:8000)
 
 Woo Hoo! The app is running.
 
