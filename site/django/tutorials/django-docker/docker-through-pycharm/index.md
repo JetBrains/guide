@@ -22,8 +22,7 @@ Under **Modify options**, click **Enable BuildKit**. According to the official [
 
 > **IMPORTANT**:
 >
-> - Make sure to run the latest version of Docker Desktop, as it comes pre-equipped with BuildKit.
-> - There is a chance that you won't see the option of **Enable BuildKit** under **Modify options** if you are using latest version of PyCharm Professional. To know more check the [documentation](https://www.jetbrains.com/help/pycharm/dockerfile-run-configuration.html).
+> - There is a chance that you won't see the option of **Enable BuildKit** under **Modify options** if you are using the latest version of PyCharm Professional. If you're using the latest version of Docker Desktop, it's already pre-equipped with BuildKit so there will be no change required for enabling the BuildKit separately. However, if you’re using Docker Engine versions earlier than `23.0`, you can activate BuildKit by setting the environment variable `DOCKER_BUILDKIT=1`.
 
 ![step2](./images/11.png)
 
