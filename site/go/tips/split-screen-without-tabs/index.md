@@ -10,9 +10,6 @@ seealso:
   - title: (documentation) GoLand Help - Splitting and unsplitting editor window
     href: >-
       https://www.jetbrains.com/help/go/managing-editor-tabs.html#splitting-and-unsplitting-editor-window
-  - title: (documentation) GoLand Help - Tabs and split windows
-    href: >-
-      https://www.jetbrains.com/help/go/migrating-from-text-editors.html#tabs_split_windows
 thumbnail: ./thumbnail.png
 video: >-
   https://www.youtube.com/watch?v=bPiX6d4nYY8&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=149

@@ -31,7 +31,7 @@ You can see all unit tests in [ReSharper's Unit Test Explorer](https://www.jetbr
 
 - Run Unit Tests
 - Debug Unit Tests
-- Profile Unit Tests (requires a [dotUltimate subscription](https://www.jetbrains.com/dotultimate/))
+- Profile Unit Tests (requires a [dotUltimate subscription](https://www.jetbrains.com/dotnet/))
 - Cover Unit Tests (requires a dotUltimate subscription)
 
 You can manage how unit tests are displayed by clicking the **Group By** icons in the toolbar. By default, ReSharper groups unit tests by project and then namespace. Youcan also group by Target Framework, File System, and, if the unit test frameworks supports it, the test's Category.

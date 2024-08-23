@@ -68,7 +68,7 @@ While the UI is slightly different between ReSharper and Rider, developers can f
 
 ## Debugging, Coverage, and Profiling
 
-Users with a [dotUltimate license](https://www.jetbrains.com/dotUltimate) will also have access to integrated tools like [dotCover](https://www.jetbrains.com/dotCover), [dotMemory](https://www.jetbrains.com/dotMemory), and [dotTrace](https://www.jetbrains.com/dotTrace). All these tools are available via the <kbd>Alt+Enter</kbd> shortcut menu, and within the **Unit Tests** window. Within Visual Studio, hitting <kbd>Alt+Enter</kbd> over our unit test reveals several options. Rider users will see the same options listed within the IDE, in a slightly different order:
+Users with a [dotUltimate license](https://www.jetbrains.com/dotnet/) will also have access to integrated tools like [dotCover](https://www.jetbrains.com/dotCover), [dotMemory](https://www.jetbrains.com/dotMemory), and [dotTrace](https://www.jetbrains.com/dotTrace). All these tools are available via the <kbd>Alt+Enter</kbd> shortcut menu, and within the **Unit Tests** window. Within Visual Studio, hitting <kbd>Alt+Enter</kbd> over our unit test reveals several options. Rider users will see the same options listed within the IDE, in a slightly different order:
 
 - **Run**
 - **Debug**
