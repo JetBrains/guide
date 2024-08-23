@@ -25,7 +25,7 @@ The finished code for this tutorial step is
 
 ## Pretty Jest
 
-Previously we ran our Jest tests as a generic npm run script, in the IDE's `npm` run tool window.
+Previously, we ran our Jest tests as a generic npm run script, in the IDE's `npm` run tool window.
 However, JetBrains IDEs have a dedicated run configuration type for Jest.
 It's a fantastic, visual way to do testing.
 

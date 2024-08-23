@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 
 ## Summary and Resources
 
-In this tutorial we used the [New Project Wizard](https://www.jetbrains.com/help/idea/new-project-wizard.html) in IntelliJ IDEA to create a Spring Boot project with the **Spring Web** dependency.
+In this tutorial, we used the [New Project Wizard](https://www.jetbrains.com/help/idea/new-project-wizard.html) in IntelliJ IDEA to create a Spring Boot project with the **Spring Web** dependency.
 
 We created a Spring Controller and served some text to the local Tomcat webserver. Finally, we added a test for our HTTP call.
 

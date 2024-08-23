@@ -67,6 +67,7 @@ export class Article
 		data: ArticleFrontmatter;
 		page: EleventyPage;
 	}) {
+		// noinspection DuplicatedCode
 		super({ data, page });
 		this.animatedGif = data.animatedGif;
 		if (this.animatedGif) {

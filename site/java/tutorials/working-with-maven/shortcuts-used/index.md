@@ -13,7 +13,7 @@ callToAction:
   image: "/tags/gradle/gradle-elephant.svg"
 ---
 
-In this tutorial we saw an overview of the [support for Maven projects](https://www.jetbrains.com/help/idea/maven-support.html) in IntelliJ IDEA, and some tips for working effectively with them.
+In this tutorial, we looked at the [support for Maven projects](https://www.jetbrains.com/help/idea/maven-support.html) in IntelliJ IDEA, and some tips for working effectively with them.
 
 Some helpful shortcuts mentioned in the tutorial and video:
 

@@ -9,7 +9,7 @@ topics:
   - spring
 author: hs
 subtitle: >-
-  In this tutorial we will use IntelliJ IDEA to create your first "Hello World" Spring Boot application.
+  In this tutorial, we will use IntelliJ IDEA to create your first "Hello World" Spring Boot application.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./creating-spring-boot-application/

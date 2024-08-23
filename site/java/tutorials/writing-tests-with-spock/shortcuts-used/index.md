@@ -9,7 +9,7 @@ subtitle: >-
 thumbnail: ./thumbnail.png
 ---
 
-In this tutorial we saw how to use the Spock testing framework to test Java code. We also saw how IntelliJ IDEA can help us to write and run tests.
+In this tutorial, we saw how to use the Spock testing framework to test Java code. We also saw how IntelliJ IDEA can help us to write and run tests.
 
 Spock is powerful and has even more to offer than we've looked at here. We've only touched the surface of what Spock can offer. We've seen the basics of a test, we've seen how to use labels to define tests, we've seen the power of data driven testing, and we've covered a range of tips and tricks for writing correct and readable tests.
 

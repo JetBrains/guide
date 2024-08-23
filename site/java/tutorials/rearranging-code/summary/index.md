@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 
 ## Summary of Rearranging Code
 
-In this tutorial we took at look at some fast ways to move [statements](https://www.jetbrains.com/help/idea/working-with-source-code.html?keymap=primary_windows#move-statements) and [lines](https://www.jetbrains.com/help/idea/working-with-source-code.html?keymap=primary_windows#editor_lines_code_blocks) around in your classes. We then looked at an example and applied our [code arrangement rules](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code).
+In this tutorial, we took at look at some fast ways to move [statements](https://www.jetbrains.com/help/idea/working-with-source-code.html?keymap=primary_windows#move-statements) and [lines](https://www.jetbrains.com/help/idea/working-with-source-code.html?keymap=primary_windows#editor_lines_code_blocks) around in your classes. We then looked at an example and applied our [code arrangement rules](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code).
 
 ### Shortcuts Used
 

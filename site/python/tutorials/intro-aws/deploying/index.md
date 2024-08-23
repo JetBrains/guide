@@ -10,7 +10,7 @@ thumbnail: ../thumbnail.png
 video: "https://youtu.be/mqNTLSOcSOw"
 ---
 
-In this tutorial we are going to deploy our functions in AWS and test it through Postman.
+In this tutorial, we are going to deploy our functions in AWS and test it through Postman.
 
 ## Beginning Launch in AWS
 

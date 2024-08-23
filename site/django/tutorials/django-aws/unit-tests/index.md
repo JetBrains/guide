@@ -14,7 +14,7 @@ obsoletes:
   - /pycharm/tutorials/django-aws/unit-tests
 ---
 
-Hello everyone, welcome to the Django tutorial series. In this tutorial we are going to focus on Unit Tests.
+Hello everyone, welcome to the Django tutorial series. In this tutorial, we are going to focus on Unit Tests.
 
 Unit testing ensures that all code meets quality standards before it's deployed. It saves time and money, and helps developers write better code, more efficiently.
 

@@ -10,7 +10,7 @@ thumbnail: ../thumbnail.png
 video: "https://youtu.be/xEnKghx6fuk"
 ---
 
-In this tutorial we are going to run our lambda functions inside a local container.
+In this tutorial, we are going to run our lambda functions inside a local container.
 
 ## Docker
 

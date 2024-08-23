@@ -18,7 +18,7 @@ Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 ## Helm
 
-In this tutorial we will be working with Helm. In simple terms, [Helm](https://helm.sh/) is a package manager for Kubernetes. It is a tool that streamlines installing and managing Kubernetes applications. Think of it like `Apt/Yum/Homebrew` for K8s.
+In this tutorial, we will be working with Helm. In simple terms, [Helm](https://helm.sh/) is a package manager for Kubernetes. It is a tool that streamlines installing and managing Kubernetes applications. Think of it like `Apt/Yum/Homebrew` for K8s.
 
 _Note: I will be showing a high-level use case of Helm. We won’t be getting deeper dive into Helm_
 

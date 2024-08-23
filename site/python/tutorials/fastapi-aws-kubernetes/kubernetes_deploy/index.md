@@ -15,7 +15,7 @@ video: "https://www.youtube.com/watch?v=WC4e3Yq8k8A"
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-In this tutorial we will be focusing on deploying our application in [Kubernetes](https://kubernetes.io/). It is an open-source container-orchestration system for automating computer application deployment, scaling, and management. It was originally designed by [Google](https://about.google/) and is now maintained by the [Cloud Native Computing Foundation](https://www.cncf.io/).
+In this tutorial, we will be focusing on deploying our application in [Kubernetes](https://kubernetes.io/). It is an open-source container-orchestration system for automating computer application deployment, scaling, and management. It was originally designed by [Google](https://about.google/) and is now maintained by the [Cloud Native Computing Foundation](https://www.cncf.io/).
 
 So, let’s get started.
 

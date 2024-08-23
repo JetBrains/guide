@@ -13,7 +13,7 @@ thumbnail: thumbnail.png
 video: "https://www.youtube.com/watch?v=cj8yw1u__D0"
 ---
 
-Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. In this tutorial we are going to implement REST APIs for our User module. Before
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. In this tutorial, we are going to implement REST APIs for our User module. Before
 moving forward, I need to speak about Pydantic and its benefits.
 
 ## Pydantic

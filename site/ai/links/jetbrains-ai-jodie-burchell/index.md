@@ -25,7 +25,7 @@ There is a full [transcript](https://youtu.be/tUwCvHMwx7Y?feature=shared) availa
 
 - **GPT-1 to GPT-3.5**: Gradual improvements in size and capabilities.
 - **GPT-3**: Marked a major breakthrough with 117 times more parameters than GPT-2.
-- **Chat GPT and GPT-4**: Incorporate fine-tuning and reinforcement learning for better accuracy and reduced biases.
+- **ChatGPT and GPT-4**: Incorporate fine-tuning and reinforcement learning for better accuracy and reduced biases.
 
 ## Factors Enabling Advancements in AI
 

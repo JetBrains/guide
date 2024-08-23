@@ -14,7 +14,7 @@ video: "https://www.youtube.com/watch?v=iCVEhVI07Ig"
 ---
 
 Hello everyone, Welcome to the PyCharm FastAPI tutorial series.
-In this tutorial we are going to explore [FastAPI](https://fastapi.tiangolo.com)
+In this tutorial, we are going to explore [FastAPI](https://fastapi.tiangolo.com)
 which is a high-performance framework. It’s a modern web framework
 which recently got huge popularity over the Internet, it’s backed by
 [starlette](https://www.starlette.io/) and [pydantic](https://pydantic-docs.helpmanual.io/) and based on

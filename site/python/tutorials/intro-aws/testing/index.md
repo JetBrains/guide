@@ -12,7 +12,7 @@ thumbnail: ../thumbnail.png
 video: "https://youtu.be/NbXOiUjyMhI"
 ---
 
-In this tutorial we are going to work on Unit Tests.
+In this tutorial, we are going to work on Unit Tests.
 
 ## Unit Testing
 

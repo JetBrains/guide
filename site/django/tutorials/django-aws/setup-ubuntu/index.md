@@ -14,7 +14,7 @@ obsoletes:
   - /pycharm/tutorials/django-aws/setup-ubuntu
 ---
 
-Hello everyone, welcome to the Django tutorial series. In this tutorial we are going to set up a Ubuntu Desktop 20.04 LTS in Amazon Elastic Compute Cloud, also known as EC2.
+Hello everyone, welcome to the Django tutorial series. In this tutorial, we are going to set up a Ubuntu Desktop 20.04 LTS in Amazon Elastic Compute Cloud, also known as EC2.
 
 ## Security Groups
 

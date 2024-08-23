@@ -14,7 +14,7 @@ thumbnail: ../thumbnail.png
 video: "https://youtu.be/TfwDOKRiYQ4"
 ---
 
-In this tutorial we are going create a MongoDB Cluster and connect through PyCharm Professional.
+In this tutorial, we are going create a MongoDB Cluster and connect through PyCharm Professional.
 
 ### MongoDB Atlas
 

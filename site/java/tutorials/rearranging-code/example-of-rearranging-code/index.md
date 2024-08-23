@@ -18,7 +18,7 @@ You can change your rule arrangement preferences with <kbd>⌘,</kbd> (macOS) / 
 
 ### Arrangement Settings/Preferences
 
-To change your code arrangement settings, use <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux), to bring up the Preferences/Settings dialog. This dialog is searchable, so you can type in _arrangement_. This filters the dialog to **Code Style**. You can then select the language you're working with. In this tutorial we will use **Java**. Alternatively, you can navigate to **Editor | Code Style | Java**.
+To change your code arrangement settings, use <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux), to bring up the Preferences/Settings dialog. This dialog is searchable, so you can type in _arrangement_. This filters the dialog to **Code Style**. You can then select the language you're working with. In this tutorial, we will use **Java**. Alternatively, you can navigate to **Editor | Code Style | Java**.
 
 The Arrangement tab is grouped into two areas:
 

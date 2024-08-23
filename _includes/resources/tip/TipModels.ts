@@ -58,6 +58,7 @@ export class Tip extends Resource<TIP_RESOURCE_TYPE> implements TipFrontmatter {
 	static frontmatterSchema = TipFrontmatter;
 
 	constructor({ data, page }: { data: TipFrontmatter; page: EleventyPage }) {
+		// noinspection DuplicatedCode
 		super({ data, page });
 		this.animatedGif = data.animatedGif;
 		if (this.animatedGif) {

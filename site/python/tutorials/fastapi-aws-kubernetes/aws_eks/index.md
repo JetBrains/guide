@@ -17,7 +17,7 @@ video: "https://www.youtube.com/watch?v=fAb6OW9Uur4"
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-In this tutorial we will be deploying our application in AWS using the [Elastic Kubernetes Service(EKS)](https://aws.amazon.com/eks/) along-with setting up domain with SSL.
+In this tutorial, we will be deploying our application in AWS using the [Elastic Kubernetes Service(EKS)](https://aws.amazon.com/eks/) along-with setting up domain with SSL.
 
 ![step1](./steps/step1.png)
 
@@ -1156,7 +1156,7 @@ Different registrar will have different settings, this is an example of how name
 
 ![step97](./steps/step97.png)
 
-Previously we were using the Namecheap BasicDNS. Now, we will update it with custom DNS and add records provided by AWS.
+Previously, we were using the Namecheap BasicDNS. Now, we will update it with custom DNS and add records provided by AWS.
 
 ![step98](./steps/step98.png)
 

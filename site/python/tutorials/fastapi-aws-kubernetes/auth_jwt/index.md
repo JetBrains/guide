@@ -15,7 +15,7 @@ video: "https://www.youtube.com/watch?v=88ka51diyUc"
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-In this tutorial we are going to set up the authentication process by protecting our apis using JWT.
+In this tutorial, we are going to set up the authentication process by protecting our apis using JWT.
 
 We will cover the security part. You can also follow the FastAPI documentation. It has a clear and detailed explanation.
 

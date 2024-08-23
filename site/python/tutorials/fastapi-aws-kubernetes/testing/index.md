@@ -15,7 +15,7 @@ video: "https://www.youtube.com/watch?v=uk7EcDIZEfY"
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-In this tutorial we are going to work on Unit Testing using [Pytest](https://docs.pytest.org/) and [Asyncio](https://docs.python.org/3/library/asyncio.html).
+In this tutorial, we are going to work on Unit Testing using [Pytest](https://docs.pytest.org/) and [Asyncio](https://docs.python.org/3/library/asyncio.html).
 
 ## AnyIO
 

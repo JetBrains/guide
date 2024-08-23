@@ -13,7 +13,7 @@ thumbnail: thumbnail.png
 video: "https://www.youtube.com/watch?v=CWm40_n0eu8"
 ---
 
-Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. In this tutorial we are going to connect FastAPI with Postgres.
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. In this tutorial, we are going to connect FastAPI with Postgres.
 
 ## DataGrip
 

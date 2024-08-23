@@ -8,7 +8,7 @@ subtitle: Tips & tricks to level up your presentation skills with IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
 
-In this tutorial we will take a look at ways to level up your presentation skills with IntelliJ IDEA.
+In this tutorial, we will take a look at ways to level up your presentation skills with IntelliJ IDEA.
 
 We will take a look at the following:
 
