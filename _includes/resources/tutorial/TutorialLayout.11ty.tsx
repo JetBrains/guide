@@ -17,14 +17,16 @@ export function TutorialLayout(
 	const { collections, page, content } = data;
 	const tutorial = collections.resourceMap.get(page.url) as Tutorial;
 	const references = tutorial.references;
+	const tutorialSteps = tutorial.tutorialSteps ?? [];
+	const hasAnyTutorialSteps = tutorialSteps.length > 0;
 
 	// Sidebars
-	let sidebarSteps = tutorial.tutorialSteps && (
+	let sidebarSteps = hasAnyTutorialSteps && (
 		<div class="column is-3 is-full-touch">
 			<aside class="menu">
 				<p class="menu-label">Tutorial</p>
 				<ul class="menu-list">
-					{tutorial.tutorialSteps.map((step) => (
+					{tutorialSteps.map((step) => (
 						<li>
 							<a aria-label="Tutorial Step" href={step.url}>
 								{step.title}
@@ -39,7 +41,7 @@ export function TutorialLayout(
 	// Main content
 	const listing = (
 		<Fragment>
-			{tutorial.tutorialSteps.map((resource) => (
+			{tutorialSteps.map((resource) => (
 				<HorizontalResourceCard
 					resource={resource}
 					showAuthor={false}
@@ -49,11 +51,10 @@ export function TutorialLayout(
 		</Fragment>
 	);
 
-	const firstTutorialStep =
-		tutorial.tutorialSteps.length > 0 ? tutorial.tutorialSteps[0] : undefined;
+	const firstTutorialStep = hasAnyTutorialSteps ? tutorialSteps[0] : undefined;
 
 	// Breadcrumbs
-	let breadcrumbs = (
+	let breadcrumbs = hasAnyTutorialSteps && (
 		<nav class="breadcrumb" aria-label="breadcrumbs">
 			<ul>
 				<li class="is-active">
@@ -92,7 +93,7 @@ export function TutorialLayout(
 				<div class="container">
 					<div class="columns is-multiline">
 						{sidebarSteps}
-						<div class="column is-9">
+						<div class={hasAnyTutorialSteps ? "column is-9" : "column"}>
 							{breadcrumbs}
 							<main class="content">{main}</main>
 							<UserComments theme={"light"} pageUrl={page.url} />
