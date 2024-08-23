@@ -24,6 +24,8 @@ export const absolutePaths = (options: CustomPluginOptions = {}): Plugin => {
 				if (!href) return;
 				// already good
 				if (href.startsWith(prefix)) return;
+				// data URI
+				if (href.startsWith("data:")) return;
 				// absolute urls
 				if (href.startsWith("http://") || href.startsWith("https://")) return;
 				// relative paths
