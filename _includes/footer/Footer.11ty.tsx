@@ -12,7 +12,7 @@ const Footer = ({ copyright }: FooterProps): JSX.Element => {
 						<li class="mr-4">
 							<a
 								class="has-text-grey-light"
-								href="https://www.jetbrains.com/company/privacy.html"
+								href="https://www.jetbrains.com/legal/docs/privacy/privacy/"
 							>
 								Privacy &amp; Security
 							</a>
@@ -20,7 +20,7 @@ const Footer = ({ copyright }: FooterProps): JSX.Element => {
 						<li class="mr-4">
 							<a
 								class="has-text-grey-light"
-								href="https://www.jetbrains.com/company/useterms.html"
+								href="https://www.jetbrains.com/legal/docs/company/useterms.html"
 							>
 								Terms of Use
 							</a>
