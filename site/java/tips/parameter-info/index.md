@@ -17,6 +17,6 @@ callToAction:
   message: "In addition to parameter information, you can get IntelliJ IDEA to give you type information too!"
 ---
 
-Sometimes it's helpful to know the type of a parameter in your code when it's not immediately apparent to you. Use <kbd>⌃⇧P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux) to get the type information of a parameter in your code.
+Sometimes it's helpful to know the type of parameter in your code when it's not immediately apparent to you. Use <kbd>⌃⇧P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux) to get the type information of a parameter in your code.
 
 {% cta %}

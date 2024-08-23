@@ -14,7 +14,7 @@ obsoletes:
   - /pycharm/tutorials/django-aws/setup-ubuntu
 ---
 
-Hello everyone, welcome to the Django tutorial series. In this tutorial, we are going to set up a Ubuntu Desktop 20.04 LTS in Amazon Elastic Compute Cloud, also known as EC2.
+Hello everyone, welcome to the Django tutorial series. In this tutorial, we are going to set up an Ubuntu Desktop 20.04 LTS in Amazon Elastic Compute Cloud, also known as EC2.
 
 ## Security Groups
 
@@ -46,7 +46,7 @@ I will make sure to add _UbuntuDesktop-SG_ in the inbound rules to accept reques
 
 ![postgres_inbound_rule_1](steps/step3.png)
 
-As you can see the below image, the security group has two rules attached: One accepting connections from the EC2 Instance, and second from an IP Address which is actually my public IP address. As you know, the db instance is running in a private subnet. Thus you can’t connect directly from the public internet. If you want, you can remove the IP address because it’s not going to work.
+As you can see the below image, the security group has two rules attached: One accepting connections from the EC2 Instance, and second from an IP Address which is actually my public IP address. As you know, the db instance is running in a private subnet. Thus, you can’t connect directly from the public internet. If you want, you can remove the IP address because it’s not going to work.
 
 ![postgres_inbound_rule_2](steps/step4.png)
 
@@ -103,7 +103,7 @@ I then click on Configure Security Group and choose an existing security group _
 
 Next, I will click **Launch**, select an existing or create a new private key and finally click **Launch Instances**. It will take a few minutes to create our new instance.
 
-I will go to [nice-dcv.com](https://www.nice-dcv.com/) from where I will be downloading & installing NICE DCV Client for Windows. They also have clients for Linux and MacOS.
+I will go to [nice-dcv.com](https://www.nice-dcv.com/) from where I will be downloading & installing NICE DCV Client for Windows. They also have clients for Linux and macOS.
 
 ![nice_dcv_client](steps/step12.png)
 

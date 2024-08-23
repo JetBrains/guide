@@ -286,11 +286,11 @@ Briefly, it works as follows:
 
 - CreateBook attempts to parse incoming JSON data into a `BookParams` structure. If it fails, an HTTP 400 (Bad Request) error is returned, identifying an error in request format.
   <br><br>
-- The function then validates whether the `PublicationDate` inside the `BookParams` can be parsed without error. If there is an error, it responds with a HTTP 400 error, indicating that the provided `PublicationDate` is invalid.
+- The function then validates whether the `PublicationDate` inside the `BookParams` can be parsed without error. If there is an error, it responds with an HTTP 400 error, indicating that the provided `PublicationDate` is invalid.
   <br><br>
 - Assuming that all information is valid, it attempts to add the new book record to the database using the `AddBook` method. If a problem arises during this process, it triggers a panic, effectively halting the server.
   <br><br>
-- On successful creation of the book record, the function responds with a HTTP 200 status code and the newly created book record in JSON format.
+- On successful creation of the book record, the function responds with an HTTP 200 status code and the newly created book record in JSON format.
 
 ```go
 func (s *Server) CreateBook(c *gin.Context) {

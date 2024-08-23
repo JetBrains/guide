@@ -52,11 +52,11 @@ This time we will run the test by opening the Project tool window <kbd>⌘1</kbd
 
 ![project-run-tests.png](project-run-tests.png)
 
-Not only does our new `Guardian` test pass, but our `Player` test passes too and we can see both in the _Run_ tool window.
+Not only does our new `Guardian` test pass, but our `Player` test passes too, and we can see both in the _Run_ tool window.
 
 ## TDD Flow
 
-Now let's get ourselves into a TDD flow. We'd like to easily look at the code we are writing and the tests we providing against that code. I like both visible, with my code on the left and the tests on the right.
+Now let's get ourselves into a TDD flow. We'd like to easily look at the code we are writing and the tests we're providing against that code. I like both visible, with my code on the left and the tests on the right.
 
 There are a few ways you can achieve the TDD \_look_in PyCharm. You can invoke Find Action with <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) and search for `Split Vertically`. Alternatively you right-click on the tab you want to split to the right and select **Split Right**. In our case, that's `test_guardian`:
 
@@ -109,7 +109,7 @@ After two seconds, even without saving, our tests show as broken:
 
 ![broken-tests.png](broken-tests.png)
 
-Of course it breaks: `Guardian` has no constructor. Since it is the _code_ we are writing tests for, the mistake is conveniently right there in our left tab. Change `laxleague/guardian.py` to implement storing names on instances:
+Of course, it breaks: `Guardian` has no constructor. Since it is the _code_ we are writing tests for, the mistake is conveniently right there in our left tab. Change `laxleague/guardian.py` to implement storing names on instances:
 
 ```python
 class Guardian:

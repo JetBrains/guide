@@ -20,7 +20,7 @@ obsoletes:
 With an increasing need for scalability and performance dictated by the modern web, it is becoming harder and harder to choose an API paradigm that is suitable for service to service communication.
 While the classical models still work and have their own merits, some of them rely heavily on documentation, extensive coordination between teams, or code-sharing. We use shared libraries, and over time our projects become intertwined with dependencies. In these cases, we need something to untangle those and reduce coupling. Welcome to gRPC.
 
-gRPC has been around for a while and .NET Core 3.0 welcomes it as a first-class citizen. It is contract-based, performant with smaller response/request bodies, perfect for polyglot environments, and supports different models – from client-server to bi-directional streaming out of the box.
+gRPC has been around for a while and .NET Core 3.0 welcomes it as a first-class citizen. It is contract-based, performant with smaller response/request bodies, perfect for polyglot environments, and supports different models – from client-server to bidirectional streaming out of the box.
 
 In this session, we will look at how to use gRPC and its 4 models and what are the benefits and downsides of using gRPC compared to the traditional models.
 

@@ -69,7 +69,7 @@ Add as much information to the error message as you can. Consider creating custo
 
 ### Using Incorrect Error Types
 
-The particular type of an error value might seem like a negligible detail. After all, every error implements `type error interface{ Error() string }`, so in the end, errors are nothing but glorified string types, right?
+The particular type of error value might seem like a negligible detail. After all, every error implements `type error interface{ Error() string }`, so in the end, errors are nothing but glorified string types, right?
 
 Wrong. Custom error types can contain extra information and enable advanced error inspection through `errors.Is()` and `errors.As()`.
 

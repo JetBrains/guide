@@ -33,7 +33,7 @@ linkURL: "https://youtu.be/qcTGppyu1nw"
 
 ## Integrating Materialized View into Django
 
-- A Django model is created to encapsulate the materialized view, setting `managed = False` in the meta class.
+- A Django model is created to encapsulate the materialized view, setting `managed = False` in the metaclass.
 - Data types from the database schema are matched to Django model fields.
 - An integer field (`booking_id`) is set as the primary key to work correctly with Django's ORM.
 

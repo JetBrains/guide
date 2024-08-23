@@ -46,7 +46,7 @@ It may seem difficult to choose a model, but the good news is that you can [swit
 
 ## Conclusion
 
-Blazor is Microsoft’s newest offering for web development. It promises less JavaScript than traditional web development while using more C# in a SPA framework. Blazor is built on the ASP.NET stack so it takes advantage of mature technology features such as the hosting model, routing, program structure, and middleware. For those moving to Blazor from ASP.NET, the learning curve is less steep since you can reuse a lot of your existing ASP.NET and web development skills.
+Blazor is Microsoft’s newest offering for web development. It promises less JavaScript than traditional web development while using more C# in an SPA framework. Blazor is built on the ASP.NET stack so it takes advantage of mature technology features such as the hosting model, routing, program structure, and middleware. For those moving to Blazor from ASP.NET, the learning curve is less steep since you can reuse a lot of your existing ASP.NET and web development skills.
 
 ## See Also
 

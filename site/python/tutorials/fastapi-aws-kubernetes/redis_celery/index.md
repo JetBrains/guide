@@ -45,7 +45,7 @@ Follow the below link for more information :
 
 Coming back, I will be using a temporary email for verification where I will be sending emails for testing. You can also use your personal email accounts.
 
-I will go to this website **[getnada](https://getnada.com/)** or you can also check **[mailinator](https://www.mailinator.com/)**. They provide temporary email service.
+I will go to this website **[getnada](https://getnada.com/)**, or you can also check **[mailinator](https://www.mailinator.com/)**. They provide temporary email service.
 
 I will provide random email address like **fastapi@boximail.com**.
 
@@ -296,7 +296,7 @@ I will provide full access for sending emails, but I don’t **recommend** that.
 
 I will revoke this access key and create a new one. I hope you are already aware of how to do this, if not, then watch the video. It will be helpful for you to navigate.
 
-The access keys shown in the image will be different than yours. Don't copy the access key which is shown in the image, because later we will delete these keys, and it stays invalid.
+The access keys shown in the image will be different from yours. Don't copy the access key which is shown in the image, because later we will delete these keys, and it stays invalid.
 
 ![step25](./steps/step25.png)
 

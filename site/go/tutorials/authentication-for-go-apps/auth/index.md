@@ -76,7 +76,7 @@ Run the server with the following command:
 
 ### Testing the /resource Endpoint Using an HTTP Client
 
-Once the service is running, you can test the endpoint using a REST HTTP client. Throughout the rest of the tutorial, you'll be using the [GoLand HTTP Client](https://www.jetbrains.com/help/go/http-client-in-product-code-editor.html) to make HTTP requests to the endpoint that you're building. With the GoLand HTTP Client plugin, you can create, edit, and execute HTTP requests directly in the GoLand code editor. It's very helpful when you are developing a RESTful web service and you want to test if the endpoint is functioning correctly.
+Once the service is running, you can test the endpoint using a REST HTTP client. Throughout the rest of the tutorial, you'll be using the [GoLand HTTP Client](https://www.jetbrains.com/help/go/http-client-in-product-code-editor.html) to make HTTP requests to the endpoint that you're building. With the GoLand HTTP Client plugin, you can create, edit, and execute HTTP requests directly in the GoLand code editor. It's very helpful when you are developing a RESTful web service, and you want to test if the endpoint is functioning correctly.
 
 You're going to [define HTTP requests](https://www.jetbrains.com/help/go/http-client-in-product-code-editor.html#creating-http-request-files) in a file called `req.http`. Defining an HTTP request is very simple and can be done using the following format:
 

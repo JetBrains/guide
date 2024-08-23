@@ -16,7 +16,7 @@ obsoletes:
   - /dotnet/tutorials/dotnet-days-online-2020/hotchocolate-an-introduction-to-graphql-for-aspnet-core/
 ---
 
-GraphQL is a great way to expose your APIs and it has changed the way we think about consuming data over HTTP. Not only does GraphQL give us the power to ask for exactly what we want but it also exposes data in a way that is more aligned with the way we think about data.
+GraphQL is a great way to expose your APIs, and it has changed the way we think about consuming data over HTTP. Not only does GraphQL give us the power to ask for exactly what we want, but it also exposes data in a way that is more aligned with the way we think about data.
 
 Over the last two years GraphQL has become more and more mainstream. The ecosystem has grown phenomenally and major players like Amazon, Twitter, Facebook and more are all committed to GraphQL.
 

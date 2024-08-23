@@ -27,7 +27,7 @@ Also known as _Fix anything_ and _Alt+Enter_ this is a shortcut that is well wor
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OIJLa6rixdM" >
 </iframe>
 
-Sometimes it's helpful to know the type of a parameter in your code when it's not immediately apparent to you. You can do this with <kbd>⌃⇧P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux) to get the type information. This is another tool in your kit when it comes to understanding what some code does.
+Sometimes it's helpful to know the type of parameter in your code when it's not immediately apparent to you. You can do this with <kbd>⌃⇧P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux) to get the type information. This is another tool in your kit when it comes to understanding what some code does.
 
 ## Analysing Your Data Flow
 

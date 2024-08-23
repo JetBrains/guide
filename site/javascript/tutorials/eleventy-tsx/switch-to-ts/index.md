@@ -49,7 +49,7 @@ We must also rename our template to `site/index.11ty.ts` and a return type:
 {% include "./demos/site/index.11ty.ts" %}
 ```
 
-We run our dev server and...wump wump, we have a problem. No files written:
+We run our dev server and... wump, we have a problem. No files written:
 
 ```
 [11ty] Wrote 0 files in 0.01 seconds (v3.0.0-alpha.4)

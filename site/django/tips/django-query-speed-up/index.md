@@ -45,4 +45,4 @@ The `JOIN` clauses in Django are mostly driven by `ForeignKey` fields referenced
 
 It is worth investigating adding a database index to fields used in `.filter()`. The easiest way to add a database index to a field is to add `db_index=True` to the field definition.
 
-The SQL panel in `django-debug-toolbar` has a link to `EXPLAIN` each query. Within **DETAIL** you can see the database `SCAN` and whether this is `USING INDEX` to see whether that query uses the generated database index.
+The SQL panel in `django-debug-toolbar` has a link to `EXPLAIN` each query. Within **DETAIL**, you can see the database `SCAN` and whether this is `USING INDEX` to see whether that query uses the generated database index.

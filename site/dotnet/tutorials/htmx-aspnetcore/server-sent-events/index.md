@@ -94,7 +94,7 @@ While SSE can pass information to the client, HTMX works by making HTTP Requests
     <div hx-sse="connect:/rn-updates" class="card mb-3 text-center" style="max-width: 18rem;">
         <div class="card-header bg-primary text-white">Featured Random Number</div>
         <div class="card-body">
-            <h5 class="card-title">The Random Number is..</h5>
+            <h5 class="card-title">The Random Number is...</h5>
             <p class="card-text fa-4x"
                hx-trigger="sse:number"
                hx-get="@Url.Page("11_ServerEvents", "Random")">

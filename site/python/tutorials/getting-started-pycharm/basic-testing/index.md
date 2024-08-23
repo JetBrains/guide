@@ -18,7 +18,7 @@ We’re going to use the `pytest` framework for this demo so we need to install 
 
 ![install-pytest.png](install-pytest.png)
 
-When you select a Python interpreter, PyCharm will auto-detect any test runner that is installed and it will default to `unittest` if nothing is found so we need to tell PyCharm that I want it to use pytest instead of the built-in test framework.
+When you select a Python interpreter, PyCharm will auto-detect any test runner that is installed, and it will default to `unittest` if nothing is found so we need to tell PyCharm that I want it to use pytest instead of the built-in test framework.
 
 If you want to read up on this area then you can find more details in [our documentation](https://www.jetbrains.com/help/pycharm/testing-your-first-python-application.html#choose-test-runner).
 

@@ -37,7 +37,7 @@ What are tests and how do you run them? In programming languages, you adopt a te
 For Python, the current favorite is [pytest](/tags/pytest/).
 
 As a mature ecosystem, `pytest` has lots of resources to help you get started. RealPython has [a primer on testing in general](https://realpython.com/python-testing/) as well as (paid) [course on pytest](https://realpython.com/courses/test-driven-development-pytest/).
-Brian Okken leads the pack with a [Python Testing with pytest](https://pragprog.com/book/bopytest/python-testing-with-pytest) book and a [Python test podcast](https://podcast.pythontest.com/) on all things testing. In addition Brian Okken has a [book](https://pythontest.com/pytest-book/) and a (paid) [complete pytest course](https://pythontest.teachable.com/p/complete-pytest-course).
+Brian Okken leads the pack with a [Python Testing with pytest](https://pragprog.com/book/bopytest/python-testing-with-pytest) book and a [Python test podcast](https://podcast.pythontest.com/) on all things testing. In addition, Brian Okken has a [book](https://pythontest.com/pytest-book/) and a (paid) [complete pytest course](https://pythontest.teachable.com/p/complete-pytest-course).
 
 The pace of progress in the `pytest` community can be overwhelming at times. Fortunately the maintainers take compatibility and bug-fixing seriously.
 

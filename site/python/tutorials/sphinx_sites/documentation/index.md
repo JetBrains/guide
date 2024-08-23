@@ -33,7 +33,7 @@ This renders with syntax highlighting:
 
 ![Python Code Fence](python_code_block.png)
 
-Of course you might want to tell Sphinx what language is the code block, to get the correct syntax highlighting.
+Of course, you might want to tell Sphinx what language is the code block, to get the correct syntax highlighting.
 Sphinx uses [Pygments](https://pygments.org) for syntax highlighting, with `python3` is the default.
 But perhaps you want to show a _JavaScript_ snippet.
 Just put the language after the first triple-backtick, from the [list of languages supported by Pygments](https://pygments.org/docs/lexers/):

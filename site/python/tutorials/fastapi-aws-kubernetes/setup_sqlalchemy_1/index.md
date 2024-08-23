@@ -15,7 +15,7 @@ video: "https://www.youtube.com/watch?v=aOy_pcNnjjM"
 
 Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-In this tutorial, we are going to create an ecommerce application. So, as you know, what we normally see in an ecommerce store, we have users, products, cart items, orders, authentication etc.
+In this tutorial, we are going to create an ecommerce application. So, as you know what we normally see in an ecommerce store, we have users, products, cart items, orders, authentication etc.
 
 ![shopping](./images/shopping.png)
 Image Credit: [Freepik](https://www.freepik.com/)

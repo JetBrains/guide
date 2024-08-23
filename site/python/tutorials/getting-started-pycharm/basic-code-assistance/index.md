@@ -42,7 +42,7 @@ So next time you hear your laptop fans right after you open a new project, have 
 
 ## Syntax Highlighting
 
-Another productivity booster that you might take for granted is syntax highlighting. In this scre=ipt, PyCharm automatically detects keywords such as `def`, `for`, `while`, as well as class names, parameters, etc, and renders them in different colors.
+Another productivity booster that you might take for granted is syntax highlighting. In this scre=ipt, PyCharm automatically detects keywords such as `def`, `for`, `while`, as well as class names, parameters, etc., and renders them in different colors.
 
 <img src="editor-colours.png" alt="Colours in the editor" width="700"/>
 

@@ -52,7 +52,7 @@ You might be thinking why I created an _integration_ directory.
 
 According to Wikipedia : <em>Integration testing is the phase in software testing in which individual software modules are combined and tested as a group</em>.
 
-In our case we are dependent upon the _NewUserTestCase_, which needs to inherited and finally it's going to create a new user in our system. Indirectly, we are setting up a fixture. According to <em>Wikipedia : A software test fixture sets up a system for the software testing process by initializing it, thereby satisfying any preconditions the system may have.</em>
+In our case we are dependent upon the _NewUserTestCase_, which needs to inherited, and finally it's going to create a new user in our system. Indirectly, we are setting up a fixture. According to <em>Wikipedia : A software test fixture sets up a system for the software testing process by initializing it, thereby satisfying any preconditions the system may have.</em>
 
 If there is a user in our system then only we can proceed with login that means a new user needs to be registered successfully in the platform and after that only we can perform a test in the Login API.
 

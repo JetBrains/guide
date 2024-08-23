@@ -213,7 +213,7 @@ Take note of the `json` [struct tag](https://www.digitalocean.com/community/tuto
 
 ### Defining a storage interface
 
-An interface allows your server code to be totally detached from the storage solution (in memory, Redis, MySQL, and etc.). You can store your data anywhere as long as you implement this interface.
+An interface allows your server code to be totally detached from the storage solution (in memory, Redis, MySQL, etc.). You can store your data anywhere as long as you implement this interface.
 
 Go back to the `main.go` file and define an interface for data storage containing the list of recipes:
 

@@ -15,7 +15,7 @@ thumbnail: ./thumbnail.png
 
 ## Why Game Development and why now?
 
-Video games continue to be a magical form of entertainment, putting the player in a position to control and embody different characters in fantastical worlds. In regards to modern mediums of expression, video games are fantastic. Video games have an uncanny ability to tap into our emotions, evoking a spectrum of feelings ranging from joy to sadness, frustration, and the satisfaction of overcoming incredible odds. Many modern pop culture icons come from video games such as Super Mario, Samus Aran (Metroid), Chun-Li (Street Fighter), Pac-Man, and Sonic the Hedgehog.
+Video games continue to be a magical form of entertainment, putting the player in a position to control and embody different characters in fantastical worlds. Regarding modern mediums of expression, video games are fantastic. Video games have an uncanny ability to tap into our emotions, evoking a spectrum of feelings ranging from joy to sadness, frustration, and the satisfaction of overcoming incredible odds. Many modern pop culture icons come from video games such as Super Mario, Samus Aran (Metroid), Chun-Li (Street Fighter), Pac-Man, and Sonic the Hedgehog.
 
 Not only have big game studios successfully created legendary game franchises, but the rise of independent (indie) game developers in the last few years has been remarkable. These indie game successes, including Vampire Saviors, Hotline Miami, Outer Wilds, and Balatro, have proven that with determination and the right tools, success is possible even in a competitive industry. Indie developers also have access to some of the largest gaming platforms, such as PlayStation, Xbox, iOS, and Android, further leveling the playing field.
 

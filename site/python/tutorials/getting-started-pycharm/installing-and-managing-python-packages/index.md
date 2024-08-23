@@ -40,7 +40,7 @@ PyCharm can manage local or remote environments, pip vs. conda vs. pipenv vs. po
 
 ## Add Repository Package
 
-We've covered how to install packages from PyPi, but you might also want to install packages from a version control system like GitHub or from your local machine. In this case, you can click **Add packages** in the Package tool window and then you have two options:
+We've covered how to install packages from PyPi, but you might also want to install packages from a version control system like GitHub or from your local machine. In this case, you can click **Add packages** in the Package tool window, and then you have two options:
 
 - Add packages from version control
   - Select the version control system that you're using and specify a path to the target repository.

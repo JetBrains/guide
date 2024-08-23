@@ -24,7 +24,7 @@ _Amazon Virtual Private Cloud (Amazon VPC)_ is a service that lets you launch AW
 
 To work with AWS VPC you need to have basic networking knowledge. For reference, you can watch this video : [AWS Networking fundamentals](https://www.youtube.com/watch?v=hiKPPy584Mg)
 
-_Amazon RDS_ also known as _Relational Database Service_ is a distributed relational database service provided by Amazon Web Services. It is a web service running "in the cloud" designed to simplify the setup, operation, and scaling of a relational database for use in applications. It provides cost-efficient and resizable capacity while automating time -consuming administration tasks such as: hardware provisioning, database setup, patching and backups. As of today the currently supported database engines are : MySQL, Oracle, Postgres, SQLServer, MariaDB and Amazon Aurora.
+_Amazon RDS_ also known as _Relational Database Service_ is a distributed relational database service provided by Amazon Web Services. It is a web service running "in the cloud" designed to simplify the setup, operation, and scaling of a relational database for use in applications. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as: hardware provisioning, database setup, patching and backups. As of today the currently supported database engines are : MySQL, Oracle, Postgres, SQLServer, MariaDB and Amazon Aurora.
 
 For reference, follow this link : [aws.amazon.com/rds](https://aws.amazon.com/rds/)
 
@@ -116,7 +116,7 @@ I will be providing generic settings like db identifier, username and password.
 
 ![rds_4](steps/step12.png)
 
-I will be choosing _t2.micro_ instance class. This provides 1 giga-byte RAM which is quite okay for our application. I will also disable storage autoscaling as we don’t require it. Based on your needs you can use it for your production workloads.
+I will be choosing _t2.micro_ instance class. This provides 1 gigabyte RAM which is quite okay for our application. I will also disable storage autoscaling as we don’t require it. Based on your needs you can use it for your production workloads.
 
 Make sure to choose DjangoVPC in the _Connectivity_ section. You can see it automatically populated the db subnet group which we created earlier. The _Public access_ should be disabled because we don’t want to assign any public IP to our db instance, only the EC2 instance can connect with the RDS.
 

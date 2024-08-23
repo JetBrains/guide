@@ -17,7 +17,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/smCuu3TrVUc"
 ---
 
-Localization has been around since .NET 1.1. Looking at the interfaces of `ResourceManager` and `CultureInfo`, along with the static nature of resource access, its easy to see the ties to legacy client technology **WinForms**. With the release of ASP.NET Core, developers have new tools to work with localization in the realm of server-based web apps.
+Localization has been around since .NET 1.1. Looking at the interfaces of `ResourceManager` and `CultureInfo`, along with the static nature of resource access, it's easy to see the ties to legacy client technology **WinForms**. With the release of ASP.NET Core, developers have new tools to work with localization in the realm of server-based web apps.
 
 We'll explore these new mechanisms and how the ASP.NET team designed them to work in a web-centric world. You'll need a new **Razor Pages** project to follow along, or you can clone **[the complete solution from the GitHub repository](https://github.com/khalidabuhakmeh/aspnetcore_localization_sample).**
 
@@ -27,7 +27,7 @@ The configuration found in our `Startup` is essential to localizing an ASP.NET C
 
 ### Configure Services
 
-To opt-in to localization, we need to modify our `Startup` file. We'll be registering a few services, configuring options, and registering middleware. All steps that are common-place for additions in an ASP.NET application.
+To opt in to localization, we need to modify our `Startup` file. We'll be registering a few services, configuring options, and registering middleware. All steps that are common-place for additions in an ASP.NET application.
 
 Starting in our `ConfigureServices` method, we need to make a call to `AddLocalization`. It's essential to set the `ResourcesPath` as it tells the ASP.NET localization feature where to find our `.resx` files.
 

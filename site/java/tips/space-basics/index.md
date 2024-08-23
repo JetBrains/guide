@@ -21,6 +21,6 @@ The plugin for [JetBrains Space](https://www.jetbrains.com/space/), a new team c
 
 If you're logged in to Space, you can clone a repo via "Get from VCS", and you can configure where the code is cloned to.
 
-If you're working with a Space project, you can right click on a commit in the Git log to open it in Space.
+If you're working with a Space project, you can right-click on a commit in the Git log to open it in Space.
 
 See more tips and tricks for working with Space in our [Space Guide](https://www.jetbrains.com/space/guide/).

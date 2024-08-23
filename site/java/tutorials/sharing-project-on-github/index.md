@@ -18,4 +18,4 @@ tutorialItems:
 
 In this tutorial, we’re going to look at how to share code that we’ve written on our local machine to a repository on [GitHub](https://github.com/).
 
-There are two ways to use IntelliJ IDEA to publish code that we’ve written on GitHub. The first is the quickest where you create your local and remote repository in one step. The second approach is multi-step which can be used when you want to create a local Git repository for your project separately from publishing any code publicly on GitHub.
+There are two ways to use IntelliJ IDEA to publish code that we’ve written on GitHub. The first is the quickest where you create your local and remote repository in one step. The second approach is multistep which can be used when you want to create a local Git repository for your project separately from publishing any code publicly on GitHub.

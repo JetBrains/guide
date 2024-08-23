@@ -30,7 +30,7 @@ def test_no_primary_guardian(player_one):
     assert player_one.primary_guardian is None
 ```
 
-As we type the code above, don't forget to use autocomplete to let PyCharm generate `import pytest` for you. This test uses a special context manager facility in `pytest`, in which you run a block of code that you expect to raise an exception, and let `pytest` handle it. You test will _fail_ if the exception is not raised. The context manager optionally lets you add `as exc` to then do some asserts after the block, about the nature of the exception value.
+As we type the code above, don't forget to use autocomplete to let PyCharm generate `import pytest` for you. This test uses a special context manager facility in `pytest`, in which you run a block of code that you expect to raise an exception, and let `pytest` handle it. Your test will _fail_ if the exception is not raised. The context manager optionally lets you add `as exc` to then do some asserts after the block, about the nature of the exception value.
 
 We can see that an exception is raised, but not the one we were expecting:
 

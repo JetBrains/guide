@@ -39,7 +39,7 @@ Run tool window <kbd>⌘4</kbd> (macOS) / <kbd>Alt+4</kbd> (Windows/Linux)
 Services tool window <kbd>⌘8</kbd> (macOS) / <kbd>Alt+8</kbd> (Windows/Linux)
 Git tool window <kbd>⌘9</kbd> (macOS) / <kbd>Alt+9</kbd> (Windows/Linux)
 
-The fastest way to toggle the visibility of UI elements is the Find Action <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux). For example, if you're not going to use breadcrumbs and you don’t want to see them, you can use Find Action, search for “breadcrumbs,” and then turn them off from there.
+The fastest way to toggle the visibility of UI elements is the Find Action <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux). For example, if you're not going to use breadcrumbs, and you don’t want to see them, you can use Find Action, search for “breadcrumbs,” and then turn them off from there.
 
 ## Keymap
 

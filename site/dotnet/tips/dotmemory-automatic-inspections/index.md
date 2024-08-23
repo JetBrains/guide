@@ -13,7 +13,7 @@ animatedGif:
   file: ./tip.webm
 ---
 
-**Memory profiling on auto-pilot** 👩‍✈️
+**Memory profiling on autopilot** 👩‍✈️
 
 While profiling, dotMemory runs automatic inspections for common memory issues.
 

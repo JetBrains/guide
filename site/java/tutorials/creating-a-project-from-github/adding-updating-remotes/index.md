@@ -25,7 +25,7 @@ Now, let's use Search Everywhere, by pressing <kbd>⇧⇧</kbd> (macOS) / <kbd>S
 
 Here we can see the remote that we originally cloned this project from, this is our fork of the _intellij-samples_ repository. We want to add a new repository for the upstream repo, that is, the original JetBrains repo.
 
-Lets add this repository by pressing **+**. You can now give it a name and paste in the path to the JetBrains repository that's on your clipboard. There are a number of different conventions that you could use to decide on the name for your remote, for example you could call it "upstream". We recommend that you use the organisation or profile name to remove any ambiguity. You can also use this dialog to make changes to your existing remotes if you want to. For example, you can rename the "origin" remote to your name if it's your specific branch like in this case.
+Let's add this repository by pressing **+**. You can now give it a name and paste in the path to the JetBrains repository that's on your clipboard. There are a number of different conventions that you could use to decide on the name for your remote, for example you could call it "upstream". We recommend that you use the organisation or profile name to remove any ambiguity. You can also use this dialog to make changes to your existing remotes if you want to. For example, you can rename the "origin" remote to your name if it's your specific branch like in this case.
 
 ![Adding a remote in IntelliJ IDEA](add-remote-intelij-idea.png)
 

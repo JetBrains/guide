@@ -126,7 +126,7 @@ I am going to create a `verify_email_exist` function which is going to take emai
 
 ![step8](./steps/step8.png)
 
-Email will be string and database will be a session. Let me change database to db_session that looks more clear to me.
+Email will be string and database will be a session. Let me change database to db_session that looks clearer to me.
 
 The function might return User, or it will return None.
 
@@ -177,7 +177,7 @@ Open **main.py**, first I am going to remove the two routes which were generated
 
 ![step13](./steps/step13.png)
 
-Let me give a brief information to our API Docs, we can add more information. I am just sticking to only title and version.
+Let me give brief information to our API Docs, we can add more information. I am just sticking to only title and version.
 
 Now, we need to include the router. I will type `app.include_router()`
 

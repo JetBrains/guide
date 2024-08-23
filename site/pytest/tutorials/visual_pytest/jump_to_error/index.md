@@ -107,7 +107,7 @@ PyCharm doesn't yet know what `add_guardian(g)` is, so let's fix that now. We ca
 
 ![add-method-guardian.png](add-method-guardian.png)
 
-PyCharm will create the method over in our `Guardian` class and we can then add the implementation:
+PyCharm will create the method over in our `Guardian` class, and we can then add the implementation:
 
 ```python
 def add_guardian(self, guardian):

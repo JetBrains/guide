@@ -20,7 +20,7 @@ obsoletes:
 You're doing test-driven development (TDD) and you're in "the flow".
 Everything is clicking. Perhaps you want to focus on just one test:
 
-- Your tests take a while to run and you don't want the slowdown of running them all
+- Your tests take a while to run, and you don't want the slowdown of running them all
 
 - Some of your other tests are broken, or your current code breaks them
 

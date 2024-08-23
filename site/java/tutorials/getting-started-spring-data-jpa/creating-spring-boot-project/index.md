@@ -14,7 +14,7 @@ First, we'll create a new project in IntelliJ IDEA Ultimate by clicking **New Pr
 
 Then, we'll click **Next**.
 
-In the next window, we'll select the latest Spring Boot version available to us. Then under _Dependencies_, we'll search for `data` in the search field. Under _SQL_, we'll select the checkboxes for **Spring Data JPA** and **H2 Database** from the list. For this tutorial, we'll be using H2 as our database because it is easy to setup. If you want to use a different database, such as MySQL or HyperSQL, feel free to select those dependencies instead or add them later to your pom.xml file.
+In the next window, we'll select the latest Spring Boot version available to us. Then under _Dependencies_, we'll search for `data` in the search field. Under _SQL_, we'll select the checkboxes for **Spring Data JPA** and **H2 Database** from the list. For this tutorial, we'll be using H2 as our database because it is easy to set up. If you want to use a different database, such as MySQL or HyperSQL, feel free to select those dependencies instead or add them later to your pom.xml file.
 
 ![New Project Window Dependency](./NewProject-Deps.png)
 

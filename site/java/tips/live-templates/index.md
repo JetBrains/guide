@@ -27,7 +27,7 @@ video: "https://youtu.be/GGTzyfKhSb0"
 
 Live Templates reduce the amount of code you need to type for the more common
 code constructs. You can use _psvm_ or _main_ to create the main Java method,
-for example. There are lots of live templates including _fori_ for a for i
+for example. There are lots of live templates including _fori_ for a for
 loop and _nn_ for not null, plus many more.
 
 Other options include:

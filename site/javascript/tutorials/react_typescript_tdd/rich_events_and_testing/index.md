@@ -57,11 +57,11 @@ This test renders the `Counter` component, checks its initial value, pretends to
 `fireEvent`, what's that?
 It's the big idea in this tutorial step.
 You can pretend to click, or dispatch other DOM events, even without a real browser or "mouse".
-Jest uses the [browser-like JSDOM environment](https://jestjs.io/docs/en/configuration#testenvironment-string) entirely inside NodeJS to fire the event.
+Jest uses the [browser-like JSDOM environment](https://jestjs.io/docs/en/configuration#testenvironment-string) entirely inside Node.js to fire the event.
 
 This new test fails: the number didn't increment. Which is good!
 
-What's really good: that was dead simple.
+What's excellent: that was dead simple.
 In one line we automated doing a click and checking the result.
 Much more pleasurable than switching to the browser and clicking everything in your app, on every change, to see if your change works without breaking the universe.
 

@@ -35,7 +35,7 @@ There is a full [transcript](https://youtu.be/tUwCvHMwx7Y?feature=shared) availa
 
 ## Impact on Software Development
 
-- AI assistants like GitHub Co-Pilot and JetBrains' own AI Assistant help speed up routine tasks, aid in learning, and improve productivity.
+- AI assistants like GitHub Copilot and JetBrains' own AI Assistant help speed up routine tasks, aid in learning, and improve productivity.
 - Concerns about job displacement are countered by the argument that AI enhances but doesn't replace human problem-solving skills.
 
 ## Challenges and Ethical Considerations

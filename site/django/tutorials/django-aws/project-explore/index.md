@@ -101,7 +101,7 @@ Observe at line _30_ in `models.py` file where we are importing our tuple _BOARD
 
 We are done with the models, let's generate the migration file. I will follow the same process as before.
 
-I will click on Tools and then **Run manage.py Task** and then I will type _makemigrations_ and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux). This is going to create the migrations file under the _organization/migrations_ folder.
+I will click on Tools and then **Run manage.py Task**, and then I will type _makemigrations_ and press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux). This is going to create the migrations file under the _organization/migrations_ folder.
 
 You will see a new file has been generated under the name `0001_initial.py`.
 

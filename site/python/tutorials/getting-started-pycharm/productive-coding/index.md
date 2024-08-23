@@ -26,7 +26,7 @@ If you're fond of your line numbers, you can get them back by right-clicking in 
 
 You can leave Zen Mode with the same menu by selecting View | Appearance | Exit Zen Mode.
 
-So next time you need some head space, consider using Zen mode to full screen your IDE with nothing but the code.
+So next time you need some headspace, consider using Zen mode to full screen your IDE with nothing but the code.
 
 ## Code Navigation
 
@@ -74,7 +74,7 @@ Once again use “surround with” and this time select &lt;Editor Fold&gt;There
 
 ## TODO List
 
-Sometimes you might need to come back to some code in the future but you don’t want to hold that information in your head. For example, you want to come back to a line in the future you can add `FIXME`.
+Sometimes you might need to come back to some code in the future, but you don’t want to hold that information in your head. For example, you want to come back to a line in the future you can add `FIXME`.
 
 When you subsequently open your TODO tool window, the comment that includes the phrase FIXME appears.
 

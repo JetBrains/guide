@@ -22,7 +22,7 @@ obsoletes:
 
 When it comes to building cloud native applications with .NET, you can expect to use the full breadth and depth of AWS services to build modern applications.
 
-In this session, I will introduce key services you can use with .NET to build cloud native applications. Then I will discuss the AWS Toolkit for Rider which brings AWS services into our favorite IDE. Finally I will run a live demo of how to quickly bootstrap a cloud native application leveraging AWS services with .NET.
+In this session, I will introduce key services you can use with .NET to build cloud native applications. Then I will discuss the AWS Toolkit for Rider which brings AWS services into our favorite IDE. Finally, I will run a live demo of how to quickly bootstrap a cloud native application leveraging AWS services with .NET.
 
 ### About the Presenter
 

@@ -75,7 +75,7 @@ Order details table will contain foreign key relationships with order and produc
 
 ![step2](./steps/step2.png)
 
-Basically, we shouldn’t do `CASCADE`, because in the future, if someone deletes the product then order & order details will also get removed. But of course we don’t want to do that because we need to preserve order information. It doesn't matter in the future if the product gets removed from the system; the order information should be preserved.
+Basically, we shouldn’t do `CASCADE`, because in the future, if someone deletes the product then order & order details will also get removed. But of course, we don’t want to do that because we need to preserve order information. It doesn't matter in the future if the product gets removed from the system; the order information should be preserved.
 
 This is a tutorial. We can ignore this scenario, but when working in a real-world scenario we need to store it which may be beneficial
 for future audit purposes.

@@ -18,7 +18,7 @@ Sometimes you want to overhaul a chunk of code and don't want to stare at a brok
 
 ## Sanity check of TDD mode
 
-Once again, make sure you have PyCharm set up to automatically rerun your tests when something in your code or your test changes. You can validate if its switched on by either checking in the _Run_ tool window, or just make a change to your code / test to introduce an error and check that your tests fail correctly. Of course, remember to fix the deliberate error before you move on!
+Once again, make sure you have PyCharm set up to automatically rerun your tests when something in your code or your test changes. You can validate if it's switched on by either checking in the _Run_ tool window, or just make a change to your code / test to introduce an error and check that your tests fail correctly. Of course, remember to fix the deliberate error before you move on!
 
 ## Skip the failing test
 

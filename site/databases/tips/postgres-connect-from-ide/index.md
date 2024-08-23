@@ -19,7 +19,7 @@ Use <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux), to bring
 
 You click on the **+** (macOS) / **New** (Windows/Linux). Select _Data Source_ then _Postgres_ as the data source type. Customize the name of the data source, connection details, then click on the **Test** link to ensure everything is ok.
 
-Once everything is done, a _Console_ tab will appear and you can now query the database from the IDE. You can also explore it from the _Database_ tool window, and select which parts to hide or show from it.
+Once everything is done, a _Console_ tab will appear, and you can now query the database from the IDE. You can also explore it from the _Database_ tool window, and select which parts to hide or show from it.
 
 **Note:** You may need to download a database driver for the IDE first. If you see a **Download driver** link, you'll need to click on that before you can connect to the database.
 

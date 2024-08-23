@@ -32,7 +32,7 @@ When we select a commit, we can look at the information in the Commit Details ar
 
 What if we want to cherry pick only part of a commit? In the Commit details pane on the right, select the files containing the changes you want to apply to the target branch, and select Cherry-Pick Selected Changes from the context menu.
 
-The cherry picked changes are transferred to the change list and we can commit them from there. So far, cherry picking went smoothly because there are no conflicting changes.
+The cherry picked changes are transferred to the change list, and we can commit them from there. So far, cherry picking went smoothly because there are no conflicting changes.
 
 When we cherry-pick a commit that has conflicts with our current branch, the Merge Conflicts dialog opens. We can resolve the merge conflicts here. We want to keep some changes, and reject others. If you're not able to resolve the merge conflicts, you can also abort the cherry pick.
 

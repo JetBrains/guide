@@ -23,7 +23,7 @@ We'll let the IDE guide us through the process. First, we use `File -> New Proje
 
 ![New Project Dialog](new_project_dialog.png)
 
-Make sure `Project Interpreter` is setup to configure a new virtual environment. Expand the triangle if needed to set this up.
+Make sure `Project Interpreter` is set up to configure a new virtual environment. Expand the triangle if needed to set this up.
 
 After clicking `Create`, tell PyCharm to open the project in a new window.
 

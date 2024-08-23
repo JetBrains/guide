@@ -26,7 +26,7 @@ IntelliJ IDEA will tell you if your file has any warnings or errors in with the 
 
 ![inspections-widget.png](inspections-widget.png)
 
-You can click on this to open the Problems tool window or use <kbd>⌘6</kbd> (macOS) / <kbd>Alt+6</kbd> (Windows/Linux). You can navigate to each error by clicking on it or use **F2** to get to the next error and **Shift+F2** to go back to the previous error. Of course the goal is to keep your code always compiling but the Inspections Widget is very helpful to see the _state_ of your file at a glance.
+You can click on this to open the Problems tool window or use <kbd>⌘6</kbd> (macOS) / <kbd>Alt+6</kbd> (Windows/Linux). You can navigate to each error by clicking on it or use **F2** to get to the next error and **Shift+F2** to go back to the previous error. Of course, the goal is to keep your code always compiling but the Inspections Widget is very helpful to see the _state_ of your file at a glance.
 
 ## Moving Between Errors
 
@@ -58,7 +58,7 @@ Inlay hints that IntelliJ IDEA can provide include:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pa-bgScptXE" >
 </iframe>
 
-Gutter icons are often overlooked because they're just _there_ but I urge you to look again, especially if you're a visual learner and perhaps haven't mastered _all_ keyboard shortcuts yet.
+Gutter icons are often overlooked because they're just _there_, but I urge you to look again, especially if you're a visual learner and perhaps haven't mastered _all_ keyboard shortcuts yet.
 
 Gutter icons can show you:
 

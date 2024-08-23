@@ -142,7 +142,7 @@ You've probably noticed at this point that we have duplication. Don't worry, we'
 
 A `conftest.py` file is used in `pytest` to share fixtures across multiple files. We're going to refactor our code to remove the fixtures from both our `test_guardian.py` and `test_player.py` files and move it into a single `conftest.py` file.
 
-Since you're still in `test_guardian.py`, delete the guardians fixture `guardians_list()` from your code and then use Optimize Imports <kbd>⌃⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+O</kbd> (Windows/Linux) to remove any unused imports. Next use Reformat Code <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux) to tidy up an errant spacing issues. Don't worry - this will momentarily break your code but we will fix it!
+Since you're still in `test_guardian.py`, delete the guardians fixture `guardians_list()` from your code and then use Optimize Imports <kbd>⌃⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+O</kbd> (Windows/Linux) to remove any unused imports. Next use Reformat Code <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux) to tidy up an errant spacing issues. Don't worry - this will momentarily break your code, but we will fix it!
 
 Use Recent Files <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) to switch to `test_player.py` and cut both `guardians_list()` and `player_one()` fixtures from the file. Again, use Optimize Imports <kbd>⌃⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+O</kbd> (Windows/Linux) to remove any unused imports and Reformat Code <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux) to tidy up an errant spacing issues.
 
@@ -164,7 +164,7 @@ I'll go with `all_guardians` and then press Refactor:
 
 ![all_guardians.png](all_guardians.png)
 
-PyCharm now gives you a preview of which files will change and we can see that both our usages and the definition in `conftest.py` will be correctly updated:
+PyCharm now gives you a preview of which files will change, and we can see that both our usages and the definition in `conftest.py` will be correctly updated:
 
 ![refactor-preview.png](refactor-preview.png)
 

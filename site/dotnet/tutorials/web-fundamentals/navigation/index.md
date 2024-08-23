@@ -30,7 +30,7 @@ This **Find in Path** menu has many useful ways to narrow down your search: case
 
 At the bottom, you can have a quick peek into files without opening them in the editor.
 
-Let’s say I want to check where a symbol was declared or look for its usages. I can focus on that symbol and click <kbd>Cmd/Ctrl+B</kbd> and voila! The file opens with the cursor on the definition of the symbol.
+Let’s say I want to check where a symbol was declared or look for its usages. I can focus on that symbol and click <kbd>Cmd/Ctrl+B</kbd> and voilà! The file opens with the cursor on the definition of the symbol.
 
 Now, what if I want to go back to a file I recently opened? There’s the **Recent Files** popup that can help with that (<kbd>Cmd/Ctrl+E</kbd>).
 On its right, you can see the list of recently opened files that you can quickly jump to. On the left, there’s a list of tool windows. Let’s use the speed search to narrow the list of choices and explore one more helpful navigation feature.
