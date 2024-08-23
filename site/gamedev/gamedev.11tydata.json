@@ -1,3 +1,10 @@
 {
-	"channel": "/gamedev/"
+	"channel": "/gamedev/",
+	"callToAction": {
+		"title": "Interested in Game Development Development?",
+		"url": "https://jb.gg/dnguide",
+		"action": "Learn More",
+		"image": "/dotnet/technologies/csharp/csharp-logo.svg",
+		"message": "Game developers love <strong>JetBrains dotUltimate</strong> and we think you will too. Check it out!"
+	}
 }
