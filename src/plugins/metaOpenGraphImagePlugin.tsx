@@ -14,9 +14,9 @@ export const metaOpenGraphImagePlugin = (): Plugin => {
 				const head = doc.getElementsByTagName("head")[0];
 				const siteUrl = image.attrs["data-meta"];
 				const src = image.attrs["src"];
-				const meta = parse(
-					`<meta property="og:image" content="${siteUrl}${src}">`
-				);
+				const meta = src.startsWith("data:")
+					? parse(`<meta property="og:image" content="${src}">`)
+					: parse(`<meta property="og:image" content="${siteUrl}${src}">`);
 				head.appendChild(meta);
 				image.remove();
 

@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: Ensure that your code is always formatted with gofmt.
 thumbnail: ./thumbnail.png
-screenshot: ./card.png
+screenshot: ./screenshot.png
 ---
 
 To use this feature, check the _On code reformat_ option under **Settings/Preferences | Editor | Code Style | Go | Other**.

@@ -9,7 +9,7 @@ subtitle: Want to know if your branch has new commits? Here's how.
 seealso:
   - title: Managing branches
     href: "https://www.jetbrains.com/help/webstorm/manage-branches.html"
-thumbnail: ./card.png
+thumbnail: ./card.jpeg
 screenshot: ./card.jpeg
 ---
 

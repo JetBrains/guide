@@ -8,7 +8,7 @@ subtitle: Here's how to get information about the type of a symbol.
 seealso:
   - title: Check Documentation in JavaScript
     href: "https://www.jetbrains.com/guide/javascript/tips/check-js-documentation/"
-thumbnail: ./card.png
+thumbnail: ./card.jpg
 screenshot: ./card.jpg
 ---
 

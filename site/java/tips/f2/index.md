@@ -16,8 +16,6 @@ seealso:
       https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#navigate-errors-warnings
   - title: (blog) IntelliJ IDEA Blog - Top 15 IntelliJ IDEA Shortcuts
     href: "https://blog.jetbrains.com/idea/2020/03/top-15-intellij-idea-shortcuts/"
-  - title: (guide) IntelliJ IDEA Guide - Alt+Enter
-    href: ../alt-enter/
 video: "https://youtu.be/Q26Cc6V7zKk"
 callToAction:
   url: "/java/tips/problem-window/"
