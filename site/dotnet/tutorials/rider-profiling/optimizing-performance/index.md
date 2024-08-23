@@ -19,7 +19,7 @@ video: "https://youtu.be/P__B5MII4h8"
 
 ### Measure Performance with Sampling
 
-To profile the Sudoku solver, you will use [sampling](https://www.jetbrains.com/help/profiler/Profiling_Guidelines__Choosing_the_Right_Profiling_Mode.html).
+To profile the Sudoku solver, you will use [sampling](https://www.jetbrains.com/help/profiler/Basic_Concepts.html).
 Since the application is mostly code and does not have much File I/O and multithreading going on, there is no added benefit from using Timeline mode.
 
 Once you start the profiler, the application starts, and you will see the Performance Profiler tool window open. It shows the profiling controller, where you can get a snapshot manually. The full performance snapshot is what we want to see for the Sudoku solver, so you can let it complete its work. Rider will automatically capture a snapshot after the application exits.

@@ -15,5 +15,5 @@ It helps you keep your code solid, dry, and easy to maintain.
 
 ## See Also
 
-- [Introduction to refactoring](https://www.jetbrains.com/help/idea/tutorial-introduction-to-refactoring.html)
+- [Introduction to refactoring](https://www.jetbrains.com/help/idea/refactoring-source-code.html)
 - [Code refactoring](https://www.jetbrains.com/help/idea/refactoring-source-code.html)

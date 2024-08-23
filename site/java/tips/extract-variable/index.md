@@ -11,7 +11,7 @@ thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Extract Variable
     href: >-
-      https://www.jetbrains.com/help/idea/tutorial-introduction-to-refactoring.html#4d4fe75d
+      https://www.jetbrains.com/help/idea/extract-variable.html
   - title: (documentation) IntelliJ IDEA Help - Extract Variable Dialog
     href: >-
       https://www.jetbrains.com/help/idea/extract-variable-refactoring-dialog.html

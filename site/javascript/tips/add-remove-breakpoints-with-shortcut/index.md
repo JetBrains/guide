@@ -9,8 +9,6 @@ author: er
 seealso:
   - title: How to debug with WebStorm
     href: "https://blog.jetbrains.com/webstorm/2018/01/how-to-debug-with-webstorm/"
-  - title: Introducing the Learning Plugin for WebStorm
-    href: "https://blog.jetbrains.com/webstorm/2020/04/learning-plugin-for-webstorm/"
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm

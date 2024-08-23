@@ -39,4 +39,4 @@ In the next step, you will start optimizing the Sudoku solver by profiling and m
 ### See Also
 
 - [Sudoku solver application](https://github.com/JetBrains/DPA-demo) on GitHub
-- [Profiling Types in dotTrace](https://www.jetbrains.com/help/profiler/Profiling_Guidelines__Choosing_the_Right_Profiling_Mode.html)
+- [Profiling Types in dotTrace](https://www.jetbrains.com/help/profiler/Basic_Concepts.html)

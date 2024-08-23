@@ -9,7 +9,7 @@ subtitle: Speed up your Django list view with htmx and pagination.
 seealso:
   - title: (tip) Speed up your Django queries
     href: >-
-      https://www.jetbrains.com/python/tips/django-query-speed-up/
+      https://www.jetbrains.com/guide/python/tips/django-query-speed-up/
   - title: (documentation) Django support in PyCharm
     href: >-
       https://www.jetbrains.com/help/pycharm/django-support7.html

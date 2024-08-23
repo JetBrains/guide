@@ -8,8 +8,6 @@ author: er
 seealso:
   - title: WebStorm 2020.2 - release blog post
     href: "https://blog.jetbrains.com/webstorm/2020/07/webstorm-2020-2/#code_editing"
-  - title: Introducing the Learning Plugin for WebStorm
-    href: "https://blog.jetbrains.com/webstorm/2020/04/learning-plugin-for-webstorm/"
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm

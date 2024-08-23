@@ -8,8 +8,6 @@ author: er
 seealso:
   - title: Run applications in WebStorm
     href: "https://www.jetbrains.com/help/webstorm/running-applications.html"
-  - title: Introducing the Learning Plugin for WebStorm
-    href: "https://blog.jetbrains.com/webstorm/2020/04/learning-plugin-for-webstorm/"
 thumbnail: ./thumbnail.png
 animatedGif:
   file: ./tip.webm

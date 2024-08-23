@@ -11,8 +11,6 @@ seealso:
       https://blog.jetbrains.com/webstorm/2020/04/webstorm-2020-1/#more-flexible-run-configuration-sharing
   - title: Work With Run/Debug Configurations
     href: "https://www.jetbrains.com/help/webstorm/run-debug-configuration.html"
-  - title: Introducing the Learning Plugin for WebStorm
-    href: "https://blog.jetbrains.com/webstorm/2020/04/learning-plugin-for-webstorm/"
 thumbnail: ./thumbnail.png
 screenshot: ./tip.png
 ---

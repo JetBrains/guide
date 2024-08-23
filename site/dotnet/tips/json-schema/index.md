@@ -26,4 +26,4 @@ We wish you a happy JSON and YAML time! 🙇‍♀️🙇‍♂️
 ### See Also
 
 - [Work effectively with JSON using Rider](https://blog.jetbrains.com/dotnet/2019/07/22/work-effectively-json-using-rider/)
-- [Rider - JSON Schema web help](https://www.jetbrains.com/help/rider/Settings_Languages_JSON_Schema.html)
+- [Rider - JSON Schema web help](https://www.jetbrains.com/help/rider/JSON.html)
