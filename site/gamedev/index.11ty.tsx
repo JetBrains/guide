@@ -57,7 +57,7 @@ export default class GameDevHomepage {
 		const unrealTutorials = this.getResources({
 			resourceTypes: [TUTORIAL_RESOURCE],
 			channel: channel.url,
-			limit: 2,
+			limit: 4,
 			customFilter: (r) => r.topics?.includes("unreal") == true,
 			sorter: (a, b) => (a.date > b.date ? 1 : -1),
 		});
@@ -65,7 +65,7 @@ export default class GameDevHomepage {
 		const godotTutorials = this.getResources({
 			resourceTypes: [TUTORIAL_RESOURCE],
 			channel: channel.url,
-			limit: 2,
+			limit: 4,
 			customFilter: (r) => r.topics?.includes("godot") == true,
 			sorter: (a, b) => (a.date > b.date ? 1 : -1),
 		});
