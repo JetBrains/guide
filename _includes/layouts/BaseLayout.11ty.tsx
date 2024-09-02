@@ -8,6 +8,7 @@ import {
 	GoogleTagManagerHeadScript,
 } from "../googleTagManager.11ty";
 import Subnav from "../navbar/Subnav.11ty";
+import PromoBanner from "../navbar/PromoBanner.11ty";
 import { Channel } from "../resources/channel/ChannelModels";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
@@ -27,7 +28,7 @@ export type BaseLayoutProps = {
 
 export function BaseLayout(
 	this: LayoutContext,
-	data: BaseLayoutProps
+	data: BaseLayoutProps,
 ): JSX.Element {
 	const { children, title, subtitle, resourceType, collections } = data;
 
@@ -152,6 +153,7 @@ export function BaseLayout(
 					topics={hotTopics}
 				/>
 				{channel && <Subnav channel={channel} />}
+				{channel && <PromoBanner channel={channel} />}
 				{children}
 				<Footer copyright={copyright}></Footer>
 				{thumbnail && (
