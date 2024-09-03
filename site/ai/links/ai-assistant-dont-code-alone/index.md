@@ -6,6 +6,7 @@ topics:
 author: jetbrains
 subtitle: Let's look at using JetBrains AI Assistant in quasi-real-world development situations.
 thumbnail: ./thumbnail.jpg
+video: "https://youtu.be/UH-Csh0FaoI"
 linkURL: "https://youtu.be/UH-Csh0FaoI"
 ---
 
