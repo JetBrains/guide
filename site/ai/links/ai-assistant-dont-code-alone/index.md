@@ -4,7 +4,7 @@ title: "AI Assistant: Don’t Code Alone"
 topics:
   - ai
 author: jetbrains
-subtitle: During this session, we are going to use JetBrains AI Assistant in quasi-real-world development situations.
+subtitle: Let's look at using JetBrains AI Assistant in quasi-real-world development situations.
 thumbnail: ./thumbnail.jpg
 linkURL: "https://youtu.be/UH-Csh0FaoI"
 ---
