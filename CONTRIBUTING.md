@@ -4,11 +4,7 @@
 
 The JetBrains Guide is a collection of resources for learning JetBrains IDEs.
 
-## Contributing
-
-Want to create content? Awesome! We like content. Check out our [contributing guidelines](CONTRIBUTING.md).
-
-### Installation and Running the Guide
+## Installation and Running the Guide
 
 Here's what you need to get started:
 
@@ -24,8 +20,8 @@ Here's what you need to get started:
 - Connect the browser to `http://localhost:8080/`
 - Start authoring (content is located in [`site/`](site/)), and see reloads in the browser
 
-### Create a pull request
+## Create a pull request
 
 Changes ready? Great! Ideally, you have been working on a separate branch (from `main`), and you can send your changes as a pull request.
 
-Make sure to add some JetBrains folks like @paulweveritt @khalidabuhakmeh @maartenba as reviewers, so we can work on getting your content ready to go!
+Make sure to add some JetBrains folks like [pauleveritt](https://github.com/pauleveritt),[khalidabuhakmeh](https://github.com/khalidabuhakmeh/), [maartenba](https://github.com/maartenba/) and [helenjoscott](https://github.com/helenjoscott/) as reviewers, so we can work on getting your content ready to go!
