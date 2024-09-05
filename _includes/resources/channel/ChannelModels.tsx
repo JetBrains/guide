@@ -80,6 +80,8 @@ export class Channel
 
 export type ChannelHomepageData = {} & LayoutProps & ChannelFrontmatter;
 
-export const isChannel = (resource: Resource): resource is Channel => {
-	return resource.resourceType === CHANNEL_RESOURCE;
+export const isChannel = (
+	resource: Resource | undefined,
+): resource is Channel => {
+	return resource?.resourceType === CHANNEL_RESOURCE;
 };

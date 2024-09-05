@@ -58,6 +58,6 @@ export class Link
 	}
 }
 
-export const isLink = (resource: Resource): resource is Link => {
-	return resource.resourceType === LINK_RESOURCE;
+export const isLink = (resource: Resource | undefined): resource is Link => {
+	return resource?.resourceType === LINK_RESOURCE;
 };
