@@ -1,3 +1,5 @@
+import { Resource } from "./ResourceModels";
+
 export const TIP_RESOURCE = "tip";
 export type TIP_RESOURCE_TYPE = typeof TIP_RESOURCE;
 

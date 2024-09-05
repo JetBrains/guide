@@ -1,7 +1,10 @@
 import { Static, Type } from "@sinclair/typebox";
 import { Resource, ResourceFrontmatter } from "../../../src/ResourceModels";
 import { EleventyPage, LayoutProps } from "../../../src/models";
-import { CHANNEL_RESOURCE_TYPE } from "../../../src/resourceType";
+import {
+	CHANNEL_RESOURCE,
+	CHANNEL_RESOURCE_TYPE,
+} from "../../../src/resourceType";
 import { IconField } from "../commonModels";
 import path from "upath";
 
@@ -12,7 +15,7 @@ export const ChannelFrontmatter = Type.Intersect([
 		hero: Type.Optional(
 			Type.String({
 				description: "File name of the hero image",
-			})
+			}),
 		),
 	}),
 	Type.Object({
@@ -25,8 +28,8 @@ export const ChannelFrontmatter = Type.Intersect([
 					url: Type.String({
 						description: "URL to link to",
 					}),
-				})
-			)
+				}),
+			),
 		),
 	}),
 ]);
@@ -76,3 +79,7 @@ export class Channel
 // channel homepage views.
 
 export type ChannelHomepageData = {} & LayoutProps & ChannelFrontmatter;
+
+export const isChannel = (resource: Resource): resource is Channel => {
+	return resource.resourceType === CHANNEL_RESOURCE;
+};

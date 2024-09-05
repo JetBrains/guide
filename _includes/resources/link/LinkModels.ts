@@ -6,7 +6,7 @@ import {
 } from "../../../src/ResourceModels";
 import { EleventyPage } from "../../../src/models";
 import { VideoType } from "../common/VideoProp";
-import { LINK_RESOURCE_TYPE } from "../../../src/resourceType";
+import { LINK_RESOURCE, LINK_RESOURCE_TYPE } from "../../../src/resourceType";
 import { ThumbnailField } from "../commonModels";
 // @ts-ignore
 import { getContentType } from "../../../public/assets/js/utils";
@@ -19,7 +19,7 @@ export const LinkFrontmatter = Type.Intersect([
 		screenshot: Type.Optional(
 			Type.String({
 				description: "File name of a screenshot to show in this link",
-			})
+			}),
 		),
 		video: Type.Optional(VideoType),
 		linkURL: Type.String({
@@ -57,3 +57,7 @@ export class Link
 		return getContentType(this.resourceType, this.linkURL);
 	}
 }
+
+export const isLink = (resource: Resource): resource is Link => {
+	return resource.resourceType === LINK_RESOURCE;
+};

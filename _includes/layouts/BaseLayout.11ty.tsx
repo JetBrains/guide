@@ -9,10 +9,9 @@ import {
 } from "../googleTagManager.11ty";
 import Subnav from "../navbar/Subnav.11ty";
 import PromoBanner from "../navbar/PromoBanner.11ty";
-import { Channel } from "../resources/channel/ChannelModels";
+import { Channel, isChannel } from "../resources/channel/ChannelModels";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
-import { CHANNEL_RESOURCE, LINK_RESOURCE } from "../../src/resourceType";
-import { Link } from "../resources/link/LinkModels";
+import { isLink } from "../resources/link/LinkModels";
 
 export type BaseLayoutProps = {
 	title: string;
@@ -44,7 +43,9 @@ export function BaseLayout(
 	);
 
 	// determine if there's an og:image
-	let thumbnail, channel, linkURL;
+	let channel: Channel | undefined = undefined;
+	let thumbnail: string | undefined = undefined;
+	let linkURL: string | undefined = undefined;
 	if (resourceType) {
 		const resource = collections.resourceMap.get(data.page.url) as Resource;
 		const resourceThumbnail = resource?.getThumbnail();
@@ -57,8 +58,8 @@ export function BaseLayout(
 		) {
 			thumbnail = resourceThumbnail;
 		}
-		if (resourceType == CHANNEL_RESOURCE) {
-			channel = resource as Channel;
+		if (isChannel(resource)) {
+			channel = resource;
 		} else if (
 			resource &&
 			resource.references &&
@@ -68,8 +69,9 @@ export function BaseLayout(
 		} else if (data.channel) {
 			channel = collections.resourceMap.get(data.channel) as Channel;
 		}
-		if (resourceType == LINK_RESOURCE) {
-			let link = resource as Link;
+
+		if (isLink(resource)) {
+			let link = resource;
 			linkURL = link?.linkURL;
 		}
 	}
