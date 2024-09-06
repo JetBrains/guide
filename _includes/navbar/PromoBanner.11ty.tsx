@@ -7,7 +7,7 @@ const PromoBanner = ({ channel }: PromoBannerProps): JSX.Element => {
 	return (
 		<>
 			{channel.slug == "dotnet" && new Date() <= new Date(2024, 9, 26) && (
-				<section cinfo>
+				<section class="hero is-primary has-text-white">
 					<div class="container hero-body p-2 is-align-content-center level">
 						<div class="level-item mr-4">
 							Join us for a free 2-day community event &ndash; JetBrains .NET
@@ -43,7 +43,7 @@ const PromoBanner = ({ channel }: PromoBannerProps): JSX.Element => {
 				</section>
 			)}
 			{channel.slug == "gamedev" && new Date() <= new Date(2024, 10, 10) && (
-				<section class="hero is-info has-text-white">
+				<section class="hero is-primary has-text-white">
 					<div class="container hero-body p-2 is-align-content-center level">
 						<div class="level-item mr-4">
 							Join us for a free community event &ndash; JetBrains GameDev Days
