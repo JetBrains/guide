@@ -20,7 +20,7 @@ How many times does your work involve changing the signature of a given method? 
 
 Let’s start by changing its signature of a method name. We will add a new parameter here. The easiest approach is to do it inline. When you do this, PyCharm already gives you a yellow light bulb and a refactoring indication in the gutter. To access it use <kbd>⌥⇧⏎</kbd> (macOS) / <kbd>Shift+Alt+Enter</kbd> (Windows/Linux).
 
-<img src="update-usages.png" alt="Update Usages" width="600"/>
+<img src="update-usages.png" alt="Update Usages" />
 
 The first option is **Update usages to reflect signature change...**. When you click it, PyCharm will show you the previous and current method signature, and require a default value so it won’t break our program. At this point PyCharm is using its knowledge of your project acquired during indexing to add the default value to all your current method calls.
 
@@ -30,11 +30,11 @@ PyCharm will update all the usages in your project, so you don't have to go hunt
 
 Renaming is another common type of refactoring. You first write your code, get everything working, and then start making names more meaningful. This is when the rename refactoring comes in handy. As with signature changes, _rename_ can also be done in place.
 
-Let’s just go ahead and change this method name. We can also use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to invoke the context menu.
+Let’s just go ahead and change this method name from `say_state` to `print_state`. We can also use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to invoke the context menu and choose to update usages.
 
-<img src="rename.png" alt="Rename" width="600"/>
+<img src="rename.png" alt="Rename" />
 
-We'll use the first option which is **Update usages to reflect signature change…**. The change is reflected in the code that calls this function. PyCharm will also find usages in other code in your project. For example, we have another file that imports this function and calls it.
+The change is reflected in the code that calls this function. PyCharm will also find usages in other code in your project. For example, we have another file that imports this function and calls it.
 
 ## Extract Method
 
@@ -42,13 +42,13 @@ Inplace refactorings are great, but PyCharm can also help you with much more rob
 
 To extract a method you can either use <kbd>⌥⌘M</kbd> (macOS) / <kbd>Ctrl+Alt+M</kbd> (Windows/Linux), or the **Refactor This** menu which is <kbd>^T</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+T</kbd> (Windows/Linux). Let’s take this code fragment as an example. Let's select it, and invoke the ‘Refactor this’ men and choose **Extract Method**.
 
-<img src="refactor-this.png" alt="Refactor This" width="400"/>
+<img src="refactor-this.png" alt="Refactor This" />
 
 We can now give the new method a name and click **OK**. PyCharm will now create a function in the class with the name we gave and called it from the previous place.
 
-<img src="refactored.png" alt="refactored" width="400"/>
+<img src="refactored.png" alt="refactored" />
 
-Of course, your code will still run exactly as it did before!
+Of course, your code will still run exactly as it did before and we expect your examples to be somewhat more complicated!
 
 ## Conclusion
 

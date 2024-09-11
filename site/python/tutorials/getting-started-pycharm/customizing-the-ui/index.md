@@ -26,30 +26,26 @@ What if you want to quickly check what the other themes you’ve installed look 
 
 ## Layout
 
-What if you don’t want it to look like an IDE at all? Let’s see how to get a lean UI while keeping the IDE. For example, if you want to make your workspace less cluttered, you can use the same switcher <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux) then select **4 View Mode** and select **Zen mode**. This can can be very helpful whenever you need to remove distractions and focus on your code.
+What if you don’t want it to look like an IDE at all? Let’s see how to get a lean UI while keeping the IDE. For example, if you want to make your workspace less cluttered, you can use the same switcher <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux) then select **5 View Mode** and select **Zen mode**. This can can be very helpful whenever you need to remove distractions and focus on your code.
 
-You can also reposition tool windows and put them where you want them including having them floating on top of the editor or detached completely so that you can view it independently on a different monitor. If you don't like it you can always re-dock it. Another thing you can do to reduce clutter is to hide some UI elements. First, you can customize the Status Bar by right-clicking it and removing any widgets you’re not using.
-
-<img src="status-bar.png" alt="Remove status bar widgets" width="700"/>
-
-If you click the quick access button located on the bottom-right of the status bar to remove tool individual tool windows, or better still you can use the shortcuts to toggle them on and off. The most common ones are:
+You can also reposition tool windows and put them where you want them including having them floating on top of the editor or detached completely so that you can view it independently on a different monitor. If you don't like it you can always re-dock it. You can also hide and show some tool windows with keyboard shortcuts. The most common ones are:
 
 Project tool window <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux)
 Run tool window <kbd>⌘4</kbd> (macOS) / <kbd>Alt+4</kbd> (Windows/Linux)
 Services tool window <kbd>⌘8</kbd> (macOS) / <kbd>Alt+8</kbd> (Windows/Linux)
-Git tool window <kbd>⌘9</kbd> (macOS) / <kbd>Alt+9</kbd> (Windows/Linux)
+VCS (usually Git) tool window <kbd>⌘9</kbd> (macOS) / <kbd>Alt+9</kbd> (Windows/Linux)
 
 The fastest way to toggle the visibility of UI elements is the Find Action <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux). For example, if you're not going to use breadcrumbs, and you don’t want to see them, you can use Find Action, search for “breadcrumbs,” and then turn them off from there.
 
 ## Keymap
 
-You can modify your keymap in your Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) then search for "keyboard". Here you can choose the keymap you want to use, reassign existing shortcuts, and create custom shortcuts for the actions that don’t have anything associated with them.
+You can modify your keymap in your Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) then search for "keyboard". Here you can choose the keymap you want to use, reassign existing shortcuts, and create custom shortcuts for the actions that don’t have anything associated with them.
 
-Let’s say you want to know what shortcut is assigned to the _Event Log_ action, which is under Tool Windows. This action doesn't have a key binding by default, but you can add one.
+Let’s say you want to know what shortcut is assigned to the _Python Packages_ action, which is under Tool Windows. This action doesn't have a key binding by default, but you can add one. Right-click on the action and choose **Add Keyboard Shortcut**.
 
-<img src="keymap.png" alt="keymap" width="700"/>
+Enter the keys you want to associate with the action and then when you use those keys it will invoke the action, in this case our Python Packages tool window.
 
-Enter the keys you want to associate with the action and then when you use those keys it will invoke the action, in this case our Event Log.
+<img src="keymap.png" alt="keymap" />
 
 If you don't know a shortcut, you can also find out what it is in the keymap settings by typing in part of the name into the action name. You'll see a listing of actions and the keybindings currently in use.
 
@@ -57,13 +53,13 @@ Of course, you can also change your entire keymap and install plugins for custom
 
 ## Other Customizations
 
-Apart from theming and keymaps, there are lots of other things you may want to customize. If you don’t know where to find a specific setting, you can use Find Actions <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) to find it. For example, perhaps we want to change the default font.
+Apart from themes and keymaps, there are lots of other things you may want to customize. If you don’t know where to find a specific setting, you can use Find Actions <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) to find it. For example, perhaps we want to change the default font.
 
 You can also change things like your code style by searching for "python", then go to the Python section and make your changes there. For example, you can change the _Hard wrapping_ setting to wrap lines at 79 characters to follow the PEP-8 convention.
 
-<img src="hard-wrap-line.png" alt="Hard wrap line" width="700"/>
+<img src="hard-wrap-line.png" alt="Hard wrap line" />
 
-The Settings/Preferences window has many options that let you make the IDE look however you want.
+The Settings window has many options that let you make the IDE look however you want.
 
 ## Conclusion
 

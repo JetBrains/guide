@@ -16,11 +16,11 @@ In the previous step, we saw how PyCharm makes it easy to work with your project
 
 First off, let’s talk about context-aware code completion, where the IDE uses all kinds of smarts to help you finish your typing. Live Templates are one such example. The keyboard shortcut is <kbd>⌘J</kbd> (macOS) / <kbd>Ctrl+J</kbd> (Windows/Linux) but PyCharm will invoke them by default when you start typing some code that matches a Live Template. You can find a list of Live Templates in your Preferences/Settings <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and you can also [add your own](https://www.jetbrains.com/help/pycharm/creating-and-editing-live-templates.html).
 
-<img src="live_templates.png" alt="Live Templates" width="700"/>
+<img src="live_templates.png" alt="Live Templates" />
 
-PyCharm also offers you basic and type-based smart completion. For example, if we start typing something, PyCharm prompts with options to complete your code, so you won’t need to type the full line. For example, if you have this code in the above class and type in `C`, PyCharm will offer you `Car`.
+PyCharm also offers you basic and type-based smart completion. For example, if we start typing something, PyCharm prompts with options to complete your code, so you won’t need to type the full line. For example, in our code, if you type in `C`, PyCharm will offer you `Car`.
 
-<img src="basic-completion.png" alt="Basic Code Completion" width="700"/>
+<img src="basic-completion.png" alt="Basic Code Completion" />
 
 If it’s the correct completion, as it is in this case, we can press _Enter_, and PyCharm will complete the line for you. If the correct completion is in the list, but not selected, you can use the arrows in your keyboard to go up and down to select it and then press **Enter**. And finally, if the correct completion is not in the list yes, you can keep typing until PyCharm figures it out for you.
 
@@ -28,9 +28,9 @@ Code completion is not only available for classes, but also for methods. We crea
 
 Here's a cool tip - while <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) adds the suggested completion, you can also press **tab** to switch an existing one for the new one, saving you time.
 
-Code completion is also available for keywords. Let’s say you want to import a package. If you start typing `i` at the top of your file, PyCharm will immediately offer `import` as a possible completion.
+Code completion is also available for keywords. Let’s say you want to import a package. If you start typing `im` at the top of your file, PyCharm will immediately offer `import` as a possible completion.
 
-<img src="import-basic-completion.png" alt="Import Basic Code Completion" width="700"/>
+<img src="import-basic-completion.png" alt="Import Basic Code Completion" />
 
 The cool thing about code completion is that you can also use it in many other places, including method parameters, Dictionaries, Django templates, inside f-strings, and much more. Check out [the PyCharm documentation](https://www.jetbrains.com/help/pycharm/auto-completing-code.html) for more details.
 
@@ -42,7 +42,7 @@ So next time you hear your laptop fans right after you open a new project, have 
 
 ## Syntax Highlighting
 
-Another productivity booster that you might take for granted is syntax highlighting. In this scre=ipt, PyCharm automatically detects keywords such as `def`, `for`, `while`, as well as class names, parameters, etc., and renders them in different colors.
+Another productivity booster that you might take for granted is syntax highlighting. In this script, PyCharm automatically detects keywords such as `def`, `for`, `while`, as well as class names, parameters, etc., and renders them in different colors.
 
 <img src="editor-colours.png" alt="Colours in the editor" width="700"/>
 
@@ -58,7 +58,7 @@ PyCharm will offer to **Replace boolean expression with sudden**. Intention acti
 
 Let’s say you want to invert this `if` condition. If you position my caret here (show) PyCharm offers to handle it for you.
 
-<img src="invert-if-condition.png" alt="Invert if condition" width="700"/>
+<img src="invert-if-condition.png" alt="Invert if condition" />
 
 I can also undo this to go back to the way the code was if I want to.
 
@@ -68,7 +68,7 @@ We can see one example of a quick fix if we try to use a package without install
 
 We’ve written the method mentioning the package `requests` but haven’t installed it yet. Let’s see what PyCharm offers us, using (**⌥⏎** | **Alt+Enter**) this time.
 
-<img src="error-intentions.png" alt="Error intentions" width="700"/>
+<img src="error-intentions.png" alt="Error intentions" />
 
 `Install and import package requests` sounds like what we need, so this is what we'll select it. As you see, PyCharm not only installed the package inside my virtual environment, but it also auto-imported it to my script! The red squiggly and the light bulb are gone, and the code should run smoothly now.
 
@@ -83,11 +83,11 @@ When PyCharm finds warnings or errors, besides light bulbs and squiggly lines, i
 
 If you don't want to scroll down your entire file searching for problems, though, the second quick way to spot problems is by checking the Problems widget.
 
-<img src="problems-widget.png" alt="Problems Widget" width="700"/>
+<img src="problems-widget.png" alt="Problems Widget" />
 
 It summarizes errors and warnings and lets you quickly navigate to the Problems Tool window <kbd>⌘6</kbd> (macOS) / <kbd>Alt+6</kbd> (Windows/Linux) to have a better description of what is going on. Here we can see the error and quickly navigate to the line where it happens. We can also look across our entire project.
 
-<img src="problems-tool-window.png" alt="Problems Tool Window" width="700"/>
+<img src="problems-tool-window.png" alt="Problems Tool Window" />
 
 Let’s fix this error and use the [code reformat action](https://www.jetbrains.com/help/pycharm/reformat-and-rearrange-code.html#reformat_file) <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux) to put everything in the right place. Now the errors and warnings are gone, and the file is formatted following PEP-8 conventions.
 

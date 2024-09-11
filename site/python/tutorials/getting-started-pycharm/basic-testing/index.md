@@ -26,13 +26,13 @@ If you want to read up on this area then you can find more details in [our docum
 
 Let’s get PyCharm to create our test class, our test directory and then set up our interface so we can see both the code that we’re testing and the tests we’re going to write.
 
-We can create our test file and get PyCharm to create our Test Source Root at the same time by right-clicking and then selecting new file and naming it `test/test_car`.
+We can create our test file and get PyCharm to create our Test Source Root at the same time by invoking Go To Test <kbd>⌘⇧T</kbd> (macOS) / <kbd>Ctrl+Shift+T</kbd> (Windows/Linux) and selecting Create New Test which we will call `test/test_car`.
 
 ![test-file-creation.png](test-file-creation.png)
 
 You can also tell PyCharm that this new folder is the root for all your tests in this project by right-clicking on the newly created `test` folder and selecting **Mark Directory as | Test Sources Root**.
 
-PyCharm will generate the empty test file for us, but let’s open it in the right split so we can see both our class and our test. You can do that by selecting the file and then using <kbd>⇧⏎</kbd> (macOS) / <kbd>Shift+Enter</kbd> (Windows/Linux).
+PyCharm will generate the test file for us with a test in, but let’s open it in the right split so we can see both our class and our test. You can do that by selecting the file and then using <kbd>⇧⏎</kbd> (macOS) / <kbd>Shift+Enter</kbd> (Windows/Linux).
 
 ![split-screen.png](split-screen.png)
 
@@ -40,7 +40,7 @@ We’re not going to focus on writing the tests here so let’s move to the next
 
 ## Running Tests
 
-To run the entire file you can right-click and select `Run pytest in test_car...`
+To run the entire file you can right-click and select `Run Python tests...`
 
 ![right-click-run-tests.png](right-click-run-tests.png)
 
@@ -50,7 +50,11 @@ You can also select the current file from the run configurations dropdown.
 
 Of course, you can also access all your Run Configurations with <kbd>⌥⌘R</kbd> (macOS) / <kbd>F9</kbd> (Windows/Linux) and then select the one that you want.
 
-Your Run tool window will open indicating how many tests have passed or failed. In our case, all tests are passing.
+Your Run tool window will open indicating how many tests have passed or failed. In our case, all tests are failing which is by design.
+
+![all-tests-failing.png](all-tests-failing.png)
+
+We can change our test to pass:
 
 ![all-tests-passing.png](all-tests-passing.png)
 
@@ -64,7 +68,7 @@ Of course, you can also run your tests with the debugger in all the same ways.
 
 ## Testing Tool Window
 
-Passing tests are great, but let's see what the Testing tool window looks like when some tests aren't passing. Let's change some assert statements to see how that impacts our tests. When we run our code again we have failing tests!
+Passing tests are great, but let's see what the Testing tool window looks like when some tests aren't passing. Let's change some assert statement back to assert false so our tests fail:
 
 ![run-failing-tests.png](run-failing-tests.png)
 
@@ -97,8 +101,6 @@ If Coverage hasn't been installed for this project, PyCharm will notify you with
 You can click the file name to open the file you can also see which lines are covered by checking the colouring in the gutter.
 
 A green bar in the gutter means that this line was covered while red means it was not.
-
-![red-green-coverage.png](red-green-coverage.png)
 
 You can also run individual tests with coverage from the gutter icons and access the functionality from the right-click context menu.
 

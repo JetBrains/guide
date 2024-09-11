@@ -14,15 +14,15 @@ In the previous step, we set up a Python interpreter for our project. But someti
 
 ## Package Tool Window
 
-In 2021, PyCharm added a new _Packages_ tool window to help you see which Python packages are in your interpreter, as well as manage them. You can use this to see what packages PyCharm has installed, for example some will be installed if you select Flask as your project type such as the _Jinja2_ and _Flask_ packages.
+PyCharm has a _Packages_ tool window to help you see which Python packages are in your interpreter, as well as manage them. You can use this to see what packages PyCharm has installed, for example some will be installed if you select Flask as your project type such as the _Jinja2_ and _Flask_ packages.
 
-<img src="python-packages.png" alt="Python Packages" width="400"/>
+<img src="python-packages.png" alt="Python Packages" />
 
 It’s important to mention that these packages belong to the current virtual environment that PyCharm also created for this project.
 
-In this case, a virtual environment in this project directory, based on Python 3.10. You can see this information by clicking on the Status Bar.
+In this case, a virtual environment in this project directory, based on Python 3.12. You can see this information by clicking on the Status Bar.
 
-<img src="python-package-status-bar.png" alt="View Python packages on the Status Bar" width="200"/>
+<img src="python-package-status-bar.png" alt="View Python packages on the Status Bar" />
 
 ## Add PyPI Package
 
@@ -32,7 +32,7 @@ If you click the package name, the PyPi documentation for this package is shown 
 
 To install the package, you can click **Install** which will use the latest stable version of the package. You don't need to install it using the command line. You can also select a specific version to install if you need to.
 
-<img src="requests-package.png" alt="Requests package" width="800"/>
+<img src="requests-package.png" alt="Requests package" />
 
 If you now check your list of installed packages, _requests_ is there, ready to be imported and used in our scripts. You might also want to delete a package. In this case, you need to click the three dots and then select **Delete package**.
 
@@ -47,7 +47,7 @@ We've covered how to install packages from PyPi, but you might also want to inst
 - Add packages from your local disk
   - You can provide the local path to your package directory or an archive.
 
-<img src="add-repository-packages.png" alt="Add repository packages" width="500"/>
+<img src="add-repository-packages.png" alt="Add repository packages" />
 
 In both cases, you can select the **-e** checkbox to install the package in _editable_ mode.
 

@@ -50,21 +50,13 @@ Next time you think you need to type out some constructs, go ahead and see what 
 
 ## Surround With
 
-Our next stop on this tour is _Surround With_. Consider this Python code for the question variable.
+Our next stop on this tour is _Surround With_ which you can invoke with <kbd>⌥⌘T</kbd> (macOS) / <kbd>Ctrl+Alt+T</kbd> (Windows/Linux).
 
 ![surround-with.png](surround-with.png)
 
-We can use _Surround With_ and then select `try/finally` and PyCharm will fill in the code construct for us.
+Consider this Python code for the question variable. We can use _Surround With_ and then select `try/finally` and PyCharm will fill in the code construct for us.
 
 ![after-try-finally .png](after-try-finally.png)
-
-How about this HTML code here.
-
-![dango-template.png](dango-template.png)
-
-We can use _Surround With_ the same functionality again to wrap `question.question_text` in a Django template.
-
-![after-django-template.png](after-django-template.png)
 
 Let’s say you want to hide this code so you can focus on a smaller subset of the file.
 

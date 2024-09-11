@@ -28,7 +28,7 @@ Now, back to where we left off on the Welcome Screen and the “Projects” tab.
 
 There are three available options on this screen.
 
-<img src="welcome.png" alt="Welcome Screen" width="700"/>
+<img src="welcome-screen.png" alt="Welcome Screen" width="700"/>
 
 First, you can get an existing project from version control like GitHub, for example. You could then paste a repository URL in and click **Clone**.
 
