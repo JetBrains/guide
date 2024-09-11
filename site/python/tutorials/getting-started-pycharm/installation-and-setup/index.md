@@ -26,7 +26,7 @@ On the first launch of PyCharm Professional, you’ll be asked to log into your 
 
 When you open PyCharm for the first time, you are presented with the Welcome Screen.
 
-<img src="welcome-screen.png" alt="Welcome Screen" width="700"/>
+<img src="../your-first-project/welcome-screen.png" alt="Welcome Screen" />
 
 From PyCharm's Welcome Screen, there are four main sections you can explore.
 

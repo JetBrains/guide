@@ -13,7 +13,6 @@ tutorialItems:
   - ./understanding-the-ui/
   - ./customizing-the-ui/
   - ./configuring-local-python-interpreter/
-  - ./configuring-remote-python-interpreter/
   - ./installing-and-managing-python-packages/
   - ./basic-code-assistance/
   - ./run-python-using-a-run-configuration/

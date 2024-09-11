@@ -27,9 +27,9 @@ When you create a new project, you need to choose between creating a new interpr
 
 The first thing you will need to define is what kind of Python packaging manager you want to use. PyCharm comes with support for virtualenv, Pipenv, Conda and Poetry out of the box. Let's use virtualenv. PyCharm will automatically identify the location where the `venv` folder will be created.
 
-<img src="virtualenv_interpreter.png" alt="virtualenv_interpreter" width="700"/>
+<img src="virtualenv_interpreter.png" alt="virtualenv_interpreter" />
 
-This new interpreter will be based on an existing one. In my case, this is Python 3.10. You can also choose another base interpreter from the list, or click the three dots to find another Python executable in your file system.
+This new interpreter will be based on an existing one. In my case, this is Python 3.12. You can also choose another base interpreter from the list, or click the three dots to find another Python executable in your file system.
 
 **Secondly** You can also create a virtualenv using Pipenv. Getting Pipenv [installed on your system is an extra step](https://pipenv.pypa.io/en/latest/#install-pipenv-today). Once setup and visible to PyCharm, you can select it from the drop-down.
 
@@ -41,19 +41,19 @@ We just saw making a new interpreter and the various Python _standards_ for doin
 
 That’s how you create a new virtual environment in PyCharm when setting up a new project, but we can also select an existing Python project, that we haven’t yet opened as a PyCharm project.
 
-From the New Project screen, click **Previously configured interpreter**. If you already have interpreters previously configured you can just pick the one you would like to use from this dropdown. If you see a no interpreter message here you can click the three dots.
+From the New Project screen, click **Custom Environment** and then choose **Select existing**. If you already have interpreters previously configured you can just pick the one you would like to use from this dropdown.
 
-<img src="existing-interpreter.png" alt="Existing Interpreter" width="700"/>
+<img src="existing-interpreter.png" alt="Existing Interpreter" />
 
-Then, select it from the different options, including virtualenv environments, conda environments, pipenv interpreters, or even your system interpreter.
+Alternatively, you can click **Generate new** and then, select from the different options, including Virtualenv, Conda, Pipenv, or Poetry.
 
 ## Clone project
 
-The second place you can configure your interpreter is when you clone a project from VCS. In the PyCharm Getting Started screen, you can click **Get from VCS** button.
+The second place you can configure your interpreter is when you clone a project from VCS. In the PyCharm Getting Started screen, you can click **Get from VCS**.
 
 We can paste the repository URL in and accept the generated choice for the directory to clone into, and click **Clone**.
 
-<img src="clone-project.png" alt="Clone project" width="600"/>
+<img src="clone-project.png" alt="Clone project" />
 
 PyCharm opens a new project in that directory and starts cloning the repository. Once the clone has finished, PyCharm makes a project interpreter, based on your default Python, and starts installing the packages in your `requirements` file.
 

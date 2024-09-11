@@ -16,19 +16,28 @@ In this step, we are going to talk about Run Configurations and how PyCharm help
 
 ## Temporary Run Configurations
 
-First off, let’s talk about temporary Run Configurations. If you haven't run your pure Python script yet, PyCharm will give you a drop-down that says **Add Configuration**. This means that PyCharm doesn’t know how to run this script yet.
+First off, let’s talk about temporary Run Configurations. If you haven't run your pure Python script yet, you can just click the green run arrow in the top menu bar:
 
-To run your script, you can right-click anywhere inside the editor and click **Run script name**. PyCharm will create a Run Configuration, run the script, and display the output inside the Run tool window. The Run tool window is useful to see your output, as well as more comprehensive error messages if the Python interpreter finds an error in your program.
+![Run script from Run widget](run-script.png)
 
-The temporary Run Configuration created by PyCharm is now available in the top bar and can now be reused every time you want to run this script again with the **Play** button.
+If PyCharm can figure out what you want to run, it will execute the Python but you won't get a temporary run configuration created. The same is true if you right-click anywhere inside the editor and click **Run script name**. PyCharm will run the script, and display the output inside the _Run_ tool window. The _Run_ tool window is useful to see your output, as well as more comprehensive error messages if the Python interpreter finds an error in your program.
 
-<img src="run-configuration.png" alt="Run Configuration" width="700"/>
+Alternatively If you scroll down to the end of the file, you can see that we have an `if __name__ == '__main__'` block, specifically:
 
-Alternatively If you scroll down, you can see that we have an `if __name__ == '__main__'` block, and it has a _play_ icon in the gutter. This is another shortcut to create a temporary Run Configuration. When you click it, a context menu shows up, and the first option says **Run &lt; name of your script &gt;**.
+```
+if __name__ == '__main__':
+    my_car = Car()
+    print ("I'm a car!")
+    my_car.say_state()
+```
 
-<img src="main-block-run.png" alt="keymap" width="400"/>
+and it has a _play_ icon in the gutter. This is a shortcut to create a temporary Run Configuration. When you click it, a context menu shows up, and the first option says **Run &lt; name of your script &gt;**.
+
+<img src="main-block-run.png" alt="keymap" />
 
 Using the **Play** button will also create a temporary Run Configuration as well as displaying the output inside the Run tool window.
+
+<img src="run-configuration.png" alt="Run Configuration" />
 
 ## Configurations From Project Templates
 
@@ -36,11 +45,11 @@ Let’s look at explicitly creating a Run Configuration. The previous scenario a
 
 In an empty Django project, you can see that the Run Configurations button already shows the project name and a _Django_ logo. This is because PyCharm professional has already created a basic Run Configuration, special for Django.
 
-<img src="django-run-configuration.png" alt="Django Run Configuration" width="400"/>
+<img src="django-run-configuration.png" alt="Django Run Configuration" />
 
 When you click the **play** button, PyCharm launches the Django project, including a web server, so you can click the link in the Run tool window and see your Django project.
 
-<img src="django-project-run-tool-window.png" alt="Django Run Tool Window" width="500"/>
+<img src="django-run-output.png" alt="Django Run Output" />
 
 PyCharm Professional also creates configurations for your Flask projects, FastAPI projects, and projects based on other frameworks.
 
@@ -50,11 +59,11 @@ Many times in your development workflow you will need to configure different sta
 
 The easiest way to do it is by transforming a temporary Run Configuration into a permanent one by clicking the drop-down menu and selecting **Save project name Configuration**.
 
-<img src="save-main-configuration.png" alt="Save project configuration" width="400"/>
+<img src="save-main-configuration.png" alt="Save project configuration" />
 
 You can also use pre-configured templates to create your Run Configurations by opening the **Edit configurations** dialog and clicking on the **plus** button. You can then choose the target you are creating Run Configurations for. You can then choose the Run Configuration targets.
 
-<img src="edit-configurations.png" alt="Editing Run Configurations" width="700"/>
+<img src="edit-configurations.png" alt="Editing Run Configurations" />
 
 ## Conclusion
 
