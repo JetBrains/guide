@@ -22,20 +22,20 @@ include:
 exclude:
   - name: All
     paths:
-      - site/javascript/demos/tutorials
-      - site/javascript/tutorials/react_typescript_tdd/chrome_debugging/demos
-      - site/javascript/tutorials/react_typescript_tdd/class_props/demos
-      - site/javascript/tutorials/react_typescript_tdd/class_state/demos
-      - site/javascript/tutorials/react_typescript_tdd/nodejs_debugging/demos
-      - site/javascript/tutorials/react_typescript_tdd/presentation_components/demos
-      - site/javascript/tutorials/react_typescript_tdd/project_cleanup/demos
-      - site/javascript/tutorials/react_typescript_tdd/project_setup/demos
-      - site/javascript/tutorials/react_typescript_tdd/rich_events_and_testing/demos
-      - site/javascript/tutorials/react_typescript_tdd/testing/demos
-      - site/javascript/tutorials/react_typescript_tdd/tsx_es6/demos
-      - site/javascript/tutorials/eleventy-tsx/layouts/demos
-      - site/javascript/tutorials/eleventy-tsx/props/demos
-      - site/javascript/tutorials/eleventy-tsx/views/demos
+      - site/javascript/demos/tutorials/**/*
+      - site/javascript/tutorials/react_typescript_tdd/chrome_debugging/demos/**/*
+      - site/javascript/tutorials/react_typescript_tdd/class_props/demos/**/*
+      - site/javascript/tutorials/react_typescript_tdd/class_state/demos/**/*
+      - site/javascript/tutorials/react_typescript_tdd/nodejs_debugging/demos/**/*
+      - site/javascript/tutorials/react_typescript_tdd/presentation_components/demos/**/*
+      - site/javascript/tutorials/react_typescript_tdd/project_cleanup/demos/**/*
+      - site/javascript/tutorials/react_typescript_tdd/project_setup/demos/**/*
+      - site/javascript/tutorials/react_typescript_tdd/rich_events_and_testing/demos/**/*
+      - site/javascript/tutorials/react_typescript_tdd/testing/demos/**/*
+      - site/javascript/tutorials/react_typescript_tdd/tsx_es6/demos/**/*
+      - site/javascript/tutorials/eleventy-tsx/layouts/demos/**/*
+      - site/javascript/tutorials/eleventy-tsx/props/demos/**/*
+      - site/javascript/tutorials/eleventy-tsx/views/demos/**/*
   - name: HttpUrlsUsage
     paths:
       - _includes
@@ -47,7 +47,7 @@ exclude:
       - site/python/tutorials/fastapi-aws-kubernetes
   - name: QodanaSanity
     paths:
-      - deployment/helm/guide-charts
+      - deployment/helm/**/*
   - name: GrazieInspection
     paths:
       - "**/*.js"

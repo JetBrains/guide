@@ -71,8 +71,7 @@ export function BaseLayout(
 		}
 
 		if (isLink(resource)) {
-			let link = resource;
-			linkURL = link?.linkURL;
+			linkURL = resource?.linkURL;
 		}
 	}
 
