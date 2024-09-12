@@ -1,6 +1,6 @@
 ---
 title: Trisha Gee
-subtitle: Lead Java Advocate
+subtitle: Java Champion
 thumbnail: ./tg.jpg
 author: tg
 guest: true
