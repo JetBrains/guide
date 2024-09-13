@@ -1,5 +1,7 @@
 ## Generic
 
+<kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) Enter
+<kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux) Invoke New
 <kbd>⌘\</kbd> (macOS) / <kbd>Ctrl+\</kbd> (Windows/Linux)                       - Generate Code
 <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Ins</kbd> (Windows/Linux)                      - Generate New
 <kbd>⌘⌥⏎</kbd> (macOS) / <kbd>Ctrl+Alt+Enter</kbd> (Windows/Linux)              - Start New Line Before Current
