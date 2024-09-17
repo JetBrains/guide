@@ -67,7 +67,7 @@ export default class GameDevHomepage {
 			channel: channel.url,
 			limit: 4,
 			customFilter: (r) => r.topics?.includes("godot") == true,
-			sorter: (a, b) => (a.date > b.date ? 1 : -1),
+			sorter: (a, b) => (a.date < b.date ? 1 : -1),
 		});
 
 		const tips = this.getResources({
