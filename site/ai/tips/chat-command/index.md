@@ -13,9 +13,6 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/-chxj5MfaWI"
 ---
 
-Use AI Assistant to complete code for you. While working on your code, press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) to start a new line and wait a few seconds to get a suggestion. The suggested code will be shown in grey. Use <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (VS Windows/Linux) to accept the suggestion.
-To accept part of the suggestions, use <kbd>⌘→</kbd> (macOS) / <kbd>End</kbd> (Windows/Linux) to accept the current line, or <kbd>⌥→</kbd> (macOS) / <kbd>Ctrl+Right Arrow</kbd> (Windows/Linux) to accept the next word.
+Use predefined commands in the AI Assistant chat window. Type `/` to see which commands are available. If needed, use the arrow keys to select the command you want to use. Press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) to select the command.
 
-If you'd like to reject the suggestions, use <kbd>␛</kbd> (macOS) / <kbd>Escape</kbd> (Windows/Linux) or continue to write your own code.
-
-To explicitly get code completion from AI Assistant, use <kbd>⌥\\</kbd> (macOS) / <kbd>Alt+\\</kbd> (Windows/Linux).
+For example, if you have code selected, `/explain` will explain the selected code.
