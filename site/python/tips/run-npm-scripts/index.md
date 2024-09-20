@@ -1,5 +1,5 @@
 ---
-date: 2019-04-17
+date: 2024-10-20
 title: Run npm Scripts from package.json
 topics:
   - javascript
@@ -11,7 +11,7 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/pycharm/installing-and-removing-external-software-using-node-package-manager.html#ws_npm_run_debug_scripts_from_npm_tool_window
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/Nv5vO2loJ_c"
+video: ./tip.webm
 ---
 
 Modern web development means Node.js tools which mean a `package.json` file. This file sometimes has helper scripts under the `scripts` key. Running these perform various project operations such as `build`.
@@ -22,7 +22,7 @@ PyCharm Professional makes it easy to browse and run these. There are several di
 
 - Click the `npm` tool window on left
 
-- Cmd-E npm
+- Invoke Recent Files with <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) and type _npm_
 
 _Note: If you leave the tool window open, resize it to take less vertical space._
 
