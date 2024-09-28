@@ -86,7 +86,7 @@
 <kbd>F7</kbd> (macOS) / <kbd>F7</kbd> (Windows/Linux)                           - Step into
 <kbd>⌥⌘R</kbd> (macOS) / <kbd>F9</kbd> (Windows/Linux)                          - Resume Program
 <kbd>⌃⇧P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux)                - Show Type Parameter Information
-<kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux)                     - Show Quick Switch Schema
+<kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux)                     - Show Quick Switch Scheme
 <kbd>⌥⌘T</kbd> (macOS) / <kbd>Ctrl+Alt+T</kbd> (Windows/Linux)                  - Surround With
 <kbd>⌥⌘-</kbd> (macOS) / <kbd>Ctrl+Alt+-</kbd> (Windows/Linux)                  - Folding Collapse Recursively 
 <kbd>⌥⌘+</kbd> (macOS) / <kbd>Ctrl+Alt++</kbd> (Windows/Linux)                  - Folding Expand Recursively
