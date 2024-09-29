@@ -36,6 +36,7 @@
 <kbd>^G</kbd> (macOS) / <kbd>Alt+J</kbd> (Windows/Linux)                        - Add Selection for Next Occurrence
 <kbd>⌘J</kbd> (macOS) / <kbd>Ctrl+J</kbd> (Windows/Linux)                       - Insert Live Template
 <kbd>⌘⌥J</kbd> (macOS) / <kbd>Ctrl+Alt+J</kbd> (Windows/Linux)                  - Surround With Live Template
+<kbd>⌥⌘T</kbd> (macOS) / <kbd>Ctrl+Alt+T</kbd> (Windows/Linux)                  - Surround With
 <kbd>⌘⌃G</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+J</kbd> (Windows/Linux)            - Select All Occurrences
 <kbd>^⇧G</kbd> (macOS) / <kbd>Alt+Shift+J</kbd> (Windows/Linux)                 - Unselect Occurrence
 <kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux)                - Find in Files
