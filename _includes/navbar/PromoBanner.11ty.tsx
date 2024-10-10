@@ -4,7 +4,7 @@ export type PromoBannerProps = {
 	channel: Channel;
 };
 const PromoBanner = ({ channel }: PromoBannerProps): JSX.Element => {
-	if (channel.slug == "dotnet" && new Date() <= new Date(2024, 9, 26)) {
+	if (channel.slug == "dotnet" && new Date() <= new Date(2024, 8, 26)) {
 		return (
 			<section class="hero is-primary has-text-white">
 				<div class="container hero-body p-2 is-align-content-center level">
@@ -25,7 +25,7 @@ const PromoBanner = ({ channel }: PromoBannerProps): JSX.Element => {
 		);
 	} else if (
 		channel.slug == "javascript" &&
-		new Date() <= new Date(2024, 10, 24)
+		new Date() <= new Date(2024, 9, 24)
 	) {
 		return (
 			<section class="hero is-primary has-text-white">
@@ -45,10 +45,7 @@ const PromoBanner = ({ channel }: PromoBannerProps): JSX.Element => {
 				</div>
 			</section>
 		);
-	} else if (
-		channel.slug == "gamedev" &&
-		new Date() <= new Date(2024, 10, 10)
-	) {
+	} else if (channel.slug == "gamedev" && new Date() <= new Date(2024, 9, 11)) {
 		return (
 			<section class="hero is-primary has-text-white">
 				<div class="container hero-body p-2 is-align-content-center level">
