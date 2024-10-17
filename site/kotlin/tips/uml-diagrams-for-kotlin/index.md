@@ -2,7 +2,6 @@
 date: 2021-05-11
 title: Generate UML Diagrams for your Kotlin code
 topics:
-  - java
   - kotlin
 author: tg
 subtitle: >-

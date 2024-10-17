@@ -25,15 +25,17 @@ export default class IndexPage {
 			this.getResource("/javascript/"),
 			this.getResource("/python/"),
 			this.getResource("/java/"),
-			this.getResource("/go/"),
+			//this.getResource("/go/"),
 			this.getResource("/dotnet/"),
+			this.getResource("/kotlin/"),
 		];
 		const solutions = [
 			this.getResource("/gamedev/"),
 			this.getResource("/ai/"),
 			//this.getResource("/remote/"),
 			this.getResource("/databases/"),
-			this.getResource("/django/"),
+			//this.getResource("/django/"),
+			this.getResource("/kotlin/"),
 		];
 		const hotTopics = [
 			this.getResource("/tags/aws/"),
