@@ -6,7 +6,6 @@ topics: []
 author: hs
 subtitle: How the Git Tool Window can help you.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/aBVOAnygcZw?start=121"
 ---
 
 One of the most useful tools when you're working with a Git project is the _Git_ tool window. This gives you visibility over the version control status of your project. One way to open the Git tool window is to hover over the quick access button in the bottom left of the IntelliJ IDEA window, and select **Git**. This will open the Git Log tool window. Alternatively, you can use <kbd>⌘9</kbd> (macOS) / <kbd>Alt+9</kbd> (Windows/Linux), to open the Git Log tool window.

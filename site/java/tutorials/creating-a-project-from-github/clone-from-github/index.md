@@ -6,7 +6,6 @@ topics: []
 author: hs
 subtitle: Cloning your project from GitHub.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/aBVOAnygcZw?start=9"
 ---
 
 The first thing we need to do is to clone the repository to our local machine. You need to navigate to the code in GitHub that you want to clone to IntelliJ IDEA. In this tutorial we will use the [_intellij-samples_ project](https://github.com/JetBrains/intellij-samples).
