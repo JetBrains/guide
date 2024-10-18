@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-11-09
+date: 2024-10-18
 title: The Git Tool Window
 topics: []
 author: hs
