@@ -1,13 +1,13 @@
 ---
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
-date: 2021-08-11
+date: 2024-22-10
 title: Working with Maven
 topics:
   - build
   - java
   - maven
-author: tg
+author: hs
 subtitle: Understand how IntelliJ IDEA integrates with Maven.
 thumbnail: ./thumbnail.png
 tutorialItems:
@@ -18,8 +18,6 @@ tutorialItems:
   - ./maven-tool-window/
   - ./shortcuts-used/
 ---
-
-**See Also - Marco Codes**
 
 In addition to this tutorial, we recommend you check out [Marco Codes - Maven Tutorial - Crash Course](https://www.youtube.com/watch?v=Xatr8AZLOsE) to learn about how to use Maven like a professional including:
 

@@ -1,13 +1,12 @@
 ---
 type: TutorialStep
-date: 2021-08-11
+date: 2024-22-10
 title: Understanding Dependencies
 topics:
   - maven
-author: tg
+author: hs
 subtitle: Adding and visualising dependencies.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/pt3uB0sd5kY?start=81"
 ---
 
 We can easily add new dependencies with the **Generate** option from the Code menu, or using <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux).

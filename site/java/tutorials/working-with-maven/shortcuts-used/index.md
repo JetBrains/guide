@@ -1,9 +1,9 @@
 ---
 type: TutorialStep
-date: 2021-08-11
+date: 2024-22-10
 title: Shortcuts
 topics: []
-author: tg
+author: hs
 subtitle: Shortcuts used in the tutorial.
 thumbnail: ./thumbnail.png
 callToAction:
@@ -28,10 +28,5 @@ Some helpful shortcuts mentioned in the tutorial and video:
 | Open [Preferences/Settings](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) dialog                                                                                               | <kbd>⌘,</kbd>  | <kbd>Ctrl+Alt+S</kbd>   |
 
 There are links to more information on this tutorial's [introduction](../introduction).
-
-### Related Links
-
-- [(video) Working with Maven in IntelliJ IDEA](https://www.youtube.com/watch?v=pt3uB0sd5kY)
-- [(video) Using Maven in IntelliJ IDEA](https://www.youtube.com/watch?v=D1sRK8JLCQ4)
 
 {% cta %}

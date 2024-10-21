@@ -1,15 +1,14 @@
 ---
 type: TutorialStep
-date: 2021-08-11
+date: 2024-22-10
 title: Importing a Maven project
 topics:
   - gettingstarted
   - maven
-author: tg
+author: hs
 subtitle: >-
   IntelliJ IDEA understands projects that use Maven and can import them with minimal configuration.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/pt3uB0sd5kY?start=3"
 ---
 
 While it's possible you may want to create your own Maven project, it's much more likely you'll import an existing one. This is very straightforward in IntelliJ IDEA. Select [Open](https://www.jetbrains.com/help/idea/import-project-or-module-wizard.html#open-project) from the Welcome Screen, or the _File_ menu, and navigate to the location of the code.
@@ -23,8 +22,6 @@ Depending upon the version of IntelliJ IDEA you're using, you be shown specific 
 ![Open as Project](open-as-project.png)
 
 If you selected the `pom.xml` file to open the project (rather than the top level folder), IntelliJ IDEA will ask if you want to open just the file, or import the whole project. In this tutorial, we want to _Open as Project_.
-
-![Trust Project](trust-project.png)
 
 If you're opening a project that's not yours (e.g. cloned from GitHub), you may not want to trust the project as it's running code you don't know on your machine. However, if you know the project, and you believe the code and the dependencies it downloads are safe, select **Trust Project**.
 
