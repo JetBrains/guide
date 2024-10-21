@@ -29,9 +29,4 @@ Some helpful shortcuts mentioned in the tutorial and video:
 
 There are links to more information on this tutorial's [introduction](../introduction).
 
-### Related Links
-
-- [(video) Working with Maven in IntelliJ IDEA](https://www.youtube.com/watch?v=pt3uB0sd5kY)
-- [(video) Using Maven in IntelliJ IDEA](https://www.youtube.com/watch?v=D1sRK8JLCQ4)
-
 {% cta %}

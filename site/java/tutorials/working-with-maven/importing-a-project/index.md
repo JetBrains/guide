@@ -23,8 +23,6 @@ Depending upon the version of IntelliJ IDEA you're using, you be shown specific 
 
 If you selected the `pom.xml` file to open the project (rather than the top level folder), IntelliJ IDEA will ask if you want to open just the file, or import the whole project. In this tutorial, we want to _Open as Project_.
 
-![Trust Project](trust-project.png)
-
 If you're opening a project that's not yours (e.g. cloned from GitHub), you may not want to trust the project as it's running code you don't know on your machine. However, if you know the project, and you believe the code and the dependencies it downloads are safe, select **Trust Project**.
 
 IntelliJ IDEA will use the Maven definition to figure out the structure of the application, and of course download all the required dependencies and add them to the project.
