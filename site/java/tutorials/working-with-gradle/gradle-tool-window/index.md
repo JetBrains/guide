@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
-date: 2021-05-14
+date: 2024-10-23
 title: The Gradle Tool Window
 topics:
   - build
   - gradle
-author: tg
+author: hs
 subtitle: How to find the Gradle tool window.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/6V6G3RyxEMk?start=713"

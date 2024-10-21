@@ -1,10 +1,10 @@
 ---
 type: TutorialStep
-date: 2021-05-14
+date: 2024-10-23
 title: Gradle Settings
 topics:
   - gradle
-author: tg
+author: hs
 subtitle: Where to change IntelliJ IDEA's settings fo Gradle.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/6V6G3RyxEMk?start=1013"

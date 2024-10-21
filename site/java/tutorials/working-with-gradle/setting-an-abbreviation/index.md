@@ -1,10 +1,10 @@
 ---
 type: TutorialStep
-date: 2021-05-14
+date: 2024-10-23
 title: Setting an abbreviation
 topics:
   - tricks
-author: tg
+author: hs
 subtitle: Use a unique abbreviation to quickly navigate to the Gradle tool window.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/6V6G3RyxEMk?start=767"

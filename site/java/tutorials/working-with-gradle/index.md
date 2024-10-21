@@ -1,13 +1,13 @@
 ---
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
-date: 2021-05-14
+date: 2024-10-23
 title: Working with Gradle
 topics:
   - build
   - gradle
   - java
-author: tg
+author: hs
 subtitle: Understand how IntelliJ IDEA integrates with Gradle.
 thumbnail: ./thumbnail.png
 tutorialItems:
@@ -27,8 +27,6 @@ tutorialItems:
   - ./gradle-wrapper/
   - ./shortcuts-used/
 ---
-
-**See Also - Marco Codes**
 
 In addition to this tutorial, we recommend you check out [Marco Codes - Gradle Tutorial - Crash Course](https://www.youtube.com/watch?v=gKPMKRnnbXU) - to learn how to use Gradle like a professional including
 

@@ -1,13 +1,12 @@
 ---
 type: TutorialStep
-date: 2021-05-14
+date: 2024-10-23
 title: Source set directories
 topics:
   - gradle
-author: tg
+author: hs
 subtitle: Understand how IntelliJ IDEA deals with Gradle's source set directories.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/6V6G3RyxEMk?start=490"
 ---
 
 Gradle has the concept of [source sets](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.SourceSet.html) for where your code and test sources live.

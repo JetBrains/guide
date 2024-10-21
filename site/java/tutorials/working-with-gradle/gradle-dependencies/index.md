@@ -1,20 +1,19 @@
 ---
 type: TutorialStep
-date: 2021-05-14
+date: 2024-10-23
 title: Gradle dependencies
 topics:
   - gradle
-author: tg
+author: hs
 subtitle: Add or update dependencies in your build.gradle file.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/6V6G3RyxEMk?start=348"
 ---
 
-Let's look at Gradle dependencies in a bit more detail. We can add a new dependency upon an external library using **⌘N** (macOS) or **Alt+Insert** (Windows/Linux), and selecting "Add Maven Artifact Dependency".
+Let's look at Gradle dependencies in a bit more detail. We can add a new dependency upon an external library using the Package Search tool window. First, check that the Package Search tool window is enabled by going to your Settings with <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and then selecting Plugins from the menu on the left. Search for "package search" and if it's not already installed, install it.
 
-![Add a new dependency](./add-dependencies.png)
+![package-search-plugin.png](package-search-plugin.png)
 
-This will bring up the artifact search. We can type the name, or full path, of the artifact we're trying to add, and IntelliJ IDEA will give a list of possible matches.
+Select the Package Search tool window from the toolbar windows on the left and search for your dependency. We can type the name, or full path, of the artifact we're trying to add, and IntelliJ IDEA will give a list of possible matches.
 
 ![Artifact search](./artifact-search.png)
 
@@ -22,11 +21,11 @@ We can tab into the list of results and move down to the one we want. We can see
 
 IntelliJ IDEA will insert the new dependency, usually with the `implementation` configuration:
 
-```groovy
+```kotlin
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:1.7.0'
-    implementation 'org.apache.logging.log4j:log4j-core:2.14.0'
+    implementation("log4j:log4j:1.2.17")
+    testImplementation(platform("org.junit:junit-bom:5.10.3"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
 }
 ```
 

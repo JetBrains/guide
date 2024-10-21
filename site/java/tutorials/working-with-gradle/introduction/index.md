@@ -1,9 +1,9 @@
 ---
 type: TutorialStep
-date: 2021-05-14
+date: 2024-10-23
 title: Introduction
 topics: []
-author: tg
+author: hs
 subtitle: Introduction to working with Gradle and Gradle projects in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 ---
@@ -13,8 +13,7 @@ In this tutorial, we're going to look at how to work with Gradle projects in Int
 ## Other Resources
 
 - [Gradle user guide](https://docs.gradle.org/current/userguide/userguide.html)
-- [Webinar Recording: Composite Builds with Gradle and IntelliJ IDEA](https://blog.jetbrains.com/idea/2017/03/webinar-recording-composite-builds-with-gradle/)
-- [Working with Gradle in IntelliJ IDEA (2021) (video)](https://youtu.be/6V6G3RyxEMk) - full video
+- [History of Gradle Delegation Process in IntelliJ IDEA](https://blog.jetbrains.com/idea/2023/06/history-of-gradle-delegation-process-in-intellij-idea/)
 
 ### IntelliJ IDEA Help Documentation
 

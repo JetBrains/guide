@@ -1,23 +1,20 @@
 ---
 type: TutorialStep
-date: 2021-05-14
+date: 2024-10-23
 title: Opening a Gradle project
 topics:
   - gettingstarted
   - gradle
-author: tg
+author: hs
 subtitle: What you need to know to get started with an existing Gradle project.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/6V6G3RyxEMk?start=586"
 ---
 
 We've covered creating new Gradle projects, let's look at what's probably the more common case, importing existing Gradle projects into IntelliJ IDEA.
 
 In this example, we're going to look at how to open a Gradle project from a local directory, but we could just as easily clone the code from a remote repository, it would work in a similar way.
 
-In the [Welcome Screen](https://www.jetbrains.com/help/idea/new-project-wizard.html) we can select "Open", and navigate to the location with the project code.
-
-![Open an existing project](./open-project.png)
+In the [Welcome Screen](https://www.jetbrains.com/help/idea/new-project-wizard.html) we can select **Open**, and navigate to the location with the project code.
 
 IntelliJ IDEA will look for known build systems in the project, for example Maven and Gradle, or IntelliJ IDEA config files.
 
@@ -25,7 +22,7 @@ This project that I've selected is a multi-module Gradle project, it has the [Gr
 
 ![Project files](./existing-project.png)
 
-The `settings.gradle` file states which modules make up the gradle project, and each module contains its own `build.gradle` file.
+The `settings.gradle.kts` file states which modules make up the gradle project, and each module contains its own `build.gradle` file.
 
 This particular project does not have any IntelliJ IDEA settings set, IntelliJ IDEA uses the Gradle configuration to determine the structure of the project, its dependencies, and how to build it.
 

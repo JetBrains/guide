@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
-date: 2021-05-14
+date: 2024-10-23
 title: Syncing and reloading
 topics:
   - build
   - gradle
-author: tg
+author: hs
 subtitle: >-
   Sometimes you may need to encourage IntelliJ IDEA to reload any changes from the Gradle configuration.
 thumbnail: ./thumbnail.png

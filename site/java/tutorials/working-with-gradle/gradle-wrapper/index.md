@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
-date: 2021-05-14
+date: 2024-10-23
 title: Gradle Wrapper
 topics:
   - build
   - gradle
-author: tg
+author: hs
 subtitle: Useful information for working with projects that use the Gradle Wrapper.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/6V6G3RyxEMk?start=1105"

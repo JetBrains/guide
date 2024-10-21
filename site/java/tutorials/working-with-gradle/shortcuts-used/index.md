@@ -1,9 +1,9 @@
 ---
 type: TutorialStep
-date: 2021-05-14
+date: 2024-10-23
 title: Shortcuts
 topics: []
-author: tg
+author: hs
 subtitle: Shortcuts used in the tutorial.
 thumbnail: ./thumbnail.png
 ---
