@@ -1,14 +1,13 @@
 ---
 type: TutorialStep
-date: 2021-08-11
+date: 2024-22-10
 title: The Maven Tool Window
 topics:
   - build
   - maven
-author: tg
+author: hs
 subtitle: The Maven Tool Window gives you access to goals, dependencies, and more.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/pt3uB0sd5kY?start=3"
 ---
 
 You can use <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) again to navigate to the Maven window, and here we can see the dependencies of this project.

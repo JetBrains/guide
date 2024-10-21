@@ -1,14 +1,13 @@
 ---
 type: TutorialStep
-date: 2021-08-11
+date: 2024-22-10
 title: Creating a Maven project
 topics:
   - gettingstarted
   - maven
-author: tg
+author: hs
 subtitle: Start by creating a brand-new project that uses Maven as the build tool.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/pt3uB0sd5kY?start=3"
 ---
 
 Let's create a brand-new Maven project. From the Welcome Screen select New Project, or if you already have an IntelliJ IDEA project open, select File -> New -> Project...

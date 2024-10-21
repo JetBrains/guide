@@ -1,15 +1,14 @@
 ---
 type: TutorialStep
-date: 2021-08-11
+date: 2024-22-10
 title: Importing a Maven project
 topics:
   - gettingstarted
   - maven
-author: tg
+author: hs
 subtitle: >-
   IntelliJ IDEA understands projects that use Maven and can import them with minimal configuration.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/pt3uB0sd5kY?start=3"
 ---
 
 While it's possible you may want to create your own Maven project, it's much more likely you'll import an existing one. This is very straightforward in IntelliJ IDEA. Select [Open](https://www.jetbrains.com/help/idea/import-project-or-module-wizard.html#open-project) from the Welcome Screen, or the _File_ menu, and navigate to the location of the code.
