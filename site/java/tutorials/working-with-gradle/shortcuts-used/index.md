@@ -23,7 +23,3 @@ Some helpful shortcuts mentioned in the tutorial and video:
 | Open [Preferences/Settings](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) dialog                                                                                           | <kbd>⌘,</kbd>  | <kbd>Ctrl+Alt+S</kbd>   |
 
 There are links to more information on this tutorial's [introduction](../introduction).
-
-### Related Links
-
-- [(video) Working with Gradle in IntelliJ IDEA](https://www.youtube.com/watch?v=6V6G3RyxEMk)

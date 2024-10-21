@@ -7,7 +7,6 @@ topics:
 author: hs
 subtitle: Where to change IntelliJ IDEA's settings fo Gradle.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/6V6G3RyxEMk?start=1013"
 ---
 
 Let's look at some more useful Gradle settings in IntelliJ IDEA.

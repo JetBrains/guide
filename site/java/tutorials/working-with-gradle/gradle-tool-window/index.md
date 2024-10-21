@@ -8,7 +8,6 @@ topics:
 author: hs
 subtitle: How to find the Gradle tool window.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/6V6G3RyxEMk?start=713"
 ---
 
 The [Gradle Tool Window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html) is a very useful way to work with Gradle in IntelliJ IDEA. Let's look at how to get to it.
@@ -18,10 +17,6 @@ IntelliJ IDEA usually provides lots of different ways to navigate to something w
 Click on the [quick access button](https://www.jetbrains.com/help/idea/tool-windows.html#open) in the bottom left, and click Gradle.
 
 ![Quick access buttons](./quick-access-buttons.png)
-
-Or, if you have the [Tool Window Bars](https://www.jetbrains.com/help/idea/tool-windows.html#show_hide_tool_window_bars) open already, you can click on the Gradle button in the top right.
-
-![Gradle tool bar button](./gradle-tool-button.png)
 
 The Recent Files dialog, which we can open with <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux), also shows a list of all the tool windows. We can either move down to the Gradle option using the mouse or using the arrow keys, or we can start typing "Gradle" to go straight to it.
 

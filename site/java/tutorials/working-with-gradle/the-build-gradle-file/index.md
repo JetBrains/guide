@@ -8,7 +8,6 @@ author: hs
 subtitle: >-
   See how IntelliJ IDEA makes it easier to work with Gradle's configuration file.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/6V6G3RyxEMk?start=281"
 ---
 
 Let's take a look at the build.gradle file IntelliJ IDEA generated for us.
@@ -42,6 +41,6 @@ IntelliJ IDEA has set us up with a couple of default dependencies that we probab
 
 Note that IntelliJ IDEA uses the updated [configuration names for the dependencies](https://docs.gradle.org/current/userguide/declaring_dependencies.html), for example `testImplementation` instead of `testCompile`. It also uses the compact form for dependency declaration, with the group name, artifact name and version number separated by colons.
 
-In order for Gradle to run JUnit 5 tests, the test section of the `build.gradle` file needs to say `useJUnitPlatform`, so IntelliJ IDEA has generated this for us too.
+In order for Gradle to run JUnit 5 tests, the test section of the `build.gradle.kts` file needs to say `useJUnitPlatform`, so IntelliJ IDEA has generated this for us too.
 
 Now that we know where the dependencies should be declared for a Gradle project, let's look at how to add or update dependencies.

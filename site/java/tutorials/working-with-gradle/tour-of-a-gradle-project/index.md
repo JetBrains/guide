@@ -20,9 +20,9 @@ You'll also see a `.gradle` folder, which IntelliJ IDEA uses for its gradle buil
 
 There's a `gradle` folder with a `wrapper` sub-folder. These are the settings for the [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html), which IntelliJ IDEA uses by default when creating Gradle projects. We'll [look at how to configure](../gradle-wrapper/) this later.
 
-The project window also shows external libraries that our project depends upon. In this project, these libraries are here because our gradle build file has declared dependencies upon them. IntelliJ IDEA marks these as coming from Gradle. These have been added in our `build.gradle` file as dependencies.
+The project window also shows external libraries that our project depends upon. In this project, these libraries are here because our gradle build file has declared dependencies upon them. IntelliJ IDEA marks these as coming from Gradle. These have been added in our `build.gradle.kts` file as dependencies.
 
-The `build.gradle` file is the main configuration for the project's build and dependencies. IntelliJ IDEA created this minimal build file when it created this project. [We'll look at this in more detail in the next step](../the-build-gradle-file/).
+The `build.gradle.kts` file is the main configuration for the project's build and dependencies. IntelliJ IDEA created this minimal build file when it created this project. [We'll look at this in more detail in the next step](../the-build-gradle-file/).
 
 The last key piece to understanding your Gradle project in IntelliJ IDEA is the [Gradle tool window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html). We can open this via the quick access button in the top right-hand corner.
 
@@ -36,4 +36,4 @@ The Tasks section shows all the Gradle build tasks, grouped by type. We don't ha
 
 The [Run tool window](https://www.jetbrains.com/help/idea/run-tool-window.html) opens, and we see the results of the `clean` task, including all the Gradle output, so we can see what was run and what the results were. We can use this to help us debug problems if there are any issues.
 
-Next, let's look at that `build.gradle` file in more detail.
+Next, let's look at that `build.gradle.kts` file in more detail.
