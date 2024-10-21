@@ -9,7 +9,7 @@ subtitle: Use quick intentions to add names to call arguments.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/4SmH2L8y4_M"
 callToAction:
-  url: "/java/tips/add-remaining-branches/"
+  url: "/kotlin/tips/add-remaining-branches/"
   message: "You can add remaining branches the same way!"
 ---
 

@@ -9,7 +9,7 @@ subtitle: Use quick intentions to generate code automatically and save you typin
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/7R1b5G3yx8U"
 callToAction:
-  url: "/java/tips/adding-call-args/"
+  url: "/kotlin/tips/adding-call-args/"
   message: "You can add call arguments the same way!"
 ---
 
