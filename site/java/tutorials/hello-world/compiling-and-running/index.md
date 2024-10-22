@@ -43,5 +43,3 @@ IntelliJ IDEA also created a [run configuration](https://www.jetbrains.com/help/
 ![Run configuration in the navigation bar](run-config-nav-bar.png)
 
 If you want to go back to the Run Window, you can use <kbd>⌘4</kbd> (macOS) / <kbd>Alt+4</kbd> (Windows/Linux) to open it and the same shortcut again to close it and return the focus back on the editor.
-
----

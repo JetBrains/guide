@@ -39,5 +39,3 @@ IntelliJ IDEA will show you a list of classes in your project, you only have one
 ![Built JAR Artifact](built-jar-artifact.png)
 
 To make sure that this JAR file was created correctly you will want to run it. We'll do this in the next step of this tutorial by using a [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html).
-
----

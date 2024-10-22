@@ -67,5 +67,3 @@ IntelliJ IDEA offers you [code completion](https://www.jetbrains.com/help/idea/a
 **Note**: Instead of the above steps, you can also type `sout` to see a [live template](https://www.jetbrains.com/help/idea/using-live-templates.html) that will create the code construct for you as well, however we wanted to show you code completion!
 
 Congratulations, you've just created your first Java application! Java files like this one can be compiled into bytecode and run in IntelliJ IDEA. Let's take a look at that in the next step.
-
----
