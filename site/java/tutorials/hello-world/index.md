@@ -1,7 +1,7 @@
 ---
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
-date: 2021-08-24
+date: 2024-10-23
 title: Hello World in IntelliJ IDEA
 topics:
   - gettingstarted

@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2022-12-08
+date: 2024-10-23
 title: Summary and Shortcuts
 topics: []
 author: hs
@@ -17,7 +17,3 @@ You [ran that project](https://www.jetbrains.com/help/idea/running-applications.
 You then created a new [Run Configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html) for the JAR file and [ran the application](https://www.jetbrains.com/help/idea/running-applications.html) again with the new run configuration.
 
 Finally, you made a change to your `HelloWorld.java` file and tested that change with the [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html) that you made for your JAR file to check that it was being rebuilt before it was [being run](https://www.jetbrains.com/help/idea/running-applications.html).
-
-### Related Links
-
-- [(video) Creating Your First Java Application](https://www.youtube.com/watch?v=H_XxH66lm3U)

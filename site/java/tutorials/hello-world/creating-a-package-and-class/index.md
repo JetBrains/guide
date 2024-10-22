@@ -1,12 +1,11 @@
 ---
 type: TutorialStep
-date: 2022-12-08
+date: 2024-10-23
 title: Creating the package and class
 topics: []
 author: hs
 subtitle: Use IntelliJ IDEA to create a new package and class.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/H_XxH66lm3U?start=116"
 ---
 
 We recommend putting IntelliJ IDEA into full screen to give you the maximum amount of space for your new Hello World project.

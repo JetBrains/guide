@@ -1,12 +1,11 @@
 ---
 type: TutorialStep
-date: 2022-12-08
+date: 2024-10-23
 title: Creating a Run Configuration
 topics: []
 author: hs
 subtitle: Using an IntelliJ IDEA run configuration for the JAR file we created.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/H_XxH66lm3U?start=611"
 ---
 
 Now you've created your JAR file, you need to run it to check that the behaviour is the same as running your main method in your `HelloWorld.java` file. To run your Java application as a JAR, you can create a new [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html).
@@ -27,13 +26,11 @@ Now you've created your JAR file, you need to run it to check that the behaviour
 
 6. Click on the browse button for the **Path to the JAR**. You need to navigate to your JAR file. Remember it's in the output for your project.
 
-![Path to JAR file](path-to-jar.png)
-
 7. Scroll down to the **Before launch** section at the bottom of the dialog. Press <kbd>+</kbd> (macOS) / <kbd>Plus</kbd> (Windows/Linux) here and select _Build Artifacts_ from the drop-down list.
 
-![Select artifacts](select-artifacts.png)
-
 8. Select and choose your `HelloWorld.jar` artifact and press **OK**. This means IntelliJ IDEA will rebuild your `HelloWorld.jar` file before we run this configuration.
+
+![Adding new JAR configuration](build-jar.png)
 
 9. Press **OK** again to save the new run configuration. Your new run configuration is now displayed in the [navigation bar](https://www.jetbrains.com/help/idea/run-debug-configuration.html) by default.
 

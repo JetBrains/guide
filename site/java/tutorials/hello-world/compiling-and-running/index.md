@@ -1,12 +1,11 @@
 ---
 type: TutorialStep
-date: 2023-01-08
+date: 2024-10-23
 title: Compiling and Running
 topics: []
 author: hs
 subtitle: Use IntelliJ IDEA to run your Hello World application.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/H_XxH66lm3U?start=371"
 ---
 
 Now you have written your 'HelloWorld.java' class, you need to compile and run it. IntelliJ IDEA can do this for you. There are lots of ways you can run an application but to start with, you can click the green arrows to the left of the method. These are known as [gutter icons](https://www.jetbrains.com/help/idea/settings-gutter-icons.html).
@@ -43,6 +42,6 @@ IntelliJ IDEA also created a [run configuration](https://www.jetbrains.com/help/
 
 ![Run configuration in the navigation bar](run-config-nav-bar.png)
 
-If you want to go back to the Run Window, you can use **Cmd**+**4** on macOS, or **Alt**+**4** on Windows to open it and the same shortcut again to close it and return the focus back on the editor.
+If you want to go back to the Run Window, you can use <kbd>⌘4</kbd> (macOS) / <kbd>Alt+4</kbd> (Windows/Linux) to open it and the same shortcut again to close it and return the focus back on the editor.
 
 ---
