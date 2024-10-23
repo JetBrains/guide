@@ -1,9 +1,9 @@
 ---
 type: TutorialStep
-date: 2022-10-03
+date: 2024-10-25
 title: Summary and Shortcuts
 topics: []
-author: md
+author: hs
 subtitle: Presenting with IntelliJ IDEA Summary.
 thumbnail: ./thumbnail.png
 ---
@@ -45,8 +45,6 @@ Here are the IntelliJ IDEA shortcuts that we used.
 
 - [(video) JetBrains - Presenting with IntelliJ IDEA](https://www.youtube.com/watch?v=h-HGg9b6Dqw)
 - [(docs) JetBrains - Settings/Preferences](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html)
-- [(docs) JetBrains - Install plugins](https://www.jetbrains.com/help/idea/managing-plugins.html)
-- [(marketplace) JetBrains - Presentation Assistant plugin](https://plugins.jetbrains.com/plugin/7345-presentation-assistant)
 - [(docs) JetBrains - IDE viewing modes](https://www.jetbrains.com/help/idea/ide-viewing-modes.html)
 - [(docs) JetBrains - IntelliJ IDEA keyboard shortcuts](https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html)
 - [(pdf) IntelliJ IDEA reference card](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
