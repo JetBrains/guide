@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2022-10-03
+date: 2024-10-25
 title: Navigation
 topics: []
 author: md
@@ -17,8 +17,6 @@ We can **Find a class** using <kbd>⌘O</kbd> (macOS) / <kbd>Ctrl+N</kbd> (Windo
 We can move the caret to a method and use <kbd>⌘B</kbd> (macOS) / <kbd>Ctrl+B</kbd> (Windows/Linux) to go to the declaration or usages.
 
 ![Find usages](find-usages.png)
-
-![Find only usage](find-only-usage.png)
 
 We can also navigate backwards by using <kbd>⌘\[</kbd> (macOS) / <kbd>Ctrl+Alt+Left Arrow</kbd> (Windows/Linux), or navigate forward: <kbd>⌘\]</kbd> (macOS) / <kbd>Ctrl+Alt+Right Arrow</kbd> (Windows/Linux).
 

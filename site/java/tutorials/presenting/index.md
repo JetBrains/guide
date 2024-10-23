@@ -1,13 +1,13 @@
 ---
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
-date: 2022-10-03
+date: 2024-10-25
 title: Presenting with IntelliJ IDEA.
 topics:
   - java
   - kotlin
   - tricks
-author: md
+author: hs
 subtitle: Tips & tricks to level up your presentation skills with IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 tutorialItems:
@@ -18,7 +18,6 @@ tutorialItems:
   - ./font/
   - ./theme/
   - ./tool-windows/
-  - ../../../tips/find-action
   - ./soft-wrap/
   - ./shortcuts/
   - ./navigation/

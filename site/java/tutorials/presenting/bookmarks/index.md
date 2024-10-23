@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2022-10-03
+date: 2024-10-25
 title: Bookmarks
 topics: []
 author: md
@@ -8,7 +8,7 @@ subtitle: Using bookmarks for navigation.
 thumbnail: ./thumbnail.png
 ---
 
-Another way to navigate through code, is to use bookmarks. Press **F3** (on Mac) or **F11** (on Windows/Linux) to create an anonymous line bookmark.
+Another way to navigate through code, is to use bookmarks. Press <kbd>F3</kbd> (macOS) / <kbd>F11</kbd> (Windows/Linux) to create an anonymous line bookmark.
 
 ![Anonymous bookmark](anonymous-bookmark.png)
 

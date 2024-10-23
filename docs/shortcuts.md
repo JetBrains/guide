@@ -69,7 +69,7 @@
 <kbd>F3</kbd> (macOS) / <kbd>F11</kbd> (Windows/Linux)                          - Toggle Bookmark
 <kbd>⌃H</kbd> (macOS) / <kbd>Ctrl+H</kbd> (Windows/Linux)                       - Invoke Type Hierarchy
 <kbd>⌘S</kbd> (macOS) / <kbd>Ctrl+S</kbd> (Windows/Linux)                       - Invoke Save                       
-<kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux)                   - Settings Dialog
+<kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux)                  - Settings Dialog
 <kbd>⌘;</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+S</kbd> (Windows/Linux)             - Project Structure Dialog
 <kbd>⌘F6</kbd> (macOS) / <kbd>Ctrl+F6</kbd> (Windows/Linux)                     - Refactor Change Signature
 <kbd>⌘K</kbd> (macOS) / <kbd>Ctrl+K</kbd> (Windows/Linux)                       - Commit Files to VCS

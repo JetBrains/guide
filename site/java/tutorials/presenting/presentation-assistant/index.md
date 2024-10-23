@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2023-12-12
+date: 2024-10-25
 title: Presentation Assistant plugin
 topics: []
 author: md
@@ -8,19 +8,13 @@ subtitle: Using the Presentation Assistant plugin to show shortcuts.
 thumbnail: ./thumbnail.png
 ---
 
-Our first tip is to use the Presentation Assistant plugin. The Presentation Assistant plugin will show which shortcuts are being used. You can configure this plugin in several ways, as we will show you in the section below.
+Our first tip is to use Presentation Assistant which shows you the shortcuts as you press them. You can configure it in several ways, as we will show you in the section below.
 
 ![Presentation Assistant example](presentation-assistant-example.png)
 
-This plugin is bundled with IntelliJ IDEA, as of version 2023.3. If you are still using an older version, you'll need to install the plugin yourself.
-
-To install the plugin, open **Preferences** using <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux). Go to Plugins and search for "Presentation assistant" on the Marketplace tab. Click **Install** and when it's done, click **OK** to apply the changes and close the dialog or click **Apply** to keep the dialog open.
-
-![Install Presentation Assistant](presentation-assistant-install.png)
-
 ## Configuring the Presentation Assistant plugin
 
-To configure the Presentation Assistant plugin, go back to **Preferences** and go to **Appearance & Behavior | Presentation Assistant**.
+To configure Presentation Assistant, go to you Preferences with <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and select **Appearance & Behavior | Presentation Assistant**.
 
 ![Configure Presentation Assistant](presentation-assistant-config.png)
 
