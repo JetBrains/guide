@@ -7,12 +7,7 @@ import {
 	ChannelHomepageData,
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
-import {
-	LINK_RESOURCE,
-	PLAYLIST_RESOURCE,
-	TIP_RESOURCE,
-	TUTORIAL_RESOURCE,
-} from "../../src/resourceType";
+import { PLAYLIST_RESOURCE, TUTORIAL_RESOURCE } from "../../src/resourceType";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Game Development",
@@ -68,12 +63,6 @@ export default class GameDevHomepage {
 			limit: 4,
 			customFilter: (r) => r.topics?.includes("godot") == true,
 			sorter: (a, b) => (a.date < b.date ? 1 : -1),
-		});
-
-		const tips = this.getResources({
-			resourceTypes: [TIP_RESOURCE, LINK_RESOURCE],
-			channel: channel.url,
-			limit: 4,
 		});
 
 		const eventPlaylists = this.getResources({
@@ -145,16 +134,6 @@ export default class GameDevHomepage {
 						includeCardFooter={false}
 						separator={true}
 						includeContentType={true}
-					/>
-				)}
-
-				{tips && (
-					<ListingSection
-						title={`Latest tips`}
-						resources={tips}
-						moreLink={`${channel.url}tips/`}
-						separator={false}
-						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
 
