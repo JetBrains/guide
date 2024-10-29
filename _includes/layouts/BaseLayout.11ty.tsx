@@ -87,6 +87,7 @@ export function BaseLayout(
 		collections.resourceMap.get("/java/"),
 		collections.resourceMap.get("/go/"),
 		collections.resourceMap.get("/dotnet/"),
+		collections.resourceMap.get("/kotlin/"),
 	].filter((it) => it != undefined) as Resource[];
 	const solutions = [
 		collections.resourceMap.get("/gamedev/"),
