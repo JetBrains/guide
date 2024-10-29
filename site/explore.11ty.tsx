@@ -36,6 +36,7 @@ const exploreMenu: ExploreGroup[] = [
 			{ value: "/java/", label: "Java" },
 			{ value: "/python/", label: "Python" },
 			{ value: "/javascript/", label: "JavaScript and TypeScript" },
+			{ value: "/kotlin/", label: "Kotlin" },
 		],
 	},
 	{
@@ -50,6 +51,7 @@ const exploreMenu: ExploreGroup[] = [
 			{ value: "tricks", label: "Tricks" },
 			{ value: "typescript", label: "TypeScript" },
 			{ value: "web", label: "Web" },
+			{ value: "kotlin", label: "Kotlin" },
 		],
 	},
 	{
