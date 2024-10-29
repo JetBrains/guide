@@ -15,7 +15,7 @@ If you are using IntelliJ IDEA Ultimate, you can also view your dependencies as 
 
 ## Show Diagrams
 
-We can open diagrams either by right-clicking the project in the _Project_ tool window and selecting **Diagrams | Show Diagrams**, or by using the shortcut <kbd>⌥⇧⌘U</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+U</kbd> (Windows/Linux). You'll notice this gives you several diagram options to choose from. In this case, we're interested in the _Gradle Dependencies_, so we select that one. We can hide all tool windows <kbd>⌘⇧F12</kbd> (macOS) / <kbd>Ctrl+Shift+F12 (Windows/Linux)</kbd>, so we can focus on the diagram.
+We can open diagrams either by right-clicking the project in the _Project_ tool window and selecting **Diagrams | Show Diagrams**, or by using the shortcut <kbd>⌥⇧⌘U</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+U</kbd> (Windows/Linux). You'll notice this gives you several diagram options to choose from. In this case, we're interested in the _Gradle Dependencies_, so we select that one. We can hide all tool windows <kbd>⌘⇧F12</kbd> (macOS) / <kbd>Ctrl+Shift+F12 (Windows/Linux)</kbd>, so we can focus on the diagram.gut
 
 ![Diagrams | Show Diagrams](show-diagram.png)
 

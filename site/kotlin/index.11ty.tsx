@@ -16,7 +16,7 @@ const frontmatter: ChannelFrontmatter = {
 	date: new Date(Date.UTC(2024, 10, 15)),
 	author: "hs",
 	logo: "thumbnail.svg",
-	hero: "/assets/splashes/ai.svg",
+	hero: "/assets/splashes/kotlin.svg",
 	subnav: [
 		{ title: "Kotlin", url: "https://www.jetbrains.com/opensource/kotlin/" },
 	],
