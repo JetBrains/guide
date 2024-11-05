@@ -21,11 +21,9 @@ As of this tutorial, you must download the correct version; otherwise, you won't
 
 The next step is downloading [the latest .NET SDK from the official .NET website](https://dot.net). Godot Engine has .NET support, but compilation requires a .NET SDK of 6+ installed to create your assemblies for the Godot game engine. For reference, I used the .NET 8 SDK during this tutorial.
 
-You'll also want to download and install the latest version of [JetBrains Rider](https://jetbrains.com/rider) and [the Godot Plugin](https://plugins.jetbrains.com/plugin/13882-godot-support). The Godot plugin will allow you to edit, run, and debug your C# code throughout this tutorial process.
+You'll also want to download and install the latest version of [JetBrains Rider](https://jetbrains.com/rider) which now bundles the Godot plugin since version 2024.2 of Rider. The Godot plugin will allow you to edit, run, and debug your C# code throughout this tutorial process.
 
-If you forget to install the Godot plugin, don't worry, the first time you open your Godot project in JetBrains Rider, the IDE will remind you to download it.
-
-Once all are installed, you're ready to start your first Godot Game Engine project.
+Once your development environment is set up, you're ready to start your first Godot Game Engine project.
 
 Starting the game engine for the first time, you'll be presented with the **Project Manager** dialog. Here, you'll be able to perform a set of actions, one of which is creating a brand-new project.
 
