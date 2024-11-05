@@ -8,7 +8,7 @@ The JetBrains Guide is a collection of resources for learning JetBrains IDEs.
 
 Here's what you need to get started:
 
-- Make sure you have installed Node.js 20.10+
+- Make sure you have installed Node.js 22.11+
 - Clone this repository
   - As a JetBrains employee, clone from Space and [enjoy some additional infrastructure](https://jetbrains.team/p/jetbrains-guide/documents/Docs/a/Contributing-on-Space).
   - As an external contributor, clone from GitHub.
@@ -24,4 +24,4 @@ Here's what you need to get started:
 
 Changes ready? Great! Ideally, you have been working on a separate branch (from `main`), and you can send your changes as a pull request.
 
-Make sure to add some JetBrains folks like [pauleveritt](https://github.com/pauleveritt),[khalidabuhakmeh](https://github.com/khalidabuhakmeh/), [maartenba](https://github.com/maartenba/) and [helenjoscott](https://github.com/helenjoscott/) as reviewers, so we can work on getting your content ready to go!
+Make sure to add some JetBrains folks like [pauleveritt](https://github.com/pauleveritt),[khalidabuhakmeh](https://github.com/khalidabuhakmeh/) and [helenjoscott](https://github.com/helenjoscott/) as reviewers, so we can work on getting your content ready to go!

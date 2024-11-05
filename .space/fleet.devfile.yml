@@ -21,4 +21,4 @@ attributes:
 components:
   - name: dev-container
     container:
-      image: node:20-bullseye
+      image: node:22-bullseye
