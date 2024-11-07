@@ -153,7 +153,7 @@ const ResourceCard = ({
 										<time
 											class="m-0 has-text-grey-dark"
 											datetime={displayDate}
-											data-template-datetime="datetime"
+											data-template="datetime"
 										>
 											{displayDate}
 										</time>
