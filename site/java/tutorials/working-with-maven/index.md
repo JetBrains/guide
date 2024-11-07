@@ -1,7 +1,7 @@
 ---
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
-date: 2024-22-10
+date: 2024-10-22
 title: Working with Maven
 topics:
   - build
