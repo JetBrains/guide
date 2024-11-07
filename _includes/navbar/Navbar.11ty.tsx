@@ -19,7 +19,7 @@ const Navbar = ({
 		<nav class="navbar is-dark">
 			<div class="container">
 				<div class="navbar-brand">
-					<a class="navbar-item p-0" href="https://www.jetbrains.com/">
+					<a class="navbar-item p-0" href="/">
 						{/*<img
 							src="/assets/jetbrains-simple.svg"
 							alt="JetBrains"
