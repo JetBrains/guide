@@ -100,7 +100,17 @@ export class ExploreViewModel {
 			}
 
 			return true;
-		});
+		})
+			.sort((a, b) => {
+				// Sort in reverse date order
+				if (a.datetime > b.datetime) {
+					return -1;
+				}
+				if (a.datetime < b.datetime) {
+					return 1;
+				}
+				return 0;
+			});
 	}
 
 	renderCards(filteredResources) {
