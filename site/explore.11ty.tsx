@@ -82,7 +82,7 @@ export default class ExplorePage {
 
 	render(this: LayoutContext, data: ExplorePageProps): JSX.Element {
 		const latestContent = this.getResources({
-			resourceTypes: ["tip", "tutorial", "playlist"],
+			resourceTypes: ["tip", "tutorial", "playlist", "link", "article"],
 			limit: 12,
 		});
 
