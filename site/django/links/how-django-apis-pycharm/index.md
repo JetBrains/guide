@@ -5,7 +5,7 @@ topics:
   - django
 author: pwe
 subtitle: I recently attended DjangoConf 2024 which kicked off this year’s DSF-PyCharm fundraiser. I attended Felipe’s DRF tutorial where he showed off using PyCharm and even a little bit about endpoints.
-thumbnail: ./thumbnail.png
+thumbnail: ./thumbnail.jpg
 linkURL: "https://blog.jetbrains.com/pycharm/2024/10/how-i-do-django-apis-in-pycharm/"
 ---
 
