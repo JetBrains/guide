@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2022-05-10
+date: 2024-11-11
 title: Summary and Shortcuts
 topics: []
 author: hs
@@ -18,5 +18,3 @@ Here are some useful keyboard shortcuts for working with your Tomcat Server:
 - You can [update your application](https://www.jetbrains.com/help/idea/updating-applications-on-application-servers.html) with <kbd>⌘F10</kbd> (macOS) / <kbd>Ctrl+F10</kbd> (Windows/Linux)
 
 Alternatively, you can use the buttons to the left of the Services <kbd>⌘8</kbd> (macOS) / <kbd>Alt+8</kbd> (Windows/Linux) window to work with your Tomcat server.
-
-If you'd like more information, please see the video on working with [Tomcat in IntelliJ IDEA Ultimate](https://www.youtube.com/watch?v=ThBw3WBTw9Q) from [Dalia](https://twitter.com/DaliaShea).
