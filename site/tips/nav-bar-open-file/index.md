@@ -39,3 +39,7 @@ As a note, this is a very common pattern for jumping to a file in the current di
 ![searching.png](searching.png)
 
 Opening the file isn't the only operation you can do on a selected Navigation Bar item. You can also invoke "Refactor This" <kbd>^T</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+T</kbd> (Windows/Linux), or "Delete" <kbd>␡</kbd> (macOS) / <kbd>Delete</kbd> (Windows/Linux) , basically, anything you could do when you click on the file in the Project tool window.
+
+If you want to know what else the Navigation Bar can do, check out [Navigating Like a Pro](https://youtu.be/zK7Q8dVE-g8).
+
+If you want to know what else the Navigation Bar can do, check out [Navigating Like a Pro](https://youtu.be/zK7Q8dVE-g8).

@@ -31,3 +31,5 @@ You can use the left arrow to go up a directory and right arrow to go down a dir
 ![left-arrow.png](left-arrow.png)
 
 For looking at the directory the currently-edited file is in, this is even easier. Activating the Navigation Bar makes the current file selected. You don't have to press <kbd>←</kbd> (macOS) / <kbd>Up Arrow</kbd> (Windows/Linux) to select the parent directory. Just press <kbd>↓</kbd> (macOS) / <kbd>Down Arrow</kbd> (Windows/Linux).
+
+If you want to know what else the Navigation Bar can do, check out [Navigating Like a Pro](https://youtu.be/zK7Q8dVE-g8).

@@ -68,3 +68,5 @@ Hide it when you want to? Yup! 😅
 The Navigation Bar is really helpful for moving around your project efficiently, but if you really want to, you can turn it off by going to **View > Appearance > Navigation Bar > Don't show**. Of course, you can turn it back on in exactly the same way!
 
 ![Show Hide with Navigation Bar](show-hide.png)
+
+If you want to know what else the Navigation Bar can do, check out [Navigating Like a Pro](https://youtu.be/zK7Q8dVE-g8).

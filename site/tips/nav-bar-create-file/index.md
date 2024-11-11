@@ -42,3 +42,5 @@ Also like the Project tool window, your selection doesn't have to be on a direct
 In summary, after two key combos, you have a new sibling file, with no permanent file tree visible and no popups to close afterward. That's what getting in the flow is about.
 
 ![new-file.png](../nav-bar-create-file/new-file.png)
+
+If you want to know what else the Navigation Bar can do, check out [Navigating Like a Pro](https://youtu.be/zK7Q8dVE-g8).
