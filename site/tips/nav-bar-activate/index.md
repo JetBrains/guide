@@ -38,3 +38,5 @@ How did we hide it in the Navigation Bar first place, or bring it back if wanted
 ![menu.png](menu.png)
 
 Want a faster, keyboard-centric way to toggle? <kbd>⌘⇧A</kbd> (macOS) / <kbd>Ctrl+Shift+A</kbd> (Windows/Linux) lets you search for such settings and even toggle inline. Type `vi nav` to speed search, make sure the selection is on **View: Show Navigation Bar**, then press <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux). The setting is toggled...no mouse usage needed.
+
+If you want to know what else the Navigation Bar can do, check out [Navigating Like a Pro](https://youtu.be/zK7Q8dVE-g8).

@@ -9,7 +9,7 @@ author: pwe
 subtitle: >-
   Sphinx is great for docs. But it's also great for information-rich websites.
   With MyST, you can use Markdown with Sphinx.
-thumbnail: ./thumbnail.jpeg
+thumbnail: ./thumbnail.jpg
 tutorialItems:
   - ./setup/
   - ./basic_formatting/

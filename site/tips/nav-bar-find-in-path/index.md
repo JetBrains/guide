@@ -28,3 +28,5 @@ You can invoke **Navigate | Jump to Navigation Bar** <kbd>⌘↑</kbd> (macOS) /
 Navigate to the target, and invoke "Find in Path", <kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux), from the keyboard.
 
 ![find-in-file.png](find-in-file.png)
+
+If you want to know what else the Navigation Bar can do, check out [Navigating Like a Pro](https://youtu.be/zK7Q8dVE-g8).
