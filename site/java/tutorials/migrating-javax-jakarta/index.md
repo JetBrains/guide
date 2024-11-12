@@ -1,7 +1,7 @@
 ---
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
-date: 2022-03-30
+date: 2024-11-12
 title: Migrating from the `javax` to `jakarta` namespace
 topics:
   - java

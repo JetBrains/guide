@@ -1,12 +1,11 @@
 ---
 type: TutorialStep
-date: 2022-03-30
+date: 2024-11-12
 title: Updating the persistence file
 topics: []
 author: hs
 subtitle: Fixing the final `javax` references in your files.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/mukr2Q_zBm4?start=702"
 ---
 
 Now if you do a search across your whole project with <kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux) for _javax_ you will see that it still appears in your `persistence.xml` file.

@@ -1,12 +1,11 @@
 ---
 type: TutorialStep
-date: 2022-03-30
+date: 2024-12-12
 title: Updating Dependencies
 topics: []
 author: hs
 subtitle: Modifying your `pom.xml` file to use jakarta dependencies.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/mukr2Q_zBm4?start=307"
 ---
 
 The first thing we need to do is update our dependencies. This project uses Maven so that's our `pom.xml` file. If you're using Gradle you need to update your `build.gradle` file.
@@ -33,14 +32,14 @@ The first step is to replace the dependency for `javax.servlet` with `jakarta.se
 <dependency>
    <groupId>jakarta.servlet</groupId>
    <artifactId>jakarta.servlet-api</artifactId>
-   <version>5.0.0</version>
+   <version>6.1.0</version>
    <scope>provided</scope>
 </dependency>
 ```
 
 However, the `org.hibernate` dependency has a transitive dependency on `javax.persistence-api` as well which is part of the old Java Persistence API so this also needs to be updated.
 
-As a side note, you can see this dependency in IntelliJ IDEA Ultimate by right-clicking on the dependency name and selecting **Show Dependencies** or **⌥⌘U** (macOS), **Ctrl+Alt+U** (Windows/Linux).
+As a side note, you can see this dependency in IntelliJ IDEA Ultimate by right-clicking on the dependency name and invoking Show Dependencies <kbd>⌥⌘U</kbd> (macOS) / <kbd>Ctrl+Alt+U</kbd> (Windows/Linux).
 
 ![Project dependencies in IntelliJ IDEA Ultimate](hibernate-dependencies.png)
 
@@ -66,6 +65,6 @@ To this beta version:
 </dependency>
 ```
 
-Next, we need to reload our `pom.xml` file with <kbd>⌘⇧I</kbd> (macOS) / <kbd>Ctrl+Shift+O</kbd> (Windows/Linux), or click the little Maven icon ![maven_icon.png](maven_icon.png).
+Next, we need to reload our `pom.xml` file with <kbd>⌘⇧I</kbd> (macOS) / <kbd>Ctrl+Shift+O</kbd> (Windows/Linux), or click the little Maven icon ![maven_icon.png](maven-icon.png).
 
 Now open your Project window with <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux) and note that your two Java files are underlined in red because they are in an error state. Let’s fix that next.

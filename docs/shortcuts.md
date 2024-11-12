@@ -170,7 +170,7 @@
 <kbd>⇥</kbd> (macOS) / <kbd>Tab</kbd> (Windows/Linux)                           - Code completion -> Insert Inline Proposal
 <kbd>⌘→</kbd> (macOS) / <kbd>End</kbd> (Windows/Linux)                          - Code completion -> Insert Inline Proposal's Line
 <kbd>⌥→</kbd> (macOS) / <kbd>Ctrl+Right Arrow</kbd> (Windows/Linux)             - Code completion -> Insert Inline Proposal's Word
-
+<kbd>⌥⌘U</kbd> (macOS) / <kbd>Ctrl+Alt+U</kbd> (Windows/Linux)                  - Show Dependencies
 <kbd>⌃⇧+mnemonic</kbd> (macOS) / <kbd>Ctrl+Shift+mnemonic</kbd> (Windows/Linux) - Toggle Mnemonic Bookmark   
 <kbd>^+mnemonic</kbd> (macOS) / <kbd>Ctrl+mnemonic</kbd> (Windows/Linux)        - Go to Mnemonic Bookmark
 <kbd>⌘</kbd> (macOS) / <kbd>Ctrl</kbd> (Windows/Linux)
