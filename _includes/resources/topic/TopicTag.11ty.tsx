@@ -8,10 +8,10 @@ export type TopicTagProps = {
 const TopicTag = ({ topic }: TopicTagProps): JSX.Element => {
 	return (
 		<Fragment>
-			<a class="tag is-info is-light" href={topic.url}>
+			<a class="tag is-outlined has-background-white" href={topic.url}>
 				{topic.label}
 			</a>
-			<span>&nbsp;&nbsp;</span>
+			<span>&nbsp;</span>
 		</Fragment>
 	);
 };

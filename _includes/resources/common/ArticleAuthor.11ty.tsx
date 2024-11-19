@@ -13,9 +13,9 @@ const ArticleTitleSubtitle = ({
 	displayDate,
 }: ArticleAuthorProps): JSX.Element => {
 	return (
-		<article class="media author mb-4">
+		<article class="media author is-size-7">
 			{author instanceof Author && (
-				<div class="p-2 is-32x32 media-left">
+				<div class="p-1 is-32x32 media-left">
 					<a href={author.url}>
 						<figure class="image is-32x32 m-0">
 							<AuthorIcon {...author} />

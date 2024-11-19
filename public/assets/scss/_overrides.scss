@@ -44,6 +44,9 @@ footer.pagefooter svg {
     outline: 1px solid $grey-light;
   }
 }
+.tag.is-outlined {
+  border: 1px solid $grey !important;
+}
 
 .columns.homepage-topics {
   border-radius: $radius-large * 2;

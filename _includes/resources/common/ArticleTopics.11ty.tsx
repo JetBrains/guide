@@ -7,8 +7,8 @@ export type ArticleTopicsProps = {
 
 const ArticleTopics = ({ topics }: ArticleTopicsProps): JSX.Element => {
 	return (
-		<article class="tags mb-4">
-			<div class="content p-2 m-0">
+		<article class="tags mt-2 mb-2">
+			<div class="content p-1 m-0">
 				{topics.map((topic: Topic) => (
 					<TopicTag topic={topic} />
 				))}
