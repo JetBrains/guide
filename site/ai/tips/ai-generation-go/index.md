@@ -1,7 +1,7 @@
 ---
 date: 2024-11-20
 title: AI Code Generation in Go
-subtitle: Using AI to generate Code in GoLand
+subtitle: Using AI to generate code in GoLand
 topics:
   - ai
 author: hs

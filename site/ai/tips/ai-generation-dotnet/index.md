@@ -1,7 +1,7 @@
 ---
 date: 2024-11-20
 title: "AI Code Generation in .NET"
-subtitle: Using AI to generate Code in Rider
+subtitle: Using AI to generate code in Rider
 topics:
   - ai
 author: hs

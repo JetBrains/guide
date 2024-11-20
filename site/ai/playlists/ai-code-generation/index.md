@@ -1,6 +1,6 @@
 ---
 date: 2024-11-20
-title: Code Completion
+title: AI Code Generation
 topics:
   - ai
   - completion
