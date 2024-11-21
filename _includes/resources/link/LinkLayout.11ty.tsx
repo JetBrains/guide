@@ -9,6 +9,7 @@ import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import RelatedResources from "../../relatedresources/RelatedResources.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
+import EditArticle from "../common/EditArticle.11ty";
 
 export type LinkLayoutData = LayoutProps & LinkFrontmatter;
 
@@ -51,6 +52,7 @@ export function LinkLayout(
 									subtitle={link.subtitle}
 								/>
 								<ArticleAuthor author={author} displayDate={link.displayDate} />
+								<EditArticle path={page.inputPath} />
 								<ArticleTopics topics={topics} />
 
 								<p>

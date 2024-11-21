@@ -26,7 +26,7 @@ const ArticleTitleSubtitle = ({
 			<div class="media-content">
 				<div class="content">
 					<p class="m-0">
-						<a href={author.url}>
+						<a href={author.url} class="has-text-grey-dark is-underlined">
 							{author.title} {(author as any).isGuest && "(Community)"}
 						</a>
 					</p>

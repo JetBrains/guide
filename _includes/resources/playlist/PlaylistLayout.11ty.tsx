@@ -10,6 +10,7 @@ import { Author } from "../author/AuthorModels";
 import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 import path from "upath";
+import EditArticle from "../common/EditArticle.11ty";
 
 export type PlaylistLayoutData = LayoutProps & PlaylistFrontmatter;
 
@@ -92,6 +93,7 @@ export function PlaylistLayout(
 				title={playlist.title}
 				subtitle={playlist.subtitle}
 			/>
+			<EditArticle path={page.inputPath} />
 			<ArticleAuthor author={author} displayDate={playlist.displayDate} />
 			{playlist.references?.topics && (
 				<ArticleTopics topics={playlist.references?.topics} />

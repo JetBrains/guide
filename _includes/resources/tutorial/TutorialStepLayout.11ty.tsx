@@ -9,6 +9,7 @@ import ArticleAuthor from "../common/ArticleAuthor.11ty";
 import ArticleTopics from "../common/ArticleTopics.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 import { UserComments } from "../../userComments.11ty";
+import EditArticle from "../common/EditArticle.11ty";
 
 export type TutorialStepLayoutData = LayoutProps & TutorialStepFrontmatter;
 
@@ -64,6 +65,7 @@ export function TutorialStepLayout(
 				author={references!.author}
 				displayDate={tutorialStep.displayDate}
 			/>
+			<EditArticle path={page.inputPath} />
 			<ArticleTopics topics={references!.topics} />
 
 			{video && !videoBottom && <div class="mb-4">{video}</div>}
