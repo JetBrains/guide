@@ -7,6 +7,7 @@ import ArticleTopics from "../common/ArticleTopics.11ty";
 import HorizontalResourceCard from "../../resourcecard/HorizontalResourceCard.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 import { UserComments } from "../../userComments.11ty";
+import EditArticle from "../common/EditArticle.11ty";
 
 export type TutorialLayoutData = LayoutProps & TutorialFrontmatter;
 
@@ -74,6 +75,7 @@ export function TutorialLayout(
 				author={references!.author}
 				displayDate={tutorial.displayDate}
 			/>
+			<EditArticle path={page.inputPath} />
 			<ArticleTopics topics={references!.topics} />
 
 			{content ? <div class="mb-4">{content}</div> : null}

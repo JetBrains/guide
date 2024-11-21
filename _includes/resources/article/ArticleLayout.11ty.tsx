@@ -11,6 +11,7 @@ import ArticleTopics from "../common/ArticleTopics.11ty";
 import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 import { UserComments } from "../../userComments.11ty";
+import EditArticle from "../common/EditArticle.11ty";
 
 export type ArticleLayoutData = LayoutProps & ArticleFrontmatter;
 
@@ -50,6 +51,7 @@ export function ArticleLayout(
 								author={author}
 								displayDate={article.displayDate}
 							/>
+							<EditArticle path={page.inputPath} />
 							<ArticleTopics topics={topics} />
 
 							{article.animatedGif && <AnimatedGif {...article.animatedGif} />}

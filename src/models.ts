@@ -36,7 +36,7 @@ export interface LayoutContext {
 	 * getResources(["topic", "author"]) => Array<Topic | Author>
 	 */
 	getResources<T extends RESOURCE_TYPES | POSSIBLE_RESOURCE_TYPES>(
-		filter?: QueryFilter<T>
+		filter?: QueryFilter<T>,
 	): RESOURCE_MODELS_BY_TYPE<T>;
 	getResource(url: string): Resource;
 	renderMarkdown(content: string): string;
@@ -49,6 +49,7 @@ export type LayoutProps = {
 	content: string;
 	page: {
 		fileSlug: string;
+		inputPath: string;
 		url: string;
 		date: Date;
 	};

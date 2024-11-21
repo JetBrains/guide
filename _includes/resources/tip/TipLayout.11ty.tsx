@@ -12,6 +12,7 @@ import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
 import RelatedResources from "../../relatedresources/RelatedResources.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 import { UserComments } from "../../userComments.11ty";
+import EditArticle from "../common/EditArticle.11ty";
 
 export type TipLayoutData = LayoutProps & TipFrontmatter;
 
@@ -54,6 +55,7 @@ export function TipLayout(
 									subtitle={tip.subtitle}
 								/>
 								<ArticleAuthor author={author} displayDate={tip.displayDate} />
+								<EditArticle path={page.inputPath} />
 								<ArticleTopics topics={topics} />
 
 								{tip.animatedGif && <AnimatedGif {...tip.animatedGif} />}
