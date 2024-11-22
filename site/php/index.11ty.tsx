@@ -7,11 +7,7 @@ import {
 	ChannelHomepageData,
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
-import {
-	LINK_RESOURCE,
-	TIP_RESOURCE,
-	TUTORIAL_RESOURCE,
-} from "../../src/resourceType";
+import { TUTORIAL_RESOURCE } from "../../src/resourceType";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "PHP",
@@ -36,35 +32,11 @@ class PHPHomepage {
 	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
-		const links = this.getResources({
-			resourceTypes: [LINK_RESOURCE],
-			// would look across the guide for AI content
-			//customFilter: (r) => r.topics?.includes("ai") == true,
-			// anything under AI that's a link
-			customFilter: (r) =>
-				r.channel == channel.url || r.topics?.includes("php") == true,
-			limit: 8,
-		});
-
-		const tips = this.getResources({
-			resourceTypes: [TIP_RESOURCE],
-			customFilter: (r) =>
-				r.channel == channel.url && r.topics?.includes("php") == true,
-			limit: 4,
-		});
-
 		const tutorials = this.getResources({
 			resourceTypes: [TUTORIAL_RESOURCE],
 			channel: channel.url,
 			limit: 4,
 		});
-
-		const link = this.getResources({
-			resourceTypes: [LINK_RESOURCE],
-			channel: channel.url,
-			limit: 4,
-		});
-
 		return (
 			<BaseLayout {...data}>
 				<HeroSection
@@ -74,17 +46,6 @@ class PHPHomepage {
 					titleExtraClass={"has-text-white"}
 					subtitleExtraClass={"has-text-white"}
 				/>
-
-				{links && (
-					<ListingSection
-						title={`Latest links`}
-						resources={links}
-						separator={false}
-						includeCardFooter={false}
-						moreLink={`${channel.url}links/`}
-						sectionExtraClass={"has-background-grey-lighter"}
-					/>
-				)}
 
 				{tutorials && (
 					<ListingSection
