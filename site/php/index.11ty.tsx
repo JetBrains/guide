@@ -59,6 +59,12 @@ class PHPHomepage {
 			limit: 4,
 		});
 
+		const link = this.getResources({
+			resourceTypes: [LINK_RESOURCE],
+			channel: channel.url,
+			limit: 4,
+		});
+
 		return (
 			<BaseLayout {...data}>
 				<HeroSection
