@@ -54,7 +54,7 @@ class PHPHomepage {
 		});
 
 		const tutorials = this.getResources({
-			resourceTypes: ["tutorial"],
+			resourceTypes: [TUTORIAL_RESOURCE],
 			channel: channel.url,
 			limit: 4,
 		});
