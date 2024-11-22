@@ -7,7 +7,7 @@ import {
 	ChannelHomepageData,
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
-import { TUTORIAL_RESOURCE } from "../../src/resourceType";
+import { TUTORIAL_RESOURCE, LINK_RESOURCE } from "../../src/resourceType";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "PHP",
@@ -37,6 +37,14 @@ class PHPHomepage {
 			channel: channel.url,
 			limit: 4,
 		});
+
+		const links = this.getResources({
+			resourceTypes: [LINK_RESOURCE],
+			customFilter: (r) =>
+				r.channel == channel.url || r.topics?.includes("php") == true,
+			limit: 8,
+		});
+
 		return (
 			<BaseLayout {...data}>
 				<HeroSection
@@ -53,7 +61,17 @@ class PHPHomepage {
 						resources={tutorials}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={`${channel.url}tutorials/`}
+						// moreLink={`${channel.url}tutorials/`}
+						sectionExtraClass={"has-background-grey-lighter"}
+					/>
+				)}
+				{links && (
+					<ListingSection
+						title={`Latest links`}
+						resources={links}
+						separator={false}
+						includeCardFooter={false}
+						// moreLink={`${channel.url}links/`}
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
