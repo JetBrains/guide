@@ -6,7 +6,6 @@ topics:
   - build
   - gradle
   - maven
-  - packagesearch
   - security
 author: md
 subtitle: Find and fix vulnerabilities inside IntelliJ IDEA Ultimate Summary.

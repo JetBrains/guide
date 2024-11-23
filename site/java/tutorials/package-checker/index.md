@@ -7,7 +7,6 @@ topics:
   - build
   - gradle
   - maven
-  - packagesearch
 author: md
 subtitle: Find and fix vulnerabilities inside IntelliJ IDEA Ultimate.
 thumbnail: ./thumbnail.png

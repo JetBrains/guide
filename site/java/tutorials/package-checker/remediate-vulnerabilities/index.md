@@ -6,7 +6,6 @@ topics:
   - build
   - gradle
   - maven
-  - packagesearch
   - security
 author: md
 subtitle: Remediate dependencies using IntelliJ IDEA Ultimate.

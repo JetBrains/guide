@@ -9,15 +9,7 @@ subtitle: Add or update dependencies in your build.gradle file.
 thumbnail: ./thumbnail.png
 ---
 
-Let's look at Gradle dependencies in a bit more detail. We can add a new dependency upon an external library using the Package Search tool window. First, check that the Package Search tool window is enabled by going to your Settings with <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux) and then selecting Plugins from the menu on the left. Search for "package search" and if it's not already installed, install it.
-
-![package-search-plugin.png](package-search-plugin.png)
-
-Select the Package Search tool window from the toolbar windows on the left and search for your dependency. We can type the name, or full path, of the artifact we're trying to add, and IntelliJ IDEA will give a list of possible matches.
-
-![Artifact search](./artifact-search.png)
-
-We can tab into the list of results and move down to the one we want. We can see all the versions by pressing right arrow on the artifact, although generally we're going to want to select the most recent version.
+Let's look at Gradle dependencies in a bit more detail. We can add a new dependency upon an external library with <kbd>⌘N</kbd> (macOS) / <kbd>Alt+Insert</kbd> (Windows/Linux), select **Add Maven artifact dependency**. You can now locate your dependency in the tool window.
 
 IntelliJ IDEA will insert the new dependency, usually with the `implementation` configuration:
 

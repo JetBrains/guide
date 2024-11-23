@@ -5,7 +5,6 @@ title: Gradle projects
 topics:
   - build
   - gradle
-  - packagesearch
   - security
 author: md
 subtitle: View vulnerable dependencies in Gradle projects.

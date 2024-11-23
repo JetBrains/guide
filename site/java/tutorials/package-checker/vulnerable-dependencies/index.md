@@ -6,7 +6,6 @@ topics:
   - build
   - gradle
   - maven
-  - packagesearch
   - security
 author: md
 subtitle: View vulnerable dependencies in the Vulnerable Dependencies tool window.

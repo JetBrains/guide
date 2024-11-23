@@ -5,7 +5,6 @@ title: Maven projects
 topics:
   - build
   - maven
-  - packagesearch
   - security
 author: md
 subtitle: View vulnerable dependencies in Maven projects.

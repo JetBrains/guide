@@ -57,4 +57,4 @@ Similarly to Search Everywhere, Run Anything <kbd>⌃⌃</kbd> (macOS) / <kbd>Ct
 
 Managing dependencies is something that we're all likely to need to do sooner or later and IntelliJ IDEA supports multiple ways of achieving it. Many of you will be used to using IntelliJ IDEA's completion capabilities in the `pom.xml` or `build.gradle` file.
 
-IntelliJ IDEA has also introduced a Dependencies window which you can access with Search Everywhere <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux) and then by typing in "dependencies" and pressing Enter. In this window you can add, remove and update you dependencies. You can also take a look at [Package Search](https://package-search.jetbrains.com/) if you don't have the IDE open.
+IntelliJ IDEA has also introduced a Dependencies window which you can access with Search Everywhere <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux) and then by typing in "dependencies" and pressing Enter. In this window you can add, remove and update you dependencies.

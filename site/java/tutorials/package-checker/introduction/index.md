@@ -6,7 +6,6 @@ topics:
   - build
   - gradle
   - maven
-  - packagesearch
   - security
 author: md
 subtitle: Package Checker plugin in IntelliJ IDEA Ultimate.
