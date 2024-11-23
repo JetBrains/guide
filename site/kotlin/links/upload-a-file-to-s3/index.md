@@ -2,7 +2,6 @@
 date: 2024-10-16
 title: "AWS SDK Kotlin Series - Upload a file to S3"
 topics:
-  - ai
   - kotlin
 author: isabelgarrido
 subtitle: "Part one of three"
