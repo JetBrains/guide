@@ -14,7 +14,6 @@ tutorialItems:
   - ./build-wrapper-settings/
   - ./multi-projects-structure/
   - ./clean-test-smart-build/
-  - ./dependency-package-search/
   - ./implementation-api-scope/
   - ./plugins-repositories/
   - ./modifying-tasks-issues/
