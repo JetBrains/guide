@@ -15,6 +15,5 @@ tutorialItems:
   - ./build-file/
   - ./project-tool-window/
   - ./build-tool-window/
-  - ./dependency-tool-window/
   - ./summary/
 ---

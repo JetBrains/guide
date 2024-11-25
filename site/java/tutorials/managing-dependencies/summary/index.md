@@ -6,7 +6,6 @@ topics:
   - build
   - gradle
   - maven
-  - packagesearch
 author: md
 subtitle: Managing dependencies in IntelliJ IDEA Summary.
 thumbnail: ./thumbnail.png
@@ -27,12 +26,8 @@ Here are the IntelliJ IDEA shortcuts that we used.
 
 ### Related Links
 
-- [(video) JetBrains - IntelliJ IDEA: Viewing Dependencies](https://www.youtube.com/watch?v=1wnsc8hYM4c)
-- [(video) JetBrains - IntelliJ IDEA: Managing Dependencies](https://www.youtube.com/watch?v=nqb9yAecM9Y)
 - [(video) JetBrains - IntelliJ IDEA: Analyzing Dependencies](https://www.youtube.com/watch?v=La3Cp-O05eQ)
 - [(video) JetBrains – IntelliJ IDEA Ultimate: Package Checker](https://www.youtube.com/watch?v=RWtN4WNQsX4)
-- [(docs) JetBrains - Package Search](https://www.jetbrains.com/help/idea/package-search.html)
-- [(docs) JetBrains - Package Search Build System Support Limitations](https://www.jetbrains.com/help/idea/package-search-build-system-support-limitations.html)
 - [(code) JetBrains - intellij-samples](https://github.com/JetBrains/intellij-samples)
 - [(code) Spring PetClinic](https://github.com/spring-projects/spring-petclinic)
 - [(book) Getting to Know IntelliJ IDEA - Trisha Gee & Helen Scott](https://leanpub.com/gettingtoknowIntelliJIDEA)

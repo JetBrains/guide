@@ -7,7 +7,6 @@ topics:
   - build
   - gradle
   - maven
-  - packagesearch
 author: md
 subtitle: Managing dependencies in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
@@ -15,6 +14,5 @@ tutorialItems:
   - ./introduction/
   - ./add-dependencies/
   - ./update-dependencies/
-  - ./remove-dependencies/
   - ./summary/
 ---

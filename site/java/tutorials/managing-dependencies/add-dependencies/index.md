@@ -6,7 +6,6 @@ topics:
   - build
   - gradle
   - maven
-  - packagesearch
 author: md
 subtitle: Different ways to add dependencies in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
@@ -68,69 +67,3 @@ Note that if we are using Gradle, we can do the same in our build.gradle file.
 
 **Note:** If you cannot invoke Package Search, make sure the [Package Search](https://plugins.jetbrains.com/plugin/12507-package-search) plugin is installed. To do so, open **Preferences**
 <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux), go to **Plugins** and check to see whether the Package Search plugin is installed. If not, go to the **Marketplace** tab to install it.
-
-## From the Dependencies tool window
-
-Alternatively, we can open the _Dependencies_ tool window directly. There is no shortcut to open the _Dependencies_ tool window, so we can either use Recent Files, <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux), and type in "dependencies" to open the _Dependencies_ tool window.
-
-![Recent Files Dependencies](recent-files-dependencies.png)
-
-**Note:** If you cannot find the _Dependencies_ tool window, make sure the [Package Search](https://plugins.jetbrains.com/plugin/12507-package-search) plugin is installed, as mentioned above.
-
-Alternatively, we can open it by clicking **Quick Launch** in the bottom-left and selecting **Dependencies**.
-
-![Quick Launch Dependencies](quick-launch-dependencies.png)
-
-In the **Dependencies tool window**, we can search for a dependency. For example, let's search for AssertJ.
-
-![Search AssertJ](search-assertj-gradle.png)
-
-Note that we can select a scope for this dependency. The names of the scopes are based on the build tool with which you are working. Since this is a test dependency, and we are using Gradle in this project, we can set the scope to testImplementation.
-
-![Set Scope](set-scope.png)
-
-We can also select the version we want to use.
-
-![Set Version](set-version.png)
-
-We can do the same in Maven.
-
-![Search AssertJ](search-assertj-mvn.png)
-
-Note that the names of scopes for Maven are different from Gradle. In Maven, we can set the scope for a test dependency to test.
-
-![Scope Maven](scope-maven.png)
-
-When we click **Add**, we see that the dependency is added to the build file.
-
-![Add AssertJ](add-assertj.png)
-
-If the version number is shown in red, that means IntelliJ IDEA hasn’t downloaded this library before. Click **Load Maven Changes** so IntelliJ IDEA will update its dependencies based on the changes to the pom.xml or build.gradle file.
-
-Go back to the **Dependencies tool window** and clear the search box by clicking the **x** on the right-hand side. You’ll see the project’s dependencies are updated with your new dependency.
-
-Next, let's look for jackson-databind. We see that there are several versions available. Since we have selected _Only stable_, only stable versions are shown in the list.
-
-![Jackson-Databind Versions](jackson-versions.png)
-
-If we uncheck this option, we see that the list of versions also includes the release candidates.
-
-![Jackson-Databind Only Stable Versions](jackson-versions-stable.png)
-
-For production code, we probably want to use stable versions, so let's select the **Only stable** checkbox again. With this option enabled, IntelliJ IDEA will exclude any dependencies that have no stable versions, and hide them from the list. Now we can select the latest stable version and add this to our project. Let's also **Load Maven Changes** again.
-
-Finally, let's also add a new dependency to the Kotlin module. Let's switch to the Kotlin module and open the pom.xml for this module. Open the _Dependencies_ tool window and search for Ktor.
-
-![Search Ktor](search-ktor.png)
-
-Notice that some dependencies are marked as Multiplatform.
-
-![Show Kotlin Multiplatform](show-kotlin-multiplatform.png)
-
-If we want to see only Kotlin multiplatform dependencies, we can select the **Kotlin multiplatform** checkbox, as shown below.
-
-![Select Kotlin Multiplatform](select-kotlin-multiplatform.png)
-
-When we click **Add** to the right of the Ktor dependency, we see that Ktor is added to the list of dependencies and to the pom.xml for the Kotlin module.
-
-![Add Ktor](add-ktor.png)

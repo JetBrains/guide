@@ -6,7 +6,6 @@ topics:
   - build
   - gradle
   - maven
-  - packagesearch
 author: md
 subtitle: Upgrade dependencies using Package Search.
 thumbnail: ./thumbnail.png
@@ -23,21 +22,3 @@ IntelliJ IDEA will show the suggestion to upgrade when we hover over the depende
 Alternatively, we can use Context Actions <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) to upgrade these dependencies.
 
 ![Context Actions](context-action.png)
-
-We can also upgrade our dependencies using the _Dependencies_ tool window. The _Dependencies_ tool window will tell us if there’s a newer version of a dependency, as we can see here.
-
-![Dependencies with newer versions](dependencies-with-upgrades.png)
-
-**Note:** If you cannot find the _Dependencies_ tool window, make sure the [Package Search](https://plugins.jetbrains.com/plugin/12507-package-search) plugin is installed.
-
-We can choose the version to upgrade to by clicking on the version number in the list. Note that we don’t have to use the latest version.
-
-![Select version](select-version.png)
-
-We can also automatically upgrade a dependency to the latest version by clicking **Upgrade** for that particular dependency.
-
-![Upgrade individual dependency](upgrade-individual.png)
-
-Or, we can even upgrade all our dependencies at once, by clicking **Upgrade all**.
-
-![Upgrade all dependencies](upgrade-all.png)
