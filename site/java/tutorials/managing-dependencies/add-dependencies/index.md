@@ -54,16 +54,3 @@ Code completion works in Gradle too, as you can see below.
 ![Code completion in build.gradle](build-gradle-code-completion-1.png)
 
 ![Code completion in build.gradle](build-gradle-code-completion-2.png)
-
-## From the build file using code generation
-
-We can also use code generation from the build file to add dependencies. In the build file, the pom.xml in a Maven project, invoke Package Search using **⌘N** (on macOS) or **Alt+Insert** (on Windows & Linux) and in the menu that opens, select **Add dependency**. This will open the **Dependencies tool window**.
-
-![Invoke Package Search in pom.xml](add-dependency-pom-xml.png)
-
-Note that if we are using Gradle, we can do the same in our build.gradle file.
-
-![Invoke Package Search in build.gradle](add-dependency-build-gradle.png)
-
-**Note:** If you cannot invoke Package Search, make sure the [Package Search](https://plugins.jetbrains.com/plugin/12507-package-search) plugin is installed. To do so, open **Preferences**
-<kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux), go to **Plugins** and check to see whether the Package Search plugin is installed. If not, go to the **Marketplace** tab to install it.

@@ -21,7 +21,6 @@ Here are the IntelliJ IDEA shortcuts that we used.
 | ------------------------------------------------------------------------------------------------ | -------------- | ------------------------ |
 | Open / Close [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html) | <kbd>⌘1</kbd>  | <kbd>Alt+1</kbd>         |
 | Recent Files                                                                                     | <kbd>⌘E</kbd>  | <kbd>Control+E</kbd>     |
-| Invoke Package Search                                                                            | <kbd>⌘N</kbd>  | <kbd>Alt+Insert</kbd>    |
 | Context Actions                                                                                  | <kbd>⌥⏎</kbd>  | <kbd>Alt+Enter</kbd>     |
 
 ### Related Links

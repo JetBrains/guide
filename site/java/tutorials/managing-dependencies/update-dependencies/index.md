@@ -7,7 +7,7 @@ topics:
   - gradle
   - maven
 author: md
-subtitle: Upgrade dependencies using Package Search.
+subtitle: Upgrade dependencies
 thumbnail: ./thumbnail.png
 ---
 
