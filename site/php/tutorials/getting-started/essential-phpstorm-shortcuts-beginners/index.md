@@ -10,3 +10,7 @@ video: "https://youtu.be/nsyUDQ29XSY"
 ---
 
 In this episode, we highlight two essential keyboard shortcuts: <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux) helps you find anything within your project, while <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) provides instant access to contextual actions and quick fixes relevant to the selected code.
+
+<video controls width="100%">
+  <source src="./01-01.webm" type="video/webm" />
+</video>
