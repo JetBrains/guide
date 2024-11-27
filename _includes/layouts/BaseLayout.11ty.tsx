@@ -45,10 +45,13 @@ export function BaseLayout(
 	// determine if there's an og:image
 	let channel: Channel | undefined = undefined;
 	let thumbnail: string | undefined = undefined;
-	let linkURL: string | undefined = undefined;
+	let canonicalURL: string | undefined = undefined;
+
 	if (resourceType) {
 		const resource = collections.resourceMap.get(data.page.url) as Resource;
 		const resourceThumbnail = resource?.getThumbnail();
+		canonicalURL = resource?.canonical;
+
 		// make sure we don't try to use fontawesome icons as the thumbnail image
 		if (
 			resourceThumbnail &&
@@ -71,7 +74,13 @@ export function BaseLayout(
 		}
 
 		if (isLink(resource)) {
-			linkURL = resource?.linkURL;
+			if (canonicalURL) {
+				console.warn(
+					`canonical URL (${canonicalURL}) set on ${resource.url} but is a Link URL. Ignoring.`,
+				);
+			}
+			// overwrite canonical URL if this is a Link URL
+			canonicalURL = resource?.linkURL;
 		}
 	}
 
@@ -132,7 +141,7 @@ export function BaseLayout(
 						<script defer src="/assets/js/video.js" type="module"></script>
 					</Fragment>
 				)}
-				{linkURL && <link rel="canonical" href={linkURL} />}
+				{canonicalURL && <link rel="canonical" href={canonicalURL} />}
 				<link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
 				<link rel="shortcut icon" href="/assets/favicon.ico" />
 				<link
