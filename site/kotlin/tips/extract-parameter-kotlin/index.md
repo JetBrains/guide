@@ -15,6 +15,8 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Extract Parameter
     href: "https://www.jetbrains.com/help/idea/extract-parameter.html"
 video: "https://youtu.be/qRruPW6h2vc"
+obsoletes:
+  - /java/tips/extract-parameter-kotlin/
 ---
 
 Highlight the code you want to extract to a field and press <kbd>⌥⌘P</kbd> (macOS) / <kbd>Ctrl+Alt+P</kbd> (Windows/Linux), to extract it.
