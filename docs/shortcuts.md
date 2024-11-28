@@ -36,6 +36,7 @@
 <kbd>^G</kbd> (macOS) / <kbd>Alt+J</kbd> (Windows/Linux)                        - Add Selection for Next Occurrence
 <kbd>⌘J</kbd> (macOS) / <kbd>Ctrl+J</kbd> (Windows/Linux)                       - Insert Live Template
 <kbd>⌘⌥J</kbd> (macOS) / <kbd>Ctrl+Alt+J</kbd> (Windows/Linux)                  - Surround With Live Template
+<kbd>⌥⌘T</kbd> (macOS) / <kbd>Ctrl+Alt+T</kbd> (Windows/Linux)                  - Surround With
 <kbd>⌘⌃G</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+J</kbd> (Windows/Linux)            - Select All Occurrences
 <kbd>^⇧G</kbd> (macOS) / <kbd>Alt+Shift+J</kbd> (Windows/Linux)                 - Unselect Occurrence
 <kbd>⌘⇧F</kbd> (macOS) / <kbd>Ctrl+Shift+F</kbd> (Windows/Linux)                - Find in Files
@@ -86,7 +87,7 @@
 <kbd>F7</kbd> (macOS) / <kbd>F7</kbd> (Windows/Linux)                           - Step into
 <kbd>⌥⌘R</kbd> (macOS) / <kbd>F9</kbd> (Windows/Linux)                          - Resume Program
 <kbd>⌃⇧P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux)                - Show Type Parameter Information
-<kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux)                     - Show Quick Switch Schema
+<kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux)                     - Show Quick Switch Scheme
 <kbd>⌥⌘T</kbd> (macOS) / <kbd>Ctrl+Alt+T</kbd> (Windows/Linux)                  - Surround With
 <kbd>⌥⌘-</kbd> (macOS) / <kbd>Ctrl+Alt+-</kbd> (Windows/Linux)                  - Folding Collapse Recursively 
 <kbd>⌥⌘+</kbd> (macOS) / <kbd>Ctrl+Alt++</kbd> (Windows/Linux)                  - Folding Expand Recursively
