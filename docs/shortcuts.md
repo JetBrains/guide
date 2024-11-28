@@ -174,6 +174,9 @@
 <kbd>⌥⌘U</kbd> (macOS) / <kbd>Ctrl+Alt+U</kbd> (Windows/Linux)                  - Show Dependencies
 <kbd>⌃⇧+mnemonic</kbd> (macOS) / <kbd>Ctrl+Shift+mnemonic</kbd> (Windows/Linux) - Toggle Mnemonic Bookmark   
 <kbd>^+mnemonic</kbd> (macOS) / <kbd>Ctrl+mnemonic</kbd> (Windows/Linux)        - Go to Mnemonic Bookmark
+<kbd>⌃⌥=</kbd> (macOS) / <kbd>Alt+Shift+=</kbd> (Windows/Linux)                 - Zoom In
+<kbd>⌃⌥-</kbd> (macOS) / <kbd>Alt+Shift+-</kbd> (Windows/Linux)                 - Zoom Out
+<kbd>⌃⌥0</kbd> (macOS) / <kbd>Alt+Shift+0</kbd> (Windows/Linux)                 - Reset IDE Scale
 <kbd>⌘</kbd> (macOS) / <kbd>Ctrl</kbd> (Windows/Linux)
 <kbd>⌘</kbd> (macOS) / <kbd>Alt</kbd> (Windows/Linux)
 <kbd>+</kbd> (macOS) / <kbd>Plus</kbd> (Windows/Linux)

@@ -1,5 +1,5 @@
 ---
-date: 2021-05-05
+date: 2024-11-29
 title: Use Pattern Matching for instanceof
 topics:
   - inspections
@@ -7,7 +7,7 @@ topics:
 author: tg
 subtitle: Inspections can guide us to use newer Java features.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/qCfuQkddCEM"
+video: "https://youtu.be/mM3IEFnIcy8"
 callToAction:
   url: "/java/tips/pattern-matching-switch/"
   message: "You can also use pattern matching for switch statements!"
