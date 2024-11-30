@@ -26,6 +26,8 @@ Launch your GoLand IDE and initiate a new Go project. Specify your desired proje
 
 ![Creating a Go application](./images/1.png)
 
+If you are using the command-line, you will need to `go mod init Zero`.
+
 Create a `main.go` file within the project directory. This file will act as the central hub for your project's codebase:
 
 ![Sample of a newly created main.go file](./images/2.png)
@@ -97,7 +99,6 @@ import "Zero/cmd"
 func main() {
     cmd.Execute()
 }
-```
 
 ![Contents of main.go file](./images/6.png)
 
