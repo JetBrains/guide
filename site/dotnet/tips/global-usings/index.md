@@ -32,7 +32,7 @@ More often than not, developers find themselves using the same namespaces such a
 Every new class file you create begins with an almost identical few lines of `using` declarations.
 But with global using directives, we can now consolidate these common namespaces in a single file. This results in a cleaner, consistent, and more organized codebase.
 
-Global usings are available in C# 10 and later, and can be configured in the `.csprog` file by settings the `ImplicitUsings` flag, like so:
+Global usings are available in C# 10 and later, and can be configured in the `.csproj` file by settings the `ImplicitUsings` flag, like so:
 
 `<ImplicitUsings>enable</ImplicitUsings>`
 
