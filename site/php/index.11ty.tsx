@@ -11,14 +11,13 @@ import { TUTORIAL_RESOURCE, LINK_RESOURCE } from "../../src/resourceType";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "PHP",
-	subtitle:
-		"A popular general-purpose scripting language that is especially suited to web development.",
+	subtitle: "Scripting language especially \n suited to web development.",
 	resourceType: "channel",
 	date: new Date(Date.UTC(2024, 11, 22)),
 	author: "hs",
-	logo: "thumbnail.svg",
-	hero: "/assets/splashes/kotlin.svg",
-	subnav: [{ title: "PHP", url: "https://www.jetbrains.com/phpstorm/" }],
+	logo: "thumbnail.png",
+	hero: "/assets/splashes/php.svg",
+	subnav: [{ title: "PHP", url: "htt ps://www.jetbrains.com/phpstorm/" }],
 };
 
 class PHPHomepage {
