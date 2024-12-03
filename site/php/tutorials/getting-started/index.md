@@ -11,9 +11,9 @@ subtitle: A tutorial to help enhance your productivity with PhpStorm right from 
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./essential-phpstorm-shortcuts-beginners/
-  - ./getting-started-with-phpstorm/
-  - ./refactoring-simplifying-workflow-phpstorm/
+  - ./getting-started-with-php/
   - ./leveraging-phpstorm-error-detection/
+  - ./refactoring-simplifying-workflow-phpstorm/
   - ./getting-started-testing-phpstorm/
   - ./debugging-with-phpstorm/
 ---
