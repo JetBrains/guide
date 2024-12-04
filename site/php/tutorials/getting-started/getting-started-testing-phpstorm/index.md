@@ -7,7 +7,7 @@ author: brentroose
 subtitle: Here, we delve into PhpStorm's robust error detection and correction capabilities.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/vUWp2zkaQzc"
-linkUrl: https://www.jetbrains.com/phpstorm/getting-started/episode-5/
+canonical: https://www.jetbrains.com/phpstorm/getting-started/episode-5/
 ---
 
 In this episode, we’ll explore how PhpStorm supports various testing frameworks like PHPUnit, Pest, Behat, Codeception, and PHPSpec. You'll learn how to run test suites directly within the IDE, analyze test results, leverage watch mode for automatic reruns, and generate test files effortlessly.

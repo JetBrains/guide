@@ -7,7 +7,7 @@ author: brentroose
 subtitle: Reduce the learning curve and enhance your productivity in PhpStorm from day one.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/nsyUDQ29XSY"
-linkUrl: https://www.jetbrains.com/phpstorm/getting-started/episode-1/
+canonical: https://www.jetbrains.com/phpstorm/getting-started/episode-1/
 ---
 
 In this episode, we highlight two essential keyboard shortcuts: <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux) helps you find anything within your project, while <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) provides instant access to contextual actions and quick fixes relevant to the selected code.

@@ -7,7 +7,7 @@ author: brentroose
 subtitle: Build a solid foundation for diving deeper into the nuanced world of debugging in PhpStorm.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/ssZH94UfY6A"
-linkUrl: https://www.jetbrains.com/phpstorm/getting-started/episode-6/
+canonical: https://www.jetbrains.com/phpstorm/getting-started/episode-6/
 ---
 
 In this episode, you’ll learn about starting a debugging session, breakpoints, and stepping over and into code with Xdebug.
