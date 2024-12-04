@@ -7,7 +7,7 @@ author: brentroose
 subtitle: Have PhpStorm handle the boring tasks
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/084ePq923-I"
-linkUrl: https://www.jetbrains.com/phpstorm/getting-started/episode-4/
+canonical: https://www.jetbrains.com/phpstorm/getting-started/episode-4/
 ---
 
 In this episode, we’ll showcase how easy and safe it is to perform refactorings, such as renaming namespaces, with just a few clicks. You'll learn how to call the Refactor This menu, preview changes, and apply them, dramatically simplifying tasks that would otherwise be time-consuming and error-prone.
