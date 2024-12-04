@@ -26,6 +26,16 @@ Launch your GoLand IDE and initiate a new Go project. Specify your desired proje
 
 ![Creating a Go application](./images/1.png)
 
+> **NOTE**: If you're creating the project from the command line, you'll need to initialize the Go module yourself. However, this step is automatically handled if you're using GoLand.
+
+If you're doing this from the terminal, run the following commands:
+
+```shell
+mkdir <path-to-your-project>/Zero
+cd <path-to-your-project>/Zero
+go mod init Zero
+```
+
 Create a `main.go` file within the project directory. This file will act as the central hub for your project's codebase:
 
 ![Sample of a newly created main.go file](./images/2.png)

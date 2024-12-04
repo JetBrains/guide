@@ -16,7 +16,7 @@ import { getContentType } from "../public/assets/js/utils";
 
 export function getThumbnailPath(
 	dataThumbnail: string,
-	pageURL: string
+	pageURL: string,
 ): string {
 	// If absolute URL, just use it
 	if (dataThumbnail.startsWith("/")) {
@@ -39,16 +39,16 @@ export const ResourceFrontmatter = Type.Intersect([
 			],
 			{
 				description: "Resource type. Should not be specified manually",
-			}
+			},
 		),
 		title: Type.String({ description: "Title of this resource" }),
 		subtitle: Type.Optional(
-			Type.String({ description: "Subtitle of this resource" })
+			Type.String({ description: "Subtitle of this resource" }),
 		),
 		obsoletes: Type.Optional(
 			Type.Array(Type.String(), {
 				description: "Paths that should redirect to this resource",
-			})
+			}),
 		),
 		// TODO JNW Sucks to have author on an Author
 		author: Type.String({ description: "Author of this resource" }),
@@ -58,17 +58,22 @@ export const ResourceFrontmatter = Type.Intersect([
 			["type"]: "string",
 		}),
 		channel: Type.Optional(
-			Type.String({ description: "Possible channel this resource is in" })
+			Type.String({ description: "Possible channel this resource is in" }),
 		),
 		tags: Type.Optional(
 			Type.Array(Type.String(), {
 				description: "11ty tag data",
-			})
+			}),
 		),
 		topics: Type.Optional(
 			Type.Array(Type.String(), {
 				description: "Topics related to this resource",
-			})
+			}),
+		),
+		canonical: Type.Optional(
+			Type.String({
+				description: "Canonical URL for this resource",
+			}),
 		),
 	}),
 ]);
@@ -98,6 +103,7 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 	obsoletes?: string[];
 	url: string;
 	channel?: string;
+	canonical?: string;
 	// TODO: JNW figure out why any is necessary here
 	static frontmatterSchema: any = ResourceFrontmatter;
 
@@ -124,6 +130,7 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 		this.channel = data.channel;
 		this.author = data.author;
 		this.date = new Date(data.date);
+		this.canonical = data.canonical;
 
 		const thisDate = DateTime.fromJSDate(data.date, { zone: "utc" });
 		const displayDate = thisDate.toFormat("yyyy-LL-dd");
@@ -147,7 +154,7 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 							fieldName,
 							resource: this,
 							resourceMap,
-					  })
+						})
 					: [],
 			};
 		}, {} as References);
@@ -167,7 +174,7 @@ export type ResourceMap = Map<string, Resource<RESOURCE_TYPES>>;
 
 export function getResourceType<T extends RESOURCE_TYPES>(
 	data: { resourceType?: T },
-	page: EleventyPage
+	page: EleventyPage,
 ): T {
 	if (!data.resourceType) {
 		const msg = `Page at "${page.url} does not have a resourceType`;

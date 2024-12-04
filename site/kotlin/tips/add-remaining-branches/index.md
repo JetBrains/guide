@@ -11,6 +11,8 @@ video: "https://youtu.be/7R1b5G3yx8U"
 callToAction:
   url: "/kotlin/tips/adding-call-args/"
   message: "You can add call arguments the same way!"
+obsoletes:
+  - /java/tips/add-remaining-branches/
 ---
 
 When a Kotlin expression requires us to cover all the possible options for a parameter, we can use <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux), to generate all the branches automatically.

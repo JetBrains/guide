@@ -1,10 +1,10 @@
 ---
-date: 2021-11-01
+date: 2024-11-29
 title: Complete Statement
 topics:
   - interface
   - tricks
-author: hs
+author: md
 subtitle: >-
   Complete statement can add your semicolons, brackets and manage caret placement for you.
 thumbnail: ./thumbnail.png
@@ -16,7 +16,7 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - Statement Completion
     href: >-
       https://www.jetbrains.com/help/idea/auto-completing-code.html#statements_completion
-video: "https://youtu.be/m6iY4p2rBoc"
+video: "https://youtu.be/rjQmWPa6Id0"
 callToAction:
   url: "/java/tips/completion/"
   message: "Complete statement is just one of many completions offered by IntelliJ IDEA!"

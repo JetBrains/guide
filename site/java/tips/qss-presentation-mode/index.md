@@ -1,5 +1,5 @@
 ---
-date: 2024-08-22
+date: 2024-11-27
 title: Presentation Mode
 topics:
   - tricks
