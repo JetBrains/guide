@@ -118,7 +118,9 @@ const ResourceCard = ({
 						{title}
 					</a>
 					{subtitle && !compactMode && (
-						<div class="content clamp clamp-5">{subtitle}</div>
+						<div class="content clamp clamp-5" data-template="subtitle">
+							{subtitle}
+						</div>
 					)}
 				</div>
 				{includeCardFooter && !compactMode && (
