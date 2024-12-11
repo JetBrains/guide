@@ -17,7 +17,7 @@ const frontmatter: ChannelFrontmatter = {
 	author: "hs",
 	logo: "thumbnail.png",
 	hero: "/assets/splashes/php.svg",
-	subnav: [{ title: "PHP", url: "htt ps://www.jetbrains.com/phpstorm/" }],
+	subnav: [{ title: "PHP", url: "https://www.jetbrains.com/phpstorm/" }],
 };
 
 class PHPHomepage {
