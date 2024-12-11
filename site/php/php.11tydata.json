@@ -1,0 +1,10 @@
+{
+	"channel": "/php/",
+	"callToAction": {
+		"title": "Interested in PHP Development?",
+		"url": "https://jb.gg/phpguide",
+		"action": "Learn More",
+		"image": "/tags/php/php-logo.png"
+	},
+	"message": "PHP developers love <strong>JetBrains PhpStorm</strong> and we think you will too. Check it out!"
+}

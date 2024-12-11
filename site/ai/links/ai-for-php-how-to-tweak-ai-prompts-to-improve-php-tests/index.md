@@ -3,6 +3,7 @@ date: 2024-02-19
 title: AI for PHP, How to Tweak AI Prompts to Improve PHP Tests
 topics:
   - ai
+  - php
 author: brentroose
 subtitle: Generate boiler plate code and jump straight to the more interesting part of making tests.
 thumbnail: ./thumbnail.png
