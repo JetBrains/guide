@@ -7,7 +7,7 @@ author: brentroose
 subtitle: Here, we delve into PhpStorm's robust error detection and correction capabilities.
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/8ruPytz5YCE"
-canonical: https://www.jetbrains.com/phpstorm/getting-started/episode-3/
+canonical: "https://www.jetbrains.com/phpstorm/getting-started/episode-3/"
 ---
 
 In this episode, you'll learn how to navigate and fix errors using intuitive keyboard shortcuts, scan your entire project for issues, and fine-tune inspection rules to match your coding standards.
