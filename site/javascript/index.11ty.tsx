@@ -24,7 +24,7 @@ const frontmatter: ChannelFrontmatter = {
 	accent: "primary",
 	icon: "fa-brands fa-js",
 	hero: "/assets/splashes/javascript.svg",
-	logo: "thumbnail.svg",
+	logo: "thumbnail.png",
 	subnav: [
 		{ title: "Tips", url: "/javascript/tips/" },
 		{ title: "Links", url: "/javascript/links/" },
