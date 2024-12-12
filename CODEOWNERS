@@ -31,8 +31,8 @@ CODEOWNERS "Project Admin"
 / "Project Collaborator"
 
 # Specific files and folders
-.space.kts "Maarten.Balliauw"
-src/* "Paul.Everitt" "KhalidAbuhakmeh"
-public/* "Paul.Everitt" "KhalidAbuhakmeh"
-_includes/* "Paul.Everitt" "KhalidAbuhakmeh"
-deployment "Mukul.Mantosh" "Maarten.Balliauw"
+.space.kts "Mukul.Mantosh" "Marco.Behler"
+src/* "Paul.Everitt" "Helen Scott"
+public/* "Paul.Everitt"
+_includes/* "Paul.Everitt"
+deployment "Mukul.Mantosh" "Marco.Behler"
