@@ -1,6 +1,6 @@
 ---
 title: Maarten Balliauw
-subtitle: Developer Advocate at JetBrains
+subtitle: .NET developer
 thumbnail: ./thumbnail.jpg
 author: maartenba
 date: 2020-01-01
