@@ -1,19 +1,21 @@
 ---
 type: TutorialStep
 date: 2021-09-20
-title: Moving Statements Around
+title: Moving Lines Around
 topics: []
 author: hs
-subtitle: Moving a statements up and down within their scope.
+subtitle: Moving a line, paragraph or selection up and down.
 thumbnail: ./thumbnail.png
 ---
 
-## Moving a Statement Up or Down in Your Class
+## Moving Content Up or Down in Your Class
 
-In the editor, place the caret in the statement you want to move and press <kbd>⌘⇧↑</kbd> (macOS) / <kbd>Ctrl+Shift+Up Arrow</kbd> (Windows/Linux) to move a statement up. Alternatively, use <kbd>⌘⇧↓</kbd> (macOS) / <kbd>Ctrl+Shift+Down Arrow</kbd> (Windows/Linux) to move a statement down.
+With your caret on a line, you can press <kbd>⌥⇧↑</kbd> (macOS) / <kbd>Ctrl+Shift+Up Arrow</kbd> (Windows/Linux), to move a line up. Alternatively, you can move a line down with <kbd>⌥⇧↓</kbd> (macOS) / <kbd>Ctrl+Shift+Down Arrow</kbd> (Windows/Linux). The same shortcut can move a selection up or down.
 
-IntelliJ IDEA will not let you move a statement outside its defined scope. This helps to keep your code green and compiling so it's a preferable way of moving your code as you're less likely to introduce errors. Of course, if you accidentally move the use of a variable higher than its definition, IntelliJ IDEA will highlight this in red to show you that while you're still in the correct scope, you need to define the variable first.
+Tip: For Windows, <kbd>Alt+Shift+Up Arrow</kbd> and <kbd>Alt+Shift+Down Arrow</kbd> also works on the default keyboard layout.
 
-## Moving Lines Around
+This does not account for scope. That means you can easily break your code by moving a line outside its scope so be careful! IntelliJ IDEA will move the whole paragraph if you're working with something like markdown.
 
-As well as moving statements around, you can also move lines around within your class. We'll look at this in the next step of this tutorial.
+## An Example of Moving Code Around
+
+Let's look at how you can rearrange your code in a whole class in the next step according to your code arrangement rules.
