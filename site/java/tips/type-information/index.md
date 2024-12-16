@@ -16,6 +16,6 @@ callToAction:
   message: "In addition to type information, you can get IntelliJ IDEA to give you parameter information too!"
 ---
 
-Are you unsure about the return type of method, or the type of expression? Pull up Type Information <kbd>⌃⌘P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux) to help you.
+Are you unsure about the return type of method, or the type of expression? Pull up Type Information <kbd>⌃⇧P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux) to help you.
 
 {% cta %}

@@ -22,6 +22,7 @@
 <kbd>⌃⇧,</kbd> (macOS) / <kbd>Alt+Shift+Comma</kbd> (Windows/Linux)             - Decrease Font Size in Editor
 <kbd>⌘D</kbd> (macOS) / <kbd>Ctrl+D</kbd> (Windows/Linux)                       - Duplicate Line
 <kbd>F1</kbd> (macOS) / <kbd>Ctrl+Q</kbd> (Windows/Linux)                       - Show Quick Documentation
+<kbd>⌥␣</kbd> (macOS) / <kbd>Ctrl+Shift+I</kbd> (Windows/Linux)                 - Show Quick Definition
 <kbd>⌥F8</kbd> (macOS) / <kbd>Alt+F8</kbd> (Windows/Linux)                      - Evaluate Expression
 <kbd>⌥↑</kbd> (macOS) / <kbd>Ctrl+W</kbd> (Windows/Linux)                       - Extend Selection
 <kbd>⌥↓</kbd> (macOS) / <kbd>Ctrl+Shift+W</kbd> (Windows/Linux)                 - Shrink Selection
@@ -48,7 +49,7 @@
 <kbd>⌘⌥L</kbd> (macOS) / <kbd>Ctrl+Alt+L</kbd> (Windows/Linux)                  - Reformat File
 <kbd>⌘⌥⇧L</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+L</kbd> (Windows/Linux)           - Reformat Dialog
 <kbd>⌘P</kbd> (macOS) / <kbd>Ctrl+P</kbd> (Windows/Linux)                       - Show Parameter Information
-<kbd>⌃⌘P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux)                - Show Type Information
+<kbd>⌃⇧P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux)                - Show Type Information
 <kbd>⌘⇧V</kbd> (macOS) / <kbd>Ctrl+Shift+V</kbd> (Windows/Linux)                - Clipboard History
 <kbd>⌘⇧E</kbd> (macOS) / <kbd>Ctrl+Shift+E</kbd> (Windows/Linux)                - Show Recent Locations
 <kbd>⇧F6</kbd> (macOS) / <kbd>Shift+F6</kbd> (Windows/Linux)                    - Refactor Rename
@@ -177,6 +178,7 @@
 <kbd>⌃⌥=</kbd> (macOS) / <kbd>Alt+Shift+=</kbd> (Windows/Linux)                 - Zoom In
 <kbd>⌃⌥-</kbd> (macOS) / <kbd>Alt+Shift+-</kbd> (Windows/Linux)                 - Zoom Out
 <kbd>⌃⌥0</kbd> (macOS) / <kbd>Alt+Shift+0</kbd> (Windows/Linux)                 - Reset IDE Scale
+<kbd>^⌥Q</kbd> (macOS) / <kbd>Ctrl+Alt+Q</kbd> (Windows/Linux)                  - Toggle Rendered View
 <kbd>⌘</kbd> (macOS) / <kbd>Ctrl</kbd> (Windows/Linux)
 <kbd>⌘</kbd> (macOS) / <kbd>Alt</kbd> (Windows/Linux)
 <kbd>+</kbd> (macOS) / <kbd>Plus</kbd> (Windows/Linux)
