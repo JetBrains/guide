@@ -145,6 +145,12 @@ RUN apt-get update && apt-get install -y libpq-dev
 
 ![step9](./images/30.png)
 
+> **NOTE**: You may run into build-related issues. However, if you need to compile or build something that requires additional development tools (such as PostgreSQL extensions or other native modules), you should consider including `build-essential`.When you install `build-essential`, it installs gcc, g++, make, and other basic tools that are commonly needed to compile software.
+
+```bash
+RUN apt-get update && apt-get install -y build-essential libpq-dev
+```
+
 Make sure to expose the gunicorn in `Dockerfile` so NGINX can proxy the request. We'll delve into NGINX shortly.
 
 ![step-gunicorn-nginx](./images/38.png)
