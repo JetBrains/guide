@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Multi-projects & Gradle Project Structure.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=gKPMKRnnbXU&start=184s"
+video: "https://www.youtube.com/watch?v=gKPMKRnnbXU&start=184"
 ---
 
 ## Gradle Project Structure

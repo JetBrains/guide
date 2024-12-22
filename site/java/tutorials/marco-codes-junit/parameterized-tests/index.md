@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Parameterized tests and annotations.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=6uSnF6IuWIw&start=1393s"
+video: "https://www.youtube.com/watch?v=6uSnF6IuWIw&start=1393"
 ---
 
 ## Introduction

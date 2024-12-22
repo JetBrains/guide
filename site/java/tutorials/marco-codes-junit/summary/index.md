@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Resources and further reading.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=6uSnF6IuWIw&start=2124s"
+video: "https://www.youtube.com/watch?v=6uSnF6IuWIw&start=2124"
 ---
 
 ## Introduction

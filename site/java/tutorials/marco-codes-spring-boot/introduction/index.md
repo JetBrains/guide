@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Spring Initializr setup and choosing your IDE.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=0s"
+video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=0"
 ---
 
 ## Introduction

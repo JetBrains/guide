@@ -7,7 +7,7 @@ author: hs
 subtitle: >-
   Overview of everything from CRUD, executing queries and using JPA with Hibernate.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=xHminZ9Dxm4&start=497s"
+video: "https://www.youtube.com/watch?v=xHminZ9Dxm4&start=497"
 ---
 
 ## Intermediate Hibernate

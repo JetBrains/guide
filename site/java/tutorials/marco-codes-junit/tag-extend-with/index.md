@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Adding further annotations to your project.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=6uSnF6IuWIw&start=1894s"
+video: "https://www.youtube.com/watch?v=6uSnF6IuWIw&start=1894"
 ---
 
 ## Introduction

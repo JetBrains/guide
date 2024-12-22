@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Working with an H2 Database and JDBC.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=KgXq2UBNEhA&start=65s"
+video: "https://www.youtube.com/watch?v=KgXq2UBNEhA&start=65"
 ---
 
 ## H2 and JDBC

@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: SSH with the AWS GUI, the command line, SSH-Keygen, Authorized_Keys & SCP.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=UnM4QAumuCQ&start=174s"
+video: "https://www.youtube.com/watch?v=UnM4QAumuCQ&start=174"
 ---
 
 ## SSH Basics

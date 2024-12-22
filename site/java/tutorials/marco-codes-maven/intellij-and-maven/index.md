@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Tips for using Maven inside IntelliJ IDEA.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=Xatr8AZLOsE&start=701s"
+video: "https://www.youtube.com/watch?v=Xatr8AZLOsE&start=701"
 ---
 
 ## IntelliJ IDEA and Maven

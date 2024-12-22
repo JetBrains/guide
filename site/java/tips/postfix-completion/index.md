@@ -12,7 +12,7 @@ seealso:
   - title: (video) Code Completion in IntelliJ IDEA
     href: "https://www.youtube.com/watch?v=jTud6GIqVgk"
   - title: (video) Tips for Writing Code
-    href: "https://www.youtube.com/watch?v=_Y1y8k-OTCQ&t=7s"
+    href: "https://www.youtube.com/watch?v=_Y1y8k-OTCQ&t=7"
   - title: (documentation) IntelliJ IDEA Help - Postfix Completion
     href: >-
       https://www.jetbrains.com/help/idea/auto-completing-code.html#postfix_completion

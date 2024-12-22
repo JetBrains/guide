@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Creating and testing @RestController.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=641s"
+video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=641"
 ---
 
 ## What's in the video?

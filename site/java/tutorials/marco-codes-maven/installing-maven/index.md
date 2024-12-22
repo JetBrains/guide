@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Package manager and manual installation.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=Xatr8AZLOsE&start=69s"
+video: "https://www.youtube.com/watch?v=Xatr8AZLOsE&start=69"
 ---
 
 ## Installing Maven

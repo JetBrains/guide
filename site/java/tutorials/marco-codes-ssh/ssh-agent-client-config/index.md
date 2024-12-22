@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Introduction to SSH.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=UnM4QAumuCQ&start=806s"
+video: "https://www.youtube.com/watch?v=UnM4QAumuCQ&start=806"
 ---
 
 ## SSH-Agent and SSH Client Config

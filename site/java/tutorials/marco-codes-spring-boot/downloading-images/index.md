@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Next steps for download.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=3099s"
+video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=3099"
 ---
 
 ## What's in the video?

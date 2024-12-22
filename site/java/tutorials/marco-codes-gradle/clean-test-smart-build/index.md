@@ -8,7 +8,7 @@ subtitle: >-
   Gradlew Clean, Gradlew Test, Gradle's Smart Features and Build.Gradle.
   explained
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=gKPMKRnnbXU&start=421s"
+video: "https://www.youtube.com/watch?v=gKPMKRnnbXU&start=421"
 ---
 
 ## Gradle Basics

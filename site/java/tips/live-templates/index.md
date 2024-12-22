@@ -12,7 +12,7 @@ seealso:
   - title: "(video) IntelliJ IDEA. Helen's Take On: Writing Less Code"
     href: "https://www.youtube.com/watch?v=Sio9MdSqXZo"
   - title: (video) IntelliJ IDEA. Write Code Faster Using Live Templates
-    href: "https://www.youtube.com/watch?v=ffBeoE6NBSs&t=56s"
+    href: "https://www.youtube.com/watch?v=ffBeoE6NBSs&t=56"
   - title: "(video) IntelliJ IDEA Pro Tips: Live Templates"
     href: "https://www.youtube.com/watch?v=XhCNoN40QTU"
   - title: (documentation) IntelliJ IDEA Help - Using Live Templates

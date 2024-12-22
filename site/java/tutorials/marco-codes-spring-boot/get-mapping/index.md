@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Creating and testing @GetMapping.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=978s"
+video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=978"
 ---
 
 ## What's in the video?

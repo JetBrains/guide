@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Setting up your project's classes.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=6uSnF6IuWIw&start=17s"
+video: "https://www.youtube.com/watch?v=6uSnF6IuWIw&start=17"
 ---
 
 ## Introduction

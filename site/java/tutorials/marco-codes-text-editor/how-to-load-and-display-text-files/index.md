@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Using the PATH API.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=HwPjeb2xnEo&start=810s"
+video: "https://www.youtube.com/watch?v=HwPjeb2xnEo&start=810"
 ---
 
 ## How to Load and Display Text Files

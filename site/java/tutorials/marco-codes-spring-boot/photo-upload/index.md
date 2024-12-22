@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Upload the photos.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=1948s"
+video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=1948"
 ---
 
 ## What's in the video?

@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Spring Boot's properties file and configuring JSON.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=2304s"
+video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=2304"
 ---
 
 ## What's in the video?

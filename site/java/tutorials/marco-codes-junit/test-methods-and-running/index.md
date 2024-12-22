@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: Creating your test method and running the test.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=6uSnF6IuWIw&start=131s"
+video: "https://www.youtube.com/watch?v=6uSnF6IuWIw&start=131"
 ---
 
 ## Introduction

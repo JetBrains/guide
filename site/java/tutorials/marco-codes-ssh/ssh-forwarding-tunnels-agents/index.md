@@ -6,7 +6,7 @@ topics: []
 author: hs
 subtitle: SSH Agent Forwarding, SSH Tunnels, Password Managers & SSH Agents.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=UnM4QAumuCQ&start=1414s"
+video: "https://www.youtube.com/watch?v=UnM4QAumuCQ&start=1414"
 ---
 
 ## SSH Tunnels
