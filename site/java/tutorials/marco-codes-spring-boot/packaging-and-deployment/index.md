@@ -6,7 +6,10 @@ topics: []
 author: hs
 subtitle: Creating a .jar file and executing it.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=4437"
+video:
+  url: "https://youtu.be/QuvS_VLbGko"
+  start: 4437
+  end: 4559
 ---
 
 ## What's in the video?

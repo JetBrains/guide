@@ -6,7 +6,10 @@ topics: []
 author: hs
 subtitle: Upload the photos.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=1948"
+video:
+  url: "https://youtu.be/QuvS_VLbGko"
+  start: 1948
+  end: 2227
 ---
 
 ## What's in the video?

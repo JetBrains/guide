@@ -6,7 +6,10 @@ topics: []
 author: hs
 subtitle: What Spring Boot's Projects look like.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=3429"
+video:
+  url: "https://youtu.be/QuvS_VLbGko"
+  start: 3429
+  end: 3478
 ---
 
 ## What's in the video?

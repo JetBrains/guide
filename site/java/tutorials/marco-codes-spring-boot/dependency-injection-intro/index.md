@@ -6,7 +6,10 @@ topics: []
 author: hs
 subtitle: Working with Dependency Injection.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=2595"
+video:
+  url: "https://youtu.be/QuvS_VLbGko"
+  start: 2595
+  end: 2831
 ---
 
 ## What's in the video?

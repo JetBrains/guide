@@ -6,7 +6,10 @@ topics: []
 author: hs
 subtitle: Download the photos.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=2445"
+video:
+  url: "https://youtu.be/QuvS_VLbGko"
+  start: 2445
+  end: 2579
 ---
 
 ## What's in the video?

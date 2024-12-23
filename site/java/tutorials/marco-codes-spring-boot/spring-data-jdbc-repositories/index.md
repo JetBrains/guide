@@ -6,7 +6,10 @@ topics: []
 author: hs
 subtitle: Working with Spring Data JDBC.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=3922"
+video:
+  url: "https://youtu.be/QuvS_VLbGko"
+  start: 3922
+  end: 4055
 ---
 
 ## What's in the video?

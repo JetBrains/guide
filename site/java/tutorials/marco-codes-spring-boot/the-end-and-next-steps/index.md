@@ -6,7 +6,10 @@ topics: []
 author: hs
 subtitle: References used in the video.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=4558"
+video:
+  url: "https://youtu.be/QuvS_VLbGko"
+  start: 4558
+  end: 4591
 ---
 
 ## The End & Next Steps

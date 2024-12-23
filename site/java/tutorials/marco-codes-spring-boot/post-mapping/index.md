@@ -6,7 +6,10 @@ topics: []
 author: hs
 subtitle: Creating and testing @PostMapping.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=1510"
+video:
+  url: "https://youtu.be/QuvS_VLbGko"
+  start: 1510
+  end: 1605
 ---
 
 ## What's in the video?

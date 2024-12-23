@@ -6,7 +6,10 @@ topics: []
 author: hs
 subtitle: Working with an H2 Database.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/watch?v=QuvS_VLbGko&start=3477"
+video:
+  url: "https://youtu.be/QuvS_VLbGko"
+  start: 3477
+  end: 3609
 ---
 
 ## What's in the video?
