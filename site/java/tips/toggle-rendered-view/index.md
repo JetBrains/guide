@@ -16,3 +16,5 @@ video: "https://youtu.be/pH_Q7twIqro"
 ---
 
 **Toggle Rendered View** <kbd>⌃⌥Q</kbd> (macOS) / <kbd>Ctrl+Alt+Q</kbd> (Windows/Linux) to show comments in reader mode. Right-click the gutter icon and select **Render All Doc Comments** if you want all comments to show in reader mode.
+
+Alternatively, in the **Settings** dialog <kbd>⌘,</kbd> (macOS) / <kbd>Ctrl+Alt+S</kbd> (Windows/Linux), go to **Editor | General | Appearance** and enable/disable the **Render documentation comments** option.
