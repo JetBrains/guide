@@ -15,5 +15,5 @@ obsoletes:
   - /javascript/tips/comment-out-code/
 ---
 
-In JetBrains IDEs, you can comment and uncomment blocks of code with <kbd>⌘⇧/</kbd> (macOS) / <kbd>Ctrl+Shift+W</kbd> (
+In JetBrains IDEs, you can comment and uncomment blocks of code with <kbd>⌘⇧/</kbd> (macOS) / <kbd>Ctrl+Shift+/</kbd> (
 Windows/Linux). To do the same for lines, use <kbd>⌘/</kbd> (macOS) / <kbd>Ctrl+/</kbd> (Windows/Linux).
