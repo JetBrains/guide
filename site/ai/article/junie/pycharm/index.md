@@ -25,7 +25,7 @@ Please note that since Junie is powered by AI, the results of the examples are n
 
 ![install.png](install.png)
 
-3. Click “Authorize” and log in using the invited Gmail account.
+3. Click **Authorize** and log in using the invited Gmail account.
 4. Start using Junie by entering a task and running it.
 
 ### Optional Step: Junie Onboarding
@@ -40,8 +40,8 @@ You can use the `.junie/guidelines.md` file in the root directory to personalize
 
 The `.junie/guidelines.md` file can contain instructions in any format. For example:
 
-- Specify that tests should always be added to a specific folder or use a particular framework.
-- Inform Junie about existing guidelines in your repository (e.g., by pointing to the correct file path), and it will read and apply them.
+- `Specify that tests should always be added to a specific folder or use a particular framework.`
+- `Inform Junie about existing guidelines in your repository (e.g., by pointing to the correct file path), and it will read and apply them.`
 
 If you notice Junie doing something suboptimal, add a hint or clarification in the guidelines file. These instructions will be added to Junie’s context, helping it make better decisions and work more effectively within your project.
 If the `.junie/guidelines.md` file already exists in your project (e.g., created by teammates), Junie will automatically use it.
@@ -65,19 +65,19 @@ We have a setting that determines whether Junie requires explicit approval for u
 
 Some simple, universal tasks you can start with:
 
-_Write/update a README.md about the project_
+`Write/update a README.md about the project`
 
 ——————
 
-_Analyze the repository, read important files and build an architectural dependency map between the modules, generate an ASCII diagram, and add it to the README.md._
+`Analyze the repository, read important files and build an architectural dependency map between the modules, generate an ASCII diagram, and add it to the README.md.`
 
 ——————
 
-_Analyze the last 10 commits, read relevant files and understand how it impacted user scenarios, generate very short and concise summary and an ASCII diagram (make it interesting, engaging, using emoji and art), and create a file changelog.txt_
+`Analyze the last 10 commits, read relevant files and understand how it impacted user scenarios, generate very short and concise summary and an ASCII diagram (make it interesting, engaging, using emoji and art), and create a file changelog.txt`
 
 ——————
 
-_Provide a code coverage report in a text file. If coverage is less than 80%, add tests to achieve the coverage goal._
+`Provide a code coverage report in a text file. If coverage is less than 80%, add tests to achieve the coverage goal.`
 
 ## Example One - Quick Start Guide for Django Projects
 
@@ -103,7 +103,7 @@ After that, let’s create a superuser so we can later access the built-in Djang
 
 Install the Junie plugin and there should be an icon on the right-hand side of the window to give Junie prompts.
 
-Try this prompt: _Add a membership sign up app in the Django website_
+Try this prompt: `Add a membership sign up app in the Django website`
 
 ![add-membership.png](add-membership.png)
 
@@ -123,9 +123,9 @@ Test around and see if there are any problems. What issues did you notice? Let�
 
 Prompt suggestions:
 
-_Use POST for logout view endpoint_
-_Create a root welcoming page_
-_Activate basic membership for all members by default_
+`Use POST for logout view endpoint`
+`Create a root welcoming page`
+`Activate basic membership for all members by default`
 
 Feel free to try other prompts.
 
@@ -137,7 +137,7 @@ In the next step, we will try to add a payment gateway and use the Stripe API in
 
 Try this prompt: _Add Stripe as payment gateway for subscriptions_
 
-Tips: New packages are required; you can install them by clicking the tips provided by PyCharm.
+**Tip**: New packages are required; you can install them by clicking the tips provided by PyCharm.
 
 ![integrate-stripe.png](integrate-stripe.png)
 
@@ -155,17 +155,17 @@ When Junie is done, instructions on how to set up the Stripe payment gateway are
 
 In the next step we can try to change the colour theme with Junie’s help. Let’s ask Junie to match our app’s theme with that of the Django website.
 
-Try this prompt: _change the color theme to match <https://www.djangoproject.com/>_
+Try this prompt: `change the color theme to match <https://www.djangoproject.com/>`
 
 ![welcome-membership-white.png](welcome-membership-white.png)
 
-You can also try a follow-up prompt: _Add a button to switch between dark and light theme._
+You can also try a follow-up prompt: `Add a button to switch between dark and light theme.`
 
 ![welcome-membership.png](welcome-membership.png)
 
 You can even ask Junie to check if the web UI follows the accessibility standard.
 
-Try this prompt: _Make sure the UI follows the accessibility standard_
+Try this prompt: `Make sure the UI follows the accessibility standard`
 
 Be creative! Feel free to play around and try asking Junie to change the look of the website with other color themes or layouts.
 
@@ -173,11 +173,11 @@ Be creative! Feel free to play around and try asking Junie to change the look of
 
 Last, we will add tests and make sure the project gets good coverage.
 
-Try this prompt: _Add appropriate tests for this project_
+Try this prompt: `Add appropriate tests for this project`
 
 ![tests.png](tests.png)
 
-Try this follow up prompt: _make sure test code coverage is > 80% and create a coverage report_
+Try this follow up prompt: `make sure test code coverage is > 80% and create a coverage report`
 
 Check the coverage report in the terminal:
 
@@ -203,7 +203,7 @@ Put the CSV in the project folder.
 
 ![womans-clothing.png](womans-clothing.png)
 
-Try this prompt with Junie: _Create a database and populate it with the data in Womens Clothing E-Commerce Reviews.csv._
+Try this prompt with Junie: `Create a database and populate it with the data in Womens Clothing E-Commerce Reviews.csv.`
 
 ![womans-clothing-list.png](womans-clothing-list.png)
 
@@ -211,7 +211,7 @@ Try this prompt with Junie: _Create a database and populate it with the data in 
 
 Notice that not just data has been added to the database. Relevant endpoints have also been created in `main.py`.
 
-Try this follow-up prompt: _Create an API endpoint to receive input data to database_
+Try this follow-up prompt: `Create an API endpoint to receive input data to database`
 
 Whilst Junie is not-deterministic, it’s likely that there will be updates to your `main.py` file as a result of this command.
 
@@ -221,17 +221,17 @@ Whilst Junie is not-deterministic, it’s likely that there will be updates to y
 
 In the next steps, we will add the machine learning function to the app and try to predict the review rating from the review text.
 
-Try this prompt: _Create a NLP model to predict ‘Rating’ from ‘Review Text’ using data from the database_
+Try this prompt: `Create a NLP model to predict ‘Rating’ from ‘Review Text’ using data from the database`
 
 **Tip**: Install requirements when notified.
 
 ![choose-packages.png](choose-packages.png)
 
-Try this prompt: _Train and save ml model, provide model evaluation report as text file_
+Try this prompt: `Train and save ml model, provide model evaluation report as text file`
 
 In my run, I noticed that Junie decided to use the CSV file for model training. While that makes sense for now, it will not make sense when we have user input data, so I am going to ask Junie to fix it.
 
-Try this follow up prompt: _Use data from the database for train_and_evaluate_model, rerun the training and model evaluation_
+Try this follow up prompt: `Use data from the database for train_and_evaluate_model, rerun the training and model evaluation`
 
 ![train-save.png](train-save.png)
 
@@ -241,7 +241,7 @@ After Junie is done, inspect the report and see if the model achieves good resul
 
 In my run, the overall accuracy is around 60%, apparently, there is room for improvement. Feel free to ask Junie to use or incorporate other NLP models (even pre-trained models) to get better results. One such prompt could be:
 
-_Use a pre-trained sentiment analysis model from Hugging Face in conjunction with our model to improve prediction accuracy_
+`Use a pre-trained sentiment analysis model from Hugging Face in conjunction with our model to improve prediction accuracy`
 
 For demonstration purposes, I will stop here and move on to the next step.
 
@@ -249,13 +249,13 @@ For demonstration purposes, I will stop here and move on to the next step.
 
 Next, we will add tests and make sure the project has good coverage for the project.
 
-Try this prompt: _Add appropriate tests for this project_
+Try this prompt: `Add appropriate tests for this project`
 
 Tests have been added. However, we want to make sure we have good code coverage.
 
 ![test-main.png](test-main.png)
 
-Try this follow up prompt: _make sure test code coverage is > 80% and create coverage report_
+Try this follow up prompt: `make sure test code coverage is > 80% and create coverage report`
 
 Check the coverage report in the terminal:
 
@@ -267,7 +267,7 @@ Check the coverage report in the terminal:
 
 Last, we will prepare a docker image for the deployment of our application.
 
-Try this prompt: _prepare the project in production in Docker containers_
+Try this prompt: `prepare the project in production in Docker containers`
 
 Instructions are also added to the `README.md` file after Junie has completed the task. Feel free to follow them and test it yourself.
 
@@ -291,7 +291,7 @@ First, we will create a Jupyter project.
 
 Add the csv file in the data folder.
 
-Try this Prompt: _Create a Jupyter notebook and perform data exploration with the data inside the csv file in the data folder_
+Try this Prompt: `Create a Jupyter notebook and perform data exploration with the data inside the csv file in the data folder`
 
 ![tic-tac-toe.png](tic-tac-toe.png)
 
@@ -301,7 +301,7 @@ After Junie is done, open the new Jupyter notebook that has been created. Instal
 
 Notice that the generated notebook is using ‘seaborn’, a plotting style that is no longer supported (for all the supported styles, please see here). Let’s try using the ‘ggplot’ style instead.
 
-Try this follow-up prompt: _use 'ggplot' as plt style instead_
+Try this follow-up prompt: `use 'ggplot' as plt style instead`
 
 ![pie-chart.png](pie-chart.png)
 
@@ -311,14 +311,14 @@ Now run the notebook again and you will see all the data exploration visualizati
 
 Next we want to draw the game board and illustrate some of the end games documented in the csv file.
 
-Try this prompt: _In tictactoe_analysis.ipynb, add images to illustrate 10 random tic-tac-toe end game board_
+Try this prompt: `In tictactoe_analysis.ipynb, add images to illustrate 10 random tic-tac-toe end game board`
 
 ![random-game-stats.png](random-game-stats.png)
 
 How do you like the result? Here are some follow-up prompts that you could use to improve the visualization:
 
-- improve game board images by moving X and O a bit higher
-- make the game board black and white for accessibility
+- `improve game board images by moving X and O a bit higher`
+- `make the game board black and white for accessibility`
 
 ![black-red.png](black-red.png)
 
@@ -328,7 +328,7 @@ How do you like the result? Here are some follow-up prompts that you could use t
 
 Finally, we want to tell Junie to create a model which can help us to win the game.
 
-Try this prompt: _Create a model to predict the best move for player X and O based on the opponent's previous move_
+Try this prompt: `Create a model to predict the best move for player X and O based on the opponent's previous move`
 
 ![test-case-one.png](test-case-one.png)
 

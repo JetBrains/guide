@@ -25,7 +25,7 @@ Please note that since Junie is powered by AI, the results of the examples are n
 
 ![install.png](install.png)
 
-3. Click “Authorize” and log in using the invited Gmail account.
+3. Click **Authorize** and log in using the invited Gmail account.
 4. Start using Junie by entering a task and running it.
 
 ### Optional Step: Junie Onboarding
@@ -40,8 +40,8 @@ You can use the `.junie/guidelines.md` file in the root directory to personalize
 
 The `.junie/guidelines.md` file can contain instructions in any format. For example:
 
-- Specify that tests should always be added to a specific folder or use a particular framework.
-- Inform Junie about existing guidelines in your repository (e.g., by pointing to the correct file path), and it will read and apply them.
+- `Specify that tests should always be added to a specific folder or use a particular framework.`
+- `Inform Junie about existing guidelines in your repository (e.g., by pointing to the correct file path), and it will read and apply them.`
 
 If you notice Junie doing something suboptimal, add a hint or clarification in the guidelines file. These instructions will be added to Junie’s context, helping it make better decisions and work more effectively within your project.
 If the `.junie/guidelines.md` file already exists in your project (e.g., created by teammates), Junie will automatically use it.
@@ -55,7 +55,7 @@ Junie is an agent that can run code, execute terminal commands, and work with th
 To keep things safe:
 
 - Don’t give risky prompts like: do something with my personal important files in this directory which I have in one copy and no backups
-- Don’t run Junie unattended.
+- Don’t run Junie unattended
 
 We have a setting that determines whether Junie requires explicit approval for unsafe commands. **By default, approval is required, and it’s safer to keep this enabled**.
 
@@ -65,19 +65,19 @@ We have a setting that determines whether Junie requires explicit approval for u
 
 Some simple, universal tasks you can start with:
 
-_Write/update a README.md about the project_
+`Write/update a README.md about the project`
 
 ——————
 
-_Analyze the repository, read important files and build an architectural dependency map between the modules, generate an ASCII diagram, and add it to the README.md._
+`Analyze the repository, read important files and build an architectural dependency map between the modules, generate an ASCII diagram, and add it to the README.md.`
 
 ——————
 
-_Analyze the last 10 commits, read relevant files and understand how it impacted user scenarios, generate very short and concise summary and an ASCII diagram (make it interesting, engaging, using emoji and art), and create a file changelog.txt_
+`Analyze the last 10 commits, read relevant files and understand how it impacted user scenarios, generate very short and concise summary and an ASCII diagram (make it interesting, engaging, using emoji and art), and create a file changelog.txt`
 
 ——————
 
-_Provide a code coverage report in a text file. If coverage is less than 80%, add tests to achieve the coverage goal._
+`Provide a code coverage report in a text file. If coverage is less than 80%, add tests to achieve the coverage goal.`
 
 ## Example One - Quick Start for Spring Boot Web Applications
 
@@ -108,7 +108,7 @@ We would like to create a bookmark JPA entity and a Spring Data JPA repository f
 
 Let’s ask Junie to help us with this task.
 
-Try this prompt: _Create a JPA entity called Bookmark and a corresponding Spring Data Repository_
+Try this prompt: `Create a JPA entity called Bookmark and a corresponding Spring Data Repository_`
 
 **Tip**: As we mentioned, for security reasons, the default is to approve any terminal action for Junie explicitly. However, there are many terminal actions in this example, so you can choose to uncheck it if you want to.
 
@@ -124,7 +124,7 @@ Next, we would like to implement basic CRUD (Create, Read, Update, Delete) funct
 
 Let’s ask Junie to implement this functionality.
 
-Try this prompt: _Implement CRUD operations for Bookmarks with Thymeleaf and Bootstrap CSS_
+Try this prompt: `Implement CRUD operations for Bookmarks with Thymeleaf and Bootstrap CSS`
 
 ![implement-thyme.png](implement-thyme.png)
 
@@ -138,7 +138,7 @@ You should be able to view, add, edit and delete bookmarks.
 
 Finally, let’s ask Junie to write integration test cases for our app.
 
-Try this prompt: _Add integration tests for all controller methods._
+Try this prompt: `Add integration tests for all controller methods.`
 
 ![add-tests.png](add-tests.png)
 
