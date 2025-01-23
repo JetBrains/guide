@@ -14,7 +14,7 @@ Welcome to Junie, the coding agent by JetBrains!
 
 We're here to help you hand off your tasks and let Junie handle routine or more complex tasks for you—check out this guide to get started.
 
-This playbook includes examples and step-by-step tutorials for new Junie users to explore it in action, for IntelliJ IDEA.
+This playbook includes examples and step-by-step tutorials for new Junie users to explore it in action, for PyCharm.
 
 Please note that since Junie is powered by AI, the results of the examples are not deterministic. This means that screenshots and expected results may be different from various trials. However, the results should be functionally similar. To make adjustments, you can use follow-up prompts which provide more specifics of what result you want.
 
