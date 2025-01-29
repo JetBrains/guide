@@ -1,6 +1,6 @@
 ---
 date: 2025-01-23
-title: "Article"
+title: "IntelliJ IDEA Junie Playbook"
 topics:
   - ai
 author: hs

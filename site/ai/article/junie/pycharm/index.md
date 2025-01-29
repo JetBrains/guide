@@ -1,6 +1,6 @@
 ---
 date: 2025-01-23
-title: "Article"
+title: "PyCharm Junie Playbook"
 topics:
   - ai
 author: hs
