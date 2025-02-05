@@ -119,7 +119,7 @@ Finally, run the code with the GoLand run configuration by simply clicking the p
 
 ![Code run with GoLand configuration](./images/2.png)
 
-Next, select the **Run 'go build <PROJECT NAME>'** option. Your result should be similar to the image below:
+Next, select the **Run 'go build &lt;PROJECT NAME&gt;'** option. Your result should be similar to the image below:
 
 ![Code run result with GoLand configuration](./images/3.png)
 
