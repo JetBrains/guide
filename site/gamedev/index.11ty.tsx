@@ -8,6 +8,7 @@ import {
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import { PLAYLIST_RESOURCE, TUTORIAL_RESOURCE } from "../../src/resourceType";
+import FeaturedResource from "../../_includes/pageelements/FeaturedResource.11ty";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Game Development",
@@ -72,6 +73,10 @@ export default class GameDevHomepage {
 			customFilter: (r) => r.slug.indexOf("gamedev-day") >= 0,
 		});
 
+		const featuredResource = this.getResource(
+			"/gamedev/links/ai-in-game-development-with-jetbrains-ai-assistant/",
+		);
+
 		return (
 			<BaseLayout {...data}>
 				<HeroSection
@@ -103,6 +108,11 @@ export default class GameDevHomepage {
 						</div>
 					}
 				/>
+
+				<FeaturedResource
+					resource={featuredResource}
+					children={[]}
+				></FeaturedResource>
 
 				{unityTutorials && (
 					<ListingSection
