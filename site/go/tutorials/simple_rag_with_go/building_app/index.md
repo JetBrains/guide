@@ -95,12 +95,8 @@ Create a file `food.txt` and store this information.
 ---
 ```
 
-Now, let's move to the AWS Bedrock console and click — **Knowledge Bases**.
+Now, we need to upload this data to S3, which will be acting as the Data Source.
+
+Navigate to S3.
 
 ![step1](./images/1.png)
-
-Next, click Create.
-
-![step2](./images/2.png)
-
-![step3](./images/3.png)
