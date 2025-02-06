@@ -71,4 +71,8 @@ Open the Terminal and then type **aws configure**. After that, provide your acce
 
 > Avoid copying the AWS access keys you see on the screen, as they will become invalid after a few days. Instead, ensure you use your own access keys and secret key.
 
-Our AWS CLI has been configured properly now. Let's move ahead and enable the model access.
+Our AWS CLI has been configured properly now.
+
+### Enable Models
+
+To enable models, follow this [section](../../bedrock_with_go/model_access/).

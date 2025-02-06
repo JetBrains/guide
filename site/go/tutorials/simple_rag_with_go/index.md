@@ -9,6 +9,7 @@ thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/
   - ./getting_started/
+  - ./building_app/
 topics:
   - go
   - aws
