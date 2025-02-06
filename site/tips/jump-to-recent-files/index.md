@@ -29,7 +29,7 @@ Have you ever been deep into a project, only to realize that you forgot to inclu
 
 ## The Solution
 
-Instead of searching for a certain tab, let’s use our IDE. One convenient way to find certain files is using the Recent File Window. It gives you a nice list of all the files you have visited recently. It is automatically sorted in the order you have visited them, which makes going back so much easier
+Instead of searching for a certain tab, let’s use our IDE. One convenient way to find certain files is using the Recent File Window. Use <kbd>⌘E</kbd> (macOS) / <kbd>Ctrl+E</kbd> (Windows/Linux) to get a nice list of all the files you have visited recently. It is automatically sorted in the order you have visited them, which makes going back so much easier
 
 Well, that is already a great improvement, but we can do even better! What if the file you are looking for is at the very bottom. Well sure we could press arrow down like a hundred times, or worse use the mouse, or we just type directly into the window, which lets you search for a particular file.
 
