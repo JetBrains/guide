@@ -100,3 +100,36 @@ Now, we need to upload this data to S3, which will be acting as the Data Source.
 Navigate to S3.
 
 ![step1](./images/1.png)
+
+Click Create Bucket
+
+![step2](./images/2.png)
+
+Provide the bucket name, and make it should be unique.
+
+![step3](./images/3.png)
+
+After the bucket is created, make sure to upload the `food.txt` file which we created earlier.
+
+![step4](./images/4.png)
+
+Now, let's resume back to BedRock console.
+
+Click Knowledge Bases.
+
+![step5](./images/5.png)
+
+Click Create.
+![step5](./images/6.png)
+
+Now, choose Knowledge Base with vector store.
+
+_A vector database is a collection of data stored as mathematical representations. Vector databases make it easier for machine learning models to remember previous inputs, allowing machine learning to be used to power search, recommendations, and text generation use-cases._
+
+Source: [Cloudflare](https://www.cloudflare.com/en-gb/learning/ai/what-is-vector-database/)
+
+![step5](./images/7.png)
+
+aaaaaa
+
+![step8](./images/8.png)
