@@ -113,6 +113,16 @@ After the bucket is created, make sure to upload the `food.txt` file which we cr
 
 ![step4](./images/4.png)
 
+Head back to IAM again, and make sure to enable the console access.
+
+![iam1](./images/iam1.png)
+
+![iam2](./images/iam2.png)
+
+You can provide your own custom password or autogenerate.
+
+![iam3](./images/iam3.png)
+
 Now, let's resume back to BedRock console.
 
 Click Knowledge Bases.
