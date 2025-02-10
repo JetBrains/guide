@@ -140,6 +140,46 @@ Source: [Cloudflare](https://www.cloudflare.com/en-gb/learning/ai/what-is-vector
 
 ![step5](./images/7.png)
 
-aaaaaa
+Provide the name of the Knowledge Base along-with the name of the service role. The service role is going to attach policies like listing S3 bucket, invoking bedrock model and accessing the OpenSearch.
 
 ![step8](./images/8.png)
+
+Next, the data source is going to be Amazon S3, where we have uploaded the `food.txt` file.
+
+![step8](./images/9.png)
+
+Moving forward, we will be selecting the newly created S3 bucket.
+![step8](./images/10.png)
+
+Choose the default parser, and chunking strategy set to default.
+![step8](./images/11.png)
+
+Next, we will select the model and vector store as Amazon OpenSearch Serverless.
+
+![step8](./images/12.png)
+
+Choose Titan Text Embeddings v2
+
+![step8](./images/13.png)
+
+Review all the changes, and click Create Knowledge Base.
+![step8](./images/14.png)
+
+![step8](./images/15.png)
+
+It will take a couple of minutes.
+
+![step8](./images/16.png)
+
+![step8](./images/17.png)
+
+Once, the KnowledgeBase is created. You need to sync the data. After sync is done, test the knowledge base.
+
+![step8](./images/18.png)
+
+Select the model.
+![step8](./images/19.png)
+
+And start interacting with the knowledge base.
+
+![step8](./images/20.png)
