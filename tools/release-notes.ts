@@ -133,29 +133,36 @@ function getBaseVersion(version: string): string {
 	return version.replace(/\s+(?:EAP\s+\d+|RC)$/, "");
 }
 
-function aggregateByTechnology(
+function aggregateByVersion(
 	releaseNotes: ReleaseNote[],
 ): Map<string, Map<string, Change[]>> {
-	const techMap = new Map<string, Map<string, Change[]>>();
+	const versionMap = new Map<string, Map<string, Change[]>>();
 
 	for (const note of releaseNotes) {
 		for (const change of note.changes) {
 			const baseVersion = getBaseVersion(change.version);
 
-			if (!techMap.has(change.technology)) {
-				techMap.set(change.technology, new Map());
-			}
-			const versionMap = techMap.get(change.technology)!;
-
 			if (!versionMap.has(baseVersion)) {
-				versionMap.set(baseVersion, []);
+				versionMap.set(baseVersion, new Map());
 			}
-			versionMap.get(baseVersion)!.push(change);
+			const techMap = versionMap.get(baseVersion)!;
+
+			if (!techMap.has(change.technology)) {
+				techMap.set(change.technology, []);
+			}
+			techMap.get(change.technology)!.push(change);
 		}
 	}
 
-	// Sort technologies alphabetically
-	return new Map([...techMap.entries()].sort());
+	// Sort versions in descending order and technologies alphabetically within each version
+	return new Map(
+		[...versionMap.entries()]
+			.sort((a, b) => b[0].localeCompare(a[0]))
+			.map(([version, techMap]) => [
+				version,
+				new Map([...techMap.entries()].sort()),
+			]),
+	);
 }
 
 export function generateReleaseNotesHtml(): string {
@@ -168,7 +175,7 @@ export function generateReleaseNotesHtml(): string {
 	const releaseNotes = files
 		.map(parseReleaseNotes)
 		.filter((note): note is ReleaseNote => note !== null);
-	const techMap = aggregateByTechnology(releaseNotes);
+	const versionMap = aggregateByVersion(releaseNotes);
 
 	let html = `
 <!DOCTYPE html>
@@ -189,26 +196,20 @@ export function generateReleaseNotesHtml(): string {
     <div class="section">
         <div class="container">`;
 
-	for (const [technology, versionMap] of techMap) {
+	for (const [version, techMap] of versionMap) {
+		const releaseType = [...techMap.values()][0][0].releaseType;
 		html += `
             <div class="box mb-6">
-                <h2 class="title is-4">${technology}</h2>
+                <h2 class="title is-4">Version ${version}${releaseType !== "Release" ? ` (${releaseType})` : ""}</h2>
                 <div class="content">`;
 
-		// Sort versions in descending order
-		const sortedVersions = [...versionMap.entries()].sort((a, b) =>
-			b[0].localeCompare(a[0]),
-		);
-
-		for (const [baseVersion, changes] of sortedVersions) {
+		for (const [technology, changes] of techMap) {
 			html += `
-                    <h3 class="title is-5">Version ${baseVersion}${changes[0].releaseType !== "Release" ? ` (${changes[0].releaseType})` : ""}</h3>
+                    <h3 class="title is-5">${technology}</h3>
                     <ul>`;
 
 			for (const change of changes) {
 				const typeClass = change.type === "Feature" ? "has-text-success" : "";
-				const versionSuffix =
-					change.releaseType !== "Release" ? ` (${change.releaseType})` : "";
 				html += `
                         <li>
                             <span class="tag ${typeClass} mr-2">${change.type}</span>

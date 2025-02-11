@@ -7,3 +7,7 @@ List of Incremental changes:
 ```
  - for the release note generation also list the version number that you can find in the headline of each document, but make sure to aggregate stable release and eap
 ```
+
+```
+ - instead of aggregating each technology by release version have a high level aggregator for the version and then list all the changes that were released in that particular version
+```
