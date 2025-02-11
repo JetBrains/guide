@@ -26,6 +26,8 @@ interface Change {
 	issueId: string;
 	issueUrl: string;
 	description: string;
+	version: string;
+	releaseType: ReleaseType;
 }
 
 function parseVersionInfo(title: string): {
@@ -53,7 +55,11 @@ function parseVersionInfo(title: string): {
 	return { product, version, build, type };
 }
 
-function parseMarkdownTable(content: string): Change[] {
+function parseMarkdownTable(
+	content: string,
+	version: string,
+	releaseType: ReleaseType,
+): Change[] {
 	const changes: Change[] = [];
 	const lines = content.split("\n");
 	let currentTechnology = "";
@@ -89,6 +95,8 @@ function parseMarkdownTable(content: string): Change[] {
 					issueId: issueMatch[1],
 					issueUrl: issueMatch[2],
 					description: description.replace(/<[^>]+>/g, "").trim(),
+					version,
+					releaseType,
 				});
 			}
 		}
@@ -108,7 +116,11 @@ function parseReleaseNotes(filePath: string): ReleaseNote | null {
 	const title = lines[0].replace(/^#\s+/, "");
 	console.log(`Title: "${title}"`);
 	const versionInfo = parseVersionInfo(title);
-	const changes = parseMarkdownTable(content);
+	const changes = parseMarkdownTable(
+		content,
+		versionInfo.version,
+		versionInfo.type,
+	);
 
 	return {
 		...versionInfo,
@@ -116,16 +128,29 @@ function parseReleaseNotes(filePath: string): ReleaseNote | null {
 	};
 }
 
+function getBaseVersion(version: string): string {
+	// Remove EAP/RC suffix and keep only the base version
+	return version.replace(/\s+(?:EAP\s+\d+|RC)$/, "");
+}
+
 function aggregateByTechnology(
 	releaseNotes: ReleaseNote[],
-): Map<string, Change[]> {
-	const techMap = new Map<string, Change[]>();
+): Map<string, Map<string, Change[]>> {
+	const techMap = new Map<string, Map<string, Change[]>>();
 
 	for (const note of releaseNotes) {
 		for (const change of note.changes) {
-			const changes = techMap.get(change.technology) || [];
-			changes.push(change);
-			techMap.set(change.technology, changes);
+			const baseVersion = getBaseVersion(change.version);
+
+			if (!techMap.has(change.technology)) {
+				techMap.set(change.technology, new Map());
+			}
+			const versionMap = techMap.get(change.technology)!;
+
+			if (!versionMap.has(baseVersion)) {
+				versionMap.set(baseVersion, []);
+			}
+			versionMap.get(baseVersion)!.push(change);
 		}
 	}
 
@@ -164,25 +189,39 @@ export function generateReleaseNotesHtml(): string {
     <div class="section">
         <div class="container">`;
 
-	for (const [technology, changes] of techMap) {
+	for (const [technology, versionMap] of techMap) {
 		html += `
             <div class="box mb-6">
                 <h2 class="title is-4">${technology}</h2>
-                <div class="content">
+                <div class="content">`;
+
+		// Sort versions in descending order
+		const sortedVersions = [...versionMap.entries()].sort((a, b) =>
+			b[0].localeCompare(a[0]),
+		);
+
+		for (const [baseVersion, changes] of sortedVersions) {
+			html += `
+                    <h3 class="title is-5">Version ${baseVersion}${changes[0].releaseType !== "Release" ? ` (${changes[0].releaseType})` : ""}</h3>
                     <ul>`;
 
-		for (const change of changes) {
-			const typeClass = change.type === "Feature" ? "has-text-success" : "";
-			html += `
+			for (const change of changes) {
+				const typeClass = change.type === "Feature" ? "has-text-success" : "";
+				const versionSuffix =
+					change.releaseType !== "Release" ? ` (${change.releaseType})` : "";
+				html += `
                         <li>
                             <span class="tag ${typeClass} mr-2">${change.type}</span>
                             <a href="${change.issueUrl}" class="mr-2">${change.issueId}</a>
                             ${change.description}
                         </li>`;
+			}
+
+			html += `
+                    </ul>`;
 		}
 
 		html += `
-                    </ul>
                 </div>
             </div>`;
 	}
