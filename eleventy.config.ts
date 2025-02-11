@@ -50,6 +50,12 @@ module.exports = function (eleventyConfig: any) {
 									/is-block/,
 									/has-glow.*/,
 									/has-gradient.*/,
+									/has-text-success/,
+									/has-text-white/,
+									/box/,
+									/mb-6/,
+									/mr-2/,
+									/tag/,
 								],
 							},
 						}),
@@ -99,15 +105,15 @@ module.exports = function (eleventyConfig: any) {
 	// These are all relative to the input directory at the end
 	eleventyConfig.addPassthroughCopy(
 		"./!(_site)**/*.{gif,jpg,png,svg,jpeg,webm,webp}",
-		{ overwrite: true }
+		{ overwrite: true },
 	);
 	eleventyConfig.addPassthroughCopy(
 		{ "../../public/assets": "assets" },
-		{ overwrite: true }
+		{ overwrite: true },
 	);
 	eleventyConfig.addPassthroughCopy(
 		{ "../../public/obsoletes.json": "obsoletes.json" },
-		{ overwrite: true }
+		{ overwrite: true },
 	);
 	eleventyConfig.ignores.add("**/demos/**");
 
@@ -117,6 +123,12 @@ module.exports = function (eleventyConfig: any) {
 
 	eleventyConfig.addGlobalData("commandLineArgs", options);
 	eleventyConfig.addPlugin(pluginRss);
+
+	// Add release notes generator
+	eleventyConfig.on("eleventy.after", async () => {
+		const { generateReleaseNotes } = await import("./tools/release-notes");
+		generateReleaseNotes();
+	});
 
 	return {
 		dir: {
