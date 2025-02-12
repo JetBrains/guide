@@ -10,6 +10,7 @@ tutorialItems:
   - ./introduction/
   - ./getting_started/
   - ./building_app/
+  - ./writing_code/
 topics:
   - go
   - aws
