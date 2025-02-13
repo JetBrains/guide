@@ -55,6 +55,118 @@ function parseVersionInfo(title: string): {
 	return { product, version, build, type };
 }
 
+function normalizeTechnology(tech: string, description: string = ""): string {
+	// Remove any leading/trailing whitespace and markdown
+	tech = tech.trim().replace(/^\*\*|\*\*$/g, "");
+	description = description.trim();
+
+	// Convert to lowercase for case-insensitive matching
+	const techLower = tech.toLowerCase();
+	const descLower = description.toLowerCase();
+
+	// Check for specific technology mentions in the description first
+	if (descLower.includes("c#")) return "C#";
+	if (descLower.includes("c++")) return "C++";
+	if (descLower.includes("typescript")) return "TypeScript";
+	if (descLower.includes("javascript")) return "JavaScript";
+	if (descLower.includes("python")) return "Python";
+	if (
+		descLower.includes("java ") ||
+		descLower.includes("java.") ||
+		descLower.includes("java,")
+	)
+		return "Java Development";
+	if (descLower.includes("kotlin")) return "Kotlin";
+	if (descLower.includes("rust")) return "Rust";
+	if (descLower.includes("go ") || descLower.includes("golang")) return "Go";
+
+	// AI-related
+	if (
+		techLower.includes("ai") ||
+		techLower.includes("assistant") ||
+		techLower.includes("copilot")
+	) {
+		return "AI and Machine Learning";
+	}
+
+	// IDE-related
+	if (
+		techLower.includes("ide") ||
+		techLower.includes("editor") ||
+		tech.startsWith("UI.")
+	) {
+		return "IDE and Editor";
+	}
+
+	// Java-related
+	if (
+		techLower.includes("java") ||
+		tech.startsWith("JavaX.") ||
+		tech.startsWith("Jakarta.") ||
+		techLower.includes("jvm")
+	) {
+		return "Java Development";
+	}
+
+	// Language-related
+	if (
+		techLower.includes("lang") ||
+		techLower.includes("kotlin") ||
+		techLower.includes("typescript") ||
+		techLower.includes("javascript")
+	) {
+		return "Languages";
+	}
+
+	// Remote Development
+	if (
+		techLower.includes("remote") ||
+		techLower.includes("ssh") ||
+		techLower.includes("gateway")
+	) {
+		return "Remote Development";
+	}
+
+	// SQL and Databases
+	if (
+		techLower.includes("sql") ||
+		techLower.includes("database") ||
+		techLower.includes("db")
+	) {
+		return "Databases and SQL";
+	}
+
+	// Version Control
+	if (
+		techLower.includes("vcs") ||
+		techLower.includes("git") ||
+		tech.startsWith("Version Control")
+	) {
+		return "Version Control";
+	}
+
+	// Framework-related
+	if (tech.startsWith("Frameworks.")) {
+		return "Frameworks";
+	}
+
+	// Tools-related
+	if (tech.startsWith("Tools.")) {
+		return "Development Tools";
+	}
+
+	// Build-related
+	if (
+		techLower.includes("build") ||
+		techLower.includes("gradle") ||
+		techLower.includes("maven")
+	) {
+		return "Build Tools";
+	}
+
+	return tech;
+}
+
 function parseMarkdownTable(
 	content: string,
 	version: string,
@@ -78,15 +190,20 @@ function parseMarkdownTable(
 			if (cells.length === 4) {
 				const [tech, type, issue, description] = cells;
 
-				// If first cell is not empty, update current technology
-				if (tech !== "") {
-					currentTechnology = tech.replace(/^\*\*|\*\*$/g, "");
-				}
-
 				// Extract issue ID and URL
 				const issueMatch = issue.match(/\[([^\]]+)\]\(([^)]+)\)/);
 				if (!issueMatch) {
 					continue;
+				}
+
+				// If first cell is not empty or we find a technology in description, update current technology
+				if (tech !== "") {
+					currentTechnology = normalizeTechnology(tech, description);
+				} else {
+					const techFromDesc = normalizeTechnology("", description);
+					if (techFromDesc !== "") {
+						currentTechnology = techFromDesc;
+					}
 				}
 
 				changes.push({
@@ -137,9 +254,16 @@ function aggregateByVersion(
 	releaseNotes: ReleaseNote[],
 ): Map<string, Map<string, Change[]>> {
 	const versionMap = new Map<string, Map<string, Change[]>>();
+	const seenTickets = new Set<string>();
 
 	for (const note of releaseNotes) {
 		for (const change of note.changes) {
+			// Skip if we've already seen this ticket
+			if (seenTickets.has(change.issueId)) {
+				continue;
+			}
+			seenTickets.add(change.issueId);
+
 			const baseVersion = getBaseVersion(change.version);
 
 			if (!versionMap.has(baseVersion)) {
@@ -200,7 +324,7 @@ export function generateReleaseNotesHtml(): string {
 		const releaseType = [...techMap.values()][0][0].releaseType;
 		html += `
             <div class="box mb-6">
-                <h2 class="title is-4">Version ${version}${releaseType !== "Release" ? ` (${releaseType})` : ""}</h2>
+                <h2 class="title is-4">Version ${version}</h2>
                 <div class="content">`;
 
 		for (const [technology, changes] of techMap) {
