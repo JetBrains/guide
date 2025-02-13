@@ -24,10 +24,9 @@ Refactoring with PhpStorm is fast, straightforward, and safe. Let’s start with
 
 There’s no way you want to do that by hand, right?
 
-<video width="1366" height="768" controls loop autoplay muted>
-  <source src="../e4-doing-by-hand-720.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
+<video class="video-player" playsinline controls>
+    <source src="../e4-doing-by-hand-720.webm" type="video/webm">
+</video><br/>
 
 So, let’s select the folder you want to rename and press <kbd>Control+T</kbd>, or you can press <kbd>Shift+Shift</kbd> and search for Refactor This.
 
@@ -35,19 +34,17 @@ You can call the Refactor This menu on virtually anything: a classname, a variab
 
 On top of that, PhpStorm will also show an inline toolbar, which has the most common refactors directly available.
 
-<video width="1366" height="768" controls loop autoplay muted>
-  <source src="../e4-calling-refactoring.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
+<video class="video-player" playsinline controls>
+    <source src="../e4-calling-refactoring.webm" type="video/webm">
+</video><br/>
 
 For folders, there are only a handful of things you can do. In this case, you want to rename the folder. Press Rename, and choose a new name. This specific refactoring can also search for references within strings and text, but let’s keep it to PHP code for now. You can specify the scope of the refactor, but for now you can simply keep it set to The Whole Project.
 
 You can preview the refactoring, which will show what PhpStorm intends to change, and you can press Refactor to apply these changes.
 
-<video width="1366" height="768" controls loop autoplay muted>
-  <source src="../e4-refactoring.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
+<video class="video-player" playsinline controls>
+    <source src="../e4-refactoring.webm" type="video/webm">
+</video><br/>
 
 And… you’re done! If something unintended happens, you can always press <kbc>Control</kbd> or <kbd>Command+Z</kbd> to undo the refactoring as well.
 
