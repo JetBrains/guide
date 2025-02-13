@@ -20,7 +20,9 @@ PhpStorm comes with a lightweight debugger built in, but by far, the most popula
 
 Let’s say you don’t have Xdebug installed. What happens when you start debugging a PHP script –a test, for example? Instead of running the test normally, you can press the Debug button. As you can see, PhpStorm lets us know that there’s no debugger installed, but it can also fix it for you. Just press Update Interpreter Info, then Download and install Xdebug extension, and give the IDE a moment to set Xdebug up for you.
 
-{% video "../e6-xdebig-installation-compressed.webm", width=1366, height=768 %}
+<video class="video-player" playsinline controls>
+    <source src="../e6-xdebig-installation-compressed.webm" type="video/webm">
+</video>
 
 When it’s done, PhpStorm will automatically re-run your test with the debugger enabled – but, not much happens. That’s because we haven’t told the debugger to pause anywhere yet. To do that, we’ll need to use something called “breakpoints”.
 
@@ -30,13 +32,17 @@ For example, let’s add a breakpoint on this line here. Click the line number i
 
 This time, you’ll notice that some things have changed. The program is paused, and PhpStorm is showing a bunch of information.
 
-{% video "../e6-breakpoint-line-compressed.webm", width=1366, height=768 %}
+<video class="video-player" playsinline controls>
+    <source src="../e6-breakpoint-line-compressed.webm" type="video/webm">
+</video>
 
 On the left, you see everything that happened before we arrived at this breakpoint. We got here via these method calls. You can click through them, and PhpStorm will show you the path through the files.
 
 On the right, you see all the variables currently available at the breakpoint. There’s a `$this` variable referencing the test class; you can open it and see what’s in it. Then, there are other variables like the global `$_ENV` variable, for example. PhpStorm will show you its contents, and you can see how the list of variables changes whenever we move to one of the previous method calls.
 
-{% video "../e6-this-compressed.webm", width=1366, height=768 %}
+<video class="video-player" playsinline controls>
+    <source src="../e6-this-compressed.webm" type="video/webm">
+</video>
 
 The debugger is now moving backward in our program flow, which can be very useful if you need to know the things that happened before something else happened. But what about moving forward? You can unpause the debugger by pressing the Resume button, but then the test will just finish.
 
@@ -44,7 +50,9 @@ So, let’s go back to our breakpoint, and instead of pressing Resume, we can pr
 
 “Stepping over” means the debugger will move to the next statement and pause again. “Stepping into” means the debugger will go a level deeper and debug what’s happening within a function call.
 
-{% video "../e6-step-over-step-into-compressed.webm", width=1366, height=768 %}
+<video class="video-player" playsinline controls>
+    <source src="../e6-step-over-step-into-compressed.webm" type="video/webm">
+</video>
 
 Now, these two buttons together are super powerful. You can essentially navigate the flow of your program with them, while keeping an eye on how variables change, why conditions match or don’t, how many times something is looped over, and much more.
 
