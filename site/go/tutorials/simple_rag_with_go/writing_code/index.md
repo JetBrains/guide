@@ -44,4 +44,163 @@ You can find the Knowledge Base ID in the Knowledge Base dashboard. Click [here]
 
 ![step5](./images/3.png)
 
+The code defines a `BedrockAgent` structure that interacts with AWS Bedrock Agent Runtime. It has two main components:
+
+1. **Initialization (`NewBedrock`)**: Sets up the Bedrock agent client using AWS credentials.
+2. **Knowledge Base Query (`RetrieveResponseFromKnowledgeBase`)**: Queries a knowledge base to retrieve and generate a response for a given question.
+
+   - `BedrockAgent` contains an AWS client (`bedrockagentruntime.Client`) that interacts with the Bedrock service.
+
+- `RetrieveResponseFromKnowledgeBase` queries a Bedrock-powered knowledge base for a generated response to a user-provided question. It uses a specific knowledge base ID and a vector search strategy to retrieve related results.
+
+  - The `RetrieveResponseFromKnowledgeBase` function uses the Bedrock runtime client to:
+  - Send a **question** to a configured knowledge base.
+  - Retrieve a response using the `RetrieveAndGenerate` API, which:
+
+    - Specifies the knowledge base ID.
+    - Configures a vector search (e.g., searching for results with related vectors) with 6 results.
+    - Uses a specific `ModelArn` for processing the input.
+
+  - Returns the generated response (`output.Output.Text`).
+
+```go
+package main
+
+import (
+	"context"
+	"github.com/aws/aws-sdk-go-v2/aws"
+	"github.com/aws/aws-sdk-go-v2/config"
+	"github.com/aws/aws-sdk-go-v2/service/bedrockagentruntime"
+	"github.com/aws/aws-sdk-go-v2/service/bedrockagentruntime/types"
+	"log"
+)
+
+type BedrockAgent struct {
+	Client bedrockagentruntime.Client
+}
+
+func NewBedrock() *BedrockAgent {
+	ctx := context.Background()
+	var BedrockAgentRuntimeClient *bedrockagentruntime.Client
+
+	// Load AWS Credentials
+	awsConfig, err := config.LoadDefaultConfig(ctx, config.WithRegion("ap-south-1"))
+	if err != nil {
+		log.Fatal("Failed to load AWS credentials", err)
+	}
+
+	// create BedrockAgentClient
+	BedrockAgentRuntimeClient = bedrockagentruntime.NewFromConfig(awsConfig)
+
+	return &BedrockAgent{
+		Client: *BedrockAgentRuntimeClient,
+	}
+}
+
+func (bedrockAgent *BedrockAgent) RetrieveResponseFromKnowledgeBase(question string) string {
+	// invoke bedrock agent runtime to retrieve and generate
+	output, err := bedrockAgent.Client.RetrieveAndGenerate(
+		context.TODO(),
+		&bedrockagentruntime.RetrieveAndGenerateInput{
+			Input: &types.RetrieveAndGenerateInput{
+				Text: aws.String(question),
+			},
+			RetrieveAndGenerateConfiguration: &types.RetrieveAndGenerateConfiguration{
+				Type: types.RetrieveAndGenerateTypeKnowledgeBase,
+				KnowledgeBaseConfiguration: &types.KnowledgeBaseRetrieveAndGenerateConfiguration{
+					KnowledgeBaseId: aws.String(KnowledgeBaseId),
+					ModelArn:        aws.String(ModelArn),
+					RetrievalConfiguration: &types.KnowledgeBaseRetrievalConfiguration{
+						VectorSearchConfiguration: &types.KnowledgeBaseVectorSearchConfiguration{
+							NumberOfResults: aws.Int32(6),
+						},
+					},
+				},
+			},
+		},
+	)
+
+	if err != nil {
+		log.Fatal("RetrieveResponseFromKnowledgeBase::", err)
+	}
+	result := output.Output.Text
+	return *result
+}
+
+```
+
 ![step6](./images/4.png)
+
+The provided code defines a Go HTTP handler function, **ProcessLLMModel**, which processes POST requests to query a knowledge base via a `BedrockAgent`. It includes a request structure (`LLMRequest`) that expects a JSON object with a `question` field, and a response structure (`LLMResponse`) that contains the result.
+
+When the `ProcessLLMModel` function is invoked:
+
+1. It first verifies that the HTTP method is POST; otherwise, it responds with a 405 error.
+2. It reads the request body and ensures it is valid JSON, deserializing it into an `LLMRequest`.
+3. It trims whitespace and validates that the `question` field is not empty; if empty, it responds with a 400 error.
+4. If valid, it uses the `BedrockAgent` to pass the question to a knowledge base and retrieve the response.
+5. That response is wrapped in a JSON object (`LLMResponse`) and sent back to the client with a 200 status code.
+
+This function helps create a structured API endpoint for querying a knowledge base with POST JSON requests and receiving JSON responses.
+
+```go
+package main
+
+import (
+	"encoding/json"
+	"io"
+	"net/http"
+	"strings"
+)
+
+type LLMRequest struct {
+	Question string `json:"question"`
+}
+
+type LLMResponse struct {
+	Response string `json:"response"`
+}
+
+func ProcessLLMModel(bedrockAgent *BedrockAgent) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		if r.Method != http.MethodPost {
+			http.Error(w, "Method should be POST!", http.StatusMethodNotAllowed)
+			return
+		}
+
+		// Read the request body
+		body, err := io.ReadAll(r.Body)
+		if err != nil {
+			http.Error(w, "Failed to read request body", http.StatusBadRequest)
+			return
+		}
+		defer r.Body.Close()
+
+		// Parse the request body as JSON
+		var req LLMRequest
+		err = json.Unmarshal(body, &req)
+		if err != nil {
+			http.Error(w, "Invalid JSON format", http.StatusBadRequest)
+			return
+		}
+
+		question := strings.TrimSpace(req.Question)
+
+		// Check if the question field is empty.
+		if question == "" {
+			http.Error(w, "The 'question' field is required", http.StatusBadRequest)
+			return
+		}
+
+		// Pass the question to Knowledge Base and return back the response.
+		response := bedrockAgent.RetrieveResponseFromKnowledgeBase(question)
+		var llmResponse LLMResponse
+		llmResponse.Response = response
+
+		w.Header().Set("Content-Type", "application/json")
+		w.WriteHeader(http.StatusOK)
+		json.NewEncoder(w).Encode(llmResponse)
+	}
+}
+
+```
