@@ -22,17 +22,26 @@ I want to lower PhpStorm’s learning curve as much as possible so that you feel
 
 The first one involves pressing the Shift key twice, (<kbd>Shift+Shift</kbd>), which brings up the Search Everywhere window. Whatever you’re searching for, just start typing. It could be a class name or function name, a variable, or a CSS class – yes, PhpStorm has built-in support for all web technologies from HTML to JavaScript and CSS, including many frameworks.
 
-{% video "../e1-shift-shift.webm", width=1366, height=768 %}
+<video width="1366" height="768" controls loop autoplay muted>
+  <source src="../e1-shift-shift.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
 
 You can search for string contents, filenames, IDE actions – anything you can think of. The search bar supports fuzzy search, and you can filter results more specifically by only showing classes, files, symbols, actions, or text.
 
-{% video "../e1-string-contents.webm", width=1366, height=768 %}
+<video width="1366" height="768" controls loop autoplay muted>
+  <source src="../e1-string-contents.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
 
 ## Actions menu
 
 Speaking of actions, everything that PhpStorm can do for you can be found within this Actions menu. Just start writing to find what you’re looking for. If the action has a keybinding, you’ll see it as well. It’s a great way to discover new features and find out how to use them.
 
-{% video "../e1-actions-menu.webm", width=1366, height=768 %}
+<video width="1366" height="768" controls loop autoplay muted>
+  <source src="../e1-actions-menu.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
 
 ## Context Actions menu
 
@@ -40,6 +49,9 @@ The second hotkey we’ll be looking at today is <kbd>Alt+Enter</kbd>, or Option
 
 You can press <kbd>Alt+Enter</kbd> everywhere in your code, and PhpStorm will show you a menu of actions that can be applied at that specific place in your code. For example, <kbd>Alt+Enter</kbd> can show and fix problems, it has a bunch of shortcuts for string-related operations, as well as formatting options, and code generation shortcuts – everything that makes sense within the context you’re working in.
 
-{% video "../e1-alt-enter.webm", width=1366, height=768 %}
+<video width="1366" height="768" controls loop autoplay muted>
+  <source src="../e1-alt-enter.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
 
 Mastering these two shortcuts, <kbd>Shift+Shift</kbd> and <kbd>Alt+Enter</kbd>, provides a solid foundation for using PhpStorm effectively. Additional features and shortcuts are available, and further learning is encouraged through subsequent videos.
