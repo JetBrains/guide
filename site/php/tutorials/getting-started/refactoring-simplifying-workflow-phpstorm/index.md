@@ -6,7 +6,7 @@ topics: []
 author: brentroose
 subtitle: Have PhpStorm handle the boring tasks
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/084ePq923-I"
+video: "https://jb.gg/ztu4h9"
 canonical: "https://www.jetbrains.com/phpstorm/getting-started/episode-4/"
 ---
 
