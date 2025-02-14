@@ -204,3 +204,18 @@ func ProcessLLMModel(bedrockAgent *BedrockAgent) http.HandlerFunc {
 }
 
 ```
+
+![http_requests](./images/http_requests.png)
+
+![python1](./images/python1.png)
+![python2](./images/python2.png)
+![python3](./images/python3.png)
+![python4](./images/python4.png)
+![python5](./images/python5.png)
+![python6](./images/python6.png)
+![python7](./images/python7.png)
+
+<video width="1366" height="768" controls loop autoplay>
+  <source src="./images/video_aws_rag.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
