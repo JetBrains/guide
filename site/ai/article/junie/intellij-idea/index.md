@@ -20,12 +20,12 @@ Please note that since Junie is powered by AI, the results of the examples are n
 
 ### Install
 
-1. Install [JetBrains Junie from the archive](https://plugins.jetbrains.com/plugin/26104-jetbrains-junie), and restart the IDE if required.
+1. Install [JetBrains Junie from the marketplace](https://plugins.jetbrains.com/plugin/26104-jetbrains-junie), and restart the IDE if required.
 2. Open the plugin from the right sidebar.
 
 ![install.png](install.png)
 
-3. Click **Authorize** and log in using the invited Gmail account.
+3. Shift-shift | Manage Licences | Click your name at the bottom left corner and then click **Manage Account**, and ensure that the Junie license is displayed in your account.
 4. Start using Junie by entering a task and running it.
 
 ### Optional Step: Junie Onboarding
