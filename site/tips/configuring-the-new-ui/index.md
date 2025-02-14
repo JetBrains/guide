@@ -19,7 +19,7 @@ How does this “New UI” help me to be more productive?
 
 ## The Solution
 
-How do I enable this... "New UI"?" That’s an easy one, head over to your Settings, search for new ui and select the checkbox. You’ll need to restart your IDE, <production filler content>, but then you’re all set.
+How do I enable this... "New UI"?" That’s an easy one, head over to your Settings, search for new ui and select the checkbox. You’ll need to restart your IDE, "production filler content" but then you’re all set.
 
 It’s a cleaner layout with functionality grouped so you know where to look. For example, your project information, your VCS information including visual indicators of incoming and outgoing changes, your Run & Debug widget which allows you to change your run configurations, and then additional functionality in the form of Code With Me, Search Everywhere, and Options.
 

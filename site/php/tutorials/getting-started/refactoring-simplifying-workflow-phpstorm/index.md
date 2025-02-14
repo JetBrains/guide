@@ -49,6 +49,6 @@ You can preview the refactoring, which will show what PhpStorm intends to change
   Your browser does not support the video tag.
 </video>
 
-And… you’re done! If something unintended happens, you can always press <kbc>Control</kbd> or <kbd>Command+Z</kbd> to undo the refactoring as well.
+And… you’re done! If something unintended happens, you can always press <kbd>Control</kbd> or <kbd>Command+Z</kbd> to undo the refactoring as well.
 
 Refactorings are extremely powerful. I just demonstrated a pretty simple rename operation, but they can do a lot more than that. You can extract parts of your code to separate methods, move functions to parents, make methods static, convert values into constants, and much more.

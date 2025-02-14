@@ -17,6 +17,6 @@ For example, you can turn a bool expression into an if statement, or create a po
 
 Open the _Postfix Completion_ page via _Settings/Preferences | Editor | General_ to see the complete list of supported templates.
 
-- _Postfix Completion_ options are displayed as a part of the `Basic Completion` suggestions list. Press <kbd>Ctrl+J</kbd> on Windows/Linux, or <kbd>⌘J</kbd on macOS to see a full list of the _Postfix Completion_ templates applicable in the current context.
+- _Postfix Completion_ options are displayed as a part of the `Basic Completion` suggestions list. Press <kbd>Ctrl+J</kbd> on Windows/Linux, or <kbd>⌘J</kbd> on macOS to see a full list of the _Postfix Completion_ templates applicable in the current context.
 - You can change the names of all _Postfix Completions_ in the Settings/Preferences dialog.
 - In the same dialog, you can also disable the templates you don't need, or even turn off _Postfix Completion_ completely.

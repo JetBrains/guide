@@ -16,7 +16,7 @@ These tips have a recurring theme: use your keyboard, not your mouse. Running yo
 
 Use the Run action <kbd>⌃⌥R</kbd> (macOS) / <kbd>Shift+Alt+F10</kbd> (Windows/Linux) to get a popup listing your defined run configurations, both permanent and temporary. You can then use the arrow keys or speed-type to highlight the one you want to run, pressing <kbd>⏎</kbd> (macOS) / <kbd>Enter</kbd> (Windows/Linux) to select and execute it.
 
-"Select" is used intentionally: one you select this run configuration, it is the active one, and the simpler Run <your configuration> action <kbd>⌃⌥R</kbd> (macOS) / <kbd>Shift+Alt+F10</kbd> (Windows/Linux) will immediately run it.
+"Select" is used intentionally: one you select this run configuration, it is the active one, and the simpler Run "your configuration" action <kbd>⌃⌥R</kbd> (macOS) / <kbd>Shift+Alt+F10</kbd> (Windows/Linux) will immediately run it.
 
 You can do more from the keyboard than just run it. Each entry in the popup has a submenu which you can access by pressing the right arrow. This lets you choose how you want to run it (Run, Debug, Coverage, Profile, Run under the concurrency diagram, etc.) as well as edit that configuration or delete it.
 
