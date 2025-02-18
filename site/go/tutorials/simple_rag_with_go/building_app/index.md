@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2025-02-03
 title: Creating the KnowledgeBase
 author: mm
-subtitle: Building the Knowledge Base
+subtitle: Setting up the Knowledge Base and configuring the vector store.
 thumbnail: ./thumbnail.png
 topics:
   - aws
@@ -13,15 +13,19 @@ topics:
 
 We will be using AWS Bedrock [Knowledge Bases](https://aws.amazon.com/bedrock/knowledge-bases/) to provide additional information to the LLM, so they can understand the context and deliver relevant information, enabling more accurate and contextual responses for the specific needs of our application.
 
-### What we are going to build?
+## Enable Models
 
-We have a food menu from the restaurant which are going to feed into the knowledge base and directly interact with the LLM model to retrieve the relevant info.
+To work with the Knowledge Base, it's essential to enable the foundational models. I've already covered this in a previous [tutorial](../../bedrock_with_go/model_access/), so you can refer to that for guidance.
 
-[IMAGE_SRC]
+## What are we going to create?
 
-So, we got a sample restaurant menu what they normally serve to their customers. This information will be feeded to the LLM, so next time we don't need to see the menu, rather talk to AI, what's special today in the menu?
+We have a food menu from the restaurant, which we are going to feed into the knowledge base and use to directly interact with the LLM model to retrieve relevant information.
 
-Create a file `food.txt` and store this information.
+![food_menu_flow](./images/food_menu_flow.png)
+
+So, we got a sample restaurant menu of what they normally serve to their customers. This information will be fed into the LLM, so next time, we won’t need to check the menu—instead, we can simply ask the AI, “What’s special on the menu today?”
+
+Create a file named `food.txt` and store the information below. You can see that there are many varieties, and you can come up with your own innovative ideas.
 
 ```text
 
@@ -134,9 +138,11 @@ Click Create.
 
 Now, choose Knowledge Base with vector store.
 
-_A vector database is a collection of data stored as mathematical representations. Vector databases make it easier for machine learning models to remember previous inputs, allowing machine learning to be used to power search, recommendations, and text generation use-cases._
+_A [vector database](https://www.cloudflare.com/en-gb/learning/ai/what-is-vector-database/) is a collection of data stored as mathematical representations. Vector databases make it easier for machine learning models to remember previous inputs, allowing machine learning to be used to power search, recommendations, and text generation use-cases._
 
-Source: [Cloudflare](https://www.cloudflare.com/en-gb/learning/ai/what-is-vector-database/)
+![vector-db](./images/vectordb.png)
+
+Image Source: _[Pinecone](https://www.pinecone.io/learn/vector-database/)_
 
 ![step5](./images/7.png)
 
