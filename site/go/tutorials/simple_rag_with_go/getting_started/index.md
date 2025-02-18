@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2025-02-03
 title: Getting Started
 author: mm
-subtitle: Preparing your environment.
+subtitle: Setting up the AWS environment and configuring the AWS SDK.
 thumbnail: ./thumbnail.png
 topics:
   - aws
@@ -11,7 +11,7 @@ topics:
 
 ## Prerequisites
 
-To get started, make sure you have a valid AWS account, and you have installed [AWS CLI](https://aws.amazon.com/cli/) on your machine.
+To get started, make sure you have a valid AWS [account](https://aws.amazon.com/), and you have installed [AWS CLI](https://aws.amazon.com/cli/) on your machine.
 
 > NOTE: AWS Bedrock is not free. Make sure you check the [pricing](https://aws.amazon.com/bedrock/pricing/) before going ahead.
 
@@ -21,11 +21,11 @@ Login to AWS Management Console and search for IAM.
 
 ![step1](./images/step01.png)
 
-Click **Users**
+Click **Users**.
 
 ![step2](./images/step02.png)
 
-Click **Create user**
+Click **Create user**.
 
 ![step3](./images/step03.png)
 
@@ -71,8 +71,4 @@ Open the Terminal and then type **aws configure**. After that, provide your acce
 
 > Avoid copying the AWS access keys you see on the screen, as they will become invalid after a few days. Instead, ensure you use your own access keys and secret key.
 
-Our AWS CLI has been configured properly now.
-
-### Enable Models
-
-To enable models, follow this [section](../../bedrock_with_go/model_access/).
+The AWS CLI has been successfully configured. Next, let's proceed to the section where we'll focus on the Knowledge Base.
