@@ -99,17 +99,17 @@ Create a file named `food.txt` and store the information below. You can see that
 ---
 ```
 
-Now, we need to upload this data to S3, which will be acting as the Data Source.
+Now, we need to upload this data to [S3](https://aws.amazon.com/s3/), which will be acting as the Data Source.
 
 Navigate to S3.
 
 ![step1](./images/1.png)
 
-Click Create Bucket
+Click **Create bucket**
 
 ![step2](./images/2.png)
 
-Provide the bucket name, and make it should be unique.
+Provide a unique bucket name.
 
 ![step3](./images/3.png)
 
@@ -117,7 +117,9 @@ After the bucket is created, make sure to upload the `food.txt` file which we cr
 
 ![step4](./images/4.png)
 
-Head back to IAM again, and make sure to enable the console access.
+Go back to IAM and ensure **console access** is enabled. Note that you cannot create a Knowledge Base from the root account.
+
+We will enable console access for the user ("bedrock_user") we created at the beginning if you recall.
 
 ![iam1](./images/iam1.png)
 
@@ -129,11 +131,11 @@ You can provide your own custom password or autogenerate.
 
 Now, let's resume back to BedRock console.
 
-Click Knowledge Bases.
+Click **Knowledge Bases**.
 
 ![step5](./images/5.png)
 
-Click Create.
+Click **Create**.
 ![step5](./images/6.png)
 
 Now, choose Knowledge Base with vector store.
@@ -146,46 +148,63 @@ Image Source: _[Pinecone](https://www.pinecone.io/learn/vector-database/)_
 
 ![step5](./images/7.png)
 
-Provide the name of the Knowledge Base along-with the name of the service role. The service role is going to attach policies like listing S3 bucket, invoking bedrock model and accessing the OpenSearch.
+Provide the following details:
 
-![step8](./images/8.png)
+- The name of the Knowledge Base.
+- The name of the service role.
+
+The service role will attach policies for actions such as listing S3 buckets, invoking the Bedrock model, and accessing OpenSearch.
+
+![step6](./images/8.png)
 
 Next, the data source is going to be Amazon S3, where we have uploaded the `food.txt` file.
 
-![step8](./images/9.png)
+![step7](./images/9.png)
 
-Moving forward, we will be selecting the newly created S3 bucket.
+Select the bucket where you have stored the file.
+
 ![step8](./images/10.png)
 
 Choose the default parser, and chunking strategy set to default.
-![step8](./images/11.png)
 
-Next, we will select the model and vector store as Amazon OpenSearch Serverless.
+![step9](./images/11.png)
 
-![step8](./images/12.png)
+Next, we will select the model and vector store as [Amazon OpenSearch Serverless](https://aws.amazon.com/opensearch-service/features/serverless/). Since I prefer not to manage a vector database, opting for Amazon OpenSearch is the best choice.
 
-Choose Titan Text Embeddings v2
+![step10](./images/12.png)
 
-![step8](./images/13.png)
+Choose **Titan Text Embeddings v2** model.
 
-Review all the changes, and click Create Knowledge Base.
-![step8](./images/14.png)
+> Titan models are highly effective in enhancing productivity and efficiency across a wide range of text-related tasks, including creating copy for blog posts and web pages, categorizing articles, open-ended Q&A, conversational chat, information extraction, and [more](https://aws.amazon.com/bedrock/amazon-models/titan/).
 
-![step8](./images/15.png)
+![titan](./images/titan.png)
 
-It will take a couple of minutes.
+![step11](./images/13.png)
 
-![step8](./images/16.png)
+After selecting the model, be sure to review all the changes and click **Create Knowledge Base**.
 
-![step8](./images/17.png)
+![step12](./images/14.png)
 
-Once, the KnowledgeBase is created. You need to sync the data. After sync is done, test the knowledge base.
+![step13](./images/15.png)
 
-![step8](./images/18.png)
+It will take a few minutes to initialize.
 
-Select the model.
-![step8](./images/19.png)
+![step14](./images/16.png)
 
-And start interacting with the knowledge base.
+![step15](./images/17.png)
 
-![step8](./images/20.png)
+Once the Knowledge Base is created, you need to sync the data. After the sync is complete, test the Knowledge Base.
+
+![step16](./images/18.png)
+
+![test_kb](./images/test_kb.png)
+
+Select the model. I will choose Claude 3 Sonnet.
+
+![step17](./images/19.png)
+
+Feel free to start interacting with the newly created Knowledge Base.
+
+![step18](./images/20.png)
+
+Wow! This is pretty awesome! We’ve received some answers from the LLM. In the next step, we’ll integrate with the Go SDK and interact through backend APIs.
