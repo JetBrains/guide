@@ -1,17 +1,17 @@
 ---
 type: TutorialStep
 date: 2025-02-03
-title: Working with Backend
+title: Building APIs
 author: mm
-subtitle: ""
+subtitle: AWS Go SDK Integration & Streamlit Python UI
 thumbnail: ./thumbnail.png
 topics:
   - aws
 ---
 
-So, the implementation is complete. Now, it's time to build the backend.
+In the previous section, we completed the entire process of creating the knowledge base, interacted with it, and successfully tested it. Now, it's time to integrate with the AWS SDK and interact with the LLM using Go.
 
-You can start working directly by cloning the [repo](https://github.com/mukulmantosh/aws-rag-go).
+Just so you know, you can clone the [repository](https://github.com/mukulmantosh/aws-rag-go) and begin working right away.
 
 ![step1](./images/1.png)
 
@@ -38,7 +38,7 @@ func main() {
 
 ![step4](./images/2-1.png)
 
-You can find the Knowledge Base ID in the Knowledge Base dashboard. Click [here](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html) if you're looking for the `ModelArn` and a list of supported foundation models.
+The Knowledge Base ID can be found in the Knowledge Base dashboard. Click [here](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html) if you're looking for the `ModelArn` and a list of supported foundation models.
 
 ![kb](./images/knowledge_base.png)
 

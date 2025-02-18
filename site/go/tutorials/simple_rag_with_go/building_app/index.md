@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2025-02-03
+date: 2025-02-20
 title: Creating the KnowledgeBase
 author: mm
 subtitle: Setting up the Knowledge Base and configuring the vector store.

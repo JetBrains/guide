@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2025-02-03
+date: 2025-02-20
 title: Getting Started
 author: mm
 subtitle: Setting up the AWS environment and configuring the AWS SDK.
