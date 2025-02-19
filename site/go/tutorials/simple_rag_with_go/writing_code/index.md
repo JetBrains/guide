@@ -247,6 +247,50 @@ You can see in the image that we are receiving a successful response.
 ![python6](./images/python6.png)
 ![python7](./images/python7.png)
 
+![frontend_ui](./images/frontend_ui.png)
+
+```python
+import streamlit as st
+import requests
+
+def get_api_response(request_question: str):
+    api_url = "http://localhost:8080/send-message"
+    headers = {
+        "Content-Type": "application/json",
+    }
+    payload = {
+        "question": request_question
+    }
+
+    try:
+        response = requests.post(api_url, json=payload, headers=headers)
+        if response.status_code == 200:
+            return response.json()["response"]
+        else:
+            return {"error": "Failed Response!"}
+    except Exception as e:
+        return "Error::Something went wrong! " + str(e)
+
+
+st.title("AWS Knowledge Base with Go")
+
+question = st.text_input("Ask a question:")
+
+if st.button("Submit"):
+    if question:
+        with st.spinner("Getting the answer..."):
+            answer = get_api_response(question)
+            if "Error" in answer:
+                st.error(answer)
+            else:
+                st.write(answer)
+    else:
+        st.warning("Please enter the question before submitting.")
+
+```
+
+![frontend_runcode](./images/python_run.png)
+
 <video width="1366" height="768" controls loop autoplay>
   <source src="./images/video_aws_rag.webm" type="video/webm">
   Your browser does not support the video tag.
