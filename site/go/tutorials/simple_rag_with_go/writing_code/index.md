@@ -15,9 +15,17 @@ Just so you know, you can clone the [repository](https://github.com/mukulmantosh
 
 ![step1](./images/1.png)
 
+Once you open the project in GoLand, the dependencies will be automatically synced. But there is one more approach.
+
+- Open the `go.mod` file and click **Update all dependencies**.
+
 ![step2](./images/1_1.png)
 
+main.go
+
 ![step3](./images/2-0.png)
+
+The following code sets up a simple HTTP server on port 8080 to handle requests received from users at the `/send-message` endpoint. The request is then forwarded to the LLM function, which processes it and returns a response. I will get into more detail about how this works.
 
 ```go
 package main
@@ -36,32 +44,25 @@ func main() {
 
 ```
 
+constants.go
+
 ![step4](./images/2-1.png)
 
-The Knowledge Base ID can be found in the Knowledge Base dashboard. Click [here](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html) if you're looking for the `ModelArn` and a list of supported foundation models.
+In this file, we declare two constants: `ModelArn` and `KnowledgeBaseId`. You can obtain the knowledge base ID from the KnowledgeBase dashboard.
+
+For `ModelArn`, you can refer to the list of supported foundation [models](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html). In our case, we have chosen Claude 3 Sonnet.
+
+- Note: If you're choosing a different model, make sure it is already enabled in your account.
 
 ![kb](./images/knowledge_base.png)
 
+![foundational_models](./images/foundation_models.png)
+
+model.go
+
 ![step5](./images/3.png)
 
-The code defines a `BedrockAgent` structure that interacts with AWS Bedrock Agent Runtime. It has two main components:
-
-1. **Initialization (`NewBedrock`)**: Sets up the Bedrock agent client using AWS credentials.
-2. **Knowledge Base Query (`RetrieveResponseFromKnowledgeBase`)**: Queries a knowledge base to retrieve and generate a response for a given question.
-
-   - `BedrockAgent` contains an AWS client (`bedrockagentruntime.Client`) that interacts with the Bedrock service.
-
-- `RetrieveResponseFromKnowledgeBase` queries a Bedrock-powered knowledge base for a generated response to a user-provided question. It uses a specific knowledge base ID and a vector search strategy to retrieve related results.
-
-  - The `RetrieveResponseFromKnowledgeBase` function uses the Bedrock runtime client to:
-  - Send a **question** to a configured knowledge base.
-  - Retrieve a response using the `RetrieveAndGenerate` API, which:
-
-    - Specifies the knowledge base ID.
-    - Configures a vector search (e.g., searching for results with related vectors) with 6 results.
-    - Uses a specific `ModelArn` for processing the input.
-
-  - Returns the generated response (`output.Output.Text`).
+Let me break down the code in `model.go` step-by-step.
 
 ```go
 package main
@@ -96,7 +97,28 @@ func NewBedrock() *BedrockAgent {
 		Client: *BedrockAgentRuntimeClient,
 	}
 }
+```
 
+The code defines a `BedrockAgent` structure that interacts with AWS Bedrock Agent Runtime. It has two main components:
+
+1. **Initialization (`NewBedrock`)**: Sets up the Bedrock agent client using AWS credentials.
+2. **Knowledge Base Query (`RetrieveResponseFromKnowledgeBase`)**: Queries a knowledge base to retrieve and generate a response for a given question.
+
+   - `BedrockAgent` contains an AWS client (`bedrockagentruntime.Client`) that interacts with the Bedrock service.
+
+- `RetrieveResponseFromKnowledgeBase` queries a Bedrock-powered knowledge base for a generated response to a user-provided question. It uses a specific knowledge base ID and a vector search strategy to retrieve related results.
+
+  - The `RetrieveResponseFromKnowledgeBase` function uses the Bedrock runtime client to:
+  - Send a **question** to a configured knowledge base.
+  - Retrieve a response using the `RetrieveAndGenerate` API, which:
+
+    - Specifies the knowledge base ID.
+    - Configures a vector search (e.g., searching for results with related vectors) with 6 results.
+    - Uses a specific `ModelArn` for processing the input.
+
+  - Returns the generated response (`output.Output.Text`).
+
+```go
 func (bedrockAgent *BedrockAgent) RetrieveResponseFromKnowledgeBase(question string) string {
 	// invoke bedrock agent runtime to retrieve and generate
 	output, err := bedrockAgent.Client.RetrieveAndGenerate(
