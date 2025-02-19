@@ -99,6 +99,8 @@ Create a file named `food.txt` and store the information below. You can see that
 ---
 ```
 
+## Data Store
+
 Now, we need to upload this data to [S3](https://aws.amazon.com/s3/), which will be acting as the Data Source.
 
 Navigate to S3.
@@ -117,6 +119,8 @@ After the bucket is created, make sure to upload the `food.txt` file which we cr
 
 ![step4](./images/4.png)
 
+## Console Access
+
 Go back to IAM and ensure **console access** is enabled. Note that you cannot create a Knowledge Base from the root account.
 
 We will enable console access for the user ("bedrock_user") we created at the beginning if you recall.
@@ -129,7 +133,9 @@ You can provide your own custom password or autogenerate.
 
 ![iam3](./images/iam3.png)
 
-Now, let's resume back to BedRock console.
+## Knowledge Bases
+
+Now, let's return to the BedRock console.
 
 Click **Knowledge Bases**.
 
