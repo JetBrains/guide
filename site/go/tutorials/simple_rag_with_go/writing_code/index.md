@@ -239,15 +239,67 @@ You can see in the image that we are receiving a successful response.
 
 ![http_requests](./images/http_requests.png)
 
+Since our APIs are functioning perfectly, we will now focus on building the UI, utilizing Python for assistance.
+
+To install the plugin, we need to [configure](https://www.jetbrains.com/help/go/configuring-project-and-ide-settings.html) the IDE by selecting _GoLand | Settings_ on macOS or _File | Settings_ on Windows and Linux.
+
+Head over to **Plugins** and install **Python Community Edition**.
+
+> Note: You might need to restart the IDE after installing this plugin.
+
 ![python1](./images/python1.png)
-![python2](./images/python2.png)
-![python3](./images/python3.png)
-![python4](./images/python4.png)
-![python5](./images/python5.png)
-![python6](./images/python6.png)
-![python7](./images/python7.png)
+
+To run Python code, you need to set up the interpreter. You can find the **Add Interpreter** option under _Settings > Build, Execution, Deployment > Python Interpreter_.
+
+Click **Add Interpreter**.
+
+![python2](./images/python3.png)
+
+Click **Add Local Interpreter**.
+
+![python3](./images/python4.png)
+
+Create a new virtual environment and click **OK**.
+
+![python4](./images/python5.png)
+
+Once the virtual environment is created, you need to install the Python dependencies. They are already stored in the `requirements.txt` file, which you can find in the repository.
+
+Run the following command:
+
+```shell
+pip install -r requirements.txt
+```
+
+or
+
+```shell
+pip install streamlit
+pip install requests
+```
+
+![python5](./images/python6.png)
+
+### What is Streamlit?
+
+[Streamlit](https://streamlit.io/) is a popular open-source Python framework for building interactive and data-driven web applications with minimal effort. Here are some key benefits of using Streamlit:
+
+Simple, Pythonic syntax that allows you to create web apps with just a few lines of code.
+No need for HTML, CSS, or JavaScript—everything is written in Python.
+
+### Running Frontend
+
+Once the dependencies have been installed successfully, create a new python file and name it `frontend.py`.
+
+![python6](./images/python7.png)
 
 ![frontend_ui](./images/frontend_ui.png)
+
+I won't go into too much detail, but at a high level:
+
+- We are creating a UI that takes user input.
+- Sends the information to the Go backend.
+- Waits for a response from the knowledge base and displays it in the UI.
 
 ```python
 import streamlit as st
@@ -289,7 +341,17 @@ if st.button("Submit"):
 
 ```
 
+After completing the setup, run the following command in the terminal. You may receive a local URL with a different port number.
+
+```shell
+streamlit run frontend.py
+```
+
+Open the URL in your browser.
+
 ![frontend_runcode](./images/python_run.png)
+
+And here is the final result.
 
 <video width="1366" height="768" controls loop autoplay>
   <source src="./images/video_aws_rag.webm" type="video/webm">
