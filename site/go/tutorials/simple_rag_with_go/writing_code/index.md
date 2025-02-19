@@ -64,6 +64,11 @@ model.go
 
 Let me break down the code in `model.go` step-by-step.
 
+The code defines a `BedrockAgent` struct that interacts with AWS bedrock agent runtime. It has two main components:
+
+1. **`NewBedrock`**: Sets up the bedrock agent client using AWS credentials.
+2. **`RetrieveResponseFromKnowledgeBase`**: Queries the knowledge base to retrieve and generate a response for a given question, which we receive from the POST request.
+
 ```go
 package main
 
@@ -99,24 +104,19 @@ func NewBedrock() *BedrockAgent {
 }
 ```
 
-The code defines a `BedrockAgent` structure that interacts with AWS Bedrock Agent Runtime. It has two main components:
-
-1. **Initialization (`NewBedrock`)**: Sets up the Bedrock agent client using AWS credentials.
-2. **Knowledge Base Query (`RetrieveResponseFromKnowledgeBase`)**: Queries a knowledge base to retrieve and generate a response for a given question.
-
-   - `BedrockAgent` contains an AWS client (`bedrockagentruntime.Client`) that interacts with the Bedrock service.
-
-- `RetrieveResponseFromKnowledgeBase` queries a Bedrock-powered knowledge base for a generated response to a user-provided question. It uses a specific knowledge base ID and a vector search strategy to retrieve related results.
+- `RetrieveResponseFromKnowledgeBase` - In this function we are querying the knowledge base from a user-provided question. It uses a specific knowledge base ID and a vector search strategy to retrieve related results.
 
   - The `RetrieveResponseFromKnowledgeBase` function uses the Bedrock runtime client to:
   - Send a **question** to a configured knowledge base.
-  - Retrieve a response using the `RetrieveAndGenerate` API, which:
+  - Retrieve a response using the `RetrieveAndGenerate` function, which:
 
     - Specifies the knowledge base ID.
     - Configures a vector search (e.g., searching for results with related vectors) with 6 results.
     - Uses a specific `ModelArn` for processing the input.
 
   - Returns the generated response (`output.Output.Text`).
+
+You can even customize queries and response generation, follow this [link](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-config.html) for more details.
 
 ```go
 func (bedrockAgent *BedrockAgent) RetrieveResponseFromKnowledgeBase(question string) string {
@@ -151,19 +151,21 @@ func (bedrockAgent *BedrockAgent) RetrieveResponseFromKnowledgeBase(question str
 
 ```
 
+controller.go
+
+Let's move to the `controller.go` file where we define the HTTP handler function `ProcessLLMModel`. It processes the POST requests to query the knowledge base.
+
 ![step6](./images/4.png)
 
-The provided code defines a Go HTTP handler function, **ProcessLLMModel**, which processes POST requests to query a knowledge base via a `BedrockAgent`. It includes a request structure (`LLMRequest`) that expects a JSON object with a `question` field, and a response structure (`LLMResponse`) that contains the result.
+It also includes a request struct `LLMRequest` that expects a JSON object with a `question` field, and a response struct `LLMResponse` that contains the result.
 
 When the `ProcessLLMModel` function is invoked:
 
 1. It first verifies that the HTTP method is POST; otherwise, it responds with a 405 error.
 2. It reads the request body and ensures it is valid JSON, deserializing it into an `LLMRequest`.
 3. It trims whitespace and validates that the `question` field is not empty; if empty, it responds with a 400 error.
-4. If valid, it uses the `BedrockAgent` to pass the question to a knowledge base and retrieve the response.
-5. That response is wrapped in a JSON object (`LLMResponse`) and sent back to the client with a 200 status code.
-
-This function helps create a structured API endpoint for querying a knowledge base with POST JSON requests and receiving JSON responses.
+4. If valid, the question is passed to the knowledge base and waits to receive a response.
+5. The final response is wrapped in a JSON object (`LLMResponse`) and sent back to the client.
 
 ```go
 package main
@@ -226,6 +228,14 @@ func ProcessLLMModel(bedrockAgent *BedrockAgent) http.HandlerFunc {
 }
 
 ```
+
+Next, we will proceed to start the application.
+
+![run_app](./images/run_app.png)
+
+You can find a file in the project root named `requests.http`, which you can use to play around with APIs.
+
+You can see in the image that we are receiving a successful response.
 
 ![http_requests](./images/http_requests.png)
 
