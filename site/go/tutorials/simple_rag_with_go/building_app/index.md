@@ -11,7 +11,7 @@ topics:
 
 ## Knowledge Base
 
-We will be using AWS Bedrock [Knowledge Bases](https://aws.amazon.com/bedrock/knowledge-bases/) to provide additional information to the LLM, so they can understand the context and deliver relevant information, enabling more accurate and contextual responses for the specific needs of our application.
+We will use AWS Bedrock [Knowledge Bases](https://aws.amazon.com/bedrock/knowledge-bases/) to provide additional information to the LLM, allowing it to understand the context and deliver relevant insights, thereby enabling more accurate and contextual responses tailored to the specific needs of our application.
 
 ## Enable Models
 
@@ -157,7 +157,7 @@ Image Source: _[Pinecone](https://www.pinecone.io/learn/vector-database/)_
 Provide the following details:
 
 - The name of the Knowledge Base.
-- The name of the service role.
+- The name of the Service Role.
 
 The service role will attach policies for actions such as listing S3 buckets, invoking the Bedrock model, and accessing OpenSearch.
 
