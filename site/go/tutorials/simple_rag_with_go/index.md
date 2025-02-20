@@ -1,7 +1,7 @@
 ---
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
-date: 2025-02-03
+date: 2025-02-21
 title: Build a RAG App with AWS Bedrock and Go
 author: mm
 subtitle: Develop an RAG App with combination of Bedrock, Go & OpenSearch.

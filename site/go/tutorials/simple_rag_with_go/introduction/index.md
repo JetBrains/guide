@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2025-02-20
+date: 2025-02-21
 title: Introduction
 author: mm
 subtitle: What is RAG?
