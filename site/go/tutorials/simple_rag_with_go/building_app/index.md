@@ -129,7 +129,7 @@ We will enable console access for the user ("bedrock_user") we created at the be
 
 ![iam2](./images/iam2.png)
 
-You can provide your own custom password or autogenerate.
+You can provide your own custom password or autogenerate one.
 
 ![iam3](./images/iam3.png)
 
@@ -186,6 +186,10 @@ Next, we will select the model and vector store as [Amazon OpenSearch Serverless
 Next, I will choose **Titan Text Embeddings v2** as our embedding model. There are multiple options available, depending on your choice.
 
 > Titan models are highly effective in enhancing productivity and efficiency across a wide range of text-related tasks, including creating copy for blog posts and web pages, categorizing articles, open-ended Q&A, conversational chat, information extraction, and [more](https://aws.amazon.com/bedrock/amazon-models/titan/).
+>
+> _[Embedding models](https://www.couchbase.com/blog/embedding-models/) are a type of machine learning model designed to represent data (such as text, images, or other forms of information) in a continuous, low-dimensional vector space. These embeddings capture semantic or contextual similarities between pieces of data, enabling machines to perform tasks like comparison, clustering, or classification more effectively._
+>
+> Source: Couchbase
 
 ![titan](./images/titan.png)
 
@@ -203,7 +207,7 @@ It will take a few minutes to initialize.
 
 ![step15](./images/17.png)
 
-Once the Knowledge Base is created, you need to sync the data. After the sync is complete, test the Knowledge Base.
+Once the Knowledge Base is created, you need to sync the data. Syncing can take anywhere from a few minutes to a couple of hours, depending on the number of documents. Once the sync is complete, you're ready to test the Knowledge Base.
 
 ![step16](./images/18.png)
 
