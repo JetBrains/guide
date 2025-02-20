@@ -359,3 +359,5 @@ And here is the final result.
   <source src="./images/video_aws_rag.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
+
+I hope you enjoyed going through this tutorial. If you're interested in GenAI with Go and AWS, feel free to check out their [repository](https://github.com/aws-samples/building-genai-applications-with-golang).
