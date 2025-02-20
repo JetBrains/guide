@@ -171,15 +171,19 @@ Select the bucket where you have stored the file.
 
 ![step8](./images/10.png)
 
-Choose the default parser, and chunking strategy set to default.
+Next, we need to configure the chunking and parsing strategy. I'll stick with the default, but customization is an option.
+
+- `Default chunking`: Splits content into chunks of approximately 300 tokens, preserving sentence boundaries.
 
 ![step9](./images/11.png)
+
+> If you are interested in learning more about chunking and parsing strategies, then definitely check out [A Developer’s Guide to Advanced Chunking and Parsing with Amazon Bedrock](https://community.aws/content/2jU5zpqh4cal0Lm47MBdRmKLLJ5/a-developer-s-guide-to-advanced-chunking-and-parsing-with-amazon-bedrock)
 
 Next, we will select the model and vector store as [Amazon OpenSearch Serverless](https://aws.amazon.com/opensearch-service/features/serverless/). Since I prefer not to manage a vector database, opting for Amazon OpenSearch is the best choice.
 
 ![step10](./images/12.png)
 
-Choose **Titan Text Embeddings v2** model.
+Next, I will choose **Titan Text Embeddings v2** as our embedding model. There are multiple options available, depending on your choice.
 
 > Titan models are highly effective in enhancing productivity and efficiency across a wide range of text-related tasks, including creating copy for blog posts and web pages, categorizing articles, open-ended Q&A, conversational chat, information extraction, and [more](https://aws.amazon.com/bedrock/amazon-models/titan/).
 
