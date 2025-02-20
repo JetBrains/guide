@@ -7,6 +7,8 @@ subtitle: AWS Go SDK Integration & Streamlit Python UI
 thumbnail: ./thumbnail.png
 topics:
   - aws
+  - go
+  - python
 ---
 
 In the previous section, we completed the entire process of creating the knowledge base, interacted with it, and successfully tested it. Now, it's time to integrate with the AWS SDK and interact with the LLM using Go.

@@ -18,4 +18,7 @@ topics:
 
 In this tutorial, we will build a simple RAG application using AWS Bedrock, Go, and Streamlit with Python.
 
-Make sure you have installed [GoLand](https://www.jetbrains.com/go/). Additionally, we expect that the intended audience would have experience working with Go.
+### Prerequisites
+
+- Make sure you have installed [GoLand](https://www.jetbrains.com/go/).
+- Additionally, we expect that the intended audience would have experience working with Go & Python.
