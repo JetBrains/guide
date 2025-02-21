@@ -1,7 +1,8 @@
 ---
 title: Maha Taqi
-subtitle: Content Marketing Manager
-thumbnail: ./mt.jpg
-author: hs
-date: 2024-03-19
+subtitle: Content Marketing Writer
+thumbnail: ./maha.png
+author: mahataqi
+guest: true
+date: 2025-02-21
 ---
