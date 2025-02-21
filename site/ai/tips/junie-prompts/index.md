@@ -10,3 +10,13 @@ video: "./tip.webm"
 ---
 
 Do you know when to use Junie follow-up prompt and when to use a new prompt?
+
+Follow-up prompt is good for:
+
+- modify result from the original prompt
+- formulate a prompt based on the previous prompt
+
+Start a new prompt when:
+
+- the next task cannot benifit from the context of the previous prompt
+- creating a new task that has little to do with the previous prompt
