@@ -11,7 +11,7 @@ video: "./tip.webm"
 
 Do you know when to use a Junie follow-up prompt and when to use a new prompt?
 
-Follow-up prompt is good for:
+A follow-up prompt is good for:
 
 - modify result from the original prompt
 - formulate a prompt based on the previous prompt
