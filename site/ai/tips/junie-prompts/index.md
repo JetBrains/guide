@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 video: "./tip.webm"
 ---
 
-Do you know when to use Junie follow-up prompt and when to use a new prompt?
+Do you know when to use a Junie follow-up prompt and when to use a new prompt?
 
 Follow-up prompt is good for:
 
