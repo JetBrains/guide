@@ -1,7 +1,7 @@
 ---
 date: 2025-02-20
 title: "When to use Junie follow-up prompt"
-subtitle: And when to start a new prompt
+subtitle: And when to start a new prompt.
 topics:
   - ai
 author: cheuk
