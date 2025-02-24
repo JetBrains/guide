@@ -12,6 +12,7 @@ export const EleventyPage = Type.Object({
 	url: Type.String(),
 	inputPath: Type.String(),
 	date: Type.Date(),
+	rawInput: Type.String(),
 });
 export type EleventyPage = Static<typeof EleventyPage>;
 

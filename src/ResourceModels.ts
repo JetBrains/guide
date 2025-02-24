@@ -1,7 +1,7 @@
 import { Static, Type } from "@sinclair/typebox";
 import { EleventyPage } from "./models";
 import { resolveReference } from "./registration";
-import { validateFrontmatter } from "./validators";
+import { validateFrontmatter, validateContent } from "./validators";
 import { DateTime } from "luxon";
 import path from "upath";
 import { ALL_RESOURCES, RESOURCE_TYPES } from "./resourceType";
@@ -113,6 +113,7 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 	topics?: string[];
 	references?: References;
 	static referenceFields = ["author", "channel", "topics"] as const;
+	rawInput: string;
 
 	constructor({
 		data,
@@ -138,6 +139,7 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 		this.displayDate = displayDate;
 		this.tags = data.tags;
 		this.topics = data.topics;
+		this.rawInput = page.rawInput;
 	}
 
 	resolve(resourceMap: ResourceMap): void {
@@ -146,6 +148,7 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 		// @ts-ignore
 		validateFrontmatter(this.constructor.frontmatterSchema, this, this.url);
 
+		if (this.rawInput) validateContent(this.rawInput, this.url);
 		this.references = Resource.referenceFields.reduce((acc, fieldName) => {
 			return {
 				...acc,
