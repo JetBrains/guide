@@ -20,7 +20,7 @@ Use the Run action <kbd>⌃⌥R</kbd> (macOS) / <kbd>Shift+Alt+F10</kbd> (Window
 
 You can do more from the keyboard than just run it. Each entry in the popup has a submenu which you can access by pressing the right arrow. This lets you choose how you want to run it (Run, Debug, Coverage, Profile, Run under the concurrency diagram, etc.) as well as edit that configuration or delete it.
 
-Debugging is popular option, so it gets its own popup sequence. Use the Debug action <kbd>⌥⌘R</kbd> (macOS) / <kbd>F9</kbd> (Windows/Linux) to give the popup, but leading directly to debugging (to skip the submenu step.) Once selected, you can re-run that debug configuration with the Debug <your configuration> action <kbd>⌃D</kbd> (macOS) / <kbd>Shift+F9</kbd> (Windows/Linux).
+Debugging is popular option, so it gets its own popup sequence. Use the Debug action <kbd>⌥⌘R</kbd> (macOS) / <kbd>F9</kbd> (Windows/Linux) to give the popup, but leading directly to debugging (to skip the submenu step.) Once selected, you can re-run that debug configuration with the Debug &lt;your configuration> action <kbd>⌃D</kbd> (macOS) / <kbd>Shift+F9</kbd> (Windows/Linux).
 
 Again, for both the run popup and debug popup, don't forget to speed type to select, instead of the arrow keys.
 
