@@ -68,7 +68,7 @@ class AIHomepage {
 						resources={aiaResources}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={`/tags/ai`}
+						moreLink={`/tags/ai/`}
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
@@ -79,7 +79,7 @@ class AIHomepage {
 						resources={junieResources}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={`/tags/junie`}
+						moreLink={`/tags/junie/`}
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
@@ -90,7 +90,7 @@ class AIHomepage {
 							resources={artificalIntelligenceResources}
 							separator={false}
 							includeCardFooter={false}
-							moreLink={`/tags/artifical-intelligence`}
+							moreLink={`/tags/artifical-intelligence/`}
 							sectionExtraClass={"has-background-grey-lighter"}
 						/>
 					)}
