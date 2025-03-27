@@ -31,17 +31,24 @@ class AIHomepage {
 	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
-		const links = this.getResources({
-			resourceTypes: [LINK_RESOURCE],
+		const aiaResources = this.getResources({
+			resourceTypes: [LINK_RESOURCE, TIP_RESOURCE],
 			customFilter: (r) =>
-				r.channel == channel.url || r.topics?.includes("ai") == true,
-			limit: 8,
+				!!r.topics?.includes("ai") && !!r.tags?.includes("aia"),
+			limit: 4,
 		});
 
-		const tips = this.getResources({
-			resourceTypes: [TIP_RESOURCE],
+		const junieResources = this.getResources({
+			resourceTypes: [LINK_RESOURCE, TIP_RESOURCE],
 			customFilter: (r) =>
-				r.channel == channel.url && r.topics?.includes("ai") == true,
+				!!r.topics?.includes("ai") && !!r.tags?.includes("junie"),
+			limit: 4,
+		});
+
+		const artificalIntelligenceResources = this.getResources({
+			resourceTypes: [LINK_RESOURCE, TIP_RESOURCE],
+			customFilter: (r) =>
+				!!r.topics?.includes("ai") && !!r.tags?.includes("ai"),
 			limit: 4,
 		});
 
@@ -55,27 +62,38 @@ class AIHomepage {
 					subtitleExtraClass={"has-text-white"}
 				/>
 
-				{links && (
+				{aiaResources && aiaResources.length > 0 && (
 					<ListingSection
-						title={`Latest links`}
-						resources={links}
+						title={`AI Assistant`}
+						resources={aiaResources}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={`${channel.url}links/`}
+						moreLink={`/tags/ai`}
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
 
-				{tips && (
+				{junieResources && junieResources.length > 0 && (
 					<ListingSection
-						title={`Latest tips`}
-						resources={tips}
+						title={`Junie`}
+						resources={junieResources}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={`${channel.url}tips/`}
+						moreLink={`/tags/junie`}
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
+				{artificalIntelligenceResources &&
+					artificalIntelligenceResources.length > 0 && (
+						<ListingSection
+							title={`Artificial Intelligence`}
+							resources={artificalIntelligenceResources}
+							separator={false}
+							includeCardFooter={false}
+							moreLink={`/tags/artifical-intelligence`}
+							sectionExtraClass={"has-background-grey-lighter"}
+						/>
+					)}
 			</BaseLayout>
 		);
 	}
