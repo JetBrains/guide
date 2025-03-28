@@ -3,7 +3,7 @@ import { screen } from "@testing-library/dom";
 
 import { LinkLayout, LinkLayoutData } from "./LinkLayout.11ty";
 import fixtures, { baseRenderData } from "../../fixtures";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 
 test("should render LinkLayout", async () => {
 	const link0 = fixtures.linkItems[0];
@@ -14,7 +14,7 @@ test("should render LinkLayout", async () => {
 	};
 	const firstLinkURL = fixtures.articles[0].url;
 	fixtures.context.getResource = () => fixtures.resourceMap.get(firstLinkURL)!;
-	document.body.innerHTML = await renderToString(
+	document.body.innerHTML = await jsxToString(
 		LinkLayout.call(fixtures.context, renderProps),
 	);
 	expect(screen.getByText(link0.data.title)).toBeTruthy();

@@ -2,7 +2,7 @@ import { expect, test } from "vitest";
 import { PlaylistsLayout, PlaylistsLayoutProps } from "./PlaylistsLayout.11ty";
 import { screen } from "@testing-library/dom";
 import fixtures, { baseRenderData } from "../../fixtures";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 
 test("should render PlaylistLayout", async () => {
 	const title = "These Tips";
@@ -19,7 +19,7 @@ test("should render PlaylistLayout", async () => {
 	};
 	const firstResource = Array.from(fixtures.resourceMap.values())[0];
 	fixtures.context.getResource = () => firstResource;
-	document.body.innerHTML = await renderToString(
+	document.body.innerHTML = await jsxToString(
 		PlaylistsLayout.call(fixtures.context, renderProps),
 	);
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {

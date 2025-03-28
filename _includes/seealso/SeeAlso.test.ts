@@ -2,7 +2,7 @@ import { expect, test } from "vitest";
 import { screen } from "@testing-library/dom";
 
 import SeeAlso, { SeeAlsoProps } from "./SeeAlso.11ty";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 
 const props: SeeAlsoProps = {
 	items: [
@@ -12,7 +12,7 @@ const props: SeeAlsoProps = {
 };
 
 test("SeeAlso", async () => {
-	document.body.innerHTML = await renderToString(SeeAlso(props));
+	document.body.innerHTML = await jsxToString(SeeAlso(props));
 	const result = screen.getByRole("link", { name: "See Also 1" });
 	expect(result).toBeTruthy();
 });

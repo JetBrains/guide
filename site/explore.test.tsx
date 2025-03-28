@@ -10,7 +10,7 @@ import { ChannelHomepageData } from "../_includes/resources/channel/ChannelModel
 import ExplorePage from "./explore.11ty";
 import { HTMLInputElement } from "happy-dom";
 import { Resource } from "../src/ResourceModels";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 
 const lunrResources = fixtures.resources.map((resource) => {
 	return {
@@ -50,7 +50,7 @@ describe("Faceted Browse", () => {
 
 	beforeEach(async () => {
 		explorePage = new ExplorePage();
-		document.body.innerHTML = await renderToString(
+		document.body.innerHTML = await jsxToString(
 			explorePage.render.call(context, pageLayoutData),
 		);
 		cardTemplate = document.getElementById("cardTemplate");

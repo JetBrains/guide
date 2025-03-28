@@ -3,7 +3,7 @@ import { expect, test } from "vitest";
 import { BaseLayout, BaseLayoutProps } from "./BaseLayout.11ty";
 import fixtures, { baseRenderData } from "../fixtures";
 import { screen } from "@testing-library/dom";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 
 test("BaseLayout for Tip", async () => {
 	const tip0 = fixtures.tipItems[0];
@@ -14,7 +14,7 @@ test("BaseLayout for Tip", async () => {
 		children: [],
 	};
 	const r = BaseLayout.call(fixtures.context, renderProps);
-	document.body.innerHTML = await renderToString(r);
+	document.body.innerHTML = await jsxToString(r);
 	expect(document.body).toBeTruthy();
 });
 test("BaseLayout for Channel", async () => {
@@ -27,7 +27,7 @@ test("BaseLayout for Channel", async () => {
 	};
 
 	const r = BaseLayout.call(fixtures.context, pageLayoutData);
-	document.body.innerHTML = await renderToString(r);
+	document.body.innerHTML = await jsxToString(r);
 	const subnavTitle: HTMLAnchorElement = screen.getByRole("link", {
 		name: "Channel",
 	});

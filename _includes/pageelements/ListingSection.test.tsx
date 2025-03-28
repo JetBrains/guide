@@ -2,7 +2,7 @@ import { expect, test } from "vitest";
 import { screen } from "@testing-library/dom";
 import ListingSection, { ListingSectionProps } from "./ListingSection.11ty";
 import fixtures from "../fixtures";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 
 test("SectionListing exists", async () => {
 	const props: ListingSectionProps = {
@@ -12,7 +12,7 @@ test("SectionListing exists", async () => {
 		resources: fixtures.resources,
 	};
 	const r = ListingSection(props);
-	document.body.innerHTML = await renderToString(r);
+	document.body.innerHTML = await jsxToString(r);
 	expect(screen.getByText("Some Title")).toBeTruthy();
 	expect(screen.getByText("Some Subtitle")).toBeTruthy();
 	expect(screen.getAllByRole("link", { name: "Another Tip" })).toBeTruthy();

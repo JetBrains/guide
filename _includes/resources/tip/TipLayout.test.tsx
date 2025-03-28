@@ -3,7 +3,7 @@ import { screen } from "@testing-library/dom";
 
 import { TipLayout, TipLayoutData } from "./TipLayout.11ty";
 import fixtures, { baseRenderData } from "../../fixtures";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 
 test("should render TipLayout", async () => {
 	const tip0 = fixtures.tipItems[0];
@@ -12,7 +12,7 @@ test("should render TipLayout", async () => {
 		...tip0.data,
 		page: tip0.page,
 	};
-	document.body.innerHTML = await renderToString(
+	document.body.innerHTML = await jsxToString(
 		TipLayout.call(fixtures.context, renderProps),
 	);
 	expect(screen.getAllByText(tip0.data.title)[0]).toBeTruthy();

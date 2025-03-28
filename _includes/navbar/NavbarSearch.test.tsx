@@ -1,7 +1,7 @@
 import { beforeEach, expect, test } from "vitest";
 import { screen } from "@testing-library/dom";
 import NavbarSearch from "./NavbarSearch.11ty";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 
 beforeEach(async () => {
@@ -11,7 +11,7 @@ beforeEach(async () => {
 			<NavbarSearch />
 		</Fragment>
 	);
-	document.body.innerHTML = await renderToString(r);
+	document.body.innerHTML = await jsxToString(r);
 });
 
 test("NavbarSearch exists", () => {

@@ -3,11 +3,11 @@ import { screen } from "@testing-library/dom";
 
 import Pagination from "./Pagination.11ty";
 import fixtures from "../fixtures";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 
 test("Pagination", async () => {
 	const r = Pagination(fixtures.paginationProps);
-	document.body.innerHTML = await renderToString(r);
+	document.body.innerHTML = await jsxToString(r);
 	expect(screen.getByRole("navigation")).toBeTruthy();
 	expect(screen.getByLabelText("Goto page 0")).toBeTruthy();
 	const previous: HTMLAnchorElement = screen.getByText("Previous");

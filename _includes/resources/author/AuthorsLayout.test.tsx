@@ -3,7 +3,7 @@ import { AuthorsLayout } from "./AuthorsLayout.11ty";
 import { screen } from "@testing-library/dom";
 import fixtures, { baseRenderData } from "../../fixtures";
 import { ReferenceLayoutProps } from "../../layouts/ReferenceLayout.11y";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 
 test("should render AuthorsLayout", async () => {
 	const renderProps: ReferenceLayoutProps = {
@@ -17,7 +17,7 @@ test("should render AuthorsLayout", async () => {
 			date: fixtures.date,
 		},
 	};
-	document.body.innerHTML = await renderToString(
+	document.body.innerHTML = await jsxToString(
 		AuthorsLayout.call(fixtures.context, renderProps),
 	);
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {

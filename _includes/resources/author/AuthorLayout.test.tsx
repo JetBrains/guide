@@ -4,7 +4,7 @@ import { screen } from "@testing-library/dom";
 import { AuthorLayout } from "./AuthorLayout.11ty";
 import fixtures, { baseRenderData } from "../../fixtures";
 import { ReferenceLayoutProps } from "../../layouts/ReferenceLayout.11y";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 
 test("should render AuthorLayout", async () => {
 	const renderProps: ReferenceLayoutProps = {
@@ -14,7 +14,7 @@ test("should render AuthorLayout", async () => {
 		listing: <div></div>,
 	};
 
-	document.body.innerHTML = await renderToString(
+	document.body.innerHTML = await jsxToString(
 		AuthorLayout.call(fixtures.context, renderProps),
 	);
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {

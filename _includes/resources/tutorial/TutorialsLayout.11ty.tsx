@@ -6,7 +6,7 @@ import { LayoutContext } from "../../../src/models";
 import ResourceCard from "../../resourcecard/ResourceCard.11ty";
 import { Tutorial } from "./TutorialModels";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 
 export default class TutorialsLayout {
 	data() {
@@ -35,7 +35,7 @@ export default class TutorialsLayout {
 				})}
 			</Fragment>
 		);
-		return await renderToString(
+		return await jsxToString(
 			<ReferenceLayout {...data} listing={listing} content={content} />,
 		);
 	}

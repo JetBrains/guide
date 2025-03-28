@@ -1,4 +1,4 @@
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 
 export default function (eleventyConfig: any) {
 	eleventyConfig.addExtension(["11ty.jsx", "11ty.ts", "11ty.tsx"], {
@@ -6,7 +6,7 @@ export default function (eleventyConfig: any) {
 	});
 
 	eleventyConfig.addTransform("tsx", async (content: any) => {
-		const result = await renderToString(content);
+		const result = await jsxToString(content);
 		return `<!doctype html>\n${result}`;
 	});
 

@@ -4,7 +4,7 @@ import {
 	getRootUrl,
 	MetaOpenGraphImage,
 } from "./metaOpenGraphImagePlugin";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 
 const siteUrl = "https://jetbrains.com/pycharm/guide";
 const transform = function (html: string): string {
@@ -24,8 +24,8 @@ test("can find image tag and inject to head", () => {
 	const result = transform(content) as string;
 	expect(
 		result.includes(
-			`<meta property="og:image" content="https://jetbrains.com/pycharm/guide${viteAsset}">`
-		)
+			`<meta property="og:image" content="https://jetbrains.com/pycharm/guide${viteAsset}">`,
+		),
 	).to.be.true;
 	expect(result.includes(`<img data-meta`)).to.be.false;
 });
@@ -36,17 +36,17 @@ test("can get host url from site url", () => {
 });
 
 test("component jsx returns and image tag", async () => {
-	const html = await renderToString(
-		<MetaOpenGraphImage siteUrl={`https://example.com`} src={`/card.png`} />
+	const html = await jsxToString(
+		<MetaOpenGraphImage siteUrl={`https://example.com`} src={`/card.png`} />,
 	);
 	expect(html).to.be.equal(
-		`<img alt="" loading="lazy" data-meta="https://example.com" src="/card.png" style="display:none">`
+		`<img alt="" loading="lazy" data-meta="https://example.com" src="/card.png" style="display:none">`,
 	);
 });
 
 test("component handles null or undefined src values", async () => {
-	const html = await renderToString(
-		<MetaOpenGraphImage siteUrl={`https://example.com`} src={null} />
+	const html = await jsxToString(
+		<MetaOpenGraphImage siteUrl={`https://example.com`} src={null} />,
 	);
 	expect(html).to.be.equal("");
 });

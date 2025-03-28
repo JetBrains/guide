@@ -27,7 +27,7 @@ import { RESOURCE_TYPES } from "../src/resourceType";
 import { Link } from "./resources/link/LinkModels";
 import path from "upath";
 import { darkTheme } from "jetbrains-ide-themes";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 
 export type ResourceMapType = {
 	channel: Channel;
@@ -71,7 +71,7 @@ export async function registerIncludes(
 			return async function (data: any) {
 				// @ts-ignore
 				const content: JSX.Element = await this.defaultRenderer(data);
-				return renderToString(content);
+				return jsxToString(content);
 			};
 		},
 	});

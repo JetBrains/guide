@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 import { MainLayout } from "./MainLayout.11ty";
 import { screen } from "@testing-library/dom";
 import { ViewProps } from "../eleventy";
@@ -10,7 +10,7 @@ test("render MainLayout", async () => {
 		title: "My Site",
 	};
 	const result = MainLayout(viewProps);
-	document.body.innerHTML = await renderToString(result);
+	document.body.innerHTML = await jsxToString(result);
 	expect(screen.getByText(`Hello My Site`)).toBeTruthy();
 	expect(screen.getByText(`the body`)).toBeTruthy();
 });

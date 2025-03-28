@@ -5,7 +5,7 @@ import { ChannelHomepageData } from "../../_includes/resources/channel/ChannelMo
 
 // @ts-ignore
 import PHPHomepage from "./index.11ty";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 test("should render PHPHomepage", async () => {
 	const channelItem = fixtures.channelItems[0];
 	const pageLayoutData: ChannelHomepageData = {
@@ -21,7 +21,7 @@ test("should render PHPHomepage", async () => {
 
 	const homepage = new PHPHomepage();
 	const r = homepage.render.call(context, pageLayoutData);
-	document.body.innerHTML = await renderToString(r);
+	document.body.innerHTML = await jsxToString(r);
 	const subnavTitle: HTMLAnchorElement = screen.getByRole("link", {
 		name: "Channel",
 	});

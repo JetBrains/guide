@@ -1,7 +1,7 @@
 import { expect, test } from "vitest";
 
 import Navbar from "./Navbar.11ty";
-import { renderToString } from "jsx-async-runtime";
+import { jsxToString } from "jsx-async-runtime";
 
 test("Navbar", async () => {
 	const r = (
@@ -12,7 +12,7 @@ test("Navbar", async () => {
 			topics={[]}
 		/>
 	);
-	document.body.innerHTML = await renderToString(r);
+	document.body.innerHTML = await jsxToString(r);
 	const result = document.querySelector("nav");
 	expect(result && result.tagName).to.equal("NAV");
 });
