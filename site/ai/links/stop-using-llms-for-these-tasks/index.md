@@ -3,6 +3,7 @@ date: 2024-03-25
 title: Stop using LLMs for these tasks!
 topics:
   - ai
+  - aia
 author: jb
 subtitle: Discover the ins and outs of large language models (LLMs) with Dr. Jodie Burchell.
 thumbnail: ./thumbnail.png

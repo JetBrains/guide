@@ -7,6 +7,7 @@ seealso:
     href: https://www.jetbrains.com/help/idea/use-prompts-to-explain-and-refactor-your-code.html#ai_add_custom_prompts
 topics:
   - ai
+  - aia
   - java
 author: md
 thumbnail: ./thumbnail.png

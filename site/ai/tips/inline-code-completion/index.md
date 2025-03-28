@@ -7,6 +7,7 @@ seealso:
     href: https://www.jetbrains.com/help/idea/use-ai-in-editor.html#enable-inline-code-completion
 topics:
   - ai
+  - aia
   - java
 author: md
 thumbnail: ./thumbnail.png

@@ -3,6 +3,7 @@ date: 2024-11-11
 title: "Introducing Mellum: JetBrains' New LLM Built for Developers"
 topics:
   - ai
+  - aia
 author: jetbrains
 subtitle: JetBrains launches Mellum, a proprietary large language model (LLM) specifically designed to assist software developers.
 thumbnail: ./thumbnail.jpg

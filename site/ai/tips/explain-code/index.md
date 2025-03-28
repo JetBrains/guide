@@ -8,6 +8,7 @@ seealso:
       https://www.jetbrains.com/help/idea/use-prompts-to-explain-and-refactor-your-code.html#ai-explain-code
 topics:
   - ai
+  - aia
 author: hs
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/embed/YF06TSxM7z8?rel=0"

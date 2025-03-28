@@ -3,6 +3,7 @@ date: 2024-02-23
 title: AI for PHP, How to Make AI Assistant Generate Test Implementations
 topics:
   - ai
+  - aia
   - php
 author: brentroose
 subtitle: Take a more test-driven-development approach, writing tests first, and having AI Assistant generate an implementation.
