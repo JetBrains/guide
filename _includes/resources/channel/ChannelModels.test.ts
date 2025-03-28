@@ -15,6 +15,7 @@ const page: EleventyPage = {
 	url: "/tips/some-page/",
 	inputPath: `/some-page.md`,
 	date: fixtures.date,
+	rawInput: "",
 };
 
 test("construct a channel", () => {

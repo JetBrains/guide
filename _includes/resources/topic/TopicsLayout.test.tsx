@@ -14,6 +14,7 @@ test("should render TopicsLayout", async () => {
 			url: "/topics",
 			fileSlug: "some-slug",
 			date: fixtures.date,
+			inputPath: "",
 		},
 	};
 	fixtures.context.getResources = () => fixtures.topics as any;

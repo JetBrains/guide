@@ -16,6 +16,7 @@ const page: EleventyPage = {
 	url: "/tips/some-tip/",
 	inputPath: `/tips/some-tip/index.md`,
 	date: fixtures.date,
+	rawInput: "",
 };
 
 test("construct a tip", () => {

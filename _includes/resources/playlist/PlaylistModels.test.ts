@@ -17,6 +17,7 @@ const page: EleventyPage = {
 	url: "/playlists/some-playlist/",
 	inputPath: `/playlists/some-playlist/index.md`,
 	date: fixtures.date,
+	rawInput: "",
 };
 
 test("construct a playlist", () => {

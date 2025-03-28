@@ -17,6 +17,7 @@ const page: EleventyPage = {
 	url: "/topics/st/",
 	inputPath: `/topics/st/index.md`,
 	date: fixtures.date,
+	rawInput: "",
 };
 
 test("construct a topic", async () => {

@@ -9,6 +9,7 @@ const data: LayoutProps = {
 		url: "/rss.xml",
 		date: new Date(),
 		fileSlug: "rss.xml",
+		inputPath: "",
 	},
 };
 

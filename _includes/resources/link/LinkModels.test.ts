@@ -17,6 +17,7 @@ const page: EleventyPage = {
 	url: "/links/some-link/",
 	inputPath: `/links/some-link/index.md`,
 	date: fixtures.date,
+	rawInput: "",
 };
 
 test("construct a link", () => {

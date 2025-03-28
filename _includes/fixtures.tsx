@@ -71,6 +71,7 @@ const tipItems: {
 			url: "/tips/some-tip/",
 			inputPath: `/tips/some-tip/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 	{
@@ -81,6 +82,7 @@ const tipItems: {
 			url: "/tips/another-tip/",
 			inputPath: `/tips/another-tip/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 ];
@@ -107,7 +109,7 @@ const tips = tipDatas.map(
 		new Tip({
 			data: ref.data,
 			page: ref.page,
-		})
+		}),
 );
 
 const linkFrontmatters: LinkFrontmatter[] = [
@@ -143,6 +145,7 @@ const linkItems: {
 			url: "/links/some-link/",
 			inputPath: `/links/some-link/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 	{
@@ -153,6 +156,7 @@ const linkItems: {
 			url: "/links/another-link/",
 			inputPath: `/links/another-link/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 ];
@@ -179,8 +183,8 @@ const links = await Promise.all(
 			await new Link({
 				data: ref.data,
 				page: ref.page,
-			})
-	)
+			}),
+	),
 );
 
 const channelFrontmatters: ChannelFrontmatter[] = [
@@ -213,6 +217,7 @@ const channelItems: {
 			url: "/channels/some-channel/",
 			inputPath: `/channels/some-channel/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 	{
@@ -223,6 +228,7 @@ const channelItems: {
 			url: "/channels/another-channel/",
 			inputPath: `/channels/another-channel/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 ];
@@ -247,7 +253,7 @@ const channels = channelDatas.map(
 		new Channel({
 			data: ref.data,
 			page: ref.page,
-		})
+		}),
 );
 
 const articleItems: {
@@ -263,6 +269,7 @@ const articleItems: {
 			url: "/articles/some-article/",
 			inputPath: `/articles/some-article/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 ];
@@ -311,6 +318,7 @@ const authorItems: {
 			url: "/authors/sa/",
 			inputPath: `/authors/sa/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 	{
@@ -321,6 +329,7 @@ const authorItems: {
 			url: "/authors/aa/",
 			inputPath: "./site/webstorm-pycharm-webstorm-guide/authors/aa/index.md",
 			date,
+			rawInput: "",
 		},
 	},
 ];
@@ -408,6 +417,7 @@ const topicItems: {
 			url: "/topics/ato/",
 			inputPath: `/topics/ato/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 	{
@@ -418,6 +428,7 @@ const topicItems: {
 			url: "/topics/sto/",
 			inputPath: `/products/sto/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 	{
@@ -428,6 +439,7 @@ const topicItems: {
 			url: "/topics/ste/",
 			inputPath: `/topics/ste/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 	{
@@ -438,6 +450,7 @@ const topicItems: {
 			url: "/topics/ate/",
 			inputPath: `/topics/ate/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 	{
@@ -448,6 +461,7 @@ const topicItems: {
 			url: "/topics/sp/",
 			inputPath: `/topics/sp/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 	{
@@ -458,6 +472,7 @@ const topicItems: {
 			url: "/topics/ap/",
 			inputPath: `/topics/ap/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 ];
@@ -535,6 +550,7 @@ export const tutorialItems: {
 			url: "/tutorials/some-tutorial/",
 			inputPath: `/tutorials/some-tutorial/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 	{
@@ -545,6 +561,7 @@ export const tutorialItems: {
 			url: "/tutorials/another-tutorial/",
 			inputPath: `/tutorials/another-tutorial/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 ];
@@ -603,6 +620,7 @@ export const tutorialStepItems: {
 			url: "/tutorials/some-tutorial/some-tutorialstep/",
 			inputPath: `/tutorials/some-tutorial/some-tutorialstep/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 	{
@@ -613,6 +631,7 @@ export const tutorialStepItems: {
 			url: "/tutorials/some-tutorial/another-tutorialstep/",
 			inputPath: `/tutorials/some-tutorial/another-tutorialstep/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 	{
@@ -623,6 +642,7 @@ export const tutorialStepItems: {
 			url: "/tutorials/some-tutorial/third-tutorialstep/",
 			inputPath: `/tutorials/some-tutorial/third-tutorialstep/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 ];
@@ -686,6 +706,7 @@ export const playlistItems: {
 			url: "/playlists/some-playlist/",
 			inputPath: `/playlists/some-playlist/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 	{
@@ -696,6 +717,7 @@ export const playlistItems: {
 			url: "/playlists/another-playlist/",
 			inputPath: `/playlists/another-playlist/index.md`,
 			date,
+			rawInput: "",
 		},
 	},
 ];
@@ -736,7 +758,7 @@ const authors = authorDatas.map(
 		new Author({
 			data: ref.data,
 			page: ref.page,
-		})
+		}),
 );
 
 const topics = topicDatas.map(
@@ -744,7 +766,7 @@ const topics = topicDatas.map(
 		new Topic({
 			data: ref.data,
 			page: ref.page,
-		})
+		}),
 );
 
 const articles = articleDatas.map(
@@ -752,7 +774,7 @@ const articles = articleDatas.map(
 		new Article({
 			data: ref.data,
 			page: ref.page,
-		})
+		}),
 );
 
 const tutorials = tutorialDatas.map(
@@ -760,7 +782,7 @@ const tutorials = tutorialDatas.map(
 		new Tutorial({
 			data: ref.data,
 			page: ref.page,
-		})
+		}),
 );
 
 const tutorialSteps = tutorialStepDatas.map(
@@ -768,7 +790,7 @@ const tutorialSteps = tutorialStepDatas.map(
 		new TutorialStep({
 			data: ref.data,
 			page: ref.page,
-		})
+		}),
 );
 
 const playlists = playlistDatas.map(
@@ -776,7 +798,7 @@ const playlists = playlistDatas.map(
 		new Playlist({
 			data: ref.data,
 			page: ref.page,
-		})
+		}),
 );
 
 const allResources = new Map<string, Resource>();

@@ -15,6 +15,7 @@ const page: EleventyPage = {
 	url: "/authors/sa/",
 	inputPath: `/authors/sa/index.md`,
 	date: fixtures.date,
+	rawInput: "",
 };
 
 test("construct an author", async () => {

@@ -9,6 +9,7 @@ const data: LayoutProps = {
 		url: "/lunr_index.json",
 		date: new Date(),
 		fileSlug: "lunr_index.json",
+		inputPath: "",
 	},
 };
 

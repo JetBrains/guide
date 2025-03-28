@@ -15,6 +15,7 @@ test("should render TutorialsLayout", async () => {
 			fileSlug: "slug",
 			url: "url",
 			date: fixtures.date,
+			inputPath: "",
 		},
 		pagination: fixtures.paginationProps.pagination,
 	};

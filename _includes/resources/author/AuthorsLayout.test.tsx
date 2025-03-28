@@ -15,6 +15,7 @@ test("should render AuthorsLayout", async () => {
 			url: "/authors",
 			fileSlug: "some-slug",
 			date: fixtures.date,
+			inputPath: "",
 		},
 	};
 	document.body.innerHTML = await jsxToString(

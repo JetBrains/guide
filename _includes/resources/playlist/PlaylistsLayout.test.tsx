@@ -14,6 +14,7 @@ test("should render PlaylistLayout", async () => {
 			fileSlug: "slug",
 			url: "url",
 			date: fixtures.date,
+			inputPath: "",
 		},
 		pagination: fixtures.paginationProps.pagination,
 	};
