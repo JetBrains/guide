@@ -24,5 +24,5 @@ test("should render TopicsLayout", async () => {
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: "Tag",
 	});
-	expect(links[0].href).to.equal("/topics/ap/");
+	expect(links[0].href).to.equal("http://localhost:3000/topics/ap/");
 });

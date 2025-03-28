@@ -17,5 +17,5 @@ test("should render TopicLayout", async () => {
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: fixtures.tipItems[0].data.title,
 	});
-	expect(links[0].href).to.equal("/tips/some-tip/");
+	expect(links[0].href).to.equal("http://localhost:3000/tips/some-tip/");
 });

@@ -13,7 +13,9 @@ test("ResourceCard", async () => {
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: fixtures.tips[0].title,
 	});
-	expect(links[0].href).to.equal(fixtures.tips[0].url);
+	expect(links[0].href).to.equal(
+		"http://localhost:3000" + fixtures.tips[0].url,
+	);
 });
 
 test("glow CSS class", () => {

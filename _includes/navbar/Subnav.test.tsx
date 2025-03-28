@@ -11,5 +11,5 @@ test("Subnav", async () => {
 	const subnavTitle: HTMLAnchorElement = screen.getByRole("link", {
 		name: "Channel",
 	});
-	expect(subnavTitle.href).to.equal(channel.url);
+	expect(subnavTitle.href).to.equal("http://localhost:3000" + channel.url);
 });

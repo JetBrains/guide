@@ -13,5 +13,7 @@ test("HorizontalResourceCard", async () => {
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: "Resource",
 	});
-	expect(links[0].href).to.equal(fixtures.tips[0].url);
+	expect(links[0].href).to.equal(
+		"http://localhost:3000" + fixtures.tips[0].url,
+	);
 });

@@ -5,7 +5,7 @@ const happyDOMSettings = window.happyDOM.settings;
 happyDOMSettings.disableJavaScriptFileLoading = true;
 happyDOMSettings.disableJavaScriptEvaluation = true;
 happyDOMSettings.disableCSSFileLoading = true;
-happyDOMSettings.disableIframePageLoading = true;
+happyDOMSettings.disableIframePageLoading = false;
 happyDOMSettings.disableComputedStyleRendering = true;
 happyDOMSettings.enableFileSystemHttpRequests = false;
 

@@ -22,5 +22,7 @@ test("should render TutorialStepLayout", async () => {
 	const link: HTMLAnchorElement = screen.getByRole("link", {
 		name: `Another Tutorial Step`,
 	});
-	expect(link.href).to.equal("/tutorials/some-tutorial/another-tutorialstep/");
+	expect(link.href).to.equal(
+		"http://localhost:3000/tutorials/some-tutorial/another-tutorialstep/",
+	);
 });

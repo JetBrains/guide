@@ -11,9 +11,9 @@ test("Pagination", async () => {
 	expect(screen.getByRole("navigation")).toBeTruthy();
 	expect(screen.getByLabelText("Goto page 0")).toBeTruthy();
 	const previous: HTMLAnchorElement = screen.getByText("Previous");
-	expect(previous.href).to.equal("tip3");
+	expect(previous.href).to.equal("http://localhost:3000/tip3");
 	const next: HTMLAnchorElement = screen.getByText("Next");
-	expect(next.href).to.equal("tip5");
+	expect(next.href).to.equal("http://localhost:3000/tip5");
 	const first: HTMLAnchorElement = screen.getByLabelText("Goto page 1");
-	expect(first.href).to.equal("/tips/some-tip/");
+	expect(first.href).to.equal("http://localhost:3000/tips/some-tip/");
 });

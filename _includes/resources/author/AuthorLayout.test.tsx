@@ -21,6 +21,6 @@ test("should render AuthorLayout", async () => {
 		name: fixtures.tutorialStepItems[2].data.title,
 	});
 	expect(links[0].href).to.equal(
-		"/tutorials/some-tutorial/third-tutorialstep/",
+		"http://localhost:3000/tutorials/some-tutorial/third-tutorialstep/",
 	);
 });

@@ -24,5 +24,5 @@ test("should render AuthorsLayout", async () => {
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: "Author",
 	});
-	expect(links[0].href).to.equal("/authors/aa/");
+	expect(links[0].href).to.equal("http://localhost:3000/authors/aa/");
 });

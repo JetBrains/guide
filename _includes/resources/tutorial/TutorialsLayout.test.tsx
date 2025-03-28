@@ -30,5 +30,5 @@ test("should render TutorialsLayout", async () => {
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: fixtures.tips[0].title,
 	});
-	expect(links[0].href).to.equal("/tips/some-tip/");
+	expect(links[0].href).to.equal("http://localhost:3000/tips/some-tip/");
 });

@@ -25,5 +25,7 @@ test("should render GoLandHomepage", async () => {
 	const subnavTitle: HTMLAnchorElement = screen.getByRole("link", {
 		name: "Channel",
 	});
-	expect(subnavTitle.href).to.equal(pageLayoutData.page.url);
+	expect(subnavTitle.href).to.equal(
+		"http://localhost:3000" + pageLayoutData.page.url,
+	);
 });

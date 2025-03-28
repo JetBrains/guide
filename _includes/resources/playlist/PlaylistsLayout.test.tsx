@@ -26,5 +26,5 @@ test("should render PlaylistLayout", async () => {
 	const links: HTMLAnchorElement[] = screen.getAllByRole("link", {
 		name: firstResource.title,
 	});
-	expect(links[0].href).to.equal(firstResource.url);
+	expect(links[0].href).to.equal("http://localhost:3000" + firstResource.url);
 });
