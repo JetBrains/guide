@@ -1,5 +1,5 @@
 ---
-title: AI
+title: AI Assistant
 subtitle: >-
   Comprising JetBrains AI Assistant and Full Line Code Completion
 logo: light.png
