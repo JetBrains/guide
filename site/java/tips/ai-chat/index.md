@@ -3,6 +3,7 @@ date: 2024-03-05
 title: AI Assistant Chat
 topics:
   - ai
+  - aia
   - java
 author: md
 subtitle: You can chat with JetBrains AI Assistant right inside the IDE.

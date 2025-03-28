@@ -7,7 +7,11 @@ import {
 	ChannelHomepageData,
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
-import { LINK_RESOURCE, TIP_RESOURCE } from "../../src/resourceType";
+import {
+	ARTICLE_RESOURCE,
+	LINK_RESOURCE,
+	TIP_RESOURCE,
+} from "../../src/resourceType";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Artificial Intelligence",
@@ -32,24 +36,23 @@ class AIHomepage {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
 		const aiaResources = this.getResources({
-			resourceTypes: [LINK_RESOURCE, TIP_RESOURCE],
+			resourceTypes: [LINK_RESOURCE, TIP_RESOURCE, ARTICLE_RESOURCE],
 			customFilter: (r) =>
-				!!r.topics?.includes("ai") && !!r.tags?.includes("aia"),
-			limit: 4,
+				!!r.topics?.includes("ai") && !!r.topics?.includes("aia"),
 		});
 
 		const junieResources = this.getResources({
-			resourceTypes: [LINK_RESOURCE, TIP_RESOURCE],
+			resourceTypes: [LINK_RESOURCE, TIP_RESOURCE, ARTICLE_RESOURCE],
 			customFilter: (r) =>
-				!!r.topics?.includes("ai") && !!r.tags?.includes("junie"),
-			limit: 4,
+				!!r.topics?.includes("ai") && !!r.topics?.includes("junie"),
 		});
 
 		const artificalIntelligenceResources = this.getResources({
-			resourceTypes: [LINK_RESOURCE, TIP_RESOURCE],
+			resourceTypes: [LINK_RESOURCE, TIP_RESOURCE, ARTICLE_RESOURCE],
 			customFilter: (r) =>
-				!!r.topics?.includes("ai") && !!r.tags?.includes("ai"),
-			limit: 4,
+				!!r.topics?.includes("ai") &&
+				!r.topics?.includes("aia") &&
+				!r.topics?.includes("junie"),
 		});
 
 		return (
@@ -65,10 +68,10 @@ class AIHomepage {
 				{aiaResources && aiaResources.length > 0 && (
 					<ListingSection
 						title={`AI Assistant`}
-						resources={aiaResources}
+						resources={aiaResources.slice(0, 4)}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={`/tags/ai/`}
+						moreLink={aiaResources.length > 4 ? `/tags/aia/` : undefined}
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
@@ -76,10 +79,10 @@ class AIHomepage {
 				{junieResources && junieResources.length > 0 && (
 					<ListingSection
 						title={`Junie`}
-						resources={junieResources}
+						resources={junieResources.slice(0, 4)}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={`/tags/junie/`}
+						moreLink={junieResources.length > 4 ? `/tags/junie/` : undefined}
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
@@ -90,7 +93,11 @@ class AIHomepage {
 							resources={artificalIntelligenceResources}
 							separator={false}
 							includeCardFooter={false}
-							moreLink={`/tags/artifical-intelligence/`}
+							moreLink={
+								artificalIntelligenceResources.length > 4
+									? `/tags/ai/`
+									: undefined
+							}
 							sectionExtraClass={"has-background-grey-lighter"}
 						/>
 					)}

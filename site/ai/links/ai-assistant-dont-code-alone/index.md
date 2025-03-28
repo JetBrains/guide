@@ -3,6 +3,7 @@ date: 2024-09-03
 title: "AI Assistant: Don’t Code Alone"
 topics:
   - ai
+  - aia
 author: jetbrains
 subtitle: Let's look at using JetBrains AI Assistant in quasi-real-world development situations.
 thumbnail: ./thumbnail.jpg

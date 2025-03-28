@@ -8,6 +8,7 @@ seealso:
       https://www.jetbrains.com/help/idea/work-with-commits.html#ai-generate-commit-messages
 topics:
   - ai
+  - aia
 author: hs
 thumbnail: ./thumbnail.png
 video: "https://www.youtube.com/embed/SnsiuF9Zflo?rel=0"

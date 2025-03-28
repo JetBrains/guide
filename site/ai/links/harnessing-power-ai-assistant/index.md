@@ -3,6 +3,7 @@ date: 2023-12-07
 title: Harnessing the Power of AI Assistant in IntelliJ IDEA
 topics:
   - ai
+  - aia
 author: aa
 subtitle: AI Assistant provides AI-powered features for software development based on the JetBrains AI service.
 thumbnail: ./thumbnail.png

@@ -4,6 +4,7 @@ date: 2024-03-01
 title: JetBrains AI Assistant
 topics:
   - ai
+  - aia
   - tricks
 author: md
 subtitle: Using AI Assistant to understand code.

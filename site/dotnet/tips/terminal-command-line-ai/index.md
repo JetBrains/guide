@@ -5,6 +5,7 @@ topics:
   - .net
   - rider
   - ai
+  - aia
   - tricks
 author: maartenba
 subtitle: Ask AI Assistant to write PowerShell or shell commands.

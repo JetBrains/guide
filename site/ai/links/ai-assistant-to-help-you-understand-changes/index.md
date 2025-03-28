@@ -3,6 +3,7 @@ date: 2024-01-10
 title: Use JetBrains AI Assistant To Help You Understand Changes In Your Code
 topics:
   - ai
+  - aia
 author: khalidabuhakmeh
 subtitle: Luckily, code never lies, and with the growing capabilities of LLMs and AI Assistants to parse and summarize input, we can start to focus our understanding of prior work and make plans to extend or modify a codebase.
 thumbnail: ./thumbnail.png

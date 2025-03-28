@@ -3,6 +3,7 @@ date: 2023-10-05
 title: JetBrains AI - A Deep Dive By Vladislav Tankov
 topics:
   - ai
+  - aia
 author: vt
 subtitle: The implementation of JetBrains AI – the backbone of AI Assistant, Grazie, and other JetBrains products.
 thumbnail: ./thumbnail.png

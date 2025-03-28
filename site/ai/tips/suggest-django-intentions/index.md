@@ -8,6 +8,7 @@ seealso:
       https://www.jetbrains.com/help/pycharm/use-prompts-to-explain-and-refactor-your-code.html#suggest-django-intentions
 topics:
   - ai
+  - aia
 author: hs
 thumbnail: ./thumbnail.png
 animatedGif:

@@ -4,6 +4,7 @@ title: "AI Code Generation in .NET"
 subtitle: Using AI to generate code in Rider
 topics:
   - ai
+  - aia
 author: hs
 thumbnail: ./thumbnail.png
 video: "./tip.webm"

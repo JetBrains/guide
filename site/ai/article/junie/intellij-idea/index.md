@@ -3,6 +3,7 @@ date: 2025-01-23
 title: "IntelliJ IDEA Junie Playbook"
 topics:
   - ai
+  - junie
 author: sk
 subtitle: Exploring Junie with IntelliJ IDEA
 thumbnail: ./thumbnail.png

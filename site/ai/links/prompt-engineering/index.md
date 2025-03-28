@@ -3,6 +3,7 @@ date: 2024-08-01
 title: Prompt Engineering For Developers
 topics:
   - ai
+  - aia
 author: mb
 subtitle: Prompt Engineering - Basic Concepts For Developers.
 thumbnail: ./thumbnail.jpg

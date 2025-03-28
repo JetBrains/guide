@@ -3,6 +3,7 @@ date: 2024-04-40
 title: Full Line Code Completion in JetBrains IDEs
 topics:
   - ai
+  - aia
 author: pwe
 subtitle: How does it work, what languages are supported, and how can you get started?
 thumbnail: ./thumbnail.png

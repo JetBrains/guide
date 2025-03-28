@@ -9,6 +9,7 @@ seealso:
     href: https://jetbrains.com/help/idea/resolve-conflicts.html
 topics:
   - ai
+  - aia
   - java
 author: md
 thumbnail: ./thumbnail.png

@@ -4,7 +4,6 @@ title: "Using Claude Models in AI Assistant"
 subtitle: How to switch to using Claude Models
 topics:
   - ai
-tags:
   - aia
 author: cheuk
 thumbnail: ./thumbnail.png
