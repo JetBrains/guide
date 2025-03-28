@@ -148,7 +148,11 @@ export class Resource<T extends RESOURCE_TYPES = RESOURCE_TYPES>
 		// @ts-ignore
 		validateFrontmatter(this.constructor.frontmatterSchema, this, this.url);
 
-		if (this.rawInput) validateContent(this.rawInput, this.url);
+		// It's possible that this.rawInput is an instance (e.g. channel page) instead
+		// of a string. We won't care about validating the markdown here.
+		// @ts-ignore
+		if (this.rawInput && this.rawInput.replace)
+			validateContent(this.rawInput, this.url);
 		this.references = Resource.referenceFields.reduce((acc, fieldName) => {
 			return {
 				...acc,
