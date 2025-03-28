@@ -3,6 +3,7 @@ date: 2024-11-11
 title: "Streamline Your Workflow in IntelliJ IDEA's Database Tools With AI Assistant"
 topics:
   - ai
+  - aia
 author: jetbrains
 subtitle: Use Assistant’s capabilities within Database Tools for more efficient data querying and handling.
 thumbnail: ./thumbnail.jpg

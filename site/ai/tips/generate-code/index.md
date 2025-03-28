@@ -7,6 +7,7 @@ seealso:
     href: https://www.jetbrains.com/help/idea/use-ai-in-editor.html#ai-generate-code-in-editor
 topics:
   - ai
+  - aia
   - java
 author: md
 thumbnail: ./thumbnail.png

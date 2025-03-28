@@ -3,6 +3,7 @@ date: 2024-03-13
 title: Generate Unit Tests Using AI Assistant
 topics:
   - ai
+  - aia
 author: rachelappel
 subtitle: Can you make your life easier as a developer by using AI to generate unit tests?
 thumbnail: ./thumbnail.png

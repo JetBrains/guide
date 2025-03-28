@@ -3,6 +3,7 @@ date: 2025-01-23
 title: "PyCharm Junie Playbook"
 topics:
   - ai
+  - junie
 author: cheuk
 subtitle: Exploring Junie with PyCharm
 thumbnail: ./thumbnail.png

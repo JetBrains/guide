@@ -3,6 +3,7 @@ date: 2024-02-21
 title: How To Use AI Assistant to Generate Test Data For .NET Applications
 topics:
   - ai
+  - aia
 author: khalidabuhakmeh
 subtitle: Scenarios to generate test data with the JetBrains AI Assistant for .NET unit tests to produce a more valuable and less brittle test suite.
 thumbnail: ./thumbnail.png

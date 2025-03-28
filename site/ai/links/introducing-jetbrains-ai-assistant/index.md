@@ -3,6 +3,7 @@ date: 2023-12-06
 title: Introducing JetBrains AI Assistant
 topics:
   - ai
+  - aia
 author: jb
 subtitle: How AI can help you with writing and refactoring code, generating documentation and creating commit messages.
 thumbnail: ./thumbnail.png

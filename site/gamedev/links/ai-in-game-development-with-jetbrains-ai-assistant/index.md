@@ -4,6 +4,7 @@ title: "AI in Game Development with JetBrains AI Assistant"
 topics:
   - gamedev
   - ai
+  - aia
 author: hs
 subtitle: JetBrains
 thumbnail: ./thumbnail.png

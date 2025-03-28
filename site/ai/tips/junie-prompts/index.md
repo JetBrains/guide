@@ -4,6 +4,9 @@ title: "When to use Junie follow-up prompt"
 subtitle: And when to start a new prompt.
 topics:
   - ai
+  - junie
+tags:
+  - junie
 author: cheuk
 thumbnail: ./thumbnail.png
 video: "./tip.webm"

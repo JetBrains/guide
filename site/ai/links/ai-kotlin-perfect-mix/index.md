@@ -3,6 +3,7 @@ date: 2024-08-01
 title: "AI and Kotlin: A Perfect Mix"
 topics:
   - ai
+  - aia
   - kotlin
 author: vt
 subtitle: The latest advancements in AI coding assistance by JetBrains AI for Kotlin in your IDE.

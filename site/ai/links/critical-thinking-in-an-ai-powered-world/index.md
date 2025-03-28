@@ -3,6 +3,7 @@ date: 2024-02-27
 title: Critical Thinking in an AI Powered World
 topics:
   - ai
+  - aia
 author: khalidabuhakmeh
 subtitle: Strengths and weaknesses of JetBrains AI Assistant, examples of edge cases, and strategies to get better results.
 thumbnail: ./thumbnail.png

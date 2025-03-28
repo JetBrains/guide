@@ -38,7 +38,7 @@ export default class IndexPage {
 			this.getResource("/kotlin/"),
 		];
 		const hotTopics = [
-			this.getResource("/tags/aws/"),
+			this.getResource("/tags/ai/"),
 			this.getResource("/tags/debugging/"),
 			this.getResource("/tags/git/"),
 			this.getResource("/tags/gcp/"),

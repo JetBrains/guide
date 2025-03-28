@@ -3,6 +3,7 @@ date: 2024-11-21
 title: "7 Ways AI Assistant Can Help You with Version Control"
 topics:
   - ai
+  - aia
 author: md
 subtitle: Let's look at ways that JetBrains AI Assistant can help you work with version control.
 thumbnail: ./thumbnail.png
