@@ -5,7 +5,7 @@ export function makeDoc(html) {
 	/* Given a string of HTML, return a Happy-DOM document. */
 	const window1 = new Window();
 	const domParser = new window1.DOMParser();
-	return domParser.parseFromString(html, "text/xml");
+	return domParser.parseFromString(html, "text/html");
 }
 
 function writeLunrIndex() {
