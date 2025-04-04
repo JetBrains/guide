@@ -8,6 +8,7 @@ import {
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
 import { LINK_RESOURCE, TIP_RESOURCE } from "../../src/resourceType";
+import GettingStartedSection from "../../_includes/pageelements/GettingStartedSection.11ty";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Artificial Intelligence",
@@ -17,7 +18,14 @@ const frontmatter: ChannelFrontmatter = {
 	author: "hs",
 	logo: "thumbnail.svg",
 	hero: "/assets/splashes/ai.svg",
-	subnav: [{ title: "AI Assistant", url: "https://www.jetbrains.com/ai/" }],
+	subnav: [
+		{ title: "AI Assistant", url: "https://www.jetbrains.com/ai/" },
+		{ title: "Junie", url: "https://www.jetbrains.com/ai/" },
+		{
+			title: "JetBrains AI",
+			url: "https://www.jetbrains.com/ai/",
+		},
+	],
 };
 
 class AIHomepage {
@@ -38,6 +46,8 @@ class AIHomepage {
 			limit: 8,
 		});
 
+		// const learnMoreResources = [this.getResource()];
+
 		const tips = this.getResources({
 			resourceTypes: [TIP_RESOURCE],
 			customFilter: (r) =>
@@ -56,13 +66,12 @@ class AIHomepage {
 				/>
 
 				{links && (
-					<ListingSection
-						title={`Latest links`}
-						resources={links}
+					<GettingStartedSection
+						title={`Getting Started with AI Assistant`}
+						resources={links.slice(0, 4)}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={`${channel.url}links/`}
-						sectionExtraClass={"has-background-grey-lighter"}
+						sectionExtraClass={"has-background-success"}
 					/>
 				)}
 
