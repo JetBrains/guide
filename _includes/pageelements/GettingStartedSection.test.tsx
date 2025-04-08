@@ -6,11 +6,12 @@ import GettingStartedSection, {
 import fixtures from "../fixtures";
 import { jsxToString } from "jsx-async-runtime";
 
-test("SectionListing exists", async () => {
+test("GettingStartedSection exists", async () => {
 	const props: GettingStartedSectionProps = {
 		title: "Some Title",
 		subtitle: "Some Subtitle",
-		moreLink: "/more/link",
+		description: [],
+		whyVideoUrl: "https://youtu.be/8sSlWDiwdkc",
 		resources: fixtures.resources,
 	};
 	const r = GettingStartedSection(props);

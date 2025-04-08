@@ -7,8 +7,11 @@ export type GettingStartedSectionProps = {
 	title: string;
 	subtitle?: string;
 	anchor?: string;
-	moreLink?: string;
+	description: string[];
+	whyVideoUrl: string;
 	resources: Resource[];
+	resourcesSubtitle?: string;
+	resourcesSubtitleTip?: string;
 	separator?: boolean;
 	isSection?: boolean;
 	includeCardFooter?: boolean;
@@ -20,8 +23,11 @@ function GettingStartedSection({
 	title,
 	subtitle,
 	anchor,
-	moreLink,
+	description,
+	whyVideoUrl,
 	resources,
+	resourcesSubtitle,
+	resourcesSubtitleTip,
 	separator,
 	isSection = true,
 	includeCardFooter = true,
@@ -35,7 +41,7 @@ function GettingStartedSection({
 
 	const sectionClassName = sectionExtraClass ? sectionExtraClass : "";
 
-	const learnMore = (
+	const sectionResources = (
 		<div class="columns is-multiline">
 			{resources.map((resource) => {
 				return (
@@ -51,7 +57,6 @@ function GettingStartedSection({
 		</div>
 	);
 
-	const whyVideoUrl = "https://www.youtube.com/watch?v=Y80rIKoSSSU";
 	const whyVideo = <VideoPlayer source={whyVideoUrl} />;
 
 	const container = (
@@ -67,44 +72,26 @@ function GettingStartedSection({
 						</p>
 					)}
 				</div>
-				{moreLink && (
-					<div class="column has-text-right">
-						<a class="button is-rounded is-outlined" href={moreLink}>
-							More...
-						</a>
-					</div>
-				)}
 			</div>
 			<div class="columns">
 				<div class="column is-two-thirds content">
-					<p>
-						That’s a look at the updated AI Assistant. Briefly summarized: Local
-						and cloud completion, powerful models, deep IDE integration, in chat
-						or your editor window.
-					</p>
-					<p>
-						That’s a look at the updated AI Assistant. Briefly summarized: Local
-						and cloud completion, powerful models, deep IDE integration, in chat
-						or your editor window.
-					</p>
+					{description.map((paragraph, _index) => {
+						return <p>{paragraph}</p>;
+					})}
 				</div>
 				<div class="column is-one-third">{whyVideo}</div>
 			</div>
 			<div class="container">
-				<div
-					title="Much longer sentence with "
-					class="is-size-3"
-					style="margin-bottom: 1em"
-				>
-					How To Use AI Assistant
-				</div>
-				{learnMore}
-			</div>
-			<div class="container">
-				<div class="is-size-3" style="margin-bottom: 1em">
-					Learn More
-				</div>
-				{learnMore}
+				{resourcesSubtitle && (
+					<div
+						title={resourcesSubtitleTip}
+						class="is-size-3"
+						style="margin-bottom: 1em"
+					>
+						{resourcesSubtitle}
+					</div>
+				)}
+				{sectionResources}
 			</div>
 		</div>
 	);

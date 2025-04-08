@@ -46,6 +46,13 @@ class AIHomepage {
 			limit: 8,
 		});
 
+		const aiaHowToVideos = this.getResources({
+			resourceTypes: [LINK_RESOURCE],
+			customFilter: (r) =>
+				r.channel == channel.url || r.topics?.includes("ai") == true,
+			limit: 8,
+		});
+
 		// const learnMoreResources = [this.getResource()];
 
 		const tips = this.getResources({
@@ -68,10 +75,43 @@ class AIHomepage {
 				{links && (
 					<GettingStartedSection
 						title={`Getting Started with AI Assistant`}
+						resources={links}
+						resourcesSubtitle={`How to use AI Assistant`}
+						resourcesSubtitleTip={``}
+						separator={false}
+						includeCardFooter={false}
+						sectionExtraClass={"has-background-success"}
+						description={[
+							"That’s a look at the updated AI Assistant. Briefly summarized: Local and cloud completion, powerful models, deep IDE integration, in chat or your editor window.",
+							"Another sentence about AI Assistant.",
+						]}
+						whyVideoUrl={"https://www.youtube.com/watch?v=Y80rIKoSSSU"}
+					/>
+				)}
+
+				{tips && (
+					<ListingSection
+						title={`Problem-solving with AI Assistant`}
+						resources={links.slice(0, 4)}
+						separator={false}
+						includeCardFooter={false}
+						moreLink={`${channel.url}tips/`}
+						sectionExtraClass={"has-background-grey-lighter"}
+					/>
+				)}
+
+				{links && (
+					<GettingStartedSection
+						title={`Getting Started with Junie`}
+						whyVideoUrl={"https://www.youtube.com/watch?v=Y80rIKoSSSU"}
 						resources={links.slice(0, 4)}
 						separator={false}
 						includeCardFooter={false}
 						sectionExtraClass={"has-background-success"}
+						description={[
+							"That’s a look at Junie. ",
+							"Another sentence about Junie.",
+						]}
 					/>
 				)}
 
