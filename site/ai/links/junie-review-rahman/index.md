@@ -7,7 +7,6 @@ topics:
 author: pwe
 subtitle: A professional developer gets Junie to help on two frontend projects.
 thumbnail: ./thumbnail.png
-video: "https://www.youtube.com/shorts/OImfRgIMC50"
 linkURL: "https://bazlur.ca/2025/03/03/jetbrains-junie-my-firsthand-experience/"
 ---
 
