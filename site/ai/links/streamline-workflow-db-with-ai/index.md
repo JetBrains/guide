@@ -4,6 +4,7 @@ title: "Streamline Your Workflow in IntelliJ IDEA's Database Tools With AI Assis
 topics:
   - ai
   - aia
+  - learn-aia
 author: jetbrains
 subtitle: Use Assistant’s capabilities within Database Tools for more efficient data querying and handling.
 thumbnail: ./thumbnail.jpg

@@ -69,8 +69,7 @@ class AIHomepage {
 
 		const aiaResources = this.getResources({
 			resourceTypes: [LINK_RESOURCE, ARTICLE_RESOURCE],
-			customFilter: (r) =>
-				!!r.topics?.includes("ai") && !!r.topics?.includes("aia"),
+			customFilter: (r) => !!r.topics?.includes("learn-aia"),
 		});
 
 		const junieResources = this.getResources({
@@ -119,7 +118,7 @@ class AIHomepage {
 						resources={aiaResources.slice(0, 4)}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={aiaResources.length > 4 ? `/tags/aia/` : undefined}
+						moreLink={aiaResources.length > 4 ? `/tags/learn-aia/` : undefined}
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}

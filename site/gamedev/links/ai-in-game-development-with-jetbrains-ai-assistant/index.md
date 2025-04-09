@@ -5,6 +5,7 @@ topics:
   - gamedev
   - ai
   - aia
+  - learn-aia
 author: hs
 subtitle: JetBrains
 thumbnail: ./thumbnail.png

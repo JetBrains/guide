@@ -5,6 +5,7 @@ topics:
   - ai
   - aia
   - php
+  - learn-aia
 author: brentroose
 subtitle: Generate boiler plate code and jump straight to the more interesting part of making tests.
 thumbnail: ./thumbnail.png

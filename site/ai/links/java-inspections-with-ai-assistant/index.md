@@ -4,6 +4,7 @@ title: Writing a Java Inspection for IntelliJ IDEA Using AI Assistant
 topics:
   - ai
   - aia
+  - learn-aia
 author: tv
 subtitle: Using AI Assistant to write a new Java inspection for IntelliJ IDEA, and write down my experience.
 thumbnail: ./thumbnail.png
