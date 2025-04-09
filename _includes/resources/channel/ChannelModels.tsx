@@ -28,6 +28,11 @@ export const ChannelFrontmatter = Type.Intersect([
 					url: Type.String({
 						description: "URL to link to",
 					}),
+					target: Type.Optional(
+						Type.String({
+							description: "Link target",
+						}),
+					),
 				}),
 			),
 		),
