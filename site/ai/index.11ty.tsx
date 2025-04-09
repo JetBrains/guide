@@ -75,7 +75,13 @@ class AIHomepage {
 		const junieResources = this.getResources({
 			resourceTypes: [LINK_RESOURCE, ARTICLE_RESOURCE],
 			customFilter: (r) =>
-				!!r.topics?.includes("ai") && !!r.topics?.includes("junie"),
+				!!r.topics?.includes("ai") && !!r.topics?.includes("learn-junie"),
+		});
+
+		const communityResources = this.getResources({
+			resourceTypes: [LINK_RESOURCE, ARTICLE_RESOURCE],
+			customFilter: (r) =>
+				!!r.topics?.includes("ai") && !!r.topics?.includes("ai-community"),
 		});
 
 		const tips = this.getResources({
@@ -143,7 +149,22 @@ class AIHomepage {
 						resources={junieResources.slice(0, 4)}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={junieResources.length > 4 ? `/tags/junie/` : undefined}
+						moreLink={
+							junieResources.length > 4 ? `/tags/learn-junie/` : undefined
+						}
+						sectionExtraClass={"has-background-grey-lighter"}
+					/>
+				)}
+
+				{communityResources && communityResources.length > 0 && (
+					<ListingSection
+						title={`JetBrains AI in the Community`}
+						resources={communityResources.slice(0, 4)}
+						separator={false}
+						includeCardFooter={false}
+						moreLink={
+							junieResources.length > 4 ? `/tags/ai-community/` : undefined
+						}
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
