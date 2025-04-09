@@ -60,7 +60,7 @@ Anton outlines a **progressive scale of AI-assisted development**:
 - **Full-Line Completion Plugin**: Offline, single-line predictions.
 - **Mellum Model**: JetBrains' own fine-tuned LLM for multi-line completions.
 - **Automatic Unit Test Generation**: Based on context and function analysis.
-- **Inline Prompting**: Use comments like `// generate test` to trigger completions.
+- **Inline Prompting**: Use comments like `// group list of students by name` to trigger completions.
 - **Chat-Based Refactoring**: Claude-powered assistant suggests and applies refactorings with inline explanations.
 - **Junie**:
   - Scans codebase.
