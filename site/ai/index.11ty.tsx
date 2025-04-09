@@ -7,12 +7,16 @@ import {
 	ChannelHomepageData,
 } from "../../_includes/resources/channel/ChannelModels";
 import { BaseLayout } from "../../_includes/layouts/BaseLayout.11ty";
-import { LINK_RESOURCE, TIP_RESOURCE } from "../../src/resourceType";
+import {
+	ARTICLE_RESOURCE,
+	LINK_RESOURCE,
+	TIP_RESOURCE,
+} from "../../src/resourceType";
 import GettingStartedSection from "../../_includes/pageelements/GettingStartedSection.11ty";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Artificial Intelligence",
-	subtitle: "Discover JetBrains AI Assistant\nand Full Line Code Completion.",
+	subtitle: "Discover JetBrains AI tools",
 	resourceType: "channel",
 	date: new Date(Date.UTC(2024, 2, 5)),
 	author: "hs",
@@ -39,27 +43,44 @@ class AIHomepage {
 	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
-		const links = this.getResources({
-			resourceTypes: [LINK_RESOURCE],
+		let aiaWhyVideoUrl = "https://www.youtube.com/watch?v=Y80rIKoSSSU";
+		const aiaHowTos = [
+			this.getResource("/ai/links/how-aia/kotlin/"),
+			this.getResource("/ai/links/how-aia/java/"),
+			this.getResource("/ai/links/how-aia/php/"),
+			this.getResource("/ai/links/how-aia/python/"),
+			this.getResource("/ai/links/how-aia/js-ts/"),
+			this.getResource("/ai/links/how-aia/go/"),
+			this.getResource("/ai/links/how-aia/dotnet/"),
+		];
+
+		let junieWhyVideoUrl = "https://www.youtube.com/watch?v=Y80rIKoSSSU";
+		const junieHowTos = [
+			this.getResource("/ai/links/how-junie/kotlin/"),
+			this.getResource("/ai/links/how-junie/java/"),
+			this.getResource("/ai/links/how-junie/python/"),
+			this.getResource("/ai/links/how-junie/js-ts/"),
+			this.getResource("/ai/links/how-junie/go/"),
+		];
+
+		const aiaResources = this.getResources({
+			resourceTypes: [LINK_RESOURCE, ARTICLE_RESOURCE],
 			customFilter: (r) =>
-				r.channel == channel.url || r.topics?.includes("ai") == true,
-			limit: 8,
+				!!r.topics?.includes("ai") && !!r.topics?.includes("aia"),
 		});
 
-		const aiaHowToVideos = this.getResources({
-			resourceTypes: [LINK_RESOURCE],
+		const junieResources = this.getResources({
+			resourceTypes: [LINK_RESOURCE, ARTICLE_RESOURCE],
 			customFilter: (r) =>
-				r.channel == channel.url || r.topics?.includes("ai") == true,
-			limit: 8,
+				!!r.topics?.includes("ai") && !!r.topics?.includes("junie"),
 		});
-
-		// const learnMoreResources = [this.getResource()];
 
 		const tips = this.getResources({
 			resourceTypes: [TIP_RESOURCE],
 			customFilter: (r) =>
-				r.channel == channel.url && r.topics?.includes("ai") == true,
-			limit: 4,
+				!!r.topics?.includes("ai") &&
+				!r.topics?.includes("aia") &&
+				!r.topics?.includes("junie"),
 		});
 
 		return (
@@ -72,52 +93,61 @@ class AIHomepage {
 					subtitleExtraClass={"has-text-white"}
 				/>
 
-				{links && (
+				{aiaHowTos && aiaHowTos.length > 0 && (
 					<GettingStartedSection
 						title={`Getting Started with AI Assistant`}
-						resources={links}
-						resourcesSubtitle={`How to use AI Assistant`}
+						resources={aiaHowTos}
+						resourcesSubtitle={``}
 						resourcesSubtitleTip={``}
 						separator={false}
 						includeCardFooter={false}
 						sectionExtraClass={"has-background-success"}
 						description={[
 							"That’s a look at the updated AI Assistant. Briefly summarized: Local and cloud completion, powerful models, deep IDE integration, in chat or your editor window.",
-							"Another sentence about AI Assistant.",
 						]}
-						whyVideoUrl={"https://www.youtube.com/watch?v=Y80rIKoSSSU"}
+						whyVideoUrl={aiaWhyVideoUrl}
 					/>
 				)}
 
-				{tips && (
+				{aiaResources && aiaResources.length > 0 && (
 					<ListingSection
 						title={`Problem-solving with AI Assistant`}
-						resources={links.slice(0, 4)}
+						resources={aiaResources.slice(0, 4)}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={`${channel.url}tips/`}
+						moreLink={aiaResources.length > 4 ? `/tags/aia/` : undefined}
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
 
-				{links && (
+				{junieHowTos && junieHowTos.length > 0 && (
 					<GettingStartedSection
 						title={`Getting Started with Junie`}
-						whyVideoUrl={"https://www.youtube.com/watch?v=Y80rIKoSSSU"}
-						resources={links.slice(0, 4)}
+						resources={junieHowTos}
+						resourcesSubtitle={``}
+						resourcesSubtitleTip={``}
 						separator={false}
 						includeCardFooter={false}
 						sectionExtraClass={"has-background-success"}
-						description={[
-							"That’s a look at Junie. ",
-							"Another sentence about Junie.",
-						]}
+						description={["That’s a look at the JetBrains Junie"]}
+						whyVideoUrl={junieWhyVideoUrl}
+					/>
+				)}
+
+				{junieResources && junieResources.length > 0 && (
+					<ListingSection
+						title={`Problem-solving with Junie`}
+						resources={junieResources.slice(0, 4)}
+						separator={false}
+						includeCardFooter={false}
+						moreLink={junieResources.length > 4 ? `/tags/junie/` : undefined}
+						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
 
 				{tips && (
 					<ListingSection
-						title={`Latest tips`}
+						title={`Tips & Tricks`}
 						resources={tips}
 						separator={false}
 						includeCardFooter={false}
