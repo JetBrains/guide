@@ -5,6 +5,7 @@ topics:
   - ai
   - aia
   - php
+  - learn-aia
 author: brentroose
 subtitle: Take a more test-driven-development approach, writing tests first, and having AI Assistant generate an implementation.
 thumbnail: ./thumbnail.png

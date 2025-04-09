@@ -5,6 +5,7 @@ topics:
   - ai
   - aia
   - php
+  - learn-aia
 author: taniagoral
 subtitle: JetBrains AI Assistant, coupled with PhpStorm, can bring about a transformative change in your testing routine.
 thumbnail: ./thumbnail.png
