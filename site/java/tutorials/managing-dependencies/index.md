@@ -13,6 +13,5 @@ thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/
   - ./add-dependencies/
-  - ./update-dependencies/
   - ./summary/
 ---
