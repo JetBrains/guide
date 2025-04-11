@@ -15,7 +15,16 @@ export const VideoBottomField = Type.Object({
 		Type.Boolean({
 			description:
 				"True if video should be rendered at the bottom; false otherwise",
-		})
+		}),
+	),
+});
+
+export const VideoVerticalField = Type.Object({
+	videoVertical: Type.Optional(
+		Type.Boolean({
+			description:
+				"True if video is vertical and should be displayed in a two-column layout",
+		}),
 	),
 });
 
@@ -35,9 +44,9 @@ export const VideoField = Type.Object({
 						description: "end time for the video",
 					}),
 				},
-				{ description: "Animated GIF to show in this tip" }
+				{ description: "Animated GIF to show in this tip" },
 			),
-		])
+		]),
 	),
 });
 

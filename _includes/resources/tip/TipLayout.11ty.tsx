@@ -67,12 +67,26 @@ export function TipLayout(
 										style="object-fit: contain; object-position: top"
 									/>
 								)}
-								{tip.video && <VideoPlayer source={tip.video} />}
-
-								{content && (
-									<div class="columns mt-2">
-										<div class="column is-11-desktop content">{content}</div>
+								{tip.video && tip.videoVertical ? (
+									<div class="columns">
+										<div class="column is-one-third">
+											<VideoPlayer source={tip.video} vertical={true} />
+										</div>
+										<div class="column is-two-thirds">
+											{content && <div class="content">{content}</div>}
+										</div>
 									</div>
+								) : (
+									<Fragment>
+										{tip.video && <VideoPlayer source={tip.video} />}
+										{content && (
+											<div class="columns mt-2">
+												<div class="column is-11-desktop content">
+													{content}
+												</div>
+											</div>
+										)}
+									</Fragment>
 								)}
 								{tip.seealso && <SeeAlso items={tip.seealso} />}
 							</main>

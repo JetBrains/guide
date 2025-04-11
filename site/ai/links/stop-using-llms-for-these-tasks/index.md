@@ -4,6 +4,7 @@ title: Stop using LLMs for these tasks!
 topics:
   - ai
   - aia
+  - deeper-ai
 author: jb
 subtitle: Discover the ins and outs of large language models (LLMs) with Dr. Jodie Burchell.
 thumbnail: ./thumbnail.png

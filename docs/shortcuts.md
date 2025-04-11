@@ -86,6 +86,7 @@
 <kbd>⌃⇧D</kbd> (macOS) / <kbd></kbd> (Windows/Linux)                            - Debug Test
 <kbd>F8</kbd> (macOS) / <kbd>F8</kbd> (Windows/Linux)                           - Step over
 <kbd>F7</kbd> (macOS) / <kbd>F7</kbd> (Windows/Linux)                           - Step into
+<kbd>⇧F8</kbd> (macOS) / <kbd>Shift+F8</kbd> (Windows/Linux)                    - Step out
 <kbd>⌥⌘R</kbd> (macOS) / <kbd>F9</kbd> (Windows/Linux)                          - Resume Program
 <kbd>⌃⇧P</kbd> (macOS) / <kbd>Ctrl+Shift+P</kbd> (Windows/Linux)                - Show Type Parameter Information
 <kbd>⌃\`</kbd> (macOS) / <kbd>Ctrl+\`</kbd> (Windows/Linux)                     - Show Quick Switch Scheme
@@ -122,6 +123,7 @@
 <kbd>⌘1</kbd> (macOS) / <kbd>Alt+1</kbd> (Windows/Linux)                        - Show Project Tool Window 
 <kbd>⌘3</kbd> (macOS) / <kbd>Alt+3</kbd> (Windows/Linux)                        - Show Find Tool Window
 <kbd>⌘4</kbd> (macOS) / <kbd>Alt+4</kbd> (Windows/Linux)                        - Show Run Tool Window
+<kbd>⌘5</kbd> (macOS) / <kbd>Alt+5</kbd> (Windows/Linux)                        - Show Debug Tool Window
 <kbd>⌘6</kbd> (macOS) / <kbd>Alt+6</kbd> (Windows/Linux)                        - Show Problem Tool Window
 <kbd>⌘8</kbd> (macOS) / <kbd>Alt+8</kbd> (Windows/Linux)                        - Show Services Tool Window
 <kbd>⌘7</kbd> (macOS) / <kbd>Alt+7</kbd> (Windows/Linux)                        - Show Structure Tool Window

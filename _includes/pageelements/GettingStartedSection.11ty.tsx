@@ -7,11 +7,15 @@ export type GettingStartedSectionProps = {
 	title: string;
 	subtitle?: string;
 	anchor?: string;
-	description: string[];
+	description: string;
 	whyVideoUrl: string;
-	resources: Resource[];
-	resourcesSubtitle?: string;
-	resourcesSubtitleTip?: string;
+	howToResources: Resource[];
+	howToResourcesSubtitle?: string;
+	howToResourcesSubtitleTip?: string;
+	learnMoreResources?: Resource[];
+	learnMoreResourcesSubtitle?: string;
+	learnMoreResourcesSubtitleTip?: string;
+	learnMoreLink?: string;
 	separator?: boolean;
 	isSection?: boolean;
 	includeCardFooter?: boolean;
@@ -25,9 +29,13 @@ function GettingStartedSection({
 	anchor,
 	description,
 	whyVideoUrl,
-	resources,
-	resourcesSubtitle,
-	resourcesSubtitleTip,
+	howToResources,
+	howToResourcesSubtitle,
+	howToResourcesSubtitleTip,
+	learnMoreResources,
+	learnMoreResourcesSubtitle,
+	learnMoreResourcesSubtitleTip,
+	learnMoreLink,
 	separator,
 	isSection = true,
 	includeCardFooter = true,
@@ -41,9 +49,9 @@ function GettingStartedSection({
 
 	const sectionClassName = sectionExtraClass ? sectionExtraClass : "";
 
-	const sectionResources = (
+	const sectionHowToResources = (
 		<div class="columns is-multiline">
-			{resources.map((resource) => {
+			{howToResources.map((resource) => {
 				return (
 					<ResourceCard
 						compactMode={true}
@@ -54,6 +62,23 @@ function GettingStartedSection({
 					></ResourceCard>
 				);
 			})}
+		</div>
+	);
+
+	const sectionLearnMoreResources = (
+		<div class="columns is-multiline">
+			{learnMoreResources &&
+				learnMoreResources.slice(0, 4).map((resource) => {
+					return (
+						<ResourceCard
+							compactMode={true}
+							resource={resource}
+							columnClassName={columnClassName}
+							includeCardFooter={includeCardFooter}
+							includeContentType={includeContentType}
+						></ResourceCard>
+					);
+				})}
 		</div>
 	);
 
@@ -74,25 +99,42 @@ function GettingStartedSection({
 				</div>
 			</div>
 			<div class="columns">
-				<div class="column is-two-thirds content">
-					{description.map((paragraph, _index) => {
-						return <p>{paragraph}</p>;
-					})}
-				</div>
+				<div class="column is-two-thirds content">{description}</div>
 				<div class="column is-one-third">{whyVideo}</div>
 			</div>
 			<div class="container">
-				{resourcesSubtitle && (
+				{howToResourcesSubtitle && (
 					<div
-						title={resourcesSubtitleTip}
+						title={howToResourcesSubtitleTip}
 						class="is-size-3"
 						style="margin-bottom: 1em"
 					>
-						{resourcesSubtitle}
+						{howToResourcesSubtitle}
 					</div>
 				)}
-				{sectionResources}
+				{sectionHowToResources}
 			</div>
+			{learnMoreResources && (
+				<div class="container">
+					<div class="columns is-vcentered is-mobile">
+						<div class="column is-8 is-10-tablet is-10-desktop">
+							{learnMoreResourcesSubtitle && (
+								<div title={learnMoreResourcesSubtitleTip} class="is-size-3">
+									{learnMoreResourcesSubtitle}
+								</div>
+							)}
+						</div>
+						{learnMoreLink && learnMoreResources?.length > 4 && (
+							<div class="column has-text-right">
+								<a class="button is-rounded is-outlined" href={learnMoreLink}>
+									More...
+								</a>
+							</div>
+						)}
+					</div>
+					{sectionLearnMoreResources}
+				</div>
+			)}
 		</div>
 	);
 

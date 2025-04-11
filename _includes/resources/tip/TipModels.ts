@@ -5,7 +5,11 @@ import {
 	ResourceFrontmatter,
 } from "../../../src/ResourceModels";
 import { EleventyPage } from "../../../src/models";
-import { ThumbnailField, VideoField } from "../commonModels";
+import {
+	ThumbnailField,
+	VideoField,
+	VideoVerticalField,
+} from "../commonModels";
 import { TIP_RESOURCE_TYPE } from "../../../src/resourceType";
 import path from "upath";
 
@@ -14,6 +18,7 @@ export const TipFrontmatter = Type.Intersect([
 	ResourceFrontmatter,
 	ThumbnailField,
 	VideoField,
+	VideoVerticalField,
 	Type.Object({
 		animatedGif: Type.Optional(
 			Type.Object(
@@ -55,6 +60,7 @@ export class Tip extends Resource<TIP_RESOURCE_TYPE> implements TipFrontmatter {
 	seealso?: any;
 	thumbnail: TipFrontmatter["thumbnail"];
 	video?: TipFrontmatter["video"];
+	videoVertical?: TipFrontmatter["videoVertical"];
 	static frontmatterSchema = TipFrontmatter;
 
 	constructor({ data, page }: { data: TipFrontmatter; page: EleventyPage }) {
@@ -65,6 +71,7 @@ export class Tip extends Resource<TIP_RESOURCE_TYPE> implements TipFrontmatter {
 			this.animatedGif.file = path.join(page.url, this.animatedGif.file);
 		}
 		this.video = data.video;
+		this.videoVertical = data.videoVertical;
 		this.screenshot = data.screenshot
 			? path.join(page.url, data.screenshot)
 			: undefined;

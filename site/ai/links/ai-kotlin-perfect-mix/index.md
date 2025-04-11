@@ -5,6 +5,7 @@ topics:
   - ai
   - aia
   - kotlin
+  - deeper-ai
 author: vt
 subtitle: The latest advancements in AI coding assistance by JetBrains AI for Kotlin in your IDE.
 thumbnail: ./thumbnail.jpg

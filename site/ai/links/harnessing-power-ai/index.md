@@ -5,7 +5,6 @@ topics:
   - ai
   - aia
   - learn-aia
-  - learn-junie
 author: aa
 subtitle: Exploring AI-powered code generation, refactoring, and agentic automation with IntelliJ IDEA and Junie.
 thumbnail: ./thumbnail.png

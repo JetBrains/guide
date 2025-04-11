@@ -16,7 +16,7 @@ import GettingStartedSection from "../../_includes/pageelements/GettingStartedSe
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Artificial Intelligence",
-	subtitle: "Discover JetBrains AI tools",
+	subtitle: "From smart assistance to autonomous agents.",
 	resourceType: "channel",
 	date: new Date(Date.UTC(2024, 2, 5)),
 	author: "hs",
@@ -24,12 +24,12 @@ const frontmatter: ChannelFrontmatter = {
 	hero: "/assets/splashes/ai.svg",
 	subnav: [
 		{
-			title: "JetBrains AI↗",
+			title: "JetBrains AI",
 			url: "https://www.jetbrains.com/ai/",
 			target: "_blank",
 		},
 		{
-			title: "Junie↗",
+			title: "Junie",
 			url: "https://www.jetbrains.com/junie/",
 			target: "_blank",
 		},
@@ -87,9 +87,13 @@ class AIHomepage {
 		const tips = this.getResources({
 			resourceTypes: [TIP_RESOURCE],
 			customFilter: (r) =>
-				!!r.topics?.includes("ai") &&
-				!r.topics?.includes("aia") &&
-				!r.topics?.includes("junie"),
+				!!r.topics?.includes("aia") || !!r.topics?.includes("junie"),
+		});
+
+		const divingDeeperResources = this.getResources({
+			resourceTypes: [LINK_RESOURCE, ARTICLE_RESOURCE],
+			customFilter: (r) =>
+				!!r.topics?.includes("ai") && !!r.topics?.includes("deeper-ai"),
 		});
 
 		return (
@@ -105,54 +109,42 @@ class AIHomepage {
 				{aiaHowTos && aiaHowTos.length > 0 && (
 					<GettingStartedSection
 						title={`Getting Started with AI Assistant`}
-						resources={aiaHowTos}
-						resourcesSubtitle={``}
-						resourcesSubtitleTip={``}
+						howToResources={aiaHowTos}
+						howToResourcesSubtitle={``}
+						howToResourcesSubtitleTip={``}
 						separator={false}
 						includeCardFooter={false}
-						sectionExtraClass={"has-background-success"}
-						description={[
-							"That’s a look at the updated AI Assistant. Briefly summarized: Local and cloud completion, powerful models, deep IDE integration, in chat or your editor window.",
-						]}
+						sectionExtraClass={"has-background-purple"}
+						description={
+							"AI Assistant brings context-aware, AI-driven features right into your JetBrains IDE to help you code faster, solve problems, and stay in flow. Powered by optimized language models, it handles everything from multiline code completion and test generation to refactoring, explaining errors, writing docs, resolving merge conflicts, and more. Whether you’re chatting, creating prompts, or working inline, it’s deeply integrated and always ready to assist — right where you need it most."
+						}
 						whyVideoUrl={aiaWhyVideoUrl}
-					/>
-				)}
-
-				{aiaResources && aiaResources.length > 0 && (
-					<ListingSection
-						title={`Problem-solving with AI Assistant`}
-						resources={aiaResources.slice(0, 4)}
-						separator={false}
-						includeCardFooter={false}
-						moreLink={aiaResources.length > 4 ? `/tags/learn-aia/` : undefined}
-						sectionExtraClass={"has-background-grey-lighter"}
+						learnMoreResources={aiaResources}
+						learnMoreResourcesSubtitle={`Master Problem-Solving with AI Assistant`}
+						learnMoreResourcesSubtitleTip={``}
+						learnMoreLink={`/tags/learn-aia/`}
 					/>
 				)}
 
 				{junieHowTos && junieHowTos.length > 0 && (
 					<GettingStartedSection
 						title={`Getting Started with Junie`}
-						resources={junieHowTos}
-						resourcesSubtitle={``}
-						resourcesSubtitleTip={``}
+						howToResources={junieHowTos}
+						howToResourcesSubtitle={``}
+						howToResourcesSubtitleTip={``}
 						separator={false}
 						includeCardFooter={false}
 						sectionExtraClass={"has-background-success"}
-						description={["That’s a look at the JetBrains Junie"]}
-						whyVideoUrl={junieWhyVideoUrl}
-					/>
-				)}
-
-				{junieResources && junieResources.length > 0 && (
-					<ListingSection
-						title={`Problem-solving with Junie`}
-						resources={junieResources.slice(0, 4)}
-						separator={false}
-						includeCardFooter={false}
-						moreLink={
-							junieResources.length > 4 ? `/tags/learn-junie/` : undefined
+						description={
+							"Meet Junie, your autonomous coding partner — built to help you delegate, iterate, and stay in flow. Assign tasks in natural language, and Junie handles them while you stay focused on what matters.\n" +
+							"\n" +
+							"It learns your codebase, adapts to your style, and refines results with every interaction. You stay in control — reviewing, adjusting, and moving faster with cleaner, more consistent code."
 						}
-						sectionExtraClass={"has-background-grey-lighter"}
+						whyVideoUrl={junieWhyVideoUrl}
+						learnMoreResources={junieResources}
+						learnMoreResourcesSubtitle={`Master Problem-Solving with Junie`}
+						learnMoreResourcesSubtitleTip={``}
+						learnMoreLink={`/tags/learn-junie/`}
 					/>
 				)}
 
@@ -163,20 +155,31 @@ class AIHomepage {
 						separator={false}
 						includeCardFooter={false}
 						moreLink={
-							junieResources.length > 4 ? `/tags/ai-community/` : undefined
+							communityResources.length > 4 ? `/tags/ai-community/` : undefined
 						}
-						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
 
 				{tips && (
 					<ListingSection
-						title={`Tips & Tricks`}
-						resources={tips}
+						title={`Latest Tips`}
+						resources={tips.slice(0, 4)}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={`${channel.url}tips/`}
+						moreLink={tips.length > 4 ? `${channel.url}tips/` : undefined}
 						sectionExtraClass={"has-background-grey-lighter"}
+					/>
+				)}
+
+				{divingDeeperResources && divingDeeperResources.length > 0 && (
+					<ListingSection
+						title={`Diving Deeper into AI`}
+						resources={divingDeeperResources.slice(0, 4)}
+						separator={false}
+						includeCardFooter={false}
+						moreLink={
+							divingDeeperResources.length > 4 ? `/tags/deeper-ai/` : undefined
+						}
 					/>
 				)}
 			</BaseLayout>

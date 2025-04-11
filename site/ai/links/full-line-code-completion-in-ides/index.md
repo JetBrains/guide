@@ -4,6 +4,7 @@ title: Full Line Code Completion in JetBrains IDEs
 topics:
   - ai
   - aia
+  - deeper-ai
 author: pwe
 subtitle: How does it work, what languages are supported, and how can you get started?
 thumbnail: ./thumbnail.png
