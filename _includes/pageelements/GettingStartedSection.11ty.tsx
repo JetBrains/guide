@@ -7,7 +7,7 @@ export type GettingStartedSectionProps = {
 	title: string;
 	subtitle?: string;
 	anchor?: string;
-	description: string[];
+	description: string;
 	whyVideoUrl: string;
 	resources: Resource[];
 	resourcesSubtitle?: string;
@@ -74,11 +74,7 @@ function GettingStartedSection({
 				</div>
 			</div>
 			<div class="columns">
-				<div class="column is-two-thirds content">
-					{description.map((paragraph, _index) => {
-						return <p>{paragraph}</p>;
-					})}
-				</div>
+				<div class="column is-two-thirds content">{description}</div>
 				<div class="column is-one-third">{whyVideo}</div>
 			</div>
 			<div class="container">
