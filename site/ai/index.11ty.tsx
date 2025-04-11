@@ -108,7 +108,7 @@ class AIHomepage {
 						resourcesSubtitleTip={``}
 						separator={false}
 						includeCardFooter={false}
-						sectionExtraClass={"has-background-danger-light"}
+						sectionExtraClass={"has-background-purple"}
 						description={[
 							"That’s a look at the updated AI Assistant. Briefly summarized: Local and cloud completion, powerful models, deep IDE integration, in chat or your editor window.",
 						]}
@@ -123,7 +123,7 @@ class AIHomepage {
 						separator={false}
 						includeCardFooter={false}
 						moreLink={aiaResources.length > 4 ? `/tags/learn-aia/` : undefined}
-						sectionExtraClass={"has-background-danger-light"}
+						sectionExtraClass={"has-background-purple"}
 					/>
 				)}
 
@@ -135,7 +135,7 @@ class AIHomepage {
 						resourcesSubtitleTip={``}
 						separator={false}
 						includeCardFooter={false}
-						sectionExtraClass={"has-background-success-light"}
+						sectionExtraClass={"has-background-success"}
 						description={["That’s a look at the JetBrains Junie"]}
 						whyVideoUrl={junieWhyVideoUrl}
 					/>
@@ -150,7 +150,7 @@ class AIHomepage {
 						moreLink={
 							junieResources.length > 4 ? `/tags/learn-junie/` : undefined
 						}
-						sectionExtraClass={"has-background-success-light"}
+						sectionExtraClass={"has-background-success"}
 					/>
 				)}
 
