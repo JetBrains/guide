@@ -162,7 +162,7 @@ class AIHomepage {
 
 				{tips && (
 					<ListingSection
-						title={`Tips & Tricks`}
+						title={`Latest Tips`}
 						resources={tips.slice(0, 4)}
 						separator={false}
 						includeCardFooter={false}
