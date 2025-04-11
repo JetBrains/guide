@@ -24,12 +24,12 @@ const frontmatter: ChannelFrontmatter = {
 	hero: "/assets/splashes/ai.svg",
 	subnav: [
 		{
-			title: "JetBrains AI↗",
+			title: "JetBrains AI",
 			url: "https://www.jetbrains.com/ai/",
 			target: "_blank",
 		},
 		{
-			title: "Junie↗",
+			title: "Junie",
 			url: "https://www.jetbrains.com/junie/",
 			target: "_blank",
 		},
