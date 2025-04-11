@@ -86,18 +86,14 @@ function GettingStartedSection({
 
 	const container = (
 		<div class="container" id={anchor}>
-			<div class="columns is-vcentered is-mobile">
-				<div class="column is-8 is-10-tablet is-10-desktop">
-					<h2 class="mt-2 mb-4 is-size-2 is-size-3-mobile has-text-weight-bold">
-						{title}
-					</h2>
-					{subtitle && (
-						<p class="subtitle is-size-3 is-size-4-mobile has-text-grey mb-5">
-							{subtitle}
-						</p>
-					)}
-				</div>
-			</div>
+			<h2 class="mt-2 mb-4 is-size-2 is-size-3-mobile has-text-weight-bold">
+				{title}
+			</h2>
+			{subtitle && (
+				<p class="subtitle is-size-3 is-size-4-mobile has-text-grey mb-5">
+					{subtitle}
+				</p>
+			)}
 			<div class="columns">
 				<div class="column is-two-thirds content">{description}</div>
 				<div class="column is-one-third">{whyVideo}</div>
@@ -117,7 +113,7 @@ function GettingStartedSection({
 			{learnMoreResources && (
 				<div class="container">
 					<div class="columns is-vcentered is-mobile">
-						<div class="column is-8 is-10-tablet is-10-desktop">
+						<div class="column is-10 is-10-tablet is-10-desktop">
 							{learnMoreResourcesSubtitle && (
 								<div title={learnMoreResourcesSubtitleTip} class="is-size-3">
 									{learnMoreResourcesSubtitle}
@@ -125,7 +121,7 @@ function GettingStartedSection({
 							)}
 						</div>
 						{learnMoreLink && learnMoreResources?.length > 4 && (
-							<div class="column has-text-right">
+							<div class="column is-2 has-text-right">
 								<a class="button is-rounded is-outlined" href={learnMoreLink}>
 									More...
 								</a>
