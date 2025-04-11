@@ -1,5 +1,5 @@
 ---
-title: Diving Deeper into AO
+title: Diving Deeper into AI
 subtitle: Enhance your understanding with thought leaders in AI
 logo: light.png
 website: "https://www.jetbrains.com/ai/"
