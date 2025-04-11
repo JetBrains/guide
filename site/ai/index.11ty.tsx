@@ -87,7 +87,7 @@ class AIHomepage {
 		const tips = this.getResources({
 			resourceTypes: [TIP_RESOURCE],
 			customFilter: (r) =>
-				!!r.topics?.includes("aia") || !r.topics?.includes("junie"),
+				!!r.topics?.includes("aia") || !!r.topics?.includes("junie"),
 		});
 
 		const divingDeeperResources = this.getResources({
