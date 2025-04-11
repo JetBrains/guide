@@ -87,9 +87,7 @@ class AIHomepage {
 		const tips = this.getResources({
 			resourceTypes: [TIP_RESOURCE],
 			customFilter: (r) =>
-				!!r.topics?.includes("ai") &&
-				!r.topics?.includes("aia") &&
-				!r.topics?.includes("junie"),
+				!!r.topics?.includes("aia") || !r.topics?.includes("junie"),
 		});
 
 		return (
@@ -110,7 +108,7 @@ class AIHomepage {
 						resourcesSubtitleTip={``}
 						separator={false}
 						includeCardFooter={false}
-						sectionExtraClass={"has-background-success"}
+						sectionExtraClass={"has-background-danger-light"}
 						description={[
 							"That’s a look at the updated AI Assistant. Briefly summarized: Local and cloud completion, powerful models, deep IDE integration, in chat or your editor window.",
 						]}
@@ -125,7 +123,7 @@ class AIHomepage {
 						separator={false}
 						includeCardFooter={false}
 						moreLink={aiaResources.length > 4 ? `/tags/learn-aia/` : undefined}
-						sectionExtraClass={"has-background-grey-lighter"}
+						sectionExtraClass={"has-background-danger-light"}
 					/>
 				)}
 
@@ -137,7 +135,7 @@ class AIHomepage {
 						resourcesSubtitleTip={``}
 						separator={false}
 						includeCardFooter={false}
-						sectionExtraClass={"has-background-success"}
+						sectionExtraClass={"has-background-success-light"}
 						description={["That’s a look at the JetBrains Junie"]}
 						whyVideoUrl={junieWhyVideoUrl}
 					/>
@@ -152,7 +150,7 @@ class AIHomepage {
 						moreLink={
 							junieResources.length > 4 ? `/tags/learn-junie/` : undefined
 						}
-						sectionExtraClass={"has-background-grey-lighter"}
+						sectionExtraClass={"has-background-success-light"}
 					/>
 				)}
 
@@ -163,19 +161,18 @@ class AIHomepage {
 						separator={false}
 						includeCardFooter={false}
 						moreLink={
-							junieResources.length > 4 ? `/tags/ai-community/` : undefined
+							communityResources.length > 4 ? `/tags/ai-community/` : undefined
 						}
-						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
 
 				{tips && (
 					<ListingSection
 						title={`Tips & Tricks`}
-						resources={tips}
+						resources={tips.slice(0, 4)}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={`${channel.url}tips/`}
+						moreLink={tips.length > 4 ? `${channel.url}tips/` : undefined}
 						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
