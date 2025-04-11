@@ -109,9 +109,9 @@ class AIHomepage {
 				{aiaHowTos && aiaHowTos.length > 0 && (
 					<GettingStartedSection
 						title={`Getting Started with AI Assistant`}
-						resources={aiaHowTos}
-						resourcesSubtitle={``}
-						resourcesSubtitleTip={``}
+						howToResources={aiaHowTos}
+						howToResourcesSubtitle={``}
+						howToResourcesSubtitleTip={``}
 						separator={false}
 						includeCardFooter={false}
 						sectionExtraClass={"has-background-purple"}
@@ -119,26 +119,19 @@ class AIHomepage {
 							"AI Assistant brings context-aware, AI-driven features right into your JetBrains IDE to help you code faster, solve problems, and stay in flow. Powered by optimized language models, it handles everything from multiline code completion and test generation to refactoring, explaining errors, writing docs, resolving merge conflicts, and more. Whether you’re chatting, creating prompts, or working inline, it’s deeply integrated and always ready to assist — right where you need it most."
 						}
 						whyVideoUrl={aiaWhyVideoUrl}
-					/>
-				)}
-
-				{aiaResources && aiaResources.length > 0 && (
-					<ListingSection
-						title={`Master Problem-Solving with AI Assistant`}
-						resources={aiaResources.slice(0, 4)}
-						separator={false}
-						includeCardFooter={false}
-						moreLink={aiaResources.length > 4 ? `/tags/learn-aia/` : undefined}
-						sectionExtraClass={"has-background-purple"}
+						learnMoreResources={aiaResources}
+						learnMoreResourcesSubtitle={`Master Problem-Solving with AI Assistant`}
+						learnMoreResourcesSubtitleTip={``}
+						learnMoreLink={`/tags/learn-aia/`}
 					/>
 				)}
 
 				{junieHowTos && junieHowTos.length > 0 && (
 					<GettingStartedSection
 						title={`Getting Started with Junie`}
-						resources={junieHowTos}
-						resourcesSubtitle={``}
-						resourcesSubtitleTip={``}
+						howToResources={junieHowTos}
+						howToResourcesSubtitle={``}
+						howToResourcesSubtitleTip={``}
 						separator={false}
 						includeCardFooter={false}
 						sectionExtraClass={"has-background-success"}
@@ -148,19 +141,10 @@ class AIHomepage {
 							"It learns your codebase, adapts to your style, and refines results with every interaction. You stay in control — reviewing, adjusting, and moving faster with cleaner, more consistent code."
 						}
 						whyVideoUrl={junieWhyVideoUrl}
-					/>
-				)}
-
-				{junieResources && junieResources.length > 0 && (
-					<ListingSection
-						title={`Master Problem-Solving with Junie`}
-						resources={junieResources.slice(0, 4)}
-						separator={false}
-						includeCardFooter={false}
-						moreLink={
-							junieResources.length > 4 ? `/tags/learn-junie/` : undefined
-						}
-						sectionExtraClass={"has-background-success"}
+						learnMoreResources={junieResources}
+						learnMoreResourcesSubtitle={`Master Problem-Solving with Junie`}
+						learnMoreResourcesSubtitleTip={``}
+						learnMoreLink={`/tags/learn-junie/`}
 					/>
 				)}
 
