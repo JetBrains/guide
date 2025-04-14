@@ -114,7 +114,7 @@ class AIHomepage {
 						howToResourcesSubtitleTip={``}
 						separator={false}
 						includeCardFooter={false}
-						sectionExtraClass={"has-background-purple"}
+						sectionExtraClass={"has-background-purple has-text-white"}
 						description={
 							"AI Assistant brings context-aware, AI-driven features right into your JetBrains IDE to help you code faster, solve problems, and stay in flow. Powered by optimized language models, it handles everything from multiline code completion and test generation to refactoring, explaining errors, writing docs, resolving merge conflicts, and more. Whether you’re chatting, creating prompts, or working inline, it’s deeply integrated and always ready to assist — right where you need it most."
 						}
