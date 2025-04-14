@@ -136,7 +136,7 @@ class AIHomepage {
 						includeCardFooter={false}
 						sectionExtraClass={"has-background-success"}
 						description={
-							"Meet Junie, your autonomous coding partner — built to help you delegate, iterate, and stay in flow. Assign tasks in natural language, and Junie handles them while you stay focused on what matters.\n" +
+							"Meet Junie, your autonomous coding partner — built to help you delegate, iterate, and review. Assign tasks in natural language, and Junie handles them while you stay focused on what matters.\n" +
 							"\n" +
 							"It learns your codebase, adapts to your style, and refines results with every interaction. You stay in control — reviewing, adjusting, and moving faster with cleaner, more consistent code."
 						}
