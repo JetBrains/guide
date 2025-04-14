@@ -56,7 +56,11 @@ function GettingStartedSection({
 					<ResourceCard
 						compactMode={true}
 						resource={resource}
-						columnClassName={columnClassName}
+						columnClassName={
+							howToResources.length == 5
+								? "is-one-fifth-desktop"
+								: columnClassName
+						}
 						includeCardFooter={includeCardFooter}
 						includeContentType={includeContentType}
 					></ResourceCard>
