@@ -4,11 +4,11 @@ title: 'Review: "The New AI Coding Agent from JetBrains - Can it build a Compose
 topics:
   - ai
   - junie
-  - learn-junie
+  - ai-community
 author: pwe
-subtitle: A professional developer gets Junie to help on two frontend projects.
-thumbnail: ./thumbnail.png
-linkURL: "https://bazlur.ca/2025/03/03/jetbrains-junie-my-firsthand-experience/"
+subtitle: "Letting Junie handle it all: prompts only, no manual fixes."
+thumbnail: ./thumbnail.jpg
+linkURL: "https://www.youtube.com/watch?v=XZuwlXNMm04"
 ---
 
 Can Junie write a Compose Desktop application -- just with prompts, without coding from the
