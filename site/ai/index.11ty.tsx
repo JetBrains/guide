@@ -167,7 +167,7 @@ class AIHomepage {
 						separator={false}
 						includeCardFooter={false}
 						moreLink={tips.length > 4 ? `${channel.url}tips/` : undefined}
-						sectionExtraClass={"has-background-grey-lighter"}
+						sectionExtraClass={"has-background-grey-light"}
 					/>
 				)}
 
