@@ -340,12 +340,12 @@ router = APIRouter(
 
 
 # Interesting Question for Global Dependency
-# https://github.com/tiangolo/fastapi/issues/2481
+# https://github.com/fastapi/fastapi/discussions/7089
 
 
 @router.post('/', status_code=status.HTTP_201_CREATED)
 async def create_user_registration(request: schema.User, database: Session = Depends(db.get_db)):
-    # Read More: Pydantic Validation with Database (https://github.com/tiangolo/fastapi/issues/979)
+    # Read More: Pydantic Validation with Database (https://github.com/fastapi/fastapi/discussions/7780)
 
     user = await validator.verify_email_exist(request.email, database)
     if user:
@@ -415,7 +415,7 @@ There is an interesting discussion which I came across, and maybe you might want
 
 Then you should check this issue:
 
-- [https://github.com/tiangolo/fastapi/issues/2481](https://github.com/tiangolo/fastapi/issues/2481)
+- [https://github.com/fastapi/fastapi/discussions/7089](https://github.com/fastapi/fastapi/discussions/7089)
 
 I will also replace the manually provided emails with `current_user.email`
 
