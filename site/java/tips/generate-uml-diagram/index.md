@@ -5,7 +5,7 @@ topics:
   - java
   - kotlin
 author: md
-subtitle: IntelliJ IDEA Ultimate allows you to generate UML diagrams.
+subtitle: IntelliJ IDEA with Ultimate subscription allows you to generate UML diagrams.
 thumbnail: ./thumbnail.png
 seealso:
   - title: (documentation) IntelliJ IDEA Help - UML diagrams

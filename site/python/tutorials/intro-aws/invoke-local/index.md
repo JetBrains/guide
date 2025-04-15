@@ -5,7 +5,7 @@ title: Invoking Functions Locally
 topics:
   - aws
 author: mm
-subtitle: Execute Lambda function inside a container through PyCharm Professional.
+subtitle: Execute Lambda function inside a container through PyCharm with Pro subscription.
 thumbnail: ../thumbnail.png
 video: "https://youtu.be/xEnKghx6fuk"
 ---
@@ -23,7 +23,7 @@ Just follow the official documentation for the installation process, and you wil
 
 ## Configurations
 
-PyCharm Professional is already running. I will select **Run**, and then navigate to _Edit Configurations_.
+PyCharm is already running. I will select **Run**, and then navigate to _Edit Configurations_.
 
 ![invoke_step_2](steps/step2.png)
 

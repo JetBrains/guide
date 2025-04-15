@@ -8,11 +8,11 @@ topics:
   - maven
   - security
 author: md
-subtitle: Find and fix vulnerabilities inside IntelliJ IDEA Ultimate Summary.
+subtitle: Find and fix vulnerabilities inside IntelliJ IDEA with Ultimate subscription Summary.
 thumbnail: ./thumbnail.png
 ---
 
-Now we know the different ways in which we can view vulnerable dependencies in our project inside IntelliJ IDEA Ultimate, how to get more information about these vulnerabilities, and the different ways we can remediate them if a new version of the dependency is available.
+Now we know the different ways in which we can view vulnerable dependencies in our project inside IntelliJ IDEA with Ultimate subscription, how to get more information about these vulnerabilities, and the different ways we can remediate them if a new version of the dependency is available.
 
 ### IntelliJ IDEA Shortcuts Used
 

@@ -15,8 +15,7 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/HQ_bqOBXZ5w"
 ---
 
-_Note: Code coverage is a
-[PyCharm Professional feature](https://www.jetbrains.com/products/compare/?product=pycharm&product=pycharm-ce)._
+\_Note: Code coverage is available for PyCharm with Pro subscription.
 
 Writing tests for your code is good, but how do you know when you've done enough testing? "Code coverage", via the [coverage package](https://pypi.org/project/coverage/), combines your tests and the execution of your code to see and report what spots get hit.
 

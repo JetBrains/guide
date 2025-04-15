@@ -20,8 +20,6 @@ If you want to follow along with the tutorial, check out the `start-junit-migrat
 git clone --branch start-junit-migration https://github.com/JetBrains/intellij-samples.git
 ```
 
-_Note: We'll be using IntelliJ IDEA Community Edition for all the steps in this tutorial._
-
 ## Other Resources
 
 - [IntelliJ IDEA Blog - Migrating from JUnit 4 to JUnit 5](https://blog.jetbrains.com/idea/2020/08/migrating-from-junit-4-to-junit-5/)

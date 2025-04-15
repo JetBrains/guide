@@ -86,7 +86,7 @@ In this example we will create a simple web application using Java and Spring Bo
 
 ### Step 1: Create a Spring Boot application
 
-From IntelliJ IDEA Ultimate, create a new Spring Boot project with the following options selected:
+From IntelliJ IDEA with Ultimate subscription, create a new Spring Boot project with the following options selected:
 
 - **Language**: Java
 - **Type**: Maven

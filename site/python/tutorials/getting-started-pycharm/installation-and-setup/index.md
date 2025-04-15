@@ -10,7 +10,7 @@ videoBottom: true
 video: "https://youtu.be/2EB8siO-_OM"
 ---
 
-Let’s find and download PyCharm Professional Edition which we’ll be using in this series. PyCharm has a free 1-month trial, but feel free to follow along with your PyCharm Community Edition if you prefer.
+Let’s find and download PyCharm which we’ll be using in this series. PyCharm with Pro subscription has a free 1-month trial, but feel free to follow along with PyCharm if you prefer.
 
 ## Finding and downloading
 
@@ -20,7 +20,7 @@ Download PyCharm by clicking the [download button](https://www.jetbrains.com/pyc
 
 These [instructions](https://www.jetbrains.com/help/pycharm/installation-guide.html#standalone) differ depending on your operating system.
 
-On the first launch of PyCharm Professional, you’ll be asked to log into your JetBrains account or start a free 30-day evaluation and that's it for installation!
+On the first launch of PyCharm, you’ll be asked to log into your JetBrains account or start a free 30-day evaluation and that's it for installation!
 
 ## Welcome Screen
 

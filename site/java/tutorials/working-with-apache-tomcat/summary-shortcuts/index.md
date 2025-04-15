@@ -8,7 +8,7 @@ subtitle: Summary of working with Apache Tomcat in IntelliJ IDEA and shortcuts u
 thumbnail: ./thumbnail.png
 ---
 
-We've talked about how to set up a new project with IntelliJ IDEA Ultimate and Tomcat and use Tomcat with an existing application. We've also used the HTTP client available in IntelliJ IDEA Ultimate.
+We've talked about how to set up a new project with IntelliJ IDEA and Tomcat and use Tomcat with an existing application. We've also used the HTTP client available in IntelliJ IDEA Ultimate.
 
 Here are some useful keyboard shortcuts for working with your Tomcat Server:
 

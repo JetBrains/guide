@@ -45,4 +45,4 @@ There are a lot of features we are going to cover:
 - Helm Charts
 - Deploying Apps using Kubernetes & AWS EKS (Elastic Kubernetes Service)
 
-Note: _We'll be using PyCharm Professional Edition for all the steps in this tutorial._
+Note: _We'll be using PyCharm with Pro subscription for all the steps in this tutorial._

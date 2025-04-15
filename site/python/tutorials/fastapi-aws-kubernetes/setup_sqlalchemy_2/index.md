@@ -17,7 +17,7 @@ Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. In this tutorial
 
 ## DataGrip
 
-Before moving ahead, let us connect to our Postgres database via the [DataGrip](https://www.jetbrains.com/datagrip/) plugin which is already bundled in PyCharm Professional.
+Before moving ahead, let us connect to our Postgres database via the [DataGrip](https://www.jetbrains.com/datagrip/) plugin which is already bundled in PyCharm with Pro subscription.
 
 I will click on the Database Explorer, then click on **plus (+)** and I will choose **Postgres**.
 

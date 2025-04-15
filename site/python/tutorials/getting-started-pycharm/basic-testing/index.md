@@ -90,7 +90,7 @@ When you change your code, PyCharm will automatically run your tests every 3 sec
 
 ## Running Tests with Coverage
 
-Coverage is available in PyCharm Professional and you can enable it in the Run Configuration toolbar.
+Coverage is available in PyCharm with Pro subscription and you can enable it in the Run Configuration toolbar.
 
 ![enable-coverage.png](enable-coverage.png)
 

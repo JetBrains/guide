@@ -8,7 +8,7 @@ subtitle: Using the New Project Wizard to create a new project.
 thumbnail: ./thumbnail.png
 ---
 
-In this walk-through, you will create, run and package a simple Java application that prints "Hello World" to the system output. You will also see some IntelliJ IDEA features that can boost your productivity, for example, coding assistance and supplementary tools. All the features in this tutorial are available in both IntelliJ IDEA Community edition and IntelliJ IDEA Ultimate.
+In this walk-through, you will create, run and package a simple Java application that prints "Hello World" to the system output. You will also see some IntelliJ IDEA features that can boost your productivity, for example, coding assistance and supplementary tools.
 
 **The link to the relevant portion of the video is available in each tutorial step at the bottom.**
 

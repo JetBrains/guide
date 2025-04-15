@@ -7,11 +7,11 @@ topics:
   - gradle
   - maven
 author: md
-subtitle: Using the Dependency Diagram in IntelliJ IDEA Ultimate.
+subtitle: Using the Dependency Diagram in IntelliJ IDEA with Ultimate subscription.
 thumbnail: ./thumbnail.png
 ---
 
-If you are using IntelliJ IDEA Ultimate, you can also view your dependencies as a diagram.
+If you are using IntelliJ IDEA with Ultimate subscription, you can also view your dependencies as a diagram.
 
 ## Show Diagrams
 

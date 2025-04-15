@@ -16,7 +16,7 @@ video: ./tip.webm
 
 Modern web development means Node.js tools which mean a `package.json` file. This file sometimes has helper scripts under the `scripts` key. Running these perform various project operations such as `build`.
 
-PyCharm Professional makes it easy to browse and run these. There are several different paths to opening the `npm` tool window:
+PyCharm with Pro subscription makes it easy to browse and run these. There are several different paths to opening the `npm` tool window:
 
 - Right-click on `package.json` and choose **Show npm scripts**
 

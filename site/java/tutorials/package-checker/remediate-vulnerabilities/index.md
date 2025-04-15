@@ -8,7 +8,7 @@ topics:
   - maven
   - security
 author: md
-subtitle: Remediate dependencies using IntelliJ IDEA Ultimate.
+subtitle: Remediate dependencies using IntelliJ IDEA
 thumbnail: ./thumbnail.png
 ---
 

@@ -8,7 +8,7 @@ subtitle: How to create a new application that uses Apache Tomcat.
 thumbnail: ./thumbnail.png
 ---
 
-We're going to create a small web application that runs on Tomcat to demonstrate the integration in IntelliJ IDEA Ultimate:
+We're going to create a small web application that runs on Tomcat to demonstrate the integration in IntelliJ IDEA:
 
 1. From the Welcome Screen select New Project.
 2. If you have an existing project open, click **File | New**. Select **Jakarta EE** on the left-hand menu and enter the following details:

@@ -41,9 +41,9 @@ Using the **Play** button will also create a temporary Run Configuration as well
 
 ## Configurations From Project Templates
 
-Let’s look at explicitly creating a Run Configuration. The previous scenario applies for both PyCharm Community and PyCharm Professional, but this option is only available for PyCharm Professional.
+Let’s look at explicitly creating a Run Configuration. The previous scenario applies for both PyCharm and PyCharm with Pro subscription, but this option is only available for with a PyCharm Pro subscription.
 
-In an empty Django project, you can see that the Run Configurations button already shows the project name and a _Django_ logo. This is because PyCharm professional has already created a basic Run Configuration, special for Django.
+In an empty Django project, you can see that the Run Configurations button already shows the project name and a _Django_ logo. This is because PyCharm with Pro subscription has already created a basic Run Configuration, special for Django.
 
 <img src="django-run-configuration.png" alt="Django Run Configuration" />
 
@@ -51,7 +51,7 @@ When you click the **play** button, PyCharm launches the Django project, includi
 
 <img src="django-run-output.png" alt="Django Run Output" />
 
-PyCharm Professional also creates configurations for your Flask projects, FastAPI projects, and projects based on other frameworks.
+PyCharm with Pro subscription also creates configurations for your Flask projects, FastAPI projects, and projects based on other frameworks.
 
 ## Permanent Run Configurations
 

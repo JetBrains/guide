@@ -42,4 +42,4 @@ This is just the beginning, and we are going to explore a lot of cool stuffs.
 - Securing APIs with JSON Web Tokens (JWT)
 - Playing with BDD Tests & lots more to come.
 
-_Note: We'll be using PyCharm Professional Edition for all the steps in this tutorial._
+_Note: We'll be using PyCharm with Pro subscription for all the steps in this tutorial._

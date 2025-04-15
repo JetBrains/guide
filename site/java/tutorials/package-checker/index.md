@@ -8,7 +8,7 @@ topics:
   - gradle
   - maven
 author: md
-subtitle: Find and fix vulnerabilities inside IntelliJ IDEA Ultimate.
+subtitle: Find and fix vulnerabilities inside IntelliJ IDEA
 thumbnail: ./thumbnail.png
 tutorialItems:
   - ./introduction/
