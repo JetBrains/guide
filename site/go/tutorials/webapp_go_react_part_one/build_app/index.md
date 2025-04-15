@@ -119,7 +119,7 @@ While the endpoint code is too extensive to discuss it all in detail, all the en
 - Read from or write to the SQLite database
 - Return a JSON response
 
-To keep the tutorial simple, none of the endpoints authenticate incoming requests. In production, consider using [Gin middleware](https://gin-gonic.com/docs/examples/using-middleware/) to add an authentication layer to your API.
+To keep the tutorial simple, none of the endpoints authenticate incoming requests. In production, consider using [Gin middleware](https://gin-gonic.com/en/docs/examples/using-middleware/) to add an authentication layer to your API.
 
 With that in mind, you'll next implement the endpoints referred to in the `main` function.
 
