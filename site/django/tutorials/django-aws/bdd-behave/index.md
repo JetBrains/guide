@@ -285,6 +285,6 @@ The test scenarios has successfully passed. You can see the below image that a n
 I hope you got a basic understanding of Behavior Driven Development. This was a short introduction to BDD and if you are interested to know more about BDD, then follow the link given below.
 
 - [Behave Documentation](https://behave.readthedocs.io/en/stable/)
-- [Getting Started with Behavior Testing in Python with Behave](https://semaphoreci.com/community/tutorials/getting-started-with-behavior-testing-in-python-with-behave)
+- [Getting Started with Behavior Testing in Python with Behave](https://semaphore.io/community/tutorials/getting-started-with-behavior-testing-in-python-with-behave)
 
 In the upcoming video I will show you how to deploy the application inside a Docker container.
