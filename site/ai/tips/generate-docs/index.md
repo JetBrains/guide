@@ -7,6 +7,7 @@ seealso:
     href: "https://www.jetbrains.com/help/idea/generate-documentation.html"
 topics:
   - ai
+  - aia
 author: hs
 thumbnail: ./thumbnail.png
 animatedGif:

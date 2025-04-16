@@ -1,7 +1,7 @@
 ---
-title: AI
+title: Artificial Intelligence
 subtitle: >-
-  Comprising JetBrains AI Assistant and Full Line Code Completion
+  THIS NEEDS TO BE FIXED BEFORE MERGING!!!!!!!!!!!
 logo: light.png
 website: "https://www.jetbrains.com/ai/"
 topicType: technology

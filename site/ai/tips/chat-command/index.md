@@ -7,6 +7,7 @@ seealso:
     href: https://www.jetbrains.com/help/idea/chat-with-ai.html
 topics:
   - ai
+  - aia
   - java
 author: md
 thumbnail: ./thumbnail.png

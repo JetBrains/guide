@@ -5,7 +5,7 @@ title: Deploying Functions
 topics:
   - aws
 author: mm
-subtitle: Use PyCharm Professional to deploy your Lambda APIs.
+subtitle: Use PyCharm to deploy your Lambda APIs.
 thumbnail: ../thumbnail.png
 video: "https://youtu.be/mqNTLSOcSOw"
 ---
@@ -29,7 +29,7 @@ but to be honest, it's not the recommended approach from point of security and a
 
 - Please follow the [Security best practices in IAM (Identity & Access Management)](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 
-PyCharm Professional is already open, I will right-click on the project ServerlessDemo,
+PyCharm is already open, I will right-click on the project ServerlessDemo,
 then at the bottom I click _Deploy Serverless Application_.
 
 ![deploy_step_2](steps/step2.png)

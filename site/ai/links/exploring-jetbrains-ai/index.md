@@ -3,7 +3,9 @@ date: 2024-08-01
 title: Exploring JetBrains AI
 topics:
   - ai
+  - aia
   - kotlin
+  - deeper-ai
 author: vt
 subtitle: Exploring JetBrains AI with Vladislav Tankov | KotlinConfersations'24.
 thumbnail: ./thumbnail.jpg

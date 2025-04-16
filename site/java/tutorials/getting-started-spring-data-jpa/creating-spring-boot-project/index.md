@@ -8,7 +8,7 @@ subtitle: Use the Spring Initializr to create a new Spring Boot project.
 thumbnail: ./thumbnail.png
 ---
 
-First, we'll create a new project in IntelliJ IDEA Ultimate by clicking **New Project** in the Welcome Screen. We'll select **Spring Initializr** from the left menu. Then, we'll specify our project's name - you can call it `SpringDataJPA`. We can also change the **Group** field to our company name. For the rest of the fields, you can accept the defaults. Feel free to use the latest Java version for your project.
+First, we'll create a new project in IntelliJ IDEA with Ultimate subscription by clicking **New Project** in the Welcome Screen. We'll select **Spring Initializr** from the left menu. Then, we'll specify our project's name - you can call it `SpringDataJPA`. We can also change the **Group** field to our company name. For the rest of the fields, you can accept the defaults. Feel free to use the latest Java version for your project.
 
 ![New Project Window](./NewProject.png)
 

@@ -15,7 +15,7 @@ obsoletes:
   - /pycharm/tips/create-sqlite-connection
 ---
 
-PyCharm Professional's Database tool, courtesy of [DataGrip](https://www.jetbrains.com/datagrip/), is wonderful. It gives you a professional-level, visual way to work with SQL development in a project.
+PyCharm with Pro subscription includes our Database tool, [DataGrip](https://www.jetbrains.com/datagrip/), which is wonderful. It gives you a professional-level, visual way to work with SQL development in a project.
 
 The Database tool needs to create database connection for the project, which not only lets you browse tables, edit rows, and perform queries, but it also injects superpowers into your Python code. Strings in Python that look like SQL get autocomplete, not only on SQL, but on the tables and columns in your project. Even refactoring those names.
 

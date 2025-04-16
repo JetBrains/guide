@@ -20,7 +20,11 @@ const Subnav = ({ channel }: SubnavProps): JSX.Element => {
 				{channel.subnav && (
 					<div class="navbar-end is-hidden-touch">
 						{channel.subnav.map((link) => (
-							<a class="navbar-item" href={link.url}>
+							<a
+								class="navbar-item"
+								href={link.url}
+								target={link.target ? link.target : "_self"}
+							>
 								{link.title}
 							</a>
 						))}

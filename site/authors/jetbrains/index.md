@@ -1,7 +1,7 @@
 ---
 title: JetBrains
 subtitle: ""
-thumbnail: ./jb.jpg
+thumbnail: ./jb.png
 author: hs
 date: 2024-06-30
 ---

@@ -8,7 +8,7 @@ subtitle: How to add Apache Tomcat to your application.
 thumbnail: ./thumbnail.png
 ---
 
-If you’re not creating a new project from scratch and instead have an existing project that runs on Tomcat, you can configure IntelliJ IDEA Ultimate to connect to your existing Tomcat installation. Let's work with [this application](https://github.com/helenjoscott/MyWebApp) from GitHub:
+If you’re not creating a new project from scratch and instead have an existing project that runs on Tomcat, you can configure IntelliJ IDEA to connect to your existing Tomcat installation. Let's work with [this application](https://github.com/helenjoscott/MyWebApp) from GitHub:
 
 1. Clone the Project in IntelliJ IDEA and follow the instructions in `README.md` to run the project.
 2. then go to **Run | Edit Configurations**.

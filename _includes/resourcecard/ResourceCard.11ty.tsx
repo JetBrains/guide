@@ -24,6 +24,7 @@ export type ResourceCardProps = {
 	includeCardFooter?: boolean;
 	compactMode?: boolean;
 	includeContentType?: boolean;
+	hideTitle?: boolean;
 };
 
 export type GetGlowInfoProps = {
@@ -52,6 +53,7 @@ const ResourceCard = ({
 	includeCardFooter = true,
 	compactMode = false,
 	includeContentType = true,
+	hideTitle = false,
 }: ResourceCardProps): JSX.Element => {
 	doesExist(references);
 	const { author, topics } = references;
@@ -98,31 +100,33 @@ const ResourceCard = ({
 						</figure>
 					</a>
 				</div>
-				<div class="card-content has-position-relative">
-					{contentType && includeContentType && !compactMode && (
-						<p
-							class="subtitle is-size-7 is-uppercase"
-							// TODO Paul remember this might be "Medium" etc. for Link
-							data-template="contentType" // TODO Paul this should be replaced in explore as well
+				{!hideTitle && (
+					<div class="card-content has-position-relative">
+						{contentType && includeContentType && !compactMode && (
+							<p
+								class="subtitle is-size-7 is-uppercase"
+								// TODO Paul remember this might be "Medium" etc. for Link
+								data-template="contentType" // TODO Paul this should be replaced in explore as well
+							>
+								{contentType}
+							</p>
+						)}
+						<a
+							class="title is-size-5 is-stretched-link clamp clamp-2 mb-1"
+							aria-label={title}
+							data-template="title"
+							data-template-href="url"
+							href={url}
 						>
-							{contentType}
-						</p>
-					)}
-					<a
-						class="title is-size-5 is-stretched-link clamp clamp-2 mb-1"
-						aria-label={title}
-						data-template="title"
-						data-template-href="url"
-						href={url}
-					>
-						{title}
-					</a>
-					{subtitle && !compactMode && (
-						<div class="content clamp clamp-5" data-template="subtitle">
-							{subtitle}
-						</div>
-					)}
-				</div>
+							{title}
+						</a>
+						{subtitle && !compactMode && (
+							<div class="content clamp clamp-5" data-template="subtitle">
+								{subtitle}
+							</div>
+						)}
+					</div>
+				)}
 				{includeCardFooter && !compactMode && (
 					<footer class="card-footer">
 						<div class="container p-4">

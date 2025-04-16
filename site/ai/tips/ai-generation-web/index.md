@@ -4,6 +4,7 @@ title: "AI Code Generation in Web Technologies"
 subtitle: Using AI to generate Code in WebStorm
 topics:
   - ai
+  - aia
 author: hs
 thumbnail: ./thumbnail.png
 video: "./tip.webm"

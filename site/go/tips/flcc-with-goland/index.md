@@ -4,6 +4,7 @@ title: Full Line Code Completion in GoLand
 topics:
   - go
   - ai
+  - aia
 author: mm
 subtitle: Faster code completion with the help of a locally running deep learning model.
 seealso:

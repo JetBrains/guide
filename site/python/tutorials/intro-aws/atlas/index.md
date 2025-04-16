@@ -8,13 +8,13 @@ topics:
   - mongodb
 author: mm
 subtitle: >-
-  Connect MongoDB smoothly by connecting through Pycharm Professional to explore
+  Connect MongoDB smoothly by connecting through Pycharm to explore
   the database GUI.
 thumbnail: ../thumbnail.png
 video: "https://youtu.be/TfwDOKRiYQ4"
 ---
 
-In this tutorial, we are going create a MongoDB Cluster and connect through PyCharm Professional.
+In this tutorial, we are going create a MongoDB Cluster and connect through PyCharm with Pro subscription.
 
 ### MongoDB Atlas
 
@@ -63,7 +63,7 @@ for connecting to the MongoDB Database.
 
 I'll click on **Connect**, then proceed to click on **Connect using MongoDB Compass**, and ultimately, I'll copy the "connection string."
 
-### Connecting through PyCharm Professional
+### Connecting through PyCharm with Pro subscription
 
 ![atlas_step_6](steps/step6.png)
 
@@ -78,4 +78,4 @@ We will be updating all the information like user, database name, password and t
 
 After that I am going to click on **Test Connection** to check whether I am able to establish connection to the DB or not, as you can see the connection was successful. I will click on Apply and then OK.
 
-We have successfully connected with the MongoDB Database through PyCharm Professional.
+We have successfully connected with the MongoDB Database through PyCharm with Pro subscription.

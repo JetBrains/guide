@@ -10,10 +10,10 @@ thumbnail: ./thumbnail.png
 video: "https://youtu.be/xf90Ko64hRc"
 ---
 
-PyCharm Professional bundles WebStorm and, with the optional LiveEdit plugin, makes it easy to see HTML and CSS updates as you save them.
+PyCharm with Pro subscription bundles WebStorm and, with the optional LiveEdit plugin, makes it easy to see HTML and CSS updates as you save them.
 
-Once you install the LiveEdit plugin, go to an HTML file and create a Debug configuration. You can do this with a right-click. This opens a private Chrome session with the flag to turn on Chrome's DevTools protocol. This lets PyCharm Professional "remote control" the browser, using an actual HTTP URL.
+Once you install the LiveEdit plugin, go to an HTML file and create a Debug configuration. You can do this with a right-click. This opens a private Chrome session with the flag to turn on Chrome's DevTools protocol. This lets PyCharm "remote control" the browser, using an actual HTTP URL.
 
 As you type and save HTML and CSS, you'll see the changes in the browser.
 
-In previous versions, PyCharm needed a special extension in Chrome to allow this remote-control feature. That's no longer true.
+In previous versions, PyCharm with Pro subscription needed a special extension in Chrome to allow this remote-control feature. That's no longer true.

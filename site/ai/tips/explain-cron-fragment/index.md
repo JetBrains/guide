@@ -10,6 +10,7 @@ seealso:
       https://www.jetbrains.com/help/idea/use-prompts-to-explain-and-refactor-your-code.html#ai-explain-code
 topics:
   - ai
+  - aia
   - java
 author: md
 thumbnail: ./thumbnail.png

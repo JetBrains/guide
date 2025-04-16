@@ -193,7 +193,7 @@ After switching into **Play** mode again, you can now control the spaceship and 
 
 ## Making the spaceship reappear when no longer in view
 
-When you fly the spaceship outside the current view, you will find there are no guard rails. Like [Voyager 1 and 2](https://voyager.jpl.nasa.gov/mission/), your spaceship will continue into deep space. Very cool science, but not as exciting in a game like the one you are building here...
+When you fly the spaceship outside the current view, you will find there are no guard rails. Like [Voyager 1 and 2](https://science.nasa.gov/mission/voyager/mission-overview/), your spaceship will continue into deep space. Very cool science, but not as exciting in a game like the one you are building here...
 
 A solution to this would be to add a collider to the spaceship, which can be used to determine if the spaceship is outside the camera viewport. Exit **Play** mode, select the spaceship in the **Hierarchy** tool window, click **Add Component** in the **Inspector** tool window, and add a _Capsule Collider_. Make the collider a trigger, set its radius to "60" and height to "1.2". You'll see the collider radius as a green capsule around the spaceship:
 

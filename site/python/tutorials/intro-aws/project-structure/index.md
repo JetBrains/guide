@@ -6,7 +6,7 @@ topics:
   - aws
 author: mm
 subtitle: >-
-  Launching up project in PyCharm Professional, installing plugin and exploring
+  Launching up project in PyCharm, installing plugin and exploring
   the project layout.
 thumbnail: ../thumbnail.png
 video: "https://youtu.be/yQd2N2tYN0c"
@@ -16,9 +16,7 @@ In this tutorial step, we will be setting up the new project and exploring the p
 
 ## New Project
 
-As you can see the latest PyCharm Interface as they are offering in 2020.3
-
-Here is the _New Project_ screen in PyCharm Professional 2020.3. To start, I'll select the **New Project**.
+Here is the _New Project_ screen in PyCharm with Pro subscription. To start, I'll select the **New Project**.
 
 ![PYCHARM_NEW_UI](pycharm_ui_interface.png)
 

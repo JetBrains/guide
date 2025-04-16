@@ -14,7 +14,7 @@ However, Tomcat recently released version 10 which updated package names from `j
 
 We're going to work with some sample code which you can get [from GitHub](https://github.com/helenjoscott/MyWebApp) with thanks to [Dalia](https://twitter.com/DaliaShea) for creating the project! There are three branches in this project; `main`, `javax-branch` and `jakarta-branch`. Clone the project from GitHub if you want to follow along and check out the `javax-branch` branch, we will start here.
 
-If you are following along, I recommend that you use IntelliJ IDEA Ultimate, however you can use IntelliJ IDEA Community Edition and install the Docker plugin manually. Either way you will need Docker running on your machine. Once you have downloaded the code, you can use the run icon in the gutter of the`docker-compose.yml` file:
+If you are following along, I recommend that you use IntelliJ IDEA with Ultimate subscription, however you can use IntelliJ IDEA and install the Docker plugin manually. Either way you will need Docker running on your machine. Once you have downloaded the code, you can use the run icon in the gutter of the`docker-compose.yml` file:
 
 ![Gutter run icons](docker-compose-up.png)
 

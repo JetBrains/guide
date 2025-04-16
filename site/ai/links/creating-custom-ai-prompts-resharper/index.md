@@ -3,6 +3,8 @@ date: 2024-03-02
 title: Creating Custom AI Assistant Prompts with ReSharper
 topics:
   - ai
+  - aia
+  - learn-aia
 author: rachelappel
 subtitle: Write custom prompts for use with the JetBrains AI Assistant in ReSharper and Rider so you can make the most of AI.
 thumbnail: ./thumbnail.png

@@ -22,4 +22,4 @@ In this tutorial, we will be exploring two of the most popular tools that are ve
 
 Let's begin our journey of working together with Django and Docker.
 
-_Note: We'll be using PyCharm Professional Edition for all the steps in this tutorial._
+_Note: We'll be using PyCharm with Pro subscription for all the steps in this tutorial._

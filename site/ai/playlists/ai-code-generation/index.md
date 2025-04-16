@@ -3,6 +3,7 @@ date: 2024-11-20
 title: AI Code Generation
 topics:
   - ai
+  - aia
   - completion
 author: hs
 subtitle: Take a look at AI code completion across different technologies and IDEs

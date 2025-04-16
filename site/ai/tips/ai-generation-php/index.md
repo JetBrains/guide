@@ -4,6 +4,7 @@ title: AI Code Generation in PHP
 subtitle: Using AI to generate code in PhpStorm
 topics:
   - ai
+  - aia
 author: hs
 thumbnail: ./thumbnail.png
 video: "./tip.webm"

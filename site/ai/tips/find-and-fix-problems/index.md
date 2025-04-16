@@ -8,6 +8,7 @@ seealso:
       https://www.jetbrains.com/help/idea/use-prompts-to-explain-and-refactor-your-code.html#ai-find-potential-problems
 topics:
   - ai
+  - aia
 author: hs
 thumbnail: ./thumbnail.png
 video: "https://youtu.be/_4J_DG05sxc"

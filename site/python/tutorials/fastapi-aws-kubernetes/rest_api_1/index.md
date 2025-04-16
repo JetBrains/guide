@@ -145,7 +145,7 @@ Taking a pause in the router at line between 14-18, you might be thinking this v
 You shouldn't be performing any IO inside pydantic validators. I was also exploring in the beginning, when I came across this interesting issue
 where there is discussion going on for Pydantic validation with database connection.
 
-You can check out this link to know more about it : [https://github.com/tiangolo/fastapi/issues/979](https://github.com/tiangolo/fastapi/issues/979)
+You can check out this link to know more about it : [https://github.com/fastapi/fastapi/discussions/7780](https://github.com/fastapi/fastapi/discussions/7780)
 
 Luckily, I got a chance to interact with Sebastian in PyCon India 2021, and to get rid of these issues he built something called [SQLModel](https://sqlmodel.tiangolo.com/) which you
 might have heard recently. It is designed to be compatible with FastAPI, Pydantic, and SQLAlchemy.
@@ -216,7 +216,7 @@ router = APIRouter(
 
 @router.post('/', status_code=status.HTTP_201_CREATED)
 async def create_user_registration(request: schema.User, database: Session = Depends(db.get_db)):
-    # Read More : Pydantic Validation with Database (https://github.com/tiangolo/fastapi/issues/979)
+    # Read More : Pydantic Validation with Database (https://github.com/fastapi/fastapi/discussions/7780)
 
     user = await validator.verify_email_exist(request.email, database)
     if user:

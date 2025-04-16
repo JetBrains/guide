@@ -7,7 +7,7 @@ author: tg
 subtitle: See how your application is performing with the built-in profiler.
 thumbnail: ./thumbnail.png
 seealso:
-  - title: (video) Profile Tools and IntelliJ IDEA Ultimate
+  - title: (video) Profile Tools and IntelliJ IDEA with Ultimate subscription
     href: "https://www.youtube.com/watch?v=OQcyAtukps4"
   - title: (video) A Simple Approach to Advanced JVM Profiling
     href: "https://www.youtube.com/watch?v=TDpbt4thECc"

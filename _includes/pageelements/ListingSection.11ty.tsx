@@ -52,7 +52,7 @@ function ListingSection({
 	const container = (
 		<div class="container" id={anchor}>
 			<div class="columns is-vcentered is-mobile">
-				<div class="column is-8 is-10-tablet is-10-desktop">
+				<div class="column is-10 is-10-tablet is-10-desktop">
 					<h2 class="mt-2 mb-4 is-size-2 is-size-3-mobile has-text-weight-bold">
 						{title}
 					</h2>

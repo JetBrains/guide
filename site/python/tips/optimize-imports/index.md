@@ -24,4 +24,4 @@ For example, Python's [PEP 8 section on import style](https://www.python.org/dev
 
 PyCharm can clean all of that up using Optimize Imports, which cleans up your imports based on settings you can save. This action can be run on a single file or across _all files in a project_. Also, the _Commit_ dialog box has a checkbox to run it in the _Before Commit_ section.
 
-Finally, PyCharm Professional applies all of this to imports in other languages such as JavaScript and TypeScript.
+Finally, PyCharm with Pro subscription applies all of this to imports in other languages such as JavaScript and TypeScript.

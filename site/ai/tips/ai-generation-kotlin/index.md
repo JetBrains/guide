@@ -4,6 +4,7 @@ title: AI Code Generation in Kotlin
 subtitle: Using AI to generate code in IntelliJ IDEA
 topics:
   - ai
+  - aia
 author: hs
 thumbnail: ./thumbnail.png
 video: "./tip.webm"

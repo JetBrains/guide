@@ -273,4 +273,4 @@ This file is loaded and processed in the browser by a Sphinx JavaScript library.
 
 There are limits to this approach: very large sites will generate a very large index.
 For these cases, many Sphinx sites use server-side and cloud-based integrations.
-If you host your docs with Read the Docs, for example, you'll get access to [ElasticSearch-based indexing](https://docs.readthedocs.io/en/stable/development/search.html).
+If you host your docs with Read the Docs, for example, you'll get access to [ElasticSearch-based indexing](https://docs.readthedocs.com/dev/latest/server-side-search.html).

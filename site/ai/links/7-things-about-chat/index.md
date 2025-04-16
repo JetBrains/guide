@@ -3,6 +3,8 @@ date: 2024-11-21
 title: "7 Things You Didn’t Know about AI Assistant Chat"
 topics:
   - ai
+  - aia
+  - learn-aia
 author: md
 subtitle: Discover 7 things you might not know about using JetBrains AI Assistant Chat.
 thumbnail: ./thumbnail.png

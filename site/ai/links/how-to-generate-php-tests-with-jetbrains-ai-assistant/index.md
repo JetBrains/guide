@@ -3,7 +3,9 @@ date: 2024-02-27
 title: How to Generate PHP Tests With JetBrains AI Assistant
 topics:
   - ai
+  - aia
   - php
+  - learn-aia
 author: taniagoral
 subtitle: JetBrains AI Assistant, coupled with PhpStorm, can bring about a transformative change in your testing routine.
 thumbnail: ./thumbnail.png

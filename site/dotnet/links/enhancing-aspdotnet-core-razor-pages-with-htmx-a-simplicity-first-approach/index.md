@@ -21,4 +21,3 @@ Chris Woodruff, known as Woody, is an Architect at Real Times Technologies with 
 
 - [Twitter](https://twitter.com/cwoodruff)
 - [Personal website](https://woodruff.dev/)
-- [Advocatus](https://advocatus.dev/)
