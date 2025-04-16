@@ -17,7 +17,7 @@ We created a Spring Controller and served some text to the local Tomcat webserve
 ### Resources
 
 - I referenced [this guide](https://spring.io/guides/gs/spring-boot/) to create this tutorial.
-- The [New Project Wizard](https://www.jetbrains.com/help/idea/new-project-wizard.html) in IntelliJ IDEA with Ultimate subscription uses [Spring Initializr](https://start.spring.io/) to create the project behind the scenes.
+- The [New Project Wizard](https://www.jetbrains.com/help/idea/new-project-wizard.html) in IntelliJ with Ultimate uses [Spring Initializr](https://start.spring.io/) to create the project behind the scenes.
 
 - There are lots of [guides](https://spring.io/guides) available on the Spring website that you can also have a play with. I recommend you work through more of them, especially if you're interested in Spring development and learning more.
 

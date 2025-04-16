@@ -30,7 +30,7 @@ You can choose to enable or disable one or more [profiles from the Maven Window]
 
 There are a number of things you can do with your project from the Maven window, be sure to take a look at all the icons to see what they can do.
 
-Everything we've looked at so far has been in IntelliJ IDEA. IntelliJ IDEA with Ultimate subscription has some extra features. One which may be particularly useful in understanding your Maven project is seeing the Dependencies as a diagram.
+Everything we've looked at so far has been in IntelliJ IDEA. IntelliJ IDEA Ultimate has some extra features. One which may be particularly useful in understanding your Maven project is seeing the Dependencies as a diagram.
 
 ![Show Diagram](show-diagram.png)
 

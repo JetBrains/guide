@@ -39,7 +39,7 @@ The first step is to replace the dependency for `javax.servlet` with `jakarta.se
 
 However, the `org.hibernate` dependency has a transitive dependency on `javax.persistence-api` as well which is part of the old Java Persistence API so this also needs to be updated.
 
-As a side note, you can see this dependency in IntelliJ IDEA with Ultimate subscription by right-clicking on the dependency name and invoking Show Dependencies <kbd>⌥⌘U</kbd> (macOS) / <kbd>Ctrl+Alt+U</kbd> (Windows/Linux).
+As a side note, you can see this dependency in IntelliJ IDEA Ultimate by right-clicking on the dependency name and invoking Show Dependencies <kbd>⌥⌘U</kbd> (macOS) / <kbd>Ctrl+Alt+U</kbd> (Windows/Linux).
 
 ![Project dependencies in IntelliJ IDEA Ultimate](hibernate-dependencies.png)
 

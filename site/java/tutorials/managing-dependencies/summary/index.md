@@ -26,7 +26,7 @@ Here are the IntelliJ IDEA shortcuts that we used.
 ### Related Links
 
 - [(video) JetBrains - IntelliJ IDEA: Analyzing Dependencies](https://www.youtube.com/watch?v=La3Cp-O05eQ)
-- [(video) JetBrains – IntelliJ IDEA with Ultimate subscription: Package Checker](https://www.youtube.com/watch?v=RWtN4WNQsX4)
+- [(video) JetBrains – IntelliJ IDEA Ultimate: Package Checker](https://www.youtube.com/watch?v=RWtN4WNQsX4)
 - [(code) JetBrains - intellij-samples](https://github.com/JetBrains/intellij-samples)
 - [(code) Spring PetClinic](https://github.com/spring-projects/spring-petclinic)
 - [(book) Getting to Know IntelliJ IDEA - Trisha Gee & Helen Scott](https://leanpub.com/gettingtoknowIntelliJIDEA)

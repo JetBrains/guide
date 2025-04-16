@@ -12,7 +12,7 @@ video: "https://youtu.be/4fRx1rA83jE"
 
 ## Create your Spring Project
 
-We'll use IntelliJ IDEA with Ultimate subscription for this tutorial because we want to create a new project using Spring Initializr. This functionality is only available with IntelliJ IDEA Ultimate. This tutorial is based off [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/).
+We'll use IntelliJ IDEA Ultimate for this tutorial because we want to create a new project using Spring Initializr. This functionality is only available with IntelliJ IDEA Ultimate. This tutorial is based off [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/).
 
 1. If you're in an IntelliJ IDEA project already, select **File | Project**. Alternatively click **New Project** on the Welcome screen.
 

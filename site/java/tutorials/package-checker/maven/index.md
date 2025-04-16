@@ -17,7 +17,7 @@ In a Maven project, all of your project's dependencies are declared in the pom.x
 
 ![Maven pom.xml with vulnerable dependencies highlighted](pomxml-highlight.png)
 
-The Package Checker plugin highlights vulnerable dependencies and when we hover over the highlighted dependency, IntelliJ IDEA with Ultimate subscription shows all the vulnerabilities that were identified in this particular dependency. When we click on link for the CVE for a particular vulnerability, we're redirected to the Checkmarx Advisory to learn more about this specific vulnerability.
+The Package Checker plugin highlights vulnerable dependencies and when we hover over the highlighted dependency, IntelliJ IDEA Ultimate shows all the vulnerabilities that were identified in this particular dependency. When we click on link for the CVE for a particular vulnerability, we're redirected to the Checkmarx Advisory to learn more about this specific vulnerability.
 
 ![Maven pom.xml with hover](hover.png)
 
