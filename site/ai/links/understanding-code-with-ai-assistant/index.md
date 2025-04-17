@@ -4,6 +4,7 @@ title: "The Problem of Understanding Code is Solved: AI Assistant to the Rescue"
 topics:
   - ai
   - aia
+  - learn-aia
 author: md
 subtitle: Let's look at using JetBrains AI Assistant to help you understand existing code.
 thumbnail: ./thumbnail.png
