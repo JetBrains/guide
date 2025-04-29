@@ -101,7 +101,7 @@ function GettingStartedSection({
 			)}
 			<div class="columns">
 				<div class="column is-two-thirds content">{description}</div>
-				{/*<div class="column is-one-third">{whyVideo}</div>*/}
+				<div class="column is-one-third">{whyVideo}</div>
 			</div>
 			<div class="container">
 				{howToResourcesSubtitle && (

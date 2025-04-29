@@ -47,9 +47,9 @@ class AIHomepage {
 	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
-		let aiaWhyVideoUrl = "https://www.youtube.com/watch?v=Y80rIKoSSSU";
+		let aiaWhyVideoUrl = "https://www.youtube.com/watch?v=KqXRRZiCbNg";
 		const aiaHowTos = [
-			// this.getResource("/ai/links/get-started-aia/kotlin/"),
+			this.getResource("/ai/links/get-started-aia/kotlin/"),
 			this.getResource("/ai/links/get-started-aia/idea/"),
 			this.getResource("/ai/links/get-started-aia/phpstorm/"),
 			this.getResource("/ai/links/get-started-aia/pycharm/"),
@@ -58,9 +58,9 @@ class AIHomepage {
 			this.getResource("/ai/links/get-started-aia/rider/"),
 		];
 
-		let junieWhyVideoUrl = "https://www.youtube.com/watch?v=Y80rIKoSSSU";
+		let junieWhyVideoUrl = "https://www.youtube.com/watch?v=RgkFSFIqOPw";
 		const junieHowTos = [
-			// this.getResource("/ai/links/how-to-junie/kotlin/"),
+			this.getResource("/ai/links/how-to-junie/kotlin/"),
 			this.getResource("/ai/links/how-to-junie/idea/"),
 			this.getResource("/ai/links/how-to-junie/pycharm/"),
 			this.getResource("/ai/links/how-to-junie/webstorm/"),
