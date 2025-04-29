@@ -156,7 +156,7 @@ function findSearchResults(query) {
       <div class="has-text-left is-fullwidth">
         <b>${result.title}</b>
         ${tags.length ? `<div class="is-pulled-right is-hidden-touch">${tags.join("<span>&nbsp;&nbsp;</span>")}</div>`: ""}<br/>
-        <small class="is-small">${result.subtitle}</small>
+				${result.subtitle ? `<small class="is-small">${result.subtitle}</small>` : ''}
       </div>    </a>`;
   });
 
