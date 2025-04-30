@@ -1,6 +1,6 @@
 ---
 date: 2025-04-30
-title: "Setting Up Project Guidelines for a Go App Using Junie"
+title: "Go App Project Guidelines using Junie"
 subtitle: "Creating Project Rules and Structure for a Go Application"
 topics:
   - learn-junie
@@ -15,7 +15,7 @@ You can customize project guidelines and tell Junie how to build the application
 To create project guidelines:
 
 - Click the `+` button.
-- Select _Create project guidelines_.
+- Select *Create project guidelines*.
 
 ### Project Guidelines
 
