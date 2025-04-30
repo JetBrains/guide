@@ -1,7 +1,7 @@
 ---
 date: 2025-04-30
 title: "Write effective AI prompts"
-subtitle: Make the most out of your conversations with AI
+subtitle: Make the most out of your conversations with AI.
 topics:
   - ai
   - aia
@@ -9,7 +9,7 @@ author: rachelappel
 thumbnail: ./thumbnail.png
 ---
 
-When working with AI development tools like JetBrains' AI Assistant, developers should understand the following aspects of prompting to effectively use the tool's capabilities:
+When working with AI development tools like JetBrains' AI Assistant, there are a few things that developers should understand to effectively use the tool's capabilities. Let's take a look at them.
 
 ## Prompting Basics
 
@@ -39,7 +39,7 @@ Perhaps you are trying to debug some code that doesn't throw an error, but it ju
 Experiment with the tool's features, such as context-aware suggestions, coding style adherence, or testing assistance.
 Familiarize yourself with specific functionalities designed for code review, bug prediction, or autocompletion.
 
-Pro tip: Insert comments in your code to act as inline guidance for the AI Assistant. For example, "// Suggest optimization for performance in this loop to instruct the AI on what you need."
+Pro tip: Insert comments in your code to act as inline guidance for the AI Assistant. For example, "// Suggest optimization for performance in this loop" to instruct the AI on what you need.
 
 ## Use instructive and open-ended prompts
 
