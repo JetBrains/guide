@@ -1,5 +1,5 @@
 ---
-date: 2025-04-29
+date: 2025-04-30
 title: "Building a boilerplate Go app using Junie"
 subtitle: Using AI agents to generate boilerplate application code
 topics:
