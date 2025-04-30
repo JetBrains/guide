@@ -1,7 +1,7 @@
 ---
 date: 2025-04-30
-title: "Setting up Project Guidelines for Go App using Junie"
-subtitle: "example"
+title: "Setting Up Project Guidelines for a Go App Using Junie"
+subtitle: "Creating Project Rules and Structure for a Go Application"
 topics:
   - learn-junie
   - go
@@ -53,7 +53,6 @@ myapp/
 - How does Junie run tests (once it requires any non-standard approach)
 - Whether Junie should build the project before submitting the result
 
-<!-- prettier-ignore -->
 `Yes, the project should be built, and the build artifacts should be placed in a build folder at the project root. This folder should include builds for Windows, Linux, and macOS platforms.`
 
 - Any code-style related instructions
