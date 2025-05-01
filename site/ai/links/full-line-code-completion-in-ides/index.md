@@ -4,7 +4,6 @@ title: Full Line Code Completion in JetBrains IDEs
 topics:
   - ai
   - aia
-  - deeper-ai
 author: pwe
 subtitle: How does it work, what languages are supported, and how can you get started?
 thumbnail: ./thumbnail.png
@@ -13,7 +12,7 @@ linkURL: "https://blog.jetbrains.com/blog/2024/04/04/full-line-code-completion-i
 
 JetBrains IDEs introduce a new feature that enables developers to autocomplete entire lines of code using locally-run deep learning models. This functionality directly addresses the fundamental constraints of cloud-based alternatives, and ensures data remains on your machine without any need for external server communication. Thus, everyone can complete the code in trains, airplanes, and even ships without the internet, and extra subscriptions.
 
-Full line code completion is available for Java, Kotlin, Python, JavaScript, TypeScript, CSS, PHP, Go, and Ruby, within the corresponding JetBrains IDEs out of the box.
+Full line code completion is available for Java, Kotlin, Python, JavaScript, TypeScript, CSS, PHP, Go, and Ruby, within the corresponding JetBrains IDEs out of the box: IntelliJ IDEA Ultimate, PyCharm Professional, WebStorm, PhpStorm, GoLand, and RubyMine. Expect support for more languages in upcoming releases.
 
 ## Full line code completion vs. AI Assistant
 

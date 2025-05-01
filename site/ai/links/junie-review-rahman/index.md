@@ -4,7 +4,6 @@ title: 'Review: "JetBrains Junie: My Firsthand Experience"'
 topics:
   - ai
   - junie
-  - ai-community
 author: pwe
 subtitle: A professional developer gets Junie to help on two frontend projects.
 thumbnail: ./thumbnail.png

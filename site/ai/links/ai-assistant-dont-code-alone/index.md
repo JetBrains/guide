@@ -4,7 +4,6 @@ title: "AI Assistant: Don’t Code Alone"
 topics:
   - ai
   - aia
-  - learn-aia
 author: jetbrains
 subtitle: Let's look at using JetBrains AI Assistant in quasi-real-world development situations.
 thumbnail: ./thumbnail.jpg

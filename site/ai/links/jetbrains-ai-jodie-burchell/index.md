@@ -4,7 +4,6 @@ title: JetBrains AI with Jodie Burchell
 topics:
   - ai
   - aia
-  - deeper-ai
 author: jb
 subtitle: The design challenges of adding AI tools to software products, and the team’s particular interest in auto-generating code documentation.
 thumbnail: ./thumbnail.png

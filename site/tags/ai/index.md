@@ -1,6 +1,7 @@
 ---
 title: Artificial Intelligence
-subtitle: From smart assistance to autonomous agents.
+subtitle: >-
+  THIS NEEDS TO BE FIXED BEFORE MERGING!!!!!!!!!!!
 logo: light.png
 website: "https://www.jetbrains.com/ai/"
 topicType: technology
