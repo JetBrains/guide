@@ -21,4 +21,4 @@ AIA and Junie differ primarily in their context collection methods, which are im
 
 ![ask_mode_aia](./ask_mode_aia.png)
 
-AIA offers the advantage of speed, as it sends a single request to the LLM. In contrast, Junie iterates on the task, making multiple LLM calls. This iterative approach in Junie leads to a higher overall quality that often outweighs its slower speed compared to AIA.
+AIA offers the advantage of speed, as it sends a single request to the LLM. In contrast, Junie iterates on the task, making multiple LLM calls. Junie's iterative method has the potential to produce more precise responses, but it might require more generation time than AIA.
