@@ -1,5 +1,5 @@
 ---
-date: 2021-07-29
+date: 2025-05-05
 title: Connect to a MongoDB database
 topics:
   - databases
@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: Access a MongoDB database from your JetBrains IDE and do the work in the same window.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/ZdaWB9C4UdU?list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW"
+video: "./tip.webm"
 obsoletes:
   - /go/tips/mongodb-connect-from-ide
 ---
