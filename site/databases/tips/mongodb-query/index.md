@@ -1,6 +1,6 @@
 ---
 date: 2025-05-05
-title: Query a MongoDB databases
+title: Querying Data from MongoDB Databases
 topics:
   - databases
   - mongodb
