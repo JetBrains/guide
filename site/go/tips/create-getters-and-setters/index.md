@@ -4,19 +4,15 @@ title: Create getters and setters for struct fields
 topics:
   - editing
   - go
-author: dlsniper
+author: mm
 subtitle: Generate the support code to access fields indirectly, via getters and setters
 thumbnail: ./thumbnail.png
 video: "./tip.webm"
 ---
 
-Do you need to access your struct fields via getters and setters? Add all the boilerplate code you need using the dedicated _Generate getter and setter_ action.
+Would you like to access your struct fields through getters and setters? Use the dedicated _Generate getter and setter_ action to automatically add all the necessary boilerplate code.
 
 **How to use:**
-Select a struct type, then press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and choose _Generate getter and setter_ from the list of available actions.
+Select a struct field, then press <kbd>⌥⏎</kbd> (macOS) / <kbd>Alt+Enter</kbd> (Windows/Linux) and choose _Generate getter and setter_ from the list of available actions.
 
 Choose which fields should have these methods generated, then press _OK_ to generate them.
-
-Choose the receiver name and receiver type then continue working on your code as usual.
-
-**Pro tip:** You can choose either all fields, or select the individual fields that need to have these methods generated.
