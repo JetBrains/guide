@@ -12,28 +12,16 @@ import {
 	LINK_RESOURCE,
 	TIP_RESOURCE,
 } from "../../src/resourceType";
-import GettingStartedSection from "../../_includes/pageelements/GettingStartedSection.11ty";
 
 const frontmatter: ChannelFrontmatter = {
 	title: "Artificial Intelligence",
-	subtitle: "From smart assistance to autonomous agents.",
+	subtitle: "Discover JetBrains AI Assistant\nand Full Line Code Completion.",
 	resourceType: "channel",
 	date: new Date(Date.UTC(2024, 2, 5)),
 	author: "hs",
 	logo: "thumbnail.svg",
 	hero: "/assets/splashes/ai.svg",
-	subnav: [
-		{
-			title: "JetBrains AI",
-			url: "https://www.jetbrains.com/ai/",
-			target: "_blank",
-		},
-		{
-			title: "Junie",
-			url: "https://www.jetbrains.com/junie/",
-			target: "_blank",
-		},
-	],
+	subnav: [{ title: "AI Assistant", url: "https://www.jetbrains.com/ai/" }],
 };
 
 class AIHomepage {
@@ -47,53 +35,24 @@ class AIHomepage {
 	render(this: LayoutContext, data: ChannelHomepageData): JSX.Element {
 		const channel: Channel = this.getResource(data.page.url) as Channel;
 
-		let aiaWhyVideoUrl = "https://www.youtube.com/watch?v=KqXRRZiCbNg";
-		const aiaHowTos = [
-			this.getResource("/ai/links/get-started-aia/kotlin/"),
-			this.getResource("/ai/links/get-started-aia/idea/"),
-			this.getResource("/ai/links/get-started-aia/phpstorm/"),
-			this.getResource("/ai/links/get-started-aia/pycharm/"),
-			this.getResource("/ai/links/get-started-aia/webstorm/"),
-			this.getResource("/ai/links/get-started-aia/goland/"),
-			this.getResource("/ai/links/get-started-aia/rider/"),
-		];
-
-		let junieWhyVideoUrl = "https://www.youtube.com/watch?v=RgkFSFIqOPw";
-		const junieHowTos = [
-			this.getResource("/ai/links/how-to-junie/kotlin/"),
-			this.getResource("/ai/links/how-to-junie/idea/"),
-			this.getResource("/ai/links/how-to-junie/pycharm/"),
-			this.getResource("/ai/links/how-to-junie/webstorm/"),
-			this.getResource("/ai/links/how-to-junie/goland/"),
-		];
-
 		const aiaResources = this.getResources({
-			resourceTypes: [LINK_RESOURCE, ARTICLE_RESOURCE],
-			customFilter: (r) => !!r.topics?.includes("learn-aia"),
+			resourceTypes: [LINK_RESOURCE, TIP_RESOURCE, ARTICLE_RESOURCE],
+			customFilter: (r) =>
+				!!r.topics?.includes("ai") && !!r.topics?.includes("aia"),
 		});
 
 		const junieResources = this.getResources({
-			resourceTypes: [LINK_RESOURCE, ARTICLE_RESOURCE],
+			resourceTypes: [LINK_RESOURCE, TIP_RESOURCE, ARTICLE_RESOURCE],
 			customFilter: (r) =>
-				!!r.topics?.includes("ai") && !!r.topics?.includes("learn-junie"),
+				!!r.topics?.includes("ai") && !!r.topics?.includes("junie"),
 		});
 
-		const communityResources = this.getResources({
-			resourceTypes: [LINK_RESOURCE, ARTICLE_RESOURCE],
+		const artificalIntelligenceResources = this.getResources({
+			resourceTypes: [LINK_RESOURCE, TIP_RESOURCE, ARTICLE_RESOURCE],
 			customFilter: (r) =>
-				!!r.topics?.includes("ai") && !!r.topics?.includes("ai-community"),
-		});
-
-		const tips = this.getResources({
-			resourceTypes: [TIP_RESOURCE],
-			customFilter: (r) =>
-				!!r.topics?.includes("aia") || !!r.topics?.includes("junie"),
-		});
-
-		const divingDeeperResources = this.getResources({
-			resourceTypes: [LINK_RESOURCE, ARTICLE_RESOURCE],
-			customFilter: (r) =>
-				!!r.topics?.includes("ai") && !!r.topics?.includes("deeper-ai"),
+				!!r.topics?.includes("ai") &&
+				!r.topics?.includes("aia") &&
+				!r.topics?.includes("junie"),
 		});
 
 		return (
@@ -106,82 +65,42 @@ class AIHomepage {
 					subtitleExtraClass={"has-text-white"}
 				/>
 
-				{aiaHowTos && aiaHowTos.length > 0 && (
-					<GettingStartedSection
-						title={`Get Started with AI Assistant`}
-						howToResources={aiaHowTos}
-						howToResourcesSubtitle={``}
-						howToResourcesSubtitleTip={``}
-						separator={false}
-						includeCardFooter={false}
-						sectionExtraClass={"has-background-purple has-text-white"}
-						description={
-							"AI Assistant brings context-aware, AI-driven features right into your JetBrains IDE to help you code faster, solve problems, and stay in flow. Powered by optimized language models, it handles everything from multiline code completion and test generation to refactoring, explaining errors, writing docs, resolving merge conflicts, and more. Whether you’re chatting, creating prompts, or working inline, it’s deeply integrated and always ready to assist — right where you need it most."
-						}
-						whyVideoUrl={aiaWhyVideoUrl}
-						learnMoreResources={aiaResources}
-						learnMoreResourcesSubtitle={`Master Problem-Solving with AI Assistant`}
-						learnMoreResourcesSubtitleTip={``}
-						learnMoreLink={`/tags/learn-aia/`}
-					/>
-				)}
-
-				{junieHowTos && junieHowTos.length > 0 && (
-					<GettingStartedSection
-						title={`Get Started with Junie`}
-						howToResources={junieHowTos}
-						howToResourcesSubtitle={``}
-						howToResourcesSubtitleTip={``}
-						separator={false}
-						includeCardFooter={false}
-						sectionExtraClass={"has-background-success"}
-						description={
-							"Meet Junie, your autonomous coding partner — built to help you delegate, iterate, and review. Assign tasks in natural language, and Junie handles them while you stay focused on what matters.\n" +
-							"\n" +
-							"It learns your codebase, adapts to your style, and refines results with every interaction. You stay in control — reviewing, adjusting, and moving faster with cleaner, more consistent code."
-						}
-						whyVideoUrl={junieWhyVideoUrl}
-						learnMoreResources={junieResources}
-						learnMoreResourcesSubtitle={`Master Problem-Solving with Junie`}
-						learnMoreResourcesSubtitleTip={``}
-						learnMoreLink={`/tags/learn-junie/`}
-					/>
-				)}
-
-				{communityResources && communityResources.length > 0 && (
+				{aiaResources && aiaResources.length > 0 && (
 					<ListingSection
-						title={`JetBrains AI in the Community`}
-						resources={communityResources.slice(0, 4)}
+						title={`AI Assistant`}
+						resources={aiaResources.slice(0, 4)}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={
-							communityResources.length > 4 ? `/tags/ai-community/` : undefined
-						}
+						moreLink={aiaResources.length > 4 ? `/tags/aia/` : undefined}
+						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
 
-				{tips && (
+				{junieResources && junieResources.length > 0 && (
 					<ListingSection
-						title={`Latest Tips`}
-						resources={tips.slice(0, 4)}
+						title={`Junie`}
+						resources={junieResources.slice(0, 4)}
 						separator={false}
 						includeCardFooter={false}
-						moreLink={tips.length > 4 ? `${channel.url}tips/` : undefined}
-						sectionExtraClass={"has-background-grey-light"}
+						moreLink={junieResources.length > 4 ? `/tags/junie/` : undefined}
+						sectionExtraClass={"has-background-grey-lighter"}
 					/>
 				)}
-
-				{divingDeeperResources && divingDeeperResources.length > 0 && (
-					<ListingSection
-						title={`Diving Deeper into AI`}
-						resources={divingDeeperResources.slice(0, 4)}
-						separator={false}
-						includeCardFooter={false}
-						moreLink={
-							divingDeeperResources.length > 4 ? `/tags/deeper-ai/` : undefined
-						}
-					/>
-				)}
+				{artificalIntelligenceResources &&
+					artificalIntelligenceResources.length > 0 && (
+						<ListingSection
+							title={`Artificial Intelligence`}
+							resources={artificalIntelligenceResources}
+							separator={false}
+							includeCardFooter={false}
+							moreLink={
+								artificalIntelligenceResources.length > 4
+									? `/tags/ai/`
+									: undefined
+							}
+							sectionExtraClass={"has-background-grey-lighter"}
+						/>
+					)}
 			</BaseLayout>
 		);
 	}

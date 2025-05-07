@@ -4,7 +4,6 @@ title: "Prompt AI Directly in the Editor"
 topics:
   - ai
   - aia
-  - deeper-ai
 author: jetbrains
 subtitle: With PyCharm, you now have the support of AI Assistant at your fingertips. You can interact with it right where you do most of your work – in the editor.
 thumbnail: ./thumbnail.jpg

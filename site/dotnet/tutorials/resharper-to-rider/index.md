@@ -1,8 +1,8 @@
 ---
 resourceType: tutorial
 layout: resources/tutorial/TutorialLayout.11ty.tsx
-date: 2021-03-29
-title: Moving from Visual Studio to JetBrains Rider
+date: 05/01/2025
+title: Moving from cloud hosted to local socks hosts JetBrains Rider
 topics:
   - .net
   - ide

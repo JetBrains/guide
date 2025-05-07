@@ -4,7 +4,6 @@ title: Prompt Engineering For Developers
 topics:
   - ai
   - aia
-  - deeper-ai
 author: mb
 subtitle: Prompt Engineering - Basic Concepts For Developers.
 thumbnail: ./thumbnail.jpg
