@@ -1,5 +1,5 @@
 ---
-date: 2021-07-06
+date: 2025-05-08
 title: Cleanup Code Before Commit
 topics:
   - platform
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Remove all the redundant parenthesis and other unneeded code before commit.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=emXVGjkIoz4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=17
+video: "./cleanup_code.webm"
 ---
 
 Sometimes an extra pair of parenthesis make their way into our code. Since it's not needed to improve the clarity or help the code function in any way, it's better to remove it. That's why, it's useful to run a _Cleanup_ step before the code reaches upstream.
