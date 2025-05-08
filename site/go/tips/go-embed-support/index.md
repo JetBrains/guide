@@ -1,5 +1,5 @@
 ---
-date: 2021-05-24
+date: 2025-05-08
 title: "Support for go:embed Directive"
 topics:
   - editing
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Embed files and folders into your binaries without using an external tool.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=Dv28uFbn7I0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=145
+video: "./go_embed.webm"
 ---
 
 Go 1.16 introduced a new feature called _go:embed_.
