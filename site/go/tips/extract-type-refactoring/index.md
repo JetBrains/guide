@@ -1,5 +1,5 @@
 ---
-date: 2021-05-24
+date: 2025-05-10
 title: Extract Type Refactoring
 topics:
   - go
@@ -8,8 +8,7 @@ author: dlsniper
 subtitle: >-
   Extract a type into its own definition and improve the  reusability in your code.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=fFJi3OSSWns&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=44
+video: "./extract_type.webm"
 ---
 
 If you have an anonymous type defined, you can extract it into a
