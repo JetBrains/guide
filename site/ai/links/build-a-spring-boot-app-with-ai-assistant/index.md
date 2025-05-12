@@ -4,7 +4,6 @@ title: Build a Spring Boot App with AI Assistant
 topics:
   - ai
   - aia
-  - learn-aia
 author: md
 subtitle: Build a small Java Spring Boot web application in IntelliJ IDEA with the help of JetBrains AI Assistant.
 thumbnail: ./thumbnail.png
