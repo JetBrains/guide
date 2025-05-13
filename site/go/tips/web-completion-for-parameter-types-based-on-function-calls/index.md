@@ -1,5 +1,5 @@
 ---
-date: 2021-07-06
+date: 2025-05-13
 title: Completion for Parameter Types
 topics:
   - completion
@@ -8,8 +8,7 @@ author: dlsniper
 subtitle: >-
   Better code completion makes working on modern web frontends faster and more enjoyable.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=UKtT9tbt0Xg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=28
+video: "./parameter_completion.webm"
 ---
 
 The IDE will show you completion suggestions based on the type used in the function call for the parameters in the function body.
