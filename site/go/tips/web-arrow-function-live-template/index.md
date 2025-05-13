@@ -1,5 +1,5 @@
 ---
-date: 2021-07-06
+date: 2025-05-13
 title: Live Template for Arrow Function
 topics:
   - editing
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Create arrow functions quicker thanks to builtin customizable templates.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=C-eBw3dcq_4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=57
+video: "./live_template_arrow.webm"
 ---
 
 Live templates are a great way to quickly write common/repeating code. Arrow functions are no exception from this, so we introduced the _arf_ live template to create them.
