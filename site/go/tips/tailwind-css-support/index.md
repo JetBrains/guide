@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Enjoy working with Tailwind CSS from the comfort of your IDE.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=tEIGlCXU7Zc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=140
+video: "./tailwindcss.webm"
 ---
 
 Open any CSS file and start typing either `@tailwind` directives or CSS statements such as `@apply font-bold bg-blue-400;`
