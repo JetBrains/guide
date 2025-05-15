@@ -1,5 +1,5 @@
 ---
-date: 2020-12-03
+date: 2025-05-15
 title: Live Template to Create Test Function
 topics:
   - editing
@@ -8,8 +8,7 @@ topics:
 author: dlsniper
 subtitle: Write tests faster thanks to the builtin func Test live template.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=O3yaRncX-5I&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=55
+video: "./live_template_create_test.webm"
 ---
 
 Place the cursor at the file level in a \__test.go_ file and start typing _func_. Select the **Test** option from the suggested list and then complete this by writing the test name you desire.
