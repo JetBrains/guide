@@ -32,7 +32,6 @@ playlistItems:
   - /tips/conditional-breakpoints/
   - /go/tips/evaluate-expression/
   - /go/tips/split-screen-without-tabs/
-  - /go/tips/run-single-test/
   - /go/tips/auto-run-tests/
   - /go/tips/run-tests-with-coverage/
   - /tips/clone-from-github/
