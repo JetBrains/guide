@@ -1,16 +1,16 @@
 ---
-date: 2020-02-05
+date: 2025-05-16
 title: Implement an Interface
 topics:
   - editing
   - go
-author: dlsniper
+author: mm
 subtitle: Implementing an interface is a common task that Go programmers need to do.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=TYF4sljOH4A&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=65
+video: "./implement_interface.webm"
 ---
 
-GoLand offers the option to quickly implement an interface using the _Implement methods_ action.
+GoLand offers multiple options to quickly implement an interface using:
 
-<kbd>^I</kbd> (macOS) / <kbd>Ctrl+I (Windows/Linux)</kbd>, and then select either to generate a new type or use an existing type from the current file.
+- _Implement methods_ action. Use the shortcut <kbd>^I</kbd> (macOS) / <kbd>Ctrl+I (Windows/Linux)</kbd>, and then select either to generate a new type or use an existing type from the current file.
+- use **Implement Interface** inlay hints.

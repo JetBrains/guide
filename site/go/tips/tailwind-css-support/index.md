@@ -1,5 +1,5 @@
 ---
-date: 2020-12-03
+date: 2025-05-16
 title: Tailwind CSS Support
 topics:
   - editing
