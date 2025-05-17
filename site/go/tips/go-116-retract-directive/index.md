@@ -1,5 +1,5 @@
 ---
-date: 2020-12-03
+date: 2025-05-17
 title: Retract Directive
 topics:
   - editing
@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: Retract specific versions of your modules.
 thumbnail: ./thumbnail.png
-screenshot: ./screenshot.png
+screenshot: ./retract.png
 ---
 
 From the Go documentation for [the retract directive](https://golang.org/ref/mod#go-mod-file-retract):

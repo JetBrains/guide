@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-17
 title: Structure Tags
 topics:
   - editing
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Quickly add tags to any fields from structures.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=I-XxOL4bFB0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=143
+video: "./struct_tags.webm"
 ---
 
 GoLand helps you add struct tags using custom live templates built into the IDE.

@@ -1,5 +1,5 @@
 ---
-date: 2020-10-15
+date: 2025-05-17
 title: Move Block Up/Down Using Keyboard
 topics:
   - editing
@@ -10,8 +10,7 @@ seealso:
   - title: "(documentation) GoLand Help - Move Statements"
     href: "https://www.jetbrains.com/help/go/working-with-source-code.html#move-statements"
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=1ip3lu6wgSc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=84
+video: "./move_block_updown.webm"
 ---
 
 _Move lines and blocks, up or down, using the keyboard._
