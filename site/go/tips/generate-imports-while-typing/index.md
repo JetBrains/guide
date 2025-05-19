@@ -1,5 +1,5 @@
 ---
-date: 2020-10-15
+date: 2025-05-19
 title: Generate Imports While Typing
 topics:
   - editing
@@ -13,8 +13,7 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/go/auto-completing-code.html#basic_completion
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=XTk7QlnVM5c&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=69
+video: "./generate_imports.webm"
 ---
 
 _Tired of stopping your coding to go write an import?_

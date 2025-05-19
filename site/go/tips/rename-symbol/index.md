@@ -1,5 +1,5 @@
 ---
-date: 2020-10-15
+date: 2025-05-19
 title: Rename Symbol
 topics:
   - platform
@@ -10,8 +10,7 @@ seealso:
   - title: (documentation) GoLand Help - Renaming a symbol
     href: "https://www.jetbrains.com/help/go/rename-refactorings.html"
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=SC1etcii7IE&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=118
+video: "./rename_symbol.webm"
 ---
 
 _Refactor names quickly, across all projects at once._

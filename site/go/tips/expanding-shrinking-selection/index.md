@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-19
 title: Expanding/Shrinking Selection
 topics:
   - editing
@@ -11,8 +11,7 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/go/basic-editing-procedures.html#quick_popups
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=VkCGQHH_iXw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=46
+video: "./extend_shrink_selection.webm"
 ---
 
 Use _Extend Selection_ to quickly select parts of your code using semantic knowledge about it.
