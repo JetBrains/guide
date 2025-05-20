@@ -144,3 +144,14 @@ Try this prompt: `Add integration tests for all controller methods.`
 ![add-tests.png](add-tests.png)
 
 Once Junie is Done, it will automatically run all the tests.
+
+### Step 5: Using guidelines to fine-tune code generation
+
+You can define your coding conventions and best practices in a `.junie/guidelines.md` file located at the root of your project.
+Junie will automatically follow these guidelines when generating code.
+
+Refer to the [junie-guidelines](https://github.com/JetBrains/junie-guidelines) repository for a collection of
+recommended guidelines across various technologies.
+
+By consolidating your project's coding standards in the `.junie/guidelines.md` file,
+you enable Junie to consistently apply them without needing to include the same instructions in every prompt.
