@@ -1,5 +1,5 @@
 ---
-date: 2020-10-15
+date: 2025-05-20
 title: Disable Tabs
 topics:
   - go
@@ -10,8 +10,7 @@ seealso:
   - title: (documentation) GoLand Help - Managing Editor Tabs
     href: "https://www.jetbrains.com/help/go/managing-editor-tabs.html"
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=A_vYG-GWmpw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=51
+video: "./tab_placement.webm"
 ---
 
 _Want a cleaner UI with less noise to juggle in your head?_
@@ -20,4 +19,4 @@ There are better choices for moving between files than tabs. Let's turn them off
 
 Tabs are a great way to focus on the few files for a task. However, they have some downsides. Try disabling your tabs as a first step towards a more-focused, keyboard-centric workflow.
 
-Control the tab placement to position where the tabs are in the IDE. Invoke **Tab placement | None** to hide them completely.
+Control the tab placement to the position where the tabs are in the IDE. Invoke **Tab placement | None** to hide them completely.
