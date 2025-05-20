@@ -1,5 +1,5 @@
 ---
-date: 2020-10-15
+date: 2025-05-20
 title: Add Line After/Before
 topics:
   - editing
@@ -10,11 +10,10 @@ seealso:
   - title: "(documentation) GoLand Help - Move Statements"
     href: "https://www.jetbrains.com/help/go/working-with-source-code.html#move-statements"
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=aQMRNp3ARTc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=8
+video: "./add_line_after_before.webm"
 ---
 
-_Language-aware line adding, no muss no fuss._
+_Language-aware line adding, no muss, no fuss._
 
 Press <kbd>⇧⏎</kbd> (macOS) / <kbd>Shift+Enter</kbd> (Windows/Linux), and you can add a line and place the cursor on it.
 
