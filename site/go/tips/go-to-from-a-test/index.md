@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-21
 title: Go To or From a Test
 topics:
   - go
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Navigate to and from a test subject like a method or function.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=DV_OBMaXvMc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=67
+video: "./go_to_from_test.webm"
 ---
 
 Use the **Navigate | Test** feature to quickly go to a test for an element.

@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-21
 title: Generate a Test for an Element
 topics:
   - editing
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Automate test generation
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=q4C9vALS4oc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=70
+video: "./test_for_element.webm"
 ---
 
 GoLand offers the option to quickly generate a test.
