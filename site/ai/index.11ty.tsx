@@ -15,8 +15,9 @@ import {
 import GettingStartedSection from "../../_includes/pageelements/GettingStartedSection.11ty";
 
 const frontmatter: ChannelFrontmatter = {
-	title: "Artificial Intelligence",
-	subtitle: "From smart assistance to autonomous agents.",
+	title: "JetBrains AI Guide: How to Use AI in Your IDE",
+	subtitle:
+		"Learn how to use JetBrains AI features – from smart coding assistance to autonomous agents.",
 	resourceType: "channel",
 	date: new Date(Date.UTC(2024, 2, 5)),
 	author: "hs",
@@ -24,8 +25,8 @@ const frontmatter: ChannelFrontmatter = {
 	hero: "/assets/splashes/ai.svg",
 	subnav: [
 		{
-			title: "JetBrains AI",
-			url: "https://www.jetbrains.com/ai/",
+			title: "JetBrains AI Assistant",
+			url: "https://www.jetbrains.com/ai-assistant/",
 			target: "_blank",
 		},
 		{
