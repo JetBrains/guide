@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-22
 title: Navigate to File
 topics:
   - go
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Jump to a file without using the Project Tool Window, and your mouse
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=tqbdUcTuEKo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=80
+video: "./8.webm"
 ---
 
 The _Navigate to file_ feature allows us to search for a file by name, even if we know only part of it.

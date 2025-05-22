@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-22
 title: Select all Occurrences in a File
 topics:
   - editing
@@ -11,8 +11,7 @@ seealso:
     href: >-
       https://blog.jetbrains.com/go/2018/12/07/refactorings-in-goland-rename-refactoring/
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=CriTJ6kmeaQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=104
+video: "./11.webm"
 ---
 
 Do you want to select all the occurrences of a piece of code?
