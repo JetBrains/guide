@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-22
 title: Recent Locations
 topics:
   - go
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Jump back and forth between files using code snippets you've recently seen.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=2aI1BhIhjs4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=92
+video: "./10.webm"
 ---
 
 The **Recent Locations** pop-up allows you to search for a specific change or recently viewed piece of code.
