@@ -1,5 +1,5 @@
 ---
-date: 2020-10-15
+date: 2025-05-22
 title: Quick Documentation
 topics:
   - editing
@@ -7,11 +7,10 @@ topics:
 author: dlsniper
 subtitle: View arguments and documentation without interrupting your flow.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=vGuov3VZeQw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=93
+video: "./1.webm"
 ---
 
-_Want to learn what a symbol is about, without going to a browser?_
+_Want to learn what a symbol is about without going to a browser?_
 
 The IDE knows the symbol, its argument names/types/defaults, the documentation it has. Let it give you a non-interrupting window, letting you get back to work.
 
