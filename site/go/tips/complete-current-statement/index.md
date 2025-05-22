@@ -1,5 +1,5 @@
 ---
-date: 2020-03-16
+date: 2025-05-22
 title: Complete Current Statement
 topics:
   - completion
@@ -11,8 +11,7 @@ seealso:
   - title: (documentation) GoLand Help - Autocompleting code
     href: "https://blog.jetbrains.com/go/2019/01/17/code-completion-in-goland/"
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=Nu1BclhDykk&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=33
+video: "./5.webm"
 ---
 
 GoLand can complete statements and add required trailing commas for any composite literals (like struct, slice, etc.), and even place caret in a position where you can just start typing the next statement.

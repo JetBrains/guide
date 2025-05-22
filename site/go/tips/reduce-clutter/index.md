@@ -1,5 +1,5 @@
 ---
-date: 2020-10-15
+date: 2025-05-22
 title: Reduce Clutter by Disabling Tools
 topics:
   - go
@@ -10,8 +10,7 @@ seealso:
   - title: (documentation) GoLand Help - Configuring Menus and Toolbars
     href: "https://www.jetbrains.com/help/go/configuring-menus-and-toolbars.html"
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=6UheZkHpTeo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=91
+video: "./2.webm"
 ---
 
 Use **View | Appearance: Tool Window Bars** to toggle all the IDE tool windows visibility.

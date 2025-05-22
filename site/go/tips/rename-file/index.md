@@ -1,5 +1,5 @@
 ---
-date: 2020-10-15
+date: 2025-05-22
 title: Rename a File and its References
 topics:
   - go
@@ -10,8 +10,7 @@ seealso:
   - title: (documentation) GoLand Help - Renaming a file or directory
     href: "https://www.jetbrains.com/help/go/rename-refactorings.html"
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=xDCbeCV3orw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=102
+video: "./3.webm"
 ---
 
 _Rename files with peace of mind._

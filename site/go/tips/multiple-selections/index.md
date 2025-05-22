@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-22
 title: Multiple Selections
 topics:
   - editing
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Select multiple items faster with multiple carets.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=QU9WvVN1hCo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=83
+video: "./6.webm"
 ---
 
 Multiple selections is a very powerful feature in the editor, that lets you quickly select and edit multiple pieces of code at once.
