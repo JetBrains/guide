@@ -1,5 +1,5 @@
 ---
-date: 2019-11-27
+date: 2025-05-23
 title: Completion with the Tab key
 topics:
   - completion
@@ -9,8 +9,7 @@ author: dlsniper
 subtitle: >-
   A small, but handy feature that makes it a little easier to complete symbol names.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=v-SK8BYbcaw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=27
+video: "./completion_with_tab_key.webm"
 ---
 
 This will overwrite the identifier at the caret, making it easy to quickly replace identifiers in code.

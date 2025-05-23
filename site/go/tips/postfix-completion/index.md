@@ -1,5 +1,5 @@
 ---
-date: 2019-11-27
+date: 2025-05-23
 title: Postfix Completion
 topics:
   - completion
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Transform an expression into another one.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=93OeJLuLoKA&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=99
+video: "./postfix_completion.webm"
 ---
 
 _Postfix Completion_ lets you transform an expression into another one, based on the postfix you specify after the dot, the current context, and the expression type.
