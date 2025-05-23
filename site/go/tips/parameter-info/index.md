@@ -1,5 +1,5 @@
 ---
-date: 2019-11-27
+date: 2025-05-23
 title: View Parameter Info
 topics:
   - editing
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Quickly see function arguments and argument types.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=e0WVojUB020&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=134
+video: "./view_parameter_info.webm"
 ---
 
 Have a function with lots of arguments? Or a struct with many fields?

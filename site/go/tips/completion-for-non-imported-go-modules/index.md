@@ -1,5 +1,5 @@
 ---
-date: 2019-11-27
+date: 2025-05-23
 title: Completion for non-imported Go Modules
 topics:
   - completion
@@ -8,11 +8,10 @@ topics:
 author: dlsniper
 subtitle: Import a module in to your project.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=cPn30TtZRO0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=30
+video: "./completion_non_go_modules.webm"
 ---
 
-GoLand provides code completion suggestions for all modules in the modules cache as you type.
+GoLand provides code completion suggestions for all modules in the module cache as you type.
 
 Even if a module has never been imported and used in your project, GoLand is still aware of it and will take care of you.
 
