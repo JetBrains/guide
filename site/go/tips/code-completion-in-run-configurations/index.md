@@ -1,5 +1,5 @@
 ---
-date: 2019-11-27
+date: 2025-05-24
 title: Code completion in Run Configurations
 topics:
   - completion
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Run configurations also have code completion capabilities.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=dyUsxQJLFZQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=13
+video: "./completion_run_configuration.webm"
 ---
 
 When you're editing _Run/Debug Configurations_, code completion will automatically appear to help you, for example, type a package name.
