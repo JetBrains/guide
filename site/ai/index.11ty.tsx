@@ -21,7 +21,7 @@ const frontmatter: ChannelFrontmatter = {
 	resourceType: "channel",
 	date: new Date(Date.UTC(2024, 2, 5)),
 	author: "hs",
-	logo: "thumbnail.svg",
+	logo: "thumbnail.png",
 	hero: "/assets/splashes/ai.svg",
 	subnav: [
 		{

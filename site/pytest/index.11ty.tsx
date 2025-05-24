@@ -19,7 +19,7 @@ const frontmatter: ChannelFrontmatter = {
 	resourceType: "channel",
 	date: new Date(Date.UTC(2024, 2, 19)),
 	author: "hs",
-	logo: "thumbnail.svg",
+	logo: "thumbnail.png",
 	hero: "/assets/splashes/pytest.svg",
 	subnav: [
 		{ title: "pytest", url: "https://www.jetbrains.com/help/idea/pytest.html" },

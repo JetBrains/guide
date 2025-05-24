@@ -19,7 +19,7 @@ const frontmatter: ChannelFrontmatter = {
 	accent: "primary",
 	icon: "fa-brands fa-java",
 	hero: "/assets/splashes/java.svg",
-	logo: "thumbnail.svg",
+	logo: "thumbnail.png",
 	subnav: [
 		{ title: "Download", url: "https://www.jetbrains.com/idea/" },
 		{ title: "Blog", url: "https://blog.jetbrains.com/idea/" },
