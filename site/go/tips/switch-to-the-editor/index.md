@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-26
 title: Switch to the Editor
 topics:
   - editing
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Get the focus back to the editor regardless what is currently focused.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=NNWMn6cUPTg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=141
+video: "./switch_to_editor.webm"
 ---
 
 There are a lot of (tool) windows opening or appearing when using the IDE.
