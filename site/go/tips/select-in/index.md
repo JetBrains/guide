@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-26
 title: Select In
 topics:
   - go
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Select the current file in the Project or Changes view and more
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=X-e4Vnm4Yy4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=155
+video: "./select_in.webm"
 ---
 
 The _Select in..._ action helps you select the currently selected file in a particular tool window.

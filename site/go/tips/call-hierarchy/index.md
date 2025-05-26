@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-26
 title: Working with the Call Hierarchy
 topics:
   - go
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Analyze call trees for functions or methods
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=D86atdj1i9U&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=20
+video: "./call_hierarchy.webm"
 ---
 
 **Call Hierarchy** allows you to quickly see all the places where a function or method is used.

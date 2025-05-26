@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-26
 title: Custom Structure Tags
 topics:
   - editing
@@ -10,8 +10,7 @@ seealso:
   - title: (documentation) GoLand Help - Creating custom structure tags
     href: "https://www.jetbrains.com/help/go/settings-live-templates.html"
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=VMuwBmWW2QA&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=37
+video: "./custom_structure_tags.webm"
 ---
 
 GoLand has a few _Live Templates_ builtin for struct tags, such as _json_ or _xml_.
