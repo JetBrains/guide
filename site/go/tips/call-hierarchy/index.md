@@ -6,7 +6,7 @@ topics:
   - navigation
 author: dlsniper
 subtitle: Analyze call trees for functions or methods
-thumbnail: ./thumbnail.png
+thumbnail: ./thumbnail.jpg
 video: "./call_hierarchy.webm"
 ---
 
