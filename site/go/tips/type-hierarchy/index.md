@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-26
 title: Type Hierarchy
 topics:
   - go
@@ -8,8 +8,7 @@ author: dlsniper
 subtitle: >-
   Discover what types implement an interface or what interfaces are implemented by a type.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=LODWfMNOYbk&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=139
+video: "./type_hierarchy.webm"
 ---
 
 The _Type Hierarchy_ feature allows you to answer questions such as "What interfaces a type implements?" or "What the types are that implement an interface?"

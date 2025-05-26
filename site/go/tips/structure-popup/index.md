@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-26
 title: File Structure Popup
 topics:
   - go
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: View the file or whole package structure and navigate to any element.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=1vrZkrl1T2U&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=145
+video: "./file_structure_popup.webm"
 ---
 
 The File Structure popup window allows you to get an overview of all the elements defined in a file or a package.
