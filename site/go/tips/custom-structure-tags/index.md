@@ -9,7 +9,7 @@ subtitle: Add custom tags to any fields from structures.
 seealso:
   - title: (documentation) GoLand Help - Creating custom structure tags
     href: "https://www.jetbrains.com/help/go/settings-live-templates.html"
-thumbnail: ./thumbnail.png
+thumbnail: ./thumbnail.jpg
 video: "./custom_structure_tags.webm"
 ---
 
