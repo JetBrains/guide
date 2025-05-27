@@ -4,7 +4,7 @@ title: Basic Code Completion
 topics:
   - completion
   - go
-author: mm
+author: dlsniper
 subtitle: Code completion out-of-the-box that helps you get the job done.
 thumbnail: ./thumbnail.png
 video: "./basic_code_completion.webm"
