@@ -14,6 +14,8 @@ linkURL: "https://youtu.be/Q7mS1VHm3Yw"
 
 It's an absolute privilege to work with Dr Jodie Burchell here at JetBrains, so I was delighted to spend a couple of hours watching her in-depth course on how to build a semantic book recommender from start to finish. In this article I'll share my thoughts and give you a brief overview of the course so you can decide if you're going to dive in!
 
+Before I go any further, here's the good stuff, [the code](https://github.com/t-redactyl/llm-semantic-book-recommender)!
+
 Jodie doesn't assume any prior knowledge (speaking my language) beyond a bit of Python and an even smaller bit of LLM knowledge; she starts off by setting the wider scene of what we're going to work through:
 
 - Prepare Text Data
