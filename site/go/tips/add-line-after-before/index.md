@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 video: "./add_line_after_before.webm"
 ---
 
-_Language-aware line adding, no muss, no fuss._
+_Language-aware line adding, no mess, no fuss._
 
 Press <kbd>⇧⏎</kbd> (macOS) / <kbd>Shift+Enter</kbd> (Windows/Linux), and you can add a line and place the cursor on it.
 

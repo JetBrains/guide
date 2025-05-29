@@ -6,7 +6,7 @@ topics:
   - web
 author: mm
 subtitle: Quickly inspect APIs and make HTTP requests to services in a reusable manner.
-thumbnail: ./thumbnail.png
+thumbnail: ./thumbnail.jpg
 video: "./http_requests.webm"
 ---
 
