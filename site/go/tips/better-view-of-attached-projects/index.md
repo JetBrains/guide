@@ -10,4 +10,4 @@ thumbnail: ./thumbnail.png
 video: "./multiple_projects.webm"
 ---
 
-_Stop switching between IDE windows and keep all your projects in the same window._
+Stop switching between IDE windows and keep all your projects in the same window.
