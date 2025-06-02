@@ -9,4 +9,4 @@ thumbnail: ./thumbnail.png
 screenshot: ./k8s_namespace.png
 ---
 
-If you don't have access to namespace resources due to the role-based access control, you can set up your custom namespace in _Settings/Preferences |Build, Execution, Deployment | Kubernetes | Namespaces_.
+If you don't have access to namespace resources due to the role-based access control, you can set up your custom namespace in **Settings |Build, Execution, Deployment | Kubernetes | Namespaces**.
