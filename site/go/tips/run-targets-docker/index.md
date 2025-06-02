@@ -17,7 +17,7 @@ This feature lets you quickly test your changes in the actual environment the ap
 
 If a target already exists, select it from the _Run on_ field in a _Run Configuration_, then run that configuration.
 
-If no targets exist, then click on **Manage Targets**, next to the _Run on_ field.
+If no targets exist, then click on **Manage Targets**.
 
 Then, click <kbd>+</kbd> (macOS) / <kbd>Plus</kbd> (Windows/Linux) and select in which environment you want to run the application or test.
 

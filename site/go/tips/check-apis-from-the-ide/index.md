@@ -11,4 +11,5 @@ video: "./http_requests.webm"
 ---
 
 **How to use:**
-Create a file with _.http_ extension in your project. Then, type the request you want to make.
+
+Create a file with an _.http_ extension in your project. Enter the desired request, then click the green play icon to execute it.
