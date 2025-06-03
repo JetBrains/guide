@@ -1,5 +1,5 @@
 ---
-date: 2019-11-27
+date: 2025-05-23
 title: Exclude Items from Auto-imports and Completion
 topics:
   - completion
@@ -8,10 +8,9 @@ topics:
 author: dlsniper
 subtitle: Exclude certain paths from auto-import and completion.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=HLRiJvadfXo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=46
+video: "./exclude_items_autoimports.webm"
 ---
 
-Exclude undesired imports from being automatically imported or added to completion list.
+Exclude undesired imports from being automatically imported or added to a completion list.
 
 In **Settings/Preferences | Go | Imports** you can add as many as you want import statements that will be excluded from code completion and auto-import.

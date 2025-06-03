@@ -1,5 +1,5 @@
 ---
-date: 2020-10-15
+date: 2025-05-17
 title: Optimize Imports
 topics:
   - editing
@@ -13,8 +13,7 @@ seealso:
   - title: (documentation) GoLand Help - Creating and Optimizing Imports
     href: "https://www.jetbrains.com/help/go/creating-and-optimizing-imports.html"
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=6wZnk41gVEg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=73
+video: "./optimize_imports.webm"
 ---
 
 _Optimize Imports_ helps you deal with unsorted imports and unused imports.

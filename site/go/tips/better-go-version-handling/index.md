@@ -1,5 +1,5 @@
 ---
-date: 2021-07-06
+date: 2025-05-06
 title: Declare a Targeted Go Version in go.mod
 topics:
   - editing
@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: The IDE is aware of targeted Go versions so you can make the most of them
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/vUt-WAYY4cw"
+video: "./tip.webm"
 ---
 
 The IDE reads the _go_ directive in the _go.mod_ file when it analyzes files.

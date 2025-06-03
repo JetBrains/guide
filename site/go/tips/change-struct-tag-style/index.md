@@ -1,5 +1,5 @@
 ---
-date: 2021-05-24
+date: 2025-05-10
 title: Change Struct Tag Style
 topics:
   - editing
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Quickly change different styles of the struct tags.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=dYDFUADPp1Q&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=19
+video: "./change_struct_tag_style.webm"
 ---
 
 Need to change the case of struct tag keys?

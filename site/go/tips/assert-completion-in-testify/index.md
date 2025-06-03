@@ -1,5 +1,5 @@
 ---
-date: 2020-12-03
+date: 2025-05-13
 title: Assert Completion in Testify
 topics:
   - go
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Write testify asserts faster thanks to the IDE smartness.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=NrG8jsuxb1U&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=7
+video: "./assert_completion_testify.webm"
 ---
 
 Type the _assert_ function call and let the IDE automatically fill the _testing.T_ parameter in the assert function call.

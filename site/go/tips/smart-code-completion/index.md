@@ -1,5 +1,5 @@
 ---
-date: 2019-11-27
+date: 2025-05-23
 title: Smart Code Completion
 topics:
   - completion
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Let code completion help you out in GoLand.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=smUS4hztnTI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=150
+video: "./smart_code_completion.webm"
 ---
 
 _Smart code completion_ narrows down the matches to quickly give you a list of useful values.

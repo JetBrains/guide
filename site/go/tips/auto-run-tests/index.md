@@ -1,5 +1,5 @@
 ---
-date: 2020-10-15
+date: 2025-05-15
 title: Auto-Run Tests
 topics:
   - platform
@@ -11,8 +11,7 @@ seealso:
   - title: (documentation) GoLand Help - Test Runner Tab
     href: "https://www.jetbrains.com/help/go/test-runner-tab.html#Test_Runner_Tab.xml"
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=1DMiHVvRdZc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=3
+video: "./auto-tests.webm"
 ---
 
 Test-driven development (TDD) means always run your tests.

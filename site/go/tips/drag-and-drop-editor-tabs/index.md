@@ -1,5 +1,5 @@
 ---
-date: 2020-12-03
+date: 2025-05-13
 title: Drag & Drop Editor Tabs
 topics:
   - platform
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Change how the editor tabs are grouped or split using drag and drop.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=tBWqmQ21eBI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=49
+video: "./drag_drop.webm"
 ---
 
 Move the editor tabs to form what layout you need, whenever you need them to.

@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-22
 title: Navigate Between Open Files
 topics:
   - go
@@ -11,8 +11,7 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/go/basic-editing-procedures.html#quick_popups
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=_2cYHEMCRsA&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=82
+video: "./7.webm"
 ---
 
 The _Switcher_ allows you to quickly move between open files during your editing session.

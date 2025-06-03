@@ -1,5 +1,5 @@
 ---
-date: 2021-05-24
+date: 2025-05-08
 title: Create Missing Struct Types with all Fields
 topics:
   - editing
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Prototype your code then worry about creating the types
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=OKfYRk3nO0s&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=39
+video: "./missing_struct.webm"
 ---
 
 Place the cursor on a type that's not yet defined but used.

@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-22
 title: Show /usages
 topics:
   - go
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Quickly discover the usages of the element your cursor is at
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=jlP26JUFE4o&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=152
+video: "./12.webm"
 ---
 
 The Show usages feature allows you to quickly answer the question "Where's this element used?"

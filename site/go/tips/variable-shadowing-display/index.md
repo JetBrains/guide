@@ -1,5 +1,5 @@
 ---
-date: 2020-12-03
+date: 2025-05-16
 title: Detect Variable Shadowing While Writing Go Code
 topics:
   - editing

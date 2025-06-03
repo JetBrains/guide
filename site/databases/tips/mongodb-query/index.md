@@ -1,14 +1,13 @@
 ---
-date: 2021-07-29
-title: Query a MongoDB databases
+date: 2025-05-05
+title: Querying Data from MongoDB Databases
 topics:
   - databases
   - mongodb
 author: dlsniper
 subtitle: Run any queries you want against the database inside your JetBrains IDE.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=BPNvTRaRJ2I&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=110
+video: "./tip.webm"
 obsoletes:
   - /go/tips/mongodb-query/
 ---

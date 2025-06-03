@@ -1,5 +1,5 @@
 ---
-date: 2021-05-24
+date: 2025-05-08
 title: Handle Go Errors by Using a Postfix Completion
 topics:
   - completion
@@ -8,8 +8,7 @@ author: dlsniper
 subtitle: >-
   Keep writing code as you would and use the postfix completion to generate the boilerplate.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=3OYoV4mDC1s&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=67
+video: "./go_error_postfix.webm"
 ---
 
 Press **. (dot)** after the function/method call and continue to type the _varCheckError_, or simply _vce_, postfix completion.

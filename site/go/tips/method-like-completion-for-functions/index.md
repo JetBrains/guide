@@ -1,5 +1,5 @@
 ---
-date: 2019-11-27
+date: 2025-05-23
 title: Method-like Completion for Functions
 topics:
   - completion
@@ -8,8 +8,7 @@ author: dlsniper
 subtitle: >-
   Completion for searching for functions that accept parameters of a certain type.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=wI4_Sxx8lVI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=85
+video: "./method_like_completion.webm"
 ---
 
 _Method-like completion_ for functions allows you to search for functions based on their first parameter.

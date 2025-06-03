@@ -1,10 +1,10 @@
 ---
-date: 2020-10-15
+date: 2025-05-20
 title: Navigate to Symbol
 topics:
   - go
   - navigation
-author: dlsniper
+author: mm
 subtitle: Navigate your project by code, not files.
 seealso:
   - title: (documentation) GoLand Help - Navigating by Name
@@ -16,10 +16,9 @@ seealso:
   - title: (documentation) GoLand Help - Navigation in Source Code
     href: "https://www.jetbrains.com/help/go/navigation-in-source-code.html"
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=FSo0-9oFXmE&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=78
+video: "./navigate_to_symbol.webm"
 ---
 
 Use _Navigate to Symbol_ to jump between symbols in your project and stop thinking about the file they are in.
 
-Invoke it using <kbd>⌘⌥O</kbd> (macOS) / <kbd>Ctrl+Alt+Shift+N</kbd> (Windows/Linux) to bring up the search window and quickly navigate your way in the project.
+Invoke it using <kbd>⇧⇧</kbd> (macOS) / <kbd>Shift+Shift</kbd> (Windows/Linux) to bring up the search window and quickly navigate your way in the project.

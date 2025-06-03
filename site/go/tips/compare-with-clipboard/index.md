@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-27
 title: Compare With Clipboard
 topics:
   - editing
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Compare text, files or directories and even use the clipboard contents.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=VBhXtk11K3M&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=12
+video: "./compare_with_clipboard.webm"
 ---
 
 GoLand has a built-in diff viewer for code, revisions, and even images.

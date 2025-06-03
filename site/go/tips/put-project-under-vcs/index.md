@@ -1,5 +1,5 @@
 ---
-date: 2020-10-15
+date: 2025-05-20
 title: Put New Project Under Version Control
 topics:
   - platform
@@ -12,8 +12,7 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/go/enable-version-control-integration-dialog.html#Enable_Version_Control_Integration_Dialog.xml
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=7z4FAU29_mQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=87
+video: "./vcs_add_project.webm"
 ---
 
 _Work safely via VCS, via the keyboard._

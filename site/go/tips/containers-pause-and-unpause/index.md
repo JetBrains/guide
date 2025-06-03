@@ -1,5 +1,5 @@
 ---
-date: 2021-07-06
+date: 2025-05-05
 title: Pause and Unpause Containers
 topics:
   - containers
@@ -8,8 +8,7 @@ author: dlsniper
 subtitle: >-
   Test what happens to microservices when they try to talk with an unavailable service.
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=HjBvuW0XNN8&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=98
+video: "./tip.webm"
 ---
 
 When you need to test how a microservice behaves when another one is unavailable, use the pause feature. Then resume it without the hassle of starting the container from scratch.

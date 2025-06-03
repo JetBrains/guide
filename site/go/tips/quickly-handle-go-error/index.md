@@ -1,5 +1,5 @@
 ---
-date: 2021-05-24
+date: 2025-05-08
 title: Quickly Handle Errors in Go
 topics:
   - editing
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Handling errors is essential in any application
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=oguhQ4fneik&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=93
+video: "./handle_error.webm"
 ---
 
-Press <kbd>⌘⌥⏎</kbd> (macOS) / <kbd>Ctrl+Alt+Enter</kbd> (Windows/Linux) on function call that returns an error and select **Handle error**.
+Press <kbd>⌘⌥⏎</kbd> (macOS) / <kbd>Ctrl+Alt+Enter</kbd> (Windows/Linux) on a function call that returns an error and select **Handle error**.

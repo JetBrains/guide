@@ -1,5 +1,5 @@
 ---
-date: 2021-05-24
+date: 2025-05-08
 title: Rename Go Module Refactoring
 topics:
   - go
@@ -7,8 +7,7 @@ topics:
 author: dlsniper
 subtitle: Upgrade Go modules to newer versions with ease
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=fnVaPcMHSWs&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=117
+video: "./rename_go_modules.webm"
 ---
 
 If you need to change your Go module's name or upgrade it to a new major, then the _Rename refactoring_ has you covered.

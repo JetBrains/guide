@@ -1,5 +1,5 @@
 ---
-date: 2020-02-05
+date: 2025-05-22
 title: Paste from History
 topics:
   - editing
@@ -7,10 +7,9 @@ topics:
 author: dlsniper
 subtitle: Paste from the clipboard even if it's not the last item you copied into it
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=jn0F8C-y5aw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=100
+video: "./9.webm"
 ---
 
 The _Paste from History_ feature you to use the (limited) history of everything you put in the clipboard.
 
-Press <kbd>⌘⇧V</kbd> (macOS) / <kbd>Ctrl+Shift+V</kbd> (Windows/Linux) to open pop-up window.
+Press <kbd>⌘⇧V</kbd> (macOS) / <kbd>Ctrl+Shift+V</kbd> (Windows/Linux) to open a pop-up window.

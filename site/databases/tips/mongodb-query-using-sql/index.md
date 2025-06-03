@@ -1,5 +1,5 @@
 ---
-date: 2020-12-03
+date: 2025-05-05
 title: Query MongoDB databases using SQL statements
 topics:
   - databases
@@ -7,7 +7,7 @@ topics:
 author: dlsniper
 subtitle: Run MongoDB queries in SQL format within your IDE.
 thumbnail: ./thumbnail.png
-video: "https://youtu.be/SDV7K2H1HAM?list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW"
+video: "./tip.webm"
 obsoletes:
   - /go/tips/mongodb-query-using-sql
 ---

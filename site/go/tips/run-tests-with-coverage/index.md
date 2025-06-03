@@ -1,5 +1,5 @@
 ---
-date: 2020-10-15
+date: 2025-05-22
 title: Spot Coverage Gaps Using the Gutter
 topics:
   - platform
@@ -13,8 +13,7 @@ seealso:
     href: >-
       https://www.jetbrains.com/help/go/configuring-code-coverage-measurement.html
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=yNTB96ybx6k&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=148
+video: "./4.webm"
 ---
 
 GoLand offers a builtin feature to allow you to run the tests in your project and display the coverage in a tool window as a summary for a package (folder) and file, and for each file, next to each line in the file.

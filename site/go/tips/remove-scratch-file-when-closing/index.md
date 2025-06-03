@@ -1,14 +1,13 @@
 ---
-date: 2021-07-06
+date: 2025-05-05
 title: Remove Empty Scratches Automatically
 topics:
   - editing
   - go
-author: dlsniper
+author: mm
 subtitle: Let the IDE handle the cleanup after testing your ideas
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=P898NpT9OJs&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=103
+video: "./tip.webm"
 ---
 
-Remove all the contents of a scratch file the close it. The IDE will automatically remove it.
+Delete all the contents of the scratch file and close it. The IDE will automatically delete the file.

@@ -1,5 +1,5 @@
 ---
-date: 2020-10-15
+date: 2025-05-20
 title: Disable Tabs
 topics:
   - go
@@ -10,8 +10,7 @@ seealso:
   - title: (documentation) GoLand Help - Managing Editor Tabs
     href: "https://www.jetbrains.com/help/go/managing-editor-tabs.html"
 thumbnail: ./thumbnail.png
-video: >-
-  https://www.youtube.com/watch?v=A_vYG-GWmpw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=51
+video: "./tab_placement.webm"
 ---
 
 _Want a cleaner UI with less noise to juggle in your head?_
