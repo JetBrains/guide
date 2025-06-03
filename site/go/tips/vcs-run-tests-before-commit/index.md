@@ -10,4 +10,4 @@ thumbnail: ./thumbnail.png
 video: "./run_tests_before_commit.webm"
 ---
 
-Invoke the _Commit_ feature using <kbd>⌘K</kbd> (macOS) / <kbd>Ctrl+K</kbd> (Windows/Linux), then select the **Commit Options**, check your existing run configuration that contains tests, and choose the test configuration you wish to run.
+Invoke the Commit feature using <kbd>⌘K</kbd> (macOS) / <kbd>Ctrl+K</kbd> (Windows/Linux), then select the **Commit Options**, check your existing run configuration that contains tests, and choose the test configuration you wish to run.
