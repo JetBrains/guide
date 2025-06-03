@@ -78,7 +78,7 @@ const Navbar = ({
 												))}
 										</div>
 
-										<div class="column is-6 is-3-desktop">
+										<div class="column is-6 is-4-desktop">
 											<span class="title is-6">Solutions</span>
 											{solutions &&
 												solutions.map((resource: Resource) => (
