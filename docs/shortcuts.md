@@ -194,7 +194,8 @@
 <kbd>→</kbd> (macOS) / <kbd>Right Arrow</kbd> (Windows/Linux)
 <kbd>␣</kbd> (macOS) / <kbd>Space</kbd> (Windows/Linux)
 <kbd>⇧</kbd> (macOS) / <kbd>Shift</kbd> (Windows/Linux)
-
+<kbd>⇧⌘`</kbd> (macOS)																													- Activate Previous Window
+<kbd>⌥⌘`</kbd> (macOS) / <kbd>Ctrl+Alt+]</kbd> (Windows/Linux)									- Next Project Window
 
 ## Rider
 
