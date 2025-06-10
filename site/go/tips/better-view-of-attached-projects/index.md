@@ -10,4 +10,9 @@ thumbnail: ./thumbnail.png
 video: "./multiple_projects.webm"
 ---
 
-Stop switching between IDE windows and keep all your projects in the same window.
+Stop switching between IDE windows. Keep all projects in the same window.
+
+Switch easily using the keyboard:
+
+- Activate Previous Window — <kbd>⇧⌘`</kbd> (macOS)
+- Next Project Window — <kbd>⌥⌘`</kbd> (macOS) / <kbd>Ctrl+Alt+]</kbd> (Windows/Linux)
