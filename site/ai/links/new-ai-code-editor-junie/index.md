@@ -2,6 +2,8 @@
 date: 2025-21-05
 title: "New AI Editor by JetBrains: Junie (Cursor killer??)"
 topics:
+  - ai
+  - ai-community
   - junie
 author: hs
 subtitle: Watch as Nuno Maduro explores Junie.

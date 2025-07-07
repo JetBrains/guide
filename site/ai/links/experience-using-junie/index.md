@@ -2,6 +2,8 @@
 date: 2025-06-02
 title: "My experience using Junie for the past few months"
 topics:
+  - ai
+  - ai-community
   - junie
 author: hs
 subtitle: Julien takes us through his experience of using Junie for the first time.

@@ -2,6 +2,8 @@
 date: 2025-06-05
 title: "Working with Junie in Legacy Code"
 topics:
+  - ai
+  - ai-community
   - junie
 author: hs
 subtitle: Isabel's personal experience using Junie, JetBrains coding agent, from small pet projects to big legacy systems
@@ -23,7 +25,6 @@ Enter legacy code! They are likely part of your workflow too, right? Isabel sets
 - Business-critical, in production, and making money
 - No observability
 
-Isabel reflects on how Junie helped with all of these areas, starting with those all-important tests. Isabel notes that
-they had their first acceptance tests in 3 days and that while it's not easy for humans to find all the possible requests, Junie did it without complaint! While there were some errors from Junie around the request bodies and endpoints, there were huge time savings involved too. Lastly, Junie didn't shine in adding unit tests in Isabel's case or doing small steps, which is good to know. I think Junie is best with a delegated task while you focus on something fun and then you, as the smart developer, can come back and review the results.
+Isabel reflects on how Junie helped with all of these areas, starting with those all-important tests. Isabel notes that they had their first acceptance tests in 3 days and that while it's not easy for humans to find all the possible requests, Junie did it without complaint! While there were some errors from Junie around the request bodies and endpoints, there were huge time savings involved too. Lastly, Junie didn't shine in adding unit tests in Isabel's case or doing small steps, which is good to know. I think Junie is best with a delegated task while you focus on something fun and then you, as the smart developer, can come back and review the results.
 
-It's great to hear that Junie is now a valuable tool in Isabel's development workflow, especially when it comes to complicated or unfamiliar codebases. I love Isabel's way of phrasing this; she says "it's like having an extra paid of hands and a fresh set of eyes - always ready to dig through layers of code, or do the boring stuff so I don't have to." I agree wholeheartedly here!
+It's great to hear that Junie is now a valuable tool in Isabel's development workflow, especially when it comes to complicated or unfamiliar codebases. I love Isabel's way of phrasing this; she says "it's like having an extra pair of hands and a fresh set of eyes - always ready to dig through layers of code, or do the boring stuff so I don't have to." I agree wholeheartedly here!
