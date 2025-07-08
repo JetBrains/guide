@@ -19,4 +19,4 @@ Michelangelo tried to create the project guidelines using Junie in the instance,
 
 Next, Michelangelo walks us through the prompt they used to instruct Junie. I'm pleased to say that it's delightfully detailed because I've seen great results from Junie with detailed prompts just like this one. Michelangelo then let Junie crack on with the task in hand and proceeded to [make a video](https://www.youtube.com/watch?v=aNC3PUNy-p8) detailing the process.
 
-Michelangelo notes that it looked alright with some observations and drew a comparison with coding with junior developers in terms of the guidelines he created and likes that they are required and served value. With that, we're off to the [second in this series](../jetbrains-junie-day-two) of blog posts!
+Michelangelo notes that it looked alright with some observations and drew a comparison with coding with junior developers in terms of the guidelines he created and likes that they are required and served value. With that, we're off to the [second in this series](../jetbrains-junie-day-two/) of blog posts!
