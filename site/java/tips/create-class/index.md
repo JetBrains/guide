@@ -4,7 +4,6 @@ title: Create a new class
 topics:
   - tricks
   - java
-  - kotlin
 author: md
 subtitle: Create a new class and a new package.
 thumbnail: ./thumbnail.png
