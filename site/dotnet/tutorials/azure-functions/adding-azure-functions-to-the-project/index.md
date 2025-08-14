@@ -27,6 +27,7 @@ In the following sections we will discuss three well-known functions triggers �
 > ![Install Package Prompt](install-package-prompt.png)
 >
 > If you grab code from somewhere else and there are unresolved references (red code), you can [find and install NuGet packages](https://www.jetbrains.com/help/rider/Using_NuGet.html#finding) using _Alt-Enter | Find this type on NuGet_. If there are multiple packages as a result, prefer `Microsoft.Azure.Functions.Worker.*` packages, as those are built for the isolated-worker model.
+
 > **Tip:** For all classes that define Azure functions, you can add the `UsedImplicitly` attribute from the [`JetBrains.Annotations` NuGet package](https://www.nuget.org/packages/JetBrains.Annotations) (also available as [source-only package](https://www.nuget.org/packages/JetBrains.Annotations.Sources)) to support the “unused code” analysis:
 >
 > ```csharp
