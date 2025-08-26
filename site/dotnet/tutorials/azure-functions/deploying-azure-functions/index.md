@@ -99,4 +99,4 @@ The following deployment takes advantage of the Azure CLI and [Azure service pri
 
 ---
 
-Unless you've created some perfect functions, it's quite likely that your code will fail sooner or later under certain conditions. No worries! This is where troubleshooting apps in the production environment becomes crucial.
+Unless you've created some perfect functions, it's quite likely that your code will fail sooner or later under certain conditions. No worries! This is where [troubleshooting Azure function apps in the production environment](../troubleshooting-azure-functions-production/) becomes crucial.

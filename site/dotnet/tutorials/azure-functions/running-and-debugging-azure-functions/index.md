@@ -84,4 +84,4 @@ The Azure Toolkit integrates with the [_Endpoints_ window](https://blog.jetbrain
 
 ---
 
-Now it's time to deploy your functions and bring them to the global network of Azure.
+Now it's time to [deploy your functions](../deploying-azure-functions/) and bring them to the global network of Azure.

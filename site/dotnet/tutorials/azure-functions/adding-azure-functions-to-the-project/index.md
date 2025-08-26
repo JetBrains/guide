@@ -22,11 +22,11 @@ After your Azure functions project was created, we can dive into the more intere
 
 In the following sections we will discuss three well-known functions triggers – namely HTTP, timer, and queue triggers – which will act as examples to illustrate different features of the Azure Toolkit in the remainder of this tutorial.
 
-> **Tip:** Certain function types require additional NuGet packages. Make sure to watch out for Rider’s notification bar to confirm installations:
->
-> ![Install Package Prompt](install-package-prompt.png)
->
-> If you grab code from somewhere else and there are unresolved references (red code), you can [find and install NuGet packages](https://www.jetbrains.com/help/rider/Using_NuGet.html#finding) using _Alt-Enter | Find this type on NuGet_. If there are multiple packages as a result, prefer `Microsoft.Azure.Functions.Worker.*` packages, as those are built for the isolated-worker model.
+Certain function types require additional NuGet packages. Make sure to watch out for Rider’s notification bar to confirm installations:
+
+![Install Package Prompt](install-package-prompt.png)
+
+If you grab code from somewhere else and there are unresolved references (red code), you can [find and install NuGet packages](https://www.jetbrains.com/help/rider/Using_NuGet.html#finding) using _Alt-Enter | Find this type on NuGet_. If there are multiple packages as a result, prefer `Microsoft.Azure.Functions.Worker.*` packages, as those are built for the isolated-worker model.
 
 > **Tip:** For all classes that define Azure functions, you can add the `UsedImplicitly` attribute from the [`JetBrains.Annotations` NuGet package](https://www.nuget.org/packages/JetBrains.Annotations) (also available as [source-only package](https://www.nuget.org/packages/JetBrains.Annotations.Sources)) to support the “unused code” analysis:
 >
@@ -106,9 +106,9 @@ builder.Services.AddSingleton(_ =>
 });
 ```
 
-> **Tip:** Trying to understand an existing timer trigger can be challenging without resorting to websites like [crontab.guru](http://crontab.guru). The Azure Toolkit helps you to decode CRON expressions using the [`CronExpressionDescriptor` project](https://github.com/bradymholt/cron-expression-descriptor) and [inlay hints](https://www.jetbrains.com/help/rider/Inline_Parameter_Name_Hints.html):
->
-> ![Cron Expression Inlay Hint](cron-expression-inlay-hint.png)
+Trying to understand an existing timer trigger can be challenging without resorting to websites like [crontab.guru](http://crontab.guru). The Azure Toolkit helps you to decode CRON expressions using the [`CronExpressionDescriptor` project](https://github.com/bradymholt/cron-expression-descriptor) and [inlay hints](https://www.jetbrains.com/help/rider/Inline_Parameter_Name_Hints.html):
+
+![Cron Expression Inlay Hint](cron-expression-inlay-hint.png)
 
 In our example above, we are regularly sending a message to the `QueueTrigger` queue. This helps to illustrate our last trigger type – queue triggers.
 
@@ -155,4 +155,4 @@ This type of functions is a good candidate for [further customizations](https://
 
 ---
 
-The above samples are good to have for the following tutorial steps!
+With the above samples we are good to go for [running and debugging our Azure functions](../running-and-debugging-azure-functions/)!
