@@ -23,6 +23,8 @@ tutorialItems:
   - ./troubleshooting-azure-functions-production/
 ---
 
+> **Info:** The source code from this tutorial is available on [GitHub](https://github.com/matkoch/rider-azure-functions).
+
 Developing and managing cloud solutions often requires a seamless and efficient workflow. Rider, with its robust integration and tooling, empowers developers to build, debug, and deploy Azure Functions effortlessly. Whether you're handling event-driven serverless functions or scaling cloud-native applications, Rider offers the tools to identify issues early, ensure smooth debugging, and optimize your deployment process.
 
 ## What You'll Learn
