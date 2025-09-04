@@ -1,12 +1,15 @@
 ---
 date: 2025-01-23
-title: "IntelliJ IDEA Junie Playbook"
+title: "Junie Playbook"
 topics:
   - ai
   - junie
-author: sk
+author: hs
 subtitle: Exploring Junie with IntelliJ IDEA
 thumbnail: ./thumbnail.png
+obsoletes:
+  - /ai/article/junie/intellij-idea/
+  - /ai/article/junie/pycharm/
 ---
 
 ## Exploring Junie with IntelliJ IDEA
