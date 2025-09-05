@@ -20,7 +20,7 @@ Azure Functions is a serverless compute service from Microsoft Azure designed to
 
 ## Key Features
 
-Azure Functions brings a range of powerful features that simplify development and operations in serverless environments:
+Azure Functions bring a range of powerful features that simplify development and operations in serverless environments:
 
 1. **Event-Driven**: Triggered by HTTP, timers, queues, or Azure services.
 2. **Serverless**: No infrastructure setup or management required.
@@ -29,19 +29,15 @@ Azure Functions brings a range of powerful features that simplify development an
 5. **Flexible**: Seamlessly connects with other services, like AI models, databases, queues, and more.
 6. **Secure**: Supports [managed identities](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview) for secure and streamlined authentication to Azure services.
 
-These features make Azure Functions an attractive platform for building modern, scalable, and event-driven cloud applications.
-
 ## Common Use Cases
 
-Azure Functions is versatile and well-suited to various practical scenarios, including:
+Azure Functions are versatile and well-suited to various practical scenarios, including:
 
 1. **API Development**: Build lightweight APIs to handle incoming HTTP requests or process webhooks.
 2. **Data Processing**: Transform or analyze data streams in real time or perform scheduled processing.
 3. **Scheduled Tasks**: Automate periodic jobs, such as triggering emails, cleaning up resources, or running maintenance scripts.
 4. **Event-Driven Workflows**: React to changes in Azure services like Blob Storage, Event Hubs, or Service Bus.
 5. **IoT and Automation**: Handle events from IoT devices, control workflows, or orchestrate multiple services in response to real-world events.
-
-With these use cases, Azure Functions enables developers to create efficient, scalable, and event-driven solutions across a variety of industries and applications.
 
 ## Code Components
 
@@ -53,8 +49,6 @@ Azure Functions relies on several key parts:
 4. **Function Code**: The logic executed when a trigger activates the function.
 5. **Configuration**: Files like `host.json` and `local.settings.json` manage runtime and environment settings.
 6. **Dependencies**: External libraries used to extend functionality.
-
-By assembling these pieces effectively, developers can craft robust applications tailored for modern computing needs.
 
 ## Why Use Azure Functions?
 
