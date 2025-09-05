@@ -46,6 +46,8 @@ A more streamlined process to troubleshoot your functions app is to use [remote 
 
 ![Remote Debugging Setup](remote-debugging.png)
 
+> **Warning:** During this process, Rider will [enable Web Sockets](https://learn.microsoft.com/en-us/answers/questions/2168262/how-to-allow-websocket-connetion-in-my-azure-app-s) for the functions instance. You can disable the option under _Settings | Configuration | General Settings_ once you're done debugging.
+
 Once connected, you can set breakpoints in your code and debug your Azure Functions just as you would locally. This allows you to:
 
 - Step through code execution in real-time
