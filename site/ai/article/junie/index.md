@@ -68,7 +68,7 @@ Junie has a setting called **Brave mode** which when selected means that Junie c
 
 ![brave-mode.png](brave-mode.png)
 
-## Technology specific prompts to try
+## Technology agnostic prompts to try
 
 To start with, here are some fun Junie prompts for you to try in your project:
 
@@ -116,6 +116,8 @@ Once Junie is Done, it will automatically run all the tests.
 As we mentioned, you can define your coding conventions and best practices in a `.junie/guidelines.md` file located at the root of your project. Junie will automatically follow these guidelines when generating code.
 
 ## Python
+
+We have three examples for you to try for Python. Firstly a Django project, then a Fast API project and finally a Jupyter notebook project.
 
 ### Example One - Quick Start Guide for Django Projects
 
