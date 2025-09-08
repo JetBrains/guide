@@ -116,3 +116,164 @@ Once Junie is Done, it will automatically run all the tests.
 As we mentioned, you can define your coding conventions and best practices in a `.junie/guidelines.md` file located at the root of your project. Junie will automatically follow these guidelines when generating code.
 
 ## Python
+
+### Example One - Quick Start Guide for Django Projects
+
+In this example, we will create the basic structure for a Django app that allows us to register membership with Junie. We will also ask Junie to help customise the website's look and add some tests. Throughout the process, you will monitor how Junie works and help Junie fix any issues that arise.
+
+**Step 1. Create an app with membership**
+
+First, create a new Django project in PyCharm. Prepare the database by running the following command in the terminal:
+
+`python manage.py migrate`
+
+After that, let’s create a superuser so we can later access the built-in Django admin:
+
+`python manage.py createsuperuser`
+
+Try this prompt: `Add a membership sign up app in the Django website`
+
+Unless you selected Brave mode, each time Junie needs to run a Django management command, it will ask for permission and display a blue “Run command” icon. Click it to continue each time.
+
+When Junie has finished, try to run the server with ⌃⇧R (macOS) / Ctrl+Shift+F10 (Windows/Linux) and open the web app in a browser window. You can then try to register a new account and login with the URL endpoint provided.
+
+Test around and see if there are any problems. What issues did you notice? Let’s use some following-up prompts to improve our application.
+
+Prompt suggestions:
+
+`Use POST for logout view endpoint`
+`Create a root welcoming page`
+`Activate basic membership for all members by default`
+
+**Step 2. Add payment gateway**
+
+In the next step, we will try to add a payment gateway and use the Stripe API in our application. First, log in to admin as superuser and add some new subscriptions.
+
+Try this prompt: _Add Stripe as payment gateway for subscriptions_
+
+**Tip**: New packages are required; you can install them by clicking the tips provided by PyCharm. You will need to rerun the local server after the new packages have been installed.
+
+When Junie has finished, instructions on how to set up the Stripe payment gateway are written in the `README.md` file. If you have a Stripe account, you can follow the instructions in README.md and set up a payment gateway with test mode to see if it works.
+
+**Tip**: Check if the migrations have been applied; if not, it can be done manually in the terminal using the command `python manage.py makemigrations` and then `python manage.py migrate`.
+
+**Step 3. Customize looks and themes**
+
+In the next step we can try to change the colour theme with Junie’s help. Let’s ask Junie to match our app’s theme with that of the Django website.
+
+Try this prompt: `change the color theme to match <https://www.djangoproject.com/>`
+
+You can also try a follow-up prompt: `Add a button to switch between dark and light theme.`
+
+You can even ask Junie to check if the web UI follows the accessibility standard.
+
+Try this prompt: `Make sure the UI follows the accessibility standard`
+
+Be creative! Feel free to play around and try asking Junie to change the look of the website with other color themes or layouts.
+
+**Step 4. Adding tests**
+
+Last, we will add tests and make sure the project gets good coverage.
+
+Try this prompt: `Add appropriate tests for this project`
+
+Try this follow up prompt: `make sure test code coverage is > 80% and create a coverage report`
+
+Check the coverage report in the terminal:
+
+`coverage report`
+
+### Example Two - Fast API for Machine Learning
+
+In this example, we will use Junie to create a machine learning Fast API project where an ML model is trained to predict a review rating depending on the review text. Junie can also add tests and reports for the model evaluation and code coverage. Lastly, we will also use Junie to dockerize the application to get it ready for deployment.
+
+**Step 1. Getting data ready**
+
+First, we will create a basic Fast API app with some data stored in a database. Let’s start by creating a new Fast API project.
+
+Download an [example data set](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews) from Kaggle and put the CSV in the project folder.
+
+Try this prompt with Junie: `Create a database and populate it with the data in Womens Clothing E-Commerce Reviews.csv.`
+
+Notice that not just data has been added to the database. Relevant endpoints have also been created in `main.py`.
+
+Try this follow-up prompt: `Create an API endpoint to receive input data to database`
+
+Whilst Junie is not-deterministic, it’s likely that there will be updates to your `main.py` file as a result of this command.
+
+**Step 2. Build and train a model**
+
+In the next steps, we will add the machine learning function to the app and try to predict the review rating from the review text.
+
+Try this prompt: `Create a NLP model to predict ‘Rating’ from ‘Review Text’ using data from the database`
+
+**Tip**: Install the requirements when notified.
+
+Try this prompt: `Train and save ml model, provide model evaluation report as text file`
+
+In my run, I noticed that Junie decided to use the CSV file for model training. While that makes sense for now, it will not make sense when we have user input data, so I am going to ask Junie to fix it.
+
+Try this follow-up prompt: `Use data from the database for train_and_evaluate_model, rerun the training and model evaluation`
+
+After Junie is done, inspect the report and see if the model achieves good results.
+
+In my run, the overall accuracy is around 60%, apparently, there is room for improvement. Feel free to ask Junie to use or incorporate other NLP models (even pre-trained models) to get better results. One such prompt could be:
+
+`Use a pre-trained sentiment analysis model from Hugging Face in conjunction with our model to improve prediction accuracy`
+
+**Step 3. Adding tests**
+
+Next, we will add tests and make sure the project has good coverage for the project.
+
+Try this prompt: `Add appropriate tests for this project`
+
+Tests should be added. However, we want to make sure we have good code coverage.
+
+Try this follow-up prompt: `make sure test code coverage is > 80% and create coverage report`
+
+Check the coverage report in the terminal.
+
+**Step 4. Dockerize for production**
+
+Last, we will prepare a docker image for the deployment of our application.
+
+Try this prompt: `prepare the project in production in Docker containers`
+
+Instructions are also added to the `README.md` file after Junie has completed the task. Feel free to follow them and test it yourself.
+
+### Example Three - Jupyter notebook and data exploration
+
+In this example, we will use Junie to create Jupyter notebooks to do data explorations. After that we will create a prediction model and results are visualized in Jupyter notebooks..
+
+**Step 1. Simple data exploration**
+
+First, create a Jupyter project in PyCharm, [download the Tic-Tac-Toe Game Dataset](https://www.kaggle.com/datasets/anthonytherrien/tic-tac-toe-game-dataset?resource=download) from Kaggle and add the csv file in the data folder.
+
+Try this Prompt: `Create a Jupyter notebook and perform data exploration with the data inside the csv file in the data folder`
+
+After Junie has finished, open the new Jupyter notebook that has been created. Install the requirements and run the notebook.
+
+Notice that the generated notebook is using ‘seaborn’, a plotting style that is no longer supported (for all the supported styles, please see here). Let’s try using the ‘ggplot’ style instead.
+
+Try this follow-up prompt: `use 'ggplot' as plt style instead`
+
+Now run the notebook again and you will see all the data exploration visualizations.
+
+**Step 2. Draw end game board illustration**
+
+Next we want to draw the game board and illustrate some of the end games documented in the csv file.
+
+Try this prompt: `In tictactoe_analysis.ipynb, add images to illustrate 10 random tic-tac-toe end game board`
+
+Do you like the result? Here are some follow-up prompts that you could use to improve the visualization:
+
+- `improve game board images by moving X and O a bit higher`
+- `make the game board black and white for accessibility`
+
+**Step 3. Create a prediction model to win the game**
+
+Finally, we want to tell Junie to create a model which can help us to win the game.
+
+Try this prompt: `Create a model to predict the best move for player X and O based on the opponent's previous move`
+
+The prompt may take some time as Junie is hard at work building the model and running it for tests. After that you will see a Jupyter notebook, together with some other files which contain the model and the visualization of the result. Feel free to ask Junie to make any improvements.
