@@ -1,8 +1,9 @@
 ---
 title: Mukul Mantosh
-subtitle: Developer Advocate at JetBrains
+subtitle: Python and Go enthusiast
 thumbnail: ./mm.jpg
 author: mm
+guest: true
 date: 2020-01-01
 obsoletes:
   - /pycharm/authors/mm/
