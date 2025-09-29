@@ -24,4 +24,4 @@ Here's what you need to get started:
 
 Changes ready? Great! Ideally, you have been working on a separate branch (from `main`), and you can send your changes as a pull request.
 
-Make sure to add some JetBrains folks like [pauleveritt](https://github.com/pauleveritt),[khalidabuhakmeh](https://github.com/khalidabuhakmeh/) and [helenjoscott](https://github.com/helenjoscott/) as reviewers, so we can work on getting your content ready to go!
+Make sure to add some JetBrains folks like [pauleveritt](https://github.com/pauleveritt), and [helenjoscott](https://github.com/helenjoscott/) as reviewers, so we can work on getting your content ready to go!
