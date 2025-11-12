@@ -11,7 +11,6 @@ import ArticleTopics from "../common/ArticleTopics.11ty";
 import AnimatedGif from "../../animatedgif/AnimatedGif.11ty";
 import RelatedResources from "../../relatedresources/RelatedResources.11ty";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
-import { UserComments } from "../../userComments.11ty";
 import EditArticle from "../common/EditArticle.11ty";
 
 export type TipLayoutData = LayoutProps & TipFrontmatter;
@@ -90,7 +89,6 @@ export function TipLayout(
 								)}
 								{tip.seealso && <SeeAlso items={tip.seealso} />}
 							</main>
-							<UserComments theme={"light"} pageUrl={page.url} />
 						</div>
 					</div>
 				</div>
