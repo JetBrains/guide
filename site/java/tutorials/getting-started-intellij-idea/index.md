@@ -10,7 +10,6 @@ author: hs
 subtitle: My favourite tips for all new starters in IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 tutorialItems:
-  - ./working-together/
   - ./learning-the-ide/
   - ./setting-up-the-env/
   - ./navigating-code/

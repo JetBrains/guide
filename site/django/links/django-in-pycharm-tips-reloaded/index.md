@@ -40,11 +40,6 @@ linkURL: "https://youtu.be/1_0AYQkLqAA"
 - Integration with IPython for enhanced console experiences.
 - Managing imports automatically.
 
-## Code with Me
-
-- Real-time collaboration using JetBrains' Code with Me feature.
-- Live demonstration of collaborative editing and debugging.
-
 ## Enhanced Template Support
 
 - Using PyCharm’s smart code navigation in Django templates.

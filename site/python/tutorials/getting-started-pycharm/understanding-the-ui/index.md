@@ -42,8 +42,6 @@ At the top, you can also find your Navigation Bar. This serves as a quick altern
 
 You can also use the buttons that are to the right of the Navigation Bar to quickly perform some common actions, like running or debugging an app, updating a project or making a commit, running a search, and the like. Note that the toolbar might look different if your project isn’t under version control.
 
-This part of the UI also gives you access to Code With Me, PyCharm’s built-in functionality for collaborative development. From here you can enable access for guests and start collaborative sessions.
-
 Finally, right above the Navigation bar, you’ll find the main menu. It has various actions and controls, including the Preferences/Settings and Help.
 
 ## Conclusion
