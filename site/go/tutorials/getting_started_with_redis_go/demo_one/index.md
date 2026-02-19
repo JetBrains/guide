@@ -15,18 +15,18 @@ Now that you've set up and tested the data, you're probably wondering what all t
 
 This scenario requires the use of four different Redis data types: strings, hash tables, sets, and sorted sets.
 
-The title and the description of the quest are saved as [string values](https://redis.io/docs/data-types/strings/).
+The title and the description of the quest are saved as string values.
 
-Players are [hash tables](https://redis.io/docs/data-types/hashes/) that contain four field-value pairs:
+Players are hash tables that contain four field-value pairs:
 
 - The player's name
 - Their score
 - The number of completed challenges
 - The team they're on
 
-Teams are [sets](https://redis.io/docs/data-types/sets/) of player names. There is some redundancy here because there is already a `team` key in each `player` table, but this was done intentionally to demonstrate the use of transactions later.
+Teams are sets of player names. There is some redundancy here because there is already a `team` key in each `player` table, but this was done intentionally to demonstrate the use of transactions later.
 
-The quest consists of five challenges that are stored as a [sorted set](https://redis.io/docs/data-types/sorted-sets/) because the sequence of the challenges matters.
+The quest consists of five challenges that are stored as a sorted set because the sequence of the challenges matters.
 
 The rest of the tutorial uses this data set to walk you through the Redis tasks mentioned in the introduction.
 

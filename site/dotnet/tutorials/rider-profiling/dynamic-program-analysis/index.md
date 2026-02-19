@@ -41,11 +41,9 @@ Using the Heap Allocations Viewer plugin may help clarify where memory is alloca
 
 In the Sudoku solver, you can optimize a call to `.FirstOrDefault()` by converting the LINQ statement into a `foreach` loop instead, so you don't require capturing an existing variable.
 
-There are various other memory issues that you can discover when using Dynamic Program Analysis. Check our [list of fixes for issues found by DPA](https://www.jetbrains.com/help/rider/Fixing_Issues_Found_by_DPA.html) to learn more.
+There are various other memory issues that you can discover when using Dynamic Program Analysis.
 
 ### See Also
 
-- [Dynamic Program Analysis (DPA)](https://www.jetbrains.com/help/rider/Dynamic_Program_Analysis.html)
 - [Heap Allocations Viewer plugin](https://plugins.jetbrains.com/plugin/9223-heap-allocations-viewer)
-- [List of fixes for issues found by DPA](https://www.jetbrains.com/help/rider/Fixing_Issues_Found_by_DPA.html)
 - [Sudoku solver application](https://github.com/JetBrains/DPA-demo) on GitHub

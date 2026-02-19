@@ -170,11 +170,7 @@ XPath uses "path like" syntax to identify and navigate nodes in an XML document.
 
 As you can see on line number 3 we are directly passing the value in Django Settings Module, make sure in future you try to pass information through the environment variable. We are done with our step definition along-with install xpath plugin. Next, we need to set up our test environment before running the application.
 
-For your reference, if you want to dig deeper into this configuration please visit the below given link.
-
-- [https://behave.readthedocs.io/en/stable/usecase_django.html](https://behave.readthedocs.io/en/stable/usecase_django.html)
-
-As you can see on line number 3 we are directly passing the value in **DJANGO_SETTINGS_MODULE**, make sure in future you
+Also, on line number 3 we are directly passing the value in **DJANGO_SETTINGS_MODULE**, make sure in future you
 try to pass information through the environment variable.
 
 ![behave_env_file](steps/step14.png)

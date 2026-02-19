@@ -187,5 +187,3 @@ There you go. Now, you can access any autoload in any C\# script.
 {% cta %}
 
 We connected disparate game elements in our scene tree using Godot's Autoload feature to work with singletons. Remember, you can have multiple of these in your game to manage elements such as score, scene transitions, sounds, and dialogs. The sky is the limit to what you can do. I hope you've found this tutorial helpful. Good luck with building your game.
-
-<sub>_image credit: [Javier Miranda](https://unsplash.com/photos/an-artists-rendering-of-a-planet-in-space-TdmqPVDjJkc)_</sub>

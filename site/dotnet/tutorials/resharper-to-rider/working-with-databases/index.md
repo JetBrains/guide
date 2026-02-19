@@ -36,7 +36,6 @@ In this window, we can add connections to all types of engines:
 
 - [Amazon Redshift](https://aws.amazon.com/redshift/)
 - [Apache Cassandra](https://cassandra.apache.org/)
-- [Clickhouse](https://clickhouse.tech/)
 - [Azure SQL](https://azure.microsoft.com/en-us/services/azure-sql/)
 - [MySQL](https://www.mysql.com/)
 - [MongoDB](https://www.mongodb.com/)

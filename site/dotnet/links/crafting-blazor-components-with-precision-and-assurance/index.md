@@ -25,4 +25,3 @@ Outside of the tech world, you'll often find Mariekie embracing the great outdoo
 
 - [Twitter](https://twitter.com/mariekiecoetzee)
 - [Blog](https://medium.com/@mariekie)
-- [Personal website](https://www.mariekiecoetzee.com/)

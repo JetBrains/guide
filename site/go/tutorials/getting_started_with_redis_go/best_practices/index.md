@@ -32,11 +32,11 @@ If you use `go-redis`, this best practice is already [built into the library](ht
 If you use Redis as a cache, you can and should avoid using persistent keys. The main memory is typically much smaller than the disk space where the original data resides, which means the cache can only hold a fraction of the data. To limit memory use, you have two options:
 
 - **Set a timeout for every key:** After the specified time, the key will be removed from memory. Optionally, you can have every read operation refresh the expiration time so that frequently used keys remain in memory for longer.
-- **Configure Redis as a cache:** This is an alternative to using expiring keys. To [enable cache mode](https://redis.io/docs/management/config/#configuring-redis-as-a-cache), you configure a memory limit and a [key eviction policy](https://redis.io/docs/reference/eviction/) (such as least-recently-used or least-frequently-used).
+- **Configure Redis as a cache:** This is an alternative to using expiring keys. To enable cache mode, you configure a memory limit and a key eviction policy (such as least-recently-used or least-frequently-used).
 
 ### Prefer Lua Scripts for Complex Operations
 
-Transactions allow you to treat multiple updates in an atomic way—that is, either all updates inside a transaction succeed or the transaction as a whole gets canceled. If you need to handle greater complexity than that, consider using [Lua scripts](https://redis.io/docs/interact/programmability/eval-intro/). Redis can execute Lua scripts on the server. Like transactions, scripts are guaranteed to have atomic execution. That is, either all effects of a Lua script happen or none happen. Furthermore, Lua scripts execute where the data lives and thus reduce expensive network operations.
+Transactions allow you to treat multiple updates in an atomic way—that is, either all updates inside a transaction succeed or the transaction as a whole gets canceled. Redis can execute Lua scripts on the server. Like transactions, scripts are guaranteed to have atomic execution. That is, either all effects of a Lua script happen or none happen. Furthermore, Lua scripts execute where the data lives and thus reduce expensive network operations.
 
 The `go-redis` package allows Go code to manage and interact with Redis Lua scripts. Introducing Lua scripting in detail is beyond the scope of this article, but you can get a quick introduction [here](https://redis.uptrace.dev/guide/lua-scripting.html).
 

@@ -37,9 +37,7 @@ Dynamic Program Analysis (or DPA) analyzes your code automatically, every time i
 - [Performance Profiling in Rider](https://www.jetbrains.com/help/rider/Performance_Profiling.html)
 - [Profiling Applications](https://www.jetbrains.com/help/rider/Profiling_Applications.html)
 - [Profiling Unit Tests](https://www.jetbrains.com/help/rider/Profiling_Unit_Tests.html)
-- [Dynamic Program Analysis (DPA)](https://www.jetbrains.com/help/rider/Dynamic_Program_Analysis.html)
 - [Heap Allocations Viewer plugin](https://plugins.jetbrains.com/plugin/9223-heap-allocations-viewer)
-- [List of fixes for issues found by DPA](https://www.jetbrains.com/help/rider/Fixing_Issues_Found_by_DPA.html)
 - [Sudoku solver application](https://github.com/JetBrains/DPA-demo) on GitHub
 - [dotTrace performance profiler](https://www.jetbrains.com/profiler/)
 - [dotMemory memory profiler](https://www.jetbrains.com/dotmemory/)
