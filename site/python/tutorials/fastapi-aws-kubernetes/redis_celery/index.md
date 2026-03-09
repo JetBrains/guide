@@ -71,7 +71,7 @@ Let’s come back to our terminal where I am going to install _Redis_.
 
 ![step7](./steps/step7.png)
 
-Let me check it’s working fine by running the [PING](https://redis.io/commands/PING) command.
+Let me check it’s working fine by running the PING command.
 
 ![step8](./steps/step8.png)
 

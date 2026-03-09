@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 ---
 
 - Ensure you have an up-to-date [Go](https://go.dev/doc/install) toolchain on your system.
-- [Install Redis](https://redis.io/docs/getting-started/installation/). This tutorial assumes that you do so on your local machine. If you want to use a remote Redis instance for this tutorial, make sure to adjust the connection details accordingly. **Note:** Do not set a password for the database.
+- Install Redis. This tutorial assumes that you do so on your local machine. If you want to use a remote Redis instance for this tutorial, make sure to adjust the connection details accordingly. **Note:** Do not set a password for the database.
 - Verify your Redis installation:
   - Start `redis-cli` in a terminal. It should automatically connect to the local Redis instance.
   - Then, type `ping` at the prompt and hit **Enter**. If the Redis instance is available, it will reply with `PONG`.

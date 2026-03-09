@@ -42,7 +42,7 @@ After you optimize several bits of code in the Sudoku solver, you will come to t
 
 This may mean the performance problem stems from high memory traffic. Each object has to be cleaned up by the Garbage Collector at some point, which may mean your application gets suspended for a short period of time. If this happens many times, application performance will suffer from cleaning up many objects continuously.
 
-You can find garbage collection times and filters when profiling with Timeline mode, but using a memory profiler may be required. Another tool available in Rider is [Dynamic Program Analysis (DPA)](https://www.jetbrains.com/help/rider/Dynamic_Program_Analysis.html#prerequisites).
+You can find garbage collection times and filters when profiling with Timeline mode, but using a memory profiler may be required.
 We will explore DPA in the next step.
 
 ### See Also
@@ -52,4 +52,3 @@ We will explore DPA in the next step.
 - [Analyze Profiling results](https://www.jetbrains.com/help/rider/Analyzing_Profiling_Snapshots.html)
 - [Inline Method refactoring](https://www.jetbrains.com/help/rider/Refactorings__Inline_Method.html)
 - [Heap Allocations Viewer plugin](https://plugins.jetbrains.com/plugin/9223-heap-allocations-viewer)
-- [Dynamic Program Analysis (DPA)](https://www.jetbrains.com/help/rider/Dynamic_Program_Analysis.html#prerequisites)

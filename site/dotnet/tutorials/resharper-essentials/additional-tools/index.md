@@ -102,5 +102,4 @@ These tools are available:
 - [ReSharper Build](https://www.jetbrains.com/help/resharper/Reference_Windows_ReSharper_Build.html)
 - [Run Configurations](https://www.jetbrains.com/help/resharper/Run_Configurations.html)
 - [Exploring IL with ReSharper and dotPeek](https://blog.jetbrains.com/dotnet/2017/01/19/exploring-intermediate-language-il-with-resharper-and-dotpeek/)
-- [Dynamic Program Analysis (DPA)](https://www.jetbrains.com/help/resharper/Dynamic_Program_Analysis.html)
 - [ReSharper Command Line Tools](https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html)

@@ -803,7 +803,7 @@ We are done with Postgres, now we will move to Redis.
 
 ### Redis
 
-Same as usual we will create deployment and service files for [Redis](https://redis.io/).
+Same as usual we will create deployment and service files for Redis.
 
 We will run the redis 6.2.5 alpine image.
 
