@@ -9,6 +9,7 @@ import {
 } from "../googleTagManager.11ty";
 import Subnav from "../navbar/Subnav.11ty";
 import PromoBanner from "../navbar/PromoBanner.11ty";
+import InfoBanner from "../navbar/InfoBanner.11ty";
 import { Channel, isChannel } from "../resources/channel/ChannelModels";
 import { Fragment } from "jsx-async-runtime/jsx-dev-runtime";
 import { isLink } from "../resources/link/LinkModels";
@@ -164,6 +165,14 @@ export function BaseLayout(
 			</head>
 			<body>
 				<GoogleTagManagerBodyNoScript googleTagManagerId="GTM-5P98" />
+				<InfoBanner>
+					<div>
+						The JetBrains Guide is shutting down on March 30, 2026.{" "}
+						<a href="/shutdown/" class="has-text-white has-text-weight-bold">
+							more...
+						</a>
+					</div>
+				</InfoBanner>
 				<Navbar
 					featuredResource={featuredChannel}
 					technologies={technologies}
