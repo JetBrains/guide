@@ -23,17 +23,17 @@ data:
         location / {
             root   /usr/share/nginx/html;
             index  index.html index.htm;
+            include /etc/nginx/extra/notify.conf;
         }
-    
+
         error_page 404 /guide/404.html;
           location = /guide/404.html {
                 root /usr/share/nginx/html;
                 internal;
-        }    
-    
+        }
+
         absolute_redirect off;
-   
+
         include /etc/nginx/extra/redirect.conf;
-        include /etc/nginx/extra/notify.conf;
 
     }

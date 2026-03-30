@@ -108,3 +108,15 @@ notifyRedirect: |
 1. Helm dry-run: `cd deployment/helm && helm install --dry-run guide -f env/stage.yaml ./guide-charts`
 2. Stage: verify any content page redirects, `/guide/shutdown/` loads, assets load, existing `/product*` redirect still works
 3. Prod after staging validation
+
+## Research Notes
+
+### nginx `if` at server block level intercepts static assets
+
+**Problem:** Initially, `include /etc/nginx/extra/notify.conf;` was placed at the server block level (alongside `redirect.conf`). This caused static assets (CSS, JS, images) to be redirected even though a `location ~* \.(ico|pdf|...)$` block existed to serve them normally.
+
+**Root cause:** nginx's `if` directive at the server context runs during the rewrite phase, which executes _before_ location matching. So the catch-all `if ($request_uri !~* "^/guide/shutdown")` fired for every request — including static assets — before nginx ever evaluated which `location` block applied.
+
+**Fix:** Move `include /etc/nginx/extra/notify.conf;` inside the `location /` block. Static asset requests match the higher-priority `location ~*` block and never reach the `if`. HTML requests fall through to `location /` where the redirect fires.
+
+**Contrast with `redirect.conf`:** That include is safe at server level because it uses `rewrite` rules scoped to a specific path prefix (`^/product`), not a catch-all `if`.
