@@ -29,6 +29,9 @@ spec:
         - name: redirect
           configMap:
             name: {{.Release.Name}}-nginx-conf-redirect-cm
+        - name: notify
+          configMap:
+            name: {{.Release.Name}}-nginx-conf-notify-cm
         - name: nginx-main
           configMap:
             name: {{.Release.Name}}-nginx-conf-main-cm
@@ -69,6 +72,11 @@ spec:
           - mountPath: /etc/nginx/extra/redirect.conf
             subPath: redirect.conf
             name: redirect
+            readOnly: true
+
+          - mountPath: /etc/nginx/extra/notify.conf
+            subPath: notify.conf
+            name: notify
             readOnly: true
 
           - mountPath: /etc/nginx/nginx.conf

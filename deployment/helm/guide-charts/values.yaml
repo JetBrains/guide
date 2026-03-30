@@ -32,6 +32,8 @@ resources:
 
 guideRedirect: "rewrite ^/check$ /guide/pycharm/tutorials/fastapi-aws-kubernetes/aws_eks/$1 redirect;"
 
+notifyRedirect: "# notify redirect - disabled locally"
+
 #Service
 service:
   port: 5000

@@ -34,5 +34,6 @@ data:
         absolute_redirect off;
    
         include /etc/nginx/extra/redirect.conf;
-    
+        include /etc/nginx/extra/notify.conf;
+
     }

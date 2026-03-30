@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{.Release.Name}}-nginx-conf-notify-cm
+  labels:
+    env: {{.Values.env}}
+data:
+  notify.conf: |-
+  {{ toYaml .Values.notifyRedirect  | indent 4 | replace "|" "" | replace "+" ""}}

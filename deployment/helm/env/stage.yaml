@@ -32,6 +32,11 @@ resources:
 
 guideRedirect: rewrite ^/product(.*)$ /guide/pycharm/tutorials/fastapi-aws-kubernetes/aws_eks/$1 redirect;
 
+notifyRedirect: |
+  location = /guide/remote/ {
+    return 302 /guide/shutdown/;
+  }
+
 service:
   port: 5001
   nodePort: 30004
