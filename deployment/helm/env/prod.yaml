@@ -32,10 +32,8 @@ resources:
 
 guideRedirect: rewrite ^/product(.*)$ /guide/pycharm/tutorials/fastapi-aws-kubernetes/aws_eks/$1 redirect;
 
-# notifyRedirect: |
-#   if ($request_uri !~* "^/guide/shutdown") {
-#     return 301 https://www.jetbrains.com/guide/shutdown/;
-#   }
+notifyRedirect: |
+  # disabled - keep only guideRedirect (/product) active
 
 service:
   port: 5002

@@ -167,7 +167,7 @@ export function BaseLayout(
 				<GoogleTagManagerBodyNoScript googleTagManagerId="GTM-5P98" />
 				<InfoBanner>
 					<div>
-						The JetBrains Guide is shutting down on April 30, 2026.{" "}
+						The JetBrains Guide will be shutting down on April 30, 2026.
 						<a href="/shutdown/" class="has-text-white has-text-weight-bold">
 							more...
 						</a>
