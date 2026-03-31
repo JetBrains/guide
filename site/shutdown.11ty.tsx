@@ -30,7 +30,9 @@ export default class ExplorePage {
 								</div>
 
 								<div class="content">
-									<p>We closed the JetBrains Guide on March 30, 2026.</p>
+									<p>
+										We are shutting down the JetBrains Guide on April 30, 2026.
+									</p>
 									<p>
 										It's been a wonderful journey and we're proud of what we
 										did, but we need to put our effort into other, existing
